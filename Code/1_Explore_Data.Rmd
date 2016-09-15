@@ -1,0 +1,474 @@
+---
+title: "Exploratory Data Analysis -- Supressed Code of Death"
+author: "Corinne Riddell"
+date: "July 22, 2016"
+output: html_document
+---
+
+```{r load_libs, echo=F, warning=F, message=F}
+library(plyr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+```
+
+*About the dataset*
+The original dataset was collected by Sam using software from the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (known as the SEER*Stat Software) to access the National Vital Statistics System that is maintained by the National Center for Health Statistics.
+
+```{r read_data}
+dat <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/deaths-cause-6913.txt", header = F,sep="\t")
+names(dat) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
+```
+
+```{r recode_variables}
+dat <- dat %>%
+  mutate(State2 = factor(State, levels = c(0:50), labels = c("Alabama", "Alaska", "Arizona", "Arkansas","California",
+                                                             "Colorado", "Connecticut", "Delaware", "Washington DC",
+                                                             "Florida", "Georgia", "Hawaii","Idaho", "Illinois", 
+                                                             "Indiana","Iowa", "Kansas", "Kentucky", "Louisiana", 
+                                                             "Maine", "Maryland", "Massachusetts", "Michigan", 
+                                                             "Minnesota", "Mississippi","Missouri", "Montana", 
+                                                             "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+                                                             "New Mexico", "New York","North Carolina","North Dakota",
+                                                             "Ohio", "Oklahoma","Oregon", "Pennsylvania", 
+                                                             "Rhode Island", "South Carolina", "South Dakota", 
+                                                             "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+                                                             "Washington", "West Virginia", "Wisconsin", "Wyoming")), 
+         Age2 = factor(Age, levels = c(0:19), labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                                         "15-19 years", "20-24 years", "25-29 years", "30-34 years",
+                                                         "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
+                                                         "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
+                                                         "75-79 years", "80-84 years","85+ years", "Unknown"), ordered = T),
+         Sex2 = factor(Sex, levels = c(0, 1), labels = c("Male", "Female")),
+         Race2 = factor(Race, levels = c(0, 1), labels = c("White", "Black")),
+         COD2 = factor(COD, levels = c(0:5), labels = c("Cardiovascular", "Cancers", "Communicable", 
+                                                        "Non-communicable", "Injuries", "All other causes")), 
+         Year2 = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
+         RaceSex = interaction(Race2, Sex2),
+         StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
+```
+
+Some of the rows have Population==0, and we explore that and record below. These mostly correspond to rows with Unknown age groups that we cannot use in our analysis so I remove them. This leaves 654 rows with Populations of 0.
+
+```{r explore_dataset}
+table(dat$Population==0, useNA = "always")
+#55734 cells have Populations of 0.
+
+table(dat$Count[dat$Population==0]==0, useNA = "always")
+#Of these, all have Counts of 0, except for 26 with counts of NA
+
+table(dat$Age2 == "Unknown", dat$Population == 0, useNA = "always")
+#The vast majority of cells with populations of 0 have unknown age groups
+
+#remove this data from the data we analyze:
+dat.clean <- dat[dat$Age2 != "Unknown", ]
+
+table(dat.clean$Population == 0, useNA = "always")
+#654 cells have Populations of 0 now.
+
+table(dat.clean$Count[dat.clean$Population == 0] == 0, useNA = "always")
+summary(dat.clean$Count[dat.clean$Population == 0])
+#628 are equal to 0 and 26 are equal to NA
+
+#replace the NA Counts with 0 for the 26 cells with Populations of 0.
+dat.clean$Count[is.na(dat.clean$Count) == T & dat.clean$Population == 0] <- 0
+summary(dat.clean$Count[dat.clean$Population == 0])
+
+#now the Counts should only equal NA when the true count is between 1 and 9.
+
+summary(dat.clean$Crude_Rate[dat.clean$Population == 0])
+table(dat.clean$Crude_Rate[dat.clean$Population==0], useNA = "always")
+#whenever the population is 0, the Crude_Rate is equal to NA.
+#need to think: should these be equal to 0, or NA? How will it affect the calculations?
+```
+
+**Missingness of Count (of deaths)**
+If there are between 1 and 9 deaths in the strata, this information is surpressed and coded as missing. Later in this document we investigate trends in supression/missingness to understand how it differs according to state, age, race, and sex.
+
+Since our goal is to compute the difference in life expectancy between Blacks and Whites by strata, we impute death counts at their logical extremes to explore this affects the results. 
+
+- Set all missing counts to 1, 5, and 9.
+- Set all missing counts to 1 for Whites and 9 for Blacks and vice versa.
+
+```{r fill_in_missing_counts}
+dat.clean <- dat.clean %>% mutate(Count_md1 = ifelse(is.na(Count)==T, 1, Count),
+                                  Count_md5 = ifelse(is.na(Count)==T, 5, Count),
+                                  Count_md9 = ifelse(is.na(Count)==T, 9, Count)
+                                  )
+
+dat.clean$Count_b9w1 <- dat.clean$Count
+dat.clean$Count_b9w1[is.na(dat.clean$Count) & dat.clean$Race2 == "White"] <- 1
+dat.clean$Count_b9w1[is.na(dat.clean$Count) & dat.clean$Race2 == "Black"] <- 9
+
+dat.clean$Count_b1w9 <- dat.clean$Count
+dat.clean$Count_b1w9[is.na(dat.clean$Count) & dat.clean$Race2 == "White"] <- 9
+dat.clean$Count_b1w9[is.na(dat.clean$Count) & dat.clean$Race2 == "Black"] <- 1
+
+#check recoding
+dat.clean$Count_grouped <- cut(dat.clean$Count, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$Count1_grouped <- cut(dat.clean$Count_md1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$Count5_grouped <- cut(dat.clean$Count_md5, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$Count9_grouped <- cut(dat.clean$Count_md9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$Count_b9w1_grouped <- cut(dat.clean$Count_b9w1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$Count_b1w9_grouped <- cut(dat.clean$Count_b1w9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+
+table(dat.clean$Count_grouped, dat.clean$Count1_grouped, useNA = "always")
+table(dat.clean$Count_grouped, dat.clean$Count5_grouped, useNA = "always")
+table(dat.clean$Count_grouped, dat.clean$Count9_grouped, useNA = "always")
+
+table(dat.clean$Count_grouped, dat.clean$Count_b9w1_grouped, dat.clean$Race2, useNA = "always")
+table(dat.clean$Count_grouped, dat.clean$Count_b1w9_grouped, dat.clean$Race2, useNA = "always")
+
+dat.clean <- dat.clean[ , !names(dat.clean) %in% c("Count_grouped", "Count1_grouped", "Count5_grouped", "Count9_grouped", 
+                                                   "Count_b9w1_grouped", "Count_b1w9_grouped")]
+```
+
+To calculate life expectancy, we have to aggregate the data across the causes of death.
+
+```{r aggregate_over_COD}
+dat2 <- dat.clean %>% group_by(State2, Year2, RaceSex, Age2) %>%
+  arrange(State2, RaceSex, Year2, Age2) %>%
+  summarise(total_deaths1 = sum(Count_md1), total_deaths5 = sum(Count_md5),
+            total_deaths9 = sum(Count_md9), 
+            total_deaths_b9 = sum(Count_b9w1), total_deaths_w9 = sum(Count_b1w9),
+            Population = first(Population), Race2 = first(Race2), Sex2 = first(Sex2), 
+            StateYearRaceSex = first(StateYearRaceSex))
+```
+
+We implemented the calculations performed in the technical supplement found here [http://www.lho.org.uk/Download/Public/7656/1/tech_supp_3.pdf], also saved in our dropbox. 
+
+Let's make sure we can do the calculation all the way through for a few of the groupings, including a grouping with a stratum with a zero population count.
+
+```{r calc_life_expectancy1}
+
+dat2$numYrsInt <- 5
+dat2$numYrsInt[dat2$Age2 == "<1 year"] <- 1
+dat2$numYrsInt[dat2$Age2 == "1-4 years"] <- 4
+
+dat2 <- dat2 %>% mutate( 
+            Death_Rate1 = ifelse(Population!=0, total_deaths1/Population, NA),
+            Death_Rate5 = ifelse(Population!=0, total_deaths5/Population, NA),
+            Death_Rate9 = ifelse(Population!=0, total_deaths9/Population, NA),
+            Death_Rateb9 = ifelse(Population!=0, total_deaths_b9/Population, NA),
+            Death_Ratew9 = ifelse(Population!=0, total_deaths_w9/Population, NA),
+            Ave_Lived_by_Died = ifelse(Age2=="<1 year", 0.1, 0.5),
+            Prob_Dying1 = ifelse(Population!=0, 
+                                 numYrsInt*Death_Rate1/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate1), 
+                                 NA),
+            Prob_Dying5 = ifelse(Population!=0, 
+                                 numYrsInt*Death_Rate5/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate5), 
+                                 NA),
+            Prob_Dying9 = ifelse(Population!=0, 
+                                 numYrsInt*Death_Rate9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate9), 
+                                 NA),
+            Prob_Dyingb9 = ifelse(Population!=0, 
+                                 numYrsInt*Death_Rateb9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rateb9), 
+                                 NA),
+            Prob_Dyingw9 = ifelse(Population!=0, 
+                                 numYrsInt*Death_Ratew9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Ratew9), 
+                                 NA),
+            Prob_Surv1 = ifelse(Population!=0, 1 - Prob_Dying1, NA),
+            Prob_Surv5 = ifelse(Population!=0, 1 - Prob_Dying5, NA),
+            Prob_Surv9 = ifelse(Population!=0, 1 - Prob_Dying9, NA),            
+            Prob_Survb9 = ifelse(Population!=0, 1 - Prob_Dyingb9, NA),
+            Prob_Survw9 = ifelse(Population!=0, 1 - Prob_Dyingw9, NA),
+            alive_at_start_int1 = ifelse(Age2 == "<1 year", 1000000, NA),
+            alive_at_start_int5 = ifelse(Age2 == "<1 year", 1000000, NA),
+            alive_at_start_int9 = ifelse(Age2 == "<1 year", 1000000, NA),
+            alive_at_start_intb9 = ifelse(Age2 == "<1 year", 1000000, NA),
+            alive_at_start_intw9 = ifelse(Age2 == "<1 year", 1000000, NA),
+            deaths_during_int1 = ifelse(Age2 == "<1 year", alive_at_start_int1*Prob_Dying1, NA),
+            deaths_during_int5 = ifelse(Age2 == "<1 year", alive_at_start_int5*Prob_Dying5, NA),
+            deaths_during_int9 = ifelse(Age2 == "<1 year", alive_at_start_int9*Prob_Dying9, NA),
+            deaths_during_intb9 = ifelse(Age2 == "<1 year", alive_at_start_intb9*Prob_Dyingb9, NA),
+            deaths_during_intw9 = ifelse(Age2 == "<1 year", alive_at_start_intw9*Prob_Dyingw9, NA))
+```
+
+```{r first_five}
+levels(dat2$StateYearRaceSex)[1:5]
+summary(dat2$Population[dat2$StateYearRaceSex %in% levels(dat2$StateYearRaceSex)[1:5]])
+
+timer1 <- system.time (
+  for(x in levels(dat2$StateYearRaceSex)[1:5]) {
+      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
+        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
+        
+          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
+              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
+          }
+          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
+                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
+                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
+                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
+                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
+          
+          
+          } 
+        }
+     
+  }
+)
+
+timer1 # 25 seconds for 5 -- guess 13 hrs for all the strata
+```
+
+```{r calc_pop0}
+View(dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[2789], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
+                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1")])
+timer2 <- system.time (
+  for(x in levels(dat2$StateYearRaceSex)[2789]) {
+      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
+        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
+        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
+        
+          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
+              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
+              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
+          }
+          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
+                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
+                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
+                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
+                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
+          
+          
+          } 
+        }
+     
+  }
+)
+
+timer2
+```
+
+This takes `r time1[3]` seconds to run.
+
+```{r rest_of_life_expectancy_calc}
+dat2$num_PY_int1 <- (dat2$alive_at_start_int1 - dat2$deaths_during_int1)*dat2$numYrsInt + (dat2$deaths_during_int1*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
+dat2$num_PY_int5 <- (dat2$alive_at_start_int5 - dat2$deaths_during_int5)*dat2$numYrsInt + (dat2$deaths_during_int5*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
+dat2$num_PY_int9 <- (dat2$alive_at_start_int9 - dat2$deaths_during_int9)*dat2$numYrsInt + (dat2$deaths_during_int9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
+dat2$num_PY_intb9 <- (dat2$alive_at_start_intb9 - dat2$deaths_during_intb9)*dat2$numYrsInt + (dat2$deaths_during_intb9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
+dat2$num_PY_intw9 <- (dat2$alive_at_start_intw9 - dat2$deaths_during_intw9)*dat2$numYrsInt + (dat2$deaths_during_intw9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
+
+dat2$num_PY_int1[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int1[dat2$Age2 == "85+ years"])/dat2$Death_Rate1[dat2$Age2 == "85+ years"]
+dat2$num_PY_int5[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int5[dat2$Age2 == "85+ years"])/dat2$Death_Rate5[dat2$Age2 == "85+ years"]
+dat2$num_PY_int9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int9[dat2$Age2 == "85+ years"])/dat2$Death_Rate9[dat2$Age2 == "85+ years"]
+dat2$num_PY_intb9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intb9[dat2$Age2 == "85+ years"])/dat2$Death_Rateb9[dat2$Age2 == "85+ years"]
+dat2$num_PY_intw9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intw9[dat2$Age2 == "85+ years"])/dat2$Death_Ratew9[dat2$Age2 == "85+ years"]
+
+
+dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(desc(Age2)) %>%
+                 mutate(tot_PY_after1 = cumsum(num_PY_int1), tot_PY_after5 = cumsum(num_PY_int5), tot_PY_after9 = cumsum(num_PY_int9),
+                        tot_PY_afterb9 = cumsum(num_PY_intb9),tot_PY_afterw9 = cumsum(num_PY_intw9),
+                        life_exp1 = tot_PY_after1/alive_at_start_int1, life_exp5 = tot_PY_after5/alive_at_start_int5, 
+                        life_exp9 = tot_PY_after9/alive_at_start_int9, 
+                        life_expb9 = tot_PY_afterb9/alive_at_start_intb9, life_expw9 = tot_PY_afterw9/alive_at_start_intw9 
+                )
+
+dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(Age2)
+```
+
+
+I compared the following with my calculations in the excel spreadsheet to check the calculations -- all good.
+```{r}
+dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[1], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
+                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
+                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
+
+dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[4], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
+                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
+                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
+
+dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[2789], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
+                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
+                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
+```
+
+
+
+
+Notes on Figure 1 (below):
+
+- Figure 1 is sorted by size of the black population in the state in 2013. This is so you can see how missingness is a function of population size. We expect that states with less black people will have more missing data and more counts of exactly zero. Thus, states with the biggest populations (of blacks and whites) will "hold constant" the effect of population size on the amount of missing data.
+
+- The first panels you see in Figure 1 (below) are for the states with the smallest black populations. For whites, the amount of missing data increases in age until about 40 years old, and then decreases. For blacks, the amount of missing data is very low across age. This seemed strange to me at first, but then I remembered that the data is not missing if the count is equal to 0, which will be the case for many strata in these states with the lowest black population.
+
+- As you read left to right (as the black population size increases by state), the trends in missing data across age look more similar by race, although blacks appear to have more missing data in individuals < 30 years old for the states with the most black people.
+
+**Figure 1: Proportion missing by State (panel) and Age group (x-axis), ordered by increasing size of black population in 2013**
+```{r bystate, fig.width = 12, fig.height = 37, echo=F}
+bystate <- 
+  dat %>%
+  group_by(State2, Race2, Age2) %>%
+  summarise(prop.missing = mean(is.na(Count)))
+
+#recode a new count variable that "counts the missing data" so that these rows are used when calculating the % of data == 0.
+dat$Count2 <- dat$Count
+dat$Count2[is.na(dat$Count) == T] <- 1
+
+bystate2 <- 
+  dat %>%
+  group_by(State2, Race2, Age2) %>%
+  summarise(prop.zero = mean(Count2 == 0))
+
+bystate <- merge(bystate, bystate2, by=c("State2", "Race2", "Age2"))
+
+#calculate the size of the black population in 2013 by State
+bystate.bpop <- 
+  dat %>%
+  filter(COD2 == "Cancers" & Year2 == 2013 & Race2 == "Black") %>% #to stop repeats of the population size
+  group_by(State2) %>%
+  summarize(pop_by_race = sum(as.numeric(Population)))
+
+bystate <- merge(bystate, bystate.bpop, by = "State2", all.x = T)
+bystate$State3 <- reorder(bystate$State2, bystate$pop_by_race)
+
+ggplot(bystate, aes(x = Age2, y = prop.missing)) + 
+  geom_point(aes(col=Race2)) + facet_wrap(~ State3, ncol = 4) +
+  theme_bw(base_size = 11) +
+  theme(legend.position="top") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Missing (%)") +
+  xlab("Age group")
+```
+
+Notes on Figure 2 (below):
+
+- Figure 2 examines the proportion of counts equal to zero. The purpose of this examination is to visually confirm that there are higher proportions of zero counts in the states with the least amount of blacks. This is very clear when viewing the figure.
+
+- Question - any explantion for why the portion of zeroes stays relatively higher in blacks vs. whites in the states with the most blacks (within the younger age groups)?
+
+**Figure 2: Proportion zero by State (panel) and Age group (x-axis), ordered by increasing size of black population in 2013**
+
+```{r zero_by_state, fig.width = 12, fig.height = 37, echo=F}
+ggplot(bystate, aes(x = Age2, y = prop.zero)) + 
+  geom_point(aes(col=Race2)) + facet_wrap(~ State3, ncol = 4) +
+  theme_bw(base_size = 11) +
+  theme(legend.position="top") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Zero (%)") +
+  xlab("Age group") 
+```
+
+###Other plots (less interesting/informative)
+
+**How is missingness related to age, race, and sex?**
+
+```{r missing_data, fig.width = 10, fig.height = 5, echo=F}
+#table(is.na(dat$Count))
+
+table1.whitemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White.Male"]), 
+                                           dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
+table1.blackmale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black.Male"]), 
+                                           dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
+table1.whitefemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White.Female"]), 
+                                           dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
+table1.blackfemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black.Female"]), 
+                                           dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+
+miss1 <- data.frame("white.male" = table1.whitemale[2, ], 
+                    "black.male"= table1.blackmale[2, ],
+                    "white.female" = table1.whitefemale[2, ], 
+                    "black.female"= table1.blackfemale[2, ],
+                    "age" = names(table1.whitemale[2, ]))
+miss1$age <- factor(miss1$age, levels(miss1$age)[c(1, 2, 11, 3:10, 12:20)])
+
+miss1 <- gather(miss1, racesex, missingness, c(white.male, black.male, white.female, black.female))
+
+ggplot(miss1, aes(x = age, y = missingness)) + geom_point() + geom_point(aes(col=racesex)) +
+  theme_bw(base_size = 16) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Missing (%)") +
+  xlab("Age group")
+```
+
+**Let's look at the proportion with 0's**
+
+```{r zero_data, fig.width = 10, fig.height = 5, echo=F}
+table2.whitemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White.Male"]==0, 
+                                       dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
+table2.blackmale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black.Male"]==0, 
+                                       dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
+table2.whitefemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White.Female"]==0, 
+                                       dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
+table2.blackfemale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black.Female"]==0, 
+                                       dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+
+miss2 <- data.frame("whitemale" = table2.whitemale[2, ], 
+                    "blackmale"= table2.blackmale[2, ],
+                    "whitefemale" = table2.whitefemale[2, ], 
+                    "blackfemale"= table2.blackfemale[2, ],
+                    "age" = names(table2.blackmale[2, ]))
+
+miss2$age <- factor(miss2$age, levels(miss2$age)[c(1, 2, 11, 3:10, 12:20)])
+
+miss2 <- gather(miss2, racesex, zeroes, c(whitemale, blackmale, whitefemale, blackfemale))
+
+ggplot(miss2, aes(x = age, y = zeroes)) + geom_point() + geom_point(aes(col=racesex)) +
+  theme_bw(base_size = 16) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Zero (%)") +
+  xlab("Age group")
+```
+
+**Missing or zero (which is equivalent to < 10)**
+
+```{r miss_or_zero_data, fig.width = 10, fig.height = 5, echo=F}
+dat$miss_or_zero <- F
+dat$miss_or_zero[dat$Count == 0 | is.na(dat$Count) == T] <- T
+
+table3.whitemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White.Male"]==T, 
+                                      dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
+table3.blackmale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black.Male"]==T, 
+                                       dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
+table3.whitefemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White.Female"]==T, 
+                                       dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
+table3.blackfemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black.Female"]==T, 
+                                       dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+
+miss3 <- data.frame("whitemale" = table3.whitemale[2, ], 
+                    "blackmale"= table3.blackmale[2, ],
+                    "whitefemale" = table3.whitefemale[2, ], 
+                    "blackfemale"= table3.blackfemale[2, ],
+                    "age" = names(table3.blackmale[2, ]))
+
+miss3$age <- factor(miss3$age, levels(miss3$age)[c(1, 2, 11, 3:10, 12:20)])
+
+miss3 <- gather(miss3, racesex, miss_or_zero, c(whitemale, blackmale, whitefemale, blackfemale))
+
+ggplot(miss3, aes(x = age, y = miss_or_zero)) + geom_point() + geom_point(aes(col=racesex)) +
+  theme_bw(base_size = 16) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Missing or Zero (%)") +
+  xlab("Age group")
+```
+
+```{r explore_data2, fig.width = 10, fig.height = 5, echo=F, eval=F}
+
+summary(dat$Count)
+ggplot(subset(dat, Count>0), aes(x = Count)) + geom_histogram(binwidth=100)
+
+ggplot(subset(dat, State2=="Louisiana"), aes(x = Population, y = Count)) + 
+  geom_point(aes(col=RaceSex), alpha=0.2) +
+  facet_wrap(~COD2) + theme_bw()
+
+```
+
+```{r save_workspace}
+save.image(file = "/Users/corinneriddell/Dropbox/SRJ/Data/corinne/Sep5_workspace_bw_gap.Rdata")
+```
+
