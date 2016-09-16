@@ -1,4 +1,6 @@
-load("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/alabama_only.Rdata")
+load("Data/alabama_only.Rdata") 
+#note that in order for this relative pathway to work, you must make your local version of BlackWhiteMortalityGap to be an RStudio "project".
+#to do so, go to File>New Project>Existing Directory, and select the BlackWhiteMortalityGap as the r project directory.
 
 #example data
 alabama.by.strata <- 
