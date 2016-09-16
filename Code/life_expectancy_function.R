@@ -44,5 +44,7 @@ life.table <- function(data, calendar.years, age.groups, num.ages.in.group, deat
   
 } 
 
-lt <- life.table(data = subset(alabama.by.strata, StateYearRaceSex = "Alabama.1969.White.Male"), age.groups = "Age2", 
+onestrat <- subset(alabama.by.strata, StateYearRaceSex == "Alabama.1969.White.Male")
+lt <- life.table(data = subset(alabama.by.strata, StateYearRaceSex == "Alabama.1969.White.Male"), age.groups = "Age2", 
            num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population")
+
