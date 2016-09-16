@@ -1,0 +1,130 @@
+---
+title: "How to make an abridged life table and calculate life expectancy"
+author: "Corinne Riddell"
+date: "September 15, 2016"
+output: html_document
+bibliography: "/Users/corinneriddell/Documents/repos/BlackWhiteGap/papers/bibliography.bib"
+---
+
+##What is a life table?
+"A life table is a system way of keeping track of the mortality experience of a group." [@selvin_text, Chapter 9 Life Tables: An Introduction].
+
+**Cohort life table**
+
+A cohort life table is constructed by following a cohort of individuals through time and recording their exact age at death for all members of the cohort [@selvin_text]. For example, you could take the cohort of individuals born in 1998 in Montreal and each member's year of death. However, this would require waiting until the last member died and would therefore take a very long time.
+
+**Current life table**
+
+As a practical alternative, a life table can be made using current mortality rates for a population. This is called a current life table [@selvin_text].
+
+**Complete vs abridged life table**
+
+If mortality rates can be calculated for each age, then the life table is called complete, compared to life tables calculated based on data categorized by age groupings (i.e., <1 years old, 1-4 years old, 5-9 years old, etc) which are called abridged.
+
+**Elements used to construct a complete (current) life table**
+
+1. Age interval ($x$ to $x+1$): For a complete life table all age groups are 1 year in length, except for the last group, which is left open-ended (e.g, 85 years or older).
+
+2. Number alive ($l_x$): The number of individuals alive at age $x$. For every interval, $l_x$ defined the population at risk of death during the interval. To begin, we set $l_0=100000$.
+
+3. Number of deaths ($d_x$): The number of individuals who die between the ages of $x$ and $x+1$.
+
+4. Probability of death ($q_x$): Prob(death before x + 1 | alive at x) = $d_x/l_x$.
+
+5. Number of years lived ($L_x$): The person-time-at-risk of death lived by the cohort between ages $x$ and $x+1$. 
+    a. Each individual who does not die during the interval contributes 1 person-year, and those who die contribute the proportion of the year up until their death (which is approximated to be 9% of the year for the <1 age group and half a year (50%) for all other groups). This "average time contributed by those who die" is denoted by $\bar{a_x}$.
+    b. Therefore, $L_x=(l_x-d_x)+\bar{a_x}d_x$.
+  
+6. Total time lived ($T_x$): This is the accumulation of person-time-at-risk at age x and beyond -- the total number of person years lived by those alive at age $x$.
+
+7. Expectation of life ($e_x$): The average number of additional years expected to be lived by those individuals alive at age $x$. $e_x=T_x/l_x$.
+
+To construct the life table, we first need to calculate the probabilities of death, $q_x$. To find a formula for $q_x$ we first write the formula for $R_x$, the age-specific mortality rate, and re-arrange to isolate $q_x$:
+
+$R_x=d_x/L_x$ 
+
+$R_x=d_x/(l_x-d_x)+\bar{a_x}d_x$, dividing the numerator and denominator by l_x:
+
+$R_x=q_x/(1-q_x)+\bar{a_x}q_x$, rearranging to solve for q_x:
+
+$q_x=\frac{R_x}{1+(1-\bar{a_x})R_x}$.
+
+Observed mortality rates $R_x$ can therefore be used to calculate the probability of dying within each age-specific interval. The observed mortality rates are calculated as $d_x/Popn_x$, where $Popn_x$ is the number of individuals alive during age x. While this looks like a proportion, it calculates a rate when we assume the population is stationary, thereby implying there are $Popn_x$ person-years at risk of death during the age bracket. 
+
+After $q_x$ is calculated based on $R_x$, all of the other quantities defined above can also be calculated, except for the $L_x$, the number of years lived, in the last age group. In this age group, $\bar{a_x}$ is unknown, and all the individuals in the age bracket will die (i.e., $q_x=1$). Because $d_x/L_x=R_x$ and $d_x=l_x$ in this age group, we can substitute $l_x$ for $d_x$ and write $l_x/L_x=R_x$, implying that $L_x=l_x/R_x$ in this age group.
+
+##Assumptions of the life table
+1. The number of births occurring each year is constant.
+2. Deaths are uniformly distributed during the interval after 1 years old.
+3. There is no population growth.
+Together, these assumptions imply that the population must be stationary.
+3. 
+
+**Construction of an abridged (current) life table**
+
+Recall that an abridged life table includes age intervals that are longer than a year. In practice, these intervals are often 5 years in length and can be represented by $n_x$, where $x$ is the age at the beginning of the interval. The formula for $q_x$ can be generalized to this context, where: $q_x=\frac{n_xR_x}{1+(1-\bar(a_x))n_xR_x}$.
+
+**An example**
+
+This data was used in a previously published paper [@auger2014mortality] and we use it here to show how to create an abridged life table and calculate life expectancy at birth.
+
+First, I create the dataset in R:
+```{r create_dataset}
+canada.men <- data.frame("ages" = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90),
+"obs.deaths" = c(4054, 625, 445, 622, 2568, 3770, 3434,
+  3681, 5155, 8449, 13421, 19371, 25448, 
+  31465, 37441, 48796, 64763, 72512, 
+  60109, 43812),
+"obs.popn" = c(719953, 2835604, 3654546, 4071400, 4464549, 4564679, 4296613, 4237402,
+               4532151, 5085092, 5163532, 4597916, 3937984, 3120981, 2323629, 1862971,
+               1499907, 997492, 492445, 196109))
+
+head(canada.men)
+```
+
+I then add an additional column that denotes how many years are in each age bracket:
+```{r add_n_x}
+canada.men$n_x = 5
+canada.men$n_x[canada.men$ages == 0] = 1
+canada.men$n_x[canada.men$ages == 1] = 4
+```
+
+```{r}
+#dataset needs to be in order of age
+life.table <- function(data, calendar.years, age.groups, num.ages.in.group, death.counts, population.counts){
+
+  data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
+  data["a_x"] <- 0.5 #average proportion of interval lived
+  data[1, "a_x"] <- 0.09
+  data["q_x"] <- data[num.ages.in.group]*data["R_x"]/(1 + (1 - data["a_x"])*data[num.ages.in.group]*data["R_x"]) #probability of dying
+  data[dim(data)[1], "q_x"] <- 1 #100% die in last age group
+  data["p_x"] <- 1 - data["q_x"] #probability of survival
+  
+  data["l_x"] <- NA #l_x: is the number of individuals alive at the start of the interval
+  data[1, "l_x"] <- 100000 
+  
+  for(i in 2:dim(data)[1]) {
+    data[i, "l_x"] <- data[i - 1, "l_x"]*data[i-1, "p_x"]
+  }
+
+  data["d_x"] <- data["l_x"]*data["q_x"] #number of deaths
+  data["L_x"] <- (data["l_x"] - data["d_x"])*data["n_x"] + data["d_x"]*data["a_x"]*data["n_x"] #person time in the age bracket
+  data[dim(data)[1], "L_x"] <- data[dim(data)[1], "l_x"]/data[dim(data)[1], "R_x"] #different for last age bracket
+  
+  #now to calculate the total person time lived at or after age x, T_x:
+  data["cumsum"] <- cumsum(data["L_x"])
+  data["l.cumsum"] <- c(0, data[1:(dim(data)[1] - 1), "cumsum"])
+  data["T_x"] <- sum(data["L_x"]) - data["l.cumsum"]
+  data["e_x"] <- data["T_x"]/data["l_x"]
+  
+  return(data)
+  
+} 
+
+life.table.cm <- life.table(data = canada.men, age.groups = "ages", num.ages.in.group = "n_x", death.counts = "obs.deaths", population.counts = "obs.popn")
+
+round(life.table.cm, 2)
+```
+
+
+##References

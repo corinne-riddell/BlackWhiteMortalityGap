@@ -39,7 +39,7 @@ qui replace qx = 1 if age==15 // 1 for last interval
 * conditional prob of survival
 gen px=1-qx
 	
-* no alive at beginning of interval
+* number alive at beginning of interval
 gen lx = 100000 if age==0
 qui replace lx = lx[_n-1] * px[_n-1] if age>0
 	
