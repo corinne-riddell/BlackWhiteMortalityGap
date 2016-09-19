@@ -97,13 +97,25 @@ canada.men <- data.frame("ages" = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50,
                                         1499907, 997492, 492445, 196109))
 
 head(canada.men)
+
+quebec.men <- data.frame("ages" = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90), 
+                         "obs.deaths" = c(1057, 164, 116, 176, 659, 956, 1056, 1110, 1498, 2470, 4116, 6054, 8426,
+                                          11175, 13558, 16567, 21349, 22396, 16851,10878),
+                         "obs.popn" = c(215200, 789710, 1008266, 1179423, 1249360, 1261780, 1349857, 1293521,
+                                        1313834, 1551684, 1622835, 1485249, 1288014, 1077253, 796557, 609341, 
+                                        476211, 300506, 134353, 49678))
+head(quebec.men)
 ```
 
 I then add a column that denotes how many years are in each age bracket:
 ```{r add_n_x}
-canada.men$n_x = 5
-canada.men$n_x[canada.men$ages == 0] = 1
-canada.men$n_x[canada.men$ages == 1] = 4
+canada.men$n_x <- 5
+canada.men$n_x[canada.men$ages == 0] <- 1
+canada.men$n_x[canada.men$ages == 1] <- 4
+
+quebec.men$n_x <- 5
+quebec.men$n_x[quebec.men$ages == 0] <- 1
+quebec.men$n_x[quebec.men$ages == 1] <- 4
 ```
 
 ```{r function_lifeexpectancy}
@@ -152,6 +164,10 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
 life.table.cm <- life.table(data = canada.men, age.groups = "ages", num.ages.in.group = "n_x", death.counts = "obs.deaths", population.counts = "obs.popn")
 
 round(life.table.cm, 2)
+
+life.table.qm <- life.table(data = quebec.men, age.groups = "ages", num.ages.in.group = "n_x", death.counts = "obs.deaths", population.counts = "obs.popn")
+
+round(life.table.qm, 2)
 ```
 
 **A second example**
@@ -229,23 +245,5 @@ for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
 }
 )
 ```
-
-Stopped here. For next time: 
-need to change T_x to T_x+n in this formula and add the last term in the empty brackets after leading the number alive variable
-see the auger paper pg 576 for the formula to finish programming.
-data1 <- Quebec
-data2 <- Canada
-
-```{r function_le_age_decomp}
-
-le_age_decomp <- function(data1, data2, num.alive, interval.years.lived, accumulated.years.lived) {
-  
-  C_x <- 
-  (data1[num.alive]/data1[1, num.alive])*((data2[interval.years.lived]/data2[num.alive]) - (data1[interval.years.lived]/data1[num.alive])) +
-    ((data2[accumulated.years.lived]/data2[1, num.alive])*((data1[num.alive]/data2[num.alive]) - ))
-}
-
-```
-
 
 ##References
