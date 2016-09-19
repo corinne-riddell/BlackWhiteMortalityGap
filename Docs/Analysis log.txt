@@ -1,0 +1,14 @@
+#In this file we track all analytic decisions
+
+#TOPIC: SHOULD WE EXCLUDE SOME STATES WITH FEW BLACKS?
+#Date: September 12, 2016
+#Present:CAR, KTM, SH, JSK
+#Discussion:Some states have year-sex-age-specific population count(s) of exactly 0. These are: Alaska, Idaho, Montana, N. Dakota, and S. Dakota. In 1969, there are 11 states with fewer than 10,000 blacks: Alaska, Hawaii, Idaho, Maine, Montana, New Hampshire, North Dakota, South Dakota, Utah, Vermont, Wyoming. JK pointed out that as of 2010, Nevada has 250K blacks, which is ~50% of the blacks excluded from the states in the preceding list. As well, in 2010, many other states have fewer blacks than Nevada. SH added: Why exclude any in a Bayesian model? We should use all the info we have to inform the model. But SH agrees with excluding states if this helps with computation time (if the modelling time becomes very long)
+#End point: Keep all the states if it is not too onerous in terms of computation time. Will need to make a future decision about whether to show data viz for the uncertain states — don’t want the public drawing inaccurate conclusions from this data and should try and prevent this. Corinne needs to generalize the LE function to deal with cells of 0. 
+---------------------------------------------------------------------------
+
+#TOPIC: WHICH VARIABLES SHOULD INFORM SMOOTHING OVER TIME?
+#Date: September 12, 2016
+#Present:CAR, KTM, SH, JSK
+#Discussion:Borrow strength across: age brackets, years. Don’t borrow across variables that an exchangeability assumption would be hard to defend. We won’t borrow across sex because there are sex-specific causes of death (e.g., Breast Cancer) and patterns of death (Suicide) and rates of death. Don’t (for now) borrow across states because even adjacent states within the same Census region can be very different. 
+#Endpoint: Borrow across age brackets and years.
