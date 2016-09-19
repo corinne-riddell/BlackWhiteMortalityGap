@@ -15,7 +15,7 @@ A cohort life table is constructed by following a cohort of individuals through 
 
 **Current life table**
 
-As a practical alternative, a life table can be made using current mortality rates for a population. This is called a current life table [@selvin_text].
+As a practical alternative, a life table can be made using current mortality rates for a population. This is called a current life table [@selvin_text] or a period life table [@preston_demography_text].
 
 **Complete vs abridged life table**
 
@@ -35,7 +35,7 @@ If mortality rates can be calculated for each age, then the life table is called
     a. Each individual who does not die during the interval contributes 1 person-year, and those who die contribute the proportion of the year up until their death (which is approximated to be 9% of the year for the <1 age group and half a year (50%) for all other groups). This "average time contributed by those who die" is denoted by $\bar{a_x}$.
     b. Therefore, $L_x=(l_x-d_x)+\bar{a_x}d_x$.
   
-6. Total time lived ($T_x$): This is the accumulation of person-time-at-risk at age x and beyond -- the total number of person years lived by those alive at age $x$.
+6. Cumulative time lived ($T_x$): This is the accumulation of person-time-at-risk at age x and beyond -- the total number of person years lived by those alive at age $x$.
 
 7. Expectation of life ($e_x$): The average number of additional years expected to be lived by those individuals alive at age $x$. $e_x=T_x/l_x$.
 
@@ -54,15 +54,34 @@ Observed mortality rates $R_x$ can therefore be used to calculate the probabilit
 After $q_x$ is calculated based on $R_x$, all of the other quantities defined above can also be calculated, except for the $L_x$, the number of years lived, in the last age group. In this age group, $\bar{a_x}$ is unknown, and all the individuals in the age bracket will die (i.e., $q_x=1$). Because $d_x/L_x=R_x$ and $d_x=l_x$ in this age group, we can substitute $l_x$ for $d_x$ and write $l_x/L_x=R_x$, implying that $L_x=l_x/R_x$ in this age group.
 
 ##Assumptions of the life table
+
 1. The number of births occurring each year is constant.
 2. Deaths are uniformly distributed during the interval after 1 years old.
 3. There is no population growth.
+
 Together, these assumptions imply that the population must be stationary.
-3. 
+
 
 **Construction of an abridged (current) life table**
 
 Recall that an abridged life table includes age intervals that are longer than a year. In practice, these intervals are often 5 years in length and can be represented by $n_x$, where $x$ is the age at the beginning of the interval. The formula for $q_x$ can be generalized to this context, where: $q_x=\frac{n_xR_x}{1+(1-\bar(a_x))n_xR_x}$.
+
+**Derivation of the formula for $q_x$ when the life table is abridged**
+
+This derivation was modified from the Preston demography text [@preston_demography_text]. Note that in the Preston book $a_x$ represents *person-years* not the proportion of the year, which is why the formulas look different (because we have to write $n_x\bar{a_x}$ in place of Preston's $a_x$).
+
+We start with the simple formula for q_x. As before:
+$q_x=d_x/l_x$.
+
+Now, $L_x = n_x*(l_x - d_x) + n_x\bar{a_x}d_x$
+$L_x = n_xl_x - n_xd_x + n_x\bar{a_x}d_x$
+$l_x = \frac{L_x + n_xd_x - n_x\bar{a_x}d_x}{n_x}$
+$l_x = \frac{L_x + d_xn_x(1 - \bar{a_x}){n_x}$
+
+We can then substitute this expression for $l_x$ into the equations for $q_x$:
+
+$q_x=\frac{d_xn_x}{L_x + d_xn_x(1 - \bar{a_x}}$, and dividing numerator and denominator by L_x, we get
+$q_x=\frac{R_xn_x}{1 + R_xn_x(1 - \bar{a_x}}$.
 
 **An example**
 
@@ -88,11 +107,11 @@ canada.men$n_x[canada.men$ages == 1] = 4
 ```
 
 ```{r function_lifeexpectancy}
-#dataset needs to be in order of age
-life.table <- function(data, age.groups, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA, calendar.years = NA){
+#dataset needs to be in order of age.
+life.table <- function(data, age.groups, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA){
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
-  
+
   if(is.na(ave.prop.lived) == T) {
       data["a_x"] <- 0.5 #average proportion of interval lived
       data[1, "a_x"] <- 0.09
@@ -100,8 +119,11 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
       data["a_x"] <- data[ave.prop.lived]
   }
   
-  data["q_x"] <- data[num.ages.in.group]*data["R_x"]/(1 + (1 - data["a_x"])*data[num.ages.in.group]*data["R_x"]) #probability of dying
+  data["q_x"] <- data[num.ages.in.group]*data["R_x"]/(1 + (1 - data["a_x"])*data[num.ages.in.group]*data["R_x"]) 
+  #probability of dying
+  
   data[dim(data)[1], "q_x"] <- 1 #100% die in last age group
+  
   data["p_x"] <- 1 - data["q_x"] #probability of survival
   
   data["l_x"] <- NA #l_x: is the number of individuals alive at the start of the interval
@@ -117,7 +139,7 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
   
   #now to calculate the total person time lived at or after age x, T_x:
   data["cumsum"] <- cumsum(data["L_x"])
-  data["l.cumsum"] <- c(0, data[1:(dim(data)[1] - 1), "cumsum"])
+  data["l.cumsum"] <- c(0, unlist(data[1:(dim(data)[1] - 1), "cumsum"]))
   data["T_x"] <- sum(data["L_x"]) - data["l.cumsum"]
   data["e_x"] <- data["T_x"]/data["l_x"]
   
@@ -135,17 +157,6 @@ round(life.table.cm, 2)
 **A second example**
 
 In this example we use the data that Sam entered into Stata to illustrate the life expectancy concept to me. I'll replicate the life table here to ensure that I can arrive at the same results as he does in Stata.
-
-```{r lifetable_cali_abridged}
-cali.abridged <- data.frame("ages" = c("0-1y", "1-4y", "5-9y", "10-14y", "15+y"), "nx" = c(1, 4, 5, 5, 5),
-                         "obs.deaths" = c(1635, 168, 251, 371, 23300), #last number is fictitious
-                         "obs.popn" = c(123342, 435167, 578964, 649693, 143600))
-
-cali.abridged
-
-life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
-           death.counts = "obs.deaths", population.counts = "obs.popn")
-```          
 
 ```{r lifetable_cali_complete}
 cali.complete <- data.frame("ages" = c(0:15), "nx" = rep(1,16),
@@ -165,7 +176,76 @@ life.table(data = cali.complete, age.groups = "ages", num.ages.in.group = "nx", 
            death.counts = "obs.deaths", population.counts = "obs.popn")
 ```
 
+```{r lifetable_cali_abridged}
+cali.complete$group <- cut(cali.complete$ages, breaks=c(0, 1, 5, 10, 15, 20), 
+                           labels = c("<1 years old", "1-4 years old", "5-9 years old", 
+                                      "10-14 years old", "15 or older"), include.lowest = T, right = F)
 
+table(cali.complete$group, cali.complete$ages)
+
+library(dplyr)
+cali.abridged <- cali.complete %>% group_by(group) %>% 
+                                   summarise(nx = sum(nx), ages = first(group), popn = sum(obs.popn), deaths = sum(obs.deaths),
+                                             avelived = first(avelived))
+
+cali.abridged
+
+life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+           death.counts = "deaths", population.counts = "popn")
+
+
+life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+           death.counts = "deaths", population.counts = "popn", ave.prop.lived = "avelived")
+```          
+
+```{r}
+load("Data/alabama_only.Rdata")
+
+#example data
+alabama.by.strata <- 
+  dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
+  arrange(RaceSex, Year2, Age2) %>%
+  mutate(nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years")) %>%
+  summarise(total_deaths5 = sum(Count_md5),
+            Population = first(Population), 
+            Race2 = first(Race2), 
+            Sex2 = first(Sex2), 
+            StateYearRaceSex = first(StateYearRaceSex),
+            nx = first(nx))
+
+first.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
+
+system.time(first.strata.life.table <- life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
+
+View(first.strata.life.table)
+
+system.time(
+for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
+  assign(paste0("lt.", as.character(stratum.id)), 
+         life.table(data = subset(alabama.by.strata, StateYearRaceSex == stratum.id), 
+                                  age.groups = "Age2", num.ages.in.group = "nx", 
+                                  death.counts = "total_deaths5", population.counts = "Population"))
+  print(stratum.id)
+}
+)
+```
+
+Stopped here. For next time: 
+need to change T_x to T_x+n in this formula and add the last term in the empty brackets after leading the number alive variable
+see the auger paper pg 576 for the formula to finish programming.
+data1 <- Quebec
+data2 <- Canada
+
+```{r function_le_age_decomp}
+
+le_age_decomp <- function(data1, data2, num.alive, interval.years.lived, accumulated.years.lived) {
+  
+  C_x <- 
+  (data1[num.alive]/data1[1, num.alive])*((data2[interval.years.lived]/data2[num.alive]) - (data1[interval.years.lived]/data1[num.alive])) +
+    ((data2[accumulated.years.lived]/data2[1, num.alive])*((data1[num.alive]/data2[num.alive]) - ))
+}
+
+```
 
 
 ##References
