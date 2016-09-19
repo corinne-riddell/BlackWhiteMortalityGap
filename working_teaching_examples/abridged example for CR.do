@@ -78,8 +78,9 @@ collapse (sum) deaths pop, by(age5)
 
 * define number of years in age interval
 gen nx=1 if age5==0
-qui replace nx=4 if age5==1
-qui replace nx=5 if age>=2
+qui replace nx=4 if age5==2
+qui replace nx=5 if age>2
+tab nx age
 
 * average person-years contributed by those dying within interval
 gen ax=0.1 if age==0
