@@ -301,8 +301,62 @@ round(life.table.qm, 2)</code></pre>
 ## 19 143369.05 7752120.31 7608751.25  233257.5  6.19
 ## 20  89888.50 7842008.80 7752120.31   89888.5  4.57</code></pre>
 <pre class="r"><code>age_decomp &lt;- le_age_decomp(life.table.qm, life.table.cm, num.alive=&quot;l_x&quot;, interval.years.lived=&quot;L_x&quot;, accumulated.years.lived = &quot;T_x&quot;)
-
-age_decomp2 &lt;- le_age_decomp(life.table.cm, life.table.qm, num.alive=&quot;l_x&quot;, interval.years.lived=&quot;L_x&quot;, accumulated.years.lived = &quot;T_x&quot;)</code></pre>
+age_decomp</code></pre>
+<pre><code>##    Ages Life_Expectancy_1 Life_Expectancy_2           C_x
+## 1     0         78.420088         78.509850 -0.0561780837
+## 2     1         77.804993         77.951650 -0.0038517971
+## 3     5         73.867989         74.018642 -0.0023883160
+## 4    10         68.909055         69.062198 -0.0011732307
+## 5    15         63.958623         64.113062 -0.0146017639
+## 6    20         59.120925         59.290516 -0.0191953945
+## 7    25         54.335829         54.525520 -0.0043449647
+## 8    30         49.538984         49.733839 -0.0024532884
+## 9    35         44.741244         44.939444  0.0005700879
+## 10   40         39.982744         40.181491 -0.0127805672
+## 11   45         35.282265         35.495841 -0.0100168690
+## 12   50         30.700646         30.927457 -0.0185560990
+## 13   55         26.281304         26.532655  0.0089404115
+## 14   60         22.072107         22.321924  0.0261406140
+## 15   65         18.114302         18.346960  0.0616768138
+## 16   70         14.502195         14.677271  0.0478767430
+## 17   75         11.252786         11.383787  0.0509032158
+## 18   80          8.462415          8.533790  0.0312884341
+## 19   85          6.192998          6.213989  0.0257556445
+## 20   90          4.566832          4.476148 -0.0178492500</code></pre>
+<pre class="r"><code>#check:
+sum(age_decomp$C_x)</code></pre>
+<pre><code>## [1] 0.08976234</code></pre>
+<pre class="r"><code>age_decomp$Life_Expectancy_2[age_decomp$Ages ==0] - age_decomp$Life_Expectancy_1[age_decomp$Ages ==0]</code></pre>
+<pre><code>## [1] 0.08976234</code></pre>
+<pre class="r"><code>#also compare to the decomposition if the data is entered in the reverse order:
+age_decomp2 &lt;- le_age_decomp(life.table.cm, life.table.qm, num.alive=&quot;l_x&quot;, interval.years.lived=&quot;L_x&quot;, accumulated.years.lived = &quot;T_x&quot;)
+age_decomp2</code></pre>
+<pre><code>##    Ages Life_Expectancy_1 Life_Expectancy_2           C_x
+## 1     0         78.509850         78.420088  0.0560736104
+## 2     1         77.951650         77.804993  0.0038414117
+## 3     5         74.018642         73.867989  0.0023813775
+## 4    10         69.062198         68.909055  0.0011695738
+## 5    15         64.113062         63.958623  0.0145497753
+## 6    20         59.290516         59.120925  0.0191113303
+## 7    25         54.525520         54.335829  0.0043227075
+## 8    30         49.733839         49.538984  0.0024394185
+## 9    35         44.939444         44.741244 -0.0005665625
+## 10   40         40.181491         39.982744  0.0126893986
+## 11   45         35.495841         35.282265  0.0099303099
+## 12   50         30.927457         30.700646  0.0183552981
+## 13   55         26.532655         26.281304 -0.0088250703
+## 14   60         22.321924         22.072107 -0.0257850774
+## 15   65         18.346960         18.114302 -0.0609864907
+## 16   70         14.677271         14.502195 -0.0475929318
+## 17   75         11.383787         11.252786 -0.0510074849
+## 18   80          8.533790          8.462415 -0.0317451127
+## 19   85          6.213989          6.192998 -0.0267881392
+## 20   90          4.476148          4.566832  0.0186703173</code></pre>
+<pre class="r"><code>#check:
+sum(age_decomp2$C_x)</code></pre>
+<pre><code>## [1] -0.08976234</code></pre>
+<pre class="r"><code>age_decomp2$Life_Expectancy_2[age_decomp2$Ages ==0] - age_decomp2$Life_Expectancy_1[age_decomp2$Ages ==0]</code></pre>
+<pre><code>## [1] -0.08976234</code></pre>
 <p><strong>A second example</strong></p>
 <p>In this example we use the data that Sam entered into Stata to illustrate the life expectancy concept to me. I’ll replicate the life table here to ensure that I can arrive at the same results as he does in Stata.</p>
 <pre class="r"><code>cali.complete &lt;- data.frame(&quot;ages&quot; = c(0:15), &quot;nx&quot; = rep(1,16),
@@ -503,7 +557,7 @@ first.strata &lt;- alabama.by.strata[alabama.by.strata$StateYearRaceSex == &quot
 
 system.time(first.strata.life.table &lt;- data.frame(life.table(data = first.strata, age.groups = &quot;Age2&quot;, num.ages.in.group = &quot;nx&quot;, death.counts = &quot;total_deaths5&quot;, population.counts = &quot;Population&quot;)))</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.019   0.000   0.019</code></pre>
+##   0.021   0.000   0.022</code></pre>
 <pre class="r"><code>first.strata.life.table[, c(&quot;Age2&quot;, &quot;total_deaths5&quot;, &quot;Population&quot;, &quot;R_x&quot;, &quot;q_x&quot;, &quot;l_x&quot;, &quot;d_x&quot;, &quot;L_x&quot;, &quot;T_x&quot;, &quot;e_x&quot;)]</code></pre>
 <pre><code>##           Age2 total_deaths5 Population          R_x         q_x       l_x
 ## 1      &lt;1 year           533      22191 0.0240187463 0.023504996 100000.00
@@ -554,7 +608,7 @@ for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
 }
 )</code></pre>
 <pre><code>##    user  system elapsed 
-##   3.942   0.019   3.975</code></pre>
+##   3.960   0.021   3.997</code></pre>
 <div class="references">
 <h2>References</h2>
 <p>Auger, Nathalie, Pascaline Feuillet, Sylvie Martel, Ernest Lo, Amadou D Barry, and Sam Harper. 2014. “Mortality Inequality in Populations with Equal Life Expectancy: Arriaga’s Decomposition Method in SAS, Stata, and Excel.” <em>Annals of Epidemiology</em> 24 (8). Elsevier: 575–80.</p>
