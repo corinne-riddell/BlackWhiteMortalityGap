@@ -215,15 +215,33 @@ alabama.by.strata <-
             nx = first(nx))
 
 first.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
+second.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.Black.Male", ]
 
 alabama.by.strata.cod <- dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
                                                arrange(RaceSex, Year2, Age2) %>%
                                                mutate(total_deaths5 = sum(Count_md5),
                                                       cod_prop_death5 = Count_md5/total_deaths5)
 
-first.strata.cod <- alabama.by.strata.cod[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
+first.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.1969.White.Male", ]
+second.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.1969.Black.Male", ]
 
+first.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.2013.White.Male", ]
+second.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.2013.Black.Male", ]
+
+cod.tab.alabama.male.1969 <- first.strata.cod %>% ungroup() %>%
+                                                  select(Age2, COD2, cod_prop_death5) %>%
+                                                  rename(prop2 = cod_prop_death5)
+
+cod.tab.alabama.male.1969$prop1 <- second.strata.cod$cod_prop_death5
+
+ggplot(cod.tab.alabama.male.1969, aes(x=COD2, y=prop1)) + 
+  geom_point(aes(col="White")) + geom_point(aes(y=prop2, col="Black")) +
+  scale_y_continuous(name = "Proportion dying from specified cause") +
+  facet_wrap(~Age2) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
 system.time(first.strata.life.table <- data.frame(life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population")))
+
+second.strata.life.table <- data.frame(life.table(data = second.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
 
 first.strata.life.table[, c("Age2", "total_deaths5", "Population", "R_x", "q_x", "l_x", "d_x", "L_x", "T_x", "e_x")]
 
