@@ -1,0 +1,21 @@
+
+September 12, 2016
+-attending: KTM and CAR
+DONE-CAR sent KTM the cleaned data for Alabama only.
+DONE-KTM to start playing with simpler Bayes models for missing data and smoothing across years
+DONE-CAR to understand the lifetable calculations
+DONE-CAR to program function to return lifetable and life expectancy at birth based on vector of counts of death and population for each age
+-CAR to program function to perform Arriaga’s decomposition and return information to make the graphics shown in Auger’s figures in the xls file.
+DONE-CAR to figure out which states to drop and send email to group to decide now.
+DONE-CAR - contacted GitHub to get a private repository for this project on Sep 12, 2016. Should hear from them in a couple weeks - private repo granted.
+----------------------------------------------------------------------------
+
+September 19, 2016
+-attending: KTM and CAR
+KTM: create file to log the analysis decisions and add in today’s discussion.
+KTM: continue work on the smoothing models.
+DONE - CAR: add the discussion of which states to look at to the the above document.
+CAR: clean up the repo to only store the plain text files like code and Rmd, and make sure there is no replication across what lives on dropbox and what lives on git.
+CAR: how to use GitHub to track your to-do? Like what is a good way to use GitHub to keep a to-do list of the functions we want in our life expectancy decomposition package?
+CAR: generalize the LE function to be okay with 0 cells.
+CAR: add the Arriage decomposition for COD by age.
