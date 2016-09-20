@@ -141,10 +141,10 @@ $(document).ready(function () {
 </ol>
 <p>To construct the life table, we first need to calculate the probabilities of death, <span class="math">\(q_x\)</span>. To find a formula for <span class="math">\(q_x\)</span> we first write the formula for <span class="math">\(R_x\)</span>, the age-specific mortality rate, and re-arrange to isolate <span class="math">\(q_x\)</span>:</p>
 <p><span class="math">\(R_x=d_x/L_x\)</span></p>
-<p><span class="math">\(R_x=d_x/(l_x-d_x)+\bar{a_x}d_x\)</span>, dividing the numerator and denominator by l_x:</p>
-<p><span class="math">\(R_x=q_x/(1-q_x)+\bar{a_x}q_x\)</span>, rearranging to solve for q_x:</p>
+<p><span class="math">\(R_x=d_x/(l_x-d_x)+\bar{a_x}d_x\)</span>, dividing the numerator and denominator by <span class="math">\(l_x\)</span>:</p>
+<p><span class="math">\(R_x=q_x/(1-q_x)+\bar{a_x}q_x\)</span>, rearranging to solve for <span class="math">\(q_x\)</span>:</p>
 <p><span class="math">\(q_x=\frac{R_x}{1+(1-\bar{a_x})R_x}\)</span>.</p>
-<p>Observed mortality rates <span class="math">\(R_x\)</span> can therefore be used to calculate the probability of dying within each age-specific interval. The observed mortality rates are calculated as <span class="math">\(d_x/Popn_x\)</span>, where <span class="math">\(Popn_x\)</span> is the number of individuals alive during age x. While this looks like a proportion, it calculates a rate when we assume the population is stationary, thereby implying there are <span class="math">\(Popn_x\)</span> person-years at risk of death during the age bracket.</p>
+<p>Observed mortality rates <span class="math">\(R_x\)</span> can therefore be used to calculate the probability of dying within each age-specific interval. The observed mortality rates are calculated as <span class="math">\(d_x/Pop_x\)</span>, where <span class="math">\(Pop_x\)</span> is the number of individuals alive during age <span class="math">\(x\)</span>. While this looks like a proportion, it calculates a <em>rate</em> when we assume the population is stationary, thereby implying there are <span class="math">\(Pop_x\)</span> person-years at risk of death during the age bracket.</p>
 <p>After <span class="math">\(q_x\)</span> is calculated based on <span class="math">\(R_x\)</span>, all of the other quantities defined above can also be calculated, except for the <span class="math">\(L_x\)</span>, the number of years lived, in the last age group. In this age group, <span class="math">\(\bar{a_x}\)</span> is unknown, and all the individuals in the age bracket will die (i.e., <span class="math">\(q_x=1\)</span>). Because <span class="math">\(d_x/L_x=R_x\)</span> and <span class="math">\(d_x=l_x\)</span> in this age group, we can substitute <span class="math">\(l_x\)</span> for <span class="math">\(d_x\)</span> and write <span class="math">\(l_x/L_x=R_x\)</span>, implying that <span class="math">\(L_x=l_x/R_x\)</span> in this age group.</p>
 </div>
 <div id="assumptions-of-the-life-table" class="section level2">
@@ -156,7 +156,7 @@ $(document).ready(function () {
 </ol>
 <p>Together, these assumptions imply that the population must be stationary.</p>
 <p><strong>Construction of an abridged (current) life table</strong></p>
-<p>Recall that an abridged life table includes age intervals that are longer than a year. In practice, these intervals are often 5 years in length and can be represented by <span class="math">\(n_x\)</span>, where <span class="math">\(x\)</span> is the age at the beginning of the interval. The formula for <span class="math">\(q_x\)</span> can be generalized to this context, where: <span class="math">\(q_x=\frac{n_xR_x}{1+(1-\bar(a_x))n_xR_x}\)</span>.</p>
+<p>Recall that an abridged life table includes age intervals that are longer than a year. In practice, these intervals are often 5 years in length and can be represented by <span class="math">\(n_x\)</span>, where <span class="math">\(x\)</span> is the age at the beginning of the interval. The formula for <span class="math">\(q_x\)</span> can be generalized to this context, where: <span class="math">\(q_x=\frac{n_xR_x}{1+(1-\bar{a_x})n_xR_x}\)</span>.</p>
 <p><strong>Derivation of the formula for <span class="math">\(q_x\)</span> when the life table is abridged</strong></p>
 <p>This derivation was modified from the Preston demography text <span class="citation">(Preston, Heuveline, and Guillot 2001)</span>. Note that in the Preston book <span class="math">\(a_x\)</span> represents <em>person-years</em> not the proportion of the year, which is why the formulas look different (because we have to write <span class="math">\(n_x\bar{a_x}\)</span> in place of Preston’s <span class="math">\(a_x\)</span>).</p>
 <p>We start with the simple formula for q_x. As before: <span class="math">\(q_x=d_x/l_x\)</span>.</p>
@@ -164,7 +164,8 @@ $(document).ready(function () {
 <p><span class="math">\(L_x = n_xl_x - n_xd_x + n_x\bar{a_x}d_x\)</span></p>
 <p><span class="math">\(l_x = \frac{L_x + n_xd_x - n_x\bar{a_x}d_x}{n_x}\)</span></p>
 <p><span class="math">\(l_x = \frac{L_x + d_xn_x(1 - \bar{a_x})}{n_x}\)</span></p>
-<p>We can then substitute this expression for <span class="math">\(l_x\)</span> into the equations for <span class="math">\(q_x\)</span>:</p>
+<p>We can then substitute this expression for <span class="math">\(l_x\)</span> into the equation for <span class="math">\(q_x\)</span>:</p>
+<p><span class="math">\(q_x=\frac{d_x}{l_x}\)</span></p>
 <p><span class="math">\(q_x=\frac{d_xn_x}{L_x + d_xn_x(1 - \bar{a_x})}\)</span>, and dividing numerator and denominator by <span class="math">\(L_x\)</span>, we get</p>
 <p><span class="math">\(q_x=\frac{R_xn_x}{1 + R_xn_x(1 - \bar{a_x})}\)</span>.</p>
 <p><strong>An example</strong></p>
@@ -476,16 +477,8 @@ table(cali.complete$group, cali.complete$ages)</code></pre>
 ##   5-9 years old   0 0 0 0 0 1 1 1 1 1  0  0  0  0  0  0
 ##   10-14 years old 0 0 0 0 0 0 0 0 0 0  1  1  1  1  1  0
 ##   15 or older     0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  1</code></pre>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: 'dplyr'</code></pre>
-<pre><code>## The following objects are masked from 'package:stats':
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>cali.abridged &lt;- cali.complete %&gt;% group_by(group) %&gt;% 
+<pre class="r"><code>library(dplyr)
+cali.abridged &lt;- cali.complete %&gt;% group_by(group) %&gt;% 
                                    summarise(nx = sum(nx), ages = first(group), popn = sum(obs.popn), deaths = sum(obs.deaths),
                                              avelived = first(avelived))
 
@@ -555,9 +548,16 @@ alabama.by.strata &lt;-
 
 first.strata &lt;- alabama.by.strata[alabama.by.strata$StateYearRaceSex == &quot;Alabama.1969.White.Male&quot;, ]
 
+alabama.by.strata.cod &lt;- dat.clean.alabama %&gt;% group_by(Year2, RaceSex, Age2) %&gt;%
+                                               arrange(RaceSex, Year2, Age2) %&gt;%
+                                               mutate(total_deaths5 = sum(Count_md5),
+                                                      cod_prop_death5 = Count_md5/total_deaths5)
+
+first.strata.cod &lt;- alabama.by.strata.cod[alabama.by.strata$StateYearRaceSex == &quot;Alabama.1969.White.Male&quot;, ]
+
 system.time(first.strata.life.table &lt;- data.frame(life.table(data = first.strata, age.groups = &quot;Age2&quot;, num.ages.in.group = &quot;nx&quot;, death.counts = &quot;total_deaths5&quot;, population.counts = &quot;Population&quot;)))</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.021   0.000   0.022</code></pre>
+##   0.032   0.002   0.036</code></pre>
 <pre class="r"><code>first.strata.life.table[, c(&quot;Age2&quot;, &quot;total_deaths5&quot;, &quot;Population&quot;, &quot;R_x&quot;, &quot;q_x&quot;, &quot;l_x&quot;, &quot;d_x&quot;, &quot;L_x&quot;, &quot;T_x&quot;, &quot;e_x&quot;)]</code></pre>
 <pre><code>##           Age2 total_deaths5 Population          R_x         q_x       l_x
 ## 1      &lt;1 year           533      22191 0.0240187463 0.023504996 100000.00
@@ -608,7 +608,7 @@ for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
 }
 )</code></pre>
 <pre><code>##    user  system elapsed 
-##   3.960   0.021   3.997</code></pre>
+##   4.149   0.068   4.268</code></pre>
 <div class="references">
 <h2>References</h2>
 <p>Auger, Nathalie, Pascaline Feuillet, Sylvie Martel, Ernest Lo, Amadou D Barry, and Sam Harper. 2014. “Mortality Inequality in Populations with Equal Life Expectancy: Arriaga’s Decomposition Method in SAS, Stata, and Excel.” <em>Annals of Epidemiology</em> 24 (8). Elsevier: 575–80.</p>
