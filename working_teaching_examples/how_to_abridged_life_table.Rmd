@@ -73,15 +73,19 @@ This derivation was modified from the Preston demography text [@preston_demograp
 We start with the simple formula for q_x. As before:
 $q_x=d_x/l_x$.
 
-Now, $L_x = n_x*(l_x - d_x) + n_x\bar{a_x}d_x$
+Now, $L_x = n_x(l_x - d_x) + n_x\bar{a_x}d_x$
+
 $L_x = n_xl_x - n_xd_x + n_x\bar{a_x}d_x$
+
 $l_x = \frac{L_x + n_xd_x - n_x\bar{a_x}d_x}{n_x}$
-$l_x = \frac{L_x + d_xn_x(1 - \bar{a_x}){n_x}$
+
+$l_x = \frac{L_x + d_xn_x(1 - \bar{a_x})}{n_x}$
 
 We can then substitute this expression for $l_x$ into the equations for $q_x$:
 
-$q_x=\frac{d_xn_x}{L_x + d_xn_x(1 - \bar{a_x}}$, and dividing numerator and denominator by L_x, we get
-$q_x=\frac{R_xn_x}{1 + R_xn_x(1 - \bar{a_x}}$.
+$q_x=\frac{d_xn_x}{L_x + d_xn_x(1 - \bar{a_x})}$, and dividing numerator and denominator by $L_x$, we get
+
+$q_x=\frac{R_xn_x}{1 + R_xn_x(1 - \bar{a_x})}$.
 
 **An example**
 
@@ -96,15 +100,12 @@ canada.men <- data.frame("ages" = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50,
                                         4532151, 5085092, 5163532, 4597916, 3937984, 3120981, 2323629, 1862971,
                                         1499907, 997492, 492445, 196109))
 
-head(canada.men)
-
 quebec.men <- data.frame("ages" = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90), 
                          "obs.deaths" = c(1057, 164, 116, 176, 659, 956, 1056, 1110, 1498, 2470, 4116, 6054, 8426,
                                           11175, 13558, 16567, 21349, 22396, 16851,10878),
                          "obs.popn" = c(215200, 789710, 1008266, 1179423, 1249360, 1261780, 1349857, 1293521,
                                         1313834, 1551684, 1622835, 1485249, 1288014, 1077253, 796557, 609341, 
                                         476211, 300506, 134353, 49678))
-head(quebec.men)
 ```
 
 I then add a column that denotes how many years are in each age bracket:
@@ -116,48 +117,14 @@ canada.men$n_x[canada.men$ages == 1] <- 4
 quebec.men$n_x <- 5
 quebec.men$n_x[quebec.men$ages == 0] <- 1
 quebec.men$n_x[quebec.men$ages == 1] <- 4
+
+head(canada.men)
+head(quebec.men)
 ```
 
-```{r function_lifeexpectancy}
-#dataset needs to be in order of age.
-life.table <- function(data, age.groups, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA){
-  
-  data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
-
-  if(is.na(ave.prop.lived) == T) {
-      data["a_x"] <- 0.5 #average proportion of interval lived
-      data[1, "a_x"] <- 0.09
-  } else{
-      data["a_x"] <- data[ave.prop.lived]
-  }
-  
-  data["q_x"] <- data[num.ages.in.group]*data["R_x"]/(1 + (1 - data["a_x"])*data[num.ages.in.group]*data["R_x"]) 
-  #probability of dying
-  
-  data[dim(data)[1], "q_x"] <- 1 #100% die in last age group
-  
-  data["p_x"] <- 1 - data["q_x"] #probability of survival
-  
-  data["l_x"] <- NA #l_x: is the number of individuals alive at the start of the interval
-  data[1, "l_x"] <- 100000 
-  
-  for(i in 2:dim(data)[1]) {
-    data[i, "l_x"] <- data[i - 1, "l_x"]*data[i-1, "p_x"]
-  }
-  
-  data["d_x"] <- data["l_x"]*data["q_x"] #number of deaths
-  data["L_x"] <- (data["l_x"] - data["d_x"])*data[num.ages.in.group] + data["d_x"]*data["a_x"]*data[num.ages.in.group] #person time in the age bracket
-  data[dim(data)[1], "L_x"] <- data[dim(data)[1], "l_x"]/data[dim(data)[1], "R_x"] #different for last age bracket
-  
-  #now to calculate the total person time lived at or after age x, T_x:
-  data["cumsum"] <- cumsum(data["L_x"])
-  data["l.cumsum"] <- c(0, unlist(data[1:(dim(data)[1] - 1), "cumsum"]))
-  data["T_x"] <- sum(data["L_x"]) - data["l.cumsum"]
-  data["e_x"] <- data["T_x"]/data["l_x"]
-  
-  return(data)
-  
-} 
+This source file contains the life expectancy functions used in this project:
+```{r load_functions}
+source("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Code/life_expectancy_functions.R")
 ```
 
 ```{r calculate_life_expectancy}
@@ -168,6 +135,12 @@ round(life.table.cm, 2)
 life.table.qm <- life.table(data = quebec.men, age.groups = "ages", num.ages.in.group = "n_x", death.counts = "obs.deaths", population.counts = "obs.popn")
 
 round(life.table.qm, 2)
+```
+
+```{r calc_age_decomp}
+age_decomp <- le_age_decomp(life.table.qm, life.table.cm, num.alive="l_x", interval.years.lived="L_x", accumulated.years.lived = "T_x")
+
+age_decomp2 <- le_age_decomp(life.table.cm, life.table.qm, num.alive="l_x", interval.years.lived="L_x", accumulated.years.lived = "T_x")
 ```
 
 **A second example**
@@ -206,17 +179,17 @@ cali.abridged <- cali.complete %>% group_by(group) %>%
 
 cali.abridged
 
-life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
-           death.counts = "deaths", population.counts = "popn")
+data.frame(life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+           death.counts = "deaths", population.counts = "popn"))
 
 
-life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
-           death.counts = "deaths", population.counts = "popn", ave.prop.lived = "avelived")
+data.frame(life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+           death.counts = "deaths", population.counts = "popn", ave.prop.lived = "avelived"))
 ```          
 
 ```{r}
-load("Data/alabama_only.Rdata")
-
+#load("Data/alabama_only.Rdata")
+load("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Data/alabama_only.Rdata")
 #example data
 alabama.by.strata <- 
   dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
@@ -231,9 +204,9 @@ alabama.by.strata <-
 
 first.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
 
-system.time(first.strata.life.table <- life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
+system.time(first.strata.life.table <- data.frame(life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population")))
 
-View(first.strata.life.table)
+first.strata.life.table[, c("Age2", "total_deaths5", "Population", "R_x", "q_x", "l_x", "d_x", "L_x", "T_x", "e_x")]
 
 system.time(
 for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
@@ -241,7 +214,6 @@ for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
          life.table(data = subset(alabama.by.strata, StateYearRaceSex == stratum.id), 
                                   age.groups = "Age2", num.ages.in.group = "nx", 
                                   death.counts = "total_deaths5", population.counts = "Population"))
-  print(stratum.id)
 }
 )
 ```
