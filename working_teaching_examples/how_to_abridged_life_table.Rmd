@@ -43,13 +43,13 @@ To construct the life table, we first need to calculate the probabilities of dea
 
 $R_x=d_x/L_x$ 
 
-$R_x=d_x/(l_x-d_x)+\bar{a_x}d_x$, dividing the numerator and denominator by l_x:
+$R_x=d_x/(l_x-d_x)+\bar{a_x}d_x$, dividing the numerator and denominator by $l_x$:
 
-$R_x=q_x/(1-q_x)+\bar{a_x}q_x$, rearranging to solve for q_x:
+$R_x=q_x/(1-q_x)+\bar{a_x}q_x$, rearranging to solve for $q_x$:
 
 $q_x=\frac{R_x}{1+(1-\bar{a_x})R_x}$.
 
-Observed mortality rates $R_x$ can therefore be used to calculate the probability of dying within each age-specific interval. The observed mortality rates are calculated as $d_x/Popn_x$, where $Popn_x$ is the number of individuals alive during age x. While this looks like a proportion, it calculates a rate when we assume the population is stationary, thereby implying there are $Popn_x$ person-years at risk of death during the age bracket. 
+Observed mortality rates $R_x$ can therefore be used to calculate the probability of dying within each age-specific interval. The observed mortality rates are calculated as $d_x/Pop_x$, where $Pop_x$ is the number of individuals alive during age $x$. While this looks like a proportion, it calculates a *rate* when we assume the population is stationary, thereby implying there are $Pop_x$ person-years at risk of death during the age bracket. 
 
 After $q_x$ is calculated based on $R_x$, all of the other quantities defined above can also be calculated, except for the $L_x$, the number of years lived, in the last age group. In this age group, $\bar{a_x}$ is unknown, and all the individuals in the age bracket will die (i.e., $q_x=1$). Because $d_x/L_x=R_x$ and $d_x=l_x$ in this age group, we can substitute $l_x$ for $d_x$ and write $l_x/L_x=R_x$, implying that $L_x=l_x/R_x$ in this age group.
 
@@ -64,7 +64,7 @@ Together, these assumptions imply that the population must be stationary.
 
 **Construction of an abridged (current) life table**
 
-Recall that an abridged life table includes age intervals that are longer than a year. In practice, these intervals are often 5 years in length and can be represented by $n_x$, where $x$ is the age at the beginning of the interval. The formula for $q_x$ can be generalized to this context, where: $q_x=\frac{n_xR_x}{1+(1-\bar(a_x))n_xR_x}$.
+Recall that an abridged life table includes age intervals that are longer than a year. In practice, these intervals are often 5 years in length and can be represented by $n_x$, where $x$ is the age at the beginning of the interval. The formula for $q_x$ can be generalized to this context, where: $q_x=\frac{n_xR_x}{1+(1-\bar{a_x})n_xR_x}$.
 
 **Derivation of the formula for $q_x$ when the life table is abridged**
 
@@ -81,7 +81,9 @@ $l_x = \frac{L_x + n_xd_x - n_x\bar{a_x}d_x}{n_x}$
 
 $l_x = \frac{L_x + d_xn_x(1 - \bar{a_x})}{n_x}$
 
-We can then substitute this expression for $l_x$ into the equations for $q_x$:
+We can then substitute this expression for $l_x$ into the equation for $q_x$:
+
+$q_x=\frac{d_x}{l_x}$
 
 $q_x=\frac{d_xn_x}{L_x + d_xn_x(1 - \bar{a_x})}$, and dividing numerator and denominator by $L_x$, we get
 
@@ -197,7 +199,7 @@ data.frame(life.table(data = cali.abridged, age.groups = "ages", num.ages.in.gro
            death.counts = "deaths", population.counts = "popn", ave.prop.lived = "avelived"))
 ```          
 
-```{r}
+```{r alabama_example}
 #load("Data/alabama_only.Rdata")
 load("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Data/alabama_only.Rdata")
 #example data
