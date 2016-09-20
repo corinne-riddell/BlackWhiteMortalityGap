@@ -38,12 +38,6 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
   
 } 
 
-#Stopped here. For next time: 
-#  need to change T_x to T_x+n in this formula and add the last term in the empty brackets after leading the number alive variable
-#see the auger paper pg 576 for the formula to finish programming.
-#data1 <- Quebec
-#data2 <- Canada
-
 le_age_decomp <- function(data1, data2, num.alive, interval.years.lived, accumulated.years.lived) {
   
   data2["accumulated.lived.after"] <- c(unlist(data2[2:dim(data2)[1], accumulated.years.lived]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
@@ -56,14 +50,6 @@ le_age_decomp <- function(data1, data2, num.alive, interval.years.lived, accumul
     (data1[num.alive]/data1[1, num.alive])*((data2[interval.years.lived]/data2[num.alive]) - (data1[interval.years.lived]/data1[num.alive])) +
     ((data2["accumulated.lived.after"]/data2[1, num.alive])*((data1[num.alive]/data2[num.alive]) - (data1["num.alive.next.interval"]/data2["num.alive.next.interval"])))
 
-#  C_x[dim(data1)[1]] <- 
-#    (data1[dim(data1)[1], num.alive]/data1[1, num.alive])*((data2[dim(data2)[1], interval.years.lived]/data2[dim(data2)[1], num.alive]) - (data1[dim(data1)[1], interval.years.lived]/data1[dim(data1)[1], num.alive])) 
-  
   return(data1)
 }
-
-age_decomp <- le_age_decomp(life.table.qm, life.table.cm, num.alive="l_x", interval.years.lived="L_x", accumulated.years.lived = "T_x")
-
-age_decomp2 <- le_age_decomp(life.table.cm, life.table.qm, num.alive="l_x", interval.years.lived="L_x", accumulated.years.lived = "T_x")
-
 
