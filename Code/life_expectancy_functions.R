@@ -40,6 +40,8 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
   
 } 
 
+#takes the life table output from the first function -- need two life tables to perform the comparison
+#ask KTM about if I should remove the last three params? ... I am thinking that would be "cleaner" but want a second opinion.
 le_age_decomp <- function(life.table1, life.table2, num.alive, interval.years.lived, accumulated.years.lived) {
   
   life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], accumulated.years.lived]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
@@ -47,7 +49,7 @@ le_age_decomp <- function(life.table1, life.table2, num.alive, interval.years.li
   life.table1["num.alive.next.interval"] <- c(unlist(life.table1[2:dim(life.table2)[1], num.alive]), 0) #l_(x+n) 
   life.table2["num.alive.next.interval"] <- c(unlist(life.table2[2:dim(life.table2)[1], num.alive]), 1) #--> end in 1 to fix calculation error of dividing by 0
 
-  decomp.table <- data.frame("Ages" = life.table1[ ,1], "Life_Expectancy_1" = life.table1["e_x"], "Life_Expectancy_2" = life.table2["e_x"],
+  decomp.table <- data.frame("Ages" = life.table1[ ,1], life.table1["e_x"], life.table2["e_x"],
                              "C_x" = rep(NA, dim(life.table1)[1]))
   
   names(decomp.table)[2] <- "Life_Expectancy_1"
@@ -60,6 +62,11 @@ le_age_decomp <- function(life.table1, life.table2, num.alive, interval.years.li
   return(decomp.table)
 }
 
-cause_of_death_decomp <- function() {
-  
+#need to decide whether cod.proportions should be a vector (long format) or matrix (wide format) 
+#matrix is in line with Auger's spreadsheet. would use apply function to go across the variables in the data frame
+#vector is easier for me to think about, although need to think about how to perform the vectorization since not all vectors
+#are the same length (the cod proportions vector is 114 long for alabama whereas the other will be 114/6 since they aren't
+#code specific)
+cause_of_death_decomp <- function(cod.proportions, life.table1, life.table2, decomp.table) {
+  decomp.table["C_x"]*((life.table2[]*life.table2["R_x"] - life.table1[]*life.table1["R_x"])/(life.table2[]*life.table2[]))
 }

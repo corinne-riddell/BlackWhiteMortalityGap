@@ -175,7 +175,7 @@ life.table(data = cali.complete, age.groups = "ages", num.ages.in.group = "nx", 
            death.counts = "obs.deaths", population.counts = "obs.popn")
 ```
 
-```{r lifetable_cali_abridged}
+```{r lifetable_cali_abridged, warning=F, message=F}
 cali.complete$group <- cut(cali.complete$ages, breaks=c(0, 1, 5, 10, 15, 20), 
                            labels = c("<1 years old", "1-4 years old", "5-9 years old", 
                                       "10-14 years old", "15 or older"), include.lowest = T, right = F)
@@ -213,6 +213,13 @@ alabama.by.strata <-
             nx = first(nx))
 
 first.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
+
+alabama.by.strata.cod <- dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
+                                               arrange(RaceSex, Year2, Age2) %>%
+                                               mutate(total_deaths5 = sum(Count_md5),
+                                                      cod_prop_death5 = Count_md5/total_deaths5)
+
+first.strata.cod <- alabama.by.strata.cod[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
 
 system.time(first.strata.life.table <- data.frame(life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population")))
 
