@@ -118,11 +118,11 @@ $(document).ready(function () {
 
 <div id="what-is-a-life-table" class="section level2">
 <h2>What is a life table?</h2>
-<p>“A life table is a system way of keeping track of the mortality experience of a group.” <span class="citation">(Selvin 2004, Chapter 9 Life Tables: An Introduction)</span>.</p>
+<p>“A life table is a systematic way of keeping track of the mortality experience of a group.” <span class="citation">(Selvin 2004, Chapter 9 Life Tables: An Introduction)</span>.</p>
 <p><strong>Cohort life table</strong></p>
 <p>A cohort life table is constructed by following a cohort of individuals through time and recording their exact age at death for all members of the cohort <span class="citation">(Selvin 2004)</span>. For example, you could take the cohort of individuals born in 1998 in Montreal and each member’s year of death. However, this would require waiting until the last member died and would therefore take a very long time.</p>
 <p><strong>Current life table</strong></p>
-<p>As a practical alternative, a life table can be made using current mortality rates for a population. This is called a current life table <span class="citation">(Selvin 2004)</span>.</p>
+<p>As a practical alternative, a life table can be made using current mortality rates for a population. This is called a current life table <span class="citation">(Selvin 2004)</span> or a period life table <span class="citation">(Preston, Heuveline, and Guillot 2001)</span>.</p>
 <p><strong>Complete vs abridged life table</strong></p>
 <p>If mortality rates can be calculated for each age, then the life table is called complete, compared to life tables calculated based on data categorized by age groupings (i.e., &lt;1 years old, 1-4 years old, 5-9 years old, etc) which are called abridged.</p>
 <p><strong>Elements used to construct a complete (current) life table</strong></p>
@@ -136,7 +136,7 @@ $(document).ready(function () {
 <li>Each individual who does not die during the interval contributes 1 person-year, and those who die contribute the proportion of the year up until their death (which is approximated to be 9% of the year for the &lt;1 age group and half a year (50%) for all other groups). This “average time contributed by those who die” is denoted by <span class="math">\(\bar{a_x}\)</span>.</li>
 <li>Therefore, <span class="math">\(L_x=(l_x-d_x)+\bar{a_x}d_x\)</span>.</li>
 </ol></li>
-<li><p>Total time lived (<span class="math">\(T_x\)</span>): This is the accumulation of person-time-at-risk at age x and beyond – the total number of person years lived by those alive at age <span class="math">\(x\)</span>.</p></li>
+<li><p>Cumulative time lived (<span class="math">\(T_x\)</span>): This is the accumulation of person-time-at-risk at age x and beyond – the total number of person years lived by those alive at age <span class="math">\(x\)</span>.</p></li>
 <li><p>Expectation of life (<span class="math">\(e_x\)</span>): The average number of additional years expected to be lived by those individuals alive at age <span class="math">\(x\)</span>. <span class="math">\(e_x=T_x/l_x\)</span>.</p></li>
 </ol>
 <p>To construct the life table, we first need to calculate the probabilities of death, <span class="math">\(q_x\)</span>. To find a formula for <span class="math">\(q_x\)</span> we first write the formula for <span class="math">\(R_x\)</span>, the age-specific mortality rate, and re-arrange to isolate <span class="math">\(q_x\)</span>:</p>
@@ -152,13 +152,413 @@ $(document).ready(function () {
 <ol style="list-style-type: decimal">
 <li>The number of births occurring each year is constant.</li>
 <li>Deaths are uniformly distributed during the interval after 1 years old.</li>
-<li>There is no population growth. Together, these assumptions imply that the population must be stationary.</li>
-<li></li>
+<li>There is no population growth.</li>
 </ol>
+<p>Together, these assumptions imply that the population must be stationary.</p>
 <p><strong>Construction of an abridged (current) life table</strong></p>
 <p>Recall that an abridged life table includes age intervals that are longer than a year. In practice, these intervals are often 5 years in length and can be represented by <span class="math">\(n_x\)</span>, where <span class="math">\(x\)</span> is the age at the beginning of the interval. The formula for <span class="math">\(q_x\)</span> can be generalized to this context, where: <span class="math">\(q_x=\frac{n_xR_x}{1+(1-\bar(a_x))n_xR_x}\)</span>.</p>
+<p><strong>Derivation of the formula for <span class="math">\(q_x\)</span> when the life table is abridged</strong></p>
+<p>This derivation was modified from the Preston demography text <span class="citation">(Preston, Heuveline, and Guillot 2001)</span>. Note that in the Preston book <span class="math">\(a_x\)</span> represents <em>person-years</em> not the proportion of the year, which is why the formulas look different (because we have to write <span class="math">\(n_x\bar{a_x}\)</span> in place of Preston’s <span class="math">\(a_x\)</span>).</p>
+<p>We start with the simple formula for q_x. As before: <span class="math">\(q_x=d_x/l_x\)</span>.</p>
+<p>Now, <span class="math">\(L_x = n_x(l_x - d_x) + n_x\bar{a_x}d_x\)</span></p>
+<p><span class="math">\(L_x = n_xl_x - n_xd_x + n_x\bar{a_x}d_x\)</span></p>
+<p><span class="math">\(l_x = \frac{L_x + n_xd_x - n_x\bar{a_x}d_x}{n_x}\)</span></p>
+<p><span class="math">\(l_x = \frac{L_x + d_xn_x(1 - \bar{a_x})}{n_x}\)</span></p>
+<p>We can then substitute this expression for <span class="math">\(l_x\)</span> into the equations for <span class="math">\(q_x\)</span>:</p>
+<p><span class="math">\(q_x=\frac{d_xn_x}{L_x + d_xn_x(1 - \bar{a_x})}\)</span>, and dividing numerator and denominator by <span class="math">\(L_x\)</span>, we get</p>
+<p><span class="math">\(q_x=\frac{R_xn_x}{1 + R_xn_x(1 - \bar{a_x})}\)</span>.</p>
+<p><strong>An example</strong></p>
+<p>This data was used in a previously published paper <span class="citation">(Auger et al. 2014)</span>. We use it to show how the life expectancy function works.</p>
+<p>First, I create the dataset in R:</p>
+<pre class="r"><code>canada.men &lt;- data.frame(&quot;ages&quot; = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90),
+                         &quot;obs.deaths&quot; = c(4054, 625, 445, 622, 2568, 3770, 3434, 3681, 5155, 8449, 13421, 19371, 
+                                          25448, 31465, 37441, 48796, 64763, 72512, 60109, 43812),
+                         &quot;obs.popn&quot; = c(719953, 2835604, 3654546, 4071400, 4464549, 4564679, 4296613, 4237402,
+                                        4532151, 5085092, 5163532, 4597916, 3937984, 3120981, 2323629, 1862971,
+                                        1499907, 997492, 492445, 196109))
+
+quebec.men &lt;- data.frame(&quot;ages&quot; = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90), 
+                         &quot;obs.deaths&quot; = c(1057, 164, 116, 176, 659, 956, 1056, 1110, 1498, 2470, 4116, 6054, 8426,
+                                          11175, 13558, 16567, 21349, 22396, 16851,10878),
+                         &quot;obs.popn&quot; = c(215200, 789710, 1008266, 1179423, 1249360, 1261780, 1349857, 1293521,
+                                        1313834, 1551684, 1622835, 1485249, 1288014, 1077253, 796557, 609341, 
+                                        476211, 300506, 134353, 49678))</code></pre>
+<p>I then add a column that denotes how many years are in each age bracket:</p>
+<pre class="r"><code>canada.men$n_x &lt;- 5
+canada.men$n_x[canada.men$ages == 0] &lt;- 1
+canada.men$n_x[canada.men$ages == 1] &lt;- 4
+
+quebec.men$n_x &lt;- 5
+quebec.men$n_x[quebec.men$ages == 0] &lt;- 1
+quebec.men$n_x[quebec.men$ages == 1] &lt;- 4
+
+head(canada.men)</code></pre>
+<pre><code>##   ages obs.deaths obs.popn n_x
+## 1    0       4054   719953   1
+## 2    1        625  2835604   4
+## 3    5        445  3654546   5
+## 4   10        622  4071400   5
+## 5   15       2568  4464549   5
+## 6   20       3770  4564679   5</code></pre>
+<pre class="r"><code>head(quebec.men)</code></pre>
+<pre><code>##   ages obs.deaths obs.popn n_x
+## 1    0       1057   215200   1
+## 2    1        164   789710   4
+## 3    5        116  1008266   5
+## 4   10        176  1179423   5
+## 5   15        659  1249360   5
+## 6   20        956  1261780   5</code></pre>
+<p>This source file contains the life expectancy functions used in this project:</p>
+<pre class="r"><code>source(&quot;/Users/corinneriddell/Documents/repos/BlackWhiteGap/Code/life_expectancy_functions.R&quot;)</code></pre>
+<pre class="r"><code>life.table.cm &lt;- life.table(data = canada.men, age.groups = &quot;ages&quot;, num.ages.in.group = &quot;n_x&quot;, death.counts = &quot;obs.deaths&quot;, population.counts = &quot;obs.popn&quot;)
+
+round(life.table.cm, 2)</code></pre>
+<pre><code>##    ages obs.deaths obs.popn n_x  R_x  a_x  q_x  p_x       l_x      d_x
+## 1     0       4054   719953   1 0.01 0.09 0.01 0.99 100000.00   560.22
+## 2     1        625  2835604   4 0.00 0.50 0.00 1.00  99439.78    87.63
+## 3     5        445  3654546   5 0.00 0.50 0.00 1.00  99352.15    60.47
+## 4    10        622  4071400   5 0.00 0.50 0.00 1.00  99291.68    75.82
+## 5    15       2568  4464549   5 0.00 0.50 0.00 1.00  99215.86   284.93
+## 6    20       3770  4564679   5 0.00 0.50 0.00 1.00  98930.93   407.70
+## 7    25       3434  4296613   5 0.00 0.50 0.00 1.00  98523.23   392.93
+## 8    30       3681  4237402   5 0.00 0.50 0.00 1.00  98130.30   425.30
+## 9    35       5155  4532151   5 0.00 0.50 0.01 0.99  97705.00   554.09
+## 10   40       8449  5085092   5 0.00 0.50 0.01 0.99  97150.91   803.75
+## 11   45      13421  5163532   5 0.00 0.50 0.01 0.99  96347.16  1244.04
+## 12   50      19371  4597916   5 0.00 0.50 0.02 0.98  95103.12  1982.46
+## 13   55      25448  3937984   5 0.01 0.50 0.03 0.97  93120.65  2960.98
+## 14   60      31465  3120981   5 0.01 0.50 0.05 0.95  90159.67  4433.11
+## 15   65      37441  2323629   5 0.02 0.50 0.08 0.92  85726.56  6639.18
+## 16   70      48796  1862971   5 0.03 0.50 0.12 0.88  79087.38  9720.97
+## 17   75      64763  1499907   5 0.04 0.50 0.19 0.81  69366.41 13516.48
+## 18   80      72512   997492   5 0.07 0.50 0.31 0.69  55849.93 17178.00
+## 19   85      60109   492445   5 0.12 0.50 0.47 0.53  38671.93 18083.61
+## 20   90      43812   196109   5 0.22 0.50 1.00 0.00  20588.31 20588.31
+##          L_x    cumsum  l.cumsum        T_x   e_x
+## 1   99490.20   99490.2       0.0 7850985.03 78.51
+## 2  397583.85  497074.0   99490.2 7751494.84 77.95
+## 3  496609.56  993683.6  497074.0 7353910.99 74.02
+## 4  496268.84 1489952.4  993683.6 6857301.43 69.06
+## 5  495366.96 1985319.4 1489952.4 6361032.59 64.11
+## 6  493635.38 2478954.8 1985319.4 5865665.63 59.29
+## 7  491633.82 2970588.6 2478954.8 5372030.25 54.53
+## 8  489588.24 3460176.8 2970588.6 4880396.43 49.73
+## 9  487139.76 3947316.6 3460176.8 4390808.19 44.94
+## 10 483745.16 4431061.8 3947316.6 3903668.43 40.18
+## 11 478625.68 4909687.5 4431061.8 3419923.27 35.50
+## 12 470559.42 5380246.9 4909687.5 2941297.59 30.93
+## 13 458200.81 5838447.7 5380246.9 2470738.17 26.53
+## 14 439715.58 6278163.2 5838447.7 2012537.36 22.32
+## 15 412034.85 6690198.1 6278163.2 1572821.78 18.35
+## 16 371134.48 7061332.6 6690198.1 1160786.93 14.68
+## 17 313040.86 7374373.5 7061332.6  789652.45 11.38
+## 18 236304.64 7610678.1 7374373.5  476611.59  8.53
+## 19 148150.60 7758828.7 7610678.1  240306.94  6.21
+## 20  92156.34 7850985.0 7758828.7   92156.34  4.48</code></pre>
+<pre class="r"><code>life.table.qm &lt;- life.table(data = quebec.men, age.groups = &quot;ages&quot;, num.ages.in.group = &quot;n_x&quot;, death.counts = &quot;obs.deaths&quot;, population.counts = &quot;obs.popn&quot;)
+
+round(life.table.qm, 2)</code></pre>
+<pre><code>##    ages obs.deaths obs.popn n_x  R_x  a_x  q_x  p_x       l_x      d_x
+## 1     0       1057   215200   1 0.00 0.09 0.00 1.00 100000.00   488.99
+## 2     1        164   789710   4 0.00 0.50 0.00 1.00  99511.01    82.63
+## 3     5        116  1008266   5 0.00 0.50 0.00 1.00  99428.39    57.18
+## 4    10        176  1179423   5 0.00 0.50 0.00 1.00  99371.21    74.12
+## 5    15        659  1249360   5 0.00 0.50 0.00 1.00  99297.09   261.54
+## 6    20        956  1261780   5 0.00 0.50 0.00 1.00  99035.56   374.47
+## 7    25       1056  1349857   5 0.00 0.50 0.00 1.00  98661.09   385.16
+## 8    30       1110  1293521   5 0.00 0.50 0.00 1.00  98275.93   420.76
+## 9    35       1498  1313834   5 0.00 0.50 0.01 0.99  97855.16   556.27
+## 10   40       2470  1551684   5 0.00 0.50 0.01 0.99  97298.89   771.34
+## 11   45       4116  1622835   5 0.00 0.50 0.01 0.99  96527.55  1216.40
+## 12   50       6054  1485249   5 0.00 0.50 0.02 0.98  95311.15  1922.89
+## 13   55       8426  1288014   5 0.01 0.50 0.03 0.97  93388.26  3005.51
+## 14   60      11175  1077253   5 0.01 0.50 0.05 0.95  90382.75  4569.47
+## 15   65      13558   796557   5 0.02 0.50 0.08 0.92  85813.28  7004.96
+## 16   70      16567   609341   5 0.03 0.50 0.13 0.87  78808.32 10031.51
+## 17   75      21349   476211   5 0.04 0.50 0.20 0.80  68776.82 13862.93
+## 18   80      22396   300506   5 0.07 0.50 0.31 0.69  54913.88 17249.16
+## 19   85      16851   134353   5 0.13 0.50 0.48 0.52  37664.72 17981.82
+## 20   90      10878    49678   5 0.22 0.50 1.00 0.00  19682.90 19682.90
+##          L_x     cumsum   l.cumsum       T_x   e_x
+## 1   99555.02   99555.02       0.00 7842008.8 78.42
+## 2  397878.80  497433.83   99555.02 7742453.8 77.80
+## 3  496998.99  994432.81  497433.83 7344575.0 73.87
+## 4  496670.75 1491103.56  994432.81 6847576.0 68.91
+## 5  495831.62 1986935.17 1491103.56 6350905.2 63.96
+## 6  494241.61 2481176.78 1986935.17 5855073.6 59.12
+## 7  492342.54 2973519.32 2481176.78 5360832.0 54.34
+## 8  490327.73 3463847.04 2973519.32 4868489.5 49.54
+## 9  487885.14 3951732.18 3463847.04 4378161.8 44.74
+## 10 484566.10 4436298.28 3951732.18 3890276.6 39.98
+## 11 479596.74 4915895.02 4436298.28 3405710.5 35.28
+## 12 471748.52 5387643.54 4915895.02 2926113.8 30.70
+## 13 459427.53 5847071.07 5387643.54 2454365.3 26.28
+## 14 440490.08 6287561.15 5847071.07 1994937.7 22.07
+## 15 411554.01 6699115.15 6287561.15 1554447.6 18.11
+## 16 368962.84 7068078.00 6699115.15 1142893.6 14.50
+## 17 309226.75 7377304.74 7068078.00  773930.8 11.25
+## 18 231446.51 7608751.25 7377304.74  464704.1  8.46
+## 19 143369.05 7752120.31 7608751.25  233257.5  6.19
+## 20  89888.50 7842008.80 7752120.31   89888.5  4.57</code></pre>
+<pre class="r"><code>age_decomp &lt;- le_age_decomp(life.table.qm, life.table.cm, num.alive=&quot;l_x&quot;, interval.years.lived=&quot;L_x&quot;, accumulated.years.lived = &quot;T_x&quot;)
+
+age_decomp2 &lt;- le_age_decomp(life.table.cm, life.table.qm, num.alive=&quot;l_x&quot;, interval.years.lived=&quot;L_x&quot;, accumulated.years.lived = &quot;T_x&quot;)</code></pre>
+<p><strong>A second example</strong></p>
+<p>In this example we use the data that Sam entered into Stata to illustrate the life expectancy concept to me. I’ll replicate the life table here to ensure that I can arrive at the same results as he does in Stata.</p>
+<pre class="r"><code>cali.complete &lt;- data.frame(&quot;ages&quot; = c(0:15), &quot;nx&quot; = rep(1,16),
+                         &quot;obs.deaths&quot; = c(1635, 64, 41, 22, 41, 55, 42, 58, 44, 52, 48, 60, 52, 82, 129, 23300), #last number is fictitious
+                         &quot;obs.popn&quot; = c(123342, 111520, 109200, 108749, 105698, 110548, 106857, 112184, 116423,
+                                        132952, 134266, 128938, 125502, 128212, 132775, 143600))
+
+head(cali.complete)</code></pre>
+<pre><code>##   ages nx obs.deaths obs.popn
+## 1    0  1       1635   123342
+## 2    1  1         64   111520
+## 3    2  1         41   109200
+## 4    3  1         22   108749
+## 5    4  1         41   105698
+## 6    5  1         55   110548</code></pre>
+<pre class="r"><code>life.table(data = cali.complete, age.groups = &quot;ages&quot;, num.ages.in.group = &quot;nx&quot;, 
+           death.counts = &quot;obs.deaths&quot;, population.counts = &quot;obs.popn&quot;)</code></pre>
+<pre><code>##    ages nx obs.deaths obs.popn          R_x  a_x          q_x       p_x
+## 1     0  1       1635   123342 0.0132558253 0.09 0.0130978288 0.9869022
+## 2     1  1         64   111520 0.0005738881 0.50 0.0005737235 0.9994263
+## 3     2  1         41   109200 0.0003754579 0.50 0.0003753874 0.9996246
+## 4     3  1         22   108749 0.0002023007 0.50 0.0002022803 0.9997977
+## 5     4  1         41   105698 0.0003878976 0.50 0.0003878224 0.9996122
+## 6     5  1         55   110548 0.0004975214 0.50 0.0004973977 0.9995026
+## 7     6  1         42   106857 0.0003930487 0.50 0.0003929714 0.9996070
+## 8     7  1         58   112184 0.0005170078 0.50 0.0005168742 0.9994831
+## 9     8  1         44   116423 0.0003779322 0.50 0.0003778608 0.9996221
+## 10    9  1         52   132952 0.0003911186 0.50 0.0003910421 0.9996090
+## 11   10  1         48   134266 0.0003574993 0.50 0.0003574354 0.9996426
+## 12   11  1         60   128938 0.0004653399 0.50 0.0004652317 0.9995348
+## 13   12  1         52   125502 0.0004143360 0.50 0.0004142502 0.9995857
+## 14   13  1         82   128212 0.0006395657 0.50 0.0006393613 0.9993606
+## 15   14  1        129   132775 0.0009715684 0.50 0.0009710967 0.9990289
+## 16   15  1      23300   143600 0.1622562674 0.50 1.0000000000 0.0000000
+##          l_x         d_x       L_x    cumsum  l.cumsum       T_x       e_x
+## 1  100000.00  1309.78288  98808.10   98808.1       0.0 2080678.9 20.806789
+## 2   98690.22    56.62089  98661.91  197470.0   98808.1 1981870.8 20.081735
+## 3   98633.60    37.02581  98615.08  296085.1  197470.0 1883208.9 19.092976
+## 4   98596.57    19.94414  98586.60  394671.7  296085.1 1784593.8 18.099959
+## 5   98576.63    38.23022  98557.51  493229.2  394671.7 1686007.2 17.103519
+## 6   98538.40    49.01277  98513.89  591743.1  493229.2 1587449.7 16.109961
+## 7   98489.38    38.70351  98470.03  690213.1  591743.1 1488935.8 15.117729
+## 8   98450.68    50.88661  98425.24  788638.4  690213.1 1390465.8 14.123476
+## 9   98399.79    37.18142  98381.20  887019.6  788638.4 1292040.6 13.130521
+## 10  98362.61    38.46392  98343.38  985362.9  887019.6 1193659.4 12.135296
+## 11  98324.15    35.14453  98306.58 1083669.5  985362.9 1095316.0 11.139847
+## 12  98289.00    45.72716  98266.14 1181935.7 1083669.5  997009.4 10.143652
+## 13  98243.28    40.69730  98222.93 1280158.6 1181935.7  898743.3  9.148140
+## 14  98202.58    62.78692  98171.19 1378329.8 1280158.6  800520.3  8.151724
+## 15  98139.79    95.30323  98092.14 1476421.9 1378329.8  702349.2  7.156620
+## 16  98044.49 98044.48867 604257.02 2080678.9 1476421.9  604257.0  6.163090</code></pre>
+<pre class="r"><code>cali.complete$avelived &lt;- 0.5
+cali.complete$avelived[cali.complete$ages==0] &lt;- 0.1
+
+life.table(data = cali.complete, age.groups = &quot;ages&quot;, num.ages.in.group = &quot;nx&quot;, ave.prop.lived = &quot;avelived&quot;,
+           death.counts = &quot;obs.deaths&quot;, population.counts = &quot;obs.popn&quot;)</code></pre>
+<pre><code>##    ages nx obs.deaths obs.popn avelived          R_x a_x          q_x
+## 1     0  1       1635   123342      0.1 0.0132558253 0.1 0.0130995445
+## 2     1  1         64   111520      0.5 0.0005738881 0.5 0.0005737235
+## 3     2  1         41   109200      0.5 0.0003754579 0.5 0.0003753874
+## 4     3  1         22   108749      0.5 0.0002023007 0.5 0.0002022803
+## 5     4  1         41   105698      0.5 0.0003878976 0.5 0.0003878224
+## 6     5  1         55   110548      0.5 0.0004975214 0.5 0.0004973977
+## 7     6  1         42   106857      0.5 0.0003930487 0.5 0.0003929714
+## 8     7  1         58   112184      0.5 0.0005170078 0.5 0.0005168742
+## 9     8  1         44   116423      0.5 0.0003779322 0.5 0.0003778608
+## 10    9  1         52   132952      0.5 0.0003911186 0.5 0.0003910421
+## 11   10  1         48   134266      0.5 0.0003574993 0.5 0.0003574354
+## 12   11  1         60   128938      0.5 0.0004653399 0.5 0.0004652317
+## 13   12  1         52   125502      0.5 0.0004143360 0.5 0.0004142502
+## 14   13  1         82   128212      0.5 0.0006395657 0.5 0.0006393613
+## 15   14  1        129   132775      0.5 0.0009715684 0.5 0.0009710967
+## 16   15  1      23300   143600      0.5 0.1622562674 0.5 1.0000000000
+##          p_x       l_x         d_x       L_x     cumsum   l.cumsum
+## 1  0.9869005 100000.00  1309.95445  98821.04   98821.04       0.00
+## 2  0.9994263  98690.05    56.62079  98661.74  197482.78   98821.04
+## 3  0.9996246  98633.42    37.02575  98614.91  296097.69  197482.78
+## 4  0.9997977  98596.40    19.94410  98586.43  394684.11  296097.69
+## 5  0.9996122  98576.45    38.23016  98557.34  493241.45  394684.11
+## 6  0.9995026  98538.22    49.01269  98513.72  591755.17  493241.45
+## 7  0.9996070  98489.21    38.70345  98469.86  690225.03  591755.17
+## 8  0.9994831  98450.51    50.88652  98425.07  788650.10  690225.03
+## 9  0.9996221  98399.62    37.18136  98381.03  887031.13  788650.10
+## 10 0.9996090  98362.44    38.46386  98343.21  985374.34  887031.13
+## 11 0.9996426  98323.98    35.14447  98306.40 1083680.74  985374.34
+## 12 0.9995348  98288.83    45.72708  98265.97 1181946.71 1083680.74
+## 13 0.9995857  98243.11    40.69723  98222.76 1280169.47 1181946.71
+## 14 0.9993606  98202.41    62.78682  98171.01 1378340.48 1280169.47
+## 15 0.9990289  98139.62    95.30306  98091.97 1476432.45 1378340.48
+## 16 0.0000000  98044.32 98044.31822 604255.97 2080688.42 1476432.45
+##          T_x       e_x
+## 1  2080688.4 20.806884
+## 2  1981867.4 20.081735
+## 3  1883205.6 19.092976
+## 4  1784590.7 18.099959
+## 5  1686004.3 17.103519
+## 6  1587447.0 16.109961
+## 7  1488933.3 15.117729
+## 8  1390463.4 14.123476
+## 9  1292038.3 13.130521
+## 10 1193657.3 12.135296
+## 11 1095314.1 11.139847
+## 12  997007.7 10.143652
+## 13  898741.7  9.148140
+## 14  800519.0  8.151724
+## 15  702347.9  7.156620
+## 16  604256.0  6.163090</code></pre>
+<pre class="r"><code>cali.complete$group &lt;- cut(cali.complete$ages, breaks=c(0, 1, 5, 10, 15, 20), 
+                           labels = c(&quot;&lt;1 years old&quot;, &quot;1-4 years old&quot;, &quot;5-9 years old&quot;, 
+                                      &quot;10-14 years old&quot;, &quot;15 or older&quot;), include.lowest = T, right = F)
+
+table(cali.complete$group, cali.complete$ages)</code></pre>
+<pre><code>##                  
+##                   0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+##   &lt;1 years old    1 0 0 0 0 0 0 0 0 0  0  0  0  0  0  0
+##   1-4 years old   0 1 1 1 1 0 0 0 0 0  0  0  0  0  0  0
+##   5-9 years old   0 0 0 0 0 1 1 1 1 1  0  0  0  0  0  0
+##   10-14 years old 0 0 0 0 0 0 0 0 0 0  1  1  1  1  1  0
+##   15 or older     0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  1</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: 'dplyr'</code></pre>
+<pre><code>## The following objects are masked from 'package:stats':
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>cali.abridged &lt;- cali.complete %&gt;% group_by(group) %&gt;% 
+                                   summarise(nx = sum(nx), ages = first(group), popn = sum(obs.popn), deaths = sum(obs.deaths),
+                                             avelived = first(avelived))
+
+cali.abridged</code></pre>
+<pre><code>## Source: local data frame [5 x 6]
+## 
+##             group    nx            ages   popn deaths avelived
+##            (fctr) (dbl)          (fctr)  (dbl)  (dbl)    (dbl)
+## 1    &lt;1 years old     1    &lt;1 years old 123342   1635      0.1
+## 2   1-4 years old     4   1-4 years old 435167    168      0.5
+## 3   5-9 years old     5   5-9 years old 578964    251      0.5
+## 4 10-14 years old     5 10-14 years old 649693    371      0.5
+## 5     15 or older     1     15 or older 143600  23300      0.5</code></pre>
+<pre class="r"><code>data.frame(life.table(data = cali.abridged, age.groups = &quot;ages&quot;, num.ages.in.group = &quot;nx&quot;, 
+           death.counts = &quot;deaths&quot;, population.counts = &quot;popn&quot;))</code></pre>
+<pre><code>##             group nx            ages   popn deaths avelived          R_x
+## 1    &lt;1 years old  1    &lt;1 years old 123342   1635      0.1 0.0132558253
+## 2   1-4 years old  4   1-4 years old 435167    168      0.5 0.0003860587
+## 3   5-9 years old  5   5-9 years old 578964    251      0.5 0.0004335330
+## 4 10-14 years old  5 10-14 years old 649693    371      0.5 0.0005710389
+## 5     15 or older  1     15 or older 143600  23300      0.5 0.1622562674
+##    a_x         q_x       p_x       l_x        d_x      L_x    cumsum
+## 1 0.09 0.013097829 0.9869022 100000.00  1309.7829  98808.1   98808.1
+## 2 0.50 0.001543043 0.9984570  98690.22   152.2833 394456.3  493264.4
+## 3 0.50 0.002165318 0.9978347  98537.93   213.3660 492156.3  985420.7
+## 4 0.50 0.002851124 0.9971489  98324.57   280.3356 490922.0 1476342.7
+## 5 0.50 1.000000000 0.0000000  98044.23 98044.2323 604255.4 2080598.1
+##    l.cumsum       T_x      e_x
+## 1       0.0 2080598.1 20.80598
+## 2   98808.1 1981790.0 20.08092
+## 3  493264.4 1587333.7 16.10886
+## 4  985420.7 1095177.4 11.13839
+## 5 1476342.7  604255.4  6.16309</code></pre>
+<pre class="r"><code>data.frame(life.table(data = cali.abridged, age.groups = &quot;ages&quot;, num.ages.in.group = &quot;nx&quot;, 
+           death.counts = &quot;deaths&quot;, population.counts = &quot;popn&quot;, ave.prop.lived = &quot;avelived&quot;))</code></pre>
+<pre><code>##             group nx            ages   popn deaths avelived          R_x
+## 1    &lt;1 years old  1    &lt;1 years old 123342   1635      0.1 0.0132558253
+## 2   1-4 years old  4   1-4 years old 435167    168      0.5 0.0003860587
+## 3   5-9 years old  5   5-9 years old 578964    251      0.5 0.0004335330
+## 4 10-14 years old  5 10-14 years old 649693    371      0.5 0.0005710389
+## 5     15 or older  1     15 or older 143600  23300      0.5 0.1622562674
+##   a_x         q_x       p_x       l_x        d_x       L_x     cumsum
+## 1 0.1 0.013099545 0.9869005 100000.00  1309.9545  98821.04   98821.04
+## 2 0.5 0.001543043 0.9984570  98690.05   152.2830 394455.62  493276.66
+## 3 0.5 0.002165318 0.9978347  98537.76   213.3656 492155.40  985432.06
+## 4 0.5 0.002851124 0.9971489  98324.40   280.3351 490921.15 1476353.20
+## 5 0.5 1.000000000 0.0000000  98044.06 98044.0618 604254.39 2080607.59
+##     l.cumsum       T_x      e_x
+## 1       0.00 2080607.6 20.80608
+## 2   98821.04 1981786.6 20.08092
+## 3  493276.66 1587330.9 16.10886
+## 4  985432.06 1095175.5 11.13839
+## 5 1476353.20  604254.4  6.16309</code></pre>
+<pre class="r"><code>#load(&quot;Data/alabama_only.Rdata&quot;)
+load(&quot;/Users/corinneriddell/Documents/repos/BlackWhiteGap/Data/alabama_only.Rdata&quot;)
+#example data
+alabama.by.strata &lt;- 
+  dat.clean.alabama %&gt;% group_by(Year2, RaceSex, Age2) %&gt;%
+  arrange(RaceSex, Year2, Age2) %&gt;%
+  mutate(nx = 1*(Age2 == &quot;&lt;1 year&quot;) + 4*(Age2 == &quot;1-4 years&quot;) + 5*(Age2 != &quot;&lt;1 year&quot; &amp; Age2 != &quot;1-4 years&quot;)) %&gt;%
+  summarise(total_deaths5 = sum(Count_md5),
+            Population = first(Population), 
+            Race2 = first(Race2), 
+            Sex2 = first(Sex2), 
+            StateYearRaceSex = first(StateYearRaceSex),
+            nx = first(nx))
+
+first.strata &lt;- alabama.by.strata[alabama.by.strata$StateYearRaceSex == &quot;Alabama.1969.White.Male&quot;, ]
+
+system.time(first.strata.life.table &lt;- data.frame(life.table(data = first.strata, age.groups = &quot;Age2&quot;, num.ages.in.group = &quot;nx&quot;, death.counts = &quot;total_deaths5&quot;, population.counts = &quot;Population&quot;)))</code></pre>
+<pre><code>##    user  system elapsed 
+##   0.019   0.000   0.019</code></pre>
+<pre class="r"><code>first.strata.life.table[, c(&quot;Age2&quot;, &quot;total_deaths5&quot;, &quot;Population&quot;, &quot;R_x&quot;, &quot;q_x&quot;, &quot;l_x&quot;, &quot;d_x&quot;, &quot;L_x&quot;, &quot;T_x&quot;, &quot;e_x&quot;)]</code></pre>
+<pre><code>##           Age2 total_deaths5 Population          R_x         q_x       l_x
+## 1      &lt;1 year           533      22191 0.0240187463 0.023504996 100000.00
+## 2    1-4 years            81      82349 0.0009836185 0.003926749  97649.50
+## 3    5-9 years            77     123579 0.0006230832 0.003110571  97266.06
+## 4  10-14 years            71     127677 0.0005560908 0.002776594  96963.50
+## 5  15-19 years           245     116602 0.0021011646 0.010450925  96694.27
+## 6  20-24 years           235      97143 0.0024191141 0.012022859  95683.73
+## 7  25-29 years           177      85176 0.0020780502 0.010336551  94533.34
+## 8  30-34 years           165      72839 0.0022652700 0.011262568  93556.19
+## 9  35-39 years           232      71703 0.0032355689 0.016048033  92502.51
+## 10 40-44 years           422      75470 0.0055916258 0.027572689  91018.02
+## 11 45-49 years           588      73401 0.0080107900 0.039267540  88508.41
+## 12 50-54 years           806      66820 0.0120622568 0.058545798  85032.90
+## 13 55-59 years          1193      60371 0.0197611436 0.094154230  80054.58
+## 14 60-64 years          1458      51539 0.0282892567 0.132103508  72517.11
+## 15 65-69 years          1536      37223 0.0412648094 0.187029686  62937.34
+## 16 70-74 years          1608      25854 0.0621954050 0.269130347  51166.19
+## 17 75-79 years          1608      17141 0.0938101628 0.379944237  37395.82
+## 18 80-84 years          1251       9865 0.1268119615 0.481431595  23187.49
+## 19   85+ years          1125       5500 0.2045454545 1.000000000  12024.30
+##           d_x       L_x        T_x       e_x
+## 1   2350.4996  97861.05 6628460.55 66.284605
+## 2    383.4451 389831.11 6530599.50 66.877961
+## 3    302.5529 485573.89 6140768.39 63.133725
+## 4    269.2283 484144.44 5655194.50 58.322919
+## 5   1010.5446 480945.01 5171050.05 53.478348
+## 6   1150.3920 475542.67 4690105.05 49.016746
+## 7    977.1487 470223.82 4214562.38 44.582816
+## 8   1053.6829 465146.74 3744338.56 40.022350
+## 9   1484.4833 458801.32 3279191.83 35.449762
+## 10  2509.6116 448816.08 2820390.50 30.987165
+## 11  3475.5076 433853.29 2371574.42 26.794905
+## 12  4978.3192 412718.72 1937721.14 22.787898
+## 13  7537.4777 381429.23 1525002.42 19.049533
+## 14  9579.7642 338636.12 1143573.19 15.769702
+## 15 11771.1514 285258.83  804937.07 12.789499
+## 16 13770.3747 221405.02  519678.23 10.156672
+## 17 14208.3248 151458.27  298273.22  7.976112
+## 18 11163.1909  88029.48  146814.95  6.331644
+## 19 12024.3004  58785.47   58785.47  4.888889</code></pre>
+<pre class="r"><code>system.time(
+for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
+  assign(paste0(&quot;lt.&quot;, as.character(stratum.id)), 
+         life.table(data = subset(alabama.by.strata, StateYearRaceSex == stratum.id), 
+                                  age.groups = &quot;Age2&quot;, num.ages.in.group = &quot;nx&quot;, 
+                                  death.counts = &quot;total_deaths5&quot;, population.counts = &quot;Population&quot;))
+}
+)</code></pre>
+<pre><code>##    user  system elapsed 
+##   3.942   0.019   3.975</code></pre>
 <div class="references">
 <h2>References</h2>
+<p>Auger, Nathalie, Pascaline Feuillet, Sylvie Martel, Ernest Lo, Amadou D Barry, and Sam Harper. 2014. “Mortality Inequality in Populations with Equal Life Expectancy: Arriaga’s Decomposition Method in SAS, Stata, and Excel.” <em>Annals of Epidemiology</em> 24 (8). Elsevier: 575–80.</p>
+<p>Preston, Samuel H, Patrick Heuveline, and Michel Guillot. 2001. <em>Demography: Measuring and Modeling Population Processes</em>. 1st ed. Blackwell Publishing.</p>
 <p>Selvin, Steven. 2004. <em>Statistical Analysis of Epidemiologic Data</em>. 3rd ed. Oxford University Press.</p>
 </div>
 </div>
