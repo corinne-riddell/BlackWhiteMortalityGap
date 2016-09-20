@@ -44,6 +44,7 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
 } 
 
 #takes the life table output from the first function -- need two life tables to perform the comparison
+#relies on the names of the columns kept as-is in the life tables -- user should not change the column names!
 le_age_decomp <- function(life.table1, life.table2) {
   
   life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], "T_x"]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
@@ -69,6 +70,7 @@ le_age_decomp <- function(life.table1, life.table2) {
 #vector is easier for me to think about, although need to think about how to perform the vectorization since not all vectors
 #are the same length (the cod proportions vector is 114 long for alabama whereas the other will be 114/6 since they aren't
 #code specific)
-cause_of_death_decomp <- function(cod.proportions, life.table1, life.table2, decomp.table) {
-  decomp.table["C_x"]*((life.table2[]*life.table2["R_x"] - life.table1[]*life.table1["R_x"])/(life.table2[]*life.table2[]))
-}
+cause_of_death_decomp <- function(cod.table, life.table1, life.table2, decomp.table) {
+  C_xi = decomp.table["C_x"]*((cod.table["prop2"]*life.table2["R_x"] - cod.table["prop1"]*life.table1["R_x"])/(cod.table["prop2"]*cod.table["prop1"]))
+  
+  }
