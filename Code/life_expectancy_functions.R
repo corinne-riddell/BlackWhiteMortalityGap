@@ -1,6 +1,9 @@
 #dataset needs to be in order of age
 #none of the population.counts can equal 0. If there are rows with population counts of 0 then first need 
 #to run the collapse age brackets function.
+
+#change names to something like col.name.death.counts or death.counts.in.data
+
 life.table <- function(data, age.groups, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA){
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
@@ -41,13 +44,12 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
 } 
 
 #takes the life table output from the first function -- need two life tables to perform the comparison
-#ask KTM about if I should remove the last three params? ... I am thinking that would be "cleaner" but want a second opinion.
-le_age_decomp <- function(life.table1, life.table2, num.alive, interval.years.lived, accumulated.years.lived) {
+le_age_decomp <- function(life.table1, life.table2) {
   
-  life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], accumulated.years.lived]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
+  life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], "T_x"]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
   
-  life.table1["num.alive.next.interval"] <- c(unlist(life.table1[2:dim(life.table2)[1], num.alive]), 0) #l_(x+n) 
-  life.table2["num.alive.next.interval"] <- c(unlist(life.table2[2:dim(life.table2)[1], num.alive]), 1) #--> end in 1 to fix calculation error of dividing by 0
+  life.table1["num.alive.next.interval"] <- c(unlist(life.table1[2:dim(life.table2)[1], "l_x"]), 0) #l_(x+n) 
+  life.table2["num.alive.next.interval"] <- c(unlist(life.table2[2:dim(life.table2)[1], "l_x"]), 1) #--> end in 1 to fix calculation error of dividing by 0
 
   decomp.table <- data.frame("Ages" = life.table1[ ,1], life.table1["e_x"], life.table2["e_x"],
                              "C_x" = rep(NA, dim(life.table1)[1]))
@@ -56,8 +58,8 @@ le_age_decomp <- function(life.table1, life.table2, num.alive, interval.years.li
   names(decomp.table)[3] <- "Life_Expectancy_2"
   
   decomp.table["C_x"] <- 
-    (life.table1[num.alive]/life.table1[1, num.alive])*((life.table2[interval.years.lived]/life.table2[num.alive]) - (life.table1[interval.years.lived]/life.table1[num.alive])) +
-    ((life.table2["accumulated.lived.after"]/life.table2[1, num.alive])*((life.table1[num.alive]/life.table2[num.alive]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"])))
+    (life.table1["l_x"]/life.table1[1, "l_x"])*((life.table2["L_x"]/life.table2["l_x"]) - (life.table1["L_x"]/life.table1["l_x"])) +
+    ((life.table2["accumulated.lived.after"]/life.table2[1, "l_x"])*((life.table1["l_x"]/life.table2["l_x"]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"])))
 
   return(decomp.table)
 }

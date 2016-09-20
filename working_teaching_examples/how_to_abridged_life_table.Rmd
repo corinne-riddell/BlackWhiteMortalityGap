@@ -140,14 +140,14 @@ round(life.table.qm, 2)
 ```
 
 ```{r calc_age_decomp}
-age_decomp <- le_age_decomp(life.table.qm, life.table.cm, num.alive="l_x", interval.years.lived="L_x", accumulated.years.lived = "T_x")
+age_decomp <- le_age_decomp(life.table.qm, life.table.cm)
 age_decomp
 #check:
 sum(age_decomp$C_x)
 age_decomp$Life_Expectancy_2[age_decomp$Ages ==0] - age_decomp$Life_Expectancy_1[age_decomp$Ages ==0]
 
 #also compare to the decomposition if the data is entered in the reverse order:
-age_decomp2 <- le_age_decomp(life.table.cm, life.table.qm, num.alive="l_x", interval.years.lived="L_x", accumulated.years.lived = "T_x")
+age_decomp2 <- le_age_decomp(life.table.cm, life.table.qm)
 age_decomp2
 #check:
 sum(age_decomp2$C_x)
