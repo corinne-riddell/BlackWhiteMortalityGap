@@ -66,7 +66,20 @@ le_age_decomp <- function(life.table1, life.table2, age.colname.life.table) {
 }
 
 
-cause_of_death_decomp <- function(cod.table, life.table1, life.table2, decomp.table) {
-  C_xi = decomp.table["C_x"]*((cod.table["prop2"]*life.table2["R_x"] - cod.table["prop1"]*life.table1["R_x"])/(cod.table["prop2"]*cod.table["prop1"]))
-  
+#cause of death table must be organized in a very specific way
+cause_of_death_decomp <- function(life.table1, life.table2, decomp.table, 
+                                  cod.table, age.colname.cod.table, COD.colname.cod.table, prop1.colname.cod.table, prop2.colname.cod.table) {
+  C_xi = decomp.table[["C_x"]]*((cod.table[[prop2.colname.cod.table]]*life.table2[["R_x"]] - cod.table[[prop1.colname.cod.table]]*life.table1[["R_x"]])/(cod.table[[prop2.colname.cod.table]]*cod.table[[prop1.colname.cod.table]]))
+
+  COD.decomp.table <- data.frame("Ages" = cod.table[ , age.colname.cod.table] , 
+                                 "Cause.of.death" = cod.table[ , COD.colname.cod.table],
+                                 "Prop1" = cod.table[ , prop1.colname.cod.table],
+                                 "Prop2" = cod.table[ , prop2.colname.cod.table],
+                                 "C_Xi" = C_xi)
   }
+
+alabama_cod_decomp <- cause_of_death_decomp(life.table1 = life.table.blacks, life.table2 = life.table.whites, decomp.table = alabama_age_decomp,
+                      cod.table = cod.tab.alabama.male.1969, "Age2", "COD2", "prop1", "prop2")
+
+canada_cod_decomp <- cause_of_death_decomp(life.table1 = life.table.qm, life.table2 = life.table.cm, decomp.table = age_decomp, 
+                                           cod.table = )
