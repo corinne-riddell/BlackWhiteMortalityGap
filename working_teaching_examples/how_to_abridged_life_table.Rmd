@@ -122,6 +122,9 @@ quebec.men$n_x[quebec.men$ages == 1] <- 4
 
 head(canada.men)
 head(quebec.men)
+
+cod.props <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteGap/working_teaching_examples/auger_cod_proportions.csv")
+
 ```
 
 This source file contains the life expectancy functions used in this project:
@@ -153,6 +156,21 @@ age_decomp2
 sum(age_decomp2$C_x)
 age_decomp2$Life_Expectancy_2[age_decomp2$Ages ==0] - age_decomp2$Life_Expectancy_1[age_decomp2$Ages ==0]
 
+```
+
+```{r calc_cod_decomp}
+canada.cod.decomp <- cause_of_death_decomp(life.table1 = life.table.qm, life.table2 = life.table.cm, decomp.table = age_decomp,
+                      cod.table = cod.props,age.colname.cod.table = "Age", COD.colname.cod.table = "cod", 
+                      prop1.colname.cod.table = "prop1", prop2.colname.cod.table = "prop2")
+
+cod.contribution$Cause.of.death <- factor(cod.contribution$Cause.of.death, 
+                                          levels = cod.contribution$Cause.of.death[order(cod.contribution$cod.contribution,
+                                                                                         decreasing = T)])
+
+ggplot(cod.contribution, aes(x = Cause.of.death, y = cod.contribution)) + 
+  geom_point() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  geom_abline(intercept = 0, slope = 0)
 ```
 
 **A second example**
@@ -225,25 +243,25 @@ alabama.by.strata.cod <- dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>
 first.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.1969.White.Male", ]
 second.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.1969.Black.Male", ]
 
-first.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.2013.White.Male", ]
-second.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.2013.Black.Male", ]
-
 cod.tab.alabama.male.1969 <- first.strata.cod %>% ungroup() %>%
                                                   select(Age2, COD2, cod_prop_death5) %>%
                                                   rename(prop2 = cod_prop_death5)
 
 cod.tab.alabama.male.1969$prop1 <- second.strata.cod$cod_prop_death5
+cod.tab.alabama.male.1969 <- cod.tab.alabama.male.1969 %>% arrange(COD2, Age2)
+
+
 
 ggplot(cod.tab.alabama.male.1969, aes(x=COD2, y=prop1)) + 
   geom_point(aes(col="White")) + geom_point(aes(y=prop2, col="Black")) +
   scale_y_continuous(name = "Proportion dying from specified cause") +
   facet_wrap(~Age2) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
-system.time(first.strata.life.table <- data.frame(life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population")))
+system.time(life.table.whites <- data.frame(life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population")))
 
-second.strata.life.table <- data.frame(life.table(data = second.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
+life.table.blacks <- data.frame(life.table(data = second.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
 
-first.strata.life.table[, c("Age2", "total_deaths5", "Population", "R_x", "q_x", "l_x", "d_x", "L_x", "T_x", "e_x")]
+life.table.whites[, c("Age2", "total_deaths5", "Population", "R_x", "q_x", "l_x", "d_x", "L_x", "T_x", "e_x")]
 
 system.time(
 for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
@@ -253,6 +271,16 @@ for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
                                   death.counts = "total_deaths5", population.counts = "Population"))
 }
 )
+
+alabama_age_decomp <- le_age_decomp(life.table.blacks, life.table.whites, "Age2")
+alabama_age_decomp
+
+ggplot(alabama_age_decomp, aes(y = C_x, x = Ages)) + geom_point() + scale_y_continuous("Contribution of Age to Gap")
+sum(alabama_age_decomp$C_x)
+life.table.whites$e_x[1] - life.table.blacks$e_x[1]
+
+ggplot(alabama_age_decomp, aes(y = Life_Expectancy_1, x = Ages)) + geom_point(aes(col="Black")) + scale_y_continuous("Life Expectancy (Yrs)") +
+  geom_point(aes(y = Life_Expectancy_2, col="White"))
 ```
 
 ##References
