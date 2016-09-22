@@ -45,22 +45,24 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
 
 #takes the life table output from the first function -- need two life tables to perform the comparison
 #relies on the names of the columns kept as-is in the life tables -- user should not change the column names!
-le_age_decomp <- function(life.table1, life.table2, age.colname.life.table) {
-  
+le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2 = 2, name.lt2, age.groups) {
+
   life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], "T_x"]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
   
   life.table1["num.alive.next.interval"] <- c(unlist(life.table1[2:dim(life.table2)[1], "l_x"]), 0) #l_(x+n) 
   life.table2["num.alive.next.interval"] <- c(unlist(life.table2[2:dim(life.table2)[1], "l_x"]), 1) #--> end in 1 to fix calculation error of dividing by 0
 
-  decomp.table <- data.frame("Ages" = life.table1[ ,age.colname.life.table], life.table1["e_x"], life.table2["e_x"],
+  decomp.table <- data.frame("Ages" = life.table1[ ,age.groups], life.table1["e_x"], life.table2["e_x"],
                              "C_x" = rep(NA, dim(life.table1)[1]))
   
-  names(decomp.table)[2] <- "Life_Expectancy_1"
-  names(decomp.table)[3] <- "Life_Expectancy_2"
+  names(decomp.table)[2] <- paste0("LE_", name.lt1)
+  names(decomp.table)[3] <- paste0("LE_", name.lt2)
   
   decomp.table["C_x"] <- 
     (life.table1["l_x"]/life.table1[1, "l_x"])*((life.table2["L_x"]/life.table2["l_x"]) - (life.table1["L_x"]/life.table1["l_x"])) +
-    ((life.table2["accumulated.lived.after"]/life.table2[1, "l_x"])*((life.table1["l_x"]/life.table2["l_x"]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"])))
+    ((life.table2["accumulated.lived.after"]/life.table2[1, "l_x"])*
+     ((life.table1["l_x"]/life.table2["l_x"]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"]))
+     )
 
   return(decomp.table)
 }
@@ -68,7 +70,8 @@ le_age_decomp <- function(life.table1, life.table2, age.colname.life.table) {
 
 #cause of death table must be organized in a very specific way
 cause_of_death_decomp <- function(life.table1, life.table2, decomp.table, 
-                                  cod.table, age.colname.cod.table, COD.colname.cod.table, prop1.colname.cod.table, prop2.colname.cod.table) {
+                                  cod.table, age.colname.cod.table, COD.colname.cod.table, 
+                                  prop1.colname.cod.table, prop2.colname.cod.table) {
   C_x <- decomp.table[["C_x"]]
   prop2 <- cod.table[[prop2.colname.cod.table]]
   R_x2 <- life.table2[["R_x"]]
@@ -77,15 +80,15 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
   
   C_xi = C_x*((prop2*R_x2 - prop1*R_x1)/(R_x1-R_x2))
   
-  COD.decomp.table <- data.frame("Ages" = cod.table[ , age.colname.cod.table] , 
+  COD.decomp.table <- data.frame("Ages" = cod.table[ , age.colname.cod.table], 
+                                 cod.table[ , prop1.colname.cod.table],
+                                 cod.table[ , prop2.colname.cod.table],
                                  "Cause.of.death" = cod.table[ , COD.colname.cod.table],
-                                 "Prop1" = cod.table[ , prop1.colname.cod.table],
-                                 "Prop2" = cod.table[ , prop2.colname.cod.table],
-                                 "C_Xi" = C_xi)
+                                 "C_xi" = C_xi)
+
+  names(COD.decomp.table)[2] <- prop1.colname.cod.table
+  names(COD.decomp.table)[3] <- prop2.colname.cod.table
+  
+  return(COD.decomp.table)
   }
 
-alabama_cod_decomp <- cause_of_death_decomp(life.table1 = life.table.blacks, life.table2 = life.table.whites, decomp.table = alabama_age_decomp,
-                      cod.table = cod.tab.alabama.male.1969, "Age2", "COD2", "prop1", "prop2")
-
-canada_cod_decomp <- cause_of_death_decomp(life.table1 = life.table.qm, life.table2 = life.table.cm, decomp.table = age_decomp, 
-                                           cod.table = )
