@@ -1,0 +1,201 @@
+---
+title: "error checking the LE decomp functions"
+author: "Corinne Riddell"
+date: "September 22, 2016"
+output: html_document
+---
+
+**An example**
+
+This data was used in a previously published paper [@auger2014mortality]. We use it to show how the life expectancy function works.
+
+First, I create the dataset in R:
+```{r create_dataset}
+canada.men <- data.frame("ages" = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90),
+                         "obs.deaths" = c(4054, 625, 445, 622, 2568, 3770, 3434, 3681, 5155, 8449, 13421, 19371, 
+                                          25448, 31465, 37441, 48796, 64763, 72512, 60109, 43812),
+                         "obs.popn" = c(719953, 2835604, 3654546, 4071400, 4464549, 4564679, 4296613, 4237402,
+                                        4532151, 5085092, 5163532, 4597916, 3937984, 3120981, 2323629, 1862971,
+                                        1499907, 997492, 492445, 196109))
+
+quebec.men <- data.frame("ages" = c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90), 
+                         "obs.deaths" = c(1057, 164, 116, 176, 659, 956, 1056, 1110, 1498, 2470, 4116, 6054, 8426,
+                                          11175, 13558, 16567, 21349, 22396, 16851,10878),
+                         "obs.popn" = c(215200, 789710, 1008266, 1179423, 1249360, 1261780, 1349857, 1293521,
+                                        1313834, 1551684, 1622835, 1485249, 1288014, 1077253, 796557, 609341, 
+                                        476211, 300506, 134353, 49678))
+```
+
+I then add a column that denotes how many years are in each age bracket:
+```{r add_n_x}
+canada.men$n_x <- 5
+canada.men$n_x[canada.men$ages == 0] <- 1
+canada.men$n_x[canada.men$ages == 1] <- 4
+
+quebec.men$n_x <- 5
+quebec.men$n_x[quebec.men$ages == 0] <- 1
+quebec.men$n_x[quebec.men$ages == 1] <- 4
+
+head(canada.men)
+head(quebec.men)
+
+cod.props <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteGap/working_teaching_examples/auger_cod_proportions.csv")
+
+```
+
+This source file contains the life expectancy functions used in this project:
+```{r load_functions}
+source("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Code/life_expectancy_functions.R")
+```
+
+```{r calculate_life_expectancy}
+life.table.cm <- life.table(data = canada.men, age.groups = "ages", num.ages.in.group = "n_x", death.counts = "obs.deaths", population.counts = "obs.popn")
+
+round(life.table.cm, 2)
+
+life.table.qm <- life.table(data = quebec.men, age.groups = "ages", num.ages.in.group = "n_x", death.counts = "obs.deaths", population.counts = "obs.popn")
+
+round(life.table.qm, 2)
+```
+
+```{r calc_age_decomp}
+age_decomp <- le_age_decomp(life.table.qm, life.table.cm)
+age_decomp
+#check:
+sum(age_decomp$C_x)
+age_decomp$Life_Expectancy_2[age_decomp$Ages ==0] - age_decomp$Life_Expectancy_1[age_decomp$Ages ==0]
+
+#also compare to the decomposition if the data is entered in the reverse order:
+age_decomp2 <- le_age_decomp(life.table.cm, life.table.qm)
+age_decomp2
+#check:
+sum(age_decomp2$C_x)
+age_decomp2$Life_Expectancy_2[age_decomp2$Ages ==0] - age_decomp2$Life_Expectancy_1[age_decomp2$Ages ==0]
+
+```
+
+```{r calc_cod_decomp}
+canada.cod.decomp <- cause_of_death_decomp(life.table1 = life.table.qm, life.table2 = life.table.cm, decomp.table = age_decomp,
+                      cod.table = cod.props,age.colname.cod.table = "Age", COD.colname.cod.table = "cod", 
+                      prop1.colname.cod.table = "prop1", prop2.colname.cod.table = "prop2")
+
+cod.contribution$Cause.of.death <- factor(cod.contribution$Cause.of.death, 
+                                          levels = cod.contribution$Cause.of.death[order(cod.contribution$cod.contribution,
+                                                                                         decreasing = T)])
+
+ggplot(cod.contribution, aes(x = Cause.of.death, y = cod.contribution)) + 
+  geom_point() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  geom_abline(intercept = 0, slope = 0)
+```
+
+**A second example**
+
+In this example we use the data that Sam entered into Stata to illustrate the life expectancy concept to me. I'll replicate the life table here to ensure that I can arrive at the same results as he does in Stata.
+
+```{r lifetable_cali_complete}
+cali.complete <- data.frame("ages" = c(0:15), "nx" = rep(1,16),
+                         "obs.deaths" = c(1635, 64, 41, 22, 41, 55, 42, 58, 44, 52, 48, 60, 52, 82, 129, 23300), #last number is fictitious
+                         "obs.popn" = c(123342, 111520, 109200, 108749, 105698, 110548, 106857, 112184, 116423,
+                                        132952, 134266, 128938, 125502, 128212, 132775, 143600))
+
+head(cali.complete)
+
+life.table(data = cali.complete, age.groups = "ages", num.ages.in.group = "nx", 
+           death.counts = "obs.deaths", population.counts = "obs.popn")
+
+cali.complete$avelived <- 0.5
+cali.complete$avelived[cali.complete$ages==0] <- 0.1
+
+life.table(data = cali.complete, age.groups = "ages", num.ages.in.group = "nx", ave.prop.lived = "avelived",
+           death.counts = "obs.deaths", population.counts = "obs.popn")
+```
+
+```{r lifetable_cali_abridged, warning=F, message=F}
+cali.complete$group <- cut(cali.complete$ages, breaks=c(0, 1, 5, 10, 15, 20), 
+                           labels = c("<1 years old", "1-4 years old", "5-9 years old", 
+                                      "10-14 years old", "15 or older"), include.lowest = T, right = F)
+
+table(cali.complete$group, cali.complete$ages)
+
+library(dplyr)
+cali.abridged <- cali.complete %>% group_by(group) %>% 
+                                   summarise(nx = sum(nx), ages = first(group), popn = sum(obs.popn), deaths = sum(obs.deaths),
+                                             avelived = first(avelived))
+
+cali.abridged
+
+data.frame(life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+           death.counts = "deaths", population.counts = "popn"))
+
+
+data.frame(life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+           death.counts = "deaths", population.counts = "popn", ave.prop.lived = "avelived"))
+```          
+
+```{r alabama_example}
+#load("Data/alabama_only.Rdata")
+load("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Data/alabama_only.Rdata")
+#example data
+alabama.by.strata <- 
+  dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
+  arrange(RaceSex, Year2, Age2) %>%
+  mutate(nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years")) %>%
+  summarise(total_deaths5 = sum(Count_md5),
+            Population = first(Population), 
+            Race2 = first(Race2), 
+            Sex2 = first(Sex2), 
+            StateYearRaceSex = first(StateYearRaceSex),
+            nx = first(nx))
+
+first.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
+
+second.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.Black.Male", ]
+
+alabama.by.strata.cod <- dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
+                                               arrange(RaceSex, Year2, Age2) %>%
+                                               mutate(total_deaths5 = sum(Count_md5),
+                                                      cod_prop_death5 = Count_md5/total_deaths5)
+
+first.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.1969.White.Male", ]
+second.strata.cod <- alabama.by.strata.cod[alabama.by.strata.cod$StateYearRaceSex == "Alabama.1969.Black.Male", ]
+
+cod.tab.alabama.male.1969 <- first.strata.cod %>% ungroup() %>%
+                                                  select(Age2, COD2, cod_prop_death5) %>%
+                                                  rename(prop2 = cod_prop_death5)
+
+cod.tab.alabama.male.1969$prop1 <- second.strata.cod$cod_prop_death5
+cod.tab.alabama.male.1969 <- cod.tab.alabama.male.1969 %>% arrange(COD2, Age2)
+
+ggplot(cod.tab.alabama.male.1969, aes(x=COD2, y=prop1)) + 
+  geom_point(aes(col="White")) + geom_point(aes(y=prop2, col="Black")) +
+  scale_y_continuous(name = "Proportion dying from specified cause") +
+  facet_wrap(~Age2) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+system.time(life.table.whites <- data.frame(life.table(data = first.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population")))
+
+life.table.blacks <- data.frame(life.table(data = second.strata, age.groups = "Age2", num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
+
+ggplot(life.table.blacks, aes(x = Age2, y = q_x)) + geom_point() + geom_point(aes(y = R_x), col="red")
+
+life.table.whites[, c("Age2", "total_deaths5", "Population", "R_x", "q_x", "l_x", "d_x", "L_x", "T_x", "e_x")]
+
+system.time(
+for(stratum.id in levels(droplevels(alabama.by.strata$StateYearRaceSex))) {
+  assign(paste0("lt.", as.character(stratum.id)), 
+         life.table(data = subset(alabama.by.strata, StateYearRaceSex == stratum.id), 
+                                  age.groups = "Age2", num.ages.in.group = "nx", 
+                                  death.counts = "total_deaths5", population.counts = "Population"))
+}
+)
+
+alabama_age_decomp <- le_age_decomp(life.table.blacks, life.table.whites, "Age2")
+alabama_age_decomp
+
+ggplot(alabama_age_decomp, aes(y = C_x, x = Ages)) + geom_point() + scale_y_continuous("Contribution of Age to Gap")
+sum(alabama_age_decomp$C_x)
+life.table.whites$e_x[1] - life.table.blacks$e_x[1]
+
+ggplot(alabama_age_decomp, aes(y = Life_Expectancy_1, x = Ages)) + geom_point(aes(col="Black")) + scale_y_continuous("Life Expectancy (Yrs)") +
+  geom_point(aes(y = Life_Expectancy_2, col="White"))
+```
