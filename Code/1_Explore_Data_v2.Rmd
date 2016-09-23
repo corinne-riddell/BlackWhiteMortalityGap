@@ -39,11 +39,20 @@ dat <- dat %>%
                                                          "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
                                                          "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
                                                          "75-79 years", "80-84 years","85+ years", "Unknown"), ordered = T),
+         Age3 = 0*(Age2 == "<1 year") + 1*(Age2 == "1-4 years") + 5*(Age2 == "5-9 years") +
+                10*(Age2 == "10-14 years") + 15*(Age2 == "15-19 years") + 20*(Age2 == "20-24 years") + 
+                25*(Age2 == "25-29 years") + 30*(Age2 == "30-34 years") + 35*(Age2 == "35-39 years") +
+                40*(Age2 == "40-44 years") + 45*(Age2 == "45-49 years") + 50*(Age2 == "50-54 years") + 
+                55*(Age2 == "55-59 years") + 60*(Age2 == "60-64 years") + 65*(Age2 == "65-69 years") +   
+                70*(Age2 == "70-74 years") + 75*(Age2 == "75-79 years") + 80*(Age2 == "80-84 years") + 
+                85*(Age2 == "85+ years"),
+         nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years"),
          Sex2 = factor(Sex, levels = c(0, 1), labels = c("Male", "Female")),
          Race2 = factor(Race, levels = c(0, 1), labels = c("White", "Black")),
          COD2 = factor(COD, levels = c(0:5), labels = c("Cardiovascular", "Cancers", "Communicable", 
                                                         "Non-communicable", "Injuries", "All other causes")), 
          Year2 = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
+         Year3 = as.numeric(as.character(Year2)),
          RaceSex = interaction(Race2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
 ```
@@ -135,273 +144,43 @@ To calculate life expectancy, we have to aggregate the data across the causes of
 ```{r aggregate_over_COD}
 dat2 <- dat.clean %>% group_by(State2, Year2, RaceSex, Age2) %>%
   arrange(State2, RaceSex, Year2, Age2) %>%
-  summarise(total_deaths1 = sum(Count_md1), total_deaths5 = sum(Count_md5),
+  summarise(total_deaths1 = sum(Count_md1), 
+            total_deaths5 = sum(Count_md5),
             total_deaths9 = sum(Count_md9), 
-            total_deaths_b9 = sum(Count_b9w1), total_deaths_w9 = sum(Count_b1w9),
-            Population = first(Population), Race2 = first(Race2), Sex2 = first(Sex2), 
-            StateYearRaceSex = first(StateYearRaceSex))
+            total_deaths_b9 = sum(Count_b9w1), 
+            total_deaths_w9 = sum(Count_b1w9),
+            Population = first(Population), 
+            Race2 = first(Race2), 
+            Sex2 = first(Sex2), 
+            StateYearRaceSex = first(StateYearRaceSex),
+            nx = first(nx),
+            Age3 = first(Age3),
+            Year3 = first(Year3))
+
+#return stratum ids with any age-specific population counts of 0.
+#unique(dat2$StateYearRaceSex[dat2$Population == 0])
+non.zero.stratums <- setdiff(levels(dat2$StateYearRaceSex), unique(dat2$StateYearRaceSex[dat2$Population == 0]))
 ```
 
-We implemented the calculations performed in the technical supplement found here [http://www.lho.org.uk/Download/Public/7656/1/tech_supp_3.pdf], also saved in our dropbox. 
-
-Let's make sure we can do the calculation all the way through for a few of the groupings, including a grouping with a stratum with a zero population count.
-
-```{r calc_life_expectancy1}
-
-dat2$numYrsInt <- 5
-dat2$numYrsInt[dat2$Age2 == "<1 year"] <- 1
-dat2$numYrsInt[dat2$Age2 == "1-4 years"] <- 4
-
-dat2 <- dat2 %>% mutate( 
-            Death_Rate1 = ifelse(Population!=0, total_deaths1/Population, NA),
-            Death_Rate5 = ifelse(Population!=0, total_deaths5/Population, NA),
-            Death_Rate9 = ifelse(Population!=0, total_deaths9/Population, NA),
-            Death_Rateb9 = ifelse(Population!=0, total_deaths_b9/Population, NA),
-            Death_Ratew9 = ifelse(Population!=0, total_deaths_w9/Population, NA),
-            Ave_Lived_by_Died = ifelse(Age2=="<1 year", 0.1, 0.5),
-            Prob_Dying1 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rate1/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate1), 
-                                 NA),
-            Prob_Dying5 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rate5/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate5), 
-                                 NA),
-            Prob_Dying9 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rate9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate9), 
-                                 NA),
-            Prob_Dyingb9 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rateb9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rateb9), 
-                                 NA),
-            Prob_Dyingw9 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Ratew9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Ratew9), 
-                                 NA),
-            Prob_Surv1 = ifelse(Population!=0, 1 - Prob_Dying1, NA),
-            Prob_Surv5 = ifelse(Population!=0, 1 - Prob_Dying5, NA),
-            Prob_Surv9 = ifelse(Population!=0, 1 - Prob_Dying9, NA),            
-            Prob_Survb9 = ifelse(Population!=0, 1 - Prob_Dyingb9, NA),
-            Prob_Survw9 = ifelse(Population!=0, 1 - Prob_Dyingw9, NA),
-            alive_at_start_int1 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_int5 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_int9 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_intb9 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_intw9 = ifelse(Age2 == "<1 year", 1000000, NA),
-            deaths_during_int1 = ifelse(Age2 == "<1 year", alive_at_start_int1*Prob_Dying1, NA),
-            deaths_during_int5 = ifelse(Age2 == "<1 year", alive_at_start_int5*Prob_Dying5, NA),
-            deaths_during_int9 = ifelse(Age2 == "<1 year", alive_at_start_int9*Prob_Dying9, NA),
-            deaths_during_intb9 = ifelse(Age2 == "<1 year", alive_at_start_intb9*Prob_Dyingb9, NA),
-            deaths_during_intw9 = ifelse(Age2 == "<1 year", alive_at_start_intw9*Prob_Dyingw9, NA))
-```
-
-```{r first_five}
-levels(dat2$StateYearRaceSex)[1:5]
-summary(dat2$Population[dat2$StateYearRaceSex %in% levels(dat2$StateYearRaceSex)[1:5]])
-
-timer1 <- system.time (
-  for(x in levels(dat2$StateYearRaceSex)[1:5]) {
-      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
-        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
-        
-          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
-              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
-          }
-          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
-                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
-          
-          
-          } 
-        }
-     
-  }
-)
-
-timer1 # 25 seconds for 5 -- guess 13 hrs for all the strata
-```
-
-```{r calc_pop0, eval=F, echo=F}
-View(dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[2789], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1")])
-timer2 <- system.time (
-  for(x in levels(dat2$StateYearRaceSex)[2789]) {
-      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
-        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
-        
-          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
-              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
-          }
-          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
-                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
-          
-          
-          } 
-        }
-     
-  }
-)
-
-timer2
-```
-
-```{r first_thousand}
-timer3 <- system.time (
-  for(x in levels(dat2$StateYearRaceSex)[6:1000]) {
-      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
-        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
-        
-          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
-              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
-          }
-          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
-                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
-          
-          
-          } 
-        }
-     
-  }
-)
-
-timer3
-```
-
-```{r rest_of_life_expectancy_calc}
-dat2$num_PY_int1 <- (dat2$alive_at_start_int1 - dat2$deaths_during_int1)*dat2$numYrsInt + (dat2$deaths_during_int1*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_int5 <- (dat2$alive_at_start_int5 - dat2$deaths_during_int5)*dat2$numYrsInt + (dat2$deaths_during_int5*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_int9 <- (dat2$alive_at_start_int9 - dat2$deaths_during_int9)*dat2$numYrsInt + (dat2$deaths_during_int9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_intb9 <- (dat2$alive_at_start_intb9 - dat2$deaths_during_intb9)*dat2$numYrsInt + (dat2$deaths_during_intb9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_intw9 <- (dat2$alive_at_start_intw9 - dat2$deaths_during_intw9)*dat2$numYrsInt + (dat2$deaths_during_intw9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-
-dat2$num_PY_int1[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int1[dat2$Age2 == "85+ years"])/dat2$Death_Rate1[dat2$Age2 == "85+ years"]
-dat2$num_PY_int5[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int5[dat2$Age2 == "85+ years"])/dat2$Death_Rate5[dat2$Age2 == "85+ years"]
-dat2$num_PY_int9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int9[dat2$Age2 == "85+ years"])/dat2$Death_Rate9[dat2$Age2 == "85+ years"]
-dat2$num_PY_intb9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intb9[dat2$Age2 == "85+ years"])/dat2$Death_Rateb9[dat2$Age2 == "85+ years"]
-dat2$num_PY_intw9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intw9[dat2$Age2 == "85+ years"])/dat2$Death_Ratew9[dat2$Age2 == "85+ years"]
-
-
-dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(desc(Age2)) %>%
-                 mutate(tot_PY_after1 = cumsum(num_PY_int1), tot_PY_after5 = cumsum(num_PY_int5), tot_PY_after9 = cumsum(num_PY_int9),
-                        tot_PY_afterb9 = cumsum(num_PY_intb9),tot_PY_afterw9 = cumsum(num_PY_intw9),
-                        life_exp1 = tot_PY_after1/alive_at_start_int1, life_exp5 = tot_PY_after5/alive_at_start_int5, 
-                        life_exp9 = tot_PY_after9/alive_at_start_int9, 
-                        life_expb9 = tot_PY_afterb9/alive_at_start_intb9, life_expw9 = tot_PY_afterw9/alive_at_start_intw9 
-                )
-
-dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(Age2)
-```
-
-```{r save_workspace1}
-save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
-```
-
-```{r rest}
-timer4 <- system.time (
-  for(x in levels(dat2$StateYearRaceSex)[1001:9180]) {
-      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
-        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
-        
-          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
-              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
-          }
-          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
-                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
-          
-          
-          } 
-        }
-     
-  }
-)
-
-timer4
-```
-
-```{r rest_of_life_expectancy_calc2}
-dat2$num_PY_int1 <- (dat2$alive_at_start_int1 - dat2$deaths_during_int1)*dat2$numYrsInt + (dat2$deaths_during_int1*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_int5 <- (dat2$alive_at_start_int5 - dat2$deaths_during_int5)*dat2$numYrsInt + (dat2$deaths_during_int5*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_int9 <- (dat2$alive_at_start_int9 - dat2$deaths_during_int9)*dat2$numYrsInt + (dat2$deaths_during_int9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_intb9 <- (dat2$alive_at_start_intb9 - dat2$deaths_during_intb9)*dat2$numYrsInt + (dat2$deaths_during_intb9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_intw9 <- (dat2$alive_at_start_intw9 - dat2$deaths_during_intw9)*dat2$numYrsInt + (dat2$deaths_during_intw9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-
-dat2$num_PY_int1[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int1[dat2$Age2 == "85+ years"])/dat2$Death_Rate1[dat2$Age2 == "85+ years"]
-dat2$num_PY_int5[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int5[dat2$Age2 == "85+ years"])/dat2$Death_Rate5[dat2$Age2 == "85+ years"]
-dat2$num_PY_int9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int9[dat2$Age2 == "85+ years"])/dat2$Death_Rate9[dat2$Age2 == "85+ years"]
-dat2$num_PY_intb9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intb9[dat2$Age2 == "85+ years"])/dat2$Death_Rateb9[dat2$Age2 == "85+ years"]
-dat2$num_PY_intw9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intw9[dat2$Age2 == "85+ years"])/dat2$Death_Ratew9[dat2$Age2 == "85+ years"]
-
-
-dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(desc(Age2)) %>%
-                 mutate(tot_PY_after1 = cumsum(num_PY_int1), tot_PY_after5 = cumsum(num_PY_int5), tot_PY_after9 = cumsum(num_PY_int9),
-                        tot_PY_afterb9 = cumsum(num_PY_intb9),tot_PY_afterw9 = cumsum(num_PY_intw9),
-                        life_exp1 = tot_PY_after1/alive_at_start_int1, life_exp5 = tot_PY_after5/alive_at_start_int5, 
-                        life_exp9 = tot_PY_after9/alive_at_start_int9, 
-                        life_expb9 = tot_PY_afterb9/alive_at_start_intb9, life_expw9 = tot_PY_afterw9/alive_at_start_intw9 
-                )
-
-dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(Age2)
-```
-
-
-```{r save_workspace2}
-save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
-```
-
-I compared the following with my calculations in the excel spreadsheet to check the calculations -- all good.
 ```{r}
-dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[1], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
-                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
+source("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Code/life_expectancy_functions.R")
 
-dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[4], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
-                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
+list.life.tables <- vector(mode = "list", length = length(non.zero.stratums))
+list.index <- 1
 
-dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[2789], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
-                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
+system.time(
+for(stratum.id in non.zero.stratums[1:10]) {
+  
+  list.life.tables[[list.index]] <- life.table(data = subset(dat2, StateYearRaceSex == stratum.id), 
+                                               age.groups = "Age2", num.ages.in.group = "nx", 
+                                               death.counts = "total_deaths5", 
+                                               population.counts = "Population")
+  list.index <- list.index + 1
+  print(list.index)
+  }
+)
+
 ```
-
 
 
 ###Initial graphs on missing data
