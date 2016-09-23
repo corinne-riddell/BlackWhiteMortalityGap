@@ -5,19 +5,80 @@ date: "September 22, 2016"
 output: html_document
 ---
 
+```{r}
+black.males.alabama <- alabama.by.strata[alabama.by.strata$Race2 == "Black" &
+                                           alabama.by.strata$Sex2 == "Male", ]
+
+males.alabama <- alabama.by.strata[ alabama.by.strata$Sex2 == "Male", ]
+
+ggplot(black.males.alabama, aes(x = Year , y = Age3, z = log(mortality_rate, 10))) + 
+ # stat_contour(geom = "polygon", aes(fill = ..level..), bins = 19) 
+#         geom_tile(aes(fill = mortality_rate)) 
+         stat_contour(bins = 10, aes(colour = ..level..) )
+
+
+plot_ly(data = black.males.alabama, x = Year, y = Age3, z = log(mortality_rate,10), type = "heatmap")
+
+alabama.by.strata$id <- as.integer(alabama.by.strata$RaceSex)
+
+test <- plot_ly(data = alabama.by.strata, x = Year, y = Age3, z = log(mortality_rate,10),
+        group = RaceSex, type = "heatmap", xaxis = paste0("x", id))
+
+subplot(test)
+
+ggplot(data = alabama.by.strata, aes(x=Year2, y = Age3)) + geom_tile(aes(fill = log(mortality_rate,10))) +
+  facet_grid(Race2 ~ Sex2)
+
+first.strata.cod2 <- alabama.by.strata.cod[alabama.by.strata.cod$RaceSex == "White.Male", ]
+first.strata.cod2$Year3 <- as.numeric(as.character(first.strata.cod2$Year2))
+
+plot_ly(data = subset(first.strata.cod2, COD2 == "Injuries"), x = Year3, y = Age3, z = cod_prop_death5, type = "heatmap")
+
+plot_ly(data = subset(first.strata.cod2, COD2 == "Communicable"), x = Year3, y = Age3, z = cod_prop_death5, type = "heatmap")
+
+plot_ly(data = subset(first.strata.cod2, COD2 == "Cancers"), x = Year3, y = Age3, z = cod_prop_death5, type = "heatmap")
+
+plot_ly(data = subset(first.strata.cod2, COD2 == "Non-communicable"), x = Year3, y = Age3, z =cod_prop_death5, type = "heatmap")
+
+#this is wrong - need to create the dataset...
+alabama.by.strata.cod2$id <- as.integer(alabama.by.strata.cod2$RaceSex)
+subplot(plot_ly(data = subset(alabama.by.strata.cod2, COD2 == "Communicable"), x = Year3, y = Age3, z = cod_prop_death5, type = "heatmap", group = RaceSex, xaxis = paste0("x", id)))
+
+
+first.strata.cod$id <- as.integer(first.strata.cod$COD2)
+plot_ly(data = first.strata.cod, x = Year, y = Age3, z = log(cod_prop_death5, 10), type = "heatmap", group = COD2,
+        xaxis = paste0("x", id))
+```
+
+
 ```{r alabama_example}
+library(dplyr)
+library(ggplot2)
+library(plotly)
 load("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Data/alabama_only.Rdata")
 #example data
+
+dat.clean.alabama <- dat.clean.alabama %>% mutate(Age3 = 0*(Age2 == "<1 year") + 1*(Age2 == "1-4 years") + 5*(Age2 == "5-9 years") +
+                10*(Age2 == "10-14 years") + 15*(Age2 == "15-19 years") + 20*(Age2 == "20-24 years") + 
+                25*(Age2 == "25-29 years") + 30*(Age2 == "30-34 years") + 35*(Age2 == "35-39 years") +
+                40*(Age2 == "40-44 years") + 45*(Age2 == "45-49 years") + 50*(Age2 == "50-54 years") + 
+                55*(Age2 == "55-59 years") + 60*(Age2 == "60-64 years") + 65*(Age2 == "65-69 years") +   
+                70*(Age2 == "70-74 years") + 75*(Age2 == "75-79 years") + 80*(Age2 == "80-84 years") + 
+                85*(Age2 == "85+ years"))
+
 alabama.by.strata <- 
   dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
   arrange(RaceSex, Year2, Age2) %>%
-  mutate(nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years")) %>%
+  mutate(nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years"))  %>%
   summarise(total_deaths5 = sum(Count_md5),
             Population = first(Population), 
             Race2 = first(Race2), 
             Sex2 = first(Sex2), 
+            Year = first(Year),
+            Age = first(Age), Age3 = first(Age3),
             StateYearRaceSex = first(StateYearRaceSex),
-            nx = first(nx))
+            nx = first(nx)) %>%
+  mutate(mortality_rate = total_deaths5/Population)
 
 first.strata <- alabama.by.strata[alabama.by.strata$StateYearRaceSex == "Alabama.1969.White.Male", ]
 
