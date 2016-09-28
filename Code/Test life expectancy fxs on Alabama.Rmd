@@ -35,39 +35,59 @@ cod.tab.alabama.male.1969$prop1 <- second.strata.cod$cod_prop_death5
 cod.tab.alabama.male.1969 <- cod.tab.alabama.male.1969 %>% arrange(COD2, Age2)
 ```
 
-```{r exploratory graphs}
+```{r exploratory_graphs}
 ggplot(cod.tab.alabama.male.1969, aes(x=COD2, y=prop1)) + 
   geom_point(aes(col="White")) + geom_point(aes(y=prop2, col="Black")) +
   scale_y_continuous(name = "Proportion dying from specified cause") +
   facet_wrap(~Age2) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggplot(life.table.blacks, aes(x = Age3, y = q_x, col = "q_x: Probability")) + geom_point() + geom_point(aes(y = R_x, col="R_x: Mortality rate")) + scale_y_continuous(name = "Value") + scale_x_continuous(name = "Age") + ggtitle("Examining the relationship between the probability of dying and the mortality rate")
+ggplot(life.table.blacks, aes(x = Age3, y = q_x, col = "q_x: Probability")) + 
+  geom_point() + geom_point(aes(y = R_x, col="R_x: Mortality rate")) + 
+  scale_y_continuous(name = "Value") + 
+  scale_x_continuous(name = "Age") + 
+  ggtitle("Examining the relationship between the probability of dying and the mortality rate")
 ```
 
 
 
-```{r}
+```{r life-tables}
 life.table.whites <- data.frame(life.table(data = first.strata, num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
 
 life.table.blacks <- data.frame(life.table(data = second.strata, num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
+```
 
+The life expectancy at birth for white males in Alabama in 1969 is `r life.table.whites$e_x[1]` years vs. `r life.table.blacks$e_x[1]` for black males, for a gap of `r life.table.whites$e_x[1] - life.table.blacks$e_x[1]` years.
+
+```{r age-decomp}
 alabama_age_decomp <- le_age_decomp(life.table1 = life.table.blacks, name.lt1 = "Blacks", 
                                     life.table2 = life.table.whites, name.lt2 = "Whites", age.groups = "Age3")
 alabama_age_decomp
 
-
-
-
-
-ggplot(alabama_age_decomp, aes(y = C_x, x = Ages)) + geom_point() + scale_y_continuous("Contribution of Age to Gap")
 sum(alabama_age_decomp$C_x)
-life.table.whites$e_x[1] - life.table.blacks$e_x[1]
 
-ggplot(alabama_age_decomp, aes(y = Life_Expectancy_1, x = Ages)) + geom_point(aes(col="Black")) + scale_y_continuous("Life Expectancy (Yrs)") +
-  geom_point(aes(y = Life_Expectancy_2, col="White"))
+ggplot(alabama_age_decomp, aes(y = C_x, x = Ages)) + 
+  geom_point() + 
+  scale_y_continuous("Contribution of Age to Gap") +
+  geom_abline(intercept = 0, slope = 0)
 
-alabama_cod_decomp <- cause_of_death_decomp(life.table1 = life.table.blacks, life.table2 = life.table.whites, decomp.table = alabama_age_decomp,
-                      cod.table = cod.tab.alabama.male.1969, "Age2", "COD2", "prop1", "prop2")
+ggplot(alabama_age_decomp, aes(y = LE_Blacks, x = Ages)) + 
+  geom_point(aes(col="Black")) + 
+  scale_y_continuous("Life Expectancy (Yrs)") +
+  geom_point(aes(y = LE_Whites, col="White")) +
+  ggtitle("Life expectancy by age in black and white males in Alabama in 1969")
+```
+
+```{r cod-decomp}
+alabama_cod_decomp <- cause_of_death_decomp(life.table1 = life.table.blacks, 
+                                            life.table2 = life.table.whites, 
+                                            decomp.table = alabama_age_decomp,
+                                            cod.table = cod.tab.alabama.male.1969, "Age2", "COD2", "prop1", "prop2")
+
+ggplot(alabama_cod_decomp, aes(y = C_xi, x = COD2)) + 
+  geom_point() + 
+  scale_y_continuous("Contribution of Age to Gap") +
+  geom_abline(intercept = 0, slope = 0) +
+  facet_wrap(~Age2) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 ```{r}
