@@ -8,6 +8,9 @@
 
 # Session Data files
 .RData
+.Rdata
+*.RData
+*.Rdata
 
 # Ignore data directory
 Data
