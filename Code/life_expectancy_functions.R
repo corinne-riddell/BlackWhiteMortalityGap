@@ -4,7 +4,7 @@
 
 #change names to something like col.name.death.counts or death.counts.in.data
 
-life.table <- function(data, age.groups, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA){
+life.table <- function(data, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA){
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
   
@@ -45,6 +45,8 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
 
 #takes the life table output from the first function -- need two life tables to perform the comparison
 #relies on the names of the columns kept as-is in the life tables -- user should not change the column names!
+#name.lt1 and name.lt2 are used to create variable names so these shouldn't have spaces in them and they can be 
+#made up (they don't have to replicate the name of the life table object)
 le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2 = 2, name.lt2, age.groups) {
 
   life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], "T_x"]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
