@@ -54,6 +54,7 @@ dat <- dat %>%
          Year2 = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
          Year3 = as.numeric(as.character(Year2)),
          RaceSex = interaction(Race2, Sex2),
+         StateYearSex = interaction(State2, Year2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
 ```
 
@@ -169,14 +170,13 @@ list.life.tables <- vector(mode = "list", length = length(non.zero.stratums))
 list.index <- 1
 
 system.time(
-for(stratum.id in non.zero.stratums[1:10]) {
+for(stratum.id in non.zero.stratums) {
   
   list.life.tables[[list.index]] <- life.table(data = subset(dat2, StateYearRaceSex == stratum.id), 
                                                age.groups = "Age2", num.ages.in.group = "nx", 
                                                death.counts = "total_deaths5", 
                                                population.counts = "Population")
   list.index <- list.index + 1
-  print(list.index)
   }
 )
 
