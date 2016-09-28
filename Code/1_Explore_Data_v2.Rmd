@@ -140,23 +140,35 @@ dat.clean <- dat.clean[ , !names(dat.clean) %in% c("Count_grouped", "Count1_grou
                                                    "Count_b9w1_grouped", "Count_b1w9_grouped")]
 ```
 
+```{r addvar_cod_proportions}
+dat.clean <- dat.clean %>% group_by(State2, RaceSex, Year3, Age3) %>%
+                           arrange(State2, RaceSex, Year3, Age3) %>%
+                           mutate(total_deaths1 = sum(Count_md1),
+                                  total_deaths5 = sum(Count_md5),
+                                  total_deaths9 = sum(Count_md9),
+                                  cod_prop_death1 = Count_md1/total_deaths1, 
+                                  cod_prop_death5 = Count_md5/total_deaths5,
+                                  cod_prop_death9 = Count_md9/total_deaths9)
+```
+
 To calculate life expectancy, we have to aggregate the data across the causes of death.
 
 ```{r aggregate_over_COD}
 dat2 <- dat.clean %>% group_by(State2, Year2, RaceSex, Age2) %>%
   arrange(State2, RaceSex, Year2, Age2) %>%
-  summarise(total_deaths1 = sum(Count_md1), 
-            total_deaths5 = sum(Count_md5),
-            total_deaths9 = sum(Count_md9), 
-            total_deaths_b9 = sum(Count_b9w1), 
-            total_deaths_w9 = sum(Count_b1w9),
-            Population = first(Population), 
+  summarise(Population = first(Population), 
             Race2 = first(Race2), 
             Sex2 = first(Sex2), 
             StateYearRaceSex = first(StateYearRaceSex),
             nx = first(nx),
             Age3 = first(Age3),
-            Year3 = first(Year3))
+            Year3 = first(Year3),
+            total_deaths1 = first(total_deaths1),
+            total_deaths5 = first(total_deaths5),
+            total_deaths9 = first(total_deaths9),
+            cod_prop_death1 = first(cod_prop_death1),
+            cod_prop_death5 = first(cod_prop_death5),
+            cod_prop_death9 = first(cod_prop_death9))
 
 #return stratum ids with any age-specific population counts of 0.
 #unique(dat2$StateYearRaceSex[dat2$Population == 0])

@@ -5,6 +5,15 @@ date: "September 22, 2016"
 output: html_document
 ---
 
+```{r initialize}
+library(dplyr)
+library(ggplot2)
+library(plotly)
+load("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/alabama_only.Rdata")
+#example data
+```
+
+
 ```{r}
 black.males.alabama <- alabama.by.strata[alabama.by.strata$Race2 == "Black" &
                                            alabama.by.strata$Sex2 == "Male", ]
@@ -50,26 +59,10 @@ plot_ly(data = first.strata.cod, x = Year, y = Age3, z = log(cod_prop_death5, 10
         xaxis = paste0("x", id))
 ```
 
-
 ```{r alabama_example}
-library(dplyr)
-library(ggplot2)
-library(plotly)
-load("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Data/alabama_only.Rdata")
-#example data
-
-dat.clean.alabama <- dat.clean.alabama %>% mutate(Age3 = 0*(Age2 == "<1 year") + 1*(Age2 == "1-4 years") + 5*(Age2 == "5-9 years") +
-                10*(Age2 == "10-14 years") + 15*(Age2 == "15-19 years") + 20*(Age2 == "20-24 years") + 
-                25*(Age2 == "25-29 years") + 30*(Age2 == "30-34 years") + 35*(Age2 == "35-39 years") +
-                40*(Age2 == "40-44 years") + 45*(Age2 == "45-49 years") + 50*(Age2 == "50-54 years") + 
-                55*(Age2 == "55-59 years") + 60*(Age2 == "60-64 years") + 65*(Age2 == "65-69 years") +   
-                70*(Age2 == "70-74 years") + 75*(Age2 == "75-79 years") + 80*(Age2 == "80-84 years") + 
-                85*(Age2 == "85+ years"))
-
 alabama.by.strata <- 
   dat.clean.alabama %>% group_by(Year2, RaceSex, Age2) %>%
   arrange(RaceSex, Year2, Age2) %>%
-  mutate(nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years"))  %>%
   summarise(total_deaths5 = sum(Count_md5),
             Population = first(Population), 
             Race2 = first(Race2), 
