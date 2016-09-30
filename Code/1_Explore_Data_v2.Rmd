@@ -222,6 +222,23 @@ dat2 <- merge(dat2, les, by = "StateYearRaceSex", all.x =T)
 
 ```
 
+make a new dataset that contains information on the gap
+
+```{r}
+Black <- dat2 %>% filter(Race2 == "Black" & Age3 == 0) %>% 
+                  select(State2, Year3, Sex2, Pop_across_age, life.expectancy.birth) %>%
+                  rename(Pop_black = Pop_across_age,  le.birth.black = life.expectancy.birth)
+
+White <- dat2 %>% filter(Race2 == "White" & Age3 == 0) %>% 
+                  select(State2, Year3, Sex2, Pop_across_age, life.expectancy.birth) %>%
+                  rename(Pop_white = Pop_across_age,  le.birth.white = life.expectancy.birth)
+
+BlackWhite <- merge(Black, White, by = c("State2", "Year3", "Sex2"))
+
+BlackWhite <- BlackWhite %>% mutate(WBgap = le.birth.white - le.birth.black)
+
+```
+
 
 ###Initial graphs on missing data
 Notes on Figure 1 (below):
@@ -408,6 +425,6 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 ```
 
 ```{r}
-save(dat.clean, dat2, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
+save(dat.clean, dat2, BlackWhite, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
