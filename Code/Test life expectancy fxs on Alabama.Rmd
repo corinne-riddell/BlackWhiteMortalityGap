@@ -48,8 +48,6 @@ ggplot(life.table.blacks, aes(x = Age3, y = q_x, col = "q_x: Probability")) +
   ggtitle("Examining the relationship between the probability of dying and the mortality rate")
 ```
 
-
-
 ```{r life-tables}
 life.table.whites <- data.frame(life.table(data = first.strata, num.ages.in.group = "nx", death.counts = "total_deaths5", population.counts = "Population"))
 
@@ -65,16 +63,16 @@ alabama_age_decomp
 
 sum(alabama_age_decomp$C_x)
 
-ggplot(alabama_age_decomp, aes(y = C_x, x = Ages)) + 
-  geom_point() + 
-  scale_y_continuous("Contribution of Age to Gap") +
-  geom_abline(intercept = 0, slope = 0)
-
 ggplot(alabama_age_decomp, aes(y = LE_Blacks, x = Ages)) + 
   geom_point(aes(col="Black")) + 
   scale_y_continuous("Life Expectancy (Yrs)") +
   geom_point(aes(y = LE_Whites, col="White")) +
   ggtitle("Life expectancy by age in black and white males in Alabama in 1969")
+
+ggplot(alabama_age_decomp, aes(y = C_x, x = Ages)) + 
+  geom_point() + 
+  scale_y_continuous("Contribution of Age to Gap") +
+  geom_abline(intercept = 0, slope = 0)
 ```
 
 ```{r cod-decomp}
@@ -85,9 +83,8 @@ alabama_cod_decomp <- cause_of_death_decomp(life.table1 = life.table.blacks,
 
 ggplot(alabama_cod_decomp, aes(y = C_xi, x = COD2)) + 
   geom_point() + 
-  scale_y_continuous("Contribution of Age to Gap") +
-  geom_abline(intercept = 0, slope = 0) +
-  facet_wrap(~Age2) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  scale_y_continuous("Contribution of cause of death to Gap") +
+  geom_abline(intercept = 0, slope = 0) + facet_wrap(~ Age2) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 ```{r}
@@ -106,16 +103,16 @@ plot_ly(data = black.males.alabama, x = Year, y = Age3, z = log(mortality_rate,1
 
 alabama.by.strata$id <- as.integer(alabama.by.strata$RaceSex)
 
-test <- plot_ly(data = alabama.by.strata, x = Year, y = Age3, z = log(mortality_rate,10),
-        group = RaceSex, type = "heatmap", xaxis = paste0("x", id))
+#test <- plot_ly(data = alabama.by.strata, x = Year, y = Age3, z = log(mortality_rate,10),
+#        group = RaceSex, xaxis = paste0("x", id), type = "heatmap")
 
-subplot(test)
+#subplot(test)
 
-ggplot(data = alabama.by.strata, aes(x=Year2, y = Age3)) + geom_tile(aes(fill = log(mortality_rate,10))) +
-  facet_grid(Race2 ~ Sex2)
+#ggplot(data = alabama.by.strata, aes(x=Year3, y = Age3)) + geom_tile(aes(fill = log(mortality_rate,10))) +
+#  facet_grid(Race2 ~ Sex2)
 
-first.strata.cod2 <- alabama.by.strata.cod[alabama.by.strata.cod$RaceSex == "White.Male", ]
-first.strata.cod2$Year3 <- as.numeric(as.character(first.strata.cod2$Year2))
+#first.strata.cod2 <- alabama.by.strata.cod[alabama.by.strata.cod$RaceSex == "White.Male", ]
+first.strata.cod2 <- dat.clean.alabama[dat.clean.alabama$RaceSex == "White.Male", ]
 
 plot_ly(data = subset(first.strata.cod2, COD2 == "Injuries"), x = Year3, y = Age3, z = cod_prop_death5, type = "heatmap")
 
@@ -125,14 +122,16 @@ plot_ly(data = subset(first.strata.cod2, COD2 == "Cancers"), x = Year3, y = Age3
 
 plot_ly(data = subset(first.strata.cod2, COD2 == "Non-communicable"), x = Year3, y = Age3, z =cod_prop_death5, type = "heatmap")
 
+first.strata.cod2$id <- as.integer(first.strata.cod2$COD2)
+plot_ly(data = first.strata.cod2, x = Year, y = Age3, z = cod_prop_death5, type = "heatmap", group = COD2,
+        xaxis = paste0("x", id))
+
 #this is wrong - need to create the dataset...
-alabama.by.strata.cod2$id <- as.integer(alabama.by.strata.cod2$RaceSex)
+#alabama.by.strata.cod2$id <- as.integer(alabama.by.strata.cod2$RaceSex)
 subplot(plot_ly(data = subset(alabama.by.strata.cod2, COD2 == "Communicable"), x = Year3, y = Age3, z = cod_prop_death5, type = "heatmap", group = RaceSex, xaxis = paste0("x", id)))
 
 
-first.strata.cod$id <- as.integer(first.strata.cod$COD2)
-plot_ly(data = first.strata.cod, x = Year, y = Age3, z = log(cod_prop_death5, 10), type = "heatmap", group = COD2,
-        xaxis = paste0("x", id))
+
 ```
 
 
