@@ -53,7 +53,7 @@ dat <- dat %>%
                                                         "Non-communicable", "Injuries", "All other causes")), 
          Year2 = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
          Year3 = as.numeric(as.character(Year2)),
-         RaceSex = interaction(Race2, Sex2),
+         RaceSex = interaction(Race2, Sex2, sep = " "),
          StateYearSex = interaction(State2, Year2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
 ```
@@ -175,7 +175,19 @@ dat2 <- dat.clean %>% group_by(State2, Year2, RaceSex, Age2) %>%
 non.zero.stratums <- setdiff(levels(dat2$StateYearRaceSex), unique(dat2$StateYearRaceSex[dat2$Population == 0]))
 ```
 
+Add the total population (across age brackets) to the dat2 dataset
 ```{r}
+dat3 <- dat2 %>% ungroup() %>% 
+  group_by(StateYearRaceSex) %>%
+  summarise(Pop_across_age = sum(Population))
+
+dat2 <- merge(dat2, dat3, by = "StateYearRaceSex")
+```
+
+
+In those strata that do not have any age-specific population counts of 0, create a life table and store it in a list.
+
+```{r calculate_life_expectancy}
 source("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Code/life_expectancy_functions.R")
 
 list.life.tables <- vector(mode = "list", length = length(non.zero.stratums))
@@ -191,6 +203,22 @@ for(stratum.id in non.zero.stratums) {
   list.index <- list.index + 1
   }
 )
+
+```
+
+Add the life expectancy at birth to the data file
+
+```{r add_le_to_dataset}
+le <- rep(NA, length(non.zero.stratums))
+
+for (i in 1:length(non.zero.stratums)) {
+  le[i] <- list.life.tables[[i]]$e_x[1]
+  
+}
+
+les <- data.frame(life.expectancy.birth = le, StateYearRaceSex = non.zero.stratums)
+
+dat2 <- merge(dat2, les, by = "StateYearRaceSex", all.x =T)
 
 ```
 
@@ -377,5 +405,9 @@ ggplot(subset(dat, State2=="Louisiana"), aes(x = Population, y = Count)) +
 
 ```{r save_workspace3}
 save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
+```
+
+```{r}
+save(dat.clean, dat2, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 

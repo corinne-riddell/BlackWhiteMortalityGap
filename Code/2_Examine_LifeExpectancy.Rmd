@@ -19,16 +19,10 @@ load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
 
 ```{r}
 
-dat3 <- 
-dat2 %>% group_by(StateYearRaceSex) %>%
-  arrange(Age2) %>%  
-  summarise(State2 = first(State2), Year2 = first(Year2), Race2 = first(Race2), Sex2 = first(Sex2),
-            Pop_across_age = sum(Population, na.rm = "always"), Pop_has_NA = sum(Population), 
-            LE_birth1 = first(life_exp1), LE_birth5 = first(life_exp5), LE_birth9 = first(life_exp9), 
-            LE_birthb9 = first(life_expb9), LE_birthw9 = first(life_expw9))
+
 
 dat3$grouping <- interaction(dat3$State2, dat3$Race2, dat3$Sex2)
-dat3$Year <- as.numeric(as.character(dat3$Year2))
+
 
 #life expectancy over time under two sensitivities for imputing the NA death counts
 ggplot(subset(dat3, State2 == "Alabama"), aes(y = LE_birth1, x = Year)) + 
