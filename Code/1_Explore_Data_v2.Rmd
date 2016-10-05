@@ -188,7 +188,7 @@ dat2 <- merge(dat2, dat3, by = "StateYearRaceSex")
 In those strata that do not have any age-specific population counts of 0, create a life table and store it in a list.
 
 ```{r calculate_life_expectancy}
-source("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Code/life_expectancy_functions.R")
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 
 list.life.tables <- vector(mode = "list", length = length(non.zero.stratums))
 list.index <- 1
@@ -222,9 +222,9 @@ dat2 <- merge(dat2, les, by = "StateYearRaceSex", all.x =T)
 
 ```
 
-make a new dataset that contains information on the gap
+Make a new dataset that contains information on the gap:
 
-```{r}
+```{r create_dataset_BlackWhite}
 Black <- dat2 %>% filter(Race2 == "Black" & Age3 == 0) %>% 
                   select(State2, Year3, Sex2, Pop_across_age, life.expectancy.birth) %>%
                   rename(Pop_black = Pop_across_age,  le.birth.black = life.expectancy.birth)
@@ -236,6 +236,52 @@ White <- dat2 %>% filter(Race2 == "White" & Age3 == 0) %>%
 BlackWhite <- merge(Black, White, by = c("State2", "Year3", "Sex2"))
 
 BlackWhite <- BlackWhite %>% mutate(WBgap = le.birth.white - le.birth.black)
+
+```
+
+Decompose the gap by age. That is, for each year-state-sex combination, compare the life table for blacks to whites and decompose the gap in life expectancy at birth by age.
+
+```{r calculate_age_decomp}
+
+#create list of stratum.ids for each race-sex combination
+for (rs in unique(levels(dat.clean$RaceSex))) {
+  assign(paste0(gsub(" ", "", rs), ".stratum.ids"), 
+      dat.clean %>% filter(dat.clean$RaceSex == rs) %>%
+        select(StateYearRaceSex, StateYearSex) %>%
+        group_by(StateYearRaceSex, StateYearSex) %>%
+        filter(row_number() == 1)# %>%
+      #  rename(paste0(gsub(" ", "", rs), ".ids") = StateYearRaceSex)
+         )
+  
+}
+
+#merge the black-white lists
+Female.ids <- merge(WhiteFemale.stratum.ids, BlackFemale.stratum.ids, by = "StateYearSex")
+Female.ids <- Female.ids %>% rename(White.StateYearRaceSex = StateYearRaceSex.x, Black.StateYearRaceSex = StateYearRaceSex.y)
+Female.ids$Sex2 <- "Female"
+
+Male.ids <- merge(WhiteMale.stratum.ids, BlackMale.stratum.ids, by = "StateYearSex")
+Male.ids <- Male.ids %>% rename(White.StateYearRaceSex = StateYearRaceSex.x, Black.StateYearRaceSex = StateYearRaceSex.y)
+Male.ids$Sex2 <- "Male"
+
+paired.ids <- rbind(Male.ids, Female.ids)
+
+list.age.decomp.tables <- vector(mode = "list", length = dim(paired.ids)[1])
+
+for(i in 1:dim(paired.ids)[1]) {
+  white.index <- which(non.zero.stratums == paired.ids[i, 2])
+  black.index <- which(non.zero.stratums == paired.ids[i, 3])
+  
+  if(length(white.index) != 0 & length(black.index) != 0) {
+    list.age.decomp.tables[[i]] <- le_age_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]), 
+                                                 name.lt1 = "Black", 
+                                                 life.table2 = as.data.frame(list.life.tables[[white.index]]), 
+                                                 name.lt2 = "White", age.groups = "Age3")
+  } else {
+    list.age.decomp.tables[[i]] <- "Couldn't compare life tables"
+  }
+  print(i)
+}
 
 ```
 
