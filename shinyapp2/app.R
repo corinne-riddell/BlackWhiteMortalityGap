@@ -19,7 +19,8 @@ ui1 <- fluidPage("Explore cause of death by age and year in the United States",
                  plotlyOutput("population_trend"),
 #add the new output object for our LE graphs -- see my notes.
                  plotlyOutput("life_expectancy"),
-                 plotlyOutput("age_comp")
+                 plotOutput("age_comp1"),
+                 plotOutput("age_comp2")
                  )
 
 server <- function(input, output) {
@@ -56,11 +57,28 @@ server <- function(input, output) {
     subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
   })
   
-#  output$life_expectancy_gap <- renderPlotly({
-#  ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = WBgap)) + geom_line(aes(col = Sex2)) +
-#      facet_wrap(~Sex2) + scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy gap (years)") + 
-#      theme_minimal() + theme(legend.title=element_blank()))
-#})
+  output$age_comp1 <- renderPlot({
+   # index <- 
+  #  dat <- 
+    ggplot(as.data.frame(list.age.decomp.tables[[which(paired.ids$State2 ==  input$state & paired.ids$Year3 == input$year1 & paired.ids$Sex2 == "Male")]]), aes(Ages, C_x)) + 
+      geom_line() + 
+      geom_abline(intercept = 0, slope = 0) + 
+      geom_point() +
+      ylab("Contribution of age group to LE Gap (years)") + theme_minimal() + xlab("Age") + 
+      ggtitle(paste0("Age decomposition for males in ", input$state, " in ", input$year1))
+  })
+
+  output$age_comp2 <- renderPlot({
+    # index <- 
+    #  dat <- 
+    ggplot(as.data.frame(list.age.decomp.tables[[which(paired.ids$State2 ==  input$state & paired.ids$Year3 == input$year2 & paired.ids$Sex2 == "Male")]]), aes(Ages, C_x)) + 
+      geom_line() + 
+      geom_abline(intercept = 0, slope = 0) + 
+      geom_point() +
+      ylab("Contribution of age group to LE Gap (years)") + theme_minimal() + xlab("Age") +
+      ggtitle(paste0("Age decomposition for males in ", input$state, " in ", input$year2))
+  })    
+    
     }
 
 shinyApp(ui = ui1, server = server)

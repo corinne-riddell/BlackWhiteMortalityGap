@@ -247,7 +247,7 @@ Decompose the gap by age. That is, for each year-state-sex combination, compare 
 for (rs in unique(levels(dat.clean$RaceSex))) {
   assign(paste0(gsub(" ", "", rs), ".stratum.ids"), 
       dat.clean %>% filter(dat.clean$RaceSex == rs) %>%
-        select(StateYearRaceSex, StateYearSex) %>%
+        select(StateYearRaceSex, StateYearSex, Sex2, State2, Year3) %>%
         group_by(StateYearRaceSex, StateYearSex) %>%
         filter(row_number() == 1)# %>%
       #  rename(paste0(gsub(" ", "", rs), ".ids") = StateYearRaceSex)
@@ -256,13 +256,13 @@ for (rs in unique(levels(dat.clean$RaceSex))) {
 }
 
 #merge the black-white lists
-Female.ids <- merge(WhiteFemale.stratum.ids, BlackFemale.stratum.ids, by = "StateYearSex")
-Female.ids <- Female.ids %>% rename(White.StateYearRaceSex = StateYearRaceSex.x, Black.StateYearRaceSex = StateYearRaceSex.y)
-Female.ids$Sex2 <- "Female"
+Female.ids <- merge(WhiteFemale.stratum.ids, BlackFemale.stratum.ids[, -c(3:5)], 
+                    by = "StateYearSex", suffixes = c("White", "Black"))
+head(Female.ids)
 
-Male.ids <- merge(WhiteMale.stratum.ids, BlackMale.stratum.ids, by = "StateYearSex")
-Male.ids <- Male.ids %>% rename(White.StateYearRaceSex = StateYearRaceSex.x, Black.StateYearRaceSex = StateYearRaceSex.y)
-Male.ids$Sex2 <- "Male"
+Male.ids <- merge(WhiteMale.stratum.ids, BlackMale.stratum.ids[, -c(3:5)],
+                  by = "StateYearSex", suffixes = c("White", "Black"))
+head(Male.ids)
 
 paired.ids <- rbind(Male.ids, Female.ids)
 
@@ -280,9 +280,7 @@ for(i in 1:dim(paired.ids)[1]) {
   } else {
     list.age.decomp.tables[[i]] <- "Couldn't compare life tables"
   }
-  print(i)
 }
-
 ```
 
 
@@ -471,6 +469,7 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 ```
 
 ```{r}
-save(dat.clean, dat2, BlackWhite, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
+save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables,
+     file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
