@@ -61,7 +61,7 @@ server <- function(input, output) {
    # index <- 
   #  dat <- 
     ggplot(as.data.frame(list.age.decomp.tables[[which(paired.ids$State2 ==  input$state & paired.ids$Year3 == input$year1 & paired.ids$Sex2 == "Male")]]), aes(Ages, C_x)) + 
-      geom_line() + 
+      geom_segment(aes(xend = Ages, y = 0, yend = C_x), lwd=4) +
       geom_abline(intercept = 0, slope = 0) + 
       geom_point() +
       ylab("Contribution of age group to LE Gap (years)") + theme_minimal() + xlab("Age") + 
@@ -72,7 +72,7 @@ server <- function(input, output) {
     # index <- 
     #  dat <- 
     ggplot(as.data.frame(list.age.decomp.tables[[which(paired.ids$State2 ==  input$state & paired.ids$Year3 == input$year2 & paired.ids$Sex2 == "Male")]]), aes(Ages, C_x)) + 
-      geom_line() + 
+      geom_segment(aes(xend = Ages, y = 0, yend = C_x), lwd=4) +
       geom_abline(intercept = 0, slope = 0) + 
       geom_point() +
       ylab("Contribution of age group to LE Gap (years)") + theme_minimal() + xlab("Age") +
