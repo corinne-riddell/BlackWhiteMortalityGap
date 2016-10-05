@@ -11,13 +11,15 @@ ui1 <- fluidPage("Explore cause of death by age and year in the United States",
                  #selectInput(inputId = "race", label = "Select a race", choices = unique(levels(dat.clean.alabama$Race2))),
                  #selectInput(inputId = "cod", label = "Select a cause of death", choices = unique(levels(dat.clean.alabama$COD2))),
                  selectInput(inputId = "state", label = "Select a state", choices = unique(levels(dat.clean$State2))),
+                 selectInput(inputId = "year1", label = "Select first comparison year", choices = unique(dat.clean$Year3)),
+                 selectInput(inputId = "year2", label = "Select second comparison year", choices = unique(dat.clean$Year3)),
                  #*Output() functions,
                  #plotlyOutput("heatmapCOD"),
                  #plotlyOutput("heatmapsCOD6")
                  plotlyOutput("population_trend"),
 #add the new output object for our LE graphs -- see my notes.
-                 plotlyOutput("life_expectancy")
-#                 plotlyOutput("life_expectancy_gap")
+                 plotlyOutput("life_expectancy"),
+                 plotlyOutput("age_comp")
                  )
 
 server <- function(input, output) {
@@ -41,8 +43,9 @@ server <- function(input, output) {
 
     p1 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = le.birth.black)) + 
                      geom_ribbon(aes(ymin = le.birth.black, ymax = le.birth.white), alpha = 0.3) +
-                     geom_line(aes(col = Sex2, lty = "Black")) + 
-                     geom_line(aes(y = le.birth.white, col = Sex2, lty = "White")) +
+                  
+                     geom_line(aes(y = le.birth.white, col = Sex2), lty = 1) +
+                     geom_line(aes(col = Sex2), lty = 2) + 
                      facet_wrap(~Sex2) +
                      scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy at birth (years)") + 
                      theme_minimal() + theme(legend.title=element_blank()))
