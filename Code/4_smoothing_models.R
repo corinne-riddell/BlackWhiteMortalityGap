@@ -1,25 +1,34 @@
 
+  # Preamble
+setwd("~/Documents/BlackWhiteMortalityGap/Code")
+source('4_smoothing_models_src.R') 
+
+  # Data
+ds = subset_data(race='Black', sex='Male', cod='Injuries') 
+ds_jags = ds$ds_jags 
+jags_model = jags_simple(ds_jags)  
+
+  # Run models 
 
 
-source('/Users/kathryn/Dropbox/BlackWhiteGap/Code/4_smoothing_models_src.R') 
+  # Review results 
 
 
-data = subset_data(race='Black', sex='Female', cod='Injuries') 
-head(data) 
+jags_model = jags_smooth_year(ds$ds_jags) 
 
-age_cats = unique(data$Age) 
+smoothed_deaths = jagsresults(x=jags_model, params=c('mu'))  
+mort_rate = jagsresults(x=jags_model, params=c('mort.rate'))
 
-ds = data[data$Age2==age_cats[3], ] 
+r = data.frame(deaths=ds$ds$Count, smoothed_deaths=round(smoothed_deaths[,'50%'],0)) 
 
-m = run_jags_model(ds, pop_div=100) ; m 
-
-smoothed_deaths = jagsresults(x=m, params=c('mu'))  
-mort_rate = jagsresults(x=m, params=c('b'))
+r[is.na(r$deaths)==TRUE, ]
 
 
-r = data.frame(deaths=ds$Count, smoothed_deaths=round(smoothed_deaths[,'50%'],0)) 
 
-r
+imputed = r$smoothed_deaths[is.na(r$deaths)==TRUE]
+table(imputed<10)
+hist(imputed)
+
 
 
 

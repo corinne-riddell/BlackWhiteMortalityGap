@@ -3,6 +3,7 @@ model {
                     yb[i] ~ dpois(lambdab[i])
                     log(lambdab[i])<-popb[i]+b[ageb[i],cyearb[i]]
                   }
+
                 for (i in (N1b+1):N2b) {
                     yb[i] ~ dpois(lambdab[i])C(1,upb[i])
                     log(lambdab[i])<-popb[i]+b[ageb[i],cyearb[i]]
@@ -15,9 +16,6 @@ model {
                 }
             }
             tau1b~dgamma(.01,.01)
-
-
-
 
                 for (i in 1:N1w) {
                     yw[i] ~ dpois(lambdaw[i])
@@ -35,9 +33,5 @@ model {
                 }
             }
             tau1w~dgamma(.01,.01)
-            
-            
-            
-
-            
-            }
+                  
+   }
