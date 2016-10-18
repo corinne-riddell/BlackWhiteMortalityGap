@@ -69,7 +69,7 @@ server <- function(input, output) {
       scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
       theme_minimal() +
       scale_y_reverse() + 
-      geom_segment(x = 0, xend = 0, y = 10, yend = -90) +   
+      geom_segment(x = 0, xend = 0, y = 10, yend = -90) +
       xlab("Loss or gain in life expectancy in years") +
       ggtitle(paste0("Contribution of age grouping to the black-white life expectancy gap for males in ", input$state, " in ", input$year1))
   })
