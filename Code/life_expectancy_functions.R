@@ -65,6 +65,8 @@ le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2 = 2, name.lt2, 
     ((life.table2["accumulated.lived.after"]/life.table2[1, "l_x"])*
      ((life.table1["l_x"]/life.table2["l_x"]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"]))
      )
+  
+  decomp.table["adds_to_gap"] <- ifelse(decomp.table["C_x"] > 0, T, F)
 
   return(decomp.table)
 }

@@ -71,14 +71,20 @@ server <- function(input, output) {
   output$age_comp2 <- renderPlot({
     # index <- 
     #  dat <- 
-    ggplot(as.data.frame(list.age.decomp.tables[[which(paired.ids$State2 ==  input$state & paired.ids$Year3 == input$year2 & paired.ids$Sex2 == "Male")]]), aes(Ages, C_x)) + 
-      geom_segment(aes(xend = Ages, y = 0, yend = C_x), lwd=4) +
-      geom_abline(intercept = 0, slope = 0) + 
-      geom_point() +
-      ylab("Contribution of age group to LE Gap (years)") + theme_minimal() + xlab("Age") +
-      ggtitle(paste0("Age decomposition for males in ", input$state, " in ", input$year2))
-  })    
-    
+   
+  ggplot(as.data.frame(list.age.decomp.tables[[which(paired.ids$State2 ==  input$state & 
+                                                       paired.ids$Year3 == input$year2 & 
+                                                       paired.ids$Sex2 == "Male")]]), 
+         aes(y = Ages, x = C_x)) + 
+    geom_segment(aes(xend = 0, yend = Ages), lwd=8) +
+   # geom_abline(intercept = 0, slope = 0) + 
+  #  ylab("Contribution of age group to LE Gap (years)") + 
+    theme_minimal() +
+    scale_y_reverse() +  
+    xlab("Loss of gain in life expectancy in years") +
+    ggtitle(paste0("Contribution of age grouping to the black-white life expectancy gap for males in ", input$state, " in ", input$year2))
+      
+})     
     }
 
 shinyApp(ui = ui1, server = server)
