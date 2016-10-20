@@ -37,3 +37,58 @@ life.table <- function(data, age.groups, num.ages.in.group, death.counts, popula
   return(data)
   
 } 
+
+
+
+#takes the life table output from the first function -- need two life tables to perform the comparison
+#relies on the names of the columns kept as-is in the life tables -- user should not change the column names!
+#name.lt1 and name.lt2 are used to create variable names so these shouldn't have spaces in them and they can be 
+#made up (they don't have to replicate the name of the life table object)
+le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2 = 2, name.lt2, age.groups) {
+  
+  life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], "T_x"]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
+  
+  life.table1["num.alive.next.interval"] <- c(unlist(life.table1[2:dim(life.table2)[1], "l_x"]), 0) #l_(x+n) 
+  life.table2["num.alive.next.interval"] <- c(unlist(life.table2[2:dim(life.table2)[1], "l_x"]), 1) #--> end in 1 to fix calculation error of dividing by 0
+  
+  decomp.table <- data.frame("Ages" = life.table1[ ,age.groups], life.table1["e_x"], life.table2["e_x"],
+                             "C_x" = rep(NA, dim(life.table1)[1]))
+  
+  names(decomp.table)[2] <- paste0("LE_", name.lt1)
+  names(decomp.table)[3] <- paste0("LE_", name.lt2)
+  
+  decomp.table["C_x"] <- 
+    (life.table1["l_x"]/life.table1[1, "l_x"])*((life.table2["L_x"]/life.table2["l_x"]) - (life.table1["L_x"]/life.table1["l_x"])) +
+    ((life.table2["accumulated.lived.after"]/life.table2[1, "l_x"])*
+       ((life.table1["l_x"]/life.table2["l_x"]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"]))
+    )
+  
+  decomp.table["adds_to_gap"] <- ifelse(decomp.table["C_x"] > 0, T, F)
+  
+  return(decomp.table)
+}
+
+
+#cause of death table must be organized in a very specific way
+cause_of_death_decomp <- function(life.table1, life.table2, decomp.table, 
+                                  cod.table, age.colname.cod.table, COD.colname.cod.table, 
+                                  prop1.colname.cod.table, prop2.colname.cod.table) {
+  C_x <- decomp.table[["C_x"]]
+  prop2 <- cod.table[[prop2.colname.cod.table]]
+  R_x2 <- life.table2[["R_x"]]
+  prop1 <- cod.table[[prop1.colname.cod.table]]
+  R_x1 <- life.table1[["R_x"]]
+  
+  C_xi = C_x*((prop2*R_x2 - prop1*R_x1)/(R_x1-R_x2))
+  
+  COD.decomp.table <- data.frame("Ages" = cod.table[ , age.colname.cod.table], 
+                                 cod.table[ , prop1.colname.cod.table],
+                                 cod.table[ , prop2.colname.cod.table],
+                                 "Cause.of.death" = cod.table[ , COD.colname.cod.table],
+                                 "C_xi" = C_xi)
+  
+  names(COD.decomp.table)[2] <- prop1.colname.cod.table
+  names(COD.decomp.table)[3] <- prop2.colname.cod.table
+  
+  return(COD.decomp.table)
+}
