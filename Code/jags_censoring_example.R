@@ -1,7 +1,6 @@
 
 #convincing myself this makes sense
 
-
 ds1 = subset_data(race='Black', sex='Male', cod='Injuries') 
 
 ds2 = ds1$ds[ds1$ds$age==3, ] ; ds2
@@ -41,6 +40,13 @@ jags_model = jags(data=ds, param=params, n.chains=nchains, inits = myinits, n.it
 deaths = jagsresults(x=jags_model, params=c('mu'))
 r = data.frame(deaths=ds$deaths, deaths=round(deaths[,'50%'],0)) ; r 
 
-x = rnorm(1000)
-hist(x, 50, col='purple', border='white', main='histogram for miriam')
+par(mfrow=c(3,1))
+x = rnorm(1000, mean=65, sd=5)
+hist(x, 50, col='purple', border='white', main='sd=5')
+
+x = rnorm(1000, mean=65, sd=20)
+hist(x, 50, col='purple', border='white', main='sd=20')
+
+x = rnorm(1000, mean=65, sd=100)
+hist(x, 50, col='purple', border='white', main='sd=100')
 
