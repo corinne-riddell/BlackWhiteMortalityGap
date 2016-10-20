@@ -47,7 +47,7 @@ life.table <- function(data, num.ages.in.group, death.counts, population.counts,
 #relies on the names of the columns kept as-is in the life tables -- user should not change the column names!
 #name.lt1 and name.lt2 are used to create variable names so these shouldn't have spaces in them and they can be 
 #made up (they don't have to replicate the name of the life table object)
-le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2 = 2, name.lt2, age.groups) {
+le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2, name.lt2 = 2, age.groups) {
 
   life.table2["accumulated.lived.after"] <- c(unlist(life.table2[2:dim(life.table2)[1], "T_x"]), 0) #T_(x+n) in Auger's formula on pg 576 (step 1)
   
@@ -66,7 +66,7 @@ le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2 = 2, name.lt2, 
      ((life.table1["l_x"]/life.table2["l_x"]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"]))
      )
   
-  decomp.table["adds_to_gap"] <- ifelse(decomp.table["C_x"] > 0, T, F)
+  decomp.table["adds_to_gap"] <- ifelse(decomp.table$C_x > 0, T, F)
 
   return(decomp.table)
 }
