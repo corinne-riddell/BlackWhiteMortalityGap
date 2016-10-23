@@ -1,7 +1,7 @@
 
 
 # Subset dataset 
-subset_data = function(race='Black', sex='Female', cod='Injuries') {
+subset_data = function(race, sex,  cod) {
 
   selected_vars = c('Age', 'Sex2', 'Race2', 'COD2', 'Year', 'Count', 'Population')
 
@@ -31,13 +31,34 @@ subset_data = function(race='Black', sex='Female', cod='Injuries') {
   return(ds_jags) 
 } 
 
-combine_race_data = function(ds1, ds2) {
-  n = length(ds1) 
-    names(ds1) = paste0(names(ds1),'_b') 
-    names(ds2) = paste0(names(ds2),'_w') 
-   
-    return(c(ds1, ds2))
+
+combine_race_data = function(dsb, dsw) {
+  n = length(dsb) 
+  names(dsb) = paste0(names(dsb),'_b') 
+  names(dsw) = paste0(names(dsw),'_w') 
+  return(c(dsb, dsw))
 }
+
+merge_data = function(sex='Male') {
+  
+  COD_list = c('Injuries', 'Cardiovascular', 'Cancers', 'Communicable', 
+               'Non-communicable', 'All other causes')
+
+  ds_black = ds_white = ds_jags_bw = list()
+  N_COD = length(COD_list) 
+    
+    for(i in 1:N_COD) { 
+      current_cod = COD_list[i] 
+      ds_black = subset_data(race='Black', sex=sex, cod=current_cod) 
+      ds_white = subset_data(race='White', sex=sex, cod=current_cod) 
+      ds_jags_bw[[i]] = combine_race_data(ds_black, ds_white) 
+    }
+  return(ds_jags_bw)
+}
+
+
+# 
+
 
 
 # JAGS model with binned likelihood and smoothing by year  
@@ -107,6 +128,105 @@ model = function() {
   
   return(jags_model)
 } 
+
+# Run the smoothing models 
+run_smoothing_models = function(state='Alabama', sex='Male')  {
+  
+  ds_jags_bw = merge_data(sex=sex) 
+  
+  # Run model for each COD 
+  jags_bw = list() 
+  
+  for(i in 1:N_COD) { 
+    jags_bw[[i]] = bwmort_smooth_time(ds_jags_bw[[i]])  
+  }
+
+  return(list(jags_bw=jags_bw, sex=sex, state=state))
+  
+}
+
+
+
+
+get_allcod = function(ds_jags_bw, r, race) {
+  
+  results_cod = list()
+  N_COD = length(ds_jags_bw) 
+  
+  
+  for(i in 1:N_COD) {
+    
+    if(race == 'Black') {
+    smoothed_deaths = jagsresults(x=jags_bw[[i]], params=c('mu_b'))[, '50%']
+    r = data.frame(year=ds_jags_bw[[i]]$year_b) 
+    r$deaths = ds_jags_bw[[i]]$deaths_b
+    r$smoothed_deaths = smoothed_deaths
+    r$age_bins = ds_jags_bw[[i]]$age.bin_b
+    r$pop = exp(ds_jags_bw[[i]]$lnpop_b)
+    results_cod[[i]] = r[order(r$age_bins, r$year), ]
+    }
+    
+    if(race == 'White') {
+        smoothed_deaths = jagsresults(x=jags_bw[[i]], params=c('mu_w'))[, '50%']
+        r = data.frame(year=ds_jags_bw[[i]]$year_w) 
+        r$deaths = ds_jags_bw[[i]]$deaths_w
+        r$smoothed_deaths = smoothed_deaths
+        r$age_bins = ds_jags_bw[[i]]$age.bin_w
+        r$pop = exp(ds_jags_bw[[i]]$lnpop_w)
+        results_cod[[i]] = r[order(r$age_bins, r$year), ]
+      }
+    }
+  
+  
+  temp = smoothed_allcod_deaths = c()
+  nrows = length(results_cod[[1]]$smoothed_deaths)
+  
+  for(j in 1:nrows) { 
+    for(i in 1:N_COD) { 
+      temp[i] = results_cod[[i]]$smoothed_deaths[j]   
+    }
+    smoothed_allcod_deaths[j] = sum(temp) 
+  }
+  
+  ds_allcod = data.frame(year=results_cod[[1]]$year, 
+                           age_bin=results_cod[[1]]$age_bins,
+                         pop = results_cod[[1]]$pop, 
+                             smoothed_allcod_deaths) 
+  return(ds_allcod)
+}
+
+
+# obtain the life tables for both races  
+
+
+get_life_tables = function(r, year) {  #r = object from run_smoothing_models
+  
+  ds_jags_bw = merge_data(sex=r$sex)
+  jags_bw = r$jags_bw 
+  
+  ds_allcod_black = get_allcod(ds_jags_bw, r, race='Black') 
+  ds_allcod_white = get_allcod(ds_jags_bw, r, race='White') 
+  
+  year_current = year - 1968
+  k = length(unique(ds_allcod_black$age_bin))
+  ds_allcod_black$num_ages = c(1, 4, rep(5, k-2))
+  ds_allcod_black = ds_allcod_black[ds_allcod_black$year==year_current, ]
+  
+  ds_allcod_white$num_ages = c(1, 4, rep(5, k-2))
+  ds_allcod_white = ds_allcod_white[ds_allcod_white$year==year_current, ]
+  
+  
+  lt_black = life.table(data=ds_allcod_black, num.ages.in.group='num_ages', 
+                  death.counts='smoothed_allcod_deaths', population.counts='pop')
+  
+  lt_white = life.table(data=ds_allcod_white, num.ages.in.group='num_ages', 
+                        death.counts='smoothed_allcod_deaths', population.counts='pop')
+  
+  return(list(lt_black=lt_black, lt_white=lt_white)) 
+
+}
+
+
 
 
 
