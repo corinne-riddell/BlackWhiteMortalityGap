@@ -1,13 +1,14 @@
 
 
 # Subset dataset 
-subset_data = function(race, sex,  cod) {
+subset_data = function(race, sex,  cod, state) {
 
   selected_vars = c('Age', 'Sex2', 'Race2', 'COD2', 'Year', 'Count', 'Population')
 
-  ds = dat.clean.alabama[(dat.clean.alabama$Race2==race & 
-                         dat.clean.alabama$Sex2==sex & 
-                          dat.clean.alabama$COD2==cod), selected_vars]
+  ds = dat.clean[(dat.clean$Race2==race & 
+                    dat.clean$Sex2==sex &
+                    dat.clean$State2==state &
+                    dat.clean$COD2==cod), selected_vars]
   
   df = data.frame(deaths=ds$Count, pop = ds$Population, age=(ds$Age+1), year=(ds$Year+1)) 
   df$censored = ifelse(is.na(df$deaths),1,0)
@@ -39,7 +40,7 @@ combine_race_data = function(dsb, dsw) {
   return(c(dsb, dsw))
 }
 
-merge_data = function(sex='Male') {
+merge_data = function(sex, state) {
   
   COD_list = c('Injuries', 'Cardiovascular', 'Cancers', 'Communicable', 
                'Non-communicable', 'All other causes')
@@ -49,8 +50,8 @@ merge_data = function(sex='Male') {
     
     for(i in 1:N_COD) { 
       current_cod = COD_list[i] 
-      ds_black = subset_data(race='Black', sex=sex, cod=current_cod) 
-      ds_white = subset_data(race='White', sex=sex, cod=current_cod) 
+      ds_black = subset_data(race='Black', sex=sex, cod=current_cod, state=state) 
+      ds_white = subset_data(race='White', sex=sex, cod=current_cod, state=state) 
       ds_jags_bw[[i]] = combine_race_data(ds_black, ds_white) 
     }
   return(ds_jags_bw)
@@ -130,12 +131,16 @@ model = function() {
 } 
 
 # Run the smoothing models 
-run_smoothing_models = function(state='Alabama', sex='Male')  {
+run_smoothing_models = function(state, sex)  {
   
-  ds_jags_bw = merge_data(sex=sex) 
+  ds_jags_bw = merge_data(sex=sex, state=state) 
   
   # Run model for each COD 
   jags_bw = list() 
+  
+  COD_list = c('Injuries', 'Cardiovascular', 'Cancers', 'Communicable', 
+               'Non-communicable', 'All other causes')
+  N_COD = length(COD_list) 
   
   for(i in 1:N_COD) { 
     jags_bw[[i]] = bwmort_smooth_time(ds_jags_bw[[i]])  
@@ -199,10 +204,10 @@ get_allcod = function(ds_jags_bw, r, race) {
 # obtain the life tables for both races  
 
 
-get_life_tables = function(r, year) {  #r = object from run_smoothing_models
+get_life_tables = function(jags_bw, sex, year, state) {  #r = object from run_smoothing_models
   
-  ds_jags_bw = merge_data(sex=r$sex)
-  jags_bw = r$jags_bw 
+  ds_jags_bw = merge_data(sex=sex, state=state)
+  
   
   ds_allcod_black = get_allcod(ds_jags_bw, r, race='Black') 
   ds_allcod_white = get_allcod(ds_jags_bw, r, race='White') 
@@ -226,7 +231,13 @@ get_life_tables = function(r, year) {  #r = object from run_smoothing_models
 
 }
 
-
-
+run_smoothing_models_allstates = function() {
+  states = unique(dat.clean$State2) 
+  nstates = length(states) 
+  for(i in 1:nstates) {
+    results_male[[i]] = run_smoothing_models(state=states[i], sex='Male')
+    results_female[[i]] = run_smoothing_models(state=states[i], sex='Female')
+  }
+}
 
 
