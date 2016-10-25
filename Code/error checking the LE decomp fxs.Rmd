@@ -11,7 +11,7 @@ Our functions:
 ```{r source_LE_fxs}
 library(dplyr)
 library(ggplot2)
-source("/Users/corinneriddell/Documents/repos/BlackWhiteGap/Code/life_expectancy_functions.R")
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 ```
 
 **First example**
@@ -51,7 +51,7 @@ head(quebec.men)
 
 We also need data on the proportion of deaths within each age bracket due to each cause of death.
 ```{r data_cod_proportions}
-cod.props <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteGap/working_teaching_examples/auger_cod_proportions.csv")
+cod.props <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/working_teaching_examples/auger_cod_proportions.csv")
 names(cod.props)[3] <- "prop.QC"
 names(cod.props)[4] <- "prop.CAD"
 head(cod.props)
@@ -59,12 +59,12 @@ head(cod.props)
 
 Calculate and display the life tables for the Canada and Quebec data:
 ```{r calculate_life_expectancy}
-life.table.cm <- life.table(data = canada.men, age.groups = "ages", num.ages.in.group = "n_x", 
+life.table.cm <- life.table(data = canada.men, num.ages.in.group = "n_x", 
                             death.counts = "obs.deaths", population.counts = "obs.popn")
 
 round(life.table.cm, 2)
 
-life.table.qm <- life.table(data = quebec.men, age.groups = "ages", num.ages.in.group = "n_x", 
+life.table.qm <- life.table(data = quebec.men, num.ages.in.group = "n_x", 
                             death.counts = "obs.deaths", population.counts = "obs.popn")
 
 round(life.table.qm, 2)
@@ -76,7 +76,7 @@ Decompose the life expectancy gap by age:
 
 ```{r calc_age_decomp}
 age_decomp <- le_age_decomp(life.table1 = life.table.qm, name.lt1 = "Quebec", 
-                            life.table.cm, name.lt2 = "Canada", 
+                            life.table2 = life.table.cm, name.lt2 = "Canada", 
                             age.groups = "ages")
 age_decomp
 sum(age_decomp$C_x) 
@@ -99,9 +99,14 @@ round(cbind(age_decomp$C_x, age_decomp2$C_x),4)
 ```
 
 ```{r calc_cod_decomp}
-canada.cod.decomp <- cause_of_death_decomp(life.table1 = life.table.qm, life.table2 = life.table.cm, decomp.table = age_decomp,
-                      cod.table = cod.props, age.colname.cod.table = "Age", COD.colname.cod.table = "cod", 
-                      prop1.colname.cod.table = "prop.QC", prop2.colname.cod.table = "prop.CAD")
+canada.cod.decomp <- cause_of_death_decomp(life.table1 = life.table.qm, 
+                                           life.table2 = life.table.cm, 
+                                           decomp.table = age_decomp,
+                                           cod.table = cod.props, 
+                                           age.colname.cod.table = "Age", 
+                                           COD.colname.cod.table = "cod", 
+                                           prop1.colname.cod.table = "prop.QC", 
+                                           prop2.colname.cod.table = "prop.CAD")
 ```
 
 Collapse by cause of death to calculate the overall contribution of each cause of death to the gap in life expectnancy:
