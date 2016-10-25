@@ -290,6 +290,40 @@ for(i in 1:dim(paired.ids)[1]) {
 }
 ```
 
+```{r calculate_cod_decomp}
+#still need to convince myself this works
+list.cod.decomp.tables <- vector(mode = "list", length = dim(paired.ids)[1])
+
+for(i in 1:dim(paired.ids)[1]) {
+  white.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexWhite"])
+  black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"])
+  
+  if(length(white.index) != 0 & length(black.index) != 0) {
+    ct.white <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexWhite"]) %>% 
+                ungroup() %>%
+                select(Age2, COD2, cod_prop_death5) %>%
+                rename(prop2 = cod_prop_death5)
+    
+    ct.black <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexBlack"]) %>% 
+                ungroup() %>%
+                select(Age2, COD2, cod_prop_death5) %>%
+                rename(prop1 = cod_prop_death5)
+    ct.both <- merge(ct.white, ct.black, by = c("Age2", "COD2"))
+        
+    list.cod.decomp.tables[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]), 
+                                                 life.table2 = as.data.frame(list.life.tables[[white.index]]), 
+                                                 decomp.table = as.data.frame(list.age.decomp.tables[[i]]),
+                                                 cod.table = ct.both, "Age2", "COD2", "prop1", "prop2")
+  } else {
+    list.cod.decomp.tables[[i]] <- "Couldn't compare life tables"
+  }  
+  print(i)
+}
+
+
+```
+
+
 ###Initial graphs on missing data
 Notes on Figure 1 (below):
 
