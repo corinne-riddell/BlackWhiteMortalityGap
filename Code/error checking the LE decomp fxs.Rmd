@@ -94,7 +94,7 @@ sum(age_decomp2$C_x)
 
 Compare the output of the above two functions -- the contribution of age to the LE gap are slightly different based on the order of operation:
 
-```{r compare decomp_output}
+```{r compare_decomp_output}
 round(cbind(age_decomp$C_x, age_decomp2$C_x),4)
 ```
 
@@ -111,7 +111,9 @@ canada.cod.decomp <- cause_of_death_decomp(life.table1 = life.table.qm,
 
 Collapse by cause of death to calculate the overall contribution of each cause of death to the gap in life expectnancy:
 ```{r }
-cod.contribution <- canada.cod.decomp %>% group_by(Cause.of.death) %>% summarise(cod.contribution = sum(C_xi))
+cod.contribution <- canada.cod.decomp %>% 
+  group_by(Cause.of.death) %>% 
+  summarise(cod.contribution = sum(C_xi))
 
 #order by contribution amount for graphing purposes
 cod.contribution$Cause.of.death <- factor(cod.contribution$Cause.of.death, 
@@ -122,6 +124,13 @@ ggplot(cod.contribution, aes(x = Cause.of.death, y = cod.contribution)) +
   geom_point() + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   geom_abline(intercept = 0, slope = 0)
+```
+
+Collapse by age and confirm these line up with the marginal age decomposition:
+```{r }
+age.contribution <- canada.cod.decomp %>% group_by(Ages) %>% summarise(age.contribution = sum(C_xi)) 
+
+age.contribution
 ```
 
 **A second example**
@@ -136,13 +145,13 @@ cali.complete <- data.frame("ages" = c(0:15), "nx" = rep(1,16),
 
 head(cali.complete)
 
-life.table(data = cali.complete, age.groups = "ages", num.ages.in.group = "nx", 
+life.table(data = cali.complete, num.ages.in.group = "nx", 
            death.counts = "obs.deaths", population.counts = "obs.popn")
 
 cali.complete$avelived <- 0.5
 cali.complete$avelived[cali.complete$ages==0] <- 0.1
 
-life.table(data = cali.complete, age.groups = "ages", num.ages.in.group = "nx", ave.prop.lived = "avelived",
+life.table(data = cali.complete, num.ages.in.group = "nx", ave.prop.lived = "avelived",
            death.counts = "obs.deaths", population.counts = "obs.popn")
 ```
 
@@ -153,17 +162,16 @@ cali.complete$group <- cut(cali.complete$ages, breaks=c(0, 1, 5, 10, 15, 20),
 
 table(cali.complete$group, cali.complete$ages)
 
-library(dplyr)
 cali.abridged <- cali.complete %>% group_by(group) %>% 
                                    summarise(nx = sum(nx), ages = first(group), popn = sum(obs.popn), deaths = sum(obs.deaths),
                                              avelived = first(avelived))
 
 cali.abridged
 
-data.frame(life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+data.frame(life.table(data = cali.abridged, num.ages.in.group = "nx", 
            death.counts = "deaths", population.counts = "popn"))
 
 
-data.frame(life.table(data = cali.abridged, age.groups = "ages", num.ages.in.group = "nx", 
+data.frame(life.table(data = cali.abridged, num.ages.in.group = "nx", 
            death.counts = "deaths", population.counts = "popn", ave.prop.lived = "avelived"))
 ```          
