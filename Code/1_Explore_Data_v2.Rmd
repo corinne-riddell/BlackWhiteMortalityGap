@@ -206,7 +206,7 @@ for(stratum.id in non.zero.stratums) {
 
 ```
 
-Add the life expectancy at birth to the data file
+Add the life expectancy at birth to the data file:
 
 ```{r add_le_to_dataset}
 le <- rep(NA, length(non.zero.stratums))

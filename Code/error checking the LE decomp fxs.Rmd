@@ -171,7 +171,6 @@ cali.abridged
 data.frame(life.table(data = cali.abridged, num.ages.in.group = "nx", 
            death.counts = "deaths", population.counts = "popn"))
 
-
 data.frame(life.table(data = cali.abridged, num.ages.in.group = "nx", 
            death.counts = "deaths", population.counts = "popn", ave.prop.lived = "avelived"))
 ```          
