@@ -82,7 +82,7 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
   prop1 <- cod.table[[prop1.colname.cod.table]]
   R_x1 <- life.table1[["R_x"]]
   
-  C_xi = C_x*((prop2*R_x2 - prop1*R_x1)/(R_x1-R_x2))
+  C_xi = C_x*((prop2*R_x2 - prop1*R_x1)/(R_x2 - R_x1))
   
   COD.decomp.table <- data.frame("Ages" = cod.table[ , age.colname.cod.table], 
                                  cod.table[ , prop1.colname.cod.table],
