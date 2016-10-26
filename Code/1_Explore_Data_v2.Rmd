@@ -335,12 +335,16 @@ black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"]
                 select(Age2, COD2, cod_prop_death5) %>%
                 rename(prop.black = cod_prop_death5)
     ct.both <- merge(ct.white, ct.black, by = c("Age2", "COD2")) 
+    ct.both <- ct.both %>% arrange(COD2) 
     
-  
-test1 <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]), 
-                                                 life.table2 = as.data.frame(list.life.tables[[white.index]]), 
-                                                 decomp.table = as.data.frame(list.age.decomp.tables[[i]]),
-                                                 cod.table = ct.both, "Age2", "COD2", "prop1", "prop2")
+test1 <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]),
+                               life.table2 = as.data.frame(list.life.tables[[white.index]]), 
+                               decomp.table = as.data.frame(list.age.decomp.tables[[i]]),
+                               cod.table = ct.both, 
+                               age.colname.cod.table = "Age2", 
+                               COD.colname.cod.table = "COD2", 
+                               prop1.colname.cod.table = "prop.black", 
+                               prop2.colname.cod.table = "prop.white")
 
 test2 <- cause_of_death_decomp(life.table2 = as.data.frame(list.life.tables[[black.index]]), 
                                                  life.table1 = as.data.frame(list.life.tables[[white.index]]), 
@@ -348,7 +352,11 @@ test2 <- cause_of_death_decomp(life.table2 = as.data.frame(list.life.tables[[bla
                                                  cod.table = ct.both, "Age2", "COD2", "prop1", "prop2")
 
 age_contr1 <- test1 %>% ungroup() %>% group_by(Ages) %>% summarise(age_contribution = sum(C_xi))
-sum(age_contr1$age_contribution)
+age_contr1
+list.age.decomp.tables[[i]]
+#compare -- see that there is something wrong with the age labels in one or the other... 
+#all the same numbers but some of them are in a strange order.
+
 age_contr2 <- test2 %>% ungroup() %>% group_by(Ages) %>% summarise(age_contribution = sum(C_xi))
 sum(age_contr2$age_contribution)
 ```
