@@ -337,7 +337,6 @@ first <- first %>%
   group_by(group) %>%
   mutate(lag = lag(C_xi), one = 1, 
          num = cumsum(one),
-         length = n(),
          start = ifelse(is.na(lag)==T, 0, NA),
          finish = ifelse(is.na(lag)==T, C_xi, NA))
 View(first)
@@ -355,7 +354,13 @@ for (g in unique(first$group)) {
   
   updated <- rbind(updated, subset)
 }
-updated 
+View(updated)
+
+ggplotly(ggplot(updated, aes(y = Ages, x = start)) + 
+           geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+           xlab("Contribution to life expectancy gap") +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0))
 ```
 
 
