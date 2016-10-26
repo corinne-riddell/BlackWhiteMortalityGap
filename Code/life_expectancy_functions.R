@@ -73,10 +73,11 @@ le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2, name.lt2 = 2, 
 
 
 #cause of death table must be organized in a very specific way
+#it needs to be sorted by COD, and then by age (within COD)
 cause_of_death_decomp <- function(life.table1, life.table2, decomp.table, 
                                   cod.table, age.colname.cod.table, COD.colname.cod.table, 
                                   prop1.colname.cod.table, prop2.colname.cod.table) {
-  C_x <- decomp.table[["C_x"]]
+ R_
   prop2 <- cod.table[[prop2.colname.cod.table]]
   R_x2 <- life.table2[["R_x"]]
   prop1 <- cod.table[[prop1.colname.cod.table]]

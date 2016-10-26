@@ -51,7 +51,7 @@ head(quebec.men)
 
 We also need data on the proportion of deaths within each age bracket due to each cause of death.
 ```{r data_cod_proportions}
-cod.props <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/working_teaching_examples/auger_cod_proportions.csv")
+cod.props <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/working_teaching_examples/auger_cod_proportions.csv")
 names(cod.props)[3] <- "prop.QC"
 names(cod.props)[4] <- "prop.CAD"
 head(cod.props)
