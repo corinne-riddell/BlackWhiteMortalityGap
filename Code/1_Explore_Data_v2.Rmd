@@ -302,7 +302,7 @@ for(i in 1:dim(paired.ids)[1]) {
   if(length(white.index) != 0 & length(black.index) != 0) {
     ct.white <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexWhite"]) %>% 
                 ungroup() %>%
-                select(Age2, COD2, cod_prop_death5) %>%
+                select(Age2, Age3, COD2, cod_prop_death5) %>%
                 rename(prop2 = cod_prop_death5)
     
     ct.black <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexBlack"]) %>% 
@@ -335,7 +335,8 @@ black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"]
                 select(Age2, COD2, cod_prop_death5) %>%
                 rename(prop.black = cod_prop_death5)
     ct.both <- merge(ct.white, ct.black, by = c("Age2", "COD2")) 
-    ct.both <- ct.both %>% arrange(COD2) 
+    ct.both <- ct.both %>% arrange(COD2, Age2)
+    View(ct.both)
     
 test1 <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]),
                                life.table2 = as.data.frame(list.life.tables[[white.index]]), 
