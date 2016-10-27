@@ -98,3 +98,35 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
   return(COD.decomp.table)
   }
 
+#this function assumes the C_xi variable is names C_xi (not changed after running previous function)
+#you must supply the names of the columns that correspond to the age group and cause of death variable.
+make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) {
+  
+  cod.decomp.table$sign <- ifelse(cod.decomp.table$C_xi < 0, "negative", "positive")
+  cod.decomp.table$group <- interaction(cod.decomp.table$Ages, cod.decomp.table$sign, sep = ".")
+  
+  cod.decomp.table <- cod.decomp.table[order(cod.decomp.table[age.groups], 
+                                             cod.decomp.table["sign"], 
+                                             cod.decomp.table[cause.of.death]), ]
+  
+  cod.decomp.table$start <- 0
+  cod.decomp.table$finish <- cod.decomp.table$C_xi
+  
+  updated <- NULL
+  for (g in unique(cod.decomp.table$group)) {
+    subset <- cod.decomp.table[cod.decomp.table$group == g, ]
+    
+    length.group <- dim(subset)[1]
+    
+    if(length.group > 1){
+      for (i in 2:dim(subset)[1]) {
+        subset$start[i] <- subset$finish[i - 1]
+        subset$finish[i] <- subset$start[i] + subset$C_xi[i]
+      }
+    }
+  
+    updated <- rbind(updated, subset)
+
+    }
+  return(updated)
+}

@@ -328,54 +328,27 @@ for(i in 1:dim(paired.ids)[1]) {
 }
 ```
 
-```{r}
-first <- list.cod.decomp.tables[[1]]
-first$sign <- ifelse(first$C_xi < 0, "negative", "positive")
-first$group <- interaction(first$Ages, first$sign, sep = ".")
-
-first <- first %>% 
-  arrange(Ages, sign, Cause.of.death) %>%
-  group_by(group) %>%
-  mutate(lag = lag(C_xi), one = 1, 
-         num = cumsum(one),
-         start = ifelse(is.na(lag)==T, 0, NA),
-         finish = ifelse(is.na(lag)==T, C_xi, NA))
-View(first)
-
-updated <- NULL
-for (g in unique(first$group)) {
-  subset <- first[first$group == g, ]
-  
-  if(dim(subset)[1] > 1){
-      for (i in 2:dim(subset)[1]) {
-        subset$start[i] <- subset$finish[i - 1]
-        subset$finish[i] <- subset$start[i] + subset$C_xi[i]
-      }
-  }
-  
-  updated <- rbind(updated, subset)
-}
-View(updated)
+```{r  update_decomp_for_plotting}
+#update the decomposition table for plotting purposes
+for(i in 1:dim(paired.ids)[1]) {
+    if(list.cod.decomp.tables[[i]][1] != "Couldn't compare life tables") { 
+        list.cod.decomp.tables[[i]] <- 
+                              make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables[[i]], 
+                              age.groups = "Ages", 
+                              cause.of.death = "Cause.of.death")  
+    } 
+  print(i)
+}  
+```
 
 
-ggplotly(ggplot(updated, aes(y = Ages, x = start)) + 
+```{r pretty_cod}
+ggplotly(ggplot(list.cod.decomp.tables[[1]], aes(y = Ages, x = start)) + 
            geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
            xlab("Contribution to life expectancy gap") +
            ylab("Age group\n") + theme_minimal() +
            geom_vline(xintercept = 0))
-
-#add total column for graphing purposes
-total <- updated %>% ungroup() %>%
-  group_by(Ages) %>%
-  summarise(total = sum(C_xi))
-
-total2 <- dplyr::bind_rows(first, total)
-levels(total2$Cause.of.death) <- c(levels(total2$Cause.of.death), "All causes combined")
-total2$Cause.of.death[is.na(total2$total)==F] <- "All causes combined"
-
-#need to add a outlined segment for the ttoal group...
 ```
-
 
 ###Initial graphs on missing data
 Notes on Figure 1 (below):
@@ -562,7 +535,7 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 ```
 
 ```{r}
-save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables,
+save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
