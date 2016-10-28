@@ -24,7 +24,7 @@ lt_males_79 = get_life_tables(r_m, year=1979)
 
 # Run models for all states and both genders 
 
-results_male = results_female = list()
+
 
 r_bothsex_allstates = run_smoothing_models_allstates()
 

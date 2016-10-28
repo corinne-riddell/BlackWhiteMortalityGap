@@ -27,51 +27,38 @@ head(ds)
 model = function() {  
   for(i in 1:N) {
     y[i] ~ dpois(mu[i])
-    log(mu[i]) <- beta0 + beta1*x[i]
+    log(mu[i]) <- beta0 + beta1*x[i] 
   }
-  combo <- mu[1]/mu[2]
+  combo <- sum(mu[1:5]) / sum(mu[6:7])
   beta0 ~ dnorm(0, 0.001)
   beta1 ~ dnorm(0, 0.001)
 }
 
-params = c('mu', 'combo')
+params = c('mu', 'combo', 'beta0', 'beta1')
 nchains = 2
 
-jags_model = jags(data=ds, param=params, n.thin=3, n.chains=nchains, n.iter=20000, n.burnin=5000, model.file=model) 
+jags_model = jags(data=ds, param=params, n.thin=1, n.chains=nchains, n.iter=10000, n.burnin=3000, model.file=model) 
+
+
+
+
+#manual from posterior samples 
 
 p_mcmc = as.mcmc(jags_model)  
 p = data.frame(p_mcmc[[1]])   
 
-p_y1 = p$mu.1.  
-p_y2 = p$mu.2.  
+combo = (p$mu.1. + p$mu.2. + p$mu.3. + p$mu.4. +p$mu.5. ) / (p$mu.6. + p$mu.7.)
 
-Nsamps = 100
-Niters = 10000
-theta = thetab = c() 
+#combo = log(pmu1*pmu2)*pmu3 + pmu4
 
-for(i in 1:Niters) {
-  s1 = sample(p_y1, size=Nsamps, replace=T) 
-  s2 = sample(p_y2, size=Nsamps, replace=T) 
+
+print(c(jagsresults(x=jags_model, params=c('combo'))[, '2.5%'],
+  jagsresults(x=jags_model, params=c('combo'))[, '97.5%']))
   
-  #s1b = rpois(Nsamps, s1) 
-  #s2b = rpois(Nsamps, s2) 
+print(c(quantile(combo, 0.025),
+        quantile(combo, 0.975)))
+
+
+
   
-  theta[i] = (mean(s1) / mean(s2)) 
-  thetab[i] = (mean(s1b) / mean(s2b)) 
-}
-
-
-
-hist(thetab, 50, col='lightblue') 
-
-quantile(theta, 0.025)
-jagsresults(x=jags_model, params=c('combo'))[, '2.5%']
-
-quantile(theta, 0.975)
-jagsresults(x=jags_model, params=c('combo'))[, '97.5%']
-
-
-
-
-
 

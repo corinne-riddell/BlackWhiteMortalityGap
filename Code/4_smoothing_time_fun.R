@@ -1,7 +1,7 @@
 
 
 # Subset dataset 
-subset_data = function(race, sex,  cod, state) {
+subset_data = function(race, sex, cod, state) {
 
   selected_vars = c('Age', 'Sex2', 'Race2', 'COD2', 'Year', 'Count', 'Population')
 
@@ -231,13 +231,20 @@ get_life_tables = function(jags_bw, sex, year, state) {  #r = object from run_sm
 
 }
 
+
 run_smoothing_models_allstates = function() {
   states = unique(dat.clean$State2) 
   nstates = length(states) 
+  results_male = results_female = list()
   for(i in 1:nstates) {
-    results_male[[i]] = run_smoothing_models(state=states[i], sex='Male')
-    results_female[[i]] = run_smoothing_models(state=states[i], sex='Female')
+    results_male = run_smoothing_models(state=states[i], sex='Male')
+    results_female = run_smoothing_models(state=states[i], sex='Female')
   }
+  name1 = paste0('results_male_', states[i], '.RData') 
+  name2 = paste0('results_female_', states[i], '.RData') 
+  save(results_male, file=name1) 
+  save(results_female, file=name2) 
+  print(states[i])
 }
 
 
