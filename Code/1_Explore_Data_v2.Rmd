@@ -546,3 +546,19 @@ save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables, list.cod.d
 ```
 
 
+```{r investigate_problem}
+
+list.cod.decomp.tables[[which(paired.ids$StateYearRaceSexBlack == "Washington DC.2013.Black.Male")]]
+#index == 2115 fyi
+
+View(dat.clean[dat.clean$State2 == "Washington DC" & dat.clean$Year3 == 2013 & dat.clean$Sex2 == "Male",])
+#see the problem is that white males at 1-4 years have no deaths and prop deaths due to each cod == NaN.
+
+list.age.decomp.tables[[which(paired.ids$StateYearRaceSexBlack == "Washington DC.2013.Black.Male")]]
+
+View(list.life.tables[[which(non.zero.stratums == "Washington DC.2013.White.Male")]])
+
+
+```
+
+
