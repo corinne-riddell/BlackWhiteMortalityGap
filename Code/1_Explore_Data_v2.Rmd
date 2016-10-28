@@ -293,6 +293,12 @@ for(i in 1:dim(paired.ids)[1]) {
 ```
 
 ```{r calculate_cod_decomp}
+#stopped here - need to figure this out
+#if the count of deaths == 0 for all causes of death within an age band then the COD proportion is NA
+#this messes up the cod decomposition. What to do?
+#example - no black people dying between the ages of 5-9 of anything. but have whites dying in that age group so their
+#COD proportions are okay.
+
 #takes about 20 mins
 list.cod.decomp.tables <- vector(mode = "list", length = dim(paired.ids)[1])
 
