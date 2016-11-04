@@ -60,41 +60,41 @@ dat <- dat %>%
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
 ```
 
-Some of the rows have Population==0, and we explore that and record below. These mostly correspond to rows with Unknown age groups that we cannot use in our analysis so I remove them. This leaves 654 rows with Populations of 0.
+```{r unknown_age_group}
+#there is an unknown age group for each combo of state-year-race-sex-age:
+table(dat$Age2) 
+
+#Count of death is always equal to 0 for unknown age groups
+table(dat$Age, dat$Count==0)
+
+#remove these data from the data we analyze:
+dat.clean <- dat[dat$Age2 != "Unknown", ]
+```
+
+##Population counts of 0
+
+It is important to explore how many cells have population counts of zero because these break the Bayesian crank, and also currently breaks the life expectancy function.
 
 ```{r explore_dataset}
-table(dat$Population==0, useNA = "always")
-#55734 cells have Populations of 0.
-
-table(dat$Count[dat$Population==0]==0, useNA = "always")
-#Of these, all have Counts of 0, except for 26 with counts of NA
-
-table(dat$Age2 == "Unknown", dat$Population == 0, useNA = "always")
-#The vast majority of cells with populations of 0 have unknown age groups
-
-#remove this data from the data we analyze:
-dat.clean <- dat[dat$Age2 != "Unknown", ]
-
 table(dat.clean$Population == 0, useNA = "always")
-#654 cells have Populations of 0 now.
+#654 cells have Populations of 0.
 
 table(dat.clean$Count[dat.clean$Population == 0] == 0, useNA = "always")
-summary(dat.clean$Count[dat.clean$Population == 0])
-#628 are equal to 0 and 26 are equal to NA
+#Of these, all have Counts of 0, except for 26 with counts of NA
 
 #replace the NA Counts with 0 for the 26 cells with Populations of 0.
 dat.clean$Count[is.na(dat.clean$Count) == T & dat.clean$Population == 0] <- 0
 summary(dat.clean$Count[dat.clean$Population == 0])
 
-#now the Counts should only equal NA when the true count is between 1 and 9.
-
 summary(dat.clean$Crude_Rate[dat.clean$Population == 0])
-table(dat.clean$Crude_Rate[dat.clean$Population==0], useNA = "always")
 #whenever the population is 0, the Crude_Rate is equal to NA.
 #need to think: should these be equal to 0, or NA? How will it affect the calculations?
 
 #States with at least one strata of 0
-na.pops <- dat.clean %>% select(State2, Population) %>% filter(Population == 0)
+na.pops <- dat.clean %>% 
+  select(State2, Population) %>% 
+  filter(Population == 0)
+
 unique(na.pops$State2)
 
 pops.le.20 <- dat.clean %>% select(State2, Population) %>% filter(Population <= 20)
@@ -102,46 +102,29 @@ unique(pops.le.20$State2)
 ```
 
 **Missingness of Count (of deaths)**
-If there are between 1 and 9 deaths in the strata, this information is surpressed and coded as missing. Later in this document we investigate trends in supression/missingness to understand how it differs according to state, age, race, and sex.
+If there are between 1 and 9 deaths in the strata, this information is 'coarsened' and coded as NA. Later in this document we investigate trends in supression/missingness to understand how it differs according to state, age, race, and sex.
 
 Since our goal is to compute the difference in life expectancy between Blacks and Whites by strata, we impute death counts at their logical extremes to explore this affects the results. 
 
-- Set all missing counts to 1, 5, and 9.
-- Set all missing counts to 1 for Whites and 9 for Blacks and vice versa.
+- Set all missing counts to min({1, 5, and 9}, population_size).
 
 ```{r fill_in_missing_counts}
-##NEED TO UPDATE THIS SO THAT CAN'T IMPUTAT COUNT > POP SIZE.
-##FOLLOW UPDATE WITH RE-RUNNING THE MODELS.
-dat.clean <- dat.clean %>% mutate(Count_md1 = ifelse(is.na(Count)==T, 1, Count),
-                                  Count_md5 = ifelse(is.na(Count)==T, 5, Count),
-                                  Count_md9 = ifelse(is.na(Count)==T, 9, Count)
+dat.clean <- dat.clean %>% mutate(Count_md1 = ifelse(is.na(Count)==T, pmin(1, Population), Count),
+                                  Count_md5 = ifelse(is.na(Count)==T, pmin(5, Population), Count),
+                                  Count_md9 = ifelse(is.na(Count)==T, pmin(9, Population), Count)
                                   )
-
-dat.clean$Count_b9w1 <- dat.clean$Count
-dat.clean$Count_b9w1[is.na(dat.clean$Count) & dat.clean$Race2 == "White"] <- 1
-dat.clean$Count_b9w1[is.na(dat.clean$Count) & dat.clean$Race2 == "Black"] <- 9
-
-dat.clean$Count_b1w9 <- dat.clean$Count
-dat.clean$Count_b1w9[is.na(dat.clean$Count) & dat.clean$Race2 == "White"] <- 9
-dat.clean$Count_b1w9[is.na(dat.clean$Count) & dat.clean$Race2 == "Black"] <- 1
 
 #check recoding
 dat.clean$Count_grouped <- cut(dat.clean$Count, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 dat.clean$Count1_grouped <- cut(dat.clean$Count_md1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 dat.clean$Count5_grouped <- cut(dat.clean$Count_md5, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 dat.clean$Count9_grouped <- cut(dat.clean$Count_md9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
-dat.clean$Count_b9w1_grouped <- cut(dat.clean$Count_b9w1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
-dat.clean$Count_b1w9_grouped <- cut(dat.clean$Count_b1w9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 
 table(dat.clean$Count_grouped, dat.clean$Count1_grouped, useNA = "always")
 table(dat.clean$Count_grouped, dat.clean$Count5_grouped, useNA = "always")
 table(dat.clean$Count_grouped, dat.clean$Count9_grouped, useNA = "always")
 
-table(dat.clean$Count_grouped, dat.clean$Count_b9w1_grouped, dat.clean$Race2, useNA = "always")
-table(dat.clean$Count_grouped, dat.clean$Count_b1w9_grouped, dat.clean$Race2, useNA = "always")
-
-dat.clean <- dat.clean[ , !names(dat.clean) %in% c("Count_grouped", "Count1_grouped", "Count5_grouped", "Count9_grouped", 
-                                                   "Count_b9w1_grouped", "Count_b1w9_grouped")]
+dat.clean <- dat.clean[ , !names(dat.clean) %in% c("Count_grouped", "Count1_grouped", "Count5_grouped", "Count9_grouped")]
 ```
 
 ```{r addvar_cod_proportions}
