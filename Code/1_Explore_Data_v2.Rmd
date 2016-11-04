@@ -431,14 +431,14 @@ ggplot(bystate, aes(x = Age2, y = prop.zero)) +
 ```{r missing_data, fig.width = 10, fig.height = 5, echo=F}
 #table(is.na(dat$Count))
 
-table1.whitemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White.Male"]), 
-                                           dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
-table1.blackmale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black.Male"]), 
-                                           dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
-table1.whitefemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White.Female"]), 
-                                           dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
-table1.blackfemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black.Female"]), 
-                                           dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+table1.whitemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White Male"]), 
+                                           dat$Age2[dat$RaceSex == "White Male"]),2)*100,2)
+table1.blackmale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black Male"]), 
+                                           dat$Age2[dat$RaceSex == "Black Male"]),2)*100,2)
+table1.whitefemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White Female"]), 
+                                           dat$Age2[dat$RaceSex == "White Female"]),2)*100,2)
+table1.blackfemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black Female"]), 
+                                           dat$Age2[dat$RaceSex == "Black Female"]),2)*100,2)
 
 miss1 <- data.frame("white.male" = table1.whitemale[2, ], 
                     "black.male"= table1.blackmale[2, ],
@@ -459,14 +459,14 @@ ggplot(miss1, aes(x = age, y = missingness)) + geom_point() + geom_point(aes(col
 **Let's look at the proportion with 0's**
 
 ```{r zero_data, fig.width = 10, fig.height = 5, echo=F}
-table2.whitemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White.Male"]==0, 
-                                       dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
-table2.blackmale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black.Male"]==0, 
-                                       dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
-table2.whitefemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White.Female"]==0, 
-                                       dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
-table2.blackfemale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black.Female"]==0, 
-                                       dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+table2.whitemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White Male"]==0, 
+                                       dat$Age2[dat$RaceSex == "White Male"]),2)*100,2)
+table2.blackmale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black Male"]==0, 
+                                       dat$Age2[dat$RaceSex == "Black Male"]),2)*100,2)
+table2.whitefemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White Female"]==0, 
+                                       dat$Age2[dat$RaceSex == "White Female"]),2)*100,2)
+table2.blackfemale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black Female"]==0, 
+                                       dat$Age2[dat$RaceSex == "Black Female"]),2)*100,2)
 
 miss2 <- data.frame("whitemale" = table2.whitemale[2, ], 
                     "blackmale"= table2.blackmale[2, ],
@@ -491,14 +491,14 @@ ggplot(miss2, aes(x = age, y = zeroes)) + geom_point() + geom_point(aes(col=race
 dat$miss_or_zero <- F
 dat$miss_or_zero[dat$Count == 0 | is.na(dat$Count) == T] <- T
 
-table3.whitemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White.Male"]==T, 
-                                      dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
-table3.blackmale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black.Male"]==T, 
-                                       dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
-table3.whitefemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White.Female"]==T, 
-                                       dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
-table3.blackfemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black.Female"]==T, 
-                                       dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+table3.whitemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White Male"]==T, 
+                                      dat$Age2[dat$RaceSex == "White Male"]),2)*100,2)
+table3.blackmale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black Male"]==T, 
+                                       dat$Age2[dat$RaceSex == "Black Male"]),2)*100,2)
+table3.whitefemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White Female"]==T, 
+                                       dat$Age2[dat$RaceSex == "White Female"]),2)*100,2)
+table3.blackfemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black Female"]==T, 
+                                       dat$Age2[dat$RaceSex == "Black Female"]),2)*100,2)
 
 miss3 <- data.frame("whitemale" = table3.whitemale[2, ], 
                     "blackmale"= table3.blackmale[2, ],
