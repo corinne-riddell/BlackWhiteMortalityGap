@@ -242,10 +242,12 @@ Decompose the gap by age. That is, for each year-state-sex combination, compare 
 #first, create list of stratum.ids for each race-sex combination
 for (rs in unique(levels(dat.clean$RaceSex))) {
   assign(paste0(gsub(" ", "", rs), ".stratum.ids"), 
-         dat.clean %>% filter(RaceSex == rs) %>%
-         select(StateYearRaceSex, StateYearSex, Sex2, State2, Year3) %>%
-         group_by(StateYearRaceSex, StateYearSex) %>%
-         filter(row_number() == 1)
+         dat.clean %>% 
+           ungroup() %>%
+           filter(RaceSex == rs) %>%
+           select(StateYearRaceSex, StateYearSex, Sex2, State2, Year3) %>%
+           group_by(StateYearRaceSex, StateYearSex) %>%
+           filter(row_number() == 1)
          )
   
 }
