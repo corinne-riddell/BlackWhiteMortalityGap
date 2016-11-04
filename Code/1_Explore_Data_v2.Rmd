@@ -136,9 +136,14 @@ dat.clean <- dat.clean %>% group_by(State2, RaceSex, Year3, Age3) %>%
                                   cod_prop_death1 = Count_md1/total_deaths1, 
                                   cod_prop_death5 = Count_md5/total_deaths5,
                                   cod_prop_death9 = Count_md9/total_deaths9)
+
+length(dat.clean$total_deaths5[dat.clean$total_deaths5 == 0])
+summary(dat.clean$cod_prop_death5[dat.clean$total_deaths5 == 0])
+#76998 strata with 0 deaths from any cause (12833 when divided by 6 -- the number of causes)
+#7% of strata have no deaths from any cause.
 ```
 
-To calculate life expectancy, we have to aggregate the data across the causes of death.
+To calculate life expectancy, we have to aggregate the data across causes of death.
 
 ```{r aggregate_over_COD}
 dat2 <- dat.clean %>% group_by(State2, Year2, RaceSex, Age2) %>%
