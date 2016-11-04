@@ -241,7 +241,6 @@ White <- dat2 %>% filter(Race2 == "White" & Age3 == 0) %>%
 BlackWhite <- merge(Black, White, by = c("State2", "Year3", "Sex2"))
 
 BlackWhite <- BlackWhite %>% mutate(WBgap = le.birth.white - le.birth.black)
-
 ```
 
 Decompose the gap by age. That is, for each year-state-sex combination, compare the life table for blacks to whites and decompose the gap in life expectancy at birth by age.
