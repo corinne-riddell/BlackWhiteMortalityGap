@@ -110,6 +110,8 @@ Since our goal is to compute the difference in life expectancy between Blacks an
 - Set all missing counts to 1 for Whites and 9 for Blacks and vice versa.
 
 ```{r fill_in_missing_counts}
+##NEED TO UPDATE THIS SO THAT CAN'T IMPUTAT COUNT > POP SIZE.
+##FOLLOW UPDATE WITH RE-RUNNING THE MODELS.
 dat.clean <- dat.clean %>% mutate(Count_md1 = ifelse(is.na(Count)==T, 1, Count),
                                   Count_md5 = ifelse(is.na(Count)==T, 5, Count),
                                   Count_md9 = ifelse(is.na(Count)==T, 9, Count)
@@ -184,6 +186,8 @@ dat3 <- dat2 %>% ungroup() %>%
   summarise(Pop_across_age = sum(Population))
 
 dat2 <- merge(dat2, dat3, by = "StateYearRaceSex")
+
+dat2 <- dat2 %>% arrange(State2, Year3, Race2, Sex2, Age3)
 ```
 
 
