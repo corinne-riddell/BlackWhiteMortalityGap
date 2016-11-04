@@ -1,5 +1,6 @@
 library(dplyr)
 library(ggplot2)
+library(ggthemes)
 
 #population heat maps
 #goal: to explore population counts < 5000 to try and understand when the LE and SE calculations are meaningful.
@@ -31,6 +32,63 @@ plot <- ggplot(data = subset(pop_data, Race2 == "Black"), aes(x = Year3, y = Sta
 
 plot
 
-ggsave(filename = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/output/black_pop_heatmap", 
-       plot = last_plot(), device = NULL,
-       length = 10, width = 8, units = "in", dpi = 100)
+heatmap.cod.prop <- dat.clean %>% 
+  filter(COD2 == "Cancers") %>% 
+  select(State2, Age3, Year3, Sex2, Race2, cod_prop_death5, Population)
+
+pdf(file = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/output/COD_na_heatmap.pdf")
+ggplot(data = subset(heatmap.cod.prop, Race2 == "Black" & Age3 ==85), 
+       aes(x = Year3, y = State2, fill = cod_prop_death5)) +
+  geom_tile() +
+  facet_wrap(~Sex2) + scale_fill_continuous(na.value = "red", guide = guide_legend(title = "COD %")) +
+  xlab("Year") + ylab("State") +
+  ggtitle("Proportion of deaths due to cancer in 85+ year old blacks over time") +
+  ggthemes::theme_tufte(base_family="Helvetica") +
+  theme(axis.ticks=element_blank())   
+
+ggplot(data = subset(heatmap.cod.prop, Race2 == "Black" & Age3 ==40), 
+       aes(x = Year3, y = State2, fill = cod_prop_death5)) +
+  geom_tile() +
+  facet_wrap(~Sex2) + scale_fill_continuous(na.value = "red", guide = guide_legend(title = "COD %")) +
+  xlab("Year") + ylab("State") +
+  ggtitle("Proportion of deaths due to cancer in 40-44 year old blacks over time") +
+  ggthemes::theme_tufte(base_family="Helvetica") +
+  theme(axis.ticks=element_blank())   
+
+ggplot(data = subset(heatmap.cod.prop, Race2 == "Black" & Age3 ==5), 
+       aes(x = Year3, y = State2, fill = cod_prop_death5)) +
+  geom_tile() +
+  facet_wrap(~Sex2) + scale_fill_continuous(na.value = "red", guide = guide_legend(title = "COD %")) +
+  xlab("Year") + ylab("State") +
+  ggtitle("Proportion of deaths due to cancer in 5-9 year old blacks over time") +
+  ggthemes::theme_tufte(base_family="Helvetica") +
+  theme(axis.ticks=element_blank())
+
+ggplot(data = subset(heatmap.cod.prop, Race2 == "White" & Age3 ==85), 
+       aes(x = Year3, y = State2, fill = cod_prop_death5)) +
+  geom_tile() +
+  facet_wrap(~Sex2) + scale_fill_continuous(na.value = "red", guide = guide_legend(title = "COD %")) +
+  xlab("Year") + ylab("State") +
+  ggtitle("Proportion of deaths due to cancer in 85+ year old whites over time") +
+  ggthemes::theme_tufte(base_family="Helvetica") +
+  theme(axis.ticks=element_blank())   
+
+ggplot(data = subset(heatmap.cod.prop, Race2 == "White" & Age3 ==40), 
+       aes(x = Year3, y = State2, fill = cod_prop_death5)) +
+  geom_tile() +
+  facet_wrap(~Sex2) + scale_fill_continuous(na.value = "red", guide = guide_legend(title = "COD %")) +
+  xlab("Year") + ylab("State") +
+  ggtitle("Proportion of deaths due to cancer in 40-44 year old whites over time") +
+  ggthemes::theme_tufte(base_family="Helvetica") +
+  theme(axis.ticks=element_blank())  
+
+ggplot(data = subset(heatmap.cod.prop, Race2 == "White" & Age3 ==5), 
+       aes(x = Year3, y = State2, fill = cod_prop_death5)) +
+  geom_tile() +
+  facet_wrap(~Sex2) + scale_fill_continuous(na.value = "red", guide = guide_legend(title = "COD %")) +
+  xlab("Year") + ylab("State") +
+  ggtitle("Proportion of deaths due to cancer in 5-9 year old whites over time") +
+  ggthemes::theme_tufte(base_family="Helvetica") +
+  theme(axis.ticks=element_blank())
+
+dev.off()
