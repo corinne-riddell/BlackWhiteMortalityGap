@@ -17,6 +17,7 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
                   
                      selectInput(inputId = "year1", label = NA, choices = unique(dat.clean$Year3), width = 100),
                      selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
+                     
                      strong("Legend\n"),
                      img(src="legend.png"),
                      strong("Population size over time"),
@@ -26,6 +27,7 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
                      
                      #add the new output object for our LE graphs -- see my notes.
                      plotlyOutput("life_expectancy"),
+                     radioButtons(inputId = "contribution_type", label = "Display contribution in", inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
                      plotlyOutput("male_age_comp1"),
                      plotlyOutput("male_age_comp2"),
                      plotOutput("female_age_comp1"),
