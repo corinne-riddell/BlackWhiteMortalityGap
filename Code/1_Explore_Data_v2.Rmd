@@ -190,7 +190,7 @@ system.time(
 for(stratum.id in non.zero.stratums) {
   
   list.life.tables[[list.index]] <- life.table(data = subset(dat2, StateYearRaceSex == stratum.id), 
-                                               age.groups = "Age2", num.ages.in.group = "nx", 
+                                               num.ages.in.group = "nx", 
                                                death.counts = "total_deaths5", 
                                                population.counts = "Population")
   list.index <- list.index + 1
