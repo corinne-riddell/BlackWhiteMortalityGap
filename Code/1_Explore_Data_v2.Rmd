@@ -167,8 +167,9 @@ dat2 <- dat.clean %>% group_by(State2, Year2, RaceSex, Age2) %>%
 non.zero.stratums <- setdiff(levels(dat2$StateYearRaceSex), unique(dat2$StateYearRaceSex[dat2$Population == 0]))
 ```
 
-Add the total population (across age brackets) to the dat2 dataset
-```{r}
+Add the total population (across age brackets) to the dat2 dataset.
+
+```{r create_var_pop_across_age}
 dat3 <- dat2 %>% ungroup() %>% 
   group_by(StateYearRaceSex) %>%
   summarise(Pop_across_age = sum(Population))
@@ -182,8 +183,6 @@ dat2 <- dat2 %>% arrange(State2, Year3, Race2, Sex2, Age3)
 In those strata that do not have any age-specific population counts of 0, create a life table and store it in a list.
 
 ```{r calculate_life_expectancy}
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
-
 list.life.tables <- vector(mode = "list", length = length(non.zero.stratums))
 list.index <- 1
 
@@ -321,7 +320,7 @@ for(i in 1:dim(paired.ids)[1]) {
   } else {
     list.cod.decomp.tables[[i]] <- "Couldn't compare life tables"
   }  
-  print(i)
+  #print(i)
 }
 ```
 
@@ -334,7 +333,7 @@ for(i in 1:dim(paired.ids)[1]) {
                               age.groups = "Ages", 
                               cause.of.death = "Cause.of.death")  
     } 
-  print(i)
+  #print(i)
 }  
 ```
 
@@ -527,29 +526,14 @@ ggplot(subset(dat, State2=="Louisiana"), aes(x = Population, y = Count)) +
 
 ```
 
-```{r save_workspace3}
+```{r save_workspace}
 save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
 ```
 
-```{r}
+```{r save_specified_files}
 save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
-
-```{r investigate_problem}
-
-list.cod.decomp.tables[[which(paired.ids$StateYearRaceSexBlack == "Washington DC.2013.Black.Male")]]
-#index == 2115 fyi
-
-View(dat.clean[dat.clean$State2 == "Washington DC" & dat.clean$Year3 == 2013 & dat.clean$Sex2 == "Male",])
-#see the problem is that white males at 1-4 years have no deaths and prop deaths due to each cod == NaN.
-
-list.age.decomp.tables[[which(paired.ids$StateYearRaceSexBlack == "Washington DC.2013.Black.Male")]]
-
-View(list.life.tables[[which(non.zero.stratums == "Washington DC.2013.White.Male")]])
-
-
-```
 
 
