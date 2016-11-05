@@ -175,7 +175,7 @@ dat3 <- dat2 %>% ungroup() %>%
   summarise(Pop_across_age = sum(Population))
 
 dat2 <- merge(dat2, dat3, by = "StateYearRaceSex")
-
+rm(dat3)
 dat2 <- dat2 %>% arrange(State2, Year3, Race2, Sex2, Age3)
 ```
 
