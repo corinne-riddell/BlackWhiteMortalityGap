@@ -1,0 +1,187 @@
+---
+title: "Append_smoothed_results"
+author: "Corinne Riddell"
+date: "November 5, 2016"
+output: html_document
+---
+
+```{r load_libraries}
+library(plyr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(plotly)
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+```{r load_datasets}
+load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
+ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/smoothed_results.csv")
+```
+
+```{r clean_smoothed_data}
+ktm_clean <- ktm_smoothed %>% 
+  rename(Race2 = race, Sex2 = sex, State2 = state, COD2 = cod) %>%
+  mutate(Age2 = factor(age_bin, levels = c(1:19), 
+                       labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                  "15-19 years", "20-24 years", "25-29 years", "30-34 years",
+                                  "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
+                                  "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
+                                  "75-79 years", "80-84 years","85+ years"), ordered = T),
+         Year2 = factor(year, levels = c(1:45), labels = as.character(1969:2013))
+         )
+```
+
+```{r merge_results}
+dim(dat.clean)
+dat.clean <- merge(dat.clean, ktm_clean, 
+                   by = c("State2", "Year2", "Race2", "Sex2", "Age2", "COD2"), 
+                   all.x = T)
+dim(dat.clean)
+
+dat.clean <- dat.clean %>% mutate(Appended_smoothed = ifelse(is.na(X), F, T))
+
+table(dat.clean$Appended_smoothed)
+```
+
+Ensure that the merge was correct by comparing the duplicate variables (i.e., those variables in both datasets that had different names)
+
+```{r check_merge}
+dat.clean[1:10, c("smoothed_deaths", "deaths", "Count", "population", "Population", "State2", "Age2", "Sex2", "Race2", "COD2")]
+
+diffs <- dat.clean %>% transmute(diff.pop = Population - population, diff.count = Count - deaths)
+summary(diffs$diff.pop)
+summary(diffs$diff.count)
+rm(diffs)
+```
+
+Compare the smoothed_results to the original counts to see if they seem reasonable:
+
+```{r compared_original_vs_smoothed}
+ggplot(dat.clean, aes(x = Count, y = smoothed_deaths)) + geom_point(alpha = 0.1)
+```
+
+Can't really tell anything from this -- make another graphic:
+
+```{r compared_original_vs_smoothed2}
+dat.clean <- dat.clean %>% mutate(diff.orig.smooth = Count - smoothed_deaths)
+summary(dat.clean$diff.orig.smooth)
+ggplot(dat.clean, aes(x = diff.orig.smooth)) + geom_density() + geom_rug(alpha = 0.1)
+```
+
+```{r addvar_cod_proportions}
+dat.clean <- dat.clean %>% group_by(State2, RaceSex, Year3, Age3) %>%
+                           arrange(State2, RaceSex, Year3, Age3) %>%
+                           mutate(total_smoothed_deaths = sum(smoothed_deaths),
+                                  cod_prop_smoothed_deaths = smoothed_deaths/total_smoothed_deaths
+                                  )
+summary(dat.clean$cod_prop_smoothed_deaths[dat.clean$Appended_smoothed == F])
+
+length(dat.clean$total_smoothed_deaths[dat.clean$Appended_smoothed == T])
+length(dat.clean$total_smoothed_deaths[dat.clean$total_smoothed_deaths == 0 & dat.clean$Appended_smoothed == T])
+#the smoothed results are NEVER exactly equal to 0. 
+
+#there are quite a few < 1:
+length(dat.clean$total_smoothed_deaths[dat.clean$total_smoothed_deaths < 0.1 & dat.clean$Appended_smoothed == T])
+length(dat.clean$total_smoothed_deaths[dat.clean$total_smoothed_deaths < 0.5 & dat.clean$Appended_smoothed == T])
+length(dat.clean$total_smoothed_deaths[dat.clean$total_smoothed_deaths < 1 & dat.clean$Appended_smoothed == T])
+```
+
+```{r aggregate_over_COD}
+dat.smoothed.aggregatedCOD <- dat.clean %>% 
+  group_by(State2, Year2, RaceSex, Age2) %>%
+  arrange(State2, RaceSex, Year2, Age2) %>%
+  filter(Appended_smoothed == T) %>%
+  summarise(Population = first(Population),
+            Race2 = first(Race2), 
+            Sex2 = first(Sex2), 
+            StateYearRaceSex = first(StateYearRaceSex),
+            nx = first(nx),
+            Age3 = first(Age3),
+            Year3 = first(Year3),
+            total_smoothed_deaths = first(total_smoothed_deaths),
+            cod_prop_smoothed_deaths = first(cod_prop_smoothed_deaths)) 
+
+dim(dat.smoothed.aggregatedCOD)
+
+non.zero.stratums.smoothed <-  unique(dat.smoothed.aggregatedCOD$StateYearRaceSex)
+```
+
+In those strata that KTM ran the model, create a life table and store it in a list.
+
+```{r calculate_life_expectancy}
+list.life.tables.smoothed <- vector(mode = "list", length = length(non.zero.stratums.smoothed))
+list.index <- 1
+
+system.time(
+for(stratum.id in non.zero.stratums.smoothed) {
+  
+  list.life.tables.smoothed[[list.index]] <- life.table(data = subset(dat.smoothed.aggregatedCOD, StateYearRaceSex == stratum.id), 
+                                               num.ages.in.group = "nx", 
+                                               death.counts = "total_smoothed_deaths", 
+                                               population.counts = "Population")
+  list.index <- list.index + 1
+  print(list.index)
+  }
+)
+
+```
+
+Add the life expectancy at birth to the dat2 data file:
+
+```{r add_le_to_dataset}
+le.smoothed <- rep(NA, length(non.zero.stratums.smoothed))
+
+for (i in 1:length(non.zero.stratums.smoothed)) {
+  le.smoothed[i] <- list.life.tables.smoothed[[i]]$e_x[1]
+}
+
+les.smoothed <- data.frame(life.expectancy.birth.smoothed = le.smoothed, StateYearRaceSex = non.zero.stratums.smoothed)
+
+dim(dat2)
+dat3 <- merge(dat2, les.smoothed, by = "StateYearRaceSex", all.x =T)
+dim(dat3)
+
+dat2 <- dat3
+rm(les.smoothed, dat3)
+```
+
+```{r create_dataset_BlackWhite}
+#this dataset contains the black-white data within the same row (wide format) for each year-state-sex strata
+
+BlackSmooth <- dat2 %>% filter(Race2 == "Black" & Age3 == 0) %>% 
+                  select(State2, Year3, Sex2, Pop_across_age, life.expectancy.birth.smoothed) %>%
+                  rename(Pop_black = Pop_across_age,  le.smoothed.black = life.expectancy.birth.smoothed)
+
+WhiteSmooth <- dat2 %>% filter(Race2 == "White" & Age3 == 0) %>% 
+                  select(State2, Year3, Sex2, Pop_across_age, life.expectancy.birth.smoothed) %>%
+                  rename(Pop_white = Pop_across_age,  le.smoothed.white = life.expectancy.birth.smoothed)
+
+BlackWhiteSmooth <- merge(BlackSmooth, WhiteSmooth, by = c("State2", "Year3", "Sex2"))
+
+BlackWhiteSmooth <- BlackWhiteSmooth %>% mutate(WBgap = le.smoothed.white - le.smoothed.black)
+```
+
+```{r save_workspace}
+save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
+```
+
+```{r save_specified_files}
+save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
+     file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
+```
+
+Curious how this affects the LE calculation 
+- using fractional data
+- The fact that smoothed are NEVER zero seems problematic to me because it will bias LE downwards
+- Perhaps that is not the case because it also pulls some death counts down.
+
+- Best way to investigate this? Are there any life tables where we have 0 counts (exactly known) but no NA counts?
+- need to do a summary with info on num.zeroes and num.NAs and see if any strata have num.zeroes > 1 but num.NA == 0.
+
+
+
+
+
+
+
