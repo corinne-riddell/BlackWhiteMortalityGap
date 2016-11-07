@@ -26,7 +26,8 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
     mainPanel(
       
       plotlyOutput("life_expectancy"),
-      plotlyOutput("life_expectancy_smoothed"))
+      plotlyOutput("life_expectancy_smoothed"),
+      plotlyOutput("sum_missing"))
   )
   
 )
@@ -85,7 +86,22 @@ server <- function(input, output) {
                      facet_wrap(~Sex2) + scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy gap (years)") + 
                      theme_minimal() + theme(legend.title=element_blank()))
     subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
-  })    
+  })  
+  
+  output$sum_missing <- renderPlotly({
+    temp.dat <- (dat.clean[dat.clean$State2 == input$state & dat.clean$Race2 == "Black" & dat.clean$Sex2 == "Male", c("Age2", "Population", "Year", "Count", "COD2")])
+    
+    sums <- temp.dat %>% 
+      group_by(Year, Age2) %>% 
+      summarize(sum.na = sum(is.na(Count)), sum.zero = sum(Count == 0, na.rm=T)) %>%
+      arrange(Year, Age2)
+    
+    ggplotly(ggplot(dat = sums, aes(x = Year, y = sum.na)) + 
+             geom_line(aes(col = "Sum NA")) + geom_line(aes(y = sum.zero, col = "Sum zeroes")) +
+             facet_wrap(~Age2) +
+      ylab("Number of missing death counts") +
+      ggtitle("Black Males"))
+  })
 }
 
 shinyApp(ui = ui1, server = server)
