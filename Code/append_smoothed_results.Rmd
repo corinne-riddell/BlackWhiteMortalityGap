@@ -167,7 +167,7 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 ```
 
 ```{r save_specified_files}
-save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
+save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
