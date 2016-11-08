@@ -26,6 +26,7 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
                    mainPanel(
                      
                      #add the new output object for our LE graphs -- see my notes.
+                     radioButtons(inputId = "LE_type", label = "Use data from", inline = T, choices = c("Bayes", "Impute 1", "Impute 5", "Impute 10"), selected = "Impute 5"),
                      plotlyOutput("life_expectancy"),
                      radioButtons(inputId = "contribution_type", label = "Display contribution in", inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
                      plotlyOutput("male_age_comp1"),
