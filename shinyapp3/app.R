@@ -26,6 +26,10 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
                    mainPanel(
                      
                      #add the new output object for our LE graphs -- see my notes.
+                     radioButtons(inputId = "LE_type", label = "Use data from", inline = T, choices = c("Bayes", "Impute 1",# = "le.birth.black", 
+                                                                                                        "Impute 5",# = "le.birth.black5", 
+                                                                                                        "Impute 9"),# = "le.birth.black9"), 
+                                                                                                        selected = "Impute 5"),
                      plotlyOutput("life_expectancy"),
                      radioButtons(inputId = "contribution_type", label = "Display contribution in", inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
                      plotlyOutput("male_age_comp1"),
@@ -52,17 +56,31 @@ server <- function(input, output) {
     p %>% layout(showlegend = F)
    
   })
+
+  yvar1 <- reactive({ switch(input$LE_type,
+                             "Impute 1" = BlackWhite$le.birth.black,
+                             "Impute 5" = BlackWhite$le.birth.black5,
+                             "Impute 9" = BlackWhite$le.birth.black9)
+  })
+  
+  
+  yvar2 <- reactive({ switch(input$LE_type,
+                             "Impute 1" = BlackWhite$le.birth.white,
+                             "Impute 5" = BlackWhite$le.birth.white5,
+                             "Impute 9" = BlackWhite$le.birth.white9)
+  })
   
   output$life_expectancy <- renderPlotly({
+
 #    p1 <- ggplotly(ggplot(subset(dat2, State2 == input$state & Age3 == 0), aes(x = Year3, y = life.expectancy.birth)) + 
 #      geom_line(aes(col = Sex2, lty = Race2)) + facet_wrap(~Sex2) +
 #      scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy at birth (years)") + 
 #      theme_minimal() + theme(legend.title=element_blank()))
 
-    p1 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = le.birth.black)) + 
-                     geom_ribbon(aes(ymin = le.birth.black, ymax = le.birth.white), alpha = 0.3) +
+    p1 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = yvar1())) + 
+                     geom_ribbon(aes(ymin = yvar1(), ymax = yvar2()), alpha = 0.3) +
                   
-                     geom_line(aes(y = le.birth.white, col = Sex2), lty = 1) +
+                     geom_line(aes(y = yvar2(), col = Sex2), lty = 1) +
                      geom_line(aes(col = Sex2), lty = 2) + 
                      scale_color_manual(values = c("#67a9cf", "#ef8a62")) +
                      #c("#67a9cf", "#ef8a62")
@@ -72,10 +90,10 @@ server <- function(input, output) {
     
     p1
     
-    p2 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = WBgap)) + geom_line(col = "grey") +
-               facet_wrap(~Sex2) + scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy gap (years)") + 
-               theme_minimal() + theme(legend.title=element_blank()))
-    subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
+  #  p2 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = WBgap)) + geom_line(col = "grey") +
+ #              facet_wrap(~Sex2) + scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy gap (years)") + 
+#             theme_minimal() + theme(legend.title=element_blank()))
+ #   subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
   })
   
   output$male_age_comp1 <- renderPlotly({
