@@ -24,18 +24,17 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
                      plotlyOutput("population_trend")
                       ),
                    mainPanel(
-                     
-                     #add the new output object for our LE graphs -- see my notes.
-                     radioButtons(inputId = "LE_type", label = "Use data from", inline = T, choices = c("Bayes", "Impute 1",# = "le.birth.black", 
-                                                                                                        "Impute 5",# = "le.birth.black5", 
-                                                                                                        "Impute 9"),# = "le.birth.black9"), 
-                                                                                                        selected = "Impute 5"),
+                     radioButtons(inputId = "LE_type", label = "Use data from", inline = T, 
+                                  choices = c("Bayes", "Impute 1", "Impute 5", "Impute 9"), 
+                                  selected = "Impute 5"),
+                     textOutput("text1"),
                      plotlyOutput("life_expectancy"),
                      radioButtons(inputId = "contribution_type", label = "Display contribution in", inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
                      plotlyOutput("male_age_comp1"),
                      plotlyOutput("male_age_comp2"),
                      plotOutput("female_age_comp1"),
-                     plotOutput("female_age_comp2")                   )
+                     plotOutput("female_age_comp2")                   
+                     )
                  )
 
                  )
@@ -70,30 +69,60 @@ server <- function(input, output) {
 #                             "Impute 9" = BlackWhite$le.birth.white9)
 #  })
   
+  reactDat <- reactive({
+    if(input$LE_type == "Impute 1") {
+     # reactDat <- data.frame(State2 = BlackWhite[[input$state]], Year3 = BlackWhite[[input$year]], y1 = BlackWhite[["le.birth.black"]],
+    #                         y2 = BlackWhite[["le.birth.white"]], Sex2 = BlackWhite[[input$sex]])
+      reactDat <- data.frame(y1 = BlackWhite[["le.birth.black"]])
+    } 
+    
+    if(input$LE_type == "Impute 5") {
+      reactDat <- data.frame(y1 = BlackWhite[["le.birth.black"]])
+    #        reactDat <- data.frame(State2 = BlackWhite[[input$state]], Year3 = BlackWhite[[input$year]], y1 = BlackWhite[["le.birth.black5"]],
+     #                        y2 = BlackWhite[["le.birth.white5"]], Sex2 = BlackWhite[[input$sex]])      
+    } 
+    
+    if(input$LE_type == "Impute 9") {
+      reactDat <- data.frame(y1 = BlackWhite[["le.birth.black"]])
+#      reactDat <- data.frame(State2 = BlackWhite[[input$state]], Year3 = BlackWhite[[input$year]], y1 = BlackWhite[["le.birth.black9"]],
+ #                            y2 = BlackWhite[["le.birth.white9"]], Sex2 = BlackWhite[[input$sex]])
+    }    
+    
+  })
+  
+ output$text1 <- renderText({
+    dim(reactDat())
+    })
+  
   output$life_expectancy <- renderPlotly({
 
 #    p1 <- ggplotly(ggplot(subset(dat2, State2 == input$state & Age3 == 0), aes(x = Year3, y = life.expectancy.birth)) + 
 #      geom_line(aes(col = Sex2, lty = Race2)) + facet_wrap(~Sex2) +
 #      scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy at birth (years)") + 
 #      theme_minimal() + theme(legend.title=element_blank()))
-
-    p1 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = le.birth.black5)) + #yvar1())) + 
-                     geom_ribbon(aes(ymin = le.birth.black5, ymax = le.birth.white5), alpha = 0.3) + #yvar1(), ymax = yvar2()), alpha = 0.3) +
+    
+ 
+    
+    p1 <- ggplotly( ggplot(reactDat(), aes(x = Year3, y = y1)) + geom_point()
+      
+      #ggplot(subset(reactDat, State2 == input$state), aes(x = Year3, y = y1)) + #yvar1())) + 
+                    # geom_ribbon(aes(ymin = y1, ymax = y2), alpha = 0.3) + #yvar1(), ymax = yvar2()), alpha = 0.3) +
                   
-                     geom_line(aes(y = le.birth.white5, col = Sex2), lty = 1) + #yvar2()
-                     geom_line(aes(col = Sex2), lty = 2) + 
-                     scale_color_manual(values = c("#67a9cf", "#ef8a62")) +
+                  #   geom_line(aes(y = y2, col = Sex2), lty = 1) + #yvar2()
+                  #   geom_line(aes(col = Sex2), lty = 2) #+ 
+                  #   scale_color_manual(values = c("#67a9cf", "#ef8a62")) +
                      #c("#67a9cf", "#ef8a62")
-                     facet_wrap( ~ Sex2) +
-                     scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy at birth (years)") + 
-                     theme_minimal() + theme(legend.title=element_blank()))
+                   #  facet_wrap( ~ Sex2) +
+                  #   scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy at birth (years)") + 
+                  #   theme_minimal() + theme(legend.title=element_blank())
+                    )
     
     p1
     
-  #  p2 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = WBgap)) + geom_line(col = "grey") +
- #              facet_wrap(~Sex2) + scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy gap (years)") + 
-#             theme_minimal() + theme(legend.title=element_blank()))
- #   subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
+    p2 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = WBgap)) + geom_line(col = "grey") +
+              facet_wrap(~Sex2) + scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy gap (years)") + 
+             theme_minimal() + theme(legend.title=element_blank()))
+    subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
   })
   
   output$male_age_comp1 <- renderPlotly({
@@ -173,6 +202,6 @@ server <- function(input, output) {
       ggtitle(paste0("Contribution of age grouping to the black-white life expectancy gap for males in ", input$state, " in ", input$year2))
     
   })  
-    }
-
+    
+}
 shinyApp(ui = ui1, server = server)
