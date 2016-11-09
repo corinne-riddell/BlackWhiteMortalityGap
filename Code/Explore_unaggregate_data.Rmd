@@ -16,20 +16,19 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 
 ```{r load datasets}
 dat.male <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/males_export.txt", header = T, sep="\t", na.strings = " ")
-dat.male <- dat.male[-1, ]
 names(dat.male) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
-prop.table(table(dat.male$Count==" "))
-prop.table(table(is.na(dat.male$Count))
-
+prop.table(table(is.na(dat.male$Count)))
 head(dat.male)
+table(dat.male$Sex)
+str(dat.male) #note all numeric or int
 
-dat.female <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/female_export.txt", header = T, sep="\t")
-dat.female <- dat.female[-1, ]
+dat.female <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/female_export.txt", header = T, sep="\t", na.strings = " ")
 names(dat.female) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
+table(dat.female$Sex)
 dat.female$Sex <- 1
+str(dat.male) #note all numeric or int
 
-prop.table(table(dat.female$Count==" "))
-
+prop.table(table(is.na(dat.female$Count)))
 head(dat.female)
 
 dat.both <- rbind(dat.male, dat.female)
@@ -42,6 +41,41 @@ cod.dict <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/COD_dicti
 
 cod.dict$COD2 <- reorder(cod.dict$COD, cod.dict$COD_num)
 levels(cod.dict$COD2)
+
+cod.dict$cod_cat <- "Cancers"
+
+cod.dict$cod_cat[cod.dict$COD2 == "Diseases of Heart" | 
+                 cod.dict$COD2 == "Hypertension without Heart Disease" |
+                 cod.dict$COD2 == "Cerebrovascular Diseases" |  
+                 cod.dict$COD2 == "Atherosclerosis" |  
+                 cod.dict$COD2 == "Aortic Aneurysm and Dissection" | 
+                 cod.dict$COD2 == "Other Diseases of Arteries, Arterioles, Capillaries"] <- "Cardiovascular"
+
+cod.dict$cod_cat[cod.dict$COD2 == "Tuberculosis" | 
+                 cod.dict$COD2 == "Syphilis" |
+                 cod.dict$COD2 == "Human Immunodeficiency Virus (HIV) (1987+)" |  
+                 cod.dict$COD2 == "Septicemia" |  
+                 cod.dict$COD2 == "Other Infectious and Parasitic Diseases" | 
+                 cod.dict$COD2 == "Pneumonia and Influenza"] <- "Communicable"
+
+cod.dict$cod_cat[cod.dict$COD2 == "Diabetes Mellitus" | 
+                 cod.dict$COD2 == "Alzheimers (ICD-9 and 10 only)" |
+                 cod.dict$COD2 == "Chronic Obstructive Pulmonary Disease and Allied Cond" |  
+                 cod.dict$COD2 == "Stomach and Duodenal Ulcers" |  
+                 cod.dict$COD2 == "Chronic Liver Disease and Cirrhosis" | 
+                 cod.dict$COD2 == "Nephritis, Nephrotic Syndrome and Nephrosis"] <- "Non-communicable" 
+
+cod.dict$cod_cat[cod.dict$COD2 == "Accidents and Adverse Effects" | 
+                 cod.dict$COD2 == "Suicide and Self-Inflicted Injury" |
+                 cod.dict$COD2 == "Homicide and Legal Intervention"] <- "Injuries" 
+
+cod.dict$cod_cat[cod.dict$COD2 == "Complications of Pregnancy, Childbirth, Puerperium" | 
+                 cod.dict$COD2 == "Congenital Anomalies" |
+                 cod.dict$COD2 == "Certain Conditions Originating in Perinatal Period" |  
+                 cod.dict$COD2 == "Symptoms, Signs and Ill-Defined Conditions" |  
+                 cod.dict$COD2 == "Other Cause of Death"] <- "All other causes" 
+
+cod.dict <- cod.dict[ ,-2]
 ```
 
 
@@ -80,5 +114,15 @@ dat.both <- dat.both %>%
          RaceSex = interaction(Race2, Sex2, sep = " "),
          StateYearSex = interaction(State2, Year2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
+
+dim(dat.both)
+dat.both <- merge(dat.both, cod.dict, by = "COD2") #to add on COD_num and cod_cat
+dim(dat.both)
+```
+
+```{r pull_alabama}
+alabama.males <- dat.both %>% filter(State2 == "Alabama", Sex2 == "Male")
+
+save(alabama.males, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/alabama_males_granular.Rdata")
 ```
 
