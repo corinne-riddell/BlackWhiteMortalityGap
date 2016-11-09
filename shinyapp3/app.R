@@ -57,18 +57,18 @@ server <- function(input, output) {
    
   })
 
-  yvar1 <- reactive({ switch(input$LE_type,
-                             "Impute 1" = BlackWhite$le.birth.black,
-                             "Impute 5" = BlackWhite$le.birth.black5,
-                             "Impute 9" = BlackWhite$le.birth.black9)
-  })
+#  yvar1 <- reactive({ switch(input$LE_type,
+#                             "Impute 1" = BlackWhite$le.birth.black,
+#                             "Impute 5" = BlackWhite$le.birth.black5,
+#                             "Impute 9" = BlackWhite$le.birth.black9)
+#  })
   
   
-  yvar2 <- reactive({ switch(input$LE_type,
-                             "Impute 1" = BlackWhite$le.birth.white,
-                             "Impute 5" = BlackWhite$le.birth.white5,
-                             "Impute 9" = BlackWhite$le.birth.white9)
-  })
+#  yvar2 <- reactive({ switch(input$LE_type,
+##                             "Impute 1" = BlackWhite$le.birth.white,
+##                             "Impute 5" = BlackWhite$le.birth.white5,
+#                             "Impute 9" = BlackWhite$le.birth.white9)
+#  })
   
   output$life_expectancy <- renderPlotly({
 
@@ -77,10 +77,10 @@ server <- function(input, output) {
 #      scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy at birth (years)") + 
 #      theme_minimal() + theme(legend.title=element_blank()))
 
-    p1 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = yvar1())) + 
-                     geom_ribbon(aes(ymin = yvar1(), ymax = yvar2()), alpha = 0.3) +
+    p1 <- ggplotly(ggplot(subset(BlackWhite, State2 == input$state), aes(x = Year3, y = le.birth.black5)) + #yvar1())) + 
+                     geom_ribbon(aes(ymin = le.birth.black5, ymax = le.birth.white5), alpha = 0.3) + #yvar1(), ymax = yvar2()), alpha = 0.3) +
                   
-                     geom_line(aes(y = yvar2(), col = Sex2), lty = 1) +
+                     geom_line(aes(y = le.birth.white5, col = Sex2), lty = 1) + #yvar2()
                      geom_line(aes(col = Sex2), lty = 2) + 
                      scale_color_manual(values = c("#67a9cf", "#ef8a62")) +
                      #c("#67a9cf", "#ef8a62")
