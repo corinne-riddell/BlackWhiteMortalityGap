@@ -110,6 +110,8 @@ non.zero.stratums.smoothed <-  unique(dat.smoothed.aggregatedCOD$StateYearRaceSe
 In those strata that KTM ran the model, create a life table and store it in a list.
 
 ```{r calculate_life_expectancy}
+#6 mins
+
 list.life.tables.smoothed <- vector(mode = "list", length = length(non.zero.stratums.smoothed))
 list.index <- 1
 
@@ -124,7 +126,6 @@ for(stratum.id in non.zero.stratums.smoothed) {
   print(list.index)
   }
 )
-
 ```
 
 Add the life expectancy at birth to the dat2 data file:
@@ -146,20 +147,109 @@ dat2 <- dat3
 rm(les.smoothed, dat3)
 ```
 
-```{r create_dataset_BlackWhite}
+```{r create_dataset_BlackWhiteSmooth}
 #this dataset contains the black-white data within the same row (wide format) for each year-state-sex strata
 
 BlackSmooth <- dat2 %>% filter(Race2 == "Black" & Age3 == 0) %>% 
-                  select(State2, Year3, Sex2, Pop_across_age, life.expectancy.birth.smoothed) %>%
-                  rename(Pop_black = Pop_across_age,  le.smoothed.black = life.expectancy.birth.smoothed)
+                  select(State2, Year3, Sex2, life.expectancy.birth.smoothed) %>%
+                  rename(le.smoothed.black = life.expectancy.birth.smoothed)
 
 WhiteSmooth <- dat2 %>% filter(Race2 == "White" & Age3 == 0) %>% 
-                  select(State2, Year3, Sex2, Pop_across_age, life.expectancy.birth.smoothed) %>%
-                  rename(Pop_white = Pop_across_age,  le.smoothed.white = life.expectancy.birth.smoothed)
+                  select(State2, Year3, Sex2, life.expectancy.birth.smoothed) %>%
+                  rename(le.smoothed.white = life.expectancy.birth.smoothed)
 
 BlackWhiteSmooth <- merge(BlackSmooth, WhiteSmooth, by = c("State2", "Year3", "Sex2"))
 
-BlackWhiteSmooth <- BlackWhiteSmooth %>% mutate(WBgap = le.smoothed.white - le.smoothed.black)
+BlackWhiteSmooth <- BlackWhiteSmooth %>% mutate(WBgap.s = le.smoothed.white - le.smoothed.black)
+
+dim(BlackWhite)
+BlackWhite3 <- merge(BlackWhite, BlackWhiteSmooth, by = c("State2", "Year3", "Sex2"))
+dim(BlackWhite3)
+
+BlackWhite <- BlackWhite3
+rm(BlackWhite3, BlackSmooth, WhiteSmooth)
+```
+
+```{r calculate_age_decomp_smoothed}
+#18 mins
+
+list.age.decomp.tables.smoothed <- vector(mode = "list", length = dim(paired.ids)[1])
+
+for(i in 1:dim(paired.ids)[1]) {
+  white.index <- which(non.zero.stratums.smoothed == paired.ids[i, "StateYearRaceSexWhite"])
+  black.index <- which(non.zero.stratums.smoothed == paired.ids[i, "StateYearRaceSexBlack"])
+  
+  if(length(white.index) != 0 & length(black.index) != 0) {
+    list.age.decomp.tables.smoothed[[i]] <- le_age_decomp(life.table1 = as.data.frame(list.life.tables.smoothed[[black.index]]),
+                                                          name.lt1 = "Black", 
+                                                          life.table2 = as.data.frame(list.life.tables.smoothed[[white.index]]),
+                                                          name.lt2 = "White", age.groups = "Age3")
+  } else {
+    list.age.decomp.tables.smoothed[[i]] <-"Couldn't compare life tables"
+  }
+  print(i)
+}
+```
+
+```{r calculate_cod_decomp}
+#takes 40 mins
+
+list.cod.decomp.tables.smoothed <- vector(mode = "list", length = dim(paired.ids)[1])
+
+system.time(
+for(i in 1:dim(paired.ids)[1]) {
+  white.index <- which(non.zero.stratums.smoothed == paired.ids[i, "StateYearRaceSexWhite"])
+  black.index <- which(non.zero.stratums.smoothed == paired.ids[i, "StateYearRaceSexBlack"])
+  
+  if(length(white.index) != 0 & length(black.index) != 0) {
+    ct.white <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexWhite"]) %>% 
+                ungroup() %>%
+                select(Age2, COD2, cod_prop_smoothed_deaths) %>%
+                rename(prop.white = cod_prop_smoothed_deaths)
+    
+    ct.black <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexBlack"]) %>% 
+                ungroup() %>%
+                select(Age2, COD2, cod_prop_smoothed_deaths) %>%
+                rename(prop.black = cod_prop_smoothed_deaths)
+    ct.both <- merge(ct.white, ct.black, by = c("Age2", "COD2")) 
+    ct.both <- ct.both %>% arrange(COD2, Age2)
+    
+    if(any(is.na(ct.both$prop.black)) == F & any(is.na(ct.both$prop.white)) == F) { #ensures that there are no ages with 0 deaths - for these COD prop == 0 and can't compute
+        
+        list.cod.decomp.tables.smoothed[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables.smoothed[[black.index]]),
+                                                                      life.table2 = as.data.frame(list.life.tables.smoothed[[white.index]]), 
+                                                                      decomp.table = as.data.frame(list.age.decomp.tables.smoothed[[i]]),
+                                                                      cod.table = ct.both, 
+                                                                      age.colname.cod.table = "Age2", 
+                                                                      COD.colname.cod.table = "COD2", 
+                                                                      prop1.colname.cod.table = "prop.black", 
+                                                                      prop2.colname.cod.table = "prop.white")
+        
+    } else { list.cod.decomp.tables.smoothed[[i]] <- "Encountered age group with no deaths"
+      
+    }
+  } else {
+    
+    list.cod.decomp.tables.smoothed[[i]] <- "Couldn't compare life tables"
+  } 
+  
+  print(i)
+}
+)
+```
+
+```{r  update_decomp_for_plotting}
+#update the decomposition table for plotting purposes
+for(i in 1:dim(paired.ids)[1]) {
+    if(list.cod.decomp.tables.smoothed[[i]][1] != "Couldn't compare life tables" & 
+       list.cod.decomp.tables.smoothed[[i]][1] != "Encountered age group with no deaths") { 
+       
+       list.cod.decomp.tables.smoothed[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables.smoothed[[i]],
+                                                            age.groups = "Ages", 
+                                                            cause.of.death = "Cause.of.death")  
+    } 
+  print(i)
+}  
 ```
 
 ```{r save_workspace}
@@ -168,6 +258,8 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 
 ```{r save_specified_files}
 save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
+     list.age.decomp.tables5, list.cod.decomp.tables5, list.age.decomp.tables9, list.cod.decomp.tables9,
+     list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 

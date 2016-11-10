@@ -130,3 +130,11 @@ make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) 
     }
   return(updated)
 }
+
+#contribution to the change in the gap
+#age.contribution.to.gap <- function(decomp.table1, decomp.table2) {
+   
+# }
+#by age
+
+#by COD
