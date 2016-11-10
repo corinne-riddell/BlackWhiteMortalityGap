@@ -269,6 +269,8 @@ BlackWhite <- merge(Black, White, by = c("State2", "Year3", "Sex2"))
 BlackWhite <- BlackWhite %>% mutate(WBgap = le.birth.white - le.birth.black,
                                     WBgap5 = le.birth.white5 - le.birth.black5,
                                     WBgap9 = le.birth.white9 - le.birth.black9)
+
+rm(Black, White)
 ```
 
 Decompose the gap by age. That is, for each year-state-sex combination, compare the life table for blacks to whites and decompose the gap in life expectancy at birth by age.
@@ -623,8 +625,9 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 ```
 
 ```{r save_specified_files}
-save(dat.clean, dat2, BlackWhite, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
+save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
      list.age.decomp.tables5, list.cod.decomp.tables5, list.age.decomp.tables9, list.cod.decomp.tables9,
+     list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
