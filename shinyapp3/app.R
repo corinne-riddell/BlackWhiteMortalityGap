@@ -12,11 +12,12 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
                  sidebarLayout(
                    sidebarPanel(width = 4,
                      selectInput(inputId = "state", label = "Select a state", width = 200, choices = unique(levels(dat.clean$State2))),
-                     strong("Select years to compare"),
+                     #strong("Select years to compare"),
+                     strong("Select year for decomposition"),
                      tags$style(type="text/css", ".form-group.shiny-input-container{ display: inline-block } strong{ display: block !important  } img{ margin-bottom: 30px }"),
                   
                      selectInput(inputId = "year1", label = NA, choices = unique(dat.clean$Year3), width = 100),
-                     selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
+                     #selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
                      
                      strong("Legend\n"),
                      img(src="legend.png"),
@@ -29,10 +30,13 @@ ui1 <- fluidPage(#theme = shinytheme("cosmo"),
                                   selected = "Impute 5"),
                      plotlyOutput("life_expectancy"),
                      radioButtons(inputId = "contribution_type", label = "Display contribution in", inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
+                     strong("Decomposition based on selected imputation model"),
                      plotlyOutput("male_age_comp1"),
-                     plotlyOutput("male_age_comp2"),
-                     plotlyOutput("female_age_comp1"),
-                     plotlyOutput("female_age_comp2")                   
+                     strong("Decomposition based on Bayesian model"),
+                     plotlyOutput("male_age_cod_bayes")
+                     #plotlyOutput("male_age_comp2"),
+                     #plotlyOutput("female_age_comp1"),
+                     #plotlyOutput("female_age_comp2")                   
                      )
                  )
 
@@ -140,41 +144,55 @@ server <- function(input, output) {
                    geom_vline(xintercept = 0))
   
        })
+  
+  output$male_age_cod_bayes <- renderPlotly({
+    
+    ggplotly(ggplot(list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                     paired.ids$Year3 == input$year1 & 
+                                                     paired.ids$Sex2 == "Male")]],
+                    aes(y = Ages, x = start)) + 
+                    geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+                    xlab("Contribution to life expectancy gap (in years)") +
+                    ylab("Age group\n") + theme_minimal() +
+                    geom_vline(xintercept = 0))
+    
+  })
 
-  output$male_age_comp2 <- renderPlotly({
-    ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
-                            paired.ids$Year3 == input$year2 & 
-                            paired.ids$Sex2 == "Male")]],
-                    aes(y = Ages, x = start)) + 
-               geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-               xlab("Contribution to life expectancy gap (in years)") +
-               ylab("Age group\n") + theme_minimal() +
-               geom_vline(xintercept = 0))
-})  
+ 
+#   output$male_age_comp2 <- renderPlotly({
+#     ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
+#                             paired.ids$Year3 == input$year2 & 
+#                             paired.ids$Sex2 == "Male")]],
+#                     aes(y = Ages, x = start)) + 
+#                geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+#                xlab("Contribution to life expectancy gap (in years)") +
+#                ylab("Age group\n") + theme_minimal() +
+#                geom_vline(xintercept = 0))
+# })  
   
-  output$female_age_comp1 <- renderPlotly({
-    
-    ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
-                                            paired.ids$Year3 == input$year1 & 
-                                            paired.ids$Sex2 == "Female")]],
-                    aes(y = Ages, x = start)) + 
-               geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-               xlab("Contribution to life expectancy gap (in years)") +
-               ylab("Age group\n") + theme_minimal() +
-               geom_vline(xintercept = 0))
-    
-  })
-  
-  output$female_age_comp2 <- renderPlotly({
-    ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
-                                                    paired.ids$Year3 == input$year2 & 
-                                                    paired.ids$Sex2 == "Female")]],
-                    aes(y = Ages, x = start)) + 
-               geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-               xlab("Contribution to life expectancy gap (in years)") +
-               ylab("Age group\n") + theme_minimal() +
-               geom_vline(xintercept = 0))
-  })
+  # output$female_age_comp1 <- renderPlotly({
+  #   
+  #   ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
+  #                                           paired.ids$Year3 == input$year1 & 
+  #                                           paired.ids$Sex2 == "Female")]],
+  #                   aes(y = Ages, x = start)) + 
+  #              geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+  #              xlab("Contribution to life expectancy gap (in years)") +
+  #              ylab("Age group\n") + theme_minimal() +
+  #              geom_vline(xintercept = 0))
+  #   
+  # })
+  # 
+  # output$female_age_comp2 <- renderPlotly({
+  #   ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
+  #                                                   paired.ids$Year3 == input$year2 & 
+  #                                                   paired.ids$Sex2 == "Female")]],
+  #                   aes(y = Ages, x = start)) + 
+  #              geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+  #              xlab("Contribution to life expectancy gap (in years)") +
+  #              ylab("Age group\n") + theme_minimal() +
+  #              geom_vline(xintercept = 0))
+  # })
     
 }
 shinyApp(ui = ui1, server = server)

@@ -71,6 +71,18 @@ table(dat$Age, dat$Count==0)
 dat.clean <- dat[dat$Age2 != "Unknown", ]
 ```
 
+```{r addvar_State_abbreviation}
+dat.clean <- dat.clean %>% mutate(stabbrs = factor(State, levels = c(0:50), 
+                                      labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
+                                                 "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
+                                                 "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
+                                                 "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", 
+                                                 "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", 
+                                                 "VT", "VA", "WA", "WV", "WI", "WY")))
+
+```
+
+
 ##Population counts of 0
 
 It is important to explore how many cells have population counts of zero because these break the Bayesian crank, and also currently breaks the life expectancy function.
