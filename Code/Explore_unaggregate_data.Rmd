@@ -115,6 +115,9 @@ dat.both <- dat.both %>%
          StateYearSex = interaction(State2, Year2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
 
+#need to add the agegrp variable to this dataset
+head(dat.both[dat.both$Age == 1 | dat.both$Age == 0, ])
+
 dim(dat.both)
 dat.both <- merge(dat.both, cod.dict, by = "COD2") #to add on COD_num and cod_cat
 dim(dat.both)
