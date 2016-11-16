@@ -115,14 +115,73 @@ dat.both <- dat.both %>%
          StateYearSex = interaction(State2, Year2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
 
+head(dat.both)
+
+dat.both <- dat.both[dat.both$Age2 != "Unknown", ]
+
+dat.both <- dat.both %>% mutate(stabbrs = factor(State, levels = c(0:50), 
+                                      labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
+                                                 "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
+                                                 "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
+                                                 "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", 
+                                                 "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", 
+                                                 "VT", "VA", "WA", "WV", "WI", "WY")))
+
+dat.both$agegrp <- dat.both$Age 
+dat.both$agegrp[dat.both$Age == 0]  <- 1
+
 dim(dat.both)
 dat.both <- merge(dat.both, cod.dict, by = "COD2") #to add on COD_num and cod_cat
 dim(dat.both)
+
 ```
+
+```{r for_merge}
+
+years0610 <- dat.both[dat.both$Year3 >= 2006 & dat.both$Year3 <= 2010 & dat.both$agegrp > 1, ] 
+#added the age restriction because don't want to deal with the differences in age definition right now
+
+not.suppressed <- foreign::read.dta("/Users/corinneriddell/Dropbox/VitalStats/notsuppressed_0610.dta")
+
+not.suppressed <- not.suppressed %>% 
+  filter(agegrp > 1)
+
+years0610 <- years0610 %>% rename(COD_full = COD2)
+
+together <- merge(years0610, not.suppressed, by = c("stabbrs", "Year3", "Sex", "Race", "agegrp", "COD_full"))
+
+```
+
+```{r}
+together <- together %>% mutate(diff_count = Count - death, 
+                                diff_pop = Population - popestimate,
+                                rel_diff_pop = (Population - popestimate)/Population)
+
+prop.table(table(together$death[is.na(together$Count) == T]))
+
+ggplot(together, aes(x = diff_count)) + geom_density()
+summary(together$diff_count)
+
+ggplot(together, aes(x = diff_pop)) + geom_density()
+summary(together$diff_pop)
+
+ggplot(together, aes(x = rel_diff_pop)) + geom_density()
+summary(together$rel_diff_pop)
+
+View(together[together$rel_diff_pop > 0.6, ])
+```
+From above we see that the death counts match exactly and when the original count is NA the non-suppressed count is between 1 and 9.
+For some reason there is some discrpancy in the populational denominators. These do not match exactly and I don't know why. 
+
+Since we are interested in the effect of imputing the NAs and not the effect of the different denominators, we need to use the same denominators in the analysis. 
+
 
 ```{r pull_alabama}
-alabama.males <- dat.both %>% filter(State2 == "Alabama", Sex2 == "Male")
-
-save(alabama.males, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/alabama_males_granular.Rdata")
+alabama.males <- together %>% filter(State2 == "Alabama", Sex2 == "Male") 
+save(alabama.males, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/alabama_males_5plus_granular.Rdata")
 ```
+
+
+
+
 
