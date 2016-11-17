@@ -131,6 +131,32 @@ make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) 
   return(updated)
 }
 
+#input: data.frame from kathryn's bayesian model
+#input is specific to one state, sex, year, but across all age groups and both races
+#take this dataset and calculate LE for blacks and for whites and the gap (LE.gap = LE.white - LE.black)
+#returns these three values.
+life_expectancy_and_gap <- function(data) {
+library(sqldf)
+
+#aggegrate over COD within agegroup and race
+data.aggregated <- sqldf('select race, population, age_bin, year, sex, state, sum(smoothed_deaths) as total_smoothed_deaths from data group by race, age_bin')  
+
+#add num.ages.in.group
+data.aggregated$nx = 1*(data.aggregated$age_bin == 1) + 4*(data.aggregated$age_bin == 2) + 5*(data.aggregated$age_bin > 2)
+
+#calculate LE by race
+lt.black <- life.table(data = subset(data.aggregated, race == "Black"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
+lt.white <- life.table(data = subset(data.aggregated, race == "White"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
+
+return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))
+}
+
+
+ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/smoothed_results.csv")
+ktm_sub <- ktm_smoothed %>% filter(state == "Alabama" & sex == "Female" & year == 45)
+
+life_expectancy_and_gap(ktm_sub)
+
 #contribution to the change in the gap
 #age.contribution.to.gap <- function(decomp.table1, decomp.table2) {
    
