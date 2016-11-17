@@ -13,20 +13,14 @@ load('/Users/kathryn/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata')
 
 # Run models for given population subset (state and gender) 
 
-  r_m = run_smoothing_models(state='Alabama', sex='Male') 
-  r_f = run_smoothing_models(state='Alabama', sex='Female') 
-
- # Calclate LE for a given population gender and year 
-
-lt_males_69 = get_life_tables(jags_bw, sex='Male', year=1969)
-lt_males_79 = get_life_tables(r_m, year=1979)
-
+# r_m = run_smoothing_models(state='Alabama', sex='Male') 
+# r_f = run_smoothing_models(state='Alabama', sex='Female') 
 
 # Run models for all states and both genders 
 
-
-
-r_bothsex_allstates = run_smoothing_models_allstates()
+require(parallel)
+#mclapply(X=states, FUN=run_smoothing_models_allstates, mc.cores=4)
+#r_bothsex_allstates = run_smoothing_models_allstates()
 
 
 

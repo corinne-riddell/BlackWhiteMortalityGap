@@ -3,14 +3,14 @@
 # Subset dataset 
 subset_data = function(race, sex, cod, state) {
 
-  selected_vars = c('Age', 'Sex2', 'Race2', 'COD2', 'Year', 'Count', 'Population')
+  selected_vars = c('Age', 'Sex2', 'Race2', 'COD2', 'Year', 'Count', 'Population', 'upper_bound')
 
   ds = dat.clean[(dat.clean$Race2==race & 
                     dat.clean$Sex2==sex &
                     dat.clean$State2==state &
                     dat.clean$COD2==cod), selected_vars]
   
-  df = data.frame(deaths=ds$Count, pop = ds$Population, age=(ds$Age+1), year=(ds$Year+1)) 
+  df = data.frame(deaths=ds$Count, pop = ds$Population, age=(ds$Age+1), year=(ds$Year+1), upper_bound = ds$upper_bound) 
   df$censored = ifelse(is.na(df$deaths),1,0)
   
   ds2 = df[order(df$censored), ]
@@ -19,6 +19,7 @@ subset_data = function(race, sex, cod, state) {
                  lnpop = log(ds2$pop), 
                  age.bin = ds2$age, 
                  year = ds2$year, 
+                 upper_bound = ds2$upper_bound, 
                  binned = is.na(ds2$deaths), 
                  not.binned = !is.na(ds2$deaths), 
                  n.binned = sum(is.na(ds2$deaths)), 
@@ -31,6 +32,12 @@ subset_data = function(race, sex, cod, state) {
   
   return(ds_jags) 
 } 
+
+identify_cells_below_9 = function() {
+  
+  
+  }
+
 
 
 combine_race_data = function(dsb, dsw) {
@@ -74,7 +81,7 @@ model = function() {
     }
     
     for(i in n.not.binned.plus.1_b:n.rows_b) {
-      binned.id_b[i] ~ dinterval(deaths_b[i], c(0, 9)) 
+      binned.id_b[i] ~ dinterval(deaths_b[i], c(0, upper_bound)) 
       deaths_b[i] ~ dpois(mu_b[i])
       log(mu_b[i]) <- lnrate_b[age.bin_b[i], year_b[i]] + lnpop_b[i]
     }
@@ -94,7 +101,7 @@ model = function() {
     }
     
     for(i in n.not.binned.plus.1_w:n.rows_w) {
-      binned.id_w[i] ~ dinterval(deaths_w[i], c(0, 9)) 
+      binned.id_w[i] ~ dinterval(deaths_w[i], c(0, upper_bound)) 
       deaths_w[i] ~ dpois(mu_w[i])
       log(mu_w[i]) <- lnrate_w[age.bin_w[i], year_w[i]] + lnpop_w[i]
     }
@@ -112,7 +119,7 @@ model = function() {
 
 
   # MODEL INITILIZATION FOR MCMC 
-  params = c('mu_w', 'mu_b') 
+  params = c('mu_w', 'mu_b', 'lnrate_w', 'lnrate_b') 
   nchains = 2 
   
   ideaths_b = c(rep(NA, ds_jags_bw$n.not.binned_b), rep(5, ds_jags_bw$n.binned_b))
@@ -125,7 +132,7 @@ model = function() {
   
   
   # RUN MCMC 
-  jags_model = jags(data=ds_jags_bw, param=params, n.chains=nchains, inits = myinits, n.iter=10000, n.burnin=2000, model.file=model) 
+  jags_model = jags(data=ds_jags_bw, param=params, n.chains=nchains, inits = myinits, n.iter=20000, n.burnin=5000, model.file=model) 
   
   return(jags_model)
 } 
@@ -146,7 +153,7 @@ run_smoothing_models = function(state, sex)  {
     jags_bw[[i]] = bwmort_smooth_time(ds_jags_bw[[i]])  
   }
 
-  return(list(jags_bw=jags_bw, sex=sex, state=state))
+  return(list(jags_bw=jags_bw, data=ds_jags_bw))
   
 }
 
@@ -201,42 +208,14 @@ get_allcod = function(ds_jags_bw, r, race) {
 }
 
 
-# obtain the life tables for both races  
 
 
-get_life_tables = function(jags_bw, sex, year, state) {  #r = object from run_smoothing_models
-  
-  ds_jags_bw = merge_data(sex=sex, state=state)
-  
-  
-  ds_allcod_black = get_allcod(ds_jags_bw, r, race='Black') 
-  ds_allcod_white = get_allcod(ds_jags_bw, r, race='White') 
-  
-  year_current = year - 1968
-  k = length(unique(ds_allcod_black$age_bin))
-  ds_allcod_black$num_ages = c(1, 4, rep(5, k-2))
-  ds_allcod_black = ds_allcod_black[ds_allcod_black$year==year_current, ]
-  
-  ds_allcod_white$num_ages = c(1, 4, rep(5, k-2))
-  ds_allcod_white = ds_allcod_white[ds_allcod_white$year==year_current, ]
-  
-  
-  lt_black = life.table(data=ds_allcod_black, num.ages.in.group='num_ages', 
-                  death.counts='smoothed_allcod_deaths', population.counts='pop')
-  
-  lt_white = life.table(data=ds_allcod_white, num.ages.in.group='num_ages', 
-                        death.counts='smoothed_allcod_deaths', population.counts='pop')
-  
-  return(list(lt_black=lt_black, lt_white=lt_white)) 
 
-}
-
-
-run_smoothing_models_allstates = function() {
-  states = unique(dat.clean$State2) 
+run_smoothing_models_allstates = function(states) {
   nstates = length(states) 
   results_male = results_female = list()
   for(i in 1:nstates) {
+    print(states[i])
     results_male = run_smoothing_models(state=states[i], sex='Male')
     results_female = run_smoothing_models(state=states[i], sex='Female')
   }
@@ -244,7 +223,7 @@ run_smoothing_models_allstates = function() {
   name2 = paste0('results_female_', states[i], '.RData') 
   save(results_male, file=name1) 
   save(results_female, file=name2) 
-  print(states[i])
+  
 }
 
 

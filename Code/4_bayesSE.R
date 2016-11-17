@@ -37,14 +37,15 @@ model = function() {
 params = c('mu', 'combo', 'beta0', 'beta1')
 nchains = 2
 
-jags_model = jags(data=ds, param=params, n.thin=1, n.chains=nchains, n.iter=10000, n.burnin=3000, model.file=model) 
+jags_model = jags(data=ds, param=params, n.thin=1, n.chains=nchains, n.iter=2000, n.burnin=500, model.file=model) 
 
+class(jags_model)
 
-
-
+jags_model
+  
 #manual from posterior samples 
 
-p_mcmc = as.mcmc(jags_model)  
+p_mcmc = as.mcmc(jags_model) 
 p = data.frame(p_mcmc[[1]])   
 
 combo = (p$mu.1. + p$mu.2. + p$mu.3. + p$mu.4. +p$mu.5. ) / (p$mu.6. + p$mu.7.)
