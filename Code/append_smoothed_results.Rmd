@@ -17,6 +17,10 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 ```{r load_datasets}
 load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
 ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/smoothed_results.csv")
+
+ktm_rest_males <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/males_restofstates6COD.csv")
+ktm_rest_females <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/females_restofstates6COD.csv")
+
 ```
 
 ```{r clean_smoothed_data}

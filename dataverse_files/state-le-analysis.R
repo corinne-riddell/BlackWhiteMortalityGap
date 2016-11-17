@@ -64,7 +64,7 @@ flagw <- rep(0, 3)
 #CR commented out: load("C:/bugsR/deathstotal.rdata")
 
 #CR added line:
-dtotal <- read.table("/Users/corinneriddell/Documents/BlackWhiteGap/dataverse_files/deaths-total.txt",
+dtotal <- read.table("deaths-total.txt",
                      na.strings=".")
 
 colnames(dtotal) <- c("state","age","gender","race","year","crude","deaths","pop")
