@@ -131,7 +131,7 @@ make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) 
   return(updated)
 }
 
-#input: data.frame from kathryn's bayesian model
+#input: data.frame from kathryn's bayesian model 
 #input is specific to one state, sex, year, but across all age groups and both races
 #take this dataset and calculate LE for blacks and for whites and the gap (LE.gap = LE.white - LE.black)
 #returns these three values.
@@ -152,10 +152,10 @@ return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "L
 }
 
 
-ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/smoothed_results.csv")
-ktm_sub <- ktm_smoothed %>% filter(state == "Alabama" & sex == "Female" & year == 45)
+#ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/smoothed_results.csv")
+#ktm_sub <- ktm_smoothed %>% filter(state == "Alabama" & sex == "Female" & year == 45)
 
-life_expectancy_and_gap(ktm_sub)
+#life_expectancy_and_gap(ktm_sub)
 
 #contribution to the change in the gap
 #age.contribution.to.gap <- function(decomp.table1, decomp.table2) {
