@@ -151,16 +151,19 @@ lt.white <- life.table(data = subset(data.aggregated, race == "White"), num.ages
 return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))
 }
 
-
-#ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/smoothed_results.csv")
-#ktm_sub <- ktm_smoothed %>% filter(state == "Alabama" & sex == "Female" & year == 45)
-
-#life_expectancy_and_gap(ktm_sub)
-
 #contribution to the change in the gap
-#age.contribution.to.gap <- function(decomp.table1, decomp.table2) {
-   
-# }
-#by age
-
-#by COD
+contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.table2) {
+  if(type.of.decomp == "Age") {
+    contribution_data <- data.frame("Ages" = decomp.table1[["Ages"]], 
+                                    "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]])
+  }
+  
+  if(type.of.decomp == "COD") {
+     contribution_data <- data.frame("COD" = decomp.table1[["Cause.of.death"]], 
+                                     "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]])
+  }
+  
+  contribution_data[["narrowed_gap"]] <- contribution_data[["Contribution.to.change"]] >= 0 
+  
+  return(contribution_data)
+}
