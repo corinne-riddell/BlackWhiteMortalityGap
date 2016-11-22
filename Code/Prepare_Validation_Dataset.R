@@ -1,8 +1,6 @@
 
 not.suppressed <- foreign::read.dta("/Users/corinneriddell/Dropbox/VitalStats/notsuppressed_0610.dta")
 
-not.suppressed$cod_cat[not.suppressed$COD_full == "In situ, benign or unknown behavior neoplasm"] <- "All other causes"
-
 not.suppressed.grouped <- not.suppressed %>% 
   filter(agegrp > 1) %>%
   group_by(stabbrs, Year3, agegrp, Sex, Race, cod_cat) %>%
@@ -11,7 +9,6 @@ not.suppressed.grouped <- not.suppressed %>%
             division = first(division)) %>%
   mutate(COD2 = factor(cod_cat, levels = c("Cardiovascular", "Cancers", "Communicable", "Non-communicable", 
                                            "Injuries","All other causes")))
-
 
 head(not.suppressed.grouped)
 

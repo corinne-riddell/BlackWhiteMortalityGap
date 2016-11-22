@@ -15,18 +15,19 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 ```
 
 ```{r load datasets}
+#loading in the data from NCHS, which supresses death counts between 1 and 9.
 dat.male <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/males_export.txt", header = T, sep="\t", na.strings = " ")
 names(dat.male) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
 prop.table(table(is.na(dat.male$Count)))
 head(dat.male)
 table(dat.male$Sex)
-str(dat.male) #note all numeric or int
+str(dat.male) #note all varinables are numeric or integer
 
 dat.female <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/female_export.txt", header = T, sep="\t", na.strings = " ")
 names(dat.female) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
 table(dat.female$Sex)
 dat.female$Sex <- 1
-str(dat.male) #note all numeric or int
+str(dat.male) #note all varinables are numeric or integer
 
 prop.table(table(is.na(dat.female$Count)))
 head(dat.female)
@@ -77,7 +78,6 @@ cod.dict$cod_cat[cod.dict$COD2 == "Complications of Pregnancy, Childbirth, Puerp
 
 cod.dict <- cod.dict[ ,-2]
 ```
-
 
 ```{r recode_variables}
 dat.both <- dat.both %>%
@@ -133,11 +133,9 @@ dat.both$agegrp[dat.both$Age == 0]  <- 1
 dim(dat.both)
 dat.both <- merge(dat.both, cod.dict, by = "COD2") #to add on COD_num and cod_cat
 dim(dat.both)
-
 ```
 
 ```{r for_merge}
-
 years0610 <- dat.both[dat.both$Year3 >= 2006 & dat.both$Year3 <= 2010 & dat.both$agegrp > 1, ] 
 #added the age restriction because don't want to deal with the differences in age definition right now
 
@@ -149,7 +147,6 @@ not.suppressed <- not.suppressed %>%
 years0610 <- years0610 %>% rename(COD_full = COD2)
 
 together <- merge(years0610, not.suppressed, by = c("stabbrs", "Year3", "Sex", "Race", "agegrp", "COD_full"))
-
 ```
 
 ```{r}
@@ -171,7 +168,7 @@ summary(together$rel_diff_pop)
 View(together[together$rel_diff_pop > 0.6, ])
 ```
 From above we see that the death counts match exactly and when the original count is NA the non-suppressed count is between 1 and 9.
-For some reason there is some discrpancy in the populational denominators. These do not match exactly and I don't know why. 
+For some reason there is some discrepancy in the population denominators. These do not match exactly and I don't know why. 
 
 Since we are interested in the effect of imputing the NAs and not the effect of the different denominators, we need to use the same denominators in the analysis. 
 
