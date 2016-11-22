@@ -16,15 +16,36 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 
 ```{r load_datasets}
 load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
-ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/smoothed_results.csv")
+ktm_smoothed <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/smoothed_results.csv")
+ktm_rest <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/smoothed_results_extra_states.csv")
+ktm_virginia_males <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/results_males_Virginia_Nov21.csv")
 
-ktm_rest_males <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/males_restofstates6COD.csv")
-ktm_rest_females <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/females_restofstates6COD.csv")
+dat.clean <- dat.clean[, -c(31:40)]
 
+head(ktm_smoothed)
+head(ktm_rest)
+head(ktm_virginia_males)
+
+table(ktm_rest$state == "Virginia")
+table(ktm_rest$state)
+table(ktm_smoothed$state) #check - i think Mass is in both rest and smoothed so need to remove duplicates.
+
+dim(ktm_rest)
+ktm_rest <- ktm_rest %>% filter(state != "Massachusetts") #delete duplicate
+dim(ktm_rest)
+
+length(ktm_rest$sex[ktm_rest$state ==  "Virginia" & ktm_rest$sex == "Male"])
+dim(ktm_rest)
+ktm_rest <- ktm_rest %>% filter(!(state == "Virginia" & sex == "Male"))
+dim(ktm_rest)
+
+ktm_virginia_males <- ktm_virginia_males[ , -1]
+
+ktm_all <- rbind(ktm_smoothed, ktm_rest, ktm_virginia_males)
 ```
 
 ```{r clean_smoothed_data}
-ktm_clean <- ktm_smoothed %>% 
+ktm_clean <- ktm_all %>% 
   rename(Race2 = race, Sex2 = sex, State2 = state, COD2 = cod) %>%
   mutate(Age2 = factor(age_bin, levels = c(1:19), 
                        labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
@@ -42,10 +63,10 @@ dat.clean <- merge(dat.clean, ktm_clean,
                    by = c("State2", "Year2", "Race2", "Sex2", "Age2", "COD2"), 
                    all.x = T)
 dim(dat.clean)
-
 dat.clean <- dat.clean %>% mutate(Appended_smoothed = ifelse(is.na(X), F, T))
 
 table(dat.clean$Appended_smoothed)
+prop.table(table(dat.clean$Appended_smoothed))
 ```
 
 Ensure that the merge was correct by comparing the duplicate variables (i.e., those variables in both datasets that had different names)
@@ -53,10 +74,9 @@ Ensure that the merge was correct by comparing the duplicate variables (i.e., th
 ```{r check_merge}
 dat.clean[1:10, c("smoothed_deaths", "deaths", "Count", "population", "Population", "State2", "Age2", "Sex2", "Race2", "COD2")]
 
-diffs <- dat.clean %>% transmute(diff.pop = Population - population, diff.count = Count - deaths)
-summary(diffs$diff.pop)
-summary(diffs$diff.count)
-rm(diffs)
+dat.clean <- dat.clean %>% mutate(diff.pop = Population - population, diff.count = Count - deaths)
+summary(dat.clean$diff.pop)
+summary(dat.clean$diff.count)
 ```
 
 Compare the smoothed_results to the original counts to see if they seem reasonable:
@@ -71,6 +91,16 @@ Can't really tell anything from this -- make another graphic:
 dat.clean <- dat.clean %>% mutate(diff.orig.smooth = Count - smoothed_deaths)
 summary(dat.clean$diff.orig.smooth)
 ggplot(dat.clean, aes(x = diff.orig.smooth)) + geom_density() + geom_rug(alpha = 0.1)
+
+ggplot(subset(dat.clean, State2 == "Georgia"), aes(x = diff.orig.smooth)) + geom_histogram() + geom_rug(alpha = 0.1) + facet_grid(Sex2~Race2)
+ggplot(subset(dat.clean, State2 == "Georgia" & Sex2 == "Male" & Race2 == "Black"), aes(x = diff.orig.smooth)) + geom_histogram() + geom_rug(alpha = 0.1) + facet_wrap(~Age3)
+
+ggplot(subset(dat.clean, State2 == "California"), aes(x = diff.orig.smooth)) + geom_histogram() + geom_rug(alpha = 0.1) + facet_grid(Sex2~Race2)
+ggplot(subset(dat.clean, State2 == "California" & Sex2 == "Male" & Race2 == "Black"), aes(x = diff.orig.smooth)) + geom_histogram() + geom_rug(alpha = 0.1) + facet_wrap(~Age3)
+
+
+ggplot(subset(dat.clean, State2 == "Utah"), aes(x = diff.orig.smooth)) + geom_density() + geom_rug(alpha = 0.1) + facet_grid(Sex2~Race2)
+ggplot(subset(dat.clean, State2 == "Utah" & Sex2 == "Male" & Race2 == "Black"), aes(x = diff.orig.smooth)) + geom_histogram() + geom_rug(alpha = 0.1) + facet_wrap(~Age3)
 ```
 
 ```{r addvar_cod_proportions}
@@ -114,7 +144,7 @@ non.zero.stratums.smoothed <-  unique(dat.smoothed.aggregatedCOD$StateYearRaceSe
 In those strata that KTM ran the model, create a life table and store it in a list.
 
 ```{r calculate_life_expectancy}
-#6 mins
+#15 mins
 
 list.life.tables.smoothed <- vector(mode = "list", length = length(non.zero.stratums.smoothed))
 list.index <- 1
@@ -175,8 +205,8 @@ rm(BlackWhite3, BlackSmooth, WhiteSmooth)
 ```
 
 ```{r calculate_age_decomp_smoothed}
-#18 mins
-
+#20 mins
+   
 list.age.decomp.tables.smoothed <- vector(mode = "list", length = dim(paired.ids)[1])
 
 for(i in 1:dim(paired.ids)[1]) {
@@ -196,7 +226,7 @@ for(i in 1:dim(paired.ids)[1]) {
 ```
 
 ```{r calculate_cod_decomp}
-#takes 40 mins
+#takes 84 mins
 
 list.cod.decomp.tables.smoothed <- vector(mode = "list", length = dim(paired.ids)[1])
 
