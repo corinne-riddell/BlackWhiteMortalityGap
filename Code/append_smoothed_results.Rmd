@@ -297,7 +297,8 @@ for(i in 1:dim(paired.ids)[1]) {
       
        list.cod.marginal.tables.smoothed[[i]] <- list.cod.decomp.tables.smoothed[[i]] %>% 
                                                   group_by(Cause.of.death) %>% 
-                                                  summarise(C_x_COD = sum(C_xi))
+                                                  summarise(C_x_COD = sum(C_xi)) %>%
+                                                  mutate(C_x_COD_proportion = C_x_COD/sum(C_x_COD))
       
     }
 }
