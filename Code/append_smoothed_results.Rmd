@@ -219,7 +219,7 @@ for(i in 1:dim(paired.ids)[1]) {
     list.age.decomp.tables.smoothed[[i]] <- le_age_decomp(life.table1 = as.data.frame(list.life.tables.smoothed[[black.index]]),
                                                           name.lt1 = "Black", 
                                                           life.table2 = as.data.frame(list.life.tables.smoothed[[white.index]]),
-                                                          name.lt2 = "White", age.groups = "Age3")
+                                                          name.lt2 = "White", age.groups = "Age2")
   } else {
     list.age.decomp.tables.smoothed[[i]] <-"Couldn't compare life tables"
   }
@@ -241,12 +241,12 @@ for(i in 1:dim(paired.ids)[1]) {
     ct.white <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexWhite"]) %>% 
                 ungroup() %>%
                 select(Age2, COD2, cod_prop_smoothed_deaths) %>%
-                rename(prop.white = cod_prop_smoothed_deaths)
+                dplyr::rename(prop.white = cod_prop_smoothed_deaths)
     
     ct.black <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexBlack"]) %>% 
                 ungroup() %>%
                 select(Age2, COD2, cod_prop_smoothed_deaths) %>%
-                rename(prop.black = cod_prop_smoothed_deaths)
+                dplyr::rename(prop.black = cod_prop_smoothed_deaths)
     ct.both <- merge(ct.white, ct.black, by = c("Age2", "COD2")) 
     ct.both <- ct.both %>% arrange(COD2, Age2)
     
@@ -274,7 +274,7 @@ for(i in 1:dim(paired.ids)[1]) {
 )
 ```
 
-```{r  update_decomp_for_plotting}
+```{r update_decomp_for_plotting}
 #update the decomposition table for plotting purposes
 for(i in 1:dim(paired.ids)[1]) {
     if(list.cod.decomp.tables.smoothed[[i]][1] != "Couldn't compare life tables" & 
@@ -294,10 +294,11 @@ list.cod.marginal.tables.smoothed <- vector(mode = "list", length = dim(paired.i
 for(i in 1:dim(paired.ids)[1]) {
     if(list.cod.decomp.tables.smoothed[[i]][1] != "Couldn't compare life tables" & 
        list.cod.decomp.tables.smoothed[[i]][1] != "Encountered age group with no deaths") { 
-      
-       list.cod.marginal.tables.smoothed[[i]] <- list.cod.decomp.tables.smoothed[[i]] %>% 
-                                                  group_by(Cause.of.death) %>% 
-                                                  summarise(C_x_COD = sum(C_xi))
+       list.cod.marginal.tables.smoothed[[i]] <-  list.cod.decomp.tables.smoothed[[i]] %>%
+                                                  dplyr::group_by(Cause.of.death) %>% 
+                                                  dplyr::summarise(C_x_COD = sum(C_xi)) %>%
+                                                  dplyr::mutate(C_x_COD_proportion = C_x_COD/sum(C_x_COD),
+                                                         adds_to_gap = ifelse(C_x_COD > 0, T, F))
       
     }
 }
@@ -311,6 +312,7 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
      list.age.decomp.tables5, list.cod.decomp.tables5, list.age.decomp.tables9, list.cod.decomp.tables9,
      list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed, list.cod.marginal.tables.smoothed,
+     non.zero.stratums, non.zero.stratums.smoothed,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 

@@ -55,7 +55,7 @@ le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2, name.lt2 = 2, 
   life.table2["num.alive.next.interval"] <- c(unlist(life.table2[2:dim(life.table2)[1], "l_x"]), 1) #--> end in 1 to fix calculation error of dividing by 0
 
   decomp.table <- data.frame("Ages" = life.table1[ ,age.groups], life.table1["e_x"], life.table2["e_x"],
-                             "C_x" = rep(NA, dim(life.table1)[1]))
+                             "C_x" = rep(NA, dim(life.table1)[1]), "C_x_proportion" = rep(NA, dim(life.table1)[1]))
   
   names(decomp.table)[2] <- paste0("LE_", name.lt1)
   names(decomp.table)[3] <- paste0("LE_", name.lt2)
@@ -65,6 +65,8 @@ le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2, name.lt2 = 2, 
     ((life.table2["accumulated.lived.after"]/life.table2[1, "l_x"])*
      ((life.table1["l_x"]/life.table2["l_x"]) - (life.table1["num.alive.next.interval"]/life.table2["num.alive.next.interval"]))
      )
+  
+  decomp.table["C_x_proportion"] <- decomp.table["C_x"]/sum(decomp.table["C_x"])
   
   decomp.table["adds_to_gap"] <- ifelse(decomp.table$C_x > 0, T, F)
 
@@ -91,7 +93,9 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
                                  cod.table[ , prop2.colname.cod.table],
                                  "Cause.of.death" = cod.table[ , COD.colname.cod.table],
                                  "C_xi" = C_xi)
-
+  
+  COD.decomp.table["C_xi_proportion"] <- COD.decomp.table["C_xi"]/sum(COD.decomp.table["C_xi"])
+  
   names(COD.decomp.table)[2] <- prop1.colname.cod.table
   names(COD.decomp.table)[3] <- prop2.colname.cod.table
   
@@ -112,6 +116,9 @@ make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) 
   cod.decomp.table$start <- 0
   cod.decomp.table$finish <- cod.decomp.table$C_xi
   
+  cod.decomp.table$start2 <- 0
+  cod.decomp.table$finish2 <- cod.decomp.table$C_xi_proportion
+  
   updated <- NULL
   for (g in unique(cod.decomp.table$group)) {
     subset <- cod.decomp.table[cod.decomp.table$group == g, ]
@@ -122,6 +129,9 @@ make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) 
       for (i in 2:dim(subset)[1]) {
         subset$start[i] <- subset$finish[i - 1]
         subset$finish[i] <- subset$start[i] + subset$C_xi[i]
+        
+        subset$start2[i] <- subset$finish2[i - 1]
+        subset$finish2[i] <- subset$start2[i] + subset$C_xi_proportion[i]
       }
     }
   
@@ -155,12 +165,14 @@ return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "L
 contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.table2) {
   if(type.of.decomp == "Age") {
     contribution_data <- data.frame("Ages" = decomp.table1[["Ages"]], 
-                                    "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]])
+                                    "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]],
+                                    "Contrib.to.change.prop" = decomp.table1[["C_x_proportion"]] - decomp.table2[["C_x_proportion"]])
   }
   
   if(type.of.decomp == "COD") {
      contribution_data <- data.frame("COD" = decomp.table1[["Cause.of.death"]], 
-                                     "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]])
+                                     "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]],
+                                     "Contrib.to.change.prop" = decomp.table1[["C_x_COD_proportion"]] - decomp.table2[["C_x_COD_proportion"]])
   }
   
   contribution_data[["narrowed_gap"]] <- contribution_data[["Contribution.to.change"]] >= 0 
