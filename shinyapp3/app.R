@@ -6,59 +6,65 @@ library(shinythemes)
 load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 
-ui1 <- fluidPage(#theme = shinytheme("cosmo"),
+ui1 <- fluidPage(theme = shinytheme("cosmo"),
                  #shinythemes::themeSelector(), 
                  titlePanel("Explore the black-white life expectancy gap in the United States"),
                  
                  sidebarLayout(
+                   
                    sidebarPanel(width = 4,
                      selectInput(inputId = "state", label = "Select a state", width = 200, choices = unique(levels(dat.clean$State2))),
-                     #strong("Select years to compare"),
-                     strong("Select years for decomposition"),
-                     tags$style(type="text/css", ".form-group.shiny-input-container{ display: inline-block } strong{ display: block !important  } img{ margin-bottom: 30px }"),
-                  
-                     selectInput(inputId = "year1", label = NA, choices = unique(dat.clean$Year3), width = 100),
-                     selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
-                     
                      strong("Legend\n"),
                      img(src="legend.png"),
                      strong("Population size over time"),
-                     plotlyOutput("population_trend"),
-                     radioButtons(inputId = "LE_type", label = "Model choice", inline = T, 
-                                  choices = c("Impute 1", "Impute 5", "Impute 9"), 
-                                  selected = "Impute 5"),
-                     radioButtons(inputId = "contribution_type", label = "Display contribution in", inline = T, choices = c("Years", "Proportion (%)"), selected = "Years")
-                  
+                     plotlyOutput("population_trend")
                       ),
+                   
                    mainPanel(
                      tabsetPanel(
                        tabPanel("Life Expectancy Gap",
+                                radioButtons(inputId = "LE_type", label = "Model choice", inline = T, 
+                                             choices = c("Impute 1", "Impute 5", "Impute 9"), 
+                                             selected = "Impute 5"),
                                 plotlyOutput("life_expectancy")),
                        
                        tabPanel("Decomposition by Age",
-                                plotlyOutput("male_age_bayes"),
-                                plotlyOutput("male_age_bayes2"),
-                                plotlyOutput("male_age_bayes_change")),
+                                strong("Select sex"),
+                                radioButtons(inputId = "selected_sex", label = NA, 
+                                             inline = T, choices = c("Male", "Female"), selected = "Male"),
+                                strong("Select years"),
+                                tags$style(type="text/css", ".form-group.shiny-input-container{ display: inline-block } strong{ display: block !important  } img{ margin-bottom: 0px }"),
+                                
+                                selectInput(inputId = "year1", label = NA, choices = unique(dat.clean$Year3), width = 100),
+                                selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
+                                strong("Display contribution in"),
+                                radioButtons(inputId = "contribution_type", label = NA, 
+                                             inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
+                                plotlyOutput("age_bayes"),
+                                plotlyOutput("age_bayes2"),
+                                plotlyOutput("age_bayes_change")),
                        
                        tabPanel("Decomposition by Cause",
-                                plotlyOutput("male_cod_bayes")),
+                                plotlyOutput("cod_bayes"),
+                                plotlyOutput("cod_bayes2"),
+                                textOutput("temp2"),
+                                dataTableOutput("temp"),
+                                dataTableOutput("temp3")),
                        
                        tabPanel("Decomposition by Age & Cause",
-                                plotlyOutput("male_age_comp1"),
-                                plotlyOutput("male_age_cod_bayes"))
+                                plotlyOutput("age_cod_bayes"),
+                                plotlyOutput("age_cod_bayes2"))
+                       )
                      )
-                     
-                     #radioButtons(inputId = "decomp_type", label = "Type of decomposition", inline = T, choices = c("Age", "Cause of death", "Both"), selected = "Age"),
-                     #plotlyOutput("male_age_comp2"),
-                     #plotlyOutput("female_age_comp1"),
-                     #plotlyOutput("female_age_comp2")                   
-                     )
-                 )
-
+                   )
                  )
 
 server <- function(input, output) {
 
+  ##########################################
+  ##              Sidebar                 ##
+  ##########################################
+  
   output$population_trend <- renderPlotly({
     p <- ggplotly(
       ggplot(subset(dat2, State2 == input$state & Age3 == 0), aes(y = Pop_across_age, x = Year3)) + 
@@ -73,6 +79,10 @@ server <- function(input, output) {
     p %>% layout(showlegend = F)
    
   })
+
+  ##########################################
+  ##          Life Expectancy tab         ##
+  ##########################################
   
   gap.react <- reactive({
     switch(input$LE_type,
@@ -92,7 +102,7 @@ server <- function(input, output) {
   
   black.react <- reactive({
     switch(input$LE_type,
-       #    "Bayesian Smoothing" = BlackWhite[["le.smoothed.black"]],
+       #  "Bayesian Smoothing" = BlackWhite[["le.smoothed.black"]],
            "Impute 1" = BlackWhite[["le.birth.black"]],
            "Impute 5" = BlackWhite[["le.birth.black5"]],
            "Impute 9" = BlackWhite[["le.birth.black9"]])
@@ -136,97 +146,58 @@ server <- function(input, output) {
     subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
   })
   
+  ##########################################
+  ##              Age tab                 ##
+  ##########################################
   
-  decomp.react <- reactive({
-    switch(input$LE_type,
-           "Bayesian Smoothing" = list.cod.decomp.tables.smoothed,
-           "Impute 1" = list.cod.decomp.tables,
-           "Impute 5" = list.cod.decomp.tables5,
-           "Impute 9" = list.cod.decomp.tables9)
-  })
-  
-#  bayes.decomp.react <- reactive({
-#    switch(input$decomp_type,
-#           "Age"= list.age.decomp.tables.smoothed,
-#           "Cause of death" = list.cod.marginal.tables.smoothed,
-#           "Both" = list.cod.decomp.tables.smoothed)
-#  })
-  
-  output$male_age_comp1 <- renderPlotly({
-
-            ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
-                                paired.ids$Year3 == input$year1 & 
-                                paired.ids$Sex2 == "Male")]],
-                        aes(y = Ages, x = start)) + 
-                   geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-                   xlab("Contribution to life expectancy gap (in years)") +
-                   ylab("Age group\n") + theme_minimal() +
-                   geom_vline(xintercept = 0))
-  
-       })
-  
-  output$male_age_cod_bayes <- renderPlotly({
-    
-    ggplotly(ggplot(list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                     paired.ids$Year3 == input$year1 & 
-                                                     paired.ids$Sex2 == "Male")]],
-                    aes(y = Ages, x = start)) + 
-                    geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-                    xlab("Contribution to life expectancy gap") +
-                    ylab("Age group\n") + theme_minimal() +
-                    geom_vline(xintercept = 0)) 
-                    #title(paste0("Contribution of age-COD combination to the black-white life expectancy gap for males in ", input$state, " in ", input$year1))
-    
-  })
-
   xaxis.react <- reactive({ 
     switch(input$contribution_type,
            "Years" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                               paired.ids$Year3 == input$year1 & 
-                                                              paired.ids$Sex2 == "Male")]][["C_x"]],
+                                                              paired.ids$Sex2 == input$selected_sex)]][["C_x"]],
            "Proportion (%)" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                        paired.ids$Year3 == input$year1 & 
-                                                                       paired.ids$Sex2 == "Male")]][["C_x_proportion"]])
+                                                                       paired.ids$Sex2 == input$selected_sex)]][["C_x_proportion"]])
   })
 
   xaxis.react2 <- reactive({ 
     switch(input$contribution_type,
            "Years" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                               paired.ids$Year3 == input$year2 & 
-                                                              paired.ids$Sex2 == "Male")]][["C_x"]],
+                                                              paired.ids$Sex2 == input$selected_sex)]][["C_x"]],
            "Proportion (%)" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                        paired.ids$Year3 == input$year2 & 
-                                                                       paired.ids$Sex2 == "Male")]][["C_x_proportion"]])
+                                                                       paired.ids$Sex2 == input$selected_sex)]][["C_x_proportion"]])
   })
   
   decomp.data.react <- reactive({
     data.frame(Ages = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                paired.ids$Year3 == input$year1 & 
-                                                               paired.ids$Sex2 == "Male")]][["Ages"]],
+                                                               paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
                adds_to_gap = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                       paired.ids$Year3 == input$year1 & 
-                                                                      paired.ids$Sex2 == "Male")]][["adds_to_gap"]],
+                                                                      paired.ids$Sex2 == input$selected_sex)]][["adds_to_gap"]],
                x1 = xaxis.react())
   })
   
   decomp.data.react2 <- reactive({
     data.frame(Ages = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                paired.ids$Year3 == input$year2 & 
-                                                               paired.ids$Sex2 == "Male")]][["Ages"]],
+                                                               paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
                adds_to_gap = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                       paired.ids$Year3 == input$year2 & 
-                                                                      paired.ids$Sex2 == "Male")]][["adds_to_gap"]],
+                                                                      paired.ids$Sex2 == input$selected_sex)]][["adds_to_gap"]],
                x1 = xaxis.react2())
   })
 
   contribution.data.react <- reactive({
                             contribution.to.gap.change(type.of.decomp = "Age", 
                               list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                      paired.ids$Year3 == input$year2 & 
-                                                                      paired.ids$Sex2 == "Male")]],
-                              list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                       paired.ids$Year3 == input$year1 & 
-                                                                      paired.ids$Sex2 == "Male")]])
+                                                                      paired.ids$Sex2 == input$selected_sex)]],
+                              list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                      paired.ids$Year3 == input$year2 & 
+                                                                      paired.ids$Sex2 == input$selected_sex)]])
   })
   
 
@@ -239,7 +210,7 @@ server <- function(input, output) {
            "Proportion (%)" = "(%)")
     })
   
-  output$male_age_bayes <- renderPlotly({
+  output$age_bayes <- renderPlotly({
     
     ggplotly(ggplot(decomp.data.react(), aes(y = Ages, x = x1)) + 
                geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
@@ -248,13 +219,13 @@ server <- function(input, output) {
                geom_vline(xintercept = 0) +
                #scale_y_reverse() + 
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
-               ggtitle(paste0("Males in ", input$state, " in ", input$year1)) +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year1)) +
                xlim(xlim.lower(), xlim.upper())
     )
 
     })
 
-  output$male_age_bayes2 <- renderPlotly({
+  output$age_bayes2 <- renderPlotly({
     
     ggplotly(ggplot(decomp.data.react2(), aes(y = Ages, x = x1)) + 
                geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
@@ -263,13 +234,13 @@ server <- function(input, output) {
                geom_vline(xintercept = 0) +
                #scale_y_reverse() + 
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
-               ggtitle(paste0("Males in ", input$state, " in ", input$year2)) +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
                xlim(xlim.lower(), xlim.upper())
     )
     
   })
   
-  output$male_age_bayes_change <- renderPlotly({
+  output$age_bayes_change <- renderPlotly({
     #NEED TO UPDATE THIS 
     ggplotly(ggplot(contribution.data.react(), aes(y = Ages, x = Contribution.to.change)) +
                geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
@@ -278,65 +249,176 @@ server <- function(input, output) {
                geom_vline(xintercept = 0) +
                #scale_y_reverse() + 
                xlab(paste0("Contribution to change in life expectancy gap NOT RIGHT SEE NOTE ", xaxis.title())) +
-               ggtitle(paste0("Males in ", input$state, " in ", input$year2)) +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
                xlim(xlim.lower(), xlim.upper())
     )
     
   })
   
-  #compute the change
+  ##########################################
+  ##         Cause of death tab           ##
+  ##########################################
   
+  xaxis.react3 <- reactive({ 
+    switch(input$contribution_type,
+           "Years" = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                              paired.ids$Year3 == input$year1 & 
+                                                              paired.ids$Sex2 == input$selected_sex)]][["C_x_COD"]],
+           "Proportion (%)" = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                       paired.ids$Year3 == input$year1 & 
+                                                                       paired.ids$Sex2 == input$selected_sex)]][["C_x_COD_proportion"]])
+  })
   
+  xaxis.react4 <- reactive({ 
+    switch(input$contribution_type,
+           "Years" = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                              paired.ids$Year3 == input$year2 & 
+                                                              paired.ids$Sex2 == input$selected_sex)]][["C_x_COD"]],
+           "Proportion (%)" = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                       paired.ids$Year3 == input$year2 & 
+                                                                       paired.ids$Sex2 == input$selected_sex)]][["C_x_COD_proportion"]])
+  })
   
+  cod.decomp.data.react <- reactive({
+    data.frame(COD = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                               paired.ids$Year3 == input$year1 & 
+                                                               paired.ids$Sex2 == input$selected_sex)]][["Cause.of.death"]],
+               adds_to_gap = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                      paired.ids$Year3 == input$year1 & 
+                                                                      paired.ids$Sex2 == input$selected_sex)]][["adds_to_gap"]],
+               x1 = xaxis.react3())
+  })
   
-  output$male_cod_bayes <- renderPlotly({  
-    ggplotly(ggplot(as.data.frame(list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                  paired.ids$Year3 == input$year1 & 
-                                                                  paired.ids$Sex2 == "Male")]]), 
-                    aes(y = Cause.of.death, x = C_x_COD)) + 
-               geom_segment(aes(xend = 0, yend = Cause.of.death, col = Cause.of.death), lwd = 4) + #col = adds_to_gap
-               #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
+  cod.decomp.data.react2 <- reactive({
+    data.frame(COD = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                               paired.ids$Year3 == input$year2 & 
+                                                               paired.ids$Sex2 == input$selected_sex)]][["Cause.of.death"]],
+               adds_to_gap = list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                      paired.ids$Year3 == input$year2 & 
+                                                                      paired.ids$Sex2 == input$selected_sex)]][["adds_to_gap"]],
+               x1 = xaxis.react4())
+  })
+  
+  xlim.upper2 <- reactive({ max(max(cod.decomp.data.react()$x1), max(cod.decomp.data.react2()$x1)) })
+  xlim.lower2 <- reactive({ ifelse(min(min(cod.decomp.data.react()$x1), min(cod.decomp.data.react2()$x1)) >= 0, 0,
+                                   min(min(cod.decomp.data.react()$x1), min(cod.decomp.data.react2()$x1))) 
+    })  
+  
+   
+  output$cod_bayes <- renderPlotly({  
+    ggplotly(ggplot(cod.decomp.data.react(), aes(y = COD, x = x1)) + 
+               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 4) + 
                theme_minimal() +
                geom_vline(xintercept = 0) +
-               #scale_y_reverse() + 
-               xlab("Contribution to life expectnacy gap") +
-               ggtitle(paste0("Contribution of COD to the black-white life expectancy gap for males in ", input$state, " in ", input$year1)))
+               xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
+               ylab("Cause of death") +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year1)) #+
+               #xlim(xlim.lower2(), xlim.upper2())
+             ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())))
     
   })   
-#   output$male_age_comp2 <- renderPlotly({
-#     ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
-#                             paired.ids$Year3 == input$year2 & 
-#                             paired.ids$Sex2 == "Male")]],
-#                     aes(y = Ages, x = start)) + 
-#                geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-#                xlab("Contribution to life expectancy gap (in years)") +
-#                ylab("Age group\n") + theme_minimal() +
-#                geom_vline(xintercept = 0))
-# })  
   
-  # output$female_age_comp1 <- renderPlotly({
-  #   
-  #   ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
-  #                                           paired.ids$Year3 == input$year1 & 
-  #                                           paired.ids$Sex2 == "Female")]],
-  #                   aes(y = Ages, x = start)) + 
-  #              geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-  #              xlab("Contribution to life expectancy gap (in years)") +
-  #              ylab("Age group\n") + theme_minimal() +
-  #              geom_vline(xintercept = 0))
-  #   
-  # })
-  # 
-  # output$female_age_comp2 <- renderPlotly({
-  #   ggplotly(ggplot(decomp.react()[[which(paired.ids$State2 ==  input$state & 
-  #                                                   paired.ids$Year3 == input$year2 & 
-  #                                                   paired.ids$Sex2 == "Female")]],
-  #                   aes(y = Ages, x = start)) + 
-  #              geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-  #              xlab("Contribution to life expectancy gap (in years)") +
-  #              ylab("Age group\n") + theme_minimal() +
-  #              geom_vline(xintercept = 0))
-  # })
+  output$cod_bayes2 <- renderPlotly({  
+    ggplotly(ggplot(cod.decomp.data.react2(), aes(y = COD, x = x1)) + 
+               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 4) + 
+               theme_minimal() +
+               geom_vline(xintercept = 0) +
+               xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
+               ylab("Cause of death") +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) #+
+               #xlim(xlim.lower2(), xlim.upper2())
+             ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())))
     
+  })   
+  
+  output$temp2 <- renderText(paste0("The lower limit is ", xlim.lower2(), " and the upper is ", xlim.upper2()))
+  output$temp <- renderDataTable(cod.decomp.data.react())
+  output$temp3 <- renderDataTable(cod.decomp.data.react2())
+
+  ##########################################
+  ##    Age and cause of death tab        ##
+  ##########################################
+  
+  age.cod.data.react <- reactive({ 
+    switch(input$contribution_type,
+           "Years" = data.frame(start = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                 paired.ids$Year3 == input$year1 & 
+                                                                                 paired.ids$Sex2 == input$selected_sex)]][["start"]],
+                                finish = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                  paired.ids$Year3 == input$year1 & 
+                                                                                  paired.ids$Sex2 == input$selected_sex)]][["finish"]],
+                                Ages = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                paired.ids$Year3 == input$year1 & 
+                                                                                paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
+                                COD = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                               paired.ids$Year3 == input$year1 & 
+                                                                               paired.ids$Sex2 == input$selected_sex)]][["Cause.of.death"]]),
+           
+           "Proportion (%)" = data.frame(start = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                          paired.ids$Year3 == input$year1 & 
+                                                                                          paired.ids$Sex2 == input$selected_sex)]][["start2"]],
+                                         finish = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                           paired.ids$Year3 == input$year1 & 
+                                                                                           paired.ids$Sex2 == input$selected_sex)]][["finish2"]],
+                                         Ages = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                         paired.ids$Year3 == input$year2 & 
+                                                                                         paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
+                                         COD = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                        paired.ids$Year3 == input$year2 & 
+                                                                                        paired.ids$Sex2 == input$selected_sex)]][["Cause.of.death"]])
+    )
+  })
+  
+  age.cod.data.react2 <- reactive({ 
+    switch(input$contribution_type,
+           "Years" = data.frame(start = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                              paired.ids$Year3 == input$year2 & 
+                                                              paired.ids$Sex2 == input$selected_sex)]][["start"]],
+                                finish = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                  paired.ids$Year3 == input$year2 & 
+                                                                                  paired.ids$Sex2 == input$selected_sex)]][["finish"]],
+                                Ages = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                  paired.ids$Year3 == input$year2 & 
+                                                                                  paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
+                                COD = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                  paired.ids$Year3 == input$year2 & 
+                                                                                  paired.ids$Sex2 == input$selected_sex)]][["Cause.of.death"]]),
+           
+           "Proportion (%)" = data.frame(start = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                          paired.ids$Year3 == input$year2 & 
+                                                                                          paired.ids$Sex2 == input$selected_sex)]][["start2"]],
+                                         finish = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                           paired.ids$Year3 == input$year2 & 
+                                                                                           paired.ids$Sex2 == input$selected_sex)]][["finish2"]],
+                                         Ages = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                         paired.ids$Year3 == input$year2 & 
+                                                                                         paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
+                                         COD = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                        paired.ids$Year3 == input$year2 & 
+                                                                                        paired.ids$Sex2 == input$selected_sex)]][["Cause.of.death"]])
+    )
+    
+  })
+  
+  output$age_cod_bayes <- renderPlotly({
+    
+    ggplotly(ggplot(age.cod.data.react(),
+                    aes(y = Ages, x = start)) + 
+               geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 4) +
+               xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
+               ylab("Age group\n") + theme_minimal() +
+               geom_vline(xintercept = 0)) 
+  })  
+  
+  output$age_cod_bayes2 <- renderPlotly({
+    
+    ggplotly(ggplot(age.cod.data.react2(),
+                    aes(y = Ages, x = start)) + 
+               geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 4) +
+               xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
+               ylab("Age group\n") + theme_minimal() +
+               geom_vline(xintercept = 0)) 
+  })  
 }
+
 shinyApp(ui = ui1, server = server)
