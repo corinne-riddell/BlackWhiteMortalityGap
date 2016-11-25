@@ -165,16 +165,15 @@ return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "L
 contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.table2) {
   if(type.of.decomp == "Age") {
     contribution_data <- data.frame("Ages" = decomp.table1[["Ages"]], 
-                                    "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]],
-                                    "Contrib.to.change.prop" = decomp.table1[["C_x_proportion"]] - decomp.table2[["C_x_proportion"]])
+                                    "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]])
   }
   
   if(type.of.decomp == "COD") {
      contribution_data <- data.frame("COD" = decomp.table1[["Cause.of.death"]], 
-                                     "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]],
-                                     "Contrib.to.change.prop" = decomp.table1[["C_x_COD_proportion"]] - decomp.table2[["C_x_COD_proportion"]])
+                                     "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]])
   }
   
+  contribution_data[["Contrib.to.change.prop"]] <- contribution_data[["Contribution.to.change"]]/sum(contribution_data[["Contribution.to.change"]])
   contribution_data[["narrowed_gap"]] <- contribution_data[["Contribution.to.change"]] >= 0 
   
   return(contribution_data)

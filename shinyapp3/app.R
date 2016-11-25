@@ -46,10 +46,10 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                        
                        tabPanel("Decomposition by Cause",
                                 plotlyOutput("cod_bayes"),
-                                plotlyOutput("cod_bayes2"),
-                                textOutput("temp2"),
-                                dataTableOutput("temp"),
-                                dataTableOutput("temp3")),
+                                plotlyOutput("cod_bayes2")),
+                                #textOutput("temp2"),
+                                #dataTableOutput("temp"),
+                                #dataTableOutput("temp3")),
                        
                        tabPanel("Decomposition by Age & Cause",
                                 plotlyOutput("age_cod_bayes"),
@@ -191,13 +191,20 @@ server <- function(input, output) {
   })
 
   contribution.data.react <- reactive({
-                            contribution.to.gap.change(type.of.decomp = "Age", 
+                             temp <- contribution.to.gap.change(type.of.decomp = "Age", 
                               list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                       paired.ids$Year3 == input$year1 & 
                                                                       paired.ids$Sex2 == input$selected_sex)]],
                               list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
                                                                       paired.ids$Year3 == input$year2 & 
                                                                       paired.ids$Sex2 == input$selected_sex)]])
+                             
+                             temp[["change.x"]] <- switch(input$contribution_type,
+                                                          "Years" = temp[["Contribution.to.change"]],
+                                                          "Proportion (%)" = temp[["Contrib.to.change.prop"]]
+                             )
+                             
+                             temp
   })
   
 
@@ -212,7 +219,7 @@ server <- function(input, output) {
   
   output$age_bayes <- renderPlotly({
     
-    ggplotly(ggplot(decomp.data.react(), aes(y = Ages, x = x1)) + 
+    p3 <- ggplotly(ggplot(decomp.data.react(), aes(y = Ages, x = x1)) + 
                geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
                #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
                theme_minimal() +
@@ -222,33 +229,32 @@ server <- function(input, output) {
                ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year1)) +
                xlim(xlim.lower(), xlim.upper())
     )
-
+    
+    p3
     })
 
   output$age_bayes2 <- renderPlotly({
-    
-    ggplotly(ggplot(decomp.data.react2(), aes(y = Ages, x = x1)) + 
-               geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
-               #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
-               theme_minimal() +
-               geom_vline(xintercept = 0) +
-               #scale_y_reverse() + 
-               xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
-               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
-               xlim(xlim.lower(), xlim.upper())
+    p4 <- ggplotly(ggplot(decomp.data.react2(), aes(y = Ages, x = x1)) + 
+                     geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
+                     #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
+                     theme_minimal() +
+                     geom_vline(xintercept = 0) +
+                     #scale_y_reverse() + 
+                     xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
+                     ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
+                     xlim(xlim.lower(), xlim.upper())
     )
-    
-  })
+    p4
+ })
   
   output$age_bayes_change <- renderPlotly({
-    #NEED TO UPDATE THIS 
-    ggplotly(ggplot(contribution.data.react(), aes(y = Ages, x = Contribution.to.change)) +
+    ggplotly(ggplot(contribution.data.react(), aes(y = Ages, x = change.x)) +
                geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
                #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
                theme_minimal() +
                geom_vline(xintercept = 0) +
                #scale_y_reverse() + 
-               xlab(paste0("Contribution to change in life expectancy gap NOT RIGHT SEE NOTE ", xaxis.title())) +
+               xlab(paste0("Contribution to change in life expectancy gap", xaxis.title())) +
                ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
                xlim(xlim.lower(), xlim.upper())
     )
@@ -314,7 +320,7 @@ server <- function(input, output) {
                ylab("Cause of death") +
                ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year1)) #+
                #xlim(xlim.lower2(), xlim.upper2())
-             ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())))
+             ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())), yaxis = list(autorange = "reversed"))
     
   })   
   
@@ -327,13 +333,13 @@ server <- function(input, output) {
                ylab("Cause of death") +
                ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) #+
                #xlim(xlim.lower2(), xlim.upper2())
-             ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())))
+             ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())), yaxis = list(autorange = "reversed"))
     
   })   
   
-  output$temp2 <- renderText(paste0("The lower limit is ", xlim.lower2(), " and the upper is ", xlim.upper2()))
-  output$temp <- renderDataTable(cod.decomp.data.react())
-  output$temp3 <- renderDataTable(cod.decomp.data.react2())
+  #output$temp2 <- renderText(paste0("The lower limit is ", xlim.lower2(), " and the upper is ", xlim.upper2()))
+  #output$temp <- renderDataTable(cod.decomp.data.react())
+  #output$temp3 <- renderDataTable(cod.decomp.data.react2())
 
   ##########################################
   ##    Age and cause of death tab        ##
@@ -368,7 +374,7 @@ server <- function(input, output) {
                                                                                         paired.ids$Sex2 == input$selected_sex)]][["Cause.of.death"]])
     )
   })
-  
+
   age.cod.data.react2 <- reactive({ 
     switch(input$contribution_type,
            "Years" = data.frame(start = list.cod.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
@@ -407,7 +413,10 @@ server <- function(input, output) {
                geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 4) +
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
                ylab("Age group\n") + theme_minimal() +
-               geom_vline(xintercept = 0)) 
+               geom_vline(xintercept = 0) + 
+               xlim(xlim.lower(), xlim.upper()) +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year1)) 
+             ) 
   })  
   
   output$age_cod_bayes2 <- renderPlotly({
@@ -417,7 +426,10 @@ server <- function(input, output) {
                geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 4) +
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
                ylab("Age group\n") + theme_minimal() +
-               geom_vline(xintercept = 0)) 
+               geom_vline(xintercept = 0)  +
+               xlim(xlim.lower(), xlim.upper()) +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) 
+             )
   })  
 }
 
