@@ -1,22 +1,23 @@
 
+# LIST OF FUNCTIONS
+# subset_data_jags
+# create_dataset
+# bwmort_smooth_time
+# combine_race_data
+# merge_data
+# run_smoothing_models
+# get_allcod
+# get_life_tables
+# run_smoothing_models_mulitple_states
+# extract_mcmc_dist
 
-subset_data = function(race, sex, cod, state) {
+subset_data_jags = function(ds, race, sex, cod, state) {
   
-  selected_vars = c('Age', 'Sex2', 'Race2', 'COD2', 'Year', 'Count', 'Population', 'upper_bound')
-  
-  ds = dat.clean[(dat.clean$Race2==race & 
-                    dat.clean$Sex2==sex &
-                    dat.clean$State2==state &
-                    dat.clean$COD2==cod), selected_vars]
-  
-  df = data.frame(deaths=ds$Count, pop = ds$Population, age=(ds$Age+1), year=(ds$Year+1), upper_bound = ds$upper_bound) 
-  df$censored = ifelse(is.na(df$deaths),1,0)
-  
-  ds2 = df[order(df$censored), ]
+  ds2 = ds[order(ds$censored), ]
   
   ds_jags = list(deaths = ds2$deaths, 
-                 lnpop = log(ds2$pop), 
-                 age.bin = ds2$age, 
+                 lnpop = log(ds2$population), 
+                 age.bin = ds2$agebins, 
                  year = ds2$year, 
                  upper_bound = ds2$upper_bound, 
                  binned = is.na(ds2$deaths), 
@@ -25,11 +26,21 @@ subset_data = function(race, sex, cod, state) {
                  n.not.binned = sum(!is.na(ds2$deaths)),
                  n.not.binned.plus.1 = sum(!is.na(ds2$deaths)) + 1,
                  n.rows = sum(is.na(ds2$deaths)) + sum(!is.na(ds2$deaths)),
-                 n.age.bins = length(unique(ds2$age)),
+                 n.age.bins = length(unique(ds2$agebins)),
                  n.years = length(unique(ds2$year)), 
                  binned.id = ds2$censored) 
-  
-  return(ds_jags) 
+}
+
+create_dataset = function(df,  colname_state, colname_pop, colname_deaths, colname_cod, colname_year, colname_sex, colname_agebins, colname_race) {  
+
+  selected_vars = c(colname_state, colname_pop, colname_deaths, colname_cod, colname_year, colname_sex, colname_agebins, colname_race)
+  ds = df[ , selected_vars] 
+  colnames(ds) = c('state', 'population', 'deaths', 'cod', 'year', 'sex', 'agebins', 'race')
+  ds$agebins = ds$agebins + 1
+  ds$year = ds$year + 1
+  ds$upper_bound = ifelse(ds$population<9, ds$population, 9) 
+  ds$censored = ifelse(is.na(ds$deaths),1,0)
+  return(ds) 
 } 
 
 bwmort_smooth_time = function(ds_jags_bw) { 
@@ -104,23 +115,23 @@ combine_race_data = function(dsb, dsw) {
   return(c(dsb, dsw))
 }
 
-merge_data = function(sex, state, cod_list) {
+merge_data = function(ds, sex, state, cod_list) {
   
   ds_black = ds_white = ds_jags_bw = list() 
   N_COD = length(cod_list) 
   
   for(i in 1:N_COD) { 
     current_cod = cod_list[i] 
-    ds_black = subset_data(race='Black', sex=sex, cod=current_cod, state=state) 
-    ds_white = subset_data(race='White', sex=sex, cod=current_cod, state=state) 
+    ds_black = subset_data_jags(ds, race='Black', sex=sex, cod=current_cod, state=state) 
+    ds_white = subset_data_jags(ds, race='White', sex=sex, cod=current_cod, state=state) 
     ds_jags_bw[[i]] = combine_race_data(ds_black, ds_white) 
   }
   return(ds_jags_bw)
 }
 
-run_smoothing_models_by_sex = function(state, sex, cod_list)  {  
+run_smoothing_models = function(ds, state, sex, cod_list)  {  
   
-  ds_jags_bw = merge_data(sex=sex, state=state, cod_list=cod_list) 
+  ds_jags_bw = merge_data(ds, sex=sex, state=state, cod_list=cod_list) 
   
   jags_bw = list() 
   
@@ -209,21 +220,22 @@ get_life_tables = function(jags_bw, sex, year, state) {  #r = object from run_sm
   
 }
 
-run_smoothing_models_mulitple_states = function(states, cod_list) {
+run_smoothing_models_mulitple_states = function(df, states, cod_list, 
+                                                colname_state, colname_pop, colname_deaths, colname_cod, 
+                                                colname_year, colname_sex, colname_agebins, colname_race ) {
   nstates = length(states) 
   results_male = results_female = list()
+  ds =  create_dataset(df,  colname_state, colname_pop, colname_deaths, colname_cod, colname_year, colname_sex, colname_agebins, colname_race)
   for(i in 1:nstates) {
     print(states[i])
-    results_male = run_smoothing_models(state=states[i], sex='Male', cod_list=cod_list)
-    results_female = run_smoothing_models(state=states[i], sex='Female', cod_list=cod_list)
+    results_male = run_smoothing_models(ds, state=states[i], sex='Male', cod_list=cod_list)
+    results_female = run_smoothing_models(ds, state=states[i], sex='Female', cod_list=cod_list)
   }
   name1 = paste0('results_male_', states[i], '.RData') 
   name2 = paste0('results_female_', states[i], '.RData') 
   save(results_male, file=name1) 
   save(results_female, file=name2) 
 }
-
-
 
 extract_mcmc_dist = function(year, state, sex, n_post_samps) {
   
@@ -265,6 +277,7 @@ extract_mcmc_dist = function(year, state, sex, n_post_samps) {
   }
   return(temp_df_list) 
 }
+
 
 
 
