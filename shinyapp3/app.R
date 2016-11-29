@@ -26,7 +26,9 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 radioButtons(inputId = "LE_type", label = "Model choice", inline = T, 
                                              choices = c("Impute 1", "Impute 5", "Impute 9"), 
                                              selected = "Impute 5"),
-                                plotlyOutput("life_expectancy")),
+                                plotlyOutput("life_expectancy"),
+                                textOutput("Explain_LE_males"),
+                                textOutput("Explain_LE_females")),
                        
                        tabPanel("Decomposition by Age",
                                 strong("Select sex"),
@@ -122,6 +124,11 @@ server <- function(input, output) {
                WBgap.s = BlackWhite[["WBgap.s"]])
   })
   
+  facet_names <- list(
+    'Male'="Male Life Expectancy (years)",
+    'Female'="Female Life Expectancy (years)"
+  )
+  
   output$life_expectancy <- renderPlotly({
 
     p1 <- ggplotly(ggplot(subset(dat.react(), State2 == input$state), aes(x = Year3, y = y1)) +
@@ -131,20 +138,94 @@ server <- function(input, output) {
                     geom_line(aes(y = le.smoothed.white), lty = 1, lwd = 0.5, alpha = 0.5) + 
                     geom_line(aes(y = le.smoothed.black), lty = 2, lwd = 0.5, alpha = 0.5) + 
                     scale_color_manual(values = c("#67a9cf", "#ef8a62", "black")) +
-                    facet_wrap( ~ Sex2) +
-                    scale_x_continuous(name = "Year") + scale_y_continuous(name = "Life expectancy at birth (years)") + 
-                    theme_minimal() + theme(legend.title=element_blank())
-                    )
+                    facet_grid(. ~ Sex2, labeller = as_labeller(facet_names)) +
+                    #scale_x_continuous(name = "Year") + 
+                     #scale_y_continuous(name = "Life expectancy at birth (years)") + 
+                    theme_minimal() + theme(legend.title=element_blank()) 
+                    ) %>% 
+      layout(yaxis = list(title = "Life expectancy"))
     
     p1
     
     p2 <- ggplotly(ggplot(subset(dat.react(), State2 == input$state), aes(x = Year3, y = WBgap)) + geom_line(col = "grey") +
                      geom_line(aes(y = WBgap.s), col = "black", alpha = 0.5) + 
-                     facet_wrap(~ Sex2) + scale_x_continuous(name = "Year") + 
-                     scale_y_continuous(name = "Life expectancy gap (years)") + 
-                     theme_minimal() + theme(legend.title=element_blank()))
+                     facet_grid(. ~ Sex2) + #scale_x_continuous(name = "Year") + 
+                     #scale_y_continuous(name = "Life expectancy gap (years)") + 
+                     theme_minimal() + theme(legend.title=element_blank(), strip.text.x = element_blank())) %>% 
+      layout(yaxis = list(title = "Difference"), xaxis = list(title = "Year"))
     
     subplot(p1, p2, shareX = T, nrows = 2, titleY = T)
+  })
+  
+  white.y1 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state,Year3 == input$year1, Sex2 == "Male") %>% 
+            select(le.smoothed.white), 1)
+  })
+  
+  white.y2 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state, Year3 == input$year2, Sex2 == "Male") %>% 
+            select(le.smoothed.white), 1)
+  })
+  
+  black.y1 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state,Year3 == input$year1, Sex2 == "Male") %>% 
+            select(le.smoothed.black), 1)
+  })
+  
+  black.y2 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state, Year3 == input$year2, Sex2 == "Male") %>% 
+            select(le.smoothed.black), 1)
+  }) 
+  
+  output$Explain_LE_males <- renderText({
+    paste0("In ", input$state, " between ", input$year1,
+           " and ", input$year2,", life expectancy at birth changed from ",  white.y1(), 
+           " years to ", white.y2(), " years (for a change of ", round(white.y2()-white.y1(),1), 
+           " years) for white males. For black males, the change was from ", black.y1()," years to ", black.y2(), 
+           " years (", round(black.y2()-black.y1(),1),
+           " years change). The black-white difference in male life expectancy changed by ",
+           round((white.y2() - black.y2()) - (white.y1() - black.y1()), 1), " years: from ",
+           round(white.y1() - black.y1(), 1), " years to ", round(white.y2() - black.y2(), 1) , " years.") 
+
+    })
+
+  fwhite.y1 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state,Year3 == input$year1, Sex2 == "Female") %>% 
+            select(le.smoothed.white), 1)
+  })
+  
+  fwhite.y2 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state, Year3 == input$year2, Sex2 == "Female") %>% 
+            select(le.smoothed.white), 1)
+  })
+  
+  fblack.y1 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state,Year3 == input$year1, Sex2 == "Female") %>% 
+            select(le.smoothed.black), 1)
+  })
+  
+  fblack.y2 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state, Year3 == input$year2, Sex2 == "Female") %>% 
+            select(le.smoothed.black), 1)
+  }) 
+  
+  output$Explain_LE_females <- renderText({
+    paste0("For white females, life expectancy at birth changed from ",  fwhite.y1(), 
+           " years to ", fwhite.y2(), " years (for a change of ", round(fwhite.y2()-fwhite.y1(),1), 
+           " years). For black females, the change was from ", fblack.y1()," years to ", fblack.y2(), 
+           " years (", round(fblack.y2()-fblack.y1(),1),
+           " years change). The black-white difference in female life expectancy changed by ",
+           round((fwhite.y2() - fblack.y2()) - (fwhite.y1() - fblack.y1()), 1), " years: from ",
+           round(fwhite.y1() - fblack.y1(), 1), " years to ", round(fwhite.y2() - fblack.y2(), 1) , " years.") 
+    
   })
   
   ##########################################
