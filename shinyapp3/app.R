@@ -46,7 +46,8 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                        
                        tabPanel("Decomposition by Cause",
                                 plotlyOutput("cod_bayes"),
-                                plotlyOutput("cod_bayes2")),
+                                plotlyOutput("cod_bayes2"),
+                                plotlyOutput("cod_bayes_change")),
                                 #textOutput("temp2"),
                                 #dataTableOutput("temp"),
                                 #dataTableOutput("temp3")),
@@ -305,6 +306,24 @@ server <- function(input, output) {
                x1 = xaxis.react4())
   })
   
+  cod.contribution.data.react <- reactive({
+    temp2 <- contribution.to.gap.change(type.of.decomp = "COD", 
+                                       list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                paired.ids$Year3 == input$year1 & 
+                                                                                paired.ids$Sex2 == input$selected_sex)]],
+                                       list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                                paired.ids$Year3 == input$year2 & 
+                                                                                paired.ids$Sex2 == input$selected_sex)]])
+    
+    temp2[["change.x"]] <- switch(input$contribution_type,
+                                 "Years" = temp2[["Contribution.to.change"]],
+                                 "Proportion (%)" = temp2[["Contrib.to.change.prop"]]
+    )
+    
+    temp2
+  })
+  
+  
   xlim.upper2 <- reactive({ max(max(cod.decomp.data.react()$x1), max(cod.decomp.data.react2()$x1)) })
   xlim.lower2 <- reactive({ ifelse(min(min(cod.decomp.data.react()$x1), min(cod.decomp.data.react2()$x1)) >= 0, 0,
                                    min(min(cod.decomp.data.react()$x1), min(cod.decomp.data.react2()$x1))) 
@@ -336,6 +355,19 @@ server <- function(input, output) {
              ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())), yaxis = list(autorange = "reversed"))
     
   })   
+  
+  output$cod_bayes_change <- renderPlotly({
+    ggplotly(ggplot(cod.contribution.data.react(), aes(y = COD, x = change.x)) +
+               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 4) + #, col = adds_to_gap
+               #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
+               theme_minimal() +
+               geom_vline(xintercept = 0) +
+               #scale_y_reverse() + 
+               xlab(paste0("Contribution to change in life expectancy gap", xaxis.title())) +
+               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) 
+    ) %>% layout(showlegend = F, xaxis = list(range = c(xlim.lower2(), xlim.upper2())), yaxis = list(autorange = "reversed"))
+    
+  })
   
   #output$temp2 <- renderText(paste0("The lower limit is ", xlim.lower2(), " and the upper is ", xlim.upper2()))
   #output$temp <- renderDataTable(cod.decomp.data.react())
