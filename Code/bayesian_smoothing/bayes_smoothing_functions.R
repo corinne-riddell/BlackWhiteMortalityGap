@@ -102,8 +102,14 @@ bwmort_smooth_time = function(ds_jags_bw) {
   
   
   # RUN MCMC 
-  jags_model = jags(data=ds_jags_bw, param=params, n.chains=nchains, n.thin=100,
-                    inits = myinits, n.iter=100000, n.burnin=5000, model.file=model) 
+  
+  #thinning model
+  #jags_model = jags(data=ds_jags_bw, param=params, n.chains=nchains, n.thin=100,
+  #                  inits = myinits, n.iter=100000, n.burnin=5000, model.file=model) 
+  
+  #no thinning
+  jags_model = jags(data=ds_jags_bw, param=params, n.chains=nchains,
+                    inits = myinits, n.iter=10000, n.burnin=2000, model.file=model) 
   
   return(jags_model)
 } 

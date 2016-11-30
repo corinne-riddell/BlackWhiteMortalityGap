@@ -141,26 +141,6 @@ make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) 
   return(updated)
 }
 
-#input: data.frame from kathryn's bayesian model 
-#input is specific to one state, sex, year, but across all age groups and both races
-#take this dataset and calculate LE for blacks and for whites and the gap (LE.gap = LE.white - LE.black)
-#returns these three values.
-life_expectancy_and_gap <- function(data) {
-library(sqldf)
-
-#aggegrate over COD within agegroup and race
-data.aggregated <- sqldf('select race, population, age_bin, year, sex, state, sum(smoothed_deaths) as total_smoothed_deaths from data group by race, age_bin')  
-
-#add num.ages.in.group
-data.aggregated$nx = 1*(data.aggregated$age_bin == 1) + 4*(data.aggregated$age_bin == 2) + 5*(data.aggregated$age_bin > 2)
-
-#calculate LE by race
-lt.black <- life.table(data = subset(data.aggregated, race == "Black"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
-lt.white <- life.table(data = subset(data.aggregated, race == "White"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
-
-return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))
-}
-
 #contribution to the change in the gap
 contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.table2) {
   if(type.of.decomp == "Age") {
@@ -177,4 +157,104 @@ contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.tab
   contribution_data[["narrowed_gap"]] <- contribution_data[["Contribution.to.change"]] >= 0 
   
   return(contribution_data)
+}
+
+#############################
+## Functions for the server #
+#############################
+
+#input: data.frame from kathryn's bayesian model 
+#input is specific to one state, sex, year, but across all age groups and both races
+#take this dataset and calculate LE for blacks and for whites and the gap (LE.gap = LE.white - LE.black)
+#returns these three values.
+life_expectancy_and_gap <- function(data) {
+  library(sqldf)
+  
+  #aggegrate over COD within agegroup and race
+  data.aggregated <- sqldf('select race, population, age_bin, year, sex, state, sum(smoothed_deaths) as total_smoothed_deaths from data group by race, age_bin')  
+  
+  #add num.ages.in.group
+  data.aggregated$nx = 1*(data.aggregated$age_bin == 1) + 4*(data.aggregated$age_bin == 2) + 5*(data.aggregated$age_bin > 2)
+  
+  #calculate LE by race
+  lt.black <- life.table(data = subset(data.aggregated, race == "Black"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
+  lt.white <- life.table(data = subset(data.aggregated, race == "White"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
+  
+  return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))
+}
+
+
+
+
+#this function takes a list of the samples from the posterior distribution
+#it then calculated the median ("med"), and 97.5th and 2.5th percentiles
+#of the credible intervals as a function of the number of posterior draws.
+#it returns a data.frame.
+calc_running_med_CI_posterior <- function(list_empirical_posterior) {
+  LE_distn <- data.frame("LE_Black" = rep(NA, length(list_empirical_posterior)), 
+                         "LE_White" = rep(NA, length(list_empirical_posterior)),
+                         "LE_WBgap" = rep(NA, length(list_empirical_posterior)),
+                         "run_med_LEB" = rep(NA, length(list_empirical_posterior)), 
+                         "run_med_LEW" = rep(NA, length(list_empirical_posterior)),
+                         "run_med_LEG" = rep(NA, length(list_empirical_posterior)),
+                         "run_975_LEB" = rep(NA, length(list_empirical_posterior)), 
+                         "run_975_LEW" = rep(NA, length(list_empirical_posterior)),
+                         "run_975_LEG" = rep(NA, length(list_empirical_posterior)),                       
+                         "run_025_LEB" = rep(NA, length(list_empirical_posterior)), 
+                         "run_025_LEW" = rep(NA, length(list_empirical_posterior)),
+                         "run_025_LEG" = rep(NA, length(list_empirical_posterior))
+  )
+  
+  for(i in 1:length(list_empirical_posterior)) {
+    LE_distn[i, c("LE_Black", "LE_White", "LE_WBgap")] <- list_empirical_posterior[[i]]
+    LE_distn$run_med_LEB[i] <- median(LE_distn$LE_Black[1:i])
+    LE_distn$run_med_LEW[i] <- median(LE_distn$LE_White[1:i])
+    LE_distn$run_med_LEG[i] <- median(LE_distn$LE_WBgap[1:i])
+    
+    LE_distn$run_975_LEB[i] <- quantile(LE_distn$LE_Black[1:i], 0.975)
+    LE_distn$run_975_LEW[i] <- quantile(LE_distn$LE_White[1:i], 0.975)
+    LE_distn$run_975_LEG[i] <- quantile(LE_distn$LE_WBgap[1:i], 0.975)
+    
+    LE_distn$run_025_LEB[i] <- quantile(LE_distn$LE_Black[1:i], 0.025)
+    LE_distn$run_025_LEW[i] <- quantile(LE_distn$LE_White[1:i], 0.025)
+    LE_distn$run_025_LEG[i] <- quantile(LE_distn$LE_WBgap[1:i], 0.025)
+  }
+  
+  LE_distn$row <- 1:length(LE_distn$LE_Black)
+  
+  return(LE_distn)
+}
+
+#this function plots the credible intervals vs. # posterior draws
+#and saves on the server in the black_white_mortality_project folder
+plot_estimate_CI_vs_posterior <- function(LE_distn, file.name) {
+  black.converge.plot <- ggplot(LE_distn, aes(x = row, y = run_med_LEB)) + geom_line() + 
+    geom_line(aes(y = run_025_LEB), lty = 2) +
+    geom_line(aes(y = run_975_LEB), lty = 2) +
+    ylab("") + xlab("No. of posterior samples") + ggtitle("Convergence of Black Life Expectancy and 95% Credible Interval")
+  
+  white.converge.plot <- ggplot(LE_distn, aes(x = row, y = run_med_LEW)) + geom_line() + 
+    geom_line(aes(y = run_025_LEW), lty = 2) +
+    geom_line(aes(y = run_975_LEW), lty = 2) +
+    ylab("") + xlab("No. of posterior samples") + ggtitle("Convergence of White Life Expectancy and 95% Credible Interval")
+  
+  gap.converge.plot <- ggplot(LE_distn, aes(x = row, y = run_med_LEG)) + geom_line() + 
+    geom_line(aes(y = run_025_LEG), lty = 2) +
+    geom_line(aes(y = run_975_LEG), lty = 2) +
+    ylab("") + xlab("No. of posterior samples") + ggtitle("Convergence of Black-White Life Expectancy Gap and 95% Credible Interval")
+  
+  grob <- arrangeGrob(black.converge.plot, white.converge.plot, gap.converge.plot, nrow = 3)
+  
+  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 15, units = "in", dpi = 100)
+  
+  return(list(white.converge.plot, black.converge.plot, gap.converge.plot))
+}
+
+##all of the steps together:
+investigate_convergence <- function(year, state, sex, n_post_samp, graph_file_name) {
+  mcmc_dist <- extract_mcmc_dist(year=year, state=state, sex=sex, n_post_samp=n_post_samp)
+  saved_bayes = lapply(X = mcmc_dist, FUN=life_expectancy_and_gap)
+  posterior.dataframe <- calc_running_med_CI_posterior(saved_bayes)
+  plots <- plot_estimate_CI_vs_posterior(posterior.dataframe, graph_file_name)
+  return(list(mcmc_dist, saved_bayes, posterior.dataframe, plots))
 }
