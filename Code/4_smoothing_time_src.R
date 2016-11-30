@@ -14,8 +14,8 @@ library(ggplot2)
 library(grid)
 library(gridExtra)
 
-source('4_smoothing_time_fun.R') 
-source('life_expectancy_functions.R') 
+source('~/BlackWhiteMortalityGap/Code/4_smoothing_time_fun.R') 
+source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
 
 load('~/black_white_mortality_project/main_datasets.Rdata') # change for SERVER 
 #load('/Users/kathryn/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata') # change for LOCAL 

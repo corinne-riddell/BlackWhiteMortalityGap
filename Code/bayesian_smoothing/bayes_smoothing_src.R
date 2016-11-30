@@ -19,8 +19,8 @@ source('bayes_smoothing_functions.R')
 
 
 #dat.clean$upper_bound = ifelse(dat.clean$Population<9, dat.clean$Population, 9) 
-states = unique(dat.clean$State2)
-ds = dat.clean
+#states = unique(dat.clean$State2)
+#ds = dat.clean
 
 
 
