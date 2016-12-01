@@ -59,8 +59,11 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("age_cod_bayes2")),
                        
                        tabPanel("Summary across states",
-                                #dataTableOutput("data.temp"),
-                                plotlyOutput("state_cod_summary", height = 800))
+                                radioButtons(inputId = "order_states", label = NA, 
+                                             inline = T, choices = c("Gap in first year", "Gap in last year", "Change in gap"), 
+                                             selected = "Gap in first year"),
+                                plotlyOutput("state_cod_summary", height = 800),
+                                dataTableOutput("data.temp"))
                        )
                      )
                    )
@@ -109,32 +112,58 @@ server <- function(input, output) {
   })
   
   summary.cod.contrib.data.react <- reactive({
-    for (i in levels(BlackWhite$State2)) {
-    temp2 <- data.frame(state = i,
-                        contribution.to.gap.change(type.of.decomp = "COD",
-                                                   list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  state.i & 
-                                                                                   paired.ids$Year3 == input$year1 & 
-                                                                                   paired.ids$Sex2 == input$selected_sex)]],
-                                                   list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  state.i & 
-                                                                                   paired.ids$Year3 == input$year2 & 
-                                                                                   paired.ids$Sex2 == input$selected_sex)]]
-                                                   )
-    )
+    
+    temp.df <- data.frame(State2 = factor(), COD = factor(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+    for (state.i in levels(BlackWhite$State2)) {
+      first.index = which(paired.ids$State2 ==  state.i & paired.ids$Year3 == input$year1 & paired.ids$Sex2 == input$selected_sex)
+      second.index = which(paired.ids$State2 ==  state.i & paired.ids$Year3 == input$year2 & paired.ids$Sex2 == input$selected_sex)
+      
+      if(is.null(list.cod.marginal.tables.smoothed[[first.index]][1]) == FALSE & 
+         is.null(list.cod.marginal.tables.smoothed[[second.index]][1]) == FALSE) {
+        
+        temp2 <- data.frame(State2 = state.i,
+                            contribution.to.gap.change(type.of.decomp = "COD",
+                                                       list.cod.marginal.tables.smoothed[[first.index]],
+                                                       list.cod.marginal.tables.smoothed[[second.index]])
+        )
+        
+        temp.df <- rbind(temp.df, temp2)
+      }
+      
     }
-    temp2
+    
+    temp.df <- make_dataset_cod_plot(cod.decomp.table = temp.df, age.groups = "State2", 
+                                     cause.of.death = "COD", sign.var = "narrowed_gap", 
+                                     decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+    
+    temp.df <- merge(temp.df, summary.react(), by = "State2")
+    
+    temp.df <- temp.df %>% mutate(new.start = -start + first.gap, new.finish = -finish + first.gap)
+    
+    temp.df$order.states <- switch(input$order_states, 
+                                   "Gap in first year" = temp.df$State.g1.order,
+                                   "Gap in last year" = temp.df$State.g2.order,
+                                   "Change in gap" = temp.df$State.gdiff.order)
+    return(temp.df)
   })
   
-  #output$data.temp <- renderDataTable({ summary.react() })
-  
-  #need to fix the arrow isn't showing up
   output$state_cod_summary <- renderPlotly({
     ggplotly(
-      ggplot(summary.react(), aes(y = State.g1.order, x = first.gap)) + 
-               geom_segment(aes(yend = State.g1.order, xend = second.gap)) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
-               geom_point(aes(x = second.gap), shape = 108) + 
-               theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
-                                           )
+      # ggplot(summary.react(), aes(y = State.g1.order, x = first.gap)) + 
+      #          geom_segment(aes(yend = State.g1.order, xend = second.gap)) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
+      #          geom_point(aes(x = second.gap), shape = 108) + 
+      #          theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
+      #                                      )
+      ggplot(summary.cod.contrib.data.react(), aes(y = order.states, x = new.start)) + 
+        geom_segment(aes(yend = State.gdiff.order, xend = new.finish, col = COD)) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
+        geom_point(aes(x = second.gap), shape = 108) + #will need to change this - adds lots of points on top of each other
+        geom_point(aes(x = first.gap), shape = 2) + #will need to change this - adds lots of points on top of each other
+        theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
+        )
     })
+  
+   output$data.temp <- renderDataTable({ summary.cod.contrib.data.react() })
+  
   
   ##########################################
   ##          Life Expectancy tab         ##

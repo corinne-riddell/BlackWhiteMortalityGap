@@ -95,6 +95,7 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
                                  "C_xi" = C_xi)
   
   COD.decomp.table["C_xi_proportion"] <- COD.decomp.table["C_xi"]/sum(COD.decomp.table["C_xi"])
+  COD.decomp.table["sign"] <- ifelse(COD.decomp.table["C_xi"] < 0, "negative", "positive")
   
   names(COD.decomp.table)[2] <- prop1.colname.cod.table
   names(COD.decomp.table)[3] <- prop2.colname.cod.table
@@ -104,34 +105,32 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
 
 #this function assumes the C_xi variable is names C_xi (not changed after running previous function)
 #you must supply the names of the columns that correspond to the age group and cause of death variable.
-make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death) {
-  
-  cod.decomp.table$sign <- ifelse(cod.decomp.table$C_xi < 0, "negative", "positive")
-  cod.decomp.table$group <- interaction(cod.decomp.table$Ages, cod.decomp.table$sign, sep = ".")
-  
+make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death, sign.var, decomp.var, decomp.var.prop) {
+  cod.decomp.table["group"] <- interaction(cod.decomp.table[[age.groups]], cod.decomp.table[[sign.var]], sep = ".")
+
   cod.decomp.table <- cod.decomp.table[order(cod.decomp.table[age.groups], 
-                                             cod.decomp.table["sign"], 
+                                             cod.decomp.table[sign.var], 
                                              cod.decomp.table[cause.of.death]), ]
   
   cod.decomp.table$start <- 0
-  cod.decomp.table$finish <- cod.decomp.table$C_xi
+  cod.decomp.table$finish <- cod.decomp.table[[decomp.var]] #C_xi
   
   cod.decomp.table$start2 <- 0
-  cod.decomp.table$finish2 <- cod.decomp.table$C_xi_proportion
+  cod.decomp.table$finish2 <- cod.decomp.table[[decomp.var.prop]] #C_xi_proportion
   
   updated <- NULL
-  for (g in unique(cod.decomp.table$group)) {
-    subset <- cod.decomp.table[cod.decomp.table$group == g, ]
+  for (g in unique(cod.decomp.table[["group"]])) {
+    subset <- cod.decomp.table[cod.decomp.table[["group"]] == g, ]
     
     length.group <- dim(subset)[1]
     
     if(length.group > 1){
       for (i in 2:dim(subset)[1]) {
         subset$start[i] <- subset$finish[i - 1]
-        subset$finish[i] <- subset$start[i] + subset$C_xi[i]
+        subset$finish[i] <- subset$start[i] + subset[[decomp.var]][i]
         
         subset$start2[i] <- subset$finish2[i - 1]
-        subset$finish2[i] <- subset$start2[i] + subset$C_xi_proportion[i]
+        subset$finish2[i] <- subset$start2[i] + subset[[decomp.var.prop]][i]
       }
     }
   
