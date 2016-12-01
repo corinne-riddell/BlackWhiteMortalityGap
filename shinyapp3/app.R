@@ -59,7 +59,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("age_cod_bayes2")),
                        
                        tabPanel("Summary across states",
-                                dataTableOutput("data.temp"),
+                                #dataTableOutput("data.temp"),
                                 plotlyOutput("state_cod_summary", height = 800))
                        )
                      )
@@ -97,27 +97,44 @@ server <- function(input, output) {
       select(State2, Year3, WBgap.s) %>%
       arrange(Year3)
     
-    temp2 <- tidyr::spread(temp, Year3, WBgap.s) 
-    rm(temp)
-    temp3 <- temp2
-    names(temp3)[2:3] <- c("first.gap","second.gap")  
+    temp <- tidyr::spread(temp, Year3, WBgap.s) 
+    names(temp)[2:3] <- c("first.gap","second.gap")  
     
-    temp3 <- temp3 %>% mutate(gap.diff = first.gap - second.gap,
-                    State.gdiff.order = factor(State2, order = gap.diff),
-                    State.g1.order = factor(State2, order = first.gap),
-                    State.g2.order = factor(State2, order = second.gap))
+    temp <- temp %>% mutate(gap.diff = first.gap - second.gap,
+                              State.gdiff.order = reorder(State2, gap.diff),
+                              State.g1.order = reorder(State2, first.gap),
+                              State.g2.order = reorder(State2, second.gap))
     
-    temp3
+    temp
   })
   
-  output$data.temp <- renderDataTable({ summary.react() })
+  summary.cod.contrib.data.react <- reactive({
+    for (i in levels(BlackWhite$State2)) {
+    temp2 <- data.frame(state = i,
+                        contribution.to.gap.change(type.of.decomp = "COD",
+                                                   list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  state.i & 
+                                                                                   paired.ids$Year3 == input$year1 & 
+                                                                                   paired.ids$Sex2 == input$selected_sex)]],
+                                                   list.cod.marginal.tables.smoothed[[which(paired.ids$State2 ==  state.i & 
+                                                                                   paired.ids$Year3 == input$year2 & 
+                                                                                   paired.ids$Sex2 == input$selected_sex)]]
+                                                   )
+    )
+    }
+    temp2
+  })
+  
+  #output$data.temp <- renderDataTable({ summary.react() })
   
   #need to fix the arrow isn't showing up
   output$state_cod_summary <- renderPlotly({
-    ggplotly(ggplot(summary.react(), aes(y = State.g1.order, x = first.gap)) + 
-               geom_segment(aes(yend = State.g1.order, xend = second.gap), arrow = arrow(angle = 30, ends = "last", length = unit(0.20, "inches"))) + 
-               theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA))
-  })
+    ggplotly(
+      ggplot(summary.react(), aes(y = State.g1.order, x = first.gap)) + 
+               geom_segment(aes(yend = State.g1.order, xend = second.gap)) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
+               geom_point(aes(x = second.gap), shape = 108) + 
+               theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
+                                           )
+    })
   
   ##########################################
   ##          Life Expectancy tab         ##
