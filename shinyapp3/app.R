@@ -106,7 +106,11 @@ server <- function(input, output) {
     temp <- temp %>% mutate(gap.diff = first.gap - second.gap,
                               State.gdiff.order = reorder(State2, gap.diff),
                               State.g1.order = reorder(State2, first.gap),
-                              State.g2.order = reorder(State2, second.gap))
+                              State.g2.order = reorder(State2, second.gap),
+                              State.gdiff.num = as.numeric(State.gdiff.order),
+                              State.g1.num = as.numeric(State.g1.order),
+                              State.g2.num = as.numeric(State.g2.order)
+                              )
     
     temp
   })
@@ -140,10 +144,14 @@ server <- function(input, output) {
     
     temp.df <- temp.df %>% mutate(new.start = -start + first.gap, new.finish = -finish + first.gap)
     
+     temp.df$order.states2 <- switch(input$order_states, 
+                                    "Gap in first year" = temp.df$State.g1.order,
+                                    "Gap in last year" = temp.df$State.g2.order,
+                                    "Change in gap" = temp.df$State.gdiff.order)
     temp.df$order.states <- switch(input$order_states, 
-                                   "Gap in first year" = temp.df$State.g1.order,
-                                   "Gap in last year" = temp.df$State.g2.order,
-                                   "Change in gap" = temp.df$State.gdiff.order)
+                                   "Gap in first year" = temp.df$State.g1.num,
+                                   "Gap in last year" = temp.df$State.g2.num,
+                                   "Change in gap" = temp.df$State.gdiff.num)
     return(temp.df)
   })
   
@@ -154,12 +162,21 @@ server <- function(input, output) {
       #          geom_point(aes(x = second.gap), shape = 108) + 
       #          theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
       #                                      )
-      ggplot(summary.cod.contrib.data.react(), aes(y = order.states, x = new.start)) + 
-        geom_segment(aes(yend = State.gdiff.order, xend = new.finish, col = COD)) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
-        geom_point(aes(x = second.gap), shape = 108) + #will need to change this - adds lots of points on top of each other
-        geom_point(aes(x = first.gap), shape = 2) + #will need to change this - adds lots of points on top of each other
-        theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
+      ggplot(summary.cod.contrib.data.react(), aes(y = order.states, x = new.start)) +
+        geom_rect(aes(xmin = new.start, ymin = order.states, ymax = order.states + 0.75, xmax = new.finish, fill = COD), color = "white") + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches"))
+        geom_rect(aes(xmin = second.gap, xmax = second.gap + 0.03, ymin = order.states - 0.2, ymax = order.states + 0.75), fill = "grey40", color = "grey40") + #will need to change this - adds lots of points on top of each other
+        geom_rect(aes(xmin = first.gap, xmax = first.gap + 0.03, ymin = order.states - 0.2, ymax = order.states + 0.75), fill = "black", color = "black") + #will need to change this - adds lots of points on top of each other
+        theme_minimal() + scale_y_continuous(breaks = 1:51, labels = levels(summary.cod.contrib.data.react()$order.states2)) )%>% 
+      layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
         )
+    #NEED TO CHANGE THE BREAKS 1:51 TO REFLECT THE NUMBER OF STATES IN THE DISPLAY
+    
+      # ggplot(summary.cod.contrib.data.react(), aes(y = order.states, x = new.start)) + 
+      #   geom_segment(aes(yend = order.states, xend = new.finish, col = COD), size = 4) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
+      #   geom_segment(aes(x = second.gap, xend = second.gap, yend = order.states + 1), col = "green") + #will need to change this - adds lots of points on top of each other
+      #   geom_segment(aes(x = first.gap, xend = first.gap, yend = order.states + 1), col = "red") + #will need to change this - adds lots of points on top of each other
+      #   theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
+      #   )
     })
   
    output$data.temp <- renderDataTable({ summary.cod.contrib.data.react() })
