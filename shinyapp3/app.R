@@ -11,34 +11,51 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                  titlePanel("Explore the black-white life expectancy gap in the United States"),
                  
                  sidebarLayout(
-                   
-                   sidebarPanel(width = 4,
-                     selectInput(inputId = "state", label = "Select a state", width = 200, choices = unique(levels(dat.clean$State2))),
-                     strong("Legend\n"),
-                     img(src="legend.png"),
-                     strong("Population size over time"),
-                     plotlyOutput("population_trend")
+                   sidebarPanel(width = 2,
+                                radioButtons(inputId = "order_states", 
+                                             label = "Sort by", 
+                                             #inline = T, 
+                                             choices = c("Gap in first year", "Gap in last year", "Change in gap"), 
+                                             selected = "Gap in first year"),
+                                strong("Select years"),
+                                #tags$style(type="text/css", ".form-group.shiny-input-container{ display: inline-block } strong{ display: block !important  } img{ margin-bottom: 0px }"),
+                                selectInput(inputId = "year1", label = NA, choices = unique(dat.clean$Year3), width = 100),
+                                selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
+                                strong("Select sex"),
+                                radioButtons(inputId = "selected_sex", label = NA, 
+                                             inline = T, choices = c("Male", "Female"), selected = "Male")
+
                       ),
                    
                    mainPanel(
                      tabsetPanel(
+                       tabPanel("State summary: COD",
+                                strong("Which causes of death contributed most to narrowing the life expectancy gap?"),
+                                textOutput("description_cod_summary"),
+                                plotlyOutput("state_cod_summary", height = 800),
+                                dataTableOutput("data.temp")),
+                       
+                       tabPanel("State summary: Age",
+                                strong("Which age groups contributed most to narrowing the life expectancy gap?"),
+                                textOutput("description_age_summary"),
+                                plotlyOutput("state_age_summary", height = 800),
+                                dataTableOutput("data.temp2")),
+                       
                        tabPanel("Life Expectancy Gap",
+                                selectInput(inputId = "state", label = "Select a state", width = 200, choices = unique(levels(dat.clean$State2))),
                                 radioButtons(inputId = "LE_type", label = "Model choice", inline = T, 
                                              choices = c("Impute 1", "Impute 5", "Impute 9"), 
                                              selected = "Impute 5"),
+                                strong("Legend\n"),
+                                img(src="legend.png"),
+                                strong("Population trends over time"),
+                                plotlyOutput("population_trend"),
+                                strong("Life expectancy over time"),
                                 plotlyOutput("life_expectancy"),
                                 textOutput("Explain_LE_males"),
                                 textOutput("Explain_LE_females")),
                        
                        tabPanel("Decomposition by Age",
-                                strong("Select sex"),
-                                radioButtons(inputId = "selected_sex", label = NA, 
-                                             inline = T, choices = c("Male", "Female"), selected = "Male"),
-                                strong("Select years"),
-                                tags$style(type="text/css", ".form-group.shiny-input-container{ display: inline-block } strong{ display: block !important  } img{ margin-bottom: 0px }"),
-                                
-                                selectInput(inputId = "year1", label = NA, choices = unique(dat.clean$Year3), width = 100),
-                                selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
                                 strong("Display contribution in"),
                                 radioButtons(inputId = "contribution_type", label = NA, 
                                              inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
@@ -56,21 +73,8 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                        
                        tabPanel("Decomposition by Age & Cause",
                                 plotlyOutput("age_cod_bayes"),
-                                plotlyOutput("age_cod_bayes2")),
-                       
-                       tabPanel("State summary: COD",
-                                radioButtons(inputId = "order_states", label = NA, 
-                                             inline = T, choices = c("Gap in first year", "Gap in last year", "Change in gap"), 
-                                             selected = "Gap in first year"),
-                                plotlyOutput("state_cod_summary", height = 800),
-                                dataTableOutput("data.temp")),
-                       
-                       tabPanel("State summary: Age",
-                                #radioButtons(inputId = "order_states", label = NA, 
-                                #             inline = T, choices = c("Gap in first year", "Gap in last year", "Change in gap"), 
-                                #             selected = "Gap in first year"),
-                                plotlyOutput("state_age_summary", height = 800),
-                                dataTableOutput("data.temp2"))
+                                plotlyOutput("age_cod_bayes2"))
+                    
                        )
                      )
                    )
@@ -98,7 +102,7 @@ server <- function(input, output) {
   })
 
   ##########################################
-  ##            COD summary tab           ##
+  ##         COD and Age summary tabs     ##
   ##########################################
 
   summary.react <- reactive({
@@ -194,6 +198,11 @@ server <- function(input, output) {
       layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed"))
   })  
     
+  output$description_cod_summary <- renderText({
+    paste0("This graphic depicts how the gap in life expectancy for ", input$selected_sex, "s changed between ", 
+           input$year1, " (dashed vertical line) and ", input$year2, " (solid vertical line). Causes to the left of the dashed line narrowed the gap, whereas causes to the right exacerbated it.")
+  })
+  
     output$state_age_summary <- renderPlotly({
       ggplotly(                                     
         ggplot(summary.contrib.data.react()[[2]], aes(y = order.states, x = new.start)) +
@@ -203,10 +212,16 @@ server <- function(input, output) {
           theme_minimal() + scale_y_continuous(breaks = 1:x.num.breaks(), labels = x.labels()) + scale_fill_viridis(discrete = T, direction = -1) )%>% 
         layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
         )
-    #NEED TO CHANGE THE BREAKS 1:51 TO REFLECT THE NUMBER OF STATES IN THE DISPLAY
     })
-  
-   output$data.temp2 <- renderDataTable({ summary.contrib.data.react()[[2]] })
+
+    output$description_age_summary <- renderText({
+      paste0("This graphic depicts how the gap in life expectancy for ", input$selected_sex, "s changed between ", 
+             input$year1, " (dashed vertical line) and ", input$year2, " (solid vertical line). Age groups where 
+mortality rates changed in a direction benefiting black life expectancy are shown to the level of the dashed line, 
+whereas those that exacerbated the gap are shown to the right.")
+    })
+    
+   #output$data.temp2 <- renderDataTable({ summary.contrib.data.react()[[2]] })
   
   
   ##########################################
