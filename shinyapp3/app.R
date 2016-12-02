@@ -58,12 +58,19 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("age_cod_bayes"),
                                 plotlyOutput("age_cod_bayes2")),
                        
-                       tabPanel("Summary across states",
+                       tabPanel("State summary: COD",
                                 radioButtons(inputId = "order_states", label = NA, 
                                              inline = T, choices = c("Gap in first year", "Gap in last year", "Change in gap"), 
                                              selected = "Gap in first year"),
                                 plotlyOutput("state_cod_summary", height = 800),
-                                dataTableOutput("data.temp"))
+                                dataTableOutput("data.temp")),
+                       
+                       tabPanel("State summary: Age",
+                                #radioButtons(inputId = "order_states", label = NA, 
+                                #             inline = T, choices = c("Gap in first year", "Gap in last year", "Change in gap"), 
+                                #             selected = "Gap in first year"),
+                                plotlyOutput("state_age_summary", height = 800),
+                                dataTableOutput("data.temp2"))
                        )
                      )
                    )
@@ -96,10 +103,10 @@ server <- function(input, output) {
 
   summary.react <- reactive({
     temp <- BlackWhite %>% 
-      filter(Year3 %in% c(input$year1, input$year2), Sex2 == input$selected_sex) %>%
+      filter(Year3 %in% c(input$year1, input$year2), Sex2 == input$selected_sex, is.na(WBgap.s) == F) %>%
       select(State2, Year3, WBgap.s) %>%
       arrange(Year3)
-    
+   
     temp <- tidyr::spread(temp, Year3, WBgap.s) 
     names(temp)[2:3] <- c("first.gap","second.gap")  
     
@@ -112,12 +119,22 @@ server <- function(input, output) {
                               State.g2.num = as.numeric(State.g2.order)
                               )
     
+    temp$order.states2 <- switch(input$order_states, 
+                                    "Gap in first year" = temp$State.g1.order,
+                                    "Gap in last year" = temp$State.g2.order,
+                                    "Change in gap" = temp$State.gdiff.order)
+    temp$order.states <- switch(input$order_states, 
+                                   "Gap in first year" = temp$State.g1.num,
+                                   "Gap in last year" = temp$State.g2.num,
+                                   "Change in gap" = temp$State.gdiff.num)
+    
     temp
   })
   
-  summary.cod.contrib.data.react <- reactive({
+  summary.contrib.data.react <- reactive({
     
     temp.df <- data.frame(State2 = factor(), COD = factor(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+    temp.df2 <- data.frame(State2 = factor(), Ages = factor(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
     for (state.i in levels(BlackWhite$State2)) {
       first.index = which(paired.ids$State2 ==  state.i & paired.ids$Year3 == input$year1 & paired.ids$Sex2 == input$selected_sex)
       second.index = which(paired.ids$State2 ==  state.i & paired.ids$Year3 == input$year2 & paired.ids$Sex2 == input$selected_sex)
@@ -129,13 +146,21 @@ server <- function(input, output) {
                             contribution.to.gap.change(type.of.decomp = "COD",
                                                        list.cod.marginal.tables.smoothed[[first.index]],
                                                        list.cod.marginal.tables.smoothed[[second.index]])
-        )
+                            )
+        
+        temp3 <- data.frame(State2 = state.i,
+                            contribution.to.gap.change(type.of.decomp = "Age",
+                                                       list.age.decomp.tables.smoothed[[first.index]],
+                                                       list.age.decomp.tables.smoothed[[second.index]])
+                            )
         
         temp.df <- rbind(temp.df, temp2)
+        temp.df2 <- rbind(temp.df2, temp3)
       }
       
     }
     
+    ##### COD ####
     temp.df <- make_dataset_cod_plot(cod.decomp.table = temp.df, age.groups = "State2", 
                                      cause.of.death = "COD", sign.var = "narrowed_gap", 
                                      decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
@@ -144,45 +169,44 @@ server <- function(input, output) {
     
     temp.df <- temp.df %>% mutate(new.start = -start + first.gap, new.finish = -finish + first.gap)
     
-     temp.df$order.states2 <- switch(input$order_states, 
-                                    "Gap in first year" = temp.df$State.g1.order,
-                                    "Gap in last year" = temp.df$State.g2.order,
-                                    "Change in gap" = temp.df$State.gdiff.order)
-    temp.df$order.states <- switch(input$order_states, 
-                                   "Gap in first year" = temp.df$State.g1.num,
-                                   "Gap in last year" = temp.df$State.g2.num,
-                                   "Change in gap" = temp.df$State.gdiff.num)
-    return(temp.df)
+    #### Age ####
+    temp.df2 <- make_dataset_cod_plot(cod.decomp.table = temp.df2, age.groups = "State2", 
+                                     cause.of.death = "Ages", sign.var = "narrowed_gap", 
+                                     decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+    
+    temp.df2 <- merge(temp.df2, summary.react(), by = "State2")
+    
+    temp.df2 <- temp.df2 %>% mutate(new.start = -start + first.gap, new.finish = -finish + first.gap)
+  
+    return(list(temp.df, temp.df2))
   })
   
+  x.labels <- reactive({levels(factor(summary.contrib.data.react()[[2]]$order.states2)) })
+  x.num.breaks <- reactive({length(levels(factor(summary.contrib.data.react()[[2]]$order.states2))) })
+
   output$state_cod_summary <- renderPlotly({
     ggplotly(
-      # ggplot(summary.react(), aes(y = State.g1.order, x = first.gap)) + 
-      #          geom_segment(aes(yend = State.g1.order, xend = second.gap)) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
-      #          geom_point(aes(x = second.gap), shape = 108) + 
-      #          theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
-      #                                      )
-      ggplot(summary.cod.contrib.data.react(), aes(y = order.states, x = new.start)) +
-        geom_rect(aes(xmin = new.start, ymin = order.states - 0.45, ymax = order.states + 0.45, xmax = new.finish, fill = COD), color = "white") + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches"))
-        geom_segment(aes(x = second.gap, xend= second.gap, y = order.states - 0.5, yend = order.states + 0.5), lty = 3) + #will need to change this - adds lots of points on top of each other
-        #geom_rect(aes(xmin = second.gap, xmax = second.gap + 0.03, ymin = order.states - 0.2, ymax = order.states + 0.75), fill = "grey40", color = "grey40") + #will need to change this - adds lots of points on top of each other
-        #geom_rect(aes(xmin = first.gap, xmax = first.gap + 0.03, ymin = order.states - 0.2, ymax = order.states + 0.75), fill = "black", color = "black") + #will need to change this - adds lots of points on top of each other
-        geom_segment(aes(x = first.gap, xend= first.gap, y = order.states - 0.5, yend = order.states + 0.5)) + #will need to change this - adds lots of points on top of each other
-        
-               theme_minimal() + scale_y_continuous(breaks = 1:51, labels = levels(summary.cod.contrib.data.react()$order.states2)) )%>% 
-      layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
+      ggplot(summary.contrib.data.react()[[1]], aes(y = order.states, x = new.start)) +
+        geom_rect(aes(xmin = new.start, ymin = order.states - 0.45, ymax = order.states + 0.45, xmax = new.finish, fill = COD), color = "white") +
+        geom_segment(data = summary.react(), aes(x = second.gap, xend= second.gap, y = order.states - 0.5, yend = order.states + 0.5)) +
+        geom_segment(data = summary.react(), aes(x = first.gap, xend= first.gap, y = order.states - 0.5, yend = order.states + 0.5), lty = 3) +
+               theme_minimal() + scale_y_continuous(breaks = 1:x.num.breaks(), labels = x.labels()) ) %>% 
+      layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed"))
+  })  
+    
+    output$state_age_summary <- renderPlotly({
+      ggplotly(                                     
+        ggplot(summary.contrib.data.react()[[2]], aes(y = order.states, x = new.start)) +
+          geom_rect(aes(xmin = new.start, ymin = order.states - 0.45, ymax = order.states + 0.45, xmax = new.finish, fill = Ages), color = "white") + 
+          geom_segment(data = summary.react(), aes(x = second.gap, xend= second.gap, y = order.states - 0.5, yend = order.states + 0.5)) + 
+          geom_segment(data = summary.react(), aes(x = first.gap, xend= first.gap, y = order.states - 0.5, yend = order.states + 0.5), lty = 3) + 
+          theme_minimal() + scale_y_continuous(breaks = 1:x.num.breaks(), labels = x.labels()) + scale_fill_viridis(discrete = T, direction = -1) )%>% 
+        layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
         )
     #NEED TO CHANGE THE BREAKS 1:51 TO REFLECT THE NUMBER OF STATES IN THE DISPLAY
-    
-      # ggplot(summary.cod.contrib.data.react(), aes(y = order.states, x = new.start)) + 
-      #   geom_segment(aes(yend = order.states, xend = new.finish, col = COD), size = 4) + #, arrow = arrow(angle = 30, ends = "last", length = unit(0.10, "inches")) 
-      #   geom_segment(aes(x = second.gap, xend = second.gap, yend = order.states + 1), col = "green") + #will need to change this - adds lots of points on top of each other
-      #   geom_segment(aes(x = first.gap, xend = first.gap, yend = order.states + 1), col = "red") + #will need to change this - adds lots of points on top of each other
-      #   theme_minimal()) %>% layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
-      #   )
     })
   
-   output$data.temp <- renderDataTable({ summary.cod.contrib.data.react() })
+   output$data.temp2 <- renderDataTable({ summary.contrib.data.react()[[2]] })
   
   
   ##########################################
