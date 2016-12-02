@@ -282,7 +282,9 @@ for(i in 1:dim(paired.ids)[1]) {
        
        list.cod.decomp.tables.smoothed[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables.smoothed[[i]],
                                                             age.groups = "Ages", 
-                                                            cause.of.death = "Cause.of.death")  
+                                                            cause.of.death = "Cause.of.death",
+                                                            sign.var = "sign", decomp.var = "C_xi", 
+                                                            decomp.var.prop = "C_xi_proportion")  
     } 
   print(i)
 } 
