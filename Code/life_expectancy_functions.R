@@ -219,40 +219,60 @@ calc_running_med_CI_posterior <- function(list_empirical_posterior) {
   }
   
   LE_distn$row <- 1:length(LE_distn$LE_Black)
+  LE_distn$CI_width_LEW <- LE_distn$run_975_LEW - LE_distn$run_025_LEW
+  LE_distn$CI_width_LEB <- LE_distn$run_975_LEB - LE_distn$run_025_LEB
+  LE_distn$CI_width_LEG <- LE_distn$run_975_LEG - LE_distn$run_025_LEG
   
   return(LE_distn)
 }
 
 #this function plots the credible intervals vs. # posterior draws
 #and saves on the server in the black_white_mortality_project folder
-plot_estimate_CI_vs_posterior <- function(LE_distn, file.name) {
-  black.converge.plot <- ggplot(LE_distn, aes(x = row, y = run_med_LEB)) + geom_line() + 
-    geom_line(aes(y = run_025_LEB), lty = 2) +
-    geom_line(aes(y = run_975_LEB), lty = 2) +
+plot_estimate_CI_vs_posterior <- function(LE_distn, file.name, min, max) {
+  black.converge.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = run_med_LEB)) + geom_line(col = "red") + 
+    geom_line(aes(y = run_025_LEB), lty = 2, col = "red") +
+    geom_line(aes(y = run_975_LEB), lty = 2, col = "red") +
     ylab("") + xlab("No. of posterior samples") + ggtitle("Convergence of Black Life Expectancy and 95% Credible Interval")
   
-  white.converge.plot <- ggplot(LE_distn, aes(x = row, y = run_med_LEW)) + geom_line() + 
+  white.converge.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = run_med_LEW)) + geom_line() + 
     geom_line(aes(y = run_025_LEW), lty = 2) +
     geom_line(aes(y = run_975_LEW), lty = 2) +
     ylab("") + xlab("No. of posterior samples") + ggtitle("Convergence of White Life Expectancy and 95% Credible Interval")
   
-  gap.converge.plot <- ggplot(LE_distn, aes(x = row, y = run_med_LEG)) + geom_line() + 
-    geom_line(aes(y = run_025_LEG), lty = 2) +
-    geom_line(aes(y = run_975_LEG), lty = 2) +
+  both.width.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = CI_width_LEW)) + geom_line() + 
+    geom_abline(intercept = LE_distn$CI_width_LEW[max], slope = 0, lty = 2) + 
+    geom_line(aes(y = CI_width_LEB), col = "red") + 
+    geom_abline(intercept = LE_distn$CI_width_LEB[max], slope = 0, lty = 2, col = "red")    
+  
+  gap.converge.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = run_med_LEG)) + geom_line(col = "blue") + 
+    geom_line(aes(y = run_025_LEG), lty = 2, col = "blue") +
+    geom_line(aes(y = run_975_LEG), lty = 2, col = "blue") +
     ylab("") + xlab("No. of posterior samples") + ggtitle("Convergence of Black-White Life Expectancy Gap and 95% Credible Interval")
+ 
+  gap.width.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = CI_width_LEG)) + geom_line(col = "blue") + 
+    geom_abline(intercept = LE_distn$CI_width_LEG[max], slope = 0, lty = 2, col = "blue") +
+    ylab("") + xlab("No. of posterior samples") + ggtitle("Width of the 95% credible interval for the gap")
   
-  grob <- arrangeGrob(black.converge.plot, white.converge.plot, gap.converge.plot, nrow = 3)
+  grob <- arrangeGrob(black.converge.plot, white.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot, nrow = 5)
   
-  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 15, units = "in", dpi = 100)
+  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 30, units = "in", dpi = 100)
   
-  return(list(white.converge.plot, black.converge.plot, gap.converge.plot))
+  return(list(white.converge.plot, black.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot))
 }
 
 ##all of the steps together:
-investigate_convergence <- function(year, state, sex, n_post_samp, graph_file_name) {
+investigate_convergence <- function(year, state, sex, n_post_samp, graph_file_name, min, max) {
   mcmc_dist <- extract_mcmc_dist(year=year, state=state, sex=sex, n_post_samp=n_post_samp)
   saved_bayes = lapply(X = mcmc_dist, FUN=life_expectancy_and_gap)
   posterior.dataframe <- calc_running_med_CI_posterior(saved_bayes)
-  plots <- plot_estimate_CI_vs_posterior(posterior.dataframe, graph_file_name)
+  plots <- plot_estimate_CI_vs_posterior(posterior.dataframe, graph_file_name, min, max)
+  return(list(mcmc_dist, saved_bayes, posterior.dataframe, plots))
+}
+
+#use this one for now, since need to run the mcmc_dist() step separately to remove the NA rows for the last 50 list elements
+investigate_convergence_rest <- function(mcmc_dist, graph_file_name, min, max) {
+  saved_bayes = lapply(X = mcmc_dist, FUN=life_expectancy_and_gap)
+  posterior.dataframe <- calc_running_med_CI_posterior(saved_bayes)
+  plots <- plot_estimate_CI_vs_posterior(posterior.dataframe, graph_file_name, min, max)
   return(list(mcmc_dist, saved_bayes, posterior.dataframe, plots))
 }
