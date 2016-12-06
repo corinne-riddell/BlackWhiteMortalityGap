@@ -39,25 +39,6 @@ system.time(mcmc_dist_m85ft <- extract_mcmc_dist(year = 1985, state = 'Missouri'
 mcmc_dist_m85ft2 <- mcmc_dist_m85ft[1:950]
 miss_1985_females_thinned <- investigate_convergence_rest(mcmc_dist_m85ft2, graph_file_name = "missouri_1985_females_thinned", min = 10, max = 950)
 
-
-
-
-
-
-
-
-system.time(saved_bayes_g13ft <- lapply(X = mcmc_dist_g13ft, FUN=life_expectancy_and_gap))
-for (i in 1:1000) {
-  temp.mcmc <- mcmc_dist_g13ft[[i]]
-  test <- life_expectancy_and_gap(temp.mcmc)
-  print(i)
-  }
-head(mcmc_dist_g13ft[[951]])
-table(is.na(mcmc_dist_g13ft[[951]]$smooth_rate)) #all missing!
-
-system.time(utah_1969_females_thinned <- investigate_convergence(year = 1969, state = 'Utah', sex = 'female', n_post_samp = 10, "utah_1969_females_thinned"))
-system.time(missouri_1985_females_thinned <- investigate_convergence(year = 1985, state = 'Missouri', sex = 'female', n_post_samp = 10, "missouri_1985_females_thinned"))
-
-save(list = c("utah_1969_females_thinned", "georgia_2013_females_thinned", "missouri_1985_females_thinned"), 
+save(list = c("utah_1969_females_thinned", "georgia_2013_females_thinned", "miss_1985_females_thinned"), 
      file = '~/black_white_mortality_project/CI_vs_post_samples_results_thinned.RData')
 
