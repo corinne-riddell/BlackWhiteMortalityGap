@@ -42,3 +42,16 @@ miss_1985_females_thinned <- investigate_convergence_rest(mcmc_dist_m85ft2, grap
 save(list = c("utah_1969_females_thinned", "georgia_2013_females_thinned", "miss_1985_females_thinned"), 
      file = '~/black_white_mortality_project/CI_vs_post_samples_results_thinned.RData')
 
+ptm <- proc.time()
+saved_bayes_test <- lapply(X = miss_1985_females_thinned[[1]][1:950], FUN=life_expectancy_and_gap)
+post.test <- calc_running_med_CI_posterior(saved_bayes_test)
+post.test2 <- calc_running_med_CI_age(saved_bayes_test)
+post.test3 <- plot_estimate_CI_vs_posterior(LE_distn = post.test, age_decomp = post.test2, min = 10, max = 950, file.name = "testdec7")
+proc.time() - ptm
+
+head(saved_bayes_test[[1]][[3]])
+head(saved_bayes_test[[2]][[3]])
+
+head(saved_bayes_test[[1]][[3]]) #the cod prop table
+tester <- tester[order(tester$race, tester$age_bin, tester$cod), ]
+tester[1:6, ]$smoothed_deaths/sum(tester[1:6, ]$smoothed_deaths)
