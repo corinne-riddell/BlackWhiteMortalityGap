@@ -171,18 +171,47 @@ life_expectancy_and_gap <- function(data) {
   #aggegrate over COD within agegroup and race
   data.aggregated <- sqldf('select race, population, age_bin, year, sex, state, sum(smoothed_deaths) as total_smoothed_deaths from data group by race, age_bin')  
   
+  data <- merge(data, data.aggregated[, c("race", "age_bin", "total_smoothed_deaths")], by = c("race", "age_bin"))
+  
+  #add the cod proportions of all deaths
+  data$cod_prop_smoothed_deaths <- data$smoothed_deaths/data$total_smoothed_deaths      
+
+  #make the cod table to be used in the cod decomposition
+  ct.black <- data[data$race == "Black", c("age_bin", "cod", "cod_prop_smoothed_deaths")]
+  names(ct.black)[3] <- "prop.black"
+  ct.white<- data[data$race == "White", c("age_bin", "cod", "cod_prop_smoothed_deaths")]
+  names(ct.white)[3] <- "prop.white"
+  ct.both <- merge(ct.white, ct.black, by = c("age_bin", "cod")) 
+  ct.both <- ct.both[order(ct.both$cod, ct.both$age_bin), ] 
+  
   #add num.ages.in.group
   data.aggregated$nx = 1*(data.aggregated$age_bin == 1) + 4*(data.aggregated$age_bin == 2) + 5*(data.aggregated$age_bin > 2)
   
   #calculate LE by race
-  lt.black <- life.table(data = subset(data.aggregated, race == "Black"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
-  lt.white <- life.table(data = subset(data.aggregated, race == "White"), num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", population.counts = "population")
+  lt.black <- life.table(data = subset(data.aggregated, race == "Black"), 
+                         num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", 
+                         population.counts = "population")
   
-  return(data.frame("LE_Black" = lt.black$e_x[1], "LE_White" = lt.white$e_x[1], "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))
+  lt.white <- life.table(data = subset(data.aggregated, race == "White"), 
+                         num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", 
+                         population.counts = "population")
+  
+  #calculate le_age_decomp 
+  age_decomp <- le_age_decomp(lt.black, "Black", lt.white, "White", "age_bin")
+  
+  #calculate cod decomp
+  cod_decomp <- cause_of_death_decomp(lt.black, lt.white, age_decomp, ct.both, "age_bin", "cod", "prop.black", "prop.white")
+  
+  #returns a list
+  return(list(le.df = data.frame("LE_Black" = lt.black$e_x[1],
+                         "LE_White" = lt.white$e_x[1],
+                         "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]),
+              age.decomp = age_decomp, cod.table = ct.both, cod.decomp = cod_decomp))
+
+  # return(data.frame("LE_Black" = lt.black$e_x[1], 
+  #                        "LE_White" = lt.white$e_x[1], 
+  #                        "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))         
 }
-
-
-
 
 #this function takes a list of the samples from the posterior distribution
 #it then calculated the median ("med"), and 97.5th and 2.5th percentiles
@@ -204,18 +233,20 @@ calc_running_med_CI_posterior <- function(list_empirical_posterior) {
   )
   
   for(i in 1:length(list_empirical_posterior)) {
-    LE_distn[i, c("LE_Black", "LE_White", "LE_WBgap")] <- list_empirical_posterior[[i]]
+    LE_distn[i, c("LE_Black", "LE_White", "LE_WBgap")] <- list_empirical_posterior[[i]]$le.df
+
     LE_distn$run_med_LEB[i] <- median(LE_distn$LE_Black[1:i])
     LE_distn$run_med_LEW[i] <- median(LE_distn$LE_White[1:i])
     LE_distn$run_med_LEG[i] <- median(LE_distn$LE_WBgap[1:i])
-    
+
     LE_distn$run_975_LEB[i] <- quantile(LE_distn$LE_Black[1:i], 0.975)
     LE_distn$run_975_LEW[i] <- quantile(LE_distn$LE_White[1:i], 0.975)
     LE_distn$run_975_LEG[i] <- quantile(LE_distn$LE_WBgap[1:i], 0.975)
-    
+
     LE_distn$run_025_LEB[i] <- quantile(LE_distn$LE_Black[1:i], 0.025)
     LE_distn$run_025_LEW[i] <- quantile(LE_distn$LE_White[1:i], 0.025)
     LE_distn$run_025_LEG[i] <- quantile(LE_distn$LE_WBgap[1:i], 0.025)
+    
   }
   
   LE_distn$row <- 1:length(LE_distn$LE_Black)
@@ -226,9 +257,33 @@ calc_running_med_CI_posterior <- function(list_empirical_posterior) {
   return(LE_distn)
 }
 
+#this function takes a list of the samples from the posterior distribution
+#it then calculates the median and 97.5th and 2.5th percentiles
+#of the credible intervals as a function of the number of posterior draws.
+#for each of the age decomposition bins
+calc_running_med_CI_age <- function(list_empirical_posterior) {
+  age.decomp.distn <- data.frame(matrix(ncol = 6, nrow = 19*length(list_empirical_posterior)))
+  names(age.decomp.distn) <- c("age_bin", "iteration", "C_x", "median", "lcl", "ucl")
+  age.decomp.distn$age_bin <- rep(1:19, length(list_empirical_posterior))
+  age.decomp.distn$iteration <- rep(1:length(list_empirical_posterior), each = 19)
+  
+  counter = 1
+  for(i in 1:length(list_empirical_posterior)) {
+    age.decomp.distn$C_x[counter:(counter + 19 - 1)] <- list_empirical_posterior[[i]]$age.decomp$C_x
+    age.decomp.distn$median[counter:(counter + 19 - 1)] <- aggregate(C_x ~ age_bin, data = subset(age.decomp.distn, iteration %in% c(1:i)), FUN = median)$C_x 
+    age.decomp.distn$lcl[counter:(counter + 19 - 1)] <- aggregate(C_x ~ age_bin, data = subset(age.decomp.distn, iteration %in% c(1:i)), probs = 0.025, FUN = quantile)$C_x 
+    age.decomp.distn$ucl[counter:(counter + 19 - 1)] <- aggregate(C_x ~ age_bin, data = subset(age.decomp.distn, iteration %in% c(1:i)), probs = 0.975, FUN = quantile)$C_x
+    counter = counter + 19
+  }
+  
+  age.decomp.distn$CI_width <- age.decomp.distn$ucl - age.decomp.distn$lcl
+  
+  return(age.decomp.distn)
+}
+
 #this function plots the credible intervals vs. # posterior draws
 #and saves on the server in the black_white_mortality_project folder
-plot_estimate_CI_vs_posterior <- function(LE_distn, file.name, min, max) {
+plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, file.name, min, max) {
   black.converge.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = run_med_LEB)) + geom_line(col = "red") + 
     geom_line(aes(y = run_025_LEB), lty = 2, col = "red") +
     geom_line(aes(y = run_975_LEB), lty = 2, col = "red") +
@@ -251,13 +306,24 @@ plot_estimate_CI_vs_posterior <- function(LE_distn, file.name, min, max) {
  
   gap.width.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = CI_width_LEG)) + geom_line(col = "blue") + 
     geom_abline(intercept = LE_distn$CI_width_LEG[max], slope = 0, lty = 2, col = "blue") +
-    ylab("") + xlab("No. of posterior samples") + ggtitle("Width of the 95% credible interval for the gap")
+    ylab("") + xlab("No. of posterior samples") + ggtitle("Width of the 95% credible interval for the Gap")
   
-  grob <- arrangeGrob(black.converge.plot, white.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot, nrow = 5)
+  age.decomp.plot <- ggplot(subset(age_decomp, iteration %in% c(min:max)), aes(x = iteration, y = median)) + geom_line() + facet_wrap( ~ age_bin, scales = "free_y") +
+    geom_line(aes(y = lcl), lty = 2) + geom_line(aes(y = ucl), lty = 2) + ylab("Contribution (years)") + xlab("No. of posterior samples") +
+    ggtitle("Convergence of Age-Specific Contributions to the Gap and 95% Credible Interval")
+
+  age.width.plot <- ggplot(subset(age_decomp, iteration %in% c(min:max)), aes(x = iteration, y = CI_width)) + 
+    geom_line() + facet_wrap( ~ age_bin, scales = "free_y") +
+    #geom_abline(intercept = age_decomp$CI_width[max], slope = 0, lty = 2) +
+    ylab("") + xlab("No. of posterior samples") +
+    ggtitle("Width of the 95% credible interval for the contribution")
   
-  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 30, units = "in", dpi = 100)
+  grob <- arrangeGrob(black.converge.plot, white.converge.plot, both.width.plot, 
+                      gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot, nrow = 7)
   
-  return(list(white.converge.plot, black.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot))
+  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 36, units = "in", dpi = 100)
+  
+  return(list(white.converge.plot, black.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot))
 }
 
 ##all of the steps together:
