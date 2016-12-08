@@ -281,9 +281,40 @@ calc_running_med_CI_age <- function(list_empirical_posterior) {
   return(age.decomp.distn)
 }
 
+#this function takes a list of the samples from the posterior distribution
+#it then calculates the median and 97.5th and 2.5th percentiles
+#of the credible intervals as a function of the number of posterior draws.
+#for each of cod age decomposition bins
+calc_running_med_CI_cod <- function(list_empirical_posterior) {
+  
+  cod.decomp.distn <- data.frame(matrix(ncol = 6, nrow = 6*length(list_empirical_posterior)))
+  names(cod.decomp.distn) <- c("cod", "iteration", "C_x", "median", "lcl", "ucl")
+  cod.decomp.distn$cod <- rep(c("All other causes", "Cancers", "Cardiovascular", 
+                                    "Communicable", "Injuries", "Non-communicable"), length(list_empirical_posterior))
+  cod.decomp.distn$iteration <- rep(1:length(list_empirical_posterior), each = 6)
+  
+  counter = 1
+  for(i in 1:length(list_empirical_posterior)) {
+    codDecomp <- list_empirical_posterior[[i]]$cod.decomp
+    codDecomp$cod <- codDecomp$Cause.of.death
+
+    marginal.table <- sqldf('select cod, sum(C_xi) as C_x from codDecomp group by cod')  
+
+    cod.decomp.distn$C_x[counter:(counter + 6 - 1)] <- marginal.table$C_x
+    cod.decomp.distn$median[counter:(counter + 6 - 1)] <- aggregate(C_x ~ cod, data = subset(cod.decomp.distn, iteration %in% c(1:i)), FUN = median)$C_x 
+    cod.decomp.distn$lcl[counter:(counter + 6 - 1)] <- aggregate(C_x ~ cod, data = subset(cod.decomp.distn, iteration %in% c(1:i)), probs = 0.025, FUN = quantile)$C_x 
+    cod.decomp.distn$ucl[counter:(counter + 6 - 1)] <- aggregate(C_x ~ cod, data = subset(cod.decomp.distn, iteration %in% c(1:i)), probs = 0.975, FUN = quantile)$C_x
+    counter = counter + 6
+  }
+  
+  cod.decomp.distn$CI_width <- cod.decomp.distn$ucl - cod.decomp.distn$lcl
+  
+  return(cod.decomp.distn)
+}
+
 #this function plots the credible intervals vs. # posterior draws
 #and saves on the server in the black_white_mortality_project folder
-plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, file.name, min, max) {
+plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, cod_decomp, file.name, min, max) {
   black.converge.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = run_med_LEB)) + geom_line(col = "red") + 
     geom_line(aes(y = run_025_LEB), lty = 2, col = "red") +
     geom_line(aes(y = run_975_LEB), lty = 2, col = "red") +
@@ -314,16 +345,24 @@ plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, file.name, min, 
 
   age.width.plot <- ggplot(subset(age_decomp, iteration %in% c(min:max)), aes(x = iteration, y = CI_width)) + 
     geom_line() + facet_wrap( ~ age_bin, scales = "free_y") +
-    #geom_abline(intercept = age_decomp$CI_width[max], slope = 0, lty = 2) +
     ylab("") + xlab("No. of posterior samples") +
-    ggtitle("Width of the 95% credible interval for the contribution")
+    ggtitle("Width of the 95% credible interval for the age contribution")
+  
+  cod.decomp.plot <- ggplot(subset(cod_decomp, iteration %in% c(min:max)), aes(x = iteration, y = median)) + geom_line() + facet_wrap( ~ cod, scales = "free_y") +
+    geom_line(aes(y = lcl), lty = 2) + geom_line(aes(y = ucl), lty = 2) + ylab("Contribution (years)") + xlab("No. of posterior samples") +
+    ggtitle("Convergence of COD-Specific Contributions to the Gap and 95% Credible Interval")    
+  
+  cod.width.plot <- ggplot(subset(cod_decomp, iteration %in% c(min:max)), aes(x = iteration, y = CI_width)) + 
+    geom_line() + facet_wrap( ~ cod, scales = "free_y") +
+    ylab("") + xlab("No. of posterior samples") +
+    ggtitle("Width of the 95% credible interval for the COD contribution")
   
   grob <- arrangeGrob(black.converge.plot, white.converge.plot, both.width.plot, 
-                      gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot, nrow = 7)
+                      gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot, nrow = 9)
   
-  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 36, units = "in", dpi = 100)
+  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 47, units = "in", dpi = 100)
   
-  return(list(white.converge.plot, black.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot))
+  return(list(white.converge.plot, black.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot, cod.decomp.plot, cod.width.plot))
 }
 
 ##all of the steps together:
