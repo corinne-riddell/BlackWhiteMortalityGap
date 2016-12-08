@@ -46,5 +46,8 @@ saved_bayes_test <- lapply(X = miss_1985_females_thinned[[1]][1:950], FUN=life_e
 post.test <- calc_running_med_CI_posterior(saved_bayes_test)
 post.test2 <- calc_running_med_CI_age(saved_bayes_test)
 post.test2b <- calc_running_med_CI_cod(saved_bayes_test)
-post.test3 <- plot_estimate_CI_vs_posterior(LE_distn = post.test, age_decomp = post.test2, cod_decomp = post.test2b, min = 10, max = 950, file.name = "testdec7")
+post.test2c <- calc_running_med_CI_codage(saved_bayes_test)
+
+post.test3 <- plot_estimate_CI_vs_posterior(LE_distn = post.test, age_decomp = post.test2, cod_decomp = post.test2b, 
+                                            codage_decomp = post.test2c, min = 10, max = 950, file.name = "testdec7")
 

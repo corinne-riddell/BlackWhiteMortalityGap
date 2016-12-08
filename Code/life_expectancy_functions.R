@@ -312,9 +312,39 @@ calc_running_med_CI_cod <- function(list_empirical_posterior) {
   return(cod.decomp.distn)
 }
 
+calc_running_med_CI_codage <- function(list_empirical_posterior) {
+  age.cod.decomp.distn <- data.frame(matrix(ncol = 7, nrow = 19*6*length(list_empirical_posterior)))
+  names(age.cod.decomp.distn) <- c("age", "cod", "C_x", "iteration", "median", "lcl", "ucl")
+  age.cod.decomp.distn$cod <- factor(age.cod.decomp.distn$cod, levels = c("All other causes", "Cancers", "Cardiovascular", 
+                                                                   "Communicable", "Injuries", "Non-communicable"))
+  age.cod.decomp.distn$iteration <- rep(1:length(list_empirical_posterior), each = 19*6)  
+  
+  counter <- 1
+  for(i in 1:length(list_empirical_posterior)) {
+    age.cod.decomp.distn[counter:(counter + 19*6 - 1), c("age", "cod", "C_x")] <- list_empirical_posterior[[i]]$cod.decomp[, c("Ages", "Cause.of.death", "C_xi")]
+    age.cod.decomp.distn$median[counter:(counter + 19*6 - 1)] <- aggregate(C_x ~ cod + age, 
+                                                                           data = subset(age.cod.decomp.distn,
+                                                                                         iteration %in% c(1:i)), 
+                                                                           FUN = median)$C_x 
+    age.cod.decomp.distn$lcl[counter:(counter + 19*6 - 1)] <- aggregate(C_x ~ cod + age, 
+                                                                        data = subset(age.cod.decomp.distn,
+                                                                                      iteration %in% c(1:i)), 
+                                                                        probs = 0.025, FUN = quantile)$C_x 
+    age.cod.decomp.distn$ucl[counter:(counter + 19*6 - 1)] <- aggregate(C_x ~ cod + age, 
+                                                                        data = subset(age.cod.decomp.distn, 
+                                                                                      iteration %in% c(1:i)), 
+                                                                        probs = 0.975, FUN = quantile)$C_x
+    counter = counter + 19*6
+  }
+  
+  age.cod.decomp.distn$CI_width <- age.cod.decomp.distn$ucl - age.cod.decomp.distn$lcl
+  
+  return(age.cod.decomp.distn)
+}
+
 #this function plots the credible intervals vs. # posterior draws
 #and saves on the server in the black_white_mortality_project folder
-plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, cod_decomp, file.name, min, max) {
+plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, cod_decomp, codage_decomp, file.name, min, max) {
   black.converge.plot <- ggplot(LE_distn[min:max, ], aes(x = row, y = run_med_LEB)) + geom_line(col = "red") + 
     geom_line(aes(y = run_025_LEB), lty = 2, col = "red") +
     geom_line(aes(y = run_975_LEB), lty = 2, col = "red") +
@@ -339,30 +369,49 @@ plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, cod_decomp, file
     geom_abline(intercept = LE_distn$CI_width_LEG[max], slope = 0, lty = 2, col = "blue") +
     ylab("") + xlab("No. of posterior samples") + ggtitle("Width of the 95% credible interval for the Gap")
   
-  age.decomp.plot <- ggplot(subset(age_decomp, iteration %in% c(min:max)), aes(x = iteration, y = median)) + geom_line() + facet_wrap( ~ age_bin, scales = "free_y") +
-    geom_line(aes(y = lcl), lty = 2) + geom_line(aes(y = ucl), lty = 2) + ylab("Contribution (years)") + xlab("No. of posterior samples") +
+  age.decomp.plot <- ggplot(subset(age_decomp, iteration %in% c(min:max)), aes(x = iteration, y = median)) + geom_line(col="green") + facet_wrap( ~ age_bin, scales = "free_y") +
+    geom_line(aes(y = lcl), lty = 2, col="green") + geom_line(aes(y = ucl), lty = 2, col="green") + ylab("Contribution (years)") + xlab("No. of posterior samples") +
     ggtitle("Convergence of Age-Specific Contributions to the Gap and 95% Credible Interval")
 
   age.width.plot <- ggplot(subset(age_decomp, iteration %in% c(min:max)), aes(x = iteration, y = CI_width)) + 
-    geom_line() + facet_wrap( ~ age_bin, scales = "free_y") +
+    geom_line(col="green") + facet_wrap( ~ age_bin, scales = "free_y") +
     ylab("") + xlab("No. of posterior samples") +
     ggtitle("Width of the 95% credible interval for the age contribution")
   
-  cod.decomp.plot <- ggplot(subset(cod_decomp, iteration %in% c(min:max)), aes(x = iteration, y = median)) + geom_line() + facet_wrap( ~ cod, scales = "free_y") +
-    geom_line(aes(y = lcl), lty = 2) + geom_line(aes(y = ucl), lty = 2) + ylab("Contribution (years)") + xlab("No. of posterior samples") +
+  cod.decomp.plot <- ggplot(subset(cod_decomp, iteration %in% c(min:max)), aes(x = iteration, y = median)) + geom_line(col="purple") + facet_wrap( ~ cod, scales = "free_y") +
+    geom_line(aes(y = lcl), lty = 2, col="purple") + geom_line(aes(y = ucl), lty = 2, col="purple") + ylab("Contribution (years)") + xlab("No. of posterior samples") +
     ggtitle("Convergence of COD-Specific Contributions to the Gap and 95% Credible Interval")    
   
   cod.width.plot <- ggplot(subset(cod_decomp, iteration %in% c(min:max)), aes(x = iteration, y = CI_width)) + 
-    geom_line() + facet_wrap( ~ cod, scales = "free_y") +
+    geom_line(col="purple") + facet_wrap( ~ cod, scales = "free_y") +
     ylab("") + xlab("No. of posterior samples") +
     ggtitle("Width of the 95% credible interval for the COD contribution")
+
+  codage_decomp$both <- interaction(codage_decomp$age, codage_decomp$cod, sep = ".")
+  
+  codage.decomp.plot <- ggplot(subset(codage_decomp, iteration %in% c(min:max)), aes(x = iteration, y = median)) + geom_line(col="orange") + facet_wrap( ~ both, scales = "free_y", ncol = 5) +
+    geom_line(aes(y = lcl), lty = 2, col="orange") + geom_line(aes(y = ucl), lty = 2, col="orange") + ylab("Contribution (years)") + xlab("No. of posterior samples") +
+    ggtitle("Convergence of Age-COD Contributions to the Gap and 95% Credible Interval")    
+  
+  codage.width.plot <- ggplot(subset(codage_decomp, iteration %in% c(min:max)), aes(x = iteration, y = CI_width)) + 
+    geom_line(col="orange") + facet_wrap( ~ both, scales = "free_y", ncol = 5) +
+    ylab("") + xlab("No. of posterior samples") +
+    ggtitle("Width of the 95% credible interval for the Age-COD contribution")
   
   grob <- arrangeGrob(black.converge.plot, white.converge.plot, both.width.plot, 
-                      gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot, nrow = 9)
+                      gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot,
+                      cod.decomp.plot, cod.width.plot, nrow = 9)
   
-  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), width = 10, height = 47, units = "in", dpi = 100)
+  grob2 <- arrangeGrob(codage.decomp.plot, codage.width.plot)
   
-  return(list(white.converge.plot, black.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot, age.decomp.plot, age.width.plot, cod.decomp.plot, cod.width.plot))
+  ggsave(grob, filename = paste0("~/black_white_mortality_project/", file.name, ".tiff"), 
+         width = 10, height = 47, units = "in", dpi = 100, limitsize = F)
+  
+  ggsave(grob2, filename = paste0("~/black_white_mortality_project/", file.name, "cod_age.tiff"), 
+         width = 10, height = 66, units = "in", dpi = 100, limitsize = F)
+  
+  return(list(white.converge.plot, black.converge.plot, both.width.plot, gap.converge.plot, gap.width.plot, 
+              age.decomp.plot, age.width.plot, cod.decomp.plot, cod.width.plot, codage.decomp.plot, codage.width.plot))
 }
 
 ##all of the steps together:
