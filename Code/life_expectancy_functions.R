@@ -107,9 +107,9 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
 make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death, sign.var, decomp.var, decomp.var.prop) {
   cod.decomp.table["group"] <- interaction(cod.decomp.table[[age.groups]], cod.decomp.table[[sign.var]], sep = ".")
 
-  cod.decomp.table <- cod.decomp.table[order(cod.decomp.table[age.groups], 
-                                             cod.decomp.table[sign.var], 
-                                             cod.decomp.table[cause.of.death]), ]
+  cod.decomp.table <- cod.decomp.table[order(cod.decomp.table[[age.groups]], 
+                                             cod.decomp.table[[sign.var]], 
+                                             cod.decomp.table[[cause.of.death]]), ]
   
   cod.decomp.table$start <- 0
   cod.decomp.table$finish <- cod.decomp.table[[decomp.var]] #C_xi
