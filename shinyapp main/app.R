@@ -59,9 +59,10 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 strong("Display contribution in"),
                                 radioButtons(inputId = "contribution_type", label = NA, 
                                              inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
-                                plotlyOutput("age_bayes"),
-                                plotlyOutput("age_bayes2"),
-                                plotlyOutput("age_bayes_change")),
+                                plotlyOutput("age_bayes")#,
+                                #plotlyOutput("age_bayes2"),
+                                #plotlyOutput("age_bayes_change")
+                                ),
                        
                        tabPanel("Decomposition by Cause",
                                 plotlyOutput("cod_bayes"),
@@ -373,66 +374,51 @@ whereas those that exacerbated the gap are shown to the right.")
   ##              Age tab                 ##
   ##########################################
   
-  xaxis.react <- reactive({ 
-    switch(input$contribution_type,
-           "Years" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                              paired.ids$Year3 == input$year1 & 
-                                                              paired.ids$Sex2 == input$selected_sex)]][["C_x"]],
-           "Proportion (%)" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                       paired.ids$Year3 == input$year1 & 
-                                                                       paired.ids$Sex2 == input$selected_sex)]][["C_x_proportion"]])
-  })
-
-  xaxis.react2 <- reactive({ 
-    switch(input$contribution_type,
-           "Years" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                              paired.ids$Year3 == input$year2 & 
-                                                              paired.ids$Sex2 == input$selected_sex)]][["C_x"]],
-           "Proportion (%)" = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                       paired.ids$Year3 == input$year2 & 
-                                                                       paired.ids$Sex2 == input$selected_sex)]][["C_x_proportion"]])
-  })
+  #goal: to combine the following three reactive dfs into 1
+  #would need to add a column for the facetting - labelled by first year, second year, and change
+  #need all the variables to be the same -- commented out line having trouble for some reason...
   
   decomp.data.react <- reactive({
-    data.frame(Ages = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                               paired.ids$Year3 == input$year1 & 
-                                                               paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
-               adds_to_gap = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                      paired.ids$Year3 == input$year1 & 
-                                                                      paired.ids$Sex2 == input$selected_sex)]][["adds_to_gap"]],
-               x1 = xaxis.react())
+    temp <- data.frame(list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                            paired.ids$Year3 == input$year1 & 
+                                            paired.ids$Sex2 == input$selected_sex)]])
+    temp["x1"] <-  switch(input$contribution_type,
+                         "Years" = temp[["C_x"]],
+                         "Proportion (%)" = temp[["C_x_proportion"]]
+    )
+    #temp <- temp[, c("Ages", "x1")]
+    temp
   })
   
   decomp.data.react2 <- reactive({
-    data.frame(Ages = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                               paired.ids$Year3 == input$year2 & 
-                                                               paired.ids$Sex2 == input$selected_sex)]][["Ages"]],
-               adds_to_gap = list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                      paired.ids$Year3 == input$year2 & 
-                                                                      paired.ids$Sex2 == input$selected_sex)]][["adds_to_gap"]],
-               x1 = xaxis.react2())
+    temp <- data.frame(list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
+                                                                paired.ids$Year3 == input$year2 & 
+                                                                paired.ids$Sex2 == input$selected_sex)]])
+    temp["x1"] <-  switch(input$contribution_type,
+                          "Years" = temp[["C_x"]],
+                          "Proportion (%)" = temp[["C_x_proportion"]]
+    )
+    #temp <- temp[, c("Ages", "x1")]
+    temp
   })
 
   contribution.data.react <- reactive({
-                             temp <- contribution.to.gap.change(type.of.decomp = "Age", 
-                              list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                      paired.ids$Year3 == input$year1 & 
-                                                                      paired.ids$Sex2 == input$selected_sex)]],
-                              list.age.decomp.tables.smoothed[[which(paired.ids$State2 ==  input$state & 
-                                                                      paired.ids$Year3 == input$year2 & 
-                                                                      paired.ids$Sex2 == input$selected_sex)]])
+    temp <- contribution.to.gap.change(type.of.decomp = "Age", 
+                                       decomp.data.react(),
+                                       decomp.data.react2())
+    
+    temp[["x1"]] <- switch(input$contribution_type,
+                                 "Years" = temp[["Contribution.to.change"]],
+                                 "Proportion (%)" = temp[["Contrib.to.change.prop"]]
+                                 )
                              
-                             temp[["change.x"]] <- switch(input$contribution_type,
-                                                          "Years" = temp[["Contribution.to.change"]],
-                                                          "Proportion (%)" = temp[["Contrib.to.change.prop"]]
-                             )
-                             
-                             temp
+    temp <- temp[, c("Ages", "x1")]
+    temp
   })
   
 
-  xlim.upper <- reactive({ max(max(decomp.data.react()$x1), max(decomp.data.react2()$x1)) })
-  xlim.lower <- reactive({ min(min(decomp.data.react()$x1), min(decomp.data.react2()$x1)) })  
+  xlim.upper <- reactive({ max(max(decomp.data.react()$x1), max(decomp.data.react2()$x1), max(contribution.data.react()$x1)) })
+  xlim.lower <- reactive({ min(min(decomp.data.react()$x1), min(decomp.data.react2()$x1), min(contribution.data.react()$x1)) })  
   
   xaxis.title <- reactive({ 
     switch(input$contribution_type,
@@ -443,45 +429,47 @@ whereas those that exacerbated the gap are shown to the right.")
   output$age_bayes <- renderPlotly({
     
     p3 <- ggplotly(ggplot(decomp.data.react(), aes(y = Ages, x = x1)) + 
-               geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
-               #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
+               geom_segment(aes(xend = 0, yend = Ages), lwd = 3, col = "#2166ac") + #, col = adds_to_gap
+              #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
                theme_minimal() +
                geom_vline(xintercept = 0) +
                #scale_y_reverse() + 
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
-               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year1)) +
+             #  ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year1)) +
                xlim(xlim.lower(), xlim.upper())
-    )
+    )%>% layout(title = paste0(input$selected_sex, "s in ", input$state, " in ", input$year1),
+                xaxis = list(title = paste0("Contribution to life expectancy gap ", xaxis.title())))
     
-    p3
-    })
+  #  p3
+    #})
 
-  output$age_bayes2 <- renderPlotly({
+  #output$age_bayes2 <- renderPlotly({
     p4 <- ggplotly(ggplot(decomp.data.react2(), aes(y = Ages, x = x1)) + 
-                     geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
+                     geom_segment(aes(xend = 0, yend = Ages), lwd = 3, col = "#2166ac") + #, col = adds_to_gap
                      #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
                      theme_minimal() +
                      geom_vline(xintercept = 0) +
                      #scale_y_reverse() + 
                      xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
-                     ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
+                     #ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
                      xlim(xlim.lower(), xlim.upper())
-    )
-    p4
- })
+    ) %>% layout(title = paste0(input$selected_sex, "s in ", input$state, " in ", input$year2))
+   # p4
+ #})
   
-  output$age_bayes_change <- renderPlotly({
-    ggplotly(ggplot(contribution.data.react(), aes(y = Ages, x = change.x)) +
-               geom_segment(aes(xend = 0, yend = Ages), lwd = 4, col = "#2166ac") + #, col = adds_to_gap
+  #output$age_bayes_change <- renderPlotly({
+    p5 <- ggplotly(ggplot(contribution.data.react(), aes(y = Ages, x = x1)) +
+               geom_segment(aes(xend = 0, yend = Ages), lwd = 3, col = "#2166ac") + #, col = adds_to_gap
                #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
                theme_minimal() +
                geom_vline(xintercept = 0) +
                #scale_y_reverse() + 
-               xlab(paste0("Contribution to change in life expectancy gap", xaxis.title())) +
-               ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
+               #xlab(paste0("Contribution to change in life expectancy gap", xaxis.title())) +
+               #ggtitle(paste0(input$selected_sex, "s in ", input$state, " in ", input$year2)) +
                xlim(xlim.lower(), xlim.upper())
-    )
-    
+    ) %>% layout(title = paste0("something"), xaxis = list(title = paste0("Change in contribution ", xaxis.title())))
+  #  p5
+    subplot(p3, p4, p5, shareY = T, titleX = T) #, p5, shareY = T, ncols = 3)# shareX = T, nrows = 2, titleY = T)  
   })
   
   ##########################################
@@ -554,7 +542,7 @@ whereas those that exacerbated the gap are shown to the right.")
    
   output$cod_bayes <- renderPlotly({  
     ggplotly(ggplot(cod.decomp.data.react(), aes(y = COD, x = x1)) + 
-               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 4) + 
+               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 3) + 
                theme_minimal() +
                geom_vline(xintercept = 0) +
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
@@ -567,7 +555,7 @@ whereas those that exacerbated the gap are shown to the right.")
   
   output$cod_bayes2 <- renderPlotly({  
     ggplotly(ggplot(cod.decomp.data.react2(), aes(y = COD, x = x1)) + 
-               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 4) + 
+               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 3) + 
                theme_minimal() +
                geom_vline(xintercept = 0) +
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
@@ -580,7 +568,7 @@ whereas those that exacerbated the gap are shown to the right.")
   
   output$cod_bayes_change <- renderPlotly({
     ggplotly(ggplot(cod.contribution.data.react(), aes(y = COD, x = change.x)) +
-               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 4) + #, col = adds_to_gap
+               geom_segment(aes(xend = 0, yend = COD, col = COD), lwd = 3) + #, col = adds_to_gap
                #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
                theme_minimal() +
                geom_vline(xintercept = 0) +
@@ -664,7 +652,7 @@ whereas those that exacerbated the gap are shown to the right.")
     
     ggplotly(ggplot(age.cod.data.react(),
                     aes(y = Ages, x = start)) + 
-               geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 4) +
+               geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 3) +
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
                ylab("Age group\n") + theme_minimal() +
                geom_vline(xintercept = 0) + 
@@ -677,7 +665,7 @@ whereas those that exacerbated the gap are shown to the right.")
     
     ggplotly(ggplot(age.cod.data.react2(),
                     aes(y = Ages, x = start)) + 
-               geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 4) +
+               geom_segment(aes(xend = finish, col = COD, yend = Ages), lwd = 3) +
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
                ylab("Age group\n") + theme_minimal() +
                geom_vline(xintercept = 0)  +
