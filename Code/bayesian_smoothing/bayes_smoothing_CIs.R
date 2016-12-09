@@ -10,6 +10,9 @@ source('~/BlackWhiteMortalityGap/Code/4_smoothing_time_src.R')
 
 setwd("~/bwm_results")
 
+time.a <- system.time(alabama_1990_females_thinned <- investigate_convergence(year = 1990, state = "Alabama", sex = "female", n_post_samp = 10, "alabama_1990_females_thinned", 10, 950))
+#note for KTM: see line 246 of 4_smoothing_time_fun.R -- I think that line needs to be generalized to also include males. The above code gets error
+#if I change sex = "male".
 
 system.time(georgia_2013_females_thinned <- investigate_convergence(year = 2013, state = 'Georgia', sex = 'female', n_post_samp = 1000, "georgia_2013_females_thinned"))
 #the above gives the error "non numeric arugment to binary operator" when n_post_samp == 1000, but I didn't encounter the error when 

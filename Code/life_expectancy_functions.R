@@ -417,16 +417,25 @@ plot_estimate_CI_vs_posterior <- function(LE_distn, age_decomp, cod_decomp, coda
 ##all of the steps together:
 investigate_convergence <- function(year, state, sex, n_post_samp, graph_file_name, min, max) {
   mcmc_dist <- extract_mcmc_dist(year=year, state=state, sex=sex, n_post_samp=n_post_samp)
+  mcmc_dist <- mcmc_dist[1:(n_post_samp - 50)] #because for some reason it makes 950 not 1000.... need to ask KTM
   saved_bayes = lapply(X = mcmc_dist, FUN=life_expectancy_and_gap)
-  posterior.dataframe <- calc_running_med_CI_posterior(saved_bayes)
-  plots <- plot_estimate_CI_vs_posterior(posterior.dataframe, graph_file_name, min, max)
-  return(list(mcmc_dist, saved_bayes, posterior.dataframe, plots))
+  posterior.df <- calc_running_med_CI_posterior(saved_bayes)
+  posterior.df.age <- calc_running_med_CI_age(saved_bayes)
+  posterior.df.cod <- calc_running_med_CI_cod(saved_bayes)
+  posterior.df.codage <- calc_running_med_CI_codage(saved_bayes)
+  
+  plots <- plot_estimate_CI_vs_posterior(posterior.df, posterior.df.age, posterior.df.cod, posterior.df.codage, graph_file_name, min, max)
+  return(list(mcmc_dist, saved_bayes, posterior.df, posterior.df.age, posterior.df.cod, posterior.df.codage, plots))
 }
 
 #use this one for now, since need to run the mcmc_dist() step separately to remove the NA rows for the last 50 list elements
 investigate_convergence_rest <- function(mcmc_dist, graph_file_name, min, max) {
   saved_bayes = lapply(X = mcmc_dist, FUN=life_expectancy_and_gap)
-  posterior.dataframe <- calc_running_med_CI_posterior(saved_bayes)
-  plots <- plot_estimate_CI_vs_posterior(posterior.dataframe, graph_file_name, min, max)
-  return(list(mcmc_dist, saved_bayes, posterior.dataframe, plots))
+  posterior.df <- calc_running_med_CI_posterior(saved_bayes)
+  posterior.df.age <- calc_running_med_CI_age(saved_bayes)
+  posterior.df.cod <- calc_running_med_CI_cod(saved_bayes)
+  posterior.df.codage <- calc_running_med_CI_codage(saved_bayes)
+  
+  plots <- plot_estimate_CI_vs_posterior(posterior.df, posterior.df.age, posterior.df.cod, posterior.df.codage, graph_file_name, min, max)
+  return(list(mcmc_dist, saved_bayes, posterior.df, posterior.df.age, posterior.df.cod, posterior.df.codage, plots))
 }
