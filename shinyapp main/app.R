@@ -23,7 +23,11 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 selectInput(inputId = "year2", label = NA, choices = unique(dat.clean$Year3), selected = 2013, width = 100),
                                 strong("Select sex"),
                                 radioButtons(inputId = "selected_sex", label = NA, 
-                                             inline = T, choices = c("Male", "Female"), selected = "Male")
+                                             inline = T, choices = c("Male", "Female"), selected = "Male"),
+                                selectInput(inputId = "state", label = "Select a state", width = 200, choices = unique(levels(dat.clean$State2))),
+                                strong("Display contribution in"),
+                                radioButtons(inputId = "contribution_type", label = NA, 
+                                             inline = T, choices = c("Years", "Proportion (%)"), selected = "Years")
 
                       ),
                    
@@ -42,23 +46,19 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 dataTableOutput("data.temp2")),
                        
                        tabPanel("Life Expectancy Gap",
-                                selectInput(inputId = "state", label = "Select a state", width = 200, choices = unique(levels(dat.clean$State2))),
                                 radioButtons(inputId = "LE_type", label = "Model choice", inline = T, 
                                              choices = c("Impute 1", "Impute 5", "Impute 9"), 
                                              selected = "Impute 5"),
                                 strong("Legend\n"),
                                 img(src="legend.png"),
-                                strong("Population trends over time"),
-                                plotlyOutput("population_trend"),
                                 strong("Life expectancy over time"),
                                 plotlyOutput("life_expectancy"),
                                 textOutput("Explain_LE_males"),
-                                textOutput("Explain_LE_females")),
+                                textOutput("Explain_LE_females"),
+                                strong("Population trends over time"),
+                                plotlyOutput("population_trend", height = 300, width = 400)),
                        
                        tabPanel("Decomposition by Age",
-                                strong("Display contribution in"),
-                                radioButtons(inputId = "contribution_type", label = NA, 
-                                             inline = T, choices = c("Years", "Proportion (%)"), selected = "Years"),
                                 plotlyOutput("age_bayes")),
                        
                        tabPanel("Decomposition by Cause",
@@ -88,7 +88,6 @@ server <- function(input, output) {
       scale_x_continuous(name = "Year") + 
       theme_minimal() + theme(legend.title=element_blank())) 
       # p %>% layout(legend = list(x = 0.5, y = -2))
-     #p %>% layout(showlegend = F, yaxis = list(exponentformat("SI")))
     p %>% layout(showlegend = F)
    
   })
