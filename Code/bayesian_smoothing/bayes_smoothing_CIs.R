@@ -10,9 +10,37 @@ source('~/BlackWhiteMortalityGap/Code/4_smoothing_time_src.R')
 
 setwd("~/bwm_results")
 
-time.a <- system.time(alabama_1990_females_thinned <- investigate_convergence(year = 1990, state = "Alabama", sex = "female", n_post_samp = 10, "alabama_1990_females_thinned", 10, 950))
-#note for KTM: see line 246 of 4_smoothing_time_fun.R -- I think that line needs to be generalized to also include males. The above code gets error
+#note for KTM: see line 246 of 4_smoothing_time_fun.R -- I think that line needs to be generalized to also include males. The code below produces an error
 #if I change sex = "male".
+time.a <- system.time(alabama_1990_females_thinned <- investigate_convergence(year = 1990, state = "Alabama", sex = "female", n_post_samp = 1000, "alabama_1990_females_thinned", 10, 950))
+time.b <- system.time(alabama_2009_females_thinned <- investigate_convergence(year = 2009, state = "Alabama", sex = "female", n_post_samp = 1000, "alabama_2009_females_thinned", 10, 950))
+
+time.c <- system.time(missouri_1990_females_thinned <- investigate_convergence(year = 1990, state = "Missouri", sex = "female", n_post_samp = 1000, "missouri_1990_females_thinned", 10, 950))
+time.d <- system.time(missouri_2009_females_thinned <- investigate_convergence(year = 2009, state = "Missouri", sex = "female", n_post_samp = 1000, "missouri_2009_females_thinned", 10, 950))
+
+time.e <- system.time(utah_1990_females_thinned <- investigate_convergence(year = 1990, state = "Utah", sex = "female", n_post_samp = 1000, "utah_1990_females_thinned", 10, 950))
+time.f <- system.time(utah_2009_females_thinned <- investigate_convergence(year = 2009, state = "Utah", sex = "female", n_post_samp = 1000, "utah_2009_females_thinned", 10, 950))
+
+wv_1990_females_thinned <- investigate_convergence(year = 1990, state = "West Virginia", sex = "female", n_post_samp = 1000, "wv_1990_females_thinned", 10, 950)
+wv_2009_females_thinned <- investigate_convergence(year = 2009, state = "West Virginia", sex = "female", n_post_samp = 1000, "wv_2009_females_thinned", 10, 950)
+
+neb_1990_females_thinned <- investigate_convergence(year = 1990, state = "Nebraska", sex = "female", n_post_samp = 1000, "neb_1990_females_thinned", 10, 950)
+neb_2009_females_thinned <- investigate_convergence(year = 2009, state = "Nebraska", sex = "female", n_post_samp = 1000, "neb_2009_females_thinned", 10, 950)
+
+ny_1990_females_thinned <- investigate_convergence(year = 1990, state = "New York", sex = "female", n_post_samp = 1000, "ny_1990_females_thinned", 10, 950)
+ny_2009_females_thinned <- investigate_convergence(year = 2009, state = "New York", sex = "female", n_post_samp = 1000, "ny_2009_females_thinned", 10, 950)
+
+cali_1990_females_thinned <- investigate_convergence(year = 1990, state = "California", sex = "female", n_post_samp = 1000, "cali_1990_females_thinned", 10, 950)
+cali_2009_females_thinned <- investigate_convergence(year = 2009, state = "California", sex = "female", n_post_samp = 1000, "cali_2009_females_thinned", 10, 950)
+
+flor_1990_females_thinned <- investigate_convergence(year = 1990, state = "Florida", sex = "female", n_post_samp = 1000, "flor_1990_females_thinned", 10, 950)
+flor_2009_females_thinned <- investigate_convergence(year = 2009, state = "Florida", sex = "female", n_post_samp = 1000, "flor_2009_females_thinned", 10, 950)
+
+dc_1990_females_thinned <- investigate_convergence(year = 1990, state = "Washington DC", sex = "female", n_post_samp = 1000, "dc_1990_females_thinned", 10, 950)
+dc_2009_females_thinned <- investigate_convergence(year = 2009, state = "Washington DC", sex = "female", n_post_samp = 1000, "dc_2009_females_thinned", 10, 950)
+
+ark_1990_females_thinned <- investigate_convergence(year = 1990, state = "Arkansas", sex = "female", n_post_samp = 1000, "ark_1990_females_thinned", 10, 950)
+ark_2009_females_thinned <- investigate_convergence(year = 2009, state = "Arkansas", sex = "female", n_post_samp = 1000, "ark_2009_females_thinned", 10, 950)
 
 system.time(georgia_2013_females_thinned <- investigate_convergence(year = 2013, state = 'Georgia', sex = 'female', n_post_samp = 1000, "georgia_2013_females_thinned"))
 #the above gives the error "non numeric arugment to binary operator" when n_post_samp == 1000, but I didn't encounter the error when 
