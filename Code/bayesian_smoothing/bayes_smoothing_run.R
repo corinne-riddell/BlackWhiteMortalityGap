@@ -35,11 +35,12 @@ colname_agebins = 'Age'
 
 #mclapply(X=included_states, FUN=run_smoothing_models_mulitple_states, mc.cores=1, df=dat.clean, 
 #         cod_list, colname_state, colname_pop, colname_deaths, colname_cod, 
-#         colname_year, colname_sex, colname_agebins, colname_race) 
+#         colname_year, colname_sex, colname_agebins, colname_race)  
 
 
 load('~/black_white_mortality_project/validation_data_0610.Rdata') # change for SERVER 
 #load('/Users/kathryn/Dropbox/BlackWhiteGap/Data/validation_data_0610.Rdata') # change for LOCAL 
+states = unique(validation_data_0610$State2)
 
 setwd("~/black_white_mortality_project/validation_results")
 

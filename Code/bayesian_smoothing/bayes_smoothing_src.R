@@ -14,7 +14,9 @@ library(ggplot2)
 library(grid)
 library(gridExtra)
 
-source('bayes_smoothing_functions.R') 
+
+
+source('~/BlackWhiteMortalityGap/Code/bayesian_smoothing/bayes_smoothing_functions.R') 
 #source('life_expectancy_functions.R') 
 
 

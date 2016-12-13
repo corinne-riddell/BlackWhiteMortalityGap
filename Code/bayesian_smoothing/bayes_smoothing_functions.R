@@ -36,8 +36,8 @@ create_dataset = function(df,  colname_state, colname_pop, colname_deaths, colna
   selected_vars = c(colname_state, colname_pop, colname_deaths, colname_cod, colname_year, colname_sex, colname_agebins, colname_race)
   ds = df[ , selected_vars] 
   colnames(ds) = c('state', 'population', 'deaths', 'cod', 'year', 'sex', 'agebins', 'race')
-  ds$agebins = ds$agebins + 1
-  ds$year = ds$year + 1
+  ds$agebins = ds$agebins - (min(ds$agebins)-1)
+  ds$year = ds$year - (min(ds$year)-1)
   ds$upper_bound = ifelse(ds$population<9, ds$population, 9) 
   ds$censored = ifelse(is.na(ds$deaths),1,0)
   return(ds) 
@@ -244,8 +244,8 @@ run_smoothing_models_mulitple_states = function(df, states, cod_list,
 }
 
 extract_mcmc_dist = function(year, state, sex, n_post_samps) {
-  
-  Sex = ifelse(sex=='female', 'Female', 'Male') 
+  Sex = ifelse(sex=='female', 'Female', sex) 
+  Sex = ifelse(sex=='male', 'Male', sex) 
   Year = year - 1968
   name = paste0('results_',sex, '_', state, '.RData') 
   load(name)
@@ -259,6 +259,9 @@ extract_mcmc_dist = function(year, state, sex, n_post_samps) {
   for(k in 1:n_post_samps) {
     
     temp_df$smooth_rate = rep(NA, length(temp_df$X))
+    
+    
+    if(Sex == 'Female') {
     
     for(codi in 1:length(cod_list)) {
       jags_modeli = results_female$jags_bw[[codi]]
@@ -280,6 +283,32 @@ extract_mcmc_dist = function(year, state, sex, n_post_samps) {
     }
     temp_df$smoothed_deaths = temp_df$smooth_rate * temp_df$population
     temp_df_list[[k]] = temp_df
+    }
+    
+    if(Sex == 'Male') {
+      
+      for(codi in 1:length(cod_list)) {
+        jags_modeli = results_male$jags_bw[[codi]]
+        p_mcmc = as.mcmc(jags_modeli) 
+        p = data.frame(p_mcmc[[1]])  
+        
+        
+        for(age_bini in 1:n_agebins) {
+          name_rate_w = paste0('lnrate_w.',age_bini, ".", Year, ".") 
+          name_rate_b = paste0('lnrate_b.',age_bini, ".", Year, ".") 
+          temp_df$smooth_rate[temp_df$age_bin==age_bini 
+                              & temp_df$race=='White' 
+                              & temp_df$cod==cod_list[codi]] = exp(p[name_rate_w])[[1]][k] 
+          
+          temp_df$smooth_rate[temp_df$age_bin==age_bini 
+                              & temp_df$race=='Black' 
+                              & temp_df$cod==cod_list[codi]] = exp(p[name_rate_b])[[1]][k] 
+        }
+      }
+      temp_df$smoothed_deaths = temp_df$smooth_rate * temp_df$population
+      temp_df_list[[k]] = temp_df
+    }
+    
   }
   return(temp_df_list) 
 }
