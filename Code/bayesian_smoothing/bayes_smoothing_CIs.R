@@ -4,11 +4,13 @@
 # OBTAIN THE CREDIBLE INTERVALS FOR THE BAYESIAN SMOOTHING MODELS 
 # NOV 29, 2016 
 
-source('~/BlackWhiteMortalityGap/Code/4_smoothing_time_src.R')
+source('~/BlackWhiteMortalityGap/Code/bayesian_smoothing/bayes_smoothing_src.R')
 
 # CR wrote this, will need to double check how it works 
 
 setwd("~/bwm_results")
+
+time.a <- system.time(alabama_1990_males_thinned <- investigate_convergence(year = 1990, state = "Alabama", sex = "male", n_post_samp = 20, "alabama_1990_males_thinned", 10, 950))
 
 #note for KTM: see line 246 of 4_smoothing_time_fun.R -- I think that line needs to be generalized to also include males. The code below produces an error
 #if I change sex = "male".
