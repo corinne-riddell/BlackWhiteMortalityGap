@@ -1,0 +1,65 @@
+---
+title: "Compare with SH HA paper"
+author: "Corinne Riddell"
+date: "December 13, 2016"
+output: html_document
+---
+
+```{r}
+load("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/SH_HA_data.Rdata")
+names(dtotal)
+names(dtotal) <- c("State", "Age", "Sex", "Race", "Year", "Crude_Rate", "Count", "Population", "COD")
+```
+
+```{r recode_variables}
+library(dplyr)
+
+dtotal <- dtotal %>%
+  mutate(State2 = factor(State, levels = c(0:50), labels = c("Alabama", "Alaska", "Arizona", "Arkansas","California",
+                                                             "Colorado", "Connecticut", "Delaware", "Washington DC",
+                                                             "Florida", "Georgia", "Hawaii","Idaho", "Illinois", 
+                                                             "Indiana","Iowa", "Kansas", "Kentucky", "Louisiana", 
+                                                             "Maine", "Maryland", "Massachusetts", "Michigan", 
+                                                             "Minnesota", "Mississippi","Missouri", "Montana", 
+                                                             "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+                                                             "New Mexico", "New York","North Carolina","North Dakota",
+                                                             "Ohio", "Oklahoma","Oregon", "Pennsylvania", 
+                                                             "Rhode Island", "South Carolina", "South Dakota", 
+                                                             "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+                                                             "Washington", "West Virginia", "Wisconsin", "Wyoming")), 
+         Age2 = factor(Age, levels = c(0:19), labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                                         "15-19 years", "20-24 years", "25-29 years", "30-34 years",
+                                                         "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
+                                                         "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
+                                                         "75-79 years", "80-84 years","85+ years", "Unknown"), ordered = T),
+         Age3 = 0*(Age2 == "<1 year") + 1*(Age2 == "1-4 years") + 5*(Age2 == "5-9 years") +
+                10*(Age2 == "10-14 years") + 15*(Age2 == "15-19 years") + 20*(Age2 == "20-24 years") + 
+                25*(Age2 == "25-29 years") + 30*(Age2 == "30-34 years") + 35*(Age2 == "35-39 years") +
+                40*(Age2 == "40-44 years") + 45*(Age2 == "45-49 years") + 50*(Age2 == "50-54 years") + 
+                55*(Age2 == "55-59 years") + 60*(Age2 == "60-64 years") + 65*(Age2 == "65-69 years") +   
+                70*(Age2 == "70-74 years") + 75*(Age2 == "75-79 years") + 80*(Age2 == "80-84 years") + 
+                85*(Age2 == "85+ years"),
+         nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years"),
+         Sex2 = factor(Sex, levels = c(0, 1), labels = c("Male", "Female")),
+         Race2 = factor(Race, levels = c(0, 1), labels = c("White", "Black")),
+         COD2 = factor(COD), 
+         Year2 = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
+         Year3 = as.numeric(as.character(Year2)),
+         RaceSex = interaction(Race2, Sex2, sep = " "),
+         StateYearSex = interaction(State2, Year2, Sex2),
+         StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
+```
+
+```{r unknown_age_group}
+#there is an unknown age group for each combo of state-year-race-sex-age:
+table(dtotal$Age2) 
+
+#Count of death is always equal to 0 for unknown age groups
+table(dtotal$Age, dtotal$Count==0)
+
+#remove these data from the data we analyze:
+dtotal <- dtotal[dtotal$Age2 != "Unknown", ]
+
+save(dtotal, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/SH_HA_data.Rdata")
+```
+
