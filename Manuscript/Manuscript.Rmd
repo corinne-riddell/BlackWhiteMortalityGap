@@ -1,0 +1,56 @@
+---
+title: "Exploring how changes in age at death and cause of death have narrowed the black-white life expectancy gap over forty-five years in the United States."
+output: html_notebook
+---
+
+##Riddell CA, Morrison KT, Kaufman JS, Harper S 
+
+###Abstract
+
+###Introduction
+The life expectancy of a population serves as a barometer for overall health. In 2014, life expectancy in the United States was 78.7 years, but hidden within this figure, are differences in life expectancy by race. Non-hispanic whites lived 3.6 years longer than non-hispanic blacks [ref: http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf]. While both black and white americans have experienced increases in life expectancy since X, the difference between their life expectancies has varied. During the 1980s, the life expectancy gap widened and then narrowed in the 1990s due to relative mortality improvements among blacks in deaths due to homicide, HIV, unintentional injuries, and, among females, heart disease [Harper 2007]. The gap continued to narrow during the 2000s, but states differed in the magnitude of improvement that was made. For example, the life expectancy gap in New York decreased from 8.0 years to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 years to 5.6 years [Harper 2014]. This study seeks to better understand these state-level differences, by examining how changes in age at death and cause of death over time have worked to narrow or exacerbate the life expectancy gap.
+
+###Methods
+
+**The data**
+
+We used software maintained by the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (SEER*Stat) to extract data on the number of deaths and the population size in all 50 US states and the District of Columbia. The mortality data was originally collected by the National Center for Health Statistics (NCHS) from death certificates and stored by the National Vital Statistics System. The population data was derived by the NCHS using intercensal bridged-race population estimates. This study using data on the number of deaths and the population size according to race (black or white), sex (male or female), age group (<1 year old, 1-4 years old, followed by 5-year age groupings, with a final grouping of 85 or more years of age), year (1969 -- 2013), and cause of death. Cause of death was originally recorded using The International Classification of Diseases (ICD) codes versions 8 (1969-1979), 9 (1979-1998), and 10 (1999-2013). These codes were then grouped into 9X causes of death within the software, which we further aggregated into six broad causes of death for this analysis: Cancers, Cardiovascular disease, Communicable disease, Injuries, Non-communicable disease, and All other causes. This recoding is illustrated in eTable 1 in the eAppendix of the Supplement. When the number of deaths for a population is between 1 and 9, this data is suppressed by the software and produces a missing death count for that strata. However, death counts of exactly 0 or greater than 9 are known precisely. 
+
+**Statistical Methods**
+
+The data produced two statistical issues that were addressed by the statistical methods we chose. First, our methodology needed to handle the missing death counts. Second, several states had small blacks populations which produced even smaller population sizes in each sex- and age-specific grouping. In these cases, the estimation of the age-specific mortality rates is imprecise, and produces abrupt changes in the estimation of mortality rates over time that are unrealistic. To better estimate the underlying age-specific mortality rates, a method that produces smoother age-specific mortality trends was required.
+
+We used a bayesian model that handled the missing data and smoothing .... 
+
+- bayesian methodology to smooth over year
+- bayesian methodology to sample from truncated poisson distribution
+- produces smoothed death counts 
+- sampled from posterior distribution
+
+- data was then aggregated over causes of death to get the total death count and this data was used to calculation LE and to perform the decomposition by age.
+- standard life table methods to calculate life expectancy
+- gap in life expectancy in years was the difference between White and Black LE and was calculated for each year and sex
+- Arriaga's decomposition method to calculate the contribution of age and COD to the gap in years
+- Gives the contribution in years, can also calculation the proportional contribution.
+- to compare changes over time on the state level - can take the difference (in years) of the two contributions. Can also get the proportional contribution by...
+
+-Software: 
+
+
+###Supplemental Information
+
+**eTable1: Cause of Death Recode**
+
+| Broad cause of death     | Included causes of death                                                     |
+|--------------------------|------------------------------------------------------------------------------|
+| Cancers                   | Lip; Tongue; Salivary gland; Floor of mouth; Gum and other mouth; Nasopharnyx; Tonsil; Oropharynx; Hypopharynx; Other oral cavity and pharynx; Esophagus; Stomach; Small intestine; Colon excluding rectum; Rectum and rectosigmoid junction; Anus, anal canal and anorectum; Liver; Intrahepatic bile duct; Gallbladder; Other biliary; Pancreas; Retroperitoneum; Peritoneum, Omentum and mesentery; Other digestive organs; Nose, nasal cavity and middle ear; Larynx; Lung and bronchus; Pleura; Trachea, Mediastinum and other respiratory organs; Bones and joints; Soft tissue including heart; Melanoma of the skin; Non-melanoma skin; Breast; Cervix uteri; Corpus uteri; Uterus, NOS; Ovary; Vagina; Vulva; Other female genital organs; Prostate; Testis; Penis; Other male genital organs; Urinary bladder; Kidney and renal pelvis; Ureter; Other urinary organs; Eye and orbit; Brain and other nervous system; Thyroid; Other endocrine including thymus; Hodkin lymphoma; Myeloma; Acute lymphocytic leukemia; Chronic lymphocytic leukemia; Other lymphocytic leukemia; Acute myeloid leukemia; Acute monocytic leukemia; Chronic myeloid leukemia; Other myeliod/monocytic leukemia; Other acute leukemia; Aleukemic, Subleukemic and NOS; Miscellaneous malignant cancer. |
+| Cardiovascular disease   | Diseases of heart; Hypertension without heart disease; Cerebrovascular diseases; Atherosclerosis; Aortic aneurysm and dissection; Other diseases of arteries, arterioles, capillaries. | 
+| Communicable disease     | Tuberculosis; Syphilis; HIV (1987+), Septicemia; Other infectious and parasitic diseases; Pneumonia and influenza |
+| Non-communicable disease | Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Sydrome and Nephrosis.  |
+| Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
+| All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
+
+```{r}
+plot(cars)
+```
+
