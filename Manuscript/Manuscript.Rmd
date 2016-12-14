@@ -1,6 +1,6 @@
 ---
 title: "Exploring how changes in age at death and cause of death have narrowed the black-white life expectancy gap over forty-five years in the United States."
-output: html_notebook
+output: html_document
 ---
 
 ##Riddell CA, Morrison KT, Kaufman JS, Harper S 
@@ -14,28 +14,137 @@ The life expectancy of a population serves as a barometer for overall health. In
 
 **The data**
 
-We used software maintained by the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (SEER*Stat) to extract data on the number of deaths and the population size in all 50 US states and the District of Columbia. The mortality data was originally collected by the National Center for Health Statistics (NCHS) from death certificates and stored by the National Vital Statistics System. The population data was derived by the NCHS using intercensal bridged-race population estimates. This study using data on the number of deaths and the population size according to race (black or white), sex (male or female), age group (<1 year old, 1-4 years old, followed by 5-year age groupings, with a final grouping of 85 or more years of age), year (1969 -- 2013), and cause of death. Cause of death was originally recorded using The International Classification of Diseases (ICD) codes versions 8 (1969-1979), 9 (1979-1998), and 10 (1999-2013). These codes were then grouped into 9X causes of death within the software, which we further aggregated into six broad causes of death for this analysis: Cancers, Cardiovascular disease, Communicable disease, Injuries, Non-communicable disease, and All other causes. This recoding is illustrated in eTable 1 in the eAppendix of the Supplement. When the number of deaths for a population is between 1 and 9, this data is suppressed by the software and produces a missing death count for that strata. However, death counts of exactly 0 or greater than 9 are known precisely. 
+We used software maintained by the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (SEER*Stat) to extract data on the number of deaths and the population size in all 50 US states and the District of Columbia. The mortality data was originally collected by the National Center for Health Statistics (NCHS) from death certificates and stored by the National Vital Statistics System. The population data was derived by the NCHS using intercensal bridged-race population estimates. This study using data on the number of deaths and the population size according to race (black or white), sex (male or female), age group (<1 year old, 1-4 years old, followed by 5-year age groupings, with a final grouping of 85 or more years of age), year (1969 -- 2013), and cause of death. Cause of death was originally recorded using the International Classification of Diseases (ICD) codes versions 8 (1969-1979), 9 (1979-1998), and 10 (1999-2013). These codes were then grouped into 9X causes of death within the software, which we further aggregated into six broad causes of death for this analysis: Cancers, Cardiovascular disease, Communicable disease, Injuries, Non-communicable disease, and All other causes. This recoding is illustrated in eTable 1 in the eAppendix of the Supplement. When the number of deaths for a population is between 1 and 9, this data is suppressed by the software and produces a missing death count for that strata. However, death counts of exactly 0 or greater than 9 are known precisely. 
+
+- CR to add line about which states were not considered.
+- CR to add line about hispanic origin. 
 
 **Statistical Methods**
 
-The data produced two statistical issues that were addressed by the statistical methods we chose. First, our methodology needed to handle the missing death counts. Second, several states had small blacks populations which produced even smaller population sizes in each sex- and age-specific grouping. In these cases, the estimation of the age-specific mortality rates is imprecise, and produces abrupt changes in the estimation of mortality rates over time that are unrealistic. To better estimate the underlying age-specific mortality rates, a method that produces smoother age-specific mortality trends was required.
+The data produced two statistical issues that were addressed by the statistical methods we chose. First, our methodology needed to impute the missing death counts. Second, several states had small blacks populations which produced even smaller population sizes in each sex- and age-specific grouping. In these cases, the estimation of the age-specific mortality rates is imprecise, and produces abrupt changes in the estimation of mortality rates over time that are unrealistic. To better estimate the underlying age-specific mortality rates, a method that produces smoother age-specific mortality trends was required.
 
-We used a bayesian model that handled the missing data and smoothing .... 
+KTM to add bayesian modeling paragraph
 
-- bayesian methodology to smooth over year
-- bayesian methodology to sample from truncated poisson distribution
-- produces smoothed death counts 
-- sampled from posterior distribution
+- type of bayesian model used and what was modeled Y vs X, separately for each state, race, and sex
+- how the smoothing happens over year
+- how the truncated poisson is involved
+- this methodology produces smoothed death counts 
+- sampled from posterior distribution with thinning
+- software: R software packages and their versions
 
-- data was then aggregated over causes of death to get the total death count and this data was used to calculation LE and to perform the decomposition by age.
-- standard life table methods to calculate life expectancy
-- gap in life expectancy in years was the difference between White and Black LE and was calculated for each year and sex
-- Arriaga's decomposition method to calculate the contribution of age and COD to the gap in years
-- Gives the contribution in years, can also calculation the proportional contribution.
-- to compare changes over time on the state level - can take the difference (in years) of the two contributions. Can also get the proportional contribution by...
+Thus, the model was run separately for every combination of state, race, and sex, and produced death counts that had been smoothed over time for every cause of death within each age group. To calculate life expectancy at birth, the smoothed death counts were aggregated to estimate the total deaths in each age group and standard life table methods were applied [ref]. Life expectancy at birth (in years) was calculated for blacks and whites in each state and year according to sex. The difference in life expectancies between blacks and white was calculated by subtracting the black life expectancy from the white life expectancy in every state, year, and sex.
 
--Software: 
+We then performed a decomposition analysis using the Arriaga method, to decompose the black-white difference in life expectancy according to age group and cause of death [ref]. The decomposition analysis partitions the difference in life expectancy by age group, which can be interpreted as the amount of the gap (in years) that can be attributed to higher mortality rates for each age group. For example, a decomposition of a gap of five years may find that two of the five years (40% of the gap) is attributable to a higher mortality rate in blacks in the youngest age group (< 1 years old) compared with the youngest whites. The age-specific decomposition is then further partitioned according to cause of death, producing the number of years of the gap that is attributable to each age-cause-of-death combination. For example, a decomposition of a gap of 8 years may find that 1.3 years of this gap is attributable to more injury-related deaths in blacks aged 25-29 years old. We also calculated the marginal contribution of each cause of death by summing the cause-specific contributions across age groups.
 
+Finally, we calculated the change in the life expectancy gap over time within each state-, race-, and sex-specific stratum. The change in the life expectancy gap is calculated by substracting the gap that occurred in the later year from the gap that occurred in the earlier year. This change in gap can be decomposed by age by taking the difference in the age-specfic contributions across the two years, and can similarly be calculated by cause.
+
+All data analyses were performed using R version 3.3.1. The bayesian smoothing was performed using `JAGS` (version X.X), and the life expectnacy and decomposition analysis were performed using user-written functions found in the Supplement. 
+
+###Results
+
+```{r initialize, echo=FALSE, warning=F, message=F}
+library(shiny)
+library(plotly)
+library(viridis)
+library(scales)
+library(shinythemes)
+library(dplyr)
+load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+```{r setup_figure1_and_2, echo=F}
+year1 <- 1969
+year2 <- 2013
+sex <- "Male"
+
+bw_dat <- BlackWhite %>% 
+  filter(Year3 %in% c(year1, year2), Sex2 == sex, is.na(WBgap.s) == F) %>%
+  select(State2, Year3, WBgap.s) %>%
+  arrange(Year3)
+   
+bw_dat <- tidyr::spread(bw_dat, Year3, WBgap.s) 
+names(bw_dat)[2:3] <- c("first.gap","second.gap")  
+bw_dat <- bw_dat %>% mutate(gap.diff = first.gap - second.gap,
+                            State.gdiff.order = reorder(State2, first.gap),
+                            State.gdiff.num = as.numeric(State.gdiff.order)
+)
+
+cod.df <- data.frame(State2 = factor(), COD = factor(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+age.df <- data.frame(State2 = factor(), Ages = factor(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+    
+for (state.i in levels(BlackWhite$State2)) {
+  first.index = which(paired.ids$State2 ==  state.i & paired.ids$Year3 == year1 & paired.ids$Sex2 == sex)
+  second.index = which(paired.ids$State2 ==  state.i & paired.ids$Year3 == year2 & paired.ids$Sex2 == sex)
+  
+  if(is.null(list.cod.marginal.tables.smoothed[[first.index]][1]) == FALSE & 
+     is.null(list.cod.marginal.tables.smoothed[[second.index]][1]) == FALSE) {
+    
+    temp2 <- data.frame(State2 = state.i,
+                        contribution.to.gap.change(type.of.decomp = "COD",
+                                                   list.cod.marginal.tables.smoothed[[first.index]],
+                                                   list.cod.marginal.tables.smoothed[[second.index]])
+    )
+    
+    temp3 <- data.frame(State2 = state.i,
+                        contribution.to.gap.change(type.of.decomp = "Age",
+                                                   list.age.decomp.tables.smoothed[[first.index]],
+                                                   list.age.decomp.tables.smoothed[[second.index]])
+    )
+    
+    cod.df <- rbind(cod.df, temp2)
+    age.df <- rbind(age.df, temp3)
+  }
+}
+
+##### COD ####
+cod.df <- make_dataset_cod_plot(cod.decomp.table = cod.df, age.groups = "State2", 
+                                 cause.of.death = "COD", sign.var = "narrowed_gap", 
+                                 decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+
+cod.df <- merge(cod.df, bw_dat, by = "State2")
+
+cod.df <- cod.df %>% mutate(new.start = -start + first.gap, new.finish = -finish + first.gap)
+
+#### Age ####
+age.df <- make_dataset_cod_plot(cod.decomp.table = age.df, age.groups = "State2", 
+                                  cause.of.death = "Ages", sign.var = "narrowed_gap", 
+                                  decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+
+age.df <- merge(age.df, bw_dat, by = "State2")
+
+age.df <- age.df %>% mutate(new.start = -start + first.gap, new.finish = -finish + first.gap)
+```
+
+**Figure 1: Decomposition of the change in the black-white life expectancy gap by cause of death between 1969 and 2013 by US state**
+```{r figure1, fig.align = "center", fig.height=8, fig.width=8, echo=F}
+x.labels <- levels(factor(cod.df$State.gdiff.order))
+x.num.breaks <- length(levels(factor(cod.df$State.gdiff.order)))
+
+ggplotly(
+  ggplot(cod.df, aes(y = State.gdiff.num, x = new.start)) +
+    geom_rect(aes(xmin = new.start, ymin = State.gdiff.num - 0.45, 
+                  ymax = State.gdiff.num + 0.45, xmax = new.finish, fill = COD), color = "white") +
+    geom_segment(data = bw_dat, aes(x = second.gap, xend= second.gap, y = State.gdiff.num - 0.5, yend = State.gdiff.num + 0.5)) +
+    geom_segment(data = bw_dat, aes(x = first.gap, xend= first.gap, y = State.gdiff.num - 0.5, yend = State.gdiff.num + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:x.num.breaks, labels = x.labels)) %>% 
+  layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed"))
+
+```
+
+**Figure 2: Decomposition of the change in the black-white life expectancy gap by cause of death between 1969 and 2013 by US state**
+```{r figure2, fig.align = "center", fig.height=8, fig.width=9, echo=F}
+ggplotly(                                     
+  ggplot(age.df, aes(y = State.gdiff.num, x = new.start)) +
+    geom_rect(aes(xmin = new.start, ymin = State.gdiff.num - 0.45, ymax = State.gdiff.num + 0.45, xmax = new.finish, fill = Ages), color = "white") + 
+    geom_segment(data = bw_dat, aes(x = second.gap, xend= second.gap, y = State.gdiff.num - 0.5, yend = State.gdiff.num + 0.5)) + 
+    geom_segment(data = bw_dat, aes(x = first.gap, xend= first.gap, y = State.gdiff.num - 0.5, yend = State.gdiff.num + 0.5), lty = 3) + 
+    theme_minimal() + scale_y_continuous(breaks = 1:x.num.breaks, labels = x.labels) + scale_fill_viridis(discrete = T, direction = -1)) %>% 
+  layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed")
+  )
+```
+
+###Discussion
 
 ###Supplemental Information
 
@@ -50,7 +159,6 @@ We used a bayesian model that handled the missing data and smoothing ....
 | Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
 
-```{r}
-plot(cars)
-```
+**Life table and decomposition methodology**
 
+**Life table and decomposition user-written functions**
