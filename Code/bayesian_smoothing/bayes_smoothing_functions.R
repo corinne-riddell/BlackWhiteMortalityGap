@@ -13,7 +13,8 @@
 
 subset_data_jags = function(ds, race, sex, cod, state) {
   
-  ds2 = ds[order(ds$censored), ]
+  ds2 = ds[order(ds$censored), ] 
+  ds2 = ds2[ds2$state==state, ]
   
   ds_jags = list(deaths = ds2$deaths, 
                  lnpop = log(ds2$population), 
@@ -152,6 +153,8 @@ run_smoothing_models = function(ds, state, sex, cod_list)  {
   
 }
 
+
+
 get_allcod = function(ds_jags_bw, r, race) {
   
   results_cod = list()
@@ -199,6 +202,8 @@ get_allcod = function(ds_jags_bw, r, race) {
   return(ds_allcod)
 }
 
+
+
 get_life_tables = function(jags_bw, sex, year, state) {  #r = object from run_smoothing_models
   
   ds_jags_bw = merge_data(sex=sex, state=state)
@@ -226,6 +231,8 @@ get_life_tables = function(jags_bw, sex, year, state) {  #r = object from run_sm
   
 }
 
+
+
 run_smoothing_models_mulitple_states = function(df, states, cod_list, 
                                                 colname_state, colname_pop, colname_deaths, colname_cod, 
                                                 colname_year, colname_sex, colname_agebins, colname_race ) {
@@ -243,16 +250,18 @@ run_smoothing_models_mulitple_states = function(df, states, cod_list,
   save(results_female, file=name2) 
 }
 
-extract_mcmc_dist = function(year, state, sex, n_post_samps) {
+
+
+
+extract_mcmc_dist = function(year, state, sex, n_post_samps, base_df, cod_list) {
+  sex = ifelse(sex=='Female', 'female', sex)
+  sex = ifelse(sex=='Male', 'male', sex)
   Sex = ifelse(sex=='female', 'Female', sex) 
   Sex = ifelse(sex=='male', 'Male', sex) 
   Year = year - 1968
   name = paste0('results_',sex, '_', state, '.RData') 
   load(name)
   temp_df_list = list()
-  base_df = read.csv("~/black_white_mortality_project/base_df.csv")
-  cod_list = c('Injuries', 'Cardiovascular', 'Cancers', 'Communicable', 
-               'Non-communicable', 'All other causes')
   temp_df = base_df[base_df$sex==Sex & base_df$state == state & base_df$year==Year, ]
   n_agebins = length(unique(temp_df$age_bin))
   
