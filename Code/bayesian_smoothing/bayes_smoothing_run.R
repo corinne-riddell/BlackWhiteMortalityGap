@@ -19,7 +19,7 @@ included_states = setdiff(states, excluded_states)
 cod_list = c('Injuries', 'Cardiovascular', 'Cancers', 'Communicable', 
              'Non-communicable', 'All other causes')
 
-#load('~/black_white_mortality_project/main_datasets.Rdata') # change for SERVER 
+load('~/black_white_mortality_project/main_datasets.Rdata') # change for SERVER 
 #load('/Users/kathryn/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata') # change for LOCAL 
 
 colname_sex = 'Sex2'
@@ -32,6 +32,9 @@ colname_deaths = 'Count'
 colname_agebins = 'Age' 
 
 
+mclapply(X = "Alabama", FUN=run_smoothing_models_mulitple_states, mc.cores=1, df=dat.clean, 
+                     cod_list, colname_state, colname_pop, colname_deaths, colname_cod, 
+                     colname_year, colname_sex, colname_agebins, colname_race) 
 
 #mclapply(X=included_states, FUN=run_smoothing_models_mulitple_states, mc.cores=1, df=dat.clean, 
 #         cod_list, colname_state, colname_pop, colname_deaths, colname_cod, 
