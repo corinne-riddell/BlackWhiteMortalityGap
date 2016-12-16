@@ -164,6 +164,39 @@ for(stratum.id in non.zero.stratums.smoothed) {
 )
 ```
 
+```{r calculate_overall_LE}
+dat.smoothed.aggregatedCOD$YearRaceSex <- interaction(dat.smoothed.aggregatedCOD$Year3, dat.smoothed.aggregatedCOD$Race2, 
+                                                      dat.smoothed.aggregatedCOD$Sex2)
+
+dat.smoothed.US <- dat.smoothed.aggregatedCOD %>% 
+  ungroup() %>% group_by(Year2, RaceSex, Age2) %>%
+  arrange(YearRaceSex, Age2) %>%
+  summarise(US_smoothed_deaths = sum(total_smoothed_deaths),
+            US_population = sum(Population), 
+            nx = first(nx),
+            Age3 = first(Age3),
+            Year3 = first(Year3),
+            YearRaceSex = first(YearRaceSex),
+            Sex2 = first(Sex2),
+            Race2 = first(Race2))
+  
+US.stratum.id <- unique(dat.smoothed.US$YearRaceSex)
+
+US.life.tables <- vector(mode = "list", length = length(US.stratum.id))
+list.index <- 1
+
+#runs in a few seconds
+for (stratum.i in US.stratum.id) {
+  
+  US.life.tables[[list.index]] <- life.table(data = subset(dat.smoothed.US, YearRaceSex == stratum.i), 
+                                    num.ages.in.group = "nx", 
+                                    death.counts = "US_smoothed_deaths", 
+                                    population.counts = "US_population")
+  list.index <- list.index + 1
+}
+```
+
+
 Add the life expectancy at birth to the dat2 data file:
 
 ```{r add_le_to_dataset}
