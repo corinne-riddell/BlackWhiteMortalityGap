@@ -241,6 +241,16 @@ ggplotly(
   )
 ```
 
+**Figure 5: Trends in the black-white life expectancy gap for males between 1969 and 2013 by US state**
+```{r figure5, fig.align="center", fig.height=8, fig.width=8, echo=F}
+ggplotly(ggplot(subset(BlackWhiteSmooth, Sex2 == "Male"), aes(y=WBgap.s, x = Year3)) + geom_line(aes(col = State2)))
+```
+
+**Figure 6: Trends in the black-white life expectancy gap for females between 1969 and 2013 by US state**
+```{r figure5, fig.align="center", fig.height=8, fig.width=8, echo=F}
+ggplotly(ggplot(subset(BlackWhiteSmooth, Sex2 == "Female"), aes(y=WBgap.s, x = Year3)) + geom_line(aes(col = State2)))
+```
+
 ###Discussion
 
 ###Supplemental Information
