@@ -10,6 +10,17 @@ output: html_document
 ###Introduction
 The life expectancy of a population serves as a barometer for overall health. In 2014, life expectancy in the United States was 78.7 years, but hidden within this figure, are differences in life expectancy by race. Non-hispanic whites lived 3.6 years longer than non-hispanic blacks [ref: http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf]. While both black and white americans have experienced increases in life expectancy since X, the difference between their life expectancies has varied. During the 1980s, the life expectancy gap widened and then narrowed in the 1990s due to relative mortality improvements among blacks in deaths due to homicide, HIV, unintentional injuries, and, among females, heart disease [Harper 2007]. The gap continued to narrow during the 2000s, but states differed in the magnitude of improvement that was made. For example, the life expectancy gap in New York decreased from 8.0 years to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 years to 5.6 years [Harper 2014]. This study seeks to better understand these state-level differences, by examining how changes in age at death and cause of death over time have worked to narrow or exacerbate the life expectancy gap.
 
+**Background notes from meeting with SH on Dec 20**
+-CVD declining starting 1968 - see paper Ruel Stallones - cited in SH JAMA paper - history of decline in CVD.
+-Richard cooper also written about BW diff in CVD with epi perspective
+-for men there is stagnation from 1969 to late 1980s and then increase in gap with HIV and homicides
+-massive crime wave in 1980s, black LE went down from 1984 to 1987 - period when both HIV and homicide went up -- the whole story during that time was HIV and homicide
+-fundamentally interested in the qu is there a common story across most states or are there important differences in what happened in NY vs CA vs TX - can we say anything about what we know about state-specific policies, for example CA has strong anti-smoking legislation. Does this help us understand why the gap in Wisconsin was increasing?
+-is there a lot of heterogeneity or is there not? - same something about the proportionate contribution by COD and by age - e.g., changes in injuries accounting for X% for closing the gap in NY but in AL it was Y%.
+-heterogeneity between states in the contribution of the causes to the decline in the gap - maybe need to break up into at least two time periods with split at 1990.
+-this is where the new figures come in which on the y-axis have the contribution to LE gap (in years or %) vs year on the x axis, and geom_line for each COD (do one COD at a time), and individual line for each state (may facet by census region).
+-then have a view of how the different COD have contributed to the decline in the gap over time. 
+
 ###Methods
 
 **The data**
@@ -258,6 +269,11 @@ ggplotly(ggplot(subset(BlackWhite, Sex2 == "Male"), aes(y=WBgap.s, x = Year3)) +
 ggplotly(ggplot(subset(BlackWhite, Sex2 == "Female"), aes(y=WBgap.s, x = Year3)) + geom_line(aes(col = State2))
          + facet_wrap(~Census_Region))
 ```
+
+**Figures 7 and 8 to be added: Trends in the contribution of CVD to the black-white life expectancy gap (in years) by US state**
+-make one for males and one for females
+-separately for each COD group
+-included CIs
 
 ###Discussion
 
