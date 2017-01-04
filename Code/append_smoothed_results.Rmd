@@ -237,7 +237,9 @@ dim(BlackWhite3)
 
 BlackWhite <- BlackWhite3
 rm(BlackWhite3, BlackSmooth, WhiteSmooth)
+```
 
+```{r add_Census_Region}
 BlackWhite$Census_Region <- "South"
 BlackWhite$Census_Region[BlackWhite$State2 %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
                                                  "Nebraska", "North Dakota", "South Dakota", 
@@ -252,6 +254,17 @@ BlackWhite$Census_Region[BlackWhite$State2 %in% c("Arizona", "Colorado", "Idaho"
                                                  "Nevada", "New Mexico", "Utah", "Wyoming",
                                                  "Alaska", "California", "Hawaii", "Oregon",
                                                  "Washington")] <- "West"
+```
+
+```{r addvar_State_abbreviation}
+BlackWhite <- BlackWhite %>% mutate(stabbrs = factor(State2,  
+                                      labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
+                                                 "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
+                                                 "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
+                                                 "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", 
+                                                 "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", 
+                                                 "VT", "VA", "WA", "WV", "WI", "WY")))
+
 ```
 
 ```{r calculate_age_decomp_smoothed}
