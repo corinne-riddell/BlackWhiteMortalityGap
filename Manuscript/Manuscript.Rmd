@@ -258,16 +258,20 @@ ggplotly(
 ggplotly(ggplot(subset(BlackWhite, Sex2 == "Male"), aes(y=WBgap.s, x = Year3)) + geom_line(aes(col = State2))
          + facet_wrap(~Census_Region) +
            ylab("Black-white life expectancy gap (years)") +
-           xlab("Year") #+
-           #geom_text(data = subset(BlackWhite, Year3 == 2010), aes(label = State2), check_overlap = T)
-         )
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite, Year3 == 2013 & Sex2 == "Male"), aes(label = stabbrs), check_overlap = T) #+
+           #scale_x_continuous(limits = c(1969, 2020))
+         ) 
 ```
 
 **Figure 6: Trends in the black-white life expectancy gap for females between 1969 and 2013 by US state**
 
 ```{r figure6, fig.align="center", fig.height=8, fig.width=8, echo=F}
 ggplotly(ggplot(subset(BlackWhite, Sex2 == "Female"), aes(y=WBgap.s, x = Year3)) + geom_line(aes(col = State2))
-         + facet_wrap(~Census_Region))
+         + facet_wrap(~Census_Region) +
+           ylab("Black-white life expectancy gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite, Year3 == 2013 & Sex2 == "Female"), aes(label = stabbrs), check_overlap = T))
 ```
 
 **Figures 7 and 8 to be added: Trends in the contribution of CVD to the black-white life expectancy gap (in years) by US state**
