@@ -254,6 +254,15 @@ BlackWhite$Census_Region[BlackWhite$State2 %in% c("Arizona", "Colorado", "Idaho"
                                                  "Nevada", "New Mexico", "Utah", "Wyoming",
                                                  "Alaska", "California", "Hawaii", "Oregon",
                                                  "Washington")] <- "West"
+
+BlackWhite$Census_Region[BlackWhite$State2 %in% c("Delaware", "Florida", "Georgia", "Maryland", 
+                                                  "North Carolina", "South Carolina", 
+                                                  "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
+
+
+BlackWhite$Census_Region[BlackWhite$State2 %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee", 
+                                                  "Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "West or East South Central"
+
 ```
 
 ```{r addvar_State_abbreviation}
@@ -404,6 +413,14 @@ cod.contributions$Census_Region[cod.contributions$State2 %in% c("Arizona", "Colo
                                                  "Nevada", "New Mexico", "Utah", "Wyoming",
                                                  "Alaska", "California", "Hawaii", "Oregon",
                                                  "Washington")] <- "West"
+
+cod.contributions$Census_Region[cod.contributions$State2 %in% c("Delaware", "Florida", "Georgia", "Maryland", 
+                                                                "North Carolina", "South Carolina", 
+                                                                "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
+
+
+cod.contributions$Census_Region[cod.contributions$State2 %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee", 
+                                                                "Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "West or East South Central"
 
 ```
 
