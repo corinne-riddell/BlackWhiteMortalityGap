@@ -275,8 +275,7 @@ ggplotly(ggplot(subset(BlackWhite, Sex2 == "Female"), aes(y=WBgap.s, x = Year3))
 ```
 
 **Figure 7a: Contribution of cancer to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
-
-```{figure7a, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure7a, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Cancers"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -285,19 +284,23 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Ca
          aes(label = stabbrs), check_overlap = T, size = 2.5)
 )
 
+
+    #theme_grey(base_size = 9) + labs(x = "", y = "") + 
+    #scale_x_discrete(expand = c(0, 0)) +
+    #scale_y_discrete(expand = c(0, 0)) +
+    #theme(legend.position = "none", axis.ticks = element_blank(), axis.text.x = element_text(size = 9*0.8, angle = 330, hjust = 0, colour = "grey50")) 
+
 #something is wrong with the percent contribution calculated for RI around 2008 ... hmmph
-ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Cancers"), aes(x = Year3, y = C_x_COD_proportion)) + 
-         geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
-         ylab("Contribution to LE Gap (years)") +
-         xlab("Year") +
-         geom_text(data = subset(cod.contributions, Year3 == 2013 & Sex2 == "Male" & Cause.of.death == "Cancers"), 
-         aes(label = stabbrs), check_overlap = T, size = 2.5)
-)
+# ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Cancers"), aes(x = Year3, y = C_x_COD_proportion)) + 
+#          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
+#          ylab("Contribution to LE Gap (years)") +
+#          xlab("Year") +
+#          geom_text(data = subset(cod.contributions, Year3 == 2013 & Sex2 == "Male" & Cause.of.death == "Cancers"), 
+#          aes(label = stabbrs), check_overlap = T, size = 2.5))
 ```
 
 **Figure 7b: Contribution of cardiovascular disease to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
-
-```{figure7b, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure7b, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Cardiovascular"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -306,17 +309,17 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Ca
 )
 
 #need to figure out what is weird about this one in NM in 2002 -- something is very odd. 
-ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Cardiovascular"), aes(x = Year3, y = C_x_COD_proportion)) + 
-         geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
-         ylab("Contribution to LE Gap (years)") +
-         xlab("Year") +
-         geom_text(data = subset(cod.contributions, Year3 == 2013 & Sex2 == "Male" & Cause.of.death == "Cardiovascular"), aes(label = stabbrs), check_overlap = T, size = 2.5)
-)
+# ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Cardiovascular"), aes(x = Year3, y = C_x_COD_proportion)) + 
+#          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
+#          ylab("Contribution to LE Gap (years)") +
+#          xlab("Year") +
+#          geom_text(data = subset(cod.contributions, Year3 == 2013 & Sex2 == "Male" & Cause.of.death == "Cardiovascular"), aes(label = stabbrs), check_overlap = T, size = 2.5)
+# )
 ```
 
 **Figure 7c: Contribution of communicable disease to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
 
-```{figure7c, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure7c, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Communicable"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -327,7 +330,7 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Co
 
 **Figure 7d: Contribution of non-communicable disease to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
 
-```{figure7d, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure7d, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Non-communicable"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -338,7 +341,7 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "No
 
 **Figure 7e: Contribution of injuries to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
 
-```{figure7e, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure7e, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Injuries"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -349,7 +352,7 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "In
 
 **Figure 7f: Contribution of all other causes to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
 
-```{figure7f, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure7f, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "All other causes"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -358,9 +361,22 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == "Al
 )
 ```
 
+**Figure 7g: Different way to portray the above data for males**
+
+```{r figure7g, fig.align="center", fig.height=8, fig.width=9, echo=F}
+for (cod in levels(cod.contributions$Cause.of.death)) {
+  print(ggplot(subset(cod.contributions, Sex2 == "Male" & Cause.of.death == cod), aes(x = Year3, y = State2)) + 
+          geom_tile(aes(fill = C_x_COD), col = "white") +
+          facet_wrap(~ Census_Region, scales = "free_y") + 
+          scale_fill_viridis() + theme_minimal() + 
+          ylab("Contribution to LE Gap (years)") +
+          xlab("Year") + ggtitle(cod))
+}
+```
+
 **Figure 8a: Contribution of cancer to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
 
-```{figure8a, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure8a, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "Cancers"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -372,7 +388,7 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "
 
 **Figure 8b: Contribution of cardiovascular disease to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
 
-```{figure8b, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure8b, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "Cardiovascular"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -384,7 +400,7 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "
 
 **Figure 8c: Contribution of communicable disease to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
 
-```{figure8c, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure8c, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "Communicable"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -396,7 +412,7 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "
 
 **Figure 8d: Contribution of non-communicable disease to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
 
-```{figure8d, fig.align="center", fig.height=8, fig.width=9, echo=F}
+```{r figure8d, fig.align="center", fig.height=8, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "Non-communicable"), aes(x = Year3, y = C_x_COD)) + 
          geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
          ylab("Contribution to LE Gap (years)") +
@@ -406,6 +422,42 @@ ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "
 )
 ```
 
+**Figure 8e: Contribution of injuries to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+
+```{r figure8e, fig.align="center", fig.height=8, fig.width=9, echo=F}
+ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "Injuries"), aes(x = Year3, y = C_x_COD)) + 
+         geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
+         ylab("Contribution to LE Gap (years)") +
+         xlab("Year") +
+         geom_text(data = subset(cod.contributions, Year3 == 2013 & Sex2 == "Female" & Cause.of.death == "Injuries"), 
+         aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8f: Contribution of all other causes to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+
+```{r figure8f, fig.align="center", fig.height=8, fig.width=9, echo=F}
+ggplotly(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == "All other causes"), aes(x = Year3, y = C_x_COD)) + 
+         geom_line(aes(col = State2)) + facet_wrap(~ Census_Region) +
+         ylab("Contribution to LE Gap (years)") +
+         xlab("Year") +
+         geom_text(data = subset(cod.contributions, Year3 == 2013 & Sex2 == "Female" & Cause.of.death == "All other causes"), 
+         aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8g: Different way to portray the above data for females**
+
+```{r figure8g, fig.align="center", fig.height=8, fig.width=9, echo=F}
+for (cod in levels(cod.contributions$Cause.of.death)) {
+  print(ggplot(subset(cod.contributions, Sex2 == "Female" & Cause.of.death == cod), aes(x = Year3, y = State2)) + 
+          geom_tile(aes(fill = C_x_COD), col = "white") +
+          facet_wrap(~ Census_Region, scales = "free_y") + 
+          scale_fill_viridis() + theme_minimal() + 
+          ylab("Contribution to LE Gap (years)") +
+          xlab("Year") + ggtitle(cod))
+}
+```
 
 -add CIs when I have them
 

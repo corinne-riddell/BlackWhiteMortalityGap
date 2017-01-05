@@ -360,11 +360,11 @@ Sex2 <- NULL
 for(i in 1:dim(paired.ids)[1]) {
     if(list.cod.decomp.tables.smoothed[[i]][1] != "Couldn't compare life tables" & 
        list.cod.decomp.tables.smoothed[[i]][1] != "Encountered age group with no deaths") { 
-       # list.cod.marginal.tables.smoothed[[i]] <-  list.cod.decomp.tables.smoothed[[i]] %>%
-       #                                            dplyr::group_by(Cause.of.death) %>%
-       #                                            dplyr::summarise(C_x_COD = sum(C_xi)) %>%
-       #                                            dplyr::mutate(C_x_COD_proportion = C_x_COD/sum(C_x_COD),
-       #                                                   adds_to_gap = ifelse(C_x_COD > 0, T, F))
+       list.cod.marginal.tables.smoothed[[i]] <-  list.cod.decomp.tables.smoothed[[i]] %>%
+                                                  dplyr::group_by(Cause.of.death) %>%
+                                                  dplyr::summarise(C_x_COD = sum(C_xi)) %>%
+                                                  dplyr::mutate(C_x_COD_proportion = C_x_COD/sum(C_x_COD),
+                                                         adds_to_gap = ifelse(C_x_COD > 0, T, F))
        
        
        Sex2 <- c(Sex2, rep(as.character(paired.ids$Sex2[i]), 6))
@@ -416,7 +416,7 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
      list.age.decomp.tables5, list.cod.decomp.tables5, list.age.decomp.tables9, list.cod.decomp.tables9,
      list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed, list.cod.marginal.tables.smoothed,
-     non.zero.stratums, non.zero.stratums.smoothed,
+     non.zero.stratums, non.zero.stratums.smoothed, cod.contributions,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
