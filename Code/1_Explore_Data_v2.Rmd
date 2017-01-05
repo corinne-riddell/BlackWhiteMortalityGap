@@ -633,7 +633,8 @@ save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.R
 ```{r save_specified_files}
 save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
      list.age.decomp.tables5, list.cod.decomp.tables5, list.age.decomp.tables9, list.cod.decomp.tables9,
-     list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed,
+     list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed, list.cod.marginal.tables.smoothed,
+     non.zero.stratums, non.zero.stratums.smoothed, cod.contributions,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
 ```
 
