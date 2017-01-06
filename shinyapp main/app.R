@@ -60,10 +60,12 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("population_trend", height = 300, width = 400)),
                        
                        tabPanel("Decomposition by Age",
-                                plotlyOutput("age_bayes")),
+                                plotlyOutput("age_bayes"),
+                                textOutput("Explain_Age_Gap")),
                        
                        tabPanel("Decomposition by Cause",
-                                plotlyOutput("cod_bayes")),
+                                plotlyOutput("cod_bayes"),
+                                textOutput("Explain_COD_Gap")),
                        
                        tabPanel("Decomposition by Age & Cause",
                                 plotlyOutput("age_cod_bayes"))
@@ -416,6 +418,10 @@ whereas those that exacerbated the gap are shown to the right.")
            "Proportion (%)" = "(%)")
     })
   
+  label1 <- reactive({BlackWhite$WBgap.s[BlackWhite$State2 == input$state & BlackWhite$Year3 == input$year1 & BlackWhite$Sex2 == intpu$selected_sex]})
+  label2 <- reactive({BlackWhite$WBgap.s[BlackWhite$State2 == input$state & BlackWhite$Year3 == input$year2 & BlackWhite$Sex2 == intpu$selected_sex]})
+  label3 <- reactive({label1-label2})
+  
   output$age_bayes <- renderPlotly({
     
     p3 <- ggplotly(ggplot(decomp.data.react3(), aes(y = Ages, x = x1)) + 
@@ -429,6 +435,40 @@ whereas those that exacerbated the gap are shown to the right.")
     
     p3
   })
+  
+  white.y3 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state,Year3 == input$year1, Sex2 == input$selected_sex) %>% 
+            select(le.smoothed.white), 1)
+  })
+  
+  white.y4 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state, Year3 == input$year2, Sex2 == input$selected_sex) %>% 
+            select(le.smoothed.white), 1)
+  })
+  
+  black.y3 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state,Year3 == input$year1, Sex2 == input$selected_sex) %>% 
+            select(le.smoothed.black), 1)
+  })
+  
+  black.y4 <- reactive({
+    round(BlackWhite %>% 
+            filter(State2 == input$state, Year3 == input$year2, Sex2 == input$selected_sex) %>% 
+            select(le.smoothed.black), 1)
+  })
+  
+  output$Explain_Age_Gap <- renderText({
+    paste0("The above bar chart illustrates the contribution of each age at death to the total difference in life expectancy between blacks and whites. 
+            The first panel is for ", input$year1, " where the total life expectancy difference of ", round(white.y3() - black.y3(), 2), " years is partitioned by age. 
+           The second panel is for ", input$year2, " where the total life expectancy difference of ", round(white.y4() - black.y4(), 2), " years is partitioned by age. 
+           Finally, the last panel partitions the change in the life expectancy gap, where the change equalled ", 
+           round((white.y3() - black.y3()) - (white.y4() - black.y4()), 2), " years.")
+  })
+  
+  #output$Explain_Age_Gap <- renderText({paste0("The life expectancy gap in ", input$year1, " was ", label1, " and in ", input$year2, "was ", input$ )})
   #, col = adds_to_gap
   #           #scale_color_manual(values = c("#d1e5f0", "#2166ac")) +  
 
@@ -486,7 +526,7 @@ whereas those that exacerbated the gap are shown to the right.")
   output$cod_bayes <- renderPlotly({  
     ggplotly(ggplot(cod.decomp.data.react3(), aes(y = Cause.of.death, x = x1)) + 
                geom_segment(aes(xend = 0, yend = Cause.of.death, col = Cause.of.death), lwd = 3) + 
-               theme_minimal() +
+               theme_minimal() + theme(legend.position = "none") + 
                geom_vline(xintercept = 0) +
                xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
                ylab("Cause of death") +
@@ -495,6 +535,14 @@ whereas those that exacerbated the gap are shown to the right.")
     
   })   
 
+  output$Explain_COD_Gap <- renderText({
+    paste0("The above bar chart illustrates the contribution of each cause of death to the total difference in life expectancy between blacks and whites. 
+           The first panel is for ", input$year1, " where the total life expectancy difference of ", round(white.y3() - black.y3(), 2), " years is partitioned by cause. 
+           The second panel is for ", input$year2, " where the total life expectancy difference of ", round(white.y4() - black.y4(), 2), " years is partitioned by cause. 
+           Finally, the last panel partitions the change in the life expectancy gap, where the change equalled ", 
+           round((white.y3() - black.y3()) - (white.y4() - black.y4()), 2), " years.")
+  })
+  
   ##########################################
   ##    Age and cause of death tab        ##
   ##########################################
