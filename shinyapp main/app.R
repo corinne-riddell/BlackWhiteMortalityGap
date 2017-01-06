@@ -46,6 +46,17 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("state_age_summary", height = 800),
                                 dataTableOutput("data.temp2")),
                        
+                       tabPanel("Trends in COD",
+                                strong("How has each cause of death contributed to the difference in life expectancy over time?
+                                       First, here is a graph of the life expectancy gap over time, where each line is a state:"),
+                                plotlyOutput("le_gap_all_states", height = 400), 
+                                strong("Select the cause of death you're interested in to see how many years of the total gap
+                                       is due the selected cause, and how this changes over time. You can also view the proportional
+                                       contribution by selecting 'Proportion (%)' on the panel to the left."),
+                                radioButtons(inputId = "COD", label = NA, inline = T,
+                                             choices = levels(cod.contributions$Cause.of.death)),
+                                plotlyOutput("contribution_all_states", height = 400)),
+                       
                        tabPanel("Life Expectancy Gap",
                                 radioButtons(inputId = "LE_type", label = "Model choice", inline = T, 
                                              choices = c("Impute 1", "Impute 5", "Impute 9"), 
@@ -364,6 +375,50 @@ whereas those that exacerbated the gap are shown to the right.")
   })
   
   ##########################################
+  ##            COD trends tab            ##
+  ##########################################
+  
+  output$le_gap_all_states <- renderPlotly({
+    ggplotly(ggplot(data = subset(BlackWhite, Sex2 == input$selected_sex), aes(y=WBgap.s, x = Year3)) + 
+               geom_line(aes(col = State2)) +
+               facet_grid(. ~ Census_Region) +
+               ylab("Black-white life expectancy gap (years)") +
+               xlab("Year") +
+               geom_text(data = subset(BlackWhite, Year3 == 2013 & Sex2 == input$selected_sex), aes(label = stabbrs), check_overlap = T, size = 2.5) +
+               theme_minimal() + theme(axis.text.x = element_text(angle = 45)) +
+               geom_hline(yintercept = 0)
+    ) 
+  })
+  
+  contrib.data.react <- reactive({
+    temp <- data.frame(subset(cod.contributions, Sex2 == input$selected_sex & Cause.of.death == input$COD))
+    temp["y1"] <-  switch(input$contribution_type,
+                          "Years" = temp[["C_x_COD"]],
+                          "Proportion (%)" = temp[["C_x_COD_proportion"]]
+    )
+    temp
+  })
+  
+  output$contribution_all_states <- renderPlotly({
+    ggplotly(ggplot(contrib.data.react(), aes(x = Year3, y = y1)) + 
+               geom_line(aes(col = State2)) + 
+               facet_grid(. ~ Census_Region) +
+               ylab(paste0("Contribution to LE Gap", xaxis.title())) +
+               xlab("Year") +
+               geom_text(data = subset(contrib.data.react(), Year3 == 2013 & Sex2 == input$selected_sex & Cause.of.death == input$COD), 
+                          aes(label = stabbrs), check_overlap = T, size = 2.5) +
+                theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
+                geom_hline(yintercept = 0))
+    #  %>% add_annotations(x = contrib.data.react()$Year3, y = contrib.data.react()$y1, text = contrib.data.react()$stabbrs,
+    #                       xref = "x",
+    #                       yref = "y",
+    #                       showarrow = TRUE,
+    #                       arrowhead = 7,
+    #                       ax = 20,
+    #                       ay = -40)
+  })
+  
+  ##########################################
   ##              Age tab                 ##
   ##########################################
   
@@ -418,9 +473,9 @@ whereas those that exacerbated the gap are shown to the right.")
            "Proportion (%)" = "(%)")
     })
   
-  label1 <- reactive({BlackWhite$WBgap.s[BlackWhite$State2 == input$state & BlackWhite$Year3 == input$year1 & BlackWhite$Sex2 == intpu$selected_sex]})
-  label2 <- reactive({BlackWhite$WBgap.s[BlackWhite$State2 == input$state & BlackWhite$Year3 == input$year2 & BlackWhite$Sex2 == intpu$selected_sex]})
-  label3 <- reactive({label1-label2})
+  #label1 <- reactive({BlackWhite$WBgap.s[BlackWhite$State2 == input$state & BlackWhite$Year3 == input$year1 & BlackWhite$Sex2 == intpu$selected_sex]})
+  #label2 <- reactive({BlackWhite$WBgap.s[BlackWhite$State2 == input$state & BlackWhite$Year3 == input$year2 & BlackWhite$Sex2 == intpu$selected_sex]})
+  #label3 <- reactive({label1-label2})
   
   output$age_bayes <- renderPlotly({
     
