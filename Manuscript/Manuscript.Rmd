@@ -32,24 +32,24 @@ We used software maintained by the National Cancer Institute's Surveillance, Epi
 
 **Statistical Methods**
 
-The data produced two statistical issues that were addressed by the statistical methods we chose. First, our methodology needed to impute the missing death counts. Second, several states had small blacks populations which produced even smaller population sizes in each sex- and age-specific grouping. In these cases, the estimation of the age-specific mortality rates is imprecise, and produces abrupt changes in the estimation of mortality rates over time that are unrealistic. To better estimate the underlying age-specific mortality rates, a method that produces smoother age-specific mortality trends was required.
+The data produced two statistical issues that were addressed by our statistical methods. First, our methodology needed to impute the missing death counts. Second, several states had small blacks populations which produced even smaller population sizes in each sex-age category. In these cases, the estimation of the sex-age mortality rates is imprecise, and produces abrupt changes in the estimation of mortality rates over time that are unrealistic. To better estimate the underlying age-specific mortality rates, a method that produces smoother age-specific mortality trends was required.
 
-KTM to add bayesian modeling paragraph
+To address these challenges, we used a Bayesian autoregressive model to smooth the data over time, and incorporated a truncated Poisson model to impute the suppressed death counts. Specifically, we used Poisson regression to model the number of deaths in each state-age-sex-race-year category as a function of the at-risk population. The mortality rates over time within each state-age-sex-race category are modelled autoregressively, where the log mortality rate in the current year was modelled as a normal variable centred at the log mortality rate estimated from the previous year. Truncated Poisson regression was used to impute the supressed death counts, by specifying that the supressed counts were sampled from a Poisson distribution and were constrained to be between 1 and the maximum of 9 and the at-risk population size (which may be smaller than 9). These models were run separately for every combination of state, race, and sex, and produced death counts that had been smoothed over time for every cause of death within each age group.
 
-- type of bayesian model used and what was modeled Y vs X, separately for each state, race, and sex
-- how the smoothing happens over year
-- how the truncated poisson is involved
-- this methodology produces smoothed death counts 
-- sampled from posterior distribution with thinning
-- software: R software packages and their versions
+To calculate life expectancy at birth, the smoothed death counts were aggregated to estimate the total deaths in each age group and standard life table methods were applied [ref]. Life expectancy at birth (in years) was calculated for blacks and whites in each state and year according to sex. The difference in life expectancies between blacks and white was calculated by subtracting the black life expectancy from the white life expectancy in every state, year, and sex.
 
-Thus, the model was run separately for every combination of state, race, and sex, and produced death counts that had been smoothed over time for every cause of death within each age group. To calculate life expectancy at birth, the smoothed death counts were aggregated to estimate the total deaths in each age group and standard life table methods were applied [ref]. Life expectancy at birth (in years) was calculated for blacks and whites in each state and year according to sex. The difference in life expectancies between blacks and white was calculated by subtracting the black life expectancy from the white life expectancy in every state, year, and sex.
+To decompose the black-white difference in life expectancy, we performed a decomposition analysis using the Arriaga method [ref]. First, the decomposition analysis partitions the difference in life expectancy by age group, which can be interpreted as the amount of the gap (in years) that can be attributed to higher age-specific mortality rates in blacks. For example, a decomposition of a gap of five years may find that two of the five years (40% of the gap) is attributable to a higher mortality rate in blacks in the youngest age group (< 1 years old) compared with the youngest whites. This age-specific decomposition can be further partitioned according to cause of death, producing the number of years of the gap that is attributable to every age- and cause-of-death combination. For example, a decomposition of a gap of 8 years may find that 1.3 years of this gap is attributable to more injury-related deaths in blacks aged 25-29 years old. We also summed these age- and cause-of-death partitions over all ages to calculate the marginal contribution of each cause-of-death to the difference.
 
-We then performed a decomposition analysis using the Arriaga method, to decompose the black-white difference in life expectancy according to age group and cause of death [ref]. The decomposition analysis partitions the difference in life expectancy by age group, which can be interpreted as the amount of the gap (in years) that can be attributed to higher mortality rates for each age group. For example, a decomposition of a gap of five years may find that two of the five years (40% of the gap) is attributable to a higher mortality rate in blacks in the youngest age group (< 1 years old) compared with the youngest whites. The age-specific decomposition is then further partitioned according to cause of death, producing the number of years of the gap that is attributable to each age-cause-of-death combination. For example, a decomposition of a gap of 8 years may find that 1.3 years of this gap is attributable to more injury-related deaths in blacks aged 25-29 years old. We also calculated the marginal contribution of each cause of death by summing the cause-specific contributions across age groups.
-
+**Will need to change the following**
 Finally, we calculated the change in the life expectancy gap over time within each state-, race-, and sex-specific stratum. The change in the life expectancy gap is calculated by substracting the gap that occurred in the later year from the gap that occurred in the earlier year. This change in gap can be decomposed by age by taking the difference in the age-specfic contributions across the two years, and can similarly be calculated by cause.
 
 All data analyses were performed using R version 3.3.1. The bayesian smoothing was performed using `JAGS` (version X.X), and the life expectnacy and decomposition analysis were performed using user-written functions found in the Supplement. 
+
+**Add in the stuff about precision**
+- sampled from posterior distribution with thinning
+- software: R software packages and their versions
+
+
 
 ###Results
 
