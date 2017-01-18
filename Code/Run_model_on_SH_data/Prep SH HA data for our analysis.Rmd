@@ -8,12 +8,14 @@ output: html_document
 ```{r}
 library(foreign)
 library(dplyr)
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 
-dtotal <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/dataverse_files/deaths-total-nhisp.txt", header = F, sep="\t")
+dtotal <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/dataverse_files/deaths-total.txt", header = F, sep="\t", stringsAsFactors = F, colClasses = c(rep("numeric", 8)),
+                     na.strings = ".")
 
 names(dtotal)
 #no names affixed to dataset. But the names are stored in the data dictionary file found at:
-#/Users/corinneriddell/Dropbox/BlackWhiteGap/dataverse_files/deaths-total-nhisp.dic
+#/Users/corinneriddell/Dropbox/BlackWhiteGap/dataverse_files/deaths-total.dic
 
 str(dtotal)
 table(dtotal$V1) #50 states + DC
@@ -58,19 +60,49 @@ dtotal <- dtotal %>%
          Year3 = as.numeric(as.character(Year2)),
          RaceSex = interaction(Race2, Sex2, sep = " "),
          StateYearSex = interaction(State2, Year2, Sex2),
-         StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
+         StateYearRaceSex = interaction(State2, Year2, Race2, Sex2),
+         Crude_Rate = Count/Population)
 ```
 
 ```{r unknown_age_group}
 #there is an unknown age group for each combo of state-year-race-sex-age:
 table(dtotal$Age2) 
 
-#Count of death is always equal to 0 for unknown age groups
+#no rows with the unknown age group (guess: was removed when pulling the data from CDC wonder)
 table(dtotal$Age, dtotal$Count==0)
 
 #remove these data from the data we analyze:
 dtotal <- dtotal[dtotal$Age2 != "Unknown", ]
 
+excluded.states <- c("Idaho", "Montana", "North Dakota", "South Dakota", "Vermont")
+included.states <- setdiff(levels(dtotal$State2), excluded.states)
+dtotal <- dtotal %>% filter(State2 %in% included.states)
+
 save(dtotal, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/SH_HA_data.Rdata")
+```
+
+```{r}
+prop.table(table(is.na(dtotal$Count)))
+
+prop.table(table(is.na(dtotal$Count[dtotal$State2 == "New York"])))
+prop.table(table(is.na(dtotal$Count[dtotal$State2 == "Georgia"])))
+prop.table(table(is.na(dtotal$Count[dtotal$State2 == "Florida"])))
+
+
+test.le.fx <- function(data, state, sex, race, year) {
+  test.data <- data[data["State2"] == state & data["Sex2"] == sex & data["Race2"] == race & data["Year3"] == year, ]
+  lt <- life.table(data = test.data, num.ages.in.group = "nx",
+             death.counts = "Count", population.counts = "Population")
+  return(round(lt$e_x[1], 1))
+}
+
+test.le.fx(dtotal, "Florida", "Male", "White", 1990)
+test.le.fx(dtotal, "Florida", "Male", "White", 2009)
+
+test.le.fx(dtotal, "Georgia", "Male", "White", 1990)
+test.le.fx(dtotal, "Georgia", "Male", "White", 2009)
+
+test.le.fx(dtotal, "New York", "Male", "White", 1990)
+test.le.fx(dtotal, "New York", "Male", "White", 2009)
 ```
 
