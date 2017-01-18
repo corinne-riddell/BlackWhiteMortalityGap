@@ -6,14 +6,26 @@ output: html_document
 ---
 
 ```{r}
-load("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/SH_HA_data.Rdata")
+library(foreign)
+library(dplyr)
+
+dtotal <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/dataverse_files/deaths-total-nhisp.txt", header = F, sep="\t")
+
 names(dtotal)
-names(dtotal) <- c("State", "Age", "Sex", "Race", "Year", "Crude_Rate", "Count", "Population", "COD")
+#no names affixed to dataset. But the names are stored in the data dictionary file found at:
+#/Users/corinneriddell/Dropbox/BlackWhiteGap/dataverse_files/deaths-total-nhisp.dic
+
+str(dtotal)
+table(dtotal$V1) #50 states + DC
+table(dtotal$V2) #20 age groups
+table(dtotal$V3) #sex
+table(dtotal$V4) #race
+table(dtotal$V5) #20 years 
+
+names(dtotal) <- c("State", "Age", "Sex", "Race", "Year", "Crude_Rate", "Count", "Population") #see the data dictionary - path is above.
 ```
 
 ```{r recode_variables}
-library(dplyr)
-
 dtotal <- dtotal %>%
   mutate(State2 = factor(State, levels = c(0:50), labels = c("Alabama", "Alaska", "Arizona", "Arkansas","California",
                                                              "Colorado", "Connecticut", "Delaware", "Washington DC",
@@ -42,8 +54,7 @@ dtotal <- dtotal %>%
          nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years"),
          Sex2 = factor(Sex, levels = c(0, 1), labels = c("Male", "Female")),
          Race2 = factor(Race, levels = c(0, 1), labels = c("White", "Black")),
-         COD2 = factor(COD), 
-         Year2 = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
+         Year2 = factor(Year, levels = c(0:19), labels = as.character(1990:2009)),
          Year3 = as.numeric(as.character(Year2)),
          RaceSex = interaction(Race2, Sex2, sep = " "),
          StateYearSex = interaction(State2, Year2, Sex2),
