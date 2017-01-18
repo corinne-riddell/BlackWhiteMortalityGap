@@ -61,7 +61,8 @@ dtotal <- dtotal %>%
          RaceSex = interaction(Race2, Sex2, sep = " "),
          StateYearSex = interaction(State2, Year2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2),
-         Crude_Rate = Count/Population)
+         Crude_Rate = Count/Population, 
+         COD = "Total")
 ```
 
 ```{r unknown_age_group}
@@ -73,7 +74,9 @@ table(dtotal$Age, dtotal$Count==0)
 
 #remove these data from the data we analyze:
 dtotal <- dtotal[dtotal$Age2 != "Unknown", ]
+```
 
+```{r exclude_states}
 excluded.states <- c("Idaho", "Montana", "North Dakota", "South Dakota", "Vermont")
 included.states <- setdiff(levels(dtotal$State2), excluded.states)
 dtotal <- dtotal %>% filter(State2 %in% included.states)
