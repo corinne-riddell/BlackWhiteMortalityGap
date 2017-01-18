@@ -18,11 +18,7 @@ load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
 ```
 
 ```{r}
-
-
-
 dat3$grouping <- interaction(dat3$State2, dat3$Race2, dat3$Sex2)
-
 
 #life expectancy over time under two sensitivities for imputing the NA death counts
 ggplot(subset(dat3, State2 == "Alabama"), aes(y = LE_birth1, x = Year)) + 
@@ -49,7 +45,6 @@ ggplot(subset(dat3, State2 == "Massachusetts"), aes(y = LE_birth1, x = Year)) +
 
 ggplot(subset(dat3, State2 == "Massachusetts"), aes(y = Pop_across_age, x = Year)) + geom_line(aes(col = grouping)) +
   ylab("Population Size") + scale_y_continuous(label = scales::comma)
-
 
 ggplot(subset(dat3, State2 == "New York"), aes(y = LE_birth1, x = Year)) + 
   geom_line(aes(col = grouping, lty = "Imputed 1")) +

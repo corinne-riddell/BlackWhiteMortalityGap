@@ -1,5 +1,5 @@
 ---
-title: "Exploratory Data Analysis -- Supressed Code of Death"
+title: "Calculating life expectancy and exploring missingness"
 author: "Corinne Riddell"
 date: "July 22, 2016"
 output: html_document
@@ -10,6 +10,8 @@ library(plyr)
 library(dplyr)
 library(ggplot2)
 library(tidyr)
+library(plotly)
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 ```
 
 *About the dataset*
@@ -39,268 +41,412 @@ dat <- dat %>%
                                                          "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
                                                          "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
                                                          "75-79 years", "80-84 years","85+ years", "Unknown"), ordered = T),
+         Age3 = 0*(Age2 == "<1 year") + 1*(Age2 == "1-4 years") + 5*(Age2 == "5-9 years") +
+                10*(Age2 == "10-14 years") + 15*(Age2 == "15-19 years") + 20*(Age2 == "20-24 years") + 
+                25*(Age2 == "25-29 years") + 30*(Age2 == "30-34 years") + 35*(Age2 == "35-39 years") +
+                40*(Age2 == "40-44 years") + 45*(Age2 == "45-49 years") + 50*(Age2 == "50-54 years") + 
+                55*(Age2 == "55-59 years") + 60*(Age2 == "60-64 years") + 65*(Age2 == "65-69 years") +   
+                70*(Age2 == "70-74 years") + 75*(Age2 == "75-79 years") + 80*(Age2 == "80-84 years") + 
+                85*(Age2 == "85+ years"),
+         nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years"),
          Sex2 = factor(Sex, levels = c(0, 1), labels = c("Male", "Female")),
          Race2 = factor(Race, levels = c(0, 1), labels = c("White", "Black")),
          COD2 = factor(COD, levels = c(0:5), labels = c("Cardiovascular", "Cancers", "Communicable", 
                                                         "Non-communicable", "Injuries", "All other causes")), 
          Year2 = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
-         RaceSex = interaction(Race2, Sex2),
+         Year3 = as.numeric(as.character(Year2)),
+         RaceSex = interaction(Race2, Sex2, sep = " "),
+         StateYearSex = interaction(State2, Year2, Sex2),
          StateYearRaceSex = interaction(State2, Year2, Race2, Sex2))
 ```
 
-Some of the rows have Population==0, and we explore that and record below. These mostly correspond to rows with Unknown age groups that we cannot use in our analysis so I remove them. This leaves 654 rows with Populations of 0.
+```{r unknown_age_group}
+#there is an unknown age group for each combo of state-year-race-sex-age:
+table(dat$Age2) 
+
+#Count of death is always equal to 0 for unknown age groups
+table(dat$Age, dat$Count==0)
+
+#remove these data from the data we analyze:
+dat.clean <- dat[dat$Age2 != "Unknown", ]
+```
+
+##Population counts of 0
+
+It is important to explore how many cells have population counts of zero because these break the Bayesian crank, and also currently breaks the life expectancy function.
 
 ```{r explore_dataset}
-table(dat$Population==0, useNA = "always")
-#55734 cells have Populations of 0.
-
-table(dat$Count[dat$Population==0]==0, useNA = "always")
-#Of these, all have Counts of 0, except for 26 with counts of NA
-
-table(dat$Age2 == "Unknown", dat$Population == 0, useNA = "always")
-#The vast majority of cells with populations of 0 have unknown age groups
-
-#remove this data from the data we analyze:
-dat.clean <- dat[dat$Age2 != "Unknown", ]
-
 table(dat.clean$Population == 0, useNA = "always")
-#654 cells have Populations of 0 now.
+#654 cells have Populations of 0.
 
 table(dat.clean$Count[dat.clean$Population == 0] == 0, useNA = "always")
-summary(dat.clean$Count[dat.clean$Population == 0])
-#628 are equal to 0 and 26 are equal to NA
+#Of these, all have Counts of 0, except for 26 with counts of NA
 
 #replace the NA Counts with 0 for the 26 cells with Populations of 0.
 dat.clean$Count[is.na(dat.clean$Count) == T & dat.clean$Population == 0] <- 0
 summary(dat.clean$Count[dat.clean$Population == 0])
 
-#now the Counts should only equal NA when the true count is between 1 and 9.
-
 summary(dat.clean$Crude_Rate[dat.clean$Population == 0])
-table(dat.clean$Crude_Rate[dat.clean$Population==0], useNA = "always")
 #whenever the population is 0, the Crude_Rate is equal to NA.
 #need to think: should these be equal to 0, or NA? How will it affect the calculations?
+
+#States with at least one strata of 0
+na.pops <- dat.clean %>% 
+  select(State2, Population) %>% 
+  filter(Population == 0)
+
+unique(na.pops$State2)
+
+pops.le.20 <- dat.clean %>% select(State2, Population) %>% filter(Population <= 20)
+unique(pops.le.20$State2)
 ```
 
 **Missingness of Count (of deaths)**
-If there are between 1 and 9 deaths in the strata, this information is surpressed and coded as missing. Later in this document we investigate trends in supression/missingness to understand how it differs according to state, age, race, and sex.
+If there are between 1 and 9 deaths in the strata, this information is 'coarsened' and coded as NA. Later in this document we investigate trends in supression/missingness to understand how it differs according to state, age, race, and sex.
 
 Since our goal is to compute the difference in life expectancy between Blacks and Whites by strata, we impute death counts at their logical extremes to explore this affects the results. 
 
-- Set all missing counts to 1, 5, and 9.
-- Set all missing counts to 1 for Whites and 9 for Blacks and vice versa.
+- Set all missing counts to min({1, 5, and 9}, population_size).
 
 ```{r fill_in_missing_counts}
-dat.clean <- dat.clean %>% mutate(Count_md1 = ifelse(is.na(Count)==T, 1, Count),
-                                  Count_md5 = ifelse(is.na(Count)==T, 5, Count),
-                                  Count_md9 = ifelse(is.na(Count)==T, 9, Count)
+dat.clean <- dat.clean %>% mutate(Count_md1 = ifelse(is.na(Count)==T, pmin(1, Population), Count),
+                                  Count_md5 = ifelse(is.na(Count)==T, pmin(5, Population), Count),
+                                  Count_md9 = ifelse(is.na(Count)==T, pmin(9, Population), Count)
                                   )
-
-dat.clean$Count_b9w1 <- dat.clean$Count
-dat.clean$Count_b9w1[is.na(dat.clean$Count) & dat.clean$Race2 == "White"] <- 1
-dat.clean$Count_b9w1[is.na(dat.clean$Count) & dat.clean$Race2 == "Black"] <- 9
-
-dat.clean$Count_b1w9 <- dat.clean$Count
-dat.clean$Count_b1w9[is.na(dat.clean$Count) & dat.clean$Race2 == "White"] <- 9
-dat.clean$Count_b1w9[is.na(dat.clean$Count) & dat.clean$Race2 == "Black"] <- 1
 
 #check recoding
 dat.clean$Count_grouped <- cut(dat.clean$Count, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 dat.clean$Count1_grouped <- cut(dat.clean$Count_md1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 dat.clean$Count5_grouped <- cut(dat.clean$Count_md5, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 dat.clean$Count9_grouped <- cut(dat.clean$Count_md9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
-dat.clean$Count_b9w1_grouped <- cut(dat.clean$Count_b9w1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
-dat.clean$Count_b1w9_grouped <- cut(dat.clean$Count_b1w9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 
 table(dat.clean$Count_grouped, dat.clean$Count1_grouped, useNA = "always")
 table(dat.clean$Count_grouped, dat.clean$Count5_grouped, useNA = "always")
 table(dat.clean$Count_grouped, dat.clean$Count9_grouped, useNA = "always")
 
-table(dat.clean$Count_grouped, dat.clean$Count_b9w1_grouped, dat.clean$Race2, useNA = "always")
-table(dat.clean$Count_grouped, dat.clean$Count_b1w9_grouped, dat.clean$Race2, useNA = "always")
-
-dat.clean <- dat.clean[ , !names(dat.clean) %in% c("Count_grouped", "Count1_grouped", "Count5_grouped", "Count9_grouped", 
-                                                   "Count_b9w1_grouped", "Count_b1w9_grouped")]
+dat.clean <- dat.clean[ , !names(dat.clean) %in% c("Count_grouped", "Count1_grouped", "Count5_grouped", "Count9_grouped")]
 ```
 
-To calculate life expectancy, we have to aggregate the data across the causes of death.
+```{r addvar_cod_proportions}
+dat.clean <- dat.clean %>% group_by(State2, RaceSex, Year3, Age3) %>%
+                           arrange(State2, RaceSex, Year3, Age3) %>%
+                           mutate(total_deaths1 = sum(Count_md1),
+                                  total_deaths5 = sum(Count_md5),
+                                  total_deaths9 = sum(Count_md9),
+                                  cod_prop_death1 = Count_md1/total_deaths1, 
+                                  cod_prop_death5 = Count_md5/total_deaths5,
+                                  cod_prop_death9 = Count_md9/total_deaths9)
+
+length(dat.clean$total_deaths5[dat.clean$total_deaths5 == 0])
+summary(dat.clean$cod_prop_death5[dat.clean$total_deaths5 == 0])
+#76998 strata with 0 deaths from any cause (12833 when divided by 6 -- the number of causes)
+#7% of strata have no deaths from any cause.
+```
+
+To calculate life expectancy, we have to aggregate the data across causes of death.
 
 ```{r aggregate_over_COD}
 dat2 <- dat.clean %>% group_by(State2, Year2, RaceSex, Age2) %>%
   arrange(State2, RaceSex, Year2, Age2) %>%
-  summarise(total_deaths1 = sum(Count_md1), total_deaths5 = sum(Count_md5),
-            total_deaths9 = sum(Count_md9), 
-            total_deaths_b9 = sum(Count_b9w1), total_deaths_w9 = sum(Count_b1w9),
-            Population = first(Population), Race2 = first(Race2), Sex2 = first(Sex2), 
-            StateYearRaceSex = first(StateYearRaceSex))
+  summarise(Population = first(Population), 
+            Race2 = first(Race2), 
+            Sex2 = first(Sex2), 
+            StateYearRaceSex = first(StateYearRaceSex),
+            nx = first(nx),
+            Age3 = first(Age3),
+            Year3 = first(Year3),
+            total_deaths1 = first(total_deaths1),
+            total_deaths5 = first(total_deaths5),
+            total_deaths9 = first(total_deaths9),
+            cod_prop_death1 = first(cod_prop_death1),
+            cod_prop_death5 = first(cod_prop_death5),
+            cod_prop_death9 = first(cod_prop_death9))
+
+#return stratum ids with any age-specific population counts of 0.
+#unique(dat2$StateYearRaceSex[dat2$Population == 0])
+non.zero.stratums <- setdiff(levels(dat2$StateYearRaceSex), unique(dat2$StateYearRaceSex[dat2$Population == 0]))
 ```
 
-We implemented the calculations performed in the technical supplement found here [http://www.lho.org.uk/Download/Public/7656/1/tech_supp_3.pdf], also saved in our dropbox. 
+Add the total population (across age brackets) to the dat2 dataset.
 
-Let's make sure we can do the calculation all the way through for a few of the groupings, including a grouping with a stratum with a zero population count.
+```{r create_var_pop_across_age}
+dat3 <- dat2 %>% ungroup() %>% 
+  group_by(StateYearRaceSex) %>%
+  summarise(Pop_across_age = sum(Population))
 
-```{r calc_life_expectancy1}
-
-dat2$numYrsInt <- 5
-dat2$numYrsInt[dat2$Age2 == "<1 year"] <- 1
-dat2$numYrsInt[dat2$Age2 == "1-4 years"] <- 4
-
-dat2 <- dat2 %>% mutate( 
-            Death_Rate1 = ifelse(Population!=0, total_deaths1/Population, NA),
-            Death_Rate5 = ifelse(Population!=0, total_deaths5/Population, NA),
-            Death_Rate9 = ifelse(Population!=0, total_deaths9/Population, NA),
-            Death_Rateb9 = ifelse(Population!=0, total_deaths_b9/Population, NA),
-            Death_Ratew9 = ifelse(Population!=0, total_deaths_w9/Population, NA),
-            Ave_Lived_by_Died = ifelse(Age2=="<1 year", 0.1, 0.5),
-            Prob_Dying1 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rate1/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate1), 
-                                 NA),
-            Prob_Dying5 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rate5/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate5), 
-                                 NA),
-            Prob_Dying9 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rate9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rate9), 
-                                 NA),
-            Prob_Dyingb9 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Rateb9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Rateb9), 
-                                 NA),
-            Prob_Dyingw9 = ifelse(Population!=0, 
-                                 numYrsInt*Death_Ratew9/(1 + numYrsInt*(1 - Ave_Lived_by_Died)*Death_Ratew9), 
-                                 NA),
-            Prob_Surv1 = ifelse(Population!=0, 1 - Prob_Dying1, NA),
-            Prob_Surv5 = ifelse(Population!=0, 1 - Prob_Dying5, NA),
-            Prob_Surv9 = ifelse(Population!=0, 1 - Prob_Dying9, NA),            
-            Prob_Survb9 = ifelse(Population!=0, 1 - Prob_Dyingb9, NA),
-            Prob_Survw9 = ifelse(Population!=0, 1 - Prob_Dyingw9, NA),
-            alive_at_start_int1 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_int5 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_int9 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_intb9 = ifelse(Age2 == "<1 year", 1000000, NA),
-            alive_at_start_intw9 = ifelse(Age2 == "<1 year", 1000000, NA),
-            deaths_during_int1 = ifelse(Age2 == "<1 year", alive_at_start_int1*Prob_Dying1, NA),
-            deaths_during_int5 = ifelse(Age2 == "<1 year", alive_at_start_int5*Prob_Dying5, NA),
-            deaths_during_int9 = ifelse(Age2 == "<1 year", alive_at_start_int9*Prob_Dying9, NA),
-            deaths_during_intb9 = ifelse(Age2 == "<1 year", alive_at_start_intb9*Prob_Dyingb9, NA),
-            deaths_during_intw9 = ifelse(Age2 == "<1 year", alive_at_start_intw9*Prob_Dyingw9, NA))
+dat2 <- merge(dat2, dat3, by = "StateYearRaceSex")
+rm(dat3)
+dat2 <- dat2 %>% arrange(State2, Year3, Race2, Sex2, Age3)
 ```
 
-```{r first_five}
-levels(dat2$StateYearRaceSex)[1:5]
-summary(dat2$Population[dat2$StateYearRaceSex %in% levels(dat2$StateYearRaceSex)[1:5]])
 
-timer1 <- system.time (
-  for(x in levels(dat2$StateYearRaceSex)[1:5]) {
-      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
-        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
-        
-          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
-              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
-          }
-          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
-                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
-          
-          
-          } 
-        }
-     
+In those strata that do not have any age-specific population counts of 0, create a life table and store it in a list.
+
+```{r calculate_life_expectancy}
+#takes 10 mins for all three
+
+list.life.tables <- list.life.tables5 <- list.life.tables9 <- vector(mode = "list", length = length(non.zero.stratums))
+#list.life.tables1 <- list.life.tables5 <- list.life.tables9 <- vector(mode = "list", length = length(non.zero.stratums))
+list.index <- 1
+
+system.time(
+for(stratum.id in non.zero.stratums) {
+#for(stratum.id in head(non.zero.stratums)) {
+
+  list.life.tables[[list.index]] <- life.table(data = subset(dat2, StateYearRaceSex == stratum.id) %>% arrange(Age2),   
+  #list.life.tables1[[list.index]] <- life.table(data = subset(dat2, StateYearRaceSex == stratum.id) %>% arrange(Age2), 
+                                               num.ages.in.group = "nx", 
+                                               death.counts = "total_deaths1", 
+                                               population.counts = "Population")
+  
+  list.life.tables5[[list.index]] <- life.table(data = subset(dat2, StateYearRaceSex == stratum.id) %>% arrange(Age2), 
+                                               num.ages.in.group = "nx", 
+                                               death.counts = "total_deaths5", 
+                                               population.counts = "Population")
+    
+  list.life.tables9[[list.index]] <- life.table(data = subset(dat2, StateYearRaceSex == stratum.id) %>% arrange(Age2), 
+                                               num.ages.in.group = "nx", 
+                                               death.counts = "total_deaths9", 
+                                               population.counts = "Population")
+  list.index <- list.index + 1
+  print(list.index)
   }
 )
-
-timer1 # 25 seconds for 5 -- guess 13 hrs for all the strata
 ```
 
-```{r calc_pop0}
-View(dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[2789], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1")])
-timer2 <- system.time (
-  for(x in levels(dat2$StateYearRaceSex)[2789]) {
-      for(row in 2:length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) { 
-        dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row - 1]
-        dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row - 1] - dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row - 1]
-        
-          if (row != length(dat2$alive_at_start_int1[dat2$StateYearRaceSex == x])) {
-              dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying1[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying5[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dying9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingb9[dat2$StateYearRaceSex == x][row]
-              dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]*dat2$Prob_Dyingw9[dat2$StateYearRaceSex == x][row]
-          }
-          else { dat2$deaths_during_int1[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int1[dat2$StateYearRaceSex == x][row] #everyone dies in the 85+ grouping
-                 dat2$deaths_during_int5[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int5[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_int9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_int9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intb9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intb9[dat2$StateYearRaceSex == x][row]
-                 dat2$deaths_during_intw9[dat2$StateYearRaceSex == x][row] <- dat2$alive_at_start_intw9[dat2$StateYearRaceSex == x][row]
-          
-          
-          } 
-        }
-     
+Add the life expectancy at birth to the data file:
+
+```{r add_le_to_dataset}
+le <- le5 <- le9 <- rep(NA, length(non.zero.stratums))
+
+for (i in 1:length(non.zero.stratums)) {
+  le[i] <- list.life.tables[[i]]$e_x[1]
+  le5[i] <- list.life.tables5[[i]]$e_x[1]
+  le9[i] <- list.life.tables9[[i]]$e_x[1]
+}
+
+les <- data.frame(life.expectancy.birth = le, 
+                  life.expectancy.birth.5 = le5, 
+                  life.expectancy.birth.9 = le9, 
+                  StateYearRaceSex = non.zero.stratums)
+
+dat2 <- merge(dat2, les, by = "StateYearRaceSex", all.x =T)
+
+rm(les)
+
+ggplot(dat2 %>% filter(Age2 == "<1 year"), aes(x = life.expectancy.birth)) + 
+  geom_density(aes(fill="Impute 1"), alpha = 0.3) + 
+  geom_density(aes(x = life.expectancy.birth.5, fill = "Impute 5"), alpha = 0.3) +
+  geom_density(aes(x = life.expectancy.birth.9, fill="Impute 9"), alpha = 0.3) +
+  facet_grid(Sex2 ~ Race2)
+```
+
+Make a new dataset that contains information on the gap:
+
+```{r create_dataset_BlackWhite}
+#this dataset contains the black-white data within the same row (wide format) for each year-state-sex strata
+
+Black <- dat2 %>% filter(Race2 == "Black" & Age3 == 0) %>% 
+                  select(State2, Year3, Sex2, Pop_across_age, 
+                         life.expectancy.birth, life.expectancy.birth.5, 
+                         life.expectancy.birth.9) %>%
+                  rename(Pop_black = Pop_across_age,  
+                         le.birth.black = life.expectancy.birth, 
+                         le.birth.black5 = life.expectancy.birth.5, 
+                         le.birth.black9 = life.expectancy.birth.9)
+
+White <- dat2 %>% filter(Race2 == "White" & Age3 == 0) %>% 
+                  select(State2, Year3, Sex2, Pop_across_age, 
+                         life.expectancy.birth, life.expectancy.birth.5, 
+                         life.expectancy.birth.9) %>%
+                  rename(Pop_white = Pop_across_age,  
+                         le.birth.white = life.expectancy.birth,
+                         le.birth.white5 = life.expectancy.birth.5,
+                         le.birth.white9 = life.expectancy.birth.9)
+
+BlackWhite <- merge(Black, White, by = c("State2", "Year3", "Sex2"))
+
+BlackWhite <- BlackWhite %>% mutate(WBgap = le.birth.white - le.birth.black,
+                                    WBgap5 = le.birth.white5 - le.birth.black5,
+                                    WBgap9 = le.birth.white9 - le.birth.black9)
+
+rm(Black, White)
+```
+
+Decompose the gap by age. That is, for each year-state-sex combination, compare the life table for blacks to whites and decompose the gap in life expectancy at birth by age.
+
+```{r create_paired_ids_dataset}
+#paired.ids will contain the index names that are sent to the age decomposition function in the next code chunk
+
+#first, create list of stratum.ids for each race-sex combination
+for (rs in unique(levels(dat.clean$RaceSex))) {
+  assign(paste0(gsub(" ", "", rs), ".stratum.ids"), 
+         dat.clean %>% 
+           ungroup() %>%
+           filter(RaceSex == rs) %>%
+           select(StateYearRaceSex, StateYearSex, Sex2, State2, Year3) %>%
+           group_by(StateYearRaceSex, StateYearSex) %>%
+           filter(row_number() == 1)
+         )
+  
+}
+
+#then, merge the black-white lists
+Female.ids <- merge(WhiteFemale.stratum.ids, BlackFemale.stratum.ids[, -c(3:5)], 
+                    by = "StateYearSex", suffixes = c("White", "Black"))
+head(Female.ids)
+
+Male.ids <- merge(WhiteMale.stratum.ids, BlackMale.stratum.ids[, -c(3:5)],
+                  by = "StateYearSex", suffixes = c("White", "Black"))
+head(Male.ids)
+
+paired.ids <- rbind(Male.ids, Female.ids)
+```
+
+```{r calculate_age_decomp}
+#runs in about a minute
+
+list.age.decomp.tables <- list.age.decomp.tables5 <- list.age.decomp.tables9 <- vector(mode = "list", length = dim(paired.ids)[1])
+
+for(i in 1:dim(paired.ids)[1]) {
+  white.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexWhite"])
+  black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"])
+  
+  if(length(white.index) != 0 & length(black.index) != 0) {
+    list.age.decomp.tables[[i]] <- le_age_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]), 
+                                                 name.lt1 = "Black", 
+                                                 life.table2 = as.data.frame(list.life.tables[[white.index]]), 
+                                                 name.lt2 = "White", age.groups = "Age3")
+
+    list.age.decomp.tables5[[i]] <- le_age_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]), 
+                                                 name.lt1 = "Black", 
+                                                 life.table2 = as.data.frame(list.life.tables5[[white.index]]), 
+                                                 name.lt2 = "White", age.groups = "Age3")
+    
+    list.age.decomp.tables9[[i]] <- le_age_decomp(life.table1 = as.data.frame(list.life.tables9[[black.index]]), 
+                                                 name.lt1 = "Black", 
+                                                 life.table2 = as.data.frame(list.life.tables9[[white.index]]), 
+                                                 name.lt2 = "White", age.groups = "Age3")
+  } else {
+    list.age.decomp.tables[[i]] <- list.age.decomp.tables5[[i]] <- list.age.decomp.tables9[[i]] <-"Couldn't compare life tables"
   }
+}
+
+```
+
+```{r calculate_cod_decomp}
+#stopped here - need to figure this out
+#if the count of deaths == 0 for all causes of death within an age band then the COD proportion is NA
+#this messes up the cod decomposition. What to do?
+#example - no black people dying between the ages of 5-9 of anything. but have whites dying in that age group so their
+#COD proportions are okay.
+
+#takes 1.5 hours for all three
+list.cod.decomp.tables <- list.cod.decomp.tables5 <- list.cod.decomp.tables9 <- vector(mode = "list", length = dim(paired.ids)[1])
+
+system.time(
+for(i in 1:dim(paired.ids)[1]) {
+  white.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexWhite"])
+  black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"])
+  
+  if(length(white.index) != 0 & length(black.index) != 0) {
+    ct.white <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexWhite"]) %>% 
+                ungroup() %>%
+                select(Age2, COD2, cod_prop_death1, cod_prop_death5, cod_prop_death9) %>%
+                rename(prop.white1 = cod_prop_death1, prop.white5 = cod_prop_death5, prop.white9 = cod_prop_death9)
+    
+    ct.black <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexBlack"]) %>% 
+                ungroup() %>%
+                select(Age2, COD2, cod_prop_death1, cod_prop_death5, cod_prop_death9) %>%
+                rename(prop.black1 = cod_prop_death1, prop.black5 = cod_prop_death5, prop.black9 = cod_prop_death9)
+    ct.both <- merge(ct.white, ct.black, by = c("Age2", "COD2")) 
+    ct.both <- ct.both %>% arrange(COD2, Age2)
+    
+    if(any(is.na(ct.both$prop.black1)) == F & any(is.na(ct.both$prop.white1)) == F) { #ensures that there are no ages with 0 deaths - for these COD prop == 0 and can't compute
+        
+        list.cod.decomp.tables[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]),
+                                                              life.table2 = as.data.frame(list.life.tables[[white.index]]), 
+                                                              decomp.table = as.data.frame(list.age.decomp.tables[[i]]),
+                                                              cod.table = ct.both %>% select(Age2, COD2, prop.white1, prop.black1), 
+                                                              age.colname.cod.table = "Age2", 
+                                                              COD.colname.cod.table = "COD2", 
+                                                              prop1.colname.cod.table = "prop.black1", 
+                                                              prop2.colname.cod.table = "prop.white1")
+        
+        list.cod.decomp.tables5[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]),
+                                                              life.table2 = as.data.frame(list.life.tables[[white.index]]), 
+                                                              decomp.table = as.data.frame(list.age.decomp.tables[[i]]),
+                                                              cod.table = ct.both %>% select(Age2, COD2, prop.white5, prop.black5), 
+                                                              age.colname.cod.table = "Age2", 
+                                                              COD.colname.cod.table = "COD2", 
+                                                              prop1.colname.cod.table = "prop.black5", 
+                                                              prop2.colname.cod.table = "prop.white5")
+        
+        list.cod.decomp.tables9[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables[[black.index]]),
+                                                              life.table2 = as.data.frame(list.life.tables[[white.index]]), 
+                                                              decomp.table = as.data.frame(list.age.decomp.tables[[i]]),
+                                                              cod.table = ct.both %>% select(Age2, COD2, prop.white9, prop.black9), 
+                                                              age.colname.cod.table = "Age2", 
+                                                              COD.colname.cod.table = "COD2", 
+                                                              prop1.colname.cod.table = "prop.black9", 
+                                                              prop2.colname.cod.table = "prop.white9")
+        
+    } else { list.cod.decomp.tables[[i]] <- list.cod.decomp.tables5[[i]] <- list.cod.decomp.tables9[[i]] <- "Encountered age group with no deaths"
+      
+    }
+  } else {
+    
+    list.cod.decomp.tables[[i]] <- list.cod.decomp.tables5[[i]] <- list.cod.decomp.tables9[[i]] <- "Couldn't compare life tables"
+  } 
+  
+  print(i)
+}
 )
-
-timer2
 ```
 
-This takes `r time1[3]` seconds to run.
-
-```{r rest_of_life_expectancy_calc}
-dat2$num_PY_int1 <- (dat2$alive_at_start_int1 - dat2$deaths_during_int1)*dat2$numYrsInt + (dat2$deaths_during_int1*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_int5 <- (dat2$alive_at_start_int5 - dat2$deaths_during_int5)*dat2$numYrsInt + (dat2$deaths_during_int5*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_int9 <- (dat2$alive_at_start_int9 - dat2$deaths_during_int9)*dat2$numYrsInt + (dat2$deaths_during_int9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_intb9 <- (dat2$alive_at_start_intb9 - dat2$deaths_during_intb9)*dat2$numYrsInt + (dat2$deaths_during_intb9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-dat2$num_PY_intw9 <- (dat2$alive_at_start_intw9 - dat2$deaths_during_intw9)*dat2$numYrsInt + (dat2$deaths_during_intw9*dat2$Ave_Lived_by_Died*dat2$numYrsInt)
-
-dat2$num_PY_int1[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int1[dat2$Age2 == "85+ years"])/dat2$Death_Rate1[dat2$Age2 == "85+ years"]
-dat2$num_PY_int5[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int5[dat2$Age2 == "85+ years"])/dat2$Death_Rate5[dat2$Age2 == "85+ years"]
-dat2$num_PY_int9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_int9[dat2$Age2 == "85+ years"])/dat2$Death_Rate9[dat2$Age2 == "85+ years"]
-dat2$num_PY_intb9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intb9[dat2$Age2 == "85+ years"])/dat2$Death_Rateb9[dat2$Age2 == "85+ years"]
-dat2$num_PY_intw9[dat2$Age2 == "85+ years"] <- (dat2$alive_at_start_intw9[dat2$Age2 == "85+ years"])/dat2$Death_Ratew9[dat2$Age2 == "85+ years"]
-
-
-dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(desc(Age2)) %>%
-                 mutate(tot_PY_after1 = cumsum(num_PY_int1), tot_PY_after5 = cumsum(num_PY_int5), tot_PY_after9 = cumsum(num_PY_int9),
-                        tot_PY_afterb9 = cumsum(num_PY_intb9),tot_PY_afterw9 = cumsum(num_PY_intw9),
-                        life_exp1 = tot_PY_after1/alive_at_start_int1, life_exp5 = tot_PY_after5/alive_at_start_int5, 
-                        life_exp9 = tot_PY_after9/alive_at_start_int9, 
-                        life_expb9 = tot_PY_afterb9/alive_at_start_intb9, life_expw9 = tot_PY_afterw9/alive_at_start_intw9 
-                )
-
-dat2 <- dat2 %>% group_by(StateYearRaceSex) %>% arrange(Age2)
+```{r  update_decomp_for_plotting}
+#update the decomposition table for plotting purposes
+for(i in 1:dim(paired.ids)[1]) {
+    if(list.cod.decomp.tables[[i]][1] != "Couldn't compare life tables" & 
+       list.cod.decomp.tables[[i]][1] != "Encountered age group with no deaths") { 
+       
+       list.cod.decomp.tables[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables[[i]],
+                                                            age.groups = "Ages", 
+                                                            cause.of.death = "Cause.of.death", 
+                                                            sign.var = "sign", decomp.var = "C_xi", 
+                                                            decomp.var.prop = "C_xi_proportion")  
+       
+       list.cod.decomp.tables5[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables5[[i]],
+                                                            age.groups = "Ages", 
+                                                            cause.of.death = "Cause.of.death", 
+                                                            sign.var = "sign", decomp.var = "C_xi", 
+                                                            decomp.var.prop = "C_xi_proportion") 
+       
+       list.cod.decomp.tables9[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables9[[i]],
+                                                            age.groups = "Ages", 
+                                                            cause.of.death = "Cause.of.death", 
+                                                            sign.var = "sign", decomp.var = "C_xi", 
+                                                            decomp.var.prop = "C_xi_proportion") 
+    } 
+  print(i)
+}  
 ```
 
+```{r pretty_cod}
+ggplotly(ggplot(list.cod.decomp.tables[[1]], aes(y = Ages, x = start)) + 
+           geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+           xlab("Contribution to life expectancy gap") +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0))
 
-I compared the following with my calculations in the excel spreadsheet to check the calculations -- all good.
-```{r}
-dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[1], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
-                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
-
-dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[4], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
-                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
-
-dat2[dat2$StateYearRaceSex == levels(dat2$StateYearRaceSex)[2789], c("StateYearRaceSex", "Age2", "Population", "total_deaths1", 
-                                                                       "Death_Rate1", "Ave_Lived_by_Died", "numYrsInt", "Prob_Dying1", "Prob_Surv1", 
-                                                                       "alive_at_start_int1", "deaths_during_int1", "num_PY_int1", "tot_PY_after1", "life_exp1")]
+ggplotly(ggplot(list.cod.decomp.tables9[[1]], aes(y = Ages, x = start)) + 
+           geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+           xlab("Contribution to life expectancy gap") +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0))
 ```
 
-
-
-
+###Initial graphs on missing data
 Notes on Figure 1 (below):
 
 - Figure 1 is sorted by size of the black population in the state in 2013. This is so you can see how missingness is a function of population size. We expect that states with less black people will have more missing data and more counts of exactly zero. Thus, states with the biggest populations (of blacks and whites) will "hold constant" the effect of population size on the amount of missing data.
@@ -334,7 +480,15 @@ bystate.bpop <-
   group_by(State2) %>%
   summarize(pop_by_race = sum(as.numeric(Population)))
 
+#calculate the size of the black population in 1969 by State
+bystate.bpop.1969 <- 
+  dat %>%
+  filter(COD2 == "Cancers" & Year2 == 1969 & Race2 == "Black") %>% #to stop repeats of the population size
+  group_by(State2) %>%
+  summarize(pop_by_race_1969 = sum(as.numeric(Population)))
+
 bystate <- merge(bystate, bystate.bpop, by = "State2", all.x = T)
+bystate <- merge(bystate, bystate.bpop.1969, by = "State2", all.x = T)
 bystate$State3 <- reorder(bystate$State2, bystate$pop_by_race)
 
 ggplot(bystate, aes(x = Age2, y = prop.missing)) + 
@@ -344,6 +498,10 @@ ggplot(bystate, aes(x = Age2, y = prop.missing)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   ylab("Proportion Missing (%)") +
   xlab("Age group")
+
+ggplot(subset(bystate, Age2 == "<1 year"), aes(pop_by_race_1969, pop_by_race)) + geom_point() + geom_abline(intercept = 0, slope = 1)
+
+unique(bystate$State2[bystate$Age2 == "<1 year" & bystate$pop_by_race_1969 < 10000])
 ```
 
 Notes on Figure 2 (below):
@@ -371,14 +529,14 @@ ggplot(bystate, aes(x = Age2, y = prop.zero)) +
 ```{r missing_data, fig.width = 10, fig.height = 5, echo=F}
 #table(is.na(dat$Count))
 
-table1.whitemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White.Male"]), 
-                                           dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
-table1.blackmale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black.Male"]), 
-                                           dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
-table1.whitefemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White.Female"]), 
-                                           dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
-table1.blackfemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black.Female"]), 
-                                           dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+table1.whitemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White Male"]), 
+                                           dat$Age2[dat$RaceSex == "White Male"]),2)*100,2)
+table1.blackmale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black Male"]), 
+                                           dat$Age2[dat$RaceSex == "Black Male"]),2)*100,2)
+table1.whitefemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "White Female"]), 
+                                           dat$Age2[dat$RaceSex == "White Female"]),2)*100,2)
+table1.blackfemale <- round(prop.table(table(is.na(dat$Count[dat$RaceSex == "Black Female"]), 
+                                           dat$Age2[dat$RaceSex == "Black Female"]),2)*100,2)
 
 miss1 <- data.frame("white.male" = table1.whitemale[2, ], 
                     "black.male"= table1.blackmale[2, ],
@@ -399,14 +557,14 @@ ggplot(miss1, aes(x = age, y = missingness)) + geom_point() + geom_point(aes(col
 **Let's look at the proportion with 0's**
 
 ```{r zero_data, fig.width = 10, fig.height = 5, echo=F}
-table2.whitemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White.Male"]==0, 
-                                       dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
-table2.blackmale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black.Male"]==0, 
-                                       dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
-table2.whitefemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White.Female"]==0, 
-                                       dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
-table2.blackfemale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black.Female"]==0, 
-                                       dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+table2.whitemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White Male"]==0, 
+                                       dat$Age2[dat$RaceSex == "White Male"]),2)*100,2)
+table2.blackmale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black Male"]==0, 
+                                       dat$Age2[dat$RaceSex == "Black Male"]),2)*100,2)
+table2.whitefemale <- round(prop.table(table(dat$Count[dat$RaceSex == "White Female"]==0, 
+                                       dat$Age2[dat$RaceSex == "White Female"]),2)*100,2)
+table2.blackfemale <- round(prop.table(table(dat$Count[dat$RaceSex == "Black Female"]==0, 
+                                       dat$Age2[dat$RaceSex == "Black Female"]),2)*100,2)
 
 miss2 <- data.frame("whitemale" = table2.whitemale[2, ], 
                     "blackmale"= table2.blackmale[2, ],
@@ -431,14 +589,14 @@ ggplot(miss2, aes(x = age, y = zeroes)) + geom_point() + geom_point(aes(col=race
 dat$miss_or_zero <- F
 dat$miss_or_zero[dat$Count == 0 | is.na(dat$Count) == T] <- T
 
-table3.whitemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White.Male"]==T, 
-                                      dat$Age2[dat$RaceSex == "White.Male"]),2)*100,2)
-table3.blackmale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black.Male"]==T, 
-                                       dat$Age2[dat$RaceSex == "Black.Male"]),2)*100,2)
-table3.whitefemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White.Female"]==T, 
-                                       dat$Age2[dat$RaceSex == "White.Female"]),2)*100,2)
-table3.blackfemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black.Female"]==T, 
-                                       dat$Age2[dat$RaceSex == "Black.Female"]),2)*100,2)
+table3.whitemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White Male"]==T, 
+                                      dat$Age2[dat$RaceSex == "White Male"]),2)*100,2)
+table3.blackmale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black Male"]==T, 
+                                       dat$Age2[dat$RaceSex == "Black Male"]),2)*100,2)
+table3.whitefemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "White Female"]==T, 
+                                       dat$Age2[dat$RaceSex == "White Female"]),2)*100,2)
+table3.blackfemale <- round(prop.table(table(dat$miss_or_zero[dat$RaceSex == "Black Female"]==T, 
+                                       dat$Age2[dat$RaceSex == "Black Female"]),2)*100,2)
 
 miss3 <- data.frame("whitemale" = table3.whitemale[2, ], 
                     "blackmale"= table3.blackmale[2, ],
@@ -469,6 +627,16 @@ ggplot(subset(dat, State2=="Louisiana"), aes(x = Population, y = Count)) +
 ```
 
 ```{r save_workspace}
-save.image(file = "/Users/corinneriddell/Dropbox/SRJ/Data/corinne/Sep5_workspace_bw_gap.Rdata")
+save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
 ```
+
+```{r save_specified_files}
+save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
+     list.age.decomp.tables5, list.cod.decomp.tables5, list.age.decomp.tables9, list.cod.decomp.tables9,
+     list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed, list.cod.marginal.tables.smoothed,
+     non.zero.stratums, non.zero.stratums.smoothed, cod.contributions,
+     file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
+```
+
+
 
