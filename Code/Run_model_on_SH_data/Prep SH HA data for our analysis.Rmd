@@ -90,7 +90,7 @@ prop.table(table(is.na(dtotal$Count)))
 prop.table(table(is.na(dtotal$Count[dtotal$State2 == "New York"])))
 prop.table(table(is.na(dtotal$Count[dtotal$State2 == "Georgia"])))
 prop.table(table(is.na(dtotal$Count[dtotal$State2 == "Florida"])))
-
+table(is.na(dtotal$Count[dtotal$State2 == "Alabama" & dtotal$Year3 == 1990]))
 
 test.le.fx <- function(data, state, sex, race, year) {
   test.data <- data[data["State2"] == state & data["Sex2"] == sex & data["Race2"] == race & data["Year3"] == year, ]
@@ -107,5 +107,12 @@ test.le.fx(dtotal, "Georgia", "Male", "White", 2009)
 
 test.le.fx(dtotal, "New York", "Male", "White", 1990)
 test.le.fx(dtotal, "New York", "Male", "White", 2009)
+
+test.le.fx(dtotal, "Alabama", "Male", "White", 1990)
+test.le.fx(dtotal, "Alabama", "Male", "White", 2009)
+
+test.le.fx(dtotal, "Alabama", "Male", "Black", 1990)
+#test.le.fx(dtotal, "Alabama", "Male", "Black", 2009)
+
 ```
 
