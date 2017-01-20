@@ -184,8 +184,8 @@ dat.aggregated <- dat.aggregated %>% arrange(State_factor, Year_actual, Race_fac
 
 ```{r write_data_to_csvs}
 #save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
-write_csv(dat.clean, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.csv", col_names = T)
-write_csv(dat.aggregated, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.csv", col_names = T)
+write_csv(dat.clean, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.Rdata", col_names = T)
+write_csv(dat.aggregated, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.Rdata", col_names = T)
 
 ```
 
