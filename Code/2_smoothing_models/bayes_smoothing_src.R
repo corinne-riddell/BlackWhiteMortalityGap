@@ -15,7 +15,10 @@ library(grid)
 library(gridExtra)
 
 
-
+ 
 source('~/BlackWhiteMortalityGap/Code/bayesian_smoothing/bayes_smoothing_functions.R') 
 #source('life_expectancy_functions.R') 
+
+load('~/SH_HA_data.Rdata')
+
 
