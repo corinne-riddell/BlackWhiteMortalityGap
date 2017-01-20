@@ -15,12 +15,13 @@ The original dataset was collected by Sam using software from the National Cance
 ```{r read_raw_data}
 dat <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/deaths-cause-6913.txt", header = F,sep="\t")
 names(dat) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
+names(dat) <- c("state.n", "age.n", "sex.n", "race.n", "COD.n", "year.0", "crude.rate", "deaths", "population") 
 # names and order of variables in the dataset are noted in the .dic dictionary file found in the same dir as the dataset.
 ```
 
 ```{r recode_variables}
 dat <- dat %>%
-  mutate(State_factor = factor(State, levels = c(0:50), labels = c("Alabama", "Alaska", "Arizona", "Arkansas","California",
+  mutate(state = factor(state.n, levels = c(0:50), labels = c("Alabama", "Alaska", "Arizona", "Arkansas","California",
                                                              "Colorado", "Connecticut", "Delaware", "Washington DC",
                                                              "Florida", "Georgia", "Hawaii","Idaho", "Illinois", 
                                                              "Indiana","Iowa", "Kansas", "Kentucky", "Louisiana", 
@@ -32,41 +33,41 @@ dat <- dat %>%
                                                              "Rhode Island", "South Carolina", "South Dakota", 
                                                              "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
                                                              "Washington", "West Virginia", "Wisconsin", "Wyoming")), 
-         Age_factor = factor(Age, levels = c(0:19), labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+         age = factor(age.n, levels = c(0:19), labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
                                                          "15-19 years", "20-24 years", "25-29 years", "30-34 years",
                                                          "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
                                                          "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
                                                          "75-79 years", "80-84 years","85+ years", "Unknown"), ordered = T),
-         Age_minbin = 0*(Age_factor == "<1 year") + 1*(Age_factor == "1-4 years") + 5*(Age_factor == "5-9 years") +
-                10*(Age_factor == "10-14 years") + 15*(Age_factor == "15-19 years") + 20*(Age_factor == "20-24 years") + 
-                25*(Age_factor == "25-29 years") + 30*(Age_factor == "30-34 years") + 35*(Age_factor == "35-39 years") +
-                40*(Age_factor == "40-44 years") + 45*(Age_factor == "45-49 years") + 50*(Age_factor == "50-54 years") + 
-                55*(Age_factor == "55-59 years") + 60*(Age_factor == "60-64 years") + 65*(Age_factor == "65-69 years") +   
-                70*(Age_factor == "70-74 years") + 75*(Age_factor == "75-79 years") + 80*(Age_factor == "80-84 years") + 
-                85*(Age_factor == "85+ years"),
-         Age_bin_size = 1*(Age_factor == "<1 year") + 4*(Age_factor == "1-4 years") + 5*(Age_factor != "<1 year" & Age_factor != "1-4 years"),
-         Sex_factor = factor(Sex, levels = c(0, 1), labels = c("Male", "Female")),
-         Race_factor = factor(Race, levels = c(0, 1), labels = c("White", "Black")),
-         COD_factor = factor(COD, levels = c(0:5), labels = c("Cardiovascular", "Cancers", "Communicable", 
+         age_minbin = 0*(age == "<1 year") + 1*(age == "1-4 years") + 5*(age == "5-9 years") +
+                10*(age == "10-14 years") + 15*(age == "15-19 years") + 20*(age == "20-24 years") + 
+                25*(age == "25-29 years") + 30*(age == "30-34 years") + 35*(age == "35-39 years") +
+                40*(age == "40-44 years") + 45*(age == "45-49 years") + 50*(age == "50-54 years") + 
+                55*(age == "55-59 years") + 60*(age == "60-64 years") + 65*(age == "65-69 years") +   
+                70*(age == "70-74 years") + 75*(age == "75-79 years") + 80*(age == "80-84 years") + 
+                85*(age == "85+ years"),
+         age_bin_size = 1*(age == "<1 year") + 4*(age == "1-4 years") + 5*(age != "<1 year" & age != "1-4 years"),
+         sex = factor(sex.n, levels = c(0, 1), labels = c("Male", "Female")),
+         race = factor(race.n, levels = c(0, 1), labels = c("White", "Black")),
+         COD = factor(COD.n, levels = c(0:5), labels = c("Cardiovascular", "Cancers", "Communicable", 
                                                         "Non-communicable", "Injuries", "All other causes")), 
-         Year_factor = factor(Year, levels = c(0:44), labels = as.character(1969:2013)),
-         Year_actual = as.numeric(as.character(Year_factor)),
-         RaceSex = interaction(Race_factor, Sex_factor, sep = " "),
-         StateYearSex = interaction(State_factor, Year_factor, Sex_factor),
-         StateYearRaceSex = interaction(State_factor, Year_factor, Race_factor, Sex_factor))
+         year = factor(year.0, levels = c(0:44), labels = as.character(1969:2013)),
+         year.n = as.numeric(as.character(year)),
+         race.sex = interaction(race, sex, sep = " "),
+         state.year.sex = interaction(state, year, sex),
+         state.year.race.sex = interaction(state, year, race, sex))
 
 head(dat)
 ```
 
 ```{r remove_unknown_age_group}
 #there is an unknown age group for each combo of state-year-race-sex-age:
-table(dat$Age_factor) 
+table(dat$age) 
 
 #Count of death is always equal to 0 for unknown age groups
-table(dat$Age_factor, dat$Count==0)
+table(dat$age, dat$deaths==0)
 
 #remove these data from the data we analyze:
-dat.clean <- dat[dat$Age_factor != "Unknown", ]
+dat.clean <- dat[dat$age != "Unknown", ]
 ```
 
 ##Population counts of 0
@@ -74,31 +75,31 @@ dat.clean <- dat[dat$Age_factor != "Unknown", ]
 It is important to explore how many cells have population counts of zero because these break the Bayesian crank, and also currently breaks the life expectancy function.
 
 ```{r recode_pops_of_zero}
-table(dat.clean$Population == 0, useNA = "always")
+table(dat.clean$population == 0, useNA = "always")
 #654 cells have Populations of 0.
 
-table(dat.clean$Count[dat.clean$Population == 0] == 0, useNA = "always")
+table(dat.clean$deaths[dat.clean$population == 0] == 0, useNA = "always")
 #Of these, all have Counts of 0, except for 26 with counts of NA
 
 #replace the NA Counts with 0 for the 26 cells with Populations of 0.
-dat.clean$Count[is.na(dat.clean$Count) == T & dat.clean$Population == 0] <- 0
-summary(dat.clean$Count[dat.clean$Population == 0])
+dat.clean$deaths[is.na(dat.clean$deaths) == T & dat.clean$population == 0] <- 0
+summary(dat.clean$deaths[dat.clean$population == 0])
 
-summary(dat.clean$Crude_Rate[dat.clean$Population == 0])
-#whenever the population is 0, the Crude_Rate is equal to NA.
+summary(dat.clean$crude.rate[dat.clean$population == 0])
+#whenever the population is 0, the crude.rate is equal to NA.
 #need to think: should these be equal to 0, or NA? How will it affect the calculations?
 ```
 
 ```{r list_states_0_le20_popcounts}
 #States with at least one strata of 0
 na.pops <- dat.clean %>% 
-  select(State_factor, Population) %>% 
-  filter(Population == 0)
+  select(state, population) %>% 
+  filter(population == 0)
 
-unique(na.pops$State_factor)
+unique(na.pops$state)
 
-pops.le.20 <- dat.clean %>% select(State_factor, Population) %>% filter(Population <= 20)
-unique(pops.le.20$State_factor)
+pops.le.20 <- dat.clean %>% select(state, population) %>% filter(population <= 20)
+unique(pops.le.20$state)
 ```
 
 **Missingness of Count (of deaths)**
@@ -107,36 +108,36 @@ If there are between 1 and 9 deaths in the strata, this information is 'coarsene
 Since our goal is to compute the difference in life expectancy between Blacks and Whites by strata, we impute death counts at their logical extremes to explore how this affects the results. Further, we use this rough data to create the shiny app while the Bayesian model is being developed/run.
 
 ```{r fill_in_missing_counts}
-dat.clean <- dat.clean %>% mutate(Count_md1 = ifelse(is.na(Count)==T, pmin(1, Population), Count),
-                                  Count_md5 = ifelse(is.na(Count)==T, pmin(5, Population), Count),
-                                  Count_md9 = ifelse(is.na(Count)==T, pmin(9, Population), Count)
+dat.clean <- dat.clean %>% mutate(deaths_md1 = ifelse(is.na(deaths)==T, pmin(1, population), deaths),
+                                  deaths_md5 = ifelse(is.na(deaths)==T, pmin(5, population), deaths),
+                                  deaths_md9 = ifelse(is.na(deaths)==T, pmin(9, population), deaths)
                                   )
 
 #check recoding
-dat.clean$Count_grouped <- cut(dat.clean$Count, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
-dat.clean$Count1_grouped <- cut(dat.clean$Count_md1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
-dat.clean$Count5_grouped <- cut(dat.clean$Count_md5, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
-dat.clean$Count9_grouped <- cut(dat.clean$Count_md9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$deaths_grouped <- cut(dat.clean$deaths, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$deaths1_grouped <- cut(dat.clean$deaths_md1, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$deaths5_grouped <- cut(dat.clean$deaths_md5, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
+dat.clean$deaths9_grouped <- cut(dat.clean$deaths_md9, c(-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 22040))
 
-table(dat.clean$Count_grouped, dat.clean$Count1_grouped, useNA = "always")
-table(dat.clean$Count_grouped, dat.clean$Count5_grouped, useNA = "always")
-table(dat.clean$Count_grouped, dat.clean$Count9_grouped, useNA = "always")
+table(dat.clean$deaths_grouped, dat.clean$deaths1_grouped, useNA = "always")
+table(dat.clean$deaths_grouped, dat.clean$deaths5_grouped, useNA = "always")
+table(dat.clean$deaths_grouped, dat.clean$deaths9_grouped, useNA = "always")
 
-dat.clean <- dat.clean[ , !names(dat.clean) %in% c("Count_grouped", "Count1_grouped", "Count5_grouped", "Count9_grouped")]
+dat.clean <- dat.clean[ , !names(dat.clean) %in% c("deaths_grouped", "deaths1_grouped", "deaths5_grouped", "deaths9_grouped")]
 ```
 
 ```{r addvar_cod_proportions} 
 # Add the proportions of deaths due to each cause as a new variable.
 # This variable is used to decompose the life expectancy gap by cause of death.
 
-dat.clean <- dat.clean %>% group_by(State_factor, RaceSex, Year_actual, Age_minbin) %>%
-                           arrange(State_factor, RaceSex, Year_actual, Age_minbin) %>%
-                           mutate(total_deaths1 = sum(Count_md1),
-                                  total_deaths5 = sum(Count_md5),
-                                  total_deaths9 = sum(Count_md9),
-                                  cod_prop_death1 = Count_md1/total_deaths1, 
-                                  cod_prop_death5 = Count_md5/total_deaths5,
-                                  cod_prop_death9 = Count_md9/total_deaths9)
+dat.clean <- dat.clean %>% group_by(state, race.sex, year.n, age_minbin) %>%
+                           arrange(state, race.sex, year.n, age_minbin) %>%
+                           mutate(total_deaths1 = sum(deaths_md1),
+                                  total_deaths5 = sum(deaths_md5),
+                                  total_deaths9 = sum(deaths_md9),
+                                  cod_prop_death1 = deaths_md1/total_deaths1, 
+                                  cod_prop_death5 = deaths_md5/total_deaths5,
+                                  cod_prop_death9 = deaths_md9/total_deaths9)
 
 length(dat.clean$total_deaths5[dat.clean$total_deaths5 == 0])
 summary(dat.clean$cod_prop_death5[dat.clean$total_deaths5 == 0])
@@ -147,15 +148,15 @@ summary(dat.clean$cod_prop_death5[dat.clean$total_deaths5 == 0])
 To calculate life expectancy, we have to aggregate the data across causes of death.
 
 ```{r aggregate_over_COD}
-dat.aggregated <- dat.clean %>% group_by(State_factor, Year_factor, RaceSex, Age_factor) %>%
-                                arrange(State_factor, RaceSex, Year_factor, Age_factor) %>%
-                                summarise(Population = first(Population), 
-                                          Race_factor = first(Race_factor), 
-                                          Sex_factor = first(Sex_factor), 
-                                          StateYearRaceSex = first(StateYearRaceSex),
-                                          Age_bin_size = first(Age_bin_size),
-                                          Age_minbin = first(Age_minbin),
-                                          Year_actual = first(Year_actual),
+dat.aggregated <- dat.clean %>% group_by(state, year, race.sex, age) %>%
+                                arrange(state, race.sex, year, age) %>%
+                                summarise(population = first(population), 
+                                          race = first(race), 
+                                          sex = first(sex), 
+                                          state.year.race.sex = first(state.year.race.sex),
+                                          age_bin_size = first(age_bin_size),
+                                          age_minbin = first(age_minbin),
+                                          year.n = first(year.n),
                                           total_deaths1 = first(total_deaths1),
                                           total_deaths5 = first(total_deaths5),
                                           total_deaths9 = first(total_deaths9),
@@ -164,29 +165,28 @@ dat.aggregated <- dat.clean %>% group_by(State_factor, Year_factor, RaceSex, Age
                                           cod_prop_death9 = first(cod_prop_death9))
 
 #return "stratum ids" with any age-specific population counts of 0.
-non.zero.stratums <- setdiff(levels(dat.aggregated$StateYearRaceSex), 
-                             unique(dat.aggregated$StateYearRaceSex[dat.aggregated$Population == 0]))
+non.zero.stratums <- setdiff(levels(dat.aggregated$state.year.race.sex), 
+                             unique(dat.aggregated$state.year.race.sex[dat.aggregated$population == 0]))
 ```
 
 Add the total population (across age brackets) to the dat.aggregated dataset.
 
 ```{r create_var_pop_across_age}
 dat3 <- dat.aggregated %>% ungroup() %>% 
-                           group_by(StateYearRaceSex) %>%
-                           summarise(Pop_across_age = sum(Population))
+                           group_by(state.year.race.sex) %>%
+                           summarise(pop_across_age = sum(population))
 
-dat.aggregated <- merge(dat.aggregated, dat3, by = "StateYearRaceSex")
+dat.aggregated <- merge(dat.aggregated, dat3, by = "state.year.race.sex")
 
 rm(dat3)
 
-dat.aggregated <- dat.aggregated %>% arrange(State_factor, Year_actual, Race_factor, Sex_factor, Age_minbin)
+dat.aggregated <- dat.aggregated %>% arrange(state, year.n, race, sex, age_minbin)
 ```
 
 ```{r write_data_to_csvs}
 #save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
 write_csv(dat.clean, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.Rdata", col_names = T)
 write_csv(dat.aggregated, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.Rdata", col_names = T)
-
 ```
 
 ```{r save_specified_files}
