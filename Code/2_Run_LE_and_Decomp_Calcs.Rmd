@@ -9,7 +9,6 @@ Depends on: output datasets created in "1_Explore_Data.Rmd".
 
 ```{r load_libraries, echo=F, warning=F, message=F}
 library(tidyverse)
-library(plotly)
 options(tibble.width = Inf) #display all columns of tibbles
 ```
 
@@ -18,15 +17,15 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 ```
 
 ```{r load_data}
-dat.aggregated <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.Rdata", header = T)
-dat.clean<- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.Rdata", header = T)
+dat.aggregated <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.csv", header = T)
+dat.clean<- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.csv", header = T)
 ```
 
 In those strata that do not have any age-specific population counts of 0, create a life table and store it in a list.
 
 ```{r calculate_life_expectancy}
-non.zero.stratums <- setdiff(levels(dat.aggregated$StateYearRaceSex), 
-                             unique(dat.aggregated$StateYearRaceSex[dat.aggregated$Population == 0]))
+non.zero.stratums <- setdiff(levels(dat.aggregated$state.year.race.sex), 
+                             unique(dat.aggregated$state.year.race.sex[dat.aggregated$population == 0]))
 
 #takes 13 mins
 
@@ -40,20 +39,20 @@ system.time(
     list.life.tables5[[list.index]]$stratum.id <- non.zero.stratums[list.index]
     list.life.tables9[[list.index]]$stratum.id <- non.zero.stratums[list.index]
     
-    list.life.tables1[[list.index]]$life.table <- life.table(data = subset(dat.aggregated, StateYearRaceSex == stratum.id) %>% arrange(Age_factor),
-                                                 num.ages.in.group = "Age_bin_size",
+    list.life.tables1[[list.index]]$life.table <- life.table(data = subset(dat.aggregated, state.year.race.sex == stratum.id) %>% arrange(age),
+                                                 num.ages.in.group = "age_bin_size",
                                                  death.counts = "total_deaths1",
-                                                 population.counts = "Population")
+                                                 population.counts = "population")
 
-    list.life.tables5[[list.index]]$life.table <- life.table(data = subset(dat.aggregated, StateYearRaceSex == stratum.id) %>% arrange(Age_factor),
-                                                  num.ages.in.group = "Age_bin_size",
+    list.life.tables5[[list.index]]$life.table <- life.table(data = subset(dat.aggregated, state.year.race.sex == stratum.id) %>% arrange(age),
+                                                  num.ages.in.group = "age_bin_size",
                                                   death.counts = "total_deaths5",
-                                                  population.counts = "Population")
+                                                  population.counts = "population")
 
-    list.life.tables9[[list.index]]$life.table <- life.table(data = subset(dat.aggregated, StateYearRaceSex == stratum.id) %>% arrange(Age_factor),
-                                                  num.ages.in.group = "Age_bin_size",
+    list.life.tables9[[list.index]]$life.table <- life.table(data = subset(dat.aggregated, state.year.race.sex == stratum.id) %>% arrange(age),
+                                                  num.ages.in.group = "age_bin_size",
                                                   death.counts = "total_deaths9",
-                                                  population.counts = "Population")
+                                                  population.counts = "population")
     list.index <- list.index + 1
     print(list.index)
   }
@@ -70,19 +69,19 @@ le9 <- map_dbl(list.life.tables9, ~ .x$life.table$e_x[1])
 sid <- map_chr(list.life.tables1, ~ .x$stratum.id)
 
 les <- tibble(le1, le5, le9, sid)
-names(les) = c("life.expectancy.birth.1", "life.expectancy.birth.5", "life.expectancy.birth.9", "StateYearRaceSex")
+names(les) = c("life.expectancy.birth.1", "life.expectancy.birth.5", "life.expectancy.birth.9", "state.year.race.sex")
 
-dat.aggregated <- merge(dat.aggregated, les, by = "StateYearRaceSex", all.x =T)
+dat.aggregated <- merge(dat.aggregated, les, by = "state.year.race.sex", all.x =T)
 
 rm(les, le1, le5, le9)
 ```
 
 ```{r densityplot_life_expectancy}
-ggplot(dat.aggregated %>% dplyr::filter(Age_factor == "<1 year"), aes(x = life.expectancy.birth.1)) + 
+ggplot(dat.aggregated %>% dplyr::filter(age == "<1 year"), aes(x = life.expectancy.birth.1)) + 
   geom_density(aes(fill="Impute 1"), alpha = 0.3) +
   geom_density(aes(x = life.expectancy.birth.5, fill = "Impute 5"), alpha = 0.3) +
   geom_density(aes(x = life.expectancy.birth.9, fill="Impute 9"), alpha = 0.3) +
-  facet_grid(Sex_factor ~ Race_factor)
+  facet_grid(sex ~ race)
 ```
 
 Make a new dataset that contains information on the gap:
@@ -90,25 +89,25 @@ Make a new dataset that contains information on the gap:
 ```{r create_dataset_BlackWhite}
 #this dataset contains the black-white data within the same row (wide format) for each year-state-sex strata
 
-Black <- dat.aggregated %>% filter(Race_factor == "Black" & Age_minbin == 0) %>% 
-                            select(State_factor, Year_actual, Sex_factor, Pop_across_age, 
+Black <- dat.aggregated %>% filter(race == "Black" & age_minbin == 0) %>% 
+                            select(state, year.n, sex, pop_across_age, 
                                    life.expectancy.birth.1, life.expectancy.birth.5, 
                                    life.expectancy.birth.9) %>%
-                            rename(Pop_black = Pop_across_age,  
+                            rename(pop_black = pop_across_age,  
                                    le.birth.black1 = life.expectancy.birth.1, 
                                    le.birth.black5 = life.expectancy.birth.5, 
                                    le.birth.black9 = life.expectancy.birth.9)
 
-White <- dat.aggregated %>% filter(Race_factor == "White" & Age_minbin == 0) %>% 
-                            select(State_factor, Year_actual, Sex_factor, Pop_across_age, 
+White <- dat.aggregated %>% filter(race == "White" & age_minbin == 0) %>% 
+                            select(state, year.n, sex, pop_across_age, 
                                    life.expectancy.birth.1, life.expectancy.birth.5, 
                                    life.expectancy.birth.9) %>%
-                            rename(Pop_white = Pop_across_age,  
+                            rename(pop_white = pop_across_age,  
                                    le.birth.white1 = life.expectancy.birth.1,
                                    le.birth.white5 = life.expectancy.birth.5,
                                    le.birth.white9 = life.expectancy.birth.9)
 
-BlackWhite <- merge(Black, White, by = c("State_factor", "Year_actual", "Sex_factor"))
+BlackWhite <- merge(Black, White, by = c("state", "year.n", "sex"))
 
 BlackWhite <- BlackWhite %>% mutate(WBgap1 = le.birth.white1 - le.birth.black1,
                                     WBgap5 = le.birth.white5 - le.birth.black5,
@@ -124,13 +123,13 @@ Decompose the gap by age. That is, for each year-state-sex combination, compare 
 #it pairs ids between strata for blacks and whites
 
 #first, create list of stratum.ids for each race-sex combination
-for (rs in unique(levels(dat.clean$RaceSex))) {
+for (rs in unique(levels(dat.clean$race.sex))) {
   assign(paste0(gsub(" ", "", rs), ".stratum.ids"), 
          dat.clean %>% 
            ungroup() %>%
-           filter(RaceSex == rs) %>%
-           select(StateYearRaceSex, StateYearSex, Sex_factor, State_factor, Year_actual) %>%
-           group_by(StateYearRaceSex, StateYearSex) %>%
+           filter(race.sex == rs) %>%
+           select(state.year.race.sex, state.year.sex, sex, state, year.n) %>%
+           group_by(state.year.race.sex, state.year.sex) %>%
            filter(row_number() == 1)
   )
   
@@ -138,11 +137,11 @@ for (rs in unique(levels(dat.clean$RaceSex))) {
 
 #then, merge the black-white lists
 Female.ids <- merge(WhiteFemale.stratum.ids, BlackFemale.stratum.ids[, -c(3:5)], 
-                    by = "StateYearSex", suffixes = c("White", "Black"))
+                    by = "state.year.sex", suffixes = c(".white", ".black"))
 head(Female.ids)
 
 Male.ids <- merge(WhiteMale.stratum.ids, BlackMale.stratum.ids[, -c(3:5)],
-                  by = "StateYearSex", suffixes = c("White", "Black"))
+                  by = "state.year.sex", suffixes = c(".white", ".black"))
 head(Male.ids)
 
 paired.ids <- rbind(Male.ids, Female.ids)
@@ -157,28 +156,28 @@ list.age.decomp.tables1 <- list.age.decomp.tables5 <- list.age.decomp.tables9 <-
 
 system.time(
   for(i in 1:dim(paired.ids)[1]) {
-    white.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexWhite"])
-    black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"])
+    white.index <- which(non.zero.stratums == paired.ids[i, "state.year.race.sex.white"])
+    black.index <- which(non.zero.stratums == paired.ids[i, "state.year.race.sex.black"])
     
-    list.age.decomp.tables1[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
-    list.age.decomp.tables5[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
-    list.age.decomp.tables9[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
+    list.age.decomp.tables1[[i]]$state.year.sex <- paired.ids[i, "state.year.sex"]
+    list.age.decomp.tables5[[i]]$state.year.sex <- paired.ids[i, "state.year.sex"]
+    list.age.decomp.tables9[[i]]$state.year.sex <- paired.ids[i, "state.year.sex"]
     
     if(length(white.index) != 0 & length(black.index) != 0) {
       list.age.decomp.tables1[[i]]$decomp.table <- le_age_decomp(life.table1 = as.data.frame(list.life.tables1[[black.index]]$life.table), 
                                                                  name.lt1 = "Black", 
                                                                  life.table2 = as.data.frame(list.life.tables1[[white.index]]$life.table), 
-                                                                 name.lt2 = "White", age.groups = "Age_factor")
+                                                                 name.lt2 = "White", age.groups = "age")
       
       list.age.decomp.tables5[[i]]$decomp.table <- le_age_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]$life.table), 
                                                                  name.lt1 = "Black", 
                                                                  life.table2 = as.data.frame(list.life.tables5[[white.index]]$life.table), 
-                                                                 name.lt2 = "White", age.groups = "Age_factor")
+                                                                 name.lt2 = "White", age.groups = "age")
       
       list.age.decomp.tables9[[i]]$decomp.table <- le_age_decomp(life.table1 = as.data.frame(list.life.tables9[[black.index]]$life.table), 
                                                                  name.lt1 = "Black", 
                                                                  life.table2 = as.data.frame(list.life.tables9[[white.index]]$life.table), 
-                                                                 name.lt2 = "White", age.groups = "Age_factor")
+                                                                 name.lt2 = "White", age.groups = "age")
     } else {
       list.age.decomp.tables1[[i]]$decomp.table <- list.age.decomp.tables5[[i]]$decomp.table <- list.age.decomp.tables9[[i]]$decomp.table <-"Couldn't compare life tables"
     }
@@ -209,51 +208,51 @@ list.cod.decomp.tables1 <- list.cod.decomp.tables5 <- list.cod.decomp.tables9 <-
 
 system.time(
   for(i in 1:dim(paired.ids)[1]) {
-    white.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexWhite"])
-    black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"])
+    white.index <- which(non.zero.stratums == paired.ids[i, "state.year.race.sex.white"])
+    black.index <- which(non.zero.stratums == paired.ids[i, "state.year.race.sex.black"])
  
-    list.cod.decomp.tables1[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
-    list.cod.decomp.tables5[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
-    list.cod.decomp.tables9[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
+    list.cod.decomp.tables1[[i]]$state.year.sex <- paired.ids[i, "state.year.sex"]
+    list.cod.decomp.tables5[[i]]$state.year.sex <- paired.ids[i, "state.year.sex"]
+    list.cod.decomp.tables9[[i]]$state.year.sex <- paired.ids[i, "state.year.sex"]
     
     if(length(white.index) != 0 & length(black.index) != 0) {
-      ct.white <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexWhite"]) %>% 
+      ct.white <- subset(dat.clean, state.year.race.sex == paired.ids[i, "state.year.race.sex.white"]) %>% 
         ungroup() %>%
-        select(Age_factor, COD_factor, cod_prop_death1, cod_prop_death5, cod_prop_death9) %>%
+        select(age, COD, cod_prop_death1, cod_prop_death5, cod_prop_death9) %>%
         rename(prop.white1 = cod_prop_death1, prop.white5 = cod_prop_death5, prop.white9 = cod_prop_death9)
       
-      ct.black <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexBlack"]) %>% 
+      ct.black <- subset(dat.clean, state.year.race.sex == paired.ids[i, "state.year.race.sex.black"]) %>% 
         ungroup() %>%
-        select(Age_factor, COD_factor, cod_prop_death1, cod_prop_death5, cod_prop_death9) %>%
+        select(age, COD, cod_prop_death1, cod_prop_death5, cod_prop_death9) %>%
         rename(prop.black1 = cod_prop_death1, prop.black5 = cod_prop_death5, prop.black9 = cod_prop_death9)
       
-      ct.both <- merge(ct.white, ct.black, by = c("Age_factor", "COD_factor")) 
-      ct.both <- ct.both %>% arrange(COD_factor, Age_factor)
+      ct.both <- merge(ct.white, ct.black, by = c("age", "COD")) 
+      ct.both <- ct.both %>% arrange(COD, age)
       
       if(!any(is.na(ct.both$prop.black1)) & !any(is.na(ct.both$prop.white1))) { #ensures that there are no ages with 0 deaths - for these COD prop == 0 and can't compute
         
         list.cod.decomp.tables1[[i]]$decomp.table <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables1[[black.index]]$life.table),
                                                               life.table2 = as.data.frame(list.life.tables1[[white.index]]$life.table), 
                                                               decomp.table = as.data.frame(list.age.decomp.tables1[[i]]$decomp.table),
-                                                              cod.table = ct.both %>% select(Age_factor, COD_factor, prop.white1, prop.black1), 
-                                                              age.colname.cod.table = "Age_factor", 
-                                                              COD.colname.cod.table = "COD_factor", 
+                                                              cod.table = ct.both %>% select(age, COD, prop.white1, prop.black1), 
+                                                              age.colname.cod.table = "age", 
+                                                              COD.colname.cod.table = "COD", 
                                                               prop1.colname.cod.table = "prop.black1", 
                                                               prop2.colname.cod.table = "prop.white1")
         
         list.cod.decomp.tables5[[i]]$decomp.table <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]$life.table),
                                                               life.table2 = as.data.frame(list.life.tables5[[white.index]]$life.table), 
                                                               decomp.table = as.data.frame(list.age.decomp.tables5[[i]]$decomp.table),
-                                                              cod.table = ct.both %>% select(Age_factor, COD_factor, prop.white5, prop.black5), 
-                                                              age.colname.cod.table = "Age_factor", 
-                                                              COD.colname.cod.table = "COD_factor", 
+                                                              cod.table = ct.both %>% select(age, COD, prop.white5, prop.black5), 
+                                                              age.colname.cod.table = "age", 
+                                                              COD.colname.cod.table = "COD", 
                                                               prop1.colname.cod.table = "prop.black5", 
                                                               prop2.colname.cod.table = "prop.white5")
         
         list.cod.decomp.tables9[[i]]$decomp.table <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]$life.table),
                                                               life.table2 = as.data.frame(list.life.tables5[[white.index]]$life.table), 
                                                               decomp.table = as.data.frame(list.age.decomp.tables5[[i]]$decomp.table),
-                                                              cod.table = ct.both %>% select(Age_factor, COD_factor, prop.white9, prop.black9), 
+                                                              cod.table = ct.both %>% select(age, COD, prop.white9, prop.black9), 
                                                               age.colname.cod.table = "Age_factor", 
                                                               COD.colname.cod.table = "COD_factor", 
                                                               prop1.colname.cod.table = "prop.black9", 
@@ -301,15 +300,15 @@ for(i in 1:dim(paired.ids)[1]) {
 ```
 
 ```{r pretty_cod}
-ggplotly(ggplot(list.cod.decomp.tables[[1]], aes(y = Ages, x = start)) + 
-           geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-           xlab("Contribution to life expectancy gap") +
-           ylab("Age group\n") + theme_minimal() +
-           geom_vline(xintercept = 0))
+ggplot(list.cod.decomp.tables[[1]], aes(y = Ages, x = start)) + 
+  geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+  xlab("Contribution to life expectancy gap") +
+  ylab("Age group\n") + theme_minimal() +
+  geom_vline(xintercept = 0)
 
-ggplotly(ggplot(list.cod.decomp.tables9[[1]], aes(y = Ages, x = start)) + 
-           geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
-           xlab("Contribution to life expectancy gap") +
-           ylab("Age group\n") + theme_minimal() +
-           geom_vline(xintercept = 0))
+ggplot(list.cod.decomp.tables9[[1]], aes(y = Ages, x = start)) + 
+  geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
+  xlab("Contribution to life expectancy gap") +
+  ylab("Age group\n") + theme_minimal() +
+  geom_vline(xintercept = 0)
 ```
