@@ -24,12 +24,12 @@ table(dtotal$V3) #sex
 table(dtotal$V4) #race
 table(dtotal$V5) #20 years 
 
-names(dtotal) <- c("State", "Age", "Sex", "Race", "Year", "Crude_Rate", "Count", "Population") #see the data dictionary - path is above.
+names(dtotal) <- c("state.n", "age.n", "sex.n", "race.n", "year.0", "crude.rate", "deaths", "population") #see the data dictionary - path is above.
 ```
 
 ```{r recode_variables}
 dtotal <- dtotal %>%
-  mutate(State2 = factor(State, levels = c(0:50), labels = c("Alabama", "Alaska", "Arizona", "Arkansas","California",
+  mutate(state = factor(state.n, levels = c(0:50), labels = c("Alabama", "Alaska", "Arizona", "Arkansas","California",
                                                              "Colorado", "Connecticut", "Delaware", "Washington DC",
                                                              "Florida", "Georgia", "Hawaii","Idaho", "Illinois", 
                                                              "Indiana","Iowa", "Kansas", "Kentucky", "Louisiana", 
@@ -41,65 +41,65 @@ dtotal <- dtotal %>%
                                                              "Rhode Island", "South Carolina", "South Dakota", 
                                                              "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
                                                              "Washington", "West Virginia", "Wisconsin", "Wyoming")), 
-         Age2 = factor(Age, levels = c(0:19), labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+         age = factor(age.n, levels = c(0:19), labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
                                                          "15-19 years", "20-24 years", "25-29 years", "30-34 years",
                                                          "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
                                                          "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
                                                          "75-79 years", "80-84 years","85+ years", "Unknown"), ordered = T),
-         Age3 = 0*(Age2 == "<1 year") + 1*(Age2 == "1-4 years") + 5*(Age2 == "5-9 years") +
-                10*(Age2 == "10-14 years") + 15*(Age2 == "15-19 years") + 20*(Age2 == "20-24 years") + 
-                25*(Age2 == "25-29 years") + 30*(Age2 == "30-34 years") + 35*(Age2 == "35-39 years") +
-                40*(Age2 == "40-44 years") + 45*(Age2 == "45-49 years") + 50*(Age2 == "50-54 years") + 
-                55*(Age2 == "55-59 years") + 60*(Age2 == "60-64 years") + 65*(Age2 == "65-69 years") +   
-                70*(Age2 == "70-74 years") + 75*(Age2 == "75-79 years") + 80*(Age2 == "80-84 years") + 
-                85*(Age2 == "85+ years"),
-         nx = 1*(Age2 == "<1 year") + 4*(Age2 == "1-4 years") + 5*(Age2 != "<1 year" & Age2 != "1-4 years"),
-         Sex2 = factor(Sex, levels = c(0, 1), labels = c("Male", "Female")),
-         Race2 = factor(Race, levels = c(0, 1), labels = c("White", "Black")),
-         Year2 = factor(Year, levels = c(0:19), labels = as.character(1990:2009)),
-         Year3 = as.numeric(as.character(Year2)),
-         RaceSex = interaction(Race2, Sex2, sep = " "),
-         StateYearSex = interaction(State2, Year2, Sex2),
-         StateYearRaceSex = interaction(State2, Year2, Race2, Sex2),
-         Crude_Rate = Count/Population, 
+         age_minbin = 0*(age == "<1 year") + 1*(age == "1-4 years") + 5*(age == "5-9 years") +
+                10*(age == "10-14 years") + 15*(age == "15-19 years") + 20*(age == "20-24 years") + 
+                25*(age == "25-29 years") + 30*(age == "30-34 years") + 35*(age == "35-39 years") +
+                40*(age == "40-44 years") + 45*(age == "45-49 years") + 50*(age == "50-54 years") + 
+                55*(age == "55-59 years") + 60*(age == "60-64 years") + 65*(age == "65-69 years") +   
+                70*(age == "70-74 years") + 75*(age == "75-79 years") + 80*(age == "80-84 years") + 
+                85*(age == "85+ years"),
+         age_bin_size = 1*(age == "<1 year") + 4*(age == "1-4 years") + 5*(age != "<1 year" & age != "1-4 years"),
+         sex = factor(sex.n, levels = c(0, 1), labels = c("Male", "Female")),
+         race = factor(race.n, levels = c(0, 1), labels = c("White", "Black")),
+         year = factor(year.0, levels = c(0:19), labels = as.character(1990:2009)),
+         year.n = as.numeric(as.character(year)),
+         race.sex = interaction(race, sex, sep = " "),
+         state.year.sex = interaction(state, year, sex),
+         state.year.race.sex = interaction(state, year, race, sex),
+         Crude_Rate = deaths/population, 
          COD = "Total")
 ```
 
 ```{r unknown_age_group}
 #there is an unknown age group for each combo of state-year-race-sex-age:
-table(dtotal$Age2) 
+table(dtotal$age) 
 
 #no rows with the unknown age group (guess: was removed when pulling the data from CDC wonder)
-table(dtotal$Age, dtotal$Count==0)
+table(dtotal$age, dtotal$d==0)
 
 #remove these data from the data we analyze:
-dtotal <- dtotal[dtotal$Age2 != "Unknown", ]
+dtotal <- dtotal[dtotal$age != "Unknown", ]
 ```
 
 ```{r exclude_states}
 excluded.states <- c("Idaho", "Montana", "North Dakota", "South Dakota", "Vermont")
-included.states <- setdiff(levels(dtotal$State2), excluded.states)
-dtotal <- dtotal %>% filter(State2 %in% included.states)
+included.states <- setdiff(levels(dtotal$state), excluded.states)
+dtotal <- dtotal %>% filter(state %in% included.states)
 
 save(dtotal, file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/SH_HA_data.Rdata")
 ```
 
 ```{r}
-prop.table(table(is.na(dtotal$Count)))
+prop.table(table(is.na(dtotal$deaths)))
 
-prop.table(table(is.na(dtotal$Count[dtotal$State2 == "New York"])))
-prop.table(table(is.na(dtotal$Count[dtotal$State2 == "Georgia"])))
-prop.table(table(is.na(dtotal$Count[dtotal$State2 == "Florida"])))
-table(is.na(dtotal$Count[dtotal$State2 == "Alabama" & dtotal$Year3 == 1990]))
+prop.table(table(is.na(dtotal$deaths[dtotal$state == "New York"])))
+prop.table(table(is.na(dtotal$deaths[dtotal$state == "Georgia"])))
+prop.table(table(is.na(dtotal$deaths[dtotal$state == "Florida"])))
+table(is.na(dtotal$deaths[dtotal$state == "Alabama" & dtotal$year.n == 1990]))
 
 test.le.fx <- function(data, state, sex, race, year) {
-  test.data <- data[data["State2"] == state & 
-                      data["Sex2"] == sex & 
-                      data["Race2"] == race & 
-                      data["Year3"] == year, ]
+  test.data <- data[data["state"] == state & 
+                      data["sex"] == sex & 
+                      data["race"] == race & 
+                      data["year.n"] == year, ]
   
-  lt <- life.table(data = test.data, num.ages.in.group = "nx",
-                   death.counts = "Count", population.counts = "Population")
+  lt <- life.table(data = test.data, num.ages.in.group = "age_bin_size",
+                   death.counts = "deaths", population.counts = "population")
   return(round(lt$e_x[1], 1))
 }
 
