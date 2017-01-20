@@ -18,8 +18,8 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 ```
 
 ```{r load_data}
-dat.aggregated <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.Rdata", header = T)
-dat.clean<- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.Rdata", header = T)
+dat.aggregated <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.csv", header = T)
+dat.clean<- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.csv", header = T)
 ```
 
 In those strata that do not have any age-specific population counts of 0, create a life table and store it in a list.
@@ -123,8 +123,6 @@ Decompose the gap by age. That is, for each year-state-sex combination, compare 
 #paired.ids will contain the index names that are sent to the age decomposition function in the next code chunk.
 #it pairs ids between strata for blacks and whites
 
-dat.clean$StateYearSex <- interaction(dat.clean$State_factor, dat.clean$Year_factor, dat.clean$Sex_factor)
-
 #first, create list of stratum.ids for each race-sex combination
 for (rs in unique(levels(dat.clean$RaceSex))) {
   assign(paste0(gsub(" ", "", rs), ".stratum.ids"), 
@@ -188,6 +186,18 @@ system.time(
 )
 
 ```
+
+```{r save_objects}
+write_csv(dat.aggregated, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated2.csv", col_names = T)
+write_csv(BlackWhite, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/BlackWhite.csv", col_names = T)
+
+save(paired.ids, non.zero.stratums,
+     list.age.decomp.tables1, list.age.decomp.tables5, list.age.decomp.tables9,
+     list.life.tables1, list.life.tables5, list.life.tables9,  
+     file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/calculated_data.Rdata")
+```
+
+#stopped here!
 
 ```{r calculate_cod_decomp}
 #stopped here - need to figure this out
@@ -266,7 +276,7 @@ for(i in 1:dim(paired.ids)[1]) {
     if(list.cod.decomp.tables[[i]][1] != "Couldn't compare life tables" & 
        list.cod.decomp.tables[[i]][1] != "Encountered age group with no deaths") { 
        
-       list.cod.decomp.tables[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables[[i]],
+       list.cod.decomp.tables[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables1[[i]],
                                                             age.groups = "Ages", 
                                                             cause.of.death = "Cause.of.death", 
                                                             sign.var = "sign", decomp.var = "C_xi", 
