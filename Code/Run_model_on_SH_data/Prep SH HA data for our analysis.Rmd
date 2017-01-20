@@ -93,9 +93,13 @@ prop.table(table(is.na(dtotal$Count[dtotal$State2 == "Florida"])))
 table(is.na(dtotal$Count[dtotal$State2 == "Alabama" & dtotal$Year3 == 1990]))
 
 test.le.fx <- function(data, state, sex, race, year) {
-  test.data <- data[data["State2"] == state & data["Sex2"] == sex & data["Race2"] == race & data["Year3"] == year, ]
+  test.data <- data[data["State2"] == state & 
+                      data["Sex2"] == sex & 
+                      data["Race2"] == race & 
+                      data["Year3"] == year, ]
+  
   lt <- life.table(data = test.data, num.ages.in.group = "nx",
-             death.counts = "Count", population.counts = "Population")
+                   death.counts = "Count", population.counts = "Population")
   return(round(lt$e_x[1], 1))
 }
 
@@ -108,9 +112,9 @@ test.le.fx(dtotal, "Georgia", "Male", "White", 2009)
 test.le.fx(dtotal, "New York", "Male", "White", 1990)
 test.le.fx(dtotal, "New York", "Male", "White", 2009)
 
-test.le.fx(dtotal, "Alabama", "Male", "White", 1990)
 test.le.fx(dtotal, "Alabama", "Male", "White", 2009)
 
+test.le.fx(dtotal, "Alabama", "Male", "White", 1990)
 test.le.fx(dtotal, "Alabama", "Male", "Black", 1990)
 #test.le.fx(dtotal, "Alabama", "Male", "Black", 2009)
 
