@@ -18,8 +18,8 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 ```
 
 ```{r load_data}
-dat.aggregated <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.csv", header = T)
-dat.clean<- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.csv", header = T)
+dat.aggregated <- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.Rdata", header = T)
+dat.clean<- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.Rdata", header = T)
 ```
 
 In those strata that do not have any age-specific population counts of 0, create a life table and store it in a list.
@@ -197,8 +197,6 @@ save(paired.ids, non.zero.stratums,
      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/calculated_data.Rdata")
 ```
 
-#stopped here!
-
 ```{r calculate_cod_decomp}
 #stopped here - need to figure this out
 #if the count of deaths == 0 for all causes of death within an age band then the COD proportion is NA
@@ -213,6 +211,10 @@ system.time(
   for(i in 1:dim(paired.ids)[1]) {
     white.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexWhite"])
     black.index <- which(non.zero.stratums == paired.ids[i, "StateYearRaceSexBlack"])
+ 
+    list.cod.decomp.tables1[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
+    list.cod.decomp.tables5[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
+    list.cod.decomp.tables9[[i]]$StateYearSex <- paired.ids[i, "StateYearSex"]
     
     if(length(white.index) != 0 & length(black.index) != 0) {
       ct.white <- subset(dat.clean, StateYearRaceSex == paired.ids[i, "StateYearRaceSexWhite"]) %>% 
@@ -228,41 +230,41 @@ system.time(
       ct.both <- merge(ct.white, ct.black, by = c("Age_factor", "COD_factor")) 
       ct.both <- ct.both %>% arrange(COD_factor, Age_factor)
       
-      if(any(is.na(ct.both$prop.black1)) == F & any(is.na(ct.both$prop.white1)) == F) { #ensures that there are no ages with 0 deaths - for these COD prop == 0 and can't compute
+      if(!any(is.na(ct.both$prop.black1)) & !any(is.na(ct.both$prop.white1))) { #ensures that there are no ages with 0 deaths - for these COD prop == 0 and can't compute
         
-        list.cod.decomp.tables1[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables1[[black.index]]),
-                                                              life.table2 = as.data.frame(list.life.tables1[[white.index]]), 
-                                                              decomp.table = as.data.frame(list.age.decomp.tables1[[i]]),
+        list.cod.decomp.tables1[[i]]$decomp.table <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables1[[black.index]]$life.table),
+                                                              life.table2 = as.data.frame(list.life.tables1[[white.index]]$life.table), 
+                                                              decomp.table = as.data.frame(list.age.decomp.tables1[[i]]$decomp.table),
                                                               cod.table = ct.both %>% select(Age_factor, COD_factor, prop.white1, prop.black1), 
                                                               age.colname.cod.table = "Age_factor", 
                                                               COD.colname.cod.table = "COD_factor", 
                                                               prop1.colname.cod.table = "prop.black1", 
                                                               prop2.colname.cod.table = "prop.white1")
         
-        list.cod.decomp.tables5[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]),
-                                                              life.table2 = as.data.frame(list.life.tables5[[white.index]]), 
-                                                              decomp.table = as.data.frame(list.age.decomp.tables5[[i]]),
+        list.cod.decomp.tables5[[i]]$decomp.table <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]$life.table),
+                                                              life.table2 = as.data.frame(list.life.tables5[[white.index]]$life.table), 
+                                                              decomp.table = as.data.frame(list.age.decomp.tables5[[i]]$decomp.table),
                                                               cod.table = ct.both %>% select(Age_factor, COD_factor, prop.white5, prop.black5), 
                                                               age.colname.cod.table = "Age_factor", 
                                                               COD.colname.cod.table = "COD_factor", 
                                                               prop1.colname.cod.table = "prop.black5", 
                                                               prop2.colname.cod.table = "prop.white5")
         
-        list.cod.decomp.tables9[[i]] <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]),
-                                                              life.table2 = as.data.frame(list.life.tables5[[white.index]]), 
-                                                              decomp.table = as.data.frame(list.age.decomp.tables5[[i]]),
+        list.cod.decomp.tables9[[i]]$decomp.table <- cause_of_death_decomp(life.table1 = as.data.frame(list.life.tables5[[black.index]]$life.table),
+                                                              life.table2 = as.data.frame(list.life.tables5[[white.index]]$life.table), 
+                                                              decomp.table = as.data.frame(list.age.decomp.tables5[[i]]$decomp.table),
                                                               cod.table = ct.both %>% select(Age_factor, COD_factor, prop.white9, prop.black9), 
                                                               age.colname.cod.table = "Age_factor", 
                                                               COD.colname.cod.table = "COD_factor", 
                                                               prop1.colname.cod.table = "prop.black9", 
                                                               prop2.colname.cod.table = "prop.white9")
         
-      } else { list.cod.decomp.tables[[i]] <- list.cod.decomp.tables5[[i]] <- list.cod.decomp.tables9[[i]] <- "Encountered age group with no deaths"
+      } else { list.cod.decomp.tables1[[i]]$decomp.table <- list.cod.decomp.tables5[[i]]$decomp.table <- list.cod.decomp.tables9[[i]]$decomp.table <- "Encountered age group with no deaths"
       
       }
     } else {
       
-      list.cod.decomp.tables[[i]] <- list.cod.decomp.tables5[[i]] <- list.cod.decomp.tables9[[i]] <- "Couldn't compare life tables"
+      list.cod.decomp.tables1[[i]]$decomp.table <- list.cod.decomp.tables5[[i]]$decomp.table <- list.cod.decomp.tables9[[i]]$decomp.table <- "Couldn't compare life tables"
     } 
     
     print(i)
