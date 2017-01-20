@@ -4,7 +4,7 @@
 
 #change names to something like col.name.death.counts or death.counts.in.data
 
-life.table <- function(data, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA){
+life.table <- function(data, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA, return = "appended"){
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
   
@@ -39,7 +39,15 @@ life.table <- function(data, num.ages.in.group, death.counts, population.counts,
   data["T_x"] <- sum(data["L_x"]) - data["l.cumsum"]
   data["e_x"] <- data["T_x"]/data["l_x"]
   
-  return(data)
+  if(return == "appended") {
+    return(data)
+  } else if(return == "life expectancy") {
+    return(data[["e_x"]])
+  } else if(return == "life table") {
+    return(data[, c("R_x", "a_x", "q_x", "p_x", "l_x", "d_x", "L_x", "cumsum", "l.cumsum", "T_x", "e_x")])
+  }
+  
+  
   
 } 
 
