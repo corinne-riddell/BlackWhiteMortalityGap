@@ -19,13 +19,13 @@ jagsify_data = function(ds_sub) { #subset by COD, put in lists
   
   for(i in 1:n.cods) {
     
-    ds2 = ds_sub2[ds_sub2$COD == cods[i], ]
+    ds2 = ds_sub[ds_sub$COD == cods[i], ]
     ds2 = ds2[order(ds2$censored), ]  # check on this 
     
     ds_jagsified[[i]] = list(deaths = ds2$deaths, 
                    lnpop = log(ds2$population), 
                    age.bin = ds2$age.n, 
-                   year = ds2$year, 
+                   year = ds2$year.n, 
                    upper_bound = ds2$upper_bound, 
                    binned = is.na(ds2$deaths), 
                    not.binned = !is.na(ds2$deaths), 
@@ -38,11 +38,11 @@ jagsify_data = function(ds_sub) { #subset by COD, put in lists
                    binned.id = ds2$censored) 
     
     }
-  return(ds_jagsified)
+  return(list(jagsified=ds_jagsified, sub = ds_sub))
 }
 
-
-run_smoothing_model = function(ds, ds_jagsified) {
+# Takes the jagsify_data output as a single parameter and runs the smoothing models
+run_smoothing_model = function(data) {
 
   jags_smoothing_model = function(ds_jagsified_bycod) { 
     
@@ -83,157 +83,51 @@ run_smoothing_model = function(ds, ds_jagsified) {
     return(jags_model)
   } 
   
-  cods = unique(ds$COD)
+  cods = unique(data$sub$COD)
   n.cods = length(cods)
   jags_model = list()  
   for(i in 1:n.cods) {
-    jags_model[[i]] = jags_smoothing_model(ds_jagsified[[i]])
+    jags_model[[i]] = jags_smoothing_model(data$jagsified[[i]])
   } 
   return(jags_model)
 }
 
-
-
-#testing 
-ds_sub = subset_data(ds, state, sex, race)
-ds_jagsified = jagsify_data(ds_sub)
-jags_model = run_smoothing_model(ds, ds_jagsified)
-
-
-
-
-
-
-clean_smoothing_results = function(ds_sub, jags_model) {
-  
-  ds_sub$smoothed_rate = rep(NA, length(ds_sub[ ,1]))
-  
-  cods = unique(ds_jagsified$COD)
+# Takes the jagsify_data output, the run_smoothing_model output, and the desired year as paramters
+# Outputs the original data, subset by sex, race, state, and year (not age or COD), with smoothed rates and smoothed/imputed deaths 
+clean_smoothing_results = function(data, jags_model, year, n.posterior.samples) {
+  ds_sub = data$sub
+  cods = unique(ds_sub$COD)
   n.cods = length(cods)
-  
   n.age = length(unique(ds_sub$age))
+  year_id = data$sub$year.n[data$sub$year==year][1]
   
-  for(k in 1:n.posterior.samples) { # n.posterior.samples = 1
+  results_list = list()
+  
+  ds_sub_year = ds_sub[ds_sub$year.n==year_id, ]
+  
+  for(k in 1:n.posterior.samples) { 
     
-    ds_sub$smoothed_rate = rep(NA, length(ds_sub[ ,1]))
+    ds_sub_year$smoothed_rate = rep(NA, length(ds_sub_year[ ,1]))
     
-      for(cod in 1:n.cods) {
-        jags_modeli = jags_model[[cod]] 
+      for(cod_i in 1:n.cods) {
+        jags_modeli = jags_model[[cod_i]] 
         p_mcmc = as.mcmc(jags_modeli) 
         p = data.frame(p_mcmc[[1]])  
         
-        
-        for(age_bini in 1:n_agebins) {
-          name_rate_w = paste0('lnrate_w.',age_bini, ".", Year, ".") 
-          name_rate_b = paste0('lnrate_b.',age_bini, ".", Year, ".") 
-          temp_df$smooth_rate[temp_df$age_bin==age_bini 
-                              & temp_df$race=='White' 
-                              & temp_df$cod==cod_list[codi]] = exp(p[name_rate_w])[[1]][k] 
+        for(age_i in 1:n.age) {
+          name_rate = paste0('lnrate.', age_i, ".", year_id, ".") 
           
-          temp_df$smooth_rate[temp_df$age_bin==age_bini 
-                              & temp_df$race=='Black' 
-                              & temp_df$cod==cod_list[codi]] = exp(p[name_rate_b])[[1]][k] 
+          ds_sub_year$smoothed_rate[ds_sub_year$age.n==age_i & 
+                                      ds_sub_year$COD==cods[cod_i]] = exp(p[name_rate])[[1]][k] 
         }
       }
-      temp_df$smoothed_deaths = temp_df$smooth_rate * temp_df$population
-      temp_df_list[[k]] = temp_df
+    ds_sub_year$smoothed_deaths = ds_sub_year$smoothed_rate * ds_sub_year$population
+    results_list[[k]] = ds_sub_year
     }
+  return(results_list)
   }
 
 
 
-
-# old functions (for temporary reference) 
-
-run_smoothing_models_mulitple_states = function(df, states, cod_list, 
-                                                colname_state, colname_pop, colname_deaths, colname_cod, 
-                                                colname_year, colname_sex, colname_agebins, colname_race ) {
-  nstates = length(states) 
-  results_male = results_female = list()
-  ds =  create_dataset(df,  colname_state, colname_pop, colname_deaths, colname_cod, colname_year, colname_sex, colname_agebins, colname_race)
-  for(i in 1:nstates) {
-    print(states[i])
-    results_male = run_smoothing_models(ds, state=states[i], sex='Male', cod_list=cod_list)
-    results_female = run_smoothing_models(ds, state=states[i], sex='Female', cod_list=cod_list)
-  }
-  name1 = paste0('results_male_', states[i], '.RData') 
-  name2 = paste0('results_female_', states[i], '.RData') 
-  save(results_male, file=name1) 
-  save(results_female, file=name2) 
-}
-
-
-
-
-extract_mcmc_dist = function(year, state, sex, n_post_samps, base_df, cod_list) {
-  sex = ifelse(sex=='Female', 'female', sex)
-  sex = ifelse(sex=='Male', 'male', sex)
-  Sex = ifelse(sex=='female', 'Female', sex) 
-  Sex = ifelse(sex=='male', 'Male', sex) 
-  Year = year - 1968
-  name = paste0('results_',sex, '_', state, '.RData') 
-  load(name)
-  temp_df_list = list()
-  temp_df = base_df[base_df$sex==Sex & base_df$state == state & base_df$year==Year, ]
-  n_agebins = length(unique(temp_df$age_bin))
-  
-  for(k in 1:n_post_samps) {
-    
-    temp_df$smooth_rate = rep(NA, length(temp_df$X))
-    
-    
-    if(Sex == 'Female') {
-    
-    for(codi in 1:length(cod_list)) {
-      jags_modeli = results_female$jags_bw[[codi]]
-      p_mcmc = as.mcmc(jags_modeli) 
-      p = data.frame(p_mcmc[[1]])  
-      
-      
-      for(age_bini in 1:n_agebins) {
-        name_rate_w = paste0('lnrate_w.',age_bini, ".", Year, ".") 
-        name_rate_b = paste0('lnrate_b.',age_bini, ".", Year, ".") 
-        temp_df$smooth_rate[temp_df$age_bin==age_bini 
-                            & temp_df$race=='White' 
-                            & temp_df$cod==cod_list[codi]] = exp(p[name_rate_w])[[1]][k] 
-        
-        temp_df$smooth_rate[temp_df$age_bin==age_bini 
-                            & temp_df$race=='Black' 
-                            & temp_df$cod==cod_list[codi]] = exp(p[name_rate_b])[[1]][k] 
-      }
-    }
-    temp_df$smoothed_deaths = temp_df$smooth_rate * temp_df$population
-    temp_df_list[[k]] = temp_df
-    }
-    
-    if(Sex == 'Male') {
-      
-      for(codi in 1:length(cod_list)) {
-        jags_modeli = results_male$jags_bw[[codi]]
-        p_mcmc = as.mcmc(jags_modeli) 
-        p = data.frame(p_mcmc[[1]])  
-        
-        
-        for(age_bini in 1:n_agebins) {
-          name_rate_w = paste0('lnrate_w.',age_bini, ".", Year, ".") 
-          name_rate_b = paste0('lnrate_b.',age_bini, ".", Year, ".") 
-          temp_df$smooth_rate[temp_df$age_bin==age_bini 
-                              & temp_df$race=='White' 
-                              & temp_df$cod==cod_list[codi]] = exp(p[name_rate_w])[[1]][k] 
-          
-          temp_df$smooth_rate[temp_df$age_bin==age_bini 
-                              & temp_df$race=='Black' 
-                              & temp_df$cod==cod_list[codi]] = exp(p[name_rate_b])[[1]][k] 
-        }
-      }
-      temp_df$smoothed_deaths = temp_df$smooth_rate * temp_df$population
-      temp_df_list[[k]] = temp_df
-    }
-    
-  }
-  return(temp_df_list) 
-}
-
-
-
+ 
 
