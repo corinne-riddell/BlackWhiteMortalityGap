@@ -1,0 +1,27 @@
+---
+title: "extract table from SH HA paper"
+author: "Corinne Riddell"
+date: "January 22, 2017"
+output: html_document
+---
+
+```{r}
+
+library(pdftools)
+
+txt <- pdf_text("/Users/corinneriddell/Dropbox/BlackWhiteGap/papers/Harper-Health Affairs-2014.pdf")
+
+#males
+cat(txt[13])
+cat(txt[14])
+
+#females
+cat(txt[15])
+cat(txt[16])
+
+#i then copied and pasted the above into excel and saved as SH_HA_supp_app_data.csv
+#to bring back here...
+
+SH.dat <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/SH_HA_supp_app_data.csv", header = T)
+```
+
