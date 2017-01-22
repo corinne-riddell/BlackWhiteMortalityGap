@@ -18,8 +18,8 @@ Notes on Figure 1 (below):
 ```{r bystate, fig.width = 12, fig.height = 37, echo=F}
 bystate <- 
   dat %>%
-  group_by(State2, Race2, Age2) %>%
-  summarise(prop.missing = mean(is.na(Count)))
+  group_by(state, race, age) %>%
+  summarise(prop.missing = mean(is.na(deaths)))
 
 #recode a new count variable that "counts the missing data" so that these rows are used when calculating the % of data == 0.
 dat$Count2 <- dat$Count

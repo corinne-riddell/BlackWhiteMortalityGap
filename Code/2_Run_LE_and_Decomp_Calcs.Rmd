@@ -73,7 +73,7 @@ names(les) = c("life.expectancy.birth.1", "life.expectancy.birth.5", "life.expec
 
 dat.aggregated <- merge(dat.aggregated, les, by = "state.year.race.sex", all.x =T)
 
-rm(les, le1, le5, le9)
+rm(les, le1, le5, le9, sid)
 ```
 
 ```{r densityplot_life_expectancy}
@@ -186,16 +186,6 @@ system.time(
 
 ```
 
-```{r save_objects}
-write_csv(dat.aggregated, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated2.csv", col_names = T)
-write_csv(BlackWhite, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/BlackWhite.csv", col_names = T)
-
-save(paired.ids, non.zero.stratums,
-     list.age.decomp.tables1, list.age.decomp.tables5, list.age.decomp.tables9,
-     list.life.tables1, list.life.tables5, list.life.tables9,  
-     file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/calculated_data.Rdata")
-```
-
 ```{r calculate_cod_decomp}
 #stopped here - need to figure this out
 #if the count of deaths == 0 for all causes of death within an age band then the COD proportion is NA
@@ -253,8 +243,8 @@ system.time(
                                                               life.table2 = as.data.frame(list.life.tables5[[white.index]]$life.table), 
                                                               decomp.table = as.data.frame(list.age.decomp.tables5[[i]]$decomp.table),
                                                               cod.table = ct.both %>% select(age, COD, prop.white9, prop.black9), 
-                                                              age.colname.cod.table = "Age_factor", 
-                                                              COD.colname.cod.table = "COD_factor", 
+                                                              age.colname.cod.table = "age", 
+                                                              COD.colname.cod.table = "COD", 
                                                               prop1.colname.cod.table = "prop.black9", 
                                                               prop2.colname.cod.table = "prop.white9")
         
@@ -274,22 +264,22 @@ system.time(
 ```{r  update_decomp_for_plotting}
 #update the decomposition table for plotting purposes
 for(i in 1:dim(paired.ids)[1]) {
-    if(list.cod.decomp.tables[[i]][1] != "Couldn't compare life tables" & 
-       list.cod.decomp.tables[[i]][1] != "Encountered age group with no deaths") { 
+    if(list.cod.decomp.tables1[[i]]$decomp.table[1] != "Couldn't compare life tables" & 
+       list.cod.decomp.tables1[[i]]$decomp.table[1] != "Encountered age group with no deaths") { 
        
-       list.cod.decomp.tables[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables1[[i]],
+       list.cod.decomp.tables1[[i]]$decomp.table <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables1[[i]]$decomp.table,
                                                             age.groups = "Ages", 
                                                             cause.of.death = "Cause.of.death", 
                                                             sign.var = "sign", decomp.var = "C_xi", 
                                                             decomp.var.prop = "C_xi_proportion")  
        
-       list.cod.decomp.tables5[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables5[[i]],
+       list.cod.decomp.tables5[[i]]$decomp.table <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables5[[i]]$decomp.table,
                                                             age.groups = "Ages", 
                                                             cause.of.death = "Cause.of.death", 
                                                             sign.var = "sign", decomp.var = "C_xi", 
                                                             decomp.var.prop = "C_xi_proportion") 
        
-       list.cod.decomp.tables9[[i]] <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables9[[i]],
+       list.cod.decomp.tables9[[i]]$decomp.table <- make_dataset_cod_plot(cod.decomp.table = list.cod.decomp.tables9[[i]]$decomp.table,
                                                             age.groups = "Ages", 
                                                             cause.of.death = "Cause.of.death", 
                                                             sign.var = "sign", decomp.var = "C_xi", 
@@ -300,15 +290,27 @@ for(i in 1:dim(paired.ids)[1]) {
 ```
 
 ```{r pretty_cod}
-ggplot(list.cod.decomp.tables[[1]], aes(y = Ages, x = start)) + 
+ggplot(list.cod.decomp.tables1[[1]]$decomp.table, aes(y = Ages, x = start)) + 
   geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
   xlab("Contribution to life expectancy gap") +
   ylab("Age group\n") + theme_minimal() +
   geom_vline(xintercept = 0)
 
-ggplot(list.cod.decomp.tables9[[1]], aes(y = Ages, x = start)) + 
+ggplot(list.cod.decomp.tables9[[1]]$decomp.table, aes(y = Ages, x = start)) + 
   geom_segment(aes(xend = finish, col = Cause.of.death, yend = Ages), lwd = 4) +
   xlab("Contribution to life expectancy gap") +
   ylab("Age group\n") + theme_minimal() +
   geom_vline(xintercept = 0)
+```
+
+
+```{r save_objects}
+write_csv(dat.aggregated, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated2.csv", col_names = T)
+write_csv(BlackWhite, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/BlackWhite.csv", col_names = T)
+
+save(paired.ids, non.zero.stratums,
+     list.life.tables1, list.life.tables5, list.life.tables9,  
+     list.age.decomp.tables1, list.age.decomp.tables5, list.age.decomp.tables9,
+     list.cod.decomp.tables1, list.cod.decomp.tables5, list.cod.decomp.tables9,
+     file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/calculated_data.Rdata")
 ```
