@@ -11,7 +11,7 @@
 # run_smoothing_models_mulitple_states
 # extract_mcmc_dist
 
-subset_data_jags = function(ds, race, sex, cod, state) {
+subset_data_jags = function(ds, race, sex, cod, state) { 
   
   ds2 = ds[order(ds$censored), ] 
   ds2 = ds2[ds2$state==state, ]
