@@ -4,17 +4,11 @@
 
 #change names to something like col.name.death.counts or death.counts.in.data
 
-life.table <- function(data, num.ages.in.group, death.counts, population.counts, ave.prop.lived = NA, return = "appended"){
+life.table <- function(data, num.ages.in.group, death.counts, population.counts, ave.prop.le1.lived = 0.09, return = "appended"){
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
-  
-  if(is.na(ave.prop.lived) == T) {
-    data["a_x"] <- 0.5 #average proportion of interval lived
-    data[1, "a_x"] <- 0.09
-  } else{
-    data["a_x"] <- data[ave.prop.lived]
-  }
-  
+  data["a_x"] <- 0.5 #average proportion of interval lived
+  data[1, "a_x"] <- ave.prop.le1.lived
   data["q_x"] <- data[num.ages.in.group]*data["R_x"]/(1 + (1 - data["a_x"])*data[num.ages.in.group]*data["R_x"]) 
   #probability of dying
   

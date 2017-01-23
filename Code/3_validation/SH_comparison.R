@@ -71,10 +71,47 @@ ggplot(subset(compare.le, state!= "Wyoming"), aes(x = le.black.x, y =  le.black.
 
 ggplot(subset(compare.le, state!= "Wyoming"), aes(x = le.gap.x, y =  le.gap.y)) + 
   geom_point() + 
-  geom_abline(intercept = 0, slope = 1)
+  geom_abline(intercept = 0, slope = 1) 
 
-#to do:
-#1. compare precision of the models
-#2. change my LE calc to use 0.1 vs 0.09 for <1 to see if that acocunts for the diff between the calcs
+#eek - i can't get the regexpr() to work... this is me pulling out the ucl and lcl by hand. 
+#bad programmer.
+compare.le$le.gap.lcl.y <- c(6.5, -3.8, 4.4, 6.8, 6.4, 4.1, 7.2, 6.3, 8.6, 7.0, 
+                             -18.9, 10.4, 6.3, 5.3, 6.2, 4.1, 7.2, -0.7, 7.8,
+                             4.4, 8.9, 7.0, 5.9, 8.5, 5.6, 4.0, -5.2, 8.7, 1.0, 
+                             7.7, 7.5, 6.4, 3.8, 5.0, 9.0, 4.9, 7.2, 6.6, 6.6, 
+                             -1.1, 7.0, 13.3, 4.7, 4.4, 7.0, -1.0)
+
+compare.le$le.gap.ucl.y <- c(7.3, 2.5, 6.2, 7.9, 7.0, 5.8, 8.7, 8.3, 9.3, 7.7, 
+                             -2.0, 11.1, 7.3, 7.6, 7.8, 5.2, 8.0, 5.9, 8.6, 5.8, 
+                             9.6, 9.1, 6.7, 9.5, 7.9, 6.1, 5.3, 9.6, 4.6, 8.2,
+                             8.2, 7.1, 4.9, 7.9, 9.7, 8.0, 8.0, 7.4, 7.2, 5.9, 
+                             7.7, 15.4, 6.5, 6.5, 8.4, 9.0)
+
+ggplot(subset(compare.le, state!= "Wyoming"), aes(x = le.gap.lcl, y =  le.gap.lcl.y)) + 
+  geom_point(col = "blue") + 
+  geom_abline(intercept = 0, slope = 1) 
+
+ggplot(subset(compare.le, state!= "Wyoming"), aes(x = le.gap.ucl, y =  le.gap.ucl.y)) + 
+  geom_point(col = "red") + 
+  geom_abline(intercept = 0, slope = 1) 
+
+library(dplyr)
+
+compare.le <- compare.le %>% mutate(diff.ucl = round(le.gap.ucl, 1) - le.gap.ucl.y,
+                                    diff.lcl = round(le.gap.lcl, 1) - le.gap.lcl.y,
+                                    diff.white.le = round(le.white.x, 1) - le.white.y,
+                                    diff.black.le = round(le.black.x, 1) - le.black.y,
+                                    diff.gap.le = round(le.gap.x, 1) - le.gap.y)
+
+summary(compare.le$diff.ucl[compare.le$state != "Wyoming"])
+summary(compare.le$diff.lcl[compare.le$state != "Wyoming"])
+
+summary(compare.le$diff.white.le[compare.le$state != "Wyoming"])
+summary(compare.le$diff.black.le[compare.le$state != "Wyoming"])
+summary(compare.le$diff.gap.le[compare.le$state != "Wyoming"])
 
 save.image("~/SH_HA_compare_results.Rdata")
+
+#to do:
+#2. change my LE calc to use 0.1 vs 0.09 for <1 to see if that acocunts for the diff between the calcs
+
