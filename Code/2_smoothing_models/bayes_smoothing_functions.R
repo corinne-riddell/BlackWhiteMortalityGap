@@ -38,7 +38,7 @@ jagsify_data = function(ds_sub) { #subset by COD, put in lists
                    binned.id = ds2$censored) 
     
     }
-  return(list(jagsified=ds_jagsified, sub = ds_sub))
+  return(list(jagsified = ds_jagsified, sub = ds_sub))
 }
 
 # Takes the jagsify_data output as a single parameter and runs the smoothing models
@@ -92,41 +92,72 @@ run_smoothing_model = function(data) {
   return(jags_model)
 }
 
-# Takes the jagsify_data output, the run_smoothing_model output, and the desired year as paramters
+# Takes the jagsify_data output, the run_smoothing_model output, and the desired year as parameters
 # Outputs the original data, subset by sex, race, state, and year (not age or COD), with smoothed rates and smoothed/imputed deaths 
 clean_smoothing_results = function(data, jags_model, year, n.posterior.samples) {
   ds_sub = data$sub
   cods = unique(ds_sub$COD)
   n.cods = length(cods)
   n.age = length(unique(ds_sub$age))
-  year_id = data$sub$year.n[data$sub$year==year][1]
+  year_id = data$sub$year.n[data$sub$year == year][1]
   
   results_list = list()
   
-  ds_sub_year = ds_sub[ds_sub$year.n==year_id, ]
+  ds_sub_year = ds_sub[ds_sub$year.n == year_id, ]
+  ds_sub_year$smoothed_rate = rep(NA, length(ds_sub_year[ ,1]))
   
   for(k in 1:n.posterior.samples) { 
     
-    ds_sub_year$smoothed_rate = rep(NA, length(ds_sub_year[ ,1]))
-    
-      for(cod_i in 1:n.cods) {
-        jags_modeli = jags_model[[cod_i]] 
-        p_mcmc = as.mcmc(jags_modeli) 
-        p = data.frame(p_mcmc[[1]])  
+    for(cod_i in 1:n.cods) {
+      
+      p_mcmc = as.mcmc(jags_model[[cod_i]]) 
+      p = data.frame(p_mcmc[[1]])  
+      
+      for(age_i in 1:n.age) {
+        name_rate = paste0('lnrate.', age_i, ".", year_id, ".") 
         
-        for(age_i in 1:n.age) {
-          name_rate = paste0('lnrate.', age_i, ".", year_id, ".") 
-          
-          ds_sub_year$smoothed_rate[ds_sub_year$age.n==age_i & 
-                                      ds_sub_year$COD==cods[cod_i]] = exp(p[name_rate])[[1]][k] 
-        }
+        ds_sub_year$smoothed_rate[ds_sub_year$age.n == age_i & 
+                                    ds_sub_year$COD == cods[cod_i]] = exp(p[name_rate])[[1]][k] 
       }
-    ds_sub_year$smoothed_deaths = ds_sub_year$smoothed_rate * ds_sub_year$population
-    results_list[[k]] = ds_sub_year
     }
-  return(results_list)
+    #ds_sub_year$smoothed_deaths = ds_sub_year$smoothed_rate * ds_sub_year$population
+    results_list[[k]] = ds_sub_year
   }
+  return(results_list)
+}
 
+
+clean_smoothing_results_faster = function(data, jags_model, year, n.posterior.samples) {
+  ds_sub = data$sub
+  cods = unique(ds_sub$COD)
+  n.cods = length(cods)
+  n.age = length(unique(ds_sub$age))
+  year_id = data$sub$year.n[data$sub$year == year][1]
+  
+  results_list = list() 
+  
+  ds_sub_year = ds_sub[ds_sub$year.n == year_id, ]
+  ds_sub_year$smoothed_rate = rep(NA, length(ds_sub_year[ ,1]))
+  
+  for(k in 1:n.posterior.samples) { 
+
+    for(cod_i in 1:n.cods) {
+      
+      p_mcmc = as.mcmc(jags_model[[cod_i]]) 
+      p = data.frame(p_mcmc[[1]])  
+      
+      for(age_i in 1:n.age) {
+        name_rate = paste0('lnrate.', age_i, ".", year_id, ".") 
+        
+        ds_sub_year$smoothed_rate[ds_sub_year$age.n == age_i & 
+                                    ds_sub_year$COD == cods[cod_i]] = exp(p[name_rate])[[1]][k] 
+      }
+    }
+    #ds_sub_year$smoothed_deaths = ds_sub_year$smoothed_rate * ds_sub_year$population
+    results_list[[k]] = ds_sub_year
+  }
+  return(results_list)
+}
 
 
  
