@@ -210,15 +210,24 @@ life_expectancy_and_gap <- function(data) {
   #calculate cod decomp
   cod_decomp <- cause_of_death_decomp(lt.black, lt.white, age_decomp, ct.both, "age_minbin", "COD", "prop.black", "prop.white")
   
+  cod_marginal <- make.cod.marginal(cod_decomp)
   #returns a list
   return(list(le.df = data.frame("LE_Black" = lt.black$e_x[1],
                                  "LE_White" = lt.white$e_x[1],
                                  "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]),
-              age.decomp = age_decomp, cod.table = ct.both, cod.decomp = cod_decomp))
+              age.decomp = age_decomp, cod.table = ct.both, cod.decomp = cod_decomp, cod.marginal = cod_marginal))
   
   # return(list(le.df = data.frame("LE_Black" = lt.black$e_x[1],
   #                                "LE_White" = lt.white$e_x[1],
   #                                "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1])))
+}
+
+make.cod.marginal <- function(cod.decomp) {
+  return(cod.decomp %>% 
+           group_by(Cause.of.death) %>%
+           summarise(C_x = sum(C_xi)) %>%
+           mutate(total_Cx = sum(C_x), C_x_proportion = C_x/total_Cx)
+  ) 
 }
 
 #this function takes a list of the samples from the posterior distribution
