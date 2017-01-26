@@ -4,7 +4,9 @@
 
 #change names to something like col.name.death.counts or death.counts.in.data
 
-life.table <- function(data, num.ages.in.group, death.counts, population.counts, ave.prop.le1.lived = 0.09, return = "appended"){
+life.table <- function(data, sortable.age, num.ages.in.group, death.counts, population.counts, ave.prop.le1.lived = 0.09, return = "appended"){
+  
+  data[order(data[, "sortable.age"]), ]
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
   data["a_x"] <- 0.5 #average proportion of interval lived
@@ -38,7 +40,8 @@ life.table <- function(data, num.ages.in.group, death.counts, population.counts,
   } else if(return == "life expectancy") {
     return(data[["e_x"]])
   } else if(return == "life table") {
-    return(data[, c("R_x", "a_x", "q_x", "p_x", "l_x", "d_x", "L_x", "cumsum", "l.cumsum", "T_x", "e_x")])
+    return(data[, c("sortable.age", "num.ages.in.group", "death.counts", "population.counts",
+                    "R_x", "a_x", "q_x", "p_x", "l_x", "d_x", "L_x", "cumsum", "l.cumsum", "T_x", "e_x")])
   }
   
   
@@ -171,48 +174,48 @@ life_expectancy_and_gap <- function(data) {
   library(sqldf)
   
   #aggegrate over COD within agegroup and race
-  data.aggregated <- sqldf('select race, population, age_bin, year, sex, state, sum(smoothed_deaths) as total_smoothed_deaths from data group by race, age_bin')  
+  data.aggregated <- sqldf('select race, population, age_minbin, year, sex, state, sum(smoothed_deaths) as total_smoothed_deaths from data group by race, age_minbin')  
   
-  data <- merge(data, data.aggregated[, c("race", "age_bin", "total_smoothed_deaths")], by = c("race", "age_bin"))
+  data <- merge(data, data.aggregated[, c("race", "age_minbin", "total_smoothed_deaths")], by = c("race", "age_minbin"))
   
   #add the cod proportions of all deaths
   data$cod_prop_smoothed_deaths <- data$smoothed_deaths/data$total_smoothed_deaths      
 
   #make the cod table to be used in the cod decomposition
-  ct.black <- data[data$race == "Black", c("age_bin", "cod", "cod_prop_smoothed_deaths")]
-  names(ct.black)[3] <- "prop.black"
-  ct.white<- data[data$race == "White", c("age_bin", "cod", "cod_prop_smoothed_deaths")]
-  names(ct.white)[3] <- "prop.white"
-  ct.both <- merge(ct.white, ct.black, by = c("age_bin", "cod")) 
-  ct.both <- ct.both[order(ct.both$cod, ct.both$age_bin), ] 
+  # ct.black <- data[data$race == "Black", c("age_minbin", "COD", "cod_prop_smoothed_deaths")]
+  # names(ct.black)[3] <- "prop.black"
+  # ct.white<- data[data$race == "White", c("age_minbin", "COD", "cod_prop_smoothed_deaths")]
+  # names(ct.white)[3] <- "prop.white"
+  # ct.both <- merge(ct.white, ct.black, by = c("age_minbin", "COD")) 
+  # ct.both <- ct.both[order(ct.both$COD, ct.both$age_minbin), ] 
   
   #add num.ages.in.group
-  data.aggregated$nx = 1*(data.aggregated$age_bin == 1) + 4*(data.aggregated$age_bin == 2) + 5*(data.aggregated$age_bin > 2)
+  data.aggregated$nx = 1*(data.aggregated$age_minbin == 0) + 4*(data.aggregated$age_minbin == 1) + 5*(data.aggregated$age_minbin > 1)
   
   #calculate LE by race
   lt.black <- life.table(data = subset(data.aggregated, race == "Black"), 
                          num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", 
-                         population.counts = "population")
+                         population.counts = "population", ave.prop.le1.lived = 0.10)
   
   lt.white <- life.table(data = subset(data.aggregated, race == "White"), 
                          num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", 
-                         population.counts = "population")
+                         population.counts = "population", ave.prop.le1.lived = 0.10)
   
   #calculate le_age_decomp 
-  age_decomp <- le_age_decomp(lt.black, "Black", lt.white, "White", "age_bin")
+  #age_decomp <- le_age_decomp(lt.black, "Black", lt.white, "White", "age")
   
   #calculate cod decomp
-  cod_decomp <- cause_of_death_decomp(lt.black, lt.white, age_decomp, ct.both, "age_bin", "cod", "prop.black", "prop.white")
+  #cod_decomp <- cause_of_death_decomp(lt.black, lt.white, age_decomp, ct.both, "age", "COD", "prop.black", "prop.white")
   
   #returns a list
-  return(list(le.df = data.frame("LE_Black" = lt.black$e_x[1],
+  # return(list(le.df = data.frame("LE_Black" = lt.black$e_x[1],
+  #                                "LE_White" = lt.white$e_x[1],
+  #                                "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]),
+  #             age.decomp = age_decomp, cod.table = ct.both, cod.decomp = cod_decomp))
+  
+  return(data.frame("LE_Black" = lt.black$e_x[1],
                          "LE_White" = lt.white$e_x[1],
-                         "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]),
-              age.decomp = age_decomp, cod.table = ct.both, cod.decomp = cod_decomp))
-
-  # return(data.frame("LE_Black" = lt.black$e_x[1], 
-  #                        "LE_White" = lt.white$e_x[1], 
-  #                        "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))         
+                         "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1]))
 }
 
 #this function takes a list of the samples from the posterior distribution
