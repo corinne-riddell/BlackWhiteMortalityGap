@@ -195,11 +195,13 @@ life_expectancy_and_gap <- function(data) {
   #calculate LE by race
   lt.black <- life.table(data = subset(data.aggregated, race == "Black"), 
                          num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", 
-                         population.counts = "population", ave.prop.le1.lived = 0.10)
+                         population.counts = "population", ave.prop.le1.lived = 0.10, 
+                         sortable.age = "age_minbin")
   
   lt.white <- life.table(data = subset(data.aggregated, race == "White"), 
                          num.ages.in.group = "nx" , death.counts = "total_smoothed_deaths", 
-                         population.counts = "population", ave.prop.le1.lived = 0.10)
+                         population.counts = "population", ave.prop.le1.lived = 0.10, 
+                         sortable.age = "age_minbin")
   
   #calculate le_age_decomp 
   #age_decomp <- le_age_decomp(lt.black, "Black", lt.white, "White", "age")
