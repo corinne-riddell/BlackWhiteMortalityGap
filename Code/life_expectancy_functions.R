@@ -6,7 +6,7 @@
 
 life.table <- function(data, sortable.age, num.ages.in.group, death.counts, population.counts, ave.prop.le1.lived = 0.09, return = "appended"){
   
-  data[order(data[, "sortable.age"]), ]
+  data[order(data[, sortable.age]), ]
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
   data["a_x"] <- 0.5 #average proportion of interval lived
