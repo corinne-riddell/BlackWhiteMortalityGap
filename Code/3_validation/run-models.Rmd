@@ -35,9 +35,6 @@ dat.clean = read.csv('~/dat_clean.csv')
 ```{r fit_models_alabama_males}
 #run time: expect 2 hours
 #fit the bayesian models and put the 1000 posterior samples into a data frame
-
-list_set2 <- list("Colorado", "Connecticut", "Delaware", "Washington DC", "Florida", "Georgia") #saved as results_set_2
-
 system.time(
   for(sex_i in c("Male", "Female")){
     #for(state_i in c("Alabama", "Arizona", "Arkansas", "California")) { #saved as results_set_1
@@ -254,13 +251,19 @@ system.time(
 ```
 
 ```{r save_results}
-
 #SET 1: Alabama, Arizona, Arkansas, California
-save(r.All, le.calculations, file = "~/BW_results/results_set_1.Rdata") 
-write.csv(x = BlackWhite, file = "~/BW_results/BlackWhite_set_1.csv")
-write.csv(x = age.decomp.estimates, file = "~/BW_results/age_decomp_set_1.csv")
-write.csv(x = cod.marginal.estimates, file = "~/BW_results/cod_marginal_set_1.csv")
-write.csv(x = age.cod.estimates, file = "~/BW_results/age_cod_set_1.csv")
+# save(r.All, le.calculations, file = "~/BW_results/results_set_1.Rdata") 
+# write.csv(x = BlackWhite, file = "~/BW_results/BlackWhite_set_1.csv")
+# write.csv(x = age.decomp.estimates, file = "~/BW_results/age_decomp_set_1.csv")
+# write.csv(x = cod.marginal.estimates, file = "~/BW_results/cod_marginal_set_1.csv")
+# write.csv(x = age.cod.estimates, file = "~/BW_results/age_cod_set_1.csv")
+
+#SET 2: Colorado, Connecticut, Delaware, Washington DC
+save(r.All, le.calculations, file = "~/BlackWhiteMortalityGap/Results/results_set_2.Rdata") 
+write.csv(x = BlackWhite, file = "~/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv")
+write.csv(x = age.decomp.estimates, file = "~/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv")
+write.csv(x = cod.marginal.estimates, file = "~/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv")
+write.csv(x = age.cod.estimates, file = "~/BlackWhiteMortalityGap/Results/age_cod_set_2.csv")
 ```
 
 
