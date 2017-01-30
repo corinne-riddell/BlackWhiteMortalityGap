@@ -20,6 +20,7 @@ library(bayesboot)
 library(coda)
 library(grid)
 library(gridExtra)
+library(parallel)
 ```
 
 ```{r load_user_written_functions}
@@ -28,34 +29,52 @@ source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R')
 ```
 
 ```{r load_tidied_data}
-dat.clean = read.csv('~/dat_clean.csv')
+dat.clean = read.csv('~/dat_clean.csv') 
 ```
 
 ```{r fit_models_alabama_males}
-#run time: 15 minutes
+#run time: expect 2 hours
 #fit the bayesian models and put the 1000 posterior samples into a data frame
-r.White <- run_analysis(dataset = dat.clean, state1 = "Alabama", sex1 = "Male", race1 = "White")
+
+list_set2 <- list("Colorado", "Connecticut", "Delaware", "Washington DC", "Florida", "Georgia") #saved as results_set_2
+
+system.time(
+  for(sex_i in c("Male", "Female")){
+    #for(state_i in c("Alabama", "Arizona", "Arkansas", "California")) { #saved as results_set_1
+    for(state_i in c("Colorado", "Connecticut", "Delaware", "Washington DC")) { #saved as results_set_2
+      assign(paste0("r.White.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
+      assign(paste0("r.Black.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))
+    }
+  }
+)
+
+# r.White <- rbind(r.White.AlabamaMale, r.White.ArizonaMale, r.White.ArkansasMale, r.White.CaliforniaMale,
+#                  r.White.AlabamaFemale, r.White.ArizonaFemale, r.White.ArkansasFemale, r.White.CaliforniaFemale)
+r.White <- rbind(r.White.Colorado.Male, r.White.Connecticut.Male, r.White.Delaware.Male, r.White.WashingtonDC.Male,
+                 r.White.Colorado.Female, r.White.Connecticut.Female, r.White.Delaware.Female, r.White.WashingtonDC.Female)
 r.White$race <- "White"
 
-r.Black <- run_analysis(dataset = dat.clean, state1 = "Alabama", sex1 = "Male", race1 = "Black")
+# r.Black <- rbind(r.Black.AlabamaMale, r.Black.ArizonaMale, r.Black.ArkansasMale, r.Black.CaliforniaMale,
+#                  r.Black.AlabamaFemale, r.Black.ArizonaFemale, r.Black.ArkansasFemale, r.Black.CaliforniaFemale)
+r.White <- rbind(r.Black.Colorado.Male, r.Black.Connecticut.Male, r.Black.Delaware.Male, r.Black.WashingtonDC.Male,
+                 r.Black.Colorado.Female, r.Black.Connecticut.Female, r.Black.Delaware.Female, r.Black.WashingtonDC.Female)
 r.Black$race <- "Black"
 ```
 
 ```{r prepare_data_for_le_functions}
-#run time: about 2 minutes
+#run time: used to be 2 minutes
 r.All <- rbind(r.White, r.Black)
 rm(r.White, r.Black)
 
 r.All$smoothed_deaths <- r.All$smoothed_rate*r.All$population
+table(r.All$smoothed_deaths == 0) #check this -- if no deaths in an age-band (i.e., no death for any COD, then can't run the COD calculations for that stratum.)
 
-r.All <- r.All %>% group_by(post.samp, state, race.sex, year.n, age_minbin) %>%
-                           arrange(post.samp, state, race.sex, year.n, age_minbin) %>%
-                           mutate(total_smoothed_deaths = sum(smoothed_deaths),
-                                  cod_prop_smoothed_deaths = smoothed_deaths/total_smoothed_deaths)
+system.time(r.All <- r.All %>% group_by(post.samp, state, race.sex, year.n, age_minbin) %>%
+                           arrange(post.samp, state, race.sex, year.n, age_minbin))
 ```
 
 ```{r run_calculations}
-#run time ~40 mins
+#run time: 8.5 hours for four states
 #run the life table and decomposition calculations for each of the 1000 posterior samples
 
 n <- length(levels(droplevels(r.All$state.year.sex)))
@@ -78,7 +97,6 @@ system.time(
     rm(data_sub)
   }
 )
-rm(counter)
 
 ```
 
@@ -125,124 +143,124 @@ age.cod.estimates <- data.frame(stratum.id = rep(levels(droplevels(r.All$state.y
                                 age_COD_cont_prop_ucl = numeric(19*6*n), 
                                 stringsAsFactors = F)
 
-
-for(i in 1:n) {
-  
-  BlackWhite[i, c("stratum.id")] <- le.calculations[[i]]$stratum.id  
-  
-  #LIFE EXPECTANCY EXTRACT RESULTS
-  BlackWhite[i , c("LE_white_lcl", "LE_white", "LE_white_ucl")] <- quantile(map_dbl(le.calculations[[i]]$calcs,
-                                                                                    ~.x$le.df$LE_White), 
-                                                                            c(0.025, 0.5, 0.975))
-  BlackWhite[i , c("LE_black_lcl", "LE_black", "LE_black_ucl")] <- quantile(map_dbl(le.calculations[[i]]$calcs,
-                                                                                    ~.x$le.df$LE_Black), 
-                                                                            c(0.025, 0.5, 0.975))
-  BlackWhite[i , c("LE_wbgap_lcl", "LE_wbgap", "LE_wbgap_ucl")] <- quantile(map_dbl(le.calculations[[i]]$calcs,
-                                                                                    ~.x$le.df$LE_WBgap), 
-                                                                            c(0.025, 0.5, 0.975))
-  
-  #AGE DECOMPOSITION EXTRACT RESULTS
-  age.decomp.posteriors <- map_df(le.calculations[[i]]$calcs, ~ .x$age.decomp$C_x)
-  age.decomp.posteriors$age_minbin <- age_minbin
-  age.decomp.posteriors <- age.decomp.posteriors %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_x")
-  
-  age.decomp.estimates[age.decomp.estimates$stratum.id == le.calculations[[i]]$stratum.id, 
-                       c("age_minbin", "age_cont_yrs_lcl", "age_cont_yrs", "age_cont_yrs_ucl")] <- 
-    age.decomp.posteriors %>% 
-    group_by(age_minbin) %>%
-    summarise(lcl_C_x = quantile(C_x, 0.025),
-              median_C_x = quantile(C_x, 0.5), 
-              ucl_C_x = quantile(C_x, 0.975))
-  
-  rm(age.decomp.posteriors)
-  
-  age.decomp.posteriors2 <- map_df(le.calculations[[i]]$calcs, ~ .x$age.decomp$C_x_proportion)
-  age.decomp.posteriors2$age_minbin <- age_minbin
-  age.decomp.posteriors2 <- age.decomp.posteriors2 %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_x_proportion")
-  
-  age.decomp.estimates[age.decomp.estimates$stratum.id == le.calculations[[i]]$stratum.id, 
-                       c("age_minbin", "age_cont_prop_lcl", "age_cont_prop", "age_cont_prop_ucl")] <- 
-    age.decomp.posteriors2 %>% 
-    group_by(age_minbin) %>%
-    summarise(lcl_C_x_proportion = quantile(C_x_proportion, 0.025),
-              median_C_x_proportion = quantile(C_x_proportion, 0.5), 
-              ucl_C_x_proportion = quantile(C_x_proportion, 0.975))
-
-  rm(age.decomp.posteriors2)
-  
-  #COD DECOMPOSITION EXTRACT RESULTS
-  cod.marginal.posteriors <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.marginal$C_x)
-  cod.marginal.posteriors$COD <- as.character(cods)
-  cod.marginal.posteriors <- cod.marginal.posteriors %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_x")
-  
-  cod.marginal.estimates[cod.marginal.estimates$stratum.id == le.calculations[[i]]$stratum.id, 
-                       c("COD", "COD_cont_yrs_lcl", "COD_cont_yrs", "COD_cont_yrs_ucl")] <- 
-    cod.marginal.posteriors %>% 
-    group_by(COD) %>%
-    summarise(lcl_C_x = quantile(C_x, 0.025),
-              median_C_x = quantile(C_x, 0.5), 
-              ucl_C_x = quantile(C_x, 0.975))
-  
-  rm(cod.marginal.posteriors)
-  
-  cod.marginal.posteriors2 <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.marginal$C_x_proportion)
-  cod.marginal.posteriors2$COD <- as.character(cods)
-  cod.marginal.posteriors2 <- cod.marginal.posteriors2 %>% tidyr::gather(`1`:`1000`, key = "post.samp", 
-                                                                         value = "C_x_proportion")
-
-  cod.marginal.estimates[cod.marginal.estimates$stratum.id == le.calculations[[i]]$stratum.id,
-                       c("COD", "COD_cont_prop_lcl", "COD_cont_prop", "COD_cont_prop_ucl")] <-
-    cod.marginal.posteriors2 %>%
-    group_by(COD) %>%
-    summarise(lcl_C_x_proportion = quantile(C_x_proportion, 0.025),
-              median_C_x_proportion = quantile(C_x_proportion, 0.5),
-              ucl_C_x_proportion = quantile(C_x_proportion, 0.975))
-  
-  rm(cod.marginal.posteriors)  
-  
-  #AGE-COD EXTRACT RESULTS
-  age.cod.decomp.posteriors <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.decomp$C_xi)
-  age.cod.decomp.posteriors$age_minbin <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Ages
-  age.cod.decomp.posteriors$COD <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Cause.of.death
-  age.cod.decomp.posteriors <- age.cod.decomp.posteriors %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_xi")
-
-  age.cod.estimates[age.cod.estimates$stratum.id == le.calculations[[i]]$stratum.id,
-                       c("age_minbin", "COD", "age_COD_cont_yrs_lcl", "age_COD_cont_yrs", "age_COD_cont_yrs_ucl")] <-
-    age.cod.decomp.posteriors %>%
-    group_by(age_minbin, COD) %>%
-    summarise(lcl_C_x = quantile(C_xi, 0.025),
-              median_C_x = quantile(C_xi, 0.5),
-              ucl_C_x = quantile(C_xi, 0.975))
-  
-  rm(age.cod.decomp.posteriors)
-  
-  age.cod.decomp.posteriors2 <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.decomp$C_xi_proportion)
-  age.cod.decomp.posteriors2$age_minbin <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Ages
-  age.cod.decomp.posteriors2$COD <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Cause.of.death
-  age.cod.decomp.posteriors2 <- age.cod.decomp.posteriors2 %>% tidyr::gather(`1`:`1000`, key = "post.samp", 
-                                                                             value = "C_xi_proportion")
-
-  age.cod.estimates[age.cod.estimates$stratum.id == le.calculations[[i]]$stratum.id,
-                       c("age_minbin", "COD", "age_COD_cont_prop_lcl", "age_COD_cont_prop", "age_COD_cont_prop_ucl")] <-
-    age.cod.decomp.posteriors2 %>%
-    group_by(age_minbin, COD) %>%
-    summarise(lcl_C_x_proportion = quantile(C_xi_proportion, 0.025),
-              median_C_x_proportion = quantile(C_xi_proportion, 0.5),
-              ucl_C_x_proportion = quantile(C_xi_proportion, 0.975))
-  
-  rm(age.cod.decomp.posteriors2)
-}
+system.time(
+  for(i in 1:n) {
+    
+    BlackWhite[i, c("stratum.id")] <- le.calculations[[i]]$stratum.id  
+    
+    #LIFE EXPECTANCY EXTRACT RESULTS
+    BlackWhite[i , c("LE_white_lcl", "LE_white", "LE_white_ucl")] <- quantile(map_dbl(le.calculations[[i]]$calcs,
+                                                                                      ~.x$le.df$LE_White), 
+                                                                              c(0.025, 0.5, 0.975))
+    BlackWhite[i , c("LE_black_lcl", "LE_black", "LE_black_ucl")] <- quantile(map_dbl(le.calculations[[i]]$calcs,
+                                                                                      ~.x$le.df$LE_Black), 
+                                                                              c(0.025, 0.5, 0.975))
+    BlackWhite[i , c("LE_wbgap_lcl", "LE_wbgap", "LE_wbgap_ucl")] <- quantile(map_dbl(le.calculations[[i]]$calcs,
+                                                                                      ~.x$le.df$LE_WBgap), 
+                                                                              c(0.025, 0.5, 0.975))
+    
+    #AGE DECOMPOSITION EXTRACT RESULTS
+    age.decomp.posteriors <- map_df(le.calculations[[i]]$calcs, ~ .x$age.decomp$C_x)
+    age.decomp.posteriors$age_minbin <- age_minbin
+    age.decomp.posteriors <- age.decomp.posteriors %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_x")
+    
+    age.decomp.estimates[age.decomp.estimates$stratum.id == le.calculations[[i]]$stratum.id, 
+                         c("age_minbin", "age_cont_yrs_lcl", "age_cont_yrs", "age_cont_yrs_ucl")] <- 
+      age.decomp.posteriors %>% 
+      group_by(age_minbin) %>%
+      summarise(lcl_C_x = quantile(C_x, 0.025),
+                median_C_x = quantile(C_x, 0.5), 
+                ucl_C_x = quantile(C_x, 0.975))
+    
+    rm(age.decomp.posteriors)
+    
+    age.decomp.posteriors2 <- map_df(le.calculations[[i]]$calcs, ~ .x$age.decomp$C_x_proportion)
+    age.decomp.posteriors2$age_minbin <- age_minbin
+    age.decomp.posteriors2 <- age.decomp.posteriors2 %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_x_proportion")
+    
+    age.decomp.estimates[age.decomp.estimates$stratum.id == le.calculations[[i]]$stratum.id, 
+                         c("age_minbin", "age_cont_prop_lcl", "age_cont_prop", "age_cont_prop_ucl")] <- 
+      age.decomp.posteriors2 %>% 
+      group_by(age_minbin) %>%
+      summarise(lcl_C_x_proportion = quantile(C_x_proportion, 0.025),
+                median_C_x_proportion = quantile(C_x_proportion, 0.5), 
+                ucl_C_x_proportion = quantile(C_x_proportion, 0.975))
+    
+    rm(age.decomp.posteriors2)
+    
+    #COD DECOMPOSITION EXTRACT RESULTS
+    cod.marginal.posteriors <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.marginal$C_x)
+    cod.marginal.posteriors$COD <- as.character(cods)
+    cod.marginal.posteriors <- cod.marginal.posteriors %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_x")
+    
+    cod.marginal.estimates[cod.marginal.estimates$stratum.id == le.calculations[[i]]$stratum.id, 
+                           c("COD", "COD_cont_yrs_lcl", "COD_cont_yrs", "COD_cont_yrs_ucl")] <- 
+      cod.marginal.posteriors %>% 
+      group_by(COD) %>%
+      summarise(lcl_C_x = quantile(C_x, 0.025),
+                median_C_x = quantile(C_x, 0.5), 
+                ucl_C_x = quantile(C_x, 0.975))
+    
+    rm(cod.marginal.posteriors)
+    
+    cod.marginal.posteriors2 <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.marginal$C_x_proportion)
+    cod.marginal.posteriors2$COD <- as.character(cods)
+    cod.marginal.posteriors2 <- cod.marginal.posteriors2 %>% tidyr::gather(`1`:`1000`, key = "post.samp", 
+                                                                           value = "C_x_proportion")
+    
+    cod.marginal.estimates[cod.marginal.estimates$stratum.id == le.calculations[[i]]$stratum.id,
+                           c("COD", "COD_cont_prop_lcl", "COD_cont_prop", "COD_cont_prop_ucl")] <-
+      cod.marginal.posteriors2 %>%
+      group_by(COD) %>%
+      summarise(lcl_C_x_proportion = quantile(C_x_proportion, 0.025),
+                median_C_x_proportion = quantile(C_x_proportion, 0.5),
+                ucl_C_x_proportion = quantile(C_x_proportion, 0.975))
+    
+    rm(cod.marginal.posteriors)  
+    
+    #AGE-COD EXTRACT RESULTS
+    age.cod.decomp.posteriors <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.decomp$C_xi)
+    age.cod.decomp.posteriors$age_minbin <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Ages
+    age.cod.decomp.posteriors$COD <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Cause.of.death
+    age.cod.decomp.posteriors <- age.cod.decomp.posteriors %>% tidyr::gather(`1`:`1000`, key = "post.samp", value = "C_xi")
+    
+    age.cod.estimates[age.cod.estimates$stratum.id == le.calculations[[i]]$stratum.id,
+                      c("age_minbin", "COD", "age_COD_cont_yrs_lcl", "age_COD_cont_yrs", "age_COD_cont_yrs_ucl")] <-
+      age.cod.decomp.posteriors %>%
+      group_by(age_minbin, COD) %>%
+      summarise(lcl_C_x = quantile(C_xi, 0.025),
+                median_C_x = quantile(C_xi, 0.5),
+                ucl_C_x = quantile(C_xi, 0.975))
+    
+    rm(age.cod.decomp.posteriors)
+    
+    age.cod.decomp.posteriors2 <- map_df(le.calculations[[i]]$calcs, ~ .x$cod.decomp$C_xi_proportion)
+    age.cod.decomp.posteriors2$age_minbin <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Ages
+    age.cod.decomp.posteriors2$COD <- le.calculations[[i]]$calcs[[1]]$cod.decomp$Cause.of.death
+    age.cod.decomp.posteriors2 <- age.cod.decomp.posteriors2 %>% tidyr::gather(`1`:`1000`, key = "post.samp", 
+                                                                               value = "C_xi_proportion")
+    
+    age.cod.estimates[age.cod.estimates$stratum.id == le.calculations[[i]]$stratum.id,
+                      c("age_minbin", "COD", "age_COD_cont_prop_lcl", "age_COD_cont_prop", "age_COD_cont_prop_ucl")] <-
+      age.cod.decomp.posteriors2 %>%
+      group_by(age_minbin, COD) %>%
+      summarise(lcl_C_x_proportion = quantile(C_xi_proportion, 0.025),
+                median_C_x_proportion = quantile(C_xi_proportion, 0.5),
+                ucl_C_x_proportion = quantile(C_xi_proportion, 0.975))
+    
+    rm(age.cod.decomp.posteriors2)
+  }
+)
 ```
 
+```{r save_results}
 
-
-
-
-
-```{r}
-# load('~/SH_HA_data.Rdata')
-# SH_sub <- dtotal %>% filter(state == "Alabama", sex == "Male", race == "Black", year == 1990)
-# 
-# SH_sub %>% select(age, age_minbin, deaths, population)
+#SET 1: Alabama, Arizona, Arkansas, California
+save(r.All, le.calculations, file = "~/BW_results/results_set_1.Rdata") 
+write.csv(x = BlackWhite, file = "~/BW_results/BlackWhite_set_1.csv")
+write.csv(x = age.decomp.estimates, file = "~/BW_results/age_decomp_set_1.csv")
+write.csv(x = cod.marginal.estimates, file = "~/BW_results/cod_marginal_set_1.csv")
+write.csv(x = age.cod.estimates, file = "~/BW_results/age_cod_set_1.csv")
 ```
+
 
