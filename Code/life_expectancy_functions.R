@@ -208,9 +208,15 @@ life_expectancy_and_gap <- function(data) {
   age_decomp <- le_age_decomp(lt.black, "Black", lt.white, "White", "age_minbin")
   
   #calculate cod decomp
-  cod_decomp <- cause_of_death_decomp(lt.black, lt.white, age_decomp, ct.both, "age_minbin", "COD", "prop.black", "prop.white")
+  if(!any(is.na(ct.both$prop.black)) & !any(is.na(ct.both$prop.white))) { #ensures that there are no ages with 0 deaths - for these COD prop == 0 and can't compute
+    cod_decomp <- cause_of_death_decomp(lt.black, lt.white, age_decomp, ct.both, "age_minbin", "COD", "prop.black", "prop.white")
+    cod_marginal <- make.cod.marginal(cod_decomp)
+  } else {
+    cod_decomp <- NA
+    cod_marginal <- NA
+  }
   
-  cod_marginal <- make.cod.marginal(cod_decomp)
+  
   #returns a list
   return(list(le.df = data.frame("LE_Black" = lt.black$e_x[1],
                                  "LE_White" = lt.white$e_x[1],

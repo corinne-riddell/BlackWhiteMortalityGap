@@ -20,6 +20,7 @@ library(bayesboot)
 library(coda)
 library(grid)
 library(gridExtra)
+library(parallel)
 ```
 
 ```{r load_user_written_functions}
@@ -28,28 +29,35 @@ source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R')
 ```
 
 ```{r load_tidied_data}
-dat.clean = read.csv('~/dat_clean.csv')
+dat.clean = read.csv('~/dat_clean.csv') 
 ```
 
 ```{r fit_models_alabama_males}
 #run time: expect 2 hours
 #fit the bayesian models and put the 1000 posterior samples into a data frame
 
+list_set2 <- list("Colorado", "Connecticut", "Delaware", "Washington DC", "Florida", "Georgia") #saved as results_set_2
+
 system.time(
   for(sex_i in c("Male", "Female")){
-    for(state_i in c("Alabama", "Arizona", "Arkansas", "California")) {
-      assign(paste0("r.White.", state_i, sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
-      assign(paste0("r.Black.", state_i, sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))  
+    #for(state_i in c("Alabama", "Arizona", "Arkansas", "California")) { #saved as results_set_1
+    for(state_i in c("Colorado", "Connecticut", "Delaware", "Washington DC")) { #saved as results_set_2
+      assign(paste0("r.White.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
+      assign(paste0("r.Black.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))
     }
   }
 )
 
-r.White <- rbind(r.White.Alabama.Male, r.White.Arizona.Male, r.White.Arkansas.Male, r.White.California.Male,
-                 r.White.Alabama.Female, r.White.Arizona.Female, r.White.Arkansas.Female, r.White.California.Female)
+# r.White <- rbind(r.White.AlabamaMale, r.White.ArizonaMale, r.White.ArkansasMale, r.White.CaliforniaMale,
+#                  r.White.AlabamaFemale, r.White.ArizonaFemale, r.White.ArkansasFemale, r.White.CaliforniaFemale)
+r.White <- rbind(r.White.Colorado.Male, r.White.Connecticut.Male, r.White.Delaware.Male, r.White.WashingtonDC.Male,
+                 r.White.Colorado.Female, r.White.Connecticut.Female, r.White.Delaware.Female, r.White.WashingtonDC.Female)
 r.White$race <- "White"
 
-r.Black <- rbind(r.Black.Alabama.Male, r.Black.Arizona.Male, r.Black.Arkansas.Male, r.Black.California.Male,
-                 r.Black.Alabama.Female, r.Black.Arizona.Female, r.Black.Arkansas.Female, r.Black.California.Female)
+# r.Black <- rbind(r.Black.AlabamaMale, r.Black.ArizonaMale, r.Black.ArkansasMale, r.Black.CaliforniaMale,
+#                  r.Black.AlabamaFemale, r.Black.ArizonaFemale, r.Black.ArkansasFemale, r.Black.CaliforniaFemale)
+r.White <- rbind(r.Black.Colorado.Male, r.Black.Connecticut.Male, r.Black.Delaware.Male, r.Black.WashingtonDC.Male,
+                 r.Black.Colorado.Female, r.Black.Connecticut.Female, r.Black.Delaware.Female, r.Black.WashingtonDC.Female)
 r.Black$race <- "Black"
 ```
 
@@ -59,15 +67,14 @@ r.All <- rbind(r.White, r.Black)
 rm(r.White, r.Black)
 
 r.All$smoothed_deaths <- r.All$smoothed_rate*r.All$population
+table(r.All$smoothed_deaths == 0) #check this -- if no deaths in an age-band (i.e., no death for any COD, then can't run the COD calculations for that stratum.)
 
 system.time(r.All <- r.All %>% group_by(post.samp, state, race.sex, year.n, age_minbin) %>%
-                           arrange(post.samp, state, race.sex, year.n, age_minbin) %>%
-                           mutate(total_smoothed_deaths = sum(smoothed_deaths),
-                                  cod_prop_smoothed_deaths = smoothed_deaths/total_smoothed_deaths))
+                           arrange(post.samp, state, race.sex, year.n, age_minbin))
 ```
 
 ```{r run_calculations}
-#run time ~40 mins -- expect 5.5 hours
+#run time: 8.5 hours for four states
 #run the life table and decomposition calculations for each of the 1000 posterior samples
 
 n <- length(levels(droplevels(r.All$state.year.sex)))
@@ -246,15 +253,14 @@ system.time(
 )
 ```
 
+```{r save_results}
 
-
-
-
-
-```{r}
-# load('~/SH_HA_data.Rdata')
-# SH_sub <- dtotal %>% filter(state == "Alabama", sex == "Male", race == "Black", year == 1990)
-# 
-# SH_sub %>% select(age, age_minbin, deaths, population)
+#SET 1: Alabama, Arizona, Arkansas, California
+save(r.All, le.calculations, file = "~/BW_results/results_set_1.Rdata") 
+write.csv(x = BlackWhite, file = "~/BW_results/BlackWhite_set_1.csv")
+write.csv(x = age.decomp.estimates, file = "~/BW_results/age_decomp_set_1.csv")
+write.csv(x = cod.marginal.estimates, file = "~/BW_results/cod_marginal_set_1.csv")
+write.csv(x = age.cod.estimates, file = "~/BW_results/age_cod_set_1.csv")
 ```
+
 

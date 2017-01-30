@@ -128,4 +128,9 @@ clean_smoothing_results = function(data, jags_model) {
   return(merge(data$sub, smoothed.rates.1000, by = c("year.n", "age.n", "COD")))
 }
  
-
+run_analysis <- function(dataset, state1, sex1, race1) {
+  ds_sub = subset_data(ds = dataset, state = state1, sex = sex1, race = race1)
+  data.jags = jagsify_data(ds_sub)
+  jags.model = run_smoothing_model(data.jags)  
+  return(clean_smoothing_results(data = data.jags, jags_model = jags.model))
+}
