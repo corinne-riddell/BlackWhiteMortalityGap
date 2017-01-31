@@ -1,0 +1,395 @@
+---
+title: "Untitled"
+author: "Corinne Riddell"
+date: "January 31, 2017"
+output: html_document
+---
+```{r initialize, echo=FALSE, warning=F, message=F}
+library(shiny)
+library(plotly)
+library(viridis)
+library(scales)
+library(shinythemes)
+library(dplyr)
+library(purrr)
+library(stringr)
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+
+age_cod_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv")
+age_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv")
+BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv")
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv")
+```
+
+```{r tidy_data, echo=FALSE}
+
+ncols <- str_split_fixed(as.character(BlackWhite_results$stratum.id), "\\.", 3)
+BlackWhite_results$state <- as.factor(ncols[ , 1])
+BlackWhite_results$year <- as.numeric(ncols[ , 2])
+BlackWhite_results$sex <- as.factor(ncols[ , 3])
+
+ncols <- str_split_fixed(as.character(cod_decomp_results$stratum.id), "\\.", 3)
+cod_decomp_results$state <- as.factor(ncols[ , 1])
+cod_decomp_results$year <- as.numeric(ncols[ , 2])
+cod_decomp_results$sex <- as.factor(ncols[ , 3])
+```
+
+```{r add_Census_Region, echo=FALSE}
+BlackWhite_results$Census_Region <- "South"
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
+                                                 "Nebraska", "North Dakota", "South Dakota", 
+                                                 "Illinois", "Indiana", "Michigan", "Ohio", 
+                                                 "Wisconsin")] <- "Midwest"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Connecticut", "Maine", "Massachusetts", 
+                                                 "New Hampshire", "Rhode Island", "Vermont",
+                                                 "New Jersey", "New York", "Pennsylvania")] <- "Northeast"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
+                                                 "Nevada", "New Mexico", "Utah", "Wyoming",
+                                                 "Alaska", "California", "Hawaii", "Oregon",
+                                                 "Washington")] <- "West"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
+                                                  "North Carolina", "South Carolina", 
+                                                  "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee", 
+                                                  "Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "South Central"
+
+BlackWhite_results$Census_Region <- factor(BlackWhite_results$Census_Region, levels = c("West", "Midwest", "South Central", "South Atlantic", "Northeast"))
+```
+
+```{r addvar_State_abbreviation, echo=FALSE}
+BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,  
+                                                                     labels = c("AL", "AZ", "AR", "CA")))
+                                      # labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
+                                      #            "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
+                                      #            "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
+                                      #            "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", 
+                                      #            "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", 
+                                      #            "VT", "VA", "WA", "WV", "WI", "WY")))
+
+cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, stabbrs), cod_decomp_results, by = "stratum.id", all.y = T)
+```
+
+**Figure 5: Trends in life expectancy for males between 1969 and 2013 by US state**
+
+```{r figure5, fig.align="center", fig.height=4, fig.width=9, echo=F}
+ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_white, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(y = LE_black, col = state), lty=2) +
+           geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +           
+           geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) +
+           facet_wrap( ~ Census_Region) +
+           ylab("Life expectancy (years)") +
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), aes(label = stabbrs), check_overlap = T, size = 2.5) +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), aes(label = stabbrs, y = LE_black), check_overlap = T, size = 2.5))
+
+
+```
+
+**Figure 5: Trends in the black-white life expectancy gap for males between 1969 and 2013 by US state**
+
+```{r figure5b, fig.align="center", fig.height=4, fig.width=9, echo=F}
+ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_wbgap, x = year)) + 
+           geom_vline(aes(xintercept = 1983), lty = 2, lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), lty = 2, lwd = 0.5) +
+           geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) +
+           facet_wrap( ~ Census_Region) +
+           ylab("Black-white life expectancy gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), aes(label = stabbrs), check_overlap = T, size = 2.5)) 
+
+```
+
+**Figure 6: Trends in life expectancy for females between 1969 and 2013 by US state**
+
+```{r figure6a, fig.align="center", fig.height=4, fig.width=9, echo=F}
+ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_white, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(y = LE_black, col = state), lty=2) +
+           geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +           
+           geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) +
+           facet_wrap( ~ Census_Region) +
+           ylab("Life expectancy (years)") +
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), aes(label = stabbrs), check_overlap = T, size = 2.5) +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), aes(label = stabbrs, y = LE_black), check_overlap = T, size = 2.5))
+
+
+```
+**Figure 6: Trends in the black-white life expectancy gap for females between 1969 and 2013 by US state**
+
+```{r figure6, fig.align="center", fig.height=5, fig.width=9, echo=F}
+ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_wbgap, x = year)) + 
+           geom_vline(aes(xintercept = 1983), lty = 2, lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), lty = 2, lwd = 0.5) +
+           geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) +
+           facet_wrap( ~ Census_Region) +
+           ylab("Black-white life expectancy gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), aes(label = stabbrs), check_overlap = T, size = 2.5) 
+) 
+```
+
+
+**Figure 7a: Contribution of cancer to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cancers"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cancers"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cancers"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cancers"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 7b: Contribution of cardiovascular disease to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cardiovascular"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cardiovascular"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 7c: Contribution of communicable disease to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Communicable"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Communicable"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 7d: Contribution of non-communicable disease to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
+
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Non-communicable"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Non-communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Non-communicable"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Non-communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 7d: Contribution of injuries to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Injuries"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Injuries"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 7e: Contribution of all other causes to the black-white life expectancy gap for males between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "All other causes"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "All other causes"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "All other causes"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "All other causes"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8a: Contribution of cancer to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cancers"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cancers"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cancers"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cancers"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8b: Contribution of cardiovascular disease to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cardiovascular"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cardiovascular"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8c: Contribution of communicable disease to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Communicable"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Communicable"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8d: Contribution of non-communicable disease to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Non-communicable"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Non-communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Non-communicable"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Non-communicable"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8e: Contribution of injuries to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Injuries"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Injuries"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
+
+**Figure 8f: Contribution of all other causes to the black-white life expectancy gap for females between 1969 and 2013 by US state, in years**
+```{r, echo=FALSE}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "All other causes"), aes(x = year, y = COD_cont_yrs)) + 
+           geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (years)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "All other causes"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "All other causes"), aes(x = year, y = COD_cont_prop)) + 
+           geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Region) +
+           ylab("Contribution to LE Gap (%)") +
+           xlab("Year") +
+           geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "All other causes"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5)
+)
+```
