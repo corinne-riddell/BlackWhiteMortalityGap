@@ -1,5 +1,5 @@
 ---
-title: "Run models"
+title: "Run models - local version"
 output: github_document
 ---
 
@@ -20,41 +20,37 @@ library(bayesboot)
 library(coda)
 library(grid)
 library(gridExtra)
-library(parallel)
 ```
 
 ```{r load_user_written_functions}
-source("~/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
-source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 ```
 
 ```{r load_tidied_data}
-dat.clean = read.csv('~/dat_clean.csv') 
+dat.clean = read.csv('/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.csv') 
 ```
 
 ```{r fit_models_alabama_males}
 #run time: expect 2 hours
 #fit the bayesian models and put the 1000 posterior samples into a data frame
 system.time(
-  for(sex_i in c("Male", "Female")){
-    #for(state_i in c("Alabama", "Arizona", "Arkansas", "California")) { #saved as results_set_1
-    for(state_i in c("Colorado", "Connecticut", "Delaware", "Washington DC")) { #saved as results_set_2
+  for(state_i in c("Florida", "Georgia", "Illinois", "Indiana")) { #saved as results_set_3 
+    for(sex_i in c("Male", "Female")){
       assign(paste0("r.White.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
       assign(paste0("r.Black.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))
+      print(sex_i)
     }
+    print(state_i)
   }
 )
 
-# r.White <- rbind(r.White.AlabamaMale, r.White.ArizonaMale, r.White.ArkansasMale, r.White.CaliforniaMale,
-#                  r.White.AlabamaFemale, r.White.ArizonaFemale, r.White.ArkansasFemale, r.White.CaliforniaFemale)
-r.White <- rbind(r.White.Colorado.Male, r.White.Connecticut.Male, r.White.Delaware.Male, r.White.WashingtonDC.Male,
-                 r.White.Colorado.Female, r.White.Connecticut.Female, r.White.Delaware.Female, r.White.WashingtonDC.Female)
+r.White <- rbind(r.White.Florida.Male, r.White.Georgia.Male, r.White.Illinois.Male, r.White.Indiana.Male,
+                 r.White.Florida.Female, r.White.Georgia.Female, r.White.Illinois.Female, r.White.Indiana.Female)
 r.White$race <- "White"
 
-# r.Black <- rbind(r.Black.AlabamaMale, r.Black.ArizonaMale, r.Black.ArkansasMale, r.Black.CaliforniaMale,
-#                  r.Black.AlabamaFemale, r.Black.ArizonaFemale, r.Black.ArkansasFemale, r.Black.CaliforniaFemale)
-r.White <- rbind(r.Black.Colorado.Male, r.Black.Connecticut.Male, r.Black.Delaware.Male, r.Black.WashingtonDC.Male,
-                 r.Black.Colorado.Female, r.Black.Connecticut.Female, r.Black.Delaware.Female, r.Black.WashingtonDC.Female)
+r.White <- rbind(r.Black.Florida.Male, r.Black.Georgia.Male, r.Black.Illinois.Male, r.Black.Indiana.Male,
+                 r.Black.Florida.Female, r.Black.Georgia.Female, r.Black.Illinois.Female, r.Black.Indiana.Female)
 r.Black$race <- "Black"
 ```
 
@@ -251,19 +247,12 @@ system.time(
 ```
 
 ```{r save_results}
-#SET 1: Alabama, Arizona, Arkansas, California
-# save(r.All, le.calculations, file = "~/BW_results/results_set_1.Rdata") 
-# write.csv(x = BlackWhite, file = "~/BW_results/BlackWhite_set_1.csv")
-# write.csv(x = age.decomp.estimates, file = "~/BW_results/age_decomp_set_1.csv")
-# write.csv(x = cod.marginal.estimates, file = "~/BW_results/cod_marginal_set_1.csv")
-# write.csv(x = age.cod.estimates, file = "~/BW_results/age_cod_set_1.csv")
-
-#SET 2: Colorado, Connecticut, Delaware, Washington DC
-save(r.All, le.calculations, file = "~/BlackWhiteMortalityGap/Results/results_set_2.Rdata") 
-write.csv(x = BlackWhite, file = "~/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv")
-write.csv(x = age.decomp.estimates, file = "~/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv")
-write.csv(x = cod.marginal.estimates, file = "~/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv")
-write.csv(x = age.cod.estimates, file = "~/BlackWhiteMortalityGap/Results/age_cod_set_2.csv")
+#SET 3: Florida, Georgia, Illinois, Indiana
+save(r.All, le.calculations, file = "/Users/corinneriddell/Documents/BW_results/results_set_3.Rdata") 
+write.csv(x = BlackWhite, file = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_3.csv")
+write.csv(x = age.decomp.estimates, file = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_3.csv")
+write.csv(x = cod.marginal.estimates, file = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_3.csv")
+write.csv(x = age.cod.estimates, file = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv")
 ```
 
 
