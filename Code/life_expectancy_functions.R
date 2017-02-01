@@ -108,23 +108,41 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
   return(COD.decomp.table)
   }
 
-
-make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death, sign.var, decomp.var, decomp.var.prop) {
-  cod.decomp.table["group"] <- interaction(cod.decomp.table[[age.groups]], cod.decomp.table[[sign.var]], sep = ".")
-
-  cod.decomp.table <- cod.decomp.table[order(cod.decomp.table[[age.groups]], 
-                                             cod.decomp.table[[sign.var]], 
-                                             cod.decomp.table[[cause.of.death]]), ]
+#a general function that takes the decomposition table and adds variables to allow the user
+#to easily plot the decomposition in a pleasing manner
+make_pretty_decomp_plot <- function(decomp.table, strat.var.1, strat.var.2, strat.var.3, partition.bar.var, 
+                                    sign.var, decomp.var, decomp.var.prop, type.of.data = NA) {
+  if(is.na(type.of.data) == T | !(type.of.data %in% c("practice", "results"))){
+    return(print("Must supply type of data as either practice or results."))
+  }else if(type.of.data == "practice"){
+    decomp.table["group"] <- interaction(decomp.table[[strat.var.1]], 
+                                         decomp.table[[sign.var]], sep = ".")
+    
+    decomp.table <- decomp.table[order(decomp.table[[strat.var.1]], 
+                                       decomp.table[[sign.var]], 
+                                       decomp.table[[partition.bar.var]]), ]
+  }else if(type.of.data == "results"){
+    decomp.table["group"] <- interaction(decomp.table[[strat.var.1]], 
+                                         decomp.table[[strat.var.2]], 
+                                         decomp.table[[strat.var.3]], 
+                                         decomp.table[[sign.var]], sep = ".")
+    
+    decomp.table <- decomp.table[order(decomp.table[[strat.var.1]], 
+                                       decomp.table[[strat.var.2]], 
+                                       decomp.table[[strat.var.3]], 
+                                       decomp.table[[sign.var]], 
+                                       decomp.table[[partition.bar.var]]), ]    
+  }
   
-  cod.decomp.table$start <- 0
-  cod.decomp.table$finish <- cod.decomp.table[[decomp.var]] #C_xi
+  decomp.table$start <- 0
+  decomp.table$finish <- decomp.table[[decomp.var]] #C_xi
   
-  cod.decomp.table$start2 <- 0
-  cod.decomp.table$finish2 <- cod.decomp.table[[decomp.var.prop]] #C_xi_proportion
+  decomp.table$start2 <- 0
+  decomp.table$finish2 <- decomp.table[[decomp.var.prop]] #C_xi_proportion
   
   updated <- NULL
-  for (g in unique(cod.decomp.table[["group"]])) {
-    subset <- cod.decomp.table[cod.decomp.table[["group"]] == g, ]
+  for (g in unique(decomp.table[["group"]])) {
+    subset <- decomp.table[decomp.table[["group"]] == g, ]
     
     length.group <- dim(subset)[1]
     
@@ -137,23 +155,39 @@ make_dataset_cod_plot <- function(cod.decomp.table, age.groups, cause.of.death, 
         subset$finish2[i] <- subset$start2[i] + subset[[decomp.var.prop]][i]
       }
     }
-  
+    
     updated <- rbind(updated, subset)
-
-    }
+    
+  }
   return(updated)
 }
 
 #contribution to the change in the gap
-contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.table2) {
+contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.table2, type.of.data = NA) {
   if(type.of.decomp == "Age") {
-    contribution_data <- data.frame("Ages" = decomp.table1[["Ages"]], 
-                                    "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]])
+    if(is.na(type.of.data) == T | !(type.of.data %in% c("practice", "results"))){
+      return(print("Must supply type of data as either practice or results."))
+    }else if(type.of.data == "practice"){
+      contribution_data <- data.frame("Ages" = decomp.table1[["Ages"]], 
+                                      "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]])
+    }else if(type.of.data == "results"){
+      contribution_data <- data.frame("Ages" = decomp.table1[["age_minbin"]], 
+                                      "Contribution.to.change" = decomp.table1[["age_cont_yrs"]] - decomp.table2[["age_cont_yrs"]])
+    }
+    
   }
   
   if(type.of.decomp == "COD") {
-     contribution_data <- data.frame("COD" = decomp.table1[["Cause.of.death"]], 
-                                     "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]])
+    if(is.na(type.of.data) == T | !(type.of.data %in% c("practice", "results"))){
+      return(print("Must supply type of data as either practice or results."))
+    }else if(type.of.data == "practice"){
+      contribution_data <- data.frame("COD" = decomp.table1[["Cause.of.death"]], 
+                                      "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]])      
+    }else if(type.of.data == "results"){
+      contribution_data <- data.frame("COD" = decomp.table1[["COD"]], 
+                                      "Contribution.to.change" = decomp.table1[["COD_cont_yrs"]] - decomp.table2[["COD_cont_yrs"]])
+    }
+    
   }
   
   contribution_data[["Contrib.to.change.prop"]] <- contribution_data[["Contribution.to.change"]]/sum(contribution_data[["Contribution.to.change"]])
