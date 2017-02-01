@@ -39,10 +39,14 @@ BlackWhite_results$state <- as.factor(ncols[ , 1])
 BlackWhite_results$year <- as.numeric(ncols[ , 2])
 BlackWhite_results$sex <- as.factor(ncols[ , 3])
 
-ncols <- str_split_fixed(as.character(cod_decomp_results$stratum.id), "\\.", 3)
-cod_decomp_results$state <- as.factor(ncols[ , 1])
-cod_decomp_results$year <- as.numeric(ncols[ , 2])
-cod_decomp_results$sex <- as.factor(ncols[ , 3])
+age_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_decomp_results, by = "stratum.id")
+cod_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], cod_decomp_results, by = "stratum.id")
+age_cod_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_cod_results, by = "stratum.id")
+
+COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
+                "Non-communicable", "Injuries", "All other causes")
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
+age_cod_results$COD <- factor(age_cod_results$COD, COD.levels)
 ```
 
 ```{r add_Census_Region, echo=FALSE}
@@ -82,7 +86,152 @@ BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,
                                       #            "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", 
                                       #            "VT", "VA", "WA", "WV", "WI", "WY")))
 
-cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, stabbrs), cod_decomp_results, by = "stratum.id", all.y = T)
+cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, stabbrs), 
+                            cod_decomp_results, by = "stratum.id", all.y = T)
+```
+
+```{r prep_era_figure_males}
+year1 <- 1969
+year2 <- 1983
+year3 <- 1993
+year4 <- 2013
+
+bw_dat <- BlackWhite_results %>% 
+  filter(year %in% c(year1, year2, year3, year4), is.na(LE_wbgap) == F) %>%
+  select(state, year, LE_wbgap, sex) %>%
+  arrange(year)
+
+bw_dat <- tidyr::spread(bw_dat, year, LE_wbgap) 
+names(bw_dat)[3:6] <- c("first.gap","second.gap", "third.gap", "fourth.gap")  
+bw_dat <- bw_dat %>% mutate(era1.diff = first.gap - second.gap,
+                            era2.diff = second.gap - third.gap,
+                            era3.diff = third.gap - fourth.gap,
+                            state.gdiff.order.1 = reorder(state, first.gap),
+                            state.gdiff.num.1 = as.numeric(state.gdiff.order.1),
+                            state.gdiff.order.2 = reorder(state, second.gap),
+                            state.gdiff.num.2 = as.numeric(state.gdiff.order.2),
+                            state.gdiff.order.3 = reorder(state, third.gap),
+                            state.gdiff.num.3 = as.numeric(state.gdiff.order.3)
+)
+
+cod.df <- data.frame(state = factor(), sex = factor(), era = character(), COD = factor(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+age.df <- data.frame(state = factor(), sex = factor(), era = character(), age_minbin = numeric(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+
+years <- c(1969, 1983, 1993, 2013)
+
+for (state.i in levels(BlackWhite_results$state)) {
+  for (sex.i in c("Male", "Female")) {
+    for (year.i in 1:3) {
+      
+      table1 <- cod_decomp_results %>% filter(state == state.i & sex == sex.i & year == years[year.i]) %>% arrange(COD)
+      table2 <- cod_decomp_results %>% filter(state == state.i & sex == sex.i & year == years[year.i + 1]) %>% arrange(COD)
+      
+      table3 <- age_decomp_results %>% filter(state == state.i & sex == sex.i & year == years[year.i]) %>% arrange(age_minbin)
+      table4 <- age_decomp_results %>% filter(state == state.i & sex == sex.i & year == years[year.i + 1]) %>% arrange(age_minbin)
+      
+      temp1 <- data.frame(state = state.i, sex = sex.i, era = paste0(years[year.i], "-",  years[year.i + 1]),
+                          contribution.to.gap.change(type.of.decomp = "COD", 
+                                                     decomp.table1 = table1, 
+                                                     decomp.table2 = table2, 
+                                                     type.of.data = "results"))
+      
+      temp2 <- data.frame(state = state.i, sex = sex.i, era = paste0(years[year.i], "-",  years[year.i + 1]),
+                          contribution.to.gap.change(type.of.decomp = "Age", 
+                                                     decomp.table1 = table3, 
+                                                     decomp.table2 = table4,
+                                                     type.of.data = "results"))
+      
+      cod.df <- rbind(cod.df, temp1)
+      age.df <- rbind(age.df, temp2)
+    }
+  }
+}
+
+```
+
+```{r more_figure_prep}
+
+cod.df <- make_pretty_decomp_plot(decomp.table = cod.df, strat.var.1 = "state", 
+                        strat.var.2 = "sex", strat.var.3 = "era", 
+                        sign.var = "narrowed_gap",
+                        decomp.var = "Contribution.to.change",
+                        decomp.var.prop = "Contrib.to.change.prop", 
+                        partition.bar.var = "COD", type.of.data = "results")
+
+age.df <- make_pretty_decomp_plot(decomp.table = age.df, strat.var.1 = "state", 
+                        strat.var.2 = "sex", strat.var.3 = "era", 
+                        sign.var = "narrowed_gap",
+                        decomp.var = "Contribution.to.change",
+                        decomp.var.prop = "Contrib.to.change.prop", 
+                        partition.bar.var = "Ages", type.of.data = "results")
+
+```
+
+**Figure 1a: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
+
+```{r figure1, fig.align = "center", echo=F}
+
+cod.df2 <- merge(cod.df, bw_dat, by = c("state", "sex"))
+cod.df2 <- cod.df2 %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
+                              new.start.2 = -start + second.gap, new.finish.2 = -finish + second.gap,
+                              new.start.3 = -start + third.gap, new.finish.3 = -finish + third.gap)
+
+y.labels <- levels(factor(cod.df2$state.gdiff.order.1))
+y.num.breaks <- length(levels(factor(cod.df2$state.gdiff.order.1)))
+
+ggplotly(
+  ggplot(subset(cod.df2, sex == "Male" & era == "1969-1983"), aes(y = state.gdiff.num.1, x = new.start.1)) +
+    geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
+                  ymax = state.gdiff.num.1 + 0.45, 
+                  xmax = new.finish.1, fill = COD), 
+              color = "white") +
+    geom_segment(data = subset(bw_dat, sex == "Male"), 
+                 aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
+    geom_segment(data = subset(bw_dat, sex == "Male"), 
+                 aes(x = first.gap, xend= first.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
+  layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
+
+```
+
+**Figure 1b: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
+
+```{r}
+y.labels.2 <- levels(factor(cod.df2$state.gdiff.order.2))
+y.num.breaks.2 <- length(levels(factor(cod.df2$state.gdiff.order.2)))
+
+ggplotly(
+  ggplot(subset(cod.df2, sex == "Male" & era == "1983-1993"), aes(y = state.gdiff.num.2, x = new.start.2)) +
+    geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.2 - 0.45, 
+                  ymax = state.gdiff.num.2 + 0.45, 
+                  xmax = new.finish.2, fill = COD), 
+              color = "white") +
+    geom_segment(data = subset(bw_dat, sex == "Male"), 
+                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
+    geom_segment(data = subset(bw_dat, sex == "Male"), 
+                 aes(x = second.gap, xend= second.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.2, labels = y.labels.2)) %>% 
+  layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
+```
+
+**Figure 1c: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
+
+```{r}
+y.labels.3 <- levels(factor(cod.df2$state.gdiff.order.3))
+y.num.breaks.3 <- length(levels(factor(cod.df2$state.gdiff.order.3)))
+
+ggplotly(
+  ggplot(subset(cod.df2, sex == "Male" & era == "1993-2013"), aes(y = state.gdiff.num.3, x = new.start.3)) +
+    geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.3 - 0.45, 
+                  ymax = state.gdiff.num.3 + 0.45, 
+                  xmax = new.finish.3, fill = COD), 
+              color = "white") +
+    geom_segment(data = subset(bw_dat, sex == "Male"), 
+                 aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
+    geom_segment(data = subset(bw_dat, sex == "Male"), 
+                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.3, labels = y.labels.3)) %>% 
+  layout(xaxis = list(title = "Life expectancy gap (years): 1993-2013"), yaxis = list(title = NA, autorange = "reversed"))
 ```
 
 **Figure 5: Trends in life expectancy for males between 1969 and 2013 by US state**
