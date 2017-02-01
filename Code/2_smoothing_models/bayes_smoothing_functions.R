@@ -134,3 +134,9 @@ run_analysis <- function(dataset, state1, sex1, race1) {
   jags.model = run_smoothing_model(data.jags)  
   return(clean_smoothing_results(data = data.jags, jags_model = jags.model))
 }
+
+run_analysis_on_subset <- function(subsetted_data) {
+  data.jags = jagsify_data(subsetted_data)
+  jags.model = run_smoothing_model(data.jags)  
+  return(clean_smoothing_results(data = data.jags, jags_model = jags.model))
+}
