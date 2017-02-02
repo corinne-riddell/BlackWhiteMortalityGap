@@ -109,19 +109,37 @@ bw_dat <- BlackWhite_results %>%
 
 bw_dat <- tidyr::spread(bw_dat, year, LE_wbgap) 
 names(bw_dat)[3:6] <- c("first.gap","second.gap", "third.gap", "fourth.gap")  
-bw_dat <- bw_dat %>% mutate(era1.diff = first.gap - second.gap,
-                            era2.diff = second.gap - third.gap,
-                            era3.diff = third.gap - fourth.gap,
-                            state.gdiff.order.1 = reorder(state, first.gap),
-                            state.gdiff.num.1 = as.numeric(state.gdiff.order.1),
-                            state.gdiff.order.2 = reorder(state, second.gap),
-                            state.gdiff.num.2 = as.numeric(state.gdiff.order.2),
-                            state.gdiff.order.3 = reorder(state, third.gap),
-                            state.gdiff.num.3 = as.numeric(state.gdiff.order.3)
-)
+bw_dat.males <- bw_dat %>% filter(sex == "Male") %>%
+  mutate(era1.diff = first.gap - second.gap,
+         era2.diff = second.gap - third.gap,
+         era3.diff = third.gap - fourth.gap,
+         state.gdiff.order.1 = reorder(state, first.gap),
+         state.gdiff.num.1 = as.numeric(state.gdiff.order.1),
+         state.gdiff.order.2 = reorder(state, second.gap),
+         state.gdiff.num.2 = as.numeric(state.gdiff.order.2),
+         state.gdiff.order.3 = reorder(state, third.gap),
+         state.gdiff.num.3 = as.numeric(state.gdiff.order.3)
+  )
 
-cod.df <- data.frame(state = factor(), sex = factor(), era = character(), COD = factor(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
-age.df <- data.frame(state = factor(), sex = factor(), era = character(), age_minbin = numeric(), Contribution.to.change = numeric(), Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+bw_dat.females <- bw_dat %>% filter(sex == "Female") %>%
+  mutate(era1.diff = first.gap - second.gap,
+         era2.diff = second.gap - third.gap,
+         era3.diff = third.gap - fourth.gap,
+         state.gdiff.order.1 = reorder(state, first.gap),
+         state.gdiff.num.1 = as.numeric(state.gdiff.order.1),
+         state.gdiff.order.2 = reorder(state, second.gap),
+         state.gdiff.num.2 = as.numeric(state.gdiff.order.2),
+         state.gdiff.order.3 = reorder(state, third.gap),
+         state.gdiff.num.3 = as.numeric(state.gdiff.order.3)
+  )
+
+cod.df <- data.frame(state = factor(), sex = factor(), era = character(), 
+                     COD = factor(), Contribution.to.change = numeric(), 
+                     Contrib.to.change.prop = numeric(), narrowed_gap = logical())
+
+age.df <- data.frame(state = factor(), sex = factor(), era = character(), 
+                     age_minbin = numeric(), Contribution.to.change = numeric(), 
+                     Contrib.to.change.prop = numeric(), narrowed_gap = logical())
 
 years <- c(1969, 1983, 1993, 2013)
 
@@ -177,25 +195,25 @@ age.df <- make_pretty_decomp_plot(decomp.table = age.df, strat.var.1 = "state",
 
 ```{r figure1, fig.align = "center", echo=F}
 
-cod.df2 <- merge(cod.df, bw_dat, by = c("state", "sex"))
-cod.df2 <- cod.df2 %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
-                              new.start.2 = -start + second.gap, new.finish.2 = -finish + second.gap,
-                              new.start.3 = -start + third.gap, new.finish.3 = -finish + third.gap)
+cod.df.males <- merge(subset(cod.df, sex == "Male"), bw_dat.males, by = c("state"))
+cod.df.males <- cod.df.males %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
+                                        new.start.2 = -start + second.gap, new.finish.2 = -finish + second.gap,
+                                        new.start.3 = -start + third.gap, new.finish.3 = -finish + third.gap)
 
-y.labels <- levels(factor(cod.df2$state.gdiff.order.1))
-y.num.breaks <- length(levels(factor(cod.df2$state.gdiff.order.1)))
+y.labels <- levels(factor(cod.df.males$state.gdiff.order.1))
+y.num.breaks <- length(levels(factor(cod.df.males$state.gdiff.order.1)))
 
 ggplotly(
-  ggplot(subset(cod.df2, sex == "Male" & era == "1969-1983"), aes(y = state.gdiff.num.1, x = new.start.1)) +
+  ggplot(subset(cod.df.males, era == "1969-1983"), aes(y = state.gdiff.num.1, x = new.start.1)) +
     geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
                   ymax = state.gdiff.num.1 + 0.45, 
                   xmax = new.finish.1, fill = COD), 
               color = "white") +
-    geom_segment(data = subset(bw_dat, sex == "Male"), 
+    geom_segment(data = bw_dat.males,
                  aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
-    geom_segment(data = subset(bw_dat, sex == "Male"), 
+    geom_segment(data = bw_dat.males,
                  aes(x = first.gap, xend= first.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
-    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>%
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
 
 ```
@@ -203,18 +221,18 @@ ggplotly(
 **Figure 1b: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
 
 ```{r}
-y.labels.2 <- levels(factor(cod.df2$state.gdiff.order.2))
-y.num.breaks.2 <- length(levels(factor(cod.df2$state.gdiff.order.2)))
+y.labels.2 <- levels(factor(cod.df.males$state.gdiff.order.2))
+y.num.breaks.2 <- length(levels(factor(cod.df.males$state.gdiff.order.2)))
 
 ggplotly(
-  ggplot(subset(cod.df2, sex == "Male" & era == "1983-1993"), aes(y = state.gdiff.num.2, x = new.start.2)) +
+  ggplot(subset(cod.df.males, era == "1983-1993"), aes(y = state.gdiff.num.2, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.2 - 0.45, 
                   ymax = state.gdiff.num.2 + 0.45, 
                   xmax = new.finish.2, fill = COD), 
               color = "white") +
-    geom_segment(data = subset(bw_dat, sex == "Male"), 
+    geom_segment(data = bw_dat.males, 
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
-    geom_segment(data = subset(bw_dat, sex == "Male"), 
+    geom_segment(data = bw_dat.males, 
                  aes(x = second.gap, xend= second.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5), lty = 3) +
     theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.2, labels = y.labels.2)) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
@@ -223,18 +241,18 @@ ggplotly(
 **Figure 1c: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
 
 ```{r}
-y.labels.3 <- levels(factor(cod.df2$state.gdiff.order.3))
-y.num.breaks.3 <- length(levels(factor(cod.df2$state.gdiff.order.3)))
+y.labels.3 <- levels(factor(cod.df.males$state.gdiff.order.3))
+y.num.breaks.3 <- length(levels(factor(cod.df.males$state.gdiff.order.3)))
 
 ggplotly(
-  ggplot(subset(cod.df2, sex == "Male" & era == "1993-2013"), aes(y = state.gdiff.num.3, x = new.start.3)) +
+  ggplot(subset(cod.df.males, era == "1993-2013"), aes(y = state.gdiff.num.3, x = new.start.3)) +
     geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.3 - 0.45, 
                   ymax = state.gdiff.num.3 + 0.45, 
                   xmax = new.finish.3, fill = COD), 
               color = "white") +
-    geom_segment(data = subset(bw_dat, sex == "Male"), 
+    geom_segment(data = bw_dat.males, 
                  aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
-    geom_segment(data = subset(bw_dat, sex == "Male"), 
+    geom_segment(data = bw_dat.males, 
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5), lty = 3) +
     theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.3, labels = y.labels.3)) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1993-2013"), yaxis = list(title = NA, autorange = "reversed"))
