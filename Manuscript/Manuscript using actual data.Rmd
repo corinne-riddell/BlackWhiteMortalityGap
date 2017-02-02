@@ -17,19 +17,24 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 
 
 age_cod_results <-rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"))
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"))
 
 age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"))
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"))
 
 age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_3.csv"))
 
 BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_3.csv"))
 
 cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_3.csv"))
 ```
 
 ```{r tidy_data, echo=FALSE}
@@ -78,7 +83,8 @@ BlackWhite_results$Census_Region <- factor(BlackWhite_results$Census_Region, lev
 ```{r addvar_State_abbreviation, echo=FALSE}
 BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,  
                                                                      labels = c("AL", "AZ", "AR", "CA",
-                                                                                "CO", "CT", "DE", "DC")))
+                                                                                "CO", "CT", "DE", "DC",
+                                                                                "FL", "GA", "IL", "IN")))
                                       # labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
                                       #            "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
                                       #            "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
