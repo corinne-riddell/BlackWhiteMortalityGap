@@ -203,7 +203,7 @@ cod.df.males <- cod.df.males %>% mutate(new.start.1 = -start + first.gap, new.fi
 y.labels <- levels(factor(cod.df.males$state.gdiff.order.1))
 y.num.breaks <- length(levels(factor(cod.df.males$state.gdiff.order.1)))
 
-ggplotly(
+males.era1 <- ggplotly(
   ggplot(subset(cod.df.males, era == "1969-1983"), aes(y = state.gdiff.num.1, x = new.start.1)) +
     geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
                   ymax = state.gdiff.num.1 + 0.45, 
@@ -216,6 +216,7 @@ ggplotly(
     theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>%
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
 
+males.era1
 ```
 
 What we see so far (based on these 12 states):
@@ -242,18 +243,20 @@ Georgia (largely due to injuries), Florida (injuries), Illinois, and Alabama/
 y.labels.2 <- levels(factor(cod.df.males$state.gdiff.order.2))
 y.num.breaks.2 <- length(levels(factor(cod.df.males$state.gdiff.order.2)))
 
-ggplotly(
-  ggplot(subset(cod.df.males, era == "1983-1993"), aes(y = state.gdiff.num.2, x = new.start.2)) +
-    geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.2 - 0.45, 
-                  ymax = state.gdiff.num.2 + 0.45, 
+males.era2 <- ggplotly(
+  ggplot(subset(cod.df.males, era == "1983-1993"), aes(y = state.gdiff.num.1, x = new.start.2)) +
+    geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.1 - 0.45, 
+                  ymax = state.gdiff.num.1 + 0.45, 
                   xmax = new.finish.2, fill = COD), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
-                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
+                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
     geom_segment(data = bw_dat.males, 
-                 aes(x = second.gap, xend= second.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5), lty = 3) +
-    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.2, labels = y.labels.2)) %>% 
+                 aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
+
+males.era2 
 ```
 
 - Be careful with the interpretation: the x-axis is much wider for this plot because of DC.
@@ -270,21 +273,59 @@ ggplotly(
 y.labels.3 <- levels(factor(cod.df.males$state.gdiff.order.3))
 y.num.breaks.3 <- length(levels(factor(cod.df.males$state.gdiff.order.3)))
 
-ggplotly(
-  ggplot(subset(cod.df.males, era == "1993-2013"), aes(y = state.gdiff.num.3, x = new.start.3)) +
-    geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.3 - 0.45, 
-                  ymax = state.gdiff.num.3 + 0.45, 
+males.era3 <- ggplotly(
+  ggplot(subset(cod.df.males, era == "1993-2013"), aes(y = state.gdiff.num.1, x = new.start.3)) +
+    geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.1 - 0.45, 
+                  ymax = state.gdiff.num.1 + 0.45, 
                   xmax = new.finish.3, fill = COD), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
-                 aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
+                 aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
     geom_segment(data = bw_dat.males, 
-                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5), lty = 3) +
-    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.3, labels = y.labels.3)) %>% 
+                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1993-2013"), yaxis = list(title = NA, autorange = "reversed"))
+
+males.era3
 ```
 
 - After 1993, the gap narrowed for all states shown, and in most cases all of the causes contributed to the narrowing of the gap. 
+
+```{r, fig.align="center", fig.height=5, fig.width=9, echo=F, eval = F}
+subplot(males.era1, males.era2, males.era3, shareY = T)
+```
+
+**Figure 1a: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
+
+```{r figure1, fig.align = "center", echo=F}
+
+cod.df.females <- merge(subset(cod.df, sex == "Female"), bw_dat.females, by = c("state"))
+cod.df.females <- cod.df.females %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
+                                        new.start.2 = -start + second.gap, new.finish.2 = -finish + second.gap,
+                                        new.start.3 = -start + third.gap, new.finish.3 = -finish + third.gap)
+
+y.labels <- levels(factor(cod.df.females$state.gdiff.order.1))
+y.num.breaks <- length(levels(factor(cod.df.females$state.gdiff.order.1)))
+
+females.era1 <- ggplotly(
+  ggplot(subset(cod.df.females, era == "1969-1983"), aes(y = state.gdiff.num.1, x = new.start.1)) +
+    geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
+                  ymax = state.gdiff.num.1 + 0.45, 
+                  xmax = new.finish.1, fill = COD), 
+              color = "white") +
+    geom_segment(data = bw_dat.females,
+                 aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
+    geom_segment(data = bw_dat.females,
+                 aes(x = first.gap, xend= first.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>%
+  layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
+
+females.era1
+```
+
+- The gap in life expectancy narrowed for all states shown, except for Arizona and small increase in DC.
+
+- CVD was the biggest contributor to the gap narrowing, but all other causes and communicable diseases led to narrowing in many states. Injuries and non-communicable disease also led to narrowing, but the contribution was small. Cancer prevented the gap from narrowing further in some states.
 
 **Figure 5: Trends in life expectancy for males between 1969 and 2013 by US state**
 
