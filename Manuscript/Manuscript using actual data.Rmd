@@ -702,3 +702,12 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "All other c
                      aes(label = stabbrs), check_overlap = T, size = 2.5)
 )
 ```
+
+
+**eFigure 1: Difference in life expectancy between black in white males, United States, 1969-2013**
+
+![Difference in life expectancy between black in white males, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Men.bmp)
+
+**eFigure 2: Difference in life expectancy between black in white females, United States, 1969-2013**
+
+![Difference in life expectancy between black in white females, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Women.bmp)
