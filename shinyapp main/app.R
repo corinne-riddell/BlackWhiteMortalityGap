@@ -154,13 +154,15 @@ server <- function(input, output) {
         temp2 <- data.frame(State2 = state.i,
                             contribution.to.gap.change(type.of.decomp = "COD",
                                                        list.cod.marginal.tables.smoothed[[first.index]],
-                                                       list.cod.marginal.tables.smoothed[[second.index]])
+                                                       list.cod.marginal.tables.smoothed[[second.index]],
+                                                       type.of.data = "practice")
                             )
         
         temp3 <- data.frame(State2 = state.i,
                             contribution.to.gap.change(type.of.decomp = "Age",
                                                        list.age.decomp.tables.smoothed[[first.index]],
-                                                       list.age.decomp.tables.smoothed[[second.index]])
+                                                       list.age.decomp.tables.smoothed[[second.index]],
+                                                       type.of.data = "practice")
                             )
         
         temp.df <- rbind(temp.df, temp2)
@@ -170,18 +172,28 @@ server <- function(input, output) {
     }
     
     ##### COD ####
-    temp.df <- make_dataset_cod_plot(cod.decomp.table = temp.df, age.groups = "State2", 
-                                     cause.of.death = "COD", sign.var = "narrowed_gap", 
-                                     decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+    # temp.df <- make_dataset_cod_plot(cod.decomp.table = temp.df, age.groups = "State2", 
+    #                                  cause.of.death = "COD", sign.var = "narrowed_gap", 
+    #                                  decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+    
+    temp.df <- make_pretty_decomp_plot(decomp.table = temp.df, strat.var.1 = "State2", 
+                                       partition.bar.var = "COD", sign.var = "narrowed_gap",
+                                       decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop",
+                                       type.of.data = "practice")
     
     temp.df <- merge(temp.df, summary.react(), by = "State2")
     
     temp.df <- temp.df %>% mutate(new.start = -start + first.gap, new.finish = -finish + first.gap)
     
     #### Age ####
-    temp.df2 <- make_dataset_cod_plot(cod.decomp.table = temp.df2, age.groups = "State2", 
-                                     cause.of.death = "Ages", sign.var = "narrowed_gap", 
-                                     decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+    # temp.df2 <- make_dataset_cod_plot(cod.decomp.table = temp.df2, age.groups = "State2", 
+    #                                  cause.of.death = "Ages", sign.var = "narrowed_gap", 
+    #                                  decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop")
+    
+    temp.df2 <- make_pretty_decomp_plot(decomp.table = temp.df2, strat.var.1 = "State2", 
+                                        partition.bar.var = "Ages", sign.var = "narrowed_gap", 
+                                        decomp.var = "Contribution.to.change", decomp.var.prop = "Contrib.to.change.prop", 
+                                        type.of.data = "practice")
     
     temp.df2 <- merge(temp.df2, summary.react(), by = "State2")
     
@@ -450,7 +462,7 @@ whereas those that exacerbated the gap are shown to the right.")
   contribution.data.react <- reactive({
     temp <- contribution.to.gap.change(type.of.decomp = "Age", 
                                        decomp.data.react(),
-                                       decomp.data.react2())
+                                       decomp.data.react2(), type.of.data = "practice")
     
     temp[["x1"]] <- switch(input$contribution_type,
                                  "Years" = temp[["Contribution.to.change"]],
@@ -560,7 +572,7 @@ whereas those that exacerbated the gap are shown to the right.")
   cod.contribution.data.react <- reactive({
     temp <- contribution.to.gap.change(type.of.decomp = "COD", 
                                        cod.decomp.data.react(),
-                                       cod.decomp.data.react2())
+                                       cod.decomp.data.react2(), type.of.data = "practice")
     
      temp[["x1"]] <- switch(input$contribution_type,
                             "Years" = temp[["Contribution.to.change"]],

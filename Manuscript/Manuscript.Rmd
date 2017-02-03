@@ -11,15 +11,23 @@ output: html_document
 The life expectancy of a population serves as a barometer for overall health. In 2014, life expectancy in the United States was 78.7 years, but hidden within this figure, are differences in life expectancy by race. Non-hispanic whites lived 3.6 years longer than non-hispanic blacks [ref: http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf]. While both black and white americans have experienced increases in life expectancy since X, the difference between their life expectancies has varied. During the 1980s, the life expectancy gap widened and then narrowed in the 1990s due to relative mortality improvements among blacks in deaths due to homicide, HIV, unintentional injuries, and, among females, heart disease [Harper 2007]. The gap continued to narrow during the 2000s, but states differed in the magnitude of improvement that was made. For example, the life expectancy gap in New York decreased from 8.0 years to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 years to 5.6 years [Harper 2014]. This study seeks to better understand these state-level differences, by examining how changes in age at death and cause of death over time have worked to narrow or exacerbate the life expectancy gap.
 
 **Background notes from meeting with SH on Dec 20**
--CVD declining starting 1968 - see paper Ruel Stallones - cited in SH JAMA paper - history of decline in CVD.
--Richard cooper also written about BW diff in CVD with epi perspective
--for men there is stagnation from 1969 to late 1980s and then increase in gap with HIV and homicides
--massive crime wave in 1980s, black LE went down from 1984 to 1987 - period when both HIV and homicide went up -- the whole story during that time was HIV and homicide
--fundamentally interested in the qu is there a common story across most states or are there important differences in what happened in NY vs CA vs TX - can we say anything about what we know about state-specific policies, for example CA has strong anti-smoking legislation. Does this help us understand why the gap in Wisconsin was increasing?
--is there a lot of heterogeneity or is there not? - same something about the proportionate contribution by COD and by age - e.g., changes in injuries accounting for X% for closing the gap in NY but in AL it was Y%.
--heterogeneity between states in the contribution of the causes to the decline in the gap - maybe need to break up into at least two time periods with split at 1990.
--this is where the new figures come in which on the y-axis have the contribution to LE gap (in years or %) vs year on the x axis, and geom_line for each COD (do one COD at a time), and individual line for each state (may facet by census region).
--then have a view of how the different COD have contributed to the decline in the gap over time. 
+- CVD declining starting 1968 - see paper Ruel Stallones - cited in SH JAMA paper - history of decline in CVD.
+
+- Richard cooper also written about BW diff in CVD with epi perspective
+
+- for men there is stagnation from 1969 to late 1980s and then increase in gap with HIV and homicides
+
+- massive crime wave in 1980s, black LE went down from 1984 to 1987 - period when both HIV and homicide went up -- the whole story during that time was HIV and homicide
+
+- fundamentally interested in the qu is there a common story across most states or are there important differences in what happened in NY vs CA vs TX - can we say anything about what we know about state-specific policies, for example CA has strong anti-smoking legislation. Does this help us understand why the gap in Wisconsin was increasing?
+
+- is there a lot of heterogeneity or is there not? - same something about the proportionate contribution by COD and by age - e.g., changes in injuries accounting for X% for closing the gap in NY but in AL it was Y%.
+
+- heterogeneity between states in the contribution of the causes to the decline in the gap - maybe need to break up into at least two time periods with split at 1990.
+
+- this is where the new figures come in which on the y-axis have the contribution to LE gap (in years or %) vs year on the x axis, and geom_line for each COD (do one COD at a time), and individual line for each state (may facet by census region).
+
+- then have a view of how the different COD have contributed to the decline in the gap over time. 
 
 ###Methods
 
@@ -36,9 +44,11 @@ The data produced two statistical issues that were addressed by our statistical 
 
 To address these challenges, we used a Bayesian autoregressive model to smooth the data over time, and incorporated a truncated Poisson model to impute the suppressed death counts. Specifically, we used Poisson regression to model the number of deaths in each state-age-sex-race-year category as a function of the at-risk population. The mortality rates over time within each state-age-sex-race category are modelled autoregressively, where the log mortality rate in the current year was modelled as a normal variable centred at the log mortality rate estimated from the previous year. Truncated Poisson regression was used to impute the supressed death counts, by specifying that the supressed counts were sampled from a Poisson distribution and were constrained to be between 1 and the maximum of 9 and the at-risk population size (which may be smaller than 9). These models were run separately for every combination of state, race, and sex, and produced death counts that had been smoothed over time for every cause of death within each age group.
 
-To calculate life expectancy at birth, the smoothed death counts were aggregated to estimate the total deaths in each age group and standard life table methods were applied [ref]. Life expectancy at birth (in years) was calculated for blacks and whites in each state and year according to sex. The difference in life expectancies between blacks and white was calculated by subtracting the black life expectancy from the white life expectancy in every state, year, and sex.
+To calculate life expectancy at birth, the smoothed death counts were aggregated to estimate the total deaths in each age group and standard life table methods were applied [ref]. Life expectancy at birth (in years) was calculated for blacks and whites in each state and year according to sex. The difference in life expectancies between blacks and whites was calculated by subtracting the black life expectancy from the white life expectancy in every state, year, and sex.
 
-To decompose the black-white difference in life expectancy, we performed a decomposition analysis using the Arriaga method [ref]. First, the decomposition analysis partitions the difference in life expectancy by age group, which can be interpreted as the amount of the gap (in years) that can be attributed to higher age-specific mortality rates in blacks. For example, a decomposition of a gap of five years may find that two of the five years (40% of the gap) is attributable to a higher mortality rate in blacks in the youngest age group (< 1 years old) compared with the youngest whites. This age-specific decomposition can be further partitioned according to cause of death, producing the number of years of the gap that is attributable to every age- and cause-of-death combination. For example, a decomposition of a gap of 8 years may find that 1.3 years of this gap is attributable to more injury-related deaths in blacks aged 25-29 years old. We also summed these age- and cause-of-death partitions over all ages to calculate the marginal contribution of each cause-of-death to the difference.
+To decompose the year- and state- specific difference in life expectancy between blacks and whites, we performed a decomposition analysis using the Arriaga method [ref]. First, the decomposition analysis partitions the difference in life expectancy by age group, which can be interpreted as the amount of the gap (in years) that can be attributed to higher age-specific mortality rates in blacks. For example, a decomposition of a gap of five years may find that two of the five years (40% of the gap) is attributable to a higher mortality rate in blacks in the youngest age group (< 1 years old) compared with the youngest whites. This age-specific decomposition can be further partitioned according to cause of death, producing the number of years of the gap that is attributable to every age- and cause-of-death combination. For example, a decomposition of a gap of 8 years may find that 1.3 years of this gap is attributable to more injury-related deaths in blacks aged 25-29 years old. We also summed these age- and cause-of-death partitions over all ages to calculate the marginal contribution of each cause-of-death to the difference.
+
+In order to understand whether states fared similarly over time, we divided the time frame into three eras which roughly encapsulate an initial period of increases in life expectancy for both races and sexes (1969-1983), an intermediate period of decreases and stagnating life expectancy for blacks but not for whites (1983-1993) and a final period of increasing life expectancy for both races (1993-2013). While these eras represent different lengths of time, they best capture three distinct periods of changes to the difference in life expectancy: an intial narrowing of the gap, followed by a widening of the gap that diminished previous progress, and the most recent twenty years of sustained narrowing (Appendix Figures 1 and 2).
 
 **Will need to change the following**
 Finally, we calculated the change in the life expectancy gap over time within each state-, race-, and sex-specific stratum. The change in the life expectancy gap is calculated by substracting the gap that occurred in the later year from the gap that occurred in the earlier year. This change in gap can be decomposed by age by taking the difference in the age-specfic contributions across the two years, and can similarly be calculated by cause.
@@ -551,6 +561,14 @@ for (cod in levels(cod.contributions$Cause.of.death)) {
 | Non-communicable disease | Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Sydrome and Nephrosis.  |
 | Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
+
+**eFigure 1: Difference in life expectancy between black in white males, United States, 1969-2013**
+
+![Difference in life expectancy between black in white males, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Men.bmp)
+
+**eFigure 2: Difference in life expectancy between black in white females, United States, 1969-2013**
+
+![Difference in life expectancy between black in white females, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Women.bmp)
 
 **Life table and decomposition methodology**
 
