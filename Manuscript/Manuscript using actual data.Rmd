@@ -18,23 +18,28 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 
 age_cod_results <-rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"))
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"),
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"))
 
 age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"))
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"),
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"))
 
 age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_3.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_3.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_4.csv"))
 
 BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_3.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_3.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_4.csv"))
 
 cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_3.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_3.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_4.csv"))
 ```
 
 ```{r tidy_data, echo=FALSE}
@@ -83,8 +88,10 @@ BlackWhite_results$Census_Region <- factor(BlackWhite_results$Census_Region, lev
 ```{r addvar_State_abbreviation, echo=FALSE}
 BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,  
                                                                      labels = c("AL", "AZ", "AR", "CA",
-                                                                                "CO", "CT", "DE", "DC",
-                                                                                "FL", "GA", "IL", "IN")))
+                                                                                "CO", "CT", "DE",
+                                                                                "FL", "GA", "IL", "IN",
+                                                                                "IA", "KS", "KY", "LA",
+                                                                                "DC")))
                                       # labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
                                       #            "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
                                       #            "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
@@ -384,20 +391,28 @@ females.era3
 
 **Figure 5: Trends in life expectancy for males between 1969 and 2013 by US state**
 
-```{r figure5, fig.align="center", fig.height=4, fig.width=9, echo=F}
+```{r figure5, fig.align="center", fig.height=4, fig.width=11, echo=F}
 ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_white, x = year)) + 
            geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
            geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(y = LE_black, col = state), lty=2) +
-           geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +           
            geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
            facet_wrap( ~ Census_Region) +
            ylab("Life expectancy (years)") +
            xlab("Year") +
-           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), aes(label = stabbrs), check_overlap = T, size = 2.5) +
-           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), aes(label = stabbrs, y = LE_black), check_overlap = T, size = 2.5))
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
 
+ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_black, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) +
+           facet_wrap( ~ Census_Region) +
+           ylab("Life expectancy (years)") +
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
 
 ```
 
@@ -422,15 +437,24 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_wbgap, x = y
 ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_white, x = year)) + 
            geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
            geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(y = LE_black, col = state), lty=2) +
-           geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +           
            geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
            facet_wrap( ~ Census_Region) +
            ylab("Life expectancy (years)") +
            xlab("Year") +
-           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), aes(label = stabbrs), check_overlap = T, size = 2.5) +
-           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), aes(label = stabbrs, y = LE_black), check_overlap = T, size = 2.5))
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
+
+ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_black, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +
+           geom_line(aes(col = state)) +
+           facet_wrap( ~ Census_Region) +
+           ylab("Life expectancy (years)") +
+           xlab("Year") +
+           geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
 
 
 ```
