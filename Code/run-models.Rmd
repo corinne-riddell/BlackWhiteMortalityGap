@@ -41,7 +41,8 @@ system.time(
     #for(state_i in c("Alabama", "Arizona", "Arkansas", "California")) { #saved as results_set_1
     #for(state_i in c("Colorado", "Connecticut", "Delaware", "Washington DC")) { #saved as results_set_2
     #for(state_i in c("Florida", "Georgia", "Illinois", "Indiana")) { #saved as results_set_3  
-    for(state_i in c("Iowa", "Kansas", "Kentucky", "Louisiana")) { #saved as results_set_4  
+    #for(state_i in c("Iowa", "Kansas", "Kentucky", "Louisiana")) { #saved as results_set_4  
+     for(state_i in c("Maryland", "New York", "North Carolina", "Texas", "Virginia", "Wisconsin" )) { #saved as results_set_5  
       print(state_i)
       assign(paste0("r.White.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
       assign(paste0("r.Black.", gsub(" ", "", state_i), ".", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))
@@ -55,14 +56,20 @@ system.time(
 #                  r.White.Colorado.Female, r.White.Connecticut.Female, r.White.Delaware.Female, r.White.WashingtonDC.Female)
 # r.White <- rbind(r.White.Florida.Male, r.White.Georgia.Male, r.White.Illinois.Male, r.White.Indiana.Male,
 #                  r.White.Florida.Female, r.White.Georgia.Female, r.White.Illinois.Female, r.White.Indiana.Female)
-r.White <- rbind(r.White.Iowa.Male, r.White.Kansas.Male, r.White.Kentucky.Male, r.White.Louisiana.Male,
-                 r.White.Iowa.Female, r.White.Kansas.Female, r.White.Kentucky.Female, r.White.Louisiana.Female)
+# r.White <- rbind(r.White.Iowa.Male, r.White.Kansas.Male, r.White.Kentucky.Male, r.White.Louisiana.Male,
+#                  r.White.Iowa.Female, r.White.Kansas.Female, r.White.Kentucky.Female, r.White.Louisiana.Female)
+r.White <- rbind(r.White.Maryland.Male, r.White.NewYork.Male, r.White.NorthCarolina.Male, r.White.Texas.Male, 
+                 r.White.Virginia.Male, r.White.Wisconsin.Male, 
+                 r.White.Maryland.Female, r.White.NewYork.Female, r.White.NorthCarolina.Female, r.White.Texas.Female, 
+                 r.White.Virginia.Female, r.White.Wisconsin.Female)
 r.White$race <- "White"
 
 # r.Black <- rbind(r.Black.AlabamaMale, r.Black.ArizonaMale, r.Black.ArkansasMale, r.Black.CaliforniaMale,
 #                  r.Black.AlabamaFemale, r.Black.ArizonaFemale, r.Black.ArkansasFemale, r.Black.CaliforniaFemale)
-r.Black <- rbind(r.Black.Iowa.Male, r.Black.Kansas.Male, r.Black.Kentucky.Male, r.Black.Louisiana.Male,
-                 r.Black.Iowa.Female, r.Black.Kansas.Female, r.Black.Kentucky.Female, r.Black.Louisiana.Female)
+r.Black <- rbind(r.Black.Maryland.Male, r.Black.NewYork.Male, r.Black.NorthCarolina.Male, r.Black.Texas.Male, 
+                 r.Black.Virginia.Male, r.Black.Wisconsin.Male, 
+                 r.Black.Maryland.Female, r.Black.NewYork.Female, r.Black.NorthCarolina.Female, r.Black.Texas.Female, 
+                 r.Black.Virginia.Female, r.Black.Wisconsin.Female)
 r.Black$race <- "Black"
 ```
 
@@ -282,12 +289,18 @@ system.time(
 # write.csv(x = age.cod.estimates, file = "~/BlackWhiteMortalityGap/Results/age_cod_set_3.csv")
 
 #SET 4: Iowa, Kansas, Kentucky, Louisiana
-save(r.All, le.calculations, file = "~/BW_results/results_set_4.Rdata") 
-write.csv(x = BlackWhite, file = "~/BlackWhiteMortalityGap/Results/BlackWhite_set_4.csv")
-write.csv(x = age.decomp.estimates, file = "~/BlackWhiteMortalityGap/Results/age_decomp_set_4.csv")
-write.csv(x = cod.marginal.estimates, file = "~/BlackWhiteMortalityGap/Results/cod_marginal_set_4.csv")
-write.csv(x = age.cod.estimates, file = "~/BlackWhiteMortalityGap/Results/age_cod_set_4.csv")
+# save(r.All, le.calculations, file = "~/BW_results/results_set_4.Rdata") 
+# write.csv(x = BlackWhite, file = "~/BlackWhiteMortalityGap/Results/BlackWhite_set_4.csv")
+# write.csv(x = age.decomp.estimates, file = "~/BlackWhiteMortalityGap/Results/age_decomp_set_4.csv")
+# write.csv(x = cod.marginal.estimates, file = "~/BlackWhiteMortalityGap/Results/cod_marginal_set_4.csv")
+# write.csv(x = age.cod.estimates, file = "~/BlackWhiteMortalityGap/Results/age_cod_set_4.csv")
 
+#SET 5: Maryland, New York, North Carolina, Texas, Virginia, Wisconsin
+save(r.All, le.calculations, file = "~/BW_results/results_set_5.Rdata") 
+write.csv(x = BlackWhite, file = "~/BlackWhiteMortalityGap/Results/BlackWhite_set_5.csv")
+write.csv(x = age.decomp.estimates, file = "~/BlackWhiteMortalityGap/Results/age_decomp_set_5.csv")
+write.csv(x = cod.marginal.estimates, file = "~/BlackWhiteMortalityGap/Results/cod_marginal_set_5.csv")
+write.csv(x = age.cod.estimates, file = "~/BlackWhiteMortalityGap/Results/age_cod_set_5.csv")
 ```
 
 
