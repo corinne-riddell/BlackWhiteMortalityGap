@@ -63,35 +63,40 @@ age_cod_results <-rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhi
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"),
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"))
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"))
 
 age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"))
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"))
 
 age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_3.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_5.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_6.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_6.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_7.csv"))
 
 BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_3.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_5.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_6.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_6.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_7.csv"))
 
 cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_3.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_5.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_6.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_6.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_7.csv"))
 ```
 
 ```{r tidy_data, echo=FALSE}
@@ -137,6 +142,36 @@ BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alabama", "Ken
 BlackWhite_results$Census_Region <- factor(BlackWhite_results$Census_Region, levels = c("West", "Midwest", "South Central", "South Atlantic", "Northeast"))
 ```
 
+```{r add_Census_Division, echo = F}
+BlackWhite_results$Census_Division <- NA
+
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Connecticut", "Maine", "Massachusetts", 
+                                                                   "New Hampshire", "Rhode Island", "Vermont")] <- "New England"
+
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("New Jersey", "New York", "Pennsylvania")] <- "Mid-Atlantic"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Illinois", "Indiana", "Michigan", "Ohio", 
+                                                                 "Wisconsin")] <- "East North Central"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
+                                                                 "Nebraska", "North Dakota", "South Dakota")] <- "West North Central"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
+                                                                 "North Carolina", "South Carolina", 
+                                                                 "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee")] <- "East South Central"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "West South Central"       
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
+                                                                 "Nevada", "New Mexico", "Utah", "Wyoming")] <- "Mountain"
+
+BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alaska", "California", "Hawaii", "Oregon","Washington")] <- "Pacific"
+
+```
+
+
 ```{r addvar_State_abbreviation, echo=FALSE}
 BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,  
                                                                      labels = c("AL", "AZ", "AR", "CA",
@@ -144,8 +179,11 @@ BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,
                                                                                 "FL", "GA", "IL", "IN",
                                                                                 "IA", "KS", "KY", "LA",
                                                                                 "MD", "MA", "MI", "MN", 
-                                                                                "MS", "MO", "NE", "NY", 
-                                                                                "NC", "TX",
+                                                                                "MS", "MO", "NE", 
+                                                                                "NV", "NJ", "NM", 
+                                                                                "NY", 
+                                                                                "NC", "OH", "OK", "OR",
+                                                                                "TX",
                                                                                 "VA", "DC", "WI")))
                                                                                 
                                       # labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
