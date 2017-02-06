@@ -206,7 +206,7 @@ BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,
                                       #            "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", 
                                       #            "VT", "VA", "WA", "WV", "WI", "WY")))
 
-cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, stabbrs), 
+cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, Census_Division, stabbrs), 
                             cod_decomp_results, by = "stratum.id", all.y = T)
 ```
 
@@ -304,7 +304,7 @@ age.df <- make_pretty_decomp_plot(decomp.table = age.df, strat.var.1 = "state",
                         partition.bar.var = "Ages", type.of.data = "results")
 
 cod.df <- merge(cod.df, BlackWhite_results[BlackWhite_results$year == 1969 & BlackWhite_results$sex == "Male", 
-                                           c("state", "Census_Region", "stabbrs")], by = c("state"))
+                                           c("state", "Census_Region", "Census_Division", "stabbrs")], by = c("state"))
 ```
 
 *Changes to the difference in life expectancy in US males*
@@ -317,28 +317,43 @@ sum1 <- BlackWhite_results %>% filter(year == 1969 & sex == "Male") %>%
   select(state, LE_wbgap_lcl, LE_wbgap, LE_wbgap_ucl)
 
 diff <- bw_dat.males %>% arrange(era1.diff)
+
+max1 <- max(cod.df$Contribution.to.change[cod.df$state == diff[dim(diff)[1], ]$state & cod.df$era == "1969-1983"])
+mc1 <- cod.df$COD[cod.df$state == diff[dim(diff)[1], ]$state & cod.df$era == "1969-1983" & cod.df$Contribution.to.change == max1]
+
+max2 <- max(cod.df$Contribution.to.change[cod.df$state == diff[dim(diff)[1]-1, ]$state & cod.df$era == "1969-1983"])
+mc2 <- cod.df$COD[cod.df$state == diff[dim(diff)[1]-1, ]$state & cod.df$era == "1969-1983" & cod.df$Contribution.to.change == max2]
+
+max3 <- max(cod.df$Contribution.to.change[cod.df$state == diff[dim(diff)[1]-2, ]$state & cod.df$era == "1969-1983"])
+mc3 <- cod.df$COD[cod.df$state == diff[dim(diff)[1]-2, ]$state & cod.df$era == "1969-1983" & cod.df$Contribution.to.change == max3]
+
+max4 <- max(cod.df$Contribution.to.change[cod.df$state == diff[dim(diff)[1]-3, ]$state & cod.df$era == "1969-1983"])
+mc4 <- cod.df$COD[cod.df$state == diff[dim(diff)[1]-3, ]$state & cod.df$era == "1969-1983" & cod.df$Contribution.to.change == max4]
+
+max5 <- max(cod.df$Contribution.to.change[cod.df$state == diff[dim(diff)[1]-4, ]$state & cod.df$era == "1969-1983"])
+mc5 <- cod.df$COD[cod.df$state == diff[dim(diff)[1]-4, ]$state & cod.df$era == "1969-1983" & cod.df$Contribution.to.change == max5]
 ```
 
-What we see so far (based on these 22 states):
+What we see so far (based on these `r dim(sum1)[1]` states):
 
 - The gap in 1969 ranges from `r round(sum1[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum1[1, ]$LE_wbgap_lcl, 1)`, `r round(sum1[1, ]$LE_wbgap_ucl, 1)`] in `r sum1[1, ]$state ` to `r round(sum1[dim(sum1)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum1[dim(sum1)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum1[dim(sum1)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum1[dim(sum1)[1], ]$state `.
 
-- For most states, the gap decreases between 1969 and 1983, with the largest decrease found in `r diff[dim(diff)[1], ]$state` (change in gap of `r round(diff[dim(diff)[1], ]$era1.diff, 1)` (all other causes), 
-`r diff[dim(diff)[1]-1, ]$state` (largely due to injuries), `r diff[dim(diff)[1]-2, ]$state` (injuries), `r diff[dim(diff)[1]-3, ]$state` (injuries), and `r diff[dim(diff)[1]-4, ]$state` (injuries).
+- For most states, the gap decreases between 1969 and 1983, with the largest decrease found in `r diff[dim(diff)[1], ]$state` (change in gap of `r round(diff[dim(diff)[1], ]$era1.diff, 1)`, `r round(max1,1)` of which is due to `r mc1`, 
+`r diff[dim(diff)[1]-1, ]$state` (`r round(max2,2)` due to `r mc2`), `r diff[dim(diff)[1]-2, ]$state` (`r round(max3,1)` due to `r mc3`), `r diff[dim(diff)[1]-3, ]$state` (`r round(max4,1)` due to `r mc4`), and `r diff[dim(diff)[1]-4, ]$state` (`r round(max5,1)` due to `r mc5`).
 
-- The gap increases for some states. Most notably in DC (CVD and other causes), Wisconsin (CVD), California (CVD). Also, for these states injuries do not contribute as much to narrowing the gap, so their gap increasing appears to be due to a combination of changes to CVD making blacks relatively worse off and less changes to injuries than experienced by other states.
+- The gap increases for some states. Most notably in DC (CVD and other causes), Minnesota (CVD), Wisconsin (CVD), California (CVD). Also, for these states injuries do not contribute as much to narrowing the gap (and in Minnesota, injuries widens the gap), so their gap increasing appears to be due to a combination of changes to CVD making blacks relatively worse off and less changes to injuries than experienced by other states.
 
-- Injuries across the board contribute to narrowing the gap over time.
+- Injuries across the board contribute to narrowing the gap over time, except for Minnesota.
 
-- Communicable disease narrows (except arizona), but much smaller contribution than injuries.
+- Communicable disease narrows (except Arizona), but much smaller contribution than injuries.
 
 - Generally, all other causes narrows, again much smaller contribution than injuries.
 
-- Generally, CVD increase gap.
+- Generally, CVD increases gap.
 
-- Cancer increases the gap everywhere. Size of contribution to change is a little smaller than CVD.
+- Cancer increases the gap everywhere except NM. Size of contribution to change is a little smaller than CVD.
 
-- Generally, non-communicable increase the gap but the contribution is tiny. Notable diff is in NYC and MD it decrease gap.
+- Generally, non-communicable disease increases the gap but the contribution is tiny. Notable differences in Massachusetts, New York, and Maryland where it decreases gap.
 
 **Figure 1a: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
@@ -383,11 +398,11 @@ sum2 <- BlackWhite_results %>% filter(year == 1983 & sex == "Male") %>%
 
 - The gap in 1983 ranges from `r round(sum2[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum2[1, ]$LE_wbgap_lcl, 1)`, `r round(sum2[1, ]$LE_wbgap_ucl, 1)`] in `r sum2[1, ]$state ` to `r round(sum2[dim(sum2)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum2[dim(sum2)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum2[dim(sum2)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum2[dim(sum2)[1], ]$state `.
 
-- Except for Arizona and Kentucky, the life expectancy gap increases in each state, with the biggest driver being communicable disease (HIV/AIDS), especially in MD, NY, and CT. Injuries also contribute to the gap widening over this time frame, most notably in Wisconsin, MD, and LA. Thus, compared to previous period, these two causes of death led to a widening rather than a narrowing of the gap. 
+- Except for New Mexico, Arizona, and Kentucky, the life expectancy gap increases in each state, with the biggest driver being communicable disease (HIV/AIDS), especially in MD, NY, NJ, and CT. Injuries also contribute to the gap widening over this time frame, most notably in Wisconsin, MD, and LA. Thus, compared to previous period, these two causes of death led to a widening rather than a narrowing of the gap. 
 
-- Similar to the firts time frame, CVD and cancer also contributed to widening the gap over time. Also similar is the minimal effect of  non-communicable disease on the gap, while all other causes contributes to narrowing the gap, with greatest contribution to narrowing in NY, CT, and FL.
+- Similar to the firts time frame, CVD and cancer also contribute to widening the gap over time. Also similar is the minimal effect of  non-communicable disease on the gap, while all other causes contributes to narrowing the gap, with greatest contribution to narrowing in NY, CT, Mississippi, and FL.
 
-- DC was especially hard hit, with injuries driving the increase in the gap from 10.5 years to 15.9 years in this 10-year period.
+- DC was especially hard hit, with injuries driving the increase in the gap from 10.5 years to 15.9 years in this 10-year period, an increase of X, Y of which can be attributed to injuries.
 
 **Figure 1b: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
 
@@ -421,9 +436,9 @@ sum4 <- BlackWhite_results %>% filter(year == 2013 & sex == "Male") %>%
   select(state, LE_wbgap_lcl, LE_wbgap, LE_wbgap_ucl)
 ```
 
-- The gap in 1993 ranges from `r round(sum3[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum3[1, ]$LE_wbgap_lcl, 1)`, `r round(sum3[1, ]$LE_wbgap_ucl, 1)`] in `r sum3[1, ]$state ` to `r round(sum3[dim(sum3)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum3[dim(sum3)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum3[dim(sum3)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum3[dim(sum3)[1], ]$state `.
+- The gap in 1993 ranges from `r round(sum3[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum3[1, ]$LE_wbgap_lcl, 1)`, `r round(sum3[1, ]$LE_wbgap_ucl, 1)`] in `r sum3[1, ]$state ` to `r round(sum3[dim(sum3)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum3[dim(sum3)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum3[dim(sum3)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum3[dim(sum3)[1], ]$state ` (or `r round(sum3[dim(sum3)[1]-1, ]$LE_wbgap, 1)` when DC is excluded).
 
--By 2013, it ranges from `r round(sum4[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum4[1, ]$LE_wbgap_lcl, 1)`, `r round(sum4[1, ]$LE_wbgap_ucl, 1)`] in `r sum4[1, ]$state ` to `r round(sum4[dim(sum4)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum4[dim(sum4)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum4[dim(sum4)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum4[dim(sum4)[1], ]$state `.
+- By 2013, it ranges from `r round(sum4[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum4[1, ]$LE_wbgap_lcl, 1)`, `r round(sum4[1, ]$LE_wbgap_ucl, 1)`] in `r sum4[1, ]$state ` to `r round(sum4[dim(sum4)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum4[dim(sum4)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum4[dim(sum4)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum4[dim(sum4)[1], ]$state ` (or `r round(sum4[dim(sum4)[1]-1, ]$LE_wbgap, 1)` when DC is excluded).
 
 - After 1993, the gap narrowed for all states shown, and in most cases all of the causes contributed to the narrowing of the gap. Notice again that in Wisconsin and DC, changes to CVD mortality counteract the gap narrowing, while in Arizona changes to communicable disease counteract the narrowing.
 
@@ -465,17 +480,25 @@ sum5 <- BlackWhite_results %>% filter(year == 1969 & sex == "Female") %>%
 
 Quick summary
 
-- Most states saw decreasing gaps in first era. Generally, all of the causes, except for cancer, were associated with changes that relatively benefitted blacks, with the biggest contributor to the narrowing gap being CVD and all other causes. However, in Wisconsin and CA, CVD led to a widening gap.
+- Most states saw decreasing gaps in first era. 
+
+- However, increases were found in Arizona, Oregon, Minnesota, and Wisconsin, largely due to cardiovascular disease. Thus, the effect of CVD on the LE varied by state over this time period in women.
+
+- Otherwise, most of the other causes contributed to the gap narrowing, although cancer was associated with narrowing in some states (MS, NM, Oregon, for example) and increases in others (OH, Missouri, Kentucky).
+
+- The biggest contributor to the narrowing gap being CVD (in most states, although heterogeniety) and all other causes. 
 
 - During the second era, the gap stayed approx. the same or widened across most states. Delaware, Kentucky, Kansas, Alabama, were notable exceptions were the gap narrowed -- didn't see effect of communicable disease like other states on the gap increasing (NY, FL, DC, MD, CT, hardest hit). 
 
 - In women, changes in injury related deaths doesn't play a big role (except DC).
 
-- CVD differential by state. Contributes to widening the gap in CA and DC, for example, and narrowing it in KS and Kentucky.
+- CVD differential by state. Contributes to widening the gap in CA, Mississippi, and DC, for example, and narrowing it in Kansas, Delaware, and Kentucky.
 
-- All other causes narrows across states (except DC, Indiana). Cancer increases the gap by a bit.
+- All other causes narrows across states (except DC, Indiana). Cancer increases the gap by a bit (except Oregon and Minnesota).
 
 - During the third era, in-line with males, the life expectancy gap decreased during the last 20 year period, and generally speaking all the causes contributed to the gap narrowing over time. The biggest contributors were CVD and all other causes.
+
+- In a few states, Cancer contributed to widening the gap (NM, Oregon, Arizona, DC).
 
 **Figure 2a: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
