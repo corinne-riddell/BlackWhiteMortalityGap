@@ -64,7 +64,9 @@ age_cod_results <-rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhi
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"))
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv")#,
+                        #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
+                        )
 
 age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
@@ -72,7 +74,9 @@ age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWh
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"))
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv")#,
+                         #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
+                         )
 
 age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv"),
@@ -80,7 +84,9 @@ age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Blac
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_5.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_7.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_7.csv")#,
+                            #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_8.csv")
+                            )
 
 BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv"),
@@ -88,7 +94,9 @@ BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Blac
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_5.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_7.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_7.csv")#,
+                            #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_8.csv")
+                            )
 
 cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv"),
@@ -96,7 +104,9 @@ cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Blac
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_5.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_7.csv"))
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_7.csv")#,
+                            #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_8.csv")
+                            )
 ```
 
 ```{r tidy_data, echo=FALSE}
@@ -117,6 +127,8 @@ age_cod_results$COD <- factor(age_cod_results$COD, COD.levels)
 ```
 
 ```{r add_Census_Region, echo=FALSE}
+#note that the Census Region of the South is partitioned into two for better display.
+
 BlackWhite_results$Census_Region <- "South"
 BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
                                                  "Nebraska", "North Dakota", "South Dakota", 
@@ -142,7 +154,7 @@ BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alabama", "Ken
 BlackWhite_results$Census_Region <- factor(BlackWhite_results$Census_Region, levels = c("West", "Midwest", "South Central", "South Atlantic", "Northeast"))
 ```
 
-```{r add_Census_Division, echo = F}
+```{r add_Census_Division, ncol = 3, echo = F}
 BlackWhite_results$Census_Division <- NA
 
 BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Connecticut", "Maine", "Massachusetts", 
@@ -150,41 +162,42 @@ BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Connecticut"
 
 BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("New Jersey", "New York", "Pennsylvania")] <- "Mid-Atlantic"
 
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Illinois", "Indiana", "Michigan", "Ohio", 
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Illinois", "Indiana", "Michigan", "Ohio", 
                                                                  "Wisconsin")] <- "East North Central"
 
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
                                                                  "Nebraska", "North Dakota", "South Dakota")] <- "West North Central"
 
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
                                                                  "North Carolina", "South Carolina", 
                                                                  "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
 
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee")] <- "East South Central"
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee")] <- "East South Central"
 
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "West South Central"       
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "West South Central"       
 
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
                                                                  "Nevada", "New Mexico", "Utah", "Wyoming")] <- "Mountain"
 
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alaska", "California", "Hawaii", "Oregon","Washington")] <- "Pacific"
+BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Alaska", "California", "Hawaii", "Oregon","Washington")] <- "Pacific"
+
+BlackWhite_results$Census_Division <- factor(BlackWhite_results$Census_Division, levels = c("New England", "Mid-Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"))
 
 ```
-
 
 ```{r addvar_State_abbreviation, echo=FALSE}
 BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,  
                                                                      labels = c("AL", "AZ", "AR", "CA",
-                                                                                "CO", "CT", "DE",
-                                                                                "FL", "GA", "IL", "IN",
-                                                                                "IA", "KS", "KY", "LA",
-                                                                                "MD", "MA", "MI", "MN", 
-                                                                                "MS", "MO", "NE", 
-                                                                                "NV", "NJ", "NM", 
-                                                                                "NY", 
-                                                                                "NC", "OH", "OK", "OR",
-                                                                                "TX",
-                                                                                "VA", "DC", "WI")))
+                                                                                "CO", "CT", "DE", "FL",
+                                                                                "GA", "IL", "IN", "IA",
+                                                                                "KS", "KY", "LA", "MD",
+                                                                                "MA", "MI", "MN", "MS",
+                                                                                "MO", "NE", "NV", "NJ", 
+                                                                                "NM", "NY", "NC", "OH", 
+                                                                                "OK", "OR", "TX", "VA", 
+                                                                                "DC", "WI")))
+#set 8:
+#"PA", "RI", "SC", "TN", "WA", "WV"
                                                                                 
                                       # labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
                                       #            "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
@@ -294,7 +307,7 @@ cod.df <- merge(cod.df, BlackWhite_results[BlackWhite_results$year == 1969 & Bla
                                            c("state", "Census_Region", "stabbrs")], by = c("state"))
 ```
 
-*Changes to the differency in life expectancy in US males*
+*Changes to the difference in life expectancy in US males*
 
 **Figure 1a** displays each state's male life expectancy gap in 1969 (vertical dashed line) vs. their gap in 1983 (solid dashed line), with the change in the gap being represented by the number of years between these lines. The decomposition (in years) of the change in the gap by cause of death is also shown for each state. 
 
@@ -448,7 +461,7 @@ sum5 <- BlackWhite_results %>% filter(year == 1969 & sex == "Female") %>%
   select(state, LE_wbgap_lcl, LE_wbgap, LE_wbgap_ucl)
 ```
 
-*Changes to the differency in life expectancy in US females*
+*Changes to the difference in life expectancy in US females*
 
 Quick summary
 
@@ -544,7 +557,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_white, x = y
            geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
            geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
-           facet_grid(. ~ Census_Region) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Life expectancy (years)") +
            xlab("Year") +
            geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), 
@@ -560,7 +573,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_black, x = y
            geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
            geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
-           facet_grid(. ~ Census_Region) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Life expectancy (years)") +
            xlab("Year") +
            geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), 
@@ -577,7 +590,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_wbgap, x = y
            geom_vline(aes(xintercept = 1993), lty = 2, lwd = 0.5) +
            geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
-           facet_grid(. ~ Census_Region) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Black-white life expectancy gap (years)") +
            xlab("Year") +
            geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Male"), aes(label = stabbrs), check_overlap = T, size = 2.5)) 
@@ -588,7 +601,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Male"), aes(y=LE_wbgap, x = y
 ```{r figure6a, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cancers"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(.~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cancers"), 
@@ -600,7 +613,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cancers"), ae
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cancers"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(.~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cancers"), 
@@ -613,7 +626,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cancers"), ae
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(.~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap(~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cardiovascular"), 
@@ -626,7 +639,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cardiovascula
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Cardiovascular"), 
@@ -639,7 +652,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Cardiovascula
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Communicable"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Communicable"), 
@@ -652,7 +665,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Communicable"
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Communicable"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Communicable"), 
@@ -665,7 +678,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Communicable"
 ```{r, fig.align="center", fig.height=5, fig.width=9, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Non-communicable"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Non-communicable"), 
@@ -678,7 +691,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Non-communica
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Non-communicable"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Non-communicable"), 
@@ -691,7 +704,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Non-communica
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Injuries"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Injuries"), 
@@ -704,7 +717,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Injuries"), a
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Injuries"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "Injuries"), 
@@ -716,7 +729,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "Injuries"), a
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "All other causes"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "All other causes"), 
@@ -729,7 +742,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "All other cau
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & COD == "All other causes"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Male" & COD == "All other causes"), 
@@ -746,7 +759,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_white, x =
            geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
            geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
-           facet_grid(. ~ Census_Region) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Life expectancy (years)") +
            xlab("Year") +
            geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), 
@@ -761,7 +774,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_black, x =
            geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
            geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
-           facet_grid(. ~ Census_Region) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Life expectancy (years)") +
            xlab("Year") +
            geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), 
@@ -778,7 +791,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_wbgap, x =
            geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
            geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = state), alpha=0.25) +
            geom_line(aes(col = state)) +
-           facet_grid(. ~ Census_Region) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Black-white life expectancy gap (years)") +
            xlab("Year") +
            geom_text(data = subset(BlackWhite_results, year == 2013 & sex == "Female"), aes(label = stabbrs), check_overlap = T, size = 2.5) 
@@ -790,7 +803,7 @@ ggplotly(ggplot(subset(BlackWhite_results, sex == "Female"), aes(y=LE_wbgap, x =
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cancers"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cancers"), 
@@ -803,7 +816,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cancers"), 
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cancers"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cancers"), 
@@ -815,7 +828,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cancers"), 
 ```{r,  fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cardiovascular"), 
@@ -824,7 +837,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cardiovascu
 
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cardiovascular"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Cardiovascular"), 
@@ -836,7 +849,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Cardiovascu
 ```{r,  fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Communicable"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Communicable"), 
@@ -845,7 +858,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Communicabl
 
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Communicable"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Communicable"), 
@@ -857,7 +870,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Communicabl
 ```{r,  fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Non-communicable"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Non-communicable"), 
@@ -866,7 +879,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Non-communi
 
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Non-communicable"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Non-communicable"), 
@@ -878,7 +891,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Non-communi
 ```{r,  fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Injuries"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Injuries"), 
@@ -887,7 +900,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Injuries"),
 
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Injuries"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "Injuries"), 
@@ -899,7 +912,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "Injuries"),
 ```{r, fig.align="center", fig.height=5, fig.width=11, echo=F}
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "All other causes"), aes(x = year, y = COD_cont_yrs)) + 
            geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (years)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "All other causes"), 
@@ -908,7 +921,7 @@ ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "All other c
 
 ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & COD == "All other causes"), aes(x = year, y = COD_cont_prop)) + 
            geom_ribbon(aes(ymin = COD_cont_prop_lcl, ymax = COD_cont_prop_ucl, fill = state), alpha=0.25) +
-           geom_line(aes(col = state)) + facet_grid(. ~ Census_Region) +
+           geom_line(aes(col = state)) + facet_wrap( ~ Census_Division, ncol = 3) +
            ylab("Contribution to LE Gap (%)") +
            xlab("Year") +
            geom_text(data = subset(cod_decomp_results, year == 2013 & sex == "Female" & COD == "All other causes"), 
