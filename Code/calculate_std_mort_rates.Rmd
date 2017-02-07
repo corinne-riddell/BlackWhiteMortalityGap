@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+
+```{r load_libraries}
+library(dplyr)
+library(purrr)
+library(ggplot2)
+library(stringr)
+library(reshape2)
+library(grid)
+library(gridExtra)
+```
+
+```{r}
+load("~/BW_results/results_set_1.Rdata")
+r.All.set1 <- r.All %>% filter(post.samp %in% c(1,2))
+
+for(i in 2:8){
+  print(i)
+  load(paste0("~/BW_results/results_set_", i, ".Rdata"))
+  assign(paste0("r.All.set", i), r.All %>% filter(post.samp %in% c(1,2)))
+  rm(r.All)
+}
+```
+
+```{r load_std_pop}
+std.pop <- read.csv("~/BlackWhiteMortalityGap/Data/US_Standard_Population.csv")
+
+std.pop <- std.pop %>% select(Age, US_Standard_2000) %>% filter(Age != "Total")
+
+std.pop <- std.pop %>% mutate(age.weight = US_Standard_2000/1000000)
+```
+
