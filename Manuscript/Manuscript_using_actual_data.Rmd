@@ -64,8 +64,8 @@ age_cod_results <-rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhi
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv")#,
-                        #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"),
+                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
                         )
 
 age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
@@ -74,8 +74,8 @@ age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWh
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
                          read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv")#,
-                         #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"),
+                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
                          )
 
 age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv"),
@@ -84,8 +84,8 @@ age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Blac
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_5.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_7.csv")#,
-                            #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_8.csv")
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_7.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_8.csv")
                             )
 
 BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv"),
@@ -94,8 +94,8 @@ BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Blac
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_5.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_7.csv")#,
-                            #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_8.csv")
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_7.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_8.csv")
                             )
 
 cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv"),
@@ -104,8 +104,8 @@ cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Blac
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_4.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_5.csv"),
                             read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_7.csv")#,
-                            #read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_8.csv")
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_7.csv"),
+                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_8.csv")
                             )
 ```
 
@@ -194,11 +194,10 @@ BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,
                                                                                 "MA", "MI", "MN", "MS",
                                                                                 "MO", "NE", "NV", "NJ", 
                                                                                 "NM", "NY", "NC", "OH", 
-                                                                                "OK", "OR", "TX", "VA", 
-                                                                                "DC", "WI")))
-#set 8:
-#"PA", "RI", "SC", "TN", "WA", "WV"
-                                                                                
+                                                                                "OK", "OR", "PA", "RI", 
+                                                                                "SC", "TN", "TX", "VA", 
+                                                                                "WA", "DC", "WV", "WI")))
+
                                       # labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
                                       #            "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
                                       #            "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
@@ -339,21 +338,21 @@ What we see so far (based on these `r dim(sum1)[1]` states):
 - The gap in 1969 ranges from `r round(sum1[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum1[1, ]$LE_wbgap_lcl, 1)`, `r round(sum1[1, ]$LE_wbgap_ucl, 1)`] in `r sum1[1, ]$state ` to `r round(sum1[dim(sum1)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum1[dim(sum1)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum1[dim(sum1)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum1[dim(sum1)[1], ]$state `.
 
 - For most states, the gap decreases between 1969 and 1983, with the largest decrease found in `r diff[dim(diff)[1], ]$state` (change in gap of `r round(diff[dim(diff)[1], ]$era1.diff, 1)`, `r round(max1,1)` of which is due to `r mc1`, 
-`r diff[dim(diff)[1]-1, ]$state` (`r round(max2,2)` due to `r mc2`), `r diff[dim(diff)[1]-2, ]$state` (`r round(max3,1)` due to `r mc3`), `r diff[dim(diff)[1]-3, ]$state` (`r round(max4,1)` due to `r mc4`), and `r diff[dim(diff)[1]-4, ]$state` (`r round(max5,1)` due to `r mc5`).
+`r diff[dim(diff)[1]-1, ]$state` (change of `r round(diff[dim(diff)[1]-1, ]$era1.diff, 1)`, `r round(max2,2)` due to `r mc2`), `r diff[dim(diff)[1]-2, ]$state` (change of `r round(diff[dim(diff)[1]-2, ]$era1.diff, 1)`, `r round(max3,1)` due to `r mc3`), `r diff[dim(diff)[1]-3, ]$state` (change of `r round(diff[dim(diff)[1]-3, ]$era1.diff, 1)`, `r round(max4,1)` due to `r mc4`), and `r diff[dim(diff)[1]-4, ]$state` (change of `r round(diff[dim(diff)[1]-4, ]$era1.diff, 1)`, `r round(max5,1)` due to `r mc5`).
 
 - The gap increases for some states. Most notably in DC (CVD and other causes), Minnesota (CVD), Wisconsin (CVD), California (CVD). Also, for these states injuries do not contribute as much to narrowing the gap (and in Minnesota, injuries widens the gap), so their gap increasing appears to be due to a combination of changes to CVD making blacks relatively worse off and less changes to injuries than experienced by other states.
 
-- Injuries across the board contribute to narrowing the gap over time, except for Minnesota.
+- Injuries across the board contribute to narrowing the gap over time, except for Minnesota and Nebraska.
 
-- Communicable disease narrows (except Arizona), but much smaller contribution than injuries.
+- Communicable disease narrows (except Arizona and Minnesota), but much smaller contribution than injuries.
 
-- Generally, all other causes narrows, again much smaller contribution than injuries.
+- Generally, all other causes narrows, again much smaller contribution than injuries. In some states its contribution is larger to the narrowing -- namely, New York, Missouria, Pennsylvania, Rhode Island, and Mississippi.
 
 - Generally, CVD increases gap.
 
-- Cancer increases the gap everywhere except NM. Size of contribution to change is a little smaller than CVD.
+- Cancer increases the gap everywhere except New Mexico. Size of contribution to change is often smaller than contribution of CVD, but not always the case.
 
-- Generally, non-communicable disease increases the gap but the contribution is tiny. Notable differences in Massachusetts, New York, and Maryland where it decreases gap.
+- Generally, non-communicable disease increases the gap but the contribution is tiny. Notable differences in Massachusetts, New York, Oregon, and Maryland where it decreases gap.
 
 **Figure 1a: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
@@ -398,9 +397,11 @@ sum2 <- BlackWhite_results %>% filter(year == 1983 & sex == "Male") %>%
 
 - The gap in 1983 ranges from `r round(sum2[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum2[1, ]$LE_wbgap_lcl, 1)`, `r round(sum2[1, ]$LE_wbgap_ucl, 1)`] in `r sum2[1, ]$state ` to `r round(sum2[dim(sum2)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum2[dim(sum2)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum2[dim(sum2)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum2[dim(sum2)[1], ]$state `.
 
-- Except for New Mexico, Arizona, and Kentucky, the life expectancy gap increases in each state, with the biggest driver being communicable disease (HIV/AIDS), especially in MD, NY, NJ, and CT. Injuries also contribute to the gap widening over this time frame, most notably in Wisconsin, MD, and LA. Thus, compared to previous period, these two causes of death led to a widening rather than a narrowing of the gap. 
+- Except for New Mexico, Arizona, and Kentucky, West Virginia, and Oregon, the life expectancy gap increases in each state, with the biggest driver being communicable disease (HIV/AIDS), especially in MD, NY, NJ, and CT. Injuries also contribute to the gap widening over this time frame, most notably in Wisconsin, MD, and LA. Thus, compared to previous period, these two causes of death led to a widening rather than a narrowing of the gap. 
 
-- Similar to the firts time frame, CVD and cancer also contribute to widening the gap over time. Also similar is the minimal effect of  non-communicable disease on the gap, while all other causes contributes to narrowing the gap, with greatest contribution to narrowing in NY, CT, Mississippi, and FL.
+- Similar to the firts time frame, CVD and cancer also contribute to widening the gap over time. The magnitude of the contribution of CVD is quite variable by state, with Mississippi, Minnesota, and Pennsylvania seeing the largest absolute contributions.
+
+- Also similar is the minimal effect of  non-communicable disease on the gap, while all other causes contributes to narrowing the gap, with greatest contribution to narrowing in NY, Pennsylvania, CT, Mississippi, and FL.
 
 - DC was especially hard hit, with injuries driving the increase in the gap from 10.5 years to 15.9 years in this 10-year period, an increase of X, Y of which can be attributed to injuries.
 
@@ -482,23 +483,23 @@ Quick summary
 
 - Most states saw decreasing gaps in first era. 
 
-- However, increases were found in Arizona, Oregon, Minnesota, and Wisconsin, largely due to cardiovascular disease. Thus, the effect of CVD on the LE varied by state over this time period in women.
+- However, increases were found in Arizona, Oregon, Minnesota, Washington, and Wisconsin, largely due to cardiovascular disease. As you can see, in some states CVD contributed to excacerbating the gap while in most others it makes a large contribution to narrowing the gap.
 
-- Otherwise, most of the other causes contributed to the gap narrowing, although cancer was associated with narrowing in some states (MS, NM, Oregon, for example) and increases in others (OH, Missouri, Kentucky).
+- Otherwise, most of the other causes contributed to the gap narrowing, although cancer was associated with narrowing in some states (MS, NM, Oregon, for example) and increases in others (Pennsylvania, Ohio, Missouri, Kentucky).
 
 - The biggest contributor to the narrowing gap being CVD (in most states, although heterogeniety) and all other causes. 
 
-- During the second era, the gap stayed approx. the same or widened across most states. Delaware, Kentucky, Kansas, Alabama, were notable exceptions were the gap narrowed -- didn't see effect of communicable disease like other states on the gap increasing (NY, FL, DC, MD, CT, hardest hit). 
+- During the second era, the gap stayed approx. the same or widened across most states. Delaware, Kentucky, Oregon, Rhode Island, West Virginia, Alabama, were notable exceptions were the gap narrowed -- didn't see effect of communicable disease like other states on the gap increasing (NY, FL, DC, MD, CT, hardest hit). 
 
 - In women, changes in injury related deaths doesn't play a big role (except DC).
 
 - CVD differential by state. Contributes to widening the gap in CA, Mississippi, and DC, for example, and narrowing it in Kansas, Delaware, and Kentucky.
 
-- All other causes narrows across states (except DC, Indiana). Cancer increases the gap by a bit (except Oregon and Minnesota).
+- All other causes narrows across states (except DC, Indiana). Cancer increases the gap by a bit (except Rhode Island, Oregon, and Minnesota).
 
-- During the third era, in-line with males, the life expectancy gap decreased during the last 20 year period, and generally speaking all the causes contributed to the gap narrowing over time. The biggest contributors were CVD and all other causes.
+- During the third era, in-line with males, the life expectancy gap decreased during the last 20 year period (except DC, Wisconsin), and generally speaking all of the causes contributed to the gap narrowing over time. The biggest contributors were CVD and all other causes.
 
-- In a few states, Cancer contributed to widening the gap (NM, Oregon, Arizona, DC).
+- In a few states, cancer contributed to widening the gap (NM, Oregon, Arizona, DC, Wisconsin).
 
 **Figure 2a: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
