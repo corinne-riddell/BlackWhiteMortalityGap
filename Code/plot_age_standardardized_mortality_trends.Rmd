@@ -1,0 +1,98 @@
+---
+title: "Untitled"
+author: "Corinne Riddell"
+date: "2/8/2017"
+output: html_document
+---
+
+```{r load_libraries, echo=FALSE, warning=F}
+library(dplyr)
+library(purrr)
+library(ggplot2)
+library(stringr)
+library(reshape2)
+library(grid)
+library(gridExtra)
+library(plotly)
+```
+
+```{r, echo=F}
+mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates.csv")
+```
+
+**Age-adjusted injury-related mortality (per 100,000) in white males, United States, 1969-2013**
+
+```{r, echo=F, fig.width=11, fig.height=9}
+ggplotly(ggplot(subset(mortality.rates, sex == "Male" & race == "White" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(col = state, lty = race)) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
+           ylab("Age-standardized mortality rate (per 100,000)") +
+           xlab("Year") +
+           geom_text(data = subset(mortality.rates, year == 2013 & sex == "Male" & race == "White" & post.samp == 1 & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
+
+ggplotly(ggplot(subset(mortality.rates, sex == "Male" & race == "White" & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(col = state, lty = factor(post.samp))) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
+           ylab("Age-standardized mortality rate (per 100,000)") +
+           xlab("Year") +
+           geom_text(data = subset(mortality.rates, year == 2013 & sex == "Male" & race == "White" & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
+```
+
+**Age-adjusted injury-related mortality (per 100,000) in black males, United States, 1969-2013**
+
+```{r, echo=F, fig.width=11, fig.height=9}
+ggplotly(ggplot(subset(mortality.rates, sex == "Male" & race == "Black" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(col = state, lty = race)) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
+           ylab("Age-standardized mortality rate (per 100,000)") +
+           xlab("Year") +
+           geom_text(data = subset(mortality.rates, year == 2013 & sex == "Male" & race == "Black" & post.samp == 1 & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
+
+ggplotly(ggplot(subset(mortality.rates, sex == "Male" & race == "Black" & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(col = state, lty = factor(post.samp))) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
+           ylab("Age-standardized mortality rate (per 100,000)") +
+           xlab("Year") +
+           geom_text(data = subset(mortality.rates, year == 2013 & sex == "Male" & race == "Black" & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
+```
+
+**Age-adjusted injury-related mortality (per 100,000) in white females, United States, 1969-2013**
+
+```{r, echo=F, fig.width=11, fig.height=9}
+ggplotly(ggplot(subset(mortality.rates, sex == "Female" & race == "White" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(col = state, lty = race)) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
+           ylab("Age-standardized mortality rate (per 100,000)") +
+           xlab("Year") +
+           geom_text(data = subset(mortality.rates, year == 2013 & sex == "Female" & race == "White" & post.samp == 1 & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
+```
+
+**Age-adjusted injury-related mortality (per 100,000) in black females, United States, 1969-2013**
+
+```{r, echo=F, fig.width=11, fig.height=9}
+ggplotly(ggplot(subset(mortality.rates, sex == "Female" & race == "Black" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
+           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
+           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
+           geom_line(aes(col = state, lty = race)) +
+           facet_wrap( ~ Census_Division, ncol = 3) +
+           ylab("Age-standardized mortality rate (per 100,000)") +
+           xlab("Year") +
+           geom_text(data = subset(mortality.rates, year == 2013 & sex == "Female" & race == "Black" & post.samp == 1 & COD == "Injuries"), 
+                     aes(label = stabbrs), check_overlap = T, size = 2.5))
+```
+

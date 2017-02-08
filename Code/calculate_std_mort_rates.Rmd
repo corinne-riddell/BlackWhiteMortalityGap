@@ -12,9 +12,13 @@ library(stringr)
 library(reshape2)
 library(grid)
 library(gridExtra)
+
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+
 ```
 
-```{r}
+```{r read_in_posterior_results_samples_1_and_2}
+#this take a long time (a few hours!)
 load("~/BW_results/results_set_1.Rdata")
 r.All.set1 <- r.All %>% filter(post.samp %in% c(1,2))
 
@@ -45,21 +49,36 @@ std.pop <- std.pop %>% mutate(age_minbin = 0*(Age == "00 years") + 1*(Age == "01
                      85*(Age == "85+ years"))
 ```
 
-```{r merge}
+```{r merge_and_calculated_age_stdized_mortality}
 r.All.post1.2 <- merge(r.All.post1.2, std.pop, by = "age_minbin")
 
+#returns dataset with new variable "age.std.mortality.rate" 
 mortality.rates <- r.All.post1.2 %>% 
   group_by(post.samp, state.n, year.n, race.n, sex.n, COD) %>% 
   arrange(age_minbin) %>%
-  summarise(age.std.mortality.rate = sum(age.weight*smoothed_rate),
+  summarise(age.std.mortality.rate = sum(age.weight*smoothed_rate), #the sum is across age bins
             race = first(race),
             sex = first(sex),
             state = first(state))
 
-ggplot(subset(mortality.rates, post.samp == 1 & state == "Alabama"), aes(y = age.std.mortality.rate, x = year.n)) + 
-  geom_line(aes(col = COD)) + facet_grid(race ~ sex)
+```
 
-write.csv(r.All.post1.2, "~/BlackWhiteMortalityGap/Data/states_combined_post_samp_1_2.csv")
+```{r tidy_mortality.rates}
+COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
+                "Non-communicable", "Injuries", "All other causes")
+
+mortality.rates$COD <- factor(mortality.rates$COD, COD.levels)
+
+mortality.rates <- add_Census_Division(mortality.rates, state)
+mortality.rates <- add_Census_Region(mortality.rates, state)
+mortality.rates$stabbrs <- state.abb[match(mortality.rates$state, state.name)]
+mortality.rates$year <- mortality.rates$year.n + 1968
+mortality.rates$rate.per.100k <- mortality.rates$age.std.mortality.rate*100000
+```
+
+```{r save_mortality_dataset}
+#write.csv(r.All.post1.2, "~/BlackWhiteMortalityGap/Data/states_combined_post_samp_1_2.csv")
 write.csv(mortality.rates, "~/BlackWhiteMortalityGap/Data/mortality_rates.csv")
 ```
+
 
