@@ -496,3 +496,63 @@ investigate_convergence_rest <- function(mcmc_dist, graph_file_name, min, max) {
   plots <- plot_estimate_CI_vs_posterior(posterior.df, posterior.df.age, posterior.df.cod, posterior.df.codage, graph_file_name, min, max)
   return(list(mcmc_dist, saved_bayes, posterior.df, posterior.df.age, posterior.df.cod, posterior.df.codage, plots))
 }
+
+add_Census_Division <- function(data, state) {
+  data$Census_Division <- NA
+  
+  data$Census_Division[data$state %in% c("Connecticut", "Maine", "Massachusetts", 
+                                                                     "New Hampshire", "Rhode Island", "Vermont")] <- "New England"
+  
+  data$Census_Division[data$state %in% c("New Jersey", "New York", "Pennsylvania")] <- "Mid-Atlantic"
+  
+  data$Census_Division[data$state %in% c("Illinois", "Indiana", "Michigan", "Ohio", 
+                                                                     "Wisconsin")] <- "East North Central"
+  
+  data$Census_Division[data$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
+                                                                     "Nebraska", "North Dakota", "South Dakota")] <- "West North Central"
+  
+  data$Census_Division[data$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
+                                                                     "North Carolina", "South Carolina", 
+                                                                     "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
+  
+  data$Census_Division[data$state %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee")] <- "East South Central"
+  
+  data$Census_Division[data$state %in% c("Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "West South Central"       
+  
+  data$Census_Division[data$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
+                                                                     "Nevada", "New Mexico", "Utah", "Wyoming")] <- "Mountain"
+  
+  data$Census_Division[data$state %in% c("Alaska", "California", "Hawaii", "Oregon","Washington")] <- "Pacific"
+  
+  data$Census_Division <- factor(data$Census_Division, levels = c("New England", "Mid-Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"))
+  
+  return(data)
+}
+
+add_Census_Region <- function(data, state) {
+  data$Census_Region <- NA
+  data$Census_Region[data$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
+                                       "Nebraska", "North Dakota", "South Dakota", 
+                                       "Illinois", "Indiana", "Michigan", "Ohio", 
+                                       "Wisconsin")] <- "Midwest"
+  
+  data$Census_Region[data$state %in% c("Connecticut", "Maine", "Massachusetts", 
+                                       "New Hampshire", "Rhode Island", "Vermont",
+                                       "New Jersey", "New York", "Pennsylvania")] <- "Northeast"
+  
+  data$Census_Region[data$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
+                                       "Nevada", "New Mexico", "Utah", "Wyoming",
+                                       "Alaska", "California", "Hawaii", "Oregon",
+                                       "Washington")] <- "West"
+  
+  data$Census_Region[data$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
+                                       "North Carolina", "South Carolina", 
+                                       "Virginia", "Washington DC", "West Virginia",
+                                       "Alabama", "Kentucky", "Mississippi", "Tennessee", 
+                                       "Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "South"
+  
+  data$Census_Region <- factor(data$Census_Region, levels = c("West", "Midwest", "South", "Northeast"))
+  
+  return(data)
+}
+
