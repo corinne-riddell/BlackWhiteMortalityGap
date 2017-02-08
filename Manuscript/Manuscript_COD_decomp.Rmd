@@ -114,88 +114,15 @@ age_cod_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "
 
 COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
                 "Non-communicable", "Injuries", "All other causes")
+
 cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
 age_cod_results$COD <- factor(age_cod_results$COD, COD.levels)
 ```
 
-```{r add_Census_Region, echo=FALSE}
-#note that the Census Region of the South is partitioned into two for better display.
-
-BlackWhite_results$Census_Region <- "South"
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
-                                                 "Nebraska", "North Dakota", "South Dakota", 
-                                                 "Illinois", "Indiana", "Michigan", "Ohio", 
-                                                 "Wisconsin")] <- "Midwest"
-
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Connecticut", "Maine", "Massachusetts", 
-                                                 "New Hampshire", "Rhode Island", "Vermont",
-                                                 "New Jersey", "New York", "Pennsylvania")] <- "Northeast"
-
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
-                                                 "Nevada", "New Mexico", "Utah", "Wyoming",
-                                                 "Alaska", "California", "Hawaii", "Oregon",
-                                                 "Washington")] <- "West"
-
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
-                                                  "North Carolina", "South Carolina", 
-                                                  "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
-
-BlackWhite_results$Census_Region[BlackWhite_results$state %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee", 
-                                                  "Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "South Central"
-
-BlackWhite_results$Census_Region <- factor(BlackWhite_results$Census_Region, levels = c("West", "Midwest", "South Central", "South Atlantic", "Northeast"))
-```
-
-```{r add_Census_Division, ncol = 3, echo = F}
-BlackWhite_results$Census_Division <- NA
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Connecticut", "Maine", "Massachusetts", 
-                                                                   "New Hampshire", "Rhode Island", "Vermont")] <- "New England"
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("New Jersey", "New York", "Pennsylvania")] <- "Mid-Atlantic"
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Illinois", "Indiana", "Michigan", "Ohio", 
-                                                                 "Wisconsin")] <- "East North Central"
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Iowa", "Kansas", "Minnesota", "Missouri", 
-                                                                 "Nebraska", "North Dakota", "South Dakota")] <- "West North Central"
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Delaware", "Florida", "Georgia", "Maryland", 
-                                                                 "North Carolina", "South Carolina", 
-                                                                 "Virginia", "Washington DC", "West Virginia")] <- "South Atlantic"
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Alabama", "Kentucky", "Mississippi", "Tennessee")] <- "East South Central"
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Arkansas", "Louisiana", "Oklahoma", "Texas")] <- "West South Central"       
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Arizona", "Colorado", "Idaho", "Montana", 
-                                                                 "Nevada", "New Mexico", "Utah", "Wyoming")] <- "Mountain"
-
-BlackWhite_results$Census_Division[BlackWhite_results$state %in% c("Alaska", "California", "Hawaii", "Oregon","Washington")] <- "Pacific"
-
-BlackWhite_results$Census_Division <- factor(BlackWhite_results$Census_Division, levels = c("New England", "Mid-Atlantic", "East North Central", "West North Central", "South Atlantic", "East South Central", "West South Central", "Mountain", "Pacific"))
-
-```
-
-```{r addvar_State_abbreviation, echo=FALSE}
-BlackWhite_results <- BlackWhite_results %>% mutate(stabbrs = factor(state,  
-                                                                     labels = c("AL", "AZ", "AR", "CA",
-                                                                                "CO", "CT", "DE", "FL",
-                                                                                "GA", "IL", "IN", "IA",
-                                                                                "KS", "KY", "LA", "MD",
-                                                                                "MA", "MI", "MN", "MS",
-                                                                                "MO", "NE", "NV", "NJ", 
-                                                                                "NM", "NY", "NC", "OH", 
-                                                                                "OK", "OR", "PA", "RI", 
-                                                                                "SC", "TN", "TX", "VA", 
-                                                                                "WA", "DC", "WV", "WI")))
-
-                                      # labels = c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
-                                      #            "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", 
-                                      #            "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", 
-                                      #            "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", 
-                                      #            "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", 
-                                      #            "VT", "VA", "WA", "WV", "WI", "WY")))
+```{r add_Census_Variables, echo = F}
+BlackWhite_results <- add_Census_Region(BlackWhite_results, state)
+BlackWhite_results <- add_Census_Division(BlackWhite_results, state)
+BlackWhite_results$stabbrs <- state.abb[match(BlackWhite_results$state, state.name)]
 
 cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, Census_Division, stabbrs), 
                             cod_decomp_results, by = "stratum.id", all.y = T)
