@@ -63,7 +63,7 @@ cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
 age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 5, 6, 1)])
 
 age_decomp_results$age <- factor(age_decomp_results$age, levels = levels(age_decomp_results$age)[c(1, 2, 11, 3:10, 12:19)])
-                                                                   
+age_cod_results$age <- factor(age_cod_results$age, levels = levels(age_cod_results$age)[c(1, 2, 11, 3:10, 12:19)])                                                             
 ```
 
 ```{r prep_era_figure_males, echo = F}
