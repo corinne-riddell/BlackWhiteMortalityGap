@@ -8,7 +8,7 @@ output: html_document
 ###Abstract
 
 ###Introduction
-The life expectancy of a population is a barometer for overall health. In 2014, life expectancy in the United States was 78.7 years, but hidden within this figure are differences by race. Non-Hispanic whites lived 3.6 years longer than Non-Hispanic blacks [ref: http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf]. While both black and white Americans have experienced increases in life expectancy since X, the difference between their life expectancies has varied. During the 1980s, the life expectancy gap widened and then narrowed in the 1990s due to relative mortality improvements among blacks in deaths due to homicide, HIV, unintentional injuries, and, among females, heart disease [Harper 2007]. The gap continued to narrow during the 2000s, but states differed in the magnitude of improvement that was made. For example, the life expectancy gap in New York decreased from 8.0 years to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 years to 5.6 years [Harper 2014]. This study seeks to better understand these state-level differences, by examining how changes in the cause of death [*and age at death(?)*] over time have worked to narrow or exacerbate the life expectancy gap within each state between 1969 and 2013. Thus, common reasons for the decreasing life expectancy gap can be identified, and anomalous states can be identified.
+The life expectancy of a population is a barometer for overall health. In 2014, life expectancy in the United States was 78.7 years, but hidden within this figure are differences by race. Non-Hispanic whites lived 3.6 years longer than Non-Hispanic blacks [ref: http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf]. While both black and white Americans have experienced increases in life expectancy since X, the difference between their life expectancies has varied. During the 1980s, the life expectancy gap widened and then narrowed in the 1990s due to relative mortality improvements among blacks in deaths due to homicide, HIV, unintentional injuries, and, among females, heart disease [Harper 2007]. The gap continued to narrow during the 2000s, but states differed in the magnitude of improvement that was made. For example, the life expectancy gap in New York decreased from 8.0 years to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 years to 5.6 years [Harper 2014]. This study seeks to better understand these state-level differences, by examining how changes in the cause of death [*and age at death(?)*] over time have worked to narrow or exacerbate the life expectancy gap within each state between 1969 and 2013. Thus, common reasons for the decreasing life expectancy gap can be identified, and anomalous states can be examined.
 
 ###Methods
 
@@ -48,86 +48,22 @@ library(dplyr)
 library(purrr)
 library(stringr)
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
-
-
-age_cod_results <-rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"),
-                        read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
-                        )
-
-age_cod_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_2.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_3.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_4.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_5.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_6.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_7.csv"),
-                         read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_8.csv")
-                         )
-
-age_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_2.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_3.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_4.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_5.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_7.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_8.csv")
-                            )
-
-BlackWhite_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_2.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_3.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_4.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_5.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_7.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_8.csv")
-                            )
-
-cod_decomp_results <- rbind(read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_2.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_3.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_4.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_5.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_6.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_7.csv"),
-                            read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_8.csv")
-                            )
 ```
 
-```{r tidy_data, echo=FALSE}
-
-ncols <- str_split_fixed(as.character(BlackWhite_results$stratum.id), "\\.", 3)
-BlackWhite_results$state <- as.factor(ncols[ , 1])
-BlackWhite_results$year <- as.numeric(ncols[ , 2])
-BlackWhite_results$sex <- as.factor(ncols[ , 3])
-
-age_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_decomp_results, by = "stratum.id")
-cod_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], cod_decomp_results, by = "stratum.id")
-age_cod_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_cod_results, by = "stratum.id")
+```{r read_data, echo=F}
+age_cod_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results.csv")
+age_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
 
 COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
                 "Non-communicable", "Injuries", "All other causes")
 
 cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
-age_cod_results$COD <- factor(age_cod_results$COD, levels = 1:6, 
-                               labels = c("All other causes", "Cancers", "Cardiovascular", "Communicable",
-                                          "Injuries", "Non-communicable"))
-```
+age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 5, 6, 1)])
 
-```{r add_Census_Variables, echo = F}
-BlackWhite_results <- add_Census_Region(BlackWhite_results, state)
-BlackWhite_results <- add_Census_Division(BlackWhite_results, state)
-BlackWhite_results$stabbrs <- state.abb[match(BlackWhite_results$state, state.name)]
-
-cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, Census_Division, stabbrs), 
-                            cod_decomp_results, by = "stratum.id", all.y = T)
+age_decomp_results$age <- factor(age_decomp_results$age, levels = levels(age_decomp_results$age)[c(1, 2, 11, 3:10, 12:19)])
+                                                                   
 ```
 
 ```{r prep_era_figure_males, echo = F}
@@ -231,7 +167,7 @@ cod.df <- merge(cod.df, BlackWhite_results[BlackWhite_results$year == 1969 & Bla
 
 **Figure 1a** displays each state's male life expectancy gap in 1969 (vertical dashed line) vs. their gap in 1983 (solid dashed line), with the change in the gap being represented by the number of years between these lines. This gap is decomposed by cause of death, where causes to the left of the dashed line contributed to narrowing the gap and causes to the right contributed to widening the gap. The length of these coloured bars represent the number of years attributable to the cause. 
 
-For example, in the **Figure 1a**, New York's gap changed from 8.8 years in 1969 to 6.28 in 1983. Causes to the left of the dashed line -- All other causes (pink), injuries (blue), non-communicable diseases (teal), and communicable diseases (green) -- each contributed to narrowing the gap, while cardiovascular disease (red) and cancer (yellow) contributed to widening the gap. Since the contribution in years of the leftward causes is larger than the contribution of the rightward causes, the net change is a smaller life expectancy gap in 1983, where all other causes (the longest bar) made the largest contribution.
+For example, in the **Figure 1a**, New York's gap changed from 8.8 years in 1969 to 6.3 in 1983. Causes to the left of the dashed line -- All other causes (pink), injuries (blue), non-communicable diseases (teal), and communicable diseases (green) -- each contributed to narrowing the gap, while cardiovascular disease (red) and cancer (yellow) contributed to widening the gap. Since the contribution in years of the leftward causes is larger than the contribution of the rightward causes, the net change is a smaller life expectancy gap in 1983, where all other causes (the longest bar) made the largest contribution.
 
 ```{r, echo = F}
 sum1 <- BlackWhite_results %>% filter(year == 1969 & sex == "Male") %>% 
@@ -268,17 +204,15 @@ for(i in 1:5) {
 }
 ```
 
-In 1969, the life expectancy gap ranged from `r round(sum1[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum1[1, ]$LE_wbgap_lcl, 1)`, `r round(sum1[1, ]$LE_wbgap_ucl, 1)`] in `r sum1[1, ]$state ` to `r round(sum1[dim(sum1)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum1[dim(sum1)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum1[dim(sum1)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum1[dim(sum1)[1], ]$state `. Injuries was the largest contributor towards narrowing the gap during this time period, as both races underwent decreased rates of injury-related mortality, but blacks experienced larger decreases to their rates, especially in states with relatively higher rates in 1969 (**eFigure X: Age-adjusted injury related mortality**). Minnesota and Nebraska are exceptions, where both states had relatively low rates of injuries among blacks in 1969 and smaller gaps. All other causes also contributed to narrower gaps in most states, but generally made a smaller contribution than injuries. In New York, all other causes made a large contribution to narrowing the gap, where much of this decrease was likely due to decreased infant mortality among blacks [eFigure showing change in age-cod decomp for New York]. Communicable diseases modestly contributed to narrowing the gap, except in Arizona and Minnesota. Generally, cardivascular disease contributed towards increasing the gap, and reflected slower declines for blacks in cardiovascular mortality than for whites. Cancer generally contributed towards increasing the gap, and largely reflected increases to cancer-related mortality for both races, with blacks undergoing steeper changes. In most states, non-comunicable diseases contributed a small amount towards increasing the gap, although it decreased the gap among four states, most notably in New York.
+In 1969, the life expectancy gap ranged from `r round(sum1[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum1[1, ]$LE_wbgap_lcl, 1)`, `r round(sum1[1, ]$LE_wbgap_ucl, 1)`] in `r sum1[1, ]$state ` to `r round(sum1[dim(sum1)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum1[dim(sum1)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum1[dim(sum1)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum1[dim(sum1)[1], ]$state `. Injuries was the largest contributor towards narrowing the gap during this time period, as both races underwent decreased rates of injury-related mortality, but blacks experienced larger decreases to their rates, especially in states with relatively higher rates in 1969 (**eAppendix B: Age-adjusted mortality by causes of death**). Minnesota and Nebraska are exceptions, where both states had relatively low rates of injuries among blacks in 1969 and smaller gaps. All other causes also contributed to narrower gaps in most states, but generally made a smaller contribution than injuries. In New York, all other causes made a large contribution to narrowing the gap, where much of this decrease was likely due to decreased infant mortality among blacks (**eFigure 3**). Communicable diseases modestly contributed to narrowing the gap, except in Arizona and Minnesota. Generally, cardivascular disease contributed towards increasing the gap, and reflects slower declines for blacks in cardiovascular mortality than for whites. Cancer generally contributed towards increasing the gap, and largely reflects increased cancer-related mortality for both races, with blacks undergoing steeper changes. In most states, non-comunicable diseases contributed a small amount towards increasing the gap, although it decreased the gap among four states, most notably in New York.
 
 For `r dim(bw_dat.males[bw_dat.males$era1.diff > 0,])[1]` states, the gap decreased between 1969 and 1983, with the largest decreases in `r diff[dim(diff)[1], ]$state` (decrease in the gap of `r round(diff[dim(diff)[1], ]$era1.diff, 1)`, `r round(max1,1)` years, of which is due to `r max.cause1`), `r diff[dim(diff)[1]-1, ]$state` (change of `r round(diff[dim(diff)[1]-1, ]$era1.diff, 1)`, `r round(max2,1)` due to `r max.cause2`), `r diff[dim(diff)[1]-2, ]$state` (change of `r round(diff[dim(diff)[1]-2, ]$era1.diff, 1)`, `r round(max3,1)` due to `r max.cause3`), `r diff[dim(diff)[1]-3, ]$state` (change of `r round(diff[dim(diff)[1]-3, ]$era1.diff, 1)`, `r round(max4,1)` due to `r max.cause4`), and `r diff[dim(diff)[1]-4, ]$state` (change of `r round(diff[dim(diff)[1]-4, ]$era1.diff, 1)`, `r round(max5,1)` due to `r max.cause5`). 
 
-The gap increased for `r dim(bw_dat.males[bw_dat.males$era1.diff < 0,])[1]` states. Most notably in `r diff$state[1]` (increase in gap of `r round(abs(diff$era1.diff[1]), 1)`, `r abs(round(min1,1))` due to `r min.cause1`), `r diff$state[2]` (increase in gap of `r round(abs(diff$era1.diff[2]), 1)`, `r abs(round(min2,1))` due to `r min.cause2`), `r diff$state[3]` (increase in gap of `r round(abs(diff$era1.diff[3]), 1)`, `r abs(round(min3,1))` due to `r min.cause3`), `r diff$state[4]` (increase in gap of `r round(abs(diff$era1.diff[4]), 1)`, `r abs(round(min4,1))` due to `r min.cause4`). For these states, injuries do not contribute as much to narrowing the gap as in other states (and in Minnesota, injuries widens the gap), so these gap increases appear to be due to a combination of changes to cardiovascular-related mortality making blacks relatively worse off and less changes to injuries than experienced by other states. [*These states had lower rates of injury-related mortality for blacks in 1969, and underwent more modest decreases in this rate than many other states that started the era with much higher injury rates for blacks.*]
-
-
+The gap increased for `r dim(bw_dat.males[bw_dat.males$era1.diff < 0,])[1]` states. Most notably in `r diff$state[1]` (increase in gap of `r round(abs(diff$era1.diff[1]), 1)`, `r abs(round(min1,1))` due to `r min.cause1`), `r diff$state[2]` (increase in gap of `r round(abs(diff$era1.diff[2]), 1)`, `r abs(round(min2,1))` due to `r min.cause2`), `r diff$state[3]` (increase in gap of `r round(abs(diff$era1.diff[3]), 1)`, `r abs(round(min3,1))` due to `r min.cause3`), `r diff$state[4]` (increase in gap of `r round(abs(diff$era1.diff[4]), 1)`, `r abs(round(min4,1))` due to `r min.cause4`). For these states, injuries do not contribute as much to narrowing the gap as in other states (and in Minnesota, injuries widens the gap), so these gap increases appear to be due to a combination of changes to cardiovascular-related mortality making blacks relatively worse off and less changes to injuries than experienced by other states.
 
 **Figure 1a: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
-```{r figure1, fig.align = "center", echo=F}
+```{r figure1, fig.align = "center", echo=F, fig.height=9}
 
 cod.df.males <- merge(subset(cod.df, sex == "Male"), bw_dat.males, by = c("state"))
 cod.df.males <- cod.df.males %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
@@ -520,6 +454,32 @@ females.era3
 **eExample 1: Decomposing the change to the difference in life expectancy over time by cause of death: an example**
 
 To create.
+
+**eFigure 3: Comparison of the contribution of age and cause of death to the difference in life expectancy between blacks and whites in New York, 1969 vs. 1983**
+
+```{r ny_1969_1983_age_cod_decomp, echo = F, fig.width = 9}
+ny.dat <- age_cod_results %>% filter(state == "New York" & year %in% c(1969, 1983) & sex == "Male") %>% 
+                                     mutate(sign.var = sign(age_COD_cont_yrs))
+
+ny.1969 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1969), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+ny.1983 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1983), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+
+ggplotly(ggplot(rbind(ny.1969, ny.1983),
+                aes(y = age, x = start)) + 
+           geom_segment(aes(xend = finish, col = COD, yend = age), lwd = 3) +
+           xlab(paste0("Contribution to life expectancy gap in years")) +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0) + 
+           facet_wrap(~ year)) 
+            
+```
+
+
+
 
 **Background notes from meeting with SH on Dec 20**
 
