@@ -1,0 +1,88 @@
+---
+title: "Combine_results"
+author: "Corinne Riddell"
+date: "2/9/2017"
+output: html_document
+---
+
+**Combine results across the sets**
+The analysis was run in 8 sets. In this file we combine the results and tidy the data for graph and presentation.
+
+```{r initialize}
+library(stringr)
+library(dplyr)
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+
+```{r combine_results}
+age_cod_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_1.csv")
+age_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_1.csv")
+BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_1.csv")
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_1.csv")
+                            
+for(i in 2:8){
+  age_cod_results <- rbind(age_cod_results, 
+                           read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_set_",
+                                           i, ".csv")))
+  age_decomp_results <- rbind(age_decomp_results, 
+                              read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_set_",
+                                              i, ".csv")))
+  BlackWhite_results <- rbind(BlackWhite_results, 
+                              read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_set_",
+                                              i, ".csv")))
+  cod_decomp_results <- rbind(cod_decomp_results, 
+                              read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_set_",
+                                              i, ".csv")))
+}
+```
+
+```{r tidy_data, echo=FALSE}
+ncols <- str_split_fixed(as.character(BlackWhite_results$stratum.id), "\\.", 3)
+BlackWhite_results$state <- as.factor(ncols[ , 1])
+BlackWhite_results$year <- as.numeric(ncols[ , 2])
+BlackWhite_results$sex <- as.factor(ncols[ , 3])
+
+age_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_decomp_results, by = "stratum.id")
+cod_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], cod_decomp_results, by = "stratum.id")
+age_cod_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_cod_results, by = "stratum.id")
+
+COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
+                "Non-communicable", "Injuries", "All other causes")
+
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
+age_cod_results$COD <- factor(age_cod_results$COD, levels = 1:6, 
+                               labels = c("All other causes", "Cancers", "Cardiovascular", "Communicable",
+                                          "Injuries", "Non-communicable"))
+
+age_cod_results$age <- factor(age_cod_results$age_minbin, levels = c(0, 1, seq(5, 85, by = 5)),
+                                                                     labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                                                                "15-19 years", "20-24 years", "25-29 years", "30-34 years",
+                                                                                "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
+                                                                                "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
+                                                                                "75-79 years", "80-84 years","85+ years"), ordered = T)
+
+age_decomp_results$age <- factor(age_decomp_results$age_minbin, levels = c(0, 1, seq(5, 85, by = 5)),
+                                                                     labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                                                                "15-19 years", "20-24 years", "25-29 years", "30-34 years",
+                                                                                "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
+                                                                                "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
+                                                                                "75-79 years", "80-84 years","85+ years"), ordered = T)
+```
+
+```{r add_Census_Variables, echo = F}
+BlackWhite_results <- add_Census_Region(BlackWhite_results, state)
+BlackWhite_results <- add_Census_Division(BlackWhite_results, state)
+BlackWhite_results$stabbrs <- state.abb[match(BlackWhite_results$state, state.name)]
+
+cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, Census_Division, stabbrs), 
+                            cod_decomp_results, by = "stratum.id", all.y = T)
+```
+
+```{r save_combined_datasets, echo = F}
+write.csv(age_cod_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results.csv")
+write.csv(age_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
+write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+write.csv(BlackWhite_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
+```
+
