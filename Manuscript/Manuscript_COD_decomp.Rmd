@@ -1,6 +1,10 @@
 ---
-title: "Exploring how changes in age at death and cause of death have narrowed the black-white life expectancy gap over forty-five years in the United States."
-output: html_document
+title: Exploring how changes in age at death and cause of death have narrowed the
+  black-white life expectancy gap over forty-five years in the United States.
+output:
+  html_document: default
+  word_document: default
+always_allow_html: yes
 ---
 
 ##Riddell CA, Morrison KT, Kaufman JS, Harper S 
@@ -212,7 +216,7 @@ The gap increased for `r dim(bw_dat.males[bw_dat.males$era1.diff < 0,])[1]` stat
 
 **Figure 1a: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
-```{r figure1, fig.align = "center", echo=F, fig.height=9}
+```{r figure1, fig.align = "center", echo=F, fig.height=9, fig.width=7}
 
 cod.df.males <- merge(subset(cod.df, sex == "Male"), bw_dat.males, by = c("state"))
 cod.df.males <- cod.df.males %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
@@ -245,25 +249,26 @@ males.era1
 sum2 <- BlackWhite_results %>% filter(year == 1983 & sex == "Male") %>% 
   arrange(LE_wbgap) %>% 
   select(state, LE_wbgap_lcl, LE_wbgap, LE_wbgap_ucl)
+
+  min.value.DC <- min(cod.df$Contribution.to.change[cod.df$state == "Washington DC" & 
+                                            cod.df$era == "1983-1993" &
+                                            cod.df$sex == "Male" ])
+  
+  min.cause.DC <- cod.df$COD[cod.df$state == "Washington DC" &
+                    cod.df$sex == "Male" &
+                    cod.df$era == "1983-1993" & 
+                    cod.df$Contribution.to.change == min.value.DC]
 ```
 
-**Figure 1b** displays each state's male life expectancy gap in 1983 (vertical dashed line) vs. their gap in 1993 (solid dashed line).
+**Figure 1b** displays each state's male life expectancy gap in 1983 (vertical dashed line) vs. their gap in 1993 (solid dashed line).[Be careful with the interpretation: the x-axis is much wider for this plot because of DC.]
 
-- Be careful with the interpretation: the x-axis is much wider for this plot because of DC. (Zoom into same x range to aid interpretation at first)
-
-- The gap in 1983 ranges from `r round(sum2[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum2[1, ]$LE_wbgap_lcl, 1)`, `r round(sum2[1, ]$LE_wbgap_ucl, 1)`] in `r sum2[1, ]$state ` to `r round(sum2[dim(sum2)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum2[dim(sum2)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum2[dim(sum2)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum2[dim(sum2)[1], ]$state `.
-
-- Except for New Mexico, Arizona, and Kentucky, West Virginia, and Oregon, the life expectancy gap increases in each state, with the biggest driver being communicable disease (HIV/AIDS), especially in MD, NY, NJ, and CT. Injuries also contribute to the gap widening over this time frame, most notably in Wisconsin, MD, and LA. Thus, compared to previous period, these two causes of death led to a widening rather than a narrowing of the gap. 
-
-- Similar to the firts time frame, CVD and cancer also contribute to widening the gap over time. The magnitude of the contribution of CVD is quite variable by state, with Mississippi, Minnesota, and Pennsylvania seeing the largest absolute contributions.
-
-- Also similar is the minimal effect of  non-communicable disease on the gap, while all other causes contributes to narrowing the gap, with greatest contribution to narrowing in NY, Pennsylvania, CT, Mississippi, and FL.
-
-- DC was especially hard hit, with injuries driving the increase in the gap from 10.5 years to 15.9 years in this 10-year period, an increase of X, Y of which can be attributed to injuries.
+During the second time period, from 1983 to 1993, the life expectancy gap for males in `r dim(bw_dat.males[bw_dat.males$era2.diff < 0, ])[1]` of the analysed `r dim(bw_dat.males)[1]` widened. For states such as New York, Maryland, New Jersey, and Connecticut, the biggest driver of the widening gap was communicable disease, reflecting the heightened risk of dying from HIV/AIDS in black males during the height of the AIDS epidemic. While both blacks and whites experienced a dramatic increase in mortality related to communicable diseases, blacks' rates were even higher. Injuries also contributed to the gap widening, most notably in Wisconsin, Maryland, and Louisiana. For many states, injury-related mortality increased for blacks but not for whites during this time period. Compared to the previous period, these two causes of death led to widwer rather than narrowed gaps. Cancer and cardiovascular disease contributed towards wider gaps, although the magnitude of the contribution of cardiovascular disease is quite hetergenous by state, with Mississippi, Minnesota, and Pennsylvania seeing the largest absolute contributions. All other causes contributed to a narrower gap, especially in New York, Pennsylvania, Connecticut, Mississippi, and Florida [note: This wasn't related to infant mortality improvements among blacks in NY, PA, but partially related to IMR improvements in CT, MS, and FL]. Most notably, the Disrict of Columbia had the highest gap to begin and underwent the largest increase to their gap, which increased from 10.5 years to 15.9 years over this 10-year period, reflecting an increase of `r abs(round(bw_dat.males$era2.diff[bw_dat.males$sex == "Male" & bw_dat.males$state == "Washington DC"], 1))` years, of which `r round(min.value.DC, 1)` was due to `r min.cause.DC`.
 
 **Figure 1b: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
 
-```{r figure1b, echo = F}
+```{r figure1b, echo = F, fig.height=9, fig.width=11}
+# - The gap in 1983 ranges from `r round(sum2[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum2[1, ]$LE_wbgap_lcl, 1)`, `r round(sum2[1, ]$LE_wbgap_ucl, 1)`] in `r sum2[1, ]$state ` to `r round(sum2[dim(sum2)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum2[dim(sum2)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum2[dim(sum2)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum2[dim(sum2)[1], ]$state `.
+
 y.labels.2 <- levels(factor(cod.df.males$state.gdiff.order.2))
 y.num.breaks.2 <- length(levels(factor(cod.df.males$state.gdiff.order.2)))
 
@@ -458,7 +463,7 @@ To create.
 **eFigure 3: Comparison of the contribution of age and cause of death to the difference in life expectancy between blacks and whites in New York, 1969 vs. 1983**
 
 ```{r ny_1969_1983_age_cod_decomp, echo = F, fig.width = 9}
-ny.dat <- age_cod_results %>% filter(state == "New York" & year %in% c(1969, 1983) & sex == "Male") %>% 
+ny.dat <- age_cod_results %>% filter(state == "New York" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
                                      mutate(sign.var = sign(age_COD_cont_yrs))
 
 ny.1969 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1969), sign.var = "sign.var",
@@ -467,8 +472,11 @@ ny.1969 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1969), 
 ny.1983 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1983), sign.var = "sign.var",
                                   strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
                                   decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+ny.1993 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1993), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
 
-ggplotly(ggplot(rbind(ny.1969, ny.1983),
+ggplotly(ggplot(rbind(ny.1969, ny.1983, ny.1993),
                 aes(y = age, x = start)) + 
            geom_segment(aes(xend = finish, col = COD, yend = age), lwd = 3) +
            xlab(paste0("Contribution to life expectancy gap in years")) +
@@ -478,21 +486,94 @@ ggplotly(ggplot(rbind(ny.1969, ny.1983),
             
 ```
 
+**Pennsylvania**
+```{r pa_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
+pa.dat <- age_cod_results %>% filter(state == "Pennsylvania" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
+                                     mutate(sign.var = sign(age_COD_cont_yrs))
+
+pa.1993 <- make_pretty_decomp_plot(decomp.table = subset(pa.dat, year == 1993), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+pa.1983 <- make_pretty_decomp_plot(decomp.table = subset(pa.dat, year == 1983), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+
+ggplotly(ggplot(rbind(pa.1993, pa.1983),
+                aes(y = age, x = start)) + 
+           geom_segment(aes(xend = finish, col = COD, yend = age), lwd = 3) +
+           xlab(paste0("Contribution to life expectancy gap in years")) +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0) + 
+           facet_wrap(~ year)) 
+```
+
+**Connecticut**
+```{r ct_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
+ct.dat <- age_cod_results %>% filter(state == "Connecticut" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
+                                     mutate(sign.var = sign(age_COD_cont_yrs))
+
+ct.1993 <- make_pretty_decomp_plot(decomp.table = subset(ct.dat, year == 1993), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+ct.1983 <- make_pretty_decomp_plot(decomp.table = subset(ct.dat, year == 1983), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+
+ggplotly(ggplot(rbind(ct.1993, ct.1983),
+                aes(y = age, x = start)) + 
+           geom_segment(aes(xend = finish, col = COD, yend = age), lwd = 3) +
+           xlab(paste0("Contribution to life expectancy gap in years")) +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0) + 
+           facet_wrap(~ year)) 
+```
+
+**Mississippi**
+```{r ms_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
+ms.dat <- age_cod_results %>% filter(state == "Mississippi" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
+                                     mutate(sign.var = sign(age_COD_cont_yrs))
+
+ms.1993 <- make_pretty_decomp_plot(decomp.table = subset(ms.dat, year == 1993), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+ms.1983 <- make_pretty_decomp_plot(decomp.table = subset(ms.dat, year == 1983), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+
+ggplotly(ggplot(rbind(ms.1993, ms.1983),
+                aes(y = age, x = start)) + 
+           geom_segment(aes(xend = finish, col = COD, yend = age), lwd = 3) +
+           xlab(paste0("Contribution to life expectancy gap in years")) +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0) + 
+           facet_wrap(~ year)) 
+```
+
+**Florida**
+```{r fl_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
+fl.dat <- age_cod_results %>% filter(state == "Florida" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
+                                     mutate(sign.var = sign(age_COD_cont_yrs))
+
+fl.1993 <- make_pretty_decomp_plot(decomp.table = subset(fl.dat, year == 1993), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+fl.1983 <- make_pretty_decomp_plot(decomp.table = subset(fl.dat, year == 1983), sign.var = "sign.var",
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
+                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+
+ggplotly(ggplot(rbind(fl.1993, fl.1983),
+                aes(y = age, x = start)) + 
+           geom_segment(aes(xend = finish, col = COD, yend = age), lwd = 3) +
+           xlab(paste0("Contribution to life expectancy gap in years")) +
+           ylab("Age group\n") + theme_minimal() +
+           geom_vline(xintercept = 0) + 
+           facet_wrap(~ year)) 
+```
 
 
 
-**Background notes from meeting with SH on Dec 20**
+**Things for corinne to review**
 
 - CVD declining starting 1968 - see paper Ruel Stallones - cited in SH JAMA paper - history of decline in CVD.
 
 - Richard cooper also written about BW diff in CVD with epi perspective
-
-- for men there is stagnation from 1969 to late 1980s and then increase in gap with HIV and homicides
-
-- massive crime wave in 1980s, black LE went down from 1984 to 1987 - period when both HIV and homicide went up -- the whole story during that time was HIV and homicide
-
-- heterogeneity between states in the contribution of the causes to the decline in the gap - maybe need to break up into at least two time periods with split at 1990.
-
-- this is where the new figures come in which on the y-axis have the contribution to LE gap (in years or %) vs year on the x axis, and geom_line for each COD (do one COD at a time), and individual line for each state (may facet by census region).
-
-- then have a view of how the different COD have contributed to the decline in the gap over time. 
