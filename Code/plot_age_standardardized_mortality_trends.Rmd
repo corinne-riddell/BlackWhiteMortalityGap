@@ -22,7 +22,7 @@ mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMor
 
 **MALES**
 
-**Age-adjusted cancer-related mortality (per 100,000) in males, United States, 1969-2013**
+**Fig S3: Age-adjusted cancer-related mortality (per 100,000) in males, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Cancers"), aes(y=rate.per.100k, x = year)) + 
@@ -34,7 +34,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == 
            xlab("Year"))
 ```
 
-**Age-adjusted cardiovascular-related mortality (per 100,000) in males, United States, 1969-2013**
+**Fig S4: Age-adjusted cardiovascular-related mortality (per 100,000) in males, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Cardiovascular"), aes(y=rate.per.100k, x = year)) + 
@@ -46,7 +46,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == 
            xlab("Year"))
 ```
 
-**Age-adjusted communicable disease-related mortality (per 100,000) in males, United States, 1969-2013**
+**Fig S5: Age-adjusted communicable disease-related mortality (per 100,000) in males, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Communicable"), aes(y=rate.per.100k, x = year)) + 
@@ -58,7 +58,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == 
            xlab("Year"))
 ```
 
-**Age-adjusted injury-related mortality (per 100,000) in males, United States, 1969-2013**
+**Fig S6: Age-adjusted injury-related mortality (per 100,000) in males, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
@@ -70,7 +70,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == 
            xlab("Year"))
 ```
 
-**Age-adjusted non-communicable disease-related mortality (per 100,000) in males, United States, 1969-2013**
+**Fig S7: Age-adjusted non-communicable disease-related mortality (per 100,000) in males, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Non-communicable"), aes(y=rate.per.100k, x = year)) + 
@@ -82,7 +82,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == 
            xlab("Year"))
 ```
 
-**Age-adjusted mortality (per 100,000) in males for all other causes, United States, 1969-2013**
+**Fig S8: Age-adjusted mortality (per 100,000) in males for all other causes, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "All other causes"), aes(y=rate.per.100k, x = year)) + 
@@ -96,7 +96,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == 
 
 **FEMALES**
 
-**Age-adjusted cancer-related mortality (per 100,000) in females, United States, 1969-2013**
+**Fig S9: Age-adjusted cancer-related mortality (per 100,000) in females, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Cancers"), aes(y=rate.per.100k, x = year)) + 
@@ -108,7 +108,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD =
            xlab("Year"))
 ```
 
-**Age-adjusted cardiovascular-related mortality (per 100,000) in females, United States, 1969-2013**
+**Fig S10: Age-adjusted cardiovascular-related mortality (per 100,000) in females, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Cardiovascular"), aes(y=rate.per.100k, x = year)) + 
@@ -120,7 +120,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD =
            xlab("Year"))
 ```
 
-**Age-adjusted communicable disease-related mortality (per 100,000) in females, United States, 1969-2013**
+**Fig S11: Age-adjusted communicable disease-related mortality (per 100,000) in females, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Communicable"), aes(y=rate.per.100k, x = year)) + 
@@ -132,7 +132,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD =
            xlab("Year"))
 ```
 
-**Age-adjusted injury-related mortality (per 100,000) in females, United States, 1969-2013**
+**Fig S12: Age-adjusted injury-related mortality (per 100,000) in females, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
@@ -144,7 +144,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD =
            xlab("Year"))
 ```
 
-**Age-adjusted non-communicable disease-related mortality (per 100,000) in females, United States, 1969-2013**
+**Fig S13: Age-adjusted non-communicable disease-related mortality (per 100,000) in females, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Non-communicable"), aes(y=rate.per.100k, x = year)) + 
@@ -156,7 +156,7 @@ ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD =
            xlab("Year"))
 ```
 
-**Age-adjusted mortality (per 100,000) in females for all other causes, United States, 1969-2013**
+**Fig S14: Age-adjusted mortality (per 100,000) in females for all other causes, United States, 1969-2013**
 
 ```{r, echo=F, fig.width=11, fig.height=9}
 ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "All other causes"), aes(y=rate.per.100k, x = year)) + 
