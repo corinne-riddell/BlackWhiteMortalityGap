@@ -7,7 +7,17 @@ output:
 always_allow_html: yes
 ---
 
-##Riddell CA, Morrison KT, Kaufman JS, Harper S 
+Corinne A Riddell, PhD
+
+Kathryn T Morrison, MSc
+
+Jay S Kaufman, PhD
+
+Sam Harper, PhD
+
+Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Canada.
+
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
 
 ###Abstract
 
@@ -31,7 +41,7 @@ The life expectancy of a population is a barometer for overall health. In 2014, 
 
 **The data**
 
-We used software maintained by the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (SEER*Stat) to extract data on the number of deaths and the population size in all 50 US states and the District of Columbia between 1969 and 2013. The mortality data was originally collected by the National Center for Health Statistics (NCHS) from death certificates and stored by the National Vital Statistics System. The population data was derived by the NCHS using intercensal bridged-race population estimates. This study using data on the number of deaths and the population size according to race (black or white), sex (male or female), age group (<1 year old, 1-4 years old, followed by 5-year age groupings, with a final grouping of 85 or more years of age), year (1969 -- 2013), and cause of death. Cause of death was originally recorded using the International Classification of Diseases (ICD) codes versions 8 (1969-1979), 9 (1979-1998), and 10 (1999-2013). These codes were aggregated into six broad causes of death for this analysis: Cancers, Cardiovascular disease, Communicable disease, Injuries, Non-communicable disease, and All other causes. This recoding is illustrated in eTable 1 in the eAppendix of the Supplement. When the number of deaths for a population is between 1 and 9, this data is suppressed by the software and produces a missing death count for that strata. However, death counts of exactly 0 or greater than 9 are known precisely. 
+We used software maintained by the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (SEERStat) to extract data on the number of deaths and the population size in all 50 US states and the District of Columbia between 1969 and 2013. The mortality data was originally collected by the National Center for Health Statistics (NCHS) from death certificates and stored by the National Vital Statistics System. The population data was derived by the NCHS using intercensal bridged-race population estimates. This study using data on the number of deaths and the population size according to race (black or white), sex (male or female), age group (<1 year old, 1-4 years old, followed by 5-year age groupings, with a final grouping of 85 or more years of age), year (1969 -- 2013), and cause of death. Cause of death was originally recorded using the International Classification of Diseases (ICD) codes versions 8 (1969-1979), 9 (1979-1998), and 10 (1999-2013). These codes were aggregated into six broad causes of death for this analysis: Cancers, Cardiovascular disease, Communicable disease, Injuries, Non-communicable disease, and All other causes (**S1 Table**). When the number of deaths for a population is between 1 and 9, this data is suppressed by the software and produces a missing death count for that strata. However, death counts of exactly 0 or greater than 9 are known precisely. 
 
 For the analysis we excluded 11 states with the smallest black populations: Alaska, Hawaii, Idaho, Maine, Montana, New Hampshire, North Dakota, South Dakota, Utah, Vermont, and Wyoming. These states contained less than 0.4% of the blacks in the United States in 2010 [ref]. We did not consider Hispanic origin to identify race according to Hispanic ethnicity, since the quality of the coding of ethnicity varied by state over the time period included [https://www.cdc.gov/nchs/data/series/sr_02/sr02_148.pdf].   
 
@@ -45,7 +55,7 @@ To calculate life expectancy at birth, the smoothed death counts were aggregated
 
 To decompose the difference in life expectancy between blacks and whites, we performed a decomposition analysis using the Arriaga method [ref]. First, the decomposition analysis partitions the difference in life expectancy by age group, which can be interpreted as the amount of the gap (in years) that can be attributed to higher age-specific mortality rates in blacks. For example, a decomposition of a gap of five years may find that two of the five years (40% of the gap) is attributable to a higher mortality rate in blacks in the youngest age group (< 1 years old) compared with the youngest whites. This age-specific decomposition can be further partitioned according to cause of death, producing the number of years of the gap that is attributable to every age- and cause-of-death combination. For example, a decomposition of a gap of 8 years may find that 1.3 years of this gap is attributable to more injury-related deaths in blacks aged 25-29 years old. We summed these age- and cause-of-death partitions over all ages to calculate the marginal contribution of each cause-of-death to the difference.
 
-In order to understand whether states fared similarly over time, we divided the time frame into three eras which roughly encapsulate an initial period of increases in life expectancy for both races and sexes (1969-1983), an intermediate period of decreases and stagnating life expectancy for blacks but not for whites (1983-1993) and a final period of increasing life expectancy for both races (1993-2013). While these eras represent different lengths of time, they best capture three distinct periods of changes to the difference in life expectancy: an intial narrowing of the gap, followed by a widening of the gap that diminished previous progress, and the most recent twenty years of sustained narrowing (eAppendix Figures 1 and 2).
+In order to understand whether states fared similarly over time, we divided the time frame into three eras which roughly encapsulate an initial period of increases in life expectancy for both races and sexes (1969-1983), an intermediate period of decreases and stagnating life expectancy for blacks but not for whites (1983-1993) and a final period of increasing life expectancy for both races (1993-2013). While these eras represent different lengths of time, they best capture three distinct periods of changes to the difference in life expectancy: an intial narrowing of the gap, followed by a widening of the gap that diminished previous progress, and the most recent twenty years of sustained narrowing (**S1 Fig** and **S2 Fig**).
 
 For each era, we calculated the degree that the life expectancy gap has narrowed or widened over the era and decomposed this *change* to the *difference* in the life expectnacy between blacks and whites according to cause of death. To do so, we simply subtracted the contribution (in years) that each cause of death category had made to the difference in life expectancy at the beginning of the era from that made at the beginning of the era. An example of the calculation is found in the eAppendix.
 
@@ -182,9 +192,9 @@ cod.df <- merge(cod.df, BlackWhite_results[BlackWhite_results$year == 1969 & Bla
 
 *Changes to the difference in life expectancy in US males, 1969-1983*
 
-**Figure 1a** displays each state's male life expectancy gap in 1969 (vertical dashed line) vs. their gap in 1983 (solid dashed line), with the change in the gap being represented by the number of years between these lines. This gap is decomposed by cause of death, where causes to the left of the dashed line contributed to narrowing the gap and causes to the right contributed to widening the gap. The length of these coloured bars represent the number of years attributable to the cause. 
+**Fig 1** displays each state's male life expectancy gap in 1969 (vertical dashed line) vs. their gap in 1983 (solid dashed line), with the change in the gap being represented by the number of years between these lines. This gap is decomposed by cause of death, where causes to the left of the dashed line contributed to narrowing the gap and causes to the right contributed to widening the gap. The length of these coloured bars represent the number of years attributable to the cause. 
 
-For example, in the **Figure 1a**, New York's gap changed from 8.8 years in 1969 to 6.3 in 1983. Causes to the left of the dashed line -- All other causes (pink), injuries (blue), non-communicable diseases (teal), and communicable diseases (green) -- each contributed to narrowing the gap, while cardiovascular disease (red) and cancer (yellow) contributed to widening the gap. Since the contribution in years of the leftward causes is larger than the contribution of the rightward causes, the net change is a smaller life expectancy gap in 1983, where all other causes (the longest bar) made the largest contribution.
+For example, in the **Fig 1**, New York's gap changed from 8.8 years in 1969 to 6.3 in 1983. Causes to the left of the dashed line -- All other causes (pink), injuries (blue), non-communicable diseases (teal), and communicable diseases (green) -- each contributed to narrowing the gap, while cardiovascular disease (red) and cancer (yellow) contributed to widening the gap. Since the contribution in years of the leftward causes is larger than the contribution of the rightward causes, the net change is a smaller life expectancy gap in 1983, where all other causes (the longest bar) made the largest contribution.
 
 ```{r, echo = F}
 sum1 <- BlackWhite_results %>% filter(year == 1969 & sex == "Male") %>% 
@@ -252,17 +262,17 @@ sum4 <- BlackWhite_results %>% filter(year == 2013 & sex == "Male") %>%
   select(state, LE_wbgap_lcl, LE_wbgap, LE_wbgap_ucl)
 ```
 
-In 1969, the life expectancy gap ranged from `r round(sum1[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum1[1, ]$LE_wbgap_lcl, 1)`, `r round(sum1[1, ]$LE_wbgap_ucl, 1)`] in `r sum1[1, ]$state ` to `r round(sum1[dim(sum1)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum1[dim(sum1)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum1[dim(sum1)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum1[dim(sum1)[1], ]$state `. Injuries was the largest contributor towards narrowing the gap during this time period, as both races underwent decreased rates of injury-related mortality, but blacks experienced larger decreases to their rates, especially in states with relatively higher rates in 1969 (**eAppendix B: Age-adjusted mortality by causes of death**). Minnesota and Nebraska are exceptions, where both states had relatively low rates of injuries among blacks in 1969 and smaller gaps. All other causes also contributed to narrower gaps in most states, but generally made a smaller contribution than injuries. In New York, all other causes made a large contribution to narrowing the gap, where much of this decrease was likely due to decreased infant mortality among blacks (**eFigure 3**). Communicable diseases modestly contributed to narrowing the gap, except in Arizona and Minnesota. Generally, cardivascular disease contributed towards increasing the gap, and reflects slower declines for blacks in cardiovascular mortality than for whites. Cancer generally contributed towards increasing the gap, and largely reflects increased cancer-related mortality for both races, with blacks undergoing steeper changes. In most states, non-comunicable diseases contributed a small amount towards increasing the gap, although it decreased the gap among four states, most notably in New York.
+In 1969, the life expectancy gap ranged from `r round(sum1[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum1[1, ]$LE_wbgap_lcl, 1)`, `r round(sum1[1, ]$LE_wbgap_ucl, 1)`] in `r sum1[1, ]$state ` to `r round(sum1[dim(sum1)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum1[dim(sum1)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum1[dim(sum1)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum1[dim(sum1)[1], ]$state `. Injuries was the largest contributor towards narrowing the gap during this time period, as both races underwent decreased rates of injury-related mortality, but blacks experienced larger decreases to their rates, especially in states with relatively higher rates in 1969 (**S3-S14 Figs**). Minnesota and Nebraska are exceptions, where both states had relatively low rates of injuries among blacks in 1969 and smaller gaps. All other causes also contributed to narrower gaps in most states, but generally made a smaller contribution than injuries. In New York, all other causes made a large contribution to narrowing the gap, where much of this decrease was likely due to decreased infant mortality among blacks (**S15 Fig**). Communicable diseases modestly contributed to narrowing the gap, except in Arizona and Minnesota. Generally, cardivascular disease contributed towards increasing the gap, and reflects slower declines for blacks in cardiovascular mortality than for whites. Cancer generally contributed towards increasing the gap, and largely reflects increased cancer-related mortality for both races, with blacks undergoing steeper changes. In most states, non-comunicable diseases contributed a small amount towards increasing the gap, although it decreased the gap among four states, most notably in New York.
 
 For `r dim(bw_dat.males[bw_dat.males$era1.diff > 0,])[1]` states, the gap decreased between 1969 and 1983, with the largest decreases in `r diff[dim(diff)[1], ]$state` (decrease in the gap of `r round(diff[dim(diff)[1], ]$era1.diff, 1)`, `r round(max1,1)` years, of which is due to `r max.cause1`), `r diff[dim(diff)[1]-1, ]$state` (change of `r round(diff[dim(diff)[1]-1, ]$era1.diff, 1)`, `r round(max2,1)` due to `r max.cause2`), `r diff[dim(diff)[1]-2, ]$state` (change of `r round(diff[dim(diff)[1]-2, ]$era1.diff, 1)`, `r round(max3,1)` due to `r max.cause3`), `r diff[dim(diff)[1]-3, ]$state` (change of `r round(diff[dim(diff)[1]-3, ]$era1.diff, 1)`, `r round(max4,1)` due to `r max.cause4`), and `r diff[dim(diff)[1]-4, ]$state` (change of `r round(diff[dim(diff)[1]-4, ]$era1.diff, 1)`, `r round(max5,1)` due to `r max.cause5`). 
 
 The gap increased for `r dim(bw_dat.males[bw_dat.males$era1.diff < 0,])[1]` states. Most notably in `r diff$state[1]` (increase in gap of `r round(abs(diff$era1.diff[1]), 1)`, `r abs(round(min1,1))` due to `r min.cause1`), `r diff$state[2]` (increase in gap of `r round(abs(diff$era1.diff[2]), 1)`, `r abs(round(min2,1))` due to `r min.cause2`), `r diff$state[3]` (increase in gap of `r round(abs(diff$era1.diff[3]), 1)`, `r abs(round(min3,1))` due to `r min.cause3`), `r diff$state[4]` (increase in gap of `r round(abs(diff$era1.diff[4]), 1)`, `r abs(round(min4,1))` due to `r min.cause4`). For these states, injuries do not contribute as much to narrowing the gap as in other states (and in Minnesota, injuries widens the gap), so these gap increases appear to be due to a combination of changes to cardiovascular-related mortality making blacks relatively worse off and less changes to injuries than experienced by other states.
 
-During the second time period, from 1983 to 1993, the life expectancy gap for males in `r dim(bw_dat.males[bw_dat.males$era2.diff < 0, ])[1]` of the analysed `r dim(bw_dat.males)[1]` widened (**Figure 1b**). For states such as New York, Maryland, New Jersey, and Connecticut, the biggest driver of the widening gap was communicable disease, reflecting the heightened risk of dying from HIV/AIDS in black males during the height of the AIDS epidemic. While both blacks and whites experienced a dramatic increase in mortality related to communicable diseases, blacks' rates were even higher. Injuries also contributed to the gap widening, most notably in Wisconsin, Maryland, and Louisiana. For many states, injury-related mortality increased for blacks but not for whites during this time period. Compared to the previous period, these two causes of death led to widwer rather than narrowed gaps. Cancer and cardiovascular disease contributed towards wider gaps, although the magnitude of the contribution of cardiovascular disease is quite hetergenous by state, with Mississippi, Minnesota, and Pennsylvania seeing the largest absolute contributions. All other causes contributed to a narrower gap, especially in New York, Pennsylvania, Connecticut, Mississippi, and Florida [note: This wasn't related to infant mortality improvements among blacks in NY, PA, but partially related to IMR improvements in CT, MS, and FL]. Most notably, the Disrict of Columbia had the highest gap to begin and underwent the largest increase to their gap, which increased from 10.5 years to 15.9 years over this 10-year period, reflecting an increase of `r abs(round(bw_dat.males$era2.diff[bw_dat.males$sex == "Male" & bw_dat.males$state == "Washington DC"], 1))` years, of which `r round(min.value.DC, 1)` was due to `r min.cause.DC`.
+During the second time period, from 1983 to 1993, the life expectancy gap for males in `r dim(bw_dat.males[bw_dat.males$era2.diff < 0, ])[1]` of the analysed `r dim(bw_dat.males)[1]` widened (**Fig 2**). For states such as New York, Maryland, New Jersey, and Connecticut, the biggest driver of the widening gap was communicable disease, reflecting the heightened risk of dying from HIV/AIDS in black males during the height of the AIDS epidemic. While both blacks and whites experienced a dramatic increase in mortality related to communicable diseases, blacks' rates were even higher. Injuries also contributed to the gap widening, most notably in Wisconsin, Maryland, and Louisiana. For many states, injury-related mortality increased for blacks but not for whites during this time period. Compared to the previous period, these two causes of death led to widwer rather than narrowed gaps. Cancer and cardiovascular disease contributed towards wider gaps, although the magnitude of the contribution of cardiovascular disease is quite hetergenous by state, with Mississippi, Minnesota, and Pennsylvania seeing the largest absolute contributions. All other causes contributed to a narrower gap, especially in New York, Pennsylvania, Connecticut, Mississippi, and Florida [note: This wasn't related to infant mortality improvements among blacks in NY, PA, but partially related to IMR improvements in CT, MS, and FL]. Most notably, the Disrict of Columbia had the highest gap to begin and underwent the largest increase to their gap, which increased from 10.5 years to 15.9 years over this 10-year period, reflecting an increase of `r abs(round(bw_dat.males$era2.diff[bw_dat.males$sex == "Male" & bw_dat.males$state == "Washington DC"], 1))` years, of which `r round(min.value.DC, 1)` was due to `r min.cause.DC`.
 
-The final time period saw decreasing gaps in all states, and an increasing gap in Washington DC (**Figure 1c**). In 1993, the gap ranged from `r round(sum3[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum3[1, ]$LE_wbgap_lcl, 1)`, `r round(sum3[1, ]$LE_wbgap_ucl, 1)`] in `r sum3[1, ]$state ` to `r round(sum3[dim(sum3)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum3[dim(sum3)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum3[dim(sum3)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum3[dim(sum3)[1], ]$state ` (or `r round(sum3[dim(sum3)[1]-1, ]$LE_wbgap, 1)` in `r sum3[dim(sum3)[1]-1, ]$state ` when DC is excluded). By 2013, it ranged from `r round(sum4[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum4[1, ]$LE_wbgap_lcl, 1)`, `r round(sum4[1, ]$LE_wbgap_ucl, 1)`] in `r sum4[1, ]$state ` to `r round(sum4[dim(sum4)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum4[dim(sum4)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum4[dim(sum4)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum4[dim(sum4)[1], ]$state ` (or `r round(sum4[dim(sum4)[1]-1, ]$LE_wbgap, 1)` in `r sum4[dim(sum4)[1]-1, ]$state` when DC is excluded). During this time period all of the causes contributed to narrowing the gap for most states. In Wisconsin and the District of Columbia, changes to CVD mortality counteracted the gap narrowing (reflecting slower decreases to cardivascular mortality among blacks compared with whites), while in Arizona changes to communicable disease counteracted the narrowing.
+The final time period saw decreasing gaps in all states, and an increasing gap in Washington DC (**Fig 3**). In 1993, the gap ranged from `r round(sum3[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum3[1, ]$LE_wbgap_lcl, 1)`, `r round(sum3[1, ]$LE_wbgap_ucl, 1)`] in `r sum3[1, ]$state ` to `r round(sum3[dim(sum3)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum3[dim(sum3)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum3[dim(sum3)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum3[dim(sum3)[1], ]$state ` (or `r round(sum3[dim(sum3)[1]-1, ]$LE_wbgap, 1)` in `r sum3[dim(sum3)[1]-1, ]$state ` when DC is excluded). By 2013, it ranged from `r round(sum4[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum4[1, ]$LE_wbgap_lcl, 1)`, `r round(sum4[1, ]$LE_wbgap_ucl, 1)`] in `r sum4[1, ]$state ` to `r round(sum4[dim(sum4)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum4[dim(sum4)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum4[dim(sum4)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum4[dim(sum4)[1], ]$state ` (or `r round(sum4[dim(sum4)[1]-1, ]$LE_wbgap, 1)` in `r sum4[dim(sum4)[1]-1, ]$state` when DC is excluded). During this time period all of the causes contributed to narrowing the gap for most states. In Wisconsin and the District of Columbia, changes to CVD mortality counteracted the gap narrowing (reflecting slower decreases to cardivascular mortality among blacks compared with whites), while in Arizona changes to communicable disease counteracted the narrowing.
 
-**Figure 1a: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
+**Fig 1: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
 ```{r figure1, fig.align = "center", echo=F, fig.height=9, fig.width=7}
 y.labels <- levels(factor(cod.df.males$state.gdiff.order.1))
@@ -287,9 +297,9 @@ males.era1 <- ggplotly(
 males.era1
 ```
 
-**Figure 1b: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
+**Fig 2: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
 
-```{r figure1b, echo = F, fig.height=9, fig.width=11}
+```{r figure2, echo = F, fig.height=9, fig.width=11}
 # - The gap in 1983 ranges from `r round(sum2[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum2[1, ]$LE_wbgap_lcl, 1)`, `r round(sum2[1, ]$LE_wbgap_ucl, 1)`] in `r sum2[1, ]$state ` to `r round(sum2[dim(sum2)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum2[dim(sum2)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum2[dim(sum2)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum2[dim(sum2)[1], ]$state `.
 
 y.labels.2 <- levels(factor(cod.df.males$state.gdiff.order.2))
@@ -311,9 +321,9 @@ males.era2 <- ggplotly(
 males.era2 
 ```
 
-**Figure 1c: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
+**Fig 3: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
 
-```{r figure1c, echo = F, fig.height=9, fig.width=11}
+```{r figure3, echo = F, fig.height=9, fig.width=11}
 y.labels.3 <- levels(factor(cod.df.males$state.gdiff.order.3))
 y.num.breaks.3 <- length(levels(factor(cod.df.males$state.gdiff.order.3)))
 
@@ -334,7 +344,22 @@ males.era3
 ```
 
 ```{r, fig.align="center", fig.height=5, fig.width=9, echo=F, eval = F}
-subplot(males.era1, males.era2, males.era3, shareY = T)
+males.era2.2 <- ggplotly(
+  ggplot(subset(cod.df.males, era == "1983-1993"), aes(y = state.gdiff.num.1, x = new.start.2)) +
+    geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.1 - 0.45, 
+                  ymax = state.gdiff.num.1 + 0.45, 
+                  xmax = new.finish.2, fill = COD), 
+              color = "white") +
+    geom_segment(data = bw_dat.males, 
+                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
+    geom_segment(data = bw_dat.males, 
+                 aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
+  layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
+
+males.era2.2 
+
+subplot(males.era1, males.era2.2, shareY = T)
 ```
 ** **
 ** **
@@ -369,9 +394,9 @@ Quick summary
 
 - In a few states, cancer contributed to widening the gap (NM, Oregon, Arizona, DC, Wisconsin).
 
-**Figure 2a: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
+**Fig 4: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
-```{r figure2a, fig.align = "center", echo=F}
+```{r figure4, fig.align = "center", echo=F}
 
 cod.df.females <- merge(subset(cod.df, sex == "Female"), bw_dat.females, by = c("state"))
 cod.df.females <- cod.df.females %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
@@ -397,7 +422,7 @@ females.era1 <- ggplotly(
 females.era1
 ```
 
-**Figure 2b: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
+**Fig 5: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
 
 ```{r figure2b, fig.align = "center", echo=F}
 y.labels.2 <- levels(factor(cod.df.females$state.gdiff.order.2))
@@ -419,9 +444,9 @@ females.era2 <- ggplotly(
 females.era2
 ```
 
-**Figure 2c: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
+**Fig 6: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
 
-```{r figure2c, fig.align = "center", echo=F}
+```{r fig6, fig.align = "center", echo=F}
 y.labels.3 <- levels(factor(cod.df.females$state.gdiff.order.3))
 y.num.breaks.3 <- length(levels(factor(cod.df.females$state.gdiff.order.3)))
 
@@ -441,9 +466,9 @@ females.era3 <- ggplotly(
 females.era3
 ```
 
-###Supplemental Information
+###Supporting Information
 
-**eTable1: Cause of Death Recode**
+**S1 Table: Cause of death groupings**
 
 | Broad cause of death     | Included causes of death                                                     |
 |--------------------------|------------------------------------------------------------------------------|
@@ -454,20 +479,20 @@ females.era3
 | Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
 
+**S1 Text: Decomposing the change to the difference in life expectancy over time by cause of death: an example**
+To create.
 
-**eFigure 1: Difference in life expectancy between black in white males, United States, 1969-2013**
+**S1 Fig: Difference in life expectancy between black in white males, United States, 1969-2013**
 
 ![Difference in life expectancy between black in white males, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Men.bmp)
 
-**eFigure 2: Difference in life expectancy between black in white females, United States, 1969-2013**
+**S2 Fig: Difference in life expectancy between black in white females, United States, 1969-2013**
 
 ![Difference in life expectancy between black in white females, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Women.bmp)
 
-**eExample 1: Decomposing the change to the difference in life expectancy over time by cause of death: an example**
+**S3-S14 Fig: Trends in age-standardized mortality by state, race, and sex, 1969-2013 (currently included in other file)**
 
-To create.
-
-**eFigure 3: Comparison of the contribution of age and cause of death to the difference in life expectancy between blacks and whites in New York, 1969 vs. 1983**
+**S15 Fig: Comparison of the contribution of age and cause of death to the difference in life expectancy between blacks and whites in New York, 1969 vs. 1983**
 
 ```{r ny_1969_1983_age_cod_decomp, echo = F, fig.width = 9}
 ny.dat <- age_cod_results %>% filter(state == "New York" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
