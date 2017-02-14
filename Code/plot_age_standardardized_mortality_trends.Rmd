@@ -18,153 +18,39 @@ library(plotly)
 
 ```{r, echo=F}
 mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates.csv")
+mortality.rates.wide <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_wide.csv")
 ```
 
-**MALES**
-
-**Fig S3: Age-adjusted cancer-related mortality (per 100,000) in males, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Cancers"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
+```{r, echo=F, fig.width=11}
+for(sex_i in c("Male", "Female")) {
+  for(cod in levels(mortality.rates$COD)) {
+    for(region in levels(mortality.rates$Census_Region)) {
+      data.sub <- subset(mortality.rates, sex == sex_i & post.samp == 1 & COD == cod  & Census_Region == region)
+      a <- ggplot(data.sub, 
+                      aes(y=rate.per.100k, x = year)) + 
+                 geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
+                 geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
+                 geom_line(aes(col = state, lty = race)) +
+                 facet_wrap( ~ state, ncol = 5) +
+                 ylab("Age-standardized mortality rate (per 100,000)") +
+                 xlab("Year") + 
+                 ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod, " (Census Region: ", region, ")"))
+      print(a)
+    }
+    for(region in levels(mortality.rates$Census_Region)) {    
+          b <- ggplot(subset(mortality.rates.wide, sex == sex_i & post.samp == 1 & COD == cod & Census_Region == region), 
+                      aes(y=rate.difference, x = year)) + 
+                 geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
+                 geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
+                 geom_hline(aes(yintercept = 0), col = "#636363") +
+                 geom_line(aes(col = state)) +
+                 facet_wrap( ~ state, ncol = 5) +
+                 ylab("Black-white difference (per 100,000)") +
+                 xlab("Year") + 
+                 ggtitle(paste0("Black-white difference in age-adjusted mortality (per 100,000) in ", 
+                                sex_i, " for ", cod, " (Census Region: ", region, ")"))
+          print(b)
+    }
+  }
+}
 ```
-
-**Fig S4: Age-adjusted cardiovascular-related mortality (per 100,000) in males, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Cardiovascular"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S5: Age-adjusted communicable disease-related mortality (per 100,000) in males, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Communicable"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S6: Age-adjusted injury-related mortality (per 100,000) in males, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S7: Age-adjusted non-communicable disease-related mortality (per 100,000) in males, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "Non-communicable"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S8: Age-adjusted mortality (per 100,000) in males for all other causes, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Male" & post.samp == 1 & COD == "All other causes"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**FEMALES**
-
-**Fig S9: Age-adjusted cancer-related mortality (per 100,000) in females, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Cancers"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S10: Age-adjusted cardiovascular-related mortality (per 100,000) in females, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Cardiovascular"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S11: Age-adjusted communicable disease-related mortality (per 100,000) in females, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Communicable"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S12: Age-adjusted injury-related mortality (per 100,000) in females, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Injuries"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S13: Age-adjusted non-communicable disease-related mortality (per 100,000) in females, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "Non-communicable"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
-**Fig S14: Age-adjusted mortality (per 100,000) in females for all other causes, United States, 1969-2013**
-
-```{r, echo=F, fig.width=11, fig.height=9}
-ggplotly(ggplot(subset(mortality.rates, sex == "Female" & post.samp == 1 & COD == "All other causes"), aes(y=rate.per.100k, x = year)) + 
-           geom_vline(aes(xintercept = 1983), col = "#636363", lwd = 0.5) +
-           geom_vline(aes(xintercept = 1993), col = "#636363", lwd = 0.5) +
-           geom_line(aes(col = state, lty = race)) +
-           facet_wrap( ~ state, ncol = 5) +
-           ylab("Age-standardized mortality rate (per 100,000)") +
-           xlab("Year"))
-```
-
