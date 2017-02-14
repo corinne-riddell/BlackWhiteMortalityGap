@@ -1,9 +1,10 @@
 ---
 title: Exploring how changes in cause of death have narrowed the
   black-white life expectancy gap in the United States.
+
 output:
-  html_document: default
   word_document: default
+  html_document: default
 always_allow_html: yes
 ---
 
@@ -31,7 +32,7 @@ Using data from the National Vital Statistics System, we extracted the number of
 
 [Add findings]
 
-**Conclusions**
+**Conclusions:**
 [Add conclusion]
 
 ###Introduction
@@ -57,7 +58,7 @@ To examine the components of the difference in life expectancy between blacks an
 
 In order to understand whether states fared similarly over time, we divided the time frame into three eras which roughly encapsulate an initial period of increases in life expectancy for both races and sexes (1969-1983), an intermediate period of decreases and stagnating life expectancy for blacks but not for whites (1983-1993) and a final period of increasing life expectancy for both races (1993-2013). While these eras represent different lengths of time, they best capture three distinct periods of changes to the difference in life expectancy: an intial narrowing of the gap, followed by a widening of the gap that diminished previous progress, and the most recent twenty years of sustained narrowing (**S1 Fig** and **S2 Fig**).
 
-For each era, we calculated the degree that the life expectancy gap has narrowed or widened and decomposed this *change* to the *difference* in the life expectancy between blacks and whites according to cause of death. To do so, we simply subtracted the contribution (in years) that each cause of death category had made to the difference in life expectancy at the beginning of the era from that made at the beginning of the era. An example of the calculation is found in the eAppendix.
+For each era, we calculated the degree that the life expectancy gap has narrowed or widened and decomposed this *change* to the *difference* in the life expectancy between blacks and whites according to cause of death. To do so, we simply subtracted the contribution (in years) that each cause of death category had made to the difference in life expectancy at the beginning of the era from that made at the beginning of the era. An example of the calculation is found in **S1 Text**.
 
 *To re-write*: To calculate 95% credible intervals, we sampled 1000 times from the posterior distribution to create 1000 samples for each stratum. We performed all calculations on each sample and took the median of the estimates as the estimate and the 2.5 and 97.5th quantiles as the lower and upper bound for the 95% CI. Anything about thinning?
 
@@ -284,14 +285,11 @@ males.era1 <- ggplotly(
                   ymax = state.gdiff.num.1 + 0.45, 
                   xmax = new.finish.1, fill = COD), 
               color = "white") +
-#    facet_grid(.~ Census_Region) +
     geom_segment(data = subset(cod.df.males, COD == "Cancers" & era == "1969-1983"), aes(x = second.gap, xend = second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) + 
         geom_segment(data = subset(cod.df.males, COD == "Cancers" & era == "1969-1983"), aes(x = first.gap, xend = first.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) + 
-   # geom_segment(data = bw_dat.males,
-  #               aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
-  #  geom_segment(data = bw_dat.males,
-  #               aes(x = first.gap, xend= first.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
-    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>%
+    theme_minimal() + 
+    scale_x_continuous(breaks = seq(2, 16, by = 2), labels = seq(2, 16, by = 2)) +
+    scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>%
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
 
 males.era1
@@ -315,7 +313,9 @@ males.era2 <- ggplotly(
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
     geom_segment(data = bw_dat.males, 
                  aes(x = second.gap, xend= second.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5), lty = 3) +
-    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.2, labels = y.labels.2)) %>% 
+    theme_minimal() + 
+    scale_x_continuous(breaks = seq(2, 16, by = 2), labels = seq(2, 16, by = 2)) +
+    scale_y_continuous(breaks = 1:y.num.breaks.2, labels = y.labels.2), minor_breaks = NULL) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
 
 males.era2 
@@ -337,7 +337,9 @@ males.era3 <- ggplotly(
                  aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
     geom_segment(data = bw_dat.males, 
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5), lty = 3) +
-    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks.3, labels = y.labels.3)) %>% 
+    theme_minimal() + 
+    scale_x_continuous(breaks = seq(0, 16, by = 2), labels = seq(0, 16, by = 2)) +
+    scale_y_continuous(breaks = 1:y.num.breaks.3, labels = y.labels.3)) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1993-2013"), yaxis = list(title = NA, autorange = "reversed"))
 
 males.era3
@@ -480,7 +482,21 @@ females.era3
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
 
 **S1 Text: Decomposing the change to the difference in life expectancy over time by cause of death: an example**
+
 To create.
+1. First show the data for NY in 1993 and 2013 for black and white males (smoothed deaths, population, for each age strata).
+
+2. Create life tables for blacks and whites in the two years (4 tables)
+
+3. Calculate the LE gap for each year (two numbers)
+
+4. Decompose by age the BW gap within year (two decomps)
+
+5. Decompose by age and COD the BW gap within year (two decomps)
+
+6. Marginal COD decomp within year (two decomps)
+
+7. Subtract the COD decomp from year 1 from year 2. (one change in decomp)
 
 **S1 Fig: Difference in life expectancy between black in white males, United States, 1969-2013**
 
