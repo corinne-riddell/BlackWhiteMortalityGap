@@ -81,4 +81,21 @@ mortality.rates$rate.per.100k <- mortality.rates$age.std.mortality.rate*100000
 write.csv(mortality.rates, "~/BlackWhiteMortalityGap/Data/mortality_rates.csv")
 ```
 
+```{r calculate_difference_in_mortality}
+mortality.rates.white <- mortality.rates %>% filter(race == "White") %>% 
+  select(sex, state, year, COD, post.samp, age.std.mortality.rate, rate.per.100k) %>%
+  rename(age.std.mortality.rate.white = age.std.mortality.rate,
+         rate.per.100k.white = rate.per.100k)
+
+mortality.rates.black <- mortality.rates %>% filter(race == "Black") %>% 
+  rename(age.std.mortality.rate.black = age.std.mortality.rate,
+         rate.per.100k.black = rate.per.100k)  
+
+mortality.rates.wide <- merge(mortality.rates.black, mortality.rates.white, by = c("post.samp", "sex", "state", "year", "COD"))
+
+mortality.rates.wide <- mortality.rates.wide %>% mutate(rate.difference = rate.per.100k.black - rate.per.100k.white)
+
+write.csv(mortality.rates.wide, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_wide.csv")
+```
+
 
