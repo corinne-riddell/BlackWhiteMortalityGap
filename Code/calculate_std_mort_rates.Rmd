@@ -3,7 +3,6 @@ title: "Untitled"
 output: html_document
 ---
 
-
 ```{r load_libraries}
 library(dplyr)
 library(purrr)
@@ -13,24 +12,8 @@ library(reshape2)
 library(grid)
 library(gridExtra)
 
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 
-```
-
-```{r read_in_posterior_results_samples_1_and_2}
-#this take a long time (a few hours!)
-load("~/BW_results/results_set_1.Rdata")
-r.All.set1 <- r.All %>% filter(post.samp %in% c(1,2))
-
-for(i in 2:8){
-  print(i)
-  load(paste0("~/BW_results/results_set_", i, ".Rdata"))
-  assign(paste0("r.All.set", i), r.All %>% filter(post.samp %in% c(1,2)))
-  rm(r.All)
-}
-
-r.All.post1.2 <- rbind(r.All.set1, r.All.set2, r.All.set3, r.All.set4, 
-                      r.All.set5, r.All.set6, r.All.set7, r.All.set8)
 ```
 
 ```{r load_std_pop}
@@ -49,53 +32,79 @@ std.pop <- std.pop %>% mutate(age_minbin = 0*(Age == "00 years") + 1*(Age == "01
                      85*(Age == "85+ years"))
 ```
 
-```{r merge_and_calculated_age_stdized_mortality}
-r.All.post1.2 <- merge(r.All.post1.2, std.pop, by = "age_minbin")
+```{r calculate_age_std_mort_rates_and_bw_diff}
+#this take a long time (a few hours!)
 
-#returns dataset with new variable "age.std.mortality.rate" 
-mortality.rates <- r.All.post1.2 %>% 
-  group_by(post.samp, state.n, year.n, race.n, sex.n, COD) %>% 
-  arrange(age_minbin) %>%
-  summarise(age.std.mortality.rate = sum(age.weight*smoothed_rate), #the sum is across age bins
-            race = first(race),
-            sex = first(sex),
-            state = first(state))
+system.time(
+  for(i in 1:8){
+    print(i)
+    load(paste0("~/BW_results/results_set_", i, ".Rdata"))
+    r.All <- merge(r.All, std.pop, by = "age_minbin")
+    
+    #returns dataset with new variable "age.std.mortality.rate" 
+    mortality.rates <- r.All %>% 
+      group_by(post.samp, state.n, year.n, race.n, sex.n, COD) %>% 
+      arrange(age_minbin) %>%
+      summarise(age.std.mortality.rate = sum(age.weight*smoothed_rate), #the sum is across age bins
+                race = first(race),
+                sex = first(sex),
+                state = first(state),
+                year = first(year))
+    
+    mortality.rates.summary <- mortality.rates %>% group_by(state.n, year.n, race.n, sex.n, COD) %>%
+      summarise(race = first(race),
+                sex = first(sex),
+                state = first(state),
+                year = first(year),
+                age.std.mortality.rate_LCL = quantile(age.std.mortality.rate, 0.025), #summarize across posterior samples (post.samp)
+                age.std.mortality.rate_med = quantile(age.std.mortality.rate, 0.5),
+                age.std.mortality.rate_UCL = quantile(age.std.mortality.rate, 0.0975))
+    
+    #tidy mortality rates summary
+    COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
+                    "Non-communicable", "Injuries", "All other causes")
+    
+    mortality.rates.summary$COD <- factor(mortality.rates.summary$COD, COD.levels)
+    
+    mortality.rates.summary <- add_Census_Division(mortality.rates.summary, state)
+    mortality.rates.summary <- add_Census_Region(mortality.rates.summary, state)
+    mortality.rates.summary$stabbrs <- state.abb[match(mortality.rates.summary$state, state.name)]
+    mortality.rates.summary$rate.per.100k <- mortality.rates.summary$age.std.mortality.rate_med*100000
+    mortality.rates.summary <- mortality.rates.summary %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
 
+    #compute black-white difference in mortality
+    mortality.rates.white <- mortality.rates %>% filter(race == "White") %>% 
+      ungroup() %>%
+      select(sex, state, year, COD, post.samp, age.std.mortality.rate) %>%
+      rename(age.std.mortality.rate.white = age.std.mortality.rate)
+    
+    mortality.rates.black <- mortality.rates %>% filter(race == "Black") %>% 
+      rename(age.std.mortality.rate.black = age.std.mortality.rate)  
+    
+    mortality.rates.wide <- merge(mortality.rates.black, mortality.rates.white, by = c("post.samp", "sex", "state", "year", "COD"))
+    
+    mortality.rates.wide <- mortality.rates.wide %>% mutate(rate.difference = age.std.mortality.rate.black - age.std.mortality.rate.white)
+    
+    mortality.rates.difference <- mortality.rates.wide %>% 
+      group_by(state.n, year.n, sex.n, COD) %>%
+      summarise(rate.difference_LCL = quantile(rate.difference, 0.025), #summarize across posterior samples (post.samp)
+                rate.difference_med = quantile(rate.difference, 0.5),
+                rate.difference_UCL = quantile(rate.difference, 0.0975),
+                sex = first(sex),
+                state = first(state),
+                year = first(year))
+    
+    mortality.rates.difference %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
+    
+    write.csv(mortality.rates.summary, paste0("~/BlackWhiteMortalityGap/Data/mortality_rates_", i, ".csv"))
+    write.csv(mortality.rates.difference, paste0("~/BlackWhiteMortalityGap/Data/mortality_rates_diff_", i, ".csv"))
+  }
+)
 ```
 
-```{r tidy_mortality.rates}
-COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
-                "Non-communicable", "Injuries", "All other causes")
 
-mortality.rates$COD <- factor(mortality.rates$COD, COD.levels)
 
-mortality.rates <- add_Census_Division(mortality.rates, state)
-mortality.rates <- add_Census_Region(mortality.rates, state)
-mortality.rates$stabbrs <- state.abb[match(mortality.rates$state, state.name)]
-mortality.rates$year <- mortality.rates$year.n + 1968
-mortality.rates$rate.per.100k <- mortality.rates$age.std.mortality.rate*100000
-```
 
-```{r save_mortality_dataset}
-#write.csv(r.All.post1.2, "~/BlackWhiteMortalityGap/Data/states_combined_post_samp_1_2.csv")
-write.csv(mortality.rates, "~/BlackWhiteMortalityGap/Data/mortality_rates.csv")
-```
 
-```{r calculate_difference_in_mortality}
-mortality.rates.white <- mortality.rates %>% filter(race == "White") %>% 
-  select(sex, state, year, COD, post.samp, age.std.mortality.rate, rate.per.100k) %>%
-  rename(age.std.mortality.rate.white = age.std.mortality.rate,
-         rate.per.100k.white = rate.per.100k)
-
-mortality.rates.black <- mortality.rates %>% filter(race == "Black") %>% 
-  rename(age.std.mortality.rate.black = age.std.mortality.rate,
-         rate.per.100k.black = rate.per.100k)  
-
-mortality.rates.wide <- merge(mortality.rates.black, mortality.rates.white, by = c("post.samp", "sex", "state", "year", "COD"))
-
-mortality.rates.wide <- mortality.rates.wide %>% mutate(rate.difference = rate.per.100k.black - rate.per.100k.white)
-
-write.csv(mortality.rates.wide, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_wide.csv")
-```
 
 

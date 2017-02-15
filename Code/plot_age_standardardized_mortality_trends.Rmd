@@ -19,11 +19,7 @@ library(plotly)
 ```{r, echo=F}
 mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates.csv")
 mortality.rates.wide <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_wide.csv")
-
-mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
-mortality.rates.wide <- mortality.rates.wide %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
 ```
-
 
 ```{r, echo=F, fig.width=11, fig.height=11}
 for(sex_i in c("Male", "Female")) {
@@ -58,36 +54,3 @@ for(sex_i in c("Male", "Female")) {
 }
 ```
 
-```{r, echo=F, fig.width=11, eval = F}
-for(sex_i in c("Male", "Female")) {
-  for(cod in levels(mortality.rates$COD)) {
-    for(region in levels(mortality.rates$Census_Region)) {
-      data.sub <- subset(mortality.rates, sex == sex_i & post.samp == 1 & COD == cod  & Census_Region == region)
-      a <- ggplotly(ggplot(data.sub, 
-                      aes(y=rate.per.100k, x = year)) + 
-                 geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
-                 geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
-                 geom_line(aes(col = state, lty = race)) +
-                 facet_wrap( ~ state, scales = "free_x") +
-                 ylab("Age-standardized mortality rate (per 100,000)") +
-                 xlab("Year") + 
-                 ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod, " (Census Region: ", region, ")")))
-      print(a)
-    }
-    for(region in levels(mortality.rates$Census_Region)) {    
-          b <- ggplotly(ggplot(subset(mortality.rates.wide, sex == sex_i & post.samp == 1 & COD == cod & Census_Region == region), 
-                      aes(y=rate.difference, x = year)) + 
-                 geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
-                 geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
-                 geom_hline(aes(yintercept = 0), col = "#636363") +
-                 geom_line(aes(col = state)) +
-                 facet_wrap( ~ state, scales = "free_x") +
-                 ylab("Black-white difference (per 100,000)") +
-                 xlab("Year") + 
-                 ggtitle(paste0("Black-white difference in age-adjusted mortality (per 100,000) in ", 
-                                sex_i, " for ", cod, " (Census Region: ", region, ")")))
-          print(b)
-    }
-  }
-}
-```
