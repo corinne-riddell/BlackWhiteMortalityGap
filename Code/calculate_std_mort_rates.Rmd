@@ -56,9 +56,9 @@ system.time(
                 sex = first(sex),
                 state = first(state),
                 year = first(year),
-                age.std.mortality.rate_LCL = quantile(age.std.mortality.rate, 0.025), #summarize across posterior samples (post.samp)
+                age.std.mortality.rate_LCL = quantile(age.std.mortality.rate, 0.025), #summarise across posterior samples (post.samp)
                 age.std.mortality.rate_med = quantile(age.std.mortality.rate, 0.5),
-                age.std.mortality.rate_UCL = quantile(age.std.mortality.rate, 0.0975))
+                age.std.mortality.rate_UCL = quantile(age.std.mortality.rate, 0.975))
     
     #tidy mortality rates summary
     COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
@@ -89,7 +89,7 @@ system.time(
       group_by(state.n, year.n, sex.n, COD) %>%
       summarise(rate.difference_LCL = quantile(rate.difference, 0.025), #summarize across posterior samples (post.samp)
                 rate.difference_med = quantile(rate.difference, 0.5),
-                rate.difference_UCL = quantile(rate.difference, 0.0975),
+                rate.difference_UCL = quantile(rate.difference, 0.975),
                 sex = first(sex),
                 state = first(state),
                 year = first(year))
