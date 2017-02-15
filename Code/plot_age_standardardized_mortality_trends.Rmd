@@ -17,18 +17,22 @@ library(plotly)
 ```
 
 ```{r, echo=F}
-mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates.csv")
-mortality.rates.wide <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_wide.csv")
+# mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates.csv")
+# mortality.rates.wide <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_wide.csv")
+
+mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_1.csv")
+mortality.rates.wide <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_diff_1.csv")
 ```
 
 ```{r, echo=F, fig.width=11, fig.height=11}
 for(sex_i in c("Male", "Female")) {
   for(cod in levels(mortality.rates$COD)) {
-    data.sub <- subset(mortality.rates, sex == sex_i & post.samp == 1 & COD == cod)
+    data.sub <- subset(mortality.rates, sex == sex_i & COD == cod)
     a <- ggplot(data.sub, 
-                aes(y=rate.per.100k, x = year)) + 
+                aes(y = age.std.mortality.rate_med*100000, x = year)) + 
       geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
       geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
+      geom_ribbon(aes(ymin = age.std.mortality.rate_LCL*100000, ymax = age.std.mortality.rate_UCL*100000, col = race)) +
       geom_line(aes(col = Census_Division, lty = race)) +
       facet_wrap( ~ state.reorder, ncol = 5) +
       ylab("Age-standardized mortality rate (per 100,000)") +
