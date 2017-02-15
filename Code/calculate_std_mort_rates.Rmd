@@ -36,7 +36,7 @@ std.pop <- std.pop %>% mutate(age_minbin = 0*(Age == "00 years") + 1*(Age == "01
 #this take a long time (a few hours!)
 
 system.time(
-  for(i in 1:8){
+  for(i in 2:8){
     print(i)
     load(paste0("~/BW_results/results_set_", i, ".Rdata"))
     r.All <- merge(r.All, std.pop, by = "age_minbin")
@@ -70,8 +70,11 @@ system.time(
     mortality.rates.summary <- add_Census_Region(mortality.rates.summary, state)
     mortality.rates.summary$stabbrs <- state.abb[match(mortality.rates.summary$state, state.name)]
     mortality.rates.summary$rate.per.100k <- mortality.rates.summary$age.std.mortality.rate_med*100000
-    mortality.rates.summary <- mortality.rates.summary %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
-
+    mortality.rates.summary <- mortality.rates.summary %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)),
+                                                                  age.std.mortality.rate_LCL = age.std.mortality.rate_LCL*100000,
+                                                                  age.std.mortality.rate_med = age.std.mortality.rate_med*100000,
+                                                                  age.std.mortality.rate_UCL = age.std.mortality.rate_UCL*100000)
+    
     #compute black-white difference in mortality
     mortality.rates.white <- mortality.rates %>% filter(race == "White") %>% 
       ungroup() %>%
@@ -93,8 +96,16 @@ system.time(
                 sex = first(sex),
                 state = first(state),
                 year = first(year))
-    
-    mortality.rates.difference %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
+
+    #tidy mortality rates summary
+    mortality.rates.difference$COD <- factor(mortality.rates.difference$COD, COD.levels)
+    mortality.rates.difference <- add_Census_Division(mortality.rates.difference, state)
+    mortality.rates.difference <- add_Census_Region(mortality.rates.difference, state)
+    mortality.rates.difference$stabbrs <- state.abb[match(mortality.rates.difference$state, state.name)]
+    mortality.rates.difference <- mortality.rates.difference %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)),
+                                                                        rate.difference_LCL = rate.difference_LCL*100000,
+                                                                        rate.difference_med = rate.difference_med*100000,
+                                                                        rate.difference_UCL = rate.difference_UCL*100000)
     
     write.csv(mortality.rates.summary, paste0("~/BlackWhiteMortalityGap/Data/mortality_rates_", i, ".csv"))
     write.csv(mortality.rates.difference, paste0("~/BlackWhiteMortalityGap/Data/mortality_rates_diff_", i, ".csv"))
