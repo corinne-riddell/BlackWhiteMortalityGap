@@ -63,29 +63,29 @@ for(sex_i in c("Male", "Female")) {
   for(cod in levels(mortality.rates$COD)) {
     for(region in levels(mortality.rates$Census_Region)) {
       data.sub <- subset(mortality.rates, sex == sex_i & post.samp == 1 & COD == cod  & Census_Region == region)
-      a <- ggplot(data.sub, 
+      a <- ggplotly(ggplot(data.sub, 
                       aes(y=rate.per.100k, x = year)) + 
                  geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
                  geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
                  geom_line(aes(col = state, lty = race)) +
-                 facet_wrap( ~ state, ncol = 5) +
+                 facet_wrap( ~ state, scales = "free_x") +
                  ylab("Age-standardized mortality rate (per 100,000)") +
                  xlab("Year") + 
-                 ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod, " (Census Region: ", region, ")"))
+                 ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod, " (Census Region: ", region, ")")))
       print(a)
     }
     for(region in levels(mortality.rates$Census_Region)) {    
-          b <- ggplot(subset(mortality.rates.wide, sex == sex_i & post.samp == 1 & COD == cod & Census_Region == region), 
+          b <- ggplotly(ggplot(subset(mortality.rates.wide, sex == sex_i & post.samp == 1 & COD == cod & Census_Region == region), 
                       aes(y=rate.difference, x = year)) + 
                  geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
                  geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
                  geom_hline(aes(yintercept = 0), col = "#636363") +
                  geom_line(aes(col = state)) +
-                 facet_wrap( ~ state, ncol = 5) +
+                 facet_wrap( ~ state, scales = "free_x") +
                  ylab("Black-white difference (per 100,000)") +
                  xlab("Year") + 
                  ggtitle(paste0("Black-white difference in age-adjusted mortality (per 100,000) in ", 
-                                sex_i, " for ", cod, " (Census Region: ", region, ")"))
+                                sex_i, " for ", cod, " (Census Region: ", region, ")")))
           print(b)
     }
   }
