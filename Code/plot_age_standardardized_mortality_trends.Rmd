@@ -21,7 +21,7 @@ library(plotly)
 # mortality.rates.wide <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_wide.csv")
 
 mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_1.csv")
-mortality.rates.wide <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_diff_1.csv")
+mortality.rates.diff <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/mortality_rates_diff_1.csv")
 ```
 
 ```{r, echo=F, fig.width=11, fig.height=11}
@@ -29,22 +29,23 @@ for(sex_i in c("Male", "Female")) {
   for(cod in levels(mortality.rates$COD)) {
     data.sub <- subset(mortality.rates, sex == sex_i & COD == cod)
     a <- ggplot(data.sub, 
-                aes(y = age.std.mortality.rate_med*100000, x = year)) + 
+                aes(y = age.std.mortality.rate_med, x = year)) + 
       geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
       geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
-      geom_ribbon(aes(ymin = age.std.mortality.rate_LCL*100000, ymax = age.std.mortality.rate_UCL*100000, col = race)) +
+      geom_ribbon(aes(ymin = age.std.mortality.rate_LCL, ymax = age.std.mortality.rate_UCL, fill = Census_Division, group = race), col = NA, alpha = 0.5) +
       geom_line(aes(col = Census_Division, lty = race)) +
       facet_wrap( ~ state.reorder, ncol = 5) +
       ylab("Age-standardized mortality rate (per 100,000)") +
       xlab("Year") + 
-      ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod))
+      ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod))# + theme_minimal()
     
     print(a)
     
-    b <- ggplot(subset(mortality.rates.wide, sex == sex_i & post.samp == 1 & COD == cod), 
-                aes(y=rate.difference, x = year)) + 
+    b <- ggplot(subset(mortality.rates.diff, sex == sex_i & COD == cod), 
+                aes(y=rate.difference_med, x = year)) + 
       geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
       geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
+      geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL, fill = Census_Division), col = NA, alpha = 0.5) +
       geom_hline(aes(yintercept = 0), col = "#636363") +
       geom_line(aes(col = Census_Division)) +
       facet_wrap( ~ state.reorder, ncol = 5) +
