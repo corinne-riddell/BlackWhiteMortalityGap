@@ -42,7 +42,7 @@ mortality.rates.diff <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Bl
                                      "e25", "e26", "e27", "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", "e28", "e29",
                                      "e30", "e31", "e32", "e33", "Texas", "e34", "e35", "e36", "e37", "Florida"))   
     
- data.sub <- subset(mortality.rates, sex == sex_i & COD == cod)
+ data.sub <- subset(mortality.rates, sex == "Male" & COD == "Injuries")
  test <- ggplot(data.sub, 
                 aes(y = age.std.mortality.rate_med, x = year)) + 
       geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
@@ -51,21 +51,21 @@ mortality.rates.diff <- rbind(read.csv("/Users/corinneriddell/Documents/repos/Bl
       geom_line(aes(col = Census_Division, lty = race)) +
       facet_wrap( ~ state.reorder2, ncol = 11, drop = F) +
       ylab("Age-standardized mortality rate (per 100,000)") +
-      xlab("Year") + 
-      ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod))# + theme_minimal()
+      xlab("Year") #+ 
+     # ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod))# + theme_minimal()
  test
  
- library(gridExtra)
-g <- ggplotGrob(test)
-## remove empty panels
-g$grobs[names(g$grobs) %in% c("panel-1-1", "panel-1-2")] <- NULL
-## remove them from the layout
-g$layout <- g$layout[!(g$layout$name %in% c("panel-1-1", "panel-1-2")),]
-## move axis closer to panel
-#g$layout[g$layout$name == "axis_b-9", c("t", "b")] = c(9,9)
-
-grid.newpage()
-grid.draw(g)
+#  library(gridExtra)
+# g <- ggplotGrob(test)
+# ## remove empty panels
+# g$grobs[names(g$grobs) %in% c("panel-1-1", "panel-1-2")] <- NULL
+# ## remove them from the layout
+# g$layout <- g$layout[!(g$layout$name %in% c("panel-1-1", "panel-1-2")),]
+# ## move axis closer to panel
+# #g$layout[g$layout$name == "axis_b-9", c("t", "b")] = c(9,9)
+# 
+# grid.newpage()
+# grid.draw(g)
 ```
 
 ```{r, echo=F, fig.width=11, fig.height=11}
