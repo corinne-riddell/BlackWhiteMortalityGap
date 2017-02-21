@@ -182,7 +182,7 @@ contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.tab
       return(print("Must supply type of data as either practice or results."))
     }else if(type.of.data == "practice"){
       contribution_data <- data.frame("COD" = decomp.table1[["Cause.of.death"]], 
-                                      "Contribution.to.change" = decomp.table1[["C_x_COD"]] - decomp.table2[["C_x_COD"]])      
+                                      "Contribution.to.change" = decomp.table1[["C_x"]] - decomp.table2[["C_x"]])      
     }else if(type.of.data == "results"){
       contribution_data <- data.frame("COD" = decomp.table1[["COD"]], 
                                       "Contribution.to.change" = decomp.table1[["COD_cont_yrs"]] - decomp.table2[["COD_cont_yrs"]])
