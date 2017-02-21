@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",24,1,0,0,"All other causes","White","Male","Mississippi",1969,"East South Central","South","MS",186.900216426206,196.012749463375,205.115274132581,196.012749463375
+"2",24,1,0,0,"Cancers","White","Male","Mississippi",1969,"East South Central","South","MS",228.754118985975,237.12821395277,244.779204039663,237.12821395277
+"3",24,1,0,0,"Cardiovascular","White","Male","Mississippi",1969,"East South Central","South","MS",915.69441121928,942.241194895509,966.839714662814,942.241194895509
+"4",24,1,0,0,"Communicable","White","Male","Mississippi",1969,"East South Central","South","MS",52.688456310715,58.2942719592354,64.5256655044469,58.2942719592354
+"5",24,1,0,0,"Injuries","White","Male","Mississippi",1969,"East South Central","South","MS",152.590948294651,158.813059008309,165.810649800136,158.813059008309
+"6",24,1,0,0,"Non-communicable","White","Male","Mississippi",1969,"East South Central","South","MS",86.6006951264592,91.4345129527489,96.7708326256914,91.4345129527489
+"7",24,1,0,1,"All other causes","White","Female","Mississippi",1969,"East South Central","South","MS",118.419447846027,124.742167357872,131.077712594278,124.742167357872
+"8",24,1,0,1,"Cancers","White","Female","Mississippi",1969,"East South Central","South","MS",137.59281230009,143.004737337567,148.476445959339,143.004737337567
+"9",24,1,0,1,"Cardiovascular","White","Female","Mississippi",1969,"East South Central","South","MS",564.524463738888,581.929551147959,598.593502769475,581.929551147959
+"10",24,1,0,1,"Communicable","White","Female","Mississippi",1969,"East South Central","South","MS",32.7376941832015,35.7444668633246,39.2898176323223,35.7444668633246
+"11",24,1,0,1,"Injuries","White","Female","Mississippi",1969,"East South Central","South","MS",52.6912514408606,55.7869558176998,59.3210101243184,55.7869558176998
+"12",24,1,0,1,"Non-communicable","White","Female","Mississippi",1969,"East South Central","South","MS",40.5102214564196,43.422901894953,46.8690004471435,43.422901894953
+"13",24,1,1,0,"All other causes","Black","Male","Mississippi",1969,"East South Central","South","MS",378.412418648324,396.716772312049,415.962189076648,396.716772312049
+"14",24,1,1,0,"Cancers","Black","Male","Mississippi",1969,"East South Central","South","MS",221.455278059783,232.673174160806,245.741652939804,232.673174160806
+"15",24,1,1,0,"Cardiovascular","Black","Male","Mississippi",1969,"East South Central","South","MS",867.571090834385,893.62511663312,924.161627227062,893.62511663312
+"16",24,1,1,0,"Communicable","Black","Male","Mississippi",1969,"East South Central","South","MS",77.1358454353048,84.7104339317436,93.5246744017095,84.7104339317436
+"17",24,1,1,0,"Injuries","Black","Male","Mississippi",1969,"East South Central","South","MS",238.53468345251,251.465545394144,265.38013790893,251.465545394144
+"18",24,1,1,0,"Non-communicable","Black","Male","Mississippi",1969,"East South Central","South","MS",75.8421809650971,81.1533706257193,87.7562710280242,81.1533706257193
+"19",24,1,1,1,"All other causes","Black","Female","Mississippi",1969,"East South Central","South","MS",273.430971495042,287.839055486538,304.223037007642,287.839055486538
+"20",24,1,1,1,"Cancers","Black","Female","Mississippi",1969,"East South Central","South","MS",150.2923704457,157.590687997823,164.739954345768,157.590687997823
+"21",24,1,1,1,"Cardiovascular","Black","Female","Mississippi",1969,"East South Central","South","MS",688.391021644659,712.179505130502,739.365217822824,712.179505130502
+"22",24,1,1,1,"Communicable","Black","Female","Mississippi",1969,"East South Central","South","MS",45.7452373259077,50.7310880842488,56.3143535139768,50.7310880842488
+"23",24,1,1,1,"Injuries","Black","Female","Mississippi",1969,"East South Central","South","MS",67.9633952176346,73.2603092759679,79.3226464668079,73.2603092759679
+"24",24,1,1,1,"Non-communicable","Black","Female","Mississippi",1969,"East South Central","South","MS",68.419261446256,73.5681314954508,79.2597215536779,73.5681314954508
+"25",24,2,0,0,"All other causes","White","Male","Mississippi",1970,"East South Central","South","MS",188.689351037593,197.071141459872,205.204362075466,197.071141459872
+"26",24,2,0,0,"Cancers","White","Male","Mississippi",1970,"East South Central","South","MS",230.146478167899,237.417250323352,244.311579456325,237.417250323352
+"27",24,2,0,0,"Cardiovascular","White","Male","Mississippi",1970,"East South Central","South","MS",893.730997779318,916.833106179446,939.067860258072,916.833106179446
+"28",24,2,0,0,"Communicable","White","Male","Mississippi",1970,"East South Central","South","MS",52.7000151603728,57.6631959474948,63.1399741210196,57.6631959474948
+"29",24,2,0,0,"Injuries","White","Male","Mississippi",1970,"East South Central","South","MS",151.88733273052,156.936221149479,162.790737269179,156.936221149479
+"30",24,2,0,0,"Non-communicable","White","Male","Mississippi",1970,"East South Central","South","MS",87.670805383411,91.9334094342188,96.7403800411064,91.9334094342188
+"31",24,2,0,1,"All other causes","White","Female","Mississippi",1970,"East South Central","South","MS",117.219756835557,122.819833551401,128.60455387483,122.819833551401
+"32",24,2,0,1,"Cancers","White","Female","Mississippi",1970,"East South Central","South","MS",137.542319902928,142.225068048744,147.214822814265,142.225068048744
+"33",24,2,0,1,"Cardiovascular","White","Female","Mississippi",1970,"East South Central","South","MS",553.912563065771,568.199722793361,583.096466238967,568.199722793361
+"34",24,2,0,1,"Communicable","White","Female","Mississippi",1970,"East South Central","South","MS",31.7233201702056,34.3056050997326,37.1622316171153,34.3056050997326
+"35",24,2,0,1,"Injuries","White","Female","Mississippi",1970,"East South Central","South","MS",51.9490106292131,54.5454549984395,57.3327860974931,54.5454549984395
+"36",24,2,0,1,"Non-communicable","White","Female","Mississippi",1970,"East South Central","South","MS",40.0439507075989,42.7550874833413,45.6257260035643,42.7550874833413
+"37",24,2,1,0,"All other causes","Black","Male","Mississippi",1970,"East South Central","South","MS",380.395554972395,397.755996404924,415.329296366996,397.755996404924
+"38",24,2,1,0,"Cancers","Black","Male","Mississippi",1970,"East South Central","South","MS",223.641281643513,233.769830933602,244.056916411291,233.769830933602
+"39",24,2,1,0,"Cardiovascular","Black","Male","Mississippi",1970,"East South Central","South","MS",850.944821943494,875.53430645257,901.939312015146,875.53430645257
+"40",24,2,1,0,"Communicable","Black","Male","Mississippi",1970,"East South Central","South","MS",73.5932510122816,80.4873336459819,87.1016045345728,80.4873336459819
+"41",24,2,1,0,"Injuries","Black","Male","Mississippi",1970,"East South Central","South","MS",237.996282377535,248.895958951107,260.650193740355,248.895958951107
+"42",24,2,1,0,"Non-communicable","Black","Male","Mississippi",1970,"East South Central","South","MS",75.4611367385046,80.9104217634442,86.6371432028806,80.9104217634442
+"43",24,2,1,1,"All other causes","Black","Female","Mississippi",1970,"East South Central","South","MS",269.402878029248,281.640066170734,293.577056554062,281.640066170734
+"44",24,2,1,1,"Cancers","Black","Female","Mississippi",1970,"East South Central","South","MS",149.688637579464,156.500404339416,163.048455164614,156.500404339416
+"45",24,2,1,1,"Cardiovascular","Black","Female","Mississippi",1970,"East South Central","South","MS",664.280863690668,685.960875338575,706.374481665941,685.960875338575
+"46",24,2,1,1,"Communicable","Black","Female","Mississippi",1970,"East South Central","South","MS",43.8609574136859,47.9948927941093,52.7779712870218,47.9948927941093
+"47",24,2,1,1,"Injuries","Black","Female","Mississippi",1970,"East South Central","South","MS",66.0003601488078,70.8178312536649,76.2806548070482,70.8178312536649
+"48",24,2,1,1,"Non-communicable","Black","Female","Mississippi",1970,"East South Central","South","MS",68.0779802353066,72.4578849249254,77.3001126095628,72.4578849249254
+"49",24,3,0,0,"All other causes","White","Male","Mississippi",1971,"East South Central","South","MS",192.749749454641,200.848588681339,209.018579383909,200.848588681339
+"50",24,3,0,0,"Cancers","White","Male","Mississippi",1971,"East South Central","South","MS",231.90487538257,238.750114921017,245.642039500125,238.750114921017
+"51",24,3,0,0,"Cardiovascular","White","Male","Mississippi",1971,"East South Central","South","MS",888.895240512477,909.357823373395,933.670494113982,909.357823373395
+"52",24,3,0,0,"Communicable","White","Male","Mississippi",1971,"East South Central","South","MS",54.1794136055537,58.7947407955535,63.8592570908646,58.7947407955535
+"53",24,3,0,0,"Injuries","White","Male","Mississippi",1971,"East South Central","South","MS",150.138619858657,155.138716507344,160.20741249912,155.138716507344
+"54",24,3,0,0,"Non-communicable","White","Male","Mississippi",1971,"East South Central","South","MS",88.8091027753923,92.5532354026715,97.0061754048962,92.5532354026715
+"55",24,3,0,1,"All other causes","White","Female","Mississippi",1971,"East South Central","South","MS",114.280502063222,119.342547613848,124.247654289552,119.342547613848
+"56",24,3,0,1,"Cancers","White","Female","Mississippi",1971,"East South Central","South","MS",137.222309326968,141.092805969607,145.499520582701,141.092805969607
+"57",24,3,0,1,"Cardiovascular","White","Female","Mississippi",1971,"East South Central","South","MS",524.817578730556,538.362577074028,552.82968921303,538.362577074028
+"58",24,3,0,1,"Communicable","White","Female","Mississippi",1971,"East South Central","South","MS",31.7136472721386,33.8842027019924,36.4244920877645,33.8842027019924
+"59",24,3,0,1,"Injuries","White","Female","Mississippi",1971,"East South Central","South","MS",51.1502197915289,53.7499506442282,56.4656766207792,53.7499506442282
+"60",24,3,0,1,"Non-communicable","White","Female","Mississippi",1971,"East South Central","South","MS",40.0831970737293,42.7291579108533,45.4741060569836,42.7291579108533
+"61",24,3,1,0,"All other causes","Black","Male","Mississippi",1971,"East South Central","South","MS",370.198724044785,385.214649063754,400.395553892663,385.214649063754
+"62",24,3,1,0,"Cancers","Black","Male","Mississippi",1971,"East South Central","South","MS",224.626727824758,233.685653534946,243.59979270581,233.685653534946
+"63",24,3,1,0,"Cardiovascular","Black","Male","Mississippi",1971,"East South Central","South","MS",834.611900579638,857.994441724434,879.845460873602,857.994441724434
+"64",24,3,1,0,"Communicable","Black","Male","Mississippi",1971,"East South Central","South","MS",66.4088948856733,72.4846952234005,78.9341667591344,72.4846952234005
+"65",24,3,1,0,"Injuries","Black","Male","Mississippi",1971,"East South Central","South","MS",234.720152628155,244.795927627075,256.154124328513,244.795927627075
+"66",24,3,1,0,"Non-communicable","Black","Male","Mississippi",1971,"East South Central","South","MS",75.6711319392407,80.7645024044164,86.170677694002,80.7645024044164
+"67",24,3,1,1,"All other causes","Black","Female","Mississippi",1971,"East South Central","South","MS",262.384621298083,273.286434640102,284.109954254589,273.286434640102
+"68",24,3,1,1,"Cancers","Black","Female","Mississippi",1971,"East South Central","South","MS",149.699059889697,155.657150358245,161.56011735069,155.657150358245
+"69",24,3,1,1,"Cardiovascular","Black","Female","Mississippi",1971,"East South Central","South","MS",648.720649490776,668.022357552704,689.803076760542,668.022357552704
+"70",24,3,1,1,"Communicable","Black","Female","Mississippi",1971,"East South Central","South","MS",42.7470858433354,46.3972244457622,50.9031541180798,46.3972244457622
+"71",24,3,1,1,"Injuries","Black","Female","Mississippi",1971,"East South Central","South","MS",65.0676532986327,69.4820374274476,74.3630439669715,69.4820374274476
+"72",24,3,1,1,"Non-communicable","Black","Female","Mississippi",1971,"East South Central","South","MS",66.9688492405362,71.3770721807563,75.7269359417044,71.3770721807563
+"73",24,4,0,0,"All other causes","White","Male","Mississippi",1972,"East South Central","South","MS",189.45385099118,197.191872958695,205.882663669446,197.191872958695
+"74",24,4,0,0,"Cancers","White","Male","Mississippi",1972,"East South Central","South","MS",234.662225116047,241.273532746291,247.883478425077,241.273532746291
+"75",24,4,0,0,"Cardiovascular","White","Male","Mississippi",1972,"East South Central","South","MS",877.102879637759,898.026633436741,920.004243283275,898.026633436741
+"76",24,4,0,0,"Communicable","White","Male","Mississippi",1972,"East South Central","South","MS",55.7887834984633,60.7266914730942,66.2344545079034,60.7266914730942
+"77",24,4,0,0,"Injuries","White","Male","Mississippi",1972,"East South Central","South","MS",146.677416777909,151.516411292522,157.051445223376,151.516411292522
+"78",24,4,0,0,"Non-communicable","White","Male","Mississippi",1972,"East South Central","South","MS",89.1705013987146,93.1383722742439,97.0011831098209,93.1383722742439
+"79",24,4,0,1,"All other causes","White","Female","Mississippi",1972,"East South Central","South","MS",112.048792510876,116.924128633359,121.744297472835,116.924128633359
+"80",24,4,0,1,"Cancers","White","Female","Mississippi",1972,"East South Central","South","MS",136.428898033703,140.372431888334,144.52454142734,140.372431888334
+"81",24,4,0,1,"Cardiovascular","White","Female","Mississippi",1972,"East South Central","South","MS",511.75209075712,524.636007377074,538.596853128884,524.636007377074
+"82",24,4,0,1,"Communicable","White","Female","Mississippi",1972,"East South Central","South","MS",31.9210626654101,34.4601676939047,37.1263485952059,34.4601676939047
+"83",24,4,0,1,"Injuries","White","Female","Mississippi",1972,"East South Central","South","MS",49.5343365192412,51.8969225466596,54.2300462967253,51.8969225466596
+"84",24,4,0,1,"Non-communicable","White","Female","Mississippi",1972,"East South Central","South","MS",39.8991943677903,42.4343712377409,44.8917907123786,42.4343712377409
+"85",24,4,1,0,"All other causes","Black","Male","Mississippi",1972,"East South Central","South","MS",363.245293765192,379.151463347381,395.498295264929,379.151463347381
+"86",24,4,1,0,"Cancers","Black","Male","Mississippi",1972,"East South Central","South","MS",227.500040716636,236.546356115157,246.636608242009,236.546356115157
+"87",24,4,1,0,"Cardiovascular","Black","Male","Mississippi",1972,"East South Central","South","MS",827.736552790586,853.430778658416,879.646910414122,853.430778658416
+"88",24,4,1,0,"Communicable","Black","Male","Mississippi",1972,"East South Central","South","MS",63.6405338976047,69.1174272522568,75.0805153842827,69.1174272522568
+"89",24,4,1,0,"Injuries","Black","Male","Mississippi",1972,"East South Central","South","MS",234.027028551044,244.243487120126,254.391696233166,244.243487120126
+"90",24,4,1,0,"Non-communicable","Black","Male","Mississippi",1972,"East South Central","South","MS",76.0261262169935,81.0655674645129,86.3642403584854,81.0655674645129
+"91",24,4,1,1,"All other causes","Black","Female","Mississippi",1972,"East South Central","South","MS",252.522987025191,264.247838216251,275.751051646689,264.247838216251
+"92",24,4,1,1,"Cancers","Black","Female","Mississippi",1972,"East South Central","South","MS",148.779747131329,154.693273784363,160.426318122524,154.693273784363
+"93",24,4,1,1,"Cardiovascular","Black","Female","Mississippi",1972,"East South Central","South","MS",628.462430814691,648.441842654672,668.147000110283,648.441842654672
+"94",24,4,1,1,"Communicable","Black","Female","Mississippi",1972,"East South Central","South","MS",41.3240609055935,45.2109679222195,49.4755981385615,45.2109679222195
+"95",24,4,1,1,"Injuries","Black","Female","Mississippi",1972,"East South Central","South","MS",62.0107404652793,65.7692341124541,69.9428720379943,65.7692341124541
+"96",24,4,1,1,"Non-communicable","Black","Female","Mississippi",1972,"East South Central","South","MS",66.9939521732986,70.978769506626,75.25635978138,70.978769506626
+"97",24,5,0,0,"All other causes","White","Male","Mississippi",1973,"East South Central","South","MS",187.84529563784,195.753010035212,204.21906684647,195.753010035212
+"98",24,5,0,0,"Cancers","White","Male","Mississippi",1973,"East South Central","South","MS",238.105555815158,244.334121764291,250.804382225818,244.334121764291
+"99",24,5,0,0,"Cardiovascular","White","Male","Mississippi",1973,"East South Central","South","MS",869.572413067789,889.428221931291,909.975496059228,889.428221931291
+"100",24,5,0,0,"Communicable","White","Male","Mississippi",1973,"East South Central","South","MS",57.0474345210265,61.9907204128949,67.1953407716911,61.9907204128949
+"101",24,5,0,0,"Injuries","White","Male","Mississippi",1973,"East South Central","South","MS",142.655938759042,147.139335970269,151.864321318703,147.139335970269
+"102",24,5,0,0,"Non-communicable","White","Male","Mississippi",1973,"East South Central","South","MS",89.9643655113899,94.0721681856936,98.2397591675878,94.0721681856936
+"103",24,5,0,1,"All other causes","White","Female","Mississippi",1973,"East South Central","South","MS",110.949885506504,115.824982221614,120.772284608577,115.824982221614
+"104",24,5,0,1,"Cancers","White","Female","Mississippi",1973,"East South Central","South","MS",135.696858919878,139.483732177017,143.551435755398,139.483732177017
+"105",24,5,0,1,"Cardiovascular","White","Female","Mississippi",1973,"East South Central","South","MS",511.432919715804,524.926664755546,538.407192570848,524.926664755546
+"106",24,5,0,1,"Communicable","White","Female","Mississippi",1973,"East South Central","South","MS",31.3863083903912,33.6696284602376,36.2481459650296,33.6696284602376
+"107",24,5,0,1,"Injuries","White","Female","Mississippi",1973,"East South Central","South","MS",47.3775129868845,49.5775317344432,51.8705304543516,49.5775317344432
+"108",24,5,0,1,"Non-communicable","White","Female","Mississippi",1973,"East South Central","South","MS",39.6372729576977,41.9579300228825,44.620559003073,41.9579300228825
+"109",24,5,1,0,"All other causes","Black","Male","Mississippi",1973,"East South Central","South","MS",366.325482936839,380.50943694351,395.644808032961,380.50943694351
+"110",24,5,1,0,"Cancers","Black","Male","Mississippi",1973,"East South Central","South","MS",229.990713820672,239.351696050751,248.839361217807,239.351696050751
+"111",24,5,1,0,"Cardiovascular","Black","Male","Mississippi",1973,"East South Central","South","MS",797.925505962517,820.964506418006,844.774888194187,820.964506418006
+"112",24,5,1,0,"Communicable","Black","Male","Mississippi",1973,"East South Central","South","MS",60.2230265364974,65.5623462096509,70.9471788925377,65.5623462096509
+"113",24,5,1,0,"Injuries","Black","Male","Mississippi",1973,"East South Central","South","MS",226.406458007207,236.142737383145,246.391035081316,236.142737383145
+"114",24,5,1,0,"Non-communicable","Black","Male","Mississippi",1973,"East South Central","South","MS",75.4959060540002,80.3083796078569,85.1773882382723,80.3083796078569
+"115",24,5,1,1,"All other causes","Black","Female","Mississippi",1973,"East South Central","South","MS",249.484062122302,260.190022918122,271.569817087806,260.190022918122
+"116",24,5,1,1,"Cancers","Black","Female","Mississippi",1973,"East South Central","South","MS",148.161417154865,153.822287712828,159.085860867031,153.822287712828
+"117",24,5,1,1,"Cardiovascular","Black","Female","Mississippi",1973,"East South Central","South","MS",613.482934061852,632.797917505241,655.81037990626,632.797917505241
+"118",24,5,1,1,"Communicable","Black","Female","Mississippi",1973,"East South Central","South","MS",39.818800276069,43.5336534760165,47.6254837865356,43.5336534760165
+"119",24,5,1,1,"Injuries","Black","Female","Mississippi",1973,"East South Central","South","MS",59.7270988665661,63.3824530577069,67.3534043439949,63.3824530577069
+"120",24,5,1,1,"Non-communicable","Black","Female","Mississippi",1973,"East South Central","South","MS",65.8982496380932,69.9834351970072,74.1069981244606,69.9834351970072
+"121",24,6,0,0,"All other causes","White","Male","Mississippi",1974,"East South Central","South","MS",186.103169186571,193.938569948177,202.118932086097,193.938569948177
+"122",24,6,0,0,"Cancers","White","Male","Mississippi",1974,"East South Central","South","MS",242.558769451619,248.945858235212,255.5097166883,248.945858235212
+"123",24,6,0,0,"Cardiovascular","White","Male","Mississippi",1974,"East South Central","South","MS",837.716453701762,856.93509160354,877.990260187368,856.93509160354
+"124",24,6,0,0,"Communicable","White","Male","Mississippi",1974,"East South Central","South","MS",53.0078360754123,57.6163119937467,62.9963317702637,57.6163119937467
+"125",24,6,0,0,"Injuries","White","Male","Mississippi",1974,"East South Central","South","MS",136.227159759523,140.528063284008,145.106683890733,140.528063284008
+"126",24,6,0,0,"Non-communicable","White","Male","Mississippi",1974,"East South Central","South","MS",90.2881988165404,94.3410731417249,98.4047220090123,94.3410731417249
+"127",24,6,0,1,"All other causes","White","Female","Mississippi",1974,"East South Central","South","MS",107.74139580211,112.329711709243,117.052853586234,112.329711709243
+"128",24,6,0,1,"Cancers","White","Female","Mississippi",1974,"East South Central","South","MS",136.196125973918,139.733599084372,143.446918100188,139.733599084372
+"129",24,6,0,1,"Cardiovascular","White","Female","Mississippi",1974,"East South Central","South","MS",491.482627698114,503.900438355883,517.919721445332,503.900438355883
+"130",24,6,0,1,"Communicable","White","Female","Mississippi",1974,"East South Central","South","MS",30.5466981312441,32.7896877262758,35.2622129779389,32.7896877262758
+"131",24,6,0,1,"Injuries","White","Female","Mississippi",1974,"East South Central","South","MS",45.487467111702,47.6827067923381,49.8426385402468,47.6827067923381
+"132",24,6,0,1,"Non-communicable","White","Female","Mississippi",1974,"East South Central","South","MS",39.2644307863737,41.6745515875017,43.9651914494863,41.6745515875017
+"133",24,6,1,0,"All other causes","Black","Male","Mississippi",1974,"East South Central","South","MS",352.497028611864,367.127087134864,382.294421669874,367.127087134864
+"134",24,6,1,0,"Cancers","Black","Male","Mississippi",1974,"East South Central","South","MS",235.953401170312,245.477445962988,254.561537456115,245.477445962988
+"135",24,6,1,0,"Cardiovascular","Black","Male","Mississippi",1974,"East South Central","South","MS",762.227997628174,783.148458666905,805.405933500508,783.148458666905
+"136",24,6,1,0,"Communicable","Black","Male","Mississippi",1974,"East South Central","South","MS",56.3150583052747,61.9239581225534,67.6504421396207,61.9239581225534
+"137",24,6,1,0,"Injuries","Black","Male","Mississippi",1974,"East South Central","South","MS",211.184341947967,221.023562212591,230.555744671843,221.023562212591
+"138",24,6,1,0,"Non-communicable","Black","Male","Mississippi",1974,"East South Central","South","MS",75.8811064260172,80.6473076942241,85.4646208817823,80.6473076942241
+"139",24,6,1,1,"All other causes","Black","Female","Mississippi",1974,"East South Central","South","MS",240.24257015166,250.962376877291,261.981416342983,250.962376877291
+"140",24,6,1,1,"Cancers","Black","Female","Mississippi",1974,"East South Central","South","MS",147.224088719276,152.856667397817,158.178867897052,152.856667397817
+"141",24,6,1,1,"Cardiovascular","Black","Female","Mississippi",1974,"East South Central","South","MS",584.423228119179,602.776046316805,621.311310864993,602.776046316805
+"142",24,6,1,1,"Communicable","Black","Female","Mississippi",1974,"East South Central","South","MS",37.0433365364613,40.7768633861644,44.7748547273767,40.7768633861644
+"143",24,6,1,1,"Injuries","Black","Female","Mississippi",1974,"East South Central","South","MS",56.826168682319,60.3910365208956,64.2844729733318,60.3910365208956
+"144",24,6,1,1,"Non-communicable","Black","Female","Mississippi",1974,"East South Central","South","MS",64.5439110596772,68.3483504859728,72.5007793487516,68.3483504859728
+"145",24,7,0,0,"All other causes","White","Male","Mississippi",1975,"East South Central","South","MS",184.436927237519,192.54812600978,200.657892456815,192.54812600978
+"146",24,7,0,0,"Cancers","White","Male","Mississippi",1975,"East South Central","South","MS",245.252576664617,251.562577988668,257.944991521663,251.562577988668
+"147",24,7,0,0,"Cardiovascular","White","Male","Mississippi",1975,"East South Central","South","MS",795.418553403231,814.510359176535,835.780347710999,814.510359176535
+"148",24,7,0,0,"Communicable","White","Male","Mississippi",1975,"East South Central","South","MS",51.8715668125246,56.5648105501357,61.3527986167205,56.5648105501357
+"149",24,7,0,0,"Injuries","White","Male","Mississippi",1975,"East South Central","South","MS",131.52723345748,135.648028194028,140.400831215251,135.648028194028
+"150",24,7,0,0,"Non-communicable","White","Male","Mississippi",1975,"East South Central","South","MS",90.7046497406381,94.4578504336566,98.7774623248629,94.4578504336566
+"151",24,7,0,1,"All other causes","White","Female","Mississippi",1975,"East South Central","South","MS",106.709857724377,111.372239456713,115.891343226534,111.372239456713
+"152",24,7,0,1,"Cancers","White","Female","Mississippi",1975,"East South Central","South","MS",135.622404731994,139.427163388552,142.953104384806,139.427163388552
+"153",24,7,0,1,"Cardiovascular","White","Female","Mississippi",1975,"East South Central","South","MS",464.380137327119,476.224337473432,488.894055684755,476.224337473432
+"154",24,7,0,1,"Communicable","White","Female","Mississippi",1975,"East South Central","South","MS",30.3749016078015,32.7101983668798,35.2473812140102,32.7101983668798
+"155",24,7,0,1,"Injuries","White","Female","Mississippi",1975,"East South Central","South","MS",44.3437416025394,46.3973258226068,48.646155976658,46.3973258226068
+"156",24,7,0,1,"Non-communicable","White","Female","Mississippi",1975,"East South Central","South","MS",38.5931942211762,41.04122911709,43.4353966457515,41.04122911709
+"157",24,7,1,0,"All other causes","Black","Male","Mississippi",1975,"East South Central","South","MS",347.595667982348,361.520411566391,376.530220753837,361.520411566391
+"158",24,7,1,0,"Cancers","Black","Male","Mississippi",1975,"East South Central","South","MS",242.418970542978,251.552460301104,261.470203377537,251.552460301104
+"159",24,7,1,0,"Cardiovascular","Black","Male","Mississippi",1975,"East South Central","South","MS",744.403264580339,767.364481972349,790.057528078746,767.364481972349
+"160",24,7,1,0,"Communicable","Black","Male","Mississippi",1975,"East South Central","South","MS",54.680878496998,59.8771845419989,65.4319720928248,59.8771845419989
+"161",24,7,1,0,"Injuries","Black","Male","Mississippi",1975,"East South Central","South","MS",207.194547381157,216.072810716719,226.426116456566,216.072810716719
+"162",24,7,1,0,"Non-communicable","Black","Male","Mississippi",1975,"East South Central","South","MS",76.2485688175299,81.0076118151844,85.5471042618859,81.0076118151844
+"163",24,7,1,1,"All other causes","Black","Female","Mississippi",1975,"East South Central","South","MS",235.615629757963,245.662120584873,256.293221968255,245.662120584873
+"164",24,7,1,1,"Cancers","Black","Female","Mississippi",1975,"East South Central","South","MS",146.258928566728,152.053986393552,157.25068771713,152.053986393552
+"165",24,7,1,1,"Cardiovascular","Black","Female","Mississippi",1975,"East South Central","South","MS",559.135098093979,576.221794963012,594.636802858902,576.221794963012
+"166",24,7,1,1,"Communicable","Black","Female","Mississippi",1975,"East South Central","South","MS",36.7542074040255,40.2414923900208,44.0475101642802,40.2414923900208
+"167",24,7,1,1,"Injuries","Black","Female","Mississippi",1975,"East South Central","South","MS",54.9129726083598,58.3989539961009,62.1387541022789,58.3989539961009
+"168",24,7,1,1,"Non-communicable","Black","Female","Mississippi",1975,"East South Central","South","MS",63.2149043215681,66.9636135816045,70.8351545482416,66.9636135816045
+"169",24,8,0,0,"All other causes","White","Male","Mississippi",1976,"East South Central","South","MS",183.752328981128,191.199428522104,199.479731937919,191.199428522104
+"170",24,8,0,0,"Cancers","White","Male","Mississippi",1976,"East South Central","South","MS",247.511310855745,253.722006949168,260.590851016806,253.722006949168
+"171",24,8,0,0,"Cardiovascular","White","Male","Mississippi",1976,"East South Central","South","MS",780.953087625262,798.275519389768,819.356040262182,798.275519389768
+"172",24,8,0,0,"Communicable","White","Male","Mississippi",1976,"East South Central","South","MS",53.9526074630388,58.5405682286798,63.8267019789058,58.5405682286798
+"173",24,8,0,0,"Injuries","White","Male","Mississippi",1976,"East South Central","South","MS",128.877456981494,132.997741206847,137.076628062283,132.997741206847
+"174",24,8,0,0,"Non-communicable","White","Male","Mississippi",1976,"East South Central","South","MS",90.7573277473936,94.7585886656628,99.1740739923861,94.7585886656628
+"175",24,8,0,1,"All other causes","White","Female","Mississippi",1976,"East South Central","South","MS",107.076544436308,111.641885545278,116.219494274347,111.641885545278
+"176",24,8,0,1,"Cancers","White","Female","Mississippi",1976,"East South Central","South","MS",135.1028479998,138.86919531722,142.204114150657,138.86919531722
+"177",24,8,0,1,"Cardiovascular","White","Female","Mississippi",1976,"East South Central","South","MS",455.779261083479,466.776172331881,478.443733747126,466.776172331881
+"178",24,8,0,1,"Communicable","White","Female","Mississippi",1976,"East South Central","South","MS",31.3957488472886,33.5849087149502,35.9701399149959,33.5849087149502
+"179",24,8,0,1,"Injuries","White","Female","Mississippi",1976,"East South Central","South","MS",43.3745307140934,45.4608230274926,47.4374251659184,45.4608230274926
+"180",24,8,0,1,"Non-communicable","White","Female","Mississippi",1976,"East South Central","South","MS",38.7429498191145,41.0844961435943,43.4541790951914,41.0844961435943
+"181",24,8,1,0,"All other causes","Black","Male","Mississippi",1976,"East South Central","South","MS",344.656609016111,358.46986046909,373.404814986636,358.46986046909
+"182",24,8,1,0,"Cancers","Black","Male","Mississippi",1976,"East South Central","South","MS",247.92460334338,257.496184423013,267.184244006845,257.496184423013
+"183",24,8,1,0,"Cardiovascular","Black","Male","Mississippi",1976,"East South Central","South","MS",715.728080149449,737.526528880704,757.679581149458,737.526528880704
+"184",24,8,1,0,"Communicable","Black","Male","Mississippi",1976,"East South Central","South","MS",54.6290998928566,59.4946332187871,65.1071471178684,59.4946332187871
+"185",24,8,1,0,"Injuries","Black","Male","Mississippi",1976,"East South Central","South","MS",198.334700301943,207.261690055864,216.494330926123,207.261690055864
+"186",24,8,1,0,"Non-communicable","Black","Male","Mississippi",1976,"East South Central","South","MS",76.876493309284,81.565419644319,86.2699630226767,81.565419644319
+"187",24,8,1,1,"All other causes","Black","Female","Mississippi",1976,"East South Central","South","MS",233.320203734949,243.176130469109,253.227782205462,243.176130469109
+"188",24,8,1,1,"Cancers","Black","Female","Mississippi",1976,"East South Central","South","MS",146.631459047769,152.469409521046,157.790500777886,152.469409521046
+"189",24,8,1,1,"Cardiovascular","Black","Female","Mississippi",1976,"East South Central","South","MS",542.68932892783,559.468278469551,576.960354728632,559.468278469551
+"190",24,8,1,1,"Communicable","Black","Female","Mississippi",1976,"East South Central","South","MS",37.1978726936943,40.6237844458744,44.8845590598375,40.6237844458744
+"191",24,8,1,1,"Injuries","Black","Female","Mississippi",1976,"East South Central","South","MS",52.8790879643485,56.3769488366118,59.8230656956625,56.3769488366118
+"192",24,8,1,1,"Non-communicable","Black","Female","Mississippi",1976,"East South Central","South","MS",62.2416506328924,65.7740435560335,69.7912994155328,65.7740435560335
+"193",24,9,0,0,"All other causes","White","Male","Mississippi",1977,"East South Central","South","MS",180.31406649433,187.426213960167,195.205619952072,187.426213960167
+"194",24,9,0,0,"Cancers","White","Male","Mississippi",1977,"East South Central","South","MS",251.268953990575,257.653785760379,264.36060570025,257.653785760379
+"195",24,9,0,0,"Cardiovascular","White","Male","Mississippi",1977,"East South Central","South","MS",748.832198455374,767.443140011394,786.983969809018,767.443140011394
+"196",24,9,0,0,"Communicable","White","Male","Mississippi",1977,"East South Central","South","MS",52.205145891015,56.7519102902618,61.4364755920096,56.7519102902618
+"197",24,9,0,0,"Injuries","White","Male","Mississippi",1977,"East South Central","South","MS",127.672230883915,131.923947752579,136.296434182399,131.923947752579
+"198",24,9,0,0,"Non-communicable","White","Male","Mississippi",1977,"East South Central","South","MS",91.4118469644778,95.3326686973875,99.6948455264383,95.3326686973875
+"199",24,9,0,1,"All other causes","White","Female","Mississippi",1977,"East South Central","South","MS",106.253384038872,111.121205433336,115.926212030336,111.121205433336
+"200",24,9,0,1,"Cancers","White","Female","Mississippi",1977,"East South Central","South","MS",135.63323937613,139.116433621602,142.928571805353,139.116433621602
+"201",24,9,0,1,"Cardiovascular","White","Female","Mississippi",1977,"East South Central","South","MS",438.576300921055,450.341693642992,461.971076099641,450.341693642992
+"202",24,9,0,1,"Communicable","White","Female","Mississippi",1977,"East South Central","South","MS",30.8121317180859,32.9622191629783,35.4154779828195,32.9622191629783
+"203",24,9,0,1,"Injuries","White","Female","Mississippi",1977,"East South Central","South","MS",43.1180047725408,45.0081522620021,47.1349508925797,45.0081522620021
+"204",24,9,0,1,"Non-communicable","White","Female","Mississippi",1977,"East South Central","South","MS",38.9547679697702,41.1052446504089,43.2916021491401,41.1052446504089
+"205",24,9,1,0,"All other causes","Black","Male","Mississippi",1977,"East South Central","South","MS",334.42718731984,348.338453871931,364.878085096331,348.338453871931
+"206",24,9,1,0,"Cancers","Black","Male","Mississippi",1977,"East South Central","South","MS",254.579967947312,263.974518405791,273.855630437193,263.974518405791
+"207",24,9,1,0,"Cardiovascular","Black","Male","Mississippi",1977,"East South Central","South","MS",690.751496350779,712.244653324588,732.664487535134,712.244653324588
+"208",24,9,1,0,"Communicable","Black","Male","Mississippi",1977,"East South Central","South","MS",54.1740977189091,59.338628986654,64.9504968000065,59.338628986654
+"209",24,9,1,0,"Injuries","Black","Male","Mississippi",1977,"East South Central","South","MS",193.80871997665,202.349972517504,211.894476074694,202.349972517504
+"210",24,9,1,0,"Non-communicable","Black","Male","Mississippi",1977,"East South Central","South","MS",77.9596352271098,82.7145566445499,88.1996606158817,82.7145566445499
+"211",24,9,1,1,"All other causes","Black","Female","Mississippi",1977,"East South Central","South","MS",228.436250117911,238.247734898568,249.002109067085,238.247734898568
+"212",24,9,1,1,"Cancers","Black","Female","Mississippi",1977,"East South Central","South","MS",148.518771608818,153.854573863042,159.262290755162,153.854573863042
+"213",24,9,1,1,"Cardiovascular","Black","Female","Mississippi",1977,"East South Central","South","MS",512.72573559432,529.466953405097,546.404969070738,529.466953405097
+"214",24,9,1,1,"Communicable","Black","Female","Mississippi",1977,"East South Central","South","MS",33.8984360315306,37.2753022352454,40.9128813312481,37.2753022352454
+"215",24,9,1,1,"Injuries","Black","Female","Mississippi",1977,"East South Central","South","MS",52.1305728878477,55.3418155355156,58.8106993160822,55.3418155355156
+"216",24,9,1,1,"Non-communicable","Black","Female","Mississippi",1977,"East South Central","South","MS",60.5014896388392,64.0881625689299,68.1510542349547,64.0881625689299
+"217",24,10,0,0,"All other causes","White","Male","Mississippi",1978,"East South Central","South","MS",173.74282323486,180.305554031195,187.67866146878,180.305554031195
+"218",24,10,0,0,"Cancers","White","Male","Mississippi",1978,"East South Central","South","MS",255.642814599879,262.394564347624,269.233741521377,262.394564347624
+"219",24,10,0,0,"Cardiovascular","White","Male","Mississippi",1978,"East South Central","South","MS",722.392619731988,740.149667223421,757.661973846871,740.149667223421
+"220",24,10,0,0,"Communicable","White","Male","Mississippi",1978,"East South Central","South","MS",51.4508441785657,55.6697276892334,60.5534241185312,55.6697276892334
+"221",24,10,0,0,"Injuries","White","Male","Mississippi",1978,"East South Central","South","MS",127.557935687974,131.625961287053,136.267710575829,131.625961287053
+"222",24,10,0,0,"Non-communicable","White","Male","Mississippi",1978,"East South Central","South","MS",92.5938254345529,96.262585277731,100.741828873568,96.262585277731
+"223",24,10,0,1,"All other causes","White","Female","Mississippi",1978,"East South Central","South","MS",101.283209233034,105.375654644105,109.927546371514,105.375654644105
+"224",24,10,0,1,"Cancers","White","Female","Mississippi",1978,"East South Central","South","MS",136.267948117533,139.917394776069,143.589764055196,139.917394776069
+"225",24,10,0,1,"Cardiovascular","White","Female","Mississippi",1978,"East South Central","South","MS",434.39423474437,444.959752246736,456.281792922058,444.959752246736
+"226",24,10,0,1,"Communicable","White","Female","Mississippi",1978,"East South Central","South","MS",30.2139243291509,32.3214250777493,34.5841026154119,32.3214250777493
+"227",24,10,0,1,"Injuries","White","Female","Mississippi",1978,"East South Central","South","MS",43.0934874683617,44.9782409246842,47.0712866524113,44.9782409246842
+"228",24,10,0,1,"Non-communicable","White","Female","Mississippi",1978,"East South Central","South","MS",39.4295100807286,41.6217228014988,43.9634085369928,41.6217228014988
+"229",24,10,1,0,"All other causes","Black","Male","Mississippi",1978,"East South Central","South","MS",322.454774493489,336.167378614299,349.015983982284,336.167378614299
+"230",24,10,1,0,"Cancers","Black","Male","Mississippi",1978,"East South Central","South","MS",260.584990006608,270.345626600852,281.084292840078,270.345626600852
+"231",24,10,1,0,"Cardiovascular","Black","Male","Mississippi",1978,"East South Central","South","MS",689.285506291953,710.167073474116,731.038271812649,710.167073474116
+"232",24,10,1,0,"Communicable","Black","Male","Mississippi",1978,"East South Central","South","MS",53.4517646289078,58.4309609215515,63.829434653935,58.4309609215515
+"233",24,10,1,0,"Injuries","Black","Male","Mississippi",1978,"East South Central","South","MS",190.255395216995,199.344953859182,207.652229107391,199.344953859182
+"234",24,10,1,0,"Non-communicable","Black","Male","Mississippi",1978,"East South Central","South","MS",79.1986233769378,84.0895806816565,89.4828449041282,84.0895806816565
+"235",24,10,1,1,"All other causes","Black","Female","Mississippi",1978,"East South Central","South","MS",217.997951899134,227.670074002734,238.1158822136,227.670074002734
+"236",24,10,1,1,"Cancers","Black","Female","Mississippi",1978,"East South Central","South","MS",149.199177085751,154.919743145259,160.178200747201,154.919743145259
+"237",24,10,1,1,"Cardiovascular","Black","Female","Mississippi",1978,"East South Central","South","MS",498.264157404222,513.356337559246,530.659308229188,513.356337559246
+"238",24,10,1,1,"Communicable","Black","Female","Mississippi",1978,"East South Central","South","MS",32.291211983997,35.5211822172113,38.9165242028503,35.5211822172113
+"239",24,10,1,1,"Injuries","Black","Female","Mississippi",1978,"East South Central","South","MS",51.3161890652713,54.5299004403006,57.8540550056555,54.5299004403006
+"240",24,10,1,1,"Non-communicable","Black","Female","Mississippi",1978,"East South Central","South","MS",60.1522248288467,63.7502739028156,67.571621589925,63.7502739028156
+"241",24,11,0,0,"All other causes","White","Male","Mississippi",1979,"East South Central","South","MS",164.672841149351,171.476398750259,178.642212156333,171.476398750259
+"242",24,11,0,0,"Cancers","White","Male","Mississippi",1979,"East South Central","South","MS",256.850375042635,263.021016519707,269.687288877467,263.021016519707
+"243",24,11,0,0,"Cardiovascular","White","Male","Mississippi",1979,"East South Central","South","MS",699.02567973648,716.19445223941,734.367879041278,716.19445223941
+"244",24,11,0,0,"Communicable","White","Male","Mississippi",1979,"East South Central","South","MS",45.9300758188656,50.1262839869494,54.5845538660418,50.1262839869494
+"245",24,11,0,0,"Injuries","White","Male","Mississippi",1979,"East South Central","South","MS",125.379285474355,129.450523936374,133.642100561766,129.450523936374
+"246",24,11,0,0,"Non-communicable","White","Male","Mississippi",1979,"East South Central","South","MS",93.6969106419278,97.5415388898752,101.569638739161,97.5415388898752
+"247",24,11,0,1,"All other causes","White","Female","Mississippi",1979,"East South Central","South","MS",99.594559553179,103.928219401192,108.420618415992,103.928219401192
+"248",24,11,0,1,"Cancers","White","Female","Mississippi",1979,"East South Central","South","MS",138.317961596873,142.098336902259,145.510118552522,142.098336902259
+"249",24,11,0,1,"Cardiovascular","White","Female","Mississippi",1979,"East South Central","South","MS",420.302288067828,430.706422715447,439.963742619743,430.706422715447
+"250",24,11,0,1,"Communicable","White","Female","Mississippi",1979,"East South Central","South","MS",28.3588006080027,30.3875940350451,32.4863835872071,30.3875940350451
+"251",24,11,0,1,"Injuries","White","Female","Mississippi",1979,"East South Central","South","MS",42.3232801486556,44.2215317805104,46.3644024798705,44.2215317805104
+"252",24,11,0,1,"Non-communicable","White","Female","Mississippi",1979,"East South Central","South","MS",39.5892754691103,41.9454844752603,44.3694202549523,41.9454844752603
+"253",24,11,1,0,"All other causes","Black","Male","Mississippi",1979,"East South Central","South","MS",310.857425863947,322.856884079591,338.307268934752,322.856884079591
+"254",24,11,1,0,"Cancers","Black","Male","Mississippi",1979,"East South Central","South","MS",269.609476644707,279.562143731373,289.282792879877,279.562143731373
+"255",24,11,1,0,"Cardiovascular","Black","Male","Mississippi",1979,"East South Central","South","MS",681.644623428945,703.837020439802,723.32882851075,703.837020439802
+"256",24,11,1,0,"Communicable","Black","Male","Mississippi",1979,"East South Central","South","MS",47.5364770274352,52.4851146629968,57.7773118290396,52.4851146629968
+"257",24,11,1,0,"Injuries","Black","Male","Mississippi",1979,"East South Central","South","MS",190.818744574782,199.07588914788,207.865628082143,199.07588914788
+"258",24,11,1,0,"Non-communicable","Black","Male","Mississippi",1979,"East South Central","South","MS",80.4313627092515,85.1040069713695,90.2458358894209,85.1040069713695
+"259",24,11,1,1,"All other causes","Black","Female","Mississippi",1979,"East South Central","South","MS",203.431311759819,212.472077976385,222.35743661496,212.472077976385
+"260",24,11,1,1,"Cancers","Black","Female","Mississippi",1979,"East South Central","South","MS",150.759769871028,156.110068595421,161.566005004591,156.110068595421
+"261",24,11,1,1,"Cardiovascular","Black","Female","Mississippi",1979,"East South Central","South","MS",496.561425285598,513.373455194392,530.130095881274,513.373455194392
+"262",24,11,1,1,"Communicable","Black","Female","Mississippi",1979,"East South Central","South","MS",29.6341468971998,32.7039956752344,35.8851866903014,32.7039956752344
+"263",24,11,1,1,"Injuries","Black","Female","Mississippi",1979,"East South Central","South","MS",50.9331087539588,54.1223969103068,57.7381281590115,54.1223969103068
+"264",24,11,1,1,"Non-communicable","Black","Female","Mississippi",1979,"East South Central","South","MS",60.8310675759724,64.4253525990393,68.127750845293,64.4253525990393
+"265",24,12,0,0,"All other causes","White","Male","Mississippi",1980,"East South Central","South","MS",159.528494382361,165.870480699761,172.750283211987,165.870480699761
+"266",24,12,0,0,"Cancers","White","Male","Mississippi",1980,"East South Central","South","MS",258.038339056741,264.787234102476,271.164034166779,264.787234102476
+"267",24,12,0,0,"Cardiovascular","White","Male","Mississippi",1980,"East South Central","South","MS",689.886756100762,706.233767813896,722.984472214154,706.233767813896
+"268",24,12,0,0,"Communicable","White","Male","Mississippi",1980,"East South Central","South","MS",47.1272593416366,51.7644067874778,55.9690500216174,51.7644067874778
+"269",24,12,0,0,"Injuries","White","Male","Mississippi",1980,"East South Central","South","MS",122.995379416922,126.843722019704,131.179162830613,126.843722019704
+"270",24,12,0,0,"Non-communicable","White","Male","Mississippi",1980,"East South Central","South","MS",95.4441585409621,99.3221536096035,103.34634279946,99.3221536096035
+"271",24,12,0,1,"All other causes","White","Female","Mississippi",1980,"East South Central","South","MS",95.8039500712348,99.8723614569651,104.32446756755,99.8723614569651
+"272",24,12,0,1,"Cancers","White","Female","Mississippi",1980,"East South Central","South","MS",140.063185649368,143.635677268965,147.11712989932,143.635677268965
+"273",24,12,0,1,"Cardiovascular","White","Female","Mississippi",1980,"East South Central","South","MS",418.238682701611,428.582784171308,439.569843934204,428.582784171308
+"274",24,12,0,1,"Communicable","White","Female","Mississippi",1980,"East South Central","South","MS",28.6765762392759,30.6525707854083,32.6991867240532,30.6525707854083
+"275",24,12,0,1,"Injuries","White","Female","Mississippi",1980,"East South Central","South","MS",42.2765697046869,44.0388187588198,46.0380903477082,44.0388187588198
+"276",24,12,0,1,"Non-communicable","White","Female","Mississippi",1980,"East South Central","South","MS",40.6648618024401,42.9812113386829,45.2571010954843,42.9812113386829
+"277",24,12,1,0,"All other causes","Black","Male","Mississippi",1980,"East South Central","South","MS",298.125497610625,310.584777831641,324.720411690853,310.584777831641
+"278",24,12,1,0,"Cancers","Black","Male","Mississippi",1980,"East South Central","South","MS",278.768537161135,288.87135463868,299.333026751605,288.87135463868
+"279",24,12,1,0,"Cardiovascular","Black","Male","Mississippi",1980,"East South Central","South","MS",691.693016346495,712.563595854823,732.802958172818,712.563595854823
+"280",24,12,1,0,"Communicable","Black","Male","Mississippi",1980,"East South Central","South","MS",46.5816266425796,51.1187730320119,56.0786412847976,51.1187730320119
+"281",24,12,1,0,"Injuries","Black","Male","Mississippi",1980,"East South Central","South","MS",186.804795959655,195.696009663285,204.04472955271,195.696009663285
+"282",24,12,1,0,"Non-communicable","Black","Male","Mississippi",1980,"East South Central","South","MS",82.2749699986862,86.6368146197202,91.8584656112128,86.6368146197202
+"283",24,12,1,1,"All other causes","Black","Female","Mississippi",1980,"East South Central","South","MS",192.107379844989,201.037680098795,210.586909012192,201.037680098795
+"284",24,12,1,1,"Cancers","Black","Female","Mississippi",1980,"East South Central","South","MS",152.784393197642,158.017863901946,163.809804852583,158.017863901946
+"285",24,12,1,1,"Cardiovascular","Black","Female","Mississippi",1980,"East South Central","South","MS",494.286007164119,511.391147909051,527.00878782839,511.391147909051
+"286",24,12,1,1,"Communicable","Black","Female","Mississippi",1980,"East South Central","South","MS",28.8700790208474,31.7768588547086,35.0156989130633,31.7768588547086
+"287",24,12,1,1,"Injuries","Black","Female","Mississippi",1980,"East South Central","South","MS",50.2447883884234,53.7745796928043,57.0275820568737,53.7745796928043
+"288",24,12,1,1,"Non-communicable","Black","Female","Mississippi",1980,"East South Central","South","MS",61.9435788744303,65.6731238823032,69.3340887553317,65.6731238823032
+"289",24,13,0,0,"All other causes","White","Male","Mississippi",1981,"East South Central","South","MS",156.081136276321,162.611119308381,169.090137245175,162.611119308381
+"290",24,13,0,0,"Cancers","White","Male","Mississippi",1981,"East South Central","South","MS",260.097065859123,266.548901236315,273.166415747811,266.548901236315
+"291",24,13,0,0,"Cardiovascular","White","Male","Mississippi",1981,"East South Central","South","MS",677.802968633125,694.986242307197,711.494960615363,694.986242307197
+"292",24,13,0,0,"Communicable","White","Male","Mississippi",1981,"East South Central","South","MS",48.0380395321202,52.3559627540143,56.7658609796079,52.3559627540143
+"293",24,13,0,0,"Injuries","White","Male","Mississippi",1981,"East South Central","South","MS",121.199099254204,125.29476280493,129.650732376395,125.29476280493
+"294",24,13,0,0,"Non-communicable","White","Male","Mississippi",1981,"East South Central","South","MS",97.009794399701,100.809279314895,104.7631826928,100.809279314895
+"295",24,13,0,1,"All other causes","White","Female","Mississippi",1981,"East South Central","South","MS",96.9072947301503,101.075397632633,105.429649007471,101.075397632633
+"296",24,13,0,1,"Cancers","White","Female","Mississippi",1981,"East South Central","South","MS",141.178829669322,144.772919540649,148.583752867413,144.772919540649
+"297",24,13,0,1,"Cardiovascular","White","Female","Mississippi",1981,"East South Central","South","MS",411.414006079344,421.51325057458,431.21637153469,421.51325057458
+"298",24,13,0,1,"Communicable","White","Female","Mississippi",1981,"East South Central","South","MS",28.7776518699595,30.7776400272248,32.9542534425768,30.7776400272248
+"299",24,13,0,1,"Injuries","White","Female","Mississippi",1981,"East South Central","South","MS",42.2598455277545,43.9911927981245,46.0559706265377,43.9911927981245
+"300",24,13,0,1,"Non-communicable","White","Female","Mississippi",1981,"East South Central","South","MS",42.9008692619534,45.1809248420705,47.6948497071854,45.1809248420705
+"301",24,13,1,0,"All other causes","Black","Male","Mississippi",1981,"East South Central","South","MS",288.614319108316,301.270849107613,314.095483568385,301.270849107613
+"302",24,13,1,0,"Cancers","Black","Male","Mississippi",1981,"East South Central","South","MS",282.606694811579,292.055483799696,302.422491148314,292.055483799696
+"303",24,13,1,0,"Cardiovascular","Black","Male","Mississippi",1981,"East South Central","South","MS",675.044463562202,694.989525246711,714.877554263557,694.989525246711
+"304",24,13,1,0,"Communicable","Black","Male","Mississippi",1981,"East South Central","South","MS",47.9968943191635,52.5706103541224,57.8838931807394,52.5706103541224
+"305",24,13,1,0,"Injuries","Black","Male","Mississippi",1981,"East South Central","South","MS",178.316559771406,186.848285087733,195.283576836137,186.848285087733
+"306",24,13,1,0,"Non-communicable","Black","Male","Mississippi",1981,"East South Central","South","MS",83.1605978524728,87.82340489579,92.7745909750786,87.82340489579
+"307",24,13,1,1,"All other causes","Black","Female","Mississippi",1981,"East South Central","South","MS",180.803464521604,188.968160499593,197.728882480197,188.968160499593
+"308",24,13,1,1,"Cancers","Black","Female","Mississippi",1981,"East South Central","South","MS",153.702185004001,159.174573885309,164.780171527535,159.174573885309
+"309",24,13,1,1,"Cardiovascular","Black","Female","Mississippi",1981,"East South Central","South","MS",484.307582073422,500.962888355495,516.629522596903,500.962888355495
+"310",24,13,1,1,"Communicable","Black","Female","Mississippi",1981,"East South Central","South","MS",28.9082346794133,31.8646713318534,35.2338350316548,31.8646713318534
+"311",24,13,1,1,"Injuries","Black","Female","Mississippi",1981,"East South Central","South","MS",47.5726989536642,50.6007307361044,53.9376728636206,50.6007307361044
+"312",24,13,1,1,"Non-communicable","Black","Female","Mississippi",1981,"East South Central","South","MS",62.8043285860961,66.6196223987161,70.5012567020521,66.6196223987161
+"313",24,14,0,0,"All other causes","White","Male","Mississippi",1982,"East South Central","South","MS",159.585957538192,166.130554292733,173.101898395736,166.130554292733
+"314",24,14,0,0,"Cancers","White","Male","Mississippi",1982,"East South Central","South","MS",263.214752102986,270.046790835095,276.560344374597,270.046790835095
+"315",24,14,0,0,"Cardiovascular","White","Male","Mississippi",1982,"East South Central","South","MS",659.73253442343,675.342791183988,692.841358022132,675.342791183988
+"316",24,14,0,0,"Communicable","White","Male","Mississippi",1982,"East South Central","South","MS",45.9633630580206,50.692073378106,55.4446029488863,50.692073378106
+"317",24,14,0,0,"Injuries","White","Male","Mississippi",1982,"East South Central","South","MS",118.565873613349,122.569519164169,126.721192889329,122.569519164169
+"318",24,14,0,0,"Non-communicable","White","Male","Mississippi",1982,"East South Central","South","MS",99.0085086600527,102.848934704643,106.971759344098,102.848934704643
+"319",24,14,0,1,"All other causes","White","Female","Mississippi",1982,"East South Central","South","MS",96.937994409156,101.04316362889,105.552457915599,101.04316362889
+"320",24,14,0,1,"Cancers","White","Female","Mississippi",1982,"East South Central","South","MS",142.084960084311,145.657468483776,149.166715246339,145.657468483776
+"321",24,14,0,1,"Cardiovascular","White","Female","Mississippi",1982,"East South Central","South","MS",404.700841557521,414.051727816977,422.910655069245,414.051727816977
+"322",24,14,0,1,"Communicable","White","Female","Mississippi",1982,"East South Central","South","MS",29.0643352544274,31.1619258918501,33.3309312149465,31.1619258918501
+"323",24,14,0,1,"Injuries","White","Female","Mississippi",1982,"East South Central","South","MS",41.930210643506,43.8991673199293,45.694712341263,43.8991673199293
+"324",24,14,0,1,"Non-communicable","White","Female","Mississippi",1982,"East South Central","South","MS",44.1264028874167,46.5220181740138,49.024384708163,46.5220181740138
+"325",24,14,1,0,"All other causes","Black","Male","Mississippi",1982,"East South Central","South","MS",287.330918353526,300.6081615274,312.777631770699,300.6081615274
+"326",24,14,1,0,"Cancers","Black","Male","Mississippi",1982,"East South Central","South","MS",287.329083107592,298.483074865267,309.19946768009,298.483074865267
+"327",24,14,1,0,"Cardiovascular","Black","Male","Mississippi",1982,"East South Central","South","MS",648.092571838184,666.30701821746,687.361105165636,666.30701821746
+"328",24,14,1,0,"Communicable","Black","Male","Mississippi",1982,"East South Central","South","MS",49.7736113619728,54.6462118231477,59.5391041669423,54.6462118231477
+"329",24,14,1,0,"Injuries","Black","Male","Mississippi",1982,"East South Central","South","MS",171.749816297312,179.166885937254,186.815938857453,179.166885937254
+"330",24,14,1,0,"Non-communicable","Black","Male","Mississippi",1982,"East South Central","South","MS",84.3843388740818,89.1739253431661,94.2602766719602,89.1739253431661
+"331",24,14,1,1,"All other causes","Black","Female","Mississippi",1982,"East South Central","South","MS",177.820236038902,186.838100111917,195.401246314257,186.838100111917
+"332",24,14,1,1,"Cancers","Black","Female","Mississippi",1982,"East South Central","South","MS",156.235433827689,161.3808547516,166.947360284235,161.3808547516
+"333",24,14,1,1,"Cardiovascular","Black","Female","Mississippi",1982,"East South Central","South","MS",473.972610480019,489.077700648592,503.649648922237,489.077700648592
+"334",24,14,1,1,"Communicable","Black","Female","Mississippi",1982,"East South Central","South","MS",29.3282856649765,32.4426054115387,35.6628537040222,32.4426054115387
+"335",24,14,1,1,"Injuries","Black","Female","Mississippi",1982,"East South Central","South","MS",45.9393840433317,48.9598841308466,52.1344362659442,48.9598841308466
+"336",24,14,1,1,"Non-communicable","Black","Female","Mississippi",1982,"East South Central","South","MS",63.1998026042062,66.8038253614886,70.5636364031056,66.8038253614886
+"337",24,15,0,0,"All other causes","White","Male","Mississippi",1983,"East South Central","South","MS",161.533520827101,168.586238005905,176.132948683203,168.586238005905
+"338",24,15,0,0,"Cancers","White","Male","Mississippi",1983,"East South Central","South","MS",267.009034579913,273.250613402246,280.16758242343,273.250613402246
+"339",24,15,0,0,"Cardiovascular","White","Male","Mississippi",1983,"East South Central","South","MS",653.252043188247,670.004112858224,685.899796061982,670.004112858224
+"340",24,15,0,0,"Communicable","White","Male","Mississippi",1983,"East South Central","South","MS",47.1008864922245,51.0762797901564,55.7655806457625,51.0762797901564
+"341",24,15,0,0,"Injuries","White","Male","Mississippi",1983,"East South Central","South","MS",115.476521826485,119.627837755092,123.685995383377,119.627837755092
+"342",24,15,0,0,"Non-communicable","White","Male","Mississippi",1983,"East South Central","South","MS",101.879838632991,106.030387387109,109.903429301894,106.030387387109
+"343",24,15,0,1,"All other causes","White","Female","Mississippi",1983,"East South Central","South","MS",97.6399128005624,101.794071352193,106.174621426931,101.794071352193
+"344",24,15,0,1,"Cancers","White","Female","Mississippi",1983,"East South Central","South","MS",142.962907005396,146.521014257053,150.038395191824,146.521014257053
+"345",24,15,0,1,"Cardiovascular","White","Female","Mississippi",1983,"East South Central","South","MS",395.969402425945,406.015187195739,416.463059425179,406.015187195739
+"346",24,15,0,1,"Communicable","White","Female","Mississippi",1983,"East South Central","South","MS",30.5305814201898,32.5369186741325,34.633209161038,32.5369186741325
+"347",24,15,0,1,"Injuries","White","Female","Mississippi",1983,"East South Central","South","MS",41.0212072928657,43.1399384841515,44.9495583651424,43.1399384841515
+"348",24,15,0,1,"Non-communicable","White","Female","Mississippi",1983,"East South Central","South","MS",46.4743091469619,48.8791235583193,51.5416824356731,48.8791235583193
+"349",24,15,1,0,"All other causes","Black","Male","Mississippi",1983,"East South Central","South","MS",290.052250147279,303.061332365083,317.248392358255,303.061332365083
+"350",24,15,1,0,"Cancers","Black","Male","Mississippi",1983,"East South Central","South","MS",295.594938393527,306.691622231219,317.338440904849,306.691622231219
+"351",24,15,1,0,"Cardiovascular","Black","Male","Mississippi",1983,"East South Central","South","MS",639.866286070366,659.435731030625,679.726036001365,659.435731030625
+"352",24,15,1,0,"Communicable","Black","Male","Mississippi",1983,"East South Central","South","MS",51.0708122085666,56.1235277908367,61.0924010557492,56.1235277908367
+"353",24,15,1,0,"Injuries","Black","Male","Mississippi",1983,"East South Central","South","MS",165.388970056027,172.687214768922,179.878806029124,172.687214768922
+"354",24,15,1,0,"Non-communicable","Black","Male","Mississippi",1983,"East South Central","South","MS",88.3263260362836,93.2637399176267,98.5210243951516,93.2637399176267
+"355",24,15,1,1,"All other causes","Black","Female","Mississippi",1983,"East South Central","South","MS",182.561534578626,190.426656925166,198.79958917819,190.426656925166
+"356",24,15,1,1,"Cancers","Black","Female","Mississippi",1983,"East South Central","South","MS",158.571262294403,163.814573709842,169.164002098941,163.814573709842
+"357",24,15,1,1,"Cardiovascular","Black","Female","Mississippi",1983,"East South Central","South","MS",469.266492000712,483.654349557094,498.763759538643,483.654349557094
+"358",24,15,1,1,"Communicable","Black","Female","Mississippi",1983,"East South Central","South","MS",30.5117257399146,33.5295003415815,36.8460598028474,33.5295003415815
+"359",24,15,1,1,"Injuries","Black","Female","Mississippi",1983,"East South Central","South","MS",44.8967068780314,47.8507109924322,51.0606740353026,47.8507109924322
+"360",24,15,1,1,"Non-communicable","Black","Female","Mississippi",1983,"East South Central","South","MS",63.8996675787235,67.5494650351441,71.1721913677379,67.5494650351441
+"361",24,16,0,0,"All other causes","White","Male","Mississippi",1984,"East South Central","South","MS",159.996460622114,166.736443448801,173.991317711614,166.736443448801
+"362",24,16,0,0,"Cancers","White","Male","Mississippi",1984,"East South Central","South","MS",269.395125659976,275.709679473834,282.17459482156,275.709679473834
+"363",24,16,0,0,"Cardiovascular","White","Male","Mississippi",1984,"East South Central","South","MS",642.988028537442,658.940884151585,674.905265023342,658.940884151585
+"364",24,16,0,0,"Communicable","White","Male","Mississippi",1984,"East South Central","South","MS",50.317206656096,54.7174886304946,59.2614172042284,54.7174886304946
+"365",24,16,0,0,"Injuries","White","Male","Mississippi",1984,"East South Central","South","MS",113.939358478692,117.831003162222,121.725195356172,117.831003162222
+"366",24,16,0,0,"Non-communicable","White","Male","Mississippi",1984,"East South Central","South","MS",104.757888223701,108.814934395983,113.304206493836,108.814934395983
+"367",24,16,0,1,"All other causes","White","Female","Mississippi",1984,"East South Central","South","MS",98.2172470771145,102.330415305593,107.033377999281,102.330415305593
+"368",24,16,0,1,"Cancers","White","Female","Mississippi",1984,"East South Central","South","MS",143.7627228699,147.420520806885,151.212435341002,147.420520806885
+"369",24,16,0,1,"Cardiovascular","White","Female","Mississippi",1984,"East South Central","South","MS",389.509479474928,399.358779938056,408.620822757978,399.358779938056
+"370",24,16,0,1,"Communicable","White","Female","Mississippi",1984,"East South Central","South","MS",31.3414478427883,33.42737396691,35.6684298980438,33.42737396691
+"371",24,16,0,1,"Injuries","White","Female","Mississippi",1984,"East South Central","South","MS",40.6135291127434,42.5520712976746,44.3474997998325,42.5520712976746
+"372",24,16,0,1,"Non-communicable","White","Female","Mississippi",1984,"East South Central","South","MS",48.4192124774308,50.9199177767251,53.3225555000146,50.9199177767251
+"373",24,16,1,0,"All other causes","Black","Male","Mississippi",1984,"East South Central","South","MS",279.733852409034,292.158139434531,304.956588209459,292.158139434531
+"374",24,16,1,0,"Cancers","Black","Male","Mississippi",1984,"East South Central","South","MS",302.127180260219,312.919974544145,324.238619066695,312.919974544145
+"375",24,16,1,0,"Cardiovascular","Black","Male","Mississippi",1984,"East South Central","South","MS",649.755965935814,667.872318089458,686.686588416451,667.872318089458
+"376",24,16,1,0,"Communicable","Black","Male","Mississippi",1984,"East South Central","South","MS",53.0650210588166,58.1649578859797,63.4031001017639,58.1649578859797
+"377",24,16,1,0,"Injuries","Black","Male","Mississippi",1984,"East South Central","South","MS",161.455974655027,168.738175016982,177.475319735264,168.738175016982
+"378",24,16,1,0,"Non-communicable","Black","Male","Mississippi",1984,"East South Central","South","MS",91.1345581067537,96.4937822174391,101.835067472254,96.4937822174391
+"379",24,16,1,1,"All other causes","Black","Female","Mississippi",1984,"East South Central","South","MS",177.90130297233,186.225391224714,195.316405670475,186.225391224714
+"380",24,16,1,1,"Cancers","Black","Female","Mississippi",1984,"East South Central","South","MS",161.085415399488,166.297514543029,171.824336651737,166.297514543029
+"381",24,16,1,1,"Cardiovascular","Black","Female","Mississippi",1984,"East South Central","South","MS",465.714045689784,481.462750341516,496.154409441769,481.462750341516
+"382",24,16,1,1,"Communicable","Black","Female","Mississippi",1984,"East South Central","South","MS",31.6442310848025,34.8326020200575,38.1545236401311,34.8326020200575
+"383",24,16,1,1,"Injuries","Black","Female","Mississippi",1984,"East South Central","South","MS",44.3117290934352,47.2698488895997,50.3271791187084,47.2698488895997
+"384",24,16,1,1,"Non-communicable","Black","Female","Mississippi",1984,"East South Central","South","MS",65.080783369699,68.8974764676778,72.7327296761621,68.8974764676778
+"385",24,17,0,0,"All other causes","White","Male","Mississippi",1985,"East South Central","South","MS",156.502011355572,163.909202367317,171.339019547882,163.909202367317
+"386",24,17,0,0,"Cancers","White","Male","Mississippi",1985,"East South Central","South","MS",272.084485029778,278.726562356922,285.423221845365,278.726562356922
+"387",24,17,0,0,"Cardiovascular","White","Male","Mississippi",1985,"East South Central","South","MS",635.6410743483,651.585584993838,668.258976641137,651.585584993838
+"388",24,17,0,0,"Communicable","White","Male","Mississippi",1985,"East South Central","South","MS",55.2718496417213,59.7393201278386,64.7110406995125,59.7393201278386
+"389",24,17,0,0,"Injuries","White","Male","Mississippi",1985,"East South Central","South","MS",113.038044747448,116.627067939935,120.606725200859,116.627067939935
+"390",24,17,0,0,"Non-communicable","White","Male","Mississippi",1985,"East South Central","South","MS",106.623272666761,111.086674839041,115.620893317766,111.086674839041
+"391",24,17,0,1,"All other causes","White","Female","Mississippi",1985,"East South Central","South","MS",99.7445912288078,103.978547034548,108.440251726284,103.978547034548
+"392",24,17,0,1,"Cancers","White","Female","Mississippi",1985,"East South Central","South","MS",144.860786530934,148.664063364147,152.515934095452,148.664063364147
+"393",24,17,0,1,"Cardiovascular","White","Female","Mississippi",1985,"East South Central","South","MS",387.123833579887,396.086646222658,405.574015488333,396.086646222658
+"394",24,17,0,1,"Communicable","White","Female","Mississippi",1985,"East South Central","South","MS",32.6725905552467,34.6468003130777,36.9005059304337,34.6468003130777
+"395",24,17,0,1,"Injuries","White","Female","Mississippi",1985,"East South Central","South","MS",40.6609046752508,42.447793780255,44.3331590319171,42.447793780255
+"396",24,17,0,1,"Non-communicable","White","Female","Mississippi",1985,"East South Central","South","MS",49.9659414063722,52.4598030555462,55.0768323865608,52.4598030555462
+"397",24,17,1,0,"All other causes","Black","Male","Mississippi",1985,"East South Central","South","MS",264.740454674334,276.392609398389,288.712040911992,276.392609398389
+"398",24,17,1,0,"Cancers","Black","Male","Mississippi",1985,"East South Central","South","MS",311.09863174693,322.469076132787,334.45458271384,322.469076132787
+"399",24,17,1,0,"Cardiovascular","Black","Male","Mississippi",1985,"East South Central","South","MS",660.144911654268,678.355850644504,699.5180357139,678.355850644504
+"400",24,17,1,0,"Communicable","Black","Male","Mississippi",1985,"East South Central","South","MS",57.6532648396776,62.8190358101141,68.4191046552214,62.8190358101141
+"401",24,17,1,0,"Injuries","Black","Male","Mississippi",1985,"East South Central","South","MS",160.097079490322,167.664826000478,175.369513520193,167.664826000478
+"402",24,17,1,0,"Non-communicable","Black","Male","Mississippi",1985,"East South Central","South","MS",94.8119693754654,99.8839654795104,105.21101017728,99.8839654795104
+"403",24,17,1,1,"All other causes","Black","Female","Mississippi",1985,"East South Central","South","MS",166.419965309139,174.194815721533,182.18893751452,174.194815721533
+"404",24,17,1,1,"Cancers","Black","Female","Mississippi",1985,"East South Central","South","MS",164.608458605093,169.891327731342,175.067165132211,169.891327731342
+"405",24,17,1,1,"Cardiovascular","Black","Female","Mississippi",1985,"East South Central","South","MS",476.797007380153,491.459658104204,507.523790522295,491.459658104204
+"406",24,17,1,1,"Communicable","Black","Female","Mississippi",1985,"East South Central","South","MS",33.5925864319432,36.7348369423419,40.3545490022291,36.7348369423419
+"407",24,17,1,1,"Injuries","Black","Female","Mississippi",1985,"East South Central","South","MS",43.9758306386424,46.8075296183871,49.6540901122468,46.8075296183871
+"408",24,17,1,1,"Non-communicable","Black","Female","Mississippi",1985,"East South Central","South","MS",66.1574297124972,69.9081151407308,73.8159443717363,69.9081151407308
+"409",24,18,0,0,"All other causes","White","Male","Mississippi",1986,"East South Central","South","MS",144.89055965874,151.291400747268,157.772833959405,151.291400747268
+"410",24,18,0,0,"Cancers","White","Male","Mississippi",1986,"East South Central","South","MS",276.093093567765,282.379998563123,289.345864697061,282.379998563123
+"411",24,18,0,0,"Cardiovascular","White","Male","Mississippi",1986,"East South Central","South","MS",618.231471102262,632.715792297199,647.974191020891,632.715792297199
+"412",24,18,0,0,"Communicable","White","Male","Mississippi",1986,"East South Central","South","MS",56.258270385233,60.7389576100478,65.5686513768784,60.7389576100478
+"413",24,18,0,0,"Injuries","White","Male","Mississippi",1986,"East South Central","South","MS",112.28810769835,116.27161210405,120.535934404177,116.27161210405
+"414",24,18,0,0,"Non-communicable","White","Male","Mississippi",1986,"East South Central","South","MS",108.031346869759,112.197752307473,116.525154886107,112.197752307473
+"415",24,18,0,1,"All other causes","White","Female","Mississippi",1986,"East South Central","South","MS",96.3706218358894,100.31236487014,104.820788031642,100.31236487014
+"416",24,18,0,1,"Cancers","White","Female","Mississippi",1986,"East South Central","South","MS",147.431697801045,150.824419350177,154.643664773732,150.824419350177
+"417",24,18,0,1,"Cardiovascular","White","Female","Mississippi",1986,"East South Central","South","MS",378.809902824252,388.109371614939,397.490198221976,388.109371614939
+"418",24,18,0,1,"Communicable","White","Female","Mississippi",1986,"East South Central","South","MS",33.8245389802455,35.9487491199278,38.157864156389,35.9487491199278
+"419",24,18,0,1,"Injuries","White","Female","Mississippi",1986,"East South Central","South","MS",40.8042274721699,42.6517242533212,44.5214442112557,42.6517242533212
+"420",24,18,0,1,"Non-communicable","White","Female","Mississippi",1986,"East South Central","South","MS",50.3905957062871,53.0020292779348,55.6205948904276,53.0020292779348
+"421",24,18,1,0,"All other causes","Black","Male","Mississippi",1986,"East South Central","South","MS",226.311891024209,238.416159985479,249.176999950108,238.416159985479
+"422",24,18,1,0,"Cancers","Black","Male","Mississippi",1986,"East South Central","South","MS",322.33353129151,333.418758224527,344.539352542025,333.418758224527
+"423",24,18,1,0,"Cardiovascular","Black","Male","Mississippi",1986,"East South Central","South","MS",676.589428400315,695.785850128036,715.044009794562,695.785850128036
+"424",24,18,1,0,"Communicable","Black","Male","Mississippi",1986,"East South Central","South","MS",64.2756518462946,70.1995902659536,76.8298985472031,70.1995902659536
+"425",24,18,1,0,"Injuries","Black","Male","Mississippi",1986,"East South Central","South","MS",159.480750175005,166.675048320383,174.135505639915,166.675048320383
+"426",24,18,1,0,"Non-communicable","Black","Male","Mississippi",1986,"East South Central","South","MS",96.8411962282648,102.265794471124,108.166706089705,102.265794471124
+"427",24,18,1,1,"All other causes","Black","Female","Mississippi",1986,"East South Central","South","MS",146.873290012069,153.910474073981,161.879816933906,153.910474073981
+"428",24,18,1,1,"Cancers","Black","Female","Mississippi",1986,"East South Central","South","MS",167.670340666056,173.081132364257,178.641923331619,173.081132364257
+"429",24,18,1,1,"Cardiovascular","Black","Female","Mississippi",1986,"East South Central","South","MS",486.094783846209,501.814555823078,517.390621990683,501.814555823078
+"430",24,18,1,1,"Communicable","Black","Female","Mississippi",1986,"East South Central","South","MS",34.570121688073,37.7124758075669,41.2564302168618,37.7124758075669
+"431",24,18,1,1,"Injuries","Black","Female","Mississippi",1986,"East South Central","South","MS",44.1371522257179,46.888142612015,49.9102757296143,46.888142612015
+"432",24,18,1,1,"Non-communicable","Black","Female","Mississippi",1986,"East South Central","South","MS",68.3271649543248,71.8766653190279,75.5084642106558,71.8766653190279
+"433",24,19,0,0,"All other causes","White","Male","Mississippi",1987,"East South Central","South","MS",132.85682525829,138.341984501435,145.043724162679,138.341984501435
+"434",24,19,0,0,"Cancers","White","Male","Mississippi",1987,"East South Central","South","MS",278.155911602105,285.055839455386,292.07490213512,285.055839455386
+"435",24,19,0,0,"Cardiovascular","White","Male","Mississippi",1987,"East South Central","South","MS",614.373881154058,629.95061782043,644.053874289444,629.95061782043
+"436",24,19,0,0,"Communicable","White","Male","Mississippi",1987,"East South Central","South","MS",58.1042771588045,62.7151533954038,67.7222821756963,62.7151533954038
+"437",24,19,0,0,"Injuries","White","Male","Mississippi",1987,"East South Central","South","MS",111.756661889179,115.524404010346,119.278377351249,115.524404010346
+"438",24,19,0,0,"Non-communicable","White","Male","Mississippi",1987,"East South Central","South","MS",109.527374326761,113.52382862279,118.084528853736,113.52382862279
+"439",24,19,0,1,"All other causes","White","Female","Mississippi",1987,"East South Central","South","MS",91.4355879675203,95.2366478822766,99.4863904604498,95.2366478822766
+"440",24,19,0,1,"Cancers","White","Female","Mississippi",1987,"East South Central","South","MS",148.809189812079,152.350248240376,156.321302742836,152.350248240376
+"441",24,19,0,1,"Cardiovascular","White","Female","Mississippi",1987,"East South Central","South","MS",376.718240087404,384.792441940144,393.196892134964,384.792441940144
+"442",24,19,0,1,"Communicable","White","Female","Mississippi",1987,"East South Central","South","MS",34.5734770619317,36.783203446137,39.192261473537,36.783203446137
+"443",24,19,0,1,"Injuries","White","Female","Mississippi",1987,"East South Central","South","MS",40.8917696962612,42.7220509262704,44.8527939659571,42.7220509262704
+"444",24,19,0,1,"Non-communicable","White","Female","Mississippi",1987,"East South Central","South","MS",52.2871169314864,54.6796867318914,57.3163802653969,54.6796867318914
+"445",24,19,1,0,"All other causes","Black","Male","Mississippi",1987,"East South Central","South","MS",200.074542071128,210.038226254556,220.456258081504,210.038226254556
+"446",24,19,1,0,"Cancers","Black","Male","Mississippi",1987,"East South Central","South","MS",335.866573830785,347.17885328195,359.661158631643,347.17885328195
+"447",24,19,1,0,"Cardiovascular","Black","Male","Mississippi",1987,"East South Central","South","MS",689.492833504544,709.715793547737,728.980677030776,709.715793547737
+"448",24,19,1,0,"Communicable","Black","Male","Mississippi",1987,"East South Central","South","MS",69.1724625729827,74.9896863259306,82.1573810658401,74.9896863259306
+"449",24,19,1,0,"Injuries","Black","Male","Mississippi",1987,"East South Central","South","MS",161.155764938606,168.384862026566,176.236419296768,168.384862026566
+"450",24,19,1,0,"Non-communicable","Black","Male","Mississippi",1987,"East South Central","South","MS",100.237883398164,105.505081823719,111.374084095483,105.505081823719
+"451",24,19,1,1,"All other causes","Black","Female","Mississippi",1987,"East South Central","South","MS",130.322723495706,136.961373320345,143.432543091441,136.961373320345
+"452",24,19,1,1,"Cancers","Black","Female","Mississippi",1987,"East South Central","South","MS",170.364678888094,175.546697328317,181.614439209021,175.546697328317
+"453",24,19,1,1,"Cardiovascular","Black","Female","Mississippi",1987,"East South Central","South","MS",497.824240001579,513.315797187565,528.637211823265,513.315797187565
+"454",24,19,1,1,"Communicable","Black","Female","Mississippi",1987,"East South Central","South","MS",35.6825052667781,39.1534995162378,42.6357463590062,39.1534995162378
+"455",24,19,1,1,"Injuries","Black","Female","Mississippi",1987,"East South Central","South","MS",44.0177719537876,46.6671517461684,49.6751036826561,46.6671517461684
+"456",24,19,1,1,"Non-communicable","Black","Female","Mississippi",1987,"East South Central","South","MS",70.5604748367896,74.4202119841939,78.5352428623095,74.4202119841939
+"457",24,20,0,0,"All other causes","White","Male","Mississippi",1988,"East South Central","South","MS",124.432278869241,130.098280280474,135.885263897443,130.098280280474
+"458",24,20,0,0,"Cancers","White","Male","Mississippi",1988,"East South Central","South","MS",281.496976129754,288.32089101807,295.489301343024,288.32089101807
+"459",24,20,0,0,"Cardiovascular","White","Male","Mississippi",1988,"East South Central","South","MS",617.366334646234,633.654821353713,649.799619486229,633.654821353713
+"460",24,20,0,0,"Communicable","White","Male","Mississippi",1988,"East South Central","South","MS",59.8186778580696,64.5720414883254,70.0163075732619,64.5720414883254
+"461",24,20,0,0,"Injuries","White","Male","Mississippi",1988,"East South Central","South","MS",111.958164733119,115.574096619219,119.543567829482,115.574096619219
+"462",24,20,0,0,"Non-communicable","White","Male","Mississippi",1988,"East South Central","South","MS",110.123978580181,114.468624249765,119.015190876886,114.468624249765
+"463",24,20,0,1,"All other causes","White","Female","Mississippi",1988,"East South Central","South","MS",87.0295156243149,90.8613719407995,95.0638197572265,90.8613719407995
+"464",24,20,0,1,"Cancers","White","Female","Mississippi",1988,"East South Central","South","MS",151.024423975221,154.779362736866,158.746037158018,154.779362736866
+"465",24,20,0,1,"Cardiovascular","White","Female","Mississippi",1988,"East South Central","South","MS",375.525020396517,384.444301882325,392.893239923404,384.444301882325
+"466",24,20,0,1,"Communicable","White","Female","Mississippi",1988,"East South Central","South","MS",35.6038701633013,37.7101233481943,40.0085975546817,37.7101233481943
+"467",24,20,0,1,"Injuries","White","Female","Mississippi",1988,"East South Central","South","MS",40.8196557987223,42.6441257728836,44.7094821624108,42.6441257728836
+"468",24,20,0,1,"Non-communicable","White","Female","Mississippi",1988,"East South Central","South","MS",53.1323804849105,55.639753833668,58.3315085240293,55.639753833668
+"469",24,20,1,0,"All other causes","Black","Male","Mississippi",1988,"East South Central","South","MS",184.420531869988,193.927282311182,203.848062023564,193.927282311182
+"470",24,20,1,0,"Cancers","Black","Male","Mississippi",1988,"East South Central","South","MS",350.226976256145,362.504782527046,374.579401249553,362.504782527046
+"471",24,20,1,0,"Cardiovascular","Black","Male","Mississippi",1988,"East South Central","South","MS",691.77727022713,711.640493146114,731.859371280512,711.640493146114
+"472",24,20,1,0,"Communicable","Black","Male","Mississippi",1988,"East South Central","South","MS",69.9965003516294,75.97145286358,82.3794282847677,75.97145286358
+"473",24,20,1,0,"Injuries","Black","Male","Mississippi",1988,"East South Central","South","MS",161.246276814985,168.587834824172,176.306486322609,168.587834824172
+"474",24,20,1,0,"Non-communicable","Black","Male","Mississippi",1988,"East South Central","South","MS",103.343365586984,109.136992349995,115.764922646555,109.136992349995
+"475",24,20,1,1,"All other causes","Black","Female","Mississippi",1988,"East South Central","South","MS",121.581867130805,127.986213936374,134.361645717085,127.986213936374
+"476",24,20,1,1,"Cancers","Black","Female","Mississippi",1988,"East South Central","South","MS",171.790486589785,176.940878852754,182.701689454034,176.940878852754
+"477",24,20,1,1,"Cardiovascular","Black","Female","Mississippi",1988,"East South Central","South","MS",502.804620999482,517.624419427442,533.838648625869,517.624419427442
+"478",24,20,1,1,"Communicable","Black","Female","Mississippi",1988,"East South Central","South","MS",37.6061280204443,41.0163243180056,44.8509810276359,41.0163243180056
+"479",24,20,1,1,"Injuries","Black","Female","Mississippi",1988,"East South Central","South","MS",43.769656393157,46.543627529404,49.381055373049,46.543627529404
+"480",24,20,1,1,"Non-communicable","Black","Female","Mississippi",1988,"East South Central","South","MS",73.0772010195842,76.8003597594635,81.1975458131851,76.8003597594635
+"481",24,21,0,0,"All other causes","White","Male","Mississippi",1989,"East South Central","South","MS",119.935882082681,125.62369939252,131.546335417034,125.62369939252
+"482",24,21,0,0,"Cancers","White","Male","Mississippi",1989,"East South Central","South","MS",282.303185071359,288.793493185288,295.575501793312,288.793493185288
+"483",24,21,0,0,"Cardiovascular","White","Male","Mississippi",1989,"East South Central","South","MS",610.568664377434,625.779962322746,641.567726936124,625.779962322746
+"484",24,21,0,0,"Communicable","White","Male","Mississippi",1989,"East South Central","South","MS",62.87991258897,68.0112111674501,73.2647424134083,68.0112111674501
+"485",24,21,0,0,"Injuries","White","Male","Mississippi",1989,"East South Central","South","MS",112.289582604098,116.051219374127,119.921419046974,116.051219374127
+"486",24,21,0,0,"Non-communicable","White","Male","Mississippi",1989,"East South Central","South","MS",110.848436635365,115.10114308068,119.706034185823,115.10114308068
+"487",24,21,0,1,"All other causes","White","Female","Mississippi",1989,"East South Central","South","MS",84.2507162757883,87.9999482885598,91.9080977923313,87.9999482885598
+"488",24,21,0,1,"Cancers","White","Female","Mississippi",1989,"East South Central","South","MS",152.012631370396,155.682590173832,159.432016378057,155.682590173832
+"489",24,21,0,1,"Cardiovascular","White","Female","Mississippi",1989,"East South Central","South","MS",374.881391181048,383.430534444717,393.006082173532,383.430534444717
+"490",24,21,0,1,"Communicable","White","Female","Mississippi",1989,"East South Central","South","MS",36.281684188402,38.4643125778573,40.8949225977291,38.4643125778573
+"491",24,21,0,1,"Injuries","White","Female","Mississippi",1989,"East South Central","South","MS",41.0775824487801,42.859679518048,44.831999990355,42.859679518048
+"492",24,21,0,1,"Non-communicable","White","Female","Mississippi",1989,"East South Central","South","MS",54.1421600264885,56.7628973654775,59.3842920301408,56.7628973654775
+"493",24,21,1,0,"All other causes","Black","Male","Mississippi",1989,"East South Central","South","MS",172.634548864529,181.720445346488,190.384651509968,181.720445346488
+"494",24,21,1,0,"Cancers","Black","Male","Mississippi",1989,"East South Central","South","MS",356.128126146136,368.122378512484,380.901893457333,368.122378512484
+"495",24,21,1,0,"Cardiovascular","Black","Male","Mississippi",1989,"East South Central","South","MS",695.774781620894,715.576304565847,736.348811735782,715.576304565847
+"496",24,21,1,0,"Communicable","Black","Male","Mississippi",1989,"East South Central","South","MS",72.712408966485,78.5225218162796,85.2985935382413,78.5225218162796
+"497",24,21,1,0,"Injuries","Black","Male","Mississippi",1989,"East South Central","South","MS",164.523531747241,171.641507475761,179.588539089213,171.641507475761
+"498",24,21,1,0,"Non-communicable","Black","Male","Mississippi",1989,"East South Central","South","MS",106.189381989463,111.874338251901,118.640144827508,111.874338251901
+"499",24,21,1,1,"All other causes","Black","Female","Mississippi",1989,"East South Central","South","MS",121.074419215644,126.832166259262,133.345737911139,126.832166259262
+"500",24,21,1,1,"Cancers","Black","Female","Mississippi",1989,"East South Central","South","MS",173.843423429133,179.446445408434,184.934028472712,179.446445408434
+"501",24,21,1,1,"Cardiovascular","Black","Female","Mississippi",1989,"East South Central","South","MS",500.403249048729,515.185315610777,531.50375579708,515.185315610777
+"502",24,21,1,1,"Communicable","Black","Female","Mississippi",1989,"East South Central","South","MS",40.42796553214,44.1080736660372,47.9908897642423,44.1080736660372
+"503",24,21,1,1,"Injuries","Black","Female","Mississippi",1989,"East South Central","South","MS",43.9652422096738,46.6498880704955,49.5499228559274,46.6498880704955
+"504",24,21,1,1,"Non-communicable","Black","Female","Mississippi",1989,"East South Central","South","MS",75.4377414020727,79.252025601959,83.3410063067161,79.252025601959
+"505",24,22,0,0,"All other causes","White","Male","Mississippi",1990,"East South Central","South","MS",117.43958410311,122.5098404037,127.941777153365,122.5098404037
+"506",24,22,0,0,"Cancers","White","Male","Mississippi",1990,"East South Central","South","MS",281.811456675926,288.279553145219,295.278372063281,288.279553145219
+"507",24,22,0,0,"Cardiovascular","White","Male","Mississippi",1990,"East South Central","South","MS",587.823729365283,602.701045871305,616.226869018265,602.701045871305
+"508",24,22,0,0,"Communicable","White","Male","Mississippi",1990,"East South Central","South","MS",66.107434691538,70.5612681240008,76.1170302903934,70.5612681240008
+"509",24,22,0,0,"Injuries","White","Male","Mississippi",1990,"East South Central","South","MS",111.994084805318,115.799261679176,119.651625042815,115.799261679176
+"510",24,22,0,0,"Non-communicable","White","Male","Mississippi",1990,"East South Central","South","MS",111.746479591027,116.192805165774,120.59227562709,116.192805165774
+"511",24,22,0,1,"All other causes","White","Female","Mississippi",1990,"East South Central","South","MS",79.4342676058925,82.9662031426228,86.754552595396,82.9662031426228
+"512",24,22,0,1,"Cancers","White","Female","Mississippi",1990,"East South Central","South","MS",152.873806405507,156.330987961444,160.12396368096,156.330987961444
+"513",24,22,0,1,"Cardiovascular","White","Female","Mississippi",1990,"East South Central","South","MS",364.260976261528,372.339258845689,380.794295385857,372.339258845689
+"514",24,22,0,1,"Communicable","White","Female","Mississippi",1990,"East South Central","South","MS",38.0113004291126,40.4349971603738,42.8836524643367,40.4349971603738
+"515",24,22,0,1,"Injuries","White","Female","Mississippi",1990,"East South Central","South","MS",41.4307212047333,43.2737742102835,45.177072005273,43.2737742102835
+"516",24,22,0,1,"Non-communicable","White","Female","Mississippi",1990,"East South Central","South","MS",56.7597507136919,59.4854130515659,62.4086024048511,59.4854130515659
+"517",24,22,1,0,"All other causes","Black","Male","Mississippi",1990,"East South Central","South","MS",170.449415456297,178.708555576272,188.264701581841,178.708555576272
+"518",24,22,1,0,"Cancers","Black","Male","Mississippi",1990,"East South Central","South","MS",364.174543090652,376.541499555519,390.245430662152,376.541499555519
+"519",24,22,1,0,"Cardiovascular","Black","Male","Mississippi",1990,"East South Central","South","MS",693.004798538063,713.636619080075,733.062380786513,713.636619080075
+"520",24,22,1,0,"Communicable","Black","Male","Mississippi",1990,"East South Central","South","MS",77.9188560056228,84.3253829282848,91.4072824980408,84.3253829282848
+"521",24,22,1,0,"Injuries","Black","Male","Mississippi",1990,"East South Central","South","MS",166.540216636788,173.583481908204,181.61219508289,173.583481908204
+"522",24,22,1,0,"Non-communicable","Black","Male","Mississippi",1990,"East South Central","South","MS",107.627172358809,113.095733950129,119.350152666496,113.095733950129
+"523",24,22,1,1,"All other causes","Black","Female","Mississippi",1990,"East South Central","South","MS",118.81668207392,124.903875447105,130.87482231545,124.903875447105
+"524",24,22,1,1,"Cancers","Black","Female","Mississippi",1990,"East South Central","South","MS",176.088316789933,181.619551776945,187.424485122576,181.619551776945
+"525",24,22,1,1,"Cardiovascular","Black","Female","Mississippi",1990,"East South Central","South","MS",486.098327202696,502.189141804634,516.815879564449,502.189141804634
+"526",24,22,1,1,"Communicable","Black","Female","Mississippi",1990,"East South Central","South","MS",41.9296014980037,45.7695877836989,50.0662893794548,45.7695877836989
+"527",24,22,1,1,"Injuries","Black","Female","Mississippi",1990,"East South Central","South","MS",44.5323406057463,47.2449272173906,50.1278426088716,47.2449272173906
+"528",24,22,1,1,"Non-communicable","Black","Female","Mississippi",1990,"East South Central","South","MS",76.7855901033168,80.467154243661,84.8149028069792,80.467154243661
+"529",24,23,0,0,"All other causes","White","Male","Mississippi",1991,"East South Central","South","MS",114.083242478812,119.276544785708,124.916828292096,119.276544785708
+"530",24,23,0,0,"Cancers","White","Male","Mississippi",1991,"East South Central","South","MS",281.960600284021,288.833080094917,295.744314952939,288.833080094917
+"531",24,23,0,0,"Cardiovascular","White","Male","Mississippi",1991,"East South Central","South","MS",571.853892384054,584.962378492549,598.371753514432,584.962378492549
+"532",24,23,0,0,"Communicable","White","Male","Mississippi",1991,"East South Central","South","MS",65.2925813037208,70.2653339067104,75.6902593759972,70.2653339067104
+"533",24,23,0,0,"Injuries","White","Male","Mississippi",1991,"East South Central","South","MS",112.007147047684,115.92087399785,119.610747184809,115.92087399785
+"534",24,23,0,0,"Non-communicable","White","Male","Mississippi",1991,"East South Central","South","MS",111.607034851829,116.148589616414,120.439995609121,116.148589616414
+"535",24,23,0,1,"All other causes","White","Female","Mississippi",1991,"East South Central","South","MS",79.4673246389495,83.2856810998084,86.9796193149453,83.2856810998084
+"536",24,23,0,1,"Cancers","White","Female","Mississippi",1991,"East South Central","South","MS",153.604948498824,157.417081475726,161.27870497293,157.417081475726
+"537",24,23,0,1,"Cardiovascular","White","Female","Mississippi",1991,"East South Central","South","MS",360.935880588554,369.434811202448,378.030418544227,369.434811202448
+"538",24,23,0,1,"Communicable","White","Female","Mississippi",1991,"East South Central","South","MS",36.9278289535263,39.2076306047994,41.5458665150612,39.2076306047994
+"539",24,23,0,1,"Injuries","White","Female","Mississippi",1991,"East South Central","South","MS",41.9776306403827,43.7395172202878,45.7010976017227,43.7395172202878
+"540",24,23,0,1,"Non-communicable","White","Female","Mississippi",1991,"East South Central","South","MS",58.3683896596202,61.1961212759994,63.9684337356579,61.1961212759994
+"541",24,23,1,0,"All other causes","Black","Male","Mississippi",1991,"East South Central","South","MS",167.347829588799,175.877069196835,184.407913653175,175.877069196835
+"542",24,23,1,0,"Cancers","Black","Male","Mississippi",1991,"East South Central","South","MS",370.812157031212,382.947004083381,396.062961669209,382.947004083381
+"543",24,23,1,0,"Cardiovascular","Black","Male","Mississippi",1991,"East South Central","South","MS",684.618851895196,705.397549205638,724.051661017002,705.397549205638
+"544",24,23,1,0,"Communicable","Black","Male","Mississippi",1991,"East South Central","South","MS",81.4076967305681,87.7762520680315,94.3738634566304,87.7762520680315
+"545",24,23,1,0,"Injuries","Black","Male","Mississippi",1991,"East South Central","South","MS",166.865223336805,173.967345861486,181.389796543069,173.967345861486
+"546",24,23,1,0,"Non-communicable","Black","Male","Mississippi",1991,"East South Central","South","MS",107.617710991561,113.782691737389,119.941068781558,113.782691737389
+"547",24,23,1,1,"All other causes","Black","Female","Mississippi",1991,"East South Central","South","MS",114.175606063504,120.328324515086,126.323484401056,120.328324515086
+"548",24,23,1,1,"Cancers","Black","Female","Mississippi",1991,"East South Central","South","MS",178.777872901802,184.596335264284,190.465250741583,184.596335264284
+"549",24,23,1,1,"Cardiovascular","Black","Female","Mississippi",1991,"East South Central","South","MS",488.225732850999,502.408809638624,517.469444108626,502.408809638624
+"550",24,23,1,1,"Communicable","Black","Female","Mississippi",1991,"East South Central","South","MS",40.8314376461917,44.3309313314983,48.0648124180885,44.3309313314983
+"551",24,23,1,1,"Injuries","Black","Female","Mississippi",1991,"East South Central","South","MS",44.7850190624145,47.5081475573537,50.2480028501493,47.5081475573537
+"552",24,23,1,1,"Non-communicable","Black","Female","Mississippi",1991,"East South Central","South","MS",77.7374949289116,81.7628908151453,85.5671631834287,81.7628908151453
+"553",24,24,0,0,"All other causes","White","Male","Mississippi",1992,"East South Central","South","MS",112.399035345034,117.384992589668,122.757701015812,117.384992589668
+"554",24,24,0,0,"Cancers","White","Male","Mississippi",1992,"East South Central","South","MS",281.404184184538,288.391469069573,294.768229222302,288.391469069573
+"555",24,24,0,0,"Cardiovascular","White","Male","Mississippi",1992,"East South Central","South","MS",557.322333015291,570.845164948617,584.068895780837,570.845164948617
+"556",24,24,0,0,"Communicable","White","Male","Mississippi",1992,"East South Central","South","MS",66.4442198925139,71.3554993209131,76.1792209756152,71.3554993209131
+"557",24,24,0,0,"Injuries","White","Male","Mississippi",1992,"East South Central","South","MS",112.909333902424,116.965952773255,120.7266948142,116.965952773255
+"558",24,24,0,0,"Non-communicable","White","Male","Mississippi",1992,"East South Central","South","MS",114.271708840945,118.456318796752,123.025999125195,118.456318796752
+"559",24,24,0,1,"All other causes","White","Female","Mississippi",1992,"East South Central","South","MS",80.1539249678883,83.7905647409017,87.1864101635337,83.7905647409017
+"560",24,24,0,1,"Cancers","White","Female","Mississippi",1992,"East South Central","South","MS",153.670326293197,157.451626873078,161.342759170684,157.451626873078
+"561",24,24,0,1,"Cardiovascular","White","Female","Mississippi",1992,"East South Central","South","MS",348.035543699858,355.971597512833,363.79504234821,355.971597512833
+"562",24,24,0,1,"Communicable","White","Female","Mississippi",1992,"East South Central","South","MS",37.731757572276,40.0274318335816,42.4106388154875,40.0274318335816
+"563",24,24,0,1,"Injuries","White","Female","Mississippi",1992,"East South Central","South","MS",42.0404389615297,44.1217848578158,46.0027869708546,44.1217848578158
+"564",24,24,0,1,"Non-communicable","White","Female","Mississippi",1992,"East South Central","South","MS",59.7462325741927,62.7376416067877,65.5711805859236,62.7376416067877
+"565",24,24,1,0,"All other causes","Black","Male","Mississippi",1992,"East South Central","South","MS",163.599784746341,172.268723740805,179.550226555422,172.268723740805
+"566",24,24,1,0,"Cancers","Black","Male","Mississippi",1992,"East South Central","South","MS",372.843263741952,384.733257202485,398.32275346275,384.733257202485
+"567",24,24,1,0,"Cardiovascular","Black","Male","Mississippi",1992,"East South Central","South","MS",669.871827435036,687.532858385684,707.214912772741,687.532858385684
+"568",24,24,1,0,"Communicable","Black","Male","Mississippi",1992,"East South Central","South","MS",85.206046464273,91.3259251915557,97.9030293384947,91.3259251915557
+"569",24,24,1,0,"Injuries","Black","Male","Mississippi",1992,"East South Central","South","MS",165.395599170313,172.432709853006,179.279499250442,172.432709853006
+"570",24,24,1,0,"Non-communicable","Black","Male","Mississippi",1992,"East South Central","South","MS",109.621319793939,115.774808950527,122.152385305864,115.774808950527
+"571",24,24,1,1,"All other causes","Black","Female","Mississippi",1992,"East South Central","South","MS",111.593560635308,117.138071331649,123.167293386959,117.138071331649
+"572",24,24,1,1,"Cancers","Black","Female","Mississippi",1992,"East South Central","South","MS",180.721858213592,186.505701491036,193.343948896317,186.505701491036
+"573",24,24,1,1,"Cardiovascular","Black","Female","Mississippi",1992,"East South Central","South","MS",469.623477548716,484.21774293859,500.399847715213,484.21774293859
+"574",24,24,1,1,"Communicable","Black","Female","Mississippi",1992,"East South Central","South","MS",39.9501812710377,43.6374329092004,47.4241521571631,43.6374329092004
+"575",24,24,1,1,"Injuries","Black","Female","Mississippi",1992,"East South Central","South","MS",45.9893494634884,48.6334376743903,51.5836728941111,48.6334376743903
+"576",24,24,1,1,"Non-communicable","Black","Female","Mississippi",1992,"East South Central","South","MS",77.7764663878807,81.8276554992844,86.0652325918231,81.8276554992844
+"577",24,25,0,0,"All other causes","White","Male","Mississippi",1993,"East South Central","South","MS",112.351287003209,117.619095064389,123.006288725641,117.619095064389
+"578",24,25,0,0,"Cancers","White","Male","Mississippi",1993,"East South Central","South","MS",278.536198635,285.168783963699,291.994208665733,285.168783963699
+"579",24,25,0,0,"Cardiovascular","White","Male","Mississippi",1993,"East South Central","South","MS",561.924847402996,575.301693721806,590.238822948032,575.301693721806
+"580",24,25,0,0,"Communicable","White","Male","Mississippi",1993,"East South Central","South","MS",71.3462255733318,76.5784424639665,81.8254181705683,76.5784424639665
+"581",24,25,0,0,"Injuries","White","Male","Mississippi",1993,"East South Central","South","MS",113.160987038059,116.638781950659,120.281783324528,116.638781950659
+"582",24,25,0,0,"Non-communicable","White","Male","Mississippi",1993,"East South Central","South","MS",117.250023496243,121.710754292571,126.272930166352,121.710754292571
+"583",24,25,0,1,"All other causes","White","Female","Mississippi",1993,"East South Central","South","MS",82.9106095241338,86.2671248341863,89.9433708692123,86.2671248341863
+"584",24,25,0,1,"Cancers","White","Female","Mississippi",1993,"East South Central","South","MS",154.829050498549,158.265145852867,162.039061476837,158.265145852867
+"585",24,25,0,1,"Cardiovascular","White","Female","Mississippi",1993,"East South Central","South","MS",346.566451071108,354.373442407629,362.616009913765,354.373442407629
+"586",24,25,0,1,"Communicable","White","Female","Mississippi",1993,"East South Central","South","MS",38.8706842662856,41.187948786942,43.3724386147923,41.187948786942
+"587",24,25,0,1,"Injuries","White","Female","Mississippi",1993,"East South Central","South","MS",42.3124356131365,44.2231009959387,46.0336316941224,44.2231009959387
+"588",24,25,0,1,"Non-communicable","White","Female","Mississippi",1993,"East South Central","South","MS",61.9968557109662,64.9431428843085,68.0112459302232,64.9431428843085
+"589",24,25,1,0,"All other causes","Black","Male","Mississippi",1993,"East South Central","South","MS",162.787287800025,170.929515240107,179.543926784484,170.929515240107
+"590",24,25,1,0,"Cancers","Black","Male","Mississippi",1993,"East South Central","South","MS",370.892453645019,383.353813629577,397.877764780606,383.353813629577
+"591",24,25,1,0,"Cardiovascular","Black","Male","Mississippi",1993,"East South Central","South","MS",671.40879487929,690.821953297313,708.342365365931,690.821953297313
+"592",24,25,1,0,"Communicable","Black","Male","Mississippi",1993,"East South Central","South","MS",89.2902047544924,95.2277135331318,102.689156836439,95.2277135331318
+"593",24,25,1,0,"Injuries","Black","Male","Mississippi",1993,"East South Central","South","MS",166.803250852655,173.50270719842,180.964145006043,173.50270719842
+"594",24,25,1,0,"Non-communicable","Black","Male","Mississippi",1993,"East South Central","South","MS",113.653699039946,119.190750006051,125.730037146339,119.190750006051
+"595",24,25,1,1,"All other causes","Black","Female","Mississippi",1993,"East South Central","South","MS",114.081993173616,119.682106939535,125.808927415337,119.682106939535
+"596",24,25,1,1,"Cancers","Black","Female","Mississippi",1993,"East South Central","South","MS",183.25505345999,188.577824118279,194.550768671571,188.577824118279
+"597",24,25,1,1,"Cardiovascular","Black","Female","Mississippi",1993,"East South Central","South","MS",472.488540702781,487.051251853233,500.659161822696,487.051251853233
+"598",24,25,1,1,"Communicable","Black","Female","Mississippi",1993,"East South Central","South","MS",41.6429570758787,45.5083704637214,49.2614217283681,45.5083704637214
+"599",24,25,1,1,"Injuries","Black","Female","Mississippi",1993,"East South Central","South","MS",46.2050571334913,48.8882474279949,52.0169032667221,48.8882474279949
+"600",24,25,1,1,"Non-communicable","Black","Female","Mississippi",1993,"East South Central","South","MS",79.650356582392,83.7356624365203,88.1632675553138,83.7356624365203
+"601",24,26,0,0,"All other causes","White","Male","Mississippi",1994,"East South Central","South","MS",112.161455211396,117.405436031598,122.47059888299,117.405436031598
+"602",24,26,0,0,"Cancers","White","Male","Mississippi",1994,"East South Central","South","MS",277.338400462701,283.944963475222,291.435708063683,283.944963475222
+"603",24,26,0,0,"Cardiovascular","White","Male","Mississippi",1994,"East South Central","South","MS",551.552826731756,564.673682346314,578.896239621524,564.673682346314
+"604",24,26,0,0,"Communicable","White","Male","Mississippi",1994,"East South Central","South","MS",71.4599201105478,76.5618358931284,81.9118438728321,76.5618358931284
+"605",24,26,0,0,"Injuries","White","Male","Mississippi",1994,"East South Central","South","MS",111.360337933719,115.079685127911,118.893987646567,115.079685127911
+"606",24,26,0,0,"Non-communicable","White","Male","Mississippi",1994,"East South Central","South","MS",117.193957282678,122.054763236711,126.584320810869,122.054763236711
+"607",24,26,0,1,"All other causes","White","Female","Mississippi",1994,"East South Central","South","MS",87.1203020219044,90.7102878015416,94.6042641562768,90.7102878015416
+"608",24,26,0,1,"Cancers","White","Female","Mississippi",1994,"East South Central","South","MS",155.033306083133,158.66147867454,162.193330853366,158.66147867454
+"609",24,26,0,1,"Cardiovascular","White","Female","Mississippi",1994,"East South Central","South","MS",347.102093965163,354.463918165487,362.384466915314,354.463918165487
+"610",24,26,0,1,"Communicable","White","Female","Mississippi",1994,"East South Central","South","MS",40.181474780207,42.4787310003303,44.7910667527855,42.4787310003303
+"611",24,26,0,1,"Injuries","White","Female","Mississippi",1994,"East South Central","South","MS",42.5529271905623,44.4021288898504,46.193059333451,44.4021288898504
+"612",24,26,0,1,"Non-communicable","White","Female","Mississippi",1994,"East South Central","South","MS",65.2376900655771,68.2973011417562,71.3197970348675,68.2973011417562
+"613",24,26,1,0,"All other causes","Black","Male","Mississippi",1994,"East South Central","South","MS",158.752271964532,166.855980742693,175.092304922267,166.855980742693
+"614",24,26,1,0,"Cancers","Black","Male","Mississippi",1994,"East South Central","South","MS",373.119287385786,386.93250911093,400.739310840111,386.93250911093
+"615",24,26,1,0,"Cardiovascular","Black","Male","Mississippi",1994,"East South Central","South","MS",667.135741900251,684.629037846177,706.203232679095,684.629037846177
+"616",24,26,1,0,"Communicable","Black","Male","Mississippi",1994,"East South Central","South","MS",89.5965249854488,95.7617082195345,102.73198310917,95.7617082195345
+"617",24,26,1,0,"Injuries","Black","Male","Mississippi",1994,"East South Central","South","MS",161.374909023234,168.660579232726,175.474459268461,168.660579232726
+"618",24,26,1,0,"Non-communicable","Black","Male","Mississippi",1994,"East South Central","South","MS",116.884085321476,122.406346934417,128.994865255122,122.406346934417
+"619",24,26,1,1,"All other causes","Black","Female","Mississippi",1994,"East South Central","South","MS",118.240737059074,123.846897259464,129.84071747497,123.846897259464
+"620",24,26,1,1,"Cancers","Black","Female","Mississippi",1994,"East South Central","South","MS",183.234651817101,189.029091179025,195.011608560878,189.029091179025
+"621",24,26,1,1,"Cardiovascular","Black","Female","Mississippi",1994,"East South Central","South","MS",478.486607288612,493.140134880543,508.230921820809,493.140134880543
+"622",24,26,1,1,"Communicable","Black","Female","Mississippi",1994,"East South Central","South","MS",43.8561387978441,47.4069572500052,51.2320807626038,47.4069572500052
+"623",24,26,1,1,"Injuries","Black","Female","Mississippi",1994,"East South Central","South","MS",46.381303104639,49.0393572784917,52.1342102680424,49.0393572784917
+"624",24,26,1,1,"Non-communicable","Black","Female","Mississippi",1994,"East South Central","South","MS",79.7939633364259,84.2851922037025,88.4137551613953,84.2851922037025
+"625",24,27,0,0,"All other causes","White","Male","Mississippi",1995,"East South Central","South","MS",114.773537256834,119.630528985779,124.90507943558,119.630528985779
+"626",24,27,0,0,"Cancers","White","Male","Mississippi",1995,"East South Central","South","MS",278.481357278287,285.315865578231,291.934861471706,285.315865578231
+"627",24,27,0,0,"Cardiovascular","White","Male","Mississippi",1995,"East South Central","South","MS",549.700755248559,563.437828404711,577.062277104684,563.437828404711
+"628",24,27,0,0,"Communicable","White","Male","Mississippi",1995,"East South Central","South","MS",69.7925611662792,74.5739448879805,79.6368155873023,74.5739448879805
+"629",24,27,0,0,"Injuries","White","Male","Mississippi",1995,"East South Central","South","MS",110.838265644985,114.648929474884,118.349155188079,114.648929474884
+"630",24,27,0,0,"Non-communicable","White","Male","Mississippi",1995,"East South Central","South","MS",120.000110598085,124.68702761936,129.426610858058,124.68702761936
+"631",24,27,0,1,"All other causes","White","Female","Mississippi",1995,"East South Central","South","MS",86.8778478347696,90.651619719749,94.616129808235,90.651619719749
+"632",24,27,0,1,"Cancers","White","Female","Mississippi",1995,"East South Central","South","MS",155.63113247825,159.084747305135,162.548215659892,159.084747305135
+"633",24,27,0,1,"Cardiovascular","White","Female","Mississippi",1995,"East South Central","South","MS",344.061315667977,351.861487139821,360.207389837343,351.861487139821
+"634",24,27,0,1,"Communicable","White","Female","Mississippi",1995,"East South Central","South","MS",39.5481402169957,41.8699389150586,44.2492230716906,41.8699389150586
+"635",24,27,0,1,"Injuries","White","Female","Mississippi",1995,"East South Central","South","MS",43.0878109588668,44.9557147592068,46.7507122066115,44.9557147592068
+"636",24,27,0,1,"Non-communicable","White","Female","Mississippi",1995,"East South Central","South","MS",66.4894051750768,69.3444293652344,72.4931032408782,69.3444293652344
+"637",24,27,1,0,"All other causes","Black","Male","Mississippi",1995,"East South Central","South","MS",159.090086846141,166.891150789349,175.260124692261,166.891150789349
+"638",24,27,1,0,"Cancers","Black","Male","Mississippi",1995,"East South Central","South","MS",371.739997808606,384.128315026685,397.91703341784,384.128315026685
+"639",24,27,1,0,"Cardiovascular","Black","Male","Mississippi",1995,"East South Central","South","MS",652.623983507768,671.591025660764,690.557087805252,671.591025660764
+"640",24,27,1,0,"Communicable","Black","Male","Mississippi",1995,"East South Central","South","MS",92.8290416258883,99.5393149259658,106.852328294852,99.5393149259658
+"641",24,27,1,0,"Injuries","Black","Male","Mississippi",1995,"East South Central","South","MS",155.166943419161,161.93620374221,169.116828172257,161.93620374221
+"642",24,27,1,0,"Non-communicable","Black","Male","Mississippi",1995,"East South Central","South","MS",118.235162582533,124.601560775171,131.335244293014,124.601560775171
+"643",24,27,1,1,"All other causes","Black","Female","Mississippi",1995,"East South Central","South","MS",118.421014350817,124.482501776501,130.489549649854,124.482501776501
+"644",24,27,1,1,"Cancers","Black","Female","Mississippi",1995,"East South Central","South","MS",183.412612093974,189.504408451855,195.446464807125,189.504408451855
+"645",24,27,1,1,"Cardiovascular","Black","Female","Mississippi",1995,"East South Central","South","MS",462.336432997683,476.110812208515,489.434321505769,476.110812208515
+"646",24,27,1,1,"Communicable","Black","Female","Mississippi",1995,"East South Central","South","MS",44.3914204002379,47.6852030255418,51.5615664307296,47.6852030255418
+"647",24,27,1,1,"Injuries","Black","Female","Mississippi",1995,"East South Central","South","MS",45.8434887323982,48.4981507844905,51.3383025506847,48.4981507844905
+"648",24,27,1,1,"Non-communicable","Black","Female","Mississippi",1995,"East South Central","South","MS",81.0235219669727,85.1526961246815,89.552261553036,85.1526961246815
+"649",24,28,0,0,"All other causes","White","Male","Mississippi",1996,"East South Central","South","MS",115.685376366797,121.041282684695,126.586763217746,121.041282684695
+"650",24,28,0,0,"Cancers","White","Male","Mississippi",1996,"East South Central","South","MS",278.813140783705,284.75023731431,291.145652126628,284.75023731431
+"651",24,28,0,0,"Cardiovascular","White","Male","Mississippi",1996,"East South Central","South","MS",533.060471090127,546.257295881102,559.887061073414,546.257295881102
+"652",24,28,0,0,"Communicable","White","Male","Mississippi",1996,"East South Central","South","MS",64.2818930914838,68.9184720631157,73.6669711881485,68.9184720631157
+"653",24,28,0,0,"Injuries","White","Male","Mississippi",1996,"East South Central","South","MS",110.000935106436,113.759712999608,117.60012485034,113.759712999608
+"654",24,28,0,0,"Non-communicable","White","Male","Mississippi",1996,"East South Central","South","MS",123.415651040697,128.160068214808,132.49858826866,128.160068214808
+"655",24,28,0,1,"All other causes","White","Female","Mississippi",1996,"East South Central","South","MS",90.8928795756523,94.3858552633929,98.2636824902386,94.3858552633929
+"656",24,28,0,1,"Cancers","White","Female","Mississippi",1996,"East South Central","South","MS",155.696242122725,159.404947617628,162.98618910843,159.404947617628
+"657",24,28,0,1,"Cardiovascular","White","Female","Mississippi",1996,"East South Central","South","MS",338.87829092999,347.53101281104,354.535628900159,347.53101281104
+"658",24,28,0,1,"Communicable","White","Female","Mississippi",1996,"East South Central","South","MS",40.5222576841341,42.7853736365166,45.1634840428257,42.7853736365166
+"659",24,28,0,1,"Injuries","White","Female","Mississippi",1996,"East South Central","South","MS",43.1242460246443,45.1094549995755,46.9959822857009,45.1094549995755
+"660",24,28,0,1,"Non-communicable","White","Female","Mississippi",1996,"East South Central","South","MS",65.87842248602,69.1843808554221,72.2673088756104,69.1843808554221
+"661",24,28,1,0,"All other causes","Black","Male","Mississippi",1996,"East South Central","South","MS",159.409781703202,167.967156763382,176.697424959146,167.967156763382
+"662",24,28,1,0,"Cancers","Black","Male","Mississippi",1996,"East South Central","South","MS",369.647521463676,381.952068614814,396.72717148162,381.952068614814
+"663",24,28,1,0,"Cardiovascular","Black","Male","Mississippi",1996,"East South Central","South","MS",640.027376331645,657.552433623241,675.99963765886,657.552433623241
+"664",24,28,1,0,"Communicable","Black","Male","Mississippi",1996,"East South Central","South","MS",92.9363251263342,99.4883004038532,106.351797225235,99.4883004038532
+"665",24,28,1,0,"Injuries","Black","Male","Mississippi",1996,"East South Central","South","MS",148.630342737419,155.250740953338,161.68314036246,155.250740953338
+"666",24,28,1,0,"Non-communicable","Black","Male","Mississippi",1996,"East South Central","South","MS",119.300814629636,125.66255561328,132.558120624969,125.66255561328
+"667",24,28,1,1,"All other causes","Black","Female","Mississippi",1996,"East South Central","South","MS",118.853221319804,124.362788460536,130.350535043448,124.362788460536
+"668",24,28,1,1,"Cancers","Black","Female","Mississippi",1996,"East South Central","South","MS",183.773521262201,190.197446252557,196.731604966716,190.197446252557
+"669",24,28,1,1,"Cardiovascular","Black","Female","Mississippi",1996,"East South Central","South","MS",453.534996193029,467.170356256776,481.196272357057,467.170356256776
+"670",24,28,1,1,"Communicable","Black","Female","Mississippi",1996,"East South Central","South","MS",46.1484191555737,50.0077117262745,53.9750920972153,50.0077117262745
+"671",24,28,1,1,"Injuries","Black","Female","Mississippi",1996,"East South Central","South","MS",45.3796966098446,47.9253529485598,50.6175240365102,47.9253529485598
+"672",24,28,1,1,"Non-communicable","Black","Female","Mississippi",1996,"East South Central","South","MS",83.452845407023,87.9429465829222,92.4541221202302,87.9429465829222
+"673",24,29,0,0,"All other causes","White","Male","Mississippi",1997,"East South Central","South","MS",114.572335721721,119.667862487891,125.212700826744,119.667862487891
+"674",24,29,0,0,"Cancers","White","Male","Mississippi",1997,"East South Central","South","MS",277.79028634324,284.385528949079,290.71744771198,284.385528949079
+"675",24,29,0,0,"Cardiovascular","White","Male","Mississippi",1997,"East South Central","South","MS",524.350145068756,537.575312067576,550.50569170325,537.575312067576
+"676",24,29,0,0,"Communicable","White","Male","Mississippi",1997,"East South Central","South","MS",68.4797525827223,73.0036415993684,78.232675324645,73.0036415993684
+"677",24,29,0,0,"Injuries","White","Male","Mississippi",1997,"East South Central","South","MS",111.030063733571,114.714057849083,118.334608559026,114.714057849083
+"678",24,29,0,0,"Non-communicable","White","Male","Mississippi",1997,"East South Central","South","MS",129.352077051408,133.95622898817,138.468785910933,133.95622898817
+"679",24,29,0,1,"All other causes","White","Female","Mississippi",1997,"East South Central","South","MS",93.4324982266179,96.9324642673944,100.430490526876,96.9324642673944
+"680",24,29,0,1,"Cancers","White","Female","Mississippi",1997,"East South Central","South","MS",156.130893842351,159.658886196114,163.215333341729,159.658886196114
+"681",24,29,0,1,"Cardiovascular","White","Female","Mississippi",1997,"East South Central","South","MS",339.137806606911,346.960633561972,354.254079447796,346.960633561972
+"682",24,29,0,1,"Communicable","White","Female","Mississippi",1997,"East South Central","South","MS",41.3605416440902,43.9145410165353,46.1733401520205,43.9145410165353
+"683",24,29,0,1,"Injuries","White","Female","Mississippi",1997,"East South Central","South","MS",43.4396402405851,45.3426724788186,47.3098052780403,45.3426724788186
+"684",24,29,0,1,"Non-communicable","White","Female","Mississippi",1997,"East South Central","South","MS",70.8078582115007,74.0060989378651,77.1941780023173,74.0060989378651
+"685",24,29,1,0,"All other causes","Black","Male","Mississippi",1997,"East South Central","South","MS",162.077715549012,170.608688054742,178.645651816574,170.608688054742
+"686",24,29,1,0,"Cancers","Black","Male","Mississippi",1997,"East South Central","South","MS",367.632205246168,380.58421114542,393.794682350319,380.58421114542
+"687",24,29,1,0,"Cardiovascular","Black","Male","Mississippi",1997,"East South Central","South","MS",632.537492191488,651.284553701242,669.457501742068,651.284553701242
+"688",24,29,1,0,"Communicable","Black","Male","Mississippi",1997,"East South Central","South","MS",94.2368692264714,101.517031484211,108.761832709272,101.517031484211
+"689",24,29,1,0,"Injuries","Black","Male","Mississippi",1997,"East South Central","South","MS",145.604868269729,151.30819159897,157.506177272542,151.30819159897
+"690",24,29,1,0,"Non-communicable","Black","Male","Mississippi",1997,"East South Central","South","MS",122.288543652891,129.204773036542,135.948820496818,129.204773036542
+"691",24,29,1,1,"All other causes","Black","Female","Mississippi",1997,"East South Central","South","MS",118.761635363366,124.713360197771,130.819511660938,124.713360197771
+"692",24,29,1,1,"Cancers","Black","Female","Mississippi",1997,"East South Central","South","MS",185.751272223577,191.175294192457,197.521575524877,191.175294192457
+"693",24,29,1,1,"Cardiovascular","Black","Female","Mississippi",1997,"East South Central","South","MS",456.267175967128,468.764030478071,482.474372126371,468.764030478071
+"694",24,29,1,1,"Communicable","Black","Female","Mississippi",1997,"East South Central","South","MS",48.7262580820072,52.2778443592463,55.9910386462671,52.2778443592463
+"695",24,29,1,1,"Injuries","Black","Female","Mississippi",1997,"East South Central","South","MS",45.4008338542954,47.8955707371416,50.6228400548008,47.8955707371416
+"696",24,29,1,1,"Non-communicable","Black","Female","Mississippi",1997,"East South Central","South","MS",85.7474780799573,90.4113092720402,94.7567806528845,90.4113092720402
+"697",24,30,0,0,"All other causes","White","Male","Mississippi",1998,"East South Central","South","MS",118.222010082166,123.516316790215,128.884487317824,123.516316790215
+"698",24,30,0,0,"Cancers","White","Male","Mississippi",1998,"East South Central","South","MS",279.066091677947,285.750665860693,291.948643126134,285.750665860693
+"699",24,30,0,0,"Cardiovascular","White","Male","Mississippi",1998,"East South Central","South","MS",510.469109798862,522.760408253401,535.239506940591,522.760408253401
+"700",24,30,0,0,"Communicable","White","Male","Mississippi",1998,"East South Central","South","MS",67.0020943437379,71.7919509983027,76.8343867631208,71.7919509983027
+"701",24,30,0,0,"Injuries","White","Male","Mississippi",1998,"East South Central","South","MS",111.411199632446,115.075043705074,118.910118998612,115.075043705074
+"702",24,30,0,0,"Non-communicable","White","Male","Mississippi",1998,"East South Central","South","MS",132.407603936088,137.654446061711,142.639602572029,137.654446061711
+"703",24,30,0,1,"All other causes","White","Female","Mississippi",1998,"East South Central","South","MS",95.2336754534953,98.7441607459256,102.445974802092,98.7441607459256
+"704",24,30,0,1,"Cancers","White","Female","Mississippi",1998,"East South Central","South","MS",156.353916575386,159.837909827092,163.518655570914,159.837909827092
+"705",24,30,0,1,"Cardiovascular","White","Female","Mississippi",1998,"East South Central","South","MS",333.317389199601,339.771222839717,347.420882595663,339.771222839717
+"706",24,30,0,1,"Communicable","White","Female","Mississippi",1998,"East South Central","South","MS",43.6522015698275,45.8983181174702,48.4390755990221,45.8983181174702
+"707",24,30,0,1,"Injuries","White","Female","Mississippi",1998,"East South Central","South","MS",43.8936033814085,45.906596773552,47.767666623644,45.906596773552
+"708",24,30,0,1,"Non-communicable","White","Female","Mississippi",1998,"East South Central","South","MS",75.3662058534319,78.7139514804927,82.1879900721349,78.7139514804927
+"709",24,30,1,0,"All other causes","Black","Male","Mississippi",1998,"East South Central","South","MS",162.843551932256,171.726226155557,180.063245685716,171.726226155557
+"710",24,30,1,0,"Cancers","Black","Male","Mississippi",1998,"East South Central","South","MS",365.726411830364,379.136289101855,392.026144774835,379.136289101855
+"711",24,30,1,0,"Cardiovascular","Black","Male","Mississippi",1998,"East South Central","South","MS",621.184627201273,639.284138598758,657.155255468658,639.284138598758
+"712",24,30,1,0,"Communicable","Black","Male","Mississippi",1998,"East South Central","South","MS",95.8822368481277,102.94571279717,110.32515838148,102.94571279717
+"713",24,30,1,0,"Injuries","Black","Male","Mississippi",1998,"East South Central","South","MS",141.291856536949,147.070407365652,152.776139999081,147.070407365652
+"714",24,30,1,0,"Non-communicable","Black","Male","Mississippi",1998,"East South Central","South","MS",126.721119974857,133.360563076087,140.600127437587,133.360563076087
+"715",24,30,1,1,"All other causes","Black","Female","Mississippi",1998,"East South Central","South","MS",124.281065341973,130.547814024833,136.872093563304,130.547814024833
+"716",24,30,1,1,"Cancers","Black","Female","Mississippi",1998,"East South Central","South","MS",186.10920181757,192.099287181038,198.256631846293,192.099287181038
+"717",24,30,1,1,"Cardiovascular","Black","Female","Mississippi",1998,"East South Central","South","MS",448.415915533487,461.267901820273,476.400682157685,461.267901820273
+"718",24,30,1,1,"Communicable","Black","Female","Mississippi",1998,"East South Central","South","MS",49.7793683065514,53.6670779722653,57.6685037645198,53.6670779722653
+"719",24,30,1,1,"Injuries","Black","Female","Mississippi",1998,"East South Central","South","MS",43.8876350562944,46.7628554773429,49.4448360224253,46.7628554773429
+"720",24,30,1,1,"Non-communicable","Black","Female","Mississippi",1998,"East South Central","South","MS",91.607443087104,96.2640107984527,100.876351051036,96.2640107984527
+"721",24,31,0,0,"All other causes","White","Male","Mississippi",1999,"East South Central","South","MS",121.832959935443,126.831510219125,132.123934493709,126.831510219125
+"722",24,31,0,0,"Cancers","White","Male","Mississippi",1999,"East South Central","South","MS",278.434989726647,284.455044634947,291.073235841196,284.455044634947
+"723",24,31,0,0,"Cardiovascular","White","Male","Mississippi",1999,"East South Central","South","MS",494.976675257154,506.888265045836,518.785248923734,506.888265045836
+"724",24,31,0,0,"Communicable","White","Male","Mississippi",1999,"East South Central","South","MS",61.2273928179525,65.4617165630784,70.4780448584122,65.4617165630784
+"725",24,31,0,0,"Injuries","White","Male","Mississippi",1999,"East South Central","South","MS",111.22829349231,114.711458336768,118.626709384365,114.711458336768
+"726",24,31,0,0,"Non-communicable","White","Male","Mississippi",1999,"East South Central","South","MS",137.48973084323,142.800291111129,147.841962732237,142.800291111129
+"727",24,31,0,1,"All other causes","White","Female","Mississippi",1999,"East South Central","South","MS",94.7173785284465,98.6653013082784,102.262351800588,98.6653013082784
+"728",24,31,0,1,"Cancers","White","Female","Mississippi",1999,"East South Central","South","MS",157.633089425153,161.17852978256,164.813451428065,161.17852978256
+"729",24,31,0,1,"Cardiovascular","White","Female","Mississippi",1999,"East South Central","South","MS",332.020705647857,339.409039067439,346.983669015265,339.409039067439
+"730",24,31,0,1,"Communicable","White","Female","Mississippi",1999,"East South Central","South","MS",41.3684878841428,43.5558683537462,45.9139210767784,43.5558683537462
+"731",24,31,0,1,"Injuries","White","Female","Mississippi",1999,"East South Central","South","MS",43.9949218380057,45.9350896087629,47.8632410918155,45.9350896087629
+"732",24,31,0,1,"Non-communicable","White","Female","Mississippi",1999,"East South Central","South","MS",85.5533189680275,89.0857122538594,92.5236357103704,89.0857122538594
+"733",24,31,1,0,"All other causes","Black","Male","Mississippi",1999,"East South Central","South","MS",164.551724519293,172.804145121873,182.304353211954,172.804145121873
+"734",24,31,1,0,"Cancers","Black","Male","Mississippi",1999,"East South Central","South","MS",360.607255567455,373.515467403917,386.702645854972,373.515467403917
+"735",24,31,1,0,"Cardiovascular","Black","Male","Mississippi",1999,"East South Central","South","MS",600.387226005349,618.897034445647,636.536710412103,618.897034445647
+"736",24,31,1,0,"Communicable","Black","Male","Mississippi",1999,"East South Central","South","MS",94.5217966691229,101.405159994162,108.502815932082,101.405159994162
+"737",24,31,1,0,"Injuries","Black","Male","Mississippi",1999,"East South Central","South","MS",136.893545319822,142.570673437347,148.188847148735,142.570673437347
+"738",24,31,1,0,"Non-communicable","Black","Male","Mississippi",1999,"East South Central","South","MS",135.075705945907,141.944958718194,149.581482887683,141.944958718194
+"739",24,31,1,1,"All other causes","Black","Female","Mississippi",1999,"East South Central","South","MS",124.949033633341,130.736746490772,136.783061569619,130.736746490772
+"740",24,31,1,1,"Cancers","Black","Female","Mississippi",1999,"East South Central","South","MS",187.114266518245,192.558158629023,198.761267162524,192.558158629023
+"741",24,31,1,1,"Cardiovascular","Black","Female","Mississippi",1999,"East South Central","South","MS",441.860392105599,454.193257257829,467.369037691028,454.193257257829
+"742",24,31,1,1,"Communicable","Black","Female","Mississippi",1999,"East South Central","South","MS",51.0786435065019,55.0010392081257,58.9603802130552,55.0010392081257
+"743",24,31,1,1,"Injuries","Black","Female","Mississippi",1999,"East South Central","South","MS",42.5039784269347,45.3283106535729,47.7876243556965,45.3283106535729
+"744",24,31,1,1,"Non-communicable","Black","Female","Mississippi",1999,"East South Central","South","MS",98.3210127452586,103.111109147797,108.230417689648,103.111109147797
+"745",24,32,0,0,"All other causes","White","Male","Mississippi",2000,"East South Central","South","MS",125.750434843029,131.427530870577,136.737902000103,131.427530870577
+"746",24,32,0,0,"Cancers","White","Male","Mississippi",2000,"East South Central","South","MS",274.59320621878,280.600784717703,287.130285797314,280.600784717703
+"747",24,32,0,0,"Cardiovascular","White","Male","Mississippi",2000,"East South Central","South","MS",478.311037699438,489.295853114122,500.744203613076,489.295853114122
+"748",24,32,0,0,"Communicable","White","Male","Mississippi",2000,"East South Central","South","MS",61.6149064794676,66.0272262588721,70.7111335856098,66.0272262588721
+"749",24,32,0,0,"Injuries","White","Male","Mississippi",2000,"East South Central","South","MS",111.78109621171,115.262678532921,119.031038496007,115.262678532921
+"750",24,32,0,0,"Non-communicable","White","Male","Mississippi",2000,"East South Central","South","MS",142.883814424289,147.869208706557,153.015305248845,147.869208706557
+"751",24,32,0,1,"All other causes","White","Female","Mississippi",2000,"East South Central","South","MS",98.9539760616834,102.680528027273,106.512419876041,102.680528027273
+"752",24,32,0,1,"Cancers","White","Female","Mississippi",2000,"East South Central","South","MS",157.532415585948,161.443376669355,164.952503503709,161.443376669355
+"753",24,32,0,1,"Cardiovascular","White","Female","Mississippi",2000,"East South Central","South","MS",333.583274434515,340.075253463175,347.117287473702,340.075253463175
+"754",24,32,0,1,"Communicable","White","Female","Mississippi",2000,"East South Central","South","MS",41.8627506909039,44.1582754854422,46.411042932423,44.1582754854422
+"755",24,32,0,1,"Injuries","White","Female","Mississippi",2000,"East South Central","South","MS",45.0061357401283,46.9456211133987,48.9044937288275,46.9456211133987
+"756",24,32,0,1,"Non-communicable","White","Female","Mississippi",2000,"East South Central","South","MS",92.4457632577998,96.0845887955723,99.854758269076,96.0845887955723
+"757",24,32,1,0,"All other causes","Black","Male","Mississippi",2000,"East South Central","South","MS",165.644825611791,173.503459119386,182.405654562656,173.503459119386
+"758",24,32,1,0,"Cancers","Black","Male","Mississippi",2000,"East South Central","South","MS",357.047933578778,369.100439887371,382.553067357401,369.100439887371
+"759",24,32,1,0,"Cardiovascular","Black","Male","Mississippi",2000,"East South Central","South","MS",586.215109328002,603.725375350933,620.435907851298,603.725375350933
+"760",24,32,1,0,"Communicable","Black","Male","Mississippi",2000,"East South Central","South","MS",89.7997091198911,96.7552717691514,104.407282316095,96.7552717691514
+"761",24,32,1,0,"Injuries","Black","Male","Mississippi",2000,"East South Central","South","MS",132.326381146114,137.493122708832,143.448159861785,137.493122708832
+"762",24,32,1,0,"Non-communicable","Black","Male","Mississippi",2000,"East South Central","South","MS",138.889617761041,145.998485450526,153.85456332328,145.998485450526
+"763",24,32,1,1,"All other causes","Black","Female","Mississippi",2000,"East South Central","South","MS",127.669669445264,133.522434939737,139.861080755382,133.522434939737
+"764",24,32,1,1,"Cancers","Black","Female","Mississippi",2000,"East South Central","South","MS",185.537963267418,191.270865664147,197.401861926025,191.270865664147
+"765",24,32,1,1,"Cardiovascular","Black","Female","Mississippi",2000,"East South Central","South","MS",441.815547321137,455.08717672994,468.354251109711,455.08717672994
+"766",24,32,1,1,"Communicable","Black","Female","Mississippi",2000,"East South Central","South","MS",54.5788239499518,58.6749105933051,62.8225057047426,58.6749105933051
+"767",24,32,1,1,"Injuries","Black","Female","Mississippi",2000,"East South Central","South","MS",40.9376404250936,43.53168088276,46.1087748086851,43.53168088276
+"768",24,32,1,1,"Non-communicable","Black","Female","Mississippi",2000,"East South Central","South","MS",103.43767585902,108.462316551213,113.527286016537,108.462316551213
+"769",24,33,0,0,"All other causes","White","Male","Mississippi",2001,"East South Central","South","MS",128.94610793465,134.866328230125,140.435641017559,134.866328230125
+"770",24,33,0,0,"Cancers","White","Male","Mississippi",2001,"East South Central","South","MS",269.246593727561,275.285155487602,282.124246470289,275.285155487602
+"771",24,33,0,0,"Cardiovascular","White","Male","Mississippi",2001,"East South Central","South","MS",463.190288423398,474.310521231174,486.816514948525,474.310521231174
+"772",24,33,0,0,"Communicable","White","Male","Mississippi",2001,"East South Central","South","MS",58.2403449141048,62.5323794118695,66.7890275214635,62.5323794118695
+"773",24,33,0,0,"Injuries","White","Male","Mississippi",2001,"East South Central","South","MS",112.989773118655,116.681508063501,120.439435873172,116.681508063501
+"774",24,33,0,0,"Non-communicable","White","Male","Mississippi",2001,"East South Central","South","MS",145.505885174905,150.424952215503,155.324395856657,150.424952215503
+"775",24,33,0,1,"All other causes","White","Female","Mississippi",2001,"East South Central","South","MS",103.066100641573,106.709448226155,110.701347194843,106.709448226155
+"776",24,33,0,1,"Cancers","White","Female","Mississippi",2001,"East South Central","South","MS",155.576294406278,159.164366029226,162.514796651891,159.164366029226
+"777",24,33,0,1,"Cardiovascular","White","Female","Mississippi",2001,"East South Central","South","MS",330.989112969941,338.165491240623,345.61287146153,338.165491240623
+"778",24,33,0,1,"Communicable","White","Female","Mississippi",2001,"East South Central","South","MS",41.0293616051075,43.2337803691563,45.403113615547,43.2337803691563
+"779",24,33,0,1,"Injuries","White","Female","Mississippi",2001,"East South Central","South","MS",45.4880850389517,47.5300616192211,49.4989791893219,47.5300616192211
+"780",24,33,0,1,"Non-communicable","White","Female","Mississippi",2001,"East South Central","South","MS",96.5863850890121,100.250335017823,104.024504351382,100.250335017823
+"781",24,33,1,0,"All other causes","Black","Male","Mississippi",2001,"East South Central","South","MS",166.377176265744,174.823150245937,184.070736735082,174.823150245937
+"782",24,33,1,0,"Cancers","Black","Male","Mississippi",2001,"East South Central","South","MS",354.976279260291,367.151425520335,379.284376445725,367.151425520335
+"783",24,33,1,0,"Cardiovascular","Black","Male","Mississippi",2001,"East South Central","South","MS",576.570470158083,594.00960437072,612.050841416326,594.00960437072
+"784",24,33,1,0,"Communicable","Black","Male","Mississippi",2001,"East South Central","South","MS",90.6367003830471,97.9690457927017,105.16401971471,97.9690457927017
+"785",24,33,1,0,"Injuries","Black","Male","Mississippi",2001,"East South Central","South","MS",129.335820125449,134.722821987247,140.455607252026,134.722821987247
+"786",24,33,1,0,"Non-communicable","Black","Male","Mississippi",2001,"East South Central","South","MS",143.569967449695,151.507539572394,159.512860714997,151.507539572394
+"787",24,33,1,1,"All other causes","Black","Female","Mississippi",2001,"East South Central","South","MS",132.388940923352,138.526409933116,144.815366437927,138.526409933116
+"788",24,33,1,1,"Cancers","Black","Female","Mississippi",2001,"East South Central","South","MS",185.278424118937,191.298238053507,196.949940213875,191.298238053507
+"789",24,33,1,1,"Cardiovascular","Black","Female","Mississippi",2001,"East South Central","South","MS",439.983564285684,452.847391809592,466.577975482781,452.847391809592
+"790",24,33,1,1,"Communicable","Black","Female","Mississippi",2001,"East South Central","South","MS",55.2865751657339,59.6145017492441,64.3679002524914,59.6145017492441
+"791",24,33,1,1,"Injuries","Black","Female","Mississippi",2001,"East South Central","South","MS",39.7804593663451,42.3776362006293,44.8355881385441,42.3776362006293
+"792",24,33,1,1,"Non-communicable","Black","Female","Mississippi",2001,"East South Central","South","MS",107.465075658437,112.689882965452,117.811634065249,112.689882965452
+"793",24,34,0,0,"All other causes","White","Male","Mississippi",2002,"East South Central","South","MS",135.047797633056,141.220744995182,147.145078769509,141.220744995182
+"794",24,34,0,0,"Cancers","White","Male","Mississippi",2002,"East South Central","South","MS",263.306572608338,269.339256597161,275.791162408954,269.339256597161
+"795",24,34,0,0,"Cardiovascular","White","Male","Mississippi",2002,"East South Central","South","MS",451.122040659593,461.643143735045,473.288950427587,461.643143735045
+"796",24,34,0,0,"Communicable","White","Male","Mississippi",2002,"East South Central","South","MS",55.8374615690081,59.9781840848227,64.3325150313681,59.9781840848227
+"797",24,34,0,0,"Injuries","White","Male","Mississippi",2002,"East South Central","South","MS",114.908132804305,118.433645078821,122.202654817914,118.433645078821
+"798",24,34,0,0,"Non-communicable","White","Male","Mississippi",2002,"East South Central","South","MS",146.997289478534,152.27975722321,157.766318976329,152.27975722321
+"799",24,34,0,1,"All other causes","White","Female","Mississippi",2002,"East South Central","South","MS",108.273202717893,112.488279908736,116.826035047892,112.488279908736
+"800",24,34,0,1,"Cancers","White","Female","Mississippi",2002,"East South Central","South","MS",155.039823790753,158.494358056643,162.257066957675,158.494358056643
+"801",24,34,0,1,"Cardiovascular","White","Female","Mississippi",2002,"East South Central","South","MS",321.500233437462,328.72253482902,336.234383697339,328.72253482902
+"802",24,34,0,1,"Communicable","White","Female","Mississippi",2002,"East South Central","South","MS",41.9468224627987,44.3055213895481,46.8367060664322,44.3055213895481
+"803",24,34,0,1,"Injuries","White","Female","Mississippi",2002,"East South Central","South","MS",46.413230710154,48.4260258468864,50.4956659651412,48.4260258468864
+"804",24,34,0,1,"Non-communicable","White","Female","Mississippi",2002,"East South Central","South","MS",101.97131515904,106.059467828253,110.294838236335,106.059467828253
+"805",24,34,1,0,"All other causes","Black","Male","Mississippi",2002,"East South Central","South","MS",172.081080209988,180.768303322896,189.24208281439,180.768303322896
+"806",24,34,1,0,"Cancers","Black","Male","Mississippi",2002,"East South Central","South","MS",353.094189222405,365.698032391364,378.632516379599,365.698032391364
+"807",24,34,1,0,"Cardiovascular","Black","Male","Mississippi",2002,"East South Central","South","MS",576.899674895526,596.215224175156,614.020710405249,596.215224175156
+"808",24,34,1,0,"Communicable","Black","Male","Mississippi",2002,"East South Central","South","MS",91.1712666044607,98.1802119985446,105.568452279721,98.1802119985446
+"809",24,34,1,0,"Injuries","Black","Male","Mississippi",2002,"East South Central","South","MS",126.767766701799,132.120651068627,137.666304104753,132.120651068627
+"810",24,34,1,0,"Non-communicable","Black","Male","Mississippi",2002,"East South Central","South","MS",148.100103207215,156.072977791826,164.036164425846,156.072977791826
+"811",24,34,1,1,"All other causes","Black","Female","Mississippi",2002,"East South Central","South","MS",136.814202416002,143.102384299341,150.103441435184,143.102384299341
+"812",24,34,1,1,"Cancers","Black","Female","Mississippi",2002,"East South Central","South","MS",185.698436856168,191.662962808741,197.680861558723,191.662962808741
+"813",24,34,1,1,"Cardiovascular","Black","Female","Mississippi",2002,"East South Central","South","MS",430.314292476741,442.815027609696,456.556979114625,442.815027609696
+"814",24,34,1,1,"Communicable","Black","Female","Mississippi",2002,"East South Central","South","MS",57.9276594140817,62.3475313245047,66.7390952293317,62.3475313245047
+"815",24,34,1,1,"Injuries","Black","Female","Mississippi",2002,"East South Central","South","MS",39.3788338317418,41.9730971618796,44.5023737691773,41.9730971618796
+"816",24,34,1,1,"Non-communicable","Black","Female","Mississippi",2002,"East South Central","South","MS",109.634183310309,115.106244248099,120.546933560547,115.106244248099
+"817",24,35,0,0,"All other causes","White","Male","Mississippi",2003,"East South Central","South","MS",135.86930969585,141.628283723813,147.481164573465,141.628283723813
+"818",24,35,0,0,"Cancers","White","Male","Mississippi",2003,"East South Central","South","MS",258.000024320189,263.692232560709,269.581675177394,263.692232560709
+"819",24,35,0,0,"Cardiovascular","White","Male","Mississippi",2003,"East South Central","South","MS",437.207430034036,447.306451714118,458.430981810662,447.306451714118
+"820",24,35,0,0,"Communicable","White","Male","Mississippi",2003,"East South Central","South","MS",56.7453901754589,60.8033819488444,65.2753211205144,60.8033819488444
+"821",24,35,0,0,"Injuries","White","Male","Mississippi",2003,"East South Central","South","MS",116.760785939442,120.514299443092,124.260947666216,120.514299443092
+"822",24,35,0,0,"Non-communicable","White","Male","Mississippi",2003,"East South Central","South","MS",149.953351299185,155.119266828688,160.520276954742,155.119266828688
+"823",24,35,0,1,"All other causes","White","Female","Mississippi",2003,"East South Central","South","MS",113.293555060792,117.394125949744,121.492953051443,117.394125949744
+"824",24,35,0,1,"Cancers","White","Female","Mississippi",2003,"East South Central","South","MS",153.805602521223,157.28084344156,160.824916058883,157.28084344156
+"825",24,35,0,1,"Cardiovascular","White","Female","Mississippi",2003,"East South Central","South","MS",308.48216395996,315.34762224973,322.04746770086,315.34762224973
+"826",24,35,0,1,"Communicable","White","Female","Mississippi",2003,"East South Central","South","MS",40.4858489835871,42.5524718293666,44.8976382034892,42.5524718293666
+"827",24,35,0,1,"Injuries","White","Female","Mississippi",2003,"East South Central","South","MS",47.6645441852011,49.7038576793045,51.8680634985866,49.7038576793045
+"828",24,35,0,1,"Non-communicable","White","Female","Mississippi",2003,"East South Central","South","MS",105.165064879653,109.198777337026,113.435196544525,109.198777337026
+"829",24,35,1,0,"All other causes","Black","Male","Mississippi",2003,"East South Central","South","MS",177.200450538176,186.927731425406,196.454691232256,186.927731425406
+"830",24,35,1,0,"Cancers","Black","Male","Mississippi",2003,"East South Central","South","MS",346.923173982086,359.281651776311,373.004924608078,359.281651776311
+"831",24,35,1,0,"Cardiovascular","Black","Male","Mississippi",2003,"East South Central","South","MS",568.960020774158,586.203208785832,603.420734503965,586.203208785832
+"832",24,35,1,0,"Communicable","Black","Male","Mississippi",2003,"East South Central","South","MS",88.5517927200717,95.961236151956,103.436941822923,95.961236151956
+"833",24,35,1,0,"Injuries","Black","Male","Mississippi",2003,"East South Central","South","MS",123.662165180643,129.162456566668,134.862219992865,129.162456566668
+"834",24,35,1,0,"Non-communicable","Black","Male","Mississippi",2003,"East South Central","South","MS",154.243466683626,162.502340623639,170.990864046075,162.502340623639
+"835",24,35,1,1,"All other causes","Black","Female","Mississippi",2003,"East South Central","South","MS",138.862528766429,145.064126677585,151.852266660569,145.064126677585
+"836",24,35,1,1,"Cancers","Black","Female","Mississippi",2003,"East South Central","South","MS",184.863853105442,190.592871790565,196.615888592259,190.592871790565
+"837",24,35,1,1,"Cardiovascular","Black","Female","Mississippi",2003,"East South Central","South","MS",404.098302512289,417.360216625502,430.807328161656,417.360216625502
+"838",24,35,1,1,"Communicable","Black","Female","Mississippi",2003,"East South Central","South","MS",56.7770683552035,60.8140918803115,65.6494504334509,60.8140918803115
+"839",24,35,1,1,"Injuries","Black","Female","Mississippi",2003,"East South Central","South","MS",38.8124907004787,41.3528507142768,43.8508210776407,41.3528507142768
+"840",24,35,1,1,"Non-communicable","Black","Female","Mississippi",2003,"East South Central","South","MS",112.097082257402,117.370246748448,122.983257307499,117.370246748448
+"841",24,36,0,0,"All other causes","White","Male","Mississippi",2004,"East South Central","South","MS",139.722605503101,145.471523655904,151.867714639686,145.471523655904
+"842",24,36,0,0,"Cancers","White","Male","Mississippi",2004,"East South Central","South","MS",253.059199268263,259.315750023362,265.135387380992,259.315750023362
+"843",24,36,0,0,"Cardiovascular","White","Male","Mississippi",2004,"East South Central","South","MS",423.63186786948,434.580939222839,444.578257222163,434.580939222839
+"844",24,36,0,0,"Communicable","White","Male","Mississippi",2004,"East South Central","South","MS",53.7467363026597,57.2931155339044,61.3870897419497,57.2931155339044
+"845",24,36,0,0,"Injuries","White","Male","Mississippi",2004,"East South Central","South","MS",119.707028898012,123.495042696749,127.328394729354,123.495042696749
+"846",24,36,0,0,"Non-communicable","White","Male","Mississippi",2004,"East South Central","South","MS",150.987655906993,155.892744251107,161.316374261563,155.892744251107
+"847",24,36,0,1,"All other causes","White","Female","Mississippi",2004,"East South Central","South","MS",115.004328876419,119.363906015368,123.695458453352,119.363906015368
+"848",24,36,0,1,"Cancers","White","Female","Mississippi",2004,"East South Central","South","MS",153.562925517263,156.891667238291,160.659383599059,156.891667238291
+"849",24,36,0,1,"Cardiovascular","White","Female","Mississippi",2004,"East South Central","South","MS",291.495369136506,297.914081357577,304.777680087836,297.914081357577
+"850",24,36,0,1,"Communicable","White","Female","Mississippi",2004,"East South Central","South","MS",38.600918311624,40.6138980549789,42.8252939386162,40.6138980549789
+"851",24,36,0,1,"Injuries","White","Female","Mississippi",2004,"East South Central","South","MS",48.3141767436235,50.3985200320018,52.6924895443177,50.3985200320018
+"852",24,36,0,1,"Non-communicable","White","Female","Mississippi",2004,"East South Central","South","MS",107.408185308778,111.376899078637,115.804077062863,111.376899078637
+"853",24,36,1,0,"All other causes","Black","Male","Mississippi",2004,"East South Central","South","MS",182.585244115556,192.411107541807,202.624820614901,192.411107541807
+"854",24,36,1,0,"Cancers","Black","Male","Mississippi",2004,"East South Central","South","MS",341.369593745,352.853596775965,365.857919796314,352.853596775965
+"855",24,36,1,0,"Cardiovascular","Black","Male","Mississippi",2004,"East South Central","South","MS",547.296313838608,564.203541492947,580.854159343146,564.203541492947
+"856",24,36,1,0,"Communicable","Black","Male","Mississippi",2004,"East South Central","South","MS",86.7248814274125,93.3481535594809,100.780816113103,93.3481535594809
+"857",24,36,1,0,"Injuries","Black","Male","Mississippi",2004,"East South Central","South","MS",122.620129084107,127.915055489208,133.291441295369,127.915055489208
+"858",24,36,1,0,"Non-communicable","Black","Male","Mississippi",2004,"East South Central","South","MS",155.804995409112,164.218445059919,172.458795053868,164.218445059919
+"859",24,36,1,1,"All other causes","Black","Female","Mississippi",2004,"East South Central","South","MS",137.801947655281,144.802003306187,151.796705550594,144.802003306187
+"860",24,36,1,1,"Cancers","Black","Female","Mississippi",2004,"East South Central","South","MS",184.129418788134,189.630222673084,195.027482927834,189.630222673084
+"861",24,36,1,1,"Cardiovascular","Black","Female","Mississippi",2004,"East South Central","South","MS",387.59225938781,399.80081363103,411.240885787776,399.80081363103
+"862",24,36,1,1,"Communicable","Black","Female","Mississippi",2004,"East South Central","South","MS",54.7886036937468,58.7162009356124,62.7994550573377,58.7162009356124
+"863",24,36,1,1,"Injuries","Black","Female","Mississippi",2004,"East South Central","South","MS",38.5792246126098,40.9997887193232,43.3103091640411,40.9997887193232
+"864",24,36,1,1,"Non-communicable","Black","Female","Mississippi",2004,"East South Central","South","MS",114.425270968408,120.174735808356,126.051195619362,120.174735808356
+"865",24,37,0,0,"All other causes","White","Male","Mississippi",2005,"East South Central","South","MS",141.83473130688,147.643627168256,153.449404644641,147.643627168256
+"866",24,37,0,0,"Cancers","White","Male","Mississippi",2005,"East South Central","South","MS",250.852488045348,256.708250876869,262.751557418037,256.708250876869
+"867",24,37,0,0,"Cardiovascular","White","Male","Mississippi",2005,"East South Central","South","MS",410.761189002809,420.562846433977,431.057115586022,420.562846433977
+"868",24,37,0,0,"Communicable","White","Male","Mississippi",2005,"East South Central","South","MS",51.0459198378698,54.4603535900396,58.4731486646905,54.4603535900396
+"869",24,37,0,0,"Injuries","White","Male","Mississippi",2005,"East South Central","South","MS",122.719440441561,126.423035566819,130.569392847846,126.423035566819
+"870",24,37,0,0,"Non-communicable","White","Male","Mississippi",2005,"East South Central","South","MS",153.450724593065,158.477640880196,164.348950633037,158.477640880196
+"871",24,37,0,1,"All other causes","White","Female","Mississippi",2005,"East South Central","South","MS",120.458095939966,124.715357367376,129.154337330024,124.715357367376
+"872",24,37,0,1,"Cancers","White","Female","Mississippi",2005,"East South Central","South","MS",152.849408862369,156.379003042991,160.128496231338,156.379003042991
+"873",24,37,0,1,"Cardiovascular","White","Female","Mississippi",2005,"East South Central","South","MS",292.117658955017,298.684537724683,305.464387091562,298.684537724683
+"874",24,37,0,1,"Communicable","White","Female","Mississippi",2005,"East South Central","South","MS",38.3098875469127,40.5198648916894,42.6085732404436,40.5198648916894
+"875",24,37,0,1,"Injuries","White","Female","Mississippi",2005,"East South Central","South","MS",50.0417356140922,52.058856686282,54.1923613295386,52.058856686282
+"876",24,37,0,1,"Non-communicable","White","Female","Mississippi",2005,"East South Central","South","MS",110.644935630583,114.938224667975,119.278453267661,114.938224667975
+"877",24,37,1,0,"All other causes","Black","Male","Mississippi",2005,"East South Central","South","MS",188.711029435467,197.92126714805,208.695554145779,197.92126714805
+"878",24,37,1,0,"Cancers","Black","Male","Mississippi",2005,"East South Central","South","MS",339.752435904296,351.615720580133,363.965222335423,351.615720580133
+"879",24,37,1,0,"Cardiovascular","Black","Male","Mississippi",2005,"East South Central","South","MS",538.842330919339,556.367782944935,574.248756566294,556.367782944935
+"880",24,37,1,0,"Communicable","Black","Male","Mississippi",2005,"East South Central","South","MS",87.1424694271307,93.9770634392762,101.890766582755,93.9770634392762
+"881",24,37,1,0,"Injuries","Black","Male","Mississippi",2005,"East South Central","South","MS",121.000880864725,126.822262939652,132.325292638158,126.822262939652
+"882",24,37,1,0,"Non-communicable","Black","Male","Mississippi",2005,"East South Central","South","MS",160.798970290253,169.176347460008,177.451810030717,169.176347460008
+"883",24,37,1,1,"All other causes","Black","Female","Mississippi",2005,"East South Central","South","MS",145.146693017787,151.697230083667,159.253784057177,151.697230083667
+"884",24,37,1,1,"Cancers","Black","Female","Mississippi",2005,"East South Central","South","MS",181.85959895361,187.570087424599,193.47694174186,187.570087424599
+"885",24,37,1,1,"Cardiovascular","Black","Female","Mississippi",2005,"East South Central","South","MS",381.609339609399,393.631198048503,405.406906369955,393.631198048503
+"886",24,37,1,1,"Communicable","Black","Female","Mississippi",2005,"East South Central","South","MS",55.1093761438143,59.0147452317912,63.0184292209083,59.0147452317912
+"887",24,37,1,1,"Injuries","Black","Female","Mississippi",2005,"East South Central","South","MS",38.0300667553085,40.3859241575205,42.8496617089808,40.3859241575205
+"888",24,37,1,1,"Non-communicable","Black","Female","Mississippi",2005,"East South Central","South","MS",116.705371563686,121.895301324104,127.76977536755,121.895301324104
+"889",24,38,0,0,"All other causes","White","Male","Mississippi",2006,"East South Central","South","MS",143.025102737978,148.639612372934,154.533696968794,148.639612372934
+"890",24,38,0,0,"Cancers","White","Male","Mississippi",2006,"East South Central","South","MS",249.946506503935,255.709568114236,261.610610727891,255.709568114236
+"891",24,38,0,0,"Cardiovascular","White","Male","Mississippi",2006,"East South Central","South","MS",388.055597368316,397.550007936468,407.8482914668,397.550007936468
+"892",24,38,0,0,"Communicable","White","Male","Mississippi",2006,"East South Central","South","MS",47.5329295227792,50.9295546461706,54.1650390987142,50.9295546461706
+"893",24,38,0,0,"Injuries","White","Male","Mississippi",2006,"East South Central","South","MS",123.286577313118,127.494343018349,131.726784822547,127.494343018349
+"894",24,38,0,0,"Non-communicable","White","Male","Mississippi",2006,"East South Central","South","MS",153.281388606889,158.235019316389,163.813957924165,158.235019316389
+"895",24,38,0,1,"All other causes","White","Female","Mississippi",2006,"East South Central","South","MS",120.494924729486,124.965481801173,129.676994171397,124.965481801173
+"896",24,38,0,1,"Cancers","White","Female","Mississippi",2006,"East South Central","South","MS",151.364647801451,154.893207834366,158.544304433022,154.893207834366
+"897",24,38,0,1,"Cardiovascular","White","Female","Mississippi",2006,"East South Central","South","MS",279.188603651646,285.43998793481,291.749206229346,285.43998793481
+"898",24,38,0,1,"Communicable","White","Female","Mississippi",2006,"East South Central","South","MS",36.5291583705873,38.5493347095737,40.8266048080771,38.5493347095737
+"899",24,38,0,1,"Injuries","White","Female","Mississippi",2006,"East South Central","South","MS",50.4328937699819,52.7993341693216,55.1304200182092,52.7993341693216
+"900",24,38,0,1,"Non-communicable","White","Female","Mississippi",2006,"East South Central","South","MS",109.121884549517,113.094950253682,117.301871277775,113.094950253682
+"901",24,38,1,0,"All other causes","Black","Male","Mississippi",2006,"East South Central","South","MS",184.084097870128,193.622453689736,203.908369858903,193.622453689736
+"902",24,38,1,0,"Cancers","Black","Male","Mississippi",2006,"East South Central","South","MS",338.252353805453,350.249992897808,363.195197070817,350.249992897808
+"903",24,38,1,0,"Cardiovascular","Black","Male","Mississippi",2006,"East South Central","South","MS",521.338788102717,537.177193889803,554.727808891792,537.177193889803
+"904",24,38,1,0,"Communicable","Black","Male","Mississippi",2006,"East South Central","South","MS",85.4213840949101,92.1010440378114,99.7966704622221,92.1010440378114
+"905",24,38,1,0,"Injuries","Black","Male","Mississippi",2006,"East South Central","South","MS",120.490190561362,126.104316282608,131.762586202975,126.104316282608
+"906",24,38,1,0,"Non-communicable","Black","Male","Mississippi",2006,"East South Central","South","MS",164.296329334798,172.907597746193,182.032375289425,172.907597746193
+"907",24,38,1,1,"All other causes","Black","Female","Mississippi",2006,"East South Central","South","MS",141.194738798006,147.862480829884,155.005837637056,147.862480829884
+"908",24,38,1,1,"Cancers","Black","Female","Mississippi",2006,"East South Central","South","MS",179.265479853965,185.00765119352,190.033007549553,185.00765119352
+"909",24,38,1,1,"Cardiovascular","Black","Female","Mississippi",2006,"East South Central","South","MS",369.445065645793,381.052194024832,393.04076656806,381.052194024832
+"910",24,38,1,1,"Communicable","Black","Female","Mississippi",2006,"East South Central","South","MS",55.4019148372325,59.0463219936783,63.6034211870148,59.0463219936783
+"911",24,38,1,1,"Injuries","Black","Female","Mississippi",2006,"East South Central","South","MS",36.5220895389062,39.0593412505901,41.5073672466396,39.0593412505901
+"912",24,38,1,1,"Non-communicable","Black","Female","Mississippi",2006,"East South Central","South","MS",120.006081412647,125.784450151158,131.585050244157,125.784450151158
+"913",24,39,0,0,"All other causes","White","Male","Mississippi",2007,"East South Central","South","MS",144.486025691912,150.117540786847,156.468217712802,150.117540786847
+"914",24,39,0,0,"Cancers","White","Male","Mississippi",2007,"East South Central","South","MS",246.118612001578,252.000275922484,257.650186502564,252.000275922484
+"915",24,39,0,0,"Cardiovascular","White","Male","Mississippi",2007,"East South Central","South","MS",374.46941549263,384.029536433141,393.14215077205,384.029536433141
+"916",24,39,0,0,"Communicable","White","Male","Mississippi",2007,"East South Central","South","MS",45.4653609081053,48.8238162301465,52.2953805216,48.8238162301465
+"917",24,39,0,0,"Injuries","White","Male","Mississippi",2007,"East South Central","South","MS",123.557680013537,127.423723007371,131.671630293283,127.423723007371
+"918",24,39,0,0,"Non-communicable","White","Male","Mississippi",2007,"East South Central","South","MS",154.867273197401,160.083694849335,166.039752436298,160.083694849335
+"919",24,39,0,1,"All other causes","White","Female","Mississippi",2007,"East South Central","South","MS",123.005252086747,127.207942199892,132.087498241197,127.207942199892
+"920",24,39,0,1,"Cancers","White","Female","Mississippi",2007,"East South Central","South","MS",149.640578342851,153.20247542993,156.588888046599,153.20247542993
+"921",24,39,0,1,"Cardiovascular","White","Female","Mississippi",2007,"East South Central","South","MS",270.218021291427,276.604591481931,282.870862869276,276.604591481931
+"922",24,39,0,1,"Communicable","White","Female","Mississippi",2007,"East South Central","South","MS",35.9835592744232,38.0140227732747,40.0175524689962,38.0140227732747
+"923",24,39,0,1,"Injuries","White","Female","Mississippi",2007,"East South Central","South","MS",50.9001229350721,53.1969514978461,55.4457968330961,53.1969514978461
+"924",24,39,0,1,"Non-communicable","White","Female","Mississippi",2007,"East South Central","South","MS",110.141359028799,114.352759049187,118.932239240873,114.352759049187
+"925",24,39,1,0,"All other causes","Black","Male","Mississippi",2007,"East South Central","South","MS",181.832359582003,190.845931478739,200.651755464754,190.845931478739
+"926",24,39,1,0,"Cancers","Black","Male","Mississippi",2007,"East South Central","South","MS",330.884369957913,343.016050858368,356.046894168199,343.016050858368
+"927",24,39,1,0,"Cardiovascular","Black","Male","Mississippi",2007,"East South Central","South","MS",506.016128377607,521.138358151663,537.992111449274,521.138358151663
+"928",24,39,1,0,"Communicable","Black","Male","Mississippi",2007,"East South Central","South","MS",83.6738803471948,90.0613882921734,97.0354004388846,90.0613882921734
+"929",24,39,1,0,"Injuries","Black","Male","Mississippi",2007,"East South Central","South","MS",117.103571362743,122.622904805764,127.743998880181,122.622904805764
+"930",24,39,1,0,"Non-communicable","Black","Male","Mississippi",2007,"East South Central","South","MS",168.182847522123,176.396065106363,185.412921182755,176.396065106363
+"931",24,39,1,1,"All other causes","Black","Female","Mississippi",2007,"East South Central","South","MS",139.963161867062,146.967220485688,153.69312079186,146.967220485688
+"932",24,39,1,1,"Cancers","Black","Female","Mississippi",2007,"East South Central","South","MS",175.872925738717,181.514829847152,186.811646201158,181.514829847152
+"933",24,39,1,1,"Cardiovascular","Black","Female","Mississippi",2007,"East South Central","South","MS",360.332254931851,372.036844635532,383.528885342783,372.036844635532
+"934",24,39,1,1,"Communicable","Black","Female","Mississippi",2007,"East South Central","South","MS",51.7824257660395,55.7093150776276,59.5653063894754,55.7093150776276
+"935",24,39,1,1,"Injuries","Black","Female","Mississippi",2007,"East South Central","South","MS",34.9631983161517,37.3628041578524,39.7182677925356,37.3628041578524
+"936",24,39,1,1,"Non-communicable","Black","Female","Mississippi",2007,"East South Central","South","MS",120.649908698741,126.438638529553,132.361891625626,126.438638529553
+"937",24,40,0,0,"All other causes","White","Male","Mississippi",2008,"East South Central","South","MS",143.369402865908,148.952750816309,154.960338842254,148.952750816309
+"938",24,40,0,0,"Cancers","White","Male","Mississippi",2008,"East South Central","South","MS",242.461981250647,247.983458884874,253.608588481605,247.983458884874
+"939",24,40,0,0,"Cardiovascular","White","Male","Mississippi",2008,"East South Central","South","MS",372.313988949444,381.78200660107,391.518856938694,381.78200660107
+"940",24,40,0,0,"Communicable","White","Male","Mississippi",2008,"East South Central","South","MS",45.3270903546889,48.6619403395554,52.2448476304799,48.6619403395554
+"941",24,40,0,0,"Injuries","White","Male","Mississippi",2008,"East South Central","South","MS",121.826508962342,125.973220694946,130.388271078244,125.973220694946
+"942",24,40,0,0,"Non-communicable","White","Male","Mississippi",2008,"East South Central","South","MS",156.951418782016,162.006107267584,167.713208964086,162.006107267584
+"943",24,40,0,1,"All other causes","White","Female","Mississippi",2008,"East South Central","South","MS",128.698167484565,132.929908453198,137.506471335066,132.929908453198
+"944",24,40,0,1,"Cancers","White","Female","Mississippi",2008,"East South Central","South","MS",150.01841739229,153.365946883346,156.962746106196,153.365946883346
+"945",24,40,0,1,"Cardiovascular","White","Female","Mississippi",2008,"East South Central","South","MS",262.731999813718,268.821565661675,275.141383583901,268.821565661675
+"946",24,40,0,1,"Communicable","White","Female","Mississippi",2008,"East South Central","South","MS",35.6064615396236,37.4807113066246,39.5104644275987,37.4807113066246
+"947",24,40,0,1,"Injuries","White","Female","Mississippi",2008,"East South Central","South","MS",51.2241610034096,53.5052083937477,55.9628020013878,53.5052083937477
+"948",24,40,0,1,"Non-communicable","White","Female","Mississippi",2008,"East South Central","South","MS",119.129378498365,123.442391955722,128.1928516358,123.442391955722
+"949",24,40,1,0,"All other causes","Black","Male","Mississippi",2008,"East South Central","South","MS",179.46885625482,188.660810499043,198.836521988586,188.660810499043
+"950",24,40,1,0,"Cancers","Black","Male","Mississippi",2008,"East South Central","South","MS",325.031945118315,336.817714601829,348.976692737857,336.817714601829
+"951",24,40,1,0,"Cardiovascular","Black","Male","Mississippi",2008,"East South Central","South","MS",487.314586728359,502.206180679934,518.588243824765,502.206180679934
+"952",24,40,1,0,"Communicable","Black","Male","Mississippi",2008,"East South Central","South","MS",82.467636136668,88.9751041649608,95.5842057208462,88.9751041649608
+"953",24,40,1,0,"Injuries","Black","Male","Mississippi",2008,"East South Central","South","MS",112.157640911835,117.355382679679,122.50917944217,117.355382679679
+"954",24,40,1,0,"Non-communicable","Black","Male","Mississippi",2008,"East South Central","South","MS",168.590556155915,177.054983264041,186.357456570956,177.054983264041
+"955",24,40,1,1,"All other causes","Black","Female","Mississippi",2008,"East South Central","South","MS",140.597848168289,147.817644425444,155.049595537986,147.817644425444
+"956",24,40,1,1,"Cancers","Black","Female","Mississippi",2008,"East South Central","South","MS",174.059107895237,179.560662454373,185.060473421569,179.560662454373
+"957",24,40,1,1,"Cardiovascular","Black","Female","Mississippi",2008,"East South Central","South","MS",345.241909580995,356.173683215755,367.653210073148,356.173683215755
+"958",24,40,1,1,"Communicable","Black","Female","Mississippi",2008,"East South Central","South","MS",52.0908345584516,56.0140311021381,60.1776545907734,56.0140311021381
+"959",24,40,1,1,"Injuries","Black","Female","Mississippi",2008,"East South Central","South","MS",34.2085625819935,36.5338854543322,38.7412333898734,36.5338854543322
+"960",24,40,1,1,"Non-communicable","Black","Female","Mississippi",2008,"East South Central","South","MS",125.923468123513,131.600885069381,137.891650119505,131.600885069381
+"961",24,41,0,0,"All other causes","White","Male","Mississippi",2009,"East South Central","South","MS",144.086884333088,149.966738166897,155.968316734423,149.966738166897
+"962",24,41,0,0,"Cancers","White","Male","Mississippi",2009,"East South Central","South","MS",240.314328103275,245.761994931671,251.625910227659,245.761994931671
+"963",24,41,0,0,"Cardiovascular","White","Male","Mississippi",2009,"East South Central","South","MS",358.488741644343,367.752986291675,376.283622841136,367.752986291675
+"964",24,41,0,0,"Communicable","White","Male","Mississippi",2009,"East South Central","South","MS",45.3879842591857,48.532466875798,52.2462306174737,48.532466875798
+"965",24,41,0,0,"Injuries","White","Male","Mississippi",2009,"East South Central","South","MS",119.812451088821,123.588389515488,127.732802516611,123.588389515488
+"966",24,41,0,0,"Non-communicable","White","Male","Mississippi",2009,"East South Central","South","MS",159.076348723855,164.394973897092,170.116081557997,164.394973897092
+"967",24,41,0,1,"All other causes","White","Female","Mississippi",2009,"East South Central","South","MS",128.490159361075,132.828369607285,137.628408700609,132.828369607285
+"968",24,41,0,1,"Cancers","White","Female","Mississippi",2009,"East South Central","South","MS",149.032404208862,152.451373309085,155.755895990768,152.451373309085
+"969",24,41,0,1,"Cardiovascular","White","Female","Mississippi",2009,"East South Central","South","MS",249.720836453739,255.605228616046,261.327919719971,255.605228616046
+"970",24,41,0,1,"Communicable","White","Female","Mississippi",2009,"East South Central","South","MS",34.869090133586,36.7696677046792,38.6969360534954,36.7696677046792
+"971",24,41,0,1,"Injuries","White","Female","Mississippi",2009,"East South Central","South","MS",51.9896727999919,54.1613826871648,56.5103884161166,54.1613826871648
+"972",24,41,0,1,"Non-communicable","White","Female","Mississippi",2009,"East South Central","South","MS",122.711526146583,127.511872581394,131.952677590021,127.511872581394
+"973",24,41,1,0,"All other causes","Black","Male","Mississippi",2009,"East South Central","South","MS",183.454115073925,192.955479056601,203.514137452675,192.955479056601
+"974",24,41,1,0,"Cancers","Black","Male","Mississippi",2009,"East South Central","South","MS",317.189067806346,328.074420600059,339.799519364796,328.074420600059
+"975",24,41,1,0,"Cardiovascular","Black","Male","Mississippi",2009,"East South Central","South","MS",468.635683324783,483.848819918486,498.945614513919,483.848819918486
+"976",24,41,1,0,"Communicable","Black","Male","Mississippi",2009,"East South Central","South","MS",77.7928569015445,84.2012052993142,91.2750196533986,84.2012052993142
+"977",24,41,1,0,"Injuries","Black","Male","Mississippi",2009,"East South Central","South","MS",107.323011794938,112.290846433802,117.030670477727,112.290846433802
+"978",24,41,1,0,"Non-communicable","Black","Male","Mississippi",2009,"East South Central","South","MS",172.44183462026,181.011732815574,190.335331059273,181.011732815574
+"979",24,41,1,1,"All other causes","Black","Female","Mississippi",2009,"East South Central","South","MS",139.872524512944,145.914174038995,153.057605707467,145.914174038995
+"980",24,41,1,1,"Cancers","Black","Female","Mississippi",2009,"East South Central","South","MS",174.110648366795,179.135857731054,184.683243039038,179.135857731054
+"981",24,41,1,1,"Cardiovascular","Black","Female","Mississippi",2009,"East South Central","South","MS",325.417901038184,336.107801321775,347.306611242643,336.107801321775
+"982",24,41,1,1,"Communicable","Black","Female","Mississippi",2009,"East South Central","South","MS",49.4836994945215,53.174248933262,57.4142897963232,53.174248933262
+"983",24,41,1,1,"Injuries","Black","Female","Mississippi",2009,"East South Central","South","MS",33.6656313318216,35.8929002473138,38.1501986364283,35.8929002473138
+"984",24,41,1,1,"Non-communicable","Black","Female","Mississippi",2009,"East South Central","South","MS",130.357476730216,136.590934350536,143.187661382672,136.590934350536
+"985",24,42,0,0,"All other causes","White","Male","Mississippi",2010,"East South Central","South","MS",146.751703642776,152.543342563625,158.86314522742,152.543342563625
+"986",24,42,0,0,"Cancers","White","Male","Mississippi",2010,"East South Central","South","MS",237.014295030065,242.834419234952,248.236117443868,242.834419234952
+"987",24,42,0,0,"Cardiovascular","White","Male","Mississippi",2010,"East South Central","South","MS",346.654327379711,354.944853508384,363.928807277359,354.944853508384
+"988",24,42,0,0,"Communicable","White","Male","Mississippi",2010,"East South Central","South","MS",44.5207838575191,47.6111262666149,50.9395401540527,47.6111262666149
+"989",24,42,0,0,"Injuries","White","Male","Mississippi",2010,"East South Central","South","MS",117.480171381565,121.348220831391,125.541438655048,121.348220831391
+"990",24,42,0,0,"Non-communicable","White","Male","Mississippi",2010,"East South Central","South","MS",160.988628608878,166.03569409723,171.797376092155,166.03569409723
+"991",24,42,0,1,"All other causes","White","Female","Mississippi",2010,"East South Central","South","MS",135.663934197502,140.026705642179,144.619277073618,140.026705642179
+"992",24,42,0,1,"Cancers","White","Female","Mississippi",2010,"East South Central","South","MS",149.112169795534,152.686112214199,156.378791563833,152.686112214199
+"993",24,42,0,1,"Cardiovascular","White","Female","Mississippi",2010,"East South Central","South","MS",245.880001248905,251.399138645658,257.250774914762,251.399138645658
+"994",24,42,0,1,"Communicable","White","Female","Mississippi",2010,"East South Central","South","MS",35.1065292481141,37.0524695564011,39.0422755868362,37.0524695564011
+"995",24,42,0,1,"Injuries","White","Female","Mississippi",2010,"East South Central","South","MS",53.6634632627811,55.8956375436101,58.7237145431497,55.8956375436101
+"996",24,42,0,1,"Non-communicable","White","Female","Mississippi",2010,"East South Central","South","MS",126.439147352518,131.013522130496,135.61366253342,131.013522130496
+"997",24,42,1,0,"All other causes","Black","Male","Mississippi",2010,"East South Central","South","MS",181.85791074551,191.768113577299,201.465051151182,191.768113577299
+"998",24,42,1,0,"Cancers","Black","Male","Mississippi",2010,"East South Central","South","MS",311.24639782479,322.515163554333,334.380531738784,322.515163554333
+"999",24,42,1,0,"Cardiovascular","Black","Male","Mississippi",2010,"East South Central","South","MS",454.638873330516,468.225030436589,482.341619511263,468.225030436589
+"1000",24,42,1,0,"Communicable","Black","Male","Mississippi",2010,"East South Central","South","MS",72.4097887243491,78.5800035854706,85.1080777617671,78.5800035854706
+"1001",24,42,1,0,"Injuries","Black","Male","Mississippi",2010,"East South Central","South","MS",104.189425334762,109.427193124311,114.312183610527,109.427193124311
+"1002",24,42,1,0,"Non-communicable","Black","Male","Mississippi",2010,"East South Central","South","MS",175.435314074744,184.080618932847,192.77481131825,184.080618932847
+"1003",24,42,1,1,"All other causes","Black","Female","Mississippi",2010,"East South Central","South","MS",140.817929341579,147.607869167951,154.577055264272,147.607869167951
+"1004",24,42,1,1,"Cancers","Black","Female","Mississippi",2010,"East South Central","South","MS",172.765223971466,178.472371429101,183.984470094055,178.472371429101
+"1005",24,42,1,1,"Cardiovascular","Black","Female","Mississippi",2010,"East South Central","South","MS",312.224314612237,322.676189286548,332.985625923951,322.676189286548
+"1006",24,42,1,1,"Communicable","Black","Female","Mississippi",2010,"East South Central","South","MS",48.3464911188337,52.2114161566756,56.5368874986578,52.2114161566756
+"1007",24,42,1,1,"Injuries","Black","Female","Mississippi",2010,"East South Central","South","MS",32.9918878584765,35.3320080183181,37.6873462953125,35.3320080183181
+"1008",24,42,1,1,"Non-communicable","Black","Female","Mississippi",2010,"East South Central","South","MS",132.18349813643,137.702621047196,144.212151883739,137.702621047196
+"1009",24,43,0,0,"All other causes","White","Male","Mississippi",2011,"East South Central","South","MS",156.799313291831,163.047750682084,169.332878925992,163.047750682084
+"1010",24,43,0,0,"Cancers","White","Male","Mississippi",2011,"East South Central","South","MS",234.846080512509,240.929161864024,246.427203746429,240.929161864024
+"1011",24,43,0,0,"Cardiovascular","White","Male","Mississippi",2011,"East South Central","South","MS",337.17232625734,345.742244916309,354.548003806695,345.742244916309
+"1012",24,43,0,0,"Communicable","White","Male","Mississippi",2011,"East South Central","South","MS",46.2422198196646,49.5794744471248,52.7776448650603,49.5794744471248
+"1013",24,43,0,0,"Injuries","White","Male","Mississippi",2011,"East South Central","South","MS",115.674717400092,119.833668811355,123.981120684426,119.833668811355
+"1014",24,43,0,0,"Non-communicable","White","Male","Mississippi",2011,"East South Central","South","MS",161.403259143366,166.864206061334,172.332183937347,166.864206061334
+"1015",24,43,0,1,"All other causes","White","Female","Mississippi",2011,"East South Central","South","MS",139.043380762831,143.531869385855,148.310680093334,143.531869385855
+"1016",24,43,0,1,"Cancers","White","Female","Mississippi",2011,"East South Central","South","MS",147.52222897401,151.341461216571,154.696374018953,151.341461216571
+"1017",24,43,0,1,"Cardiovascular","White","Female","Mississippi",2011,"East South Central","South","MS",239.787681823308,245.884510102197,252.418576565166,245.884510102197
+"1018",24,43,0,1,"Communicable","White","Female","Mississippi",2011,"East South Central","South","MS",35.0488111864241,36.9376136019461,38.9523921200265,36.9376136019461
+"1019",24,43,0,1,"Injuries","White","Female","Mississippi",2011,"East South Central","South","MS",54.5750166467512,57.1127538557363,59.6246538134201,57.1127538557363
+"1020",24,43,0,1,"Non-communicable","White","Female","Mississippi",2011,"East South Central","South","MS",128.218525478187,132.493672909734,137.209456092973,132.493672909734
+"1021",24,43,1,0,"All other causes","Black","Male","Mississippi",2011,"East South Central","South","MS",182.892800803966,192.47296733266,202.942705974354,192.47296733266
+"1022",24,43,1,0,"Cancers","Black","Male","Mississippi",2011,"East South Central","South","MS",306.211005930962,317.10081065973,329.219185913398,317.10081065973
+"1023",24,43,1,0,"Cardiovascular","Black","Male","Mississippi",2011,"East South Central","South","MS",440.066349629414,454.701506279011,469.656736826949,454.701506279011
+"1024",24,43,1,0,"Communicable","Black","Male","Mississippi",2011,"East South Central","South","MS",70.7182775288507,76.4061926720392,82.8374056689469,76.4061926720392
+"1025",24,43,1,0,"Injuries","Black","Male","Mississippi",2011,"East South Central","South","MS",103.478767362103,108.400504371972,113.538976212914,108.400504371972
+"1026",24,43,1,0,"Non-communicable","Black","Male","Mississippi",2011,"East South Central","South","MS",178.222566530466,186.579659291593,196.833338345485,186.579659291593
+"1027",24,43,1,1,"All other causes","Black","Female","Mississippi",2011,"East South Central","South","MS",148.338494163085,154.957894970952,162.076913691077,154.957894970952
+"1028",24,43,1,1,"Cancers","Black","Female","Mississippi",2011,"East South Central","South","MS",171.585458551979,177.283076450576,182.483696332947,177.283076450576
+"1029",24,43,1,1,"Cardiovascular","Black","Female","Mississippi",2011,"East South Central","South","MS",303.006485514205,313.621772578497,323.795213876101,313.621772578497
+"1030",24,43,1,1,"Communicable","Black","Female","Mississippi",2011,"East South Central","South","MS",48.3624193625312,52.1563945466874,56.0103672929758,52.1563945466874
+"1031",24,43,1,1,"Injuries","Black","Female","Mississippi",2011,"East South Central","South","MS",32.3400228560942,34.721501162689,37.3084824348489,34.721501162689
+"1032",24,43,1,1,"Non-communicable","Black","Female","Mississippi",2011,"East South Central","South","MS",129.895354727879,136.213873226974,142.76152334706,136.213873226974
+"1033",24,44,0,0,"All other causes","White","Male","Mississippi",2012,"East South Central","South","MS",159.138638824969,165.026470008795,171.103147209716,165.026470008795
+"1034",24,44,0,0,"Cancers","White","Male","Mississippi",2012,"East South Central","South","MS",233.909147334464,239.046253356208,244.663804574257,239.046253356208
+"1035",24,44,0,0,"Cardiovascular","White","Male","Mississippi",2012,"East South Central","South","MS",330.246165648301,338.949403013756,347.181306569963,338.949403013756
+"1036",24,44,0,0,"Communicable","White","Male","Mississippi",2012,"East South Central","South","MS",47.3015643904109,50.4588521625508,53.815455797417,50.4588521625508
+"1037",24,44,0,0,"Injuries","White","Male","Mississippi",2012,"East South Central","South","MS",114.179107833439,118.308830093537,122.56946528406,118.308830093537
+"1038",24,44,0,0,"Non-communicable","White","Male","Mississippi",2012,"East South Central","South","MS",158.338037882708,163.371917083788,169.004527117222,163.371917083788
+"1039",24,44,0,1,"All other causes","White","Female","Mississippi",2012,"East South Central","South","MS",146.400192714964,151.061016644489,156.437290504482,151.061016644489
+"1040",24,44,0,1,"Cancers","White","Female","Mississippi",2012,"East South Central","South","MS",147.588854398131,151.205734690277,155.069767581463,151.205734690277
+"1041",24,44,0,1,"Cardiovascular","White","Female","Mississippi",2012,"East South Central","South","MS",235.336141047446,240.812647869984,246.644212370476,240.812647869984
+"1042",24,44,0,1,"Communicable","White","Female","Mississippi",2012,"East South Central","South","MS",35.1122439441016,37.2042132552558,39.2711732263057,37.2042132552558
+"1043",24,44,0,1,"Injuries","White","Female","Mississippi",2012,"East South Central","South","MS",54.6209314403769,57.3914945173104,60.1768665842799,57.3914945173104
+"1044",24,44,0,1,"Non-communicable","White","Female","Mississippi",2012,"East South Central","South","MS",126.488043968234,130.997626104754,136.093466504373,130.997626104754
+"1045",24,44,1,0,"All other causes","Black","Male","Mississippi",2012,"East South Central","South","MS",183.784022761322,194.655093294831,204.74102237441,194.655093294831
+"1046",24,44,1,0,"Cancers","Black","Male","Mississippi",2012,"East South Central","South","MS",302.132094898085,313.897995080518,325.971719830293,313.897995080518
+"1047",24,44,1,0,"Cardiovascular","Black","Male","Mississippi",2012,"East South Central","South","MS",437.194640553827,451.810392085584,466.569647677993,451.810392085584
+"1048",24,44,1,0,"Communicable","Black","Male","Mississippi",2012,"East South Central","South","MS",69.737689006851,76.1584067803528,82.3457567875973,76.1584067803528
+"1049",24,44,1,0,"Injuries","Black","Male","Mississippi",2012,"East South Central","South","MS",102.472301322067,107.848440722393,113.149681880235,107.848440722393
+"1050",24,44,1,0,"Non-communicable","Black","Male","Mississippi",2012,"East South Central","South","MS",180.35160401141,189.635285120734,199.884735623126,189.635285120734
+"1051",24,44,1,1,"All other causes","Black","Female","Mississippi",2012,"East South Central","South","MS",151.384664064557,158.736238678527,165.949262198104,158.736238678527
+"1052",24,44,1,1,"Cancers","Black","Female","Mississippi",2012,"East South Central","South","MS",171.660081226252,177.8340578198,183.343479016304,177.8340578198
+"1053",24,44,1,1,"Cardiovascular","Black","Female","Mississippi",2012,"East South Central","South","MS",292.421015641064,302.606111416912,312.949637950015,302.606111416912
+"1054",24,44,1,1,"Communicable","Black","Female","Mississippi",2012,"East South Central","South","MS",49.2396070012483,53.0994498330808,57.3535962144363,53.0994498330808
+"1055",24,44,1,1,"Injuries","Black","Female","Mississippi",2012,"East South Central","South","MS",31.5735592193982,34.2774271858749,36.8810704208003,34.2774271858749
+"1056",24,44,1,1,"Non-communicable","Black","Female","Mississippi",2012,"East South Central","South","MS",131.519678496039,138.046162101694,144.927182382655,138.046162101694
+"1057",24,45,0,0,"All other causes","White","Male","Mississippi",2013,"East South Central","South","MS",164.658240693562,171.614599094239,178.721315185548,171.614599094239
+"1058",24,45,0,0,"Cancers","White","Male","Mississippi",2013,"East South Central","South","MS",230.654904319421,237.518166793464,243.761781161001,237.518166793464
+"1059",24,45,0,0,"Cardiovascular","White","Male","Mississippi",2013,"East South Central","South","MS",334.129044123889,343.40443024018,353.015961664977,343.40443024018
+"1060",24,45,0,0,"Communicable","White","Male","Mississippi",2013,"East South Central","South","MS",52.3298632747662,56.2025419760292,60.2944794624306,56.2025419760292
+"1061",24,45,0,0,"Injuries","White","Male","Mississippi",2013,"East South Central","South","MS",112.961066947005,118.019510442418,122.402560102026,118.019510442418
+"1062",24,45,0,0,"Non-communicable","White","Male","Mississippi",2013,"East South Central","South","MS",154.898007015018,160.796156399318,167.123967312699,160.796156399318
+"1063",24,45,0,1,"All other causes","White","Female","Mississippi",2013,"East South Central","South","MS",150.545194550439,156.454273460052,162.167896484197,156.454273460052
+"1064",24,45,0,1,"Cancers","White","Female","Mississippi",2013,"East South Central","South","MS",146.765609005936,150.916341180591,155.449898651743,150.916341180591
+"1065",24,45,0,1,"Cardiovascular","White","Female","Mississippi",2013,"East South Central","South","MS",230.733323502007,237.103875641434,243.266565722833,237.103875641434
+"1066",24,45,0,1,"Communicable","White","Female","Mississippi",2013,"East South Central","South","MS",36.6543889949345,39.049212610688,41.6463679809924,39.049212610688
+"1067",24,45,0,1,"Injuries","White","Female","Mississippi",2013,"East South Central","South","MS",54.3729973526341,57.3713668246085,60.2896073220444,57.3713668246085
+"1068",24,45,0,1,"Non-communicable","White","Female","Mississippi",2013,"East South Central","South","MS",126.922364734338,131.640106087054,137.523013807672,131.640106087054
+"1069",24,45,1,0,"All other causes","Black","Male","Mississippi",2013,"East South Central","South","MS",181.255529115228,193.87674671312,205.849175076202,193.87674671312
+"1070",24,45,1,0,"Cancers","Black","Male","Mississippi",2013,"East South Central","South","MS",296.371381707671,310.124308902698,324.101148655936,310.124308902698
+"1071",24,45,1,0,"Cardiovascular","Black","Male","Mississippi",2013,"East South Central","South","MS",437.100762551732,452.827419631493,470.774731476963,452.827419631493
+"1072",24,45,1,0,"Communicable","Black","Male","Mississippi",2013,"East South Central","South","MS",72.4909221057099,80.1093928028241,87.3132548212264,80.1093928028241
+"1073",24,45,1,0,"Injuries","Black","Male","Mississippi",2013,"East South Central","South","MS",100.968354269214,106.571073711225,112.763926611274,106.571073711225
+"1074",24,45,1,0,"Non-communicable","Black","Male","Mississippi",2013,"East South Central","South","MS",183.299040970445,194.018086535902,205.863644085021,194.018086535902
+"1075",24,45,1,1,"All other causes","Black","Female","Mississippi",2013,"East South Central","South","MS",153.842168657358,161.900884334111,170.358635656952,161.900884334111
+"1076",24,45,1,1,"Cancers","Black","Female","Mississippi",2013,"East South Central","South","MS",170.808516226767,177.45376770789,184.427742195876,177.45376770789
+"1077",24,45,1,1,"Cardiovascular","Black","Female","Mississippi",2013,"East South Central","South","MS",286.822838613794,298.791711035268,311.48183906747,298.791711035268
+"1078",24,45,1,1,"Communicable","Black","Female","Mississippi",2013,"East South Central","South","MS",50.2035130714281,54.8383271037222,59.7073504000196,54.8383271037222
+"1079",24,45,1,1,"Injuries","Black","Female","Mississippi",2013,"East South Central","South","MS",31.5873302389771,34.3628926143506,37.2771042897545,34.3628926143506
+"1080",24,45,1,1,"Non-communicable","Black","Female","Mississippi",2013,"East South Central","South","MS",130.508557885803,138.068136122439,145.434306374394,138.068136122439
