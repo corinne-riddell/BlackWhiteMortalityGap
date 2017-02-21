@@ -1,0 +1,541 @@
+"","state.n","year.n","sex.n","COD","rate.difference_LCL","rate.difference_med","rate.difference_UCL","Census_Division","Census_Region","stabbrs","sex","state","year"
+"1",20,1,0,"All other causes",91.67191908137,106.414335756128,123.256873943352,"South Atlantic","South","MD","Male","Maryland",1969
+"2",20,1,0,"Cancers",52.3144670047636,72.439385080807,91.3374754769203,"South Atlantic","South","MD","Male","Maryland",1969
+"3",20,1,0,"Cardiovascular",-57.7575383810199,-14.2876389472559,31.0562540530972,"South Atlantic","South","MD","Male","Maryland",1969
+"4",20,1,0,"Communicable",39.4806579608221,53.8961224733883,68.9263379983535,"South Atlantic","South","MD","Male","Maryland",1969
+"5",20,1,0,"Injuries",71.6519159804703,83.4778658294429,95.9545181918454,"South Atlantic","South","MD","Male","Maryland",1969
+"6",20,1,0,"Non-communicable",31.415100651228,43.4690959937876,58.1096549662267,"South Atlantic","South","MD","Male","Maryland",1969
+"7",20,1,1,"All other causes",51.2380526313917,61.838185544969,72.3415006953803,"South Atlantic","South","MD","Female","Maryland",1969
+"8",20,1,1,"Cancers",16.4438851370982,27.3160770680862,38.6813633300222,"South Atlantic","South","MD","Female","Maryland",1969
+"9",20,1,1,"Cardiovascular",56.1263734874526,91.3736136023179,126.349777450369,"South Atlantic","South","MD","Female","Maryland",1969
+"10",20,1,1,"Communicable",7.91343593217403,15.2470551928239,22.9347703259628,"South Atlantic","South","MD","Female","Maryland",1969
+"11",20,1,1,"Injuries",5.36771952236505,10.9508267008737,17.296861699271,"South Atlantic","South","MD","Female","Maryland",1969
+"12",20,1,1,"Non-communicable",52.9445183111646,61.9917711033238,73.2170966200492,"South Atlantic","South","MD","Female","Maryland",1969
+"13",20,2,0,"All other causes",92.7055007802625,107.818206081161,121.089518619279,"South Atlantic","South","MD","Male","Maryland",1970
+"14",20,2,0,"Cancers",53.8010393208969,72.0237051945851,90.8199637426575,"South Atlantic","South","MD","Male","Maryland",1970
+"15",20,2,0,"Cardiovascular",-60.4735082189405,-22.3719212468389,14.5263860749021,"South Atlantic","South","MD","Male","Maryland",1970
+"16",20,2,0,"Communicable",33.739475475236,44.7389793544957,58.6195147239505,"South Atlantic","South","MD","Male","Maryland",1970
+"17",20,2,0,"Injuries",74.1557281055224,84.0437982537529,95.4398505772367,"South Atlantic","South","MD","Male","Maryland",1970
+"18",20,2,0,"Non-communicable",33.4574713268145,43.9523851298028,56.4163214815525,"South Atlantic","South","MD","Male","Maryland",1970
+"19",20,2,1,"All other causes",52.8664355167846,61.4423547847962,71.8012275093545,"South Atlantic","South","MD","Female","Maryland",1970
+"20",20,2,1,"Cancers",18.6768612665456,27.7117315013263,39.1258339969643,"South Atlantic","South","MD","Female","Maryland",1970
+"21",20,2,1,"Cardiovascular",57.0679896541457,85.904365231284,117.85231021007,"South Atlantic","South","MD","Female","Maryland",1970
+"22",20,2,1,"Communicable",6.66127727741441,12.6900728073624,19.3879625532221,"South Atlantic","South","MD","Female","Maryland",1970
+"23",20,2,1,"Injuries",5.67893010304764,10.5151199403618,16.3074010286125,"South Atlantic","South","MD","Female","Maryland",1970
+"24",20,2,1,"Non-communicable",52.2266567093267,61.0346382794321,70.2347130412796,"South Atlantic","South","MD","Female","Maryland",1970
+"25",20,3,0,"All other causes",92.8937065400008,105.364174239813,118.807369657411,"South Atlantic","South","MD","Male","Maryland",1971
+"26",20,3,0,"Cancers",57.752648475745,73.9346895629033,91.050371311149,"South Atlantic","South","MD","Male","Maryland",1971
+"27",20,3,0,"Cardiovascular",-72.9845540458695,-37.0965935780821,-2.13311425222732,"South Atlantic","South","MD","Male","Maryland",1971
+"28",20,3,0,"Communicable",25.8654903250526,36.0979162660168,47.8601838702167,"South Atlantic","South","MD","Male","Maryland",1971
+"29",20,3,0,"Injuries",75.0476921328997,85.5073083320273,96.3195187877524,"South Atlantic","South","MD","Male","Maryland",1971
+"30",20,3,0,"Non-communicable",31.5802554317549,42.7109016799201,54.4688579788266,"South Atlantic","South","MD","Male","Maryland",1971
+"31",20,3,1,"All other causes",51.4421477949768,59.1667338418658,67.8810846703739,"South Atlantic","South","MD","Female","Maryland",1971
+"32",20,3,1,"Cancers",18.8172262480559,27.5773723911078,37.5643652549171,"South Atlantic","South","MD","Female","Maryland",1971
+"33",20,3,1,"Cardiovascular",63.6805141136921,91.1150033831996,119.830930068849,"South Atlantic","South","MD","Female","Maryland",1971
+"34",20,3,1,"Communicable",6.14927895960337,11.3918076123532,17.4890503266141,"South Atlantic","South","MD","Female","Maryland",1971
+"35",20,3,1,"Injuries",5.85211124929131,10.455025861898,16.0502721825904,"South Atlantic","South","MD","Female","Maryland",1971
+"36",20,3,1,"Non-communicable",51.924338581154,59.6122843421422,68.0043802324477,"South Atlantic","South","MD","Female","Maryland",1971
+"37",20,4,0,"All other causes",84.5189403428277,96.9471641647287,110.876763087326,"South Atlantic","South","MD","Male","Maryland",1972
+"38",20,4,0,"Cancers",61.7932838579974,78.3781617169221,95.8325447573241,"South Atlantic","South","MD","Male","Maryland",1972
+"39",20,4,0,"Cardiovascular",-82.3336206891812,-47.1623141344999,-10.7861962676735,"South Atlantic","South","MD","Male","Maryland",1972
+"40",20,4,0,"Communicable",21.4904390230709,32.5712540817157,43.985447842641,"South Atlantic","South","MD","Male","Maryland",1972
+"41",20,4,0,"Injuries",73.2079318567805,82.7696213090157,93.6827908450296,"South Atlantic","South","MD","Male","Maryland",1972
+"42",20,4,0,"Non-communicable",32.5971593010704,42.2940756209569,54.004472573632,"South Atlantic","South","MD","Male","Maryland",1972
+"43",20,4,1,"All other causes",47.4595836196638,54.8420780460685,62.7370341099905,"South Atlantic","South","MD","Female","Maryland",1972
+"44",20,4,1,"Cancers",17.5589020253421,25.9247673023695,34.9593654751149,"South Atlantic","South","MD","Female","Maryland",1972
+"45",20,4,1,"Cardiovascular",48.613222012564,73.8259876701705,102.257732994479,"South Atlantic","South","MD","Female","Maryland",1972
+"46",20,4,1,"Communicable",5.72760172577073,10.858346821742,16.6755558853797,"South Atlantic","South","MD","Female","Maryland",1972
+"47",20,4,1,"Injuries",5.86556525222035,10.2886599503695,15.4422312673235,"South Atlantic","South","MD","Female","Maryland",1972
+"48",20,4,1,"Non-communicable",53.01747042356,60.3885360031758,69.0028697116785,"South Atlantic","South","MD","Female","Maryland",1972
+"49",20,5,0,"All other causes",83.0269344235464,94.8178462934343,107.609125999492,"South Atlantic","South","MD","Male","Maryland",1973
+"50",20,5,0,"Cancers",64.1627923507346,80.5330312870364,97.2844470870062,"South Atlantic","South","MD","Male","Maryland",1973
+"51",20,5,0,"Cardiovascular",-65.0834824307784,-34.9028569782267,3.13161185618201,"South Atlantic","South","MD","Male","Maryland",1973
+"52",20,5,0,"Communicable",23.0639538591411,32.4078561666359,42.9943301138227,"South Atlantic","South","MD","Male","Maryland",1973
+"53",20,5,0,"Injuries",68.34114505874,77.318710364813,87.5492312773929,"South Atlantic","South","MD","Male","Maryland",1973
+"54",20,5,0,"Non-communicable",29.1629245915614,38.9700968628102,49.3645114843983,"South Atlantic","South","MD","Male","Maryland",1973
+"55",20,5,1,"All other causes",45.580218535224,53.1285944899284,61.2369228016962,"South Atlantic","South","MD","Female","Maryland",1973
+"56",20,5,1,"Cancers",17.6225813046566,25.944516724993,34.973534885243,"South Atlantic","South","MD","Female","Maryland",1973
+"57",20,5,1,"Cardiovascular",31.9059128463676,57.1276476866067,82.6659847907517,"South Atlantic","South","MD","Female","Maryland",1973
+"58",20,5,1,"Communicable",5.20282836532905,10.6348474498397,16.3781609111563,"South Atlantic","South","MD","Female","Maryland",1973
+"59",20,5,1,"Injuries",5.16562546310057,9.35499893618388,13.8808762212361,"South Atlantic","South","MD","Female","Maryland",1973
+"60",20,5,1,"Non-communicable",50.4823716412779,57.1148792854325,65.0677377417134,"South Atlantic","South","MD","Female","Maryland",1973
+"61",20,6,0,"All other causes",82.3385561899664,94.9568295127826,106.553558913458,"South Atlantic","South","MD","Male","Maryland",1974
+"62",20,6,0,"Cancers",65.7496922294478,82.9110491998425,100.146733832929,"South Atlantic","South","MD","Male","Maryland",1974
+"63",20,6,0,"Cardiovascular",-71.8756929786071,-37.285149559932,-3.02817754446385,"South Atlantic","South","MD","Male","Maryland",1974
+"64",20,6,0,"Communicable",23.009289085501,33.0011557046178,43.0750636127128,"South Atlantic","South","MD","Male","Maryland",1974
+"65",20,6,0,"Injuries",64.7751602147373,73.9563357449359,83.188914038625,"South Atlantic","South","MD","Male","Maryland",1974
+"66",20,6,0,"Non-communicable",23.8158609355771,33.5676892209941,43.3905126248403,"South Atlantic","South","MD","Male","Maryland",1974
+"67",20,6,1,"All other causes",44.9709293685114,52.1589515244058,60.2852199191904,"South Atlantic","South","MD","Female","Maryland",1974
+"68",20,6,1,"Cancers",18.594963213999,26.57360085703,35.7996901544442,"South Atlantic","South","MD","Female","Maryland",1974
+"69",20,6,1,"Cardiovascular",25.3368631683954,47.974312919205,71.1353634599939,"South Atlantic","South","MD","Female","Maryland",1974
+"70",20,6,1,"Communicable",4.09889816913954,9.16513769632526,14.4899916849931,"South Atlantic","South","MD","Female","Maryland",1974
+"71",20,6,1,"Injuries",4.46234380134367,8.36675814654408,12.7188643404194,"South Atlantic","South","MD","Female","Maryland",1974
+"72",20,6,1,"Non-communicable",44.8165428418181,51.8509977101342,58.827992313334,"South Atlantic","South","MD","Female","Maryland",1974
+"73",20,7,0,"All other causes",82.4856689880169,94.4698744640679,106.505993012123,"South Atlantic","South","MD","Male","Maryland",1975
+"74",20,7,0,"Cancers",76.505424332862,92.4921333868691,109.27968460332,"South Atlantic","South","MD","Male","Maryland",1975
+"75",20,7,0,"Cardiovascular",-63.4471615856693,-30.9042815352469,3.21732952765776,"South Atlantic","South","MD","Male","Maryland",1975
+"76",20,7,0,"Communicable",23.7975457069042,32.8406959650488,43.3014347279092,"South Atlantic","South","MD","Male","Maryland",1975
+"77",20,7,0,"Injuries",62.475861803996,71.1503831916093,80.2828428011594,"South Atlantic","South","MD","Male","Maryland",1975
+"78",20,7,0,"Non-communicable",22.6487750210844,31.8986082677979,41.6510056210525,"South Atlantic","South","MD","Male","Maryland",1975
+"79",20,7,1,"All other causes",45.8001543072124,52.781345571131,59.9376109633252,"South Atlantic","South","MD","Female","Maryland",1975
+"80",20,7,1,"Cancers",17.4887051937296,25.498806803471,33.5602363453974,"South Atlantic","South","MD","Female","Maryland",1975
+"81",20,7,1,"Cardiovascular",31.0001821759894,53.5794893215598,76.3158632440689,"South Atlantic","South","MD","Female","Maryland",1975
+"82",20,7,1,"Communicable",4.53633211129305,9.68061167132187,15.0936225249947,"South Atlantic","South","MD","Female","Maryland",1975
+"83",20,7,1,"Injuries",3.95906623782033,7.63720591243808,11.8506086911306,"South Atlantic","South","MD","Female","Maryland",1975
+"84",20,7,1,"Non-communicable",43.1577062154525,49.4094674096655,56.2612992071459,"South Atlantic","South","MD","Female","Maryland",1975
+"85",20,8,0,"All other causes",85.8700323819942,96.8590872279261,108.653154081385,"South Atlantic","South","MD","Male","Maryland",1976
+"86",20,8,0,"Cancers",80.3684142454483,96.4899305179474,113.76879332919,"South Atlantic","South","MD","Male","Maryland",1976
+"87",20,8,0,"Cardiovascular",-55.6854819914272,-24.1408001098687,8.09267641474264,"South Atlantic","South","MD","Male","Maryland",1976
+"88",20,8,0,"Communicable",20.2501941453241,30.2224875150259,40.6773422726754,"South Atlantic","South","MD","Male","Maryland",1976
+"89",20,8,0,"Injuries",54.3354090552127,62.5498475253576,70.302926474821,"South Atlantic","South","MD","Male","Maryland",1976
+"90",20,8,0,"Non-communicable",21.6065191934731,31.4217890209638,41.5767243311931,"South Atlantic","South","MD","Male","Maryland",1976
+"91",20,8,1,"All other causes",47.4103826659373,54.6960890338902,61.7953773481807,"South Atlantic","South","MD","Female","Maryland",1976
+"92",20,8,1,"Cancers",16.3657478481288,23.9753340220965,32.6436567874925,"South Atlantic","South","MD","Female","Maryland",1976
+"93",20,8,1,"Cardiovascular",25.1978863903479,46.767793080678,68.0642411242565,"South Atlantic","South","MD","Female","Maryland",1976
+"94",20,8,1,"Communicable",4.51179216254932,9.34160566886047,14.2616507916876,"South Atlantic","South","MD","Female","Maryland",1976
+"95",20,8,1,"Injuries",2.80287099771442,6.47507968186383,10.5212913574844,"South Atlantic","South","MD","Female","Maryland",1976
+"96",20,8,1,"Non-communicable",42.32152506644,48.8325642117947,55.5546972591218,"South Atlantic","South","MD","Female","Maryland",1976
+"97",20,9,0,"All other causes",80.9294362086081,91.6682139162136,102.676785433969,"South Atlantic","South","MD","Male","Maryland",1977
+"98",20,9,0,"Cancers",82.8290524147291,99.656886316276,115.725657362641,"South Atlantic","South","MD","Male","Maryland",1977
+"99",20,9,0,"Cardiovascular",-52.0101402532344,-22.3092700499503,6.8295138870252,"South Atlantic","South","MD","Male","Maryland",1977
+"100",20,9,0,"Communicable",20.2075307576457,30.7773315379817,40.6508315234421,"South Atlantic","South","MD","Male","Maryland",1977
+"101",20,9,0,"Injuries",45.7802063384869,53.6789116246891,60.9182212868881,"South Atlantic","South","MD","Male","Maryland",1977
+"102",20,9,0,"Non-communicable",20.3483840931504,29.077813955576,38.7802579554418,"South Atlantic","South","MD","Male","Maryland",1977
+"103",20,9,1,"All other causes",47.4519472320413,54.7375045209446,62.3489452314308,"South Atlantic","South","MD","Female","Maryland",1977
+"104",20,9,1,"Cancers",16.6247228628076,24.6993080979331,33.6562011034692,"South Atlantic","South","MD","Female","Maryland",1977
+"105",20,9,1,"Cardiovascular",30.9494424064244,51.837068283523,71.9115674061138,"South Atlantic","South","MD","Female","Maryland",1977
+"106",20,9,1,"Communicable",6.18635478586872,10.6370496154879,15.5119070375743,"South Atlantic","South","MD","Female","Maryland",1977
+"107",20,9,1,"Injuries",2.10139838470931,5.80349837860342,9.67446890370842,"South Atlantic","South","MD","Female","Maryland",1977
+"108",20,9,1,"Non-communicable",39.5423711396808,45.4959739606857,52.2026292652509,"South Atlantic","South","MD","Female","Maryland",1977
+"109",20,10,0,"All other causes",81.57759153598,92.7179706358162,103.667373841159,"South Atlantic","South","MD","Male","Maryland",1978
+"110",20,10,0,"Cancers",87.0543039731662,103.376937468772,121.987398576754,"South Atlantic","South","MD","Male","Maryland",1978
+"111",20,10,0,"Cardiovascular",-53.1141881165699,-24.2417607338779,4.60705956770012,"South Atlantic","South","MD","Male","Maryland",1978
+"112",20,10,0,"Communicable",20.6347947782387,31.0870577668379,41.7889726486785,"South Atlantic","South","MD","Male","Maryland",1978
+"113",20,10,0,"Injuries",42.2159408114001,50.0981129467851,57.1132586980748,"South Atlantic","South","MD","Male","Maryland",1978
+"114",20,10,0,"Non-communicable",16.4144137201016,25.82828869878,36.0044561998024,"South Atlantic","South","MD","Male","Maryland",1978
+"115",20,10,1,"All other causes",49.1431612850539,55.8563900602136,63.2541115314921,"South Atlantic","South","MD","Female","Maryland",1978
+"116",20,10,1,"Cancers",17.3831358804593,25.1368012016384,33.4538905189951,"South Atlantic","South","MD","Female","Maryland",1978
+"117",20,10,1,"Cardiovascular",32.0899820704617,52.2144126759685,73.3249649204374,"South Atlantic","South","MD","Female","Maryland",1978
+"118",20,10,1,"Communicable",5.30617223307091,9.99344197354574,14.9222093904059,"South Atlantic","South","MD","Female","Maryland",1978
+"119",20,10,1,"Injuries",2.08788809196059,5.57073394072718,9.32628888521867,"South Atlantic","South","MD","Female","Maryland",1978
+"120",20,10,1,"Non-communicable",37.6185243809322,43.7973201981123,50.2140532126066,"South Atlantic","South","MD","Female","Maryland",1978
+"121",20,11,0,"All other causes",85.8035703166277,96.9753656590676,108.901763818481,"South Atlantic","South","MD","Male","Maryland",1979
+"122",20,11,0,"Cancers",92.7010095917804,109.81990476022,125.957663528714,"South Atlantic","South","MD","Male","Maryland",1979
+"123",20,11,0,"Cardiovascular",-36.407881148122,-9.27258207100937,19.4979349709755,"South Atlantic","South","MD","Male","Maryland",1979
+"124",20,11,0,"Communicable",26.5292048275078,36.1461743870186,47.207984251196,"South Atlantic","South","MD","Male","Maryland",1979
+"125",20,11,0,"Injuries",41.3136126441421,48.2053062473393,55.5507618880127,"South Atlantic","South","MD","Male","Maryland",1979
+"126",20,11,0,"Non-communicable",17.3602750081716,26.707894472185,36.2886240415297,"South Atlantic","South","MD","Male","Maryland",1979
+"127",20,11,1,"All other causes",47.37952386856,54.4461157515088,61.5394739908122,"South Atlantic","South","MD","Female","Maryland",1979
+"128",20,11,1,"Cancers",18.814039059394,26.9004885759895,34.9858582885456,"South Atlantic","South","MD","Female","Maryland",1979
+"129",20,11,1,"Cardiovascular",42.3249795353843,61.9760863500767,84.716980802012,"South Atlantic","South","MD","Female","Maryland",1979
+"130",20,11,1,"Communicable",5.41800855389416,10.5710894087486,15.4161035204598,"South Atlantic","South","MD","Female","Maryland",1979
+"131",20,11,1,"Injuries",2.35219906585865,5.68172274746738,9.20186318877907,"South Atlantic","South","MD","Female","Maryland",1979
+"132",20,11,1,"Non-communicable",33.9791175777286,40.6286338866164,46.6846612040895,"South Atlantic","South","MD","Female","Maryland",1979
+"133",20,12,0,"All other causes",84.9588911817982,95.9314849914982,107.206331761958,"South Atlantic","South","MD","Male","Maryland",1980
+"134",20,12,0,"Cancers",102.581886797394,119.193273626965,136.899722552957,"South Atlantic","South","MD","Male","Maryland",1980
+"135",20,12,0,"Cardiovascular",-23.7576820758504,4.95770063824028,33.0699609457412,"South Atlantic","South","MD","Male","Maryland",1980
+"136",20,12,0,"Communicable",18.7844273731288,28.5768430478508,38.249569668251,"South Atlantic","South","MD","Male","Maryland",1980
+"137",20,12,0,"Injuries",36.2374419326308,43.3565940361895,50.936995038276,"South Atlantic","South","MD","Male","Maryland",1980
+"138",20,12,0,"Non-communicable",15.8006116963253,24.7924783452936,35.457996606575,"South Atlantic","South","MD","Male","Maryland",1980
+"139",20,12,1,"All other causes",44.6587946093994,52.148476499732,59.137056937758,"South Atlantic","South","MD","Female","Maryland",1980
+"140",20,12,1,"Cancers",18.575806225844,26.7082914739586,34.3850890833133,"South Atlantic","South","MD","Female","Maryland",1980
+"141",20,12,1,"Cardiovascular",33.4243968489476,53.3783582409508,72.1303823153696,"South Atlantic","South","MD","Female","Maryland",1980
+"142",20,12,1,"Communicable",7.83593608650849,13.3316187174233,18.5768759145504,"South Atlantic","South","MD","Female","Maryland",1980
+"143",20,12,1,"Injuries",2.4574689306763,5.63065697020531,8.86378277480558,"South Atlantic","South","MD","Female","Maryland",1980
+"144",20,12,1,"Non-communicable",30.8827001740288,36.4966335400357,42.5033534568532,"South Atlantic","South","MD","Female","Maryland",1980
+"145",20,13,0,"All other causes",80.6456307656694,91.7453387835776,102.843186048024,"South Atlantic","South","MD","Male","Maryland",1981
+"146",20,13,0,"Cancers",110.42267355516,126.018907221401,144.219413121198,"South Atlantic","South","MD","Male","Maryland",1981
+"147",20,13,0,"Cardiovascular",-8.98909717164251,19.3867672613339,48.7445111955463,"South Atlantic","South","MD","Male","Maryland",1981
+"148",20,13,0,"Communicable",16.3491317667906,25.6867519439188,35.1377393715383,"South Atlantic","South","MD","Male","Maryland",1981
+"149",20,13,0,"Injuries",33.1650596787178,39.3684424295607,45.7188142308647,"South Atlantic","South","MD","Male","Maryland",1981
+"150",20,13,0,"Non-communicable",15.0512513659884,23.4764800493178,32.1767626669359,"South Atlantic","South","MD","Male","Maryland",1981
+"151",20,13,1,"All other causes",43.9573657261716,50.9449720334354,58.5072165779393,"South Atlantic","South","MD","Female","Maryland",1981
+"152",20,13,1,"Cancers",19.4852527443847,27.3681883707744,35.4046486842226,"South Atlantic","South","MD","Female","Maryland",1981
+"153",20,13,1,"Cardiovascular",45.3193578383919,64.3337510697508,84.1728314440127,"South Atlantic","South","MD","Female","Maryland",1981
+"154",20,13,1,"Communicable",10.1437843111888,15.2183489441249,20.9612538502529,"South Atlantic","South","MD","Female","Maryland",1981
+"155",20,13,1,"Injuries",2.82302400173807,5.99326433671149,9.1504594796567,"South Atlantic","South","MD","Female","Maryland",1981
+"156",20,13,1,"Non-communicable",26.8331355996503,32.8745049665041,38.5622209303621,"South Atlantic","South","MD","Female","Maryland",1981
+"157",20,14,0,"All other causes",81.3312023066526,92.2690066426284,103.862408826352,"South Atlantic","South","MD","Male","Maryland",1982
+"158",20,14,0,"Cancers",115.068678169344,132.610514378335,151.027278467578,"South Atlantic","South","MD","Male","Maryland",1982
+"159",20,14,0,"Cardiovascular",-0.699383701830447,27.3600914810152,54.5193651545526,"South Atlantic","South","MD","Male","Maryland",1982
+"160",20,14,0,"Communicable",19.441760975897,28.5611385858556,38.4607394585784,"South Atlantic","South","MD","Male","Maryland",1982
+"161",20,14,0,"Injuries",31.9683297879351,38.3066972206149,44.5456343114115,"South Atlantic","South","MD","Male","Maryland",1982
+"162",20,14,0,"Non-communicable",13.6727712071881,22.7207108828139,32.1761882833078,"South Atlantic","South","MD","Male","Maryland",1982
+"163",20,14,1,"All other causes",42.1465381345286,48.5120160983757,55.5042502281332,"South Atlantic","South","MD","Female","Maryland",1982
+"164",20,14,1,"Cancers",20.9729322019126,28.8948587951454,36.5866917737876,"South Atlantic","South","MD","Female","Maryland",1982
+"165",20,14,1,"Cardiovascular",45.243237365269,64.5168625327134,83.3571480581562,"South Atlantic","South","MD","Female","Maryland",1982
+"166",20,14,1,"Communicable",9.07389679606547,14.5052052183187,19.7903727465419,"South Atlantic","South","MD","Female","Maryland",1982
+"167",20,14,1,"Injuries",3.10915404058424,6.39437749130805,9.43040256362179,"South Atlantic","South","MD","Female","Maryland",1982
+"168",20,14,1,"Non-communicable",24.74806824651,30.5764563948645,36.5198776904067,"South Atlantic","South","MD","Female","Maryland",1982
+"169",20,15,0,"All other causes",81.224885220196,91.9337547409254,103.563511058819,"South Atlantic","South","MD","Male","Maryland",1983
+"170",20,15,0,"Cancers",113.467280277948,130.698304126396,147.377664490963,"South Atlantic","South","MD","Male","Maryland",1983
+"171",20,15,0,"Cardiovascular",-5.78052554079117,19.277030170462,46.1949892408268,"South Atlantic","South","MD","Male","Maryland",1983
+"172",20,15,0,"Communicable",17.5487980581499,26.9204231893694,36.9216228063209,"South Atlantic","South","MD","Male","Maryland",1983
+"173",20,15,0,"Injuries",31.8337612738395,37.9892102353379,44.7057854170115,"South Atlantic","South","MD","Male","Maryland",1983
+"174",20,15,0,"Non-communicable",15.034557971583,23.7778302811586,33.3559700396343,"South Atlantic","South","MD","Male","Maryland",1983
+"175",20,15,1,"All other causes",39.3237908616365,46.2348171589575,53.4182249925265,"South Atlantic","South","MD","Female","Maryland",1983
+"176",20,15,1,"Cancers",20.3183035364405,27.9961843267709,36.0207138194093,"South Atlantic","South","MD","Female","Maryland",1983
+"177",20,15,1,"Cardiovascular",36.1283138086981,54.922300532236,74.6165176757065,"South Atlantic","South","MD","Female","Maryland",1983
+"178",20,15,1,"Communicable",7.66457299399113,12.9689029493626,18.0661856498879,"South Atlantic","South","MD","Female","Maryland",1983
+"179",20,15,1,"Injuries",2.86650625347825,6.12915520872754,9.30947241652767,"South Atlantic","South","MD","Female","Maryland",1983
+"180",20,15,1,"Non-communicable",23.6187876591379,29.5245633958077,35.0492430456706,"South Atlantic","South","MD","Female","Maryland",1983
+"181",20,16,0,"All other causes",79.0076377266698,89.8362652180728,101.901057687293,"South Atlantic","South","MD","Male","Maryland",1984
+"182",20,16,0,"Cancers",111.05793321933,127.346163410524,146.139595029416,"South Atlantic","South","MD","Male","Maryland",1984
+"183",20,16,0,"Cardiovascular",2.91670970610725,30.7765480613231,59.8017902420651,"South Atlantic","South","MD","Male","Maryland",1984
+"184",20,16,0,"Communicable",17.2800941635215,27.4807477187948,38.1497496645938,"South Atlantic","South","MD","Male","Maryland",1984
+"185",20,16,0,"Injuries",30.6423290953201,36.8249730960923,43.2847612676217,"South Atlantic","South","MD","Male","Maryland",1984
+"186",20,16,0,"Non-communicable",13.1824060204172,22.8717257209703,32.1374233550654,"South Atlantic","South","MD","Male","Maryland",1984
+"187",20,16,1,"All other causes",38.3996820331939,45.5044875630318,52.4775207722667,"South Atlantic","South","MD","Female","Maryland",1984
+"188",20,16,1,"Cancers",19.8296327913813,27.8409777466151,34.8846094131563,"South Atlantic","South","MD","Female","Maryland",1984
+"189",20,16,1,"Cardiovascular",43.6255269945716,60.6166546448776,79.3411801602981,"South Atlantic","South","MD","Female","Maryland",1984
+"190",20,16,1,"Communicable",11.0982950854455,16.1827994186472,21.874297410625,"South Atlantic","South","MD","Female","Maryland",1984
+"191",20,16,1,"Injuries",2.68158762014672,5.75479594883912,8.79521154579687,"South Atlantic","South","MD","Female","Maryland",1984
+"192",20,16,1,"Non-communicable",21.4609061426212,27.5958305476444,33.8444456150824,"South Atlantic","South","MD","Female","Maryland",1984
+"193",20,17,0,"All other causes",82.9753944381325,93.9279143012947,106.8431866217,"South Atlantic","South","MD","Male","Maryland",1985
+"194",20,17,0,"Cancers",114.937028103473,131.58995430726,149.314523681797,"South Atlantic","South","MD","Male","Maryland",1985
+"195",20,17,0,"Cardiovascular",5.01317365385853,30.4532686594088,54.9801567911494,"South Atlantic","South","MD","Male","Maryland",1985
+"196",20,17,0,"Communicable",20.9970983764383,31.727789632464,43.3075129834346,"South Atlantic","South","MD","Male","Maryland",1985
+"197",20,17,0,"Injuries",28.0164000811758,34.2719434379314,40.6455259268993,"South Atlantic","South","MD","Male","Maryland",1985
+"198",20,17,0,"Non-communicable",15.9702306847138,25.8425136867956,34.8932578549747,"South Atlantic","South","MD","Male","Maryland",1985
+"199",20,17,1,"All other causes",39.4967020904619,46.8902655023914,53.7534061345744,"South Atlantic","South","MD","Female","Maryland",1985
+"200",20,17,1,"Cancers",20.8782142850944,28.2076652841703,36.494240000699,"South Atlantic","South","MD","Female","Maryland",1985
+"201",20,17,1,"Cardiovascular",50.7987261553886,67.6724063496081,85.8710548139056,"South Atlantic","South","MD","Female","Maryland",1985
+"202",20,17,1,"Communicable",9.46696651633916,15.0753282753284,20.7626678792171,"South Atlantic","South","MD","Female","Maryland",1985
+"203",20,17,1,"Injuries",2.89100514852999,5.73381974308658,8.58262291964321,"South Atlantic","South","MD","Female","Maryland",1985
+"204",20,17,1,"Non-communicable",21.7012487410196,27.8546259146498,34.1211078222853,"South Atlantic","South","MD","Female","Maryland",1985
+"205",20,18,0,"All other causes",82.6762036440624,94.3502595432156,106.195380786513,"South Atlantic","South","MD","Male","Maryland",1986
+"206",20,18,0,"Cancers",109.978406952787,125.709277357128,143.021623787153,"South Atlantic","South","MD","Male","Maryland",1986
+"207",20,18,0,"Cardiovascular",25.5139565345955,50.2441692977551,74.5613811840901,"South Atlantic","South","MD","Male","Maryland",1986
+"208",20,18,0,"Communicable",19.7373675495136,30.5987756321925,41.871458412973,"South Atlantic","South","MD","Male","Maryland",1986
+"209",20,18,0,"Injuries",30.7363444001763,36.167238163521,41.840294407588,"South Atlantic","South","MD","Male","Maryland",1986
+"210",20,18,0,"Non-communicable",21.0256187923315,30.6780607189246,40.4422930718977,"South Atlantic","South","MD","Male","Maryland",1986
+"211",20,18,1,"All other causes",40.4313613306345,47.2683337707703,54.6836419144669,"South Atlantic","South","MD","Female","Maryland",1986
+"212",20,18,1,"Cancers",21.9779130257249,29.8891910800974,37.8085262436787,"South Atlantic","South","MD","Female","Maryland",1986
+"213",20,18,1,"Cardiovascular",63.2798605571131,80.0510018774036,97.8182168780644,"South Atlantic","South","MD","Female","Maryland",1986
+"214",20,18,1,"Communicable",11.264927635552,16.6991554868249,22.9745186977112,"South Atlantic","South","MD","Female","Maryland",1986
+"215",20,18,1,"Injuries",2.83239976784168,5.75024627323666,8.67813473520519,"South Atlantic","South","MD","Female","Maryland",1986
+"216",20,18,1,"Non-communicable",22.9530328863178,29.1321503967248,35.0231898909078,"South Atlantic","South","MD","Female","Maryland",1986
+"217",20,19,0,"All other causes",82.4229987869731,92.7117214090836,103.956039615921,"South Atlantic","South","MD","Male","Maryland",1987
+"218",20,19,0,"Cancers",112.5547868382,129.242793228373,146.329670814697,"South Atlantic","South","MD","Male","Maryland",1987
+"219",20,19,0,"Cardiovascular",44.7936692580626,68.5326450474446,95.8647101049974,"South Atlantic","South","MD","Male","Maryland",1987
+"220",20,19,0,"Communicable",30.235156549687,40.678751987561,52.6280184051581,"South Atlantic","South","MD","Male","Maryland",1987
+"221",20,19,0,"Injuries",33.4415575321424,39.3816792771098,45.4336424424437,"South Atlantic","South","MD","Male","Maryland",1987
+"222",20,19,0,"Non-communicable",22.2316693074144,31.8212901638087,41.9736262011557,"South Atlantic","South","MD","Male","Maryland",1987
+"223",20,19,1,"All other causes",45.6025071343187,52.8242129511786,60.0545769309202,"South Atlantic","South","MD","Female","Maryland",1987
+"224",20,19,1,"Cancers",19.0769527820463,26.8329700205931,34.9432359459561,"South Atlantic","South","MD","Female","Maryland",1987
+"225",20,19,1,"Cardiovascular",55.6311839461684,72.7185375076985,90.776385581402,"South Atlantic","South","MD","Female","Maryland",1987
+"226",20,19,1,"Communicable",14.1429983178017,20.15484727724,26.8526410423712,"South Atlantic","South","MD","Female","Maryland",1987
+"227",20,19,1,"Injuries",3.01003117485787,5.78907744232771,8.75648916230695,"South Atlantic","South","MD","Female","Maryland",1987
+"228",20,19,1,"Non-communicable",24.4427246023654,30.8549172924584,37.7207861374668,"South Atlantic","South","MD","Female","Maryland",1987
+"229",20,20,0,"All other causes",81.9015601969994,93.2656220239306,104.737303623699,"South Atlantic","South","MD","Male","Maryland",1988
+"230",20,20,0,"Cancers",120.678743953098,137.609942685355,155.504977805452,"South Atlantic","South","MD","Male","Maryland",1988
+"231",20,20,0,"Cardiovascular",59.0269439006009,84.7095278271038,109.688750559347,"South Atlantic","South","MD","Male","Maryland",1988
+"232",20,20,0,"Communicable",31.4842577892677,43.0120373027549,55.1314233065101,"South Atlantic","South","MD","Male","Maryland",1988
+"233",20,20,0,"Injuries",36.5410906757793,42.5535950480634,48.3783157795124,"South Atlantic","South","MD","Male","Maryland",1988
+"234",20,20,0,"Non-communicable",24.1321659317816,34.264514771057,44.0402578628002,"South Atlantic","South","MD","Male","Maryland",1988
+"235",20,20,1,"All other causes",44.7897378768445,52.2813932004799,59.5451118644879,"South Atlantic","South","MD","Female","Maryland",1988
+"236",20,20,1,"Cancers",20.6456271668844,28.2215014138306,36.6507963897166,"South Atlantic","South","MD","Female","Maryland",1988
+"237",20,20,1,"Cardiovascular",53.8569176148707,70.8130425656744,87.9007515577882,"South Atlantic","South","MD","Female","Maryland",1988
+"238",20,20,1,"Communicable",16.3199329025037,22.6911078057685,29.5841828530888,"South Atlantic","South","MD","Female","Maryland",1988
+"239",20,20,1,"Injuries",3.43455121002379,6.0362079067543,8.96144972321673,"South Atlantic","South","MD","Female","Maryland",1988
+"240",20,20,1,"Non-communicable",25.6147941000181,32.063302324286,38.3586217761511,"South Atlantic","South","MD","Female","Maryland",1988
+"241",20,21,0,"All other causes",83.1366047399321,94.889004200162,105.867081753149,"South Atlantic","South","MD","Male","Maryland",1989
+"242",20,21,0,"Cancers",127.351082476791,143.851534554923,161.276801709905,"South Atlantic","South","MD","Male","Maryland",1989
+"243",20,21,0,"Cardiovascular",65.2807552022648,89.4788107581391,114.412276556006,"South Atlantic","South","MD","Male","Maryland",1989
+"244",20,21,0,"Communicable",50.2108353240144,61.1911081023606,72.518274906819,"South Atlantic","South","MD","Male","Maryland",1989
+"245",20,21,0,"Injuries",40.2617538896774,46.1959090702633,51.9661169745954,"South Atlantic","South","MD","Male","Maryland",1989
+"246",20,21,0,"Non-communicable",27.1647364451376,36.545992941787,46.4236138835557,"South Atlantic","South","MD","Male","Maryland",1989
+"247",20,21,1,"All other causes",44.1715022880312,51.0393897461498,58.5367129313453,"South Atlantic","South","MD","Female","Maryland",1989
+"248",20,21,1,"Cancers",21.9506137295098,29.6696684962727,38.6342185486381,"South Atlantic","South","MD","Female","Maryland",1989
+"249",20,21,1,"Cardiovascular",58.6151782801617,75.7293669886038,93.0064488495411,"South Atlantic","South","MD","Female","Maryland",1989
+"250",20,21,1,"Communicable",22.9401935944973,29.4499521626726,36.5537273419279,"South Atlantic","South","MD","Female","Maryland",1989
+"251",20,21,1,"Injuries",3.44658712296088,6.14141118690235,9.01716516820187,"South Atlantic","South","MD","Female","Maryland",1989
+"252",20,21,1,"Non-communicable",23.5941347862278,30.7782548759948,37.4803884677876,"South Atlantic","South","MD","Female","Maryland",1989
+"253",20,22,0,"All other causes",83.2580666528729,94.5386774510083,105.825081270125,"South Atlantic","South","MD","Male","Maryland",1990
+"254",20,22,0,"Cancers",129.676911532615,147.282478219036,162.588047151171,"South Atlantic","South","MD","Male","Maryland",1990
+"255",20,22,0,"Cardiovascular",46.8025988917346,70.8504309579058,92.9903251235598,"South Atlantic","South","MD","Male","Maryland",1990
+"256",20,22,0,"Communicable",51.7970020841065,62.7985385984237,73.5937001602435,"South Atlantic","South","MD","Male","Maryland",1990
+"257",20,22,0,"Injuries",46.154418411427,51.9800375161529,57.9101836754155,"South Atlantic","South","MD","Male","Maryland",1990
+"258",20,22,0,"Non-communicable",26.704280774763,36.7825459097483,46.5828625830788,"South Atlantic","South","MD","Male","Maryland",1990
+"259",20,22,1,"All other causes",43.1192705005909,50.1473097116781,57.4297521662097,"South Atlantic","South","MD","Female","Maryland",1990
+"260",20,22,1,"Cancers",24.6572049044107,32.9769629407375,40.8146850742977,"South Atlantic","South","MD","Female","Maryland",1990
+"261",20,22,1,"Cardiovascular",54.866405242191,72.6294429842907,87.8301361014779,"South Atlantic","South","MD","Female","Maryland",1990
+"262",20,22,1,"Communicable",19.2610673811053,25.2380942183252,31.517090550967,"South Atlantic","South","MD","Female","Maryland",1990
+"263",20,22,1,"Injuries",3.68774079646212,6.23621598573407,8.76267007231158,"South Atlantic","South","MD","Female","Maryland",1990
+"264",20,22,1,"Non-communicable",24.6766193229931,30.9475626357893,36.9865982768869,"South Atlantic","South","MD","Female","Maryland",1990
+"265",20,23,0,"All other causes",81.5867105054413,92.654003177356,103.210102514753,"South Atlantic","South","MD","Male","Maryland",1991
+"266",20,23,0,"Cancers",131.285797928719,147.50041519913,164.877104699207,"South Atlantic","South","MD","Male","Maryland",1991
+"267",20,23,0,"Cardiovascular",50.3073468267596,70.6753626126865,93.5184369002942,"South Atlantic","South","MD","Male","Maryland",1991
+"268",20,23,0,"Communicable",72.0466173619504,82.8373311497615,94.6773266606263,"South Atlantic","South","MD","Male","Maryland",1991
+"269",20,23,0,"Injuries",48.0886130347921,53.7662895965274,59.6718764198652,"South Atlantic","South","MD","Male","Maryland",1991
+"270",20,23,0,"Non-communicable",29.4552290507303,38.9851239270084,48.5048462021703,"South Atlantic","South","MD","Male","Maryland",1991
+"271",20,23,1,"All other causes",40.5953352630806,47.1602513898317,53.9432975792082,"South Atlantic","South","MD","Female","Maryland",1991
+"272",20,23,1,"Cancers",27.3014079877208,35.3436204350128,42.767409786587,"South Atlantic","South","MD","Female","Maryland",1991
+"273",20,23,1,"Cardiovascular",57.5134548249251,72.124442184858,87.6556035578174,"South Atlantic","South","MD","Female","Maryland",1991
+"274",20,23,1,"Communicable",22.712947612281,28.0475317656408,34.2469394579485,"South Atlantic","South","MD","Female","Maryland",1991
+"275",20,23,1,"Injuries",3.1177266398761,5.69990053546558,8.4700069753802,"South Atlantic","South","MD","Female","Maryland",1991
+"276",20,23,1,"Non-communicable",22.661475929645,29.4863312230367,36.2628827716519,"South Atlantic","South","MD","Female","Maryland",1991
+"277",20,24,0,"All other causes",80.6738321214213,92.4092352084414,103.195181438935,"South Atlantic","South","MD","Male","Maryland",1992
+"278",20,24,0,"Cancers",119.867652118514,136.270191885767,151.565342678728,"South Atlantic","South","MD","Male","Maryland",1992
+"279",20,24,0,"Cardiovascular",57.7065396075812,78.5316117888551,99.0881985451033,"South Atlantic","South","MD","Male","Maryland",1992
+"280",20,24,0,"Communicable",86.2150690460076,97.7657617353808,110.966844678,"South Atlantic","South","MD","Male","Maryland",1992
+"281",20,24,0,"Injuries",49.9498850802283,56.0164508933887,62.7235251766526,"South Atlantic","South","MD","Male","Maryland",1992
+"282",20,24,0,"Non-communicable",25.3136792426371,35.3475460712586,44.7201021582428,"South Atlantic","South","MD","Male","Maryland",1992
+"283",20,24,1,"All other causes",41.0433925071137,47.9521662643254,55.0945618937609,"South Atlantic","South","MD","Female","Maryland",1992
+"284",20,24,1,"Cancers",27.566788591951,34.848354632366,43.0034751665212,"South Atlantic","South","MD","Female","Maryland",1992
+"285",20,24,1,"Cardiovascular",55.721052578677,68.9627151596179,83.769278771146,"South Atlantic","South","MD","Female","Maryland",1992
+"286",20,24,1,"Communicable",25.706006804981,31.2188584835105,36.806027381029,"South Atlantic","South","MD","Female","Maryland",1992
+"287",20,24,1,"Injuries",2.58735428992602,5.0937095840335,7.60259774092715,"South Atlantic","South","MD","Female","Maryland",1992
+"288",20,24,1,"Non-communicable",21.486430633613,27.6185014706199,33.9244534220193,"South Atlantic","South","MD","Female","Maryland",1992
+"289",20,25,0,"All other causes",79.2557973686265,89.6115630091685,101.292178921474,"South Atlantic","South","MD","Male","Maryland",1993
+"290",20,25,0,"Cancers",111.628141892047,127.582732700742,144.338836174725,"South Atlantic","South","MD","Male","Maryland",1993
+"291",20,25,0,"Cardiovascular",62.0124309789389,82.3037050518574,104.102248469842,"South Atlantic","South","MD","Male","Maryland",1993
+"292",20,25,0,"Communicable",108.939862672457,120.496559852048,132.852374746271,"South Atlantic","South","MD","Male","Maryland",1993
+"293",20,25,0,"Injuries",51.9095502564439,57.5762060620719,63.4878980836036,"South Atlantic","South","MD","Male","Maryland",1993
+"294",20,25,0,"Non-communicable",21.1086964828094,30.8812490236593,41.0374969208424,"South Atlantic","South","MD","Male","Maryland",1993
+"295",20,25,1,"All other causes",37.7820503082125,44.1764311132759,51.2041560092473,"South Atlantic","South","MD","Female","Maryland",1993
+"296",20,25,1,"Cancers",26.0595029456152,33.7376268909568,41.7566566916362,"South Atlantic","South","MD","Female","Maryland",1993
+"297",20,25,1,"Cardiovascular",57.2422252260164,70.6396951576115,84.6947122367725,"South Atlantic","South","MD","Female","Maryland",1993
+"298",20,25,1,"Communicable",30.1788187347494,35.7425245310016,41.8925344171432,"South Atlantic","South","MD","Female","Maryland",1993
+"299",20,25,1,"Injuries",2.44023620134499,4.93927159701698,7.32938209896365,"South Atlantic","South","MD","Female","Maryland",1993
+"300",20,25,1,"Non-communicable",20.863009418629,26.9639806468907,33.516917144932,"South Atlantic","South","MD","Female","Maryland",1993
+"301",20,26,0,"All other causes",75.602400249202,85.420469292663,96.5504206232796,"South Atlantic","South","MD","Male","Maryland",1994
+"302",20,26,0,"Cancers",114.20222037384,129.010706492704,145.166496879661,"South Atlantic","South","MD","Male","Maryland",1994
+"303",20,26,0,"Cardiovascular",66.8350192403828,87.875104014591,108.269570382801,"South Atlantic","South","MD","Male","Maryland",1994
+"304",20,26,0,"Communicable",117.851519861539,130.157192757801,142.274879172826,"South Atlantic","South","MD","Male","Maryland",1994
+"305",20,26,0,"Injuries",50.0680698737313,55.3985151144988,61.6134153025832,"South Atlantic","South","MD","Male","Maryland",1994
+"306",20,26,0,"Non-communicable",21.1992885245601,31.3188705504292,40.9156257978075,"South Atlantic","South","MD","Male","Maryland",1994
+"307",20,26,1,"All other causes",34.1622284796466,41.4136460208193,47.7374365617814,"South Atlantic","South","MD","Female","Maryland",1994
+"308",20,26,1,"Cancers",23.3705181889123,30.5218234746742,37.617534725084,"South Atlantic","South","MD","Female","Maryland",1994
+"309",20,26,1,"Cardiovascular",48.6815551029161,62.7267830039571,77.1325270288381,"South Atlantic","South","MD","Female","Maryland",1994
+"310",20,26,1,"Communicable",34.7017484522439,40.3484649112124,46.3287163976155,"South Atlantic","South","MD","Female","Maryland",1994
+"311",20,26,1,"Injuries",2.74160550843459,5.07152176489597,7.41230831352487,"South Atlantic","South","MD","Female","Maryland",1994
+"312",20,26,1,"Non-communicable",18.4389120629761,24.5122457887379,31.1569633856082,"South Atlantic","South","MD","Female","Maryland",1994
+"313",20,27,0,"All other causes",72.2366755406549,82.525875787884,93.4064386478044,"South Atlantic","South","MD","Male","Maryland",1995
+"314",20,27,0,"Cancers",114.722773670208,130.925848257946,146.959303276471,"South Atlantic","South","MD","Male","Maryland",1995
+"315",20,27,0,"Cardiovascular",64.6793401556977,86.3363401759881,106.951652741172,"South Atlantic","South","MD","Male","Maryland",1995
+"316",20,27,0,"Communicable",127.818621992854,139.851160546324,151.691773913159,"South Atlantic","South","MD","Male","Maryland",1995
+"317",20,27,0,"Injuries",47.3846706182716,52.8426501052395,58.4293347153613,"South Atlantic","South","MD","Male","Maryland",1995
+"318",20,27,0,"Non-communicable",23.2821666832158,32.1177889626954,41.2540411414194,"South Atlantic","South","MD","Male","Maryland",1995
+"319",20,27,1,"All other causes",33.0274419176217,39.7219891180425,46.5953119876204,"South Atlantic","South","MD","Female","Maryland",1995
+"320",20,27,1,"Cancers",21.6801669912011,28.7403441066856,36.6630095099919,"South Atlantic","South","MD","Female","Maryland",1995
+"321",20,27,1,"Cardiovascular",45.9004281148481,59.279182778307,72.8900676095083,"South Atlantic","South","MD","Female","Maryland",1995
+"322",20,27,1,"Communicable",36.8564293165536,42.4641826325483,48.4812515831156,"South Atlantic","South","MD","Female","Maryland",1995
+"323",20,27,1,"Injuries",2.54279419152632,4.98040396866244,7.25990695129648,"South Atlantic","South","MD","Female","Maryland",1995
+"324",20,27,1,"Non-communicable",20.7351400690193,26.7974212539095,34.0833859783331,"South Atlantic","South","MD","Female","Maryland",1995
+"325",20,28,0,"All other causes",69.2200151397775,79.6045405811341,90.2494135265945,"South Atlantic","South","MD","Male","Maryland",1996
+"326",20,28,0,"Cancers",109.677907716778,125.51463939092,140.728431704406,"South Atlantic","South","MD","Male","Maryland",1996
+"327",20,28,0,"Cardiovascular",70.7591395366667,92.0217771159504,111.987969538483,"South Atlantic","South","MD","Male","Maryland",1996
+"328",20,28,0,"Communicable",108.725138527463,120.459663170121,132.227417764479,"South Atlantic","South","MD","Male","Maryland",1996
+"329",20,28,0,"Injuries",46.3430015721504,51.86208018905,57.2786241441423,"South Atlantic","South","MD","Male","Maryland",1996
+"330",20,28,0,"Non-communicable",23.51985160389,32.5212253339483,42.5521418039558,"South Atlantic","South","MD","Male","Maryland",1996
+"331",20,28,1,"All other causes",32.2706351566402,39.1759277558447,46.1477031344134,"South Atlantic","South","MD","Female","Maryland",1996
+"332",20,28,1,"Cancers",20.4508904644541,27.1605748855626,34.3889970152782,"South Atlantic","South","MD","Female","Maryland",1996
+"333",20,28,1,"Cardiovascular",53.7312806489149,66.6205077627383,79.5757410117164,"South Atlantic","South","MD","Female","Maryland",1996
+"334",20,28,1,"Communicable",37.9575570529675,43.8561978031419,50.0427421376746,"South Atlantic","South","MD","Female","Maryland",1996
+"335",20,28,1,"Injuries",2.3233175481138,4.33582831529274,6.64335406191241,"South Atlantic","South","MD","Female","Maryland",1996
+"336",20,28,1,"Non-communicable",18.5193863900164,24.7457704383973,31.5845154596555,"South Atlantic","South","MD","Female","Maryland",1996
+"337",20,29,0,"All other causes",62.5977560417934,72.4395294255924,83.1245404842322,"South Atlantic","South","MD","Male","Maryland",1997
+"338",20,29,0,"Cancers",109.499736340224,123.591492370308,140.150959233625,"South Atlantic","South","MD","Male","Maryland",1997
+"339",20,29,0,"Cardiovascular",86.8369927370973,105.696147455613,124.176220701707,"South Atlantic","South","MD","Male","Maryland",1997
+"340",20,29,0,"Communicable",78.8916913416171,89.8683822487606,100.628285597805,"South Atlantic","South","MD","Male","Maryland",1997
+"341",20,29,0,"Injuries",43.2429975808524,48.6074150540321,53.9003627495387,"South Atlantic","South","MD","Male","Maryland",1997
+"342",20,29,0,"Non-communicable",25.8540738302158,34.2660682242213,43.5330814066559,"South Atlantic","South","MD","Male","Maryland",1997
+"343",20,29,1,"All other causes",31.9864317438695,38.6713470868195,46.0771929591403,"South Atlantic","South","MD","Female","Maryland",1997
+"344",20,29,1,"Cancers",21.3426337640531,28.2071591330512,35.0543086519038,"South Atlantic","South","MD","Female","Maryland",1997
+"345",20,29,1,"Cardiovascular",55.5534338521509,68.9413312891028,82.2364862396402,"South Atlantic","South","MD","Female","Maryland",1997
+"346",20,29,1,"Communicable",30.7272590850631,36.2747359180829,41.9566343362985,"South Atlantic","South","MD","Female","Maryland",1997
+"347",20,29,1,"Injuries",1.5498232908557,3.50605139824744,5.7567241988879,"South Atlantic","South","MD","Female","Maryland",1997
+"348",20,29,1,"Non-communicable",17.4781565310511,24.2896261875763,30.8353107295094,"South Atlantic","South","MD","Female","Maryland",1997
+"349",20,30,0,"All other causes",60.7973687061222,71.0439096943529,81.184212756869,"South Atlantic","South","MD","Male","Maryland",1998
+"350",20,30,0,"Cancers",91.3906893802268,105.676631618767,120.659554650594,"South Atlantic","South","MD","Male","Maryland",1998
+"351",20,30,0,"Cardiovascular",90.6433435697729,108.451610856068,127.631435293341,"South Atlantic","South","MD","Male","Maryland",1998
+"352",20,30,0,"Communicable",70.0833906744457,80.2588705833263,91.1150890237131,"South Atlantic","South","MD","Male","Maryland",1998
+"353",20,30,0,"Injuries",43.1234636128927,47.9707040714321,53.0984963034105,"South Atlantic","South","MD","Male","Maryland",1998
+"354",20,30,0,"Non-communicable",28.4728831368739,37.3596866154228,46.4835848071599,"South Atlantic","South","MD","Male","Maryland",1998
+"355",20,30,1,"All other causes",29.3531939347954,35.7258636133216,42.4366560254593,"South Atlantic","South","MD","Female","Maryland",1998
+"356",20,30,1,"Cancers",19.7816089689418,26.1730135873643,33.0278321941888,"South Atlantic","South","MD","Female","Maryland",1998
+"357",20,30,1,"Cardiovascular",61.038860594952,73.9093730151366,86.5231993284772,"South Atlantic","South","MD","Female","Maryland",1998
+"358",20,30,1,"Communicable",27.5058093014262,32.9422980985612,38.3873813805581,"South Atlantic","South","MD","Female","Maryland",1998
+"359",20,30,1,"Injuries",1.06357023457487,3.03938537817733,5.1579337775338,"South Atlantic","South","MD","Female","Maryland",1998
+"360",20,30,1,"Non-communicable",18.4063762913084,25.1248039610733,31.586806421672,"South Atlantic","South","MD","Female","Maryland",1998
+"361",20,31,0,"All other causes",60.0656859408746,70.2688835755616,80.3350834384168,"South Atlantic","South","MD","Male","Maryland",1999
+"362",20,31,0,"Cancers",83.1384526695662,96.7757731417894,110.468225447225,"South Atlantic","South","MD","Male","Maryland",1999
+"363",20,31,0,"Cardiovascular",82.0539505592681,100.067003424802,119.376017723199,"South Atlantic","South","MD","Male","Maryland",1999
+"364",20,31,0,"Communicable",71.3849263787706,81.680878451475,92.341043614138,"South Atlantic","South","MD","Male","Maryland",1999
+"365",20,31,0,"Injuries",40.2677646823451,45.347940549023,50.4123814755705,"South Atlantic","South","MD","Male","Maryland",1999
+"366",20,31,0,"Non-communicable",26.5945307330161,35.975750166831,45.5840171244189,"South Atlantic","South","MD","Male","Maryland",1999
+"367",20,31,1,"All other causes",31.0288405697128,38.2728434760527,45.6114817937059,"South Atlantic","South","MD","Female","Maryland",1999
+"368",20,31,1,"Cancers",17.6287555300402,24.7455521541734,31.2086276219653,"South Atlantic","South","MD","Female","Maryland",1999
+"369",20,31,1,"Cardiovascular",61.7304783956208,73.7491234514193,87.0877572830728,"South Atlantic","South","MD","Female","Maryland",1999
+"370",20,31,1,"Communicable",29.732522536353,35.4201881589802,41.418977149915,"South Atlantic","South","MD","Female","Maryland",1999
+"371",20,31,1,"Injuries",0.411500609742886,2.43293882736273,4.50772603849858,"South Atlantic","South","MD","Female","Maryland",1999
+"372",20,31,1,"Non-communicable",14.515718533046,21.2827997905065,27.558851350163,"South Atlantic","South","MD","Female","Maryland",1999
+"373",20,32,0,"All other causes",55.2717873092916,65.0029120539503,75.3469793088985,"South Atlantic","South","MD","Male","Maryland",2000
+"374",20,32,0,"Cancers",77.6728181376691,90.0839225387801,104.111960532109,"South Atlantic","South","MD","Male","Maryland",2000
+"375",20,32,0,"Cardiovascular",79.583287555918,99.0265058355961,118.083741816889,"South Atlantic","South","MD","Male","Maryland",2000
+"376",20,32,0,"Communicable",71.5618867657277,81.598010438258,91.6122100398095,"South Atlantic","South","MD","Male","Maryland",2000
+"377",20,32,0,"Injuries",36.8437750107352,41.7798244176243,46.7243176916427,"South Atlantic","South","MD","Male","Maryland",2000
+"378",20,32,0,"Non-communicable",24.0712188212255,32.7408339164626,42.1485067475143,"South Atlantic","South","MD","Male","Maryland",2000
+"379",20,32,1,"All other causes",25.6903392810768,32.0793638894028,38.4886147086961,"South Atlantic","South","MD","Female","Maryland",2000
+"380",20,32,1,"Cancers",16.9221449666749,23.5735951534947,30.0655708764348,"South Atlantic","South","MD","Female","Maryland",2000
+"381",20,32,1,"Cardiovascular",62.2484677146144,74.560334871448,87.4291078413925,"South Atlantic","South","MD","Female","Maryland",2000
+"382",20,32,1,"Communicable",30.1794010628718,35.2977074800436,40.3629203559881,"South Atlantic","South","MD","Female","Maryland",2000
+"383",20,32,1,"Injuries",0.276770475474164,2.24731761416018,4.27908728889368,"South Atlantic","South","MD","Female","Maryland",2000
+"384",20,32,1,"Non-communicable",11.6805369236161,18.1550582899953,24.9901898714602,"South Atlantic","South","MD","Female","Maryland",2000
+"385",20,33,0,"All other causes",50.0445551518237,59.3047601565939,69.8010227154186,"South Atlantic","South","MD","Male","Maryland",2001
+"386",20,33,0,"Cancers",73.2965350373168,85.8934730905968,98.2906615201926,"South Atlantic","South","MD","Male","Maryland",2001
+"387",20,33,0,"Cardiovascular",82.5664132416549,100.243645906728,118.078715106758,"South Atlantic","South","MD","Male","Maryland",2001
+"388",20,33,0,"Communicable",73.5548144333296,82.5951956327165,92.9146727456771,"South Atlantic","South","MD","Male","Maryland",2001
+"389",20,33,0,"Injuries",36.256153885947,41.1649390027348,45.9475058253498,"South Atlantic","South","MD","Male","Maryland",2001
+"390",20,33,0,"Non-communicable",22.8467432850255,31.8938534046683,41.6040552926593,"South Atlantic","South","MD","Male","Maryland",2001
+"391",20,33,1,"All other causes",26.7817197563811,33.4455023028525,39.9793146459033,"South Atlantic","South","MD","Female","Maryland",2001
+"392",20,33,1,"Cancers",16.8233546288829,23.7708475490633,30.8491529438917,"South Atlantic","South","MD","Female","Maryland",2001
+"393",20,33,1,"Cardiovascular",64.0917011961476,76.1869846305686,89.3698662481113,"South Atlantic","South","MD","Female","Maryland",2001
+"394",20,33,1,"Communicable",30.2929175176506,35.3238144714786,40.5075415767834,"South Atlantic","South","MD","Female","Maryland",2001
+"395",20,33,1,"Injuries",0.0661730066067545,1.90353089936689,3.93278735069832,"South Atlantic","South","MD","Female","Maryland",2001
+"396",20,33,1,"Non-communicable",11.0579049576358,17.1497836385155,23.4256028932728,"South Atlantic","South","MD","Female","Maryland",2001
+"397",20,34,0,"All other causes",45.7669948034171,55.4119504686617,65.7991220788995,"South Atlantic","South","MD","Male","Maryland",2002
+"398",20,34,0,"Cancers",68.3954015843523,80.4539864470539,93.3555705252811,"South Atlantic","South","MD","Male","Maryland",2002
+"399",20,34,0,"Cardiovascular",83.1891573381257,99.5747758312582,117.368427386906,"South Atlantic","South","MD","Male","Maryland",2002
+"400",20,34,0,"Communicable",70.4634244963189,79.576687224652,88.8805938933778,"South Atlantic","South","MD","Male","Maryland",2002
+"401",20,34,0,"Injuries",36.9805405791174,41.7399119397251,46.8418476093618,"South Atlantic","South","MD","Male","Maryland",2002
+"402",20,34,0,"Non-communicable",21.9977807809342,31.2516973619483,40.8891162803694,"South Atlantic","South","MD","Male","Maryland",2002
+"403",20,34,1,"All other causes",26.5094569954337,33.21786702034,39.8550894275063,"South Atlantic","South","MD","Female","Maryland",2002
+"404",20,34,1,"Cancers",16.8873239249364,23.4469411251738,30.484539662458,"South Atlantic","South","MD","Female","Maryland",2002
+"405",20,34,1,"Cardiovascular",66.1404919890915,78.1694825389482,89.920777743791,"South Atlantic","South","MD","Female","Maryland",2002
+"406",20,34,1,"Communicable",30.8855181530548,35.902750557396,41.3478453090562,"South Atlantic","South","MD","Female","Maryland",2002
+"407",20,34,1,"Injuries",-0.812939082782123,1.11746421810173,2.99263776850158,"South Atlantic","South","MD","Female","Maryland",2002
+"408",20,34,1,"Non-communicable",14.5932609624236,20.9964622144467,27.6403209187038,"South Atlantic","South","MD","Female","Maryland",2002
+"409",20,35,0,"All other causes",39.7362934730206,48.8921292673547,58.9170304278105,"South Atlantic","South","MD","Male","Maryland",2003
+"410",20,35,0,"Cancers",60.1992016500048,72.5013225972225,84.7984051595506,"South Atlantic","South","MD","Male","Maryland",2003
+"411",20,35,0,"Cardiovascular",88.4818375366371,104.837084102741,121.310713168251,"South Atlantic","South","MD","Male","Maryland",2003
+"412",20,35,0,"Communicable",67.9254066304881,77.5351507100631,86.9166226965271,"South Atlantic","South","MD","Male","Maryland",2003
+"413",20,35,0,"Injuries",35.5978043024855,40.4413034750032,45.4636276938581,"South Atlantic","South","MD","Male","Maryland",2003
+"414",20,35,0,"Non-communicable",20.0328388875651,28.7582422303589,37.5640362237892,"South Atlantic","South","MD","Male","Maryland",2003
+"415",20,35,1,"All other causes",23.1719436184331,29.2410286907109,35.7306663292672,"South Atlantic","South","MD","Female","Maryland",2003
+"416",20,35,1,"Cancers",17.2227784227371,23.196466714536,30.366092656311,"South Atlantic","South","MD","Female","Maryland",2003
+"417",20,35,1,"Cardiovascular",64.4731179036624,76.8240381493879,89.0035332823086,"South Atlantic","South","MD","Female","Maryland",2003
+"418",20,35,1,"Communicable",30.7147511172901,35.5770171053828,40.8340383672531,"South Atlantic","South","MD","Female","Maryland",2003
+"419",20,35,1,"Injuries",-1.38650314644393,0.506754981772465,2.51067074402427,"South Atlantic","South","MD","Female","Maryland",2003
+"420",20,35,1,"Non-communicable",10.8090650926941,17.3168681556378,24.1820316148896,"South Atlantic","South","MD","Female","Maryland",2003
+"421",20,36,0,"All other causes",37.8600437452449,47.0750213692419,57.1371387565972,"South Atlantic","South","MD","Male","Maryland",2004
+"422",20,36,0,"Cancers",57.7212393641354,68.8857444449951,80.616154685389,"South Atlantic","South","MD","Male","Maryland",2004
+"423",20,36,0,"Cardiovascular",93.2960907391353,109.026825513455,126.269736831851,"South Atlantic","South","MD","Male","Maryland",2004
+"424",20,36,0,"Communicable",60.637435438615,69.9405890146819,79.2107913503461,"South Atlantic","South","MD","Male","Maryland",2004
+"425",20,36,0,"Injuries",33.7094358635546,38.6611517540121,43.5628208113909,"South Atlantic","South","MD","Male","Maryland",2004
+"426",20,36,0,"Non-communicable",22.4596069588093,31.2034760064611,40.5574671493637,"South Atlantic","South","MD","Male","Maryland",2004
+"427",20,36,1,"All other causes",22.564549020493,29.1154214805639,35.3355383117728,"South Atlantic","South","MD","Female","Maryland",2004
+"428",20,36,1,"Cancers",14.3801351553067,20.720205078259,27.1769978413188,"South Atlantic","South","MD","Female","Maryland",2004
+"429",20,36,1,"Cardiovascular",69.8357955664901,80.8454544780818,91.9474799618604,"South Atlantic","South","MD","Female","Maryland",2004
+"430",20,36,1,"Communicable",29.9800571018983,34.9214413309821,39.8928868131511,"South Atlantic","South","MD","Female","Maryland",2004
+"431",20,36,1,"Injuries",-2.35902581690792,-0.414251772050379,1.50919604860345,"South Atlantic","South","MD","Female","Maryland",2004
+"432",20,36,1,"Non-communicable",8.99097699155449,15.2809456276783,22.4304402804892,"South Atlantic","South","MD","Female","Maryland",2004
+"433",20,37,0,"All other causes",32.9699015068428,42.6371582104695,51.9343624916459,"South Atlantic","South","MD","Male","Maryland",2005
+"434",20,37,0,"Cancers",52.9338777070112,63.8077063660457,76.371852033196,"South Atlantic","South","MD","Male","Maryland",2005
+"435",20,37,0,"Cardiovascular",92.0731144910548,106.703998934858,122.504094902526,"South Atlantic","South","MD","Male","Maryland",2005
+"436",20,37,0,"Communicable",54.8821561440972,62.8586502756422,71.1551489383232,"South Atlantic","South","MD","Male","Maryland",2005
+"437",20,37,0,"Injuries",33.848229563333,38.6227445646451,43.0760993827542,"South Atlantic","South","MD","Male","Maryland",2005
+"438",20,37,0,"Non-communicable",26.3052412688774,34.5054983187931,43.7820388156718,"South Atlantic","South","MD","Male","Maryland",2005
+"439",20,37,1,"All other causes",21.3417508390002,27.9577354726102,34.9520721715709,"South Atlantic","South","MD","Female","Maryland",2005
+"440",20,37,1,"Cancers",11.0029472878254,17.1685586494124,23.6141473714912,"South Atlantic","South","MD","Female","Maryland",2005
+"441",20,37,1,"Cardiovascular",65.1210674628899,75.3584321101194,86.1018082406243,"South Atlantic","South","MD","Female","Maryland",2005
+"442",20,37,1,"Communicable",28.1125028741162,33.0462330352618,37.8632519077847,"South Atlantic","South","MD","Female","Maryland",2005
+"443",20,37,1,"Injuries",-3.0552249087213,-1.17349030662463,0.79189746726497,"South Atlantic","South","MD","Female","Maryland",2005
+"444",20,37,1,"Non-communicable",5.15837221376256,11.1674899313265,17.1256899639242,"South Atlantic","South","MD","Female","Maryland",2005
+"445",20,38,0,"All other causes",29.3547289032554,38.7863457546033,49.2850271252031,"South Atlantic","South","MD","Male","Maryland",2006
+"446",20,38,0,"Cancers",49.8128723873778,60.5505609679366,72.0480868963693,"South Atlantic","South","MD","Male","Maryland",2006
+"447",20,38,0,"Cardiovascular",92.8521534439514,107.401051822356,121.481580247367,"South Atlantic","South","MD","Male","Maryland",2006
+"448",20,38,0,"Communicable",45.6835979148585,53.3475542377217,61.227196899298,"South Atlantic","South","MD","Male","Maryland",2006
+"449",20,38,0,"Injuries",33.2819779510573,37.7642839508327,42.2789971682266,"South Atlantic","South","MD","Male","Maryland",2006
+"450",20,38,0,"Non-communicable",23.3653655106623,30.9937862266745,39.7246571928171,"South Atlantic","South","MD","Male","Maryland",2006
+"451",20,38,1,"All other causes",17.2971888953485,24.0621130131271,30.5980881363048,"South Atlantic","South","MD","Female","Maryland",2006
+"452",20,38,1,"Cancers",12.1420879198899,18.1242761328932,24.0440595530763,"South Atlantic","South","MD","Female","Maryland",2006
+"453",20,38,1,"Cardiovascular",67.3866447650646,77.7129990533245,88.3631463169781,"South Atlantic","South","MD","Female","Maryland",2006
+"454",20,38,1,"Communicable",23.4136479820659,27.9658421069256,32.6960098651061,"South Atlantic","South","MD","Female","Maryland",2006
+"455",20,38,1,"Injuries",-3.92793609332385,-2.05833879079288,-0.293588929322553,"South Atlantic","South","MD","Female","Maryland",2006
+"456",20,38,1,"Non-communicable",6.88283221771986,12.80308653572,18.6196591769389,"South Atlantic","South","MD","Female","Maryland",2006
+"457",20,39,0,"All other causes",25.7473825181296,35.2559046075361,45.6479704322548,"South Atlantic","South","MD","Male","Maryland",2007
+"458",20,39,0,"Cancers",47.4440158657673,57.6316115149582,68.8295633560005,"South Atlantic","South","MD","Male","Maryland",2007
+"459",20,39,0,"Cardiovascular",83.9063655336456,98.0630299923287,111.967617452778,"South Atlantic","South","MD","Male","Maryland",2007
+"460",20,39,0,"Communicable",39.2344668325162,46.5941385116931,53.9501290572172,"South Atlantic","South","MD","Male","Maryland",2007
+"461",20,39,0,"Injuries",30.9298792656655,35.4794332969259,39.6173597631186,"South Atlantic","South","MD","Male","Maryland",2007
+"462",20,39,0,"Non-communicable",17.3726166219648,26.1588460733088,34.4431483519731,"South Atlantic","South","MD","Male","Maryland",2007
+"463",20,39,1,"All other causes",14.7925794405461,21.2753967186845,27.6030209172417,"South Atlantic","South","MD","Female","Maryland",2007
+"464",20,39,1,"Cancers",14.5169672567948,20.0667647643603,26.1015848102096,"South Atlantic","South","MD","Female","Maryland",2007
+"465",20,39,1,"Cardiovascular",57.0449967399535,67.9272223075995,77.708677968212,"South Atlantic","South","MD","Female","Maryland",2007
+"466",20,39,1,"Communicable",21.3022470524585,25.5144213161247,30.0971975638234,"South Atlantic","South","MD","Female","Maryland",2007
+"467",20,39,1,"Injuries",-4.39158156864709,-2.54514013400685,-0.633941782193471,"South Atlantic","South","MD","Female","Maryland",2007
+"468",20,39,1,"Non-communicable",3.72456026664098,9.43426123782876,14.8538320932787,"South Atlantic","South","MD","Female","Maryland",2007
+"469",20,40,0,"All other causes",24.8409114277261,33.7680415006427,43.9851425476276,"South Atlantic","South","MD","Male","Maryland",2008
+"470",20,40,0,"Cancers",42.914536884064,53.6086020800068,64.0546075672118,"South Atlantic","South","MD","Male","Maryland",2008
+"471",20,40,0,"Cardiovascular",82.5645359859776,96.3335252920797,109.732784818134,"South Atlantic","South","MD","Male","Maryland",2008
+"472",20,40,0,"Communicable",38.380602307406,45.4518921808191,52.605815416896,"South Atlantic","South","MD","Male","Maryland",2008
+"473",20,40,0,"Injuries",24.9644156448449,29.4873983095958,34.1660213337702,"South Atlantic","South","MD","Male","Maryland",2008
+"474",20,40,0,"Non-communicable",14.5072632505208,21.9773377076266,29.9182672396417,"South Atlantic","South","MD","Male","Maryland",2008
+"475",20,40,1,"All other causes",13.4023745398911,19.6506083169731,26.0118390499858,"South Atlantic","South","MD","Female","Maryland",2008
+"476",20,40,1,"Cancers",15.5466289224603,21.2937294492678,27.0463728977876,"South Atlantic","South","MD","Female","Maryland",2008
+"477",20,40,1,"Cardiovascular",56.2232559453333,65.8253706265926,75.3786273922019,"South Atlantic","South","MD","Female","Maryland",2008
+"478",20,40,1,"Communicable",18.7447644909289,22.7294980148378,26.9634697801061,"South Atlantic","South","MD","Female","Maryland",2008
+"479",20,40,1,"Injuries",-4.68128690984526,-3.00531391717959,-1.22145472178029,"South Atlantic","South","MD","Female","Maryland",2008
+"480",20,40,1,"Non-communicable",2.83349851352261,8.44382740671582,14.0953822747588,"South Atlantic","South","MD","Female","Maryland",2008
+"481",20,41,0,"All other causes",25.4003065442604,34.7108387812347,44.4291108474229,"South Atlantic","South","MD","Male","Maryland",2009
+"482",20,41,0,"Cancers",38.1478771537691,48.8574126637622,58.6748693015408,"South Atlantic","South","MD","Male","Maryland",2009
+"483",20,41,0,"Cardiovascular",76.7064840793922,89.721472712033,102.14334447527,"South Atlantic","South","MD","Male","Maryland",2009
+"484",20,41,0,"Communicable",34.3272906633568,41.3801931550665,48.4859124889699,"South Atlantic","South","MD","Male","Maryland",2009
+"485",20,41,0,"Injuries",20.5397313208776,25.0180396259876,29.1676425876527,"South Atlantic","South","MD","Male","Maryland",2009
+"486",20,41,0,"Non-communicable",8.47298468550335,16.493217630097,24.0512734803535,"South Atlantic","South","MD","Male","Maryland",2009
+"487",20,41,1,"All other causes",12.3107431203263,18.8315954338782,25.4077646274676,"South Atlantic","South","MD","Female","Maryland",2009
+"488",20,41,1,"Cancers",11.3925332065414,17.182023718605,22.6911643158007,"South Atlantic","South","MD","Female","Maryland",2009
+"489",20,41,1,"Cardiovascular",53.749677548565,62.9736584059721,72.1002916683172,"South Atlantic","South","MD","Female","Maryland",2009
+"490",20,41,1,"Communicable",15.0672388152915,18.6316873534074,22.7954261450432,"South Atlantic","South","MD","Female","Maryland",2009
+"491",20,41,1,"Injuries",-5.0407501023889,-3.32472508320791,-1.70347130035858,"South Atlantic","South","MD","Female","Maryland",2009
+"492",20,41,1,"Non-communicable",3.61233134940324,9.12140777181494,14.7595220687035,"South Atlantic","South","MD","Female","Maryland",2009
+"493",20,42,0,"All other causes",20.0762643574515,28.9134009301759,38.6243321599471,"South Atlantic","South","MD","Male","Maryland",2010
+"494",20,42,0,"Cancers",39.0508837461827,48.4646981711472,58.0129809332407,"South Atlantic","South","MD","Male","Maryland",2010
+"495",20,42,0,"Cardiovascular",72.3350443910032,85.0459593599818,98.0764143745498,"South Atlantic","South","MD","Male","Maryland",2010
+"496",20,42,0,"Communicable",32.48640311516,38.6121456968827,45.4090470322657,"South Atlantic","South","MD","Male","Maryland",2010
+"497",20,42,0,"Injuries",16.8898929326289,21.2469876293413,25.353906687106,"South Atlantic","South","MD","Male","Maryland",2010
+"498",20,42,0,"Non-communicable",9.01454698440392,15.7692145971643,23.3197372017842,"South Atlantic","South","MD","Male","Maryland",2010
+"499",20,42,1,"All other causes",12.2355497577277,18.7218994826392,25.2097037974418,"South Atlantic","South","MD","Female","Maryland",2010
+"500",20,42,1,"Cancers",13.765856035032,19.2155504515661,24.3695498182715,"South Atlantic","South","MD","Female","Maryland",2010
+"501",20,42,1,"Cardiovascular",46.6962583364353,54.9073853152902,64.4720290099052,"South Atlantic","South","MD","Female","Maryland",2010
+"502",20,42,1,"Communicable",14.120251054621,17.740419839993,21.6589815797253,"South Atlantic","South","MD","Female","Maryland",2010
+"503",20,42,1,"Injuries",-5.80894011345042,-4.0552498225518,-2.24755938988966,"South Atlantic","South","MD","Female","Maryland",2010
+"504",20,42,1,"Non-communicable",1.82573871514567,7.42569723960639,12.7255745898577,"South Atlantic","South","MD","Female","Maryland",2010
+"505",20,43,0,"All other causes",14.4719022106682,23.266373298888,32.7284584331821,"South Atlantic","South","MD","Male","Maryland",2011
+"506",20,43,0,"Cancers",34.6279974187322,43.7105342563608,53.0555845497741,"South Atlantic","South","MD","Male","Maryland",2011
+"507",20,43,0,"Cardiovascular",61.2246713364488,73.7135969363353,85.3033274788056,"South Atlantic","South","MD","Male","Maryland",2011
+"508",20,43,0,"Communicable",23.8467401405634,29.9620658980043,36.1612821935777,"South Atlantic","South","MD","Male","Maryland",2011
+"509",20,43,0,"Injuries",14.747159556039,18.8662884402235,23.0321580949843,"South Atlantic","South","MD","Male","Maryland",2011
+"510",20,43,0,"Non-communicable",9.58270076835652,16.3508204718159,23.8785309306084,"South Atlantic","South","MD","Male","Maryland",2011
+"511",20,43,1,"All other causes",5.28551433453641,11.8971516343479,18.445728763128,"South Atlantic","South","MD","Female","Maryland",2011
+"512",20,43,1,"Cancers",13.929732648416,19.7870529342462,25.297413654202,"South Atlantic","South","MD","Female","Maryland",2011
+"513",20,43,1,"Cardiovascular",43.5656465671068,51.7113820847103,60.1330619696157,"South Atlantic","South","MD","Female","Maryland",2011
+"514",20,43,1,"Communicable",13.3419867514069,16.7871149550712,20.5053021819034,"South Atlantic","South","MD","Female","Maryland",2011
+"515",20,43,1,"Injuries",-6.73368622975285,-5.00034920022545,-3.08569311666497,"South Atlantic","South","MD","Female","Maryland",2011
+"516",20,43,1,"Non-communicable",-2.34544408028176,2.27357609184926,7.76496543378775,"South Atlantic","South","MD","Female","Maryland",2011
+"517",20,44,0,"All other causes",12.159615705931,21.0846594947229,31.0039723958622,"South Atlantic","South","MD","Male","Maryland",2012
+"518",20,44,0,"Cancers",32.0522497636963,42.4506702357102,51.851736535582,"South Atlantic","South","MD","Male","Maryland",2012
+"519",20,44,0,"Cardiovascular",61.1444104420656,73.9914207365398,86.5819789537186,"South Atlantic","South","MD","Male","Maryland",2012
+"520",20,44,0,"Communicable",21.065222325763,26.5008283714634,32.4964865126428,"South Atlantic","South","MD","Male","Maryland",2012
+"521",20,44,0,"Injuries",13.2863727478514,17.51827787378,22.0855578932349,"South Atlantic","South","MD","Male","Maryland",2012
+"522",20,44,0,"Non-communicable",10.0847704858663,17.2986839578602,24.6054567542898,"South Atlantic","South","MD","Male","Maryland",2012
+"523",20,44,1,"All other causes",8.06894624942865,14.5955741921931,21.5423110543428,"South Atlantic","South","MD","Female","Maryland",2012
+"524",20,44,1,"Cancers",11.9204288033538,17.4525131683924,22.8007496960455,"South Atlantic","South","MD","Female","Maryland",2012
+"525",20,44,1,"Cardiovascular",38.2654545294832,46.6958448949504,55.6132492238308,"South Atlantic","South","MD","Female","Maryland",2012
+"526",20,44,1,"Communicable",11.2265808566324,15.0475915952253,18.8133992484803,"South Atlantic","South","MD","Female","Maryland",2012
+"527",20,44,1,"Injuries",-7.26653189192127,-5.42931631106432,-3.38073195385663,"South Atlantic","South","MD","Female","Maryland",2012
+"528",20,44,1,"Non-communicable",-3.76001604017216,0.98112520471404,6.11494919545611,"South Atlantic","South","MD","Female","Maryland",2012
+"529",20,45,0,"All other causes",9.46403240529921,19.2110515472535,28.8684625102261,"South Atlantic","South","MD","Male","Maryland",2013
+"530",20,45,0,"Cancers",30.9691606282512,41.2350693469934,51.99939083929,"South Atlantic","South","MD","Male","Maryland",2013
+"531",20,45,0,"Cardiovascular",55.9796392539139,69.6526904418935,84.3715269595765,"South Atlantic","South","MD","Male","Maryland",2013
+"532",20,45,0,"Communicable",19.4141948129846,25.7082040788298,32.622369410069,"South Atlantic","South","MD","Male","Maryland",2013
+"533",20,45,0,"Injuries",11.5758627633363,16.7562824208076,21.7106597368124,"South Atlantic","South","MD","Male","Maryland",2013
+"534",20,45,0,"Non-communicable",9.32764314900979,17.3798552153431,26.4176239644732,"South Atlantic","South","MD","Male","Maryland",2013
+"535",20,45,1,"All other causes",3.98579419811865,11.5262330732993,18.4971493257362,"South Atlantic","South","MD","Female","Maryland",2013
+"536",20,45,1,"Cancers",10.5470147281737,17.3432785256041,24.1262471363019,"South Atlantic","South","MD","Female","Maryland",2013
+"537",20,45,1,"Cardiovascular",38.8075934958507,48.4793870864988,57.7615679946788,"South Atlantic","South","MD","Female","Maryland",2013
+"538",20,45,1,"Communicable",11.3884666590341,15.3009318805503,19.6476903444925,"South Atlantic","South","MD","Female","Maryland",2013
+"539",20,45,1,"Injuries",-6.95346169459912,-5.00214975069241,-2.94838422211569,"South Atlantic","South","MD","Female","Maryland",2013
+"540",20,45,1,"Non-communicable",-5.42822925595962,-0.170398739212885,4.94325350548812,"South Atlantic","South","MD","Female","Maryland",2013
