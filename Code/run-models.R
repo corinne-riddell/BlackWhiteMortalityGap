@@ -89,7 +89,7 @@ entire.analysis <- function(state_i) {
               rate.per.100k_lcl = quantile(rate.per.100k, 0.025), 
               rate.per.100k_med = quantile(rate.per.100k, 0.5),
               rate.per.100k_ucl = quantile(rate.per.100k, 0.975),
-              rate.per.100k_mean = mean(rate.per.100k, 0.5))
+              rate.per.100k_mean = mean(rate.per.100k))
   
   #compute black-white difference in mortality
   mortality.rates.white <- mortality.rates %>% filter(race == "White") %>% 
@@ -510,7 +510,8 @@ include.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado", 
 "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
 "West Virginia", "Wisconsin") 
 
-next.set <- as.list(include.states[c(1:15, 25:33)])
-last.set <- as.list(include.states[34:40])
-system.time(mclapply(next.set, entire.analysis, mc.cores = 12, mc.allow.recursive = F))
-system.time(mclapply(last.set, entire.analysis, mc.cores = 7, mc.allow.recursive = F))
+# next.set <- as.list(include.states[c(1:15, 25:33)])
+# last.set <- as.list(include.states[34:40])
+
+#next.set.1 <- as.list(include.states[c(1:3)])
+system.time(entire.analysis(state_i = include.states[7]))
