@@ -308,10 +308,10 @@ y.labels.2 <- levels(factor(cod.df.males$state.gdiff.order.2))
 y.num.breaks.2 <- length(levels(factor(cod.df.males$state.gdiff.order.2)))
 
 males.era2 <- ggplotly(
-  ggplot(subset(cod.df.males, era == "1983-1993"), aes(y = state.gdiff.num.2, x = new.start.2)) +
+  ggplot(subset(cod.df.males, era == "era2"), aes(y = state.gdiff.num.2, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.2 - 0.45, 
                   ymax = state.gdiff.num.2 + 0.45, 
-                  xmax = new.finish.2, fill = COD), 
+                  xmax = new.finish.2, fill = Cause.of.death), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
@@ -332,10 +332,10 @@ y.labels.3 <- levels(factor(cod.df.males$state.gdiff.order.3))
 y.num.breaks.3 <- length(levels(factor(cod.df.males$state.gdiff.order.3)))
 
 males.era3 <- ggplotly(
-  ggplot(subset(cod.df.males, era == "1993-2013"), aes(y = state.gdiff.num.3, x = new.start.3)) +
+  ggplot(subset(cod.df.males, era == "era3"), aes(y = state.gdiff.num.3, x = new.start.3)) +
     geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.3 - 0.45, 
                   ymax = state.gdiff.num.3 + 0.45, 
-                  xmax = new.finish.3, fill = COD), 
+                  xmax = new.finish.3, fill = Cause.of.death), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
                  aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
@@ -351,10 +351,10 @@ males.era3
 
 ```{r, fig.align="center", fig.height=5, fig.width=9, echo=F, eval = F}
 males.era2.2 <- ggplotly(
-  ggplot(subset(cod.df.males, era == "1983-1993"), aes(y = state.gdiff.num.1, x = new.start.2)) +
+  ggplot(subset(cod.df.males, era == "era2"), aes(y = state.gdiff.num.1, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.1 - 0.45, 
                   ymax = state.gdiff.num.1 + 0.45, 
-                  xmax = new.finish.2, fill = COD), 
+                  xmax = new.finish.2, fill = Cause.of.death), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
@@ -416,10 +416,10 @@ y.labels <- levels(factor(cod.df.females$state.gdiff.order.1))
 y.num.breaks <- length(levels(factor(cod.df.females$state.gdiff.order.1)))
 
 females.era1 <- ggplotly(
-  ggplot(subset(cod.df.females, era == "1969-1983"), aes(y = state.gdiff.num.1, x = new.start.1)) +
+  ggplot(subset(cod.df.females, era == "era1"), aes(y = state.gdiff.num.1, x = new.start.1)) +
     geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
                   ymax = state.gdiff.num.1 + 0.45, 
-                  xmax = new.finish.1, fill = COD), 
+                  xmax = new.finish.1, fill = Cause.of.death), 
               color = "white") +
     geom_segment(data = bw_dat.females,
                  aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
@@ -438,10 +438,10 @@ y.labels.2 <- levels(factor(cod.df.females$state.gdiff.order.2))
 y.num.breaks.2 <- length(levels(factor(cod.df.females$state.gdiff.order.2)))
 
 females.era2 <- ggplotly(
-  ggplot(subset(cod.df.females, era == "1983-1993"), aes(y = state.gdiff.num.2, x = new.start.2)) +
+  ggplot(subset(cod.df.females, era == "era2"), aes(y = state.gdiff.num.2, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.2 - 0.45, 
                   ymax = state.gdiff.num.2 + 0.45, 
-                  xmax = new.finish.2, fill = COD), 
+                  xmax = new.finish.2, fill = Cause.of.death), 
               color = "white") +
     geom_segment(data = bw_dat.females,
                  aes(x = third.gap, xend = third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
@@ -460,10 +460,10 @@ y.labels.3 <- levels(factor(cod.df.females$state.gdiff.order.3))
 y.num.breaks.3 <- length(levels(factor(cod.df.females$state.gdiff.order.3)))
 
 females.era3 <- ggplotly(
-  ggplot(subset(cod.df.females, era == "1993-2013"), aes(y = state.gdiff.num.3, x = new.start.3)) +
+  ggplot(subset(cod.df.females, era == "era3"), aes(y = state.gdiff.num.3, x = new.start.3)) +
     geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.3 - 0.45, 
                   ymax = state.gdiff.num.3 + 0.45, 
-                  xmax = new.finish.3, fill = COD), 
+                  xmax = new.finish.3, fill = Cause.of.death), 
               color = "white") +
     geom_segment(data = bw_dat.females,
                  aes(x = fourth.gap, xend = fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
@@ -515,21 +515,21 @@ To create.
 
 **S3-S14 Fig: Trends in age-standardized mortality by state, race, and sex, 1969-2013 (currently included in other file)**
 
-**S15 Fig: Comparison of the contribution of age and cause of death to the difference in life expectancy between blacks and whites in New York, 1969 vs. 1983**
+**S15 Fig: Comparison of the contribution of age and cause of death to the difference in life expectancy between blacks and whites males in New York, 1969 vs. 1983**
 
 ```{r ny_1969_1983_age_cod_decomp, echo = F, fig.width = 9}
 ny.dat <- age_cod_results %>% filter(state == "New York" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
                                      mutate(sign.var = sign(age_COD_cont_yrs))
 
 ny.1969 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1969), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 ny.1983 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1983), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 ny.1993 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1993), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 
 ggplotly(ggplot(rbind(ny.1969, ny.1983, ny.1993),
                 aes(y = age, x = start)) + 
