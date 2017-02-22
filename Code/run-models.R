@@ -1,4 +1,7 @@
 
+
+entire.analysis <- function(state_i) {
+  
 #load_libraries
 library(Rcpp)
 library(dplyr)
@@ -26,24 +29,8 @@ source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R')
 dat.clean = read.csv('~/dat_clean.csv') 
 
 #load US standard population
-std.pop <- read.csv("~/BlackWhiteMortalityGap/Data/US_Standard_Population.csv")
+std.pop <- read.csv("~/BlackWhiteMortalityGap/Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
 
-std.pop <- std.pop %>% select(Age, US_Standard_2000) %>% filter(Age != "Total")
-
-std.pop <- std.pop %>% mutate(age.weight = US_Standard_2000/1000000)
-
-std.pop <- std.pop %>% mutate(age_minbin = 0*(Age == "00 years") + 1*(Age == "01-04 years") + 5*(Age == "05-09 years") +
-                                10*(Age == "10-14 years") + 15*(Age == "15-19 years") + 20*(Age == "20-24 years") +
-                                25*(Age == "25-29 years") + 30*(Age == "30-34 years") + 35*(Age == "35-39 years") +
-                                40*(Age == "40-44 years") + 45*(Age == "45-49 years") + 50*(Age == "50-54 years") +
-                                55*(Age == "55-59 years") + 60*(Age == "60-64 years") + 65*(Age == "65-69 years") +
-                                70*(Age == "70-74 years") + 75*(Age == "75-79 years") + 80*(Age == "80-84 years") +
-                                85*(Age == "85+ years")) %>% select(US_Standard_2000, age.weight, age_minbin)
-
-#state_i <- "Maryland"
-
-entire.analysis <- function(state_i) {
-  
   #fit_models
   #run time: 32 mins
   #fit the bayesian models and put the 1000 posterior samples into a data frame
@@ -149,7 +136,7 @@ entire.analysis <- function(state_i) {
     rm(data_sub)
   }
   
-  save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".csv")) 
+  save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".Rdata")) 
   levels.state.year.sex <- levels(droplevels(r.All$state.year.sex))
   rm(r.All)
   
@@ -512,13 +499,8 @@ included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado",
 "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
 "West Virginia", "Wisconsin") 
 
-# next.set <- as.list(include.states[c(1:15, 25:33)])
-# last.set <- as.list(include.states[34:40])
+for(i in c(9:10,12:16, 25)){
+  system.time(entire.analysis(state_i = included.states[i]))
+  rm(list = ls(all = TRUE))
+}
 
-#next.set.1 <- as.list(include.states[c(1:3)])
-system.time(entire.analysis(state_i = included.states[14]))
-rm(list = ls(all = TRUE))
-system.time(entire.analysis(state_i = included.states[15]))
-rm(list = ls(all = TRUE))
-system.time(entire.analysis(state_i = included.states[25]))
-rm(list = ls(all = TRUE))
