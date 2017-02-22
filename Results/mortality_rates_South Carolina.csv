@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",40,1,0,0,"All other causes","White","Male","South Carolina",1969,"South Atlantic","South","SC",158.281406392265,165.85939844996,174.380248141833,166.011206001574
+"2",40,1,0,0,"Cancers","White","Male","South Carolina",1969,"South Atlantic","South","SC",234.146697520665,242.493154074445,251.506434963665,242.577658913892
+"3",40,1,0,0,"Cardiovascular","White","Male","South Carolina",1969,"South Atlantic","South","SC",1001.18824807862,1032.17927789613,1064.03223901025,1032.44100884402
+"4",40,1,0,0,"Communicable","White","Male","South Carolina",1969,"South Atlantic","South","SC",57.0940085895464,63.745145684091,71.2789182406745,63.8258375964231
+"5",40,1,0,0,"Injuries","White","Male","South Carolina",1969,"South Atlantic","South","SC",132.763720088196,138.356961850856,144.469176321976,138.468213055209
+"6",40,1,0,0,"Non-communicable","White","Male","South Carolina",1969,"South Atlantic","South","SC",104.143591705446,109.667958452002,115.268913963291,109.654696040338
+"7",40,1,0,1,"All other causes","White","Female","South Carolina",1969,"South Atlantic","South","SC",98.0824441158639,103.120311343488,108.507958117663,103.240383518281
+"8",40,1,0,1,"Cancers","White","Female","South Carolina",1969,"South Atlantic","South","SC",138.461416308349,143.220291306493,148.35842571088,143.272576462432
+"9",40,1,0,1,"Cardiovascular","White","Female","South Carolina",1969,"South Atlantic","South","SC",603.591018364789,623.565075539319,644.321233792893,624.032226032871
+"10",40,1,0,1,"Communicable","White","Female","South Carolina",1969,"South Atlantic","South","SC",35.9563987874054,39.4251514473635,43.0630101023589,39.4272218599787
+"11",40,1,0,1,"Injuries","White","Female","South Carolina",1969,"South Atlantic","South","SC",48.9945605611651,52.1264481012451,54.8235430446445,52.0591136668798
+"12",40,1,0,1,"Non-communicable","White","Female","South Carolina",1969,"South Atlantic","South","SC",44.4588698136436,47.7577647862892,51.3534476743159,47.7798758269066
+"13",40,1,1,0,"All other causes","Black","Male","South Carolina",1969,"South Atlantic","South","SC",234.862681678226,247.795176134582,261.284001083762,248.126638986657
+"14",40,1,1,0,"Cancers","Black","Male","South Carolina",1969,"South Atlantic","South","SC",230.509022902975,244.73094881071,257.753947336923,244.450065924163
+"15",40,1,1,0,"Cardiovascular","Black","Male","South Carolina",1969,"South Atlantic","South","SC",992.170154827701,1028.86176040839,1068.51541698071,1028.28715923
+"16",40,1,1,0,"Communicable","Black","Male","South Carolina",1969,"South Atlantic","South","SC",92.8953534763565,102.972402651799,114.147397717743,103.14885549457
+"17",40,1,1,0,"Injuries","Black","Male","South Carolina",1969,"South Atlantic","South","SC",247.314104336417,260.621557053133,275.471441917392,260.689453985394
+"18",40,1,1,0,"Non-communicable","Black","Male","South Carolina",1969,"South Atlantic","South","SC",92.559536976131,100.021802113335,107.683416256445,100.074785509406
+"19",40,1,1,1,"All other causes","Black","Female","South Carolina",1969,"South Atlantic","South","SC",162.474654127849,170.324147303899,179.633328994137,170.406336340193
+"20",40,1,1,1,"Cancers","Black","Female","South Carolina",1969,"South Atlantic","South","SC",137.103118674319,144.380083809453,152.665859520171,144.556566811875
+"21",40,1,1,1,"Cardiovascular","Black","Female","South Carolina",1969,"South Atlantic","South","SC",731.538613378255,758.498634631105,789.159252809259,758.581213562936
+"22",40,1,1,1,"Communicable","Black","Female","South Carolina",1969,"South Atlantic","South","SC",56.8038428272245,62.6283348390678,70.017028593428,62.8128777386703
+"23",40,1,1,1,"Injuries","Black","Female","South Carolina",1969,"South Atlantic","South","SC",58.8361545828053,63.8565592787286,68.8916547230912,63.8627339279337
+"24",40,1,1,1,"Non-communicable","Black","Female","South Carolina",1969,"South Atlantic","South","SC",82.9301945344657,89.3611807380366,96.4737979511368,89.4394431375724
+"25",40,2,0,0,"All other causes","White","Male","South Carolina",1970,"South Atlantic","South","SC",158.689562529169,165.539475388209,172.671021080715,165.55247401487
+"26",40,2,0,0,"Cancers","White","Male","South Carolina",1970,"South Atlantic","South","SC",234.424263838805,242.595079759059,250.32827463252,242.464650838304
+"27",40,2,0,0,"Cardiovascular","White","Male","South Carolina",1970,"South Atlantic","South","SC",967.97676965947,992.328987629875,1017.38024442755,992.771450317653
+"28",40,2,0,0,"Communicable","White","Male","South Carolina",1970,"South Atlantic","South","SC",57.1611757083506,62.7412415756304,69.4245728665364,62.8033437060468
+"29",40,2,0,0,"Injuries","White","Male","South Carolina",1970,"South Atlantic","South","SC",134.002628010355,139.039234382129,144.301279825808,139.102718449194
+"30",40,2,0,0,"Non-communicable","White","Male","South Carolina",1970,"South Atlantic","South","SC",104.009944657607,108.833670419686,113.735854949099,108.936498770617
+"31",40,2,0,1,"All other causes","White","Female","South Carolina",1970,"South Atlantic","South","SC",97.5344411748232,101.786375377835,106.653287920387,101.86226194142
+"32",40,2,0,1,"Cancers","White","Female","South Carolina",1970,"South Atlantic","South","SC",138.752880672003,142.617128481946,147.140979819292,142.654573964284
+"33",40,2,0,1,"Cardiovascular","White","Female","South Carolina",1970,"South Atlantic","South","SC",587.428736951495,604.533094028978,621.549774854041,604.567062005215
+"34",40,2,0,1,"Communicable","White","Female","South Carolina",1970,"South Atlantic","South","SC",36.88499787763,39.7208434323407,43.1341092162948,39.8020798405029
+"35",40,2,0,1,"Injuries","White","Female","South Carolina",1970,"South Atlantic","South","SC",49.2127911037001,51.955978335265,54.5727959881985,51.9519822169752
+"36",40,2,0,1,"Non-communicable","White","Female","South Carolina",1970,"South Atlantic","South","SC",45.2498240011951,48.111306397646,50.8751491823299,48.0623755715757
+"37",40,2,1,0,"All other causes","Black","Male","South Carolina",1970,"South Atlantic","South","SC",239.810297748602,250.942412305842,262.789626221936,251.137200062281
+"38",40,2,1,0,"Cancers","Black","Male","South Carolina",1970,"South Atlantic","South","SC",232.150602110974,244.076629339753,255.973205561841,244.098212531807
+"39",40,2,1,0,"Cardiovascular","Black","Male","South Carolina",1970,"South Atlantic","South","SC",976.80424506337,1007.33081978629,1040.48962060577,1007.91603293106
+"40",40,2,1,0,"Communicable","Black","Male","South Carolina",1970,"South Atlantic","South","SC",87.9152689929158,96.7113174078657,106.176508387253,96.8057670366444
+"41",40,2,1,0,"Injuries","Black","Male","South Carolina",1970,"South Atlantic","South","SC",248.448956132809,260.262422029843,271.812845907369,260.250603951259
+"42",40,2,1,0,"Non-communicable","Black","Male","South Carolina",1970,"South Atlantic","South","SC",94.2282986894547,100.910123053544,108.286013857306,101.00458112357
+"43",40,2,1,1,"All other causes","Black","Female","South Carolina",1970,"South Atlantic","South","SC",165.05282646358,172.393547127161,180.584662801992,172.516406890582
+"44",40,2,1,1,"Cancers","Black","Female","South Carolina",1970,"South Atlantic","South","SC",137.970295530747,144.840711123695,151.978130055082,144.858764686307
+"45",40,2,1,1,"Cardiovascular","Black","Female","South Carolina",1970,"South Atlantic","South","SC",692.51499046322,714.499710060847,738.952767062918,714.860660016552
+"46",40,2,1,1,"Communicable","Black","Female","South Carolina",1970,"South Atlantic","South","SC",54.6289209457035,60.1516820182855,66.0916773689897,60.2414145076285
+"47",40,2,1,1,"Injuries","Black","Female","South Carolina",1970,"South Atlantic","South","SC",58.7553218729767,63.3142842055026,67.9873915646754,63.3021437636882
+"48",40,2,1,1,"Non-communicable","Black","Female","South Carolina",1970,"South Atlantic","South","SC",83.3882665568769,89.2698959541644,95.2957255319954,89.3830787727795
+"49",40,3,0,0,"All other causes","White","Male","South Carolina",1971,"South Atlantic","South","SC",156.97793772961,163.443059011211,170.113997198759,163.487102134864
+"50",40,3,0,0,"Cancers","White","Male","South Carolina",1971,"South Atlantic","South","SC",236.773667123418,243.914444847185,251.653113569204,243.973610072361
+"51",40,3,0,0,"Cardiovascular","White","Male","South Carolina",1971,"South Atlantic","South","SC",944.093495033811,971.512743333893,999.252410630735,971.312022337918
+"52",40,3,0,0,"Communicable","White","Male","South Carolina",1971,"South Atlantic","South","SC",54.5366913963843,59.9643813655204,66.0715697534757,60.006611014165
+"53",40,3,0,0,"Injuries","White","Male","South Carolina",1971,"South Atlantic","South","SC",133.805670320452,138.665231769709,143.626077824428,138.608368410333
+"54",40,3,0,0,"Non-communicable","White","Male","South Carolina",1971,"South Atlantic","South","SC",104.848015787685,109.615610259947,114.850673128896,109.697185409344
+"55",40,3,0,1,"All other causes","White","Female","South Carolina",1971,"South Atlantic","South","SC",96.3026475527112,100.397317838849,104.507333568535,100.403556324926
+"56",40,3,0,1,"Cancers","White","Female","South Carolina",1971,"South Atlantic","South","SC",138.46401485584,142.110672366436,146.065821153709,142.119215173813
+"57",40,3,0,1,"Cardiovascular","White","Female","South Carolina",1971,"South Atlantic","South","SC",579.642011056038,595.244755930231,611.399072287734,595.616655686902
+"58",40,3,0,1,"Communicable","White","Female","South Carolina",1971,"South Atlantic","South","SC",35.9163302985049,38.5926217260685,41.4430074144107,38.5845688203606
+"59",40,3,0,1,"Injuries","White","Female","South Carolina",1971,"South Atlantic","South","SC",48.7270594767279,51.3667570722843,53.8626854747023,51.3757182032043
+"60",40,3,0,1,"Non-communicable","White","Female","South Carolina",1971,"South Atlantic","South","SC",45.0941285930277,47.8118708766309,50.5384746476251,47.8118575156755
+"61",40,3,1,0,"All other causes","Black","Male","South Carolina",1971,"South Atlantic","South","SC",243.521287467192,254.260695954292,265.003955043073,254.242535460764
+"62",40,3,1,0,"Cancers","Black","Male","South Carolina",1971,"South Atlantic","South","SC",234.485101405566,245.670386242194,257.591464149027,245.835985034019
+"63",40,3,1,0,"Cardiovascular","Black","Male","South Carolina",1971,"South Atlantic","South","SC",959.603961731299,988.955610738077,1018.22199505088,988.867862858501
+"64",40,3,1,0,"Communicable","Black","Male","South Carolina",1971,"South Atlantic","South","SC",82.4309050470922,91.0914648187282,99.0248602877758,91.1021226124857
+"65",40,3,1,0,"Injuries","Black","Male","South Carolina",1971,"South Atlantic","South","SC",247.240896094987,257.83344636723,269.975123534764,258.093500629352
+"66",40,3,1,0,"Non-communicable","Black","Male","South Carolina",1971,"South Atlantic","South","SC",94.6250869874504,101.423288406046,108.108897289349,101.465243615559
+"67",40,3,1,1,"All other causes","Black","Female","South Carolina",1971,"South Atlantic","South","SC",168.942431328085,176.377780332012,184.595063091886,176.549548201243
+"68",40,3,1,1,"Cancers","Black","Female","South Carolina",1971,"South Atlantic","South","SC",140.65784776064,147.172588540874,153.92027654348,147.15219579234
+"69",40,3,1,1,"Cardiovascular","Black","Female","South Carolina",1971,"South Atlantic","South","SC",668.223275772704,688.670834183721,709.754446429827,688.857259029081
+"70",40,3,1,1,"Communicable","Black","Female","South Carolina",1971,"South Atlantic","South","SC",51.6219491506163,56.7010674559391,61.3395766797464,56.6507993840035
+"71",40,3,1,1,"Injuries","Black","Female","South Carolina",1971,"South Atlantic","South","SC",58.6333406525879,62.778181886782,67.1009876777641,62.7928093660947
+"72",40,3,1,1,"Non-communicable","Black","Female","South Carolina",1971,"South Atlantic","South","SC",82.5811200787949,88.7381014350572,94.0945438532793,88.6761050549518
+"73",40,4,0,0,"All other causes","White","Male","South Carolina",1972,"South Atlantic","South","SC",155.521649318343,161.826791988185,168.095049417024,161.801392934184
+"74",40,4,0,0,"Cancers","White","Male","South Carolina",1972,"South Atlantic","South","SC",238.700707334499,245.661146957691,252.403732524969,245.796809541809
+"75",40,4,0,0,"Cardiovascular","White","Male","South Carolina",1972,"South Atlantic","South","SC",954.179769544443,980.012109164936,1004.1265087104,979.941453961183
+"76",40,4,0,0,"Communicable","White","Male","South Carolina",1972,"South Atlantic","South","SC",55.4277740384805,60.4991732648756,66.2115960567956,60.6571084559892
+"77",40,4,0,0,"Injuries","White","Male","South Carolina",1972,"South Atlantic","South","SC",132.930378323452,137.582446500221,142.373089499244,137.616845664363
+"78",40,4,0,0,"Non-communicable","White","Male","South Carolina",1972,"South Atlantic","South","SC",106.078552425728,110.731771349983,115.261535247381,110.805733453309
+"79",40,4,0,1,"All other causes","White","Female","South Carolina",1972,"South Atlantic","South","SC",95.8300428152096,99.653286786217,103.964752836862,99.7191373949092
+"80",40,4,0,1,"Cancers","White","Female","South Carolina",1972,"South Atlantic","South","SC",138.090930210581,141.351743069297,145.293036788323,141.44486332922
+"81",40,4,0,1,"Cardiovascular","White","Female","South Carolina",1972,"South Atlantic","South","SC",573.927637276441,590.065886748131,605.873951812899,590.046628983668
+"82",40,4,0,1,"Communicable","White","Female","South Carolina",1972,"South Atlantic","South","SC",34.2911411676233,36.7354730019503,39.3420101483502,36.6949406695779
+"83",40,4,0,1,"Injuries","White","Female","South Carolina",1972,"South Atlantic","South","SC",48.3382054541125,50.6158214108293,52.7595439315404,50.5851115169234
+"84",40,4,0,1,"Non-communicable","White","Female","South Carolina",1972,"South Atlantic","South","SC",45.2293532153976,47.5202026959143,49.9163711842987,47.4952093657776
+"85",40,4,1,0,"All other causes","Black","Male","South Carolina",1972,"South Atlantic","South","SC",248.356639079132,259.489381199881,271.566616720717,259.504952599315
+"86",40,4,1,0,"Cancers","Black","Male","South Carolina",1972,"South Atlantic","South","SC",240.063377756142,250.808601321778,262.447403355425,250.955529060894
+"87",40,4,1,0,"Cardiovascular","Black","Male","South Carolina",1972,"South Atlantic","South","SC",937.475351261165,967.30828319964,999.356536240706,967.666915949799
+"88",40,4,1,0,"Communicable","Black","Male","South Carolina",1972,"South Atlantic","South","SC",80.5293254644266,88.0951455095865,95.9329505007986,88.1800712807734
+"89",40,4,1,0,"Injuries","Black","Male","South Carolina",1972,"South Atlantic","South","SC",246.27792686475,257.581665946196,269.725292908873,257.624549961039
+"90",40,4,1,0,"Non-communicable","Black","Male","South Carolina",1972,"South Atlantic","South","SC",97.0123300549688,103.064194747618,109.253060855009,103.08284669513
+"91",40,4,1,1,"All other causes","Black","Female","South Carolina",1972,"South Atlantic","South","SC",171.089248980682,178.994180646215,187.41259051228,179.08049834218
+"92",40,4,1,1,"Cancers","Black","Female","South Carolina",1972,"South Atlantic","South","SC",143.12877460779,149.311486156294,155.807663455148,149.393039654914
+"93",40,4,1,1,"Cardiovascular","Black","Female","South Carolina",1972,"South Atlantic","South","SC",659.8345035301,681.510829472637,702.578683262115,681.505390253111
+"94",40,4,1,1,"Communicable","Black","Female","South Carolina",1972,"South Atlantic","South","SC",49.496427030996,54.021593843426,58.5432991656755,54.0222156834328
+"95",40,4,1,1,"Injuries","Black","Female","South Carolina",1972,"South Atlantic","South","SC",57.688097255384,61.5398668515458,65.5611801539404,61.5030196330102
+"96",40,4,1,1,"Non-communicable","Black","Female","South Carolina",1972,"South Atlantic","South","SC",83.0003009547713,88.3262322670724,93.7566075113027,88.2854348531205
+"97",40,5,0,0,"All other causes","White","Male","South Carolina",1973,"South Atlantic","South","SC",153.764843212747,159.664651918454,166.4379998703,159.828923285715
+"98",40,5,0,0,"Cancers","White","Male","South Carolina",1973,"South Atlantic","South","SC",240.420105461715,247.377434860806,254.213742269327,247.37061261219
+"99",40,5,0,0,"Cardiovascular","White","Male","South Carolina",1973,"South Atlantic","South","SC",949.168037405879,975.202837709938,1000.81740750093,975.228376375083
+"100",40,5,0,0,"Communicable","White","Male","South Carolina",1973,"South Atlantic","South","SC",53.2162899849587,58.1530013282405,63.3042186761585,58.247410013593
+"101",40,5,0,0,"Injuries","White","Male","South Carolina",1973,"South Atlantic","South","SC",133.175506739712,137.415601924687,141.90183523952,137.451411214184
+"102",40,5,0,0,"Non-communicable","White","Male","South Carolina",1973,"South Atlantic","South","SC",106.539515962135,111.121490614127,115.946648098599,111.166817509094
+"103",40,5,0,1,"All other causes","White","Female","South Carolina",1973,"South Atlantic","South","SC",96.5874859357678,100.714220208536,105.017866569658,100.690893309933
+"104",40,5,0,1,"Cancers","White","Female","South Carolina",1973,"South Atlantic","South","SC",137.678370503004,141.197630250487,144.945429893722,141.192352595874
+"105",40,5,0,1,"Cardiovascular","White","Female","South Carolina",1973,"South Atlantic","South","SC",557.480998623011,573.549907572691,589.700338160203,573.457685266526
+"106",40,5,0,1,"Communicable","White","Female","South Carolina",1973,"South Atlantic","South","SC",32.9974338266602,35.3761834279444,37.9924118038187,35.4256513968708
+"107",40,5,0,1,"Injuries","White","Female","South Carolina",1973,"South Atlantic","South","SC",47.2651064618303,49.4499986380768,51.5596846110965,49.4506846807573
+"108",40,5,0,1,"Non-communicable","White","Female","South Carolina",1973,"South Atlantic","South","SC",44.6015835067142,46.98993414937,49.5689958006649,47.0358030395144
+"109",40,5,1,0,"All other causes","Black","Male","South Carolina",1973,"South Atlantic","South","SC",252.105779048102,263.569798687276,275.243109155973,263.789636721586
+"110",40,5,1,0,"Cancers","Black","Male","South Carolina",1973,"South Atlantic","South","SC",244.492658020674,256.411245909235,267.453318381285,256.311339754562
+"111",40,5,1,0,"Cardiovascular","Black","Male","South Carolina",1973,"South Atlantic","South","SC",921.276997181801,953.026058078848,982.725150366519,952.872534931347
+"112",40,5,1,0,"Communicable","Black","Male","South Carolina",1973,"South Atlantic","South","SC",78.5675227679456,85.9302160174396,93.8476298875645,86.0216315739807
+"113",40,5,1,0,"Injuries","Black","Male","South Carolina",1973,"South Atlantic","South","SC",234.544918117531,245.004770420644,255.768032914893,244.900990641506
+"114",40,5,1,0,"Non-communicable","Black","Male","South Carolina",1973,"South Atlantic","South","SC",98.6442879224339,105.012726607958,111.667340213679,105.090217997378
+"115",40,5,1,1,"All other causes","Black","Female","South Carolina",1973,"South Atlantic","South","SC",167.760272754719,175.4636104299,182.466349119853,175.37534693397
+"116",40,5,1,1,"Cancers","Black","Female","South Carolina",1973,"South Atlantic","South","SC",146.366689735562,152.270842469947,159.361619219443,152.388230927139
+"117",40,5,1,1,"Cardiovascular","Black","Female","South Carolina",1973,"South Atlantic","South","SC",645.638450509795,669.192169310706,692.241675723883,668.687352741903
+"118",40,5,1,1,"Communicable","Black","Female","South Carolina",1973,"South Atlantic","South","SC",45.1269902614065,49.1217833620731,53.670694918469,49.2353439610418
+"119",40,5,1,1,"Injuries","Black","Female","South Carolina",1973,"South Atlantic","South","SC",56.0499819537101,59.689124605904,63.5373452699478,59.7014331841688
+"120",40,5,1,1,"Non-communicable","Black","Female","South Carolina",1973,"South Atlantic","South","SC",82.1372067828366,87.419726410146,92.7332313012564,87.4399037605295
+"121",40,6,0,0,"All other causes","White","Male","South Carolina",1974,"South Atlantic","South","SC",148.611775781049,154.459966853239,160.59271469776,154.566456330229
+"122",40,6,0,0,"Cancers","White","Male","South Carolina",1974,"South Atlantic","South","SC",241.979765817247,249.418194411343,256.466226814946,249.395633273131
+"123",40,6,0,0,"Cardiovascular","White","Male","South Carolina",1974,"South Atlantic","South","SC",904.364423257203,926.769851476351,950.432700086132,927.036373183796
+"124",40,6,0,0,"Communicable","White","Male","South Carolina",1974,"South Atlantic","South","SC",54.923878180482,60.2734325438289,66.0093397621585,60.332845278468
+"125",40,6,0,0,"Injuries","White","Male","South Carolina",1974,"South Atlantic","South","SC",129.136392019331,133.432347630877,138.217266131478,133.52229013417
+"126",40,6,0,0,"Non-communicable","White","Male","South Carolina",1974,"South Atlantic","South","SC",107.093577623673,111.706976378758,116.344800207513,111.745460400548
+"127",40,6,0,1,"All other causes","White","Female","South Carolina",1974,"South Atlantic","South","SC",94.1917618361884,98.3084814143654,102.457512400664,98.3650166375708
+"128",40,6,0,1,"Cancers","White","Female","South Carolina",1974,"South Atlantic","South","SC",137.364170360905,141.106795091702,144.702906775121,141.073897402454
+"129",40,6,0,1,"Cardiovascular","White","Female","South Carolina",1974,"South Atlantic","South","SC",523.702220459514,536.822312043878,549.677883767491,536.774017623479
+"130",40,6,0,1,"Communicable","White","Female","South Carolina",1974,"South Atlantic","South","SC",31.6386941857733,34.0216152430233,36.5867014771945,34.0477684253256
+"131",40,6,0,1,"Injuries","White","Female","South Carolina",1974,"South Atlantic","South","SC",45.9044534753607,48.0074016736695,50.1244490732567,48.0054812869904
+"132",40,6,0,1,"Non-communicable","White","Female","South Carolina",1974,"South Atlantic","South","SC",43.7639890538338,46.0747990330369,48.5158618423752,46.0755034557968
+"133",40,6,1,0,"All other causes","Black","Male","South Carolina",1974,"South Atlantic","South","SC",251.662723930448,262.088878944589,273.024430072589,262.204871830408
+"134",40,6,1,0,"Cancers","Black","Male","South Carolina",1974,"South Atlantic","South","SC",253.435743708294,264.563970063688,275.861020241644,264.54265567104
+"135",40,6,1,0,"Cardiovascular","Black","Male","South Carolina",1974,"South Atlantic","South","SC",884.33173225118,912.998998634411,942.169985609431,913.089561632936
+"136",40,6,1,0,"Communicable","Black","Male","South Carolina",1974,"South Atlantic","South","SC",77.7210194650203,85.4063282595279,93.3373429506644,85.494453776953
+"137",40,6,1,0,"Injuries","Black","Male","South Carolina",1974,"South Atlantic","South","SC",219.965776548794,229.542702454591,239.64325234324,229.42851986378
+"138",40,6,1,0,"Non-communicable","Black","Male","South Carolina",1974,"South Atlantic","South","SC",100.004349476674,105.775185930833,112.583808472289,105.972306265279
+"139",40,6,1,1,"All other causes","Black","Female","South Carolina",1974,"South Atlantic","South","SC",162.901711308471,170.45542624425,177.441656241472,170.274194062939
+"140",40,6,1,1,"Cancers","Black","Female","South Carolina",1974,"South Atlantic","South","SC",145.032085680873,151.256419804467,157.686356026955,151.310403864114
+"141",40,6,1,1,"Cardiovascular","Black","Female","South Carolina",1974,"South Atlantic","South","SC",600.893985651108,619.197542166394,638.68664482269,619.300865619851
+"142",40,6,1,1,"Communicable","Black","Female","South Carolina",1974,"South Atlantic","South","SC",41.4553354788546,45.2207553116042,49.3077128118656,45.2923694403336
+"143",40,6,1,1,"Injuries","Black","Female","South Carolina",1974,"South Atlantic","South","SC",53.8197797447142,57.3389533522695,61.1590676389537,57.325769762283
+"144",40,6,1,1,"Non-communicable","Black","Female","South Carolina",1974,"South Atlantic","South","SC",81.1526758701734,86.4649404390652,91.3295902972535,86.4184045778174
+"145",40,7,0,0,"All other causes","White","Male","South Carolina",1975,"South Atlantic","South","SC",144.20894694129,150.193342127592,156.034207295579,150.159242197972
+"146",40,7,0,0,"Cancers","White","Male","South Carolina",1975,"South Atlantic","South","SC",246.561478098596,253.858329862532,261.109791812975,253.72790619747
+"147",40,7,0,0,"Cardiovascular","White","Male","South Carolina",1975,"South Atlantic","South","SC",851.063865817088,874.748594971168,898.22635845951,874.676295338824
+"148",40,7,0,0,"Communicable","White","Male","South Carolina",1975,"South Atlantic","South","SC",58.2537943405918,63.6572971930556,70.0003082987087,63.7887262414378
+"149",40,7,0,0,"Injuries","White","Male","South Carolina",1975,"South Atlantic","South","SC",123.039718562014,127.335232644855,131.536025018642,127.365569418513
+"150",40,7,0,0,"Non-communicable","White","Male","South Carolina",1975,"South Atlantic","South","SC",106.667151373748,111.037367164781,116.00626200405,111.055205720259
+"151",40,7,0,1,"All other causes","White","Female","South Carolina",1975,"South Atlantic","South","SC",91.112148251991,94.9517863935849,99.0126672607104,94.9286169139532
+"152",40,7,0,1,"Cancers","White","Female","South Carolina",1975,"South Atlantic","South","SC",136.425715340989,140.042431881563,144.099850963393,140.126420892532
+"153",40,7,0,1,"Cardiovascular","White","Female","South Carolina",1975,"South Atlantic","South","SC",487.399483657652,500.721815689399,513.661621596949,500.746531905525
+"154",40,7,0,1,"Communicable","White","Female","South Carolina",1975,"South Atlantic","South","SC",31.8004645940909,34.3102524776911,36.6302501262861,34.2544971373371
+"155",40,7,0,1,"Injuries","White","Female","South Carolina",1975,"South Atlantic","South","SC",44.4831202397583,46.4362750583004,48.5506019000503,46.4792290818913
+"156",40,7,0,1,"Non-communicable","White","Female","South Carolina",1975,"South Atlantic","South","SC",42.8263923141545,45.0683116902668,47.3752004700811,45.1279396847938
+"157",40,7,1,0,"All other causes","Black","Male","South Carolina",1975,"South Atlantic","South","SC",246.038439794492,256.017201744765,266.215578762743,256.10406858722
+"158",40,7,1,0,"Cancers","Black","Male","South Carolina",1975,"South Atlantic","South","SC",260.287470888895,271.249829310615,281.710554239998,271.13294359073
+"159",40,7,1,0,"Cardiovascular","Black","Male","South Carolina",1975,"South Atlantic","South","SC",844.653163684044,871.405385411394,899.836245195813,871.669203072869
+"160",40,7,1,0,"Communicable","Black","Male","South Carolina",1975,"South Atlantic","South","SC",79.1111258244113,86.0345000354141,93.9421363894829,86.2018786595096
+"161",40,7,1,0,"Injuries","Black","Male","South Carolina",1975,"South Atlantic","South","SC",203.834579437365,213.044590569643,222.789048436539,213.056858559832
+"162",40,7,1,0,"Non-communicable","Black","Male","South Carolina",1975,"South Atlantic","South","SC",99.4636557113948,105.798348899573,112.069501374322,105.872659303982
+"163",40,7,1,1,"All other causes","Black","Female","South Carolina",1975,"South Atlantic","South","SC",159.044693191933,166.662878535581,174.011410074257,166.625121313491
+"164",40,7,1,1,"Cancers","Black","Female","South Carolina",1975,"South Atlantic","South","SC",144.821498096013,150.944067070511,157.32304032274,150.939446991445
+"165",40,7,1,1,"Cardiovascular","Black","Female","South Carolina",1975,"South Atlantic","South","SC",573.220758805607,594.062863472191,614.201874605558,594.21974580768
+"166",40,7,1,1,"Communicable","Black","Female","South Carolina",1975,"South Atlantic","South","SC",39.1570787072323,42.9539311326605,46.2957247774976,42.9113180118839
+"167",40,7,1,1,"Injuries","Black","Female","South Carolina",1975,"South Atlantic","South","SC",50.8263468852459,54.5118315254122,58.1565971025572,54.4798886604023
+"168",40,7,1,1,"Non-communicable","Black","Female","South Carolina",1975,"South Atlantic","South","SC",78.5341434097996,83.8544459841352,89.2715339895963,83.871084655972
+"169",40,8,0,0,"All other causes","White","Male","South Carolina",1976,"South Atlantic","South","SC",139.550460642863,145.602680104387,151.359443678952,145.483468144322
+"170",40,8,0,0,"Cancers","White","Male","South Carolina",1976,"South Atlantic","South","SC",248.317142051559,255.610292112464,262.304552282577,255.480267378546
+"171",40,8,0,0,"Cardiovascular","White","Male","South Carolina",1976,"South Atlantic","South","SC",819.304063286868,841.339223815374,863.031176654568,841.342053997567
+"172",40,8,0,0,"Communicable","White","Male","South Carolina",1976,"South Atlantic","South","SC",60.2684332480499,66.3297775282678,72.8539475264496,66.4265440374912
+"173",40,8,0,0,"Injuries","White","Male","South Carolina",1976,"South Atlantic","South","SC",117.991764378029,121.910275565675,126.078055958485,121.86688440489
+"174",40,8,0,0,"Non-communicable","White","Male","South Carolina",1976,"South Atlantic","South","SC",105.630932545539,109.900966503332,114.83509298092,109.937881834771
+"175",40,8,0,1,"All other causes","White","Female","South Carolina",1976,"South Atlantic","South","SC",89.3761312282365,93.2243740712831,97.0037578556544,93.20091612887
+"176",40,8,0,1,"Cancers","White","Female","South Carolina",1976,"South Atlantic","South","SC",137.649719482192,141.262819386087,145.079852704626,141.3235795544
+"177",40,8,0,1,"Cardiovascular","White","Female","South Carolina",1976,"South Atlantic","South","SC",490.01003115498,503.042207627932,517.070336157253,503.112954610034
+"178",40,8,0,1,"Communicable","White","Female","South Carolina",1976,"South Atlantic","South","SC",31.9163009267213,34.3359131367076,37.001159079513,34.3689362982862
+"179",40,8,0,1,"Injuries","White","Female","South Carolina",1976,"South Atlantic","South","SC",43.0327725402149,45.0091140916427,47.0079252133315,44.9971726643657
+"180",40,8,0,1,"Non-communicable","White","Female","South Carolina",1976,"South Atlantic","South","SC",42.6472868761784,44.7804974636977,46.9994219374512,44.7588403463187
+"181",40,8,1,0,"All other causes","Black","Male","South Carolina",1976,"South Atlantic","South","SC",244.813421616088,254.598950263915,263.922849109864,254.475699001996
+"182",40,8,1,0,"Cancers","Black","Male","South Carolina",1976,"South Atlantic","South","SC",263.790785323009,274.634801814002,286.223444272112,274.887172199111
+"183",40,8,1,0,"Cardiovascular","Black","Male","South Carolina",1976,"South Atlantic","South","SC",817.744571356293,843.154303748542,871.085573236596,843.430132097136
+"184",40,8,1,0,"Communicable","Black","Male","South Carolina",1976,"South Atlantic","South","SC",79.4652498695686,86.6233847364173,95.2850406149958,86.654767123937
+"185",40,8,1,0,"Injuries","Black","Male","South Carolina",1976,"South Atlantic","South","SC",194.35003022614,202.549652445367,211.291946839065,202.528463110688
+"186",40,8,1,0,"Non-communicable","Black","Male","South Carolina",1976,"South Atlantic","South","SC",100.362627296167,106.534714077279,112.896812643394,106.635259244086
+"187",40,8,1,1,"All other causes","Black","Female","South Carolina",1976,"South Atlantic","South","SC",157.261972552694,164.247677146007,171.857524260934,164.422262346706
+"188",40,8,1,1,"Cancers","Black","Female","South Carolina",1976,"South Atlantic","South","SC",145.564008370533,151.339819234914,157.449716386589,151.526806663757
+"189",40,8,1,1,"Cardiovascular","Black","Female","South Carolina",1976,"South Atlantic","South","SC",566.209403096645,585.160333043973,605.75303758496,585.341623298195
+"190",40,8,1,1,"Communicable","Black","Female","South Carolina",1976,"South Atlantic","South","SC",37.8867125916135,41.7126861121307,45.4648673880608,41.7642256965867
+"191",40,8,1,1,"Injuries","Black","Female","South Carolina",1976,"South Atlantic","South","SC",48.3223883511427,51.8494047623182,55.2553366895872,51.8807797060509
+"192",40,8,1,1,"Non-communicable","Black","Female","South Carolina",1976,"South Atlantic","South","SC",76.7492335133993,81.8456134234217,86.8351901587336,81.8336365048362
+"193",40,9,0,0,"All other causes","White","Male","South Carolina",1977,"South Atlantic","South","SC",136.122982077505,142.227075384764,147.798792563852,142.133476606649
+"194",40,9,0,0,"Cancers","White","Male","South Carolina",1977,"South Atlantic","South","SC",252.103942557057,258.858199728485,265.524411286777,258.78745436061
+"195",40,9,0,0,"Cardiovascular","White","Male","South Carolina",1977,"South Atlantic","South","SC",798.671069893377,817.475075821098,839.591004662434,818.036313446735
+"196",40,9,0,0,"Communicable","White","Male","South Carolina",1977,"South Atlantic","South","SC",58.9187145458311,64.6503236099705,70.5641787160666,64.5938018251652
+"197",40,9,0,0,"Injuries","White","Male","South Carolina",1977,"South Atlantic","South","SC",116.76866595164,120.672722463543,125.021547642498,120.680006570405
+"198",40,9,0,0,"Non-communicable","White","Male","South Carolina",1977,"South Atlantic","South","SC",104.708617895091,108.961627788529,113.561689555659,108.982902108578
+"199",40,9,0,1,"All other causes","White","Female","South Carolina",1977,"South Atlantic","South","SC",86.8229779332295,90.5764209210216,94.4958906538118,90.6410463915545
+"200",40,9,0,1,"Cancers","White","Female","South Carolina",1977,"South Atlantic","South","SC",138.230964044819,141.919482593424,145.656085271487,141.926612413798
+"201",40,9,0,1,"Cardiovascular","White","Female","South Carolina",1977,"South Atlantic","South","SC",468.455272369444,480.87368160189,493.252558948579,480.934839965108
+"202",40,9,0,1,"Communicable","White","Female","South Carolina",1977,"South Atlantic","South","SC",31.4140572499957,33.5708032176021,35.9849244831062,33.6027336698752
+"203",40,9,0,1,"Injuries","White","Female","South Carolina",1977,"South Atlantic","South","SC",42.463028376923,44.1792546363073,46.0710211768139,44.1955079245029
+"204",40,9,0,1,"Non-communicable","White","Female","South Carolina",1977,"South Atlantic","South","SC",42.7125869090718,44.8748321920906,47.0828103609051,44.8949680897465
+"205",40,9,1,0,"All other causes","Black","Male","South Carolina",1977,"South Atlantic","South","SC",235.262625683895,245.238184725317,256.091715261754,245.465039460078
+"206",40,9,1,0,"Cancers","Black","Male","South Carolina",1977,"South Atlantic","South","SC",271.897877977441,283.458224148528,294.911852785932,283.508856106731
+"207",40,9,1,0,"Cardiovascular","Black","Male","South Carolina",1977,"South Atlantic","South","SC",800.931818419692,826.332598240481,853.047243301271,826.903885810284
+"208",40,9,1,0,"Communicable","Black","Male","South Carolina",1977,"South Atlantic","South","SC",79.1509238005992,86.0053649500012,94.1917698618403,86.1802572923106
+"209",40,9,1,0,"Injuries","Black","Male","South Carolina",1977,"South Atlantic","South","SC",189.185386652964,198.002058290833,206.66251937494,197.875161190382
+"210",40,9,1,0,"Non-communicable","Black","Male","South Carolina",1977,"South Atlantic","South","SC",100.847988014567,106.617523786916,112.797427108465,106.687885843681
+"211",40,9,1,1,"All other causes","Black","Female","South Carolina",1977,"South Atlantic","South","SC",152.510746422826,159.181596444663,166.440228060137,159.184815928801
+"212",40,9,1,1,"Cancers","Black","Female","South Carolina",1977,"South Atlantic","South","SC",147.447784225507,152.672923422297,158.962321004711,152.819988460138
+"213",40,9,1,1,"Cardiovascular","Black","Female","South Carolina",1977,"South Atlantic","South","SC",559.583134411715,578.807382178837,597.005270550684,578.720728266403
+"214",40,9,1,1,"Communicable","Black","Female","South Carolina",1977,"South Atlantic","South","SC",37.7809145327343,41.5367506768569,45.372972062352,41.5556354287681
+"215",40,9,1,1,"Injuries","Black","Female","South Carolina",1977,"South Atlantic","South","SC",46.4784617336496,49.6812594401369,52.7713600753533,49.6896445942053
+"216",40,9,1,1,"Non-communicable","Black","Female","South Carolina",1977,"South Atlantic","South","SC",75.118796277521,80.2227572741675,84.7508390526035,80.1454118838121
+"217",40,10,0,0,"All other causes","White","Male","South Carolina",1978,"South Atlantic","South","SC",134.72687083453,140.208210235652,145.84006155881,140.223791923458
+"218",40,10,0,0,"Cancers","White","Male","South Carolina",1978,"South Atlantic","South","SC",254.182979882021,260.309956281293,267.565868992201,260.479518151196
+"219",40,10,0,0,"Cardiovascular","White","Male","South Carolina",1978,"South Atlantic","South","SC",751.162617187877,770.691134113455,788.954350373456,770.752227849975
+"220",40,10,0,0,"Communicable","White","Male","South Carolina",1978,"South Atlantic","South","SC",56.3242571714604,61.4865730031129,67.678883043975,61.6347687425789
+"221",40,10,0,0,"Injuries","White","Male","South Carolina",1978,"South Atlantic","South","SC",113.91451632303,117.913120422643,121.795581515205,117.930176969435
+"222",40,10,0,0,"Non-communicable","White","Male","South Carolina",1978,"South Atlantic","South","SC",104.507515433758,108.918664707694,113.741993493717,108.963254961208
+"223",40,10,0,1,"All other causes","White","Female","South Carolina",1978,"South Atlantic","South","SC",86.4236664780726,90.0713375890884,93.8018031061805,90.1007343139362
+"224",40,10,0,1,"Cancers","White","Female","South Carolina",1978,"South Atlantic","South","SC",139.12887010699,142.952969873864,146.500542849108,142.914789862536
+"225",40,10,0,1,"Cardiovascular","White","Female","South Carolina",1978,"South Atlantic","South","SC",458.426245990094,470.201917559539,482.935466849618,470.414455420492
+"226",40,10,0,1,"Communicable","White","Female","South Carolina",1978,"South Atlantic","South","SC",31.0511699414481,33.3570609523871,35.7975812719135,33.3858138306996
+"227",40,10,0,1,"Injuries","White","Female","South Carolina",1978,"South Atlantic","South","SC",41.1399613477331,43.0514229412564,45.0342599625307,43.0553102072239
+"228",40,10,0,1,"Non-communicable","White","Female","South Carolina",1978,"South Atlantic","South","SC",42.9687190110367,45.2236791244918,47.3586653163542,45.183506663156
+"229",40,10,1,0,"All other causes","Black","Male","South Carolina",1978,"South Atlantic","South","SC",231.548773150557,240.696503611632,250.700871447126,240.834814181855
+"230",40,10,1,0,"Cancers","Black","Male","South Carolina",1978,"South Atlantic","South","SC",281.222421586392,292.105210617017,304.14979280005,292.220322172627
+"231",40,10,1,0,"Cardiovascular","Black","Male","South Carolina",1978,"South Atlantic","South","SC",782.376585754217,807.014367543405,834.043701778211,807.376474554993
+"232",40,10,1,0,"Communicable","Black","Male","South Carolina",1978,"South Atlantic","South","SC",75.3755321075038,82.7074351564686,90.4632716608007,82.849035185168
+"233",40,10,1,0,"Injuries","Black","Male","South Carolina",1978,"South Atlantic","South","SC",183.559734580238,192.090266622085,201.044135803189,192.159748031297
+"234",40,10,1,0,"Non-communicable","Black","Male","South Carolina",1978,"South Atlantic","South","SC",100.154545904708,106.09818917014,112.270303549397,106.156246268125
+"235",40,10,1,1,"All other causes","Black","Female","South Carolina",1978,"South Atlantic","South","SC",146.936616144294,153.261298071061,159.890835329565,153.293387897003
+"236",40,10,1,1,"Cancers","Black","Female","South Carolina",1978,"South Atlantic","South","SC",147.918945310863,153.94585042505,160.24737121312,153.933050127439
+"237",40,10,1,1,"Cardiovascular","Black","Female","South Carolina",1978,"South Atlantic","South","SC",541.74990390124,560.248375959934,579.633682085265,560.368148971521
+"238",40,10,1,1,"Communicable","Black","Female","South Carolina",1978,"South Atlantic","South","SC",37.0679168796263,40.4655114135204,44.3178705561202,40.6012319900107
+"239",40,10,1,1,"Injuries","Black","Female","South Carolina",1978,"South Atlantic","South","SC",45.213428930239,48.1856835066831,51.2651744921419,48.2004747790717
+"240",40,10,1,1,"Non-communicable","Black","Female","South Carolina",1978,"South Atlantic","South","SC",73.9042684027345,78.6671416337133,83.3737274904165,78.6259452751791
+"241",40,11,0,0,"All other causes","White","Male","South Carolina",1979,"South Atlantic","South","SC",132.067549319887,137.679979327197,143.487216785715,137.696555110849
+"242",40,11,0,0,"Cancers","White","Male","South Carolina",1979,"South Atlantic","South","SC",256.940858595005,263.510851745393,270.364059696281,263.610802812082
+"243",40,11,0,0,"Cardiovascular","White","Male","South Carolina",1979,"South Atlantic","South","SC",728.930777484774,748.703373997969,768.177180770036,748.684633431649
+"244",40,11,0,0,"Communicable","White","Male","South Carolina",1979,"South Atlantic","South","SC",50.0235810199317,54.8589416740241,60.1204348516017,54.8912610025404
+"245",40,11,0,0,"Injuries","White","Male","South Carolina",1979,"South Atlantic","South","SC",111.880803017333,115.636887099948,119.245272388155,115.572527598754
+"246",40,11,0,0,"Non-communicable","White","Male","South Carolina",1979,"South Atlantic","South","SC",103.756645944012,108.371167472426,113.226106235888,108.47288631073
+"247",40,11,0,1,"All other causes","White","Female","South Carolina",1979,"South Atlantic","South","SC",85.3389650517623,88.8497491573019,92.825348125641,88.986925999617
+"248",40,11,0,1,"Cancers","White","Female","South Carolina",1979,"South Atlantic","South","SC",140.60082278369,144.390517317261,147.829641990024,144.410529269279
+"249",40,11,0,1,"Cardiovascular","White","Female","South Carolina",1979,"South Atlantic","South","SC",441.758104590466,453.497137741838,464.451378827048,453.457295262694
+"250",40,11,0,1,"Communicable","White","Female","South Carolina",1979,"South Atlantic","South","SC",30.6699453218896,32.727223190458,35.1687815793591,32.7626947681283
+"251",40,11,0,1,"Injuries","White","Female","South Carolina",1979,"South Atlantic","South","SC",40.228290622939,41.9708914323679,43.6610526301079,41.9631019979268
+"252",40,11,0,1,"Non-communicable","White","Female","South Carolina",1979,"South Atlantic","South","SC",43.5112170068781,45.6806356679758,47.8122295365171,45.6899433907982
+"253",40,11,1,0,"All other causes","Black","Male","South Carolina",1979,"South Atlantic","South","SC",227.198530344324,236.915939331272,246.439614872965,236.67734986658
+"254",40,11,1,0,"Cancers","Black","Male","South Carolina",1979,"South Atlantic","South","SC",291.991732977883,303.082400598504,314.892426205819,303.345896289328
+"255",40,11,1,0,"Cardiovascular","Black","Male","South Carolina",1979,"South Atlantic","South","SC",780.869435432937,804.454223360884,829.961760025486,804.797700410088
+"256",40,11,1,0,"Communicable","Black","Male","South Carolina",1979,"South Atlantic","South","SC",71.471376272861,78.6743572280953,86.4866666661197,78.7602227837262
+"257",40,11,1,0,"Injuries","Black","Male","South Carolina",1979,"South Atlantic","South","SC",180.042653112134,187.790320815539,196.017397073551,187.904170394702
+"258",40,11,1,0,"Non-communicable","Black","Male","South Carolina",1979,"South Atlantic","South","SC",100.018223247958,105.569744883766,112.097717673978,105.690901499471
+"259",40,11,1,1,"All other causes","Black","Female","South Carolina",1979,"South Atlantic","South","SC",142.540726892923,148.602236616207,155.276525397121,148.642902003033
+"260",40,11,1,1,"Cancers","Black","Female","South Carolina",1979,"South Atlantic","South","SC",150.069525818222,155.665211037815,161.842715123417,155.760077781399
+"261",40,11,1,1,"Cardiovascular","Black","Female","South Carolina",1979,"South Atlantic","South","SC",521.40563930486,539.005902743536,557.83818064636,538.796699412702
+"262",40,11,1,1,"Communicable","Black","Female","South Carolina",1979,"South Atlantic","South","SC",36.0639592041002,39.6134761558328,43.3536608992892,39.6450075081145
+"263",40,11,1,1,"Injuries","Black","Female","South Carolina",1979,"South Atlantic","South","SC",44.0799626676325,47.0712574066027,50.0573853280995,47.1064857770142
+"264",40,11,1,1,"Non-communicable","Black","Female","South Carolina",1979,"South Atlantic","South","SC",73.4012130252042,78.2848318803818,82.9158915763468,78.2011875348176
+"265",40,12,0,0,"All other causes","White","Male","South Carolina",1980,"South Atlantic","South","SC",128.723005030547,134.131608569702,140.078768369318,134.246936635667
+"266",40,12,0,0,"Cancers","White","Male","South Carolina",1980,"South Atlantic","South","SC",258.76437541607,266.037659550962,273.284188692388,265.972159854825
+"267",40,12,0,0,"Cardiovascular","White","Male","South Carolina",1980,"South Atlantic","South","SC",719.609950352932,740.153689829706,758.330233034229,739.989722570007
+"268",40,12,0,0,"Communicable","White","Male","South Carolina",1980,"South Atlantic","South","SC",51.7564355956876,56.4366129961218,61.9851781293076,56.546540023732
+"269",40,12,0,0,"Injuries","White","Male","South Carolina",1980,"South Atlantic","South","SC",108.862914459974,112.521357996955,116.259454929545,112.52549516071
+"270",40,12,0,0,"Non-communicable","White","Male","South Carolina",1980,"South Atlantic","South","SC",105.201044713436,109.744201488336,114.418448386289,109.77566212604
+"271",40,12,0,1,"All other causes","White","Female","South Carolina",1980,"South Atlantic","South","SC",83.3719303910069,86.5152933203839,90.1782475804881,86.6011110071172
+"272",40,12,0,1,"Cancers","White","Female","South Carolina",1980,"South Atlantic","South","SC",143.699407782611,147.067950666728,150.674814325147,147.125391019099
+"273",40,12,0,1,"Cardiovascular","White","Female","South Carolina",1980,"South Atlantic","South","SC",432.480531751089,443.884369466359,454.63237461789,443.834428790045
+"274",40,12,0,1,"Communicable","White","Female","South Carolina",1980,"South Atlantic","South","SC",29.9662744171599,32.1644302198069,34.4264887554728,32.1732410647344
+"275",40,12,0,1,"Injuries","White","Female","South Carolina",1980,"South Atlantic","South","SC",39.5404015465205,41.2596005172434,42.9982612905672,41.2672278774006
+"276",40,12,0,1,"Non-communicable","White","Female","South Carolina",1980,"South Atlantic","South","SC",44.2339154725254,46.3211805873648,48.6934748566413,46.3754832898528
+"277",40,12,1,0,"All other causes","Black","Male","South Carolina",1980,"South Atlantic","South","SC",220.440212119399,230.151723453101,239.683397516157,230.18343374385
+"278",40,12,1,0,"Cancers","Black","Male","South Carolina",1980,"South Atlantic","South","SC",301.086970417966,312.526202856397,324.284447856905,312.645797373153
+"279",40,12,1,0,"Cardiovascular","Black","Male","South Carolina",1980,"South Atlantic","South","SC",769.93524590255,792.88233187472,821.21656092076,793.683657368964
+"280",40,12,1,0,"Communicable","Black","Male","South Carolina",1980,"South Atlantic","South","SC",73.8812032819362,80.9506196194149,88.0228807169841,80.984309427659
+"281",40,12,1,0,"Injuries","Black","Male","South Carolina",1980,"South Atlantic","South","SC",172.952709771211,181.126515624087,189.373758951308,181.164811730769
+"282",40,12,1,0,"Non-communicable","Black","Male","South Carolina",1980,"South Atlantic","South","SC",100.474434243435,105.912677751226,112.264558447771,105.981230544156
+"283",40,12,1,1,"All other causes","Black","Female","South Carolina",1980,"South Atlantic","South","SC",139.830991871284,146.056622280673,152.529542702547,146.058596706695
+"284",40,12,1,1,"Cancers","Black","Female","South Carolina",1980,"South Atlantic","South","SC",152.951909792739,158.718970113146,165.02718941217,158.829754259131
+"285",40,12,1,1,"Cardiovascular","Black","Female","South Carolina",1980,"South Atlantic","South","SC",521.13474396406,538.104634772708,556.817816874439,538.255981833273
+"286",40,12,1,1,"Communicable","Black","Female","South Carolina",1980,"South Atlantic","South","SC",35.6921227257882,39.3433520968642,42.9301516874399,39.2818569500013
+"287",40,12,1,1,"Injuries","Black","Female","South Carolina",1980,"South Atlantic","South","SC",43.3725223621237,46.0916982854702,49.1685590498769,46.1073379082928
+"288",40,12,1,1,"Non-communicable","Black","Female","South Carolina",1980,"South Atlantic","South","SC",73.5553985517905,78.1440525564967,82.6266398577598,78.1395084251545
+"289",40,13,0,0,"All other causes","White","Male","South Carolina",1981,"South Atlantic","South","SC",125.5655024724,130.758588086163,136.236551193892,130.715087697237
+"290",40,13,0,0,"Cancers","White","Male","South Carolina",1981,"South Atlantic","South","SC",258.2746765832,265.461917395907,272.399774564633,265.454485501035
+"291",40,13,0,0,"Cardiovascular","White","Male","South Carolina",1981,"South Atlantic","South","SC",697.360244475277,714.59637135282,732.227603683973,714.650531560202
+"292",40,13,0,0,"Communicable","White","Male","South Carolina",1981,"South Atlantic","South","SC",55.2781866349439,60.4501280589092,66.3139756966873,60.5255679336272
+"293",40,13,0,0,"Injuries","White","Male","South Carolina",1981,"South Atlantic","South","SC",106.295969255303,110.029997111456,113.746892295942,109.961153336174
+"294",40,13,0,0,"Non-communicable","White","Male","South Carolina",1981,"South Atlantic","South","SC",106.849716525811,111.402505213332,116.091492903233,111.327798764673
+"295",40,13,0,1,"All other causes","White","Female","South Carolina",1981,"South Atlantic","South","SC",81.9401506404408,85.3798272294067,88.6410191470935,85.3676314564611
+"296",40,13,0,1,"Cancers","White","Female","South Carolina",1981,"South Atlantic","South","SC",145.627146022658,149.187271166168,152.871325435312,149.200445375424
+"297",40,13,0,1,"Cardiovascular","White","Female","South Carolina",1981,"South Atlantic","South","SC",432.395593876813,443.64678446477,454.586315203694,443.576739870199
+"298",40,13,0,1,"Communicable","White","Female","South Carolina",1981,"South Atlantic","South","SC",30.5594765398926,32.8802509093553,35.2213535927529,32.8996657907014
+"299",40,13,0,1,"Injuries","White","Female","South Carolina",1981,"South Atlantic","South","SC",39.2278389605993,40.9086887882368,42.6424611397092,40.9218622729359
+"300",40,13,0,1,"Non-communicable","White","Female","South Carolina",1981,"South Atlantic","South","SC",44.9401002063724,47.1582027536817,49.4864890832881,47.1809761105512
+"301",40,13,1,0,"All other causes","Black","Male","South Carolina",1981,"South Atlantic","South","SC",214.788955444061,224.642997850779,233.902281245877,224.591733984277
+"302",40,13,1,0,"Cancers","Black","Male","South Carolina",1981,"South Atlantic","South","SC",312.473357743548,324.090486066741,336.48835071675,324.094994585232
+"303",40,13,1,0,"Cardiovascular","Black","Male","South Carolina",1981,"South Atlantic","South","SC",746.65015017995,770.493386803545,796.804465260152,771.11903783405
+"304",40,13,1,0,"Communicable","Black","Male","South Carolina",1981,"South Atlantic","South","SC",74.8896296474122,81.9518759383562,89.5302214186899,82.0189718063973
+"305",40,13,1,0,"Injuries","Black","Male","South Carolina",1981,"South Atlantic","South","SC",167.208457095967,174.56882405988,182.035213074595,174.494719643303
+"306",40,13,1,0,"Non-communicable","Black","Male","South Carolina",1981,"South Atlantic","South","SC",100.011282902565,105.919129992743,111.752553142684,106.028274429173
+"307",40,13,1,1,"All other causes","Black","Female","South Carolina",1981,"South Atlantic","South","SC",137.600528968664,143.447133006291,150.225679167404,143.580992048705
+"308",40,13,1,1,"Cancers","Black","Female","South Carolina",1981,"South Atlantic","South","SC",154.344326171094,160.208055427056,166.456329671733,160.26157956122
+"309",40,13,1,1,"Cardiovascular","Black","Female","South Carolina",1981,"South Atlantic","South","SC",513.169546909513,530.999998753409,548.241888857306,531.019766251907
+"310",40,13,1,1,"Communicable","Black","Female","South Carolina",1981,"South Atlantic","South","SC",36.4656154990715,40.0061910568183,43.6053282560524,40.0029335964448
+"311",40,13,1,1,"Injuries","Black","Female","South Carolina",1981,"South Atlantic","South","SC",42.0025363128873,44.8147864640647,47.6702270496407,44.835129968145
+"312",40,13,1,1,"Non-communicable","Black","Female","South Carolina",1981,"South Atlantic","South","SC",75.0140695050551,79.269572017673,84.1562620139001,79.3598623904629
+"313",40,14,0,0,"All other causes","White","Male","South Carolina",1982,"South Atlantic","South","SC",121.089496710764,126.762979444486,131.886740472653,126.72021234467
+"314",40,14,0,0,"Cancers","White","Male","South Carolina",1982,"South Atlantic","South","SC",258.052637885389,264.340556131509,270.648068624551,264.29901439033
+"315",40,14,0,0,"Cardiovascular","White","Male","South Carolina",1982,"South Atlantic","South","SC",674.805270732035,691.849970246541,709.718787354883,692.064617577211
+"316",40,14,0,0,"Communicable","White","Male","South Carolina",1982,"South Atlantic","South","SC",54.9265327436114,59.9101546007248,65.3530108366924,59.9482867879121
+"317",40,14,0,0,"Injuries","White","Male","South Carolina",1982,"South Atlantic","South","SC",104.629400102353,108.218765090817,111.807889128296,108.195895712846
+"318",40,14,0,0,"Non-communicable","White","Male","South Carolina",1982,"South Atlantic","South","SC",106.725130063607,111.339293564629,115.852588791528,111.348157747857
+"319",40,14,0,1,"All other causes","White","Female","South Carolina",1982,"South Atlantic","South","SC",81.3219304883374,84.8490012343879,88.0934876470545,84.7860851548722
+"320",40,14,0,1,"Cancers","White","Female","South Carolina",1982,"South Atlantic","South","SC",147.196850444786,150.63426339804,154.294342876732,150.663161672665
+"321",40,14,0,1,"Cardiovascular","White","Female","South Carolina",1982,"South Atlantic","South","SC",411.399964931924,422.495182854661,432.789380275108,422.226042229443
+"322",40,14,0,1,"Communicable","White","Female","South Carolina",1982,"South Atlantic","South","SC",30.0956181442947,32.3273955399076,34.42949915221,32.3058562865733
+"323",40,14,0,1,"Injuries","White","Female","South Carolina",1982,"South Atlantic","South","SC",38.9975426578874,40.6650709555726,42.3124448747365,40.6194445353588
+"324",40,14,0,1,"Non-communicable","White","Female","South Carolina",1982,"South Atlantic","South","SC",45.2929617746799,47.511726185411,49.7989162422425,47.4947217276715
+"325",40,14,1,0,"All other causes","Black","Male","South Carolina",1982,"South Atlantic","South","SC",210.415883784898,219.283339683429,228.547225810922,219.378584835434
+"326",40,14,1,0,"Cancers","Black","Male","South Carolina",1982,"South Atlantic","South","SC",323.948106014887,336.805510025364,349.143141214093,336.859059085129
+"327",40,14,1,0,"Cardiovascular","Black","Male","South Carolina",1982,"South Atlantic","South","SC",741.750361184682,765.233120332296,789.861257000175,765.355130582065
+"328",40,14,1,0,"Communicable","Black","Male","South Carolina",1982,"South Atlantic","South","SC",78.0474554494981,85.1470642164304,93.2548541861904,85.4047100882103
+"329",40,14,1,0,"Injuries","Black","Male","South Carolina",1982,"South Atlantic","South","SC",159.854975929556,166.905659961992,174.544260115092,167.058048178524
+"330",40,14,1,0,"Non-communicable","Black","Male","South Carolina",1982,"South Atlantic","South","SC",101.00748754562,106.707954216465,113.044400414965,106.859953713587
+"331",40,14,1,1,"All other causes","Black","Female","South Carolina",1982,"South Atlantic","South","SC",133.390677512403,139.437170670918,145.90718239642,139.562068449633
+"332",40,14,1,1,"Cancers","Black","Female","South Carolina",1982,"South Atlantic","South","SC",158.086585373309,164.06712795253,170.502363924201,164.05080760131
+"333",40,14,1,1,"Cardiovascular","Black","Female","South Carolina",1982,"South Atlantic","South","SC",506.216959177165,523.964232068213,542.211239245019,524.064105119253
+"334",40,14,1,1,"Communicable","Black","Female","South Carolina",1982,"South Atlantic","South","SC",37.7410108683165,41.0828194511297,44.7167337145749,41.1869867857604
+"335",40,14,1,1,"Injuries","Black","Female","South Carolina",1982,"South Atlantic","South","SC",40.9103000189251,43.6912990947318,46.4393046474738,43.7036618835595
+"336",40,14,1,1,"Non-communicable","Black","Female","South Carolina",1982,"South Atlantic","South","SC",75.7380219840414,80.3737045329202,85.1620621439369,80.3781460384079
+"337",40,15,0,0,"All other causes","White","Male","South Carolina",1983,"South Atlantic","South","SC",120.079277629716,125.46236596179,130.91902774852,125.526964549641
+"338",40,15,0,0,"Cancers","White","Male","South Carolina",1983,"South Atlantic","South","SC",260.285815284256,267.229234143674,273.748266105274,267.272332335915
+"339",40,15,0,0,"Cardiovascular","White","Male","South Carolina",1983,"South Atlantic","South","SC",673.995144088985,690.440806772367,708.685154149316,690.795210418519
+"340",40,15,0,0,"Communicable","White","Male","South Carolina",1983,"South Atlantic","South","SC",56.6722550832992,61.7519949015404,67.3659675632477,61.8619987392954
+"341",40,15,0,0,"Injuries","White","Male","South Carolina",1983,"South Atlantic","South","SC",103.672599456432,107.423657657995,110.608957069208,107.403517323814
+"342",40,15,0,0,"Non-communicable","White","Male","South Carolina",1983,"South Atlantic","South","SC",107.753974631109,112.475694330785,117.193509211987,112.498785279228
+"343",40,15,0,1,"All other causes","White","Female","South Carolina",1983,"South Atlantic","South","SC",82.3225162542606,85.5979103455976,89.1087289867656,85.5841042780428
+"344",40,15,0,1,"Cancers","White","Female","South Carolina",1983,"South Atlantic","South","SC",146.939579131245,150.596918342696,154.225611533026,150.633615417556
+"345",40,15,0,1,"Cardiovascular","White","Female","South Carolina",1983,"South Atlantic","South","SC",409.778062621599,421.049140251903,430.549233958866,420.989309512142
+"346",40,15,0,1,"Communicable","White","Female","South Carolina",1983,"South Atlantic","South","SC",31.7313720590354,33.7016566493828,35.9067449530747,33.7368766944135
+"347",40,15,0,1,"Injuries","White","Female","South Carolina",1983,"South Atlantic","South","SC",38.7001838949222,40.2971765308467,41.9944749530013,40.3126800851025
+"348",40,15,0,1,"Non-communicable","White","Female","South Carolina",1983,"South Atlantic","South","SC",46.7198275180506,49.0047179945984,51.2245486427521,49.0058183397216
+"349",40,15,1,0,"All other causes","Black","Male","South Carolina",1983,"South Atlantic","South","SC",208.091297673992,216.708325291284,226.186664286164,216.891980042834
+"350",40,15,1,0,"Cancers","Black","Male","South Carolina",1983,"South Atlantic","South","SC",333.751463885843,346.406409753696,359.85862028489,346.441848711372
+"351",40,15,1,0,"Cardiovascular","Black","Male","South Carolina",1983,"South Atlantic","South","SC",736.436870630296,759.380038535532,784.887100348103,759.746204472867
+"352",40,15,1,0,"Communicable","Black","Male","South Carolina",1983,"South Atlantic","South","SC",80.7495315026006,88.0380635132194,95.7371886188032,88.1902748469298
+"353",40,15,1,0,"Injuries","Black","Male","South Carolina",1983,"South Atlantic","South","SC",156.02691764024,163.436221121036,171.087676356885,163.473875556483
+"354",40,15,1,0,"Non-communicable","Black","Male","South Carolina",1983,"South Atlantic","South","SC",102.604091814583,108.507543452077,114.34125005161,108.481224287785
+"355",40,15,1,1,"All other causes","Black","Female","South Carolina",1983,"South Atlantic","South","SC",133.540342102301,140.110018075578,145.687554029922,139.897693201227
+"356",40,15,1,1,"Cancers","Black","Female","South Carolina",1983,"South Atlantic","South","SC",161.509429458855,167.414415627624,173.403115663862,167.482494978287
+"357",40,15,1,1,"Cardiovascular","Black","Female","South Carolina",1983,"South Atlantic","South","SC",510.967648638577,526.838160554275,544.26428851993,526.99067119613
+"358",40,15,1,1,"Communicable","Black","Female","South Carolina",1983,"South Atlantic","South","SC",39.2217571831249,42.8160865854467,46.3584046791889,42.7676510580497
+"359",40,15,1,1,"Injuries","Black","Female","South Carolina",1983,"South Atlantic","South","SC",40.7611714043627,43.4682709927848,46.1652082432607,43.4585694945287
+"360",40,15,1,1,"Non-communicable","Black","Female","South Carolina",1983,"South Atlantic","South","SC",75.8193080096063,80.5091945708751,85.5009396232911,80.58813339706
+"361",40,16,0,0,"All other causes","White","Male","South Carolina",1984,"South Atlantic","South","SC",120.041060289159,125.43420852954,130.811436325308,125.431202047721
+"362",40,16,0,0,"Cancers","White","Male","South Carolina",1984,"South Atlantic","South","SC",263.899104377647,269.961916988715,276.860047998682,270.15449500632
+"363",40,16,0,0,"Cardiovascular","White","Male","South Carolina",1984,"South Atlantic","South","SC",648.675557607823,665.205098527835,682.306146608595,665.579282430095
+"364",40,16,0,0,"Communicable","White","Male","South Carolina",1984,"South Atlantic","South","SC",57.7862181441636,62.90265758963,68.3427697889165,62.9204619899894
+"365",40,16,0,0,"Injuries","White","Male","South Carolina",1984,"South Atlantic","South","SC",103.481627328307,106.937238310855,110.190293234231,106.905795140127
+"366",40,16,0,0,"Non-communicable","White","Male","South Carolina",1984,"South Atlantic","South","SC",108.370798414495,112.710539251185,117.085500959022,112.731338260288
+"367",40,16,0,1,"All other causes","White","Female","South Carolina",1984,"South Atlantic","South","SC",84.5489893544119,88.0032978771648,91.5282219276461,87.995429283565
+"368",40,16,0,1,"Cancers","White","Female","South Carolina",1984,"South Atlantic","South","SC",147.510295738032,150.989309350065,154.617811201329,151.014527972457
+"369",40,16,0,1,"Cardiovascular","White","Female","South Carolina",1984,"South Atlantic","South","SC",401.021895983056,410.464391935,420.309336396514,410.494061008425
+"370",40,16,0,1,"Communicable","White","Female","South Carolina",1984,"South Atlantic","South","SC",32.472464023447,34.6458682031525,36.869286777375,34.6768840471115
+"371",40,16,0,1,"Injuries","White","Female","South Carolina",1984,"South Atlantic","South","SC",38.3958423260531,39.8698444970035,41.5318151762927,39.9101530442309
+"372",40,16,0,1,"Non-communicable","White","Female","South Carolina",1984,"South Atlantic","South","SC",48.9774033956146,51.4328522688168,53.73605647738,51.3859339380657
+"373",40,16,1,0,"All other causes","Black","Male","South Carolina",1984,"South Atlantic","South","SC",207.969870838949,216.455509789799,226.092988261746,216.704172296148
+"374",40,16,1,0,"Cancers","Black","Male","South Carolina",1984,"South Atlantic","South","SC",343.895708197891,357.912269135751,371.664200459765,357.522645098174
+"375",40,16,1,0,"Cardiovascular","Black","Male","South Carolina",1984,"South Atlantic","South","SC",729.238451422731,751.803382414975,777.126182451738,752.406690535555
+"376",40,16,1,0,"Communicable","Black","Male","South Carolina",1984,"South Atlantic","South","SC",78.8901754985688,85.8999945485275,93.4324189361114,85.9272612326758
+"377",40,16,1,0,"Injuries","Black","Male","South Carolina",1984,"South Atlantic","South","SC",155.516074353987,162.962477070965,170.480737497873,162.925319216525
+"378",40,16,1,0,"Non-communicable","Black","Male","South Carolina",1984,"South Atlantic","South","SC",105.389444155416,111.334636477599,117.264143354254,111.279837719323
+"379",40,16,1,1,"All other causes","Black","Female","South Carolina",1984,"South Atlantic","South","SC",133.213779887872,139.619897181626,145.802061702484,139.541946119451
+"380",40,16,1,1,"Cancers","Black","Female","South Carolina",1984,"South Atlantic","South","SC",164.919400275392,170.953670939386,177.637273828193,171.033047830975
+"381",40,16,1,1,"Cardiovascular","Black","Female","South Carolina",1984,"South Atlantic","South","SC",499.402708274579,516.217637184988,532.866879622839,516.214578712784
+"382",40,16,1,1,"Communicable","Black","Female","South Carolina",1984,"South Atlantic","South","SC",41.1251969235864,44.7570209713826,48.4666229758944,44.83198413541
+"383",40,16,1,1,"Injuries","Black","Female","South Carolina",1984,"South Atlantic","South","SC",40.8729903010799,43.2294432947796,45.9745409409444,43.2675005586481
+"384",40,16,1,1,"Non-communicable","Black","Female","South Carolina",1984,"South Atlantic","South","SC",76.5017854440629,81.2010856770201,86.1047549483896,81.2221217728642
+"385",40,17,0,0,"All other causes","White","Male","South Carolina",1985,"South Atlantic","South","SC",120.950545930997,126.294740433329,132.205658345294,126.42019137412
+"386",40,17,0,0,"Cancers","White","Male","South Carolina",1985,"South Atlantic","South","SC",267.413224938774,273.533606263967,280.862385288444,273.653448152654
+"387",40,17,0,0,"Cardiovascular","White","Male","South Carolina",1985,"South Atlantic","South","SC",639.690776072821,656.642908592193,672.924951772075,656.529965819659
+"388",40,17,0,0,"Communicable","White","Male","South Carolina",1985,"South Atlantic","South","SC",60.7092784218723,65.7702152601864,71.5676669349547,65.9087221144157
+"389",40,17,0,0,"Injuries","White","Male","South Carolina",1985,"South Atlantic","South","SC",103.148006901823,106.55360841384,110.056337154616,106.543812055738
+"390",40,17,0,0,"Non-communicable","White","Male","South Carolina",1985,"South Atlantic","South","SC",109.26363761774,113.619465226232,118.242046101888,113.595038944491
+"391",40,17,0,1,"All other causes","White","Female","South Carolina",1985,"South Atlantic","South","SC",86.7930641803409,90.5687770440099,94.0979885120162,90.4627995999447
+"392",40,17,0,1,"Cancers","White","Female","South Carolina",1985,"South Atlantic","South","SC",148.261371400557,151.926041129186,155.153749246088,151.851543466409
+"393",40,17,0,1,"Cardiovascular","White","Female","South Carolina",1985,"South Atlantic","South","SC",392.516202331656,401.99600055572,412.169821997429,402.134001444423
+"394",40,17,0,1,"Communicable","White","Female","South Carolina",1985,"South Atlantic","South","SC",34.696305483611,37.11189350342,39.5350943609612,37.093392073053
+"395",40,17,0,1,"Injuries","White","Female","South Carolina",1985,"South Atlantic","South","SC",38.298261795161,39.7652836636502,41.4295380776601,39.8050058519108
+"396",40,17,0,1,"Non-communicable","White","Female","South Carolina",1985,"South Atlantic","South","SC",51.4203449478812,53.7312455613943,56.2089534641188,53.7278764645049
+"397",40,17,1,0,"All other causes","Black","Male","South Carolina",1985,"South Atlantic","South","SC",209.684415389126,218.641318970464,228.853558849737,218.720594757033
+"398",40,17,1,0,"Cancers","Black","Male","South Carolina",1985,"South Atlantic","South","SC",348.29592711067,361.977736802714,376.1545654172,361.99083464338
+"399",40,17,1,0,"Cardiovascular","Black","Male","South Carolina",1985,"South Atlantic","South","SC",734.733909953102,759.523657276067,781.929091773413,758.969887959478
+"400",40,17,1,0,"Communicable","Black","Male","South Carolina",1985,"South Atlantic","South","SC",76.9482645624811,83.7487378760067,92.0080099902031,83.8386970514819
+"401",40,17,1,0,"Injuries","Black","Male","South Carolina",1985,"South Atlantic","South","SC",155.767667824404,162.725780711932,169.868492760638,162.709195626911
+"402",40,17,1,0,"Non-communicable","Black","Male","South Carolina",1985,"South Atlantic","South","SC",109.315622041938,115.123113530985,120.582786157008,115.186495559733
+"403",40,17,1,1,"All other causes","Black","Female","South Carolina",1985,"South Atlantic","South","SC",134.493995103108,140.376436492351,146.942076508601,140.476081064894
+"404",40,17,1,1,"Cancers","Black","Female","South Carolina",1985,"South Atlantic","South","SC",165.608442541407,171.651042161507,178.308541053648,171.770136681019
+"405",40,17,1,1,"Cardiovascular","Black","Female","South Carolina",1985,"South Atlantic","South","SC",506.745160152142,523.393816589222,540.721609199261,523.590444023888
+"406",40,17,1,1,"Communicable","Black","Female","South Carolina",1985,"South Atlantic","South","SC",42.0678153929421,45.7605207687959,49.811094950847,45.8249557698238
+"407",40,17,1,1,"Injuries","Black","Female","South Carolina",1985,"South Atlantic","South","SC",40.5870881621796,43.0275028803738,45.7304584617671,43.0522485609841
+"408",40,17,1,1,"Non-communicable","Black","Female","South Carolina",1985,"South Atlantic","South","SC",76.6311538508828,81.0644074443598,85.5415364207348,81.0666341872923
+"409",40,18,0,0,"All other causes","White","Male","South Carolina",1986,"South Atlantic","South","SC",124.185761893254,129.214589862876,134.600142383217,129.172315807572
+"410",40,18,0,0,"Cancers","White","Male","South Carolina",1986,"South Atlantic","South","SC",269.429909414271,275.616603245465,282.671324967968,275.748400536168
+"411",40,18,0,0,"Cardiovascular","White","Male","South Carolina",1986,"South Atlantic","South","SC",624.998705794339,641.07636885673,657.478815647529,641.152198375983
+"412",40,18,0,0,"Communicable","White","Male","South Carolina",1986,"South Atlantic","South","SC",60.2763757044072,65.7173631765863,71.6899564149332,65.6984058861009
+"413",40,18,0,0,"Injuries","White","Male","South Carolina",1986,"South Atlantic","South","SC",104.345584165242,107.452686296917,110.915424620353,107.543107894572
+"414",40,18,0,0,"Non-communicable","White","Male","South Carolina",1986,"South Atlantic","South","SC",110.389820923661,115.142217905645,119.875839991175,115.140106639015
+"415",40,18,0,1,"All other causes","White","Female","South Carolina",1986,"South Atlantic","South","SC",88.5864881634061,91.9036637470836,95.2639881220379,91.9047895173377
+"416",40,18,0,1,"Cancers","White","Female","South Carolina",1986,"South Atlantic","South","SC",149.961088991249,153.325702167953,157.090670935985,153.443347666965
+"417",40,18,0,1,"Cardiovascular","White","Female","South Carolina",1986,"South Atlantic","South","SC",392.517558269474,402.069602500438,412.247947614308,402.295685800754
+"418",40,18,0,1,"Communicable","White","Female","South Carolina",1986,"South Atlantic","South","SC",34.9741515255086,37.2488989885662,39.838738402304,37.2825454558752
+"419",40,18,0,1,"Injuries","White","Female","South Carolina",1986,"South Atlantic","South","SC",38.3182609510577,39.9024339782564,41.591339468818,39.9349929872364
+"420",40,18,0,1,"Non-communicable","White","Female","South Carolina",1986,"South Atlantic","South","SC",52.9707495344365,55.5907578577632,58.108170514016,55.581248664896
+"421",40,18,1,0,"All other causes","Black","Male","South Carolina",1986,"South Atlantic","South","SC",211.027215024477,220.439780426908,230.883379284775,220.620837755947
+"422",40,18,1,0,"Cancers","Black","Male","South Carolina",1986,"South Atlantic","South","SC",347.480008629707,360.515051923207,373.817351573511,360.775814294182
+"423",40,18,1,0,"Cardiovascular","Black","Male","South Carolina",1986,"South Atlantic","South","SC",734.061744353453,757.211686913785,782.608328701253,757.575659443139
+"424",40,18,1,0,"Communicable","Black","Male","South Carolina",1986,"South Atlantic","South","SC",81.3912244287274,88.3044883614298,96.3931520031122,88.4994794111945
+"425",40,18,1,0,"Injuries","Black","Male","South Carolina",1986,"South Atlantic","South","SC",157.941880334206,164.41308638739,172.09443515827,164.595339800232
+"426",40,18,1,0,"Non-communicable","Black","Male","South Carolina",1986,"South Atlantic","South","SC",112.898458660684,119.251399503232,125.191844383948,119.142920392952
+"427",40,18,1,1,"All other causes","Black","Female","South Carolina",1986,"South Atlantic","South","SC",134.628926580403,140.700426367501,147.211858974944,140.806575753361
+"428",40,18,1,1,"Cancers","Black","Female","South Carolina",1986,"South Atlantic","South","SC",167.585597996429,173.94410664381,180.152430087817,173.802514670739
+"429",40,18,1,1,"Cardiovascular","Black","Female","South Carolina",1986,"South Atlantic","South","SC",518.098683017799,534.868154363141,552.542504072263,534.982120636603
+"430",40,18,1,1,"Communicable","Black","Female","South Carolina",1986,"South Atlantic","South","SC",42.9510562170885,46.8686993477463,51.0666001393647,46.873071724095
+"431",40,18,1,1,"Injuries","Black","Female","South Carolina",1986,"South Atlantic","South","SC",40.5615698928228,43.1905143068703,45.7865244500297,43.1138345403677
+"432",40,18,1,1,"Non-communicable","Black","Female","South Carolina",1986,"South Atlantic","South","SC",75.8104776859336,80.2409934615667,84.7202400914082,80.2881174651706
+"433",40,19,0,0,"All other causes","White","Male","South Carolina",1987,"South Atlantic","South","SC",124.447028940674,130.08667401705,135.5687824282,129.988341179317
+"434",40,19,0,0,"Cancers","White","Male","South Carolina",1987,"South Atlantic","South","SC",269.148643701213,275.80051180475,282.686837058275,275.836882719459
+"435",40,19,0,0,"Cardiovascular","White","Male","South Carolina",1987,"South Atlantic","South","SC",607.468362857288,622.774424933322,638.945748585413,622.820678855014
+"436",40,19,0,0,"Communicable","White","Male","South Carolina",1987,"South Atlantic","South","SC",54.0069463638913,58.7225218639431,64.0168731850057,58.7937994937469
+"437",40,19,0,0,"Injuries","White","Male","South Carolina",1987,"South Atlantic","South","SC",104.373029604902,107.658314273134,111.137771674298,107.692002568916
+"438",40,19,0,0,"Non-communicable","White","Male","South Carolina",1987,"South Atlantic","South","SC",112.194334225497,116.729853175703,121.718406263878,116.771869081598
+"439",40,19,0,1,"All other causes","White","Female","South Carolina",1987,"South Atlantic","South","SC",91.2228853984902,94.7166644769526,98.4916542998553,94.7577008859744
+"440",40,19,0,1,"Cancers","White","Female","South Carolina",1987,"South Atlantic","South","SC",151.789786148495,155.068520269618,158.92929752855,155.120611984173
+"441",40,19,0,1,"Cardiovascular","White","Female","South Carolina",1987,"South Atlantic","South","SC",384.767650305814,394.240384758541,403.762236032343,394.310512169064
+"442",40,19,0,1,"Communicable","White","Female","South Carolina",1987,"South Atlantic","South","SC",34.4056082170959,36.6654118751334,38.8982101654985,36.6712382622461
+"443",40,19,0,1,"Injuries","White","Female","South Carolina",1987,"South Atlantic","South","SC",38.3299635860187,39.9435810806847,41.621980624448,39.9516298425359
+"444",40,19,0,1,"Non-communicable","White","Female","South Carolina",1987,"South Atlantic","South","SC",55.220702766853,57.8862245067728,60.1886111945052,57.7931603363887
+"445",40,19,1,0,"All other causes","Black","Male","South Carolina",1987,"South Atlantic","South","SC",214.43318613062,224.037235554034,233.349886493268,223.844597241643
+"446",40,19,1,0,"Cancers","Black","Male","South Carolina",1987,"South Atlantic","South","SC",348.974222499535,362.129111276535,376.725854608596,362.368903916761
+"447",40,19,1,0,"Cardiovascular","Black","Male","South Carolina",1987,"South Atlantic","South","SC",730.933565937586,753.372988234068,777.306858169704,753.420702883451
+"448",40,19,1,0,"Communicable","Black","Male","South Carolina",1987,"South Atlantic","South","SC",80.6421746322388,87.9438871274086,95.5869813907027,87.9528082750524
+"449",40,19,1,0,"Injuries","Black","Male","South Carolina",1987,"South Atlantic","South","SC",158.297111379498,164.936560989209,172.341772107805,165.122470155738
+"450",40,19,1,0,"Non-communicable","Black","Male","South Carolina",1987,"South Atlantic","South","SC",114.272344841039,120.896483915427,127.582860605634,120.873662952252
+"451",40,19,1,1,"All other causes","Black","Female","South Carolina",1987,"South Atlantic","South","SC",135.848347066753,141.639859735666,147.910916805978,141.697534689097
+"452",40,19,1,1,"Cancers","Black","Female","South Carolina",1987,"South Atlantic","South","SC",168.855577719458,175.433800852649,181.802136052855,175.51857936712
+"453",40,19,1,1,"Cardiovascular","Black","Female","South Carolina",1987,"South Atlantic","South","SC",510.89948991764,528.187758071864,544.979508820515,527.852665008142
+"454",40,19,1,1,"Communicable","Black","Female","South Carolina",1987,"South Atlantic","South","SC",42.6537826797117,46.3475236929266,50.1959769390154,46.3390934946022
+"455",40,19,1,1,"Injuries","Black","Female","South Carolina",1987,"South Atlantic","South","SC",40.8623630724148,43.4336932837658,46.1427241557693,43.4821026308141
+"456",40,19,1,1,"Non-communicable","Black","Female","South Carolina",1987,"South Atlantic","South","SC",76.4988319281195,80.6954253975824,85.2731181190756,80.7553819204119
+"457",40,20,0,0,"All other causes","White","Male","South Carolina",1988,"South Atlantic","South","SC",128.349798587588,133.886925465741,139.645531442205,133.902164174519
+"458",40,20,0,0,"Cancers","White","Male","South Carolina",1988,"South Atlantic","South","SC",270.742884802995,277.072928796491,283.255881052411,277.121671536812
+"459",40,20,0,0,"Cardiovascular","White","Male","South Carolina",1988,"South Atlantic","South","SC",586.539174135963,600.905421644931,616.590723007567,601.126328157236
+"460",40,20,0,0,"Communicable","White","Male","South Carolina",1988,"South Atlantic","South","SC",54.3553433356225,58.9818304746762,64.1426565136285,59.0392959190793
+"461",40,20,0,0,"Injuries","White","Male","South Carolina",1988,"South Atlantic","South","SC",102.130990705255,105.32522282481,108.898975902529,105.36020605326
+"462",40,20,0,0,"Non-communicable","White","Male","South Carolina",1988,"South Atlantic","South","SC",114.842534810786,119.372744268848,124.079039237072,119.474515332866
+"463",40,20,0,1,"All other causes","White","Female","South Carolina",1988,"South Atlantic","South","SC",93.2971151057543,96.924177482547,100.765883482741,96.9392586353987
+"464",40,20,0,1,"Cancers","White","Female","South Carolina",1988,"South Atlantic","South","SC",153.405367921892,156.985481670872,160.356405219422,156.951954228582
+"465",40,20,0,1,"Cardiovascular","White","Female","South Carolina",1988,"South Atlantic","South","SC",378.912265676529,388.087981171376,397.560385981909,388.134687450072
+"466",40,20,0,1,"Communicable","White","Female","South Carolina",1988,"South Atlantic","South","SC",34.9027295739598,37.0816081042998,39.4873848363403,37.0839476209216
+"467",40,20,0,1,"Injuries","White","Female","South Carolina",1988,"South Atlantic","South","SC",37.7236207049086,39.2348489163652,40.8947859901359,39.2640082786752
+"468",40,20,0,1,"Non-communicable","White","Female","South Carolina",1988,"South Atlantic","South","SC",57.6458978256843,60.3845675710645,63.0137242789411,60.3630014003078
+"469",40,20,1,0,"All other causes","Black","Male","South Carolina",1988,"South Atlantic","South","SC",214.702354482772,223.967663225956,233.585314622482,224.046446192152
+"470",40,20,1,0,"Cancers","Black","Male","South Carolina",1988,"South Atlantic","South","SC",358.675340347504,372.448750090373,386.555336090192,372.544030687386
+"471",40,20,1,0,"Cardiovascular","Black","Male","South Carolina",1988,"South Atlantic","South","SC",730.104552856962,749.764684784702,775.157596737942,750.612553043913
+"472",40,20,1,0,"Communicable","Black","Male","South Carolina",1988,"South Atlantic","South","SC",80.2991920531358,87.9525724280524,95.3258443634038,88.0109006480028
+"473",40,20,1,0,"Injuries","Black","Male","South Carolina",1988,"South Atlantic","South","SC",156.859285478177,163.754013988773,171.254967893629,163.793212555645
+"474",40,20,1,0,"Non-communicable","Black","Male","South Carolina",1988,"South Atlantic","South","SC",117.227672921023,123.624729389829,130.545362174089,123.682947051202
+"475",40,20,1,1,"All other causes","Black","Female","South Carolina",1988,"South Atlantic","South","SC",137.077276399366,143.1819891469,149.587863488858,143.196078557478
+"476",40,20,1,1,"Cancers","Black","Female","South Carolina",1988,"South Atlantic","South","SC",173.302017745028,179.387953725393,186.138945915325,179.489460317817
+"477",40,20,1,1,"Cardiovascular","Black","Female","South Carolina",1988,"South Atlantic","South","SC",510.68227257646,527.121485579236,543.942497557676,526.958490622765
+"478",40,20,1,1,"Communicable","Black","Female","South Carolina",1988,"South Atlantic","South","SC",43.9063182503873,47.3810872779287,51.1448652323378,47.4129979731505
+"479",40,20,1,1,"Injuries","Black","Female","South Carolina",1988,"South Atlantic","South","SC",40.9661138507827,43.3951713005944,46.190351021955,43.4143669547232
+"480",40,20,1,1,"Non-communicable","Black","Female","South Carolina",1988,"South Atlantic","South","SC",77.1486243292855,81.5381371560146,85.9955737511714,81.4876577892234
+"481",40,21,0,0,"All other causes","White","Male","South Carolina",1989,"South Atlantic","South","SC",128.149716708662,133.492383684887,139.224262878638,133.529496328171
+"482",40,21,0,0,"Cancers","White","Male","South Carolina",1989,"South Atlantic","South","SC",273.061499877135,279.700666236444,286.557748736151,279.776199417324
+"483",40,21,0,0,"Cardiovascular","White","Male","South Carolina",1989,"South Atlantic","South","SC",561.719206170516,576.577304925838,590.171241973662,576.346393843698
+"484",40,21,0,0,"Communicable","White","Male","South Carolina",1989,"South Atlantic","South","SC",52.7604287413083,57.3888407581515,62.320977300731,57.4033735885516
+"485",40,21,0,0,"Injuries","White","Male","South Carolina",1989,"South Atlantic","South","SC",99.75982467151,103.039526021778,106.386848289887,103.024716213922
+"486",40,21,0,0,"Non-communicable","White","Male","South Carolina",1989,"South Atlantic","South","SC",116.756755487251,121.08058274867,125.496364260969,121.027341884001
+"487",40,21,0,1,"All other causes","White","Female","South Carolina",1989,"South Atlantic","South","SC",94.6537299440864,98.1254715781457,101.793315492621,98.1596854315642
+"488",40,21,0,1,"Cancers","White","Female","South Carolina",1989,"South Atlantic","South","SC",155.423713129039,158.711576212472,162.250319977678,158.741393039423
+"489",40,21,0,1,"Cardiovascular","White","Female","South Carolina",1989,"South Atlantic","South","SC",352.596205959848,361.005380161246,370.062641659676,361.145958691634
+"490",40,21,0,1,"Communicable","White","Female","South Carolina",1989,"South Atlantic","South","SC",34.8127599117066,36.8870577954731,39.2765954133215,36.9249653082777
+"491",40,21,0,1,"Injuries","White","Female","South Carolina",1989,"South Atlantic","South","SC",37.0228774020891,38.5670868499817,40.1817599313787,38.5943835089381
+"492",40,21,0,1,"Non-communicable","White","Female","South Carolina",1989,"South Atlantic","South","SC",61.3301342221248,64.1211183846044,66.7743202149928,64.133593720266
+"493",40,21,1,0,"All other causes","Black","Male","South Carolina",1989,"South Atlantic","South","SC",214.723946548391,223.731632929917,233.528471326707,223.805528258322
+"494",40,21,1,0,"Cancers","Black","Male","South Carolina",1989,"South Atlantic","South","SC",373.341724413435,387.118684389088,401.557688555698,387.364030902692
+"495",40,21,1,0,"Cardiovascular","Black","Male","South Carolina",1989,"South Atlantic","South","SC",694.639095359454,716.421890834195,740.84828266488,716.865956481072
+"496",40,21,1,0,"Communicable","Black","Male","South Carolina",1989,"South Atlantic","South","SC",89.9037154538806,97.5474188217321,105.539593020742,97.537042450781
+"497",40,21,1,0,"Injuries","Black","Male","South Carolina",1989,"South Atlantic","South","SC",154.406609677899,161.165156837625,168.473423894546,161.21041898405
+"498",40,21,1,0,"Non-communicable","Black","Male","South Carolina",1989,"South Atlantic","South","SC",120.860547499266,126.868602152659,133.848389715776,126.984122665181
+"499",40,21,1,1,"All other causes","Black","Female","South Carolina",1989,"South Atlantic","South","SC",135.900191862847,142.308868221164,148.084554947457,142.265350754653
+"500",40,21,1,1,"Cancers","Black","Female","South Carolina",1989,"South Atlantic","South","SC",175.954309373093,182.35014766819,189.147273681171,182.377084390828
+"501",40,21,1,1,"Cardiovascular","Black","Female","South Carolina",1989,"South Atlantic","South","SC",484.385665508095,499.644815879475,516.639974287678,499.960764031793
+"502",40,21,1,1,"Communicable","Black","Female","South Carolina",1989,"South Atlantic","South","SC",44.7980492606902,48.2963882050707,52.1548877289628,48.4365510189454
+"503",40,21,1,1,"Injuries","Black","Female","South Carolina",1989,"South Atlantic","South","SC",40.3817671261279,42.7733159889653,45.4223709993547,42.7898526146734
+"504",40,21,1,1,"Non-communicable","Black","Female","South Carolina",1989,"South Atlantic","South","SC",80.2905470033578,84.8293563684433,89.57258656317,84.8685169198839
+"505",40,22,0,0,"All other causes","White","Male","South Carolina",1990,"South Atlantic","South","SC",125.363850022479,130.803958098734,136.085873025499,130.799989886624
+"506",40,22,0,0,"Cancers","White","Male","South Carolina",1990,"South Atlantic","South","SC",273.712539911696,279.982054853946,287.296937327096,280.129679223987
+"507",40,22,0,0,"Cardiovascular","White","Male","South Carolina",1990,"South Atlantic","South","SC",541.213203893439,554.604510172872,567.419284308349,554.402054725112
+"508",40,22,0,0,"Communicable","White","Male","South Carolina",1990,"South Atlantic","South","SC",57.1459390497657,61.7003851847998,66.5853262057948,61.8205359832461
+"509",40,22,0,0,"Injuries","White","Male","South Carolina",1990,"South Atlantic","South","SC",98.1118452641666,101.034661812598,104.532286086918,101.078908770451
+"510",40,22,0,0,"Non-communicable","White","Male","South Carolina",1990,"South Atlantic","South","SC",116.351504703791,120.432210923749,125.421131668171,120.484447194686
+"511",40,22,0,1,"All other causes","White","Female","South Carolina",1990,"South Atlantic","South","SC",94.5978416864823,98.3046150359983,102.339756949889,98.2743772197009
+"512",40,22,0,1,"Cancers","White","Female","South Carolina",1990,"South Atlantic","South","SC",156.867341426728,160.006298474048,163.59821156177,160.055267539556
+"513",40,22,0,1,"Cardiovascular","White","Female","South Carolina",1990,"South Atlantic","South","SC",332.827296808553,341.5646135098,349.386200398092,341.487721094435
+"514",40,22,0,1,"Communicable","White","Female","South Carolina",1990,"South Atlantic","South","SC",34.2500352123284,36.2907338205351,38.6852183967724,36.3110645875023
+"515",40,22,0,1,"Injuries","White","Female","South Carolina",1990,"South Atlantic","South","SC",36.525312015515,38.0924063374075,39.6527951372341,38.102231771748
+"516",40,22,0,1,"Non-communicable","White","Female","South Carolina",1990,"South Atlantic","South","SC",63.8945561920144,66.4647337445423,69.2621071523566,66.4971170254665
+"517",40,22,1,0,"All other causes","Black","Male","South Carolina",1990,"South Atlantic","South","SC",210.767786705098,220.432886945524,229.493481270709,220.489853653449
+"518",40,22,1,0,"Cancers","Black","Male","South Carolina",1990,"South Atlantic","South","SC",386.697655419961,400.238203075319,415.683755479399,400.251836099125
+"519",40,22,1,0,"Cardiovascular","Black","Male","South Carolina",1990,"South Atlantic","South","SC",656.674440049017,676.99660790608,698.121511397469,677.224589323714
+"520",40,22,1,0,"Communicable","Black","Male","South Carolina",1990,"South Atlantic","South","SC",99.7938368556355,107.084380513535,115.479756734424,107.188583773258
+"521",40,22,1,0,"Injuries","Black","Male","South Carolina",1990,"South Atlantic","South","SC",151.092671690571,157.257525900259,164.933989516505,157.549306051466
+"522",40,22,1,0,"Non-communicable","Black","Male","South Carolina",1990,"South Atlantic","South","SC",123.135815124947,129.703481457533,136.494008157757,129.648824484226
+"523",40,22,1,1,"All other causes","Black","Female","South Carolina",1990,"South Atlantic","South","SC",133.999775655715,139.91370742667,146.047688052328,139.905482695127
+"524",40,22,1,1,"Cancers","Black","Female","South Carolina",1990,"South Atlantic","South","SC",177.359611816759,183.904902745777,190.470715721333,183.936884908559
+"525",40,22,1,1,"Cardiovascular","Black","Female","South Carolina",1990,"South Atlantic","South","SC",465.096346563878,480.094479510805,495.19025002834,480.321117630603
+"526",40,22,1,1,"Communicable","Black","Female","South Carolina",1990,"South Atlantic","South","SC",45.4590354360493,49.2886217117038,53.5576282679967,49.3389260499068
+"527",40,22,1,1,"Injuries","Black","Female","South Carolina",1990,"South Atlantic","South","SC",39.166514008051,41.5769374800546,44.2120824350507,41.5909975261993
+"528",40,22,1,1,"Non-communicable","Black","Female","South Carolina",1990,"South Atlantic","South","SC",83.6434649849435,88.2196537438067,93.4550402466322,88.3621766004216
+"529",40,23,0,0,"All other causes","White","Male","South Carolina",1991,"South Atlantic","South","SC",124.644758732711,129.526145755125,134.921012402521,129.567281359879
+"530",40,23,0,0,"Cancers","White","Male","South Carolina",1991,"South Atlantic","South","SC",270.103995529921,276.206080255294,282.649275636704,276.300803979509
+"531",40,23,0,0,"Cardiovascular","White","Male","South Carolina",1991,"South Atlantic","South","SC",528.301686141733,542.319352854001,555.732428650724,541.919933381481
+"532",40,23,0,0,"Communicable","White","Male","South Carolina",1991,"South Atlantic","South","SC",56.3108934170044,60.6111761263862,65.3025909392635,60.7343544699487
+"533",40,23,0,0,"Injuries","White","Male","South Carolina",1991,"South Atlantic","South","SC",95.8788234319465,99.0232436200187,101.972399266842,99.0045327869536
+"534",40,23,0,0,"Non-communicable","White","Male","South Carolina",1991,"South Atlantic","South","SC",117.237296104485,121.697083607115,126.229848132908,121.658982764192
+"535",40,23,0,1,"All other causes","White","Female","South Carolina",1991,"South Atlantic","South","SC",93.5609452714905,97.0460127013048,100.414065796782,96.997095626463
+"536",40,23,0,1,"Cancers","White","Female","South Carolina",1991,"South Atlantic","South","SC",156.392879273042,159.934688279457,163.339309398689,159.894886289659
+"537",40,23,0,1,"Cardiovascular","White","Female","South Carolina",1991,"South Atlantic","South","SC",327.468561625152,335.519446779751,344.169550687236,335.615255866022
+"538",40,23,0,1,"Communicable","White","Female","South Carolina",1991,"South Atlantic","South","SC",32.4786316285837,34.4920834641751,36.647434994587,34.5109176650184
+"539",40,23,0,1,"Injuries","White","Female","South Carolina",1991,"South Atlantic","South","SC",36.0398743849659,37.5647767004008,39.1146930206185,37.5488611555931
+"540",40,23,0,1,"Non-communicable","White","Female","South Carolina",1991,"South Atlantic","South","SC",65.0832690058062,67.6340977056137,70.5630230722546,67.6809307417434
+"541",40,23,1,0,"All other causes","Black","Male","South Carolina",1991,"South Atlantic","South","SC",204.285349449471,213.882365275987,222.911354190235,213.748562020137
+"542",40,23,1,0,"Cancers","Black","Male","South Carolina",1991,"South Atlantic","South","SC",385.645991293328,400.317186854689,414.736054314664,400.305253855334
+"543",40,23,1,0,"Cardiovascular","Black","Male","South Carolina",1991,"South Atlantic","South","SC",635.092393958896,656.327139228528,677.995171971592,656.754847602795
+"544",40,23,1,0,"Communicable","Black","Male","South Carolina",1991,"South Atlantic","South","SC",105.677960865042,113.303818050562,120.970285270115,113.318677558639
+"545",40,23,1,0,"Injuries","Black","Male","South Carolina",1991,"South Atlantic","South","SC",147.347804092664,153.512203798517,160.405915763253,153.615837435581
+"546",40,23,1,0,"Non-communicable","Black","Male","South Carolina",1991,"South Atlantic","South","SC",123.646283700162,130.192401676666,137.227065271201,130.20923503994
+"547",40,23,1,1,"All other causes","Black","Female","South Carolina",1991,"South Atlantic","South","SC",133.669979603369,139.501922524377,145.584354073941,139.60063638288
+"548",40,23,1,1,"Cancers","Black","Female","South Carolina",1991,"South Atlantic","South","SC",179.270098720569,185.643504461715,192.078096035806,185.640654077497
+"549",40,23,1,1,"Cardiovascular","Black","Female","South Carolina",1991,"South Atlantic","South","SC",449.4453311569,463.579820206242,477.673833953188,463.475588417077
+"550",40,23,1,1,"Communicable","Black","Female","South Carolina",1991,"South Atlantic","South","SC",46.8522238925253,50.3421245701611,54.3128929281704,50.3965737928753
+"551",40,23,1,1,"Injuries","Black","Female","South Carolina",1991,"South Atlantic","South","SC",38.4091520411554,40.7546911244097,43.2767076258467,40.7672751165133
+"552",40,23,1,1,"Non-communicable","Black","Female","South Carolina",1991,"South Atlantic","South","SC",85.9214512927562,90.6140892730611,95.4795592830473,90.6391226057969
+"553",40,24,0,0,"All other causes","White","Male","South Carolina",1992,"South Atlantic","South","SC",127.786442794046,132.946405452009,138.244558573858,132.906334420792
+"554",40,24,0,0,"Cancers","White","Male","South Carolina",1992,"South Atlantic","South","SC",272.111277949672,278.31651401384,284.858901171433,278.307205635285
+"555",40,24,0,0,"Cardiovascular","White","Male","South Carolina",1992,"South Atlantic","South","SC",504.204193749632,518.240157502986,531.13505711568,518.106124314282
+"556",40,24,0,0,"Communicable","White","Male","South Carolina",1992,"South Atlantic","South","SC",53.5653781495417,57.6465511377334,62.1134238163681,57.6531593444407
+"557",40,24,0,0,"Injuries","White","Male","South Carolina",1992,"South Atlantic","South","SC",94.0662951748849,97.0546463493508,100.105492844747,97.086400805866
+"558",40,24,0,0,"Non-communicable","White","Male","South Carolina",1992,"South Atlantic","South","SC",118.709872238318,123.368977989898,127.886867818825,123.375345363607
+"559",40,24,0,1,"All other causes","White","Female","South Carolina",1992,"South Atlantic","South","SC",93.6556895903231,97.1003856548429,100.307150765738,97.1207982293842
+"560",40,24,0,1,"Cancers","White","Female","South Carolina",1992,"South Atlantic","South","SC",156.968088888678,160.34096230498,163.819602237982,160.369029891409
+"561",40,24,0,1,"Cardiovascular","White","Female","South Carolina",1992,"South Atlantic","South","SC",325.323920846939,332.854699237602,340.749685883126,333.011607382346
+"562",40,24,0,1,"Communicable","White","Female","South Carolina",1992,"South Atlantic","South","SC",31.2442382723245,33.0318158123352,35.0918610042012,33.0692020974595
+"563",40,24,0,1,"Injuries","White","Female","South Carolina",1992,"South Atlantic","South","SC",35.3352069765133,36.8773535982732,38.3467972902926,36.8670161269574
+"564",40,24,0,1,"Non-communicable","White","Female","South Carolina",1992,"South Atlantic","South","SC",68.0858136363468,70.977094794748,73.6451557374845,71.0030210844735
+"565",40,24,1,0,"All other causes","Black","Male","South Carolina",1992,"South Atlantic","South","SC",204.90122306562,214.655191735332,223.820796049359,214.685671700781
+"566",40,24,1,0,"Cancers","Black","Male","South Carolina",1992,"South Atlantic","South","SC",382.248569790032,396.195097052747,411.467185372694,396.41722694056
+"567",40,24,1,0,"Cardiovascular","Black","Male","South Carolina",1992,"South Atlantic","South","SC",635.491789928151,655.693966906444,676.555955354949,655.550501505592
+"568",40,24,1,0,"Communicable","Black","Male","South Carolina",1992,"South Atlantic","South","SC",107.595714217083,115.097024985889,123.092227599276,114.986443043422
+"569",40,24,1,0,"Injuries","Black","Male","South Carolina",1992,"South Atlantic","South","SC",142.3859292508,147.963789418663,154.612303750409,148.067720662136
+"570",40,24,1,0,"Non-communicable","Black","Male","South Carolina",1992,"South Atlantic","South","SC",126.334700848913,132.561471555778,139.545912965063,132.719317189562
+"571",40,24,1,1,"All other causes","Black","Female","South Carolina",1992,"South Atlantic","South","SC",134.074545764135,139.694644225708,145.996158061015,139.802753064558
+"572",40,24,1,1,"Cancers","Black","Female","South Carolina",1992,"South Atlantic","South","SC",177.57669293539,183.95379878676,190.514617287615,184.047962278391
+"573",40,24,1,1,"Cardiovascular","Black","Female","South Carolina",1992,"South Atlantic","South","SC",437.884715818253,452.140207670369,467.260725293808,452.131825069374
+"574",40,24,1,1,"Communicable","Black","Female","South Carolina",1992,"South Atlantic","South","SC",48.5590046188512,52.3114105708207,56.2826931418225,52.339351281004
+"575",40,24,1,1,"Injuries","Black","Female","South Carolina",1992,"South Atlantic","South","SC",37.4515475884008,39.834835126957,42.227009189126,39.8387186493964
+"576",40,24,1,1,"Non-communicable","Black","Female","South Carolina",1992,"South Atlantic","South","SC",87.3644484220753,91.8104878017966,96.5389312640315,91.8715326831873
+"577",40,25,0,0,"All other causes","White","Male","South Carolina",1993,"South Atlantic","South","SC",129.636822938072,134.878545244104,140.339376986559,134.845999453647
+"578",40,25,0,0,"Cancers","White","Male","South Carolina",1993,"South Atlantic","South","SC",269.645000962795,275.91349400778,282.33875451949,275.947153942273
+"579",40,25,0,0,"Cardiovascular","White","Male","South Carolina",1993,"South Atlantic","South","SC",506.508763723084,519.233915309884,532.563023315446,519.234355067662
+"580",40,25,0,0,"Communicable","White","Male","South Carolina",1993,"South Atlantic","South","SC",56.444814202273,60.5545203346264,64.7182692688862,60.5910861029308
+"581",40,25,0,0,"Injuries","White","Male","South Carolina",1993,"South Atlantic","South","SC",91.8158232142241,95.0475201684898,98.0606904096323,95.03427625321
+"582",40,25,0,0,"Non-communicable","White","Male","South Carolina",1993,"South Atlantic","South","SC",118.780241724902,123.2922118014,127.965480932021,123.246261349516
+"583",40,25,0,1,"All other causes","White","Female","South Carolina",1993,"South Atlantic","South","SC",98.8627515215743,102.33112403119,105.937076388146,102.339670798415
+"584",40,25,0,1,"Cancers","White","Female","South Carolina",1993,"South Atlantic","South","SC",157.001915073689,160.689714561661,164.198600974052,160.722475717522
+"585",40,25,0,1,"Cardiovascular","White","Female","South Carolina",1993,"South Atlantic","South","SC",327.576944169465,335.24652961557,343.721882920077,335.266227859463
+"586",40,25,0,1,"Communicable","White","Female","South Carolina",1993,"South Atlantic","South","SC",32.650397508362,34.6966838034553,36.7829469593897,34.7094950641597
+"587",40,25,0,1,"Injuries","White","Female","South Carolina",1993,"South Atlantic","South","SC",35.4393364999886,36.9042302157529,38.3577119870991,36.8982200375669
+"588",40,25,0,1,"Non-communicable","White","Female","South Carolina",1993,"South Atlantic","South","SC",70.7371297534274,73.4995462763677,76.4056903337182,73.5375103874337
+"589",40,25,1,0,"All other causes","Black","Male","South Carolina",1993,"South Atlantic","South","SC",207.369987711383,216.62926470591,226.703158270574,216.630233153984
+"590",40,25,1,0,"Cancers","Black","Male","South Carolina",1993,"South Atlantic","South","SC",379.111552798621,391.768690364774,406.489956709855,391.913684922897
+"591",40,25,1,0,"Cardiovascular","Black","Male","South Carolina",1993,"South Atlantic","South","SC",612.666944325695,632.234250451658,652.308273602503,632.365674083585
+"592",40,25,1,0,"Communicable","Black","Male","South Carolina",1993,"South Atlantic","South","SC",112.484539807899,119.532205693277,127.520403953561,119.711430311888
+"593",40,25,1,0,"Injuries","Black","Male","South Carolina",1993,"South Atlantic","South","SC",138.954551256217,144.656721048873,151.00854674139,144.742819360299
+"594",40,25,1,0,"Non-communicable","Black","Male","South Carolina",1993,"South Atlantic","South","SC",128.580570031508,134.897360778351,142.015048605952,135.009003774984
+"595",40,25,1,1,"All other causes","Black","Female","South Carolina",1993,"South Atlantic","South","SC",133.068601146567,138.860576607408,145.032724728962,138.848561391131
+"596",40,25,1,1,"Cancers","Black","Female","South Carolina",1993,"South Atlantic","South","SC",179.892443039231,186.327948022451,192.867027052098,186.284838956602
+"597",40,25,1,1,"Cardiovascular","Black","Female","South Carolina",1993,"South Atlantic","South","SC",431.968856927873,445.553684219683,459.191983957756,445.534214271846
+"598",40,25,1,1,"Communicable","Black","Female","South Carolina",1993,"South Atlantic","South","SC",49.6910064452071,53.4952280424504,57.2702103594754,53.5218386686586
+"599",40,25,1,1,"Injuries","Black","Female","South Carolina",1993,"South Atlantic","South","SC",36.9528259846366,39.2961804446613,41.6411508948595,39.3122457836902
+"600",40,25,1,1,"Non-communicable","Black","Female","South Carolina",1993,"South Atlantic","South","SC",90.374337127097,95.3610332906886,100.482834342025,95.4182040650834
+"601",40,26,0,0,"All other causes","White","Male","South Carolina",1994,"South Atlantic","South","SC",129.971916089638,135.063059112882,140.653903358064,135.106232298921
+"602",40,26,0,0,"Cancers","White","Male","South Carolina",1994,"South Atlantic","South","SC",267.983270555247,275.021738652023,281.222286629661,274.982558914507
+"603",40,26,0,0,"Cardiovascular","White","Male","South Carolina",1994,"South Atlantic","South","SC",494.563634626127,507.654531110346,519.704601644709,507.393370316572
+"604",40,26,0,0,"Communicable","White","Male","South Carolina",1994,"South Atlantic","South","SC",58.6963869922165,63.2996299226376,67.8114376678868,63.255047687742
+"605",40,26,0,0,"Injuries","White","Male","South Carolina",1994,"South Atlantic","South","SC",90.7835402306045,93.7009710618315,96.7837711783784,93.7282304367521
+"606",40,26,0,0,"Non-communicable","White","Male","South Carolina",1994,"South Atlantic","South","SC",119.615694288867,123.906528588427,128.428964210229,123.929076746849
+"607",40,26,0,1,"All other causes","White","Female","South Carolina",1994,"South Atlantic","South","SC",100.664049633737,104.26864597552,107.931659590876,104.322697206834
+"608",40,26,0,1,"Cancers","White","Female","South Carolina",1994,"South Atlantic","South","SC",157.647610972049,160.911872906151,164.822247384491,160.977357502978
+"609",40,26,0,1,"Cardiovascular","White","Female","South Carolina",1994,"South Atlantic","South","SC",320.79468989655,327.806336460565,335.809136753283,327.974776123236
+"610",40,26,0,1,"Communicable","White","Female","South Carolina",1994,"South Atlantic","South","SC",33.1629715350356,35.1666504530937,37.2386464640483,35.1710221081401
+"611",40,26,0,1,"Injuries","White","Female","South Carolina",1994,"South Atlantic","South","SC",35.5448417848189,37.0131802150819,38.2657680314698,36.9869108190007
+"612",40,26,0,1,"Non-communicable","White","Female","South Carolina",1994,"South Atlantic","South","SC",73.3991763245563,76.3713920357319,79.4743778673687,76.3448894975364
+"613",40,26,1,0,"All other causes","Black","Male","South Carolina",1994,"South Atlantic","South","SC",203.578838602753,212.094062196713,221.10676959131,212.264121739259
+"614",40,26,1,0,"Cancers","Black","Male","South Carolina",1994,"South Atlantic","South","SC",376.735710441434,389.997957225828,403.693945565264,390.227073371224
+"615",40,26,1,0,"Cardiovascular","Black","Male","South Carolina",1994,"South Atlantic","South","SC",601.740430311928,621.971753519267,644.513931101382,622.246959707593
+"616",40,26,1,0,"Communicable","Black","Male","South Carolina",1994,"South Atlantic","South","SC",117.829122780355,125.995044345775,133.754180235571,126.035993081714
+"617",40,26,1,0,"Injuries","Black","Male","South Carolina",1994,"South Atlantic","South","SC",132.194385345553,137.847586113659,143.654972850628,137.843871237364
+"618",40,26,1,0,"Non-communicable","Black","Male","South Carolina",1994,"South Atlantic","South","SC",127.703561665139,134.360205330627,142.09169286293,134.389489900588
+"619",40,26,1,1,"All other causes","Black","Female","South Carolina",1994,"South Atlantic","South","SC",132.761795492091,138.664282568968,144.129166321617,138.678242209547
+"620",40,26,1,1,"Cancers","Black","Female","South Carolina",1994,"South Atlantic","South","SC",181.12162597457,187.579347846881,194.335247542896,187.656552980958
+"621",40,26,1,1,"Cardiovascular","Black","Female","South Carolina",1994,"South Atlantic","South","SC",418.219933464207,431.830738623407,445.060569526953,431.812013520753
+"622",40,26,1,1,"Communicable","Black","Female","South Carolina",1994,"South Atlantic","South","SC",52.3820711163344,55.9676291699778,60.1458147762296,56.1152372270254
+"623",40,26,1,1,"Injuries","Black","Female","South Carolina",1994,"South Atlantic","South","SC",36.3641713448682,38.6018508671909,41.0196523726884,38.6027657532359
+"624",40,26,1,1,"Non-communicable","Black","Female","South Carolina",1994,"South Atlantic","South","SC",94.0122890151714,98.9833892250291,104.355289270817,99.1123661482934
+"625",40,27,0,0,"All other causes","White","Male","South Carolina",1995,"South Atlantic","South","SC",134.012715743555,139.327409573664,144.684302159587,139.343052799457
+"626",40,27,0,0,"Cancers","White","Male","South Carolina",1995,"South Atlantic","South","SC",263.230016401251,269.722251472236,275.600203894316,269.648249732896
+"627",40,27,0,0,"Cardiovascular","White","Male","South Carolina",1995,"South Atlantic","South","SC",497.931389920553,510.480679668612,523.468469360758,510.382682947685
+"628",40,27,0,0,"Communicable","White","Male","South Carolina",1995,"South Atlantic","South","SC",64.1017187780675,68.6826479541969,73.4686955652831,68.6788639944885
+"629",40,27,0,0,"Injuries","White","Male","South Carolina",1995,"South Atlantic","South","SC",89.1793170464057,92.1127537050669,95.4607588765583,92.0989449424039
+"630",40,27,0,0,"Non-communicable","White","Male","South Carolina",1995,"South Atlantic","South","SC",120.368318734758,124.61248605543,129.43584147569,124.75992362187
+"631",40,27,0,1,"All other causes","White","Female","South Carolina",1995,"South Atlantic","South","SC",105.295160999831,109.058089448451,112.947990894775,109.052530385773
+"632",40,27,0,1,"Cancers","White","Female","South Carolina",1995,"South Atlantic","South","SC",157.062334598501,160.525951398877,164.114101474801,160.521632230968
+"633",40,27,0,1,"Cardiovascular","White","Female","South Carolina",1995,"South Atlantic","South","SC",313.428090301071,320.779763242733,328.000572215077,320.624686831326
+"634",40,27,0,1,"Communicable","White","Female","South Carolina",1995,"South Atlantic","South","SC",35.4859304790848,37.4307451443606,39.5023411023833,37.4469180261051
+"635",40,27,0,1,"Injuries","White","Female","South Carolina",1995,"South Atlantic","South","SC",36.1738451140495,37.500057996398,38.8536402537483,37.4988690477584
+"636",40,27,0,1,"Non-communicable","White","Female","South Carolina",1995,"South Atlantic","South","SC",75.3193378839106,78.137645524524,81.3071033883072,78.1504983130989
+"637",40,27,1,0,"All other causes","Black","Male","South Carolina",1995,"South Atlantic","South","SC",200.027086810798,208.635531143671,218.160888208409,208.770896545978
+"638",40,27,1,0,"Cancers","Black","Male","South Carolina",1995,"South Atlantic","South","SC",372.961254280789,386.42668670003,399.963206596545,386.21618584902
+"639",40,27,1,0,"Cardiovascular","Black","Male","South Carolina",1995,"South Atlantic","South","SC",597.399720211164,616.926010094774,634.887710173279,616.83255574357
+"640",40,27,1,0,"Communicable","Black","Male","South Carolina",1995,"South Atlantic","South","SC",121.963681539665,130.526867504465,139.33145360006,130.521197106954
+"641",40,27,1,0,"Injuries","Black","Male","South Carolina",1995,"South Atlantic","South","SC",127.17016957685,133.312919454616,138.711706078821,133.279631596814
+"642",40,27,1,0,"Non-communicable","Black","Male","South Carolina",1995,"South Atlantic","South","SC",129.016604708191,135.955692185446,143.016349967917,136.045226940362
+"643",40,27,1,1,"All other causes","Black","Female","South Carolina",1995,"South Atlantic","South","SC",134.299445179493,140.029270371973,145.913173613972,139.963498092023
+"644",40,27,1,1,"Cancers","Black","Female","South Carolina",1995,"South Atlantic","South","SC",183.091089335401,189.153862143507,195.890276526171,189.305634221812
+"645",40,27,1,1,"Cardiovascular","Black","Female","South Carolina",1995,"South Atlantic","South","SC",417.037763385299,429.991807499546,443.435664657798,430.052705043803
+"646",40,27,1,1,"Communicable","Black","Female","South Carolina",1995,"South Atlantic","South","SC",53.8292859094682,57.9238539675319,62.018963368043,57.9148841272311
+"647",40,27,1,1,"Injuries","Black","Female","South Carolina",1995,"South Atlantic","South","SC",36.1454045609748,38.2489993229682,40.5126672881116,38.2875438658372
+"648",40,27,1,1,"Non-communicable","Black","Female","South Carolina",1995,"South Atlantic","South","SC",97.4980425041528,102.65009066761,107.720560268942,102.627335085496
+"649",40,28,0,0,"All other causes","White","Male","South Carolina",1996,"South Atlantic","South","SC",132.844454806091,137.636755145392,143.101344821422,137.720622489196
+"650",40,28,0,0,"Cancers","White","Male","South Carolina",1996,"South Atlantic","South","SC",258.744746925891,264.32072307573,270.131194192087,264.51241214268
+"651",40,28,0,0,"Cardiovascular","White","Male","South Carolina",1996,"South Atlantic","South","SC",472.734041465142,484.496669268494,496.463854860425,484.53843132558
+"652",40,28,0,0,"Communicable","White","Male","South Carolina",1996,"South Atlantic","South","SC",64.1451663031393,68.5375631796706,73.5106525659724,68.6535434529833
+"653",40,28,0,0,"Injuries","White","Male","South Carolina",1996,"South Atlantic","South","SC",88.8642898301882,91.7379898917617,94.8175958953264,91.7621237816411
+"654",40,28,0,0,"Non-communicable","White","Male","South Carolina",1996,"South Atlantic","South","SC",120.228107685785,124.564690599219,129.029416846257,124.614590414035
+"655",40,28,0,1,"All other causes","White","Female","South Carolina",1996,"South Atlantic","South","SC",107.217922956694,110.897171031385,114.45209241811,110.928658196527
+"656",40,28,0,1,"Cancers","White","Female","South Carolina",1996,"South Atlantic","South","SC",157.482865372319,160.864821749811,164.235791624676,160.864836890081
+"657",40,28,0,1,"Cardiovascular","White","Female","South Carolina",1996,"South Atlantic","South","SC",307.527285603554,314.78157729287,321.568639891195,314.813860030615
+"658",40,28,0,1,"Communicable","White","Female","South Carolina",1996,"South Atlantic","South","SC",36.2467126487539,38.0834310287242,40.2646587225346,38.1249295769075
+"659",40,28,0,1,"Injuries","White","Female","South Carolina",1996,"South Atlantic","South","SC",36.3901317036632,38.0204814601782,39.5112914067021,38.015721346063
+"660",40,28,0,1,"Non-communicable","White","Female","South Carolina",1996,"South Atlantic","South","SC",75.8922085882703,78.9048643312333,81.8547181243959,78.9554301729362
+"661",40,28,1,0,"All other causes","Black","Male","South Carolina",1996,"South Atlantic","South","SC",197.372075674324,205.914171109236,214.820177720999,205.878633875071
+"662",40,28,1,0,"Cancers","Black","Male","South Carolina",1996,"South Atlantic","South","SC",370.524246431169,382.740683120526,396.796241979304,382.959234145658
+"663",40,28,1,0,"Cardiovascular","Black","Male","South Carolina",1996,"South Atlantic","South","SC",594.356386790172,613.522937991788,633.075070916497,613.499011768398
+"664",40,28,1,0,"Communicable","Black","Male","South Carolina",1996,"South Atlantic","South","SC",123.509905680598,131.451653266653,141.080743282724,131.554112847127
+"665",40,28,1,0,"Injuries","Black","Male","South Carolina",1996,"South Atlantic","South","SC",126.963844672563,132.419933490259,138.074422922841,132.434533832308
+"666",40,28,1,0,"Non-communicable","Black","Male","South Carolina",1996,"South Atlantic","South","SC",131.033841330626,137.271458394545,144.036698106815,137.294941488518
+"667",40,28,1,1,"All other causes","Black","Female","South Carolina",1996,"South Atlantic","South","SC",137.287727120435,143.283558243251,149.183037959729,143.224579942274
+"668",40,28,1,1,"Cancers","Black","Female","South Carolina",1996,"South Atlantic","South","SC",182.020772946217,188.858815131971,195.737819468176,188.952919482447
+"669",40,28,1,1,"Cardiovascular","Black","Female","South Carolina",1996,"South Atlantic","South","SC",407.377065284459,420.431354526336,434.255006223318,420.472084915266
+"670",40,28,1,1,"Communicable","Black","Female","South Carolina",1996,"South Atlantic","South","SC",54.6290292902257,58.4042368146735,62.7341728815803,58.4830296243816
+"671",40,28,1,1,"Injuries","Black","Female","South Carolina",1996,"South Atlantic","South","SC",35.7379248747517,37.9074962654104,40.2535576065541,37.9192289129843
+"672",40,28,1,1,"Non-communicable","Black","Female","South Carolina",1996,"South Atlantic","South","SC",100.306945094592,105.125459877784,110.299132226651,105.180108110455
+"673",40,29,0,0,"All other causes","White","Male","South Carolina",1997,"South Atlantic","South","SC",135.220525100365,140.485031938509,145.702500702247,140.479983023733
+"674",40,29,0,0,"Cancers","White","Male","South Carolina",1997,"South Atlantic","South","SC",254.108243150988,260.070144126662,265.921729245468,259.997265512375
+"675",40,29,0,0,"Cardiovascular","White","Male","South Carolina",1997,"South Atlantic","South","SC",458.398039828031,469.759601258046,481.592014411107,469.818696425951
+"676",40,29,0,0,"Communicable","White","Male","South Carolina",1997,"South Atlantic","South","SC",55.5026822562358,59.4719197121421,63.5785098937795,59.5141158146705
+"677",40,29,0,0,"Injuries","White","Male","South Carolina",1997,"South Atlantic","South","SC",88.6646702449887,91.5761976508891,94.3510222256178,91.5452034993658
+"678",40,29,0,0,"Non-communicable","White","Male","South Carolina",1997,"South Atlantic","South","SC",119.730102659546,124.479647457532,129.105844499456,124.418768842999
+"679",40,29,0,1,"All other causes","White","Female","South Carolina",1997,"South Atlantic","South","SC",108.904992476402,112.341214053904,116.269229377241,112.424178461368
+"680",40,29,0,1,"Cancers","White","Female","South Carolina",1997,"South Atlantic","South","SC",156.481142492378,159.576192251391,162.825201152722,159.592350028303
+"681",40,29,0,1,"Cardiovascular","White","Female","South Carolina",1997,"South Atlantic","South","SC",294.459423889259,301.068517162747,307.954759413881,301.062619623697
+"682",40,29,0,1,"Communicable","White","Female","South Carolina",1997,"South Atlantic","South","SC",35.5558560795996,37.5456492040751,39.530746822833,37.5416424267608
+"683",40,29,0,1,"Injuries","White","Female","South Carolina",1997,"South Atlantic","South","SC",36.8229175326564,38.3310003682654,39.8624697569262,38.3592933864727
+"684",40,29,0,1,"Non-communicable","White","Female","South Carolina",1997,"South Atlantic","South","SC",77.0024341187674,79.9871031147598,82.9618198418036,79.9829922463692
+"685",40,29,1,0,"All other causes","Black","Male","South Carolina",1997,"South Atlantic","South","SC",197.523393098556,206.177839032723,215.16659875335,206.195380780801
+"686",40,29,1,0,"Cancers","Black","Male","South Carolina",1997,"South Atlantic","South","SC",363.569649431523,376.636836729094,390.277319687136,376.805925163042
+"687",40,29,1,0,"Cardiovascular","Black","Male","South Carolina",1997,"South Atlantic","South","SC",577.932768267532,596.94637466874,616.025766278296,597.053415845721
+"688",40,29,1,0,"Communicable","Black","Male","South Carolina",1997,"South Atlantic","South","SC",109.389641093299,117.35514165946,125.406670132975,117.442729092856
+"689",40,29,1,0,"Injuries","Black","Male","South Carolina",1997,"South Atlantic","South","SC",123.746828582047,129.100454640228,134.869870687597,129.154345879186
+"690",40,29,1,0,"Non-communicable","Black","Male","South Carolina",1997,"South Atlantic","South","SC",136.620140053302,143.404618900784,150.58552787315,143.340375296357
+"691",40,29,1,1,"All other causes","Black","Female","South Carolina",1997,"South Atlantic","South","SC",139.661604869588,145.344935305524,151.000672081571,145.381524456352
+"692",40,29,1,1,"Cancers","Black","Female","South Carolina",1997,"South Atlantic","South","SC",182.618029717078,189.140567934936,195.759262193713,189.151583050124
+"693",40,29,1,1,"Cardiovascular","Black","Female","South Carolina",1997,"South Atlantic","South","SC",393.405829844826,405.705889644045,417.808459606921,405.454125683063
+"694",40,29,1,1,"Communicable","Black","Female","South Carolina",1997,"South Atlantic","South","SC",53.1368361747992,56.9342715097119,61.0392593627061,56.985719812844
+"695",40,29,1,1,"Injuries","Black","Female","South Carolina",1997,"South Atlantic","South","SC",35.294019493165,37.3272865670995,39.6522788203217,37.3412663180125
+"696",40,29,1,1,"Non-communicable","Black","Female","South Carolina",1997,"South Atlantic","South","SC",102.858920855378,108.075030896341,113.988604722078,108.132966427286
+"697",40,30,0,0,"All other causes","White","Male","South Carolina",1998,"South Atlantic","South","SC",139.89760304373,144.646295558028,150.105508248968,144.714787934675
+"698",40,30,0,0,"Cancers","White","Male","South Carolina",1998,"South Atlantic","South","SC",250.303607276855,256.072196363904,261.984942174734,256.077248371148
+"699",40,30,0,0,"Cardiovascular","White","Male","South Carolina",1998,"South Atlantic","South","SC",447.235250208487,457.574501454291,468.718541203983,457.560740747008
+"700",40,30,0,0,"Communicable","White","Male","South Carolina",1998,"South Atlantic","South","SC",58.0219541677508,62.0400522210156,66.606295583171,62.0895953891649
+"701",40,30,0,0,"Injuries","White","Male","South Carolina",1998,"South Atlantic","South","SC",89.716899145391,92.711611480159,95.63715584568,92.6753583101532
+"702",40,30,0,0,"Non-communicable","White","Male","South Carolina",1998,"South Atlantic","South","SC",125.699581048734,129.84110426424,134.218701589149,129.871965420539
+"703",40,30,0,1,"All other causes","White","Female","South Carolina",1998,"South Atlantic","South","SC",115.243617406184,118.825185256545,122.700886781791,118.880642031778
+"704",40,30,0,1,"Cancers","White","Female","South Carolina",1998,"South Atlantic","South","SC",156.322214931318,159.647400801764,162.67903068097,159.621126687186
+"705",40,30,0,1,"Cardiovascular","White","Female","South Carolina",1998,"South Atlantic","South","SC",296.896484639642,303.367473465286,310.545271026076,303.332142574793
+"706",40,30,0,1,"Communicable","White","Female","South Carolina",1998,"South Atlantic","South","SC",36.9157774573668,38.6743954176728,40.9129455754381,38.7828976969249
+"707",40,30,0,1,"Injuries","White","Female","South Carolina",1998,"South Atlantic","South","SC",37.2467565366738,38.6776387048953,40.2963834712904,38.6823178947448
+"708",40,30,0,1,"Non-communicable","White","Female","South Carolina",1998,"South Atlantic","South","SC",81.5014362758614,84.6064743311488,87.5598163882804,84.6084332453257
+"709",40,30,1,0,"All other causes","Black","Male","South Carolina",1998,"South Atlantic","South","SC",200.144871765296,209.228770329124,218.230132820564,209.188681872629
+"710",40,30,1,0,"Cancers","Black","Male","South Carolina",1998,"South Atlantic","South","SC",359.114650854126,372.252854094478,386.581203217649,372.411976396418
+"711",40,30,1,0,"Cardiovascular","Black","Male","South Carolina",1998,"South Atlantic","South","SC",559.534142608543,577.047612376863,596.76376684513,577.183177609185
+"712",40,30,1,0,"Communicable","Black","Male","South Carolina",1998,"South Atlantic","South","SC",99.7823341184455,107.454610864681,115.794058495022,107.440400412187
+"713",40,30,1,0,"Injuries","Black","Male","South Carolina",1998,"South Atlantic","South","SC",121.012493171179,126.390629921711,131.891769010035,126.430310161972
+"714",40,30,1,0,"Non-communicable","Black","Male","South Carolina",1998,"South Atlantic","South","SC",140.650762813702,147.668173633898,154.970123616834,147.66199607159
+"715",40,30,1,1,"All other causes","Black","Female","South Carolina",1998,"South Atlantic","South","SC",142.832109499181,148.818439199981,154.948916834779,148.8508377775
+"716",40,30,1,1,"Cancers","Black","Female","South Carolina",1998,"South Atlantic","South","SC",180.241701971234,187.063855921527,193.706216028124,187.010280015021
+"717",40,30,1,1,"Cardiovascular","Black","Female","South Carolina",1998,"South Atlantic","South","SC",388.486706336522,400.444236582328,413.768031508657,400.64762667112
+"718",40,30,1,1,"Communicable","Black","Female","South Carolina",1998,"South Atlantic","South","SC",53.2184849358607,56.6487609182137,60.6780473464806,56.7500184645338
+"719",40,30,1,1,"Injuries","Black","Female","South Carolina",1998,"South Atlantic","South","SC",34.6339163801211,36.8414348550815,39.0921560418841,36.8524180337818
+"720",40,30,1,1,"Non-communicable","Black","Female","South Carolina",1998,"South Atlantic","South","SC",102.833328892723,108.21533733786,113.207339768424,108.145212763539
+"721",40,31,0,0,"All other causes","White","Male","South Carolina",1999,"South Atlantic","South","SC",136.80414366002,141.978712673491,146.907676200397,141.855124234026
+"722",40,31,0,0,"Cancers","White","Male","South Carolina",1999,"South Atlantic","South","SC",252.176407883181,257.372110064644,262.977929741876,257.428960648004
+"723",40,31,0,0,"Cardiovascular","White","Male","South Carolina",1999,"South Atlantic","South","SC",434.492208542108,445.010010035633,455.711359748946,445.214684178159
+"724",40,31,0,0,"Communicable","White","Male","South Carolina",1999,"South Atlantic","South","SC",49.3966956918695,52.6222700907464,56.4141256300552,52.6909913200112
+"725",40,31,0,0,"Injuries","White","Male","South Carolina",1999,"South Atlantic","South","SC",90.4811617003921,93.4385233420725,96.5061616547751,93.4469329878272
+"726",40,31,0,0,"Non-communicable","White","Male","South Carolina",1999,"South Atlantic","South","SC",135.417112480182,139.841700999595,144.506176912898,139.93941729112
+"727",40,31,0,1,"All other causes","White","Female","South Carolina",1999,"South Atlantic","South","SC",117.234036495809,120.917324017711,124.563535308203,120.924042564077
+"728",40,31,0,1,"Cancers","White","Female","South Carolina",1999,"South Atlantic","South","SC",156.371910247195,159.841664074598,163.047866781584,159.785682555573
+"729",40,31,0,1,"Cardiovascular","White","Female","South Carolina",1999,"South Atlantic","South","SC",289.379736927599,295.956820828586,302.746220526955,295.908700565075
+"730",40,31,0,1,"Communicable","White","Female","South Carolina",1999,"South Atlantic","South","SC",35.6342135755612,37.5155635330142,39.5694956733303,37.539135893669
+"731",40,31,0,1,"Injuries","White","Female","South Carolina",1999,"South Atlantic","South","SC",37.5750223151432,39.0078007010701,40.5257181932289,39.0269445272521
+"732",40,31,0,1,"Non-communicable","White","Female","South Carolina",1999,"South Atlantic","South","SC",94.7487374219796,98.2157096140932,101.774731241137,98.1905501572272
+"733",40,31,1,0,"All other causes","Black","Male","South Carolina",1999,"South Atlantic","South","SC",200.739843803846,209.540226100122,218.572654298468,209.7402906424
+"734",40,31,1,0,"Cancers","Black","Male","South Carolina",1999,"South Atlantic","South","SC",358.676533323681,372.246370461255,385.866765411472,372.38920210912
+"735",40,31,1,0,"Cardiovascular","Black","Male","South Carolina",1999,"South Atlantic","South","SC",543.048948353559,559.47890082427,577.458237571468,559.533451603022
+"736",40,31,1,0,"Communicable","Black","Male","South Carolina",1999,"South Atlantic","South","SC",96.1588810913862,102.920396950739,110.546186288945,103.004552863858
+"737",40,31,1,0,"Injuries","Black","Male","South Carolina",1999,"South Atlantic","South","SC",119.772717569964,124.349394047505,129.417588937641,124.401665873255
+"738",40,31,1,0,"Non-communicable","Black","Male","South Carolina",1999,"South Atlantic","South","SC",148.67717687297,155.983432157699,163.430011788592,156.013846054224
+"739",40,31,1,1,"All other causes","Black","Female","South Carolina",1999,"South Atlantic","South","SC",143.195713668072,149.402338391464,155.862048273966,149.359954172584
+"740",40,31,1,1,"Cancers","Black","Female","South Carolina",1999,"South Atlantic","South","SC",177.935426280343,184.41437636238,190.55116842202,184.402448964743
+"741",40,31,1,1,"Cardiovascular","Black","Female","South Carolina",1999,"South Atlantic","South","SC",381.122288806476,393.59557091984,405.986982332801,393.660681814355
+"742",40,31,1,1,"Communicable","Black","Female","South Carolina",1999,"South Atlantic","South","SC",52.2302174295148,56.137369557076,60.3810697713066,56.1870042869118
+"743",40,31,1,1,"Injuries","Black","Female","South Carolina",1999,"South Atlantic","South","SC",34.1797867534018,36.2378673926912,38.439306897216,36.2245206218043
+"744",40,31,1,1,"Non-communicable","Black","Female","South Carolina",1999,"South Atlantic","South","SC",109.59871735826,115.075062000077,120.525583999174,115.010504115764
+"745",40,32,0,0,"All other causes","White","Male","South Carolina",2000,"South Atlantic","South","SC",142.384344451031,147.621268788078,153.412181960444,147.686260593498
+"746",40,32,0,0,"Cancers","White","Male","South Carolina",2000,"South Atlantic","South","SC",254.1300810659,259.488827811435,265.231838816598,259.541624064251
+"747",40,32,0,0,"Cardiovascular","White","Male","South Carolina",2000,"South Atlantic","South","SC",420.936032761219,431.552747271052,442.05213479524,431.626264180151
+"748",40,32,0,0,"Communicable","White","Male","South Carolina",2000,"South Atlantic","South","SC",44.7157396976928,47.570893320291,51.1204382364784,47.6463332186643
+"749",40,32,0,0,"Injuries","White","Male","South Carolina",2000,"South Atlantic","South","SC",92.3939675578592,95.1443979311432,98.0291388075323,95.19861664171
+"750",40,32,0,0,"Non-communicable","White","Male","South Carolina",2000,"South Atlantic","South","SC",142.432700872509,147.416305809949,152.317979826432,147.445676499139
+"751",40,32,0,1,"All other causes","White","Female","South Carolina",2000,"South Atlantic","South","SC",123.721184471897,127.343644069482,131.551446148223,127.470898321157
+"752",40,32,0,1,"Cancers","White","Female","South Carolina",2000,"South Atlantic","South","SC",155.417124826986,158.427295495083,161.709915706243,158.437652679804
+"753",40,32,0,1,"Cardiovascular","White","Female","South Carolina",2000,"South Atlantic","South","SC",275.97957601031,282.764109140372,288.739497800909,282.747975119909
+"754",40,32,0,1,"Communicable","White","Female","South Carolina",2000,"South Atlantic","South","SC",32.8488995996607,34.6757724951369,36.4327141908857,34.6617407765114
+"755",40,32,0,1,"Injuries","White","Female","South Carolina",2000,"South Atlantic","South","SC",37.7662662837384,39.2683766645961,40.8533257514906,39.2602625228886
+"756",40,32,0,1,"Non-communicable","White","Female","South Carolina",2000,"South Atlantic","South","SC",100.217440582131,103.804999414904,107.492039111795,103.773365169382
+"757",40,32,1,0,"All other causes","Black","Male","South Carolina",2000,"South Atlantic","South","SC",206.141491867262,215.031767928711,225.091734403377,215.306305902342
+"758",40,32,1,0,"Cancers","Black","Male","South Carolina",2000,"South Atlantic","South","SC",355.00805720119,368.066840644185,381.056104567366,368.218256325221
+"759",40,32,1,0,"Cardiovascular","Black","Male","South Carolina",2000,"South Atlantic","South","SC",525.290163758681,542.325580746644,560.678171357019,542.549546725592
+"760",40,32,1,0,"Communicable","Black","Male","South Carolina",2000,"South Atlantic","South","SC",89.6300454453856,96.4622791700421,102.616463710664,96.3983592945209
+"761",40,32,1,0,"Injuries","Black","Male","South Carolina",2000,"South Atlantic","South","SC",118.295433152442,123.668599854476,129.505171152371,123.779155892995
+"762",40,32,1,0,"Non-communicable","Black","Male","South Carolina",2000,"South Atlantic","South","SC",155.18756765353,162.961870984154,171.763757880343,163.114411473536
+"763",40,32,1,1,"All other causes","Black","Female","South Carolina",2000,"South Atlantic","South","SC",148.646710780907,154.840667475488,161.159174971107,154.892416657216
+"764",40,32,1,1,"Cancers","Black","Female","South Carolina",2000,"South Atlantic","South","SC",177.165801731134,183.736436519058,189.494544520549,183.609970969499
+"765",40,32,1,1,"Cardiovascular","Black","Female","South Carolina",2000,"South Atlantic","South","SC",373.459605791301,385.833959558095,397.811882421015,385.917588960154
+"766",40,32,1,1,"Communicable","Black","Female","South Carolina",2000,"South Atlantic","South","SC",52.6988712975296,56.3915606094485,60.4589253660385,56.4209161102451
+"767",40,32,1,1,"Injuries","Black","Female","South Carolina",2000,"South Atlantic","South","SC",33.3524469648535,35.4612803698164,37.7318449954844,35.492250359983
+"768",40,32,1,1,"Non-communicable","Black","Female","South Carolina",2000,"South Atlantic","South","SC",117.792234803004,123.487725727524,129.570401487287,123.550716390113
+"769",40,33,0,0,"All other causes","White","Male","South Carolina",2001,"South Atlantic","South","SC",145.911552003143,150.901274212969,156.023982075455,150.904055908638
+"770",40,33,0,0,"Cancers","White","Male","South Carolina",2001,"South Atlantic","South","SC",252.827189746503,258.651673803015,264.329178967682,258.623093251839
+"771",40,33,0,0,"Cardiovascular","White","Male","South Carolina",2001,"South Atlantic","South","SC",389.095923640129,399.14112220167,407.488800053442,398.784502555178
+"772",40,33,0,0,"Communicable","White","Male","South Carolina",2001,"South Atlantic","South","SC",45.8483572424415,48.8354381786439,52.1499811563355,48.8374906960236
+"773",40,33,0,0,"Injuries","White","Male","South Carolina",2001,"South Atlantic","South","SC",94.2204121055303,97.2711734297064,99.9582564762551,97.2386723684529
+"774",40,33,0,0,"Non-communicable","White","Male","South Carolina",2001,"South Atlantic","South","SC",143.921665623675,148.792758668735,153.781209078169,148.76346557716
+"775",40,33,0,1,"All other causes","White","Female","South Carolina",2001,"South Atlantic","South","SC",125.325176120264,129.076798627063,132.997437913938,129.091348738061
+"776",40,33,0,1,"Cancers","White","Female","South Carolina",2001,"South Atlantic","South","SC",154.225159896243,157.274331799804,160.471926200092,157.31875273046
+"777",40,33,0,1,"Cardiovascular","White","Female","South Carolina",2001,"South Atlantic","South","SC",264.646934386862,270.689033655848,277.254775515273,270.743569644873
+"778",40,33,0,1,"Communicable","White","Female","South Carolina",2001,"South Atlantic","South","SC",32.8994846428327,34.6624393920479,36.5602068478396,34.6550363800875
+"779",40,33,0,1,"Injuries","White","Female","South Carolina",2001,"South Atlantic","South","SC",37.7707385997467,39.2986686758659,40.9444856979878,39.3254101660684
+"780",40,33,0,1,"Non-communicable","White","Female","South Carolina",2001,"South Atlantic","South","SC",102.78809254141,106.386434544305,109.867667927634,106.396125403241
+"781",40,33,1,0,"All other causes","Black","Male","South Carolina",2001,"South Atlantic","South","SC",208.765555661978,217.166109648536,227.039945891796,217.468362485593
+"782",40,33,1,0,"Cancers","Black","Male","South Carolina",2001,"South Atlantic","South","SC",347.705859529429,361.332741528075,374.005550862143,361.260725627624
+"783",40,33,1,0,"Cardiovascular","Black","Male","South Carolina",2001,"South Atlantic","South","SC",520.432853495695,538.883347290943,557.098543360843,538.748621624512
+"784",40,33,1,0,"Communicable","Black","Male","South Carolina",2001,"South Atlantic","South","SC",93.5868071927949,100.476534057278,107.574616443347,100.643698103771
+"785",40,33,1,0,"Injuries","Black","Male","South Carolina",2001,"South Atlantic","South","SC",116.165197970848,121.507433700159,126.297959720604,121.424284867989
+"786",40,33,1,0,"Non-communicable","Black","Male","South Carolina",2001,"South Atlantic","South","SC",157.286099454389,164.992172839706,173.251182300476,165.06070769388
+"787",40,33,1,1,"All other causes","Black","Female","South Carolina",2001,"South Atlantic","South","SC",151.763234599821,157.797470438672,164.322052887482,157.869756575508
+"788",40,33,1,1,"Cancers","Black","Female","South Carolina",2001,"South Atlantic","South","SC",174.713084522402,180.701252213486,186.757584076428,180.67757346637
+"789",40,33,1,1,"Cardiovascular","Black","Female","South Carolina",2001,"South Atlantic","South","SC",357.445989524082,369.11751032154,381.224479770379,369.215596503672
+"790",40,33,1,1,"Communicable","Black","Female","South Carolina",2001,"South Atlantic","South","SC",51.4137557290995,54.7908025125633,58.9538321088387,54.8482443457673
+"791",40,33,1,1,"Injuries","Black","Female","South Carolina",2001,"South Atlantic","South","SC",32.7832710695897,34.8215371841225,36.8809033363213,34.8425851547034
+"792",40,33,1,1,"Non-communicable","Black","Female","South Carolina",2001,"South Atlantic","South","SC",122.46492249099,128.567616035919,134.766661847793,128.515353886184
+"793",40,34,0,0,"All other causes","White","Male","South Carolina",2002,"South Atlantic","South","SC",149.317220983994,154.349356237477,159.681554865099,154.439001476275
+"794",40,34,0,0,"Cancers","White","Male","South Carolina",2002,"South Atlantic","South","SC",248.312813621928,253.71666610734,259.284129398543,253.785271199933
+"795",40,34,0,0,"Cardiovascular","White","Male","South Carolina",2002,"South Atlantic","South","SC",386.247659806035,396.018593209025,405.479744536757,395.758439631799
+"796",40,34,0,0,"Communicable","White","Male","South Carolina",2002,"South Atlantic","South","SC",47.421511693649,50.6977519585798,54.5089237898641,50.7935845905862
+"797",40,34,0,0,"Injuries","White","Male","South Carolina",2002,"South Atlantic","South","SC",95.0569131398122,98.1380462749643,101.161176907679,98.1536465510072
+"798",40,34,0,0,"Non-communicable","White","Male","South Carolina",2002,"South Atlantic","South","SC",145.884117626633,150.368206547382,155.490431737367,150.452033915593
+"799",40,34,0,1,"All other causes","White","Female","South Carolina",2002,"South Atlantic","South","SC",129.728742350222,133.805259668367,137.953992566374,133.781936554778
+"800",40,34,0,1,"Cancers","White","Female","South Carolina",2002,"South Atlantic","South","SC",153.563189596501,156.529747484316,159.875038420903,156.583242082353
+"801",40,34,0,1,"Cardiovascular","White","Female","South Carolina",2002,"South Atlantic","South","SC",254.21700368313,260.46443001746,266.453665394015,260.415594256567
+"802",40,34,0,1,"Communicable","White","Female","South Carolina",2002,"South Atlantic","South","SC",36.4835625626631,38.4502697817763,40.4462913564052,38.4570129912523
+"803",40,34,0,1,"Injuries","White","Female","South Carolina",2002,"South Atlantic","South","SC",38.1628010241051,39.6899163897268,41.2045834437692,39.6896371171332
+"804",40,34,0,1,"Non-communicable","White","Female","South Carolina",2002,"South Atlantic","South","SC",109.88873122652,113.198372461453,117.06365535575,113.261775269648
+"805",40,34,1,0,"All other causes","Black","Male","South Carolina",2002,"South Atlantic","South","SC",211.76996662953,221.068110015588,231.038539119858,221.213637568003
+"806",40,34,1,0,"Cancers","Black","Male","South Carolina",2002,"South Atlantic","South","SC",339.557456669207,351.713252285079,363.97087249609,351.578965899791
+"807",40,34,1,0,"Cardiovascular","Black","Male","South Carolina",2002,"South Atlantic","South","SC",505.918099497936,523.518201110247,541.947323842107,523.436196814369
+"808",40,34,1,0,"Communicable","Black","Male","South Carolina",2002,"South Atlantic","South","SC",95.125156757769,102.217293597634,109.671209857708,102.12328768869
+"809",40,34,1,0,"Injuries","Black","Male","South Carolina",2002,"South Atlantic","South","SC",112.520288894458,117.672854707752,122.833881828186,117.733047935094
+"810",40,34,1,0,"Non-communicable","Black","Male","South Carolina",2002,"South Atlantic","South","SC",160.561667270268,168.730349497699,177.14726146277,168.807374480664
+"811",40,34,1,1,"All other causes","Black","Female","South Carolina",2002,"South Atlantic","South","SC",154.719857438723,161.780752028361,168.35848896859,161.792839957882
+"812",40,34,1,1,"Cancers","Black","Female","South Carolina",2002,"South Atlantic","South","SC",175.566380887673,181.199612465225,187.036177474646,181.251973392872
+"813",40,34,1,1,"Cardiovascular","Black","Female","South Carolina",2002,"South Atlantic","South","SC",359.310994825876,371.519506731467,383.35461937722,371.33038696699
+"814",40,34,1,1,"Communicable","Black","Female","South Carolina",2002,"South Atlantic","South","SC",50.9246623543608,54.6928998364846,58.642090628835,54.6961764166524
+"815",40,34,1,1,"Injuries","Black","Female","South Carolina",2002,"South Atlantic","South","SC",32.3441763515803,34.4866712546221,36.3967920581516,34.4464504602209
+"816",40,34,1,1,"Non-communicable","Black","Female","South Carolina",2002,"South Atlantic","South","SC",125.28629473256,131.732879894498,138.240377522212,131.790727665908
+"817",40,35,0,0,"All other causes","White","Male","South Carolina",2003,"South Atlantic","South","SC",149.636678599889,154.956520058008,160.497227574971,155.076655430906
+"818",40,35,0,0,"Cancers","White","Male","South Carolina",2003,"South Atlantic","South","SC",241.567379092721,246.72669844821,252.084855165685,246.738556294361
+"819",40,35,0,0,"Cardiovascular","White","Male","South Carolina",2003,"South Atlantic","South","SC",367.090460402115,375.917379168655,384.917421892003,375.878896782305
+"820",40,35,0,0,"Communicable","White","Male","South Carolina",2003,"South Atlantic","South","SC",48.0411594138708,51.3011191063539,54.6337409080054,51.282277704842
+"821",40,35,0,0,"Injuries","White","Male","South Carolina",2003,"South Atlantic","South","SC",95.996812304279,99.1349596799603,101.925642804005,99.114263354721
+"822",40,35,0,0,"Non-communicable","White","Male","South Carolina",2003,"South Atlantic","South","SC",144.312582682186,149.029094767122,153.844279809499,148.997790839564
+"823",40,35,0,1,"All other causes","White","Female","South Carolina",2003,"South Atlantic","South","SC",131.60030983126,135.565904824583,139.648209727248,135.564739556321
+"824",40,35,0,1,"Cancers","White","Female","South Carolina",2003,"South Atlantic","South","SC",152.957981662029,155.955434469872,159.182191780945,156.000536762331
+"825",40,35,0,1,"Cardiovascular","White","Female","South Carolina",2003,"South Atlantic","South","SC",249.232106895063,254.536154138431,261.052326282795,254.70955056334
+"826",40,35,0,1,"Communicable","White","Female","South Carolina",2003,"South Atlantic","South","SC",35.3834653695509,37.2431386691593,39.2903924032245,37.2842134352851
+"827",40,35,0,1,"Injuries","White","Female","South Carolina",2003,"South Atlantic","South","SC",38.742673722908,40.3718426143017,41.9364621767183,40.3650019683163
+"828",40,35,0,1,"Non-communicable","White","Female","South Carolina",2003,"South Atlantic","South","SC",114.21875291165,117.885178519471,121.910147721697,117.933562366624
+"829",40,35,1,0,"All other causes","Black","Male","South Carolina",2003,"South Atlantic","South","SC",211.557586495446,220.840050982024,231.341644922824,221.196464834384
+"830",40,35,1,0,"Cancers","Black","Male","South Carolina",2003,"South Atlantic","South","SC",332.018379779354,344.642549640126,357.642930493449,344.780084472093
+"831",40,35,1,0,"Cardiovascular","Black","Male","South Carolina",2003,"South Atlantic","South","SC",496.329550015292,512.63214720517,529.801102890219,512.64942720815
+"832",40,35,1,0,"Communicable","Black","Male","South Carolina",2003,"South Atlantic","South","SC",93.0389941175626,99.9048425765905,107.417109700057,99.9639732403809
+"833",40,35,1,0,"Injuries","Black","Male","South Carolina",2003,"South Atlantic","South","SC",111.34161904406,116.591750658498,121.876759231066,116.563822825192
+"834",40,35,1,0,"Non-communicable","Black","Male","South Carolina",2003,"South Atlantic","South","SC",164.811672339647,173.408085308082,181.549815877717,173.415257226074
+"835",40,35,1,1,"All other causes","Black","Female","South Carolina",2003,"South Atlantic","South","SC",154.798311260759,161.460082997991,168.291943962744,161.446846315969
+"836",40,35,1,1,"Cancers","Black","Female","South Carolina",2003,"South Atlantic","South","SC",174.169774936275,180.433584397926,186.420884546894,180.432808037073
+"837",40,35,1,1,"Cardiovascular","Black","Female","South Carolina",2003,"South Atlantic","South","SC",340.851037884905,352.221581643965,364.400332797508,352.501486141109
+"838",40,35,1,1,"Communicable","Black","Female","South Carolina",2003,"South Atlantic","South","SC",48.4906358622788,51.946986242165,55.585014988538,51.9498911099494
+"839",40,35,1,1,"Injuries","Black","Female","South Carolina",2003,"South Atlantic","South","SC",31.8480522446755,33.9148746472706,35.9445099761062,33.8916654688511
+"840",40,35,1,1,"Non-communicable","Black","Female","South Carolina",2003,"South Atlantic","South","SC",125.050914024156,130.986233448621,137.862795017304,131.105412777019
+"841",40,36,0,0,"All other causes","White","Male","South Carolina",2004,"South Atlantic","South","SC",147.670066511683,153.183794075751,158.235031577817,153.108181915082
+"842",40,36,0,0,"Cancers","White","Male","South Carolina",2004,"South Atlantic","South","SC",236.843253270095,241.64828479831,247.318736916294,241.709482187586
+"843",40,36,0,0,"Cardiovascular","White","Male","South Carolina",2004,"South Atlantic","South","SC",350.730982716779,359.111646861449,367.95453144542,359.348621955681
+"844",40,36,0,0,"Communicable","White","Male","South Carolina",2004,"South Atlantic","South","SC",45.5096122688863,48.8707938134028,52.0629240943432,48.8514459200209
+"845",40,36,0,0,"Injuries","White","Male","South Carolina",2004,"South Atlantic","South","SC",98.256589711267,101.245144944423,104.244797478806,101.343524470416
+"846",40,36,0,0,"Non-communicable","White","Male","South Carolina",2004,"South Atlantic","South","SC",144.931081796924,149.765044304749,154.320550493183,149.700136161332
+"847",40,36,0,1,"All other causes","White","Female","South Carolina",2004,"South Atlantic","South","SC",128.575691809799,132.52655821799,136.490172905901,132.554054264448
+"848",40,36,0,1,"Cancers","White","Female","South Carolina",2004,"South Atlantic","South","SC",150.550616453458,153.440346262907,156.643229153145,153.493149608493
+"849",40,36,0,1,"Cardiovascular","White","Female","South Carolina",2004,"South Atlantic","South","SC",228.887274161634,234.952308463703,240.287129020582,234.88339230052
+"850",40,36,0,1,"Communicable","White","Female","South Carolina",2004,"South Atlantic","South","SC",32.7225489495142,34.3991078384322,36.1275797789537,34.4139835905071
+"851",40,36,0,1,"Injuries","White","Female","South Carolina",2004,"South Atlantic","South","SC",39.600835021215,41.1693345634221,42.7231605618177,41.1810936779708
+"852",40,36,0,1,"Non-communicable","White","Female","South Carolina",2004,"South Atlantic","South","SC",115.09105111793,118.743996388943,122.719387581794,118.819619121808
+"853",40,36,1,0,"All other causes","Black","Male","South Carolina",2004,"South Atlantic","South","SC",206.687004335842,216.215008789587,226.132700011481,216.188529097452
+"854",40,36,1,0,"Cancers","Black","Male","South Carolina",2004,"South Atlantic","South","SC",323.086386312904,334.616774378513,346.256821671719,334.691548410175
+"855",40,36,1,0,"Cardiovascular","Black","Male","South Carolina",2004,"South Atlantic","South","SC",476.677179104718,492.989300862041,510.45515544316,493.096283059454
+"856",40,36,1,0,"Communicable","Black","Male","South Carolina",2004,"South Atlantic","South","SC",87.8378963246044,94.5943212045679,101.67675974683,94.6335789326372
+"857",40,36,1,0,"Injuries","Black","Male","South Carolina",2004,"South Atlantic","South","SC",112.318118051084,117.360378837853,122.686485954753,117.424807500385
+"858",40,36,1,0,"Non-communicable","Black","Male","South Carolina",2004,"South Atlantic","South","SC",162.435006250416,170.535805304411,178.965878610016,170.616487821554
+"859",40,36,1,1,"All other causes","Black","Female","South Carolina",2004,"South Atlantic","South","SC",156.464442338868,162.395760852482,168.879048887438,162.422164393687
+"860",40,36,1,1,"Cancers","Black","Female","South Carolina",2004,"South Atlantic","South","SC",171.322635347835,177.3897679536,183.313654310881,177.396373347659
+"861",40,36,1,1,"Cardiovascular","Black","Female","South Carolina",2004,"South Atlantic","South","SC",328.312784939993,338.319762874718,349.587315562474,338.543135399154
+"862",40,36,1,1,"Communicable","Black","Female","South Carolina",2004,"South Atlantic","South","SC",46.9488583929356,50.323331340606,53.8457044028973,50.3041375282867
+"863",40,36,1,1,"Injuries","Black","Female","South Carolina",2004,"South Atlantic","South","SC",31.6575360023974,33.6712745086353,35.6147053605636,33.6661601635422
+"864",40,36,1,1,"Non-communicable","Black","Female","South Carolina",2004,"South Atlantic","South","SC",130.776899281479,136.846292380357,143.539182245076,136.964366029846
+"865",40,37,0,0,"All other causes","White","Male","South Carolina",2005,"South Atlantic","South","SC",152.8222013248,157.891503491424,163.045032982398,157.847989757909
+"866",40,37,0,0,"Cancers","White","Male","South Carolina",2005,"South Atlantic","South","SC",234.240599134949,239.307393002074,244.438625779235,239.290775689794
+"867",40,37,0,0,"Cardiovascular","White","Male","South Carolina",2005,"South Atlantic","South","SC",337.509943485084,345.399621532134,354.025076154099,345.536190385717
+"868",40,37,0,0,"Communicable","White","Male","South Carolina",2005,"South Atlantic","South","SC",43.4295829030177,46.3548901887922,49.392950462285,46.4102160042295
+"869",40,37,0,0,"Injuries","White","Male","South Carolina",2005,"South Atlantic","South","SC",100.303101596707,103.244682220214,106.765273034971,103.316530973304
+"870",40,37,0,0,"Non-communicable","White","Male","South Carolina",2005,"South Atlantic","South","SC",144.527814391176,149.260809833759,154.461328147921,149.314791665824
+"871",40,37,0,1,"All other causes","White","Female","South Carolina",2005,"South Atlantic","South","SC",132.375305835189,136.160388964791,140.446755132683,136.233884533801
+"872",40,37,0,1,"Cancers","White","Female","South Carolina",2005,"South Atlantic","South","SC",150.048953570826,152.922842605611,155.991371520471,152.901844809623
+"873",40,37,0,1,"Cardiovascular","White","Female","South Carolina",2005,"South Atlantic","South","SC",223.792394913916,229.239047703085,234.566900809426,229.209833357036
+"874",40,37,0,1,"Communicable","White","Female","South Carolina",2005,"South Atlantic","South","SC",31.9351564858143,33.5452300639351,35.225839647395,33.567164630112
+"875",40,37,0,1,"Injuries","White","Female","South Carolina",2005,"South Atlantic","South","SC",41.3180639768987,42.8457724123109,44.5107150974769,42.8877319498539
+"876",40,37,0,1,"Non-communicable","White","Female","South Carolina",2005,"South Atlantic","South","SC",118.966600498435,122.543917698405,126.583666948685,122.676427124696
+"877",40,37,1,0,"All other causes","Black","Male","South Carolina",2005,"South Atlantic","South","SC",205.027020834234,214.488495352289,224.323664471363,214.636281563824
+"878",40,37,1,0,"Cancers","Black","Male","South Carolina",2005,"South Atlantic","South","SC",314.822035384816,326.552416657888,338.417938979728,326.610156851911
+"879",40,37,1,0,"Cardiovascular","Black","Male","South Carolina",2005,"South Atlantic","South","SC",460.604974975795,475.847218219275,492.47101010599,476.134008826556
+"880",40,37,1,0,"Communicable","Black","Male","South Carolina",2005,"South Atlantic","South","SC",83.4492067407638,89.2777898192321,95.412382875455,89.3542799631463
+"881",40,37,1,0,"Injuries","Black","Male","South Carolina",2005,"South Atlantic","South","SC",112.462965604005,117.708900771335,122.986927276978,117.692719856066
+"882",40,37,1,0,"Non-communicable","Black","Male","South Carolina",2005,"South Atlantic","South","SC",161.115390587552,169.135952491358,177.227852514413,169.212902755667
+"883",40,37,1,1,"All other causes","Black","Female","South Carolina",2005,"South Atlantic","South","SC",158.299981592948,164.407768327089,170.785873768936,164.495351798248
+"884",40,37,1,1,"Cancers","Black","Female","South Carolina",2005,"South Atlantic","South","SC",169.270995287252,174.930811774234,181.038204523466,174.906968438092
+"885",40,37,1,1,"Cardiovascular","Black","Female","South Carolina",2005,"South Atlantic","South","SC",307.195259418194,318.25093380472,329.264738453061,318.182587900924
+"886",40,37,1,1,"Communicable","Black","Female","South Carolina",2005,"South Atlantic","South","SC",47.3665411979447,50.706544812542,54.5844978887064,50.7604445011497
+"887",40,37,1,1,"Injuries","Black","Female","South Carolina",2005,"South Atlantic","South","SC",31.116041468593,33.1364926051073,35.0405912902926,33.1372644639281
+"888",40,37,1,1,"Non-communicable","Black","Female","South Carolina",2005,"South Atlantic","South","SC",130.325927167398,136.447184043925,142.644767036065,136.457454785155
+"889",40,38,0,0,"All other causes","White","Male","South Carolina",2006,"South Atlantic","South","SC",151.122065065956,156.024084818234,161.468639433785,156.143031699598
+"890",40,38,0,0,"Cancers","White","Male","South Carolina",2006,"South Atlantic","South","SC",229.004819797012,233.828784041507,238.599614629933,233.773809332029
+"891",40,38,0,0,"Cardiovascular","White","Male","South Carolina",2006,"South Atlantic","South","SC",317.678824424226,325.397287403378,333.318693459701,325.430657293344
+"892",40,38,0,0,"Communicable","White","Male","South Carolina",2006,"South Atlantic","South","SC",39.9883272792612,42.7812384225555,45.5647057854417,42.7896346960211
+"893",40,38,0,0,"Injuries","White","Male","South Carolina",2006,"South Atlantic","South","SC",100.566384362762,103.542799154763,106.62226563341,103.513379065572
+"894",40,38,0,0,"Non-communicable","White","Male","South Carolina",2006,"South Atlantic","South","SC",142.518012068643,147.28790858771,152.226119396049,147.312359612528
+"895",40,38,0,1,"All other causes","White","Female","South Carolina",2006,"South Atlantic","South","SC",137.443951884797,141.610803491311,145.434952661499,141.521625298094
+"896",40,38,0,1,"Cancers","White","Female","South Carolina",2006,"South Atlantic","South","SC",149.147831754452,152.213203777483,155.276139579892,152.204873316122
+"897",40,38,0,1,"Cardiovascular","White","Female","South Carolina",2006,"South Atlantic","South","SC",202.484352202735,207.12020852929,211.913961038172,207.050870416737
+"898",40,38,0,1,"Communicable","White","Female","South Carolina",2006,"South Atlantic","South","SC",30.3627755822316,32.0148400172373,33.6702685442196,32.0125576415413
+"899",40,38,0,1,"Injuries","White","Female","South Carolina",2006,"South Atlantic","South","SC",42.765291851736,44.297364445437,46.0181425288139,44.3151766469504
+"900",40,38,0,1,"Non-communicable","White","Female","South Carolina",2006,"South Atlantic","South","SC",116.308109061262,119.794934509971,123.562273316073,119.863068056158
+"901",40,38,1,0,"All other causes","Black","Male","South Carolina",2006,"South Atlantic","South","SC",205.051252530098,214.499719936006,223.674080971106,214.601832866087
+"902",40,38,1,0,"Cancers","Black","Male","South Carolina",2006,"South Atlantic","South","SC",309.59029363798,321.586609555012,333.480594914865,321.571893228121
+"903",40,38,1,0,"Cardiovascular","Black","Male","South Carolina",2006,"South Atlantic","South","SC",438.8234450258,453.322366027414,469.245876759766,453.661830072742
+"904",40,38,1,0,"Communicable","Black","Male","South Carolina",2006,"South Atlantic","South","SC",84.8613348953987,90.9769649601608,97.6401718779543,91.0587839682493
+"905",40,38,1,0,"Injuries","Black","Male","South Carolina",2006,"South Atlantic","South","SC",111.996467339153,116.621297956776,121.864615853317,116.629937970127
+"906",40,38,1,0,"Non-communicable","Black","Male","South Carolina",2006,"South Atlantic","South","SC",158.473124931985,166.768818291218,175.17747215619,166.733456195432
+"907",40,38,1,1,"All other causes","Black","Female","South Carolina",2006,"South Atlantic","South","SC",160.129524979734,166.402277797107,173.334628102212,166.58226752265
+"908",40,38,1,1,"Cancers","Black","Female","South Carolina",2006,"South Atlantic","South","SC",166.495481281408,172.381019914332,177.872773607204,172.512391556511
+"909",40,38,1,1,"Cardiovascular","Black","Female","South Carolina",2006,"South Atlantic","South","SC",293.090786227802,302.990240686948,313.435711110614,303.028524133883
+"910",40,38,1,1,"Communicable","Black","Female","South Carolina",2006,"South Atlantic","South","SC",45.8003956236328,48.9088209875803,52.3913792406367,48.9789304472812
+"911",40,38,1,1,"Injuries","Black","Female","South Carolina",2006,"South Atlantic","South","SC",30.9882311469971,32.9870139244087,34.863481189212,32.9725439642084
+"912",40,38,1,1,"Non-communicable","Black","Female","South Carolina",2006,"South Atlantic","South","SC",130.452402106746,136.604260678998,142.779305018487,136.671410848585
+"913",40,39,0,0,"All other causes","White","Male","South Carolina",2007,"South Atlantic","South","SC",152.235761129956,156.910988253875,162.183944305328,156.98809941857
+"914",40,39,0,0,"Cancers","White","Male","South Carolina",2007,"South Atlantic","South","SC",224.55801823268,229.430676639268,234.130518962794,229.416221590868
+"915",40,39,0,0,"Cardiovascular","White","Male","South Carolina",2007,"South Atlantic","South","SC",303.571430315764,310.680985937836,318.344708626028,310.805987004876
+"916",40,39,0,0,"Communicable","White","Male","South Carolina",2007,"South Atlantic","South","SC",39.9447399135613,42.5512984764824,45.314564141983,42.5612802137287
+"917",40,39,0,0,"Injuries","White","Male","South Carolina",2007,"South Atlantic","South","SC",100.460101747535,103.22956159097,106.361646001008,103.260028994785
+"918",40,39,0,0,"Non-communicable","White","Male","South Carolina",2007,"South Atlantic","South","SC",141.883629340087,146.203858727036,150.78570361759,146.240880787755
+"919",40,39,0,1,"All other causes","White","Female","South Carolina",2007,"South Atlantic","South","SC",136.781833680698,140.423083608597,144.475567209024,140.490097596292
+"920",40,39,0,1,"Cancers","White","Female","South Carolina",2007,"South Atlantic","South","SC",146.838919003101,149.726033705519,152.787165180135,149.791114250744
+"921",40,39,0,1,"Cardiovascular","White","Female","South Carolina",2007,"South Atlantic","South","SC",200.409753926755,205.077122483787,210.007694917075,205.053933135456
+"922",40,39,0,1,"Communicable","White","Female","South Carolina",2007,"South Atlantic","South","SC",30.2736741870237,31.7714755129017,33.5102242021108,31.8009401667826
+"923",40,39,0,1,"Injuries","White","Female","South Carolina",2007,"South Atlantic","South","SC",43.6073238844231,45.1199785246929,46.9166159269295,45.130546719736
+"924",40,39,0,1,"Non-communicable","White","Female","South Carolina",2007,"South Atlantic","South","SC",114.814254132755,118.442061743896,121.884607229816,118.396794459
+"925",40,39,1,0,"All other causes","Black","Male","South Carolina",2007,"South Atlantic","South","SC",200.777142042891,210.39409438589,220.02570561836,210.481257666838
+"926",40,39,1,0,"Cancers","Black","Male","South Carolina",2007,"South Atlantic","South","SC",302.363329095916,312.589062412547,324.403723585805,312.662919043061
+"927",40,39,1,0,"Cardiovascular","Black","Male","South Carolina",2007,"South Atlantic","South","SC",423.554868911314,436.595823792578,450.609083560985,436.663814646157
+"928",40,39,1,0,"Communicable","Black","Male","South Carolina",2007,"South Atlantic","South","SC",82.2852051768561,88.6310875944763,95.5708540172937,88.7635073252968
+"929",40,39,1,0,"Injuries","Black","Male","South Carolina",2007,"South Atlantic","South","SC",109.74691033846,114.408554940954,119.704497526337,114.395713116253
+"930",40,39,1,0,"Non-communicable","Black","Male","South Carolina",2007,"South Atlantic","South","SC",157.044317326067,164.807064216029,172.800729695499,164.770483746303
+"931",40,39,1,1,"All other causes","Black","Female","South Carolina",2007,"South Atlantic","South","SC",165.762647122719,171.701304276211,179.182539228267,171.876048175018
+"932",40,39,1,1,"Cancers","Black","Female","South Carolina",2007,"South Atlantic","South","SC",165.54477491774,170.616484468568,176.085339847082,170.676101808135
+"933",40,39,1,1,"Cardiovascular","Black","Female","South Carolina",2007,"South Atlantic","South","SC",284.413358550867,293.983646739308,303.930838655557,294.077283912505
+"934",40,39,1,1,"Communicable","Black","Female","South Carolina",2007,"South Atlantic","South","SC",45.7298783892702,49.2748877950076,52.6894089978104,49.2992135390542
+"935",40,39,1,1,"Injuries","Black","Female","South Carolina",2007,"South Atlantic","South","SC",29.9821201184802,31.9488994578368,33.8784142670911,31.9468085485044
+"936",40,39,1,1,"Non-communicable","Black","Female","South Carolina",2007,"South Atlantic","South","SC",132.642723698185,138.75908126811,145.040081853537,138.810128839716
+"937",40,40,0,0,"All other causes","White","Male","South Carolina",2008,"South Atlantic","South","SC",155.731338801058,160.783666393569,165.875864596454,160.811759120101
+"938",40,40,0,0,"Cancers","White","Male","South Carolina",2008,"South Atlantic","South","SC",223.254749136793,227.739174680799,232.636662634805,227.837227142491
+"939",40,40,0,0,"Cardiovascular","White","Male","South Carolina",2008,"South Atlantic","South","SC",294.429281946299,302.253682875593,309.669783838642,302.201892282771
+"940",40,40,0,0,"Communicable","White","Male","South Carolina",2008,"South Atlantic","South","SC",39.9168873177128,42.5815743751582,45.4866465713654,42.616728593684
+"941",40,40,0,0,"Injuries","White","Male","South Carolina",2008,"South Atlantic","South","SC",97.7441789052863,100.763293007604,103.802044312834,100.763323960371
+"942",40,40,0,0,"Non-communicable","White","Male","South Carolina",2008,"South Atlantic","South","SC",142.414296189647,146.795605660932,151.117434414989,146.791854206696
+"943",40,40,0,1,"All other causes","White","Female","South Carolina",2008,"South Atlantic","South","SC",144.255897230777,148.176911767814,152.387945203049,148.148614802318
+"944",40,40,0,1,"Cancers","White","Female","South Carolina",2008,"South Atlantic","South","SC",144.658264892373,147.643660149151,150.592453606143,147.637078101242
+"945",40,40,0,1,"Cardiovascular","White","Female","South Carolina",2008,"South Atlantic","South","SC",193.243244643147,197.848503075438,202.893510454818,197.953507349715
+"946",40,40,0,1,"Communicable","White","Female","South Carolina",2008,"South Atlantic","South","SC",30.0228224572831,31.4927312824829,33.146399675654,31.5125667412534
+"947",40,40,0,1,"Injuries","White","Female","South Carolina",2008,"South Atlantic","South","SC",44.0314042151567,45.5664280405287,47.2409935198338,45.5844300666705
+"948",40,40,0,1,"Non-communicable","White","Female","South Carolina",2008,"South Atlantic","South","SC",119.261234096744,123.004555645892,126.699915494989,123.017432611821
+"949",40,40,1,0,"All other causes","Black","Male","South Carolina",2008,"South Atlantic","South","SC",198.793452194768,207.824248635557,217.439858639385,207.948245897982
+"950",40,40,1,0,"Cancers","Black","Male","South Carolina",2008,"South Atlantic","South","SC",292.532718930907,304.220611570157,315.116297765295,304.216593009876
+"951",40,40,1,0,"Cardiovascular","Black","Male","South Carolina",2008,"South Atlantic","South","SC",405.826856124574,419.303292471116,433.46193626196,419.352260651306
+"952",40,40,1,0,"Communicable","Black","Male","South Carolina",2008,"South Atlantic","South","SC",76.5068793313538,82.6175069786778,88.8380439052425,82.6385024807955
+"953",40,40,1,0,"Injuries","Black","Male","South Carolina",2008,"South Atlantic","South","SC",107.523957738608,111.993590589005,117.141297584782,112.07457500978
+"954",40,40,1,0,"Non-communicable","Black","Male","South Carolina",2008,"South Atlantic","South","SC",161.343532265928,169.055817575476,177.171080472417,169.087880911976
+"955",40,40,1,1,"All other causes","Black","Female","South Carolina",2008,"South Atlantic","South","SC",168.063509774825,175.042526909174,182.143599237115,175.032723273974
+"956",40,40,1,1,"Cancers","Black","Female","South Carolina",2008,"South Atlantic","South","SC",162.984747409477,168.314413781268,174.34318307087,168.400008574789
+"957",40,40,1,1,"Cardiovascular","Black","Female","South Carolina",2008,"South Atlantic","South","SC",273.745596008128,283.768206037214,292.868931828268,283.669532549405
+"958",40,40,1,1,"Communicable","Black","Female","South Carolina",2008,"South Atlantic","South","SC",43.3574267797069,46.6748844431794,49.9592870634294,46.6383805216946
+"959",40,40,1,1,"Injuries","Black","Female","South Carolina",2008,"South Atlantic","South","SC",29.2938455503538,31.1712165136976,33.166604186793,31.176201506023
+"960",40,40,1,1,"Non-communicable","Black","Female","South Carolina",2008,"South Atlantic","South","SC",127.585096777295,134.099973344087,140.325741003386,134.089505553001
+"961",40,41,0,0,"All other causes","White","Male","South Carolina",2009,"South Atlantic","South","SC",162.142978097385,167.47201171456,172.341189661779,167.451823851716
+"962",40,41,0,0,"Cancers","White","Male","South Carolina",2009,"South Atlantic","South","SC",219.010615169934,223.73914467702,228.773558345954,223.666029855746
+"963",40,41,0,0,"Cardiovascular","White","Male","South Carolina",2009,"South Atlantic","South","SC",293.839456205626,300.752605479146,308.418739146206,300.895268609515
+"964",40,41,0,0,"Communicable","White","Male","South Carolina",2009,"South Atlantic","South","SC",38.6346256537765,41.2098499739786,43.7597678153054,41.1958674073822
+"965",40,41,0,0,"Injuries","White","Male","South Carolina",2009,"South Atlantic","South","SC",96.0303119884265,99.0185414795492,101.812783741316,98.9825030700363
+"966",40,41,0,0,"Non-communicable","White","Male","South Carolina",2009,"South Atlantic","South","SC",143.193531663376,147.772079816402,152.104328836622,147.719622534868
+"967",40,41,0,1,"All other causes","White","Female","South Carolina",2009,"South Atlantic","South","SC",141.919414522417,145.774818776365,149.646589176675,145.747706055296
+"968",40,41,0,1,"Cancers","White","Female","South Carolina",2009,"South Atlantic","South","SC",142.226314380496,145.171523466001,148.139177621238,145.137428528104
+"969",40,41,0,1,"Cardiovascular","White","Female","South Carolina",2009,"South Atlantic","South","SC",185.347907581217,189.669339310052,194.351135632205,189.749588831641
+"970",40,41,0,1,"Communicable","White","Female","South Carolina",2009,"South Atlantic","South","SC",29.9281449586227,31.4844773684439,33.0874957862161,31.4811931565272
+"971",40,41,0,1,"Injuries","White","Female","South Carolina",2009,"South Atlantic","South","SC",44.5611960712812,46.2196318538231,48.0246742026523,46.2728672347094
+"972",40,41,0,1,"Non-communicable","White","Female","South Carolina",2009,"South Atlantic","South","SC",117.185958255978,120.61708795359,124.171218208689,120.630093230674
+"973",40,41,1,0,"All other causes","Black","Male","South Carolina",2009,"South Atlantic","South","SC",196.527998262706,204.988959707901,214.310624234144,205.10335990561
+"974",40,41,1,0,"Cancers","Black","Male","South Carolina",2009,"South Atlantic","South","SC",285.694069162962,295.80254035293,306.671972052005,295.986281392357
+"975",40,41,1,0,"Cardiovascular","Black","Male","South Carolina",2009,"South Atlantic","South","SC",390.52219060981,403.594944711608,417.797515448716,403.600002955706
+"976",40,41,1,0,"Communicable","Black","Male","South Carolina",2009,"South Atlantic","South","SC",72.7545992986117,78.4758850567937,84.3537852166715,78.4992534227564
+"977",40,41,1,0,"Injuries","Black","Male","South Carolina",2009,"South Atlantic","South","SC",104.527949009918,109.033564449369,114.230590549426,109.089607341748
+"978",40,41,1,0,"Non-communicable","Black","Male","South Carolina",2009,"South Atlantic","South","SC",159.241886224409,168.393312324111,175.936970664423,168.22914379549
+"979",40,41,1,1,"All other causes","Black","Female","South Carolina",2009,"South Atlantic","South","SC",173.12130352102,179.311846072757,186.107489820201,179.401967462134
+"980",40,41,1,1,"Cancers","Black","Female","South Carolina",2009,"South Atlantic","South","SC",161.457413909844,167.072654740123,172.767430589744,167.036314851963
+"981",40,41,1,1,"Cardiovascular","Black","Female","South Carolina",2009,"South Atlantic","South","SC",266.847322996957,276.385636312227,286.221074831725,276.351626442489
+"982",40,41,1,1,"Communicable","Black","Female","South Carolina",2009,"South Atlantic","South","SC",42.9487989021006,45.8546019737748,49.2800328020895,45.9719947307534
+"983",40,41,1,1,"Injuries","Black","Female","South Carolina",2009,"South Atlantic","South","SC",28.5756214952426,30.4813562411532,32.346471429822,30.4702018979703
+"984",40,41,1,1,"Non-communicable","Black","Female","South Carolina",2009,"South Atlantic","South","SC",122.095229117834,128.370105851168,134.593503197512,128.344819400545
+"985",40,42,0,0,"All other causes","White","Male","South Carolina",2010,"South Atlantic","South","SC",166.733443862111,171.790370252342,176.799094220841,171.71430630888
+"986",40,42,0,0,"Cancers","White","Male","South Carolina",2010,"South Atlantic","South","SC",215.176458367504,219.722362241088,224.284346211307,219.735895776331
+"987",40,42,0,0,"Cardiovascular","White","Male","South Carolina",2010,"South Atlantic","South","SC",286.973160552905,293.552580625322,300.631019139826,293.632720940171
+"988",40,42,0,0,"Communicable","White","Male","South Carolina",2010,"South Atlantic","South","SC",38.7233488097618,41.5050675324024,44.1449782176397,41.5109508787197
+"989",40,42,0,0,"Injuries","White","Male","South Carolina",2010,"South Atlantic","South","SC",96.0561031671361,99.0224606047759,101.9627562175,99.0135123550451
+"990",40,42,0,0,"Non-communicable","White","Male","South Carolina",2010,"South Atlantic","South","SC",141.78217845121,145.81243300369,150.30289390378,145.885245737903
+"991",40,42,0,1,"All other causes","White","Female","South Carolina",2010,"South Atlantic","South","SC",152.023021589662,155.864316276686,159.869728353797,155.950480786449
+"992",40,42,0,1,"Cancers","White","Female","South Carolina",2010,"South Atlantic","South","SC",141.814002474586,144.780234386463,147.750478787488,144.77781237865
+"993",40,42,0,1,"Cardiovascular","White","Female","South Carolina",2010,"South Atlantic","South","SC",182.045932346765,186.031425127766,190.881781224033,186.106262180164
+"994",40,42,0,1,"Communicable","White","Female","South Carolina",2010,"South Atlantic","South","SC",29.993708862788,31.4188062212965,33.0838348057231,31.4531171655078
+"995",40,42,0,1,"Injuries","White","Female","South Carolina",2010,"South Atlantic","South","SC",45.2875021099451,46.9935532651127,48.8176898858302,46.9631836679738
+"996",40,42,0,1,"Non-communicable","White","Female","South Carolina",2010,"South Atlantic","South","SC",116.603160210698,120.152917359898,123.788143205034,120.159753925562
+"997",40,42,1,0,"All other causes","Black","Male","South Carolina",2010,"South Atlantic","South","SC",193.031153338242,201.440589336806,210.809156871859,201.527162636495
+"998",40,42,1,0,"Cancers","Black","Male","South Carolina",2010,"South Atlantic","South","SC",279.481393247925,288.800602341344,299.374348887885,288.817214264553
+"999",40,42,1,0,"Cardiovascular","Black","Male","South Carolina",2010,"South Atlantic","South","SC",378.497204311261,391.190558408699,403.530282018307,391.043484348904
+"1000",40,42,1,0,"Communicable","Black","Male","South Carolina",2010,"South Atlantic","South","SC",70.1138817703141,75.9197358266146,81.8477488401227,75.9630948855724
+"1001",40,42,1,0,"Injuries","Black","Male","South Carolina",2010,"South Atlantic","South","SC",102.086858608267,106.74158944768,111.276905814956,106.729230016398
+"1002",40,42,1,0,"Non-communicable","Black","Male","South Carolina",2010,"South Atlantic","South","SC",159.630154083805,167.135676886211,174.65352069293,167.132023344313
+"1003",40,42,1,1,"All other causes","Black","Female","South Carolina",2010,"South Atlantic","South","SC",170.266108973264,177.026807379881,184.216096646846,177.037987812739
+"1004",40,42,1,1,"Cancers","Black","Female","South Carolina",2010,"South Atlantic","South","SC",161.005094043105,166.314685198608,171.933364639275,166.343870391203
+"1005",40,42,1,1,"Cardiovascular","Black","Female","South Carolina",2010,"South Atlantic","South","SC",254.196463256866,263.288969749661,272.121193340556,263.288297022314
+"1006",40,42,1,1,"Communicable","Black","Female","South Carolina",2010,"South Atlantic","South","SC",41.7649641262001,44.9141166576648,48.2048584030668,44.9285511836509
+"1007",40,42,1,1,"Injuries","Black","Female","South Carolina",2010,"South Atlantic","South","SC",27.9659022778115,29.9053781743066,31.9602604464176,29.9262870397203
+"1008",40,42,1,1,"Non-communicable","Black","Female","South Carolina",2010,"South Atlantic","South","SC",118.772797780465,124.706710928633,130.766406657399,124.789290619534
+"1009",40,43,0,0,"All other causes","White","Male","South Carolina",2011,"South Atlantic","South","SC",168.783346354146,173.853710837375,178.972484478649,173.805426541413
+"1010",40,43,0,0,"Cancers","White","Male","South Carolina",2011,"South Atlantic","South","SC",212.241866790343,216.566905981374,221.281587897859,216.571911918747
+"1011",40,43,0,0,"Cardiovascular","White","Male","South Carolina",2011,"South Atlantic","South","SC",279.20876526096,286.034866083387,292.723653750661,286.001841480487
+"1012",40,43,0,0,"Communicable","White","Male","South Carolina",2011,"South Atlantic","South","SC",39.6683492207584,42.1735200395614,44.7619638656265,42.1821437715317
+"1013",40,43,0,0,"Injuries","White","Male","South Carolina",2011,"South Atlantic","South","SC",96.1179204093578,99.1924781566742,102.106050680021,99.2128287226556
+"1014",40,43,0,0,"Non-communicable","White","Male","South Carolina",2011,"South Atlantic","South","SC",136.725139467097,140.954687557369,145.0573897599,140.970672125807
+"1015",40,43,0,1,"All other causes","White","Female","South Carolina",2011,"South Atlantic","South","SC",159.079967828992,163.154961333852,167.267187934214,163.161603152507
+"1016",40,43,0,1,"Cancers","White","Female","South Carolina",2011,"South Atlantic","South","SC",140.763780142216,143.835805267982,146.921473939179,143.832715793716
+"1017",40,43,0,1,"Cardiovascular","White","Female","South Carolina",2011,"South Atlantic","South","SC",182.226250535802,186.358573707174,190.684537650616,186.389571014429
+"1018",40,43,0,1,"Communicable","White","Female","South Carolina",2011,"South Atlantic","South","SC",30.2214338487226,31.6614614027425,33.2211578186562,31.6775364982106
+"1019",40,43,0,1,"Injuries","White","Female","South Carolina",2011,"South Atlantic","South","SC",45.5136156829774,47.2215798467878,49.1829058933337,47.2502961279472
+"1020",40,43,0,1,"Non-communicable","White","Female","South Carolina",2011,"South Atlantic","South","SC",117.248814846459,120.656391252247,124.221351525875,120.625609464435
+"1021",40,43,1,0,"All other causes","Black","Male","South Carolina",2011,"South Atlantic","South","SC",190.78912156599,199.745174104286,209.158023153664,199.847179397608
+"1022",40,43,1,0,"Cancers","Black","Male","South Carolina",2011,"South Atlantic","South","SC",275.120767647113,286.238388651667,296.421438416355,286.05933964638
+"1023",40,43,1,0,"Cardiovascular","Black","Male","South Carolina",2011,"South Atlantic","South","SC",370.502837414622,383.234389002421,396.124092489296,383.089532005819
+"1024",40,43,1,0,"Communicable","Black","Male","South Carolina",2011,"South Atlantic","South","SC",65.6037139166769,70.7344753254452,76.1011287851317,70.7734158487685
+"1025",40,43,1,0,"Injuries","Black","Male","South Carolina",2011,"South Atlantic","South","SC",100.781258618756,105.867083009104,110.218090136794,105.76732323928
+"1026",40,43,1,0,"Non-communicable","Black","Male","South Carolina",2011,"South Atlantic","South","SC",156.755250850943,164.423909877337,171.912307828072,164.456780028249
+"1027",40,43,1,1,"All other causes","Black","Female","South Carolina",2011,"South Atlantic","South","SC",169.985259128703,177.519590573884,184.738203071591,177.477124513263
+"1028",40,43,1,1,"Cancers","Black","Female","South Carolina",2011,"South Atlantic","South","SC",160.410403739097,165.696562882581,170.771420021708,165.646971854552
+"1029",40,43,1,1,"Cardiovascular","Black","Female","South Carolina",2011,"South Atlantic","South","SC",245.216169554683,253.81109579724,263.0036871976,253.959661963478
+"1030",40,43,1,1,"Communicable","Black","Female","South Carolina",2011,"South Atlantic","South","SC",42.0872210430202,45.5837113002811,48.8994208693986,45.6031394904157
+"1031",40,43,1,1,"Injuries","Black","Female","South Carolina",2011,"South Atlantic","South","SC",27.4572484786005,29.3992155984138,31.4580312997103,29.4317434631034
+"1032",40,43,1,1,"Non-communicable","Black","Female","South Carolina",2011,"South Atlantic","South","SC",115.105430221554,120.821212639071,126.756471859388,120.829076728754
+"1033",40,44,0,0,"All other causes","White","Male","South Carolina",2012,"South Atlantic","South","SC",169.751962224804,175.045929338196,180.394243020365,175.063657327831
+"1034",40,44,0,0,"Cancers","White","Male","South Carolina",2012,"South Atlantic","South","SC",209.678024344842,214.337050404046,218.796280668872,214.390234961917
+"1035",40,44,0,0,"Cardiovascular","White","Male","South Carolina",2012,"South Atlantic","South","SC",275.018671034042,281.01573205929,287.201730496184,281.011253321219
+"1036",40,44,0,0,"Communicable","White","Male","South Carolina",2012,"South Atlantic","South","SC",36.9318482342248,39.2251223840323,41.6484338914377,39.2726231027667
+"1037",40,44,0,0,"Injuries","White","Male","South Carolina",2012,"South Atlantic","South","SC",95.8523550795175,98.9845727216588,102.048749023852,98.9818541101787
+"1038",40,44,0,0,"Non-communicable","White","Male","South Carolina",2012,"South Atlantic","South","SC",137.757323068631,141.811243306556,145.828718190023,141.798074162924
+"1039",40,44,0,1,"All other causes","White","Female","South Carolina",2012,"South Atlantic","South","SC",163.043812960354,167.117203067692,171.606026766653,167.089565156838
+"1040",40,44,0,1,"Cancers","White","Female","South Carolina",2012,"South Atlantic","South","SC",140.539788784842,143.516253361607,146.499180058002,143.534463419539
+"1041",40,44,0,1,"Cardiovascular","White","Female","South Carolina",2012,"South Atlantic","South","SC",178.972440865633,183.354546180166,187.789743045305,183.299109957137
+"1042",40,44,0,1,"Communicable","White","Female","South Carolina",2012,"South Atlantic","South","SC",29.0660373544816,30.5133005478898,31.9908877972314,30.5095384656015
+"1043",40,44,0,1,"Injuries","White","Female","South Carolina",2012,"South Atlantic","South","SC",45.429254245741,47.2891746696863,49.0353834096134,47.2640016158003
+"1044",40,44,0,1,"Non-communicable","White","Female","South Carolina",2012,"South Atlantic","South","SC",117.181293521196,120.71677509533,124.34647289988,120.735476999701
+"1045",40,44,1,0,"All other causes","Black","Male","South Carolina",2012,"South Atlantic","South","SC",193.794094227876,202.458618653015,211.938309647115,202.465000537459
+"1046",40,44,1,0,"Cancers","Black","Male","South Carolina",2012,"South Atlantic","South","SC",269.899319709471,280.543043266276,291.429269825639,280.577485956277
+"1047",40,44,1,0,"Cardiovascular","Black","Male","South Carolina",2012,"South Atlantic","South","SC",371.129007882451,383.278698375027,395.753884295822,383.177027173127
+"1048",40,44,1,0,"Communicable","Black","Male","South Carolina",2012,"South Atlantic","South","SC",63.4842530629324,68.8392845617712,74.3915906280316,68.8144754487496
+"1049",40,44,1,0,"Injuries","Black","Male","South Carolina",2012,"South Atlantic","South","SC",101.394349149776,106.042473399403,111.12536425883,106.136703990784
+"1050",40,44,1,0,"Non-communicable","Black","Male","South Carolina",2012,"South Atlantic","South","SC",156.92014450386,164.705262939786,173.617738209676,164.832593266428
+"1051",40,44,1,1,"All other causes","Black","Female","South Carolina",2012,"South Atlantic","South","SC",174.893120918097,181.93488350608,188.800450251306,181.849819942603
+"1052",40,44,1,1,"Cancers","Black","Female","South Carolina",2012,"South Atlantic","South","SC",157.259554728218,163.062178579233,168.843841642008,163.12948848917
+"1053",40,44,1,1,"Cardiovascular","Black","Female","South Carolina",2012,"South Atlantic","South","SC",241.304426250919,249.638404113801,258.515169625627,249.746962681126
+"1054",40,44,1,1,"Communicable","Black","Female","South Carolina",2012,"South Atlantic","South","SC",40.8799348614544,44.2050576976409,47.7091581684921,44.197868112502
+"1055",40,44,1,1,"Injuries","Black","Female","South Carolina",2012,"South Atlantic","South","SC",27.0687879812033,29.2008992727953,31.3247530734123,29.2210749223963
+"1056",40,44,1,1,"Non-communicable","Black","Female","South Carolina",2012,"South Atlantic","South","SC",113.465140989509,119.164391397021,125.087199006802,119.157459468699
+"1057",40,45,0,0,"All other causes","White","Male","South Carolina",2013,"South Atlantic","South","SC",173.474552004929,178.88731408965,184.520721523067,178.862814952715
+"1058",40,45,0,0,"Cancers","White","Male","South Carolina",2013,"South Atlantic","South","SC",208.762622032617,214.066802832637,219.082837463069,214.014613632662
+"1059",40,45,0,0,"Cardiovascular","White","Male","South Carolina",2013,"South Atlantic","South","SC",271.177779297586,278.109998515592,284.643226051986,278.02057928699
+"1060",40,45,0,0,"Communicable","White","Male","South Carolina",2013,"South Atlantic","South","SC",34.8724037181218,37.1800070484129,39.8723567365832,37.2586401733875
+"1061",40,45,0,0,"Injuries","White","Male","South Carolina",2013,"South Atlantic","South","SC",95.1817669987142,98.7768741567403,102.411056196869,98.7830897083541
+"1062",40,45,0,0,"Non-communicable","White","Male","South Carolina",2013,"South Atlantic","South","SC",139.640362747588,144.04942194354,148.978839427682,144.132221997156
+"1063",40,45,0,1,"All other causes","White","Female","South Carolina",2013,"South Atlantic","South","SC",165.100544197658,169.878961357687,174.362137313297,169.840568033017
+"1064",40,45,0,1,"Cancers","White","Female","South Carolina",2013,"South Atlantic","South","SC",137.955530856564,141.376170638911,144.727993098776,141.365218785486
+"1065",40,45,0,1,"Cardiovascular","White","Female","South Carolina",2013,"South Atlantic","South","SC",177.14670442266,181.600063134375,186.242953055297,181.604628270308
+"1066",40,45,0,1,"Communicable","White","Female","South Carolina",2013,"South Atlantic","South","SC",27.9141774427128,29.4404886852091,31.2215044939042,29.4767126921999
+"1067",40,45,0,1,"Injuries","White","Female","South Carolina",2013,"South Atlantic","South","SC",44.9609489281508,47.0323397537841,49.1678789085784,47.0231858463561
+"1068",40,45,0,1,"Non-communicable","White","Female","South Carolina",2013,"South Atlantic","South","SC",118.901012665639,122.764523701512,127.001113350669,122.822466964349
+"1069",40,45,1,0,"All other causes","Black","Male","South Carolina",2013,"South Atlantic","South","SC",193.735201029104,203.352675035983,213.794122551191,203.505488540498
+"1070",40,45,1,0,"Cancers","Black","Male","South Carolina",2013,"South Atlantic","South","SC",262.350477189213,273.591795731775,285.789843090805,273.700294669943
+"1071",40,45,1,0,"Cardiovascular","Black","Male","South Carolina",2013,"South Atlantic","South","SC",370.932989948114,385.249317753343,400.093785152975,385.130030809787
+"1072",40,45,1,0,"Communicable","Black","Male","South Carolina",2013,"South Atlantic","South","SC",63.6360312506326,69.3769718486344,75.7664278749356,69.4618655608827
+"1073",40,45,1,0,"Injuries","Black","Male","South Carolina",2013,"South Atlantic","South","SC",99.4697147046779,105.105346264161,110.835753535344,105.182895981198
+"1074",40,45,1,0,"Non-communicable","Black","Male","South Carolina",2013,"South Atlantic","South","SC",158.53285921064,167.289879541732,177.431242711965,167.508353529957
+"1075",40,45,1,1,"All other causes","Black","Female","South Carolina",2013,"South Atlantic","South","SC",176.894924689,184.619001465122,193.026052905449,184.698381256777
+"1076",40,45,1,1,"Cancers","Black","Female","South Carolina",2013,"South Atlantic","South","SC",156.092511603381,162.515738731517,168.842126199197,162.504656862175
+"1077",40,45,1,1,"Cardiovascular","Black","Female","South Carolina",2013,"South Atlantic","South","SC",242.548187950606,251.854387092806,261.568944687352,251.795537862614
+"1078",40,45,1,1,"Communicable","Black","Female","South Carolina",2013,"South Atlantic","South","SC",40.9034686049294,44.5295436590877,48.5250343948668,44.650044514687
+"1079",40,45,1,1,"Injuries","Black","Female","South Carolina",2013,"South Atlantic","South","SC",26.6401716246029,29.026524923709,31.4380311724662,29.0379530851855
+"1080",40,45,1,1,"Non-communicable","Black","Female","South Carolina",2013,"South Atlantic","South","SC",111.745938726939,118.427415187983,125.561883080137,118.516861376226
