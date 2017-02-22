@@ -1,6 +1,5 @@
 ---
 title: "Combine_results"
-author: "Corinne Riddell"
 date: "2/9/2017"
 output: html_document
 ---
@@ -23,7 +22,7 @@ included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado",
 "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
 "West Virginia", "Wisconsin") 
 
-completed.states <- included.states[17:24]
+completed.states <- included.states[c(1:4, 17:24)]
 ```
 
 ```{r combine_results}
@@ -36,7 +35,7 @@ cod_change_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/Bla
 mortality.rates <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_", completed.states[1], ".csv"))
 mortality.rates.diff <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_", completed.states[1], ".csv"))
 
-for(state_i in 1:length(completed.states)){
+for(state_i in 2:length(completed.states)){
   
     age_cod_results <- rbind(age_cod_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_", completed.states[state_i], ".csv")))
   
@@ -67,10 +66,10 @@ age_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year"
 cod_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], cod_decomp_results, by = "stratum.id")
 age_cod_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_cod_results, by = "stratum.id")
 
-COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
-                "Non-communicable", "Injuries", "All other causes")
+# COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
+#                 "Non-communicable", "Injuries", "All other causes")
 
-cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
+#cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
 age_cod_results$COD <- factor(age_cod_results$COD, levels = 1:6, 
                                labels = c("All other causes", "Cancers", "Cardiovascular", "Communicable",
                                           "Injuries", "Non-communicable"))
@@ -104,6 +103,7 @@ write.csv(age_cod_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMort
 write.csv(age_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
 write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
 write.csv(BlackWhite_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
+write.csv(cod_change_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_change_results.csv")
 
 write.csv(mortality.rates, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_combined.csv")
 write.csv(mortality.rates.diff, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_combined.csv")
