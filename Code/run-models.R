@@ -149,6 +149,9 @@ entire.analysis <- function(state_i) {
     rm(data_sub)
   }
   
+  save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".csv")) 
+  levels.state.year.sex <- levels(droplevels(r.All$state.year.sex))
+  rm(r.All)
   
   #calculate the difference in the COD contribution across the three eras.
   years <- c(1969, 1983, 1993, 2013)
@@ -330,7 +333,7 @@ entire.analysis <- function(state_i) {
   age_minbin <- le.calculations[[1]]$calcs[[1]]$age.decomp$Ages
   cods <- le.calculations[[1]]$calcs[[1]]$cod.marginal$Cause.of.death
   
-  age.decomp.estimates <- data.frame(stratum.id = rep(levels(droplevels(r.All$state.year.sex)), 
+  age.decomp.estimates <- data.frame(stratum.id = rep(levels.state.year.sex, 
                                                       each = length(age_minbin)),
                                      age_minbin = numeric(19*n),
                                      age_cont_yrs_lcl = numeric(19*n), 
@@ -343,7 +346,7 @@ entire.analysis <- function(state_i) {
                                      age_cont_prop_mean = numeric(19*n), 
                                      stringsAsFactors = F)
   
-  cod.marginal.estimates <- data.frame(stratum.id = rep(levels(droplevels(r.All$state.year.sex)), 
+  cod.marginal.estimates <- data.frame(stratum.id = rep(levels.state.year.sex, 
                                                         each = length(cods)),
                                        COD = character(6*n),
                                        COD_cont_yrs_lcl = numeric(6*n), 
@@ -356,7 +359,7 @@ entire.analysis <- function(state_i) {
                                        COD_cont_prop_mean = numeric(6*n), 
                                        stringsAsFactors = F)
   
-  age.cod.estimates <- data.frame(stratum.id = rep(levels(droplevels(r.All$state.year.sex)), 
+  age.cod.estimates <- data.frame(stratum.id = rep(levels.state.year.sex, 
                                                    each = length(cods)*length(age_minbin)),
                                   age_minbin = numeric(19*6*n),   
                                   COD = character(19*6*n),
@@ -491,7 +494,6 @@ entire.analysis <- function(state_i) {
   
   #save_results
   save(mortality.rates, mortality.rates.wide, le.calculations, cod.marginal.male, cod.marginal.female, file = paste0("~/BW_results/results_", state_i, ".Rdata")) 
-  save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".csv")) 
   write.csv(x = BlackWhite, file = paste0("~/BlackWhiteMortalityGap/Results/BlackWhite_", state_i, ".csv"))
   write.csv(x = age.decomp.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/age_decomp_", state_i, ".csv"))
   write.csv(x = cod.marginal.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/cod_marginal_", state_i, ".csv"))
@@ -502,7 +504,7 @@ entire.analysis <- function(state_i) {
 }
 
 #list.states <- as.list(c(levels(dat.clean$state)[c(23:25, 27:28, 30)]))
-include.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
 "Delaware", "Florida", "Georgia", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
 "Louisiana", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",   
 "Missouri", "Nebraska", "Nevada", "New Jersey", "New Mexico", "New York",
@@ -514,4 +516,9 @@ include.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado", 
 # last.set <- as.list(include.states[34:40])
 
 #next.set.1 <- as.list(include.states[c(1:3)])
-system.time(entire.analysis(state_i = include.states[7]))
+system.time(entire.analysis(state_i = included.states[14]))
+rm(list = ls(all = TRUE))
+system.time(entire.analysis(state_i = included.states[15]))
+rm(list = ls(all = TRUE))
+system.time(entire.analysis(state_i = included.states[25]))
+rm(list = ls(all = TRUE))
