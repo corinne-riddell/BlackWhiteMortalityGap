@@ -167,6 +167,14 @@ cod.df <- make_pretty_decomp_plot(decomp.table = cod.df, strat.var.1 = "state",
 
 cod.df <- merge(cod.df, BlackWhite_results[BlackWhite_results$year == 1969 & BlackWhite_results$sex == "Male", 
                                            c("state", "Census_Region", "Census_Division", "stabbrs")], by = c("state"))
+cod.df.males <- merge(subset(cod.df, sex == "Male"), bw_dat.males, by = c("state"))
+cod.df.males <- cod.df.males %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
+                                        new.start.2 = -start + second.gap, new.finish.2 = -finish + second.gap,
+                                        new.start.3 = -start + third.gap, new.finish.3 = -finish + third.gap)
+
+cod.df.males$tot_Cx_CI_width2 <- -(cod.df.males$tot_Cx_CI_width - min(cod.df.males$tot_Cx_CI_width))/(max(cod.df.males$tot_Cx_CI_width) - min(cod.df.males$tot_Cx_CI_width)) + 1
+cod.df.males$width.factor <- as.factor(cut(cod.df.males$tot_Cx_CI_width2, breaks = c(-0.01, 0.25, 0.50, 0.75, 1)))
+  
 ```
 
 *Changes to the difference in life expectancy in US males, 1969-1983*
@@ -208,12 +216,6 @@ for(i in 1:5) {
   assign(paste0("min", i), min.value)
   assign(paste0("min.cause", i), min.cause)
 }
-
-cod.df.males <- merge(subset(cod.df, sex == "Male"), bw_dat.males, by = c("state"))
-cod.df.males <- cod.df.males %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
-                                        new.start.2 = -start + second.gap, new.finish.2 = -finish + second.gap,
-                                        new.start.3 = -start + third.gap, new.finish.3 = -finish + third.gap)
-
 ```
 
 ```{r, echo =F}
@@ -252,7 +254,6 @@ During the second time period, from 1983 to 1993, the life expectancy gap for ma
 The final time period saw decreasing gaps in all states, and an increasing gap in Washington DC (**Fig 3**). In 1993, the gap ranged from `r round(sum3[1, ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum3[1, ]$LE_wbgap_lcl, 1)`, `r round(sum3[1, ]$LE_wbgap_ucl, 1)`] in `r sum3[1, ]$state ` to `r round(sum3[dim(sum3)[1], ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum3[dim(sum3)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum3[dim(sum3)[1], ]$LE_wbgap_ucl, 1)`]  in `r sum3[dim(sum3)[1], ]$state `. By 2013, the gap ranged from `r round(sum4[1, ]$LE_wbgap, 1)` years [95% CI: `r round(sum4[1, ]$LE_wbgap_lcl, 1)`, `r round(sum4[1, ]$LE_wbgap_ucl, 1)`] in `r sum4[1, ]$state ` to `r round(sum4[dim(sum4)[1], ]$LE_wbgap, 1)` years [95% CI: `r round(sum4[dim(sum4)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum4[dim(sum4)[1], ]$LE_wbgap_ucl, 1)`]  in `r sum4[dim(sum4)[1], ]$state `. During this time period all of the causes contributed to narrowing the gap for most states. In Wisconsin and the District of Columbia, changes to CVD mortality counteracted the gap narrowing (reflecting slower decreases to cardiovascular mortality among blacks compared with whites), while in Arizona changes to communicable disease counteracted the narrowing.
 
 **Fig 1: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
-
 ```{r figure1, fig.align = "center", echo=F, fig.height=9, fig.width=7}
 y.labels <- levels(factor(cod.df.males$state.gdiff.order.1))
 y.num.breaks <- length(levels(factor(cod.df.males$state.gdiff.order.1)))
@@ -261,8 +262,8 @@ males.era1 <- ggplotly(
   ggplot(subset(cod.df.males, era == "era1"), aes(y = state.gdiff.num.1, x = new.start.1)) +
     geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
                   ymax = state.gdiff.num.1 + 0.45, 
-                  xmax = new.finish.1, fill = Cause.of.death), 
-              color = "white") + # + scale_alpha(range = c(0.64, 4.04) 
+                  xmax = new.finish.1, fill = Cause.of.death, alpha = width.factor), 
+              color = "white") +
     geom_segment(data = subset(cod.df.males, Cause.of.death == "Cancers" & era == "era1"), aes(x = second.gap, xend = second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) + 
         geom_segment(data = subset(cod.df.males, Cause.of.death == "Cancers" & era == "era1"), aes(x = first.gap, xend = first.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) + 
     theme_minimal() + 
@@ -271,17 +272,6 @@ males.era1 <- ggplotly(
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
 
 males.era1
-
-plot <-   ggplot(subset(cod.df.males, era == "era1"), aes(y = state.gdiff.num.1, x = new.start.1)) +
-    geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
-                  ymax = state.gdiff.num.1 + 0.45, 
-                  xmax = new.finish.1, fill = Cause.of.death), #, alpha = tot_Cx_CI_width
-              color = "white") + # + scale_alpha(range = c(0.64, 4.04) 
-    geom_segment(data = subset(cod.df.males, Cause.of.death == "Cancers" & era == "era1"), aes(x = second.gap, xend = second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) + 
-        geom_segment(data = subset(cod.df.males, Cause.of.death == "Cancers" & era == "era1"), aes(x = first.gap, xend = first.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) + 
-    theme_minimal() + 
-    scale_x_continuous(breaks = seq(2, 16, by = 2), labels = seq(2, 16, by = 2)) +
-    scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)
 ```
 
 **Fig 2: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
@@ -296,7 +286,7 @@ males.era2 <- ggplotly(
   ggplot(subset(cod.df.males, era == "era2"), aes(y = state.gdiff.num.2, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.2 - 0.45, 
                   ymax = state.gdiff.num.2 + 0.45, 
-                  xmax = new.finish.2, fill = Cause.of.death), 
+                  xmax = new.finish.2, fill = Cause.of.death, alpha = width.factor), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
@@ -320,7 +310,7 @@ males.era3 <- ggplotly(
   ggplot(subset(cod.df.males, era == "era3"), aes(y = state.gdiff.num.3, x = new.start.3)) +
     geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.3 - 0.45, 
                   ymax = state.gdiff.num.3 + 0.45, 
-                  xmax = new.finish.3, fill = Cause.of.death), 
+                  xmax = new.finish.3, fill = Cause.of.death, alpha = width.factor), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
                  aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
@@ -339,7 +329,7 @@ males.era2.2 <- ggplotly(
   ggplot(subset(cod.df.males, era == "era2"), aes(y = state.gdiff.num.1, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.1 - 0.45, 
                   ymax = state.gdiff.num.1 + 0.45, 
-                  xmax = new.finish.2, fill = Cause.of.death), 
+                  xmax = new.finish.2, fill = Cause.of.death, alpha = width.factor), 
               color = "white") +
     geom_segment(data = bw_dat.males, 
                  aes(x = third.gap, xend= third.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
@@ -350,7 +340,22 @@ males.era2.2 <- ggplotly(
 
 males.era2.2 
 
-subplot(males.era1, males.era2.2, shareY = T)
+males.era3.2 <- ggplotly(
+  ggplot(subset(cod.df.males, era == "era3"), aes(y = state.gdiff.num.1, x = new.start.3)) +
+    geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.1 - 0.45, 
+                  ymax = state.gdiff.num.1 + 0.45, 
+                  xmax = new.finish.3, fill = Cause.of.death, alpha = width.factor), 
+              color = "white") +
+    geom_segment(data = bw_dat.males, 
+                 aes(x = fourth.gap, xend= fourth.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
+    geom_segment(data = bw_dat.males, 
+                 aes(x = third.gap, xend= third.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
+    theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
+  layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
+
+males.era3.2 
+
+subplot(males.era1, males.era2.2, males.era3.2, shareY = T)
 ```
 ** **
 ** **
@@ -393,6 +398,10 @@ Quick summary
 ```{r figure4, fig.align = "center", echo=F}
 
 cod.df.females <- merge(subset(cod.df, sex == "Female"), bw_dat.females, by = c("state"))
+cod.df.females$tot_Cx_CI_width2 <- -(cod.df.females$tot_Cx_CI_width - min(cod.df.females$tot_Cx_CI_width))/(max(cod.df.females$tot_Cx_CI_width) - min(cod.df.females$tot_Cx_CI_width)) + 1
+cod.df.females$width.factor <- as.factor(cut(cod.df.females$tot_Cx_CI_width2, breaks = c(-0.01, 0.25, 0.50, 0.75, 1)))
+  
+
 cod.df.females <- cod.df.females %>% mutate(new.start.1 = -start + first.gap, new.finish.1 = -finish + first.gap,
                                         new.start.2 = -start + second.gap, new.finish.2 = -finish + second.gap,
                                         new.start.3 = -start + third.gap, new.finish.3 = -finish + third.gap)
@@ -404,7 +413,7 @@ females.era1 <- ggplotly(
   ggplot(subset(cod.df.females, era == "era1"), aes(y = state.gdiff.num.1, x = new.start.1)) +
     geom_rect(aes(xmin = new.start.1, ymin = state.gdiff.num.1 - 0.45, 
                   ymax = state.gdiff.num.1 + 0.45, 
-                  xmax = new.finish.1, fill = Cause.of.death), 
+                  xmax = new.finish.1, fill = Cause.of.death, alpha = width.factor), 
               color = "white") +
     geom_segment(data = bw_dat.females,
                  aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5)) +
@@ -426,7 +435,7 @@ females.era2 <- ggplotly(
   ggplot(subset(cod.df.females, era == "era2"), aes(y = state.gdiff.num.2, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.2 - 0.45, 
                   ymax = state.gdiff.num.2 + 0.45, 
-                  xmax = new.finish.2, fill = Cause.of.death), 
+                  xmax = new.finish.2, fill = Cause.of.death, alpha = width.factor), 
               color = "white") +
     geom_segment(data = bw_dat.females,
                  aes(x = third.gap, xend = third.gap, y = state.gdiff.num.2 - 0.5, yend = state.gdiff.num.2 + 0.5)) +
@@ -448,7 +457,7 @@ females.era3 <- ggplotly(
   ggplot(subset(cod.df.females, era == "era3"), aes(y = state.gdiff.num.3, x = new.start.3)) +
     geom_rect(aes(xmin = new.start.3, ymin = state.gdiff.num.3 - 0.45, 
                   ymax = state.gdiff.num.3 + 0.45, 
-                  xmax = new.finish.3, fill = Cause.of.death), 
+                  xmax = new.finish.3, fill = Cause.of.death, alpha = width.factor), 
               color = "white") +
     geom_segment(data = bw_dat.females,
                  aes(x = fourth.gap, xend = fourth.gap, y = state.gdiff.num.3 - 0.5, yend = state.gdiff.num.3 + 0.5)) +
@@ -469,7 +478,7 @@ females.era3
 | Cancers                   | Lip; Tongue; Salivary gland; Floor of mouth; Gum and other mouth; Nasopharnyx; Tonsil; Oropharynx; Hypopharynx; Other oral cavity and pharynx; Esophagus; Stomach; Small intestine; Colon excluding rectum; Rectum and rectosigmoid junction; Anus, anal canal and anorectum; Liver; Intrahepatic bile duct; Gallbladder; Other biliary; Pancreas; Retroperitoneum; Peritoneum, Omentum and mesentery; Other digestive organs; Nose, nasal cavity and middle ear; Larynx; Lung and bronchus; Pleura; Trachea, Mediastinum and other respiratory organs; Bones and joints; Soft tissue including heart; Melanoma of the skin; Non-melanoma skin; Breast; Cervix uteri; Corpus uteri; Uterus, NOS; Ovary; Vagina; Vulva; Other female genital organs; Prostate; Testis; Penis; Other male genital organs; Urinary bladder; Kidney and renal pelvis; Ureter; Other urinary organs; Eye and orbit; Brain and other nervous system; Thyroid; Other endocrine including thymus; Hodkin lymphoma; Myeloma; Acute lymphocytic leukemia; Chronic lymphocytic leukemia; Other lymphocytic leukemia; Acute myeloid leukemia; Acute monocytic leukemia; Chronic myeloid leukemia; Other myeliod/monocytic leukemia; Other acute leukemia; Aleukemic, Subleukemic and NOS; Miscellaneous malignant cancer. |
 | Cardiovascular disease   | Diseases of heart; Hypertension without heart disease; Cerebrovascular diseases; Atherosclerosis; Aortic aneurysm and dissection; Other diseases of arteries, arterioles, capillaries. | 
 | Communicable disease     | Tuberculosis; Syphilis; HIV (1987+), Septicemia; Other infectious and parasitic diseases; Pneumonia and influenza |
-| Non-communicable disease | Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Sydrome and Nephrosis.  |
+| Non-communicable disease | Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Syndrome and Nephrosis.  |
 | Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
 
