@@ -22,7 +22,7 @@ included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado",
 "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
 "West Virginia", "Wisconsin") 
 
-completed.states <- included.states[c(1:9, 11, 14, 17:24, 26, 33)]
+completed.states <- included.states[c(1:11, 14, 17:24, 26:27, 33:34)]
 ```
 
 ```{r combine_results}
@@ -66,10 +66,6 @@ age_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year"
 cod_decomp_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], cod_decomp_results, by = "stratum.id")
 age_cod_results <- merge(BlackWhite_results[, c("stratum.id", "state", "year", "sex")], age_cod_results, by = "stratum.id")
 
-# COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
-#                 "Non-communicable", "Injuries", "All other causes")
-
-#cod_decomp_results$COD <- factor(cod_decomp_results$COD, COD.levels)
 age_cod_results$COD <- factor(age_cod_results$COD, levels = 1:6, 
                                labels = c("All other causes", "Cancers", "Cardiovascular", "Communicable",
                                           "Injuries", "Non-communicable"))
