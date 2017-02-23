@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",15,1,0,0,"All other causes","White","Male","Iowa",1969,"West North Central","Midwest","IA",113.45247994051,118.342366246487,122.665024700179,118.19871585592
+"2",15,1,0,0,"Cancers","White","Male","Iowa",1969,"West North Central","Midwest","IA",228.973135164544,235.191697960952,241.833578711475,235.186802825464
+"3",15,1,0,0,"Cardiovascular","White","Male","Iowa",1969,"West North Central","Midwest","IA",846.928342478577,862.931124190456,881.879359164791,863.413178460999
+"4",15,1,0,0,"Communicable","White","Male","Iowa",1969,"West North Central","Midwest","IA",56.3827295517668,60.8406458884608,65.3836197836098,60.8233790499266
+"5",15,1,0,0,"Injuries","White","Male","Iowa",1969,"West North Central","Midwest","IA",108.204862232785,112.226916590772,116.371016785791,112.270007473945
+"6",15,1,0,0,"Non-communicable","White","Male","Iowa",1969,"West North Central","Midwest","IA",87.4983782571606,91.2770509949515,95.2344863884836,91.3279304933633
+"7",15,1,0,1,"All other causes","White","Female","Iowa",1969,"West North Central","Midwest","IA",82.2069398052686,85.6216178211365,89.0639698087357,85.5927169175673
+"8",15,1,0,1,"Cancers","White","Female","Iowa",1969,"West North Central","Midwest","IA",151.961783765486,155.87515597742,160.148265582295,155.8821780115
+"9",15,1,0,1,"Cardiovascular","White","Female","Iowa",1969,"West North Central","Midwest","IA",515.170961864973,525.164078952615,536.158734300517,525.262022821378
+"10",15,1,0,1,"Communicable","White","Female","Iowa",1969,"West North Central","Midwest","IA",33.1697832394483,35.4023363517295,38.0155322776201,35.4280880667082
+"11",15,1,0,1,"Injuries","White","Female","Iowa",1969,"West North Central","Midwest","IA",40.4563132530957,42.3636423140897,44.6969525734678,42.4477942901866
+"12",15,1,0,1,"Non-communicable","White","Female","Iowa",1969,"West North Central","Midwest","IA",39.6981932516936,41.8911999689973,44.2278398977483,41.9258784256389
+"13",15,1,1,0,"All other causes","Black","Male","Iowa",1969,"West North Central","Midwest","IA",159.456800724173,189.646388371942,231.082437069593,191.125040952442
+"14",15,1,1,0,"Cancers","Black","Male","Iowa",1969,"West North Central","Midwest","IA",277.695877737058,347.396419833216,442.640718274391,350.547289716378
+"15",15,1,1,0,"Cardiovascular","Black","Male","Iowa",1969,"West North Central","Midwest","IA",852.688026587832,994.191351791905,1155.70120072934,996.750883011789
+"16",15,1,1,0,"Communicable","Black","Male","Iowa",1969,"West North Central","Midwest","IA",75.5050839633861,109.173518815625,174.493952165836,113.151590648894
+"17",15,1,1,0,"Injuries","Black","Male","Iowa",1969,"West North Central","Midwest","IA",167.635109832022,211.902707731507,281.130813471354,215.850396608412
+"18",15,1,1,0,"Non-communicable","Black","Male","Iowa",1969,"West North Central","Midwest","IA",103.266012500893,127.293078697533,164.06901359827,129.286299000361
+"19",15,1,1,1,"All other causes","Black","Female","Iowa",1969,"West North Central","Midwest","IA",126.86852656249,153.714063518037,191.42918512231,155.024840102708
+"20",15,1,1,1,"Cancers","Black","Female","Iowa",1969,"West North Central","Midwest","IA",171.494146812747,212.658174944466,295.983461364835,218.408390639895
+"21",15,1,1,1,"Cardiovascular","Black","Female","Iowa",1969,"West North Central","Midwest","IA",600.778351082959,689.870873724471,813.852089100385,692.546526426375
+"22",15,1,1,1,"Communicable","Black","Female","Iowa",1969,"West North Central","Midwest","IA",38.5663804542022,54.0659054150943,77.1894928616405,54.9793510588123
+"23",15,1,1,1,"Injuries","Black","Female","Iowa",1969,"West North Central","Midwest","IA",36.0322672535566,44.5349364772001,55.6380829421964,44.961545839233
+"24",15,1,1,1,"Non-communicable","Black","Female","Iowa",1969,"West North Central","Midwest","IA",83.9945493656095,108.117142579409,140.74130683394,109.007776444817
+"25",15,2,0,0,"All other causes","White","Male","Iowa",1970,"West North Central","Midwest","IA",113.565437537684,117.670551483132,121.959852592369,117.62417282101
+"26",15,2,0,0,"Cancers","White","Male","Iowa",1970,"West North Central","Midwest","IA",230.760926249005,236.027545428984,241.506898799604,235.990762852859
+"27",15,2,0,0,"Cardiovascular","White","Male","Iowa",1970,"West North Central","Midwest","IA",834.669510473381,850.770638900463,866.680718973923,850.484244769414
+"28",15,2,0,0,"Communicable","White","Male","Iowa",1970,"West North Central","Midwest","IA",56.3882474197233,59.9850861956393,64.3254705723954,60.0813367412137
+"29",15,2,0,0,"Injuries","White","Male","Iowa",1970,"West North Central","Midwest","IA",108.067788923421,111.868865727011,115.589441856611,111.8841289514
+"30",15,2,0,0,"Non-communicable","White","Male","Iowa",1970,"West North Central","Midwest","IA",89.5111574713651,92.8625029110156,96.3986414259822,92.829355612403
+"31",15,2,0,1,"All other causes","White","Female","Iowa",1970,"West North Central","Midwest","IA",81.2497748464646,84.0197554855272,87.3067815982811,84.057570028695
+"32",15,2,0,1,"Cancers","White","Female","Iowa",1970,"West North Central","Midwest","IA",151.755067675182,155.240869844615,158.66706259046,155.238151446249
+"33",15,2,0,1,"Cardiovascular","White","Female","Iowa",1970,"West North Central","Midwest","IA",505.182827283374,515.243553911245,525.006005152233,515.007113556566
+"34",15,2,0,1,"Communicable","White","Female","Iowa",1970,"West North Central","Midwest","IA",31.7626136342532,33.8107376436215,35.8876195518451,33.8226003155225
+"35",15,2,0,1,"Injuries","White","Female","Iowa",1970,"West North Central","Midwest","IA",40.4613174846868,42.1642800873518,44.2329507632686,42.2029501712348
+"36",15,2,0,1,"Non-communicable","White","Female","Iowa",1970,"West North Central","Midwest","IA",39.6736448928692,41.3917965862309,43.3186691970287,41.4017193629204
+"37",15,2,1,0,"All other causes","Black","Male","Iowa",1970,"West North Central","Midwest","IA",160.310442675491,187.976525163714,226.362437878015,189.452710161718
+"38",15,2,1,0,"Cancers","Black","Male","Iowa",1970,"West North Central","Midwest","IA",277.285409138271,346.189344227124,437.475339348448,349.225556529866
+"39",15,2,1,0,"Cardiovascular","Black","Male","Iowa",1970,"West North Central","Midwest","IA",830.040417027494,946.989226174123,1086.16036401538,947.766123126389
+"40",15,2,1,0,"Communicable","Black","Male","Iowa",1970,"West North Central","Midwest","IA",74.4965433980624,105.805139921156,160.674511205401,109.392991938395
+"41",15,2,1,0,"Injuries","Black","Male","Iowa",1970,"West North Central","Midwest","IA",167.370726149788,209.620368800633,272.809772926043,212.924164901699
+"42",15,2,1,0,"Non-communicable","Black","Male","Iowa",1970,"West North Central","Midwest","IA",103.769908922162,126.690301750253,161.788364642635,128.713306729362
+"43",15,2,1,1,"All other causes","Black","Female","Iowa",1970,"West North Central","Midwest","IA",127.629253783308,152.792227820525,189.208887436996,154.346074862445
+"44",15,2,1,1,"Cancers","Black","Female","Iowa",1970,"West North Central","Midwest","IA",172.179114351065,211.906645038478,293.014846842311,217.428035705517
+"45",15,2,1,1,"Cardiovascular","Black","Female","Iowa",1970,"West North Central","Midwest","IA",595.859670365073,683.708003942317,790.918141996538,686.558063138903
+"46",15,2,1,1,"Communicable","Black","Female","Iowa",1970,"West North Central","Midwest","IA",39.2679710210114,53.1420407497162,73.1561671817819,53.873350823555
+"47",15,2,1,1,"Injuries","Black","Female","Iowa",1970,"West North Central","Midwest","IA",36.3430663037475,44.2973400727017,55.7111608347012,44.6230541072104
+"48",15,2,1,1,"Non-communicable","Black","Female","Iowa",1970,"West North Central","Midwest","IA",82.5435652617705,105.9925768226,136.10186537436,106.874546869626
+"49",15,3,0,0,"All other causes","White","Male","Iowa",1971,"West North Central","Midwest","IA",111.578486936682,115.081309468745,118.753294509438,115.109252751794
+"50",15,3,0,0,"Cancers","White","Male","Iowa",1971,"West North Central","Midwest","IA",232.310888856976,237.35352249954,243.003554535278,237.373867179843
+"51",15,3,0,0,"Cardiovascular","White","Male","Iowa",1971,"West North Central","Midwest","IA",831.199141849386,846.340606102311,861.493091568116,846.533387117806
+"52",15,3,0,0,"Communicable","White","Male","Iowa",1971,"West North Central","Midwest","IA",53.3974956912074,56.6241039133568,59.9391122282085,56.6367501065675
+"53",15,3,0,0,"Injuries","White","Male","Iowa",1971,"West North Central","Midwest","IA",107.645490529724,111.023843841619,114.696057453912,111.020795197424
+"54",15,3,0,0,"Non-communicable","White","Male","Iowa",1971,"West North Central","Midwest","IA",91.4817510680774,94.5618955768969,97.8458972332476,94.5877233090161
+"55",15,3,0,1,"All other causes","White","Female","Iowa",1971,"West North Central","Midwest","IA",78.7234640127399,81.4507045609531,84.4658808636111,81.4818642609414
+"56",15,3,0,1,"Cancers","White","Female","Iowa",1971,"West North Central","Midwest","IA",152.051278371109,155.480962858113,158.55681595719,155.365842723954
+"57",15,3,0,1,"Cardiovascular","White","Female","Iowa",1971,"West North Central","Midwest","IA",497.248192568802,506.641663578874,516.65864510443,506.667347499984
+"58",15,3,0,1,"Communicable","White","Female","Iowa",1971,"West North Central","Midwest","IA",32.2268682770511,34.2028125205949,36.334341738104,34.2113197273341
+"59",15,3,0,1,"Injuries","White","Female","Iowa",1971,"West North Central","Midwest","IA",39.7911713189877,41.4330677277178,43.3447713293682,41.4717500024557
+"60",15,3,0,1,"Non-communicable","White","Female","Iowa",1971,"West North Central","Midwest","IA",39.2739287855673,41.096063288476,42.5351030680784,41.0624591712391
+"61",15,3,1,0,"All other causes","Black","Male","Iowa",1971,"West North Central","Midwest","IA",159.418671036552,186.784028955978,224.537720398872,188.473406154329
+"62",15,3,1,0,"Cancers","Black","Male","Iowa",1971,"West North Central","Midwest","IA",280.456612274838,343.034016785462,430.067395151302,346.444791185501
+"63",15,3,1,0,"Cardiovascular","Black","Male","Iowa",1971,"West North Central","Midwest","IA",819.25887621989,921.402013276574,1056.7391314896,924.378625505682
+"64",15,3,1,0,"Communicable","Black","Male","Iowa",1971,"West North Central","Midwest","IA",74.2316977074146,102.020097932711,145.83359035454,104.48896176132
+"65",15,3,1,0,"Injuries","Black","Male","Iowa",1971,"West North Central","Midwest","IA",167.509880302069,209.192840978416,264.715521887816,211.282784014136
+"66",15,3,1,0,"Non-communicable","Black","Male","Iowa",1971,"West North Central","Midwest","IA",104.419961080466,126.574241304555,156.938169225837,127.953007248574
+"67",15,3,1,1,"All other causes","Black","Female","Iowa",1971,"West North Central","Midwest","IA",125.989439344416,151.182603044334,185.464724336045,152.726111653162
+"68",15,3,1,1,"Cancers","Black","Female","Iowa",1971,"West North Central","Midwest","IA",173.648894482808,210.809312729058,292.284029323482,216.578580346357
+"69",15,3,1,1,"Cardiovascular","Black","Female","Iowa",1971,"West North Central","Midwest","IA",576.221401317141,658.678582913737,755.993685148391,660.501582285397
+"70",15,3,1,1,"Communicable","Black","Female","Iowa",1971,"West North Central","Midwest","IA",39.3481050263052,51.7036968822932,69.0244671435235,52.4512112869462
+"71",15,3,1,1,"Injuries","Black","Female","Iowa",1971,"West North Central","Midwest","IA",35.9208063097149,43.6332776681047,54.1969391751268,44.0950412135696
+"72",15,3,1,1,"Non-communicable","Black","Female","Iowa",1971,"West North Central","Midwest","IA",80.9953798414263,103.765389268315,131.677848733743,104.376779253692
+"73",15,4,0,0,"All other causes","White","Male","Iowa",1972,"West North Central","Midwest","IA",107.762232306247,111.607913966436,115.188204948843,111.597493029615
+"74",15,4,0,0,"Cancers","White","Male","Iowa",1972,"West North Central","Midwest","IA",233.046177494629,238.325554159162,243.42789835076,238.317890283293
+"75",15,4,0,0,"Cardiovascular","White","Male","Iowa",1972,"West North Central","Midwest","IA",834.42461561043,849.631298721752,864.80158757917,849.465449037117
+"76",15,4,0,0,"Communicable","White","Male","Iowa",1972,"West North Central","Midwest","IA",54.7850501631306,58.288010277941,61.8750314847817,58.3060022539768
+"77",15,4,0,0,"Injuries","White","Male","Iowa",1972,"West North Central","Midwest","IA",106.144646526404,109.196540216365,112.537916904758,109.180885611622
+"78",15,4,0,0,"Non-communicable","White","Male","Iowa",1972,"West North Central","Midwest","IA",93.6083018815552,97.0619488030335,100.589258726441,97.0928001253718
+"79",15,4,0,1,"All other causes","White","Female","Iowa",1972,"West North Central","Midwest","IA",78.3055968849038,80.9084801290139,83.7599544470761,80.991233392967
+"80",15,4,0,1,"Cancers","White","Female","Iowa",1972,"West North Central","Midwest","IA",151.909918397298,155.003107007137,158.055156657058,155.014736119507
+"81",15,4,0,1,"Cardiovascular","White","Female","Iowa",1972,"West North Central","Midwest","IA",497.63425675862,507.490345267275,518.022691238657,507.774011593272
+"82",15,4,0,1,"Communicable","White","Female","Iowa",1972,"West North Central","Midwest","IA",33.7688195319402,35.8116390073373,38.1510539836825,35.8756565068828
+"83",15,4,0,1,"Injuries","White","Female","Iowa",1972,"West North Central","Midwest","IA",39.0102140806333,40.5992791455647,42.2582408947575,40.5793917288458
+"84",15,4,0,1,"Non-communicable","White","Female","Iowa",1972,"West North Central","Midwest","IA",38.7358527005718,40.4016096033612,42.1349422337518,40.388497510777
+"85",15,4,1,0,"All other causes","Black","Male","Iowa",1972,"West North Central","Midwest","IA",157.530689938565,184.506331760468,220.885967039142,185.693726067572
+"86",15,4,1,0,"Cancers","Black","Male","Iowa",1972,"West North Central","Midwest","IA",278.995869665377,341.476823270362,425.593551464097,343.341907020542
+"87",15,4,1,0,"Cardiovascular","Black","Male","Iowa",1972,"West North Central","Midwest","IA",789.565698424803,881.341104142211,1002.08194913128,886.793448335941
+"88",15,4,1,0,"Communicable","Black","Male","Iowa",1972,"West North Central","Midwest","IA",71.8807580421446,99.211957551736,138.087381133333,101.239540286894
+"89",15,4,1,0,"Injuries","Black","Male","Iowa",1972,"West North Central","Midwest","IA",167.134685322191,206.486228007205,259.215414958713,208.772398782232
+"90",15,4,1,0,"Non-communicable","Black","Male","Iowa",1972,"West North Central","Midwest","IA",103.935078526583,125.773748214125,155.980023367073,127.306062409514
+"91",15,4,1,1,"All other causes","Black","Female","Iowa",1972,"West North Central","Midwest","IA",127.558290860771,150.50482427081,182.385650541868,151.920187644177
+"92",15,4,1,1,"Cancers","Black","Female","Iowa",1972,"West North Central","Midwest","IA",172.13480027451,208.649885503378,284.058593189343,213.999065818972
+"93",15,4,1,1,"Cardiovascular","Black","Female","Iowa",1972,"West North Central","Midwest","IA",562.467912867589,638.09684873096,723.646596968016,639.89449010281
+"94",15,4,1,1,"Communicable","Black","Female","Iowa",1972,"West North Central","Midwest","IA",39.6814724600318,50.6241588716042,67.7749499283939,51.514554009883
+"95",15,4,1,1,"Injuries","Black","Female","Iowa",1972,"West North Central","Midwest","IA",35.7541298883611,43.0694437626642,52.8882056430311,43.5150527446098
+"96",15,4,1,1,"Non-communicable","Black","Female","Iowa",1972,"West North Central","Midwest","IA",79.1726248770078,101.393546844685,126.851629408954,101.929970432447
+"97",15,5,0,0,"All other causes","White","Male","Iowa",1973,"West North Central","Midwest","IA",106.014147562827,109.845600020416,113.467399361298,109.79211035771
+"98",15,5,0,0,"Cancers","White","Male","Iowa",1973,"West North Central","Midwest","IA",236.737664662639,241.832669453385,247.13039384115,241.907715961492
+"99",15,5,0,0,"Cardiovascular","White","Male","Iowa",1973,"West North Central","Midwest","IA",793.644881374186,807.860580015134,823.865806130482,808.078226820637
+"100",15,5,0,0,"Communicable","White","Male","Iowa",1973,"West North Central","Midwest","IA",55.1494247049555,58.4939980068244,62.1441433896946,58.5286399834378
+"101",15,5,0,0,"Injuries","White","Male","Iowa",1973,"West North Central","Midwest","IA",104.068558818291,107.145569097415,110.574606832773,107.229941908078
+"102",15,5,0,0,"Non-communicable","White","Male","Iowa",1973,"West North Central","Midwest","IA",93.9025902423412,97.1420457778793,100.608700589956,97.1390958610395
+"103",15,5,0,1,"All other causes","White","Female","Iowa",1973,"West North Central","Midwest","IA",76.1832969987366,78.7648688399904,81.5630780537985,78.8223416065446
+"104",15,5,0,1,"Cancers","White","Female","Iowa",1973,"West North Central","Midwest","IA",151.097752273139,154.021938181983,157.307864796686,154.049225070724
+"105",15,5,0,1,"Cardiovascular","White","Female","Iowa",1973,"West North Central","Midwest","IA",477.412603121686,486.430348461305,495.563696900737,486.510659497401
+"106",15,5,0,1,"Communicable","White","Female","Iowa",1973,"West North Central","Midwest","IA",33.3941382086877,35.5052980494856,37.5169881687552,35.5073987354284
+"107",15,5,0,1,"Injuries","White","Female","Iowa",1973,"West North Central","Midwest","IA",37.8970066940275,39.2199989848436,40.9138371976386,39.2862524219369
+"108",15,5,0,1,"Non-communicable","White","Female","Iowa",1973,"West North Central","Midwest","IA",38.22889782706,39.9268404087761,41.7510125909125,39.9591598254853
+"109",15,5,1,0,"All other causes","Black","Male","Iowa",1973,"West North Central","Midwest","IA",156.100495025721,181.640042702164,217.508907816294,183.441974423039
+"110",15,5,1,0,"Cancers","Black","Male","Iowa",1973,"West North Central","Midwest","IA",278.345650735706,338.359762735507,419.285347663127,341.057545073476
+"111",15,5,1,0,"Cardiovascular","Black","Male","Iowa",1973,"West North Central","Midwest","IA",771.791122374637,860.048966135835,986.058048366523,863.196579963289
+"112",15,5,1,0,"Communicable","Black","Male","Iowa",1973,"West North Central","Midwest","IA",72.5953439698093,98.5336113807184,140.116932635606,100.603202772693
+"113",15,5,1,0,"Injuries","Black","Male","Iowa",1973,"West North Central","Midwest","IA",167.396811535287,203.370702024863,250.190207223828,204.972535892978
+"114",15,5,1,0,"Non-communicable","Black","Male","Iowa",1973,"West North Central","Midwest","IA",104.571274923028,125.071161964704,151.806069608583,126.948161124558
+"115",15,5,1,1,"All other causes","Black","Female","Iowa",1973,"West North Central","Midwest","IA",127.687575201195,149.959363191761,178.964130302739,150.765999067734
+"116",15,5,1,1,"Cancers","Black","Female","Iowa",1973,"West North Central","Midwest","IA",170.689343142527,206.426747587644,272.24604139983,210.957459202495
+"117",15,5,1,1,"Cardiovascular","Black","Female","Iowa",1973,"West North Central","Midwest","IA",545.814890191592,620.250318854385,697.808835623153,620.967117840088
+"118",15,5,1,1,"Communicable","Black","Female","Iowa",1973,"West North Central","Midwest","IA",38.9478405393468,50.6699512302347,66.7873842702863,51.2076111698534
+"119",15,5,1,1,"Injuries","Black","Female","Iowa",1973,"West North Central","Midwest","IA",35.2799357595935,42.6491527124831,51.9324117541644,42.960071232963
+"120",15,5,1,1,"Non-communicable","Black","Female","Iowa",1973,"West North Central","Midwest","IA",77.4545387826534,98.8794302635388,123.810066814702,99.397043940617
+"121",15,6,0,0,"All other causes","White","Male","Iowa",1974,"West North Central","Midwest","IA",102.15274922184,105.521678365717,108.937395788885,105.525580054514
+"122",15,6,0,0,"Cancers","White","Male","Iowa",1974,"West North Central","Midwest","IA",239.577634117696,244.601823990479,249.948127758162,244.734050763565
+"123",15,6,0,0,"Cardiovascular","White","Male","Iowa",1974,"West North Central","Midwest","IA",773.700141423202,787.978505530027,803.107361275866,787.963164698105
+"124",15,6,0,0,"Communicable","White","Male","Iowa",1974,"West North Central","Midwest","IA",55.4920572984902,58.6692523920671,61.9870567303429,58.685554830078
+"125",15,6,0,0,"Injuries","White","Male","Iowa",1974,"West North Central","Midwest","IA",99.4568717439359,102.63987418349,106.049492692761,102.643094902957
+"126",15,6,0,0,"Non-communicable","White","Male","Iowa",1974,"West North Central","Midwest","IA",93.8091938762717,96.9747264519212,100.182372510298,96.9747561661395
+"127",15,6,0,1,"All other causes","White","Female","Iowa",1974,"West North Central","Midwest","IA",74.1032179837371,76.5173132390587,79.1268756889266,76.5057548773045
+"128",15,6,0,1,"Cancers","White","Female","Iowa",1974,"West North Central","Midwest","IA",150.160586174142,153.408213375199,156.376984838704,153.360056430938
+"129",15,6,0,1,"Cardiovascular","White","Female","Iowa",1974,"West North Central","Midwest","IA",456.898234325325,465.290727360607,474.299805143682,465.364550152547
+"130",15,6,0,1,"Communicable","White","Female","Iowa",1974,"West North Central","Midwest","IA",31.3998632178939,33.4095818657528,35.3850841109328,33.4148625544393
+"131",15,6,0,1,"Injuries","White","Female","Iowa",1974,"West North Central","Midwest","IA",36.1137654343184,37.5468286385329,39.0166136318426,37.5551947895516
+"132",15,6,0,1,"Non-communicable","White","Female","Iowa",1974,"West North Central","Midwest","IA",37.7176097926165,39.3249707396075,40.9787846604827,39.3271802128686
+"133",15,6,1,0,"All other causes","Black","Male","Iowa",1974,"West North Central","Midwest","IA",156.478129220609,181.562471389624,215.657858330265,183.055660231388
+"134",15,6,1,0,"Cancers","Black","Male","Iowa",1974,"West North Central","Midwest","IA",273.156822058476,337.383592957286,415.609438210857,339.052835810249
+"135",15,6,1,0,"Cardiovascular","Black","Male","Iowa",1974,"West North Central","Midwest","IA",746.24339122378,833.3232616988,954.190129775836,837.753825506196
+"136",15,6,1,0,"Communicable","Black","Male","Iowa",1974,"West North Central","Midwest","IA",72.0482637536602,96.3722545773062,138.530610632179,98.3372715971122
+"137",15,6,1,0,"Injuries","Black","Male","Iowa",1974,"West North Central","Midwest","IA",164.967570125235,199.799917309565,242.812410779056,200.812241696911
+"138",15,6,1,0,"Non-communicable","Black","Male","Iowa",1974,"West North Central","Midwest","IA",104.484505642324,124.781033290855,150.022051683993,126.181486100591
+"139",15,6,1,1,"All other causes","Black","Female","Iowa",1974,"West North Central","Midwest","IA",126.623351025963,148.489950096252,177.501318206118,149.666923573627
+"140",15,6,1,1,"Cancers","Black","Female","Iowa",1974,"West North Central","Midwest","IA",170.40636717692,204.601712803551,266.83359179973,208.971905832356
+"141",15,6,1,1,"Cardiovascular","Black","Female","Iowa",1974,"West North Central","Midwest","IA",530.22491850103,601.574338071288,679.136912250049,602.691997399497
+"142",15,6,1,1,"Communicable","Black","Female","Iowa",1974,"West North Central","Midwest","IA",38.9485707781705,49.549688773164,65.6978357542343,50.5360683736948
+"143",15,6,1,1,"Injuries","Black","Female","Iowa",1974,"West North Central","Midwest","IA",35.2811019283917,42.0813702217336,50.4634205594109,42.3909650509409
+"144",15,6,1,1,"Non-communicable","Black","Female","Iowa",1974,"West North Central","Midwest","IA",77.9129636663746,97.8203659684832,120.618576557066,97.9915284466653
+"145",15,7,0,0,"All other causes","White","Male","Iowa",1975,"West North Central","Midwest","IA",99.7023445921417,103.102441544007,106.248245971216,103.068887709346
+"146",15,7,0,0,"Cancers","White","Male","Iowa",1975,"West North Central","Midwest","IA",240.850786063851,246.410195321111,251.843123550398,246.361524746307
+"147",15,7,0,0,"Cardiovascular","White","Male","Iowa",1975,"West North Central","Midwest","IA",740.401566206767,753.341307328052,768.187034795128,753.735172585081
+"148",15,7,0,0,"Communicable","White","Male","Iowa",1975,"West North Central","Midwest","IA",57.2210157663702,60.5063283513174,64.1150907643626,60.5244598324146
+"149",15,7,0,0,"Injuries","White","Male","Iowa",1975,"West North Central","Midwest","IA",95.6500369592584,98.5549746550097,101.855518827689,98.5968129575524
+"150",15,7,0,0,"Non-communicable","White","Male","Iowa",1975,"West North Central","Midwest","IA",94.0432227281601,97.4536835835825,100.512770820943,97.3861666415896
+"151",15,7,0,1,"All other causes","White","Female","Iowa",1975,"West North Central","Midwest","IA",71.4683869561088,73.8624734931713,76.3831836540691,73.809558245993
+"152",15,7,0,1,"Cancers","White","Female","Iowa",1975,"West North Central","Midwest","IA",149.583341083074,152.648036508757,155.712198327499,152.664898401289
+"153",15,7,0,1,"Cardiovascular","White","Female","Iowa",1975,"West North Central","Midwest","IA",426.66774160672,434.304072958131,442.654063198202,434.349917585876
+"154",15,7,0,1,"Communicable","White","Female","Iowa",1975,"West North Central","Midwest","IA",32.0307992163907,33.9860698156389,36.0177800030034,33.9992189745308
+"155",15,7,0,1,"Injuries","White","Female","Iowa",1975,"West North Central","Midwest","IA",34.5663747089726,35.9187966730394,37.2717127643925,35.9083580657436
+"156",15,7,0,1,"Non-communicable","White","Female","Iowa",1975,"West North Central","Midwest","IA",37.8108095806203,39.4037312257837,41.0496841267094,39.4168903407853
+"157",15,7,1,0,"All other causes","Black","Male","Iowa",1975,"West North Central","Midwest","IA",157.518872256313,181.927269982361,213.918506919306,183.411578705468
+"158",15,7,1,0,"Cancers","Black","Male","Iowa",1975,"West North Central","Midwest","IA",277.414428621628,335.776455121765,413.283870591806,337.900810069042
+"159",15,7,1,0,"Cardiovascular","Black","Male","Iowa",1975,"West North Central","Midwest","IA",719.501353222483,806.800406604242,916.167923431273,809.669668796637
+"160",15,7,1,0,"Communicable","Black","Male","Iowa",1975,"West North Central","Midwest","IA",69.6706125077813,93.7175167255954,133.04662904232,95.7131738874442
+"161",15,7,1,0,"Injuries","Black","Male","Iowa",1975,"West North Central","Midwest","IA",161.189905667002,195.020482105298,235.038362625922,195.666742268146
+"162",15,7,1,0,"Non-communicable","Black","Male","Iowa",1975,"West North Central","Midwest","IA",103.756850594555,124.601294092729,147.769652681836,125.350466411847
+"163",15,7,1,1,"All other causes","Black","Female","Iowa",1975,"West North Central","Midwest","IA",124.171393899424,146.220244382752,173.871999441836,147.498237558904
+"164",15,7,1,1,"Cancers","Black","Female","Iowa",1975,"West North Central","Midwest","IA",168.969355335913,202.758734456332,260.825825232466,207.084463731236
+"165",15,7,1,1,"Cardiovascular","Black","Female","Iowa",1975,"West North Central","Midwest","IA",517.910436026182,586.909479363374,658.283750945205,586.665378102619
+"166",15,7,1,1,"Communicable","Black","Female","Iowa",1975,"West North Central","Midwest","IA",38.4985084231761,48.9989015658082,65.2800197637387,49.6746633335148
+"167",15,7,1,1,"Injuries","Black","Female","Iowa",1975,"West North Central","Midwest","IA",34.9581656954974,41.6698532884397,49.6666801804795,41.942734881688
+"168",15,7,1,1,"Non-communicable","Black","Female","Iowa",1975,"West North Central","Midwest","IA",77.8985745666719,96.2990533793902,119.414231099525,96.7389396874069
+"169",15,8,0,0,"All other causes","White","Male","Iowa",1976,"West North Central","Midwest","IA",97.739379540692,100.926602080341,104.139775801599,100.880196005051
+"170",15,8,0,0,"Cancers","White","Male","Iowa",1976,"West North Central","Midwest","IA",242.339664245471,247.651778572561,253.291966126471,247.740447219927
+"171",15,8,0,0,"Cardiovascular","White","Male","Iowa",1976,"West North Central","Midwest","IA",706.059601720495,719.261676949614,732.157494269254,719.296117623859
+"172",15,8,0,0,"Communicable","White","Male","Iowa",1976,"West North Central","Midwest","IA",54.1644363346522,57.6658259553635,61.290918122941,57.6517696488747
+"173",15,8,0,0,"Injuries","White","Male","Iowa",1976,"West North Central","Midwest","IA",92.8270855804293,95.6242328184384,98.4895009127517,95.6521443396566
+"174",15,8,0,0,"Non-communicable","White","Male","Iowa",1976,"West North Central","Midwest","IA",93.597689565088,96.6942854292439,99.9898033591654,96.7111461939185
+"175",15,8,0,1,"All other causes","White","Female","Iowa",1976,"West North Central","Midwest","IA",69.319197861206,71.8659059730743,74.3393137567742,71.840677817275
+"176",15,8,0,1,"Cancers","White","Female","Iowa",1976,"West North Central","Midwest","IA",149.730255902732,152.740152206252,155.619756001461,152.718345316043
+"177",15,8,0,1,"Cardiovascular","White","Female","Iowa",1976,"West North Central","Midwest","IA",415.378563366619,423.369639123782,431.718128240341,423.40531182597
+"178",15,8,0,1,"Communicable","White","Female","Iowa",1976,"West North Central","Midwest","IA",33.3839985897055,35.2559527820817,37.485345405535,35.3392243348012
+"179",15,8,0,1,"Injuries","White","Female","Iowa",1976,"West North Central","Midwest","IA",33.156940037096,34.5304516325093,35.8242070435369,34.5350697070703
+"180",15,8,0,1,"Non-communicable","White","Female","Iowa",1976,"West North Central","Midwest","IA",37.4568077932214,38.922544349803,40.6872837451501,38.9606377496391
+"181",15,8,1,0,"All other causes","Black","Male","Iowa",1976,"West North Central","Midwest","IA",160.128761787903,182.423434619573,215.139358863771,184.223753583991
+"182",15,8,1,0,"Cancers","Black","Male","Iowa",1976,"West North Central","Midwest","IA",277.310906146304,332.932182432542,412.385969981808,336.573246966802
+"183",15,8,1,0,"Cardiovascular","Black","Male","Iowa",1976,"West North Central","Midwest","IA",699.46101360499,784.759223226942,887.749096590898,786.057116483702
+"184",15,8,1,0,"Communicable","Black","Male","Iowa",1976,"West North Central","Midwest","IA",68.3275116091318,91.5943406936552,130.316103499207,92.9672896983536
+"185",15,8,1,0,"Injuries","Black","Male","Iowa",1976,"West North Central","Midwest","IA",158.913204204247,189.704122706169,229.973945456792,190.646336627325
+"186",15,8,1,0,"Non-communicable","Black","Male","Iowa",1976,"West North Central","Midwest","IA",103.52822981091,124.498128560385,147.039394888693,125.172477711543
+"187",15,8,1,1,"All other causes","Black","Female","Iowa",1976,"West North Central","Midwest","IA",124.314648586904,144.316274935255,170.92798031962,145.539333775251
+"188",15,8,1,1,"Cancers","Black","Female","Iowa",1976,"West North Central","Midwest","IA",168.979958280767,201.608034279218,258.149565285579,204.902316947488
+"189",15,8,1,1,"Cardiovascular","Black","Female","Iowa",1976,"West North Central","Midwest","IA",510.120014394735,576.386675378299,647.981053650405,577.456393962928
+"190",15,8,1,1,"Communicable","Black","Female","Iowa",1976,"West North Central","Midwest","IA",37.681187254824,47.5803973105311,62.5891650436803,48.282681713024
+"191",15,8,1,1,"Injuries","Black","Female","Iowa",1976,"West North Central","Midwest","IA",34.7588924991997,41.0484043400572,49.1745199324996,41.4280441115024
+"192",15,8,1,1,"Non-communicable","Black","Female","Iowa",1976,"West North Central","Midwest","IA",76.8099399168277,95.6671379391099,118.654091451649,96.0063047712627
+"193",15,9,0,0,"All other causes","White","Male","Iowa",1977,"West North Central","Midwest","IA",95.2156791846374,98.3057990753737,101.399127281776,98.2584598298597
+"194",15,9,0,0,"Cancers","White","Male","Iowa",1977,"West North Central","Midwest","IA",240.140653481289,245.548897775486,250.75132414716,245.55446853417
+"195",15,9,0,0,"Cardiovascular","White","Male","Iowa",1977,"West North Central","Midwest","IA",685.946717628105,699.42096188787,713.523152125701,699.558137788838
+"196",15,9,0,0,"Communicable","White","Male","Iowa",1977,"West North Central","Midwest","IA",49.6117160065743,52.4971969809205,55.7216078762943,52.5400250220208
+"197",15,9,0,0,"Injuries","White","Male","Iowa",1977,"West North Central","Midwest","IA",89.4307559627148,92.3766705046927,95.2197342326198,92.3820664713938
+"198",15,9,0,0,"Non-communicable","White","Male","Iowa",1977,"West North Central","Midwest","IA",92.8611697573378,95.9018008855575,99.3227073031191,95.8901277584436
+"199",15,9,0,1,"All other causes","White","Female","Iowa",1977,"West North Central","Midwest","IA",66.8298566791873,69.0356205416832,71.3935840005502,69.0724961717018
+"200",15,9,0,1,"Cancers","White","Female","Iowa",1977,"West North Central","Midwest","IA",149.589114958076,152.611605674992,155.593369041268,152.61072439824
+"201",15,9,0,1,"Cardiovascular","White","Female","Iowa",1977,"West North Central","Midwest","IA",398.339912600768,406.150159176478,414.269665882415,406.220996083699
+"202",15,9,0,1,"Communicable","White","Female","Iowa",1977,"West North Central","Midwest","IA",28.8304270643824,30.675074939676,32.4941231356518,30.6902853843545
+"203",15,9,0,1,"Injuries","White","Female","Iowa",1977,"West North Central","Midwest","IA",31.9271181072283,33.2481451258928,34.604371616281,33.2668010985915
+"204",15,9,0,1,"Non-communicable","White","Female","Iowa",1977,"West North Central","Midwest","IA",36.4249576204508,38.0382867299494,39.7720875017702,38.0545325113844
+"205",15,9,1,0,"All other causes","Black","Male","Iowa",1977,"West North Central","Midwest","IA",159.394186903096,181.338414460985,212.693342042135,183.853595911249
+"206",15,9,1,0,"Cancers","Black","Male","Iowa",1977,"West North Central","Midwest","IA",281.422389454159,333.860233759773,401.27584062565,337.101519510073
+"207",15,9,1,0,"Cardiovascular","Black","Male","Iowa",1977,"West North Central","Midwest","IA",680.060319499322,766.722968475236,861.327656667131,766.276051815014
+"208",15,9,1,0,"Communicable","Black","Male","Iowa",1977,"West North Central","Midwest","IA",66.2908490862926,86.8660928912683,117.172529645763,88.0597359495302
+"209",15,9,1,0,"Injuries","Black","Male","Iowa",1977,"West North Central","Midwest","IA",153.761180698323,182.995637284042,218.832665080836,184.259154659803
+"210",15,9,1,0,"Non-communicable","Black","Male","Iowa",1977,"West North Central","Midwest","IA",104.465377559726,124.577428701928,146.451171726565,124.961338677135
+"211",15,9,1,1,"All other causes","Black","Female","Iowa",1977,"West North Central","Midwest","IA",122.758491867312,142.525346480327,167.512476684247,143.481982117404
+"212",15,9,1,1,"Cancers","Black","Female","Iowa",1977,"West North Central","Midwest","IA",169.516131813944,199.991766008682,251.37184713161,202.784648035317
+"213",15,9,1,1,"Cardiovascular","Black","Female","Iowa",1977,"West North Central","Midwest","IA",491.519376178944,554.660631617932,621.138630785078,555.543671865468
+"214",15,9,1,1,"Communicable","Black","Female","Iowa",1977,"West North Central","Midwest","IA",37.2197391200031,46.6407458908176,62.0287879497438,47.4860717969158
+"215",15,9,1,1,"Injuries","Black","Female","Iowa",1977,"West North Central","Midwest","IA",34.3189318961217,40.3625554151976,48.6324789199728,40.7605279692385
+"216",15,9,1,1,"Non-communicable","Black","Female","Iowa",1977,"West North Central","Midwest","IA",76.922445309974,94.9544455718037,118.872393226801,95.5681710521621
+"217",15,10,0,0,"All other causes","White","Male","Iowa",1978,"West North Central","Midwest","IA",92.5237044075143,95.6198291862608,98.7299250435659,95.6456380514583
+"218",15,10,0,0,"Cancers","White","Male","Iowa",1978,"West North Central","Midwest","IA",242.214748155411,247.152979573865,252.517027046807,247.264136115265
+"219",15,10,0,0,"Cardiovascular","White","Male","Iowa",1978,"West North Central","Midwest","IA",676.504008623956,689.330320645819,701.097960557768,689.169087881328
+"220",15,10,0,0,"Communicable","White","Male","Iowa",1978,"West North Central","Midwest","IA",51.9697513061271,55.2201729160679,58.8715091855441,55.2498513398792
+"221",15,10,0,0,"Injuries","White","Male","Iowa",1978,"West North Central","Midwest","IA",87.2378753539674,89.8160872455487,92.7182956270366,89.833771317866
+"222",15,10,0,0,"Non-communicable","White","Male","Iowa",1978,"West North Central","Midwest","IA",92.377103512304,95.5293735283125,98.6746058413674,95.5205546247427
+"223",15,10,0,1,"All other causes","White","Female","Iowa",1978,"West North Central","Midwest","IA",65.9004842871382,68.2449930990326,70.5257372375244,68.2600169358822
+"224",15,10,0,1,"Cancers","White","Female","Iowa",1978,"West North Central","Midwest","IA",149.648397451225,152.76439870361,155.831460997861,152.744539384743
+"225",15,10,0,1,"Cardiovascular","White","Female","Iowa",1978,"West North Central","Midwest","IA",392.94736070014,401.067431264862,408.633056040939,401.074195560623
+"226",15,10,0,1,"Communicable","White","Female","Iowa",1978,"West North Central","Midwest","IA",28.3227041276499,30.056869308569,31.8518372279937,30.0655765217026
+"227",15,10,0,1,"Injuries","White","Female","Iowa",1978,"West North Central","Midwest","IA",31.500881571514,32.6905860339707,34.0213649666698,32.7124172329955
+"228",15,10,0,1,"Non-communicable","White","Female","Iowa",1978,"West North Central","Midwest","IA",36.3696527602179,37.942234156149,39.5264713127881,37.9306538232249
+"229",15,10,1,0,"All other causes","Black","Male","Iowa",1978,"West North Central","Midwest","IA",160.585015586602,181.863395217727,212.515816023488,184.060587365215
+"230",15,10,1,0,"Cancers","Black","Male","Iowa",1978,"West North Central","Midwest","IA",285.445667169417,339.674762074852,405.951186401691,340.699432335677
+"231",15,10,1,0,"Cardiovascular","Black","Male","Iowa",1978,"West North Central","Midwest","IA",658.530769422086,748.922835416523,853.135091775948,749.358255012269
+"232",15,10,1,0,"Communicable","Black","Male","Iowa",1978,"West North Central","Midwest","IA",65.4372520605163,84.8586734083411,109.441379079554,85.4713367721176
+"233",15,10,1,0,"Injuries","Black","Male","Iowa",1978,"West North Central","Midwest","IA",147.248363240281,176.043562435979,211.150683778158,177.020595075923
+"234",15,10,1,0,"Non-communicable","Black","Male","Iowa",1978,"West North Central","Midwest","IA",103.834920187867,123.548908458348,146.332144835268,124.496953633856
+"235",15,10,1,1,"All other causes","Black","Female","Iowa",1978,"West North Central","Midwest","IA",121.252995718653,140.520068469825,165.832099408701,141.847954843778
+"236",15,10,1,1,"Cancers","Black","Female","Iowa",1978,"West North Central","Midwest","IA",168.650038321543,198.429950061237,246.862961727427,200.48642933692
+"237",15,10,1,1,"Cardiovascular","Black","Female","Iowa",1978,"West North Central","Midwest","IA",479.899217919171,542.608831397802,610.386437629837,544.064343928851
+"238",15,10,1,1,"Communicable","Black","Female","Iowa",1978,"West North Central","Midwest","IA",36.9667125770708,46.3474958137833,59.9190973370107,46.6511321260457
+"239",15,10,1,1,"Injuries","Black","Female","Iowa",1978,"West North Central","Midwest","IA",33.7196041926628,39.9641645595582,48.0205469199266,40.330310835289
+"240",15,10,1,1,"Non-communicable","Black","Female","Iowa",1978,"West North Central","Midwest","IA",76.3808413034745,94.2295447885018,119.452770576827,94.8288626362543
+"241",15,11,0,0,"All other causes","White","Male","Iowa",1979,"West North Central","Midwest","IA",92.2432769984111,95.39188004944,98.672303123307,95.4369257199403
+"242",15,11,0,0,"Cancers","White","Male","Iowa",1979,"West North Central","Midwest","IA",244.835691658073,249.834579484829,255.639744735538,249.951213825707
+"243",15,11,0,0,"Cardiovascular","White","Male","Iowa",1979,"West North Central","Midwest","IA",654.614968622894,668.392848125115,681.618668445796,668.40920064525
+"244",15,11,0,0,"Communicable","White","Male","Iowa",1979,"West North Central","Midwest","IA",46.3021516789324,49.4976641173568,52.9001660800665,49.5596729125869
+"245",15,11,0,0,"Injuries","White","Male","Iowa",1979,"West North Central","Midwest","IA",85.4345594655313,88.1643708146596,90.942829121428,88.1652335694899
+"246",15,11,0,0,"Non-communicable","White","Male","Iowa",1979,"West North Central","Midwest","IA",91.0871318572015,94.3800391356414,97.5868489781042,94.3624956279679
+"247",15,11,0,1,"All other causes","White","Female","Iowa",1979,"West North Central","Midwest","IA",65.198113385474,67.4923052618677,69.9057260365819,67.554410650582
+"248",15,11,0,1,"Cancers","White","Female","Iowa",1979,"West North Central","Midwest","IA",150.257195777898,153.536722262768,156.709295481721,153.505302426435
+"249",15,11,0,1,"Cardiovascular","White","Female","Iowa",1979,"West North Central","Midwest","IA",382.0085288132,389.358749834734,397.21548119671,389.398896761376
+"250",15,11,0,1,"Communicable","White","Female","Iowa",1979,"West North Central","Midwest","IA",26.9425749795259,28.5117299820489,30.2600755631888,28.5274870284984
+"251",15,11,0,1,"Injuries","White","Female","Iowa",1979,"West North Central","Midwest","IA",30.5853008072238,31.8411667019938,33.1888451244648,31.8453039364217
+"252",15,11,0,1,"Non-communicable","White","Female","Iowa",1979,"West North Central","Midwest","IA",36.111961402411,37.7839022806703,39.3098119023227,37.7797348392228
+"253",15,11,1,0,"All other causes","Black","Male","Iowa",1979,"West North Central","Midwest","IA",161.604018565988,182.588150673706,214.805788881848,185.299131437982
+"254",15,11,1,0,"Cancers","Black","Male","Iowa",1979,"West North Central","Midwest","IA",289.393217381224,344.369265916478,413.17099168334,345.303905435143
+"255",15,11,1,0,"Cardiovascular","Black","Male","Iowa",1979,"West North Central","Midwest","IA",643.077062800449,723.727707129429,822.228497957756,727.526925973484
+"256",15,11,1,0,"Communicable","Black","Male","Iowa",1979,"West North Central","Midwest","IA",63.6641768070018,81.4648867882196,105.522279567795,82.260802930798
+"257",15,11,1,0,"Injuries","Black","Male","Iowa",1979,"West North Central","Midwest","IA",141.815563654298,169.623183463731,204.562084121004,170.000663823013
+"258",15,11,1,0,"Non-communicable","Black","Male","Iowa",1979,"West North Central","Midwest","IA",102.86651732,122.775284336511,144.101939180389,123.628688341805
+"259",15,11,1,1,"All other causes","Black","Female","Iowa",1979,"West North Central","Midwest","IA",119.791208965731,139.199435297815,164.179975495733,140.188803521507
+"260",15,11,1,1,"Cancers","Black","Female","Iowa",1979,"West North Central","Midwest","IA",166.716582711539,196.869526352861,242.539952267753,198.344051252945
+"261",15,11,1,1,"Cardiovascular","Black","Female","Iowa",1979,"West North Central","Midwest","IA",473.84285756928,531.849089637405,596.746438227027,531.404636850264
+"262",15,11,1,1,"Communicable","Black","Female","Iowa",1979,"West North Central","Midwest","IA",36.454314418252,45.9209988063313,60.914061481554,46.5226721917531
+"263",15,11,1,1,"Injuries","Black","Female","Iowa",1979,"West North Central","Midwest","IA",33.6007384598502,39.605957247966,47.2545376379383,39.9143810206096
+"264",15,11,1,1,"Non-communicable","Black","Female","Iowa",1979,"West North Central","Midwest","IA",76.5311110723999,94.6272697217374,117.416895476791,95.2058886384902
+"265",15,12,0,0,"All other causes","White","Male","Iowa",1980,"West North Central","Midwest","IA",92.7132174053332,95.9154200409813,99.1060709169682,95.8934913329914
+"266",15,12,0,0,"Cancers","White","Male","Iowa",1980,"West North Central","Midwest","IA",245.462182410657,250.318782938212,256.029013870386,250.468072505297
+"267",15,12,0,0,"Cardiovascular","White","Male","Iowa",1980,"West North Central","Midwest","IA",639.348075608934,651.590119400569,664.824890181088,651.672607403422
+"268",15,12,0,0,"Communicable","White","Male","Iowa",1980,"West North Central","Midwest","IA",49.6462329653438,52.8039897063355,56.2986993447292,52.8394863878807
+"269",15,12,0,0,"Injuries","White","Male","Iowa",1980,"West North Central","Midwest","IA",82.8436045679993,85.35338390882,88.1207501553906,85.380627020808
+"270",15,12,0,0,"Non-communicable","White","Male","Iowa",1980,"West North Central","Midwest","IA",92.9775122523378,96.2859538257638,99.7014389929972,96.2670215232677
+"271",15,12,0,1,"All other causes","White","Female","Iowa",1980,"West North Central","Midwest","IA",65.2635886440996,67.4826223785058,69.9599661895628,67.5214324345525
+"272",15,12,0,1,"Cancers","White","Female","Iowa",1980,"West North Central","Midwest","IA",150.141696924546,153.331598453247,156.56688562935,153.357597211781
+"273",15,12,0,1,"Cardiovascular","White","Female","Iowa",1980,"West North Central","Midwest","IA",373.664677023248,380.407205578532,387.787976948601,380.534997682303
+"274",15,12,0,1,"Communicable","White","Female","Iowa",1980,"West North Central","Midwest","IA",29.0262708143457,30.7686670132195,32.5149517936701,30.7700310677761
+"275",15,12,0,1,"Injuries","White","Female","Iowa",1980,"West North Central","Midwest","IA",29.9015147800352,31.158223733808,32.4104197923334,31.1637934880999
+"276",15,12,0,1,"Non-communicable","White","Female","Iowa",1980,"West North Central","Midwest","IA",36.5848140589883,37.9942534791163,39.5848262964006,37.9979810143738
+"277",15,12,1,0,"All other causes","Black","Male","Iowa",1980,"West North Central","Midwest","IA",160.85527348111,183.948616291656,217.467274305384,185.823984947939
+"278",15,12,1,0,"Cancers","Black","Male","Iowa",1980,"West North Central","Midwest","IA",297.335186742278,348.462623133214,419.53556230561,350.658848436561
+"279",15,12,1,0,"Cardiovascular","Black","Male","Iowa",1980,"West North Central","Midwest","IA",618.392813478733,703.822281324916,798.71698416368,705.287834971218
+"280",15,12,1,0,"Communicable","Black","Male","Iowa",1980,"West North Central","Midwest","IA",62.9679528178755,81.2117553714197,104.926870828889,82.0107013770172
+"281",15,12,1,0,"Injuries","Black","Male","Iowa",1980,"West North Central","Midwest","IA",136.75869653929,163.267325103366,194.586195919171,163.513701449055
+"282",15,12,1,0,"Non-communicable","Black","Male","Iowa",1980,"West North Central","Midwest","IA",103.398473373288,123.268295823083,144.585916252815,123.779087521193
+"283",15,12,1,1,"All other causes","Black","Female","Iowa",1980,"West North Central","Midwest","IA",119.152108914154,138.378310312042,162.232108796609,139.159459679557
+"284",15,12,1,1,"Cancers","Black","Female","Iowa",1980,"West North Central","Midwest","IA",167.326445382678,196.235118758921,239.341711999004,197.680641030076
+"285",15,12,1,1,"Cardiovascular","Black","Female","Iowa",1980,"West North Central","Midwest","IA",461.953631997617,519.852141958692,590.048037531301,520.79016199483
+"286",15,12,1,1,"Communicable","Black","Female","Iowa",1980,"West North Central","Midwest","IA",36.0442301771936,45.9513902465705,60.3615002491003,46.5145294440271
+"287",15,12,1,1,"Injuries","Black","Female","Iowa",1980,"West North Central","Midwest","IA",32.9661303976289,39.2730482021855,46.5985752099686,39.5168125412674
+"288",15,12,1,1,"Non-communicable","Black","Female","Iowa",1980,"West North Central","Midwest","IA",77.6267716970419,94.3334319198999,117.658408695744,95.1878067460217
+"289",15,13,0,0,"All other causes","White","Male","Iowa",1981,"West North Central","Midwest","IA",91.9831049452945,94.9372750047116,98.062898403621,94.9231791020917
+"290",15,13,0,0,"Cancers","White","Male","Iowa",1981,"West North Central","Midwest","IA",247.08085749418,252.113570687849,257.336435149215,252.183972418825
+"291",15,13,0,0,"Cardiovascular","White","Male","Iowa",1981,"West North Central","Midwest","IA",622.711360523464,634.763796879862,647.939457598404,634.810368017651
+"292",15,13,0,0,"Communicable","White","Male","Iowa",1981,"West North Central","Midwest","IA",49.9980487279537,52.9594355316415,56.1205195024236,53.0175012338377
+"293",15,13,0,0,"Injuries","White","Male","Iowa",1981,"West North Central","Midwest","IA",79.6930702164789,82.3504695541267,85.1856989941429,82.3475507021557
+"294",15,13,0,0,"Non-communicable","White","Male","Iowa",1981,"West North Central","Midwest","IA",92.5474408809431,95.9585411098167,99.2887047557496,95.9651318796053
+"295",15,13,0,1,"All other causes","White","Female","Iowa",1981,"West North Central","Midwest","IA",64.1147894152704,66.2524323883947,68.4787461608635,66.2730211723937
+"296",15,13,0,1,"Cancers","White","Female","Iowa",1981,"West North Central","Midwest","IA",151.294501767279,154.355898296136,157.500358099971,154.368079515167
+"297",15,13,0,1,"Cardiovascular","White","Female","Iowa",1981,"West North Central","Midwest","IA",362.353913477273,369.181086384584,376.796211083423,369.259553966676
+"298",15,13,0,1,"Communicable","White","Female","Iowa",1981,"West North Central","Midwest","IA",30.4313688175132,32.1720803081936,34.0152100181103,32.1571593529852
+"299",15,13,0,1,"Injuries","White","Female","Iowa",1981,"West North Central","Midwest","IA",28.905039293882,30.0890023210636,31.2635345584631,30.1144741435694
+"300",15,13,0,1,"Non-communicable","White","Female","Iowa",1981,"West North Central","Midwest","IA",38.1913280612111,39.7966658722532,41.3436201605512,39.8023621910971
+"301",15,13,1,0,"All other causes","Black","Male","Iowa",1981,"West North Central","Midwest","IA",160.141371940054,182.12644911348,216.990889252826,184.193119071854
+"302",15,13,1,0,"Cancers","Black","Male","Iowa",1981,"West North Central","Midwest","IA",299.429462392669,354.190008534275,422.297998874887,355.940784422905
+"303",15,13,1,0,"Cardiovascular","Black","Male","Iowa",1981,"West North Central","Midwest","IA",602.662596090544,685.385218049804,774.069575324225,686.783785738647
+"304",15,13,1,0,"Communicable","Black","Male","Iowa",1981,"West North Central","Midwest","IA",64.0487799445197,82.7637553342303,112.822039605867,84.5009215685026
+"305",15,13,1,0,"Injuries","Black","Male","Iowa",1981,"West North Central","Midwest","IA",129.639207798505,156.779757836719,186.495117250014,157.16388116504
+"306",15,13,1,0,"Non-communicable","Black","Male","Iowa",1981,"West North Central","Midwest","IA",104.10501669974,123.298566191482,146.182708944562,123.730571874398
+"307",15,13,1,1,"All other causes","Black","Female","Iowa",1981,"West North Central","Midwest","IA",119.221621027121,137.705965640091,160.27262483099,138.234811155304
+"308",15,13,1,1,"Cancers","Black","Female","Iowa",1981,"West North Central","Midwest","IA",164.571389203316,195.631057850209,235.527267891988,196.568354098551
+"309",15,13,1,1,"Cardiovascular","Black","Female","Iowa",1981,"West North Central","Midwest","IA",454.306127342516,510.957881409205,572.311213326179,510.6866770793
+"310",15,13,1,1,"Communicable","Black","Female","Iowa",1981,"West North Central","Midwest","IA",36.4980126172964,45.9273666436262,61.1724490897216,46.6713813870923
+"311",15,13,1,1,"Injuries","Black","Female","Iowa",1981,"West North Central","Midwest","IA",32.8197295530335,38.747563625766,45.8928592771524,39.0112590436432
+"312",15,13,1,1,"Non-communicable","Black","Female","Iowa",1981,"West North Central","Midwest","IA",78.0191923444024,94.8711235912278,118.643892639945,96.0325694723454
+"313",15,14,0,0,"All other causes","White","Male","Iowa",1982,"West North Central","Midwest","IA",93.2047733613819,96.1990150428153,99.253484772225,96.1544632579084
+"314",15,14,0,0,"Cancers","White","Male","Iowa",1982,"West North Central","Midwest","IA",250.236561251811,255.612834259275,261.277536138887,255.671364530837
+"315",15,14,0,0,"Cardiovascular","White","Male","Iowa",1982,"West North Central","Midwest","IA",612.809031457372,625.175087987722,637.423397676434,625.393953046553
+"316",15,14,0,0,"Communicable","White","Male","Iowa",1982,"West North Central","Midwest","IA",49.8103206538776,53.0157869022461,56.4480939952894,53.0596218195981
+"317",15,14,0,0,"Injuries","White","Male","Iowa",1982,"West North Central","Midwest","IA",76.9500671913806,79.5551862361059,82.0841542088223,79.5492126592732
+"318",15,14,0,0,"Non-communicable","White","Male","Iowa",1982,"West North Central","Midwest","IA",95.1630082838597,98.2826874639131,101.84163415982,98.3272491249666
+"319",15,14,0,1,"All other causes","White","Female","Iowa",1982,"West North Central","Midwest","IA",64.7806454279031,67.0123722382801,69.3150256623245,67.0086428935761
+"320",15,14,0,1,"Cancers","White","Female","Iowa",1982,"West North Central","Midwest","IA",151.629379334564,154.722929265637,157.932388515455,154.696230705335
+"321",15,14,0,1,"Cardiovascular","White","Female","Iowa",1982,"West North Central","Midwest","IA",355.538041796259,362.511707889581,369.700404882695,362.595213889941
+"322",15,14,0,1,"Communicable","White","Female","Iowa",1982,"West North Central","Midwest","IA",27.1361104063075,28.7020688113249,30.3614425025419,28.6917502611441
+"323",15,14,0,1,"Injuries","White","Female","Iowa",1982,"West North Central","Midwest","IA",27.9127894978872,29.0594737330592,30.3151131805309,29.0669168191557
+"324",15,14,0,1,"Non-communicable","White","Female","Iowa",1982,"West North Central","Midwest","IA",39.9280794895389,41.5339756204055,43.266431661673,41.5644392018517
+"325",15,14,1,0,"All other causes","Black","Male","Iowa",1982,"West North Central","Midwest","IA",158.562302650573,182.204411926571,218.038912911502,184.079594676679
+"326",15,14,1,0,"Cancers","Black","Male","Iowa",1982,"West North Central","Midwest","IA",304.891329209471,357.943536082173,422.23152096179,359.482900489225
+"327",15,14,1,0,"Cardiovascular","Black","Male","Iowa",1982,"West North Central","Midwest","IA",596.977491084901,682.44690130203,776.943024158895,681.782496853373
+"328",15,14,1,0,"Communicable","Black","Male","Iowa",1982,"West North Central","Midwest","IA",65.0900814143003,84.9978457257334,122.117421886273,87.0482686486463
+"329",15,14,1,0,"Injuries","Black","Male","Iowa",1982,"West North Central","Midwest","IA",126.821222994044,150.944351927157,180.052854788951,151.225616254388
+"330",15,14,1,0,"Non-communicable","Black","Male","Iowa",1982,"West North Central","Midwest","IA",104.201734865322,123.633803953165,145.993888224891,124.155238378755
+"331",15,14,1,1,"All other causes","Black","Female","Iowa",1982,"West North Central","Midwest","IA",117.412516909349,136.761408657911,158.057163423542,137.253483344528
+"332",15,14,1,1,"Cancers","Black","Female","Iowa",1982,"West North Central","Midwest","IA",164.473977559269,194.583019768468,234.337647796688,195.400612469935
+"333",15,14,1,1,"Cardiovascular","Black","Female","Iowa",1982,"West North Central","Midwest","IA",436.08446658649,492.148829858226,554.233679025453,491.968137868158
+"334",15,14,1,1,"Communicable","Black","Female","Iowa",1982,"West North Central","Midwest","IA",36.4872004097239,46.5631544328823,60.780925839228,47.2289328583146
+"335",15,14,1,1,"Injuries","Black","Female","Iowa",1982,"West North Central","Midwest","IA",32.625292085626,38.3892887753562,45.7733697374604,38.6026006876859
+"336",15,14,1,1,"Non-communicable","Black","Female","Iowa",1982,"West North Central","Midwest","IA",80.128223977822,95.6863644982646,120.041498740824,96.9669887578624
+"337",15,15,0,0,"All other causes","White","Male","Iowa",1983,"West North Central","Midwest","IA",94.3880165350622,97.7280946785572,100.845473241669,97.6961744863037
+"338",15,15,0,0,"Cancers","White","Male","Iowa",1983,"West North Central","Midwest","IA",251.910275216158,257.475654749586,262.653829276486,257.515713608801
+"339",15,15,0,0,"Cardiovascular","White","Male","Iowa",1983,"West North Central","Midwest","IA",601.991654375461,613.563976273768,625.151027752656,613.530685563424
+"340",15,15,0,0,"Communicable","White","Male","Iowa",1983,"West North Central","Midwest","IA",51.0187369922371,54.3094275463012,57.8211544038643,54.2922662059256
+"341",15,15,0,0,"Injuries","White","Male","Iowa",1983,"West North Central","Midwest","IA",75.4650420751744,78.0747725560833,80.7316379327167,78.1102686403017
+"342",15,15,0,0,"Non-communicable","White","Male","Iowa",1983,"West North Central","Midwest","IA",97.7804316344961,101.096859014541,104.65629124991,101.128779301693
+"343",15,15,0,1,"All other causes","White","Female","Iowa",1983,"West North Central","Midwest","IA",65.6581524696954,67.9053920282423,70.1493489668657,67.921956650774
+"344",15,15,0,1,"Cancers","White","Female","Iowa",1983,"West North Central","Midwest","IA",153.322694180405,156.320769397456,159.468530587629,156.319984120558
+"345",15,15,0,1,"Cardiovascular","White","Female","Iowa",1983,"West North Central","Midwest","IA",355.207219248582,362.067868143262,368.750837874337,362.028387716522
+"346",15,15,0,1,"Communicable","White","Female","Iowa",1983,"West North Central","Midwest","IA",28.2607854010796,29.9183821984393,31.7450500549976,29.9494770802569
+"347",15,15,0,1,"Injuries","White","Female","Iowa",1983,"West North Central","Midwest","IA",27.3580696790705,28.5069148509536,29.7195977361394,28.5118583370682
+"348",15,15,0,1,"Non-communicable","White","Female","Iowa",1983,"West North Central","Midwest","IA",41.8973237059348,43.6486101422436,45.3686735922849,43.6310658361373
+"349",15,15,1,0,"All other causes","Black","Male","Iowa",1983,"West North Central","Midwest","IA",157.49566491947,182.348018315731,217.883383044591,184.268618029537
+"350",15,15,1,0,"Cancers","Black","Male","Iowa",1983,"West North Central","Midwest","IA",310.507014637889,361.69553713625,428.160783487735,364.078741603628
+"351",15,15,1,0,"Cardiovascular","Black","Male","Iowa",1983,"West North Central","Midwest","IA",575.636664408509,658.073338642695,757.378368010191,660.303868750523
+"352",15,15,1,0,"Communicable","Black","Male","Iowa",1983,"West North Central","Midwest","IA",66.165842902223,86.9400838192838,131.43638427282,90.009240441154
+"353",15,15,1,0,"Injuries","Black","Male","Iowa",1983,"West North Central","Midwest","IA",121.054281288186,144.634394459065,173.611754976352,145.393468258002
+"354",15,15,1,0,"Non-communicable","Black","Male","Iowa",1983,"West North Central","Midwest","IA",103.972318859498,123.063521362104,146.71587448091,124.236777388568
+"355",15,15,1,1,"All other causes","Black","Female","Iowa",1983,"West North Central","Midwest","IA",118.131867954761,136.5519541291,157.853066543847,137.131696150618
+"356",15,15,1,1,"Cancers","Black","Female","Iowa",1983,"West North Central","Midwest","IA",165.167788000159,193.480442989733,234.101709598649,194.879017749513
+"357",15,15,1,1,"Cardiovascular","Black","Female","Iowa",1983,"West North Central","Midwest","IA",422.449097850067,477.825988214716,535.64555086237,477.94401015315
+"358",15,15,1,1,"Communicable","Black","Female","Iowa",1983,"West North Central","Midwest","IA",36.4989981434042,47.2704758431859,64.0827653301046,48.0584853702644
+"359",15,15,1,1,"Injuries","Black","Female","Iowa",1983,"West North Central","Midwest","IA",31.9012461392243,37.900437016689,44.8851250422356,38.1776748768126
+"360",15,15,1,1,"Non-communicable","Black","Female","Iowa",1983,"West North Central","Midwest","IA",80.4113663937243,97.3144604682095,120.513714421576,98.0550271876537
+"361",15,16,0,0,"All other causes","White","Male","Iowa",1984,"West North Central","Midwest","IA",96.4713594476291,99.8778439389676,103.002892847926,99.8334494490229
+"362",15,16,0,0,"Cancers","White","Male","Iowa",1984,"West North Central","Midwest","IA",252.288515524283,257.197358436143,262.792165293687,257.172668962681
+"363",15,16,0,0,"Cardiovascular","White","Male","Iowa",1984,"West North Central","Midwest","IA",581.138795368727,592.423444789728,603.953645254734,592.46771922622
+"364",15,16,0,0,"Communicable","White","Male","Iowa",1984,"West North Central","Midwest","IA",54.2981506843489,57.5538352915355,60.9381205892201,57.5396901464198
+"365",15,16,0,0,"Injuries","White","Male","Iowa",1984,"West North Central","Midwest","IA",74.78750110789,77.2960796814174,79.7131932577024,77.2633165417286
+"366",15,16,0,0,"Non-communicable","White","Male","Iowa",1984,"West North Central","Midwest","IA",97.2346193499861,100.517667274845,104.132931410412,100.56380180701
+"367",15,16,0,1,"All other causes","White","Female","Iowa",1984,"West North Central","Midwest","IA",67.7135960754897,69.9007735290775,72.0791409939715,69.9216003593031
+"368",15,16,0,1,"Cancers","White","Female","Iowa",1984,"West North Central","Midwest","IA",153.995197357714,157.041933004592,160.361016084727,157.066235996431
+"369",15,16,0,1,"Cardiovascular","White","Female","Iowa",1984,"West North Central","Midwest","IA",346.081846398392,353.027390445208,359.258208645129,352.96567891471
+"370",15,16,0,1,"Communicable","White","Female","Iowa",1984,"West North Central","Midwest","IA",29.8015663294505,31.3914847828781,33.0627367948445,31.3876124782606
+"371",15,16,0,1,"Injuries","White","Female","Iowa",1984,"West North Central","Midwest","IA",27.0398869516364,28.21281556276,29.3176910603561,28.2113401533018
+"372",15,16,0,1,"Non-communicable","White","Female","Iowa",1984,"West North Central","Midwest","IA",44.0270145977798,45.778248125905,47.6397863870022,45.8042332510578
+"373",15,16,1,0,"All other causes","Black","Male","Iowa",1984,"West North Central","Midwest","IA",157.737623532028,181.156505572179,218.771961945373,183.233774670709
+"374",15,16,1,0,"Cancers","Black","Male","Iowa",1984,"West North Central","Midwest","IA",311.116217181416,364.85597906333,427.580434795193,365.250729160514
+"375",15,16,1,0,"Cardiovascular","Black","Male","Iowa",1984,"West North Central","Midwest","IA",556.262552763545,635.158317873894,722.541148828489,636.69235906957
+"376",15,16,1,0,"Communicable","Black","Male","Iowa",1984,"West North Central","Midwest","IA",67.4915202116442,90.2730790683277,139.292527387133,93.6883640719008
+"377",15,16,1,0,"Injuries","Black","Male","Iowa",1984,"West North Central","Midwest","IA",117.079692928999,138.822122972263,163.818890911235,139.429333075675
+"378",15,16,1,0,"Non-communicable","Black","Male","Iowa",1984,"West North Central","Midwest","IA",103.913026029712,123.621706112694,150.044877552847,124.664912877964
+"379",15,16,1,1,"All other causes","Black","Female","Iowa",1984,"West North Central","Midwest","IA",117.869768938451,137.13127723459,158.20672642498,137.400173971814
+"380",15,16,1,1,"Cancers","Black","Female","Iowa",1984,"West North Central","Midwest","IA",166.218624325411,193.350032633048,232.907902554655,195.029497454877
+"381",15,16,1,1,"Cardiovascular","Black","Female","Iowa",1984,"West North Central","Midwest","IA",412.146891435413,466.312730476542,523.383858822741,466.462206187437
+"382",15,16,1,1,"Communicable","Black","Female","Iowa",1984,"West North Central","Midwest","IA",37.2303998983945,47.7234919108832,64.6207191330944,48.4506557874714
+"383",15,16,1,1,"Injuries","Black","Female","Iowa",1984,"West North Central","Midwest","IA",31.8743402427044,37.4846373532217,44.6421425742603,37.6865806936838
+"384",15,16,1,1,"Non-communicable","Black","Female","Iowa",1984,"West North Central","Midwest","IA",81.0984577460985,98.7683837708696,121.816001974143,99.7548244474519
+"385",15,17,0,0,"All other causes","White","Male","Iowa",1985,"West North Central","Midwest","IA",99.8734581121292,103.139297520903,106.707350599775,103.154690891867
+"386",15,17,0,0,"Cancers","White","Male","Iowa",1985,"West North Central","Midwest","IA",253.498739503227,259.017656525389,264.879542417887,258.987321731883
+"387",15,17,0,0,"Cardiovascular","White","Male","Iowa",1985,"West North Central","Midwest","IA",571.24240133727,582.398554526749,594.136714948718,582.483630404234
+"388",15,17,0,0,"Communicable","White","Male","Iowa",1985,"West North Central","Midwest","IA",60.5928823258334,64.4212707184874,68.1350045284457,64.454183307618
+"389",15,17,0,0,"Injuries","White","Male","Iowa",1985,"West North Central","Midwest","IA",75.2459556744176,77.8251633399004,80.2500609926742,77.8259518035924
+"390",15,17,0,0,"Non-communicable","White","Male","Iowa",1985,"West North Central","Midwest","IA",100.330169773914,103.841533465357,107.47762323608,103.824439379177
+"391",15,17,0,1,"All other causes","White","Female","Iowa",1985,"West North Central","Midwest","IA",69.7696518497707,72.0114976106745,74.4889601605292,72.0293774321729
+"392",15,17,0,1,"Cancers","White","Female","Iowa",1985,"West North Central","Midwest","IA",155.560271933401,158.339176171231,161.534218295173,158.433732949028
+"393",15,17,0,1,"Cardiovascular","White","Female","Iowa",1985,"West North Central","Midwest","IA",339.513802654072,346.252380938846,352.951487394481,346.196692896619
+"394",15,17,0,1,"Communicable","White","Female","Iowa",1985,"West North Central","Midwest","IA",30.8089804604908,32.549033660009,34.4471160508241,32.573094603739
+"395",15,17,0,1,"Injuries","White","Female","Iowa",1985,"West North Central","Midwest","IA",26.9474494423746,28.1343242011703,29.3203913953613,28.1212295093895
+"396",15,17,0,1,"Non-communicable","White","Female","Iowa",1985,"West North Central","Midwest","IA",46.3178976799492,48.1758207793524,50.023584342415,48.1704515021004
+"397",15,17,1,0,"All other causes","Black","Male","Iowa",1985,"West North Central","Midwest","IA",156.533153896071,180.18453534719,216.736192646594,182.633909346994
+"398",15,17,1,0,"Cancers","Black","Male","Iowa",1985,"West North Central","Midwest","IA",313.46705657601,366.252320366947,431.164976047482,367.966171698732
+"399",15,17,1,0,"Cardiovascular","Black","Male","Iowa",1985,"West North Central","Midwest","IA",535.718759251215,619.834937836554,708.568365327496,621.091791591043
+"400",15,17,1,0,"Communicable","Black","Male","Iowa",1985,"West North Central","Midwest","IA",68.5383801052674,93.1820594292129,145.441164302173,96.3929181610265
+"401",15,17,1,0,"Injuries","Black","Male","Iowa",1985,"West North Central","Midwest","IA",111.593822488304,132.856067707193,157.532426293061,133.270650076149
+"402",15,17,1,0,"Non-communicable","Black","Male","Iowa",1985,"West North Central","Midwest","IA",104.950288619972,123.774309258697,150.237131210687,125.24283182446
+"403",15,17,1,1,"All other causes","Black","Female","Iowa",1985,"West North Central","Midwest","IA",117.630126270245,138.226793300279,158.875687088152,138.041215920552
+"404",15,17,1,1,"Cancers","Black","Female","Iowa",1985,"West North Central","Midwest","IA",167.687484774884,193.82247702973,234.125065525471,195.713990986113
+"405",15,17,1,1,"Cardiovascular","Black","Female","Iowa",1985,"West North Central","Midwest","IA",404.104157410281,455.070050055007,508.963991315452,455.249017571413
+"406",15,17,1,1,"Communicable","Black","Female","Iowa",1985,"West North Central","Midwest","IA",37.9171266929648,47.9051238401712,64.5343117068051,48.5558703025504
+"407",15,17,1,1,"Injuries","Black","Female","Iowa",1985,"West North Central","Midwest","IA",31.8348344664592,37.1277658741544,44.4731994536045,37.4227190513947
+"408",15,17,1,1,"Non-communicable","Black","Female","Iowa",1985,"West North Central","Midwest","IA",81.8774418252806,100.052633604229,122.701625122052,100.638920952056
+"409",15,18,0,0,"All other causes","White","Male","Iowa",1986,"West North Central","Midwest","IA",102.175051831056,105.683379979844,109.094451603131,105.634004478941
+"410",15,18,0,0,"Cancers","White","Male","Iowa",1986,"West North Central","Midwest","IA",252.639684867246,257.423424903413,262.914364061733,257.385406169138
+"411",15,18,0,0,"Cardiovascular","White","Male","Iowa",1986,"West North Central","Midwest","IA",543.31555382699,555.022206299269,566.053615452213,555.093414722569
+"412",15,18,0,0,"Communicable","White","Male","Iowa",1986,"West North Central","Midwest","IA",59.5007788047177,62.8643056722654,66.6609090113936,62.9233959514295
+"413",15,18,0,0,"Injuries","White","Male","Iowa",1986,"West North Central","Midwest","IA",75.2950440214859,77.913966337755,80.5418992649865,77.9348780778253
+"414",15,18,0,0,"Non-communicable","White","Male","Iowa",1986,"West North Central","Midwest","IA",101.749829100029,105.304357815713,109.365072423801,105.387926881094
+"415",15,18,0,1,"All other causes","White","Female","Iowa",1986,"West North Central","Midwest","IA",69.3660411945037,71.9671001033056,74.2825953663814,71.9462582756156
+"416",15,18,0,1,"Cancers","White","Female","Iowa",1986,"West North Central","Midwest","IA",153.893062855386,156.941155157503,160.141373382693,156.92463701572
+"417",15,18,0,1,"Cardiovascular","White","Female","Iowa",1986,"West North Central","Midwest","IA",335.449712412113,341.770494406577,348.653950549961,341.793098812023
+"418",15,18,0,1,"Communicable","White","Female","Iowa",1986,"West North Central","Midwest","IA",30.53804968609,32.1893667102649,34.0719418547965,32.2184807129104
+"419",15,18,0,1,"Injuries","White","Female","Iowa",1986,"West North Central","Midwest","IA",27.0139484578506,28.0762585434245,29.275049453457,28.0864959740063
+"420",15,18,0,1,"Non-communicable","White","Female","Iowa",1986,"West North Central","Midwest","IA",47.5763106237356,49.4654619691027,51.405884411985,49.4471269548731
+"421",15,18,1,0,"All other causes","Black","Male","Iowa",1986,"West North Central","Midwest","IA",155.330032323602,180.245628757277,220.427881580922,182.432846677591
+"422",15,18,1,0,"Cancers","Black","Male","Iowa",1986,"West North Central","Midwest","IA",319.556235987843,371.761260189886,441.088688327233,373.051254856158
+"423",15,18,1,0,"Cardiovascular","Black","Male","Iowa",1986,"West North Central","Midwest","IA",521.278025944731,604.154328862204,683.961793461613,603.46756925838
+"424",15,18,1,0,"Communicable","Black","Male","Iowa",1986,"West North Central","Midwest","IA",68.1798764181603,95.8207249813541,145.841231186454,99.1247734544511
+"425",15,18,1,0,"Injuries","Black","Male","Iowa",1986,"West North Central","Midwest","IA",107.211752287752,127.431834653506,152.155862095423,127.960244084681
+"426",15,18,1,0,"Non-communicable","Black","Male","Iowa",1986,"West North Central","Midwest","IA",105.237450032552,124.132569163405,152.239533443529,125.249338309587
+"427",15,18,1,1,"All other causes","Black","Female","Iowa",1986,"West North Central","Midwest","IA",117.903377795858,138.60249092313,157.687555104097,138.481427216593
+"428",15,18,1,1,"Cancers","Black","Female","Iowa",1986,"West North Central","Midwest","IA",167.624165185519,193.477083332756,233.515030472397,195.160875109807
+"429",15,18,1,1,"Cardiovascular","Black","Female","Iowa",1986,"West North Central","Midwest","IA",397.765675655099,449.421139200376,500.860827607772,448.515491841266
+"430",15,18,1,1,"Communicable","Black","Female","Iowa",1986,"West North Central","Midwest","IA",37.882337424582,47.6325507315688,64.1003196727015,48.3813075802915
+"431",15,18,1,1,"Injuries","Black","Female","Iowa",1986,"West North Central","Midwest","IA",31.6018948563574,37.020395628919,44.1487463222642,37.2066820542191
+"432",15,18,1,1,"Non-communicable","Black","Female","Iowa",1986,"West North Central","Midwest","IA",82.2379690299975,101.419655519049,122.73761138826,102.074716154312
+"433",15,19,0,0,"All other causes","White","Male","Iowa",1987,"West North Central","Midwest","IA",103.726149630209,107.173361350125,110.768916431579,107.202810160522
+"434",15,19,0,0,"Cancers","White","Male","Iowa",1987,"West North Central","Midwest","IA",252.406579641564,257.349014892154,262.702196173322,257.459441471064
+"435",15,19,0,0,"Cardiovascular","White","Male","Iowa",1987,"West North Central","Midwest","IA",541.164961900999,551.701624796805,563.52001582395,551.783363728305
+"436",15,19,0,0,"Communicable","White","Male","Iowa",1987,"West North Central","Midwest","IA",56.6302513000886,60.0093951335724,63.6710408465084,60.0526539432514
+"437",15,19,0,0,"Injuries","White","Male","Iowa",1987,"West North Central","Midwest","IA",75.7252431167957,78.3394765244187,80.8072307113683,78.3193982792357
+"438",15,19,0,0,"Non-communicable","White","Male","Iowa",1987,"West North Central","Midwest","IA",102.486202160889,105.995208512366,109.628047898723,106.0427356589
+"439",15,19,0,1,"All other causes","White","Female","Iowa",1987,"West North Central","Midwest","IA",71.3842418004044,73.7736891614074,76.3823495447492,73.8106431240382
+"440",15,19,0,1,"Cancers","White","Female","Iowa",1987,"West North Central","Midwest","IA",154.278370551673,157.483437776518,160.606208354312,157.465855073881
+"441",15,19,0,1,"Cardiovascular","White","Female","Iowa",1987,"West North Central","Midwest","IA",324.053091415584,330.568998795166,336.818051921104,330.593685367034
+"442",15,19,0,1,"Communicable","White","Female","Iowa",1987,"West North Central","Midwest","IA",30.4798344954048,32.2141938830471,34.0188909919347,32.2185631086097
+"443",15,19,0,1,"Injuries","White","Female","Iowa",1987,"West North Central","Midwest","IA",27.0336697536588,28.1234234616512,29.3145992970868,28.1352950146757
+"444",15,19,0,1,"Non-communicable","White","Female","Iowa",1987,"West North Central","Midwest","IA",48.6131198259293,50.5662336227043,52.5153983073283,50.5732932014427
+"445",15,19,1,0,"All other causes","Black","Male","Iowa",1987,"West North Central","Midwest","IA",155.84570968946,181.698512609313,223.090620963619,183.257809868205
+"446",15,19,1,0,"Cancers","Black","Male","Iowa",1987,"West North Central","Midwest","IA",313.650069929006,369.126552151403,434.226655932077,370.347227372191
+"447",15,19,1,0,"Cardiovascular","Black","Male","Iowa",1987,"West North Central","Midwest","IA",508.568718585663,583.321194952589,659.420718163627,583.175036773397
+"448",15,19,1,0,"Communicable","Black","Male","Iowa",1987,"West North Central","Midwest","IA",72.2309683535534,99.3396086197324,152.144909845779,102.660783987599
+"449",15,19,1,0,"Injuries","Black","Male","Iowa",1987,"West North Central","Midwest","IA",105.65803360259,123.811119199202,147.578309869753,124.515664076735
+"450",15,19,1,0,"Non-communicable","Black","Male","Iowa",1987,"West North Central","Midwest","IA",104.747888439712,123.609099435703,153.705266779277,125.558107379336
+"451",15,19,1,1,"All other causes","Black","Female","Iowa",1987,"West North Central","Midwest","IA",117.108746678705,137.067670293712,156.778913972967,137.210367287298
+"452",15,19,1,1,"Cancers","Black","Female","Iowa",1987,"West North Central","Midwest","IA",169.204363474198,193.12676420256,233.75873400468,195.185441576094
+"453",15,19,1,1,"Cardiovascular","Black","Female","Iowa",1987,"West North Central","Midwest","IA",389.41006650169,436.09832816265,488.305945295514,436.676074828368
+"454",15,19,1,1,"Communicable","Black","Female","Iowa",1987,"West North Central","Midwest","IA",37.8903136686303,47.4708451993385,63.3374248078347,48.0826593127956
+"455",15,19,1,1,"Injuries","Black","Female","Iowa",1987,"West North Central","Midwest","IA",31.1652400111796,36.8352952589818,44.2231677975478,37.0740093388123
+"456",15,19,1,1,"Non-communicable","Black","Female","Iowa",1987,"West North Central","Midwest","IA",85.3518168935668,103.27281750011,125.416124762399,104.228460175146
+"457",15,20,0,0,"All other causes","White","Male","Iowa",1988,"West North Central","Midwest","IA",103.837943626368,107.787086684164,111.29188107181,107.670618704256
+"458",15,20,0,0,"Cancers","White","Male","Iowa",1988,"West North Central","Midwest","IA",253.278166185842,258.544931615843,264.079076799273,258.625357340266
+"459",15,20,0,0,"Cardiovascular","White","Male","Iowa",1988,"West North Central","Midwest","IA",526.400311921314,536.528428796386,547.74799189904,536.413689311347
+"460",15,20,0,0,"Communicable","White","Male","Iowa",1988,"West North Central","Midwest","IA",59.6665659468972,63.1193947429837,66.7375645352733,63.2008083492545
+"461",15,20,0,0,"Injuries","White","Male","Iowa",1988,"West North Central","Midwest","IA",76.0414184848328,78.4841957308428,81.0118202759921,78.5223611527669
+"462",15,20,0,0,"Non-communicable","White","Male","Iowa",1988,"West North Central","Midwest","IA",106.023118192883,109.716675861578,113.584681633154,109.782205715309
+"463",15,20,0,1,"All other causes","White","Female","Iowa",1988,"West North Central","Midwest","IA",72.3253999985763,74.6919231499054,77.2782298184111,74.7350605754108
+"464",15,20,0,1,"Cancers","White","Female","Iowa",1988,"West North Central","Midwest","IA",156.284971011517,159.36719405957,162.504097950545,159.367336052082
+"465",15,20,0,1,"Cardiovascular","White","Female","Iowa",1988,"West North Central","Midwest","IA",319.750265168582,325.735084641968,331.935724297679,325.780585571148
+"466",15,20,0,1,"Communicable","White","Female","Iowa",1988,"West North Central","Midwest","IA",35.4702329923868,37.3209320383168,39.3039725623253,37.336953763859
+"467",15,20,0,1,"Injuries","White","Female","Iowa",1988,"West North Central","Midwest","IA",27.0369207880842,28.1576028940272,29.3338783816593,28.1670688454778
+"468",15,20,0,1,"Non-communicable","White","Female","Iowa",1988,"West North Central","Midwest","IA",50.4552984312028,52.3197820576125,54.3218496929255,52.342717898459
+"469",15,20,1,0,"All other causes","Black","Male","Iowa",1988,"West North Central","Midwest","IA",158.614958409199,182.810978793257,221.860303674683,184.778427452728
+"470",15,20,1,0,"Cancers","Black","Male","Iowa",1988,"West North Central","Midwest","IA",316.920029310978,370.698436083003,429.767034735552,371.773475677691
+"471",15,20,1,0,"Cardiovascular","Black","Male","Iowa",1988,"West North Central","Midwest","IA",487.526576837975,573.064552553923,648.345816702102,572.98454413814
+"472",15,20,1,0,"Communicable","Black","Male","Iowa",1988,"West North Central","Midwest","IA",71.8664953869768,100.722605840102,156.54412469542,104.666582615103
+"473",15,20,1,0,"Injuries","Black","Male","Iowa",1988,"West North Central","Midwest","IA",101.487501200919,120.810659927745,143.847819919686,121.717027650922
+"474",15,20,1,0,"Non-communicable","Black","Male","Iowa",1988,"West North Central","Midwest","IA",106.659500838338,124.265886620827,154.125849516305,126.381699895651
+"475",15,20,1,1,"All other causes","Black","Female","Iowa",1988,"West North Central","Midwest","IA",115.531001777002,136.368135129937,156.222573828034,136.10762347606
+"476",15,20,1,1,"Cancers","Black","Female","Iowa",1988,"West North Central","Midwest","IA",170.346370101542,193.590661163303,231.013375221239,195.613705709876
+"477",15,20,1,1,"Cardiovascular","Black","Female","Iowa",1988,"West North Central","Midwest","IA",376.51627975648,421.244530141858,472.905461699932,421.54465998609
+"478",15,20,1,1,"Communicable","Black","Female","Iowa",1988,"West North Central","Midwest","IA",37.6722170740048,47.2726415873815,62.1670587957928,47.8494642641047
+"479",15,20,1,1,"Injuries","Black","Female","Iowa",1988,"West North Central","Midwest","IA",31.1699287515225,36.5269490084058,43.906678260891,36.9015634452987
+"480",15,20,1,1,"Non-communicable","Black","Female","Iowa",1988,"West North Central","Midwest","IA",86.9624406799764,105.535342296583,128.622719364731,106.416949890294
+"481",15,21,0,0,"All other causes","White","Male","Iowa",1989,"West North Central","Midwest","IA",103.692778381297,106.925546824927,110.883333822093,107.039092765569
+"482",15,21,0,0,"Cancers","White","Male","Iowa",1989,"West North Central","Midwest","IA",252.831999194178,258.379488522528,263.806738400857,258.386951885481
+"483",15,21,0,0,"Cardiovascular","White","Male","Iowa",1989,"West North Central","Midwest","IA",493.263753887497,503.709383749172,514.346597622472,503.642208705325
+"484",15,21,0,0,"Communicable","White","Male","Iowa",1989,"West North Central","Midwest","IA",57.5668199813702,61.0545104870785,64.7748268251199,61.0590860714566
+"485",15,21,0,0,"Injuries","White","Male","Iowa",1989,"West North Central","Midwest","IA",74.9257848653735,77.3893035526426,80.1063517465276,77.4181692917394
+"486",15,21,0,0,"Non-communicable","White","Male","Iowa",1989,"West North Central","Midwest","IA",104.832511629838,108.515879352511,112.009734343741,108.497119589909
+"487",15,21,0,1,"All other causes","White","Female","Iowa",1989,"West North Central","Midwest","IA",73.7872339239567,76.0849501797445,78.8053375085801,76.147587959787
+"488",15,21,0,1,"Cancers","White","Female","Iowa",1989,"West North Central","Midwest","IA",157.286968522955,160.35066764984,163.398032189615,160.337127944748
+"489",15,21,0,1,"Cardiovascular","White","Female","Iowa",1989,"West North Central","Midwest","IA",307.826933236971,314.050991133372,320.135225524351,314.077586871575
+"490",15,21,0,1,"Communicable","White","Female","Iowa",1989,"West North Central","Midwest","IA",34.9824545518638,36.7904704065952,38.647164948005,36.8141598676508
+"491",15,21,0,1,"Injuries","White","Female","Iowa",1989,"West North Central","Midwest","IA",27.002687280788,28.1012588498096,29.2974989206733,28.1255832407196
+"492",15,21,0,1,"Non-communicable","White","Female","Iowa",1989,"West North Central","Midwest","IA",52.1928119926545,54.1936897912223,56.4015051212669,54.2389100520205
+"493",15,21,1,0,"All other causes","Black","Male","Iowa",1989,"West North Central","Midwest","IA",158.766173401302,183.436920208871,220.430455964274,185.25237660628
+"494",15,21,1,0,"Cancers","Black","Male","Iowa",1989,"West North Central","Midwest","IA",319.692989690578,375.502073457408,433.079948933737,375.57166838496
+"495",15,21,1,0,"Cardiovascular","Black","Male","Iowa",1989,"West North Central","Midwest","IA",486.211398056169,567.039995006531,648.823138723406,567.29855444007
+"496",15,21,1,0,"Communicable","Black","Male","Iowa",1989,"West North Central","Midwest","IA",72.5151402609533,102.298350031317,160.409976941169,106.194098492077
+"497",15,21,1,0,"Injuries","Black","Male","Iowa",1989,"West North Central","Midwest","IA",100.273155670344,119.014363854025,143.911303432071,119.756691310782
+"498",15,21,1,0,"Non-communicable","Black","Male","Iowa",1989,"West North Central","Midwest","IA",106.916130279922,124.800237075681,156.053407956963,127.054564796212
+"499",15,21,1,1,"All other causes","Black","Female","Iowa",1989,"West North Central","Midwest","IA",113.652671515277,135.757645718217,156.016916957443,135.562927226235
+"500",15,21,1,1,"Cancers","Black","Female","Iowa",1989,"West North Central","Midwest","IA",169.990437881406,194.100131341655,228.679397418457,195.734745509095
+"501",15,21,1,1,"Cardiovascular","Black","Female","Iowa",1989,"West North Central","Midwest","IA",371.211571848998,418.689793913213,467.112460278803,418.239395290598
+"502",15,21,1,1,"Communicable","Black","Female","Iowa",1989,"West North Central","Midwest","IA",37.0891640843999,47.0585648291415,61.6227372648254,47.613270001288
+"503",15,21,1,1,"Injuries","Black","Female","Iowa",1989,"West North Central","Midwest","IA",30.7478420517496,36.411567436773,43.9188275735054,36.7087641816201
+"504",15,21,1,1,"Non-communicable","Black","Female","Iowa",1989,"West North Central","Midwest","IA",89.5077199553533,107.59498708252,131.485350741643,108.365483183929
+"505",15,22,0,0,"All other causes","White","Male","Iowa",1990,"West North Central","Midwest","IA",103.217008580762,106.919705056688,110.75145383566,106.943108509385
+"506",15,22,0,0,"Cancers","White","Male","Iowa",1990,"West North Central","Midwest","IA",250.632730538051,256.23995291982,261.77990996772,256.230912579704
+"507",15,22,0,0,"Cardiovascular","White","Male","Iowa",1990,"West North Central","Midwest","IA",482.142386347197,492.671847658646,503.151409364105,492.724112765155
+"508",15,22,0,0,"Communicable","White","Male","Iowa",1990,"West North Central","Midwest","IA",60.9529643256459,64.4593838323955,68.2654238920403,64.5225614918722
+"509",15,22,0,0,"Injuries","White","Male","Iowa",1990,"West North Central","Midwest","IA",73.47325297391,75.8443569881173,78.8172081790073,75.937429710497
+"510",15,22,0,0,"Non-communicable","White","Male","Iowa",1990,"West North Central","Midwest","IA",105.144841460734,108.812712906228,112.528227001386,108.806686432245
+"511",15,22,0,1,"All other causes","White","Female","Iowa",1990,"West North Central","Midwest","IA",73.3118970472576,75.7376560157182,78.5112734595575,75.7637689227703
+"512",15,22,0,1,"Cancers","White","Female","Iowa",1990,"West North Central","Midwest","IA",157.670532458229,160.871311413069,164.187689954163,160.904363374995
+"513",15,22,0,1,"Cardiovascular","White","Female","Iowa",1990,"West North Central","Midwest","IA",297.205866118557,303.202122787003,308.65256596972,303.11247303
+"514",15,22,0,1,"Communicable","White","Female","Iowa",1990,"West North Central","Midwest","IA",33.8251556752624,35.5942994486883,37.6091748440562,35.6423798861913
+"515",15,22,0,1,"Injuries","White","Female","Iowa",1990,"West North Central","Midwest","IA",26.6356785242075,27.7342507575683,28.833551043053,27.7395830679879
+"516",15,22,0,1,"Non-communicable","White","Female","Iowa",1990,"West North Central","Midwest","IA",53.7399513302607,55.6605728225182,57.9873469402402,55.7522908334461
+"517",15,22,1,0,"All other causes","Black","Male","Iowa",1990,"West North Central","Midwest","IA",158.531526049519,183.958776869792,221.505137279807,185.124346554866
+"518",15,22,1,0,"Cancers","Black","Male","Iowa",1990,"West North Central","Midwest","IA",325.226334057922,379.572078291586,436.46214854819,380.768483873492
+"519",15,22,1,0,"Cardiovascular","Black","Male","Iowa",1990,"West North Central","Midwest","IA",480.034318223003,565.472129566064,646.825857074547,565.134293590108
+"520",15,22,1,0,"Communicable","Black","Male","Iowa",1990,"West North Central","Midwest","IA",73.1544832584957,103.184979278121,169.44526327001,107.054628285825
+"521",15,22,1,0,"Injuries","Black","Male","Iowa",1990,"West North Central","Midwest","IA",98.4229585667519,117.806683709159,142.421944440682,117.983877607854
+"522",15,22,1,0,"Non-communicable","Black","Male","Iowa",1990,"West North Central","Midwest","IA",107.329970336464,124.813179807929,156.593345526186,127.076248148935
+"523",15,22,1,1,"All other causes","Black","Female","Iowa",1990,"West North Central","Midwest","IA",115.200453126993,136.452141835104,156.217064001892,136.12350428401
+"524",15,22,1,1,"Cancers","Black","Female","Iowa",1990,"West North Central","Midwest","IA",169.472763606725,195.480909251604,229.015563223809,196.883261397299
+"525",15,22,1,1,"Cardiovascular","Black","Female","Iowa",1990,"West North Central","Midwest","IA",373.910914190593,420.503258025189,466.897855219016,420.991018909775
+"526",15,22,1,1,"Communicable","Black","Female","Iowa",1990,"West North Central","Midwest","IA",36.8583693733409,46.7381815191835,60.7322584255126,47.3109819915513
+"527",15,22,1,1,"Injuries","Black","Female","Iowa",1990,"West North Central","Midwest","IA",30.8526083224354,36.2102974945032,43.6654834048754,36.5200129525163
+"528",15,22,1,1,"Non-communicable","Black","Female","Iowa",1990,"West North Central","Midwest","IA",90.6721262519817,110.174370764804,133.813494447457,110.604557880714
+"529",15,23,0,0,"All other causes","White","Male","Iowa",1991,"West North Central","Midwest","IA",102.08971693416,105.646384587272,109.09757261745,105.621195433937
+"530",15,23,0,0,"Cancers","White","Male","Iowa",1991,"West North Central","Midwest","IA",252.450032242106,257.654113133509,263.382681536155,257.712189876849
+"531",15,23,0,0,"Cardiovascular","White","Male","Iowa",1991,"West North Central","Midwest","IA",470.088050354476,480.384102836428,490.247006386615,480.336647989562
+"532",15,23,0,0,"Communicable","White","Male","Iowa",1991,"West North Central","Midwest","IA",60.0046861915625,63.4739793748614,66.922100167811,63.5459660208618
+"533",15,23,0,0,"Injuries","White","Male","Iowa",1991,"West North Central","Midwest","IA",71.9431738832307,74.3605569945811,76.7431934200132,74.3371272752216
+"534",15,23,0,0,"Non-communicable","White","Male","Iowa",1991,"West North Central","Midwest","IA",103.501728578936,107.012156457364,110.626427549413,107.091555149237
+"535",15,23,0,1,"All other causes","White","Female","Iowa",1991,"West North Central","Midwest","IA",72.7551161168907,75.167949172132,77.6074054783444,75.1557855834903
+"536",15,23,0,1,"Cancers","White","Female","Iowa",1991,"West North Central","Midwest","IA",159.049838866046,162.218768542626,165.479100923715,162.155474733994
+"537",15,23,0,1,"Cardiovascular","White","Female","Iowa",1991,"West North Central","Midwest","IA",293.435161466989,299.156543977156,304.927508356267,299.227446783971
+"538",15,23,0,1,"Communicable","White","Female","Iowa",1991,"West North Central","Midwest","IA",33.4511336300432,35.2493806230626,36.9977510680447,35.2477604631446
+"539",15,23,0,1,"Injuries","White","Female","Iowa",1991,"West North Central","Midwest","IA",26.7323049664104,27.7320072072781,28.8473054163004,27.7519969380946
+"540",15,23,0,1,"Non-communicable","White","Female","Iowa",1991,"West North Central","Midwest","IA",55.0226147615367,57.0223616278496,59.1069297933954,57.0486276065372
+"541",15,23,1,0,"All other causes","Black","Male","Iowa",1991,"West North Central","Midwest","IA",157.803389522941,182.227726406264,216.591397218831,183.711000399159
+"542",15,23,1,0,"Cancers","Black","Male","Iowa",1991,"West North Central","Midwest","IA",333.141689383847,386.524288513444,448.629571952139,387.742604627676
+"543",15,23,1,0,"Cardiovascular","Black","Male","Iowa",1991,"West North Central","Midwest","IA",495.254462673295,575.378710320478,658.001544712723,575.676723504576
+"544",15,23,1,0,"Communicable","Black","Male","Iowa",1991,"West North Central","Midwest","IA",72.03264756971,102.900619625713,164.250382047962,106.900229371715
+"545",15,23,1,0,"Injuries","Black","Male","Iowa",1991,"West North Central","Midwest","IA",96.1584470204982,115.22020010428,137.715708461059,115.578767434007
+"546",15,23,1,0,"Non-communicable","Black","Male","Iowa",1991,"West North Central","Midwest","IA",107.493981413388,125.186010126929,155.301002229973,127.354995137695
+"547",15,23,1,1,"All other causes","Black","Female","Iowa",1991,"West North Central","Midwest","IA",115.322673865791,137.704682385929,156.558732175223,137.334150066082
+"548",15,23,1,1,"Cancers","Black","Female","Iowa",1991,"West North Central","Midwest","IA",170.262816454908,196.79613362028,229.708842916049,197.999182355212
+"549",15,23,1,1,"Cardiovascular","Black","Female","Iowa",1991,"West North Central","Midwest","IA",373.013301692459,417.6167288327,464.448178578355,418.181218063624
+"550",15,23,1,1,"Communicable","Black","Female","Iowa",1991,"West North Central","Midwest","IA",36.6987711679248,46.4024322323284,59.725746621418,46.8686539246892
+"551",15,23,1,1,"Injuries","Black","Female","Iowa",1991,"West North Central","Midwest","IA",30.914972123932,35.9660944489274,43.380363263037,36.2856262655303
+"552",15,23,1,1,"Non-communicable","Black","Female","Iowa",1991,"West North Central","Midwest","IA",92.7778285500324,112.199019715762,137.545275999792,112.980517196486
+"553",15,24,0,0,"All other causes","White","Male","Iowa",1992,"West North Central","Midwest","IA",102.777203585458,106.265759294127,109.991619810035,106.306515996316
+"554",15,24,0,0,"Cancers","White","Male","Iowa",1992,"West North Central","Midwest","IA",253.38581919115,258.657355388926,263.741781786174,258.683441219428
+"555",15,24,0,0,"Cardiovascular","White","Male","Iowa",1992,"West North Central","Midwest","IA",458.324186609446,467.785366002459,477.167721153494,467.962892627012
+"556",15,24,0,0,"Communicable","White","Male","Iowa",1992,"West North Central","Midwest","IA",56.7769011950503,60.3117630956254,63.9451556364552,60.3202746493971
+"557",15,24,0,0,"Injuries","White","Male","Iowa",1992,"West North Central","Midwest","IA",70.0950649537207,72.7062087764618,75.1222351005236,72.6901682903939
+"558",15,24,0,0,"Non-communicable","White","Male","Iowa",1992,"West North Central","Midwest","IA",102.495946781578,106.231302809066,110.1860276113,106.260908147061
+"559",15,24,0,1,"All other causes","White","Female","Iowa",1992,"West North Central","Midwest","IA",73.6971290185296,76.1485244987811,78.655563017347,76.1558966412923
+"560",15,24,0,1,"Cancers","White","Female","Iowa",1992,"West North Central","Midwest","IA",159.50046050405,162.67773116993,165.832379224509,162.667600919428
+"561",15,24,0,1,"Cardiovascular","White","Female","Iowa",1992,"West North Central","Midwest","IA",280.331755150846,286.025918711246,291.888798884557,286.045905389903
+"562",15,24,0,1,"Communicable","White","Female","Iowa",1992,"West North Central","Midwest","IA",32.1184991408611,33.8324291507677,35.6508021663496,33.8579401243653
+"563",15,24,0,1,"Injuries","White","Female","Iowa",1992,"West North Central","Midwest","IA",26.3074294906829,27.4071692387554,28.4911624736275,27.4035958420031
+"564",15,24,0,1,"Non-communicable","White","Female","Iowa",1992,"West North Central","Midwest","IA",55.9265725357291,57.8603413392578,60.0124934033504,57.9105985974857
+"565",15,24,1,0,"All other causes","Black","Male","Iowa",1992,"West North Central","Midwest","IA",156.695175095519,181.573321315663,214.164098111291,182.552782941787
+"566",15,24,1,0,"Cancers","Black","Male","Iowa",1992,"West North Central","Midwest","IA",331.64878700605,383.888497965557,444.908266334181,385.161627197085
+"567",15,24,1,0,"Cardiovascular","Black","Male","Iowa",1992,"West North Central","Midwest","IA",488.605514110599,566.159434881045,644.614039133424,567.127196196121
+"568",15,24,1,0,"Communicable","Black","Male","Iowa",1992,"West North Central","Midwest","IA",71.5600903876926,103.321708470303,160.160413977466,106.998083775352
+"569",15,24,1,0,"Injuries","Black","Male","Iowa",1992,"West North Central","Midwest","IA",93.7893770129379,112.326679792663,131.595178250125,112.673951961356
+"570",15,24,1,0,"Non-communicable","Black","Male","Iowa",1992,"West North Central","Midwest","IA",106.943330832508,125.820799721796,156.056017504797,127.736106911072
+"571",15,24,1,1,"All other causes","Black","Female","Iowa",1992,"West North Central","Midwest","IA",116.253910684532,137.651850566619,158.827956645947,137.841474379281
+"572",15,24,1,1,"Cancers","Black","Female","Iowa",1992,"West North Central","Midwest","IA",170.23735137577,195.726364491224,227.849939886949,196.410402154137
+"573",15,24,1,1,"Cardiovascular","Black","Female","Iowa",1992,"West North Central","Midwest","IA",362.118568884528,406.587580709837,457.909333910006,407.843471149314
+"574",15,24,1,1,"Communicable","Black","Female","Iowa",1992,"West North Central","Midwest","IA",36.7205556952512,46.5215977574324,59.3305122644966,47.0147199057098
+"575",15,24,1,1,"Injuries","Black","Female","Iowa",1992,"West North Central","Midwest","IA",31.0224143067314,35.8818883732288,43.087204913005,36.2262033411818
+"576",15,24,1,1,"Non-communicable","Black","Female","Iowa",1992,"West North Central","Midwest","IA",93.1327817042132,113.767659291695,140.07491667634,114.537412555504
+"577",15,25,0,0,"All other causes","White","Male","Iowa",1993,"West North Central","Midwest","IA",103.980664417889,107.74051599447,111.244058531,107.686629403774
+"578",15,25,0,0,"Cancers","White","Male","Iowa",1993,"West North Central","Midwest","IA",252.076906803146,257.398346099994,262.874058920668,257.414433013076
+"579",15,25,0,0,"Cardiovascular","White","Male","Iowa",1993,"West North Central","Midwest","IA",454.849340535495,464.983089520617,474.248124490834,464.86333703404
+"580",15,25,0,0,"Communicable","White","Male","Iowa",1993,"West North Central","Midwest","IA",57.2408482107789,60.499815284037,64.0121128803014,60.494464350037
+"581",15,25,0,0,"Injuries","White","Male","Iowa",1993,"West North Central","Midwest","IA",70.0611251846397,72.3042761396331,74.4560736173801,72.3066059174573
+"582",15,25,0,0,"Non-communicable","White","Male","Iowa",1993,"West North Central","Midwest","IA",104.532723770446,107.891342740621,111.999484189602,107.934131347453
+"583",15,25,0,1,"All other causes","White","Female","Iowa",1993,"West North Central","Midwest","IA",78.5129349412305,80.990981621058,83.733983281488,81.007303423292
+"584",15,25,0,1,"Cancers","White","Female","Iowa",1993,"West North Central","Midwest","IA",159.567271954804,163.022424044256,166.199761678813,163.027324853767
+"585",15,25,0,1,"Cardiovascular","White","Female","Iowa",1993,"West North Central","Midwest","IA",288.840547933243,294.116589988443,300.095249781674,294.198885502459
+"586",15,25,0,1,"Communicable","White","Female","Iowa",1993,"West North Central","Midwest","IA",33.6101003537388,35.2393554460579,37.1695477839386,35.2951025289059
+"587",15,25,0,1,"Injuries","White","Female","Iowa",1993,"West North Central","Midwest","IA",26.4088992296911,27.5344734473499,28.624682683041,27.5298771574655
+"588",15,25,0,1,"Non-communicable","White","Female","Iowa",1993,"West North Central","Midwest","IA",58.4902379615388,60.6053863959264,62.8985181618024,60.6123983224193
+"589",15,25,1,0,"All other causes","Black","Male","Iowa",1993,"West North Central","Midwest","IA",156.207599411324,181.177760978388,212.496329068058,182.045934209842
+"590",15,25,1,0,"Cancers","Black","Male","Iowa",1993,"West North Central","Midwest","IA",326.667272814426,376.83661531852,437.691783118095,377.741274324611
+"591",15,25,1,0,"Cardiovascular","Black","Male","Iowa",1993,"West North Central","Midwest","IA",486.399830932475,565.181174169286,649.757919576593,566.039806647549
+"592",15,25,1,0,"Communicable","Black","Male","Iowa",1993,"West North Central","Midwest","IA",72.6442530221932,103.961768705304,161.352915277886,107.295484793903
+"593",15,25,1,0,"Injuries","Black","Male","Iowa",1993,"West North Central","Midwest","IA",92.3162181543356,110.572856321978,130.003838119442,110.584243145704
+"594",15,25,1,0,"Non-communicable","Black","Male","Iowa",1993,"West North Central","Midwest","IA",107.960426603911,127.196281013019,156.024051222107,128.911530183088
+"595",15,25,1,1,"All other causes","Black","Female","Iowa",1993,"West North Central","Midwest","IA",116.38318371071,137.292244659952,160.407757057489,137.477451646452
+"596",15,25,1,1,"Cancers","Black","Female","Iowa",1993,"West North Central","Midwest","IA",170.724824291021,195.269276440875,227.004453100329,196.249734246753
+"597",15,25,1,1,"Cardiovascular","Black","Female","Iowa",1993,"West North Central","Midwest","IA",366.717950985302,408.923902647797,458.434191181756,409.813675730726
+"598",15,25,1,1,"Communicable","Black","Female","Iowa",1993,"West North Central","Midwest","IA",36.7752673751933,46.9559583309282,61.7693214994869,47.5075120189946
+"599",15,25,1,1,"Injuries","Black","Female","Iowa",1993,"West North Central","Midwest","IA",30.5716754697846,35.8993698998929,43.0236413467877,36.1074410792895
+"600",15,25,1,1,"Non-communicable","Black","Female","Iowa",1993,"West North Central","Midwest","IA",94.0930315716651,116.65432876679,140.74526254125,116.945314347151
+"601",15,26,0,0,"All other causes","White","Male","Iowa",1994,"West North Central","Midwest","IA",106.43558148695,109.879300398344,113.715888200166,109.936437752826
+"602",15,26,0,0,"Cancers","White","Male","Iowa",1994,"West North Central","Midwest","IA",250.786064933362,255.946919835732,261.243341666904,256.044781216511
+"603",15,26,0,0,"Cardiovascular","White","Male","Iowa",1994,"West North Central","Midwest","IA",446.296053204157,455.433550687112,464.791673072389,455.343913371272
+"604",15,26,0,0,"Communicable","White","Male","Iowa",1994,"West North Central","Midwest","IA",56.1605690120795,59.4835898055499,62.7639567753148,59.466937771496
+"605",15,26,0,0,"Injuries","White","Male","Iowa",1994,"West North Central","Midwest","IA",70.8930826919494,73.2429081128343,75.9396904124899,73.3144889268179
+"606",15,26,0,0,"Non-communicable","White","Male","Iowa",1994,"West North Central","Midwest","IA",105.121359230571,108.684653523544,112.253928138547,108.674645134245
+"607",15,26,0,1,"All other causes","White","Female","Iowa",1994,"West North Central","Midwest","IA",78.7881642709526,81.2806948865069,83.931564936509,81.2747364828883
+"608",15,26,0,1,"Cancers","White","Female","Iowa",1994,"West North Central","Midwest","IA",159.181470171886,162.33320582348,165.522967632666,162.336280360208
+"609",15,26,0,1,"Cardiovascular","White","Female","Iowa",1994,"West North Central","Midwest","IA",276.705248933032,282.207753507831,287.873484852528,282.311707928609
+"610",15,26,0,1,"Communicable","White","Female","Iowa",1994,"West North Central","Midwest","IA",33.4104367176842,35.037859554511,36.8854595430028,35.0438024437748
+"611",15,26,0,1,"Injuries","White","Female","Iowa",1994,"West North Central","Midwest","IA",26.1783516824511,27.3018952441663,28.401244197539,27.286889179859
+"612",15,26,0,1,"Non-communicable","White","Female","Iowa",1994,"West North Central","Midwest","IA",58.9996918199372,61.1742215607448,63.2508141481005,61.1725446485638
+"613",15,26,1,0,"All other causes","Black","Male","Iowa",1994,"West North Central","Midwest","IA",155.544504828034,179.961482044887,213.540178187598,181.242958911643
+"614",15,26,1,0,"Cancers","Black","Male","Iowa",1994,"West North Central","Midwest","IA",317.150799663708,370.901418946272,432.731860912386,372.496034857713
+"615",15,26,1,0,"Cardiovascular","Black","Male","Iowa",1994,"West North Central","Midwest","IA",489.326785442102,565.597678112077,643.826348629142,566.342356105879
+"616",15,26,1,0,"Communicable","Black","Male","Iowa",1994,"West North Central","Midwest","IA",73.52761895907,104.823671519866,164.040043339394,108.255682751052
+"617",15,26,1,0,"Injuries","Black","Male","Iowa",1994,"West North Central","Midwest","IA",89.4335328985828,107.051926340393,126.705840633512,107.574128693208
+"618",15,26,1,0,"Non-communicable","Black","Male","Iowa",1994,"West North Central","Midwest","IA",108.666512807189,128.912882717365,159.271186394426,130.232194169416
+"619",15,26,1,1,"All other causes","Black","Female","Iowa",1994,"West North Central","Midwest","IA",116.315172635219,137.07658735367,161.137862354081,137.703141529571
+"620",15,26,1,1,"Cancers","Black","Female","Iowa",1994,"West North Central","Midwest","IA",170.555334397764,194.925221855274,228.186056055383,195.856850464821
+"621",15,26,1,1,"Cardiovascular","Black","Female","Iowa",1994,"West North Central","Midwest","IA",376.297078854968,420.138609424482,471.903056860656,421.17247809892
+"622",15,26,1,1,"Communicable","Black","Female","Iowa",1994,"West North Central","Midwest","IA",37.1967621801392,47.0201284775758,62.1450912342993,47.6409366097226
+"623",15,26,1,1,"Injuries","Black","Female","Iowa",1994,"West North Central","Midwest","IA",30.8022884589162,35.9316563489267,42.9056141379916,36.024946543959
+"624",15,26,1,1,"Non-communicable","Black","Female","Iowa",1994,"West North Central","Midwest","IA",95.857464833796,118.096262505251,143.088337137073,118.685572161321
+"625",15,27,0,0,"All other causes","White","Male","Iowa",1995,"West North Central","Midwest","IA",108.102667327654,111.722164708814,115.431166790551,111.662118904124
+"626",15,27,0,0,"Cancers","White","Male","Iowa",1995,"West North Central","Midwest","IA",243.356815197254,248.743232764739,253.970953587721,248.793386507926
+"627",15,27,0,0,"Cardiovascular","White","Male","Iowa",1995,"West North Central","Midwest","IA",437.812263751665,447.064422275097,455.9213200626,447.065636742194
+"628",15,27,0,0,"Communicable","White","Male","Iowa",1995,"West North Central","Midwest","IA",54.9943583492875,58.4114360210126,61.9020248492772,58.3789634008428
+"629",15,27,0,0,"Injuries","White","Male","Iowa",1995,"West North Central","Midwest","IA",70.5036057581524,72.7628546815012,75.2142190287819,72.7675463352705
+"630",15,27,0,0,"Non-communicable","White","Male","Iowa",1995,"West North Central","Midwest","IA",103.846197651372,107.334690951979,111.467908681835,107.338140553514
+"631",15,27,0,1,"All other causes","White","Female","Iowa",1995,"West North Central","Midwest","IA",80.6286039115303,83.1514921307027,85.7034281942653,83.1602288568563
+"632",15,27,0,1,"Cancers","White","Female","Iowa",1995,"West North Central","Midwest","IA",157.857976395816,160.864254726111,164.079693388553,160.874511579057
+"633",15,27,0,1,"Cardiovascular","White","Female","Iowa",1995,"West North Central","Midwest","IA",279.546002154483,285.310087385279,290.928644085956,285.357525544307
+"634",15,27,0,1,"Communicable","White","Female","Iowa",1995,"West North Central","Midwest","IA",33.2311345017654,34.9459963598227,36.7994026134767,34.9755324503631
+"635",15,27,0,1,"Injuries","White","Female","Iowa",1995,"West North Central","Midwest","IA",26.4763002794195,27.5455726123884,28.7478262567279,27.5581392871988
+"636",15,27,0,1,"Non-communicable","White","Female","Iowa",1995,"West North Central","Midwest","IA",60.4634356350108,62.5392849200338,64.7378050908095,62.5300036646502
+"637",15,27,1,0,"All other causes","Black","Male","Iowa",1995,"West North Central","Midwest","IA",153.91358788566,178.189179924059,213.456656198079,179.973528650795
+"638",15,27,1,0,"Cancers","Black","Male","Iowa",1995,"West North Central","Midwest","IA",312.813298225031,361.091528719018,422.450593400082,363.191642693799
+"639",15,27,1,0,"Cardiovascular","Black","Male","Iowa",1995,"West North Central","Midwest","IA",484.906909596891,561.395664357227,642.131313117975,562.481274161386
+"640",15,27,1,0,"Communicable","Black","Male","Iowa",1995,"West North Central","Midwest","IA",73.0865426102532,103.237109756314,158.173889813802,106.837649062617
+"641",15,27,1,0,"Injuries","Black","Male","Iowa",1995,"West North Central","Midwest","IA",87.792631994624,105.073192407152,125.230934159107,105.285976085714
+"642",15,27,1,0,"Non-communicable","Black","Male","Iowa",1995,"West North Central","Midwest","IA",109.432317152152,131.372387085143,162.935841000483,132.479783438442
+"643",15,27,1,1,"All other causes","Black","Female","Iowa",1995,"West North Central","Midwest","IA",115.113608897527,137.504764501433,162.898431584879,138.173728070775
+"644",15,27,1,1,"Cancers","Black","Female","Iowa",1995,"West North Central","Midwest","IA",168.486806064989,194.611824253688,227.203492513578,195.689194461105
+"645",15,27,1,1,"Cardiovascular","Black","Female","Iowa",1995,"West North Central","Midwest","IA",371.400350075938,418.391819120675,466.145243964413,419.046294701138
+"646",15,27,1,1,"Communicable","Black","Female","Iowa",1995,"West North Central","Midwest","IA",37.1962209391427,46.7676471871595,60.8734781657285,47.4412205363234
+"647",15,27,1,1,"Injuries","Black","Female","Iowa",1995,"West North Central","Midwest","IA",30.2909076440905,35.79058232276,42.8351571965613,35.9066150814196
+"648",15,27,1,1,"Non-communicable","Black","Female","Iowa",1995,"West North Central","Midwest","IA",97.3517749910317,119.97555591164,145.836527768077,119.984032414999
+"649",15,28,0,0,"All other causes","White","Male","Iowa",1996,"West North Central","Midwest","IA",107.35400729301,110.911857755772,114.685973265633,110.970975712817
+"650",15,28,0,0,"Cancers","White","Male","Iowa",1996,"West North Central","Midwest","IA",242.364908592161,247.502243318066,252.981338017341,247.596191265584
+"651",15,28,0,0,"Cardiovascular","White","Male","Iowa",1996,"West North Central","Midwest","IA",425.118428699362,434.637323398443,443.512495466363,434.623975062879
+"652",15,28,0,0,"Communicable","White","Male","Iowa",1996,"West North Central","Midwest","IA",50.4978290980224,53.6725607809493,56.7790686272431,53.6732265277289
+"653",15,28,0,0,"Injuries","White","Male","Iowa",1996,"West North Central","Midwest","IA",69.1819981879699,71.5014161894809,73.9722286751352,71.5014401242471
+"654",15,28,0,0,"Non-communicable","White","Male","Iowa",1996,"West North Central","Midwest","IA",102.652820004093,106.044885790806,109.671939293285,106.070105047161
+"655",15,28,0,1,"All other causes","White","Female","Iowa",1996,"West North Central","Midwest","IA",82.7890623863625,85.3021927320519,87.8867228393438,85.3170586541013
+"656",15,28,0,1,"Cancers","White","Female","Iowa",1996,"West North Central","Midwest","IA",157.823968725889,161.038628652572,164.023827199685,160.998231340842
+"657",15,28,0,1,"Cardiovascular","White","Female","Iowa",1996,"West North Central","Midwest","IA",275.614400778783,281.17624864021,286.74557497954,281.242144360064
+"658",15,28,0,1,"Communicable","White","Female","Iowa",1996,"West North Central","Midwest","IA",32.2206447457542,33.8130031064668,35.6587290809732,33.854219510782
+"659",15,28,0,1,"Injuries","White","Female","Iowa",1996,"West North Central","Midwest","IA",26.3345378404352,27.4689761434978,28.6631062598254,27.4849949944943
+"660",15,28,0,1,"Non-communicable","White","Female","Iowa",1996,"West North Central","Midwest","IA",61.5158891444042,63.7584451124384,66.0092845488437,63.776568718868
+"661",15,28,1,0,"All other causes","Black","Male","Iowa",1996,"West North Central","Midwest","IA",152.295962013391,176.500893785911,209.080462879685,177.356650613018
+"662",15,28,1,0,"Cancers","Black","Male","Iowa",1996,"West North Central","Midwest","IA",303.94146076751,352.335794594047,411.332797683751,354.516431944959
+"663",15,28,1,0,"Cardiovascular","Black","Male","Iowa",1996,"West North Central","Midwest","IA",472.260278398549,541.551486760796,618.039971744365,542.390757283186
+"664",15,28,1,0,"Communicable","Black","Male","Iowa",1996,"West North Central","Midwest","IA",72.4435767107594,101.440409977533,159.264407447964,105.468204797913
+"665",15,28,1,0,"Injuries","Black","Male","Iowa",1996,"West North Central","Midwest","IA",84.8042773701023,101.976012038765,121.473987033742,102.220625741024
+"666",15,28,1,0,"Non-communicable","Black","Male","Iowa",1996,"West North Central","Midwest","IA",110.704921966453,133.536285109043,164.710976271041,134.137756215464
+"667",15,28,1,1,"All other causes","Black","Female","Iowa",1996,"West North Central","Midwest","IA",117.134268079728,138.182793055561,163.484620464833,139.17644867163
+"668",15,28,1,1,"Cancers","Black","Female","Iowa",1996,"West North Central","Midwest","IA",167.18749887754,193.424248769237,224.138067752146,194.349709822013
+"669",15,28,1,1,"Cardiovascular","Black","Female","Iowa",1996,"West North Central","Midwest","IA",363.684151209283,407.9830593498,455.250947899784,408.401754412201
+"670",15,28,1,1,"Communicable","Black","Female","Iowa",1996,"West North Central","Midwest","IA",37.15003477185,46.7755009273383,60.996736722095,47.3009875266886
+"671",15,28,1,1,"Injuries","Black","Female","Iowa",1996,"West North Central","Midwest","IA",30.1934413576181,35.6000554252465,42.9954726880993,35.8104516994765
+"672",15,28,1,1,"Non-communicable","Black","Female","Iowa",1996,"West North Central","Midwest","IA",98.0402714723876,120.965020998771,146.921494377583,120.958996771837
+"673",15,29,0,0,"All other causes","White","Male","Iowa",1997,"West North Central","Midwest","IA",108.537903256296,112.130306351056,115.914139747501,112.159091809175
+"674",15,29,0,0,"Cancers","White","Male","Iowa",1997,"West North Central","Midwest","IA",240.383294414445,245.505411669444,251.020263899214,245.552741867151
+"675",15,29,0,0,"Cardiovascular","White","Male","Iowa",1997,"West North Central","Midwest","IA",424.527060320991,432.81113322676,442.108853730691,433.016807852596
+"676",15,29,0,0,"Communicable","White","Male","Iowa",1997,"West North Central","Midwest","IA",51.0095102435891,53.8778374842631,57.0215229166543,53.9395316488978
+"677",15,29,0,0,"Injuries","White","Male","Iowa",1997,"West North Central","Midwest","IA",67.9067858282595,70.3184681820846,72.5819209608287,70.2921863731886
+"678",15,29,0,0,"Non-communicable","White","Male","Iowa",1997,"West North Central","Midwest","IA",103.806570583149,107.211695606197,110.613654698812,107.251177161129
+"679",15,29,0,1,"All other causes","White","Female","Iowa",1997,"West North Central","Midwest","IA",84.81831703819,87.429773965873,90.1455615970091,87.4612020712385
+"680",15,29,0,1,"Cancers","White","Female","Iowa",1997,"West North Central","Midwest","IA",156.19417504427,159.458384801952,162.463128884459,159.42215766107
+"681",15,29,0,1,"Cardiovascular","White","Female","Iowa",1997,"West North Central","Midwest","IA",265.747556646378,270.678203754812,276.132240223462,270.728634321304
+"682",15,29,0,1,"Communicable","White","Female","Iowa",1997,"West North Central","Midwest","IA",33.6105006940306,35.2626849760408,37.0305433478622,35.2730920613022
+"683",15,29,0,1,"Injuries","White","Female","Iowa",1997,"West North Central","Midwest","IA",26.506498000666,27.7060648045888,28.8109909807021,27.6920839983977
+"684",15,29,0,1,"Non-communicable","White","Female","Iowa",1997,"West North Central","Midwest","IA",63.3131791616133,65.5274645682457,67.8012485669405,65.4972141071915
+"685",15,29,1,0,"All other causes","Black","Male","Iowa",1997,"West North Central","Midwest","IA",151.177796673088,174.259754390996,207.700516192351,175.44845889212
+"686",15,29,1,0,"Cancers","Black","Male","Iowa",1997,"West North Central","Midwest","IA",295.155131827906,345.159819724474,406.301022563793,347.490594539176
+"687",15,29,1,0,"Cardiovascular","Black","Male","Iowa",1997,"West North Central","Midwest","IA",452.069965853112,520.978711715482,600.318828083435,522.594160229223
+"688",15,29,1,0,"Communicable","Black","Male","Iowa",1997,"West North Central","Midwest","IA",71.0334265203752,99.4984881496976,160.902536220409,103.449559445979
+"689",15,29,1,0,"Injuries","Black","Male","Iowa",1997,"West North Central","Midwest","IA",82.6412202111095,99.2259556977045,118.541862915722,99.2640405603818
+"690",15,29,1,0,"Non-communicable","Black","Male","Iowa",1997,"West North Central","Midwest","IA",111.42505286855,135.272427129704,168.2910260713,136.274655520681
+"691",15,29,1,1,"All other causes","Black","Female","Iowa",1997,"West North Central","Midwest","IA",117.84332406318,138.693064976753,165.222912698189,139.210247371927
+"692",15,29,1,1,"Cancers","Black","Female","Iowa",1997,"West North Central","Midwest","IA",165.890539020356,192.957901570875,222.028579624588,193.099039210052
+"693",15,29,1,1,"Cardiovascular","Black","Female","Iowa",1997,"West North Central","Midwest","IA",358.824582667845,401.234987502803,444.155173718352,401.074628973157
+"694",15,29,1,1,"Communicable","Black","Female","Iowa",1997,"West North Central","Midwest","IA",37.047802531402,46.5531851739739,60.5236483272226,46.9346372148324
+"695",15,29,1,1,"Injuries","Black","Female","Iowa",1997,"West North Central","Midwest","IA",29.9098728858579,35.346649543954,42.7918253233407,35.6133215317617
+"696",15,29,1,1,"Non-communicable","Black","Female","Iowa",1997,"West North Central","Midwest","IA",99.5592995427081,121.593333594644,146.475523428855,122.095163696594
+"697",15,30,0,0,"All other causes","White","Male","Iowa",1998,"West North Central","Midwest","IA",112.695665705051,116.129765028843,119.922762162251,116.208059780218
+"698",15,30,0,0,"Cancers","White","Male","Iowa",1998,"West North Central","Midwest","IA",238.327167796561,243.208002096878,248.632124664013,243.276478917078
+"699",15,30,0,0,"Cardiovascular","White","Male","Iowa",1998,"West North Central","Midwest","IA",410.692474526421,418.893955140383,427.787023784936,418.86564882581
+"700",15,30,0,0,"Communicable","White","Male","Iowa",1998,"West North Central","Midwest","IA",51.9730868795972,55.3429097446184,58.7707442290078,55.3702255154058
+"701",15,30,0,0,"Injuries","White","Male","Iowa",1998,"West North Central","Midwest","IA",66.9480466195446,69.3162241981016,71.5042614014771,69.3099128393093
+"702",15,30,0,0,"Non-communicable","White","Male","Iowa",1998,"West North Central","Midwest","IA",108.205941063082,111.984023444196,115.618036287845,111.988486737977
+"703",15,30,0,1,"All other causes","White","Female","Iowa",1998,"West North Central","Midwest","IA",87.9973538556277,90.4342765363284,93.0766594852654,90.4703212418663
+"704",15,30,0,1,"Cancers","White","Female","Iowa",1998,"West North Central","Midwest","IA",155.687441412694,158.722175842323,161.887529974555,158.779432884984
+"705",15,30,0,1,"Cardiovascular","White","Female","Iowa",1998,"West North Central","Midwest","IA",266.094215557293,271.236883909607,276.465097312255,271.282205809482
+"706",15,30,0,1,"Communicable","White","Female","Iowa",1998,"West North Central","Midwest","IA",35.1438164866352,37.0862019079081,39.01826312134,37.1044236862578
+"707",15,30,0,1,"Injuries","White","Female","Iowa",1998,"West North Central","Midwest","IA",26.5664657565964,27.7044245502585,28.8825997283312,27.698921089351
+"708",15,30,0,1,"Non-communicable","White","Female","Iowa",1998,"West North Central","Midwest","IA",66.2256557918983,68.5081291304237,70.8275081367348,68.5497011072668
+"709",15,30,1,0,"All other causes","Black","Male","Iowa",1998,"West North Central","Midwest","IA",149.119323907484,171.377333177622,202.797781290138,172.801386485658
+"710",15,30,1,0,"Cancers","Black","Male","Iowa",1998,"West North Central","Midwest","IA",293.844000271932,341.006842856337,400.889066426538,342.703422163889
+"711",15,30,1,0,"Cardiovascular","Black","Male","Iowa",1998,"West North Central","Midwest","IA",448.324795038533,513.211226315204,585.512840507959,514.003926993137
+"712",15,30,1,0,"Communicable","Black","Male","Iowa",1998,"West North Central","Midwest","IA",69.5055906861208,96.6382097217845,151.900419413893,99.962179717228
+"713",15,30,1,0,"Injuries","Black","Male","Iowa",1998,"West North Central","Midwest","IA",79.9123017841839,95.7655487166229,114.635313701915,95.9942455222311
+"714",15,30,1,0,"Non-communicable","Black","Male","Iowa",1998,"West North Central","Midwest","IA",111.701141704948,136.606565746725,172.86698332621,137.704602739332
+"715",15,30,1,1,"All other causes","Black","Female","Iowa",1998,"West North Central","Midwest","IA",118.45027780209,139.259288854912,165.336806152524,139.739157702899
+"716",15,30,1,1,"Cancers","Black","Female","Iowa",1998,"West North Central","Midwest","IA",164.620080116676,192.126355029458,220.348681901301,192.004071224091
+"717",15,30,1,1,"Cardiovascular","Black","Female","Iowa",1998,"West North Central","Midwest","IA",347.494267088368,390.356929523654,441.408046915655,391.505596867798
+"718",15,30,1,1,"Communicable","Black","Female","Iowa",1998,"West North Central","Midwest","IA",36.5050815319724,45.8758000613271,59.0096409537517,46.3117411371774
+"719",15,30,1,1,"Injuries","Black","Female","Iowa",1998,"West North Central","Midwest","IA",29.7294266460526,35.3555317021235,42.7662598003228,35.5000053341817
+"720",15,30,1,1,"Non-communicable","Black","Female","Iowa",1998,"West North Central","Midwest","IA",100.809582066305,122.609848323016,146.407559016592,122.990184665479
+"721",15,31,0,0,"All other causes","White","Male","Iowa",1999,"West North Central","Midwest","IA",112.982885822505,116.956840800836,120.596323831915,116.964345580412
+"722",15,31,0,0,"Cancers","White","Male","Iowa",1999,"West North Central","Midwest","IA",237.153381281574,242.128838701331,247.02341689161,242.19901709666
+"723",15,31,0,0,"Cardiovascular","White","Male","Iowa",1999,"West North Central","Midwest","IA",391.676494434157,400.523856124664,408.679676426306,400.386506882528
+"724",15,31,0,0,"Communicable","White","Male","Iowa",1999,"West North Central","Midwest","IA",46.1632083770963,48.8855936523299,51.7179256497301,48.8862800759716
+"725",15,31,0,0,"Injuries","White","Male","Iowa",1999,"West North Central","Midwest","IA",66.4102028660833,68.646267192325,70.871559251894,68.6592090579409
+"726",15,31,0,0,"Non-communicable","White","Male","Iowa",1999,"West North Central","Midwest","IA",114.827594417854,118.733158364772,122.865707440735,118.781499859146
+"727",15,31,0,1,"All other causes","White","Female","Iowa",1999,"West North Central","Midwest","IA",90.4105906181943,92.9583764910072,95.6212968234321,93.0053080190712
+"728",15,31,0,1,"Cancers","White","Female","Iowa",1999,"West North Central","Midwest","IA",154.274549054332,157.333971441563,160.627685519912,157.364029862223
+"729",15,31,0,1,"Cardiovascular","White","Female","Iowa",1999,"West North Central","Midwest","IA",260.900328046137,266.266874687082,271.58853315748,266.305316613781
+"730",15,31,0,1,"Communicable","White","Female","Iowa",1999,"West North Central","Midwest","IA",32.3264749267526,34.0143202148254,35.7367348503836,34.0110302031445
+"731",15,31,0,1,"Injuries","White","Female","Iowa",1999,"West North Central","Midwest","IA",26.4293826932156,27.5363870739577,28.7710166740749,27.5578989826994
+"732",15,31,0,1,"Non-communicable","White","Female","Iowa",1999,"West North Central","Midwest","IA",75.2139355461938,77.8038095472405,80.197832173331,77.79422350769
+"733",15,31,1,0,"All other causes","Black","Male","Iowa",1999,"West North Central","Midwest","IA",148.477487043241,170.229742906682,201.926220438505,171.606957531009
+"734",15,31,1,0,"Cancers","Black","Male","Iowa",1999,"West North Central","Midwest","IA",288.309041335352,338.207164708508,394.108823805451,339.617816896336
+"735",15,31,1,0,"Cardiovascular","Black","Male","Iowa",1999,"West North Central","Midwest","IA",428.839133563096,489.349344414599,560.977676831803,490.947089182628
+"736",15,31,1,0,"Communicable","Black","Male","Iowa",1999,"West North Central","Midwest","IA",68.1943432559188,94.0001926526699,140.135067494263,96.8623762464506
+"737",15,31,1,0,"Injuries","Black","Male","Iowa",1999,"West North Central","Midwest","IA",77.4910872184214,92.973818676874,112.56566755761,93.3150208724264
+"738",15,31,1,0,"Non-communicable","Black","Male","Iowa",1999,"West North Central","Midwest","IA",111.011532211062,138.00003076036,173.656700407946,138.928566271188
+"739",15,31,1,1,"All other causes","Black","Female","Iowa",1999,"West North Central","Midwest","IA",119.378708010271,139.658544261933,166.641222939297,140.625308914149
+"740",15,31,1,1,"Cancers","Black","Female","Iowa",1999,"West North Central","Midwest","IA",160.677798211229,191.254357834758,218.890304217869,191.204569814366
+"741",15,31,1,1,"Cardiovascular","Black","Female","Iowa",1999,"West North Central","Midwest","IA",337.775734914166,377.080330855596,424.777142447993,377.860797027543
+"742",15,31,1,1,"Communicable","Black","Female","Iowa",1999,"West North Central","Midwest","IA",35.7703468403426,45.1929350134973,57.582182752067,45.5334925510228
+"743",15,31,1,1,"Injuries","Black","Female","Iowa",1999,"West North Central","Midwest","IA",29.6950848689654,35.3112778829855,42.4849661040902,35.5107403859695
+"744",15,31,1,1,"Non-communicable","Black","Female","Iowa",1999,"West North Central","Midwest","IA",101.901132057993,122.735990611381,148.53732806765,123.342877218093
+"745",15,32,0,0,"All other causes","White","Male","Iowa",2000,"West North Central","Midwest","IA",116.053241424425,119.717273113296,123.319945512356,119.678160593825
+"746",15,32,0,0,"Cancers","White","Male","Iowa",2000,"West North Central","Midwest","IA",235.826966639953,240.667368697005,245.796127088891,240.688218841809
+"747",15,32,0,0,"Cardiovascular","White","Male","Iowa",2000,"West North Central","Midwest","IA",378.62187748624,386.394059700884,394.498382571788,386.385377563021
+"748",15,32,0,0,"Communicable","White","Male","Iowa",2000,"West North Central","Midwest","IA",41.5546570651272,44.2382399706511,47.0838341828563,44.278635714797
+"749",15,32,0,0,"Injuries","White","Male","Iowa",2000,"West North Central","Midwest","IA",66.2994147797116,68.4477513654469,70.7634791661163,68.4687094158567
+"750",15,32,0,0,"Non-communicable","White","Male","Iowa",2000,"West North Central","Midwest","IA",115.261757212612,119.116758717179,122.877416093693,119.181255938168
+"751",15,32,0,1,"All other causes","White","Female","Iowa",2000,"West North Central","Midwest","IA",90.9839619920917,93.9731773109766,96.7637121193381,93.9515847377603
+"752",15,32,0,1,"Cancers","White","Female","Iowa",2000,"West North Central","Midwest","IA",154.34611271388,157.466497790977,160.343195447885,157.435823961538
+"753",15,32,0,1,"Cardiovascular","White","Female","Iowa",2000,"West North Central","Midwest","IA",250.962011919522,256.522817833522,261.647283608125,256.492261437666
+"754",15,32,0,1,"Communicable","White","Female","Iowa",2000,"West North Central","Midwest","IA",29.2093971355361,30.7872526909903,32.368481308216,30.7979144836895
+"755",15,32,0,1,"Injuries","White","Female","Iowa",2000,"West North Central","Midwest","IA",26.1028134757562,27.1490624234196,28.3031505425946,27.170052298502
+"756",15,32,0,1,"Non-communicable","White","Female","Iowa",2000,"West North Central","Midwest","IA",80.024390926631,82.3529654779691,85.2356004683389,82.4355410754499
+"757",15,32,1,0,"All other causes","Black","Male","Iowa",2000,"West North Central","Midwest","IA",146.644271382121,167.902957904402,199.180012435818,169.736208391753
+"758",15,32,1,0,"Cancers","Black","Male","Iowa",2000,"West North Central","Midwest","IA",288.731405574153,336.250125756461,393.133752565576,337.803713562816
+"759",15,32,1,0,"Cardiovascular","Black","Male","Iowa",2000,"West North Central","Midwest","IA",412.19798463723,477.406491271321,547.885487293647,478.982026169682
+"760",15,32,1,0,"Communicable","Black","Male","Iowa",2000,"West North Central","Midwest","IA",65.0968601557029,91.5256643399695,138.87396098327,93.8319637738968
+"761",15,32,1,0,"Injuries","Black","Male","Iowa",2000,"West North Central","Midwest","IA",74.9967159974063,90.4614625789522,108.426895138866,90.7102093462284
+"762",15,32,1,0,"Non-communicable","Black","Male","Iowa",2000,"West North Central","Midwest","IA",110.732179380885,139.554757024559,175.891599245981,140.378800107315
+"763",15,32,1,1,"All other causes","Black","Female","Iowa",2000,"West North Central","Midwest","IA",119.864531898366,140.590353522804,170.87141319797,141.07230614192
+"764",15,32,1,1,"Cancers","Black","Female","Iowa",2000,"West North Central","Midwest","IA",162.048595752538,191.225019406633,218.195206607557,191.034804999714
+"765",15,32,1,1,"Cardiovascular","Black","Female","Iowa",2000,"West North Central","Midwest","IA",326.452583478184,367.039691414579,413.325981524284,368.015445103542
+"766",15,32,1,1,"Communicable","Black","Female","Iowa",2000,"West North Central","Midwest","IA",35.2570597566775,44.4102999567298,56.5044337274538,44.7752743052073
+"767",15,32,1,1,"Injuries","Black","Female","Iowa",2000,"West North Central","Midwest","IA",29.9305468335388,35.4195850759278,43.0178400984597,35.6385110608358
+"768",15,32,1,1,"Non-communicable","Black","Female","Iowa",2000,"West North Central","Midwest","IA",101.11667131934,123.468889050982,147.054184147819,123.385793115906
+"769",15,33,0,0,"All other causes","White","Male","Iowa",2001,"West North Central","Midwest","IA",116.589616235186,120.322429232641,124.373220605759,120.346654657842
+"770",15,33,0,0,"Cancers","White","Male","Iowa",2001,"West North Central","Midwest","IA",231.626613245707,236.542984027622,241.331183609749,236.501874427026
+"771",15,33,0,0,"Cardiovascular","White","Male","Iowa",2001,"West North Central","Midwest","IA",366.530538018516,374.271286805341,382.708229389973,374.440546361228
+"772",15,33,0,0,"Communicable","White","Male","Iowa",2001,"West North Central","Midwest","IA",39.2797283453441,41.8807593387556,44.5773294018991,41.9034551489559
+"773",15,33,0,0,"Injuries","White","Male","Iowa",2001,"West North Central","Midwest","IA",66.313596512805,68.5349435741221,70.7602621298648,68.5440608575792
+"774",15,33,0,0,"Non-communicable","White","Male","Iowa",2001,"West North Central","Midwest","IA",115.747414532512,119.390585470345,123.146308219599,119.437512849233
+"775",15,33,0,1,"All other causes","White","Female","Iowa",2001,"West North Central","Midwest","IA",90.8015622415462,93.6682325140157,96.5132992000781,93.711875007192
+"776",15,33,0,1,"Cancers","White","Female","Iowa",2001,"West North Central","Midwest","IA",154.958646164908,157.961214101426,161.225622157553,158.005625201976
+"777",15,33,0,1,"Cardiovascular","White","Female","Iowa",2001,"West North Central","Midwest","IA",243.339712062391,248.319506247087,253.432940754648,248.392862236117
+"778",15,33,0,1,"Communicable","White","Female","Iowa",2001,"West North Central","Midwest","IA",28.5795327913588,30.0065807111562,31.528679661122,30.0156137071777
+"779",15,33,0,1,"Injuries","White","Female","Iowa",2001,"West North Central","Midwest","IA",26.1672238446415,27.3350903503132,28.5745488469879,27.3282122293652
+"780",15,33,0,1,"Non-communicable","White","Female","Iowa",2001,"West North Central","Midwest","IA",83.4328413154292,86.1415581793805,88.8632497371075,86.1206981262269
+"781",15,33,1,0,"All other causes","Black","Male","Iowa",2001,"West North Central","Midwest","IA",144.290206452287,166.191198345977,196.774280274903,167.66863671511
+"782",15,33,1,0,"Cancers","Black","Male","Iowa",2001,"West North Central","Midwest","IA",291.680647463694,336.190995854968,396.77682864965,337.782328309349
+"783",15,33,1,0,"Cardiovascular","Black","Male","Iowa",2001,"West North Central","Midwest","IA",405.599666117427,464.288403434974,527.429915970346,464.701401499413
+"784",15,33,1,0,"Communicable","Black","Male","Iowa",2001,"West North Central","Midwest","IA",63.0638636140683,88.4409979550883,126.316230178091,89.8639262815402
+"785",15,33,1,0,"Injuries","Black","Male","Iowa",2001,"West North Central","Midwest","IA",74.3836651325336,88.9830218673183,106.322243973475,89.3377541213921
+"786",15,33,1,0,"Non-communicable","Black","Male","Iowa",2001,"West North Central","Midwest","IA",111.142698132791,140.900447498053,179.754640240013,141.422986930666
+"787",15,33,1,1,"All other causes","Black","Female","Iowa",2001,"West North Central","Midwest","IA",120.912249334574,140.574785294999,168.840441391216,141.361543768346
+"788",15,33,1,1,"Cancers","Black","Female","Iowa",2001,"West North Central","Midwest","IA",161.655988255478,190.371225878395,217.86548031232,190.327098826917
+"789",15,33,1,1,"Cardiovascular","Black","Female","Iowa",2001,"West North Central","Midwest","IA",319.511499658084,359.757601361361,400.170723845224,359.756372588707
+"790",15,33,1,1,"Communicable","Black","Female","Iowa",2001,"West North Central","Midwest","IA",35.2031707137431,44.3185552571382,57.0251430533658,44.7238811627859
+"791",15,33,1,1,"Injuries","Black","Female","Iowa",2001,"West North Central","Midwest","IA",30.0704465163605,35.574601567824,43.4440782715854,35.8148279522361
+"792",15,33,1,1,"Non-communicable","Black","Female","Iowa",2001,"West North Central","Midwest","IA",101.512443911155,123.922104721152,146.946698196367,124.185841026113
+"793",15,34,0,0,"All other causes","White","Male","Iowa",2002,"West North Central","Midwest","IA",116.68851568392,120.423146535574,124.331763430777,120.38901385539
+"794",15,34,0,0,"Cancers","White","Male","Iowa",2002,"West North Central","Midwest","IA",229.162146185919,234.246204316116,239.508962507661,234.272514546589
+"795",15,34,0,0,"Cardiovascular","White","Male","Iowa",2002,"West North Central","Midwest","IA",356.715263167476,364.683325839385,373.820571004524,364.770235571066
+"796",15,34,0,0,"Communicable","White","Male","Iowa",2002,"West North Central","Midwest","IA",39.7176567553566,42.3412458323034,44.7889325838005,42.3195440239809
+"797",15,34,0,0,"Injuries","White","Male","Iowa",2002,"West North Central","Midwest","IA",66.6307654785536,68.8002308428932,71.0979807958838,68.817993482572
+"798",15,34,0,0,"Non-communicable","White","Male","Iowa",2002,"West North Central","Midwest","IA",117.411771891572,121.337328369042,125.158763672598,121.322187189352
+"799",15,34,0,1,"All other causes","White","Female","Iowa",2002,"West North Central","Midwest","IA",92.6665171284701,95.2443922886389,97.9361158513214,95.2406583646094
+"800",15,34,0,1,"Cancers","White","Female","Iowa",2002,"West North Central","Midwest","IA",154.512473470971,157.713484507268,161.034248983331,157.75533259223
+"801",15,34,0,1,"Cardiovascular","White","Female","Iowa",2002,"West North Central","Midwest","IA",239.899097925952,244.531406544668,249.147850402172,244.5694468436
+"802",15,34,0,1,"Communicable","White","Female","Iowa",2002,"West North Central","Midwest","IA",28.7978027175546,30.3610476528705,31.8847033610158,30.353737078229
+"803",15,34,0,1,"Injuries","White","Female","Iowa",2002,"West North Central","Midwest","IA",26.646526714671,27.843711951493,28.9858238942152,27.8519326245409
+"804",15,34,0,1,"Non-communicable","White","Female","Iowa",2002,"West North Central","Midwest","IA",85.4698838788601,88.2134054887582,90.9353319890918,88.1570113418873
+"805",15,34,1,0,"All other causes","Black","Male","Iowa",2002,"West North Central","Midwest","IA",143.50019997109,163.819763843733,195.780951359987,165.775955092063
+"806",15,34,1,0,"Cancers","Black","Male","Iowa",2002,"West North Central","Midwest","IA",283.693051957364,327.541240177717,382.8056198514,329.605123610716
+"807",15,34,1,0,"Cardiovascular","Black","Male","Iowa",2002,"West North Central","Midwest","IA",391.79371864059,446.014745232161,511.909464572013,446.757240086048
+"808",15,34,1,0,"Communicable","Black","Male","Iowa",2002,"West North Central","Midwest","IA",61.745486913869,84.4501949520931,119.774949240876,85.7879142425391
+"809",15,34,1,0,"Injuries","Black","Male","Iowa",2002,"West North Central","Midwest","IA",73.0694245003694,86.5943935193528,102.564272827993,87.2073906430426
+"810",15,34,1,0,"Non-communicable","Black","Male","Iowa",2002,"West North Central","Midwest","IA",111.773789351376,141.704317087848,180.978821531653,142.590810903361
+"811",15,34,1,1,"All other causes","Black","Female","Iowa",2002,"West North Central","Midwest","IA",120.053434294686,141.167958536585,170.657692628311,142.085597281508
+"812",15,34,1,1,"Cancers","Black","Female","Iowa",2002,"West North Central","Midwest","IA",160.943622962892,189.482415293512,217.801646778803,189.481402803445
+"813",15,34,1,1,"Cardiovascular","Black","Female","Iowa",2002,"West North Central","Midwest","IA",310.958192821219,350.438785787393,392.85382782969,350.599039333084
+"814",15,34,1,1,"Communicable","Black","Female","Iowa",2002,"West North Central","Midwest","IA",34.5887061823178,44.0004770939539,56.3907920567393,44.284315478911
+"815",15,34,1,1,"Injuries","Black","Female","Iowa",2002,"West North Central","Midwest","IA",30.2756902277963,35.9316885613269,43.8184712953424,36.1529971357593
+"816",15,34,1,1,"Non-communicable","Black","Female","Iowa",2002,"West North Central","Midwest","IA",103.187785132144,125.249667303503,149.880460100498,125.145277065644
+"817",15,35,0,0,"All other causes","White","Male","Iowa",2003,"West North Central","Midwest","IA",118.357220872267,122.018338916414,125.687682072225,122.064783746
+"818",15,35,0,0,"Cancers","White","Male","Iowa",2003,"West North Central","Midwest","IA",225.805920773171,230.932203332967,235.77456296152,230.800987240475
+"819",15,35,0,0,"Cardiovascular","White","Male","Iowa",2003,"West North Central","Midwest","IA",340.707916200662,348.005675086972,356.023278358319,348.061267529388
+"820",15,35,0,0,"Communicable","White","Male","Iowa",2003,"West North Central","Midwest","IA",39.0601183157799,41.5264019589234,43.9147374093611,41.5104896243429
+"821",15,35,0,0,"Injuries","White","Male","Iowa",2003,"West North Central","Midwest","IA",67.1627275537302,69.4242876111543,71.702333652651,69.4241426556373
+"822",15,35,0,0,"Non-communicable","White","Male","Iowa",2003,"West North Central","Midwest","IA",118.540236118289,122.183465569906,126.305111967793,122.226580268039
+"823",15,35,0,1,"All other causes","White","Female","Iowa",2003,"West North Central","Midwest","IA",96.0236752642093,98.8692447085973,101.704022036578,98.8434446030084
+"824",15,35,0,1,"Cancers","White","Female","Iowa",2003,"West North Central","Midwest","IA",153.422255914807,156.578027172589,159.69927261816,156.54000704526
+"825",15,35,0,1,"Cardiovascular","White","Female","Iowa",2003,"West North Central","Midwest","IA",227.772099915487,232.695534029824,237.496447813254,232.642956402605
+"826",15,35,0,1,"Communicable","White","Female","Iowa",2003,"West North Central","Midwest","IA",29.8944040893834,31.5160263840696,33.0966292364226,31.5094672297289
+"827",15,35,0,1,"Injuries","White","Female","Iowa",2003,"West North Central","Midwest","IA",27.3672673244897,28.5541565190228,29.7378589154506,28.5445990628001
+"828",15,35,0,1,"Non-communicable","White","Female","Iowa",2003,"West North Central","Midwest","IA",86.2144546293782,88.8427463048724,91.6151103774048,88.8161622657136
+"829",15,35,1,0,"All other causes","Black","Male","Iowa",2003,"West North Central","Midwest","IA",141.613807624755,163.16146840588,191.431620012017,164.61220902544
+"830",15,35,1,0,"Cancers","Black","Male","Iowa",2003,"West North Central","Midwest","IA",274.683613972568,318.571255997694,371.62693473323,320.031246362176
+"831",15,35,1,0,"Cardiovascular","Black","Male","Iowa",2003,"West North Central","Midwest","IA",367.724633188233,420.375335087426,480.421065930269,421.54479693741
+"832",15,35,1,0,"Communicable","Black","Male","Iowa",2003,"West North Central","Midwest","IA",59.4371795213208,80.140267606367,110.923597279428,81.3924090287688
+"833",15,35,1,0,"Injuries","Black","Male","Iowa",2003,"West North Central","Midwest","IA",70.764101019176,84.9425683509103,102.043058300214,85.3921728290521
+"834",15,35,1,0,"Non-communicable","Black","Male","Iowa",2003,"West North Central","Midwest","IA",112.036761184468,142.261816442317,183.920934821333,143.656955995624
+"835",15,35,1,1,"All other causes","Black","Female","Iowa",2003,"West North Central","Midwest","IA",121.607630120285,142.339942233196,171.069040562943,142.832678834113
+"836",15,35,1,1,"Cancers","Black","Female","Iowa",2003,"West North Central","Midwest","IA",159.130588178923,187.411361385008,215.440824706376,187.518413861847
+"837",15,35,1,1,"Cardiovascular","Black","Female","Iowa",2003,"West North Central","Midwest","IA",302.649353215713,338.18075643677,378.749143119737,338.417768435429
+"838",15,35,1,1,"Communicable","Black","Female","Iowa",2003,"West North Central","Midwest","IA",34.5702359878394,43.6217515743549,56.8014645024326,44.1304792835805
+"839",15,35,1,1,"Injuries","Black","Female","Iowa",2003,"West North Central","Midwest","IA",30.0219689989619,36.1128052967315,44.0580252721776,36.4077801307289
+"840",15,35,1,1,"Non-communicable","Black","Female","Iowa",2003,"West North Central","Midwest","IA",102.722294647991,125.625697229583,150.617510503127,125.885451114896
+"841",15,36,0,0,"All other causes","White","Male","Iowa",2004,"West North Central","Midwest","IA",119.697620774195,123.424516234776,127.196550188776,123.386336808459
+"842",15,36,0,0,"Cancers","White","Male","Iowa",2004,"West North Central","Midwest","IA",222.714840831138,227.351405283812,232.221855364228,227.316728601311
+"843",15,36,0,0,"Cardiovascular","White","Male","Iowa",2004,"West North Central","Midwest","IA",326.310279272087,333.772835875836,341.369095333147,333.747499836579
+"844",15,36,0,0,"Communicable","White","Male","Iowa",2004,"West North Central","Midwest","IA",37.452529998793,40.0096174838789,42.484904203353,39.976857906685
+"845",15,36,0,0,"Injuries","White","Male","Iowa",2004,"West North Central","Midwest","IA",67.5919961896664,69.7555586003871,72.1142138621097,69.7626471122027
+"846",15,36,0,0,"Non-communicable","White","Male","Iowa",2004,"West North Central","Midwest","IA",117.091196312367,120.802446749559,124.722997359394,120.818084031317
+"847",15,36,0,1,"All other causes","White","Female","Iowa",2004,"West North Central","Midwest","IA",96.1527548467987,99.2957550370094,102.352433367451,99.2946175927784
+"848",15,36,0,1,"Cancers","White","Female","Iowa",2004,"West North Central","Midwest","IA",151.817244269053,154.932667303435,158.225224466743,154.955848842621
+"849",15,36,0,1,"Cardiovascular","White","Female","Iowa",2004,"West North Central","Midwest","IA",211.977521197269,216.611222717382,221.387014816409,216.683862340761
+"850",15,36,0,1,"Communicable","White","Female","Iowa",2004,"West North Central","Midwest","IA",27.6264740149043,29.161481627118,30.6566642839222,29.1461823629371
+"851",15,36,0,1,"Injuries","White","Female","Iowa",2004,"West North Central","Midwest","IA",27.5520250733216,28.7403227135911,29.9786736406754,28.7573606453285
+"852",15,36,0,1,"Non-communicable","White","Female","Iowa",2004,"West North Central","Midwest","IA",86.9391706499441,89.8430920211862,92.6377510950268,89.8073323446264
+"853",15,36,1,0,"All other causes","Black","Male","Iowa",2004,"West North Central","Midwest","IA",141.80735894114,163.120452127708,193.692311504107,164.390908139276
+"854",15,36,1,0,"Cancers","Black","Male","Iowa",2004,"West North Central","Midwest","IA",268.827960785261,311.940203937084,365.052732812478,313.454894666788
+"855",15,36,1,0,"Cardiovascular","Black","Male","Iowa",2004,"West North Central","Midwest","IA",353.078526827098,401.900287511691,458.909487132251,403.106272313566
+"856",15,36,1,0,"Communicable","Black","Male","Iowa",2004,"West North Central","Midwest","IA",56.4138552407053,75.9167545590032,102.882930343735,76.5378828030653
+"857",15,36,1,0,"Injuries","Black","Male","Iowa",2004,"West North Central","Midwest","IA",69.7809117923756,83.7637159597781,100.75449536091,83.9808990006782
+"858",15,36,1,0,"Non-communicable","Black","Male","Iowa",2004,"West North Central","Midwest","IA",113.710186126184,143.484828485996,184.052555618581,144.909380664199
+"859",15,36,1,1,"All other causes","Black","Female","Iowa",2004,"West North Central","Midwest","IA",121.332144576059,143.561644048684,171.323030039874,144.020905063638
+"860",15,36,1,1,"Cancers","Black","Female","Iowa",2004,"West North Central","Midwest","IA",155.286820882338,185.696142531247,214.317027190432,185.904870350283
+"861",15,36,1,1,"Cardiovascular","Black","Female","Iowa",2004,"West North Central","Midwest","IA",288.118285550918,328.023912212386,368.331290512295,328.238442091101
+"862",15,36,1,1,"Communicable","Black","Female","Iowa",2004,"West North Central","Midwest","IA",33.9775119412859,43.1968593835458,56.4332168937313,43.6876462584031
+"863",15,36,1,1,"Injuries","Black","Female","Iowa",2004,"West North Central","Midwest","IA",30.2672322385636,36.3579846145792,44.6992692357691,36.6966099123369
+"864",15,36,1,1,"Non-communicable","Black","Female","Iowa",2004,"West North Central","Midwest","IA",103.193662398729,126.572376034648,152.266862179512,126.7541227917
+"865",15,37,0,0,"All other causes","White","Male","Iowa",2005,"West North Central","Midwest","IA",121.877871938629,125.563161364205,129.559232052182,125.560120911164
+"866",15,37,0,0,"Cancers","White","Male","Iowa",2005,"West North Central","Midwest","IA",221.186828974002,226.218767449657,231.00022447752,226.181161479838
+"867",15,37,0,0,"Cardiovascular","White","Male","Iowa",2005,"West North Central","Midwest","IA",320.452551588784,327.446368424575,334.558834892329,327.526418642404
+"868",15,37,0,0,"Communicable","White","Male","Iowa",2005,"West North Central","Midwest","IA",37.1258168233447,39.2603810930116,41.6862708751489,39.3019979743231
+"869",15,37,0,0,"Injuries","White","Male","Iowa",2005,"West North Central","Midwest","IA",68.3576125277669,70.5899203542202,73.0121377619741,70.6080937294968
+"870",15,37,0,0,"Non-communicable","White","Male","Iowa",2005,"West North Central","Midwest","IA",118.409491983266,122.102788099462,125.802549070047,122.095807312723
+"871",15,37,0,1,"All other causes","White","Female","Iowa",2005,"West North Central","Midwest","IA",101.558110881867,104.404485074412,107.464121635831,104.432830681327
+"872",15,37,0,1,"Cancers","White","Female","Iowa",2005,"West North Central","Midwest","IA",150.307061334526,153.291881423811,156.114174629548,153.322934976087
+"873",15,37,0,1,"Cardiovascular","White","Female","Iowa",2005,"West North Central","Midwest","IA",209.76575043476,214.266143702862,218.961780240144,214.235914909033
+"874",15,37,0,1,"Communicable","White","Female","Iowa",2005,"West North Central","Midwest","IA",27.0958480079102,28.5511195036255,30.0367115759174,28.5671659670868
+"875",15,37,0,1,"Injuries","White","Female","Iowa",2005,"West North Central","Midwest","IA",28.0658387691131,29.2239326568136,30.4880799210146,29.255418698947
+"876",15,37,0,1,"Non-communicable","White","Female","Iowa",2005,"West North Central","Midwest","IA",91.3106826329975,94.1214068502493,96.9605892176323,94.1473156990063
+"877",15,37,1,0,"All other causes","Black","Male","Iowa",2005,"West North Central","Midwest","IA",140.69359621429,162.726933223637,193.198645780406,163.793652979436
+"878",15,37,1,0,"Cancers","Black","Male","Iowa",2005,"West North Central","Midwest","IA",264.369455040637,307.743106116838,358.176594164109,309.3561386184
+"879",15,37,1,0,"Cardiovascular","Black","Male","Iowa",2005,"West North Central","Midwest","IA",331.477264111339,383.868687002577,439.308676934458,384.364065048169
+"880",15,37,1,0,"Communicable","Black","Male","Iowa",2005,"West North Central","Midwest","IA",54.1974665553084,72.4976755324061,97.6963242471934,72.9965613516266
+"881",15,37,1,0,"Injuries","Black","Male","Iowa",2005,"West North Central","Midwest","IA",68.5599727296189,81.4346913817332,98.1534276865631,82.23118321718
+"882",15,37,1,0,"Non-communicable","Black","Male","Iowa",2005,"West North Central","Midwest","IA",113.626535473589,145.078293509385,186.663901596833,146.038723761426
+"883",15,37,1,1,"All other causes","Black","Female","Iowa",2005,"West North Central","Midwest","IA",123.45444111569,145.138872356022,175.831953157111,146.006136747645
+"884",15,37,1,1,"Cancers","Black","Female","Iowa",2005,"West North Central","Midwest","IA",151.386358235403,184.094412643932,211.408184017851,183.54162653267
+"885",15,37,1,1,"Cardiovascular","Black","Female","Iowa",2005,"West North Central","Midwest","IA",272.838949738744,308.668843176556,345.301080712731,309.082541663189
+"886",15,37,1,1,"Communicable","Black","Female","Iowa",2005,"West North Central","Midwest","IA",33.4845814314708,42.8991662689679,55.3258990112416,43.2269940960644
+"887",15,37,1,1,"Injuries","Black","Female","Iowa",2005,"West North Central","Midwest","IA",29.6401962548843,36.5495702447542,44.5895723267108,36.7576019190288
+"888",15,37,1,1,"Non-communicable","Black","Female","Iowa",2005,"West North Central","Midwest","IA",104.715224053629,126.338100806463,153.17315149197,127.079941086223
+"889",15,38,0,0,"All other causes","White","Male","Iowa",2006,"West North Central","Midwest","IA",123.907488345791,127.767237816581,131.453771978682,127.751226834943
+"890",15,38,0,0,"Cancers","White","Male","Iowa",2006,"West North Central","Midwest","IA",216.780251383033,221.221859375542,225.783662934487,221.129383959852
+"891",15,38,0,0,"Cardiovascular","White","Male","Iowa",2006,"West North Central","Midwest","IA",299.530044507872,306.508198237405,313.158622173449,306.441713613882
+"892",15,38,0,0,"Communicable","White","Male","Iowa",2006,"West North Central","Midwest","IA",34.0533612820788,36.2974472287663,38.4457366076059,36.2618025587981
+"893",15,38,0,0,"Injuries","White","Male","Iowa",2006,"West North Central","Midwest","IA",69.3875018085117,71.6011650311906,73.9526569460794,71.6308178116128
+"894",15,38,0,0,"Non-communicable","White","Male","Iowa",2006,"West North Central","Midwest","IA",119.906430149573,123.618479340025,127.700387624148,123.642644997487
+"895",15,38,0,1,"All other causes","White","Female","Iowa",2006,"West North Central","Midwest","IA",106.945174375478,110.001536353029,113.084743234317,110.039328261908
+"896",15,38,0,1,"Cancers","White","Female","Iowa",2006,"West North Central","Midwest","IA",149.05904211042,152.09679182918,155.078468333758,152.143328419449
+"897",15,38,0,1,"Cardiovascular","White","Female","Iowa",2006,"West North Central","Midwest","IA",199.711951891872,203.870118408325,208.095340236895,203.934383227739
+"898",15,38,0,1,"Communicable","White","Female","Iowa",2006,"West North Central","Midwest","IA",25.8993078000307,27.2780884115783,28.6721028028716,27.2883561837741
+"899",15,38,0,1,"Injuries","White","Female","Iowa",2006,"West North Central","Midwest","IA",28.4308530621566,29.6038490692267,30.7934983251241,29.6008213640847
+"900",15,38,0,1,"Non-communicable","White","Female","Iowa",2006,"West North Central","Midwest","IA",91.8666309783104,94.8538445830929,97.7791457031645,94.8889497085241
+"901",15,38,1,0,"All other causes","Black","Male","Iowa",2006,"West North Central","Midwest","IA",140.360244225026,162.10898083035,192.093764181951,163.361009367756
+"902",15,38,1,0,"Cancers","Black","Male","Iowa",2006,"West North Central","Midwest","IA",256.445385916967,301.625266394806,349.55873269064,301.923376817644
+"903",15,38,1,0,"Cardiovascular","Black","Male","Iowa",2006,"West North Central","Midwest","IA",322.736511218912,373.006435864595,428.655115013189,372.916652733892
+"904",15,38,1,0,"Communicable","Black","Male","Iowa",2006,"West North Central","Midwest","IA",53.9817192406535,72.4210741419833,96.5011168381639,72.9817563761002
+"905",15,38,1,0,"Injuries","Black","Male","Iowa",2006,"West North Central","Midwest","IA",67.8908807729263,80.7645197460718,96.8913411953864,81.1679544881432
+"906",15,38,1,0,"Non-communicable","Black","Male","Iowa",2006,"West North Central","Midwest","IA",113.655191813133,145.814196975465,189.489839702359,146.767253748856
+"907",15,38,1,1,"All other causes","Black","Female","Iowa",2006,"West North Central","Midwest","IA",125.344683527647,146.635112075201,177.84091658001,148.00077838184
+"908",15,38,1,1,"Cancers","Black","Female","Iowa",2006,"West North Central","Midwest","IA",144.711777295697,182.121219026038,211.113608726373,181.579814832633
+"909",15,38,1,1,"Cardiovascular","Black","Female","Iowa",2006,"West North Central","Midwest","IA",258.355951434067,296.70057662827,329.950879323294,296.423315660182
+"910",15,38,1,1,"Communicable","Black","Female","Iowa",2006,"West North Central","Midwest","IA",33.1527858712469,42.4642001104832,55.0896755728437,42.7390401315717
+"911",15,38,1,1,"Injuries","Black","Female","Iowa",2006,"West North Central","Midwest","IA",29.9047289094936,36.7258377730344,44.6667110492203,36.9198268887731
+"912",15,38,1,1,"Non-communicable","Black","Female","Iowa",2006,"West North Central","Midwest","IA",106.069275589286,128.40636796791,154.669503701719,129.166661151248
+"913",15,39,0,0,"All other causes","White","Male","Iowa",2007,"West North Central","Midwest","IA",128.8629560568,132.837857082486,136.524059231845,132.817511530377
+"914",15,39,0,0,"Cancers","White","Male","Iowa",2007,"West North Central","Midwest","IA",213.129597485908,217.149841713128,221.951858308752,217.283906914009
+"915",15,39,0,0,"Cardiovascular","White","Male","Iowa",2007,"West North Central","Midwest","IA",285.815809898362,292.863300408613,298.962809322464,292.724806798392
+"916",15,39,0,0,"Communicable","White","Male","Iowa",2007,"West North Central","Midwest","IA",32.9351879138438,35.2022342102295,37.3895722360585,35.1857712382872
+"917",15,39,0,0,"Injuries","White","Male","Iowa",2007,"West North Central","Midwest","IA",70.0909375299244,72.4044964193214,74.8183272535359,72.423234397457
+"918",15,39,0,0,"Non-communicable","White","Male","Iowa",2007,"West North Central","Midwest","IA",121.98616933349,125.944214323215,130.125396482006,125.94397968645
+"919",15,39,0,1,"All other causes","White","Female","Iowa",2007,"West North Central","Midwest","IA",105.889157323895,108.985869266529,111.864847224821,108.900656076604
+"920",15,39,0,1,"Cancers","White","Female","Iowa",2007,"West North Central","Midwest","IA",147.506863056306,150.484225699838,153.563959159516,150.529247421941
+"921",15,39,0,1,"Cardiovascular","White","Female","Iowa",2007,"West North Central","Midwest","IA",192.14658003094,196.353020862883,200.592642206508,196.353757710252
+"922",15,39,0,1,"Communicable","White","Female","Iowa",2007,"West North Central","Midwest","IA",25.5211002749106,26.8828154433501,28.3541604534829,26.9034428348519
+"923",15,39,0,1,"Injuries","White","Female","Iowa",2007,"West North Central","Midwest","IA",28.8148506676273,29.9938655916503,31.2094004995864,29.997412809863
+"924",15,39,0,1,"Non-communicable","White","Female","Iowa",2007,"West North Central","Midwest","IA",94.6331307617157,97.6509493270562,100.772367079712,97.6502732378144
+"925",15,39,1,0,"All other causes","Black","Male","Iowa",2007,"West North Central","Midwest","IA",139.503801739474,162.707058172616,194.313627377466,163.836417601778
+"926",15,39,1,0,"Cancers","Black","Male","Iowa",2007,"West North Central","Midwest","IA",247.726304580106,295.43248569352,341.695371948723,296.232657953584
+"927",15,39,1,0,"Cardiovascular","Black","Male","Iowa",2007,"West North Central","Midwest","IA",308.532859958316,359.197265598604,415.548818487916,360.172505297643
+"928",15,39,1,0,"Communicable","Black","Male","Iowa",2007,"West North Central","Midwest","IA",53.2455308399482,70.7245274638522,94.7511675426172,71.5906430798816
+"929",15,39,1,0,"Injuries","Black","Male","Iowa",2007,"West North Central","Midwest","IA",66.4216021362605,79.461241791331,95.8398097862437,80.1343160916711
+"930",15,39,1,0,"Non-communicable","Black","Male","Iowa",2007,"West North Central","Midwest","IA",112.727088956475,146.083818593268,191.883160904075,147.406489297127
+"931",15,39,1,1,"All other causes","Black","Female","Iowa",2007,"West North Central","Midwest","IA",126.543494027885,147.122177599638,176.51105587217,148.110615831222
+"932",15,39,1,1,"Cancers","Black","Female","Iowa",2007,"West North Central","Midwest","IA",143.0699183935,180.698675972356,207.160707790219,179.664598005248
+"933",15,39,1,1,"Cardiovascular","Black","Female","Iowa",2007,"West North Central","Midwest","IA",248.834507275736,286.934527031278,321.016553038175,286.609832429953
+"934",15,39,1,1,"Communicable","Black","Female","Iowa",2007,"West North Central","Midwest","IA",32.7879876521325,42.0960728064713,55.6051283584704,42.5048498574884
+"935",15,39,1,1,"Injuries","Black","Female","Iowa",2007,"West North Central","Midwest","IA",29.827314361079,36.7873001002309,45.0442343614389,37.0523442814423
+"936",15,39,1,1,"Non-communicable","Black","Female","Iowa",2007,"West North Central","Midwest","IA",109.985288849188,131.740198907402,158.257628825786,132.554862322033
+"937",15,40,0,0,"All other causes","White","Male","Iowa",2008,"West North Central","Midwest","IA",133.139341610082,137.033363720586,141.251372179746,137.066833127575
+"938",15,40,0,0,"Cancers","White","Male","Iowa",2008,"West North Central","Midwest","IA",210.850922725889,214.920561421007,219.544315540436,214.923736588889
+"939",15,40,0,0,"Cardiovascular","White","Male","Iowa",2008,"West North Central","Midwest","IA",284.664617767757,291.048113303033,297.872247715991,291.094911003357
+"940",15,40,0,0,"Communicable","White","Male","Iowa",2008,"West North Central","Midwest","IA",34.0803859034731,36.3316413394583,38.597814816034,36.3442432168521
+"941",15,40,0,0,"Injuries","White","Male","Iowa",2008,"West North Central","Midwest","IA",71.6465374804765,73.8904279246357,76.3690655108959,73.8867898393154
+"942",15,40,0,0,"Non-communicable","White","Male","Iowa",2008,"West North Central","Midwest","IA",125.104868656795,128.980984572214,133.055250525816,129.010866024527
+"943",15,40,0,1,"All other causes","White","Female","Iowa",2008,"West North Central","Midwest","IA",109.598441478412,112.724342880221,115.858040332074,112.68369298987
+"944",15,40,0,1,"Cancers","White","Female","Iowa",2008,"West North Central","Midwest","IA",145.530013673296,148.521599675767,151.598933635286,148.547301029751
+"945",15,40,0,1,"Cardiovascular","White","Female","Iowa",2008,"West North Central","Midwest","IA",196.011360497817,200.322590115842,204.846245957745,200.416984718606
+"946",15,40,0,1,"Communicable","White","Female","Iowa",2008,"West North Central","Midwest","IA",25.7412210001889,27.1721312436971,28.790392780968,27.1930032179927
+"947",15,40,0,1,"Injuries","White","Female","Iowa",2008,"West North Central","Midwest","IA",29.0167642705161,30.2740003597558,31.5600274825657,30.2920655330335
+"948",15,40,0,1,"Non-communicable","White","Female","Iowa",2008,"West North Central","Midwest","IA",99.0595190566859,102.008569243275,105.056368882883,102.019484924698
+"949",15,40,1,0,"All other causes","Black","Male","Iowa",2008,"West North Central","Midwest","IA",139.308687314295,163.223702166182,195.742403812721,164.118176085449
+"950",15,40,1,0,"Cancers","Black","Male","Iowa",2008,"West North Central","Midwest","IA",246.582498762732,293.508049092718,340.711257660235,293.687548342715
+"951",15,40,1,0,"Cardiovascular","Black","Male","Iowa",2008,"West North Central","Midwest","IA",292.890510428881,342.741467354759,396.573434313781,343.301551584441
+"952",15,40,1,0,"Communicable","Black","Male","Iowa",2008,"West North Central","Midwest","IA",52.248029442828,71.0074243681907,97.9825519978386,72.1783605405327
+"953",15,40,1,0,"Injuries","Black","Male","Iowa",2008,"West North Central","Midwest","IA",66.1329956300741,79.3238090449847,94.6182643832809,79.7085500177737
+"954",15,40,1,0,"Non-communicable","Black","Male","Iowa",2008,"West North Central","Midwest","IA",111.460918806306,146.395533381453,193.240804269363,147.335644716084
+"955",15,40,1,1,"All other causes","Black","Female","Iowa",2008,"West North Central","Midwest","IA",125.243259636474,147.433944541289,175.368599018886,148.390338920868
+"956",15,40,1,1,"Cancers","Black","Female","Iowa",2008,"West North Central","Midwest","IA",142.252149778389,178.674207210438,205.261125162614,177.793942263635
+"957",15,40,1,1,"Cardiovascular","Black","Female","Iowa",2008,"West North Central","Midwest","IA",243.451825201092,280.511388592826,313.499878145081,280.173923540368
+"958",15,40,1,1,"Communicable","Black","Female","Iowa",2008,"West North Central","Midwest","IA",32.114557867937,41.7837126341154,55.1380562392199,42.19817091973
+"959",15,40,1,1,"Injuries","Black","Female","Iowa",2008,"West North Central","Midwest","IA",29.7201710660633,36.879810702122,45.2478231153926,37.1836378353098
+"960",15,40,1,1,"Non-communicable","Black","Female","Iowa",2008,"West North Central","Midwest","IA",112.607390961588,137.100631651776,164.45292439879,137.226075910117
+"961",15,41,0,0,"All other causes","White","Male","Iowa",2009,"West North Central","Midwest","IA",135.004412209807,138.979253895689,143.388468175419,139.061003967785
+"962",15,41,0,0,"Cancers","White","Male","Iowa",2009,"West North Central","Midwest","IA",204.07318533055,208.490367998046,212.851149610351,208.440981336303
+"963",15,41,0,0,"Cardiovascular","White","Male","Iowa",2009,"West North Central","Midwest","IA",276.160013568437,282.84046546007,289.45770107822,282.785324667035
+"964",15,41,0,0,"Communicable","White","Male","Iowa",2009,"West North Central","Midwest","IA",30.3095292375739,32.1932249590523,34.2670499158601,32.2151045535941
+"965",15,41,0,0,"Injuries","White","Male","Iowa",2009,"West North Central","Midwest","IA",72.0473784409655,74.4181344550284,76.903035839583,74.4056986653376
+"966",15,41,0,0,"Non-communicable","White","Male","Iowa",2009,"West North Central","Midwest","IA",124.650014523355,128.35094818789,132.378403096764,128.430171314546
+"967",15,41,0,1,"All other causes","White","Female","Iowa",2009,"West North Central","Midwest","IA",110.726049862705,113.43702405579,116.65415224255,113.528805699705
+"968",15,41,0,1,"Cancers","White","Female","Iowa",2009,"West North Central","Midwest","IA",144.778357804339,147.782656587132,150.822468451034,147.768175683384
+"969",15,41,0,1,"Cardiovascular","White","Female","Iowa",2009,"West North Central","Midwest","IA",187.374197471206,191.524224499535,195.877257383772,191.547657022951
+"970",15,41,0,1,"Communicable","White","Female","Iowa",2009,"West North Central","Midwest","IA",23.1565942458179,24.5553418850754,25.9454728928381,24.548454047428
+"971",15,41,0,1,"Injuries","White","Female","Iowa",2009,"West North Central","Midwest","IA",29.650074765833,30.9708305622536,32.2467905691544,30.9625239393413
+"972",15,41,0,1,"Non-communicable","White","Female","Iowa",2009,"West North Central","Midwest","IA",97.2146562519598,100.16351050943,103.215908141878,100.178641179895
+"973",15,41,1,0,"All other causes","Black","Male","Iowa",2009,"West North Central","Midwest","IA",139.722483143951,163.773912540967,195.745670087655,165.164623397354
+"974",15,41,1,0,"Cancers","Black","Male","Iowa",2009,"West North Central","Midwest","IA",247.185022797555,291.097831916977,340.537814999691,291.106587107556
+"975",15,41,1,0,"Cardiovascular","Black","Male","Iowa",2009,"West North Central","Midwest","IA",280.851920018181,329.981003794663,381.192006569985,330.916217271243
+"976",15,41,1,0,"Communicable","Black","Male","Iowa",2009,"West North Central","Midwest","IA",51.0873820462244,70.3500315771678,100.585513145533,71.5146136740764
+"977",15,41,1,0,"Injuries","Black","Male","Iowa",2009,"West North Central","Midwest","IA",65.8266003976753,79.0628983523551,94.1883472641463,79.4476006270092
+"978",15,41,1,0,"Non-communicable","Black","Male","Iowa",2009,"West North Central","Midwest","IA",112.122545234735,145.993196035018,191.26229419364,147.553182600004
+"979",15,41,1,1,"All other causes","Black","Female","Iowa",2009,"West North Central","Midwest","IA",126.547166197747,148.947806902406,176.82509123258,149.684275635053
+"980",15,41,1,1,"Cancers","Black","Female","Iowa",2009,"West North Central","Midwest","IA",142.142364791356,178.6993052341,207.11608446729,177.911619935831
+"981",15,41,1,1,"Cardiovascular","Black","Female","Iowa",2009,"West North Central","Midwest","IA",234.106865538257,270.538728012861,304.484203329086,269.988200735547
+"982",15,41,1,1,"Communicable","Black","Female","Iowa",2009,"West North Central","Midwest","IA",31.5028728137078,41.3356444708118,55.1117264450019,41.7275433622593
+"983",15,41,1,1,"Injuries","Black","Female","Iowa",2009,"West North Central","Midwest","IA",29.4189673570923,36.9296223321824,45.3782600630389,37.2524255889508
+"984",15,41,1,1,"Non-communicable","Black","Female","Iowa",2009,"West North Central","Midwest","IA",115.542158739467,139.701573880316,167.389466448196,140.262897720883
+"985",15,42,0,0,"All other causes","White","Male","Iowa",2010,"West North Central","Midwest","IA",134.527291974807,138.571732257613,142.64670580042,138.527678999227
+"986",15,42,0,0,"Cancers","White","Male","Iowa",2010,"West North Central","Midwest","IA",204.582812033476,208.949489555212,213.509527262891,208.971430283323
+"987",15,42,0,0,"Cardiovascular","White","Male","Iowa",2010,"West North Central","Midwest","IA",271.294447005541,276.834572304179,283.224507176343,276.905541998653
+"988",15,42,0,0,"Communicable","White","Male","Iowa",2010,"West North Central","Midwest","IA",28.7830187519512,30.658603144182,32.6196499953013,30.6950230083883
+"989",15,42,0,0,"Injuries","White","Male","Iowa",2010,"West North Central","Midwest","IA",72.345029746829,74.8597615481959,77.2491366025722,74.8370480712196
+"990",15,42,0,0,"Non-communicable","White","Male","Iowa",2010,"West North Central","Midwest","IA",125.376286646021,129.196605346328,133.02203282982,129.188617019363
+"991",15,42,0,1,"All other causes","White","Female","Iowa",2010,"West North Central","Midwest","IA",114.95767119183,118.210968639802,121.502744666249,118.231957470957
+"992",15,42,0,1,"Cancers","White","Female","Iowa",2010,"West North Central","Midwest","IA",143.166079902079,146.150095564695,149.028410904398,146.133573610609
+"993",15,42,0,1,"Cardiovascular","White","Female","Iowa",2010,"West North Central","Midwest","IA",179.978028540934,184.060371829207,188.255838984189,184.044339379447
+"994",15,42,0,1,"Communicable","White","Female","Iowa",2010,"West North Central","Midwest","IA",22.1838318560212,23.4600870298263,24.7224235183909,23.4486787611578
+"995",15,42,0,1,"Injuries","White","Female","Iowa",2010,"West North Central","Midwest","IA",30.3680858854815,31.6318489809998,32.9464679906987,31.6320985479029
+"996",15,42,0,1,"Non-communicable","White","Female","Iowa",2010,"West North Central","Midwest","IA",98.157915472901,100.870889633775,104.058677824733,100.905616328173
+"997",15,42,1,0,"All other causes","Black","Male","Iowa",2010,"West North Central","Midwest","IA",139.098948358691,163.637625224222,199.462807218784,165.566307833587
+"998",15,42,1,0,"Cancers","Black","Male","Iowa",2010,"West North Central","Midwest","IA",240.163704837573,286.682510018883,330.599684312247,286.078725490675
+"999",15,42,1,0,"Cardiovascular","Black","Male","Iowa",2010,"West North Central","Midwest","IA",275.967393541779,324.879486724997,372.387230453795,325.240312894601
+"1000",15,42,1,0,"Communicable","Black","Male","Iowa",2010,"West North Central","Midwest","IA",50.0050922994573,70.5943151347531,97.6840036195391,71.5610914829511
+"1001",15,42,1,0,"Injuries","Black","Male","Iowa",2010,"West North Central","Midwest","IA",65.8404608744981,79.556811548159,94.3995257700466,79.5957668958071
+"1002",15,42,1,0,"Non-communicable","Black","Male","Iowa",2010,"West North Central","Midwest","IA",112.0951372561,144.933950827264,192.716944705269,147.090518135143
+"1003",15,42,1,1,"All other causes","Black","Female","Iowa",2010,"West North Central","Midwest","IA",127.55336382352,150.544656315018,181.643954102277,151.758461847339
+"1004",15,42,1,1,"Cancers","Black","Female","Iowa",2010,"West North Central","Midwest","IA",142.174615970753,178.440253295366,210.574929720621,178.075122776016
+"1005",15,42,1,1,"Cardiovascular","Black","Female","Iowa",2010,"West North Central","Midwest","IA",236.616130877484,269.447866100614,303.250977635888,269.786759586722
+"1006",15,42,1,1,"Communicable","Black","Female","Iowa",2010,"West North Central","Midwest","IA",31.085760649009,41.4714746278161,55.4595746309188,41.8320135662103
+"1007",15,42,1,1,"Injuries","Black","Female","Iowa",2010,"West North Central","Midwest","IA",29.67138183445,36.8514795594832,45.6078739730134,37.2461296977264
+"1008",15,42,1,1,"Non-communicable","Black","Female","Iowa",2010,"West North Central","Midwest","IA",115.048456816983,139.501965256832,167.80374425795,139.935763559737
+"1009",15,43,0,0,"All other causes","White","Male","Iowa",2011,"West North Central","Midwest","IA",137.998211599464,142.163200600582,146.643354269022,142.206988544592
+"1010",15,43,0,0,"Cancers","White","Male","Iowa",2011,"West North Central","Midwest","IA",205.29546606462,209.740974532525,214.238365401366,209.710862058116
+"1011",15,43,0,0,"Cardiovascular","White","Male","Iowa",2011,"West North Central","Midwest","IA",260.200967014235,265.962688083635,272.046106139882,265.92838261232
+"1012",15,43,0,0,"Communicable","White","Male","Iowa",2011,"West North Central","Midwest","IA",30.5679723573829,32.4857675927236,34.5650917847247,32.5324808251984
+"1013",15,43,0,0,"Injuries","White","Male","Iowa",2011,"West North Central","Midwest","IA",73.7291511938803,76.1485180300175,78.5281679634256,76.1227911949045
+"1014",15,43,0,0,"Non-communicable","White","Male","Iowa",2011,"West North Central","Midwest","IA",124.239348591576,127.992196277049,132.045496795147,128.059199311843
+"1015",15,43,0,1,"All other causes","White","Female","Iowa",2011,"West North Central","Midwest","IA",117.374564481232,120.590636433154,124.096191215033,120.597025735534
+"1016",15,43,0,1,"Cancers","White","Female","Iowa",2011,"West North Central","Midwest","IA",142.259565191243,145.242626729203,148.1984476637,145.187225271707
+"1017",15,43,0,1,"Cardiovascular","White","Female","Iowa",2011,"West North Central","Midwest","IA",177.464428158659,181.440644035339,185.335079420944,181.433192002953
+"1018",15,43,0,1,"Communicable","White","Female","Iowa",2011,"West North Central","Midwest","IA",22.2390371864213,23.5546193015139,24.8484271891884,23.5364788963498
+"1019",15,43,0,1,"Injuries","White","Female","Iowa",2011,"West North Central","Midwest","IA",31.5167997469131,32.8313623803517,34.2683811856038,32.8623824929223
+"1020",15,43,0,1,"Non-communicable","White","Female","Iowa",2011,"West North Central","Midwest","IA",100.045314896151,102.894518268402,106.02020891684,102.90775557871
+"1021",15,43,1,0,"All other causes","Black","Male","Iowa",2011,"West North Central","Midwest","IA",139.457101025331,164.264586672955,201.963086983629,165.984354581333
+"1022",15,43,1,0,"Cancers","Black","Male","Iowa",2011,"West North Central","Midwest","IA",231.536972269955,278.736867885444,326.43514092326,278.790628175694
+"1023",15,43,1,0,"Cardiovascular","Black","Male","Iowa",2011,"West North Central","Midwest","IA",271.385135085037,321.717712429987,372.794107035262,321.726455159068
+"1024",15,43,1,0,"Communicable","Black","Male","Iowa",2011,"West North Central","Midwest","IA",50.1353302451198,71.2572060384584,101.687058264875,72.5753642953926
+"1025",15,43,1,0,"Injuries","Black","Male","Iowa",2011,"West North Central","Midwest","IA",65.5820362558753,79.7352417234385,95.7427402322771,80.153619824712
+"1026",15,43,1,0,"Non-communicable","Black","Male","Iowa",2011,"West North Central","Midwest","IA",111.464892498725,144.416223176994,190.83086867169,146.674161255739
+"1027",15,43,1,1,"All other causes","Black","Female","Iowa",2011,"West North Central","Midwest","IA",129.623342924109,153.720661225434,185.767226047558,154.633401605501
+"1028",15,43,1,1,"Cancers","Black","Female","Iowa",2011,"West North Central","Midwest","IA",141.157526212942,177.648599416529,211.230763940483,177.423866787235
+"1029",15,43,1,1,"Cardiovascular","Black","Female","Iowa",2011,"West North Central","Midwest","IA",234.863349191675,268.900117369688,303.882883171241,268.554172064341
+"1030",15,43,1,1,"Communicable","Black","Female","Iowa",2011,"West North Central","Midwest","IA",30.99788094211,41.8139684110918,56.0611144633437,42.2657933676321
+"1031",15,43,1,1,"Injuries","Black","Female","Iowa",2011,"West North Central","Midwest","IA",29.413479093665,36.7993816217569,46.1300734285674,37.2492203463246
+"1032",15,43,1,1,"Non-communicable","Black","Female","Iowa",2011,"West North Central","Midwest","IA",114.433045892191,140.613034102448,169.745855125265,140.79981709573
+"1033",15,44,0,0,"All other causes","White","Male","Iowa",2012,"West North Central","Midwest","IA",139.662959538967,143.859556820189,148.147233137579,143.904867184842
+"1034",15,44,0,0,"Cancers","White","Male","Iowa",2012,"West North Central","Midwest","IA",203.116140110535,207.980668593175,212.463254925842,207.879163432625
+"1035",15,44,0,0,"Cardiovascular","White","Male","Iowa",2012,"West North Central","Midwest","IA",261.206659455795,267.140485240237,273.751364431674,267.193031917029
+"1036",15,44,0,0,"Communicable","White","Male","Iowa",2012,"West North Central","Midwest","IA",30.778079022526,32.8446128643805,34.9255943415787,32.804394615216
+"1037",15,44,0,0,"Injuries","White","Male","Iowa",2012,"West North Central","Midwest","IA",74.3243777083384,76.7961056468088,79.4833015746634,76.8289820344191
+"1038",15,44,0,0,"Non-communicable","White","Male","Iowa",2012,"West North Central","Midwest","IA",123.034305376204,126.680665876708,130.656044110939,126.794561750102
+"1039",15,44,0,1,"All other causes","White","Female","Iowa",2012,"West North Central","Midwest","IA",119.236757582198,122.390781119921,126.293004842145,122.488213337099
+"1040",15,44,0,1,"Cancers","White","Female","Iowa",2012,"West North Central","Midwest","IA",140.885938403581,144.134881481998,147.195591485863,144.181664098793
+"1041",15,44,0,1,"Cardiovascular","White","Female","Iowa",2012,"West North Central","Midwest","IA",176.380036552444,180.655872237683,184.635840844596,180.611106248311
+"1042",15,44,0,1,"Communicable","White","Female","Iowa",2012,"West North Central","Midwest","IA",23.482828046204,24.8151296426628,26.2397846109702,24.8013011062394
+"1043",15,44,0,1,"Injuries","White","Female","Iowa",2012,"West North Central","Midwest","IA",31.9131772175143,33.2684825086195,34.8641832928035,33.2731734606611
+"1044",15,44,0,1,"Non-communicable","White","Female","Iowa",2012,"West North Central","Midwest","IA",97.5724115720245,100.493050601963,103.607725700345,100.550366304195
+"1045",15,44,1,0,"All other causes","Black","Male","Iowa",2012,"West North Central","Midwest","IA",137.459320852292,164.451534729916,203.117062706384,166.263596003718
+"1046",15,44,1,0,"Cancers","Black","Male","Iowa",2012,"West North Central","Midwest","IA",227.129834494047,275.577110487475,320.729050919255,274.851703236667
+"1047",15,44,1,0,"Cardiovascular","Black","Male","Iowa",2012,"West North Central","Midwest","IA",268.301470872153,319.975363044542,372.350600881957,320.556022319724
+"1048",15,44,1,0,"Communicable","Black","Male","Iowa",2012,"West North Central","Midwest","IA",51.2397335263742,71.3877402097666,104.27670215575,73.2172559544126
+"1049",15,44,1,0,"Injuries","Black","Male","Iowa",2012,"West North Central","Midwest","IA",65.0822106676145,80.6447559233291,97.9792714095453,80.7877315067216
+"1050",15,44,1,0,"Non-communicable","Black","Male","Iowa",2012,"West North Central","Midwest","IA",111.066973258132,145.054193588455,194.719788891038,147.036694196079
+"1051",15,44,1,1,"All other causes","Black","Female","Iowa",2012,"West North Central","Midwest","IA",132.465909647242,158.155547125428,190.272337590843,159.007069054486
+"1052",15,44,1,1,"Cancers","Black","Female","Iowa",2012,"West North Central","Midwest","IA",139.0571532457,176.729084714158,211.436762554685,176.51953826387
+"1053",15,44,1,1,"Cardiovascular","Black","Female","Iowa",2012,"West North Central","Midwest","IA",233.585089398858,271.95574864747,312.098371758278,272.186556334397
+"1054",15,44,1,1,"Communicable","Black","Female","Iowa",2012,"West North Central","Midwest","IA",31.3374961634788,42.3736410181448,57.4946651971241,42.9188133136482
+"1055",15,44,1,1,"Injuries","Black","Female","Iowa",2012,"West North Central","Midwest","IA",29.127814090068,36.832936727387,46.5959898567582,37.3343477014545
+"1056",15,44,1,1,"Non-communicable","Black","Female","Iowa",2012,"West North Central","Midwest","IA",112.50528756294,140.057278293778,170.125810061969,140.187327052577
+"1057",15,45,0,0,"All other causes","White","Male","Iowa",2013,"West North Central","Midwest","IA",142.104196781919,147.129397247288,152.186566708848,147.14532586919
+"1058",15,45,0,0,"Cancers","White","Male","Iowa",2013,"West North Central","Midwest","IA",202.474682365959,208.211216266785,213.387593308015,208.166494898049
+"1059",15,45,0,0,"Cardiovascular","White","Male","Iowa",2013,"West North Central","Midwest","IA",260.383757964862,267.223088720836,273.502275299151,267.12126647904
+"1060",15,45,0,0,"Communicable","White","Male","Iowa",2013,"West North Central","Midwest","IA",30.4238622946116,32.5520883880646,34.7185160300479,32.5531198602975
+"1061",15,45,0,0,"Injuries","White","Male","Iowa",2013,"West North Central","Midwest","IA",75.3002518177049,78.3057571243272,81.369858147291,78.3036340385384
+"1062",15,45,0,0,"Non-communicable","White","Male","Iowa",2013,"West North Central","Midwest","IA",122.963365354671,127.18245968369,131.442932623688,127.181336830857
+"1063",15,45,0,1,"All other causes","White","Female","Iowa",2013,"West North Central","Midwest","IA",120.435655778922,124.162772238095,128.005053300804,124.145962766829
+"1064",15,45,0,1,"Cancers","White","Female","Iowa",2013,"West North Central","Midwest","IA",139.837252956262,143.297208100211,146.898233624132,143.358030829507
+"1065",15,45,0,1,"Cardiovascular","White","Female","Iowa",2013,"West North Central","Midwest","IA",172.48078028239,177.030986512333,181.804837854363,177.06352899602
+"1066",15,45,0,1,"Communicable","White","Female","Iowa",2013,"West North Central","Midwest","IA",24.8886406935395,26.5040988528349,28.0892425462341,26.4899061994577
+"1067",15,45,0,1,"Injuries","White","Female","Iowa",2013,"West North Central","Midwest","IA",32.2770420721042,33.7163068787872,35.5965261450671,33.7698661195878
+"1068",15,45,0,1,"Non-communicable","White","Female","Iowa",2013,"West North Central","Midwest","IA",96.9311161733946,100.13037712423,103.479150537591,100.186776921494
+"1069",15,45,1,0,"All other causes","Black","Male","Iowa",2013,"West North Central","Midwest","IA",136.99009701145,164.040559557645,205.191413041067,165.89745977815
+"1070",15,45,1,0,"Cancers","Black","Male","Iowa",2013,"West North Central","Midwest","IA",224.984432253297,273.013652287652,325.146614946684,273.743355396441
+"1071",15,45,1,0,"Cardiovascular","Black","Male","Iowa",2013,"West North Central","Midwest","IA",265.804695790801,320.070485150392,375.084141403798,320.697794939322
+"1072",15,45,1,0,"Communicable","Black","Male","Iowa",2013,"West North Central","Midwest","IA",50.5821576971463,72.6490667767899,108.364523211166,74.4180726920264
+"1073",15,45,1,0,"Injuries","Black","Male","Iowa",2013,"West North Central","Midwest","IA",64.5855435056149,81.91370277963,101.434114563682,82.1088072882625
+"1074",15,45,1,0,"Non-communicable","Black","Male","Iowa",2013,"West North Central","Midwest","IA",110.408718113841,145.726185781226,199.696253193143,148.034435082689
+"1075",15,45,1,1,"All other causes","Black","Female","Iowa",2013,"West North Central","Midwest","IA",134.349099040966,159.168455232171,193.185282936616,160.595032865021
+"1076",15,45,1,1,"Cancers","Black","Female","Iowa",2013,"West North Central","Midwest","IA",138.197752471896,176.597127197633,212.751691134126,176.5630333685
+"1077",15,45,1,1,"Cardiovascular","Black","Female","Iowa",2013,"West North Central","Midwest","IA",237.939255790299,277.423603858984,317.865554499732,276.993200394597
+"1078",15,45,1,1,"Communicable","Black","Female","Iowa",2013,"West North Central","Midwest","IA",30.7918631672396,42.8695494554119,60.1686725082928,43.5432680494639
+"1079",15,45,1,1,"Injuries","Black","Female","Iowa",2013,"West North Central","Midwest","IA",29.1828965739356,37.1301884413978,47.2677798078307,37.5854482422788
+"1080",15,45,1,1,"Non-communicable","Black","Female","Iowa",2013,"West North Central","Midwest","IA",111.13162364149,138.408492199149,176.955893274451,139.316684384691
