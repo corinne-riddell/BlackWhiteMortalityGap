@@ -22,7 +22,7 @@ included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado",
 "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
 "West Virginia", "Wisconsin") 
 
-completed.states <- included.states[c(1:8, 11, 14, 17:24)]
+completed.states <- included.states[c(1:9, 11, 14, 17:24, 26, 33)]
 ```
 
 ```{r combine_results}
