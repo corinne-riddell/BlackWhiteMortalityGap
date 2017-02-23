@@ -59,9 +59,9 @@ In order to understand whether states fared similarly over time, we divided the 
 
 For each era, we calculated the degree that the life expectancy gap has narrowed or widened and decomposed this *change* to the *difference* in the life expectancy between blacks and whites according to cause of death. To do so, we simply subtracted the contribution (in years) that each cause of death category had made to the difference in life expectancy at the beginning of the era from that made at the beginning of the era. An example of the calculation is found in **S1 Text**.
 
-*To re-write*: To calculate 95% credible intervals, we sampled 1000 times from the posterior distribution to create 1000 samples for each stratum. We performed all calculations on each sample and took the median of the estimates as the estimate and the 2.5 and 97.5th quantiles as the lower and upper bound for the 95% CI. Anything about thinning?
+*ktm to read over*: The bayesian model was fit using two markov chains of length 10,000. One thousand iterations remained after discarding the first two thousand iterations as burn-in and sampling every eighth iteration (to reduce autocorrelation). These 1,000 iterations approximate the shape of the posterior distribution, and we used the mean as the estimate of the log mortality rate, and the 2.5th and 97.5th percentiles as the lower and upper bound of the 95% credible interval (CI).
 
-All data analyses were performed using R version 3.3.1. The Bayesian smoothing was performed using `JAGS` (version X.X), and the life expectancy and decomposition analysis were performed using user-written functions found in the Supplement. 
+All data analyses were performed using R version 3.3.1. The Bayesian smoothing was performed using `rjags` (version 4-6) and `R2jags` (version 0.5-7), and the life expectancy and decomposition analysis were performed using user-written functions found in the Supplement. 
 
 ###Results
 
