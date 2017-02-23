@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",16,1,0,0,"All other causes","White","Male","Kansas",1969,"West North Central","Midwest","KS",126.789258505169,131.805441582095,137.555507497028,131.888735774078
+"2",16,1,0,0,"Cancers","White","Male","Kansas",1969,"West North Central","Midwest","KS",214.358315897972,221.149060131606,227.996883226752,221.176917696393
+"3",16,1,0,0,"Cardiovascular","White","Male","Kansas",1969,"West North Central","Midwest","KS",811.538913725455,830.846955738526,850.102820419097,830.755669137625
+"4",16,1,0,0,"Communicable","White","Male","Kansas",1969,"West North Central","Midwest","KS",52.9347397038045,57.2890504828125,61.8981922248565,57.3702938769708
+"5",16,1,0,0,"Injuries","White","Male","Kansas",1969,"West North Central","Midwest","KS",112.530035959836,117.043182635946,121.915072010702,117.064193842157
+"6",16,1,0,0,"Non-communicable","White","Male","Kansas",1969,"West North Central","Midwest","KS",95.6845637322144,100.339409853231,105.420093236703,100.429435730282
+"7",16,1,0,1,"All other causes","White","Female","Kansas",1969,"West North Central","Midwest","KS",89.9263640493877,93.9591712143692,98.3032817075919,94.0022764318038
+"8",16,1,0,1,"Cancers","White","Female","Kansas",1969,"West North Central","Midwest","KS",141.553799201267,146.022803904689,150.374693775777,146.052923064327
+"9",16,1,0,1,"Cardiovascular","White","Female","Kansas",1969,"West North Central","Midwest","KS",513.741725285478,526.010482335397,538.57074407105,525.852456951883
+"10",16,1,0,1,"Communicable","White","Female","Kansas",1969,"West North Central","Midwest","KS",34.9671009397312,37.7684166533071,40.9202444681024,37.8115496529783
+"11",16,1,0,1,"Injuries","White","Female","Kansas",1969,"West North Central","Midwest","KS",44.5187757738688,46.8754294427828,49.4716651393594,46.9148725861002
+"12",16,1,0,1,"Non-communicable","White","Female","Kansas",1969,"West North Central","Midwest","KS",41.1298280544931,43.6580491015989,46.330374490803,43.6994487465333
+"13",16,1,1,0,"All other causes","Black","Male","Kansas",1969,"West North Central","Midwest","KS",184.812118483311,208.856477859814,237.804529791792,209.507833708973
+"14",16,1,1,0,"Cancers","Black","Male","Kansas",1969,"West North Central","Midwest","KS",288.992222468993,316.066263607426,347.182853925509,316.538589678276
+"15",16,1,1,0,"Cardiovascular","Black","Male","Kansas",1969,"West North Central","Midwest","KS",820.034990200673,883.323871461185,960.471934631875,884.047896757377
+"16",16,1,1,0,"Communicable","Black","Male","Kansas",1969,"West North Central","Midwest","KS",69.698029552848,96.4252011290012,129.269133780865,96.9807473073228
+"17",16,1,1,0,"Injuries","Black","Male","Kansas",1969,"West North Central","Midwest","KS",160.929132421405,187.557363730066,220.122689421206,188.161596832798
+"18",16,1,1,0,"Non-communicable","Black","Male","Kansas",1969,"West North Central","Midwest","KS",99.9776197158511,123.574081356762,147.58470228735,123.742420947526
+"19",16,1,1,1,"All other causes","Black","Female","Kansas",1969,"West North Central","Midwest","KS",131.784145329525,148.383350196243,168.751074101701,148.78046750465
+"20",16,1,1,1,"Cancers","Black","Female","Kansas",1969,"West North Central","Midwest","KS",164.16142150807,182.93397743066,198.96560107232,182.556115403324
+"21",16,1,1,1,"Cardiovascular","Black","Female","Kansas",1969,"West North Central","Midwest","KS",597.004470812748,652.938854539688,709.080636505392,652.394602766254
+"22",16,1,1,1,"Communicable","Black","Female","Kansas",1969,"West North Central","Midwest","KS",42.727255351924,54.0945530777544,75.8710607207191,55.4981637302758
+"23",16,1,1,1,"Injuries","Black","Female","Kansas",1969,"West North Central","Midwest","KS",47.9739612183483,58.2879723316909,72.8704318699179,58.7790506700721
+"24",16,1,1,1,"Non-communicable","Black","Female","Kansas",1969,"West North Central","Midwest","KS",75.1318111066265,92.3901716124008,112.298554542094,92.5830834399147
+"25",16,2,0,0,"All other causes","White","Male","Kansas",1970,"West North Central","Midwest","KS",125.306629707982,129.587620710448,134.350346795838,129.549084640279
+"26",16,2,0,0,"Cancers","White","Male","Kansas",1970,"West North Central","Midwest","KS",216.705385776997,222.258493645827,228.381613146788,222.313662513433
+"27",16,2,0,0,"Cardiovascular","White","Male","Kansas",1970,"West North Central","Midwest","KS",783.879531127784,800.656533886417,817.881198181992,800.510641903598
+"28",16,2,0,0,"Communicable","White","Male","Kansas",1970,"West North Central","Midwest","KS",49.0027633754798,52.7683143088036,56.9263469694053,52.8196153500394
+"29",16,2,0,0,"Injuries","White","Male","Kansas",1970,"West North Central","Midwest","KS",110.742635323818,114.707906117272,118.691192609793,114.690676476645
+"30",16,2,0,0,"Non-communicable","White","Male","Kansas",1970,"West North Central","Midwest","KS",95.4977341723217,99.4687296489866,103.284424877592,99.4563651522261
+"31",16,2,0,1,"All other causes","White","Female","Kansas",1970,"West North Central","Midwest","KS",89.0979514227371,92.9854026603041,96.715162695404,92.9242636992815
+"32",16,2,0,1,"Cancers","White","Female","Kansas",1970,"West North Central","Midwest","KS",141.881815716194,145.401850296318,149.546537077362,145.516026735958
+"33",16,2,0,1,"Cardiovascular","White","Female","Kansas",1970,"West North Central","Midwest","KS",488.058536251692,499.454020882673,510.087341883088,499.220445673498
+"34",16,2,0,1,"Communicable","White","Female","Kansas",1970,"West North Central","Midwest","KS",31.6444840563711,33.8980885748629,36.366223574489,33.9555477146711
+"35",16,2,0,1,"Injuries","White","Female","Kansas",1970,"West North Central","Midwest","KS",44.0589290764678,46.1973390276856,48.4708431466985,46.2134896953472
+"36",16,2,0,1,"Non-communicable","White","Female","Kansas",1970,"West North Central","Midwest","KS",41.1691769390065,43.4235177449005,45.6438954944627,43.4270876998866
+"37",16,2,1,0,"All other causes","Black","Male","Kansas",1970,"West North Central","Midwest","KS",185.584731481258,207.630797533492,234.671406691006,208.499750437352
+"38",16,2,1,0,"Cancers","Black","Male","Kansas",1970,"West North Central","Midwest","KS",291.069243387643,315.539350280991,343.144819178607,315.980298224053
+"39",16,2,1,0,"Cardiovascular","Black","Male","Kansas",1970,"West North Central","Midwest","KS",789.221181178855,841.99834643573,900.556658395348,842.694262204513
+"40",16,2,1,0,"Communicable","Black","Male","Kansas",1970,"West North Central","Midwest","KS",70.0756691205484,92.9386681700514,120.549149793394,93.6360141036842
+"41",16,2,1,0,"Injuries","Black","Male","Kansas",1970,"West North Central","Midwest","KS",162.542023058572,186.664189272552,215.018834864556,187.147344915362
+"42",16,2,1,0,"Non-communicable","Black","Male","Kansas",1970,"West North Central","Midwest","KS",100.25226496637,123.109221597891,146.699306947631,123.27128506734
+"43",16,2,1,1,"All other causes","Black","Female","Kansas",1970,"West North Central","Midwest","KS",132.608651329973,146.77832802525,165.697519501901,147.600848687325
+"44",16,2,1,1,"Cancers","Black","Female","Kansas",1970,"West North Central","Midwest","KS",163.748611306867,182.075163673477,198.090090360433,181.7234277413
+"45",16,2,1,1,"Cardiovascular","Black","Female","Kansas",1970,"West North Central","Midwest","KS",600.480585549544,641.784497215265,690.06313408394,643.170133727316
+"46",16,2,1,1,"Communicable","Black","Female","Kansas",1970,"West North Central","Midwest","KS",41.3040914865783,52.028082793817,71.1006989661688,53.2276019088312
+"47",16,2,1,1,"Injuries","Black","Female","Kansas",1970,"West North Central","Midwest","KS",48.0513081797107,57.5300214800436,72.2153769564274,58.1370667712362
+"48",16,2,1,1,"Non-communicable","Black","Female","Kansas",1970,"West North Central","Midwest","KS",76.5809801479229,91.2253364997319,110.047177087554,91.826938570404
+"49",16,3,0,0,"All other causes","White","Male","Kansas",1971,"West North Central","Midwest","KS",122.518039820348,126.682985514658,130.845800597535,126.651005560261
+"50",16,3,0,0,"Cancers","White","Male","Kansas",1971,"West North Central","Midwest","KS",220.452869863425,225.504643308982,230.952139816901,225.539020914274
+"51",16,3,0,0,"Cardiovascular","White","Male","Kansas",1971,"West North Central","Midwest","KS",785.777114579361,803.205289291841,820.356701673704,803.384588187329
+"52",16,3,0,0,"Communicable","White","Male","Kansas",1971,"West North Central","Midwest","KS",48.4365738911089,51.9839276974514,56.0487556445693,52.063856210176
+"53",16,3,0,0,"Injuries","White","Male","Kansas",1971,"West North Central","Midwest","KS",108.322374647802,111.722139455516,115.60308352742,111.785547664177
+"54",16,3,0,0,"Non-communicable","White","Male","Kansas",1971,"West North Central","Midwest","KS",95.7834923079205,99.2422022825434,103.136685948311,99.2756857087402
+"55",16,3,0,1,"All other causes","White","Female","Kansas",1971,"West North Central","Midwest","KS",88.4761987137487,91.6737598557019,95.2037619418227,91.6852739731657
+"56",16,3,0,1,"Cancers","White","Female","Kansas",1971,"West North Central","Midwest","KS",142.266702246084,146.145017475383,149.817116731798,146.171819068949
+"57",16,3,0,1,"Cardiovascular","White","Female","Kansas",1971,"West North Central","Midwest","KS",482.242921561777,492.98930442027,503.550785311336,493.176851308073
+"58",16,3,0,1,"Communicable","White","Female","Kansas",1971,"West North Central","Midwest","KS",29.1632160182318,31.2756047641505,33.4248563604484,31.2702870434487
+"59",16,3,0,1,"Injuries","White","Female","Kansas",1971,"West North Central","Midwest","KS",43.1607664338604,45.1358130958417,47.1181084482537,45.158305831183
+"60",16,3,0,1,"Non-communicable","White","Female","Kansas",1971,"West North Central","Midwest","KS",41.2255013314369,43.2551065690948,45.5385124414379,43.3003472519067
+"61",16,3,1,0,"All other causes","Black","Male","Kansas",1971,"West North Central","Midwest","KS",183.199332487886,205.509252587052,231.314279762378,205.85032838396
+"62",16,3,1,0,"Cancers","Black","Male","Kansas",1971,"West North Central","Midwest","KS",291.770309762362,314.990798405722,342.550350288455,315.298390002136
+"63",16,3,1,0,"Cardiovascular","Black","Male","Kansas",1971,"West North Central","Midwest","KS",774.117109109109,822.473599027517,877.879326665646,822.998299086874
+"64",16,3,1,0,"Communicable","Black","Male","Kansas",1971,"West North Central","Midwest","KS",68.1183928731135,89.3940151924797,113.54163186126,90.2016066525804
+"65",16,3,1,0,"Injuries","Black","Male","Kansas",1971,"West North Central","Midwest","KS",163.554768201966,186.210015377017,213.993344006609,187.338667049572
+"66",16,3,1,0,"Non-communicable","Black","Male","Kansas",1971,"West North Central","Midwest","KS",101.886977986535,123.179944396862,144.587481362253,123.075096100119
+"67",16,3,1,1,"All other causes","Black","Female","Kansas",1971,"West North Central","Midwest","KS",131.690569537184,146.382111069768,164.926312594508,147.001999307239
+"68",16,3,1,1,"Cancers","Black","Female","Kansas",1971,"West North Central","Midwest","KS",165.408989385245,181.563669313742,196.810375366475,181.282004378669
+"69",16,3,1,1,"Cardiovascular","Black","Female","Kansas",1971,"West North Central","Midwest","KS",587.12263244139,627.30519516236,670.205674134267,627.442666649387
+"70",16,3,1,1,"Communicable","Black","Female","Kansas",1971,"West North Central","Midwest","KS",40.2620423816341,50.1670596492149,66.0537660946152,51.0104030482831
+"71",16,3,1,1,"Injuries","Black","Female","Kansas",1971,"West North Central","Midwest","KS",47.8872272189035,57.0935229549531,69.9298627656598,57.5448472053785
+"72",16,3,1,1,"Non-communicable","Black","Female","Kansas",1971,"West North Central","Midwest","KS",76.2931963601792,90.2859449933357,107.719689790104,90.5816886434933
+"73",16,4,0,0,"All other causes","White","Male","Kansas",1972,"West North Central","Midwest","KS",119.347243697036,123.282538213713,127.148541320265,123.296645112771
+"74",16,4,0,0,"Cancers","White","Male","Kansas",1972,"West North Central","Midwest","KS",223.991478503502,229.052511691912,234.604082341371,229.196112855298
+"75",16,4,0,0,"Cardiovascular","White","Male","Kansas",1972,"West North Central","Midwest","KS",790.51269350915,806.030218801714,823.898128063005,806.481048638599
+"76",16,4,0,0,"Communicable","White","Male","Kansas",1972,"West North Central","Midwest","KS",51.778827238363,55.6284282516715,60.1143424601491,55.6536421294703
+"77",16,4,0,0,"Injuries","White","Male","Kansas",1972,"West North Central","Midwest","KS",106.376113095679,109.918012021961,113.447719436691,109.920794022099
+"78",16,4,0,0,"Non-communicable","White","Male","Kansas",1972,"West North Central","Midwest","KS",96.2734254593687,99.9571343666875,103.600256385265,99.8989740735225
+"79",16,4,0,1,"All other causes","White","Female","Kansas",1972,"West North Central","Midwest","KS",85.7403363765206,88.8995280400952,92.2816245576067,88.9572937506923
+"80",16,4,0,1,"Cancers","White","Female","Kansas",1972,"West North Central","Midwest","KS",141.163636468166,144.609270549106,148.211273688257,144.606743664933
+"81",16,4,0,1,"Cardiovascular","White","Female","Kansas",1972,"West North Central","Midwest","KS",472.572985907417,483.462497898211,493.118701010957,483.180001912461
+"82",16,4,0,1,"Communicable","White","Female","Kansas",1972,"West North Central","Midwest","KS",30.338565079233,32.4705465752378,34.7437677189464,32.4676378362661
+"83",16,4,0,1,"Injuries","White","Female","Kansas",1972,"West North Central","Midwest","KS",41.8276317465104,43.691014787271,45.5523519986244,43.6861160048851
+"84",16,4,0,1,"Non-communicable","White","Female","Kansas",1972,"West North Central","Midwest","KS",41.2022143394269,43.0796994686137,45.2448531185475,43.1272228622994
+"85",16,4,1,0,"All other causes","Black","Male","Kansas",1972,"West North Central","Midwest","KS",180.251404402009,201.313491566159,227.563605436301,201.907880651833
+"86",16,4,1,0,"Cancers","Black","Male","Kansas",1972,"West North Central","Midwest","KS",294.913149644409,318.511090419029,343.808912396048,318.61395550854
+"87",16,4,1,0,"Cardiovascular","Black","Male","Kansas",1972,"West North Central","Midwest","KS",762.347214751414,809.760587168816,862.270568794964,809.315231333649
+"88",16,4,1,0,"Communicable","Black","Male","Kansas",1972,"West North Central","Midwest","KS",66.6031240797155,87.4566769035454,109.720474524968,87.3843123668856
+"89",16,4,1,0,"Injuries","Black","Male","Kansas",1972,"West North Central","Midwest","KS",165.229167059669,185.902081858205,213.318879767472,186.966192328702
+"90",16,4,1,0,"Non-communicable","Black","Male","Kansas",1972,"West North Central","Midwest","KS",102.180111656648,123.131442497283,142.163402491407,122.879790751286
+"91",16,4,1,1,"All other causes","Black","Female","Kansas",1972,"West North Central","Midwest","KS",132.072759161865,146.204183854039,164.095458642851,146.84276920104
+"92",16,4,1,1,"Cancers","Black","Female","Kansas",1972,"West North Central","Midwest","KS",165.81979280632,182.287046756147,195.099935755974,181.684438843844
+"93",16,4,1,1,"Cardiovascular","Black","Female","Kansas",1972,"West North Central","Midwest","KS",589.462648807471,630.895138446721,676.015753919506,631.575310188473
+"94",16,4,1,1,"Communicable","Black","Female","Kansas",1972,"West North Central","Midwest","KS",38.97997585387,48.4663097364559,62.8737069604287,49.1478535708347
+"95",16,4,1,1,"Injuries","Black","Female","Kansas",1972,"West North Central","Midwest","KS",47.653589909798,56.4597797764418,68.8181529201269,56.8479526128739
+"96",16,4,1,1,"Non-communicable","Black","Female","Kansas",1972,"West North Central","Midwest","KS",75.7985281360559,90.0560149916786,106.048558256943,90.0751802080126
+"97",16,5,0,0,"All other causes","White","Male","Kansas",1973,"West North Central","Midwest","KS",116.909186962624,120.895530725674,124.889886990017,120.836333044323
+"98",16,5,0,0,"Cancers","White","Male","Kansas",1973,"West North Central","Midwest","KS",226.774193672065,232.355974754042,238.401200578856,232.360125716114
+"99",16,5,0,0,"Cardiovascular","White","Male","Kansas",1973,"West North Central","Midwest","KS",786.073056041614,803.149041577167,820.751554418822,803.062939151049
+"100",16,5,0,0,"Communicable","White","Male","Kansas",1973,"West North Central","Midwest","KS",52.0020126986662,56.1433791654783,60.2276310662911,56.127831341076
+"101",16,5,0,0,"Injuries","White","Male","Kansas",1973,"West North Central","Midwest","KS",105.319837485043,108.499500797183,112.099965205711,108.562292846647
+"102",16,5,0,0,"Non-communicable","White","Male","Kansas",1973,"West North Central","Midwest","KS",96.3473839416441,99.7332014290604,103.438458080933,99.8044785021109
+"103",16,5,0,1,"All other causes","White","Female","Kansas",1973,"West North Central","Midwest","KS",84.2993819842529,87.2076882307607,90.5627849682263,87.2924462560552
+"104",16,5,0,1,"Cancers","White","Female","Kansas",1973,"West North Central","Midwest","KS",139.193478360146,142.545420671911,146.023424685162,142.525755710807
+"105",16,5,0,1,"Cardiovascular","White","Female","Kansas",1973,"West North Central","Midwest","KS",467.494633623584,477.513653305354,488.051928055351,477.566081285396
+"106",16,5,0,1,"Communicable","White","Female","Kansas",1973,"West North Central","Midwest","KS",32.2329539588852,34.4677062620176,36.9182808023994,34.490649345418
+"107",16,5,0,1,"Injuries","White","Female","Kansas",1973,"West North Central","Midwest","KS",41.3231202155629,43.1515577640906,44.9391276458683,43.1412117972118
+"108",16,5,0,1,"Non-communicable","White","Female","Kansas",1973,"West North Central","Midwest","KS",41.4998794379323,43.4001014559163,45.4738145275598,43.4303158461004
+"109",16,5,1,0,"All other causes","Black","Male","Kansas",1973,"West North Central","Midwest","KS",177.85849413159,198.76597422936,223.630775438653,199.052922523539
+"110",16,5,1,0,"Cancers","Black","Male","Kansas",1973,"West North Central","Midwest","KS",296.348091984566,319.083527284623,344.84431554676,319.484788034186
+"111",16,5,1,0,"Cardiovascular","Black","Male","Kansas",1973,"West North Central","Midwest","KS",745.443830640843,791.330508834666,841.561893500669,791.831271549014
+"112",16,5,1,0,"Communicable","Black","Male","Kansas",1973,"West North Central","Midwest","KS",64.6605612102759,84.0613382946714,105.762132808613,84.5410838705761
+"113",16,5,1,0,"Injuries","Black","Male","Kansas",1973,"West North Central","Midwest","KS",163.887926195201,184.200545520813,210.302713250013,185.073712199975
+"114",16,5,1,0,"Non-communicable","Black","Male","Kansas",1973,"West North Central","Midwest","KS",102.150725820357,122.861514996512,141.954795245299,122.794246771247
+"115",16,5,1,1,"All other causes","Black","Female","Kansas",1973,"West North Central","Midwest","KS",132.863722663823,147.644072101519,164.105989719713,147.72476875928
+"116",16,5,1,1,"Cancers","Black","Female","Kansas",1973,"West North Central","Midwest","KS",168.401569470411,183.60297674205,196.490849654487,183.304686107202
+"117",16,5,1,1,"Cardiovascular","Black","Female","Kansas",1973,"West North Central","Midwest","KS",587.503072676934,622.978144612207,663.854886049134,622.925053293662
+"118",16,5,1,1,"Communicable","Black","Female","Kansas",1973,"West North Central","Midwest","KS",38.267714927445,47.1082973297916,59.8001765024373,47.6913358902664
+"119",16,5,1,1,"Injuries","Black","Female","Kansas",1973,"West North Central","Midwest","KS",47.8374823854987,56.0314135310847,67.6911731803093,56.3903800381776
+"120",16,5,1,1,"Non-communicable","Black","Female","Kansas",1973,"West North Central","Midwest","KS",75.491547789708,89.7749174242297,105.088658136293,89.7406964004901
+"121",16,6,0,0,"All other causes","White","Male","Kansas",1974,"West North Central","Midwest","KS",115.17256423105,118.628482534573,122.440441867618,118.648154852287
+"122",16,6,0,0,"Cancers","White","Male","Kansas",1974,"West North Central","Midwest","KS",227.85522048431,233.143899581594,238.719163846239,233.176996953704
+"123",16,6,0,0,"Cardiovascular","White","Male","Kansas",1974,"West North Central","Midwest","KS",754.385053013847,770.321114049761,785.360104559954,770.166923479127
+"124",16,6,0,0,"Communicable","White","Male","Kansas",1974,"West North Central","Midwest","KS",52.2224069856558,56.106848011804,60.3355931157679,56.1773067276973
+"125",16,6,0,0,"Injuries","White","Male","Kansas",1974,"West North Central","Midwest","KS",103.745008208875,106.926279398432,110.315982477813,106.950770001769
+"126",16,6,0,0,"Non-communicable","White","Male","Kansas",1974,"West North Central","Midwest","KS",96.3862135233485,99.8402010473715,103.54104465015,99.7655110946561
+"127",16,6,0,1,"All other causes","White","Female","Kansas",1974,"West North Central","Midwest","KS",82.66085235093,85.6622560920341,88.6597410233511,85.6748703324369
+"128",16,6,0,1,"Cancers","White","Female","Kansas",1974,"West North Central","Midwest","KS",139.316489463865,142.712916121153,145.965846180938,142.696676222964
+"129",16,6,0,1,"Cardiovascular","White","Female","Kansas",1974,"West North Central","Midwest","KS",442.413132369676,452.459171221098,462.907011396815,452.385361316196
+"130",16,6,0,1,"Communicable","White","Female","Kansas",1974,"West North Central","Midwest","KS",31.3032905984648,33.2874169029911,35.767843827479,33.3406407529483
+"131",16,6,0,1,"Injuries","White","Female","Kansas",1974,"West North Central","Midwest","KS",39.9971119175149,41.8182096319069,43.6303225540532,41.8171637710445
+"132",16,6,0,1,"Non-communicable","White","Female","Kansas",1974,"West North Central","Midwest","KS",41.2926206377299,43.264755686611,45.2431795912408,43.267627680724
+"133",16,6,1,0,"All other causes","Black","Male","Kansas",1974,"West North Central","Midwest","KS",176.424298963751,196.798476129238,221.025116071359,197.023585739955
+"134",16,6,1,0,"Cancers","Black","Male","Kansas",1974,"West North Central","Midwest","KS",299.135893520278,322.894516817651,346.514368402782,322.659953106435
+"135",16,6,1,0,"Cardiovascular","Black","Male","Kansas",1974,"West North Central","Midwest","KS",724.030240861361,770.611487702483,820.368878792801,771.738816205616
+"136",16,6,1,0,"Communicable","Black","Male","Kansas",1974,"West North Central","Midwest","KS",63.8035535625479,81.1747833305871,101.059849375781,81.5198372373606
+"137",16,6,1,0,"Injuries","Black","Male","Kansas",1974,"West North Central","Midwest","KS",159.722467086465,178.857155346253,203.092761002955,179.720849583632
+"138",16,6,1,0,"Non-communicable","Black","Male","Kansas",1974,"West North Central","Midwest","KS",103.074194952432,123.009516349117,142.099168367134,122.796103097725
+"139",16,6,1,1,"All other causes","Black","Female","Kansas",1974,"West North Central","Midwest","KS",133.859719262892,148.661603353101,165.187814088209,148.895408658886
+"140",16,6,1,1,"Cancers","Black","Female","Kansas",1974,"West North Central","Midwest","KS",169.928005486518,184.59310957581,197.651321010856,184.490014011381
+"141",16,6,1,1,"Cardiovascular","Black","Female","Kansas",1974,"West North Central","Midwest","KS",573.179946482154,608.569662736192,647.996036248223,608.364920717465
+"142",16,6,1,1,"Communicable","Black","Female","Kansas",1974,"West North Central","Midwest","KS",37.8810240215686,46.0161680462579,56.5567187618546,46.4950575822313
+"143",16,6,1,1,"Injuries","Black","Female","Kansas",1974,"West North Central","Midwest","KS",47.3019359861405,55.3577134191434,66.1661253946842,55.7801116837662
+"144",16,6,1,1,"Non-communicable","Black","Female","Kansas",1974,"West North Central","Midwest","KS",75.3657450565915,89.4398098686224,105.20366317235,89.4653416991261
+"145",16,7,0,0,"All other causes","White","Male","Kansas",1975,"West North Central","Midwest","KS",112.881715088596,116.816285875895,120.647895004568,116.780772263672
+"146",16,7,0,0,"Cancers","White","Male","Kansas",1975,"West North Central","Midwest","KS",228.885160105338,234.353891485102,239.814411909623,234.368182723844
+"147",16,7,0,0,"Cardiovascular","White","Male","Kansas",1975,"West North Central","Midwest","KS",712.853254682886,727.298280448154,743.346324798658,727.740334272802
+"148",16,7,0,0,"Communicable","White","Male","Kansas",1975,"West North Central","Midwest","KS",51.8568279745851,55.8158836707536,59.7737901883296,55.8392229176995
+"149",16,7,0,0,"Injuries","White","Male","Kansas",1975,"West North Central","Midwest","KS",101.176379254156,104.396380184669,107.612358760006,104.384894873791
+"150",16,7,0,0,"Non-communicable","White","Male","Kansas",1975,"West North Central","Midwest","KS",95.540348178931,99.0706135896398,102.570665757824,99.00188004624
+"151",16,7,0,1,"All other causes","White","Female","Kansas",1975,"West North Central","Midwest","KS",81.26629573397,84.3314991673282,87.5308618429476,84.3686476782077
+"152",16,7,0,1,"Cancers","White","Female","Kansas",1975,"West North Central","Midwest","KS",139.525697950518,143.084858143783,146.527295807576,143.017440387099
+"153",16,7,0,1,"Cardiovascular","White","Female","Kansas",1975,"West North Central","Midwest","KS",424.013228701953,433.69897709455,442.088815377734,433.439997392252
+"154",16,7,0,1,"Communicable","White","Female","Kansas",1975,"West North Central","Midwest","KS",31.7791702661456,33.8977470702642,36.0020594641195,33.8954856773005
+"155",16,7,0,1,"Injuries","White","Female","Kansas",1975,"West North Central","Midwest","KS",39.2865019865349,40.8696317050346,42.5899051958166,40.9214637938858
+"156",16,7,0,1,"Non-communicable","White","Female","Kansas",1975,"West North Central","Midwest","KS",40.7651301511403,42.6941166625675,44.5735385958656,42.6991969771014
+"157",16,7,1,0,"All other causes","Black","Male","Kansas",1975,"West North Central","Midwest","KS",177.481545507794,196.908886110391,220.520011604513,197.495877171402
+"158",16,7,1,0,"Cancers","Black","Male","Kansas",1975,"West North Central","Midwest","KS",301.761753021142,325.025322837464,349.40148037065,325.122143279698
+"159",16,7,1,0,"Cardiovascular","Black","Male","Kansas",1975,"West North Central","Midwest","KS",709.988015984976,752.370109534877,797.467191214372,752.492457769896
+"160",16,7,1,0,"Communicable","Black","Male","Kansas",1975,"West North Central","Midwest","KS",61.6581498345149,78.3054138038449,98.6245061378897,79.0324874588625
+"161",16,7,1,0,"Injuries","Black","Male","Kansas",1975,"West North Central","Midwest","KS",155.188655910885,175.612142371671,199.041957335114,175.605539863514
+"162",16,7,1,0,"Non-communicable","Black","Male","Kansas",1975,"West North Central","Midwest","KS",103.513794455233,122.715266002871,142.328578640679,122.931735603155
+"163",16,7,1,1,"All other causes","Black","Female","Kansas",1975,"West North Central","Midwest","KS",134.321091991193,148.506993530075,164.401073510546,148.735775028564
+"164",16,7,1,1,"Cancers","Black","Female","Kansas",1975,"West North Central","Midwest","KS",170.717724477614,184.666155895478,197.340613486716,184.525493619226
+"165",16,7,1,1,"Cardiovascular","Black","Female","Kansas",1975,"West North Central","Midwest","KS",547.300000660309,582.460775145558,619.675014890022,582.779822066746
+"166",16,7,1,1,"Communicable","Black","Female","Kansas",1975,"West North Central","Midwest","KS",37.2430192536331,45.3021241819093,56.9230649256908,45.8745881151763
+"167",16,7,1,1,"Injuries","Black","Female","Kansas",1975,"West North Central","Midwest","KS",46.8779722663555,54.6721969389487,65.1561954824425,55.0862203444571
+"168",16,7,1,1,"Non-communicable","Black","Female","Kansas",1975,"West North Central","Midwest","KS",75.6861552179322,89.1620070044836,103.665103403036,89.2873555213268
+"169",16,8,0,0,"All other causes","White","Male","Kansas",1976,"West North Central","Midwest","KS",111.790505161931,115.33435767929,119.350972298909,115.311251614965
+"170",16,8,0,0,"Cancers","White","Male","Kansas",1976,"West North Central","Midwest","KS",230.259007180141,235.665849805919,241.331889518134,235.732919077544
+"171",16,8,0,0,"Cardiovascular","White","Male","Kansas",1976,"West North Central","Midwest","KS",692.365530606478,708.016705224734,723.264766350531,707.720930281175
+"172",16,8,0,0,"Communicable","White","Male","Kansas",1976,"West North Central","Midwest","KS",53.3251037530711,57.430517609406,61.5046927300395,57.4035187863982
+"173",16,8,0,0,"Injuries","White","Male","Kansas",1976,"West North Central","Midwest","KS",99.3262048192197,102.467922671778,105.740662484737,102.497696463324
+"174",16,8,0,0,"Non-communicable","White","Male","Kansas",1976,"West North Central","Midwest","KS",94.878022535202,98.2233522455681,101.802207696615,98.2409887117401
+"175",16,8,0,1,"All other causes","White","Female","Kansas",1976,"West North Central","Midwest","KS",81.3383179915515,84.1635564619863,87.3010816439133,84.210101163661
+"176",16,8,0,1,"Cancers","White","Female","Kansas",1976,"West North Central","Midwest","KS",140.750003425152,143.880756870981,147.226997157537,143.907125316655
+"177",16,8,0,1,"Cardiovascular","White","Female","Kansas",1976,"West North Central","Midwest","KS",416.877686576748,426.245782665602,435.313497584717,426.330186149485
+"178",16,8,0,1,"Communicable","White","Female","Kansas",1976,"West North Central","Midwest","KS",34.131205010381,36.5689641360523,38.972081081723,36.5996153803053
+"179",16,8,0,1,"Injuries","White","Female","Kansas",1976,"West North Central","Midwest","KS",38.6595772690812,40.2802784553199,42.0637219397251,40.3273003643527
+"180",16,8,0,1,"Non-communicable","White","Female","Kansas",1976,"West North Central","Midwest","KS",40.7063764258452,42.5401102758074,44.4191806416751,42.5529087017059
+"181",16,8,1,0,"All other causes","Black","Male","Kansas",1976,"West North Central","Midwest","KS",178.250321172479,197.457836507963,221.134047701873,198.170492793439
+"182",16,8,1,0,"Cancers","Black","Male","Kansas",1976,"West North Central","Midwest","KS",306.713054625815,328.125328515211,351.906905993849,328.69617507819
+"183",16,8,1,0,"Cardiovascular","Black","Male","Kansas",1976,"West North Central","Midwest","KS",694.772959946479,736.512188164696,781.38212884143,737.422056394118
+"184",16,8,1,0,"Communicable","Black","Male","Kansas",1976,"West North Central","Midwest","KS",59.5865901176292,75.7908508027609,92.3197792138247,76.1169491205955
+"185",16,8,1,0,"Injuries","Black","Male","Kansas",1976,"West North Central","Midwest","KS",153.97868890829,174.017864740707,197.478979096114,174.341133861488
+"186",16,8,1,0,"Non-communicable","Black","Male","Kansas",1976,"West North Central","Midwest","KS",105.663379972573,123.294003591643,144.209893844821,123.688744489679
+"187",16,8,1,1,"All other causes","Black","Female","Kansas",1976,"West North Central","Midwest","KS",136.365160478789,149.687928827475,164.697177544982,149.718231583261
+"188",16,8,1,1,"Cancers","Black","Female","Kansas",1976,"West North Central","Midwest","KS",171.094761330978,185.272744250213,198.672799317378,185.235947039789
+"189",16,8,1,1,"Cardiovascular","Black","Female","Kansas",1976,"West North Central","Midwest","KS",534.925545174517,574.187039809175,613.254609069451,574.874619892931
+"190",16,8,1,1,"Communicable","Black","Female","Kansas",1976,"West North Central","Midwest","KS",37.3537428102124,45.0557893422566,55.6893264881846,45.3940880877294
+"191",16,8,1,1,"Injuries","Black","Female","Kansas",1976,"West North Central","Midwest","KS",46.5203794872033,54.0819435988384,64.1025302194526,54.3064375108567
+"192",16,8,1,1,"Non-communicable","Black","Female","Kansas",1976,"West North Central","Midwest","KS",76.4605353537114,89.0700914390297,102.80430330042,89.3540822267518
+"193",16,9,0,0,"All other causes","White","Male","Kansas",1977,"West North Central","Midwest","KS",111.394100083522,114.725632316092,118.313863218702,114.739445548603
+"194",16,9,0,0,"Cancers","White","Male","Kansas",1977,"West North Central","Midwest","KS",231.933583572714,237.51345628983,242.820755240786,237.451411303435
+"195",16,9,0,0,"Cardiovascular","White","Male","Kansas",1977,"West North Central","Midwest","KS",664.291873231395,679.619238737242,694.084846948516,679.549846569675
+"196",16,9,0,0,"Communicable","White","Male","Kansas",1977,"West North Central","Midwest","KS",46.4763692433536,50.1556432877808,53.6984570724624,50.1355157290435
+"197",16,9,0,0,"Injuries","White","Male","Kansas",1977,"West North Central","Midwest","KS",98.3256012709094,101.542728050319,104.575909548679,101.517112088941
+"198",16,9,0,0,"Non-communicable","White","Male","Kansas",1977,"West North Central","Midwest","KS",94.4586846620105,97.7884579295595,101.38476902216,97.8133170569628
+"199",16,9,0,1,"All other causes","White","Female","Kansas",1977,"West North Central","Midwest","KS",81.1456283763085,84.0059364397268,87.0832458423644,83.9958196341377
+"200",16,9,0,1,"Cancers","White","Female","Kansas",1977,"West North Central","Midwest","KS",141.601172344048,145.056569505822,148.467201823806,145.033721789096
+"201",16,9,0,1,"Cardiovascular","White","Female","Kansas",1977,"West North Central","Midwest","KS",390.596633013937,399.960829112656,408.531020643776,399.830638434617
+"202",16,9,0,1,"Communicable","White","Female","Kansas",1977,"West North Central","Midwest","KS",29.5154753357935,31.5954610928273,33.5859557026257,31.6066579909164
+"203",16,9,0,1,"Injuries","White","Female","Kansas",1977,"West North Central","Midwest","KS",38.0270483942985,39.5488066645368,41.2797815214926,39.5723289798657
+"204",16,9,0,1,"Non-communicable","White","Female","Kansas",1977,"West North Central","Midwest","KS",40.825321251258,42.6844115597575,44.6457490896515,42.7041326660289
+"205",16,9,1,0,"All other causes","Black","Male","Kansas",1977,"West North Central","Midwest","KS",180.69092378206,198.373041502441,222.296860471746,199.148263603065
+"206",16,9,1,0,"Cancers","Black","Male","Kansas",1977,"West North Central","Midwest","KS",308.055020062515,331.007148237249,355.539780123841,331.154436533463
+"207",16,9,1,0,"Cardiovascular","Black","Male","Kansas",1977,"West North Central","Midwest","KS",675.013216181393,718.839585394627,763.794327422608,718.851305319073
+"208",16,9,1,0,"Communicable","Black","Male","Kansas",1977,"West North Central","Midwest","KS",58.3027937577482,73.3510233973019,90.7354609654607,73.6092719023319
+"209",16,9,1,0,"Injuries","Black","Male","Kansas",1977,"West North Central","Midwest","KS",153.639600293417,172.352551405879,193.159396578575,172.870945990047
+"210",16,9,1,0,"Non-communicable","Black","Male","Kansas",1977,"West North Central","Midwest","KS",106.170406788788,124.135367468115,143.350995388205,124.260782863922
+"211",16,9,1,1,"All other causes","Black","Female","Kansas",1977,"West North Central","Midwest","KS",135.387563900454,148.731598439434,162.470132142093,148.880864467133
+"212",16,9,1,1,"Cancers","Black","Female","Kansas",1977,"West North Central","Midwest","KS",172.948278820761,186.339735694818,199.287298359715,186.189378077058
+"213",16,9,1,1,"Cardiovascular","Black","Female","Kansas",1977,"West North Central","Midwest","KS",525.071829863887,560.132822377504,600.899034702966,560.844312688393
+"214",16,9,1,1,"Communicable","Black","Female","Kansas",1977,"West North Central","Midwest","KS",36.2199021585994,44.3080160752326,56.6624667408363,44.8154191153605
+"215",16,9,1,1,"Injuries","Black","Female","Kansas",1977,"West North Central","Midwest","KS",46.2017036684754,53.0445948669589,62.9995317993343,53.5287190545081
+"216",16,9,1,1,"Non-communicable","Black","Female","Kansas",1977,"West North Central","Midwest","KS",76.7330476064607,89.6302836823017,103.98694594616,89.7218100960819
+"217",16,10,0,0,"All other causes","White","Male","Kansas",1978,"West North Central","Midwest","KS",109.784675401504,113.405929091361,117.205720825823,113.448697004131
+"218",16,10,0,0,"Cancers","White","Male","Kansas",1978,"West North Central","Midwest","KS",233.330429589711,238.799283083757,244.637540279568,238.891552730993
+"219",16,10,0,0,"Cardiovascular","White","Male","Kansas",1978,"West North Central","Midwest","KS",638.31048063274,652.002436079504,666.085724661495,652.058597521363
+"220",16,10,0,0,"Communicable","White","Male","Kansas",1978,"West North Central","Midwest","KS",47.6434811339598,51.2128857343432,55.4835983082713,51.2948089620223
+"221",16,10,0,0,"Injuries","White","Male","Kansas",1978,"West North Central","Midwest","KS",97.191565880967,100.400894024804,103.512948899466,100.386913948349
+"222",16,10,0,0,"Non-communicable","White","Male","Kansas",1978,"West North Central","Midwest","KS",95.7576646431272,99.3100497981112,102.632516609802,99.2734341816501
+"223",16,10,0,1,"All other causes","White","Female","Kansas",1978,"West North Central","Midwest","KS",81.4554393732937,84.2870132387596,87.2275848617489,84.3002013992786
+"224",16,10,0,1,"Cancers","White","Female","Kansas",1978,"West North Central","Midwest","KS",141.659318265249,145.00241685718,148.46225030725,145.052414597228
+"225",16,10,0,1,"Cardiovascular","White","Female","Kansas",1978,"West North Central","Midwest","KS",387.231562720959,395.828977837593,404.591720941597,396.00174082077
+"226",16,10,0,1,"Communicable","White","Female","Kansas",1978,"West North Central","Midwest","KS",31.7387298128763,33.6460345476816,35.721991934667,33.6747077216346
+"227",16,10,0,1,"Injuries","White","Female","Kansas",1978,"West North Central","Midwest","KS",37.23910146318,38.8132848543289,40.3417678116014,38.8070874182874
+"228",16,10,0,1,"Non-communicable","White","Female","Kansas",1978,"West North Central","Midwest","KS",40.817683790012,42.6786541223008,44.5010989638863,42.6530002751301
+"229",16,10,1,0,"All other causes","Black","Male","Kansas",1978,"West North Central","Midwest","KS",180.445683745279,198.409596624543,220.840957495269,199.017559814694
+"230",16,10,1,0,"Cancers","Black","Male","Kansas",1978,"West North Central","Midwest","KS",311.091589792942,334.324810475964,358.567352000885,334.570257646923
+"231",16,10,1,0,"Cardiovascular","Black","Male","Kansas",1978,"West North Central","Midwest","KS",660.292492235732,701.655890594229,745.214689197311,702.714643298952
+"232",16,10,1,0,"Communicable","Black","Male","Kansas",1978,"West North Central","Midwest","KS",56.0294790116062,70.7476390077257,87.1649911299245,70.7387157037758
+"233",16,10,1,0,"Injuries","Black","Male","Kansas",1978,"West North Central","Midwest","KS",151.737219854863,171.006444059318,191.191816381603,171.075193103151
+"234",16,10,1,0,"Non-communicable","Black","Male","Kansas",1978,"West North Central","Midwest","KS",105.767911196704,123.622650903091,143.208301757673,124.081911609565
+"235",16,10,1,1,"All other causes","Black","Female","Kansas",1978,"West North Central","Midwest","KS",136.471689143241,149.177131109695,162.2093805152,149.112035972085
+"236",16,10,1,1,"Cancers","Black","Female","Kansas",1978,"West North Central","Midwest","KS",173.779318605732,187.498190823811,199.657955165721,187.391628382275
+"237",16,10,1,1,"Cardiovascular","Black","Female","Kansas",1978,"West North Central","Midwest","KS",496.628990305575,530.209631533634,567.945594803896,530.489284148706
+"238",16,10,1,1,"Communicable","Black","Female","Kansas",1978,"West North Central","Midwest","KS",35.3940395574444,43.5715312179744,54.9470036222053,44.0394330460786
+"239",16,10,1,1,"Injuries","Black","Female","Kansas",1978,"West North Central","Midwest","KS",45.5314599515924,52.2793733724615,61.779039784674,52.6381738567138
+"240",16,10,1,1,"Non-communicable","Black","Female","Kansas",1978,"West North Central","Midwest","KS",77.006296616242,89.0634886722213,103.82669623052,89.5044134361037
+"241",16,11,0,0,"All other causes","White","Male","Kansas",1979,"West North Central","Midwest","KS",109.756020943759,113.245587032834,117.157816593848,113.298721915051
+"242",16,11,0,0,"Cancers","White","Male","Kansas",1979,"West North Central","Midwest","KS",233.565783148515,239.11706015729,244.533338939996,239.217067088733
+"243",16,11,0,0,"Cardiovascular","White","Male","Kansas",1979,"West North Central","Midwest","KS",622.527165921274,636.746289214315,651.136071186365,636.739056450318
+"244",16,11,0,0,"Communicable","White","Male","Kansas",1979,"West North Central","Midwest","KS",43.6542699917318,47.1560960177563,50.4606565628964,47.0973974460881
+"245",16,11,0,0,"Injuries","White","Male","Kansas",1979,"West North Central","Midwest","KS",96.5667836445817,99.5943714655849,102.815031490636,99.6257067676616
+"246",16,11,0,0,"Non-communicable","White","Male","Kansas",1979,"West North Central","Midwest","KS",97.062667795393,100.550230690035,103.958376040234,100.541345112833
+"247",16,11,0,1,"All other causes","White","Female","Kansas",1979,"West North Central","Midwest","KS",80.9437466786129,83.6835194569003,86.803795750848,83.722486271132
+"248",16,11,0,1,"Cancers","White","Female","Kansas",1979,"West North Central","Midwest","KS",141.562428674984,144.891873032558,148.205122754601,144.883821724763
+"249",16,11,0,1,"Cardiovascular","White","Female","Kansas",1979,"West North Central","Midwest","KS",378.002665377136,385.757572301272,394.032041561737,385.800419890786
+"250",16,11,0,1,"Communicable","White","Female","Kansas",1979,"West North Central","Midwest","KS",29.3161795292773,31.2293123088404,33.2647280941214,31.2610419104411
+"251",16,11,0,1,"Injuries","White","Female","Kansas",1979,"West North Central","Midwest","KS",36.1944712020775,37.7726106827753,39.3776553778512,37.7654811386237
+"252",16,11,0,1,"Non-communicable","White","Female","Kansas",1979,"West North Central","Midwest","KS",41.6528503143039,43.505516638817,45.3954252815814,43.4792636154436
+"253",16,11,1,0,"All other causes","Black","Male","Kansas",1979,"West North Central","Midwest","KS",180.386572651499,197.465100479097,219.934550665475,197.934223794733
+"254",16,11,1,0,"Cancers","Black","Male","Kansas",1979,"West North Central","Midwest","KS",316.32500468395,337.700085970471,363.577288027705,337.982667705877
+"255",16,11,1,0,"Cardiovascular","Black","Male","Kansas",1979,"West North Central","Midwest","KS",648.838136582374,691.392804548693,737.199341711475,691.891318206352
+"256",16,11,1,0,"Communicable","Black","Male","Kansas",1979,"West North Central","Midwest","KS",54.1217310933623,68.4788609595703,83.9393007181742,68.812454093421
+"257",16,11,1,0,"Injuries","Black","Male","Kansas",1979,"West North Central","Midwest","KS",147.433932067642,165.32908679138,183.892730647645,165.08123566357
+"258",16,11,1,0,"Non-communicable","Black","Male","Kansas",1979,"West North Central","Midwest","KS",106.363176943904,123.744067585818,143.05732015433,124.292884945471
+"259",16,11,1,1,"All other causes","Black","Female","Kansas",1979,"West North Central","Midwest","KS",135.867081980194,148.893768878737,162.241725264518,148.942909498193
+"260",16,11,1,1,"Cancers","Black","Female","Kansas",1979,"West North Central","Midwest","KS",177.15118183013,189.968006326608,202.258380216232,189.634487486731
+"261",16,11,1,1,"Cardiovascular","Black","Female","Kansas",1979,"West North Central","Midwest","KS",473.538397331331,504.822229770503,539.597855846047,506.041617098774
+"262",16,11,1,1,"Communicable","Black","Female","Kansas",1979,"West North Central","Midwest","KS",34.9361602912036,42.7779945844425,53.3638684411459,43.0409831875431
+"263",16,11,1,1,"Injuries","Black","Female","Kansas",1979,"West North Central","Midwest","KS",44.7784888360765,51.4163773782631,60.2237762537029,51.7716659278077
+"264",16,11,1,1,"Non-communicable","Black","Female","Kansas",1979,"West North Central","Midwest","KS",76.3627202639601,88.9127810286039,103.292101913053,89.1426767998189
+"265",16,12,0,0,"All other causes","White","Male","Kansas",1980,"West North Central","Midwest","KS",112.285938491586,115.741711419225,119.514977759394,115.813819269755
+"266",16,12,0,0,"Cancers","White","Male","Kansas",1980,"West North Central","Midwest","KS",232.974829951569,238.908164272416,244.402725849107,238.93257220493
+"267",16,12,0,0,"Cardiovascular","White","Male","Kansas",1980,"West North Central","Midwest","KS",618.563962171759,632.441665695158,645.795114169093,632.245492488688
+"268",16,12,0,0,"Communicable","White","Male","Kansas",1980,"West North Central","Midwest","KS",45.5402260251203,49.0474275533989,52.5762839581994,49.0294975188659
+"269",16,12,0,0,"Injuries","White","Male","Kansas",1980,"West North Central","Midwest","KS",96.3416861078451,99.1011112136678,102.340459748986,99.1697764733043
+"270",16,12,0,0,"Non-communicable","White","Male","Kansas",1980,"West North Central","Midwest","KS",99.8545832358961,103.328766411026,106.936551319607,103.370344129482
+"271",16,12,0,1,"All other causes","White","Female","Kansas",1980,"West North Central","Midwest","KS",79.4608954008774,82.3988668491397,85.2856439048738,82.4361302649688
+"272",16,12,0,1,"Cancers","White","Female","Kansas",1980,"West North Central","Midwest","KS",141.563674014066,144.962619702426,148.171384216378,144.9181375016
+"273",16,12,0,1,"Cardiovascular","White","Female","Kansas",1980,"West North Central","Midwest","KS",373.660121866729,381.565832458328,389.633131567571,381.611006650929
+"274",16,12,0,1,"Communicable","White","Female","Kansas",1980,"West North Central","Midwest","KS",30.5380416942648,32.6006543669317,34.6984116655955,32.6072248548362
+"275",16,12,0,1,"Injuries","White","Female","Kansas",1980,"West North Central","Midwest","KS",35.6468555794848,37.1759410815326,38.8063135866782,37.1810482976555
+"276",16,12,0,1,"Non-communicable","White","Female","Kansas",1980,"West North Central","Midwest","KS",42.8249501969488,44.7175922717966,46.6219941332968,44.6942198881088
+"277",16,12,1,0,"All other causes","Black","Male","Kansas",1980,"West North Central","Midwest","KS",181.357538399297,197.375365667076,218.888074500312,198.238590435845
+"278",16,12,1,0,"Cancers","Black","Male","Kansas",1980,"West North Central","Midwest","KS",314.976472772866,338.88006531768,362.046635279891,338.737185534272
+"279",16,12,1,0,"Cardiovascular","Black","Male","Kansas",1980,"West North Central","Midwest","KS",635.482883267744,676.392553242247,722.686871628499,677.243478473469
+"280",16,12,1,0,"Communicable","Black","Male","Kansas",1980,"West North Central","Midwest","KS",54.2571300054043,67.9275601083189,83.1862607050982,68.3039145410073
+"281",16,12,1,0,"Injuries","Black","Male","Kansas",1980,"West North Central","Midwest","KS",142.504428777265,160.502168695883,179.302877536023,160.553823465075
+"282",16,12,1,0,"Non-communicable","Black","Male","Kansas",1980,"West North Central","Midwest","KS",107.566420378138,124.248283292293,143.675404744123,124.780333426608
+"283",16,12,1,1,"All other causes","Black","Female","Kansas",1980,"West North Central","Midwest","KS",135.792715820614,149.144725115448,162.542759467025,149.294853054354
+"284",16,12,1,1,"Cancers","Black","Female","Kansas",1980,"West North Central","Midwest","KS",178.728649521372,192.189522588803,204.686215686945,191.976723900077
+"285",16,12,1,1,"Cardiovascular","Black","Female","Kansas",1980,"West North Central","Midwest","KS",465.151608964573,497.476067631279,533.998627084347,498.100619772343
+"286",16,12,1,1,"Communicable","Black","Female","Kansas",1980,"West North Central","Midwest","KS",34.7200112739596,42.3922384757242,52.9674291388789,42.685503674871
+"287",16,12,1,1,"Injuries","Black","Female","Kansas",1980,"West North Central","Midwest","KS",43.9789173173653,50.761648621293,59.9554199306122,50.9889934333577
+"288",16,12,1,1,"Non-communicable","Black","Female","Kansas",1980,"West North Central","Midwest","KS",76.7986594228319,89.214860456521,103.503108994482,89.2727437340162
+"289",16,13,0,0,"All other causes","White","Male","Kansas",1981,"West North Central","Midwest","KS",113.144583833376,117.040496461085,120.48403322688,116.900755452983
+"290",16,13,0,0,"Cancers","White","Male","Kansas",1981,"West North Central","Midwest","KS",234.986858061651,240.275269736475,245.742514504777,240.328305862195
+"291",16,13,0,0,"Cardiovascular","White","Male","Kansas",1981,"West North Central","Midwest","KS",597.431542590485,609.460831178954,622.711729740108,609.535000803926
+"292",16,13,0,0,"Communicable","White","Male","Kansas",1981,"West North Central","Midwest","KS",43.7389097927217,46.9936074624155,50.6341199124015,47.0411185939245
+"293",16,13,0,0,"Injuries","White","Male","Kansas",1981,"West North Central","Midwest","KS",94.1100454760888,96.9255381725396,99.9831667696093,96.9745341395084
+"294",16,13,0,0,"Non-communicable","White","Male","Kansas",1981,"West North Central","Midwest","KS",103.688605931313,107.466840818671,111.234718866605,107.515163452432
+"295",16,13,0,1,"All other causes","White","Female","Kansas",1981,"West North Central","Midwest","KS",78.6919100668274,81.7221191665359,84.7380015260408,81.6870731047092
+"296",16,13,0,1,"Cancers","White","Female","Kansas",1981,"West North Central","Midwest","KS",142.343281858261,145.90675786662,148.901333702094,145.829890959189
+"297",16,13,0,1,"Cardiovascular","White","Female","Kansas",1981,"West North Central","Midwest","KS",363.121744183202,371.413689088401,379.217661784155,371.396995453757
+"298",16,13,0,1,"Communicable","White","Female","Kansas",1981,"West North Central","Midwest","KS",28.8404862720856,30.7040827149292,32.7449262613999,30.7099409644549
+"299",16,13,0,1,"Injuries","White","Female","Kansas",1981,"West North Central","Midwest","KS",34.5755403829527,36.1085006189581,37.6303194371565,36.0956883976967
+"300",16,13,0,1,"Non-communicable","White","Female","Kansas",1981,"West North Central","Midwest","KS",45.1873670229564,47.1255181059532,49.1271849837247,47.1299345496978
+"301",16,13,1,0,"All other causes","Black","Male","Kansas",1981,"West North Central","Midwest","KS",180.540292348718,197.945789186462,219.28411675151,198.29622903547
+"302",16,13,1,0,"Cancers","Black","Male","Kansas",1981,"West North Central","Midwest","KS",313.979274487337,338.481294014785,362.122739697786,338.331676163247
+"303",16,13,1,0,"Cardiovascular","Black","Male","Kansas",1981,"West North Central","Midwest","KS",608.953163146182,651.302393270604,696.012304903858,652.340243131621
+"304",16,13,1,0,"Communicable","Black","Male","Kansas",1981,"West North Central","Midwest","KS",54.317636517569,67.7672042172288,83.3475233041491,67.9956873735786
+"305",16,13,1,0,"Injuries","Black","Male","Kansas",1981,"West North Central","Midwest","KS",137.774696494185,155.562448845978,174.669830200801,155.46277183465
+"306",16,13,1,0,"Non-communicable","Black","Male","Kansas",1981,"West North Central","Midwest","KS",107.861579212264,123.66304652582,142.362374776376,124.276645633249
+"307",16,13,1,1,"All other causes","Black","Female","Kansas",1981,"West North Central","Midwest","KS",135.70900979759,148.836727520699,161.971781729711,148.848582560813
+"308",16,13,1,1,"Cancers","Black","Female","Kansas",1981,"West North Central","Midwest","KS",180.738434191577,193.398407781216,206.625853277256,193.285221503577
+"309",16,13,1,1,"Cardiovascular","Black","Female","Kansas",1981,"West North Central","Midwest","KS",453.298564661307,485.395877241196,518.750089503324,485.30918545939
+"310",16,13,1,1,"Communicable","Black","Female","Kansas",1981,"West North Central","Midwest","KS",34.3453030532488,42.1337573656615,52.0667845619437,42.4258049495747
+"311",16,13,1,1,"Injuries","Black","Female","Kansas",1981,"West North Central","Midwest","KS",43.2344393076349,49.9896915426189,58.8825575007472,50.19699036838
+"312",16,13,1,1,"Non-communicable","Black","Female","Kansas",1981,"West North Central","Midwest","KS",76.4472078064854,88.4750265175878,102.359095466174,88.8489078164368
+"313",16,14,0,0,"All other causes","White","Male","Kansas",1982,"West North Central","Midwest","KS",114.134281784421,117.877138528534,121.780812748947,117.869120210957
+"314",16,14,0,0,"Cancers","White","Male","Kansas",1982,"West North Central","Midwest","KS",237.554098411437,242.947494441895,248.860101975026,243.080341198035
+"315",16,14,0,0,"Cardiovascular","White","Male","Kansas",1982,"West North Central","Midwest","KS",592.193736275756,606.241326358105,618.472323375315,605.955463748025
+"316",16,14,0,0,"Communicable","White","Male","Kansas",1982,"West North Central","Midwest","KS",43.8603091435744,47.3666099939684,50.9494898483133,47.4423347511489
+"317",16,14,0,0,"Injuries","White","Male","Kansas",1982,"West North Central","Midwest","KS",90.1054988494948,92.9351146351509,95.8228180243296,92.9512529171463
+"318",16,14,0,0,"Non-communicable","White","Male","Kansas",1982,"West North Central","Midwest","KS",104.660914330165,108.605047139155,112.651844781867,108.625023362205
+"319",16,14,0,1,"All other causes","White","Female","Kansas",1982,"West North Central","Midwest","KS",79.5953240981922,82.4953761043027,85.3737302612849,82.5431525411934
+"320",16,14,0,1,"Cancers","White","Female","Kansas",1982,"West North Central","Midwest","KS",143.689429739066,147.093187503477,150.418935429793,147.038941204008
+"321",16,14,0,1,"Cardiovascular","White","Female","Kansas",1982,"West North Central","Midwest","KS",354.924885298011,362.636851531678,370.544458551362,362.671835107157
+"322",16,14,0,1,"Communicable","White","Female","Kansas",1982,"West North Central","Midwest","KS",27.9777497633904,29.8092152027337,31.9330252620216,29.8296649328552
+"323",16,14,0,1,"Injuries","White","Female","Kansas",1982,"West North Central","Midwest","KS",33.4554757720828,34.8389008467371,36.2816527111153,34.8688331126503
+"324",16,14,0,1,"Non-communicable","White","Female","Kansas",1982,"West North Central","Midwest","KS",47.2223093109848,49.3596068458459,51.5341431606023,49.3697389573923
+"325",16,14,1,0,"All other causes","Black","Male","Kansas",1982,"West North Central","Midwest","KS",180.551022966753,197.575958859099,219.27522524866,198.402901760857
+"326",16,14,1,0,"Cancers","Black","Male","Kansas",1982,"West North Central","Midwest","KS",317.55444043017,340.164435361609,364.18813867409,340.529390672579
+"327",16,14,1,0,"Cardiovascular","Black","Male","Kansas",1982,"West North Central","Midwest","KS",597.216832791592,639.864851208621,680.794529837028,640.259233997742
+"328",16,14,1,0,"Communicable","Black","Male","Kansas",1982,"West North Central","Midwest","KS",54.0306701413178,67.3414207394038,82.3133821154129,67.5945765480467
+"329",16,14,1,0,"Injuries","Black","Male","Kansas",1982,"West North Central","Midwest","KS",130.254437366977,147.106449011502,165.947300884132,147.495366800549
+"330",16,14,1,0,"Non-communicable","Black","Male","Kansas",1982,"West North Central","Midwest","KS",107.822527358726,123.502336102934,141.561532999524,124.169118331274
+"331",16,14,1,1,"All other causes","Black","Female","Kansas",1982,"West North Central","Midwest","KS",133.805230907385,147.027348816317,159.580097663943,146.918887081298
+"332",16,14,1,1,"Cancers","Black","Female","Kansas",1982,"West North Central","Midwest","KS",182.413507753685,194.724163879151,208.35440944041,194.840324974246
+"333",16,14,1,1,"Cardiovascular","Black","Female","Kansas",1982,"West North Central","Midwest","KS",446.287781179505,475.905731872907,511.045517796848,476.993546047559
+"334",16,14,1,1,"Communicable","Black","Female","Kansas",1982,"West North Central","Midwest","KS",33.8212765907206,41.6788268340657,51.7691446913989,41.9013713933025
+"335",16,14,1,1,"Injuries","Black","Female","Kansas",1982,"West North Central","Midwest","KS",42.7610185918438,49.1472458912508,57.6629161684827,49.4050077589895
+"336",16,14,1,1,"Non-communicable","Black","Female","Kansas",1982,"West North Central","Midwest","KS",76.7775689308426,89.2028534675641,102.332568971526,89.3570459403944
+"337",16,15,0,0,"All other causes","White","Male","Kansas",1983,"West North Central","Midwest","KS",114.479467828309,118.640833693763,122.356429001222,118.53098488717
+"338",16,15,0,0,"Cancers","White","Male","Kansas",1983,"West North Central","Midwest","KS",238.728118708895,244.27484249124,249.853569655301,244.283508627795
+"339",16,15,0,0,"Cardiovascular","White","Male","Kansas",1983,"West North Central","Midwest","KS",583.340830679373,595.883968898089,609.760926352244,596.099752975145
+"340",16,15,0,0,"Communicable","White","Male","Kansas",1983,"West North Central","Midwest","KS",47.2685261442141,50.9537135890357,54.5775259738387,50.9488047998245
+"341",16,15,0,0,"Injuries","White","Male","Kansas",1983,"West North Central","Midwest","KS",87.1423315073415,89.9060166692976,92.8990628683925,89.9630732356051
+"342",16,15,0,0,"Non-communicable","White","Male","Kansas",1983,"West North Central","Midwest","KS",106.559459614001,110.466508565986,114.562179083775,110.499632586652
+"343",16,15,0,1,"All other causes","White","Female","Kansas",1983,"West North Central","Midwest","KS",80.6734456129292,83.6110887321608,86.6987856806812,83.5767579224026
+"344",16,15,0,1,"Cancers","White","Female","Kansas",1983,"West North Central","Midwest","KS",145.535550344944,148.976065596268,152.410984415638,148.973157850627
+"345",16,15,0,1,"Cardiovascular","White","Female","Kansas",1983,"West North Central","Midwest","KS",338.576158398926,346.49335410844,353.717153428594,346.463192089629
+"346",16,15,0,1,"Communicable","White","Female","Kansas",1983,"West North Central","Midwest","KS",28.6756012638159,30.6752814955395,32.6412914577493,30.6731369665548
+"347",16,15,0,1,"Injuries","White","Female","Kansas",1983,"West North Central","Midwest","KS",32.6800549694718,34.1031196701378,35.5764096198882,34.1061391374231
+"348",16,15,0,1,"Non-communicable","White","Female","Kansas",1983,"West North Central","Midwest","KS",49.1885660368776,51.1773116276897,53.6277649824218,51.2301467898211
+"349",16,15,1,0,"All other causes","Black","Male","Kansas",1983,"West North Central","Midwest","KS",180.244761702135,198.265426881264,219.038651558871,198.886405828541
+"350",16,15,1,0,"Cancers","Black","Male","Kansas",1983,"West North Central","Midwest","KS",321.802971736933,345.44016145565,368.11676856526,345.54620430525
+"351",16,15,1,0,"Cardiovascular","Black","Male","Kansas",1983,"West North Central","Midwest","KS",591.772786416387,630.791613492023,670.871520288766,630.755741560198
+"352",16,15,1,0,"Communicable","Black","Male","Kansas",1983,"West North Central","Midwest","KS",54.5321602055827,67.4943114020065,83.1362693888384,67.750309786132
+"353",16,15,1,0,"Injuries","Black","Male","Kansas",1983,"West North Central","Midwest","KS",125.582981349049,142.658060310681,160.776250633576,142.843131403664
+"354",16,15,1,0,"Non-communicable","Black","Male","Kansas",1983,"West North Central","Midwest","KS",108.052749175727,123.504762685074,142.542532550809,124.363313593468
+"355",16,15,1,1,"All other causes","Black","Female","Kansas",1983,"West North Central","Midwest","KS",133.109904171662,145.436873579597,157.82750302349,145.403769702278
+"356",16,15,1,1,"Cancers","Black","Female","Kansas",1983,"West North Central","Midwest","KS",182.626220377028,195.705875616854,209.384952702807,195.847677739542
+"357",16,15,1,1,"Cardiovascular","Black","Female","Kansas",1983,"West North Central","Midwest","KS",440.176284683277,471.290488559802,503.835588391147,471.968535992014
+"358",16,15,1,1,"Communicable","Black","Female","Kansas",1983,"West North Central","Midwest","KS",33.6118755179131,41.2031595621363,51.0769361422069,41.6067930232739
+"359",16,15,1,1,"Injuries","Black","Female","Kansas",1983,"West North Central","Midwest","KS",42.148006979722,48.4336699224303,56.3700600225515,48.6479485072101
+"360",16,15,1,1,"Non-communicable","Black","Female","Kansas",1983,"West North Central","Midwest","KS",78.2834533346825,90.359137439609,103.22213585879,90.4049623194583
+"361",16,16,0,0,"All other causes","White","Male","Kansas",1984,"West North Central","Midwest","KS",114.853533089373,118.955775709079,123.362173861893,118.994705501354
+"362",16,16,0,0,"Cancers","White","Male","Kansas",1984,"West North Central","Midwest","KS",237.651690265091,243.161857575303,248.722582315726,243.166258648742
+"363",16,16,0,0,"Cardiovascular","White","Male","Kansas",1984,"West North Central","Midwest","KS",566.750709678102,579.042096981265,593.007284246549,579.297621945001
+"364",16,16,0,0,"Communicable","White","Male","Kansas",1984,"West North Central","Midwest","KS",52.4582555290149,55.979697815805,60.1116529600339,56.0655731813752
+"365",16,16,0,0,"Injuries","White","Male","Kansas",1984,"West North Central","Midwest","KS",85.692321150326,88.4402782891869,91.3203410581418,88.4592101457715
+"366",16,16,0,0,"Non-communicable","White","Male","Kansas",1984,"West North Central","Midwest","KS",107.777189951168,111.488314747712,115.644769712745,111.489871234562
+"367",16,16,0,1,"All other causes","White","Female","Kansas",1984,"West North Central","Midwest","KS",82.2273322663351,85.4667262294602,88.4577206419577,85.4552718263931
+"368",16,16,0,1,"Cancers","White","Female","Kansas",1984,"West North Central","Midwest","KS",146.973869132943,150.041885751367,153.641684099136,150.119883229088
+"369",16,16,0,1,"Cardiovascular","White","Female","Kansas",1984,"West North Central","Midwest","KS",341.905005831408,348.992967406472,356.717621187935,349.049428474993
+"370",16,16,0,1,"Communicable","White","Female","Kansas",1984,"West North Central","Midwest","KS",30.8576801974151,32.7644852420015,34.8531258891898,32.7766923702823
+"371",16,16,0,1,"Injuries","White","Female","Kansas",1984,"West North Central","Midwest","KS",32.2637991260512,33.6322166937145,35.0835226998604,33.6487600899768
+"372",16,16,0,1,"Non-communicable","White","Female","Kansas",1984,"West North Central","Midwest","KS",50.56901015002,52.8289792090654,55.1750190031255,52.8160315349932
+"373",16,16,1,0,"All other causes","Black","Male","Kansas",1984,"West North Central","Midwest","KS",180.857772331238,200.604666127822,220.846099193156,200.94924672118
+"374",16,16,1,0,"Cancers","Black","Male","Kansas",1984,"West North Central","Midwest","KS",323.007597647931,345.873592695057,370.811285601791,346.109587548224
+"375",16,16,1,0,"Cardiovascular","Black","Male","Kansas",1984,"West North Central","Midwest","KS",575.220696347226,613.03942014632,656.226248412167,613.816334196742
+"376",16,16,1,0,"Communicable","Black","Male","Kansas",1984,"West North Central","Midwest","KS",55.2867211032068,68.5979798097492,85.0761348810845,68.9806830241312
+"377",16,16,1,0,"Injuries","Black","Male","Kansas",1984,"West North Central","Midwest","KS",123.724663875253,140.93051434309,158.854779210567,140.96583368334
+"378",16,16,1,0,"Non-communicable","Black","Male","Kansas",1984,"West North Central","Midwest","KS",108.010407465024,124.333149857887,143.05879218621,124.66412894074
+"379",16,16,1,1,"All other causes","Black","Female","Kansas",1984,"West North Central","Midwest","KS",132.668583482265,144.744111364191,156.93165258416,144.646381259541
+"380",16,16,1,1,"Cancers","Black","Female","Kansas",1984,"West North Central","Midwest","KS",182.594615519056,196.278527664555,210.633040061505,196.260265407499
+"381",16,16,1,1,"Cardiovascular","Black","Female","Kansas",1984,"West North Central","Midwest","KS",432.518623258133,463.843088572744,498.216530053885,464.248740525973
+"382",16,16,1,1,"Communicable","Black","Female","Kansas",1984,"West North Central","Midwest","KS",33.6916918254614,40.9048262762445,50.4585541345771,41.2476688828217
+"383",16,16,1,1,"Injuries","Black","Female","Kansas",1984,"West North Central","Midwest","KS",41.7124316360542,47.7508581017106,55.451040070422,47.8795402875296
+"384",16,16,1,1,"Non-communicable","Black","Female","Kansas",1984,"West North Central","Midwest","KS",78.689796350989,90.6870816784058,103.735234086207,90.9545353187291
+"385",16,17,0,0,"All other causes","White","Male","Kansas",1985,"West North Central","Midwest","KS",116.186732445797,120.166129284109,124.220292983905,120.173173443126
+"386",16,17,0,0,"Cancers","White","Male","Kansas",1985,"West North Central","Midwest","KS",237.099418404723,242.393038823318,248.045175863664,242.41530540976
+"387",16,17,0,0,"Cardiovascular","White","Male","Kansas",1985,"West North Central","Midwest","KS",547.052563406994,559.613168177833,571.579306565521,559.636408944639
+"388",16,17,0,0,"Communicable","White","Male","Kansas",1985,"West North Central","Midwest","KS",53.3339009412151,57.100837445023,61.0396495854972,57.1162215511216
+"389",16,17,0,0,"Injuries","White","Male","Kansas",1985,"West North Central","Midwest","KS",83.8799627605064,86.8325043890588,89.4829845522592,86.7883175491941
+"390",16,17,0,0,"Non-communicable","White","Male","Kansas",1985,"West North Central","Midwest","KS",107.317798381121,111.407899217014,115.4372754761,111.425979797485
+"391",16,17,0,1,"All other causes","White","Female","Kansas",1985,"West North Central","Midwest","KS",82.8261806406343,85.9021191694163,88.9318459697697,85.9128958817298
+"392",16,17,0,1,"Cancers","White","Female","Kansas",1985,"West North Central","Midwest","KS",147.805902986797,151.193004937325,154.691899666686,151.178858227125
+"393",16,17,0,1,"Cardiovascular","White","Female","Kansas",1985,"West North Central","Midwest","KS",330.703495318533,338.4487110693,345.522672527727,338.550561385344
+"394",16,17,0,1,"Communicable","White","Female","Kansas",1985,"West North Central","Midwest","KS",33.6500092501257,35.6386162414476,37.7354774385598,35.6270341857539
+"395",16,17,0,1,"Injuries","White","Female","Kansas",1985,"West North Central","Midwest","KS",31.9588524421068,33.3305843648517,34.7222219011132,33.3578091510889
+"396",16,17,0,1,"Non-communicable","White","Female","Kansas",1985,"West North Central","Midwest","KS",52.0347714894564,54.2896297446693,56.6391664673243,54.3061088066073
+"397",16,17,1,0,"All other causes","Black","Male","Kansas",1985,"West North Central","Midwest","KS",185.429944193061,203.331071737815,224.598194405849,203.904693257027
+"398",16,17,1,0,"Cancers","Black","Male","Kansas",1985,"West North Central","Midwest","KS",322.748989501912,346.194086536377,369.872548761231,346.292288594146
+"399",16,17,1,0,"Cardiovascular","Black","Male","Kansas",1985,"West North Central","Midwest","KS",559.390377163552,593.976030862476,631.617806314758,594.647418552571
+"400",16,17,1,0,"Communicable","Black","Male","Kansas",1985,"West North Central","Midwest","KS",57.9571469625347,70.0111850722277,85.8338578076377,70.4637338074511
+"401",16,17,1,0,"Injuries","Black","Male","Kansas",1985,"West North Central","Midwest","KS",123.868712598795,139.334332381137,158.258828360675,139.749567202538
+"402",16,17,1,0,"Non-communicable","Black","Male","Kansas",1985,"West North Central","Midwest","KS",106.643388950996,125.689630708834,143.150899823914,125.799060341043
+"403",16,17,1,1,"All other causes","Black","Female","Kansas",1985,"West North Central","Midwest","KS",132.031216960314,143.799074752352,155.514720896765,143.807655516118
+"404",16,17,1,1,"Cancers","Black","Female","Kansas",1985,"West North Central","Midwest","KS",184.042814586015,196.696275384558,210.334924506656,196.86816976313
+"405",16,17,1,1,"Cardiovascular","Black","Female","Kansas",1985,"West North Central","Midwest","KS",425.561843298444,455.034578605041,484.471002204748,455.183131770658
+"406",16,17,1,1,"Communicable","Black","Female","Kansas",1985,"West North Central","Midwest","KS",33.0359191026488,41.0632308386725,49.8455489843479,41.1764897752648
+"407",16,17,1,1,"Injuries","Black","Female","Kansas",1985,"West North Central","Midwest","KS",40.9175585946674,46.9387454299616,54.553583139786,47.1846923117537
+"408",16,17,1,1,"Non-communicable","Black","Female","Kansas",1985,"West North Central","Midwest","KS",80.4161552634724,91.9200860450294,104.423492422277,92.086941804883
+"409",16,18,0,0,"All other causes","White","Male","Kansas",1986,"West North Central","Midwest","KS",115.973385751517,119.893946666665,124.190284843417,119.914254263702
+"410",16,18,0,0,"Cancers","White","Male","Kansas",1986,"West North Central","Midwest","KS",241.015125050649,246.003842485883,251.352407883471,246.000691738193
+"411",16,18,0,0,"Cardiovascular","White","Male","Kansas",1986,"West North Central","Midwest","KS",526.417420503361,537.897177718584,549.770401410191,538.018406695176
+"412",16,18,0,0,"Communicable","White","Male","Kansas",1986,"West North Central","Midwest","KS",53.8863110857845,57.4150811650352,61.1645635238624,57.4230197507061
+"413",16,18,0,0,"Injuries","White","Male","Kansas",1986,"West North Central","Midwest","KS",83.3916682184044,86.2093765049817,88.8816340911247,86.2073330125439
+"414",16,18,0,0,"Non-communicable","White","Male","Kansas",1986,"West North Central","Midwest","KS",107.852671674153,111.777100898811,116.050288638409,111.809589859145
+"415",16,18,0,1,"All other causes","White","Female","Kansas",1986,"West North Central","Midwest","KS",83.8741624990201,86.8869391844558,89.9251243729595,86.8978499009718
+"416",16,18,0,1,"Cancers","White","Female","Kansas",1986,"West North Central","Midwest","KS",149.055389942248,152.367145443404,155.704954590919,152.394579240296
+"417",16,18,0,1,"Cardiovascular","White","Female","Kansas",1986,"West North Central","Midwest","KS",324.796007049908,331.754069015692,338.771675057059,331.758898664568
+"418",16,18,0,1,"Communicable","White","Female","Kansas",1986,"West North Central","Midwest","KS",34.8029148158033,36.8713359857053,39.0895837211681,36.8665517880625
+"419",16,18,0,1,"Injuries","White","Female","Kansas",1986,"West North Central","Midwest","KS",31.7724963774572,33.087150592882,34.5457348559864,33.0963695896284
+"420",16,18,0,1,"Non-communicable","White","Female","Kansas",1986,"West North Central","Midwest","KS",53.5947347935624,55.8677746673036,58.1333590904813,55.8508853850945
+"421",16,18,1,0,"All other causes","Black","Male","Kansas",1986,"West North Central","Midwest","KS",190.716456162767,208.650660350416,228.97551224768,208.893225697899
+"422",16,18,1,0,"Cancers","Black","Male","Kansas",1986,"West North Central","Midwest","KS",323.559909782603,347.356117842745,371.087871296706,347.172659459126
+"423",16,18,1,0,"Cardiovascular","Black","Male","Kansas",1986,"West North Central","Midwest","KS",548.947198234842,586.376023790545,623.864123969754,586.164537345762
+"424",16,18,1,0,"Communicable","Black","Male","Kansas",1986,"West North Central","Midwest","KS",56.3006023653688,69.2695632750162,87.5632635183335,69.9448236603899
+"425",16,18,1,0,"Injuries","Black","Male","Kansas",1986,"West North Central","Midwest","KS",122.448237532087,138.046131205241,156.32442427472,138.456228986375
+"426",16,18,1,0,"Non-communicable","Black","Male","Kansas",1986,"West North Central","Midwest","KS",109.393777809899,127.727159099004,145.330486698496,127.616884835351
+"427",16,18,1,1,"All other causes","Black","Female","Kansas",1986,"West North Central","Midwest","KS",130.804205284633,143.52708561618,154.999815060703,143.344452924719
+"428",16,18,1,1,"Cancers","Black","Female","Kansas",1986,"West North Central","Midwest","KS",185.484134459919,198.073973356459,211.147581980292,198.232394576806
+"429",16,18,1,1,"Cardiovascular","Black","Female","Kansas",1986,"West North Central","Midwest","KS",411.019049626987,439.132138940481,469.977227977808,439.661905182512
+"430",16,18,1,1,"Communicable","Black","Female","Kansas",1986,"West North Central","Midwest","KS",33.6183993536714,41.2840683986214,50.3352587030908,41.4192611914111
+"431",16,18,1,1,"Injuries","Black","Female","Kansas",1986,"West North Central","Midwest","KS",40.3142017055147,46.360893351012,54.1345634555401,46.5448557278691
+"432",16,18,1,1,"Non-communicable","Black","Female","Kansas",1986,"West North Central","Midwest","KS",81.3125970984916,92.3770292486374,104.97890623812,92.6878489827968
+"433",16,19,0,0,"All other causes","White","Male","Kansas",1987,"West North Central","Midwest","KS",114.478179136329,118.321456791962,122.520513531637,118.344675739669
+"434",16,19,0,0,"Cancers","White","Male","Kansas",1987,"West North Central","Midwest","KS",243.388965433054,248.724906255544,254.63131265551,248.804401255052
+"435",16,19,0,0,"Cardiovascular","White","Male","Kansas",1987,"West North Central","Midwest","KS",509.36149854139,520.848434031988,532.793425820812,520.868511555915
+"436",16,19,0,0,"Communicable","White","Male","Kansas",1987,"West North Central","Midwest","KS",54.8101531475813,58.422709248461,62.1258838290188,58.5053607113823
+"437",16,19,0,0,"Injuries","White","Male","Kansas",1987,"West North Central","Midwest","KS",82.1748639679777,84.9241154774413,87.5792974699955,84.9551867829729
+"438",16,19,0,0,"Non-communicable","White","Male","Kansas",1987,"West North Central","Midwest","KS",109.225421623615,113.087887573018,117.314231297081,113.178244083063
+"439",16,19,0,1,"All other causes","White","Female","Kansas",1987,"West North Central","Midwest","KS",85.4960747438346,88.5277209004231,91.6527123247249,88.5248266435609
+"440",16,19,0,1,"Cancers","White","Female","Kansas",1987,"West North Central","Midwest","KS",148.89018636115,152.352690619913,155.817439415972,152.318342245509
+"441",16,19,0,1,"Cardiovascular","White","Female","Kansas",1987,"West North Central","Midwest","KS",320.300508059626,327.352477238629,334.973696664055,327.536801600211
+"442",16,19,0,1,"Communicable","White","Female","Kansas",1987,"West North Central","Midwest","KS",32.8363232890011,35.0246108646131,37.0161309077733,35.0037802375994
+"443",16,19,0,1,"Injuries","White","Female","Kansas",1987,"West North Central","Midwest","KS",31.3634200113642,32.7255140541708,34.1712182397645,32.7379548200463
+"444",16,19,0,1,"Non-communicable","White","Female","Kansas",1987,"West North Central","Midwest","KS",56.0879767177888,58.3804091205234,60.6399250217128,58.3655953579141
+"445",16,19,1,0,"All other causes","Black","Male","Kansas",1987,"West North Central","Midwest","KS",193.299617239185,213.013536728535,232.713313950373,213.089051830485
+"446",16,19,1,0,"Cancers","Black","Male","Kansas",1987,"West North Central","Midwest","KS",325.272290279373,350.744913368032,372.879736625824,350.383881589045
+"447",16,19,1,0,"Cardiovascular","Black","Male","Kansas",1987,"West North Central","Midwest","KS",537.916879328361,575.912502440962,616.334915593852,576.167729349758
+"448",16,19,1,0,"Communicable","Black","Male","Kansas",1987,"West North Central","Midwest","KS",55.6887737211913,68.445420635934,85.2101553636248,69.2287195515561
+"449",16,19,1,0,"Injuries","Black","Male","Kansas",1987,"West North Central","Midwest","KS",120.639888354712,135.883682430977,153.906779304737,136.289804345281
+"450",16,19,1,0,"Non-communicable","Black","Male","Kansas",1987,"West North Central","Midwest","KS",109.298528886996,128.772290618334,147.423395705928,128.557232247726
+"451",16,19,1,1,"All other causes","Black","Female","Kansas",1987,"West North Central","Midwest","KS",131.300921090066,143.777557525131,154.912449517237,143.572426511717
+"452",16,19,1,1,"Cancers","Black","Female","Kansas",1987,"West North Central","Midwest","KS",186.393639741713,199.591906216842,211.923629245995,199.64038890089
+"453",16,19,1,1,"Cardiovascular","Black","Female","Kansas",1987,"West North Central","Midwest","KS",393.149658453052,420.190035505477,448.496536802553,419.7624453822
+"454",16,19,1,1,"Communicable","Black","Female","Kansas",1987,"West North Central","Midwest","KS",34.3706674971855,42.4717145422962,51.6858498275,42.624555372542
+"455",16,19,1,1,"Injuries","Black","Female","Kansas",1987,"West North Central","Midwest","KS",40.0128963335091,45.9261592437405,53.5995194762931,46.0983105439088
+"456",16,19,1,1,"Non-communicable","Black","Female","Kansas",1987,"West North Central","Midwest","KS",82.6394611209754,92.8432031395825,104.876932160893,93.0870488974258
+"457",16,20,0,0,"All other causes","White","Male","Kansas",1988,"West North Central","Midwest","KS",114.145855450965,117.839009560295,121.731568926159,117.866697288057
+"458",16,20,0,0,"Cancers","White","Male","Kansas",1988,"West North Central","Midwest","KS",246.574311607354,252.273000737904,257.850364105548,252.246756822827
+"459",16,20,0,0,"Cardiovascular","White","Male","Kansas",1988,"West North Central","Midwest","KS",505.94671512458,517.159378544587,529.184518942357,517.285034389939
+"460",16,20,0,0,"Communicable","White","Male","Kansas",1988,"West North Central","Midwest","KS",58.0309375301295,62.1736310938486,66.6777248259944,62.216080567682
+"461",16,20,0,0,"Injuries","White","Male","Kansas",1988,"West North Central","Midwest","KS",80.6938495633374,83.3073096212329,85.9065537220669,83.2963190555508
+"462",16,20,0,0,"Non-communicable","White","Male","Kansas",1988,"West North Central","Midwest","KS",107.821984042228,111.911414017028,115.980010795137,111.937683100641
+"463",16,20,0,1,"All other causes","White","Female","Kansas",1988,"West North Central","Midwest","KS",85.0382323581851,87.826976142976,91.0393775728501,87.8865188973439
+"464",16,20,0,1,"Cancers","White","Female","Kansas",1988,"West North Central","Midwest","KS",151.71584377782,155.295461030427,159.042655380967,155.295099318461
+"465",16,20,0,1,"Cardiovascular","White","Female","Kansas",1988,"West North Central","Midwest","KS",319.319809386739,326.620096043876,334.035020464155,326.628869386156
+"466",16,20,0,1,"Communicable","White","Female","Kansas",1988,"West North Central","Midwest","KS",36.9544436321137,39.3028703634137,41.6061651084838,39.3267371679056
+"467",16,20,0,1,"Injuries","White","Female","Kansas",1988,"West North Central","Midwest","KS",30.6060172989813,32.0256238504884,33.4660820579595,32.0369177064732
+"468",16,20,0,1,"Non-communicable","White","Female","Kansas",1988,"West North Central","Midwest","KS",58.1107842501517,60.3880927078684,62.8850037501581,60.4527836275806
+"469",16,20,1,0,"All other causes","Black","Male","Kansas",1988,"West North Central","Midwest","KS",196.569256671691,216.312727976411,236.17400532745,216.316856732542
+"470",16,20,1,0,"Cancers","Black","Male","Kansas",1988,"West North Central","Midwest","KS",330.487914743013,354.48968513173,377.321735547356,354.305395279984
+"471",16,20,1,0,"Cardiovascular","Black","Male","Kansas",1988,"West North Central","Midwest","KS",524.278247074127,562.926782976638,601.647240565916,562.939064880314
+"472",16,20,1,0,"Communicable","Black","Male","Kansas",1988,"West North Central","Midwest","KS",55.115323808067,68.3798233004147,84.7347852658964,68.8637985990317
+"473",16,20,1,0,"Injuries","Black","Male","Kansas",1988,"West North Central","Midwest","KS",120.090481091077,134.569284600219,153.074716585858,134.810847421871
+"474",16,20,1,0,"Non-communicable","Black","Male","Kansas",1988,"West North Central","Midwest","KS",111.68481345418,129.735660237595,147.628133499487,129.596982073521
+"475",16,20,1,1,"All other causes","Black","Female","Kansas",1988,"West North Central","Midwest","KS",130.646902615345,143.377000025057,154.160224605317,143.225011144876
+"476",16,20,1,1,"Cancers","Black","Female","Kansas",1988,"West North Central","Midwest","KS",188.755251239692,201.122105190128,214.684738409252,201.36533051377
+"477",16,20,1,1,"Cardiovascular","Black","Female","Kansas",1988,"West North Central","Midwest","KS",386.266140903601,415.053426028254,442.063626605648,415.394289853836
+"478",16,20,1,1,"Communicable","Black","Female","Kansas",1988,"West North Central","Midwest","KS",36.308982102922,44.265626632352,53.5779239290961,44.3566479884962
+"479",16,20,1,1,"Injuries","Black","Female","Kansas",1988,"West North Central","Midwest","KS",39.5715959858119,45.4987108799867,53.3475492485279,45.6905055133086
+"480",16,20,1,1,"Non-communicable","Black","Female","Kansas",1988,"West North Central","Midwest","KS",81.5589629226648,93.5500038956752,105.191657586463,93.6511540051108
+"481",16,21,0,0,"All other causes","White","Male","Kansas",1989,"West North Central","Midwest","KS",111.556563676829,115.664323044129,119.675871536567,115.630905387774
+"482",16,21,0,0,"Cancers","White","Male","Kansas",1989,"West North Central","Midwest","KS",246.965440474603,252.205010892714,257.934769515352,252.35823709858
+"483",16,21,0,0,"Cardiovascular","White","Male","Kansas",1989,"West North Central","Midwest","KS",483.674186022285,495.959630904008,507.97440632102,495.973112950448
+"484",16,21,0,0,"Communicable","White","Male","Kansas",1989,"West North Central","Midwest","KS",55.5765562485625,59.4525755337978,63.475098600679,59.4604582552284
+"485",16,21,0,0,"Injuries","White","Male","Kansas",1989,"West North Central","Midwest","KS",78.9171238278765,81.485111781009,83.9818626898297,81.5007801753683
+"486",16,21,0,0,"Non-communicable","White","Male","Kansas",1989,"West North Central","Midwest","KS",106.454116345599,110.51928213024,114.405834967517,110.511561920462
+"487",16,21,0,1,"All other causes","White","Female","Kansas",1989,"West North Central","Midwest","KS",85.3502227247033,88.2190284079642,91.1853944403037,88.1992399141274
+"488",16,21,0,1,"Cancers","White","Female","Kansas",1989,"West North Central","Midwest","KS",154.117698853764,157.528526853775,161.355515534285,157.650605882212
+"489",16,21,0,1,"Cardiovascular","White","Female","Kansas",1989,"West North Central","Midwest","KS",304.624119381163,311.450230511097,318.109728831518,311.417497402228
+"490",16,21,0,1,"Communicable","White","Female","Kansas",1989,"West North Central","Midwest","KS",36.8684796823358,38.9642399769899,41.2701168322305,38.9647873875726
+"491",16,21,0,1,"Injuries","White","Female","Kansas",1989,"West North Central","Midwest","KS",30.2966425847712,31.5146956803606,33.0345789850805,31.5548390036639
+"492",16,21,0,1,"Non-communicable","White","Female","Kansas",1989,"West North Central","Midwest","KS",58.9034834136116,61.3438496242559,63.7006711187574,61.350294358331
+"493",16,21,1,0,"All other causes","Black","Male","Kansas",1989,"West North Central","Midwest","KS",198.122685549109,217.217961776138,235.618883504689,217.282735783035
+"494",16,21,1,0,"Cancers","Black","Male","Kansas",1989,"West North Central","Midwest","KS",332.675603650403,356.41745065076,379.058555230762,356.168150876309
+"495",16,21,1,0,"Cardiovascular","Black","Male","Kansas",1989,"West North Central","Midwest","KS",514.169373713797,551.504318550919,589.744322668664,551.578216699223
+"496",16,21,1,0,"Communicable","Black","Male","Kansas",1989,"West North Central","Midwest","KS",55.5988672802271,68.6086121544884,85.6716483689224,69.1470575729689
+"497",16,21,1,0,"Injuries","Black","Male","Kansas",1989,"West North Central","Midwest","KS",119.00442334465,134.509867383062,150.70052761441,134.857745787642
+"498",16,21,1,0,"Non-communicable","Black","Male","Kansas",1989,"West North Central","Midwest","KS",113.367969400863,130.967391356041,149.971149105298,131.189789659455
+"499",16,21,1,1,"All other causes","Black","Female","Kansas",1989,"West North Central","Midwest","KS",130.423545800254,142.725389077699,154.129151517056,142.696171457453
+"500",16,21,1,1,"Cancers","Black","Female","Kansas",1989,"West North Central","Midwest","KS",190.008628318615,202.022325571947,215.36075383074,202.105351478908
+"501",16,21,1,1,"Cardiovascular","Black","Female","Kansas",1989,"West North Central","Midwest","KS",386.340063596308,412.457818715673,441.566533376505,412.946537918072
+"502",16,21,1,1,"Communicable","Black","Female","Kansas",1989,"West North Central","Midwest","KS",38.4057636020016,46.4068336760162,56.0439314859921,46.6734049594698
+"503",16,21,1,1,"Injuries","Black","Female","Kansas",1989,"West North Central","Midwest","KS",39.2534651252188,45.1327431014326,53.500735968662,45.2959232430913
+"504",16,21,1,1,"Non-communicable","Black","Female","Kansas",1989,"West North Central","Midwest","KS",82.4357606818495,94.0534331192601,106.048474225155,94.0924184059575
+"505",16,22,0,0,"All other causes","White","Male","Kansas",1990,"West North Central","Midwest","KS",111.899769261285,115.584564720051,119.375915426807,115.594084981453
+"506",16,22,0,0,"Cancers","White","Male","Kansas",1990,"West North Central","Midwest","KS",248.060744196006,253.569262561135,259.232184973184,253.648915227758
+"507",16,22,0,0,"Cardiovascular","White","Male","Kansas",1990,"West North Central","Midwest","KS",473.078492201741,483.891110608353,495.744780434098,484.015358387369
+"508",16,22,0,0,"Communicable","White","Male","Kansas",1990,"West North Central","Midwest","KS",57.3344239268578,61.0006511352845,64.8520901118372,60.9989697543386
+"509",16,22,0,0,"Injuries","White","Male","Kansas",1990,"West North Central","Midwest","KS",78.1388510106394,80.6011190183445,83.2612815792881,80.6430848036053
+"510",16,22,0,0,"Non-communicable","White","Male","Kansas",1990,"West North Central","Midwest","KS",106.08789473938,110.223309012936,113.951229044038,110.156061658465
+"511",16,22,0,1,"All other causes","White","Female","Kansas",1990,"West North Central","Midwest","KS",82.4658360002295,85.6417898195063,88.6141440036007,85.5978635811917
+"512",16,22,0,1,"Cancers","White","Female","Kansas",1990,"West North Central","Midwest","KS",155.049678026043,158.441660486511,162.349333581846,158.489144560002
+"513",16,22,0,1,"Cardiovascular","White","Female","Kansas",1990,"West North Central","Midwest","KS",297.201485551328,303.349590846441,309.745851620171,303.369507510697
+"514",16,22,0,1,"Communicable","White","Female","Kansas",1990,"West North Central","Midwest","KS",37.1117207080762,39.0878953832878,41.3714191377037,39.1224653288506
+"515",16,22,0,1,"Injuries","White","Female","Kansas",1990,"West North Central","Midwest","KS",29.5950912327215,30.9203989012478,32.250390977412,30.9204305900868
+"516",16,22,0,1,"Non-communicable","White","Female","Kansas",1990,"West North Central","Midwest","KS",59.1007531429131,61.4100383997165,63.8466198955158,61.4336224408603
+"517",16,22,1,0,"All other causes","Black","Male","Kansas",1990,"West North Central","Midwest","KS",200.062171793696,220.509599590083,239.138439299821,220.293112051565
+"518",16,22,1,0,"Cancers","Black","Male","Kansas",1990,"West North Central","Midwest","KS",334.124092501187,358.727717654112,381.959249841499,358.81910680344
+"519",16,22,1,0,"Cardiovascular","Black","Male","Kansas",1990,"West North Central","Midwest","KS",509.436308603617,546.430453056779,585.132624927247,546.897002393772
+"520",16,22,1,0,"Communicable","Black","Male","Kansas",1990,"West North Central","Midwest","KS",56.0041250800052,68.3411778166719,86.3472802070943,69.3389651629705
+"521",16,22,1,0,"Injuries","Black","Male","Kansas",1990,"West North Central","Midwest","KS",122.724017464922,137.920377529483,154.758354185093,138.012695566735
+"522",16,22,1,0,"Non-communicable","Black","Male","Kansas",1990,"West North Central","Midwest","KS",115.792454539208,133.816622302045,151.337773617596,133.659949899253
+"523",16,22,1,1,"All other causes","Black","Female","Kansas",1990,"West North Central","Midwest","KS",130.914873094803,142.931856266338,154.466803730131,142.89185191009
+"524",16,22,1,1,"Cancers","Black","Female","Kansas",1990,"West North Central","Midwest","KS",189.574724879619,201.897152572376,215.252705597686,202.060114381549
+"525",16,22,1,1,"Cardiovascular","Black","Female","Kansas",1990,"West North Central","Midwest","KS",386.491358127206,413.185167074377,441.721587904593,413.57006245565
+"526",16,22,1,1,"Communicable","Black","Female","Kansas",1990,"West North Central","Midwest","KS",39.0089003117848,46.8249750326242,56.160745374285,47.1255465530512
+"527",16,22,1,1,"Injuries","Black","Female","Kansas",1990,"West North Central","Midwest","KS",38.7853677525856,44.6956412056714,52.1238943629009,44.9099287398305
+"528",16,22,1,1,"Non-communicable","Black","Female","Kansas",1990,"West North Central","Midwest","KS",83.5461973652789,95.3856872559168,106.97170012214,95.443690214485
+"529",16,23,0,0,"All other causes","White","Male","Kansas",1991,"West North Central","Midwest","KS",112.840572339914,116.49147446691,120.146482414905,116.411612504187
+"530",16,23,0,0,"Cancers","White","Male","Kansas",1991,"West North Central","Midwest","KS",247.617693039523,252.942491652259,258.322874208724,252.820655811823
+"531",16,23,0,0,"Cardiovascular","White","Male","Kansas",1991,"West North Central","Midwest","KS",452.827605310037,463.985704359386,474.430714978546,463.798578994571
+"532",16,23,0,0,"Communicable","White","Male","Kansas",1991,"West North Central","Midwest","KS",57.7877472976427,61.4328806083947,65.6824462837764,61.5268854660508
+"533",16,23,0,0,"Injuries","White","Male","Kansas",1991,"West North Central","Midwest","KS",77.7345966510682,80.3075169635149,83.1025995615074,80.3581662039783
+"534",16,23,0,0,"Non-communicable","White","Male","Kansas",1991,"West North Central","Midwest","KS",107.09837898963,110.866634280858,114.757840619549,110.881076313282
+"535",16,23,0,1,"All other causes","White","Female","Kansas",1991,"West North Central","Midwest","KS",84.6722311185045,87.4597314199496,90.511123501954,87.4687573260482
+"536",16,23,0,1,"Cancers","White","Female","Kansas",1991,"West North Central","Midwest","KS",155.619042692206,158.938513231209,162.834714448905,159.025651248392
+"537",16,23,0,1,"Cardiovascular","White","Female","Kansas",1991,"West North Central","Midwest","KS",285.857827233529,291.727533037206,297.872083923778,291.724653648989
+"538",16,23,0,1,"Communicable","White","Female","Kansas",1991,"West North Central","Midwest","KS",34.1263914327625,36.1935824393334,38.3459740997366,36.1929626005267
+"539",16,23,0,1,"Injuries","White","Female","Kansas",1991,"West North Central","Midwest","KS",29.2666545640329,30.6286271797335,32.0034590973102,30.6196694757343
+"540",16,23,0,1,"Non-communicable","White","Female","Kansas",1991,"West North Central","Midwest","KS",59.5325772736135,62.0304228939892,64.5341419534149,62.0353473512442
+"541",16,23,1,0,"All other causes","Black","Male","Kansas",1991,"West North Central","Midwest","KS",204.037742867535,224.027958601288,243.96560065264,223.823453241479
+"542",16,23,1,0,"Cancers","Black","Male","Kansas",1991,"West North Central","Midwest","KS",337.788788484201,362.25698834557,388.177073163201,362.856850558562
+"543",16,23,1,0,"Cardiovascular","Black","Male","Kansas",1991,"West North Central","Midwest","KS",507.010928132398,543.64379236539,580.081779642376,543.61829920123
+"544",16,23,1,0,"Communicable","Black","Male","Kansas",1991,"West North Central","Midwest","KS",55.6209077282354,68.3883253076644,85.789108906508,69.3321362211741
+"545",16,23,1,0,"Injuries","Black","Male","Kansas",1991,"West North Central","Midwest","KS",124.919870082959,140.607661969497,157.001280593811,140.764203834242
+"546",16,23,1,0,"Non-communicable","Black","Male","Kansas",1991,"West North Central","Midwest","KS",118.972216378074,136.040452271855,154.666180289843,136.459598784581
+"547",16,23,1,1,"All other causes","Black","Female","Kansas",1991,"West North Central","Midwest","KS",132.68844717795,143.66173087769,155.739117214358,143.882602522282
+"548",16,23,1,1,"Cancers","Black","Female","Kansas",1991,"West North Central","Midwest","KS",189.232512870643,201.348268460983,214.278545964759,201.567358532317
+"549",16,23,1,1,"Cardiovascular","Black","Female","Kansas",1991,"West North Central","Midwest","KS",381.486771985807,411.564985887762,440.773610177944,411.949601186364
+"550",16,23,1,1,"Communicable","Black","Female","Kansas",1991,"West North Central","Midwest","KS",38.2504175831632,46.2122083405699,55.0017552120751,46.1564572383658
+"551",16,23,1,1,"Injuries","Black","Female","Kansas",1991,"West North Central","Midwest","KS",38.4701080992253,44.2075650872795,51.1322819063623,44.3394610987237
+"552",16,23,1,1,"Non-communicable","Black","Female","Kansas",1991,"West North Central","Midwest","KS",86.2743218943722,98.1208652118173,110.465795905724,98.2866048130975
+"553",16,24,0,0,"All other causes","White","Male","Kansas",1992,"West North Central","Midwest","KS",113.028699362676,117.050557038828,120.668023001272,116.97584890935
+"554",16,24,0,0,"Cancers","White","Male","Kansas",1992,"West North Central","Midwest","KS",244.643325390026,249.878146513735,255.378257190066,249.881729040272
+"555",16,24,0,0,"Cardiovascular","White","Male","Kansas",1992,"West North Central","Midwest","KS",438.056102525822,447.766329282942,458.538833905145,447.948548921774
+"556",16,24,0,0,"Communicable","White","Male","Kansas",1992,"West North Central","Midwest","KS",57.6250224317899,61.0919669521587,64.9767659993103,61.0770686348182
+"557",16,24,0,0,"Injuries","White","Male","Kansas",1992,"West North Central","Midwest","KS",76.8450212041136,79.5443455910971,81.9537515233934,79.5401672740399
+"558",16,24,0,0,"Non-communicable","White","Male","Kansas",1992,"West North Central","Midwest","KS",108.354624646908,112.366789690969,116.225150766135,112.389757931259
+"559",16,24,0,1,"All other causes","White","Female","Kansas",1992,"West North Central","Midwest","KS",83.979902894436,87.0166294846423,89.787980723703,86.9690658600447
+"560",16,24,0,1,"Cancers","White","Female","Kansas",1992,"West North Central","Midwest","KS",155.913152140746,159.100648707243,162.559493141667,159.112870313184
+"561",16,24,0,1,"Cardiovascular","White","Female","Kansas",1992,"West North Central","Midwest","KS",287.276507713447,293.62035215521,300.203364885994,293.736073401505
+"562",16,24,0,1,"Communicable","White","Female","Kansas",1992,"West North Central","Midwest","KS",32.9710360171042,34.785761875646,36.7589745252494,34.775711853962
+"563",16,24,0,1,"Injuries","White","Female","Kansas",1992,"West North Central","Midwest","KS",29.2104737422814,30.5140987469794,31.8552490061635,30.5242698892235
+"564",16,24,0,1,"Non-communicable","White","Female","Kansas",1992,"West North Central","Midwest","KS",60.8494029136082,63.5618257568289,66.0222213537041,63.5213167124578
+"565",16,24,1,0,"All other causes","Black","Male","Kansas",1992,"West North Central","Midwest","KS",205.921563319017,225.649392124052,245.879118319358,225.36117261232
+"566",16,24,1,0,"Cancers","Black","Male","Kansas",1992,"West North Central","Midwest","KS",337.664342969901,361.030529113067,385.645718510665,361.459698435345
+"567",16,24,1,0,"Cardiovascular","Black","Male","Kansas",1992,"West North Central","Midwest","KS",508.475976760967,543.262578521921,582.406483127743,543.900534266654
+"568",16,24,1,0,"Communicable","Black","Male","Kansas",1992,"West North Central","Midwest","KS",56.23411348512,68.5703788640199,85.342470047835,69.2937843658433
+"569",16,24,1,0,"Injuries","Black","Male","Kansas",1992,"West North Central","Midwest","KS",127.270277396651,142.381655984929,158.631035646003,142.528612011351
+"570",16,24,1,0,"Non-communicable","Black","Male","Kansas",1992,"West North Central","Midwest","KS",119.347593684796,137.928959277139,156.740071249466,138.032510305604
+"571",16,24,1,1,"All other causes","Black","Female","Kansas",1992,"West North Central","Midwest","KS",135.041581748936,145.842572751041,157.430007798245,146.021907903998
+"572",16,24,1,1,"Cancers","Black","Female","Kansas",1992,"West North Central","Midwest","KS",188.898803373153,200.803761309357,214.178379966402,200.994248439263
+"573",16,24,1,1,"Cardiovascular","Black","Female","Kansas",1992,"West North Central","Midwest","KS",371.791191080739,398.82033563909,425.743866829562,399.054684410161
+"574",16,24,1,1,"Communicable","Black","Female","Kansas",1992,"West North Central","Midwest","KS",37.5229449419879,45.5953195453547,54.4517476178731,45.8006052368957
+"575",16,24,1,1,"Injuries","Black","Female","Kansas",1992,"West North Central","Midwest","KS",38.0227502215426,43.7087702710801,50.8139002660236,43.9397437150322
+"576",16,24,1,1,"Non-communicable","Black","Female","Kansas",1992,"West North Central","Midwest","KS",88.933629046071,100.108247137756,112.300755092663,100.324269889126
+"577",16,25,0,0,"All other causes","White","Male","Kansas",1993,"West North Central","Midwest","KS",114.875105552626,119.154393619591,123.340957635855,119.160026731157
+"578",16,25,0,0,"Cancers","White","Male","Kansas",1993,"West North Central","Midwest","KS",244.350834054006,249.633932728001,255.309070870929,249.629872100385
+"579",16,25,0,0,"Cardiovascular","White","Male","Kansas",1993,"West North Central","Midwest","KS",442.972285769784,454.040367120221,465.063443960476,454.19677669476
+"580",16,25,0,0,"Communicable","White","Male","Kansas",1993,"West North Central","Midwest","KS",56.717757045645,60.5245162708591,64.4618969554145,60.5277527005042
+"581",16,25,0,0,"Injuries","White","Male","Kansas",1993,"West North Central","Midwest","KS",77.2568772816803,79.8702120670519,82.3425239673117,79.8497234135509
+"582",16,25,0,0,"Non-communicable","White","Male","Kansas",1993,"West North Central","Midwest","KS",112.47744411062,116.223615462169,120.419471236094,116.226056414139
+"583",16,25,0,1,"All other causes","White","Female","Kansas",1993,"West North Central","Midwest","KS",87.5436118119586,90.506121206115,93.3522381386568,90.4968523063788
+"584",16,25,0,1,"Cancers","White","Female","Kansas",1993,"West North Central","Midwest","KS",156.725517985032,160.135784662616,163.955808990135,160.097928867441
+"585",16,25,0,1,"Cardiovascular","White","Female","Kansas",1993,"West North Central","Midwest","KS",292.019477124449,298.165003737011,304.548871998924,298.118226691322
+"586",16,25,0,1,"Communicable","White","Female","Kansas",1993,"West North Central","Midwest","KS",34.1775607140412,36.2565048994955,38.3068610281728,36.2575137617321
+"587",16,25,0,1,"Injuries","White","Female","Kansas",1993,"West North Central","Midwest","KS",29.2937215356028,30.6255833944366,31.9341861924932,30.6226233204513
+"588",16,25,0,1,"Non-communicable","White","Female","Kansas",1993,"West North Central","Midwest","KS",64.2872048718333,66.9338612944271,69.5820684018757,66.929750469761
+"589",16,25,1,0,"All other causes","Black","Male","Kansas",1993,"West North Central","Midwest","KS",206.156355110876,226.556368896665,244.95371082443,226.197542125765
+"590",16,25,1,0,"Cancers","Black","Male","Kansas",1993,"West North Central","Midwest","KS",336.785646884471,361.001226491227,384.055622202193,360.915917479519
+"591",16,25,1,0,"Cardiovascular","Black","Male","Kansas",1993,"West North Central","Midwest","KS",510.764450960081,545.255773512189,582.361812687667,545.543690732352
+"592",16,25,1,0,"Communicable","Black","Male","Kansas",1993,"West North Central","Midwest","KS",56.4371062829582,68.6659076026933,86.1368664774386,69.3043678579754
+"593",16,25,1,0,"Injuries","Black","Male","Kansas",1993,"West North Central","Midwest","KS",130.676167530312,145.995229731181,161.592487387619,146.310306709829
+"594",16,25,1,0,"Non-communicable","Black","Male","Kansas",1993,"West North Central","Midwest","KS",121.420564011525,139.938820574121,159.313345308734,140.118590059953
+"595",16,25,1,1,"All other causes","Black","Female","Kansas",1993,"West North Central","Midwest","KS",137.457649442986,148.37937542732,160.0303498123,148.412687652484
+"596",16,25,1,1,"Cancers","Black","Female","Kansas",1993,"West North Central","Midwest","KS",190.384187453744,201.970098856843,214.436813442777,202.171388623311
+"597",16,25,1,1,"Cardiovascular","Black","Female","Kansas",1993,"West North Central","Midwest","KS",370.370630444729,396.51483891444,422.520921320341,396.5998244756
+"598",16,25,1,1,"Communicable","Black","Female","Kansas",1993,"West North Central","Midwest","KS",37.6374907694901,45.2114724237493,54.1986539610336,45.3729589157995
+"599",16,25,1,1,"Injuries","Black","Female","Kansas",1993,"West North Central","Midwest","KS",37.907168886234,43.5313052958981,50.5212012129034,43.7188042632109
+"600",16,25,1,1,"Non-communicable","Black","Female","Kansas",1993,"West North Central","Midwest","KS",90.8840003976338,102.851342455899,115.633881525851,103.132506318628
+"601",16,26,0,0,"All other causes","White","Male","Kansas",1994,"West North Central","Midwest","KS",117.296970243412,121.41976073915,125.345573698893,121.426404675036
+"602",16,26,0,0,"Cancers","White","Male","Kansas",1994,"West North Central","Midwest","KS",243.362616301912,248.726641513801,254.856543229933,248.827905295184
+"603",16,26,0,0,"Cardiovascular","White","Male","Kansas",1994,"West North Central","Midwest","KS",429.198015206423,439.878904187093,450.166388263321,439.74921938005
+"604",16,26,0,0,"Communicable","White","Male","Kansas",1994,"West North Central","Midwest","KS",57.5656172782369,61.4315124698474,65.2435664634203,61.4442750658454
+"605",16,26,0,0,"Injuries","White","Male","Kansas",1994,"West North Central","Midwest","KS",76.8586077186155,79.4522178123176,82.1496673305097,79.4742540395164
+"606",16,26,0,0,"Non-communicable","White","Male","Kansas",1994,"West North Central","Midwest","KS",111.754046578344,115.590728303883,119.634696993163,115.659228780769
+"607",16,26,0,1,"All other causes","White","Female","Kansas",1994,"West North Central","Midwest","KS",91.7999961270952,94.7679492932683,98.0096785832296,94.8440203838985
+"608",16,26,0,1,"Cancers","White","Female","Kansas",1994,"West North Central","Midwest","KS",157.864480078713,161.469302885262,165.526948211121,161.533827894216
+"609",16,26,0,1,"Cardiovascular","White","Female","Kansas",1994,"West North Central","Midwest","KS",284.918825604328,291.190700316595,297.02666945073,291.095825928011
+"610",16,26,0,1,"Communicable","White","Female","Kansas",1994,"West North Central","Midwest","KS",33.4927427809927,35.4103166040376,37.5150260910281,35.4400930040506
+"611",16,26,0,1,"Injuries","White","Female","Kansas",1994,"West North Central","Midwest","KS",29.6077949454599,30.8514268182471,32.1327856561198,30.8666085357638
+"612",16,26,0,1,"Non-communicable","White","Female","Kansas",1994,"West North Central","Midwest","KS",65.7102216880277,68.4083830952828,71.0132867090602,68.3292280286649
+"613",16,26,1,0,"All other causes","Black","Male","Kansas",1994,"West North Central","Midwest","KS",204.514030250339,224.990226700899,244.715693950595,224.818695767177
+"614",16,26,1,0,"Cancers","Black","Male","Kansas",1994,"West North Central","Midwest","KS",337.8656783156,361.332404984476,384.550573637274,361.374597408429
+"615",16,26,1,0,"Cardiovascular","Black","Male","Kansas",1994,"West North Central","Midwest","KS",507.547723435911,543.020488763273,579.023201557006,543.241616755598
+"616",16,26,1,0,"Communicable","Black","Male","Kansas",1994,"West North Central","Midwest","KS",56.1666873833567,68.6728877696694,84.6122062115748,69.0819698776138
+"617",16,26,1,0,"Injuries","Black","Male","Kansas",1994,"West North Central","Midwest","KS",134.819817625112,148.948136487375,164.816031463977,149.160662567742
+"618",16,26,1,0,"Non-communicable","Black","Male","Kansas",1994,"West North Central","Midwest","KS",124.853008662316,142.74642734228,160.593462346803,143.189729576578
+"619",16,26,1,1,"All other causes","Black","Female","Kansas",1994,"West North Central","Midwest","KS",138.353222255696,149.351914288572,162.199455440662,149.4475905819
+"620",16,26,1,1,"Cancers","Black","Female","Kansas",1994,"West North Central","Midwest","KS",190.160397710063,202.677119624781,215.628997333744,202.867458274736
+"621",16,26,1,1,"Cardiovascular","Black","Female","Kansas",1994,"West North Central","Midwest","KS",366.149872209554,390.787207384619,418.712019980625,391.468077671124
+"622",16,26,1,1,"Communicable","Black","Female","Kansas",1994,"West North Central","Midwest","KS",38.8585846599728,46.0130138066436,55.1206639452913,46.2878982730621
+"623",16,26,1,1,"Injuries","Black","Female","Kansas",1994,"West North Central","Midwest","KS",37.561468867436,43.2751708375093,50.3753874162098,43.3735508660253
+"624",16,26,1,1,"Non-communicable","Black","Female","Kansas",1994,"West North Central","Midwest","KS",93.2975105582295,104.232210551304,118.087343612704,104.66721626308
+"625",16,27,0,0,"All other causes","White","Male","Kansas",1995,"West North Central","Midwest","KS",121.981608815175,125.989968007135,129.912297549894,125.954595540957
+"626",16,27,0,0,"Cancers","White","Male","Kansas",1995,"West North Central","Midwest","KS",241.880252662974,247.104579076361,253.226565559915,247.156379722987
+"627",16,27,0,0,"Cardiovascular","White","Male","Kansas",1995,"West North Central","Midwest","KS",428.558302479992,438.642290571997,448.673571702855,438.510511330313
+"628",16,27,0,0,"Communicable","White","Male","Kansas",1995,"West North Central","Midwest","KS",54.4976535840111,58.0165086512497,61.6830454700094,57.9994565633252
+"629",16,27,0,0,"Injuries","White","Male","Kansas",1995,"West North Central","Midwest","KS",76.8683341868501,79.4695136371722,82.1096243461619,79.4410117483107
+"630",16,27,0,0,"Non-communicable","White","Male","Kansas",1995,"West North Central","Midwest","KS",111.638936548915,115.867455451065,120.067445417472,115.917182682329
+"631",16,27,0,1,"All other causes","White","Female","Kansas",1995,"West North Central","Midwest","KS",96.3392507461601,99.2188646877552,102.467483050544,99.2760459512775
+"632",16,27,0,1,"Cancers","White","Female","Kansas",1995,"West North Central","Midwest","KS",156.753256690645,160.541299390536,164.366338338155,160.582768148395
+"633",16,27,0,1,"Cardiovascular","White","Female","Kansas",1995,"West North Central","Midwest","KS",280.815388332875,286.780241535657,293.332255055009,286.894905996867
+"634",16,27,0,1,"Communicable","White","Female","Kansas",1995,"West North Central","Midwest","KS",33.2119421088581,35.134607414129,37.1168981860439,35.147403616954
+"635",16,27,0,1,"Injuries","White","Female","Kansas",1995,"West North Central","Midwest","KS",30.4220384007042,31.6836477048886,33.0151132548093,31.6622655928468
+"636",16,27,0,1,"Non-communicable","White","Female","Kansas",1995,"West North Central","Midwest","KS",68.4624392933873,71.0956304352807,73.7394581270979,71.073806620687
+"637",16,27,1,0,"All other causes","Black","Male","Kansas",1995,"West North Central","Midwest","KS",204.951249680401,223.55222984448,243.572368196823,223.827882888137
+"638",16,27,1,0,"Cancers","Black","Male","Kansas",1995,"West North Central","Midwest","KS",339.70667860631,363.46840768352,389.732045590916,363.551955903158
+"639",16,27,1,0,"Cardiovascular","Black","Male","Kansas",1995,"West North Central","Midwest","KS",510.688735467783,546.140043062815,581.280797125073,546.479207509241
+"640",16,27,1,0,"Communicable","Black","Male","Kansas",1995,"West North Central","Midwest","KS",56.5949385797842,67.9613127886899,84.340300897814,68.5396312822621
+"641",16,27,1,0,"Injuries","Black","Male","Kansas",1995,"West North Central","Midwest","KS",131.139942853972,144.712549211974,161.136693927824,144.936747622279
+"642",16,27,1,0,"Non-communicable","Black","Male","Kansas",1995,"West North Central","Midwest","KS",128.38626522748,146.188638931065,164.840584036123,146.310860971068
+"643",16,27,1,1,"All other causes","Black","Female","Kansas",1995,"West North Central","Midwest","KS",139.59979562036,150.642678634841,163.903385882365,150.943032977021
+"644",16,27,1,1,"Cancers","Black","Female","Kansas",1995,"West North Central","Midwest","KS",191.052690578214,203.66556585975,216.482721023868,203.719970443769
+"645",16,27,1,1,"Cardiovascular","Black","Female","Kansas",1995,"West North Central","Midwest","KS",358.59159753959,385.026342885844,411.746969424104,385.500428879641
+"646",16,27,1,1,"Communicable","Black","Female","Kansas",1995,"West North Central","Midwest","KS",39.8978046434598,47.1898490418961,57.6559473101297,47.5945900507527
+"647",16,27,1,1,"Injuries","Black","Female","Kansas",1995,"West North Central","Midwest","KS",37.2582547274128,42.7289788426544,49.922394298933,42.932245439712
+"648",16,27,1,1,"Non-communicable","Black","Female","Kansas",1995,"West North Central","Midwest","KS",95.1707343048672,106.879884018885,120.317063316068,107.214388929836
+"649",16,28,0,0,"All other causes","White","Male","Kansas",1996,"West North Central","Midwest","KS",125.831325552495,129.795435727874,134.32751757796,129.820756883046
+"650",16,28,0,0,"Cancers","White","Male","Kansas",1996,"West North Central","Midwest","KS",239.796619320385,245.309609707039,250.595643428996,245.280780478626
+"651",16,28,0,0,"Cardiovascular","White","Male","Kansas",1996,"West North Central","Midwest","KS",415.075366625086,425.018812098526,434.952990752846,425.035721338392
+"652",16,28,0,0,"Communicable","White","Male","Kansas",1996,"West North Central","Midwest","KS",54.7025356221658,58.3449944392325,62.2143229733777,58.3517558044923
+"653",16,28,0,0,"Injuries","White","Male","Kansas",1996,"West North Central","Midwest","KS",77.8618574524961,80.4068826228685,83.1526509284195,80.4135124659749
+"654",16,28,0,0,"Non-communicable","White","Male","Kansas",1996,"West North Central","Midwest","KS",113.19943273582,117.391100923375,121.481945615746,117.385533183111
+"655",16,28,0,1,"All other causes","White","Female","Kansas",1996,"West North Central","Midwest","KS",97.7201233665875,100.851842860398,104.480446054356,100.925260871331
+"656",16,28,0,1,"Cancers","White","Female","Kansas",1996,"West North Central","Midwest","KS",155.83329184655,159.251446520343,162.817522432645,159.285046349859
+"657",16,28,0,1,"Cardiovascular","White","Female","Kansas",1996,"West North Central","Midwest","KS",271.661594283306,277.93479887844,284.237769847976,277.907451099419
+"658",16,28,0,1,"Communicable","White","Female","Kansas",1996,"West North Central","Midwest","KS",33.1624156823532,35.0983431085413,37.3336810021224,35.0989277936891
+"659",16,28,0,1,"Injuries","White","Female","Kansas",1996,"West North Central","Midwest","KS",30.8423693008828,32.1106916027203,33.4710040405571,32.1208203994651
+"660",16,28,0,1,"Non-communicable","White","Female","Kansas",1996,"West North Central","Midwest","KS",70.6938608510288,73.2282262719364,75.9950887808405,73.2227010724972
+"661",16,28,1,0,"All other causes","Black","Male","Kansas",1996,"West North Central","Midwest","KS",203.105242172549,222.865177312886,242.625749348848,222.70916448483
+"662",16,28,1,0,"Cancers","Black","Male","Kansas",1996,"West North Central","Midwest","KS",341.163373906136,364.954105293085,392.118752287853,365.289391848034
+"663",16,28,1,0,"Cardiovascular","Black","Male","Kansas",1996,"West North Central","Midwest","KS",497.358827772573,531.189748337641,567.389452156969,531.371875754034
+"664",16,28,1,0,"Communicable","Black","Male","Kansas",1996,"West North Central","Midwest","KS",55.8761499854106,67.2349315081208,84.0334310215974,67.8970348722893
+"665",16,28,1,0,"Injuries","Black","Male","Kansas",1996,"West North Central","Midwest","KS",124.511401603016,138.240771669723,154.899245212894,138.567550623118
+"666",16,28,1,0,"Non-communicable","Black","Male","Kansas",1996,"West North Central","Midwest","KS",134.452252459327,150.354264686611,169.964152678945,150.838915053261
+"667",16,28,1,1,"All other causes","Black","Female","Kansas",1996,"West North Central","Midwest","KS",142.20484014003,152.912016836276,166.259783776597,153.445943817139
+"668",16,28,1,1,"Cancers","Black","Female","Kansas",1996,"West North Central","Midwest","KS",189.974188348448,202.54508447352,215.122701948033,202.529539926008
+"669",16,28,1,1,"Cardiovascular","Black","Female","Kansas",1996,"West North Central","Midwest","KS",355.217664224624,383.224548156867,409.98545297636,383.273903279456
+"670",16,28,1,1,"Communicable","Black","Female","Kansas",1996,"West North Central","Midwest","KS",39.6633562911837,47.3039978814889,57.4407355008109,47.5019856631607
+"671",16,28,1,1,"Injuries","Black","Female","Kansas",1996,"West North Central","Midwest","KS",37.0477627716826,42.3823317293228,49.7735843627455,42.6002910889757
+"672",16,28,1,1,"Non-communicable","Black","Female","Kansas",1996,"West North Central","Midwest","KS",99.9390837361971,111.359197300035,124.149139199893,111.546500682018
+"673",16,29,0,0,"All other causes","White","Male","Kansas",1997,"West North Central","Midwest","KS",128.826264645755,132.723002031808,137.056569446362,132.721012179313
+"674",16,29,0,0,"Cancers","White","Male","Kansas",1997,"West North Central","Midwest","KS",235.293680973657,240.323980822088,245.607339961122,240.335963996352
+"675",16,29,0,0,"Cardiovascular","White","Male","Kansas",1997,"West North Central","Midwest","KS",405.015361203321,413.641776810836,423.254554691429,413.872245473449
+"676",16,29,0,0,"Communicable","White","Male","Kansas",1997,"West North Central","Midwest","KS",55.6180506881745,59.1823589561011,63.1660741882399,59.2440119637765
+"677",16,29,0,0,"Injuries","White","Male","Kansas",1997,"West North Central","Midwest","KS",78.2475427460965,80.7758279769432,83.4335351292991,80.7889257638243
+"678",16,29,0,0,"Non-communicable","White","Male","Kansas",1997,"West North Central","Midwest","KS",117.66764733226,121.850093654718,125.799797158029,121.877337804127
+"679",16,29,0,1,"All other causes","White","Female","Kansas",1997,"West North Central","Midwest","KS",100.625036212245,103.796950058315,107.050464591891,103.800593428483
+"680",16,29,0,1,"Cancers","White","Female","Kansas",1997,"West North Central","Midwest","KS",154.115170581132,157.254629199453,161.011872937474,157.280261451162
+"681",16,29,0,1,"Cardiovascular","White","Female","Kansas",1997,"West North Central","Midwest","KS",263.850702529884,269.883799724251,275.570268862449,269.829977360171
+"682",16,29,0,1,"Communicable","White","Female","Kansas",1997,"West North Central","Midwest","KS",34.7686269830986,36.6150712763295,38.6319871571934,36.660997027449
+"683",16,29,0,1,"Injuries","White","Female","Kansas",1997,"West North Central","Midwest","KS",30.8191281406498,32.0927235842971,33.4503467746048,32.1136812280367
+"684",16,29,0,1,"Non-communicable","White","Female","Kansas",1997,"West North Central","Midwest","KS",72.6314460367478,75.7370721135138,78.3489689546506,75.6993580394113
+"685",16,29,1,0,"All other causes","Black","Male","Kansas",1997,"West North Central","Midwest","KS",201.550142999208,220.942673216812,241.061506595008,220.943526899547
+"686",16,29,1,0,"Cancers","Black","Male","Kansas",1997,"West North Central","Midwest","KS",339.980194777944,362.792300348753,386.734403394819,363.356671640503
+"687",16,29,1,0,"Cardiovascular","Black","Male","Kansas",1997,"West North Central","Midwest","KS",488.1921834012,519.964302088999,556.105839922509,520.520697802666
+"688",16,29,1,0,"Communicable","Black","Male","Kansas",1997,"West North Central","Midwest","KS",55.5459495672121,67.3638591319567,83.783718885905,67.7780098211149
+"689",16,29,1,0,"Injuries","Black","Male","Kansas",1997,"West North Central","Midwest","KS",122.063516616967,134.861552824666,150.004410336604,134.96905699221
+"690",16,29,1,0,"Non-communicable","Black","Male","Kansas",1997,"West North Central","Midwest","KS",138.181706343888,155.165969293196,174.003423166803,155.531032307555
+"691",16,29,1,1,"All other causes","Black","Female","Kansas",1997,"West North Central","Midwest","KS",143.141880387569,155.011916828393,167.623758692556,155.115199881282
+"692",16,29,1,1,"Cancers","Black","Female","Kansas",1997,"West North Central","Midwest","KS",189.627499046984,201.825171479925,213.844889940968,201.837982470152
+"693",16,29,1,1,"Cardiovascular","Black","Female","Kansas",1997,"West North Central","Midwest","KS",353.111675970281,378.291282173138,403.165114707604,378.239521708394
+"694",16,29,1,1,"Communicable","Black","Female","Kansas",1997,"West North Central","Midwest","KS",37.2320389565522,45.2485934027645,54.1247474088421,45.3739071423628
+"695",16,29,1,1,"Injuries","Black","Female","Kansas",1997,"West North Central","Midwest","KS",36.7960513474016,42.1078724385693,49.4235669409259,42.3171326168719
+"696",16,29,1,1,"Non-communicable","Black","Female","Kansas",1997,"West North Central","Midwest","KS",100.253376203299,114.121263307666,127.672369345737,114.25063349286
+"697",16,30,0,0,"All other causes","White","Male","Kansas",1998,"West North Central","Midwest","KS",130.25778781959,134.129854879246,138.54303479681,134.214583145957
+"698",16,30,0,0,"Cancers","White","Male","Kansas",1998,"West North Central","Midwest","KS",231.517783919065,236.376322555559,241.627390293747,236.423101719998
+"699",16,30,0,0,"Cardiovascular","White","Male","Kansas",1998,"West North Central","Midwest","KS",394.68624091477,404.511201230932,414.196633387103,404.424813397651
+"700",16,30,0,0,"Communicable","White","Male","Kansas",1998,"West North Central","Midwest","KS",52.8900021858179,56.2976498451538,59.8495620100465,56.3306487983361
+"701",16,30,0,0,"Injuries","White","Male","Kansas",1998,"West North Central","Midwest","KS",78.9764999273047,81.6369094649385,84.0778476861533,81.6045793815975
+"702",16,30,0,0,"Non-communicable","White","Male","Kansas",1998,"West North Central","Midwest","KS",120.737436556632,124.50629944018,129.005919508078,124.611891146034
+"703",16,30,0,1,"All other causes","White","Female","Kansas",1998,"West North Central","Midwest","KS",104.866372294653,108.143350705918,111.609121966591,108.169137058885
+"704",16,30,0,1,"Cancers","White","Female","Kansas",1998,"West North Central","Midwest","KS",152.967243231154,156.331499733943,159.675413292586,156.309776821361
+"705",16,30,0,1,"Cardiovascular","White","Female","Kansas",1998,"West North Central","Midwest","KS",263.374935392922,268.962128786603,274.380720561847,268.913451700109
+"706",16,30,0,1,"Communicable","White","Female","Kansas",1998,"West North Central","Midwest","KS",34.813088729435,36.7944057134227,38.9078929097354,36.7976282775115
+"707",16,30,0,1,"Injuries","White","Female","Kansas",1998,"West North Central","Midwest","KS",31.2466318871573,32.5581240017017,34.0299283588757,32.6003446873547
+"708",16,30,0,1,"Non-communicable","White","Female","Kansas",1998,"West North Central","Midwest","KS",77.4792890165607,80.1283208094485,83.2556419695676,80.1914052958793
+"709",16,30,1,0,"All other causes","Black","Male","Kansas",1998,"West North Central","Midwest","KS",200.486233538532,219.350801547186,238.727704454723,219.037296738365
+"710",16,30,1,0,"Cancers","Black","Male","Kansas",1998,"West North Central","Midwest","KS",341.087774408579,363.226581758443,387.166780697626,363.844992004598
+"711",16,30,1,0,"Cardiovascular","Black","Male","Kansas",1998,"West North Central","Midwest","KS",474.990777267829,507.73342932927,542.288666615664,507.904902952709
+"712",16,30,1,0,"Communicable","Black","Male","Kansas",1998,"West North Central","Midwest","KS",55.6345148268326,67.0938901794884,83.954866122582,67.9204581372505
+"713",16,30,1,0,"Injuries","Black","Male","Kansas",1998,"West North Central","Midwest","KS",118.460763804109,131.013863684959,146.513609154019,131.376052805361
+"714",16,30,1,0,"Non-communicable","Black","Male","Kansas",1998,"West North Central","Midwest","KS",142.948162383688,160.143357708154,179.324967838852,160.564830988349
+"715",16,30,1,1,"All other causes","Black","Female","Kansas",1998,"West North Central","Midwest","KS",144.517163277222,156.34396439264,169.214972359897,156.497857670012
+"716",16,30,1,1,"Cancers","Black","Female","Kansas",1998,"West North Central","Midwest","KS",190.441050778234,202.729054340711,215.269537000548,202.710935212293
+"717",16,30,1,1,"Cardiovascular","Black","Female","Kansas",1998,"West North Central","Midwest","KS",347.956299875215,371.322032362901,397.036633704879,371.981726272667
+"718",16,30,1,1,"Communicable","Black","Female","Kansas",1998,"West North Central","Midwest","KS",36.1182563589245,44.3272247095124,53.220577905777,44.4023818963712
+"719",16,30,1,1,"Injuries","Black","Female","Kansas",1998,"West North Central","Midwest","KS",36.5452422905392,41.7590763976416,49.6113900009965,42.0896875154102
+"720",16,30,1,1,"Non-communicable","Black","Female","Kansas",1998,"West North Central","Midwest","KS",106.876979373678,120.088674917368,134.067923180964,120.020252995752
+"721",16,31,0,0,"All other causes","White","Male","Kansas",1999,"West North Central","Midwest","KS",131.455738753074,135.659253760718,139.860315764064,135.654675905128
+"722",16,31,0,0,"Cancers","White","Male","Kansas",1999,"West North Central","Midwest","KS",230.503324413114,235.607022230667,241.30626586131,235.694142143827
+"723",16,31,0,0,"Cardiovascular","White","Male","Kansas",1999,"West North Central","Midwest","KS",384.525445227519,394.499504176565,403.830460312805,394.421688497894
+"724",16,31,0,0,"Communicable","White","Male","Kansas",1999,"West North Central","Midwest","KS",46.3927896226152,49.4954919157769,52.7321595567823,49.538025518806
+"725",16,31,0,0,"Injuries","White","Male","Kansas",1999,"West North Central","Midwest","KS",78.7468761913658,81.3932186609268,83.9455840174665,81.3631345646201
+"726",16,31,0,0,"Non-communicable","White","Male","Kansas",1999,"West North Central","Midwest","KS",126.849121428208,130.921464113041,135.071271875304,130.980963585508
+"727",16,31,0,1,"All other causes","White","Female","Kansas",1999,"West North Central","Midwest","KS",107.830960490798,111.056501571804,114.229969152262,111.013186197364
+"728",16,31,0,1,"Cancers","White","Female","Kansas",1999,"West North Central","Midwest","KS",153.583472649846,156.823456291999,160.293151610603,156.859153542016
+"729",16,31,0,1,"Cardiovascular","White","Female","Kansas",1999,"West North Central","Midwest","KS",261.849915562385,267.800985900748,273.627663767368,267.711661690364
+"730",16,31,0,1,"Communicable","White","Female","Kansas",1999,"West North Central","Midwest","KS",30.2861336503588,32.0018935406962,33.9074389452599,32.0137594674581
+"731",16,31,0,1,"Injuries","White","Female","Kansas",1999,"West North Central","Midwest","KS",31.3499633931247,32.6901785489098,34.033351533681,32.692049058083
+"732",16,31,0,1,"Non-communicable","White","Female","Kansas",1999,"West North Central","Midwest","KS",87.6215522257118,90.8860934174628,94.1426005749362,90.8702503923057
+"733",16,31,1,0,"All other causes","Black","Male","Kansas",1999,"West North Central","Midwest","KS",198.961883001701,217.308489646936,235.342965008419,217.411920910375
+"734",16,31,1,0,"Cancers","Black","Male","Kansas",1999,"West North Central","Midwest","KS",338.223173883089,360.090575832173,384.27935883314,360.637438316879
+"735",16,31,1,0,"Cardiovascular","Black","Male","Kansas",1999,"West North Central","Midwest","KS",457.122392477347,491.237876547619,522.111015071085,490.912262681434
+"736",16,31,1,0,"Communicable","Black","Male","Kansas",1999,"West North Central","Midwest","KS",55.5691518218919,67.1457739739761,83.2804931430366,67.5513416423793
+"737",16,31,1,0,"Injuries","Black","Male","Kansas",1999,"West North Central","Midwest","KS",112.668784626917,125.286540925177,141.523972374779,125.568723325911
+"738",16,31,1,0,"Non-communicable","Black","Male","Kansas",1999,"West North Central","Midwest","KS",150.53219148734,166.969440917358,187.045475779386,167.217623440224
+"739",16,31,1,1,"All other causes","Black","Female","Kansas",1999,"West North Central","Midwest","KS",147.310911796279,158.898510701113,171.246543933388,159.033716592999
+"740",16,31,1,1,"Cancers","Black","Female","Kansas",1999,"West North Central","Midwest","KS",190.784284096922,202.547704817878,214.737025319169,202.619545624153
+"741",16,31,1,1,"Cardiovascular","Black","Female","Kansas",1999,"West North Central","Midwest","KS",339.832895945436,361.769009230045,385.493564394017,361.788589356594
+"742",16,31,1,1,"Communicable","Black","Female","Kansas",1999,"West North Central","Midwest","KS",36.3052219050588,43.8489629133883,52.6428425197134,44.0198486616766
+"743",16,31,1,1,"Injuries","Black","Female","Kansas",1999,"West North Central","Midwest","KS",36.3889098256747,41.4077583402472,49.2895794923813,41.7793638856392
+"744",16,31,1,1,"Non-communicable","Black","Female","Kansas",1999,"West North Central","Midwest","KS",115.017934114004,127.841293341941,141.706693794229,128.010358823811
+"745",16,32,0,0,"All other causes","White","Male","Kansas",2000,"West North Central","Midwest","KS",134.435536166532,138.667452873832,142.80065776702,138.714019893342
+"746",16,32,0,0,"Cancers","White","Male","Kansas",2000,"West North Central","Midwest","KS",228.318851006692,233.115493375182,238.021438109968,233.102064540221
+"747",16,32,0,0,"Cardiovascular","White","Male","Kansas",2000,"West North Central","Midwest","KS",373.433080779125,382.130955787042,392.210227850484,382.364172324802
+"748",16,32,0,0,"Communicable","White","Male","Kansas",2000,"West North Central","Midwest","KS",44.0970453623086,47.3145214167134,50.2927269100463,47.3078528241385
+"749",16,32,0,0,"Injuries","White","Male","Kansas",2000,"West North Central","Midwest","KS",78.6807950566498,81.2763202241273,83.650170081734,81.2368863094717
+"750",16,32,0,0,"Non-communicable","White","Male","Kansas",2000,"West North Central","Midwest","KS",133.931416482977,138.271694997574,142.827641000633,138.26494696882
+"751",16,32,0,1,"All other causes","White","Female","Kansas",2000,"West North Central","Midwest","KS",110.532394398291,113.73673964839,117.684088178024,113.827772204911
+"752",16,32,0,1,"Cancers","White","Female","Kansas",2000,"West North Central","Midwest","KS",153.875424654311,157.242858222057,160.64441630615,157.208103835671
+"753",16,32,0,1,"Cardiovascular","White","Female","Kansas",2000,"West North Central","Midwest","KS",260.178810026905,265.634744376741,271.589026885198,265.748207239603
+"754",16,32,0,1,"Communicable","White","Female","Kansas",2000,"West North Central","Midwest","KS",29.911716867816,31.7022651577444,33.6301499118712,31.7446012740214
+"755",16,32,0,1,"Injuries","White","Female","Kansas",2000,"West North Central","Midwest","KS",31.3370526640072,32.6664623472765,34.0766965152687,32.6823173289917
+"756",16,32,0,1,"Non-communicable","White","Female","Kansas",2000,"West North Central","Midwest","KS",94.5723365203312,97.9306634247122,101.447059709094,97.9325368083528
+"757",16,32,1,0,"All other causes","Black","Male","Kansas",2000,"West North Central","Midwest","KS",196.68767061171,216.218343282171,234.46576452527,215.852479527894
+"758",16,32,1,0,"Cancers","Black","Male","Kansas",2000,"West North Central","Midwest","KS",338.059453623857,359.682193773226,381.287529704288,359.732529162264
+"759",16,32,1,0,"Cardiovascular","Black","Male","Kansas",2000,"West North Central","Midwest","KS",451.067160209182,478.999913531159,510.777517395458,479.427439043737
+"760",16,32,1,0,"Communicable","Black","Male","Kansas",2000,"West North Central","Midwest","KS",54.6903428779301,66.6931061426107,82.1124321728747,67.2311526898552
+"761",16,32,1,0,"Injuries","Black","Male","Kansas",2000,"West North Central","Midwest","KS",108.894813201183,121.584122863988,136.917727896379,121.80599842838
+"762",16,32,1,0,"Non-communicable","Black","Male","Kansas",2000,"West North Central","Midwest","KS",156.290051644474,173.674865390052,193.962288564692,173.641538722076
+"763",16,32,1,1,"All other causes","Black","Female","Kansas",2000,"West North Central","Midwest","KS",149.475400267333,161.787635486763,175.094477519829,161.811483204331
+"764",16,32,1,1,"Cancers","Black","Female","Kansas",2000,"West North Central","Midwest","KS",189.911374407984,201.914972957443,214.291033216817,202.08639051646
+"765",16,32,1,1,"Cardiovascular","Black","Female","Kansas",2000,"West North Central","Midwest","KS",336.32310096214,359.655589483323,384.533306884196,359.880811888588
+"766",16,32,1,1,"Communicable","Black","Female","Kansas",2000,"West North Central","Midwest","KS",37.0847173180943,44.1128947216036,52.3591724761697,44.1655601718787
+"767",16,32,1,1,"Injuries","Black","Female","Kansas",2000,"West North Central","Midwest","KS",36.2313017384939,41.1389542067955,48.9047615342885,41.5118271609053
+"768",16,32,1,1,"Non-communicable","Black","Female","Kansas",2000,"West North Central","Midwest","KS",124.620976009007,138.026156885509,153.71977305331,138.22131572582
+"769",16,33,0,0,"All other causes","White","Male","Kansas",2001,"West North Central","Midwest","KS",133.653700440185,137.734989106954,141.989833291377,137.75925236263
+"770",16,33,0,0,"Cancers","White","Male","Kansas",2001,"West North Central","Midwest","KS",228.635075673985,233.696387411596,239.340363380407,233.699783929943
+"771",16,33,0,0,"Cardiovascular","White","Male","Kansas",2001,"West North Central","Midwest","KS",361.227268986607,370.266030932913,379.136672623635,370.302811654176
+"772",16,33,0,0,"Communicable","White","Male","Kansas",2001,"West North Central","Midwest","KS",39.6930172752776,42.6398450391563,45.4372580592623,42.620989441284
+"773",16,33,0,0,"Injuries","White","Male","Kansas",2001,"West North Central","Midwest","KS",79.0185777585788,81.3942922896299,83.7487974902561,81.3650932651647
+"774",16,33,0,0,"Non-communicable","White","Male","Kansas",2001,"West North Central","Midwest","KS",136.070155442248,140.753394924347,145.71083598015,140.817445546956
+"775",16,33,0,1,"All other causes","White","Female","Kansas",2001,"West North Central","Midwest","KS",110.442379005095,113.708920662919,117.223265593388,113.743674550555
+"776",16,33,0,1,"Cancers","White","Female","Kansas",2001,"West North Central","Midwest","KS",153.559074381305,157.207451430401,160.472370910783,157.148596085537
+"777",16,33,0,1,"Cardiovascular","White","Female","Kansas",2001,"West North Central","Midwest","KS",254.34217456251,259.521788407269,265.098840945941,259.497102282576
+"778",16,33,0,1,"Communicable","White","Female","Kansas",2001,"West North Central","Midwest","KS",27.9271662157923,29.6186953751399,31.3247167934265,29.6070812709494
+"779",16,33,0,1,"Injuries","White","Female","Kansas",2001,"West North Central","Midwest","KS",31.7278872969976,33.0869461094405,34.4316851904581,33.0962192209942
+"780",16,33,0,1,"Non-communicable","White","Female","Kansas",2001,"West North Central","Midwest","KS",99.9054085219044,103.197730192847,106.673185686556,103.220075964044
+"781",16,33,1,0,"All other causes","Black","Male","Kansas",2001,"West North Central","Midwest","KS",195.269371180987,213.848154146173,231.844634883759,213.601346635212
+"782",16,33,1,0,"Cancers","Black","Male","Kansas",2001,"West North Central","Midwest","KS",335.717438459978,358.92035395671,384.283424692499,359.345108277119
+"783",16,33,1,0,"Cardiovascular","Black","Male","Kansas",2001,"West North Central","Midwest","KS",437.999994543203,466.144691187028,498.379429005239,466.48055297229
+"784",16,33,1,0,"Communicable","Black","Male","Kansas",2001,"West North Central","Midwest","KS",54.3748387093901,66.1617764555633,80.3479721715125,66.6069514404589
+"785",16,33,1,0,"Injuries","Black","Male","Kansas",2001,"West North Central","Midwest","KS",108.108295113595,120.62887330375,134.335795990461,120.774727346559
+"786",16,33,1,0,"Non-communicable","Black","Male","Kansas",2001,"West North Central","Midwest","KS",160.496492973452,178.761432820876,197.420023738277,178.7722953911
+"787",16,33,1,1,"All other causes","Black","Female","Kansas",2001,"West North Central","Midwest","KS",151.485458208265,163.971455873323,177.679766641642,164.195036029495
+"788",16,33,1,1,"Cancers","Black","Female","Kansas",2001,"West North Central","Midwest","KS",190.04406552571,201.997761835091,214.197886499439,201.974134696367
+"789",16,33,1,1,"Cardiovascular","Black","Female","Kansas",2001,"West North Central","Midwest","KS",329.605004248138,351.969059980714,374.551198086243,352.635314548373
+"790",16,33,1,1,"Communicable","Black","Female","Kansas",2001,"West North Central","Midwest","KS",37.9788992556745,44.942959143529,53.3861215417991,45.1033164236204
+"791",16,33,1,1,"Injuries","Black","Female","Kansas",2001,"West North Central","Midwest","KS",35.8080427131797,40.9047918185705,48.4526953190641,41.2339941421308
+"792",16,33,1,1,"Non-communicable","Black","Female","Kansas",2001,"West North Central","Midwest","KS",131.034932355596,144.597694655545,161.242797703889,144.96855295486
+"793",16,34,0,0,"All other causes","White","Male","Kansas",2002,"West North Central","Midwest","KS",134.547826254496,138.86559678671,142.981588746654,138.837562294288
+"794",16,34,0,0,"Cancers","White","Male","Kansas",2002,"West North Central","Midwest","KS",225.368300620403,229.901677133202,234.943455722855,229.925690932959
+"795",16,34,0,0,"Cardiovascular","White","Male","Kansas",2002,"West North Central","Midwest","KS",356.685785155009,364.814505921948,373.562262650857,365.011454296796
+"796",16,34,0,0,"Communicable","White","Male","Kansas",2002,"West North Central","Midwest","KS",42.5748142332185,45.4534235316995,48.8023158959546,45.490376081657
+"797",16,34,0,0,"Injuries","White","Male","Kansas",2002,"West North Central","Midwest","KS",79.0322559934468,81.5829827256138,84.2247613539653,81.5983341070016
+"798",16,34,0,0,"Non-communicable","White","Male","Kansas",2002,"West North Central","Midwest","KS",134.801572339783,139.268913779151,143.80081001885,139.16925601082
+"799",16,34,0,1,"All other causes","White","Female","Kansas",2002,"West North Central","Midwest","KS",112.853568120155,116.39764028704,120.140294779231,116.386541051317
+"800",16,34,0,1,"Cancers","White","Female","Kansas",2002,"West North Central","Midwest","KS",153.243657299185,156.490573089991,159.981495933517,156.557802064284
+"801",16,34,0,1,"Cardiovascular","White","Female","Kansas",2002,"West North Central","Midwest","KS",248.801059958245,254.999022024289,260.788412335904,255.049312227546
+"802",16,34,0,1,"Communicable","White","Female","Kansas",2002,"West North Central","Midwest","KS",30.3318778305685,32.0497106390788,34.0612784279685,32.095043146894
+"803",16,34,0,1,"Injuries","White","Female","Kansas",2002,"West North Central","Midwest","KS",32.2530623930563,33.5820253246645,35.0455181665714,33.6130246792086
+"804",16,34,0,1,"Non-communicable","White","Female","Kansas",2002,"West North Central","Midwest","KS",103.343108750571,106.830982921596,110.422902284469,106.856420438628
+"805",16,34,1,0,"All other causes","Black","Male","Kansas",2002,"West North Central","Midwest","KS",192.499058983173,211.389611386726,229.302340392103,211.197390032464
+"806",16,34,1,0,"Cancers","Black","Male","Kansas",2002,"West North Central","Midwest","KS",327.614316345613,349.286213041642,372.803472576066,349.367531532009
+"807",16,34,1,0,"Cardiovascular","Black","Male","Kansas",2002,"West North Central","Midwest","KS",431.559286195751,459.173689576109,493.383103419439,459.898335833181
+"808",16,34,1,0,"Communicable","Black","Male","Kansas",2002,"West North Central","Midwest","KS",53.0486009341606,65.4238357499079,80.0809720002948,65.6175105734782
+"809",16,34,1,0,"Injuries","Black","Male","Kansas",2002,"West North Central","Midwest","KS",106.096669278266,119.054957807696,132.60853159419,119.098909162769
+"810",16,34,1,0,"Non-communicable","Black","Male","Kansas",2002,"West North Central","Midwest","KS",166.317021054827,184.564891568631,204.527132583459,184.918921177634
+"811",16,34,1,1,"All other causes","Black","Female","Kansas",2002,"West North Central","Midwest","KS",153.633745153717,166.071187571706,180.222005442543,166.378268309085
+"812",16,34,1,1,"Cancers","Black","Female","Kansas",2002,"West North Central","Midwest","KS",190.453919783054,202.141002405093,214.810966081584,202.137218845984
+"813",16,34,1,1,"Cardiovascular","Black","Female","Kansas",2002,"West North Central","Midwest","KS",321.905718214628,342.851638743403,365.652258797188,343.093186923578
+"814",16,34,1,1,"Communicable","Black","Female","Kansas",2002,"West North Central","Midwest","KS",36.8965502539671,43.98920937722,51.8385884568384,44.0596260206553
+"815",16,34,1,1,"Injuries","Black","Female","Kansas",2002,"West North Central","Midwest","KS",35.3879953874498,40.5709049660306,48.4836093509242,40.9031091822512
+"816",16,34,1,1,"Non-communicable","Black","Female","Kansas",2002,"West North Central","Midwest","KS",138.005575084288,153.161632826388,170.637306250454,153.508517112371
+"817",16,35,0,0,"All other causes","White","Male","Kansas",2003,"West North Central","Midwest","KS",134.124591319386,138.158601661733,142.351450122295,138.146929119672
+"818",16,35,0,0,"Cancers","White","Male","Kansas",2003,"West North Central","Midwest","KS",221.994325630556,226.967712386772,232.177970229248,226.977142936363
+"819",16,35,0,0,"Cardiovascular","White","Male","Kansas",2003,"West North Central","Midwest","KS",339.325253310768,347.579378199846,355.689737508048,347.476927244752
+"820",16,35,0,0,"Communicable","White","Male","Kansas",2003,"West North Central","Midwest","KS",40.6543497598759,43.4467441251945,46.2835887085505,43.4885665212305
+"821",16,35,0,0,"Injuries","White","Male","Kansas",2003,"West North Central","Midwest","KS",78.4961787764652,81.1995077963701,83.8490936506725,81.1242583461606
+"822",16,35,0,0,"Non-communicable","White","Male","Kansas",2003,"West North Central","Midwest","KS",133.158490898551,137.405445580646,141.769062658078,137.487872960706
+"823",16,35,0,1,"All other causes","White","Female","Kansas",2003,"West North Central","Midwest","KS",114.126152750384,117.497427512456,121.03343608922,117.506685739261
+"824",16,35,0,1,"Cancers","White","Female","Kansas",2003,"West North Central","Midwest","KS",152.405716248091,155.592656563658,158.906374384327,155.631493055792
+"825",16,35,0,1,"Cardiovascular","White","Female","Kansas",2003,"West North Central","Midwest","KS",239.602069933724,245.091453110755,250.642702899953,245.127712824375
+"826",16,35,0,1,"Communicable","White","Female","Kansas",2003,"West North Central","Midwest","KS",30.73236185158,32.5849977469727,34.5286362717302,32.5860989591894
+"827",16,35,0,1,"Injuries","White","Female","Kansas",2003,"West North Central","Midwest","KS",32.6714625407792,34.0272319851461,35.3301588446232,34.0340824278542
+"828",16,35,0,1,"Non-communicable","White","Female","Kansas",2003,"West North Central","Midwest","KS",104.604098581693,108.001266071659,111.475604031221,107.989245080693
+"829",16,35,1,0,"All other causes","Black","Male","Kansas",2003,"West North Central","Midwest","KS",191.110899740092,209.521148705991,227.267111293565,209.372747128334
+"830",16,35,1,0,"Cancers","Black","Male","Kansas",2003,"West North Central","Midwest","KS",317.586495108378,338.370367498408,361.919546916817,338.610955311288
+"831",16,35,1,0,"Cardiovascular","Black","Male","Kansas",2003,"West North Central","Midwest","KS",426.66342151442,453.251124949418,487.796605063385,454.415932064857
+"832",16,35,1,0,"Communicable","Black","Male","Kansas",2003,"West North Central","Midwest","KS",52.4521423469795,64.5570585775016,79.291896194872,64.9180941760831
+"833",16,35,1,0,"Injuries","Black","Male","Kansas",2003,"West North Central","Midwest","KS",105.145349026641,117.34863911005,131.841323117247,117.72479542461
+"834",16,35,1,0,"Non-communicable","Black","Male","Kansas",2003,"West North Central","Midwest","KS",169.440795346724,187.577375750853,209.215991392071,187.940842738548
+"835",16,35,1,1,"All other causes","Black","Female","Kansas",2003,"West North Central","Midwest","KS",155.394699677952,167.243053358549,181.503438642549,167.53428114317
+"836",16,35,1,1,"Cancers","Black","Female","Kansas",2003,"West North Central","Midwest","KS",190.209021870408,201.556421643852,214.108738271809,201.676666767774
+"837",16,35,1,1,"Cardiovascular","Black","Female","Kansas",2003,"West North Central","Midwest","KS",314.079097580207,336.465573550328,358.642860989517,336.816420451918
+"838",16,35,1,1,"Communicable","Black","Female","Kansas",2003,"West North Central","Midwest","KS",36.3602505424958,43.4612698155106,51.6795575262431,43.5028678145819
+"839",16,35,1,1,"Injuries","Black","Female","Kansas",2003,"West North Central","Midwest","KS",35.2762571017364,40.3207494337888,47.8945340300001,40.6372403246593
+"840",16,35,1,1,"Non-communicable","Black","Female","Kansas",2003,"West North Central","Midwest","KS",139.339778951149,153.102064364461,169.946844329992,153.268705494731
+"841",16,36,0,0,"All other causes","White","Male","Kansas",2004,"West North Central","Midwest","KS",133.768939715459,138.160697774901,142.368905876929,138.189449247922
+"842",16,36,0,0,"Cancers","White","Male","Kansas",2004,"West North Central","Midwest","KS",219.535493971782,224.463175433984,229.120520667323,224.444429756005
+"843",16,36,0,0,"Cardiovascular","White","Male","Kansas",2004,"West North Central","Midwest","KS",316.324530234769,324.078674595079,331.786544906911,324.10620698754
+"844",16,36,0,0,"Communicable","White","Male","Kansas",2004,"West North Central","Midwest","KS",38.0567403355417,40.9251621975903,43.6674042470686,40.824769878219
+"845",16,36,0,0,"Injuries","White","Male","Kansas",2004,"West North Central","Midwest","KS",78.76514018636,81.3450223052442,83.9009429192317,81.3441630544519
+"846",16,36,0,0,"Non-communicable","White","Male","Kansas",2004,"West North Central","Midwest","KS",131.104231347127,135.753972344682,139.906744711592,135.660122671343
+"847",16,36,0,1,"All other causes","White","Female","Kansas",2004,"West North Central","Midwest","KS",115.544912227482,119.481542337449,122.993282299368,119.408691096775
+"848",16,36,0,1,"Cancers","White","Female","Kansas",2004,"West North Central","Midwest","KS",150.724731119386,154.069818280881,157.453987700287,154.071357992152
+"849",16,36,0,1,"Cardiovascular","White","Female","Kansas",2004,"West North Central","Midwest","KS",222.501462711086,227.685129248021,233.286338052651,227.656342164793
+"850",16,36,0,1,"Communicable","White","Female","Kansas",2004,"West North Central","Midwest","KS",28.7874014351105,30.5228591834513,32.3104077207301,30.5335990258875
+"851",16,36,0,1,"Injuries","White","Female","Kansas",2004,"West North Central","Midwest","KS",33.2692767567376,34.6573946816147,36.1511951761277,34.6570243456981
+"852",16,36,0,1,"Non-communicable","White","Female","Kansas",2004,"West North Central","Midwest","KS",105.052888371973,108.601747223006,112.219223122179,108.606021294961
+"853",16,36,1,0,"All other causes","Black","Male","Kansas",2004,"West North Central","Midwest","KS",190.552757514283,208.451892829906,226.308498484192,208.769939299194
+"854",16,36,1,0,"Cancers","Black","Male","Kansas",2004,"West North Central","Midwest","KS",311.147094231744,330.128426363549,354.421507337089,330.791743426565
+"855",16,36,1,0,"Cardiovascular","Black","Male","Kansas",2004,"West North Central","Midwest","KS",419.746794193515,451.378296574611,485.562071448951,451.446931580872
+"856",16,36,1,0,"Communicable","Black","Male","Kansas",2004,"West North Central","Midwest","KS",51.1096179131661,63.6541411063224,78.6342537865331,64.0009289523991
+"857",16,36,1,0,"Injuries","Black","Male","Kansas",2004,"West North Central","Midwest","KS",105.450553418717,116.955552805569,130.467812028443,117.207154552961
+"858",16,36,1,0,"Non-communicable","Black","Male","Kansas",2004,"West North Central","Midwest","KS",171.466357041952,190.195131578731,210.954209296488,190.517028651503
+"859",16,36,1,1,"All other causes","Black","Female","Kansas",2004,"West North Central","Midwest","KS",157.672713690601,169.86614833409,183.929057484987,170.189762071834
+"860",16,36,1,1,"Cancers","Black","Female","Kansas",2004,"West North Central","Midwest","KS",189.594778074114,201.327738974037,214.035326810181,201.461385051816
+"861",16,36,1,1,"Cardiovascular","Black","Female","Kansas",2004,"West North Central","Midwest","KS",306.288763741469,329.072850015218,352.454827158917,328.851294706933
+"862",16,36,1,1,"Communicable","Black","Female","Kansas",2004,"West North Central","Midwest","KS",35.9500011304505,43.1168591309792,51.6378704770035,43.2642033349651
+"863",16,36,1,1,"Injuries","Black","Female","Kansas",2004,"West North Central","Midwest","KS",34.9939953938192,40.0951984116686,47.7537370956423,40.3913648344309
+"864",16,36,1,1,"Non-communicable","Black","Female","Kansas",2004,"West North Central","Midwest","KS",135.249671477254,149.374038463379,163.914463356511,149.363189703961
+"865",16,37,0,0,"All other causes","White","Male","Kansas",2005,"West North Central","Midwest","KS",137.867454644999,141.768028837598,146.258542117798,141.901452012243
+"866",16,37,0,0,"Cancers","White","Male","Kansas",2005,"West North Central","Midwest","KS",216.756783066238,221.663514103764,226.623206947156,221.637424314453
+"867",16,37,0,0,"Cardiovascular","White","Male","Kansas",2005,"West North Central","Midwest","KS",308.16313050433,315.631661716379,323.255576287594,315.682233528142
+"868",16,37,0,0,"Communicable","White","Male","Kansas",2005,"West North Central","Midwest","KS",39.7524123072922,42.4309285576043,45.236540927654,42.4570988706479
+"869",16,37,0,0,"Injuries","White","Male","Kansas",2005,"West North Central","Midwest","KS",79.7082372431417,82.1495325502506,84.9893125706944,82.1740877499139
+"870",16,37,0,0,"Non-communicable","White","Male","Kansas",2005,"West North Central","Midwest","KS",136.333079124743,140.784648854144,145.436946917286,140.868236342183
+"871",16,37,0,1,"All other causes","White","Female","Kansas",2005,"West North Central","Midwest","KS",118.514316085392,121.977687302079,125.42726685123,121.968823104815
+"872",16,37,0,1,"Cancers","White","Female","Kansas",2005,"West North Central","Midwest","KS",149.559552329268,153.099949342009,156.447775602318,153.109299547908
+"873",16,37,0,1,"Cardiovascular","White","Female","Kansas",2005,"West North Central","Midwest","KS",215.307044469488,220.602379075415,225.708996146089,220.519304345709
+"874",16,37,0,1,"Communicable","White","Female","Kansas",2005,"West North Central","Midwest","KS",30.0401070611834,31.6996966310712,33.5631163489634,31.729466324168
+"875",16,37,0,1,"Injuries","White","Female","Kansas",2005,"West North Central","Midwest","KS",33.4279292399158,34.7804241348293,36.1162263251294,34.7760615203456
+"876",16,37,0,1,"Non-communicable","White","Female","Kansas",2005,"West North Central","Midwest","KS",109.369400856331,113.113809400635,117.020431166351,113.141855410007
+"877",16,37,1,0,"All other causes","Black","Male","Kansas",2005,"West North Central","Midwest","KS",190.887182919193,208.275144581625,225.738378950298,208.371852308616
+"878",16,37,1,0,"Cancers","Black","Male","Kansas",2005,"West North Central","Midwest","KS",301.266497967735,322.430414006595,344.911115365098,322.439034396264
+"879",16,37,1,0,"Cardiovascular","Black","Male","Kansas",2005,"West North Central","Midwest","KS",416.01342279638,446.795146649741,478.84736322674,447.235752370858
+"880",16,37,1,0,"Communicable","Black","Male","Kansas",2005,"West North Central","Midwest","KS",51.0049820689987,62.5568219372606,76.9901116009297,62.9410966472398
+"881",16,37,1,0,"Injuries","Black","Male","Kansas",2005,"West North Central","Midwest","KS",105.532741105848,116.765935042025,129.71873185448,117.118752707838
+"882",16,37,1,0,"Non-communicable","Black","Male","Kansas",2005,"West North Central","Midwest","KS",170.346551600299,189.152647056785,211.33522733625,189.479179718004
+"883",16,37,1,1,"All other causes","Black","Female","Kansas",2005,"West North Central","Midwest","KS",159.96525206996,172.486253117263,186.076394730765,172.545358975833
+"884",16,37,1,1,"Cancers","Black","Female","Kansas",2005,"West North Central","Midwest","KS",189.671289500477,200.569890107651,212.800327684043,200.742832549437
+"885",16,37,1,1,"Cardiovascular","Black","Female","Kansas",2005,"West North Central","Midwest","KS",291.80919257435,314.502990128824,337.115181684555,314.565009573335
+"886",16,37,1,1,"Communicable","Black","Female","Kansas",2005,"West North Central","Midwest","KS",35.7337470171349,42.8158442978721,51.2680477306681,43.0193118419739
+"887",16,37,1,1,"Injuries","Black","Female","Kansas",2005,"West North Central","Midwest","KS",34.7533915364151,39.8375735932723,47.1535612302466,40.1345967108166
+"888",16,37,1,1,"Non-communicable","Black","Female","Kansas",2005,"West North Central","Midwest","KS",131.916661481216,146.169172465985,160.296101929337,146.213319207731
+"889",16,38,0,0,"All other causes","White","Male","Kansas",2006,"West North Central","Midwest","KS",140.135129495758,144.27254557066,148.827130801479,144.332343259585
+"890",16,38,0,0,"Cancers","White","Male","Kansas",2006,"West North Central","Midwest","KS",213.074260710222,217.972410213834,223.006214027129,218.060905791478
+"891",16,38,0,0,"Cardiovascular","White","Male","Kansas",2006,"West North Central","Midwest","KS",290.701018624917,298.556569582272,305.872140974702,298.586747990484
+"892",16,38,0,0,"Communicable","White","Male","Kansas",2006,"West North Central","Midwest","KS",38.8982406603909,41.1916541579561,43.911208236211,41.3044523119811
+"893",16,38,0,0,"Injuries","White","Male","Kansas",2006,"West North Central","Midwest","KS",80.4148196065882,82.9648654657337,86.0100047029896,83.0013813025752
+"894",16,38,0,0,"Non-communicable","White","Male","Kansas",2006,"West North Central","Midwest","KS",137.020155837902,141.42781379784,146.011050745481,141.480698055149
+"895",16,38,0,1,"All other causes","White","Female","Kansas",2006,"West North Central","Midwest","KS",121.914582615805,125.453150634457,129.068819351374,125.471545638187
+"896",16,38,0,1,"Cancers","White","Female","Kansas",2006,"West North Central","Midwest","KS",148.030455455054,151.36930820637,154.54989236394,151.37074564277
+"897",16,38,0,1,"Cardiovascular","White","Female","Kansas",2006,"West North Central","Midwest","KS",209.788380905065,214.585769067409,219.56533648021,214.499977096839
+"898",16,38,0,1,"Communicable","White","Female","Kansas",2006,"West North Central","Midwest","KS",29.637968266451,31.3350890382506,33.1702550883865,31.3827822728713
+"899",16,38,0,1,"Injuries","White","Female","Kansas",2006,"West North Central","Midwest","KS",33.6344034764631,35.0470229523392,36.5011180193259,35.0510754190154
+"900",16,38,0,1,"Non-communicable","White","Female","Kansas",2006,"West North Central","Midwest","KS",107.781395654575,111.441043606381,115.073569929398,111.402561258621
+"901",16,38,1,0,"All other causes","Black","Male","Kansas",2006,"West North Central","Midwest","KS",192.511104461194,208.1212342723,225.288521142933,208.362904080437
+"902",16,38,1,0,"Cancers","Black","Male","Kansas",2006,"West North Central","Midwest","KS",291.501037351529,312.508323802868,333.059238764666,312.683739681206
+"903",16,38,1,0,"Cardiovascular","Black","Male","Kansas",2006,"West North Central","Midwest","KS",402.932159467839,430.051540976895,461.060046987423,430.704410440962
+"904",16,38,1,0,"Communicable","Black","Male","Kansas",2006,"West North Central","Midwest","KS",49.9473177231199,62.3609391659443,75.5189446900726,62.4445644335763
+"905",16,38,1,0,"Injuries","Black","Male","Kansas",2006,"West North Central","Midwest","KS",104.899979116976,116.040786285908,128.798328459727,116.301509327781
+"906",16,38,1,0,"Non-communicable","Black","Male","Kansas",2006,"West North Central","Midwest","KS",167.852840576726,185.38471146128,204.17846088533,185.529786032986
+"907",16,38,1,1,"All other causes","Black","Female","Kansas",2006,"West North Central","Midwest","KS",159.687364002471,173.007064187179,186.32428328342,173.058108538481
+"908",16,38,1,1,"Cancers","Black","Female","Kansas",2006,"West North Central","Midwest","KS",187.390669312717,198.703228568566,210.723024416122,198.968865316361
+"909",16,38,1,1,"Cardiovascular","Black","Female","Kansas",2006,"West North Central","Midwest","KS",284.218410910903,304.676985129459,327.206933195787,305.06956041462
+"910",16,38,1,1,"Communicable","Black","Female","Kansas",2006,"West North Central","Midwest","KS",35.9275580796659,43.2112708993491,51.2775804277146,43.2900821232389
+"911",16,38,1,1,"Injuries","Black","Female","Kansas",2006,"West North Central","Midwest","KS",34.4386339730577,39.650160268583,46.6894666881178,39.9466605560796
+"912",16,38,1,1,"Non-communicable","Black","Female","Kansas",2006,"West North Central","Midwest","KS",132.928464766474,146.535191482652,161.330206310872,146.714136622341
+"913",16,39,0,0,"All other causes","White","Male","Kansas",2007,"West North Central","Midwest","KS",142.205490741578,146.335542315016,150.484617008109,146.30857470536
+"914",16,39,0,0,"Cancers","White","Male","Kansas",2007,"West North Central","Midwest","KS",211.887006248424,216.44030516886,221.169788801703,216.463700124853
+"915",16,39,0,0,"Cardiovascular","White","Male","Kansas",2007,"West North Central","Midwest","KS",282.525077956333,289.866988062438,297.132736194478,289.870980810916
+"916",16,39,0,0,"Communicable","White","Male","Kansas",2007,"West North Central","Midwest","KS",39.6401084328009,42.3276844196592,45.0808205502857,42.3535400121281
+"917",16,39,0,0,"Injuries","White","Male","Kansas",2007,"West North Central","Midwest","KS",81.2429644228736,83.7258918180131,86.3371078317126,83.6840303081972
+"918",16,39,0,0,"Non-communicable","White","Male","Kansas",2007,"West North Central","Midwest","KS",136.401572744175,140.605792587242,145.069090225267,140.668129124987
+"919",16,39,0,1,"All other causes","White","Female","Kansas",2007,"West North Central","Midwest","KS",123.465302513036,127.157024123824,130.793431129517,127.111832728625
+"920",16,39,0,1,"Cancers","White","Female","Kansas",2007,"West North Central","Midwest","KS",145.566099491531,148.714659230624,151.943935533225,148.758876870972
+"921",16,39,0,1,"Cardiovascular","White","Female","Kansas",2007,"West North Central","Midwest","KS",203.351934001317,208.234310263868,213.651409343869,208.235816473614
+"922",16,39,0,1,"Communicable","White","Female","Kansas",2007,"West North Central","Midwest","KS",29.9403615036103,31.696384648022,33.5564532475782,31.6852571603966
+"923",16,39,0,1,"Injuries","White","Female","Kansas",2007,"West North Central","Midwest","KS",34.0093801199165,35.4005609261273,36.8996513219332,35.4048281347438
+"924",16,39,0,1,"Non-communicable","White","Female","Kansas",2007,"West North Central","Midwest","KS",107.906451305322,111.421297327734,115.130468553765,111.437547048367
+"925",16,39,1,0,"All other causes","Black","Male","Kansas",2007,"West North Central","Midwest","KS",191.093195090507,207.415826460498,224.599592169842,207.694550301666
+"926",16,39,1,0,"Cancers","Black","Male","Kansas",2007,"West North Central","Midwest","KS",279.114569767941,301.883561239522,322.930660186129,301.552744826076
+"927",16,39,1,0,"Cardiovascular","Black","Male","Kansas",2007,"West North Central","Midwest","KS",389.935984702542,415.962960557803,444.326791081002,416.20390499435
+"928",16,39,1,0,"Communicable","Black","Male","Kansas",2007,"West North Central","Midwest","KS",49.3984847099354,61.8503672522392,75.0968424363459,61.9248876439542
+"929",16,39,1,0,"Injuries","Black","Male","Kansas",2007,"West North Central","Midwest","KS",100.178271182113,112.277541591299,125.330892385971,112.427985007729
+"930",16,39,1,0,"Non-communicable","Black","Male","Kansas",2007,"West North Central","Midwest","KS",163.629371138957,180.059151222279,198.218984111981,180.377932073896
+"931",16,39,1,1,"All other causes","Black","Female","Kansas",2007,"West North Central","Midwest","KS",160.893657330476,173.881974011903,186.672242434142,173.925042706459
+"932",16,39,1,1,"Cancers","Black","Female","Kansas",2007,"West North Central","Midwest","KS",186.860558743988,197.089828732101,209.296127941583,197.463429506883
+"933",16,39,1,1,"Cardiovascular","Black","Female","Kansas",2007,"West North Central","Midwest","KS",271.591606061097,292.645408105069,314.474522003096,292.787054392885
+"934",16,39,1,1,"Communicable","Black","Female","Kansas",2007,"West North Central","Midwest","KS",36.4601048343103,43.8070364499699,52.0123685462917,43.9151519286139
+"935",16,39,1,1,"Injuries","Black","Female","Kansas",2007,"West North Central","Midwest","KS",34.182438942569,39.3709488879381,46.9119779140384,39.7826857008897
+"936",16,39,1,1,"Non-communicable","Black","Female","Kansas",2007,"West North Central","Midwest","KS",125.77687522898,140.384213865115,154.695988506562,140.363712466327
+"937",16,40,0,0,"All other causes","White","Male","Kansas",2008,"West North Central","Midwest","KS",144.065582885761,148.580705548996,152.71844813635,148.56530287613
+"938",16,40,0,0,"Cancers","White","Male","Kansas",2008,"West North Central","Midwest","KS",207.299860326311,212.190382522384,217.02021373943,212.145626435414
+"939",16,40,0,0,"Cardiovascular","White","Male","Kansas",2008,"West North Central","Midwest","KS",276.186866057734,282.747595271726,289.859332356707,282.805796074445
+"940",16,40,0,0,"Communicable","White","Male","Kansas",2008,"West North Central","Midwest","KS",42.4128860405379,45.155890240182,48.09209575304,45.1874277400504
+"941",16,40,0,0,"Injuries","White","Male","Kansas",2008,"West North Central","Midwest","KS",81.5815097805183,84.1076206988371,86.7860497619012,84.1489329038666
+"942",16,40,0,0,"Non-communicable","White","Male","Kansas",2008,"West North Central","Midwest","KS",139.717011018119,143.936316410454,148.606740892739,143.986864968874
+"943",16,40,0,1,"All other causes","White","Female","Kansas",2008,"West North Central","Midwest","KS",126.01615186961,130.030202420872,133.61281541732,129.925461478779
+"944",16,40,0,1,"Cancers","White","Female","Kansas",2008,"West North Central","Midwest","KS",142.637565701232,146.230975218086,149.296147779257,146.205026636935
+"945",16,40,0,1,"Cardiovascular","White","Female","Kansas",2008,"West North Central","Midwest","KS",197.688717279114,202.571228114314,207.7410740984,202.570522893086
+"946",16,40,0,1,"Communicable","White","Female","Kansas",2008,"West North Central","Midwest","KS",30.690335597054,32.524701923197,34.4251758376987,32.5367098024344
+"947",16,40,0,1,"Injuries","White","Female","Kansas",2008,"West North Central","Midwest","KS",34.3432987958822,35.7363030091612,37.1699279487759,35.7286035078131
+"948",16,40,0,1,"Non-communicable","White","Female","Kansas",2008,"West North Central","Midwest","KS",109.381655673171,112.926138081605,116.365104999351,112.888762225146
+"949",16,40,1,0,"All other causes","Black","Male","Kansas",2008,"West North Central","Midwest","KS",190.34680909112,206.318248959496,224.883649121943,206.706301380623
+"950",16,40,1,0,"Cancers","Black","Male","Kansas",2008,"West North Central","Midwest","KS",273.994400753471,295.257945093267,314.222611151127,294.817674612056
+"951",16,40,1,0,"Cardiovascular","Black","Male","Kansas",2008,"West North Central","Midwest","KS",371.598491178253,398.127164710053,425.532593807656,398.445427231118
+"952",16,40,1,0,"Communicable","Black","Male","Kansas",2008,"West North Central","Midwest","KS",48.72791480226,61.6148625209938,74.4352199870684,61.510202415559
+"953",16,40,1,0,"Injuries","Black","Male","Kansas",2008,"West North Central","Midwest","KS",96.9828575171929,108.625437970026,120.961723440923,108.813108293265
+"954",16,40,1,0,"Non-communicable","Black","Male","Kansas",2008,"West North Central","Midwest","KS",160.276561308316,176.175785473126,194.033336373341,176.6029139395
+"955",16,40,1,1,"All other causes","Black","Female","Kansas",2008,"West North Central","Midwest","KS",163.618122226821,175.546543726084,188.875281461028,175.648165381542
+"956",16,40,1,1,"Cancers","Black","Female","Kansas",2008,"West North Central","Midwest","KS",186.116087591434,197.180886868991,208.070314966753,197.093423015011
+"957",16,40,1,1,"Cardiovascular","Black","Female","Kansas",2008,"West North Central","Midwest","KS",257.376873710597,276.751345840729,297.86671400729,277.027893201221
+"958",16,40,1,1,"Communicable","Black","Female","Kansas",2008,"West North Central","Midwest","KS",35.7000609831208,43.5750358834309,51.9458201126505,43.6878201801233
+"959",16,40,1,1,"Injuries","Black","Female","Kansas",2008,"West North Central","Midwest","KS",34.2224979964629,39.2012509118094,47.1206335134881,39.6730047727517
+"960",16,40,1,1,"Non-communicable","Black","Female","Kansas",2008,"West North Central","Midwest","KS",123.406287494655,137.94095928765,152.915114090258,138.019265596091
+"961",16,41,0,0,"All other causes","White","Male","Kansas",2009,"West North Central","Midwest","KS",146.248423643657,150.331562197288,154.595609076836,150.295744513011
+"962",16,41,0,0,"Cancers","White","Male","Kansas",2009,"West North Central","Midwest","KS",203.661471566513,207.858634787591,212.474903193618,207.896566528374
+"963",16,41,0,0,"Cardiovascular","White","Male","Kansas",2009,"West North Central","Midwest","KS",261.787226954795,268.417594738485,275.226646987979,268.457237429706
+"964",16,41,0,0,"Communicable","White","Male","Kansas",2009,"West North Central","Midwest","KS",39.0774991536038,41.6936398746911,44.5074581913436,41.7388596975434
+"965",16,41,0,0,"Injuries","White","Male","Kansas",2009,"West North Central","Midwest","KS",83.2334975837107,85.8090279759083,88.4220047967828,85.825932694486
+"966",16,41,0,0,"Non-communicable","White","Male","Kansas",2009,"West North Central","Midwest","KS",135.403167263406,139.359381575356,143.863325541404,139.347580440416
+"967",16,41,0,1,"All other causes","White","Female","Kansas",2009,"West North Central","Midwest","KS",125.92674500216,129.606821323693,133.538231793891,129.606505970564
+"968",16,41,0,1,"Cancers","White","Female","Kansas",2009,"West North Central","Midwest","KS",141.618733010847,144.878289594872,148.11160600818,144.876026070262
+"969",16,41,0,1,"Cardiovascular","White","Female","Kansas",2009,"West North Central","Midwest","KS",185.27139053565,189.81064174686,194.488643048744,189.837285387938
+"970",16,41,0,1,"Communicable","White","Female","Kansas",2009,"West North Central","Midwest","KS",28.9997303529201,30.6823997026032,32.4680885193295,30.6749154393441
+"971",16,41,0,1,"Injuries","White","Female","Kansas",2009,"West North Central","Midwest","KS",35.1260010495412,36.5326954815658,38.1678640534634,36.5427072855752
+"972",16,41,0,1,"Non-communicable","White","Female","Kansas",2009,"West North Central","Midwest","KS",104.689079309991,108.161113499824,111.735031155751,108.145912590336
+"973",16,41,1,0,"All other causes","Black","Male","Kansas",2009,"West North Central","Midwest","KS",190.458485944363,206.036363985676,223.110837334113,206.347984182805
+"974",16,41,1,0,"Cancers","Black","Male","Kansas",2009,"West North Central","Midwest","KS",267.106970393826,289.231676109553,311.567799447752,289.101072545325
+"975",16,41,1,0,"Cardiovascular","Black","Male","Kansas",2009,"West North Central","Midwest","KS",354.636080195513,381.134225588168,409.251044691088,381.188244222959
+"976",16,41,1,0,"Communicable","Black","Male","Kansas",2009,"West North Central","Midwest","KS",47.7890323488391,61.0250833727667,75.3640454518651,60.9729440855598
+"977",16,41,1,0,"Injuries","Black","Male","Kansas",2009,"West North Central","Midwest","KS",93.5839931141015,105.419113208742,118.505796709007,105.589716577527
+"978",16,41,1,0,"Non-communicable","Black","Male","Kansas",2009,"West North Central","Midwest","KS",157.625738765427,172.993112351928,190.732819046748,173.475612077276
+"979",16,41,1,1,"All other causes","Black","Female","Kansas",2009,"West North Central","Midwest","KS",161.929693080433,175.006856782952,188.083799880043,175.096979843541
+"980",16,41,1,1,"Cancers","Black","Female","Kansas",2009,"West North Central","Midwest","KS",186.186421392864,197.668360210018,209.492603969015,197.663785696066
+"981",16,41,1,1,"Cardiovascular","Black","Female","Kansas",2009,"West North Central","Midwest","KS",246.664078725423,265.621335487953,285.001111605001,265.583416702574
+"982",16,41,1,1,"Communicable","Black","Female","Kansas",2009,"West North Central","Midwest","KS",36.0076024632815,43.5651565342615,52.9293834174521,43.8022608387996
+"983",16,41,1,1,"Injuries","Black","Female","Kansas",2009,"West North Central","Midwest","KS",33.9793165366238,39.2352484350334,47.4838697608446,39.69865605735
+"984",16,41,1,1,"Non-communicable","Black","Female","Kansas",2009,"West North Central","Midwest","KS",116.439554077933,131.094844738127,146.457589438703,131.063842766808
+"985",16,42,0,0,"All other causes","White","Male","Kansas",2010,"West North Central","Midwest","KS",151.435108166017,155.872816337977,160.497227938363,155.850863428688
+"986",16,42,0,0,"Cancers","White","Male","Kansas",2010,"West North Central","Midwest","KS",200.825709909523,205.317263846258,210.059420728954,205.294976631465
+"987",16,42,0,0,"Cardiovascular","White","Male","Kansas",2010,"West North Central","Midwest","KS",262.269011024867,269.036444681219,275.489995176995,268.958677446948
+"988",16,42,0,0,"Communicable","White","Male","Kansas",2010,"West North Central","Midwest","KS",37.7469198628722,40.1780354167164,42.748013459863,40.174162292426
+"989",16,42,0,0,"Injuries","White","Male","Kansas",2010,"West North Central","Midwest","KS",84.4958044767649,87.1786788202072,89.7581167277667,87.1703208510806
+"990",16,42,0,0,"Non-communicable","White","Male","Kansas",2010,"West North Central","Midwest","KS",133.210754435557,137.156005125666,141.780436768965,137.278921901686
+"991",16,42,0,1,"All other causes","White","Female","Kansas",2010,"West North Central","Midwest","KS",129.821422305774,133.509212268694,137.394348978481,133.487760542327
+"992",16,42,0,1,"Cancers","White","Female","Kansas",2010,"West North Central","Midwest","KS",140.455845535212,143.833585159564,147.150245620999,143.873593521286
+"993",16,42,0,1,"Cardiovascular","White","Female","Kansas",2010,"West North Central","Midwest","KS",181.943794830833,186.918233634031,191.47907474653,186.826129744805
+"994",16,42,0,1,"Communicable","White","Female","Kansas",2010,"West North Central","Midwest","KS",28.2510299514619,29.8581579941367,31.4689910137731,29.8686101924687
+"995",16,42,0,1,"Injuries","White","Female","Kansas",2010,"West North Central","Midwest","KS",35.6255862911839,37.0918610004081,38.6462093066272,37.0768289419232
+"996",16,42,0,1,"Non-communicable","White","Female","Kansas",2010,"West North Central","Midwest","KS",104.53454283585,107.843013360153,111.279787476494,107.927386340537
+"997",16,42,1,0,"All other causes","Black","Male","Kansas",2010,"West North Central","Midwest","KS",192.318790680322,206.67221308115,226.193333556031,207.302998915717
+"998",16,42,1,0,"Cancers","Black","Male","Kansas",2010,"West North Central","Midwest","KS",263.507465400684,284.628803553262,306.580185284234,284.683010696947
+"999",16,42,1,0,"Cardiovascular","Black","Male","Kansas",2010,"West North Central","Midwest","KS",339.602340238717,365.317536365389,389.715411144329,365.662321834212
+"1000",16,42,1,0,"Communicable","Black","Male","Kansas",2010,"West North Central","Midwest","KS",46.8486084432231,60.5360476997304,73.8153711359851,60.4116153976174
+"1001",16,42,1,0,"Injuries","Black","Male","Kansas",2010,"West North Central","Midwest","KS",91.4787380041923,104.380382504351,116.664289279993,104.24613898108
+"1002",16,42,1,0,"Non-communicable","Black","Male","Kansas",2010,"West North Central","Midwest","KS",155.590057864694,171.239401698091,190.951656417341,171.749126700829
+"1003",16,42,1,1,"All other causes","Black","Female","Kansas",2010,"West North Central","Midwest","KS",163.809157058816,176.528141766614,189.087672394005,176.632693780665
+"1004",16,42,1,1,"Cancers","Black","Female","Kansas",2010,"West North Central","Midwest","KS",185.121841273886,197.161751016116,209.404902359317,197.179148646086
+"1005",16,42,1,1,"Cardiovascular","Black","Female","Kansas",2010,"West North Central","Midwest","KS",235.531647692577,255.062553793452,273.479074323571,254.894072380432
+"1006",16,42,1,1,"Communicable","Black","Female","Kansas",2010,"West North Central","Midwest","KS",35.1383921477034,42.951259684505,52.7279653095327,43.2454367791594
+"1007",16,42,1,1,"Injuries","Black","Female","Kansas",2010,"West North Central","Midwest","KS",33.626108613722,39.2413993327717,47.2877536919385,39.7726952841331
+"1008",16,42,1,1,"Non-communicable","Black","Female","Kansas",2010,"West North Central","Midwest","KS",112.754651852325,126.725141621909,140.885470234719,126.772650392183
+"1009",16,43,0,0,"All other causes","White","Male","Kansas",2011,"West North Central","Midwest","KS",156.395413029425,161.263652880562,166.006001751613,161.279042875783
+"1010",16,43,0,0,"Cancers","White","Male","Kansas",2011,"West North Central","Midwest","KS",197.56610086243,202.097727526511,206.50380680457,202.055302732147
+"1011",16,43,0,0,"Cardiovascular","White","Male","Kansas",2011,"West North Central","Midwest","KS",254.362183954718,260.770535173098,267.525844655469,260.802615602127
+"1012",16,43,0,0,"Communicable","White","Male","Kansas",2011,"West North Central","Midwest","KS",38.2762777153989,40.8858383683454,43.3243059010152,40.882784009054
+"1013",16,43,0,0,"Injuries","White","Male","Kansas",2011,"West North Central","Midwest","KS",85.6363644297292,88.2125736695924,91.1134763464198,88.1980295817872
+"1014",16,43,0,0,"Non-communicable","White","Male","Kansas",2011,"West North Central","Midwest","KS",132.324891127198,136.489164929071,140.568850334277,136.48585098357
+"1015",16,43,0,1,"All other causes","White","Female","Kansas",2011,"West North Central","Midwest","KS",139.472673214703,143.111990032495,147.183904218742,143.207105976082
+"1016",16,43,0,1,"Cancers","White","Female","Kansas",2011,"West North Central","Midwest","KS",140.471086637221,143.953252985836,147.3037243007,143.968312176353
+"1017",16,43,0,1,"Cardiovascular","White","Female","Kansas",2011,"West North Central","Midwest","KS",178.57425116726,183.201115067992,187.834632329978,183.250780162482
+"1018",16,43,0,1,"Communicable","White","Female","Kansas",2011,"West North Central","Midwest","KS",30.0253314699551,31.7134300882555,33.6220264184882,31.7359409057052
+"1019",16,43,0,1,"Injuries","White","Female","Kansas",2011,"West North Central","Midwest","KS",36.5316018612839,38.051300956689,39.7693046668619,38.0596484113863
+"1020",16,43,0,1,"Non-communicable","White","Female","Kansas",2011,"West North Central","Midwest","KS",103.578391501125,106.949817436842,110.496114083988,106.972052991583
+"1021",16,43,1,0,"All other causes","Black","Male","Kansas",2011,"West North Central","Midwest","KS",192.920374059837,207.486094369164,226.094468650957,208.301184045574
+"1022",16,43,1,0,"Cancers","Black","Male","Kansas",2011,"West North Central","Midwest","KS",254.268370174931,277.014252491538,299.623143578824,277.178937659497
+"1023",16,43,1,0,"Cardiovascular","Black","Male","Kansas",2011,"West North Central","Midwest","KS",330.930641516939,354.581765236168,380.505871030665,355.059555044986
+"1024",16,43,1,0,"Communicable","Black","Male","Kansas",2011,"West North Central","Midwest","KS",46.4149415258026,60.1565750157739,74.5847837490648,59.9692192009332
+"1025",16,43,1,0,"Injuries","Black","Male","Kansas",2011,"West North Central","Midwest","KS",89.4301560926617,102.236400481817,115.583965581817,102.238555079292
+"1026",16,43,1,0,"Non-communicable","Black","Male","Kansas",2011,"West North Central","Midwest","KS",153.824720561058,170.575134713286,190.900798386569,171.12505255241
+"1027",16,43,1,1,"All other causes","Black","Female","Kansas",2011,"West North Central","Midwest","KS",165.254801465586,178.58315198406,192.900406041262,178.736729592908
+"1028",16,43,1,1,"Cancers","Black","Female","Kansas",2011,"West North Central","Midwest","KS",183.799994884339,196.028768717286,209.605463562707,196.333604500649
+"1029",16,43,1,1,"Cardiovascular","Black","Female","Kansas",2011,"West North Central","Midwest","KS",227.141044494256,245.843933976937,264.652968960388,246.008865024515
+"1030",16,43,1,1,"Communicable","Black","Female","Kansas",2011,"West North Central","Midwest","KS",34.1574303984737,42.3539347193655,53.0892957709461,42.6827883798214
+"1031",16,43,1,1,"Injuries","Black","Female","Kansas",2011,"West North Central","Midwest","KS",33.8028491865261,39.4187513357892,47.7511176619821,39.9669198736466
+"1032",16,43,1,1,"Non-communicable","Black","Female","Kansas",2011,"West North Central","Midwest","KS",112.733761722155,126.573556854556,141.642850247707,127.019261279756
+"1033",16,44,0,0,"All other causes","White","Male","Kansas",2012,"West North Central","Midwest","KS",155.766689593615,160.200739858912,165.277133492867,160.247566467487
+"1034",16,44,0,0,"Cancers","White","Male","Kansas",2012,"West North Central","Midwest","KS",194.497887432617,198.713324043395,203.438808062151,198.770194269473
+"1035",16,44,0,0,"Cardiovascular","White","Male","Kansas",2012,"West North Central","Midwest","KS",255.879357459884,262.31410012232,268.622752269788,262.274571269463
+"1036",16,44,0,0,"Communicable","White","Male","Kansas",2012,"West North Central","Midwest","KS",38.3829406368781,40.8264560889388,43.6260999158728,40.850090177609
+"1037",16,44,0,0,"Injuries","White","Male","Kansas",2012,"West North Central","Midwest","KS",86.4678847300019,89.4019012742247,92.5534241246143,89.4118033308469
+"1038",16,44,0,0,"Non-communicable","White","Male","Kansas",2012,"West North Central","Midwest","KS",130.62165422013,134.952434897424,139.329190400818,134.963634593195
+"1039",16,44,0,1,"All other causes","White","Female","Kansas",2012,"West North Central","Midwest","KS",136.393742067357,140.352638695948,144.15283329282,140.373188923728
+"1040",16,44,0,1,"Cancers","White","Female","Kansas",2012,"West North Central","Midwest","KS",140.291642764363,143.85693735075,147.428266875545,143.819496145422
+"1041",16,44,0,1,"Cardiovascular","White","Female","Kansas",2012,"West North Central","Midwest","KS",175.167548669981,179.77960777431,184.265610607595,179.811173291016
+"1042",16,44,0,1,"Communicable","White","Female","Kansas",2012,"West North Central","Midwest","KS",29.9913037368185,31.840082296892,33.7221808445263,31.8451023954086
+"1043",16,44,0,1,"Injuries","White","Female","Kansas",2012,"West North Central","Midwest","KS",36.9159247668118,38.6392165738415,40.4069619419939,38.6542514128195
+"1044",16,44,0,1,"Non-communicable","White","Female","Kansas",2012,"West North Central","Midwest","KS",101.423488682731,104.843707907488,108.214634041166,104.921860788289
+"1045",16,44,1,0,"All other causes","Black","Male","Kansas",2012,"West North Central","Midwest","KS",190.926507993002,208.316203737136,227.039497738846,208.460755963787
+"1046",16,44,1,0,"Cancers","Black","Male","Kansas",2012,"West North Central","Midwest","KS",247.956065328613,271.75104610823,294.849693190534,271.855273084391
+"1047",16,44,1,0,"Cardiovascular","Black","Male","Kansas",2012,"West North Central","Midwest","KS",324.693058486376,348.935966814697,378.914711374605,349.318202741224
+"1048",16,44,1,0,"Communicable","Black","Male","Kansas",2012,"West North Central","Midwest","KS",45.778642504748,59.6368302277865,74.4274219053644,59.6920705176756
+"1049",16,44,1,0,"Injuries","Black","Male","Kansas",2012,"West North Central","Midwest","KS",89.0609770305851,101.897290725608,115.336669645711,102.022845321017
+"1050",16,44,1,0,"Non-communicable","Black","Male","Kansas",2012,"West North Central","Midwest","KS",152.487941932413,170.962996638806,190.628345137376,170.92912641058
+"1051",16,44,1,1,"All other causes","Black","Female","Kansas",2012,"West North Central","Midwest","KS",167.398130864477,182.50062021441,196.750622578656,182.630975359448
+"1052",16,44,1,1,"Cancers","Black","Female","Kansas",2012,"West North Central","Midwest","KS",181.568392278197,195.192028581914,209.691779244783,195.188752362193
+"1053",16,44,1,1,"Cardiovascular","Black","Female","Kansas",2012,"West North Central","Midwest","KS",222.784358968641,242.132658800552,262.122689951404,242.39542920249
+"1054",16,44,1,1,"Communicable","Black","Female","Kansas",2012,"West North Central","Midwest","KS",33.2729968403656,42.2120698467093,52.9255367798073,42.3101089971141
+"1055",16,44,1,1,"Injuries","Black","Female","Kansas",2012,"West North Central","Midwest","KS",33.8539121050398,39.582881713584,47.5571680836191,40.0533109234283
+"1056",16,44,1,1,"Non-communicable","Black","Female","Kansas",2012,"West North Central","Midwest","KS",111.329582231158,125.88338860033,142.154842122662,126.249366758136
+"1057",16,45,0,0,"All other causes","White","Male","Kansas",2013,"West North Central","Midwest","KS",156.905479864375,162.291125053483,167.778240399886,162.18233278444
+"1058",16,45,0,0,"Cancers","White","Male","Kansas",2013,"West North Central","Midwest","KS",192.301466743185,197.795484381726,202.507545759962,197.724329449957
+"1059",16,45,0,0,"Cardiovascular","White","Male","Kansas",2013,"West North Central","Midwest","KS",253.195841623038,260.402631687709,268.477183966642,260.360880024218
+"1060",16,45,0,0,"Communicable","White","Male","Kansas",2013,"West North Central","Midwest","KS",38.7635182550707,41.3602260782214,44.3228066818253,41.3655324348936
+"1061",16,45,0,0,"Injuries","White","Male","Kansas",2013,"West North Central","Midwest","KS",85.9135663363864,89.0772821580661,92.3483352585549,89.0925926704654
+"1062",16,45,0,0,"Non-communicable","White","Male","Kansas",2013,"West North Central","Midwest","KS",125.440965433237,130.197860866133,134.817691660945,130.155823552703
+"1063",16,45,0,1,"All other causes","White","Female","Kansas",2013,"West North Central","Midwest","KS",139.021491618935,143.19906630008,147.828741060499,143.233111474609
+"1064",16,45,0,1,"Cancers","White","Female","Kansas",2013,"West North Central","Midwest","KS",138.493150511949,142.515818411474,146.434598618035,142.492243516207
+"1065",16,45,0,1,"Cardiovascular","White","Female","Kansas",2013,"West North Central","Midwest","KS",173.832944667601,179.091913867393,183.922594110266,179.045139774204
+"1066",16,45,0,1,"Communicable","White","Female","Kansas",2013,"West North Central","Midwest","KS",31.1756499196043,33.244725257913,35.3887978414718,33.2750429184301
+"1067",16,45,0,1,"Injuries","White","Female","Kansas",2013,"West North Central","Midwest","KS",37.0555076947708,38.9795355226098,40.985174813422,39.0091064381623
+"1068",16,45,0,1,"Non-communicable","White","Female","Kansas",2013,"West North Central","Midwest","KS",101.564894929986,105.211536512563,108.780091212617,105.194048440702
+"1069",16,45,1,0,"All other causes","Black","Male","Kansas",2013,"West North Central","Midwest","KS",190.050934264199,208.364491600597,229.272850571844,208.347800985196
+"1070",16,45,1,0,"Cancers","Black","Male","Kansas",2013,"West North Central","Midwest","KS",244.635439718156,269.690463626653,295.67170896136,269.827359705044
+"1071",16,45,1,0,"Cardiovascular","Black","Male","Kansas",2013,"West North Central","Midwest","KS",315.603627744968,345.732807263625,375.926449639786,345.835316716775
+"1072",16,45,1,0,"Communicable","Black","Male","Kansas",2013,"West North Central","Midwest","KS",45.65025420149,59.654845172018,75.499844112942,59.5118744213733
+"1073",16,45,1,0,"Injuries","Black","Male","Kansas",2013,"West North Central","Midwest","KS",88.45287272087,102.278231182523,117.957699325621,102.459759348234
+"1074",16,45,1,0,"Non-communicable","Black","Male","Kansas",2013,"West North Central","Midwest","KS",149.925985240509,170.549872104358,193.185577737582,171.056661050068
+"1075",16,45,1,1,"All other causes","Black","Female","Kansas",2013,"West North Central","Midwest","KS",169.238114712812,186.297233350769,203.355439520803,186.349169920294
+"1076",16,45,1,1,"Cancers","Black","Female","Kansas",2013,"West North Central","Midwest","KS",179.951640596413,194.54488256734,210.129068904858,194.59773457924
+"1077",16,45,1,1,"Cardiovascular","Black","Female","Kansas",2013,"West North Central","Midwest","KS",216.304181616381,236.331004451687,257.811511181955,236.4271038139
+"1078",16,45,1,1,"Communicable","Black","Female","Kansas",2013,"West North Central","Midwest","KS",31.9598640473017,42.061934499769,55.2842153172781,42.4289486468007
+"1079",16,45,1,1,"Injuries","Black","Female","Kansas",2013,"West North Central","Midwest","KS",33.7737541540617,39.7844666141882,47.9914787025975,40.1914335201184
+"1080",16,45,1,1,"Non-communicable","Black","Female","Kansas",2013,"West North Central","Midwest","KS",112.084180748929,127.94836490506,144.962320197439,127.880039521237
