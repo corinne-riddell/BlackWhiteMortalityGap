@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",8,1,0,0,"All other causes","White","Male","Washington DC",1969,"South Atlantic","South",NA,174.616310070612,194.293811248757,217.992504522049,194.845061906181
+"2",8,1,0,0,"Cancers","White","Male","Washington DC",1969,"South Atlantic","South",NA,227.422678436902,245.580409800508,264.857666207824,245.425482852962
+"3",8,1,0,0,"Cardiovascular","White","Male","Washington DC",1969,"South Atlantic","South",NA,805.244088641743,851.90846841719,904.070782828461,852.953618781778
+"4",8,1,0,0,"Communicable","White","Male","Washington DC",1969,"South Atlantic","South",NA,67.8518376405977,85.5880704895495,105.355698787447,86.1463687264153
+"5",8,1,0,0,"Injuries","White","Male","Washington DC",1969,"South Atlantic","South",NA,87.7453764871186,100.488743825708,115.400961340536,100.740882391463
+"6",8,1,0,0,"Non-communicable","White","Male","Washington DC",1969,"South Atlantic","South",NA,116.796099436267,131.726815970845,147.411271642591,131.677654126031
+"7",8,1,0,1,"All other causes","White","Female","Washington DC",1969,"South Atlantic","South",NA,101.579726723253,112.322575390418,125.577912492447,112.493715040104
+"8",8,1,0,1,"Cancers","White","Female","Washington DC",1969,"South Atlantic","South",NA,157.165444334347,168.872517102941,180.901545739319,168.868440317873
+"9",8,1,0,1,"Cardiovascular","White","Female","Washington DC",1969,"South Atlantic","South",NA,508.984294014854,537.524489209292,570.325853067281,538.357097996863
+"10",8,1,0,1,"Communicable","White","Female","Washington DC",1969,"South Atlantic","South",NA,41.7971525052092,49.7732545074497,60.6574814205388,50.1217076848894
+"11",8,1,0,1,"Injuries","White","Female","Washington DC",1969,"South Atlantic","South",NA,40.7887413574777,50.9119217413217,62.2200052004893,51.015884264033
+"12",8,1,0,1,"Non-communicable","White","Female","Washington DC",1969,"South Atlantic","South",NA,47.7883167782808,56.214085691941,67.8148741586049,56.6575885027276
+"13",8,1,1,0,"All other causes","Black","Male","Washington DC",1969,"South Atlantic","South",NA,295.299075730562,316.248569445665,342.539616840688,316.884877210829
+"14",8,1,1,0,"Cancers","Black","Male","Washington DC",1969,"South Atlantic","South",NA,386.290384092509,408.460570972281,433.726017195772,408.902227435164
+"15",8,1,1,0,"Cardiovascular","Black","Male","Washington DC",1969,"South Atlantic","South",NA,833.806263529102,873.833482571512,917.337861482409,875.083253248711
+"16",8,1,1,0,"Communicable","Black","Male","Washington DC",1969,"South Atlantic","South",NA,122.797286950433,139.159843512413,160.711615603599,139.89951761591
+"17",8,1,1,0,"Injuries","Black","Male","Washington DC",1969,"South Atlantic","South",NA,184.625320887915,200.380391565802,217.24870817305,200.554833787894
+"18",8,1,1,0,"Non-communicable","Black","Male","Washington DC",1969,"South Atlantic","South",NA,191.7783795306,207.329997757493,224.149347556199,207.568975893968
+"19",8,1,1,1,"All other causes","Black","Female","Washington DC",1969,"South Atlantic","South",NA,180.173779281207,191.825959427313,204.603619912192,192.053315596616
+"20",8,1,1,1,"Cancers","Black","Female","Washington DC",1969,"South Atlantic","South",NA,194.542561407844,206.371907596274,217.441904970328,206.376810109429
+"21",8,1,1,1,"Cardiovascular","Black","Female","Washington DC",1969,"South Atlantic","South",NA,661.600676745621,697.342569863391,737.260966403266,697.75968898969
+"22",8,1,1,1,"Communicable","Black","Female","Washington DC",1969,"South Atlantic","South",NA,62.6322189815979,72.6430490502899,83.9336976241446,72.7919714067774
+"23",8,1,1,1,"Injuries","Black","Female","Washington DC",1969,"South Atlantic","South",NA,44.8442762124928,50.3481909255376,57.1791721242443,50.5528392414251
+"24",8,1,1,1,"Non-communicable","Black","Female","Washington DC",1969,"South Atlantic","South",NA,115.491459777418,125.039433216849,136.897002914523,125.359497042186
+"25",8,2,0,0,"All other causes","White","Male","Washington DC",1970,"South Atlantic","South",NA,166.751906766602,182.937958462393,201.259279050366,183.103944062064
+"26",8,2,0,0,"Cancers","White","Male","Washington DC",1970,"South Atlantic","South",NA,228.936164944536,245.256774312936,263.574280995535,245.638524347525
+"27",8,2,0,0,"Cardiovascular","White","Male","Washington DC",1970,"South Atlantic","South",NA,806.419493636143,850.120679297185,891.889854267414,849.587875124426
+"28",8,2,0,0,"Communicable","White","Male","Washington DC",1970,"South Atlantic","South",NA,73.1621073233799,86.9357367067524,105.560459110461,87.3973498314242
+"29",8,2,0,0,"Injuries","White","Male","Washington DC",1970,"South Atlantic","South",NA,86.642149623902,98.2093855984156,111.388577231059,98.2457296741226
+"30",8,2,0,0,"Non-communicable","White","Male","Washington DC",1970,"South Atlantic","South",NA,119.854566568861,133.061721566377,147.24335970892,133.183268253499
+"31",8,2,0,1,"All other causes","White","Female","Washington DC",1970,"South Atlantic","South",NA,102.335136579189,111.779455931394,122.568340448089,112.070418695455
+"32",8,2,0,1,"Cancers","White","Female","Washington DC",1970,"South Atlantic","South",NA,160.702694196279,170.743093694745,181.472787237263,170.84959178828
+"33",8,2,0,1,"Cardiovascular","White","Female","Washington DC",1970,"South Atlantic","South",NA,498.330665505378,524.98890363088,552.380056812654,524.78798818277
+"34",8,2,0,1,"Communicable","White","Female","Washington DC",1970,"South Atlantic","South",NA,39.3738904780519,46.3968965737045,54.8896429899949,46.5401476650541
+"35",8,2,0,1,"Injuries","White","Female","Washington DC",1970,"South Atlantic","South",NA,40.1666437402615,50.0543064885036,60.2584471360851,50.1454878088892
+"36",8,2,0,1,"Non-communicable","White","Female","Washington DC",1970,"South Atlantic","South",NA,49.4059081559771,57.8532105492925,67.8043206238041,58.1266108521783
+"37",8,2,1,0,"All other causes","Black","Male","Washington DC",1970,"South Atlantic","South",NA,285.870994112829,303.786946085059,323.647997468564,303.931802462354
+"38",8,2,1,0,"Cancers","Black","Male","Washington DC",1970,"South Atlantic","South",NA,389.316377668743,410.458412695583,431.154811168432,410.527938720953
+"39",8,2,1,0,"Cardiovascular","Black","Male","Washington DC",1970,"South Atlantic","South",NA,823.287040929132,855.356746514524,893.937225418703,856.331108048908
+"40",8,2,1,0,"Communicable","Black","Male","Washington DC",1970,"South Atlantic","South",NA,122.225051301481,138.024231102282,156.547016749387,138.317059701608
+"41",8,2,1,0,"Injuries","Black","Male","Washington DC",1970,"South Atlantic","South",NA,185.862527856698,199.240168757405,213.742216484695,199.232929137953
+"42",8,2,1,0,"Non-communicable","Black","Male","Washington DC",1970,"South Atlantic","South",NA,192.341648857915,205.736902891187,220.99004012476,205.878876904471
+"43",8,2,1,1,"All other causes","Black","Female","Washington DC",1970,"South Atlantic","South",NA,180.400204779786,190.507368409373,201.713691531825,190.679753390507
+"44",8,2,1,1,"Cancers","Black","Female","Washington DC",1970,"South Atlantic","South",NA,196.4242828585,206.623162062116,217.258095162816,206.684617907134
+"45",8,2,1,1,"Cardiovascular","Black","Female","Washington DC",1970,"South Atlantic","South",NA,655.111500477086,685.181902041578,715.320405462356,685.684994404355
+"46",8,2,1,1,"Communicable","Black","Female","Washington DC",1970,"South Atlantic","South",NA,61.1550577633395,69.8136395357477,78.2499444182334,69.6960061487353
+"47",8,2,1,1,"Injuries","Black","Female","Washington DC",1970,"South Atlantic","South",NA,45.059373186973,50.5378857097955,57.2884262789007,50.718880895654
+"48",8,2,1,1,"Non-communicable","Black","Female","Washington DC",1970,"South Atlantic","South",NA,115.21965639872,124.390060030323,134.026696038458,124.402480583765
+"49",8,3,0,0,"All other causes","White","Male","Washington DC",1971,"South Atlantic","South",NA,157.654922277913,172.835714886485,188.927467383711,172.99010469294
+"50",8,3,0,0,"Cancers","White","Male","Washington DC",1971,"South Atlantic","South",NA,231.676512098813,246.469565532843,264.294158201215,246.95086080089
+"51",8,3,0,0,"Cardiovascular","White","Male","Washington DC",1971,"South Atlantic","South",NA,778.643744403734,820.879571833419,863.929220853665,821.28369139991
+"52",8,3,0,0,"Communicable","White","Male","Washington DC",1971,"South Atlantic","South",NA,60.6117873282488,74.6384720818088,90.1466706252999,75.0490147227284
+"53",8,3,0,0,"Injuries","White","Male","Washington DC",1971,"South Atlantic","South",NA,83.9491781853547,95.3988174114369,107.940653207124,95.3811983731532
+"54",8,3,0,0,"Non-communicable","White","Male","Washington DC",1971,"South Atlantic","South",NA,120.073615846449,133.521021922242,146.864484540734,133.510388954543
+"55",8,3,0,1,"All other causes","White","Female","Washington DC",1971,"South Atlantic","South",NA,100.126427281207,108.62645727361,118.697532168757,108.874467440758
+"56",8,3,0,1,"Cancers","White","Female","Washington DC",1971,"South Atlantic","South",NA,163.060263126494,172.388744420276,182.326014744385,172.395319503143
+"57",8,3,0,1,"Cardiovascular","White","Female","Washington DC",1971,"South Atlantic","South",NA,468.268777760779,492.552414157187,519.614349716311,492.637136227374
+"58",8,3,0,1,"Communicable","White","Female","Washington DC",1971,"South Atlantic","South",NA,36.7672527235282,42.5212016245231,49.3195677643419,42.6248353364586
+"59",8,3,0,1,"Injuries","White","Female","Washington DC",1971,"South Atlantic","South",NA,39.7729679960687,49.118043763669,58.8038559766095,49.0556268252897
+"60",8,3,0,1,"Non-communicable","White","Female","Washington DC",1971,"South Atlantic","South",NA,48.7776013283371,56.1853090529916,66.0434219504431,56.5465894576243
+"61",8,3,1,0,"All other causes","Black","Male","Washington DC",1971,"South Atlantic","South",NA,274.245853247822,291.078809123688,309.754468946686,291.189114851267
+"62",8,3,1,0,"Cancers","Black","Male","Washington DC",1971,"South Atlantic","South",NA,395.269049819316,415.049988136782,434.04332645535,414.923433673058
+"63",8,3,1,0,"Cardiovascular","Black","Male","Washington DC",1971,"South Atlantic","South",NA,807.240248227343,838.294083755564,874.07503823667,838.848140331514
+"64",8,3,1,0,"Communicable","Black","Male","Washington DC",1971,"South Atlantic","South",NA,117.91650761659,132.454785417647,149.43568132787,132.750811530703
+"65",8,3,1,0,"Injuries","Black","Male","Washington DC",1971,"South Atlantic","South",NA,187.74800336271,201.126919686605,214.626525962187,201.003357538825
+"66",8,3,1,0,"Non-communicable","Black","Male","Washington DC",1971,"South Atlantic","South",NA,198.588190396276,211.676831820345,227.237971584242,212.028578186737
+"67",8,3,1,1,"All other causes","Black","Female","Washington DC",1971,"South Atlantic","South",NA,179.021580396122,188.723652352513,200.063195926838,189.045678703322
+"68",8,3,1,1,"Cancers","Black","Female","Washington DC",1971,"South Atlantic","South",NA,197.632632706372,206.888945377303,215.698651932309,206.893602326892
+"69",8,3,1,1,"Cardiovascular","Black","Female","Washington DC",1971,"South Atlantic","South",NA,638.512325541359,664.93309103605,696.316136702954,665.473062677862
+"70",8,3,1,1,"Communicable","Black","Female","Washington DC",1971,"South Atlantic","South",NA,57.7542068569085,65.4345867742476,73.2355781120763,65.4821353465472
+"71",8,3,1,1,"Injuries","Black","Female","Washington DC",1971,"South Atlantic","South",NA,44.8437130130777,49.8863028004223,56.4313541947372,50.0628319907897
+"72",8,3,1,1,"Non-communicable","Black","Female","Washington DC",1971,"South Atlantic","South",NA,115.517436030105,123.890372590876,132.492793617226,123.947261656415
+"73",8,4,0,0,"All other causes","White","Male","Washington DC",1972,"South Atlantic","South",NA,155.250435407931,169.811676669962,185.202087113101,169.842442650545
+"74",8,4,0,0,"Cancers","White","Male","Washington DC",1972,"South Atlantic","South",NA,227.739940177245,243.073398684559,258.593119868037,243.034323431901
+"75",8,4,0,0,"Cardiovascular","White","Male","Washington DC",1972,"South Atlantic","South",NA,741.389272128174,779.577444219446,823.994476975813,780.107957112207
+"76",8,4,0,0,"Communicable","White","Male","Washington DC",1972,"South Atlantic","South",NA,63.8118615896236,78.1386653874424,93.8769620314392,78.2625849584681
+"77",8,4,0,0,"Injuries","White","Male","Washington DC",1972,"South Atlantic","South",NA,81.1676511359428,91.9029553451796,103.932089688082,92.0050854394966
+"78",8,4,0,0,"Non-communicable","White","Male","Washington DC",1972,"South Atlantic","South",NA,118.637549534935,130.076422137263,143.065309717507,130.148558538946
+"79",8,4,0,1,"All other causes","White","Female","Washington DC",1972,"South Atlantic","South",NA,97.3302926131646,105.671588862624,115.221175742338,105.840236044793
+"80",8,4,0,1,"Cancers","White","Female","Washington DC",1972,"South Atlantic","South",NA,165.325536594641,174.876140510332,185.506556883462,175.010453449953
+"81",8,4,0,1,"Cardiovascular","White","Female","Washington DC",1972,"South Atlantic","South",NA,453.750226154342,477.775803458072,503.250652275011,478.423220730981
+"82",8,4,0,1,"Communicable","White","Female","Washington DC",1972,"South Atlantic","South",NA,35.3881295480216,40.9477905282526,47.4362000487327,41.0456010860239
+"83",8,4,0,1,"Injuries","White","Female","Washington DC",1972,"South Atlantic","South",NA,38.6881267875776,46.8675234218138,56.0212098138884,46.8402280088793
+"84",8,4,0,1,"Non-communicable","White","Female","Washington DC",1972,"South Atlantic","South",NA,47.3311007530788,54.9947644478958,64.0103340127281,55.0703126714693
+"85",8,4,1,0,"All other causes","Black","Male","Washington DC",1972,"South Atlantic","South",NA,270.779956723694,286.810002131718,305.707494482425,287.209565688186
+"86",8,4,1,0,"Cancers","Black","Male","Washington DC",1972,"South Atlantic","South",NA,397.252943783752,417.51455526948,437.158021763746,417.252364583947
+"87",8,4,1,0,"Cardiovascular","Black","Male","Washington DC",1972,"South Atlantic","South",NA,793.471842928533,824.102689217011,855.505593978799,824.229841113133
+"88",8,4,1,0,"Communicable","Black","Male","Washington DC",1972,"South Atlantic","South",NA,117.427311160192,131.480413711302,148.035335927936,132.068660738319
+"89",8,4,1,0,"Injuries","Black","Male","Washington DC",1972,"South Atlantic","South",NA,185.421727102102,197.784177583525,211.06382073427,197.884170623576
+"90",8,4,1,0,"Non-communicable","Black","Male","Washington DC",1972,"South Atlantic","South",NA,200.503568408707,213.506386870892,228.880207109899,213.923147022452
+"91",8,4,1,1,"All other causes","Black","Female","Washington DC",1972,"South Atlantic","South",NA,176.909946869727,185.919765521563,195.814884266671,186.097481170527
+"92",8,4,1,1,"Cancers","Black","Female","Washington DC",1972,"South Atlantic","South",NA,198.208253153071,206.95471516061,215.943299773944,206.958108320045
+"93",8,4,1,1,"Cardiovascular","Black","Female","Washington DC",1972,"South Atlantic","South",NA,610.633203530447,637.029842960797,663.207646370326,636.364978578242
+"94",8,4,1,1,"Communicable","Black","Female","Washington DC",1972,"South Atlantic","South",NA,54.9115184849784,62.2884975531327,70.4454698304272,62.3806670507053
+"95",8,4,1,1,"Injuries","Black","Female","Washington DC",1972,"South Atlantic","South",NA,44.2310976473941,48.7344133435901,54.8095046694929,48.9182817488587
+"96",8,4,1,1,"Non-communicable","Black","Female","Washington DC",1972,"South Atlantic","South",NA,115.616164405174,123.406761293558,131.533086597808,123.516266006957
+"97",8,5,0,0,"All other causes","White","Male","Washington DC",1973,"South Atlantic","South",NA,150.671108394568,165.433108904346,180.096928580617,165.64335848186
+"98",8,5,0,0,"Cancers","White","Male","Washington DC",1973,"South Atlantic","South",NA,229.411050128806,245.081842501353,260.622155839177,245.168882273121
+"99",8,5,0,0,"Cardiovascular","White","Male","Washington DC",1973,"South Atlantic","South",NA,701.651075731485,741.030734873237,786.653546317174,741.48237412792
+"100",8,5,0,0,"Communicable","White","Male","Washington DC",1973,"South Atlantic","South",NA,70.8717084394177,85.5272539319142,102.877657743405,85.9624095467614
+"101",8,5,0,0,"Injuries","White","Male","Washington DC",1973,"South Atlantic","South",NA,78.8672704082983,89.1406749885675,99.4050227698287,89.0601318804892
+"102",8,5,0,0,"Non-communicable","White","Male","Washington DC",1973,"South Atlantic","South",NA,114.188629422501,125.606214187959,138.507307851766,125.646932264155
+"103",8,5,0,1,"All other causes","White","Female","Washington DC",1973,"South Atlantic","South",NA,96.3096740320614,104.620973619907,113.006614440602,104.727271757128
+"104",8,5,0,1,"Cancers","White","Female","Washington DC",1973,"South Atlantic","South",NA,165.566021754675,175.16163214673,186.177799045368,175.37357898224
+"105",8,5,0,1,"Cardiovascular","White","Female","Washington DC",1973,"South Atlantic","South",NA,442.041909583999,468.265461216281,492.585929975657,467.758927015223
+"106",8,5,0,1,"Communicable","White","Female","Washington DC",1973,"South Atlantic","South",NA,34.0114083446367,39.0804932506085,45.155892828598,39.22051841728
+"107",8,5,0,1,"Injuries","White","Female","Washington DC",1973,"South Atlantic","South",NA,37.4987137574115,44.8573770858636,53.4287535625545,44.9459147651154
+"108",8,5,0,1,"Non-communicable","White","Female","Washington DC",1973,"South Atlantic","South",NA,48.273290105201,55.943093110474,64.2248685814165,55.8821880507283
+"109",8,5,1,0,"All other causes","Black","Male","Washington DC",1973,"South Atlantic","South",NA,259.667835109918,276.59914959543,293.015840667113,276.853449436782
+"110",8,5,1,0,"Cancers","Black","Male","Washington DC",1973,"South Atlantic","South",NA,400.758974855723,420.463326660282,439.084292004002,420.414923972546
+"111",8,5,1,0,"Cardiovascular","Black","Male","Washington DC",1973,"South Atlantic","South",NA,773.109087400453,803.017356240571,834.701735378154,803.492604991397
+"112",8,5,1,0,"Communicable","Black","Male","Washington DC",1973,"South Atlantic","South",NA,114.678468032376,128.055407794679,143.234361676036,128.309189519883
+"113",8,5,1,0,"Injuries","Black","Male","Washington DC",1973,"South Atlantic","South",NA,178.313618121862,189.940519129135,203.199993851612,190.224619008217
+"114",8,5,1,0,"Non-communicable","Black","Male","Washington DC",1973,"South Atlantic","South",NA,200.399917013903,212.703597288399,227.069690356596,213.041714227792
+"115",8,5,1,1,"All other causes","Black","Female","Washington DC",1973,"South Atlantic","South",NA,173.095109247836,181.552088137729,190.938782803214,181.618006890102
+"116",8,5,1,1,"Cancers","Black","Female","Washington DC",1973,"South Atlantic","South",NA,199.039056271761,207.42783901966,216.753494094573,207.556173028476
+"117",8,5,1,1,"Cardiovascular","Black","Female","Washington DC",1973,"South Atlantic","South",NA,580.247162970108,605.12067197864,627.2710731238,604.704871384106
+"118",8,5,1,1,"Communicable","Black","Female","Washington DC",1973,"South Atlantic","South",NA,53.7790937458788,61.4661387252656,69.1907801760906,61.5223532621485
+"119",8,5,1,1,"Injuries","Black","Female","Washington DC",1973,"South Atlantic","South",NA,43.3683191376373,47.6148847119289,53.8455091170166,47.7661950737695
+"120",8,5,1,1,"Non-communicable","Black","Female","Washington DC",1973,"South Atlantic","South",NA,114.887765102365,122.576267771898,130.85926516179,122.707763461649
+"121",8,6,0,0,"All other causes","White","Male","Washington DC",1974,"South Atlantic","South",NA,148.189860343821,162.15003335813,177.506868049505,162.38417057266
+"122",8,6,0,0,"Cancers","White","Male","Washington DC",1974,"South Atlantic","South",NA,232.089920890212,248.582902340774,265.040326783106,248.39970800796
+"123",8,6,0,0,"Cardiovascular","White","Male","Washington DC",1974,"South Atlantic","South",NA,655.003172290853,690.156682733048,729.683833976844,690.833479741055
+"124",8,6,0,0,"Communicable","White","Male","Washington DC",1974,"South Atlantic","South",NA,66.227763936331,79.8709915340647,97.5791860330736,80.4625634662747
+"125",8,6,0,0,"Injuries","White","Male","Washington DC",1974,"South Atlantic","South",NA,76.1883431072134,85.7156054476841,96.6471055816731,85.8905966919897
+"126",8,6,0,0,"Non-communicable","White","Male","Washington DC",1974,"South Atlantic","South",NA,111.94292340269,124.026573079834,137.374315903613,124.32749990163
+"127",8,6,0,1,"All other causes","White","Female","Washington DC",1974,"South Atlantic","South",NA,95.1201721296649,103.304406208244,111.780377624259,103.323896522164
+"128",8,6,0,1,"Cancers","White","Female","Washington DC",1974,"South Atlantic","South",NA,164.951658276785,174.720574573255,185.147473917957,174.733906391431
+"129",8,6,0,1,"Cardiovascular","White","Female","Washington DC",1974,"South Atlantic","South",NA,416.358552260358,438.677448781403,460.65753741884,438.556729309842
+"130",8,6,0,1,"Communicable","White","Female","Washington DC",1974,"South Atlantic","South",NA,34.1862461171473,39.3401491839059,45.3352956911972,39.3839122946055
+"131",8,6,0,1,"Injuries","White","Female","Washington DC",1974,"South Atlantic","South",NA,36.316791409897,42.9554401788457,50.495750421906,42.9953137536704
+"132",8,6,0,1,"Non-communicable","White","Female","Washington DC",1974,"South Atlantic","South",NA,44.6115711582798,51.8696194858103,59.2337049540338,51.9408697485572
+"133",8,6,1,0,"All other causes","Black","Male","Washington DC",1974,"South Atlantic","South",NA,253.690098612939,270.633315567158,288.153557276313,270.63121157142
+"134",8,6,1,0,"Cancers","Black","Male","Washington DC",1974,"South Atlantic","South",NA,407.750985603947,426.582407540669,445.559498993642,426.791793471912
+"135",8,6,1,0,"Cardiovascular","Black","Male","Washington DC",1974,"South Atlantic","South",NA,759.113586488008,787.61364687009,817.13459689971,787.796524962487
+"136",8,6,1,0,"Communicable","Black","Male","Washington DC",1974,"South Atlantic","South",NA,103.665828154395,117.120604542268,131.868702607795,117.319991912497
+"137",8,6,1,0,"Injuries","Black","Male","Washington DC",1974,"South Atlantic","South",NA,173.519262025664,184.897541087184,198.147407239793,185.101316033477
+"138",8,6,1,0,"Non-communicable","Black","Male","Washington DC",1974,"South Atlantic","South",NA,202.588317243846,215.677979590562,230.446756268382,215.855563257934
+"139",8,6,1,1,"All other causes","Black","Female","Washington DC",1974,"South Atlantic","South",NA,170.417010973945,179.093414281258,188.394166004595,179.026398529109
+"140",8,6,1,1,"Cancers","Black","Female","Washington DC",1974,"South Atlantic","South",NA,200.655185352053,208.822971133786,217.675007143762,208.843891043496
+"141",8,6,1,1,"Cardiovascular","Black","Female","Washington DC",1974,"South Atlantic","South",NA,554.508658708348,578.129003809679,602.13286541508,577.994639347224
+"142",8,6,1,1,"Communicable","Black","Female","Washington DC",1974,"South Atlantic","South",NA,53.7233980267548,61.3343728764665,68.083903256274,61.3190666426765
+"143",8,6,1,1,"Injuries","Black","Female","Washington DC",1974,"South Atlantic","South",NA,41.9173976126805,46.3812193954295,52.2886252281669,46.5413883459225
+"144",8,6,1,1,"Non-communicable","Black","Female","Washington DC",1974,"South Atlantic","South",NA,111.496574846498,118.622234198112,125.894261433902,118.636126349754
+"145",8,7,0,0,"All other causes","White","Male","Washington DC",1975,"South Atlantic","South",NA,140.47947717888,154.642536600404,169.978379689618,154.808056862128
+"146",8,7,0,0,"Cancers","White","Male","Washington DC",1975,"South Atlantic","South",NA,232.575866024516,248.40687538442,264.960564048973,248.626545413702
+"147",8,7,0,0,"Cardiovascular","White","Male","Washington DC",1975,"South Atlantic","South",NA,632.718535824718,669.582862208812,707.334858884754,670.004313106304
+"148",8,7,0,0,"Communicable","White","Male","Washington DC",1975,"South Atlantic","South",NA,55.8555937610717,68.9725113215454,85.5601808700673,69.5893596825023
+"149",8,7,0,0,"Injuries","White","Male","Washington DC",1975,"South Atlantic","South",NA,73.256280774252,82.7297506422884,92.871798711844,82.8897348362056
+"150",8,7,0,0,"Non-communicable","White","Male","Washington DC",1975,"South Atlantic","South",NA,110.546366126977,122.297600814828,135.310714351602,122.613187990209
+"151",8,7,0,1,"All other causes","White","Female","Washington DC",1975,"South Atlantic","South",NA,93.8252272082835,102.300312124425,111.094250442168,102.326014143787
+"152",8,7,0,1,"Cancers","White","Female","Washington DC",1975,"South Atlantic","South",NA,164.887975215345,174.759683501769,185.015492837048,174.914193335724
+"153",8,7,0,1,"Cardiovascular","White","Female","Washington DC",1975,"South Atlantic","South",NA,383.665131087413,405.867884409274,427.969119089685,405.600161081935
+"154",8,7,0,1,"Communicable","White","Female","Washington DC",1975,"South Atlantic","South",NA,33.2727441351473,38.0838414879332,43.8011839417695,38.1337769394645
+"155",8,7,0,1,"Injuries","White","Female","Washington DC",1975,"South Atlantic","South",NA,34.5045232107825,40.8655128599267,47.7419756004301,40.8202453796093
+"156",8,7,0,1,"Non-communicable","White","Female","Washington DC",1975,"South Atlantic","South",NA,42.9270818365818,49.29213831142,57.4226064946386,49.4995237053641
+"157",8,7,1,0,"All other causes","Black","Male","Washington DC",1975,"South Atlantic","South",NA,248.802161366447,264.878814757333,280.810743145732,265.077525891605
+"158",8,7,1,0,"Cancers","Black","Male","Washington DC",1975,"South Atlantic","South",NA,415.758415747412,433.895597670471,452.333449559581,433.858246693754
+"159",8,7,1,0,"Cardiovascular","Black","Male","Washington DC",1975,"South Atlantic","South",NA,738.470326774316,768.882962598725,800.304159083914,768.820063586821
+"160",8,7,1,0,"Communicable","Black","Male","Washington DC",1975,"South Atlantic","South",NA,96.9386135475809,108.971646755996,122.792357299006,109.443030459271
+"161",8,7,1,0,"Injuries","Black","Male","Washington DC",1975,"South Atlantic","South",NA,165.331312239053,177.339074382596,190.043063331623,177.461766285775
+"162",8,7,1,0,"Non-communicable","Black","Male","Washington DC",1975,"South Atlantic","South",NA,197.450370648151,209.957035900893,223.814576496479,210.173929275698
+"163",8,7,1,1,"All other causes","Black","Female","Washington DC",1975,"South Atlantic","South",NA,169.017672582997,177.627270126968,187.735655482428,177.884695515255
+"164",8,7,1,1,"Cancers","Black","Female","Washington DC",1975,"South Atlantic","South",NA,201.342292948211,209.532262099602,218.572585474652,209.648201017378
+"165",8,7,1,1,"Cardiovascular","Black","Female","Washington DC",1975,"South Atlantic","South",NA,527.112175984509,547.917481579845,570.946194887047,548.222685958345
+"166",8,7,1,1,"Communicable","Black","Female","Washington DC",1975,"South Atlantic","South",NA,55.6338924055508,62.6108315468103,69.8169558310419,62.6608421996264
+"167",8,7,1,1,"Injuries","Black","Female","Washington DC",1975,"South Atlantic","South",NA,40.9241582917605,45.2757482599075,50.4846474884266,45.3811639463518
+"168",8,7,1,1,"Non-communicable","Black","Female","Washington DC",1975,"South Atlantic","South",NA,108.96740373712,116.715643016042,124.798526190432,116.689239379507
+"169",8,8,0,0,"All other causes","White","Male","Washington DC",1976,"South Atlantic","South",NA,136.406120408898,150.633750005716,165.516976218295,150.677179775295
+"170",8,8,0,0,"Cancers","White","Male","Washington DC",1976,"South Atlantic","South",NA,236.814823965387,254.381038057108,270.689137605142,254.258096068479
+"171",8,8,0,0,"Cardiovascular","White","Male","Washington DC",1976,"South Atlantic","South",NA,622.147041061006,658.395889013995,696.302407547391,659.133228218448
+"172",8,8,0,0,"Communicable","White","Male","Washington DC",1976,"South Atlantic","South",NA,54.6623940525578,68.159154522697,83.8425038176879,68.378267348423
+"173",8,8,0,0,"Injuries","White","Male","Washington DC",1976,"South Atlantic","South",NA,70.49176502627,80.1085035917545,90.2828470256531,80.0742008160431
+"174",8,8,0,0,"Non-communicable","White","Male","Washington DC",1976,"South Atlantic","South",NA,108.84494089634,120.421017008608,133.999762216604,120.907954837378
+"175",8,8,0,1,"All other causes","White","Female","Washington DC",1976,"South Atlantic","South",NA,93.0470756663576,101.131447623368,111.053315930623,101.392106223981
+"176",8,8,0,1,"Cancers","White","Female","Washington DC",1976,"South Atlantic","South",NA,163.617906138431,172.63387865104,182.34085417927,172.883997108289
+"177",8,8,0,1,"Cardiovascular","White","Female","Washington DC",1976,"South Atlantic","South",NA,398.046059431093,420.231029597175,442.833099794637,420.542369876499
+"178",8,8,0,1,"Communicable","White","Female","Washington DC",1976,"South Atlantic","South",NA,33.0120062292612,37.5259154101385,43.2645558887647,37.708133288484
+"179",8,8,0,1,"Injuries","White","Female","Washington DC",1976,"South Atlantic","South",NA,33.2678068473952,38.8416617526031,45.7896390679361,38.9417212072151
+"180",8,8,0,1,"Non-communicable","White","Female","Washington DC",1976,"South Atlantic","South",NA,43.1259638520885,49.9424444606986,57.3802739252735,50.0011228883764
+"181",8,8,1,0,"All other causes","Black","Male","Washington DC",1976,"South Atlantic","South",NA,247.485896236616,263.9117324845,279.91646934695,263.636604588413
+"182",8,8,1,0,"Cancers","Black","Male","Washington DC",1976,"South Atlantic","South",NA,422.285230512463,440.767821278858,459.066958666866,440.969697317899
+"183",8,8,1,0,"Cardiovascular","Black","Male","Washington DC",1976,"South Atlantic","South",NA,723.487764130883,750.558991634166,780.13492625176,750.587922278395
+"184",8,8,1,0,"Communicable","Black","Male","Washington DC",1976,"South Atlantic","South",NA,94.4611050059862,106.570417519943,121.143051334971,106.862862207381
+"185",8,8,1,0,"Injuries","Black","Male","Washington DC",1976,"South Atlantic","South",NA,158.830334801444,170.21359758061,181.928700366027,170.291451241897
+"186",8,8,1,0,"Non-communicable","Black","Male","Washington DC",1976,"South Atlantic","South",NA,190.32173449911,202.32562737597,216.052946489694,202.432781587838
+"187",8,8,1,1,"All other causes","Black","Female","Washington DC",1976,"South Atlantic","South",NA,168.42847101601,176.828369464633,186.410337625541,176.962950831352
+"188",8,8,1,1,"Cancers","Black","Female","Washington DC",1976,"South Atlantic","South",NA,202.885195217271,210.928127778853,219.266276985086,210.921918080046
+"189",8,8,1,1,"Cardiovascular","Black","Female","Washington DC",1976,"South Atlantic","South",NA,515.401535358876,537.904291367392,558.696227098288,537.843926468199
+"190",8,8,1,1,"Communicable","Black","Female","Washington DC",1976,"South Atlantic","South",NA,54.7973324315378,62.1884957478695,69.4895647926862,62.1733976084121
+"191",8,8,1,1,"Injuries","Black","Female","Washington DC",1976,"South Atlantic","South",NA,39.6152851652348,43.9705770048482,49.2815920336895,44.1341632073644
+"192",8,8,1,1,"Non-communicable","Black","Female","Washington DC",1976,"South Atlantic","South",NA,104.287567008964,111.983772108718,119.937738267055,111.975552884751
+"193",8,9,0,0,"All other causes","White","Male","Washington DC",1977,"South Atlantic","South",NA,133.985610590539,149.325729476233,163.680111048112,149.258900791679
+"194",8,9,0,0,"Cancers","White","Male","Washington DC",1977,"South Atlantic","South",NA,245.178895026163,262.728175474773,280.151574005123,262.651099727724
+"195",8,9,0,0,"Cardiovascular","White","Male","Washington DC",1977,"South Atlantic","South",NA,622.878463539719,663.21772171516,706.02883793248,663.066940012186
+"196",8,9,0,0,"Communicable","White","Male","Washington DC",1977,"South Atlantic","South",NA,47.8357420428229,60.764523423446,76.0547547470267,61.1094404978223
+"197",8,9,0,0,"Injuries","White","Male","Washington DC",1977,"South Atlantic","South",NA,68.0052987707539,77.7638410245613,87.9585696057488,77.7559668073142
+"198",8,9,0,0,"Non-communicable","White","Male","Washington DC",1977,"South Atlantic","South",NA,102.611081459416,115.088494134389,127.227830297447,114.907929919033
+"199",8,9,0,1,"All other causes","White","Female","Washington DC",1977,"South Atlantic","South",NA,92.7896101342245,100.716747449556,110.310122903533,100.850089967804
+"200",8,9,0,1,"Cancers","White","Female","Washington DC",1977,"South Atlantic","South",NA,164.675604911565,174.032757291619,184.114164196957,174.053431780433
+"201",8,9,0,1,"Cardiovascular","White","Female","Washington DC",1977,"South Atlantic","South",NA,372.434282306119,393.063632395575,415.756511441143,393.41780192617
+"202",8,9,0,1,"Communicable","White","Female","Washington DC",1977,"South Atlantic","South",NA,32.8013186848458,37.5286050077312,43.3894622860899,37.6973404326891
+"203",8,9,0,1,"Injuries","White","Female","Washington DC",1977,"South Atlantic","South",NA,32.1870364395267,37.3482041877319,44.3478951002813,37.6822786693597
+"204",8,9,0,1,"Non-communicable","White","Female","Washington DC",1977,"South Atlantic","South",NA,42.5218716100414,49.1807485318583,57.2478243752248,49.3006075969056
+"205",8,9,1,0,"All other causes","Black","Male","Washington DC",1977,"South Atlantic","South",NA,243.141307732197,257.817445291985,272.991141783283,257.797239809752
+"206",8,9,1,0,"Cancers","Black","Male","Washington DC",1977,"South Atlantic","South",NA,421.433391660633,439.484708208433,459.024911574103,439.609814502646
+"207",8,9,1,0,"Cardiovascular","Black","Male","Washington DC",1977,"South Atlantic","South",NA,703.557998593095,731.042826445072,760.051713248835,731.206914983307
+"208",8,9,1,0,"Communicable","Black","Male","Washington DC",1977,"South Atlantic","South",NA,98.007396333781,110.68051432514,124.539527255508,110.584313194458
+"209",8,9,1,0,"Injuries","Black","Male","Washington DC",1977,"South Atlantic","South",NA,151.37387905112,162.80337106552,174.726996923712,162.752479850868
+"210",8,9,1,0,"Non-communicable","Black","Male","Washington DC",1977,"South Atlantic","South",NA,181.557861754414,192.949837043613,205.160424688844,193.050066338906
+"211",8,9,1,1,"All other causes","Black","Female","Washington DC",1977,"South Atlantic","South",NA,168.537921169386,177.255999208072,186.50078063505,177.195716062518
+"212",8,9,1,1,"Cancers","Black","Female","Washington DC",1977,"South Atlantic","South",NA,204.636758479557,212.553989160862,221.044533762668,212.649587236429
+"213",8,9,1,1,"Cardiovascular","Black","Female","Washington DC",1977,"South Atlantic","South",NA,507.672343564996,527.538431742419,550.007309784182,527.353928704984
+"214",8,9,1,1,"Communicable","Black","Female","Washington DC",1977,"South Atlantic","South",NA,52.5167871355485,59.3937973909214,66.4989021884275,59.4533951506579
+"215",8,9,1,1,"Injuries","Black","Female","Washington DC",1977,"South Atlantic","South",NA,38.8929679844099,43.1123552936007,48.1528202041062,43.2180704084415
+"216",8,9,1,1,"Non-communicable","Black","Female","Washington DC",1977,"South Atlantic","South",NA,100.339254239049,107.584688812634,114.975340088457,107.647434999841
+"217",8,10,0,0,"All other causes","White","Male","Washington DC",1978,"South Atlantic","South",NA,136.939120570347,151.728485399705,165.597115209495,151.486626482237
+"218",8,10,0,0,"Cancers","White","Male","Washington DC",1978,"South Atlantic","South",NA,245.26794270482,262.779971850432,281.207250771524,262.922693193485
+"219",8,10,0,0,"Cardiovascular","White","Male","Washington DC",1978,"South Atlantic","South",NA,628.674415931487,666.136023800332,706.692887617621,667.392216505997
+"220",8,10,0,0,"Communicable","White","Male","Washington DC",1978,"South Atlantic","South",NA,47.9316022895902,61.2181920852398,76.7626577615368,61.1363865742573
+"221",8,10,0,0,"Injuries","White","Male","Washington DC",1978,"South Atlantic","South",NA,66.831876186737,76.1209633840625,85.9043897429367,76.3620677086857
+"222",8,10,0,0,"Non-communicable","White","Male","Washington DC",1978,"South Atlantic","South",NA,98.5292143618658,111.031171023639,122.601860233502,111.104153804221
+"223",8,10,0,1,"All other causes","White","Female","Washington DC",1978,"South Atlantic","South",NA,91.9632651387967,99.8760297030551,108.754975488844,100.112459648162
+"224",8,10,0,1,"Cancers","White","Female","Washington DC",1978,"South Atlantic","South",NA,168.88351903909,178.595149494102,188.933611664415,178.500568561002
+"225",8,10,0,1,"Cardiovascular","White","Female","Washington DC",1978,"South Atlantic","South",NA,359.680392544332,380.392424229748,400.616776753847,380.324320706578
+"226",8,10,0,1,"Communicable","White","Female","Washington DC",1978,"South Atlantic","South",NA,31.4829533073143,35.9886867888072,41.344485605459,36.1435063123252
+"227",8,10,0,1,"Injuries","White","Female","Washington DC",1978,"South Atlantic","South",NA,31.0919860404912,35.9190821867348,42.4440703268119,36.1892144938718
+"228",8,10,0,1,"Non-communicable","White","Female","Washington DC",1978,"South Atlantic","South",NA,40.3483883868556,47.3879096537442,55.0394199547747,47.4678430478308
+"229",8,10,1,0,"All other causes","Black","Male","Washington DC",1978,"South Atlantic","South",NA,236.984381675199,252.445624184535,267.968584198402,252.263152759916
+"230",8,10,1,0,"Cancers","Black","Male","Washington DC",1978,"South Atlantic","South",NA,421.481601029611,439.135803729721,458.047884673616,439.186581988139
+"231",8,10,1,0,"Cardiovascular","Black","Male","Washington DC",1978,"South Atlantic","South",NA,692.419373130564,718.49593479934,746.511247651023,718.565192192143
+"232",8,10,1,0,"Communicable","Black","Male","Washington DC",1978,"South Atlantic","South",NA,103.864896260014,116.239526823836,129.73729320909,116.394815263837
+"233",8,10,1,0,"Injuries","Black","Male","Washington DC",1978,"South Atlantic","South",NA,149.695508761455,160.923112279392,172.766112262272,161.133580447103
+"234",8,10,1,0,"Non-communicable","Black","Male","Washington DC",1978,"South Atlantic","South",NA,174.362718720569,186.169470882089,197.641308114355,185.97282472064
+"235",8,10,1,1,"All other causes","Black","Female","Washington DC",1978,"South Atlantic","South",NA,168.679173785926,177.278592730111,186.89333852716,177.419478998321
+"236",8,10,1,1,"Cancers","Black","Female","Washington DC",1978,"South Atlantic","South",NA,205.673905051236,213.699407888386,222.377365044417,213.7246903725
+"237",8,10,1,1,"Cardiovascular","Black","Female","Washington DC",1978,"South Atlantic","South",NA,482.912591140537,503.726950306415,524.941902743961,503.922480135951
+"238",8,10,1,1,"Communicable","Black","Female","Washington DC",1978,"South Atlantic","South",NA,52.9459758607932,59.4387533721365,66.4081018062661,59.4752379415424
+"239",8,10,1,1,"Injuries","Black","Female","Washington DC",1978,"South Atlantic","South",NA,37.510826063198,41.9781670917165,47.0779806275057,41.9739495133412
+"240",8,10,1,1,"Non-communicable","Black","Female","Washington DC",1978,"South Atlantic","South",NA,97.5822664456593,104.633693801362,112.431086827537,104.656531391821
+"241",8,11,0,0,"All other causes","White","Male","Washington DC",1979,"South Atlantic","South",NA,136.55924725916,150.775577668078,165.434251124943,150.832458904654
+"242",8,11,0,0,"Cancers","White","Male","Washington DC",1979,"South Atlantic","South",NA,249.470922452566,267.957392664944,287.747866649499,268.120967370587
+"243",8,11,0,0,"Cardiovascular","White","Male","Washington DC",1979,"South Atlantic","South",NA,591.196722874781,628.327613153682,666.253054561796,628.16579080425
+"244",8,11,0,0,"Communicable","White","Male","Washington DC",1979,"South Atlantic","South",NA,52.8999016962672,65.9118531328324,82.3075547058196,66.4837933372846
+"245",8,11,0,0,"Injuries","White","Male","Washington DC",1979,"South Atlantic","South",NA,65.8971148282897,74.8485470161488,84.1705512031935,74.9882527202038
+"246",8,11,0,0,"Non-communicable","White","Male","Washington DC",1979,"South Atlantic","South",NA,97.4369637411586,109.951559744651,122.03929207501,109.907476310684
+"247",8,11,0,1,"All other causes","White","Female","Washington DC",1979,"South Atlantic","South",NA,89.9256180288512,98.22329147378,106.638483246738,98.3872089315481
+"248",8,11,0,1,"Cancers","White","Female","Washington DC",1979,"South Atlantic","South",NA,170.538410534134,180.636363396782,192.016598664167,180.712509519832
+"249",8,11,0,1,"Cardiovascular","White","Female","Washington DC",1979,"South Atlantic","South",NA,363.354718445928,383.923899871067,406.279500630163,383.926527541119
+"250",8,11,0,1,"Communicable","White","Female","Washington DC",1979,"South Atlantic","South",NA,30.2118593198166,34.4386805357107,39.6946342068459,34.6527811871193
+"251",8,11,0,1,"Injuries","White","Female","Washington DC",1979,"South Atlantic","South",NA,29.9788687842953,34.942126232386,40.8814508255121,35.0732637736483
+"252",8,11,0,1,"Non-communicable","White","Female","Washington DC",1979,"South Atlantic","South",NA,40.8456371629537,47.8307563343828,54.8179715815058,47.8593502750134
+"253",8,11,1,0,"All other causes","Black","Male","Washington DC",1979,"South Atlantic","South",NA,245.255453774435,259.328560908742,274.843802378924,259.691435513268
+"254",8,11,1,0,"Cancers","Black","Male","Washington DC",1979,"South Atlantic","South",NA,422.938299336409,441.736423078894,460.587731279239,441.91408707141
+"255",8,11,1,0,"Cardiovascular","Black","Male","Washington DC",1979,"South Atlantic","South",NA,685.061736913949,711.613753350271,738.896662646917,712.020954895723
+"256",8,11,1,0,"Communicable","Black","Male","Washington DC",1979,"South Atlantic","South",NA,99.3480843489856,112.078966661235,125.553498392782,112.136232659439
+"257",8,11,1,0,"Injuries","Black","Male","Washington DC",1979,"South Atlantic","South",NA,146.901670037725,157.496548622394,169.196761144932,157.806260470024
+"258",8,11,1,0,"Non-communicable","Black","Male","Washington DC",1979,"South Atlantic","South",NA,168.328396988136,180.089471370853,192.077346143652,180.113946683651
+"259",8,11,1,1,"All other causes","Black","Female","Washington DC",1979,"South Atlantic","South",NA,167.924469459892,176.287291028599,185.446488456176,176.357124538062
+"260",8,11,1,1,"Cancers","Black","Female","Washington DC",1979,"South Atlantic","South",NA,206.710759351946,214.753001410794,222.753950083308,214.779404019875
+"261",8,11,1,1,"Cardiovascular","Black","Female","Washington DC",1979,"South Atlantic","South",NA,471.333719842969,490.843859258018,511.172686310254,490.687731006783
+"262",8,11,1,1,"Communicable","Black","Female","Washington DC",1979,"South Atlantic","South",NA,52.0576256051403,58.7199115906179,65.9437652071641,58.9576907578013
+"263",8,11,1,1,"Injuries","Black","Female","Washington DC",1979,"South Atlantic","South",NA,36.0759145192996,40.8656206489412,45.8026636282042,40.9191506818204
+"264",8,11,1,1,"Non-communicable","Black","Female","Washington DC",1979,"South Atlantic","South",NA,94.2732489705369,101.386119680289,108.802434732823,101.493669856157
+"265",8,12,0,0,"All other causes","White","Male","Washington DC",1980,"South Atlantic","South",NA,135.607230878567,149.674049576029,164.843803375687,149.805309204957
+"266",8,12,0,0,"Cancers","White","Male","Washington DC",1980,"South Atlantic","South",NA,249.186776102722,265.306022416262,283.039607616877,265.666260749266
+"267",8,12,0,0,"Cardiovascular","White","Male","Washington DC",1980,"South Atlantic","South",NA,574.662777826762,611.425155198428,650.039220465827,611.601766466012
+"268",8,12,0,0,"Communicable","White","Male","Washington DC",1980,"South Atlantic","South",NA,63.5037430323498,79.2341471011115,97.8339120365262,79.6449785381915
+"269",8,12,0,0,"Injuries","White","Male","Washington DC",1980,"South Atlantic","South",NA,64.9867584870391,74.1034581079271,83.6461468977647,74.2117009882612
+"270",8,12,0,0,"Non-communicable","White","Male","Washington DC",1980,"South Atlantic","South",NA,98.7242895497477,111.765605374009,125.063248626897,111.886086611895
+"271",8,12,0,1,"All other causes","White","Female","Washington DC",1980,"South Atlantic","South",NA,91.2635981930549,99.2693747203153,108.755709299588,99.5090696894762
+"272",8,12,0,1,"Cancers","White","Female","Washington DC",1980,"South Atlantic","South",NA,170.179087428587,180.735107497232,192.489896371453,180.899861909197
+"273",8,12,0,1,"Cardiovascular","White","Female","Washington DC",1980,"South Atlantic","South",NA,368.3770906134,389.979467406176,413.397347353288,389.903342387218
+"274",8,12,0,1,"Communicable","White","Female","Washington DC",1980,"South Atlantic","South",NA,30.334492403587,34.6903308718741,39.8616653644546,34.7770150917321
+"275",8,12,0,1,"Injuries","White","Female","Washington DC",1980,"South Atlantic","South",NA,29.0604659126674,33.8459827418101,39.4389117020778,33.9396233091137
+"276",8,12,0,1,"Non-communicable","White","Female","Washington DC",1980,"South Atlantic","South",NA,42.8462959252966,49.5507257640569,57.6945826052991,49.7285569471896
+"277",8,12,1,0,"All other causes","Black","Male","Washington DC",1980,"South Atlantic","South",NA,257.411967536096,272.486083909968,288.240171717938,272.572914776684
+"278",8,12,1,0,"Cancers","Black","Male","Washington DC",1980,"South Atlantic","South",NA,426.212966692596,445.890244228534,463.650909313742,445.777974420085
+"279",8,12,1,0,"Cardiovascular","Black","Male","Washington DC",1980,"South Atlantic","South",NA,685.771803637673,711.726782916956,739.721110310635,711.699582526779
+"280",8,12,1,0,"Communicable","Black","Male","Washington DC",1980,"South Atlantic","South",NA,102.625280310061,114.985916372373,131.3929313578,115.616020259312
+"281",8,12,1,0,"Injuries","Black","Male","Washington DC",1980,"South Atlantic","South",NA,142.901263788384,153.552387564121,164.578257528068,153.532492674479
+"282",8,12,1,0,"Non-communicable","Black","Male","Washington DC",1980,"South Atlantic","South",NA,162.347709345772,173.580785682593,185.357696018803,173.500334172837
+"283",8,12,1,1,"All other causes","Black","Female","Washington DC",1980,"South Atlantic","South",NA,167.420106262265,175.652815088022,184.906370175568,175.837417466848
+"284",8,12,1,1,"Cancers","Black","Female","Washington DC",1980,"South Atlantic","South",NA,209.150469882731,216.988788716779,224.881518065728,216.962616259736
+"285",8,12,1,1,"Cardiovascular","Black","Female","Washington DC",1980,"South Atlantic","South",NA,469.741380465031,488.822053649161,509.795607891598,489.161589227255
+"286",8,12,1,1,"Communicable","Black","Female","Washington DC",1980,"South Atlantic","South",NA,53.4409295252949,60.2182742919365,67.3725175602968,60.2768384371533
+"287",8,12,1,1,"Injuries","Black","Female","Washington DC",1980,"South Atlantic","South",NA,35.3826501257251,39.9322171861606,44.8785947568843,40.0432933210306
+"288",8,12,1,1,"Non-communicable","Black","Female","Washington DC",1980,"South Atlantic","South",NA,94.7380945651922,101.227010049162,108.476225649146,101.273943274549
+"289",8,13,0,0,"All other causes","White","Male","Washington DC",1981,"South Atlantic","South",NA,135.679605412124,150.209647729717,166.442405937493,150.338694721456
+"290",8,13,0,0,"Cancers","White","Male","Washington DC",1981,"South Atlantic","South",NA,245.252517134615,262.881065551816,280.99157728595,262.739843740216
+"291",8,13,0,0,"Cardiovascular","White","Male","Washington DC",1981,"South Atlantic","South",NA,552.637610937495,590.409279919494,629.246649177241,590.540151213043
+"292",8,13,0,0,"Communicable","White","Male","Washington DC",1981,"South Atlantic","South",NA,62.3263373073432,77.9997128106816,96.9097493558465,78.4671590583979
+"293",8,13,0,0,"Injuries","White","Male","Washington DC",1981,"South Atlantic","South",NA,63.2131451099348,72.5462318409217,82.4571456038452,72.5494203885699
+"294",8,13,0,0,"Non-communicable","White","Male","Washington DC",1981,"South Atlantic","South",NA,100.813982777905,112.722668602302,125.297916391707,112.843352249248
+"295",8,13,0,1,"All other causes","White","Female","Washington DC",1981,"South Atlantic","South",NA,89.2824010193501,97.4380714166773,106.610623653397,97.487969432875
+"296",8,13,0,1,"Cancers","White","Female","Washington DC",1981,"South Atlantic","South",NA,167.862107949972,178.409756460251,190.31751078104,178.492285211931
+"297",8,13,0,1,"Cardiovascular","White","Female","Washington DC",1981,"South Atlantic","South",NA,335.496850612314,354.577359333887,374.709119655478,354.692043128072
+"298",8,13,0,1,"Communicable","White","Female","Washington DC",1981,"South Atlantic","South",NA,28.9960618432481,33.6556606868303,39.0683636042525,33.7895690177145
+"299",8,13,0,1,"Injuries","White","Female","Washington DC",1981,"South Atlantic","South",NA,28.2714410256608,32.8543503080962,38.0218360062469,32.9761457186221
+"300",8,13,0,1,"Non-communicable","White","Female","Washington DC",1981,"South Atlantic","South",NA,43.6150792771927,50.4305451986031,57.3402399882664,50.4087684492198
+"301",8,13,1,0,"All other causes","Black","Male","Washington DC",1981,"South Atlantic","South",NA,258.016551902715,273.676815979385,289.764481665413,273.691125478647
+"302",8,13,1,0,"Cancers","Black","Male","Washington DC",1981,"South Atlantic","South",NA,429.087825755923,447.805562966732,466.751987729117,447.575152942846
+"303",8,13,1,0,"Cardiovascular","Black","Male","Washington DC",1981,"South Atlantic","South",NA,682.106399385858,707.587193084315,736.389081107458,708.117907551307
+"304",8,13,1,0,"Communicable","Black","Male","Washington DC",1981,"South Atlantic","South",NA,95.7125839067072,107.872661596137,122.192897276568,108.135529556068
+"305",8,13,1,0,"Injuries","Black","Male","Washington DC",1981,"South Atlantic","South",NA,145.455488928029,155.51448089444,166.936286667063,155.684536118206
+"306",8,13,1,0,"Non-communicable","Black","Male","Washington DC",1981,"South Atlantic","South",NA,159.353193961566,170.815040170555,182.780094559332,170.994827368491
+"307",8,13,1,1,"All other causes","Black","Female","Washington DC",1981,"South Atlantic","South",NA,169.464203587091,177.956784154317,186.614763602691,178.065467136428
+"308",8,13,1,1,"Cancers","Black","Female","Washington DC",1981,"South Atlantic","South",NA,210.832358790158,218.467744894821,226.351401130562,218.54008312744
+"309",8,13,1,1,"Cardiovascular","Black","Female","Washington DC",1981,"South Atlantic","South",NA,460.855861815263,479.52306761271,499.89160857781,479.961298599813
+"310",8,13,1,1,"Communicable","Black","Female","Washington DC",1981,"South Atlantic","South",NA,50.678587933695,57.0762953157162,64.2447520844305,57.2302213799623
+"311",8,13,1,1,"Injuries","Black","Female","Washington DC",1981,"South Atlantic","South",NA,35.0574314422772,39.4735037479732,44.4797347784141,39.589958085007
+"312",8,13,1,1,"Non-communicable","Black","Female","Washington DC",1981,"South Atlantic","South",NA,93.0905306610863,99.3927836821485,106.191597364271,99.4505001482779
+"313",8,14,0,0,"All other causes","White","Male","Washington DC",1982,"South Atlantic","South",NA,136.620764629541,150.81208524692,166.254238891764,150.98175003351
+"314",8,14,0,0,"Cancers","White","Male","Washington DC",1982,"South Atlantic","South",NA,240.158990770281,257.217928183784,275.918407620458,257.576994481533
+"315",8,14,0,0,"Cardiovascular","White","Male","Washington DC",1982,"South Atlantic","South",NA,539.225291902504,574.221812464936,612.658989366508,574.498044554224
+"316",8,14,0,0,"Communicable","White","Male","Washington DC",1982,"South Atlantic","South",NA,54.4644701875149,69.2039006065405,84.8923408195048,69.2726740314545
+"317",8,14,0,0,"Injuries","White","Male","Washington DC",1982,"South Atlantic","South",NA,61.3251966133531,70.9753442525118,80.7907839879802,71.0879276403328
+"318",8,14,0,0,"Non-communicable","White","Male","Washington DC",1982,"South Atlantic","South",NA,99.7553192026089,111.708058578816,124.615131704806,111.921680929273
+"319",8,14,0,1,"All other causes","White","Female","Washington DC",1982,"South Atlantic","South",NA,88.1110746395317,95.8409065101947,104.654358101053,95.8976747789001
+"320",8,14,0,1,"Cancers","White","Female","Washington DC",1982,"South Atlantic","South",NA,164.63959049921,174.287804434518,185.764080339866,174.541370217106
+"321",8,14,0,1,"Cardiovascular","White","Female","Washington DC",1982,"South Atlantic","South",NA,328.613815456185,347.343434438138,368.667031896085,347.328970457092
+"322",8,14,0,1,"Communicable","White","Female","Washington DC",1982,"South Atlantic","South",NA,28.0910803281519,32.6301019934476,37.9266792823729,32.6403803964063
+"323",8,14,0,1,"Injuries","White","Female","Washington DC",1982,"South Atlantic","South",NA,27.180174329696,31.7261901089679,36.8676379598595,31.8486213434752
+"324",8,14,0,1,"Non-communicable","White","Female","Washington DC",1982,"South Atlantic","South",NA,43.3307247277373,50.1486560828734,57.9832440741133,50.1641791202794
+"325",8,14,1,0,"All other causes","Black","Male","Washington DC",1982,"South Atlantic","South",NA,260.055904746328,275.873410050488,292.131573770658,275.876822904761
+"326",8,14,1,0,"Cancers","Black","Male","Washington DC",1982,"South Atlantic","South",NA,429.102568047612,446.812075041394,463.289082218504,446.489485024064
+"327",8,14,1,0,"Cardiovascular","Black","Male","Washington DC",1982,"South Atlantic","South",NA,674.363531657563,699.544650978586,727.460362176013,699.875652628335
+"328",8,14,1,0,"Communicable","Black","Male","Washington DC",1982,"South Atlantic","South",NA,95.8327193419536,107.497343185195,121.301450643526,107.764946490073
+"329",8,14,1,0,"Injuries","Black","Male","Washington DC",1982,"South Atlantic","South",NA,143.98552393531,154.448139458491,164.947760328171,154.383859394209
+"330",8,14,1,0,"Non-communicable","Black","Male","Washington DC",1982,"South Atlantic","South",NA,156.417269292844,168.240037722445,179.854978743524,168.282026521239
+"331",8,14,1,1,"All other causes","Black","Female","Washington DC",1982,"South Atlantic","South",NA,168.098497931131,176.685170098688,186.18319600377,176.74449184074
+"332",8,14,1,1,"Cancers","Black","Female","Washington DC",1982,"South Atlantic","South",NA,213.760375424613,221.043330016652,228.688487884509,221.048553788224
+"333",8,14,1,1,"Cardiovascular","Black","Female","Washington DC",1982,"South Atlantic","South",NA,443.149504068359,462.043744918351,481.033903630742,461.787784361305
+"334",8,14,1,1,"Communicable","Black","Female","Washington DC",1982,"South Atlantic","South",NA,51.3368858440808,58.1377607511738,64.7267916580629,58.1004401879989
+"335",8,14,1,1,"Injuries","Black","Female","Washington DC",1982,"South Atlantic","South",NA,34.7244249945575,39.2142263457956,43.7652645323538,39.2655259534091
+"336",8,14,1,1,"Non-communicable","Black","Female","Washington DC",1982,"South Atlantic","South",NA,91.1204296919489,97.7279417625593,104.066547614059,97.6814178026013
+"337",8,15,0,0,"All other causes","White","Male","Washington DC",1983,"South Atlantic","South",NA,138.267458797722,152.035869774377,169.040622643154,152.473514222933
+"338",8,15,0,0,"Cancers","White","Male","Washington DC",1983,"South Atlantic","South",NA,231.937561597802,249.230434815075,266.826628213827,249.457632985029
+"339",8,15,0,0,"Cardiovascular","White","Male","Washington DC",1983,"South Atlantic","South",NA,517.120341779216,552.109589390026,591.169538015007,552.515090618792
+"340",8,15,0,0,"Communicable","White","Male","Washington DC",1983,"South Atlantic","South",NA,53.3525364335039,67.1653695894116,82.8096128552185,67.3890690562075
+"341",8,15,0,0,"Injuries","White","Male","Washington DC",1983,"South Atlantic","South",NA,60.5449761096445,69.2312064585167,79.5411019810005,69.4968804739373
+"342",8,15,0,0,"Non-communicable","White","Male","Washington DC",1983,"South Atlantic","South",NA,97.8572539452487,111.115514658072,123.560662122598,110.919328265456
+"343",8,15,0,1,"All other causes","White","Female","Washington DC",1983,"South Atlantic","South",NA,87.7652344970487,95.6200740448125,104.772727073141,95.7445690123151
+"344",8,15,0,1,"Cancers","White","Female","Washington DC",1983,"South Atlantic","South",NA,161.796330842707,172.020467334369,183.004810810117,172.060374954836
+"345",8,15,0,1,"Cardiovascular","White","Female","Washington DC",1983,"South Atlantic","South",NA,331.094783728505,350.502503285759,372.448887634439,350.753589748167
+"346",8,15,0,1,"Communicable","White","Female","Washington DC",1983,"South Atlantic","South",NA,29.3278276228991,33.9037930465142,39.1883792749674,34.0053650999653
+"347",8,15,0,1,"Injuries","White","Female","Washington DC",1983,"South Atlantic","South",NA,26.7516365048585,31.0649905325933,36.1645653007134,31.1930578119727
+"348",8,15,0,1,"Non-communicable","White","Female","Washington DC",1983,"South Atlantic","South",NA,44.351305383655,50.6984530471932,58.4168000101334,50.9191546011062
+"349",8,15,1,0,"All other causes","Black","Male","Washington DC",1983,"South Atlantic","South",NA,265.562857740511,281.935960201144,299.830541728715,281.996823946219
+"350",8,15,1,0,"Cancers","Black","Male","Washington DC",1983,"South Atlantic","South",NA,430.001889283417,447.072664037532,465.730818331393,447.145827159218
+"351",8,15,1,0,"Cardiovascular","Black","Male","Washington DC",1983,"South Atlantic","South",NA,663.480121495918,687.698283343344,714.859492476179,687.76102668163
+"352",8,15,1,0,"Communicable","Black","Male","Washington DC",1983,"South Atlantic","South",NA,101.901418534412,114.42548143752,127.712540766217,114.578527969136
+"353",8,15,1,0,"Injuries","Black","Male","Washington DC",1983,"South Atlantic","South",NA,141.395887647795,151.362753678166,162.945212171602,151.51780105671
+"354",8,15,1,0,"Non-communicable","Black","Male","Washington DC",1983,"South Atlantic","South",NA,157.459645912034,167.717829810408,178.67799621395,167.900858458357
+"355",8,15,1,1,"All other causes","Black","Female","Washington DC",1983,"South Atlantic","South",NA,169.508163891757,177.261755257296,185.995693631244,177.515763441414
+"356",8,15,1,1,"Cancers","Black","Female","Washington DC",1983,"South Atlantic","South",NA,214.772838939563,222.412348366707,230.551532783709,222.52481901856
+"357",8,15,1,1,"Cardiovascular","Black","Female","Washington DC",1983,"South Atlantic","South",NA,436.537952126113,453.805729689814,471.528978961261,453.736507959574
+"358",8,15,1,1,"Communicable","Black","Female","Washington DC",1983,"South Atlantic","South",NA,53.7324301877597,60.1081149988457,66.7212477660093,60.1384199869772
+"359",8,15,1,1,"Injuries","Black","Female","Washington DC",1983,"South Atlantic","South",NA,34.6802769987441,39.0604842445226,43.4775092704305,39.0552157750063
+"360",8,15,1,1,"Non-communicable","Black","Female","Washington DC",1983,"South Atlantic","South",NA,90.8318871790862,97.3058762556242,103.799488386687,97.3168279732883
+"361",8,16,0,0,"All other causes","White","Male","Washington DC",1984,"South Atlantic","South",NA,137.670207095046,151.233163495923,167.011816171982,151.474136114646
+"362",8,16,0,0,"Cancers","White","Male","Washington DC",1984,"South Atlantic","South",NA,232.083665970868,247.869341792568,265.135727918066,248.006256983142
+"363",8,16,0,0,"Cardiovascular","White","Male","Washington DC",1984,"South Atlantic","South",NA,490.501747608502,524.296669867534,557.486567388733,524.628435525134
+"364",8,16,0,0,"Communicable","White","Male","Washington DC",1984,"South Atlantic","South",NA,54.7610061581988,68.2183755892614,85.2671062987903,68.6434841460498
+"365",8,16,0,0,"Injuries","White","Male","Washington DC",1984,"South Atlantic","South",NA,59.3732042734999,68.2363416744271,78.3561733747231,68.4000103587481
+"366",8,16,0,0,"Non-communicable","White","Male","Washington DC",1984,"South Atlantic","South",NA,96.8009731447772,108.807662968725,121.951923131791,108.997879085638
+"367",8,16,0,1,"All other causes","White","Female","Washington DC",1984,"South Atlantic","South",NA,88.5304410513116,97.0557371387945,105.82089076706,97.1001550499095
+"368",8,16,0,1,"Cancers","White","Female","Washington DC",1984,"South Atlantic","South",NA,162.152852951515,171.414723392241,182.099939810432,171.641211121231
+"369",8,16,0,1,"Cardiovascular","White","Female","Washington DC",1984,"South Atlantic","South",NA,319.555717359005,338.769846253756,357.961308588728,338.996272401635
+"370",8,16,0,1,"Communicable","White","Female","Washington DC",1984,"South Atlantic","South",NA,30.3494391957157,35.0945191649056,40.8187625511505,35.190544928677
+"371",8,16,0,1,"Injuries","White","Female","Washington DC",1984,"South Atlantic","South",NA,26.0537889192342,30.1216212811926,34.7947563868755,30.2143059334339
+"372",8,16,0,1,"Non-communicable","White","Female","Washington DC",1984,"South Atlantic","South",NA,45.6616808904723,52.4992575809377,60.5742238210647,52.609931581926
+"373",8,16,1,0,"All other causes","Black","Male","Washington DC",1984,"South Atlantic","South",NA,282.311702870579,298.549226743683,317.292225484115,298.698090164852
+"374",8,16,1,0,"Cancers","Black","Male","Washington DC",1984,"South Atlantic","South",NA,433.355312279728,449.465739226679,468.509187951368,449.875258156954
+"375",8,16,1,0,"Cardiovascular","Black","Male","Washington DC",1984,"South Atlantic","South",NA,661.953057327876,687.471750080634,715.064220772935,687.8196803847
+"376",8,16,1,0,"Communicable","Black","Male","Washington DC",1984,"South Atlantic","South",NA,111.772752854473,124.041762440692,138.616456578288,124.192741705834
+"377",8,16,1,0,"Injuries","Black","Male","Washington DC",1984,"South Atlantic","South",NA,136.607946094211,146.954014290832,157.591478152838,147.161110077867
+"378",8,16,1,0,"Non-communicable","Black","Male","Washington DC",1984,"South Atlantic","South",NA,155.218693886283,165.651744912339,176.178853647594,165.651255770233
+"379",8,16,1,1,"All other causes","Black","Female","Washington DC",1984,"South Atlantic","South",NA,170.589583500459,178.812817887914,187.152600881525,178.914751372575
+"380",8,16,1,1,"Cancers","Black","Female","Washington DC",1984,"South Atlantic","South",NA,216.742338258869,224.261190856486,232.353530630139,224.16750112019
+"381",8,16,1,1,"Cardiovascular","Black","Female","Washington DC",1984,"South Atlantic","South",NA,423.996635968456,439.408598020235,457.278781967464,439.713822842818
+"382",8,16,1,1,"Communicable","Black","Female","Washington DC",1984,"South Atlantic","South",NA,57.1939109367033,63.432831108543,70.4263920966512,63.5854163146671
+"383",8,16,1,1,"Injuries","Black","Female","Washington DC",1984,"South Atlantic","South",NA,34.6226338940104,38.9048928073008,43.4020467980689,38.9745239904392
+"384",8,16,1,1,"Non-communicable","Black","Female","Washington DC",1984,"South Atlantic","South",NA,88.865115601192,95.814328524859,102.145447979253,95.7104016038631
+"385",8,17,0,0,"All other causes","White","Male","Washington DC",1985,"South Atlantic","South",NA,137.351231268863,151.132044500689,166.962689714644,151.467999434742
+"386",8,17,0,0,"Cancers","White","Male","Washington DC",1985,"South Atlantic","South",NA,230.035246815941,247.49337268396,263.144320228543,247.172241902796
+"387",8,17,0,0,"Cardiovascular","White","Male","Washington DC",1985,"South Atlantic","South",NA,447.723717887673,479.743049522277,509.92362420977,479.726434691895
+"388",8,17,0,0,"Communicable","White","Male","Washington DC",1985,"South Atlantic","South",NA,68.6619421318245,84.758258923811,104.449678520443,85.3097245982659
+"389",8,17,0,0,"Injuries","White","Male","Washington DC",1985,"South Atlantic","South",NA,58.0952816151074,67.195275356533,76.6472814352298,67.1275014905844
+"390",8,17,0,0,"Non-communicable","White","Male","Washington DC",1985,"South Atlantic","South",NA,97.990373994249,110.479754602483,123.615024443695,110.49612948649
+"391",8,17,0,1,"All other causes","White","Female","Washington DC",1985,"South Atlantic","South",NA,91.3059514659004,99.1865248601874,107.7421029212,99.0743239704266
+"392",8,17,0,1,"Cancers","White","Female","Washington DC",1985,"South Atlantic","South",NA,162.170671295189,172.067043264363,183.388081794329,172.241312805819
+"393",8,17,0,1,"Cardiovascular","White","Female","Washington DC",1985,"South Atlantic","South",NA,300.398175906101,319.685995670704,338.830578652923,320.03489331237
+"394",8,17,0,1,"Communicable","White","Female","Washington DC",1985,"South Atlantic","South",NA,31.9033714313411,36.7410639974615,42.6861120101015,36.9583310509429
+"395",8,17,0,1,"Injuries","White","Female","Washington DC",1985,"South Atlantic","South",NA,25.4054498362326,29.3316035327472,34.0342548265711,29.3990855985301
+"396",8,17,0,1,"Non-communicable","White","Female","Washington DC",1985,"South Atlantic","South",NA,44.7095640608179,52.2828677052844,59.6712659346213,52.3319297004385
+"397",8,17,1,0,"All other causes","Black","Male","Washington DC",1985,"South Atlantic","South",NA,297.498472600348,313.687399294087,332.385290529036,314.140108002762
+"398",8,17,1,0,"Cancers","Black","Male","Washington DC",1985,"South Atlantic","South",NA,434.593534599992,452.993902837136,470.55458931079,453.027913171413
+"399",8,17,1,0,"Cardiovascular","Black","Male","Washington DC",1985,"South Atlantic","South",NA,659.844181346047,684.402492549017,710.929993650122,684.651895340632
+"400",8,17,1,0,"Communicable","Black","Male","Washington DC",1985,"South Atlantic","South",NA,128.90508998201,142.125957711042,156.524485294209,142.22983309633
+"401",8,17,1,0,"Injuries","Black","Male","Washington DC",1985,"South Atlantic","South",NA,136.351832589869,146.506835203323,156.988627030378,146.509061841467
+"402",8,17,1,0,"Non-communicable","Black","Male","Washington DC",1985,"South Atlantic","South",NA,157.630557309011,168.36533498722,179.1045267475,168.439932474715
+"403",8,17,1,1,"All other causes","Black","Female","Washington DC",1985,"South Atlantic","South",NA,173.803578350746,181.925841985837,190.599737371995,182.007503265833
+"404",8,17,1,1,"Cancers","Black","Female","Washington DC",1985,"South Atlantic","South",NA,219.360127997521,226.829788843117,234.697031392778,226.815137055023
+"405",8,17,1,1,"Cardiovascular","Black","Female","Washington DC",1985,"South Atlantic","South",NA,422.412368477037,439.624558522711,456.497174121014,439.503688877404
+"406",8,17,1,1,"Communicable","Black","Female","Washington DC",1985,"South Atlantic","South",NA,61.3350793491046,68.1680410230229,75.0932581651128,68.2203560115482
+"407",8,17,1,1,"Injuries","Black","Female","Washington DC",1985,"South Atlantic","South",NA,34.8989107443917,39.1784427950826,43.7852736291227,39.1803394488209
+"408",8,17,1,1,"Non-communicable","Black","Female","Washington DC",1985,"South Atlantic","South",NA,88.5712600374222,95.5057326400512,101.996732785662,95.5378633264297
+"409",8,18,0,0,"All other causes","White","Male","Washington DC",1986,"South Atlantic","South",NA,137.666195106922,151.28472977819,167.607767621696,151.614193791293
+"410",8,18,0,0,"Cancers","White","Male","Washington DC",1986,"South Atlantic","South",NA,232.080434498875,248.241626649821,266.518016173933,248.565745563609
+"411",8,18,0,0,"Cardiovascular","White","Male","Washington DC",1986,"South Atlantic","South",NA,434.631637861998,465.645269139744,498.130763534621,465.976596762476
+"412",8,18,0,0,"Communicable","White","Male","Washington DC",1986,"South Atlantic","South",NA,75.3347177114171,91.9764662719462,109.830839559305,92.1009313038023
+"413",8,18,0,0,"Injuries","White","Male","Washington DC",1986,"South Atlantic","South",NA,57.7722380094472,65.9978432289292,75.6108566877995,66.1199032887986
+"414",8,18,0,0,"Non-communicable","White","Male","Washington DC",1986,"South Atlantic","South",NA,98.334196306383,111.441722114931,125.179415976619,111.661004906088
+"415",8,18,0,1,"All other causes","White","Female","Washington DC",1986,"South Atlantic","South",NA,92.091183106723,100.231329903642,109.078830147252,100.266732666679
+"416",8,18,0,1,"Cancers","White","Female","Washington DC",1986,"South Atlantic","South",NA,161.504489917119,171.264475846949,183.313516233417,171.50457753229
+"417",8,18,0,1,"Cardiovascular","White","Female","Washington DC",1986,"South Atlantic","South",NA,288.599658230098,308.645019350347,329.820027259943,308.887702298495
+"418",8,18,0,1,"Communicable","White","Female","Washington DC",1986,"South Atlantic","South",NA,34.1397324184568,39.0057671519814,45.1668439563565,39.2603557543806
+"419",8,18,0,1,"Injuries","White","Female","Washington DC",1986,"South Atlantic","South",NA,24.9309736508902,28.8715470516318,33.6801475283727,28.9889607268206
+"420",8,18,0,1,"Non-communicable","White","Female","Washington DC",1986,"South Atlantic","South",NA,45.3273909466196,52.9267662861284,60.3143342132779,52.9118148419363
+"421",8,18,1,0,"All other causes","Black","Male","Washington DC",1986,"South Atlantic","South",NA,312.111458298304,328.54060275567,347.00573891384,328.728505579418
+"422",8,18,1,0,"Cancers","Black","Male","Washington DC",1986,"South Atlantic","South",NA,437.715002038273,455.658598740932,475.240014601766,455.916053947815
+"423",8,18,1,0,"Cardiovascular","Black","Male","Washington DC",1986,"South Atlantic","South",NA,653.007394024055,678.977403363978,703.843661376432,678.985201695752
+"424",8,18,1,0,"Communicable","Black","Male","Washington DC",1986,"South Atlantic","South",NA,138.829670988188,154.006207749959,170.457493825846,154.268762984379
+"425",8,18,1,0,"Injuries","Black","Male","Washington DC",1986,"South Atlantic","South",NA,139.894567685087,149.763292260545,160.278322005262,149.84123025694
+"426",8,18,1,0,"Non-communicable","Black","Male","Washington DC",1986,"South Atlantic","South",NA,163.248201538221,174.263148180811,185.831170089201,174.452202255585
+"427",8,18,1,1,"All other causes","Black","Female","Washington DC",1986,"South Atlantic","South",NA,175.093579156651,183.623683758681,191.732967122968,183.502566534455
+"428",8,18,1,1,"Cancers","Black","Female","Washington DC",1986,"South Atlantic","South",NA,222.289029902716,230.322797859611,239.197324540377,230.40932861586
+"429",8,18,1,1,"Cardiovascular","Black","Female","Washington DC",1986,"South Atlantic","South",NA,422.642464991545,438.789228625068,456.762509197095,439.232698777803
+"430",8,18,1,1,"Communicable","Black","Female","Washington DC",1986,"South Atlantic","South",NA,63.6614924874813,70.6353258404745,77.6853268154202,70.5689971355968
+"431",8,18,1,1,"Injuries","Black","Female","Washington DC",1986,"South Atlantic","South",NA,35.1819892446903,39.6909266004274,43.8980852443658,39.6568674113273
+"432",8,18,1,1,"Non-communicable","Black","Female","Washington DC",1986,"South Atlantic","South",NA,90.8982802719224,97.420844566409,104.57861478466,97.5171011237307
+"433",8,19,0,0,"All other causes","White","Male","Washington DC",1987,"South Atlantic","South",NA,136.586291249446,150.715882235283,165.554578663103,150.80613086082
+"434",8,19,0,0,"Cancers","White","Male","Washington DC",1987,"South Atlantic","South",NA,233.017117738546,249.905568392545,266.645873384369,249.946081946427
+"435",8,19,0,0,"Cardiovascular","White","Male","Washington DC",1987,"South Atlantic","South",NA,427.836033047284,459.899814398625,490.094568531489,459.853091450453
+"436",8,19,0,0,"Communicable","White","Male","Washington DC",1987,"South Atlantic","South",NA,93.4330107457043,109.169767169907,128.992499605648,109.768535293153
+"437",8,19,0,0,"Injuries","White","Male","Washington DC",1987,"South Atlantic","South",NA,57.0157279677667,64.8358213069999,74.5670033350971,65.0654327447719
+"438",8,19,0,0,"Non-communicable","White","Male","Washington DC",1987,"South Atlantic","South",NA,97.6212633516798,110.316835124801,123.900369226453,110.394932738672
+"439",8,19,0,1,"All other causes","White","Female","Washington DC",1987,"South Atlantic","South",NA,94.0444829955375,101.918395708897,110.833728985222,102.057474840086
+"440",8,19,0,1,"Cancers","White","Female","Washington DC",1987,"South Atlantic","South",NA,158.974807140275,168.778221787907,179.823384231765,169.020049213906
+"441",8,19,0,1,"Cardiovascular","White","Female","Washington DC",1987,"South Atlantic","South",NA,286.80304351195,305.24180093548,325.436475190008,305.310336368887
+"442",8,19,0,1,"Communicable","White","Female","Washington DC",1987,"South Atlantic","South",NA,36.0842471694753,41.5147547800948,48.3428588762624,41.6724298858019
+"443",8,19,0,1,"Injuries","White","Female","Washington DC",1987,"South Atlantic","South",NA,24.5862287230928,28.2446107118809,33.2167629459102,28.3681310069254
+"444",8,19,0,1,"Non-communicable","White","Female","Washington DC",1987,"South Atlantic","South",NA,48.7707190255,55.8347653922449,63.593167180292,55.8460454046471
+"445",8,19,1,0,"All other causes","Black","Male","Washington DC",1987,"South Atlantic","South",NA,312.494428887758,329.051840448048,346.143279152168,329.450281436372
+"446",8,19,1,0,"Cancers","Black","Male","Washington DC",1987,"South Atlantic","South",NA,437.78561849357,455.598187574312,474.482282491732,455.624038852092
+"447",8,19,1,0,"Cardiovascular","Black","Male","Washington DC",1987,"South Atlantic","South",NA,637.527066191127,663.162286354174,686.329306040525,662.476195041547
+"448",8,19,1,0,"Communicable","Black","Male","Washington DC",1987,"South Atlantic","South",NA,165.335147293957,179.87197649752,199.403948670037,180.39861027943
+"449",8,19,1,0,"Injuries","Black","Male","Washington DC",1987,"South Atlantic","South",NA,150.708937294177,160.709100773904,173.654563865667,160.981578845664
+"450",8,19,1,0,"Non-communicable","Black","Male","Washington DC",1987,"South Atlantic","South",NA,168.678340403392,180.89206987633,192.802191683471,180.877513668354
+"451",8,19,1,1,"All other causes","Black","Female","Washington DC",1987,"South Atlantic","South",NA,176.108013321184,184.586193251381,193.663491900945,184.627583010258
+"452",8,19,1,1,"Cancers","Black","Female","Washington DC",1987,"South Atlantic","South",NA,224.517002629214,232.636991497047,241.489099237147,232.549903902446
+"453",8,19,1,1,"Cardiovascular","Black","Female","Washington DC",1987,"South Atlantic","South",NA,419.270102719493,435.459178310589,451.818100460268,435.421612736138
+"454",8,19,1,1,"Communicable","Black","Female","Washington DC",1987,"South Atlantic","South",NA,66.1523861730674,72.8222663595925,80.3249771194683,72.9068927789253
+"455",8,19,1,1,"Injuries","Black","Female","Washington DC",1987,"South Atlantic","South",NA,35.8848587320264,40.3068663945774,44.8907734041862,40.3490522194213
+"456",8,19,1,1,"Non-communicable","Black","Female","Washington DC",1987,"South Atlantic","South",NA,94.2494696567845,100.826043483592,107.689740170002,100.837235836745
+"457",8,20,0,0,"All other causes","White","Male","Washington DC",1988,"South Atlantic","South",NA,133.725013521846,147.530519422212,162.233089086432,147.577024564375
+"458",8,20,0,0,"Cancers","White","Male","Washington DC",1988,"South Atlantic","South",NA,231.640218137487,248.299396919087,265.261981509332,248.266027214416
+"459",8,20,0,0,"Cardiovascular","White","Male","Washington DC",1988,"South Atlantic","South",NA,421.898727267431,452.261342781818,486.427207448855,453.003692759643
+"460",8,20,0,0,"Communicable","White","Male","Washington DC",1988,"South Atlantic","South",NA,120.62519738885,140.134211101858,160.794085936038,140.526794057621
+"461",8,20,0,0,"Injuries","White","Male","Washington DC",1988,"South Atlantic","South",NA,55.6177100444666,63.5749960811527,73.095866771096,63.8744677463514
+"462",8,20,0,0,"Non-communicable","White","Male","Washington DC",1988,"South Atlantic","South",NA,93.9231178312375,107.385818570566,120.715314771747,107.415163545228
+"463",8,20,0,1,"All other causes","White","Female","Washington DC",1988,"South Atlantic","South",NA,94.1486946149437,102.693503671406,111.591934121783,102.767470776758
+"464",8,20,0,1,"Cancers","White","Female","Washington DC",1988,"South Atlantic","South",NA,157.590471442613,166.965147899281,177.427713019328,167.203542428036
+"465",8,20,0,1,"Cardiovascular","White","Female","Washington DC",1988,"South Atlantic","South",NA,272.872223530781,290.320664603566,309.364280220998,290.601726933205
+"466",8,20,0,1,"Communicable","White","Female","Washington DC",1988,"South Atlantic","South",NA,36.1049925433719,41.8281197118612,48.0847932482589,41.8050041898939
+"467",8,20,0,1,"Injuries","White","Female","Washington DC",1988,"South Atlantic","South",NA,23.4656145675976,27.1968001605309,31.7581699412851,27.3174672733363
+"468",8,20,0,1,"Non-communicable","White","Female","Washington DC",1988,"South Atlantic","South",NA,49.3416980559234,56.6261684885227,65.2071198715336,56.8770536381991
+"469",8,20,1,0,"All other causes","Black","Male","Washington DC",1988,"South Atlantic","South",NA,311.328585277847,329.051463834334,349.17730735927,329.29925418706
+"470",8,20,1,0,"Cancers","Black","Male","Washington DC",1988,"South Atlantic","South",NA,437.362043240885,455.638406215735,476.74335929695,455.901824419559
+"471",8,20,1,0,"Cardiovascular","Black","Male","Washington DC",1988,"South Atlantic","South",NA,628.555184717747,650.511131268497,676.161217431181,651.253410686778
+"472",8,20,1,0,"Communicable","Black","Male","Washington DC",1988,"South Atlantic","South",NA,196.821817312374,213.944509538857,233.214245593051,214.281618679005
+"473",8,20,1,0,"Injuries","Black","Male","Washington DC",1988,"South Atlantic","South",NA,171.859311519857,182.704777683044,195.16243389699,183.034664924179
+"474",8,20,1,0,"Non-communicable","Black","Male","Washington DC",1988,"South Atlantic","South",NA,172.055521502986,182.805645679079,194.303070072437,182.790105915375
+"475",8,20,1,1,"All other causes","Black","Female","Washington DC",1988,"South Atlantic","South",NA,179.600152502345,187.805047597368,197.290075274977,188.027237644161
+"476",8,20,1,1,"Cancers","Black","Female","Washington DC",1988,"South Atlantic","South",NA,225.711789863547,233.754167263377,242.755952468509,233.795591127308
+"477",8,20,1,1,"Cardiovascular","Black","Female","Washington DC",1988,"South Atlantic","South",NA,413.219460626692,430.310911332709,446.680819743533,430.32310252317
+"478",8,20,1,1,"Communicable","Black","Female","Washington DC",1988,"South Atlantic","South",NA,69.5800899956737,76.5533238865681,84.1421496788564,76.593013702649
+"479",8,20,1,1,"Injuries","Black","Female","Washington DC",1988,"South Atlantic","South",NA,36.79344201259,41.309620852453,45.912100312715,41.3413472501486
+"480",8,20,1,1,"Non-communicable","Black","Female","Washington DC",1988,"South Atlantic","South",NA,94.7093332058783,101.2319405206,108.544333124502,101.374638297558
+"481",8,21,0,0,"All other causes","White","Male","Washington DC",1989,"South Atlantic","South",NA,132.753650877075,145.725297600932,160.285802638683,146.074915482574
+"482",8,21,0,0,"Cancers","White","Male","Washington DC",1989,"South Atlantic","South",NA,234.081766858568,251.376679775168,270.115833848218,251.313035689827
+"483",8,21,0,0,"Cardiovascular","White","Male","Washington DC",1989,"South Atlantic","South",NA,392.012421498681,422.004402934335,455.311044709807,422.01226450476
+"484",8,21,0,0,"Communicable","White","Male","Washington DC",1989,"South Atlantic","South",NA,137.669985157128,159.089288754075,181.850564202655,159.168922287991
+"485",8,21,0,0,"Injuries","White","Male","Washington DC",1989,"South Atlantic","South",NA,55.3204019396235,62.9445971758381,72.3478779771612,63.073482195318
+"486",8,21,0,0,"Non-communicable","White","Male","Washington DC",1989,"South Atlantic","South",NA,94.5373850946567,107.326259991592,121.456490479655,107.419776260586
+"487",8,21,0,1,"All other causes","White","Female","Washington DC",1989,"South Atlantic","South",NA,93.0572723561026,100.794247572521,109.407067315595,100.928664555104
+"488",8,21,0,1,"Cancers","White","Female","Washington DC",1989,"South Atlantic","South",NA,156.251045906241,165.604243470642,176.739626216875,165.805489025327
+"489",8,21,0,1,"Cardiovascular","White","Female","Washington DC",1989,"South Atlantic","South",NA,254.925953086979,272.928568086381,289.357120161092,272.750240412963
+"490",8,21,0,1,"Communicable","White","Female","Washington DC",1989,"South Atlantic","South",NA,36.7441096475444,42.3815273723027,48.9196032476761,42.4169257948415
+"491",8,21,0,1,"Injuries","White","Female","Washington DC",1989,"South Atlantic","South",NA,23.1545016134587,26.5370238440815,30.9899862742799,26.6226140565615
+"492",8,21,0,1,"Non-communicable","White","Female","Washington DC",1989,"South Atlantic","South",NA,50.7167934103769,57.9897687225847,66.8959280983886,58.2796355886545
+"493",8,21,1,0,"All other causes","Black","Male","Washington DC",1989,"South Atlantic","South",NA,303.658425689951,321.491501902353,339.671231431252,321.731156327553
+"494",8,21,1,0,"Cancers","Black","Male","Washington DC",1989,"South Atlantic","South",NA,430.863482610244,448.197912705068,467.881652600696,448.601571123955
+"495",8,21,1,0,"Cardiovascular","Black","Male","Washington DC",1989,"South Atlantic","South",NA,617.906193401505,642.607940345531,665.606213699978,642.641708220121
+"496",8,21,1,0,"Communicable","Black","Male","Washington DC",1989,"South Atlantic","South",NA,218.664788415499,236.699184889311,255.433399131215,236.689045551083
+"497",8,21,1,0,"Injuries","Black","Male","Washington DC",1989,"South Atlantic","South",NA,194.591963108535,207.207357744506,220.335334835603,207.539058082479
+"498",8,21,1,0,"Non-communicable","Black","Male","Washington DC",1989,"South Atlantic","South",NA,172.365722385114,183.691629070539,195.771047096979,183.710665014886
+"499",8,21,1,1,"All other causes","Black","Female","Washington DC",1989,"South Atlantic","South",NA,181.046937708935,189.728711714094,199.100764803031,189.86894946111
+"500",8,21,1,1,"Cancers","Black","Female","Washington DC",1989,"South Atlantic","South",NA,227.223715411344,235.247765989859,244.910010103372,235.362572432473
+"501",8,21,1,1,"Cardiovascular","Black","Female","Washington DC",1989,"South Atlantic","South",NA,400.855836746629,416.750304917446,433.456608825365,416.771060083733
+"502",8,21,1,1,"Communicable","Black","Female","Washington DC",1989,"South Atlantic","South",NA,69.864491485779,76.6241109016306,84.0024486270092,76.6531246971413
+"503",8,21,1,1,"Injuries","Black","Female","Washington DC",1989,"South Atlantic","South",NA,37.9842742626376,41.8434724844163,46.1640477109128,41.9178660866792
+"504",8,21,1,1,"Non-communicable","Black","Female","Washington DC",1989,"South Atlantic","South",NA,95.9260131218274,102.29580848674,109.061004337941,102.435394096292
+"505",8,22,0,0,"All other causes","White","Male","Washington DC",1990,"South Atlantic","South",NA,126.480579305992,140.287307741652,154.452295427392,140.360246265291
+"506",8,22,0,0,"Cancers","White","Male","Washington DC",1990,"South Atlantic","South",NA,230.862766682558,248.189703553206,266.183603389705,248.217825037028
+"507",8,22,0,0,"Cardiovascular","White","Male","Washington DC",1990,"South Atlantic","South",NA,377.511593039042,406.034608912413,432.177915336216,405.71539078582
+"508",8,22,0,0,"Communicable","White","Male","Washington DC",1990,"South Atlantic","South",NA,156.124906354501,177.157812781142,202.268557970283,177.456403953881
+"509",8,22,0,0,"Injuries","White","Male","Washington DC",1990,"South Atlantic","South",NA,54.8111245504713,62.1743833752862,71.89040063694,62.4109028254685
+"510",8,22,0,0,"Non-communicable","White","Male","Washington DC",1990,"South Atlantic","South",NA,94.2794318630234,106.544455078563,120.417037130621,106.913348997305
+"511",8,22,0,1,"All other causes","White","Female","Washington DC",1990,"South Atlantic","South",NA,91.3540088626043,99.8689891190529,108.759689940114,99.9607367246058
+"512",8,22,0,1,"Cancers","White","Female","Washington DC",1990,"South Atlantic","South",NA,153.632042323145,162.805635677375,173.647521303201,163.012198910889
+"513",8,22,0,1,"Cardiovascular","White","Female","Washington DC",1990,"South Atlantic","South",NA,242.251040559096,260.728003386057,278.42397189714,260.652291998931
+"514",8,22,0,1,"Communicable","White","Female","Washington DC",1990,"South Atlantic","South",NA,35.4164479851787,40.7816500149395,46.8441329598132,40.807530337358
+"515",8,22,0,1,"Injuries","White","Female","Washington DC",1990,"South Atlantic","South",NA,22.4130027486663,25.9929700402516,30.0735442275189,26.0562683265238
+"516",8,22,0,1,"Non-communicable","White","Female","Washington DC",1990,"South Atlantic","South",NA,51.4558102672414,59.1250834484552,67.9020386574329,59.3481832878816
+"517",8,22,1,0,"All other causes","Black","Male","Washington DC",1990,"South Atlantic","South",NA,298.505002654322,314.842948738528,333.477795661263,314.943236911503
+"518",8,22,1,0,"Cancers","Black","Male","Washington DC",1990,"South Atlantic","South",NA,424.167909989772,441.42241105286,459.214082166554,441.415213077259
+"519",8,22,1,0,"Cardiovascular","Black","Male","Washington DC",1990,"South Atlantic","South",NA,597.588046576999,620.798096616126,643.92866813685,620.814134483531
+"520",8,22,1,0,"Communicable","Black","Male","Washington DC",1990,"South Atlantic","South",NA,224.607649476085,244.039836370369,263.242186150601,244.246710979162
+"521",8,22,1,0,"Injuries","Black","Male","Washington DC",1990,"South Atlantic","South",NA,206.952088836254,220.400536378546,233.88361168251,220.22083824635
+"522",8,22,1,0,"Non-communicable","Black","Male","Washington DC",1990,"South Atlantic","South",NA,169.33373871761,180.575149998003,192.203082217782,180.500800722695
+"523",8,22,1,1,"All other causes","Black","Female","Washington DC",1990,"South Atlantic","South",NA,179.998807392406,188.628982338779,197.834471939188,188.628282086394
+"524",8,22,1,1,"Cancers","Black","Female","Washington DC",1990,"South Atlantic","South",NA,224.788549591531,232.848672593851,241.365555627622,232.864236915505
+"525",8,22,1,1,"Cardiovascular","Black","Female","Washington DC",1990,"South Atlantic","South",NA,386.982071339236,402.816246019279,420.055746441889,402.909714542008
+"526",8,22,1,1,"Communicable","Black","Female","Washington DC",1990,"South Atlantic","South",NA,74.9318440957866,82.1963568647792,89.4957818713083,82.2350032719305
+"527",8,22,1,1,"Injuries","Black","Female","Washington DC",1990,"South Atlantic","South",NA,38.9908513708716,42.9396046527475,47.3275198624264,42.9181966711695
+"528",8,22,1,1,"Non-communicable","Black","Female","Washington DC",1990,"South Atlantic","South",NA,96.1670623828721,102.833443703487,110.043600068857,102.920949847045
+"529",8,23,0,0,"All other causes","White","Male","Washington DC",1991,"South Atlantic","South",NA,124.468624504598,138.255775090605,150.886680611478,138.132988252809
+"530",8,23,0,0,"Cancers","White","Male","Washington DC",1991,"South Atlantic","South",NA,226.347907641281,243.703947015229,261.995716240213,243.764092552254
+"531",8,23,0,0,"Cardiovascular","White","Male","Washington DC",1991,"South Atlantic","South",NA,366.734046877374,392.895785459292,418.712366797492,392.515684725564
+"532",8,23,0,0,"Communicable","White","Male","Washington DC",1991,"South Atlantic","South",NA,157.451546023888,179.218245802991,203.398508784519,179.502196520983
+"533",8,23,0,0,"Injuries","White","Male","Washington DC",1991,"South Atlantic","South",NA,53.4084684150699,61.3570735623656,69.9806535509222,61.5264243706211
+"534",8,23,0,0,"Non-communicable","White","Male","Washington DC",1991,"South Atlantic","South",NA,91.2692625926921,103.287087272571,116.219217488534,103.280725502534
+"535",8,23,0,1,"All other causes","White","Female","Washington DC",1991,"South Atlantic","South",NA,90.3290245931677,98.6914375813108,107.566883815231,98.974623320749
+"536",8,23,0,1,"Cancers","White","Female","Washington DC",1991,"South Atlantic","South",NA,149.975214022711,159.958787022657,169.866209419096,160.007488306777
+"537",8,23,0,1,"Cardiovascular","White","Female","Washington DC",1991,"South Atlantic","South",NA,224.371333306798,241.595705855261,259.439321596125,241.772770956845
+"538",8,23,0,1,"Communicable","White","Female","Washington DC",1991,"South Atlantic","South",NA,36.0119012704692,41.1158879091083,46.9907011862436,41.1783140694547
+"539",8,23,0,1,"Injuries","White","Female","Washington DC",1991,"South Atlantic","South",NA,22.317665418123,25.854186673322,30.0983246278804,25.9502575163849
+"540",8,23,0,1,"Non-communicable","White","Female","Washington DC",1991,"South Atlantic","South",NA,49.1161960344731,56.9648009373787,64.9453615551416,56.9016812305456
+"541",8,23,1,0,"All other causes","Black","Male","Washington DC",1991,"South Atlantic","South",NA,290.543097946501,307.932689773113,324.920072205083,307.491216792928
+"542",8,23,1,0,"Cancers","Black","Male","Washington DC",1991,"South Atlantic","South",NA,421.827733381995,440.306500418245,458.089501061509,440.271056593596
+"543",8,23,1,0,"Cardiovascular","Black","Male","Washington DC",1991,"South Atlantic","South",NA,590.791845203644,612.600688211484,635.654535637189,612.744785656952
+"544",8,23,1,0,"Communicable","Black","Male","Washington DC",1991,"South Atlantic","South",NA,232.720562688935,251.024120573828,271.297718519498,251.28396906216
+"545",8,23,1,0,"Injuries","Black","Male","Washington DC",1991,"South Atlantic","South",NA,216.104903360775,229.13422999877,243.936839671537,229.434460827705
+"546",8,23,1,0,"Non-communicable","Black","Male","Washington DC",1991,"South Atlantic","South",NA,164.655552583155,176.16715765549,188.083828212453,176.277560649168
+"547",8,23,1,1,"All other causes","Black","Female","Washington DC",1991,"South Atlantic","South",NA,178.220081508598,187.423542287047,196.46800989899,187.388473583237
+"548",8,23,1,1,"Cancers","Black","Female","Washington DC",1991,"South Atlantic","South",NA,224.641857701799,232.021346515949,241.029324802879,232.337027363748
+"549",8,23,1,1,"Cardiovascular","Black","Female","Washington DC",1991,"South Atlantic","South",NA,374.290574285465,389.774507740956,405.644459931761,389.799707386774
+"550",8,23,1,1,"Communicable","Black","Female","Washington DC",1991,"South Atlantic","South",NA,76.5101817301684,83.9109442942459,92.2788845999901,84.0688972044841
+"551",8,23,1,1,"Injuries","Black","Female","Washington DC",1991,"South Atlantic","South",NA,39.6010537996343,43.5666547427066,48.0588245522178,43.6185676735789
+"552",8,23,1,1,"Non-communicable","Black","Female","Washington DC",1991,"South Atlantic","South",NA,94.6992557127516,100.838384685439,107.666051099592,100.982425805404
+"553",8,24,0,0,"All other causes","White","Male","Washington DC",1992,"South Atlantic","South",NA,121.514996140339,134.424976539834,148.028300323161,134.44345787476
+"554",8,24,0,0,"Cancers","White","Male","Washington DC",1992,"South Atlantic","South",NA,222.25292277318,238.496439435157,256.769512617961,238.312975983669
+"555",8,24,0,0,"Cardiovascular","White","Male","Washington DC",1992,"South Atlantic","South",NA,353.842253726648,380.904019240525,409.040099965919,381.553850913242
+"556",8,24,0,0,"Communicable","White","Male","Washington DC",1992,"South Atlantic","South",NA,167.992582594081,191.318755365784,215.418350725605,191.402180386156
+"557",8,24,0,0,"Injuries","White","Male","Washington DC",1992,"South Atlantic","South",NA,52.5040803478044,60.7792505198315,69.9902232748982,60.8138403432558
+"558",8,24,0,0,"Non-communicable","White","Male","Washington DC",1992,"South Atlantic","South",NA,90.6754131751581,102.532845578415,116.418144728162,102.734457016694
+"559",8,24,0,1,"All other causes","White","Female","Washington DC",1992,"South Atlantic","South",NA,88.9816625375162,98.0115981751727,107.197122139114,98.1807374680713
+"560",8,24,0,1,"Cancers","White","Female","Washington DC",1992,"South Atlantic","South",NA,146.65498467208,156.414923516966,167.267814759834,156.502698424663
+"561",8,24,0,1,"Cardiovascular","White","Female","Washington DC",1992,"South Atlantic","South",NA,220.086024708616,235.982511884275,254.223433773581,236.346414988878
+"562",8,24,0,1,"Communicable","White","Female","Washington DC",1992,"South Atlantic","South",NA,35.3971161372408,40.8338180101573,46.8959326262456,40.9080914526266
+"563",8,24,0,1,"Injuries","White","Female","Washington DC",1992,"South Atlantic","South",NA,21.84537973025,25.155811169739,29.249510477269,25.2630742528402
+"564",8,24,0,1,"Non-communicable","White","Female","Washington DC",1992,"South Atlantic","South",NA,48.1021666260325,55.5554014443387,64.5433992021186,55.7425211446018
+"565",8,24,1,0,"All other causes","Black","Male","Washington DC",1992,"South Atlantic","South",NA,286.591039280107,303.804660454849,321.471506450316,303.746164571199
+"566",8,24,1,0,"Cancers","Black","Male","Washington DC",1992,"South Atlantic","South",NA,422.186806721528,439.278483804067,459.477258643331,439.885731710138
+"567",8,24,1,0,"Cardiovascular","Black","Male","Washington DC",1992,"South Atlantic","South",NA,580.360429695476,601.88987778131,625.947053833124,602.48159146398
+"568",8,24,1,0,"Communicable","Black","Male","Washington DC",1992,"South Atlantic","South",NA,268.153669779612,286.678682424776,307.410201703196,287.0315075883
+"569",8,24,1,0,"Injuries","Black","Male","Washington DC",1992,"South Atlantic","South",NA,217.440715836719,231.514599137209,245.901858994315,231.807713091761
+"570",8,24,1,0,"Non-communicable","Black","Male","Washington DC",1992,"South Atlantic","South",NA,163.661031684125,175.134010785015,187.12923926034,175.152860306821
+"571",8,24,1,1,"All other causes","Black","Female","Washington DC",1992,"South Atlantic","South",NA,175.638999169079,183.87749504056,192.603619432772,184.085658523077
+"572",8,24,1,1,"Cancers","Black","Female","Washington DC",1992,"South Atlantic","South",NA,223.592757955269,231.52381246217,239.92338404328,231.4757551142
+"573",8,24,1,1,"Cardiovascular","Black","Female","Washington DC",1992,"South Atlantic","South",NA,370.652026336148,385.411328856984,401.543663491668,385.693890887673
+"574",8,24,1,1,"Communicable","Black","Female","Washington DC",1992,"South Atlantic","South",NA,82.323517238601,89.4641670170132,97.2230404875817,89.5103080655717
+"575",8,24,1,1,"Injuries","Black","Female","Washington DC",1992,"South Atlantic","South",NA,39.3261287077753,43.4453682607906,47.6325720385493,43.3903647868074
+"576",8,24,1,1,"Non-communicable","Black","Female","Washington DC",1992,"South Atlantic","South",NA,95.2466451077448,101.915454001054,108.858590248168,102.087788908695
+"577",8,25,0,0,"All other causes","White","Male","Washington DC",1993,"South Atlantic","South",NA,119.109147733768,133.351979373519,147.021263835867,133.256250522664
+"578",8,25,0,0,"Cancers","White","Male","Washington DC",1993,"South Atlantic","South",NA,215.964243159353,233.126436064244,249.754702055663,233.179464349362
+"579",8,25,0,0,"Cardiovascular","White","Male","Washington DC",1993,"South Atlantic","South",NA,344.661422194336,371.977072974054,402.472949085285,371.971796826822
+"580",8,25,0,0,"Communicable","White","Male","Washington DC",1993,"South Atlantic","South",NA,178.06211152067,203.641609153689,230.808504654456,203.720935172931
+"581",8,25,0,0,"Injuries","White","Male","Washington DC",1993,"South Atlantic","South",NA,51.8368825152766,59.9231481164673,68.3399530717171,59.9012581808525
+"582",8,25,0,0,"Non-communicable","White","Male","Washington DC",1993,"South Atlantic","South",NA,88.9274189830055,101.451329072852,114.087968735016,101.456198056848
+"583",8,25,0,1,"All other causes","White","Female","Washington DC",1993,"South Atlantic","South",NA,89.8195997527464,98.3603628525546,107.783889721047,98.4349609083477
+"584",8,25,0,1,"Cancers","White","Female","Washington DC",1993,"South Atlantic","South",NA,145.341261237603,154.81220330863,164.718303316131,154.725987899289
+"585",8,25,0,1,"Cardiovascular","White","Female","Washington DC",1993,"South Atlantic","South",NA,230.567691595315,247.082755573365,265.787202050197,247.171714979716
+"586",8,25,0,1,"Communicable","White","Female","Washington DC",1993,"South Atlantic","South",NA,34.1560345117612,39.4678533446326,45.596313300019,39.557449746303
+"587",8,25,0,1,"Injuries","White","Female","Washington DC",1993,"South Atlantic","South",NA,20.741200993317,24.4342077955276,28.6237947533021,24.5690623038771
+"588",8,25,0,1,"Non-communicable","White","Female","Washington DC",1993,"South Atlantic","South",NA,50.4594490968442,58.4158807599365,67.050715546422,58.523593904825
+"589",8,25,1,0,"All other causes","Black","Male","Washington DC",1993,"South Atlantic","South",NA,286.85479810244,303.825258781573,323.056715518254,304.092991193914
+"590",8,25,1,0,"Cancers","Black","Male","Washington DC",1993,"South Atlantic","South",NA,421.489783478082,438.576244249784,457.711482551796,438.827797204573
+"591",8,25,1,0,"Cardiovascular","Black","Male","Washington DC",1993,"South Atlantic","South",NA,572.987975908374,594.731866184216,617.111876333417,594.919103715114
+"592",8,25,1,0,"Communicable","Black","Male","Washington DC",1993,"South Atlantic","South",NA,302.409996783632,324.127273715846,347.749071201725,324.505857023915
+"593",8,25,1,0,"Injuries","Black","Male","Washington DC",1993,"South Atlantic","South",NA,224.413653059319,239.25475483759,253.789587974458,239.114988362846
+"594",8,25,1,0,"Non-communicable","Black","Male","Washington DC",1993,"South Atlantic","South",NA,161.698326461734,172.815561217874,184.48132888159,172.935523823851
+"595",8,25,1,1,"All other causes","Black","Female","Washington DC",1993,"South Atlantic","South",NA,175.405199476015,184.104826126441,192.728612710204,184.133200766974
+"596",8,25,1,1,"Cancers","Black","Female","Washington DC",1993,"South Atlantic","South",NA,221.560103640604,229.978851550052,238.339245880438,229.92855476292
+"597",8,25,1,1,"Cardiovascular","Black","Female","Washington DC",1993,"South Atlantic","South",NA,364.88064202556,379.150531624628,395.291347576898,379.445398375035
+"598",8,25,1,1,"Communicable","Black","Female","Washington DC",1993,"South Atlantic","South",NA,86.1541476313906,93.9946457778478,101.977554643978,93.868823753167
+"599",8,25,1,1,"Injuries","Black","Female","Washington DC",1993,"South Atlantic","South",NA,39.472602153021,43.4307633983528,47.6689946844246,43.4891241004901
+"600",8,25,1,1,"Non-communicable","Black","Female","Washington DC",1993,"South Atlantic","South",NA,96.2506283250203,103.084996032126,110.064158192247,103.213437289829
+"601",8,26,0,0,"All other causes","White","Male","Washington DC",1994,"South Atlantic","South",NA,119.413067872582,133.435850381488,148.643214517973,133.621421510256
+"602",8,26,0,0,"Cancers","White","Male","Washington DC",1994,"South Atlantic","South",NA,213.066703097556,228.948812746409,246.650496116182,229.277843823913
+"603",8,26,0,0,"Cardiovascular","White","Male","Washington DC",1994,"South Atlantic","South",NA,350.658275430782,377.924012898144,408.026801552086,378.101315909561
+"604",8,26,0,0,"Communicable","White","Male","Washington DC",1994,"South Atlantic","South",NA,183.31059714315,207.691441666838,235.502663484515,207.991498079289
+"605",8,26,0,0,"Injuries","White","Male","Washington DC",1994,"South Atlantic","South",NA,50.507551164104,59.1014774867025,67.7817165239823,59.1275129472326
+"606",8,26,0,0,"Non-communicable","White","Male","Washington DC",1994,"South Atlantic","South",NA,84.4533614645303,96.7177664516567,110.637257819576,96.8736298807207
+"607",8,26,0,1,"All other causes","White","Female","Washington DC",1994,"South Atlantic","South",NA,89.0794319541676,97.9026796543611,106.813008662275,98.0327035078247
+"608",8,26,0,1,"Cancers","White","Female","Washington DC",1994,"South Atlantic","South",NA,143.9192415401,153.482378979029,163.186410488524,153.517917405434
+"609",8,26,0,1,"Cardiovascular","White","Female","Washington DC",1994,"South Atlantic","South",NA,215.868060227161,232.218024151312,248.638616257794,232.184559216234
+"610",8,26,0,1,"Communicable","White","Female","Washington DC",1994,"South Atlantic","South",NA,33.1551249938097,38.2713085689246,44.1160598681576,38.3399595963998
+"611",8,26,0,1,"Injuries","White","Female","Washington DC",1994,"South Atlantic","South",NA,19.7831833257123,23.8213065795383,27.9568251606647,23.8821979857826
+"612",8,26,0,1,"Non-communicable","White","Female","Washington DC",1994,"South Atlantic","South",NA,50.2110418769713,58.3234127750104,67.4720709906884,58.2184426450054
+"613",8,26,1,0,"All other causes","Black","Male","Washington DC",1994,"South Atlantic","South",NA,285.998763296913,303.820221834468,322.058376066523,303.945747083215
+"614",8,26,1,0,"Cancers","Black","Male","Washington DC",1994,"South Atlantic","South",NA,416.980504031492,433.586624281925,451.841135688854,433.800867473177
+"615",8,26,1,0,"Cardiovascular","Black","Male","Washington DC",1994,"South Atlantic","South",NA,565.720900851704,587.236717848648,609.026254906873,586.888500362985
+"616",8,26,1,0,"Communicable","Black","Male","Washington DC",1994,"South Atlantic","South",NA,319.487003225458,342.955057013074,366.435573693888,342.955005013544
+"617",8,26,1,0,"Injuries","Black","Male","Washington DC",1994,"South Atlantic","South",NA,215.957844497042,229.554368725148,244.768482050756,229.868462147857
+"618",8,26,1,0,"Non-communicable","Black","Male","Washington DC",1994,"South Atlantic","South",NA,160.389006354388,171.670401871261,184.797697933425,171.706719545837
+"619",8,26,1,1,"All other causes","Black","Female","Washington DC",1994,"South Atlantic","South",NA,176.069560425551,185.062403384222,193.72290914517,184.910629349116
+"620",8,26,1,1,"Cancers","Black","Female","Washington DC",1994,"South Atlantic","South",NA,222.6504748772,231.100030284838,240.077757739543,231.109582417341
+"621",8,26,1,1,"Cardiovascular","Black","Female","Washington DC",1994,"South Atlantic","South",NA,357.841463187471,371.944024576381,386.158000727614,372.040935333058
+"622",8,26,1,1,"Communicable","Black","Female","Washington DC",1994,"South Atlantic","South",NA,95.7786246425651,103.931030826318,112.422312033672,103.846638706102
+"623",8,26,1,1,"Injuries","Black","Female","Washington DC",1994,"South Atlantic","South",NA,38.8394322032004,42.7931435177226,47.0213305283483,42.8596950664191
+"624",8,26,1,1,"Non-communicable","Black","Female","Washington DC",1994,"South Atlantic","South",NA,97.2424468998459,104.171960441114,111.649022652975,104.285411829419
+"625",8,27,0,0,"All other causes","White","Male","Washington DC",1995,"South Atlantic","South",NA,119.660743194034,133.175191749056,148.932236659338,133.509599371484
+"626",8,27,0,0,"Cancers","White","Male","Washington DC",1995,"South Atlantic","South",NA,207.869565825845,224.740446805137,242.645719532239,224.774324994606
+"627",8,27,0,0,"Cardiovascular","White","Male","Washington DC",1995,"South Atlantic","South",NA,342.516640465532,368.150457378929,396.525120129132,368.821970793293
+"628",8,27,0,0,"Communicable","White","Male","Washington DC",1995,"South Atlantic","South",NA,140.8673823468,161.812700791037,184.149704342458,162.051192103473
+"629",8,27,0,0,"Injuries","White","Male","Washington DC",1995,"South Atlantic","South",NA,49.9919592432992,58.2337977944963,66.7620437225272,58.2384441113919
+"630",8,27,0,0,"Non-communicable","White","Male","Washington DC",1995,"South Atlantic","South",NA,78.694255928514,89.4509124591364,101.408798870775,89.6014368682724
+"631",8,27,0,1,"All other causes","White","Female","Washington DC",1995,"South Atlantic","South",NA,88.5279414432717,97.243627021894,106.194897515322,97.3215572361564
+"632",8,27,0,1,"Cancers","White","Female","Washington DC",1995,"South Atlantic","South",NA,141.895058052836,151.514747037241,160.810823653554,151.392228045314
+"633",8,27,0,1,"Cardiovascular","White","Female","Washington DC",1995,"South Atlantic","South",NA,221.00154145822,238.194011198368,255.514230664955,238.303546154867
+"634",8,27,0,1,"Communicable","White","Female","Washington DC",1995,"South Atlantic","South",NA,32.7232120319688,37.7402081347723,43.9513426982963,37.7924191744868
+"635",8,27,0,1,"Injuries","White","Female","Washington DC",1995,"South Atlantic","South",NA,19.5328790669897,23.4698946508631,27.3401604973079,23.4262431864906
+"636",8,27,0,1,"Non-communicable","White","Female","Washington DC",1995,"South Atlantic","South",NA,49.9460272192359,57.7137993868984,66.8169677474027,57.954648704969
+"637",8,27,1,0,"All other causes","Black","Male","Washington DC",1995,"South Atlantic","South",NA,275.25897293534,292.548006996661,310.167316079894,292.631741255042
+"638",8,27,1,0,"Cancers","Black","Male","Washington DC",1995,"South Atlantic","South",NA,408.431751427022,424.973014664128,443.421465440204,425.084890677089
+"639",8,27,1,0,"Cardiovascular","Black","Male","Washington DC",1995,"South Atlantic","South",NA,549.959042328907,571.299582629731,593.105559067853,571.364413304587
+"640",8,27,1,0,"Communicable","Black","Male","Washington DC",1995,"South Atlantic","South",NA,328.095557927808,350.532463874585,377.710305848229,351.030999466509
+"641",8,27,1,0,"Injuries","Black","Male","Washington DC",1995,"South Atlantic","South",NA,210.697310351189,224.496984063243,238.773975970099,224.326524095297
+"642",8,27,1,0,"Non-communicable","Black","Male","Washington DC",1995,"South Atlantic","South",NA,158.288864906091,169.879453660149,182.606186562356,170.054261167923
+"643",8,27,1,1,"All other causes","Black","Female","Washington DC",1995,"South Atlantic","South",NA,174.164668567385,182.291709940701,190.756756405447,182.349453024759
+"644",8,27,1,1,"Cancers","Black","Female","Washington DC",1995,"South Atlantic","South",NA,221.615952592053,229.291400569663,237.6237586215,229.329088094319
+"645",8,27,1,1,"Cardiovascular","Black","Female","Washington DC",1995,"South Atlantic","South",NA,350.020709946626,362.744612676654,377.653251506837,362.944950316495
+"646",8,27,1,1,"Communicable","Black","Female","Washington DC",1995,"South Atlantic","South",NA,101.462669553894,110.410064708158,119.930733647992,110.429506081565
+"647",8,27,1,1,"Injuries","Black","Female","Washington DC",1995,"South Atlantic","South",NA,38.1849152335695,42.3216575285485,46.1144411135215,42.2507807865654
+"648",8,27,1,1,"Non-communicable","Black","Female","Washington DC",1995,"South Atlantic","South",NA,98.6509791377015,105.881062054291,113.494731644773,105.91366089981
+"649",8,28,0,0,"All other causes","White","Male","Washington DC",1996,"South Atlantic","South",NA,116.011254872609,128.753982281419,142.98785012636,128.918492915368
+"650",8,28,0,0,"Cancers","White","Male","Washington DC",1996,"South Atlantic","South",NA,201.345257494532,217.579186649542,233.164492078008,217.348581915961
+"651",8,28,0,0,"Cardiovascular","White","Male","Washington DC",1996,"South Atlantic","South",NA,330.511678252325,356.079307940442,383.912817122776,356.069142358076
+"652",8,28,0,0,"Communicable","White","Male","Washington DC",1996,"South Atlantic","South",NA,103.332441563875,121.311969842582,143.21109933399,121.833961036886
+"653",8,28,0,0,"Injuries","White","Male","Washington DC",1996,"South Atlantic","South",NA,49.1000832455651,57.4496610769071,65.7230986483123,57.2897079391063
+"654",8,28,0,0,"Non-communicable","White","Male","Washington DC",1996,"South Atlantic","South",NA,73.9584012295038,85.0860208731897,97.4421991347051,85.2159000231612
+"655",8,28,0,1,"All other causes","White","Female","Washington DC",1996,"South Atlantic","South",NA,87.496699630465,96.502384519726,105.789253574547,96.7176378696688
+"656",8,28,0,1,"Cancers","White","Female","Washington DC",1996,"South Atlantic","South",NA,140.302963509386,150.309629815478,160.311667840516,150.318895102761
+"657",8,28,0,1,"Cardiovascular","White","Female","Washington DC",1996,"South Atlantic","South",NA,214.028828076578,230.928172664184,248.468675619481,231.035308911947
+"658",8,28,0,1,"Communicable","White","Female","Washington DC",1996,"South Atlantic","South",NA,32.1356056362738,36.9993405006092,43.7975758018787,37.2683096002991
+"659",8,28,0,1,"Injuries","White","Female","Washington DC",1996,"South Atlantic","South",NA,19.4581195043949,23.10893340162,27.3969698694516,23.1571129520329
+"660",8,28,0,1,"Non-communicable","White","Female","Washington DC",1996,"South Atlantic","South",NA,50.0934553669125,57.8751876848623,67.0993372186983,58.0478405098629
+"661",8,28,1,0,"All other causes","Black","Male","Washington DC",1996,"South Atlantic","South",NA,273.828642072094,291.070476841783,309.295783057882,291.20004677654
+"662",8,28,1,0,"Cancers","Black","Male","Washington DC",1996,"South Atlantic","South",NA,395.366505776802,412.054974728333,429.005117972461,412.104186622383
+"663",8,28,1,0,"Cardiovascular","Black","Male","Washington DC",1996,"South Atlantic","South",NA,547.372416880831,569.710843222329,591.772098985269,569.699384137736
+"664",8,28,1,0,"Communicable","Black","Male","Washington DC",1996,"South Atlantic","South",NA,292.229097649734,314.134253734716,335.359988849542,314.175303368614
+"665",8,28,1,0,"Injuries","Black","Male","Washington DC",1996,"South Atlantic","South",NA,205.138970635484,218.75272971338,234.503794979732,219.215714390461
+"666",8,28,1,0,"Non-communicable","Black","Male","Washington DC",1996,"South Atlantic","South",NA,152.837618583429,163.836973591199,175.368189636632,163.904287085257
+"667",8,28,1,1,"All other causes","Black","Female","Washington DC",1996,"South Atlantic","South",NA,174.064177493722,182.228719630881,191.222698341668,182.30058409112
+"668",8,28,1,1,"Cancers","Black","Female","Washington DC",1996,"South Atlantic","South",NA,218.855418541221,226.677694210556,235.77626641815,226.872436236072
+"669",8,28,1,1,"Cardiovascular","Black","Female","Washington DC",1996,"South Atlantic","South",NA,345.489266609374,359.412076209445,372.985248016369,359.427952890153
+"670",8,28,1,1,"Communicable","Black","Female","Washington DC",1996,"South Atlantic","South",NA,103.519354187044,112.034852356285,121.224484805821,112.024336773029
+"671",8,28,1,1,"Injuries","Black","Female","Washington DC",1996,"South Atlantic","South",NA,37.9439756491626,41.9241338213809,45.9426924959492,41.9399663744397
+"672",8,28,1,1,"Non-communicable","Black","Female","Washington DC",1996,"South Atlantic","South",NA,98.9535174837191,105.693334972388,112.613278015258,105.79378878914
+"673",8,29,0,0,"All other causes","White","Male","Washington DC",1997,"South Atlantic","South",NA,110.3173990219,123.69848453366,136.716290978388,123.592283076622
+"674",8,29,0,0,"Cancers","White","Male","Washington DC",1997,"South Atlantic","South",NA,195.430947016355,211.275751552338,226.838037167434,211.360898067402
+"675",8,29,0,0,"Cardiovascular","White","Male","Washington DC",1997,"South Atlantic","South",NA,310.028760634598,333.437682459243,361.533238782215,333.668747036981
+"676",8,29,0,0,"Communicable","White","Male","Washington DC",1997,"South Atlantic","South",NA,80.6056474938605,96.9389166730298,115.744701542961,97.2701015829554
+"677",8,29,0,0,"Injuries","White","Male","Washington DC",1997,"South Atlantic","South",NA,47.7525422547524,56.3198352331621,64.5131062786773,56.2561683544058
+"678",8,29,0,0,"Non-communicable","White","Male","Washington DC",1997,"South Atlantic","South",NA,74.3806710960168,85.5874367298208,97.4473817862166,85.5387910657178
+"679",8,29,0,1,"All other causes","White","Female","Washington DC",1997,"South Atlantic","South",NA,87.5132907517723,95.7757354542501,105.652270567788,96.0207049704737
+"680",8,29,0,1,"Cancers","White","Female","Washington DC",1997,"South Atlantic","South",NA,139.860177512471,149.719390576802,159.576072348996,149.832280237206
+"681",8,29,0,1,"Cardiovascular","White","Female","Washington DC",1997,"South Atlantic","South",NA,211.073935488633,227.818971051039,244.674638727464,227.809392611144
+"682",8,29,0,1,"Communicable","White","Female","Washington DC",1997,"South Atlantic","South",NA,30.5666335873714,35.8890928414858,42.3044621524103,35.9333581969451
+"683",8,29,0,1,"Injuries","White","Female","Washington DC",1997,"South Atlantic","South",NA,19.18195701601,22.8232879116412,27.2808706299869,22.9387808493823
+"684",8,29,0,1,"Non-communicable","White","Female","Washington DC",1997,"South Atlantic","South",NA,50.7130706786856,58.6780873512693,67.9550407331893,58.9159818229289
+"685",8,29,1,0,"All other causes","Black","Male","Washington DC",1997,"South Atlantic","South",NA,263.777201444858,281.646823823545,297.819750145753,281.441120344085
+"686",8,29,1,0,"Cancers","Black","Male","Washington DC",1997,"South Atlantic","South",NA,379.831064699281,397.043198341994,414.715723060547,397.442124180505
+"687",8,29,1,0,"Cardiovascular","Black","Male","Washington DC",1997,"South Atlantic","South",NA,538.494118508046,559.488968826517,581.589467951325,559.614027471638
+"688",8,29,1,0,"Communicable","Black","Male","Washington DC",1997,"South Atlantic","South",NA,215.826169340741,234.272382076309,255.875000007038,234.543226109361
+"689",8,29,1,0,"Injuries","Black","Male","Washington DC",1997,"South Atlantic","South",NA,188.699270383214,202.36786349451,217.378517189782,202.591141214751
+"690",8,29,1,0,"Non-communicable","Black","Male","Washington DC",1997,"South Atlantic","South",NA,147.109075211858,158.111313968999,169.37548742541,158.08333876817
+"691",8,29,1,1,"All other causes","Black","Female","Washington DC",1997,"South Atlantic","South",NA,170.942530560292,178.894509207528,187.987187492372,179.058266732335
+"692",8,29,1,1,"Cancers","Black","Female","Washington DC",1997,"South Atlantic","South",NA,217.490704654902,225.339910395476,234.68753916885,225.566764331988
+"693",8,29,1,1,"Cardiovascular","Black","Female","Washington DC",1997,"South Atlantic","South",NA,350.534799481548,364.439817226912,378.354032682838,364.174419258545
+"694",8,29,1,1,"Communicable","Black","Female","Washington DC",1997,"South Atlantic","South",NA,98.2412841457733,106.532717443048,116.155586518328,106.66682969848
+"695",8,29,1,1,"Injuries","Black","Female","Washington DC",1997,"South Atlantic","South",NA,37.1886346840175,41.5038574347549,45.2673048574186,41.4539011085117
+"696",8,29,1,1,"Non-communicable","Black","Female","Washington DC",1997,"South Atlantic","South",NA,99.5798580488525,105.920472580272,113.268676941724,106.151443897311
+"697",8,30,0,0,"All other causes","White","Male","Washington DC",1998,"South Atlantic","South",NA,108.289089677972,121.594061175749,134.72220747402,121.638985682183
+"698",8,30,0,0,"Cancers","White","Male","Washington DC",1998,"South Atlantic","South",NA,189.679260478566,205.070353508908,221.211616384099,205.348489278017
+"699",8,30,0,0,"Cardiovascular","White","Male","Washington DC",1998,"South Atlantic","South",NA,301.938003268743,324.746212889291,352.120322489684,325.264498749702
+"700",8,30,0,0,"Communicable","White","Male","Washington DC",1998,"South Atlantic","South",NA,69.164269065312,84.0079571905041,102.11872667983,84.3860911063691
+"701",8,30,0,0,"Injuries","White","Male","Washington DC",1998,"South Atlantic","South",NA,46.8418768259036,55.6643893919061,63.7884345008924,55.5418881195695
+"702",8,30,0,0,"Non-communicable","White","Male","Washington DC",1998,"South Atlantic","South",NA,73.7102902769913,84.4356979973272,95.8315734771038,84.3052125006581
+"703",8,30,0,1,"All other causes","White","Female","Washington DC",1998,"South Atlantic","South",NA,87.899894975667,95.7913651796311,105.568199515483,96.1725885848586
+"704",8,30,0,1,"Cancers","White","Female","Washington DC",1998,"South Atlantic","South",NA,140.266067763436,149.897118396185,160.225732394902,150.061075756725
+"705",8,30,0,1,"Cardiovascular","White","Female","Washington DC",1998,"South Atlantic","South",NA,204.640593574959,221.510762338742,239.192029896872,221.702293435753
+"706",8,30,0,1,"Communicable","White","Female","Washington DC",1998,"South Atlantic","South",NA,30.4690890169012,35.5459750729281,41.8843373162969,35.7579712008546
+"707",8,30,0,1,"Injuries","White","Female","Washington DC",1998,"South Atlantic","South",NA,18.7775062849153,22.4868886578118,26.7088082963629,22.5869852206144
+"708",8,30,0,1,"Non-communicable","White","Female","Washington DC",1998,"South Atlantic","South",NA,50.2867835965439,58.0155745862336,67.0735233609678,58.1677967402125
+"709",8,30,1,0,"All other causes","Black","Male","Washington DC",1998,"South Atlantic","South",NA,263.326763009116,279.558579472334,295.799462441971,279.574909374452
+"710",8,30,1,0,"Cancers","Black","Male","Washington DC",1998,"South Atlantic","South",NA,372.594049683455,388.249606982161,404.729066047406,388.310612315959
+"711",8,30,1,0,"Cardiovascular","Black","Male","Washington DC",1998,"South Atlantic","South",NA,527.018644507919,549.395476137231,571.737939489856,549.59299771123
+"712",8,30,1,0,"Communicable","Black","Male","Washington DC",1998,"South Atlantic","South",NA,188.74990063723,204.920882924024,222.553961207682,205.03072675038
+"713",8,30,1,0,"Injuries","Black","Male","Washington DC",1998,"South Atlantic","South",NA,177.859669935893,191.182970624388,204.817702181041,191.135641426082
+"714",8,30,1,0,"Non-communicable","Black","Male","Washington DC",1998,"South Atlantic","South",NA,145.137678065919,156.00714036629,166.516364043593,155.883389323953
+"715",8,30,1,1,"All other causes","Black","Female","Washington DC",1998,"South Atlantic","South",NA,168.288666461704,176.90666402646,186.032407199387,176.952708222896
+"716",8,30,1,1,"Cancers","Black","Female","Washington DC",1998,"South Atlantic","South",NA,216.049544434841,223.742174249869,232.065872598156,223.765313186912
+"717",8,30,1,1,"Cardiovascular","Black","Female","Washington DC",1998,"South Atlantic","South",NA,352.225270928307,367.16579962277,382.339242636249,367.06228938919
+"718",8,30,1,1,"Communicable","Black","Female","Washington DC",1998,"South Atlantic","South",NA,95.1306448734572,103.216801194566,112.664163640992,103.350468697522
+"719",8,30,1,1,"Injuries","Black","Female","Washington DC",1998,"South Atlantic","South",NA,37.1025220552643,41.0452589985185,45.0420750666677,41.093338697459
+"720",8,30,1,1,"Non-communicable","Black","Female","Washington DC",1998,"South Atlantic","South",NA,100.116758744109,107.395322856184,114.793636813891,107.514040474427
+"721",8,31,0,0,"All other causes","White","Male","Washington DC",1999,"South Atlantic","South",NA,104.809121219339,118.830345860075,132.965145028168,119.059349486834
+"722",8,31,0,0,"Cancers","White","Male","Washington DC",1999,"South Atlantic","South",NA,186.221506819563,202.042748776225,218.372654506373,202.013140991374
+"723",8,31,0,0,"Cardiovascular","White","Male","Washington DC",1999,"South Atlantic","South",NA,303.07145480849,328.500951252843,354.320498041993,328.606779048927
+"724",8,31,0,0,"Communicable","White","Male","Washington DC",1999,"South Atlantic","South",NA,52.1308420884375,66.2502620757332,82.8845821641589,66.6869829996962
+"725",8,31,0,0,"Injuries","White","Male","Washington DC",1999,"South Atlantic","South",NA,46.3538418587311,54.5173921873649,63.0540824424509,54.712963146627
+"726",8,31,0,0,"Non-communicable","White","Male","Washington DC",1999,"South Atlantic","South",NA,73.7467992141161,83.9508252862774,95.5376315402229,84.1176316474989
+"727",8,31,0,1,"All other causes","White","Female","Washington DC",1999,"South Atlantic","South",NA,85.7732183107256,93.7809738831157,103.303697737114,93.9963027821348
+"728",8,31,0,1,"Cancers","White","Female","Washington DC",1999,"South Atlantic","South",NA,139.214527771391,148.403125252041,158.682800232676,148.431991292697
+"729",8,31,0,1,"Cardiovascular","White","Female","Washington DC",1999,"South Atlantic","South",NA,204.265218537889,219.903888913625,236.842887429531,220.125220411478
+"730",8,31,0,1,"Communicable","White","Female","Washington DC",1999,"South Atlantic","South",NA,27.8212583870592,32.9108511088923,39.0458531026324,33.092550639541
+"731",8,31,0,1,"Injuries","White","Female","Washington DC",1999,"South Atlantic","South",NA,18.3418820679245,22.0615360715719,26.5830070086375,22.1631747506819
+"732",8,31,0,1,"Non-communicable","White","Female","Washington DC",1999,"South Atlantic","South",NA,50.2201625328783,58.3302512792333,67.8153125504679,58.5556138642687
+"733",8,31,1,0,"All other causes","Black","Male","Washington DC",1999,"South Atlantic","South",NA,270.490872114826,287.640832079839,305.065504742145,287.60944725827
+"734",8,31,1,0,"Cancers","Black","Male","Washington DC",1999,"South Atlantic","South",NA,366.020745671032,382.012019019367,398.161406485878,382.108587787454
+"735",8,31,1,0,"Cardiovascular","Black","Male","Washington DC",1999,"South Atlantic","South",NA,525.884536374123,546.679756862833,569.406154047463,546.673754220307
+"736",8,31,1,0,"Communicable","Black","Male","Washington DC",1999,"South Atlantic","South",NA,176.842121545746,192.574369679688,209.654073914145,192.694194800662
+"737",8,31,1,0,"Injuries","Black","Male","Washington DC",1999,"South Atlantic","South",NA,171.388259919263,183.850473900532,196.788229564044,184.000242377569
+"738",8,31,1,0,"Non-communicable","Black","Male","Washington DC",1999,"South Atlantic","South",NA,145.769486724552,156.32793861726,167.773495164426,156.481981510529
+"739",8,31,1,1,"All other causes","Black","Female","Washington DC",1999,"South Atlantic","South",NA,166.395043012603,174.726189376025,183.894048385885,174.769743700706
+"740",8,31,1,1,"Cancers","Black","Female","Washington DC",1999,"South Atlantic","South",NA,213.359527455899,221.222822144616,229.536925551778,221.214727898109
+"741",8,31,1,1,"Cardiovascular","Black","Female","Washington DC",1999,"South Atlantic","South",NA,353.539430936751,367.485140396532,383.142574009406,367.767362296505
+"742",8,31,1,1,"Communicable","Black","Female","Washington DC",1999,"South Atlantic","South",NA,86.8353962427279,93.9805041488226,102.39618937402,94.1613706591354
+"743",8,31,1,1,"Injuries","Black","Female","Washington DC",1999,"South Atlantic","South",NA,37.0995893412884,40.9917644951703,44.8726080273018,40.9712158214393
+"744",8,31,1,1,"Non-communicable","Black","Female","Washington DC",1999,"South Atlantic","South",NA,104.622139652989,112.054476758796,120.267281212016,112.070308513888
+"745",8,32,0,0,"All other causes","White","Male","Washington DC",2000,"South Atlantic","South",NA,107.360665277217,120.3039838654,133.7804814793,120.402327915937
+"746",8,32,0,0,"Cancers","White","Male","Washington DC",2000,"South Atlantic","South",NA,185.786421391598,200.267744474864,215.865391195392,200.386736450974
+"747",8,32,0,0,"Cardiovascular","White","Male","Washington DC",2000,"South Atlantic","South",NA,297.921254654157,322.275122716567,347.829395146407,322.621494749669
+"748",8,32,0,0,"Communicable","White","Male","Washington DC",2000,"South Atlantic","South",NA,45.2750904362071,58.9881223000536,74.3237686613843,59.2449033398408
+"749",8,32,0,0,"Injuries","White","Male","Washington DC",2000,"South Atlantic","South",NA,46.0237862548822,54.3051065610972,62.5122033904152,54.2655203359648
+"750",8,32,0,0,"Non-communicable","White","Male","Washington DC",2000,"South Atlantic","South",NA,73.6785972393935,84.6886268814228,95.4056072022986,84.687034414157
+"751",8,32,0,1,"All other causes","White","Female","Washington DC",2000,"South Atlantic","South",NA,82.1950004543377,90.5350227920524,99.1037324607878,90.5417528095094
+"752",8,32,0,1,"Cancers","White","Female","Washington DC",2000,"South Atlantic","South",NA,136.504221176838,146.480281571126,156.394532583104,146.438141177288
+"753",8,32,0,1,"Cardiovascular","White","Female","Washington DC",2000,"South Atlantic","South",NA,200.996509549687,218.74637540643,236.088279480037,218.823690564426
+"754",8,32,0,1,"Communicable","White","Female","Washington DC",2000,"South Atlantic","South",NA,25.3365553516688,30.3790012271662,35.8217103462434,30.3901198171846
+"755",8,32,0,1,"Injuries","White","Female","Washington DC",2000,"South Atlantic","South",NA,18.3373038806436,21.9429084483916,26.7187734872488,22.1418526347499
+"756",8,32,0,1,"Non-communicable","White","Female","Washington DC",2000,"South Atlantic","South",NA,51.4805909182611,59.6807434664035,69.9177537171323,59.8065476009841
+"757",8,32,1,0,"All other causes","Black","Male","Washington DC",2000,"South Atlantic","South",NA,264.155486828892,279.16394022518,295.461464017883,279.358727525935
+"758",8,32,1,0,"Cancers","Black","Male","Washington DC",2000,"South Atlantic","South",NA,358.92287861507,375.72610577145,392.899498039399,375.778070010461
+"759",8,32,1,0,"Cardiovascular","Black","Male","Washington DC",2000,"South Atlantic","South",NA,519.976042623508,541.199045711484,563.616244697959,541.227499965735
+"760",8,32,1,0,"Communicable","Black","Male","Washington DC",2000,"South Atlantic","South",NA,164.283231230294,179.255414944134,195.28012422888,179.433766978504
+"761",8,32,1,0,"Injuries","Black","Male","Washington DC",2000,"South Atlantic","South",NA,169.799845296102,182.308099759215,194.834839776327,182.310518121449
+"762",8,32,1,0,"Non-communicable","Black","Male","Washington DC",2000,"South Atlantic","South",NA,147.320405353737,157.887096650666,169.650611851705,158.160178221443
+"763",8,32,1,1,"All other causes","Black","Female","Washington DC",2000,"South Atlantic","South",NA,161.234616104077,169.125753058708,177.590946032134,169.211763048965
+"764",8,32,1,1,"Cancers","Black","Female","Washington DC",2000,"South Atlantic","South",NA,209.715051198272,217.410560961886,225.603774275127,217.502917530702
+"765",8,32,1,1,"Cardiovascular","Black","Female","Washington DC",2000,"South Atlantic","South",NA,354.576544620151,368.851665361972,382.6625242658,368.597264557157
+"766",8,32,1,1,"Communicable","Black","Female","Washington DC",2000,"South Atlantic","South",NA,82.0633204603512,89.5237645508437,97.3034756516155,89.63113522622
+"767",8,32,1,1,"Injuries","Black","Female","Washington DC",2000,"South Atlantic","South",NA,37.4625710233831,41.3433443322878,45.2490240430448,41.3364212268324
+"768",8,32,1,1,"Non-communicable","Black","Female","Washington DC",2000,"South Atlantic","South",NA,106.364137366396,112.91905879357,120.683782698578,113.123177963225
+"769",8,33,0,0,"All other causes","White","Male","Washington DC",2001,"South Atlantic","South",NA,105.992256862,118.284769397796,133.062985985113,118.59008224464
+"770",8,33,0,0,"Cancers","White","Male","Washington DC",2001,"South Atlantic","South",NA,182.974230954638,197.860887026607,214.116160554172,197.990382683243
+"771",8,33,0,0,"Cardiovascular","White","Male","Washington DC",2001,"South Atlantic","South",NA,287.246738856048,311.384723381816,334.754952957458,311.881922976351
+"772",8,33,0,0,"Communicable","White","Male","Washington DC",2001,"South Atlantic","South",NA,36.5732451607715,48.2284371300869,60.9233896205252,48.1587927162452
+"773",8,33,0,0,"Injuries","White","Male","Washington DC",2001,"South Atlantic","South",NA,46.3533296205081,53.8304268350244,61.3878089020268,53.794243536083
+"774",8,33,0,0,"Non-communicable","White","Male","Washington DC",2001,"South Atlantic","South",NA,73.8899897778793,85.7173381372566,97.368757341899,85.6055811723091
+"775",8,33,0,1,"All other causes","White","Female","Washington DC",2001,"South Atlantic","South",NA,79.8517980783392,88.4467588268739,96.7886829696554,88.4332208402701
+"776",8,33,0,1,"Cancers","White","Female","Washington DC",2001,"South Atlantic","South",NA,135.094778827049,144.971363021936,154.728824303572,144.802692639911
+"777",8,33,0,1,"Cardiovascular","White","Female","Washington DC",2001,"South Atlantic","South",NA,190.623453402691,205.862279176715,223.397722633262,206.274604469671
+"778",8,33,0,1,"Communicable","White","Female","Washington DC",2001,"South Atlantic","South",NA,23.7028772306985,28.2538705868223,34.0455615243259,28.4058206629061
+"779",8,33,0,1,"Injuries","White","Female","Washington DC",2001,"South Atlantic","South",NA,18.1053851597055,21.9047422622084,26.5128282983478,22.0202139143043
+"780",8,33,0,1,"Non-communicable","White","Female","Washington DC",2001,"South Atlantic","South",NA,51.1438431895782,60.1977287730023,70.3652002773276,60.3744866828415
+"781",8,33,1,0,"All other causes","Black","Male","Washington DC",2001,"South Atlantic","South",NA,259.552632282246,275.12561180497,292.050832580015,275.311366640883
+"782",8,33,1,0,"Cancers","Black","Male","Washington DC",2001,"South Atlantic","South",NA,353.841432286633,369.089867267734,385.095967839069,369.16062606151
+"783",8,33,1,0,"Cardiovascular","Black","Male","Washington DC",2001,"South Atlantic","South",NA,520.713875423943,541.03692767159,561.648038031907,541.056067300615
+"784",8,33,1,0,"Communicable","Black","Male","Washington DC",2001,"South Atlantic","South",NA,153.300482368083,167.595268667088,183.366907170499,167.740391586883
+"785",8,33,1,0,"Injuries","Black","Male","Washington DC",2001,"South Atlantic","South",NA,176.593281294067,189.040520389365,202.19766111873,188.992372842245
+"786",8,33,1,0,"Non-communicable","Black","Male","Washington DC",2001,"South Atlantic","South",NA,147.877459410317,158.579485003624,170.221003005652,158.588128059642
+"787",8,33,1,1,"All other causes","Black","Female","Washington DC",2001,"South Atlantic","South",NA,157.329026152838,165.4814358798,173.766641099048,165.379301437445
+"788",8,33,1,1,"Cancers","Black","Female","Washington DC",2001,"South Atlantic","South",NA,204.701265494304,212.811653059239,220.721873817052,212.725693008397
+"789",8,33,1,1,"Cardiovascular","Black","Female","Washington DC",2001,"South Atlantic","South",NA,357.265458917546,371.051726627785,384.866883837149,370.990290765723
+"790",8,33,1,1,"Communicable","Black","Female","Washington DC",2001,"South Atlantic","South",NA,79.4784155100765,86.6725326392094,94.6020191665637,86.7445677360474
+"791",8,33,1,1,"Injuries","Black","Female","Washington DC",2001,"South Atlantic","South",NA,37.8209355135621,41.8195385534449,45.6452564717768,41.8013861702437
+"792",8,33,1,1,"Non-communicable","Black","Female","Washington DC",2001,"South Atlantic","South",NA,102.688809956446,109.800406839126,117.607487241673,109.809240890998
+"793",8,34,0,0,"All other causes","White","Male","Washington DC",2002,"South Atlantic","South",NA,108.198066744262,120.45435701544,133.902688995974,120.641319478639
+"794",8,34,0,0,"Cancers","White","Male","Washington DC",2002,"South Atlantic","South",NA,175.318518757255,189.977177912395,204.890162046993,189.953907299841
+"795",8,34,0,0,"Cardiovascular","White","Male","Washington DC",2002,"South Atlantic","South",NA,267.745648014631,290.37207235543,315.419460249258,290.71695438216
+"796",8,34,0,0,"Communicable","White","Male","Washington DC",2002,"South Atlantic","South",NA,32.5227171368912,42.2988887942862,55.5432003795756,42.6380638411516
+"797",8,34,0,0,"Injuries","White","Male","Washington DC",2002,"South Atlantic","South",NA,45.0065944117563,53.1428876494216,60.9921649575124,53.0771431351373
+"798",8,34,0,0,"Non-communicable","White","Male","Washington DC",2002,"South Atlantic","South",NA,74.6473482735737,85.3678363412124,97.4932806229241,85.5165258361932
+"799",8,34,0,1,"All other causes","White","Female","Washington DC",2002,"South Atlantic","South",NA,79.2411448709327,87.8362208976041,96.4758618905611,87.6459096684713
+"800",8,34,0,1,"Cancers","White","Female","Washington DC",2002,"South Atlantic","South",NA,132.555025007454,141.600821968,151.366278296257,141.718325058425
+"801",8,34,0,1,"Cardiovascular","White","Female","Washington DC",2002,"South Atlantic","South",NA,179.180285485732,195.125419606394,211.607022849684,195.022169939998
+"802",8,34,0,1,"Communicable","White","Female","Washington DC",2002,"South Atlantic","South",NA,21.8810344509741,26.4674762204245,32.2675537338766,26.6391595728446
+"803",8,34,0,1,"Injuries","White","Female","Washington DC",2002,"South Atlantic","South",NA,18.0207448247802,21.8107388547895,26.5156983342037,21.9785017943585
+"804",8,34,0,1,"Non-communicable","White","Female","Washington DC",2002,"South Atlantic","South",NA,48.179869896818,56.4639333010622,65.2716370308365,56.4434409260565
+"805",8,34,1,0,"All other causes","Black","Male","Washington DC",2002,"South Atlantic","South",NA,250.638310440995,266.928695715637,284.283192896668,266.910227506064
+"806",8,34,1,0,"Cancers","Black","Male","Washington DC",2002,"South Atlantic","South",NA,345.229846877088,360.656170594871,375.946230200234,360.507851994885
+"807",8,34,1,0,"Cardiovascular","Black","Male","Washington DC",2002,"South Atlantic","South",NA,520.017867168909,539.455339968967,561.04895562638,539.688865944001
+"808",8,34,1,0,"Communicable","Black","Male","Washington DC",2002,"South Atlantic","South",NA,153.895567582882,168.619963831592,183.681709997905,168.48581139607
+"809",8,34,1,0,"Injuries","Black","Male","Washington DC",2002,"South Atlantic","South",NA,176.032610981671,188.836172592175,202.621111348649,188.857918189138
+"810",8,34,1,0,"Non-communicable","Black","Male","Washington DC",2002,"South Atlantic","South",NA,146.471811653356,157.210992962161,168.029978939146,157.079860663482
+"811",8,34,1,1,"All other causes","Black","Female","Washington DC",2002,"South Atlantic","South",NA,156.440378165167,164.240587344496,172.917761675931,164.299616008843
+"812",8,34,1,1,"Cancers","Black","Female","Washington DC",2002,"South Atlantic","South",NA,200.334848278501,207.849489571553,216.177731257307,207.92020655811
+"813",8,34,1,1,"Cardiovascular","Black","Female","Washington DC",2002,"South Atlantic","South",NA,347.441320137099,362.068962351938,377.224017719392,362.177692526623
+"814",8,34,1,1,"Communicable","Black","Female","Washington DC",2002,"South Atlantic","South",NA,80.6969921616007,88.2691275201254,96.4725881733404,88.367427948183
+"815",8,34,1,1,"Injuries","Black","Female","Washington DC",2002,"South Atlantic","South",NA,37.6685377375429,41.8635085487558,46.2282913800778,41.9066586501264
+"816",8,34,1,1,"Non-communicable","Black","Female","Washington DC",2002,"South Atlantic","South",NA,103.714751814087,110.720907058125,118.552793433343,110.728261180412
+"817",8,35,0,0,"All other causes","White","Male","Washington DC",2003,"South Atlantic","South",NA,106.98478459124,119.721294149374,133.045688368436,119.794537452814
+"818",8,35,0,0,"Cancers","White","Male","Washington DC",2003,"South Atlantic","South",NA,170.534510213395,185.110999226622,201.011111761865,185.271868734593
+"819",8,35,0,0,"Cardiovascular","White","Male","Washington DC",2003,"South Atlantic","South",NA,262.688885950002,287.010988985001,310.404620906128,286.925833473204
+"820",8,35,0,0,"Communicable","White","Male","Washington DC",2003,"South Atlantic","South",NA,28.6980266272416,37.9373284348555,49.7534934996077,38.4677952464557
+"821",8,35,0,0,"Injuries","White","Male","Washington DC",2003,"South Atlantic","South",NA,45.0953436402421,52.4790548248501,59.738032576449,52.4797752141886
+"822",8,35,0,0,"Non-communicable","White","Male","Washington DC",2003,"South Atlantic","South",NA,71.8337790656104,82.6859344124831,93.5582444791057,82.7161604206499
+"823",8,35,0,1,"All other causes","White","Female","Washington DC",2003,"South Atlantic","South",NA,78.9841229602411,87.9014391501838,96.6659559818227,87.7745769190288
+"824",8,35,0,1,"Cancers","White","Female","Washington DC",2003,"South Atlantic","South",NA,129.2702996732,138.308451588826,148.263710656187,138.542539240703
+"825",8,35,0,1,"Cardiovascular","White","Female","Washington DC",2003,"South Atlantic","South",NA,166.112024519114,180.411979227079,196.227349881827,180.568688272643
+"826",8,35,0,1,"Communicable","White","Female","Washington DC",2003,"South Atlantic","South",NA,21.1940236473713,25.7284607994465,31.0728143138366,25.722885645931
+"827",8,35,0,1,"Injuries","White","Female","Washington DC",2003,"South Atlantic","South",NA,18.0176625338233,21.6988110123615,26.539536356627,21.8880685020178
+"828",8,35,0,1,"Non-communicable","White","Female","Washington DC",2003,"South Atlantic","South",NA,48.2513698387305,56.7560910979404,66.6521700553805,56.9851618965219
+"829",8,35,1,0,"All other causes","Black","Male","Washington DC",2003,"South Atlantic","South",NA,242.606119285929,258.301702160897,274.848205610436,258.348358459972
+"830",8,35,1,0,"Cancers","Black","Male","Washington DC",2003,"South Atlantic","South",NA,331.125458545657,345.488111660821,360.666340219803,345.454271152509
+"831",8,35,1,0,"Cardiovascular","Black","Male","Washington DC",2003,"South Atlantic","South",NA,511.117969485678,531.166912317438,552.176117793165,531.084639520494
+"832",8,35,1,0,"Communicable","Black","Male","Washington DC",2003,"South Atlantic","South",NA,151.178147549568,164.572404626846,179.333925827985,164.685653600094
+"833",8,35,1,0,"Injuries","Black","Male","Washington DC",2003,"South Atlantic","South",NA,174.949376633927,186.55359927059,200.144980393601,186.59253336207
+"834",8,35,1,0,"Non-communicable","Black","Male","Washington DC",2003,"South Atlantic","South",NA,144.93007689667,155.730534618493,167.578852856712,155.876924542545
+"835",8,35,1,1,"All other causes","Black","Female","Washington DC",2003,"South Atlantic","South",NA,154.769914817467,162.923226632937,171.698172220893,163.068459501939
+"836",8,35,1,1,"Cancers","Black","Female","Washington DC",2003,"South Atlantic","South",NA,195.411688489992,203.216686979224,211.164304525811,203.224561171359
+"837",8,35,1,1,"Cardiovascular","Black","Female","Washington DC",2003,"South Atlantic","South",NA,342.973701755434,356.408458031647,371.715822253004,356.489920405904
+"838",8,35,1,1,"Communicable","Black","Female","Washington DC",2003,"South Atlantic","South",NA,83.2492968161242,91.4917608206059,99.7297182001374,91.5435283588157
+"839",8,35,1,1,"Injuries","Black","Female","Washington DC",2003,"South Atlantic","South",NA,37.8664378652849,41.979581912567,46.6444966364005,42.0689848983635
+"840",8,35,1,1,"Non-communicable","Black","Female","Washington DC",2003,"South Atlantic","South",NA,103.243652137963,110.820792122663,118.790052029773,110.945669028936
+"841",8,36,0,0,"All other causes","White","Male","Washington DC",2004,"South Atlantic","South",NA,105.129657996961,116.49684364473,129.448806494169,116.69643579956
+"842",8,36,0,0,"Cancers","White","Male","Washington DC",2004,"South Atlantic","South",NA,169.170607128356,182.630902070942,196.809976724819,182.620465703521
+"843",8,36,0,0,"Cardiovascular","White","Male","Washington DC",2004,"South Atlantic","South",NA,253.701338236371,276.055923808473,299.133706548772,276.445179728795
+"844",8,36,0,0,"Communicable","White","Male","Washington DC",2004,"South Atlantic","South",NA,27.0183129741368,36.4221921256023,48.2659030105856,36.5989033076536
+"845",8,36,0,0,"Injuries","White","Male","Washington DC",2004,"South Atlantic","South",NA,44.2573303431636,51.8967056083953,58.9411869593456,51.8511388406293
+"846",8,36,0,0,"Non-communicable","White","Male","Washington DC",2004,"South Atlantic","South",NA,72.3067868217566,81.7797583425572,93.5978195856917,82.066972388938
+"847",8,36,0,1,"All other causes","White","Female","Washington DC",2004,"South Atlantic","South",NA,80.0453759570981,88.961627934218,97.3548973600456,88.9318060245111
+"848",8,36,0,1,"Cancers","White","Female","Washington DC",2004,"South Atlantic","South",NA,127.077763527935,135.967656436125,145.803534490036,136.099962684218
+"849",8,36,0,1,"Cardiovascular","White","Female","Washington DC",2004,"South Atlantic","South",NA,162.054647263613,176.425615728682,192.193073390954,176.770201380228
+"850",8,36,0,1,"Communicable","White","Female","Washington DC",2004,"South Atlantic","South",NA,19.7168725040324,24.1849450322865,29.6951686844474,24.2916059904473
+"851",8,36,0,1,"Injuries","White","Female","Washington DC",2004,"South Atlantic","South",NA,18.2199594093942,21.6887781342625,26.2024529568378,21.8769082792133
+"852",8,36,0,1,"Non-communicable","White","Female","Washington DC",2004,"South Atlantic","South",NA,51.3873938129155,59.7504537173177,69.6007395514447,59.9021214003445
+"853",8,36,1,0,"All other causes","Black","Male","Washington DC",2004,"South Atlantic","South",NA,233.378474699225,249.271887246242,263.93538092245,249.026990160468
+"854",8,36,1,0,"Cancers","Black","Male","Washington DC",2004,"South Atlantic","South",NA,323.401038064495,337.352191777751,352.054002837897,337.446964961712
+"855",8,36,1,0,"Cardiovascular","Black","Male","Washington DC",2004,"South Atlantic","South",NA,494.663393977306,516.064131759128,534.945858891981,515.490113361049
+"856",8,36,1,0,"Communicable","Black","Male","Washington DC",2004,"South Atlantic","South",NA,144.588093788802,159.241894873146,174.902212173698,159.453611401193
+"857",8,36,1,0,"Injuries","Black","Male","Washington DC",2004,"South Atlantic","South",NA,165.112861658997,177.503270719756,190.139296761587,177.620423795523
+"858",8,36,1,0,"Non-communicable","Black","Male","Washington DC",2004,"South Atlantic","South",NA,146.682551893923,156.595486078743,168.317100638624,156.777794758967
+"859",8,36,1,1,"All other causes","Black","Female","Washington DC",2004,"South Atlantic","South",NA,154.829876894798,162.495817306864,171.143041418594,162.695653111885
+"860",8,36,1,1,"Cancers","Black","Female","Washington DC",2004,"South Atlantic","South",NA,192.291670860366,200.48011088291,208.697319640354,200.48827537619
+"861",8,36,1,1,"Cardiovascular","Black","Female","Washington DC",2004,"South Atlantic","South",NA,330.706296150182,343.820369290228,357.761992483999,343.94586900715
+"862",8,36,1,1,"Communicable","Black","Female","Washington DC",2004,"South Atlantic","South",NA,84.9638518186622,92.5614129603308,101.003116488364,92.6689641884612
+"863",8,36,1,1,"Injuries","Black","Female","Washington DC",2004,"South Atlantic","South",NA,37.3898213119801,41.7158779075109,46.0244219499905,41.7598177993956
+"864",8,36,1,1,"Non-communicable","Black","Female","Washington DC",2004,"South Atlantic","South",NA,104.629808265325,111.908740737877,120.085895767724,112.076537257862
+"865",8,37,0,0,"All other causes","White","Male","Washington DC",2005,"South Atlantic","South",NA,103.984206965045,116.44214685787,130.452663883814,116.658405859107
+"866",8,37,0,0,"Cancers","White","Male","Washington DC",2005,"South Atlantic","South",NA,167.092193243469,180.938531378907,194.985342376193,181.044200368583
+"867",8,37,0,0,"Cardiovascular","White","Male","Washington DC",2005,"South Atlantic","South",NA,240.153273602998,262.344563746054,283.929115156174,262.496323215249
+"868",8,37,0,0,"Communicable","White","Male","Washington DC",2005,"South Atlantic","South",NA,27.4374020500669,37.3702822446684,47.7218943915455,37.4124857591476
+"869",8,37,0,0,"Injuries","White","Male","Washington DC",2005,"South Atlantic","South",NA,43.7632068909249,51.206813451637,58.2987972752628,51.2489164068532
+"870",8,37,0,0,"Non-communicable","White","Male","Washington DC",2005,"South Atlantic","South",NA,67.5807673544301,77.5570862025866,88.029682926874,77.5639122311381
+"871",8,37,0,1,"All other causes","White","Female","Washington DC",2005,"South Atlantic","South",NA,81.1253833703996,90.0479701007107,98.8170395326344,89.9235427563375
+"872",8,37,0,1,"Cancers","White","Female","Washington DC",2005,"South Atlantic","South",NA,125.682167880954,134.369633011745,144.026213084288,134.461534545217
+"873",8,37,0,1,"Cardiovascular","White","Female","Washington DC",2005,"South Atlantic","South",NA,152.617349254398,166.472224473037,180.565437460653,166.363637371586
+"874",8,37,0,1,"Communicable","White","Female","Washington DC",2005,"South Atlantic","South",NA,19.1361685085346,23.6764755707623,29.5514942819969,23.8742388693471
+"875",8,37,0,1,"Injuries","White","Female","Washington DC",2005,"South Atlantic","South",NA,18.434123097375,21.7440230938186,26.4579158324891,21.9424356424597
+"876",8,37,0,1,"Non-communicable","White","Female","Washington DC",2005,"South Atlantic","South",NA,48.3316102828078,56.5516378033641,66.7198203205674,56.7816285406554
+"877",8,37,1,0,"All other causes","Black","Male","Washington DC",2005,"South Atlantic","South",NA,228.266545761023,244.653324679943,260.06048383907,244.519390920308
+"878",8,37,1,0,"Cancers","Black","Male","Washington DC",2005,"South Atlantic","South",NA,318.227906274103,331.953740922485,347.907836865796,332.109229039637
+"879",8,37,1,0,"Cardiovascular","Black","Male","Washington DC",2005,"South Atlantic","South",NA,485.253434406548,505.498590250127,525.760355398927,505.626239446234
+"880",8,37,1,0,"Communicable","Black","Male","Washington DC",2005,"South Atlantic","South",NA,134.312046082762,147.098443636062,162.214024129334,147.320938425588
+"881",8,37,1,0,"Injuries","Black","Male","Washington DC",2005,"South Atlantic","South",NA,158.505399914201,170.663466307053,183.584984094007,170.626815401278
+"882",8,37,1,0,"Non-communicable","Black","Male","Washington DC",2005,"South Atlantic","South",NA,144.585908699562,154.463948664933,166.681343693206,154.909393021249
+"883",8,37,1,1,"All other causes","Black","Female","Washington DC",2005,"South Atlantic","South",NA,157.080498915743,164.849669055673,173.868165088342,165.036471065516
+"884",8,37,1,1,"Cancers","Black","Female","Washington DC",2005,"South Atlantic","South",NA,190.442762053197,198.538095836903,206.574589717133,198.621041447359
+"885",8,37,1,1,"Cardiovascular","Black","Female","Washington DC",2005,"South Atlantic","South",NA,327.420335208963,341.008632557955,354.385667777902,341.074348771737
+"886",8,37,1,1,"Communicable","Black","Female","Washington DC",2005,"South Atlantic","South",NA,88.3755170262777,95.8008173917546,103.919919623333,95.8886017614446
+"887",8,37,1,1,"Injuries","Black","Female","Washington DC",2005,"South Atlantic","South",NA,37.128718577693,41.4806443930503,45.7656234026315,41.4945221758174
+"888",8,37,1,1,"Non-communicable","Black","Female","Washington DC",2005,"South Atlantic","South",NA,100.038323145122,107.50144114644,115.353922724634,107.560372676937
+"889",8,38,0,0,"All other causes","White","Male","Washington DC",2006,"South Atlantic","South",NA,103.761000151699,116.209725948071,127.993373940635,116.07281791973
+"890",8,38,0,0,"Cancers","White","Male","Washington DC",2006,"South Atlantic","South",NA,162.337882117655,175.023840191851,188.332938452402,175.263891372291
+"891",8,38,0,0,"Cardiovascular","White","Male","Washington DC",2006,"South Atlantic","South",NA,242.807992785197,262.830111796563,284.222820674108,263.137395702955
+"892",8,38,0,0,"Communicable","White","Male","Washington DC",2006,"South Atlantic","South",NA,29.6767514590358,39.4179101386,51.5860033386856,39.7155493507294
+"893",8,38,0,0,"Injuries","White","Male","Washington DC",2006,"South Atlantic","South",NA,43.3908817456865,50.6315962215376,58.0630290032349,50.6402496285575
+"894",8,38,0,0,"Non-communicable","White","Male","Washington DC",2006,"South Atlantic","South",NA,68.159634230596,78.2314175178467,90.1917642836585,78.483953960374
+"895",8,38,0,1,"All other causes","White","Female","Washington DC",2006,"South Atlantic","South",NA,82.3540590997727,90.6566196735779,99.4350612104682,90.6350745896936
+"896",8,38,0,1,"Cancers","White","Female","Washington DC",2006,"South Atlantic","South",NA,124.895342196139,133.822376676643,143.429051625499,133.678062463018
+"897",8,38,0,1,"Cardiovascular","White","Female","Washington DC",2006,"South Atlantic","South",NA,149.899526496269,163.476672025932,179.081686785605,163.523961201606
+"898",8,38,0,1,"Communicable","White","Female","Washington DC",2006,"South Atlantic","South",NA,18.2669113788723,23.2265953564678,29.2744260650397,23.3495792944131
+"899",8,38,0,1,"Injuries","White","Female","Washington DC",2006,"South Atlantic","South",NA,18.5248441854947,21.9847794599655,26.6751005791882,22.1408037952478
+"900",8,38,0,1,"Non-communicable","White","Female","Washington DC",2006,"South Atlantic","South",NA,49.1707327761364,57.5955512593998,67.5919217580936,57.8319429196903
+"901",8,38,1,0,"All other causes","Black","Male","Washington DC",2006,"South Atlantic","South",NA,216.887671567731,231.754760306507,247.348549578731,231.682690264676
+"902",8,38,1,0,"Cancers","Black","Male","Washington DC",2006,"South Atlantic","South",NA,314.140894595834,327.634975169518,342.262140446855,327.956856209517
+"903",8,38,1,0,"Cardiovascular","Black","Male","Washington DC",2006,"South Atlantic","South",NA,475.181723860226,494.075627438805,513.91484156128,494.003216339036
+"904",8,38,1,0,"Communicable","Black","Male","Washington DC",2006,"South Atlantic","South",NA,128.262660044922,141.404844125343,155.490712474934,141.648828292495
+"905",8,38,1,0,"Injuries","Black","Male","Washington DC",2006,"South Atlantic","South",NA,151.49690734795,163.189395919464,175.698285055828,163.344876445357
+"906",8,38,1,0,"Non-communicable","Black","Male","Washington DC",2006,"South Atlantic","South",NA,139.138685587144,149.449672920296,160.578237444476,149.387133936187
+"907",8,38,1,1,"All other causes","Black","Female","Washington DC",2006,"South Atlantic","South",NA,155.910894740347,163.650579967906,172.164048294412,163.784604243763
+"908",8,38,1,1,"Cancers","Black","Female","Washington DC",2006,"South Atlantic","South",NA,189.856919719576,197.876371834831,206.18561062501,198.007550578261
+"909",8,38,1,1,"Cardiovascular","Black","Female","Washington DC",2006,"South Atlantic","South",NA,314.97324784541,329.079516541062,342.220289255171,329.057293691032
+"910",8,38,1,1,"Communicable","Black","Female","Washington DC",2006,"South Atlantic","South",NA,84.3229677473016,91.9922542505357,101.078335506499,92.2820947020297
+"911",8,38,1,1,"Injuries","Black","Female","Washington DC",2006,"South Atlantic","South",NA,37.4387879168767,41.34014562004,45.7053664864559,41.412449407991
+"912",8,38,1,1,"Non-communicable","Black","Female","Washington DC",2006,"South Atlantic","South",NA,98.7671652129029,105.801777075242,113.050601655256,105.877999586436
+"913",8,39,0,0,"All other causes","White","Male","Washington DC",2007,"South Atlantic","South",NA,103.191486445846,115.012785025978,128.622284211585,115.30540011438
+"914",8,39,0,0,"Cancers","White","Male","Washington DC",2007,"South Atlantic","South",NA,156.93494212252,169.79242646892,183.072700750276,170.026431854497
+"915",8,39,0,0,"Cardiovascular","White","Male","Washington DC",2007,"South Atlantic","South",NA,231.084313960726,248.695104583524,270.100467159714,249.218805868737
+"916",8,39,0,0,"Communicable","White","Male","Washington DC",2007,"South Atlantic","South",NA,27.9440393881578,36.9553170634492,48.5413896305368,37.2445973979906
+"917",8,39,0,0,"Injuries","White","Male","Washington DC",2007,"South Atlantic","South",NA,42.6399095818049,50.2549021345233,58.1857634661391,50.2436742070953
+"918",8,39,0,0,"Non-communicable","White","Male","Washington DC",2007,"South Atlantic","South",NA,69.2065044947267,80.3526227235513,92.5407364929568,80.5417485239985
+"919",8,39,0,1,"All other causes","White","Female","Washington DC",2007,"South Atlantic","South",NA,85.1138760391774,93.0003931401212,101.83795327723,93.1720337313216
+"920",8,39,0,1,"Cancers","White","Female","Washington DC",2007,"South Atlantic","South",NA,121.460062068748,130.402670879902,139.118254410944,130.485935917518
+"921",8,39,0,1,"Cardiovascular","White","Female","Washington DC",2007,"South Atlantic","South",NA,143.944690011872,156.5500073753,171.965362994269,156.884450257212
+"922",8,39,0,1,"Communicable","White","Female","Washington DC",2007,"South Atlantic","South",NA,18.2655713470033,23.1014209759409,28.9010440444993,23.3900795517138
+"923",8,39,0,1,"Injuries","White","Female","Washington DC",2007,"South Atlantic","South",NA,18.7448492704289,22.3519941940226,27.3863679830637,22.4712340052648
+"924",8,39,0,1,"Non-communicable","White","Female","Washington DC",2007,"South Atlantic","South",NA,49.9930133199541,58.4948535655922,68.2385455661718,58.5810529871892
+"925",8,39,1,0,"All other causes","Black","Male","Washington DC",2007,"South Atlantic","South",NA,215.852388105839,230.037519046836,245.411091603684,229.982810637182
+"926",8,39,1,0,"Cancers","Black","Male","Washington DC",2007,"South Atlantic","South",NA,306.13586894312,319.671014963876,334.522902846498,319.774653433897
+"927",8,39,1,0,"Cardiovascular","Black","Male","Washington DC",2007,"South Atlantic","South",NA,459.53665144275,479.301373602295,497.610437589958,479.237606479378
+"928",8,39,1,0,"Communicable","Black","Male","Washington DC",2007,"South Atlantic","South",NA,121.438522135887,133.338775196758,146.535294956689,133.51190809837
+"929",8,39,1,0,"Injuries","Black","Male","Washington DC",2007,"South Atlantic","South",NA,146.56601308431,157.254352835716,170.345296720434,157.527303437223
+"930",8,39,1,0,"Non-communicable","Black","Male","Washington DC",2007,"South Atlantic","South",NA,134.186682318385,144.621099366261,154.865182009016,144.694148544097
+"931",8,39,1,1,"All other causes","Black","Female","Washington DC",2007,"South Atlantic","South",NA,155.221571581183,162.890638514463,171.609737565872,162.976868290082
+"932",8,39,1,1,"Cancers","Black","Female","Washington DC",2007,"South Atlantic","South",NA,190.990415242767,198.836380008741,207.40311352498,198.999760407882
+"933",8,39,1,1,"Cardiovascular","Black","Female","Washington DC",2007,"South Atlantic","South",NA,302.180575285342,314.986065372841,329.151584129309,315.245989682745
+"934",8,39,1,1,"Communicable","Black","Female","Washington DC",2007,"South Atlantic","South",NA,79.4506925944727,87.1882564099198,95.0995706416987,87.1846801104552
+"935",8,39,1,1,"Injuries","Black","Female","Washington DC",2007,"South Atlantic","South",NA,36.3924665347678,40.6549901002952,44.9823399814676,40.6804116078835
+"936",8,39,1,1,"Non-communicable","Black","Female","Washington DC",2007,"South Atlantic","South",NA,95.6301034758556,102.792331492613,110.731543938075,102.852206252093
+"937",8,40,0,0,"All other causes","White","Male","Washington DC",2008,"South Atlantic","South",NA,101.537991417173,112.918698014664,125.603205762756,112.919905068626
+"938",8,40,0,0,"Cancers","White","Male","Washington DC",2008,"South Atlantic","South",NA,150.507911905097,163.613579935096,175.775501188146,163.435027648629
+"939",8,40,0,0,"Cardiovascular","White","Male","Washington DC",2008,"South Atlantic","South",NA,216.288761308936,233.93035590731,253.905806390569,234.384739071549
+"940",8,40,0,0,"Communicable","White","Male","Washington DC",2008,"South Atlantic","South",NA,29.2309538821096,38.0027117129487,50.2048353999304,38.334478905303
+"941",8,40,0,0,"Injuries","White","Male","Washington DC",2008,"South Atlantic","South",NA,42.0589999355718,49.3977924391633,57.369917991647,49.3987748930265
+"942",8,40,0,0,"Non-communicable","White","Male","Washington DC",2008,"South Atlantic","South",NA,64.639652522495,75.6231068921039,86.5117429632514,75.591592599247
+"943",8,40,0,1,"All other causes","White","Female","Washington DC",2008,"South Atlantic","South",NA,82.7590895495559,91.2107437595081,100.322352367631,91.3240604711994
+"944",8,40,0,1,"Cancers","White","Female","Washington DC",2008,"South Atlantic","South",NA,118.254655115735,127.299068650957,136.922841754346,127.334356064143
+"945",8,40,0,1,"Cardiovascular","White","Female","Washington DC",2008,"South Atlantic","South",NA,138.466065710207,151.928321043624,165.362674871584,151.929565498799
+"946",8,40,0,1,"Communicable","White","Female","Washington DC",2008,"South Atlantic","South",NA,18.004687268609,22.6235301381002,28.6389428918549,22.8912450505688
+"947",8,40,0,1,"Injuries","White","Female","Washington DC",2008,"South Atlantic","South",NA,18.9983948929,22.6388231946469,27.6292385411545,22.8035984253746
+"948",8,40,0,1,"Non-communicable","White","Female","Washington DC",2008,"South Atlantic","South",NA,49.6668029345163,58.7079058186626,68.8748371176148,58.8519649434404
+"949",8,40,1,0,"All other causes","Black","Male","Washington DC",2008,"South Atlantic","South",NA,218.24177132304,232.033639004456,246.920763335222,232.106346707985
+"950",8,40,1,0,"Cancers","Black","Male","Washington DC",2008,"South Atlantic","South",NA,300.43841897716,313.409405143058,328.211476453515,313.787730325142
+"951",8,40,1,0,"Cardiovascular","Black","Male","Washington DC",2008,"South Atlantic","South",NA,446.11218655522,465.613049954699,484.674206556716,465.528014262628
+"952",8,40,1,0,"Communicable","Black","Male","Washington DC",2008,"South Atlantic","South",NA,110.952393425137,123.084965416552,135.689413308935,123.249322753617
+"953",8,40,1,0,"Injuries","Black","Male","Washington DC",2008,"South Atlantic","South",NA,138.084448098282,148.060784738501,160.843934725354,148.459633831388
+"954",8,40,1,0,"Non-communicable","Black","Male","Washington DC",2008,"South Atlantic","South",NA,131.953567447126,141.760427788047,152.246654230685,141.903750087337
+"955",8,40,1,1,"All other causes","Black","Female","Washington DC",2008,"South Atlantic","South",NA,156.104547781256,164.436867810062,173.314487465603,164.614142708294
+"956",8,40,1,1,"Cancers","Black","Female","Washington DC",2008,"South Atlantic","South",NA,189.111684771619,197.842295192073,206.101884710429,197.82583586207
+"957",8,40,1,1,"Cardiovascular","Black","Female","Washington DC",2008,"South Atlantic","South",NA,290.246897858756,302.870466270789,316.144740693792,302.968520237978
+"958",8,40,1,1,"Communicable","Black","Female","Washington DC",2008,"South Atlantic","South",NA,74.4021009822917,81.7970185081801,90.0440698191342,81.7593228041247
+"959",8,40,1,1,"Injuries","Black","Female","Washington DC",2008,"South Atlantic","South",NA,35.5040467655437,39.7647099108963,44.5516337813754,39.8663569866922
+"960",8,40,1,1,"Non-communicable","Black","Female","Washington DC",2008,"South Atlantic","South",NA,91.7332006187556,99.344170191548,106.730150302552,99.4096943223814
+"961",8,41,0,0,"All other causes","White","Male","Washington DC",2009,"South Atlantic","South",NA,99.530491129961,110.879833312666,122.922969223083,110.98688935436
+"962",8,41,0,0,"Cancers","White","Male","Washington DC",2009,"South Atlantic","South",NA,144.612131656459,157.582155109146,168.846652316965,157.332537710275
+"963",8,41,0,0,"Cardiovascular","White","Male","Washington DC",2009,"South Atlantic","South",NA,203.438106371916,221.4747666457,241.666658114565,221.828228605902
+"964",8,41,0,0,"Communicable","White","Male","Washington DC",2009,"South Atlantic","South",NA,27.7644938837134,37.4630074340124,49.7647113664586,37.6245500484417
+"965",8,41,0,0,"Injuries","White","Male","Washington DC",2009,"South Atlantic","South",NA,41.0066989550178,48.9270305677995,56.4180495287279,48.8634423783101
+"966",8,41,0,0,"Non-communicable","White","Male","Washington DC",2009,"South Atlantic","South",NA,60.7840302508204,70.8890097777631,81.3656720000848,70.9486668155257
+"967",8,41,0,1,"All other causes","White","Female","Washington DC",2009,"South Atlantic","South",NA,83.6570215705939,91.5215583201163,100.665021472431,91.7814552154193
+"968",8,41,0,1,"Cancers","White","Female","Washington DC",2009,"South Atlantic","South",NA,117.537267058655,126.543700035866,136.176515711717,126.513634102638
+"969",8,41,0,1,"Cardiovascular","White","Female","Washington DC",2009,"South Atlantic","South",NA,131.052262813197,143.229018088442,156.929242757381,143.521212895492
+"970",8,41,0,1,"Communicable","White","Female","Washington DC",2009,"South Atlantic","South",NA,17.4212061170853,22.2272890537345,28.1418624370261,22.4524786622557
+"971",8,41,0,1,"Injuries","White","Female","Washington DC",2009,"South Atlantic","South",NA,19.1496316596376,22.9744717749576,28.4646255053938,23.1592589140567
+"972",8,41,0,1,"Non-communicable","White","Female","Washington DC",2009,"South Atlantic","South",NA,44.7400236840438,53.6411515479466,63.825179680937,53.6287654968802
+"973",8,41,1,0,"All other causes","Black","Male","Washington DC",2009,"South Atlantic","South",NA,213.420046437566,228.127075379544,244.086259793795,228.49483583401
+"974",8,41,1,0,"Cancers","Black","Male","Washington DC",2009,"South Atlantic","South",NA,293.299258701914,305.48935630994,320.369325219056,305.8880708841
+"975",8,41,1,0,"Cardiovascular","Black","Male","Washington DC",2009,"South Atlantic","South",NA,432.135657370892,450.860653867415,468.572934155617,450.81327736977
+"976",8,41,1,0,"Communicable","Black","Male","Washington DC",2009,"South Atlantic","South",NA,108.619016142521,119.723821930822,132.297144994152,119.926646806279
+"977",8,41,1,0,"Injuries","Black","Male","Washington DC",2009,"South Atlantic","South",NA,129.443180207577,139.411280307233,150.997760470914,139.646820160318
+"978",8,41,1,0,"Non-communicable","Black","Male","Washington DC",2009,"South Atlantic","South",NA,126.108894388384,137.031865280652,147.20021436591,136.889655361825
+"979",8,41,1,1,"All other causes","Black","Female","Washington DC",2009,"South Atlantic","South",NA,155.177795551432,162.810774739304,172.303951340318,162.903736810948
+"980",8,41,1,1,"Cancers","Black","Female","Washington DC",2009,"South Atlantic","South",NA,188.485090749104,196.618076473459,204.896970372407,196.650674453965
+"981",8,41,1,1,"Cardiovascular","Black","Female","Washington DC",2009,"South Atlantic","South",NA,276.714948532204,289.646505776312,303.131982489486,289.808818920598
+"982",8,41,1,1,"Communicable","Black","Female","Washington DC",2009,"South Atlantic","South",NA,67.9805447458376,75.1829099655666,83.0089258848406,75.1816581962361
+"983",8,41,1,1,"Injuries","Black","Female","Washington DC",2009,"South Atlantic","South",NA,35.0895194964835,39.3517501239866,44.0319390529772,39.3352343819582
+"984",8,41,1,1,"Non-communicable","Black","Female","Washington DC",2009,"South Atlantic","South",NA,88.9294442681343,95.726871498113,102.894265034284,95.7813625295365
+"985",8,42,0,0,"All other causes","White","Male","Washington DC",2010,"South Atlantic","South",NA,100.94560977699,112.110674100547,124.793260606852,112.371245702116
+"986",8,42,0,0,"Cancers","White","Male","Washington DC",2010,"South Atlantic","South",NA,138.392476007059,151.896404420587,163.77832308007,151.603146768553
+"987",8,42,0,0,"Cardiovascular","White","Male","Washington DC",2010,"South Atlantic","South",NA,189.726282381718,208.844827463716,228.349668738883,209.114904222765
+"988",8,42,0,0,"Communicable","White","Male","Washington DC",2010,"South Atlantic","South",NA,26.307622320459,35.2609791673724,46.1873558103836,35.555193442429
+"989",8,42,0,0,"Injuries","White","Male","Washington DC",2010,"South Atlantic","South",NA,40.0197686022594,48.8055184890691,56.2595239128788,48.6532545081895
+"990",8,42,0,0,"Non-communicable","White","Male","Washington DC",2010,"South Atlantic","South",NA,57.5490839164309,67.4217860577591,78.4597294560352,67.4258912527477
+"991",8,42,0,1,"All other causes","White","Female","Washington DC",2010,"South Atlantic","South",NA,83.2636800032023,91.7670533433458,101.197524704885,91.8665437304987
+"992",8,42,0,1,"Cancers","White","Female","Washington DC",2010,"South Atlantic","South",NA,115.803377905617,124.679375653479,134.397733679871,124.874690587137
+"993",8,42,0,1,"Cardiovascular","White","Female","Washington DC",2010,"South Atlantic","South",NA,126.709535095512,138.759914373257,152.224246826734,138.685294014015
+"994",8,42,0,1,"Communicable","White","Female","Washington DC",2010,"South Atlantic","South",NA,17.5888841237112,22.498174901278,28.5034578472513,22.654962407033
+"995",8,42,0,1,"Injuries","White","Female","Washington DC",2010,"South Atlantic","South",NA,19.3810543117122,23.3576678566972,29.071710080088,23.6010707966846
+"996",8,42,0,1,"Non-communicable","White","Female","Washington DC",2010,"South Atlantic","South",NA,48.2052664864237,56.8005144306434,67.2650803571991,56.9753507166056
+"997",8,42,1,0,"All other causes","Black","Male","Washington DC",2010,"South Atlantic","South",NA,191.498755929405,204.383944639963,218.916486812291,204.810640894391
+"998",8,42,1,0,"Cancers","Black","Male","Washington DC",2010,"South Atlantic","South",NA,283.483435317598,296.984635203956,309.598511696226,296.79782388513
+"999",8,42,1,0,"Cardiovascular","Black","Male","Washington DC",2010,"South Atlantic","South",NA,419.573353725232,437.876909681386,456.674443360804,438.158432229952
+"1000",8,42,1,0,"Communicable","Black","Male","Washington DC",2010,"South Atlantic","South",NA,98.2834591350608,109.026507611387,120.722698901071,109.216663024802
+"1001",8,42,1,0,"Injuries","Black","Male","Washington DC",2010,"South Atlantic","South",NA,122.459719943134,133.348574320991,144.330521245763,133.421182365624
+"1002",8,42,1,0,"Non-communicable","Black","Male","Washington DC",2010,"South Atlantic","South",NA,125.080448305906,134.846609006782,145.527935964634,134.916765127335
+"1003",8,42,1,1,"All other causes","Black","Female","Washington DC",2010,"South Atlantic","South",NA,152.123109289961,160.258352464308,169.076774494733,160.343345700562
+"1004",8,42,1,1,"Cancers","Black","Female","Washington DC",2010,"South Atlantic","South",NA,186.576497727293,194.990196292782,203.071297436978,194.935775468672
+"1005",8,42,1,1,"Cardiovascular","Black","Female","Washington DC",2010,"South Atlantic","South",NA,269.744611963161,282.074216636625,293.744539399171,281.731408082194
+"1006",8,42,1,1,"Communicable","Black","Female","Washington DC",2010,"South Atlantic","South",NA,64.7675766870099,71.2857855670678,78.4570951283952,71.4085178214965
+"1007",8,42,1,1,"Injuries","Black","Female","Washington DC",2010,"South Atlantic","South",NA,34.3906762584428,39.0980999092219,43.5194628824463,39.0046184157653
+"1008",8,42,1,1,"Non-communicable","Black","Female","Washington DC",2010,"South Atlantic","South",NA,90.6924252760797,97.4917565892854,104.152445505782,97.4661371640898
+"1009",8,43,0,0,"All other causes","White","Male","Washington DC",2011,"South Atlantic","South",NA,103.572598760727,115.674011594576,129.500657456754,115.897496900745
+"1010",8,43,0,0,"Cancers","White","Male","Washington DC",2011,"South Atlantic","South",NA,135.593422008797,148.226329290082,160.547710392501,148.306554006337
+"1011",8,43,0,0,"Cardiovascular","White","Male","Washington DC",2011,"South Atlantic","South",NA,190.863114952875,210.690628108747,230.842936893731,210.761283388542
+"1012",8,43,0,0,"Communicable","White","Male","Washington DC",2011,"South Atlantic","South",NA,27.8666918017155,36.7266246334008,48.2658613461432,37.1225498353343
+"1013",8,43,0,0,"Injuries","White","Male","Washington DC",2011,"South Atlantic","South",NA,39.931596660829,48.6554535335501,56.3774568826639,48.5892277373584
+"1014",8,43,0,0,"Non-communicable","White","Male","Washington DC",2011,"South Atlantic","South",NA,53.6047346943609,64.2717249674745,75.2472853407464,64.2925259912029
+"1015",8,43,0,1,"All other causes","White","Female","Washington DC",2011,"South Atlantic","South",NA,81.9411873381967,91.1336116602485,100.461765004703,91.0923546956494
+"1016",8,43,0,1,"Cancers","White","Female","Washington DC",2011,"South Atlantic","South",NA,112.518646281644,121.895539287637,132.198847648951,122.133953531345
+"1017",8,43,0,1,"Cardiovascular","White","Female","Washington DC",2011,"South Atlantic","South",NA,117.041956014205,129.998528808217,142.894793130561,129.957787716496
+"1018",8,43,0,1,"Communicable","White","Female","Washington DC",2011,"South Atlantic","South",NA,16.8971168696452,22.26518005903,28.5228439334003,22.3476696169284
+"1019",8,43,0,1,"Injuries","White","Female","Washington DC",2011,"South Atlantic","South",NA,19.8528924254706,23.982561932147,29.7860769319226,24.2192268170373
+"1020",8,43,0,1,"Non-communicable","White","Female","Washington DC",2011,"South Atlantic","South",NA,48.2913156317038,56.3950554054342,67.6929532420339,56.7199753024681
+"1021",8,43,1,0,"All other causes","Black","Male","Washington DC",2011,"South Atlantic","South",NA,180.981180464043,195.259889925173,208.835762067171,195.132199780101
+"1022",8,43,1,0,"Cancers","Black","Male","Washington DC",2011,"South Atlantic","South",NA,275.578059629201,289.967637727532,304.317168364853,290.11797089115
+"1023",8,43,1,0,"Cardiovascular","Black","Male","Washington DC",2011,"South Atlantic","South",NA,409.708086610682,429.155751097838,448.303197063519,429.17787149619
+"1024",8,43,1,0,"Communicable","Black","Male","Washington DC",2011,"South Atlantic","South",NA,93.2580697192824,104.025557089717,115.586496969613,104.140042610927
+"1025",8,43,1,0,"Injuries","Black","Male","Washington DC",2011,"South Atlantic","South",NA,117.911004252322,128.79380742688,140.073590749622,128.755288532191
+"1026",8,43,1,0,"Non-communicable","Black","Male","Washington DC",2011,"South Atlantic","South",NA,124.493866109397,134.303955600659,145.413199777217,134.429999761572
+"1027",8,43,1,1,"All other causes","Black","Female","Washington DC",2011,"South Atlantic","South",NA,152.443662902323,161.039385530007,169.729547701132,161.16288629513
+"1028",8,43,1,1,"Cancers","Black","Female","Washington DC",2011,"South Atlantic","South",NA,187.21696674309,195.291944989805,203.972564275641,195.330179728542
+"1029",8,43,1,1,"Cardiovascular","Black","Female","Washington DC",2011,"South Atlantic","South",NA,264.683913655158,276.680598098225,288.994717658823,276.627346655326
+"1030",8,43,1,1,"Communicable","Black","Female","Washington DC",2011,"South Atlantic","South",NA,61.5669435236912,68.0369024193315,75.6896177524595,68.096233144235
+"1031",8,43,1,1,"Injuries","Black","Female","Washington DC",2011,"South Atlantic","South",NA,34.2862753200152,38.9546278151336,43.7812710402957,38.943670904308
+"1032",8,43,1,1,"Non-communicable","Black","Female","Washington DC",2011,"South Atlantic","South",NA,89.30379709186,96.4901041561073,103.521044054046,96.5495676940552
+"1033",8,44,0,0,"All other causes","White","Male","Washington DC",2012,"South Atlantic","South",NA,104.58260681009,117.743582791855,131.953516946768,117.90402477658
+"1034",8,44,0,0,"Cancers","White","Male","Washington DC",2012,"South Atlantic","South",NA,132.41319699763,146.344848083919,159.172133850615,145.9727925083
+"1035",8,44,0,0,"Cardiovascular","White","Male","Washington DC",2012,"South Atlantic","South",NA,184.279068466781,202.119275278233,222.641598322028,202.560917043079
+"1036",8,44,0,0,"Communicable","White","Male","Washington DC",2012,"South Atlantic","South",NA,25.9896928733039,34.5017464132363,46.8199502201821,35.0071477983885
+"1037",8,44,0,0,"Injuries","White","Male","Washington DC",2012,"South Atlantic","South",NA,39.574102814967,48.7635626234361,56.9301598839404,48.7701962428551
+"1038",8,44,0,0,"Non-communicable","White","Male","Washington DC",2012,"South Atlantic","South",NA,52.9610542997507,63.2251677656367,74.6539243340174,63.3624556321463
+"1039",8,44,0,1,"All other causes","White","Female","Washington DC",2012,"South Atlantic","South",NA,83.4564021117584,93.248610910127,102.637925039502,93.2789297785741
+"1040",8,44,0,1,"Cancers","White","Female","Washington DC",2012,"South Atlantic","South",NA,111.221664904626,121.194820853117,131.865921735427,121.411966078811
+"1041",8,44,0,1,"Cardiovascular","White","Female","Washington DC",2012,"South Atlantic","South",NA,114.590314870218,127.26057151245,141.104140842016,127.473959553966
+"1042",8,44,0,1,"Communicable","White","Female","Washington DC",2012,"South Atlantic","South",NA,16.2500067444136,21.7707856824904,28.8043303023268,21.9386436364252
+"1043",8,44,0,1,"Injuries","White","Female","Washington DC",2012,"South Atlantic","South",NA,20.4451928021648,24.830621231472,31.5195925179634,25.0899965515477
+"1044",8,44,0,1,"Non-communicable","White","Female","Washington DC",2012,"South Atlantic","South",NA,46.1184731713719,55.3862830034323,66.0422328626582,55.3377243477827
+"1045",8,44,1,0,"All other causes","Black","Male","Washington DC",2012,"South Atlantic","South",NA,178.931260499364,193.826281790433,209.451464152001,194.003808008501
+"1046",8,44,1,0,"Cancers","Black","Male","Washington DC",2012,"South Atlantic","South",NA,272.194976091945,286.152357347758,300.645288662292,286.339619272584
+"1047",8,44,1,0,"Cardiovascular","Black","Male","Washington DC",2012,"South Atlantic","South",NA,414.985613496668,435.153355634838,455.658400501623,435.120242287434
+"1048",8,44,1,0,"Communicable","Black","Male","Washington DC",2012,"South Atlantic","South",NA,86.5943182575645,97.7284592986974,109.64992721969,97.7135819285738
+"1049",8,44,1,0,"Injuries","Black","Male","Washington DC",2012,"South Atlantic","South",NA,112.76426531416,123.967577185589,135.444080710295,124.040784352968
+"1050",8,44,1,0,"Non-communicable","Black","Male","Washington DC",2012,"South Atlantic","South",NA,121.360664902412,132.026525246916,143.442692418203,132.217409153468
+"1051",8,44,1,1,"All other causes","Black","Female","Washington DC",2012,"South Atlantic","South",NA,150.891174177407,160.142122260254,169.424919830352,160.155062458273
+"1052",8,44,1,1,"Cancers","Black","Female","Washington DC",2012,"South Atlantic","South",NA,186.394881750718,195.136173968601,204.362470680978,195.186728758629
+"1053",8,44,1,1,"Cardiovascular","Black","Female","Washington DC",2012,"South Atlantic","South",NA,266.483554177523,279.09735023011,291.609247370143,279.02215096184
+"1054",8,44,1,1,"Communicable","Black","Female","Washington DC",2012,"South Atlantic","South",NA,57.1152150721441,64.4238101628281,72.4073582705657,64.5191323250163
+"1055",8,44,1,1,"Injuries","Black","Female","Washington DC",2012,"South Atlantic","South",NA,33.9008871803365,39.0689274653029,44.0735437165896,39.0303246339058
+"1056",8,44,1,1,"Non-communicable","Black","Female","Washington DC",2012,"South Atlantic","South",NA,88.765879353758,96.0355384121708,104.073554148545,96.1509027420021
+"1057",8,45,0,0,"All other causes","White","Male","Washington DC",2013,"South Atlantic","South",NA,109.526875353645,124.118437528761,141.264460771167,124.558093386154
+"1058",8,45,0,0,"Cancers","White","Male","Washington DC",2013,"South Atlantic","South",NA,130.239104699799,144.718281994888,160.460433934195,144.717554655483
+"1059",8,45,0,0,"Cardiovascular","White","Male","Washington DC",2013,"South Atlantic","South",NA,180.762367710348,200.845756121268,223.137778580659,201.12341277074
+"1060",8,45,0,0,"Communicable","White","Male","Washington DC",2013,"South Atlantic","South",NA,25.7194613418077,36.3380366051354,50.2870034280554,36.5968675563935
+"1061",8,45,0,0,"Injuries","White","Male","Washington DC",2013,"South Atlantic","South",NA,40.432094266035,49.2800258310451,58.3603209600652,49.4293663095279
+"1062",8,45,0,0,"Non-communicable","White","Male","Washington DC",2013,"South Atlantic","South",NA,51.1532860934515,62.0591564685347,75.0512034196764,62.5565342776242
+"1063",8,45,0,1,"All other causes","White","Female","Washington DC",2013,"South Atlantic","South",NA,85.5069872645625,96.2865147114919,106.955690186153,96.248726141748
+"1064",8,45,0,1,"Cancers","White","Female","Washington DC",2013,"South Atlantic","South",NA,109.229987462732,120.887406322048,132.73821261669,120.895070239609
+"1065",8,45,0,1,"Cardiovascular","White","Female","Washington DC",2013,"South Atlantic","South",NA,110.008464879505,123.946766554935,139.3608772504,123.98567418568
+"1066",8,45,0,1,"Communicable","White","Female","Washington DC",2013,"South Atlantic","South",NA,16.4455144020422,21.9099348340823,29.1641547223567,22.068770906155
+"1067",8,45,0,1,"Injuries","White","Female","Washington DC",2013,"South Atlantic","South",NA,20.4631051239835,25.4912970472827,32.9111162585909,25.7979823461618
+"1068",8,45,0,1,"Non-communicable","White","Female","Washington DC",2013,"South Atlantic","South",NA,40.6539751188663,49.9503168910339,61.6473912864863,50.2528717618679
+"1069",8,45,1,0,"All other causes","Black","Male","Washington DC",2013,"South Atlantic","South",NA,178.734896663429,194.802497887302,211.692605923639,194.915600991102
+"1070",8,45,1,0,"Cancers","Black","Male","Washington DC",2013,"South Atlantic","South",NA,267.54281160112,283.300717464291,301.320349611629,283.436972483467
+"1071",8,45,1,0,"Cardiovascular","Black","Male","Washington DC",2013,"South Atlantic","South",NA,418.064294764964,439.780805803754,461.14055076847,440.026184459189
+"1072",8,45,1,0,"Communicable","Black","Male","Washington DC",2013,"South Atlantic","South",NA,84.3862575237586,96.4820442694345,110.723891919786,96.6659446358473
+"1073",8,45,1,0,"Injuries","Black","Male","Washington DC",2013,"South Atlantic","South",NA,110.5903873797,123.431968430926,135.554521036135,123.485841310419
+"1074",8,45,1,0,"Non-communicable","Black","Male","Washington DC",2013,"South Atlantic","South",NA,119.025664112082,131.054122227818,144.594081850305,131.355401065428
+"1075",8,45,1,1,"All other causes","Black","Female","Washington DC",2013,"South Atlantic","South",NA,149.879104713535,159.815845902099,170.008574152537,159.771665022002
+"1076",8,45,1,1,"Cancers","Black","Female","Washington DC",2013,"South Atlantic","South",NA,186.018716510899,195.924415602087,206.347734855295,195.899002709129
+"1077",8,45,1,1,"Cardiovascular","Black","Female","Washington DC",2013,"South Atlantic","South",NA,262.242231824839,276.083046796877,291.152814806202,276.405637246758
+"1078",8,45,1,1,"Communicable","Black","Female","Washington DC",2013,"South Atlantic","South",NA,55.8232805430975,63.7588069756719,73.1471956669417,63.8762971238403
+"1079",8,45,1,1,"Injuries","Black","Female","Washington DC",2013,"South Atlantic","South",NA,33.8402345587766,39.3408174712603,44.8369731809673,39.3593341885647
+"1080",8,45,1,1,"Non-communicable","Black","Female","Washington DC",2013,"South Atlantic","South",NA,89.4127449285325,97.4568682275354,106.262381261929,97.5662177995449
