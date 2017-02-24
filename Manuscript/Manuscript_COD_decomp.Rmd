@@ -1,9 +1,9 @@
 ---
-title: Exploring how changes in cause of death have narrowed the black-white life expectancy gap in the United States.
-
+title: Exploring how changes in cause of death have narrowed the black-white life
+  expectancy gap in the United States.
 output:
-  word_document: default
   html_document: default
+  word_document: default
 always_allow_html: yes
 ---
 
@@ -74,6 +74,7 @@ library(shinythemes)
 library(dplyr)
 library(purrr)
 library(stringr)
+library(DT)
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 ```
 
@@ -193,23 +194,23 @@ diff <- bw_dat.males %>% arrange(era1.diff)
 for(i in 1:5) {
   j <- i-1
   
-  max.value <- max(cod.df$Contribution.to.change[cod.df$state == diff[dim(diff)[1]-j, ]$state & 
-                                            cod.df$era == "1969-1983" &
+  max.value <- max(cod.df$Cx_diff_mean[cod.df$state == diff[dim(diff)[1]-j, ]$state & 
+                                            cod.df$era == "era1" &
                                             cod.df$sex == "Male" ])
   
-  max.cause <- cod.df$COD[cod.df$state == diff[dim(diff)[1]-j, ]$state &
+  max.cause <- cod.df$Cause.of.death[cod.df$state == diff[dim(diff)[1]-j, ]$state &
                     cod.df$sex == "Male" &
-                    cod.df$era == "1969-1983" & 
-                    cod.df$Contribution.to.change == max.value]
+                    cod.df$era == "era1" & 
+                    cod.df$Cx_diff_mean == max.value]
  
-  min.value <- min(cod.df$Contribution.to.change[cod.df$state == diff[i, ]$state & 
-                                            cod.df$era == "1969-1983" &
+  min.value <- min(cod.df$Cx_diff_mean[cod.df$state == diff[i, ]$state & 
+                                            cod.df$era == "era1" &
                                             cod.df$sex == "Male" ])
   
-  min.cause <- cod.df$COD[cod.df$state == diff[i, ]$state &
+  min.cause <- cod.df$Cause.of.death[cod.df$state == diff[i, ]$state &
                     cod.df$sex == "Male" &
-                    cod.df$era == "1969-1983" & 
-                    cod.df$Contribution.to.change == min.value]
+                    cod.df$era == "era1" & 
+                    cod.df$Cx_diff_mean == min.value]
   
   assign(paste0("max", i), max.value)
   assign(paste0("max.cause", i), max.cause)
@@ -223,14 +224,14 @@ sum2 <- BlackWhite_results %>% filter(year == 1983 & sex == "Male") %>%
   arrange(LE_wbgap_mean) %>% 
   select(state, LE_wbgap_lcl, LE_wbgap_mean, LE_wbgap_ucl)
 
-  min.value.DC <- min(cod.df$Contribution.to.change[cod.df$state == "Washington DC" & 
-                                            cod.df$era == "1983-1993" &
+  min.value.DC <- min(cod.df$Cx_diff_mean[cod.df$state == "Washington DC" & 
+                                            cod.df$era == "era2" &
                                             cod.df$sex == "Male" ])
   
-  min.cause.DC <- cod.df$COD[cod.df$state == "Washington DC" &
+  min.cause.DC <- cod.df$Cause.of.death[cod.df$state == "Washington DC" &
                     cod.df$sex == "Male" &
-                    cod.df$era == "1983-1993" & 
-                    cod.df$Contribution.to.change == min.value.DC]
+                    cod.df$era == "era2" & 
+                    cod.df$Cx_diff_mean == min.value.DC]
 ```
 
 ```{r, echo =F}
@@ -251,7 +252,7 @@ The gap increased for `r dim(bw_dat.males[bw_dat.males$era1.diff < 0,])[1]` stat
 
 During the second time period, from 1983 to 1993, the life expectancy gap for males widened in `r dim(bw_dat.males[bw_dat.males$era2.diff < 0, ])[1]` of the `r dim(bw_dat.males)[1]` states (**Fig 2**). For states such as New York, Maryland, New Jersey, and Connecticut, the biggest driver of the widening gap was communicable disease, reflecting the heightened burden from HIV/AIDS in black males during the height of the AIDS epidemic. While both blacks and whites experienced a dramatic increase in mortality related to communicable diseases, blacks' rates were even higher. Injuries also contributed to the gap widening, most notably in Wisconsin, Maryland, and Louisiana. For many states, injury-related mortality increased for blacks but not for whites during this time period. Compared to the previous period, these two causes of death led to widwer rather than narrowed gaps. Cancer and cardiovascular disease contributed towards wider gaps, although the magnitude of the contribution of cardiovascular disease is quite hetergenous by state, with Mississippi, Minnesota, and Pennsylvania seeing the largest absolute contributions. The residual category contributed to a narrower gap, especially in New York, Pennsylvania, Connecticut, Mississippi, and Florida [note: This wasn't related to infant mortality improvements among blacks in NY, PA, but partially related to IMR improvements in CT, MS, and FL]. Most notably, the District of Columbia had the highest gap to begin and underwent the largest increase to their gap, which increased from 10.5 years to 15.9 years over this 10-year period, reflecting an increase in the gap of `r abs(round(bw_dat.males$era2.diff[bw_dat.males$sex == "Male" & bw_dat.males$state == "Washington DC"], 1))` years, of which `r round(min.value.DC, 1)` was due to `r min.cause.DC`.
 
-The final time period saw decreasing gaps in all states, and an increasing gap in Washington DC (**Fig 3**). In 1993, the gap ranged from `r round(sum3[1, ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum3[1, ]$LE_wbgap_lcl, 1)`, `r round(sum3[1, ]$LE_wbgap_ucl, 1)`] in `r sum3[1, ]$state ` to `r round(sum3[dim(sum3)[1], ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum3[dim(sum3)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum3[dim(sum3)[1], ]$LE_wbgap_ucl, 1)`]  in `r sum3[dim(sum3)[1], ]$state `. By 2013, the gap ranged from `r round(sum4[1, ]$LE_wbgap, 1)` years [95% CI: `r round(sum4[1, ]$LE_wbgap_lcl, 1)`, `r round(sum4[1, ]$LE_wbgap_ucl, 1)`] in `r sum4[1, ]$state ` to `r round(sum4[dim(sum4)[1], ]$LE_wbgap, 1)` years [95% CI: `r round(sum4[dim(sum4)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum4[dim(sum4)[1], ]$LE_wbgap_ucl, 1)`]  in `r sum4[dim(sum4)[1], ]$state `. During this time period all of the causes contributed to narrowing the gap for most states. In Wisconsin and the District of Columbia, changes to CVD mortality counteracted the gap narrowing (reflecting slower decreases to cardiovascular mortality among blacks compared with whites), while in Arizona changes to communicable disease counteracted the narrowing.
+The final time period saw decreasing gaps in all states, and an increasing gap in Washington DC (**Fig 3**). In 1993, the gap ranged from `r round(sum3[1, ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum3[1, ]$LE_wbgap_lcl, 1)`, `r round(sum3[1, ]$LE_wbgap_ucl, 1)`] in `r sum3[1, ]$state ` to `r round(sum3[dim(sum3)[1], ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum3[dim(sum3)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum3[dim(sum3)[1], ]$LE_wbgap_ucl, 1)`]  in `r sum3[dim(sum3)[1], ]$state `. By 2013, the gap ranged from `r round(sum4[1, ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum4[1, ]$LE_wbgap_lcl, 1)`, `r round(sum4[1, ]$LE_wbgap_ucl, 1)`] in `r sum4[1, ]$state ` to `r round(sum4[dim(sum4)[1], ]$LE_wbgap_mean, 1)` years [95% CI: `r round(sum4[dim(sum4)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum4[dim(sum4)[1], ]$LE_wbgap_ucl, 1)`]  in `r sum4[dim(sum4)[1], ]$state `. During this time period all of the causes contributed to narrowing the gap for most states. In Wisconsin and the District of Columbia, changes to CVD mortality counteracted the gap narrowing (reflecting slower decreases to cardiovascular mortality among blacks compared with whites), while in Arizona changes to communicable disease counteracted the narrowing.
 
 **Fig 1: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 ```{r figure1, fig.align = "center", echo=F, fig.height=9, fig.width=7}
@@ -276,7 +277,7 @@ males.era1
 
 **Fig 2: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
 
-```{r figure2, echo = F, fig.height=9, fig.width=11}
+```{r figure2, echo = F, fig.height=9, fig.width=10}
 # - The gap in 1983 ranges from `r round(sum2[1, ]$LE_wbgap, 1)` [95% CI: `r round(sum2[1, ]$LE_wbgap_lcl, 1)`, `r round(sum2[1, ]$LE_wbgap_ucl, 1)`] in `r sum2[1, ]$state ` to `r round(sum2[dim(sum2)[1], ]$LE_wbgap, 1)` [95% CI: `r round(sum2[dim(sum2)[1], ]$LE_wbgap_lcl, 1)`, `r round(sum2[dim(sum2)[1], ]$LE_wbgap_ucl, 1)`] years in `r sum2[dim(sum2)[1], ]$state `.
 
 y.labels.2 <- levels(factor(cod.df.males$state.gdiff.order.2))
@@ -302,7 +303,7 @@ males.era2
 
 **Fig 3: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
 
-```{r figure3, echo = F, fig.height=9, fig.width=11}
+```{r figure3, echo = F, fig.height = 9, fig.width = 11}
 y.labels.3 <- levels(factor(cod.df.males$state.gdiff.order.3))
 y.num.breaks.3 <- length(levels(factor(cod.df.males$state.gdiff.order.3)))
 
@@ -324,7 +325,9 @@ males.era3 <- ggplotly(
 males.era3
 ```
 
-```{r, fig.align="center", fig.height=5, fig.width=9, echo=F, eval = F}
+**All the above together as one figure**
+
+```{r, fig.align="center", fig.height=9, fig.width=15, echo=F, eval = T}
 males.era2.2 <- ggplotly(
   ggplot(subset(cod.df.males, era == "era2"), aes(y = state.gdiff.num.1, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.1 - 0.45, 
@@ -337,8 +340,6 @@ males.era2.2 <- ggplotly(
                  aes(x = second.gap, xend= second.gap, y = state.gdiff.num.1 - 0.5, yend = state.gdiff.num.1 + 0.5), lty = 3) +
     theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
-
-males.era2.2 
 
 males.era3.2 <- ggplotly(
   ggplot(subset(cod.df.males, era == "era3"), aes(y = state.gdiff.num.1, x = new.start.3)) +
@@ -353,8 +354,6 @@ males.era3.2 <- ggplotly(
     theme_minimal() + scale_y_continuous(breaks = 1:y.num.breaks, labels = y.labels)) %>% 
   layout(xaxis = list(title = "Life expectancy gap (years): 1969-1983"), yaxis = list(title = NA, autorange = "reversed"))
 
-males.era3.2 
-
 subplot(males.era1, males.era2.2, males.era3.2, shareY = T)
 ```
 ** **
@@ -362,8 +361,8 @@ subplot(males.era1, males.era2.2, males.era3.2, shareY = T)
 
 ```{r, echo =F}
 sum5 <- BlackWhite_results %>% filter(year == 1969 & sex == "Female") %>% 
-  arrange(LE_wbgap) %>% 
-  select(state, LE_wbgap_lcl, LE_wbgap, LE_wbgap_ucl)
+  arrange(LE_wbgap_mean) %>% 
+  select(state, LE_wbgap_lcl, LE_wbgap_mean, LE_wbgap_ucl)
 ```
 
 *Changes to the difference in life expectancy in US females*
@@ -395,7 +394,7 @@ Quick summary
 
 **Fig 4: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
-```{r figure4, fig.align = "center", echo=F}
+```{r figure2a, fig.align = "center", echo=F, fig.height = 9, fig.width = 7.5}
 
 cod.df.females <- merge(subset(cod.df, sex == "Female"), bw_dat.females, by = c("state"))
 cod.df.females$tot_Cx_CI_width2 <- -(cod.df.females$tot_Cx_CI_width - min(cod.df.females$tot_Cx_CI_width))/(max(cod.df.females$tot_Cx_CI_width) - min(cod.df.females$tot_Cx_CI_width)) + 1
@@ -427,7 +426,7 @@ females.era1
 
 **Fig 5: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1983 and 1993 by US state**
 
-```{r figure2b, fig.align = "center", echo=F}
+```{r figure2b, fig.align = "center", echo=F, fig.height = 9, fig.width = 7.5}
 y.labels.2 <- levels(factor(cod.df.females$state.gdiff.order.2))
 y.num.breaks.2 <- length(levels(factor(cod.df.females$state.gdiff.order.2)))
 
@@ -449,7 +448,7 @@ females.era2
 
 **Fig 6: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1993 and 2013 by US state**
 
-```{r fig6, fig.align = "center", echo=F}
+```{r fig6, fig.align = "center", echo=F, fig.height = 9, fig.width = 9}
 y.labels.3 <- levels(factor(cod.df.females$state.gdiff.order.3))
 y.num.breaks.3 <- length(levels(factor(cod.df.females$state.gdiff.order.3)))
 
@@ -511,9 +510,9 @@ To create.
 
 **S15 Fig: Comparison of the contribution of age and cause of death to the difference in life expectancy between blacks and whites males in New York, 1969 vs. 1983**
 
-```{r ny_1969_1983_age_cod_decomp, echo = F, fig.width = 9, eval=F}
+```{r ny_1969_1983_age_cod_decomp, echo = F, fig.width = 9}
 ny.dat <- age_cod_results %>% filter(state == "New York" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
-                                     mutate(sign.var = sign(age_COD_cont_yrs))
+                                     mutate(sign.var = sign(age_COD_cont_yrs_mean))
 
 ny.1969 <- make_pretty_decomp_plot(decomp.table = subset(ny.dat, year == 1969), sign.var = "sign.var",
                                   strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
@@ -536,16 +535,16 @@ ggplotly(ggplot(rbind(ny.1969, ny.1983, ny.1993),
 ```
 
 **Pennsylvania**
-```{r pa_1993_1983_age_cod_decomp, echo = F, fig.width = 9, eval=F}
+```{r pa_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
 pa.dat <- age_cod_results %>% filter(state == "Pennsylvania" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
-                                     mutate(sign.var = sign(age_COD_cont_yrs))
+                                     mutate(sign.var = sign(age_COD_cont_yrs_mean))
 
 pa.1993 <- make_pretty_decomp_plot(decomp.table = subset(pa.dat, year == 1993), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 pa.1983 <- make_pretty_decomp_plot(decomp.table = subset(pa.dat, year == 1983), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 
 ggplotly(ggplot(rbind(pa.1993, pa.1983),
                 aes(y = age, x = start)) + 
@@ -557,16 +556,16 @@ ggplotly(ggplot(rbind(pa.1993, pa.1983),
 ```
 
 **Connecticut**
-```{r ct_1993_1983_age_cod_decomp, echo = F, fig.width = 9, eval=F}
+```{r ct_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
 ct.dat <- age_cod_results %>% filter(state == "Connecticut" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
-                                     mutate(sign.var = sign(age_COD_cont_yrs))
+                                     mutate(sign.var = sign(age_COD_cont_yrs_mean))
 
 ct.1993 <- make_pretty_decomp_plot(decomp.table = subset(ct.dat, year == 1993), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 ct.1983 <- make_pretty_decomp_plot(decomp.table = subset(ct.dat, year == 1983), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 
 ggplotly(ggplot(rbind(ct.1993, ct.1983),
                 aes(y = age, x = start)) + 
@@ -578,16 +577,16 @@ ggplotly(ggplot(rbind(ct.1993, ct.1983),
 ```
 
 **Mississippi**
-```{r ms_1993_1983_age_cod_decomp, echo = F, fig.width = 9, eval=F}
+```{r ms_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
 ms.dat <- age_cod_results %>% filter(state == "Mississippi" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
-                                     mutate(sign.var = sign(age_COD_cont_yrs))
+                                     mutate(sign.var = sign(age_COD_cont_yrs_mean))
 
 ms.1993 <- make_pretty_decomp_plot(decomp.table = subset(ms.dat, year == 1993), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 ms.1983 <- make_pretty_decomp_plot(decomp.table = subset(ms.dat, year == 1983), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 
 ggplotly(ggplot(rbind(ms.1993, ms.1983),
                 aes(y = age, x = start)) + 
@@ -599,16 +598,16 @@ ggplotly(ggplot(rbind(ms.1993, ms.1983),
 ```
 
 **Florida**
-```{r fl_1993_1983_age_cod_decomp, echo = F, fig.width = 9, eval=F}
+```{r fl_1993_1983_age_cod_decomp, echo = F, fig.width = 9}
 fl.dat <- age_cod_results %>% filter(state == "Florida" & year %in% c(1969, 1983, 1993) & sex == "Male") %>% 
-                                     mutate(sign.var = sign(age_COD_cont_yrs))
+                                     mutate(sign.var = sign(age_COD_cont_yrs_mean))
 
 fl.1993 <- make_pretty_decomp_plot(decomp.table = subset(fl.dat, year == 1993), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 fl.1983 <- make_pretty_decomp_plot(decomp.table = subset(fl.dat, year == 1983), sign.var = "sign.var",
-                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs",
-                                  decomp.var.prop = "age_COD_cont_prop", type.of.data = "practice")
+                                  strat.var.1 = "age_minbin", partition.bar.var = "COD", decomp.var = "age_COD_cont_yrs_mean",
+                                  decomp.var.prop = "age_COD_cont_prop_mean", type.of.data = "practice")
 
 ggplotly(ggplot(rbind(fl.1993, fl.1983),
                 aes(y = age, x = start)) + 
@@ -621,7 +620,7 @@ ggplotly(ggplot(rbind(fl.1993, fl.1983),
 
 **S2 Table: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
-```{r}
+```{r, echo=F}
 cod_change_results2 <- data.frame(cod_change_results[c(3, 40, 41)], apply(cod_change_results[4:39], 2, function(x) x*(-1)))
 
 cod_change_results2 <- cod_change_results2 %>% 
@@ -641,13 +640,13 @@ cod_change_results2 <- cod_change_results2 %>%
          `Contribution to gap change ('83-'93), years` = contribution_era2_diff,
          `Contribution to gap change ('93-'03), years` = contribution_era3_diff)
 
-data.table::data.table(cod_change_results2 %>% filter(Sex == "Male"))
+DT::datatable(cod_change_results2 %>% filter(Sex == "Male"))
 ```
 
 **S3 Table: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
-```{r}
-data.table::data.table(cod_change_results2 %>% filter(Sex == "Female"))
+```{r, echo=F}
+DT::datatable(cod_change_results2 %>% filter(Sex == "Female"))
 ```
 
 
