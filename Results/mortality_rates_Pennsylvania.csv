@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",38,1,0,0,"All other causes","White","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",169.178037098726,172.634225386402,176.280689831297,172.678540284059
+"2",38,1,0,0,"Cancers","White","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",249.758956355833,254.118374191993,258.333487819532,254.116789461979
+"3",38,1,0,0,"Cardiovascular","White","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",962.599321738874,973.378418926735,984.270150207417,973.295796536941
+"4",38,1,0,0,"Communicable","White","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",62.6838830594522,65.1259019682019,67.8951367704911,65.2148976000443
+"5",38,1,0,0,"Injuries","White","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",90.8606234033202,93.0582563252337,95.4880249990259,93.1027430359256
+"6",38,1,0,0,"Non-communicable","White","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",97.5166047499217,99.9420042410426,102.376275011616,99.960866719117
+"7",38,1,0,1,"All other causes","White","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",95.5521364299297,97.705089631609,99.9731968155427,97.6965640119002
+"8",38,1,0,1,"Cancers","White","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",168.41760121571,171.16020699373,173.891490445061,171.175729794497
+"9",38,1,0,1,"Cardiovascular","White","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",648.331917193001,655.485435947847,663.298509731454,655.522644032967
+"10",38,1,0,1,"Communicable","White","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",35.9339637568317,37.5198765402264,39.0784790854251,37.5454105705189
+"11",38,1,0,1,"Injuries","White","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",37.0950462664543,38.3228664656622,39.6057979024335,38.3363304938208
+"12",38,1,0,1,"Non-communicable","White","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",53.7393381813429,55.3315613140896,56.8228113126556,55.2983614074334
+"13",38,1,1,0,"All other causes","Black","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",423.064218188642,441.034908046471,461.085034932696,441.246570866647
+"14",38,1,1,0,"Cancers","Black","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",331.296426840759,346.244662703188,361.22478090831,346.385855478662
+"15",38,1,1,0,"Cardiovascular","Black","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",792.760010070814,822.446102683913,853.120146451796,822.247415886359
+"16",38,1,1,0,"Communicable","Black","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",107.047614962938,117.734446685541,129.535867756763,117.740765593626
+"17",38,1,1,0,"Injuries","Black","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",182.998034879345,193.249961722897,203.70589721466,193.172979714252
+"18",38,1,1,0,"Non-communicable","Black","Male","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",130.527786285589,139.36080639531,147.614012628767,139.170534304253
+"19",38,1,1,1,"All other causes","Black","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",254.66580949785,266.479812590064,279.599165071934,266.627102958565
+"20",38,1,1,1,"Cancers","Black","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",190.618592758697,199.256048476874,207.650367475171,199.153918595733
+"21",38,1,1,1,"Cardiovascular","Black","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",627.758425640368,652.826988022522,680.352514388225,652.816069276606
+"22",38,1,1,1,"Communicable","Black","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",51.2931417729132,56.9418005739261,62.8193467934028,56.9644153979762
+"23",38,1,1,1,"Injuries","Black","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",50.4861689838942,53.9451589768171,58.2182657406629,54.096209393594
+"24",38,1,1,1,"Non-communicable","Black","Female","Pennsylvania",1969,"Mid-Atlantic","Northeast","PA",84.7170636120731,90.0145808095625,96.1202846046923,90.0269080752207
+"25",38,2,0,0,"All other causes","White","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",169.017378430756,172.216724193386,175.592109852092,172.222330411158
+"26",38,2,0,0,"Cancers","White","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",249.257691607175,253.008601398489,256.594054363343,252.976431412366
+"27",38,2,0,0,"Cardiovascular","White","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",937.378967863257,947.763441248222,958.868681423663,947.747624461431
+"28",38,2,0,0,"Communicable","White","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",58.3388157248164,60.7982724161722,63.2895634764208,60.8291803707184
+"29",38,2,0,0,"Injuries","White","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",90.9098041213012,92.8514000854122,94.8461545981112,92.8210936959178
+"30",38,2,0,0,"Non-communicable","White","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",97.6764358290761,99.9218193134725,102.334235805802,99.9525033244872
+"31",38,2,0,1,"All other causes","White","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",95.5814816201542,97.492741661173,99.4902930986031,97.5377311343806
+"32",38,2,0,1,"Cancers","White","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",167.197421017003,169.640634531812,172.151666561656,169.667566104538
+"33",38,2,0,1,"Cardiovascular","White","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",629.480602924392,636.905024916068,644.012222416105,636.888279554878
+"34",38,2,0,1,"Communicable","White","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",32.8266459329924,34.1363834559369,35.473513419865,34.1518586562119
+"35",38,2,0,1,"Injuries","White","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",36.668512559943,37.7209221593463,38.787294973478,37.7192677789074
+"36",38,2,0,1,"Non-communicable","White","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",53.1316903814755,54.477890950843,55.9486854697063,54.5107861339361
+"37",38,2,1,0,"All other causes","Black","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",421.149629140592,437.888122655274,456.060803279539,438.107978039062
+"38",38,2,1,0,"Cancers","Black","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",336.50519464285,349.065543789986,362.640489821089,349.080008137481
+"39",38,2,1,0,"Cardiovascular","Black","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",798.893876610094,824.594445710527,851.458808566996,824.882422621587
+"40",38,2,1,0,"Communicable","Black","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",104.393016154555,112.612327186059,121.165884426167,112.594832039481
+"41",38,2,1,0,"Injuries","Black","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",191.291135974721,200.373857939033,209.878016040181,200.42046234411
+"42",38,2,1,0,"Non-communicable","Black","Male","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",132.754244157749,140.404292999833,148.404112113674,140.419039079238
+"43",38,2,1,1,"All other causes","Black","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",251.495900274227,261.626578269168,272.298397321565,261.8071554683
+"44",38,2,1,1,"Cancers","Black","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",193.948532921371,201.414079103135,208.920451146294,201.399061415159
+"45",38,2,1,1,"Cardiovascular","Black","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",632.111043210658,654.187236087892,676.136522829857,654.29204771658
+"46",38,2,1,1,"Communicable","Black","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",52.9170885981733,57.6407630737857,63.1004423005361,57.8044915882517
+"47",38,2,1,1,"Injuries","Black","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",50.7919115371969,54.1345401164568,58.176451474478,54.2722077188555
+"48",38,2,1,1,"Non-communicable","Black","Female","Pennsylvania",1970,"Mid-Atlantic","Northeast","PA",84.1763988452545,88.8151486544429,94.2869386465158,88.9653564384583
+"49",38,3,0,0,"All other causes","White","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",165.849786005928,168.917527392823,171.972719494854,168.87696323079
+"50",38,3,0,0,"Cancers","White","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",251.309030971727,254.908466898326,258.376993889602,254.872878820219
+"51",38,3,0,0,"Cardiovascular","White","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",931.657820425321,941.698998537734,951.974777035222,941.655765203897
+"52",38,3,0,0,"Communicable","White","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",53.8662389754952,56.1466948408814,58.653461560073,56.1740800397051
+"53",38,3,0,0,"Injuries","White","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",89.479807214312,91.4287615736175,93.2554160697437,91.4114726558741
+"54",38,3,0,0,"Non-communicable","White","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",99.8307196241615,102.004179933742,104.366005431167,102.063478805389
+"55",38,3,0,1,"All other causes","White","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",91.0724636813765,92.9383357763407,94.661110825414,92.9112482769325
+"56",38,3,0,1,"Cancers","White","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",166.424472000204,168.667421535385,171.063994250577,168.714698671287
+"57",38,3,0,1,"Cardiovascular","White","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",627.840114953968,634.378520331695,641.094240112377,634.398909858445
+"58",38,3,0,1,"Communicable","White","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",31.7097830638499,33.0152667171371,34.2970546168677,33.0059617193205
+"59",38,3,0,1,"Injuries","White","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",36.461661777094,37.4832081650376,38.5495713130939,37.4924268521478
+"60",38,3,0,1,"Non-communicable","White","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",51.6119947892258,52.9612202182588,54.3509213664036,52.9622216743698
+"61",38,3,1,0,"All other causes","Black","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",415.714264132276,432.53963746362,449.222831821809,432.824532651981
+"62",38,3,1,0,"Cancers","Black","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",342.526950864444,355.207552995625,367.372166604803,355.215460704609
+"63",38,3,1,0,"Cardiovascular","Black","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",784.320430012134,809.949228941775,837.982639251603,810.609691086953
+"64",38,3,1,0,"Communicable","Black","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",103.367477305569,111.714111812785,120.469800299216,111.790739192727
+"65",38,3,1,0,"Injuries","Black","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",200.913816892268,210.16603812192,219.978108254613,210.240416730324
+"66",38,3,1,0,"Non-communicable","Black","Male","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",135.033833755915,142.430116647705,149.740869903602,142.282596758149
+"67",38,3,1,1,"All other causes","Black","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",243.022949367652,252.270253686698,262.364758300024,252.321666089037
+"68",38,3,1,1,"Cancers","Black","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",194.904485394156,202.194551507297,209.181469307151,202.211304065812
+"69",38,3,1,1,"Cardiovascular","Black","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",627.450127452571,647.979784075249,668.271869418127,647.910891239353
+"70",38,3,1,1,"Communicable","Black","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",52.7738596469735,57.5913234222569,62.5056004481912,57.5734806884826
+"71",38,3,1,1,"Injuries","Black","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",51.1123829754036,54.453367949226,57.5910130257194,54.408962322414
+"72",38,3,1,1,"Non-communicable","Black","Female","Pennsylvania",1971,"Mid-Atlantic","Northeast","PA",83.6814782171303,88.3318934140366,93.2962318752231,88.322732889457
+"73",38,4,0,0,"All other causes","White","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",166.114940850109,168.935864720445,172.171739258191,168.996908142266
+"74",38,4,0,0,"Cancers","White","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",255.615733012602,259.092070106305,263.132220940068,259.207585331074
+"75",38,4,0,0,"Cardiovascular","White","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",911.60776462903,922.014325835441,932.625472424424,922.007372314708
+"76",38,4,0,0,"Communicable","White","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",55.1810187542593,57.5322117247123,60.0357757502763,57.5512282093412
+"77",38,4,0,0,"Injuries","White","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",89.0166291130064,90.9059502278516,92.8148975491435,90.9035803301318
+"78",38,4,0,0,"Non-communicable","White","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",101.145407530853,103.483705395024,105.604978964053,103.460276427125
+"79",38,4,0,1,"All other causes","White","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",89.840272319403,91.7918667390513,93.7615951725825,91.8138694588231
+"80",38,4,0,1,"Cancers","White","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",165.380825011992,167.565141474658,169.68650801116,167.531028497632
+"81",38,4,0,1,"Cardiovascular","White","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",608.104268890108,614.345697786593,620.960941372389,614.336447160042
+"82",38,4,0,1,"Communicable","White","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",32.0655261326082,33.2766359110933,34.6021920380931,33.2996782088773
+"83",38,4,0,1,"Injuries","White","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",35.3363677162505,36.3208857480475,37.355713386939,36.325581042308
+"84",38,4,0,1,"Non-communicable","White","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",50.5169793423342,51.8111413778121,53.0707028341788,51.7935304790304
+"85",38,4,1,0,"All other causes","Black","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",416.794461437677,432.817031258033,448.638463169138,432.66220134811
+"86",38,4,1,0,"Cancers","Black","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",353.883295231873,365.477615160746,378.118165561672,365.770709946076
+"87",38,4,1,0,"Cardiovascular","Black","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",778.760087168338,801.645627416656,826.25085085674,802.307343562976
+"88",38,4,1,0,"Communicable","Black","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",106.346751524346,115.034665540108,124.778417180621,115.248267111992
+"89",38,4,1,0,"Injuries","Black","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",199.945801934791,208.419165286557,217.837151846954,208.571654833165
+"90",38,4,1,0,"Non-communicable","Black","Male","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",136.616382856238,144.001295414173,151.381012118702,144.059667997608
+"91",38,4,1,1,"All other causes","Black","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",235.287355312515,244.688550601053,254.148389918766,244.652436956049
+"92",38,4,1,1,"Cancers","Black","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",195.862258324346,202.715626217957,209.486250021621,202.729824264243
+"93",38,4,1,1,"Cardiovascular","Black","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",633.42964904655,654.396030776489,676.353462845863,654.313823701753
+"94",38,4,1,1,"Communicable","Black","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",52.6156672090412,56.6000467559306,61.0030252413739,56.7332871320964
+"95",38,4,1,1,"Injuries","Black","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",51.1933125104593,54.0925144639064,57.2951316798693,54.1774253751629
+"96",38,4,1,1,"Non-communicable","Black","Female","Pennsylvania",1972,"Mid-Atlantic","Northeast","PA",82.7213398512542,86.9057338931103,91.8308192557768,87.0535052766847
+"97",38,5,0,0,"All other causes","White","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",159.373263576508,162.446363351309,165.443644151512,162.409077563527
+"98",38,5,0,0,"Cancers","White","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",255.298758072825,258.828187411122,262.683287264054,258.915492716726
+"99",38,5,0,0,"Cardiovascular","White","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",902.411641302846,912.515585477259,922.590269481265,912.604087790994
+"100",38,5,0,0,"Communicable","White","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",57.4523500778126,59.937038873389,62.5706766803729,59.948764387244
+"101",38,5,0,0,"Injuries","White","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",88.5196999523752,90.3309363445896,92.2699412639374,90.3345948726802
+"102",38,5,0,0,"Non-communicable","White","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",100.531747505943,102.705667743029,104.991157933064,102.737714002885
+"103",38,5,0,1,"All other causes","White","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",88.0692240427204,89.7691317024095,91.6644949766933,89.8019743620565
+"104",38,5,0,1,"Cancers","White","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",163.571637839174,165.800770914803,168.080520543219,165.810412059239
+"105",38,5,0,1,"Cardiovascular","White","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",585.515072996827,591.589581329582,598.072843675684,591.747956529294
+"106",38,5,0,1,"Communicable","White","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",31.0931439779142,32.3305632801621,33.6160749293324,32.3324517048683
+"107",38,5,0,1,"Injuries","White","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",34.6511550854809,35.6279931333143,36.6481188017396,35.6377931685503
+"108",38,5,0,1,"Non-communicable","White","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",48.5666142942521,49.8161198368995,51.097376138016,49.8100816989153
+"109",38,5,1,0,"All other causes","Black","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",411.718754090804,426.995024698336,442.398376746413,426.976237585115
+"110",38,5,1,0,"Cancers","Black","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",359.38553417463,371.399731506246,384.786975019689,371.584077953451
+"111",38,5,1,0,"Cardiovascular","Black","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",770.014228278507,792.940794785847,817.299512919265,793.209156500223
+"112",38,5,1,0,"Communicable","Black","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",103.042678651968,110.761181872122,119.49942579909,110.998251421236
+"113",38,5,1,0,"Injuries","Black","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",197.326329350204,206.15341407214,215.125051967007,206.122640418043
+"114",38,5,1,0,"Non-communicable","Black","Male","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",136.852014280979,143.365510144713,150.832475381668,143.532808944925
+"115",38,5,1,1,"All other causes","Black","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",232.600544110349,241.158218002199,249.895828421097,241.209797766349
+"116",38,5,1,1,"Cancers","Black","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",197.250059008213,203.497336951899,210.627606387293,203.56592012974
+"117",38,5,1,1,"Cardiovascular","Black","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",598.231528842475,617.484690187496,638.244882859745,617.588523092221
+"118",38,5,1,1,"Communicable","Black","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",53.0122113625363,56.8096314325242,61.5455075762376,56.8977915464298
+"119",38,5,1,1,"Injuries","Black","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",50.0988729037025,53.1389377030625,56.536927352605,53.1328154068167
+"120",38,5,1,1,"Non-communicable","Black","Female","Pennsylvania",1973,"Mid-Atlantic","Northeast","PA",80.760759238295,85.1861692029313,89.8681549092139,85.2490357990384
+"121",38,6,0,0,"All other causes","White","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",154.116429835846,157.168524545283,160.095114520773,157.143609661455
+"122",38,6,0,0,"Cancers","White","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",257.31765774434,260.937197331915,264.783012919273,260.967411009317
+"123",38,6,0,0,"Cardiovascular","White","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",858.614439821106,867.569478473631,877.533133529669,867.661877280444
+"124",38,6,0,0,"Communicable","White","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",51.6210241200628,53.9031571896814,56.3297899105309,53.9324270909453
+"125",38,6,0,0,"Injuries","White","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",86.4168119319797,88.1681713051274,90.0509711354786,88.1601191141255
+"126",38,6,0,0,"Non-communicable","White","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",99.0261668157716,101.255840059012,103.608910921348,101.281955955774
+"127",38,6,0,1,"All other causes","White","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",85.2157089336496,86.963727792054,88.599016636515,86.9531957565228
+"128",38,6,0,1,"Cancers","White","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",163.942901820687,166.224352061987,168.445021369878,166.193528722083
+"129",38,6,0,1,"Cardiovascular","White","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",556.206372383538,562.0680088502,567.806847775755,561.99742679256
+"130",38,6,0,1,"Communicable","White","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",29.1935644781898,30.3031916046036,31.5599322518124,30.338958148528
+"131",38,6,0,1,"Injuries","White","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",33.2919700978647,34.2756877616681,35.2282717163496,34.264141340441
+"132",38,6,0,1,"Non-communicable","White","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",48.1927288580249,49.404393928201,50.6742671525669,49.4226676700715
+"133",38,6,1,0,"All other causes","Black","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",417.928112070689,433.703328032831,450.338057600896,433.975124984911
+"134",38,6,1,0,"Cancers","Black","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",361.228282208702,373.317566603706,387.425090542816,373.679482242618
+"135",38,6,1,0,"Cardiovascular","Black","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",725.913434349788,748.966341308526,772.994637608103,749.053509269071
+"136",38,6,1,0,"Communicable","Black","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",101.44039780351,109.706460749611,118.769792122557,109.818915463634
+"137",38,6,1,0,"Injuries","Black","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",194.414474443553,203.910876223724,212.836831958071,203.986311759147
+"138",38,6,1,0,"Non-communicable","Black","Male","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",135.512265893066,141.688287279674,149.255290609029,141.980284791167
+"139",38,6,1,1,"All other causes","Black","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",227.844715006904,236.520979501958,245.145098915562,236.600705428219
+"140",38,6,1,1,"Cancers","Black","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",197.99011370243,204.412971957673,211.315277486504,204.50261825387
+"141",38,6,1,1,"Cardiovascular","Black","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",548.541419833799,567.048358145769,586.084536482469,567.233685303478
+"142",38,6,1,1,"Communicable","Black","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",51.4743169531061,55.3470937956213,59.9141312514696,55.4275733243581
+"143",38,6,1,1,"Injuries","Black","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",48.5805445111042,51.25957479492,54.393970657289,51.3052095281513
+"144",38,6,1,1,"Non-communicable","Black","Female","Pennsylvania",1974,"Mid-Atlantic","Northeast","PA",79.6269928065276,83.6942056616135,88.2950120986868,83.7425199475032
+"145",38,7,0,0,"All other causes","White","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",150.33932504968,153.381502106983,155.999258433061,153.327827033249
+"146",38,7,0,0,"Cancers","White","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",260.728744702706,263.998496987783,267.661782815563,264.083518218978
+"147",38,7,0,0,"Cardiovascular","White","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",814.848505938533,823.801792183065,833.029590767712,824.023701643992
+"148",38,7,0,0,"Communicable","White","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",53.2846293224016,55.5192065596958,57.7825926699588,55.539612356348
+"149",38,7,0,0,"Injuries","White","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",84.7267094908347,86.3821789072017,88.1023366583213,86.3984795270785
+"150",38,7,0,0,"Non-communicable","White","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",99.5095516647574,101.834323731722,104.005446734721,101.807116514257
+"151",38,7,0,1,"All other causes","White","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",82.1922650189337,83.965142965532,85.7543749280751,83.9606481250033
+"152",38,7,0,1,"Cancers","White","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",164.368224480984,166.572357611388,168.761059825772,166.592655733394
+"153",38,7,0,1,"Cardiovascular","White","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",523.135911928379,527.992008671972,533.480467808143,528.135327041263
+"154",38,7,0,1,"Communicable","White","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",29.0884648950716,30.2260619692767,31.4789304998738,30.2218009415824
+"155",38,7,0,1,"Injuries","White","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",32.4823239548676,33.470226866483,34.3375650032974,33.4518364833252
+"156",38,7,0,1,"Non-communicable","White","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",47.373283073585,48.5861882843593,49.8036063550226,48.5968495120702
+"157",38,7,1,0,"All other causes","Black","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",407.711857417629,421.931211700209,438.58711104457,422.414376169825
+"158",38,7,1,0,"Cancers","Black","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",362.294343335074,375.473498043306,388.454371294929,375.633545675801
+"159",38,7,1,0,"Cardiovascular","Black","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",692.06953787555,715.306131522878,739.235867547628,715.24030056039
+"160",38,7,1,0,"Communicable","Black","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",97.0875678798807,105.315674828796,114.508494899114,105.433173460041
+"161",38,7,1,0,"Injuries","Black","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",185.79077025174,194.64534169776,203.028993374475,194.601216489741
+"162",38,7,1,0,"Non-communicable","Black","Male","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",133.461587521,139.933015570709,147.02626096039,140.013794826369
+"163",38,7,1,1,"All other causes","Black","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",227.155525988034,235.447032244539,244.284001812175,235.596557566751
+"164",38,7,1,1,"Cancers","Black","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",198.557987042124,204.73807041602,211.380531181342,204.743097547839
+"165",38,7,1,1,"Cardiovascular","Black","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",526.016573944368,544.108204304788,562.282024183918,544.077136515931
+"166",38,7,1,1,"Communicable","Black","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",49.3049137926664,53.3916411834289,57.4782213561501,53.4098023235121
+"167",38,7,1,1,"Injuries","Black","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",46.388693362997,49.1033104347614,52.3016691139434,49.1529886146581
+"168",38,7,1,1,"Non-communicable","Black","Female","Pennsylvania",1975,"Mid-Atlantic","Northeast","PA",77.5362713062643,81.7002216549136,85.7803293817848,81.7375035137986
+"169",38,8,0,0,"All other causes","White","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",146.942249979717,149.874067333877,152.764385881232,149.829090531705
+"170",38,8,0,0,"Cancers","White","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",262.929528664543,266.513257327712,270.417299928128,266.580649363885
+"171",38,8,0,0,"Cardiovascular","White","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",805.02889138986,814.290049264722,823.541580552145,814.434796061207
+"172",38,8,0,0,"Communicable","White","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",55.2950809793757,57.8010149631007,60.0000465339933,57.8004902444773
+"173",38,8,0,0,"Injuries","White","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",82.7292030682749,84.4909000068207,86.3702705696689,84.520156974241
+"174",38,8,0,0,"Non-communicable","White","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",99.6876135008917,102.189468547772,104.584729347893,102.182660935574
+"175",38,8,0,1,"All other causes","White","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",82.6461637692441,84.3408105279565,86.0654165132845,84.3381321955075
+"176",38,8,0,1,"Cancers","White","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",165.778241289826,167.903392913068,170.152627304697,167.920821174261
+"177",38,8,0,1,"Cardiovascular","White","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",520.356726290997,525.555255606635,531.379778329731,525.712527832918
+"178",38,8,0,1,"Communicable","White","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",30.6143523524634,31.8308194799799,32.9509526444818,31.7966024622575
+"179",38,8,0,1,"Injuries","White","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",32.1228440123156,33.0286677149416,33.9508587131018,33.0223445995215
+"180",38,8,0,1,"Non-communicable","White","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",46.7851119460513,47.9787528610866,49.1072268759234,47.9663695093586
+"181",38,8,1,0,"All other causes","Black","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",402.858239950492,418.20032390261,434.014966052733,418.482334104311
+"182",38,8,1,0,"Cancers","Black","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",374.126908945744,387.028499233529,401.862597187647,387.443684503384
+"183",38,8,1,0,"Cardiovascular","Black","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",676.216893400105,696.334177298298,719.935198788283,696.943377443484
+"184",38,8,1,0,"Communicable","Black","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",92.3272797802623,100.74932414031,109.31374246349,100.854571013078
+"185",38,8,1,0,"Injuries","Black","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",169.036152597197,177.031435748233,184.907903331912,177.05823967721
+"186",38,8,1,0,"Non-communicable","Black","Male","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",135.250162300135,142.08438519627,149.712306511087,142.044799493056
+"187",38,8,1,1,"All other causes","Black","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",225.862838424967,234.313562981667,243.770588692592,234.472974500911
+"188",38,8,1,1,"Cancers","Black","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",200.605261992135,206.598015971196,213.327182790033,206.606886562886
+"189",38,8,1,1,"Cardiovascular","Black","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",514.918994759133,532.066603791481,549.973398509252,532.275386249693
+"190",38,8,1,1,"Communicable","Black","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",49.0903350689835,53.1765056052471,57.4602223392951,53.113076706598
+"191",38,8,1,1,"Injuries","Black","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",44.9554553132303,47.4768362960055,50.456751078821,47.5452008880203
+"192",38,8,1,1,"Non-communicable","Black","Female","Pennsylvania",1976,"Mid-Atlantic","Northeast","PA",75.9535724747174,80.0809620757284,84.069738746099,80.0788894311148
+"193",38,9,0,0,"All other causes","White","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",145.515204533829,148.266885388,151.162813035595,148.255101832491
+"194",38,9,0,0,"Cancers","White","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",263.248978929601,266.853278874045,270.431695498728,266.881976561801
+"195",38,9,0,0,"Cardiovascular","White","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",771.254137635539,779.417038665366,787.890912470253,779.366651157593
+"196",38,9,0,0,"Communicable","White","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",48.3717482292424,50.4999395579429,52.6372595719254,50.4829265312351
+"197",38,9,0,0,"Injuries","White","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",83.0641664743036,84.644401032987,86.317675213083,84.6717610820577
+"198",38,9,0,0,"Non-communicable","White","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",99.6985805065198,101.95453010589,104.191684087053,101.954868648378
+"199",38,9,0,1,"All other causes","White","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",82.7139479723792,84.3436103364544,86.1265438195302,84.3436266706117
+"200",38,9,0,1,"Cancers","White","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",166.337880316072,168.523019818506,170.849013551452,168.543596956689
+"201",38,9,0,1,"Cardiovascular","White","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",492.777430826301,498.062705505809,503.174580307281,498.1289151092
+"202",38,9,0,1,"Communicable","White","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",27.5822436096903,28.6687381333066,29.7938976919311,28.6707888358542
+"203",38,9,0,1,"Injuries","White","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",31.4016382868561,32.2709568546499,33.2828453216828,32.2869597382737
+"204",38,9,0,1,"Non-communicable","White","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",46.2076258517527,47.3962503672063,48.6111462968387,47.4040447515186
+"205",38,9,1,0,"All other causes","Black","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",398.487903963362,413.606262242889,431.185959475037,413.799819996106
+"206",38,9,1,0,"Cancers","Black","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",379.113631405116,392.861883177217,406.580459309309,392.823863286933
+"207",38,9,1,0,"Cardiovascular","Black","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",672.986114852103,694.360947988768,715.084839852906,693.781754454228
+"208",38,9,1,0,"Communicable","Black","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",88.553016838944,96.4054128647783,104.818528515115,96.340176721509
+"209",38,9,1,0,"Injuries","Black","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",159.653830727366,167.461612926295,174.960820001001,167.454134654642
+"210",38,9,1,0,"Non-communicable","Black","Male","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",134.02434427755,140.675986826733,147.700795521126,140.804886025517
+"211",38,9,1,1,"All other causes","Black","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",220.926544254467,229.359680688102,238.169934675946,229.428024637188
+"212",38,9,1,1,"Cancers","Black","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",202.045540517319,208.300212346417,214.776718926128,208.393325260192
+"213",38,9,1,1,"Cardiovascular","Black","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",494.425895277991,511.014035087844,528.368649516697,511.197013186539
+"214",38,9,1,1,"Communicable","Black","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",48.9215480915682,52.7982086512436,56.9072426466689,52.8957786917719
+"215",38,9,1,1,"Injuries","Black","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",43.17661524424,45.6681680166911,48.5300442341273,45.7456414667668
+"216",38,9,1,1,"Non-communicable","Black","Female","Pennsylvania",1977,"Mid-Atlantic","Northeast","PA",75.3670245264889,79.2610889702854,83.6187052863623,79.3417261118343
+"217",38,10,0,0,"All other causes","White","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",141.22740043507,144.218377875533,146.742658652456,144.156525588502
+"218",38,10,0,0,"Cancers","White","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",269.629390614388,273.534590863344,277.329303991285,273.528291406459
+"219",38,10,0,0,"Cardiovascular","White","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",754.14793759633,762.252834625508,770.652489945372,762.340714729711
+"220",38,10,0,0,"Communicable","White","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",46.9695473968845,49.073625872738,51.259103999604,49.1034059903249
+"221",38,10,0,0,"Injuries","White","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",81.4757743911615,82.9731077589431,84.7438393136066,83.0171779004198
+"222",38,10,0,0,"Non-communicable","White","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",102.114792136965,104.358963520195,106.62044827258,104.359532801197
+"223",38,10,0,1,"All other causes","White","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",81.7854859113609,83.3774235655783,84.9855103204293,83.3741556419155
+"224",38,10,0,1,"Cancers","White","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",169.038555590615,171.266531605824,173.473615615524,171.263580263852
+"225",38,10,0,1,"Cardiovascular","White","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",479.400448011367,484.767657602093,489.864386023232,484.801480429238
+"226",38,10,0,1,"Communicable","White","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",27.0283151575565,28.0778524305189,29.1922223936218,28.0916371770294
+"227",38,10,0,1,"Injuries","White","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",30.650399528997,31.4655622642754,32.3226884812015,31.4704776869362
+"228",38,10,0,1,"Non-communicable","White","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",48.2007415277352,49.3240199720164,50.600801069501,49.342786426002
+"229",38,10,1,0,"All other causes","Black","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",385.652808880266,400.71253184646,416.552443551858,400.922403516841
+"230",38,10,1,0,"Cancers","Black","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",377.508242111831,391.162568338644,404.651733303663,391.138496053359
+"231",38,10,1,0,"Cardiovascular","Black","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",645.069013560308,665.020272283812,686.588584783078,665.548483508815
+"232",38,10,1,0,"Communicable","Black","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",83.4598875391031,90.2568713977431,97.7809328987791,90.3850535355349
+"233",38,10,1,0,"Injuries","Black","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",154.687419489125,162.102104155831,169.924135275893,162.259110786518
+"234",38,10,1,0,"Non-communicable","Black","Male","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",130.023006536541,137.275758619671,144.801886126806,137.280730973263
+"235",38,10,1,1,"All other causes","Black","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",216.660831212355,224.521995963534,232.775531170587,224.604756359963
+"236",38,10,1,1,"Cancers","Black","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",202.504834410231,208.321590635119,214.788516993855,208.404493891454
+"237",38,10,1,1,"Cardiovascular","Black","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",459.093985926993,475.150137905143,490.643836645342,475.026812679328
+"238",38,10,1,1,"Communicable","Black","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",47.5407455562341,51.3174370206019,55.3231494050446,51.3006294199796
+"239",38,10,1,1,"Injuries","Black","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",41.6798499904003,44.1394333068401,46.7466910770007,44.1665069532927
+"240",38,10,1,1,"Non-communicable","Black","Female","Pennsylvania",1978,"Mid-Atlantic","Northeast","PA",74.2685999702744,78.4355006423307,82.5116028443216,78.4882810274773
+"241",38,11,0,0,"All other causes","White","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",138.299884045941,140.972051221018,143.681525340728,140.981379285724
+"242",38,11,0,0,"Cancers","White","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",272.716036821873,276.227959735201,280.427275257445,276.319500914776
+"243",38,11,0,0,"Cardiovascular","White","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",722.650917145028,731.024677232774,738.358775401593,730.93381258213
+"244",38,11,0,0,"Communicable","White","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",40.3105110310377,42.3275609414658,44.3784774759528,42.329562747374
+"245",38,11,0,0,"Injuries","White","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",80.7008845335269,82.3863758685135,84.0187853871998,82.3676681700746
+"246",38,11,0,0,"Non-communicable","White","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",101.69636637047,104.103223656486,106.445446898681,104.09340278967
+"247",38,11,0,1,"All other causes","White","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",80.8143109646713,82.3849744411672,84.1755720664685,82.4249247926856
+"248",38,11,0,1,"Cancers","White","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",168.943646392248,171.263671002171,173.483985674364,171.234957950204
+"249",38,11,0,1,"Cardiovascular","White","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",467.638918726522,472.976825697184,478.009361668963,472.990371340274
+"250",38,11,0,1,"Communicable","White","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",23.7190314943725,24.6280621385108,25.6637762882841,24.646488356361
+"251",38,11,0,1,"Injuries","White","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",29.6992625127543,30.5151534669023,31.3401292941652,30.5073622453112
+"252",38,11,0,1,"Non-communicable","White","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",49.232506883326,50.3659444097087,51.5219980310504,50.3703227768776
+"253",38,11,1,0,"All other causes","Black","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",370.902187665568,384.626021694127,400.069168293889,384.670332075352
+"254",38,11,1,0,"Cancers","Black","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",382.514442739373,394.871657599741,408.126248401878,394.996424149275
+"255",38,11,1,0,"Cardiovascular","Black","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",622.156275702465,642.854012981218,661.957716269962,642.349578922366
+"256",38,11,1,0,"Communicable","Black","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",75.967319796444,83.2513758027112,90.7488210557527,83.3623651156557
+"257",38,11,1,0,"Injuries","Black","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",153.605931312764,160.890384433641,168.009391273721,160.883506693314
+"258",38,11,1,0,"Non-communicable","Black","Male","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",127.667600042978,134.488435457698,141.472275733805,134.500683579023
+"259",38,11,1,1,"All other causes","Black","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",211.406090986516,220.009223566572,228.966185755105,220.058167521589
+"260",38,11,1,1,"Cancers","Black","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",202.837984579853,208.615541872185,215.196566949557,208.733393869666
+"261",38,11,1,1,"Cardiovascular","Black","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",439.376693056279,452.967047258684,469.108835595956,453.283738246662
+"262",38,11,1,1,"Communicable","Black","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",46.0818801799355,49.8483235683727,53.8947600861758,49.8091574829742
+"263",38,11,1,1,"Injuries","Black","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",40.5051178988913,42.96108758284,45.4984547479515,42.9890628390351
+"264",38,11,1,1,"Non-communicable","Black","Female","Pennsylvania",1979,"Mid-Atlantic","Northeast","PA",73.3138385612642,77.3143205626708,81.2471812773781,77.271001122423
+"265",38,12,0,0,"All other causes","White","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",139.210218985205,141.871545008481,144.977245854646,141.87772722355
+"266",38,12,0,0,"Cancers","White","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",273.432810540479,277.526518026462,281.325526651439,277.513375335592
+"267",38,12,0,0,"Cardiovascular","White","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",736.699194395433,744.693199777312,753.657711760148,744.828672227903
+"268",38,12,0,0,"Communicable","White","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",46.285396669186,48.3047274730166,50.2106307977764,48.2538567597318
+"269",38,12,0,0,"Injuries","White","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",78.9428209974491,80.6164594746986,82.2119337573671,80.599301432924
+"270",38,12,0,0,"Non-communicable","White","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",105.516320950067,107.8763698131,110.284108550037,107.906917683473
+"271",38,12,0,1,"All other causes","White","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",82.3913749824152,84.1124542686108,85.7895275479019,84.0961661905114
+"272",38,12,0,1,"Cancers","White","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",170.43982608069,172.778697210815,174.920689972567,172.768587815882
+"273",38,12,0,1,"Cardiovascular","White","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",476.129532156855,481.137103530628,486.115835067613,481.138861685267
+"274",38,12,0,1,"Communicable","White","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",27.534174823644,28.6594282914244,29.752247396006,28.6510766255189
+"275",38,12,0,1,"Injuries","White","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",28.6450632079307,29.4496085016988,30.2618410285372,29.4566861127092
+"276",38,12,0,1,"Non-communicable","White","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",50.8799399543652,52.2337514150802,53.5428508659709,52.2311719603968
+"277",38,12,1,0,"All other causes","Black","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",359.169654777789,372.871011384817,388.315828185902,372.889849345122
+"278",38,12,1,0,"Cancers","Black","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",387.224568168885,399.857707876845,413.567529444541,399.930911286392
+"279",38,12,1,0,"Cardiovascular","Black","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",623.319321464235,642.847977007613,663.2240843005,643.114121656477
+"280",38,12,1,0,"Communicable","Black","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",77.4207860292734,84.1402005855788,91.7796353575751,84.3357754683922
+"281",38,12,1,0,"Injuries","Black","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",152.405870441016,159.421356638997,166.531610623608,159.394215833607
+"282",38,12,1,0,"Non-communicable","Black","Male","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",128.370620151492,135.315966494847,142.469988364767,135.328954871033
+"283",38,12,1,1,"All other causes","Black","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",211.111423275832,219.034495485071,227.60956864475,219.062431226116
+"284",38,12,1,1,"Cancers","Black","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",202.439226078396,208.711650643084,214.911079952889,208.850155872059
+"285",38,12,1,1,"Cardiovascular","Black","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",451.293096059578,464.510536065777,480.488496926761,464.686815840073
+"286",38,12,1,1,"Communicable","Black","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",48.7167358407936,52.5031945261568,56.6944959509466,52.5723649425444
+"287",38,12,1,1,"Injuries","Black","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",39.6776661691824,42.2999179722141,44.6693094797205,42.2619927015023
+"288",38,12,1,1,"Non-communicable","Black","Female","Pennsylvania",1980,"Mid-Atlantic","Northeast","PA",73.5937690186118,77.4267719568159,81.9568481697981,77.5274627067687
+"289",38,13,0,0,"All other causes","White","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",138.701265790642,141.496387324204,144.339454276684,141.513451074871
+"290",38,13,0,0,"Cancers","White","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",271.716365609041,275.554816170831,279.280238212044,275.549712103128
+"291",38,13,0,0,"Cardiovascular","White","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",696.662320982806,704.596380048916,711.880740993354,704.487707575734
+"292",38,13,0,0,"Communicable","White","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",44.2223849095641,46.1766452017979,48.2908758143772,46.1868188799454
+"293",38,13,0,0,"Injuries","White","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",76.5310544867941,78.2121468142367,79.7605593316318,78.206050015662
+"294",38,13,0,0,"Non-communicable","White","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",103.714633363329,106.129063828125,108.468419018444,106.11607375119
+"295",38,13,0,1,"All other causes","White","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",81.3086616691206,82.9345948729685,84.7180048340999,82.9441412905749
+"296",38,13,0,1,"Cancers","White","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",170.736953133902,172.981508318926,175.340413209773,172.976753525604
+"297",38,13,0,1,"Cardiovascular","White","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",451.176413940003,456.291066312363,460.938689079326,456.296684394997
+"298",38,13,0,1,"Communicable","White","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",27.7554948113062,28.8647878860731,29.9968793508536,28.8729247114873
+"299",38,13,0,1,"Injuries","White","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",27.7296675504062,28.4662496320389,29.2942782975573,28.4756694903761
+"300",38,13,0,1,"Non-communicable","White","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",51.5328402738988,52.810310679024,54.0891834002552,52.7944073406622
+"301",38,13,1,0,"All other causes","Black","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",344.419053472629,357.554193146596,371.875854912541,357.884794718364
+"302",38,13,1,0,"Cancers","Black","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",390.642157879898,403.584136915732,417.737394318371,403.719481021273
+"303",38,13,1,0,"Cardiovascular","Black","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",611.224962535957,629.89173366639,648.675931068529,629.589270320493
+"304",38,13,1,0,"Communicable","Black","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",74.653159220549,81.3290016300197,88.8411507458446,81.3422677890435
+"305",38,13,1,0,"Injuries","Black","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",145.6144603551,152.036005657758,158.879715318954,152.081352055085
+"306",38,13,1,0,"Non-communicable","Black","Male","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",127.062115544122,133.352322673597,140.871871420178,133.483715762924
+"307",38,13,1,1,"All other causes","Black","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",207.769013367379,215.984428614169,224.241932323758,216.005234165312
+"308",38,13,1,1,"Cancers","Black","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",204.963595686828,211.107618370076,217.152555364841,211.08998795932
+"309",38,13,1,1,"Cardiovascular","Black","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",436.804197087898,450.650306359763,466.188455911725,450.882713444167
+"310",38,13,1,1,"Communicable","Black","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",50.1215894170123,54.1601050462766,58.369124990819,54.1683614779088
+"311",38,13,1,1,"Injuries","Black","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",39.4321824282515,41.8637653543826,44.1397626196537,41.8223308617882
+"312",38,13,1,1,"Non-communicable","Black","Female","Pennsylvania",1981,"Mid-Atlantic","Northeast","PA",73.9249509979924,77.8393688206339,81.9809494431886,77.9063096869562
+"313",38,14,0,0,"All other causes","White","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",133.065725958847,135.79786101496,138.593055424755,135.820170843445
+"314",38,14,0,0,"Cancers","White","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",274.164744928771,277.83368886821,281.696195317434,277.835909786085
+"315",38,14,0,0,"Cardiovascular","White","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",676.52030698215,684.506235637363,692.400528393991,684.50126475216
+"316",38,14,0,0,"Communicable","White","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",43.869575788935,45.8939849936079,47.9798814580535,45.8914953524718
+"317",38,14,0,0,"Injuries","White","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",74.048334664814,75.6485678388741,77.2183118700509,75.6492282118392
+"318",38,14,0,0,"Non-communicable","White","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",103.740136715255,106.123430737407,108.45229963371,106.153001783972
+"319",38,14,0,1,"All other causes","White","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",81.1059830865132,82.7388220422566,84.4934507364475,82.7637330354624
+"320",38,14,0,1,"Cancers","White","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",171.147458307582,173.317780462172,175.541636595866,173.330576403065
+"321",38,14,0,1,"Cardiovascular","White","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",436.045009177644,440.752571808649,445.15386655121,440.745638210141
+"322",38,14,0,1,"Communicable","White","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",26.0987782150743,27.2151317888894,28.2616650820886,27.1943801781302
+"323",38,14,0,1,"Injuries","White","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",27.1418488138725,27.9190653396963,28.7186024880266,27.9104661542646
+"324",38,14,0,1,"Non-communicable","White","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",51.5105231806677,52.8214565156333,54.1089202267217,52.7901130259821
+"325",38,14,1,0,"All other causes","Black","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",336.342119779473,349.640064087904,362.808651306974,349.655664706355
+"326",38,14,1,0,"Cancers","Black","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",385.944464589527,399.369404407342,411.906598681264,399.551834632725
+"327",38,14,1,0,"Cardiovascular","Black","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",608.196266321176,627.366341271345,646.640713394119,627.178341020099
+"328",38,14,1,0,"Communicable","Black","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",77.7057512875483,84.7881159377496,92.8462769215466,84.847389347571
+"329",38,14,1,0,"Injuries","Black","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",138.475039209606,144.353755839357,151.327026534696,144.553867851772
+"330",38,14,1,0,"Non-communicable","Black","Male","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",126.427326586762,132.359648414178,139.562385438956,132.594621441901
+"331",38,14,1,1,"All other causes","Black","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",204.122568889819,211.869454906638,219.924499187524,211.962815817851
+"332",38,14,1,1,"Cancers","Black","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",208.462380819223,214.397161742452,220.530815314356,214.445950943641
+"333",38,14,1,1,"Cardiovascular","Black","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",427.887443502118,442.71692356954,456.466784025059,442.585346572631
+"334",38,14,1,1,"Communicable","Black","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",50.7249588045376,54.5943737047978,58.7086285178596,54.6319606885296
+"335",38,14,1,1,"Injuries","Black","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",38.9944588148568,41.3838915070781,43.6359616545917,41.3569822201073
+"336",38,14,1,1,"Non-communicable","Black","Female","Pennsylvania",1982,"Mid-Atlantic","Northeast","PA",74.3152039946119,78.0125222145302,82.0082021250268,78.114781217979
+"337",38,15,0,0,"All other causes","White","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",133.272751746057,135.99642845775,138.841227583394,136.019132005671
+"338",38,15,0,0,"Cancers","White","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",275.401110433192,278.923853868238,282.872327696315,279.030057598907
+"339",38,15,0,0,"Cardiovascular","White","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",673.103569438246,680.196749081278,688.450767315831,680.346431896354
+"340",38,15,0,0,"Communicable","White","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",48.3396873353478,50.5123390599931,52.7139925298123,50.5057388597127
+"341",38,15,0,0,"Injuries","White","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",72.7628075803667,74.4355552695555,75.9716622033378,74.4575874339544
+"342",38,15,0,0,"Non-communicable","White","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",105.898096148818,108.211818222521,110.649082732661,108.250674298854
+"343",38,15,0,1,"All other causes","White","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",81.9447068170581,83.5865028009442,85.304317458726,83.5850028810262
+"344",38,15,0,1,"Cancers","White","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",172.407161409192,174.355910067983,176.637864867938,174.39837245469
+"345",38,15,0,1,"Cardiovascular","White","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",436.098617936187,440.54927666561,444.937395991519,440.580535858319
+"346",38,15,0,1,"Communicable","White","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",28.1509707301482,29.2265635506665,30.3123768797697,29.2149915877356
+"347",38,15,0,1,"Injuries","White","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",26.9437076470667,27.721314207644,28.5188920406892,27.7218191251557
+"348",38,15,0,1,"Non-communicable","White","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",53.8511299562241,55.0059783477996,56.3661170408493,55.0220400876108
+"349",38,15,1,0,"All other causes","Black","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",335.122490021847,349.477291280247,365.534892098285,349.479223956964
+"350",38,15,1,0,"Cancers","Black","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",392.527202039452,405.162711836149,418.249845922368,405.157864181266
+"351",38,15,1,0,"Cardiovascular","Black","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",601.269324600569,620.108609387947,638.155129908999,620.349569281705
+"352",38,15,1,0,"Communicable","Black","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",81.7467650324893,88.809305582765,96.5439347151374,88.8871245546369
+"353",38,15,1,0,"Injuries","Black","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",133.678820281115,139.769243576662,146.465792567411,139.868562266439
+"354",38,15,1,0,"Non-communicable","Black","Male","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",127.48462313407,133.78890867694,140.99132016047,133.841261021924
+"355",38,15,1,1,"All other causes","Black","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",202.213889565239,210.313012093626,218.585824485878,210.226329301416
+"356",38,15,1,1,"Cancers","Black","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",209.973779949,216.214944896336,222.932442198597,216.195692776076
+"357",38,15,1,1,"Cardiovascular","Black","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",430.772780414073,444.706374172433,458.997813114623,444.653659594713
+"358",38,15,1,1,"Communicable","Black","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",52.3164653745423,56.6376902832333,60.907439281981,56.6776417224571
+"359",38,15,1,1,"Injuries","Black","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",38.9078597894255,41.238463790522,43.4793184911139,41.2250970765756
+"360",38,15,1,1,"Non-communicable","Black","Female","Pennsylvania",1983,"Mid-Atlantic","Northeast","PA",75.4039057690434,79.7137694647179,83.7853749409863,79.702703938902
+"361",38,16,0,0,"All other causes","White","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",133.686652147524,136.398970577103,139.24324535504,136.427061061045
+"362",38,16,0,0,"Cancers","White","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",277.875063963995,281.440409217878,284.902308554988,281.402559890195
+"363",38,16,0,0,"Cardiovascular","White","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",651.599745019181,658.753456134392,666.532725358068,658.78622897558
+"364",38,16,0,0,"Communicable","White","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",52.1196753591616,54.3304741938673,56.4972208691308,54.3093347708182
+"365",38,16,0,0,"Injuries","White","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",73.1655371551932,74.5621465666766,76.1646751210224,74.5686380535404
+"366",38,16,0,0,"Non-communicable","White","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",109.180175708803,111.650701303908,114.228482157088,111.682334256885
+"367",38,16,0,1,"All other causes","White","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",83.7670560129992,85.4932335025678,87.1920666136384,85.5027879190998
+"368",38,16,0,1,"Cancers","White","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",173.656643160813,175.864437345828,177.98685163183,175.866669420379
+"369",38,16,0,1,"Cardiovascular","White","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",420.155964950107,424.34991336405,429.089535263961,424.356449086082
+"370",38,16,0,1,"Communicable","White","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",30.2319554963863,31.3354031183602,32.3868868200886,31.3183860939902
+"371",38,16,0,1,"Injuries","White","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",26.9322049870077,27.6926433857844,28.5074828282571,27.6954346616403
+"372",38,16,0,1,"Non-communicable","White","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",55.486955990231,56.7717751398993,58.1091617361351,56.7694807100808
+"373",38,16,1,0,"All other causes","Black","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",338.757339815483,352.798048995348,366.900287352889,352.736991131527
+"374",38,16,1,0,"Cancers","Black","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",395.165221620054,407.743060720919,421.095313141937,408.043967696697
+"375",38,16,1,0,"Cardiovascular","Black","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",601.979636808053,619.642304224711,640.131660409921,619.959824431524
+"376",38,16,1,0,"Communicable","Black","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",90.0510334915991,97.6414712960024,106.510382111955,97.8051080475348
+"377",38,16,1,0,"Injuries","Black","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",128.819929930188,134.892475840799,141.219425355236,134.944002970679
+"378",38,16,1,0,"Non-communicable","Black","Male","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",130.561056492393,137.078215732049,144.079673811975,137.19649747715
+"379",38,16,1,1,"All other causes","Black","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",202.562806114282,210.535672550843,218.547216144086,210.593478993331
+"380",38,16,1,1,"Cancers","Black","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",213.173869096671,219.715540340655,226.400013162867,219.69241710311
+"381",38,16,1,1,"Cardiovascular","Black","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",430.13445364277,443.817523833347,459.109808724491,444.14604488986
+"382",38,16,1,1,"Communicable","Black","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",58.1888056887683,62.4507771812331,67.0999856339703,62.5015735445407
+"383",38,16,1,1,"Injuries","Black","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",38.9570082572822,41.0969483016967,43.3831191519002,41.1196959984923
+"384",38,16,1,1,"Non-communicable","Black","Female","Pennsylvania",1984,"Mid-Atlantic","Northeast","PA",76.8033054771162,80.7440999737462,85.120232474488,80.782323900379
+"385",38,17,0,0,"All other causes","White","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",136.284756581398,139.005302767031,141.946927494348,139.059819295455
+"386",38,17,0,0,"Cancers","White","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",277.530443010241,281.163322470403,284.999257346933,281.210288698123
+"387",38,17,0,0,"Cardiovascular","White","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",632.973755675767,640.494653441052,647.660561729152,640.409711972226
+"388",38,17,0,0,"Communicable","White","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",56.4406654364813,58.8228837477878,61.1827897808899,58.8226731550986
+"389",38,17,0,0,"Injuries","White","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",73.6073928250193,75.1227642875553,76.6997895111212,75.1166261816961
+"390",38,17,0,0,"Non-communicable","White","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",110.49445277441,112.98203768516,115.523467226273,112.99905769591
+"391",38,17,0,1,"All other causes","White","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",84.9610427220336,86.6919568384966,88.3335082012427,86.7186758716447
+"392",38,17,0,1,"Cancers","White","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",174.555213192466,176.813157664013,179.06892421809,176.800602054161
+"393",38,17,0,1,"Cardiovascular","White","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",413.249986955726,418.050635559479,422.593224756557,418.129459614214
+"394",38,17,0,1,"Communicable","White","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",34.2351061048546,35.5017169217942,36.6273287187556,35.4741173349235
+"395",38,17,0,1,"Injuries","White","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",26.7355745831115,27.4526718843031,28.2748185685434,27.4746611241574
+"396",38,17,0,1,"Non-communicable","White","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",58.7941775658857,60.0929870400374,61.4215579857035,60.1129200504063
+"397",38,17,1,0,"All other causes","Black","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",342.449130834154,356.298628753385,370.506367290985,356.543260024523
+"398",38,17,1,0,"Cancers","Black","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",398.263823941645,411.714390789848,424.405261515054,411.532268137064
+"399",38,17,1,0,"Cardiovascular","Black","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",603.990124416434,622.003252679241,640.838069638277,622.596074579195
+"400",38,17,1,0,"Communicable","Black","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",101.768358544992,110.059044644025,118.858213912274,110.243014753235
+"401",38,17,1,0,"Injuries","Black","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",128.091978536584,134.110016212089,141.061623092306,134.164482556099
+"402",38,17,1,0,"Non-communicable","Black","Male","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",134.226067993993,141.02174680947,148.351238341152,141.061143237104
+"403",38,17,1,1,"All other causes","Black","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",203.264026530228,211.094762719624,219.940116346416,211.146838124773
+"404",38,17,1,1,"Cancers","Black","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",216.491603743302,222.347981883624,229.172750643595,222.510119072282
+"405",38,17,1,1,"Cardiovascular","Black","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",418.893321669864,433.028959185443,445.746664389421,432.597394220828
+"406",38,17,1,1,"Communicable","Black","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",61.2897599250795,65.4208873866865,70.3859081470762,65.5225449007689
+"407",38,17,1,1,"Injuries","Black","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",38.5584224989585,40.8011359620196,42.9262181912527,40.7714622787296
+"408",38,17,1,1,"Non-communicable","Black","Female","Pennsylvania",1985,"Mid-Atlantic","Northeast","PA",79.1883072240422,83.221822994209,87.6523746054045,83.3149347605639
+"409",38,18,0,0,"All other causes","White","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",137.948053304935,140.8306111151,143.619576301301,140.789529738403
+"410",38,18,0,0,"Cancers","White","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",275.8281988498,279.550054209595,283.32293467532,279.563339069957
+"411",38,18,0,0,"Cardiovascular","White","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",615.600146858791,622.777860397017,629.631299236028,622.832056468523
+"412",38,18,0,0,"Communicable","White","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",61.0796298775151,63.3191753927343,65.6402959134807,63.3134795858193
+"413",38,18,0,0,"Injuries","White","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",74.533619914757,76.0594956334054,77.6372373850183,76.0812199658856
+"414",38,18,0,0,"Non-communicable","White","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",112.256680166242,114.543623140511,117.151676048201,114.557869043321
+"415",38,18,0,1,"All other causes","White","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",86.452138702394,88.2677987737443,90.0715421371589,88.280470034137
+"416",38,18,0,1,"Cancers","White","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",175.596826140265,177.811697925907,180.176994393427,177.813603435429
+"417",38,18,0,1,"Cardiovascular","White","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",399.342747272205,403.937190634627,407.744506370296,403.85930508383
+"418",38,18,0,1,"Communicable","White","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",37.3050636830275,38.5369389779349,39.7999622153583,38.5357940680214
+"419",38,18,0,1,"Injuries","White","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",26.5919625116493,27.361266757608,28.1490239165421,27.3602891304609
+"420",38,18,0,1,"Non-communicable","White","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",59.8367454892137,61.1814140017071,62.5919343114385,61.1823732450194
+"421",38,18,1,0,"All other causes","Black","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",340.04196464076,354.035541002999,368.024805084873,354.063283664994
+"422",38,18,1,0,"Cancers","Black","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",401.476904741352,414.378101006749,428.164960695866,414.444068139532
+"423",38,18,1,0,"Cardiovascular","Black","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",596.43756564273,614.766645109158,633.911140867655,614.715609534753
+"424",38,18,1,0,"Communicable","Black","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",108.495687999031,116.619003376643,126.644426785431,116.817908452175
+"425",38,18,1,0,"Injuries","Black","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",131.871773764359,137.715043664189,143.809228101386,137.804655195447
+"426",38,18,1,0,"Non-communicable","Black","Male","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",137.323090298942,144.539056714007,152.347924399651,144.611363927369
+"427",38,18,1,1,"All other causes","Black","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",200.970528327272,208.750508538489,216.903097654856,208.791493894443
+"428",38,18,1,1,"Cancers","Black","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",217.55906325765,223.906411186707,230.694090750749,223.987549595343
+"429",38,18,1,1,"Cardiovascular","Black","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",415.472759169759,429.113466162917,442.541508073566,429.012142638985
+"430",38,18,1,1,"Communicable","Black","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",65.1959656073151,69.9119448079932,74.8728521853991,69.8961433409534
+"431",38,18,1,1,"Injuries","Black","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",38.9418595899407,41.175024419392,43.4511620735877,41.1870470969992
+"432",38,18,1,1,"Non-communicable","Black","Female","Pennsylvania",1986,"Mid-Atlantic","Northeast","PA",80.4623922990638,84.9114178364229,89.1205836890446,84.8447054108635
+"433",38,19,0,0,"All other causes","White","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",135.725859554979,138.604119102999,141.30403781731,138.574161875506
+"434",38,19,0,0,"Cancers","White","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",276.929979652871,280.818915152616,284.404156724275,280.736960672203
+"435",38,19,0,0,"Cardiovascular","White","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",592.992724599318,600.220481797409,607.261998938904,600.238006533686
+"436",38,19,0,0,"Communicable","White","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",62.9976151604256,65.3263552177422,67.6153754874562,65.2805682334963
+"437",38,19,0,0,"Injuries","White","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",75.667637385471,77.183210254164,78.8381276500867,77.1966866965253
+"438",38,19,0,0,"Non-communicable","White","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",110.943818295539,113.340035779081,115.661761700911,113.315237890739
+"439",38,19,0,1,"All other causes","White","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",87.8619139692325,89.4216514918944,91.1618872388406,89.4310011019528
+"440",38,19,0,1,"Cancers","White","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",176.675593577346,178.758320522879,181.220924390622,178.815847640737
+"441",38,19,0,1,"Cardiovascular","White","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",391.02063387041,395.403674113522,399.613020315383,395.405203288431
+"442",38,19,0,1,"Communicable","White","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",38.2792715936542,39.5893982837557,40.8752578377136,39.5838389764866
+"443",38,19,0,1,"Injuries","White","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",26.7323890446767,27.4869544307254,28.2238677794858,27.4818659080582
+"444",38,19,0,1,"Non-communicable","White","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",60.8750833251818,62.0966736716905,63.4618043302517,62.0964261676529
+"445",38,19,1,0,"All other causes","Black","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",325.750481978486,340.027060971504,354.124838913943,340.095855817097
+"446",38,19,1,0,"Cancers","Black","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",408.060048460207,422.01273912459,435.7941189789,421.898798010093
+"447",38,19,1,0,"Cardiovascular","Black","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",595.322903686684,612.96377174365,632.984928134887,613.367737718365
+"448",38,19,1,0,"Communicable","Black","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",120.592749562634,130.175313699784,139.965499561593,130.14601353444
+"449",38,19,1,0,"Injuries","Black","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",134.944877827035,141.143202951272,147.080560976617,141.123833277754
+"450",38,19,1,0,"Non-communicable","Black","Male","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",142.552395708509,149.579034139337,157.246417565666,149.716525263925
+"451",38,19,1,1,"All other causes","Black","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",196.853852779598,204.358401973479,212.051230453021,204.406157763924
+"452",38,19,1,1,"Cancers","Black","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",218.44542908871,224.627440597824,231.508287225749,224.675612437154
+"453",38,19,1,1,"Cardiovascular","Black","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",423.356364473463,436.389435322824,450.213684459684,436.55164865245
+"454",38,19,1,1,"Communicable","Black","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",67.1919416771603,72.2251238163372,77.3196923985204,72.2736150920071
+"455",38,19,1,1,"Injuries","Black","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",39.3418540171495,41.7322364621557,43.9645465969529,41.7048819510818
+"456",38,19,1,1,"Non-communicable","Black","Female","Pennsylvania",1987,"Mid-Atlantic","Northeast","PA",83.5400294651894,87.6875221598399,92.1101429388969,87.6741711181179
+"457",38,20,0,0,"All other causes","White","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",132.665964091088,135.208904386166,138.142445038806,135.260013999329
+"458",38,20,0,0,"Cancers","White","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",274.925723790175,278.880732964141,282.468078065536,278.848577155156
+"459",38,20,0,0,"Cardiovascular","White","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",586.712052221283,593.97155380142,600.948694991933,593.940088714605
+"460",38,20,0,0,"Communicable","White","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",67.181733637977,69.7549440264462,72.387299895052,69.7367908987188
+"461",38,20,0,0,"Injuries","White","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",75.3512473159903,76.9055967943299,78.6362504227723,76.9315236529736
+"462",38,20,0,0,"Non-communicable","White","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",109.375231296616,111.953786548057,114.270558252891,111.972302712462
+"463",38,20,0,1,"All other causes","White","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",88.7191830763201,90.3858515130416,92.182209957187,90.4094567541711
+"464",38,20,0,1,"Cancers","White","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",175.529590199068,177.697548583679,179.915264671076,177.725178851782
+"465",38,20,0,1,"Cardiovascular","White","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",383.017323508951,387.304463773436,391.410165806216,387.26401055407
+"466",38,20,0,1,"Communicable","White","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",40.2206345933148,41.505911738861,42.9067017231036,41.5205503644067
+"467",38,20,0,1,"Injuries","White","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",26.4806099966572,27.2734679003271,27.9846544880003,27.2541309027075
+"468",38,20,0,1,"Non-communicable","White","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",62.3650434616199,63.7692809940106,65.1684600901527,63.7924342924204
+"469",38,20,1,0,"All other causes","Black","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",286.895789282741,300.264203192791,313.111146455634,300.395400200073
+"470",38,20,1,0,"Cancers","Black","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",410.889349519483,423.950510022102,438.467822315207,424.002988460668
+"471",38,20,1,0,"Cardiovascular","Black","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",601.705864197128,619.628160865436,638.455247136803,619.647738683805
+"472",38,20,1,0,"Communicable","Black","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",131.541714017491,141.346024442348,150.862610300095,141.360254876833
+"473",38,20,1,0,"Injuries","Black","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",141.285221208535,147.508563838507,154.317878664212,147.485220035281
+"474",38,20,1,0,"Non-communicable","Black","Male","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",146.191125554308,154.046914434927,161.953169379831,154.001248879027
+"475",38,20,1,1,"All other causes","Black","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",180.182858472503,187.156848821357,194.786772212063,187.192249289256
+"476",38,20,1,1,"Cancers","Black","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",218.630590646983,225.074357280141,231.820681891462,225.065612525136
+"477",38,20,1,1,"Cardiovascular","Black","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",435.110673997683,448.446870700266,461.954414077403,448.297875976463
+"478",38,20,1,1,"Communicable","Black","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",68.7210129632068,73.6948652935244,78.9192593552098,73.821972957557
+"479",38,20,1,1,"Injuries","Black","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",40.0233336467468,42.2347895321288,44.7445007796673,42.2551823122379
+"480",38,20,1,1,"Non-communicable","Black","Female","Pennsylvania",1988,"Mid-Atlantic","Northeast","PA",87.1726013890438,91.3236623416811,95.7473890054421,91.3626558715268
+"481",38,21,0,0,"All other causes","White","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",128.401557986312,131.255960080346,133.941052974581,131.26185350506
+"482",38,21,0,0,"Cancers","White","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",276.54104994294,280.259385898904,283.628330184802,280.173067527801
+"483",38,21,0,0,"Cardiovascular","White","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",547.05014509204,553.744177279974,560.777112085213,553.775726003806
+"484",38,21,0,0,"Communicable","White","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",68.63801150398,71.0081191935023,73.6107986344908,71.0039843559894
+"485",38,21,0,0,"Injuries","White","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",73.8167398978894,75.3263802581504,76.9905112257926,75.3194882063599
+"486",38,21,0,0,"Non-communicable","White","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",111.269081614797,113.772758219801,116.132012057086,113.720137914108
+"487",38,21,0,1,"All other causes","White","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",88.2575399746333,89.969710295682,91.5979810897767,89.9618842401776
+"488",38,21,0,1,"Cancers","White","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",177.434958874629,179.569319251382,181.869696297088,179.591669376664
+"489",38,21,0,1,"Cardiovascular","White","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",355.533875486068,359.558629087721,363.508147638681,359.550970600603
+"490",38,21,0,1,"Communicable","White","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",39.2534110483873,40.3796438072325,41.6397730983113,40.404922635876
+"491",38,21,0,1,"Injuries","White","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",26.1828992796294,26.9280640997757,27.715507771511,26.9303121817753
+"492",38,21,0,1,"Non-communicable","White","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",64.7141030741573,66.147096407704,67.608153061536,66.1314435613799
+"493",38,21,1,0,"All other causes","Black","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",254.835980587002,266.225438172337,277.658619451246,266.378014204281
+"494",38,21,1,0,"Cancers","Black","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",415.536689886004,429.417427633669,444.48481230907,429.452275388798
+"495",38,21,1,0,"Cardiovascular","Black","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",590.857469082353,609.284074874887,628.734058545412,609.406376666752
+"496",38,21,1,0,"Communicable","Black","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",142.171657461914,151.920852817107,161.751522467405,151.913652971353
+"497",38,21,1,0,"Injuries","Black","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",148.907953859693,155.783510272188,162.54311748768,155.863264864642
+"498",38,21,1,0,"Non-communicable","Black","Male","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",147.632419994549,155.074216251044,163.250140380797,155.219856596806
+"499",38,21,1,1,"All other causes","Black","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",168.85415554453,175.826030788769,183.548740461226,175.923547840836
+"500",38,21,1,1,"Cancers","Black","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",220.502749568778,227.077524136791,233.54230412333,227.106556991871
+"501",38,21,1,1,"Cardiovascular","Black","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",423.780509195528,437.320053513485,450.829841500404,437.394025751019
+"502",38,21,1,1,"Communicable","Black","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",69.1324141848705,73.8399372901355,79.199814589651,73.9407050045865
+"503",38,21,1,1,"Injuries","Black","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",40.2288772539935,42.5189416245156,44.8531750351922,42.5246636735518
+"504",38,21,1,1,"Non-communicable","Black","Female","Pennsylvania",1989,"Mid-Atlantic","Northeast","PA",90.373091990401,94.9671935711608,100.080041033294,95.0117263575719
+"505",38,22,0,0,"All other causes","White","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",125.992911302694,128.709547932246,131.443142490005,128.707309956229
+"506",38,22,0,0,"Cancers","White","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",277.692999604208,281.145130602456,284.715691895658,281.170091083808
+"507",38,22,0,0,"Cardiovascular","White","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",525.177882574681,531.699767520297,537.871692810575,531.674879158052
+"508",38,22,0,0,"Communicable","White","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",67.165837066434,69.7101788263108,72.1371561918869,69.6964128148976
+"509",38,22,0,0,"Injuries","White","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",71.9789542466694,73.5612736763255,75.1237535304699,73.5560992252332
+"510",38,22,0,0,"Non-communicable","White","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",109.916753514348,112.63810896988,114.921248882521,112.583454232449
+"511",38,22,0,1,"All other causes","White","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",86.7684872976309,88.5045940699706,90.0503635820525,88.4625412568808
+"512",38,22,0,1,"Cancers","White","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",178.551542965216,180.712580724564,182.87229174089,180.70571024245
+"513",38,22,0,1,"Cardiovascular","White","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",339.053798226737,342.632200351455,346.304156992031,342.666137333159
+"514",38,22,0,1,"Communicable","White","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",38.4048872061176,39.6198476175278,40.8802007405983,39.6150382995273
+"515",38,22,0,1,"Injuries","White","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",25.2461161065416,26.0042658360053,26.7456482855977,26.0049844898471
+"516",38,22,0,1,"Non-communicable","White","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",65.1710622136521,66.5984317399167,68.0482288386294,66.5969359219733
+"517",38,22,1,0,"All other causes","Black","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",231.532100755678,242.320736557534,253.696436279848,242.458225991412
+"518",38,22,1,0,"Cancers","Black","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",415.618079103349,428.890567619702,442.942211211835,429.134558744181
+"519",38,22,1,0,"Cardiovascular","Black","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",576.553426701006,594.966103144744,612.772209204408,594.94138751807
+"520",38,22,1,0,"Communicable","Black","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",145.223708235132,154.888319214533,164.744293927096,155.06332819774
+"521",38,22,1,0,"Injuries","Black","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",149.628850419019,156.199513899857,163.667619546821,156.279924316534
+"522",38,22,1,0,"Non-communicable","Black","Male","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",144.164741839009,151.631768867008,159.509685494435,151.600332279838
+"523",38,22,1,1,"All other causes","Black","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",161.193551068219,167.862854637852,174.51923362515,167.745143634072
+"524",38,22,1,1,"Cancers","Black","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",224.290154291145,230.655482425454,237.447988690212,230.670457206662
+"525",38,22,1,1,"Cardiovascular","Black","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",400.235291530473,412.051775761859,424.902192360385,412.191035515534
+"526",38,22,1,1,"Communicable","Black","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",68.0107869045344,72.5911554242236,77.5392920918218,72.6183540984108
+"527",38,22,1,1,"Injuries","Black","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",40.2844351665389,42.4471782724697,44.951841526412,42.5108930434499
+"528",38,22,1,1,"Non-communicable","Black","Female","Pennsylvania",1990,"Mid-Atlantic","Northeast","PA",89.0968691485547,93.534909499256,97.9330920983583,93.5337524498054
+"529",38,23,0,0,"All other causes","White","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",125.227149996923,127.658666972244,130.22844734338,127.676795952489
+"530",38,23,0,0,"Cancers","White","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",276.893940493378,280.887451566108,284.496366070376,280.83313551122
+"531",38,23,0,0,"Cardiovascular","White","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",509.277748975226,515.366576857622,521.376842746447,515.374522457489
+"532",38,23,0,0,"Communicable","White","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",68.545557262615,70.8776916737986,73.4021002920369,70.8823487402936
+"533",38,23,0,0,"Injuries","White","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",70.6464449691971,72.1441807476298,73.6089790742224,72.1318940180267
+"534",38,23,0,0,"Non-communicable","White","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",110.365806942099,112.818960712271,115.373406555531,112.88262000937
+"535",38,23,0,1,"All other causes","White","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",87.147505055429,88.5215029077687,90.2419606649209,88.5824351625719
+"536",38,23,0,1,"Cancers","White","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",177.557271019488,179.853755037341,182.116768859393,179.860080547569
+"537",38,23,0,1,"Cardiovascular","White","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",331.054118527671,334.784602479703,338.603343761805,334.770361393753
+"538",38,23,0,1,"Communicable","White","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",39.0961429513519,40.332983307685,41.5834730289128,40.334953199708
+"539",38,23,0,1,"Injuries","White","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",24.8984498002401,25.6787184769883,26.454172279966,25.6669936566811
+"540",38,23,0,1,"Non-communicable","White","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",66.0849525906514,67.4589166571379,68.9463943691914,67.4661267374297
+"541",38,23,1,0,"All other causes","Black","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",218.042370630691,229.097041409088,239.522478004784,228.964225996994
+"542",38,23,1,0,"Cancers","Black","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",407.73584944219,421.350451612192,435.81185157055,421.219342866862
+"543",38,23,1,0,"Cardiovascular","Black","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",567.43937864572,584.587306175093,602.498919102249,584.593097092896
+"544",38,23,1,0,"Communicable","Black","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",149.87430577581,159.622304930642,169.638290626034,159.459164229459
+"545",38,23,1,0,"Injuries","Black","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",147.930064642524,154.446494761155,161.520467034594,154.461081356476
+"546",38,23,1,0,"Non-communicable","Black","Male","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",144.867714403471,151.982492954094,159.724079564803,151.982326929303
+"547",38,23,1,1,"All other causes","Black","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",153.669002562836,159.606265031382,166.22118485328,159.674898594465
+"548",38,23,1,1,"Cancers","Black","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",227.497616017568,233.735443194873,240.528427919335,233.800467605771
+"549",38,23,1,1,"Cardiovascular","Black","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",387.034308209781,398.553974432265,411.54745762081,398.855853261592
+"550",38,23,1,1,"Communicable","Black","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",68.3572255369607,72.5153573060315,77.3926464653395,72.6272037609468
+"551",38,23,1,1,"Injuries","Black","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",39.6163695490404,41.786786636548,44.2103356378731,41.8197841790157
+"552",38,23,1,1,"Non-communicable","Black","Female","Pennsylvania",1991,"Mid-Atlantic","Northeast","PA",88.985208244464,93.4108163876009,97.7143714485838,93.3242558526767
+"553",38,24,0,0,"All other causes","White","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",123.878422564725,126.349087447511,128.888804609715,126.394157216062
+"554",38,24,0,0,"Cancers","White","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",274.295052936314,277.892097769957,281.471805245064,277.904406581364
+"555",38,24,0,0,"Cardiovascular","White","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",499.219362960736,505.311341920729,511.239945913856,505.371384200263
+"556",38,24,0,0,"Communicable","White","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",68.9347049655583,71.2770174542341,73.8064442957882,71.3126780524142
+"557",38,24,0,0,"Injuries","White","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",70.0241150517595,71.5253579576985,72.9698894878472,71.5090494046792
+"558",38,24,0,0,"Non-communicable","White","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",111.565554888049,113.928921896194,116.393872836905,113.906976144072
+"559",38,24,0,1,"All other causes","White","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",86.4907618049177,88.2512429893327,89.8613411032111,88.2845587586192
+"560",38,24,0,1,"Cancers","White","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",177.394170163103,179.824151932336,182.089118051383,179.767146009049
+"561",38,24,0,1,"Cardiovascular","White","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",324.539066464769,328.122757775937,331.623064193161,328.111536441824
+"562",38,24,0,1,"Communicable","White","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",39.0939469241282,40.287337201969,41.5199799710647,40.3054874526395
+"563",38,24,0,1,"Injuries","White","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",24.7344075867637,25.4414395308497,26.2327954590206,25.4458939110703
+"564",38,24,0,1,"Non-communicable","White","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",67.1776021460671,68.5588518424892,69.9327313991318,68.5477757351813
+"565",38,24,1,0,"All other causes","Black","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",214.547062827236,225.059140637531,235.228297979894,225.225532164948
+"566",38,24,1,0,"Cancers","Black","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",404.114341370925,418.317354795065,432.653015723843,418.447039569455
+"567",38,24,1,0,"Cardiovascular","Black","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",564.483971161272,582.799712138948,599.965347380206,582.686284443586
+"568",38,24,1,0,"Communicable","Black","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",157.466121894108,166.753288374344,177.757729473283,166.87498735954
+"569",38,24,1,0,"Injuries","Black","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",151.169096712643,157.616710634413,164.166496494122,157.606939176001
+"570",38,24,1,0,"Non-communicable","Black","Male","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",142.115352483874,150.112770233032,157.803798032911,150.072489516859
+"571",38,24,1,1,"All other causes","Black","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",149.761872627646,155.956301873853,162.266070018875,155.878068529877
+"572",38,24,1,1,"Cancers","Black","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",228.02487057266,235.405891499352,242.056090132115,235.32907980155
+"573",38,24,1,1,"Cardiovascular","Black","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",380.724242761379,393.461439862517,405.754422638612,393.343395945039
+"574",38,24,1,1,"Communicable","Black","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",70.3493682776841,74.6814200242784,79.7390622354481,74.8669327549231
+"575",38,24,1,1,"Injuries","Black","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",39.2343763821851,41.628886950457,44.0204011272393,41.6604600880639
+"576",38,24,1,1,"Non-communicable","Black","Female","Pennsylvania",1992,"Mid-Atlantic","Northeast","PA",88.2225020109157,92.6417299335439,97.1496252500668,92.6451311105589
+"577",38,25,0,0,"All other causes","White","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",127.751355871128,130.393736228222,133.114235297712,130.426356265765
+"578",38,25,0,0,"Cancers","White","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",270.92441324645,274.388055324726,278.308164637972,274.447813112123
+"579",38,25,0,0,"Cardiovascular","White","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",495.461073994432,501.102332021441,506.711518148148,501.069997418218
+"580",38,25,0,0,"Communicable","White","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",68.7936019605424,71.1882154474909,73.5461307795298,71.1875583270136
+"581",38,25,0,0,"Injuries","White","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",70.3309434934078,71.795272509345,73.3913058983545,71.8114224865033
+"582",38,25,0,0,"Non-communicable","White","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",112.737623916599,114.987176811689,117.482576024943,115.021160381343
+"583",38,25,0,1,"All other causes","White","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",88.175614703444,89.9012820775149,91.5557916533597,89.8941850820767
+"584",38,25,0,1,"Cancers","White","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",176.341218640615,178.72563347397,180.801840116922,178.71021636808
+"585",38,25,0,1,"Cardiovascular","White","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",323.783194041764,327.270470123839,330.62241585588,327.24112055275
+"586",38,25,0,1,"Communicable","White","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",40.3140040285134,41.4596305441978,42.6735533878302,41.4850313358273
+"587",38,25,0,1,"Injuries","White","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",24.6607626823529,25.3822961883103,26.132591978989,25.3882850422622
+"588",38,25,0,1,"Non-communicable","White","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",69.1220538255239,70.5195051862958,72.0052539956686,70.537222446734
+"589",38,25,1,0,"All other causes","Black","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",215.889972006933,225.923778548204,236.769580621114,226.005558329025
+"590",38,25,1,0,"Cancers","Black","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",405.074194951004,418.524975974499,433.52961073055,418.651496813247
+"591",38,25,1,0,"Cardiovascular","Black","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",570.441218457735,587.365620305298,604.085915968909,587.352183518288
+"592",38,25,1,0,"Communicable","Black","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",164.414235257658,173.556221659153,184.492441978227,173.96878730809
+"593",38,25,1,0,"Injuries","Black","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",155.188732932363,161.905961762657,169.030560237007,161.888311885329
+"594",38,25,1,0,"Non-communicable","Black","Male","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",146.909379229705,154.353567348543,162.110201295959,154.333116015834
+"595",38,25,1,1,"All other causes","Black","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",149.346742649022,155.829222343024,161.386394630165,155.672160652735
+"596",38,25,1,1,"Cancers","Black","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",227.600754196578,233.403015855916,240.107773030654,233.530512155829
+"597",38,25,1,1,"Cardiovascular","Black","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",385.309934349598,397.764561636284,409.406004736436,397.50008513489
+"598",38,25,1,1,"Communicable","Black","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",69.8786226086785,74.7173384735705,79.5125280128013,74.7135032038125
+"599",38,25,1,1,"Injuries","Black","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",38.8359022182337,41.0220922436114,43.4430827128863,41.0618709215812
+"600",38,25,1,1,"Non-communicable","Black","Female","Pennsylvania",1993,"Mid-Atlantic","Northeast","PA",88.1928476843928,92.6231711225219,97.049037405733,92.5892845813607
+"601",38,26,0,0,"All other causes","White","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",128.865215432767,131.416328117477,134.070078708356,131.441089215685
+"602",38,26,0,0,"Cancers","White","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",268.621396980416,271.976728502738,275.499590658032,272.011509251018
+"603",38,26,0,0,"Cardiovascular","White","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",487.280306551952,493.427787871282,499.542979319878,493.390140335439
+"604",38,26,0,0,"Communicable","White","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",69.6863440919547,71.8261009185856,74.1777529688202,71.8577404966188
+"605",38,26,0,0,"Injuries","White","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",70.0861744768957,71.537954158217,73.0011920471183,71.5551829202162
+"606",38,26,0,0,"Non-communicable","White","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",111.661111072724,113.989926784364,116.373022753038,114.002433991913
+"607",38,26,0,1,"All other causes","White","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",90.3346371173266,92.0938625253083,93.7706156727291,92.0815608731408
+"608",38,26,0,1,"Cancers","White","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",175.990988957143,178.131676508854,180.393214645226,178.171476221724
+"609",38,26,0,1,"Cardiovascular","White","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",327.792495587335,331.267086851797,334.868213918738,331.281725151066
+"610",38,26,0,1,"Communicable","White","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",39.2983099941397,40.4148279186524,41.6374366725855,40.4266088731757
+"611",38,26,0,1,"Injuries","White","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",24.7684917990882,25.472736032105,26.2220193348135,25.4827886458804
+"612",38,26,0,1,"Non-communicable","White","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",70.994745304258,72.5097035575218,73.9642760424287,72.5085860847002
+"613",38,26,1,0,"All other causes","Black","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",208.178837603433,218.112927665629,228.534516011944,218.26682878358
+"614",38,26,1,0,"Cancers","Black","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",400.919942608232,413.931276711617,426.604217164797,413.878235659052
+"615",38,26,1,0,"Cardiovascular","Black","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",562.526059421143,579.41517748663,597.446991211224,579.631148159557
+"616",38,26,1,0,"Communicable","Black","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",174.453844631981,184.888516851625,196.01379979341,184.807829500976
+"617",38,26,1,0,"Injuries","Black","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",154.49108152656,160.651997745868,168.066927815995,160.838570206381
+"618",38,26,1,0,"Non-communicable","Black","Male","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",147.721149182687,155.236716826763,162.810841842289,155.307877161262
+"619",38,26,1,1,"All other causes","Black","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",148.115997174834,153.855517172927,160.061391483364,153.906678407933
+"620",38,26,1,1,"Cancers","Black","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",221.633436449277,228.101101395559,234.335479253147,228.128064648472
+"621",38,26,1,1,"Cardiovascular","Black","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",377.05293827249,388.480711481263,401.00137861213,388.827610368606
+"622",38,26,1,1,"Communicable","Black","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",70.2334048649496,74.7262331204745,79.1515999101646,74.7209808016049
+"623",38,26,1,1,"Injuries","Black","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",38.1703474745773,40.2849963586888,42.3651526466218,40.3036015826992
+"624",38,26,1,1,"Non-communicable","Black","Female","Pennsylvania",1994,"Mid-Atlantic","Northeast","PA",89.5638048112387,93.9816385769842,97.9740766007626,93.960361666403
+"625",38,27,0,0,"All other causes","White","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",128.719455980963,131.500267996113,133.998450990776,131.47206265992
+"626",38,27,0,0,"Cancers","White","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",267.046586562822,270.361188018899,273.601405990451,270.359635416812
+"627",38,27,0,0,"Cardiovascular","White","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",478.52722842912,484.495331943092,489.989568527453,484.472722879161
+"628",38,27,0,0,"Communicable","White","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",68.7001528024977,70.8282709734567,73.0640776556538,70.8423560783866
+"629",38,27,0,0,"Injuries","White","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",71.013551091517,72.5288503729305,73.9193914348409,72.5094732394861
+"630",38,27,0,0,"Non-communicable","White","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",110.656695678382,112.989596490566,115.344094551426,113.000294686834
+"631",38,27,0,1,"All other causes","White","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",92.3060449869005,94.0420156213001,95.7393560281271,94.0425673837696
+"632",38,27,0,1,"Cancers","White","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",174.019437457051,176.107975069568,178.327024534005,176.105688786854
+"633",38,27,0,1,"Cardiovascular","White","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",314.892261469104,318.255766303155,321.696691766493,318.22342503069
+"634",38,27,0,1,"Communicable","White","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",39.6369629829805,40.8431313988361,41.9814701152836,40.836656883904
+"635",38,27,0,1,"Injuries","White","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",25.0431704880085,25.7036611847866,26.4414424916767,25.7158917828365
+"636",38,27,0,1,"Non-communicable","White","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",72.0292544782469,73.5462257590911,75.0820624144134,73.5378795761599
+"637",38,27,1,0,"All other causes","Black","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",199.927961212707,209.465415638111,218.963335180152,209.485479076125
+"638",38,27,1,0,"Cancers","Black","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",394.152449735229,406.610676747375,419.490795082431,406.711495248221
+"639",38,27,1,0,"Cardiovascular","Black","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",558.208829672211,575.099347746546,592.702322205112,575.262596176822
+"640",38,27,1,0,"Communicable","Black","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",179.365799765958,189.536025638764,200.2861774521,189.631351912533
+"641",38,27,1,0,"Injuries","Black","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",149.490906153859,155.950738910389,162.481437551317,156.082283673942
+"642",38,27,1,0,"Non-communicable","Black","Male","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",147.372737818641,154.642830180555,162.294954194073,154.507744286364
+"643",38,27,1,1,"All other causes","Black","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",148.580298208771,154.6633659043,160.999293596522,154.728858829415
+"644",38,27,1,1,"Cancers","Black","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",218.637262287661,224.945619044737,231.55042672735,225.03890166893
+"645",38,27,1,1,"Cardiovascular","Black","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",370.890257349689,382.135418502386,394.675472109603,382.295375357027
+"646",38,27,1,1,"Communicable","Black","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",71.2853358175594,75.2533140067293,79.6762846083482,75.3800367585427
+"647",38,27,1,1,"Injuries","Black","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",37.0163412372946,39.1448608485543,41.4706268464338,39.1311434026589
+"648",38,27,1,1,"Non-communicable","Black","Female","Pennsylvania",1995,"Mid-Atlantic","Northeast","PA",90.3012134292744,94.5123332072955,98.6719563969882,94.5263534028335
+"649",38,28,0,0,"All other causes","White","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",129.905240269087,132.496987893458,135.178259577541,132.512903896825
+"650",38,28,0,0,"Cancers","White","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",264.634898043459,267.999100438593,271.90975577187,268.066479068433
+"651",38,28,0,0,"Cardiovascular","White","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",470.685647946459,476.184859091334,482.068858143663,476.180060962438
+"652",38,28,0,0,"Communicable","White","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",64.0055151925259,66.1672193983898,68.323876510944,66.1553882999329
+"653",38,28,0,0,"Injuries","White","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",71.7481151556462,73.1571962437088,74.6501852919668,73.1712126016607
+"654",38,28,0,0,"Non-communicable","White","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",111.16215915987,113.43789304128,115.701256023566,113.417929886485
+"655",38,28,0,1,"All other causes","White","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",95.925400023927,97.6250979922977,99.4074975983295,97.6625696238337
+"656",38,28,0,1,"Cancers","White","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",172.868800282414,174.997563607947,177.292236315985,174.990722017166
+"657",38,28,0,1,"Cardiovascular","White","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",313.666548576426,316.942316116845,320.495096063252,317.001604732507
+"658",38,28,0,1,"Communicable","White","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",39.7321552571253,40.8712419785909,42.023292917846,40.8885531011579
+"659",38,28,0,1,"Injuries","White","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",25.6276754502368,26.3381401355967,27.0870881590561,26.3424643052951
+"660",38,28,0,1,"Non-communicable","White","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",72.1990434981734,73.6785192066831,75.0345014515936,73.6458714574121
+"661",38,28,1,0,"All other causes","Black","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",196.734028305018,206.281416291681,216.121556249081,206.330654237702
+"662",38,28,1,0,"Cancers","Black","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",392.549046887276,405.504606669093,418.390621752843,405.525388234746
+"663",38,28,1,0,"Cardiovascular","Black","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",539.884550004248,556.301297360371,572.961500841813,556.416421337155
+"664",38,28,1,0,"Communicable","Black","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",168.263040165822,177.671657992694,187.967826366199,177.744799860819
+"665",38,28,1,0,"Injuries","Black","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",144.489088334534,150.470778572573,156.81073580881,150.624869379852
+"666",38,28,1,0,"Non-communicable","Black","Male","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",146.604165814778,154.262818394781,161.735472286076,154.165565423194
+"667",38,28,1,1,"All other causes","Black","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",147.04860807554,153.072117360489,159.261156096428,153.094619473661
+"668",38,28,1,1,"Cancers","Black","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",216.892764155884,223.131800493459,229.550160998139,223.18991096842
+"669",38,28,1,1,"Cardiovascular","Black","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",360.618707143925,372.370276200533,383.497692322166,372.194766090997
+"670",38,28,1,1,"Communicable","Black","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",71.8581651601036,76.3821898593355,81.3053393380095,76.4639834819677
+"671",38,28,1,1,"Injuries","Black","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",36.1435370228517,38.2799791877751,40.5151158186663,38.3113940990779
+"672",38,28,1,1,"Non-communicable","Black","Female","Pennsylvania",1996,"Mid-Atlantic","Northeast","PA",92.5048297668034,96.8210372498992,101.225253067961,96.8560280061802
+"673",38,29,0,0,"All other causes","White","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",131.516010685384,134.193044128858,136.891629221034,134.171027354943
+"674",38,29,0,0,"Cancers","White","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",258.734342520496,261.838352868908,265.301259888895,261.836421985857
+"675",38,29,0,0,"Cardiovascular","White","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",446.471073793806,451.97094686817,457.693380316022,451.952464823968
+"676",38,29,0,0,"Communicable","White","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",61.7833794704399,63.8838474728286,66.1866152498935,63.9014801671931
+"677",38,29,0,0,"Injuries","White","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",72.5359825622101,74.1205441287351,75.6282187056349,74.1130936377289
+"678",38,29,0,0,"Non-communicable","White","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",110.680447542914,113.004258838955,115.553139309331,113.031175527661
+"679",38,29,0,1,"All other causes","White","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",98.9505294804273,100.806681092586,102.421757211186,100.789906820708
+"680",38,29,0,1,"Cancers","White","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",170.519257925448,172.73753355617,174.85673625301,172.711789517586
+"681",38,29,0,1,"Cardiovascular","White","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",303.272510955527,306.423305359145,309.859911443215,306.46201052913
+"682",38,29,0,1,"Communicable","White","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",39.0949137606935,40.1966162788354,41.3226455268731,40.2014772190128
+"683",38,29,0,1,"Injuries","White","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",26.2434453015415,27.0143493788756,27.7607469099621,27.0124443933378
+"684",38,29,0,1,"Non-communicable","White","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",73.4166100783483,74.855050198905,76.4067429511839,74.8621032225919
+"685",38,29,1,0,"All other causes","Black","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",198.485393034388,207.991215275808,218.526869494987,208.244127380619
+"686",38,29,1,0,"Cancers","Black","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",381.534479322501,394.604517957051,407.293317287038,394.575006031336
+"687",38,29,1,0,"Cardiovascular","Black","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",519.670429655637,535.905683712627,552.472059056204,536.081610770909
+"688",38,29,1,0,"Communicable","Black","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",139.500435410649,149.039506218187,158.990504966298,149.058158712594
+"689",38,29,1,0,"Injuries","Black","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",141.332561745367,147.262844863795,153.287483969957,147.250132130618
+"690",38,29,1,0,"Non-communicable","Black","Male","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",144.81159835117,152.127377016292,160.135751715185,152.229415070919
+"691",38,29,1,1,"All other causes","Black","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",148.060501628892,154.122375754478,160.331324804112,154.12950896939
+"692",38,29,1,1,"Cancers","Black","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",219.228694473367,224.920649204192,230.90327136542,224.939878440906
+"693",38,29,1,1,"Cardiovascular","Black","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",346.790363217684,358.154475819837,370.103937418406,358.282307885553
+"694",38,29,1,1,"Communicable","Black","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",74.4971283873374,79.1210709105746,83.896323332883,79.1047987001536
+"695",38,29,1,1,"Injuries","Black","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",35.6454048607783,37.7364808032702,39.8775886106728,37.7552379912706
+"696",38,29,1,1,"Non-communicable","Black","Female","Pennsylvania",1997,"Mid-Atlantic","Northeast","PA",93.764053841953,97.9903321886634,102.440702692364,98.0392935091416
+"697",38,30,0,0,"All other causes","White","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",132.71471658882,135.209650637319,137.858783912638,135.232917013453
+"698",38,30,0,0,"Cancers","White","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",256.034798631377,259.128902813033,262.449185470507,259.13728114681
+"699",38,30,0,0,"Cardiovascular","White","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",435.010056331896,440.518381638286,446.128447518217,440.585729494827
+"700",38,30,0,0,"Communicable","White","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",58.5148096135472,60.5085800512164,62.4686561252099,60.5181777706573
+"701",38,30,0,0,"Injuries","White","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",71.0248557342055,72.4425900764598,73.9862195458965,72.4398244398544
+"702",38,30,0,0,"Non-communicable","White","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",113.633894004045,115.880286845136,118.013948090762,115.857049520691
+"703",38,30,0,1,"All other causes","White","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",101.045962084827,102.712015410842,104.550453555058,102.726408177321
+"704",38,30,0,1,"Cancers","White","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",167.904220795747,169.993376132852,172.261070713243,169.999047502864
+"705",38,30,0,1,"Cardiovascular","White","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",291.06189458264,294.407061232495,297.493321321223,294.332652144271
+"706",38,30,0,1,"Communicable","White","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",39.342911449317,40.5348682885252,41.8358543350301,40.5371833517239
+"707",38,30,0,1,"Injuries","White","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",26.6289316064952,27.4211152610507,28.2237321553301,27.4184451531566
+"708",38,30,0,1,"Non-communicable","White","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",74.9495928864406,76.4033021000645,77.9021481890642,76.4247345646828
+"709",38,30,1,0,"All other causes","Black","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",196.404576026953,205.132574377967,215.674058075866,205.589099484648
+"710",38,30,1,0,"Cancers","Black","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",371.757047856781,384.193854551519,396.854374580077,384.225081742121
+"711",38,30,1,0,"Cardiovascular","Black","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",511.936976813941,527.87338338235,544.548650986068,528.016831773013
+"712",38,30,1,0,"Communicable","Black","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",129.982034415447,138.646093482356,148.25171333123,138.834770914249
+"713",38,30,1,0,"Injuries","Black","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",132.052268444462,137.716901521831,143.486500367269,137.717704343483
+"714",38,30,1,0,"Non-communicable","Black","Male","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",143.92524607737,151.867986923025,159.840347205411,151.803440067138
+"715",38,30,1,1,"All other causes","Black","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",146.965238212282,153.168726069808,159.280757089317,153.230088808669
+"716",38,30,1,1,"Cancers","Black","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",217.399842529558,223.718959384562,229.740261285456,223.677846006693
+"717",38,30,1,1,"Cardiovascular","Black","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",342.306739566359,352.92644470787,363.573429908402,352.941279680409
+"718",38,30,1,1,"Communicable","Black","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",72.8817353184174,76.9927627733447,81.9814801564758,77.0355286603829
+"719",38,30,1,1,"Injuries","Black","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",34.2117118542201,36.1928942719808,38.4875926675767,36.2238563975858
+"720",38,30,1,1,"Non-communicable","Black","Female","Pennsylvania",1998,"Mid-Atlantic","Northeast","PA",97.9501297275767,102.40173903086,106.941855493611,102.398382855073
+"721",38,31,0,0,"All other causes","White","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",133.488416046943,136.146415816178,138.991509927451,136.196832517532
+"722",38,31,0,0,"Cancers","White","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",252.065984030023,255.389057629294,258.692572513025,255.353090297902
+"723",38,31,0,0,"Cardiovascular","White","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",424.032903360333,429.125682610927,434.010459439712,429.03673393139
+"724",38,31,0,0,"Communicable","White","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",50.6020044596731,52.3554957426169,54.1039666638826,52.3449895317643
+"725",38,31,0,0,"Injuries","White","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",70.8352926823025,72.2465040286116,73.7408403240473,72.2542160903262
+"726",38,31,0,0,"Non-communicable","White","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",123.891741180075,126.286888437035,128.918215539085,126.284529418402
+"727",38,31,0,1,"All other causes","White","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",101.792511951964,103.442742308922,105.169068869564,103.464129096688
+"728",38,31,0,1,"Cancers","White","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",169.051824600524,171.173510403211,173.326748259791,171.171026399704
+"729",38,31,0,1,"Cardiovascular","White","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",291.802410852602,294.842470361055,297.904678582076,294.762606037055
+"730",38,31,0,1,"Communicable","White","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",35.5799612169146,36.6301278641584,37.6777031221248,36.6258174100314
+"731",38,31,0,1,"Injuries","White","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",26.7320789217144,27.4537952293142,28.2851888621518,27.4594933506907
+"732",38,31,0,1,"Non-communicable","White","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",87.0027552465275,88.5895656266938,90.3194478499963,88.6052735056154
+"733",38,31,1,0,"All other causes","Black","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",194.728118073663,203.895778887138,214.007561820378,203.848290713
+"734",38,31,1,0,"Cancers","Black","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",362.345902579066,373.990875095736,386.687736423705,374.259944076141
+"735",38,31,1,0,"Cardiovascular","Black","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",513.187202487777,529.611488210188,544.940004797333,529.335270392152
+"736",38,31,1,0,"Communicable","Black","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",125.457000878235,133.791747378545,143.135652261848,134.017459841828
+"737",38,31,1,0,"Injuries","Black","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",128.3985144346,133.815556368333,139.461463652808,133.798481906355
+"738",38,31,1,0,"Non-communicable","Black","Male","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",151.171376533353,158.968353720237,167.075894890821,158.967734555496
+"739",38,31,1,1,"All other causes","Black","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",150.392193026251,156.171157610078,162.649352349954,156.207232617709
+"740",38,31,1,1,"Cancers","Black","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",216.328099082393,222.327824641713,228.786746027918,222.418878329825
+"741",38,31,1,1,"Cardiovascular","Black","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",354.574358606251,365.749930292042,376.859737458975,365.605692558455
+"742",38,31,1,1,"Communicable","Black","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",70.4303339791326,74.5829035617284,79.3780141365925,74.7086812706247
+"743",38,31,1,1,"Injuries","Black","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",33.0061991051344,34.8955439107455,37.0273709994182,34.9078369923243
+"744",38,31,1,1,"Non-communicable","Black","Female","Pennsylvania",1999,"Mid-Atlantic","Northeast","PA",104.868673976728,109.408052025194,114.501150429116,109.454939756883
+"745",38,32,0,0,"All other causes","White","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",138.582492854372,141.292665727618,144.12937175117,141.339093407223
+"746",38,32,0,0,"Cancers","White","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",248.725744828782,252.006026235616,255.495789088005,252.008648851028
+"747",38,32,0,0,"Cardiovascular","White","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",410.194680784692,415.170775630388,420.512574195212,415.186201544272
+"748",38,32,0,0,"Communicable","White","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",49.2138378601768,51.0298030238909,52.9223868558271,51.0164291703779
+"749",38,32,0,0,"Injuries","White","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",71.2314460292341,72.6968410926309,74.3005176922475,72.684752697499
+"750",38,32,0,0,"Non-communicable","White","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",124.430569724426,126.810556904443,129.287569930978,126.842754781795
+"751",38,32,0,1,"All other causes","White","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",106.475906336969,108.25402230226,109.982028684214,108.240100200299
+"752",38,32,0,1,"Cancers","White","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",169.180744666881,171.202120458836,173.365456499486,171.259642164667
+"753",38,32,0,1,"Cardiovascular","White","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",284.262494506942,287.382106556107,290.439486869779,287.358523075649
+"754",38,32,0,1,"Communicable","White","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",34.3298859023365,35.3480046567854,36.4458654201064,35.3631291670839
+"755",38,32,0,1,"Injuries","White","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",26.563680706723,27.3374402562938,28.0821003048138,27.3411609111551
+"756",38,32,0,1,"Non-communicable","White","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",91.427661170286,93.0943673835022,94.77415790611,93.0953430453265
+"757",38,32,1,0,"All other causes","Black","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",197.449231727023,206.460801429482,215.44104926062,206.51015853605
+"758",38,32,1,0,"Cancers","Black","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",353.019512050329,364.147735297194,375.701931603787,364.214705503144
+"759",38,32,1,0,"Cardiovascular","Black","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",503.332927453596,518.551028135844,535.166982094835,518.66376307865
+"760",38,32,1,0,"Communicable","Black","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",123.088912235252,131.290940997984,140.369744771854,131.435075332299
+"761",38,32,1,0,"Injuries","Black","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",125.98214025328,131.809976227677,137.716866676181,131.810170531228
+"762",38,32,1,0,"Non-communicable","Black","Male","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",155.985508025767,164.230207826274,172.300889204842,164.150144860049
+"763",38,32,1,1,"All other causes","Black","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",152.575414599019,158.630190081302,164.73476287334,158.623852220868
+"764",38,32,1,1,"Cancers","Black","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",210.682387340485,216.879307713463,222.889682718251,216.816101621668
+"765",38,32,1,1,"Cardiovascular","Black","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",353.925554084666,364.702815928257,375.961819355472,364.785105669843
+"766",38,32,1,1,"Communicable","Black","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",69.1918501851855,73.2101920862549,77.4093435918975,73.2337065953107
+"767",38,32,1,1,"Injuries","Black","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",32.4712643533591,34.3583435539171,36.352232868306,34.3490618125394
+"768",38,32,1,1,"Non-communicable","Black","Female","Pennsylvania",2000,"Mid-Atlantic","Northeast","PA",109.067407671726,113.716461553808,118.720644333401,113.830340515018
+"769",38,33,0,0,"All other causes","White","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",142.672683207235,145.376804140492,148.105768728436,145.36627906454
+"770",38,33,0,0,"Cancers","White","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",245.576162432523,248.649324252731,251.918540796081,248.697930202193
+"771",38,33,0,0,"Cardiovascular","White","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",396.774704552344,401.728309530497,406.66225237849,401.727688144392
+"772",38,33,0,0,"Communicable","White","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",46.9154269716144,48.5722299362775,50.2584996235529,48.5804639738698
+"773",38,33,0,0,"Injuries","White","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",71.8034789970669,73.343518547147,74.978721408237,73.3592118361691
+"774",38,33,0,0,"Non-communicable","White","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",124.993040451671,127.375200965417,130.009019704645,127.411525167517
+"775",38,33,0,1,"All other causes","White","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",108.507266999195,110.333624007825,112.074496475026,110.297413835243
+"776",38,33,0,1,"Cancers","White","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",167.271622949932,169.385330048788,171.531519868776,169.39551043778
+"777",38,33,0,1,"Cardiovascular","White","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",274.592809985914,277.47135992785,280.637232337014,277.554306066831
+"778",38,33,0,1,"Communicable","White","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",32.734512217303,33.7394438591514,34.7878525592185,33.7405303384869
+"779",38,33,0,1,"Injuries","White","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",26.798499577101,27.5284145957057,28.26367143687,27.5084076261269
+"780",38,33,0,1,"Non-communicable","White","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",92.5298195872811,94.2419927336337,95.8509495060864,94.2114024328349
+"781",38,33,1,0,"All other causes","Black","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",195.904806501612,205.041540928441,214.949296858988,205.17068761345
+"782",38,33,1,0,"Cancers","Black","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",340.107306177772,352.551392905252,363.857338012106,352.276414369839
+"783",38,33,1,0,"Cardiovascular","Black","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",489.456488323758,504.34708890447,520.069834663701,504.645777831344
+"784",38,33,1,0,"Communicable","Black","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",120.539927718114,128.760391844139,136.35509974885,128.711263802234
+"785",38,33,1,0,"Injuries","Black","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",121.535573554775,127.16613295764,132.075526982865,127.030454980274
+"786",38,33,1,0,"Non-communicable","Black","Male","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",158.757425941653,166.61855498352,174.363979341776,166.480099396886
+"787",38,33,1,1,"All other causes","Black","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",156.795392446713,163.063425160387,169.176015507603,163.084525601577
+"788",38,33,1,1,"Cancers","Black","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",208.891123032521,214.541418922748,220.778413840919,214.625131935121
+"789",38,33,1,1,"Cardiovascular","Black","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",338.421188998287,349.031677647402,359.487922597113,348.85955099715
+"790",38,33,1,1,"Communicable","Black","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",69.8023114126759,74.2085167126653,78.6566451776469,74.1625635612288
+"791",38,33,1,1,"Injuries","Black","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",32.0589256293093,33.7761750034085,35.7672688341909,33.7945590056448
+"792",38,33,1,1,"Non-communicable","Black","Female","Pennsylvania",2001,"Mid-Atlantic","Northeast","PA",111.546610138104,116.192591441418,121.718172688059,116.244346967074
+"793",38,34,0,0,"All other causes","White","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",145.241492378176,147.860338381295,150.539648494348,147.855449116006
+"794",38,34,0,0,"Cancers","White","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",242.743324358052,245.893010351184,248.942061344225,245.893532331902
+"795",38,34,0,0,"Cardiovascular","White","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",383.14433149251,388.21719092556,393.153322079371,388.196111209073
+"796",38,34,0,0,"Communicable","White","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",48.2238373446828,50.0451124510224,51.7886629999505,50.0351179121727
+"797",38,34,0,0,"Injuries","White","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",73.3146769805749,74.8174117151249,76.4268589729062,74.8325375930132
+"798",38,34,0,0,"Non-communicable","White","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",125.601971571786,127.850817775845,130.307023670869,127.834791967255
+"799",38,34,0,1,"All other causes","White","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",111.493286090536,113.225272395766,115.068712487879,113.243209062699
+"800",38,34,0,1,"Cancers","White","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",165.750246676016,167.737851340329,169.773020401148,167.775596821913
+"801",38,34,0,1,"Cardiovascular","White","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",267.877096829853,271.004284187636,273.798759872117,270.95652441582
+"802",38,34,0,1,"Communicable","White","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",33.1856053333158,34.309949107552,35.3220153727718,34.2925564622104
+"803",38,34,0,1,"Injuries","White","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",27.560074927849,28.3254642177911,29.1341643303625,28.3357523577672
+"804",38,34,0,1,"Non-communicable","White","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",93.3886517780158,95.0076766924523,96.8518199101245,95.0649190506181
+"805",38,34,1,0,"All other causes","Black","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",195.276085526006,204.033662972184,213.842059459426,204.213573753466
+"806",38,34,1,0,"Cancers","Black","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",331.134417643412,342.356258265624,354.475995616817,342.54953005097
+"807",38,34,1,0,"Cardiovascular","Black","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",472.077211608205,486.447945967722,502.62683415479,486.639285290532
+"808",38,34,1,0,"Communicable","Black","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",119.252203456088,127.313765348698,135.555220172419,127.42561486936
+"809",38,34,1,0,"Injuries","Black","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",120.583451246378,125.764895523836,131.713453938574,125.90530653478
+"810",38,34,1,0,"Non-communicable","Black","Male","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",159.539943781256,167.36741882472,175.218862621538,167.476030831194
+"811",38,34,1,1,"All other causes","Black","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",157.732590040315,163.961375440956,170.963361482402,164.02893902966
+"812",38,34,1,1,"Cancers","Black","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",205.854906445555,211.561363325382,217.649327225457,211.520475382787
+"813",38,34,1,1,"Cardiovascular","Black","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",340.251189028418,350.548739221712,362.105173822706,350.757777861202
+"814",38,34,1,1,"Communicable","Black","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",66.7904011608332,70.8622789449599,75.3740813378374,70.9380435706336
+"815",38,34,1,1,"Injuries","Black","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",31.4678411512521,33.2967773212515,35.1936130242267,33.2996765001204
+"816",38,34,1,1,"Non-communicable","Black","Female","Pennsylvania",2002,"Mid-Atlantic","Northeast","PA",110.058301474747,114.660743449497,119.709272385997,114.740409686719
+"817",38,35,0,0,"All other causes","White","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",142.87196756293,145.248974944564,147.939004079685,145.3218936803
+"818",38,35,0,0,"Cancers","White","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",240.49575304766,243.5231298415,246.905360518171,243.570577655544
+"819",38,35,0,0,"Cardiovascular","White","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",371.695214379587,376.575915070031,381.637506471399,376.629994721966
+"820",38,35,0,0,"Communicable","White","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",46.5621871141245,48.2361700534456,49.9883165702228,48.2550259556775
+"821",38,35,0,0,"Injuries","White","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",75.2116304432573,76.7420067915729,78.3994565274872,76.7665585395554
+"822",38,35,0,0,"Non-communicable","White","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",124.669418019462,127.003506520476,129.699761011936,127.062549487417
+"823",38,35,0,1,"All other causes","White","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",113.429587819783,115.2333045673,117.074064905129,115.253996875335
+"824",38,35,0,1,"Cancers","White","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",163.412087041985,165.545968492812,167.871617978058,165.585774323051
+"825",38,35,0,1,"Cardiovascular","White","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",256.667864305088,259.756782604907,262.779594015739,259.73351219182
+"826",38,35,0,1,"Communicable","White","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",33.9387427518123,34.9058917950345,36.0196956612661,34.9254823172376
+"827",38,35,0,1,"Injuries","White","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",28.5670334509071,29.3471165762064,30.1523849969514,29.3546754126597
+"828",38,35,0,1,"Non-communicable","White","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",93.8662151200369,95.4604650121427,97.1306169793685,95.4766623373223
+"829",38,35,1,0,"All other causes","Black","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",192.037016979517,201.457957238849,211.361483087499,201.541873202867
+"830",38,35,1,0,"Cancers","Black","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",322.374501994842,334.017180993697,346.004874869931,334.042973308181
+"831",38,35,1,0,"Cardiovascular","Black","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",464.221129045978,479.177064447575,495.135169771917,479.389536630768
+"832",38,35,1,0,"Communicable","Black","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",114.414724090242,122.379014157283,130.667976617408,122.38888143559
+"833",38,35,1,0,"Injuries","Black","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",120.394605466781,125.708243907951,131.649530803199,125.697033113952
+"834",38,35,1,0,"Non-communicable","Black","Male","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",159.967706700988,167.493894928922,176.138862280254,167.620244533229
+"835",38,35,1,1,"All other causes","Black","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",157.382700827984,163.643987620812,169.956835033786,163.752800048899
+"836",38,35,1,1,"Cancers","Black","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",202.613676292786,208.18885157538,213.906040161063,208.139059719812
+"837",38,35,1,1,"Cardiovascular","Black","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",327.719678173347,338.390743512667,349.850045129464,338.47155150585
+"838",38,35,1,1,"Communicable","Black","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",64.5458480494977,68.6658840645321,72.7374238306514,68.6830332963257
+"839",38,35,1,1,"Injuries","Black","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",31.2384869845343,33.0867364936307,34.9974815212647,33.0908574760114
+"840",38,35,1,1,"Non-communicable","Black","Female","Pennsylvania",2003,"Mid-Atlantic","Northeast","PA",109.778155660874,115.023574732576,120.037766095389,115.018134989435
+"841",38,36,0,0,"All other causes","White","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",143.518862702376,145.975382744768,148.681656791724,146.012372477879
+"842",38,36,0,0,"Cancers","White","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",234.203708934726,237.302971269982,240.311125634389,237.326956760421
+"843",38,36,0,0,"Cardiovascular","White","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",354.851490523295,359.328416344211,364.213911215725,359.395255509467
+"844",38,36,0,0,"Communicable","White","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",46.6144167573157,48.2730328759792,49.9795994666075,48.2726161191715
+"845",38,36,0,0,"Injuries","White","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",77.5854176441043,79.1102779961627,80.6511625701349,79.0884075986822
+"846",38,36,0,0,"Non-communicable","White","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",123.643811171628,125.907951449021,128.41558592849,125.893156007086
+"847",38,36,0,1,"All other causes","White","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",114.009390282917,115.806340856513,117.832562860011,115.8187260375
+"848",38,36,0,1,"Cancers","White","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",162.630347402846,164.668864488075,166.707761617979,164.686313602134
+"849",38,36,0,1,"Cardiovascular","White","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",245.867062677067,248.578931205552,251.488128938421,248.583079655861
+"850",38,36,0,1,"Communicable","White","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",34.0174239628283,35.038008669652,36.1253792021361,35.0455849333791
+"851",38,36,0,1,"Injuries","White","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",29.5024071352887,30.3257113228425,31.2032724717724,30.3309464226723
+"852",38,36,0,1,"Non-communicable","White","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",94.5900287095498,96.150985373834,97.8759370317625,96.1662383922794
+"853",38,36,1,0,"All other causes","Black","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",188.79687531265,197.428355265589,206.98969942032,197.632888302615
+"854",38,36,1,0,"Cancers","Black","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",309.263640175059,319.865031010151,331.415330314006,320.039193269694
+"855",38,36,1,0,"Cardiovascular","Black","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",447.40407201466,460.793716500049,475.483303691464,460.779707889648
+"856",38,36,1,0,"Communicable","Black","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",107.278280796287,115.428262349698,123.072041440054,115.31612136349
+"857",38,36,1,0,"Injuries","Black","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",120.316048960917,125.707848153712,131.198360113236,125.792314137033
+"858",38,36,1,0,"Non-communicable","Black","Male","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",156.137882331815,163.580270424389,171.944852275545,163.737139049746
+"859",38,36,1,1,"All other causes","Black","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",155.792547181573,162.722121478021,168.793993445328,162.656462260746
+"860",38,36,1,1,"Cancers","Black","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",198.576430188132,204.130187375626,209.68556963861,204.099692163621
+"861",38,36,1,1,"Cardiovascular","Black","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",303.152407040772,313.274042112,323.225033628652,313.158685974845
+"862",38,36,1,1,"Communicable","Black","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",62.8948897815948,66.6576791567764,71.1924688724347,66.7692748733047
+"863",38,36,1,1,"Injuries","Black","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",30.9448642870934,32.8024495306242,34.7692854166167,32.824251602211
+"864",38,36,1,1,"Non-communicable","Black","Female","Pennsylvania",2004,"Mid-Atlantic","Northeast","PA",108.665630886125,113.640329383638,119.106799153866,113.819777221722
+"865",38,37,0,0,"All other causes","White","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",146.682188963205,149.215800160846,151.815417676572,149.210328529221
+"866",38,37,0,0,"Cancers","White","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",233.735075868107,236.542127561647,239.563098236914,236.5540371661
+"867",38,37,0,0,"Cardiovascular","White","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",342.047853830779,346.524723724669,351.190281616066,346.484162830154
+"868",38,37,0,0,"Communicable","White","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",47.5841495660273,49.2951109318964,51.145634169155,49.3163246844257
+"869",38,37,0,0,"Injuries","White","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",79.0050998374865,80.6260577083831,82.230707108283,80.6217073844287
+"870",38,37,0,0,"Non-communicable","White","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",122.097811786004,124.351077399696,126.875185124728,124.37471109989
+"871",38,37,0,1,"All other causes","White","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",118.633063265551,120.579549698214,122.407707238172,120.581574898419
+"872",38,37,0,1,"Cancers","White","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",160.435637262876,162.482716507359,164.562967452318,162.461737744041
+"873",38,37,0,1,"Cardiovascular","White","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",238.650930822902,241.466338009218,244.267434118954,241.492805753565
+"874",38,37,0,1,"Communicable","White","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",34.5513485457341,35.5037403477551,36.4952098649535,35.5147749353793
+"875",38,37,0,1,"Injuries","White","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",30.286420200727,31.1014259107338,31.8940354833027,31.1040619898942
+"876",38,37,0,1,"Non-communicable","White","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",95.7617379673891,97.362566853611,99.0424245757878,97.3874590562549
+"877",38,37,1,0,"All other causes","Black","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",190.346923817784,199.899452022514,209.684491716078,199.881559416173
+"878",38,37,1,0,"Cancers","Black","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",302.244096083995,312.450152556824,322.521072409293,312.440176030994
+"879",38,37,1,0,"Cardiovascular","Black","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",433.541435882394,447.645937061042,461.252477560965,447.664105073907
+"880",38,37,1,0,"Communicable","Black","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",100.321728914517,107.741035977012,114.850699358592,107.596386110185
+"881",38,37,1,0,"Injuries","Black","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",124.573601951564,130.281014305608,135.564333857949,130.123660886958
+"882",38,37,1,0,"Non-communicable","Black","Male","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",152.149263675,159.230819776832,167.66628681516,159.408166520803
+"883",38,37,1,1,"All other causes","Black","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",157.990660006491,164.081328830189,170.570470553965,164.153723570686
+"884",38,37,1,1,"Cancers","Black","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",195.937943729405,201.24294855092,207.258602786101,201.224224996928
+"885",38,37,1,1,"Cardiovascular","Black","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",294.261588652146,303.931776747758,314.321969890706,304.084428218321
+"886",38,37,1,1,"Communicable","Black","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",61.4159731681715,65.2492070891344,69.5244734476405,65.2981402680517
+"887",38,37,1,1,"Injuries","Black","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",30.4758140136342,32.423856001416,34.262395655328,32.4065444362381
+"888",38,37,1,1,"Non-communicable","Black","Female","Pennsylvania",2005,"Mid-Atlantic","Northeast","PA",107.216513931882,112.022432403031,116.976913573047,112.111798671307
+"889",38,38,0,0,"All other causes","White","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",148.977732455447,151.62342216677,154.259209058922,151.651311415846
+"890",38,38,0,0,"Cancers","White","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",226.940511640008,229.977153012861,232.993569968875,229.944561645107
+"891",38,38,0,0,"Cardiovascular","White","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",316.629266254832,321.148547189674,325.0513629261,321.030301938999
+"892",38,38,0,0,"Communicable","White","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",44.9372816539481,46.5581554595959,48.1264901606527,46.5556923731373
+"893",38,38,0,0,"Injuries","White","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",79.5611678800249,81.2528826974268,82.9220186084438,81.2631658439189
+"894",38,38,0,0,"Non-communicable","White","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",117.687301912751,119.925367769028,122.281804272889,119.992560654455
+"895",38,38,0,1,"All other causes","White","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",121.443688128531,123.304161184308,125.277573887431,123.319117846091
+"896",38,38,0,1,"Cancers","White","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",158.078709625627,159.998801716407,162.209891449296,160.01744424068
+"897",38,38,0,1,"Cardiovascular","White","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",219.357091025447,222.047282573197,224.821163535705,222.032458621581
+"898",38,38,0,1,"Communicable","White","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",32.3989326489552,33.4071443883173,34.3954397043729,33.4002608142422
+"899",38,38,0,1,"Injuries","White","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",30.3523781041494,31.1451938990604,32.056995408463,31.1587139691085
+"900",38,38,0,1,"Non-communicable","White","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",90.9317000647952,92.537627288194,94.1954103336652,92.5352553339756
+"901",38,38,1,0,"All other causes","Black","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",186.562076067661,194.810552028075,204.011037212464,194.911966232531
+"902",38,38,1,0,"Cancers","Black","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",300.96056183278,310.677981750003,322.060069165551,310.806832419841
+"903",38,38,1,0,"Cardiovascular","Black","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",415.364484909,427.987230857617,440.937977659562,428.137425450088
+"904",38,38,1,0,"Communicable","Black","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",94.4484094179628,101.549742550368,108.416606168125,101.465068700091
+"905",38,38,1,0,"Injuries","Black","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",126.301161444287,131.748610216236,137.899813329666,131.948917613077
+"906",38,38,1,0,"Non-communicable","Black","Male","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",148.727521526782,156.692790476374,163.720618579582,156.607113241596
+"907",38,38,1,1,"All other causes","Black","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",157.62829710049,163.865890153302,170.244438440787,163.753486962481
+"908",38,38,1,1,"Cancers","Black","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",192.999558443692,198.394578564009,204.229789945524,198.439514894168
+"909",38,38,1,1,"Cardiovascular","Black","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",276.060584308673,284.715220122808,293.359380850495,284.671369331537
+"910",38,38,1,1,"Communicable","Black","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",58.3919996921185,62.0432208608137,65.5268273690077,62.0668025059731
+"911",38,38,1,1,"Injuries","Black","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",30.1852134933318,32.0213776511384,33.9283561516249,32.0179184344709
+"912",38,38,1,1,"Non-communicable","Black","Female","Pennsylvania",2006,"Mid-Atlantic","Northeast","PA",104.510032544506,109.618343103075,114.354640723917,109.521134558642
+"913",38,39,0,0,"All other causes","White","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",149.316257008427,151.915024986253,154.346995435049,151.87992681217
+"914",38,39,0,0,"Cancers","White","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",223.80212320598,226.715315703704,229.773092062496,226.743928190072
+"915",38,39,0,0,"Cardiovascular","White","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",308.160224594621,312.056910435531,315.847883699781,312.010488042757
+"916",38,39,0,0,"Communicable","White","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",43.3178108977729,44.9112047836479,46.36635158293,44.8995815936824
+"917",38,39,0,0,"Injuries","White","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",80.9162937309318,82.5830062445409,84.188224845126,82.5824062926728
+"918",38,39,0,0,"Non-communicable","White","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",118.028473888474,120.320561942114,122.64968494396,120.326508536596
+"919",38,39,0,1,"All other causes","White","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",123.064205094954,124.992509529456,126.755400639866,124.949695330777
+"920",38,39,0,1,"Cancers","White","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",155.104916306994,157.137110263436,159.193531334208,157.158352297014
+"921",38,39,0,1,"Cardiovascular","White","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",208.914379432171,211.453972673679,214.120355840773,211.471398757126
+"922",38,39,0,1,"Communicable","White","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",30.3711320447197,31.3147148257625,32.2799403093932,31.32808278876
+"923",38,39,0,1,"Injuries","White","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",30.9039590362391,31.7704572723473,32.6689735877903,31.7774382227799
+"924",38,39,0,1,"Non-communicable","White","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",93.2769139793276,94.8679450735832,96.5287463150248,94.8571856025157
+"925",38,39,1,0,"All other causes","Black","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",180.740546314933,189.580099291974,198.288712445274,189.6527623755
+"926",38,39,1,0,"Cancers","Black","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",291.00956520103,301.367721826304,311.873130412049,301.302817933203
+"927",38,39,1,0,"Cardiovascular","Black","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",397.026595906153,410.411199644253,423.887280719043,410.376601332578
+"928",38,39,1,0,"Communicable","Black","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",92.8321017184567,99.5851641604781,107.136328440427,99.5686755339007
+"929",38,39,1,0,"Injuries","Black","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",122.479647709716,128.008994289559,133.578749232313,128.009041038647
+"930",38,39,1,0,"Non-communicable","Black","Male","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",144.184228268425,151.213740655168,158.381027695519,151.248222391739
+"931",38,39,1,1,"All other causes","Black","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",158.301810318438,164.038094545935,170.659884825565,164.177698234488
+"932",38,39,1,1,"Cancers","Black","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",190.309661999421,195.328839670267,201.256076754729,195.411817736843
+"933",38,39,1,1,"Cardiovascular","Black","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",267.705683296397,276.819460027787,285.940820393182,276.7732565911
+"934",38,39,1,1,"Communicable","Black","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",57.2048409639727,60.7996207183308,64.6374836379584,60.8608253332436
+"935",38,39,1,1,"Injuries","Black","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",30.0085618844245,31.9892973451668,33.9077913120248,31.960536494478
+"936",38,39,1,1,"Non-communicable","Black","Female","Pennsylvania",2007,"Mid-Atlantic","Northeast","PA",103.151044225916,107.839282623296,112.558305197991,107.882521936948
+"937",38,40,0,0,"All other causes","White","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",151.880369971171,154.38248357534,156.876742726891,154.366632456373
+"938",38,40,0,0,"Cancers","White","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",221.111412416485,223.819658304281,226.947229156091,223.865109468518
+"939",38,40,0,0,"Cardiovascular","White","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",300.60959457733,304.447920930135,308.350084643829,304.465981900329
+"940",38,40,0,0,"Communicable","White","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",42.8289983193224,44.4631999925011,46.0314586772513,44.4508092755697
+"941",38,40,0,0,"Injuries","White","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",82.1114596567663,83.7175529283071,85.5071972737947,83.7570079961705
+"942",38,40,0,0,"Non-communicable","White","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",123.550550398622,125.903103947198,128.24885534212,125.914926251312
+"943",38,40,0,1,"All other causes","White","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",126.251260916336,128.071074900036,130.011834664731,128.092645028365
+"944",38,40,0,1,"Cancers","White","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",153.170710300617,155.091873890779,157.15257093247,155.134186998753
+"945",38,40,0,1,"Cardiovascular","White","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",206.086430756343,208.581311022038,211.355964581359,208.628618555617
+"946",38,40,0,1,"Communicable","White","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",30.5731998599444,31.4596040641936,32.4245000749974,31.474763738583
+"947",38,40,0,1,"Injuries","White","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",32.3242423797382,33.196341920523,34.0748360497303,33.1885752840679
+"948",38,40,0,1,"Non-communicable","White","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",95.3229658803845,96.9422503213569,98.7887074355528,96.972476448275
+"949",38,40,1,0,"All other causes","Black","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",179.319800512814,187.618902519268,196.191119755317,187.761842123072
+"950",38,40,1,0,"Cancers","Black","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",284.888935274008,295.351515381656,305.235954572226,295.3132253962
+"951",38,40,1,0,"Cardiovascular","Black","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",391.758192654812,404.965267342171,417.58027105711,404.836709054503
+"952",38,40,1,0,"Communicable","Black","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",83.5254539075446,89.6983700149831,96.6232977272093,89.9607595564247
+"953",38,40,1,0,"Injuries","Black","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",117.458454665755,122.480148214822,127.74089141518,122.458913339706
+"954",38,40,1,0,"Non-communicable","Black","Male","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",139.359657504064,146.031402267838,153.695911296878,146.211291660175
+"955",38,40,1,1,"All other causes","Black","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",156.993299370855,162.951137792953,169.137100687322,162.933887515914
+"956",38,40,1,1,"Cancers","Black","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",186.539046864852,191.991418081862,197.356136760321,192.006683729231
+"957",38,40,1,1,"Cardiovascular","Black","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",265.266856118513,273.953302036209,282.952371042832,274.078079261409
+"958",38,40,1,1,"Communicable","Black","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",56.0725682561455,59.5928962821135,63.3411587307036,59.6511401440261
+"959",38,40,1,1,"Injuries","Black","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",29.7474804054022,31.5605373686648,33.3966687161426,31.5843959028033
+"960",38,40,1,1,"Non-communicable","Black","Female","Pennsylvania",2008,"Mid-Atlantic","Northeast","PA",103.331299371054,108.029919181792,113.063318199835,108.061082814516
+"961",38,41,0,0,"All other causes","White","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",151.041081530098,153.581658757832,156.21575443305,153.575248935998
+"962",38,41,0,0,"Cancers","White","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",215.589452734844,218.478409313055,221.152455342422,218.434640046907
+"963",38,41,0,0,"Cardiovascular","White","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",291.007281394478,294.929716166608,298.82742986737,294.887308040995
+"964",38,41,0,0,"Communicable","White","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",40.313480789764,41.7227666738431,43.1665284690313,41.7263160913541
+"965",38,41,0,0,"Injuries","White","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",81.3805915502602,82.9745137597707,84.6606255542529,82.9746158790855
+"966",38,41,0,0,"Non-communicable","White","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",118.285272036545,120.619194441146,122.874944290644,120.605393537235
+"967",38,41,0,1,"All other causes","White","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",123.323099462491,125.324512911571,127.239038070711,125.32783462633
+"968",38,41,0,1,"Cancers","White","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",151.288298174425,153.2083683283,155.111441743332,153.225144689647
+"969",38,41,0,1,"Cardiovascular","White","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",197.730495652347,200.188082049107,202.565698339237,200.211550487902
+"970",38,41,0,1,"Communicable","White","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",28.6149507879599,29.5287904536638,30.4534474119654,29.5260217694976
+"971",38,41,0,1,"Injuries","White","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",33.2079666410695,34.0653617235473,34.9846642005353,34.0818905100597
+"972",38,41,0,1,"Non-communicable","White","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",92.2702871301604,93.8765948452181,95.5322799516795,93.8865623145532
+"973",38,41,1,0,"All other causes","Black","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",183.3266584853,192.029613647672,201.133399568917,192.204608334777
+"974",38,41,1,0,"Cancers","Black","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",283.461996129473,293.006298230413,302.656372308124,293.041513222518
+"975",38,41,1,0,"Cardiovascular","Black","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",383.645252062541,395.103465058544,407.242847322911,395.123530414188
+"976",38,41,1,0,"Communicable","Black","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",77.721965673354,83.4525339752173,89.4003392682716,83.4427963869673
+"977",38,41,1,0,"Injuries","Black","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",110.546429204369,115.602004751099,120.228148779614,115.566791585231
+"978",38,41,1,0,"Non-communicable","Black","Male","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",137.269989034057,143.989628508666,151.631641149244,144.135215984617
+"979",38,41,1,1,"All other causes","Black","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",156.627763676963,162.36676100859,169.074198744563,162.524566920796
+"980",38,41,1,1,"Cancers","Black","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",186.741322559675,192.445138293501,197.518105549028,192.405950728713
+"981",38,41,1,1,"Cardiovascular","Black","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",255.949909281754,263.411887492759,271.77383483495,263.451959036641
+"982",38,41,1,1,"Communicable","Black","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",51.6939875961303,55.1956540437909,58.8122311921766,55.2335492639496
+"983",38,41,1,1,"Injuries","Black","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",29.5749073819907,31.4564849629217,33.2237874598168,31.4554836472637
+"984",38,41,1,1,"Non-communicable","Black","Female","Pennsylvania",2009,"Mid-Atlantic","Northeast","PA",101.579977418163,106.018944599789,111.009155105587,106.147926343746
+"985",38,42,0,0,"All other causes","White","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",155.769632048317,158.124434102682,160.74188311204,158.144336327859
+"986",38,42,0,0,"Cancers","White","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",212.962569255381,215.691572456487,218.300429691375,215.686812683542
+"987",38,42,0,0,"Cardiovascular","White","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",282.078631303069,285.780394836785,289.232691843565,285.688586553127
+"988",38,42,0,0,"Communicable","White","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",38.5963658010783,39.9918259550184,41.5544564064661,40.0147661515217
+"989",38,42,0,0,"Injuries","White","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",82.5864059066168,84.1441255140322,85.802050505034,84.1155122565094
+"990",38,42,0,0,"Non-communicable","White","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",116.691524225027,119.011670987933,121.110631040413,118.952463838412
+"991",38,42,0,1,"All other causes","White","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",127.249732197976,129.084788500431,131.082643380487,129.09450245328
+"992",38,42,0,1,"Cancers","White","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",150.107783963378,152.150428846274,154.192225370937,152.165707444474
+"993",38,42,0,1,"Cardiovascular","White","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",189.429758779896,191.808041622484,194.483958542284,191.834070917601
+"994",38,42,0,1,"Communicable","White","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",27.7245574182903,28.5809767356052,29.5204877047691,28.6044209069197
+"995",38,42,0,1,"Injuries","White","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",34.2536534590814,35.2178661172293,36.1289641791702,35.1936179124317
+"996",38,42,0,1,"Non-communicable","White","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",89.9105477677639,91.4896624749083,93.2493023361639,91.5104943885013
+"997",38,42,1,0,"All other causes","Black","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",183.400649515958,192.244116144182,201.03127902403,192.246714271626
+"998",38,42,1,0,"Cancers","Black","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",278.416939530887,287.853226433777,296.853231337631,287.720868920648
+"999",38,42,1,0,"Cardiovascular","Black","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",369.68135387666,381.655369895213,393.885297870828,381.706569552542
+"1000",38,42,1,0,"Communicable","Black","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",72.9173685723221,78.407345322366,84.3027612921963,78.4836233451368
+"1001",38,42,1,0,"Injuries","Black","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",109.664815990384,114.98679906389,120.2163259998,115.01241889741
+"1002",38,42,1,0,"Non-communicable","Black","Male","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",134.378853194994,141.192234882872,148.555588546057,141.220881687935
+"1003",38,42,1,1,"All other causes","Black","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",156.878033736423,163.346152249538,169.425150783619,163.269841604665
+"1004",38,42,1,1,"Cancers","Black","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",186.426038098372,191.473076513635,197.391671153749,191.559404369745
+"1005",38,42,1,1,"Cardiovascular","Black","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",251.198474211198,260.017154030012,269.016037167108,260.014410978948
+"1006",38,42,1,1,"Communicable","Black","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",46.6510208113699,49.623004504929,52.7520848909081,49.6195907473286
+"1007",38,42,1,1,"Injuries","Black","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",29.3360279854653,31.1438574386506,33.0593934429862,31.146816016957
+"1008",38,42,1,1,"Non-communicable","Black","Female","Pennsylvania",2010,"Mid-Atlantic","Northeast","PA",100.05643184912,104.430157196995,108.747666514526,104.458853918951
+"1009",38,43,0,0,"All other causes","White","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",158.648370775685,161.461415116719,164.05047330672,161.385360431218
+"1010",38,43,0,0,"Cancers","White","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",210.07254125005,212.792282961008,215.446893956095,212.798009394198
+"1011",38,43,0,0,"Cardiovascular","White","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",280.852231977131,284.44789463358,288.472954952893,284.517922659446
+"1012",38,43,0,0,"Communicable","White","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",40.3560267604107,41.8312326630263,43.2215221223606,41.818682535787
+"1013",38,43,0,0,"Injuries","White","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",86.7419289363833,88.5038010660813,90.2411912101346,88.4959554911328
+"1014",38,43,0,0,"Non-communicable","White","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",116.477302557018,118.664054571687,120.826182531492,118.656617878236
+"1015",38,43,0,1,"All other causes","White","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",134.943942372569,137.050741136942,139.022982216997,137.030851036437
+"1016",38,43,0,1,"Cancers","White","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",147.76798462837,149.679163481406,151.625035905153,149.691917229975
+"1017",38,43,0,1,"Cardiovascular","White","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",190.220267124184,192.640285121886,195.137716183858,192.626004115489
+"1018",38,43,0,1,"Communicable","White","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",28.8842674381309,29.8417127971022,30.8368639108595,29.8567320558544
+"1019",38,43,0,1,"Injuries","White","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",34.995214028882,35.9590735280554,36.9841317679758,35.9758803073759
+"1020",38,43,0,1,"Non-communicable","White","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",90.7266301935443,92.4079835161359,93.9480521762231,92.4077960244115
+"1021",38,43,1,0,"All other causes","Black","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",184.885361036834,193.123169744472,202.058037279672,193.294538911767
+"1022",38,43,1,0,"Cancers","Black","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",269.001813608331,278.658084655281,288.454550995745,278.665844291965
+"1023",38,43,1,0,"Cardiovascular","Black","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",359.962680864348,371.426877129048,382.534928583554,371.488325613582
+"1024",38,43,1,0,"Communicable","Black","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",68.1060996572274,73.7269988794133,79.5930013718514,73.7497896496119
+"1025",38,43,1,0,"Injuries","Black","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",111.137294204213,115.910382516661,120.957370742945,115.969444854336
+"1026",38,43,1,0,"Non-communicable","Black","Male","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",134.086950669167,140.930532500134,147.812091154984,141.024992342172
+"1027",38,43,1,1,"All other causes","Black","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",158.517781378704,165.120161654365,171.381713382858,165.014623046262
+"1028",38,43,1,1,"Cancers","Black","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",186.50441401404,191.883571767895,197.984730100045,191.97925085297
+"1029",38,43,1,1,"Cardiovascular","Black","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",239.023612813578,246.957737841709,255.51449440184,247.002745981774
+"1030",38,43,1,1,"Communicable","Black","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",44.9239153176601,47.9679398149177,51.1030449888772,47.9892919948458
+"1031",38,43,1,1,"Injuries","Black","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",29.0512599984273,31.0297334974155,32.9084920682384,30.9986876351437
+"1032",38,43,1,1,"Non-communicable","Black","Female","Pennsylvania",2011,"Mid-Atlantic","Northeast","PA",99.3187321970815,104.035540260684,108.641670252882,104.022212449293
+"1033",38,44,0,0,"All other causes","White","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",160.866006912712,163.64821585368,166.35818378703,163.634266415793
+"1034",38,44,0,0,"Cancers","White","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",205.970618785527,208.547498489596,211.273796309226,208.548220449693
+"1035",38,44,0,0,"Cardiovascular","White","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",269.884774197997,273.621482123174,277.189383728055,273.592991482651
+"1036",38,44,0,0,"Communicable","White","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",37.5248784854394,38.8131642014408,40.1863569269689,38.8187634265507
+"1037",38,44,0,0,"Injuries","White","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",88.0738440152904,89.7221363272198,91.4373166895867,89.7149854673137
+"1038",38,44,0,0,"Non-communicable","White","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",116.078312912089,118.319871677787,120.486649479887,118.29488975875
+"1039",38,44,0,1,"All other causes","White","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",136.597192748959,138.547654798673,140.523689814734,138.522585521709
+"1040",38,44,0,1,"Cancers","White","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",145.655006202358,147.378906104427,149.344786821879,147.404833445008
+"1041",38,44,0,1,"Cardiovascular","White","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",183.476092059488,185.863141436613,188.233749609372,185.849632374934
+"1042",38,44,0,1,"Communicable","White","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",26.7935259260253,27.759108057686,28.6940899257602,27.7571363113938
+"1043",38,44,0,1,"Injuries","White","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",35.8126182681241,36.8132213497464,37.7855278393145,36.8021693224532
+"1044",38,44,0,1,"Non-communicable","White","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",90.2999512386197,91.8636600813724,93.3873365215474,91.8622080912722
+"1045",38,44,1,0,"All other causes","Black","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",191.046731769649,200.034028648131,209.14770607023,200.093898247059
+"1046",38,44,1,0,"Cancers","Black","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",262.28175064177,271.958665802439,281.947355647166,272.066247741815
+"1047",38,44,1,0,"Cardiovascular","Black","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",351.984136877875,363.048830818375,374.820862967071,363.188722834806
+"1048",38,44,1,0,"Communicable","Black","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",64.3728112734189,69.4166108945862,75.3288171517365,69.5625592700155
+"1049",38,44,1,0,"Injuries","Black","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",110.034919658751,115.402553442055,120.536359355424,115.344581578925
+"1050",38,44,1,0,"Non-communicable","Black","Male","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",132.693047244787,139.381032174376,146.575356851757,139.350170839948
+"1051",38,44,1,1,"All other causes","Black","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",156.995339287128,163.331514924836,169.294086395292,163.22730536571
+"1052",38,44,1,1,"Cancers","Black","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",186.820676386708,192.323525634142,197.814303665351,192.323507082568
+"1053",38,44,1,1,"Cardiovascular","Black","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",228.824394993865,236.921193996933,244.951085007471,237.043884290861
+"1054",38,44,1,1,"Communicable","Black","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",40.7326236242687,43.8623093371138,47.0160326011038,43.8507851799018
+"1055",38,44,1,1,"Injuries","Black","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",28.8327735553724,30.9162442801998,33.0596394378039,30.9261558322148
+"1056",38,44,1,1,"Non-communicable","Black","Female","Pennsylvania",2012,"Mid-Atlantic","Northeast","PA",98.0992832794396,103.091795400292,107.750857397519,103.057240336338
+"1057",38,45,0,0,"All other causes","White","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",163.362505459052,166.026118685719,169.130790607405,166.102005647338
+"1058",38,45,0,0,"Cancers","White","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",201.605140983433,204.450722891761,207.587447281853,204.519609353779
+"1059",38,45,0,0,"Cardiovascular","White","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",271.462472152988,275.489411620084,279.14558588702,275.454434593116
+"1060",38,45,0,0,"Communicable","White","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",39.6346031320051,41.2483486330092,42.7932680324919,41.2512289781795
+"1061",38,45,0,0,"Injuries","White","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",88.6366663900737,90.6003692845007,92.7391919047019,90.6324644324577
+"1062",38,45,0,0,"Non-communicable","White","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",114.127672666544,116.520166165275,118.815859071996,116.510368638955
+"1063",38,45,0,1,"All other causes","White","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",139.891726988264,142.163314162611,144.440696874172,142.109037164262
+"1064",38,45,0,1,"Cancers","White","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",143.230002789266,145.398369703875,147.408990981543,145.40306182117
+"1065",38,45,0,1,"Cardiovascular","White","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",182.302373930782,184.73405638467,187.219468076536,184.778012962012
+"1066",38,45,0,1,"Communicable","White","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",28.8155305361923,29.8481873247588,30.7905742842184,29.8302668622583
+"1067",38,45,0,1,"Injuries","White","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",36.4735557170446,37.6256711528176,38.8903813951135,37.6325654229118
+"1068",38,45,0,1,"Non-communicable","White","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",89.9680387577507,91.7152919071706,93.555521794972,91.7378844639736
+"1069",38,45,1,0,"All other causes","Black","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",187.442103784297,197.589867934726,207.600658956261,197.633700488563
+"1070",38,45,1,0,"Cancers","Black","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",259.457426937589,270.090673596739,281.279502009303,270.296238025569
+"1071",38,45,1,0,"Cardiovascular","Black","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",345.844391860718,358.450993645662,371.876705624943,358.65956051468
+"1072",38,45,1,0,"Communicable","Black","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",65.2637513191252,70.9445205959624,77.5672554213396,71.076420910469
+"1073",38,45,1,0,"Injuries","Black","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",106.063403691456,111.690417391858,117.42049381593,111.718349050072
+"1074",38,45,1,0,"Non-communicable","Black","Male","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",132.461809485905,140.177656618578,148.57199739391,140.265271792247
+"1075",38,45,1,1,"All other causes","Black","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",153.947925572606,160.963075513586,168.337318803235,160.941754370721
+"1076",38,45,1,1,"Cancers","Black","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",184.530949373895,190.680835890606,197.666637030722,190.779778590759
+"1077",38,45,1,1,"Cardiovascular","Black","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",228.754332822653,237.578332297716,246.794068666886,237.482939029381
+"1078",38,45,1,1,"Communicable","Black","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",41.3996388503168,44.6900074444612,48.3625947792811,44.6830349874328
+"1079",38,45,1,1,"Injuries","Black","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",28.3829153358459,30.6258640861635,32.8684631172243,30.6572599055972
+"1080",38,45,1,1,"Non-communicable","Black","Female","Pennsylvania",2013,"Mid-Atlantic","Northeast","PA",94.945627326656,99.9508858997561,104.960102009371,99.8885296877113
