@@ -11,9 +11,9 @@ Corinne A Riddell, PhD
 
 Kathryn T Morrison, PhD
 
-Jay S Kaufman, PhD
-
 Sam Harper, PhD
+
+Jay S Kaufman, PhD
 
 Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Canada.
 
@@ -26,6 +26,7 @@ Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Bio
 The overall difference in life expectancy between black and whites in the US has generally decreased over time. States have fared differently in their progress towards eliminating the life expectancy gap, with states such as New York experiencing greater reductions to the gap compared to states such as California and Texas. The objective of this study is to compare how changes to cause-specific mortality between 1969 and 2013 have resulted in narrower life expectancy gaps in some states and  wider gaps in other states. 
 
 **Methods and Findings**
+
 Using data from the National Vital Statistics System, we extracted the number of deaths and population sizes according to year (1969-2013), state, age, sex, race (black or white), and six cause of death categories (Cancer, cardiovascular disease, communicable disease, non-communicable disease, injuries, and all other causes). We excluded 10 states with the smallest black populations, but included the District of Columbia. A Bayesian autoregressive model was used to model smoothed mortality rates over time within each stratum, and a truncated Poisson model was used to impute death counts that were suppressed due to small cell sizes. We calculated life expectancy for blacks and whites within each stratum using traditional life table methods, and decomposed the difference in life expectancy by cause of death using Arriaga's method. 
 
 
@@ -325,9 +326,7 @@ males.era3 <- ggplotly(
 males.era3
 ```
 
-**All the above together as one figure**
-
-```{r, fig.align="center", fig.height=9, fig.width=15, echo=F, eval = T}
+```{r, fig.align="center", fig.height=9, fig.width=15, echo=F, eval = F}
 males.era2.2 <- ggplotly(
   ggplot(subset(cod.df.males, era == "era2"), aes(y = state.gdiff.num.1, x = new.start.2)) +
     geom_rect(aes(xmin = new.start.2, ymin = state.gdiff.num.1 - 0.45, 
@@ -618,10 +617,11 @@ ggplotly(ggplot(rbind(fl.1993, fl.1983),
            facet_wrap(~ year)) 
 ```
 
-**S2 Table: Decomposition of the change in the male black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
+**S2 Table: Decomposition of the change in the black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
 
 ```{r, echo=F}
 cod_change_results2 <- data.frame(cod_change_results[c(3, 40, 41)], apply(cod_change_results[4:39], 2, function(x) x*(-1)))
+
 
 cod_change_results2 <- cod_change_results2 %>% 
   mutate(total_era1_diff = paste0(round(tot_Cx_era1_diff_mean, 2), " [", round(tot_Cx_era1_diff_lcl, 2), ",", round(tot_Cx_era1_diff_ucl, 2), "]"),
@@ -631,23 +631,67 @@ cod_change_results2 <- cod_change_results2 %>%
          contribution_era2_diff = paste0(round(Cx_era2_diff_mean, 2)," [", round(Cx_era2_diff_lcl, 2), ",", round(Cx_era2_diff_ucl, 2), "]"),
          contribution_era3_diff = paste0(round(Cx_era3_diff_mean, 2)," [", round(Cx_era3_diff_lcl, 2), ",", round(Cx_era3_diff_ucl, 2), "]")
          ) %>%
-  select(sex, state, Cause.of.death, total_era1_diff, contribution_era1_diff, total_era2_diff, contribution_era2_diff, total_era3_diff, contribution_era3_diff) %>%
-  rename(Sex = sex, State = state, 
-         `Change from 1969 to 1983, years` = total_era1_diff,
-         `Change from 1983 to 1993, years` = total_era2_diff,
-         `Change from 1993 to 2013, years` = total_era3_diff,
-         `Contribution to gap change ('69-'83), years` = contribution_era1_diff,
-         `Contribution to gap change ('83-'93), years` = contribution_era2_diff,
-         `Contribution to gap change ('93-'03), years` = contribution_era3_diff)
+  select(sex, state, Cause.of.death, total_era1_diff, contribution_era1_diff, total_era2_diff, contribution_era2_diff, total_era3_diff, contribution_era3_diff)
 
-DT::datatable(cod_change_results2 %>% filter(Sex == "Male"))
+totals <- cod_change_results2 %>% 
+  filter(Cause.of.death == "All other causes") %>% #to get one row per sex-state stratum
+  select(sex, state, total_era1_diff, total_era2_diff, total_era3_diff) %>% 
+  rename(contribution_era1_diff = total_era1_diff, 
+         contribution_era2_diff = total_era2_diff,
+         contribution_era3_diff = total_era3_diff) %>%
+  mutate(Cause.of.death = "Total change, years")
+
+cod_change_results2 <- cod_change_results2 %>% 
+  select(sex, state, Cause.of.death, contribution_era1_diff, contribution_era2_diff, contribution_era3_diff) 
+
+dim(cod_change_results2)
+cod_change_results2 <- rbind(cod_change_results2, totals)
+dim(cod_change_results2)
+
+cod_change_results2$Cause.of.death <- factor(cod_change_results2$Cause.of.death, levels = c("Total change, years", "Cardiovascular", "Cancers",
+                                                                             "Communicable", "Non-communicable", "Injuries",
+                                                                             "All other causes"))
+
+cod_change_results_era1 <- cod_change_results2 %>% select(sex, state, Cause.of.death, contribution_era1_diff) %>% tidyr::spread(sex, contribution_era1_diff) %>%
+  rename(Female1 = Female, Male1 = Male)
+
+cod_change_results_era2 <- cod_change_results2 %>% select(sex, state, Cause.of.death, contribution_era2_diff) %>% tidyr::spread(sex, contribution_era2_diff) %>%
+  rename(Female2 = Female, Male2 = Male)
+
+cod_change_results_era3 <- cod_change_results2 %>% select(sex, state, Cause.of.death, contribution_era3_diff) %>% tidyr::spread(sex, contribution_era3_diff) %>%
+  rename(Female3 = Female, Male3 = Male)
+
+cod_change_results3 <- merge(cod_change_results_era1, cod_change_results_era2, by = c("state", "Cause.of.death"))
+cod_change_results3 <- merge(cod_change_results3, cod_change_results_era3, by = c("state", "Cause.of.death"))
+
+cod_change_results3 <- cod_change_results3 %>% arrange(state, Cause.of.death) %>%
+  rename(State = state, `Cause of death` = Cause.of.death)
+
+
+sketch = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 3, 'State'),
+      th(rowspan = 3, 'Cause of death'),
+      th(colspan = 6, 'Contribution to change in gap, years')
+    ),
+    tr(
+      #lapply(c('Era1', 'Era2', 'Era3'), th)
+      th(colspan = 2, '1969-1983'),
+      th(colspan = 2, '1983-1993'),
+      th(colspan = 2, '1993-2013')
+    ),
+    tr(
+      lapply(rep(c('Female', 'Male'), 3), th)
+    )
+  )
+))
+print(sketch)
+
+DT::datatable(cod_change_results3, container = sketch, rownames = F)
 ```
 
-**S3 Table: Decomposition of the change in the female black-white life expectancy gap by cause of death between 1969 and 1983 by US state**
-
-```{r, echo=F}
-DT::datatable(cod_change_results2 %>% filter(Sex == "Female"))
-```
 
 
 **Things for corinne to review**
