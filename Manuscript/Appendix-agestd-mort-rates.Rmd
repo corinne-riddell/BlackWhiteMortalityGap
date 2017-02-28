@@ -30,27 +30,27 @@ mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(
 ```{r refactor-for-us-map-plot, echo=F}
 
 # Create unique blank strip labels for empty facets
-bl = sapply(1:38, function(n) paste(rep(" ",n),collapse=""))
+bl = sapply(1:37, function(n) paste(rep(" ",n),collapse=""))
 
 mortality.rates$state.reorder2 <- factor(mortality.rates$state,
                                         levels = c(bl[1:10], "Maine",
                                                    bl[11:19], "Vermont", "New Hampshire",
                                                    "Washington", "Idaho", "Montana", "North Dakota", "Minnesota", "Illinois", "Wisconsin", "Michigan", "New York", "Massachusetts", "Rhode Island",
                                                    "Oregon", "Nevada", "Wyoming", "South Dakota", "Iowa", "Indiana", "Ohio", "Pennsylvania", "New Jersey", "Connecticut", bl[20],
-                                                   "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Washington DC", bl[21],
-                                                   bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Delaware", bl[23:24],
+                                                   "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Delaware", bl[21],
+                                                   bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Washington DC", bl[23:24],
                                                    bl[25:27], "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", bl[28:29],
-                                                   bl[30:33], "Texas", bl[34:38], "Florida"))
+                                                   bl[30:33], "Texas", bl[34:37], "Florida"))
 
 mortality.rates.diff$state.reorder2 <- factor(mortality.rates.diff$state,
                                         levels = c(bl[1:10], "Maine",
                                                    bl[11:19], "Vermont", "New Hampshire",
                                                    "Washington", "Idaho", "Montana", "North Dakota", "Minnesota", "Illinois", "Wisconsin", "Michigan", "New York", "Massachusetts", "Rhode Island",
                                                    "Oregon", "Nevada", "Wyoming", "South Dakota", "Iowa", "Indiana", "Ohio", "Pennsylvania", "New Jersey", "Connecticut", bl[20],
-                                                   "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Washington DC", bl[21],
-                                                   bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Delaware", bl[23:24],
+                                                   "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Delaware", bl[21],
+                                                   bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Washington DC", bl[23:24],
                                                    bl[25:27], "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", bl[28:29],
-                                                   bl[30:33], "Texas", bl[34:38], "Florida"))
+                                                   bl[30:33], "Texas", bl[34:37], "Florida"))
 ```
 
 ```{r plot-arrange-as-us-map, echo=F, fig.width=19.5, fig.height=14, results="asis", message = F}
