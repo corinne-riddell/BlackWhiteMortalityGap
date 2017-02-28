@@ -87,6 +87,7 @@ cod_change_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhite
 BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
 
 age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
 age_decomp_results$age <- factor(age_decomp_results$age, levels = levels(age_decomp_results$age)[c(1, 2, 11, 3:10, 12:19)])
 age_cod_results$age <- factor(age_cod_results$age, levels = levels(age_cod_results$age)[c(1, 2, 11, 3:10, 12:19)])                                    
 
@@ -465,6 +466,110 @@ females.era3 <- ggplotly(
   layout(xaxis = list(title = "Life expectancy gap (years): 1993-2013"), yaxis = list(title = NA, autorange = "reversed"))
 
 females.era3
+```
+
+**Fig 7: Decomposition of the male black-white life expectancy gap by cause of death in 2013 by US state**
+
+```{r cross-sectional-decomp-males}
+cod.2013.males <- cod_decomp_results %>% filter(year == 2013 & sex == "Male") %>% 
+  mutate(widened_gap = sign(COD_cont_yrs_mean), state.n = as.numeric(state))
+  
+y.labels.2013 <- levels(factor(cod.2013.males$state))
+y.num.breaks.2013 <- length(levels(factor(cod.2013.males$state)))
+
+
+cod.2013.males <- make_pretty_decomp_plot(decomp.table = cod.2013.males, 
+                                          strat.var.1 = "state",
+                                          sign.var = "widened_gap",
+                                          decomp.var = "COD_cont_yrs_mean",
+                                          decomp.var.prop = "COD_cont_prop_mean",
+                                          partition.bar.var = "COD",
+                                          type.of.data = "practice")
+
+
+
+males.2013 <- ggplotly(
+  ggplot(cod.2013.males, aes(y = state.n, x = start)) +
+    geom_rect(aes(xmin = start, ymin = state.n - 0.45, 
+                  ymax = state.n + 0.45, 
+                  xmax = finish, fill = COD), 
+              color = "white") +
+     scale_y_continuous(breaks = 1:y.num.breaks.2013, labels = y.labels.2013) +
+    theme_minimal())  %>% layout(xaxis = list(title = "Contribution to gap, years"), yaxis = list(title = NA, autorange = "reversed"))
+
+males.2013
+```
+
+**Fig 8: Decomposition of the female black-white life expectancy gap by cause of death in 2013 by US state**
+
+```{r cross-sectional-decomp-females}
+cod.2013.females <- cod_decomp_results %>% filter(year == 2013 & sex == "Female") %>% 
+  mutate(widened_gap = sign(COD_cont_yrs_mean), state.n = as.numeric(state))
+  
+y.labels.2013 <- levels(factor(cod.2013.females$state))
+y.num.breaks.2013 <- length(levels(factor(cod.2013.females$state)))
+
+
+cod.2013.females <- make_pretty_decomp_plot(decomp.table = cod.2013.females, 
+                                          strat.var.1 = "state",
+                                          sign.var = "widened_gap",
+                                          decomp.var = "COD_cont_yrs_mean",
+                                          decomp.var.prop = "COD_cont_prop_mean",
+                                          partition.bar.var = "COD",
+                                          type.of.data = "practice")
+
+females.2013 <- ggplotly(
+  ggplot(cod.2013.females, aes(y = state.n, x = start)) +
+    geom_rect(aes(xmin = start, ymin = state.n - 0.45, 
+                  ymax = state.n + 0.45, 
+                  xmax = finish, fill = COD), 
+              color = "white") +
+     scale_y_continuous(breaks = 1:y.num.breaks.2013, labels = y.labels.2013) +
+     #scale_x_continuous(breaks = seq(-2, 16, by = 1), labels = seq(-2, 16, by = 1)) +
+    theme_minimal())  %>% layout(xaxis = list(title = "Contribution to gap, years"), yaxis = list(title = NA, autorange = "reversed"))
+
+#ggplot(data = cod.2013.females, aes(x=state, y=COD_cont_yrs_mean, fill=COD)) + geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal()
+
+# p <- plot_ly(cod.2013.females, x = ~state, y = ~COD_cont_yrs_mean, type = 'bar', name = 'blah') %>%
+#   layout(yaxis = list(title = 'Count'), barmode = 'stack')
+
+# 
+# info <- plotly_build(females.2013)
+# str(info)
+# names(info$x$data[[1]])
+```
+
+**Figure 9: Distribution of the contribution of each cause of death to the life expectancy gap in males, 2013**
+
+```{r}
+ggplot(cod.2013.males, aes(COD_cont_yrs_mean)) + 
+  geom_histogram(aes(fill = COD), col = "white") + 
+  theme_minimal() + 
+  geom_vline(xintercept = 0) +
+  facet_wrap(~COD) + 
+  ylab("Number of states") + guides(fill = F) +
+  scale_y_continuous(breaks = c(seq(from = 0, to = 15, by = 5)), minor_breaks = c(seq(from = 0, to = 20, by = 5))) +
+  xlab("Contribution to gap in 2013 (years)") + scale_x_continuous(breaks = c(-1:4), minor_breaks = c(-1:4))
+```
+
+**Figure 10: Distribution of the contribution of each cause of death to the life expectancy gap in females, 2013**
+
+```{r}
+# cod.2013.females$CI.width <- cod.2013.females$COD_cont_yrs_ucl - cod.2013.females$COD_cont_yrs_lcl
+# ggplot(cod.2013.females, aes(y = COD_cont_yrs_mean, x = CI.width)) + 
+#   geom_point(aes(col = COD), alpha = 0.8) + geom_text(aes(label = stabbrs), hjust = 1.5, vjust = 0.1, size = 3) +
+#   facet_wrap(~COD, scales = "free_x") + 
+#   geom_abline(intercept = 0 , slope = 0) +
+#   ylab("Contribution to gap in 2013 (years)") + xlab("Width of credible interval")
+
+ggplot(cod.2013.females, aes(COD_cont_yrs_mean)) + 
+  geom_histogram(aes(fill = COD), col = "white") + 
+  theme_minimal() + 
+  geom_vline(xintercept = 0) +
+  facet_wrap(~COD) + 
+  ylab("Number of states") + guides(fill = F) +
+  scale_y_continuous(breaks = c(seq(from = 0, to = 15, by = 5)), minor_breaks = c(seq(from = 0, to = 20, by = 5))) + 
+  xlab("Contribution to gap in 2013 (years)") + scale_x_continuous(breaks = c(-1:4), minor_breaks = c(-1:4))
 ```
 
 ###Supporting Information
