@@ -134,12 +134,32 @@ entire.analysis <- function(state_i) {
     rm(data_sub)
   }
   
+  #calculation the contour decomposition
+  years <- c(1969, 1983, 1993, 2013)
+  # counter <- 1
+  # for(sex_i in c("Male", "Female")){
+  #   for(i in 1:3){
+  #     years <- c(1969, 1983)
+  #     if(i == 2) years <- c(1983, 1993)
+  #     if(i == 3) years <- c(1993, 2013) 
+  # 
+  #     data_sub <- subset(r.All, sex == sex_i & year %in% years)
+  #     
+  #     contour.decomps[[counter]]$era.id <- paste0(state_i, ".", sex_i, "era", i)
+  #     contour.decomps[[counter]]$calcs <- by(data = data_sub, 
+  #                                            INDICES = list(data_sub$post.samp),
+  #                                            FUN = function(x) decomp_contour_cr(data = x))
+  #     
+  #     counter <- counter + 1
+  #   }
+  # }
+  
   save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".Rdata")) 
   levels.state.year.sex <- levels(droplevels(r.All$state.year.sex))
   rm(r.All)
   
   #calculate the difference in the COD contribution across the three eras.
-  years <- c(1969, 1983, 1993, 2013)
+
   indices.female <- intersect(union_all(grep("1969", strata), grep("1983", strata), grep("1993", strata), grep("2013", strata)), grep("Female", strata))
   indices.male <- intersect(union_all(grep("1969", strata), grep("1983", strata), grep("1993", strata), grep("2013", strata)), grep("Male", strata))
   
