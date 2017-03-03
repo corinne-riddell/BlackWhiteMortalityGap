@@ -37,8 +37,8 @@ life.table <- function(data, sortable.age, num.ages.in.group, death.counts, popu
   
   if(return == "appended") {
     return(data)
-  } else if(return == "life expectancy") {
-    return(data[["e_x"]])
+  } else if(return == "life expectancy at birth") {
+    return(data[["e_x"]][1])
   } else if(return == "life table") {
     return(data[, c("sortable.age", "num.ages.in.group", "death.counts", "population.counts",
                     "R_x", "a_x", "q_x", "p_x", "l_x", "d_x", "L_x", "cumsum", "l.cumsum", "T_x", "e_x")])
