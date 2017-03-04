@@ -1,7 +1,7 @@
 
 # User-defined subsets 
-subset_data = function(ds, state, sex, race) {
-  ds_sub = ds[ds$state==state & ds$sex==sex & ds$race==race, ]
+subset_data = function(ds, sex, race) {
+  ds_sub = ds[ds$sex==sex & ds$race==race, ]
   return(ds_sub)
 }
 
@@ -27,18 +27,20 @@ jagsify_data = function(ds_sub) { #subset by COD, put in lists
                    age.bin = ds2$age.n, 
                    year = ds2$year.n, 
                    upper_bound = ds2$upper_bound, 
-                   binned = is.na(ds2$deaths), 
-                   not.binned = !is.na(ds2$deaths), 
+                   #binned = is.na(ds2$deaths), 
+                   #not.binned = !is.na(ds2$deaths), 
                    n.binned = sum(is.na(ds2$deaths)), 
                    n.not.binned = sum(!is.na(ds2$deaths)),
                    n.rows = sum(is.na(ds2$deaths)) + sum(!is.na(ds2$deaths)),
                    n.age.bins = length(unique(ds2$age.n)),
                    n.years = length(unique(ds2$year)), 
                    binned.id = ds2$censored,
-                   cod = cods[i]) 
-    
-    }
-  return(list(jagsified = ds_jagsified, sub = ds_sub))
+                   RID = ds2$RID) 
+                   #cod = cods[i]) 
+  }
+  
+  ds_sub_onlyRID = ds_sub[ ,c('RID', 'deaths')] 
+  return(list(jagsified = ds_jagsified, sub = ds_sub_onlyRID))
 }
 
 jags_smoothing_model = function(ds_jagsified_bycod) { 
@@ -66,25 +68,23 @@ jags_smoothing_model = function(ds_jagsified_bycod) {
   }
   
   params = c('lnrate') 
-  nchains = 2 
+  nchains = 1  #we're convinced it's converged, let's minimize computation 
   
   ideaths = c(rep(NA, ds_jagsified_bycod$n.not.binned), rep(5, ds_jagsified_bycod$n.binned))
   ilnrate = matrix(-4, ds_jagsified_bycod$n.age.bins, ds_jagsified_bycod$n.years) 
   inits = list(deaths = ideaths, tau = 0.001, lnrate = ilnrate)
   
-  myinits = list(inits, inits) 
+  myinits = list(inits) 
   
   jags_model = jags(data = ds_jagsified_bycod, param = params, n.chains = nchains,
-                    inits = myinits, n.iter = 10000, n.burnin = 2000, model.file = model) 
+                    inits = myinits, n.iter = 10000, n.burnin = 2000, n.thin = 8, model.file = model, DIC=FALSE)  #shortened to speed up for testing 
   
   return(jags_model)
 }
 
 # Takes the jagsify_data output as a single parameter and runs the smoothing models
-run_smoothing_model = function(data) {
-  
-  cods = unique(data$sub$COD)
-  n.cods = length(cods)
+run_smoothing_model = function(data, n.cods) {
+  n.cods = n.cods
   jags_model = list()  
   for(i in 1:n.cods) {
     jags_model[[i]] = jags_smoothing_model(data$jagsified[[i]])
@@ -94,49 +94,44 @@ run_smoothing_model = function(data) {
 
 # Takes the jagsify_data output, the run_smoothing_model output, and the desired year as parameters
 # Outputs the original data, subset by sex, race, state, and year (not age or COD), with smoothed rates and smoothed/imputed deaths 
-clean_smoothing_results = function(data, jags_model) {
-  ds_sub = data$sub
-  cods = unique(ds_sub$COD)
-  n.cods = length(cods)
-  n.age = length(unique(ds_sub$age))
-  n.year = length(unique(ds_sub$year))
-
+clean_smoothing_results = function(data.jags, jags.model, n.cods) {
+  #cods = unique(ds_sub$COD)
+  n.age = jags.model[[1]]$model$data()$n.age.bins
+  n.year = jags.model[[1]]$model$data()$n.years
+  n.iters = jags.model[[1]]$BUGSoutput$n.keep
+  result_allcods = list()
+  
   for(cod_i in 1:n.cods) {
-    p_mcmc <- as.mcmc(jags_model[[cod_i]]) 
-    p <- melt(data.frame(p_mcmc[[1]]))
-    rm(p_mcmc)
-    p <- p[p$variable != "deviance", ]
-    p$post.samp <- rep(1:1000, n.year*n.age)
-    p$new.cols <- str_split_fixed(p$variable, "\\.", 3)
-    p <- p[ , -1]
-    names(p)[1] <- c("smoothed_lnrate")
-    p$year.n <- p$new.cols[ , 3]
-    p$age.n <- p$new.cols[ , 2]
-    p <- p[ , -3]
-    p$year.n <- stringr::str_sub(p$year.n, 1, -2)
-    p$year.n <- as.numeric(p$year.n)
-    p$age.n <- as.numeric(p$age.n)
-    p$smoothed_rate <- exp(p$smoothed_lnrate)
-    p$COD <- cods[cod_i]
-    
-    assign(paste0("smooth.rates.1000.", stringr::str_sub(cods[cod_i],1, 3)), p)
+    p_mcmc = melt(jags.model[[cod_i]]$BUGSoutput$sims.matrix) 
+    result = data.frame(RID = rep(data.jags$jagsified[[cod_i]]$RID, each=n.iters))
+    result$smoothed_rate = exp(p_mcmc$value)
+    result$postID = p_mcmc$Var1
+    result_allcods[[cod_i]] = result 
   }
   
-  smoothed.rates.1000 <- rbind(smooth.rates.1000.Car, smooth.rates.1000.Can, smooth.rates.1000.Com,
-                               smooth.rates.1000.Non, smooth.rates.1000.Inj, smooth.rates.1000.All)
-  
-  return(merge(data$sub, smoothed.rates.1000, by = c("year.n", "age.n", "COD")))
+  results.final = do.call(rbind, result_allcods)
+  return(results.final)
 }
  
-run_analysis <- function(dataset, state1, sex1, race1) {
-  ds_sub = subset_data(ds = dataset, state = state1, sex = sex1, race = race1)
+ 
+# testing params 
+# dataset = dat.clean ; state1 = 'Albama' ; sex1 = 'Male' ; race1 = 'Black' 
+run_analysis <- function(dataset, state1, sex1, race1, n.cods) {
+  ds_sub = subset_data(ds = dataset, sex = sex1, race = race1)
   data.jags = jagsify_data(ds_sub)
-  jags.model = run_smoothing_model(data.jags)  
-  return(clean_smoothing_results(data = data.jags, jags_model = jags.model))
-}
+  jags.model = run_smoothing_model(data.jags, n.cods=n.cods)  
+  results.final = clean_smoothing_results(data = data.jags, jags.model = jags.model, n.cods=n.cods)
+  return(results.final)
+} 
 
+
+
+
+# testing function? 
 run_analysis_on_subset <- function(subsetted_data) {
   data.jags = jagsify_data(subsetted_data)
   jags.model = run_smoothing_model(data.jags)  
-  return(clean_smoothing_results(data = data.jags, jags_model = jags.model))
+  return(clean_smoothing_results(data.jags = data.jags, jags_model = jags.model))
 }
+
+
