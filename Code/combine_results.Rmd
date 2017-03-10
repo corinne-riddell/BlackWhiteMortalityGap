@@ -95,6 +95,16 @@ cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Reg
                             cod_decomp_results, by = "stratum.id", all.y = T)
 ```
 
+```{r prep_decomp_for_plotting, echo = F}
+cod_decomp_results$widened_gap <- sign(cod_decomp_results$COD_cont_yrs_mean)
+cod_decomp_results <- make_pretty_decomp_plot(decomp.table = cod_decomp_results, strat.var.1 = "stratum.id", 
+                                   partition.bar.var = "COD", sign.var = "widened_gap",
+                                   decomp.var = "COD_cont_yrs_mean", decomp.var.prop = "COD_cont_prop_mean",
+                                   type.of.data = "practice")
+
+```
+
+
 ```{r save_combined_datasets, echo = F}
 write.csv(age_cod_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results.csv")
 write.csv(age_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
