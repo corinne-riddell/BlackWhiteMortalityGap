@@ -141,13 +141,14 @@ make_pretty_decomp_plot <- function(decomp.table, strat.var.1, strat.var.2, stra
   decomp.table$finish2 <- decomp.table[[decomp.var.prop]] #C_xi_proportion
   
   updated <- NULL
+  counter <- 1
   for (g in unique(decomp.table[["group"]])) {
     subset <- decomp.table[decomp.table[["group"]] == g, ]
     
     length.group <- dim(subset)[1]
     
     if(length.group > 1){
-      for (i in 2:dim(subset)[1]) {
+      for (i in 2:length.group) {
         subset$start[i] <- subset$finish[i - 1]
         subset$finish[i] <- subset$start[i] + subset[[decomp.var]][i]
         
@@ -157,8 +158,10 @@ make_pretty_decomp_plot <- function(decomp.table, strat.var.1, strat.var.2, stra
     }
     
     updated <- rbind(updated, subset)
-    
+    counter <- counter + 1
+    print(counter)
   }
+  
   return(updated)
 }
 
