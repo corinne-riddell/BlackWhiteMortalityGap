@@ -54,9 +54,6 @@ mortality.rates.diff$state.reorder2 <- factor(mortality.rates.diff$state,
 ```
 
 ```{r plot-arrange-as-us-map, echo=F, fig.width=19.5, fig.height=14, results="asis", message = F}
-roundUp <- function(x) 10^ceiling(log10(x))
-
-
 # sex_i <- "Male"
 # cod <- "Cardiovascular"
 
@@ -103,7 +100,7 @@ for(sex_i in c("Male", "Female")) {
       geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), fill = "grey", col = NA) +
       geom_line() +
       geom_hline(aes(yintercept = 0), col = "#636363") +
-      scale_y_continuous(limits = c(0, lim.y)) + 
+      scale_y_continuous(limits = c(0, lim.y2)) + 
       facet_wrap( ~ state.reorder2, ncol = 11, drop = F, strip.position="bottom") +
       theme_classic(base_size = 20) +
       theme(axis.text.x = element_blank(),
