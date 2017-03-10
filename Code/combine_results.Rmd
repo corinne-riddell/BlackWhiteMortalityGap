@@ -102,11 +102,21 @@ cod_decomp_results <- make_pretty_decomp_plot(decomp.table = cod_decomp_results,
                                    decomp.var = "COD_cont_yrs_mean", decomp.var.prop = "COD_cont_prop_mean",
                                    type.of.data = "practice")
 
+age_decomp_results$widened_gap <- sign(age_decomp_results$age_cont_yrs_mean)
+age_decomp_results <- make_pretty_decomp_plot(decomp.table = age_decomp_results, strat.var.1 = "stratum.id", 
+                                   partition.bar.var = "age_minbin", sign.var = "widened_gap",
+                                   decomp.var = "age_cont_yrs_mean", decomp.var.prop = "age_cont_prop_mean",
+                                   type.of.data = "practice")
 ```
 
+```{r split-age-cod-data-for-save}
+age_cod_results_female <- age_cod_results %>% filter(sex == "Female")
+age_cod_results_male <- age_cod_results %>% filter(sex == "Male")
+```
 
 ```{r save_combined_datasets, echo = F}
-write.csv(age_cod_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results.csv")
+write.csv(age_cod_results_female, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results_female.csv")
+write.csv(age_cod_results_male, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results_male.csv")
 write.csv(age_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
 write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
 write.csv(BlackWhite_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
