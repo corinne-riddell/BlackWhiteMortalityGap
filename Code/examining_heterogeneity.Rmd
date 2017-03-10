@@ -1,0 +1,124 @@
+---
+title: ""
+author: "Corinne Riddell"
+date: "March 9, 2017"
+output: html_document
+---
+
+###Examining heterogeneity
+
+We had discussed wanting to have a quantifiable method for identifying those states that follow different trends from the rest. My first go at doing this involved taking the results of the COD decompositions over time for each state by sex and creating a linear model of the COD decompositions (Y) as a function of year and fixed effects for each state. I modelled year using a linear spline with 3 interior knots spaced equally. While this sounds rough, you'll see that it adequately captures the trends for most states. We can also consider placing the knots at pre-specified years (say 1983, 1993). The first plot illustrates the observed COD contribution (teal) vs. the estimated contribution (pink) and is ordered by how close these trends overlap.
+
+I then calculated the residual (observed COD contribution - estimated COD contribution) at each year and the next plot shows the residuals vs. year. The sum of the absolute residuals is displayed for each state, such that the states with the highest absolute residuals are most different from the average trend. I admit that this is a rough way to do this -- it considered all states as having equal value (we could inverse weight by length of the CI for a start), but I think it allows us to capture which states are different from the average trend and speak to those. I also like that it doesn't abritrarily create a cut-off that classifies states as "the same" and "different".
+
+```{r setup, echo = F, warning = FALSE, message=F}
+library(splines)
+library(broom)
+library(tidyverse)
+library(plotly)
+
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+```
+
+```{r modeling}
+#run 12 stratified models. bs() created the b-spline basis
+models <- cod_decomp_results %>% 
+  group_by(COD, sex) %>%
+  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state, data = .)) 
+
+#calculated predicted values for all models
+dfPred = broom::augment(models, fit)
+dfPred$year <- 1969:2013
+
+#merge the predictions with original dataset
+cod_decomp_results <- merge(cod_decomp_results, 
+                            dfPred %>% select(COD, sex, year, state, .fitted, .resid), 
+                            by = c("COD", "sex", "state", "year"))
+
+#calculated the sum of the residuals for each state-sex-cod strata (summed over years)
+cod_decomp_results <- cod_decomp_results %>% group_by(state, sex, COD) %>%
+  mutate(sum.residual = sum(abs(.resid)))
+```
+
+```{r plotting_fx, echo = F}
+plot.resid.trends <- function(dataset, COD1, sex1) {
+  subset.data <- subset(dataset, COD == COD1 & sex == sex1)
+  subset.data$order <- reorder(subset.data$state, subset.data$sum.residual, first)
+  
+  a <- ggplot(subset.data,
+         aes(x = year, y = COD_cont_yrs_mean)) + geom_line(aes(col = "Observed")) + 
+    facet_wrap( ~ order) + 
+    geom_line(aes(y = .fitted, col = "Estimated")) +
+    xlab(" ") + ylab("observed vs. estimated contribution (years)") + 
+    ggtitle(paste0("Observed vs. estimated in ", COD1, " in ", sex1)) +
+    theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+  
+  b <- ggplot(subset.data,
+              aes(x = year, y = .resid)) + geom_line(aes(col = "Residual")) + 
+    facet_wrap( ~ order) +
+    xlab(" ") + ylab("Residual") +
+    geom_hline(yintercept = 0, col = "black") +
+      geom_text(data = subset(subset.data, year == 2010), 
+                aes(y = 1, label = round(sum.residual, 1)), size = 2.5) + 
+    ggtitle(paste0("Residuals vs. year in ", COD1, " in ", sex1)) +
+    theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+    return(list(plot1 = a, plot2 = b))
+}
+```
+
+```{r create-the-plots, echo = F, message = F}
+for(COD_i in levels(cod_decomp_results$COD)) {
+  for(sex_i in levels(cod_decomp_results$sex)) {
+    assign(paste0(COD_i, ".", sex_i, ".plot"), plot.resid.trends(dataset = cod_decomp_results, 
+                                                                         COD1 = COD_i, sex1 = sex_i))
+  }
+}
+```
+
+```{r print-em, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cardiovascular.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cardiovascular.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+```{r print-em-2, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cardiovascular.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cardiovascular.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+```{r print-em-3, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cancers.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cancers.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+```{r print-em-4, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cancers.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cancers.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+```{r print-3, fig.width = 9, fig.height=9, echo = F}
+ggplotly(Communicable.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Communicable.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+
+ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Communicable.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+
+ggplotly(`Non-communicable.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`Non-communicable.Male.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
+
+ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`Non-communicable.Male.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
+
+ggplotly(Injuries.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Injuries.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+
+ggplotly(Injuries.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Injuries.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+
+ggplotly(`All other causes.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`All other causes.Male.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
+
+ggplotly(`All other causes.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`All other causes.Female.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
