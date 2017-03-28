@@ -31,8 +31,6 @@ cod_marginal_results <- cod_decomp_results %>%
 
 #cod_marginal_results_female <- cod_marginal_results %>% filter(sex == "Female") %>% mutate(reorder(state, total_Cx))
 
-cod_decomp_results <- cod_decomp_results %>% mutate(state.n = as.numeric(state))
-
 cod_decomp_results <- merge(cod_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
       by = "stratum.id")
 
@@ -43,6 +41,17 @@ cod_decomp_results$new.finish2 = cod_decomp_results$finish2 +cod_decomp_results$
 
 cod_decomp_results$LE_black_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
 cod_decomp_results$LE_white_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
+
+age_decomp_results <- merge(age_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
+                            by = "stratum.id")
+
+age_decomp_results$new.start = age_decomp_results$start + age_decomp_results$LE_black_mean
+age_decomp_results$new.start2 = age_decomp_results$start2 + age_decomp_results$LE_black_mean
+age_decomp_results$new.finish = age_decomp_results$finish + age_decomp_results$LE_black_mean
+age_decomp_results$new.finish2 = age_decomp_results$finish2 + age_decomp_results$ LE_black_mean
+
+age_decomp_results$LE_black_mean[age_decomp_results$age != "<1 year"] <- NA
+age_decomp_results$LE_white_mean[age_decomp_results$age != "<1 year"] <- NA
 
 # Create unique blank strip labels for empty facets
 bl = sapply(1:37, function(n) paste(rep(" ",n),collapse=""))
@@ -91,11 +100,10 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 #dataTableOutput("data.temp")),
                        
                        tabPanel("State summary: Age",
-                                strong("Which age groups contributed most to the gap in life expectancy?"),
                                 textOutput("description_age_summary"),
                                 plotlyOutput("state_age_summary", height = 800),
                                 dataTableOutput("data.temp2")),
-                       
+                    
                        tabPanel("Trends in COD",
                                 strong("How has each cause of death contributed to the difference in life expectancy over time?
                                        First, here is a graph of the life expectancy gap over time, where each line is a state:"),
@@ -103,34 +111,25 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 strong("Select the cause of death you're interested in to see how many years of the total gap
                                        is due the selected cause, and how this changed over time. You can also view the proportional
                                        contribution by selecting 'Proportion (%)' on the panel to the left."),
-
-                                plotlyOutput("contribution_all_states", height = 400)
-                                ),
-                       
-                       tabPanel("Map",
-                                radioButtons(inputId = "map_choice", label = "Which map?", 
-                                             inline = T, choices = c("Style 1", "Style 2")),
-                                plotOutput("contribution_map", height = 700, width = 1100),
-                                dataTableOutput("temp2")
+                                radioButtons(inputId = "plot_choice", label = "Choose the plot style", 
+                                             inline = T, choices = c("Arrange as map", "Arrange as grid")),
+                                plotlyOutput("contribution_plot", height = 700, width = 1100)#,
+                                #dataTableOutput("temp2")
                                 ),
                        
                        tabPanel("Life Expectancy Gap",
                                 plotlyOutput("life_expectancy"),
                                 textOutput("Explain_LE_males"),
-                                textOutput("Explain_LE_females"),
-                                strong("Population trends over time"),
-                                plotlyOutput("population_trend")), #height = 300, width = 400
+                                textOutput("Explain_LE_females")
+                                ), #height = 300, width = 400
                        
-                       tabPanel("Decomposition by Age",
-                                plotlyOutput("age_bayes"),
-                                textOutput("Explain_Age_Gap")),
-                       
-                       tabPanel("Decomposition by Cause",
+                       tabPanel("State snapshot",
+                                plotlyOutput("population_trend", height = 300, width = 500),
+                                plotOutput("age_cod1"),
+                                plotlyOutput("age_cod2"),
+                                textOutput("Explain_Age_Gap"),
                                 plotlyOutput("cod_bayes"),
-                                textOutput("Explain_COD_Gap")),
-                       
-                       tabPanel("Decomposition by Age & Cause",
-                                plotlyOutput("age_cod_bayes"))
+                                textOutput("Explain_COD_Gap"))
                        
                      )
                    )
@@ -156,7 +155,11 @@ server <- function(input, output) {
                   "Female" = "female")
   })
   
-  output$description_cod_summary <- renderText(paste0("Which causes of death contributed most to the ", lowercase.sex()," life expectancy gap between blacks and whites in ", input$year1, "?"))
+  output$description_cod_summary <- renderText(paste0("Which causes of death contributed most to the ", lowercase.sex()," life expectancy gap 
+                                                      between blacks and whites in ", input$year1, "? This graph depicts the difference in life expectancy
+                                                      between white ", lowercase.sex(), "s (vertical black line) and black ", lowercase.sex(), "s (dashed black 
+                                                      line). Causes to the left of the dashed line narrow the gap in ", input$year1, " whereas causes
+                                                      to the right exacerbate it."))
   
   output$state_cod_summary <- renderPlotly({
     ggplotly(ggplot(temp.df(), 
@@ -179,26 +182,49 @@ server <- function(input, output) {
   
   #output$data.temp <- renderDataTable(temp.df())
 
+  ##########################################
+  ##                 Age tab              ##
+  ########################################## 
+  
+  temp.df2 <- reactive({
+    temp <- data.frame(subset(age_decomp_results, sex == input$selected_sex & year == input$year1))
+    temp["state.reorder2"] <- reorder(temp$state, temp$LE_black_mean, max, na.rm = T)
+    temp["state.reorder2.n"] <- as.numeric(temp[["state.reorder2"]])
+    temp
+  })
+  
+  output$description_age_summary <- renderText(paste0(h1("Which age group contributed most to the ", lowercase.sex()," life expectancy gap 
+                                                      between blacks and whites in ", input$year1, "?"), br(), "This graph depicts the difference in 
+                                                      life expectancy between white ", lowercase.sex(), "s (vertical red line) and black ", 
+                                                      lowercase.sex(), "s (dashed red line). Ages to the left of the dashed line narrow 
+                                                      the gap in ", input$year1, " wherease ages to the right exacerbate it."))
+
+  output$state_age_summary <- renderPlotly({
+    ggplotly(ggplot(temp.df2(), 
+                    aes(x = new.start, y = state.reorder2.n)) + 
+               geom_segment(aes(x = LE_black_mean, xend = LE_white_mean, 
+                                y = state.reorder2.n, yend = state.reorder2.n), col = "red") + 
+               
+               geom_rect(aes(xmin = new.start, 
+                             ymin = state.reorder2.n - 0.45, 
+                             ymax = state.reorder2.n + 0.45, 
+                             xmax = new.finish, fill = age), color = "white") +
+               scale_y_continuous(breaks = 1:length(levels(factor(temp.df()$state.reorder2))), 
+                                  labels = levels(factor(temp.df()$state.reorder2))) +
+               theme_minimal() + 
+               geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5), col = "red") +
+               geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5), col = "red", lty = 3) +
+               scale_fill_viridis(discrete = T, direction = -1)
+             
+    )  %>% 
+      layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed"))
+  })
   
   
   ##########################################
   ##            Life expectancy tab       ##
   ##########################################
-  
-  output$population_trend <- renderPlotly({
-    p <- ggplotly(
-      ggplot(subset(dat.aggregated, state == input$state & age_minbin == 0), aes(y = pop_across_age, x = year)) + 
-        geom_line(aes(col = sex, lty = race)) +
-        #scale_color_manual(values = c("#67a9cf", "#ef8a62")) +
-        ylab("Population Size") + 
-        scale_y_continuous(label = comma) + 
-        scale_x_continuous(name = "Year") + 
-        theme_minimal()) 
-     p # %>% layout(legend = list(x = 0.5, y = -2))
-    #p %>% layout(showlegend = F)
-    
-  })
-  
+
   facet_names <- list(
     'Male'="Male Life Expectancy (years)",
     'Female'="Female Life Expectancy (years)"
@@ -357,7 +383,7 @@ xaxis.title <- reactive({
          "Proportion (%)" = "(%)")
 })
 
-output$contribution_all_states <- renderPlotly({
+grid.contribution <- reactive({
   ggplotly(ggplot(contrib.data.react(), aes(x = year, y = y1)) + 
              geom_line(aes(col = state)) + 
              facet_wrap(~ Census_Division) +
@@ -371,8 +397,8 @@ output$contribution_all_states <- renderPlotly({
 })
 
 
-map1 <- reactive({
-  ggplot(contrib.data.react(), aes(x = year, y = y1)) +
+map.contribution <- reactive({
+  ggplotly(ggplot(contrib.data.react(), aes(x = year, y = y1)) +
   geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl, fill = Census_Division)) +
   geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
   facet_wrap(~state.reorder, ncol = 11, drop = F) +
@@ -383,39 +409,72 @@ map1 <- reactive({
         axis.ticks=element_blank()) +
   ylab("Contribution to the LE gap") +
   xlab("Year (1969-2013)")
+  )
 })
 
-map2 <- reactive({
-  ggplot(contrib.data.react(), aes(x = year, y = y1)) + 
-  geom_area(aes(y = y1_for_area), fill = "#41b6c4") +
-  geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl), fill = "#ffffb2", alpha = 0.5) +
-  geom_line() +
-  geom_hline(aes(yintercept = 0), col = "black") + 
-  geom_vline(aes(xintercept = 1969), col = "black") + 
-  facet_wrap(~state.reorder, ncol = 11, drop = F) +
-  theme_classic(base_size = 15) +
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  ylab("Contribution to the LE gap") +
-  xlab("Year (1969-2013)")  
+# map2 <- reactive({
+#   ggplot(contrib.data.react(), aes(x = year, y = y1)) + 
+#   geom_area(aes(y = y1_for_area), fill = "#41b6c4") +
+#   geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl), fill = "#ffffb2", alpha = 0.5) +
+#   geom_line() +
+#   geom_hline(aes(yintercept = 0), col = "black") + 
+#   geom_vline(aes(xintercept = 1969), col = "black") + 
+#   facet_wrap(~state.reorder, ncol = 11, drop = F) +
+#   theme_classic(base_size = 15) +
+#   theme(axis.text.x = element_blank(),
+#         strip.background=element_blank(),
+#         axis.line=element_blank(),
+#         axis.ticks=element_blank()) +
+#   ylab("Contribution to the LE gap") +
+#   xlab("Year (1969-2013)")  
+# })
+
+
+plot.chosen <- reactive({
+  plot <- switch(input$plot_choice,
+                "Arrange as map" = map.contribution(), 
+                "Arrange as grid" = grid.contribution())
+  plot
 })
 
 
-map.chosen <- reactive({
-  map <- switch(input$map_choice,
-                "Style 1" = map1(), 
-                "Style 2" = map2())
-  map
+output$contribution_plot <- renderPlotly({
+ plot.chosen()
 })
 
+#output$temp2 <- renderDataTable(contrib.data.react())
 
-output$contribution_map <- renderPlot({
- map.chosen()
+##########################################
+##            State Snapshot            ##
+##########################################
+
+output$population_trend <- renderPlotly({
+  p <- ggplotly(
+    ggplot(subset(dat.aggregated, state == input$state & age_minbin == 0), aes(y = pop_across_age, x = year)) + 
+      geom_line(aes(col = sex, lty = race)) +
+      #scale_color_manual(values = c("#67a9cf", "#ef8a62")) +
+      ylab("Population Size") + 
+      scale_y_continuous(label = comma) + 
+      scale_x_continuous(name = "Year") + 
+      theme_minimal()) 
+  p # %>% layout(legend = list(x = 0.5, y = -2))
+  #p %>% layout(showlegend = F)
+  
 })
 
-output$temp2 <- renderDataTable(contrib.data.react())
+output$age_cod1 <- renderPlot({
+  age_cod_plot <- ggplot(data = subset(age_cod_results, sex == input$selected_sex & year == input$year1 & 
+                                         state == input$state), 
+                         aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
+                         geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
+                         ylab("Contribution to the life expectancy gap (years)") +
+                         xlab("")
+  age_cod_plot
+})
+
+output$age_cod2 <- renderPlotly({
+  ggplotly(age_cod_plot)
+})
 
 }
 shinyApp(ui = ui1, server = server)
