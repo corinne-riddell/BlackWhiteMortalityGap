@@ -18,13 +18,31 @@ library(tidyverse)
 library(plotly)
 
 cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+
+cod_decomp_results$COD_cont_yrs_width <- cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl
+cod_decomp_results$COD_cont_yrs_SE1 <- (cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_mean)/1.96
+cod_decomp_results$COD_cont_yrs_SE2 <- -(cod_decomp_results$COD_cont_yrs_lcl - cod_decomp_results$COD_cont_yrs_mean)/1.96
+cod_decomp_results$SE.diff <- cod_decomp_results$COD_cont_yrs_SE1 - cod_decomp_results$COD_cont_yrs_SE2
+summary(cod_decomp_results$SE.diff)
+
+# cod_decomp_results.means <- cod_decomp_results %>% 
+#   mutate(COD_cont_yrs_width = COD_cont_yrs_ucl - COD_cont_yrs_lcl) %>%
+#   group_by(state, sex, COD) %>%
+#   summarise(mean_COD_cont_yrs_width = mean(COD_cont_yrs_width))
+# 
+# mod1 <- lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state, data = subset.data)
+# 
+# mod2 <- lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state, weights = 1/(COD_cont_yrs_SE1)^2, 
+#            data = subset.data)
 ```
 
 ```{r modeling}
 #run 12 stratified models. bs() created the b-spline basis
 models <- cod_decomp_results %>% 
   group_by(COD, sex) %>%
-  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state, data = .)) 
+  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state, 
+              weights = 1/(COD_cont_yrs_SE1)^2, 
+              data = .)) 
 
 #calculated predicted values for all models
 dfPred = broom::augment(models, fit)
@@ -36,7 +54,8 @@ cod_decomp_results <- merge(cod_decomp_results,
                             by = c("COD", "sex", "state", "year"))
 
 #calculated the sum of the residuals for each state-sex-cod strata (summed over years)
-cod_decomp_results <- cod_decomp_results %>% group_by(state, sex, COD) %>%
+cod_decomp_results <- cod_decomp_results %>% 
+  group_by(state, sex, COD) %>%
   mutate(sum.residual = sum(abs(.resid)))
 ```
 
@@ -46,9 +65,13 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
   subset.data$order <- reorder(subset.data$state, subset.data$sum.residual, first)
   
   a <- ggplot(subset.data,
-         aes(x = year, y = COD_cont_yrs_mean)) + geom_line(aes(col = "Observed")) + 
+         aes(x = year, y = COD_cont_yrs_mean)) + 
+    #geom_line(aes(col = "Observed")) + 
+    geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl), fill = "#b2e2e2") +
+    #scale_fill_manual(values = c("#b2e2e2")) +
     facet_wrap( ~ order) + 
-    geom_line(aes(y = .fitted, col = "Estimated")) +
+    geom_line(aes(y = .fitted), col = "#006d2c") +
+    #scale_color_manual(values = c("#006d2c")) +
     xlab(" ") + ylab("observed vs. estimated contribution (years)") + 
     ggtitle(paste0("Observed vs. estimated in ", COD1, " in ", sex1)) +
     theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
@@ -56,6 +79,7 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
   
   b <- ggplot(subset.data,
               aes(x = year, y = .resid)) + geom_line(aes(col = "Residual")) + 
+    scale_color_manual(values = c("#006d2c")) +    
     facet_wrap( ~ order) +
     xlab(" ") + ylab("Residual") +
     geom_hline(yintercept = 0, col = "black") +
