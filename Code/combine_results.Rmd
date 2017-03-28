@@ -107,6 +107,35 @@ age_decomp_results <- make_pretty_decomp_plot(decomp.table = age_decomp_results,
                                    partition.bar.var = "age_minbin", sign.var = "widened_gap",
                                    decomp.var = "age_cont_yrs_mean", decomp.var.prop = "age_cont_prop_mean",
                                    type.of.data = "practice")
+
+age_cod_results$widened_gap <- sign(age_cod_results$age_COD_cont_yrs_mean)
+age_cod_results <- make_pretty_decomp_plot(decomp.table = age_cod_results, strat.var.1 = "stratum.id",
+                                           strat.var.2 = "state", strat.var.3 = "age_minbin",
+                                           partition.bar.var = "COD", sign.var = "widened_gap",
+                                           decomp.var = "age_COD_cont_yrs_mean", decomp.var.prop = "age_COD_prop_mean",
+                                           type.of.data = "practice")
+
+#trying to get this to work 
+age_cod_results_test <- make_pretty_decomp_plot(decomp.table = subset(age_cod_results, stratum.id == "Alabama.1969.Female"), 
+                                                strat.var.1 = "stratum.id",
+                                           strat.var.2 = "state", strat.var.3 = "age_minbin",
+                                           partition.bar.var = "COD", sign.var = "widened_gap",
+                                           decomp.var = "age_COD_cont_yrs_mean", decomp.var.prop = "age_COD_cont_prop_mean",
+                                           type.of.data = "results")
+
+ggplot(data = age_cod_results_test, aes(y = age, x = start)) + geom_bar(fill = COD)
+
+age_cod_results_test$age.n <- as.numeric(age_cod_results_test$age) #need to fix the 5 year old when convert to nummeric
+    ggplotly(ggplot(age_cod_results_test,
+                    aes(y = age.n, x = start)) + 
+               geom_rect(aes(xmin = start, xmax = finish, ymin = age.n - 0.45, ymax = age.n + 0.45, fill = COD), col = "white") +
+               #xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
+               #ylab("Age group\n") +
+               theme_minimal() +
+               geom_vline(xintercept = 0)  
+               #facet_wrap(~ year) +
+               #ggtitle(paste0(input$selected_sex, "s in ", input$state)) 
+             ) 
 ```
 
 ```{r split-age-cod-data-for-save}
