@@ -53,114 +53,105 @@ mortality.rates.diff$state.reorder2 <- factor(mortality.rates.diff$state,
                                                    bl[30:33], "Texas", bl[34:37], "Florida"))
 ```
 
-```{r plot-arrange-as-us-map, echo=F, fig.width=19.5, fig.height=14, results="asis", message = F}
-# sex_i <- "Male"
-# cod <- "Cardiovascular"
+```{r plotting_fx, echo = F}
+plot.mortality.trends <- function(dataset, dataset2, COD1, sex1) {
+  subset.data <- subset(dataset, COD == COD1 & sex == sex1)
+  #lim.y <- c(min(subset.data$rate.per.100k_lcl), max(subset.data$rate.per.100k_ucl))
+  
+  subset.data2 <- subset(dataset2, sex == sex1 & COD == COD1)
+  #lim.y2 <- c(min(subset.data2$rate.difference_LCL), max(subset.data2$rate.difference_UCL))
+    
+  a <- ggplot(subset.data, aes(x = year, y = rate.per.100k_mean)) + 
+              geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, fill = Race), col = NA, alpha = 0.5) +
+              geom_line(aes(col = Race)) +
+              facet_wrap( ~ state.reorder2, ncol = 11, drop = F) +
+              xlab(" ") + 
+              ylab("Age-standardized mortality rate (per 100,000)") + 
+              geom_hline(yintercept = 0, col = "black", lwd = 0.5) +
+              #scale_y_continuous(limits = lim.y) + 
+              ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex1, " for ", COD1)) +
+              theme_classic(base_size = 10) +
+              theme(axis.text.x = element_blank(),
+                    strip.background=element_blank(),
+                    axis.line=element_blank(),
+                    axis.ticks=element_blank()) 
+             
 
-for(sex_i in c("Male", "Female")) {
-  for(cod in levels(mortality.rates$COD)[c(3, 2, 4, 6, 5, 1)]) {
-# for(sex_i in c("Male")) {
-#   for(cod in levels(mortality.rates$COD)[1]) {
-    cat("  \n### Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod, "  \n")
-
-    data.sub <- subset(mortality.rates, sex == sex_i & COD == cod)
-    lim.y <- max(data.sub$rate.per.100k_mean)
-    map.plot1 <- ggplot(data.sub,
-                        aes(y = rate.per.100k_mean, x = year)) +
-      geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
-      geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
-      geom_line(aes(lty = Race, col = Race)) +
-      geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race, fill = Race), col = NA, alpha = 0.5) +
-      scale_color_manual(values = c("#2166ac", "#b2182b")) +
-      scale_fill_manual(values = c("#67a9cf", "#ef8a62")) +
-      scale_y_continuous(limits = c(0, lim.y)) + 
-      facet_wrap( ~ state.reorder2, ncol = 11, drop = F, strip.position="bottom") +
-      theme_classic(base_size = 20) +
-      theme(axis.text.x = element_blank(),
-            strip.background=element_blank(),
-            axis.line=element_blank(),
-            axis.ticks=element_blank()) +
-      #theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-      ylab("Age-standardized mortality rate (per 100,000)") +
-      xlab("Year (1969-2013)")
-    print(map.plot1)
-    
-    cat("  \n")
-    
-    cat("  \n### Black-white difference in age-adjusted mortality (per 100,000) in ", 
-        sex_i, " for ", cod, "  \n")
-
-    data.sub2 <- subset(mortality.rates.diff, sex == sex_i & COD == cod)
-    lim.y2 <- max(data.sub2$rate.difference_mean)
-    
-    map.plot2 <- ggplot(data.sub2,
-                        aes(y = rate.difference_mean, x = year)) +
-      geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
-      geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
-      geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), fill = "grey", col = NA) +
-      geom_line() +
-      geom_hline(aes(yintercept = 0), col = "#636363") +
-      scale_y_continuous(limits = c(0, lim.y2)) + 
-      facet_wrap( ~ state.reorder2, ncol = 11, drop = F, strip.position="bottom") +
-      theme_classic(base_size = 20) +
-      theme(axis.text.x = element_blank(),
-            strip.background=element_blank(),
-            axis.line=element_blank(),
-            axis.ticks=element_blank()) +
-      #theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-      ylab("Black-white difference (per 100,000)") +
-      xlab("Year (1969-2013)")
-    
-    
-    print(map.plot2)
-    cat("  \n")
-    cat("  \n")
-  }
-  cat("  \n")
+  
+  b <- ggplot(subset.data2, aes(x = year, y = rate.difference_mean)) + 
+              geom_line() +
+              geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), col = NA, alpha = 0.5) +
+              facet_wrap( ~ state.reorder2, ncol = 11, drop = F) +
+              xlab(" ") + 
+              ylab("Excess mortality among blacks (per 100,000)") +
+              #scale_y_continuous(breaks = 0) + #limits = lim.y2
+              geom_hline(yintercept = 0, col = "black", lwd = 0.5) +
+              #geom_vline(xintercept = 1969, col = "black", lwd = 0.5) +
+              ggtitle(paste0("Excess mortality among blacks (per 100,000) in ", sex1, " for ", COD1)) +
+              theme_classic(base_size = 10) +
+              theme(panel.grid.minor = element_blank(),
+                    axis.text.x = element_blank(),
+                    strip.background=element_blank(),
+                    axis.line=element_blank(),
+                    axis.ticks=element_blank()) 
+               
+  
+    return(list(plot1 = a, plot2 = b))
 }
 ```
 
-```{r, echo=F, fig.width=11, fig.height=11, eval=F}
-
-sex_i <- "Male"
-cod <- "Injuries"
-
-for(sex_i in c("Male", "Female")) {
-  for(cod in levels(mortality.rates$COD)) {
-    
-# for(sex_i in c("Male")) {
-#   for(cod in levels(mortality.rates$COD)[1]) {
-    data.sub <- subset(mortality.rates, sex == sex_i & COD == cod)
-    a <- ggplot(data.sub, 
-                aes(y = rate.per.100k_mean, x = year)) + 
-      geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
-      geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
-      geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, fill = Census_Division, group = Race), col = NA, alpha = 0.5) +
-      geom_line(aes(col = Census_Division, lty = Race)) +
-      # geom_line(aes(y = rate.per.100k_med, lty = Race)) +
-      facet_wrap( ~ state.reorder, ncol = 5) +
-      ylab("Age-standardized mortality rate (per 100,000)") +
-      xlab("Year") + 
-      ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex_i, " for ", cod))# + theme_minimal()
-    
-    print(a)
-    
-    b <- ggplot(subset(mortality.rates.diff, sex == sex_i & COD == cod), 
-                aes(y=rate.difference_mean, x = year)) + 
-      geom_vline(aes(xintercept = 1983), col = "#636363", lty = 3) +
-      geom_vline(aes(xintercept = 1993), col = "#636363", lty = 3) +
-      geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL, fill = Census_Division), col = NA, alpha = 0.5) +
-      geom_hline(aes(yintercept = 0), col = "#636363") +
-      #geom_line(aes(y = rate.difference_med)) +
-      geom_line(aes(col = Census_Division)) +
-      facet_wrap( ~ state.reorder, ncol = 5) +
-      ylab("Black-white difference (per 100,000)") +
-      xlab("Year") + 
-      ggtitle(paste0("Black-white difference in age-adjusted mortality (per 100,000) in ", 
-                     sex_i, " for ", cod))
-    print(b)
-    
+```{r create-the-plots, echo = F, message = F}
+for(COD_i in levels(mortality.rates$COD)) {
+  for(sex_i in levels(mortality.rates$sex)) {
+    assign(paste0(COD_i, ".", sex_i, ".mort.plot"), plot.mortality.trends(dataset = mortality.rates, dataset2 = mortality.rates.diff,
+                                                                         COD1 = COD_i, sex1 = sex_i))
   }
 }
+```
+
+```{r print-em, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cardiovascular.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+```
+
+```{r print-em-2, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cardiovascular.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Cardiovascular.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+```
+
+```{r print-em-3, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cancers.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Cancers.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+```
+
+```{r print-em-4, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Cancers.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Cancers.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+```
+
+```{r print-3, fig.width = 9, fig.height=9, echo = F}
+ggplotly(Communicable.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Communicable.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+ggplotly(Communicable.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Communicable.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+ggplotly(`Non-communicable.Male.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(`Non-communicable.Male.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+ggplotly(`Non-communicable.Female.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(`Non-communicable.Male.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+ggplotly(Injuries.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Injuries.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+ggplotly(Injuries.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(Injuries.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+ggplotly(`All other causes.Male.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(`All other causes.Male.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+ggplotly(`All other causes.Female.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+ggplotly(`All other causes.Female.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
 ```
 
