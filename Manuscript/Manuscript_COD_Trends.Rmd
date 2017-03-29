@@ -1,0 +1,60 @@
+---
+title: 
+output:
+  html_document: default
+  word_document: default
+always_allow_html: yes
+---
+
+Corinne A Riddell, PhD
+
+Kathryn T Morrison, PhD
+
+Sam Harper, PhD
+
+Jay S Kaufman, PhD
+
+Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Canada.
+
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
+
+###Abstract
+
+**Background**
+
+**Methods and Findings**
+
+**Conclusions:**
+
+###Introduction
+The life expectancy of a population is a barometer for overall health. In 2014, life expectancy in the United States was 78.8 years, but hidden within this figure are differences by race. Whites lived 3.4 years longer than Blacks [ref: http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf]. While both black and white Americans have generally experienced increases in life expectancy since the beginning of the 20^th^ century, the difference between their life expectancies has varied. 
+
+During the 1980s, the life expectancy gap widened and then narrowed in the 1990s due largely to relative mortality improvements among blacks in deaths due to homicide, HIV, unintentional injuries, and, among females, due to differential improvements in heart disease [@harper2007trends]. The gap continued to narrow during the 2000s, but states differed markedly in the magnitude of improvement. For example, the life expectancy gap in New York decreased from 8.0 years to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 years to 5.6 years [@harper2014trends]. 
+
+The over-arching objective of this study was to describe the general pattern of each cause of death's contribution to the black-white life expectancy gap over forty-five years, and identify divergent states and differences between the sexes. To do so, we estimated state-level trends in the contribution of six major causes of death to the black-white life expectancy gap for males and females. Common reasons for the decreasing life expectancy gap can thereby be identified, and anomalous states can be examined. Ideally, this study may facilitate the identification of one policies or social conditions in highly successful states, and suggest broad targets for interventions to further reduce the gap in less successful states. 
+
+###Methods
+
+**The data**
+We used software maintained by the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (SEERStat) to extract data on the number of deaths and the population size in all 50 US states and the District of Columbia between 1969 and 2013. The mortality data were originally collected by the National Center for Health Statistics (NCHS) from death certificates and stored by the National Vital Statistics System. The population data were derived by the NCHS using intercensal bridged-race population estimates. This study used data on the number of deaths and the population size according to race (black or white), sex (male or female), age group (<1 year old, 1-4 years old, followed by 5-year age groupings, with a final grouping of 85 or more years of age), year (1969 -- 2013), and cause of death. Cause of death was originally recorded using the International Classification of Diseases (ICD) codes versions 8 (1969-1979), 9 (1979-1998), and 10 (1999-2013). These codes were aggregated into six broad causes of death for this analysis: Cancers, Cardiovascular disease, Communicable disease, Injuries, Non-communicable disease, and All other causes (**S1 Table**). When the number of deaths for a population stratum is between 1 and 9, this data point is suppressed by the software and produces a missing death count for that cell However, death counts of exactly 0 or greater than 9 are known precisely. 
+
+For the analysis we excluded 11 states with the smallest black populations: Alaska, Hawaii, Idaho, Maine, Montana, New Hampshire, North Dakota, South Dakota, Utah, Vermont, and Wyoming. These states contained less than 0.4% of the black population in the United States in 2010 [ref]. We did not consider Hispanic origin to identify race according to Hispanic ethnicity, since the quality of the coding of ethnicity varied by state over the time period included [https://www.cdc.gov/nchs/data/series/sr_02/sr02_148.pdf].   
+  
+**Statistical Methods**
+The data structure produced two statistical challenges that were addressed by our quantitative approach. First, our methodology needed to impute the suppressed death counts (for counts between 1 and 9). Second, several states had small black populations which produced sparse counts in each sex-age category. In these cases, the estimation of the sex-age mortality rates is imprecise, and can produce abrupt changes in the estimated mortality rates over time that are unrealistic. To better estimate the underlying age-specific mortality rates, a method that produces smoother age-specific mortality trends was required.
+
+To address these challenges, we used a Bayesian autoregressive model to smooth the data over time, and incorporated a truncated Poisson model to impute the suppressed death counts. Specifically, we used Poisson regression to model the number of deaths in each state-age-sex-race-year category as a function of the at-risk population. The mortality rates over time within each state-age-sex-race category are modeled autoregressively, where the log mortality rate in the current year was modeled as a normal variable centered at the log mortality rate estimated from the previous year. Truncated Poisson regression was used to impute the suppressed death counts, by specifying that the suppressed counts were sampled from a Poisson distribution and were constrained to be between 1 and the maximum of 9 and the at-risk population size (which may be smaller than 9). 
+
+These models were run separately for every combination of state, race, and sex. They were fit using two markov chains of length 10,000. One thousand iterations remained after discarding the first two thousand iterations as burn-in and sampling every eighth iteration (to reduce autocorrelation). Each iteration produced death count estimates that were smoothed over time for every cause of death within each age group, which were used to estimate life expectancy, the life expectancy gap, and perform a cause of death decomposition. These 1,000 decompositions form the posterior distribution from which the credible intervals were estimated using the 2.5^th^ and 97.5^th^ percentiles. 
+
+To calculate life expectancy at birth, the smoothed death counts were aggregated to estimate the total deaths in each age group and standard life table methods were applied [ref]. Life expectancy at birth (in years) was calculated for blacks and whites in each state and year according to sex. The difference in life expectancy between blacks and whites was calculated by subtracting the black life expectancy from the white life expectancy in each state, year, and sex.
+
+To examine the components of the difference in life expectancy between blacks and whites, we performed a decomposition analysis using the Arriaga method [ref]. First, the model partitions the difference in life expectancy by age group, which can be interpreted as the amount of the gap (in years) that can be attributed to higher age-specific mortality rates in blacks. For example, a decomposition of a gap of five years may find that two of the five years (40% of the gap) is attributable to a higher mortality rate in blacks in the youngest age group (< 1 years old) compared with the youngest whites. This age-specific decomposition can be further partitioned according to cause of death, producing the number of years of the gap that is attributable to every age- and cause-of-death combination. For example, a decomposition of a gap of 8 years may find that 1.3 years of this gap is attributable to more injury-related deaths in blacks aged 25-29 years old. We summed these age- and cause-of-death partitions over all ages to calculate the marginal contribution of each cause-of-death to the difference, for each state and for each sex. Thus, for each state, the contribution of each of the six causes to the black-white life expectancy gap was estimated for each year, producing 45 state-level trends and their credible intervals.
+
+To describe the general pattern in these trend lines, we regressed each state's mean contribution against a linear spline for calendar time that was estimated with five degrees of freedom. This model also contained fixed effects for state and was inversely-weighted by the standard error of each state's mean estimate within each year. We then calculated residuals for each year by substracting the meta-estimated contribution from the smoothed-observed estimated contribution and summed these residuals over time for each state to rank states according to how well the model predicted their pattern. Plots of these residuals over time were used to identify divergent states.
+
+**Need to add information on the trends in mortality**
+
+###Results
+
+###Bibliography
