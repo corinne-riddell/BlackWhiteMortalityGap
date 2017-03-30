@@ -42,6 +42,8 @@ cod_decomp_results$new.finish2 = cod_decomp_results$finish2 +cod_decomp_results$
 cod_decomp_results$LE_black_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
 cod_decomp_results$LE_white_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
 
+cod_decomp_results <- reorder.as.map(cod_decomp_results, "state")
+
 age_decomp_results <- merge(age_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
                             by = "stratum.id")
 
@@ -53,18 +55,7 @@ age_decomp_results$new.finish2 = age_decomp_results$finish2 + age_decomp_results
 age_decomp_results$LE_black_mean[age_decomp_results$age != "<1 year"] <- NA
 age_decomp_results$LE_white_mean[age_decomp_results$age != "<1 year"] <- NA
 
-# Create unique blank strip labels for empty facets
-bl = sapply(1:37, function(n) paste(rep(" ",n),collapse=""))
 
-cod_decomp_results$state.reorder <- factor(cod_decomp_results$state,
-                                         levels = c(bl[1:10], "Maine",
-                                                    bl[11:19], "Vermont", "New Hampshire",
-                                                    "Washington", "Idaho", "Montana", "North Dakota", "Minnesota", "Illinois", "Wisconsin", "Michigan", "New York", "Massachusetts", "Rhode Island",
-                                                    "Oregon", "Nevada", "Wyoming", "South Dakota", "Iowa", "Indiana", "Ohio", "Pennsylvania", "New Jersey", "Connecticut", bl[20],
-                                                    "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Delaware", bl[21],
-                                                    bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Washington DC", bl[23:24],
-                                                    bl[25:27], "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", bl[28:29],
-                                                    bl[30:33], "Texas", bl[34:37], "Florida"))
 
 
 ui1 <- fluidPage(theme = shinytheme("cosmo"),
@@ -401,7 +392,7 @@ map.contribution <- reactive({
   ggplotly(ggplot(contrib.data.react(), aes(x = year, y = y1)) +
   geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl, fill = Census_Division)) +
   geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
-  facet_wrap(~state.reorder, ncol = 11, drop = F) +
+  facet_wrap(~state.map.order, ncol = 11, drop = F) +
   theme_classic(base_size = 10) +
   theme(axis.text.x = element_blank(),
         strip.background=element_blank(),
@@ -419,7 +410,7 @@ map.contribution <- reactive({
 #   geom_line() +
 #   geom_hline(aes(yintercept = 0), col = "black") + 
 #   geom_vline(aes(xintercept = 1969), col = "black") + 
-#   facet_wrap(~state.reorder, ncol = 11, drop = F) +
+#   facet_wrap(~state.map.order, ncol = 11, drop = F) +
 #   theme_classic(base_size = 15) +
 #   theme(axis.text.x = element_blank(),
 #         strip.background=element_blank(),
