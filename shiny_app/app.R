@@ -402,7 +402,7 @@ map.contribution <- reactive({
   geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl, fill = Census_Division)) +
   geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
   facet_wrap(~state.reorder, ncol = 11, drop = F) +
-  theme_classic(base_size = 15) +
+  theme_classic(base_size = 10) +
   theme(axis.text.x = element_blank(),
         strip.background=element_blank(),
         axis.line=element_blank(),
