@@ -98,7 +98,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                        tabPanel("Trends in COD",
                                 strong("How has each cause of death contributed to the difference in life expectancy over time?
                                        First, here is a graph of the life expectancy gap over time, where each line is a state:"),
-                                plotlyOutput("le_gap_all_states", height = 400), 
+                                plotlyOutput("le_gap_all_states", height = 700, width = 1100), 
                                 strong("Select the cause of death you're interested in to see how many years of the total gap
                                        is due the selected cause, and how this changed over time. You can also view the proportional
                                        contribution by selecting 'Proportion (%)' on the panel to the left."),

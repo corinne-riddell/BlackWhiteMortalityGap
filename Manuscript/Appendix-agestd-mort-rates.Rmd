@@ -19,38 +19,16 @@ library(grid)
 library(gridExtra)
 library(plotly)
 library(forcats)
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 
 mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_combined.csv")
 mortality.rates.diff <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_combined.csv")
 
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) %>% rename(Race = race)
 mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) 
-```
 
-```{r refactor-for-us-map-plot, echo=F}
-
-# Create unique blank strip labels for empty facets
-bl = sapply(1:37, function(n) paste(rep(" ",n),collapse=""))
-
-mortality.rates$state.reorder2 <- factor(mortality.rates$state,
-                                        levels = c(bl[1:10], "Maine",
-                                                   bl[11:19], "Vermont", "New Hampshire",
-                                                   "Washington", "Idaho", "Montana", "North Dakota", "Minnesota", "Illinois", "Wisconsin", "Michigan", "New York", "Massachusetts", "Rhode Island",
-                                                   "Oregon", "Nevada", "Wyoming", "South Dakota", "Iowa", "Indiana", "Ohio", "Pennsylvania", "New Jersey", "Connecticut", bl[20],
-                                                   "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Delaware", bl[21],
-                                                   bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Washington DC", bl[23:24],
-                                                   bl[25:27], "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", bl[28:29],
-                                                   bl[30:33], "Texas", bl[34:37], "Florida"))
-
-mortality.rates.diff$state.reorder2 <- factor(mortality.rates.diff$state,
-                                        levels = c(bl[1:10], "Maine",
-                                                   bl[11:19], "Vermont", "New Hampshire",
-                                                   "Washington", "Idaho", "Montana", "North Dakota", "Minnesota", "Illinois", "Wisconsin", "Michigan", "New York", "Massachusetts", "Rhode Island",
-                                                   "Oregon", "Nevada", "Wyoming", "South Dakota", "Iowa", "Indiana", "Ohio", "Pennsylvania", "New Jersey", "Connecticut", bl[20],
-                                                   "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Delaware", bl[21],
-                                                   bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Washington DC", bl[23:24],
-                                                   bl[25:27], "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", bl[28:29],
-                                                   bl[30:33], "Texas", bl[34:37], "Florida"))
+mortality.rates <- reorder.as.map(mortality.rates, "state")
+mortality.rates.diff <- reorder.as.map(mortality.rates.diff, "state")
 ```
 
 ```{r plotting_fx, echo = F}
@@ -64,7 +42,7 @@ plot.mortality.trends <- function(dataset, dataset2, COD1, sex1) {
   a <- ggplot(subset.data, aes(x = year, y = rate.per.100k_mean)) + 
               geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, fill = Race), col = NA, alpha = 0.5) +
               geom_line(aes(col = Race)) +
-              facet_wrap( ~ state.reorder2, ncol = 11, drop = F) +
+              facet_wrap( ~ state.map.order, ncol = 11, drop = F) +
               xlab(" ") + 
               ylab("Age-standardized mortality rate (per 100,000)") + 
               geom_hline(yintercept = 0, col = "black", lwd = 0.5) +
@@ -81,7 +59,7 @@ plot.mortality.trends <- function(dataset, dataset2, COD1, sex1) {
   b <- ggplot(subset.data2, aes(x = year, y = rate.difference_mean)) + 
               geom_line() +
               geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), col = NA, alpha = 0.5) +
-              facet_wrap( ~ state.reorder2, ncol = 11, drop = F) +
+              facet_wrap( ~ state.map.order, ncol = 11, drop = F) +
               xlab(" ") + 
               ylab("Excess mortality among blacks (per 100,000)") +
               #scale_y_continuous(breaks = 0) + #limits = lim.y2
@@ -109,6 +87,8 @@ for(COD_i in levels(mortality.rates$COD)) {
 }
 ```
 
+**eFigure 1**
+
 ```{r print-em, fig.width = 9, fig.height = 9, echo = F}
 ggplotly(Cardiovascular.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
 ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
@@ -119,15 +99,21 @@ ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Ye
 #p$x$data[[1]]$text #otherwise, modified what is stored here to display how you want it to look. 
 ```
 
+**eFigure 2**
+
 ```{r print-em-2, fig.width = 9, fig.height = 9, echo = F}
 ggplotly(Cardiovascular.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
 ggplotly(Cardiovascular.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
 ```
 
+**eFigure 3**
+
 ```{r print-em-3, fig.width = 9, fig.height = 9, echo = F}
 ggplotly(Cancers.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
 ggplotly(Cancers.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
 ```
+
+**eFigure 4**
 
 ```{r print-em-4, fig.width = 9, fig.height = 9, echo = F}
 ggplotly(Cancers.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
