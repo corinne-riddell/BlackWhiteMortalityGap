@@ -559,3 +559,21 @@ add_Census_Region <- function(data, state) {
   return(data)
 }
 
+#This function adds the variable "state.map.order" to the dataframe to be used to plot the facets to approximate the shape of the continental US
+#DOES NOT INCLUDE ALASKA AND HAWAII!!
+reorder.as.map <- function(dataset, state.var) {
+  # Create unique blank strip labels for empty facets
+  bl = sapply(1:37, function(n) paste(rep(" ",n),collapse=""))
+  
+  dataset["state.map.order"] <- factor(dataset[[state.var]], 
+                                       levels = c(bl[1:10], "Maine",
+                                                  bl[11:19], "Vermont", "New Hampshire",
+                                                  "Washington", "Idaho", "Montana", "North Dakota", "Minnesota", "Illinois", "Wisconsin", "Michigan", "New York", "Massachusetts", "Rhode Island",
+                                                  "Oregon", "Nevada", "Wyoming", "South Dakota", "Iowa", "Indiana", "Ohio", "Pennsylvania", "New Jersey", "Connecticut", bl[20],
+                                                  "California", "Utah", "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Delaware", bl[21],
+                                                  bl[22], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Washington DC", bl[23:24],
+                                                  bl[25:27], "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", bl[28:29],
+                                                  bl[30:33], "Texas", bl[34:37], "Florida")) 
+  
+  return(dataset)
+}
