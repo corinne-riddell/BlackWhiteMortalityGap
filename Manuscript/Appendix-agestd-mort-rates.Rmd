@@ -112,6 +112,11 @@ for(COD_i in levels(mortality.rates$COD)) {
 ```{r print-em, fig.width = 9, fig.height = 9, echo = F}
 ggplotly(Cardiovascular.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
 ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+
+#manipulating hover info:
+#p <- ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+#p$x$data[[1]]$hoverinfo = "none" #if want no hover info for a particular trace
+#p$x$data[[1]]$text #otherwise, modified what is stored here to display how you want it to look. 
 ```
 
 ```{r print-em-2, fig.width = 9, fig.height = 9, echo = F}
