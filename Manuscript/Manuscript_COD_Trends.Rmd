@@ -1,9 +1,9 @@
 ---
-title: "null"
+title: 'null'
 bibliography: bibliography.bib
 output:
-  word_document: default
   html_document: default
+  word_document: default
 always_allow_html: yes
 ---
 
@@ -139,7 +139,7 @@ ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = ye
 #run 12 stratified models. bs() created the b-spline basis
 models <- cod_decomp_results %>% 
   group_by(COD, sex) %>%
-  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state, 
+  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5), # + state, #remove the state FE
               weights = 1/(COD_cont_yrs_SE)^2, 
               data = .)) 
 
@@ -217,6 +217,18 @@ For all races and sexes, mortality from cancer peaked in the mid 1990s and decre
 
 For females, while cancer-related mortality continues to be higher among blacks in many states, the inverted-U pattern is similar between blacks and whites and most states do not exhibit the accentuated period of increase in mortality that was estimated for black males. Thus, the contribution of cancer to the life expectancy gap is generally flat over time (**Figure 6**). Washington DC deviates from this pattern, and exhibited increasing cancer contributions to the gap, while Rhode Island exhibited the reverse. Most notably, some states exhibited no inequality in cancer mortality (**eFigures 3 and 4**), including New York, and Connecticut (and for males, these states recently eliminated the black-white difference in cancer mortality). Furthermore, Massachusetts and (imprecisely) Rhode Island exhibit lower cancer rates among black women and men compared to whites in 2013.
 
+**Non-communicable disease**
+
+Mortality from non-communicable disease has been increasing over time for black and white males in most states, with DC as a notable exception (**Figure X**). Recently, there has been a slight decrease in mortality rates, especially among black males. These trends are similar among females, except that black females exhibited a sharper decline in mortality in recent years, eliminating the mortality difference in several states. As such, the contribution of non-communicable disease to the mortality gap was general flat among men with a recent decrease, and exhibited a gradual decrease over time among women. 
+
+**Injury**
+
+Injury is one of the least common causes of death. Over time, injury-related mortality has decreased precipitously among blacks, although an [insurgence][better word?] of crime in the 1990s resulted in heightened mortality from injuries among black males at that time (**Figure X**). For whites, most states exhibit an initial period of gradual decreases in injury mortality, followed by a period of gradual increases, especially among white females (**Figure X**). Thus, injury mortality rates among blacks are the same as, or lower than those among whites in many states, especially among females. Thus, the contribution of injuries to the mortality gap has generally decreased over time, and has become negative in those states with lower injury-related mortality among blacks than whites (**Figures X and X**). Among males, Wisconsin and Washington DC diverged the most from the general pattern, as both states experienced steep increases in the contribution of injuries during the 1990s that was not captured by the general trend. Washington DC also exhibited this pattern among females.
+
+**Communicable disease**
+
+Communicable disease is the least most common cause of death, although the 1990s exhibited an enormous increase in mortality related to communiable disease at the height of the HIV/AIDS epidemic before anti-retroviral therapy was available. This spike was greater among males, especially blacks, and within states with larger urban centers. Thus, the contribution of communicable disease to the life expectancy gap exhibits a peak in the mid 1990s, with states diverging from this general pattern according to the intensity of their local epidemics. 
+
 ****
 
 **Figure 1: State-level trends in the difference in life expectancy between blacks and whites in males, United States, 1969-2013**
@@ -259,33 +271,57 @@ ggplotly(Cancers.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
 ggplotly(Cancers.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
 ```
 
-```{r print-plot-5, fig.width = 9, fig.height=9, echo = F, eval = F}
-ggplotly(Communicable.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Communicable.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+**Figure 7: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the overall pattern in males**
 
-ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Communicable.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
-
+```{r print-plot-5, fig.width = 9, fig.height = 9, echo = F}
 ggplotly(`Non-communicable.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
 ggplotly(`Non-communicable.Male.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
-
-ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`Non-communicable.Male.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
-
-ggplotly(Injuries.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Injuries.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
-
-ggplotly(Injuries.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Injuries.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
-
-ggplotly(`All other causes.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`All other causes.Male.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
-
-ggplotly(`All other causes.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`All other causes.Female.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
 ```
 
+**Figure 8: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the overall pattern in females**
+
+```{r print-plot-6, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`Non-communicable.Female.plot`[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+**Figure 9: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the overall pattern in males**
+
+```{r print-plot-7, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Injuries.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Injuries.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+**Figure 10: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the overall pattern in females**
+
+```{r print-plot-8, fig.width = 9, fig.height = 9, echo = F}
+ggplotly(Injuries.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Injuries.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+**Figure 11: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the overall pattern in males**
+
+```{r print-plot-9, fig.width = 9, fig.height=9, echo = F}
+ggplotly(Communicable.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Communicable.Male.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+**Figure 12: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the overall pattern in females**
+
+```{r print-plot-10, fig.width = 9, fig.height=9, echo = F}
+ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Communicable.Female.plot[[2]]) %>% layout(xaxis = list(title = "Year"))
+```
+
+**Figure 13: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in males**
+**Figure 14: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in males**
+
+
 ###Discussion 
+
+Limitations
+-does not account for migration. Washington DC - have a lot of migration of high SES white folks coming in, and perhaps also relatively high SES black folks moving out
+-does not account for hispanic ethinicity - demographic shifts in FL for example of black and white hispanics which will pull LE and disparities
 
 ###Appendix
 
