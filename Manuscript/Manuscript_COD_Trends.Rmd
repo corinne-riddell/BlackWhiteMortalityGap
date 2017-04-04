@@ -1,5 +1,5 @@
 ---
-title: 'null'
+title: 'Historical trends in the contribution of six major causes of death to the black-white life expectancy gap by US state'
 bibliography: bibliography.bib
 output:
   html_document: default
@@ -249,6 +249,10 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
   
   c <- ggplot(subset.data,
               aes(x = year, y = COD_cont_yrs_mean)) + 
+    # geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey") +
+    # geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey") +
+    # geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey") +
+    # geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey") +
     geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + #geom_hline(yintercept = 0, col = "black") +
     
     #geom_line(aes(col = "Observed")) + 
@@ -258,13 +262,13 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
     facet_wrap( ~ state.map.order, ncol = 11, drop = F) + 
     geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
     #geom_line(aes(y = fitted.RE), col = "#d7191c", lty = 3) +
-    ggtitle(paste0("Estimated smoothed contribution vs. meta-estimated common trend in ", COD1, " in ", sex1)) +
+    ggtitle(paste0("Estimated smoothed contribution of", COD1, " disease to the black-white life expectancy gap (blue 95% credible interval) vs. the meta-estimated general pattern (red line) in ", sex1, " 1969-2013")) +
     theme_classic(base_size = 10) + 
     theme(axis.text.x = element_blank(),
           strip.background=element_blank(),
           axis.line=element_blank(),
           axis.ticks=element_blank()) +
-    ylab("estimated smoothed contribution vs. common trend (years)") +
+    ylab("Contribution to the life expectancy gap (years)") +
     xlab("Year (1969-2013)")
   
   return(list(plot1 = a, plot2 = b, plot3 = c))
@@ -283,10 +287,7 @@ for(COD_i in levels(cod_decomp_results$COD)) {
 ```{r refine_plots, eval = F, echo = F}
 #need tp add the "grid lines post-hoc" because they depend on the max height of the plot
 
-    geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey") +
-    geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey") +
-    geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey") +
-    geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey") +
+
   
 #turn hover off for grid lines and axis lines
 refine.patterns <- function(plot) {
@@ -298,15 +299,17 @@ refine.patterns <- function(plot) {
     if(plot$x$data[[i]]$line$color == "rgba(0, 0, 0, 1)"){
     plot$x$data[[i]]$hoverinfo <- "none"
   }
-}
+  }
+  return(plot)
 }
 
+#refine.patterns(Cardiovascular.Male.plot[[3]])
 ```
 
 
-**Figures 1 and 2** display trends in the life expectancy gap for males and females, respectively. For both sexes, the life expectancy gap has decreased since 1969, although several states exhibited a period of increasing inequality that peaked in the early 1990s, especially among males. Don't know whether you want to note it here or not, but I find it is interesting to see that the gap is now lower in many US southern (or southeastern) states than in the Midwest, suggesting that progress has actually been somewhat greater in the South than elsewhere (particularly the upper Midwest and especially for women). I think this is interesting and somewhat counter to the narrative that health indicators are worse in the South. I also wonder how this might relate to the Murray/IHME work on US counties with "declining" life expectancya among white women. 
+**Figures 1 and 2** display trends in the life expectancy gap for males and females, respectively. For both sexes, the life expectancy gap has decreased since 1969, although several states exhibited a period of increasing inequality that peaked in the early 1990s, especially among males. *Don't know whether you want to note it here or not, but I find it is interesting to see that the gap is now lower in many US southern (or southeastern) states than in the Midwest, suggesting that progress has actually been somewhat greater in the South than elsewhere (particularly the upper Midwest and especially for women). I think this is interesting and somewhat counter to the narrative that health indicators are worse in the South. I also wonder how this might relate to the Murray/IHME work on US counties with "declining" life expectancy among white women.* 
 
-**Figures 2 - 14** display trends in the contribution of each cause of death to the life expectancy gap for males and females, in years. [I wonder whether some readers might be confused by the changes in the ordering of the plots from the geographic layout in F1/2 to the rest of the plots]. The blue band illustrates the credible interval for the smoothed contribution estimated for each state, and illustrates the heterogeneity across states in their contributions trends. These curves are overlaid with the meta-estimated common trend, shown with a red line, and the plots are organized according to the closeness of the [fit] (*need another word*) of the red curve to the blue band. Thus, increasingly divergent states are shown further down the display. We supplement these main results with smoothed estimates of the age-standardized mortality rates for each cause of death (**eFigures 1-12**). 
+**Figures 2 - 14** display trends in the contribution of each cause of death to the life expectancy gap for males and females, in years. The blue band illustrates the credible interval for the smoothed contribution estimated for each state, and illustrates the heterogeneity across states in their contribution trends. These curves are overlaid with the meta-estimated common trend, shown with a red line. We supplement these main results with smoothed estimates of the age-standardized mortality rates for each cause of death (**eFigures 1-12**). 
 
 **Cardiovascular disease**
 
@@ -349,84 +352,84 @@ ggplotly(LE_trend_plot_females)
 **Figure 3: Smoothed state-level trends in the contribution of cardiovascular disease to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cardiovascular.Male.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cardiovascular.Male.plot[[3]]) 
 ```
 
 **Figure 4: Smoothed state-level trends in the contribution of cardiovascular disease to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-2, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Cardiovascular.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Cardiovascular.Female.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cardiovascular.Female.plot[[3]]) 
 ```
 
 **Figure 5: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-3, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Cancers.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Cancers.Male.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cancers.Male.plot[[3]]) 
 ```
 
 **Figure 6: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-4, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Cancers.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Cancers.Female.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Cancers.Female.plot[[3]]) 
 ```
 
 **Figure 7: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-5, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(`Non-communicable.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`Non-communicable.Male.plot`[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`Non-communicable.Male.plot`[[3]]) 
 ```
 
 **Figure 8: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-6, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`Non-communicable.Female.plot`[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`Non-communicable.Female.plot`[[3]]) 
 ```
 
 **Figure 9: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-7, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Injuries.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Injuries.Male.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Injuries.Male.plot[[3]])
 ```
 
 **Figure 10: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-8, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Injuries.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Injuries.Female.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Injuries.Female.plot[[3]]) 
 ```
 
 **Figure 11: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-9, fig.width = 9, fig.height=9, echo = F}
 #ggplotly(Communicable.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Communicable.Male.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Communicable.Male.plot[[3]]) 
 ```
 
 **Figure 12: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-10, fig.width = 9, fig.height=9, echo = F}
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Communicable.Female.plot[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(Communicable.Female.plot[[3]]) 
 ```
 
 **Figure 13: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-11, fig.width = 9, fig.height=9, echo = F}
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`All other causes.Male.plot`[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`All other causes.Male.plot`[[3]])
 ```
 
 **Figure 14: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-12, fig.width = 9, fig.height=9, echo = F}
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`All other causes.Female.plot`[[3]]) %>% layout(xaxis = list(title = "Year"))
+ggplotly(`All other causes.Female.plot`[[3]])
 ```
 
 ###Discussion 
