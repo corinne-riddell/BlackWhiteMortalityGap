@@ -83,13 +83,13 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 
 ```{r load_data, echo=F}
 BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
-BlackWhite_results <- reorder.as.map(BlackWhite_results, "state")
+BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
 
 cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
 cod_decomp_results$COD_cont_yrs_width <- cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl
 cod_decomp_results$COD_cont_yrs_SE <- (cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl)/3.92
 
-cod_decomp_results <- reorder.as.map(cod_decomp_results, "state")
+cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
 ```
 
 ```{r life-expectancy-trends, echo=F}
@@ -97,7 +97,7 @@ LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == "Male"), 
   geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
   geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
   #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
-  facet_wrap(~ state.map.order, ncol = 11, drop = F) +
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
   theme_classic(base_size = 10) +
   theme(axis.text.x = element_blank(),
         strip.background=element_blank(),
@@ -110,7 +110,7 @@ LE_trend_plot_females <- ggplot(data = subset(BlackWhite_results, sex == "Female
   geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
   geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
   #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
-  facet_wrap(~ state.map.order, ncol = 11, drop = F) +
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
   theme_classic(base_size = 10) +
   theme(axis.text.x = element_blank(),
         strip.background=element_blank(),
@@ -126,7 +126,7 @@ ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = ye
   geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
   geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, group = sex, fill = Census_Division), alpha = 0.5) +
   geom_line(aes(group = sex, col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
-  facet_wrap(~ state.map.order, ncol = 11, drop = F) +
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
   theme_classic(base_size = 10) +
   theme(axis.text.x = element_blank(),
         strip.background=element_blank(),
@@ -225,7 +225,7 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
     geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl), fill = "#abd9e9") +
     #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display    
     #scale_fill_manual(values = c("#b2e2e2")) +
-    facet_wrap( ~ state.map.order, ncol = 11, drop = F) + 
+    facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
     geom_line(aes(y = fitted.FE), col = "#d7191c") +
     ggtitle(paste0("Estimated smoothed contribution vs. meta-estimated common trend in ", COD1, " in ", sex1)) +
     theme_classic(base_size = 10) + 
@@ -249,20 +249,19 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
   
   c <- ggplot(subset.data,
               aes(x = year, y = COD_cont_yrs_mean)) + 
-    # geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey") +
-    # geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey") +
-    # geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey") +
-    # geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey") +
+    geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey") +
+    geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey") +
+    geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey") +
+    geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey") +
     geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + #geom_hline(yintercept = 0, col = "black") +
-    
-    #geom_line(aes(col = "Observed")) + 
-    geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl), fill = "#abd9e9") +
+    geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
+    geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl), fill = "#abd9e9", alpha = 0.65) +
+    geom_line(col = "#08519c") + 
     #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display    
     #scale_fill_manual(values = c("#b2e2e2")) +
-    facet_wrap( ~ state.map.order, ncol = 11, drop = F) + 
-    geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
+    facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
     #geom_line(aes(y = fitted.RE), col = "#d7191c", lty = 3) +
-    ggtitle(paste0("Estimated smoothed contribution of", COD1, " disease to the black-white life expectancy gap (blue 95% credible interval) vs. the meta-estimated general pattern (red line) in ", sex1, " 1969-2013")) +
+    ggtitle(paste0("Estimated smoothed contribution of ", COD1, " disease to the black-white life expectancy gap (blue 95% credible interval) vs. the meta-estimated general pattern (red line) in ", sex1, " 1969-2013")) +
     theme_classic(base_size = 10) + 
     theme(axis.text.x = element_blank(),
           strip.background=element_blank(),
