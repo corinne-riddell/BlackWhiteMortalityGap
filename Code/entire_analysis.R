@@ -1,4 +1,4 @@
-entire.analysis <- function(state_i) {
+entire.analysis <- function(state_i, chosen.seed) {
   
   #load_libraries
   library(Rcpp)
@@ -20,22 +20,22 @@ entire.analysis <- function(state_i) {
   library(parallel)
   
   #load_user_written_functions
-  source("~/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
-  source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
+  source("~/repos/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
+  source('~/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
   
   #load_tidied_data
   dat.clean = read.csv('~/dat_clean.csv') 
   
   #load US standard population
-  std.pop <- read.csv("~/BlackWhiteMortalityGap/Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
+  std.pop <- read.csv("~/repos/BlackWhiteMortalityGap/Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
   
   #fit_models
   #run time: 32 mins
   #fit the bayesian models and put the 1000 posterior samples into a data frame
   for(sex_i in c("Male", "Female")){
     print(sex_i)
-    assign(paste0("r.White.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
-    assign(paste0("r.Black.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))
+    assign(paste0("r.White.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White", chosen.seed))
+    assign(paste0("r.Black.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black", chosen.seed))
   }
   
   r.White.Male$race <- "White"
@@ -154,7 +154,7 @@ entire.analysis <- function(state_i) {
   #   }
   # }
   
-  save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".Rdata")) 
+  save(r.All, file = paste0("~/BWresults_2017/r_All_", state_i, "_", chosen.seed, ".Rdata")) 
   levels.state.year.sex <- levels(droplevels(r.All$state.year.sex))
   rm(r.All)
   
@@ -498,12 +498,13 @@ entire.analysis <- function(state_i) {
   }
   
   #save_results
-  save(mortality.rates, mortality.rates.wide, le.calculations, cod.marginal.male, cod.marginal.female, file = paste0("~/BW_results/results_", state_i, ".Rdata")) 
-  write.csv(x = BlackWhite, file = paste0("~/BlackWhiteMortalityGap/Results/BlackWhite_", state_i, ".csv"))
-  write.csv(x = age.decomp.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/age_decomp_", state_i, ".csv"))
-  write.csv(x = cod.marginal.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/cod_marginal_", state_i, ".csv"))
-  write.csv(x = age.cod.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/age_cod_", state_i, ".csv"))
-  write.csv(x = mortality.rates.summary, file = paste0("~/BlackWhiteMortalityGap/Results/mortality_rates_", state_i, ".csv"))
-  write.csv(x = mortality.rates.difference, file = paste0("~/BlackWhiteMortalityGap/Results/mortality_rates_diff_", state_i, ".csv"))
-  write.csv(x = cod.marginal.summary, file = paste0("~/BlackWhiteMortalityGap/Results/cod_change_", state_i, ".csv"))
+  save(mortality.rates, mortality.rates.wide, le.calculations, cod.marginal.male, cod.marginal.female, 
+       file = paste0("~/BWresults_2017/results_", state_i, "_", chosen.seed, ".Rdata")) 
+  write.csv(x = BlackWhite, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/BlackWhite_", state_i, "_", chosen.seed,".csv"))
+  write.csv(x = age.decomp.estimates, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/age_decomp_", state_i, "_", chosen.seed,".csv"))
+  write.csv(x = cod.marginal.estimates, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/cod_marginal_", state_i, "_", chosen.seed,".csv"))
+  write.csv(x = age.cod.estimates, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/age_cod_", state_i, "_", chosen.seed, ".csv"))
+  write.csv(x = mortality.rates.summary, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/mortality_rates_", state_i, "_", chosen.seed, ".csv"))
+  write.csv(x = mortality.rates.difference, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_", state_i, "_", chosen.seed, ".csv"))
+  write.csv(x = cod.marginal.summary, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/cod_change_", state_i, "_", chosen.seed, ".csv"))
 }

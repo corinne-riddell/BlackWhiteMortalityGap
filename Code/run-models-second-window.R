@@ -1,5 +1,6 @@
 
-for(i in c(28:32)){
+for(i in c(1)){
+
   included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
                        "Delaware", "Florida", "Georgia", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
                        "Louisiana", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",   
@@ -8,8 +9,8 @@ for(i in c(28:32)){
                        "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
                        "West Virginia", "Wisconsin") 
   
-  source("~/BlackWhiteMortalityGap/Code/entire_analysis.R")
-  system.time(entire.analysis(state_i = included.states[i]))
+  source("~/repos/BlackWhiteMortalityGap/Code/entire_analysis.R")
+  system.time(entire.analysis(state_i = included.states[i], chosen.seed = 2))
   rm(list = ls(all = TRUE))
 }
 
