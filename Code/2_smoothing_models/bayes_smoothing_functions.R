@@ -41,7 +41,7 @@ jagsify_data = function(ds_sub) { #subset by COD, put in lists
   return(list(jagsified = ds_jagsified, sub = ds_sub))
 }
 
-jags_smoothing_model = function(ds_jagsified_bycod) { 
+jags_smoothing_model = function(ds_jagsified_bycod, chosen.seed) { 
   
   model = function() {  
     
@@ -74,6 +74,7 @@ jags_smoothing_model = function(ds_jagsified_bycod) {
   
   myinits = list(inits, inits) 
   
+  set.seed(chosen.seed)
   jags_model = jags(data = ds_jagsified_bycod, param = params, n.chains = nchains,
                     inits = myinits, n.iter = 10000, n.burnin = 2000, model.file = model) 
   
@@ -81,13 +82,13 @@ jags_smoothing_model = function(ds_jagsified_bycod) {
 }
 
 # Takes the jagsify_data output as a single parameter and runs the smoothing models
-run_smoothing_model = function(data) {
+run_smoothing_model = function(data, chosen.seed) {
   
   cods = unique(data$sub$COD)
   n.cods = length(cods)
   jags_model = list()  
   for(i in 1:n.cods) {
-    jags_model[[i]] = jags_smoothing_model(data$jagsified[[i]])
+    jags_model[[i]] = jags_smoothing_model(data$jagsified[[i]], chosen.seed)
   } 
   return(jags_model)
 }
@@ -128,15 +129,15 @@ clean_smoothing_results = function(data, jags_model) {
   return(merge(data$sub, smoothed.rates.1000, by = c("year.n", "age.n", "COD")))
 }
  
-run_analysis <- function(dataset, state1, sex1, race1) {
+run_analysis <- function(dataset, state1, sex1, race1, chosen.seed) {
   ds_sub = subset_data(ds = dataset, state = state1, sex = sex1, race = race1)
   data.jags = jagsify_data(ds_sub)
-  jags.model = run_smoothing_model(data.jags)  
+  jags.model = run_smoothing_model(data.jags, chosen.seed)  
   return(clean_smoothing_results(data = data.jags, jags_model = jags.model))
 }
 
-run_analysis_on_subset <- function(subsetted_data) {
+run_analysis_on_subset <- function(subsetted_data, chosen.seed) {
   data.jags = jagsify_data(subsetted_data)
-  jags.model = run_smoothing_model(data.jags)  
+  jags.model = run_smoothing_model(data.jags, chosen.seed)  
   return(clean_smoothing_results(data = data.jags, jags_model = jags.model))
 }
