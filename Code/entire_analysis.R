@@ -1,3 +1,5 @@
+
+
 entire.analysis <- function(state_i) {
   
   #load_libraries
@@ -19,12 +21,21 @@ entire.analysis <- function(state_i) {
   library(gridExtra)
   library(parallel)
   
+  # LOCAL -- edited -- 
   #load_user_written_functions
-  source("~/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
-  source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
+  source('/Users/kathryn/Documents/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R')
+  source('/Users/kathryn/Documents/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
   
-  #load_tidied_data
-  dat.clean = read.csv('~/dat_clean.csv') 
+  # SERVER 
+  #load_user_written_functions
+  #source("~/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
+  #source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
+  
+  #load_tidied_data -- for state_i --
+  
+  # state_i = 'Alabama'
+  name = paste0('/Users/kathryn/data_by_state/dat_clean_', state_i, '.csv')
+  dat.clean = read.csv(name) 
   
   #load US standard population
   std.pop <- read.csv("~/BlackWhiteMortalityGap/Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
@@ -32,18 +43,17 @@ entire.analysis <- function(state_i) {
   #fit_models
   #run time: 32 mins
   #fit the bayesian models and put the 1000 posterior samples into a data frame
-  for(sex_i in c("Male", "Female")){
-    print(sex_i)
-    assign(paste0("r.White.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
-    assign(paste0("r.Black.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))
-  }
   
-  r.White.Male$race <- "White"
-  r.White.Female$race <- "White"
-  r.Black.Male$race <- "Black"
-  r.Black.Female$race <- "Black"
-  r.All <- rbind(r.White.Male, r.White.Female, r.Black.Male, r.Black.Female)
-  rm(r.White.Male, r.White.Female, r.Black.Male, r.Black.Female)
+  n.cods = 6 
+  r_BM = run_analysis(dataset = dat.clean, state1=state_i, sex1='Male', race1 = 'Black', n.cods=n.cods) 
+  r_BF = run_analysis(dataset = dat.clean, state1=state_i, sex1='Female', race1 = 'Black', n.cods=n.cods)  
+  r_WM = run_analysis(dataset = dat.clean, state1=state_i, sex1='Male', race1 = 'White', n.cods=n.cods)  
+  r_WF = run_analysis(dataset = dat.clean, state1=state_i, sex1='Female', race1 = 'White', n.cods=n.cods)  
+  
+  
+  r.All = rbind(r_BM, r_BF, r_WM, r_WF)
+  rm(r_BM, r_BF, r_WM, r_WF) 
+  head(r.All) ; tail(r.All)
   
   #calculate age-standardized mortality rates (for each posterior sample)
   r.All <- merge(r.All, std.pop, by = "age_minbin")
