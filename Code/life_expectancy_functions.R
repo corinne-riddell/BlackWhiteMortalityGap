@@ -6,7 +6,7 @@
 
 life.table <- function(data, sortable.age, num.ages.in.group, death.counts, population.counts, ave.prop.le1.lived = 0.09, return = "appended"){
 
-  data <- dplyr::arrange_(data, sortable.age)
+  data <- dplyr::arrange_(data, sortable.age) 
   
   data["R_x"] <- data[death.counts]/data[population.counts] #mortality rates
   data["a_x"] <- 0.5 #average proportion of interval lived
@@ -78,6 +78,10 @@ le_age_decomp <- function(life.table1, name.lt1 = 1, life.table2, name.lt2 = 2, 
   return(decomp.table)
 }
 
+# cause_of_death_decomp
+# life.table1 = lt.black ; life.table2 = lt.white ; decomp.table = age_decomp
+# cod.table = ct.both ;   age.colname.cod.table = "age_minbin" ;  COD.colname.cod.table = "COD"
+# prop1.colname.cod.table = "prop.black" ; prop2.colname.cod.table = "prop.white"
 
 #cause of death table must be organized in a very specific way
 #it needs to be sorted by COD, and then by age (within COD)
@@ -100,7 +104,7 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
                                  "C_xi" = C_xi)
   
   COD.decomp.table["C_xi_proportion"] <- COD.decomp.table["C_xi"]/sum(COD.decomp.table["C_xi"])
-  COD.decomp.table["sign"] <- ifelse(COD.decomp.table["C_xi"] < 0, "negative", "positive")
+  COD.decomp.table["sign"] <- sign(COD.decomp.table["C_xi"])
   
   names(COD.decomp.table)[2] <- prop1.colname.cod.table
   names(COD.decomp.table)[3] <- prop2.colname.cod.table
@@ -108,8 +112,7 @@ cause_of_death_decomp <- function(life.table1, life.table2, decomp.table,
   return(COD.decomp.table)
   }
 
-#a general function that takes the decomposition table and adds variables to allow the user
-#to easily plot the decomposition in a pleasing manner
+
 make_pretty_decomp_plot <- function(decomp.table, strat.var.1, strat.var.2, strat.var.3, partition.bar.var, 
                                     sign.var, decomp.var, decomp.var.prop, type.of.data = NA) {
   if(is.na(type.of.data) == T | !(type.of.data %in% c("practice", "results"))){
@@ -207,26 +210,42 @@ contribution.to.gap.change <- function(type.of.decomp, decomp.table1, decomp.tab
 #input is specific to one state, sex, year, but across all age groups and both races
 #take this dataset and calculate LE for blacks and for whites and the gap (LE.gap = LE.white - LE.black)
 #returns these three values.
-life_expectancy_and_gap <- function(data) {
+
+# data = data_sub[data_sub$post.samp==1, ]
+# system.time(r <- life_expectancy_and_gap(data = data )) #0.057 seconds  - gives a warning. Did it do that before? 
+
+# data = data_sub[data_sub$post.samp==1, ]
+life_expectancy_and_gap <- function(data) {  
   library(sqldf)
+  data = data.frame(data)
   
+  # KATHRYN ADDED 
+  data$race = ifelse(data$race == 'B', 'Black', 'White')
+
   #aggegrate over COD within agegroup and race
   data.aggregated <- sqldf('select race, population, age_minbin, year, sex, state, sum(smoothed_deaths) as total_smoothed_deaths from data group by race, age_minbin')
-  
+
   data <- merge(data, data.aggregated[, c("race", "age_minbin", "total_smoothed_deaths")], by = c("race", "age_minbin"))
   
   #add the cod proportions of all deaths
   data$cod_prop_smoothed_deaths <- data$smoothed_deaths/data$total_smoothed_deaths
   
   #make the cod table to be used in the cod decomposition
-  ct.black <- data[data$race == "Black", c("age_minbin", "COD", "cod_prop_smoothed_deaths")]
-  names(ct.black)[3] <- "prop.black"
-  ct.white <- data[data$race == "White", c("age_minbin", "COD", "cod_prop_smoothed_deaths")]
-  names(ct.white)[3] <- "prop.white"
-  ct.both <- merge(ct.white, ct.black, by = c("age_minbin", "COD"))
-  #ct.both <- ct.both[order(ct.both$COD, ct.both$age_minbin), ]
-  ct.both <- dplyr::arrange_(ct.both, "COD", "age_minbin")
+  #KATHRYN MAKING MINOR CHANGES: USING DATA.TABLE INSTEAD, skipping the merge as both will always be in same order (come from same table)
   
+  ct.black <- data[data$race == "Black", c("age_minbin", "COD", "cod_prop_smoothed_deaths") ]
+
+  ct.black$prop.black = ct.black$cod_prop_smoothed_deaths
+  ct.black$cod_prop_smoothed_deaths = NULL 
+    
+  ct.white <- data[data$race == "White", c("age_minbin", "COD", "cod_prop_smoothed_deaths")] 
+  
+  ct.white$prop.white = ct.white$cod_prop_smoothed_deaths
+  ct.white$cod_prop_smoothed_deaths = NULL 
+  
+  ct.both <- merge(ct.white, ct.black, by = c("age_minbin", "COD"))
+  ct.both <- dplyr::arrange_(ct.both, "COD", "age_minbin")
+
   #add num.ages.in.group
   data.aggregated$nx = 1*(data.aggregated$age_minbin == 0) + 4*(data.aggregated$age_minbin == 1) + 5*(data.aggregated$age_minbin > 1)
   
@@ -253,7 +272,6 @@ life_expectancy_and_gap <- function(data) {
     cod_marginal <- NA
   }
   
-  
   #returns a list
   return(list(le.df = data.frame("LE_Black" = lt.black$e_x[1],
                                  "LE_White" = lt.white$e_x[1],
@@ -264,6 +282,8 @@ life_expectancy_and_gap <- function(data) {
   #                                "LE_White" = lt.white$e_x[1],
   #                                "LE_WBgap" = lt.white$e_x[1] - lt.black$e_x[1])))
 }
+
+
 
 make.cod.marginal <- function(cod.decomp) {
   return(cod.decomp %>% 

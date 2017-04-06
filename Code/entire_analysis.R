@@ -1,5 +1,17 @@
-entire.analysis <- function(state_i) {
-  
+
+#
+# entire_analysis.R: All functions wrapped together for full analysis by state  
+#               
+#
+# Written by Kathryn Morrison & Corinne Riddell, 2017 
+#
+#
+# kt.morrison@mail.mcgill.ca | corinne.riddell@mail.mcgill.ca 
+# Last revised: 06-04-2017 
+
+        # 0. --------------------- PREAMBLE --------------------- 
+prepare_environment = function(state_i)  {
+        
   #load_libraries
   library(Rcpp)
   library(dplyr)
@@ -18,150 +30,136 @@ entire.analysis <- function(state_i) {
   library(grid)
   library(gridExtra)
   library(parallel)
+  library(data.table)
+  library(dtplyr)
+  library(stringi)
+
+name <- paste0('~/BlackWhiteMortalityGap/Data/data_by_state/dat_clean_', state_i, '.csv')
+dat.clean <- read.csv(name) 
+return(dat.clean)
+}
   
-  #load_user_written_functions
-  source("~/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
-  source('~/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
+        # 1. --------------------- BAYES SMOOTHING --------------------- 
+
+bayes_smoothing_bystate = function(dat.clean, n.cods, seed) {        
   
-  #load_tidied_data
-  dat.clean = read.csv('~/dat_clean.csv') 
+  # previous time: 32 mins
+  r_BM <- run_analysis(dataset = dat.clean, sex = 'Male', race = 'Black', n.cods = n.cods, seed = seed) 
+  r_BF <- run_analysis(dataset = dat.clean, sex = 'Female', race = 'Black', n.cods = n.cods, seed = seed)   
+  r_WM <- run_analysis(dataset = dat.clean, sex = 'Male', race = 'White', n.cods = n.cods, seed = seed)   
+  r_WF <- run_analysis(dataset = dat.clean, sex = 'Female', race = 'White', n.cods = n.cods, seed = seed)  
   
-  #load US standard population
+  r.All = rbind(r_BM, r_BF, r_WM, r_WF)
+  rm(r_BM, r_BF, r_WM, r_WF) 
+  
+  return(r.All)
+}  
+  
+      # 3. --------------------- AGE-STANDARDIZED MORTALITY RATES --------------------- 
+age_stdz_mortality_bystate = function(dat.clean, state_i, r.All) {
+  
   std.pop <- read.csv("~/BlackWhiteMortalityGap/Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
+  dat.clean.stdmortrate <- data.table(RID = dat.clean$RID, age_minbin = dat.clean$age_minbin, key = 'RID') 
+  r.All.table = data.table(r.All, key='RID')
+  r.All2 = merge(r.All.table, dat.clean.stdmortrate, by = "RID", all.x=TRUE, all.y=FALSE)
   
-  #fit_models
-  #run time: 32 mins
-  #fit the bayesian models and put the 1000 posterior samples into a data frame
-  for(sex_i in c("Male", "Female")){
-    print(sex_i)
-    assign(paste0("r.White.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White"))
-    assign(paste0("r.Black.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black"))
-  }
+  r.All.merged = data.frame(merge(r.All2, std.pop, by='age_minbin')) 
   
-  r.White.Male$race <- "White"
-  r.White.Female$race <- "White"
-  r.Black.Male$race <- "Black"
-  r.Black.Female$race <- "Black"
-  r.All <- rbind(r.White.Male, r.White.Female, r.Black.Male, r.Black.Female)
-  rm(r.White.Male, r.White.Female, r.Black.Male, r.Black.Female)
-  
-  #calculate age-standardized mortality rates (for each posterior sample)
-  r.All <- merge(r.All, std.pop, by = "age_minbin")
-  
-  mortality.rates <- r.All %>% 
-    group_by(post.samp, state.n, year.n, race.n, sex.n, COD) %>% 
+  r.All.merged$race = substr(r.All.merged$RID, 8, 8)
+  r.All.merged$sex = substr(r.All.merged$RID, 7, 7)
+  r.All.merged$year = substr(r.All.merged$RID, 3,6)
+  r.All.merged$cod = substr(r.All.merged$RID, start = (nchar(as.character(r.All.merged$RID)) - 2), stop= nchar(as.character(r.All.merged$RID))) 
+   
+  # Merging based on data.table instead of data.frame is way faster; no idea why (yet)
+  # http://stackoverflow.com/questions/11146967/efficient-alternatives-to-merge-for-larger-data-frames-r
+   
+  mortality.rates <- r.All.merged %>%    #this isn't the fastest  ; approx 3 mins 
+    group_by(post.samp, year, race, sex, cod) %>%  
     arrange(age_minbin) %>%
     summarise(age.std.mortality.rate = sum(age.weight*smoothed_rate), #the sum is across age bins
-              rate.per.100k = age.std.mortality.rate*100000,
-              race = first(race),
-              sex = first(sex),
-              state = first(state),
-              year = first(year))
-  
-  mortality.rates <- add_Census_Division(mortality.rates, state)
-  mortality.rates <- add_Census_Region(mortality.rates, state)
-  mortality.rates$stabbrs <- state.abb[match(mortality.rates$state, state.name)]
-  
-  #calculate median, mean, and CI for age-standardized mortality rates (across samples) 
-  mortality.rates.summary <- mortality.rates %>% group_by(state.n, year.n, race.n, sex.n, COD) %>%
-    summarise(race = first(race),
-              sex = first(sex),
-              state = first(state),
-              year = first(year),
-              Census_Division = first(Census_Division),
-              Census_Region = first(Census_Region),
-              stabbrs = first(stabbrs),
-              rate.per.100k_lcl = quantile(rate.per.100k, 0.025), 
+              rate.per.100k = age.std.mortality.rate*100000)
+ 
+  mortality.rates.summary <- mortality.rates %>% group_by(year, race, sex, cod) %>%  
+    summarise(rate.per.100k_lcl = quantile(rate.per.100k, 0.025), 
               rate.per.100k_med = quantile(rate.per.100k, 0.5),
               rate.per.100k_ucl = quantile(rate.per.100k, 0.975),
               rate.per.100k_mean = mean(rate.per.100k))
   
-  #compute black-white difference in mortality
-  mortality.rates.white <- mortality.rates %>% filter(race == "White") %>% 
-    ungroup() %>%
-    select(sex, state, year, COD, post.samp, rate.per.100k) %>%
-    rename(rate.per.100k.white = rate.per.100k)
+  mortality.rates.white <- mortality.rates[mortality.rates$race=='W', c('post.samp', 'year', 'sex', 'cod', 'rate.per.100k') ] 
+  mortality.rates.black <- mortality.rates[mortality.rates$race=='B', c('post.samp', 'year', 'sex', 'cod', 'rate.per.100k') ] 
   
-  mortality.rates.black <- mortality.rates %>% filter(race == "Black") %>% 
-    rename(rate.per.100k.black = rate.per.100k)  
+  names(mortality.rates.white)[names(mortality.rates.white) == 'rate.per.100k'] <- 'rate.per.100k.white'
+  names(mortality.rates.black)[names(mortality.rates.black) == 'rate.per.100k'] <- 'rate.per.100k.black'
   
-  mortality.rates.wide <- merge(mortality.rates.black, mortality.rates.white, by = c("post.samp", "sex", "state", "year", "COD"))
-  
-  mortality.rates.wide <- mortality.rates.wide %>% mutate(rate.difference = rate.per.100k.black- rate.per.100k.white)
+  mortality.rates.wide <- merge(mortality.rates.black, mortality.rates.white, by = c('post.samp', 'sex', 'year', 'cod')) 
+    
+  mortality.rates.wide$rate.difference <- mortality.rates.wide$rate.per.100k.black - mortality.rates.wide$rate.per.100k.white
   
   mortality.rates.difference <- mortality.rates.wide %>% 
-    group_by(state.n, year.n, sex.n, COD) %>%
+    group_by(year, sex, cod) %>%
     summarise(rate.difference_LCL = quantile(rate.difference, 0.025), #summarize across posterior samples (post.samp)
               rate.difference_med = quantile(rate.difference, 0.5),
               rate.difference_UCL = quantile(rate.difference, 0.975),
-              rate.difference_mean = mean(rate.difference),
-              Census_Division = first(Census_Division),
-              Census_Region = first(Census_Region),
-              stabbrs = first(stabbrs),
-              sex = first(sex),
-              state = first(state),
-              year = first(year))
+              rate.difference_mean = mean(rate.difference))
+ 
+  # instead, save to csv: mort.rate.difference, mort.rate.summary 
+  write.csv(x = mortality.rates.summary, file = paste0("~/BlackWhiteMortalityGap/Results/mortality_rates_", state_i, ".csv"))
+  write.csv(x = mortality.rates.difference, file = paste0("~/BlackWhiteMortalityGap/Results/mortality_rates_diff_", state_i, ".csv"))
   
-  r.All$smoothed_deaths <- r.All$smoothed_rate*r.All$population
-  table(r.All$smoothed_deaths == 0) #check this -- if no deaths in an age-band (i.e., no death for any COD, then can't run the COD calculations for that stratum.)
+}
   
-  r.All <- r.All %>% group_by(post.samp, state, race.sex, year.n, age_minbin) %>%
-    arrange(post.samp, state, race.sex, year.n, age_minbin)
+      # 3. --------------------- RUN LIFE EXPECTANCY AND DECOMPOSITION CALCULATIONS --------------------- 
+  # (previous time: 2.25 hours) 
+    
+life_expectancy_and_decomp = function(dat.clean, state_i, r.All) { 
+
   
+  r.All$strata = paste0(state_i, '.', substr(r.All$RID, 3, 6), '.', ifelse(substr(r.All$RID, 7, 7) == 'M', 'Male', 'Female')) #substr(r.All$RID, 3, 7)
+  stratas = unique(r.All$strata)
   
-  #RUN LIFE EXPECTANCY AND DECOMPOSITION CALCULATIONS
-  #run time: 2.25 hours per state
-  #run the life table and decomposition calculations for each of the 1000 posterior samples
+  n.post.samp = length(unique(r.All$post.samp)) 
+  r.All$race = substr(r.All$RID, 8, 8)
+  r.All = merge(data.table(r.All, key='RID'), 
+                     data.table(dat.clean %>% select(age_minbin, year, sex, state, COD, RID), key='RID'), 
+                     by='RID') 
   
-  strata <- levels(droplevels(r.All$state.year.sex))
-  n <- length(strata)
-  
+  n <- length(stratas)
+
   le.calculations = vector(mode = "list", length = n)
-  
+
   counter = 1
-  
-  for(stratum_i in strata){
-    data_sub <- subset(r.All, state.year.sex == stratum_i)  
-    
+  for(stratum_i in stratas){ # stratum_i = stratas[1]
+    data_sub <- subset(r.All, strata == stratum_i) # data = data_sub[data_sub$post.samp==1, ]
+
     le.calculations[[counter]]$stratum.id <- stratum_i
-    le.calculations[[counter]]$calcs <- by(data = data_sub,
+    system.time(le.calculations[[counter]]$calcs <- by(data = data_sub,
                                            INDICES = list(data_sub$post.samp),
-                                           FUN = function(x) life_expectancy_and_gap(data = x))
-    
+                                           FUN = function(x) life_expectancy_and_gap(data = x)))
+
     counter <- counter + 1
-    
+
     print(stratum_i)
-    rm(data_sub)
   }
+   return(le.calculations)
+}
+
+# 3. --------------------- RUN LIFE EXPECTANCY AND DECOMPOSITION CALCULATIONS PT II --------------------- 
+ 
+#This still needs to be double checked to see if it works with the new code 
+#CR: This doesn't work as it stands - relies on "strata" variable that isn't defined. 
+life_expectancy_and_decomp_pt2 = function(le.calculations, r.All) {
   
+  strata = unique(r.All$strata)
   #calculation the contour decomposition
   years <- c(1969, 1983, 1993, 2013)
-  # counter <- 1
-  # for(sex_i in c("Male", "Female")){
-  #   for(i in 1:3){
-  #     years <- c(1969, 1983)
-  #     if(i == 2) years <- c(1983, 1993)
-  #     if(i == 3) years <- c(1993, 2013) 
-  # 
-  #     data_sub <- subset(r.All, sex == sex_i & year %in% years)
-  #     
-  #     contour.decomps[[counter]]$era.id <- paste0(state_i, ".", sex_i, "era", i)
-  #     contour.decomps[[counter]]$calcs <- by(data = data_sub, 
-  #                                            INDICES = list(data_sub$post.samp),
-  #                                            FUN = function(x) decomp_contour_cr(data = x))
-  #     
-  #     counter <- counter + 1
-  #   }
-  # }
   
-  save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".Rdata")) 
-  levels.state.year.sex <- levels(droplevels(r.All$state.year.sex))
-  rm(r.All)
+  #save(r.All, file = paste0("~/BW_results/r_All_", state_i, ".Rdata")) 
+  levels.state.year.sex <- strata
+  #rm(r.All)
   
   #calculate the difference in the COD contribution across the three eras.
-
-  indices.female <- intersect(union_all(grep("1969", strata), grep("1983", strata), grep("1993", strata), grep("2013", strata)), grep("Female", strata))
-  indices.male <- intersect(union_all(grep("1969", strata), grep("1983", strata), grep("1993", strata), grep("2013", strata)), grep("Male", strata))
+  indices.female <- intersect(union_all(grep("1969", strata), grep("1983", strata), grep("1993", strata), grep("2013", strata)), grep("F", strata))
+  indices.male <- intersect(union_all(grep("1969", strata), grep("1983", strata), grep("1993", strata), grep("2013", strata)), grep("M", strata))
   
   for(sex_i in c("Male", "Female")){
     indices <- indices.female
@@ -498,12 +496,12 @@ entire.analysis <- function(state_i) {
   }
   
   #save_results
-  save(mortality.rates, mortality.rates.wide, le.calculations, cod.marginal.male, cod.marginal.female, file = paste0("~/BW_results/results_", state_i, ".Rdata")) 
+  #save(mortality.rates, mortality.rates.wide, le.calculations, cod.marginal.male, cod.marginal.female, file = paste0("~/BW_results/results_", state_i, ".Rdata")) 
   write.csv(x = BlackWhite, file = paste0("~/BlackWhiteMortalityGap/Results/BlackWhite_", state_i, ".csv"))
   write.csv(x = age.decomp.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/age_decomp_", state_i, ".csv"))
   write.csv(x = cod.marginal.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/cod_marginal_", state_i, ".csv"))
   write.csv(x = age.cod.estimates, file = paste0("~/BlackWhiteMortalityGap/Results/age_cod_", state_i, ".csv"))
-  write.csv(x = mortality.rates.summary, file = paste0("~/BlackWhiteMortalityGap/Results/mortality_rates_", state_i, ".csv"))
-  write.csv(x = mortality.rates.difference, file = paste0("~/BlackWhiteMortalityGap/Results/mortality_rates_diff_", state_i, ".csv"))
   write.csv(x = cod.marginal.summary, file = paste0("~/BlackWhiteMortalityGap/Results/cod_change_", state_i, ".csv"))
 }
+
+
