@@ -27,8 +27,14 @@ mortality.rates.diff <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhi
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) %>% rename(Race = race)
 mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) 
 
-mortality.rates <- reorder.as.map(mortality.rates, "state")
-mortality.rates.diff <- reorder.as.map(mortality.rates.diff, "state")
+#DC state abbreviation wasn't accurately defined. Adding it here.
+levels(mortality.rates$stabbrs) <- c(levels(mortality.rates$stabbrs), "DC")
+levels(mortality.rates.diff$stabbrs) <- c(levels(mortality.rates.diff$stabbrs), "DC")
+mortality.rates$stabbrs[mortality.rates$state == "Washington DC"] <- "DC"
+mortality.rates.diff$stabbrs[mortality.rates.diff$state == "Washington DC"] <- "DC"
+
+mortality.rates <- reorder.as.map(mortality.rates, "state", "stabbrs")
+mortality.rates.diff <- reorder.as.map(mortality.rates.diff, "state", "stabbrs")
 ```
 
 ```{r plotting_fx, echo = F}
@@ -42,11 +48,10 @@ plot.mortality.trends <- function(dataset, dataset2, COD1, sex1) {
   a <- ggplot(subset.data, aes(x = year, y = rate.per.100k_mean)) + 
               geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, fill = Race), col = NA, alpha = 0.5) +
               geom_line(aes(col = Race)) +
-              facet_wrap( ~ state.map.order, ncol = 11, drop = F) +
+              facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
               xlab(" ") + 
               ylab("Age-standardized mortality rate (per 100,000)") + 
-              geom_hline(yintercept = 0, col = "black", lwd = 0.5) +
-              #scale_y_continuous(limits = lim.y) + 
+              geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
               ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex1, " for ", COD1)) +
               theme_classic(base_size = 10) +
               theme(axis.text.x = element_blank(),
@@ -56,15 +61,19 @@ plot.mortality.trends <- function(dataset, dataset2, COD1, sex1) {
              
 
   
-  b <- ggplot(subset.data2, aes(x = year, y = rate.difference_mean)) + 
+  b <- ggplot(subset.data2, aes(x = year, y = rate.difference_mean)) +
+           # geom_hline(aes(yintercept = -300), lwd = 0.5, col = "grey") +
+           # geom_hline(aes(yintercept = -200), lwd = 0.5, col = "grey") +
+           # geom_hline(aes(yintercept = -100), lwd = 0.5, col = "grey") +
+           # geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey") +
+           # geom_hline(aes(yintercept = 200), lwd = 0.5, col = "grey") +
+           # geom_hline(aes(yintercept = 100), lwd = 0.5, col = "grey") +
               geom_line() +
               geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), col = NA, alpha = 0.5) +
-              facet_wrap( ~ state.map.order, ncol = 11, drop = F) +
+              facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
               xlab(" ") + 
               ylab("Excess mortality among blacks (per 100,000)") +
-              #scale_y_continuous(breaks = 0) + #limits = lim.y2
-              geom_hline(yintercept = 0, col = "black", lwd = 0.5) +
-              #geom_vline(xintercept = 1969, col = "black", lwd = 0.5) +
+              geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
               ggtitle(paste0("Excess mortality among blacks (per 100,000) in ", sex1, " for ", COD1)) +
               theme_classic(base_size = 10) +
               theme(panel.grid.minor = element_blank(),
@@ -90,8 +99,11 @@ for(COD_i in levels(mortality.rates$COD)) {
 **eFigure 1**
 
 ```{r print-em, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cardiovascular.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+ggplotly(Cardiovascular.Male.mort.plot[[1]]) %>% 
+  layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+
+ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% 
+  layout(xaxis = list(title = "Year (1969-2013)"))
 
 #manipulating hover info:
 #p <- ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
@@ -102,8 +114,11 @@ ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Ye
 **eFigure 2**
 
 ```{r print-em-2, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cardiovascular.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Cardiovascular.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+ggplotly(Cardiovascular.Female.mort.plot[[1]]) %>% 
+  layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
+
+ggplotly(Cardiovascular.Female.mort.plot[[2]]) %>% 
+  layout(xaxis = list(title = "Year (1969-2013)"))
 ```
 
 **eFigure 3**
