@@ -65,8 +65,15 @@ dat$stabbrs[dat$state == "Washington DC"] <- "DC"
 
 dat$stabbrs <- factor(dat$stabbrs)
 
-dat$RID <- paste(dat$stabbrs, dat$year, substr(dat$sex, 1, 1),
-                 substr(dat$race, 1, 1), dat$age.n, dat$COD, sep = ".")
+dat$COD.abbrev <- "CAR"
+dat$COD.abbrev[dat$COD == "Cancers"] <- "CAN"
+dat$COD.abbrev[dat$COD == "Communicable"] <- "CDS"
+dat$COD.abbrev[dat$COD == "Non-communicable"] <- "NDS"
+dat$COD.abbrev[dat$COD == "Injuries"] <- "INJ"
+dat$COD.abbrev[dat$COD == "All other causes"] <- "AOC"
+
+dat$RID <- paste0(dat$stabbrs, dat$year, substr(dat$sex, 1, 1),
+                 substr(dat$race, 1, 1), dat$age.n, dat$COD.abbrev)
 ```
 
 ```{r remove_unknown_age_group}
