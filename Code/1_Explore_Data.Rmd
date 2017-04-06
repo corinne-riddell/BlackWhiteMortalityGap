@@ -206,7 +206,7 @@ included.states <- setdiff(unique(levels(dat.clean$state)), excluded.states)
 for(i in 1:length(included.states)) { 
   name = paste0('dat_clean_', included.states[i], '.csv')
   ds_temp = dat.clean[dat.clean$state == included.states[i], ]
-  write.csv(ds_temp, file=name)
+  write.csv(ds_temp, file = paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/", name))
 }
 rm(ds_temp)
 ```
