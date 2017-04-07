@@ -1,0 +1,97 @@
+---
+title: "meta-analysis"
+author: "Corinne Riddell"
+date: "4/7/2017"
+output: html_document
+---
+
+In this file, we perform the meta-regression. This regression brings together the mean estimates and their 95% CIs from the state-specific models to create a smoothed line of the general pattern (across the US) of the contribution of each cause of death to the black-white life expectancy gap, separately for males and females.
+
+In the paper, we perform a random-effects meta regression, that includes random intercepts for each state and plot the general pattern (when the RE estimate is equal to 0). In this file we also include code for the fixed effect estimation, for interested readers. This model directly estimates vertical shifts to the mean curve for each state, which may be of interest to some readers.
+
+```{r initialize, warning=F, message=F}
+library(lme4)
+library(splines)
+library(broom)
+library(tidyverse)
+
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+```{r load-data}
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+cod_decomp_results$COD_cont_yrs_width <- cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl
+cod_decomp_results$COD_cont_yrs_SE <- (cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl)/3.92
+```
+
+```{r FE_meta_regression_of_cod_contribution, echo = F}
+#Fixed effects meta analysis (fixed effects for state)
+
+#run 12 stratified models. bs() created the b-spline basis
+models <- cod_decomp_results %>% 
+  group_by(COD, sex) %>%
+  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state,
+              weights = 1/(COD_cont_yrs_SE)^2, 
+              data = .)) 
+
+#calculated predicted values for all models
+dfPred <- broom::augment(models, fit)
+dfPred$year <- 1969:2013
+
+#merge the predictions with original dataset
+cod_decomp_results <- merge(cod_decomp_results, 
+                            dfPred %>% select(COD, sex, year, state, .fitted, .resid), 
+                            by = c("COD", "sex", "state", "year")) %>%
+                      rename(fitted.FE = .fitted, resid.FE = .resid)
+  
+
+#calculated the sum of the residuals for each state-sex-cod strata (summed over years)
+cod_decomp_results <- cod_decomp_results %>% 
+  group_by(state, sex, COD) %>%
+  mutate(sum.residual = sum(abs(resid.FE)))
+```
+
+```{r RE_meta_regression_of_cod_contribution, echo = F}
+#Random effects meta analysis (fixed effects for state)
+
+#run 12 stratified models. bs() created the b-spline basis
+RE.models <- cod_decomp_results %>% 
+  group_by(COD, sex) %>%
+  do(fit = lmer(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + (1|state),
+              weights = 1/(COD_cont_yrs_SE)^2, 
+              data = .)) 
+
+#calculated predicted values for all models
+RE.pred <- broom::augment(RE.models, fit)
+RE.pred$year <- 1969:2013
+
+RE.models$RE.estimates <- purrr::map(RE.models$fit, ~ ranef(.x))
+
+sex <- rep(c(rep("Female", 40), rep("Male", 40)), 6)
+COD <- c(rep("All other causes", 80), rep("Cancers", 80), rep("Cardiovascular", 80),
+         rep("Communicable", 80), rep("Injuries", 80), rep("Non-communicable", 80))
+RE.estimates <- c(RE.models$RE.estimates[[1]]$state$`(Intercept)`, RE.models$RE.estimates[[2]]$state$`(Intercept)`, 
+                  RE.models$RE.estimates[[3]]$state$`(Intercept)`, RE.models$RE.estimates[[4]]$state$`(Intercept)`, 
+                  RE.models$RE.estimates[[5]]$state$`(Intercept)`, RE.models$RE.estimates[[6]]$state$`(Intercept)`, 
+                  RE.models$RE.estimates[[7]]$state$`(Intercept)`, RE.models$RE.estimates[[8]]$state$`(Intercept)`, 
+                  RE.models$RE.estimates[[9]]$state$`(Intercept)`, RE.models$RE.estimates[[10]]$state$`(Intercept)`,
+                  RE.models$RE.estimates[[11]]$state$`(Intercept)`, RE.models$RE.estimates[[12]]$state$`(Intercept)`)
+state <- rep(levels(cod_decomp_results$state), 12)
+REs <- data.frame(sex, COD, RE.estimates, state)
+
+cod_decomp_results <- merge(cod_decomp_results,
+                            REs, by = c("COD", "sex", "state"),
+                            all.x = T)
+
+#merge the predictions with original dataset
+cod_decomp_results <- merge(cod_decomp_results, 
+                             RE.pred %>% select(COD, sex, state, year, .fitted, .resid, .fixed), 
+                             by = c("COD", "sex", "state", "year"))
+
+cod_decomp_results <- cod_decomp_results %>% rename(fitted.RE = .fitted, fixed.from.RE = .fixed, resid.RE = .resid)
+```
+
+```{r save_data}
+write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+```
+

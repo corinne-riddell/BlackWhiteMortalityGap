@@ -19,13 +19,67 @@ Department of Epidemiology, Biostatistics and Occupational Health, McGill Univer
 
 Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
 
+```{r initialize, echo=FALSE, warning=F, message=F}
+library(plotly)
+library(viridis)
+library(scales)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(DT)
+library(splines)
+library(broom)
+library(tidyverse)
+
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+```{r load_data, echo=F}
+BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
+BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
+
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
+```
+
 ###Abstract
 
 **Background**
 
-**Methods and Findings**
+The overall difference in life expectancy between blacks and whites in the US has decreased over time. However, states have fared differently in their progress towards eliminating the black-white life expectancy gap. Our objective is to describe the pattern of contributions of each of six major causes of deaths to the sex-specific black-white life expectancy gaps over the last half-century, and identify divergent states.
 
-**Conclusions:**
+**Methods and Findings**
+```{r summarize_results_for_abstract, echo = F}
+cvd.male.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Male" & COD == "Cardiovascular" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+cvd.male.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Male" & COD == "Cardiovascular" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+cvd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+cvd.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+
+
+ncd.male.average <- cod_decomp_results %>% filter(sex == "Male" & COD == "Non-communicable" & state == "Alabama") %>% 
+  select(fixed.from.RE) %>% summarize(mean = round(mean(fixed.from.RE), 1))
+ncd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Non-communicable" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+ncd.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Non-communicable" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+
+can.male.max <- cod_decomp_results %>% filter(sex == "Male" & COD == "Cancers" & state == "Alabama") %>% 
+  select(fixed.from.RE) %>% summarize(max = round(max(fixed.from.RE), 1))
+can.female.average <- cod_decomp_results %>% filter(sex == "Female" & COD == "Cancers" & state == "Alabama") %>% 
+  select(fixed.from.RE) %>% summarize(mean = round(mean(fixed.from.RE), 1))
+
+inj.male.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Male" & COD == "Injuries" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+inj.male.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Male" & COD == "Injuries" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+inj.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+inj.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
+```
+
+Using data from the National Vital Statistics System, we extracted the number of deaths and population sizes for the years 1969 to 2013, by state, sex, race, 19 age groups, and six major causes of death. A Bayesian autoregressive model was used to estimate smoothed mortality rates over time and Arriaga’s method was used to decompose the difference in life expectancy. Random effects meta-analysis was used to generate an overall pattern across the states, and was contrasted with the state-specific patterns to identify divergent states.
+
+Although mortality from cardiovascular disease has decreased over time for both racial groups, its contribution to the life expectancy gap increased over time for men (from `r cvd.male.1969` to `r cvd.male.2013` years), but decreased for women (from `r cvd.female.1969` to `r cvd.female.2013` years). Non-communicable diseases’ contribution to the gap was stable over time for men (approximately `r ncd.male.average` years) but decreased for women (from `r ncd.female.1969` to `r ncd.female.2013` years), while cancers exhibited an inverted-U trend for men (peaking at `r can.male.max` years in 1988) and a stable contribution for women (approximately `r can.female.average` years). Both men and women exhibited a decreased contribution for injuries (men: `r inj.male.1969` to `r inj.male.2013` years, women: `r inj.female.1969` to `r inj.female.2013` years), with the contribution becoming negative for women. Several states did not follow these general trends.
+
+**Conclusions**
+
+The United States has shown improvement in life expectancy for both blacks and whites since 1969. For males, much of this improvement was due to narrowing differences in injury-related mortality, but these contributions were rivalled by an increasing gap in CVD-related mortality, and point to the cause-specific interventions necessary to decrease the black-white gap further. In women, a crossover in injury-related mortality led to a narrower gap that was realized partially by increasing injury-related mortality among whites. This work emphasizes the importance of understanding how the direction of changes in mortality by race results in changes to the life expectancy gap. 
+
 
 ###Introduction
 
@@ -66,32 +120,6 @@ To describe the general pattern in these trend lines we used random effects meta
 *Need to add information on the trends in mortality* -- where?
 
 ###Results
-```{r initialize, echo=FALSE, warning=F, message=F}
-library(plotly)
-library(viridis)
-library(scales)
-library(dplyr)
-library(purrr)
-library(stringr)
-library(DT)
-library(splines)
-library(broom)
-library(tidyverse)
-
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
-```
-
-```{r load_data, echo=F}
-BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
-BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
-
-cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
-cod_decomp_results$COD_cont_yrs_width <- cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl
-cod_decomp_results$COD_cont_yrs_SE <- (cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl)/3.92
-
-cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
-```
-
 ```{r life-expectancy-trends, echo=F}
 LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == "Male"), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
   geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
@@ -136,83 +164,6 @@ ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = ye
   xlab("Year (1969-2013)"))
 ```
 
-
-```{r meta_regression_of_cod_contribution, echo = F}
-#model option 1: FE analysis
-
-#run 12 stratified models. bs() created the b-spline basis
-models <- cod_decomp_results %>% 
-  group_by(COD, sex) %>%
-  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state,
-              weights = 1/(COD_cont_yrs_SE)^2, 
-              data = .)) 
-
-#calculated predicted values for all models
-dfPred <- broom::augment(models, fit)
-dfPred$year <- 1969:2013
-
-#merge the predictions with original dataset
-cod_decomp_results <- merge(cod_decomp_results, 
-                            dfPred %>% select(COD, sex, year, state, .fitted, .resid), 
-                            by = c("COD", "sex", "state", "year")) %>%
-                      rename(fitted.FE = .fitted, resid.FE = .resid)
-  
-
-#calculated the sum of the residuals for each state-sex-cod strata (summed over years)
-cod_decomp_results <- cod_decomp_results %>% 
-  group_by(state, sex, COD) %>%
-  mutate(sum.residual = sum(abs(resid.FE)))
-```
-
-```{r meta_RE_analysis, echo = F}
-library(lme4)
-
-#run 12 stratified models. bs() created the b-spline basis
-RE.models <- cod_decomp_results %>% 
-  group_by(COD, sex) %>%
-  do(fit = lmer(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + (1|state),
-              weights = 1/(COD_cont_yrs_SE)^2, 
-              data = .)) 
-
-#calculated predicted values for all models
-RE.pred <- broom::augment(RE.models, fit)
-RE.pred$year <- 1969:2013
-
-RE.models$RE.estimates <- purrr::map(RE.models$fit, ~ ranef(.x))
-
-sex <- rep(c(rep("Female", 40), rep("Male", 40)), 6)
-COD <- c(rep("All other causes", 80), rep("Cancers", 80), rep("Cardiovascular", 80),
-         rep("Communicable", 80), rep("Injuries", 80), rep("Non-communicable", 80))
-RE.estimates <- c(RE.models$RE.estimates[[1]]$state$`(Intercept)`, RE.models$RE.estimates[[2]]$state$`(Intercept)`, 
-                  RE.models$RE.estimates[[3]]$state$`(Intercept)`, RE.models$RE.estimates[[4]]$state$`(Intercept)`, 
-                  RE.models$RE.estimates[[5]]$state$`(Intercept)`, RE.models$RE.estimates[[6]]$state$`(Intercept)`, 
-                  RE.models$RE.estimates[[7]]$state$`(Intercept)`, RE.models$RE.estimates[[8]]$state$`(Intercept)`, 
-                  RE.models$RE.estimates[[9]]$state$`(Intercept)`, RE.models$RE.estimates[[10]]$state$`(Intercept)`,
-                  RE.models$RE.estimates[[11]]$state$`(Intercept)`, RE.models$RE.estimates[[12]]$state$`(Intercept)`)
-state <- rep(levels(cod_decomp_results$state), 12)
-REs <- data.frame(sex, COD, RE.estimates, state)
-
-cod_decomp_results <- merge(cod_decomp_results,
-                            REs, by = c("COD", "sex", "state"),
-                            all.x = T)
-
-#merge the predictions with original dataset
-cod_decomp_results <- merge(cod_decomp_results, 
-                             RE.pred %>% select(COD, sex, state, year, 
-                                                bs.year..degree...1..df...5.,
-                                                .fitted, .resid, .fixed, .mu), 
-                             by = c("COD", "sex", "state", "year"))
-
-cod_decomp_results <- cod_decomp_results %>% rename(fitted.RE = .fitted, fixed.from.RE = .fixed)
-
-# test1 <- lmer(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + (1|state), weights = 1/(COD_cont_yrs_SE)^2, data = subset(cod_decomp_results, COD == "Cardiovascular" & sex == "Male"))
-# 
-# pred.general.trend <- predict(test1, re.form = NA)
-# pred.with.REs <- predict(test1)
-# 
-# plot(y=pred.general.trend[1:45], x=1969:2013)
-```
-
 ```{r plotting_resid_fx, echo = F}
 plot.resid.trends <- function(dataset, COD1, sex1) {
   subset.data <- subset(dataset, COD == COD1 & sex == sex1)
@@ -249,10 +200,6 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
   
   c <- ggplot(subset.data,
               aes(x = year, y = COD_cont_yrs_mean)) + 
-    geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey") +
-    geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey") +
-    geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey") +
-    geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey") +
     geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + #geom_hline(yintercept = 0, col = "black") +
     geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
     geom_ribbon(aes(ymin = COD_cont_yrs_lcl, ymax = COD_cont_yrs_ucl), fill = "#abd9e9", alpha = 0.65) +
@@ -308,7 +255,7 @@ refine.patterns <- function(plot) {
 
 **Figures 1 and 2** display trends in the life expectancy gap for males and females, respectively. For both sexes, the life expectancy gap has decreased since 1969, although several states exhibited a period of increasing inequality that peaked in the early 1990s, especially among males. *Don't know whether you want to note it here or not, but I find it is interesting to see that the gap is now lower in many US southern (or southeastern) states than in the Midwest, suggesting that progress has actually been somewhat greater in the South than elsewhere (particularly the upper Midwest and especially for women). I think this is interesting and somewhat counter to the narrative that health indicators are worse in the South. I also wonder how this might relate to the Murray/IHME work on US counties with "declining" life expectancy among white women.* 
 
-**Figures 2 - 14** display trends in the contribution of each cause of death to the life expectancy gap for males and females, in years. The blue band illustrates the credible interval for the smoothed contribution estimated for each state, and illustrates the heterogeneity across states in their contribution trends. These curves are overlaid with the meta-estimated common trend, shown with a red line. We supplement these main results with smoothed estimates of the age-standardized mortality rates for each cause of death (**eFigures 1-12**). 
+**Figures 2 - 14** display trends in the contribution of each cause of death to the life expectancy gap for males and females, in years. The blue line illustrates the mean of the smoothed contribution estimated for each state-year, and illustrates the heterogeneity across states in their contribution trends. These lines are overlaid with the meta-estimated common trend, shown with a red line. We supplement these main results with smoothed estimates of the age-standardized mortality rates for each cause of death (**eFigures 1-12**). 
 
 **Cardiovascular disease**
 
@@ -339,54 +286,100 @@ Communicable disease is the least most common cause of death, although the 1990s
 **Figure 1: State-level trends in the difference in life expectancy between blacks and whites in males, United States, 1969-2013**
 
 ```{r plot_LE_trends_males, echo=F, fig.height=9, fig.width=11}
-ggplotly(LE_trend_plot_males)
+LE_trend_plot_males +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5)
+
 ```
 
 **Figure 2: State-level trends in the difference in life expectancy between blacks and whites in females, United States, 1969-2013**
 
 ```{r plot_LE_trends_females, echo=F, fig.height=9, fig.width=11}
-ggplotly(LE_trend_plot_females)
+LE_trend_plot_females +
+  geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5)
+
 ```
 
 **Figure 3: Smoothed state-level trends in the contribution of cardiovascular disease to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cardiovascular.Male.plot[[3]]) 
+Cardiovascular.Male.plot[[3]] +
+           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5)
+
 ```
 
 **Figure 4: Smoothed state-level trends in the contribution of cardiovascular disease to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-2, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Cardiovascular.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Cardiovascular.Female.plot[[3]]) 
+Cardiovascular.Female.plot[[3]]  +
+           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5)
+
 ```
 
 **Figure 5: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-3, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Cancers.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Cancers.Male.plot[[3]]) 
+Cancers.Male.plot[[3]] +
+           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) 
+
 ```
 
 **Figure 6: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-4, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(Cancers.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(Cancers.Female.plot[[3]]) 
+Cancers.Female.plot[[3]] +
+           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
+
 ```
 
 **Figure 7: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the overall pattern in males**
 
 ```{r print-plot-5, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(`Non-communicable.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`Non-communicable.Male.plot`[[3]]) 
+`Non-communicable.Male.plot`[[3]] +
+           geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5)
+
 ```
 
 **Figure 8: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-6, fig.width = 9, fig.height = 9, echo = F}
 #ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-ggplotly(`Non-communicable.Female.plot`[[3]]) 
+`Non-communicable.Female.plot`[[3]] +
+           geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5)
+
 ```
 
 **Figure 9: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the overall pattern in males**
