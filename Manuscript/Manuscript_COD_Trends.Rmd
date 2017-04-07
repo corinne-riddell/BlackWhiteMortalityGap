@@ -55,7 +55,6 @@ cvd.male.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Male" & CO
 cvd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
 cvd.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
 
-
 ncd.male.average <- cod_decomp_results %>% filter(sex == "Male" & COD == "Non-communicable" & state == "Alabama") %>% 
   select(fixed.from.RE) %>% summarize(mean = round(mean(fixed.from.RE), 1))
 ncd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Non-communicable" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
@@ -281,6 +280,10 @@ Injury is one of the least common causes of death. Over time, injury-related mor
 
 Communicable disease is the least most common cause of death, although the 1990s exhibited an enormous increase in mortality related to communiable disease at the height of the HIV/AIDS epidemic before anti-retroviral therapy was available. This spike was greater among males, especially blacks, and within states with larger urban centers. Thus, the contribution of communicable disease to the life expectancy gap exhibits a peak in the mid 1990s, with states diverging from this general pattern according to the intensity of their local epidemics. 
 
+**All other causes**
+
+Mortality from all other causes generally decreased earlier in the time period, especially among blacks. White men and women have shown increasing mortality rates from all other causes since the 1980s, along with black women, while black men have continued to experience decreasing rates within several states. As such, the contribution of all other causes to the life expectancy gap has generally decreased over time, and reached equality in New York, Massachusettes, and Rhode Island for both genders (**Figures 13 and 14**). The most disparate states include Pennsylvania and DC, with much larger contributions estimated for all other causes in the earlier years within Pennsylvania and in the later years within DC. 
+
 ****
 
 **Figure 1: State-level trends in the difference in life expectancy between blacks and whites in males, United States, 1969-2013**
@@ -417,7 +420,7 @@ ggplotly(Communicable.Female.plot[[3]])
 ggplotly(`All other causes.Male.plot`[[3]])
 ```
 
-**Figure 14: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in males**
+**Figure 14: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in females**
 
 ```{r print-plot-12, fig.width = 9, fig.height=9, echo = F}
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
