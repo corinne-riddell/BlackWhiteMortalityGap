@@ -19,7 +19,7 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 ```
 
 ```{r load-data}
-cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
 cod_decomp_results$COD_cont_yrs_width <- cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl
 cod_decomp_results$COD_cont_yrs_SE <- (cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl)/3.92
 ```
@@ -92,6 +92,6 @@ cod_decomp_results <- cod_decomp_results %>% rename(fitted.RE = .fitted, fixed.f
 ```
 
 ```{r save_data}
-write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
+write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
 ```
 
