@@ -25,31 +25,31 @@ included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado",
 completed.states <- included.states
 ```
 
-```{r combine_results}
-age_cod_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_", completed.states[1], ".csv"))
-age_decomp_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_", completed.states[1], ".csv"))
-BlackWhite_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_", completed.states[1], ".csv"))
-cod_decomp_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_", completed.states[1], ".csv"))
-cod_change_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_change_", completed.states[1], ".csv"))
+```{r combine_results_seed123}
+age_cod_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_", completed.states[1], "_123.csv"))
+age_decomp_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_decomp_", completed.states[1], "_123.csv"))
+BlackWhite_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_", completed.states[1], "_123.csv"))
+cod_decomp_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_marginal_", completed.states[1], "_123.csv"))
+cod_change_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_change_", completed.states[1], "_123.csv"))
 
-mortality.rates <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_", completed.states[1], ".csv"))
-mortality.rates.diff <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_", completed.states[1], ".csv"))
+mortality.rates <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_", completed.states[1], "_123.csv"))
+mortality.rates.diff <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_", completed.states[1], "_123.csv"))
 
 for(state_i in 2:length(completed.states)){
   
-    age_cod_results <- rbind(age_cod_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_", completed.states[state_i], ".csv")))
+    age_cod_results <- rbind(age_cod_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_", completed.states[state_i], "_123.csv")))
   
-    age_decomp_results <- rbind(age_decomp_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_", completed.states[state_i], ".csv")))
+    age_decomp_results <- rbind(age_decomp_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_decomp_", completed.states[state_i], "_123.csv")))
 
-    BlackWhite_results <- rbind(BlackWhite_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_", completed.states[state_i], ".csv")))
+    BlackWhite_results <- rbind(BlackWhite_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_", completed.states[state_i], "_123.csv")))
   
-    cod_decomp_results <- rbind(cod_decomp_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_marginal_", completed.states[state_i], ".csv")))    
+    cod_decomp_results <- rbind(cod_decomp_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_marginal_", completed.states[state_i], "_123.csv")))    
 
-    cod_change_results <- rbind(cod_change_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_change_", completed.states[state_i], ".csv")))    
+    cod_change_results <- rbind(cod_change_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_change_", completed.states[state_i], "_123.csv")))    
     
-  mortality.rates <- rbind(mortality.rates, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_", completed.states[state_i], ".csv")))
+  mortality.rates <- rbind(mortality.rates, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_", completed.states[state_i], "_123.csv")))
   
-    mortality.rates.diff <- rbind(mortality.rates.diff, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_", completed.states[state_i], ".csv")))
+    mortality.rates.diff <- rbind(mortality.rates.diff, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_", completed.states[state_i], "_123.csv")))
 }
 
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
@@ -144,14 +144,14 @@ age_cod_results_male <- age_cod_results %>% filter(sex == "Male")
 ```
 
 ```{r save_combined_datasets, echo = F}
-write.csv(age_cod_results_female, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results_female.csv")
-write.csv(age_cod_results_male, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results_male.csv")
-write.csv(age_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
-write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
-write.csv(BlackWhite_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
-write.csv(cod_change_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_change_results.csv")
+write.csv(age_cod_results_female, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
+write.csv(age_cod_results_male, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
+write.csv(age_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_decomp_results.csv")
+write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+write.csv(BlackWhite_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
+write.csv(cod_change_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_change_results.csv")
 
-write.csv(mortality.rates, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_combined.csv")
-write.csv(mortality.rates.diff, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_combined.csv")
+write.csv(mortality.rates, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_combined.csv")
+write.csv(mortality.rates.diff, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_combined.csv")
 ```
 
