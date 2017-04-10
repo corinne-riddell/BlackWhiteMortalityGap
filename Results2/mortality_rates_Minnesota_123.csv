@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",23,1,0,0,"All other causes","White","Male","Minnesota",1969,"West North Central","Midwest","MN",119.888827865267,124.015523870723,128.481990223287,123.982151346806
+"2",23,1,0,0,"Cancers","White","Male","Minnesota",1969,"West North Central","Midwest","MN",220.234537177956,225.57343282099,231.59972407681,225.654253277559
+"3",23,1,0,0,"Cardiovascular","White","Male","Minnesota",1969,"West North Central","Midwest","MN",805.561338177422,820.23131433588,834.479703787643,820.201753431645
+"4",23,1,0,0,"Communicable","White","Male","Minnesota",1969,"West North Central","Midwest","MN",58.8779507278022,63.5368682880147,68.2450905832466,63.5271883886686
+"5",23,1,0,0,"Injuries","White","Male","Minnesota",1969,"West North Central","Midwest","MN",104.924677891372,108.57523819475,112.426803933961,108.596228689131
+"6",23,1,0,0,"Non-communicable","White","Male","Minnesota",1969,"West North Central","Midwest","MN",77.3331951676888,80.4742679065659,83.816497709187,80.5306740646284
+"7",23,1,0,1,"All other causes","White","Female","Minnesota",1969,"West North Central","Midwest","MN",82.8024468973201,85.8587010897792,89.1185155122001,85.876330878065
+"8",23,1,0,1,"Cancers","White","Female","Minnesota",1969,"West North Central","Midwest","MN",153.146828267751,156.962350722815,160.793496102436,156.948425188437
+"9",23,1,0,1,"Cardiovascular","White","Female","Minnesota",1969,"West North Central","Midwest","MN",499.17575215635,510.462803455424,521.201322471614,510.310717540208
+"10",23,1,0,1,"Communicable","White","Female","Minnesota",1969,"West North Central","Midwest","MN",33.8929809468995,36.3628825519513,38.9489143807036,36.3696395588437
+"11",23,1,0,1,"Injuries","White","Female","Minnesota",1969,"West North Central","Midwest","MN",41.9623097551179,44.040851245065,46.3100550326265,44.0328812490335
+"12",23,1,0,1,"Non-communicable","White","Female","Minnesota",1969,"West North Central","Midwest","MN",38.2766846504013,40.5305309994356,42.7024349367597,40.5360661291669
+"13",23,1,1,0,"All other causes","Black","Male","Minnesota",1969,"West North Central","Midwest","MN",209.060247848964,261.406522002809,328.358898825276,263.948613693756
+"14",23,1,1,0,"Cancers","Black","Male","Minnesota",1969,"West North Central","Midwest","MN",255.877959662804,318.518023984981,396.716186916331,321.178077318363
+"15",23,1,1,0,"Cardiovascular","Black","Male","Minnesota",1969,"West North Central","Midwest","MN",464.869450951268,574.238436441349,692.791937269147,575.175198334029
+"16",23,1,1,0,"Communicable","Black","Male","Minnesota",1969,"West North Central","Midwest","MN",58.3617790423485,79.739480262287,112.994335232998,81.1304293042894
+"17",23,1,1,0,"Injuries","Black","Male","Minnesota",1969,"West North Central","Midwest","MN",129.26412386817,154.682803363285,186.286504901131,155.755486011084
+"18",23,1,1,0,"Non-communicable","Black","Male","Minnesota",1969,"West North Central","Midwest","MN",84.4013152754342,106.26197411865,131.44701290678,105.876083591815
+"19",23,1,1,1,"All other causes","Black","Female","Minnesota",1969,"West North Central","Midwest","MN",116.348305717982,143.199521276395,180.666290252624,144.747370947957
+"20",23,1,1,1,"Cancers","Black","Female","Minnesota",1969,"West North Central","Midwest","MN",173.807397268479,208.917115462052,262.784544174602,211.044782193607
+"21",23,1,1,1,"Cardiovascular","Black","Female","Minnesota",1969,"West North Central","Midwest","MN",367.029559397609,455.589725013858,571.71705211165,461.347156779813
+"22",23,1,1,1,"Communicable","Black","Female","Minnesota",1969,"West North Central","Midwest","MN",42.9241362234351,61.2798842519114,89.0947192633584,62.5275359452022
+"23",23,1,1,1,"Injuries","Black","Female","Minnesota",1969,"West North Central","Midwest","MN",43.6906072875179,52.8065347011155,67.4011184224068,53.7411917385811
+"24",23,1,1,1,"Non-communicable","Black","Female","Minnesota",1969,"West North Central","Midwest","MN",63.2490396946586,83.9212007261971,114.385446413697,85.2489575971632
+"25",23,2,0,0,"All other causes","White","Male","Minnesota",1970,"West North Central","Midwest","MN",119.74751664403,123.388018103882,127.267427518612,123.461577552614
+"26",23,2,0,0,"Cancers","White","Male","Minnesota",1970,"West North Central","Midwest","MN",222.64021317199,227.561711665397,232.86127785722,227.617594273615
+"27",23,2,0,0,"Cardiovascular","White","Male","Minnesota",1970,"West North Central","Midwest","MN",791.639896632076,805.957242429932,820.305418690187,806.322641490314
+"28",23,2,0,0,"Communicable","White","Male","Minnesota",1970,"West North Central","Midwest","MN",55.7495789181168,59.5380425343704,63.6795570467614,59.6036786156825
+"29",23,2,0,0,"Injuries","White","Male","Minnesota",1970,"West North Central","Midwest","MN",103.895069185559,107.256923470515,110.485328034205,107.241693157781
+"30",23,2,0,0,"Non-communicable","White","Male","Minnesota",1970,"West North Central","Midwest","MN",77.2611954317071,80.0945780445321,83.195756575201,80.1755983512673
+"31",23,2,0,1,"All other causes","White","Female","Minnesota",1970,"West North Central","Midwest","MN",83.1228418430045,85.8730244174735,88.7804642723403,85.9249965871745
+"32",23,2,0,1,"Cancers","White","Female","Minnesota",1970,"West North Central","Midwest","MN",153.818658471571,157.062403775022,160.872620344193,157.099394268628
+"33",23,2,0,1,"Cardiovascular","White","Female","Minnesota",1970,"West North Central","Midwest","MN",488.162031859513,497.370196974425,506.958673252207,497.53744760274
+"34",23,2,0,1,"Communicable","White","Female","Minnesota",1970,"West North Central","Midwest","MN",33.8613370219463,35.8109666031864,38.1495595458663,35.8606995795173
+"35",23,2,0,1,"Injuries","White","Female","Minnesota",1970,"West North Central","Midwest","MN",41.2637238344629,43.0096374374971,44.8599123376966,43.0342299523523
+"36",23,2,0,1,"Non-communicable","White","Female","Minnesota",1970,"West North Central","Midwest","MN",37.9451717386349,39.7906402573961,41.7261967395686,39.7980700681867
+"37",23,2,1,0,"All other causes","Black","Male","Minnesota",1970,"West North Central","Midwest","MN",211.240653808143,261.945324610417,323.519412437369,263.575390684542
+"38",23,2,1,0,"Cancers","Black","Male","Minnesota",1970,"West North Central","Midwest","MN",255.527468024183,315.353639022686,389.588353770364,318.466286832091
+"39",23,2,1,0,"Cardiovascular","Black","Male","Minnesota",1970,"West North Central","Midwest","MN",475.716242955852,575.251414377224,682.97832774033,575.479461440365
+"40",23,2,1,0,"Communicable","Black","Male","Minnesota",1970,"West North Central","Midwest","MN",56.8010157803239,77.6591894908983,107.910874519599,78.5047273137518
+"41",23,2,1,0,"Injuries","Black","Male","Minnesota",1970,"West North Central","Midwest","MN",129.302965143168,153.375785361657,182.805492327025,153.963107508285
+"42",23,2,1,0,"Non-communicable","Black","Male","Minnesota",1970,"West North Central","Midwest","MN",84.1145144307566,105.3444304116,126.725890567406,105.185326182591
+"43",23,2,1,1,"All other causes","Black","Female","Minnesota",1970,"West North Central","Midwest","MN",116.832194616599,142.900519673331,176.863998266287,144.151038989995
+"44",23,2,1,1,"Cancers","Black","Female","Minnesota",1970,"West North Central","Midwest","MN",174.684244772595,207.409685288553,252.752652930492,209.308498074502
+"45",23,2,1,1,"Cardiovascular","Black","Female","Minnesota",1970,"West North Central","Midwest","MN",372.208227996162,457.786494856165,558.47861337295,459.329070419978
+"46",23,2,1,1,"Communicable","Black","Female","Minnesota",1970,"West North Central","Midwest","MN",42.7051263717976,60.1954550321662,85.4205403656396,61.2120450809177
+"47",23,2,1,1,"Injuries","Black","Female","Minnesota",1970,"West North Central","Midwest","MN",43.2913033871303,52.393642555859,66.9157319509189,53.3424065798403
+"48",23,2,1,1,"Non-communicable","Black","Female","Minnesota",1970,"West North Central","Midwest","MN",63.0698586739022,83.4136422451132,110.872237275929,84.4591687836925
+"49",23,3,0,0,"All other causes","White","Male","Minnesota",1971,"West North Central","Midwest","MN",116.242478482071,119.661544401263,123.136880079733,119.663119590406
+"50",23,3,0,0,"Cancers","White","Male","Minnesota",1971,"West North Central","Midwest","MN",222.179777500915,227.34419249155,232.380999183802,227.439268000909
+"51",23,3,0,0,"Cardiovascular","White","Male","Minnesota",1971,"West North Central","Midwest","MN",787.951506974992,801.775499300237,815.38677784487,801.770517250621
+"52",23,3,0,0,"Communicable","White","Male","Minnesota",1971,"West North Central","Midwest","MN",51.9999185163933,55.3841823090733,58.9684999903413,55.4332957666829
+"53",23,3,0,0,"Injuries","White","Male","Minnesota",1971,"West North Central","Midwest","MN",103.983784832488,107.209887074738,110.480211077747,107.217566296679
+"54",23,3,0,0,"Non-communicable","White","Male","Minnesota",1971,"West North Central","Midwest","MN",78.9898348445561,81.8618437148915,84.5744414727651,81.861782059908
+"55",23,3,0,1,"All other causes","White","Female","Minnesota",1971,"West North Central","Midwest","MN",81.6882909369044,84.2689521448941,86.9779033679562,84.3025726099548
+"56",23,3,0,1,"Cancers","White","Female","Minnesota",1971,"West North Central","Midwest","MN",153.782974457781,157.359860973574,160.789572251267,157.307817878099
+"57",23,3,0,1,"Cardiovascular","White","Female","Minnesota",1971,"West North Central","Midwest","MN",477.039720135604,485.86270077981,495.149735245929,486.035802874571
+"58",23,3,0,1,"Communicable","White","Female","Minnesota",1971,"West North Central","Midwest","MN",32.0191647840595,34.0744980073722,36.2226799608912,34.1044941213728
+"59",23,3,0,1,"Injuries","White","Female","Minnesota",1971,"West North Central","Midwest","MN",40.6642936844177,42.1882793793631,43.8653561755035,42.1919360801658
+"60",23,3,0,1,"Non-communicable","White","Female","Minnesota",1971,"West North Central","Midwest","MN",36.8042822315785,38.4461004482033,40.185859776528,38.4519470167905
+"61",23,3,1,0,"All other causes","Black","Male","Minnesota",1971,"West North Central","Midwest","MN",215.36120017477,262.065001821696,321.121109331016,264.47972761073
+"62",23,3,1,0,"Cancers","Black","Male","Minnesota",1971,"West North Central","Midwest","MN",253.877478631043,316.274450250498,384.667525432772,316.938397753788
+"63",23,3,1,0,"Cardiovascular","Black","Male","Minnesota",1971,"West North Central","Midwest","MN",466.442537075628,560.307645051764,662.231018976595,559.910802145843
+"64",23,3,1,0,"Communicable","Black","Male","Minnesota",1971,"West North Central","Midwest","MN",57.0091932304083,76.4340118269918,102.677420267749,77.3181872326581
+"65",23,3,1,0,"Injuries","Black","Male","Minnesota",1971,"West North Central","Midwest","MN",129.114422346888,151.221270211602,177.916286786475,152.030017147778
+"66",23,3,1,0,"Non-communicable","Black","Male","Minnesota",1971,"West North Central","Midwest","MN",84.6014229612617,104.593669597214,125.017814037516,104.366402841717
+"67",23,3,1,1,"All other causes","Black","Female","Minnesota",1971,"West North Central","Midwest","MN",117.062836099812,140.945990139796,171.493692972582,142.245825090589
+"68",23,3,1,1,"Cancers","Black","Female","Minnesota",1971,"West North Central","Midwest","MN",174.782977863494,207.042197371361,249.422656992266,208.106039193811
+"69",23,3,1,1,"Cardiovascular","Black","Female","Minnesota",1971,"West North Central","Midwest","MN",382.726472347589,456.558290648344,556.513166250166,461.138339059867
+"70",23,3,1,1,"Communicable","Black","Female","Minnesota",1971,"West North Central","Midwest","MN",42.8035959353744,58.9581950321275,82.4924261962114,60.0675076591907
+"71",23,3,1,1,"Injuries","Black","Female","Minnesota",1971,"West North Central","Midwest","MN",43.4883994054947,52.1991771148257,65.1544948831124,52.7883885574165
+"72",23,3,1,1,"Non-communicable","Black","Female","Minnesota",1971,"West North Central","Midwest","MN",63.9362670733601,82.9643863326913,108.258770496235,83.7800479696161
+"73",23,4,0,0,"All other causes","White","Male","Minnesota",1972,"West North Central","Midwest","MN",115.266714738339,118.430649805513,121.813564857276,118.420665860339
+"74",23,4,0,0,"Cancers","White","Male","Minnesota",1972,"West North Central","Midwest","MN",223.923980489883,228.485960566639,233.787632849449,228.539325214241
+"75",23,4,0,0,"Cardiovascular","White","Male","Minnesota",1972,"West North Central","Midwest","MN",776.716561157297,791.17961720341,804.668307698238,791.111565944433
+"76",23,4,0,0,"Communicable","White","Male","Minnesota",1972,"West North Central","Midwest","MN",56.5716149277267,60.4456266515986,64.1745482280172,60.4476667322104
+"77",23,4,0,0,"Injuries","White","Male","Minnesota",1972,"West North Central","Midwest","MN",102.479341619311,105.731520186308,109.00219203974,105.639149229921
+"78",23,4,0,0,"Non-communicable","White","Male","Minnesota",1972,"West North Central","Midwest","MN",80.2842852810191,82.8192045481401,85.5698598988096,82.8320349727452
+"79",23,4,0,1,"All other causes","White","Female","Minnesota",1972,"West North Central","Midwest","MN",80.2520239370615,82.8375089869886,85.2559526470169,82.8267222481596
+"80",23,4,0,1,"Cancers","White","Female","Minnesota",1972,"West North Central","Midwest","MN",153.220180337895,156.531337853906,159.771511856967,156.507392294803
+"81",23,4,0,1,"Cardiovascular","White","Female","Minnesota",1972,"West North Central","Midwest","MN",467.564170591061,476.095792987759,485.992579095556,476.266612137171
+"82",23,4,0,1,"Communicable","White","Female","Minnesota",1972,"West North Central","Midwest","MN",34.5994898391103,36.6928095067778,39.0182363520551,36.6828662631996
+"83",23,4,0,1,"Injuries","White","Female","Minnesota",1972,"West North Central","Midwest","MN",39.1291941606113,40.7001433277085,42.2667798936592,40.6819514128506
+"84",23,4,0,1,"Non-communicable","White","Female","Minnesota",1972,"West North Central","Midwest","MN",36.1373543543504,37.7521249242054,39.5073613646514,37.7588919006368
+"85",23,4,1,0,"All other causes","Black","Male","Minnesota",1972,"West North Central","Midwest","MN",220.53699722291,264.289928164507,317.14971216577,265.854832865739
+"86",23,4,1,0,"Cancers","Black","Male","Minnesota",1972,"West North Central","Midwest","MN",253.59775097625,313.739073330316,376.39199607825,314.763326618129
+"87",23,4,1,0,"Cardiovascular","Black","Male","Minnesota",1972,"West North Central","Midwest","MN",459.807385109515,547.521962450092,640.080189418737,547.586348965037
+"88",23,4,1,0,"Communicable","Black","Male","Minnesota",1972,"West North Central","Midwest","MN",56.9581553331718,77.4224451555668,104.410974435607,78.2606068229421
+"89",23,4,1,0,"Injuries","Black","Male","Minnesota",1972,"West North Central","Midwest","MN",127.851823617317,149.113029698993,173.553417634063,149.609453237412
+"90",23,4,1,0,"Non-communicable","Black","Male","Minnesota",1972,"West North Central","Midwest","MN",84.3041282282621,104.07365685662,122.887241352814,103.610830239159
+"91",23,4,1,1,"All other causes","Black","Female","Minnesota",1972,"West North Central","Midwest","MN",118.220325639201,140.065740237261,171.193143290507,141.259864515549
+"92",23,4,1,1,"Cancers","Black","Female","Minnesota",1972,"West North Central","Midwest","MN",174.345376920213,205.487325095745,245.203917964801,206.30346035975
+"93",23,4,1,1,"Cardiovascular","Black","Female","Minnesota",1972,"West North Central","Midwest","MN",384.930687076608,460.436129086736,552.028258073425,462.896281377245
+"94",23,4,1,1,"Communicable","Black","Female","Minnesota",1972,"West North Central","Midwest","MN",42.5134988277348,57.8650866037703,79.7058543601659,58.9064010614418
+"95",23,4,1,1,"Injuries","Black","Female","Minnesota",1972,"West North Central","Midwest","MN",42.7668832324623,51.4729248872411,64.2576865339924,52.0228303982926
+"96",23,4,1,1,"Non-communicable","Black","Female","Minnesota",1972,"West North Central","Midwest","MN",64.2301066877761,82.1690249431758,107.531343244037,83.1668568232745
+"97",23,5,0,0,"All other causes","White","Male","Minnesota",1973,"West North Central","Midwest","MN",112.909108202502,116.030690637908,119.421862732529,116.066551072391
+"98",23,5,0,0,"Cancers","White","Male","Minnesota",1973,"West North Central","Midwest","MN",224.140134485884,228.653754182603,233.173870751666,228.647149413099
+"99",23,5,0,0,"Cardiovascular","White","Male","Minnesota",1973,"West North Central","Midwest","MN",753.248244122932,766.643876142057,779.936112918407,766.499517368007
+"100",23,5,0,0,"Communicable","White","Male","Minnesota",1973,"West North Central","Midwest","MN",57.920525834324,61.5600277771097,65.2940478472013,61.5640645728557
+"101",23,5,0,0,"Injuries","White","Male","Minnesota",1973,"West North Central","Midwest","MN",98.6496696672873,101.618564518064,104.782391478006,101.62513304167
+"102",23,5,0,0,"Non-communicable","White","Male","Minnesota",1973,"West North Central","Midwest","MN",79.6111545131003,82.2328585205786,85.1617057607352,82.2444490044915
+"103",23,5,0,1,"All other causes","White","Female","Minnesota",1973,"West North Central","Midwest","MN",79.3673385550917,81.8895072247958,84.3959374090579,81.8910780952961
+"104",23,5,0,1,"Cancers","White","Female","Minnesota",1973,"West North Central","Midwest","MN",151.00527419085,154.265384710123,157.433537859321,154.237626806093
+"105",23,5,0,1,"Cardiovascular","White","Female","Minnesota",1973,"West North Central","Midwest","MN",450.204548810894,459.103538048814,467.986799227078,458.969052912008
+"106",23,5,0,1,"Communicable","White","Female","Minnesota",1973,"West North Central","Midwest","MN",35.0201343201645,37.0564787205713,39.340760021417,37.1504653173467
+"107",23,5,0,1,"Injuries","White","Female","Minnesota",1973,"West North Central","Midwest","MN",37.785647346941,39.2480539545864,40.6188745284466,39.2178628844876
+"108",23,5,0,1,"Non-communicable","White","Female","Minnesota",1973,"West North Central","Midwest","MN",35.1145401367148,36.6684487889221,38.4932243845965,36.6846958000712
+"109",23,5,1,0,"All other causes","Black","Male","Minnesota",1973,"West North Central","Midwest","MN",220.026112122183,264.434934200504,316.089659835475,265.540796286619
+"110",23,5,1,0,"Cancers","Black","Male","Minnesota",1973,"West North Central","Midwest","MN",256.278955975096,313.285985215505,376.781066669896,314.398486591356
+"111",23,5,1,0,"Cardiovascular","Black","Male","Minnesota",1973,"West North Central","Midwest","MN",448.4831234135,533.38689732213,619.137810628152,532.818357405828
+"112",23,5,1,0,"Communicable","Black","Male","Minnesota",1973,"West North Central","Midwest","MN",58.0947316355136,77.4077536816706,108.256706049651,78.846930932559
+"113",23,5,1,0,"Injuries","Black","Male","Minnesota",1973,"West North Central","Midwest","MN",127.001790652248,147.085816833787,170.156669303209,147.352777218628
+"114",23,5,1,0,"Non-communicable","Black","Male","Minnesota",1973,"West North Central","Midwest","MN",84.7206468551784,103.302212473559,122.466329145432,102.957512681452
+"115",23,5,1,1,"All other causes","Black","Female","Minnesota",1973,"West North Central","Midwest","MN",117.109200407033,138.34787912834,168.804021430892,139.832025905533
+"116",23,5,1,1,"Cancers","Black","Female","Minnesota",1973,"West North Central","Midwest","MN",175.064489345472,204.996315189966,243.729861828416,205.84598031515
+"117",23,5,1,1,"Cardiovascular","Black","Female","Minnesota",1973,"West North Central","Midwest","MN",396.828081453712,468.596479214288,559.517570344042,471.50378298075
+"118",23,5,1,1,"Communicable","Black","Female","Minnesota",1973,"West North Central","Midwest","MN",41.7226572243602,56.2730043402402,77.4435792710683,57.3839683167683
+"119",23,5,1,1,"Injuries","Black","Female","Minnesota",1973,"West North Central","Midwest","MN",42.8761995350528,50.5721925998436,62.8129457901116,51.356812105767
+"120",23,5,1,1,"Non-communicable","Black","Female","Minnesota",1973,"West North Central","Midwest","MN",64.1781883576487,81.9041082490567,105.965103576312,82.6800965658685
+"121",23,6,0,0,"All other causes","White","Male","Minnesota",1974,"West North Central","Midwest","MN",112.385764209605,115.838831590728,119.106331946453,115.852605909699
+"122",23,6,0,0,"Cancers","White","Male","Minnesota",1974,"West North Central","Midwest","MN",223.478778802578,228.107235760411,233.137947471896,228.162014940268
+"123",23,6,0,0,"Cardiovascular","White","Male","Minnesota",1974,"West North Central","Midwest","MN",733.032362784195,745.687522698882,759.321320673608,745.662993970339
+"124",23,6,0,0,"Communicable","White","Male","Minnesota",1974,"West North Central","Midwest","MN",51.8813552988593,55.4248450684421,59.0086957628107,55.4603913778194
+"125",23,6,0,0,"Injuries","White","Male","Minnesota",1974,"West North Central","Midwest","MN",93.8416495389513,96.5957113365217,99.3654229106057,96.5894526667272
+"126",23,6,0,0,"Non-communicable","White","Male","Minnesota",1974,"West North Central","Midwest","MN",79.2469314617049,81.9643958830968,84.8889758472508,81.985027825284
+"127",23,6,0,1,"All other causes","White","Female","Minnesota",1974,"West North Central","Midwest","MN",78.7956187291651,81.3425159268738,83.9038993622271,81.3477083031588
+"128",23,6,0,1,"Cancers","White","Female","Minnesota",1974,"West North Central","Midwest","MN",150.290753488975,153.300065070606,156.137153566316,153.284470566029
+"129",23,6,0,1,"Cardiovascular","White","Female","Minnesota",1974,"West North Central","Midwest","MN",435.303851984458,443.195153839936,451.56024152444,443.203479771183
+"130",23,6,0,1,"Communicable","White","Female","Minnesota",1974,"West North Central","Midwest","MN",34.2280441570026,35.9644099508032,37.9073775599277,36.0061156647118
+"131",23,6,0,1,"Injuries","White","Female","Minnesota",1974,"West North Central","Midwest","MN",36.1320248279424,37.6310244400886,39.0381502767939,37.6180729799753
+"132",23,6,0,1,"Non-communicable","White","Female","Minnesota",1974,"West North Central","Midwest","MN",35.0370724150284,36.6167242063906,38.2952481658663,36.617799176377
+"133",23,6,1,0,"All other causes","Black","Male","Minnesota",1974,"West North Central","Midwest","MN",218.485400893036,259.731828528317,317.580449248886,262.662832807181
+"134",23,6,1,0,"Cancers","Black","Male","Minnesota",1974,"West North Central","Midwest","MN",258.223364349227,315.868557689934,374.335563508551,316.317356787897
+"135",23,6,1,0,"Cardiovascular","Black","Male","Minnesota",1974,"West North Central","Midwest","MN",438.451122444137,523.191395893405,612.054595189063,522.787560722842
+"136",23,6,1,0,"Communicable","Black","Male","Minnesota",1974,"West North Central","Midwest","MN",59.2331514088853,78.2127170086729,106.560497222485,79.4669438921835
+"137",23,6,1,0,"Injuries","Black","Male","Minnesota",1974,"West North Central","Midwest","MN",126.268250803114,145.188519166093,166.428373878528,145.3386241533
+"138",23,6,1,0,"Non-communicable","Black","Male","Minnesota",1974,"West North Central","Midwest","MN",84.6617643085585,103.276614082729,120.750401490588,102.910712596186
+"139",23,6,1,1,"All other causes","Black","Female","Minnesota",1974,"West North Central","Midwest","MN",116.537170751905,137.617206931379,167.638832780093,138.750616367723
+"140",23,6,1,1,"Cancers","Black","Female","Minnesota",1974,"West North Central","Midwest","MN",176.411807987864,204.98958351741,243.737171966325,205.757657912648
+"141",23,6,1,1,"Cardiovascular","Black","Female","Minnesota",1974,"West North Central","Midwest","MN",398.001973721316,469.177673536856,553.045299527334,471.380536183421
+"142",23,6,1,1,"Communicable","Black","Female","Minnesota",1974,"West North Central","Midwest","MN",42.3500531704659,56.4366400376065,75.5879721510722,57.0470538219897
+"143",23,6,1,1,"Injuries","Black","Female","Minnesota",1974,"West North Central","Midwest","MN",42.2743384968255,50.1938121399875,61.5627309106236,50.7102134001157
+"144",23,6,1,1,"Non-communicable","Black","Female","Minnesota",1974,"West North Central","Midwest","MN",64.818073316995,80.9447639735465,104.093879900169,81.9758232323459
+"145",23,7,0,0,"All other causes","White","Male","Minnesota",1975,"West North Central","Midwest","MN",111.832487594671,115.040853321734,118.485821458924,115.105834376264
+"146",23,7,0,0,"Cancers","White","Male","Minnesota",1975,"West North Central","Midwest","MN",225.375371280907,230.445523719767,235.695194393235,230.407166564951
+"147",23,7,0,0,"Cardiovascular","White","Male","Minnesota",1975,"West North Central","Midwest","MN",694.446681487883,706.310658263733,719.38607160804,706.639226240112
+"148",23,7,0,0,"Communicable","White","Male","Minnesota",1975,"West North Central","Midwest","MN",50.8374140464705,54.2259448940363,57.9861425592637,54.2883318375811
+"149",23,7,0,0,"Injuries","White","Male","Minnesota",1975,"West North Central","Midwest","MN",90.4707206891085,92.9965880290337,95.6188300514594,93.0057187610139
+"150",23,7,0,0,"Non-communicable","White","Male","Minnesota",1975,"West North Central","Midwest","MN",79.5880544465142,82.3858495738983,84.862071779851,82.3240574765308
+"151",23,7,0,1,"All other causes","White","Female","Minnesota",1975,"West North Central","Midwest","MN",76.9952743234822,79.5975545996817,82.1463355103743,79.5946330103647
+"152",23,7,0,1,"Cancers","White","Female","Minnesota",1975,"West North Central","Midwest","MN",149.411655973901,152.613975544131,155.671378413136,152.607657759378
+"153",23,7,0,1,"Cardiovascular","White","Female","Minnesota",1975,"West North Central","Midwest","MN",401.846434610333,409.500115737244,417.121642601504,409.518425667574
+"154",23,7,0,1,"Communicable","White","Female","Minnesota",1975,"West North Central","Midwest","MN",33.0002938138224,34.7826699234167,36.8152973011859,34.8094943074901
+"155",23,7,0,1,"Injuries","White","Female","Minnesota",1975,"West North Central","Midwest","MN",34.7372855221969,36.0484242012307,37.4177106031526,36.0556681102137
+"156",23,7,0,1,"Non-communicable","White","Female","Minnesota",1975,"West North Central","Midwest","MN",33.9655677698456,35.4583749084569,37.0538331694467,35.4781627994838
+"157",23,7,1,0,"All other causes","Black","Male","Minnesota",1975,"West North Central","Midwest","MN",215.84607940723,260.875862917333,315.206833298403,261.991127330426
+"158",23,7,1,0,"Cancers","Black","Male","Minnesota",1975,"West North Central","Midwest","MN",261.692435695393,317.897244875369,377.300416121505,317.903045836473
+"159",23,7,1,0,"Cardiovascular","Black","Male","Minnesota",1975,"West North Central","Midwest","MN",433.961986605439,515.935598644508,598.956097692393,515.238316793202
+"160",23,7,1,0,"Communicable","Black","Male","Minnesota",1975,"West North Central","Midwest","MN",60.2933189304461,80.2179947122332,110.481635925596,81.497508834433
+"161",23,7,1,0,"Injuries","Black","Male","Minnesota",1975,"West North Central","Midwest","MN",124.489108068388,142.993698030179,162.777755281255,143.044282611059
+"162",23,7,1,0,"Non-communicable","Black","Male","Minnesota",1975,"West North Central","Midwest","MN",86.1138083417219,103.322789013736,121.378865622808,103.184306654001
+"163",23,7,1,1,"All other causes","Black","Female","Minnesota",1975,"West North Central","Midwest","MN",115.917745733673,136.388007909553,164.6813263183,137.764564105658
+"164",23,7,1,1,"Cancers","Black","Female","Minnesota",1975,"West North Central","Midwest","MN",174.015365456751,204.408944565443,242.406937970244,205.564994558587
+"165",23,7,1,1,"Cardiovascular","Black","Female","Minnesota",1975,"West North Central","Midwest","MN",401.235550803887,469.652806102207,552.691127066224,471.636123568267
+"166",23,7,1,1,"Communicable","Black","Female","Minnesota",1975,"West North Central","Midwest","MN",41.9094457499213,56.1796841759265,75.0985350915317,56.8296603454609
+"167",23,7,1,1,"Injuries","Black","Female","Minnesota",1975,"West North Central","Midwest","MN",41.8061107246972,49.5270865562918,60.6377314580447,50.0971616043245
+"168",23,7,1,1,"Non-communicable","Black","Female","Minnesota",1975,"West North Central","Midwest","MN",64.9736219220991,80.2896742722327,100.660027688905,80.839355029451
+"169",23,8,0,0,"All other causes","White","Male","Minnesota",1976,"West North Central","Midwest","MN",113.470935958934,116.694475116449,120.139223136964,116.718746919601
+"170",23,8,0,0,"Cancers","White","Male","Minnesota",1976,"West North Central","Midwest","MN",226.701294278742,231.468042266197,235.992507574147,231.36542991247
+"171",23,8,0,0,"Cardiovascular","White","Male","Minnesota",1976,"West North Central","Midwest","MN",677.000630077514,689.204140436628,701.502655281199,689.080879246163
+"172",23,8,0,0,"Communicable","White","Male","Minnesota",1976,"West North Central","Midwest","MN",56.4736346888936,60.0569802898532,63.8826583663116,60.1271039774953
+"173",23,8,0,0,"Injuries","White","Male","Minnesota",1976,"West North Central","Midwest","MN",87.4707415010819,90.3264849772568,92.8222364417029,90.2403893877267
+"174",23,8,0,0,"Non-communicable","White","Male","Minnesota",1976,"West North Central","Midwest","MN",79.690671336684,82.3529490174528,85.1142798875653,82.3910997684256
+"175",23,8,0,1,"All other causes","White","Female","Minnesota",1976,"West North Central","Midwest","MN",75.5915424376748,77.951738656303,80.411484276078,77.9423858825151
+"176",23,8,0,1,"Cancers","White","Female","Minnesota",1976,"West North Central","Midwest","MN",149.850695243984,152.925852674043,156.115920655081,152.955097010789
+"177",23,8,0,1,"Cardiovascular","White","Female","Minnesota",1976,"West North Central","Midwest","MN",383.563926978852,391.020228304009,399.384056811733,391.091090982364
+"178",23,8,0,1,"Communicable","White","Female","Minnesota",1976,"West North Central","Midwest","MN",36.175834199152,38.1719073298258,40.5234198443103,38.2381718209223
+"179",23,8,0,1,"Injuries","White","Female","Minnesota",1976,"West North Central","Midwest","MN",33.4866972907169,34.7477599346415,36.1043943424649,34.7869482835342
+"180",23,8,0,1,"Non-communicable","White","Female","Minnesota",1976,"West North Central","Midwest","MN",33.1722697741598,34.7466697906889,36.3491329505276,34.769219021428
+"181",23,8,1,0,"All other causes","Black","Male","Minnesota",1976,"West North Central","Midwest","MN",215.241574945865,261.410136633017,314.015650319635,261.751940102598
+"182",23,8,1,0,"Cancers","Black","Male","Minnesota",1976,"West North Central","Midwest","MN",265.775235868365,320.458152260128,375.68929325148,320.793000830823
+"183",23,8,1,0,"Cardiovascular","Black","Male","Minnesota",1976,"West North Central","Midwest","MN",434.847408643303,509.5243565851,592.422766377451,510.418985565343
+"184",23,8,1,0,"Communicable","Black","Male","Minnesota",1976,"West North Central","Midwest","MN",62.5293550403039,82.829990740431,114.050211825758,83.6782367968058
+"185",23,8,1,0,"Injuries","Black","Male","Minnesota",1976,"West North Central","Midwest","MN",123.032505086762,140.293826683695,160.756820679208,140.87965328315
+"186",23,8,1,0,"Non-communicable","Black","Male","Minnesota",1976,"West North Central","Midwest","MN",86.3145417090719,103.875228370272,121.817548358388,103.76478708913
+"187",23,8,1,1,"All other causes","Black","Female","Minnesota",1976,"West North Central","Midwest","MN",115.231317684405,135.877491783569,162.683513802527,137.010118028299
+"188",23,8,1,1,"Cancers","Black","Female","Minnesota",1976,"West North Central","Midwest","MN",173.148752825673,204.168236482367,240.356126432453,205.011377889351
+"189",23,8,1,1,"Cardiovascular","Black","Female","Minnesota",1976,"West North Central","Midwest","MN",414.376589814494,484.983720373569,565.997173140145,486.193246506534
+"190",23,8,1,1,"Communicable","Black","Female","Minnesota",1976,"West North Central","Midwest","MN",41.818709694305,56.5604259818042,73.9077484354594,56.8880330985715
+"191",23,8,1,1,"Injuries","Black","Female","Minnesota",1976,"West North Central","Midwest","MN",41.5152912568993,49.2610154232013,59.9386803989592,49.6601179939151
+"192",23,8,1,1,"Non-communicable","Black","Female","Minnesota",1976,"West North Central","Midwest","MN",64.5119613189842,79.2267959346415,98.1007869707067,79.9150989649037
+"193",23,9,0,0,"All other causes","White","Male","Minnesota",1977,"West North Central","Midwest","MN",110.348688990331,113.733307289708,116.993123967211,113.691384492769
+"194",23,9,0,0,"Cancers","White","Male","Minnesota",1977,"West North Central","Midwest","MN",230.283467350107,234.892679825327,239.821947561555,234.894626364729
+"195",23,9,0,0,"Cardiovascular","White","Male","Minnesota",1977,"West North Central","Midwest","MN",658.45636529809,670.062788922851,682.731606385354,670.359789530565
+"196",23,9,0,0,"Communicable","White","Male","Minnesota",1977,"West North Central","Midwest","MN",47.1167824048782,50.314946263609,53.778485899875,50.3462796149987
+"197",23,9,0,0,"Injuries","White","Male","Minnesota",1977,"West North Central","Midwest","MN",86.6666073161839,89.2765979898133,91.8064462380408,89.3032723421706
+"198",23,9,0,0,"Non-communicable","White","Male","Minnesota",1977,"West North Central","Midwest","MN",77.9270565970689,80.5086285090278,83.420405424443,80.5470503067451
+"199",23,9,0,1,"All other causes","White","Female","Minnesota",1977,"West North Central","Midwest","MN",74.8523049614851,77.1574210667777,79.7287143854689,77.2099173138086
+"200",23,9,0,1,"Cancers","White","Female","Minnesota",1977,"West North Central","Midwest","MN",150.464496649007,153.378944260105,156.685346917455,153.407681902141
+"201",23,9,0,1,"Cardiovascular","White","Female","Minnesota",1977,"West North Central","Midwest","MN",366.580819497206,374.007956479457,381.354425724417,374.018679215297
+"202",23,9,0,1,"Communicable","White","Female","Minnesota",1977,"West North Central","Midwest","MN",30.4834452236795,32.2925499945458,34.1556135211914,32.2986231244336
+"203",23,9,0,1,"Injuries","White","Female","Minnesota",1977,"West North Central","Midwest","MN",32.695075605208,34.0068717414604,35.2234307182861,33.999504600781
+"204",23,9,0,1,"Non-communicable","White","Female","Minnesota",1977,"West North Central","Midwest","MN",32.9201751847827,34.4991000138171,36.0206543695862,34.4916230083417
+"205",23,9,1,0,"All other causes","Black","Male","Minnesota",1977,"West North Central","Midwest","MN",213.910187626807,258.412087261496,311.601891116359,259.166924598182
+"206",23,9,1,0,"Cancers","Black","Male","Minnesota",1977,"West North Central","Midwest","MN",270.21457967225,324.806791486048,385.193602839603,325.006736322088
+"207",23,9,1,0,"Cardiovascular","Black","Male","Minnesota",1977,"West North Central","Midwest","MN",429.117779415037,507.196549996733,584.553973464628,506.638321683572
+"208",23,9,1,0,"Communicable","Black","Male","Minnesota",1977,"West North Central","Midwest","MN",63.3292214692892,82.7044989266819,112.187006711589,83.8800068949612
+"209",23,9,1,0,"Injuries","Black","Male","Minnesota",1977,"West North Central","Midwest","MN",120.206303616307,138.116884041047,157.777802482079,138.573371784617
+"210",23,9,1,0,"Non-communicable","Black","Male","Minnesota",1977,"West North Central","Midwest","MN",88.3051006294859,103.935235815867,122.307465198989,104.381190263065
+"211",23,9,1,1,"All other causes","Black","Female","Minnesota",1977,"West North Central","Midwest","MN",115.337953438803,135.521561657515,160.138616664234,136.438630776217
+"212",23,9,1,1,"Cancers","Black","Female","Minnesota",1977,"West North Central","Midwest","MN",173.977751625152,203.31742435166,240.005755643304,204.096009764715
+"213",23,9,1,1,"Cardiovascular","Black","Female","Minnesota",1977,"West North Central","Midwest","MN",407.455016099063,472.858524218462,559.492986459819,475.867313260308
+"214",23,9,1,1,"Communicable","Black","Female","Minnesota",1977,"West North Central","Midwest","MN",42.1896151306418,56.562560370279,75.6126810674799,57.3674603144934
+"215",23,9,1,1,"Injuries","Black","Female","Minnesota",1977,"West North Central","Midwest","MN",40.9609426224382,48.4824454818724,58.4755650474769,48.9744931606307
+"216",23,9,1,1,"Non-communicable","Black","Female","Minnesota",1977,"West North Central","Midwest","MN",64.1209609550411,78.358152430723,97.0568902554013,79.0814489767278
+"217",23,10,0,0,"All other causes","White","Male","Minnesota",1978,"West North Central","Midwest","MN",109.99743243928,113.190488696713,116.503785209536,113.211826909955
+"218",23,10,0,0,"Cancers","White","Male","Minnesota",1978,"West North Central","Midwest","MN",232.007354867786,236.860677212525,241.798404516995,236.908608868966
+"219",23,10,0,0,"Cardiovascular","White","Male","Minnesota",1978,"West North Central","Midwest","MN",647.527801417484,659.624349714904,671.730140368455,659.672666293921
+"220",23,10,0,0,"Communicable","White","Male","Minnesota",1978,"West North Central","Midwest","MN",55.8764081406161,59.7509230970062,63.5567737240068,59.748442255087
+"221",23,10,0,0,"Injuries","White","Male","Minnesota",1978,"West North Central","Midwest","MN",85.2159402622567,87.771203763346,90.3552265606805,87.7713805069161
+"222",23,10,0,0,"Non-communicable","White","Male","Minnesota",1978,"West North Central","Midwest","MN",77.8848348098747,80.4157340720208,83.1540490285443,80.4266216494714
+"223",23,10,0,1,"All other causes","White","Female","Minnesota",1978,"West North Central","Midwest","MN",75.4308154800896,77.8488989573008,80.1532588381424,77.861960108068
+"224",23,10,0,1,"Cancers","White","Female","Minnesota",1978,"West North Central","Midwest","MN",149.813272464241,152.927978692471,156.089655599783,152.92403377423
+"225",23,10,0,1,"Cardiovascular","White","Female","Minnesota",1978,"West North Central","Midwest","MN",362.878113548443,369.797663704606,377.018228533287,369.887437722232
+"226",23,10,0,1,"Communicable","White","Female","Minnesota",1978,"West North Central","Midwest","MN",31.704346089121,33.593836050786,35.6109402761312,33.6098663395137
+"227",23,10,0,1,"Injuries","White","Female","Minnesota",1978,"West North Central","Midwest","MN",32.1103880937657,33.3251832118389,34.6167919143312,33.3223367280637
+"228",23,10,0,1,"Non-communicable","White","Female","Minnesota",1978,"West North Central","Midwest","MN",33.8861820464098,35.3596827831067,36.8558633089007,35.3458496156485
+"229",23,10,1,0,"All other causes","Black","Male","Minnesota",1978,"West North Central","Midwest","MN",214.903111490111,258.303977957667,310.027406311555,258.689809462923
+"230",23,10,1,0,"Cancers","Black","Male","Minnesota",1978,"West North Central","Midwest","MN",278.454248845099,327.889320159885,385.851690024358,328.888682001867
+"231",23,10,1,0,"Cardiovascular","Black","Male","Minnesota",1978,"West North Central","Midwest","MN",428.65174426138,506.923168136957,589.327616432228,508.270996522604
+"232",23,10,1,0,"Communicable","Black","Male","Minnesota",1978,"West North Central","Midwest","MN",63.0701114169841,82.2025470301207,112.683881891267,83.6756435244759
+"233",23,10,1,0,"Injuries","Black","Male","Minnesota",1978,"West North Central","Midwest","MN",119.303907955681,135.624875443184,155.600683379371,136.201900764384
+"234",23,10,1,0,"Non-communicable","Black","Male","Minnesota",1978,"West North Central","Midwest","MN",88.5662217942085,104.739405458683,122.034291471289,105.131740123744
+"235",23,10,1,1,"All other causes","Black","Female","Minnesota",1978,"West North Central","Midwest","MN",115.453430920229,136.002569096325,157.569259335163,136.268876439891
+"236",23,10,1,1,"Cancers","Black","Female","Minnesota",1978,"West North Central","Midwest","MN",171.707096087573,202.137228999754,239.391735156543,202.805506225076
+"237",23,10,1,1,"Cardiovascular","Black","Female","Minnesota",1978,"West North Central","Midwest","MN",393.697488133378,453.309172912754,531.539751762398,456.520651642944
+"238",23,10,1,1,"Communicable","Black","Female","Minnesota",1978,"West North Central","Midwest","MN",43.0617802341693,56.9210683569319,75.7160255220496,57.3533352978993
+"239",23,10,1,1,"Injuries","Black","Female","Minnesota",1978,"West North Central","Midwest","MN",40.4009913194005,48.0431727980789,57.5382670510415,48.3443882367747
+"240",23,10,1,1,"Non-communicable","Black","Female","Minnesota",1978,"West North Central","Midwest","MN",62.8296447201688,78.2081435112581,97.3125274670761,78.801587733632
+"241",23,11,0,0,"All other causes","White","Male","Minnesota",1979,"West North Central","Midwest","MN",111.130836153147,114.440161101509,117.813967477915,114.523427945091
+"242",23,11,0,0,"Cancers","White","Male","Minnesota",1979,"West North Central","Midwest","MN",232.718822046291,237.417878625182,242.217097736147,237.486881598651
+"243",23,11,0,0,"Cardiovascular","White","Male","Minnesota",1979,"West North Central","Midwest","MN",606.318344038282,618.019080535934,629.728275698083,617.983387773139
+"244",23,11,0,0,"Communicable","White","Male","Minnesota",1979,"West North Central","Midwest","MN",44.572663242622,47.8037079606267,51.0424772037641,47.8078116168308
+"245",23,11,0,0,"Injuries","White","Male","Minnesota",1979,"West North Central","Midwest","MN",83.0386923797898,85.5595873253074,88.2355650077963,85.5843557500116
+"246",23,11,0,0,"Non-communicable","White","Male","Minnesota",1979,"West North Central","Midwest","MN",77.1728283391164,79.9867280199665,82.7566389633952,79.9607002260106
+"247",23,11,0,1,"All other causes","White","Female","Minnesota",1979,"West North Central","Midwest","MN",77.0711101828928,79.2810505079302,81.6526225037972,79.299826656363
+"248",23,11,0,1,"Cancers","White","Female","Minnesota",1979,"West North Central","Midwest","MN",149.453932280095,152.506411923153,155.500404126056,152.442327502053
+"249",23,11,0,1,"Cardiovascular","White","Female","Minnesota",1979,"West North Central","Midwest","MN",348.310404680227,354.672244740669,361.772573424641,354.745670940723
+"250",23,11,0,1,"Communicable","White","Female","Minnesota",1979,"West North Central","Midwest","MN",27.6123275089561,29.3542248933178,31.0175535409919,29.3689946127148
+"251",23,11,0,1,"Injuries","White","Female","Minnesota",1979,"West North Central","Midwest","MN",31.3944049287979,32.6728678314643,33.9681620990851,32.687639039598
+"252",23,11,0,1,"Non-communicable","White","Female","Minnesota",1979,"West North Central","Midwest","MN",34.4773095225893,36.0417803095986,37.5622186458601,36.033933473858
+"253",23,11,1,0,"All other causes","Black","Male","Minnesota",1979,"West North Central","Midwest","MN",210.343646568996,254.313899275276,304.669092135681,255.424077415695
+"254",23,11,1,0,"Cancers","Black","Male","Minnesota",1979,"West North Central","Midwest","MN",282.682596463456,331.547223136136,390.525186726404,332.509261641754
+"255",23,11,1,0,"Cardiovascular","Black","Male","Minnesota",1979,"West North Central","Midwest","MN",421.154982418379,500.304093337583,581.611057871669,500.513719381338
+"256",23,11,1,0,"Communicable","Black","Male","Minnesota",1979,"West North Central","Midwest","MN",63.544343159446,82.2899563087418,112.183841131781,83.7637838015613
+"257",23,11,1,0,"Injuries","Black","Male","Minnesota",1979,"West North Central","Midwest","MN",117.96584419305,133.054206228291,152.702244111853,133.525623685631
+"258",23,11,1,0,"Non-communicable","Black","Male","Minnesota",1979,"West North Central","Midwest","MN",89.4833455554751,105.447789633764,122.851200704783,105.748219839734
+"259",23,11,1,1,"All other causes","Black","Female","Minnesota",1979,"West North Central","Midwest","MN",116.098779478303,135.685581545864,157.836709543501,136.018458712196
+"260",23,11,1,1,"Cancers","Black","Female","Minnesota",1979,"West North Central","Midwest","MN",171.142233017186,201.143034443149,235.617962373072,201.595431526115
+"261",23,11,1,1,"Cardiovascular","Black","Female","Minnesota",1979,"West North Central","Midwest","MN",382.207639790968,441.414287968482,516.20912671022,443.600729014393
+"262",23,11,1,1,"Communicable","Black","Female","Minnesota",1979,"West North Central","Midwest","MN",42.0756249669056,56.168992673124,75.1773449955402,56.9185075847538
+"263",23,11,1,1,"Injuries","Black","Female","Minnesota",1979,"West North Central","Midwest","MN",40.0301668165613,47.2363544809391,56.2471480224157,47.6403015721044
+"264",23,11,1,1,"Non-communicable","Black","Female","Minnesota",1979,"West North Central","Midwest","MN",63.1549064519632,78.0745046596504,96.5081931997895,78.7620564669796
+"265",23,12,0,0,"All other causes","White","Male","Minnesota",1980,"West North Central","Midwest","MN",113.133362811837,116.635782997115,120.088025501325,116.593665464482
+"266",23,12,0,0,"Cancers","White","Male","Minnesota",1980,"West North Central","Midwest","MN",233.528865294999,238.518089094295,243.854949268897,238.623369679915
+"267",23,12,0,0,"Cardiovascular","White","Male","Minnesota",1980,"West North Central","Midwest","MN",600.771406750616,612.080145011942,623.371582479615,612.147024760487
+"268",23,12,0,0,"Communicable","White","Male","Minnesota",1980,"West North Central","Midwest","MN",47.3339473537477,50.4492185796162,54.0465336586276,50.4836138917348
+"269",23,12,0,0,"Injuries","White","Male","Minnesota",1980,"West North Central","Midwest","MN",80.419426998404,82.8775421233946,85.4813785482527,82.8884821966053
+"270",23,12,0,0,"Non-communicable","White","Male","Minnesota",1980,"West North Central","Midwest","MN",79.1455918968331,81.6587846389546,84.477004290722,81.7206069196435
+"271",23,12,0,1,"All other causes","White","Female","Minnesota",1980,"West North Central","Midwest","MN",77.304724188433,79.7285780357005,82.1836931181302,79.6896075243489
+"272",23,12,0,1,"Cancers","White","Female","Minnesota",1980,"West North Central","Midwest","MN",149.888826845334,153.065919727403,156.127391835457,153.098664175929
+"273",23,12,0,1,"Cardiovascular","White","Female","Minnesota",1980,"West North Central","Midwest","MN",348.913158542377,355.337797575972,361.901403192528,355.302901022287
+"274",23,12,0,1,"Communicable","White","Female","Minnesota",1980,"West North Central","Midwest","MN",29.9782833857795,31.6722445598551,33.2740771021378,31.6323994147232
+"275",23,12,0,1,"Injuries","White","Female","Minnesota",1980,"West North Central","Midwest","MN",30.6952004671483,31.9863663750168,33.1389736010406,31.9649533673079
+"276",23,12,0,1,"Non-communicable","White","Female","Minnesota",1980,"West North Central","Midwest","MN",36.3245099386294,37.8656894051787,39.3789801206431,37.8563968819642
+"277",23,12,1,0,"All other causes","Black","Male","Minnesota",1980,"West North Central","Midwest","MN",207.026994438589,250.001131756602,303.211060528092,250.292409740464
+"278",23,12,1,0,"Cancers","Black","Male","Minnesota",1980,"West North Central","Midwest","MN",285.406717196543,334.702584274099,391.876292843048,336.425649231605
+"279",23,12,1,0,"Cardiovascular","Black","Male","Minnesota",1980,"West North Central","Midwest","MN",419.080352998518,492.434346078568,575.705384001206,493.357451038205
+"280",23,12,1,0,"Communicable","Black","Male","Minnesota",1980,"West North Central","Midwest","MN",62.6514220329796,80.8393063959886,108.450007599877,81.9775513441834
+"281",23,12,1,0,"Injuries","Black","Male","Minnesota",1980,"West North Central","Midwest","MN",115.102979984497,130.600263994592,149.574821360183,131.302400285403
+"282",23,12,1,0,"Non-communicable","Black","Male","Minnesota",1980,"West North Central","Midwest","MN",89.8967557125165,106.010589753291,124.305767932379,106.503175162072
+"283",23,12,1,1,"All other causes","Black","Female","Minnesota",1980,"West North Central","Midwest","MN",115.282141160086,134.265370237236,155.633065033796,134.645140622677
+"284",23,12,1,1,"Cancers","Black","Female","Minnesota",1980,"West North Central","Midwest","MN",170.214619217583,198.821842479543,234.232388352382,199.733973809412
+"285",23,12,1,1,"Cardiovascular","Black","Female","Minnesota",1980,"West North Central","Midwest","MN",378.243121904904,437.093793019585,510.301113785856,438.883551225209
+"286",23,12,1,1,"Communicable","Black","Female","Minnesota",1980,"West North Central","Midwest","MN",41.3345964612213,55.1375196307506,72.6507304185146,55.6825041082855
+"287",23,12,1,1,"Injuries","Black","Female","Minnesota",1980,"West North Central","Midwest","MN",39.6590456280815,46.5170053091812,54.7625992435281,46.7803202699242
+"288",23,12,1,1,"Non-communicable","Black","Female","Minnesota",1980,"West North Central","Midwest","MN",64.0074928420672,78.3687719569161,96.5949587709586,78.9974712780673
+"289",23,13,0,0,"All other causes","White","Male","Minnesota",1981,"West North Central","Midwest","MN",115.409065241217,119.014591806515,122.565266614248,119.034386195794
+"290",23,13,0,0,"Cancers","White","Male","Minnesota",1981,"West North Central","Midwest","MN",233.690971716753,238.469109798449,243.753641541206,238.504467228415
+"291",23,13,0,0,"Cardiovascular","White","Male","Minnesota",1981,"West North Central","Midwest","MN",582.62338840497,593.369236883652,604.437138690396,593.425015322036
+"292",23,13,0,0,"Communicable","White","Male","Minnesota",1981,"West North Central","Midwest","MN",45.3700265579608,48.5713576128465,51.8583504537603,48.5484909798455
+"293",23,13,0,0,"Injuries","White","Male","Minnesota",1981,"West North Central","Midwest","MN",77.4411535243399,79.7466647184421,82.2862947375488,79.7887355901146
+"294",23,13,0,0,"Non-communicable","White","Male","Minnesota",1981,"West North Central","Midwest","MN",81.2759011328278,84.0704913233109,86.9365494330185,84.093929510528
+"295",23,13,0,1,"All other causes","White","Female","Minnesota",1981,"West North Central","Midwest","MN",77.9455265977436,80.3245077733789,82.7900805989458,80.3380485390311
+"296",23,13,0,1,"Cancers","White","Female","Minnesota",1981,"West North Central","Midwest","MN",151.241858613052,154.294997962505,157.35235397448,154.332752332164
+"297",23,13,0,1,"Cardiovascular","White","Female","Minnesota",1981,"West North Central","Midwest","MN",329.262625504317,335.964523658959,342.37632649399,335.930862833036
+"298",23,13,0,1,"Communicable","White","Female","Minnesota",1981,"West North Central","Midwest","MN",28.2126664233751,29.9259990144217,31.6486635645137,29.9233009602592
+"299",23,13,0,1,"Injuries","White","Female","Minnesota",1981,"West North Central","Midwest","MN",29.7350579552398,30.9113460356859,32.1172765519757,30.9191271369757
+"300",23,13,0,1,"Non-communicable","White","Female","Minnesota",1981,"West North Central","Midwest","MN",37.1701002525113,38.76658625257,40.4181804935715,38.7657903143377
+"301",23,13,1,0,"All other causes","Black","Male","Minnesota",1981,"West North Central","Midwest","MN",204.104328457987,247.565979800507,298.793614637709,247.855641274844
+"302",23,13,1,0,"Cancers","Black","Male","Minnesota",1981,"West North Central","Midwest","MN",291.53361973687,336.956154783824,396.230632399013,340.481411468345
+"303",23,13,1,0,"Cardiovascular","Black","Male","Minnesota",1981,"West North Central","Midwest","MN",411.284697167253,483.023235231267,561.586505192698,484.180636032199
+"304",23,13,1,0,"Communicable","Black","Male","Minnesota",1981,"West North Central","Midwest","MN",61.9377690893823,81.2552505826041,106.988459932166,82.2714411114499
+"305",23,13,1,0,"Injuries","Black","Male","Minnesota",1981,"West North Central","Midwest","MN",114.040720518645,128.45036692917,146.3625933,129.097804126574
+"306",23,13,1,0,"Non-communicable","Black","Male","Minnesota",1981,"West North Central","Midwest","MN",90.7121188910643,106.875077114908,125.611308016988,107.42061739639
+"307",23,13,1,1,"All other causes","Black","Female","Minnesota",1981,"West North Central","Midwest","MN",115.674775734543,134.029709770841,155.761076189159,134.565614043238
+"308",23,13,1,1,"Cancers","Black","Female","Minnesota",1981,"West North Central","Midwest","MN",169.853931051285,198.127335535316,231.384653067747,198.554639341393
+"309",23,13,1,1,"Cardiovascular","Black","Female","Minnesota",1981,"West North Central","Midwest","MN",361.681884587661,420.631618058746,486.0554488515,421.415068833989
+"310",23,13,1,1,"Communicable","Black","Female","Minnesota",1981,"West North Central","Midwest","MN",40.6980492777674,53.715478605021,71.5545168234425,54.3458330072654
+"311",23,13,1,1,"Injuries","Black","Female","Minnesota",1981,"West North Central","Midwest","MN",38.9893282426583,45.6144501393047,53.4948648163226,45.9475580661394
+"312",23,13,1,1,"Non-communicable","Black","Female","Minnesota",1981,"West North Central","Midwest","MN",64.6705009958424,78.6276200533986,98.4211878686294,79.3549201570275
+"313",23,14,0,0,"All other causes","White","Male","Minnesota",1982,"West North Central","Midwest","MN",115.935789822153,119.318480920131,122.74758477832,119.331683779117
+"314",23,14,0,0,"Cancers","White","Male","Minnesota",1982,"West North Central","Midwest","MN",236.175321386232,240.877914881564,245.73098307648,240.881894309444
+"315",23,14,0,0,"Cardiovascular","White","Male","Minnesota",1982,"West North Central","Midwest","MN",575.386278281383,585.453308346946,596.032882517271,585.565913120843
+"316",23,14,0,0,"Communicable","White","Male","Minnesota",1982,"West North Central","Midwest","MN",46.07826140373,49.1175718293384,52.3805259862644,49.1458578862169
+"317",23,14,0,0,"Injuries","White","Male","Minnesota",1982,"West North Central","Midwest","MN",73.1670496267988,75.5586154671238,77.7821369799651,75.4799005910137
+"318",23,14,0,0,"Non-communicable","White","Male","Minnesota",1982,"West North Central","Midwest","MN",84.9322735868364,87.5862521180315,90.6149681021962,87.6046719420536
+"319",23,14,0,1,"All other causes","White","Female","Minnesota",1982,"West North Central","Midwest","MN",77.9899986703251,80.4106605826318,82.7332687337988,80.4067260425643
+"320",23,14,0,1,"Cancers","White","Female","Minnesota",1982,"West North Central","Midwest","MN",153.180587619789,155.969073360685,159.156331356333,156.012833942051
+"321",23,14,0,1,"Cardiovascular","White","Female","Minnesota",1982,"West North Central","Midwest","MN",325.05797642496,331.590409878897,337.748621478945,331.593906867648
+"322",23,14,0,1,"Communicable","White","Female","Minnesota",1982,"West North Central","Midwest","MN",27.4782265638226,28.9821502465742,30.6511065524136,28.9826529476322
+"323",23,14,0,1,"Injuries","White","Female","Minnesota",1982,"West North Central","Midwest","MN",28.5247551748702,29.6467331023437,30.7369907541267,29.6448280369884
+"324",23,14,0,1,"Non-communicable","White","Female","Minnesota",1982,"West North Central","Midwest","MN",39.0415324716881,40.6121559108062,42.2923174805878,40.6387321957857
+"325",23,14,1,0,"All other causes","Black","Male","Minnesota",1982,"West North Central","Midwest","MN",197.454654035335,239.559299463377,289.995281341716,240.546886057687
+"326",23,14,1,0,"Cancers","Black","Male","Minnesota",1982,"West North Central","Midwest","MN",291.952319762225,339.692087751106,401.998526916981,342.386034428791
+"327",23,14,1,0,"Cardiovascular","Black","Male","Minnesota",1982,"West North Central","Midwest","MN",405.695812765281,470.99892609494,546.260674320925,471.51763321324
+"328",23,14,1,0,"Communicable","Black","Male","Minnesota",1982,"West North Central","Midwest","MN",63.1289932708765,82.0176964527776,111.008019267493,82.7562046712268
+"329",23,14,1,0,"Injuries","Black","Male","Minnesota",1982,"West North Central","Midwest","MN",113.373408517648,127.392220205373,144.967284717452,127.88941208922
+"330",23,14,1,0,"Non-communicable","Black","Male","Minnesota",1982,"West North Central","Midwest","MN",91.4396867256306,107.556750705866,126.161072458444,107.981443538263
+"331",23,14,1,1,"All other causes","Black","Female","Minnesota",1982,"West North Central","Midwest","MN",116.920208403439,134.565551264348,156.530922548358,135.250458900972
+"332",23,14,1,1,"Cancers","Black","Female","Minnesota",1982,"West North Central","Midwest","MN",169.785197651921,196.020992939456,229.920561605716,197.011995647847
+"333",23,14,1,1,"Cardiovascular","Black","Female","Minnesota",1982,"West North Central","Midwest","MN",350.158916904293,405.424552847953,471.035462220737,406.69885789846
+"334",23,14,1,1,"Communicable","Black","Female","Minnesota",1982,"West North Central","Midwest","MN",40.3430006089746,52.3885645615416,70.1354933467075,53.2349021127269
+"335",23,14,1,1,"Injuries","Black","Female","Minnesota",1982,"West North Central","Midwest","MN",38.6644714384395,45.1534454931962,52.8861911855336,45.3869383713698
+"336",23,14,1,1,"Non-communicable","Black","Female","Minnesota",1982,"West North Central","Midwest","MN",64.6165350167083,78.7830457920711,97.9982054359291,79.3485537376213
+"337",23,15,0,0,"All other causes","White","Male","Minnesota",1983,"West North Central","Midwest","MN",116.487151796434,119.968951859719,123.335487409959,119.981558427992
+"338",23,15,0,0,"Cancers","White","Male","Minnesota",1983,"West North Central","Midwest","MN",237.605907374976,242.240741818939,247.223069445503,242.262466249403
+"339",23,15,0,0,"Cardiovascular","White","Male","Minnesota",1983,"West North Central","Midwest","MN",572.166664360059,582.248854969697,593.202799429067,582.499838497568
+"340",23,15,0,0,"Communicable","White","Male","Minnesota",1983,"West North Central","Midwest","MN",52.8096299984844,56.2388112185455,59.8051096916969,56.2678558394393
+"341",23,15,0,0,"Injuries","White","Male","Minnesota",1983,"West North Central","Midwest","MN",70.9690958045607,73.2084134750501,75.3571806561529,73.2025205242134
+"342",23,15,0,0,"Non-communicable","White","Male","Minnesota",1983,"West North Central","Midwest","MN",87.4365135046298,90.2479663015404,93.0898158834749,90.2043179308887
+"343",23,15,0,1,"All other causes","White","Female","Minnesota",1983,"West North Central","Midwest","MN",80.818846923476,83.3832530826794,85.9683110804391,83.4135770576342
+"344",23,15,0,1,"Cancers","White","Female","Minnesota",1983,"West North Central","Midwest","MN",154.440395003101,157.526492021166,160.783797409138,157.571574603967
+"345",23,15,0,1,"Cardiovascular","White","Female","Minnesota",1983,"West North Central","Midwest","MN",324.557298464805,331.114137270128,337.073744624755,331.058665736437
+"346",23,15,0,1,"Communicable","White","Female","Minnesota",1983,"West North Central","Midwest","MN",29.6287056069199,31.3063805611016,32.9937255237579,31.2869673495037
+"347",23,15,0,1,"Injuries","White","Female","Minnesota",1983,"West North Central","Midwest","MN",28.2094563769859,29.2504397404557,30.4041813283192,29.2612420838499
+"348",23,15,0,1,"Non-communicable","White","Female","Minnesota",1983,"West North Central","Midwest","MN",40.9266877267718,42.4645353328601,44.299649041512,42.5365462526446
+"349",23,15,1,0,"All other causes","Black","Male","Minnesota",1983,"West North Central","Midwest","MN",192.542831371976,234.692038778073,281.413542981236,235.41553380138
+"350",23,15,1,0,"Cancers","Black","Male","Minnesota",1983,"West North Central","Midwest","MN",295.475741838495,339.728019608734,400.722721643339,342.407910535301
+"351",23,15,1,0,"Cardiovascular","Black","Male","Minnesota",1983,"West North Central","Midwest","MN",397.052316012901,463.272996960777,529.896583005155,463.833240636064
+"352",23,15,1,0,"Communicable","Black","Male","Minnesota",1983,"West North Central","Midwest","MN",63.2802160279561,82.5641792816605,109.675167149494,83.4324750762204
+"353",23,15,1,0,"Injuries","Black","Male","Minnesota",1983,"West North Central","Midwest","MN",112.590000803162,126.257649241911,142.366899168126,126.939086938514
+"354",23,15,1,0,"Non-communicable","Black","Male","Minnesota",1983,"West North Central","Midwest","MN",92.2533796570806,108.463125740248,126.402643567664,108.920020524829
+"355",23,15,1,1,"All other causes","Black","Female","Minnesota",1983,"West North Central","Midwest","MN",119.015082843302,137.413493764444,159.204287531951,137.562656470453
+"356",23,15,1,1,"Cancers","Black","Female","Minnesota",1983,"West North Central","Midwest","MN",166.51019882103,194.455577741394,227.491512732798,194.946489749984
+"357",23,15,1,1,"Cardiovascular","Black","Female","Minnesota",1983,"West North Central","Midwest","MN",337.366899224781,390.083663222386,452.62292258593,390.993769779693
+"358",23,15,1,1,"Communicable","Black","Female","Minnesota",1983,"West North Central","Midwest","MN",39.8089026526223,52.3597130589311,71.2546881696036,53.2474569668739
+"359",23,15,1,1,"Injuries","Black","Female","Minnesota",1983,"West North Central","Midwest","MN",38.2740870490307,44.3990202192243,52.2495557932164,44.771298054655
+"360",23,15,1,1,"Non-communicable","Black","Female","Minnesota",1983,"West North Central","Midwest","MN",65.4939736218969,79.8109578776169,99.7541526818404,80.515687293587
+"361",23,16,0,0,"All other causes","White","Male","Minnesota",1984,"West North Central","Midwest","MN",118.495783773016,121.972984037534,125.399534862981,122.023799283207
+"362",23,16,0,0,"Cancers","White","Male","Minnesota",1984,"West North Central","Midwest","MN",238.797714689123,243.370837908119,248.22573687421,243.371373991928
+"363",23,16,0,0,"Cardiovascular","White","Male","Minnesota",1984,"West North Central","Midwest","MN",543.545753455574,553.497106060541,563.970131605172,553.580006380723
+"364",23,16,0,0,"Communicable","White","Male","Minnesota",1984,"West North Central","Midwest","MN",49.7510707118496,53.1178002093797,56.6619948457529,53.0998598792933
+"365",23,16,0,0,"Injuries","White","Male","Minnesota",1984,"West North Central","Midwest","MN",70.7072867028292,72.8946733749913,75.2777153492905,72.9186135215463
+"366",23,16,0,0,"Non-communicable","White","Male","Minnesota",1984,"West North Central","Midwest","MN",89.4239540569396,92.383800885269,95.3536292310394,92.3497986002384
+"367",23,16,0,1,"All other causes","White","Female","Minnesota",1984,"West North Central","Midwest","MN",82.6634408670984,84.9542251373408,87.4989177994115,85.0111191448116
+"368",23,16,0,1,"Cancers","White","Female","Minnesota",1984,"West North Central","Midwest","MN",156.367943237839,159.574976644702,162.64370325501,159.554206087013
+"369",23,16,0,1,"Cardiovascular","White","Female","Minnesota",1984,"West North Central","Midwest","MN",312.494678029476,318.175131835372,324.263762431231,318.332216572471
+"370",23,16,0,1,"Communicable","White","Female","Minnesota",1984,"West North Central","Midwest","MN",29.6933257506813,31.2579734600971,33.1134626692464,31.3118684721143
+"371",23,16,0,1,"Injuries","White","Female","Minnesota",1984,"West North Central","Midwest","MN",27.7235611940911,28.7434142888307,29.8963979074684,28.7535243062509
+"372",23,16,0,1,"Non-communicable","White","Female","Minnesota",1984,"West North Central","Midwest","MN",43.8405533189665,45.6062483660727,47.4147346256914,45.6226712918591
+"373",23,16,1,0,"All other causes","Black","Male","Minnesota",1984,"West North Central","Midwest","MN",189.604897925288,231.492870468555,277.334289245284,231.852206414383
+"374",23,16,1,0,"Cancers","Black","Male","Minnesota",1984,"West North Central","Midwest","MN",297.146675225965,341.211714522383,407.146511889501,343.84873424245
+"375",23,16,1,0,"Cardiovascular","Black","Male","Minnesota",1984,"West North Central","Midwest","MN",390.270536571199,449.039323358508,520.668055646467,450.698830533686
+"376",23,16,1,0,"Communicable","Black","Male","Minnesota",1984,"West North Central","Midwest","MN",64.1575296347603,81.7364595765563,108.198123694955,82.9642128468368
+"377",23,16,1,0,"Injuries","Black","Male","Minnesota",1984,"West North Central","Midwest","MN",112.095847684695,125.960567603698,142.009051116813,126.228382665945
+"378",23,16,1,0,"Non-communicable","Black","Male","Minnesota",1984,"West North Central","Midwest","MN",93.3902580030919,110.002612000495,128.13108308102,110.283337622132
+"379",23,16,1,1,"All other causes","Black","Female","Minnesota",1984,"West North Central","Midwest","MN",118.853180894397,137.569996085568,159.202401257709,138.093331675995
+"380",23,16,1,1,"Cancers","Black","Female","Minnesota",1984,"West North Central","Midwest","MN",166.064458162814,192.316747166312,221.89170769402,192.948833076483
+"381",23,16,1,1,"Cardiovascular","Black","Female","Minnesota",1984,"West North Central","Midwest","MN",311.829596230576,365.643933722532,422.439998849261,365.725621787703
+"382",23,16,1,1,"Communicable","Black","Female","Minnesota",1984,"West North Central","Midwest","MN",40.380711170398,52.6008893130941,72.6288830663207,53.7071860027765
+"383",23,16,1,1,"Injuries","Black","Female","Minnesota",1984,"West North Central","Midwest","MN",38.1068754740937,44.1415659277872,52.2442651823598,44.3694045462727
+"384",23,16,1,1,"Non-communicable","Black","Female","Minnesota",1984,"West North Central","Midwest","MN",66.6513080769769,80.2405965981183,101.054427877368,81.2530936394256
+"385",23,17,0,0,"All other causes","White","Male","Minnesota",1985,"West North Central","Midwest","MN",120.229760703332,123.550544001607,127.438570466819,123.679121778302
+"386",23,17,0,0,"Cancers","White","Male","Minnesota",1985,"West North Central","Midwest","MN",239.820796128848,244.968991762629,249.715453728181,244.950202473957
+"387",23,17,0,0,"Cardiovascular","White","Male","Minnesota",1985,"West North Central","Midwest","MN",529.557451536832,540.185652562549,550.122691980637,540.117715590551
+"388",23,17,0,0,"Communicable","White","Male","Minnesota",1985,"West North Central","Midwest","MN",54.1648121718389,57.8510717544826,61.510677361633,57.8441555556762
+"389",23,17,0,0,"Injuries","White","Male","Minnesota",1985,"West North Central","Midwest","MN",69.9380000593672,72.1439298360577,74.4415508700185,72.1154175146884
+"390",23,17,0,0,"Non-communicable","White","Male","Minnesota",1985,"West North Central","Midwest","MN",92.2949201206356,95.3457939639865,98.2883139273153,95.3079598532537
+"391",23,17,0,1,"All other causes","White","Female","Minnesota",1985,"West North Central","Midwest","MN",85.6460341080994,88.0352706995745,90.5384895342032,88.0838376611561
+"392",23,17,0,1,"Cancers","White","Female","Minnesota",1985,"West North Central","Midwest","MN",156.786368865064,159.741049634256,162.939624937328,159.784113898614
+"393",23,17,0,1,"Cardiovascular","White","Female","Minnesota",1985,"West North Central","Midwest","MN",321.1074325848,326.731974043877,332.86489049346,326.700679688697
+"394",23,17,0,1,"Communicable","White","Female","Minnesota",1985,"West North Central","Midwest","MN",32.9968545040164,34.6953445437888,36.5135464325132,34.7360714390903
+"395",23,17,0,1,"Injuries","White","Female","Minnesota",1985,"West North Central","Midwest","MN",27.6025034634727,28.7069408081914,29.7928783363299,28.7063074301099
+"396",23,17,0,1,"Non-communicable","White","Female","Minnesota",1985,"West North Central","Midwest","MN",46.00191333308,47.8269718751333,49.7880187269758,47.8439954226506
+"397",23,17,1,0,"All other causes","Black","Male","Minnesota",1985,"West North Central","Midwest","MN",187.961046185697,231.298094946278,280.041571099417,231.792606817357
+"398",23,17,1,0,"Cancers","Black","Male","Minnesota",1985,"West North Central","Midwest","MN",296.341064961753,340.718244942505,405.227397918041,342.814079410783
+"399",23,17,1,0,"Cardiovascular","Black","Male","Minnesota",1985,"West North Central","Midwest","MN",384.07278097364,439.749642706734,504.790690248195,441.381596359667
+"400",23,17,1,0,"Communicable","Black","Male","Minnesota",1985,"West North Central","Midwest","MN",64.3396143554098,81.6537249746243,106.439454350065,82.7880318881742
+"401",23,17,1,0,"Injuries","Black","Male","Minnesota",1985,"West North Central","Midwest","MN",110.59487618921,124.918495669915,141.680592530809,125.153022560626
+"402",23,17,1,0,"Non-communicable","Black","Male","Minnesota",1985,"West North Central","Midwest","MN",94.8908513644992,111.388854976389,130.370979771354,111.780880181234
+"403",23,17,1,1,"All other causes","Black","Female","Minnesota",1985,"West North Central","Midwest","MN",119.357664365627,138.309502061429,160.647190035253,139.143586181453
+"404",23,17,1,1,"Cancers","Black","Female","Minnesota",1985,"West North Central","Midwest","MN",165.514515614379,191.540428534277,225.774460623096,192.064425284076
+"405",23,17,1,1,"Cardiovascular","Black","Female","Minnesota",1985,"West North Central","Midwest","MN",305.45127941961,360.401995937751,414.267145857344,359.330261421772
+"406",23,17,1,1,"Communicable","Black","Female","Minnesota",1985,"West North Central","Midwest","MN",40.9658932877431,53.362332832066,73.2515969020183,54.3755306965762
+"407",23,17,1,1,"Injuries","Black","Female","Minnesota",1985,"West North Central","Midwest","MN",37.5421489703547,43.5306503764554,51.4781408609928,43.7840630891402
+"408",23,17,1,1,"Non-communicable","Black","Female","Minnesota",1985,"West North Central","Midwest","MN",67.0012352641361,81.3379591858311,104.437385643271,82.1882625240601
+"409",23,18,0,0,"All other causes","White","Male","Minnesota",1986,"West North Central","Midwest","MN",120.730629619328,124.348707542338,128.122938929148,124.383809191423
+"410",23,18,0,0,"Cancers","White","Male","Minnesota",1986,"West North Central","Midwest","MN",241.530892247035,246.485407659406,251.650485620384,246.494951868264
+"411",23,18,0,0,"Cardiovascular","White","Male","Minnesota",1986,"West North Central","Midwest","MN",520.294253138866,530.36643183793,540.484921712484,530.291459508756
+"412",23,18,0,0,"Communicable","White","Male","Minnesota",1986,"West North Central","Midwest","MN",59.2009321349972,62.7780943238647,66.6585392520467,62.8248389204695
+"413",23,18,0,0,"Injuries","White","Male","Minnesota",1986,"West North Central","Midwest","MN",69.4957406543654,71.7943993330555,74.2000950274887,71.7853050050869
+"414",23,18,0,0,"Non-communicable","White","Male","Minnesota",1986,"West North Central","Midwest","MN",92.6443356268565,95.619035508483,98.5856567536641,95.6666852426947
+"415",23,18,0,1,"All other causes","White","Female","Minnesota",1986,"West North Central","Midwest","MN",86.8929635866467,89.4944053309571,92.1678143308278,89.4908879569962
+"416",23,18,0,1,"Cancers","White","Female","Minnesota",1986,"West North Central","Midwest","MN",157.357187606032,160.337199717596,163.498804621794,160.332560905174
+"417",23,18,0,1,"Cardiovascular","White","Female","Minnesota",1986,"West North Central","Midwest","MN",313.261648544631,318.641873850979,324.789589079069,318.732981813632
+"418",23,18,0,1,"Communicable","White","Female","Minnesota",1986,"West North Central","Midwest","MN",33.2143444645228,34.8676001115088,36.5977742670081,34.8714548450055
+"419",23,18,0,1,"Injuries","White","Female","Minnesota",1986,"West North Central","Midwest","MN",27.6217989218421,28.6292307113438,29.8281947423287,28.647560490446
+"420",23,18,0,1,"Non-communicable","White","Female","Minnesota",1986,"West North Central","Midwest","MN",47.4192259639134,49.2272557680888,51.207549520165,49.2415108839458
+"421",23,18,1,0,"All other causes","Black","Male","Minnesota",1986,"West North Central","Midwest","MN",188.503148640535,230.017890767861,277.57410748964,230.596728399284
+"422",23,18,1,0,"Cancers","Black","Male","Minnesota",1986,"West North Central","Midwest","MN",295.690762250065,341.425045774372,404.551509367852,343.491387957402
+"423",23,18,1,0,"Cardiovascular","Black","Male","Minnesota",1986,"West North Central","Midwest","MN",375.912546615902,434.880084867632,502.989052279047,436.278116229992
+"424",23,18,1,0,"Communicable","Black","Male","Minnesota",1986,"West North Central","Midwest","MN",66.5274742655291,85.1432045078947,111.061547667442,85.8905979872235
+"425",23,18,1,0,"Injuries","Black","Male","Minnesota",1986,"West North Central","Midwest","MN",110.958689771948,123.758229262689,141.503168620381,124.391773994874
+"426",23,18,1,0,"Non-communicable","Black","Male","Minnesota",1986,"West North Central","Midwest","MN",95.1935653004463,112.818668578099,132.049764628985,113.280043854233
+"427",23,18,1,1,"All other causes","Black","Female","Minnesota",1986,"West North Central","Midwest","MN",121.600799893923,140.614629989856,163.319558585089,141.283108973661
+"428",23,18,1,1,"Cancers","Black","Female","Minnesota",1986,"West North Central","Midwest","MN",164.865750905648,190.962457652433,222.803288019631,191.286710205215
+"429",23,18,1,1,"Cardiovascular","Black","Female","Minnesota",1986,"West North Central","Midwest","MN",302.311523573491,354.832619232601,406.392881462364,354.10280499615
+"430",23,18,1,1,"Communicable","Black","Female","Minnesota",1986,"West North Central","Midwest","MN",40.9151698178912,53.633676175677,73.7268863132561,54.4881338058805
+"431",23,18,1,1,"Injuries","Black","Female","Minnesota",1986,"West North Central","Midwest","MN",37.2554481797771,42.8508591773182,50.7160264637521,43.2023398116756
+"432",23,18,1,1,"Non-communicable","Black","Female","Minnesota",1986,"West North Central","Midwest","MN",68.9795516649481,82.3498878017838,104.138286066794,83.5997616670597
+"433",23,19,0,0,"All other causes","White","Male","Minnesota",1987,"West North Central","Midwest","MN",119.955257856987,123.53004794769,127.078438375456,123.526535280479
+"434",23,19,0,0,"Cancers","White","Male","Minnesota",1987,"West North Central","Midwest","MN",240.735991170759,245.872309783076,250.978703672149,245.89415656058
+"435",23,19,0,0,"Cardiovascular","White","Male","Minnesota",1987,"West North Central","Midwest","MN",496.844055243181,505.899938619101,516.495389361065,506.183692764719
+"436",23,19,0,0,"Communicable","White","Male","Minnesota",1987,"West North Central","Midwest","MN",53.9151115360845,57.2518298951211,60.7984276113394,57.2837709957713
+"437",23,19,0,0,"Injuries","White","Male","Minnesota",1987,"West North Central","Midwest","MN",68.8063303848253,70.9366087788126,73.2211646583985,70.9322214955546
+"438",23,19,0,0,"Non-communicable","White","Male","Minnesota",1987,"West North Central","Midwest","MN",93.5174007109345,96.8976592075187,99.7849037097678,96.8344866636026
+"439",23,19,0,1,"All other causes","White","Female","Minnesota",1987,"West North Central","Midwest","MN",89.6797019949636,92.1905788106082,94.7760007075017,92.1800926629074
+"440",23,19,0,1,"Cancers","White","Female","Minnesota",1987,"West North Central","Midwest","MN",159.099848172647,162.21188510582,165.295457802602,162.247279434598
+"441",23,19,0,1,"Cardiovascular","White","Female","Minnesota",1987,"West North Central","Midwest","MN",300.614813860448,306.165486205495,312.102491550057,306.120193784979
+"442",23,19,0,1,"Communicable","White","Female","Minnesota",1987,"West North Central","Midwest","MN",31.1880830378214,32.8662852453679,34.5765816574423,32.8456581270567
+"443",23,19,0,1,"Injuries","White","Female","Minnesota",1987,"West North Central","Midwest","MN",27.8482599349334,28.9235241336436,30.0998145053147,28.9281046764971
+"444",23,19,0,1,"Non-communicable","White","Female","Minnesota",1987,"West North Central","Midwest","MN",48.7575018427964,50.6169867939544,52.5220371356283,50.6315466177076
+"445",23,19,1,0,"All other causes","Black","Male","Minnesota",1987,"West North Central","Midwest","MN",187.52950720182,230.802545002603,279.270842881635,231.323200167963
+"446",23,19,1,0,"Cancers","Black","Male","Minnesota",1987,"West North Central","Midwest","MN",301.678658730743,343.891086734564,406.075708654508,346.065871274749
+"447",23,19,1,0,"Cardiovascular","Black","Male","Minnesota",1987,"West North Central","Midwest","MN",377.389833830115,432.713692069222,502.824452601208,434.276327575707
+"448",23,19,1,0,"Communicable","Black","Male","Minnesota",1987,"West North Central","Midwest","MN",68.4458303489887,87.1906073545374,114.738592136067,88.3810014068443
+"449",23,19,1,0,"Injuries","Black","Male","Minnesota",1987,"West North Central","Midwest","MN",110.118785614958,123.288238822465,138.764731219336,123.680804726118
+"450",23,19,1,0,"Non-communicable","Black","Male","Minnesota",1987,"West North Central","Midwest","MN",96.1815311854878,114.361332176401,133.362126903547,114.46276236924
+"451",23,19,1,1,"All other causes","Black","Female","Minnesota",1987,"West North Central","Midwest","MN",122.132194447639,143.618521122218,166.923778502952,144.256694625653
+"452",23,19,1,1,"Cancers","Black","Female","Minnesota",1987,"West North Central","Midwest","MN",165.481018397822,190.624613518509,222.707178715777,191.2544089622
+"453",23,19,1,1,"Cardiovascular","Black","Female","Minnesota",1987,"West North Central","Midwest","MN",294.644583884645,340.854512061904,390.428888536766,341.146624440763
+"454",23,19,1,1,"Communicable","Black","Female","Minnesota",1987,"West North Central","Midwest","MN",40.7731466538117,53.6879624509871,72.2266938072459,54.5631523825319
+"455",23,19,1,1,"Injuries","Black","Female","Minnesota",1987,"West North Central","Midwest","MN",36.7203607860624,42.3391077563313,50.0616311736854,42.6249362090234
+"456",23,19,1,1,"Non-communicable","Black","Female","Minnesota",1987,"West North Central","Midwest","MN",69.7443128788993,83.6932691157076,103.618400674851,84.5297163084113
+"457",23,20,0,0,"All other causes","White","Male","Minnesota",1988,"West North Central","Midwest","MN",121.175440307747,124.683894840379,128.193116186889,124.648145010446
+"458",23,20,0,0,"Cancers","White","Male","Minnesota",1988,"West North Central","Midwest","MN",244.405231101255,249.405180794486,253.943575394476,249.369274595402
+"459",23,20,0,0,"Cardiovascular","White","Male","Minnesota",1988,"West North Central","Midwest","MN",488.597726909834,498.339723341681,507.963979665945,498.278968808943
+"460",23,20,0,0,"Communicable","White","Male","Minnesota",1988,"West North Central","Midwest","MN",58.5244303799288,61.8690060717213,65.1878153108994,61.8940712296676
+"461",23,20,0,0,"Injuries","White","Male","Minnesota",1988,"West North Central","Midwest","MN",68.4488261466388,70.515406070916,72.6060875185268,70.5053876061624
+"462",23,20,0,0,"Non-communicable","White","Male","Minnesota",1988,"West North Central","Midwest","MN",94.023986333457,97.3652812333224,100.480669972947,97.3444674056661
+"463",23,20,0,1,"All other causes","White","Female","Minnesota",1988,"West North Central","Midwest","MN",90.6013126892114,93.0703137235005,95.8701872398162,93.1484654902901
+"464",23,20,0,1,"Cancers","White","Female","Minnesota",1988,"West North Central","Midwest","MN",160.523247763897,163.675808389207,166.794812335853,163.668109203001
+"465",23,20,0,1,"Cardiovascular","White","Female","Minnesota",1988,"West North Central","Midwest","MN",295.755035230147,301.244349940724,307.40583225829,301.303400592776
+"466",23,20,0,1,"Communicable","White","Female","Minnesota",1988,"West North Central","Midwest","MN",33.7979147191128,35.6390416071626,37.4072150818201,35.6477662598178
+"467",23,20,0,1,"Injuries","White","Female","Minnesota",1988,"West North Central","Midwest","MN",27.5209339064813,28.6441426866452,29.835257800968,28.6570912997582
+"468",23,20,0,1,"Non-communicable","White","Female","Minnesota",1988,"West North Central","Midwest","MN",50.0583467696845,52.1013729676507,53.9189512308319,52.1021398267179
+"469",23,20,1,0,"All other causes","Black","Male","Minnesota",1988,"West North Central","Midwest","MN",189.628145862885,234.144281884716,283.062192058959,234.139261198593
+"470",23,20,1,0,"Cancers","Black","Male","Minnesota",1988,"West North Central","Midwest","MN",303.65013210994,345.509069880692,407.461359794995,348.182306244275
+"471",23,20,1,0,"Cardiovascular","Black","Male","Minnesota",1988,"West North Central","Midwest","MN",371.717321007381,426.667787383663,494.3433731356,427.767498045863
+"472",23,20,1,0,"Communicable","Black","Male","Minnesota",1988,"West North Central","Midwest","MN",69.895355118201,89.1248462620738,116.828632916618,90.3052163378313
+"473",23,20,1,0,"Injuries","Black","Male","Minnesota",1988,"West North Central","Midwest","MN",109.419999405347,122.099409876883,138.176366099446,122.492773510656
+"474",23,20,1,0,"Non-communicable","Black","Male","Minnesota",1988,"West North Central","Midwest","MN",97.8753533149087,114.887575667108,134.865180679147,115.467807142757
+"475",23,20,1,1,"All other causes","Black","Female","Minnesota",1988,"West North Central","Midwest","MN",124.236188787869,145.089423221361,167.574278154486,145.454891535887
+"476",23,20,1,1,"Cancers","Black","Female","Minnesota",1988,"West North Central","Midwest","MN",165.628530735016,190.936293202858,223.269138207587,191.43378316883
+"477",23,20,1,1,"Cardiovascular","Black","Female","Minnesota",1988,"West North Central","Midwest","MN",285.70197692825,331.162524792548,376.14852321848,331.437792809077
+"478",23,20,1,1,"Communicable","Black","Female","Minnesota",1988,"West North Central","Midwest","MN",41.0153728400188,53.7557065693431,74.9996082427495,54.736301128508
+"479",23,20,1,1,"Injuries","Black","Female","Minnesota",1988,"West North Central","Midwest","MN",36.4907609293709,41.6561677197371,49.6798843987311,42.0089310129157
+"480",23,20,1,1,"Non-communicable","Black","Female","Minnesota",1988,"West North Central","Midwest","MN",70.6014262393749,84.6292735894652,106.032698114057,85.5823360636191
+"481",23,21,0,0,"All other causes","White","Male","Minnesota",1989,"West North Central","Midwest","MN",121.260821896741,124.891737175479,128.674213906299,124.908507801227
+"482",23,21,0,0,"Cancers","White","Male","Minnesota",1989,"West North Central","Midwest","MN",245.933444285566,250.966087385995,256.119049614257,250.957149925923
+"483",23,21,0,0,"Cardiovascular","White","Male","Minnesota",1989,"West North Central","Midwest","MN",460.088433234538,468.53645960666,477.832312691865,468.846315295914
+"484",23,21,0,0,"Communicable","White","Male","Minnesota",1989,"West North Central","Midwest","MN",52.797084786832,55.8793832780115,59.2458704080872,55.8974427675329
+"485",23,21,0,0,"Injuries","White","Male","Minnesota",1989,"West North Central","Midwest","MN",68.2773493411504,70.5370605046463,72.7765169674934,70.5238609387983
+"486",23,21,0,0,"Non-communicable","White","Male","Minnesota",1989,"West North Central","Midwest","MN",96.2925665137735,99.1655821333415,102.254904492439,99.1824208546516
+"487",23,21,0,1,"All other causes","White","Female","Minnesota",1989,"West North Central","Midwest","MN",90.6110403424155,93.1529176226623,95.9601350929004,93.171552892101
+"488",23,21,0,1,"Cancers","White","Female","Minnesota",1989,"West North Central","Midwest","MN",159.385590487732,162.29357649419,165.37736019736,162.316407698309
+"489",23,21,0,1,"Cardiovascular","White","Female","Minnesota",1989,"West North Central","Midwest","MN",271.736352669387,277.096042824221,282.425735532243,277.132328982023
+"490",23,21,0,1,"Communicable","White","Female","Minnesota",1989,"West North Central","Midwest","MN",31.9111624188719,33.6298513750845,35.410205432865,33.6343177446887
+"491",23,21,0,1,"Injuries","White","Female","Minnesota",1989,"West North Central","Midwest","MN",27.3248150743639,28.2822478668458,29.329927759886,28.3063818270348
+"492",23,21,0,1,"Non-communicable","White","Female","Minnesota",1989,"West North Central","Midwest","MN",53.8770431615738,55.8697835999761,57.8391362937465,55.8844054787067
+"493",23,21,1,0,"All other causes","Black","Male","Minnesota",1989,"West North Central","Midwest","MN",189.152588010368,230.414396147409,286.415340145796,232.420855277684
+"494",23,21,1,0,"Cancers","Black","Male","Minnesota",1989,"West North Central","Midwest","MN",308.338325931944,350.925261417739,408.345957326883,353.355630940997
+"495",23,21,1,0,"Cardiovascular","Black","Male","Minnesota",1989,"West North Central","Midwest","MN",364.749133710003,420.797530274447,492.0811788603,422.209020122905
+"496",23,21,1,0,"Communicable","Black","Male","Minnesota",1989,"West North Central","Midwest","MN",72.9898185842704,92.8689154356357,124.459691135342,94.8462401701148
+"497",23,21,1,0,"Injuries","Black","Male","Minnesota",1989,"West North Central","Midwest","MN",109.251597235157,121.112445435201,136.28573268133,121.633843357481
+"498",23,21,1,0,"Non-communicable","Black","Male","Minnesota",1989,"West North Central","Midwest","MN",99.6047568631671,116.13151912084,136.061375729594,116.70241661879
+"499",23,21,1,1,"All other causes","Black","Female","Minnesota",1989,"West North Central","Midwest","MN",125.881976136331,146.824067278529,171.194866953396,147.340565328054
+"500",23,21,1,1,"Cancers","Black","Female","Minnesota",1989,"West North Central","Midwest","MN",166.77511236206,190.723346633467,221.859276853732,191.575635860486
+"501",23,21,1,1,"Cardiovascular","Black","Female","Minnesota",1989,"West North Central","Midwest","MN",268.854004949377,311.053041431507,357.754019466158,311.903578874197
+"502",23,21,1,1,"Communicable","Black","Female","Minnesota",1989,"West North Central","Midwest","MN",40.6727719746521,53.3083840074477,73.9830210175874,54.4459105416649
+"503",23,21,1,1,"Injuries","Black","Female","Minnesota",1989,"West North Central","Midwest","MN",36.124031161617,41.1654269813488,48.4108508320942,41.4793844981021
+"504",23,21,1,1,"Non-communicable","Black","Female","Minnesota",1989,"West North Central","Midwest","MN",71.7388749034132,85.9802641977351,106.591117176704,86.7732738904927
+"505",23,22,0,0,"All other causes","White","Male","Minnesota",1990,"West North Central","Midwest","MN",119.283965075346,123.28953555133,127.157076812954,123.206393897074
+"506",23,22,0,0,"Cancers","White","Male","Minnesota",1990,"West North Central","Midwest","MN",244.733521889979,249.204467420311,254.509029121157,249.28310425135
+"507",23,22,0,0,"Cardiovascular","White","Male","Minnesota",1990,"West North Central","Midwest","MN",447.220811116265,455.980415556723,465.651680417003,456.005460344416
+"508",23,22,0,0,"Communicable","White","Male","Minnesota",1990,"West North Central","Midwest","MN",55.1448971438071,58.4986424448865,61.7120548788502,58.4773228194853
+"509",23,22,0,0,"Injuries","White","Male","Minnesota",1990,"West North Central","Midwest","MN",67.5653508207083,69.8287106278547,71.9881960128723,69.7834810881848
+"510",23,22,0,0,"Non-communicable","White","Male","Minnesota",1990,"West North Central","Midwest","MN",98.279894947659,101.288773847442,104.402139410384,101.33751909351
+"511",23,22,0,1,"All other causes","White","Female","Minnesota",1990,"West North Central","Midwest","MN",92.594538959251,95.0146805412822,97.6939440350979,95.0793232529755
+"512",23,22,0,1,"Cancers","White","Female","Minnesota",1990,"West North Central","Midwest","MN",159.116847779696,162.26504041902,165.204241337231,162.213385966951
+"513",23,22,0,1,"Cardiovascular","White","Female","Minnesota",1990,"West North Central","Midwest","MN",263.18578170358,268.814994078465,274.048945098916,268.772413194029
+"514",23,22,0,1,"Communicable","White","Female","Minnesota",1990,"West North Central","Midwest","MN",32.5010878694341,34.2875779550462,35.931624344782,34.2695444421527
+"515",23,22,0,1,"Injuries","White","Female","Minnesota",1990,"West North Central","Midwest","MN",26.766481852999,27.8028973353105,28.9155715711541,27.8197060662069
+"516",23,22,0,1,"Non-communicable","White","Female","Minnesota",1990,"West North Central","Midwest","MN",56.2615238031002,58.2899337381398,60.5926171174451,58.3063236110426
+"517",23,22,1,0,"All other causes","Black","Male","Minnesota",1990,"West North Central","Midwest","MN",187.376752890443,229.435071332106,286.113995478129,231.299157525487
+"518",23,22,1,0,"Cancers","Black","Male","Minnesota",1990,"West North Central","Midwest","MN",316.086812702606,358.240994773892,417.618492676613,360.489564300786
+"519",23,22,1,0,"Cardiovascular","Black","Male","Minnesota",1990,"West North Central","Midwest","MN",360.518293300164,415.412320723901,486.753644566656,416.605984257622
+"520",23,22,1,0,"Communicable","Black","Male","Minnesota",1990,"West North Central","Midwest","MN",73.7062842928409,94.7848975536705,130.3093729137,97.3128904157525
+"521",23,22,1,0,"Injuries","Black","Male","Minnesota",1990,"West North Central","Midwest","MN",109.105313327143,120.640073002208,134.78264204972,121.254521530436
+"522",23,22,1,0,"Non-communicable","Black","Male","Minnesota",1990,"West North Central","Midwest","MN",100.963411659018,117.623001684648,139.049438850136,118.102796301433
+"523",23,22,1,1,"All other causes","Black","Female","Minnesota",1990,"West North Central","Midwest","MN",128.074919298683,147.501808647489,170.033435172054,148.03153250936
+"524",23,22,1,1,"Cancers","Black","Female","Minnesota",1990,"West North Central","Midwest","MN",166.558115788483,190.855566266386,224.120450452214,192.153482000146
+"525",23,22,1,1,"Cardiovascular","Black","Female","Minnesota",1990,"West North Central","Midwest","MN",257.855419248456,298.822865496932,344.878399691236,299.585544351223
+"526",23,22,1,1,"Communicable","Black","Female","Minnesota",1990,"West North Central","Midwest","MN",40.6257075926057,53.5934231702836,72.7614141050594,54.2753775891556
+"527",23,22,1,1,"Injuries","Black","Female","Minnesota",1990,"West North Central","Midwest","MN",35.3910307740066,40.6262810102988,47.5596365725926,40.8099482433926
+"528",23,22,1,1,"Non-communicable","Black","Female","Minnesota",1990,"West North Central","Midwest","MN",72.9398918030354,87.5870284202051,106.755364729829,88.3358207110888
+"529",23,23,0,0,"All other causes","White","Male","Minnesota",1991,"West North Central","Midwest","MN",122.397904357206,126.151910584842,129.617267523488,126.101205137508
+"530",23,23,0,0,"Cancers","White","Male","Minnesota",1991,"West North Central","Midwest","MN",245.111529288139,250.207978936829,255.06505590149,250.161179578137
+"531",23,23,0,0,"Cardiovascular","White","Male","Minnesota",1991,"West North Central","Midwest","MN",435.429635934103,444.733453461771,453.868037984394,444.58380762538
+"532",23,23,0,0,"Communicable","White","Male","Minnesota",1991,"West North Central","Midwest","MN",57.9224599479271,61.3322937121958,64.8560846053934,61.3289812819293
+"533",23,23,0,0,"Injuries","White","Male","Minnesota",1991,"West North Central","Midwest","MN",66.8375901963304,68.997219072622,71.0882642280328,69.0142768573095
+"534",23,23,0,0,"Non-communicable","White","Male","Minnesota",1991,"West North Central","Midwest","MN",100.781420643764,103.862963950425,107.218577755402,103.926854533348
+"535",23,23,0,1,"All other causes","White","Female","Minnesota",1991,"West North Central","Midwest","MN",92.1080735026339,94.7185068101842,97.4112379221797,94.7218209836096
+"536",23,23,0,1,"Cancers","White","Female","Minnesota",1991,"West North Central","Midwest","MN",160.293728803655,163.307864884485,166.275953996747,163.299409791921
+"537",23,23,0,1,"Cardiovascular","White","Female","Minnesota",1991,"West North Central","Midwest","MN",255.265010651195,260.220848736402,265.552924773966,260.243680367373
+"538",23,23,0,1,"Communicable","White","Female","Minnesota",1991,"West North Central","Midwest","MN",33.0054956521861,34.7178468137583,36.4739265530998,34.7583823409228
+"539",23,23,0,1,"Injuries","White","Female","Minnesota",1991,"West North Central","Midwest","MN",26.6257407759868,27.7026446359294,28.7099388636565,27.6939670812961
+"540",23,23,0,1,"Non-communicable","White","Female","Minnesota",1991,"West North Central","Midwest","MN",57.3165864210155,59.3233409572356,61.3104154029901,59.3141559905656
+"541",23,23,1,0,"All other causes","Black","Male","Minnesota",1991,"West North Central","Midwest","MN",183.928666357747,226.106925457088,278.919233803257,227.417129359013
+"542",23,23,1,0,"Cancers","Black","Male","Minnesota",1991,"West North Central","Midwest","MN",316.850353843738,358.849132992039,415.18861267978,361.17637323077
+"543",23,23,1,0,"Cardiovascular","Black","Male","Minnesota",1991,"West North Central","Midwest","MN",359.08889939494,416.062399108524,484.213559653515,417.129488655586
+"544",23,23,1,0,"Communicable","Black","Male","Minnesota",1991,"West North Central","Midwest","MN",74.1589773793022,95.4431023770076,129.247132642048,97.7818706350741
+"545",23,23,1,0,"Injuries","Black","Male","Minnesota",1991,"West North Central","Midwest","MN",109.266884021189,120.78782253937,134.490851396076,120.96629997805
+"546",23,23,1,0,"Non-communicable","Black","Male","Minnesota",1991,"West North Central","Midwest","MN",101.494082199353,118.247995527447,141.266438181381,119.10135934794
+"547",23,23,1,1,"All other causes","Black","Female","Minnesota",1991,"West North Central","Midwest","MN",127.638052812162,147.406924955684,171.922687815492,147.994518106195
+"548",23,23,1,1,"Cancers","Black","Female","Minnesota",1991,"West North Central","Midwest","MN",165.632148645484,189.346194757039,222.188824278746,190.696316297224
+"549",23,23,1,1,"Cardiovascular","Black","Female","Minnesota",1991,"West North Central","Midwest","MN",259.031794064301,297.745950046448,340.856030103121,297.732085943785
+"550",23,23,1,1,"Communicable","Black","Female","Minnesota",1991,"West North Central","Midwest","MN",40.6142565316403,53.0046065216675,73.6105325756864,53.9320591393437
+"551",23,23,1,1,"Injuries","Black","Female","Minnesota",1991,"West North Central","Midwest","MN",35.0379872118753,40.0326686489937,46.5256793522913,40.243998893041
+"552",23,23,1,1,"Non-communicable","Black","Female","Minnesota",1991,"West North Central","Midwest","MN",74.3390199272809,89.6650399013409,109.858834897656,90.2922859532652
+"553",23,24,0,0,"All other causes","White","Male","Minnesota",1992,"West North Central","Midwest","MN",123.538216227894,127.331544219079,130.939791267463,127.299595047608
+"554",23,24,0,0,"Cancers","White","Male","Minnesota",1992,"West North Central","Midwest","MN",243.781751504428,248.893300571332,254.036878738314,248.900568495403
+"555",23,24,0,0,"Cardiovascular","White","Male","Minnesota",1992,"West North Central","Midwest","MN",415.041944448695,423.680720584302,431.861202089031,423.573790979802
+"556",23,24,0,0,"Communicable","White","Male","Minnesota",1992,"West North Central","Midwest","MN",53.9119066062412,57.0797319514397,60.3876451998634,57.121217897444
+"557",23,24,0,0,"Injuries","White","Male","Minnesota",1992,"West North Central","Midwest","MN",65.9948462632265,68.1053600814791,70.2546964361822,68.0920219780235
+"558",23,24,0,0,"Non-communicable","White","Male","Minnesota",1992,"West North Central","Midwest","MN",101.123927592812,104.309752696664,107.717585444843,104.321669511959
+"559",23,24,0,1,"All other causes","White","Female","Minnesota",1992,"West North Central","Midwest","MN",94.5995883076491,97.3346684687459,99.9071977904115,97.2963243652983
+"560",23,24,0,1,"Cancers","White","Female","Minnesota",1992,"West North Central","Midwest","MN",161.058572841579,164.053938673849,167.068327988738,164.065831744096
+"561",23,24,0,1,"Cardiovascular","White","Female","Minnesota",1992,"West North Central","Midwest","MN",248.447605936587,253.375685222873,258.860142409779,253.452468381054
+"562",23,24,0,1,"Communicable","White","Female","Minnesota",1992,"West North Central","Midwest","MN",31.9384671226549,33.7812677108646,35.4946944678608,33.7780953112489
+"563",23,24,0,1,"Injuries","White","Female","Minnesota",1992,"West North Central","Midwest","MN",26.7226390573852,27.8980451977816,28.9714881915011,27.8884175461752
+"564",23,24,0,1,"Non-communicable","White","Female","Minnesota",1992,"West North Central","Midwest","MN",57.8401505538793,59.9086328178584,62.0200547996498,59.9118335934754
+"565",23,24,1,0,"All other causes","Black","Male","Minnesota",1992,"West North Central","Midwest","MN",180.911220041105,221.547511941198,275.226742074583,223.152868731392
+"566",23,24,1,0,"Cancers","Black","Male","Minnesota",1992,"West North Central","Midwest","MN",318.967953878509,361.432103471719,421.872093314714,363.285689756971
+"567",23,24,1,0,"Cardiovascular","Black","Male","Minnesota",1992,"West North Central","Midwest","MN",363.211718699525,420.262591736693,483.984688980873,421.012438785181
+"568",23,24,1,0,"Communicable","Black","Male","Minnesota",1992,"West North Central","Midwest","MN",74.4656994990607,95.5381049739441,132.012312756256,97.8030797953979
+"569",23,24,1,0,"Injuries","Black","Male","Minnesota",1992,"West North Central","Midwest","MN",108.100093483904,119.61841530992,132.228729164168,119.803684404328
+"570",23,24,1,0,"Non-communicable","Black","Male","Minnesota",1992,"West North Central","Midwest","MN",102.741453897534,119.190168341339,146.061945660983,120.345527934557
+"571",23,24,1,1,"All other causes","Black","Female","Minnesota",1992,"West North Central","Midwest","MN",127.172135005648,147.675693701291,168.963143784492,148.035154485611
+"572",23,24,1,1,"Cancers","Black","Female","Minnesota",1992,"West North Central","Midwest","MN",163.911137020176,188.490726288457,222.38627059253,189.669972670033
+"573",23,24,1,1,"Cardiovascular","Black","Female","Minnesota",1992,"West North Central","Midwest","MN",255.886379373264,294.035850135797,336.375552951616,293.550948282487
+"574",23,24,1,1,"Communicable","Black","Female","Minnesota",1992,"West North Central","Midwest","MN",40.2601803528097,52.4503529909282,71.7445395900515,53.2687000347109
+"575",23,24,1,1,"Injuries","Black","Female","Minnesota",1992,"West North Central","Midwest","MN",34.6026540714349,39.455305124611,46.2007448936322,39.769997036407
+"576",23,24,1,1,"Non-communicable","Black","Female","Minnesota",1992,"West North Central","Midwest","MN",75.8608576679907,92.0496042181789,112.124303916778,92.89352792969
+"577",23,25,0,0,"All other causes","White","Male","Minnesota",1993,"West North Central","Midwest","MN",129.853651842078,133.616823089476,137.403868540354,133.584114288616
+"578",23,25,0,0,"Cancers","White","Male","Minnesota",1993,"West North Central","Midwest","MN",240.866185180999,245.586514584446,250.388739630729,245.57050216039
+"579",23,25,0,0,"Cardiovascular","White","Male","Minnesota",1993,"West North Central","Midwest","MN",416.843908468201,425.694297347819,434.31224264792,425.601624175558
+"580",23,25,0,0,"Communicable","White","Male","Minnesota",1993,"West North Central","Midwest","MN",58.6243670318107,62.0684147518216,65.8455634774348,62.1115885933694
+"581",23,25,0,0,"Injuries","White","Male","Minnesota",1993,"West North Central","Midwest","MN",65.6547483195758,67.7519925951873,69.8144993081772,67.7431690767522
+"582",23,25,0,0,"Non-communicable","White","Male","Minnesota",1993,"West North Central","Midwest","MN",102.007799170998,105.359238081264,109.065209020584,105.427495910788
+"583",23,25,0,1,"All other causes","White","Female","Minnesota",1993,"West North Central","Midwest","MN",100.957963874432,103.500717627209,106.117102038215,103.535853996339
+"584",23,25,0,1,"Cancers","White","Female","Minnesota",1993,"West North Central","Midwest","MN",160.188277222053,163.327455390811,166.342805620922,163.282422323255
+"585",23,25,0,1,"Cardiovascular","White","Female","Minnesota",1993,"West North Central","Midwest","MN",246.482249062462,251.407251649164,256.218279697188,251.436050999196
+"586",23,25,0,1,"Communicable","White","Female","Minnesota",1993,"West North Central","Midwest","MN",32.4411119410281,33.9621236376454,35.6197404841118,33.9916495495735
+"587",23,25,0,1,"Injuries","White","Female","Minnesota",1993,"West North Central","Midwest","MN",26.9844005983141,28.0382117914883,29.1788668669699,28.0376453285155
+"588",23,25,0,1,"Non-communicable","White","Female","Minnesota",1993,"West North Central","Midwest","MN",61.0608134169899,63.1648442959475,65.4466950243283,63.1831796677384
+"589",23,25,1,0,"All other causes","Black","Male","Minnesota",1993,"West North Central","Midwest","MN",178.195388674723,218.1724996922,269.203006966345,219.164252543019
+"590",23,25,1,0,"Cancers","Black","Male","Minnesota",1993,"West North Central","Midwest","MN",321.125711222217,363.102232852034,422.005449973412,364.893860169568
+"591",23,25,1,0,"Cardiovascular","Black","Male","Minnesota",1993,"West North Central","Midwest","MN",372.669409268183,427.231564736113,495.057068248316,428.182122614121
+"592",23,25,1,0,"Communicable","Black","Male","Minnesota",1993,"West North Central","Midwest","MN",74.5795588649746,94.9386749847111,128.197700366924,96.6322724063517
+"593",23,25,1,0,"Injuries","Black","Male","Minnesota",1993,"West North Central","Midwest","MN",108.257267458314,119.173165618001,131.966527742756,119.343709544552
+"594",23,25,1,0,"Non-communicable","Black","Male","Minnesota",1993,"West North Central","Midwest","MN",103.02031839035,120.001725609202,145.888548202417,121.222178836291
+"595",23,25,1,1,"All other causes","Black","Female","Minnesota",1993,"West North Central","Midwest","MN",129.798622243739,148.794388219065,171.207036717886,148.899874178984
+"596",23,25,1,1,"Cancers","Black","Female","Minnesota",1993,"West North Central","Midwest","MN",160.330544079784,185.392743823187,215.517857549249,185.578579405338
+"597",23,25,1,1,"Cardiovascular","Black","Female","Minnesota",1993,"West North Central","Midwest","MN",255.824874575167,293.616261304716,332.814266847862,293.930225244796
+"598",23,25,1,1,"Communicable","Black","Female","Minnesota",1993,"West North Central","Midwest","MN",39.3289374522326,51.8991425980844,68.7804071397865,52.6190243343841
+"599",23,25,1,1,"Injuries","Black","Female","Minnesota",1993,"West North Central","Midwest","MN",34.1336853167552,38.7760540852858,45.3955672739098,39.1370419096058
+"600",23,25,1,1,"Non-communicable","Black","Female","Minnesota",1993,"West North Central","Midwest","MN",77.4070070473628,94.6129547073249,114.97309267628,95.3473119113583
+"601",23,26,0,0,"All other causes","White","Male","Minnesota",1994,"West North Central","Midwest","MN",133.430597247,137.254061191049,141.217753428017,137.252574772501
+"602",23,26,0,0,"Cancers","White","Male","Minnesota",1994,"West North Central","Midwest","MN",241.190347185791,246.089591377883,250.94364670339,246.083639747792
+"603",23,26,0,0,"Cardiovascular","White","Male","Minnesota",1994,"West North Central","Midwest","MN",404.641573312937,412.381849153206,420.742949351279,412.365808293594
+"604",23,26,0,0,"Communicable","White","Male","Minnesota",1994,"West North Central","Midwest","MN",55.6913996692669,59.0978279669461,62.3841287096094,59.0614319890446
+"605",23,26,0,0,"Injuries","White","Male","Minnesota",1994,"West North Central","Midwest","MN",65.7536815225144,67.8742182228403,69.9736362293947,67.8936520119736
+"606",23,26,0,0,"Non-communicable","White","Male","Minnesota",1994,"West North Central","Midwest","MN",101.252319070532,104.352979287219,107.690239877557,104.391381574736
+"607",23,26,0,1,"All other causes","White","Female","Minnesota",1994,"West North Central","Midwest","MN",105.877568791484,108.62170429593,111.347717124466,108.602421457633
+"608",23,26,0,1,"Cancers","White","Female","Minnesota",1994,"West North Central","Midwest","MN",158.700128813878,161.571748905278,164.617344638233,161.615106956946
+"609",23,26,0,1,"Cardiovascular","White","Female","Minnesota",1994,"West North Central","Midwest","MN",237.849351622966,242.328973105226,247.140256179655,242.333695571489
+"610",23,26,0,1,"Communicable","White","Female","Minnesota",1994,"West North Central","Midwest","MN",30.2103974398774,31.6601428148837,33.21254072928,31.6944544707417
+"611",23,26,0,1,"Injuries","White","Female","Minnesota",1994,"West North Central","Midwest","MN",27.2997490446979,28.4315472815965,29.5435625746134,28.4308202081219
+"612",23,26,0,1,"Non-communicable","White","Female","Minnesota",1994,"West North Central","Midwest","MN",62.2772879320812,64.2985987416168,66.5439840465363,64.3252471739788
+"613",23,26,1,0,"All other causes","Black","Male","Minnesota",1994,"West North Central","Midwest","MN",176.244490545315,217.130809050416,265.570241828636,217.936252707872
+"614",23,26,1,0,"Cancers","Black","Male","Minnesota",1994,"West North Central","Midwest","MN",313.15237848885,354.203436694789,412.919526187168,356.886819912195
+"615",23,26,1,0,"Cardiovascular","Black","Male","Minnesota",1994,"West North Central","Midwest","MN",361.522581784037,412.202132446025,477.423968540608,413.402821621584
+"616",23,26,1,0,"Communicable","Black","Male","Minnesota",1994,"West North Central","Midwest","MN",75.4984968063769,95.8544274125408,134.724659976275,98.0917657782671
+"617",23,26,1,0,"Injuries","Black","Male","Minnesota",1994,"West North Central","Midwest","MN",107.25594527256,118.60170552079,130.399079832801,118.572751539262
+"618",23,26,1,0,"Non-communicable","Black","Male","Minnesota",1994,"West North Central","Midwest","MN",103.50954281216,120.012515424542,145.767584244437,121.746330842908
+"619",23,26,1,1,"All other causes","Black","Female","Minnesota",1994,"West North Central","Midwest","MN",132.496981983436,150.118822872077,173.962675855239,150.806900004372
+"620",23,26,1,1,"Cancers","Black","Female","Minnesota",1994,"West North Central","Midwest","MN",157.172753228282,182.26968807556,212.481864373985,182.317157064738
+"621",23,26,1,1,"Cardiovascular","Black","Female","Minnesota",1994,"West North Central","Midwest","MN",265.669732362885,302.392486502982,342.078107579592,302.012333149503
+"622",23,26,1,1,"Communicable","Black","Female","Minnesota",1994,"West North Central","Midwest","MN",39.1547151966357,50.9592999868416,66.703976709952,51.5842849723712
+"623",23,26,1,1,"Injuries","Black","Female","Minnesota",1994,"West North Central","Midwest","MN",33.2098268349977,38.3951587664537,44.4651901549462,38.5943792358954
+"624",23,26,1,1,"Non-communicable","Black","Female","Minnesota",1994,"West North Central","Midwest","MN",80.2487188073537,96.7779948072559,115.747386091366,97.443964028709
+"625",23,27,0,0,"All other causes","White","Male","Minnesota",1995,"West North Central","Midwest","MN",133.92390230807,137.611904518317,141.79919940019,137.733621297658
+"626",23,27,0,0,"Cancers","White","Male","Minnesota",1995,"West North Central","Midwest","MN",238.779438833455,243.345436357151,248.687909862739,243.444488542277
+"627",23,27,0,0,"Cardiovascular","White","Male","Minnesota",1995,"West North Central","Midwest","MN",395.542841175436,403.995414221393,412.127297019778,404.062512775189
+"628",23,27,0,0,"Communicable","White","Male","Minnesota",1995,"West North Central","Midwest","MN",53.8598362321299,56.8926960355992,60.1394610489582,56.9596646041894
+"629",23,27,0,0,"Injuries","White","Male","Minnesota",1995,"West North Central","Midwest","MN",65.8681976804951,68.128765210018,70.2013174521187,68.0847227562527
+"630",23,27,0,0,"Non-communicable","White","Male","Minnesota",1995,"West North Central","Midwest","MN",103.550787606575,106.888145389797,110.199083900756,106.828297925718
+"631",23,27,0,1,"All other causes","White","Female","Minnesota",1995,"West North Central","Midwest","MN",107.999704758553,110.771645770874,113.558142877821,110.746176212518
+"632",23,27,0,1,"Cancers","White","Female","Minnesota",1995,"West North Central","Midwest","MN",158.445975988133,161.643171841871,164.7692750948,161.652529746345
+"633",23,27,0,1,"Cardiovascular","White","Female","Minnesota",1995,"West North Central","Midwest","MN",238.043998966032,242.831340899403,247.471174771828,242.871828157574
+"634",23,27,0,1,"Communicable","White","Female","Minnesota",1995,"West North Central","Midwest","MN",30.5713575201824,32.0308823979487,33.4898392923288,32.0486657746105
+"635",23,27,0,1,"Injuries","White","Female","Minnesota",1995,"West North Central","Midwest","MN",27.4680679138824,28.4821128899092,29.660311225743,28.4939802521692
+"636",23,27,0,1,"Non-communicable","White","Female","Minnesota",1995,"West North Central","Midwest","MN",64.7289942873533,66.7889979452841,68.9099866445732,66.8134422604927
+"637",23,27,1,0,"All other causes","Black","Male","Minnesota",1995,"West North Central","Midwest","MN",174.86250544625,213.627218258516,254.646116179276,213.760474385415
+"638",23,27,1,0,"Cancers","Black","Male","Minnesota",1995,"West North Central","Midwest","MN",306.171944589241,345.555900427717,399.42991145298,348.140729012563
+"639",23,27,1,0,"Cardiovascular","Black","Male","Minnesota",1995,"West North Central","Midwest","MN",351.41167902212,398.207982895488,459.926578504249,399.050302689985
+"640",23,27,1,0,"Communicable","Black","Male","Minnesota",1995,"West North Central","Midwest","MN",74.63239941124,95.9116493594776,136.249592167143,97.5699780111058
+"641",23,27,1,0,"Injuries","Black","Male","Minnesota",1995,"West North Central","Midwest","MN",105.190369468653,116.972210757999,129.37927211792,117.009201703179
+"642",23,27,1,0,"Non-communicable","Black","Male","Minnesota",1995,"West North Central","Midwest","MN",103.263157273131,120.071977224836,146.208721350072,122.084069304492
+"643",23,27,1,1,"All other causes","Black","Female","Minnesota",1995,"West North Central","Midwest","MN",132.979169407424,150.782171654785,175.805699541848,151.645054279926
+"644",23,27,1,1,"Cancers","Black","Female","Minnesota",1995,"West North Central","Midwest","MN",153.983381815706,178.695859207277,206.099301763822,179.035890540553
+"645",23,27,1,1,"Cardiovascular","Black","Female","Minnesota",1995,"West North Central","Midwest","MN",264.475252325161,302.649033038996,345.01755980282,302.973612571607
+"646",23,27,1,1,"Communicable","Black","Female","Minnesota",1995,"West North Central","Midwest","MN",38.4579292175379,49.8945437945455,65.6388895659599,50.4141264829798
+"647",23,27,1,1,"Injuries","Black","Female","Minnesota",1995,"West North Central","Midwest","MN",32.7647465917684,37.7688199373619,44.3694471161484,37.9144469039195
+"648",23,27,1,1,"Non-communicable","Black","Female","Minnesota",1995,"West North Central","Midwest","MN",81.1656302390018,98.7509541316556,119.206627843138,99.0603776337563
+"649",23,28,0,0,"All other causes","White","Male","Minnesota",1996,"West North Central","Midwest","MN",138.599845880188,142.725213975928,146.598414136553,142.723688026851
+"650",23,28,0,0,"Cancers","White","Male","Minnesota",1996,"West North Central","Midwest","MN",236.328591058562,240.94270174283,245.423581375096,240.928786676954
+"651",23,28,0,0,"Cardiovascular","White","Male","Minnesota",1996,"West North Central","Midwest","MN",382.666785011866,389.875027145718,397.800629745706,389.872233857053
+"652",23,28,0,0,"Communicable","White","Male","Minnesota",1996,"West North Central","Midwest","MN",46.7506998632749,49.7008511663724,52.6368145371623,49.7034128071439
+"653",23,28,0,0,"Injuries","White","Male","Minnesota",1996,"West North Central","Midwest","MN",65.7490585292847,67.8102833535476,70.1947359633207,67.8608413751668
+"654",23,28,0,0,"Non-communicable","White","Male","Minnesota",1996,"West North Central","Midwest","MN",105.733824408253,109.144329831182,112.582924341854,109.143929030032
+"655",23,28,0,1,"All other causes","White","Female","Minnesota",1996,"West North Central","Midwest","MN",110.045134851697,112.983110460227,116.029670007166,112.956919191564
+"656",23,28,0,1,"Cancers","White","Female","Minnesota",1996,"West North Central","Midwest","MN",158.126373032592,161.113370875487,164.241147905143,161.135164039023
+"657",23,28,0,1,"Cardiovascular","White","Female","Minnesota",1996,"West North Central","Midwest","MN",228.934891626714,233.654044399241,238.402463791382,233.679631853734
+"658",23,28,0,1,"Communicable","White","Female","Minnesota",1996,"West North Central","Midwest","MN",26.27020501013,27.6354966986283,29.0447356499439,27.6586288913765
+"659",23,28,0,1,"Injuries","White","Female","Minnesota",1996,"West North Central","Midwest","MN",27.3701677339942,28.3709965837428,29.4813627081365,28.3880747747258
+"660",23,28,0,1,"Non-communicable","White","Female","Minnesota",1996,"West North Central","Midwest","MN",66.3072474820774,68.4311540045423,70.6042499957761,68.4364292279718
+"661",23,28,1,0,"All other causes","Black","Male","Minnesota",1996,"West North Central","Midwest","MN",173.067825610061,210.106401895632,250.475121487489,210.23076823608
+"662",23,28,1,0,"Cancers","Black","Male","Minnesota",1996,"West North Central","Midwest","MN",300.059346009653,340.204028881325,388.243133967055,341.300166878096
+"663",23,28,1,0,"Cardiovascular","Black","Male","Minnesota",1996,"West North Central","Midwest","MN",339.600066472364,387.521821382691,443.132790945504,388.73807701479
+"664",23,28,1,0,"Communicable","Black","Male","Minnesota",1996,"West North Central","Midwest","MN",72.3264184434261,92.246621921297,127.975926335897,94.184387347348
+"665",23,28,1,0,"Injuries","Black","Male","Minnesota",1996,"West North Central","Midwest","MN",103.542458216662,113.784992554925,125.736058431482,113.738174754942
+"666",23,28,1,0,"Non-communicable","Black","Male","Minnesota",1996,"West North Central","Midwest","MN",103.701760578636,121.13097016855,148.563870722226,122.636103141823
+"667",23,28,1,1,"All other causes","Black","Female","Minnesota",1996,"West North Central","Midwest","MN",134.387685207951,151.143702235662,176.439194915407,152.271133430218
+"668",23,28,1,1,"Cancers","Black","Female","Minnesota",1996,"West North Central","Midwest","MN",153.27628562219,176.280959219423,204.079017021351,176.603388613031
+"669",23,28,1,1,"Cardiovascular","Black","Female","Minnesota",1996,"West North Central","Midwest","MN",259.102543212811,293.230077958648,335.339480945286,293.912802971959
+"670",23,28,1,1,"Communicable","Black","Female","Minnesota",1996,"West North Central","Midwest","MN",38.1541842695458,48.5184299344469,64.483137271847,49.1773538020863
+"671",23,28,1,1,"Injuries","Black","Female","Minnesota",1996,"West North Central","Midwest","MN",32.0683707080096,37.128635480153,43.7775125502786,37.1953464839929
+"672",23,28,1,1,"Non-communicable","Black","Female","Minnesota",1996,"West North Central","Midwest","MN",82.7463840212573,100.099290939677,120.198413378269,100.493086757582
+"673",23,29,0,0,"All other causes","White","Male","Minnesota",1997,"West North Central","Midwest","MN",140.798339702595,145.027085858201,149.416455074218,145.038834325642
+"674",23,29,0,0,"Cancers","White","Male","Minnesota",1997,"West North Central","Midwest","MN",233.922957875851,238.528016399045,243.322539774782,238.550377243771
+"675",23,29,0,0,"Cardiovascular","White","Male","Minnesota",1997,"West North Central","Midwest","MN",362.573709612431,369.564982658294,377.240069352978,369.674533647318
+"676",23,29,0,0,"Communicable","White","Male","Minnesota",1997,"West North Central","Midwest","MN",43.8671172138522,46.7502480644886,49.4437278634138,46.7672186953419
+"677",23,29,0,0,"Injuries","White","Male","Minnesota",1997,"West North Central","Midwest","MN",65.2699002471803,67.2569624492945,69.4557928040016,67.2673243343721
+"678",23,29,0,0,"Non-communicable","White","Male","Minnesota",1997,"West North Central","Midwest","MN",107.628069390804,110.923506967299,114.275197636952,110.988619270118
+"679",23,29,0,1,"All other causes","White","Female","Minnesota",1997,"West North Central","Midwest","MN",114.805862912246,117.666340171051,120.580660742093,117.654633700717
+"680",23,29,0,1,"Cancers","White","Female","Minnesota",1997,"West North Central","Midwest","MN",156.157375474316,158.990529373861,161.900779030156,159.013219566924
+"681",23,29,0,1,"Cardiovascular","White","Female","Minnesota",1997,"West North Central","Midwest","MN",218.765883919465,223.089517943527,227.53650711295,223.152235331994
+"682",23,29,0,1,"Communicable","White","Female","Minnesota",1997,"West North Central","Midwest","MN",27.3005103478737,28.75374482726,30.2230250541065,28.7713310392625
+"683",23,29,0,1,"Injuries","White","Female","Minnesota",1997,"West North Central","Midwest","MN",27.4425657201006,28.4379341071019,29.6037920239875,28.4764604063609
+"684",23,29,0,1,"Non-communicable","White","Female","Minnesota",1997,"West North Central","Midwest","MN",66.7816038924009,68.9534533524898,71.2973680761414,68.96686105635
+"685",23,29,1,0,"All other causes","Black","Male","Minnesota",1997,"West North Central","Midwest","MN",170.155867151989,206.851192198574,244.979588317834,206.359004429632
+"686",23,29,1,0,"Cancers","Black","Male","Minnesota",1997,"West North Central","Midwest","MN",296.3667479844,334.242411334164,383.977667832934,335.598738173629
+"687",23,29,1,0,"Cardiovascular","Black","Male","Minnesota",1997,"West North Central","Midwest","MN",331.509866138346,376.455164761968,428.587049833056,377.688504409511
+"688",23,29,1,0,"Communicable","Black","Male","Minnesota",1997,"West North Central","Midwest","MN",68.8201459207732,86.3355868522878,116.870240332036,88.3117126822597
+"689",23,29,1,0,"Injuries","Black","Male","Minnesota",1997,"West North Central","Midwest","MN",100.986757283209,111.061460046233,122.069225664336,111.147219503661
+"690",23,29,1,0,"Non-communicable","Black","Male","Minnesota",1997,"West North Central","Midwest","MN",103.648083188253,120.999645451476,150.875714730899,122.974315888091
+"691",23,29,1,1,"All other causes","Black","Female","Minnesota",1997,"West North Central","Midwest","MN",133.162820663879,151.809941538497,177.946876643744,152.690667899884
+"692",23,29,1,1,"Cancers","Black","Female","Minnesota",1997,"West North Central","Midwest","MN",152.972912008595,174.353903109955,201.188101671504,175.147088144423
+"693",23,29,1,1,"Cardiovascular","Black","Female","Minnesota",1997,"West North Central","Midwest","MN",249.771066899172,284.434710434042,323.408572325766,285.403995171204
+"694",23,29,1,1,"Communicable","Black","Female","Minnesota",1997,"West North Central","Midwest","MN",37.0034875966071,46.8492301055103,61.206233070493,47.6604008021022
+"695",23,29,1,1,"Injuries","Black","Female","Minnesota",1997,"West North Central","Midwest","MN",31.3517286704576,36.3011539476888,42.4527640284231,36.3754590588858
+"696",23,29,1,1,"Non-communicable","Black","Female","Minnesota",1997,"West North Central","Midwest","MN",84.3068670356303,101.138324872843,121.618523785092,101.542533734972
+"697",23,30,0,0,"All other causes","White","Male","Minnesota",1998,"West North Central","Midwest","MN",142.814630897573,146.658974431612,150.658378569982,146.690334298563
+"698",23,30,0,0,"Cancers","White","Male","Minnesota",1998,"West North Central","Midwest","MN",230.05446641434,234.538321591034,239.367975659582,234.560229963348
+"699",23,30,0,0,"Cardiovascular","White","Male","Minnesota",1998,"West North Central","Midwest","MN",346.261553693875,353.644504684447,361.601592905876,353.735463016803
+"700",23,30,0,0,"Communicable","White","Male","Minnesota",1998,"West North Central","Midwest","MN",41.302433744409,43.8354712749008,46.6071479613418,43.9115499831189
+"701",23,30,0,0,"Injuries","White","Male","Minnesota",1998,"West North Central","Midwest","MN",64.3765313719105,66.3213797436474,68.3007743499643,66.2858402697497
+"702",23,30,0,0,"Non-communicable","White","Male","Minnesota",1998,"West North Central","Midwest","MN",110.079891829492,113.507196515613,116.981589504291,113.47454915143
+"703",23,30,0,1,"All other causes","White","Female","Minnesota",1998,"West North Central","Midwest","MN",117.811073877954,120.815466917203,123.652910876022,120.819250845349
+"704",23,30,0,1,"Cancers","White","Female","Minnesota",1998,"West North Central","Midwest","MN",155.865784160741,158.612869835243,161.849151483208,158.654743647183
+"705",23,30,0,1,"Cardiovascular","White","Female","Minnesota",1998,"West North Central","Midwest","MN",211.209262941656,215.631012088193,219.945124770384,215.675922092008
+"706",23,30,0,1,"Communicable","White","Female","Minnesota",1998,"West North Central","Midwest","MN",27.7512705486186,29.256984349797,30.7121537602851,29.2390246590272
+"707",23,30,0,1,"Injuries","White","Female","Minnesota",1998,"West North Central","Midwest","MN",27.5270160107226,28.6346896854808,29.7797936250433,28.6536444018245
+"708",23,30,0,1,"Non-communicable","White","Female","Minnesota",1998,"West North Central","Midwest","MN",71.1979341322621,73.7386450037286,76.1021643499759,73.7429447733485
+"709",23,30,1,0,"All other causes","Black","Male","Minnesota",1998,"West North Central","Midwest","MN",168.26212816741,202.986817395465,240.9610394113,203.437878312145
+"710",23,30,1,0,"Cancers","Black","Male","Minnesota",1998,"West North Central","Midwest","MN",290.316070822593,328.440971122683,370.701080432391,328.952754238317
+"711",23,30,1,0,"Cardiovascular","Black","Male","Minnesota",1998,"West North Central","Midwest","MN",324.820142066274,369.323098165102,417.424983562786,368.976414849235
+"712",23,30,1,0,"Communicable","Black","Male","Minnesota",1998,"West North Central","Midwest","MN",64.3814219426507,80.3970639862669,109.811180783631,82.0700164349937
+"713",23,30,1,0,"Injuries","Black","Male","Minnesota",1998,"West North Central","Midwest","MN",99.0607677527314,108.67060632143,119.288206229912,108.77373826217
+"714",23,30,1,0,"Non-communicable","Black","Male","Minnesota",1998,"West North Central","Midwest","MN",104.821726664862,120.790241887241,149.281268222897,122.739489088496
+"715",23,30,1,1,"All other causes","Black","Female","Minnesota",1998,"West North Central","Midwest","MN",132.179262725605,150.446813629447,176.750732417135,151.692468024533
+"716",23,30,1,1,"Cancers","Black","Female","Minnesota",1998,"West North Central","Midwest","MN",152.427314826193,174.396630944217,198.827536504005,174.588102329057
+"717",23,30,1,1,"Cardiovascular","Black","Female","Minnesota",1998,"West North Central","Midwest","MN",234.554807361973,269.740008535566,304.026444697222,270.228714966372
+"718",23,30,1,1,"Communicable","Black","Female","Minnesota",1998,"West North Central","Midwest","MN",36.3470134952461,45.5155745855422,59.9048557530374,46.1893644755884
+"719",23,30,1,1,"Injuries","Black","Female","Minnesota",1998,"West North Central","Midwest","MN",30.3035461722325,35.6780894544185,41.6163517900922,35.691606946126
+"720",23,30,1,1,"Non-communicable","Black","Female","Minnesota",1998,"West North Central","Midwest","MN",84.8679370235361,102.271630102063,122.582253337963,102.553629909674
+"721",23,31,0,0,"All other causes","White","Male","Minnesota",1999,"West North Central","Midwest","MN",143.207365447712,147.108694616668,151.124002179377,147.127013789991
+"722",23,31,0,0,"Cancers","White","Male","Minnesota",1999,"West North Central","Midwest","MN",228.215017923261,232.564621520072,236.998128031308,232.624609023551
+"723",23,31,0,0,"Cardiovascular","White","Male","Minnesota",1999,"West North Central","Midwest","MN",336.456602848574,343.390280481965,350.558169485486,343.309888936094
+"724",23,31,0,0,"Communicable","White","Male","Minnesota",1999,"West North Central","Midwest","MN",37.7374437894633,40.1116096164597,42.6878098992081,40.1403743982136
+"725",23,31,0,0,"Injuries","White","Male","Minnesota",1999,"West North Central","Midwest","MN",63.7635566764007,65.6682930411394,67.8312850401913,65.6821270808435
+"726",23,31,0,0,"Non-communicable","White","Male","Minnesota",1999,"West North Central","Midwest","MN",121.073080387238,124.518929977973,128.457402107946,124.57158968232
+"727",23,31,0,1,"All other causes","White","Female","Minnesota",1999,"West North Central","Midwest","MN",116.939241381466,119.942941100818,122.713925543165,119.95100967992
+"728",23,31,0,1,"Cancers","White","Female","Minnesota",1999,"West North Central","Midwest","MN",154.908101582472,157.722652082827,160.657071022663,157.710909354575
+"729",23,31,0,1,"Cardiovascular","White","Female","Minnesota",1999,"West North Central","Midwest","MN",213.953170219588,218.140848364238,222.885615145612,218.207087788663
+"730",23,31,0,1,"Communicable","White","Female","Minnesota",1999,"West North Central","Midwest","MN",22.2726798383175,23.5194480112849,24.7256531010385,23.5060074602812
+"731",23,31,0,1,"Injuries","White","Female","Minnesota",1999,"West North Central","Midwest","MN",27.7289679241992,28.8114855045148,29.953024045667,28.810206201453
+"732",23,31,0,1,"Non-communicable","White","Female","Minnesota",1999,"West North Central","Midwest","MN",85.1969789953624,87.95004692792,90.3640277612863,87.8971591203338
+"733",23,31,1,0,"All other causes","Black","Male","Minnesota",1999,"West North Central","Midwest","MN",165.882728581008,199.881268912457,235.350002412517,200.110454535288
+"734",23,31,1,0,"Cancers","Black","Male","Minnesota",1999,"West North Central","Midwest","MN",282.990692375039,318.742640718299,361.41148872106,319.482836329378
+"735",23,31,1,0,"Cardiovascular","Black","Male","Minnesota",1999,"West North Central","Midwest","MN",320.504136653611,359.422248760973,405.869906544723,360.686538393251
+"736",23,31,1,0,"Communicable","Black","Male","Minnesota",1999,"West North Central","Midwest","MN",60.3338476638068,74.7661066729501,100.00669691687,75.845761602247
+"737",23,31,1,0,"Injuries","Black","Male","Minnesota",1999,"West North Central","Midwest","MN",96.4061886961054,105.722011845872,115.787228722615,105.736034661147
+"738",23,31,1,0,"Non-communicable","Black","Male","Minnesota",1999,"West North Central","Midwest","MN",104.99751752588,121.137018784365,147.817992437337,122.847839779785
+"739",23,31,1,1,"All other causes","Black","Female","Minnesota",1999,"West North Central","Midwest","MN",132.337486498476,149.250534074236,175.214130050939,150.524702901487
+"740",23,31,1,1,"Cancers","Black","Female","Minnesota",1999,"West North Central","Midwest","MN",151.517068920664,172.813700356218,195.933318320575,172.899908538299
+"741",23,31,1,1,"Cardiovascular","Black","Female","Minnesota",1999,"West North Central","Midwest","MN",233.912975093324,265.178092727027,300.620463095334,265.577077604036
+"742",23,31,1,1,"Communicable","Black","Female","Minnesota",1999,"West North Central","Midwest","MN",35.2526345691918,44.0365211564062,57.8332004456927,44.7733063501737
+"743",23,31,1,1,"Injuries","Black","Female","Minnesota",1999,"West North Central","Midwest","MN",29.9591303950504,34.949331458283,40.6150353327733,34.9927089560347
+"744",23,31,1,1,"Non-communicable","Black","Female","Minnesota",1999,"West North Central","Midwest","MN",85.5429968172226,102.315672703006,122.8621833048,103.057299009525
+"745",23,32,0,0,"All other causes","White","Male","Minnesota",2000,"West North Central","Midwest","MN",141.703783651071,146.059128946529,150.079920153852,146.071600323441
+"746",23,32,0,0,"Cancers","White","Male","Minnesota",2000,"West North Central","Midwest","MN",227.575322001531,231.931708190326,236.50099578674,231.932042351704
+"747",23,32,0,0,"Cardiovascular","White","Male","Minnesota",2000,"West North Central","Midwest","MN",315.585335430155,321.796516880955,328.853803625502,321.936525269382
+"748",23,32,0,0,"Communicable","White","Male","Minnesota",2000,"West North Central","Midwest","MN",30.2059329858084,32.2742207101743,34.67560201729,32.3215826871939
+"749",23,32,0,0,"Injuries","White","Male","Minnesota",2000,"West North Central","Midwest","MN",63.14952895953,65.0486349516877,66.9642043720734,65.0580364759747
+"750",23,32,0,0,"Non-communicable","White","Male","Minnesota",2000,"West North Central","Midwest","MN",122.501972614276,126.09202139951,129.579010742719,126.075580988632
+"751",23,32,0,1,"All other causes","White","Female","Minnesota",2000,"West North Central","Midwest","MN",116.4530338279,119.274653185695,122.215747174015,119.273005837791
+"752",23,32,0,1,"Cancers","White","Female","Minnesota",2000,"West North Central","Midwest","MN",155.721775151883,158.876320015964,161.886968488581,158.835380895555
+"753",23,32,0,1,"Cardiovascular","White","Female","Minnesota",2000,"West North Central","Midwest","MN",200.979825307627,205.109213828193,209.759221050791,205.195494849393
+"754",23,32,0,1,"Communicable","White","Female","Minnesota",2000,"West North Central","Midwest","MN",20.4490899349179,21.5684842104086,22.7709305750335,21.5840057342
+"755",23,32,0,1,"Injuries","White","Female","Minnesota",2000,"West North Central","Midwest","MN",27.2643636877597,28.2885863336837,29.3841596240898,28.3099252029374
+"756",23,32,0,1,"Non-communicable","White","Female","Minnesota",2000,"West North Central","Midwest","MN",88.2691092440153,90.9185950890487,93.7045946819981,90.9219866847053
+"757",23,32,1,0,"All other causes","Black","Male","Minnesota",2000,"West North Central","Midwest","MN",162.224303906222,194.792520702212,229.186994369859,195.762205247377
+"758",23,32,1,0,"Cancers","Black","Male","Minnesota",2000,"West North Central","Midwest","MN",274.19851591631,306.626403879666,344.433944973544,307.291709206114
+"759",23,32,1,0,"Cardiovascular","Black","Male","Minnesota",2000,"West North Central","Midwest","MN",301.263053477052,339.635229543844,382.013171664837,340.94745823355
+"760",23,32,1,0,"Communicable","Black","Male","Minnesota",2000,"West North Central","Midwest","MN",57.2243999484005,71.5116543251361,94.5554027559373,72.4539533410426
+"761",23,32,1,0,"Injuries","Black","Male","Minnesota",2000,"West North Central","Midwest","MN",94.8571166936486,103.993508281526,113.727989215211,104.051684601165
+"762",23,32,1,0,"Non-communicable","Black","Male","Minnesota",2000,"West North Central","Midwest","MN",104.504532914026,121.347044078967,149.831142194307,122.735360141615
+"763",23,32,1,1,"All other causes","Black","Female","Minnesota",2000,"West North Central","Midwest","MN",131.574534265822,149.827272687666,172.968248850196,150.376887570056
+"764",23,32,1,1,"Cancers","Black","Female","Minnesota",2000,"West North Central","Midwest","MN",150.740677356906,170.333281100713,191.660456224536,170.515791947607
+"765",23,32,1,1,"Cardiovascular","Black","Female","Minnesota",2000,"West North Central","Midwest","MN",220.686117418839,250.098083485656,283.281896365997,250.962264283939
+"766",23,32,1,1,"Communicable","Black","Female","Minnesota",2000,"West North Central","Midwest","MN",34.6256593028834,42.8463807872688,56.2859378807949,43.5710656578436
+"767",23,32,1,1,"Injuries","Black","Female","Minnesota",2000,"West North Central","Midwest","MN",29.1668701353831,34.1409149220537,39.5140636393724,34.229353854387
+"768",23,32,1,1,"Non-communicable","Black","Female","Minnesota",2000,"West North Central","Midwest","MN",85.8633488919458,102.291881451592,123.690988670235,103.449119956393
+"769",23,33,0,0,"All other causes","White","Male","Minnesota",2001,"West North Central","Midwest","MN",143.232041099205,147.079882401813,151.318951289546,147.079834173513
+"770",23,33,0,0,"Cancers","White","Male","Minnesota",2001,"West North Central","Midwest","MN",224.203688507164,228.605914654921,233.482601228885,228.679379317165
+"771",23,33,0,0,"Cardiovascular","White","Male","Minnesota",2001,"West North Central","Midwest","MN",305.035607869449,311.622692914932,318.323526261484,311.724048296949
+"772",23,33,0,0,"Communicable","White","Male","Minnesota",2001,"West North Central","Midwest","MN",28.31194236459,30.3422243441133,32.4676283518712,30.3645004489935
+"773",23,33,0,0,"Injuries","White","Male","Minnesota",2001,"West North Central","Midwest","MN",63.5351892136919,65.46758506803,67.5790930626907,65.4815742770116
+"774",23,33,0,0,"Non-communicable","White","Male","Minnesota",2001,"West North Central","Midwest","MN",121.977648097957,125.677708293708,129.469102647517,125.69984004451
+"775",23,33,0,1,"All other causes","White","Female","Minnesota",2001,"West North Central","Midwest","MN",119.518426337943,122.53522771404,125.418570257881,122.520179100433
+"776",23,33,0,1,"Cancers","White","Female","Minnesota",2001,"West North Central","Midwest","MN",154.077643510662,156.872926891282,159.962724474663,156.875179404215
+"777",23,33,0,1,"Cardiovascular","White","Female","Minnesota",2001,"West North Central","Midwest","MN",192.069183486916,196.140299389523,200.221808372941,196.181789801711
+"778",23,33,0,1,"Communicable","White","Female","Minnesota",2001,"West North Central","Midwest","MN",20.260537505738,21.3749440528236,22.4977785867316,21.3801436974437
+"779",23,33,0,1,"Injuries","White","Female","Minnesota",2001,"West North Central","Midwest","MN",27.5451239363747,28.63403904369,29.7280355012405,28.6371923627507
+"780",23,33,0,1,"Non-communicable","White","Female","Minnesota",2001,"West North Central","Midwest","MN",88.293693073754,91.0443205262974,93.6017588247125,91.0043411701643
+"781",23,33,1,0,"All other causes","Black","Male","Minnesota",2001,"West North Central","Midwest","MN",157.582861028385,188.954492127639,219.379130984489,188.964242171463
+"782",23,33,1,0,"Cancers","Black","Male","Minnesota",2001,"West North Central","Midwest","MN",266.378208139703,297.275732905754,331.435066050165,297.885274103177
+"783",23,33,1,0,"Cardiovascular","Black","Male","Minnesota",2001,"West North Central","Midwest","MN",285.975007980865,321.146031288171,358.532891623862,321.412327060674
+"784",23,33,1,0,"Communicable","Black","Male","Minnesota",2001,"West North Central","Midwest","MN",53.9116213520013,67.9135683510216,88.7446794032342,68.6107259624546
+"785",23,33,1,0,"Injuries","Black","Male","Minnesota",2001,"West North Central","Midwest","MN",93.1428222618017,102.056328557587,111.598940881284,102.120420119037
+"786",23,33,1,0,"Non-communicable","Black","Male","Minnesota",2001,"West North Central","Midwest","MN",103.470301928232,121.187054065811,146.016141950348,122.375452983684
+"787",23,33,1,1,"All other causes","Black","Female","Minnesota",2001,"West North Central","Midwest","MN",130.42436662087,149.004881764972,171.924249290456,149.688666785875
+"788",23,33,1,1,"Cancers","Black","Female","Minnesota",2001,"West North Central","Midwest","MN",147.272315349704,165.317656978447,184.753433690211,165.861948285717
+"789",23,33,1,1,"Cardiovascular","Black","Female","Minnesota",2001,"West North Central","Midwest","MN",220.71886462331,246.599785208905,277.589046279933,246.859047650946
+"790",23,33,1,1,"Communicable","Black","Female","Minnesota",2001,"West North Central","Midwest","MN",33.4608528307529,41.5946630480554,54.4117905028794,42.3551351144146
+"791",23,33,1,1,"Injuries","Black","Female","Minnesota",2001,"West North Central","Midwest","MN",28.6782504783663,33.5434417170382,38.819619381881,33.5356977183719
+"792",23,33,1,1,"Non-communicable","Black","Female","Minnesota",2001,"West North Central","Midwest","MN",86.5602714232796,103.55508034507,124.444318728653,104.063918557412
+"793",23,34,0,0,"All other causes","White","Male","Minnesota",2002,"West North Central","Midwest","MN",145.007745429379,149.047740369566,152.994842124496,149.025835737043
+"794",23,34,0,0,"Cancers","White","Male","Minnesota",2002,"West North Central","Midwest","MN",221.862465484683,226.626092722539,231.08523919677,226.577804056447
+"795",23,34,0,0,"Cardiovascular","White","Male","Minnesota",2002,"West North Central","Midwest","MN",291.434322505065,297.553816290975,303.719688013284,297.560984904137
+"796",23,34,0,0,"Communicable","White","Male","Minnesota",2002,"West North Central","Midwest","MN",29.8384129242042,31.8718889505644,34.0324429326903,31.8928814767744
+"797",23,34,0,0,"Injuries","White","Male","Minnesota",2002,"West North Central","Midwest","MN",64.6314124678334,66.6658774576137,68.8227704618154,66.6772728304254
+"798",23,34,0,0,"Non-communicable","White","Male","Minnesota",2002,"West North Central","Midwest","MN",121.896223762998,125.421249644697,129.125551637683,125.392026191287
+"799",23,34,0,1,"All other causes","White","Female","Minnesota",2002,"West North Central","Midwest","MN",122.934418305198,125.604400922683,128.377863364356,125.691885117892
+"800",23,34,0,1,"Cancers","White","Female","Minnesota",2002,"West North Central","Midwest","MN",153.562610455843,156.532466300011,159.511640907277,156.481666867291
+"801",23,34,0,1,"Cardiovascular","White","Female","Minnesota",2002,"West North Central","Midwest","MN",186.234066530783,190.410849802509,194.203913140652,190.307411004009
+"802",23,34,0,1,"Communicable","White","Female","Minnesota",2002,"West North Central","Midwest","MN",20.6554068270095,21.7550813371212,22.9795645142556,21.7858078103841
+"803",23,34,0,1,"Injuries","White","Female","Minnesota",2002,"West North Central","Midwest","MN",27.8428911162914,28.8812747222509,29.9071086061038,28.8761405625859
+"804",23,34,0,1,"Non-communicable","White","Female","Minnesota",2002,"West North Central","Midwest","MN",89.2991491049095,91.9071035105153,94.5912248929678,91.9196283583137
+"805",23,34,1,0,"All other causes","Black","Male","Minnesota",2002,"West North Central","Midwest","MN",154.571823313562,182.808054411012,214.451348787058,183.015209680903
+"806",23,34,1,0,"Cancers","Black","Male","Minnesota",2002,"West North Central","Midwest","MN",256.753568326199,286.507906473512,319.577064459155,287.411798428105
+"807",23,34,1,0,"Cardiovascular","Black","Male","Minnesota",2002,"West North Central","Midwest","MN",268.89886591479,302.774159489448,338.516445540585,302.917223585664
+"808",23,34,1,0,"Communicable","Black","Male","Minnesota",2002,"West North Central","Midwest","MN",49.4877562916686,63.8074833718437,83.4865030975401,64.516166535184
+"809",23,34,1,0,"Injuries","Black","Male","Minnesota",2002,"West North Central","Midwest","MN",90.2823011739596,99.1300277404591,107.848421193721,99.1731091902704
+"810",23,34,1,0,"Non-communicable","Black","Male","Minnesota",2002,"West North Central","Midwest","MN",103.328515704185,120.681120182772,144.389028798622,121.743463416134
+"811",23,34,1,1,"All other causes","Black","Female","Minnesota",2002,"West North Central","Midwest","MN",129.37682630834,148.86272292319,169.179794599094,149.176574911937
+"812",23,34,1,1,"Cancers","Black","Female","Minnesota",2002,"West North Central","Midwest","MN",145.451945645396,162.747962697775,181.551789004283,162.679837531797
+"813",23,34,1,1,"Cardiovascular","Black","Female","Minnesota",2002,"West North Central","Midwest","MN",210.707524642487,238.161327364125,267.982590582883,238.839704940913
+"814",23,34,1,1,"Communicable","Black","Female","Minnesota",2002,"West North Central","Midwest","MN",32.8736729914466,40.5473057277587,54.3001920223659,41.2086908662565
+"815",23,34,1,1,"Injuries","Black","Female","Minnesota",2002,"West North Central","Midwest","MN",27.9678956250941,32.8370116692046,38.3843187983885,32.8694843605252
+"816",23,34,1,1,"Non-communicable","Black","Female","Minnesota",2002,"West North Central","Midwest","MN",87.3084009886677,104.665711184593,125.884998411125,105.098272941319
+"817",23,35,0,0,"All other causes","White","Male","Minnesota",2003,"West North Central","Midwest","MN",144.368457196168,148.283539580252,152.340266196595,148.255971859273
+"818",23,35,0,0,"Cancers","White","Male","Minnesota",2003,"West North Central","Midwest","MN",217.276369916364,221.338930517772,225.570773869488,221.367022259196
+"819",23,35,0,0,"Cardiovascular","White","Male","Minnesota",2003,"West North Central","Midwest","MN",275.461804183278,281.244245612931,286.660902249494,281.211178217586
+"820",23,35,0,0,"Communicable","White","Male","Minnesota",2003,"West North Central","Midwest","MN",28.7768764353157,30.7522341172512,32.6813376491298,30.7023810991027
+"821",23,35,0,0,"Injuries","White","Male","Minnesota",2003,"West North Central","Midwest","MN",64.8776834276833,66.9957717073262,68.9707761139742,66.9911190304244
+"822",23,35,0,0,"Non-communicable","White","Male","Minnesota",2003,"West North Central","Midwest","MN",117.826159044271,121.414976172484,124.969535390714,121.368655832383
+"823",23,35,0,1,"All other causes","White","Female","Minnesota",2003,"West North Central","Midwest","MN",123.189927503568,126.089866271503,129.071188031791,126.117433163998
+"824",23,35,0,1,"Cancers","White","Female","Minnesota",2003,"West North Central","Midwest","MN",151.712913300822,154.427468256606,157.480784837136,154.448120630947
+"825",23,35,0,1,"Cardiovascular","White","Female","Minnesota",2003,"West North Central","Midwest","MN",173.873449192422,177.683570715261,181.456455952676,177.763867614264
+"826",23,35,0,1,"Communicable","White","Female","Minnesota",2003,"West North Central","Midwest","MN",20.1701742034072,21.3436390308198,22.4684136130069,21.3349072187032
+"827",23,35,0,1,"Injuries","White","Female","Minnesota",2003,"West North Central","Midwest","MN",28.1392988797639,29.1590880148687,30.2306626611423,29.1737141144929
+"828",23,35,0,1,"Non-communicable","White","Female","Minnesota",2003,"West North Central","Midwest","MN",86.8942056429493,89.3709752779495,92.1093585274739,89.3909086610181
+"829",23,35,1,0,"All other causes","Black","Male","Minnesota",2003,"West North Central","Midwest","MN",150.710800525658,177.61457614499,207.927639951635,177.738173380504
+"830",23,35,1,0,"Cancers","Black","Male","Minnesota",2003,"West North Central","Midwest","MN",246.772911316874,274.002839478311,305.395283916162,274.7883776348
+"831",23,35,1,0,"Cardiovascular","Black","Male","Minnesota",2003,"West North Central","Midwest","MN",249.58462656231,280.248382463122,313.165806235894,280.939235897208
+"832",23,35,1,0,"Communicable","Black","Male","Minnesota",2003,"West North Central","Midwest","MN",46.8012911189597,59.4586040819094,75.7170169244337,60.0836992945642
+"833",23,35,1,0,"Injuries","Black","Male","Minnesota",2003,"West North Central","Midwest","MN",86.9755012778156,96.0172973932344,104.442540882589,95.9372079541229
+"834",23,35,1,0,"Non-communicable","Black","Male","Minnesota",2003,"West North Central","Midwest","MN",103.602653337846,120.277398490373,143.144460689617,121.243374031765
+"835",23,35,1,1,"All other causes","Black","Female","Minnesota",2003,"West North Central","Midwest","MN",129.621734785975,148.0651888001,168.891421928642,148.721551692953
+"836",23,35,1,1,"Cancers","Black","Female","Minnesota",2003,"West North Central","Midwest","MN",144.296143873801,161.084549298557,181.536702544578,161.528339439853
+"837",23,35,1,1,"Cardiovascular","Black","Female","Minnesota",2003,"West North Central","Midwest","MN",199.83846974575,227.021093635913,255.240273435444,226.901118358758
+"838",23,35,1,1,"Communicable","Black","Female","Minnesota",2003,"West North Central","Midwest","MN",32.3190216684094,39.5711501068779,52.1699088676493,40.2379555341296
+"839",23,35,1,1,"Injuries","Black","Female","Minnesota",2003,"West North Central","Midwest","MN",27.5972309822978,32.4629701844289,37.7813217914339,32.4820635080454
+"840",23,35,1,1,"Non-communicable","Black","Female","Minnesota",2003,"West North Central","Midwest","MN",89.0669581729817,106.31453694578,126.286214745371,106.596718536627
+"841",23,36,0,0,"All other causes","White","Male","Minnesota",2004,"West North Central","Midwest","MN",146.130939228665,149.77973205671,153.515652474477,149.897678898969
+"842",23,36,0,0,"Cancers","White","Male","Minnesota",2004,"West North Central","Midwest","MN",211.061410445076,215.421124316588,219.692840286335,215.409714734758
+"843",23,36,0,0,"Cardiovascular","White","Male","Minnesota",2004,"West North Central","Midwest","MN",258.895187530291,265.077133488147,270.750244617006,264.913551198855
+"844",23,36,0,0,"Communicable","White","Male","Minnesota",2004,"West North Central","Midwest","MN",26.8345440077754,28.6832146603262,30.5265361750629,28.6895543472205
+"845",23,36,0,0,"Injuries","White","Male","Minnesota",2004,"West North Central","Midwest","MN",65.1400889959362,67.1504649827397,69.1822081491429,67.1665745186552
+"846",23,36,0,0,"Non-communicable","White","Male","Minnesota",2004,"West North Central","Midwest","MN",115.615314057557,119.054249066076,122.688613445256,119.129111218667
+"847",23,36,0,1,"All other causes","White","Female","Minnesota",2004,"West North Central","Midwest","MN",120.686000001058,123.415895657664,126.644495449439,123.434925713801
+"848",23,36,0,1,"Cancers","White","Female","Minnesota",2004,"West North Central","Midwest","MN",149.444006300625,152.151706616027,154.85662658841,152.152930631957
+"849",23,36,0,1,"Cardiovascular","White","Female","Minnesota",2004,"West North Central","Midwest","MN",169.55906523659,173.723934474305,177.409075553382,173.647964012813
+"850",23,36,0,1,"Communicable","White","Female","Minnesota",2004,"West North Central","Midwest","MN",18.6753870915219,19.6936901944983,20.7642731117675,19.6917701876428
+"851",23,36,0,1,"Injuries","White","Female","Minnesota",2004,"West North Central","Midwest","MN",28.010568549163,28.972438457327,30.0174162977594,28.9810008504606
+"852",23,36,0,1,"Non-communicable","White","Female","Minnesota",2004,"West North Central","Midwest","MN",83.4407809775342,85.980605353239,88.4544793362071,85.9804509021337
+"853",23,36,1,0,"All other causes","Black","Male","Minnesota",2004,"West North Central","Midwest","MN",148.708574756701,175.027121875986,204.996909576238,175.4015168553
+"854",23,36,1,0,"Cancers","Black","Male","Minnesota",2004,"West North Central","Midwest","MN",238.956865294468,265.140187420509,294.869874872581,265.658216728765
+"855",23,36,1,0,"Cardiovascular","Black","Male","Minnesota",2004,"West North Central","Midwest","MN",236.202572075725,264.804237793661,293.297024460045,264.876236048679
+"856",23,36,1,0,"Communicable","Black","Male","Minnesota",2004,"West North Central","Midwest","MN",44.7111305064968,56.1854676778009,71.8512345816477,56.8020184123434
+"857",23,36,1,0,"Injuries","Black","Male","Minnesota",2004,"West North Central","Midwest","MN",84.7825357933431,93.6479774557829,102.032640995284,93.659029461351
+"858",23,36,1,0,"Non-communicable","Black","Male","Minnesota",2004,"West North Central","Midwest","MN",103.471432217914,119.494194557743,141.798276445718,120.49970361565
+"859",23,36,1,1,"All other causes","Black","Female","Minnesota",2004,"West North Central","Midwest","MN",129.570724535655,147.489705182167,166.639312691278,147.669899737892
+"860",23,36,1,1,"Cancers","Black","Female","Minnesota",2004,"West North Central","Midwest","MN",144.839070102161,160.734576079313,180.408908308262,161.108020832002
+"861",23,36,1,1,"Cardiovascular","Black","Female","Minnesota",2004,"West North Central","Midwest","MN",192.845406138153,216.918597543267,246.182602429997,217.512101076091
+"862",23,36,1,1,"Communicable","Black","Female","Minnesota",2004,"West North Central","Midwest","MN",32.0236401452559,38.9989512953189,51.0433561252934,39.535194096051
+"863",23,36,1,1,"Injuries","Black","Female","Minnesota",2004,"West North Central","Midwest","MN",27.1356418227953,32.0975826446668,37.2413823460334,32.0870306314601
+"864",23,36,1,1,"Non-communicable","Black","Female","Minnesota",2004,"West North Central","Midwest","MN",89.6654771450981,105.984970811234,125.464034787962,106.459456513985
+"865",23,37,0,0,"All other causes","White","Male","Minnesota",2005,"West North Central","Midwest","MN",147.249501062832,151.244800236309,154.98995604931,151.158234193795
+"866",23,37,0,0,"Cancers","White","Male","Minnesota",2005,"West North Central","Midwest","MN",203.936038475822,208.163866114118,212.473276109462,208.165911320648
+"867",23,37,0,0,"Cardiovascular","White","Male","Minnesota",2005,"West North Central","Midwest","MN",251.874316666247,257.951624954159,263.972884020527,257.931380356102
+"868",23,37,0,0,"Communicable","White","Male","Minnesota",2005,"West North Central","Midwest","MN",27.2755107311715,29.1029798172876,31.114850651708,29.0973071190104
+"869",23,37,0,0,"Injuries","White","Male","Minnesota",2005,"West North Central","Midwest","MN",65.4719619645661,67.4419499330322,69.6233601500588,67.4657965415979
+"870",23,37,0,0,"Non-communicable","White","Male","Minnesota",2005,"West North Central","Midwest","MN",114.243264096922,117.609754531438,120.825837441244,117.57472547774
+"871",23,37,0,1,"All other causes","White","Female","Minnesota",2005,"West North Central","Midwest","MN",123.941050705254,127.099766861495,129.91609216455,127.043029947422
+"872",23,37,0,1,"Cancers","White","Female","Minnesota",2005,"West North Central","Midwest","MN",146.495271691924,149.277169394476,152.101336680965,149.272097032902
+"873",23,37,0,1,"Cardiovascular","White","Female","Minnesota",2005,"West North Central","Midwest","MN",162.874299541178,166.399356049681,170.022725221526,166.423410087111
+"874",23,37,0,1,"Communicable","White","Female","Minnesota",2005,"West North Central","Midwest","MN",19.2120595195302,20.3451318340625,21.5399379254779,20.3460936020872
+"875",23,37,0,1,"Injuries","White","Female","Minnesota",2005,"West North Central","Midwest","MN",28.2477882831077,29.2714509192799,30.3695909714129,29.2805196913272
+"876",23,37,0,1,"Non-communicable","White","Female","Minnesota",2005,"West North Central","Midwest","MN",86.8989059105768,89.3941880329854,92.2197051101752,89.425045467943
+"877",23,37,1,0,"All other causes","Black","Male","Minnesota",2005,"West North Central","Midwest","MN",146.443201707879,171.99264032139,199.817989518493,172.635043696955
+"878",23,37,1,0,"Cancers","Black","Male","Minnesota",2005,"West North Central","Midwest","MN",236.627383391181,261.643282963643,293.104939473717,262.605006933962
+"879",23,37,1,0,"Cardiovascular","Black","Male","Minnesota",2005,"West North Central","Midwest","MN",222.974399818823,251.296936113693,278.690799802532,252.026601717466
+"880",23,37,1,0,"Communicable","Black","Male","Minnesota",2005,"West North Central","Midwest","MN",42.0898348445746,52.8331602447,67.1960037238089,53.2537484377504
+"881",23,37,1,0,"Injuries","Black","Male","Minnesota",2005,"West North Central","Midwest","MN",83.3374204203004,91.8089193724797,100.851353326657,91.928942604758
+"882",23,37,1,0,"Non-communicable","Black","Male","Minnesota",2005,"West North Central","Midwest","MN",102.604162161207,118.706180083335,139.658696011183,119.748362552292
+"883",23,37,1,1,"All other causes","Black","Female","Minnesota",2005,"West North Central","Midwest","MN",127.415508775828,145.724954349125,163.89385737573,145.704527520254
+"884",23,37,1,1,"Cancers","Black","Female","Minnesota",2005,"West North Central","Midwest","MN",144.061540627788,159.723420474727,178.551777726311,160.021409686052
+"885",23,37,1,1,"Cardiovascular","Black","Female","Minnesota",2005,"West North Central","Midwest","MN",173.242221095078,197.026141937677,221.606682107591,197.042216943557
+"886",23,37,1,1,"Communicable","Black","Female","Minnesota",2005,"West North Central","Midwest","MN",31.3176325069338,38.3882556914307,50.0148131422885,38.8304233070799
+"887",23,37,1,1,"Injuries","Black","Female","Minnesota",2005,"West North Central","Midwest","MN",26.9304438631821,31.8060565757133,36.9951855448526,31.8188225240651
+"888",23,37,1,1,"Non-communicable","Black","Female","Minnesota",2005,"West North Central","Midwest","MN",88.4843066557841,105.105555493469,123.498066966046,105.398785996079
+"889",23,38,0,0,"All other causes","White","Male","Minnesota",2006,"West North Central","Midwest","MN",149.850929872725,153.80580825509,157.680574073271,153.804537391055
+"890",23,38,0,0,"Cancers","White","Male","Minnesota",2006,"West North Central","Midwest","MN",201.953507409384,205.989718664736,210.179925506563,206.061650942718
+"891",23,38,0,0,"Cardiovascular","White","Male","Minnesota",2006,"West North Central","Midwest","MN",233.425051713082,238.659197442099,244.149003462795,238.706625480778
+"892",23,38,0,0,"Communicable","White","Male","Minnesota",2006,"West North Central","Midwest","MN",23.6628610548587,25.2042815468227,26.9830836055495,25.2243768903553
+"893",23,38,0,0,"Injuries","White","Male","Minnesota",2006,"West North Central","Midwest","MN",65.3604711531899,67.3925803654154,69.5376992138294,67.3964052866159
+"894",23,38,0,0,"Non-communicable","White","Male","Minnesota",2006,"West North Central","Midwest","MN",110.366794718167,113.67192125173,116.957969435563,113.678622068738
+"895",23,38,0,1,"All other causes","White","Female","Minnesota",2006,"West North Central","Midwest","MN",128.647093907738,131.748625834415,134.768922820451,131.746081022224
+"896",23,38,0,1,"Cancers","White","Female","Minnesota",2006,"West North Central","Midwest","MN",144.75395098333,147.447899700938,150.317508485994,147.446447576645
+"897",23,38,0,1,"Cardiovascular","White","Female","Minnesota",2006,"West North Central","Midwest","MN",151.042095690259,154.375974985153,157.728403964975,154.38740576582
+"898",23,38,0,1,"Communicable","White","Female","Minnesota",2006,"West North Central","Midwest","MN",17.4536364325851,18.4850363609566,19.5036827489082,18.4893199337534
+"899",23,38,0,1,"Injuries","White","Female","Minnesota",2006,"West North Central","Midwest","MN",28.5560937553309,29.5618646823278,30.6709884036707,29.5717123408863
+"900",23,38,0,1,"Non-communicable","White","Female","Minnesota",2006,"West North Central","Midwest","MN",81.2303628623475,83.8221570669082,86.2571834969235,83.8074394079461
+"901",23,38,1,0,"All other causes","Black","Male","Minnesota",2006,"West North Central","Midwest","MN",146.285159450615,169.844017268893,197.05428594918,170.084430889136
+"902",23,38,1,0,"Cancers","Black","Male","Minnesota",2006,"West North Central","Midwest","MN",231.362143155979,255.682414175553,283.255410089864,256.277786220896
+"903",23,38,1,0,"Cardiovascular","Black","Male","Minnesota",2006,"West North Central","Midwest","MN",211.552567150137,237.929612568575,264.529484602343,238.032359368065
+"904",23,38,1,0,"Communicable","Black","Male","Minnesota",2006,"West North Central","Midwest","MN",40.3543567848529,51.4618978378448,65.0416461266272,51.9783632701034
+"905",23,38,1,0,"Injuries","Black","Male","Minnesota",2006,"West North Central","Midwest","MN",82.7673747614145,90.3827175614591,98.8966071106154,90.5207892362474
+"906",23,38,1,0,"Non-communicable","Black","Male","Minnesota",2006,"West North Central","Midwest","MN",102.727487910609,118.424935093011,139.061325355606,119.28534036142
+"907",23,38,1,1,"All other causes","Black","Female","Minnesota",2006,"West North Central","Midwest","MN",125.626735894896,143.895352250404,162.294839286608,143.765132816895
+"908",23,38,1,1,"Cancers","Black","Female","Minnesota",2006,"West North Central","Midwest","MN",142.298538616015,157.629423898231,174.354862584543,157.888018907797
+"909",23,38,1,1,"Cardiovascular","Black","Female","Minnesota",2006,"West North Central","Midwest","MN",166.333777144148,187.945337412575,213.348684598936,188.37081406741
+"910",23,38,1,1,"Communicable","Black","Female","Minnesota",2006,"West North Central","Midwest","MN",30.9280881717597,37.7952386010388,48.2288204583553,38.2509547039327
+"911",23,38,1,1,"Injuries","Black","Female","Minnesota",2006,"West North Central","Midwest","MN",26.7498009321552,31.6491450559496,36.9030625072802,31.6893754761625
+"912",23,38,1,1,"Non-communicable","Black","Female","Minnesota",2006,"West North Central","Midwest","MN",88.9692647482356,105.382149471847,122.474638530408,105.58166648531
+"913",23,39,0,0,"All other causes","White","Male","Minnesota",2007,"West North Central","Midwest","MN",150.899223062611,154.853259708627,158.874705049158,154.947663529839
+"914",23,39,0,0,"Cancers","White","Male","Minnesota",2007,"West North Central","Midwest","MN",201.493498626543,205.104559564741,209.078635657598,205.178690143493
+"915",23,39,0,0,"Cardiovascular","White","Male","Minnesota",2007,"West North Central","Midwest","MN",223.797157764404,229.043369682876,234.181861927256,229.081033381606
+"916",23,39,0,0,"Communicable","White","Male","Minnesota",2007,"West North Central","Midwest","MN",24.1475332512745,25.838406838554,27.5209292355334,25.8046524032697
+"917",23,39,0,0,"Injuries","White","Male","Minnesota",2007,"West North Central","Midwest","MN",66.0606011138759,67.9684494593215,69.9934563429857,67.9790559328854
+"918",23,39,0,0,"Non-communicable","White","Male","Minnesota",2007,"West North Central","Midwest","MN",106.639746780133,110.003524085939,113.28749377899,110.052265209257
+"919",23,39,0,1,"All other causes","White","Female","Minnesota",2007,"West North Central","Midwest","MN",127.97555489293,130.86294347916,133.991592167332,130.88626980132
+"920",23,39,0,1,"Cancers","White","Female","Minnesota",2007,"West North Central","Midwest","MN",143.425535596764,146.005143387139,148.959026172336,146.049582009776
+"921",23,39,0,1,"Cardiovascular","White","Female","Minnesota",2007,"West North Central","Midwest","MN",146.112963636456,149.446450409794,152.689555798967,149.432453335118
+"922",23,39,0,1,"Communicable","White","Female","Minnesota",2007,"West North Central","Midwest","MN",16.6799403215664,17.6337763407073,18.5895730136228,17.6276972062626
+"923",23,39,0,1,"Injuries","White","Female","Minnesota",2007,"West North Central","Midwest","MN",29.3493843706102,30.451634727641,31.5982476087784,30.4546900430884
+"924",23,39,0,1,"Non-communicable","White","Female","Minnesota",2007,"West North Central","Midwest","MN",80.0355433010089,82.3406271889262,85.0776920628804,82.41110295224
+"925",23,39,1,0,"All other causes","Black","Male","Minnesota",2007,"West North Central","Midwest","MN",146.350249466825,168.60245284189,195.519550395947,169.032317789452
+"926",23,39,1,0,"Cancers","Black","Male","Minnesota",2007,"West North Central","Midwest","MN",225.271918701734,248.476062361833,275.086266380146,249.283737764895
+"927",23,39,1,0,"Cardiovascular","Black","Male","Minnesota",2007,"West North Central","Midwest","MN",201.696212299087,226.915542507123,253.325992547935,227.534421784395
+"928",23,39,1,0,"Communicable","Black","Male","Minnesota",2007,"West North Central","Midwest","MN",39.2457301542003,50.0544664900575,63.4989879117216,50.1707980524951
+"929",23,39,1,0,"Injuries","Black","Male","Minnesota",2007,"West North Central","Midwest","MN",80.6562194049686,88.6513423906858,96.7657434129793,88.5132511204612
+"930",23,39,1,0,"Non-communicable","Black","Male","Minnesota",2007,"West North Central","Midwest","MN",102.050983784409,118.037613776126,140.373274426837,118.895392758698
+"931",23,39,1,1,"All other causes","Black","Female","Minnesota",2007,"West North Central","Midwest","MN",126.005865272046,144.313208480722,162.246365350161,144.290631613901
+"932",23,39,1,1,"Cancers","Black","Female","Minnesota",2007,"West North Central","Midwest","MN",137.344293346425,153.039004649279,167.777074124697,153.016260960981
+"933",23,39,1,1,"Cardiovascular","Black","Female","Minnesota",2007,"West North Central","Midwest","MN",159.389418509541,180.17357905989,202.965574898279,180.48592098125
+"934",23,39,1,1,"Communicable","Black","Female","Minnesota",2007,"West North Central","Midwest","MN",30.4233526979418,37.4466065011548,47.7092570767941,37.8601209827893
+"935",23,39,1,1,"Injuries","Black","Female","Minnesota",2007,"West North Central","Midwest","MN",26.8954381699885,31.6767813180624,36.7642608471326,31.736939024202
+"936",23,39,1,1,"Non-communicable","Black","Female","Minnesota",2007,"West North Central","Midwest","MN",89.470359934303,105.892139996642,121.592894120736,105.678109214607
+"937",23,40,0,0,"All other causes","White","Male","Minnesota",2008,"West North Central","Midwest","MN",153.725265589971,157.542969276017,161.559107213293,157.602679560427
+"938",23,40,0,0,"Cancers","White","Male","Minnesota",2008,"West North Central","Midwest","MN",198.153040667007,201.926615851203,206.066237144944,201.947730476207
+"939",23,40,0,0,"Cardiovascular","White","Male","Minnesota",2008,"West North Central","Midwest","MN",215.018178668496,219.902972200874,225.091042312334,219.892492959259
+"940",23,40,0,0,"Communicable","White","Male","Minnesota",2008,"West North Central","Midwest","MN",24.4171144661533,26.1000004635684,27.8436574345242,26.1287977589107
+"941",23,40,0,0,"Injuries","White","Male","Minnesota",2008,"West North Central","Midwest","MN",66.5825899794982,68.5487650981628,70.7107879176659,68.5790875610061
+"942",23,40,0,0,"Non-communicable","White","Male","Minnesota",2008,"West North Central","Midwest","MN",108.834651330168,111.986859242847,115.239833049561,111.993936661686
+"943",23,40,0,1,"All other causes","White","Female","Minnesota",2008,"West North Central","Midwest","MN",131.083054342015,134.024180046992,136.896931689077,134.010609754391
+"944",23,40,0,1,"Cancers","White","Female","Minnesota",2008,"West North Central","Midwest","MN",143.564085397991,146.535875841676,149.270341245132,146.547522511955
+"945",23,40,0,1,"Cardiovascular","White","Female","Minnesota",2008,"West North Central","Midwest","MN",141.487629058254,144.767009857322,148.292577798146,144.790451731793
+"946",23,40,0,1,"Communicable","White","Female","Minnesota",2008,"West North Central","Midwest","MN",17.8892271283648,18.8540357657603,19.9438611924825,18.8609708659359
+"947",23,40,0,1,"Injuries","White","Female","Minnesota",2008,"West North Central","Midwest","MN",29.4460469098191,30.5353413070062,31.5875144810668,30.5329752571806
+"948",23,40,0,1,"Non-communicable","White","Female","Minnesota",2008,"West North Central","Midwest","MN",83.7712347025719,86.3921935775031,89.0217617957783,86.3899081775727
+"949",23,40,1,0,"All other causes","Black","Male","Minnesota",2008,"West North Central","Midwest","MN",145.779866108335,165.35811938936,190.419011409904,165.855144597904
+"950",23,40,1,0,"Cancers","Black","Male","Minnesota",2008,"West North Central","Midwest","MN",215.983943212223,240.279434689691,265.049925192983,240.149250564745
+"951",23,40,1,0,"Cardiovascular","Black","Male","Minnesota",2008,"West North Central","Midwest","MN",192.782968027441,216.328786896965,241.551217152897,216.461882850716
+"952",23,40,1,0,"Communicable","Black","Male","Minnesota",2008,"West North Central","Midwest","MN",37.665098160061,47.7590402181526,60.8880134229578,48.0118214462809
+"953",23,40,1,0,"Injuries","Black","Male","Minnesota",2008,"West North Central","Midwest","MN",77.5173192446633,85.7299841747438,94.4090812754521,85.5739491747171
+"954",23,40,1,0,"Non-communicable","Black","Male","Minnesota",2008,"West North Central","Midwest","MN",102.060119211171,117.727201690398,139.468065929676,118.589418581943
+"955",23,40,1,1,"All other causes","Black","Female","Minnesota",2008,"West North Central","Midwest","MN",126.19577312495,142.841491731805,162.379173799959,143.101869777823
+"956",23,40,1,1,"Cancers","Black","Female","Minnesota",2008,"West North Central","Midwest","MN",136.090386586539,151.587678471306,166.370107571248,151.182137297613
+"957",23,40,1,1,"Cardiovascular","Black","Female","Minnesota",2008,"West North Central","Midwest","MN",151.21219697809,172.053792348659,193.67941452504,172.147376360164
+"958",23,40,1,1,"Communicable","Black","Female","Minnesota",2008,"West North Central","Midwest","MN",29.8889163867692,36.4977451225307,47.0839668579751,37.0822997673426
+"959",23,40,1,1,"Injuries","Black","Female","Minnesota",2008,"West North Central","Midwest","MN",26.9360932349978,31.7931095812106,37.1045750693124,31.8609348291438
+"960",23,40,1,1,"Non-communicable","Black","Female","Minnesota",2008,"West North Central","Midwest","MN",88.8017372956232,104.390123335081,119.577937848738,104.274308800508
+"961",23,41,0,0,"All other causes","White","Male","Minnesota",2009,"West North Central","Midwest","MN",153.066510507087,156.84413758269,160.80079143754,156.828037287451
+"962",23,41,0,0,"Cancers","White","Male","Minnesota",2009,"West North Central","Midwest","MN",196.715924483472,200.5113597647,204.563159057704,200.544556435468
+"963",23,41,0,0,"Cardiovascular","White","Male","Minnesota",2009,"West North Central","Midwest","MN",206.998238515514,212.279842175176,217.127639183874,212.19956040181
+"964",23,41,0,0,"Communicable","White","Male","Minnesota",2009,"West North Central","Midwest","MN",22.0029603731627,23.5517650751163,25.1766186860791,23.5614072812983
+"965",23,41,0,0,"Injuries","White","Male","Minnesota",2009,"West North Central","Midwest","MN",67.2842047915631,69.2280188497327,71.3253028737879,69.2391669135227
+"966",23,41,0,0,"Non-communicable","White","Male","Minnesota",2009,"West North Central","Midwest","MN",107.447170784889,110.544103209327,113.651985018401,110.539628121912
+"967",23,41,0,1,"All other causes","White","Female","Minnesota",2009,"West North Central","Midwest","MN",129.911705573688,132.779878595477,136.089691287766,132.844129491467
+"968",23,41,0,1,"Cancers","White","Female","Minnesota",2009,"West North Central","Midwest","MN",141.905685812616,144.478214467142,147.122569945984,144.45140129459
+"969",23,41,0,1,"Cardiovascular","White","Female","Minnesota",2009,"West North Central","Midwest","MN",134.622021137336,137.722279401423,140.856653564838,137.728052640994
+"970",23,41,0,1,"Communicable","White","Female","Minnesota",2009,"West North Central","Midwest","MN",16.795275961095,17.7095431033877,18.7085736743392,17.7298120303813
+"971",23,41,0,1,"Injuries","White","Female","Minnesota",2009,"West North Central","Midwest","MN",29.3979400223479,30.5875963805448,31.6788101006209,30.5763295067948
+"972",23,41,0,1,"Non-communicable","White","Female","Minnesota",2009,"West North Central","Midwest","MN",82.2712430244786,84.7194009473273,87.312379871611,84.7352246755669
+"973",23,41,1,0,"All other causes","Black","Male","Minnesota",2009,"West North Central","Midwest","MN",138.630816627309,158.025084502215,182.337033627589,158.645023378201
+"974",23,41,1,0,"Cancers","Black","Male","Minnesota",2009,"West North Central","Midwest","MN",208.500546782934,229.691277483378,253.220255151532,229.98437504842
+"975",23,41,1,0,"Cardiovascular","Black","Male","Minnesota",2009,"West North Central","Midwest","MN",185.891633076272,209.78613996818,234.515089386757,210.098706486217
+"976",23,41,1,0,"Communicable","Black","Male","Minnesota",2009,"West North Central","Midwest","MN",36.1944721726579,46.111263568548,58.2147892959183,46.4455543803475
+"977",23,41,1,0,"Injuries","Black","Male","Minnesota",2009,"West North Central","Midwest","MN",74.9982181824698,83.3690136772546,92.1889973683564,83.4221092630304
+"978",23,41,1,0,"Non-communicable","Black","Male","Minnesota",2009,"West North Central","Midwest","MN",102.899858436132,117.902911742984,139.516854471128,118.740057540615
+"979",23,41,1,1,"All other causes","Black","Female","Minnesota",2009,"West North Central","Midwest","MN",127.243985122836,145.262451705863,162.884736013314,145.013892992599
+"980",23,41,1,1,"Cancers","Black","Female","Minnesota",2009,"West North Central","Midwest","MN",134.488931789491,149.463810651299,163.881217021924,149.534087844273
+"981",23,41,1,1,"Cardiovascular","Black","Female","Minnesota",2009,"West North Central","Midwest","MN",143.446698019041,164.59765235907,185.231394535837,164.449590032834
+"982",23,41,1,1,"Communicable","Black","Female","Minnesota",2009,"West North Central","Midwest","MN",29.4510031302639,35.98802695452,45.7309619239791,36.4164350522447
+"983",23,41,1,1,"Injuries","Black","Female","Minnesota",2009,"West North Central","Midwest","MN",27.018449416843,31.9693943371884,37.6669921459391,32.0766726823115
+"984",23,41,1,1,"Non-communicable","Black","Female","Minnesota",2009,"West North Central","Midwest","MN",86.9351536056799,101.831526604129,118.48276221658,102.059013005003
+"985",23,42,0,0,"All other causes","White","Male","Minnesota",2010,"West North Central","Midwest","MN",158.084578275555,162.193845470643,165.82379432784,162.082151449285
+"986",23,42,0,0,"Cancers","White","Male","Minnesota",2010,"West North Central","Midwest","MN",194.360824235049,198.356793826143,202.641469606789,198.367951837113
+"987",23,42,0,0,"Cardiovascular","White","Male","Minnesota",2010,"West North Central","Midwest","MN",202.463471824605,207.10524923178,211.960511845885,207.092602379086
+"988",23,42,0,0,"Communicable","White","Male","Minnesota",2010,"West North Central","Midwest","MN",22.9487834438257,24.5380491733901,26.1610897070155,24.5278360664925
+"989",23,42,0,0,"Injuries","White","Male","Minnesota",2010,"West North Central","Midwest","MN",68.0947085818068,70.1554090269667,72.2641029712637,70.1392549689203
+"990",23,42,0,0,"Non-communicable","White","Male","Minnesota",2010,"West North Central","Midwest","MN",107.854478873401,110.928802030535,113.995365218678,110.932333559748
+"991",23,42,0,1,"All other causes","White","Female","Minnesota",2010,"West North Central","Midwest","MN",136.403190511788,139.352501425808,142.500141185396,139.390088918849
+"992",23,42,0,1,"Cancers","White","Female","Minnesota",2010,"West North Central","Midwest","MN",139.456159389834,142.122884591264,144.884627723379,142.145948000908
+"993",23,42,0,1,"Cardiovascular","White","Female","Minnesota",2010,"West North Central","Midwest","MN",133.921040324807,136.924932375631,140.083809598095,136.964513207355
+"994",23,42,0,1,"Communicable","White","Female","Minnesota",2010,"West North Central","Midwest","MN",16.357001180098,17.3381654067898,18.3125099446457,17.3433201596602
+"995",23,42,0,1,"Injuries","White","Female","Minnesota",2010,"West North Central","Midwest","MN",30.2408761030632,31.3818061081075,32.4895798905507,31.3890954849274
+"996",23,42,0,1,"Non-communicable","White","Female","Minnesota",2010,"West North Central","Midwest","MN",83.90837199023,86.4138260886727,88.8603334427578,86.4752016817071
+"997",23,42,1,0,"All other causes","Black","Male","Minnesota",2010,"West North Central","Midwest","MN",136.182908033311,155.430486928786,178.767785914498,155.807133898987
+"998",23,42,1,0,"Cancers","Black","Male","Minnesota",2010,"West North Central","Midwest","MN",195.726343324964,219.409361423612,242.620228917375,219.113218186093
+"999",23,42,1,0,"Cardiovascular","Black","Male","Minnesota",2010,"West North Central","Midwest","MN",183.022842007854,205.136890805415,229.75868957776,205.476845454198
+"1000",23,42,1,0,"Communicable","Black","Male","Minnesota",2010,"West North Central","Midwest","MN",34.6872838169631,45.0790962175472,56.2914567028201,45.1379007213619
+"1001",23,42,1,0,"Injuries","Black","Male","Minnesota",2010,"West North Central","Midwest","MN",74.2686073998962,83.3476748598713,91.8151974047298,83.2682537685855
+"1002",23,42,1,0,"Non-communicable","Black","Male","Minnesota",2010,"West North Central","Midwest","MN",102.46385448966,118.210924843596,138.511582564053,118.714975063348
+"1003",23,42,1,1,"All other causes","Black","Female","Minnesota",2010,"West North Central","Midwest","MN",133.139528276792,150.751457161393,169.001118467755,150.819858460108
+"1004",23,42,1,1,"Cancers","Black","Female","Minnesota",2010,"West North Central","Midwest","MN",136.030032170883,149.744328838405,165.442357691393,150.082341883782
+"1005",23,42,1,1,"Cardiovascular","Black","Female","Minnesota",2010,"West North Central","Midwest","MN",142.917121423061,160.372093989416,180.637891736615,160.717905349021
+"1006",23,42,1,1,"Communicable","Black","Female","Minnesota",2010,"West North Central","Midwest","MN",28.8097922258268,35.6404275820897,45.7617070300902,36.1979052289015
+"1007",23,42,1,1,"Injuries","Black","Female","Minnesota",2010,"West North Central","Midwest","MN",26.8339117725024,32.2642083561226,38.090947442962,32.311220458695
+"1008",23,42,1,1,"Non-communicable","Black","Female","Minnesota",2010,"West North Central","Midwest","MN",85.9145567362728,100.725756297011,116.849179557477,101.086559443536
+"1009",23,43,0,0,"All other causes","White","Male","Minnesota",2011,"West North Central","Midwest","MN",159.576478571179,163.518772028782,167.628955518727,163.557707612377
+"1010",23,43,0,0,"Cancers","White","Male","Minnesota",2011,"West North Central","Midwest","MN",189.545636630378,193.292978691435,197.161043364356,193.33468796491
+"1011",23,43,0,0,"Cardiovascular","White","Male","Minnesota",2011,"West North Central","Midwest","MN",201.165169976997,206.089392603332,210.792890353154,206.089923731973
+"1012",23,43,0,0,"Communicable","White","Male","Minnesota",2011,"West North Central","Midwest","MN",24.1680610697292,25.7569675822219,27.4731697187578,25.7771338490556
+"1013",23,43,0,0,"Injuries","White","Male","Minnesota",2011,"West North Central","Midwest","MN",69.7595472931194,71.7982055052384,73.992201242129,71.8374662486451
+"1014",23,43,0,0,"Non-communicable","White","Male","Minnesota",2011,"West North Central","Midwest","MN",106.99546623668,109.998443062991,113.201151445925,109.983584536693
+"1015",23,43,0,1,"All other causes","White","Female","Minnesota",2011,"West North Central","Midwest","MN",141.028484452759,144.065946111604,147.303143018579,144.066562151648
+"1016",23,43,0,1,"Cancers","White","Female","Minnesota",2011,"West North Central","Midwest","MN",136.623001556665,139.116230494339,141.731823679462,139.122197978396
+"1017",23,43,0,1,"Cardiovascular","White","Female","Minnesota",2011,"West North Central","Midwest","MN",130.740828341362,134.038747325904,137.047499656758,134.001072879696
+"1018",23,43,0,1,"Communicable","White","Female","Minnesota",2011,"West North Central","Midwest","MN",16.5947580548474,17.5490078629214,18.5138442481174,17.5442602499876
+"1019",23,43,0,1,"Injuries","White","Female","Minnesota",2011,"West North Central","Midwest","MN",31.3650845748899,32.6081046823706,33.768628395901,32.5831580048983
+"1020",23,43,0,1,"Non-communicable","White","Female","Minnesota",2011,"West North Central","Midwest","MN",85.0281725292591,87.6099862613332,90.2432397310391,87.6669390873889
+"1021",23,43,1,0,"All other causes","Black","Male","Minnesota",2011,"West North Central","Midwest","MN",135.245625494822,154.882045911846,177.064936902256,155.484655555526
+"1022",23,43,1,0,"Cancers","Black","Male","Minnesota",2011,"West North Central","Midwest","MN",193.240855129313,214.504405860817,236.759157658946,214.815634505529
+"1023",23,43,1,0,"Cardiovascular","Black","Male","Minnesota",2011,"West North Central","Midwest","MN",178.858640111863,201.603311155487,224.20845738989,201.341767039493
+"1024",23,43,1,0,"Communicable","Black","Male","Minnesota",2011,"West North Central","Midwest","MN",34.504300048122,44.0481473821712,57.1263231277553,44.6217230797357
+"1025",23,43,1,0,"Injuries","Black","Male","Minnesota",2011,"West North Central","Midwest","MN",74.9587020006897,83.7348352490045,92.6557502723498,83.8125194187602
+"1026",23,43,1,0,"Non-communicable","Black","Male","Minnesota",2011,"West North Central","Midwest","MN",101.835880501457,118.1305682713,138.097736901461,118.797807607686
+"1027",23,43,1,1,"All other causes","Black","Female","Minnesota",2011,"West North Central","Midwest","MN",138.341586665071,155.141713091164,173.609158972112,155.347312848551
+"1028",23,43,1,1,"Cancers","Black","Female","Minnesota",2011,"West North Central","Midwest","MN",136.307187762726,150.193283900967,165.700842969824,150.314561185984
+"1029",23,43,1,1,"Cardiovascular","Black","Female","Minnesota",2011,"West North Central","Midwest","MN",139.948528535475,159.237281212848,179.856310840517,159.50819076231
+"1030",23,43,1,1,"Communicable","Black","Female","Minnesota",2011,"West North Central","Midwest","MN",27.9155645187374,35.9947180143878,45.8083205750644,36.3511472559114
+"1031",23,43,1,1,"Injuries","Black","Female","Minnesota",2011,"West North Central","Midwest","MN",26.7100287446413,32.4221557307797,38.3860739479877,32.531124335792
+"1032",23,43,1,1,"Non-communicable","Black","Female","Minnesota",2011,"West North Central","Midwest","MN",85.3737788249308,99.8080898963964,114.481147193231,99.6228244305535
+"1033",23,44,0,0,"All other causes","White","Male","Minnesota",2012,"West North Central","Midwest","MN",160.633350784135,164.491855824538,168.50947643246,164.503041435397
+"1034",23,44,0,0,"Cancers","White","Male","Minnesota",2012,"West North Central","Midwest","MN",185.245628953897,188.679221791086,192.600412126652,188.817012498765
+"1035",23,44,0,0,"Cardiovascular","White","Male","Minnesota",2012,"West North Central","Midwest","MN",201.23447885202,205.81785282299,210.135472820355,205.748646813342
+"1036",23,44,0,0,"Communicable","White","Male","Minnesota",2012,"West North Central","Midwest","MN",23.7500964826205,25.4266840795435,27.0778299532519,25.4309800497393
+"1037",23,44,0,0,"Injuries","White","Male","Minnesota",2012,"West North Central","Midwest","MN",69.9729748515701,72.0540062746614,74.1963116845086,72.050568558396
+"1038",23,44,0,0,"Non-communicable","White","Male","Minnesota",2012,"West North Central","Midwest","MN",104.081609058487,107.094546920296,110.069068995616,107.103725991345
+"1039",23,44,0,1,"All other causes","White","Female","Minnesota",2012,"West North Central","Midwest","MN",139.844329765022,142.835712435893,146.08847954856,142.881079842655
+"1040",23,44,0,1,"Cancers","White","Female","Minnesota",2012,"West North Central","Midwest","MN",133.828066946598,136.617333631493,139.419893885747,136.607605184014
+"1041",23,44,0,1,"Cardiovascular","White","Female","Minnesota",2012,"West North Central","Midwest","MN",128.779736201204,131.818262257423,134.818671569951,131.847249135994
+"1042",23,44,0,1,"Communicable","White","Female","Minnesota",2012,"West North Central","Midwest","MN",16.6363008669962,17.5360387003137,18.5652469794961,17.5622594094728
+"1043",23,44,0,1,"Injuries","White","Female","Minnesota",2012,"West North Central","Midwest","MN",31.9242684717725,33.1211368095358,34.3983016558589,33.1345893442168
+"1044",23,44,0,1,"Non-communicable","White","Female","Minnesota",2012,"West North Central","Midwest","MN",84.0021407200186,86.2537077787064,88.7607355834295,86.3113791483927
+"1045",23,44,1,0,"All other causes","Black","Male","Minnesota",2012,"West North Central","Midwest","MN",135.735305527758,155.696558497929,178.36295974998,156.083937254928
+"1046",23,44,1,0,"Cancers","Black","Male","Minnesota",2012,"West North Central","Midwest","MN",191.854256885199,213.299565299263,236.977430957044,213.665978685771
+"1047",23,44,1,0,"Cardiovascular","Black","Male","Minnesota",2012,"West North Central","Midwest","MN",177.065436825332,200.027514960123,223.652875210079,199.850980567937
+"1048",23,44,1,0,"Communicable","Black","Male","Minnesota",2012,"West North Central","Midwest","MN",33.9791060160105,44.743918599235,58.6643573470613,45.3302495439834
+"1049",23,44,1,0,"Injuries","Black","Male","Minnesota",2012,"West North Central","Midwest","MN",76.2194035061731,85.1669080444938,94.4066594459689,85.2425179418317
+"1050",23,44,1,0,"Non-communicable","Black","Male","Minnesota",2012,"West North Central","Midwest","MN",102.050221881023,119.139316191586,139.00086009687,119.61309520844
+"1051",23,44,1,1,"All other causes","Black","Female","Minnesota",2012,"West North Central","Midwest","MN",139.991795910808,158.236247618608,177.694042877177,158.350509489786
+"1052",23,44,1,1,"Cancers","Black","Female","Minnesota",2012,"West North Central","Midwest","MN",135.778324842998,150.489913999837,167.576907530601,150.848842311783
+"1053",23,44,1,1,"Cardiovascular","Black","Female","Minnesota",2012,"West North Central","Midwest","MN",142.26262323481,162.105278757126,181.472838085101,161.541590145225
+"1054",23,44,1,1,"Communicable","Black","Female","Minnesota",2012,"West North Central","Midwest","MN",28.1579562526453,36.0497538524077,46.4469095151017,36.4230650875616
+"1055",23,44,1,1,"Injuries","Black","Female","Minnesota",2012,"West North Central","Midwest","MN",26.8953065076871,32.7465952197671,38.6779098685239,32.8383050138495
+"1056",23,44,1,1,"Non-communicable","Black","Female","Minnesota",2012,"West North Central","Midwest","MN",82.9947972652773,98.096375661254,114.010807937916,98.0606475025102
+"1057",23,45,0,0,"All other causes","White","Male","Minnesota",2013,"West North Central","Midwest","MN",161.256622742298,165.72546242649,169.742412043702,165.62029830351
+"1058",23,45,0,0,"Cancers","White","Male","Minnesota",2013,"West North Central","Midwest","MN",181.868706582317,186.101719039579,190.202554954352,186.09145454225
+"1059",23,45,0,0,"Cardiovascular","White","Male","Minnesota",2013,"West North Central","Midwest","MN",202.182783192617,206.820355672955,211.908941712654,206.852374580143
+"1060",23,45,0,0,"Communicable","White","Male","Minnesota",2013,"West North Central","Midwest","MN",24.6374878458195,26.3887417360958,28.2987594099205,26.4086121705042
+"1061",23,45,0,0,"Injuries","White","Male","Minnesota",2013,"West North Central","Midwest","MN",69.6481374485155,72.0745103116595,74.6518317705566,72.0915118359418
+"1062",23,45,0,0,"Non-communicable","White","Male","Minnesota",2013,"West North Central","Midwest","MN",103.578564405876,106.877572859851,110.021780109196,106.880077195814
+"1063",23,45,0,1,"All other causes","White","Female","Minnesota",2013,"West North Central","Midwest","MN",136.697957529522,140.200232631628,143.627971500242,140.181406880832
+"1064",23,45,0,1,"Cancers","White","Female","Minnesota",2013,"West North Central","Midwest","MN",133.50115931569,136.397137965092,139.33664339061,136.389757381476
+"1065",23,45,0,1,"Cardiovascular","White","Female","Minnesota",2013,"West North Central","Midwest","MN",128.569517517345,131.877314337258,135.25056299173,131.825374689194
+"1066",23,45,0,1,"Communicable","White","Female","Minnesota",2013,"West North Central","Midwest","MN",16.7249713834831,17.7506397836247,18.8888341086145,17.7772566698315
+"1067",23,45,0,1,"Injuries","White","Female","Minnesota",2013,"West North Central","Midwest","MN",32.6450788743513,34.0599684921274,35.459022579766,34.0422710962886
+"1068",23,45,0,1,"Non-communicable","White","Female","Minnesota",2013,"West North Central","Midwest","MN",81.9914609942879,84.7882813990052,87.6139816766032,84.7841669557681
+"1069",23,45,1,0,"All other causes","Black","Male","Minnesota",2013,"West North Central","Midwest","MN",133.803592450488,156.727325427467,182.145153549575,156.75433561551
+"1070",23,45,1,0,"Cancers","Black","Male","Minnesota",2013,"West North Central","Midwest","MN",187.941659941036,211.584988479201,235.202539255735,211.241779036614
+"1071",23,45,1,0,"Cardiovascular","Black","Male","Minnesota",2013,"West North Central","Midwest","MN",178.524186148846,202.152565201863,229.092137657098,202.703240470527
+"1072",23,45,1,0,"Communicable","Black","Male","Minnesota",2013,"West North Central","Midwest","MN",34.564504085222,45.9970337403908,62.878799330146,46.5851615793246
+"1073",23,45,1,0,"Injuries","Black","Male","Minnesota",2013,"West North Central","Midwest","MN",77.3127397810644,86.9213593470649,97.294486905139,86.9485810716939
+"1074",23,45,1,0,"Non-communicable","Black","Male","Minnesota",2013,"West North Central","Midwest","MN",100.918123811235,118.837958423152,140.000500605033,119.634854762451
+"1075",23,45,1,1,"All other causes","Black","Female","Minnesota",2013,"West North Central","Midwest","MN",139.623077280521,159.064506936187,180.589447843712,159.647202352213
+"1076",23,45,1,1,"Cancers","Black","Female","Minnesota",2013,"West North Central","Midwest","MN",133.021655062959,150.465413429427,167.313939523187,150.250831149349
+"1077",23,45,1,1,"Cardiovascular","Black","Female","Minnesota",2013,"West North Central","Midwest","MN",142.845985363598,165.853904359829,188.908143444282,165.94936049846
+"1078",23,45,1,1,"Communicable","Black","Female","Minnesota",2013,"West North Central","Midwest","MN",27.9692402043469,36.43005434684,48.2166959717509,36.8125583876572
+"1079",23,45,1,1,"Injuries","Black","Female","Minnesota",2013,"West North Central","Midwest","MN",26.8191794641252,33.1909669743246,39.4800828458873,33.1734451648953
+"1080",23,45,1,1,"Non-communicable","Black","Female","Minnesota",2013,"West North Central","Midwest","MN",80.3617833785145,95.9933987610688,112.734386158034,96.2971650107593

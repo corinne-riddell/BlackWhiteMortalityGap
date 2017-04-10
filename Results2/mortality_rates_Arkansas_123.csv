@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",3,1,0,0,"All other causes","White","Male","Arkansas",1969,"West South Central","South","AR",156.416445230847,163.465856940418,170.229589246513,163.407263964555
+"2",3,1,0,0,"Cancers","White","Male","Arkansas",1969,"West South Central","South","AR",215.918826170474,222.86048352913,230.495636760322,222.936792918095
+"3",3,1,0,0,"Cardiovascular","White","Male","Arkansas",1969,"West South Central","South","AR",827.934187994196,849.176361957828,869.707703571211,849.17751638249
+"4",3,1,0,0,"Communicable","White","Male","Arkansas",1969,"West South Central","South","AR",60.4883747600449,65.5030276714557,70.9555584693991,65.5501463846174
+"5",3,1,0,0,"Injuries","White","Male","Arkansas",1969,"West South Central","South","AR",127.738611683929,132.526127306462,137.6570666447,132.532087617634
+"6",3,1,0,0,"Non-communicable","White","Male","Arkansas",1969,"West South Central","South","AR",83.9211605078726,88.2298316493295,92.9032366682669,88.3093909259603
+"7",3,1,0,1,"All other causes","White","Female","Arkansas",1969,"West South Central","South","AR",102.033899167707,106.84484523086,112.386806876536,106.956651478386
+"8",3,1,0,1,"Cancers","White","Female","Arkansas",1969,"West South Central","South","AR",138.447530369555,142.523200001755,147.434541081453,142.68106106845
+"9",3,1,0,1,"Cardiovascular","White","Female","Arkansas",1969,"West South Central","South","AR",512.887814010403,526.682167553513,541.140227509633,526.689418132034
+"10",3,1,0,1,"Communicable","White","Female","Arkansas",1969,"West South Central","South","AR",33.3986680225661,36.7940806945333,40.4424009132563,36.8552585232839
+"11",3,1,0,1,"Injuries","White","Female","Arkansas",1969,"West South Central","South","AR",44.6623245725587,47.1733804770328,50.0939535694822,47.2177314971358
+"12",3,1,0,1,"Non-communicable","White","Female","Arkansas",1969,"West South Central","South","AR",38.6854084933937,41.5559303140225,44.5013050084594,41.5399474899082
+"13",3,1,1,0,"All other causes","Black","Male","Arkansas",1969,"West South Central","South","AR",240.447537359293,254.166459715818,269.24877893864,254.397462755123
+"14",3,1,1,0,"Cancers","Black","Male","Arkansas",1969,"West South Central","South","AR",217.130450162998,232.414156606082,248.662408622699,232.494416380973
+"15",3,1,1,0,"Cardiovascular","Black","Male","Arkansas",1969,"West South Central","South","AR",795.687569577133,828.88268108015,864.362534144617,829.607762248186
+"16",3,1,1,0,"Communicable","Black","Male","Arkansas",1969,"West South Central","South","AR",73.2360740142987,83.2800430463731,94.2200385766954,83.4177415934231
+"17",3,1,1,0,"Injuries","Black","Male","Arkansas",1969,"West South Central","South","AR",212.697673202579,229.507797111849,246.305893148476,229.248298423547
+"18",3,1,1,0,"Non-communicable","Black","Male","Arkansas",1969,"West South Central","South","AR",72.0773783887505,80.1913948964937,89.0611078304731,80.3116758610027
+"19",3,1,1,1,"All other causes","Black","Female","Arkansas",1969,"West South Central","South","AR",153.332021770412,163.323147822873,173.807611352562,163.481067400465
+"20",3,1,1,1,"Cancers","Black","Female","Arkansas",1969,"West South Central","South","AR",145.441443319547,154.569800789693,163.289836829489,154.459558954628
+"21",3,1,1,1,"Cardiovascular","Black","Female","Arkansas",1969,"West South Central","South","AR",613.113751324645,640.216234540494,669.446253680318,640.371639593843
+"22",3,1,1,1,"Communicable","Black","Female","Arkansas",1969,"West South Central","South","AR",39.6100201830692,46.0003916968778,53.3291544007867,46.1395186873818
+"23",3,1,1,1,"Injuries","Black","Female","Arkansas",1969,"West South Central","South","AR",50.7842327024609,57.6900771908576,66.685061990151,57.9073213013225
+"24",3,1,1,1,"Non-communicable","Black","Female","Arkansas",1969,"West South Central","South","AR",62.5327375906127,69.3401704663031,77.1117281197242,69.3773352086557
+"25",3,2,0,0,"All other causes","White","Male","Arkansas",1970,"West South Central","South","AR",157.517870143929,163.447800851512,169.57289210073,163.478062907303
+"26",3,2,0,0,"Cancers","White","Male","Arkansas",1970,"West South Central","South","AR",217.970198557198,223.95510177218,230.421652233389,224.033407272122
+"27",3,2,0,0,"Cardiovascular","White","Male","Arkansas",1970,"West South Central","South","AR",817.370215773496,835.275444924596,852.308455324474,835.137696062594
+"28",3,2,0,0,"Communicable","White","Male","Arkansas",1970,"West South Central","South","AR",58.7065997789779,62.985957417087,67.5744958285494,62.9884612610658
+"29",3,2,0,0,"Injuries","White","Male","Arkansas",1970,"West South Central","South","AR",127.374292738195,131.796061856081,136.18146000185,131.890105622366
+"30",3,2,0,0,"Non-communicable","White","Male","Arkansas",1970,"West South Central","South","AR",83.3305794464885,87.3488579663295,91.517445652976,87.4156699501593
+"31",3,2,0,1,"All other causes","White","Female","Arkansas",1970,"West South Central","South","AR",101.242514200945,105.310652434796,109.897532861125,105.370963010188
+"32",3,2,0,1,"Cancers","White","Female","Arkansas",1970,"West South Central","South","AR",138.681403570592,142.54535480059,146.655631654716,142.543782797221
+"33",3,2,0,1,"Cardiovascular","White","Female","Arkansas",1970,"West South Central","South","AR",506.190951702897,519.340970455637,532.622384327285,519.383426276002
+"34",3,2,0,1,"Communicable","White","Female","Arkansas",1970,"West South Central","South","AR",32.2967380413343,34.9736105532598,37.840329394354,34.9999335036373
+"35",3,2,0,1,"Injuries","White","Female","Arkansas",1970,"West South Central","South","AR",44.2096390310667,46.3454331735024,48.7220515619381,46.3695448216077
+"36",3,2,0,1,"Non-communicable","White","Female","Arkansas",1970,"West South Central","South","AR",39.1408933206317,41.605441507781,44.1671944267804,41.6091360754864
+"37",3,2,1,0,"All other causes","Black","Male","Arkansas",1970,"West South Central","South","AR",241.548018907261,253.840905996634,267.187443768926,253.83367311894
+"38",3,2,1,0,"Cancers","Black","Male","Arkansas",1970,"West South Central","South","AR",220.744860963724,234.003956351681,248.358982111028,234.282524144117
+"39",3,2,1,0,"Cardiovascular","Black","Male","Arkansas",1970,"West South Central","South","AR",798.292901231644,828.987498321152,858.790445665659,828.989821475496
+"40",3,2,1,0,"Communicable","Black","Male","Arkansas",1970,"West South Central","South","AR",69.7521513905031,78.0169341385506,86.7158832447371,78.0251688240293
+"41",3,2,1,0,"Injuries","Black","Male","Arkansas",1970,"West South Central","South","AR",213.312257654194,227.425978054392,242.866701476375,227.574609855275
+"42",3,2,1,0,"Non-communicable","Black","Male","Arkansas",1970,"West South Central","South","AR",72.0208921990849,79.2831782055411,87.7891271749833,79.3514042897275
+"43",3,2,1,1,"All other causes","Black","Female","Arkansas",1970,"West South Central","South","AR",155.246326203618,164.335362961447,174.266652142429,164.286753445747
+"44",3,2,1,1,"Cancers","Black","Female","Arkansas",1970,"West South Central","South","AR",147.004532083323,154.818087685574,163.363167321528,154.969050499966
+"45",3,2,1,1,"Cardiovascular","Black","Female","Arkansas",1970,"West South Central","South","AR",596.126056043222,619.241087152727,642.706404026483,619.385276235571
+"46",3,2,1,1,"Communicable","Black","Female","Arkansas",1970,"West South Central","South","AR",39.7299141721035,45.5120084367715,52.6708663834104,45.6745459431051
+"47",3,2,1,1,"Injuries","Black","Female","Arkansas",1970,"West South Central","South","AR",50.791665104918,57.1866110503119,65.2836577620845,57.3751241858896
+"48",3,2,1,1,"Non-communicable","Black","Female","Arkansas",1970,"West South Central","South","AR",63.0889443874016,68.9675599999601,75.5798944488635,69.0977117224308
+"49",3,3,0,0,"All other causes","White","Male","Arkansas",1971,"West South Central","South","AR",156.463385575367,161.974367420678,168.086611501972,161.919906920887
+"50",3,3,0,0,"Cancers","White","Male","Arkansas",1971,"West South Central","South","AR",220.698265533501,226.801760197206,233.003973757693,226.735197649688
+"51",3,3,0,0,"Cardiovascular","White","Male","Arkansas",1971,"West South Central","South","AR",809.90777472493,828.080435885216,845.737046273708,828.215248561643
+"52",3,3,0,0,"Communicable","White","Male","Arkansas",1971,"West South Central","South","AR",55.5711471844752,59.7167727894338,63.996404655136,59.7348144408637
+"53",3,3,0,0,"Injuries","White","Male","Arkansas",1971,"West South Central","South","AR",126.850353076544,131.150350888405,135.714036759505,131.151643857922
+"54",3,3,0,0,"Non-communicable","White","Male","Arkansas",1971,"West South Central","South","AR",84.7278784097375,88.6890795963238,92.660251016609,88.7000928089103
+"55",3,3,0,1,"All other causes","White","Female","Arkansas",1971,"West South Central","South","AR",99.8102933682227,103.587399870233,107.641430372828,103.615244587408
+"56",3,3,0,1,"Cancers","White","Female","Arkansas",1971,"West South Central","South","AR",139.361105124172,142.975008910105,146.723901674161,142.989854991093
+"57",3,3,0,1,"Cardiovascular","White","Female","Arkansas",1971,"West South Central","South","AR",498.648349458884,510.767432961918,523.212342847709,510.915325897588
+"58",3,3,0,1,"Communicable","White","Female","Arkansas",1971,"West South Central","South","AR",31.0611265333244,33.3061285956841,35.8877833340413,33.3107306459496
+"59",3,3,0,1,"Injuries","White","Female","Arkansas",1971,"West South Central","South","AR",43.7407282492606,45.9246854706647,48.144109425728,45.921056282534
+"60",3,3,0,1,"Non-communicable","White","Female","Arkansas",1971,"West South Central","South","AR",39.7355960415413,41.813076962505,44.2148704059519,41.8668150450742
+"61",3,3,1,0,"All other causes","Black","Male","Arkansas",1971,"West South Central","South","AR",237.536615313936,249.973468557112,262.666360555407,250.204531403251
+"62",3,3,1,0,"Cancers","Black","Male","Arkansas",1971,"West South Central","South","AR",224.109807617835,236.416929186231,249.834861574114,236.472998441213
+"63",3,3,1,0,"Cardiovascular","Black","Male","Arkansas",1971,"West South Central","South","AR",784.501338614682,810.269344813614,839.779757758365,810.922554491963
+"64",3,3,1,0,"Communicable","Black","Male","Arkansas",1971,"West South Central","South","AR",66.3212196957224,73.6131719367316,81.4783492470797,73.6729519104214
+"65",3,3,1,0,"Injuries","Black","Male","Arkansas",1971,"West South Central","South","AR",214.264535183328,226.736464724559,241.000282319549,226.894758520269
+"66",3,3,1,0,"Non-communicable","Black","Male","Arkansas",1971,"West South Central","South","AR",72.4065454759841,79.2563191204815,87.3720300398581,79.2937518582083
+"67",3,3,1,1,"All other causes","Black","Female","Arkansas",1971,"West South Central","South","AR",156.023897431682,164.128420197138,173.290429634197,164.187505627458
+"68",3,3,1,1,"Cancers","Black","Female","Arkansas",1971,"West South Central","South","AR",147.697698920458,155.222854367092,163.242207300026,155.324597382296
+"69",3,3,1,1,"Cardiovascular","Black","Female","Arkansas",1971,"West South Central","South","AR",588.32929029846,609.956942016636,634.822222659541,610.529258619878
+"70",3,3,1,1,"Communicable","Black","Female","Arkansas",1971,"West South Central","South","AR",38.8035039287811,44.4819277914074,50.1871645446017,44.5519341137894
+"71",3,3,1,1,"Injuries","Black","Female","Arkansas",1971,"West South Central","South","AR",50.29821850314,56.5100042458616,63.8864628807991,56.7667851696227
+"72",3,3,1,1,"Non-communicable","Black","Female","Arkansas",1971,"West South Central","South","AR",63.3817627276205,69.4969706445557,75.7747979504353,69.4440761349899
+"73",3,4,0,0,"All other causes","White","Male","Arkansas",1972,"West South Central","South","AR",154.102732528345,159.299701872675,165.50520878173,159.382713438883
+"74",3,4,0,0,"Cancers","White","Male","Arkansas",1972,"West South Central","South","AR",224.438707095973,230.388601106851,236.563482970426,230.343162616902
+"75",3,4,0,0,"Cardiovascular","White","Male","Arkansas",1972,"West South Central","South","AR",814.44818394752,831.037672421023,848.265905991262,831.169704444476
+"76",3,4,0,0,"Communicable","White","Male","Arkansas",1972,"West South Central","South","AR",56.7554849675352,60.7457151814085,65.3904337451699,60.8894162556894
+"77",3,4,0,0,"Injuries","White","Male","Arkansas",1972,"West South Central","South","AR",126.19167457568,130.223913862019,134.37615614754,130.163895793009
+"78",3,4,0,0,"Non-communicable","White","Male","Arkansas",1972,"West South Central","South","AR",87.8724628952386,91.7537858267319,95.7433344763121,91.7600703563028
+"79",3,4,0,1,"All other causes","White","Female","Arkansas",1972,"West South Central","South","AR",96.8850066844796,100.600335903019,104.516494134738,100.607690050778
+"80",3,4,0,1,"Cancers","White","Female","Arkansas",1972,"West South Central","South","AR",139.073918704923,142.859435898569,146.481443857701,142.814797816923
+"81",3,4,0,1,"Cardiovascular","White","Female","Arkansas",1972,"West South Central","South","AR",504.809595520159,516.576038920132,529.219713149735,516.440901133093
+"82",3,4,0,1,"Communicable","White","Female","Arkansas",1972,"West South Central","South","AR",31.254585137161,33.5679916674088,36.3133456491575,33.6350799056477
+"83",3,4,0,1,"Injuries","White","Female","Arkansas",1972,"West South Central","South","AR",43.4592009156174,45.4198132876511,47.6718303888843,45.4908950081127
+"84",3,4,0,1,"Non-communicable","White","Female","Arkansas",1972,"West South Central","South","AR",39.9693578014073,42.2007402837677,44.5691581101488,42.2788673393846
+"85",3,4,1,0,"All other causes","Black","Male","Arkansas",1972,"West South Central","South","AR",235.384863849556,246.830011159557,259.059503577936,246.940249301455
+"86",3,4,1,0,"Cancers","Black","Male","Arkansas",1972,"West South Central","South","AR",227.932687483023,241.127418099701,254.765332647222,241.063335081726
+"87",3,4,1,0,"Cardiovascular","Black","Male","Arkansas",1972,"West South Central","South","AR",781.734502602724,808.262151535549,835.333966835538,808.482570237003
+"88",3,4,1,0,"Communicable","Black","Male","Arkansas",1972,"West South Central","South","AR",63.1025298002286,70.2090715795224,77.7582090592722,70.170643167692
+"89",3,4,1,0,"Injuries","Black","Male","Arkansas",1972,"West South Central","South","AR",213.190049662315,225.656486651838,239.83384560958,225.813591388411
+"90",3,4,1,0,"Non-communicable","Black","Male","Arkansas",1972,"West South Central","South","AR",72.296725280019,79.4607200201665,86.8016389017382,79.4558168835116
+"91",3,4,1,1,"All other causes","Black","Female","Arkansas",1972,"West South Central","South","AR",155.631422488249,164.419643625232,173.634204844545,164.396810688342
+"92",3,4,1,1,"Cancers","Black","Female","Arkansas",1972,"West South Central","South","AR",147.54526371603,154.658889655736,162.574573895688,154.765475894732
+"93",3,4,1,1,"Cardiovascular","Black","Female","Arkansas",1972,"West South Central","South","AR",581.401935588728,604.045241070861,627.038553921086,603.9989635678
+"94",3,4,1,1,"Communicable","Black","Female","Arkansas",1972,"West South Central","South","AR",38.2744121503756,43.6213788883171,49.7569996280615,43.6638030730826
+"95",3,4,1,1,"Injuries","Black","Female","Arkansas",1972,"West South Central","South","AR",50.1365951947084,56.1751622536267,63.2610626068573,56.3223300881084
+"96",3,4,1,1,"Non-communicable","Black","Female","Arkansas",1972,"West South Central","South","AR",63.5008822380823,69.2966537885011,75.2738291966059,69.3394502121198
+"97",3,5,0,0,"All other causes","White","Male","Arkansas",1973,"West South Central","South","AR",149.35463192753,154.511451290153,159.943389417356,154.631872342644
+"98",3,5,0,0,"Cancers","White","Male","Arkansas",1973,"West South Central","South","AR",230.006595197862,235.531464323662,241.454725271709,235.506813527291
+"99",3,5,0,0,"Cardiovascular","White","Male","Arkansas",1973,"West South Central","South","AR",818.686873649211,836.734065360851,855.751281941935,836.623187258363
+"100",3,5,0,0,"Communicable","White","Male","Arkansas",1973,"West South Central","South","AR",56.580570081506,60.6930033068655,65.2331045850218,60.6886911340683
+"101",3,5,0,0,"Injuries","White","Male","Arkansas",1973,"West South Central","South","AR",123.641745598951,127.427828804295,131.363743864435,127.4064672336
+"102",3,5,0,0,"Non-communicable","White","Male","Arkansas",1973,"West South Central","South","AR",88.4569642823073,92.1885650766168,96.0326187139175,92.1362173090801
+"103",3,5,0,1,"All other causes","White","Female","Arkansas",1973,"West South Central","South","AR",97.0588869796744,100.915365268843,104.718704873476,100.879842247865
+"104",3,5,0,1,"Cancers","White","Female","Arkansas",1973,"West South Central","South","AR",138.835044593086,142.851622535717,146.350774390395,142.841043896271
+"105",3,5,0,1,"Cardiovascular","White","Female","Arkansas",1973,"West South Central","South","AR",501.220855750707,513.782267495902,526.491931872206,513.966180861783
+"106",3,5,0,1,"Communicable","White","Female","Arkansas",1973,"West South Central","South","AR",29.7326366010582,32.0930367981422,34.373497895416,32.0705091028308
+"107",3,5,0,1,"Injuries","White","Female","Arkansas",1973,"West South Central","South","AR",42.4061329740537,44.2789891094474,46.4176402772595,44.3184627419847
+"108",3,5,0,1,"Non-communicable","White","Female","Arkansas",1973,"West South Central","South","AR",40.3736775740679,42.669384140123,44.7623847081821,42.6374994257447
+"109",3,5,1,0,"All other causes","Black","Male","Arkansas",1973,"West South Central","South","AR",236.810758221762,248.017386447994,260.152802610753,248.066387646385
+"110",3,5,1,0,"Cancers","Black","Male","Arkansas",1973,"West South Central","South","AR",235.358436035209,248.587325124966,261.379137766914,248.759054053607
+"111",3,5,1,0,"Cardiovascular","Black","Male","Arkansas",1973,"West South Central","South","AR",773.526085784157,800.088895222757,826.101161626262,800.169372276161
+"112",3,5,1,0,"Communicable","Black","Male","Arkansas",1973,"West South Central","South","AR",60.9887863565054,67.935670703242,75.8225762015279,67.9609434424017
+"113",3,5,1,0,"Injuries","Black","Male","Arkansas",1973,"West South Central","South","AR",209.24960039641,221.243626596878,233.776542253718,221.213761148683
+"114",3,5,1,0,"Non-communicable","Black","Male","Arkansas",1973,"West South Central","South","AR",72.9460030330171,79.9696265715952,87.0746235623561,79.8626874609581
+"115",3,5,1,1,"All other causes","Black","Female","Arkansas",1973,"West South Central","South","AR",155.774449918832,163.98857419677,172.816801970174,164.024273916064
+"116",3,5,1,1,"Cancers","Black","Female","Arkansas",1973,"West South Central","South","AR",148.204414184233,154.862764267737,162.202560276232,154.959310749299
+"117",3,5,1,1,"Cardiovascular","Black","Female","Arkansas",1973,"West South Central","South","AR",566.998875870937,588.263404135518,611.925252061828,588.224295612692
+"118",3,5,1,1,"Communicable","Black","Female","Arkansas",1973,"West South Central","South","AR",37.4567618391206,42.4410409299986,48.1031008210413,42.454795424684
+"119",3,5,1,1,"Injuries","Black","Female","Arkansas",1973,"West South Central","South","AR",49.2537734244988,55.2492678359341,61.5861012524585,55.3042395260242
+"120",3,5,1,1,"Non-communicable","Black","Female","Arkansas",1973,"West South Central","South","AR",63.7759238737192,69.335573122836,75.288466122291,69.2734001481404
+"121",3,6,0,0,"All other causes","White","Male","Arkansas",1974,"West South Central","South","AR",146.741412573643,151.665572265615,156.763983513354,151.695055798259
+"122",3,6,0,0,"Cancers","White","Male","Arkansas",1974,"West South Central","South","AR",232.989406054287,238.634646014273,244.502647656712,238.657658976338
+"123",3,6,0,0,"Cardiovascular","White","Male","Arkansas",1974,"West South Central","South","AR",793.463978320216,810.345017073191,828.62514421002,810.472607827876
+"124",3,6,0,0,"Communicable","White","Male","Arkansas",1974,"West South Central","South","AR",54.1397093239349,58.1682415611761,62.0925501422694,58.1915919100166
+"125",3,6,0,0,"Injuries","White","Male","Arkansas",1974,"West South Central","South","AR",120.106043549177,123.724677326281,127.788437300397,123.773078833792
+"126",3,6,0,0,"Non-communicable","White","Male","Arkansas",1974,"West South Central","South","AR",87.9944022657417,91.4056847246086,95.1678469501486,91.4355735144172
+"127",3,6,0,1,"All other causes","White","Female","Arkansas",1974,"West South Central","South","AR",96.9891813238215,100.76097054327,104.518539112895,100.746002710112
+"128",3,6,0,1,"Cancers","White","Female","Arkansas",1974,"West South Central","South","AR",140.432796566534,143.911648306389,147.514478351987,143.933824541368
+"129",3,6,0,1,"Cardiovascular","White","Female","Arkansas",1974,"West South Central","South","AR",482.121015623885,493.412668673541,506.006954291128,493.398190865395
+"130",3,6,0,1,"Communicable","White","Female","Arkansas",1974,"West South Central","South","AR",29.0670982391216,31.0470736723575,33.2688842508182,31.0899816787415
+"131",3,6,0,1,"Injuries","White","Female","Arkansas",1974,"West South Central","South","AR",40.6028312669642,42.4468735993699,44.3591031239403,42.4596548050965
+"132",3,6,0,1,"Non-communicable","White","Female","Arkansas",1974,"West South Central","South","AR",40.707624131726,42.8223549618568,45.0116559609577,42.8211906795047
+"133",3,6,1,0,"All other causes","Black","Male","Arkansas",1974,"West South Central","South","AR",233.14851422115,244.425290377451,256.819692369322,244.63761170844
+"134",3,6,1,0,"Cancers","Black","Male","Arkansas",1974,"West South Central","South","AR",244.694054687086,257.333468332509,270.955292592059,257.357555077578
+"135",3,6,1,0,"Cardiovascular","Black","Male","Arkansas",1974,"West South Central","South","AR",756.71223033089,782.025080301173,809.321623263089,782.586400258152
+"136",3,6,1,0,"Communicable","Black","Male","Arkansas",1974,"West South Central","South","AR",57.997429631671,65.0053163429558,72.39105294593,65.0176982292685
+"137",3,6,1,0,"Injuries","Black","Male","Arkansas",1974,"West South Central","South","AR",203.731481857486,216.415553098544,228.767442568689,216.326561883395
+"138",3,6,1,0,"Non-communicable","Black","Male","Arkansas",1974,"West South Central","South","AR",73.2733858862335,80.4371415699773,87.4862785117224,80.4065800348535
+"139",3,6,1,1,"All other causes","Black","Female","Arkansas",1974,"West South Central","South","AR",154.988338446733,162.608191914372,171.444358576545,162.798699663699
+"140",3,6,1,1,"Cancers","Black","Female","Arkansas",1974,"West South Central","South","AR",148.149964519294,155.004376707695,162.329091242025,155.154653132598
+"141",3,6,1,1,"Cardiovascular","Black","Female","Arkansas",1974,"West South Central","South","AR",548.322880750271,569.991426744778,592.359622096491,570.155373662649
+"142",3,6,1,1,"Communicable","Black","Female","Arkansas",1974,"West South Central","South","AR",36.9885796706606,41.863145780964,47.6584401279794,41.9052435157411
+"143",3,6,1,1,"Injuries","Black","Female","Arkansas",1974,"West South Central","South","AR",48.2968358005452,54.0665372482859,59.8966859135149,54.1018045093703
+"144",3,6,1,1,"Non-communicable","Black","Female","Arkansas",1974,"West South Central","South","AR",63.2236833717581,68.6409880387236,74.4297645477428,68.6691048449049
+"145",3,7,0,0,"All other causes","White","Male","Arkansas",1975,"West South Central","South","AR",144.423297564972,149.84375575888,155.459028757432,149.940194500884
+"146",3,7,0,0,"Cancers","White","Male","Arkansas",1975,"West South Central","South","AR",234.262856010272,240.249063117296,246.187306422463,240.331888480208
+"147",3,7,0,0,"Cardiovascular","White","Male","Arkansas",1975,"West South Central","South","AR",770.579601054121,786.964931907805,804.21511453285,787.090948025436
+"148",3,7,0,0,"Communicable","White","Male","Arkansas",1975,"West South Central","South","AR",55.2060074971021,59.1043637831093,63.2881897745253,59.1303431633479
+"149",3,7,0,0,"Injuries","White","Male","Arkansas",1975,"West South Central","South","AR",116.944081708299,120.432985927446,124.054227539356,120.40659698936
+"150",3,7,0,0,"Non-communicable","White","Male","Arkansas",1975,"West South Central","South","AR",86.3785277810891,90.0791053517962,93.9743116790362,90.1592445215845
+"151",3,7,0,1,"All other causes","White","Female","Arkansas",1975,"West South Central","South","AR",95.574131604748,99.3117998757568,103.374851257521,99.3623843300807
+"152",3,7,0,1,"Cancers","White","Female","Arkansas",1975,"West South Central","South","AR",139.980942726582,143.637878496718,147.004474266151,143.55818780533
+"153",3,7,0,1,"Cardiovascular","White","Female","Arkansas",1975,"West South Central","South","AR",447.018723777567,457.28768805584,467.797744116861,457.305303677727
+"154",3,7,0,1,"Communicable","White","Female","Arkansas",1975,"West South Central","South","AR",28.3359366927957,30.4648562449859,32.5909634021671,30.475829215241
+"155",3,7,0,1,"Injuries","White","Female","Arkansas",1975,"West South Central","South","AR",39.463578791213,41.3089963745416,43.1953432238199,41.3071472689556
+"156",3,7,0,1,"Non-communicable","White","Female","Arkansas",1975,"West South Central","South","AR",40.4237405371853,42.364486638364,44.5598933728766,42.3943125775294
+"157",3,7,1,0,"All other causes","Black","Male","Arkansas",1975,"West South Central","South","AR",228.385862558661,239.550853050151,250.698918865652,239.582624826454
+"158",3,7,1,0,"Cancers","Black","Male","Arkansas",1975,"West South Central","South","AR",244.270512898074,258.240388683534,270.92962521019,258.096493918748
+"159",3,7,1,0,"Cardiovascular","Black","Male","Arkansas",1975,"West South Central","South","AR",737.750557375279,763.516416737646,788.822990604737,763.676104235563
+"160",3,7,1,0,"Communicable","Black","Male","Arkansas",1975,"West South Central","South","AR",56.5824531383492,63.5327012959313,70.0557651957985,63.5195771559955
+"161",3,7,1,0,"Injuries","Black","Male","Arkansas",1975,"West South Central","South","AR",198.591480717548,210.585188220642,222.3378888621,210.509070197629
+"162",3,7,1,0,"Non-communicable","Black","Male","Arkansas",1975,"West South Central","South","AR",72.7605603781733,80.2359236640297,86.9253413307326,80.149594459855
+"163",3,7,1,1,"All other causes","Black","Female","Arkansas",1975,"West South Central","South","AR",152.975242859345,160.539818083593,169.015227281371,160.731955100832
+"164",3,7,1,1,"Cancers","Black","Female","Arkansas",1975,"West South Central","South","AR",147.874421332265,155.04177641968,161.974906069877,155.006817807962
+"165",3,7,1,1,"Cardiovascular","Black","Female","Arkansas",1975,"West South Central","South","AR",538.064505382653,558.176918188821,579.42835117193,558.454160221577
+"166",3,7,1,1,"Communicable","Black","Female","Arkansas",1975,"West South Central","South","AR",35.8561333794609,40.882831310266,46.7747987406949,40.8715182303848
+"167",3,7,1,1,"Injuries","Black","Female","Arkansas",1975,"West South Central","South","AR",47.4192012322314,53.307665870807,58.7976802208754,53.2591914690394
+"168",3,7,1,1,"Non-communicable","Black","Female","Arkansas",1975,"West South Central","South","AR",61.7183952544026,67.377378015202,73.3993218688764,67.3984394578274
+"169",3,8,0,0,"All other causes","White","Male","Arkansas",1976,"West South Central","South","AR",143.385181091426,148.709190616236,153.834543450294,148.671736300108
+"170",3,8,0,0,"Cancers","White","Male","Arkansas",1976,"West South Central","South","AR",237.652324645102,243.212746576105,249.359488892582,243.340511692839
+"171",3,8,0,0,"Cardiovascular","White","Male","Arkansas",1976,"West South Central","South","AR",734.651427140125,751.568031012365,767.809957078773,751.401282479312
+"172",3,8,0,0,"Communicable","White","Male","Arkansas",1976,"West South Central","South","AR",54.7479932012568,58.9209444882621,63.1024527330048,58.8995351808725
+"173",3,8,0,0,"Injuries","White","Male","Arkansas",1976,"West South Central","South","AR",113.597420498749,117.193504610969,120.979786403546,117.249522921246
+"174",3,8,0,0,"Non-communicable","White","Male","Arkansas",1976,"West South Central","South","AR",85.5222258838016,89.3411551990796,92.9685800328046,89.3356304138576
+"175",3,8,0,1,"All other causes","White","Female","Arkansas",1976,"West South Central","South","AR",93.1609550218379,96.5965360025216,100.372885651096,96.6507457975432
+"176",3,8,0,1,"Cancers","White","Female","Arkansas",1976,"West South Central","South","AR",140.231550659932,143.545757535126,146.776357445505,143.573808701343
+"177",3,8,0,1,"Cardiovascular","White","Female","Arkansas",1976,"West South Central","South","AR",432.477697575158,442.779129683682,453.028584818794,442.881045359465
+"178",3,8,0,1,"Communicable","White","Female","Arkansas",1976,"West South Central","South","AR",28.1120914920455,30.2541761327811,32.5112709042586,30.2841691560447
+"179",3,8,0,1,"Injuries","White","Female","Arkansas",1976,"West South Central","South","AR",38.5179163746806,40.266680449243,42.1026794202574,40.2792307340629
+"180",3,8,0,1,"Non-communicable","White","Female","Arkansas",1976,"West South Central","South","AR",38.958867001241,41.1114574146967,43.2875539183081,41.1413530334814
+"181",3,8,1,0,"All other causes","Black","Male","Arkansas",1976,"West South Central","South","AR",224.625547646723,235.935472254167,246.949617611552,236.060796080219
+"182",3,8,1,0,"Cancers","Black","Male","Arkansas",1976,"West South Central","South","AR",246.587437029776,260.013944266766,273.415120119628,259.979475258632
+"183",3,8,1,0,"Cardiovascular","Black","Male","Arkansas",1976,"West South Central","South","AR",716.416782860224,741.955975115088,766.735286513356,742.103605040735
+"184",3,8,1,0,"Communicable","Black","Male","Arkansas",1976,"West South Central","South","AR",54.7791463373334,61.9002420400821,68.9386625084612,61.7612231300373
+"185",3,8,1,0,"Injuries","Black","Male","Arkansas",1976,"West South Central","South","AR",190.900153314504,202.440877469788,213.850130628003,202.408084467172
+"186",3,8,1,0,"Non-communicable","Black","Male","Arkansas",1976,"West South Central","South","AR",74.4626332456343,81.3346679403108,88.4500322355916,81.3406592048163
+"187",3,8,1,1,"All other causes","Black","Female","Arkansas",1976,"West South Central","South","AR",151.564793357016,158.725627461626,167.07978776726,158.673135113951
+"188",3,8,1,1,"Cancers","Black","Female","Arkansas",1976,"West South Central","South","AR",147.808153461752,155.222405762522,161.596855776572,155.146455916937
+"189",3,8,1,1,"Cardiovascular","Black","Female","Arkansas",1976,"West South Central","South","AR",527.030276591966,546.788843512172,567.986211605877,546.925761855049
+"190",3,8,1,1,"Communicable","Black","Female","Arkansas",1976,"West South Central","South","AR",35.1163336717096,40.207707800483,45.6485738739056,40.2098295572519
+"191",3,8,1,1,"Injuries","Black","Female","Arkansas",1976,"West South Central","South","AR",46.6288696299506,52.3547157993244,57.9276256938811,52.3374185955523
+"192",3,8,1,1,"Non-communicable","Black","Female","Arkansas",1976,"West South Central","South","AR",60.9968742120565,66.5641858929931,72.8357614853517,66.704381223123
+"193",3,9,0,0,"All other causes","White","Male","Arkansas",1977,"West South Central","South","AR",139.637829139373,144.447924347733,149.46558224949,144.495945850368
+"194",3,9,0,0,"Cancers","White","Male","Arkansas",1977,"West South Central","South","AR",241.079139964394,246.524384396391,252.978927863192,246.666617846243
+"195",3,9,0,0,"Cardiovascular","White","Male","Arkansas",1977,"West South Central","South","AR",701.492734499515,717.512175798676,733.950158782749,717.578699236044
+"196",3,9,0,0,"Communicable","White","Male","Arkansas",1977,"West South Central","South","AR",52.6497340336413,56.1111114861782,60.0762503555089,56.1394672874319
+"197",3,9,0,0,"Injuries","White","Male","Arkansas",1977,"West South Central","South","AR",111.451380737292,114.938364520577,118.743898558374,114.953700522735
+"198",3,9,0,0,"Non-communicable","White","Male","Arkansas",1977,"West South Central","South","AR",85.2796295442344,88.7015424800029,92.373675243172,88.7476187608312
+"199",3,9,0,1,"All other causes","White","Female","Arkansas",1977,"West South Central","South","AR",91.9515226324541,95.301699701009,98.9829119713533,95.3478793797227
+"200",3,9,0,1,"Cancers","White","Female","Arkansas",1977,"West South Central","South","AR",139.838074465464,143.376063902367,146.762872557714,143.394872085479
+"201",3,9,0,1,"Cardiovascular","White","Female","Arkansas",1977,"West South Central","South","AR",424.940993147368,434.807353967667,445.176725327359,434.826250296584
+"202",3,9,0,1,"Communicable","White","Female","Arkansas",1977,"West South Central","South","AR",28.7314925009997,30.6063789595634,32.7549045843544,30.6290000773903
+"203",3,9,0,1,"Injuries","White","Female","Arkansas",1977,"West South Central","South","AR",37.7843253615024,39.4442924653244,41.261105874929,39.4730971682993
+"204",3,9,0,1,"Non-communicable","White","Female","Arkansas",1977,"West South Central","South","AR",38.7592792295528,40.7806767050362,42.754227611434,40.7674904961136
+"205",3,9,1,0,"All other causes","Black","Male","Arkansas",1977,"West South Central","South","AR",219.200019289872,230.60373103924,241.905897096942,230.528620868324
+"206",3,9,1,0,"Cancers","Black","Male","Arkansas",1977,"West South Central","South","AR",250.125248041108,264.264286624577,277.508129816987,264.158761410009
+"207",3,9,1,0,"Cardiovascular","Black","Male","Arkansas",1977,"West South Central","South","AR",709.129024042656,737.170260532536,764.606658630117,737.074727155179
+"208",3,9,1,0,"Communicable","Black","Male","Arkansas",1977,"West South Central","South","AR",54.3607798542389,61.3509873723573,68.4042877756743,61.3879013546227
+"209",3,9,1,0,"Injuries","Black","Male","Arkansas",1977,"West South Central","South","AR",185.699433138966,197.20272787026,208.258073650099,197.26155101802
+"210",3,9,1,0,"Non-communicable","Black","Male","Arkansas",1977,"West South Central","South","AR",76.4125025538246,82.9336464475021,89.9172228668017,82.9804188714164
+"211",3,9,1,1,"All other causes","Black","Female","Arkansas",1977,"West South Central","South","AR",149.633196490119,156.490273060188,163.920448284021,156.592972517252
+"212",3,9,1,1,"Cancers","Black","Female","Arkansas",1977,"West South Central","South","AR",148.99100647277,155.944609736882,162.433349575979,155.906083202515
+"213",3,9,1,1,"Cardiovascular","Black","Female","Arkansas",1977,"West South Central","South","AR",509.996620121087,529.095156601788,549.760517739544,529.047020183255
+"214",3,9,1,1,"Communicable","Black","Female","Arkansas",1977,"West South Central","South","AR",34.1514139315185,39.2956769860899,44.0844228524746,39.2296385066152
+"215",3,9,1,1,"Injuries","Black","Female","Arkansas",1977,"West South Central","South","AR",46.0978844725359,51.6873185504801,57.0854611092632,51.6652970395372
+"216",3,9,1,1,"Non-communicable","Black","Female","Arkansas",1977,"West South Central","South","AR",60.7859379076842,65.9194607268182,72.33904547769,66.1734474145742
+"217",3,10,0,0,"All other causes","White","Male","Arkansas",1978,"West South Central","South","AR",136.661571827961,141.238086826254,146.744421651961,141.377464028505
+"218",3,10,0,0,"Cancers","White","Male","Arkansas",1978,"West South Central","South","AR",243.927619457358,249.862421859977,255.63637480504,249.817319318856
+"219",3,10,0,0,"Cardiovascular","White","Male","Arkansas",1978,"West South Central","South","AR",676.341847549203,691.229277404325,706.398911084138,691.291216533729
+"220",3,10,0,0,"Communicable","White","Male","Arkansas",1978,"West South Central","South","AR",51.8868525387935,55.886949135771,60.2567281297187,55.9442912620014
+"221",3,10,0,0,"Injuries","White","Male","Arkansas",1978,"West South Central","South","AR",110.108929517406,113.191881466832,116.870023310082,113.278015592545
+"222",3,10,0,0,"Non-communicable","White","Male","Arkansas",1978,"West South Central","South","AR",86.4142077945751,89.8395814425684,93.7111360042971,89.8703536666199
+"223",3,10,0,1,"All other causes","White","Female","Arkansas",1978,"West South Central","South","AR",93.3546747912107,96.7758783800166,100.976258801037,96.8527678303724
+"224",3,10,0,1,"Cancers","White","Female","Arkansas",1978,"West South Central","South","AR",141.114539154001,144.368792288453,147.509325074728,144.367256598212
+"225",3,10,0,1,"Cardiovascular","White","Female","Arkansas",1978,"West South Central","South","AR",418.202105028855,427.149252116287,437.220893689832,427.212944998236
+"226",3,10,0,1,"Communicable","White","Female","Arkansas",1978,"West South Central","South","AR",29.3130746705333,31.3366575212395,33.7580062620244,31.3848432554991
+"227",3,10,0,1,"Injuries","White","Female","Arkansas",1978,"West South Central","South","AR",37.0704027525887,38.6574350707438,40.2690262792231,38.6799077420606
+"228",3,10,0,1,"Non-communicable","White","Female","Arkansas",1978,"West South Central","South","AR",39.2151637413281,41.3738120922368,43.4678550089068,41.3781681451106
+"229",3,10,1,0,"All other causes","Black","Male","Arkansas",1978,"West South Central","South","AR",214.58070877658,225.128069413076,235.865492440735,225.177225117818
+"230",3,10,1,0,"Cancers","Black","Male","Arkansas",1978,"West South Central","South","AR",256.61811694113,270.194061401693,283.668504211818,270.096301954615
+"231",3,10,1,0,"Cardiovascular","Black","Male","Arkansas",1978,"West South Central","South","AR",707.217376906048,731.241118714817,756.982831131354,731.4433031666
+"232",3,10,1,0,"Communicable","Black","Male","Arkansas",1978,"West South Central","South","AR",54.2777651063753,61.0742722268307,68.1068089990187,61.0910698263171
+"233",3,10,1,0,"Injuries","Black","Male","Arkansas",1978,"West South Central","South","AR",184.31978161764,195.953087115147,207.386129648679,196.13679252346
+"234",3,10,1,0,"Non-communicable","Black","Male","Arkansas",1978,"West South Central","South","AR",78.2608837718053,84.6786158374505,91.8677644506582,84.6892279981491
+"235",3,10,1,1,"All other causes","Black","Female","Arkansas",1978,"West South Central","South","AR",148.193226132378,155.061544402185,162.576759191626,155.109179349066
+"236",3,10,1,1,"Cancers","Black","Female","Arkansas",1978,"West South Central","South","AR",149.73986676424,156.450715409378,163.508820789676,156.47291722694
+"237",3,10,1,1,"Cardiovascular","Black","Female","Arkansas",1978,"West South Central","South","AR",491.076306047853,510.239556323848,529.764793273696,510.50017585581
+"238",3,10,1,1,"Communicable","Black","Female","Arkansas",1978,"West South Central","South","AR",32.8809104186028,38.0025418143309,42.8905789394373,37.9819656689757
+"239",3,10,1,1,"Injuries","Black","Female","Arkansas",1978,"West South Central","South","AR",45.7629721555449,51.3317492946837,57.0047080072852,51.3810220288402
+"240",3,10,1,1,"Non-communicable","Black","Female","Arkansas",1978,"West South Central","South","AR",61.4562275823954,66.913422911497,73.0095670314532,67.0661607911294
+"241",3,11,0,0,"All other causes","White","Male","Arkansas",1979,"West South Central","South","AR",132.635022427452,137.570572017868,142.406934720603,137.585699150267
+"242",3,11,0,0,"Cancers","White","Male","Arkansas",1979,"West South Central","South","AR",249.325150488567,255.624491438222,261.425728837732,255.530997093843
+"243",3,11,0,0,"Cardiovascular","White","Male","Arkansas",1979,"West South Central","South","AR",662.569572295372,676.949280108492,691.916350798207,676.928096344069
+"244",3,11,0,0,"Communicable","White","Male","Arkansas",1979,"West South Central","South","AR",48.1780173845642,51.9624807324282,55.4386424083513,51.9149327520469
+"245",3,11,0,0,"Injuries","White","Male","Arkansas",1979,"West South Central","South","AR",107.951050396286,111.341235730503,114.797291620613,111.347386833951
+"246",3,11,0,0,"Non-communicable","White","Male","Arkansas",1979,"West South Central","South","AR",88.4998831120329,92.0384311171985,95.8959055903548,92.0903852419338
+"247",3,11,0,1,"All other causes","White","Female","Arkansas",1979,"West South Central","South","AR",91.4755230840423,94.9179031612489,98.4309563555504,94.9335054472458
+"248",3,11,0,1,"Cancers","White","Female","Arkansas",1979,"West South Central","South","AR",141.969494200456,145.181408793686,148.741173036621,145.237455176395
+"249",3,11,0,1,"Cardiovascular","White","Female","Arkansas",1979,"West South Central","South","AR",404.348256266466,413.9579935101,423.015751895271,413.918944967062
+"250",3,11,0,1,"Communicable","White","Female","Arkansas",1979,"West South Central","South","AR",27.5661170176303,29.6657966410255,31.7808644900421,29.6739928204522
+"251",3,11,0,1,"Injuries","White","Female","Arkansas",1979,"West South Central","South","AR",36.2359827124781,37.7713408660911,39.3567897974469,37.7826015253218
+"252",3,11,0,1,"Non-communicable","White","Female","Arkansas",1979,"West South Central","South","AR",40.369190258687,42.4082706389722,44.6748227723477,42.4724025158132
+"253",3,11,1,0,"All other causes","Black","Male","Arkansas",1979,"West South Central","South","AR",211.995114264072,222.34827995014,232.632878578558,222.365774172924
+"254",3,11,1,0,"Cancers","Black","Male","Arkansas",1979,"West South Central","South","AR",264.242210303465,277.54069312862,290.626012543956,277.251312251737
+"255",3,11,1,0,"Cardiovascular","Black","Male","Arkansas",1979,"West South Central","South","AR",694.271997295524,719.35002430898,743.022141268876,719.228220018385
+"256",3,11,1,0,"Communicable","Black","Male","Arkansas",1979,"West South Central","South","AR",53.9782637443869,61.3500866408044,68.0102405691959,61.2429548853849
+"257",3,11,1,0,"Injuries","Black","Male","Arkansas",1979,"West South Central","South","AR",182.063674750592,193.163289493917,204.874178841401,193.261188657165
+"258",3,11,1,0,"Non-communicable","Black","Male","Arkansas",1979,"West South Central","South","AR",79.7722936807613,86.353574950522,93.2584481034233,86.4771790874708
+"259",3,11,1,1,"All other causes","Black","Female","Arkansas",1979,"West South Central","South","AR",146.327646060569,153.455209903522,160.43282187686,153.448134390874
+"260",3,11,1,1,"Cancers","Black","Female","Arkansas",1979,"West South Central","South","AR",150.614553216315,157.398787743705,163.948055150678,157.436107879077
+"261",3,11,1,1,"Cardiovascular","Black","Female","Arkansas",1979,"West South Central","South","AR",484.42385273797,503.937529723851,525.497662092025,504.025955278061
+"262",3,11,1,1,"Communicable","Black","Female","Arkansas",1979,"West South Central","South","AR",31.6751211489672,36.573065483288,41.2476186900693,36.5372595448731
+"263",3,11,1,1,"Injuries","Black","Female","Arkansas",1979,"West South Central","South","AR",45.5986668879492,51.1111671495412,56.724075375438,51.1568193679123
+"264",3,11,1,1,"Non-communicable","Black","Female","Arkansas",1979,"West South Central","South","AR",61.9124111932492,67.3486757215909,73.2275402473224,67.3882030778107
+"265",3,12,0,0,"All other causes","White","Male","Arkansas",1980,"West South Central","South","AR",131.381314073831,136.530255654167,141.795716536723,136.580509990398
+"266",3,12,0,0,"Cancers","White","Male","Arkansas",1980,"West South Central","South","AR",254.293853461899,260.397340256294,266.491287367047,260.476434023476
+"267",3,12,0,0,"Cardiovascular","White","Male","Arkansas",1980,"West South Central","South","AR",657.888004997085,672.684165855047,687.731675696306,672.702513381292
+"268",3,12,0,0,"Communicable","White","Male","Arkansas",1980,"West South Central","South","AR",47.263487721262,51.0422392293994,54.9580006353366,51.059787336723
+"269",3,12,0,0,"Injuries","White","Male","Arkansas",1980,"West South Central","South","AR",107.37625093236,110.682153597979,114.0619951366,110.664589819229
+"270",3,12,0,0,"Non-communicable","White","Male","Arkansas",1980,"West South Central","South","AR",89.5915327517742,93.1686307406003,97.167827515273,93.2177503617106
+"271",3,12,0,1,"All other causes","White","Female","Arkansas",1980,"West South Central","South","AR",91.7503749506224,95.2264312532611,98.7767123813241,95.2589283928101
+"272",3,12,0,1,"Cancers","White","Female","Arkansas",1980,"West South Central","South","AR",143.088926568502,146.463850892506,149.849078300451,146.463148235371
+"273",3,12,0,1,"Cardiovascular","White","Female","Arkansas",1980,"West South Central","South","AR",403.506432156474,412.822566225204,422.186000905979,412.850902068171
+"274",3,12,0,1,"Communicable","White","Female","Arkansas",1980,"West South Central","South","AR",27.6172431326235,29.589160724242,31.4971884686151,29.5768653268359
+"275",3,12,0,1,"Injuries","White","Female","Arkansas",1980,"West South Central","South","AR",35.41807057523,37.0022584543257,38.507132500531,37.0094890242509
+"276",3,12,0,1,"Non-communicable","White","Female","Arkansas",1980,"West South Central","South","AR",41.2729517900311,43.269942586014,45.6531256554735,43.3116793500355
+"277",3,12,1,0,"All other causes","Black","Male","Arkansas",1980,"West South Central","South","AR",209.464220677298,219.123506120554,230.007940412386,219.230325319111
+"278",3,12,1,0,"Cancers","Black","Male","Arkansas",1980,"West South Central","South","AR",275.405725139751,289.077323212509,302.006499810953,288.919428129018
+"279",3,12,1,0,"Cardiovascular","Black","Male","Arkansas",1980,"West South Central","South","AR",694.637634692001,718.240599710037,744.368094963051,718.362913959679
+"280",3,12,1,0,"Communicable","Black","Male","Arkansas",1980,"West South Central","South","AR",54.3501513773168,60.973674912379,68.0239706211013,60.9530559832741
+"281",3,12,1,0,"Injuries","Black","Male","Arkansas",1980,"West South Central","South","AR",181.15924655472,192.235542701509,204.236167948866,192.379726887405
+"282",3,12,1,0,"Non-communicable","Black","Male","Arkansas",1980,"West South Central","South","AR",81.6296546125812,88.417066119756,95.755137887837,88.4607645300165
+"283",3,12,1,1,"All other causes","Black","Female","Arkansas",1980,"West South Central","South","AR",145.38592835743,152.486527339281,159.4485783404,152.528144624256
+"284",3,12,1,1,"Cancers","Black","Female","Arkansas",1980,"West South Central","South","AR",151.543763948512,158.736643597217,165.431159233499,158.722665908562
+"285",3,12,1,1,"Cardiovascular","Black","Female","Arkansas",1980,"West South Central","South","AR",480.850901195193,500.517899168972,519.222580199752,500.322084473132
+"286",3,12,1,1,"Communicable","Black","Female","Arkansas",1980,"West South Central","South","AR",30.8112471889275,35.8348447433485,40.9015564672539,35.850086152154
+"287",3,12,1,1,"Injuries","Black","Female","Arkansas",1980,"West South Central","South","AR",45.8030178522106,51.0512596939348,56.7500612492122,51.1488701245124
+"288",3,12,1,1,"Non-communicable","Black","Female","Arkansas",1980,"West South Central","South","AR",62.6854132397289,68.100101119274,74.0360415403248,68.2301971384837
+"289",3,13,0,0,"All other causes","White","Male","Arkansas",1981,"West South Central","South","AR",132.950965711008,138.370956549301,143.496472720281,138.309651058822
+"290",3,13,0,0,"Cancers","White","Male","Arkansas",1981,"West South Central","South","AR",256.549831264571,262.718400494598,269.137293873326,262.770216638992
+"291",3,13,0,0,"Cardiovascular","White","Male","Arkansas",1981,"West South Central","South","AR",647.061537807531,660.859440338361,674.949472952148,660.772789414163
+"292",3,13,0,0,"Communicable","White","Male","Arkansas",1981,"West South Central","South","AR",47.4362780081225,50.9911763568005,54.5326784153577,50.9380780953593
+"293",3,13,0,0,"Injuries","White","Male","Arkansas",1981,"West South Central","South","AR",106.008225292679,109.224563009648,112.46202673132,109.213904655438
+"294",3,13,0,0,"Non-communicable","White","Male","Arkansas",1981,"West South Central","South","AR",92.335765996691,96.2813092601198,100.039762727836,96.3411803216474
+"295",3,13,0,1,"All other causes","White","Female","Arkansas",1981,"West South Central","South","AR",89.4592905844708,93.1993769648266,96.6998370159459,93.1470830428215
+"296",3,13,0,1,"Cancers","White","Female","Arkansas",1981,"West South Central","South","AR",144.36910190039,148.003687060185,151.071918541971,147.991113345549
+"297",3,13,0,1,"Cardiovascular","White","Female","Arkansas",1981,"West South Central","South","AR",395.706934239472,404.942643117143,413.949559397844,405.166849962162
+"298",3,13,0,1,"Communicable","White","Female","Arkansas",1981,"West South Central","South","AR",28.7155966477309,30.7464189437292,32.7837950167333,30.7810499950701
+"299",3,13,0,1,"Injuries","White","Female","Arkansas",1981,"West South Central","South","AR",34.7288667003905,36.3550685372389,37.9227700880882,36.3254167860477
+"300",3,13,0,1,"Non-communicable","White","Female","Arkansas",1981,"West South Central","South","AR",43.0069901489505,45.0204373799855,47.0512412497793,45.0190919251948
+"301",3,13,1,0,"All other causes","Black","Male","Arkansas",1981,"West South Central","South","AR",206.374034197128,216.917710970613,227.805544503193,216.922262218066
+"302",3,13,1,0,"Cancers","Black","Male","Arkansas",1981,"West South Central","South","AR",285.762309913576,300.122633821551,314.944099568711,299.957295263307
+"303",3,13,1,0,"Cardiovascular","Black","Male","Arkansas",1981,"West South Central","South","AR",685.486398717718,709.258483061339,735.981661958522,709.304836656411
+"304",3,13,1,0,"Communicable","Black","Male","Arkansas",1981,"West South Central","South","AR",55.6640078776744,62.3504892695242,69.4791434049191,62.3293413268599
+"305",3,13,1,0,"Injuries","Black","Male","Arkansas",1981,"West South Central","South","AR",175.770978548002,186.619624590911,198.670429886227,186.694914145146
+"306",3,13,1,0,"Non-communicable","Black","Male","Arkansas",1981,"West South Central","South","AR",81.5672331140039,89.0792557102213,96.8042977668523,88.9976636471827
+"307",3,13,1,1,"All other causes","Black","Female","Arkansas",1981,"West South Central","South","AR",142.712883427636,149.173305369839,156.14015651478,149.342196714356
+"308",3,13,1,1,"Cancers","Black","Female","Arkansas",1981,"West South Central","South","AR",153.794837793052,160.642024033882,167.242748327326,160.546523249193
+"309",3,13,1,1,"Cardiovascular","Black","Female","Arkansas",1981,"West South Central","South","AR",466.992947135611,484.512758889533,503.642315683548,484.630714830947
+"310",3,13,1,1,"Communicable","Black","Female","Arkansas",1981,"West South Central","South","AR",30.8108820628856,35.7078371837194,41.0533986459691,35.7808274429724
+"311",3,13,1,1,"Injuries","Black","Female","Arkansas",1981,"West South Central","South","AR",44.6750335166046,50.1294574911492,55.7863801831127,50.1430354601585
+"312",3,13,1,1,"Non-communicable","Black","Female","Arkansas",1981,"West South Central","South","AR",63.3018654697445,68.605646389348,74.1706393638211,68.6887977779987
+"313",3,14,0,0,"All other causes","White","Male","Arkansas",1982,"West South Central","South","AR",133.028304449892,138.024049043672,142.998294056909,137.988577026211
+"314",3,14,0,0,"Cancers","White","Male","Arkansas",1982,"West South Central","South","AR",260.583298732515,267.022881442966,273.388773525767,267.054847660083
+"315",3,14,0,0,"Cardiovascular","White","Male","Arkansas",1982,"West South Central","South","AR",632.508464409249,646.408806214141,660.055296065119,646.433996717852
+"316",3,14,0,0,"Communicable","White","Male","Arkansas",1982,"West South Central","South","AR",48.7263932636452,52.316722968595,56.0197022864558,52.3303513909609
+"317",3,14,0,0,"Injuries","White","Male","Arkansas",1982,"West South Central","South","AR",105.663590454628,108.881085464597,112.185239411006,108.922297081699
+"318",3,14,0,0,"Non-communicable","White","Male","Arkansas",1982,"West South Central","South","AR",94.9650067985119,98.3415170329547,102.269419566029,98.4357891526158
+"319",3,14,0,1,"All other causes","White","Female","Arkansas",1982,"West South Central","South","AR",90.0420688355311,93.6551910460815,97.1064224600424,93.6505730043383
+"320",3,14,0,1,"Cancers","White","Female","Arkansas",1982,"West South Central","South","AR",145.458062630295,148.875653397567,152.115412207525,148.841068177073
+"321",3,14,0,1,"Cardiovascular","White","Female","Arkansas",1982,"West South Central","South","AR",389.633876706803,399.070041933191,408.326458889118,399.03750565311
+"322",3,14,0,1,"Communicable","White","Female","Arkansas",1982,"West South Central","South","AR",29.0681345310378,31.1062382926755,33.1383279257448,31.110375236551
+"323",3,14,0,1,"Injuries","White","Female","Arkansas",1982,"West South Central","South","AR",34.5377815563965,36.1960426254067,37.7225387796989,36.1857883304193
+"324",3,14,0,1,"Non-communicable","White","Female","Arkansas",1982,"West South Central","South","AR",44.0166471846278,46.015831732529,48.2826168808783,46.0744896373077
+"325",3,14,1,0,"All other causes","Black","Male","Arkansas",1982,"West South Central","South","AR",204.182994230592,214.50330563564,225.24092857481,214.51743798667
+"326",3,14,1,0,"Cancers","Black","Male","Arkansas",1982,"West South Central","South","AR",295.356107023597,309.590132359418,324.63179091327,309.809245140725
+"327",3,14,1,0,"Cardiovascular","Black","Male","Arkansas",1982,"West South Central","South","AR",672.501009136326,697.810958828337,722.3105153473,697.598829344021
+"328",3,14,1,0,"Communicable","Black","Male","Arkansas",1982,"West South Central","South","AR",56.6454183050751,63.4496105016992,70.6960301240176,63.4897692366505
+"329",3,14,1,0,"Injuries","Black","Male","Arkansas",1982,"West South Central","South","AR",170.175229926216,180.420353431266,192.203319979711,180.81855537412
+"330",3,14,1,0,"Non-communicable","Black","Male","Arkansas",1982,"West South Central","South","AR",83.1567532907693,90.668502629839,98.1696939580333,90.6249645909011
+"331",3,14,1,1,"All other causes","Black","Female","Arkansas",1982,"West South Central","South","AR",140.832247734865,147.051543565265,153.576354946018,147.087511431189
+"332",3,14,1,1,"Cancers","Black","Female","Arkansas",1982,"West South Central","South","AR",155.391665561284,162.978669511589,169.908692560179,163.008813499608
+"333",3,14,1,1,"Cardiovascular","Black","Female","Arkansas",1982,"West South Central","South","AR",460.820359466999,478.973852581161,496.965911326084,478.718064044721
+"334",3,14,1,1,"Communicable","Black","Female","Arkansas",1982,"West South Central","South","AR",31.0581261712508,36.2000673475252,41.2649824364985,36.1894126773741
+"335",3,14,1,1,"Injuries","Black","Female","Arkansas",1982,"West South Central","South","AR",44.1819404034147,49.3713886605458,54.5982312808155,49.4596932210311
+"336",3,14,1,1,"Non-communicable","Black","Female","Arkansas",1982,"West South Central","South","AR",64.6401542892586,70.2698604642501,75.4883734093147,70.1328264994945
+"337",3,15,0,0,"All other causes","White","Male","Arkansas",1983,"West South Central","South","AR",136.065350761561,141.029186709636,146.103250891708,140.972866660925
+"338",3,15,0,0,"Cancers","White","Male","Arkansas",1983,"West South Central","South","AR",266.321174352604,272.624467282423,279.193849089827,272.601545717048
+"339",3,15,0,0,"Cardiovascular","White","Male","Arkansas",1983,"West South Central","South","AR",626.261339188138,640.476273033407,653.21406069785,640.385305116998
+"340",3,15,0,0,"Communicable","White","Male","Arkansas",1983,"West South Central","South","AR",53.6852168961154,57.7636356895616,61.9313155287907,57.8503579443513
+"341",3,15,0,0,"Injuries","White","Male","Arkansas",1983,"West South Central","South","AR",105.306573187515,108.445333487927,111.74089433174,108.480451369956
+"342",3,15,0,0,"Non-communicable","White","Male","Arkansas",1983,"West South Central","South","AR",96.2582975190726,100.012597060662,103.948723194225,99.9999756397772
+"343",3,15,0,1,"All other causes","White","Female","Arkansas",1983,"West South Central","South","AR",91.9451138781948,95.3958546324342,98.8513848081704,95.3547430394437
+"344",3,15,0,1,"Cancers","White","Female","Arkansas",1983,"West South Central","South","AR",146.963686102991,150.427127945059,153.933917858933,150.428719203505
+"345",3,15,0,1,"Cardiovascular","White","Female","Arkansas",1983,"West South Central","South","AR",388.153143217459,396.680877210221,405.053890995554,396.64092276575
+"346",3,15,0,1,"Communicable","White","Female","Arkansas",1983,"West South Central","South","AR",29.8607461630872,31.9256832508002,33.9034477332109,31.9047983405742
+"347",3,15,0,1,"Injuries","White","Female","Arkansas",1983,"West South Central","South","AR",34.8507185747531,36.3425578090311,37.8391521837761,36.3385620333852
+"348",3,15,0,1,"Non-communicable","White","Female","Arkansas",1983,"West South Central","South","AR",45.740103315226,47.9413454028483,50.2258091354793,47.9696945118138
+"349",3,15,1,0,"All other causes","Black","Male","Arkansas",1983,"West South Central","South","AR",201.921620876801,211.49543153209,222.196337785413,211.571140527028
+"350",3,15,1,0,"Cancers","Black","Male","Arkansas",1983,"West South Central","South","AR",302.177876382914,316.751021567116,331.485909442566,316.552271984929
+"351",3,15,1,0,"Cardiovascular","Black","Male","Arkansas",1983,"West South Central","South","AR",670.718261867093,696.696205455327,720.008579505305,696.391252578174
+"352",3,15,1,0,"Communicable","Black","Male","Arkansas",1983,"West South Central","South","AR",58.167828559941,65.4171851264636,72.7242965074706,65.4995958338725
+"353",3,15,1,0,"Injuries","Black","Male","Arkansas",1983,"West South Central","South","AR",165.294331145362,175.43360149953,185.897507402346,175.432826073613
+"354",3,15,1,0,"Non-communicable","Black","Male","Arkansas",1983,"West South Central","South","AR",84.0477707861096,92.3106124699555,100.02140981121,92.2222470697737
+"355",3,15,1,1,"All other causes","Black","Female","Arkansas",1983,"West South Central","South","AR",139.200538397264,145.659024851747,152.285314718541,145.639880392354
+"356",3,15,1,1,"Cancers","Black","Female","Arkansas",1983,"West South Central","South","AR",159.072302105806,166.159626276933,173.92091122868,166.290860959077
+"357",3,15,1,1,"Cardiovascular","Black","Female","Arkansas",1983,"West South Central","South","AR",471.103220173169,488.549547540919,507.339847562518,488.9973844199
+"358",3,15,1,1,"Communicable","Black","Female","Arkansas",1983,"West South Central","South","AR",32.3242821383577,37.6005088620913,42.6211930381731,37.5967865934991
+"359",3,15,1,1,"Injuries","Black","Female","Arkansas",1983,"West South Central","South","AR",43.3531578893798,48.6874513223931,54.0662882629527,48.7577038405957
+"360",3,15,1,1,"Non-communicable","Black","Female","Arkansas",1983,"West South Central","South","AR",66.0804638778779,71.8397508797931,77.3730409323847,71.7415373755132
+"361",3,16,0,0,"All other causes","White","Male","Arkansas",1984,"West South Central","South","AR",137.874045209989,143.297334806633,148.56732401564,143.328411077081
+"362",3,16,0,0,"Cancers","White","Male","Arkansas",1984,"West South Central","South","AR",267.701084655218,274.105573219516,280.606891575145,274.232531411139
+"363",3,16,0,0,"Cardiovascular","White","Male","Arkansas",1984,"West South Central","South","AR",617.96139471509,632.035721641404,645.888588694909,632.079201025264
+"364",3,16,0,0,"Communicable","White","Male","Arkansas",1984,"West South Central","South","AR",56.8376324132478,60.8795396610929,64.9569608123137,60.9066846640404
+"365",3,16,0,0,"Injuries","White","Male","Arkansas",1984,"West South Central","South","AR",105.107347284181,108.254891511431,111.404383105708,108.249986593466
+"366",3,16,0,0,"Non-communicable","White","Male","Arkansas",1984,"West South Central","South","AR",97.6033926212333,101.621110575789,105.886462082467,101.689420712286
+"367",3,16,0,1,"All other causes","White","Female","Arkansas",1984,"West South Central","South","AR",96.5008317073759,100.051755665451,103.94565098794,100.082102270606
+"368",3,16,0,1,"Cancers","White","Female","Arkansas",1984,"West South Central","South","AR",148.834147749668,152.135488757171,155.381887350033,152.159524729021
+"369",3,16,0,1,"Cardiovascular","White","Female","Arkansas",1984,"West South Central","South","AR",378.633485004229,387.169727863152,396.613691217779,387.30186395226
+"370",3,16,0,1,"Communicable","White","Female","Arkansas",1984,"West South Central","South","AR",33.24675872522,35.5242337496958,37.9508830397929,35.550153352462
+"371",3,16,0,1,"Injuries","White","Female","Arkansas",1984,"West South Central","South","AR",35.1098779258993,36.6325209203531,38.1480167694346,36.6333685503374
+"372",3,16,0,1,"Non-communicable","White","Female","Arkansas",1984,"West South Central","South","AR",47.3108456942588,49.424715555107,51.8340697548405,49.4594956557205
+"373",3,16,1,0,"All other causes","Black","Male","Arkansas",1984,"West South Central","South","AR",198.931593458046,208.345977170697,218.813323228338,208.579933754401
+"374",3,16,1,0,"Cancers","Black","Male","Arkansas",1984,"West South Central","South","AR",313.285962987457,327.217201617855,342.040250484039,327.712900039469
+"375",3,16,1,0,"Cardiovascular","Black","Male","Arkansas",1984,"West South Central","South","AR",682.340246207426,705.51484329249,730.673278472824,705.968479020221
+"376",3,16,1,0,"Communicable","Black","Male","Arkansas",1984,"West South Central","South","AR",61.4528445912871,68.2811499175383,76.1722776532809,68.3787765168926
+"377",3,16,1,0,"Injuries","Black","Male","Arkansas",1984,"West South Central","South","AR",162.023071007681,171.888457773436,182.013100849497,172.015120142487
+"378",3,16,1,0,"Non-communicable","Black","Male","Arkansas",1984,"West South Central","South","AR",86.9551128484688,95.2373011005087,102.057952412335,95.0801810368337
+"379",3,16,1,1,"All other causes","Black","Female","Arkansas",1984,"West South Central","South","AR",139.00204902223,145.368293359014,152.014997000641,145.393535700711
+"380",3,16,1,1,"Cancers","Black","Female","Arkansas",1984,"West South Central","South","AR",160.463730416994,167.910067269099,175.066374664683,167.873509376083
+"381",3,16,1,1,"Cardiovascular","Black","Female","Arkansas",1984,"West South Central","South","AR",472.349526478244,491.240414002591,509.287926327595,491.013179426863
+"382",3,16,1,1,"Communicable","Black","Female","Arkansas",1984,"West South Central","South","AR",34.117964476609,39.4601306563842,44.6511036161075,39.441797121533
+"383",3,16,1,1,"Injuries","Black","Female","Arkansas",1984,"West South Central","South","AR",43.0871521126797,48.1957134003258,53.5211485462588,48.2709797234676
+"384",3,16,1,1,"Non-communicable","Black","Female","Arkansas",1984,"West South Central","South","AR",67.2070893305351,73.3031154653313,78.842903357871,73.211036862538
+"385",3,17,0,0,"All other causes","White","Male","Arkansas",1985,"West South Central","South","AR",135.806207653478,141.012356659799,146.461264030371,141.07631119542
+"386",3,17,0,0,"Cancers","White","Male","Arkansas",1985,"West South Central","South","AR",270.180491955813,276.659193454484,283.56851010338,276.6389362448
+"387",3,17,0,0,"Cardiovascular","White","Male","Arkansas",1985,"West South Central","South","AR",614.867354672667,627.587469349608,641.12968580077,627.687352385402
+"388",3,17,0,0,"Communicable","White","Male","Arkansas",1985,"West South Central","South","AR",63.2955587885475,67.7043369434653,72.4920006880104,67.6894198745562
+"389",3,17,0,0,"Injuries","White","Male","Arkansas",1985,"West South Central","South","AR",105.071092406052,108.235258502231,111.850926745324,108.258241202642
+"390",3,17,0,0,"Non-communicable","White","Male","Arkansas",1985,"West South Central","South","AR",98.1753873402542,102.232020802954,106.533543663874,102.285176424474
+"391",3,17,0,1,"All other causes","White","Female","Arkansas",1985,"West South Central","South","AR",96.6321294082976,99.9159484923855,103.225730181627,99.9055843368291
+"392",3,17,0,1,"Cancers","White","Female","Arkansas",1985,"West South Central","South","AR",151.139689151801,154.650205486387,157.946833677002,154.647838089202
+"393",3,17,0,1,"Cardiovascular","White","Female","Arkansas",1985,"West South Central","South","AR",374.304673867882,383.348803809036,391.724703337413,383.338465853523
+"394",3,17,0,1,"Communicable","White","Female","Arkansas",1985,"West South Central","South","AR",35.0893851836546,37.5157885904926,39.846112369157,37.4811037672318
+"395",3,17,0,1,"Injuries","White","Female","Arkansas",1985,"West South Central","South","AR",35.6642268931436,37.2214717359444,38.8039259125993,37.2232400075295
+"396",3,17,0,1,"Non-communicable","White","Female","Arkansas",1985,"West South Central","South","AR",48.103455664787,50.3645960146244,52.5915072369371,50.4003612840548
+"397",3,17,1,0,"All other causes","Black","Male","Arkansas",1985,"West South Central","South","AR",196.319356970703,205.548372972091,215.577615930703,205.568572675852
+"398",3,17,1,0,"Cancers","Black","Male","Arkansas",1985,"West South Central","South","AR",319.969230835002,335.78689177362,350.765128774883,335.694955528484
+"399",3,17,1,0,"Cardiovascular","Black","Male","Arkansas",1985,"West South Central","South","AR",680.033989245627,706.367825100827,730.765381960209,706.25662347029
+"400",3,17,1,0,"Communicable","Black","Male","Arkansas",1985,"West South Central","South","AR",65.6026763718613,72.8735600219267,80.6256228459819,72.9097240011595
+"401",3,17,1,0,"Injuries","Black","Male","Arkansas",1985,"West South Central","South","AR",160.025353613992,170.24891764362,180.204285627649,170.295561347648
+"402",3,17,1,0,"Non-communicable","Black","Male","Arkansas",1985,"West South Central","South","AR",92.6358625672762,100.548576907185,108.000472714407,100.510088192924
+"403",3,17,1,1,"All other causes","Black","Female","Arkansas",1985,"West South Central","South","AR",139.013048250986,144.935760903403,151.832913284256,145.089230465131
+"404",3,17,1,1,"Cancers","Black","Female","Arkansas",1985,"West South Central","South","AR",161.9857669536,169.573688081454,177.123185707564,169.620670600828
+"405",3,17,1,1,"Cardiovascular","Black","Female","Arkansas",1985,"West South Central","South","AR",477.638146067584,496.309826302749,517.157809477115,496.803323436389
+"406",3,17,1,1,"Communicable","Black","Female","Arkansas",1985,"West South Central","South","AR",38.00891491348,42.9839953410832,48.0766928298281,42.9354968009903
+"407",3,17,1,1,"Injuries","Black","Female","Arkansas",1985,"West South Central","South","AR",42.8526518380952,47.8090744012198,52.807867980725,47.8415429168011
+"408",3,17,1,1,"Non-communicable","Black","Female","Arkansas",1985,"West South Central","South","AR",69.8115585335835,75.3072468643438,80.9743105059406,75.2252830917051
+"409",3,18,0,0,"All other causes","White","Male","Arkansas",1986,"West South Central","South","AR",131.442132171766,136.156735316062,141.053546765096,136.238836665327
+"410",3,18,0,0,"Cancers","White","Male","Arkansas",1986,"West South Central","South","AR",274.351668382189,280.616260208574,287.043105822253,280.546524921261
+"411",3,18,0,0,"Cardiovascular","White","Male","Arkansas",1986,"West South Central","South","AR",603.111205766897,615.156440202,629.234023930047,615.496030223544
+"412",3,18,0,0,"Communicable","White","Male","Arkansas",1986,"West South Central","South","AR",65.4265505727673,69.6748067698757,74.3938024380112,69.7174472144565
+"413",3,18,0,0,"Injuries","White","Male","Arkansas",1986,"West South Central","South","AR",104.852309530717,108.254295148881,111.756239508932,108.295479821489
+"414",3,18,0,0,"Non-communicable","White","Male","Arkansas",1986,"West South Central","South","AR",99.3091870614991,103.604987771981,107.56113876594,103.536807165175
+"415",3,18,0,1,"All other causes","White","Female","Arkansas",1986,"West South Central","South","AR",92.4841842668141,95.8535122698208,99.1428636729611,95.7845868260978
+"416",3,18,0,1,"Cancers","White","Female","Arkansas",1986,"West South Central","South","AR",153.038492460041,156.405415838881,159.904128387508,156.4319877709
+"417",3,18,0,1,"Cardiovascular","White","Female","Arkansas",1986,"West South Central","South","AR",364.798525962219,372.742662648942,380.754764961329,372.769813511002
+"418",3,18,0,1,"Communicable","White","Female","Arkansas",1986,"West South Central","South","AR",37.3190412183435,39.6777402618371,42.035284820656,39.6742581119923
+"419",3,18,0,1,"Injuries","White","Female","Arkansas",1986,"West South Central","South","AR",35.8539140979831,37.5221070430068,39.0998714228751,37.4923443387559
+"420",3,18,0,1,"Non-communicable","White","Female","Arkansas",1986,"West South Central","South","AR",49.3718473432884,51.6975640950187,54.0470060859774,51.7114852663116
+"421",3,18,1,0,"All other causes","Black","Male","Arkansas",1986,"West South Central","South","AR",193.458049720116,203.144903558978,212.679846743227,203.270274737733
+"422",3,18,1,0,"Cancers","Black","Male","Arkansas",1986,"West South Central","South","AR",330.777594552169,346.030622549246,361.450924660091,345.962470770686
+"423",3,18,1,0,"Cardiovascular","Black","Male","Arkansas",1986,"West South Central","South","AR",685.905508149405,710.241439479295,736.857360914606,710.220500943532
+"424",3,18,1,0,"Communicable","Black","Male","Arkansas",1986,"West South Central","South","AR",69.0285940305327,76.6269960422588,85.3507715012782,76.6951622194437
+"425",3,18,1,0,"Injuries","Black","Male","Arkansas",1986,"West South Central","South","AR",161.270268866145,171.036589532824,180.156180783168,171.004034046689
+"426",3,18,1,0,"Non-communicable","Black","Male","Arkansas",1986,"West South Central","South","AR",96.5487669269046,104.27210108873,112.176072283389,104.332324196078
+"427",3,18,1,1,"All other causes","Black","Female","Arkansas",1986,"West South Central","South","AR",137.920891191547,143.58572039048,150.097713644488,143.694215710384
+"428",3,18,1,1,"Cancers","Black","Female","Arkansas",1986,"West South Central","South","AR",164.762396148579,172.416733443801,180.029439318875,172.482568048432
+"429",3,18,1,1,"Cardiovascular","Black","Female","Arkansas",1986,"West South Central","South","AR",472.552692116183,490.239235429908,510.962153006145,490.745566086694
+"430",3,18,1,1,"Communicable","Black","Female","Arkansas",1986,"West South Central","South","AR",41.4203647271875,46.3965830663098,51.6917018385301,46.4214014376381
+"431",3,18,1,1,"Injuries","Black","Female","Arkansas",1986,"West South Central","South","AR",42.9593082070302,47.6538400542716,52.680738734948,47.7471759611018
+"432",3,18,1,1,"Non-communicable","Black","Female","Arkansas",1986,"West South Central","South","AR",72.2489464499276,77.9950774304125,83.8485898688088,77.9733796048983
+"433",3,19,0,0,"All other causes","White","Male","Arkansas",1987,"West South Central","South","AR",130.728976597104,135.564856528662,140.081375606348,135.491127714186
+"434",3,19,0,0,"Cancers","White","Male","Arkansas",1987,"West South Central","South","AR",277.858414522633,284.428680236706,291.637052430217,284.554335281682
+"435",3,19,0,0,"Cardiovascular","White","Male","Arkansas",1987,"West South Central","South","AR",578.728513084768,591.679150783995,604.161573379403,591.672275370001
+"436",3,19,0,0,"Communicable","White","Male","Arkansas",1987,"West South Central","South","AR",69.3383261260036,73.5933552972654,78.6256118028093,73.6322560989098
+"437",3,19,0,0,"Injuries","White","Male","Arkansas",1987,"West South Central","South","AR",105.171923991096,108.298590806404,111.170120909507,108.240849328924
+"438",3,19,0,0,"Non-communicable","White","Male","Arkansas",1987,"West South Central","South","AR",103.31397662349,107.201890822858,111.28570114541,107.272435677446
+"439",3,19,0,1,"All other causes","White","Female","Arkansas",1987,"West South Central","South","AR",91.5501023570873,95.1248065959374,98.5059972880765,95.1251286673231
+"440",3,19,0,1,"Cancers","White","Female","Arkansas",1987,"West South Central","South","AR",155.250377056319,158.520898786282,161.836992113938,158.513115165996
+"441",3,19,0,1,"Cardiovascular","White","Female","Arkansas",1987,"West South Central","South","AR",360.655087134754,368.404699762382,375.628839950085,368.373747081538
+"442",3,19,0,1,"Communicable","White","Female","Arkansas",1987,"West South Central","South","AR",40.7996270911419,43.2210089711737,45.8445252587446,43.260862173753
+"443",3,19,0,1,"Injuries","White","Female","Arkansas",1987,"West South Central","South","AR",36.1009220379855,37.7755604476281,39.3824149594858,37.7724420107742
+"444",3,19,0,1,"Non-communicable","White","Female","Arkansas",1987,"West South Central","South","AR",51.8623143071822,54.1352826906389,56.353322142023,54.1521423126477
+"445",3,19,1,0,"All other causes","Black","Male","Arkansas",1987,"West South Central","South","AR",193.971018303469,202.979865723435,212.537070051903,203.164082385219
+"446",3,19,1,0,"Cancers","Black","Male","Arkansas",1987,"West South Central","South","AR",341.777576090207,358.570829784124,374.993636695827,358.503933891028
+"447",3,19,1,0,"Cardiovascular","Black","Male","Arkansas",1987,"West South Central","South","AR",678.977626126237,702.784024425283,728.028211292032,702.898790595485
+"448",3,19,1,0,"Communicable","Black","Male","Arkansas",1987,"West South Central","South","AR",74.0356162830365,81.8584129801472,90.678401332276,81.8502497936218
+"449",3,19,1,0,"Injuries","Black","Male","Arkansas",1987,"West South Central","South","AR",162.282945112918,171.17360197863,180.951755673394,171.374242035915
+"450",3,19,1,0,"Non-communicable","Black","Male","Arkansas",1987,"West South Central","South","AR",101.064357980497,109.012708758739,117.414359112242,109.100807984636
+"451",3,19,1,1,"All other causes","Black","Female","Arkansas",1987,"West South Central","South","AR",135.362151962467,141.551548613168,147.520860719726,141.535805519597
+"452",3,19,1,1,"Cancers","Black","Female","Arkansas",1987,"West South Central","South","AR",168.956330634432,176.486240645044,183.914234526905,176.562481955292
+"453",3,19,1,1,"Cardiovascular","Black","Female","Arkansas",1987,"West South Central","South","AR",471.896651524128,488.805953835644,506.710168110807,488.909957970019
+"454",3,19,1,1,"Communicable","Black","Female","Arkansas",1987,"West South Central","South","AR",44.4465832933763,49.5411222007384,54.8512938716276,49.5482169491146
+"455",3,19,1,1,"Injuries","Black","Female","Arkansas",1987,"West South Central","South","AR",42.827331229601,47.5682499004396,52.7578639479828,47.6584811069851
+"456",3,19,1,1,"Non-communicable","Black","Female","Arkansas",1987,"West South Central","South","AR",75.4085200994638,81.0549850675093,87.5938652079965,81.1495044052589
+"457",3,20,0,0,"All other causes","White","Male","Arkansas",1988,"West South Central","South","AR",131.649218009221,136.711233490369,141.883687136076,136.739577076539
+"458",3,20,0,0,"Cancers","White","Male","Arkansas",1988,"West South Central","South","AR",279.939820675474,286.38673594713,292.961605434799,286.347754959311
+"459",3,20,0,0,"Cardiovascular","White","Male","Arkansas",1988,"West South Central","South","AR",563.627582398516,575.385504553128,588.157702893024,575.609232495508
+"460",3,20,0,0,"Communicable","White","Male","Arkansas",1988,"West South Central","South","AR",73.6420019228804,78.5042693727097,83.4445668527532,78.5258743082468
+"461",3,20,0,0,"Injuries","White","Male","Arkansas",1988,"West South Central","South","AR",103.928225357073,107.066443396015,110.145749422981,107.067608402305
+"462",3,20,0,0,"Non-communicable","White","Male","Arkansas",1988,"West South Central","South","AR",104.750792293793,108.739382765588,112.976259755152,108.751218329644
+"463",3,20,0,1,"All other causes","White","Female","Arkansas",1988,"West South Central","South","AR",94.5834304744148,97.9587042840187,101.736468704492,97.9804754752254
+"464",3,20,0,1,"Cancers","White","Female","Arkansas",1988,"West South Central","South","AR",157.208701962966,160.639610241692,164.272333950416,160.675038177023
+"465",3,20,0,1,"Cardiovascular","White","Female","Arkansas",1988,"West South Central","South","AR",352.927229735553,360.710520766063,368.668074066345,360.709769940274
+"466",3,20,0,1,"Communicable","White","Female","Arkansas",1988,"West South Central","South","AR",42.7218093595798,45.2731954943868,47.7570746270608,45.245792378541
+"467",3,20,0,1,"Injuries","White","Female","Arkansas",1988,"West South Central","South","AR",36.2070277250659,37.8190832443636,39.4183372331877,37.8038679442733
+"468",3,20,0,1,"Non-communicable","White","Female","Arkansas",1988,"West South Central","South","AR",56.0296729049511,58.2926359483402,60.9886144862383,58.3387018696707
+"469",3,20,1,0,"All other causes","Black","Male","Arkansas",1988,"West South Central","South","AR",194.485631873119,203.376972418596,212.498988777305,203.502568522372
+"470",3,20,1,0,"Cancers","Black","Male","Arkansas",1988,"West South Central","South","AR",352.534547995481,368.086297631844,385.626607596321,368.349828619714
+"471",3,20,1,0,"Cardiovascular","Black","Male","Arkansas",1988,"West South Central","South","AR",669.785302772491,695.025597348209,719.573580807328,695.220061567802
+"472",3,20,1,0,"Communicable","Black","Male","Arkansas",1988,"West South Central","South","AR",76.3956514226305,84.6488512744846,93.1815532450143,84.9155955746424
+"473",3,20,1,0,"Injuries","Black","Male","Arkansas",1988,"West South Central","South","AR",163.278600821505,173.033306677776,183.725914636698,173.244346087007
+"474",3,20,1,0,"Non-communicable","Black","Male","Arkansas",1988,"West South Central","South","AR",105.97537471293,114.397755354309,123.016565077481,114.355338028552
+"475",3,20,1,1,"All other causes","Black","Female","Arkansas",1988,"West South Central","South","AR",135.395114724028,141.326908189749,147.739860867403,141.390334157799
+"476",3,20,1,1,"Cancers","Black","Female","Arkansas",1988,"West South Central","South","AR",173.865761381045,181.350006338859,188.499250179138,181.276316261154
+"477",3,20,1,1,"Cardiovascular","Black","Female","Arkansas",1988,"West South Central","South","AR",464.873150029191,482.854467231376,501.372823152402,482.618306635369
+"478",3,20,1,1,"Communicable","Black","Female","Arkansas",1988,"West South Central","South","AR",44.9866192492117,49.9728572681395,55.3915616564314,50.0770113748739
+"479",3,20,1,1,"Injuries","Black","Female","Arkansas",1988,"West South Central","South","AR",43.1956609028279,47.413395669361,52.2805484904133,47.571791301878
+"480",3,20,1,1,"Non-communicable","Black","Female","Arkansas",1988,"West South Central","South","AR",77.5875167828243,83.3216306458683,89.8025051774989,83.3614950334738
+"481",3,21,0,0,"All other causes","White","Male","Arkansas",1989,"West South Central","South","AR",131.621510585089,136.389394523471,141.140210026882,136.42858743875
+"482",3,21,0,0,"Cancers","White","Male","Arkansas",1989,"West South Central","South","AR",281.64970538673,288.020741043604,294.493294505863,288.060692359894
+"483",3,21,0,0,"Cardiovascular","White","Male","Arkansas",1989,"West South Central","South","AR",540.979742821214,553.038024850887,564.524524428789,552.908156456965
+"484",3,21,0,0,"Communicable","White","Male","Arkansas",1989,"West South Central","South","AR",68.106765717552,73.0469106890047,77.6309292593773,73.0384873178967
+"485",3,21,0,0,"Injuries","White","Male","Arkansas",1989,"West South Central","South","AR",102.163995943418,105.076496957623,108.345527023226,105.165412573064
+"486",3,21,0,0,"Non-communicable","White","Male","Arkansas",1989,"West South Central","South","AR",106.139370612018,110.309600063776,114.741542298979,110.314600867206
+"487",3,21,0,1,"All other causes","White","Female","Arkansas",1989,"West South Central","South","AR",95.1778877700855,98.5146871290345,102.268530665353,98.5700442608855
+"488",3,21,0,1,"Cancers","White","Female","Arkansas",1989,"West South Central","South","AR",158.601421944842,161.814934449621,165.439505509618,161.860382394277
+"489",3,21,0,1,"Cardiovascular","White","Female","Arkansas",1989,"West South Central","South","AR",338.271857580225,346.648190766716,354.080948140023,346.522845133914
+"490",3,21,0,1,"Communicable","White","Female","Arkansas",1989,"West South Central","South","AR",41.8550562133423,44.188517916908,46.7645465868935,44.1846419640836
+"491",3,21,0,1,"Injuries","White","Female","Arkansas",1989,"West South Central","South","AR",36.1612029787966,37.7675857424641,39.5531352360963,37.7736873090697
+"492",3,21,0,1,"Non-communicable","White","Female","Arkansas",1989,"West South Central","South","AR",59.4715761192109,61.9158618820572,64.5425090241497,61.9492680158067
+"493",3,21,1,0,"All other causes","Black","Male","Arkansas",1989,"West South Central","South","AR",195.620888220754,204.452439859193,214.186028569069,204.484748213523
+"494",3,21,1,0,"Cancers","Black","Male","Arkansas",1989,"West South Central","South","AR",364.662346616062,381.975509099428,401.378516576863,382.470965229106
+"495",3,21,1,0,"Cardiovascular","Black","Male","Arkansas",1989,"West South Central","South","AR",656.468904749166,680.503236980308,703.15576003936,680.686659420355
+"496",3,21,1,0,"Communicable","Black","Male","Arkansas",1989,"West South Central","South","AR",77.6004544457173,85.3411974105254,93.8044569032399,85.4738746290016
+"497",3,21,1,0,"Injuries","Black","Male","Arkansas",1989,"West South Central","South","AR",164.619744101504,174.868472167356,185.19110417588,174.899835134444
+"498",3,21,1,0,"Non-communicable","Black","Male","Arkansas",1989,"West South Central","South","AR",110.084067798382,118.718135737289,128.001261989205,118.790912092247
+"499",3,21,1,1,"All other causes","Black","Female","Arkansas",1989,"West South Central","South","AR",134.635812165661,141.033557212646,147.54181787707,141.031462959758
+"500",3,21,1,1,"Cancers","Black","Female","Arkansas",1989,"West South Central","South","AR",178.249041541948,185.748966603315,193.405246397457,185.641115058406
+"501",3,21,1,1,"Cardiovascular","Black","Female","Arkansas",1989,"West South Central","South","AR",454.597036356688,471.592013781781,491.18339299578,472.217475770766
+"502",3,21,1,1,"Communicable","Black","Female","Arkansas",1989,"West South Central","South","AR",44.9139462129421,50.1586594847088,55.440781158182,50.153297335748
+"503",3,21,1,1,"Injuries","Black","Female","Arkansas",1989,"West South Central","South","AR",43.6825510073501,47.5316468326985,52.3232946589976,47.6802273603758
+"504",3,21,1,1,"Non-communicable","Black","Female","Arkansas",1989,"West South Central","South","AR",80.6170932017939,86.2291790531852,92.8976985194877,86.2950848179598
+"505",3,22,0,0,"All other causes","White","Male","Arkansas",1990,"West South Central","South","AR",132.947034986441,137.818452056977,142.693710401514,137.722646797571
+"506",3,22,0,0,"Cancers","White","Male","Arkansas",1990,"West South Central","South","AR",281.151204158245,287.689846075051,293.910375585964,287.731606605557
+"507",3,22,0,0,"Cardiovascular","White","Male","Arkansas",1990,"West South Central","South","AR",516.014489691897,528.523629008352,540.690441732363,528.340974547606
+"508",3,22,0,0,"Communicable","White","Male","Arkansas",1990,"West South Central","South","AR",68.0348702845477,72.4464179214016,76.9181785570078,72.4814831674307
+"509",3,22,0,0,"Injuries","White","Male","Arkansas",1990,"West South Central","South","AR",100.578872296893,103.688838819741,106.990338350468,103.726676628825
+"510",3,22,0,0,"Non-communicable","White","Male","Arkansas",1990,"West South Central","South","AR",108.870893762552,112.981870725624,117.197448974665,113.030998241625
+"511",3,22,0,1,"All other causes","White","Female","Arkansas",1990,"West South Central","South","AR",93.6195062619277,96.7864981545951,100.476939401368,96.9185764068578
+"512",3,22,0,1,"Cancers","White","Female","Arkansas",1990,"West South Central","South","AR",159.938380801579,163.478872973343,166.904551734051,163.456203215959
+"513",3,22,0,1,"Cardiovascular","White","Female","Arkansas",1990,"West South Central","South","AR",330.065968635574,337.44345376371,344.884452491677,337.478939832335
+"514",3,22,0,1,"Communicable","White","Female","Arkansas",1990,"West South Central","South","AR",39.2709323732722,41.7348075018343,44.1127060676092,41.6864233669965
+"515",3,22,0,1,"Injuries","White","Female","Arkansas",1990,"West South Central","South","AR",35.9016781228868,37.4058305735851,39.1045571253631,37.4475294320511
+"516",3,22,0,1,"Non-communicable","White","Female","Arkansas",1990,"West South Central","South","AR",60.3422289503303,62.9244064448064,65.6545714979755,62.9388131617958
+"517",3,22,1,0,"All other causes","Black","Male","Arkansas",1990,"West South Central","South","AR",195.969213354613,205.159931298236,214.178050859079,205.005209403417
+"518",3,22,1,0,"Cancers","Black","Male","Arkansas",1990,"West South Central","South","AR",374.903694317865,391.994179798565,409.64066491129,392.168416654803
+"519",3,22,1,0,"Cardiovascular","Black","Male","Arkansas",1990,"West South Central","South","AR",645.108618278112,669.388630385529,693.008816079398,668.773940141607
+"520",3,22,1,0,"Communicable","Black","Male","Arkansas",1990,"West South Central","South","AR",80.6594099667275,88.3926456836677,97.8266296576319,88.6575935767219
+"521",3,22,1,0,"Injuries","Black","Male","Arkansas",1990,"West South Central","South","AR",166.534892370873,176.108555276519,186.594174265547,176.30215976698
+"522",3,22,1,0,"Non-communicable","Black","Male","Arkansas",1990,"West South Central","South","AR",114.829231206551,123.108710095607,132.196675301184,123.166940874093
+"523",3,22,1,1,"All other causes","Black","Female","Arkansas",1990,"West South Central","South","AR",134.956097598401,141.152844602607,147.214828554904,141.171661214421
+"524",3,22,1,1,"Cancers","Black","Female","Arkansas",1990,"West South Central","South","AR",182.070250108707,189.134079166323,197.62549978177,189.422286955767
+"525",3,22,1,1,"Cardiovascular","Black","Female","Arkansas",1990,"West South Central","South","AR",440.464670152072,458.661242383028,476.613172803873,458.674591083202
+"526",3,22,1,1,"Communicable","Black","Female","Arkansas",1990,"West South Central","South","AR",46.2707685847086,51.1148697837863,56.1884223013871,51.1240952910929
+"527",3,22,1,1,"Injuries","Black","Female","Arkansas",1990,"West South Central","South","AR",43.4165976958798,47.4158191192564,51.8662394747194,47.5685074528323
+"528",3,22,1,1,"Non-communicable","Black","Female","Arkansas",1990,"West South Central","South","AR",81.8801339682261,88.3285489569394,94.3835829826494,88.3340337173404
+"529",3,23,0,0,"All other causes","White","Male","Arkansas",1991,"West South Central","South","AR",133.375936022493,138.563524302096,143.567501236103,138.572604825989
+"530",3,23,0,0,"Cancers","White","Male","Arkansas",1991,"West South Central","South","AR",280.340572728438,286.790000539915,293.507499551736,286.94192100801
+"531",3,23,0,0,"Cardiovascular","White","Male","Arkansas",1991,"West South Central","South","AR",510.099616555123,521.301182784955,533.87927328702,521.352412516903
+"532",3,23,0,0,"Communicable","White","Male","Arkansas",1991,"West South Central","South","AR",68.3709290884372,72.8523776218946,77.5057662325567,72.8613050901004
+"533",3,23,0,0,"Injuries","White","Male","Arkansas",1991,"West South Central","South","AR",99.2585422121078,102.411610970112,105.547969049976,102.434917445822
+"534",3,23,0,0,"Non-communicable","White","Male","Arkansas",1991,"West South Central","South","AR",110.142741885662,114.028586586434,118.40862972947,113.995298069522
+"535",3,23,0,1,"All other causes","White","Female","Arkansas",1991,"West South Central","South","AR",94.4138006220361,97.8852969395325,101.464399732047,97.9398684356664
+"536",3,23,0,1,"Cancers","White","Female","Arkansas",1991,"West South Central","South","AR",160.150269083241,163.670346711797,167.210900785401,163.714094473701
+"537",3,23,0,1,"Cardiovascular","White","Female","Arkansas",1991,"West South Central","South","AR",326.305473917864,333.603979027316,340.759058585883,333.653497128228
+"538",3,23,0,1,"Communicable","White","Female","Arkansas",1991,"West South Central","South","AR",38.8981918022284,41.0347395885118,43.6061636606361,41.0867671210001
+"539",3,23,0,1,"Injuries","White","Female","Arkansas",1991,"West South Central","South","AR",35.7349883969861,37.309610925782,38.9645144384873,37.3287705911216
+"540",3,23,0,1,"Non-communicable","White","Female","Arkansas",1991,"West South Central","South","AR",61.4999608479776,64.4367579134392,67.2513937527755,64.4099514369123
+"541",3,23,1,0,"All other causes","Black","Male","Arkansas",1991,"West South Central","South","AR",196.394833590636,206.05044525892,215.295341054217,206.057624888261
+"542",3,23,1,0,"Cancers","Black","Male","Arkansas",1991,"West South Central","South","AR",374.560841217784,392.109897377355,409.402961661566,391.802055396185
+"543",3,23,1,0,"Cardiovascular","Black","Male","Arkansas",1991,"West South Central","South","AR",635.625342791649,659.153130793322,680.917553774333,659.199543368023
+"544",3,23,1,0,"Communicable","Black","Male","Arkansas",1991,"West South Central","South","AR",83.8006507143113,92.0425457883018,101.47359346468,92.1545788368628
+"545",3,23,1,0,"Injuries","Black","Male","Arkansas",1991,"West South Central","South","AR",167.495291405882,177.243734797705,187.47701952369,177.257631597305
+"546",3,23,1,0,"Non-communicable","Black","Male","Arkansas",1991,"West South Central","South","AR",118.870793302027,126.797746366922,136.048174223969,126.948398862959
+"547",3,23,1,1,"All other causes","Black","Female","Arkansas",1991,"West South Central","South","AR",134.186306697825,140.098853938024,145.988663935084,140.062887606709
+"548",3,23,1,1,"Cancers","Black","Female","Arkansas",1991,"West South Central","South","AR",184.690986018589,192.098706570489,200.68395747318,192.272758969804
+"549",3,23,1,1,"Cardiovascular","Black","Female","Arkansas",1991,"West South Central","South","AR",437.772696705078,454.43129537448,472.125644880371,454.407212085072
+"550",3,23,1,1,"Communicable","Black","Female","Arkansas",1991,"West South Central","South","AR",45.5960095166031,50.9138722887994,56.6107020779416,51.0656026296273
+"551",3,23,1,1,"Injuries","Black","Female","Arkansas",1991,"West South Central","South","AR",43.5295428118835,47.382014406219,52.167689126852,47.5470156753301
+"552",3,23,1,1,"Non-communicable","Black","Female","Arkansas",1991,"West South Central","South","AR",84.4348497101503,90.1927728696625,96.4331952542514,90.3160034204795
+"553",3,24,0,0,"All other causes","White","Male","Arkansas",1992,"West South Central","South","AR",134.258013727329,139.318312595686,144.628609094704,139.403046598161
+"554",3,24,0,0,"Cancers","White","Male","Arkansas",1992,"West South Central","South","AR",281.357177983261,287.357252644685,294.187491606499,287.437964752801
+"555",3,24,0,0,"Cardiovascular","White","Male","Arkansas",1992,"West South Central","South","AR",503.168958285807,513.451656676382,525.816640088471,513.818355737064
+"556",3,24,0,0,"Communicable","White","Male","Arkansas",1992,"West South Central","South","AR",66.9668539959481,71.4914756855151,75.5433791364096,71.4435364631221
+"557",3,24,0,0,"Injuries","White","Male","Arkansas",1992,"West South Central","South","AR",97.7144527061237,100.761548989224,103.871219089342,100.796672786082
+"558",3,24,0,0,"Non-communicable","White","Male","Arkansas",1992,"West South Central","South","AR",109.441878776484,113.708279558817,117.922918349952,113.644780140681
+"559",3,24,0,1,"All other causes","White","Female","Arkansas",1992,"West South Central","South","AR",96.1491402683494,99.5363010388476,103.0157993907,99.545411445468
+"560",3,24,0,1,"Cancers","White","Female","Arkansas",1992,"West South Central","South","AR",161.333362414015,164.720041504402,168.140457484569,164.743408313254
+"561",3,24,0,1,"Cardiovascular","White","Female","Arkansas",1992,"West South Central","South","AR",320.267178110163,327.52595376455,334.183515302987,327.489261925642
+"562",3,24,0,1,"Communicable","White","Female","Arkansas",1992,"West South Central","South","AR",39.4071408833964,41.6130408424355,43.8215405659091,41.5807588090644
+"563",3,24,0,1,"Injuries","White","Female","Arkansas",1992,"West South Central","South","AR",35.7081752374985,37.251364615754,38.7680957083002,37.2592489490318
+"564",3,24,0,1,"Non-communicable","White","Female","Arkansas",1992,"West South Central","South","AR",62.2500762840116,64.6765932349732,67.3101226426045,64.7072058662911
+"565",3,24,1,0,"All other causes","Black","Male","Arkansas",1992,"West South Central","South","AR",197.974929056989,206.710879036506,216.160905766963,206.863895290941
+"566",3,24,1,0,"Cancers","Black","Male","Arkansas",1992,"West South Central","South","AR",376.243411222574,394.993765969877,412.051946019534,394.614172160874
+"567",3,24,1,0,"Cardiovascular","Black","Male","Arkansas",1992,"West South Central","South","AR",627.335003299197,651.006860994678,674.548660368503,650.991616367471
+"568",3,24,1,0,"Communicable","Black","Male","Arkansas",1992,"West South Central","South","AR",84.9947714995404,93.6565048415033,101.975715725495,93.5430034955431
+"569",3,24,1,0,"Injuries","Black","Male","Arkansas",1992,"West South Central","South","AR",166.1755461973,176.005126857392,186.240297301241,175.889002376948
+"570",3,24,1,0,"Non-communicable","Black","Male","Arkansas",1992,"West South Central","South","AR",121.74691068112,130.303171354761,138.688214330476,130.336048850441
+"571",3,24,1,1,"All other causes","Black","Female","Arkansas",1992,"West South Central","South","AR",133.11757460537,139.184667778258,144.954233289517,139.129093017137
+"572",3,24,1,1,"Cancers","Black","Female","Arkansas",1992,"West South Central","South","AR",187.190183112961,194.52661827027,202.774228416682,194.713296461499
+"573",3,24,1,1,"Cardiovascular","Black","Female","Arkansas",1992,"West South Central","South","AR",433.321080700048,450.058497276653,466.574771408153,449.964973250169
+"574",3,24,1,1,"Communicable","Black","Female","Arkansas",1992,"West South Central","South","AR",44.8831427880085,50.2712934098152,55.6954633084779,50.2316457448263
+"575",3,24,1,1,"Injuries","Black","Female","Arkansas",1992,"West South Central","South","AR",42.9712558946658,46.6649561804598,51.6784065589866,46.8025977448709
+"576",3,24,1,1,"Non-communicable","Black","Female","Arkansas",1992,"West South Central","South","AR",85.115926668532,91.3508207107956,97.4383303957141,91.316305769055
+"577",3,25,0,0,"All other causes","White","Male","Arkansas",1993,"West South Central","South","AR",136.540626622629,141.301773831854,146.137830556424,141.288234648404
+"578",3,25,0,0,"Cancers","White","Male","Arkansas",1993,"West South Central","South","AR",281.149224709732,287.495685370836,294.08926006668,287.429275950316
+"579",3,25,0,0,"Cardiovascular","White","Male","Arkansas",1993,"West South Central","South","AR",504.992747602932,516.460629826157,527.3950904512,516.395188729488
+"580",3,25,0,0,"Communicable","White","Male","Arkansas",1993,"West South Central","South","AR",67.7897676541648,72.1425667887086,76.7484057454846,72.2179501626098
+"581",3,25,0,0,"Injuries","White","Male","Arkansas",1993,"West South Central","South","AR",97.2038186050605,100.247068855839,103.196011786721,100.188966834577
+"582",3,25,0,0,"Non-communicable","White","Male","Arkansas",1993,"West South Central","South","AR",111.627204752256,116.008853786073,120.115730843906,115.942817838512
+"583",3,25,0,1,"All other causes","White","Female","Arkansas",1993,"West South Central","South","AR",98.9816959686629,102.360075039062,105.779203031623,102.351376187715
+"584",3,25,0,1,"Cancers","White","Female","Arkansas",1993,"West South Central","South","AR",161.867190568114,165.306990262633,168.607185388339,165.321154835422
+"585",3,25,0,1,"Cardiovascular","White","Female","Arkansas",1993,"West South Central","South","AR",326.168927033311,333.322593346734,340.063599456895,333.299226486008
+"586",3,25,0,1,"Communicable","White","Female","Arkansas",1993,"West South Central","South","AR",41.7642822956473,44.1263079645382,46.5314704664607,44.1484073938494
+"587",3,25,0,1,"Injuries","White","Female","Arkansas",1993,"West South Central","South","AR",35.6840867848327,37.2914886665524,38.7869919268909,37.2882279222913
+"588",3,25,0,1,"Non-communicable","White","Female","Arkansas",1993,"West South Central","South","AR",65.5116465745261,68.1110523730029,71.0002255812803,68.1437764345069
+"589",3,25,1,0,"All other causes","Black","Male","Arkansas",1993,"West South Central","South","AR",198.285736440021,208.004858696036,217.5933286226,207.916447896443
+"590",3,25,1,0,"Cancers","Black","Male","Arkansas",1993,"West South Central","South","AR",376.530144004435,395.420768351642,413.952998603575,395.143172017789
+"591",3,25,1,0,"Cardiovascular","Black","Male","Arkansas",1993,"West South Central","South","AR",621.330910268331,644.737115371106,668.306806517624,644.614157299466
+"592",3,25,1,0,"Communicable","Black","Male","Arkansas",1993,"West South Central","South","AR",88.1283625926405,96.8395270730924,105.664112396377,96.9874902991928
+"593",3,25,1,0,"Injuries","Black","Male","Arkansas",1993,"West South Central","South","AR",162.339838031936,172.265928400701,182.455431046054,172.387837256278
+"594",3,25,1,0,"Non-communicable","Black","Male","Arkansas",1993,"West South Central","South","AR",127.115024639115,135.717513476761,144.746114244115,135.90062630305
+"595",3,25,1,1,"All other causes","Black","Female","Arkansas",1993,"West South Central","South","AR",132.871701643992,139.205277967554,144.825171577871,139.12698266967
+"596",3,25,1,1,"Cancers","Black","Female","Arkansas",1993,"West South Central","South","AR",188.050617448099,195.837181648773,203.33280650034,195.796606416136
+"597",3,25,1,1,"Cardiovascular","Black","Female","Arkansas",1993,"West South Central","South","AR",438.96765205259,456.137844919066,472.8522303515,456.177529740432
+"598",3,25,1,1,"Communicable","Black","Female","Arkansas",1993,"West South Central","South","AR",46.6036688563554,51.8064182103468,57.565537003849,51.8285041310519
+"599",3,25,1,1,"Injuries","Black","Female","Arkansas",1993,"West South Central","South","AR",42.4468055759506,46.0652275045385,50.3187252413312,46.1485323477255
+"600",3,25,1,1,"Non-communicable","Black","Female","Arkansas",1993,"West South Central","South","AR",86.1355698907111,92.2713143730423,98.2808834712224,92.1763619041763
+"601",3,26,0,0,"All other causes","White","Male","Arkansas",1994,"West South Central","South","AR",136.62251080217,141.482194441657,146.382796348146,141.414563255264
+"602",3,26,0,0,"Cancers","White","Male","Arkansas",1994,"West South Central","South","AR",279.898152759735,285.748177823244,292.539763271648,285.8622124477
+"603",3,26,0,0,"Cardiovascular","White","Male","Arkansas",1994,"West South Central","South","AR",491.584189013213,503.386829362393,514.527111031502,503.240486725649
+"604",3,26,0,0,"Communicable","White","Male","Arkansas",1994,"West South Central","South","AR",70.2592369993818,74.4193038551763,78.8144568810306,74.4519554540097
+"605",3,26,0,0,"Injuries","White","Male","Arkansas",1994,"West South Central","South","AR",97.2240146714361,99.839941124288,102.683932142195,99.8969626260658
+"606",3,26,0,0,"Non-communicable","White","Male","Arkansas",1994,"West South Central","South","AR",112.279244400403,116.574893478443,120.816124664214,116.506496543565
+"607",3,26,0,1,"All other causes","White","Female","Arkansas",1994,"West South Central","South","AR",102.046997115379,105.638736943557,108.993334785303,105.635667864305
+"608",3,26,0,1,"Cancers","White","Female","Arkansas",1994,"West South Central","South","AR",161.482331197278,165.219694298169,168.741020158582,165.252036842927
+"609",3,26,0,1,"Cardiovascular","White","Female","Arkansas",1994,"West South Central","South","AR",318.730393409481,325.426324167233,332.528213303735,325.400536655474
+"610",3,26,0,1,"Communicable","White","Female","Arkansas",1994,"West South Central","South","AR",41.6632286245752,43.9848229921925,46.1410044329863,43.9441416529844
+"611",3,26,0,1,"Injuries","White","Female","Arkansas",1994,"West South Central","South","AR",35.9269713404962,37.4307430793181,38.8861004160486,37.4298648441444
+"612",3,26,0,1,"Non-communicable","White","Female","Arkansas",1994,"West South Central","South","AR",66.6130720168903,69.2405112443874,71.9987707293751,69.2550835245952
+"613",3,26,1,0,"All other causes","Black","Male","Arkansas",1994,"West South Central","South","AR",199.125112527928,208.52802566292,218.264205246888,208.780151316851
+"614",3,26,1,0,"Cancers","Black","Male","Arkansas",1994,"West South Central","South","AR",374.365994533599,392.800939340793,410.922625313179,392.983762664885
+"615",3,26,1,0,"Cardiovascular","Black","Male","Arkansas",1994,"West South Central","South","AR",614.616725910247,637.547340624018,662.517851982474,637.526483337605
+"616",3,26,1,0,"Communicable","Black","Male","Arkansas",1994,"West South Central","South","AR",89.6129832601132,98.8871157640148,109.055359560674,99.0848294214316
+"617",3,26,1,0,"Injuries","Black","Male","Arkansas",1994,"West South Central","South","AR",157.276885254455,166.560695745732,176.417859484786,166.731182035389
+"618",3,26,1,0,"Non-communicable","Black","Male","Arkansas",1994,"West South Central","South","AR",131.616390369757,140.286998820658,149.711345954746,140.307243609614
+"619",3,26,1,1,"All other causes","Black","Female","Arkansas",1994,"West South Central","South","AR",134.091779615656,140.076862006543,146.408792021844,140.111796344873
+"620",3,26,1,1,"Cancers","Black","Female","Arkansas",1994,"West South Central","South","AR",188.114547483672,195.778845592237,203.64786702673,195.837911637862
+"621",3,26,1,1,"Cardiovascular","Black","Female","Arkansas",1994,"West South Central","South","AR",425.392009549321,442.179180864487,459.229091005523,442.418250384757
+"622",3,26,1,1,"Communicable","Black","Female","Arkansas",1994,"West South Central","South","AR",47.3765096116998,52.2776460903274,57.8654998005213,52.3834527141458
+"623",3,26,1,1,"Injuries","Black","Female","Arkansas",1994,"West South Central","South","AR",42.2417237967131,45.7615778387469,49.9111995127658,45.8316599070379
+"624",3,26,1,1,"Non-communicable","Black","Female","Arkansas",1994,"West South Central","South","AR",86.9701716734635,93.0995341967531,99.8004126030371,93.2529708046758
+"625",3,27,0,0,"All other causes","White","Male","Arkansas",1995,"West South Central","South","AR",136.458765908434,140.881494481112,146.060098324927,140.923550135882
+"626",3,27,0,0,"Cancers","White","Male","Arkansas",1995,"West South Central","South","AR",278.413753281095,284.457978246914,290.910806050684,284.507043546081
+"627",3,27,0,0,"Cardiovascular","White","Male","Arkansas",1995,"West South Central","South","AR",492.886784493467,503.390748548966,515.326610024941,503.689699884488
+"628",3,27,0,0,"Communicable","White","Male","Arkansas",1995,"West South Central","South","AR",66.8157957908529,70.822284329408,74.9560775819517,70.8288267211447
+"629",3,27,0,0,"Injuries","White","Male","Arkansas",1995,"West South Central","South","AR",96.8062816630894,99.5340661843099,102.492868115834,99.5725211216736
+"630",3,27,0,0,"Non-communicable","White","Male","Arkansas",1995,"West South Central","South","AR",112.340541504385,116.169208452001,120.632507635516,116.249481433176
+"631",3,27,0,1,"All other causes","White","Female","Arkansas",1995,"West South Central","South","AR",103.426279220889,107.349913415617,111.010610915593,107.333878613716
+"632",3,27,0,1,"Cancers","White","Female","Arkansas",1995,"West South Central","South","AR",161.980931941712,165.262027954145,168.7338636707,165.299585322215
+"633",3,27,0,1,"Cardiovascular","White","Female","Arkansas",1995,"West South Central","South","AR",315.271088073284,321.803426705151,328.874953520715,321.745818445147
+"634",3,27,0,1,"Communicable","White","Female","Arkansas",1995,"West South Central","South","AR",40.846911547903,42.9974594476062,45.2586596336421,43.0309068604138
+"635",3,27,0,1,"Injuries","White","Female","Arkansas",1995,"West South Central","South","AR",36.3287153823855,37.7830911528363,39.4058510722375,37.8182811894323
+"636",3,27,0,1,"Non-communicable","White","Female","Arkansas",1995,"West South Central","South","AR",67.0890843824733,70.0869822892765,72.6306856335372,70.0662719061223
+"637",3,27,1,0,"All other causes","Black","Male","Arkansas",1995,"West South Central","South","AR",199.895752688605,208.8510865652,217.925752115257,208.849456072484
+"638",3,27,1,0,"Cancers","Black","Male","Arkansas",1995,"West South Central","South","AR",370.768514883746,389.035329674337,407.845526356701,389.331346819791
+"639",3,27,1,0,"Cardiovascular","Black","Male","Arkansas",1995,"West South Central","South","AR",607.596311138817,629.958760400063,654.023730920429,630.346340750624
+"640",3,27,1,0,"Communicable","Black","Male","Arkansas",1995,"West South Central","South","AR",90.4113667402702,99.7870283740282,110.950854332603,100.024760270581
+"641",3,27,1,0,"Injuries","Black","Male","Arkansas",1995,"West South Central","South","AR",153.609452534268,162.195598395438,171.932853522011,162.344630669224
+"642",3,27,1,0,"Non-communicable","Black","Male","Arkansas",1995,"West South Central","South","AR",135.271956032906,144.675854437294,154.285555183361,144.627493160682
+"643",3,27,1,1,"All other causes","Black","Female","Arkansas",1995,"West South Central","South","AR",135.01259483098,140.983035979449,147.580963022446,141.04030029089
+"644",3,27,1,1,"Cancers","Black","Female","Arkansas",1995,"West South Central","South","AR",188.4621280469,196.392096970554,204.21117059352,196.373867824103
+"645",3,27,1,1,"Cardiovascular","Black","Female","Arkansas",1995,"West South Central","South","AR",426.213715476018,443.262377333692,461.177824799714,443.350378702545
+"646",3,27,1,1,"Communicable","Black","Female","Arkansas",1995,"West South Central","South","AR",48.0669681764664,53.1931023615716,58.4524933712713,53.1430336619603
+"647",3,27,1,1,"Injuries","Black","Female","Arkansas",1995,"West South Central","South","AR",41.3060688417278,44.7369056660332,48.9718895546941,44.8565127580799
+"648",3,27,1,1,"Non-communicable","Black","Female","Arkansas",1995,"West South Central","South","AR",89.4071362227486,95.9419993397124,102.082035744545,95.7847074457331
+"649",3,28,0,0,"All other causes","White","Male","Arkansas",1996,"West South Central","South","AR",139.620033707992,144.893605980292,150.048783396243,144.892923516916
+"650",3,28,0,0,"Cancers","White","Male","Arkansas",1996,"West South Central","South","AR",274.200283308004,279.910766182109,286.805068393001,280.099183290763
+"651",3,28,0,0,"Cardiovascular","White","Male","Arkansas",1996,"West South Central","South","AR",481.224996000947,491.529791043461,501.971865726424,491.550228887289
+"652",3,28,0,0,"Communicable","White","Male","Arkansas",1996,"West South Central","South","AR",66.6230150356529,70.5853990344737,74.6777816372159,70.6120989473215
+"653",3,28,0,0,"Injuries","White","Male","Arkansas",1996,"West South Central","South","AR",96.781139584993,99.4181428923665,102.442550034576,99.4912825121732
+"654",3,28,0,0,"Non-communicable","White","Male","Arkansas",1996,"West South Central","South","AR",112.54977393086,116.437765214787,120.425920232113,116.494494836389
+"655",3,28,0,1,"All other causes","White","Female","Arkansas",1996,"West South Central","South","AR",104.262539427429,107.839380555906,111.376063099718,107.849345665114
+"656",3,28,0,1,"Cancers","White","Female","Arkansas",1996,"West South Central","South","AR",162.14917476428,165.326918735827,168.796254915632,165.329298359707
+"657",3,28,0,1,"Cardiovascular","White","Female","Arkansas",1996,"West South Central","South","AR",314.980248658618,321.98507556162,328.479569811673,321.98428636402
+"658",3,28,0,1,"Communicable","White","Female","Arkansas",1996,"West South Central","South","AR",41.3692600063757,43.7537264698412,46.1090043921667,43.7558927194195
+"659",3,28,0,1,"Injuries","White","Female","Arkansas",1996,"West South Central","South","AR",36.7626751810972,38.2043798942677,39.8960991421755,38.2348213461395
+"660",3,28,0,1,"Non-communicable","White","Female","Arkansas",1996,"West South Central","South","AR",70.3938719857972,73.2803463353315,75.9894313076525,73.2570031078456
+"661",3,28,1,0,"All other causes","Black","Male","Arkansas",1996,"West South Central","South","AR",199.357760428173,208.803914910567,218.218769299805,208.929342075171
+"662",3,28,1,0,"Cancers","Black","Male","Arkansas",1996,"West South Central","South","AR",365.11889469814,381.250072126516,400.383607292019,381.490476171848
+"663",3,28,1,0,"Cardiovascular","Black","Male","Arkansas",1996,"West South Central","South","AR",599.496206337583,622.099916044953,645.151216890072,621.952415595743
+"664",3,28,1,0,"Communicable","Black","Male","Arkansas",1996,"West South Central","South","AR",91.5172534751178,100.823745753674,111.175273435396,100.967008622801
+"665",3,28,1,0,"Injuries","Black","Male","Arkansas",1996,"West South Central","South","AR",146.5492968571,155.693958087405,164.480633860805,155.692664669622
+"666",3,28,1,0,"Non-communicable","Black","Male","Arkansas",1996,"West South Central","South","AR",138.227474741378,147.795142555694,157.086308384356,147.773456700939
+"667",3,28,1,1,"All other causes","Black","Female","Arkansas",1996,"West South Central","South","AR",135.272904315232,141.888785442816,148.38831947827,141.881269987676
+"668",3,28,1,1,"Cancers","Black","Female","Arkansas",1996,"West South Central","South","AR",188.119051134855,195.921627996504,203.782292822119,195.953095326545
+"669",3,28,1,1,"Cardiovascular","Black","Female","Arkansas",1996,"West South Central","South","AR",414.489080479413,430.47241599853,447.525644315769,430.509325472972
+"670",3,28,1,1,"Communicable","Black","Female","Arkansas",1996,"West South Central","South","AR",48.683500451896,53.9253636530917,59.7792814517248,53.9698422121346
+"671",3,28,1,1,"Injuries","Black","Female","Arkansas",1996,"West South Central","South","AR",40.5458962948228,44.0321259128822,48.0096499870405,44.1220724549852
+"672",3,28,1,1,"Non-communicable","Black","Female","Arkansas",1996,"West South Central","South","AR",91.3571814869094,98.0997325553294,105.001411594702,98.1119899829558
+"673",3,29,0,0,"All other causes","White","Male","Arkansas",1997,"West South Central","South","AR",143.264203340897,148.314137674454,153.516557549396,148.378414408052
+"674",3,29,0,0,"Cancers","White","Male","Arkansas",1997,"West South Central","South","AR",269.651418584852,275.817921648489,281.829940240854,275.746506892027
+"675",3,29,0,0,"Cardiovascular","White","Male","Arkansas",1997,"West South Central","South","AR",474.878093037598,486.460961254101,497.357393859084,486.512779833284
+"676",3,29,0,0,"Communicable","White","Male","Arkansas",1997,"West South Central","South","AR",69.0941793186182,73.201916239743,77.3032320910165,73.14212024153
+"677",3,29,0,0,"Injuries","White","Male","Arkansas",1997,"West South Central","South","AR",96.8140515708357,99.6330109305746,102.663553320899,99.6637377598284
+"678",3,29,0,0,"Non-communicable","White","Male","Arkansas",1997,"West South Central","South","AR",114.861739916558,118.828155290619,123.030032417584,118.810792221182
+"679",3,29,0,1,"All other causes","White","Female","Arkansas",1997,"West South Central","South","AR",112.744499336318,116.184523160765,119.997279807082,116.237865794104
+"680",3,29,0,1,"Cancers","White","Female","Arkansas",1997,"West South Central","South","AR",162.431085876967,165.716228331511,169.21566075653,165.708072637678
+"681",3,29,0,1,"Cardiovascular","White","Female","Arkansas",1997,"West South Central","South","AR",315.525275084397,322.367561917776,328.816723407704,322.264906648575
+"682",3,29,0,1,"Communicable","White","Female","Arkansas",1997,"West South Central","South","AR",41.9827866493849,44.1823528300605,46.7613321062079,44.2060573914878
+"683",3,29,0,1,"Injuries","White","Female","Arkansas",1997,"West South Central","South","AR",37.1946447538177,38.730738021402,40.2997708397829,38.7213302094793
+"684",3,29,0,1,"Non-communicable","White","Female","Arkansas",1997,"West South Central","South","AR",75.1750421387688,78.0518004403162,81.0347650814561,78.0630503803805
+"685",3,29,1,0,"All other causes","Black","Male","Arkansas",1997,"West South Central","South","AR",198.988126027677,209.392095822182,218.760549674875,209.243511045606
+"686",3,29,1,0,"Cancers","Black","Male","Arkansas",1997,"West South Central","South","AR",360.685819127069,378.150106488363,396.348865463601,377.922097440592
+"687",3,29,1,0,"Cardiovascular","Black","Male","Arkansas",1997,"West South Central","South","AR",597.174517504111,620.413794369339,642.191772490326,619.982269995117
+"688",3,29,1,0,"Communicable","Black","Male","Arkansas",1997,"West South Central","South","AR",88.5108042218078,97.284836595077,107.203535213116,97.5095035887956
+"689",3,29,1,0,"Injuries","Black","Male","Arkansas",1997,"West South Central","South","AR",141.546458871063,149.801038383859,158.576508229889,149.894688269351
+"690",3,29,1,0,"Non-communicable","Black","Male","Arkansas",1997,"West South Central","South","AR",140.659719651652,150.920022277202,160.808828625559,150.897882795807
+"691",3,29,1,1,"All other causes","Black","Female","Arkansas",1997,"West South Central","South","AR",137.205357885607,143.564884567312,150.14631371412,143.690049498791
+"692",3,29,1,1,"Cancers","Black","Female","Arkansas",1997,"West South Central","South","AR",188.082171123899,196.065289132813,204.385027409743,196.098679775912
+"693",3,29,1,1,"Cardiovascular","Black","Female","Arkansas",1997,"West South Central","South","AR",415.92046556677,433.311435628387,448.746231140593,433.172848255677
+"694",3,29,1,1,"Communicable","Black","Female","Arkansas",1997,"West South Central","South","AR",48.8892970434414,54.0611674993185,59.9560440445762,54.1304702463219
+"695",3,29,1,1,"Injuries","Black","Female","Arkansas",1997,"West South Central","South","AR",40.0548697121768,43.3479562122711,47.3044080925858,43.4865891024877
+"696",3,29,1,1,"Non-communicable","Black","Female","Arkansas",1997,"West South Central","South","AR",96.2215031219424,102.627337756641,109.732040049334,102.769620786193
+"697",3,30,0,0,"All other causes","White","Male","Arkansas",1998,"West South Central","South","AR",145.933903651822,150.695695208202,155.867167692296,150.755355020822
+"698",3,30,0,0,"Cancers","White","Male","Arkansas",1998,"West South Central","South","AR",266.959173608658,272.840381864125,278.381127136775,272.695916564625
+"699",3,30,0,0,"Cardiovascular","White","Male","Arkansas",1998,"West South Central","South","AR",462.077733071365,472.570900480644,483.149008828689,472.64165068986
+"700",3,30,0,0,"Communicable","White","Male","Arkansas",1998,"West South Central","South","AR",66.2313815700227,69.7653381142054,74.2939789842521,69.8615145559186
+"701",3,30,0,0,"Injuries","White","Male","Arkansas",1998,"West South Central","South","AR",95.91258952609,98.8555153811281,101.720166433062,98.8754955563676
+"702",3,30,0,0,"Non-communicable","White","Male","Arkansas",1998,"West South Central","South","AR",116.54868328793,120.926760506382,125.033003978048,120.939185291368
+"703",3,30,0,1,"All other causes","White","Female","Arkansas",1998,"West South Central","South","AR",115.219866909753,118.672908043187,122.576671403052,118.739853110687
+"704",3,30,0,1,"Cancers","White","Female","Arkansas",1998,"West South Central","South","AR",161.74058528727,164.998923618819,168.593640041827,165.060977354837
+"705",3,30,0,1,"Cardiovascular","White","Female","Arkansas",1998,"West South Central","South","AR",310.759687482842,317.060756272586,323.503480096618,317.106492133977
+"706",3,30,0,1,"Communicable","White","Female","Arkansas",1998,"West South Central","South","AR",43.1168984118385,45.2947053432929,47.6417444586925,45.34711252269
+"707",3,30,0,1,"Injuries","White","Female","Arkansas",1998,"West South Central","South","AR",37.0534713915746,38.5660919745766,40.0716740154282,38.5417547515968
+"708",3,30,0,1,"Non-communicable","White","Female","Arkansas",1998,"West South Central","South","AR",79.9318613445449,83.0170320743057,86.0778874883941,82.999724024988
+"709",3,30,1,0,"All other causes","Black","Male","Arkansas",1998,"West South Central","South","AR",200.669869483149,210.938721802631,220.969986669616,210.980197316774
+"710",3,30,1,0,"Cancers","Black","Male","Arkansas",1998,"West South Central","South","AR",356.759077066035,373.791744911205,392.210074450818,374.083558731648
+"711",3,30,1,0,"Cardiovascular","Black","Male","Arkansas",1998,"West South Central","South","AR",593.855433311663,615.53355007325,638.189361401152,615.899124444883
+"712",3,30,1,0,"Communicable","Black","Male","Arkansas",1998,"West South Central","South","AR",88.1681997106257,96.9612037672124,106.277144345182,96.9430675452014
+"713",3,30,1,0,"Injuries","Black","Male","Arkansas",1998,"West South Central","South","AR",135.791833044923,143.621774710083,151.546992249474,143.600295371005
+"714",3,30,1,0,"Non-communicable","Black","Male","Arkansas",1998,"West South Central","South","AR",143.863565000644,153.959272806439,164.238929530774,153.899893911619
+"715",3,30,1,1,"All other causes","Black","Female","Arkansas",1998,"West South Central","South","AR",138.939504722353,145.085085524712,151.718960009345,145.193834769732
+"716",3,30,1,1,"Cancers","Black","Female","Arkansas",1998,"West South Central","South","AR",187.786648820202,195.523333192842,203.498979669264,195.58483615909
+"717",3,30,1,1,"Cardiovascular","Black","Female","Arkansas",1998,"West South Central","South","AR",417.32270250947,432.741386254409,448.629102605635,433.108302825977
+"718",3,30,1,1,"Communicable","Black","Female","Arkansas",1998,"West South Central","South","AR",48.6765705429081,53.7748984937898,59.6893719449305,53.9001088329945
+"719",3,30,1,1,"Injuries","Black","Female","Arkansas",1998,"West South Central","South","AR",39.0255009919831,42.4819713260101,46.3632693294838,42.5503582452568
+"720",3,30,1,1,"Non-communicable","Black","Female","Arkansas",1998,"West South Central","South","AR",100.124640205758,106.531831059032,114.030703982511,106.654972579022
+"721",3,31,0,0,"All other causes","White","Male","Arkansas",1999,"West South Central","South","AR",149.82632673308,154.451734045965,159.779484469522,154.563126523792
+"722",3,31,0,0,"Cancers","White","Male","Arkansas",1999,"West South Central","South","AR",265.103813872321,271.310194310902,277.15108749246,271.31095325055
+"723",3,31,0,0,"Cardiovascular","White","Male","Arkansas",1999,"West South Central","South","AR",447.699592587811,458.188355233722,468.217486453008,458.196663570307
+"724",3,31,0,0,"Communicable","White","Male","Arkansas",1999,"West South Central","South","AR",58.4011213090782,62.3021646956128,65.8142740409566,62.2259457029132
+"725",3,31,0,0,"Injuries","White","Male","Arkansas",1999,"West South Central","South","AR",95.6770889979554,98.3663834718969,101.052698622991,98.3939391312836
+"726",3,31,0,0,"Non-communicable","White","Male","Arkansas",1999,"West South Central","South","AR",124.391936225628,128.601414934759,132.918869185271,128.61900132151
+"727",3,31,0,1,"All other causes","White","Female","Arkansas",1999,"West South Central","South","AR",120.899260874467,124.634421570891,128.709202392955,124.643382711419
+"728",3,31,0,1,"Cancers","White","Female","Arkansas",1999,"West South Central","South","AR",161.813806331924,164.959695474419,168.32705484564,165.027126158211
+"729",3,31,0,1,"Cardiovascular","White","Female","Arkansas",1999,"West South Central","South","AR",305.108884318974,311.587946653272,317.901909508104,311.520209412284
+"730",3,31,0,1,"Communicable","White","Female","Arkansas",1999,"West South Central","South","AR",39.7937062717961,41.8786307189281,44.0919358339085,41.9168744264972
+"731",3,31,0,1,"Injuries","White","Female","Arkansas",1999,"West South Central","South","AR",36.8207462192913,38.4705405419851,40.0022090158339,38.4462291549106
+"732",3,31,0,1,"Non-communicable","White","Female","Arkansas",1999,"West South Central","South","AR",87.3332263429127,90.4817248510282,93.5921322302126,90.4961360700775
+"733",3,31,1,0,"All other causes","Black","Male","Arkansas",1999,"West South Central","South","AR",200.314432268708,210.00988258922,220.040398469955,210.011119455062
+"734",3,31,1,0,"Cancers","Black","Male","Arkansas",1999,"West South Central","South","AR",351.877793513467,368.908814357069,387.136056643879,368.823969680451
+"735",3,31,1,0,"Cardiovascular","Black","Male","Arkansas",1999,"West South Central","South","AR",584.677217047375,605.894873248899,629.057414987264,606.526355926407
+"736",3,31,1,0,"Communicable","Black","Male","Arkansas",1999,"West South Central","South","AR",86.7667045180643,94.8582939965669,103.956083043964,95.001649712359
+"737",3,31,1,0,"Injuries","Black","Male","Arkansas",1999,"West South Central","South","AR",129.572965942279,137.511158426261,145.566930125404,137.477265961826
+"738",3,31,1,0,"Non-communicable","Black","Male","Arkansas",1999,"West South Central","South","AR",146.270500151602,156.608103431596,166.358987553877,156.524709979956
+"739",3,31,1,1,"All other causes","Black","Female","Arkansas",1999,"West South Central","South","AR",140.477355057563,146.794842422467,153.088228006604,146.726006594746
+"740",3,31,1,1,"Cancers","Black","Female","Arkansas",1999,"West South Central","South","AR",188.240506473506,195.86546004844,204.295229249458,195.915482980599
+"741",3,31,1,1,"Cardiovascular","Black","Female","Arkansas",1999,"West South Central","South","AR",411.562151401339,428.238516608964,444.409376052166,428.223383893177
+"742",3,31,1,1,"Communicable","Black","Female","Arkansas",1999,"West South Central","South","AR",48.012041776187,53.1981202744629,58.5538972606042,53.2257379399159
+"743",3,31,1,1,"Injuries","Black","Female","Arkansas",1999,"West South Central","South","AR",37.5547077302569,41.1767541595096,45.2410529849905,41.2387350634136
+"744",3,31,1,1,"Non-communicable","Black","Female","Arkansas",1999,"West South Central","South","AR",106.445189303696,113.228922072527,120.752882397262,113.404441787634
+"745",3,32,0,0,"All other causes","White","Male","Arkansas",2000,"West South Central","South","AR",151.262067725061,156.179908830793,161.513547520035,156.294069398472
+"746",3,32,0,0,"Cancers","White","Male","Arkansas",2000,"West South Central","South","AR",261.461755385441,267.096996546984,273.122520100984,267.0978035415
+"747",3,32,0,0,"Cardiovascular","White","Male","Arkansas",2000,"West South Central","South","AR",436.658726181737,445.72788910361,455.644130332826,445.741263512089
+"748",3,32,0,0,"Communicable","White","Male","Arkansas",2000,"West South Central","South","AR",56.0718712132333,59.5022348486336,62.9254013661886,59.4626241704464
+"749",3,32,0,0,"Injuries","White","Male","Arkansas",2000,"West South Central","South","AR",95.1132245651499,97.9589844784245,100.912404725529,97.975739585875
+"750",3,32,0,0,"Non-communicable","White","Male","Arkansas",2000,"West South Central","South","AR",129.620912690643,134.028580172954,138.425518196215,134.047419031168
+"751",3,32,0,1,"All other causes","White","Female","Arkansas",2000,"West South Central","South","AR",121.913344950362,125.501630324866,129.557643719849,125.541464576638
+"752",3,32,0,1,"Cancers","White","Female","Arkansas",2000,"West South Central","South","AR",161.637747793184,164.836953839919,168.232475731745,164.883978308414
+"753",3,32,0,1,"Cardiovascular","White","Female","Arkansas",2000,"West South Central","South","AR",301.887570753619,308.106656950689,314.838488613447,308.176608634879
+"754",3,32,0,1,"Communicable","White","Female","Arkansas",2000,"West South Central","South","AR",39.1474439634956,41.4084693697935,43.5763730489663,41.3691215585718
+"755",3,32,0,1,"Injuries","White","Female","Arkansas",2000,"West South Central","South","AR",37.0582489803185,38.601486852826,40.1841237503684,38.5964511894273
+"756",3,32,0,1,"Non-communicable","White","Female","Arkansas",2000,"West South Central","South","AR",90.4076100883289,93.5770486255719,96.740610246317,93.5836147446663
+"757",3,32,1,0,"All other causes","Black","Male","Arkansas",2000,"West South Central","South","AR",199.451463664202,208.889982636507,219.850195393167,209.139376630084
+"758",3,32,1,0,"Cancers","Black","Male","Arkansas",2000,"West South Central","South","AR",349.616282755105,365.717368386069,383.715643109534,366.075788627049
+"759",3,32,1,0,"Cardiovascular","Black","Male","Arkansas",2000,"West South Central","South","AR",565.574828366202,587.332871578686,609.989856431221,587.555631551504
+"760",3,32,1,0,"Communicable","Black","Male","Arkansas",2000,"West South Central","South","AR",83.3654280335776,92.8523537246049,102.296452088802,92.8032798544481
+"761",3,32,1,0,"Injuries","Black","Male","Arkansas",2000,"West South Central","South","AR",126.414305400612,134.120168918141,142.040450910818,134.12690973051
+"762",3,32,1,0,"Non-communicable","Black","Male","Arkansas",2000,"West South Central","South","AR",148.563982183949,158.688122079336,168.602978631702,158.635781203234
+"763",3,32,1,1,"All other causes","Black","Female","Arkansas",2000,"West South Central","South","AR",142.527532843362,148.322275161219,154.714966646531,148.378002675058
+"764",3,32,1,1,"Cancers","Black","Female","Arkansas",2000,"West South Central","South","AR",186.577700406959,194.774092018287,202.775433991592,194.70307946216
+"765",3,32,1,1,"Cardiovascular","Black","Female","Arkansas",2000,"West South Central","South","AR",409.245532840918,425.481639737898,442.909735364096,425.479569000693
+"766",3,32,1,1,"Communicable","Black","Female","Arkansas",2000,"West South Central","South","AR",46.9669208170253,52.2811172106929,57.7838973470244,52.2881033011307
+"767",3,32,1,1,"Injuries","Black","Female","Arkansas",2000,"West South Central","South","AR",36.4157715560213,40.0993970645101,44.3580599608213,40.150953302415
+"768",3,32,1,1,"Non-communicable","Black","Female","Arkansas",2000,"West South Central","South","AR",111.206281545557,118.094298675423,125.711064040931,118.100664035816
+"769",3,33,0,0,"All other causes","White","Male","Arkansas",2001,"West South Central","South","AR",145.436300441986,150.071160524793,154.725977598762,150.129306974511
+"770",3,33,0,0,"Cancers","White","Male","Arkansas",2001,"West South Central","South","AR",260.318373954916,265.922345228817,272.095877791566,266.013243025547
+"771",3,33,0,0,"Cardiovascular","White","Male","Arkansas",2001,"West South Central","South","AR",426.367489828667,435.927583513988,445.77892607924,435.860338285337
+"772",3,33,0,0,"Communicable","White","Male","Arkansas",2001,"West South Central","South","AR",57.0844340336935,60.4112932559246,64.179909546438,60.491255586598
+"773",3,33,0,0,"Injuries","White","Male","Arkansas",2001,"West South Central","South","AR",95.4883992791037,98.1660080035423,101.122599484606,98.1808832988668
+"774",3,33,0,0,"Non-communicable","White","Male","Arkansas",2001,"West South Central","South","AR",132.823040872817,137.223655479418,141.849696592156,137.244059778003
+"775",3,33,0,1,"All other causes","White","Female","Arkansas",2001,"West South Central","South","AR",116.86514305247,120.366765545598,124.103848891328,120.37759739932
+"776",3,33,0,1,"Cancers","White","Female","Arkansas",2001,"West South Central","South","AR",161.180387695538,164.531203166579,167.76809663284,164.493053808997
+"777",3,33,0,1,"Cardiovascular","White","Female","Arkansas",2001,"West South Central","South","AR",302.739443036925,308.922450328198,315.648316034607,309.015142545909
+"778",3,33,0,1,"Communicable","White","Female","Arkansas",2001,"West South Central","South","AR",38.7788815989179,40.9162443125268,43.0091060469313,40.902582538678
+"779",3,33,0,1,"Injuries","White","Female","Arkansas",2001,"West South Central","South","AR",37.1527160927608,38.8343696563977,40.3123724174683,38.79891204202
+"780",3,33,0,1,"Non-communicable","White","Female","Arkansas",2001,"West South Central","South","AR",93.1569517969138,96.2579406326378,99.4990449685403,96.2564925470282
+"781",3,33,1,0,"All other causes","Black","Male","Arkansas",2001,"West South Central","South","AR",195.902670469157,205.442882002059,215.556950809478,205.597269645629
+"782",3,33,1,0,"Cancers","Black","Male","Arkansas",2001,"West South Central","South","AR",343.937888576801,360.351645257993,377.688934316371,360.357039436622
+"783",3,33,1,0,"Cardiovascular","Black","Male","Arkansas",2001,"West South Central","South","AR",556.228621054439,576.713453474011,598.56984116171,576.938384734175
+"784",3,33,1,0,"Communicable","Black","Male","Arkansas",2001,"West South Central","South","AR",82.3696363676911,90.8546899216499,99.7393621414782,91.0530892263028
+"785",3,33,1,0,"Injuries","Black","Male","Arkansas",2001,"West South Central","South","AR",124.135724949724,131.7629477994,139.16839093243,131.687414243948
+"786",3,33,1,0,"Non-communicable","Black","Male","Arkansas",2001,"West South Central","South","AR",150.604051789053,160.175676810759,171.943863355503,160.325000507296
+"787",3,33,1,1,"All other causes","Black","Female","Arkansas",2001,"West South Central","South","AR",140.844301867232,147.404162192881,153.776075225157,147.453127389967
+"788",3,33,1,1,"Cancers","Black","Female","Arkansas",2001,"West South Central","South","AR",186.333436659064,193.85272241054,201.350883482185,193.798018694412
+"789",3,33,1,1,"Cardiovascular","Black","Female","Arkansas",2001,"West South Central","South","AR",400.733523063132,417.615086324168,434.119599623881,417.574138157905
+"790",3,33,1,1,"Communicable","Black","Female","Arkansas",2001,"West South Central","South","AR",46.5559943689422,51.5110548799469,56.7178915172484,51.562889195701
+"791",3,33,1,1,"Injuries","Black","Female","Arkansas",2001,"West South Central","South","AR",35.6153876034567,39.4298050200315,43.5820748050727,39.4731481640616
+"792",3,33,1,1,"Non-communicable","Black","Female","Arkansas",2001,"West South Central","South","AR",117.593250148023,124.683275564159,132.687073509505,124.812390444615
+"793",3,34,0,0,"All other causes","White","Male","Arkansas",2002,"West South Central","South","AR",142.64364599773,147.630017126561,151.897223942125,147.509424252072
+"794",3,34,0,0,"Cancers","White","Male","Arkansas",2002,"West South Central","South","AR",258.198240952558,263.863870471819,269.826126748192,263.973686102814
+"795",3,34,0,0,"Cardiovascular","White","Male","Arkansas",2002,"West South Central","South","AR",422.278299224857,431.495681901469,441.420029049021,431.595565131887
+"796",3,34,0,0,"Communicable","White","Male","Arkansas",2002,"West South Central","South","AR",55.9301447107695,59.228764724597,62.9752330118964,59.2627619597365
+"797",3,34,0,0,"Injuries","White","Male","Arkansas",2002,"West South Central","South","AR",95.7359331295695,98.8252431810758,101.765608101968,98.8229706101704
+"798",3,34,0,0,"Non-communicable","White","Male","Arkansas",2002,"West South Central","South","AR",137.412343560712,142.268588175271,146.981645231025,142.363124098904
+"799",3,34,0,1,"All other causes","White","Female","Arkansas",2002,"West South Central","South","AR",117.847519574513,121.825196980657,125.419156189891,121.819497947445
+"800",3,34,0,1,"Cancers","White","Female","Arkansas",2002,"West South Central","South","AR",161.030702677908,164.421775108195,167.696655762999,164.465289091954
+"801",3,34,0,1,"Cardiovascular","White","Female","Arkansas",2002,"West South Central","South","AR",294.519073575053,300.822033772874,307.301195755624,300.811042811573
+"802",3,34,0,1,"Communicable","White","Female","Arkansas",2002,"West South Central","South","AR",41.7404246231236,43.9337150542663,46.0840171411779,43.9498764109462
+"803",3,34,0,1,"Injuries","White","Female","Arkansas",2002,"West South Central","South","AR",37.6986267621141,39.237729337006,40.8033192307107,39.2538613195729
+"804",3,34,0,1,"Non-communicable","White","Female","Arkansas",2002,"West South Central","South","AR",99.5085442285658,103.061079420365,106.577571543104,103.093051152745
+"805",3,34,1,0,"All other causes","Black","Male","Arkansas",2002,"West South Central","South","AR",193.917801404822,203.551653429831,213.121494389253,203.468179569577
+"806",3,34,1,0,"Cancers","Black","Male","Arkansas",2002,"West South Central","South","AR",340.773677560047,358.402454300148,377.06395594565,358.936059058393
+"807",3,34,1,0,"Cardiovascular","Black","Male","Arkansas",2002,"West South Central","South","AR",544.930322809742,565.698136745881,588.501688110615,566.212234009708
+"808",3,34,1,0,"Communicable","Black","Male","Arkansas",2002,"West South Central","South","AR",80.9565686199559,89.7466331398491,98.7960121474345,89.7189487130619
+"809",3,34,1,0,"Injuries","Black","Male","Arkansas",2002,"West South Central","South","AR",122.406480498013,130.42383690168,138.43647868923,130.293022850025
+"810",3,34,1,0,"Non-communicable","Black","Male","Arkansas",2002,"West South Central","South","AR",149.933276348954,160.557488954343,170.965576178789,160.389779829296
+"811",3,34,1,1,"All other causes","Black","Female","Arkansas",2002,"West South Central","South","AR",140.677428129049,147.228429819297,153.298343910158,147.226252182923
+"812",3,34,1,1,"Cancers","Black","Female","Arkansas",2002,"West South Central","South","AR",186.446676842415,194.220904997449,202.10402125705,194.190480749784
+"813",3,34,1,1,"Cardiovascular","Black","Female","Arkansas",2002,"West South Central","South","AR",398.319570044551,414.836326945166,432.568102613591,414.797319388799
+"814",3,34,1,1,"Communicable","Black","Female","Arkansas",2002,"West South Central","South","AR",48.037360645726,53.1231980990792,59.0578595073341,53.1942702746804
+"815",3,34,1,1,"Injuries","Black","Female","Arkansas",2002,"West South Central","South","AR",34.8110536831104,38.8559710804773,42.8521892337698,38.8832103325313
+"816",3,34,1,1,"Non-communicable","Black","Female","Arkansas",2002,"West South Central","South","AR",119.736797620062,127.09539244281,135.748406548272,127.286137853761
+"817",3,35,0,0,"All other causes","White","Male","Arkansas",2003,"West South Central","South","AR",139.962448048367,144.446395345507,149.544536036117,144.502747925094
+"818",3,35,0,0,"Cancers","White","Male","Arkansas",2003,"West South Central","South","AR",252.204043838017,257.727605766354,263.376502467532,257.683591638238
+"819",3,35,0,0,"Cardiovascular","White","Male","Arkansas",2003,"West South Central","South","AR",399.102087187682,408.152179340281,416.945045847287,408.192404624893
+"820",3,35,0,0,"Communicable","White","Male","Arkansas",2003,"West South Central","South","AR",58.3247016658814,61.5170744620574,65.5203114060404,61.6363762793761
+"821",3,35,0,0,"Injuries","White","Male","Arkansas",2003,"West South Central","South","AR",96.2183253073671,99.1045269688352,102.210735069298,99.1257800614019
+"822",3,35,0,0,"Non-communicable","White","Male","Arkansas",2003,"West South Central","South","AR",140.102248240671,144.805731385027,149.578764546217,144.828339872774
+"823",3,35,0,1,"All other causes","White","Female","Arkansas",2003,"West South Central","South","AR",119.147992093312,122.741280917492,126.462673715107,122.760839513218
+"824",3,35,0,1,"Cancers","White","Female","Arkansas",2003,"West South Central","South","AR",160.87160686767,164.55507413902,167.772698311521,164.535098088952
+"825",3,35,0,1,"Cardiovascular","White","Female","Arkansas",2003,"West South Central","South","AR",282.823496917102,288.697466513056,294.82100748232,288.667433130357
+"826",3,35,0,1,"Communicable","White","Female","Arkansas",2003,"West South Central","South","AR",43.7958798725963,46.2353508315794,48.3973546285606,46.1679823854219
+"827",3,35,0,1,"Injuries","White","Female","Arkansas",2003,"West South Central","South","AR",38.2114399407149,39.7841490321435,41.3804859734216,39.794094853052
+"828",3,35,0,1,"Non-communicable","White","Female","Arkansas",2003,"West South Central","South","AR",100.848995719761,104.340113239673,107.949750290475,104.381128717167
+"829",3,35,1,0,"All other causes","Black","Male","Arkansas",2003,"West South Central","South","AR",194.478430263831,203.720077671039,213.345667944195,203.672839159672
+"830",3,35,1,0,"Cancers","Black","Male","Arkansas",2003,"West South Central","South","AR",342.319385578893,358.82145312132,375.558569811845,358.76168882384
+"831",3,35,1,0,"Cardiovascular","Black","Male","Arkansas",2003,"West South Central","South","AR",530.775238778669,551.577059330798,572.353078199615,551.574469329448
+"832",3,35,1,0,"Communicable","Black","Male","Arkansas",2003,"West South Central","South","AR",81.2415317233108,89.6170310902451,98.1250884001841,89.4944427590032
+"833",3,35,1,0,"Injuries","Black","Male","Arkansas",2003,"West South Central","South","AR",121.266014533863,128.725009801333,136.515445373741,128.819376115082
+"834",3,35,1,0,"Non-communicable","Black","Male","Arkansas",2003,"West South Central","South","AR",151.295798626109,161.650624934196,172.515441710339,161.642195935245
+"835",3,35,1,1,"All other causes","Black","Female","Arkansas",2003,"West South Central","South","AR",139.677195142136,146.056956863245,152.564800706763,146.005525175298
+"836",3,35,1,1,"Cancers","Black","Female","Arkansas",2003,"West South Central","South","AR",185.192102998246,192.977280630946,200.657525253575,192.923396373992
+"837",3,35,1,1,"Cardiovascular","Black","Female","Arkansas",2003,"West South Central","South","AR",380.856835170724,396.963587818191,413.287636258997,396.972991936334
+"838",3,35,1,1,"Communicable","Black","Female","Arkansas",2003,"West South Central","South","AR",49.0772325076525,54.1826606549511,60.7998371570544,54.409764911323
+"839",3,35,1,1,"Injuries","Black","Female","Arkansas",2003,"West South Central","South","AR",34.5131233443487,38.433981802155,42.5855278735524,38.4220315703352
+"840",3,35,1,1,"Non-communicable","Black","Female","Arkansas",2003,"West South Central","South","AR",122.371348105383,130.01327177132,138.967125731243,130.082624528525
+"841",3,36,0,0,"All other causes","White","Male","Arkansas",2004,"West South Central","South","AR",139.411355538487,143.934381268558,148.72351045576,144.025901138999
+"842",3,36,0,0,"Cancers","White","Male","Arkansas",2004,"West South Central","South","AR",249.061219919491,254.557518190798,260.253730170693,254.560360502634
+"843",3,36,0,0,"Cardiovascular","White","Male","Arkansas",2004,"West South Central","South","AR",379.371976993266,387.718423045956,396.562975248863,387.723978976814
+"844",3,36,0,0,"Communicable","White","Male","Arkansas",2004,"West South Central","South","AR",56.5652531947559,60.1850669950654,63.7246840004119,60.169208834659
+"845",3,36,0,0,"Injuries","White","Male","Arkansas",2004,"West South Central","South","AR",96.8451179602983,99.8688794151031,102.539366057087,99.8493988481575
+"846",3,36,0,0,"Non-communicable","White","Male","Arkansas",2004,"West South Central","South","AR",139.257477346579,143.799603891616,148.681766906742,143.854296954442
+"847",3,36,0,1,"All other causes","White","Female","Arkansas",2004,"West South Central","South","AR",115.871803824909,119.306580172907,122.811142851125,119.295505559506
+"848",3,36,0,1,"Cancers","White","Female","Arkansas",2004,"West South Central","South","AR",161.558319688609,165.146818151266,168.608167764538,165.135255899464
+"849",3,36,0,1,"Cardiovascular","White","Female","Arkansas",2004,"West South Central","South","AR",270.778312592775,277.019388255337,283.081436648968,277.02319779755
+"850",3,36,0,1,"Communicable","White","Female","Arkansas",2004,"West South Central","South","AR",41.015990899328,43.1678693972602,45.514336967309,43.1898149106117
+"851",3,36,0,1,"Injuries","White","Female","Arkansas",2004,"West South Central","South","AR",39.0657016944652,40.5410304591466,42.0830801235196,40.5387187679725
+"852",3,36,0,1,"Non-communicable","White","Female","Arkansas",2004,"West South Central","South","AR",105.180131161849,108.706063863618,112.345675401064,108.699397379918
+"853",3,36,1,0,"All other causes","Black","Male","Arkansas",2004,"West South Central","South","AR",192.920165574437,202.44623368143,212.861832561328,202.458050845351
+"854",3,36,1,0,"Cancers","Black","Male","Arkansas",2004,"West South Central","South","AR",337.396339607206,354.227553259828,371.771665858345,354.253789534216
+"855",3,36,1,0,"Cardiovascular","Black","Male","Arkansas",2004,"West South Central","South","AR",513.229886891366,532.701165340336,551.092504371952,532.647094220828
+"856",3,36,1,0,"Communicable","Black","Male","Arkansas",2004,"West South Central","South","AR",82.1349057721377,90.425930843129,99.433591070272,90.5539825862013
+"857",3,36,1,0,"Injuries","Black","Male","Arkansas",2004,"West South Central","South","AR",119.920047926757,127.096968714559,135.014380019613,127.211493974625
+"858",3,36,1,0,"Non-communicable","Black","Male","Arkansas",2004,"West South Central","South","AR",153.313073958919,164.600429943785,175.430238900142,164.442537133126
+"859",3,36,1,1,"All other causes","Black","Female","Arkansas",2004,"West South Central","South","AR",140.498894056472,146.928095560735,153.615854322947,146.969169894621
+"860",3,36,1,1,"Cancers","Black","Female","Arkansas",2004,"West South Central","South","AR",184.061997611499,191.705431999141,199.358825320895,191.680644987657
+"861",3,36,1,1,"Cardiovascular","Black","Female","Arkansas",2004,"West South Central","South","AR",367.505218935514,383.44733403653,398.981806846932,383.601948776287
+"862",3,36,1,1,"Communicable","Black","Female","Arkansas",2004,"West South Central","South","AR",48.2226031476751,53.6208910096163,59.8448199391488,53.7609676138828
+"863",3,36,1,1,"Injuries","Black","Female","Arkansas",2004,"West South Central","South","AR",33.8969619796458,38.0098885259406,42.0329307070913,37.9951989100197
+"864",3,36,1,1,"Non-communicable","Black","Female","Arkansas",2004,"West South Central","South","AR",124.750301768563,132.148565951827,140.68719368313,132.337172638262
+"865",3,37,0,0,"All other causes","White","Male","Arkansas",2005,"West South Central","South","AR",139.368897214754,144.268373989017,148.931720945407,144.195924410315
+"866",3,37,0,0,"Cancers","White","Male","Arkansas",2005,"West South Central","South","AR",248.027909237454,253.379432618674,259.3187545905,253.406243435143
+"867",3,37,0,0,"Cardiovascular","White","Male","Arkansas",2005,"West South Central","South","AR",368.07406507885,377.084501882012,386.053314316033,377.258303571302
+"868",3,37,0,0,"Communicable","White","Male","Arkansas",2005,"West South Central","South","AR",55.6962098904071,58.9895337774614,62.3221994809743,58.9949578622329
+"869",3,37,0,0,"Injuries","White","Male","Arkansas",2005,"West South Central","South","AR",97.3529437564412,100.235063819486,103.281409581186,100.25692151479
+"870",3,37,0,0,"Non-communicable","White","Male","Arkansas",2005,"West South Central","South","AR",142.42312259077,146.954649377425,151.555754093853,146.967043144966
+"871",3,37,0,1,"All other causes","White","Female","Arkansas",2005,"West South Central","South","AR",118.035921877077,121.920715500408,125.275136717995,121.852504669925
+"872",3,37,0,1,"Cancers","White","Female","Arkansas",2005,"West South Central","South","AR",159.958640543552,163.173657320081,166.54530512279,163.21916139885
+"873",3,37,0,1,"Cardiovascular","White","Female","Arkansas",2005,"West South Central","South","AR",263.017762555858,268.92307215398,275.312270408997,269.047065774665
+"874",3,37,0,1,"Communicable","White","Female","Arkansas",2005,"West South Central","South","AR",42.5588645839416,44.7872159984294,47.1714783802104,44.8339940189208
+"875",3,37,0,1,"Injuries","White","Female","Arkansas",2005,"West South Central","South","AR",39.2601348931629,40.8327972753534,42.5027979216386,40.847741256003
+"876",3,37,0,1,"Non-communicable","White","Female","Arkansas",2005,"West South Central","South","AR",108.015176711666,111.951157267987,115.610617227866,111.880195691768
+"877",3,37,1,0,"All other causes","Black","Male","Arkansas",2005,"West South Central","South","AR",191.520919116212,200.938564293711,210.391317630025,200.995623986312
+"878",3,37,1,0,"Cancers","Black","Male","Arkansas",2005,"West South Central","South","AR",334.741904476215,351.94301041929,369.223203291054,352.087846096912
+"879",3,37,1,0,"Cardiovascular","Black","Male","Arkansas",2005,"West South Central","South","AR",497.64956422691,517.978094537677,537.985876376349,517.784530876874
+"880",3,37,1,0,"Communicable","Black","Male","Arkansas",2005,"West South Central","South","AR",82.0117267111683,90.8988999815963,99.8599930157366,90.7887165070976
+"881",3,37,1,0,"Injuries","Black","Male","Arkansas",2005,"West South Central","South","AR",118.252332560951,126.060495941176,133.204282548498,125.960364763753
+"882",3,37,1,0,"Non-communicable","Black","Male","Arkansas",2005,"West South Central","South","AR",156.837307353543,167.784260932085,178.483908292833,167.744168620038
+"883",3,37,1,1,"All other causes","Black","Female","Arkansas",2005,"West South Central","South","AR",142.944903127035,149.153980751244,155.324950217484,149.085193425678
+"884",3,37,1,1,"Cancers","Black","Female","Arkansas",2005,"West South Central","South","AR",183.621191743306,190.974978453628,198.822557098642,191.022372506002
+"885",3,37,1,1,"Cardiovascular","Black","Female","Arkansas",2005,"West South Central","South","AR",361.087550215032,376.371394196046,391.312197404823,376.459871887337
+"886",3,37,1,1,"Communicable","Black","Female","Arkansas",2005,"West South Central","South","AR",47.6290566882796,53.1186196557554,59.2043669898332,53.1611984834383
+"887",3,37,1,1,"Injuries","Black","Female","Arkansas",2005,"West South Central","South","AR",33.7942052997582,37.761501305173,41.7220575928065,37.7338734533506
+"888",3,37,1,1,"Non-communicable","Black","Female","Arkansas",2005,"West South Central","South","AR",129.476315189414,138.038690169438,147.082909841445,138.147018515424
+"889",3,38,0,0,"All other causes","White","Male","Arkansas",2006,"West South Central","South","AR",140.892452322402,145.766313144951,150.427261508593,145.750000270028
+"890",3,38,0,0,"Cancers","White","Male","Arkansas",2006,"West South Central","South","AR",243.516102424193,248.501378122433,253.812932906285,248.519977598522
+"891",3,38,0,0,"Cardiovascular","White","Male","Arkansas",2006,"West South Central","South","AR",353.777324904982,361.71893342283,370.078064575388,361.896649173965
+"892",3,38,0,0,"Communicable","White","Male","Arkansas",2006,"West South Central","South","AR",52.6109690866911,55.7287144451457,59.3321897707816,55.8197042191682
+"893",3,38,0,0,"Injuries","White","Male","Arkansas",2006,"West South Central","South","AR",98.1826652181126,101.16477509749,104.208745473194,101.205643093597
+"894",3,38,0,0,"Non-communicable","White","Male","Arkansas",2006,"West South Central","South","AR",146.109877217143,151.227501439617,155.764491629003,151.096627061568
+"895",3,38,0,1,"All other causes","White","Female","Arkansas",2006,"West South Central","South","AR",120.84815964735,124.622192382999,128.428924301877,124.580150444112
+"896",3,38,0,1,"Cancers","White","Female","Arkansas",2006,"West South Central","South","AR",158.403242134925,161.480486720215,164.726018862485,161.517066367323
+"897",3,38,0,1,"Cardiovascular","White","Female","Arkansas",2006,"West South Central","South","AR",252.995939543363,258.530039349957,264.349685179171,258.538488369467
+"898",3,38,0,1,"Communicable","White","Female","Arkansas",2006,"West South Central","South","AR",39.7585846492726,41.7818763828116,43.8920614818415,41.7812310381246
+"899",3,38,0,1,"Injuries","White","Female","Arkansas",2006,"West South Central","South","AR",39.8164555006985,41.4093904020173,43.1091513873856,41.4195026501992
+"900",3,38,0,1,"Non-communicable","White","Female","Arkansas",2006,"West South Central","South","AR",108.788267609713,112.539657282508,116.539622225288,112.604111748843
+"901",3,38,1,0,"All other causes","Black","Male","Arkansas",2006,"West South Central","South","AR",191.941761220657,200.810778613673,211.43714026563,200.994951033929
+"902",3,38,1,0,"Cancers","Black","Male","Arkansas",2006,"West South Central","South","AR",326.751331179201,343.272530829758,359.140838279363,343.309899876403
+"903",3,38,1,0,"Cardiovascular","Black","Male","Arkansas",2006,"West South Central","South","AR",484.117332555465,504.492912328684,525.118347108465,504.355619497206
+"904",3,38,1,0,"Communicable","Black","Male","Arkansas",2006,"West South Central","South","AR",80.5107958247988,89.2253455703177,98.0230287227789,89.2263084389723
+"905",3,38,1,0,"Injuries","Black","Male","Arkansas",2006,"West South Central","South","AR",117.914721298022,124.721015399412,132.21432203921,124.840652962796
+"906",3,38,1,0,"Non-communicable","Black","Male","Arkansas",2006,"West South Central","South","AR",159.4448731688,170.604421115414,182.543363584628,170.633721492712
+"907",3,38,1,1,"All other causes","Black","Female","Arkansas",2006,"West South Central","South","AR",144.998067447715,151.534321359034,158.482433121903,151.557453142146
+"908",3,38,1,1,"Cancers","Black","Female","Arkansas",2006,"West South Central","South","AR",182.814566810401,189.810290910515,197.642510486585,189.774114695972
+"909",3,38,1,1,"Cardiovascular","Black","Female","Arkansas",2006,"West South Central","South","AR",346.988118293617,362.29005454865,377.922452079474,362.221912341194
+"910",3,38,1,1,"Communicable","Black","Female","Arkansas",2006,"West South Central","South","AR",46.4814535455578,51.8527544087915,57.5966273164471,51.839510712257
+"911",3,38,1,1,"Injuries","Black","Female","Arkansas",2006,"West South Central","South","AR",33.4832946222969,37.4040265602718,41.4030872617527,37.3979693354927
+"912",3,38,1,1,"Non-communicable","Black","Female","Arkansas",2006,"West South Central","South","AR",132.130428819963,141.055993844439,150.724050860196,141.16747804415
+"913",3,39,0,0,"All other causes","White","Male","Arkansas",2007,"West South Central","South","AR",144.892229789405,149.319739096768,153.772659078407,149.328938346138
+"914",3,39,0,0,"Cancers","White","Male","Arkansas",2007,"West South Central","South","AR",239.966916948528,245.417237300175,250.755420577085,245.301976110027
+"915",3,39,0,0,"Cardiovascular","White","Male","Arkansas",2007,"West South Central","South","AR",342.132494901896,350.064829081392,357.94627205396,350.010842200545
+"916",3,39,0,0,"Communicable","White","Male","Arkansas",2007,"West South Central","South","AR",50.266543818093,53.303430578306,56.4524622834506,53.3454439042788
+"917",3,39,0,0,"Injuries","White","Male","Arkansas",2007,"West South Central","South","AR",98.9091997901631,101.767561279925,104.626642158466,101.7940091038
+"918",3,39,0,0,"Non-communicable","White","Male","Arkansas",2007,"West South Central","South","AR",150.27291057531,155.00542166052,160.19725634297,155.028592877688
+"919",3,39,0,1,"All other causes","White","Female","Arkansas",2007,"West South Central","South","AR",123.694328178093,127.596919847532,131.295188739299,127.563206198218
+"920",3,39,0,1,"Cancers","White","Female","Arkansas",2007,"West South Central","South","AR",158.250664343525,161.535721589255,165.007732834193,161.534157163894
+"921",3,39,0,1,"Cardiovascular","White","Female","Arkansas",2007,"West South Central","South","AR",247.113639041073,252.554621776775,258.386273445523,252.699697270705
+"922",3,39,0,1,"Communicable","White","Female","Arkansas",2007,"West South Central","South","AR",38.3961232429535,40.4425401808778,42.5048791923246,40.4607911887456
+"923",3,39,0,1,"Injuries","White","Female","Arkansas",2007,"West South Central","South","AR",40.665765322349,42.3070192148883,43.9580683229845,42.3109372286744
+"924",3,39,0,1,"Non-communicable","White","Female","Arkansas",2007,"West South Central","South","AR",113.760041224979,117.494102551179,121.237935021702,117.510475260079
+"925",3,39,1,0,"All other causes","Black","Male","Arkansas",2007,"West South Central","South","AR",190.096895755341,198.962879765847,209.213999682035,199.119219192711
+"926",3,39,1,0,"Cancers","Black","Male","Arkansas",2007,"West South Central","South","AR",321.368934986067,337.674795637191,354.548075730229,337.390066482175
+"927",3,39,1,0,"Cardiovascular","Black","Male","Arkansas",2007,"West South Central","South","AR",467.987866930152,487.960865986107,507.604790510296,487.710722589461
+"928",3,39,1,0,"Communicable","Black","Male","Arkansas",2007,"West South Central","South","AR",77.5846406670221,85.6394996615735,94.0609639512834,85.6749364515995
+"929",3,39,1,0,"Injuries","Black","Male","Arkansas",2007,"West South Central","South","AR",115.719182742074,122.601867382456,130.379310762796,122.721540866891
+"930",3,39,1,0,"Non-communicable","Black","Male","Arkansas",2007,"West South Central","South","AR",162.652162455488,173.8316459416,184.617463098973,173.760896397028
+"931",3,39,1,1,"All other causes","Black","Female","Arkansas",2007,"West South Central","South","AR",148.508434512811,154.685634342907,162.110332268938,154.949786190175
+"932",3,39,1,1,"Cancers","Black","Female","Arkansas",2007,"West South Central","South","AR",180.548620754512,188.256262315443,195.933194197451,188.314162190533
+"933",3,39,1,1,"Cardiovascular","Black","Female","Arkansas",2007,"West South Central","South","AR",335.155283616403,348.88500404146,364.112168053913,348.989397472768
+"934",3,39,1,1,"Communicable","Black","Female","Arkansas",2007,"West South Central","South","AR",44.74143507417,49.8163953281363,55.1881024035189,49.8104921480025
+"935",3,39,1,1,"Injuries","Black","Female","Arkansas",2007,"West South Central","South","AR",33.000320168697,36.9660562304981,41.2056922710261,37.0742552989302
+"936",3,39,1,1,"Non-communicable","Black","Female","Arkansas",2007,"West South Central","South","AR",134.119841086681,142.481750883976,151.489952962974,142.569094876807
+"937",3,40,0,0,"All other causes","White","Male","Arkansas",2008,"West South Central","South","AR",144.986164656961,149.544576334597,154.040692075834,149.522933203214
+"938",3,40,0,0,"Cancers","White","Male","Arkansas",2008,"West South Central","South","AR",240.978829901371,246.220151996348,251.267096073347,246.170498431625
+"939",3,40,0,0,"Cardiovascular","White","Male","Arkansas",2008,"West South Central","South","AR",338.752430097977,346.366397949989,354.308739732847,346.503284362672
+"940",3,40,0,0,"Communicable","White","Male","Arkansas",2008,"West South Central","South","AR",49.0216843666963,51.8399273963108,54.9615545594929,51.8388184915875
+"941",3,40,0,0,"Injuries","White","Male","Arkansas",2008,"West South Central","South","AR",100.372099454355,103.484421664834,106.360940992146,103.427873141307
+"942",3,40,0,0,"Non-communicable","White","Male","Arkansas",2008,"West South Central","South","AR",151.546757512388,156.26697226002,161.45292939864,156.363357221628
+"943",3,40,0,1,"All other causes","White","Female","Arkansas",2008,"West South Central","South","AR",129.340517883231,133.285449234376,136.982956418787,133.301238676008
+"944",3,40,0,1,"Cancers","White","Female","Arkansas",2008,"West South Central","South","AR",156.212810901282,159.474365137232,162.619891372796,159.44685028286
+"945",3,40,0,1,"Cardiovascular","White","Female","Arkansas",2008,"West South Central","South","AR",241.939244028654,247.375382435969,253.190038330331,247.458738295014
+"946",3,40,0,1,"Communicable","White","Female","Arkansas",2008,"West South Central","South","AR",40.8104322398479,43.1382114688861,45.2387423155549,43.0837856817368
+"947",3,40,0,1,"Injuries","White","Female","Arkansas",2008,"West South Central","South","AR",41.5271984954037,43.0926933009803,44.928325752281,43.1251834420073
+"948",3,40,0,1,"Non-communicable","White","Female","Arkansas",2008,"West South Central","South","AR",122.184586427197,125.830345631519,129.589611271948,125.849183102008
+"949",3,40,1,0,"All other causes","Black","Male","Arkansas",2008,"West South Central","South","AR",188.994419219455,198.54057343259,209.195762119026,198.61505407435
+"950",3,40,1,0,"Cancers","Black","Male","Arkansas",2008,"West South Central","South","AR",317.282166112488,331.686915547417,348.193940712859,331.976786509755
+"951",3,40,1,0,"Cardiovascular","Black","Male","Arkansas",2008,"West South Central","South","AR",458.537658100331,475.550905009276,496.212761800899,476.212836049111
+"952",3,40,1,0,"Communicable","Black","Male","Arkansas",2008,"West South Central","South","AR",74.610504984356,82.5707719285144,91.1932938748142,82.7386537879692
+"953",3,40,1,0,"Injuries","Black","Male","Arkansas",2008,"West South Central","South","AR",112.828721727872,120.021647342571,128.176719829405,120.092952200402
+"954",3,40,1,0,"Non-communicable","Black","Male","Arkansas",2008,"West South Central","South","AR",169.092586076354,180.055759741586,191.190715633231,179.866637366605
+"955",3,40,1,1,"All other causes","Black","Female","Arkansas",2008,"West South Central","South","AR",149.568109096662,155.785853591357,163.649345736037,156.117945394481
+"956",3,40,1,1,"Cancers","Black","Female","Arkansas",2008,"West South Central","South","AR",179.404288875882,187.142033798577,195.621055163354,187.167038394976
+"957",3,40,1,1,"Cardiovascular","Black","Female","Arkansas",2008,"West South Central","South","AR",317.765875358104,331.378597132243,345.414211803752,331.613331158001
+"958",3,40,1,1,"Communicable","Black","Female","Arkansas",2008,"West South Central","South","AR",45.0538566933868,49.9692145884159,55.2235216763348,50.0352006354452
+"959",3,40,1,1,"Injuries","Black","Female","Arkansas",2008,"West South Central","South","AR",32.4065968238121,36.4985796344291,40.8388265702748,36.6028179701631
+"960",3,40,1,1,"Non-communicable","Black","Female","Arkansas",2008,"West South Central","South","AR",133.679100561965,142.567779954556,152.098939000342,142.658196354993
+"961",3,41,0,0,"All other causes","White","Male","Arkansas",2009,"West South Central","South","AR",145.364638838402,149.70256609372,154.717263333595,149.802339144719
+"962",3,41,0,0,"Cancers","White","Male","Arkansas",2009,"West South Central","South","AR",240.448416928705,245.223796994309,250.423908853865,245.211322535299
+"963",3,41,0,0,"Cardiovascular","White","Male","Arkansas",2009,"West South Central","South","AR",331.988705048252,339.799759878775,347.942850574567,339.734182873184
+"964",3,41,0,0,"Communicable","White","Male","Arkansas",2009,"West South Central","South","AR",46.2312495481733,48.9786837674409,51.9216256368818,48.9902447853893
+"965",3,41,0,0,"Injuries","White","Male","Arkansas",2009,"West South Central","South","AR",101.243416388933,104.414808788562,107.248004697227,104.363291035509
+"966",3,41,0,0,"Non-communicable","White","Male","Arkansas",2009,"West South Central","South","AR",153.409399199832,157.958679824043,162.435861156073,157.940375550217
+"967",3,41,0,1,"All other causes","White","Female","Arkansas",2009,"West South Central","South","AR",131.034566916007,134.937840599024,138.917881101473,135.007673908555
+"968",3,41,0,1,"Cancers","White","Female","Arkansas",2009,"West South Central","South","AR",153.695260904557,157.031619424846,160.264813747186,157.027299248036
+"969",3,41,0,1,"Cardiovascular","White","Female","Arkansas",2009,"West South Central","South","AR",234.68843621434,240.172545853043,244.975724673496,240.001323658133
+"970",3,41,0,1,"Communicable","White","Female","Arkansas",2009,"West South Central","South","AR",37.5123197710483,39.4357649572428,41.4028016976491,39.4262779623634
+"971",3,41,0,1,"Injuries","White","Female","Arkansas",2009,"West South Central","South","AR",41.8553764585397,43.5464435957616,45.3949966963923,43.5806710036171
+"972",3,41,0,1,"Non-communicable","White","Female","Arkansas",2009,"West South Central","South","AR",118.917600404751,123.060321119263,126.94356929237,123.050160759547
+"973",3,41,1,0,"All other causes","Black","Male","Arkansas",2009,"West South Central","South","AR",187.05344939703,196.318879407282,206.567846388408,196.555071515964
+"974",3,41,1,0,"Cancers","Black","Male","Arkansas",2009,"West South Central","South","AR",304.70954755245,319.523256373161,334.903378943928,319.607567248882
+"975",3,41,1,0,"Cardiovascular","Black","Male","Arkansas",2009,"West South Central","South","AR",442.386986391826,459.568943290213,480.147703429247,459.958204846145
+"976",3,41,1,0,"Communicable","Black","Male","Arkansas",2009,"West South Central","South","AR",70.9610832927733,78.9615911020969,87.4547076116229,79.1343924637758
+"977",3,41,1,0,"Injuries","Black","Male","Arkansas",2009,"West South Central","South","AR",110.355512255418,117.472673650346,125.434946709572,117.504387787337
+"978",3,41,1,0,"Non-communicable","Black","Male","Arkansas",2009,"West South Central","South","AR",174.653733469551,186.411121684963,199.482602867567,186.628082029655
+"979",3,41,1,1,"All other causes","Black","Female","Arkansas",2009,"West South Central","South","AR",149.040427095578,155.452081416814,162.53419273396,155.591774499762
+"980",3,41,1,1,"Cancers","Black","Female","Arkansas",2009,"West South Central","South","AR",178.434411243845,185.871420990972,193.842943775297,186.180034349508
+"981",3,41,1,1,"Cardiovascular","Black","Female","Arkansas",2009,"West South Central","South","AR",309.815465660531,323.916694379668,337.933921304976,323.94651673714
+"982",3,41,1,1,"Communicable","Black","Female","Arkansas",2009,"West South Central","South","AR",44.0508495630928,49.4852611411012,54.9023415530731,49.4934140151387
+"983",3,41,1,1,"Injuries","Black","Female","Arkansas",2009,"West South Central","South","AR",32.0406474597049,36.3068763773394,40.9282337100365,36.3388500269753
+"984",3,41,1,1,"Non-communicable","Black","Female","Arkansas",2009,"West South Central","South","AR",136.146261103553,145.619978184397,154.736060703575,145.537653417651
+"985",3,42,0,0,"All other causes","White","Male","Arkansas",2010,"West South Central","South","AR",151.534450071098,156.272657089057,160.622247762121,156.272972756646
+"986",3,42,0,0,"Cancers","White","Male","Arkansas",2010,"West South Central","South","AR",236.718097280229,241.291459178737,246.618194295662,241.483580836409
+"987",3,42,0,0,"Cardiovascular","White","Male","Arkansas",2010,"West South Central","South","AR",327.938876537562,336.09172612516,343.877390303838,336.090505004157
+"988",3,42,0,0,"Communicable","White","Male","Arkansas",2010,"West South Central","South","AR",44.9742231637008,47.7203819356094,50.6382753046128,47.7512950643307
+"989",3,42,0,0,"Injuries","White","Male","Arkansas",2010,"West South Central","South","AR",101.476596964196,104.741339393397,107.903527415568,104.702858108093
+"990",3,42,0,0,"Non-communicable","White","Male","Arkansas",2010,"West South Central","South","AR",156.035017321494,160.431248013388,165.331152474388,160.534242673889
+"991",3,42,0,1,"All other causes","White","Female","Arkansas",2010,"West South Central","South","AR",137.982202682993,142.048297230562,146.455665268648,142.061717332047
+"992",3,42,0,1,"Cancers","White","Female","Arkansas",2010,"West South Central","South","AR",152.958795210302,156.14047339511,159.301937911405,156.101201987933
+"993",3,42,0,1,"Cardiovascular","White","Female","Arkansas",2010,"West South Central","South","AR",229.792177783753,234.868106786874,240.232290176032,234.92534698211
+"994",3,42,0,1,"Communicable","White","Female","Arkansas",2010,"West South Central","South","AR",35.9133300572967,37.8543872369949,39.9603612695502,37.8859036105803
+"995",3,42,0,1,"Injuries","White","Female","Arkansas",2010,"West South Central","South","AR",42.1173187222754,43.9705951687232,45.8733258767073,43.9598052986096
+"996",3,42,0,1,"Non-communicable","White","Female","Arkansas",2010,"West South Central","South","AR",120.047581642972,123.864705294721,127.97856040309,123.854190038749
+"997",3,42,1,0,"All other causes","Black","Male","Arkansas",2010,"West South Central","South","AR",183.636963247327,194.000208700353,204.515661654045,193.944125243585
+"998",3,42,1,0,"Cancers","Black","Male","Arkansas",2010,"West South Central","South","AR",293.386501845093,308.892921503239,323.974496141929,308.636079629132
+"999",3,42,1,0,"Cardiovascular","Black","Male","Arkansas",2010,"West South Central","South","AR",430.800732999723,448.439994951994,468.081204537795,448.578047106179
+"1000",3,42,1,0,"Communicable","Black","Male","Arkansas",2010,"West South Central","South","AR",67.1062269842066,75.6616096972108,84.4192458650307,75.696575179858
+"1001",3,42,1,0,"Injuries","Black","Male","Arkansas",2010,"West South Central","South","AR",108.207082604629,115.556503509131,123.781253713246,115.757406286067
+"1002",3,42,1,0,"Non-communicable","Black","Male","Arkansas",2010,"West South Central","South","AR",177.36723868621,189.785075866529,202.252454644542,189.998595745016
+"1003",3,42,1,1,"All other causes","Black","Female","Arkansas",2010,"West South Central","South","AR",148.146060102114,155.017921985966,162.424214160763,155.105003906086
+"1004",3,42,1,1,"Cancers","Black","Female","Arkansas",2010,"West South Central","South","AR",176.159797748612,183.884506267346,191.940455043366,183.826027579025
+"1005",3,42,1,1,"Cardiovascular","Black","Female","Arkansas",2010,"West South Central","South","AR",303.693921069177,317.277082692034,330.577043299496,317.085921127201
+"1006",3,42,1,1,"Communicable","Black","Female","Arkansas",2010,"West South Central","South","AR",43.0282889137315,48.5111378644482,54.3647935463065,48.509892850156
+"1007",3,42,1,1,"Injuries","Black","Female","Arkansas",2010,"West South Central","South","AR",31.6514409917913,35.932775603393,40.9322490103527,36.0466640799226
+"1008",3,42,1,1,"Non-communicable","Black","Female","Arkansas",2010,"West South Central","South","AR",135.850295034104,145.248101131406,154.879991053696,145.284878710854
+"1009",3,43,0,0,"All other causes","White","Male","Arkansas",2011,"West South Central","South","AR",156.408794057399,161.230457591599,166.681371009148,161.321264477968
+"1010",3,43,0,0,"Cancers","White","Male","Arkansas",2011,"West South Central","South","AR",234.436398163817,239.396898987164,244.774701518225,239.44806865423
+"1011",3,43,0,0,"Cardiovascular","White","Male","Arkansas",2011,"West South Central","South","AR",317.810816227281,325.272795509998,333.370257050823,325.409357011053
+"1012",3,43,0,0,"Communicable","White","Male","Arkansas",2011,"West South Central","South","AR",46.2885594332421,48.984368449591,51.9353851820177,48.9946881706146
+"1013",3,43,0,0,"Injuries","White","Male","Arkansas",2011,"West South Central","South","AR",101.68727049134,104.879317253023,108.201912383095,104.918790546049
+"1014",3,43,0,0,"Non-communicable","White","Male","Arkansas",2011,"West South Central","South","AR",156.566042797435,161.075928405268,165.48540896155,161.164666866518
+"1015",3,43,0,1,"All other causes","White","Female","Arkansas",2011,"West South Central","South","AR",145.661729413544,149.900754479729,154.344788988784,149.920616353657
+"1016",3,43,0,1,"Cancers","White","Female","Arkansas",2011,"West South Central","South","AR",151.936519289765,154.959786028844,158.212572036576,155.035506383574
+"1017",3,43,0,1,"Cardiovascular","White","Female","Arkansas",2011,"West South Central","South","AR",226.203704256608,231.388922827357,236.563398260167,231.340568004753
+"1018",3,43,0,1,"Communicable","White","Female","Arkansas",2011,"West South Central","South","AR",38.0473618270085,40.1803817025561,42.3332517540649,40.1892367505215
+"1019",3,43,0,1,"Injuries","White","Female","Arkansas",2011,"West South Central","South","AR",42.6288887334968,44.3707979491624,46.2743442746252,44.4004823331123
+"1020",3,43,0,1,"Non-communicable","White","Female","Arkansas",2011,"West South Central","South","AR",125.594131670368,129.763851652233,133.451709619353,129.717598653911
+"1021",3,43,1,0,"All other causes","Black","Male","Arkansas",2011,"West South Central","South","AR",182.31613366592,192.747995457789,203.599557198289,192.861892910507
+"1022",3,43,1,0,"Cancers","Black","Male","Arkansas",2011,"West South Central","South","AR",285.23050631761,299.756341978508,316.988819066387,300.126402860629
+"1023",3,43,1,0,"Cardiovascular","Black","Male","Arkansas",2011,"West South Central","South","AR",420.156117205318,438.686914146309,455.812553003245,438.316544250181
+"1024",3,43,1,0,"Communicable","Black","Male","Arkansas",2011,"West South Central","South","AR",65.7641601523494,73.8714484759331,82.2738552212406,73.8121732388897
+"1025",3,43,1,0,"Injuries","Black","Male","Arkansas",2011,"West South Central","South","AR",107.790311053261,115.442544071106,123.308256681661,115.561591713456
+"1026",3,43,1,0,"Non-communicable","Black","Male","Arkansas",2011,"West South Central","South","AR",177.899635518181,190.287782322489,202.515036662284,190.30858679089
+"1027",3,43,1,1,"All other causes","Black","Female","Arkansas",2011,"West South Central","South","AR",148.980967842826,156.022571014241,164.456321092378,156.176720654779
+"1028",3,43,1,1,"Cancers","Black","Female","Arkansas",2011,"West South Central","South","AR",174.582209792388,182.12813083563,190.461431135712,182.147511580995
+"1029",3,43,1,1,"Cardiovascular","Black","Female","Arkansas",2011,"West South Central","South","AR",293.156148924817,306.648084599697,320.737348746517,306.598147010615
+"1030",3,43,1,1,"Communicable","Black","Female","Arkansas",2011,"West South Central","South","AR",42.8968102068299,48.4727808612244,54.369811409435,48.51864762551
+"1031",3,43,1,1,"Injuries","Black","Female","Arkansas",2011,"West South Central","South","AR",31.4479112530713,35.9237807952559,40.7448812785321,36.0036672044707
+"1032",3,43,1,1,"Non-communicable","Black","Female","Arkansas",2011,"West South Central","South","AR",137.086600402655,146.286126825539,156.430835749409,146.29643811232
+"1033",3,44,0,0,"All other causes","White","Male","Arkansas",2012,"West South Central","South","AR",160.826848626163,165.603894858832,171.008744781197,165.70958528162
+"1034",3,44,0,0,"Cancers","White","Male","Arkansas",2012,"West South Central","South","AR",233.012932971227,238.040487167341,243.239996140002,238.008200220876
+"1035",3,44,0,0,"Cardiovascular","White","Male","Arkansas",2012,"West South Central","South","AR",318.24779433638,325.41243505841,332.872189584857,325.508750137042
+"1036",3,44,0,0,"Communicable","White","Male","Arkansas",2012,"West South Central","South","AR",47.901754319085,50.9528867108891,53.8128227618358,50.9731479934088
+"1037",3,44,0,0,"Injuries","White","Male","Arkansas",2012,"West South Central","South","AR",101.260044373573,104.435500950197,107.891919737547,104.470727350622
+"1038",3,44,0,0,"Non-communicable","White","Male","Arkansas",2012,"West South Central","South","AR",151.004192378401,155.550714396629,160.448040648161,155.616246835896
+"1039",3,44,0,1,"All other causes","White","Female","Arkansas",2012,"West South Central","South","AR",153.921438237565,158.152445556697,162.541716799554,158.111011156075
+"1040",3,44,0,1,"Cancers","White","Female","Arkansas",2012,"West South Central","South","AR",151.010838084929,154.409956527752,157.94232482775,154.417518454104
+"1041",3,44,0,1,"Cardiovascular","White","Female","Arkansas",2012,"West South Central","South","AR",223.232667861724,228.185128253861,233.500003804786,228.224321192059
+"1042",3,44,0,1,"Communicable","White","Female","Arkansas",2012,"West South Central","South","AR",36.9833898851939,38.9437066799714,40.9293806841085,38.9516409640305
+"1043",3,44,0,1,"Injuries","White","Female","Arkansas",2012,"West South Central","South","AR",42.8254774532976,44.7033381072922,46.7605467529776,44.7388161007982
+"1044",3,44,0,1,"Non-communicable","White","Female","Arkansas",2012,"West South Central","South","AR",123.046311600492,126.993029560927,130.955905563304,127.01247773829
+"1045",3,44,1,0,"All other causes","Black","Male","Arkansas",2012,"West South Central","South","AR",180.970208942773,192.201417515904,204.600688322925,192.386163657624
+"1046",3,44,1,0,"Cancers","Black","Male","Arkansas",2012,"West South Central","South","AR",276.908597531672,292.223627286771,310.10085047589,292.417366979757
+"1047",3,44,1,0,"Cardiovascular","Black","Male","Arkansas",2012,"West South Central","South","AR",413.501529955779,432.438833928222,452.511715047053,432.384490775541
+"1048",3,44,1,0,"Communicable","Black","Male","Arkansas",2012,"West South Central","South","AR",66.2991911393593,74.3668164344163,83.2886065310895,74.4787631391175
+"1049",3,44,1,0,"Injuries","Black","Male","Arkansas",2012,"West South Central","South","AR",106.511521127182,114.97012892424,123.210063924778,115.023225392887
+"1050",3,44,1,0,"Non-communicable","Black","Male","Arkansas",2012,"West South Central","South","AR",172.233389036708,184.687677452221,197.886846674727,184.871171404674
+"1051",3,44,1,1,"All other causes","Black","Female","Arkansas",2012,"West South Central","South","AR",149.982848083592,157.372641932182,166.11626493334,157.401004400659
+"1052",3,44,1,1,"Cancers","Black","Female","Arkansas",2012,"West South Central","South","AR",172.546657148036,180.93614368554,189.598879333508,180.832479948173
+"1053",3,44,1,1,"Cardiovascular","Black","Female","Arkansas",2012,"West South Central","South","AR",290.400755065661,303.752321085935,318.430081572737,304.000346166658
+"1054",3,44,1,1,"Communicable","Black","Female","Arkansas",2012,"West South Central","South","AR",43.647871905083,49.3349907080008,55.6667701782574,49.388366502678
+"1055",3,44,1,1,"Injuries","Black","Female","Arkansas",2012,"West South Central","South","AR",31.3126276942084,35.9269461898873,40.9568903299671,35.9723747837763
+"1056",3,44,1,1,"Non-communicable","Black","Female","Arkansas",2012,"West South Central","South","AR",133.230120574742,143.055615347316,153.061896544722,142.975078252546
+"1057",3,45,0,0,"All other causes","White","Male","Arkansas",2013,"West South Central","South","AR",159.740863042291,165.34072530842,171.092453577037,165.376095017588
+"1058",3,45,0,0,"Cancers","White","Male","Arkansas",2013,"West South Central","South","AR",231.596755457681,237.696397591707,243.642167632924,237.667961294623
+"1059",3,45,0,0,"Cardiovascular","White","Male","Arkansas",2013,"West South Central","South","AR",313.302578746931,321.138143991645,329.154655051184,321.176043531909
+"1060",3,45,0,0,"Communicable","White","Male","Arkansas",2013,"West South Central","South","AR",47.8817320569014,51.0878889080062,54.5615971249798,51.1555632553678
+"1061",3,45,0,0,"Injuries","White","Male","Arkansas",2013,"West South Central","South","AR",100.168137024454,103.903746299987,107.43746521021,103.892928988249
+"1062",3,45,0,0,"Non-communicable","White","Male","Arkansas",2013,"West South Central","South","AR",151.110410570534,156.242611759463,161.570629863724,156.307032276677
+"1063",3,45,0,1,"All other causes","White","Female","Arkansas",2013,"West South Central","South","AR",152.243079437097,157.003415416341,162.00632922531,157.033053682073
+"1064",3,45,0,1,"Cancers","White","Female","Arkansas",2013,"West South Central","South","AR",150.698417699097,154.449655988884,158.268356963256,154.479630922898
+"1065",3,45,0,1,"Cardiovascular","White","Female","Arkansas",2013,"West South Central","South","AR",221.433844119022,227.19477787487,232.85269626219,227.123047267782
+"1066",3,45,0,1,"Communicable","White","Female","Arkansas",2013,"West South Central","South","AR",37.1224888983897,39.2291036550033,41.4726106725193,39.2502498432342
+"1067",3,45,0,1,"Injuries","White","Female","Arkansas",2013,"West South Central","South","AR",42.4581427250392,44.4099657916894,46.6553523721815,44.4577585827745
+"1068",3,45,0,1,"Non-communicable","White","Female","Arkansas",2013,"West South Central","South","AR",124.068574449805,128.729571104894,133.199120125777,128.795622237369
+"1069",3,45,1,0,"All other causes","Black","Male","Arkansas",2013,"West South Central","South","AR",180.51961475832,192.828289605122,205.158267083819,192.797565953543
+"1070",3,45,1,0,"Cancers","Black","Male","Arkansas",2013,"West South Central","South","AR",274.872327195644,291.41288646574,309.857722667697,291.757367145921
+"1071",3,45,1,0,"Cardiovascular","Black","Male","Arkansas",2013,"West South Central","South","AR",406.915723056462,429.520756488808,451.322348376093,429.495198234607
+"1072",3,45,1,0,"Communicable","Black","Male","Arkansas",2013,"West South Central","South","AR",65.9642695527968,75.1875145635027,86.0905551252223,75.3107321416611
+"1073",3,45,1,0,"Injuries","Black","Male","Arkansas",2013,"West South Central","South","AR",105.605119598284,114.489919976176,124.03707269833,114.599514667172
+"1074",3,45,1,0,"Non-communicable","Black","Male","Arkansas",2013,"West South Central","South","AR",170.070514320477,184.53862447264,199.735928814522,184.676921451118
+"1075",3,45,1,1,"All other causes","Black","Female","Arkansas",2013,"West South Central","South","AR",149.050265667522,157.566139938535,167.293656189293,157.751066164124
+"1076",3,45,1,1,"Cancers","Black","Female","Arkansas",2013,"West South Central","South","AR",170.494461985706,179.573526087948,189.541703914603,179.635567259843
+"1077",3,45,1,1,"Cardiovascular","Black","Female","Arkansas",2013,"West South Central","South","AR",285.564394275169,300.807507285492,316.825248259103,300.81736348092
+"1078",3,45,1,1,"Communicable","Black","Female","Arkansas",2013,"West South Central","South","AR",44.0094735351918,50.6400168663805,58.4217068016978,50.7929467839458
+"1079",3,45,1,1,"Injuries","Black","Female","Arkansas",2013,"West South Central","South","AR",31.0547974239636,35.9256805425004,41.2104986635611,36.0045271226364
+"1080",3,45,1,1,"Non-communicable","Black","Female","Arkansas",2013,"West South Central","South","AR",130.727666056543,141.291313889272,153.448362804091,141.560367888882

@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",18,1,0,0,"All other causes","White","Male","Louisiana",1969,"West South Central","South","LA",138.856278983013,145.137249078201,151.112854788171,145.018463852449
+"2",18,1,0,0,"Cancers","White","Male","Louisiana",1969,"West South Central","South","LA",258.507403934464,267.354113814212,275.183885420217,267.272334796219
+"3",18,1,0,0,"Cardiovascular","White","Male","Louisiana",1969,"West South Central","South","LA",946.350403593243,969.463427351563,992.059834719107,969.265265063448
+"4",18,1,0,0,"Communicable","White","Male","Louisiana",1969,"West South Central","South","LA",55.9908646605964,61.2083017725187,67.0403434086132,61.1988747467043
+"5",18,1,0,0,"Injuries","White","Male","Louisiana",1969,"West South Central","South","LA",135.505686702611,140.695232309819,145.951779482907,140.794180578473
+"6",18,1,0,0,"Non-communicable","White","Male","Louisiana",1969,"West South Central","South","LA",101.743900622066,106.657076215305,112.112023359941,106.797523059839
+"7",18,1,0,1,"All other causes","White","Female","Louisiana",1969,"West South Central","South","LA",98.7380499007085,103.19567788539,108.166035170743,103.179793253758
+"8",18,1,0,1,"Cancers","White","Female","Louisiana",1969,"West South Central","South","LA",148.617726585777,153.28062615277,158.105327208955,153.321799267683
+"9",18,1,0,1,"Cardiovascular","White","Female","Louisiana",1969,"West South Central","South","LA",581.853744932894,597.089129211516,612.413996917697,597.102201297246
+"10",18,1,0,1,"Communicable","White","Female","Louisiana",1969,"West South Central","South","LA",35.1395957619065,37.9131730467564,40.9079895427603,37.9776971619276
+"11",18,1,0,1,"Injuries","White","Female","Louisiana",1969,"West South Central","South","LA",46.3779728411954,48.9498600364397,51.8060052896467,48.9969847459552
+"12",18,1,0,1,"Non-communicable","White","Female","Louisiana",1969,"West South Central","South","LA",53.1564913354133,56.0856384288745,59.0101238921112,56.0552290991929
+"13",18,1,1,0,"All other causes","Black","Male","Louisiana",1969,"West South Central","South","LA",190.852725795543,200.02196571286,209.584818238257,200.040211753215
+"14",18,1,1,0,"Cancers","Black","Male","Louisiana",1969,"West South Central","South","LA",278.757848416765,291.375547612139,304.074820046391,291.385492111071
+"15",18,1,1,0,"Cardiovascular","Black","Male","Louisiana",1969,"West South Central","South","LA",971.464603000333,999.858699200212,1029.94260151484,1000.49486919551
+"16",18,1,1,0,"Communicable","Black","Male","Louisiana",1969,"West South Central","South","LA",87.8208445931655,95.0148344433877,103.140501395353,95.2544512058926
+"17",18,1,1,0,"Injuries","Black","Male","Louisiana",1969,"West South Central","South","LA",214.617402137834,225.573658359769,237.053555620807,225.632184865614
+"18",18,1,1,0,"Non-communicable","Black","Male","Louisiana",1969,"West South Central","South","LA",104.818225122196,111.374958308259,118.161283537406,111.386549078179
+"19",18,1,1,1,"All other causes","Black","Female","Louisiana",1969,"West South Central","South","LA",138.331959147258,145.582627019161,152.589308982327,145.536994576563
+"20",18,1,1,1,"Cancers","Black","Female","Louisiana",1969,"West South Central","South","LA",172.313928497306,179.188626596624,187.295963469184,179.367705935627
+"21",18,1,1,1,"Cardiovascular","Black","Female","Louisiana",1969,"West South Central","South","LA",764.502869958646,788.138427114266,812.877407344085,788.416358468154
+"22",18,1,1,1,"Communicable","Black","Female","Louisiana",1969,"West South Central","South","LA",49.423299807997,54.211678426325,59.1595573772275,54.2651399452123
+"23",18,1,1,1,"Injuries","Black","Female","Louisiana",1969,"West South Central","South","LA",53.9448990326803,57.8309901839528,62.0869224186614,57.918622963435
+"24",18,1,1,1,"Non-communicable","Black","Female","Louisiana",1969,"West South Central","South","LA",96.891501293878,103.534274675278,110.316388812439,103.559249353348
+"25",18,2,0,0,"All other causes","White","Male","Louisiana",1970,"West South Central","South","LA",137.393438943967,142.78343373464,148.272435090968,142.7755155792
+"26",18,2,0,0,"Cancers","White","Male","Louisiana",1970,"West South Central","South","LA",260.003336704849,266.877200178743,273.551957056882,266.918451329818
+"27",18,2,0,0,"Cardiovascular","White","Male","Louisiana",1970,"West South Central","South","LA",927.315388366315,948.589182711088,969.459527960186,948.557721004667
+"28",18,2,0,0,"Communicable","White","Male","Louisiana",1970,"West South Central","South","LA",57.6811306606884,62.5106672797744,67.201176912449,62.4513158899076
+"29",18,2,0,0,"Injuries","White","Male","Louisiana",1970,"West South Central","South","LA",133.491815325883,137.634637977215,142.040293629762,137.661363184196
+"30",18,2,0,0,"Non-communicable","White","Male","Louisiana",1970,"West South Central","South","LA",102.529375734759,106.833504098953,111.212510359089,106.80756782051
+"31",18,2,0,1,"All other causes","White","Female","Louisiana",1970,"West South Central","South","LA",97.7883214165209,101.597227361669,105.641346195313,101.568249034429
+"32",18,2,0,1,"Cancers","White","Female","Louisiana",1970,"West South Central","South","LA",149.509210164596,153.641978489434,158.084338648154,153.728581422322
+"33",18,2,0,1,"Cardiovascular","White","Female","Louisiana",1970,"West South Central","South","LA",566.706134456926,580.308560290521,594.037825468947,580.127805768579
+"34",18,2,0,1,"Communicable","White","Female","Louisiana",1970,"West South Central","South","LA",33.3671626479755,35.6475054891645,38.2552268533868,35.6950384951137
+"35",18,2,0,1,"Injuries","White","Female","Louisiana",1970,"West South Central","South","LA",45.4579340718305,47.5242224801463,49.9745339988433,47.5917681578489
+"36",18,2,0,1,"Non-communicable","White","Female","Louisiana",1970,"West South Central","South","LA",53.9555227278716,56.2388386442742,58.9576556784279,56.2897824475189
+"37",18,2,1,0,"All other causes","Black","Male","Louisiana",1970,"West South Central","South","LA",189.830449753594,197.512184247819,205.580981968082,197.499017666609
+"38",18,2,1,0,"Cancers","Black","Male","Louisiana",1970,"West South Central","South","LA",277.910933434024,288.818343458444,299.351355466196,288.811473281835
+"39",18,2,1,0,"Cardiovascular","Black","Male","Louisiana",1970,"West South Central","South","LA",948.820530460534,975.168084816928,999.864614421968,975.0577657442
+"40",18,2,1,0,"Communicable","Black","Male","Louisiana",1970,"West South Central","South","LA",84.2710288274633,90.52261376871,96.9143986484641,90.4165297594952
+"41",18,2,1,0,"Injuries","Black","Male","Louisiana",1970,"West South Central","South","LA",219.320776535834,228.808211936352,238.280981580105,228.830065621373
+"42",18,2,1,0,"Non-communicable","Black","Male","Louisiana",1970,"West South Central","South","LA",106.31211630839,112.841359732932,118.676883829863,112.721494550892
+"43",18,2,1,1,"All other causes","Black","Female","Louisiana",1970,"West South Central","South","LA",136.412879756881,142.634956764929,148.508526904153,142.552134562607
+"44",18,2,1,1,"Cancers","Black","Female","Louisiana",1970,"West South Central","South","LA",171.637150512955,178.224655840808,184.902297028334,178.260197520718
+"45",18,2,1,1,"Cardiovascular","Black","Female","Louisiana",1970,"West South Central","South","LA",736.615542539656,758.438667268856,778.692727770831,758.179566439273
+"46",18,2,1,1,"Communicable","Black","Female","Louisiana",1970,"West South Central","South","LA",47.0344812131493,50.8609064195788,54.7568013372596,50.8644143303314
+"47",18,2,1,1,"Injuries","Black","Female","Louisiana",1970,"West South Central","South","LA",53.8615466566395,57.164680769432,60.9358380980083,57.2568267955486
+"48",18,2,1,1,"Non-communicable","Black","Female","Louisiana",1970,"West South Central","South","LA",95.5943399670311,100.857392727826,106.268536503209,100.858814228032
+"49",18,3,0,0,"All other causes","White","Male","Louisiana",1971,"West South Central","South","LA",136.418748409413,141.269059806741,146.423321097648,141.366150858945
+"50",18,3,0,0,"Cancers","White","Male","Louisiana",1971,"West South Central","South","LA",262.511585519309,269.001761927479,275.772498574806,268.988659845131
+"51",18,3,0,0,"Cardiovascular","White","Male","Louisiana",1971,"West South Central","South","LA",895.614525855209,913.822176924624,933.505011776551,914.13369782434
+"52",18,3,0,0,"Communicable","White","Male","Louisiana",1971,"West South Central","South","LA",59.3210419490267,64.1562665458016,69.510480336143,64.2773383037567
+"53",18,3,0,0,"Injuries","White","Male","Louisiana",1971,"West South Central","South","LA",129.03080837245,133.243915565086,137.446007341632,133.222557134295
+"54",18,3,0,0,"Non-communicable","White","Male","Louisiana",1971,"West South Central","South","LA",104.676059314994,108.796463866303,113.046952851472,108.841595780883
+"55",18,3,0,1,"All other causes","White","Female","Louisiana",1971,"West South Central","South","LA",94.3550728465846,97.910043794243,101.6078189725,97.943072885247
+"56",18,3,0,1,"Cancers","White","Female","Louisiana",1971,"West South Central","South","LA",149.747270394821,153.796500947191,157.664662774931,153.789999315702
+"57",18,3,0,1,"Cardiovascular","White","Female","Louisiana",1971,"West South Central","South","LA",557.472261314347,570.029530031443,582.664429943669,569.993710602177
+"58",18,3,0,1,"Communicable","White","Female","Louisiana",1971,"West South Central","South","LA",32.0068984288426,34.2325757484911,36.4680011870171,34.2522123625604
+"59",18,3,0,1,"Injuries","White","Female","Louisiana",1971,"West South Central","South","LA",45.0245351874313,47.1411811987637,49.2989855573808,47.1895184588526
+"60",18,3,0,1,"Non-communicable","White","Female","Louisiana",1971,"West South Central","South","LA",54.219600920924,56.7676131983551,59.2434925104492,56.7478408033254
+"61",18,3,1,0,"All other causes","Black","Male","Louisiana",1971,"West South Central","South","LA",184.141595189485,191.085511039175,198.194735244106,191.152436143519
+"62",18,3,1,0,"Cancers","Black","Male","Louisiana",1971,"West South Central","South","LA",279.005203692976,289.094507346546,299.569916305403,289.263423865791
+"63",18,3,1,0,"Cardiovascular","Black","Male","Louisiana",1971,"West South Central","South","LA",922.574462303652,945.195974016377,970.925117921487,945.512483164634
+"64",18,3,1,0,"Communicable","Black","Male","Louisiana",1971,"West South Central","South","LA",76.6974937291356,82.990779873448,88.7824990367482,82.9370283929184
+"65",18,3,1,0,"Injuries","Black","Male","Louisiana",1971,"West South Central","South","LA",217.24609991227,225.907024437383,235.270221664332,225.991851426833
+"66",18,3,1,0,"Non-communicable","Black","Male","Louisiana",1971,"West South Central","South","LA",108.542482035884,114.166198453007,119.662307489834,114.194999271038
+"67",18,3,1,1,"All other causes","Black","Female","Louisiana",1971,"West South Central","South","LA",134.044895761767,139.680301614418,144.684317231922,139.615525691633
+"68",18,3,1,1,"Cancers","Black","Female","Louisiana",1971,"West South Central","South","LA",171.051743663285,176.745451414332,183.100499438009,176.778197812133
+"69",18,3,1,1,"Cardiovascular","Black","Female","Louisiana",1971,"West South Central","South","LA",714.576941328284,733.789670455049,753.051188127515,733.759802724879
+"70",18,3,1,1,"Communicable","Black","Female","Louisiana",1971,"West South Central","South","LA",43.8123618457049,46.8950672343866,50.4889091687742,46.9598793545281
+"71",18,3,1,1,"Injuries","Black","Female","Louisiana",1971,"West South Central","South","LA",53.6449109837432,56.4719301211998,60.0309240794173,56.5777801395914
+"72",18,3,1,1,"Non-communicable","Black","Female","Louisiana",1971,"West South Central","South","LA",94.3246354722198,99.3049314148912,104.47761626408,99.3325515215102
+"73",18,4,0,0,"All other causes","White","Male","Louisiana",1972,"West South Central","South","LA",136.848236016309,141.523868857227,146.787685015341,141.600239934638
+"74",18,4,0,0,"Cancers","White","Male","Louisiana",1972,"West South Central","South","LA",264.281382205463,271.460485572013,277.624903159775,271.446919439699
+"75",18,4,0,0,"Cardiovascular","White","Male","Louisiana",1972,"West South Central","South","LA",891.58179985815,910.503195714919,931.873044042903,910.548989264413
+"76",18,4,0,0,"Communicable","White","Male","Louisiana",1972,"West South Central","South","LA",61.8775978591189,66.4931295468272,71.9930509527521,66.665451370744
+"77",18,4,0,0,"Injuries","White","Male","Louisiana",1972,"West South Central","South","LA",127.995369186732,132.062837260091,136.07231674023,132.09819222378
+"78",18,4,0,0,"Non-communicable","White","Male","Louisiana",1972,"West South Central","South","LA",105.67069674425,109.442080362243,113.409726441769,109.505106694676
+"79",18,4,0,1,"All other causes","White","Female","Louisiana",1972,"West South Central","South","LA",93.6102488761445,97.027159122168,100.330709789634,96.9882174049091
+"80",18,4,0,1,"Cancers","White","Female","Louisiana",1972,"West South Central","South","LA",149.470631586148,153.466834782521,157.276605836469,153.439259581511
+"81",18,4,0,1,"Cardiovascular","White","Female","Louisiana",1972,"West South Central","South","LA",554.02250277731,566.071251280696,579.630981760998,566.247045424463
+"82",18,4,0,1,"Communicable","White","Female","Louisiana",1972,"West South Central","South","LA",32.861335266657,34.8966401077337,37.2125507083634,34.924355510802
+"83",18,4,0,1,"Injuries","White","Female","Louisiana",1972,"West South Central","South","LA",45.1244471396374,47.089391810269,49.4246507320901,47.1435356586484
+"84",18,4,0,1,"Non-communicable","White","Female","Louisiana",1972,"West South Central","South","LA",54.5090920110444,56.7169372896333,59.2810974421947,56.7642303016364
+"85",18,4,1,0,"All other causes","Black","Male","Louisiana",1972,"West South Central","South","LA",181.881489733366,188.656932639938,195.643213092723,188.728425452665
+"86",18,4,1,0,"Cancers","Black","Male","Louisiana",1972,"West South Central","South","LA",284.223841145643,293.152715335051,303.941945238336,293.533617804004
+"87",18,4,1,0,"Cardiovascular","Black","Male","Louisiana",1972,"West South Central","South","LA",912.166369336863,936.644107370128,959.970626833194,936.200513720118
+"88",18,4,1,0,"Communicable","Black","Male","Louisiana",1972,"West South Central","South","LA",76.9461239606729,82.8168416940705,88.9110458454948,82.8364428733182
+"89",18,4,1,0,"Injuries","Black","Male","Louisiana",1972,"West South Central","South","LA",217.404222181288,226.715499545311,237.145154065607,226.990343669324
+"90",18,4,1,0,"Non-communicable","Black","Male","Louisiana",1972,"West South Central","South","LA",108.70073698431,114.108836365457,119.870248317257,114.216716404785
+"91",18,4,1,1,"All other causes","Black","Female","Louisiana",1972,"West South Central","South","LA",132.845069269628,138.27861222606,143.896768664019,138.386008183429
+"92",18,4,1,1,"Cancers","Black","Female","Louisiana",1972,"West South Central","South","LA",170.935505806459,176.848978515295,182.5359360088,176.798978599715
+"93",18,4,1,1,"Cardiovascular","Black","Female","Louisiana",1972,"West South Central","South","LA",699.63637581708,719.416737475827,738.848584679134,719.588506261436
+"94",18,4,1,1,"Communicable","Black","Female","Louisiana",1972,"West South Central","South","LA",41.5283678659084,44.8396189624779,48.3408291555388,44.9008944660113
+"95",18,4,1,1,"Injuries","Black","Female","Louisiana",1972,"West South Central","South","LA",52.4922255927896,55.2426040594247,58.5983359481647,55.2894073453602
+"96",18,4,1,1,"Non-communicable","Black","Female","Louisiana",1972,"West South Central","South","LA",93.8115274797958,98.9984051994621,104.01961592518,98.9647050322168
+"97",18,5,0,0,"All other causes","White","Male","Louisiana",1973,"West South Central","South","LA",134.689886115159,139.642424274178,144.559268687193,139.629517292039
+"98",18,5,0,0,"Cancers","White","Male","Louisiana",1973,"West South Central","South","LA",266.625216771683,272.927536794658,279.326206328112,272.89850109504
+"99",18,5,0,0,"Cardiovascular","White","Male","Louisiana",1973,"West South Central","South","LA",888.787377426996,906.510382495909,926.404790083984,906.935770910839
+"100",18,5,0,0,"Communicable","White","Male","Louisiana",1973,"West South Central","South","LA",55.3407034571851,59.5229589131487,64.4521179497519,59.6249446925057
+"101",18,5,0,0,"Injuries","White","Male","Louisiana",1973,"West South Central","South","LA",128.235020996863,132.04741745578,135.970843403262,132.078271232439
+"102",18,5,0,0,"Non-communicable","White","Male","Louisiana",1973,"West South Central","South","LA",105.67887150657,109.683422184383,113.906412535474,109.707312573001
+"103",18,5,0,1,"All other causes","White","Female","Louisiana",1973,"West South Central","South","LA",93.024892537532,96.3470830536831,99.8385287453813,96.360882799029
+"104",18,5,0,1,"Cancers","White","Female","Louisiana",1973,"West South Central","South","LA",149.017961871798,152.83396842479,156.437214683986,152.861349275136
+"105",18,5,0,1,"Cardiovascular","White","Female","Louisiana",1973,"West South Central","South","LA",556.000912873297,568.470543585075,580.899210422803,568.285531015473
+"106",18,5,0,1,"Communicable","White","Female","Louisiana",1973,"West South Central","South","LA",32.5916506269563,34.7779116948933,37.0405470074531,34.7853709601161
+"107",18,5,0,1,"Injuries","White","Female","Louisiana",1973,"West South Central","South","LA",44.3877795979895,46.4250356396988,48.422871877841,46.4206850913764
+"108",18,5,0,1,"Non-communicable","White","Female","Louisiana",1973,"West South Central","South","LA",52.7058413012554,55.1608650821512,57.5964800826042,55.1919547678802
+"109",18,5,1,0,"All other causes","Black","Male","Louisiana",1973,"West South Central","South","LA",180.329040446431,187.100049661037,194.307578636287,187.061257037181
+"110",18,5,1,0,"Cancers","Black","Male","Louisiana",1973,"West South Central","South","LA",289.92746744037,299.482795988112,310.134524634353,299.754592383299
+"111",18,5,1,0,"Cardiovascular","Black","Male","Louisiana",1973,"West South Central","South","LA",896.16839527295,919.693448475575,942.322501357196,919.579505452375
+"112",18,5,1,0,"Communicable","Black","Male","Louisiana",1973,"West South Central","South","LA",75.1171204128874,80.934237940348,87.2253050235345,81.0027463625539
+"113",18,5,1,0,"Injuries","Black","Male","Louisiana",1973,"West South Central","South","LA",218.023331396084,227.081891163484,236.617401898698,227.041643261808
+"114",18,5,1,0,"Non-communicable","Black","Male","Louisiana",1973,"West South Central","South","LA",108.821338218548,113.97855939818,119.34714734521,114.007083331287
+"115",18,5,1,1,"All other causes","Black","Female","Louisiana",1973,"West South Central","South","LA",131.332893392319,136.725059654973,142.197997636544,136.755629050369
+"116",18,5,1,1,"Cancers","Black","Female","Louisiana",1973,"West South Central","South","LA",169.595994305025,175.299412857367,181.220375668381,175.34776737542
+"117",18,5,1,1,"Cardiovascular","Black","Female","Louisiana",1973,"West South Central","South","LA",686.287553266071,704.754698334176,723.577342981199,704.776856056294
+"118",18,5,1,1,"Communicable","Black","Female","Louisiana",1973,"West South Central","South","LA",40.8980058301361,44.229502335598,47.5259251781457,44.2454156740148
+"119",18,5,1,1,"Injuries","Black","Female","Louisiana",1973,"West South Central","South","LA",51.3631929093459,54.0744215713877,56.9775878751226,54.1364716248957
+"120",18,5,1,1,"Non-communicable","Black","Female","Louisiana",1973,"West South Central","South","LA",92.4815387959145,96.9007196549955,101.470748138044,96.9576916548098
+"121",18,6,0,0,"All other causes","White","Male","Louisiana",1974,"West South Central","South","LA",129.740200039657,134.780498213484,139.592823065288,134.700353591945
+"122",18,6,0,0,"Cancers","White","Male","Louisiana",1974,"West South Central","South","LA",270.35723817652,276.247252498323,282.285946238148,276.332058482508
+"123",18,6,0,0,"Cardiovascular","White","Male","Louisiana",1974,"West South Central","South","LA",843.313603524188,862.110859405499,881.638752795033,862.29640219362
+"124",18,6,0,0,"Communicable","White","Male","Louisiana",1974,"West South Central","South","LA",50.1427825801085,54.3544967791721,58.6852506031729,54.3739926124086
+"125",18,6,0,0,"Injuries","White","Male","Louisiana",1974,"West South Central","South","LA",126.43307917531,129.886771236537,133.484794872578,129.879754277469
+"126",18,6,0,0,"Non-communicable","White","Male","Louisiana",1974,"West South Central","South","LA",104.429538637806,108.292680105395,112.32908280674,108.330300269314
+"127",18,6,0,1,"All other causes","White","Female","Louisiana",1974,"West South Central","South","LA",89.8613503440188,92.8867877385357,96.2005646843042,92.9346922799191
+"128",18,6,0,1,"Cancers","White","Female","Louisiana",1974,"West South Central","South","LA",148.699196765554,152.366449723807,156.039115019259,152.373051703173
+"129",18,6,0,1,"Cardiovascular","White","Female","Louisiana",1974,"West South Central","South","LA",526.952489933371,538.81805199534,551.080276652277,538.838794158012
+"130",18,6,0,1,"Communicable","White","Female","Louisiana",1974,"West South Central","South","LA",30.7435240059735,32.7198033596216,34.6517632521596,32.6910759249903
+"131",18,6,0,1,"Injuries","White","Female","Louisiana",1974,"West South Central","South","LA",43.330418535606,45.3293656030002,47.3395087308858,45.3331372786868
+"132",18,6,0,1,"Non-communicable","White","Female","Louisiana",1974,"West South Central","South","LA",51.9550625780076,54.1635718394434,56.5914840056968,54.1619591147058
+"133",18,6,1,0,"All other causes","Black","Male","Louisiana",1974,"West South Central","South","LA",179.477758124463,186.213148616735,192.854841475686,186.138427059552
+"134",18,6,1,0,"Cancers","Black","Male","Louisiana",1974,"West South Central","South","LA",293.621208199349,303.594955914384,313.567523984426,303.571722623949
+"135",18,6,1,0,"Cardiovascular","Black","Male","Louisiana",1974,"West South Central","South","LA",857.491095685922,879.120273280511,902.516669089304,879.187123115333
+"136",18,6,1,0,"Communicable","Black","Male","Louisiana",1974,"West South Central","South","LA",74.0849459114788,79.7048915864313,85.6783196934041,79.7613880006097
+"137",18,6,1,0,"Injuries","Black","Male","Louisiana",1974,"West South Central","South","LA",208.371200764322,216.752896102135,226.001182898476,216.811245462117
+"138",18,6,1,0,"Non-communicable","Black","Male","Louisiana",1974,"West South Central","South","LA",109.056174503219,114.233389764721,119.585091946587,114.190376143892
+"139",18,6,1,1,"All other causes","Black","Female","Louisiana",1974,"West South Central","South","LA",131.002665533059,136.326406700446,141.717579690155,136.291557831391
+"140",18,6,1,1,"Cancers","Black","Female","Louisiana",1974,"West South Central","South","LA",169.770407152934,175.365681615828,181.148149914772,175.428076626889
+"141",18,6,1,1,"Cardiovascular","Black","Female","Louisiana",1974,"West South Central","South","LA",635.302853369042,652.600029606181,670.869886894655,652.529881170245
+"142",18,6,1,1,"Communicable","Black","Female","Louisiana",1974,"West South Central","South","LA",40.5053024649455,43.5392529874974,46.8128355918836,43.5661298652425
+"143",18,6,1,1,"Injuries","Black","Female","Louisiana",1974,"West South Central","South","LA",49.6406634963597,52.292502811096,55.1870805224111,52.3253873301684
+"144",18,6,1,1,"Non-communicable","Black","Female","Louisiana",1974,"West South Central","South","LA",89.8205512212176,94.3605244798596,98.9306803081126,94.3649470605453
+"145",18,7,0,0,"All other causes","White","Male","Louisiana",1975,"West South Central","South","LA",124.167659414901,128.93253662723,133.511413292077,128.969391548857
+"146",18,7,0,0,"Cancers","White","Male","Louisiana",1975,"West South Central","South","LA",271.275449541194,277.800914590452,283.884196600992,277.685437646483
+"147",18,7,0,0,"Cardiovascular","White","Male","Louisiana",1975,"West South Central","South","LA",826.428139274018,846.172140116029,864.262398954116,845.987005274967
+"148",18,7,0,0,"Communicable","White","Male","Louisiana",1975,"West South Central","South","LA",49.7944813823314,54.1787643795091,58.6441108148937,54.1431415177397
+"149",18,7,0,0,"Injuries","White","Male","Louisiana",1975,"West South Central","South","LA",123.469006746278,127.066358723067,130.544317582241,127.013661112485
+"150",18,7,0,0,"Non-communicable","White","Male","Louisiana",1975,"West South Central","South","LA",104.110786194124,107.878358441067,111.674858837375,107.878100826731
+"151",18,7,0,1,"All other causes","White","Female","Louisiana",1975,"West South Central","South","LA",87.7709990448187,90.7552166326827,94.1985630359623,90.8232929090333
+"152",18,7,0,1,"Cancers","White","Female","Louisiana",1975,"West South Central","South","LA",150.104867537756,153.8519586907,157.529005296844,153.863587873693
+"153",18,7,0,1,"Cardiovascular","White","Female","Louisiana",1975,"West South Central","South","LA",498.400357697772,509.548537273514,519.723780777748,509.330014370528
+"154",18,7,0,1,"Communicable","White","Female","Louisiana",1975,"West South Central","South","LA",30.7914338134655,32.9171109521644,35.0061753446345,32.92929232648
+"155",18,7,0,1,"Injuries","White","Female","Louisiana",1975,"West South Central","South","LA",42.9561681757215,44.8174127699788,46.6838264259387,44.811299744207
+"156",18,7,0,1,"Non-communicable","White","Female","Louisiana",1975,"West South Central","South","LA",50.8889512518347,53.30022591326,55.5198107507745,53.2815909505514
+"157",18,7,1,0,"All other causes","Black","Male","Louisiana",1975,"West South Central","South","LA",181.166659109959,187.227943641686,194.000500635906,187.271241542981
+"158",18,7,1,0,"Cancers","Black","Male","Louisiana",1975,"West South Central","South","LA",300.382965152355,310.666282366873,321.781444179068,310.714565212507
+"159",18,7,1,0,"Cardiovascular","Black","Male","Louisiana",1975,"West South Central","South","LA",825.565136190908,848.324559437116,869.303792465616,848.216405056282
+"160",18,7,1,0,"Communicable","Black","Male","Louisiana",1975,"West South Central","South","LA",74.0362497207271,79.8063202214545,85.5359695391409,79.7291882111648
+"161",18,7,1,0,"Injuries","Black","Male","Louisiana",1975,"West South Central","South","LA",202.781107751348,211.120232582139,219.696449454323,211.189725857921
+"162",18,7,1,0,"Non-communicable","Black","Male","Louisiana",1975,"West South Central","South","LA",111.2428704888,116.787173072751,122.582989790724,116.7151047558
+"163",18,7,1,1,"All other causes","Black","Female","Louisiana",1975,"West South Central","South","LA",130.26862178704,135.706395387216,141.124086106354,135.740959762759
+"164",18,7,1,1,"Cancers","Black","Female","Louisiana",1975,"West South Central","South","LA",169.925055525438,175.450985929885,181.230769830343,175.454269276616
+"165",18,7,1,1,"Cardiovascular","Black","Female","Louisiana",1975,"West South Central","South","LA",606.805589242084,624.350075917404,640.514173863573,624.342103244108
+"166",18,7,1,1,"Communicable","Black","Female","Louisiana",1975,"West South Central","South","LA",41.4716050864881,44.6529857552393,47.9796374929722,44.6325422877061
+"167",18,7,1,1,"Injuries","Black","Female","Louisiana",1975,"West South Central","South","LA",47.7079689912499,50.472746454477,53.1549080815414,50.4666860803104
+"168",18,7,1,1,"Non-communicable","Black","Female","Louisiana",1975,"West South Central","South","LA",88.8080287721495,93.3362455766372,98.3103341125415,93.3887835666339
+"169",18,8,0,0,"All other causes","White","Male","Louisiana",1976,"West South Central","South","LA",122.073928152606,126.325243896171,130.90128222533,126.406594335497
+"170",18,8,0,0,"Cancers","White","Male","Louisiana",1976,"West South Central","South","LA",275.35963377438,281.806714608913,288.385169253847,281.853662383916
+"171",18,8,0,0,"Cardiovascular","White","Male","Louisiana",1976,"West South Central","South","LA",805.964443358345,824.140610022205,840.732802372537,823.93115060724
+"172",18,8,0,0,"Communicable","White","Male","Louisiana",1976,"West South Central","South","LA",53.426204892117,57.4375738400876,62.2480980128351,57.5473308369243
+"173",18,8,0,0,"Injuries","White","Male","Louisiana",1976,"West South Central","South","LA",122.355323499761,125.83043686685,129.69314229913,125.88581098242
+"174",18,8,0,0,"Non-communicable","White","Male","Louisiana",1976,"West South Central","South","LA",104.792560185944,108.623746995292,112.646458438825,108.66033960075
+"175",18,8,0,1,"All other causes","White","Female","Louisiana",1976,"West South Central","South","LA",86.0137546722265,89.064387561872,92.4048865093744,89.0680439233181
+"176",18,8,0,1,"Cancers","White","Female","Louisiana",1976,"West South Central","South","LA",151.17235605232,154.728741385629,158.169480308807,154.758960105892
+"177",18,8,0,1,"Cardiovascular","White","Female","Louisiana",1976,"West South Central","South","LA",497.037697734593,508.116227373866,519.318676665797,508.21553701661
+"178",18,8,0,1,"Communicable","White","Female","Louisiana",1976,"West South Central","South","LA",31.5445380868328,33.6218728398729,35.7515289250179,33.6333261392866
+"179",18,8,0,1,"Injuries","White","Female","Louisiana",1976,"West South Central","South","LA",42.4346763148378,44.2367665422905,46.1300822844088,44.2630822843036
+"180",18,8,0,1,"Non-communicable","White","Female","Louisiana",1976,"West South Central","South","LA",50.2121153744217,52.5630425983496,54.8903197715148,52.5451433095201
+"181",18,8,1,0,"All other causes","Black","Male","Louisiana",1976,"West South Central","South","LA",180.856889695722,186.842397777861,193.716102378163,186.955262238242
+"182",18,8,1,0,"Cancers","Black","Male","Louisiana",1976,"West South Central","South","LA",305.506281308193,315.341875575518,325.832522579419,315.489843100024
+"183",18,8,1,0,"Cardiovascular","Black","Male","Louisiana",1976,"West South Central","South","LA",813.437169756013,834.474674576005,856.048633385744,834.456586893778
+"184",18,8,1,0,"Communicable","Black","Male","Louisiana",1976,"West South Central","South","LA",75.2655872199654,80.9280618579431,86.5859848882371,80.9151443206043
+"185",18,8,1,0,"Injuries","Black","Male","Louisiana",1976,"West South Central","South","LA",196.812009770682,205.806990338158,214.979397314341,205.831746751438
+"186",18,8,1,0,"Non-communicable","Black","Male","Louisiana",1976,"West South Central","South","LA",113.288266995853,118.603412947055,124.299717588835,118.758585400082
+"187",18,8,1,1,"All other causes","Black","Female","Louisiana",1976,"West South Central","South","LA",132.043352274672,137.223721264113,142.686658984193,137.211963115655
+"188",18,8,1,1,"Cancers","Black","Female","Louisiana",1976,"West South Central","South","LA",171.384921074746,176.851448490887,182.66648451358,176.879709285157
+"189",18,8,1,1,"Cardiovascular","Black","Female","Louisiana",1976,"West South Central","South","LA",595.76649097077,612.223490329485,628.520998974413,612.242488994167
+"190",18,8,1,1,"Communicable","Black","Female","Louisiana",1976,"West South Central","South","LA",42.4491327442769,45.6010365413757,49.4112524088878,45.6343154705571
+"191",18,8,1,1,"Injuries","Black","Female","Louisiana",1976,"West South Central","South","LA",46.6457407998909,49.2027877712367,51.838421547893,49.2732194623498
+"192",18,8,1,1,"Non-communicable","Black","Female","Louisiana",1976,"West South Central","South","LA",86.7929524880976,91.3366752594963,95.9774242687518,91.3578207434135
+"193",18,9,0,0,"All other causes","White","Male","Louisiana",1977,"West South Central","South","LA",121.50156095717,125.962700157097,130.560147318904,125.911255518356
+"194",18,9,0,0,"Cancers","White","Male","Louisiana",1977,"West South Central","South","LA",275.653712584876,282.006051849389,288.657854751,282.038807181996
+"195",18,9,0,0,"Cardiovascular","White","Male","Louisiana",1977,"West South Central","South","LA",782.638887982224,798.685603875757,816.611544646716,798.713937906968
+"196",18,9,0,0,"Communicable","White","Male","Louisiana",1977,"West South Central","South","LA",52.3343935908577,57.0772041041383,61.9593587778711,57.1278450522433
+"197",18,9,0,0,"Injuries","White","Male","Louisiana",1977,"West South Central","South","LA",121.883072958061,125.520614392643,129.216950792647,125.562472662634
+"198",18,9,0,0,"Non-communicable","White","Male","Louisiana",1977,"West South Central","South","LA",104.478343219175,108.131423335031,112.298091004096,108.185782083127
+"199",18,9,0,1,"All other causes","White","Female","Louisiana",1977,"West South Central","South","LA",84.9208740327783,87.8625392910209,90.8278740706057,87.8654342394346
+"200",18,9,0,1,"Cancers","White","Female","Louisiana",1977,"West South Central","South","LA",152.67180634157,156.045831542572,159.433520136992,156.012578846876
+"201",18,9,0,1,"Cardiovascular","White","Female","Louisiana",1977,"West South Central","South","LA",477.042716676253,488.32464035168,498.854029650172,488.253708430788
+"202",18,9,0,1,"Communicable","White","Female","Louisiana",1977,"West South Central","South","LA",30.7007537058402,32.5033352149909,34.3631556122945,32.5006126868388
+"203",18,9,0,1,"Injuries","White","Female","Louisiana",1977,"West South Central","South","LA",42.5025865131103,44.2484027842005,46.1501646205164,44.284003167126
+"204",18,9,0,1,"Non-communicable","White","Female","Louisiana",1977,"West South Central","South","LA",49.8168852720216,52.0600862392106,54.4409654866361,52.0456851230424
+"205",18,9,1,0,"All other causes","Black","Male","Louisiana",1977,"West South Central","South","LA",178.464865344325,184.618424765081,191.421467790657,184.657422938611
+"206",18,9,1,0,"Cancers","Black","Male","Louisiana",1977,"West South Central","South","LA",311.894747994992,321.276587876167,332.678437984198,321.667973448191
+"207",18,9,1,0,"Cardiovascular","Black","Male","Louisiana",1977,"West South Central","South","LA",811.46593663136,831.281997123918,853.248738331878,831.676525213046
+"208",18,9,1,0,"Communicable","Black","Male","Louisiana",1977,"West South Central","South","LA",75.2835208236865,80.926047690558,87.2145100324047,80.9219862858744
+"209",18,9,1,0,"Injuries","Black","Male","Louisiana",1977,"West South Central","South","LA",198.377058959902,206.89649460815,216.138030590791,206.963993103886
+"210",18,9,1,0,"Non-communicable","Black","Male","Louisiana",1977,"West South Central","South","LA",114.084842533529,119.393890542502,124.90922099868,119.425576391969
+"211",18,9,1,1,"All other causes","Black","Female","Louisiana",1977,"West South Central","South","LA",131.732174515997,136.486196112174,141.986725362662,136.584653053026
+"212",18,9,1,1,"Cancers","Black","Female","Louisiana",1977,"West South Central","South","LA",172.265569751129,178.046095840066,183.252739063515,177.951149804759
+"213",18,9,1,1,"Cardiovascular","Black","Female","Louisiana",1977,"West South Central","South","LA",585.895159840133,601.759813663394,618.315584069533,601.788433066455
+"214",18,9,1,1,"Communicable","Black","Female","Louisiana",1977,"West South Central","South","LA",42.2744133557591,45.325197881046,48.8103126271597,45.3884987858767
+"215",18,9,1,1,"Injuries","Black","Female","Louisiana",1977,"West South Central","South","LA",45.8096166978293,48.1085486236038,50.7635003176887,48.1429155312653
+"216",18,9,1,1,"Non-communicable","Black","Female","Louisiana",1977,"West South Central","South","LA",84.9557912390767,89.0926716288134,93.8286953530003,89.2171911581819
+"217",18,10,0,0,"All other causes","White","Male","Louisiana",1978,"West South Central","South","LA",118.946664780155,123.464745198411,127.847882807629,123.43246156264
+"218",18,10,0,0,"Cancers","White","Male","Louisiana",1978,"West South Central","South","LA",276.67401598562,283.243752482532,290.158022689904,283.246061681833
+"219",18,10,0,0,"Cardiovascular","White","Male","Louisiana",1978,"West South Central","South","LA",765.213093538893,780.353547845472,797.372475171623,780.756463137477
+"220",18,10,0,0,"Communicable","White","Male","Louisiana",1978,"West South Central","South","LA",52.5566018286315,57.2960235440953,62.0610501139054,57.2859344553548
+"221",18,10,0,0,"Injuries","White","Male","Louisiana",1978,"West South Central","South","LA",120.56020633727,124.458128670884,128.03972406336,124.472947583025
+"222",18,10,0,0,"Non-communicable","White","Male","Louisiana",1978,"West South Central","South","LA",104.138641060007,108.017601660858,111.876837443635,108.093605277274
+"223",18,10,0,1,"All other causes","White","Female","Louisiana",1978,"West South Central","South","LA",83.5173527200808,86.6901643338525,89.7101564850976,86.6865458018262
+"224",18,10,0,1,"Cancers","White","Female","Louisiana",1978,"West South Central","South","LA",153.724985720013,157.270765154323,160.77672899055,157.296207191962
+"225",18,10,0,1,"Cardiovascular","White","Female","Louisiana",1978,"West South Central","South","LA",462.77132935765,473.124224510572,483.083919052436,472.968008538729
+"226",18,10,0,1,"Communicable","White","Female","Louisiana",1978,"West South Central","South","LA",30.1904909659252,31.9761177656389,33.9242016345928,32.0278991501407
+"227",18,10,0,1,"Injuries","White","Female","Louisiana",1978,"West South Central","South","LA",41.6812448107081,43.2817861621291,45.0807620254865,43.2929357785947
+"228",18,10,0,1,"Non-communicable","White","Female","Louisiana",1978,"West South Central","South","LA",50.4250093065585,52.6549084898428,54.8523938092475,52.6635898983097
+"229",18,10,1,0,"All other causes","Black","Male","Louisiana",1978,"West South Central","South","LA",174.058153599704,180.787095814337,187.343209072033,180.841986278826
+"230",18,10,1,0,"Cancers","Black","Male","Louisiana",1978,"West South Central","South","LA",315.117053736492,324.428567465162,335.928623971018,324.768674662473
+"231",18,10,1,0,"Cardiovascular","Black","Male","Louisiana",1978,"West South Central","South","LA",803.749541869845,825.479541946563,846.104101917133,825.335407308765
+"232",18,10,1,0,"Communicable","Black","Male","Louisiana",1978,"West South Central","South","LA",74.2082741601565,79.7015030265484,85.5473720543216,79.7822276927186
+"233",18,10,1,0,"Injuries","Black","Male","Louisiana",1978,"West South Central","South","LA",198.074177232577,205.68419579917,214.324050986646,205.726459069177
+"234",18,10,1,0,"Non-communicable","Black","Male","Louisiana",1978,"West South Central","South","LA",113.943931157523,119.45130962099,125.042407258812,119.470180806059
+"235",18,10,1,1,"All other causes","Black","Female","Louisiana",1978,"West South Central","South","LA",129.716989154326,134.109691254417,139.410101346269,134.22578830597
+"236",18,10,1,1,"Cancers","Black","Female","Louisiana",1978,"West South Central","South","LA",173.899638139621,179.528295719752,185.040921771315,179.568853254625
+"237",18,10,1,1,"Cardiovascular","Black","Female","Louisiana",1978,"West South Central","South","LA",577.597994944151,594.883539801559,611.07642585709,594.793090370852
+"238",18,10,1,1,"Communicable","Black","Female","Louisiana",1978,"West South Central","South","LA",41.6220576476625,44.7149889766308,47.9323842032258,44.7021354463711
+"239",18,10,1,1,"Injuries","Black","Female","Louisiana",1978,"West South Central","South","LA",45.0559593895347,47.2181388006555,49.8010790518299,47.2680713204581
+"240",18,10,1,1,"Non-communicable","Black","Female","Louisiana",1978,"West South Central","South","LA",83.2844679090563,87.6391579197274,91.9072014017626,87.6541402019091
+"241",18,11,0,0,"All other causes","White","Male","Louisiana",1979,"West South Central","South","LA",116.136973233433,120.654447960953,125.059148657754,120.661080597389
+"242",18,11,0,0,"Cancers","White","Male","Louisiana",1979,"West South Central","South","LA",278.051999491789,284.360875062621,290.940528828685,284.377104648361
+"243",18,11,0,0,"Cardiovascular","White","Male","Louisiana",1979,"West South Central","South","LA",734.153856489193,750.227125349807,767.720312132653,750.368779583323
+"244",18,11,0,0,"Communicable","White","Male","Louisiana",1979,"West South Central","South","LA",44.6246411132408,48.6160166337697,52.981933728211,48.6668499733453
+"245",18,11,0,0,"Injuries","White","Male","Louisiana",1979,"West South Central","South","LA",120.866974761797,124.357785340553,127.992250700788,124.382551215052
+"246",18,11,0,0,"Non-communicable","White","Male","Louisiana",1979,"West South Central","South","LA",102.998743458046,107.14757074344,110.921238660068,107.038590771042
+"247",18,11,0,1,"All other causes","White","Female","Louisiana",1979,"West South Central","South","LA",82.4613678195365,85.5982461282785,88.3908907776667,85.5507083168031
+"248",18,11,0,1,"Cancers","White","Female","Louisiana",1979,"West South Central","South","LA",153.982085088572,157.344187106621,160.527218387607,157.284816477104
+"249",18,11,0,1,"Cardiovascular","White","Female","Louisiana",1979,"West South Central","South","LA",455.243175709458,465.145657558354,475.303324217113,465.18553291787
+"250",18,11,0,1,"Communicable","White","Female","Louisiana",1979,"West South Central","South","LA",28.0726954480479,29.9164084610561,31.7103877382157,29.9487703037328
+"251",18,11,0,1,"Injuries","White","Female","Louisiana",1979,"West South Central","South","LA",41.0134683433954,42.6085374516498,44.348650034255,42.6241061241391
+"252",18,11,0,1,"Non-communicable","White","Female","Louisiana",1979,"West South Central","South","LA",51.6578595402673,53.9192683281659,56.2311952082942,53.9098071271798
+"253",18,11,1,0,"All other causes","Black","Male","Louisiana",1979,"West South Central","South","LA",172.944530111482,179.325171057994,185.677509848649,179.340949839981
+"254",18,11,1,0,"Cancers","Black","Male","Louisiana",1979,"West South Central","South","LA",317.769192134016,327.936477275334,338.367635404456,327.967319789391
+"255",18,11,1,0,"Cardiovascular","Black","Male","Louisiana",1979,"West South Central","South","LA",798.191887147209,819.574424153157,840.720587950222,819.353658564238
+"256",18,11,1,0,"Communicable","Black","Male","Louisiana",1979,"West South Central","South","LA",69.1346987504767,74.9031615091396,80.71024988669,74.861285029462
+"257",18,11,1,0,"Injuries","Black","Male","Louisiana",1979,"West South Central","South","LA",196.681790229854,204.575890760485,212.771268596658,204.656445018049
+"258",18,11,1,0,"Non-communicable","Black","Male","Louisiana",1979,"West South Central","South","LA",113.468723560802,119.009136619457,125.309420208298,119.035171085952
+"259",18,11,1,1,"All other causes","Black","Female","Louisiana",1979,"West South Central","South","LA",125.479855960545,130.36236648997,135.520545217627,130.367160397167
+"260",18,11,1,1,"Cancers","Black","Female","Louisiana",1979,"West South Central","South","LA",176.682151501116,182.046977425767,187.567563066163,182.073065932115
+"261",18,11,1,1,"Cardiovascular","Black","Female","Louisiana",1979,"West South Central","South","LA",567.466967994393,583.128597761856,599.488380041842,583.090712280093
+"262",18,11,1,1,"Communicable","Black","Female","Louisiana",1979,"West South Central","South","LA",38.0876775083895,41.1010241619754,44.1479003001086,41.0972885386854
+"263",18,11,1,1,"Injuries","Black","Female","Louisiana",1979,"West South Central","South","LA",43.8661757172412,46.0369015365238,48.3312773411368,46.0450038214201
+"264",18,11,1,1,"Non-communicable","Black","Female","Louisiana",1979,"West South Central","South","LA",82.5393139381652,86.6854428945409,91.0759009719743,86.6514865318974
+"265",18,12,0,0,"All other causes","White","Male","Louisiana",1980,"West South Central","South","LA",115.112585117648,119.644056408083,124.186524893549,119.6275448297
+"266",18,12,0,0,"Cancers","White","Male","Louisiana",1980,"West South Central","South","LA",277.741051813871,284.6607455079,290.768963637973,284.570921086011
+"267",18,12,0,0,"Cardiovascular","White","Male","Louisiana",1980,"West South Central","South","LA",722.081303474943,736.833592012406,753.966885219155,737.043315026235
+"268",18,12,0,0,"Communicable","White","Male","Louisiana",1980,"West South Central","South","LA",41.7471582919411,45.2833819002516,49.2603618905886,45.3679545947644
+"269",18,12,0,0,"Injuries","White","Male","Louisiana",1980,"West South Central","South","LA",120.961980138259,124.399299321205,127.962551121363,124.426913816413
+"270",18,12,0,0,"Non-communicable","White","Male","Louisiana",1980,"West South Central","South","LA",103.490618695756,107.157252374257,111.324253262646,107.18757615213
+"271",18,12,0,1,"All other causes","White","Female","Louisiana",1980,"West South Central","South","LA",82.3668093894595,85.4352027755216,88.4141887868054,85.4532791039762
+"272",18,12,0,1,"Cancers","White","Female","Louisiana",1980,"West South Central","South","LA",154.322795605898,157.938327511017,161.506069345771,158.013375405067
+"273",18,12,0,1,"Cardiovascular","White","Female","Louisiana",1980,"West South Central","South","LA",448.910113027682,458.517210623658,468.364193273395,458.415717457455
+"274",18,12,0,1,"Communicable","White","Female","Louisiana",1980,"West South Central","South","LA",26.8635659404898,28.4874848726954,30.183913622609,28.5046203746571
+"275",18,12,0,1,"Injuries","White","Female","Louisiana",1980,"West South Central","South","LA",40.7028667171479,42.2606474981912,44.0555409729833,42.3143353300585
+"276",18,12,0,1,"Non-communicable","White","Female","Louisiana",1980,"West South Central","South","LA",53.1947723473925,55.3540302991336,57.5255140055198,55.3713801527677
+"277",18,12,1,0,"All other causes","Black","Male","Louisiana",1980,"West South Central","South","LA",171.637061346644,178.214265672246,184.922608885193,178.280481449125
+"278",18,12,1,0,"Cancers","Black","Male","Louisiana",1980,"West South Central","South","LA",321.268175156831,331.46884578733,342.071835252102,331.560447587303
+"279",18,12,1,0,"Cardiovascular","Black","Male","Louisiana",1980,"West South Central","South","LA",797.803528157367,817.85006670208,840.469105831595,818.180843480714
+"280",18,12,1,0,"Communicable","Black","Male","Louisiana",1980,"West South Central","South","LA",68.048119140082,73.3814285609762,79.2578402476257,73.4508030001871
+"281",18,12,1,0,"Injuries","Black","Male","Louisiana",1980,"West South Central","South","LA",187.007857042829,194.307057009855,202.289499609822,194.335276952913
+"282",18,12,1,0,"Non-communicable","Black","Male","Louisiana",1980,"West South Central","South","LA",114.363840298525,119.936970415575,125.795677872262,120.018162543179
+"283",18,12,1,1,"All other causes","Black","Female","Louisiana",1980,"West South Central","South","LA",124.204642842839,128.711859364299,133.468060340886,128.754293726091
+"284",18,12,1,1,"Cancers","Black","Female","Louisiana",1980,"West South Central","South","LA",178.829490676941,184.425057247753,190.00343878369,184.437255828352
+"285",18,12,1,1,"Cardiovascular","Black","Female","Louisiana",1980,"West South Central","South","LA",573.5374800782,590.124547001658,607.878657595986,590.143566728416
+"286",18,12,1,1,"Communicable","Black","Female","Louisiana",1980,"West South Central","South","LA",36.2104332718867,39.3023537923178,42.1203739712381,39.2347319179487
+"287",18,12,1,1,"Injuries","Black","Female","Louisiana",1980,"West South Central","South","LA",42.6735061740564,44.8609395801573,47.2954421359379,44.8936459043342
+"288",18,12,1,1,"Non-communicable","Black","Female","Louisiana",1980,"West South Central","South","LA",84.5009203392341,88.653612950764,93.2214051275733,88.7201899036832
+"289",18,13,0,0,"All other causes","White","Male","Louisiana",1981,"West South Central","South","LA",113.275108795947,117.390836433958,121.785189833907,117.458985292069
+"290",18,13,0,0,"Cancers","White","Male","Louisiana",1981,"West South Central","South","LA",279.381924953709,285.449848311066,292.143261815455,285.423592623701
+"291",18,13,0,0,"Cardiovascular","White","Male","Louisiana",1981,"West South Central","South","LA",709.926477499239,724.903407589535,740.893191428514,725.360063509163
+"292",18,13,0,0,"Communicable","White","Male","Louisiana",1981,"West South Central","South","LA",44.4113803436082,48.0683396582133,52.082084897124,48.1770193767731
+"293",18,13,0,0,"Injuries","White","Male","Louisiana",1981,"West South Central","South","LA",118.055581069914,121.182365680838,124.717625570927,121.286185846502
+"294",18,13,0,0,"Non-communicable","White","Male","Louisiana",1981,"West South Central","South","LA",105.987585561991,109.9216167915,114.042809185102,109.967333818849
+"295",18,13,0,1,"All other causes","White","Female","Louisiana",1981,"West South Central","South","LA",82.3431149986515,85.2997868157873,88.3316986679835,85.2740381823144
+"296",18,13,0,1,"Cancers","White","Female","Louisiana",1981,"West South Central","South","LA",157.8433634295,161.556902724009,165.26693789938,161.551772638091
+"297",18,13,0,1,"Cardiovascular","White","Female","Louisiana",1981,"West South Central","South","LA",450.251403385819,459.788731142612,469.225964733968,459.773384740587
+"298",18,13,0,1,"Communicable","White","Female","Louisiana",1981,"West South Central","South","LA",27.029157158194,28.7493345995261,30.5369882842111,28.7882873646376
+"299",18,13,0,1,"Injuries","White","Female","Louisiana",1981,"West South Central","South","LA",39.9442796667412,41.3746683611391,43.237367140647,41.4309738872872
+"300",18,13,0,1,"Non-communicable","White","Female","Louisiana",1981,"West South Central","South","LA",53.7807787691904,56.1479925306994,58.3944813242602,56.1258231882386
+"301",18,13,1,0,"All other causes","Black","Male","Louisiana",1981,"West South Central","South","LA",169.695542153202,176.698906213548,183.100546215795,176.589383098245
+"302",18,13,1,0,"Cancers","Black","Male","Louisiana",1981,"West South Central","South","LA",331.875826212584,342.248842235355,353.524149856786,342.354479742603
+"303",18,13,1,0,"Cardiovascular","Black","Male","Louisiana",1981,"West South Central","South","LA",779.157572883892,798.599470919708,819.177937147745,798.910372899233
+"304",18,13,1,0,"Communicable","Black","Male","Louisiana",1981,"West South Central","South","LA",67.3845359010048,72.8879428627368,78.4957184604993,72.9411275189692
+"305",18,13,1,0,"Injuries","Black","Male","Louisiana",1981,"West South Central","South","LA",180.704777314492,188.367925883435,195.802096043259,188.36049497276
+"306",18,13,1,0,"Non-communicable","Black","Male","Louisiana",1981,"West South Central","South","LA",115.89345300618,121.522036112559,127.700495270345,121.567531776006
+"307",18,13,1,1,"All other causes","Black","Female","Louisiana",1981,"West South Central","South","LA",122.818266693401,127.250827430512,132.209410790034,127.197280339456
+"308",18,13,1,1,"Cancers","Black","Female","Louisiana",1981,"West South Central","South","LA",179.259299794107,184.823968538096,190.221652474558,184.857741719464
+"309",18,13,1,1,"Cardiovascular","Black","Female","Louisiana",1981,"West South Central","South","LA",556.550363148542,572.848242900327,588.100336765248,572.998028871091
+"310",18,13,1,1,"Communicable","Black","Female","Louisiana",1981,"West South Central","South","LA",37.3329778186226,40.266271836517,43.3803389913203,40.2489230908841
+"311",18,13,1,1,"Injuries","Black","Female","Louisiana",1981,"West South Central","South","LA",41.575195304475,43.7804118438599,46.2130138099268,43.822959835713
+"312",18,13,1,1,"Non-communicable","Black","Female","Louisiana",1981,"West South Central","South","LA",84.8825294552529,89.1833718898882,93.8576667218676,89.2456242801629
+"313",18,14,0,0,"All other causes","White","Male","Louisiana",1982,"West South Central","South","LA",111.335647658187,115.734764207217,120.191475055183,115.796930916588
+"314",18,14,0,0,"Cancers","White","Male","Louisiana",1982,"West South Central","South","LA",280.88249697878,287.144902752126,293.184634223203,287.169487503355
+"315",18,14,0,0,"Cardiovascular","White","Male","Louisiana",1982,"West South Central","South","LA",687.244267400927,701.084593277587,715.78525987069,701.036108350902
+"316",18,14,0,0,"Communicable","White","Male","Louisiana",1982,"West South Central","South","LA",47.0605729692308,51.0073632583557,55.107811538768,51.0247904602972
+"317",18,14,0,0,"Injuries","White","Male","Louisiana",1982,"West South Central","South","LA",113.781862578107,117.156886419525,120.579336607237,117.16412743817
+"318",18,14,0,0,"Non-communicable","White","Male","Louisiana",1982,"West South Central","South","LA",106.688355935961,110.674946840053,114.776358825687,110.73056371923
+"319",18,14,0,1,"All other causes","White","Female","Louisiana",1982,"West South Central","South","LA",82.523585321525,85.3457396971035,88.1258912957936,85.3795568840808
+"320",18,14,0,1,"Cancers","White","Female","Louisiana",1982,"West South Central","South","LA",161.145263171945,164.488528159335,168.285142888618,164.592385955943
+"321",18,14,0,1,"Cardiovascular","White","Female","Louisiana",1982,"West South Central","South","LA",444.743916990094,453.806873682054,463.020864557727,453.980416865921
+"322",18,14,0,1,"Communicable","White","Female","Louisiana",1982,"West South Central","South","LA",27.8263467962777,29.5630526993666,31.3928225654955,29.5850123233466
+"323",18,14,0,1,"Injuries","White","Female","Louisiana",1982,"West South Central","South","LA",38.9215953201081,40.4422971428339,42.1849436037723,40.4830351521315
+"324",18,14,0,1,"Non-communicable","White","Female","Louisiana",1982,"West South Central","South","LA",55.183276305921,57.202297935375,59.5737921847879,57.2612388821619
+"325",18,14,1,0,"All other causes","Black","Male","Louisiana",1982,"West South Central","South","LA",169.698482084294,176.472931803791,182.716612805678,176.442043256565
+"326",18,14,1,0,"Cancers","Black","Male","Louisiana",1982,"West South Central","South","LA",341.303035722005,351.973565874226,363.055840002637,352.048431636021
+"327",18,14,1,0,"Cardiovascular","Black","Male","Louisiana",1982,"West South Central","South","LA",757.049178308509,776.158971022609,795.465469269095,776.272599173648
+"328",18,14,1,0,"Communicable","Black","Male","Louisiana",1982,"West South Central","South","LA",68.8765274361074,74.3521280334082,80.0000432728412,74.3773157605494
+"329",18,14,1,0,"Injuries","Black","Male","Louisiana",1982,"West South Central","South","LA",171.606785163323,178.383394938287,185.39804880737,178.536672043807
+"330",18,14,1,0,"Non-communicable","Black","Male","Louisiana",1982,"West South Central","South","LA",116.905647843227,122.570971618909,128.5913170794,122.624704613025
+"331",18,14,1,1,"All other causes","Black","Female","Louisiana",1982,"West South Central","South","LA",122.049534207995,126.778762104534,131.71747393262,126.776148372462
+"332",18,14,1,1,"Cancers","Black","Female","Louisiana",1982,"West South Central","South","LA",180.926456689138,186.574109936905,192.241474116385,186.562952992856
+"333",18,14,1,1,"Cardiovascular","Black","Female","Louisiana",1982,"West South Central","South","LA",540.632453039671,555.534148184371,570.493999890028,555.40022629038
+"334",18,14,1,1,"Communicable","Black","Female","Louisiana",1982,"West South Central","South","LA",38.8296310399704,41.6637384876429,44.8489498761831,41.7072199427007
+"335",18,14,1,1,"Injuries","Black","Female","Louisiana",1982,"West South Central","South","LA",40.8497825472012,42.8703640720013,45.1947857479999,42.871783046421
+"336",18,14,1,1,"Non-communicable","Black","Female","Louisiana",1982,"West South Central","South","LA",85.2935005150373,89.2397356953628,93.9281162691174,89.3040895945962
+"337",18,15,0,0,"All other causes","White","Male","Louisiana",1983,"West South Central","South","LA",112.645673692615,117.245395369445,121.844884334921,117.170888009218
+"338",18,15,0,0,"Cancers","White","Male","Louisiana",1983,"West South Central","South","LA",284.836267152601,290.901082326007,297.462989111962,290.881625287635
+"339",18,15,0,0,"Cardiovascular","White","Male","Louisiana",1983,"West South Central","South","LA",667.276557344931,681.22336302684,695.685290188334,681.119730392621
+"340",18,15,0,0,"Communicable","White","Male","Louisiana",1983,"West South Central","South","LA",50.8401239558928,55.4322908814379,60.2308130984402,55.5215643324491
+"341",18,15,0,0,"Injuries","White","Male","Louisiana",1983,"West South Central","South","LA",109.733985871549,113.072763750462,116.34449026642,113.066773192482
+"342",18,15,0,0,"Non-communicable","White","Male","Louisiana",1983,"West South Central","South","LA",109.218704762238,113.072088946446,117.153772781591,113.130725056392
+"343",18,15,0,1,"All other causes","White","Female","Louisiana",1983,"West South Central","South","LA",83.6699971960994,86.7700424855938,89.8615951245952,86.7598471584165
+"344",18,15,0,1,"Cancers","White","Female","Louisiana",1983,"West South Central","South","LA",162.809892227535,166.28015750375,170.153260293649,166.304584579262
+"345",18,15,0,1,"Cardiovascular","White","Female","Louisiana",1983,"West South Central","South","LA",420.726346480728,429.42694122776,438.748157100546,429.456952846801
+"346",18,15,0,1,"Communicable","White","Female","Louisiana",1983,"West South Central","South","LA",29.8709550237239,31.6752267944311,33.6347936890438,31.7322985465751
+"347",18,15,0,1,"Injuries","White","Female","Louisiana",1983,"West South Central","South","LA",37.6100423984998,39.1952987925778,40.9975977674453,39.2352647816911
+"348",18,15,0,1,"Non-communicable","White","Female","Louisiana",1983,"West South Central","South","LA",57.5137766605924,59.7974963901756,62.2666070808606,59.8360683927127
+"349",18,15,1,0,"All other causes","Black","Male","Louisiana",1983,"West South Central","South","LA",169.21033515294,175.702765178816,182.136087111591,175.642431215601
+"350",18,15,1,0,"Cancers","Black","Male","Louisiana",1983,"West South Central","South","LA",349.347262862181,360.416542401147,371.976236587947,360.481310623393
+"351",18,15,1,0,"Cardiovascular","Black","Male","Louisiana",1983,"West South Central","South","LA",753.371624842325,773.718562556678,793.727114529568,773.791159246994
+"352",18,15,1,0,"Communicable","Black","Male","Louisiana",1983,"West South Central","South","LA",71.6981910906263,77.4108928975449,83.7569809194007,77.3824749255132
+"353",18,15,1,0,"Injuries","Black","Male","Louisiana",1983,"West South Central","South","LA",160.223774817943,166.619132673102,173.426034420426,166.637914824871
+"354",18,15,1,0,"Non-communicable","Black","Male","Louisiana",1983,"West South Central","South","LA",119.754279050244,125.114176591512,130.816956529172,125.155024568117
+"355",18,15,1,1,"All other causes","Black","Female","Louisiana",1983,"West South Central","South","LA",121.562458814026,126.411428741566,131.353247287611,126.472761441527
+"356",18,15,1,1,"Cancers","Black","Female","Louisiana",1983,"West South Central","South","LA",185.265314259599,191.361139459282,197.365499649123,191.371304780376
+"357",18,15,1,1,"Cardiovascular","Black","Female","Louisiana",1983,"West South Central","South","LA",544.989455454862,559.312809723989,574.857052183337,559.520126279299
+"358",18,15,1,1,"Communicable","Black","Female","Louisiana",1983,"West South Central","South","LA",39.6610896653929,42.8538790078507,46.083180490911,42.8454330528241
+"359",18,15,1,1,"Injuries","Black","Female","Louisiana",1983,"West South Central","South","LA",39.6837947331303,41.934058187103,44.3324058091224,41.9749017036648
+"360",18,15,1,1,"Non-communicable","Black","Female","Louisiana",1983,"West South Central","South","LA",87.1300292882155,91.1346580441756,95.8590620813219,91.2815854171163
+"361",18,16,0,0,"All other causes","White","Male","Louisiana",1984,"West South Central","South","LA",114.432020262063,118.732221702613,123.160832486987,118.731025864442
+"362",18,16,0,0,"Cancers","White","Male","Louisiana",1984,"West South Central","South","LA",288.550552452006,294.653474702435,301.349395131523,294.726003281838
+"363",18,16,0,0,"Cardiovascular","White","Male","Louisiana",1984,"West South Central","South","LA",648.328620590588,661.480346865168,675.421183044777,661.716673426967
+"364",18,16,0,0,"Communicable","White","Male","Louisiana",1984,"West South Central","South","LA",54.0283119223628,58.3423707751238,63.1800243949672,58.4462594325051
+"365",18,16,0,0,"Injuries","White","Male","Louisiana",1984,"West South Central","South","LA",107.484696751654,110.822292848673,114.025231682849,110.827345415321
+"366",18,16,0,0,"Non-communicable","White","Male","Louisiana",1984,"West South Central","South","LA",109.063464337637,112.959893719541,117.253849390589,112.966054301271
+"367",18,16,0,1,"All other causes","White","Female","Louisiana",1984,"West South Central","South","LA",84.2349307166855,87.2379598925656,90.209910396182,87.2121150103854
+"368",18,16,0,1,"Cancers","White","Female","Louisiana",1984,"West South Central","South","LA",164.144140355511,167.618559389653,170.988203632137,167.62727386292
+"369",18,16,0,1,"Cardiovascular","White","Female","Louisiana",1984,"West South Central","South","LA",404.463541265252,413.202957664799,421.509054571514,413.105412615769
+"370",18,16,0,1,"Communicable","White","Female","Louisiana",1984,"West South Central","South","LA",32.2765130750616,33.9647465662107,36.0108368568446,34.015220516303
+"371",18,16,0,1,"Injuries","White","Female","Louisiana",1984,"West South Central","South","LA",36.7826787633741,38.3401324233539,40.0419016029448,38.360448550724
+"372",18,16,0,1,"Non-communicable","White","Female","Louisiana",1984,"West South Central","South","LA",57.6561361827819,59.8151971034606,62.1041118452019,59.8169761931305
+"373",18,16,1,0,"All other causes","Black","Male","Louisiana",1984,"West South Central","South","LA",168.361729569109,175.140589568681,181.504098403281,175.16919665016
+"374",18,16,1,0,"Cancers","Black","Male","Louisiana",1984,"West South Central","South","LA",359.158153608226,370.154060925225,381.878386865924,370.176209626379
+"375",18,16,1,0,"Cardiovascular","Black","Male","Louisiana",1984,"West South Central","South","LA",726.294142277487,746.290489314709,764.677582867376,745.864770182623
+"376",18,16,1,0,"Communicable","Black","Male","Louisiana",1984,"West South Central","South","LA",77.1333317068086,83.3927410825826,89.9771776972278,83.4869355217476
+"377",18,16,1,0,"Injuries","Black","Male","Louisiana",1984,"West South Central","South","LA",149.699059262998,156.312729308903,162.827114012922,156.264453506765
+"378",18,16,1,0,"Non-communicable","Black","Male","Louisiana",1984,"West South Central","South","LA",120.273505373007,126.276450820646,131.850884235408,126.211002941036
+"379",18,16,1,1,"All other causes","Black","Female","Louisiana",1984,"West South Central","South","LA",123.161379637804,127.881778325921,132.784045675791,127.895538378886
+"380",18,16,1,1,"Cancers","Black","Female","Louisiana",1984,"West South Central","South","LA",189.377910058367,194.858549423654,200.556967937838,194.883004036418
+"381",18,16,1,1,"Cardiovascular","Black","Female","Louisiana",1984,"West South Central","South","LA",520.194741391629,534.723106966562,550.295442023807,534.743608080744
+"382",18,16,1,1,"Communicable","Black","Female","Louisiana",1984,"West South Central","South","LA",42.3856793898964,45.7260632124543,49.0029429388546,45.6965378848453
+"383",18,16,1,1,"Injuries","Black","Female","Louisiana",1984,"West South Central","South","LA",38.8686925318845,41.1323037626044,43.5198756801774,41.1459717353656
+"384",18,16,1,1,"Non-communicable","Black","Female","Louisiana",1984,"West South Central","South","LA",89.6324342951042,93.9232445356892,98.6216376006002,94.0241509275975
+"385",18,17,0,0,"All other causes","White","Male","Louisiana",1985,"West South Central","South","LA",118.24838527422,122.641807593916,127.209753172786,122.59198695818
+"386",18,17,0,0,"Cancers","White","Male","Louisiana",1985,"West South Central","South","LA",293.205253809474,299.660999352975,306.211632751383,299.65804034252
+"387",18,17,0,0,"Cardiovascular","White","Male","Louisiana",1985,"West South Central","South","LA",630.212258634171,644.462646789879,657.995857881241,644.313755385117
+"388",18,17,0,0,"Communicable","White","Male","Louisiana",1985,"West South Central","South","LA",57.6236935855682,62.2060757132349,66.7455522109149,62.1781952404961
+"389",18,17,0,0,"Injuries","White","Male","Louisiana",1985,"West South Central","South","LA",105.576850275566,108.679109153304,111.712734235376,108.638035581044
+"390",18,17,0,0,"Non-communicable","White","Male","Louisiana",1985,"West South Central","South","LA",111.304236464206,115.420780648185,119.587950015501,115.413425020005
+"391",18,17,0,1,"All other causes","White","Female","Louisiana",1985,"West South Central","South","LA",84.3675622065753,87.387783173318,90.4260656875714,87.3751737242409
+"392",18,17,0,1,"Cancers","White","Female","Louisiana",1985,"West South Central","South","LA",164.028495397402,167.766199669096,171.123355173764,167.722895057315
+"393",18,17,0,1,"Cardiovascular","White","Female","Louisiana",1985,"West South Central","South","LA",401.589298021875,410.093600622272,418.65634700437,410.224506714702
+"394",18,17,0,1,"Communicable","White","Female","Louisiana",1985,"West South Central","South","LA",33.8408580164489,35.9096158656015,37.987349928938,35.8900088799031
+"395",18,17,0,1,"Injuries","White","Female","Louisiana",1985,"West South Central","South","LA",35.9963465470694,37.5673714696005,39.1660933374158,37.5660023591005
+"396",18,17,0,1,"Non-communicable","White","Female","Louisiana",1985,"West South Central","South","LA",59.6254019481419,61.8466419299266,64.2243235697914,61.8646884534914
+"397",18,17,1,0,"All other causes","Black","Male","Louisiana",1985,"West South Central","South","LA",171.049495434741,177.221081642713,184.26164024962,177.313997627221
+"398",18,17,1,0,"Cancers","Black","Male","Louisiana",1985,"West South Central","South","LA",367.387928101394,378.826679305416,390.277640798298,378.956503631622
+"399",18,17,1,0,"Cardiovascular","Black","Male","Louisiana",1985,"West South Central","South","LA",716.235356726606,733.518431969692,754.530697120606,733.941961921065
+"400",18,17,1,0,"Communicable","Black","Male","Louisiana",1985,"West South Central","South","LA",79.9347319401389,86.3070151920459,92.6327802238337,86.3454185370361
+"401",18,17,1,0,"Injuries","Black","Male","Louisiana",1985,"West South Central","South","LA",146.68651793098,152.729014533516,159.330548404298,152.819781764434
+"402",18,17,1,0,"Non-communicable","Black","Male","Louisiana",1985,"West South Central","South","LA",122.146181916572,127.68285127675,134.092637845418,127.773303805019
+"403",18,17,1,1,"All other causes","Black","Female","Louisiana",1985,"West South Central","South","LA",127.044744922,131.796987486415,136.644420440153,131.764129969472
+"404",18,17,1,1,"Cancers","Black","Female","Louisiana",1985,"West South Central","South","LA",193.661550370501,199.338686735487,205.021055920913,199.319432170915
+"405",18,17,1,1,"Cardiovascular","Black","Female","Louisiana",1985,"West South Central","South","LA",512.062415549518,526.265980860378,540.653524716154,526.376484086949
+"406",18,17,1,1,"Communicable","Black","Female","Louisiana",1985,"West South Central","South","LA",44.6855630321459,48.1410621311022,51.638147199476,48.1215807635149
+"407",18,17,1,1,"Injuries","Black","Female","Louisiana",1985,"West South Central","South","LA",38.3213622673146,40.4222813632749,42.7413297822098,40.4474313211479
+"408",18,17,1,1,"Non-communicable","Black","Female","Louisiana",1985,"West South Central","South","LA",91.5096584431892,95.9913302466692,100.739412613161,95.975011763579
+"409",18,18,0,0,"All other causes","White","Male","Louisiana",1986,"West South Central","South","LA",118.34161306832,123.150546762772,128.007461347178,123.071386781034
+"410",18,18,0,0,"Cancers","White","Male","Louisiana",1986,"West South Central","South","LA",291.661909758142,297.720730039959,303.929075012891,297.731812160757
+"411",18,18,0,0,"Cardiovascular","White","Male","Louisiana",1986,"West South Central","South","LA",600.648165383153,614.34128752052,627.228415303936,614.48493716225
+"412",18,18,0,0,"Communicable","White","Male","Louisiana",1986,"West South Central","South","LA",59.9400897465821,64.4257192817885,69.2787582072985,64.4621982728046
+"413",18,18,0,0,"Injuries","White","Male","Louisiana",1986,"West South Central","South","LA",103.851439047073,106.928908171742,110.05890034888,106.905032760578
+"414",18,18,0,0,"Non-communicable","White","Male","Louisiana",1986,"West South Central","South","LA",109.949261733936,114.08983300665,118.551937584536,114.117446381333
+"415",18,18,0,1,"All other causes","White","Female","Louisiana",1986,"West South Central","South","LA",85.7231192352446,88.7296922315065,91.7736472236648,88.7198089232034
+"416",18,18,0,1,"Cancers","White","Female","Louisiana",1986,"West South Central","South","LA",163.619267156458,167.117812526963,170.571930620175,167.107304350426
+"417",18,18,0,1,"Cardiovascular","White","Female","Louisiana",1986,"West South Central","South","LA",382.023716025696,390.276200660129,397.927872455491,390.270989984303
+"418",18,18,0,1,"Communicable","White","Female","Louisiana",1986,"West South Central","South","LA",35.8752024673495,37.8464366616077,40.0087746877859,37.8691630562454
+"419",18,18,0,1,"Injuries","White","Female","Louisiana",1986,"West South Central","South","LA",35.5299009827316,37.0133526290666,38.5115052042976,37.0345891895822
+"420",18,18,0,1,"Non-communicable","White","Female","Louisiana",1986,"West South Central","South","LA",60.3513617505501,62.911263650052,65.2153743556609,62.8394605457893
+"421",18,18,1,0,"All other causes","Black","Male","Louisiana",1986,"West South Central","South","LA",173.99355030519,180.800283683881,187.66611400179,180.730233046608
+"422",18,18,1,0,"Cancers","Black","Male","Louisiana",1986,"West South Central","South","LA",371.191206268732,382.102362360218,394.030171507277,382.202987685987
+"423",18,18,1,0,"Cardiovascular","Black","Male","Louisiana",1986,"West South Central","South","LA",694.074840629383,713.277719925791,731.874471253809,712.928318822675
+"424",18,18,1,0,"Communicable","Black","Male","Louisiana",1986,"West South Central","South","LA",81.424712595033,87.4925298636143,93.4444327118333,87.6183792582083
+"425",18,18,1,0,"Injuries","Black","Male","Louisiana",1986,"West South Central","South","LA",147.070022899322,153.258083221619,159.153024198567,153.167174383969
+"426",18,18,1,0,"Non-communicable","Black","Male","Louisiana",1986,"West South Central","South","LA",124.11055905446,129.906516309016,135.772027808083,129.924136241474
+"427",18,18,1,1,"All other causes","Black","Female","Louisiana",1986,"West South Central","South","LA",127.384438734881,132.46988920192,137.916529867079,132.502528728195
+"428",18,18,1,1,"Cancers","Black","Female","Louisiana",1986,"West South Central","South","LA",195.650696186683,201.603342566487,207.719271188545,201.477706928368
+"429",18,18,1,1,"Cardiovascular","Black","Female","Louisiana",1986,"West South Central","South","LA",496.586674516366,510.651008795762,524.91497886768,510.804338372294
+"430",18,18,1,1,"Communicable","Black","Female","Louisiana",1986,"West South Central","South","LA",46.9076509998639,50.4286210006786,53.8185687375791,50.4059293329858
+"431",18,18,1,1,"Injuries","Black","Female","Louisiana",1986,"West South Central","South","LA",37.7286853742715,39.8947516545416,42.0953154446709,39.9041803130657
+"432",18,18,1,1,"Non-communicable","Black","Female","Louisiana",1986,"West South Central","South","LA",92.240002009249,96.8082874807727,101.332620202726,96.7633751007228
+"433",18,19,0,0,"All other causes","White","Male","Louisiana",1987,"West South Central","South","LA",116.939864024785,121.539626268537,126.180744764035,121.470716125691
+"434",18,19,0,0,"Cancers","White","Male","Louisiana",1987,"West South Central","South","LA",293.266585689637,299.699439706384,306.235533329608,299.667043496523
+"435",18,19,0,0,"Cardiovascular","White","Male","Louisiana",1987,"West South Central","South","LA",598.192500465264,611.498936679318,626.01095600473,611.704311555305
+"436",18,19,0,0,"Communicable","White","Male","Louisiana",1987,"West South Central","South","LA",60.2687113131542,64.3771325172583,69.062454092508,64.4608799002011
+"437",18,19,0,0,"Injuries","White","Male","Louisiana",1987,"West South Central","South","LA",100.50780901645,103.551156922582,106.737421999544,103.557272235063
+"438",18,19,0,0,"Non-communicable","White","Male","Louisiana",1987,"West South Central","South","LA",109.771382836582,114.072138666377,118.384515000679,114.062646598587
+"439",18,19,0,1,"All other causes","White","Female","Louisiana",1987,"West South Central","South","LA",88.1316187834086,91.1001781725465,94.1985609069509,91.1280853004198
+"440",18,19,0,1,"Cancers","White","Female","Louisiana",1987,"West South Central","South","LA",163.819730773222,167.416477634338,170.92904601529,167.41449150979
+"441",18,19,0,1,"Cardiovascular","White","Female","Louisiana",1987,"West South Central","South","LA",374.676683968429,382.296909627879,390.364442794837,382.297572068026
+"442",18,19,0,1,"Communicable","White","Female","Louisiana",1987,"West South Central","South","LA",36.5165063677138,38.5725295693382,40.6989871649862,38.5469427975238
+"443",18,19,0,1,"Injuries","White","Female","Louisiana",1987,"West South Central","South","LA",35.3479672615073,36.7579472629239,38.2863248434187,36.7863125586317
+"444",18,19,0,1,"Non-communicable","White","Female","Louisiana",1987,"West South Central","South","LA",61.912816983548,64.4528366346569,66.8465701716017,64.4227197641482
+"445",18,19,1,0,"All other causes","Black","Male","Louisiana",1987,"West South Central","South","LA",175.933060157081,182.761922487144,190.06121255355,182.866755259039
+"446",18,19,1,0,"Cancers","Black","Male","Louisiana",1987,"West South Central","South","LA",375.625273080559,387.192823745844,399.538716770452,387.251007138455
+"447",18,19,1,0,"Cardiovascular","Black","Male","Louisiana",1987,"West South Central","South","LA",685.046394963312,704.074477201623,723.50694530238,704.112472709144
+"448",18,19,1,0,"Communicable","Black","Male","Louisiana",1987,"West South Central","South","LA",84.824935521439,91.0851978496788,96.9800396669977,91.0427815768995
+"449",18,19,1,0,"Injuries","Black","Male","Louisiana",1987,"West South Central","South","LA",145.356004781957,151.885386566548,158.165480272322,151.878458972196
+"450",18,19,1,0,"Non-communicable","Black","Male","Louisiana",1987,"West South Central","South","LA",127.121137081292,132.787545666335,138.88805695849,132.8473661206
+"451",18,19,1,1,"All other causes","Black","Female","Louisiana",1987,"West South Central","South","LA",129.899701864989,135.084234845197,140.496662459144,135.063946215597
+"452",18,19,1,1,"Cancers","Black","Female","Louisiana",1987,"West South Central","South","LA",198.272868871211,204.072534273412,210.159875260065,203.932653501989
+"453",18,19,1,1,"Cardiovascular","Black","Female","Louisiana",1987,"West South Central","South","LA",495.696445396577,510.135368785404,525.225623195408,510.072073161459
+"454",18,19,1,1,"Communicable","Black","Female","Louisiana",1987,"West South Central","South","LA",46.6808921790215,50.2661225488818,54.2155926974693,50.3733242641136
+"455",18,19,1,1,"Injuries","Black","Female","Louisiana",1987,"West South Central","South","LA",37.4671710037426,39.7102438398583,41.7610614695104,39.6594953689515
+"456",18,19,1,1,"Non-communicable","Black","Female","Louisiana",1987,"West South Central","South","LA",95.0333129833929,99.4636103340729,104.167082866593,99.4967567383683
+"457",18,20,0,0,"All other causes","White","Male","Louisiana",1988,"West South Central","South","LA",117.35489419343,121.533662649626,125.993356382756,121.547990418511
+"458",18,20,0,0,"Cancers","White","Male","Louisiana",1988,"West South Central","South","LA",294.036179903487,300.386237323559,306.852386010108,300.492908807773
+"459",18,20,0,0,"Cardiovascular","White","Male","Louisiana",1988,"West South Central","South","LA",588.86555324707,602.965223049027,615.43734082223,602.694554777318
+"460",18,20,0,0,"Communicable","White","Male","Louisiana",1988,"West South Central","South","LA",70.9264316501496,75.2033018190124,80.062561285921,75.279638235067
+"461",18,20,0,0,"Injuries","White","Male","Louisiana",1988,"West South Central","South","LA",100.306118861503,103.508529680637,106.767326211419,103.517876453331
+"462",18,20,0,0,"Non-communicable","White","Male","Louisiana",1988,"West South Central","South","LA",111.665540088548,115.593160079532,119.55567065872,115.571804531327
+"463",18,20,0,1,"All other causes","White","Female","Louisiana",1988,"West South Central","South","LA",90.3922124655826,93.5710267439079,96.6378278830209,93.5879239048587
+"464",18,20,0,1,"Cancers","White","Female","Louisiana",1988,"West South Central","South","LA",167.354504077763,170.612525350671,174.290113416033,170.699325944568
+"465",18,20,0,1,"Cardiovascular","White","Female","Louisiana",1988,"West South Central","South","LA",373.682333258634,381.43846087986,388.905181416044,381.418955395891
+"466",18,20,0,1,"Communicable","White","Female","Louisiana",1988,"West South Central","South","LA",37.5290895177407,39.5800738758276,41.6714762734327,39.5779354300949
+"467",18,20,0,1,"Injuries","White","Female","Louisiana",1988,"West South Central","South","LA",35.3796343096119,36.7979527747567,38.2875537204093,36.8010313884647
+"468",18,20,0,1,"Non-communicable","White","Female","Louisiana",1988,"West South Central","South","LA",65.5279238748614,67.9474709461375,70.3973594606332,67.9728350817203
+"469",18,20,1,0,"All other causes","Black","Male","Louisiana",1988,"West South Central","South","LA",176.93290473631,183.338063821439,190.290458244677,183.454280351655
+"470",18,20,1,0,"Cancers","Black","Male","Louisiana",1988,"West South Central","South","LA",381.397344326436,392.948722406226,405.864586166722,393.017164924403
+"471",18,20,1,0,"Cardiovascular","Black","Male","Louisiana",1988,"West South Central","South","LA",683.938332126351,701.669136161057,722.341961808584,701.948064506482
+"472",18,20,1,0,"Communicable","Black","Male","Louisiana",1988,"West South Central","South","LA",89.5358841310154,95.6637973588523,102.345787795546,95.6737083548794
+"473",18,20,1,0,"Injuries","Black","Male","Louisiana",1988,"West South Central","South","LA",148.949097776362,154.963593637952,161.14243726096,154.874000611376
+"474",18,20,1,0,"Non-communicable","Black","Male","Louisiana",1988,"West South Central","South","LA",131.693321179098,137.836062331355,144.491516431419,137.789429358306
+"475",18,20,1,1,"All other causes","Black","Female","Louisiana",1988,"West South Central","South","LA",129.743629579438,134.808741591601,140.272451026948,134.94118684925
+"476",18,20,1,1,"Cancers","Black","Female","Louisiana",1988,"West South Central","South","LA",201.32381653087,207.17477346527,212.659558077914,207.142427699283
+"477",18,20,1,1,"Cardiovascular","Black","Female","Louisiana",1988,"West South Central","South","LA",497.520549470705,512.297470636775,526.498971583686,512.354525326936
+"478",18,20,1,1,"Communicable","Black","Female","Louisiana",1988,"West South Central","South","LA",47.0497227381349,50.3585164725106,54.2050682002829,50.399604707331
+"479",18,20,1,1,"Injuries","Black","Female","Louisiana",1988,"West South Central","South","LA",37.7349787497772,39.9607553804964,42.1103825999703,39.9610422871472
+"480",18,20,1,1,"Non-communicable","Black","Female","Louisiana",1988,"West South Central","South","LA",99.1037900412674,103.451699718542,108.67503688305,103.553439031115
+"481",18,21,0,0,"All other causes","White","Male","Louisiana",1989,"West South Central","South","LA",117.035812966932,121.498587299455,126.371945520082,121.498924619667
+"482",18,21,0,0,"Cancers","White","Male","Louisiana",1989,"West South Central","South","LA",295.136323830622,301.690638244712,308.204356979158,301.713267380535
+"483",18,21,0,0,"Cardiovascular","White","Male","Louisiana",1989,"West South Central","South","LA",559.533863752898,571.98250547498,584.960852817519,572.113142475844
+"484",18,21,0,0,"Communicable","White","Male","Louisiana",1989,"West South Central","South","LA",70.7284043311003,75.4392640603694,79.9790682194715,75.3970662321186
+"485",18,21,0,0,"Injuries","White","Male","Louisiana",1989,"West South Central","South","LA",98.1388674407797,101.279448049644,104.409091928168,101.232432046594
+"486",18,21,0,0,"Non-communicable","White","Male","Louisiana",1989,"West South Central","South","LA",115.497073487799,119.525321302277,123.677345417451,119.57523164355
+"487",18,21,0,1,"All other causes","White","Female","Louisiana",1989,"West South Central","South","LA",89.002351447823,92.1706645611903,95.0669971449447,92.1731263061834
+"488",18,21,0,1,"Cancers","White","Female","Louisiana",1989,"West South Central","South","LA",168.696340730799,172.247178116481,175.45318786957,172.164919959333
+"489",18,21,0,1,"Cardiovascular","White","Female","Louisiana",1989,"West South Central","South","LA",362.491142416035,369.99682033604,377.632700899995,370.040909237049
+"490",18,21,0,1,"Communicable","White","Female","Louisiana",1989,"West South Central","South","LA",36.9957897584317,39.0582244224306,41.1868654649017,39.0674078980846
+"491",18,21,0,1,"Injuries","White","Female","Louisiana",1989,"West South Central","South","LA",35.4520205139021,36.8930895468291,38.4008033806892,36.8866680715929
+"492",18,21,0,1,"Non-communicable","White","Female","Louisiana",1989,"West South Central","South","LA",70.1234450785671,72.5661576519161,75.1396770691573,72.6000894646423
+"493",18,21,1,0,"All other causes","Black","Male","Louisiana",1989,"West South Central","South","LA",178.426298414452,185.295696753357,192.05623719205,185.197129572973
+"494",18,21,1,0,"Cancers","Black","Male","Louisiana",1989,"West South Central","South","LA",388.6546167794,400.631402504224,413.220939236643,400.861396327342
+"495",18,21,1,0,"Cardiovascular","Black","Male","Louisiana",1989,"West South Central","South","LA",663.737861382292,683.153249282245,700.41036285115,682.824201504828
+"496",18,21,1,0,"Communicable","Black","Male","Louisiana",1989,"West South Central","South","LA",94.4226097895923,101.001148548014,108.526296999793,101.044972933386
+"497",18,21,1,0,"Injuries","Black","Male","Louisiana",1989,"West South Central","South","LA",156.849073249212,163.065564861308,169.346167759892,163.054042188162
+"498",18,21,1,0,"Non-communicable","Black","Male","Louisiana",1989,"West South Central","South","LA",137.970648974766,144.75610766938,151.545965454999,144.663197891204
+"499",18,21,1,1,"All other causes","Black","Female","Louisiana",1989,"West South Central","South","LA",131.457974449333,136.66762393492,142.152134397797,136.645694987951
+"500",18,21,1,1,"Cancers","Black","Female","Louisiana",1989,"West South Central","South","LA",203.757762448479,209.612743259075,215.704249326916,209.681849632405
+"501",18,21,1,1,"Cardiovascular","Black","Female","Louisiana",1989,"West South Central","South","LA",481.518902338326,494.810404500494,508.907669221697,494.746111636025
+"502",18,21,1,1,"Communicable","Black","Female","Louisiana",1989,"West South Central","South","LA",47.4645049500153,51.1621479529948,54.7503097255164,51.2083655298339
+"503",18,21,1,1,"Injuries","Black","Female","Louisiana",1989,"West South Central","South","LA",37.8700398372371,40.1188540399002,42.3052990888047,40.1009218245996
+"504",18,21,1,1,"Non-communicable","Black","Female","Louisiana",1989,"West South Central","South","LA",103.714159887217,108.601301121293,114.516183121589,108.643454458819
+"505",18,22,0,0,"All other causes","White","Male","Louisiana",1990,"West South Central","South","LA",117.924963064021,122.271256312096,126.913615393465,122.319094021679
+"506",18,22,0,0,"Cancers","White","Male","Louisiana",1990,"West South Central","South","LA",298.907093717704,305.005970752872,311.893321935965,305.048239126027
+"507",18,22,0,0,"Cardiovascular","White","Male","Louisiana",1990,"West South Central","South","LA",538.624455159755,549.94332727758,561.801154685991,550.089938801145
+"508",18,22,0,0,"Communicable","White","Male","Louisiana",1990,"West South Central","South","LA",72.7633837852803,77.2956529894398,82.3552583781888,77.3276837231751
+"509",18,22,0,0,"Injuries","White","Male","Louisiana",1990,"West South Central","South","LA",98.075885528499,101.008410910752,104.052739022345,101.016256169949
+"510",18,22,0,0,"Non-communicable","White","Male","Louisiana",1990,"West South Central","South","LA",118.508872280363,122.541236738205,126.834360675964,122.541170494581
+"511",18,22,0,1,"All other causes","White","Female","Louisiana",1990,"West South Central","South","LA",90.074695379791,93.2873634062165,96.4519816249906,93.3347350559594
+"512",18,22,0,1,"Cancers","White","Female","Louisiana",1990,"West South Central","South","LA",169.13113554583,172.539544830064,176.347171744526,172.567819676535
+"513",18,22,0,1,"Cardiovascular","White","Female","Louisiana",1990,"West South Central","South","LA",351.292056786137,359.559061901984,367.126587291758,359.585016202782
+"514",18,22,0,1,"Communicable","White","Female","Louisiana",1990,"West South Central","South","LA",38.0958946160484,39.9828816118837,42.1642381564756,40.0133145248767
+"515",18,22,0,1,"Injuries","White","Female","Louisiana",1990,"West South Central","South","LA",35.644858799811,37.0863362706785,38.773140993702,37.1153763554634
+"516",18,22,0,1,"Non-communicable","White","Female","Louisiana",1990,"West South Central","South","LA",73.2280659375617,75.7534260315793,78.3000967002502,75.7833078745776
+"517",18,22,1,0,"All other causes","Black","Male","Louisiana",1990,"West South Central","South","LA",180.780126448984,187.181284684532,194.142492897873,187.263049698959
+"518",18,22,1,0,"Cancers","Black","Male","Louisiana",1990,"West South Central","South","LA",395.33586785507,407.634935038075,419.847059327831,407.796668360376
+"519",18,22,1,0,"Cardiovascular","Black","Male","Louisiana",1990,"West South Central","South","LA",653.438184220337,670.27412377413,687.419080467972,670.381976395957
+"520",18,22,1,0,"Communicable","Black","Male","Louisiana",1990,"West South Central","South","LA",98.7383261425086,105.244664049449,113.008724692321,105.335818691548
+"521",18,22,1,0,"Injuries","Black","Male","Louisiana",1990,"West South Central","South","LA",162.667099054011,168.911759031381,175.102761721428,168.910458257604
+"522",18,22,1,0,"Non-communicable","Black","Male","Louisiana",1990,"West South Central","South","LA",141.876858606363,148.730382975024,155.482093649555,148.734922152722
+"523",18,22,1,1,"All other causes","Black","Female","Louisiana",1990,"West South Central","South","LA",129.995571507532,134.775224953879,140.378232928465,134.859298305342
+"524",18,22,1,1,"Cancers","Black","Female","Louisiana",1990,"West South Central","South","LA",205.357335688179,211.759891964921,217.369011401846,211.655295140245
+"525",18,22,1,1,"Cardiovascular","Black","Female","Louisiana",1990,"West South Central","South","LA",459.432311796063,472.800452539397,486.330322364885,472.850594517793
+"526",18,22,1,1,"Communicable","Black","Female","Louisiana",1990,"West South Central","South","LA",50.1093579862297,53.5367015728585,57.465047637432,53.5695016716954
+"527",18,22,1,1,"Injuries","Black","Female","Louisiana",1990,"West South Central","South","LA",37.9526266291035,40.0352152603349,41.983922161843,39.9769830111786
+"528",18,22,1,1,"Non-communicable","Black","Female","Louisiana",1990,"West South Central","South","LA",103.719167108189,108.25522824663,113.452824142994,108.278609045847
+"529",18,23,0,0,"All other causes","White","Male","Louisiana",1991,"West South Central","South","LA",118.542557385349,123.036229550314,127.70106263306,123.004052923125
+"530",18,23,0,0,"Cancers","White","Male","Louisiana",1991,"West South Central","South","LA",299.914921041561,306.640204338051,313.276093094024,306.591202876478
+"531",18,23,0,0,"Cardiovascular","White","Male","Louisiana",1991,"West South Central","South","LA",530.528316415024,542.029648716931,553.988957113672,542.02890284243
+"532",18,23,0,0,"Communicable","White","Male","Louisiana",1991,"West South Central","South","LA",77.4016125694187,82.1310888664004,87.5170526039033,82.1950482473009
+"533",18,23,0,0,"Injuries","White","Male","Louisiana",1991,"West South Central","South","LA",96.4890104297984,99.409493159837,102.276475755377,99.3928266606617
+"534",18,23,0,0,"Non-communicable","White","Male","Louisiana",1991,"West South Central","South","LA",121.559360556907,125.652761928191,129.933456347852,125.665131891128
+"535",18,23,0,1,"All other causes","White","Female","Louisiana",1991,"West South Central","South","LA",91.0082762389701,93.9946959024632,96.86230896933,94.0055409828446
+"536",18,23,0,1,"Cancers","White","Female","Louisiana",1991,"West South Central","South","LA",169.439579171956,172.854186735942,176.620441343076,172.890790867717
+"537",18,23,0,1,"Cardiovascular","White","Female","Louisiana",1991,"West South Central","South","LA",345.535341590174,352.775148173137,359.717886994057,352.814302662619
+"538",18,23,0,1,"Communicable","White","Female","Louisiana",1991,"West South Central","South","LA",37.4105007563768,39.4424858822686,41.5972781789952,39.4463240827575
+"539",18,23,0,1,"Injuries","White","Female","Louisiana",1991,"West South Central","South","LA",35.0139849508407,36.4811227993739,38.1349101172215,36.5204470920784
+"540",18,23,0,1,"Non-communicable","White","Female","Louisiana",1991,"West South Central","South","LA",77.1402533425017,79.775220813515,82.5098273538923,79.7573358197922
+"541",18,23,1,0,"All other causes","Black","Male","Louisiana",1991,"West South Central","South","LA",179.505619353499,186.352153226898,194.449015898981,186.441083171709
+"542",18,23,1,0,"Cancers","Black","Male","Louisiana",1991,"West South Central","South","LA",401.201138500343,412.70802081231,425.166175680587,412.668728374086
+"543",18,23,1,0,"Cardiovascular","Black","Male","Louisiana",1991,"West South Central","South","LA",638.223886852913,656.618315898142,673.942258323433,656.72810700815
+"544",18,23,1,0,"Communicable","Black","Male","Louisiana",1991,"West South Central","South","LA",102.184417153825,108.748065679423,116.067757127927,108.860249962066
+"545",18,23,1,0,"Injuries","Black","Male","Louisiana",1991,"West South Central","South","LA",165.985912711687,172.375085284708,179.733973296419,172.535666319348
+"546",18,23,1,0,"Non-communicable","Black","Male","Louisiana",1991,"West South Central","South","LA",144.763869762854,151.04659280369,158.00408043669,151.112233993692
+"547",18,23,1,1,"All other causes","Black","Female","Louisiana",1991,"West South Central","South","LA",128.093767317856,133.050862440525,138.332130261431,133.090313163901
+"548",18,23,1,1,"Cancers","Black","Female","Louisiana",1991,"West South Central","South","LA",206.574161926235,212.636735965744,219.140694081302,212.715929474762
+"549",18,23,1,1,"Cardiovascular","Black","Female","Louisiana",1991,"West South Central","South","LA",447.504463142458,460.4562209841,472.883435692597,460.467866844887
+"550",18,23,1,1,"Communicable","Black","Female","Louisiana",1991,"West South Central","South","LA",51.5998924810639,55.0566165487405,58.9618147190469,55.1166263762697
+"551",18,23,1,1,"Injuries","Black","Female","Louisiana",1991,"West South Central","South","LA",37.777285007828,39.8392787467297,41.9940246948999,39.8518842964206
+"552",18,23,1,1,"Non-communicable","Black","Female","Louisiana",1991,"West South Central","South","LA",104.300075651949,109.379697225383,114.104088452132,109.41627630601
+"553",18,24,0,0,"All other causes","White","Male","Louisiana",1992,"West South Central","South","LA",119.399215427746,123.843521133661,128.327640248073,123.809380180883
+"554",18,24,0,0,"Cancers","White","Male","Louisiana",1992,"West South Central","South","LA",297.632384009462,304.238086483276,310.451176133537,304.262724668612
+"555",18,24,0,0,"Cardiovascular","White","Male","Louisiana",1992,"West South Central","South","LA",514.482210126568,525.800238471386,538.563900739786,525.936058748314
+"556",18,24,0,0,"Communicable","White","Male","Louisiana",1992,"West South Central","South","LA",76.9051599017915,81.4949515837273,86.5699587453763,81.5528908669541
+"557",18,24,0,0,"Injuries","White","Male","Louisiana",1992,"West South Central","South","LA",95.4913210164141,98.3995467762407,101.338123189636,98.4148500985874
+"558",18,24,0,0,"Non-communicable","White","Male","Louisiana",1992,"West South Central","South","LA",122.362705988649,126.888516711426,131.225637465798,126.833128333426
+"559",18,24,0,1,"All other causes","White","Female","Louisiana",1992,"West South Central","South","LA",92.8561136395762,95.6486519738846,99.0550152460649,95.7394245182071
+"560",18,24,0,1,"Cancers","White","Female","Louisiana",1992,"West South Central","South","LA",170.472852465762,173.73167106661,177.265102654157,173.744003107725
+"561",18,24,0,1,"Cardiovascular","White","Female","Louisiana",1992,"West South Central","South","LA",333.534638591735,340.541116016722,347.330380199889,340.467533612804
+"562",18,24,0,1,"Communicable","White","Female","Louisiana",1992,"West South Central","South","LA",36.9499918416841,38.9220769512522,41.1357653935341,39.0056498704354
+"563",18,24,0,1,"Injuries","White","Female","Louisiana",1992,"West South Central","South","LA",34.4576721096743,35.9250895691186,37.4395489423457,35.930263062184
+"564",18,24,0,1,"Non-communicable","White","Female","Louisiana",1992,"West South Central","South","LA",78.593665119915,81.4066909184356,84.0996864596736,81.4254073609896
+"565",18,24,1,0,"All other causes","Black","Male","Louisiana",1992,"West South Central","South","LA",179.748059395983,186.402917015614,193.270162644547,186.413580902352
+"566",18,24,1,0,"Cancers","Black","Male","Louisiana",1992,"West South Central","South","LA",401.392226312217,413.879639856034,426.970240943424,414.012307433005
+"567",18,24,1,0,"Cardiovascular","Black","Male","Louisiana",1992,"West South Central","South","LA",618.72939569996,635.142433660759,652.482088944843,635.284236437726
+"568",18,24,1,0,"Communicable","Black","Male","Louisiana",1992,"West South Central","South","LA",107.75914070807,114.630600139042,122.796531276774,114.732491263071
+"569",18,24,1,0,"Injuries","Black","Male","Louisiana",1992,"West South Central","South","LA",166.086858171387,172.137156359414,179.204330356463,172.22569684275
+"570",18,24,1,0,"Non-communicable","Black","Male","Louisiana",1992,"West South Central","South","LA",146.845116421799,153.6119493936,160.162254897518,153.618354981624
+"571",18,24,1,1,"All other causes","Black","Female","Louisiana",1992,"West South Central","South","LA",127.729359961924,132.499453910349,137.995331773317,132.567461950973
+"572",18,24,1,1,"Cancers","Black","Female","Louisiana",1992,"West South Central","South","LA",205.925083481892,212.354499224967,218.667506766586,212.362678596283
+"573",18,24,1,1,"Cardiovascular","Black","Female","Louisiana",1992,"West South Central","South","LA",435.267104685294,448.401366445489,460.834896903558,448.276426015843
+"574",18,24,1,1,"Communicable","Black","Female","Louisiana",1992,"West South Central","South","LA",52.6469931047345,56.3394020067128,60.3619565359909,56.3559969821225
+"575",18,24,1,1,"Injuries","Black","Female","Louisiana",1992,"West South Central","South","LA",37.7769542090458,39.8249070188369,42.1650194239426,39.8826725607465
+"576",18,24,1,1,"Non-communicable","Black","Female","Louisiana",1992,"West South Central","South","LA",106.700891235621,111.621029330177,116.325937026727,111.506895851277
+"577",18,25,0,0,"All other causes","White","Male","Louisiana",1993,"West South Central","South","LA",121.022681973799,125.778268161793,130.094143528178,125.833618420752
+"578",18,25,0,0,"Cancers","White","Male","Louisiana",1993,"West South Central","South","LA",295.08509892937,301.149686401188,307.215176548539,301.179283487525
+"579",18,25,0,0,"Cardiovascular","White","Male","Louisiana",1993,"West South Central","South","LA",510.51899808449,521.579021188057,533.449980994205,521.695730137587
+"580",18,25,0,0,"Communicable","White","Male","Louisiana",1993,"West South Central","South","LA",76.0477427052372,80.4736414849282,84.9975135333101,80.5084516098753
+"581",18,25,0,0,"Injuries","White","Male","Louisiana",1993,"West South Central","South","LA",95.1556347100693,98.2635511342663,101.352483429884,98.2530267362039
+"582",18,25,0,0,"Non-communicable","White","Male","Louisiana",1993,"West South Central","South","LA",126.613157855691,130.935849556774,135.460418903958,130.904686410119
+"583",18,25,0,1,"All other causes","White","Female","Louisiana",1993,"West South Central","South","LA",95.8386409582403,99.0245833811992,102.111672948027,98.9938515914129
+"584",18,25,0,1,"Cancers","White","Female","Louisiana",1993,"West South Central","South","LA",173.025027073846,176.414544536858,179.736796666886,176.360697281875
+"585",18,25,0,1,"Cardiovascular","White","Female","Louisiana",1993,"West South Central","South","LA",330.92469264469,337.274019339479,344.787029039142,337.43370804587
+"586",18,25,0,1,"Communicable","White","Female","Louisiana",1993,"West South Central","South","LA",37.3030397079839,39.2815631707336,41.2943079180392,39.2945883512749
+"587",18,25,0,1,"Injuries","White","Female","Louisiana",1993,"West South Central","South","LA",34.4884846797439,35.9704848324596,37.5191576552759,35.9846395060006
+"588",18,25,0,1,"Non-communicable","White","Female","Louisiana",1993,"West South Central","South","LA",82.6473072479388,85.4452044364268,88.5750075409117,85.4837396074268
+"589",18,25,1,0,"All other causes","Black","Male","Louisiana",1993,"West South Central","South","LA",182.276121290971,188.229466912583,195.332694462226,188.379169057171
+"590",18,25,1,0,"Cancers","Black","Male","Louisiana",1993,"West South Central","South","LA",404.43094006318,417.109832178139,430.439984042119,417.223525986247
+"591",18,25,1,0,"Cardiovascular","Black","Male","Louisiana",1993,"West South Central","South","LA",607.113344783895,623.960699245285,641.417454993353,624.217134617483
+"592",18,25,1,0,"Communicable","Black","Male","Louisiana",1993,"West South Central","South","LA",111.926783732988,119.413396264295,127.074364440944,119.364301039504
+"593",18,25,1,0,"Injuries","Black","Male","Louisiana",1993,"West South Central","South","LA",169.420364221948,175.704790141524,182.570805126579,175.7724035427
+"594",18,25,1,0,"Non-communicable","Black","Male","Louisiana",1993,"West South Central","South","LA",150.050785731353,157.046832691202,163.965868682156,157.04400141878
+"595",18,25,1,1,"All other causes","Black","Female","Louisiana",1993,"West South Central","South","LA",131.948176965551,136.902410825357,142.353347292765,136.870794374414
+"596",18,25,1,1,"Cancers","Black","Female","Louisiana",1993,"West South Central","South","LA",205.343895609854,211.30357154351,217.960429352343,211.352823945361
+"597",18,25,1,1,"Cardiovascular","Black","Female","Louisiana",1993,"West South Central","South","LA",432.797807929994,445.473298647614,458.098983474435,445.356698299233
+"598",18,25,1,1,"Communicable","Black","Female","Louisiana",1993,"West South Central","South","LA",54.0070069327875,57.3833191153426,61.0080562814379,57.4135877620659
+"599",18,25,1,1,"Injuries","Black","Female","Louisiana",1993,"West South Central","South","LA",37.8934416010509,40.0450557451444,42.3319745255138,40.0853828377526
+"600",18,25,1,1,"Non-communicable","Black","Female","Louisiana",1993,"West South Central","South","LA",113.397094762775,118.30702784036,123.98016939103,118.315439591252
+"601",18,26,0,0,"All other causes","White","Male","Louisiana",1994,"West South Central","South","LA",122.091493026625,126.661404690833,131.603988223972,126.736734200249
+"602",18,26,0,0,"Cancers","White","Male","Louisiana",1994,"West South Central","South","LA",292.132649033252,298.074097715868,304.16825757138,298.067566142948
+"603",18,26,0,0,"Cardiovascular","White","Male","Louisiana",1994,"West South Central","South","LA",490.659386211361,502.083855253496,514.014242066235,502.211096520329
+"604",18,26,0,0,"Communicable","White","Male","Louisiana",1994,"West South Central","South","LA",77.2916216436403,82.0030150803002,86.709423628182,81.9853916845975
+"605",18,26,0,0,"Injuries","White","Male","Louisiana",1994,"West South Central","South","LA",94.3846798244787,97.4163827455533,100.351664154863,97.3882461535984
+"606",18,26,0,0,"Non-communicable","White","Male","Louisiana",1994,"West South Central","South","LA",128.477834010788,132.881730130868,137.845654277618,132.928903166484
+"607",18,26,0,1,"All other causes","White","Female","Louisiana",1994,"West South Central","South","LA",98.3907047635733,101.638818161463,104.591907706442,101.563553752867
+"608",18,26,0,1,"Cancers","White","Female","Louisiana",1994,"West South Central","South","LA",174.045106269649,177.658826603389,181.210622516551,177.660887666494
+"609",18,26,0,1,"Cardiovascular","White","Female","Louisiana",1994,"West South Central","South","LA",321.666482052872,328.185443533769,335.10398226724,328.227044693432
+"610",18,26,0,1,"Communicable","White","Female","Louisiana",1994,"West South Central","South","LA",39.4384022892195,41.3954308723874,43.5276253657139,41.3985163776232
+"611",18,26,0,1,"Injuries","White","Female","Louisiana",1994,"West South Central","South","LA",34.5040401846313,35.9743278496262,37.4299856914032,35.9664832951342
+"612",18,26,0,1,"Non-communicable","White","Female","Louisiana",1994,"West South Central","South","LA",83.6198614276213,86.5445587411031,89.5825855294265,86.5222570571402
+"613",18,26,1,0,"All other causes","Black","Male","Louisiana",1994,"West South Central","South","LA",182.490678753541,189.319444323728,196.09006137559,189.374283910297
+"614",18,26,1,0,"Cancers","Black","Male","Louisiana",1994,"West South Central","South","LA",394.689053097516,406.569709490783,418.488844320433,406.491387619096
+"615",18,26,1,0,"Cardiovascular","Black","Male","Louisiana",1994,"West South Central","South","LA",579.924450961154,596.008942836774,612.293987110216,595.759039234253
+"616",18,26,1,0,"Communicable","Black","Male","Louisiana",1994,"West South Central","South","LA",115.562147328904,122.971459806588,130.47033179473,123.001182395776
+"617",18,26,1,0,"Injuries","Black","Male","Louisiana",1994,"West South Central","South","LA",164.984749489948,171.421637864208,177.952776966809,171.491893656411
+"618",18,26,1,0,"Non-communicable","Black","Male","Louisiana",1994,"West South Central","South","LA",153.047003502172,160.470015544285,167.546605727259,160.489302520189
+"619",18,26,1,1,"All other causes","Black","Female","Louisiana",1994,"West South Central","South","LA",134.287287520422,139.310000826282,144.913737884782,139.337830853388
+"620",18,26,1,1,"Cancers","Black","Female","Louisiana",1994,"West South Central","South","LA",204.321459775463,210.62315802957,216.736734978072,210.660433597289
+"621",18,26,1,1,"Cardiovascular","Black","Female","Louisiana",1994,"West South Central","South","LA",417.683392902462,428.886597771089,441.544394473335,428.989032740686
+"622",18,26,1,1,"Communicable","Black","Female","Louisiana",1994,"West South Central","South","LA",55.2462176137364,58.9638501217639,63.126835766403,59.0319171259061
+"623",18,26,1,1,"Injuries","Black","Female","Louisiana",1994,"West South Central","South","LA",37.8008770823609,39.7265599161665,42.0127611591026,39.7684469073649
+"624",18,26,1,1,"Non-communicable","Black","Female","Louisiana",1994,"West South Central","South","LA",117.632431533578,123.231232644457,128.552747962252,123.12571982592
+"625",18,27,0,0,"All other causes","White","Male","Louisiana",1995,"West South Central","South","LA",125.102174461992,129.366703112321,134.07820557882,129.448104466208
+"626",18,27,0,0,"Cancers","White","Male","Louisiana",1995,"West South Central","South","LA",289.67237108631,295.617986060357,301.539767951096,295.733572579253
+"627",18,27,0,0,"Cardiovascular","White","Male","Louisiana",1995,"West South Central","South","LA",487.429493482525,497.624568927975,509.220439044815,497.606318081464
+"628",18,27,0,0,"Communicable","White","Male","Louisiana",1995,"West South Central","South","LA",71.1012813482462,75.2101396418657,79.6571271991093,75.2655004408062
+"629",18,27,0,0,"Injuries","White","Male","Louisiana",1995,"West South Central","South","LA",93.312253905666,96.1448635228558,99.3111743209771,96.1746459274003
+"630",18,27,0,0,"Non-communicable","White","Male","Louisiana",1995,"West South Central","South","LA",128.054665899284,132.350895318486,136.908984989326,132.389283890638
+"631",18,27,0,1,"All other causes","White","Female","Louisiana",1995,"West South Central","South","LA",99.1375950363819,102.285672252876,105.305781182016,102.275317826813
+"632",18,27,0,1,"Cancers","White","Female","Louisiana",1995,"West South Central","South","LA",175.13530788127,178.687410825377,182.400906190857,178.713640964454
+"633",18,27,0,1,"Cardiovascular","White","Female","Louisiana",1995,"West South Central","South","LA",321.20226969934,327.725148302998,334.076605604654,327.658794790885
+"634",18,27,0,1,"Communicable","White","Female","Louisiana",1995,"West South Central","South","LA",39.7607155065454,41.5701971075518,43.709390608111,41.6240556324472
+"635",18,27,0,1,"Injuries","White","Female","Louisiana",1995,"West South Central","South","LA",34.7230539397163,36.3196876384275,37.8745599174776,36.2930257290103
+"636",18,27,0,1,"Non-communicable","White","Female","Louisiana",1995,"West South Central","South","LA",85.1088114851385,88.0642157077725,91.043296698798,88.0502058825851
+"637",18,27,1,0,"All other causes","Black","Male","Louisiana",1995,"West South Central","South","LA",182.867251740622,189.561513747504,196.91252727401,189.648904732776
+"638",18,27,1,0,"Cancers","Black","Male","Louisiana",1995,"West South Central","South","LA",391.728792220146,404.365335415482,416.535065041899,404.429694198894
+"639",18,27,1,0,"Cardiovascular","Black","Male","Louisiana",1995,"West South Central","South","LA",567.320772408692,584.337656358907,600.979666970169,584.275506530242
+"640",18,27,1,0,"Communicable","Black","Male","Louisiana",1995,"West South Central","South","LA",119.144463950653,126.165973505465,133.909637213464,126.307442357167
+"641",18,27,1,0,"Injuries","Black","Male","Louisiana",1995,"West South Central","South","LA",155.190816023325,161.346971357974,167.801688088506,161.386998856804
+"642",18,27,1,0,"Non-communicable","Black","Male","Louisiana",1995,"West South Central","South","LA",158.349456640186,165.389735349556,172.546032948184,165.417373060142
+"643",18,27,1,1,"All other causes","Black","Female","Louisiana",1995,"West South Central","South","LA",133.565283948216,138.782049534558,143.991039759429,138.817168430338
+"644",18,27,1,1,"Cancers","Black","Female","Louisiana",1995,"West South Central","South","LA",206.03672535392,211.971020008747,217.734045220377,211.934827637293
+"645",18,27,1,1,"Cardiovascular","Black","Female","Louisiana",1995,"West South Central","South","LA",406.30848069262,417.650319283495,429.593332527362,417.949627686167
+"646",18,27,1,1,"Communicable","Black","Female","Louisiana",1995,"West South Central","South","LA",56.0996163202668,59.9511650772057,63.8105046505515,59.9193269774678
+"647",18,27,1,1,"Injuries","Black","Female","Louisiana",1995,"West South Central","South","LA",36.8125433377665,38.8115942755535,40.9905150439916,38.8530295925576
+"648",18,27,1,1,"Non-communicable","Black","Female","Louisiana",1995,"West South Central","South","LA",120.233849589699,125.461325516502,130.648701953062,125.54545469749
+"649",18,28,0,0,"All other causes","White","Male","Louisiana",1996,"West South Central","South","LA",125.369594934571,129.639119218738,134.267851646989,129.647468670302
+"650",18,28,0,0,"Cancers","White","Male","Louisiana",1996,"West South Central","South","LA",286.38274534651,291.885178931814,298.216704626656,292.004114939868
+"651",18,28,0,0,"Cardiovascular","White","Male","Louisiana",1996,"West South Central","South","LA",476.18788731449,486.328995471193,498.003415968189,486.462378842491
+"652",18,28,0,0,"Communicable","White","Male","Louisiana",1996,"West South Central","South","LA",69.0032370572989,73.2054343298026,77.7306256680966,73.2870377470551
+"653",18,28,0,0,"Injuries","White","Male","Louisiana",1996,"West South Central","South","LA",91.8795063436551,95.0189058987729,97.8920085274042,94.9954349056558
+"654",18,28,0,0,"Non-communicable","White","Male","Louisiana",1996,"West South Central","South","LA",129.682281051544,133.924804999881,138.427441840555,133.942765051245
+"655",18,28,0,1,"All other causes","White","Female","Louisiana",1996,"West South Central","South","LA",102.89144421825,106.116971723292,109.352519616565,106.11634052155
+"656",18,28,0,1,"Cancers","White","Female","Louisiana",1996,"West South Central","South","LA",173.563575093816,177.021667888046,180.389851433846,176.998163489764
+"657",18,28,0,1,"Cardiovascular","White","Female","Louisiana",1996,"West South Central","South","LA",312.515745807478,318.933871036138,325.10762356649,318.840038208566
+"658",18,28,0,1,"Communicable","White","Female","Louisiana",1996,"West South Central","South","LA",39.6142175409296,41.5928670880014,43.7655601399505,41.6376701059821
+"659",18,28,0,1,"Injuries","White","Female","Louisiana",1996,"West South Central","South","LA",35.0756208312051,36.6431706969651,38.1744720687041,36.6401496572848
+"660",18,28,0,1,"Non-communicable","White","Female","Louisiana",1996,"West South Central","South","LA",89.1772189895145,92.2045122705669,95.6498320741537,92.274291538357
+"661",18,28,1,0,"All other causes","Black","Male","Louisiana",1996,"West South Central","South","LA",182.711561714629,189.476886916043,196.815536984983,189.604274113908
+"662",18,28,1,0,"Cancers","Black","Male","Louisiana",1996,"West South Central","South","LA",391.401015674176,402.897889817541,416.049083357368,403.087412481416
+"663",18,28,1,0,"Cardiovascular","Black","Male","Louisiana",1996,"West South Central","South","LA",549.63636094539,563.796358041326,580.184368895266,564.195207766243
+"664",18,28,1,0,"Communicable","Black","Male","Louisiana",1996,"West South Central","South","LA",118.526091433817,125.428739966017,132.603343877279,125.447860485044
+"665",18,28,1,0,"Injuries","Black","Male","Louisiana",1996,"West South Central","South","LA",150.873131973617,156.632627869343,163.067074514814,156.605691842945
+"666",18,28,1,0,"Non-communicable","Black","Male","Louisiana",1996,"West South Central","South","LA",163.108515680337,170.19526453637,176.902349526688,170.111515844985
+"667",18,28,1,1,"All other causes","Black","Female","Louisiana",1996,"West South Central","South","LA",131.737391754752,136.940567648126,142.088352933427,136.906317754306
+"668",18,28,1,1,"Cancers","Black","Female","Louisiana",1996,"West South Central","South","LA",207.299981315331,213.224123435872,220.152852997848,213.280703400095
+"669",18,28,1,1,"Cardiovascular","Black","Female","Louisiana",1996,"West South Central","South","LA",395.510804794114,407.246859018549,418.148286650458,406.996655485287
+"670",18,28,1,1,"Communicable","Black","Female","Louisiana",1996,"West South Central","South","LA",56.0329298066898,59.5825870942188,63.5118561445441,59.5699190947512
+"671",18,28,1,1,"Injuries","Black","Female","Louisiana",1996,"West South Central","South","LA",36.0787932933152,37.9468962117262,40.0361440127149,37.9729068815218
+"672",18,28,1,1,"Non-communicable","Black","Female","Louisiana",1996,"West South Central","South","LA",124.607498016495,129.996904607973,135.958051520836,129.972197796844
+"673",18,29,0,0,"All other causes","White","Male","Louisiana",1997,"West South Central","South","LA",128.946742834113,133.599928039577,138.222663764804,133.645351158314
+"674",18,29,0,0,"Cancers","White","Male","Louisiana",1997,"West South Central","South","LA",280.623136847867,286.585201893478,292.580850211272,286.66587455609
+"675",18,29,0,0,"Cardiovascular","White","Male","Louisiana",1997,"West South Central","South","LA",467.462761907171,477.681277145289,488.397638465112,478.007010267513
+"676",18,29,0,0,"Communicable","White","Male","Louisiana",1997,"West South Central","South","LA",63.0512846653438,67.0998925172146,71.455707007745,67.2143592745752
+"677",18,29,0,0,"Injuries","White","Male","Louisiana",1997,"West South Central","South","LA",91.6094210715017,94.4113933021531,97.1049820288313,94.414620281425
+"678",18,29,0,0,"Non-communicable","White","Male","Louisiana",1997,"West South Central","South","LA",132.398952417108,136.756019717276,141.139434881725,136.717350387041
+"679",18,29,0,1,"All other causes","White","Female","Louisiana",1997,"West South Central","South","LA",106.685977483644,109.689866055183,113.041081177418,109.737411659393
+"680",18,29,0,1,"Cancers","White","Female","Louisiana",1997,"West South Central","South","LA",173.285651387303,176.874989380326,180.281664594898,176.837288896741
+"681",18,29,0,1,"Cardiovascular","White","Female","Louisiana",1997,"West South Central","South","LA",305.096816117611,311.502804699072,318.158138858256,311.641515764547
+"682",18,29,0,1,"Communicable","White","Female","Louisiana",1997,"West South Central","South","LA",39.3872659126831,41.4245452456816,43.6113455411239,41.4555297499629
+"683",18,29,0,1,"Injuries","White","Female","Louisiana",1997,"West South Central","South","LA",35.6798143619012,37.1122363942726,38.6337258363279,37.1364276451792
+"684",18,29,0,1,"Non-communicable","White","Female","Louisiana",1997,"West South Central","South","LA",91.1949054219856,94.448299145767,97.6011646274469,94.4334165074159
+"685",18,29,1,0,"All other causes","Black","Male","Louisiana",1997,"West South Central","South","LA",184.06612408023,190.912824528969,198.166481796824,190.933215558369
+"686",18,29,1,0,"Cancers","Black","Male","Louisiana",1997,"West South Central","South","LA",385.723905469614,397.537127069109,410.556893192706,397.701959244451
+"687",18,29,1,0,"Cardiovascular","Black","Male","Louisiana",1997,"West South Central","South","LA",536.313254295878,550.964084449964,567.592492134063,551.277861932031
+"688",18,29,1,0,"Communicable","Black","Male","Louisiana",1997,"West South Central","South","LA",113.088350716651,119.757461671833,126.837289854976,119.801602424663
+"689",18,29,1,0,"Injuries","Black","Male","Louisiana",1997,"West South Central","South","LA",141.920741418166,147.531305622102,153.549028583117,147.598052986958
+"690",18,29,1,0,"Non-communicable","Black","Male","Louisiana",1997,"West South Central","South","LA",168.431983823125,175.571849859353,183.630529540052,175.681355635834
+"691",18,29,1,1,"All other causes","Black","Female","Louisiana",1997,"West South Central","South","LA",135.701268810347,140.739717927643,145.836015992684,140.799486226822
+"692",18,29,1,1,"Cancers","Black","Female","Louisiana",1997,"West South Central","South","LA",207.856183609339,213.626159909284,219.770056979847,213.734508375487
+"693",18,29,1,1,"Cardiovascular","Black","Female","Louisiana",1997,"West South Central","South","LA",390.960092509978,401.217248276329,412.452981432706,401.287656567297
+"694",18,29,1,1,"Communicable","Black","Female","Louisiana",1997,"West South Central","South","LA",58.6653430763173,62.6668775783045,66.5493555508703,62.6383413000173
+"695",18,29,1,1,"Injuries","Black","Female","Louisiana",1997,"West South Central","South","LA",35.5964086778453,37.3886231097644,39.3977891373903,37.4338536581874
+"696",18,29,1,1,"Non-communicable","Black","Female","Louisiana",1997,"West South Central","South","LA",127.515487003607,133.44592453787,139.72925202166,133.543522080391
+"697",18,30,0,0,"All other causes","White","Male","Louisiana",1998,"West South Central","South","LA",130.669299865367,135.29493398075,140.34677650023,135.371004771444
+"698",18,30,0,0,"Cancers","White","Male","Louisiana",1998,"West South Central","South","LA",278.47829651939,284.344273698212,290.18319835274,284.374757128445
+"699",18,30,0,0,"Cardiovascular","White","Male","Louisiana",1998,"West South Central","South","LA",448.337927628587,458.113372848067,468.771927313751,458.153468539935
+"700",18,30,0,0,"Communicable","White","Male","Louisiana",1998,"West South Central","South","LA",59.1449329454624,63.2709891157123,67.5532055395118,63.24661764148
+"701",18,30,0,0,"Injuries","White","Male","Louisiana",1998,"West South Central","South","LA",91.2683218069643,93.9672733412661,97.1463583972875,94.024162197985
+"702",18,30,0,0,"Non-communicable","White","Male","Louisiana",1998,"West South Central","South","LA",134.30798490686,138.810239995704,142.99132070362,138.786419533106
+"703",18,30,0,1,"All other causes","White","Female","Louisiana",1998,"West South Central","South","LA",110.774103661104,114.383520805577,117.764752589855,114.374983312289
+"704",18,30,0,1,"Cancers","White","Female","Louisiana",1998,"West South Central","South","LA",170.767984287498,174.187560204719,177.643830655046,174.199221280184
+"705",18,30,0,1,"Cardiovascular","White","Female","Louisiana",1998,"West South Central","South","LA",303.361989519933,309.603974615722,315.980232816001,309.603654717959
+"706",18,30,0,1,"Communicable","White","Female","Louisiana",1998,"West South Central","South","LA",39.8869688061935,41.8950452117859,44.0904149138058,41.9186885418864
+"707",18,30,0,1,"Injuries","White","Female","Louisiana",1998,"West South Central","South","LA",36.0344745403761,37.4199435417057,38.9156452370692,37.421594932036
+"708",18,30,0,1,"Non-communicable","White","Female","Louisiana",1998,"West South Central","South","LA",96.4668844313628,99.6166975235172,102.641735152264,99.5284493354318
+"709",18,30,1,0,"All other causes","Black","Male","Louisiana",1998,"West South Central","South","LA",184.624492962339,191.44858708828,198.751717735475,191.578399870536
+"710",18,30,1,0,"Cancers","Black","Male","Louisiana",1998,"West South Central","South","LA",381.846442776552,393.470730420235,405.240060051456,393.513859772002
+"711",18,30,1,0,"Cardiovascular","Black","Male","Louisiana",1998,"West South Central","South","LA",529.963514382537,543.936982535046,559.715643007661,543.94892332202
+"712",18,30,1,0,"Communicable","Black","Male","Louisiana",1998,"West South Central","South","LA",112.70646105962,120.405305387878,127.490484215385,120.385671902693
+"713",18,30,1,0,"Injuries","Black","Male","Louisiana",1998,"West South Central","South","LA",133.748301782629,139.397730971084,145.279024849662,139.432474467214
+"714",18,30,1,0,"Non-communicable","Black","Male","Louisiana",1998,"West South Central","South","LA",172.783404196113,179.952393720488,187.721793182563,179.974317334065
+"715",18,30,1,1,"All other causes","Black","Female","Louisiana",1998,"West South Central","South","LA",138.10182648805,143.302795266474,148.643602507563,143.410402583623
+"716",18,30,1,1,"Cancers","Black","Female","Louisiana",1998,"West South Central","South","LA",207.33782287009,213.166007777056,219.274338812129,213.186694643928
+"717",18,30,1,1,"Cardiovascular","Black","Female","Louisiana",1998,"West South Central","South","LA",389.679556338327,400.897435360069,412.428572730047,400.889551633252
+"718",18,30,1,1,"Communicable","Black","Female","Louisiana",1998,"West South Central","South","LA",60.4894957574262,64.5954516163693,68.7262567827139,64.5513780139294
+"719",18,30,1,1,"Injuries","Black","Female","Louisiana",1998,"West South Central","South","LA",34.9194234996977,36.7029905092388,38.7378843306335,36.7387994626912
+"720",18,30,1,1,"Non-communicable","Black","Female","Louisiana",1998,"West South Central","South","LA",136.340279237264,141.994193160321,148.313878572732,141.954620287137
+"721",18,31,0,0,"All other causes","White","Male","Louisiana",1999,"West South Central","South","LA",135.037138538026,139.698630397144,144.165144530801,139.626582562045
+"722",18,31,0,0,"Cancers","White","Male","Louisiana",1999,"West South Central","South","LA",275.217050525483,280.920360435485,286.816953166942,281.062347092074
+"723",18,31,0,0,"Cardiovascular","White","Male","Louisiana",1999,"West South Central","South","LA",444.617432872214,454.923852965624,464.797411542104,454.922291780438
+"724",18,31,0,0,"Communicable","White","Male","Louisiana",1999,"West South Central","South","LA",57.8997986361377,61.9164046135447,66.1596763787719,61.9686519419463
+"725",18,31,0,0,"Injuries","White","Male","Louisiana",1999,"West South Central","South","LA",92.435403109963,95.550125802512,98.3119432175976,95.5102926672049
+"726",18,31,0,0,"Non-communicable","White","Male","Louisiana",1999,"West South Central","South","LA",140.845815324101,145.40837375305,150.189128329549,145.446670412708
+"727",18,31,0,1,"All other causes","White","Female","Louisiana",1999,"West South Central","South","LA",112.543672981042,115.818860837281,119.211653499252,115.865677045406
+"728",18,31,0,1,"Cancers","White","Female","Louisiana",1999,"West South Central","South","LA",169.461072273806,173.139363700619,176.361368368886,173.095924281715
+"729",18,31,0,1,"Cardiovascular","White","Female","Louisiana",1999,"West South Central","South","LA",303.95855997561,310.175872258016,316.739072899765,310.306500808483
+"730",18,31,0,1,"Communicable","White","Female","Louisiana",1999,"West South Central","South","LA",39.4612946034336,41.3992457412661,43.5106145875698,41.4192351133045
+"731",18,31,0,1,"Injuries","White","Female","Louisiana",1999,"West South Central","South","LA",36.1415798293723,37.5280585503561,39.0899121334914,37.5530941276413
+"732",18,31,0,1,"Non-communicable","White","Female","Louisiana",1999,"West South Central","South","LA",102.581584250345,105.634117125756,108.95994982054,105.682228666727
+"733",18,31,1,0,"All other causes","Black","Male","Louisiana",1999,"West South Central","South","LA",181.758589146602,188.867278256947,196.110373755071,188.910099910225
+"734",18,31,1,0,"Cancers","Black","Male","Louisiana",1999,"West South Central","South","LA",379.101306194493,390.561838946106,402.665767760072,390.739674805558
+"735",18,31,1,0,"Cardiovascular","Black","Male","Louisiana",1999,"West South Central","South","LA",519.984465195736,534.076793540591,548.712925398411,534.047362032775
+"736",18,31,1,0,"Communicable","Black","Male","Louisiana",1999,"West South Central","South","LA",110.113426289595,116.780660267326,124.563125442487,116.893377672782
+"737",18,31,1,0,"Injuries","Black","Male","Louisiana",1999,"West South Central","South","LA",127.483727076076,132.911120513358,138.469566909448,132.917623195172
+"738",18,31,1,0,"Non-communicable","Black","Male","Louisiana",1999,"West South Central","South","LA",178.474539693604,185.850200500321,194.199022573223,185.977110158736
+"739",18,31,1,1,"All other causes","Black","Female","Louisiana",1999,"West South Central","South","LA",138.307962615023,143.28092740469,148.294837293324,143.272292915291
+"740",18,31,1,1,"Cancers","Black","Female","Louisiana",1999,"West South Central","South","LA",206.067531059377,212.158903904464,218.256206723641,212.133130909537
+"741",18,31,1,1,"Cardiovascular","Black","Female","Louisiana",1999,"West South Central","South","LA",386.698662198323,398.444880908665,409.92159480265,398.37888965294
+"742",18,31,1,1,"Communicable","Black","Female","Louisiana",1999,"West South Central","South","LA",63.0699715808976,67.0152018851544,70.7688185430774,67.0436508406506
+"743",18,31,1,1,"Injuries","Black","Female","Louisiana",1999,"West South Central","South","LA",34.6055142454714,36.4659007196545,38.4527612002025,36.4595590922917
+"744",18,31,1,1,"Non-communicable","Black","Female","Louisiana",1999,"West South Central","South","LA",143.706415551686,149.259506460683,155.878513099465,149.394579251029
+"745",18,32,0,0,"All other causes","White","Male","Louisiana",2000,"West South Central","South","LA",135.04038005717,139.641055768055,144.170454045511,139.621190513545
+"746",18,32,0,0,"Cancers","White","Male","Louisiana",2000,"West South Central","South","LA",270.161532667228,275.496424037828,281.247911319108,275.564503415939
+"747",18,32,0,0,"Cardiovascular","White","Male","Louisiana",2000,"West South Central","South","LA",425.189120205119,434.053284756669,443.817374669166,434.10169190744
+"748",18,32,0,0,"Communicable","White","Male","Louisiana",2000,"West South Central","South","LA",55.2915988701553,58.8401230044031,62.5329527468586,58.8703421481486
+"749",18,32,0,0,"Injuries","White","Male","Louisiana",2000,"West South Central","South","LA",94.1170126433682,97.2923207759034,100.149837227446,97.2829550829096
+"750",18,32,0,0,"Non-communicable","White","Male","Louisiana",2000,"West South Central","South","LA",144.697165314901,149.473446247258,154.580457078625,149.505511103184
+"751",18,32,0,1,"All other causes","White","Female","Louisiana",2000,"West South Central","South","LA",116.723452397736,119.919428140514,123.603025041594,120.029085183299
+"752",18,32,0,1,"Cancers","White","Female","Louisiana",2000,"West South Central","South","LA",169.482004793535,172.888492056138,176.448562149241,172.909143171066
+"753",18,32,0,1,"Cardiovascular","White","Female","Louisiana",2000,"West South Central","South","LA",288.191698384014,294.644605321732,300.872469480305,294.603765421833
+"754",18,32,0,1,"Communicable","White","Female","Louisiana",2000,"West South Central","South","LA",39.0666112640658,41.0283302249297,42.9851460599811,41.0342067010188
+"755",18,32,0,1,"Injuries","White","Female","Louisiana",2000,"West South Central","South","LA",36.5942775102106,38.0765251963842,39.6407431996565,38.0853108702627
+"756",18,32,0,1,"Non-communicable","White","Female","Louisiana",2000,"West South Central","South","LA",106.39056928271,109.50333117663,112.99329697601,109.55204174832
+"757",18,32,1,0,"All other causes","Black","Male","Louisiana",2000,"West South Central","South","LA",179.450352014328,186.667982562042,193.829615250439,186.645921601496
+"758",18,32,1,0,"Cancers","Black","Male","Louisiana",2000,"West South Central","South","LA",373.460561276565,384.499887381081,397.024281441475,384.735278354307
+"759",18,32,1,0,"Cardiovascular","Black","Male","Louisiana",2000,"West South Central","South","LA",517.200022250756,531.823916692808,546.580406362407,531.809104502065
+"760",18,32,1,0,"Communicable","Black","Male","Louisiana",2000,"West South Central","South","LA",110.611126227816,117.91007712075,125.208805652011,118.018339169327
+"761",18,32,1,0,"Injuries","Black","Male","Louisiana",2000,"West South Central","South","LA",127.537654546819,132.789459084756,138.264769292632,132.82833332284
+"762",18,32,1,0,"Non-communicable","Black","Male","Louisiana",2000,"West South Central","South","LA",182.363379966295,190.181815866089,198.833953150566,190.220029841048
+"763",18,32,1,1,"All other causes","Black","Female","Louisiana",2000,"West South Central","South","LA",139.561967299397,144.482930757848,149.658065293253,144.526402310835
+"764",18,32,1,1,"Cancers","Black","Female","Louisiana",2000,"West South Central","South","LA",204.291922259363,209.835319870406,215.964479885719,209.86746627022
+"765",18,32,1,1,"Cardiovascular","Black","Female","Louisiana",2000,"West South Central","South","LA",378.368161943068,389.042490515284,399.856230066152,389.04485808756
+"766",18,32,1,1,"Communicable","Black","Female","Louisiana",2000,"West South Central","South","LA",62.7106790281369,66.5726001245424,70.8646606402946,66.6542302508669
+"767",18,32,1,1,"Injuries","Black","Female","Louisiana",2000,"West South Central","South","LA",34.5640979102173,36.338671988781,38.3696065054249,36.3479548559173
+"768",18,32,1,1,"Non-communicable","Black","Female","Louisiana",2000,"West South Central","South","LA",150.268908468005,156.77461803098,163.217515417042,156.819082757908
+"769",18,33,0,0,"All other causes","White","Male","Louisiana",2001,"West South Central","South","LA",137.700539129787,141.962803555612,146.703054938471,142.012695072741
+"770",18,33,0,0,"Cancers","White","Male","Louisiana",2001,"West South Central","South","LA",267.799417996804,273.619468772648,278.84523882007,273.574886088423
+"771",18,33,0,0,"Cardiovascular","White","Male","Louisiana",2001,"West South Central","South","LA",413.127917210009,421.95813503085,432.177633387798,422.355010677804
+"772",18,33,0,0,"Communicable","White","Male","Louisiana",2001,"West South Central","South","LA",55.4800566082192,59.3873224906291,63.3070317212937,59.442469193346
+"773",18,33,0,0,"Injuries","White","Male","Louisiana",2001,"West South Central","South","LA",95.7404564100092,98.8094741662486,101.734925107757,98.7993568416693
+"774",18,33,0,0,"Non-communicable","White","Male","Louisiana",2001,"West South Central","South","LA",145.710630649649,150.022591542716,154.420653908265,150.072556079102
+"775",18,33,0,1,"All other causes","White","Female","Louisiana",2001,"West South Central","South","LA",121.403653117808,124.99394836315,128.580513660936,125.001571921422
+"776",18,33,0,1,"Cancers","White","Female","Louisiana",2001,"West South Central","South","LA",167.382511568644,171.070653677847,174.573669588216,171.087469509809
+"777",18,33,0,1,"Cardiovascular","White","Female","Louisiana",2001,"West South Central","South","LA",281.262429588338,287.531449041583,293.665675744925,287.568677290539
+"778",18,33,0,1,"Communicable","White","Female","Louisiana",2001,"West South Central","South","LA",38.6111833758549,40.5760469760262,42.640326154336,40.5838319409863
+"779",18,33,0,1,"Injuries","White","Female","Louisiana",2001,"West South Central","South","LA",37.7748060161457,39.3070747129768,40.8113586194043,39.3174829652764
+"780",18,33,0,1,"Non-communicable","White","Female","Louisiana",2001,"West South Central","South","LA",111.994356698624,115.460219027504,118.874382987534,115.510245785711
+"781",18,33,1,0,"All other causes","Black","Male","Louisiana",2001,"West South Central","South","LA",183.643758399364,190.118539887239,197.17870799094,190.174384134778
+"782",18,33,1,0,"Cancers","Black","Male","Louisiana",2001,"West South Central","South","LA",368.306543798015,380.258970100117,392.052265808802,380.296774030696
+"783",18,33,1,0,"Cardiovascular","Black","Male","Louisiana",2001,"West South Central","South","LA",506.933738842101,522.086059141801,537.775135381821,522.127653079476
+"784",18,33,1,0,"Communicable","Black","Male","Louisiana",2001,"West South Central","South","LA",109.318537142029,115.799617594199,122.577472682097,115.835540466702
+"785",18,33,1,0,"Injuries","Black","Male","Louisiana",2001,"West South Central","South","LA",125.733169815611,130.627671023281,135.883911446177,130.712985368773
+"786",18,33,1,0,"Non-communicable","Black","Male","Louisiana",2001,"West South Central","South","LA",188.841978396361,196.653814946799,205.614688190283,196.809117513723
+"787",18,33,1,1,"All other causes","Black","Female","Louisiana",2001,"West South Central","South","LA",144.406776762056,149.367624113598,155.094224361867,149.398819695392
+"788",18,33,1,1,"Cancers","Black","Female","Louisiana",2001,"West South Central","South","LA",202.328197420522,208.00302107601,213.727226542081,208.016362468465
+"789",18,33,1,1,"Cardiovascular","Black","Female","Louisiana",2001,"West South Central","South","LA",378.675111350838,389.831867235611,401.536443580805,389.856156597575
+"790",18,33,1,1,"Communicable","Black","Female","Louisiana",2001,"West South Central","South","LA",60.9226264775112,64.7553560704818,68.6374435675715,64.7999618567808
+"791",18,33,1,1,"Injuries","Black","Female","Louisiana",2001,"West South Central","South","LA",34.3100739262161,36.1618837028664,38.106959772152,36.1712571838933
+"792",18,33,1,1,"Non-communicable","Black","Female","Louisiana",2001,"West South Central","South","LA",155.73808478221,162.280008264872,169.021915637011,162.299042874316
+"793",18,34,0,0,"All other causes","White","Male","Louisiana",2002,"West South Central","South","LA",143.918223076529,148.365238566432,153.389224470418,148.441853950296
+"794",18,34,0,0,"Cancers","White","Male","Louisiana",2002,"West South Central","South","LA",262.295774137593,267.829477352718,272.851876140186,267.712550120102
+"795",18,34,0,0,"Cardiovascular","White","Male","Louisiana",2002,"West South Central","South","LA",400.828083854952,410.028953830606,418.877577769654,409.978659903918
+"796",18,34,0,0,"Communicable","White","Male","Louisiana",2002,"West South Central","South","LA",53.8951276522321,57.5358540719303,61.3905739974371,57.5849050321586
+"797",18,34,0,0,"Injuries","White","Male","Louisiana",2002,"West South Central","South","LA",99.6442951849387,102.893701027461,105.731072768846,102.817887003306
+"798",18,34,0,0,"Non-communicable","White","Male","Louisiana",2002,"West South Central","South","LA",147.505722958962,152.085123531714,157.06587944564,152.161716709005
+"799",18,34,0,1,"All other causes","White","Female","Louisiana",2002,"West South Central","South","LA",125.36565701902,128.781567786608,132.574662913775,128.875374628507
+"800",18,34,0,1,"Cancers","White","Female","Louisiana",2002,"West South Central","South","LA",166.173545019487,169.736746735434,173.093931002213,169.723906044345
+"801",18,34,0,1,"Cardiovascular","White","Female","Louisiana",2002,"West South Central","South","LA",276.838854999424,282.975385302725,288.968614323914,282.967133839263
+"802",18,34,0,1,"Communicable","White","Female","Louisiana",2002,"West South Central","South","LA",40.0197954356446,41.8498053379357,43.9079787331536,41.837306978628
+"803",18,34,0,1,"Injuries","White","Female","Louisiana",2002,"West South Central","South","LA",39.177705495713,40.7543074159454,42.4387288065096,40.7626511972842
+"804",18,34,0,1,"Non-communicable","White","Female","Louisiana",2002,"West South Central","South","LA",116.163874882453,119.876396154472,123.46374862584,119.841126500193
+"805",18,34,1,0,"All other causes","Black","Male","Louisiana",2002,"West South Central","South","LA",185.845726107191,193.277165184602,200.327698730322,193.26404886928
+"806",18,34,1,0,"Cancers","Black","Male","Louisiana",2002,"West South Central","South","LA",360.507179246398,372.151970104304,384.138911469795,372.100292722259
+"807",18,34,1,0,"Cardiovascular","Black","Male","Louisiana",2002,"West South Central","South","LA",498.627943362433,513.325366455647,528.913827460671,513.568659072701
+"808",18,34,1,0,"Communicable","Black","Male","Louisiana",2002,"West South Central","South","LA",110.691393779261,117.479850107173,124.866114395708,117.603157843398
+"809",18,34,1,0,"Injuries","Black","Male","Louisiana",2002,"West South Central","South","LA",126.415778671718,131.293276778668,136.889499588805,131.384696868143
+"810",18,34,1,0,"Non-communicable","Black","Male","Louisiana",2002,"West South Central","South","LA",192.860768964284,200.970928302762,209.273691231501,201.022624663386
+"811",18,34,1,1,"All other causes","Black","Female","Louisiana",2002,"West South Central","South","LA",147.530354413848,152.955708896653,158.772665188735,152.971425817617
+"812",18,34,1,1,"Cancers","Black","Female","Louisiana",2002,"West South Central","South","LA",201.614048953235,207.670930394469,213.461679246582,207.60365329844
+"813",18,34,1,1,"Cardiovascular","Black","Female","Louisiana",2002,"West South Central","South","LA",370.887342307537,381.421762435777,392.010666724648,381.554796756265
+"814",18,34,1,1,"Communicable","Black","Female","Louisiana",2002,"West South Central","South","LA",62.2163781498967,65.8604467329776,69.7972025262776,65.8154575558814
+"815",18,34,1,1,"Injuries","Black","Female","Louisiana",2002,"West South Central","South","LA",34.2926920517935,36.2431427201889,37.994406379376,36.2450052501936
+"816",18,34,1,1,"Non-communicable","Black","Female","Louisiana",2002,"West South Central","South","LA",155.90128548542,161.95807254879,168.597336818837,161.997657254577
+"817",18,35,0,0,"All other causes","White","Male","Louisiana",2003,"West South Central","South","LA",144.939692724282,149.577990844225,154.206490829723,149.588897676462
+"818",18,35,0,0,"Cancers","White","Male","Louisiana",2003,"West South Central","South","LA",256.739036881743,262.224781846809,267.673174473717,262.273202660866
+"819",18,35,0,0,"Cardiovascular","White","Male","Louisiana",2003,"West South Central","South","LA",393.541590436497,402.54714946347,412.154826273229,402.608826288386
+"820",18,35,0,0,"Communicable","White","Male","Louisiana",2003,"West South Central","South","LA",52.1393200897957,55.7889568760705,59.5248193775436,55.8516238709825
+"821",18,35,0,0,"Injuries","White","Male","Louisiana",2003,"West South Central","South","LA",103.106027425018,106.261194332135,109.417233600564,106.286596206185
+"822",18,35,0,0,"Non-communicable","White","Male","Louisiana",2003,"West South Central","South","LA",149.426871437686,154.101504432722,158.945216882282,154.131038234973
+"823",18,35,0,1,"All other causes","White","Female","Louisiana",2003,"West South Central","South","LA",129.098008339738,132.609833329228,136.23514235064,132.609521885399
+"824",18,35,0,1,"Cancers","White","Female","Louisiana",2003,"West South Central","South","LA",164.56965498556,168.239819256082,171.611320611428,168.273719900333
+"825",18,35,0,1,"Cardiovascular","White","Female","Louisiana",2003,"West South Central","South","LA",273.85981890052,279.694003837994,285.669176950041,279.795748152443
+"826",18,35,0,1,"Communicable","White","Female","Louisiana",2003,"West South Central","South","LA",39.651619608413,41.731771396091,43.6999084656891,41.7251645516171
+"827",18,35,0,1,"Injuries","White","Female","Louisiana",2003,"West South Central","South","LA",40.3163347047828,42.0399160757083,43.8229791250113,42.0406442556437
+"828",18,35,0,1,"Non-communicable","White","Female","Louisiana",2003,"West South Central","South","LA",118.951419419836,122.603789323735,126.269140900928,122.5852912251
+"829",18,35,1,0,"All other causes","Black","Male","Louisiana",2003,"West South Central","South","LA",189.144213701597,197.197218194465,204.633152334191,197.15173188913
+"830",18,35,1,0,"Cancers","Black","Male","Louisiana",2003,"West South Central","South","LA",355.877910556031,367.260668515144,379.428376135132,367.378538799696
+"831",18,35,1,0,"Cardiovascular","Black","Male","Louisiana",2003,"West South Central","South","LA",496.494746788885,509.989118584577,524.128578262834,509.916759361149
+"832",18,35,1,0,"Communicable","Black","Male","Louisiana",2003,"West South Central","South","LA",108.18153780862,115.063295809476,122.591910907024,115.100292494694
+"833",18,35,1,0,"Injuries","Black","Male","Louisiana",2003,"West South Central","South","LA",129.596521031617,134.831339020871,140.100978677469,134.864907250705
+"834",18,35,1,0,"Non-communicable","Black","Male","Louisiana",2003,"West South Central","South","LA",193.673334969428,201.771383303369,209.908536767444,201.898914833028
+"835",18,35,1,1,"All other causes","Black","Female","Louisiana",2003,"West South Central","South","LA",151.662419188001,157.69381185156,163.386097276959,157.542140071801
+"836",18,35,1,1,"Cancers","Black","Female","Louisiana",2003,"West South Central","South","LA",200.825573056038,206.27984910555,212.246046567856,206.313876317107
+"837",18,35,1,1,"Cardiovascular","Black","Female","Louisiana",2003,"West South Central","South","LA",365.420934625019,377.002482786823,387.370673203551,376.792741666119
+"838",18,35,1,1,"Communicable","Black","Female","Louisiana",2003,"West South Central","South","LA",61.3057151307537,65.07441427054,69.1810047301866,65.1318225278789
+"839",18,35,1,1,"Injuries","Black","Female","Louisiana",2003,"West South Central","South","LA",34.6137896497463,36.4394733457532,38.3563357714219,36.4703712259376
+"840",18,35,1,1,"Non-communicable","Black","Female","Louisiana",2003,"West South Central","South","LA",155.598424434355,161.601116143881,168.29297802582,161.652085592087
+"841",18,36,0,0,"All other causes","White","Male","Louisiana",2004,"West South Central","South","LA",148.647870519022,153.406792496303,158.130957408794,153.42368206898
+"842",18,36,0,0,"Cancers","White","Male","Louisiana",2004,"West South Central","South","LA",251.381817220403,256.75289649909,261.943287577461,256.727722133585
+"843",18,36,0,0,"Cardiovascular","White","Male","Louisiana",2004,"West South Central","South","LA",373.722430767819,382.133257450934,390.360667885958,382.023319817584
+"844",18,36,0,0,"Communicable","White","Male","Louisiana",2004,"West South Central","South","LA",53.5158371189018,56.9841118117636,61.0291603167429,56.984738291616
+"845",18,36,0,0,"Injuries","White","Male","Louisiana",2004,"West South Central","South","LA",107.021490543736,110.321869292931,113.51195567274,110.351548778262
+"846",18,36,0,0,"Non-communicable","White","Male","Louisiana",2004,"West South Central","South","LA",150.45613616791,155.162030409546,160.081476281856,155.182754993095
+"847",18,36,0,1,"All other causes","White","Female","Louisiana",2004,"West South Central","South","LA",130.713579077882,134.411479262994,138.109367954445,134.396059916453
+"848",18,36,0,1,"Cancers","White","Female","Louisiana",2004,"West South Central","South","LA",162.385908592635,165.676867729061,168.881256737827,165.658017981864
+"849",18,36,0,1,"Cardiovascular","White","Female","Louisiana",2004,"West South Central","South","LA",262.870865499943,268.605566313443,274.699976314654,268.730960819923
+"850",18,36,0,1,"Communicable","White","Female","Louisiana",2004,"West South Central","South","LA",39.0391655104629,40.9157171798686,42.8884269648718,40.9662345796781
+"851",18,36,0,1,"Injuries","White","Female","Louisiana",2004,"West South Central","South","LA",42.5560897494724,44.3310229757284,46.2307804815688,44.3662538385834
+"852",18,36,0,1,"Non-communicable","White","Female","Louisiana",2004,"West South Central","South","LA",122.036760043397,125.786980785592,129.542179989294,125.781872081858
+"853",18,36,1,0,"All other causes","Black","Male","Louisiana",2004,"West South Central","South","LA",194.700268581099,201.596081966868,209.557259030012,201.650967205156
+"854",18,36,1,0,"Cancers","Black","Male","Louisiana",2004,"West South Central","South","LA",353.702691269832,364.773070701581,377.196989257975,364.907633655046
+"855",18,36,1,0,"Cardiovascular","Black","Male","Louisiana",2004,"West South Central","South","LA",486.463529196104,500.847979073998,514.603830085599,500.753674495977
+"856",18,36,1,0,"Communicable","Black","Male","Louisiana",2004,"West South Central","South","LA",107.086657955265,113.815569840421,121.095864446536,113.864405566713
+"857",18,36,1,0,"Injuries","Black","Male","Louisiana",2004,"West South Central","South","LA",133.634593801159,138.717577461715,144.213992044772,138.81661347187
+"858",18,36,1,0,"Non-communicable","Black","Male","Louisiana",2004,"West South Central","South","LA",195.460884620898,204.294521151296,213.783162286626,204.284237803779
+"859",18,36,1,1,"All other causes","Black","Female","Louisiana",2004,"West South Central","South","LA",156.771000623851,162.668865376232,168.934307514353,162.799619442338
+"860",18,36,1,1,"Cancers","Black","Female","Louisiana",2004,"West South Central","South","LA",197.960324981762,203.290294879094,209.635807056932,203.34980791152
+"861",18,36,1,1,"Cardiovascular","Black","Female","Louisiana",2004,"West South Central","South","LA",354.766764847216,364.930766097075,375.892009049667,365.026946473769
+"862",18,36,1,1,"Communicable","Black","Female","Louisiana",2004,"West South Central","South","LA",61.6083803530641,65.1844625482075,69.2933128839854,65.2598913246589
+"863",18,36,1,1,"Injuries","Black","Female","Louisiana",2004,"West South Central","South","LA",35.1545944466348,36.9812767710799,38.8408120854625,36.9717514295942
+"864",18,36,1,1,"Non-communicable","Black","Female","Louisiana",2004,"West South Central","South","LA",153.776805733897,160.586092499151,167.236338062216,160.5572794238
+"865",18,37,0,0,"All other causes","White","Male","Louisiana",2005,"West South Central","South","LA",154.356491699383,159.706609845816,164.836380503898,159.612690066794
+"866",18,37,0,0,"Cancers","White","Male","Louisiana",2005,"West South Central","South","LA",247.078482167262,252.336396996438,257.366255266334,252.306584805789
+"867",18,37,0,0,"Cardiovascular","White","Male","Louisiana",2005,"West South Central","South","LA",371.417404687288,379.66926038129,387.72004488283,379.514544084014
+"868",18,37,0,0,"Communicable","White","Male","Louisiana",2005,"West South Central","South","LA",53.057554319977,56.1921947053222,59.5485528779984,56.2380341965831
+"869",18,37,0,0,"Injuries","White","Male","Louisiana",2005,"West South Central","South","LA",112.31990853442,115.550159536964,119.153886091967,115.608679230265
+"870",18,37,0,0,"Non-communicable","White","Male","Louisiana",2005,"West South Central","South","LA",155.3131875745,160.180271237137,165.259947697594,160.184728306986
+"871",18,37,0,1,"All other causes","White","Female","Louisiana",2005,"West South Central","South","LA",137.540899796466,141.468079348589,145.513053126148,141.484944836645
+"872",18,37,0,1,"Cancers","White","Female","Louisiana",2005,"West South Central","South","LA",160.580041676818,163.875874980516,167.280560804915,163.904608565933
+"873",18,37,0,1,"Cardiovascular","White","Female","Louisiana",2005,"West South Central","South","LA",260.230613619046,265.949225905204,271.641966153906,265.913803980478
+"874",18,37,0,1,"Communicable","White","Female","Louisiana",2005,"West South Central","South","LA",41.1226725215665,42.9648826145425,45.1276537649518,43.0116004841798
+"875",18,37,0,1,"Injuries","White","Female","Louisiana",2005,"West South Central","South","LA",44.8647785860563,46.7024376529974,48.7958424617371,46.7250465083167
+"876",18,37,0,1,"Non-communicable","White","Female","Louisiana",2005,"West South Central","South","LA",126.362143307761,130.245766041759,134.259692231817,130.287681326861
+"877",18,37,1,0,"All other causes","Black","Male","Louisiana",2005,"West South Central","South","LA",201.285945667251,208.69672930871,217.911816018947,208.861460118422
+"878",18,37,1,0,"Cancers","Black","Male","Louisiana",2005,"West South Central","South","LA",340.783569857779,351.766283722618,362.616235144733,351.68978690225
+"879",18,37,1,0,"Cardiovascular","Black","Male","Louisiana",2005,"West South Central","South","LA",477.361772636504,491.916035534695,506.555069730504,491.817080250755
+"880",18,37,1,0,"Communicable","Black","Male","Louisiana",2005,"West South Central","South","LA",108.22534749209,114.861676743098,122.223753242612,114.859020127735
+"881",18,37,1,0,"Injuries","Black","Male","Louisiana",2005,"West South Central","South","LA",138.146751800842,144.052681324884,149.985401453168,144.085378283786
+"882",18,37,1,0,"Non-communicable","Black","Male","Louisiana",2005,"West South Central","South","LA",195.404836323318,204.040131343696,212.932683563395,204.057665508589
+"883",18,37,1,1,"All other causes","Black","Female","Louisiana",2005,"West South Central","South","LA",163.750406054938,169.996377717305,176.606866937097,170.071965595297
+"884",18,37,1,1,"Cancers","Black","Female","Louisiana",2005,"West South Central","South","LA",194.738589906454,200.369326534132,206.450596195215,200.431417207424
+"885",18,37,1,1,"Cardiovascular","Black","Female","Louisiana",2005,"West South Central","South","LA",348.800630698049,359.792815298356,370.674667622405,359.74294625353
+"886",18,37,1,1,"Communicable","Black","Female","Louisiana",2005,"West South Central","South","LA",63.1290027516106,67.1529241444821,71.2651597975772,67.1920242512909
+"887",18,37,1,1,"Injuries","Black","Female","Louisiana",2005,"West South Central","South","LA",36.3205240323181,38.4223092578837,40.7842558175802,38.4572838071752
+"888",18,37,1,1,"Non-communicable","Black","Female","Louisiana",2005,"West South Central","South","LA",158.3777393585,165.12204872815,171.747123392915,165.092022533435
+"889",18,38,0,0,"All other causes","White","Male","Louisiana",2006,"West South Central","South","LA",152.197333216166,156.954703665102,162.212524498054,156.975756900335
+"890",18,38,0,0,"Cancers","White","Male","Louisiana",2006,"West South Central","South","LA",242.083245281196,247.106827007707,252.688403821214,247.18907502371
+"891",18,38,0,0,"Cardiovascular","White","Male","Louisiana",2006,"West South Central","South","LA",347.102018097149,355.392470364009,363.897730201457,355.427735236909
+"892",18,38,0,0,"Communicable","White","Male","Louisiana",2006,"West South Central","South","LA",48.1161323412011,51.3767538643351,54.8705003549047,51.3798717681882
+"893",18,38,0,0,"Injuries","White","Male","Louisiana",2006,"West South Central","South","LA",113.404668467037,116.58831713316,119.990858344189,116.606129661262
+"894",18,38,0,0,"Non-communicable","White","Male","Louisiana",2006,"West South Central","South","LA",151.112924167242,155.789307316243,160.701169475373,155.885114398021
+"895",18,38,0,1,"All other causes","White","Female","Louisiana",2006,"West South Central","South","LA",133.967049040172,137.701487071868,141.384378255224,137.703047812098
+"896",18,38,0,1,"Cancers","White","Female","Louisiana",2006,"West South Central","South","LA",158.376530637175,161.595241001823,164.740461892526,161.583476537482
+"897",18,38,0,1,"Cardiovascular","White","Female","Louisiana",2006,"West South Central","South","LA",240.89522570288,246.469423992776,252.014540488693,246.461324560909
+"898",18,38,0,1,"Communicable","White","Female","Louisiana",2006,"West South Central","South","LA",37.4450502716678,39.2933263792929,41.1361297294466,39.2800006577353
+"899",18,38,0,1,"Injuries","White","Female","Louisiana",2006,"West South Central","South","LA",44.0216878843302,45.7438173258026,47.6907711230313,45.770587114559
+"900",18,38,0,1,"Non-communicable","White","Female","Louisiana",2006,"West South Central","South","LA",120.833805861072,124.275192110221,128.030921858485,124.284048614408
+"901",18,38,1,0,"All other causes","Black","Male","Louisiana",2006,"West South Central","South","LA",197.358510340012,204.856763616935,212.695685996018,204.92914160399
+"902",18,38,1,0,"Cancers","Black","Male","Louisiana",2006,"West South Central","South","LA",326.890255963983,337.767546156518,348.740978293654,337.936648815059
+"903",18,38,1,0,"Cardiovascular","Black","Male","Louisiana",2006,"West South Central","South","LA",460.127452757352,472.696040234993,486.853062160048,472.878505325133
+"904",18,38,1,0,"Communicable","Black","Male","Louisiana",2006,"West South Central","South","LA",101.326826738061,107.94298452098,114.342189385791,107.90194191705
+"905",18,38,1,0,"Injuries","Black","Male","Louisiana",2006,"West South Central","South","LA",133.768227160642,139.2214959323,145.089252738807,139.30950399863
+"906",18,38,1,0,"Non-communicable","Black","Male","Louisiana",2006,"West South Central","South","LA",186.635079104533,195.231398903475,204.134000296266,195.405908725839
+"907",18,38,1,1,"All other causes","Black","Female","Louisiana",2006,"West South Central","South","LA",158.482485017036,163.987198642603,170.131515334172,164.100061975467
+"908",18,38,1,1,"Cancers","Black","Female","Louisiana",2006,"West South Central","South","LA",189.509117289912,195.558066928141,200.804544257339,195.506812121607
+"909",18,38,1,1,"Cardiovascular","Black","Female","Louisiana",2006,"West South Central","South","LA",327.103509293496,337.686729681727,348.574152197489,337.63586620541
+"910",18,38,1,1,"Communicable","Black","Female","Louisiana",2006,"West South Central","South","LA",63.1601410099547,67.1859000824305,71.5149031915727,67.207860456795
+"911",18,38,1,1,"Injuries","Black","Female","Louisiana",2006,"West South Central","South","LA",35.4714302454618,37.5478348610222,39.8095207249398,37.601749195263
+"912",18,38,1,1,"Non-communicable","Black","Female","Louisiana",2006,"West South Central","South","LA",153.04766946654,160.474666964992,167.141767133384,160.304706256983
+"913",18,39,0,0,"All other causes","White","Male","Louisiana",2007,"West South Central","South","LA",149.275870232389,153.847023250193,158.602370596045,153.858619782336
+"914",18,39,0,0,"Cancers","White","Male","Louisiana",2007,"West South Central","South","LA",237.271900338408,242.024007118413,247.413286602699,242.095509159588
+"915",18,39,0,0,"Cardiovascular","White","Male","Louisiana",2007,"West South Central","South","LA",334.372026009324,342.388854365361,349.759729406518,342.336116786078
+"916",18,39,0,0,"Communicable","White","Male","Louisiana",2007,"West South Central","South","LA",49.5001381862669,52.8038249318414,56.103509503824,52.8584807966074
+"917",18,39,0,0,"Injuries","White","Male","Louisiana",2007,"West South Central","South","LA",112.748763132821,116.288306221681,119.730913655525,116.261607993929
+"918",18,39,0,0,"Non-communicable","White","Male","Louisiana",2007,"West South Central","South","LA",147.218342530034,151.855000799519,156.427590255866,151.81749204757
+"919",18,39,0,1,"All other causes","White","Female","Louisiana",2007,"West South Central","South","LA",135.526609846701,139.280816724155,142.86160096748,139.298102502219
+"920",18,39,0,1,"Cancers","White","Female","Louisiana",2007,"West South Central","South","LA",155.869601287015,159.079609368423,162.399264324479,159.128297055499
+"921",18,39,0,1,"Cardiovascular","White","Female","Louisiana",2007,"West South Central","South","LA",236.154021225995,241.579814018481,246.965835984033,241.515172304085
+"922",18,39,0,1,"Communicable","White","Female","Louisiana",2007,"West South Central","South","LA",38.1501794808792,39.8869471949833,41.9386338352955,39.9354339124081
+"923",18,39,0,1,"Injuries","White","Female","Louisiana",2007,"West South Central","South","LA",43.7322644754868,45.3458889187936,47.2914423614135,45.3930261215273
+"924",18,39,0,1,"Non-communicable","White","Female","Louisiana",2007,"West South Central","South","LA",121.684555220145,125.276511931248,128.821320259986,125.251553874493
+"925",18,39,1,0,"All other causes","Black","Male","Louisiana",2007,"West South Central","South","LA",188.47333465945,195.975042280268,203.886562875049,196.025846951116
+"926",18,39,1,0,"Cancers","Black","Male","Louisiana",2007,"West South Central","South","LA",317.637083481076,327.588983527498,337.871999988769,327.459808640595
+"927",18,39,1,0,"Cardiovascular","Black","Male","Louisiana",2007,"West South Central","South","LA",441.343279359733,454.476629881669,467.538019875704,454.681263230255
+"928",18,39,1,0,"Communicable","Black","Male","Louisiana",2007,"West South Central","South","LA",94.7758518944176,101.124911854879,107.295677814249,101.135633474444
+"929",18,39,1,0,"Injuries","Black","Male","Louisiana",2007,"West South Central","South","LA",128.809038566212,134.203496215737,139.248247084538,134.178618767587
+"930",18,39,1,0,"Non-communicable","Black","Male","Louisiana",2007,"West South Central","South","LA",183.159562889233,191.390969452874,200.05650086426,191.422711298985
+"931",18,39,1,1,"All other causes","Black","Female","Louisiana",2007,"West South Central","South","LA",153.57805481141,158.594959530204,164.684245869057,158.706499273252
+"932",18,39,1,1,"Cancers","Black","Female","Louisiana",2007,"West South Central","South","LA",186.427810875921,191.73194159945,197.389633983274,191.819785956222
+"933",18,39,1,1,"Cardiovascular","Black","Female","Louisiana",2007,"West South Central","South","LA",311.876512426929,321.489001676151,331.792683237117,321.456775865981
+"934",18,39,1,1,"Communicable","Black","Female","Louisiana",2007,"West South Central","South","LA",62.4130812124304,66.6520524095917,71.1367054820634,66.6942735538221
+"935",18,39,1,1,"Injuries","Black","Female","Louisiana",2007,"West South Central","South","LA",35.0481076270801,36.8959343824692,39.0258217056439,36.9381269002685
+"936",18,39,1,1,"Non-communicable","Black","Female","Louisiana",2007,"West South Central","South","LA",146.427107519404,153.228593948008,160.380216000733,153.239613567852
+"937",18,40,0,0,"All other causes","White","Male","Louisiana",2008,"West South Central","South","LA",154.561399402647,159.094049325469,164.005213282385,159.107091285222
+"938",18,40,0,0,"Cancers","White","Male","Louisiana",2008,"West South Central","South","LA",236.463508850619,241.652328341275,246.908807438037,241.624129388969
+"939",18,40,0,0,"Cardiovascular","White","Male","Louisiana",2008,"West South Central","South","LA",330.146272547773,338.500276493004,346.442799802238,338.463505989151
+"940",18,40,0,0,"Communicable","White","Male","Louisiana",2008,"West South Central","South","LA",47.0096953862347,49.880979619659,53.0578780746182,49.9125153466427
+"941",18,40,0,0,"Injuries","White","Male","Louisiana",2008,"West South Central","South","LA",108.990552966935,112.334998535294,115.589119592726,112.314239984766
+"942",18,40,0,0,"Non-communicable","White","Male","Louisiana",2008,"West South Central","South","LA",148.662053165059,153.629541143678,157.924071512123,153.550956300248
+"943",18,40,0,1,"All other causes","White","Female","Louisiana",2008,"West South Central","South","LA",138.050245370954,141.693660082956,145.469423376627,141.675194847241
+"944",18,40,0,1,"Cancers","White","Female","Louisiana",2008,"West South Central","South","LA",155.07660631993,158.486442214272,161.844458041367,158.515338834343
+"945",18,40,0,1,"Cardiovascular","White","Female","Louisiana",2008,"West South Central","South","LA",233.474079496498,239.045048314197,244.378217019631,238.952156051405
+"946",18,40,0,1,"Communicable","White","Female","Louisiana",2008,"West South Central","South","LA",37.1951920624167,38.9254397258856,40.8200243077106,38.9646163300014
+"947",18,40,0,1,"Injuries","White","Female","Louisiana",2008,"West South Central","South","LA",43.0253049294059,44.6545444755906,46.5154969323379,44.6911685841777
+"948",18,40,0,1,"Non-communicable","White","Female","Louisiana",2008,"West South Central","South","LA",120.78361439006,124.353465827697,128.168358866903,124.372405628787
+"949",18,40,1,0,"All other causes","Black","Male","Louisiana",2008,"West South Central","South","LA",185.958247047085,193.602253534114,201.392244260967,193.640356923861
+"950",18,40,1,0,"Cancers","Black","Male","Louisiana",2008,"West South Central","South","LA",308.386162279418,318.027523510561,328.526500261331,318.104125790651
+"951",18,40,1,0,"Cardiovascular","Black","Male","Louisiana",2008,"West South Central","South","LA",423.958360820795,437.626541628169,449.850570200972,437.454562838045
+"952",18,40,1,0,"Communicable","Black","Male","Louisiana",2008,"West South Central","South","LA",91.9895798131309,98.4081035870604,104.30553059592,98.2351582379369
+"953",18,40,1,0,"Injuries","Black","Male","Louisiana",2008,"West South Central","South","LA",122.186577415239,126.985367926089,132.174498129563,127.012928494983
+"954",18,40,1,0,"Non-communicable","Black","Male","Louisiana",2008,"West South Central","South","LA",179.132334188692,187.11003059572,195.579814351762,187.098156978652
+"955",18,40,1,1,"All other causes","Black","Female","Louisiana",2008,"West South Central","South","LA",152.816742434403,158.449532228178,163.704861307822,158.370654216129
+"956",18,40,1,1,"Cancers","Black","Female","Louisiana",2008,"West South Central","South","LA",183.682509978574,188.85420732804,194.126332367519,188.901560862949
+"957",18,40,1,1,"Cardiovascular","Black","Female","Louisiana",2008,"West South Central","South","LA",301.780929648473,311.646868001325,321.583511772697,311.747698874552
+"958",18,40,1,1,"Communicable","Black","Female","Louisiana",2008,"West South Central","South","LA",62.722290469487,66.6107033024765,70.8659733781055,66.6663678755551
+"959",18,40,1,1,"Injuries","Black","Female","Louisiana",2008,"West South Central","South","LA",33.8643006062806,35.7097538713632,37.802051240597,35.7458780312157
+"960",18,40,1,1,"Non-communicable","Black","Female","Louisiana",2008,"West South Central","South","LA",140.251724819734,146.473711085668,152.477954666021,146.506147284355
+"961",18,41,0,0,"All other causes","White","Male","Louisiana",2009,"West South Central","South","LA",153.592125324447,158.322420550904,162.850753842175,158.300446117645
+"962",18,41,0,0,"Cancers","White","Male","Louisiana",2009,"West South Central","South","LA",230.512056304561,235.608448636191,240.92752948957,235.630548066677
+"963",18,41,0,0,"Cardiovascular","White","Male","Louisiana",2009,"West South Central","South","LA",323.678092917679,331.196826769893,338.504770933179,331.237217733766
+"964",18,41,0,0,"Communicable","White","Male","Louisiana",2009,"West South Central","South","LA",45.796181873625,48.6810649798261,51.9508433550736,48.704344104357
+"965",18,41,0,0,"Injuries","White","Male","Louisiana",2009,"West South Central","South","LA",104.107268122627,107.173470117111,110.217210009753,107.170655145906
+"966",18,41,0,0,"Non-communicable","White","Male","Louisiana",2009,"West South Central","South","LA",145.041540139873,149.428723247829,153.919570011495,149.421339210593
+"967",18,41,0,1,"All other causes","White","Female","Louisiana",2009,"West South Central","South","LA",134.663702585533,138.304408152901,142.210497205424,138.37689043335
+"968",18,41,0,1,"Cancers","White","Female","Louisiana",2009,"West South Central","South","LA",153.574283042729,156.68278057808,160.084026270719,156.723675025587
+"969",18,41,0,1,"Cardiovascular","White","Female","Louisiana",2009,"West South Central","South","LA",224.225813278539,229.166020224498,234.539739123165,229.210089017844
+"970",18,41,0,1,"Communicable","White","Female","Louisiana",2009,"West South Central","South","LA",36.2914968043858,38.0674152492501,39.8255529006616,38.0392558663163
+"971",18,41,0,1,"Injuries","White","Female","Louisiana",2009,"West South Central","South","LA",41.7506879992714,43.3661203603808,45.1631540611939,43.3933542142915
+"972",18,41,0,1,"Non-communicable","White","Female","Louisiana",2009,"West South Central","South","LA",118.180781411468,121.647305616604,125.12170072157,121.674631901469
+"973",18,41,1,0,"All other causes","Black","Male","Louisiana",2009,"West South Central","South","LA",186.394654899183,193.989296441093,201.523273056237,193.98835357776
+"974",18,41,1,0,"Cancers","Black","Male","Louisiana",2009,"West South Central","South","LA",302.431286959149,311.73231722701,321.52793184708,311.747716736664
+"975",18,41,1,0,"Cardiovascular","Black","Male","Louisiana",2009,"West South Central","South","LA",412.014135696343,424.723666320981,437.55173263372,424.781558129535
+"976",18,41,1,0,"Communicable","Black","Male","Louisiana",2009,"West South Central","South","LA",88.264561452798,93.7875635973684,99.8540084961975,93.8105686891179
+"977",18,41,1,0,"Injuries","Black","Male","Louisiana",2009,"West South Central","South","LA",117.571659765537,122.496757722001,127.452566865282,122.540630595846
+"978",18,41,1,0,"Non-communicable","Black","Male","Louisiana",2009,"West South Central","South","LA",171.837582875277,179.581558141243,187.924980424597,179.77456017413
+"979",18,41,1,1,"All other causes","Black","Female","Louisiana",2009,"West South Central","South","LA",153.435447934201,159.103850330836,164.799869440929,159.128483256261
+"980",18,41,1,1,"Cancers","Black","Female","Louisiana",2009,"West South Central","South","LA",180.258177046222,185.952308314428,191.479317554379,185.976990909578
+"981",18,41,1,1,"Cardiovascular","Black","Female","Louisiana",2009,"West South Central","South","LA",290.553070743146,299.107780250705,308.352971476089,299.240893522853
+"982",18,41,1,1,"Communicable","Black","Female","Louisiana",2009,"West South Central","South","LA",59.6443515129224,63.3593426833468,67.3968625882919,63.4334952731423
+"983",18,41,1,1,"Injuries","Black","Female","Louisiana",2009,"West South Central","South","LA",32.3956350910647,34.3187126588313,36.3382578977947,34.3326900596384
+"984",18,41,1,1,"Non-communicable","Black","Female","Louisiana",2009,"West South Central","South","LA",137.456599169076,143.203536133428,150.250893421004,143.480768796078
+"985",18,42,0,0,"All other causes","White","Male","Louisiana",2010,"West South Central","South","LA",156.7732704878,162.009189815302,166.91714938385,161.966009292922
+"986",18,42,0,0,"Cancers","White","Male","Louisiana",2010,"West South Central","South","LA",226.513612999861,231.194983091808,236.130676542773,231.278355438448
+"987",18,42,0,0,"Cardiovascular","White","Male","Louisiana",2010,"West South Central","South","LA",319.597559884684,326.753365430105,334.390607413441,326.832083415398
+"988",18,42,0,0,"Communicable","White","Male","Louisiana",2010,"West South Central","South","LA",45.5113237307325,48.059341933536,51.1503678730781,48.1561156780516
+"989",18,42,0,0,"Injuries","White","Male","Louisiana",2010,"West South Central","South","LA",101.347848794116,104.575913390241,107.798922022659,104.512519270018
+"990",18,42,0,0,"Non-communicable","White","Male","Louisiana",2010,"West South Central","South","LA",141.524562119423,146.28449615564,150.796172796077,146.265240743599
+"991",18,42,0,1,"All other causes","White","Female","Louisiana",2010,"West South Central","South","LA",138.733358228795,142.370235090733,146.259896254364,142.384412140159
+"992",18,42,0,1,"Cancers","White","Female","Louisiana",2010,"West South Central","South","LA",151.901883291094,155.125585724459,158.259323374378,155.129193482948
+"993",18,42,0,1,"Cardiovascular","White","Female","Louisiana",2010,"West South Central","South","LA",217.975692260295,222.965967261424,228.115662231685,223.030941618586
+"994",18,42,0,1,"Communicable","White","Female","Louisiana",2010,"West South Central","South","LA",35.5326996003702,37.1968685600823,38.9771170348774,37.222680426585
+"995",18,42,0,1,"Injuries","White","Female","Louisiana",2010,"West South Central","South","LA",41.7135480166179,43.3912143791912,45.1042195489163,43.4089678673127
+"996",18,42,0,1,"Non-communicable","White","Female","Louisiana",2010,"West South Central","South","LA",117.865250132766,121.29911661539,124.987272774788,121.359601336632
+"997",18,42,1,0,"All other causes","Black","Male","Louisiana",2010,"West South Central","South","LA",190.799769684808,198.690376660854,206.502055486654,198.696568845754
+"998",18,42,1,0,"Cancers","Black","Male","Louisiana",2010,"West South Central","South","LA",296.007485337846,305.966503874454,315.98195598002,305.952820368031
+"999",18,42,1,0,"Cardiovascular","Black","Male","Louisiana",2010,"West South Central","South","LA",399.49535089007,410.398914912784,423.18416959944,410.742561150165
+"1000",18,42,1,0,"Communicable","Black","Male","Louisiana",2010,"West South Central","South","LA",80.6579560691306,86.2218374626481,92.0792776412334,86.3043292743357
+"1001",18,42,1,0,"Injuries","Black","Male","Louisiana",2010,"West South Central","South","LA",112.935903819324,117.868622844985,122.949483935826,117.877195518834
+"1002",18,42,1,0,"Non-communicable","Black","Male","Louisiana",2010,"West South Central","South","LA",169.15397377077,176.275093221805,184.665017148185,176.306879427979
+"1003",18,42,1,1,"All other causes","Black","Female","Louisiana",2010,"West South Central","South","LA",156.252782914315,161.973711137979,168.100431875562,162.024158793417
+"1004",18,42,1,1,"Cancers","Black","Female","Louisiana",2010,"West South Central","South","LA",177.86639892726,183.06848550751,188.309059445544,183.029629336266
+"1005",18,42,1,1,"Cardiovascular","Black","Female","Louisiana",2010,"West South Central","South","LA",282.61300295707,292.061194527748,301.231022452627,291.998119136942
+"1006",18,42,1,1,"Communicable","Black","Female","Louisiana",2010,"West South Central","South","LA",56.5588719712486,60.2079826352893,63.9656823413585,60.2282307393263
+"1007",18,42,1,1,"Injuries","Black","Female","Louisiana",2010,"West South Central","South","LA",31.3209513344447,33.2743463546618,35.2047968469147,33.2782084263861
+"1008",18,42,1,1,"Non-communicable","Black","Female","Louisiana",2010,"West South Central","South","LA",133.059516571388,138.683234344331,144.983598839782,138.813810603707
+"1009",18,43,0,0,"All other causes","White","Male","Louisiana",2011,"West South Central","South","LA",163.713786251285,168.4500062228,173.618997806747,168.478027877458
+"1010",18,43,0,0,"Cancers","White","Male","Louisiana",2011,"West South Central","South","LA",223.350046244807,228.264947804898,233.319363604887,228.231929312125
+"1011",18,43,0,0,"Cardiovascular","White","Male","Louisiana",2011,"West South Central","South","LA",309.89366387705,317.152348690247,324.142068029081,317.15804232968
+"1012",18,43,0,0,"Communicable","White","Male","Louisiana",2011,"West South Central","South","LA",44.1038896703696,47.0052251313628,50.2555318167054,47.0657165175018
+"1013",18,43,0,0,"Injuries","White","Male","Louisiana",2011,"West South Central","South","LA",99.6766472164184,102.922908913529,105.940142932494,102.881613126143
+"1014",18,43,0,0,"Non-communicable","White","Male","Louisiana",2011,"West South Central","South","LA",141.072160161633,145.309105378119,149.90751448523,145.344217724719
+"1015",18,43,0,1,"All other causes","White","Female","Louisiana",2011,"West South Central","South","LA",148.746440504898,152.78558059553,156.860948722695,152.851795925017
+"1016",18,43,0,1,"Cancers","White","Female","Louisiana",2011,"West South Central","South","LA",149.938330124278,153.288793871243,156.619624976895,153.319449681588
+"1017",18,43,0,1,"Cardiovascular","White","Female","Louisiana",2011,"West South Central","South","LA",211.328614241403,216.137473974222,221.030140668257,216.148197195347
+"1018",18,43,0,1,"Communicable","White","Female","Louisiana",2011,"West South Central","South","LA",35.1290094929761,36.8036412710099,38.5360048546577,36.8047787665567
+"1019",18,43,0,1,"Injuries","White","Female","Louisiana",2011,"West South Central","South","LA",42.5795585861394,44.327695070885,46.3728636694858,44.3515618573893
+"1020",18,43,0,1,"Non-communicable","White","Female","Louisiana",2011,"West South Central","South","LA",117.675876241396,121.198509970216,124.798982611125,121.281445432153
+"1021",18,43,1,0,"All other causes","Black","Male","Louisiana",2011,"West South Central","South","LA",190.827185863154,198.684227411119,206.507448571878,198.613247366782
+"1022",18,43,1,0,"Cancers","Black","Male","Louisiana",2011,"West South Central","South","LA",291.14951040186,300.779406642749,310.803007954329,300.75520616494
+"1023",18,43,1,0,"Cardiovascular","Black","Male","Louisiana",2011,"West South Central","South","LA",388.772007696808,401.206583861669,412.783116851149,401.226347479214
+"1024",18,43,1,0,"Communicable","Black","Male","Louisiana",2011,"West South Central","South","LA",77.9018882113235,83.4640243196276,89.2903434464946,83.5787489869269
+"1025",18,43,1,0,"Injuries","Black","Male","Louisiana",2011,"West South Central","South","LA",113.681647394381,118.529791607328,123.403021184166,118.519406841052
+"1026",18,43,1,0,"Non-communicable","Black","Male","Louisiana",2011,"West South Central","South","LA",165.818370572628,173.397318087542,181.127926565639,173.408116961391
+"1027",18,43,1,1,"All other causes","Black","Female","Louisiana",2011,"West South Central","South","LA",157.576720373205,163.712036745977,169.627418878927,163.685570712176
+"1028",18,43,1,1,"Cancers","Black","Female","Louisiana",2011,"West South Central","South","LA",174.521514611339,179.968093896122,185.427865595129,179.957021688652
+"1029",18,43,1,1,"Cardiovascular","Black","Female","Louisiana",2011,"West South Central","South","LA",269.166866648724,278.191107314104,287.389627732632,278.16452436636
+"1030",18,43,1,1,"Communicable","Black","Female","Louisiana",2011,"West South Central","South","LA",56.4710593127096,59.8571695394624,63.5462844818873,59.9403609586239
+"1031",18,43,1,1,"Injuries","Black","Female","Louisiana",2011,"West South Central","South","LA",30.772712500159,32.7322340585792,34.7399982936078,32.7286778777323
+"1032",18,43,1,1,"Non-communicable","Black","Female","Louisiana",2011,"West South Central","South","LA",131.331404315772,136.727171486404,142.238880375545,136.709595722116
+"1033",18,44,0,0,"All other causes","White","Male","Louisiana",2012,"West South Central","South","LA",169.576001406337,175.078291643257,180.685698938723,175.105034926142
+"1034",18,44,0,0,"Cancers","White","Male","Louisiana",2012,"West South Central","South","LA",221.439491647291,226.278209707508,231.506919712864,226.306708830175
+"1035",18,44,0,0,"Cardiovascular","White","Male","Louisiana",2012,"West South Central","South","LA",309.580032109534,316.356921036138,323.139330788995,316.281915935703
+"1036",18,44,0,0,"Communicable","White","Male","Louisiana",2012,"West South Central","South","LA",43.2779516834087,46.1615508888867,49.0332778840946,46.1431671089678
+"1037",18,44,0,0,"Injuries","White","Male","Louisiana",2012,"West South Central","South","LA",99.297534299295,102.706687933845,105.885075269608,102.655089141864
+"1038",18,44,0,0,"Non-communicable","White","Male","Louisiana",2012,"West South Central","South","LA",140.037587429325,144.751080733671,149.100078722331,144.74324141927
+"1039",18,44,0,1,"All other causes","White","Female","Louisiana",2012,"West South Central","South","LA",154.656723973084,158.731456272388,162.937334829771,158.845278284175
+"1040",18,44,0,1,"Cancers","White","Female","Louisiana",2012,"West South Central","South","LA",147.906372073551,151.263964968015,154.410934638489,151.193831347166
+"1041",18,44,0,1,"Cardiovascular","White","Female","Louisiana",2012,"West South Central","South","LA",204.824856517167,209.785939157983,214.749357481021,209.720725364598
+"1042",18,44,0,1,"Communicable","White","Female","Louisiana",2012,"West South Central","South","LA",34.7692101096515,36.3935276864389,38.147961138487,36.424558445053
+"1043",18,44,0,1,"Injuries","White","Female","Louisiana",2012,"West South Central","South","LA",44.0854627229315,45.9366714913623,47.9660636269683,45.962784893269
+"1044",18,44,0,1,"Non-communicable","White","Female","Louisiana",2012,"West South Central","South","LA",120.40420928474,124.055493576725,127.891782517047,124.073121999526
+"1045",18,44,1,0,"All other causes","Black","Male","Louisiana",2012,"West South Central","South","LA",195.393151583783,202.915944309687,211.331876768438,203.028331942384
+"1046",18,44,1,0,"Cancers","Black","Male","Louisiana",2012,"West South Central","South","LA",283.363219220109,292.575543419397,302.05723080258,292.570132279886
+"1047",18,44,1,0,"Cardiovascular","Black","Male","Louisiana",2012,"West South Central","South","LA",384.408217304674,397.751660089483,409.42856660441,397.583815185501
+"1048",18,44,1,0,"Communicable","Black","Male","Louisiana",2012,"West South Central","South","LA",76.2491465681337,81.6192237100097,87.6612350322991,81.7059153207231
+"1049",18,44,1,0,"Injuries","Black","Male","Louisiana",2012,"West South Central","South","LA",115.667880434761,120.621405450301,126.043847156243,120.687570863172
+"1050",18,44,1,0,"Non-communicable","Black","Male","Louisiana",2012,"West South Central","South","LA",166.875556892533,174.566261302912,182.157824984829,174.483237503923
+"1051",18,44,1,1,"All other causes","Black","Female","Louisiana",2012,"West South Central","South","LA",161.029009740212,167.163596812395,174.148459073423,167.191913398513
+"1052",18,44,1,1,"Cancers","Black","Female","Louisiana",2012,"West South Central","South","LA",174.742397915933,180.163958242467,185.764103292596,180.114573900242
+"1053",18,44,1,1,"Cardiovascular","Black","Female","Louisiana",2012,"West South Central","South","LA",267.921081202619,276.278510688727,285.052913760257,276.263648007872
+"1054",18,44,1,1,"Communicable","Black","Female","Louisiana",2012,"West South Central","South","LA",53.5677099948517,56.8951909371099,60.7809480497241,56.9385944465722
+"1055",18,44,1,1,"Injuries","Black","Female","Louisiana",2012,"West South Central","South","LA",30.6053785103333,32.5738883006232,34.7321789123247,32.5916655762211
+"1056",18,44,1,1,"Non-communicable","Black","Female","Louisiana",2012,"West South Central","South","LA",128.776409868732,134.090807859433,140.459262275326,134.252236955141
+"1057",18,45,0,0,"All other causes","White","Male","Louisiana",2013,"West South Central","South","LA",163.460792118113,168.684107276935,174.467793051057,168.861731390613
+"1058",18,45,0,0,"Cancers","White","Male","Louisiana",2013,"West South Central","South","LA",218.031893943807,223.552964278428,229.177514399109,223.57664861402
+"1059",18,45,0,0,"Cardiovascular","White","Male","Louisiana",2013,"West South Central","South","LA",310.251315541714,318.098061529786,325.973614689024,318.097477443981
+"1060",18,45,0,0,"Communicable","White","Male","Louisiana",2013,"West South Central","South","LA",43.3432419515742,46.1794768191869,49.2145791700577,46.2094361060649
+"1061",18,45,0,0,"Injuries","White","Male","Louisiana",2013,"West South Central","South","LA",100.202926485881,103.978254126385,107.823005833251,103.977480891273
+"1062",18,45,0,0,"Non-communicable","White","Male","Louisiana",2013,"West South Central","South","LA",141.84257336311,146.458920183007,151.670073264955,146.538405033294
+"1063",18,45,0,1,"All other causes","White","Female","Louisiana",2013,"West South Central","South","LA",155.391103606566,160.08334104094,164.798254120041,160.075337257161
+"1064",18,45,0,1,"Cancers","White","Female","Louisiana",2013,"West South Central","South","LA",145.678515576485,149.660654261608,153.415681810439,149.609672253016
+"1065",18,45,0,1,"Cardiovascular","White","Female","Louisiana",2013,"West South Central","South","LA",203.489052623901,209.040574992542,213.87603420047,208.967587538919
+"1066",18,45,0,1,"Communicable","White","Female","Louisiana",2013,"West South Central","South","LA",34.5638347023974,36.3590096433234,38.2842352013416,36.383981927138
+"1067",18,45,0,1,"Injuries","White","Female","Louisiana",2013,"West South Central","South","LA",44.146656106265,46.4471841132671,48.810428695496,46.4414663218873
+"1068",18,45,0,1,"Non-communicable","White","Female","Louisiana",2013,"West South Central","South","LA",121.381096239875,125.497844051388,129.730357349627,125.517547712341
+"1069",18,45,1,0,"All other causes","Black","Male","Louisiana",2013,"West South Central","South","LA",194.199794310975,203.184524536834,212.44524114458,203.387798428907
+"1070",18,45,1,0,"Cancers","Black","Male","Louisiana",2013,"West South Central","South","LA",281.184476935952,292.046707843048,303.767698346859,292.147520681909
+"1071",18,45,1,0,"Cardiovascular","Black","Male","Louisiana",2013,"West South Central","South","LA",385.031827494643,399.41155125758,413.489070888104,399.271770910952
+"1072",18,45,1,0,"Communicable","Black","Male","Louisiana",2013,"West South Central","South","LA",75.8255462344678,81.931019880688,88.6079312689292,81.9504565579176
+"1073",18,45,1,0,"Injuries","Black","Male","Louisiana",2013,"West South Central","South","LA",116.079900369275,121.757518456056,127.892567681423,121.874370057768
+"1074",18,45,1,0,"Non-communicable","Black","Male","Louisiana",2013,"West South Central","South","LA",168.746250900176,177.339888854679,186.704653340046,177.41804456963
+"1075",18,45,1,1,"All other causes","Black","Female","Louisiana",2013,"West South Central","South","LA",161.156742102024,168.153426219215,175.073072368521,168.135433248133
+"1076",18,45,1,1,"Cancers","Black","Female","Louisiana",2013,"West South Central","South","LA",174.515800954413,180.735811658043,187.509759619516,180.705460820699
+"1077",18,45,1,1,"Cardiovascular","Black","Female","Louisiana",2013,"West South Central","South","LA",266.303846636017,276.467771255858,285.487974488969,276.280754442271
+"1078",18,45,1,1,"Communicable","Black","Female","Louisiana",2013,"West South Central","South","LA",50.1630799422403,53.9104589651967,58.0617350021129,53.9233786818721
+"1079",18,45,1,1,"Injuries","Black","Female","Louisiana",2013,"West South Central","South","LA",30.1918747389161,32.4337374834001,34.6670251038585,32.4258942237265
+"1080",18,45,1,1,"Non-communicable","Black","Female","Louisiana",2013,"West South Central","South","LA",128.241449123887,134.523281633932,141.547698290245,134.526238502094

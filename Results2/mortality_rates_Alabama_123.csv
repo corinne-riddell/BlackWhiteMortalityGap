@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",0,1,0,0,"All other causes","White","Male","Alabama",1969,"East South Central","South","AL",183.317616275909,190.436486356039,198.175028080976,190.54957425318
+"2",0,1,0,0,"Cancers","White","Male","Alabama",1969,"East South Central","South","AL",225.987420039176,232.918093442446,240.015578651932,232.968141416486
+"3",0,1,0,0,"Cardiovascular","White","Male","Alabama",1969,"East South Central","South","AL",899.572747791435,919.910888015391,940.655490233177,919.824681131184
+"4",0,1,0,0,"Communicable","White","Male","Alabama",1969,"East South Central","South","AL",60.4675218325883,65.4074941001425,70.9807788057941,65.484396507446
+"5",0,1,0,0,"Injuries","White","Male","Alabama",1969,"East South Central","South","AL",143.235224849837,148.255061353993,153.175080734615,148.267373000695
+"6",0,1,0,0,"Non-communicable","White","Male","Alabama",1969,"East South Central","South","AL",88.0529808295937,92.2881798723106,96.5753644744564,92.2758374751578
+"7",0,1,0,1,"All other causes","White","Female","Alabama",1969,"East South Central","South","AL",111.917736393516,116.732898715206,121.491543010467,116.637402658981
+"8",0,1,0,1,"Cancers","White","Female","Alabama",1969,"East South Central","South","AL",135.557961308049,139.557490981296,143.973541874515,139.549887095728
+"9",0,1,0,1,"Cardiovascular","White","Female","Alabama",1969,"East South Central","South","AL",552.792844046103,565.487597571657,580.768320811077,565.795343491934
+"10",0,1,0,1,"Communicable","White","Female","Alabama",1969,"East South Central","South","AL",36.7178170455949,39.9673616555629,43.4604139268415,40.0018452955453
+"11",0,1,0,1,"Injuries","White","Female","Alabama",1969,"East South Central","South","AL",49.2062267493887,51.7590933158602,54.5418589411094,51.7989039074224
+"12",0,1,0,1,"Non-communicable","White","Female","Alabama",1969,"East South Central","South","AL",41.4066492325781,43.7086891456534,46.3353099537878,43.7384195967646
+"13",0,1,1,0,"All other causes","Black","Male","Alabama",1969,"East South Central","South","AL",340.112429887478,355.854630199362,372.899071108474,356.054006442134
+"14",0,1,1,0,"Cancers","Black","Male","Alabama",1969,"East South Central","South","AL",229.408732458949,240.681943347162,252.19613741854,240.748138926956
+"15",0,1,1,0,"Cardiovascular","Black","Male","Alabama",1969,"East South Central","South","AL",856.766056101514,884.16729130201,912.598515804299,884.405959874891
+"16",0,1,1,0,"Communicable","Black","Male","Alabama",1969,"East South Central","South","AL",101.281106167079,109.965342569648,119.264300950585,110.100321054756
+"17",0,1,1,0,"Injuries","Black","Male","Alabama",1969,"East South Central","South","AL",239.662814008549,251.93725714531,264.390853562727,251.916057611576
+"18",0,1,1,0,"Non-communicable","Black","Male","Alabama",1969,"East South Central","South","AL",87.2651080249309,93.4829185159349,100.26743023235,93.5455634094547
+"19",0,1,1,1,"All other causes","Black","Female","Alabama",1969,"East South Central","South","AL",234.700650789027,246.092931007503,256.653363277646,245.781678240407
+"20",0,1,1,1,"Cancers","Black","Female","Alabama",1969,"East South Central","South","AL",154.7084071579,161.281873562557,168.168178554239,161.37946902657
+"21",0,1,1,1,"Cardiovascular","Black","Female","Alabama",1969,"East South Central","South","AL",685.611409034526,709.295112117062,733.238514718514,709.289071801947
+"22",0,1,1,1,"Communicable","Black","Female","Alabama",1969,"East South Central","South","AL",45.6812697155503,50.4959683379681,55.0621115903707,50.4907558554765
+"23",0,1,1,1,"Injuries","Black","Female","Alabama",1969,"East South Central","South","AL",61.0568010886105,65.6362012014216,70.3285481572745,65.6811764218642
+"24",0,1,1,1,"Non-communicable","Black","Female","Alabama",1969,"East South Central","South","AL",71.2654115048731,76.3827313997871,82.0255121441138,76.4629823844483
+"25",0,2,0,0,"All other causes","White","Male","Alabama",1970,"East South Central","South","AL",181.079267895592,186.636596708394,193.193442588411,186.681554245312
+"26",0,2,0,0,"Cancers","White","Male","Alabama",1970,"East South Central","South","AL",227.637889104713,233.687070524696,240.439710987046,233.73453286961
+"27",0,2,0,0,"Cardiovascular","White","Male","Alabama",1970,"East South Central","South","AL",896.486675502155,914.713853418371,934.038550851358,914.616978108935
+"28",0,2,0,0,"Communicable","White","Male","Alabama",1970,"East South Central","South","AL",62.8746064606433,67.4125999190571,72.4438518392841,67.4747681481105
+"29",0,2,0,0,"Injuries","White","Male","Alabama",1970,"East South Central","South","AL",143.690312855865,147.809051173148,152.540503670939,147.898387928234
+"30",0,2,0,0,"Non-communicable","White","Male","Alabama",1970,"East South Central","South","AL",88.7352511069534,92.4628306448498,96.5004483161298,92.5592689980076
+"31",0,2,0,1,"All other causes","White","Female","Alabama",1970,"East South Central","South","AL",110.541998365188,114.695889875501,118.715869818639,114.604261819341
+"32",0,2,0,1,"Cancers","White","Female","Alabama",1970,"East South Central","South","AL",135.318866897484,139.078931617725,142.834959166113,139.10977076168
+"33",0,2,0,1,"Cardiovascular","White","Female","Alabama",1970,"East South Central","South","AL",550.288690506612,562.558722640184,574.927261845728,562.568888775152
+"34",0,2,0,1,"Communicable","White","Female","Alabama",1970,"East South Central","South","AL",35.1675005763979,37.6466725665347,40.3840018215749,37.7152262402008
+"35",0,2,0,1,"Injuries","White","Female","Alabama",1970,"East South Central","South","AL",48.9189473615303,51.1591018550937,53.6899041274618,51.1738166714684
+"36",0,2,0,1,"Non-communicable","White","Female","Alabama",1970,"East South Central","South","AL",40.8654278312968,43.0695069779529,45.2105851945313,43.0727134624133
+"37",0,2,1,0,"All other causes","Black","Male","Alabama",1970,"East South Central","South","AL",328.897811975665,342.202405287165,356.120256575589,342.270931081483
+"38",0,2,1,0,"Cancers","Black","Male","Alabama",1970,"East South Central","South","AL",232.098134137784,241.73235986812,251.261190339392,241.684947160671
+"39",0,2,1,0,"Cardiovascular","Black","Male","Alabama",1970,"East South Central","South","AL",845.07466441006,869.348207704506,894.702066861938,869.268291348523
+"40",0,2,1,0,"Communicable","Black","Male","Alabama",1970,"East South Central","South","AL",97.0702650704952,104.963226689312,113.05045519968,105.023161575613
+"41",0,2,1,0,"Injuries","Black","Male","Alabama",1970,"East South Central","South","AL",240.28375886407,251.566819215529,262.263063172262,251.433114777605
+"42",0,2,1,0,"Non-communicable","Black","Male","Alabama",1970,"East South Central","South","AL",87.8519335407987,93.657634959408,99.5439716598021,93.6429222782686
+"43",0,2,1,1,"All other causes","Black","Female","Alabama",1970,"East South Central","South","AL",229.949950580086,238.319300138455,248.533645116626,238.723638729698
+"44",0,2,1,1,"Cancers","Black","Female","Alabama",1970,"East South Central","South","AL",154.976676002447,161.174335219456,167.437399462086,161.133049200855
+"45",0,2,1,1,"Cardiovascular","Black","Female","Alabama",1970,"East South Central","South","AL",674.445120549728,694.465220498796,716.514351563624,694.411364657599
+"46",0,2,1,1,"Communicable","Black","Female","Alabama",1970,"East South Central","South","AL",46.0237820671506,49.969729621233,54.1808643909735,49.9946727690614
+"47",0,2,1,1,"Injuries","Black","Female","Alabama",1970,"East South Central","South","AL",60.6590606649517,64.5415574572619,68.7689431260779,64.632894123602
+"48",0,2,1,1,"Non-communicable","Black","Female","Alabama",1970,"East South Central","South","AL",73.1365621817168,78.1245698488175,83.0478671890659,78.1004114814954
+"49",0,3,0,0,"All other causes","White","Male","Alabama",1971,"East South Central","South","AL",176.521776051543,182.577316291577,188.859717688497,182.590199201739
+"50",0,3,0,0,"Cancers","White","Male","Alabama",1971,"East South Central","South","AL",230.40795160195,236.528045119598,242.238263010472,236.455412732063
+"51",0,3,0,0,"Cardiovascular","White","Male","Alabama",1971,"East South Central","South","AL",897.322291891115,915.514121807583,935.081342124756,915.48371097848
+"52",0,3,0,0,"Communicable","White","Male","Alabama",1971,"East South Central","South","AL",60.3840401036575,64.6877798433883,69.3722561118424,64.6988115417679
+"53",0,3,0,0,"Injuries","White","Male","Alabama",1971,"East South Central","South","AL",143.89804944152,147.851632539598,152.250259503243,147.931576368536
+"54",0,3,0,0,"Non-communicable","White","Male","Alabama",1971,"East South Central","South","AL",89.6166436446772,93.4055756152967,97.2690860426777,93.3878763498675
+"55",0,3,0,1,"All other causes","White","Female","Alabama",1971,"East South Central","South","AL",108.042286694215,112.11492179745,116.085571576643,112.115967580638
+"56",0,3,0,1,"Cancers","White","Female","Alabama",1971,"East South Central","South","AL",136.136603738965,139.554172298892,143.053927201678,139.548343286152
+"57",0,3,0,1,"Cardiovascular","White","Female","Alabama",1971,"East South Central","South","AL",532.871659790727,545.361470679329,556.672743451614,545.339962768976
+"58",0,3,0,1,"Communicable","White","Female","Alabama",1971,"East South Central","South","AL",33.8040936182341,36.2206492812673,38.6982975755305,36.2155392187372
+"59",0,3,0,1,"Injuries","White","Female","Alabama",1971,"East South Central","South","AL",48.5564189496972,50.4411104742418,52.5748535720658,50.4725768566777
+"60",0,3,0,1,"Non-communicable","White","Female","Alabama",1971,"East South Central","South","AL",40.565052238022,42.5807076479118,44.5560124578064,42.5705959790494
+"61",0,3,1,0,"All other causes","Black","Male","Alabama",1971,"East South Central","South","AL",326.037135301213,339.637769903537,352.466632037101,339.731042379883
+"62",0,3,1,0,"Cancers","Black","Male","Alabama",1971,"East South Central","South","AL",237.141950516525,247.122984578547,256.962817170776,247.255947724152
+"63",0,3,1,0,"Cardiovascular","Black","Male","Alabama",1971,"East South Central","South","AL",836.525477016889,859.124009184514,880.529319786546,858.864748025726
+"64",0,3,1,0,"Communicable","Black","Male","Alabama",1971,"East South Central","South","AL",86.8886813765126,93.3253802407189,100.2586250555,93.4578578398579
+"65",0,3,1,0,"Injuries","Black","Male","Alabama",1971,"East South Central","South","AL",241.603546267886,252.309250609969,263.280022130345,252.259832659634
+"66",0,3,1,0,"Non-communicable","Black","Male","Alabama",1971,"East South Central","South","AL",89.3157146011055,94.8457673093956,100.261076893999,94.75467521841
+"67",0,3,1,1,"All other causes","Black","Female","Alabama",1971,"East South Central","South","AL",220.304604063005,228.792430146302,238.399016628774,228.85949857345
+"68",0,3,1,1,"Cancers","Black","Female","Alabama",1971,"East South Central","South","AL",155.103004971189,161.078894056754,167.124221893009,161.039388801277
+"69",0,3,1,1,"Cardiovascular","Black","Female","Alabama",1971,"East South Central","South","AL",637.165827540402,655.235250795556,675.327350212122,655.39094068027
+"70",0,3,1,1,"Communicable","Black","Female","Alabama",1971,"East South Central","South","AL",44.2133475338146,47.7804964388916,51.7602395806142,47.8682889119026
+"71",0,3,1,1,"Injuries","Black","Female","Alabama",1971,"East South Central","South","AL",60.1688199856793,63.8796252274846,67.3629906472102,63.8263278700565
+"72",0,3,1,1,"Non-communicable","Black","Female","Alabama",1971,"East South Central","South","AL",74.3626671522459,78.7007580906714,83.1672465525321,78.648682355138
+"73",0,4,0,0,"All other causes","White","Male","Alabama",1972,"East South Central","South","AL",175.329005510485,180.958439915959,187.168980065641,181.053762053519
+"74",0,4,0,0,"Cancers","White","Male","Alabama",1972,"East South Central","South","AL",234.825453165854,239.985158272877,246.070893522695,240.07260711908
+"75",0,4,0,0,"Cardiovascular","White","Male","Alabama",1972,"East South Central","South","AL",885.869539371443,905.087130823405,922.548781075123,905.03583177176
+"76",0,4,0,0,"Communicable","White","Male","Alabama",1972,"East South Central","South","AL",61.1169336978597,65.5094448698678,69.9564408471602,65.5978868013787
+"77",0,4,0,0,"Injuries","White","Male","Alabama",1972,"East South Central","South","AL",142.341759498142,146.134232116972,150.32953062549,146.199132558458
+"78",0,4,0,0,"Non-communicable","White","Male","Alabama",1972,"East South Central","South","AL",91.9418727834858,95.4440366749124,99.0794898674896,95.4812171631031
+"79",0,4,0,1,"All other causes","White","Female","Alabama",1972,"East South Central","South","AL",107.646929655566,111.130805137058,115.000851199553,111.198328709148
+"80",0,4,0,1,"Cancers","White","Female","Alabama",1972,"East South Central","South","AL",137.3540565604,140.515220415164,143.937284738045,140.532286475613
+"81",0,4,0,1,"Cardiovascular","White","Female","Alabama",1972,"East South Central","South","AL",523.66464941908,535.588683736296,546.279657573014,535.409717964051
+"82",0,4,0,1,"Communicable","White","Female","Alabama",1972,"East South Central","South","AL",32.749572470369,34.9906801918341,37.5918769742935,35.0703881301141
+"83",0,4,0,1,"Injuries","White","Female","Alabama",1972,"East South Central","South","AL",47.9462386331898,49.8231766597746,51.6616804533836,49.7957633556077
+"84",0,4,0,1,"Non-communicable","White","Female","Alabama",1972,"East South Central","South","AL",40.8995925686139,42.9105602236232,45.0399756419937,42.9365191784836
+"85",0,4,1,0,"All other causes","Black","Male","Alabama",1972,"East South Central","South","AL",332.060611840862,345.747538073818,357.648840506448,345.618202078643
+"86",0,4,1,0,"Cancers","Black","Male","Alabama",1972,"East South Central","South","AL",241.929800362666,252.208559576477,262.036222757266,252.034894119149
+"87",0,4,1,0,"Cardiovascular","Black","Male","Alabama",1972,"East South Central","South","AL",834.217898722701,856.985530992603,879.490920903277,856.741200613546
+"88",0,4,1,0,"Communicable","Black","Male","Alabama",1972,"East South Central","South","AL",83.3664943944765,89.6239911300751,96.1036865297234,89.5832755949444
+"89",0,4,1,0,"Injuries","Black","Male","Alabama",1972,"East South Central","South","AL",237.210474681879,246.842888643988,257.318513123238,246.91407461812
+"90",0,4,1,0,"Non-communicable","Black","Male","Alabama",1972,"East South Central","South","AL",91.6843428380787,97.0158672111386,102.426681288986,97.0204470598164
+"91",0,4,1,1,"All other causes","Black","Female","Alabama",1972,"East South Central","South","AL",220.988300194983,229.621333920398,238.264229914984,229.578678282136
+"92",0,4,1,1,"Cancers","Black","Female","Alabama",1972,"East South Central","South","AL",155.175068876556,160.453712297694,166.587364659148,160.54328915463
+"93",0,4,1,1,"Cardiovascular","Black","Female","Alabama",1972,"East South Central","South","AL",616.239335165519,634.36857576973,653.021420081526,634.617690604086
+"94",0,4,1,1,"Communicable","Black","Female","Alabama",1972,"East South Central","South","AL",42.9723057160818,46.3217596761281,50.2699817491737,46.3255991603548
+"95",0,4,1,1,"Injuries","Black","Female","Alabama",1972,"East South Central","South","AL",59.0317062605383,62.3460750209536,65.9808547874186,62.3473020886359
+"96",0,4,1,1,"Non-communicable","Black","Female","Alabama",1972,"East South Central","South","AL",75.41691775538,79.8250470723613,84.4185558477319,79.877343829866
+"97",0,5,0,0,"All other causes","White","Male","Alabama",1973,"East South Central","South","AL",177.292938007513,182.921260803706,189.166921807525,182.968560329837
+"98",0,5,0,0,"Cancers","White","Male","Alabama",1973,"East South Central","South","AL",236.043557417098,241.386761943603,246.93969767609,241.492506407629
+"99",0,5,0,0,"Cardiovascular","White","Male","Alabama",1973,"East South Central","South","AL",876.132195984171,893.769583974866,910.986658734393,894.019055329186
+"100",0,5,0,0,"Communicable","White","Male","Alabama",1973,"East South Central","South","AL",59.1635770795172,63.8057947576628,68.1960007370549,63.7668866841721
+"101",0,5,0,0,"Injuries","White","Male","Alabama",1973,"East South Central","South","AL",139.73388769391,143.598300971684,147.567498563718,143.610359360225
+"102",0,5,0,0,"Non-communicable","White","Male","Alabama",1973,"East South Central","South","AL",94.1148864097145,97.6809139760818,101.221508361795,97.6200062383121
+"103",0,5,0,1,"All other causes","White","Female","Alabama",1973,"East South Central","South","AL",107.433166189082,111.075290935101,115.058048699211,111.176399253101
+"104",0,5,0,1,"Cancers","White","Female","Alabama",1973,"East South Central","South","AL",138.3269664957,141.455085135817,145.062673134967,141.433944500952
+"105",0,5,0,1,"Cardiovascular","White","Female","Alabama",1973,"East South Central","South","AL",518.205226806384,529.147905678338,540.64090412053,529.318285016643
+"106",0,5,0,1,"Communicable","White","Female","Alabama",1973,"East South Central","South","AL",31.6568244341002,33.8668347167676,36.0962727192071,33.8678453809978
+"107",0,5,0,1,"Injuries","White","Female","Alabama",1973,"East South Central","South","AL",46.8394836923834,48.6067144989564,50.3921116003271,48.610230186935
+"108",0,5,0,1,"Non-communicable","White","Female","Alabama",1973,"East South Central","South","AL",41.6292509653756,43.6080283919723,45.6774870614112,43.6302638865659
+"109",0,5,1,0,"All other causes","Black","Male","Alabama",1973,"East South Central","South","AL",335.542345131206,349.16607908757,361.590649318519,348.785947049347
+"110",0,5,1,0,"Cancers","Black","Male","Alabama",1973,"East South Central","South","AL",249.33948094716,259.209708236723,269.344849829254,259.311807404141
+"111",0,5,1,0,"Cardiovascular","Black","Male","Alabama",1973,"East South Central","South","AL",830.961670137766,853.922801708706,877.268876046436,853.977428735323
+"112",0,5,1,0,"Communicable","Black","Male","Alabama",1973,"East South Central","South","AL",78.3667234522857,84.7551331386859,91.5600793537326,84.9128998301854
+"113",0,5,1,0,"Injuries","Black","Male","Alabama",1973,"East South Central","South","AL",233.552647151824,243.050313202004,253.100360341455,243.006327910903
+"114",0,5,1,0,"Non-communicable","Black","Male","Alabama",1973,"East South Central","South","AL",93.7087521749816,98.9902507163384,103.99933640226,98.9711096636443
+"115",0,5,1,1,"All other causes","Black","Female","Alabama",1973,"East South Central","South","AL",220.477963208671,228.97039171274,237.840910256484,229.05464186648
+"116",0,5,1,1,"Cancers","Black","Female","Alabama",1973,"East South Central","South","AL",154.740930951475,159.703074486712,165.583051562592,159.891197557385
+"117",0,5,1,1,"Cardiovascular","Black","Female","Alabama",1973,"East South Central","South","AL",602.508693575888,620.48459768219,638.142352324429,620.55290234803
+"118",0,5,1,1,"Communicable","Black","Female","Alabama",1973,"East South Central","South","AL",40.2137652808413,43.4782486073903,47.1914419357879,43.5541793718565
+"119",0,5,1,1,"Injuries","Black","Female","Alabama",1973,"East South Central","South","AL",57.0921447598505,60.4303317174501,63.9904640255781,60.4633162213618
+"120",0,5,1,1,"Non-communicable","Black","Female","Alabama",1973,"East South Central","South","AL",76.0297512038954,80.2423507283784,84.6781738361007,80.3099652489324
+"121",0,6,0,0,"All other causes","White","Male","Alabama",1974,"East South Central","South","AL",174.398980973785,179.855218975475,185.684168055387,179.879253071159
+"122",0,6,0,0,"Cancers","White","Male","Alabama",1974,"East South Central","South","AL",238.784086111361,244.24155304433,250.165540114437,244.285350849977
+"123",0,6,0,0,"Cardiovascular","White","Male","Alabama",1974,"East South Central","South","AL",837.758854364414,854.804001867125,871.97641550525,854.738848035865
+"124",0,6,0,0,"Communicable","White","Male","Alabama",1974,"East South Central","South","AL",53.3395633345107,57.7693117466626,62.1946559561693,57.7553879701938
+"125",0,6,0,0,"Injuries","White","Male","Alabama",1974,"East South Central","South","AL",135.069858532567,139.006502036196,143.04627753567,138.966661058369
+"126",0,6,0,0,"Non-communicable","White","Male","Alabama",1974,"East South Central","South","AL",93.4745324406165,97.1079644930498,100.690847313932,97.1179907062138
+"127",0,6,0,1,"All other causes","White","Female","Alabama",1974,"East South Central","South","AL",108.081594216421,111.802045040105,115.61088855507,111.831648900855
+"128",0,6,0,1,"Cancers","White","Female","Alabama",1974,"East South Central","South","AL",138.853988814173,142.036737146681,145.212271985102,141.994922540899
+"129",0,6,0,1,"Cardiovascular","White","Female","Alabama",1974,"East South Central","South","AL",489.793116526654,500.117935458011,510.220216729513,500.110423049582
+"130",0,6,0,1,"Communicable","White","Female","Alabama",1974,"East South Central","South","AL",30.0246102586898,32.1329172391047,34.5556126394448,32.2025431223334
+"131",0,6,0,1,"Injuries","White","Female","Alabama",1974,"East South Central","South","AL",45.0238401567422,46.8032474098078,48.7685604992197,46.8449123607547
+"132",0,6,0,1,"Non-communicable","White","Female","Alabama",1974,"East South Central","South","AL",41.9369463079683,43.96187053395,45.9742527639785,43.9551717318629
+"133",0,6,1,0,"All other causes","Black","Male","Alabama",1974,"East South Central","South","AL",334.437606887465,346.557176322297,358.734894501916,346.553324234838
+"134",0,6,1,0,"Cancers","Black","Male","Alabama",1974,"East South Central","South","AL",255.189035751843,264.707458772827,274.342122363965,264.900585901202
+"135",0,6,1,0,"Cardiovascular","Black","Male","Alabama",1974,"East South Central","South","AL",797.196101570521,818.448250804226,841.038248888481,818.778004321228
+"136",0,6,1,0,"Communicable","Black","Male","Alabama",1974,"East South Central","South","AL",71.0452458716768,76.903750200808,82.7001654098166,76.9369821946758
+"137",0,6,1,0,"Injuries","Black","Male","Alabama",1974,"East South Central","South","AL",225.458286464645,235.26355527225,245.396310679028,235.264099563642
+"138",0,6,1,0,"Non-communicable","Black","Male","Alabama",1974,"East South Central","South","AL",94.7602490874858,100.120884563925,105.681003344585,100.158812785355
+"139",0,6,1,1,"All other causes","Black","Female","Alabama",1974,"East South Central","South","AL",215.80913353044,224.292356516509,233.366923068599,224.384973899806
+"140",0,6,1,1,"Cancers","Black","Female","Alabama",1974,"East South Central","South","AL",155.045590017575,160.429691334556,165.77524294669,160.44101194773
+"141",0,6,1,1,"Cardiovascular","Black","Female","Alabama",1974,"East South Central","South","AL",561.045834352097,578.215359213152,595.42723869573,578.11132883086
+"142",0,6,1,1,"Communicable","Black","Female","Alabama",1974,"East South Central","South","AL",37.8301469830648,40.950709628593,44.2887258125039,40.9690430122925
+"143",0,6,1,1,"Injuries","Black","Female","Alabama",1974,"East South Central","South","AL",56.1076845936778,59.1637798223049,62.4117680501927,59.131653389569
+"144",0,6,1,1,"Non-communicable","Black","Female","Alabama",1974,"East South Central","South","AL",75.1765914132559,79.0366678727523,83.330547368781,79.1328018964169
+"145",0,7,0,0,"All other causes","White","Male","Alabama",1975,"East South Central","South","AL",171.25018839092,176.331807631713,182.245517447786,176.482199684292
+"146",0,7,0,0,"Cancers","White","Male","Alabama",1975,"East South Central","South","AL",242.27855504884,247.825588221602,253.690069807791,247.874564939792
+"147",0,7,0,0,"Cardiovascular","White","Male","Alabama",1975,"East South Central","South","AL",779.415203650235,796.382408661155,811.702616332308,796.290770379176
+"148",0,7,0,0,"Communicable","White","Male","Alabama",1975,"East South Central","South","AL",52.302312267394,56.2303344399247,60.4115459154387,56.2507003717728
+"149",0,7,0,0,"Injuries","White","Male","Alabama",1975,"East South Central","South","AL",131.037272089405,134.974915376463,138.6054664245,134.943587739452
+"150",0,7,0,0,"Non-communicable","White","Male","Alabama",1975,"East South Central","South","AL",94.2417739982482,97.7079399695876,101.113230371636,97.7104208693576
+"151",0,7,0,1,"All other causes","White","Female","Alabama",1975,"East South Central","South","AL",105.587026696705,109.252672434444,112.987097638154,109.322866689026
+"152",0,7,0,1,"Cancers","White","Female","Alabama",1975,"East South Central","South","AL",138.919067775591,142.079732613816,145.14235218109,142.068370518765
+"153",0,7,0,1,"Cardiovascular","White","Female","Alabama",1975,"East South Central","South","AL",462.739720850717,473.08502428581,483.013989324806,472.935246400718
+"154",0,7,0,1,"Communicable","White","Female","Alabama",1975,"East South Central","South","AL",28.65120001904,30.7031427028065,32.7161768927982,30.7003512857471
+"155",0,7,0,1,"Injuries","White","Female","Alabama",1975,"East South Central","South","AL",43.5093576775283,45.1103222811341,46.8972704088853,45.1350542136779
+"156",0,7,0,1,"Non-communicable","White","Female","Alabama",1975,"East South Central","South","AL",41.2178201149712,43.2680155888051,45.2360709626684,43.2820066819943
+"157",0,7,1,0,"All other causes","Black","Male","Alabama",1975,"East South Central","South","AL",333.415824240423,345.610084310523,359.410448429274,345.743353320018
+"158",0,7,1,0,"Cancers","Black","Male","Alabama",1975,"East South Central","South","AL",261.33544100162,270.74450313366,279.896408788603,270.725932003576
+"159",0,7,1,0,"Cardiovascular","Black","Male","Alabama",1975,"East South Central","South","AL",756.813420869453,779.214758559995,801.672088809647,779.410562272112
+"160",0,7,1,0,"Communicable","Black","Male","Alabama",1975,"East South Central","South","AL",70.1874749195255,75.77241370565,82.0057277928623,75.8801955647142
+"161",0,7,1,0,"Injuries","Black","Male","Alabama",1975,"East South Central","South","AL",219.815653119119,229.207621610468,239.361846601043,229.33749336796
+"162",0,7,1,0,"Non-communicable","Black","Male","Alabama",1975,"East South Central","South","AL",95.5438763495407,100.797456274345,106.11026306318,100.783349547036
+"163",0,7,1,1,"All other causes","Black","Female","Alabama",1975,"East South Central","South","AL",217.883540129291,226.033600673144,234.674576265854,226.138393264041
+"164",0,7,1,1,"Cancers","Black","Female","Alabama",1975,"East South Central","South","AL",156.720769551166,162.066607761617,167.484136547303,162.084388318035
+"165",0,7,1,1,"Cardiovascular","Black","Female","Alabama",1975,"East South Central","South","AL",521.637277068275,537.798249952965,553.637231953389,537.916244120339
+"166",0,7,1,1,"Communicable","Black","Female","Alabama",1975,"East South Central","South","AL",35.8768754385947,38.8141772754613,41.9442970694219,38.7883215278995
+"167",0,7,1,1,"Injuries","Black","Female","Alabama",1975,"East South Central","South","AL",54.5675330675273,57.81829652082,60.9252366675204,57.8077678186629
+"168",0,7,1,1,"Non-communicable","Black","Female","Alabama",1975,"East South Central","South","AL",74.3075421689662,78.1656167441038,82.724982505496,78.2317671643997
+"169",0,8,0,0,"All other causes","White","Male","Alabama",1976,"East South Central","South","AL",171.698595659548,177.469771409405,183.071018703785,177.43094491323
+"170",0,8,0,0,"Cancers","White","Male","Alabama",1976,"East South Central","South","AL",244.927686947638,250.223936451378,255.647099931373,250.233109264151
+"171",0,8,0,0,"Cardiovascular","White","Male","Alabama",1976,"East South Central","South","AL",762.680526743848,777.401404982888,793.608323849551,777.599106040387
+"172",0,8,0,0,"Communicable","White","Male","Alabama",1976,"East South Central","South","AL",53.1931777793799,57.4608087158083,62.1989980813301,57.4840707515512
+"173",0,8,0,0,"Injuries","White","Male","Alabama",1976,"East South Central","South","AL",127.180381029522,130.902280898933,134.524051220164,130.898895078214
+"174",0,8,0,0,"Non-communicable","White","Male","Alabama",1976,"East South Central","South","AL",95.6627941906727,99.2464555850741,102.754467250651,99.1617934438393
+"175",0,8,0,1,"All other causes","White","Female","Alabama",1976,"East South Central","South","AL",104.500251906995,107.961608752834,111.613494553461,107.996676877137
+"176",0,8,0,1,"Cancers","White","Female","Alabama",1976,"East South Central","South","AL",139.189552225945,142.446602131913,145.404658341717,142.37889257362
+"177",0,8,0,1,"Cardiovascular","White","Female","Alabama",1976,"East South Central","South","AL",451.236762850589,462.717649994688,471.487473685259,462.509346315377
+"178",0,8,0,1,"Communicable","White","Female","Alabama",1976,"East South Central","South","AL",29.6016912484596,31.5712871551023,33.767414638338,31.5791216218713
+"179",0,8,0,1,"Injuries","White","Female","Alabama",1976,"East South Central","South","AL",42.6367622598364,44.3641611496788,46.069542686161,44.3435132866585
+"180",0,8,0,1,"Non-communicable","White","Female","Alabama",1976,"East South Central","South","AL",41.4254271178253,43.2400122517329,45.1660722826469,43.2696626290518
+"181",0,8,1,0,"All other causes","Black","Male","Alabama",1976,"East South Central","South","AL",334.856848736467,347.291466308717,359.947945221903,347.449392942105
+"182",0,8,1,0,"Cancers","Black","Male","Alabama",1976,"East South Central","South","AL",273.131830029237,282.525392032176,293.241975670973,282.626886278979
+"183",0,8,1,0,"Cardiovascular","Black","Male","Alabama",1976,"East South Central","South","AL",738.38129244423,759.588691469058,779.79141139667,759.637888138804
+"184",0,8,1,0,"Communicable","Black","Male","Alabama",1976,"East South Central","South","AL",68.2185956346144,74.0336740945081,80.1553778235582,74.0849084496248
+"185",0,8,1,0,"Injuries","Black","Male","Alabama",1976,"East South Central","South","AL",215.529903975644,224.601572270787,233.820692050053,224.624649297983
+"186",0,8,1,0,"Non-communicable","Black","Male","Alabama",1976,"East South Central","South","AL",95.9832162266657,101.488965568757,106.66626510804,101.506332645513
+"187",0,8,1,1,"All other causes","Black","Female","Alabama",1976,"East South Central","South","AL",218.117636695361,226.448646443886,235.537429796948,226.515977724705
+"188",0,8,1,1,"Cancers","Black","Female","Alabama",1976,"East South Central","South","AL",158.995111153039,164.457557161578,169.592235447468,164.401768899513
+"189",0,8,1,1,"Cardiovascular","Black","Female","Alabama",1976,"East South Central","South","AL",513.788183923386,530.883782939259,546.142484080237,530.567015972145
+"190",0,8,1,1,"Communicable","Black","Female","Alabama",1976,"East South Central","South","AL",34.8459691927184,37.7219618398613,41.104301503429,37.7842044268252
+"191",0,8,1,1,"Injuries","Black","Female","Alabama",1976,"East South Central","South","AL",53.7005140178934,56.5438783425265,59.5368282961741,56.5523500501858
+"192",0,8,1,1,"Non-communicable","Black","Female","Alabama",1976,"East South Central","South","AL",72.1449639984318,76.416586391567,80.5283916683093,76.4561215769668
+"193",0,9,0,0,"All other causes","White","Male","Alabama",1977,"East South Central","South","AL",170.051149071919,175.597593582957,181.256942100696,175.616959470266
+"194",0,9,0,0,"Cancers","White","Male","Alabama",1977,"East South Central","South","AL",249.689589708109,254.892711848187,260.630786607789,254.909865204054
+"195",0,9,0,0,"Cardiovascular","White","Male","Alabama",1977,"East South Central","South","AL",738.279357776947,753.244146404488,768.420758923365,753.392067407648
+"196",0,9,0,0,"Communicable","White","Male","Alabama",1977,"East South Central","South","AL",52.4018804745555,56.5516680651222,60.7828690989888,56.5112149441161
+"197",0,9,0,0,"Injuries","White","Male","Alabama",1977,"East South Central","South","AL",126.41269440336,129.80612525813,133.361346350416,129.798681714025
+"198",0,9,0,0,"Non-communicable","White","Male","Alabama",1977,"East South Central","South","AL",97.6794965164279,101.184185182517,105.161072705786,101.218762736106
+"199",0,9,0,1,"All other causes","White","Female","Alabama",1977,"East South Central","South","AL",102.571793406444,106.326109072884,109.792241841023,106.266871061743
+"200",0,9,0,1,"Cancers","White","Female","Alabama",1977,"East South Central","South","AL",139.877776770458,143.070776542837,146.312693386732,143.068314523043
+"201",0,9,0,1,"Cardiovascular","White","Female","Alabama",1977,"East South Central","South","AL",436.730108874162,446.376579994817,456.06426716004,446.433506877572
+"202",0,9,0,1,"Communicable","White","Female","Alabama",1977,"East South Central","South","AL",30.6978418471359,32.6025550115449,34.9385822689333,32.6571150910678
+"203",0,9,0,1,"Injuries","White","Female","Alabama",1977,"East South Central","South","AL",42.2172928291099,43.8801071515722,45.547712230391,43.8716872424406
+"204",0,9,0,1,"Non-communicable","White","Female","Alabama",1977,"East South Central","South","AL",41.3077133713081,43.3071129732271,45.2240296566295,43.3310316740944
+"205",0,9,1,0,"All other causes","Black","Male","Alabama",1977,"East South Central","South","AL",331.829986467609,344.362180014627,357.579091341058,344.355705867592
+"206",0,9,1,0,"Cancers","Black","Male","Alabama",1977,"East South Central","South","AL",284.920861093654,294.85686659177,306.029271709044,295.07471183981
+"207",0,9,1,0,"Cardiovascular","Black","Male","Alabama",1977,"East South Central","South","AL",724.07213192671,745.555809068661,766.853572929125,745.703664716591
+"208",0,9,1,0,"Communicable","Black","Male","Alabama",1977,"East South Central","South","AL",67.6224963595579,73.4816030778437,79.783701956724,73.561340498051
+"209",0,9,1,0,"Injuries","Black","Male","Alabama",1977,"East South Central","South","AL",211.445559742917,220.082121856418,228.691571207325,219.920664594821
+"210",0,9,1,0,"Non-communicable","Black","Male","Alabama",1977,"East South Central","South","AL",97.393262503688,102.877446513579,108.554504025614,102.869336265668
+"211",0,9,1,1,"All other causes","Black","Female","Alabama",1977,"East South Central","South","AL",212.564371947774,220.797406398214,229.044799037051,220.75837538982
+"212",0,9,1,1,"Cancers","Black","Female","Alabama",1977,"East South Central","South","AL",161.430351428962,166.789189040078,172.145711562156,166.728480222581
+"213",0,9,1,1,"Cardiovascular","Black","Female","Alabama",1977,"East South Central","South","AL",502.930144460117,517.781358759599,533.911415522484,517.768755003511
+"214",0,9,1,1,"Communicable","Black","Female","Alabama",1977,"East South Central","South","AL",33.5514385221659,36.4197317397174,39.3808194170944,36.4022232510243
+"215",0,9,1,1,"Injuries","Black","Female","Alabama",1977,"East South Central","South","AL",51.8875578526979,54.8435968225178,57.4812572329369,54.7916532208596
+"216",0,9,1,1,"Non-communicable","Black","Female","Alabama",1977,"East South Central","South","AL",71.351233853274,75.2711979016659,79.627835874733,75.3133153549366
+"217",0,10,0,0,"All other causes","White","Male","Alabama",1978,"East South Central","South","AL",163.985312621956,169.472999831668,174.840596699257,169.439911718216
+"218",0,10,0,0,"Cancers","White","Male","Alabama",1978,"East South Central","South","AL",251.887419849967,257.668122179042,263.478840572797,257.653859663609
+"219",0,10,0,0,"Cardiovascular","White","Male","Alabama",1978,"East South Central","South","AL",714.735339453917,729.665441571423,745.429559423917,729.478076028339
+"220",0,10,0,0,"Communicable","White","Male","Alabama",1978,"East South Central","South","AL",53.5358347810254,57.8809368016261,62.3103609100491,57.8649221407551
+"221",0,10,0,0,"Injuries","White","Male","Alabama",1978,"East South Central","South","AL",125.012655119233,128.373339416424,131.935729107921,128.36836310088
+"222",0,10,0,0,"Non-communicable","White","Male","Alabama",1978,"East South Central","South","AL",98.1603914248553,102.03312796111,105.774853376308,101.944653641696
+"223",0,10,0,1,"All other causes","White","Female","Alabama",1978,"East South Central","South","AL",101.643798161445,104.89848760568,108.269611404625,104.944027075593
+"224",0,10,0,1,"Cancers","White","Female","Alabama",1978,"East South Central","South","AL",141.314695942629,144.572087174456,147.563861444892,144.503666109874
+"225",0,10,0,1,"Cardiovascular","White","Female","Alabama",1978,"East South Central","South","AL",427.140076946062,436.555288416969,445.915402520075,436.612391119232
+"226",0,10,0,1,"Communicable","White","Female","Alabama",1978,"East South Central","South","AL",29.5459008420496,31.4558829836001,33.5472601210204,31.465736806627
+"227",0,10,0,1,"Injuries","White","Female","Alabama",1978,"East South Central","South","AL",41.0904032422219,42.7276332758487,44.3704093370389,42.6904794418092
+"228",0,10,0,1,"Non-communicable","White","Female","Alabama",1978,"East South Central","South","AL",42.2441195100042,44.1701119612894,46.1438247589811,44.1738432352121
+"229",0,10,1,0,"All other causes","Black","Male","Alabama",1978,"East South Central","South","AL",322.249540673564,334.584554920178,347.348837932791,334.728310935021
+"230",0,10,1,0,"Cancers","Black","Male","Alabama",1978,"East South Central","South","AL",296.009804639231,306.912948468793,317.991542780131,307.127929729335
+"231",0,10,1,0,"Cardiovascular","Black","Male","Alabama",1978,"East South Central","South","AL",711.239550713657,730.470326884851,751.302626790415,730.623592124269
+"232",0,10,1,0,"Communicable","Black","Male","Alabama",1978,"East South Central","South","AL",63.7872392618078,69.8675398230134,75.6220526175707,69.8339774013955
+"233",0,10,1,0,"Injuries","Black","Male","Alabama",1978,"East South Central","South","AL",203.381160915034,211.972162182997,221.192294567771,211.999791483473
+"234",0,10,1,0,"Non-communicable","Black","Male","Alabama",1978,"East South Central","South","AL",99.3042434987704,104.629302033829,110.369798832586,104.57222129615
+"235",0,10,1,1,"All other causes","Black","Female","Alabama",1978,"East South Central","South","AL",204.6474880407,212.469644980819,220.246413482144,212.51193857537
+"236",0,10,1,1,"Cancers","Black","Female","Alabama",1978,"East South Central","South","AL",164.119624056125,169.740833382791,174.946556091208,169.710703311308
+"237",0,10,1,1,"Cardiovascular","Black","Female","Alabama",1978,"East South Central","South","AL",487.309071139637,502.340631610519,517.693762633512,502.211357925589
+"238",0,10,1,1,"Communicable","Black","Female","Alabama",1978,"East South Central","South","AL",32.453411920037,35.4280150279437,38.3476806541158,35.4940444235149
+"239",0,10,1,1,"Injuries","Black","Female","Alabama",1978,"East South Central","South","AL",50.065344401419,52.6866248973626,55.394154256764,52.7296359018492
+"240",0,10,1,1,"Non-communicable","Black","Female","Alabama",1978,"East South Central","South","AL",69.5035056949301,73.4052515478008,77.5492561657389,73.4409288062207
+"241",0,11,0,0,"All other causes","White","Male","Alabama",1979,"East South Central","South","AL",163.165618445231,168.430120307184,174.223312152172,168.46814159175
+"242",0,11,0,0,"Cancers","White","Male","Alabama",1979,"East South Central","South","AL",256.677244394027,262.472122062753,268.27793095325,262.283244846035
+"243",0,11,0,0,"Cardiovascular","White","Male","Alabama",1979,"East South Central","South","AL",696.815230224193,710.925200640824,725.570107103563,710.893829777496
+"244",0,11,0,0,"Communicable","White","Male","Alabama",1979,"East South Central","South","AL",46.7837864837401,50.7067062989026,55.001077988992,50.8216319924758
+"245",0,11,0,0,"Injuries","White","Male","Alabama",1979,"East South Central","South","AL",121.272537681814,124.644039955433,127.88244067218,124.614116680441
+"246",0,11,0,0,"Non-communicable","White","Male","Alabama",1979,"East South Central","South","AL",99.8498724411116,103.4391914714,107.303897120353,103.495750773257
+"247",0,11,0,1,"All other causes","White","Female","Alabama",1979,"East South Central","South","AL",101.248079327303,104.571908415416,107.971095845884,104.656793000239
+"248",0,11,0,1,"Cancers","White","Female","Alabama",1979,"East South Central","South","AL",142.839128529259,145.851752163232,148.851636548387,145.846911702482
+"249",0,11,0,1,"Cardiovascular","White","Female","Alabama",1979,"East South Central","South","AL",418.357800564544,427.458007531098,437.14510271614,427.46699183145
+"250",0,11,0,1,"Communicable","White","Female","Alabama",1979,"East South Central","South","AL",26.2107507616703,28.021382914107,29.8909924700144,28.0160196493572
+"251",0,11,0,1,"Injuries","White","Female","Alabama",1979,"East South Central","South","AL",39.968817597292,41.4770023013184,43.1353528569164,41.4864910135197
+"252",0,11,0,1,"Non-communicable","White","Female","Alabama",1979,"East South Central","South","AL",42.9794804755825,44.8520788681189,46.7571465576106,44.8896235318367
+"253",0,11,1,0,"All other causes","Black","Male","Alabama",1979,"East South Central","South","AL",309.836604484726,321.165862578119,333.247839273342,321.364002162201
+"254",0,11,1,0,"Cancers","Black","Male","Alabama",1979,"East South Central","South","AL",304.993739383141,315.900248926253,327.235693834239,315.872764220028
+"255",0,11,1,0,"Cardiovascular","Black","Male","Alabama",1979,"East South Central","South","AL",692.12408457541,710.645893782033,730.57432579612,711.066089927447
+"256",0,11,1,0,"Communicable","Black","Male","Alabama",1979,"East South Central","South","AL",59.8602665859744,65.8133086757011,71.8852585855044,65.8119737683624
+"257",0,11,1,0,"Injuries","Black","Male","Alabama",1979,"East South Central","South","AL",196.879036341361,205.328145491597,214.515744118898,205.301920523646
+"258",0,11,1,0,"Non-communicable","Black","Male","Alabama",1979,"East South Central","South","AL",100.732802679732,106.477199059734,111.818791451137,106.401704356235
+"259",0,11,1,1,"All other causes","Black","Female","Alabama",1979,"East South Central","South","AL",199.866044097374,207.515387587297,215.569229490347,207.669029115074
+"260",0,11,1,1,"Cancers","Black","Female","Alabama",1979,"East South Central","South","AL",166.348966358879,171.930066579345,177.515440689485,171.914454912498
+"261",0,11,1,1,"Cardiovascular","Black","Female","Alabama",1979,"East South Central","South","AL",475.114675749364,489.266589188785,504.011035030483,489.476565591428
+"262",0,11,1,1,"Communicable","Black","Female","Alabama",1979,"East South Central","South","AL",31.6840033734339,34.5068423170685,37.6003896709583,34.570878543376
+"263",0,11,1,1,"Injuries","Black","Female","Alabama",1979,"East South Central","South","AL",48.1938628796464,51.078261017258,53.9732357394822,51.070987603839
+"264",0,11,1,1,"Non-communicable","Black","Female","Alabama",1979,"East South Central","South","AL",68.9240544983731,72.5264502430847,76.2882973342947,72.5202272222757
+"265",0,12,0,0,"All other causes","White","Male","Alabama",1980,"East South Central","South","AL",160.701096295871,166.38861843864,171.984859506825,166.386952748983
+"266",0,12,0,0,"Cancers","White","Male","Alabama",1980,"East South Central","South","AL",261.382179495555,266.947938689571,272.937078833649,266.979326058633
+"267",0,12,0,0,"Cardiovascular","White","Male","Alabama",1980,"East South Central","South","AL",674.4079513362,687.873914878218,703.430697435665,688.070400648783
+"268",0,12,0,0,"Communicable","White","Male","Alabama",1980,"East South Central","South","AL",46.4411719687975,50.0688282920606,53.9321854536017,50.0398605277649
+"269",0,12,0,0,"Injuries","White","Male","Alabama",1980,"East South Central","South","AL",118.340554777967,121.499600721318,124.824107838285,121.556955475755
+"270",0,12,0,0,"Non-communicable","White","Male","Alabama",1980,"East South Central","South","AL",102.378776381575,106.020285296721,109.932301723903,106.010752777751
+"271",0,12,0,1,"All other causes","White","Female","Alabama",1980,"East South Central","South","AL",102.913612925894,106.297154985418,109.891333678072,106.311646535382
+"272",0,12,0,1,"Cancers","White","Female","Alabama",1980,"East South Central","South","AL",145.724812578033,149.023123832651,152.131810130707,149.020978651301
+"273",0,12,0,1,"Cardiovascular","White","Female","Alabama",1980,"East South Central","South","AL",407.902227828715,416.610426891882,425.080117868692,416.614135165365
+"274",0,12,0,1,"Communicable","White","Female","Alabama",1980,"East South Central","South","AL",25.7686826958328,27.6289902170807,29.430013146526,27.6357004206742
+"275",0,12,0,1,"Injuries","White","Female","Alabama",1980,"East South Central","South","AL",39.1035308307587,40.7010299395723,42.1239553898328,40.6845238541854
+"276",0,12,0,1,"Non-communicable","White","Female","Alabama",1980,"East South Central","South","AL",43.766149631877,45.7388533915875,47.6950567279492,45.7508113100654
+"277",0,12,1,0,"All other causes","Black","Male","Alabama",1980,"East South Central","South","AL",304.743904031485,316.931569662257,328.432151112143,316.82371065661
+"278",0,12,1,0,"Cancers","Black","Male","Alabama",1980,"East South Central","South","AL",312.598875091908,324.57547172257,334.845636201322,324.433929131011
+"279",0,12,1,0,"Cardiovascular","Black","Male","Alabama",1980,"East South Central","South","AL",681.194199708918,699.948813319464,720.469965190893,700.384527308945
+"280",0,12,1,0,"Communicable","Black","Male","Alabama",1980,"East South Central","South","AL",62.0422824685005,68.3186962849368,74.6540780232498,68.3122426606746
+"281",0,12,1,0,"Injuries","Black","Male","Alabama",1980,"East South Central","South","AL",191.447747727894,199.265583744233,207.703210691333,199.298862111157
+"282",0,12,1,0,"Non-communicable","Black","Male","Alabama",1980,"East South Central","South","AL",103.132923536075,108.130507554088,113.901463537603,108.204292374179
+"283",0,12,1,1,"All other causes","Black","Female","Alabama",1980,"East South Central","South","AL",195.858823326898,203.320073778819,211.257122020191,203.38630657571
+"284",0,12,1,1,"Cancers","Black","Female","Alabama",1980,"East South Central","South","AL",167.566690332501,173.10737910439,178.754312253596,173.148344266509
+"285",0,12,1,1,"Cardiovascular","Black","Female","Alabama",1980,"East South Central","South","AL",474.96519900477,490.024225158075,504.671163445907,489.818001505347
+"286",0,12,1,1,"Communicable","Black","Female","Alabama",1980,"East South Central","South","AL",31.9829635367204,35.0330988529389,37.8465798216184,35.0039018206537
+"287",0,12,1,1,"Injuries","Black","Female","Alabama",1980,"East South Central","South","AL",47.3223161126071,50.0439818322776,52.8963820196445,50.0802625660001
+"288",0,12,1,1,"Non-communicable","Black","Female","Alabama",1980,"East South Central","South","AL",69.0657191543004,72.928857070562,77.0177802253124,72.9272212991789
+"289",0,13,0,0,"All other causes","White","Male","Alabama",1981,"East South Central","South","AL",156.655886966564,161.828191101404,166.926874424295,161.799520550122
+"290",0,13,0,0,"Cancers","White","Male","Alabama",1981,"East South Central","South","AL",264.95145535879,270.640774573853,276.335534925713,270.658362874965
+"291",0,13,0,0,"Cardiovascular","White","Male","Alabama",1981,"East South Central","South","AL",663.998622571533,676.842619328272,691.035361625117,677.1234140384
+"292",0,13,0,0,"Communicable","White","Male","Alabama",1981,"East South Central","South","AL",44.950044983519,48.7761319255831,52.523828117023,48.7442204831609
+"293",0,13,0,0,"Injuries","White","Male","Alabama",1981,"East South Central","South","AL",113.284310740209,116.777896154596,120.025321643895,116.736050879171
+"294",0,13,0,0,"Non-communicable","White","Male","Alabama",1981,"East South Central","South","AL",105.9507658777,109.561420825449,113.610505189968,109.599384372727
+"295",0,13,0,1,"All other causes","White","Female","Alabama",1981,"East South Central","South","AL",101.619603937549,104.937376141648,108.012472616841,104.883894363157
+"296",0,13,0,1,"Cancers","White","Female","Alabama",1981,"East South Central","South","AL",148.419240717917,151.434755069144,154.817202300479,151.4692537671
+"297",0,13,0,1,"Cardiovascular","White","Female","Alabama",1981,"East South Central","South","AL",401.886950425372,410.115428325605,418.361979779771,410.063291740297
+"298",0,13,0,1,"Communicable","White","Female","Alabama",1981,"East South Central","South","AL",26.4638741174211,28.2125742684051,30.0575405853141,28.2385222007953
+"299",0,13,0,1,"Injuries","White","Female","Alabama",1981,"East South Central","South","AL",38.3494302993569,39.7934832314677,41.2622164222492,39.7855307000474
+"300",0,13,0,1,"Non-communicable","White","Female","Alabama",1981,"East South Central","South","AL",45.3388621286908,47.2920518552488,49.3224253940322,47.3357317859995
+"301",0,13,1,0,"All other causes","Black","Male","Alabama",1981,"East South Central","South","AL",290.853768026325,301.229357870737,312.993382995677,301.498256230638
+"302",0,13,1,0,"Cancers","Black","Male","Alabama",1981,"East South Central","South","AL",318.19705498251,329.821852447706,341.38086362269,329.809948180274
+"303",0,13,1,0,"Cardiovascular","Black","Male","Alabama",1981,"East South Central","South","AL",666.676683759182,685.217120560969,703.522473250885,685.045134613593
+"304",0,13,1,0,"Communicable","Black","Male","Alabama",1981,"East South Central","South","AL",61.3473584613685,67.0944709317219,72.9058322116083,67.1582491920293
+"305",0,13,1,0,"Injuries","Black","Male","Alabama",1981,"East South Central","South","AL",184.837108786016,192.601978634912,200.862625931949,192.549208148125
+"306",0,13,1,0,"Non-communicable","Black","Male","Alabama",1981,"East South Central","South","AL",102.995790428405,108.376129731264,113.325827481531,108.326064763531
+"307",0,13,1,1,"All other causes","Black","Female","Alabama",1981,"East South Central","South","AL",186.023644474275,192.781354417239,201.132597973607,193.063177340163
+"308",0,13,1,1,"Cancers","Black","Female","Alabama",1981,"East South Central","South","AL",168.817156622898,174.481966984717,180.243050829378,174.480175832473
+"309",0,13,1,1,"Cardiovascular","Black","Female","Alabama",1981,"East South Central","South","AL",472.493549614223,486.753334101267,502.281267676677,486.697800420014
+"310",0,13,1,1,"Communicable","Black","Female","Alabama",1981,"East South Central","South","AL",32.2892469028867,35.2826636718603,38.2504536192465,35.2405699015803
+"311",0,13,1,1,"Injuries","Black","Female","Alabama",1981,"East South Central","South","AL",45.3456083319285,48.0444050430221,50.6884699620124,48.0299354285438
+"312",0,13,1,1,"Non-communicable","Black","Female","Alabama",1981,"East South Central","South","AL",68.6402332756059,72.4853854136478,76.6924998384632,72.53418641555
+"313",0,14,0,0,"All other causes","White","Male","Alabama",1982,"East South Central","South","AL",154.235899017278,159.458864080973,164.554489072524,159.478773301605
+"314",0,14,0,0,"Cancers","White","Male","Alabama",1982,"East South Central","South","AL",267.653608976136,273.406561093601,279.078156527122,273.392695158188
+"315",0,14,0,0,"Cardiovascular","White","Male","Alabama",1982,"East South Central","South","AL",637.833478052714,651.587199578755,664.700205788342,651.484001715066
+"316",0,14,0,0,"Communicable","White","Male","Alabama",1982,"East South Central","South","AL",45.1367582466547,48.6606466945962,52.5576841804827,48.6679044543329
+"317",0,14,0,0,"Injuries","White","Male","Alabama",1982,"East South Central","South","AL",109.826600075799,113.110837304383,116.422135137026,113.104800018595
+"318",0,14,0,0,"Non-communicable","White","Male","Alabama",1982,"East South Central","South","AL",107.431885582825,110.842388515217,114.53783598376,110.900678832354
+"319",0,14,0,1,"All other causes","White","Female","Alabama",1982,"East South Central","South","AL",101.116066663458,104.596702756594,107.986289003751,104.564728712016
+"320",0,14,0,1,"Cancers","White","Female","Alabama",1982,"East South Central","South","AL",150.483520565397,153.531750728013,156.714363927084,153.521305063919
+"321",0,14,0,1,"Cardiovascular","White","Female","Alabama",1982,"East South Central","South","AL",392.28490989456,400.207233427242,408.50882294661,400.309427615208
+"322",0,14,0,1,"Communicable","White","Female","Alabama",1982,"East South Central","South","AL",25.5092980534656,27.3056235594138,29.1374324857317,27.3038250274409
+"323",0,14,0,1,"Injuries","White","Female","Alabama",1982,"East South Central","South","AL",37.3909535856096,38.8400120193187,40.284189619667,38.8402808143174
+"324",0,14,0,1,"Non-communicable","White","Female","Alabama",1982,"East South Central","South","AL",47.2938997735731,49.3114962270943,51.3618359153546,49.3202976003652
+"325",0,14,1,0,"All other causes","Black","Male","Alabama",1982,"East South Central","South","AL",275.157339787164,285.375085500678,296.220592466131,285.494451249621
+"326",0,14,1,0,"Cancers","Black","Male","Alabama",1982,"East South Central","South","AL",326.723518709544,338.495583688672,350.482875954976,338.375793524043
+"327",0,14,1,0,"Cardiovascular","Black","Male","Alabama",1982,"East South Central","South","AL",664.848948769631,682.928896496766,702.266984529797,683.060989383254
+"328",0,14,1,0,"Communicable","Black","Male","Alabama",1982,"East South Central","South","AL",59.0239655742648,64.6282068653647,70.2271074071697,64.5821552918922
+"329",0,14,1,0,"Injuries","Black","Male","Alabama",1982,"East South Central","South","AL",172.952722210584,180.264068661424,188.070242905594,180.471383782884
+"330",0,14,1,0,"Non-communicable","Black","Male","Alabama",1982,"East South Central","South","AL",103.686078043963,109.211745057407,114.401823233624,109.204326207633
+"331",0,14,1,1,"All other causes","Black","Female","Alabama",1982,"East South Central","South","AL",177.163355008615,184.405550976024,191.790104633343,184.309455027368
+"332",0,14,1,1,"Cancers","Black","Female","Alabama",1982,"East South Central","South","AL",170.401713977592,175.775490154488,181.162063892552,175.839388252024
+"333",0,14,1,1,"Cardiovascular","Black","Female","Alabama",1982,"East South Central","South","AL",467.604506948114,481.716065986542,496.212804188908,481.797885728554
+"334",0,14,1,1,"Communicable","Black","Female","Alabama",1982,"East South Central","South","AL",31.6211393640439,34.787539040887,37.6956984894401,34.8147545574651
+"335",0,14,1,1,"Injuries","Black","Female","Alabama",1982,"East South Central","South","AL",44.1422819576964,46.6978813156797,49.1037328518774,46.6556348542168
+"336",0,14,1,1,"Non-communicable","Black","Female","Alabama",1982,"East South Central","South","AL",68.7145358190703,72.5978877811642,76.7992832174355,72.6614060174814
+"337",0,15,0,0,"All other causes","White","Male","Alabama",1983,"East South Central","South","AL",152.234647413855,157.350797801714,162.50071511625,157.286786136998
+"338",0,15,0,0,"Cancers","White","Male","Alabama",1983,"East South Central","South","AL",268.108837651223,273.93841684355,279.65046773539,273.951361082413
+"339",0,15,0,0,"Cardiovascular","White","Male","Alabama",1983,"East South Central","South","AL",620.35786064053,633.157045996374,646.001286160529,633.23682723465
+"340",0,15,0,0,"Communicable","White","Male","Alabama",1983,"East South Central","South","AL",47.2871651492322,50.8027970239674,55.2456500379583,50.9103811430774
+"341",0,15,0,0,"Injuries","White","Male","Alabama",1983,"East South Central","South","AL",107.342056797031,110.452789740431,113.492052421344,110.446817463044
+"342",0,15,0,0,"Non-communicable","White","Male","Alabama",1983,"East South Central","South","AL",109.19312397615,113.020965304726,117.094073228982,113.048324028095
+"343",0,15,0,1,"All other causes","White","Female","Alabama",1983,"East South Central","South","AL",100.535507752899,103.912620291759,107.282029210295,103.954310533791
+"344",0,15,0,1,"Cancers","White","Female","Alabama",1983,"East South Central","South","AL",152.898781472789,155.978004473915,159.479039293546,156.078557372528
+"345",0,15,0,1,"Cardiovascular","White","Female","Alabama",1983,"East South Central","South","AL",382.249139246113,389.985610823771,397.811064584613,390.018419729166
+"346",0,15,0,1,"Communicable","White","Female","Alabama",1983,"East South Central","South","AL",27.5746412460154,29.4198409750341,31.452645007774,29.4480345041481
+"347",0,15,0,1,"Injuries","White","Female","Alabama",1983,"East South Central","South","AL",37.2432776485871,38.741496367449,40.2457844154737,38.7537130104519
+"348",0,15,0,1,"Non-communicable","White","Female","Alabama",1983,"East South Central","South","AL",48.7272603877626,50.9673316129486,52.9834589821218,50.9420136592376
+"349",0,15,1,0,"All other causes","Black","Male","Alabama",1983,"East South Central","South","AL",262.938117906875,273.428173441552,284.701711183464,273.52831592009
+"350",0,15,1,0,"Cancers","Black","Male","Alabama",1983,"East South Central","South","AL",336.12344430919,346.92975764729,358.529593111398,347.024390043286
+"351",0,15,1,0,"Cardiovascular","Black","Male","Alabama",1983,"East South Central","South","AL",671.635829299225,689.511428479864,707.491560030253,689.47510586449
+"352",0,15,1,0,"Communicable","Black","Male","Alabama",1983,"East South Central","South","AL",59.7000596721442,65.4265138884677,71.2453813896001,65.4695371535131
+"353",0,15,1,0,"Injuries","Black","Male","Alabama",1983,"East South Central","South","AL",164.25814651206,171.449191311638,178.98369282053,171.439083515924
+"354",0,15,1,0,"Non-communicable","Black","Male","Alabama",1983,"East South Central","South","AL",105.722330365729,111.153763875386,116.353624683251,111.145356429079
+"355",0,15,1,1,"All other causes","Black","Female","Alabama",1983,"East South Central","South","AL",174.193771925561,181.227015609968,189.086008107513,181.257305527253
+"356",0,15,1,1,"Cancers","Black","Female","Alabama",1983,"East South Central","South","AL",172.871139230106,178.22880515301,183.943151417805,178.282485627055
+"357",0,15,1,1,"Cardiovascular","Black","Female","Alabama",1983,"East South Central","South","AL",468.451622930083,482.316891445616,497.191105703977,482.494980856242
+"358",0,15,1,1,"Communicable","Black","Female","Alabama",1983,"East South Central","South","AL",32.5927492093331,35.6601311438269,38.6213918271588,35.6819578365197
+"359",0,15,1,1,"Injuries","Black","Female","Alabama",1983,"East South Central","South","AL",43.6692562970256,46.1239410385051,48.6573645136975,46.1565783549725
+"360",0,15,1,1,"Non-communicable","Black","Female","Alabama",1983,"East South Central","South","AL",70.2263830790621,74.1263839264382,78.1120538430469,74.1309434410021
+"361",0,16,0,0,"All other causes","White","Male","Alabama",1984,"East South Central","South","AL",147.889693895428,153.020371230509,158.248714392377,152.985602410602
+"362",0,16,0,0,"Cancers","White","Male","Alabama",1984,"East South Central","South","AL",272.905913914899,278.943837214458,284.735642171942,278.946202004876
+"363",0,16,0,0,"Cardiovascular","White","Male","Alabama",1984,"East South Central","South","AL",611.096292191141,623.769621796728,635.80191625329,623.68489574027
+"364",0,16,0,0,"Communicable","White","Male","Alabama",1984,"East South Central","South","AL",48.8443520795614,52.7646842563575,56.6638015655963,52.7220448728647
+"365",0,16,0,0,"Injuries","White","Male","Alabama",1984,"East South Central","South","AL",106.112972595109,109.102301501023,112.129449159783,109.106279670735
+"366",0,16,0,0,"Non-communicable","White","Male","Alabama",1984,"East South Central","South","AL",113.4084036737,117.25587687011,121.34503222629,117.293010260837
+"367",0,16,0,1,"All other causes","White","Female","Alabama",1984,"East South Central","South","AL",98.9239917267087,102.309438732038,105.922407154352,102.322639237267
+"368",0,16,0,1,"Cancers","White","Female","Alabama",1984,"East South Central","South","AL",153.823375691805,157.153552706847,160.302983547358,157.103890391955
+"369",0,16,0,1,"Cardiovascular","White","Female","Alabama",1984,"East South Central","South","AL",386.573614622359,393.761424155821,402.131019418485,393.953243372915
+"370",0,16,0,1,"Communicable","White","Female","Alabama",1984,"East South Central","South","AL",29.1704629439457,31.0680176844936,33.1530151059658,31.0771103864458
+"371",0,16,0,1,"Injuries","White","Female","Alabama",1984,"East South Central","South","AL",37.5812653713434,39.0711084995243,40.6323316447744,39.0720971554634
+"372",0,16,0,1,"Non-communicable","White","Female","Alabama",1984,"East South Central","South","AL",52.1698301284713,54.3051730981471,56.5083384693136,54.284419008524
+"373",0,16,1,0,"All other causes","Black","Male","Alabama",1984,"East South Central","South","AL",250.191192465753,260.434260841952,271.348136329782,260.572608874925
+"374",0,16,1,0,"Cancers","Black","Male","Alabama",1984,"East South Central","South","AL",341.936313482348,353.114202714928,365.200057261186,353.476289324468
+"375",0,16,1,0,"Cardiovascular","Black","Male","Alabama",1984,"East South Central","South","AL",681.910385694212,699.664286673171,718.970505494537,699.856174455926
+"376",0,16,1,0,"Communicable","Black","Male","Alabama",1984,"East South Central","South","AL",61.1168700135721,67.2615183551814,72.8161495097742,67.2000959398562
+"377",0,16,1,0,"Injuries","Black","Male","Alabama",1984,"East South Central","South","AL",159.628912378117,166.611978130773,174.535758089505,166.77484448641
+"378",0,16,1,0,"Non-communicable","Black","Male","Alabama",1984,"East South Central","South","AL",110.479661562776,116.146192756995,122.164328714387,116.144677139958
+"379",0,16,1,1,"All other causes","Black","Female","Alabama",1984,"East South Central","South","AL",165.148171161433,171.599464656035,178.602108090226,171.783128780874
+"380",0,16,1,1,"Cancers","Black","Female","Alabama",1984,"East South Central","South","AL",176.748720592107,181.937627547752,187.96694275993,181.995424563668
+"381",0,16,1,1,"Cardiovascular","Black","Female","Alabama",1984,"East South Central","South","AL",475.126151175565,488.990608412141,503.042496474479,488.843866688786
+"382",0,16,1,1,"Communicable","Black","Female","Alabama",1984,"East South Central","South","AL",33.2669111597023,36.1705275403947,39.2732005020342,36.1797957345549
+"383",0,16,1,1,"Injuries","Black","Female","Alabama",1984,"East South Central","South","AL",43.470227250633,45.9305106271647,48.5598596940227,45.9874764222034
+"384",0,16,1,1,"Non-communicable","Black","Female","Alabama",1984,"East South Central","South","AL",72.7772360186623,76.8246626621228,80.9245258981887,76.7656357464856
+"385",0,17,0,0,"All other causes","White","Male","Alabama",1985,"East South Central","South","AL",144.530839945602,149.34540770393,154.722137154561,149.416180663718
+"386",0,17,0,0,"Cancers","White","Male","Alabama",1985,"East South Central","South","AL",278.32377576957,283.90371718682,289.811830642582,283.937571163718
+"387",0,17,0,0,"Cardiovascular","White","Male","Alabama",1985,"East South Central","South","AL",612.600423342957,624.53706070602,637.000786785997,624.584134955863
+"388",0,17,0,0,"Communicable","White","Male","Alabama",1985,"East South Central","South","AL",53.0952479019509,56.9092004090749,61.0163057052025,56.9077812028463
+"389",0,17,0,0,"Injuries","White","Male","Alabama",1985,"East South Central","South","AL",105.801447589909,108.715544873419,111.849639464102,108.735192848156
+"390",0,17,0,0,"Non-communicable","White","Male","Alabama",1985,"East South Central","South","AL",116.042490805964,120.107471011607,124.038885015616,120.025679102824
+"391",0,17,0,1,"All other causes","White","Female","Alabama",1985,"East South Central","South","AL",99.271330233908,102.598883792965,105.811769499795,102.564237110206
+"392",0,17,0,1,"Cancers","White","Female","Alabama",1985,"East South Central","South","AL",154.658128121174,157.881780161984,161.047790607554,157.874211572984
+"393",0,17,0,1,"Cardiovascular","White","Female","Alabama",1985,"East South Central","South","AL",383.76628825464,392.044366017801,399.935000216595,391.892737391401
+"394",0,17,0,1,"Communicable","White","Female","Alabama",1985,"East South Central","South","AL",32.6290673271736,34.6119748171493,36.7000196898203,34.6510164515877
+"395",0,17,0,1,"Injuries","White","Female","Alabama",1985,"East South Central","South","AL",37.7698206628716,39.2446339159546,40.7171109639452,39.2289660848905
+"396",0,17,0,1,"Non-communicable","White","Female","Alabama",1985,"East South Central","South","AL",55.1363633233155,57.2967717646817,59.5347874742142,57.3480570274013
+"397",0,17,1,0,"All other causes","Black","Male","Alabama",1985,"East South Central","South","AL",236.325377257138,245.263356921526,254.949472710027,245.410442338964
+"398",0,17,1,0,"Cancers","Black","Male","Alabama",1985,"East South Central","South","AL",342.395629200911,354.930462749681,367.505092264895,355.00348745222
+"399",0,17,1,0,"Cardiovascular","Black","Male","Alabama",1985,"East South Central","South","AL",696.472251858091,715.455867913165,734.002623274264,715.27851672611
+"400",0,17,1,0,"Communicable","Black","Male","Alabama",1985,"East South Central","South","AL",65.4466449508559,71.5926203953552,77.5590796534129,71.5547117447531
+"401",0,17,1,0,"Injuries","Black","Male","Alabama",1985,"East South Central","South","AL",160.753192082259,167.629410383833,174.681497133414,167.759871650086
+"402",0,17,1,0,"Non-communicable","Black","Male","Alabama",1985,"East South Central","South","AL",112.84492936672,118.750373536573,124.921023839267,118.75100958658
+"403",0,17,1,1,"All other causes","Black","Female","Alabama",1985,"East South Central","South","AL",155.151449563815,161.504269198205,168.376903410925,161.553792618726
+"404",0,17,1,1,"Cancers","Black","Female","Alabama",1985,"East South Central","South","AL",179.243837816596,184.925712718526,190.87954330658,184.957521326671
+"405",0,17,1,1,"Cardiovascular","Black","Female","Alabama",1985,"East South Central","South","AL",485.353209768926,499.387299682527,514.38789388404,499.655923292359
+"406",0,17,1,1,"Communicable","Black","Female","Alabama",1985,"East South Central","South","AL",35.9956337532572,38.9335704602039,42.4844961067127,39.0333042952477
+"407",0,17,1,1,"Injuries","Black","Female","Alabama",1985,"East South Central","South","AL",43.3354268910973,45.6991174800539,48.4282613341362,45.7737074553208
+"408",0,17,1,1,"Non-communicable","Black","Female","Alabama",1985,"East South Central","South","AL",76.1016695712159,79.9925212311935,84.1504164430724,80.0267141621306
+"409",0,18,0,0,"All other causes","White","Male","Alabama",1986,"East South Central","South","AL",140.324453694736,145.011993661834,150.232306692138,145.088982069214
+"410",0,18,0,0,"Cancers","White","Male","Alabama",1986,"East South Central","South","AL",284.456277803625,290.355395884197,296.352397085378,290.366916075389
+"411",0,18,0,0,"Cardiovascular","White","Male","Alabama",1986,"East South Central","South","AL",596.205840640317,608.274812101407,620.68597308624,608.495462513077
+"412",0,18,0,0,"Communicable","White","Male","Alabama",1986,"East South Central","South","AL",56.2423292755144,60.1460357470778,64.3383294682041,60.1461758819121
+"413",0,18,0,0,"Injuries","White","Male","Alabama",1986,"East South Central","South","AL",107.656761199379,110.699911410154,113.67612929495,110.696875783498
+"414",0,18,0,0,"Non-communicable","White","Male","Alabama",1986,"East South Central","South","AL",116.150283781686,119.781229664046,123.793636093498,119.892282355609
+"415",0,18,0,1,"All other causes","White","Female","Alabama",1986,"East South Central","South","AL",100.131604876397,103.294742239921,106.55688961668,103.280535221016
+"416",0,18,0,1,"Cancers","White","Female","Alabama",1986,"East South Central","South","AL",155.047825481934,158.191257843085,161.369986078659,158.192229541771
+"417",0,18,0,1,"Cardiovascular","White","Female","Alabama",1986,"East South Central","South","AL",371.52604208598,379.053820702769,386.852974912231,378.932792071571
+"418",0,18,0,1,"Communicable","White","Female","Alabama",1986,"East South Central","South","AL",32.1968462965027,34.2192291591689,36.2422433380618,34.1932177117693
+"419",0,18,0,1,"Injuries","White","Female","Alabama",1986,"East South Central","South","AL",38.6016141121827,40.1322641600515,41.5453099832132,40.1031373813448
+"420",0,18,0,1,"Non-communicable","White","Female","Alabama",1986,"East South Central","South","AL",56.6242640855169,58.8133420764159,61.1188745873104,58.8245608229262
+"421",0,18,1,0,"All other causes","Black","Male","Alabama",1986,"East South Central","South","AL",229.096717490591,238.159839617724,247.669175585884,238.162499485278
+"422",0,18,1,0,"Cancers","Black","Male","Alabama",1986,"East South Central","South","AL",344.091624860944,356.440598861331,369.581785115698,356.621941264365
+"423",0,18,1,0,"Cardiovascular","Black","Male","Alabama",1986,"East South Central","South","AL",681.868301225143,701.01241807222,721.042083742403,701.428287860939
+"424",0,18,1,0,"Communicable","Black","Male","Alabama",1986,"East South Central","South","AL",69.8285878782179,75.6192465366161,82.0651977373954,75.7403113614251
+"425",0,18,1,0,"Injuries","Black","Male","Alabama",1986,"East South Central","South","AL",161.564336507867,167.942130503241,174.319984867192,168.066864381816
+"426",0,18,1,0,"Non-communicable","Black","Male","Alabama",1986,"East South Central","South","AL",114.792550048597,120.136181799619,126.156558098431,120.214664097969
+"427",0,18,1,1,"All other causes","Black","Female","Alabama",1986,"East South Central","South","AL",149.458641056012,156.114451787684,162.898086758043,156.081151261079
+"428",0,18,1,1,"Cancers","Black","Female","Alabama",1986,"East South Central","South","AL",181.497257684771,186.996207737076,192.644972575117,187.08255384246
+"429",0,18,1,1,"Cardiovascular","Black","Female","Alabama",1986,"East South Central","South","AL",476.500125077399,490.365961209455,505.079101357474,490.535038972069
+"430",0,18,1,1,"Communicable","Black","Female","Alabama",1986,"East South Central","South","AL",36.9461468719179,40.0949376058885,43.4354104618983,40.0654112932174
+"431",0,18,1,1,"Injuries","Black","Female","Alabama",1986,"East South Central","South","AL",42.8164302111463,45.3466924605366,47.7781554411348,45.3105438476712
+"432",0,18,1,1,"Non-communicable","Black","Female","Alabama",1986,"East South Central","South","AL",78.5492768999074,82.8158754580492,87.0316079552967,82.7678413053255
+"433",0,19,0,0,"All other causes","White","Male","Alabama",1987,"East South Central","South","AL",137.35670731542,142.28647585724,147.148435000017,142.317361226768
+"434",0,19,0,0,"Cancers","White","Male","Alabama",1987,"East South Central","South","AL",285.611604158916,291.71290515016,298.004392464728,291.742364158834
+"435",0,19,0,0,"Cardiovascular","White","Male","Alabama",1987,"East South Central","South","AL",588.175528241546,599.775786828851,612.050673121853,599.887602542331
+"436",0,19,0,0,"Communicable","White","Male","Alabama",1987,"East South Central","South","AL",56.8379938201421,60.7490829888204,64.5525025715334,60.7091619978188
+"437",0,19,0,0,"Injuries","White","Male","Alabama",1987,"East South Central","South","AL",107.188601053681,110.126957549321,113.19615244723,110.135956236063
+"438",0,19,0,0,"Non-communicable","White","Male","Alabama",1987,"East South Central","South","AL",115.499826267369,119.572572930341,123.47299931536,119.599272609065
+"439",0,19,0,1,"All other causes","White","Female","Alabama",1987,"East South Central","South","AL",99.0417359225515,102.523088203619,105.710813933714,102.532811517107
+"440",0,19,0,1,"Cancers","White","Female","Alabama",1987,"East South Central","South","AL",156.593796310985,159.687844622484,162.92458967756,159.749066553874
+"441",0,19,0,1,"Cardiovascular","White","Female","Alabama",1987,"East South Central","South","AL",362.629223720653,369.544568831659,377.213456894023,369.739451957838
+"442",0,19,0,1,"Communicable","White","Female","Alabama",1987,"East South Central","South","AL",32.7524381901961,34.746245395384,36.8983683628176,34.7630594883892
+"443",0,19,0,1,"Injuries","White","Female","Alabama",1987,"East South Central","South","AL",39.2649892646227,40.7338928099161,42.1611672669967,40.7267075987732
+"444",0,19,0,1,"Non-communicable","White","Female","Alabama",1987,"East South Central","South","AL",57.0905542483862,59.4203553141041,61.7201270023238,59.4375952609116
+"445",0,19,1,0,"All other causes","Black","Male","Alabama",1987,"East South Central","South","AL",219.484287327849,229.260880810447,238.621680003705,229.409134515451
+"446",0,19,1,0,"Cancers","Black","Male","Alabama",1987,"East South Central","South","AL",344.983157477406,357.218003575926,369.769635577999,357.275642347368
+"447",0,19,1,0,"Cardiovascular","Black","Male","Alabama",1987,"East South Central","South","AL",675.136907331474,693.186209891295,711.332052558956,692.975867600943
+"448",0,19,1,0,"Communicable","Black","Male","Alabama",1987,"East South Central","South","AL",75.6416701178008,81.6686774468117,87.8446012792313,81.7065701646676
+"449",0,19,1,0,"Injuries","Black","Male","Alabama",1987,"East South Central","South","AL",163.27633172347,169.965051614982,176.938668749924,170.034114069088
+"450",0,19,1,0,"Non-communicable","Black","Male","Alabama",1987,"East South Central","South","AL",117.471080366609,123.330797801042,129.528143038923,123.3705099798
+"451",0,19,1,1,"All other causes","Black","Female","Alabama",1987,"East South Central","South","AL",147.967202994618,153.983545928772,160.002925275296,153.888963809326
+"452",0,19,1,1,"Cancers","Black","Female","Alabama",1987,"East South Central","South","AL",183.250674602196,188.619064217278,194.809607605655,188.606111630857
+"453",0,19,1,1,"Cardiovascular","Black","Female","Alabama",1987,"East South Central","South","AL",468.90603230695,482.862067865333,497.652463071331,483.055478901926
+"454",0,19,1,1,"Communicable","Black","Female","Alabama",1987,"East South Central","South","AL",39.1868258357368,42.2889629802129,45.6086399868914,42.301766781884
+"455",0,19,1,1,"Injuries","Black","Female","Alabama",1987,"East South Central","South","AL",42.6335788884484,45.1309828058936,47.5752620962232,45.147312855655
+"456",0,19,1,1,"Non-communicable","Black","Female","Alabama",1987,"East South Central","South","AL",79.0054982182581,83.2045238165451,87.4214163573354,83.2043911582882
+"457",0,20,0,0,"All other causes","White","Male","Alabama",1988,"East South Central","South","AL",140.446489193441,145.253074696863,150.547229012374,145.24943935899
+"458",0,20,0,0,"Cancers","White","Male","Alabama",1988,"East South Central","South","AL",283.142208111147,288.971732413381,294.892037132204,289.060552084698
+"459",0,20,0,0,"Cardiovascular","White","Male","Alabama",1988,"East South Central","South","AL",574.698459272965,586.367706650184,598.887894341557,586.502655293492
+"460",0,20,0,0,"Communicable","White","Male","Alabama",1988,"East South Central","South","AL",62.8731273342449,67.3639519377278,71.9289995761233,67.3142885064953
+"461",0,20,0,0,"Injuries","White","Male","Alabama",1988,"East South Central","South","AL",106.945826930998,110.048488272246,113.159247583791,110.085512600133
+"462",0,20,0,0,"Non-communicable","White","Male","Alabama",1988,"East South Central","South","AL",118.099735914894,121.782625377554,125.753542327419,121.819975599402
+"463",0,20,0,1,"All other causes","White","Female","Alabama",1988,"East South Central","South","AL",102.163394904507,105.730151569036,109.256122063667,105.809122076075
+"464",0,20,0,1,"Cancers","White","Female","Alabama",1988,"East South Central","South","AL",157.306117671738,160.308112794691,163.431749817565,160.342415236878
+"465",0,20,0,1,"Cardiovascular","White","Female","Alabama",1988,"East South Central","South","AL",362.054860844462,368.739149486794,376.100510223456,368.806893463949
+"466",0,20,0,1,"Communicable","White","Female","Alabama",1988,"East South Central","South","AL",34.8864519881355,36.9496912197069,39.197375646775,37.0060055695822
+"467",0,20,0,1,"Injuries","White","Female","Alabama",1988,"East South Central","South","AL",39.9045474913235,41.3540903134942,42.9785456625951,41.3813763756921
+"468",0,20,0,1,"Non-communicable","White","Female","Alabama",1988,"East South Central","South","AL",60.3983366654344,62.8475856423566,64.9663820422279,62.8452469830273
+"469",0,20,1,0,"All other causes","Black","Male","Alabama",1988,"East South Central","South","AL",219.68653135591,229.764801091554,239.289628499779,229.578401697763
+"470",0,20,1,0,"Cancers","Black","Male","Alabama",1988,"East South Central","South","AL",356.699756289431,368.632743364701,382.089608038669,368.874510429525
+"471",0,20,1,0,"Cardiovascular","Black","Male","Alabama",1988,"East South Central","South","AL",664.091710831012,682.284144393576,700.357240467138,682.398615235986
+"472",0,20,1,0,"Communicable","Black","Male","Alabama",1988,"East South Central","South","AL",82.7578677766479,88.8789823294263,95.9579019033394,88.9926312046564
+"473",0,20,1,0,"Injuries","Black","Male","Alabama",1988,"East South Central","South","AL",166.361219835184,173.599779550228,180.765478846926,173.654873932924
+"474",0,20,1,0,"Non-communicable","Black","Male","Alabama",1988,"East South Central","South","AL",121.778259919212,127.664777610237,133.499871623317,127.557935743558
+"475",0,20,1,1,"All other causes","Black","Female","Alabama",1988,"East South Central","South","AL",150.883155967503,157.302202075287,163.290289153075,157.21747972869
+"476",0,20,1,1,"Cancers","Black","Female","Alabama",1988,"East South Central","South","AL",184.738495557168,190.024904604749,196.120021715446,190.090069817163
+"477",0,20,1,1,"Cardiovascular","Black","Female","Alabama",1988,"East South Central","South","AL",457.996505254368,471.360996888945,486.077582914918,471.606543361169
+"478",0,20,1,1,"Communicable","Black","Female","Alabama",1988,"East South Central","South","AL",39.8171800773905,42.9141936088765,46.3970332686496,42.9367206298106
+"479",0,20,1,1,"Injuries","Black","Female","Alabama",1988,"East South Central","South","AL",42.8524444232826,45.1920896678908,47.7438539300014,45.2441586210012
+"480",0,20,1,1,"Non-communicable","Black","Female","Alabama",1988,"East South Central","South","AL",82.4730484830488,86.7209151617358,90.7381231348225,86.6662209889567
+"481",0,21,0,0,"All other causes","White","Male","Alabama",1989,"East South Central","South","AL",137.185769540826,142.110960004678,147.086289440429,142.130919776958
+"482",0,21,0,0,"Cancers","White","Male","Alabama",1989,"East South Central","South","AL",281.022907653183,286.85403366425,292.711469990638,286.828904424077
+"483",0,21,0,0,"Cardiovascular","White","Male","Alabama",1989,"East South Central","South","AL",559.519704531328,570.98758201926,583.190486703879,570.96822339706
+"484",0,21,0,0,"Communicable","White","Male","Alabama",1989,"East South Central","South","AL",63.925012242919,67.9626737310897,72.234374732879,67.9339652896154
+"485",0,21,0,0,"Injuries","White","Male","Alabama",1989,"East South Central","South","AL",108.066360064565,110.998636085025,114.12122278989,111.017554658451
+"486",0,21,0,0,"Non-communicable","White","Male","Alabama",1989,"East South Central","South","AL",118.290570486279,122.094428372446,126.064333987959,122.153976825745
+"487",0,21,0,1,"All other causes","White","Female","Alabama",1989,"East South Central","South","AL",101.409163811919,104.7431854906,107.961531989594,104.745778508143
+"488",0,21,0,1,"Cancers","White","Female","Alabama",1989,"East South Central","South","AL",158.741938941655,161.735196698926,165.057500575164,161.769469461182
+"489",0,21,0,1,"Cardiovascular","White","Female","Alabama",1989,"East South Central","South","AL",347.229469390333,354.155939923576,360.69601447954,354.078409839628
+"490",0,21,0,1,"Communicable","White","Female","Alabama",1989,"East South Central","South","AL",36.910110304341,38.9017710918605,41.0912892510308,38.9026663052243
+"491",0,21,0,1,"Injuries","White","Female","Alabama",1989,"East South Central","South","AL",40.1641522165597,41.4623309537272,43.1166575822485,41.5249441089582
+"492",0,21,0,1,"Non-communicable","White","Female","Alabama",1989,"East South Central","South","AL",63.0648252323416,65.4549520404109,67.9673153488183,65.448345939425
+"493",0,21,1,0,"All other causes","Black","Male","Alabama",1989,"East South Central","South","AL",218.519419937141,227.578450543284,237.446331481084,227.625211474833
+"494",0,21,1,0,"Cancers","Black","Male","Alabama",1989,"East South Central","South","AL",362.180571602668,375.193267457816,388.678462078731,375.419540332129
+"495",0,21,1,0,"Cardiovascular","Black","Male","Alabama",1989,"East South Central","South","AL",650.981664371342,669.615795470898,688.489885034884,669.566748817094
+"496",0,21,1,0,"Communicable","Black","Male","Alabama",1989,"East South Central","South","AL",89.19400193934,95.8597238978727,103.323505810945,95.8586682668219
+"497",0,21,1,0,"Injuries","Black","Male","Alabama",1989,"East South Central","South","AL",167.061476290637,173.641831913629,181.281520727871,173.797010100685
+"498",0,21,1,0,"Non-communicable","Black","Male","Alabama",1989,"East South Central","South","AL",124.463144281878,130.685830358238,137.074104573126,130.694898360998
+"499",0,21,1,1,"All other causes","Black","Female","Alabama",1989,"East South Central","South","AL",151.082351199826,157.571010383631,163.910982605088,157.590090224159
+"500",0,21,1,1,"Cancers","Black","Female","Alabama",1989,"East South Central","South","AL",184.693383339892,190.443186193244,196.467328419735,190.536866641899
+"501",0,21,1,1,"Cardiovascular","Black","Female","Alabama",1989,"East South Central","South","AL",453.369130304579,466.823881791598,480.057258069324,466.844932071184
+"502",0,21,1,1,"Communicable","Black","Female","Alabama",1989,"East South Central","South","AL",41.3127730627897,44.4485518434739,47.8280496408674,44.5058436553033
+"503",0,21,1,1,"Injuries","Black","Female","Alabama",1989,"East South Central","South","AL",43.1325085645831,45.3740777316959,47.9591895296899,45.4308559817931
+"504",0,21,1,1,"Non-communicable","Black","Female","Alabama",1989,"East South Central","South","AL",84.4380186625905,88.6542169513426,93.0117017732131,88.6318700897398
+"505",0,22,0,0,"All other causes","White","Male","Alabama",1990,"East South Central","South","AL",134.659312948576,139.363756946077,144.265602567571,139.403437215769
+"506",0,22,0,0,"Cancers","White","Male","Alabama",1990,"East South Central","South","AL",279.714152954821,285.62848647666,291.466882842067,285.667045986241
+"507",0,22,0,0,"Cardiovascular","White","Male","Alabama",1990,"East South Central","South","AL",544.170464403292,554.85165750081,565.987563137526,554.889123833455
+"508",0,22,0,0,"Communicable","White","Male","Alabama",1990,"East South Central","South","AL",63.0938305261328,67.0126900824318,71.3479642846868,67.0973387371219
+"509",0,22,0,0,"Injuries","White","Male","Alabama",1990,"East South Central","South","AL",109.01261987077,112.133667968818,115.40587614952,112.170777027438
+"510",0,22,0,0,"Non-communicable","White","Male","Alabama",1990,"East South Central","South","AL",120.491907427852,124.54507723664,128.927152756361,124.57655140656
+"511",0,22,0,1,"All other causes","White","Female","Alabama",1990,"East South Central","South","AL",99.8234093308316,103.28403875669,106.49680295637,103.271842958322
+"512",0,22,0,1,"Cancers","White","Female","Alabama",1990,"East South Central","South","AL",158.303493188976,161.275635204541,164.397700754944,161.297997998026
+"513",0,22,0,1,"Cardiovascular","White","Female","Alabama",1990,"East South Central","South","AL",334.27131320805,341.433142984284,348.592222203679,341.472389538994
+"514",0,22,0,1,"Communicable","White","Female","Alabama",1990,"East South Central","South","AL",37.4806925708844,39.6050022642446,41.898679300186,39.639850917878
+"515",0,22,0,1,"Injuries","White","Female","Alabama",1990,"East South Central","South","AL",40.0978047731158,41.4482100188234,42.9430322692287,41.4644101176249
+"516",0,22,0,1,"Non-communicable","White","Female","Alabama",1990,"East South Central","South","AL",65.6170875131896,68.112746133776,70.5938065186237,68.1391094890411
+"517",0,22,1,0,"All other causes","Black","Male","Alabama",1990,"East South Central","South","AL",214.301536821028,223.806685031355,233.181236316283,223.764664535983
+"518",0,22,1,0,"Cancers","Black","Male","Alabama",1990,"East South Central","South","AL",365.992449446274,379.081091943686,391.641182144151,379.154862735443
+"519",0,22,1,0,"Cardiovascular","Black","Male","Alabama",1990,"East South Central","South","AL",643.638259039189,661.067222651747,679.019459090857,661.06607638329
+"520",0,22,1,0,"Communicable","Black","Male","Alabama",1990,"East South Central","South","AL",92.8114391062223,99.5971725122815,107.476010399022,99.7192257024566
+"521",0,22,1,0,"Injuries","Black","Male","Alabama",1990,"East South Central","South","AL",166.620977657345,173.65643279604,180.939250436774,173.683472864858
+"522",0,22,1,0,"Non-communicable","Black","Male","Alabama",1990,"East South Central","South","AL",126.667009280347,132.83404083947,139.091826900797,132.883393881888
+"523",0,22,1,1,"All other causes","Black","Female","Alabama",1990,"East South Central","South","AL",150.080256599555,156.164609454648,161.780484399752,156.049076655402
+"524",0,22,1,1,"Cancers","Black","Female","Alabama",1990,"East South Central","South","AL",186.73559277222,192.463317835816,198.539714075398,192.514593282807
+"525",0,22,1,1,"Cardiovascular","Black","Female","Alabama",1990,"East South Central","South","AL",434.638828574111,447.806744640875,461.413648102863,447.984274819858
+"526",0,22,1,1,"Communicable","Black","Female","Alabama",1990,"East South Central","South","AL",42.3086449967908,45.674680055223,49.0821969108002,45.6799522342445
+"527",0,22,1,1,"Injuries","Black","Female","Alabama",1990,"East South Central","South","AL",42.8901311657036,45.2459344714218,47.8430300326511,45.2847259986629
+"528",0,22,1,1,"Non-communicable","Black","Female","Alabama",1990,"East South Central","South","AL",87.1442202815716,91.7710173105846,96.0361229696312,91.726887754456
+"529",0,23,0,0,"All other causes","White","Male","Alabama",1991,"East South Central","South","AL",135.592867145291,140.345390482617,144.969432670119,140.292420751919
+"530",0,23,0,0,"Cancers","White","Male","Alabama",1991,"East South Central","South","AL",281.276227346794,287.257408438765,292.748248038121,287.219633792259
+"531",0,23,0,0,"Cardiovascular","White","Male","Alabama",1991,"East South Central","South","AL",528.161103749783,538.732840573709,549.317517671147,538.794267765897
+"532",0,23,0,0,"Communicable","White","Male","Alabama",1991,"East South Central","South","AL",65.61002052756,69.7745985363245,74.3063627264063,69.8479320456629
+"533",0,23,0,0,"Injuries","White","Male","Alabama",1991,"East South Central","South","AL",106.967393895048,109.998423313047,113.657333163153,110.054395787769
+"534",0,23,0,0,"Non-communicable","White","Male","Alabama",1991,"East South Central","South","AL",120.870115320406,124.854357452166,128.706873619182,124.827822535403
+"535",0,23,0,1,"All other causes","White","Female","Alabama",1991,"East South Central","South","AL",98.2634651467907,101.408717837698,104.778004154608,101.438725056818
+"536",0,23,0,1,"Cancers","White","Female","Alabama",1991,"East South Central","South","AL",157.736876681707,160.969883651282,164.092594414717,160.986846884609
+"537",0,23,0,1,"Cardiovascular","White","Female","Alabama",1991,"East South Central","South","AL",331.729047957799,338.231118971007,345.135148885108,338.349797031928
+"538",0,23,0,1,"Communicable","White","Female","Alabama",1991,"East South Central","South","AL",38.2726087229577,40.3641689779337,42.608300211526,40.3806750021606
+"539",0,23,0,1,"Injuries","White","Female","Alabama",1991,"East South Central","South","AL",39.6671890312491,40.9934605870708,42.6371684861687,41.0314783904223
+"540",0,23,0,1,"Non-communicable","White","Female","Alabama",1991,"East South Central","South","AL",66.855859619827,69.480392937238,72.0296852431814,69.4817296152933
+"541",0,23,1,0,"All other causes","Black","Male","Alabama",1991,"East South Central","South","AL",212.816678141786,221.393977352945,230.503514003534,221.44834321114
+"542",0,23,1,0,"Cancers","Black","Male","Alabama",1991,"East South Central","South","AL",366.162730125147,378.237137119747,391.884348021213,378.415567982744
+"543",0,23,1,0,"Cardiovascular","Black","Male","Alabama",1991,"East South Central","South","AL",637.215338338266,653.651513046411,672.442812119612,653.851963618497
+"544",0,23,1,0,"Communicable","Black","Male","Alabama",1991,"East South Central","South","AL",93.8194543977165,101.163064919564,108.669727414961,101.218333847911
+"545",0,23,1,0,"Injuries","Black","Male","Alabama",1991,"East South Central","South","AL",166.118297819499,173.237005024808,180.817408604132,173.141571958001
+"546",0,23,1,0,"Non-communicable","Black","Male","Alabama",1991,"East South Central","South","AL",126.934205345056,133.789691734812,139.813661064462,133.697496790821
+"547",0,23,1,1,"All other causes","Black","Female","Alabama",1991,"East South Central","South","AL",148.127678956178,154.050598361513,159.654207022143,153.926221782242
+"548",0,23,1,1,"Cancers","Black","Female","Alabama",1991,"East South Central","South","AL",186.826069574697,192.733845397253,198.688772959336,192.817453400037
+"549",0,23,1,1,"Cardiovascular","Black","Female","Alabama",1991,"East South Central","South","AL",421.008705886393,434.244461927776,447.073109710079,434.097257920958
+"550",0,23,1,1,"Communicable","Black","Female","Alabama",1991,"East South Central","South","AL",45.1280983927953,48.5646115054027,51.9835428831282,48.5211366718223
+"551",0,23,1,1,"Injuries","Black","Female","Alabama",1991,"East South Central","South","AL",42.9079194196794,45.2747062383004,47.6864243815429,45.2831550752177
+"552",0,23,1,1,"Non-communicable","Black","Female","Alabama",1991,"East South Central","South","AL",88.3595137403478,92.7993738238184,97.1948182968174,92.791376875652
+"553",0,24,0,0,"All other causes","White","Male","Alabama",1992,"East South Central","South","AL",134.981416617733,139.436868233566,144.316761752692,139.480240531872
+"554",0,24,0,0,"Cancers","White","Male","Alabama",1992,"East South Central","South","AL",280.371833296446,286.374970874376,291.944507690882,286.299476241663
+"555",0,24,0,0,"Cardiovascular","White","Male","Alabama",1992,"East South Central","South","AL",521.164138684403,531.498193265762,542.643549242427,531.591331491862
+"556",0,24,0,0,"Communicable","White","Male","Alabama",1992,"East South Central","South","AL",64.5031516173575,68.2441164331859,72.7788287203491,68.224290575329
+"557",0,24,0,0,"Injuries","White","Male","Alabama",1992,"East South Central","South","AL",104.597160256348,107.551834146568,110.790493668194,107.625347989054
+"558",0,24,0,0,"Non-communicable","White","Male","Alabama",1992,"East South Central","South","AL",118.251137039572,122.358826270522,126.420347853086,122.303141923345
+"559",0,24,0,1,"All other causes","White","Female","Alabama",1992,"East South Central","South","AL",98.9631579551354,101.961358424479,105.112596630947,102.037277813427
+"560",0,24,0,1,"Cancers","White","Female","Alabama",1992,"East South Central","South","AL",158.167512517526,161.4326941967,164.426628674537,161.356349755541
+"561",0,24,0,1,"Cardiovascular","White","Female","Alabama",1992,"East South Central","South","AL",318.891179340322,326.264630221784,332.399811481446,326.086332174727
+"562",0,24,0,1,"Communicable","White","Female","Alabama",1992,"East South Central","South","AL",36.8835071135911,38.9778592476133,41.0351060246186,38.9643052278967
+"563",0,24,0,1,"Injuries","White","Female","Alabama",1992,"East South Central","South","AL",38.8886810561103,40.36222876318,41.8326658008704,40.3638038474082
+"564",0,24,0,1,"Non-communicable","White","Female","Alabama",1992,"East South Central","South","AL",68.0154242041596,70.5291571948811,73.2028176120645,70.5431552093514
+"565",0,24,1,0,"All other causes","Black","Male","Alabama",1992,"East South Central","South","AL",208.986784987495,217.467328322395,226.129753079147,217.377900017281
+"566",0,24,1,0,"Cancers","Black","Male","Alabama",1992,"East South Central","South","AL",372.148246035367,384.000693554926,397.927652879013,384.525535833254
+"567",0,24,1,0,"Cardiovascular","Black","Male","Alabama",1992,"East South Central","South","AL",614.241843056714,631.64772855519,648.629458728106,631.564118213229
+"568",0,24,1,0,"Communicable","Black","Male","Alabama",1992,"East South Central","South","AL",96.2981466412144,103.043303301943,110.043468629022,103.086622451132
+"569",0,24,1,0,"Injuries","Black","Male","Alabama",1992,"East South Central","South","AL",160.945618932806,167.734910695027,174.654029308141,167.722519690042
+"570",0,24,1,0,"Non-communicable","Black","Male","Alabama",1992,"East South Central","South","AL",127.999264428007,134.326398862868,140.801337627769,134.370187602702
+"571",0,24,1,1,"All other causes","Black","Female","Alabama",1992,"East South Central","South","AL",146.153309613943,151.979543430199,158.143772082435,151.994182491761
+"572",0,24,1,1,"Cancers","Black","Female","Alabama",1992,"East South Central","South","AL",185.979336175783,191.879166018181,197.413550361138,191.771670317802
+"573",0,24,1,1,"Cardiovascular","Black","Female","Alabama",1992,"East South Central","South","AL",409.742103713521,422.680265750351,435.494085970143,422.765962602763
+"574",0,24,1,1,"Communicable","Black","Female","Alabama",1992,"East South Central","South","AL",45.4962234041285,48.936081244604,52.3188285195281,48.9517205125201
+"575",0,24,1,1,"Injuries","Black","Female","Alabama",1992,"East South Central","South","AL",42.5958396939395,44.8442483743326,47.1616573565505,44.8402223928636
+"576",0,24,1,1,"Non-communicable","Black","Female","Alabama",1992,"East South Central","South","AL",92.4425623188167,96.779153595438,101.144687689214,96.8374576425024
+"577",0,25,0,0,"All other causes","White","Male","Alabama",1993,"East South Central","South","AL",135.177452024538,139.845014785658,144.694541582843,139.911690166287
+"578",0,25,0,0,"Cancers","White","Male","Alabama",1993,"East South Central","South","AL",276.93540893801,283.087965186034,288.733389421903,283.011684211885
+"579",0,25,0,0,"Cardiovascular","White","Male","Alabama",1993,"East South Central","South","AL",508.813165630255,518.9881501512,529.671156556366,519.084391068134
+"580",0,25,0,0,"Communicable","White","Male","Alabama",1993,"East South Central","South","AL",66.1412784580971,70.1235482670413,74.5310381985557,70.2403115552634
+"581",0,25,0,0,"Injuries","White","Male","Alabama",1993,"East South Central","South","AL",104.085941336633,107.001716666981,109.705330347151,106.941992437271
+"582",0,25,0,0,"Non-communicable","White","Male","Alabama",1993,"East South Central","South","AL",121.454133252696,125.386141810804,129.602934510193,125.417312637496
+"583",0,25,0,1,"All other causes","White","Female","Alabama",1993,"East South Central","South","AL",102.783769691266,105.87637227756,109.309967234875,105.973873550018
+"584",0,25,0,1,"Cancers","White","Female","Alabama",1993,"East South Central","South","AL",160.841675271728,163.513217843755,166.509562029799,163.572953873598
+"585",0,25,0,1,"Cardiovascular","White","Female","Alabama",1993,"East South Central","South","AL",327.449765928164,333.815518781194,340.313192104941,333.892943513907
+"586",0,25,0,1,"Communicable","White","Female","Alabama",1993,"East South Central","South","AL",40.4090094130577,42.3655166528823,44.5437887395809,42.4024037934985
+"587",0,25,0,1,"Injuries","White","Female","Alabama",1993,"East South Central","South","AL",38.9411323833361,40.4153708121799,41.8878040549595,40.3892931368877
+"588",0,25,0,1,"Non-communicable","White","Female","Alabama",1993,"East South Central","South","AL",71.5105136436493,74.0127713769375,76.6598761336513,74.0052298490167
+"589",0,25,1,0,"All other causes","Black","Male","Alabama",1993,"East South Central","South","AL",211.033986266334,219.400205319695,228.780645640385,219.513797568685
+"590",0,25,1,0,"Cancers","Black","Male","Alabama",1993,"East South Central","South","AL",373.135417273634,386.729246721238,399.839231802623,386.624777388375
+"591",0,25,1,0,"Cardiovascular","Black","Male","Alabama",1993,"East South Central","South","AL",593.013283811432,609.24649848176,626.401732937372,609.7128007192
+"592",0,25,1,0,"Communicable","Black","Male","Alabama",1993,"East South Central","South","AL",101.518651091811,109.100986521809,116.521858826047,109.138764260832
+"593",0,25,1,0,"Injuries","Black","Male","Alabama",1993,"East South Central","South","AL",158.041918503438,164.041823251453,170.679596324598,164.060745081106
+"594",0,25,1,0,"Non-communicable","Black","Male","Alabama",1993,"East South Central","South","AL",132.088367572501,138.198846365654,145.380146200422,138.249726842122
+"595",0,25,1,1,"All other causes","Black","Female","Alabama",1993,"East South Central","South","AL",145.444639210279,151.071122539612,157.437695267101,151.129379916361
+"596",0,25,1,1,"Cancers","Black","Female","Alabama",1993,"East South Central","South","AL",184.891766572865,190.206644923702,195.905809853826,190.268559010512
+"597",0,25,1,1,"Cardiovascular","Black","Female","Alabama",1993,"East South Central","South","AL",408.877922179904,421.473253860477,433.795903841942,421.614663267342
+"598",0,25,1,1,"Communicable","Black","Female","Alabama",1993,"East South Central","South","AL",46.8880961593138,50.5588907445893,53.8652320462123,50.5458367236262
+"599",0,25,1,1,"Injuries","Black","Female","Alabama",1993,"East South Central","South","AL",42.3899496299389,44.5472428292512,46.9952111599369,44.6138880518486
+"600",0,25,1,1,"Non-communicable","Black","Female","Alabama",1993,"East South Central","South","AL",94.5857913244941,99.3886562275278,104.134344107029,99.3480483710644
+"601",0,26,0,0,"All other causes","White","Male","Alabama",1994,"East South Central","South","AL",135.741689663687,140.358468408668,145.156931395346,140.381012304699
+"602",0,26,0,0,"Cancers","White","Male","Alabama",1994,"East South Central","South","AL",278.224915346578,283.746470133316,289.81812468482,283.808276106997
+"603",0,26,0,0,"Cardiovascular","White","Male","Alabama",1994,"East South Central","South","AL",491.58607170171,501.751154920702,512.361429009342,501.672942051752
+"604",0,26,0,0,"Communicable","White","Male","Alabama",1994,"East South Central","South","AL",65.6018808442682,69.4131137493391,73.6483527805945,69.4657444240973
+"605",0,26,0,0,"Injuries","White","Male","Alabama",1994,"East South Central","South","AL",104.036003714196,106.790395084034,109.641036041717,106.79110518058
+"606",0,26,0,0,"Non-communicable","White","Male","Alabama",1994,"East South Central","South","AL",125.87681612383,129.986273728903,134.316023875282,129.987302777353
+"607",0,26,0,1,"All other causes","White","Female","Alabama",1994,"East South Central","South","AL",105.504032345675,108.524415937843,112.178872759804,108.587777613826
+"608",0,26,0,1,"Cancers","White","Female","Alabama",1994,"East South Central","South","AL",161.916421358908,164.98160947126,168.317725541046,164.99925341532
+"609",0,26,0,1,"Cardiovascular","White","Female","Alabama",1994,"East South Central","South","AL",318.771472009401,324.2231804053,331.007826889836,324.426142065147
+"610",0,26,0,1,"Communicable","White","Female","Alabama",1994,"East South Central","South","AL",41.9493766205095,43.9164719918843,46.1620114297688,43.9377642019591
+"611",0,26,0,1,"Injuries","White","Female","Alabama",1994,"East South Central","South","AL",38.9121356564772,40.4990747179693,41.9803468700095,40.5248669268711
+"612",0,26,0,1,"Non-communicable","White","Female","Alabama",1994,"East South Central","South","AL",74.4134251990125,77.0847345882908,79.8302630895521,77.1482054011509
+"613",0,26,1,0,"All other causes","Black","Male","Alabama",1994,"East South Central","South","AL",210.272739322485,219.655612253408,228.265254169434,219.623688739958
+"614",0,26,1,0,"Cancers","Black","Male","Alabama",1994,"East South Central","South","AL",370.367840574485,383.78072919631,396.715157872342,383.862983986561
+"615",0,26,1,0,"Cardiovascular","Black","Male","Alabama",1994,"East South Central","South","AL",580.284037258188,596.803716222538,613.277656862521,596.750433069126
+"616",0,26,1,0,"Communicable","Black","Male","Alabama",1994,"East South Central","South","AL",107.257920294621,114.445535736208,122.42200789451,114.661633721347
+"617",0,26,1,0,"Injuries","Black","Male","Alabama",1994,"East South Central","South","AL",153.437215865798,159.501765617268,165.689175606215,159.517561644129
+"618",0,26,1,0,"Non-communicable","Black","Male","Alabama",1994,"East South Central","South","AL",137.560636327159,143.47823021475,150.588771893527,143.640036668601
+"619",0,26,1,1,"All other causes","Black","Female","Alabama",1994,"East South Central","South","AL",148.551727363487,154.235275793002,160.303448180854,154.23310590727
+"620",0,26,1,1,"Cancers","Black","Female","Alabama",1994,"East South Central","South","AL",183.924082150123,189.193246262297,195.229533257719,189.225422117561
+"621",0,26,1,1,"Cardiovascular","Black","Female","Alabama",1994,"East South Central","South","AL",393.056246429753,404.255583588364,416.78557666415,404.436129662868
+"622",0,26,1,1,"Communicable","Black","Female","Alabama",1994,"East South Central","South","AL",48.3266400273215,51.6280819708727,55.2877712867299,51.6527953695069
+"623",0,26,1,1,"Injuries","Black","Female","Alabama",1994,"East South Central","South","AL",41.8958241599837,43.9815761102846,46.5335303011279,44.028860880252
+"624",0,26,1,1,"Non-communicable","Black","Female","Alabama",1994,"East South Central","South","AL",98.5840656951268,103.358430004645,108.568920604912,103.476910752819
+"625",0,27,0,0,"All other causes","White","Male","Alabama",1995,"East South Central","South","AL",135.914998998292,140.602586292802,145.341598966061,140.573522179071
+"626",0,27,0,0,"Cancers","White","Male","Alabama",1995,"East South Central","South","AL",279.07170479168,284.162847525434,289.728425355313,284.322496802759
+"627",0,27,0,0,"Cardiovascular","White","Male","Alabama",1995,"East South Central","South","AL",481.97981336805,491.91982739301,501.271328658356,491.863203847186
+"628",0,27,0,0,"Communicable","White","Male","Alabama",1995,"East South Central","South","AL",65.2193463990363,68.9877453198007,72.7514568911666,68.9415894318316
+"629",0,27,0,0,"Injuries","White","Male","Alabama",1995,"East South Central","South","AL",103.501952387048,106.297148369682,109.31883437066,106.308091117352
+"630",0,27,0,0,"Non-communicable","White","Male","Alabama",1995,"East South Central","South","AL",125.86229731884,129.771693094296,133.85075489954,129.785013359582
+"631",0,27,0,1,"All other causes","White","Female","Alabama",1995,"East South Central","South","AL",108.410443359465,111.683162843704,115.038778595678,111.716450861852
+"632",0,27,0,1,"Cancers","White","Female","Alabama",1995,"East South Central","South","AL",162.059070273808,165.39234524882,168.461596403877,165.364438585711
+"633",0,27,0,1,"Cardiovascular","White","Female","Alabama",1995,"East South Central","South","AL",316.092487105076,322.518589370708,328.289107716225,322.439969132945
+"634",0,27,0,1,"Communicable","White","Female","Alabama",1995,"East South Central","South","AL",41.4446664879734,43.5498362264133,45.7873746514491,43.5718019008014
+"635",0,27,0,1,"Injuries","White","Female","Alabama",1995,"East South Central","South","AL",39.3157459801731,40.7552839022941,42.3232263743528,40.7823213521968
+"636",0,27,0,1,"Non-communicable","White","Female","Alabama",1995,"East South Central","South","AL",76.5895553223175,79.3033813368435,82.2169184606082,79.3041315104221
+"637",0,27,1,0,"All other causes","Black","Male","Alabama",1995,"East South Central","South","AL",209.012188351104,218.166713899605,226.788863397822,218.067278724406
+"638",0,27,1,0,"Cancers","Black","Male","Alabama",1995,"East South Central","South","AL",368.019726729414,381.35461515742,394.132838860944,381.441284030332
+"639",0,27,1,0,"Cardiovascular","Black","Male","Alabama",1995,"East South Central","South","AL",587.909583331353,604.301519851681,620.778930484355,604.08518690173
+"640",0,27,1,0,"Communicable","Black","Male","Alabama",1995,"East South Central","South","AL",104.305672024774,111.533040795578,119.309764578847,111.638988822478
+"641",0,27,1,0,"Injuries","Black","Male","Alabama",1995,"East South Central","South","AL",149.181049032845,155.02636152889,161.279142256978,155.13547497495
+"642",0,27,1,0,"Non-communicable","Black","Male","Alabama",1995,"East South Central","South","AL",140.807549755544,147.301945603875,154.050778697413,147.428762149711
+"643",0,27,1,1,"All other causes","Black","Female","Alabama",1995,"East South Central","South","AL",147.999337903053,154.10748183318,160.008034826494,153.99849085897
+"644",0,27,1,1,"Cancers","Black","Female","Alabama",1995,"East South Central","South","AL",180.895774574016,186.863847463893,192.649694737086,186.789554628289
+"645",0,27,1,1,"Cardiovascular","Black","Female","Alabama",1995,"East South Central","South","AL",388.529731181219,400.231826339864,412.396388080045,400.313630719312
+"646",0,27,1,1,"Communicable","Black","Female","Alabama",1995,"East South Central","South","AL",50.3539786530696,53.5553743036841,57.1216461194458,53.6072771760183
+"647",0,27,1,1,"Injuries","Black","Female","Alabama",1995,"East South Central","South","AL",41.1952173644101,43.3595970261707,45.5606030200619,43.351309758181
+"648",0,27,1,1,"Non-communicable","Black","Female","Alabama",1995,"East South Central","South","AL",101.355876477948,105.97837027723,111.193754944405,106.091260922762
+"649",0,28,0,0,"All other causes","White","Male","Alabama",1996,"East South Central","South","AL",139.879488536917,144.448170538952,148.990942292631,144.406810667054
+"650",0,28,0,0,"Cancers","White","Male","Alabama",1996,"East South Central","South","AL",277.344588689444,283.248724415525,288.875540833595,283.170059925396
+"651",0,28,0,0,"Cardiovascular","White","Male","Alabama",1996,"East South Central","South","AL",482.242472986481,491.576650658096,501.553023108413,491.756365306407
+"652",0,28,0,0,"Communicable","White","Male","Alabama",1996,"East South Central","South","AL",64.8700444817845,68.4300287041202,72.3777592962719,68.5522971654192
+"653",0,28,0,0,"Injuries","White","Male","Alabama",1996,"East South Central","South","AL",102.328885503718,105.276216362944,108.080123095759,105.285869743389
+"654",0,28,0,0,"Non-communicable","White","Male","Alabama",1996,"East South Central","South","AL",126.467185417355,130.570850645978,134.542437872392,130.517216867522
+"655",0,28,0,1,"All other causes","White","Female","Alabama",1996,"East South Central","South","AL",111.807527030716,114.953452427548,118.277335074284,115.015035458246
+"656",0,28,0,1,"Cancers","White","Female","Alabama",1996,"East South Central","South","AL",161.894508261484,165.112849786897,168.330943219721,165.041776488588
+"657",0,28,0,1,"Cardiovascular","White","Female","Alabama",1996,"East South Central","South","AL",312.045588073237,318.280444865922,323.902320867279,318.182883433384
+"658",0,28,0,1,"Communicable","White","Female","Alabama",1996,"East South Central","South","AL",39.5298699043412,41.4233052036943,43.3692053346731,41.450871062562
+"659",0,28,0,1,"Injuries","White","Female","Alabama",1996,"East South Central","South","AL",39.9981317621776,41.2735975758067,42.6961457247309,41.2920524253932
+"660",0,28,0,1,"Non-communicable","White","Female","Alabama",1996,"East South Central","South","AL",79.3465721392094,81.9898071628239,84.709900484277,81.9976177677712
+"661",0,28,1,0,"All other causes","Black","Male","Alabama",1996,"East South Central","South","AL",209.839814148897,218.808351016702,227.911460109938,218.792277673188
+"662",0,28,1,0,"Cancers","Black","Male","Alabama",1996,"East South Central","South","AL",367.30744652658,380.040530413572,392.757609270064,379.783978637661
+"663",0,28,1,0,"Cardiovascular","Black","Male","Alabama",1996,"East South Central","South","AL",574.059474079784,590.566219884338,607.831160622596,590.709509796069
+"664",0,28,1,0,"Communicable","Black","Male","Alabama",1996,"East South Central","South","AL",103.412510953069,110.599988870418,117.68531597937,110.484445007053
+"665",0,28,1,0,"Injuries","Black","Male","Alabama",1996,"East South Central","South","AL",143.56469922767,149.526255711484,155.291576776606,149.538839645547
+"666",0,28,1,0,"Non-communicable","Black","Male","Alabama",1996,"East South Central","South","AL",142.44939402835,149.225038565066,156.111169812098,149.31227200638
+"667",0,28,1,1,"All other causes","Black","Female","Alabama",1996,"East South Central","South","AL",148.391313920768,154.231430143081,160.107260730134,154.240444802442
+"668",0,28,1,1,"Cancers","Black","Female","Alabama",1996,"East South Central","South","AL",179.951512644134,185.315699258443,191.478991278396,185.346551732319
+"669",0,28,1,1,"Cardiovascular","Black","Female","Alabama",1996,"East South Central","South","AL",383.303087999535,394.512309053805,406.572410148596,394.565825726705
+"670",0,28,1,1,"Communicable","Black","Female","Alabama",1996,"East South Central","South","AL",51.7426090754084,55.2678179878931,59.0410281834653,55.2938980549452
+"671",0,28,1,1,"Injuries","Black","Female","Alabama",1996,"East South Central","South","AL",40.3722935136299,42.4768576055738,44.7759839690604,42.4919947970349
+"672",0,28,1,1,"Non-communicable","Black","Female","Alabama",1996,"East South Central","South","AL",104.633087812298,109.600136413135,114.814058605042,109.549370461705
+"673",0,29,0,0,"All other causes","White","Male","Alabama",1997,"East South Central","South","AL",141.890734302651,146.486563470152,151.43795199604,146.494239897698
+"674",0,29,0,0,"Cancers","White","Male","Alabama",1997,"East South Central","South","AL",275.940363872006,281.352681950777,286.793614749701,281.339488875477
+"675",0,29,0,0,"Cardiovascular","White","Male","Alabama",1997,"East South Central","South","AL",476.071262202933,485.794516911108,495.731397080431,485.831418742339
+"676",0,29,0,0,"Communicable","White","Male","Alabama",1997,"East South Central","South","AL",62.3857500612752,66.1089012742815,70.1168053845542,66.1516475109351
+"677",0,29,0,0,"Injuries","White","Male","Alabama",1997,"East South Central","South","AL",101.794155017055,104.600795485589,107.356238273916,104.605969851047
+"678",0,29,0,0,"Non-communicable","White","Male","Alabama",1997,"East South Central","South","AL",130.963359488047,135.399734753863,139.948404095399,135.378325725736
+"679",0,29,0,1,"All other causes","White","Female","Alabama",1997,"East South Central","South","AL",113.290565253405,116.899050437647,120.082592947404,116.900411645445
+"680",0,29,0,1,"Cancers","White","Female","Alabama",1997,"East South Central","South","AL",160.984214598291,164.049410734888,167.167679156903,164.049653316011
+"681",0,29,0,1,"Cardiovascular","White","Female","Alabama",1997,"East South Central","South","AL",313.579758118083,319.377741637013,324.764350000499,319.35446765906
+"682",0,29,0,1,"Communicable","White","Female","Alabama",1997,"East South Central","South","AL",41.4271552537449,43.3872981144891,45.6049061906556,43.4517417155995
+"683",0,29,0,1,"Injuries","White","Female","Alabama",1997,"East South Central","South","AL",40.3224668859164,41.7174509221207,43.288470749174,41.7564341713015
+"684",0,29,0,1,"Non-communicable","White","Female","Alabama",1997,"East South Central","South","AL",82.4868766266086,85.0252249657137,87.6459845475926,85.0435235855472
+"685",0,29,1,0,"All other causes","Black","Male","Alabama",1997,"East South Central","South","AL",212.40213090246,220.832070999728,230.579481832558,221.020685580468
+"686",0,29,1,0,"Cancers","Black","Male","Alabama",1997,"East South Central","South","AL",364.738747097768,377.286116755799,390.151603463796,377.298338821099
+"687",0,29,1,0,"Cardiovascular","Black","Male","Alabama",1997,"East South Central","South","AL",563.425493000695,580.172626057217,595.619448689328,579.908550577694
+"688",0,29,1,0,"Communicable","Black","Male","Alabama",1997,"East South Central","South","AL",94.7558749609803,101.806128444908,108.859115094453,101.772743463381
+"689",0,29,1,0,"Injuries","Black","Male","Alabama",1997,"East South Central","South","AL",137.616166393696,143.176012554444,149.148203153913,143.215231759342
+"690",0,29,1,0,"Non-communicable","Black","Male","Alabama",1997,"East South Central","South","AL",145.952418843576,152.825842784426,159.720623559685,152.721257621713
+"691",0,29,1,1,"All other causes","Black","Female","Alabama",1997,"East South Central","South","AL",150.736027410631,156.771686111128,163.109098999964,156.876212870831
+"692",0,29,1,1,"Cancers","Black","Female","Alabama",1997,"East South Central","South","AL",179.41720161143,184.892907307588,190.705632249921,184.826378946027
+"693",0,29,1,1,"Cardiovascular","Black","Female","Alabama",1997,"East South Central","South","AL",378.144526047643,389.776870850085,402.419248576727,389.739164779147
+"694",0,29,1,1,"Communicable","Black","Female","Alabama",1997,"East South Central","South","AL",51.6629940246914,54.9887089807579,59.1116572252537,55.1106754834802
+"695",0,29,1,1,"Injuries","Black","Female","Alabama",1997,"East South Central","South","AL",39.7412029265886,41.8996770997206,43.9872823884072,41.8591998897617
+"696",0,29,1,1,"Non-communicable","Black","Female","Alabama",1997,"East South Central","South","AL",107.177097547698,112.356908302339,117.658225486193,112.347780485101
+"697",0,30,0,0,"All other causes","White","Male","Alabama",1998,"East South Central","South","AL",142.641778167665,147.042724484302,151.851285764894,147.073198321088
+"698",0,30,0,0,"Cancers","White","Male","Alabama",1998,"East South Central","South","AL",272.051144963342,277.494854511633,283.120497657947,277.602484147137
+"699",0,30,0,0,"Cardiovascular","White","Male","Alabama",1998,"East South Central","South","AL",467.31584705861,476.493425037729,486.559517926867,476.612872450753
+"700",0,30,0,0,"Communicable","White","Male","Alabama",1998,"East South Central","South","AL",61.6320900702543,65.7195899513751,69.4248932273072,65.6988314903882
+"701",0,30,0,0,"Injuries","White","Male","Alabama",1998,"East South Central","South","AL",100.3520403979,103.359834178495,106.240762911621,103.359827432165
+"702",0,30,0,0,"Non-communicable","White","Male","Alabama",1998,"East South Central","South","AL",138.690507781236,143.246199169187,147.860402703566,143.304953428791
+"703",0,30,0,1,"All other causes","White","Female","Alabama",1998,"East South Central","South","AL",117.359823230659,120.688290047663,124.17634151176,120.657491054593
+"704",0,30,0,1,"Cancers","White","Female","Alabama",1998,"East South Central","South","AL",160.93305376572,164.186134110946,167.239090815206,164.195038552109
+"705",0,30,0,1,"Cardiovascular","White","Female","Alabama",1998,"East South Central","South","AL",310.817083597089,316.36779413924,321.880387812096,316.309752103125
+"706",0,30,0,1,"Communicable","White","Female","Alabama",1998,"East South Central","South","AL",41.7422182451492,43.9410501073796,45.9278782530066,43.9106877602845
+"707",0,30,0,1,"Injuries","White","Female","Alabama",1998,"East South Central","South","AL",40.7696270888243,42.2217360701027,43.7363241218918,42.2280119240253
+"708",0,30,0,1,"Non-communicable","White","Female","Alabama",1998,"East South Central","South","AL",87.4516214507536,90.1487068122821,92.8941365400076,90.2001957411938
+"709",0,30,1,0,"All other causes","Black","Male","Alabama",1998,"East South Central","South","AL",210.718048511044,219.637361440478,229.660833690305,219.815494852328
+"710",0,30,1,0,"Cancers","Black","Male","Alabama",1998,"East South Central","South","AL",360.080177984498,373.440691250819,386.10282443333,373.240779937621
+"711",0,30,1,0,"Cardiovascular","Black","Male","Alabama",1998,"East South Central","South","AL",557.180633234086,573.283767623147,590.90124673602,573.645621160255
+"712",0,30,1,0,"Communicable","Black","Male","Alabama",1998,"East South Central","South","AL",92.0916686787881,98.7569393008019,105.840401570844,98.8646663680697
+"713",0,30,1,0,"Injuries","Black","Male","Alabama",1998,"East South Central","South","AL",129.825435396542,135.587792792013,140.978110526709,135.617125033163
+"714",0,30,1,0,"Non-communicable","Black","Male","Alabama",1998,"East South Central","South","AL",152.709080660094,159.639488198743,167.35652589349,159.650533881458
+"715",0,30,1,1,"All other causes","Black","Female","Alabama",1998,"East South Central","South","AL",154.433218502072,160.155945662634,166.552318477226,160.232660067374
+"716",0,30,1,1,"Cancers","Black","Female","Alabama",1998,"East South Central","South","AL",178.157644440123,183.675099787002,189.213873513246,183.707369309329
+"717",0,30,1,1,"Cardiovascular","Black","Female","Alabama",1998,"East South Central","South","AL",381.850349853814,393.279636243896,403.823560053221,393.114142234245
+"718",0,30,1,1,"Communicable","Black","Female","Alabama",1998,"East South Central","South","AL",51.3979205145529,54.7691589644865,58.4761684920302,54.809269590968
+"719",0,30,1,1,"Injuries","Black","Female","Alabama",1998,"East South Central","South","AL",38.8166548689192,40.8810267041251,42.9403242491655,40.9010989265519
+"720",0,30,1,1,"Non-communicable","Black","Female","Alabama",1998,"East South Central","South","AL",110.094721475657,115.417133055492,120.774768097661,115.459780128018
+"721",0,31,0,0,"All other causes","White","Male","Alabama",1999,"East South Central","South","AL",146.522462927768,151.146466877325,156.117518950666,151.126830815806
+"722",0,31,0,0,"Cancers","White","Male","Alabama",1999,"East South Central","South","AL",267.410245642075,272.613526714375,277.701098862847,272.636757925393
+"723",0,31,0,0,"Cardiovascular","White","Male","Alabama",1999,"East South Central","South","AL",459.040610991555,467.896260803217,476.806202069791,467.853504833002
+"724",0,31,0,0,"Communicable","White","Male","Alabama",1999,"East South Central","South","AL",56.6785850623861,60.2727805867553,63.6649404687351,60.3007091735417
+"725",0,31,0,0,"Injuries","White","Male","Alabama",1999,"East South Central","South","AL",99.5162579639796,102.291356902955,105.107937728035,102.314173955926
+"726",0,31,0,0,"Non-communicable","White","Male","Alabama",1999,"East South Central","South","AL",146.195009895582,150.746212707502,155.064803577262,150.680941656323
+"727",0,31,0,1,"All other causes","White","Female","Alabama",1999,"East South Central","South","AL",120.438149023393,123.57861438836,127.229558511189,123.635701427621
+"728",0,31,0,1,"Cancers","White","Female","Alabama",1999,"East South Central","South","AL",160.883919524543,163.869172749798,166.892638784041,163.879664022895
+"729",0,31,0,1,"Cardiovascular","White","Female","Alabama",1999,"East South Central","South","AL",311.347062617495,317.234851071916,323.787599296324,317.330384287007
+"730",0,31,0,1,"Communicable","White","Female","Alabama",1999,"East South Central","South","AL",39.2735138910275,41.1663331986086,42.9920939943066,41.1448660476586
+"731",0,31,0,1,"Injuries","White","Female","Alabama",1999,"East South Central","South","AL",40.9820574563747,42.3872795718531,43.7432665369437,42.3838064063714
+"732",0,31,0,1,"Non-communicable","White","Female","Alabama",1999,"East South Central","South","AL",97.6853864590512,100.895910377576,104.116847568465,100.927369243969
+"733",0,31,1,0,"All other causes","Black","Male","Alabama",1999,"East South Central","South","AL",209.05398260393,217.486729422287,226.26769040501,217.495275574358
+"734",0,31,1,0,"Cancers","Black","Male","Alabama",1999,"East South Central","South","AL",355.209292129416,366.939622152672,380.44503561807,367.199496116615
+"735",0,31,1,0,"Cardiovascular","Black","Male","Alabama",1999,"East South Central","South","AL",550.476706285774,566.001218082002,582.767872238722,566.330044551529
+"736",0,31,1,0,"Communicable","Black","Male","Alabama",1999,"East South Central","South","AL",89.7589234750247,96.3474329225738,103.205466891441,96.4041111966957
+"737",0,31,1,0,"Injuries","Black","Male","Alabama",1999,"East South Central","South","AL",126.005328674469,131.799768513965,137.192671956035,131.801276832174
+"738",0,31,1,0,"Non-communicable","Black","Male","Alabama",1999,"East South Central","South","AL",162.179857039395,169.594727651583,177.790053064988,169.708006961163
+"739",0,31,1,1,"All other causes","Black","Female","Alabama",1999,"East South Central","South","AL",156.029825002294,161.735702391405,168.218770057556,161.805805103172
+"740",0,31,1,1,"Cancers","Black","Female","Alabama",1999,"East South Central","South","AL",176.846727214157,181.676446632512,187.315765514008,181.832391448358
+"741",0,31,1,1,"Cardiovascular","Black","Female","Alabama",1999,"East South Central","South","AL",376.728191935221,387.487902346903,398.52781459728,387.512374425895
+"742",0,31,1,1,"Communicable","Black","Female","Alabama",1999,"East South Central","South","AL",52.9645328201371,56.6301510576969,60.3862469898657,56.6471085022633
+"743",0,31,1,1,"Injuries","Black","Female","Alabama",1999,"East South Central","South","AL",37.8672645251231,39.9465155917962,41.9048061794508,39.9352390753081
+"744",0,31,1,1,"Non-communicable","Black","Female","Alabama",1999,"East South Central","South","AL",115.542796338331,120.580826576235,126.586901409618,120.670596134624
+"745",0,32,0,0,"All other causes","White","Male","Alabama",2000,"East South Central","South","AL",147.753701680055,152.016021252825,156.794738687767,152.087630081187
+"746",0,32,0,0,"Cancers","White","Male","Alabama",2000,"East South Central","South","AL",267.008733201716,271.62605600175,277.328853734798,271.804714067483
+"747",0,32,0,0,"Cardiovascular","White","Male","Alabama",2000,"East South Central","South","AL",449.229452696064,458.02928708784,467.298812396996,458.122265162735
+"748",0,32,0,0,"Communicable","White","Male","Alabama",2000,"East South Central","South","AL",55.2460976308013,58.5121084731799,62.0324709805425,58.5542365615633
+"749",0,32,0,0,"Injuries","White","Male","Alabama",2000,"East South Central","South","AL",98.8989598045068,101.676092685686,104.332368499174,101.665766068764
+"750",0,32,0,0,"Non-communicable","White","Male","Alabama",2000,"East South Central","South","AL",148.28788966901,152.841250695012,157.409884748124,152.830965288541
+"751",0,32,0,1,"All other causes","White","Female","Alabama",2000,"East South Central","South","AL",122.802321198959,126.281856067519,129.726442090754,126.224614088013
+"752",0,32,0,1,"Cancers","White","Female","Alabama",2000,"East South Central","South","AL",160.551487904934,163.872874369851,166.919708295798,163.802555421534
+"753",0,32,0,1,"Cardiovascular","White","Female","Alabama",2000,"East South Central","South","AL",309.223714375048,314.366633644283,320.431756841404,314.434966230059
+"754",0,32,0,1,"Communicable","White","Female","Alabama",2000,"East South Central","South","AL",38.9353022271704,40.7495079137533,42.7957248727617,40.7796483510733
+"755",0,32,0,1,"Injuries","White","Female","Alabama",2000,"East South Central","South","AL",40.508906311554,41.9212081944996,43.5059910913672,41.910576138717
+"756",0,32,0,1,"Non-communicable","White","Female","Alabama",2000,"East South Central","South","AL",102.544139752945,105.720653745545,108.802184289199,105.70490380676
+"757",0,32,1,0,"All other causes","Black","Male","Alabama",2000,"East South Central","South","AL",207.251688158654,216.16045976863,225.170265202721,216.204091700489
+"758",0,32,1,0,"Cancers","Black","Male","Alabama",2000,"East South Central","South","AL",351.89737314808,364.283683599201,376.963854799663,364.337797096824
+"759",0,32,1,0,"Cardiovascular","Black","Male","Alabama",2000,"East South Central","South","AL",541.059195369129,557.464437864209,573.220366622266,557.461149609917
+"760",0,32,1,0,"Communicable","Black","Male","Alabama",2000,"East South Central","South","AL",86.5558922007859,92.9542599771115,100.022850451295,92.9644553450542
+"761",0,32,1,0,"Injuries","Black","Male","Alabama",2000,"East South Central","South","AL",123.493796926808,128.994957905549,134.410667451243,129.035630161509
+"762",0,32,1,0,"Non-communicable","Black","Male","Alabama",2000,"East South Central","South","AL",167.080493637339,174.724864269925,182.55290136422,174.782476096114
+"763",0,32,1,1,"All other causes","Black","Female","Alabama",2000,"East South Central","South","AL",155.860270305821,161.712467021853,167.633754330125,161.719835321466
+"764",0,32,1,1,"Cancers","Black","Female","Alabama",2000,"East South Central","South","AL",176.229848190096,181.269448141833,186.689683288818,181.29343367086
+"765",0,32,1,1,"Cardiovascular","Black","Female","Alabama",2000,"East South Central","South","AL",375.660465124368,385.945353892478,397.355801161226,386.102209801443
+"766",0,32,1,1,"Communicable","Black","Female","Alabama",2000,"East South Central","South","AL",51.6490532698287,55.2027069055239,58.8484608279467,55.2275338346284
+"767",0,32,1,1,"Injuries","Black","Female","Alabama",2000,"East South Central","South","AL",36.6698269867126,38.622851846077,40.7219427992694,38.6294681505216
+"768",0,32,1,1,"Non-communicable","Black","Female","Alabama",2000,"East South Central","South","AL",119.820537465289,124.816053750589,130.49852072756,124.827057812317
+"769",0,33,0,0,"All other causes","White","Male","Alabama",2001,"East South Central","South","AL",148.272688118632,153.07338342676,157.614295964807,153.070969203805
+"770",0,33,0,0,"Cancers","White","Male","Alabama",2001,"East South Central","South","AL",261.791329429417,267.04008273869,272.24452537685,267.126466597442
+"771",0,33,0,0,"Cardiovascular","White","Male","Alabama",2001,"East South Central","South","AL",434.324945995721,443.004962456188,451.742063313717,443.097804436804
+"772",0,33,0,0,"Communicable","White","Male","Alabama",2001,"East South Central","South","AL",54.132904680721,57.2018550369803,60.5470253140886,57.2423256358528
+"773",0,33,0,0,"Injuries","White","Male","Alabama",2001,"East South Central","South","AL",98.5504684136739,101.455146102929,104.350323586632,101.417568581142
+"774",0,33,0,0,"Non-communicable","White","Male","Alabama",2001,"East South Central","South","AL",154.874988257025,159.391989105679,164.276188506686,159.439765746092
+"775",0,33,0,1,"All other causes","White","Female","Alabama",2001,"East South Central","South","AL",126.8454235678,130.4955392066,133.940891374179,130.45818173535
+"776",0,33,0,1,"Cancers","White","Female","Alabama",2001,"East South Central","South","AL",159.991229038401,163.02099812035,166.006374951266,162.954301420817
+"777",0,33,0,1,"Cardiovascular","White","Female","Alabama",2001,"East South Central","South","AL",303.344906143683,309.217661809584,314.776431663546,309.179528691971
+"778",0,33,0,1,"Communicable","White","Female","Alabama",2001,"East South Central","South","AL",40.1424151284145,42.1324007702293,44.0800667837389,42.1329479043491
+"779",0,33,0,1,"Injuries","White","Female","Alabama",2001,"East South Central","South","AL",40.608492086088,42.0999106947358,43.6856898455518,42.1194255286534
+"780",0,33,0,1,"Non-communicable","White","Female","Alabama",2001,"East South Central","South","AL",109.249297254039,112.31277959124,115.60828900439,112.34601306026
+"781",0,33,1,0,"All other causes","Black","Male","Alabama",2001,"East South Central","South","AL",208.497893839674,217.168590526046,226.306919270673,217.168961134902
+"782",0,33,1,0,"Cancers","Black","Male","Alabama",2001,"East South Central","South","AL",349.608426020422,361.80582091822,373.582223288412,361.719548597173
+"783",0,33,1,0,"Cardiovascular","Black","Male","Alabama",2001,"East South Central","South","AL",538.403367626002,554.467776391446,570.292427640353,554.480410460464
+"784",0,33,1,0,"Communicable","Black","Male","Alabama",2001,"East South Central","South","AL",84.0043389404721,90.3300522955313,96.9081117248881,90.5293064537234
+"785",0,33,1,0,"Injuries","Black","Male","Alabama",2001,"East South Central","South","AL",119.59952821615,124.651535030811,129.842004222231,124.654323890777
+"786",0,33,1,0,"Non-communicable","Black","Male","Alabama",2001,"East South Central","South","AL",174.464317610638,181.277367941323,189.82678402215,181.555046040058
+"787",0,33,1,1,"All other causes","Black","Female","Alabama",2001,"East South Central","South","AL",155.169955096504,161.858711282376,167.78501529791,161.898702161713
+"788",0,33,1,1,"Cancers","Black","Female","Alabama",2001,"East South Central","South","AL",177.442187482753,182.347923717567,187.622319591677,182.352493559514
+"789",0,33,1,1,"Cardiovascular","Black","Female","Alabama",2001,"East South Central","South","AL",373.080819492045,384.320771953378,395.667199860392,384.385020253779
+"790",0,33,1,1,"Communicable","Black","Female","Alabama",2001,"East South Central","South","AL",50.8387680637251,54.3187572415634,58.3455637334118,54.3321842862988
+"791",0,33,1,1,"Injuries","Black","Female","Alabama",2001,"East South Central","South","AL",35.5878704800144,37.5650582394403,39.4947982116546,37.5599208508049
+"792",0,33,1,1,"Non-communicable","Black","Female","Alabama",2001,"East South Central","South","AL",126.113867213199,131.735443009459,137.570298170994,131.700835834064
+"793",0,34,0,0,"All other causes","White","Male","Alabama",2002,"East South Central","South","AL",151.445956528861,155.994049882794,160.559889008782,156.052572747175
+"794",0,34,0,0,"Cancers","White","Male","Alabama",2002,"East South Central","South","AL",259.406981151061,264.569843815186,270.035299557668,264.63163445555
+"795",0,34,0,0,"Cardiovascular","White","Male","Alabama",2002,"East South Central","South","AL",427.100528792112,435.760734034466,444.269413457961,435.746061083272
+"796",0,34,0,0,"Communicable","White","Male","Alabama",2002,"East South Central","South","AL",55.5054706384522,58.8660694996583,62.2011608713071,58.8836149050655
+"797",0,34,0,0,"Injuries","White","Male","Alabama",2002,"East South Central","South","AL",99.289781957777,102.098851019453,104.778483672989,102.107318992406
+"798",0,34,0,0,"Non-communicable","White","Male","Alabama",2002,"East South Central","South","AL",159.322293229966,164.050738381206,168.784560127529,164.026544460825
+"799",0,34,0,1,"All other causes","White","Female","Alabama",2002,"East South Central","South","AL",129.908516008732,133.276075453455,136.857398757174,133.30942008827
+"800",0,34,0,1,"Cancers","White","Female","Alabama",2002,"East South Central","South","AL",158.511352229685,161.406228405508,164.234057656432,161.414800313535
+"801",0,34,0,1,"Cardiovascular","White","Female","Alabama",2002,"East South Central","South","AL",302.922218903149,308.85170433974,314.527159586728,308.814825947007
+"802",0,34,0,1,"Communicable","White","Female","Alabama",2002,"East South Central","South","AL",41.4514217229921,43.2870454316693,45.1611805420732,43.2796739849268
+"803",0,34,0,1,"Injuries","White","Female","Alabama",2002,"East South Central","South","AL",40.7392731851619,42.2475847390632,43.7714619778186,42.265464956539
+"804",0,34,0,1,"Non-communicable","White","Female","Alabama",2002,"East South Central","South","AL",115.888916563881,119.078410420761,122.529307231519,119.111505828023
+"805",0,34,1,0,"All other causes","Black","Male","Alabama",2002,"East South Central","South","AL",214.562610786075,223.719466150598,233.550646742094,223.822770785847
+"806",0,34,1,0,"Cancers","Black","Male","Alabama",2002,"East South Central","South","AL",341.553007212848,353.747671713794,366.295433489983,353.776364050343
+"807",0,34,1,0,"Cardiovascular","Black","Male","Alabama",2002,"East South Central","South","AL",535.658689082764,551.237239806808,566.677958443909,551.152756637623
+"808",0,34,1,0,"Communicable","Black","Male","Alabama",2002,"East South Central","South","AL",84.8906709076579,90.731289645062,97.6070190285959,90.8789061629951
+"809",0,34,1,0,"Injuries","Black","Male","Alabama",2002,"East South Central","South","AL",116.07600762662,121.631660353993,126.744613314692,121.599410802074
+"810",0,34,1,0,"Non-communicable","Black","Male","Alabama",2002,"East South Central","South","AL",178.997658503722,187.037360280568,195.99004207224,187.154621801338
+"811",0,34,1,1,"All other causes","Black","Female","Alabama",2002,"East South Central","South","AL",160.361510088226,166.587728560648,172.980065736629,166.593032443618
+"812",0,34,1,1,"Cancers","Black","Female","Alabama",2002,"East South Central","South","AL",176.288647234097,180.888442024139,186.070935951175,181.007976308461
+"813",0,34,1,1,"Cardiovascular","Black","Female","Alabama",2002,"East South Central","South","AL",378.078025852516,389.500709347613,401.610711392314,389.422080964288
+"814",0,34,1,1,"Communicable","Black","Female","Alabama",2002,"East South Central","South","AL",51.1623810696342,54.8053342055834,58.6068619682931,54.9154154472925
+"815",0,34,1,1,"Injuries","Black","Female","Alabama",2002,"East South Central","South","AL",34.6496662301706,36.6035879589454,38.6091179479922,36.5940717540404
+"816",0,34,1,1,"Non-communicable","Black","Female","Alabama",2002,"East South Central","South","AL",133.02516591713,139.098484786561,145.616450307759,139.132400010728
+"817",0,35,0,0,"All other causes","White","Male","Alabama",2003,"East South Central","South","AL",155.881252722596,160.492569057495,165.268979864255,160.592671858726
+"818",0,35,0,0,"Cancers","White","Male","Alabama",2003,"East South Central","South","AL",255.900720046792,260.769437535963,265.977478689358,260.88242214926
+"819",0,35,0,0,"Cardiovascular","White","Male","Alabama",2003,"East South Central","South","AL",416.665925819117,425.100968048418,433.299523535828,425.041650982144
+"820",0,35,0,0,"Communicable","White","Male","Alabama",2003,"East South Central","South","AL",53.9504335466386,57.0428586141683,60.3891428452973,57.1128374428763
+"821",0,35,0,0,"Injuries","White","Male","Alabama",2003,"East South Central","South","AL",100.019432116525,102.732857002758,105.701422424576,102.735003189731
+"822",0,35,0,0,"Non-communicable","White","Male","Alabama",2003,"East South Central","South","AL",159.553511980845,164.137645328048,169.050181689248,164.190732569731
+"823",0,35,0,1,"All other causes","White","Female","Alabama",2003,"East South Central","South","AL",136.142256242265,139.717534533302,143.671146302373,139.773221255726
+"824",0,35,0,1,"Cancers","White","Female","Alabama",2003,"East South Central","South","AL",157.979260887813,160.735455578078,163.731220981279,160.774375657728
+"825",0,35,0,1,"Cardiovascular","White","Female","Alabama",2003,"East South Central","South","AL",301.249896265486,306.836202378768,312.61912162807,306.831347672904
+"826",0,35,0,1,"Communicable","White","Female","Alabama",2003,"East South Central","South","AL",41.1004987416457,43.0423699789413,45.1290518735757,43.0556983945746
+"827",0,35,0,1,"Injuries","White","Female","Alabama",2003,"East South Central","South","AL",41.0162727602614,42.5616441463199,44.1526407941883,42.5732212171931
+"828",0,35,0,1,"Non-communicable","White","Female","Alabama",2003,"East South Central","South","AL",119.841390735235,123.451757434156,126.934613897611,123.414758039427
+"829",0,35,1,0,"All other causes","Black","Male","Alabama",2003,"East South Central","South","AL",213.90420738604,222.734616289776,232.357312214643,223.026882391057
+"830",0,35,1,0,"Cancers","Black","Male","Alabama",2003,"East South Central","South","AL",334.783962169439,346.688918567291,359.140330422365,346.755438439538
+"831",0,35,1,0,"Cardiovascular","Black","Male","Alabama",2003,"East South Central","South","AL",537.40559027447,553.399112886828,569.768928518086,553.777461728511
+"832",0,35,1,0,"Communicable","Black","Male","Alabama",2003,"East South Central","South","AL",83.9621872511764,91.0632293161353,98.6879460237876,91.0673174241642
+"833",0,35,1,0,"Injuries","Black","Male","Alabama",2003,"East South Central","South","AL",116.105400173582,121.115336303133,126.672272419135,121.09791339707
+"834",0,35,1,0,"Non-communicable","Black","Male","Alabama",2003,"East South Central","South","AL",179.613395298582,188.310665280719,196.28475530647,188.28596647177
+"835",0,35,1,1,"All other causes","Black","Female","Alabama",2003,"East South Central","South","AL",162.590507630027,168.945925340919,175.299882500728,168.927401415292
+"836",0,35,1,1,"Cancers","Black","Female","Alabama",2003,"East South Central","South","AL",174.513287038811,179.844162844957,185.12788176249,179.835995878964
+"837",0,35,1,1,"Cardiovascular","Black","Female","Alabama",2003,"East South Central","South","AL",370.574785845158,381.375142579277,392.716167180044,381.527176165799
+"838",0,35,1,1,"Communicable","Black","Female","Alabama",2003,"East South Central","South","AL",51.284066271888,55.0213094802491,58.7678725759396,55.0251962820792
+"839",0,35,1,1,"Injuries","Black","Female","Alabama",2003,"East South Central","South","AL",33.9756008811626,35.8944822359368,37.9350866695563,35.9320799327299
+"840",0,35,1,1,"Non-communicable","Black","Female","Alabama",2003,"East South Central","South","AL",137.215742458463,144.187236332399,150.264954790725,144.121638973625
+"841",0,36,0,0,"All other causes","White","Male","Alabama",2004,"East South Central","South","AL",159.685645475031,164.291220535623,169.322767340262,164.343406444163
+"842",0,36,0,0,"Cancers","White","Male","Alabama",2004,"East South Central","South","AL",251.045008792903,256.012702122818,260.967102874755,256.038514210295
+"843",0,36,0,0,"Cardiovascular","White","Male","Alabama",2004,"East South Central","South","AL",406.225293230727,413.870110159744,422.240947392936,413.959519264862
+"844",0,36,0,0,"Communicable","White","Male","Alabama",2004,"East South Central","South","AL",49.8328679021714,52.7642841595436,55.8223000786143,52.7792233747876
+"845",0,36,0,0,"Injuries","White","Male","Alabama",2004,"East South Central","South","AL",101.562796350399,104.401095308154,107.296585732494,104.416722336008
+"846",0,36,0,0,"Non-communicable","White","Male","Alabama",2004,"East South Central","South","AL",157.756087206733,162.796520781539,167.692989700068,162.738930498811
+"847",0,36,0,1,"All other causes","White","Female","Alabama",2004,"East South Central","South","AL",136.817691759032,140.567840089499,144.072338373612,140.560586335705
+"848",0,36,0,1,"Cancers","White","Female","Alabama",2004,"East South Central","South","AL",156.983342905378,159.971526038255,162.833450466163,159.952187263227
+"849",0,36,0,1,"Cardiovascular","White","Female","Alabama",2004,"East South Central","South","AL",288.043447609048,293.913929491247,299.664578881938,293.934769650765
+"850",0,36,0,1,"Communicable","White","Female","Alabama",2004,"East South Central","South","AL",38.9319181176411,40.8912775447339,42.8309533305199,40.9175602958931
+"851",0,36,0,1,"Injuries","White","Female","Alabama",2004,"East South Central","South","AL",42.0890421322631,43.5969537146011,45.3237330588659,43.6320869499882
+"852",0,36,0,1,"Non-communicable","White","Female","Alabama",2004,"East South Central","South","AL",120.550916854388,123.755560070033,127.092171357933,123.793651321377
+"853",0,36,1,0,"All other causes","Black","Male","Alabama",2004,"East South Central","South","AL",214.257092350341,223.071602708069,232.409646571334,223.24590226581
+"854",0,36,1,0,"Cancers","Black","Male","Alabama",2004,"East South Central","South","AL",329.015523470369,340.841058216538,354.154514999051,340.971758184154
+"855",0,36,1,0,"Cardiovascular","Black","Male","Alabama",2004,"East South Central","South","AL",520.901212919874,536.824335330548,553.178583320777,537.007481923299
+"856",0,36,1,0,"Communicable","Black","Male","Alabama",2004,"East South Central","South","AL",79.1446054453209,84.9028272624906,91.1185204040076,85.0485060196868
+"857",0,36,1,0,"Injuries","Black","Male","Alabama",2004,"East South Central","South","AL",115.077177558456,120.337629346167,125.718971223646,120.455871454799
+"858",0,36,1,0,"Non-communicable","Black","Male","Alabama",2004,"East South Central","South","AL",183.914260588055,192.435990863485,201.319784385978,192.429547624847
+"859",0,36,1,1,"All other causes","Black","Female","Alabama",2004,"East South Central","South","AL",162.910683329258,169.225607406968,175.461143858135,169.21023207458
+"860",0,36,1,1,"Cancers","Black","Female","Alabama",2004,"East South Central","South","AL",172.985895371542,178.249945931855,183.515951294187,178.267840408686
+"861",0,36,1,1,"Cardiovascular","Black","Female","Alabama",2004,"East South Central","South","AL",366.185155829175,378.543744499493,390.651793322123,378.593349709656
+"862",0,36,1,1,"Communicable","Black","Female","Alabama",2004,"East South Central","South","AL",49.5678266884336,52.9037794301891,56.5263661408019,52.9852173951696
+"863",0,36,1,1,"Injuries","Black","Female","Alabama",2004,"East South Central","South","AL",33.3688364210068,35.2914916951014,37.2460877479506,35.2669323724038
+"864",0,36,1,1,"Non-communicable","Black","Female","Alabama",2004,"East South Central","South","AL",138.97048447331,145.377038706343,151.935598923147,145.499708037748
+"865",0,37,0,0,"All other causes","White","Male","Alabama",2005,"East South Central","South","AL",162.60804616116,167.851871944175,172.301776432535,167.751507548836
+"866",0,37,0,0,"Cancers","White","Male","Alabama",2005,"East South Central","South","AL",247.890301672044,252.63511633905,257.438690446269,252.698504245654
+"867",0,37,0,0,"Cardiovascular","White","Male","Alabama",2005,"East South Central","South","AL",391.737970657535,398.519159025029,406.001056571095,398.684730194903
+"868",0,37,0,0,"Communicable","White","Male","Alabama",2005,"East South Central","South","AL",50.2921953572204,53.133343512882,56.0369533408175,53.1124569398097
+"869",0,37,0,0,"Injuries","White","Male","Alabama",2005,"East South Central","South","AL",103.243687805721,106.070605040344,108.922051488425,106.060305488941
+"870",0,37,0,0,"Non-communicable","White","Male","Alabama",2005,"East South Central","South","AL",157.806145319389,162.671274019948,167.259440526012,162.670112742782
+"871",0,37,0,1,"All other causes","White","Female","Alabama",2005,"East South Central","South","AL",142.777861970202,146.644376373968,150.583210464081,146.636973972276
+"872",0,37,0,1,"Cancers","White","Female","Alabama",2005,"East South Central","South","AL",156.462981360651,159.407337072386,162.479014248385,159.403937600984
+"873",0,37,0,1,"Cardiovascular","White","Female","Alabama",2005,"East South Central","South","AL",285.934694948609,291.526388967013,297.332553046853,291.569488989056
+"874",0,37,0,1,"Communicable","White","Female","Alabama",2005,"East South Central","South","AL",37.8147204453572,39.5891116116983,41.4526447940661,39.5683345952755
+"875",0,37,0,1,"Injuries","White","Female","Alabama",2005,"East South Central","South","AL",42.7308456529162,44.2165439318204,45.8162424219278,44.2439343437703
+"876",0,37,0,1,"Non-communicable","White","Female","Alabama",2005,"East South Central","South","AL",122.591587106897,126.160801566183,129.643546530858,126.148921251083
+"877",0,37,1,0,"All other causes","Black","Male","Alabama",2005,"East South Central","South","AL",215.897160337191,224.820956325058,234.700915765354,224.967889909688
+"878",0,37,1,0,"Cancers","Black","Male","Alabama",2005,"East South Central","South","AL",326.252730365381,337.285666706365,349.44137972329,337.33963691801
+"879",0,37,1,0,"Cardiovascular","Black","Male","Alabama",2005,"East South Central","South","AL",508.413660132069,523.091891168391,537.043182098605,522.821603201761
+"880",0,37,1,0,"Communicable","Black","Male","Alabama",2005,"East South Central","South","AL",76.1448417600259,82.1783185757322,88.5775182234834,82.2513879118337
+"881",0,37,1,0,"Injuries","Black","Male","Alabama",2005,"East South Central","South","AL",116.191484375494,121.111814242539,126.583310313187,121.240371467638
+"882",0,37,1,0,"Non-communicable","Black","Male","Alabama",2005,"East South Central","South","AL",183.792346536931,191.902220880058,200.65324951056,191.978452724079
+"883",0,37,1,1,"All other causes","Black","Female","Alabama",2005,"East South Central","South","AL",165.203391285582,171.045339156977,177.960826957944,171.227539897147
+"884",0,37,1,1,"Cancers","Black","Female","Alabama",2005,"East South Central","South","AL",170.978776121055,176.065122461915,180.944546976344,176.052170666818
+"885",0,37,1,1,"Cardiovascular","Black","Female","Alabama",2005,"East South Central","South","AL",355.760689412714,366.139258806831,377.122338771799,366.31511705459
+"886",0,37,1,1,"Communicable","Black","Female","Alabama",2005,"East South Central","South","AL",49.222923389616,52.5338635586059,55.8801083550328,52.5316524607842
+"887",0,37,1,1,"Injuries","Black","Female","Alabama",2005,"East South Central","South","AL",32.4947771031036,34.4374620783054,36.2488458464038,34.4324928751963
+"888",0,37,1,1,"Non-communicable","Black","Female","Alabama",2005,"East South Central","South","AL",134.861165609973,141.283768007543,147.66702657861,141.35318915115
+"889",0,38,0,0,"All other causes","White","Male","Alabama",2006,"East South Central","South","AL",166.891329342321,172.142227134886,177.112054593154,172.072703375817
+"890",0,38,0,0,"Cancers","White","Male","Alabama",2006,"East South Central","South","AL",244.921716686676,250.255867065294,255.453062734623,250.184236826703
+"891",0,38,0,0,"Cardiovascular","White","Male","Alabama",2006,"East South Central","South","AL",371.895684101111,378.762918463081,386.138397170502,378.868264024618
+"892",0,38,0,0,"Communicable","White","Male","Alabama",2006,"East South Central","South","AL",47.289511872661,50.3495428953673,53.0455684713933,50.3637032765819
+"893",0,38,0,0,"Injuries","White","Male","Alabama",2006,"East South Central","South","AL",106.094673391277,108.93234913665,112.090342913674,108.947065131122
+"894",0,38,0,0,"Non-communicable","White","Male","Alabama",2006,"East South Central","South","AL",153.870665858083,158.250862529685,162.873225016236,158.260689318939
+"895",0,38,0,1,"All other causes","White","Female","Alabama",2006,"East South Central","South","AL",146.331903497543,149.933994311852,153.999370539214,149.984041425719
+"896",0,38,0,1,"Cancers","White","Female","Alabama",2006,"East South Central","South","AL",154.00811021463,156.838335703877,159.757004673382,156.828064664492
+"897",0,38,0,1,"Cardiovascular","White","Female","Alabama",2006,"East South Central","South","AL",271.378710748814,276.109015480531,281.096804410818,276.156819189448
+"898",0,38,0,1,"Communicable","White","Female","Alabama",2006,"East South Central","South","AL",35.7317199708246,37.4345696438906,39.2215191637349,37.4332855883641
+"899",0,38,0,1,"Injuries","White","Female","Alabama",2006,"East South Central","South","AL",43.8236388843871,45.4045212735029,47.0392850372227,45.3911126512727
+"900",0,38,0,1,"Non-communicable","White","Female","Alabama",2006,"East South Central","South","AL",124.039566629202,127.709094148524,131.067148134936,127.625804699865
+"901",0,38,1,0,"All other causes","Black","Male","Alabama",2006,"East South Central","South","AL",219.172512823182,228.383752498732,238.2113994875,228.286716311089
+"902",0,38,1,0,"Cancers","Black","Male","Alabama",2006,"East South Central","South","AL",318.992504223511,330.080556845317,341.402249697681,330.061714367061
+"903",0,38,1,0,"Cardiovascular","Black","Male","Alabama",2006,"East South Central","South","AL",495.279551592375,509.160919318176,524.28991968026,509.292290646555
+"904",0,38,1,0,"Communicable","Black","Male","Alabama",2006,"East South Central","South","AL",74.2547766391842,79.7943079604865,85.6699831045864,79.8533418402667
+"905",0,38,1,0,"Injuries","Black","Male","Alabama",2006,"East South Central","South","AL",114.662606462797,119.494504000769,124.928954396324,119.509019751961
+"906",0,38,1,0,"Non-communicable","Black","Male","Alabama",2006,"East South Central","South","AL",180.84813426155,188.96771584883,197.827938525995,189.065724725882
+"907",0,38,1,1,"All other causes","Black","Female","Alabama",2006,"East South Central","South","AL",169.790068596916,176.443826942239,183.561529681646,176.609347269844
+"908",0,38,1,1,"Cancers","Black","Female","Alabama",2006,"East South Central","South","AL",168.978199221459,173.965644734624,179.221410089191,173.944836214968
+"909",0,38,1,1,"Cardiovascular","Black","Female","Alabama",2006,"East South Central","South","AL",337.864541465822,347.974822598383,359.116728663398,348.103348509736
+"910",0,38,1,1,"Communicable","Black","Female","Alabama",2006,"East South Central","South","AL",48.4008905734321,51.5434821584445,55.1599772250994,51.5268373751079
+"911",0,38,1,1,"Injuries","Black","Female","Alabama",2006,"East South Central","South","AL",31.6708501540487,33.6693232249115,35.7165855775077,33.6624604310478
+"912",0,38,1,1,"Non-communicable","Black","Female","Alabama",2006,"East South Central","South","AL",134.462860108903,140.533273184053,146.941537916147,140.463555551976
+"913",0,39,0,0,"All other causes","White","Male","Alabama",2007,"East South Central","South","AL",171.877592470077,176.932486334314,182.042456821507,176.930124483328
+"914",0,39,0,0,"Cancers","White","Male","Alabama",2007,"East South Central","South","AL",242.841514372791,247.140481523862,252.155602689457,247.235146254171
+"915",0,39,0,0,"Cardiovascular","White","Male","Alabama",2007,"East South Central","South","AL",360.856241852671,368.051832392776,375.318829620187,367.895326732752
+"916",0,39,0,0,"Communicable","White","Male","Alabama",2007,"East South Central","South","AL",45.311259588026,48.1093836558791,50.821218487308,48.0731576440953
+"917",0,39,0,0,"Injuries","White","Male","Alabama",2007,"East South Central","South","AL",107.053519159066,110.030878696101,113.08186806384,110.045421051802
+"918",0,39,0,0,"Non-communicable","White","Male","Alabama",2007,"East South Central","South","AL",155.080455612354,159.346955105432,163.872009597973,159.40729153043
+"919",0,39,0,1,"All other causes","White","Female","Alabama",2007,"East South Central","South","AL",150.673485623839,154.413376637417,158.18249320928,154.395930852468
+"920",0,39,0,1,"Cancers","White","Female","Alabama",2007,"East South Central","South","AL",151.795575599643,154.653224468526,157.460706343126,154.651645559434
+"921",0,39,0,1,"Cardiovascular","White","Female","Alabama",2007,"East South Central","South","AL",258.627508812487,263.543278505341,268.297236684622,263.477370490609
+"922",0,39,0,1,"Communicable","White","Female","Alabama",2007,"East South Central","South","AL",34.6459016496759,36.2206254583463,37.9513356324422,36.2383509199894
+"923",0,39,0,1,"Injuries","White","Female","Alabama",2007,"East South Central","South","AL",45.2299890379484,46.8286069103651,48.4825757192819,46.849508426827
+"924",0,39,0,1,"Non-communicable","White","Female","Alabama",2007,"East South Central","South","AL",122.306433783927,125.644942854184,129.134850997791,125.659673660181
+"925",0,39,1,0,"All other causes","Black","Male","Alabama",2007,"East South Central","South","AL",214.424972545966,224.169903549828,233.902418720986,224.164155705851
+"926",0,39,1,0,"Cancers","Black","Male","Alabama",2007,"East South Central","South","AL",313.689174009815,325.119888052828,336.457755438491,325.010827409286
+"927",0,39,1,0,"Cardiovascular","Black","Male","Alabama",2007,"East South Central","South","AL",475.714029687286,489.409489910708,504.534031895992,489.702951276353
+"928",0,39,1,0,"Communicable","Black","Male","Alabama",2007,"East South Central","South","AL",75.0870020827541,81.0371573549464,87.6817530554056,81.1115054100221
+"929",0,39,1,0,"Injuries","Black","Male","Alabama",2007,"East South Central","South","AL",111.102538511357,115.998785280956,120.878604452165,116.08194494166
+"930",0,39,1,0,"Non-communicable","Black","Male","Alabama",2007,"East South Central","South","AL",179.769647730019,187.955225336378,196.827988162116,188.10900611224
+"931",0,39,1,1,"All other causes","Black","Female","Alabama",2007,"East South Central","South","AL",168.224087609795,174.779083665531,181.406408188236,174.835045546102
+"932",0,39,1,1,"Cancers","Black","Female","Alabama",2007,"East South Central","South","AL",168.466186819422,173.597333288285,178.842158180372,173.728196669511
+"933",0,39,1,1,"Cardiovascular","Black","Female","Alabama",2007,"East South Central","South","AL",324.212660351396,334.420247404051,344.305742763956,334.306315855035
+"934",0,39,1,1,"Communicable","Black","Female","Alabama",2007,"East South Central","South","AL",46.6621512128849,49.6650242437282,53.0641039692907,49.7317609469
+"935",0,39,1,1,"Injuries","Black","Female","Alabama",2007,"East South Central","South","AL",30.8353815335637,32.8681571619715,34.8286412770939,32.8559751788204
+"936",0,39,1,1,"Non-communicable","Black","Female","Alabama",2007,"East South Central","South","AL",130.979622943566,136.451509721339,142.474994234213,136.518893692564
+"937",0,40,0,0,"All other causes","White","Male","Alabama",2008,"East South Central","South","AL",174.024177213399,179.013838238812,184.148775534091,179.021397798989
+"938",0,40,0,0,"Cancers","White","Male","Alabama",2008,"East South Central","South","AL",239.240142130448,243.692097807267,248.637805579088,243.817632277201
+"939",0,40,0,0,"Cardiovascular","White","Male","Alabama",2008,"East South Central","South","AL",353.519878350762,360.464034736772,367.963819814534,360.485445527643
+"940",0,40,0,0,"Communicable","White","Male","Alabama",2008,"East South Central","South","AL",43.2950754674446,45.6701918416948,48.2602969350551,45.7091623930138
+"941",0,40,0,0,"Injuries","White","Male","Alabama",2008,"East South Central","South","AL",106.214933350287,109.262293414913,112.099219705703,109.172212639193
+"942",0,40,0,0,"Non-communicable","White","Male","Alabama",2008,"East South Central","South","AL",156.309258519454,160.625762208707,164.688984080763,160.56631419331
+"943",0,40,0,1,"All other causes","White","Female","Alabama",2008,"East South Central","South","AL",152.205101405637,156.030847690089,160.018766220971,156.086092413242
+"944",0,40,0,1,"Cancers","White","Female","Alabama",2008,"East South Central","South","AL",150.849278370983,153.868711710031,156.629598382178,153.836711459457
+"945",0,40,0,1,"Cardiovascular","White","Female","Alabama",2008,"East South Central","South","AL",257.103648565022,262.295926205567,267.199978038275,262.267048303184
+"946",0,40,0,1,"Communicable","White","Female","Alabama",2008,"East South Central","South","AL",35.9341686717445,37.5537492856512,39.4693455808538,37.581370857654
+"947",0,40,0,1,"Injuries","White","Female","Alabama",2008,"East South Central","South","AL",46.2026658604638,47.9241384105419,49.6689885997302,47.9262548983643
+"948",0,40,0,1,"Non-communicable","White","Female","Alabama",2008,"East South Central","South","AL",124.352676376152,128.108589840087,131.567686010695,128.084907582709
+"949",0,40,1,0,"All other causes","Black","Male","Alabama",2008,"East South Central","South","AL",216.209907581003,225.709525686287,235.561379538355,225.910533487755
+"950",0,40,1,0,"Cancers","Black","Male","Alabama",2008,"East South Central","South","AL",304.918850781573,315.926904828796,327.287946583101,315.921074354842
+"951",0,40,1,0,"Cardiovascular","Black","Male","Alabama",2008,"East South Central","South","AL",458.888429245671,473.105233564787,486.957956621511,472.883920843857
+"952",0,40,1,0,"Communicable","Black","Male","Alabama",2008,"East South Central","South","AL",74.0511696040819,79.9140609546722,86.213010276756,79.9076989550833
+"953",0,40,1,0,"Injuries","Black","Male","Alabama",2008,"East South Central","South","AL",106.812519968556,111.674923247498,117.216996935956,111.805589360583
+"954",0,40,1,0,"Non-communicable","Black","Male","Alabama",2008,"East South Central","South","AL",179.300365330552,187.825920637499,196.243131346031,187.786429092697
+"955",0,40,1,1,"All other causes","Black","Female","Alabama",2008,"East South Central","South","AL",170.176475699915,176.961192367691,183.465007061063,176.944201705334
+"956",0,40,1,1,"Cancers","Black","Female","Alabama",2008,"East South Central","South","AL",167.473820439297,172.363478955304,177.422092368477,172.363845723554
+"957",0,40,1,1,"Cardiovascular","Black","Female","Alabama",2008,"East South Central","South","AL",307.793680267053,318.784340418438,329.270410044439,318.717542750556
+"958",0,40,1,1,"Communicable","Black","Female","Alabama",2008,"East South Central","South","AL",46.4633618124053,49.7143388700296,53.0067415216376,49.7420890922487
+"959",0,40,1,1,"Injuries","Black","Female","Alabama",2008,"East South Central","South","AL",30.2287927305486,32.1565566642098,34.0744303147051,32.16032011192
+"960",0,40,1,1,"Non-communicable","Black","Female","Alabama",2008,"East South Central","South","AL",129.538244951312,135.159739274041,140.961323271148,135.236514049242
+"961",0,41,0,0,"All other causes","White","Male","Alabama",2009,"East South Central","South","AL",176.584114375756,181.6047586715,186.885265665198,181.711410763723
+"962",0,41,0,0,"Cancers","White","Male","Alabama",2009,"East South Central","South","AL",236.738216714226,241.388981504279,245.813281634256,241.337062495342
+"963",0,41,0,0,"Cardiovascular","White","Male","Alabama",2009,"East South Central","South","AL",348.240318601129,355.450938026562,362.558721548544,355.427403001523
+"964",0,41,0,0,"Communicable","White","Male","Alabama",2009,"East South Central","South","AL",44.3682772356591,46.9371961675105,49.3437915318832,46.9698256827291
+"965",0,41,0,0,"Injuries","White","Male","Alabama",2009,"East South Central","South","AL",105.215922727778,108.170046065805,111.028031310016,108.109908568179
+"966",0,41,0,0,"Non-communicable","White","Male","Alabama",2009,"East South Central","South","AL",154.655300814024,159.205099966869,163.740776179418,159.210255280545
+"967",0,41,0,1,"All other causes","White","Female","Alabama",2009,"East South Central","South","AL",150.999022830906,154.634111067508,158.471604491713,154.646276652466
+"968",0,41,0,1,"Cancers","White","Female","Alabama",2009,"East South Central","South","AL",149.900415626261,152.730784583154,155.528829724982,152.696467608147
+"969",0,41,0,1,"Cardiovascular","White","Female","Alabama",2009,"East South Central","South","AL",245.504542665489,250.851410856208,255.931043671578,250.891255831855
+"970",0,41,0,1,"Communicable","White","Female","Alabama",2009,"East South Central","South","AL",34.7106534698551,36.3909439516949,37.9994470495383,36.3612062641529
+"971",0,41,0,1,"Injuries","White","Female","Alabama",2009,"East South Central","South","AL",46.3740861742867,48.1378279096263,49.9072287791327,48.1262566154712
+"972",0,41,0,1,"Non-communicable","White","Female","Alabama",2009,"East South Central","South","AL",124.589693973959,128.309859260977,131.920722644428,128.27713899409
+"973",0,41,1,0,"All other causes","Black","Male","Alabama",2009,"East South Central","South","AL",221.68827437533,231.190204319099,240.91018943359,231.2060359854
+"974",0,41,1,0,"Cancers","Black","Male","Alabama",2009,"East South Central","South","AL",298.81040136622,308.768664368121,319.82676020507,308.825896738262
+"975",0,41,1,0,"Cardiovascular","Black","Male","Alabama",2009,"East South Central","South","AL",444.37097280319,457.381884465138,471.288323444814,457.842136325119
+"976",0,41,1,0,"Communicable","Black","Male","Alabama",2009,"East South Central","South","AL",70.4027994032835,75.8680348595776,82.0439044222172,75.9210120120684
+"977",0,41,1,0,"Injuries","Black","Male","Alabama",2009,"East South Central","South","AL",100.917071562075,105.801923576561,110.755310920586,105.810857511592
+"978",0,41,1,0,"Non-communicable","Black","Male","Alabama",2009,"East South Central","South","AL",176.074362783766,183.204536003619,191.807072462704,183.435366544297
+"979",0,41,1,1,"All other causes","Black","Female","Alabama",2009,"East South Central","South","AL",171.788900088123,178.33271559441,185.398862236983,178.342396408085
+"980",0,41,1,1,"Cancers","Black","Female","Alabama",2009,"East South Central","South","AL",164.951537628886,169.846216882444,175.228984286508,169.852132929917
+"981",0,41,1,1,"Cardiovascular","Black","Female","Alabama",2009,"East South Central","South","AL",297.03972243137,307.562825084112,316.610127646592,307.355139223421
+"982",0,41,1,1,"Communicable","Black","Female","Alabama",2009,"East South Central","South","AL",46.1792311716775,49.2882966696251,52.928436735226,49.3640226884066
+"983",0,41,1,1,"Injuries","Black","Female","Alabama",2009,"East South Central","South","AL",29.8717156377576,31.7428406728369,33.5361218871523,31.7629440339925
+"984",0,41,1,1,"Non-communicable","Black","Female","Alabama",2009,"East South Central","South","AL",126.781790079387,132.26678417036,137.900441268148,132.260073306326
+"985",0,42,0,0,"All other causes","White","Male","Alabama",2010,"East South Central","South","AL",178.760322314851,183.476791016328,188.335566330165,183.546958178867
+"986",0,42,0,0,"Cancers","White","Male","Alabama",2010,"East South Central","South","AL",233.958954622772,238.35329920851,242.657842430307,238.323451122654
+"987",0,42,0,0,"Cardiovascular","White","Male","Alabama",2010,"East South Central","South","AL",339.698967362513,347.010534544649,353.327379709788,346.858414891548
+"988",0,42,0,0,"Communicable","White","Male","Alabama",2010,"East South Central","South","AL",45.9819615918127,48.4466544842961,51.0269391095563,48.4438684674721
+"989",0,42,0,0,"Injuries","White","Male","Alabama",2010,"East South Central","South","AL",104.729843104659,107.604965311602,110.278183014666,107.561269069791
+"990",0,42,0,0,"Non-communicable","White","Male","Alabama",2010,"East South Central","South","AL",154.973227938255,159.402706660894,163.397907980792,159.283905915622
+"991",0,42,0,1,"All other causes","White","Female","Alabama",2010,"East South Central","South","AL",160.075888723986,163.924668204736,168.157006399684,163.932885274977
+"992",0,42,0,1,"Cancers","White","Female","Alabama",2010,"East South Central","South","AL",147.353960066389,150.4449180738,153.282930622665,150.435933578057
+"993",0,42,0,1,"Cardiovascular","White","Female","Alabama",2010,"East South Central","South","AL",241.616761401625,246.190959180924,251.025208160299,246.259261320792
+"994",0,42,0,1,"Communicable","White","Female","Alabama",2010,"East South Central","South","AL",34.0180570959914,35.7508329799375,37.4459184503012,35.7538879176815
+"995",0,42,0,1,"Injuries","White","Female","Alabama",2010,"East South Central","South","AL",46.6397722507419,48.1518907531619,49.9309989766806,48.2097904439016
+"996",0,42,0,1,"Non-communicable","White","Female","Alabama",2010,"East South Central","South","AL",124.666682793632,128.062670617364,131.488921371125,128.106714660299
+"997",0,42,1,0,"All other causes","Black","Male","Alabama",2010,"East South Central","South","AL",224.777419131218,234.588897970087,245.150927375098,234.679487901649
+"998",0,42,1,0,"Cancers","Black","Male","Alabama",2010,"East South Central","South","AL",287.007316687731,297.820875402293,308.677957041315,297.921745614604
+"999",0,42,1,0,"Cardiovascular","Black","Male","Alabama",2010,"East South Central","South","AL",432.345493113769,444.587953275056,458.158293204887,444.655078247946
+"1000",0,42,1,0,"Communicable","Black","Male","Alabama",2010,"East South Central","South","AL",65.7475751153773,70.6315393712172,76.1370126227939,70.7123452127404
+"1001",0,42,1,0,"Injuries","Black","Male","Alabama",2010,"East South Central","South","AL",99.2444942845521,104.101407418602,108.520392888858,104.091876162564
+"1002",0,42,1,0,"Non-communicable","Black","Male","Alabama",2010,"East South Central","South","AL",170.604095743371,178.560385782446,186.328221513684,178.512009075205
+"1003",0,42,1,1,"All other causes","Black","Female","Alabama",2010,"East South Central","South","AL",176.051430350449,182.643447324451,189.685022760805,182.760167721142
+"1004",0,42,1,1,"Cancers","Black","Female","Alabama",2010,"East South Central","South","AL",162.692533119655,167.592576727208,172.386145756604,167.567748412433
+"1005",0,42,1,1,"Cardiovascular","Black","Female","Alabama",2010,"East South Central","South","AL",292.73880439587,302.827810183284,311.81290535758,302.879488507495
+"1006",0,42,1,1,"Communicable","Black","Female","Alabama",2010,"East South Central","South","AL",43.9734476206076,46.8487657932207,50.0190047644682,46.8966371988636
+"1007",0,42,1,1,"Injuries","Black","Female","Alabama",2010,"East South Central","South","AL",29.4230770653958,31.3268396667551,33.3588505400915,31.3527316212588
+"1008",0,42,1,1,"Non-communicable","Black","Female","Alabama",2010,"East South Central","South","AL",123.5397396175,128.807805517238,135.006887615915,129.014302272625
+"1009",0,43,0,0,"All other causes","White","Male","Alabama",2011,"East South Central","South","AL",188.01986250935,192.794571356387,198.434630149655,192.907152436541
+"1010",0,43,0,0,"Cancers","White","Male","Alabama",2011,"East South Central","South","AL",231.051126296607,235.270782996708,239.751158500816,235.30590962587
+"1011",0,43,0,0,"Cardiovascular","White","Male","Alabama",2011,"East South Central","South","AL",334.121773630912,340.489871902712,347.379644204927,340.544667330833
+"1012",0,43,0,0,"Communicable","White","Male","Alabama",2011,"East South Central","South","AL",45.8106277971424,48.463021036242,51.2982571076543,48.4397384981027
+"1013",0,43,0,0,"Injuries","White","Male","Alabama",2011,"East South Central","South","AL",104.232900655606,107.060559279608,109.870552845017,107.043330448875
+"1014",0,43,0,0,"Non-communicable","White","Male","Alabama",2011,"East South Central","South","AL",152.461140401565,156.623695271533,160.944684081494,156.660202407047
+"1015",0,43,0,1,"All other causes","White","Female","Alabama",2011,"East South Central","South","AL",169.247040545906,173.25587130445,177.56139866856,173.266017659629
+"1016",0,43,0,1,"Cancers","White","Female","Alabama",2011,"East South Central","South","AL",144.270038030684,147.30329828574,150.172080249112,147.233502327201
+"1017",0,43,0,1,"Cardiovascular","White","Female","Alabama",2011,"East South Central","South","AL",235.603116706244,240.732933998398,245.614041473206,240.738857852542
+"1018",0,43,0,1,"Communicable","White","Female","Alabama",2011,"East South Central","South","AL",34.2981298497268,35.891213382022,37.4536089668524,35.9032716897606
+"1019",0,43,0,1,"Injuries","White","Female","Alabama",2011,"East South Central","South","AL",46.6555439786904,48.335545219256,50.0281160873316,48.3548185304677
+"1020",0,43,0,1,"Non-communicable","White","Female","Alabama",2011,"East South Central","South","AL",123.24042130717,126.776018578195,130.415697697718,126.777645545416
+"1021",0,43,1,0,"All other causes","Black","Male","Alabama",2011,"East South Central","South","AL",225.678098594809,235.338478717963,245.128637495258,235.360733116767
+"1022",0,43,1,0,"Cancers","Black","Male","Alabama",2011,"East South Central","South","AL",282.454564479079,293.2834162841,303.644397742704,293.233949262763
+"1023",0,43,1,0,"Cardiovascular","Black","Male","Alabama",2011,"East South Central","South","AL",420.222300341492,432.356451171551,446.173939973173,432.580136730787
+"1024",0,43,1,0,"Communicable","Black","Male","Alabama",2011,"East South Central","South","AL",65.1246520143342,70.8446961669762,76.5897831749678,70.8962241280993
+"1025",0,43,1,0,"Injuries","Black","Male","Alabama",2011,"East South Central","South","AL",100.063537764334,104.731680158548,109.336426932941,104.724172268694
+"1026",0,43,1,0,"Non-communicable","Black","Male","Alabama",2011,"East South Central","South","AL",167.092144939701,174.463549764282,181.835922552993,174.367161386921
+"1027",0,43,1,1,"All other causes","Black","Female","Alabama",2011,"East South Central","South","AL",179.93324180453,186.914337088496,194.103628237863,186.981363297239
+"1028",0,43,1,1,"Cancers","Black","Female","Alabama",2011,"East South Central","South","AL",161.110456992668,165.862043540171,171.177973687561,166.035452652625
+"1029",0,43,1,1,"Cardiovascular","Black","Female","Alabama",2011,"East South Central","South","AL",287.585178643856,297.030175202453,306.253909713074,296.912111714523
+"1030",0,43,1,1,"Communicable","Black","Female","Alabama",2011,"East South Central","South","AL",43.7940428412386,46.7511427847541,49.9703583623432,46.76928948647
+"1031",0,43,1,1,"Injuries","Black","Female","Alabama",2011,"East South Central","South","AL",29.3674092862816,31.221245511171,33.272334475884,31.273527107734
+"1032",0,43,1,1,"Non-communicable","Black","Female","Alabama",2011,"East South Central","South","AL",117.399133249873,122.242382610783,127.993365317609,122.374028301926
+"1033",0,44,0,0,"All other causes","White","Male","Alabama",2012,"East South Central","South","AL",194.565038690466,199.628452636101,205.22644666843,199.681059112837
+"1034",0,44,0,0,"Cancers","White","Male","Alabama",2012,"East South Central","South","AL",227.548801665444,232.053245364985,236.679646265004,232.094872377804
+"1035",0,44,0,0,"Cardiovascular","White","Male","Alabama",2012,"East South Central","South","AL",329.991056880683,336.637061001079,343.081613813879,336.588080583837
+"1036",0,44,0,0,"Communicable","White","Male","Alabama",2012,"East South Central","South","AL",43.8412433307903,46.2106481091676,48.812563791968,46.1903528006668
+"1037",0,44,0,0,"Injuries","White","Male","Alabama",2012,"East South Central","South","AL",102.141216218084,105.091258441711,108.236997982095,105.118483237472
+"1038",0,44,0,0,"Non-communicable","White","Male","Alabama",2012,"East South Central","South","AL",150.504293217487,154.660938503444,158.640207359251,154.574428497984
+"1039",0,44,0,1,"All other causes","White","Female","Alabama",2012,"East South Central","South","AL",179.499534178253,183.770324261333,188.075863316831,183.724687899396
+"1040",0,44,0,1,"Cancers","White","Female","Alabama",2012,"East South Central","South","AL",142.628469958508,145.443368471802,148.60348716137,145.490568894817
+"1041",0,44,0,1,"Cardiovascular","White","Female","Alabama",2012,"East South Central","South","AL",231.633664590792,236.002639028449,240.817149782023,236.053648350498
+"1042",0,44,0,1,"Communicable","White","Female","Alabama",2012,"East South Central","South","AL",34.1113409138979,35.7137475561695,37.4427641558535,35.747206447796
+"1043",0,44,0,1,"Injuries","White","Female","Alabama",2012,"East South Central","South","AL",45.7968715720101,47.4678604177967,49.1617663241228,47.4853380709176
+"1044",0,44,0,1,"Non-communicable","White","Female","Alabama",2012,"East South Central","South","AL",122.347246895637,125.870349194436,129.462059181498,125.912018592689
+"1045",0,44,1,0,"All other causes","Black","Male","Alabama",2012,"East South Central","South","AL",225.448550600613,234.434799507272,245.239529559376,234.619451058997
+"1046",0,44,1,0,"Cancers","Black","Male","Alabama",2012,"East South Central","South","AL",276.50418067041,286.304589296251,297.269862799227,286.621298091084
+"1047",0,44,1,0,"Cardiovascular","Black","Male","Alabama",2012,"East South Central","South","AL",416.289529139911,428.837759923775,441.574270413199,428.904527661028
+"1048",0,44,1,0,"Communicable","Black","Male","Alabama",2012,"East South Central","South","AL",66.5075270335281,72.4002662877404,78.6142491201955,72.5478346568119
+"1049",0,44,1,0,"Injuries","Black","Male","Alabama",2012,"East South Central","South","AL",100.024025243315,104.636283522073,109.677092077377,104.715450637153
+"1050",0,44,1,0,"Non-communicable","Black","Male","Alabama",2012,"East South Central","South","AL",160.435167154423,168.133771428437,176.725974016879,168.3489982553
+"1051",0,44,1,1,"All other causes","Black","Female","Alabama",2012,"East South Central","South","AL",183.3686775243,190.739485731669,198.55891216837,190.876326930426
+"1052",0,44,1,1,"Cancers","Black","Female","Alabama",2012,"East South Central","South","AL",159.594276202554,164.72112797647,170.058426669696,164.788020322922
+"1053",0,44,1,1,"Cardiovascular","Black","Female","Alabama",2012,"East South Central","South","AL",280.142762601003,289.959357343182,299.508254532837,289.890877697799
+"1054",0,44,1,1,"Communicable","Black","Female","Alabama",2012,"East South Central","South","AL",43.1573770559809,46.2411251045551,49.8153562239596,46.3175704391525
+"1055",0,44,1,1,"Injuries","Black","Female","Alabama",2012,"East South Central","South","AL",29.0229540034739,31.144227447243,33.1851957461494,31.1528383973707
+"1056",0,44,1,1,"Non-communicable","Black","Female","Alabama",2012,"East South Central","South","AL",112.334260687297,118.406580404851,123.912047965532,118.411194389129
+"1057",0,45,0,0,"All other causes","White","Male","Alabama",2013,"East South Central","South","AL",197.123062702957,202.960257286419,209.049732672486,203.021989297784
+"1058",0,45,0,0,"Cancers","White","Male","Alabama",2013,"East South Central","South","AL",224.561027381769,229.400305839196,234.574803791686,229.412461173337
+"1059",0,45,0,0,"Cardiovascular","White","Male","Alabama",2013,"East South Central","South","AL",334.470147204145,341.491834996625,348.92908498121,341.5708138028
+"1060",0,45,0,0,"Communicable","White","Male","Alabama",2013,"East South Central","South","AL",46.5348474150102,49.2010983173971,52.1251509673873,49.2464291458263
+"1061",0,45,0,0,"Injuries","White","Male","Alabama",2013,"East South Central","South","AL",101.32140339224,104.891616506055,108.502777059917,104.935592090344
+"1062",0,45,0,0,"Non-communicable","White","Male","Alabama",2013,"East South Central","South","AL",150.573289704293,154.980664654652,159.685188004435,155.073475979063
+"1063",0,45,0,1,"All other causes","White","Female","Alabama",2013,"East South Central","South","AL",174.586452941896,179.104182217919,183.801342670953,179.049963791117
+"1064",0,45,0,1,"Cancers","White","Female","Alabama",2013,"East South Central","South","AL",141.616512915288,144.777615524603,148.383318802567,144.822435840513
+"1065",0,45,0,1,"Cardiovascular","White","Female","Alabama",2013,"East South Central","South","AL",228.688409943006,233.690802703533,238.618080249568,233.647894533881
+"1066",0,45,0,1,"Communicable","White","Female","Alabama",2013,"East South Central","South","AL",33.9949467244585,35.797523852602,37.6572116038056,35.792920230455
+"1067",0,45,0,1,"Injuries","White","Female","Alabama",2013,"East South Central","South","AL",45.5516829444917,47.3979080973614,49.4336042191953,47.4220024736338
+"1068",0,45,0,1,"Non-communicable","White","Female","Alabama",2013,"East South Central","South","AL",119.760870257195,123.370164328847,127.12554991337,123.412586009044
+"1069",0,45,1,0,"All other causes","Black","Male","Alabama",2013,"East South Central","South","AL",226.330075976368,237.948511435592,249.940960252049,238.111307971038
+"1070",0,45,1,0,"Cancers","Black","Male","Alabama",2013,"East South Central","South","AL",274.587671105946,284.840965945549,297.153983727201,285.169869484821
+"1071",0,45,1,0,"Cardiovascular","Black","Male","Alabama",2013,"East South Central","South","AL",417.262429736677,432.624677026139,447.782815130801,432.5888488739
+"1072",0,45,1,0,"Communicable","Black","Male","Alabama",2013,"East South Central","South","AL",66.400199319151,72.1168555659707,79.3205594597757,72.2895317288987
+"1073",0,45,1,0,"Injuries","Black","Male","Alabama",2013,"East South Central","South","AL",99.4750747848056,104.695201899501,110.380534045929,104.810506486503
+"1074",0,45,1,0,"Non-communicable","Black","Male","Alabama",2013,"East South Central","South","AL",155.983565626629,164.593980460669,174.587236582808,164.851197313663
+"1075",0,45,1,1,"All other causes","Black","Female","Alabama",2013,"East South Central","South","AL",178.500568295215,186.159489787506,194.45720837699,186.336773826503
+"1076",0,45,1,1,"Cancers","Black","Female","Alabama",2013,"East South Central","South","AL",157.852731722064,164.131742491417,170.852607407971,164.197124888669
+"1077",0,45,1,1,"Cardiovascular","Black","Female","Alabama",2013,"East South Central","South","AL",277.086393512863,286.513397188427,297.078291692519,286.656435441044
+"1078",0,45,1,1,"Communicable","Black","Female","Alabama",2013,"East South Central","South","AL",43.4585414810058,47.0675476093755,50.8785317411394,47.0927982071824
+"1079",0,45,1,1,"Injuries","Black","Female","Alabama",2013,"East South Central","South","AL",29.0794784748832,31.3277267255814,33.6276382848856,31.352282107102
+"1080",0,45,1,1,"Non-communicable","Black","Female","Alabama",2013,"East South Central","South","AL",111.66568415447,118.042995926251,124.388001082907,117.99362394138
