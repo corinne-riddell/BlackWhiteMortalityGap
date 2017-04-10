@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",25,1,0,0,"All other causes","White","Male","Missouri",1969,"West North Central","Midwest","MO",177.578950679046,183.046102942665,188.723481774962,183.142424384169
+"2",25,1,0,0,"Cancers","White","Male","Missouri",1969,"West North Central","Midwest","MO",234.471789113267,240.273991194063,246.037321660982,240.303266919315
+"3",25,1,0,0,"Cardiovascular","White","Male","Missouri",1969,"West North Central","Midwest","MO",865.465632597155,880.752225778712,894.922065340227,880.717291616251
+"4",25,1,0,0,"Communicable","White","Male","Missouri",1969,"West North Central","Midwest","MO",68.4834866208046,72.7427603568322,77.0779461555734,72.7078277713014
+"5",25,1,0,0,"Injuries","White","Male","Missouri",1969,"West North Central","Midwest","MO",119.32691271832,123.058041052805,126.874777904312,123.032809462491
+"6",25,1,0,0,"Non-communicable","White","Male","Missouri",1969,"West North Central","Midwest","MO",91.4225244349545,94.6249013696211,97.9873008336058,94.6075862768176
+"7",25,1,0,1,"All other causes","White","Female","Missouri",1969,"West North Central","Midwest","MO",110.059847396683,113.469085774981,116.971220346659,113.506770052495
+"8",25,1,0,1,"Cancers","White","Female","Missouri",1969,"West North Central","Midwest","MO",152.845591625124,156.115441834224,159.774194543897,156.087578632195
+"9",25,1,0,1,"Cardiovascular","White","Female","Missouri",1969,"West North Central","Midwest","MO",568.971158908298,578.476341324843,588.055070489034,578.427964811307
+"10",25,1,0,1,"Communicable","White","Female","Missouri",1969,"West North Central","Midwest","MO",39.897847375862,42.3927240731038,44.9614705365937,42.3563703780775
+"11",25,1,0,1,"Injuries","White","Female","Missouri",1969,"West North Central","Midwest","MO",46.8279550965869,48.8236765865058,50.7166821182194,48.8155342326051
+"12",25,1,0,1,"Non-communicable","White","Female","Missouri",1969,"West North Central","Midwest","MO",44.8911248314191,46.9984361612964,49.0180179557474,47.0016865546846
+"13",25,1,1,0,"All other causes","Black","Male","Missouri",1969,"West North Central","Midwest","MO",320.421296894737,340.990695484976,360.701457517126,341.039775408813
+"14",25,1,1,0,"Cancers","Black","Male","Missouri",1969,"West North Central","Midwest","MO",298.041353822164,316.64244844683,335.908530598753,316.355495823571
+"15",25,1,1,0,"Cardiovascular","Black","Male","Missouri",1969,"West North Central","Midwest","MO",815.740376939296,850.890545638413,885.512773471813,851.107719394244
+"16",25,1,1,0,"Communicable","Black","Male","Missouri",1969,"West North Central","Midwest","MO",93.5956424402707,105.272192064998,119.628816531941,105.704088116602
+"17",25,1,1,0,"Injuries","Black","Male","Missouri",1969,"West North Central","Midwest","MO",234.05646043179,249.659343976286,266.618993151711,249.879544711847
+"18",25,1,1,0,"Non-communicable","Black","Male","Missouri",1969,"West North Central","Midwest","MO",125.462910365527,135.667484555574,146.1094810986,135.688715929795
+"19",25,1,1,1,"All other causes","Black","Female","Missouri",1969,"West North Central","Midwest","MO",212.16998539138,225.942413861155,241.676294157667,226.256667067803
+"20",25,1,1,1,"Cancers","Black","Female","Missouri",1969,"West North Central","Midwest","MO",179.014028494713,188.932662201661,199.024221885721,189.032102860602
+"21",25,1,1,1,"Cardiovascular","Black","Female","Missouri",1969,"West North Central","Midwest","MO",653.46717829949,687.205749509264,722.275454307341,687.199362299991
+"22",25,1,1,1,"Communicable","Black","Female","Missouri",1969,"West North Central","Midwest","MO",47.2168938580749,54.0844446680376,61.0361733186916,54.1402796205452
+"23",25,1,1,1,"Injuries","Black","Female","Missouri",1969,"West North Central","Midwest","MO",54.5113742521544,60.520792779051,68.4550123779415,60.7544651773762
+"24",25,1,1,1,"Non-communicable","Black","Female","Missouri",1969,"West North Central","Midwest","MO",86.3691206935997,93.4536860979202,101.458039756792,93.5414843293074
+"25",25,2,0,0,"All other causes","White","Male","Missouri",1970,"West North Central","Midwest","MO",174.094212181688,178.479110224816,183.374476798129,178.566223091634
+"26",25,2,0,0,"Cancers","White","Male","Missouri",1970,"West North Central","Midwest","MO",237.216326161943,242.138672739368,247.012466872274,242.102569621418
+"27",25,2,0,0,"Cardiovascular","White","Male","Missouri",1970,"West North Central","Midwest","MO",858.618750446604,871.848238278059,885.40869805716,871.836259571209
+"28",25,2,0,0,"Communicable","White","Male","Missouri",1970,"West North Central","Midwest","MO",60.7062650968122,64.3942707109653,68.2455359392892,64.4024148515597
+"29",25,2,0,0,"Injuries","White","Male","Missouri",1970,"West North Central","Midwest","MO",118.211522054594,121.399518929763,124.608793956695,121.403274380441
+"30",25,2,0,0,"Non-communicable","White","Male","Missouri",1970,"West North Central","Midwest","MO",92.5842715557334,95.5236645108698,98.5442096747555,95.5696783612693
+"31",25,2,0,1,"All other causes","White","Female","Missouri",1970,"West North Central","Midwest","MO",106.716239464905,109.475442410564,112.448349065024,109.500578942003
+"32",25,2,0,1,"Cancers","White","Female","Missouri",1970,"West North Central","Midwest","MO",152.905750678511,156.003747137079,159.172687188278,156.024985964553
+"33",25,2,0,1,"Cardiovascular","White","Female","Missouri",1970,"West North Central","Midwest","MO",548.166492232206,557.109541456281,565.946884483145,557.01351372656
+"34",25,2,0,1,"Communicable","White","Female","Missouri",1970,"West North Central","Midwest","MO",37.2882131033848,39.2607454731127,41.1491118149439,39.2271641797703
+"35",25,2,0,1,"Injuries","White","Female","Missouri",1970,"West North Central","Midwest","MO",46.8733007053598,48.6668046576543,50.3634766338853,48.662797117578
+"36",25,2,0,1,"Non-communicable","White","Female","Missouri",1970,"West North Central","Midwest","MO",45.2055256006611,46.8819636368031,48.7649265267032,46.9281209063227
+"37",25,2,1,0,"All other causes","Black","Male","Missouri",1970,"West North Central","Midwest","MO",313.962952580363,330.643255171642,349.256161616294,331.245703742663
+"38",25,2,1,0,"Cancers","Black","Male","Missouri",1970,"West North Central","Midwest","MO",298.374127766471,314.942769342129,330.394947035312,314.452520718192
+"39",25,2,1,0,"Cardiovascular","Black","Male","Missouri",1970,"West North Central","Midwest","MO",816.483001632183,845.282723863632,875.341621308668,845.21058013094
+"40",25,2,1,0,"Communicable","Black","Male","Missouri",1970,"West North Central","Midwest","MO",87.8279360859403,98.3141407958246,108.793734798131,98.2224078200097
+"41",25,2,1,0,"Injuries","Black","Male","Missouri",1970,"West North Central","Midwest","MO",229.797418955981,244.467873536795,258.145436445925,244.452449908058
+"42",25,2,1,0,"Non-communicable","Black","Male","Missouri",1970,"West North Central","Midwest","MO",126.713009927922,135.56229051538,144.678516741139,135.55825877192
+"43",25,2,1,1,"All other causes","Black","Female","Missouri",1970,"West North Central","Midwest","MO",207.24906932248,218.445286043284,231.809962279839,218.827622279753
+"44",25,2,1,1,"Cancers","Black","Female","Missouri",1970,"West North Central","Midwest","MO",180.508310095939,189.363627219406,198.629753739201,189.432608073292
+"45",25,2,1,1,"Cardiovascular","Black","Female","Missouri",1970,"West North Central","Midwest","MO",629.273734648795,657.806705224848,685.949056427982,657.825167598373
+"46",25,2,1,1,"Communicable","Black","Female","Missouri",1970,"West North Central","Midwest","MO",46.0494046339325,51.7658369992681,58.3825638972747,51.9252001843285
+"47",25,2,1,1,"Injuries","Black","Female","Missouri",1970,"West North Central","Midwest","MO",53.8934995115872,59.7401375524574,67.0461394906318,59.9492959448715
+"48",25,2,1,1,"Non-communicable","Black","Female","Missouri",1970,"West North Central","Midwest","MO",85.8847726667767,92.3703387255148,99.4542088607291,92.3747998146159
+"49",25,3,0,0,"All other causes","White","Male","Missouri",1971,"West North Central","Midwest","MO",169.139096974577,173.540151181428,178.24369461235,173.599365251125
+"50",25,3,0,0,"Cancers","White","Male","Missouri",1971,"West North Central","Midwest","MO",238.745331103094,243.164693356584,248.030048749477,243.225717298664
+"51",25,3,0,0,"Cardiovascular","White","Male","Missouri",1971,"West North Central","Midwest","MO",846.892410955084,859.51160771819,873.120379233045,859.565508304162
+"52",25,3,0,0,"Communicable","White","Male","Missouri",1971,"West North Central","Midwest","MO",55.2228309647416,58.4622635061306,61.8928563889203,58.488591932622
+"53",25,3,0,0,"Injuries","White","Male","Missouri",1971,"West North Central","Midwest","MO",114.852584886701,117.737655180648,120.638038910776,117.744396949835
+"54",25,3,0,0,"Non-communicable","White","Male","Missouri",1971,"West North Central","Midwest","MO",93.5760402187205,96.4056267461711,99.1473199573512,96.3906751705435
+"55",25,3,0,1,"All other causes","White","Female","Missouri",1971,"West North Central","Midwest","MO",104.853862125863,107.761213905629,110.609056194175,107.755727807086
+"56",25,3,0,1,"Cancers","White","Female","Missouri",1971,"West North Central","Midwest","MO",153.089667524473,156.043656674986,158.820156557065,155.997247217617
+"57",25,3,0,1,"Cardiovascular","White","Female","Missouri",1971,"West North Central","Midwest","MO",545.115696222029,552.858169097095,561.798647705585,553.001350167613
+"58",25,3,0,1,"Communicable","White","Female","Missouri",1971,"West North Central","Midwest","MO",33.8968708404862,35.6700374381436,37.5495674863714,35.6932754147799
+"59",25,3,0,1,"Injuries","White","Female","Missouri",1971,"West North Central","Midwest","MO",46.2324751450935,47.8118942298716,49.4587235484432,47.8147200094443
+"60",25,3,0,1,"Non-communicable","White","Female","Missouri",1971,"West North Central","Midwest","MO",44.9126406468641,46.5476425793369,48.2147348822426,46.5769386892954
+"61",25,3,1,0,"All other causes","Black","Male","Missouri",1971,"West North Central","Midwest","MO",298.291391366376,313.144411715267,329.493977430758,313.55282100567
+"62",25,3,1,0,"Cancers","Black","Male","Missouri",1971,"West North Central","Midwest","MO",305.790227556662,320.751345366475,336.81738899103,320.959425233225
+"63",25,3,1,0,"Cardiovascular","Black","Male","Missouri",1971,"West North Central","Midwest","MO",812.267272468607,839.779322468657,869.828112031384,840.034646367402
+"64",25,3,1,0,"Communicable","Black","Male","Missouri",1971,"West North Central","Midwest","MO",83.8538065376753,93.8866421982659,104.162235103046,93.9092730073664
+"65",25,3,1,0,"Injuries","Black","Male","Missouri",1971,"West North Central","Midwest","MO",224.32925571878,237.818427222803,251.263044649284,237.805235360318
+"66",25,3,1,0,"Non-communicable","Black","Male","Missouri",1971,"West North Central","Midwest","MO",126.282224088646,135.128061644017,143.490296952045,135.082520890779
+"67",25,3,1,1,"All other causes","Black","Female","Missouri",1971,"West North Central","Midwest","MO",194.65211617444,204.501306138391,215.518062388082,204.587671254244
+"68",25,3,1,1,"Cancers","Black","Female","Missouri",1971,"West North Central","Midwest","MO",181.502537278461,190.215956135545,199.911688369285,190.409495004471
+"69",25,3,1,1,"Cardiovascular","Black","Female","Missouri",1971,"West North Central","Midwest","MO",607.15122414595,631.855425014971,656.519529669707,631.853017211588
+"70",25,3,1,1,"Communicable","Black","Female","Missouri",1971,"West North Central","Midwest","MO",43.7700657971865,49.1144404359181,55.6903891346342,49.3156756573321
+"71",25,3,1,1,"Injuries","Black","Female","Missouri",1971,"West North Central","Midwest","MO",52.9794348592268,58.9051513273079,65.1861346951633,59.0100651797273
+"72",25,3,1,1,"Non-communicable","Black","Female","Missouri",1971,"West North Central","Midwest","MO",84.3928379416315,90.604445356777,96.9504278615058,90.660843736167
+"73",25,4,0,0,"All other causes","White","Male","Missouri",1972,"West North Central","Midwest","MO",163.853761229449,168.061014511239,172.740725724721,168.095044573337
+"74",25,4,0,0,"Cancers","White","Male","Missouri",1972,"West North Central","Midwest","MO",242.588643712425,247.187334038424,252.037368903625,247.185424003094
+"75",25,4,0,0,"Cardiovascular","White","Male","Missouri",1972,"West North Central","Midwest","MO",867.235524343308,880.985745238058,893.873234664436,880.896573865181
+"76",25,4,0,0,"Communicable","White","Male","Missouri",1972,"West North Central","Midwest","MO",58.5834202069585,61.944146981912,65.551630715245,61.9658183566752
+"77",25,4,0,0,"Injuries","White","Male","Missouri",1972,"West North Central","Midwest","MO",113.279134032408,116.301148911856,119.207393557757,116.282845731231
+"78",25,4,0,0,"Non-communicable","White","Male","Missouri",1972,"West North Central","Midwest","MO",95.6081547013961,98.2373545044162,101.48016286224,98.309802212249
+"79",25,4,0,1,"All other causes","White","Female","Missouri",1972,"West North Central","Midwest","MO",101.414388573907,104.139800793344,107.045501555576,104.164410075436
+"80",25,4,0,1,"Cancers","White","Female","Missouri",1972,"West North Central","Midwest","MO",152.984098750778,155.90507899852,158.64820785264,155.876512181983
+"81",25,4,0,1,"Cardiovascular","White","Female","Missouri",1972,"West North Central","Midwest","MO",540.334492701422,548.401182071928,556.915473900703,548.409594423158
+"82",25,4,0,1,"Communicable","White","Female","Missouri",1972,"West North Central","Midwest","MO",33.5581373238339,35.2590451085468,37.0845806241085,35.2799749913919
+"83",25,4,0,1,"Injuries","White","Female","Missouri",1972,"West North Central","Midwest","MO",44.9120448858434,46.5241769103452,48.026769643329,46.4983609519941
+"84",25,4,0,1,"Non-communicable","White","Female","Missouri",1972,"West North Central","Midwest","MO",44.3387416562715,45.9537796330126,47.652497974167,45.9524293681533
+"85",25,4,1,0,"All other causes","Black","Male","Missouri",1972,"West North Central","Midwest","MO",286.04749164015,300.885905709319,316.890137454058,301.151999374974
+"86",25,4,1,0,"Cancers","Black","Male","Missouri",1972,"West North Central","Midwest","MO",316.477251902996,332.565285107596,349.822357729397,332.491538289204
+"87",25,4,1,0,"Cardiovascular","Black","Male","Missouri",1972,"West North Central","Midwest","MO",814.727073160403,843.660601320287,874.015397753726,844.086028257069
+"88",25,4,1,0,"Communicable","Black","Male","Missouri",1972,"West North Central","Midwest","MO",80.4521368926882,89.2600058949089,99.2149205663609,89.3659284397183
+"89",25,4,1,0,"Injuries","Black","Male","Missouri",1972,"West North Central","Midwest","MO",219.690979336147,231.911945770094,244.656654696351,232.007105683961
+"90",25,4,1,0,"Non-communicable","Black","Male","Missouri",1972,"West North Central","Midwest","MO",125.575757829527,133.596815255174,141.437860401732,133.478433141667
+"91",25,4,1,1,"All other causes","Black","Female","Missouri",1972,"West North Central","Midwest","MO",183.144613609552,193.362405294755,203.418919429777,193.287152387724
+"92",25,4,1,1,"Cancers","Black","Female","Missouri",1972,"West North Central","Midwest","MO",182.677763243561,190.715279328194,199.972730212662,190.910098664516
+"93",25,4,1,1,"Cardiovascular","Black","Female","Missouri",1972,"West North Central","Midwest","MO",606.087040008145,630.802869069966,654.677759698778,630.398287752775
+"94",25,4,1,1,"Communicable","Black","Female","Missouri",1972,"West North Central","Midwest","MO",43.028920007903,47.684734912189,53.4386933155855,47.8436543143848
+"95",25,4,1,1,"Injuries","Black","Female","Missouri",1972,"West North Central","Midwest","MO",52.0140565199327,57.3801883262385,63.1624448807365,57.5434241622778
+"96",25,4,1,1,"Non-communicable","Black","Female","Missouri",1972,"West North Central","Midwest","MO",83.3205344042039,88.9795127359961,95.2374761790382,88.9544786223358
+"97",25,5,0,0,"All other causes","White","Male","Missouri",1973,"West North Central","Midwest","MO",162.105892547034,166.207979839034,170.724111016659,166.347250448494
+"98",25,5,0,0,"Cancers","White","Male","Missouri",1973,"West North Central","Midwest","MO",242.744483960488,247.474776839929,252.249806447118,247.445296877521
+"99",25,5,0,0,"Cardiovascular","White","Male","Missouri",1973,"West North Central","Midwest","MO",847.703068189827,861.08180057169,874.705620824407,861.113035006946
+"100",25,5,0,0,"Communicable","White","Male","Missouri",1973,"West North Central","Midwest","MO",56.7867682976742,60.3289391369576,63.6521328432043,60.2991433258482
+"101",25,5,0,0,"Injuries","White","Male","Missouri",1973,"West North Central","Midwest","MO",112.417756309303,115.262028870645,118.168220120309,115.271962285654
+"102",25,5,0,0,"Non-communicable","White","Male","Missouri",1973,"West North Central","Midwest","MO",96.8807345935932,99.8560786486415,102.788233769923,99.8494909685603
+"103",25,5,0,1,"All other causes","White","Female","Missouri",1973,"West North Central","Midwest","MO",98.8773683877147,101.594943721821,104.321977438098,101.619373858024
+"104",25,5,0,1,"Cancers","White","Female","Missouri",1973,"West North Central","Midwest","MO",151.753427312576,154.563059009929,157.267418640695,154.561703328156
+"105",25,5,0,1,"Cardiovascular","White","Female","Missouri",1973,"West North Central","Midwest","MO",523.45863879183,531.463312793368,540.063398984898,531.537678278978
+"106",25,5,0,1,"Communicable","White","Female","Missouri",1973,"West North Central","Midwest","MO",32.2553512429301,33.795748209154,35.6645818767032,33.8289910076162
+"107",25,5,0,1,"Injuries","White","Female","Missouri",1973,"West North Central","Midwest","MO",43.4781611769,44.879710457073,46.3464712598824,44.8742662314534
+"108",25,5,0,1,"Non-communicable","White","Female","Missouri",1973,"West North Central","Midwest","MO",43.4331257436699,44.9937961244327,46.6662137986552,45.0221015209193
+"109",25,5,1,0,"All other causes","Black","Male","Missouri",1973,"West North Central","Midwest","MO",278.060724949935,290.970315152223,306.051175657022,291.257453435962
+"110",25,5,1,0,"Cancers","Black","Male","Missouri",1973,"West North Central","Midwest","MO",325.144747099797,340.149813250909,356.079354751314,340.341598677677
+"111",25,5,1,0,"Cardiovascular","Black","Male","Missouri",1973,"West North Central","Midwest","MO",806.014488896179,835.586659766223,867.761366220205,835.734207422195
+"112",25,5,1,0,"Communicable","Black","Male","Missouri",1973,"West North Central","Midwest","MO",78.4889859742263,87.0268156220087,96.8027687523782,87.2024696710888
+"113",25,5,1,0,"Injuries","Black","Male","Missouri",1973,"West North Central","Midwest","MO",216.664957174667,228.777031656948,241.442004761427,228.770710752762
+"114",25,5,1,0,"Non-communicable","Black","Male","Missouri",1973,"West North Central","Midwest","MO",125.807830429914,133.347495075679,141.321934098512,133.283384230473
+"115",25,5,1,1,"All other causes","Black","Female","Missouri",1973,"West North Central","Midwest","MO",174.969780731465,185.166223024964,194.859413836192,185.074152880772
+"116",25,5,1,1,"Cancers","Black","Female","Missouri",1973,"West North Central","Midwest","MO",183.145241080172,191.427392606881,200.385399547915,191.585878785416
+"117",25,5,1,1,"Cardiovascular","Black","Female","Missouri",1973,"West North Central","Midwest","MO",588.758481666628,610.377987696706,635.50725568443,610.630475657981
+"118",25,5,1,1,"Communicable","Black","Female","Missouri",1973,"West North Central","Midwest","MO",41.7529753855121,46.4262172811954,51.4239036183007,46.4964880907745
+"119",25,5,1,1,"Injuries","Black","Female","Missouri",1973,"West North Central","Midwest","MO",51.3196792176988,56.540116217598,61.7000167497219,56.4852429028369
+"120",25,5,1,1,"Non-communicable","Black","Female","Missouri",1973,"West North Central","Midwest","MO",81.4753538941467,86.9519993484194,93.0022818528577,86.997561822211
+"121",25,6,0,0,"All other causes","White","Male","Missouri",1974,"West North Central","Midwest","MO",160.460223798429,164.399207149114,168.892965561911,164.446801754264
+"122",25,6,0,0,"Cancers","White","Male","Missouri",1974,"West North Central","Midwest","MO",242.690199855118,247.420368990749,251.934323899946,247.403140944699
+"123",25,6,0,0,"Cardiovascular","White","Male","Missouri",1974,"West North Central","Midwest","MO",810.628647271153,822.482982378399,835.509149461434,822.521142334608
+"124",25,6,0,0,"Communicable","White","Male","Missouri",1974,"West North Central","Midwest","MO",53.1730272222803,56.5133259209893,59.7923974712721,56.5171883410015
+"125",25,6,0,0,"Injuries","White","Male","Missouri",1974,"West North Central","Midwest","MO",108.768956293127,111.438379543655,114.345916117191,111.506885612881
+"126",25,6,0,0,"Non-communicable","White","Male","Missouri",1974,"West North Central","Midwest","MO",95.9240937789647,98.6665177575007,101.639228966328,98.7056375291807
+"127",25,6,0,1,"All other causes","White","Female","Missouri",1974,"West North Central","Midwest","MO",97.3450617291973,100.205141054682,102.817327740622,100.204186631947
+"128",25,6,0,1,"Cancers","White","Female","Missouri",1974,"West North Central","Midwest","MO",152.069080670063,154.504749516879,157.313359213883,154.557528936683
+"129",25,6,0,1,"Cardiovascular","White","Female","Missouri",1974,"West North Central","Midwest","MO",508.253811565567,515.809043402684,523.632381548329,515.7910270259
+"130",25,6,0,1,"Communicable","White","Female","Missouri",1974,"West North Central","Midwest","MO",30.9598493271872,32.5391109148746,34.2577604916292,32.5373252735433
+"131",25,6,0,1,"Injuries","White","Female","Missouri",1974,"West North Central","Midwest","MO",41.7693498632062,43.11558295933,44.5272453253025,43.1067971819655
+"132",25,6,0,1,"Non-communicable","White","Female","Missouri",1974,"West North Central","Midwest","MO",42.193383233069,43.7142676769299,45.2162244261821,43.6990201332155
+"133",25,6,1,0,"All other causes","Black","Male","Missouri",1974,"West North Central","Midwest","MO",268.418631108378,280.859799214928,294.920584683565,281.148012060314
+"134",25,6,1,0,"Cancers","Black","Male","Missouri",1974,"West North Central","Midwest","MO",332.307563707313,346.59808323107,363.923355607648,347.085764986535
+"135",25,6,1,0,"Cardiovascular","Black","Male","Missouri",1974,"West North Central","Midwest","MO",779.457951389112,808.31377294502,837.396785371996,808.515673340214
+"136",25,6,1,0,"Communicable","Black","Male","Missouri",1974,"West North Central","Midwest","MO",77.774162013852,86.2292956870365,96.0017513473418,86.3216965238184
+"137",25,6,1,0,"Injuries","Black","Male","Missouri",1974,"West North Central","Midwest","MO",210.756382141389,222.695716304454,235.832325616668,222.888332385723
+"138",25,6,1,0,"Non-communicable","Black","Male","Missouri",1974,"West North Central","Midwest","MO",122.704384620238,130.411728927693,137.792536780962,130.334402081182
+"139",25,6,1,1,"All other causes","Black","Female","Missouri",1974,"West North Central","Midwest","MO",172.297878980362,181.82213904902,191.646133863874,181.883066474369
+"140",25,6,1,1,"Cancers","Black","Female","Missouri",1974,"West North Central","Midwest","MO",183.222956908951,191.778791968077,199.954280658482,191.809673679886
+"141",25,6,1,1,"Cardiovascular","Black","Female","Missouri",1974,"West North Central","Midwest","MO",566.700579702365,590.740806474106,615.758305559081,590.991469758296
+"142",25,6,1,1,"Communicable","Black","Female","Missouri",1974,"West North Central","Midwest","MO",40.5823354253876,45.2293576668622,49.7856315852369,45.2214277663946
+"143",25,6,1,1,"Injuries","Black","Female","Missouri",1974,"West North Central","Midwest","MO",50.3386470909706,55.5706351252284,60.455629244605,55.4681066265752
+"144",25,6,1,1,"Non-communicable","Black","Female","Missouri",1974,"West North Central","Midwest","MO",79.0743460118069,84.6006280973288,90.2338553682393,84.5681515354263
+"145",25,7,0,0,"All other causes","White","Male","Missouri",1975,"West North Central","Midwest","MO",156.332693224787,160.488456954413,164.694924480902,160.566979390789
+"146",25,7,0,0,"Cancers","White","Male","Missouri",1975,"West North Central","Midwest","MO",245.820691517169,250.47265202644,255.029108678519,250.529508504454
+"147",25,7,0,0,"Cardiovascular","White","Male","Missouri",1975,"West North Central","Midwest","MO",764.678553568476,776.834156229444,789.512039060231,777.022194789607
+"148",25,7,0,0,"Communicable","White","Male","Missouri",1975,"West North Central","Midwest","MO",54.6775719404535,57.683664262494,61.285381645662,57.7961594906518
+"149",25,7,0,0,"Injuries","White","Male","Missouri",1975,"West North Central","Midwest","MO",105.9101419152,108.803246949623,111.67010885494,108.79653111411
+"150",25,7,0,0,"Non-communicable","White","Male","Missouri",1975,"West North Central","Midwest","MO",94.7298414017867,97.5164235960775,100.444610498464,97.539617680488
+"151",25,7,0,1,"All other causes","White","Female","Missouri",1975,"West North Central","Midwest","MO",96.4752196455803,99.2391879465415,102.004118898363,99.2326043423329
+"152",25,7,0,1,"Cancers","White","Female","Missouri",1975,"West North Central","Midwest","MO",152.379878329555,154.987792055697,157.334618261695,154.950465042835
+"153",25,7,0,1,"Cardiovascular","White","Female","Missouri",1975,"West North Central","Midwest","MO",463.504674428269,470.506609517229,477.646922199828,470.548301850372
+"154",25,7,0,1,"Communicable","White","Female","Missouri",1975,"West North Central","Midwest","MO",31.15543225037,32.8274221573684,34.3458521007225,32.8307879149122
+"155",25,7,0,1,"Injuries","White","Female","Missouri",1975,"West North Central","Midwest","MO",40.4475458748697,41.7884699258855,43.0895179542253,41.78772021846
+"156",25,7,0,1,"Non-communicable","White","Female","Missouri",1975,"West North Central","Midwest","MO",41.5594627109865,43.0254652840378,44.6010761607166,43.0426880634031
+"157",25,7,1,0,"All other causes","Black","Male","Missouri",1975,"West North Central","Midwest","MO",261.867465365985,273.963109791727,287.788547768846,274.273891809646
+"158",25,7,1,0,"Cancers","Black","Male","Missouri",1975,"West North Central","Midwest","MO",334.322825543438,349.936599839555,366.789694510932,349.924709863757
+"159",25,7,1,0,"Cardiovascular","Black","Male","Missouri",1975,"West North Central","Midwest","MO",759.880094813679,785.492954231835,812.956954949271,785.706047030753
+"160",25,7,1,0,"Communicable","Black","Male","Missouri",1975,"West North Central","Midwest","MO",75.217004884395,83.8239276969651,93.9509365448563,84.1311850758168
+"161",25,7,1,0,"Injuries","Black","Male","Missouri",1975,"West North Central","Midwest","MO",204.32094858838,215.316153608111,228.01376795129,215.4195831403
+"162",25,7,1,0,"Non-communicable","Black","Male","Missouri",1975,"West North Central","Midwest","MO",121.388545111479,129.131268472006,136.929439196741,129.140840415007
+"163",25,7,1,1,"All other causes","Black","Female","Missouri",1975,"West North Central","Midwest","MO",169.639790214782,178.410815153226,187.195918297613,178.514940761653
+"164",25,7,1,1,"Cancers","Black","Female","Missouri",1975,"West North Central","Midwest","MO",185.301626858981,193.811391001796,202.753784190199,193.701186480065
+"165",25,7,1,1,"Cardiovascular","Black","Female","Missouri",1975,"West North Central","Midwest","MO",537.502683773177,560.665396061199,582.601916483146,560.477290723332
+"166",25,7,1,1,"Communicable","Black","Female","Missouri",1975,"West North Central","Midwest","MO",39.9967001845732,44.6633666684625,49.5583967597086,44.6864451017315
+"167",25,7,1,1,"Injuries","Black","Female","Missouri",1975,"West North Central","Midwest","MO",49.9851909108646,54.7829653941068,59.6741305410733,54.8058284059137
+"168",25,7,1,1,"Non-communicable","Black","Female","Missouri",1975,"West North Central","Midwest","MO",76.8111242950617,82.3384610885933,87.9143184808375,82.4144272207156
+"169",25,8,0,0,"All other causes","White","Male","Missouri",1976,"West North Central","Midwest","MO",153.925771175219,157.680520324108,162.090950562917,157.778952516394
+"170",25,8,0,0,"Cancers","White","Male","Missouri",1976,"West North Central","Midwest","MO",250.47540342076,255.056682075582,260.241496853104,255.246923898064
+"171",25,8,0,0,"Cardiovascular","White","Male","Missouri",1976,"West North Central","Midwest","MO",740.666123160669,754.573370898303,766.331011582648,754.356696782018
+"172",25,8,0,0,"Communicable","White","Male","Missouri",1976,"West North Central","Midwest","MO",53.6320747471518,56.9976254933373,60.4429658825762,56.9694332647113
+"173",25,8,0,0,"Injuries","White","Male","Missouri",1976,"West North Central","Midwest","MO",104.535246016939,107.348381560637,110.016817133713,107.336644804036
+"174",25,8,0,0,"Non-communicable","White","Male","Missouri",1976,"West North Central","Midwest","MO",95.0231536069876,97.8173979836376,100.667617209239,97.8177712243414
+"175",25,8,0,1,"All other causes","White","Female","Missouri",1976,"West North Central","Midwest","MO",94.4717202379205,97.1349281496452,99.8444581612197,97.1133328377056
+"176",25,8,0,1,"Cancers","White","Female","Missouri",1976,"West North Central","Midwest","MO",151.789938521626,154.707435642996,157.387455549132,154.695630325949
+"177",25,8,0,1,"Cardiovascular","White","Female","Missouri",1976,"West North Central","Midwest","MO",455.838828349349,462.858121803376,470.754207349286,462.999884347528
+"178",25,8,0,1,"Communicable","White","Female","Missouri",1976,"West North Central","Midwest","MO",31.2777973779283,32.855559568988,34.6230965016748,32.8764644384927
+"179",25,8,0,1,"Injuries","White","Female","Missouri",1976,"West North Central","Midwest","MO",39.5494749592609,40.9421012697968,42.2760645675206,40.9131452618272
+"180",25,8,0,1,"Non-communicable","White","Female","Missouri",1976,"West North Central","Midwest","MO",41.5518795772723,43.0473874963477,44.484265768813,43.0504570800297
+"181",25,8,1,0,"All other causes","Black","Male","Missouri",1976,"West North Central","Midwest","MO",251.361059764464,264.005669112456,277.436906391278,264.182901915741
+"182",25,8,1,0,"Cancers","Black","Male","Missouri",1976,"West North Central","Midwest","MO",339.923393573411,355.07933663953,372.18300103912,355.27523541888
+"183",25,8,1,0,"Cardiovascular","Black","Male","Missouri",1976,"West North Central","Midwest","MO",743.492265537719,769.643557951582,796.168266552524,769.473961758866
+"184",25,8,1,0,"Communicable","Black","Male","Missouri",1976,"West North Central","Midwest","MO",73.9645788966966,82.9710169783892,92.9930123925374,83.1264340742963
+"185",25,8,1,0,"Injuries","Black","Male","Missouri",1976,"West North Central","Midwest","MO",198.173757312089,207.980208018779,219.269497951377,208.261070970452
+"186",25,8,1,0,"Non-communicable","Black","Male","Missouri",1976,"West North Central","Midwest","MO",120.281003155729,127.430608083937,135.176583164146,127.462238669389
+"187",25,8,1,1,"All other causes","Black","Female","Missouri",1976,"West North Central","Midwest","MO",166.513076481676,175.528647540999,184.638140209009,175.55943626091
+"188",25,8,1,1,"Cancers","Black","Female","Missouri",1976,"West North Central","Midwest","MO",186.22096825954,194.793035554892,203.562165460526,194.832753653553
+"189",25,8,1,1,"Cardiovascular","Black","Female","Missouri",1976,"West North Central","Midwest","MO",514.723568409292,536.000098654741,558.10669448947,536.175766967999
+"190",25,8,1,1,"Communicable","Black","Female","Missouri",1976,"West North Central","Midwest","MO",39.5453472393468,44.5012377233345,49.5312203503712,44.5411224467728
+"191",25,8,1,1,"Injuries","Black","Female","Missouri",1976,"West North Central","Midwest","MO",49.6366705110364,54.443656925507,59.2401726418351,54.454706156844
+"192",25,8,1,1,"Non-communicable","Black","Female","Missouri",1976,"West North Central","Midwest","MO",76.1203718559741,81.4574874556198,86.5939788950644,81.3922214085848
+"193",25,9,0,0,"All other causes","White","Male","Missouri",1977,"West North Central","Midwest","MO",151.306053072126,155.287098367683,159.552564616898,155.387208024178
+"194",25,9,0,0,"Cancers","White","Male","Missouri",1977,"West North Central","Midwest","MO",252.267381554541,257.17888362846,261.984302692867,257.1562861277
+"195",25,9,0,0,"Cardiovascular","White","Male","Missouri",1977,"West North Central","Midwest","MO",717.205018428796,728.678631582058,739.757424496435,728.747658915727
+"196",25,9,0,0,"Communicable","White","Male","Missouri",1977,"West North Central","Midwest","MO",50.7244285408918,53.9616789980861,57.2912161427755,53.9868828933242
+"197",25,9,0,0,"Injuries","White","Male","Missouri",1977,"West North Central","Midwest","MO",103.275608597604,105.802651425955,108.444392781294,105.838529576109
+"198",25,9,0,0,"Non-communicable","White","Male","Missouri",1977,"West North Central","Midwest","MO",94.198629729218,97.0038823752743,99.9342235136301,97.0571590951073
+"199",25,9,0,1,"All other causes","White","Female","Missouri",1977,"West North Central","Midwest","MO",94.599970243026,97.3158661481328,100.029483576319,97.2937898192863
+"200",25,9,0,1,"Cancers","White","Female","Missouri",1977,"West North Central","Midwest","MO",152.464287603965,155.236150887627,158.031436162123,155.239653953981
+"201",25,9,0,1,"Cardiovascular","White","Female","Missouri",1977,"West North Central","Midwest","MO",440.296572807346,447.00252966168,454.421445975932,447.186031337792
+"202",25,9,0,1,"Communicable","White","Female","Missouri",1977,"West North Central","Midwest","MO",29.6723157731884,31.2429455226038,32.9011921327232,31.2362972014172
+"203",25,9,0,1,"Injuries","White","Female","Missouri",1977,"West North Central","Midwest","MO",38.9298696846193,40.15567425599,41.3195738091589,40.1574502782534
+"204",25,9,0,1,"Non-communicable","White","Female","Missouri",1977,"West North Central","Midwest","MO",42.0056282928493,43.3856121701257,44.8916918331913,43.413213713053
+"205",25,9,1,0,"All other causes","Black","Male","Missouri",1977,"West North Central","Midwest","MO",250.133549811148,262.114105871161,275.143684938018,262.327455945091
+"206",25,9,1,0,"Cancers","Black","Male","Missouri",1977,"West North Central","Midwest","MO",340.858036608962,356.615327916008,374.134934226776,356.913277005587
+"207",25,9,1,0,"Cardiovascular","Black","Male","Missouri",1977,"West North Central","Midwest","MO",727.550380121461,752.438927264513,778.09090118108,753.059896260157
+"208",25,9,1,0,"Communicable","Black","Male","Missouri",1977,"West North Central","Midwest","MO",71.0900093040999,79.4327133873631,89.678774783757,79.7358159881707
+"209",25,9,1,0,"Injuries","Black","Male","Missouri",1977,"West North Central","Midwest","MO",194.064547787859,204.927230323778,215.452892529565,204.919733189348
+"210",25,9,1,0,"Non-communicable","Black","Male","Missouri",1977,"West North Central","Midwest","MO",116.947111508333,124.526749258064,132.710828116677,124.674359704235
+"211",25,9,1,1,"All other causes","Black","Female","Missouri",1977,"West North Central","Midwest","MO",161.646054508761,170.68231573569,179.519235364386,170.651068216517
+"212",25,9,1,1,"Cancers","Black","Female","Missouri",1977,"West North Central","Midwest","MO",188.447057060437,197.100839192769,205.048450482091,196.932288039194
+"213",25,9,1,1,"Cardiovascular","Black","Female","Missouri",1977,"West North Central","Midwest","MO",507.020629119595,529.024568292978,551.415804812922,528.992333204259
+"214",25,9,1,1,"Communicable","Black","Female","Missouri",1977,"West North Central","Midwest","MO",39.8414721714766,44.2657513793277,49.4595130438053,44.3225695073632
+"215",25,9,1,1,"Injuries","Black","Female","Missouri",1977,"West North Central","Midwest","MO",49.556672973463,54.3004963472132,58.8972790892078,54.2620525018526
+"216",25,9,1,1,"Non-communicable","Black","Female","Missouri",1977,"West North Central","Midwest","MO",75.1750592806635,80.5623777107668,86.1005893113581,80.580008038465
+"217",25,10,0,0,"All other causes","White","Male","Missouri",1978,"West North Central","Midwest","MO",152.997963386862,156.977061469249,161.327207473412,157.032944558659
+"218",25,10,0,0,"Cancers","White","Male","Missouri",1978,"West North Central","Midwest","MO",255.552366347661,259.987243693457,265.070339609427,260.098274588243
+"219",25,10,0,0,"Cardiovascular","White","Male","Missouri",1978,"West North Central","Midwest","MO",696.771737465838,708.592033188922,720.977830536816,708.606869870786
+"220",25,10,0,0,"Communicable","White","Male","Missouri",1978,"West North Central","Midwest","MO",54.9505732772075,58.1797062268548,61.8036813794479,58.2563157755265
+"221",25,10,0,0,"Injuries","White","Male","Missouri",1978,"West North Central","Midwest","MO",102.994977321663,105.62731890522,108.442261525959,105.59878971374
+"222",25,10,0,0,"Non-communicable","White","Male","Missouri",1978,"West North Central","Midwest","MO",94.1632185195784,97.036542092951,99.9037020755705,97.0337919599596
+"223",25,10,0,1,"All other causes","White","Female","Missouri",1978,"West North Central","Midwest","MO",93.1016363487116,95.484039933322,98.2353798086103,95.5060850072399
+"224",25,10,0,1,"Cancers","White","Female","Missouri",1978,"West North Central","Midwest","MO",153.965470296764,156.793345200229,159.421557665699,156.771088977255
+"225",25,10,0,1,"Cardiovascular","White","Female","Missouri",1978,"West North Central","Midwest","MO",428.634906156646,435.314919256875,442.411128065737,435.306789823436
+"226",25,10,0,1,"Communicable","White","Female","Missouri",1978,"West North Central","Midwest","MO",31.7203213154056,33.2354154448346,34.9957141387351,33.2697845723405
+"227",25,10,0,1,"Injuries","White","Female","Missouri",1978,"West North Central","Midwest","MO",37.9772197835681,39.2073966373676,40.5730085125091,39.2453475023295
+"228",25,10,0,1,"Non-communicable","White","Female","Missouri",1978,"West North Central","Midwest","MO",42.0495547689647,43.5970563839278,45.0678898356234,43.6060313049254
+"229",25,10,1,0,"All other causes","Black","Male","Missouri",1978,"West North Central","Midwest","MO",242.955925131317,255.138940448288,266.751206239762,255.050992761193
+"230",25,10,1,0,"Cancers","Black","Male","Missouri",1978,"West North Central","Midwest","MO",347.980660596477,363.368169016615,380.38268327193,363.563560035742
+"231",25,10,1,0,"Cardiovascular","Black","Male","Missouri",1978,"West North Central","Midwest","MO",709.681548578677,733.065018760676,760.817643948423,733.315869884387
+"232",25,10,1,0,"Communicable","Black","Male","Missouri",1978,"West North Central","Midwest","MO",69.3525463267388,78.0336406976566,87.1796678920458,78.1771224343918
+"233",25,10,1,0,"Injuries","Black","Male","Missouri",1978,"West North Central","Midwest","MO",197.173899084372,208.311933007961,220.318997088273,208.142262800217
+"234",25,10,1,0,"Non-communicable","Black","Male","Missouri",1978,"West North Central","Midwest","MO",115.154299975919,122.908528363982,130.75010309111,122.911824452715
+"235",25,10,1,1,"All other causes","Black","Female","Missouri",1978,"West North Central","Midwest","MO",160.429750165783,168.859996249835,177.981993929758,168.966840515465
+"236",25,10,1,1,"Cancers","Black","Female","Missouri",1978,"West North Central","Midwest","MO",191.656623165565,200.652383528644,209.310301465288,200.53084180851
+"237",25,10,1,1,"Cardiovascular","Black","Female","Missouri",1978,"West North Central","Midwest","MO",499.365301905099,519.534305489594,541.324461370448,519.800575176593
+"238",25,10,1,1,"Communicable","Black","Female","Missouri",1978,"West North Central","Midwest","MO",40.7325385881893,45.0385488616101,49.7580111459889,45.1631561226228
+"239",25,10,1,1,"Injuries","Black","Female","Missouri",1978,"West North Central","Midwest","MO",49.4327650948971,53.7560877147445,58.6700977172786,53.8146387487692
+"240",25,10,1,1,"Non-communicable","Black","Female","Missouri",1978,"West North Central","Midwest","MO",74.0460716144873,78.9007630850543,84.1584190657432,78.9362510180878
+"241",25,11,0,0,"All other causes","White","Male","Missouri",1979,"West North Central","Midwest","MO",150.865900438513,154.635452887181,158.899614937193,154.712326855823
+"242",25,11,0,0,"Cancers","White","Male","Missouri",1979,"West North Central","Midwest","MO",259.317256847087,264.28074454702,269.206248771148,264.231945448444
+"243",25,11,0,0,"Cardiovascular","White","Male","Missouri",1979,"West North Central","Midwest","MO",666.058606482677,676.786586605497,687.752570588239,676.819090770878
+"244",25,11,0,0,"Communicable","White","Male","Missouri",1979,"West North Central","Midwest","MO",48.4110214506013,51.496668239456,54.6234677620721,51.5092883753029
+"245",25,11,0,0,"Injuries","White","Male","Missouri",1979,"West North Central","Midwest","MO",100.707861165273,103.171310950099,105.913081580097,103.211266999702
+"246",25,11,0,0,"Non-communicable","White","Male","Missouri",1979,"West North Central","Midwest","MO",93.9769694772755,96.8205841310781,99.7988678330099,96.8454344539694
+"247",25,11,0,1,"All other causes","White","Female","Missouri",1979,"West North Central","Midwest","MO",92.9984408972087,95.2894917577247,97.9674160077358,95.3227732516298
+"248",25,11,0,1,"Cancers","White","Female","Missouri",1979,"West North Central","Midwest","MO",155.051172292056,157.46698631462,160.028589669268,157.478000360832
+"249",25,11,0,1,"Cardiovascular","White","Female","Missouri",1979,"West North Central","Midwest","MO",413.867648158744,420.685940007583,427.374646059507,420.703209507522
+"250",25,11,0,1,"Communicable","White","Female","Missouri",1979,"West North Central","Midwest","MO",28.2151019197759,29.6869251351884,31.3203134649486,29.6915228330661
+"251",25,11,0,1,"Injuries","White","Female","Missouri",1979,"West North Central","Midwest","MO",37.415053724747,38.688576748464,39.9202507212828,38.6751317387821
+"252",25,11,0,1,"Non-communicable","White","Female","Missouri",1979,"West North Central","Midwest","MO",42.7284374560754,44.2328873371543,45.7022641242148,44.222117067834
+"253",25,11,1,0,"All other causes","Black","Male","Missouri",1979,"West North Central","Midwest","MO",233.372459982086,245.759968073403,258.434613676197,245.855574311025
+"254",25,11,1,0,"Cancers","Black","Male","Missouri",1979,"West North Central","Midwest","MO",356.624427777231,372.216005242576,388.946827102198,372.641138569199
+"255",25,11,1,0,"Cardiovascular","Black","Male","Missouri",1979,"West North Central","Midwest","MO",694.152054382422,718.544294046534,744.952385252989,718.505629483927
+"256",25,11,1,0,"Communicable","Black","Male","Missouri",1979,"West North Central","Midwest","MO",66.5412781344168,75.0652234454635,84.1046943992121,75.1164883296745
+"257",25,11,1,0,"Injuries","Black","Male","Missouri",1979,"West North Central","Midwest","MO",200.368312008071,210.517850870101,221.20511848929,210.649644220564
+"258",25,11,1,0,"Non-communicable","Black","Male","Missouri",1979,"West North Central","Midwest","MO",114.00869573272,121.163976582658,128.549983619595,121.16917212247
+"259",25,11,1,1,"All other causes","Black","Female","Missouri",1979,"West North Central","Midwest","MO",156.540241844176,165.012084424936,173.604076302633,165.004190547512
+"260",25,11,1,1,"Cancers","Black","Female","Missouri",1979,"West North Central","Midwest","MO",195.15836985026,203.557534335061,211.618140364061,203.428887036191
+"261",25,11,1,1,"Cardiovascular","Black","Female","Missouri",1979,"West North Central","Midwest","MO",478.78881528766,499.422185480073,520.248695955256,499.521479126609
+"262",25,11,1,1,"Communicable","Black","Female","Missouri",1979,"West North Central","Midwest","MO",39.630079617382,44.291191727611,48.8556927630003,44.2361533570861
+"263",25,11,1,1,"Injuries","Black","Female","Missouri",1979,"West North Central","Midwest","MO",49.2612596081243,53.309526166861,57.5295260417334,53.3227277949894
+"264",25,11,1,1,"Non-communicable","Black","Female","Missouri",1979,"West North Central","Midwest","MO",71.722698406591,77.0018155846954,82.37872628957,77.0739142263208
+"265",25,12,0,0,"All other causes","White","Male","Missouri",1980,"West North Central","Midwest","MO",148.523037959293,152.523867247853,156.974809852812,152.543289983153
+"266",25,12,0,0,"Cancers","White","Male","Missouri",1980,"West North Central","Midwest","MO",259.531604303976,264.538247040534,269.349619189621,264.547463488983
+"267",25,12,0,0,"Cardiovascular","White","Male","Missouri",1980,"West North Central","Midwest","MO",660.245802805738,671.239810018711,681.927456898919,671.229204840133
+"268",25,12,0,0,"Communicable","White","Male","Missouri",1980,"West North Central","Midwest","MO",51.4876777693551,54.6250718896565,58.30833845981,54.6916867125881
+"269",25,12,0,0,"Injuries","White","Male","Missouri",1980,"West North Central","Midwest","MO",99.0382186522537,101.543127843468,104.008229642117,101.52306876919
+"270",25,12,0,0,"Non-communicable","White","Male","Missouri",1980,"West North Central","Midwest","MO",94.3870074751518,97.4358507516819,100.353553757048,97.4363534711943
+"271",25,12,0,1,"All other causes","White","Female","Missouri",1980,"West North Central","Midwest","MO",93.6196723615029,96.3208256700024,98.9987718093728,96.3840565470424
+"272",25,12,0,1,"Cancers","White","Female","Missouri",1980,"West North Central","Midwest","MO",156.122757348529,158.970706402158,161.739116007398,158.94960664783
+"273",25,12,0,1,"Cardiovascular","White","Female","Missouri",1980,"West North Central","Midwest","MO",412.29552865229,418.544069342734,425.009574933124,418.70459460093
+"274",25,12,0,1,"Communicable","White","Female","Missouri",1980,"West North Central","Midwest","MO",30.519009058048,32.0967796122625,33.748823715916,32.1417333196812
+"275",25,12,0,1,"Injuries","White","Female","Missouri",1980,"West North Central","Midwest","MO",37.2572162598169,38.5762074314291,39.8248414930332,38.5556939786858
+"276",25,12,0,1,"Non-communicable","White","Female","Missouri",1980,"West North Central","Midwest","MO",43.9360328725568,45.3122827953744,46.79990404558,45.3186994778932
+"277",25,12,1,0,"All other causes","Black","Male","Missouri",1980,"West North Central","Midwest","MO",226.203320396447,238.738047128165,249.957722180895,238.270010742939
+"278",25,12,1,0,"Cancers","Black","Male","Missouri",1980,"West North Central","Midwest","MO",361.558752662213,376.952335690896,394.339804351147,377.094873886555
+"279",25,12,1,0,"Cardiovascular","Black","Male","Missouri",1980,"West North Central","Midwest","MO",680.639422718454,705.433955559726,732.376606604551,705.60017190931
+"280",25,12,1,0,"Communicable","Black","Male","Missouri",1980,"West North Central","Midwest","MO",67.7908611274878,76.1897238662097,85.2799684958753,76.2292464247973
+"281",25,12,1,0,"Injuries","Black","Male","Missouri",1980,"West North Central","Midwest","MO",197.137624972442,207.790115088045,219.33230686661,207.982847646603
+"282",25,12,1,0,"Non-communicable","Black","Male","Missouri",1980,"West North Central","Midwest","MO",111.520199848514,119.63204735177,127.19656655368,119.552616526968
+"283",25,12,1,1,"All other causes","Black","Female","Missouri",1980,"West North Central","Midwest","MO",153.22774079108,161.229850596366,169.364999772231,161.208003616772
+"284",25,12,1,1,"Cancers","Black","Female","Missouri",1980,"West North Central","Midwest","MO",198.159378480577,206.738112407151,214.377742051161,206.628094973033
+"285",25,12,1,1,"Cardiovascular","Black","Female","Missouri",1980,"West North Central","Midwest","MO",488.854093218246,509.389976091375,528.473949444083,509.295324304503
+"286",25,12,1,1,"Communicable","Black","Female","Missouri",1980,"West North Central","Midwest","MO",39.7758335169225,43.9983112628294,48.3329875640822,44.0111302558352
+"287",25,12,1,1,"Injuries","Black","Female","Missouri",1980,"West North Central","Midwest","MO",48.6681707016533,52.7807977227558,56.8862104948453,52.7758078889729
+"288",25,12,1,1,"Non-communicable","Black","Female","Missouri",1980,"West North Central","Midwest","MO",70.4649327677329,75.2380542570509,80.4793157990151,75.3217342193178
+"289",25,13,0,0,"All other causes","White","Male","Missouri",1981,"West North Central","Midwest","MO",145.201936035837,149.239097584668,153.266819778096,149.19018109539
+"290",25,13,0,0,"Cancers","White","Male","Missouri",1981,"West North Central","Midwest","MO",261.921016988712,266.591556567198,271.527300532383,266.587479157711
+"291",25,13,0,0,"Cardiovascular","White","Male","Missouri",1981,"West North Central","Midwest","MO",646.844540792295,657.265657003333,667.996278206655,657.300362991627
+"292",25,13,0,0,"Communicable","White","Male","Missouri",1981,"West North Central","Midwest","MO",52.524890751484,55.5968560649295,58.988804193498,55.6791224853172
+"293",25,13,0,0,"Injuries","White","Male","Missouri",1981,"West North Central","Midwest","MO",94.3756609119196,96.8099452814196,99.277501278432,96.8378194399534
+"294",25,13,0,0,"Non-communicable","White","Male","Missouri",1981,"West North Central","Midwest","MO",95.9641730883879,98.9845449250238,102.000593759819,99.035468416251
+"295",25,13,0,1,"All other causes","White","Female","Missouri",1981,"West North Central","Midwest","MO",91.7162159845581,94.4170445835299,96.9482589200006,94.4340367961229
+"296",25,13,0,1,"Cancers","White","Female","Missouri",1981,"West North Central","Midwest","MO",157.754331512135,160.644940633891,163.44057059974,160.639593735585
+"297",25,13,0,1,"Cardiovascular","White","Female","Missouri",1981,"West North Central","Midwest","MO",396.26551171764,402.413900046517,408.906057021247,402.532185960474
+"298",25,13,0,1,"Communicable","White","Female","Missouri",1981,"West North Central","Midwest","MO",31.9761777538319,33.5671997443728,35.3560918379819,33.6073714293269
+"299",25,13,0,1,"Injuries","White","Female","Missouri",1981,"West North Central","Midwest","MO",36.41634663303,37.6247896402808,38.8806602957295,37.6237326269347
+"300",25,13,0,1,"Non-communicable","White","Female","Missouri",1981,"West North Central","Midwest","MO",45.8661607712737,47.4802956340027,49.0869033357508,47.4508481492553
+"301",25,13,1,0,"All other causes","Black","Male","Missouri",1981,"West North Central","Midwest","MO",222.519662740647,235.316660976968,247.513348369188,235.112634238178
+"302",25,13,1,0,"Cancers","Black","Male","Missouri",1981,"West North Central","Midwest","MO",359.813531482533,375.837179424533,391.784455146178,375.638104537344
+"303",25,13,1,0,"Cardiovascular","Black","Male","Missouri",1981,"West North Central","Midwest","MO",666.2578458591,690.766435792006,714.575972925465,690.725214089548
+"304",25,13,1,0,"Communicable","Black","Male","Missouri",1981,"West North Central","Midwest","MO",71.5742117082119,80.4958541786831,90.1770695260425,80.4848665346127
+"305",25,13,1,0,"Injuries","Black","Male","Missouri",1981,"West North Central","Midwest","MO",190.122288724395,200.599943451081,211.481779421471,200.785935319682
+"306",25,13,1,0,"Non-communicable","Black","Male","Missouri",1981,"West North Central","Midwest","MO",112.8133293506,120.644401082739,128.25706168898,120.554871004151
+"307",25,13,1,1,"All other causes","Black","Female","Missouri",1981,"West North Central","Midwest","MO",147.888653559485,155.507829327854,163.761544854018,155.678819299796
+"308",25,13,1,1,"Cancers","Black","Female","Missouri",1981,"West North Central","Midwest","MO",201.501270200033,209.474405015534,217.110407950183,209.499078711696
+"309",25,13,1,1,"Cardiovascular","Black","Female","Missouri",1981,"West North Central","Midwest","MO",473.211667698155,492.279725599841,511.872344136468,492.452714247881
+"310",25,13,1,1,"Communicable","Black","Female","Missouri",1981,"West North Central","Midwest","MO",39.8084676587247,43.9386152323896,48.4748161305086,43.9742426026884
+"311",25,13,1,1,"Injuries","Black","Female","Missouri",1981,"West North Central","Midwest","MO",46.6229105938104,50.4890037799822,54.5438347656309,50.5159752864682
+"312",25,13,1,1,"Non-communicable","Black","Female","Missouri",1981,"West North Central","Midwest","MO",70.0306098679903,74.6743651609354,80.3184579588877,74.8219552157804
+"313",25,14,0,0,"All other causes","White","Male","Missouri",1982,"West North Central","Midwest","MO",145.57022039654,149.44790283117,153.592290345513,149.49311319844
+"314",25,14,0,0,"Cancers","White","Male","Missouri",1982,"West North Central","Midwest","MO",261.62621112697,266.332334715159,270.774948999522,266.345416303587
+"315",25,14,0,0,"Cardiovascular","White","Male","Missouri",1982,"West North Central","Midwest","MO",625.249008180966,636.112754156191,645.954538220897,635.960528121255
+"316",25,14,0,0,"Communicable","White","Male","Missouri",1982,"West North Central","Midwest","MO",49.6123604703448,52.4509134095692,55.6810549638915,52.4920060340692
+"317",25,14,0,0,"Injuries","White","Male","Missouri",1982,"West North Central","Midwest","MO",90.7430572262945,93.1216965974666,95.6006314608762,93.1701655834452
+"318",25,14,0,0,"Non-communicable","White","Male","Missouri",1982,"West North Central","Midwest","MO",99.0584893688491,102.013620390817,105.366336212775,102.070247678522
+"319",25,14,0,1,"All other causes","White","Female","Missouri",1982,"West North Central","Midwest","MO",90.3180728390958,92.8173970901946,95.3657177030736,92.8108576323063
+"320",25,14,0,1,"Cancers","White","Female","Missouri",1982,"West North Central","Midwest","MO",160.549798561113,163.241668300826,166.066161778417,163.275757148212
+"321",25,14,0,1,"Cardiovascular","White","Female","Missouri",1982,"West North Central","Midwest","MO",384.59333390077,390.552500233724,396.67479306536,390.651056990119
+"322",25,14,0,1,"Communicable","White","Female","Missouri",1982,"West North Central","Midwest","MO",28.9570705563756,30.500185447817,31.9718790360109,30.4959084026673
+"323",25,14,0,1,"Injuries","White","Female","Missouri",1982,"West North Central","Midwest","MO",35.2653227750021,36.3808327803027,37.5789780413123,36.4018274226619
+"324",25,14,0,1,"Non-communicable","White","Female","Missouri",1982,"West North Central","Midwest","MO",46.9274761642803,48.5871092137583,50.2842097075819,48.590165905792
+"325",25,14,1,0,"All other causes","Black","Male","Missouri",1982,"West North Central","Midwest","MO",222.531666391585,234.228728771794,246.581470153679,234.245200997287
+"326",25,14,1,0,"Cancers","Black","Male","Missouri",1982,"West North Central","Midwest","MO",372.646512239301,388.495745855163,406.331681952996,388.61288836048
+"327",25,14,1,0,"Cardiovascular","Black","Male","Missouri",1982,"West North Central","Midwest","MO",658.598151109053,682.661410272113,707.214972546967,682.626087731584
+"328",25,14,1,0,"Communicable","Black","Male","Missouri",1982,"West North Central","Midwest","MO",70.2616369731551,78.6488041766614,88.0965764525557,78.8035310212523
+"329",25,14,1,0,"Injuries","Black","Male","Missouri",1982,"West North Central","Midwest","MO",178.474916992662,188.282106436661,198.690976482606,188.323479216398
+"330",25,14,1,0,"Non-communicable","Black","Male","Missouri",1982,"West North Central","Midwest","MO",113.788557156633,122.19334236236,129.559066129355,122.204802798742
+"331",25,14,1,1,"All other causes","Black","Female","Missouri",1982,"West North Central","Midwest","MO",145.263749406613,152.964226707788,161.884915198433,153.12114970163
+"332",25,14,1,1,"Cancers","Black","Female","Missouri",1982,"West North Central","Midwest","MO",205.384852467712,213.488505486984,221.370119463774,213.526364365602
+"333",25,14,1,1,"Cardiovascular","Black","Female","Missouri",1982,"West North Central","Midwest","MO",453.815756800933,472.214609872424,491.098224201382,472.302502717727
+"334",25,14,1,1,"Communicable","Black","Female","Missouri",1982,"West North Central","Midwest","MO",40.4029488446145,44.7592073718098,49.3776796763853,44.8470215455263
+"335",25,14,1,1,"Injuries","Black","Female","Missouri",1982,"West North Central","Midwest","MO",45.3440638951905,48.9207837596296,53.0907911598344,49.0087036949109
+"336",25,14,1,1,"Non-communicable","Black","Female","Missouri",1982,"West North Central","Midwest","MO",70.4037284534363,75.5457886869572,81.0036534307721,75.6154673463697
+"337",25,15,0,0,"All other causes","White","Male","Missouri",1983,"West North Central","Midwest","MO",146.722740699431,150.770574787889,154.765845483782,150.752639926833
+"338",25,15,0,0,"Cancers","White","Male","Missouri",1983,"West North Central","Midwest","MO",261.936454538884,266.889912821196,271.75069259915,266.855533065047
+"339",25,15,0,0,"Cardiovascular","White","Male","Missouri",1983,"West North Central","Midwest","MO",619.606321433769,629.29941665407,639.625996789861,629.518184699886
+"340",25,15,0,0,"Communicable","White","Male","Missouri",1983,"West North Central","Midwest","MO",53.3769749741659,56.4326542671433,59.5623533759073,56.4652483177695
+"341",25,15,0,0,"Injuries","White","Male","Missouri",1983,"West North Central","Midwest","MO",89.1868969215449,91.5807373288862,93.9112558277293,91.5755923656702
+"342",25,15,0,0,"Non-communicable","White","Male","Missouri",1983,"West North Central","Midwest","MO",101.935875517919,105.139782263907,108.358428579681,105.142840695582
+"343",25,15,0,1,"All other causes","White","Female","Missouri",1983,"West North Central","Midwest","MO",90.2863717143515,92.6998215704917,95.306863168569,92.7054048839611
+"344",25,15,0,1,"Cancers","White","Female","Missouri",1983,"West North Central","Midwest","MO",161.895671776334,164.691740999376,167.846763250135,164.732360113352
+"345",25,15,0,1,"Cardiovascular","White","Female","Missouri",1983,"West North Central","Midwest","MO",382.856287914679,389.342254963837,395.723444042044,389.344434791135
+"346",25,15,0,1,"Communicable","White","Female","Missouri",1983,"West North Central","Midwest","MO",31.5315893858192,33.0194627764109,34.5505669666301,32.9922361238848
+"347",25,15,0,1,"Injuries","White","Female","Missouri",1983,"West North Central","Midwest","MO",34.5072629798955,35.656568478321,36.8046617537259,35.6550852752384
+"348",25,15,0,1,"Non-communicable","White","Female","Missouri",1983,"West North Central","Midwest","MO",49.6808655374657,51.3336987202384,52.9534921446586,51.3212165576168
+"349",25,15,1,0,"All other causes","Black","Male","Missouri",1983,"West North Central","Midwest","MO",218.439546267345,230.891707034032,242.488325657572,230.96743600279
+"350",25,15,1,0,"Cancers","Black","Male","Missouri",1983,"West North Central","Midwest","MO",383.529609301259,400.111974214441,417.757173252728,400.174756944684
+"351",25,15,1,0,"Cardiovascular","Black","Male","Missouri",1983,"West North Central","Midwest","MO",655.543018174425,678.121103317509,703.097608326241,678.10015583793
+"352",25,15,1,0,"Communicable","Black","Male","Missouri",1983,"West North Central","Midwest","MO",73.0040091922495,81.8643478963965,90.8731909301424,81.9064581895477
+"353",25,15,1,0,"Injuries","Black","Male","Missouri",1983,"West North Central","Midwest","MO",167.191354973349,176.867987773247,186.343222054157,176.945434576245
+"354",25,15,1,0,"Non-communicable","Black","Male","Missouri",1983,"West North Central","Midwest","MO",116.968431295093,124.491343663603,131.917280900471,124.441491220595
+"355",25,15,1,1,"All other causes","Black","Female","Missouri",1983,"West North Central","Midwest","MO",142.866820720688,150.947557816529,159.910237980913,151.101632395326
+"356",25,15,1,1,"Cancers","Black","Female","Missouri",1983,"West North Central","Midwest","MO",208.686322325508,216.427058306748,225.421024770202,216.678625125616
+"357",25,15,1,1,"Cardiovascular","Black","Female","Missouri",1983,"West North Central","Midwest","MO",458.005718896791,475.09081750371,495.538130735742,475.481310923663
+"358",25,15,1,1,"Communicable","Black","Female","Missouri",1983,"West North Central","Midwest","MO",42.0898304408242,46.6461877172372,50.9042396436209,46.6201102256558
+"359",25,15,1,1,"Injuries","Black","Female","Missouri",1983,"West North Central","Midwest","MO",43.9253166141033,47.7430688723016,52.0090971965016,47.85493169819
+"360",25,15,1,1,"Non-communicable","Black","Female","Missouri",1983,"West North Central","Midwest","MO",72.018019927799,77.1310680957166,82.7521135179177,77.1146397159054
+"361",25,16,0,0,"All other causes","White","Male","Missouri",1984,"West North Central","Midwest","MO",146.898230842906,150.424935843043,154.590252745922,150.465779538562
+"362",25,16,0,0,"Cancers","White","Male","Missouri",1984,"West North Central","Midwest","MO",261.637365323432,266.514733116939,271.331863126589,266.457979724024
+"363",25,16,0,0,"Cardiovascular","White","Male","Missouri",1984,"West North Central","Midwest","MO",605.479227458118,614.952711175996,625.426000143223,615.00011553691
+"364",25,16,0,0,"Communicable","White","Male","Missouri",1984,"West North Central","Midwest","MO",50.3202171051139,53.5174564571929,56.4867951329772,53.4869122079374
+"365",25,16,0,0,"Injuries","White","Male","Missouri",1984,"West North Central","Midwest","MO",88.3953805204938,90.7638319418775,92.9567658557226,90.7659169457332
+"366",25,16,0,0,"Non-communicable","White","Male","Missouri",1984,"West North Central","Midwest","MO",106.726967702809,109.601220307301,112.660636946692,109.602234364426
+"367",25,16,0,1,"All other causes","White","Female","Missouri",1984,"West North Central","Midwest","MO",91.845146559499,94.3925662855838,96.9502513617481,94.3553424441092
+"368",25,16,0,1,"Cancers","White","Female","Missouri",1984,"West North Central","Midwest","MO",161.378339108145,164.231716772303,167.070935160462,164.200536455934
+"369",25,16,0,1,"Cardiovascular","White","Female","Missouri",1984,"West North Central","Midwest","MO",371.259186876106,377.302754626773,382.966393346575,377.246415082722
+"370",25,16,0,1,"Communicable","White","Female","Missouri",1984,"West North Central","Midwest","MO",32.4970372167214,34.2009005127839,35.8665917252681,34.1933071023429
+"371",25,16,0,1,"Injuries","White","Female","Missouri",1984,"West North Central","Midwest","MO",33.8851562624458,35.0112719946594,36.2222276037842,35.037013808518
+"372",25,16,0,1,"Non-communicable","White","Female","Missouri",1984,"West North Central","Midwest","MO",50.9607789474224,52.7373413534822,54.4619278571866,52.7275940253658
+"373",25,16,1,0,"All other causes","Black","Male","Missouri",1984,"West North Central","Midwest","MO",215.852143485462,228.114164691572,240.586088974323,228.230763474891
+"374",25,16,1,0,"Cancers","Black","Male","Missouri",1984,"West North Central","Midwest","MO",383.550781635303,400.641789214502,418.574754083059,400.775275529756
+"375",25,16,1,0,"Cardiovascular","Black","Male","Missouri",1984,"West North Central","Midwest","MO",650.437101461689,672.877141194954,694.980680153599,672.857011794228
+"376",25,16,1,0,"Communicable","Black","Male","Missouri",1984,"West North Central","Midwest","MO",78.2975456139468,87.6272096946348,97.4640776361307,87.5832040051281
+"377",25,16,1,0,"Injuries","Black","Male","Missouri",1984,"West North Central","Midwest","MO",160.861992028944,170.669097731892,179.918888155542,170.619602415565
+"378",25,16,1,0,"Non-communicable","Black","Male","Missouri",1984,"West North Central","Midwest","MO",119.909991107337,127.598213113519,135.300212603011,127.49823793547
+"379",25,16,1,1,"All other causes","Black","Female","Missouri",1984,"West North Central","Midwest","MO",142.405016051171,150.514454191712,159.121706614192,150.545133033889
+"380",25,16,1,1,"Cancers","Black","Female","Missouri",1984,"West North Central","Midwest","MO",211.279393337344,218.777508243012,227.766979925309,218.988166603522
+"381",25,16,1,1,"Cardiovascular","Black","Female","Missouri",1984,"West North Central","Midwest","MO",455.452200329531,474.135360245815,493.721566640749,474.186349161457
+"382",25,16,1,1,"Communicable","Black","Female","Missouri",1984,"West North Central","Midwest","MO",42.8674415511541,47.4721089258349,52.4431495237959,47.5444828614729
+"383",25,16,1,1,"Injuries","Black","Female","Missouri",1984,"West North Central","Midwest","MO",42.9410691857639,46.5781328730373,50.8585698752966,46.6531651905374
+"384",25,16,1,1,"Non-communicable","Black","Female","Missouri",1984,"West North Central","Midwest","MO",73.6560540352096,78.5045796904,84.375627775417,78.6909924597284
+"385",25,17,0,0,"All other causes","White","Male","Missouri",1985,"West North Central","Midwest","MO",145.544119059587,149.434464293448,153.591724404783,149.513246966667
+"386",25,17,0,0,"Cancers","White","Male","Missouri",1985,"West North Central","Midwest","MO",263.511381653677,268.401178335442,273.050013582418,268.34689835539
+"387",25,17,0,0,"Cardiovascular","White","Male","Missouri",1985,"West North Central","Midwest","MO",588.038826244934,597.955356492013,607.733619570549,597.95425153727
+"388",25,17,0,0,"Communicable","White","Male","Missouri",1985,"West North Central","Midwest","MO",57.6183303617641,60.9938079321248,64.3092212425723,60.9700927670798
+"389",25,17,0,0,"Injuries","White","Male","Missouri",1985,"West North Central","Midwest","MO",89.0884510360283,91.4336733610818,93.8101642939316,91.4544406903275
+"390",25,17,0,0,"Non-communicable","White","Male","Missouri",1985,"West North Central","Midwest","MO",109.42275860484,112.523631474476,116.324392823524,112.584477704319
+"391",25,17,0,1,"All other causes","White","Female","Missouri",1985,"West North Central","Midwest","MO",95.4526131067783,98.0675190030571,100.62972011669,98.062683725005
+"392",25,17,0,1,"Cancers","White","Female","Missouri",1985,"West North Central","Midwest","MO",162.123688578581,164.98761260989,167.885553295045,164.9718018702
+"393",25,17,0,1,"Cardiovascular","White","Female","Missouri",1985,"West North Central","Midwest","MO",369.065572302518,375.107414003952,381.100337743793,375.091554361586
+"394",25,17,0,1,"Communicable","White","Female","Missouri",1985,"West North Central","Midwest","MO",36.5817931814687,38.1332876648919,39.9810535008581,38.1638816227486
+"395",25,17,0,1,"Injuries","White","Female","Missouri",1985,"West North Central","Midwest","MO",33.390741765526,34.5691676979353,35.7593929262001,34.5658213429207
+"396",25,17,0,1,"Non-communicable","White","Female","Missouri",1985,"West North Central","Midwest","MO",53.3390417995046,55.141528496017,56.8701803631531,55.1402576052353
+"397",25,17,1,0,"All other causes","Black","Male","Missouri",1985,"West North Central","Midwest","MO",218.230535867419,231.525109869396,244.036173909298,231.481918148541
+"398",25,17,1,0,"Cancers","Black","Male","Missouri",1985,"West North Central","Midwest","MO",388.556173765462,405.374063225161,423.36219959032,405.606493489407
+"399",25,17,1,0,"Cardiovascular","Black","Male","Missouri",1985,"West North Central","Midwest","MO",639.198932231339,663.025450949557,685.661591708472,662.965367339109
+"400",25,17,1,0,"Communicable","Black","Male","Missouri",1985,"West North Central","Midwest","MO",89.4604167604668,100.42045530324,111.692963317838,100.491894315849
+"401",25,17,1,0,"Injuries","Black","Male","Missouri",1985,"West North Central","Midwest","MO",159.980676674077,169.465820685996,178.863006612352,169.440940589905
+"402",25,17,1,0,"Non-communicable","Black","Male","Missouri",1985,"West North Central","Midwest","MO",122.739037986227,130.59238084534,138.519620478551,130.557328031536
+"403",25,17,1,1,"All other causes","Black","Female","Missouri",1985,"West North Central","Midwest","MO",143.67829469368,151.553980713548,159.887541466452,151.540686652078
+"404",25,17,1,1,"Cancers","Black","Female","Missouri",1985,"West North Central","Midwest","MO",211.295685139556,218.965668291483,227.386283376602,219.150788611901
+"405",25,17,1,1,"Cardiovascular","Black","Female","Missouri",1985,"West North Central","Midwest","MO",449.860405119537,467.811547477702,488.233481423925,468.202413421389
+"406",25,17,1,1,"Communicable","Black","Female","Missouri",1985,"West North Central","Midwest","MO",43.0272457915933,47.5266275243617,52.880165026499,47.6928906329162
+"407",25,17,1,1,"Injuries","Black","Female","Missouri",1985,"West North Central","Midwest","MO",41.9930532180998,45.889261547385,49.9247756209737,45.8906463794905
+"408",25,17,1,1,"Non-communicable","Black","Female","Missouri",1985,"West North Central","Midwest","MO",76.5661038626076,81.6255000638054,87.3474593193878,81.6556788586557
+"409",25,18,0,0,"All other causes","White","Male","Missouri",1986,"West North Central","Midwest","MO",139.881426204115,143.702521594198,147.587504458832,143.708730084401
+"410",25,18,0,0,"Cancers","White","Male","Missouri",1986,"West North Central","Midwest","MO",264.790293971882,269.690738708338,274.312168927159,269.656667783453
+"411",25,18,0,0,"Cardiovascular","White","Male","Missouri",1986,"West North Central","Midwest","MO",569.609031760966,579.071446863463,588.526944209034,579.08039977151
+"412",25,18,0,0,"Communicable","White","Male","Missouri",1986,"West North Central","Midwest","MO",58.9970749279274,62.3796631171423,65.9651720623806,62.3627556119181
+"413",25,18,0,0,"Injuries","White","Male","Missouri",1986,"West North Central","Midwest","MO",90.9450092434877,93.3447430882759,95.6703488942055,93.357909238948
+"414",25,18,0,0,"Non-communicable","White","Male","Missouri",1986,"West North Central","Midwest","MO",110.179000974343,113.377151108199,116.936717437957,113.337473663036
+"415",25,18,0,1,"All other causes","White","Female","Missouri",1986,"West North Central","Midwest","MO",93.2430259157958,95.8004692682128,98.3977868885311,95.8724889757092
+"416",25,18,0,1,"Cancers","White","Female","Missouri",1986,"West North Central","Midwest","MO",163.191504162877,165.920451923371,168.707566222569,165.989790374536
+"417",25,18,0,1,"Cardiovascular","White","Female","Missouri",1986,"West North Central","Midwest","MO",358.856556557227,364.84710394847,370.270301372713,364.731513718436
+"418",25,18,0,1,"Communicable","White","Female","Missouri",1986,"West North Central","Midwest","MO",36.2466490740221,37.8628679427983,39.6412606900086,37.9068507751646
+"419",25,18,0,1,"Injuries","White","Female","Missouri",1986,"West North Central","Midwest","MO",33.5987115114951,34.7465073625115,35.8232054956665,34.7264998465113
+"420",25,18,0,1,"Non-communicable","White","Female","Missouri",1986,"West North Central","Midwest","MO",56.1502629271189,57.9065389803906,59.7709367095707,57.9034233993839
+"421",25,18,1,0,"All other causes","Black","Male","Missouri",1986,"West North Central","Midwest","MO",220.978568012899,232.701804412328,245.178099160072,232.6484624135
+"422",25,18,1,0,"Cancers","Black","Male","Missouri",1986,"West North Central","Midwest","MO",394.960215871861,411.855962448857,429.042307240939,412.251985755335
+"423",25,18,1,0,"Cardiovascular","Black","Male","Missouri",1986,"West North Central","Midwest","MO",628.094499372591,651.29904172869,673.836613639887,650.917351863576
+"424",25,18,1,0,"Communicable","Black","Male","Missouri",1986,"West North Central","Midwest","MO",96.0086450662936,106.320676839501,118.313918447194,106.497169799477
+"425",25,18,1,0,"Injuries","Black","Male","Missouri",1986,"West North Central","Midwest","MO",162.147260584362,170.926510716,180.11730327715,170.795451894593
+"426",25,18,1,0,"Non-communicable","Black","Male","Missouri",1986,"West North Central","Midwest","MO",125.379975721163,132.826229733375,140.67690894189,132.961098367958
+"427",25,18,1,1,"All other causes","Black","Female","Missouri",1986,"West North Central","Midwest","MO",143.742028469111,152.49488601811,160.373110848075,152.469989893862
+"428",25,18,1,1,"Cancers","Black","Female","Missouri",1986,"West North Central","Midwest","MO",212.284363537088,220.180963632603,227.836661349141,220.173111745002
+"429",25,18,1,1,"Cardiovascular","Black","Female","Missouri",1986,"West North Central","Midwest","MO",430.731541125414,447.919505139698,465.313594931594,447.784355614396
+"430",25,18,1,1,"Communicable","Black","Female","Missouri",1986,"West North Central","Midwest","MO",43.3636213236331,47.9607944107399,52.6319777551922,47.9705790930821
+"431",25,18,1,1,"Injuries","Black","Female","Missouri",1986,"West North Central","Midwest","MO",41.6976008485175,45.6704763731665,49.7730495951272,45.6473673254682
+"432",25,18,1,1,"Non-communicable","Black","Female","Missouri",1986,"West North Central","Midwest","MO",78.5749493356383,83.8358435140032,89.1867314108758,83.8768001686826
+"433",25,19,0,0,"All other causes","White","Male","Missouri",1987,"West North Central","Midwest","MO",133.193601350629,137.183844258812,140.796811719996,137.1932297185
+"434",25,19,0,0,"Cancers","White","Male","Missouri",1987,"West North Central","Midwest","MO",265.66804860254,270.977647126164,275.888633315955,270.987358766479
+"435",25,19,0,0,"Cardiovascular","White","Male","Missouri",1987,"West North Central","Midwest","MO",570.518709656946,580.652995024203,590.741898089412,580.706771532399
+"436",25,19,0,0,"Communicable","White","Male","Missouri",1987,"West North Central","Midwest","MO",61.0135814422672,64.4661271699871,67.6738144134968,64.3969598167552
+"437",25,19,0,0,"Injuries","White","Male","Missouri",1987,"West North Central","Midwest","MO",89.994434480609,92.3349765478477,94.8763333558579,92.3846109447789
+"438",25,19,0,0,"Non-communicable","White","Male","Missouri",1987,"West North Central","Midwest","MO",110.604293929654,113.866146921358,117.032399986378,113.859743774898
+"439",25,19,0,1,"All other causes","White","Female","Missouri",1987,"West North Central","Midwest","MO",93.6782177190002,96.1713346069369,98.7184926583939,96.1911451850327
+"440",25,19,0,1,"Cancers","White","Female","Missouri",1987,"West North Central","Midwest","MO",163.855818587041,166.589513384379,169.720041292156,166.644187968329
+"441",25,19,0,1,"Cardiovascular","White","Female","Missouri",1987,"West North Central","Midwest","MO",354.339860064088,359.862189689749,365.359053514849,359.773527734098
+"442",25,19,0,1,"Communicable","White","Female","Missouri",1987,"West North Central","Midwest","MO",35.6163361276954,37.2747994352003,38.9028622089369,37.2675289207779
+"443",25,19,0,1,"Injuries","White","Female","Missouri",1987,"West North Central","Midwest","MO",33.2937643635438,34.4133259117208,35.5507695526195,34.410487703054
+"444",25,19,0,1,"Non-communicable","White","Female","Missouri",1987,"West North Central","Midwest","MO",57.2569004277805,59.1705152341709,60.9777474869373,59.1454986038097
+"445",25,19,1,0,"All other causes","Black","Male","Missouri",1987,"West North Central","Midwest","MO",219.427699753245,230.402485496423,243.263214646254,230.589654627832
+"446",25,19,1,0,"Cancers","Black","Male","Missouri",1987,"West North Central","Midwest","MO",400.501555150567,417.033196784173,434.856031282266,417.592105967046
+"447",25,19,1,0,"Cardiovascular","Black","Male","Missouri",1987,"West North Central","Midwest","MO",621.525115434403,645.042354310684,668.688276813589,644.992644998607
+"448",25,19,1,0,"Communicable","Black","Male","Missouri",1987,"West North Central","Midwest","MO",96.4366253318085,106.776502773216,118.830793515262,107.102619186842
+"449",25,19,1,0,"Injuries","Black","Male","Missouri",1987,"West North Central","Midwest","MO",158.146504113655,167.045963485258,175.714009894631,166.931505512199
+"450",25,19,1,0,"Non-communicable","Black","Male","Missouri",1987,"West North Central","Midwest","MO",127.589517214244,135.524797116081,144.285279063732,135.659892686136
+"451",25,19,1,1,"All other causes","Black","Female","Missouri",1987,"West North Central","Midwest","MO",143.432533217548,151.104243733248,158.73532110579,151.034401052132
+"452",25,19,1,1,"Cancers","Black","Female","Missouri",1987,"West North Central","Midwest","MO",213.766533545946,221.547488898939,230.380952235049,221.654072891444
+"453",25,19,1,1,"Cardiovascular","Black","Female","Missouri",1987,"West North Central","Midwest","MO",425.559586611477,443.784386000122,461.56949282281,443.81621345065
+"454",25,19,1,1,"Communicable","Black","Female","Missouri",1987,"West North Central","Midwest","MO",43.7091736303353,48.1370965173358,53.4395564589436,48.2569865492458
+"455",25,19,1,1,"Injuries","Black","Female","Missouri",1987,"West North Central","Midwest","MO",41.3964944321554,45.3213095218065,49.2890866130262,45.3463847244257
+"456",25,19,1,1,"Non-communicable","Black","Female","Missouri",1987,"West North Central","Midwest","MO",80.5928848313312,86.1698332656328,92.0268535672358,86.2361035395618
+"457",25,20,0,0,"All other causes","White","Male","Missouri",1988,"West North Central","Midwest","MO",129.750023283801,133.291211293797,136.848805719832,133.319970463337
+"458",25,20,0,0,"Cancers","White","Male","Missouri",1988,"West North Central","Midwest","MO",267.142776333637,272.229959367549,277.138422683549,272.187189750969
+"459",25,20,0,0,"Cardiovascular","White","Male","Missouri",1988,"West North Central","Midwest","MO",554.731987445577,564.152295387749,574.103636574182,564.369286315966
+"460",25,20,0,0,"Communicable","White","Male","Missouri",1988,"West North Central","Midwest","MO",66.5467534991852,69.8206046738295,73.3854700152727,69.8291619837747
+"461",25,20,0,0,"Injuries","White","Male","Missouri",1988,"West North Central","Midwest","MO",89.2744313737935,91.6934465717627,94.0561987218373,91.6617187093277
+"462",25,20,0,0,"Non-communicable","White","Male","Missouri",1988,"West North Central","Midwest","MO",114.054937932932,117.380443755459,120.691258700821,117.347341341445
+"463",25,20,0,1,"All other causes","White","Female","Missouri",1988,"West North Central","Midwest","MO",91.7975453199109,94.2604656266564,96.8456890900931,94.262461769363
+"464",25,20,0,1,"Cancers","White","Female","Missouri",1988,"West North Central","Midwest","MO",163.720455991169,166.536971893107,169.463835819239,166.56047181872
+"465",25,20,0,1,"Cardiovascular","White","Female","Missouri",1988,"West North Central","Midwest","MO",346.390032846345,351.927574620548,357.710978702913,351.956858353786
+"466",25,20,0,1,"Communicable","White","Female","Missouri",1988,"West North Central","Midwest","MO",37.9507356264016,39.4770836287709,41.123382934552,39.5182454619707
+"467",25,20,0,1,"Injuries","White","Female","Missouri",1988,"West North Central","Midwest","MO",32.891269662141,33.9988870029635,35.0144813933411,33.9885131422457
+"468",25,20,0,1,"Non-communicable","White","Female","Missouri",1988,"West North Central","Midwest","MO",58.6913969734821,60.5185124914785,62.40763020164,60.5522330673432
+"469",25,20,1,0,"All other causes","Black","Male","Missouri",1988,"West North Central","Midwest","MO",217.408483082783,227.672911835569,239.765206288934,228.044524902617
+"470",25,20,1,0,"Cancers","Black","Male","Missouri",1988,"West North Central","Midwest","MO",401.62412087533,419.377427937827,439.310408484666,419.790828808533
+"471",25,20,1,0,"Cardiovascular","Black","Male","Missouri",1988,"West North Central","Midwest","MO",622.368052071599,646.789116174727,668.304047106211,646.341967903611
+"472",25,20,1,0,"Communicable","Black","Male","Missouri",1988,"West North Central","Midwest","MO",99.6104520863953,109.376683081177,121.447866970244,109.606593312021
+"473",25,20,1,0,"Injuries","Black","Male","Missouri",1988,"West North Central","Midwest","MO",155.471097222997,164.717003225752,173.675241143327,164.791737817773
+"474",25,20,1,0,"Non-communicable","Black","Male","Missouri",1988,"West North Central","Midwest","MO",127.704100348053,135.969306275083,144.905800424578,135.981095898078
+"475",25,20,1,1,"All other causes","Black","Female","Missouri",1988,"West North Central","Midwest","MO",142.711740850989,150.538703510017,158.637656039397,150.52425384089
+"476",25,20,1,1,"Cancers","Black","Female","Missouri",1988,"West North Central","Midwest","MO",214.098106051707,222.39229543667,230.589738879475,222.308520962986
+"477",25,20,1,1,"Cardiovascular","Black","Female","Missouri",1988,"West North Central","Midwest","MO",431.791781519109,449.904927430995,469.110400517572,450.241279580194
+"478",25,20,1,1,"Communicable","Black","Female","Missouri",1988,"West North Central","Midwest","MO",44.6730457037913,49.2981086376089,54.0739367523149,49.406545704247
+"479",25,20,1,1,"Injuries","Black","Female","Missouri",1988,"West North Central","Midwest","MO",41.3498089964819,45.116923359229,48.9112632324942,45.142133908024
+"480",25,20,1,1,"Non-communicable","Black","Female","Missouri",1988,"West North Central","Midwest","MO",82.428605212847,87.612906001442,93.2547908464777,87.6740961822953
+"481",25,21,0,0,"All other causes","White","Male","Missouri",1989,"West North Central","Midwest","MO",122.1502995205,125.683118161178,129.456990383876,125.714009261268
+"482",25,21,0,0,"Cancers","White","Male","Missouri",1989,"West North Central","Midwest","MO",270.477670946623,275.4090405781,280.15126476848,275.359499989358
+"483",25,21,0,0,"Cardiovascular","White","Male","Missouri",1989,"West North Central","Midwest","MO",533.322951286143,542.560921457487,552.026320023953,542.620695394135
+"484",25,21,0,0,"Communicable","White","Male","Missouri",1989,"West North Central","Midwest","MO",63.9004669869955,67.1723810293078,70.6008406310372,67.1941868781296
+"485",25,21,0,0,"Injuries","White","Male","Missouri",1989,"West North Central","Midwest","MO",87.9614047532793,90.3496823885596,92.6415754172467,90.3238941255713
+"486",25,21,0,0,"Non-communicable","White","Male","Missouri",1989,"West North Central","Midwest","MO",114.098172448217,117.336759984413,120.523807043009,117.331456332796
+"487",25,21,0,1,"All other causes","White","Female","Missouri",1989,"West North Central","Midwest","MO",87.305131904994,89.8298597944432,92.2930060906845,89.8218962009958
+"488",25,21,0,1,"Cancers","White","Female","Missouri",1989,"West North Central","Midwest","MO",166.623382780396,169.300492961481,172.084377190075,169.335745054533
+"489",25,21,0,1,"Cardiovascular","White","Female","Missouri",1989,"West North Central","Midwest","MO",330.414505563699,335.588359008601,340.757967204802,335.562804135647
+"490",25,21,0,1,"Communicable","White","Female","Missouri",1989,"West North Central","Midwest","MO",37.8708595554689,39.5721505038582,41.2501938331795,39.5787125651312
+"491",25,21,0,1,"Injuries","White","Female","Missouri",1989,"West North Central","Midwest","MO",32.6097967655961,33.7020896131305,34.7815064775755,33.7009199031769
+"492",25,21,0,1,"Non-communicable","White","Female","Missouri",1989,"West North Central","Midwest","MO",61.9650597914137,63.7856692703081,65.844916291153,63.8127248881933
+"493",25,21,1,0,"All other causes","Black","Male","Missouri",1989,"West North Central","Midwest","MO",212.780760953122,223.370056803454,235.705098555789,223.528768953785
+"494",25,21,1,0,"Cancers","Black","Male","Missouri",1989,"West North Central","Midwest","MO",408.063635388941,426.842288359258,444.756029502825,426.817249980312
+"495",25,21,1,0,"Cardiovascular","Black","Male","Missouri",1989,"West North Central","Midwest","MO",620.579859802979,644.236288541477,667.717193582682,644.434190258488
+"496",25,21,1,0,"Communicable","Black","Male","Missouri",1989,"West North Central","Midwest","MO",95.3200303700141,106.070842319772,116.715523569223,106.027913153057
+"497",25,21,1,0,"Injuries","Black","Male","Missouri",1989,"West North Central","Midwest","MO",157.816000080208,166.581241952526,175.656054754094,166.742508156176
+"498",25,21,1,0,"Non-communicable","Black","Male","Missouri",1989,"West North Central","Midwest","MO",129.6684552257,138.506935920516,147.205527970462,138.330548617815
+"499",25,21,1,1,"All other causes","Black","Female","Missouri",1989,"West North Central","Midwest","MO",140.177143031578,148.646094540116,156.607876285238,148.662999525293
+"500",25,21,1,1,"Cancers","Black","Female","Missouri",1989,"West North Central","Midwest","MO",216.000447939258,223.795460700946,232.471617633397,223.968986482966
+"501",25,21,1,1,"Cardiovascular","Black","Female","Missouri",1989,"West North Central","Midwest","MO",436.257874319552,453.88718118299,471.951546712511,454.128059285042
+"502",25,21,1,1,"Communicable","Black","Female","Missouri",1989,"West North Central","Midwest","MO",46.6581234435805,51.3634019686861,56.5057800732278,51.3121429365598
+"503",25,21,1,1,"Injuries","Black","Female","Missouri",1989,"West North Central","Midwest","MO",40.8946784675096,44.7379008679322,48.3326903517123,44.7776716693336
+"504",25,21,1,1,"Non-communicable","Black","Female","Missouri",1989,"West North Central","Midwest","MO",85.2838315940313,91.1672036680486,97.1514207177399,91.2931428534844
+"505",25,22,0,0,"All other causes","White","Male","Missouri",1990,"West North Central","Midwest","MO",114.757337446026,118.224365222966,121.814891709784,118.223107563875
+"506",25,22,0,0,"Cancers","White","Male","Missouri",1990,"West North Central","Midwest","MO",269.598853008106,274.47128647266,279.067790030748,274.364616783158
+"507",25,22,0,0,"Cardiovascular","White","Male","Missouri",1990,"West North Central","Midwest","MO",524.562211306593,533.575569496394,542.725849214319,533.539247563536
+"508",25,22,0,0,"Communicable","White","Male","Missouri",1990,"West North Central","Midwest","MO",66.5720625927411,69.9796572843212,73.4585809935841,70.0182236756986
+"509",25,22,0,0,"Injuries","White","Male","Missouri",1990,"West North Central","Midwest","MO",87.5975473246906,89.9949768895615,92.4657395915084,90.0117189561995
+"510",25,22,0,0,"Non-communicable","White","Male","Missouri",1990,"West North Central","Midwest","MO",111.852278988501,115.000312086975,118.397704854563,115.05337717242
+"511",25,22,0,1,"All other causes","White","Female","Missouri",1990,"West North Central","Midwest","MO",83.1418306236868,85.3802198535099,87.6594605903688,85.3896392205062
+"512",25,22,0,1,"Cancers","White","Female","Missouri",1990,"West North Central","Midwest","MO",167.109134952567,169.96280022997,172.581536440984,169.923809011047
+"513",25,22,0,1,"Cardiovascular","White","Female","Missouri",1990,"West North Central","Midwest","MO",324.967754878236,330.174467448981,335.489583068107,330.139261805517
+"514",25,22,0,1,"Communicable","White","Female","Missouri",1990,"West North Central","Midwest","MO",39.0666628007791,40.6074701491751,42.3241065685663,40.6237805469074
+"515",25,22,0,1,"Injuries","White","Female","Missouri",1990,"West North Central","Midwest","MO",32.4581741662879,33.5190170730088,34.6053054958633,33.5200790717428
+"516",25,22,0,1,"Non-communicable","White","Female","Missouri",1990,"West North Central","Midwest","MO",62.6149980771561,64.6071653143361,66.662458786105,64.5934053715363
+"517",25,22,1,0,"All other causes","Black","Male","Missouri",1990,"West North Central","Midwest","MO",209.056733915052,220.379280830572,231.705631508479,220.451177642912
+"518",25,22,1,0,"Cancers","Black","Male","Missouri",1990,"West North Central","Midwest","MO",410.030372722754,428.075993930789,447.641233400571,428.055327096875
+"519",25,22,1,0,"Cardiovascular","Black","Male","Missouri",1990,"West North Central","Midwest","MO",619.221850673946,642.449438753761,665.850935424219,642.592513792769
+"520",25,22,1,0,"Communicable","Black","Male","Missouri",1990,"West North Central","Midwest","MO",100.11661745944,110.488631434341,121.786554254335,110.555599214463
+"521",25,22,1,0,"Injuries","Black","Male","Missouri",1990,"West North Central","Midwest","MO",162.765744663684,171.589391702139,181.147636384392,171.583130306099
+"522",25,22,1,0,"Non-communicable","Black","Male","Missouri",1990,"West North Central","Midwest","MO",131.115682324119,139.596713751758,148.51911331933,139.531927846616
+"523",25,22,1,1,"All other causes","Black","Female","Missouri",1990,"West North Central","Midwest","MO",138.985691892486,146.841809479701,154.374029209594,146.908942628776
+"524",25,22,1,1,"Cancers","Black","Female","Missouri",1990,"West North Central","Midwest","MO",217.108303084488,225.195310873591,233.975739391899,225.435293020252
+"525",25,22,1,1,"Cardiovascular","Black","Female","Missouri",1990,"West North Central","Midwest","MO",425.911201766973,443.906809235794,461.815778696705,443.668044973928
+"526",25,22,1,1,"Communicable","Black","Female","Missouri",1990,"West North Central","Midwest","MO",47.6194876993777,52.2245390368745,57.6171382250963,52.2670676785487
+"527",25,22,1,1,"Injuries","Black","Female","Missouri",1990,"West North Central","Midwest","MO",40.8072208140315,44.5905165145244,48.131602982249,44.5808221038203
+"528",25,22,1,1,"Non-communicable","Black","Female","Missouri",1990,"West North Central","Midwest","MO",85.8151423733766,91.6008346511024,97.3364923251952,91.4476250397389
+"529",25,23,0,0,"All other causes","White","Male","Missouri",1991,"West North Central","Midwest","MO",113.933011714853,117.507416040227,121.132654541118,117.461066928781
+"530",25,23,0,0,"Cancers","White","Male","Missouri",1991,"West North Central","Midwest","MO",271.096556535201,275.748978914295,280.850723725229,275.763169042684
+"531",25,23,0,0,"Cardiovascular","White","Male","Missouri",1991,"West North Central","Midwest","MO",513.402492336925,521.81903245145,530.407326356065,521.816719996012
+"532",25,23,0,0,"Communicable","White","Male","Missouri",1991,"West North Central","Midwest","MO",66.9434244120921,70.176291361985,73.6505778242952,70.2604310653763
+"533",25,23,0,0,"Injuries","White","Male","Missouri",1991,"West North Central","Midwest","MO",87.5288640923889,89.5762821315445,91.8359754624946,89.5918303608583
+"534",25,23,0,0,"Non-communicable","White","Male","Missouri",1991,"West North Central","Midwest","MO",110.871765636636,114.113898180182,117.515217373165,114.098642437218
+"535",25,23,0,1,"All other causes","White","Female","Missouri",1991,"West North Central","Midwest","MO",82.3676974006897,84.6149535598384,87.1279421659493,84.6743187441073
+"536",25,23,0,1,"Cancers","White","Female","Missouri",1991,"West North Central","Midwest","MO",167.44857131945,170.258846217893,173.15500144795,170.242719211137
+"537",25,23,0,1,"Cardiovascular","White","Female","Missouri",1991,"West North Central","Midwest","MO",318.189953692243,323.204983776931,328.214298541319,323.257221919555
+"538",25,23,0,1,"Communicable","White","Female","Missouri",1991,"West North Central","Midwest","MO",37.1186662575119,38.7983877406139,40.3630466909002,38.7726635239888
+"539",25,23,0,1,"Injuries","White","Female","Missouri",1991,"West North Central","Midwest","MO",32.2475766411062,33.337891121793,34.4462620966744,33.3297969485573
+"540",25,23,0,1,"Non-communicable","White","Female","Missouri",1991,"West North Central","Midwest","MO",63.6054045882161,65.6603352423013,67.6568843437439,65.6306898249707
+"541",25,23,1,0,"All other causes","Black","Male","Missouri",1991,"West North Central","Midwest","MO",208.635901910977,219.501890140887,231.301917320682,219.712492545388
+"542",25,23,1,0,"Cancers","Black","Male","Missouri",1991,"West North Central","Midwest","MO",409.441110081471,426.446496610447,446.258119455947,426.736250027613
+"543",25,23,1,0,"Cardiovascular","Black","Male","Missouri",1991,"West North Central","Midwest","MO",612.539591774555,634.679746899113,660.11085724126,635.016574450312
+"544",25,23,1,0,"Communicable","Black","Male","Missouri",1991,"West North Central","Midwest","MO",102.276484637115,112.177312695717,123.920242602319,112.382327192769
+"545",25,23,1,0,"Injuries","Black","Male","Missouri",1991,"West North Central","Midwest","MO",170.393416066085,179.550927363688,189.110628694951,179.700081901028
+"546",25,23,1,0,"Non-communicable","Black","Male","Missouri",1991,"West North Central","Midwest","MO",132.73789659994,141.528991289623,150.430503172537,141.473147698433
+"547",25,23,1,1,"All other causes","Black","Female","Missouri",1991,"West North Central","Midwest","MO",141.067299476272,148.047950047607,155.658735623281,148.120914216602
+"548",25,23,1,1,"Cancers","Black","Female","Missouri",1991,"West North Central","Midwest","MO",217.739460168358,225.527008492732,233.458882725675,225.509124823431
+"549",25,23,1,1,"Cardiovascular","Black","Female","Missouri",1991,"West North Central","Midwest","MO",420.863043446402,437.898911050723,454.513191017483,437.827999013371
+"550",25,23,1,1,"Communicable","Black","Female","Missouri",1991,"West North Central","Midwest","MO",48.4244399795243,53.3098768288342,58.0771549955112,53.2868028325896
+"551",25,23,1,1,"Injuries","Black","Female","Missouri",1991,"West North Central","Midwest","MO",40.4326572429933,44.1696549153845,47.5960560539762,44.0805748351668
+"552",25,23,1,1,"Non-communicable","Black","Female","Missouri",1991,"West North Central","Midwest","MO",86.0032079553816,91.8777294768782,97.395867777367,91.8006361930644
+"553",25,24,0,0,"All other causes","White","Male","Missouri",1992,"West North Central","Midwest","MO",113.498169593587,117.089143363634,120.66851214739,117.074621105247
+"554",25,24,0,0,"Cancers","White","Male","Missouri",1992,"West North Central","Midwest","MO",272.08857781969,277.000098172183,281.872663789068,276.916122435467
+"555",25,24,0,0,"Cardiovascular","White","Male","Missouri",1992,"West North Central","Midwest","MO",499.372511334776,508.322987676469,516.26666260317,508.251813693766
+"556",25,24,0,0,"Communicable","White","Male","Missouri",1992,"West North Central","Midwest","MO",66.2493200367835,69.5766854201465,72.8679251483994,69.6042963552594
+"557",25,24,0,0,"Injuries","White","Male","Missouri",1992,"West North Central","Midwest","MO",85.5445057632923,87.8168658962842,90.0442662235138,87.8300633944124
+"558",25,24,0,0,"Non-communicable","White","Male","Missouri",1992,"West North Central","Midwest","MO",112.775198604924,116.192851546652,119.47182051579,116.174292058926
+"559",25,24,0,1,"All other causes","White","Female","Missouri",1992,"West North Central","Midwest","MO",83.8492311180119,86.0549793262354,88.261886851149,86.0605694740111
+"560",25,24,0,1,"Cancers","White","Female","Missouri",1992,"West North Central","Midwest","MO",166.804879675574,169.722002487033,172.311414049389,169.709903136712
+"561",25,24,0,1,"Cardiovascular","White","Female","Missouri",1992,"West North Central","Midwest","MO",318.476615245848,323.911480768472,328.995764489185,323.914708058754
+"562",25,24,0,1,"Communicable","White","Female","Missouri",1992,"West North Central","Midwest","MO",36.7763389447898,38.3320635576322,39.9765379930386,38.3419019879561
+"563",25,24,0,1,"Injuries","White","Female","Missouri",1992,"West North Central","Midwest","MO",32.3820401310681,33.3849845351151,34.4974138037264,33.404685611401
+"564",25,24,0,1,"Non-communicable","White","Female","Missouri",1992,"West North Central","Midwest","MO",65.3839602902415,67.3612040892488,69.315051768963,67.3593150281129
+"565",25,24,1,0,"All other causes","Black","Male","Missouri",1992,"West North Central","Midwest","MO",204.423047665919,215.734848311353,226.400361681786,215.741669943244
+"566",25,24,1,0,"Cancers","Black","Male","Missouri",1992,"West North Central","Midwest","MO",405.48349068848,422.97898056465,441.778063045553,423.060013808847
+"567",25,24,1,0,"Cardiovascular","Black","Male","Missouri",1992,"West North Central","Midwest","MO",605.852627442925,628.127495104151,651.715244060422,628.200760338589
+"568",25,24,1,0,"Communicable","Black","Male","Missouri",1992,"West North Central","Midwest","MO",111.247858380138,122.053450021909,133.049135932392,122.258832278965
+"569",25,24,1,0,"Injuries","Black","Male","Missouri",1992,"West North Central","Midwest","MO",175.017651985326,183.699644102266,194.453915811167,183.987283686807
+"570",25,24,1,0,"Non-communicable","Black","Male","Missouri",1992,"West North Central","Midwest","MO",134.18338926768,142.556838716664,151.246236440325,142.697096815556
+"571",25,24,1,1,"All other causes","Black","Female","Missouri",1992,"West North Central","Midwest","MO",135.215589513307,142.640525980237,150.117048163316,142.633468408768
+"572",25,24,1,1,"Cancers","Black","Female","Missouri",1992,"West North Central","Midwest","MO",216.474621004521,224.986683774568,233.078847530767,224.914819066094
+"573",25,24,1,1,"Cardiovascular","Black","Female","Missouri",1992,"West North Central","Midwest","MO",416.151306642338,432.986320191518,449.406474080534,432.687884297227
+"574",25,24,1,1,"Communicable","Black","Female","Missouri",1992,"West North Central","Midwest","MO",49.8449379460732,55.0076412485249,60.0986420222278,54.8392443651286
+"575",25,24,1,1,"Injuries","Black","Female","Missouri",1992,"West North Central","Midwest","MO",40.1368616364805,43.5750768489097,46.7751894460452,43.5723954753662
+"576",25,24,1,1,"Non-communicable","Black","Female","Missouri",1992,"West North Central","Midwest","MO",86.2211035766008,92.0315467321764,97.7241693497355,92.1044258115403
+"577",25,25,0,0,"All other causes","White","Male","Missouri",1993,"West North Central","Midwest","MO",116.760687779536,120.028307193943,123.966104511374,120.095286612833
+"578",25,25,0,0,"Cancers","White","Male","Missouri",1993,"West North Central","Midwest","MO",271.563507592483,276.275282492272,281.263785855934,276.348256580543
+"579",25,25,0,0,"Cardiovascular","White","Male","Missouri",1993,"West North Central","Midwest","MO",512.025045995358,520.252062256956,528.911759276642,520.292894636054
+"580",25,25,0,0,"Communicable","White","Male","Missouri",1993,"West North Central","Midwest","MO",72.8123271160542,76.1633434957475,79.6158159226748,76.1978141492154
+"581",25,25,0,0,"Injuries","White","Male","Missouri",1993,"West North Central","Midwest","MO",86.0171252850638,88.1232801051956,90.5551321472593,88.1626980620246
+"582",25,25,0,0,"Non-communicable","White","Male","Missouri",1993,"West North Central","Midwest","MO",115.974778955996,119.334376901968,122.64359437693,119.322818450071
+"583",25,25,0,1,"All other causes","White","Female","Missouri",1993,"West North Central","Midwest","MO",86.5336474448442,88.5884749188448,90.8480414918676,88.6172738710785
+"584",25,25,0,1,"Cancers","White","Female","Missouri",1993,"West North Central","Midwest","MO",168.497935107263,171.19069663664,174.090859431195,171.156375488166
+"585",25,25,0,1,"Cardiovascular","White","Female","Missouri",1993,"West North Central","Midwest","MO",329.474814649443,334.506249841086,339.73448987893,334.426808334253
+"586",25,25,0,1,"Communicable","White","Female","Missouri",1993,"West North Central","Midwest","MO",38.7701565551913,40.473452446584,42.0089671032485,40.4473472435599
+"587",25,25,0,1,"Injuries","White","Female","Missouri",1993,"West North Central","Midwest","MO",32.6092635148782,33.6132052859402,34.7930149887778,33.6333384932581
+"588",25,25,0,1,"Non-communicable","White","Female","Missouri",1993,"West North Central","Midwest","MO",69.0622721887014,71.0238348811958,72.9954532065292,71.0349189804095
+"589",25,25,1,0,"All other causes","Black","Male","Missouri",1993,"West North Central","Midwest","MO",198.234798278186,209.01180895693,218.924070993859,208.9818755692
+"590",25,25,1,0,"Cancers","Black","Male","Missouri",1993,"West North Central","Midwest","MO",398.592884418783,415.091653778169,432.86332882854,415.149242342045
+"591",25,25,1,0,"Cardiovascular","Black","Male","Missouri",1993,"West North Central","Midwest","MO",602.253100560018,623.966543209489,647.891701167976,624.155882050099
+"592",25,25,1,0,"Communicable","Black","Male","Missouri",1993,"West North Central","Midwest","MO",120.963131919011,131.505817263071,144.147202257104,131.919355847036
+"593",25,25,1,0,"Injuries","Black","Male","Missouri",1993,"West North Central","Midwest","MO",178.03276412461,187.312083655348,197.753457003845,187.436655206132
+"594",25,25,1,0,"Non-communicable","Black","Male","Missouri",1993,"West North Central","Midwest","MO",135.500286393292,143.489740836243,152.294764275614,143.633436089263
+"595",25,25,1,1,"All other causes","Black","Female","Missouri",1993,"West North Central","Midwest","MO",133.257448028854,140.20674301982,147.195874791426,140.253239168513
+"596",25,25,1,1,"Cancers","Black","Female","Missouri",1993,"West North Central","Midwest","MO",216.819230374614,224.823306729988,233.052131153765,224.837140278651
+"597",25,25,1,1,"Cardiovascular","Black","Female","Missouri",1993,"West North Central","Midwest","MO",422.718953592,438.602414878905,456.245880609886,438.996262999356
+"598",25,25,1,1,"Communicable","Black","Female","Missouri",1993,"West North Central","Midwest","MO",53.2795645174202,58.267224557531,63.8132382451662,58.2967839720541
+"599",25,25,1,1,"Injuries","Black","Female","Missouri",1993,"West North Central","Midwest","MO",39.1139296176879,42.7439277823459,46.2761477753689,42.7322687694514
+"600",25,25,1,1,"Non-communicable","Black","Female","Missouri",1993,"West North Central","Midwest","MO",88.1870633086948,93.5962457078033,99.4836169395664,93.6418976584012
+"601",25,26,0,0,"All other causes","White","Male","Missouri",1994,"West North Central","Midwest","MO",117.233197707204,120.761221052001,124.46177024689,120.776444904028
+"602",25,26,0,0,"Cancers","White","Male","Missouri",1994,"West North Central","Midwest","MO",264.155351842236,268.945128607618,273.628806275092,268.936759452925
+"603",25,26,0,0,"Cardiovascular","White","Male","Missouri",1994,"West North Central","Midwest","MO",496.351287555259,504.70656084007,513.26425987705,504.709178042313
+"604",25,26,0,0,"Communicable","White","Male","Missouri",1994,"West North Central","Midwest","MO",75.8052406448875,79.0135517898655,82.6181964270273,79.0688400820238
+"605",25,26,0,0,"Injuries","White","Male","Missouri",1994,"West North Central","Midwest","MO",87.4134873402752,89.6848495071973,91.9806440047612,89.7195719615968
+"606",25,26,0,0,"Non-communicable","White","Male","Missouri",1994,"West North Central","Midwest","MO",116.883715958489,120.326378985083,123.662028982459,120.352587888109
+"607",25,26,0,1,"All other causes","White","Female","Missouri",1994,"West North Central","Midwest","MO",89.9734402761127,92.1679726210602,94.5824132009759,92.2185892219582
+"608",25,26,0,1,"Cancers","White","Female","Missouri",1994,"West North Central","Midwest","MO",169.813725581362,172.607330512681,175.367163488169,172.643751504465
+"609",25,26,0,1,"Cardiovascular","White","Female","Missouri",1994,"West North Central","Midwest","MO",325.527801093262,330.743000853043,335.645492155569,330.766967336513
+"610",25,26,0,1,"Communicable","White","Female","Missouri",1994,"West North Central","Midwest","MO",39.7316794230471,41.2829214316026,42.9979640592188,41.3164186421281
+"611",25,26,0,1,"Injuries","White","Female","Missouri",1994,"West North Central","Midwest","MO",32.9835705766419,34.1156217048,35.1927052149536,34.1067055935878
+"612",25,26,0,1,"Non-communicable","White","Female","Missouri",1994,"West North Central","Midwest","MO",70.3001594558538,72.4508848025126,74.6223290944451,72.4207901030991
+"613",25,26,1,0,"All other causes","Black","Male","Missouri",1994,"West North Central","Midwest","MO",193.287580112358,204.008388651073,214.425067350943,203.930779319437
+"614",25,26,1,0,"Cancers","Black","Male","Missouri",1994,"West North Central","Midwest","MO",390.294450925497,407.864968030657,425.456233233607,407.986432437976
+"615",25,26,1,0,"Cardiovascular","Black","Male","Missouri",1994,"West North Central","Midwest","MO",597.551490779126,618.069848945947,641.127408582131,618.374223770838
+"616",25,26,1,0,"Communicable","Black","Male","Missouri",1994,"West North Central","Midwest","MO",124.378920081154,135.363810074717,147.69037866066,135.66427812365
+"617",25,26,1,0,"Injuries","Black","Male","Missouri",1994,"West North Central","Midwest","MO",172.312689932679,181.059824563977,191.00455062593,181.09641522622
+"618",25,26,1,0,"Non-communicable","Black","Male","Missouri",1994,"West North Central","Midwest","MO",137.051801526151,145.426276940609,153.934577742486,145.512807762593
+"619",25,26,1,1,"All other causes","Black","Female","Missouri",1994,"West North Central","Midwest","MO",131.742679790773,139.057909769849,145.869677245829,139.006469561337
+"620",25,26,1,1,"Cancers","Black","Female","Missouri",1994,"West North Central","Midwest","MO",215.78793671752,224.058474696376,232.852596982727,224.115143320375
+"621",25,26,1,1,"Cardiovascular","Black","Female","Missouri",1994,"West North Central","Midwest","MO",407.513179047039,424.128883504099,440.911137260228,423.967881022183
+"622",25,26,1,1,"Communicable","Black","Female","Missouri",1994,"West North Central","Midwest","MO",53.9085661130361,58.6285712750576,64.063485025661,58.7225828055403
+"623",25,26,1,1,"Injuries","Black","Female","Missouri",1994,"West North Central","Midwest","MO",38.3288033941479,41.9634077328617,45.5969584409644,41.9966817560611
+"624",25,26,1,1,"Non-communicable","Black","Female","Missouri",1994,"West North Central","Midwest","MO",88.7729103839114,94.5816248109599,101.131591642478,94.7035212865859
+"625",25,27,0,0,"All other causes","White","Male","Missouri",1995,"West North Central","Midwest","MO",119.846795098604,123.020866375176,126.498155086227,123.086240674855
+"626",25,27,0,0,"Cancers","White","Male","Missouri",1995,"West North Central","Midwest","MO",263.663143717578,268.615489403527,272.995839504674,268.524440593761
+"627",25,27,0,0,"Cardiovascular","White","Male","Missouri",1995,"West North Central","Midwest","MO",486.210672857305,494.570707387623,502.35061576153,494.535949588771
+"628",25,27,0,0,"Communicable","White","Male","Missouri",1995,"West North Central","Midwest","MO",68.7425026019676,72.0960097608411,75.3985713925993,72.106034884907
+"629",25,27,0,0,"Injuries","White","Male","Missouri",1995,"West North Central","Midwest","MO",87.9905414431631,90.1400438871074,92.4383204794077,90.1742667747588
+"630",25,27,0,0,"Non-communicable","White","Male","Missouri",1995,"West North Central","Midwest","MO",117.388291193382,120.555427262306,123.942339744594,120.565933888657
+"631",25,27,0,1,"All other causes","White","Female","Missouri",1995,"West North Central","Midwest","MO",91.9391359977854,94.2880227106949,96.6509294507688,94.3059693102843
+"632",25,27,0,1,"Cancers","White","Female","Missouri",1995,"West North Central","Midwest","MO",169.149521079464,172.077644608736,175.080572724317,172.102891379135
+"633",25,27,0,1,"Cardiovascular","White","Female","Missouri",1995,"West North Central","Midwest","MO",323.789465876461,328.861458585676,333.766169693912,328.821312241133
+"634",25,27,0,1,"Communicable","White","Female","Missouri",1995,"West North Central","Midwest","MO",40.9177952250132,42.5812968413644,44.3324396558763,42.5724506377921
+"635",25,27,0,1,"Injuries","White","Female","Missouri",1995,"West North Central","Midwest","MO",33.5312782569639,34.6118793234171,35.6560615740943,34.6083111831451
+"636",25,27,0,1,"Non-communicable","White","Female","Missouri",1995,"West North Central","Midwest","MO",71.9877618284691,74.0881995470374,76.0504725365529,74.1018242072342
+"637",25,27,1,0,"All other causes","Black","Male","Missouri",1995,"West North Central","Midwest","MO",185.888000983118,195.779933059347,207.006484111667,195.955741371133
+"638",25,27,1,0,"Cancers","Black","Male","Missouri",1995,"West North Central","Midwest","MO",382.02793617385,398.482117525788,415.841444353859,398.534829445238
+"639",25,27,1,0,"Cardiovascular","Black","Male","Missouri",1995,"West North Central","Midwest","MO",589.980088489755,611.002386725689,633.017510819652,611.131485898349
+"640",25,27,1,0,"Communicable","Black","Male","Missouri",1995,"West North Central","Midwest","MO",130.516946288823,142.423735439173,155.19575717558,142.688330100075
+"641",25,27,1,0,"Injuries","Black","Male","Missouri",1995,"West North Central","Midwest","MO",156.336711046478,165.439448559696,174.714394063601,165.351683765337
+"642",25,27,1,0,"Non-communicable","Black","Male","Missouri",1995,"West North Central","Midwest","MO",137.97617083224,146.386559565313,155.573332724996,146.501876558308
+"643",25,27,1,1,"All other causes","Black","Female","Missouri",1995,"West North Central","Midwest","MO",132.215263392867,138.981953074911,145.905916172258,139.056180609858
+"644",25,27,1,1,"Cancers","Black","Female","Missouri",1995,"West North Central","Midwest","MO",216.182405438472,224.506651005769,232.500813995124,224.507150527196
+"645",25,27,1,1,"Cardiovascular","Black","Female","Missouri",1995,"West North Central","Midwest","MO",408.223951582644,424.775287341481,442.256703809887,424.694291025523
+"646",25,27,1,1,"Communicable","Black","Female","Missouri",1995,"West North Central","Midwest","MO",54.3179616032361,58.9472243290822,64.1964843875038,59.0863650069863
+"647",25,27,1,1,"Injuries","Black","Female","Missouri",1995,"West North Central","Midwest","MO",37.9183606605571,41.388933662649,44.9211404346529,41.3993534364228
+"648",25,27,1,1,"Non-communicable","Black","Female","Missouri",1995,"West North Central","Midwest","MO",90.8899983147699,96.905656478645,102.555158424013,96.8429010702345
+"649",25,28,0,0,"All other causes","White","Male","Missouri",1996,"West North Central","Midwest","MO",120.799603689056,123.982645301369,127.525693165687,124.02226229151
+"650",25,28,0,0,"Cancers","White","Male","Missouri",1996,"West North Central","Midwest","MO",259.532911728437,264.40253000569,268.714123097878,264.35166202207
+"651",25,28,0,0,"Cardiovascular","White","Male","Missouri",1996,"West North Central","Midwest","MO",477.37963199494,485.911491566999,494.661913553783,485.894494292263
+"652",25,28,0,0,"Communicable","White","Male","Missouri",1996,"West North Central","Midwest","MO",64.16099241401,67.0155129770515,70.210496612702,67.0597770702497
+"653",25,28,0,0,"Injuries","White","Male","Missouri",1996,"West North Central","Midwest","MO",87.6705982415558,89.8528810459081,92.1857033491632,89.8778759193495
+"654",25,28,0,0,"Non-communicable","White","Male","Missouri",1996,"West North Central","Midwest","MO",116.268455249953,119.55563910281,122.949902641538,119.612378518935
+"655",25,28,0,1,"All other causes","White","Female","Missouri",1996,"West North Central","Midwest","MO",93.7411814581761,96.0891525597365,98.594671900091,96.1069106174941
+"656",25,28,0,1,"Cancers","White","Female","Missouri",1996,"West North Central","Midwest","MO",166.686950384089,169.572133119687,172.22703523846,169.511981844213
+"657",25,28,0,1,"Cardiovascular","White","Female","Missouri",1996,"West North Central","Midwest","MO",320.055554428134,324.608405879111,329.710161204295,324.649829787347
+"658",25,28,0,1,"Communicable","White","Female","Missouri",1996,"West North Central","Midwest","MO",41.0349655032711,42.6494618470876,44.2398623764159,42.6309012329572
+"659",25,28,0,1,"Injuries","White","Female","Missouri",1996,"West North Central","Midwest","MO",34.0487271220335,35.1089669284571,36.2404452617344,35.1012668503936
+"660",25,28,0,1,"Non-communicable","White","Female","Missouri",1996,"West North Central","Midwest","MO",75.0493928526559,77.3071020588357,79.3597528268806,77.2730477302309
+"661",25,28,1,0,"All other causes","Black","Male","Missouri",1996,"West North Central","Midwest","MO",184.743494207031,195.105803363667,205.599037212726,195.181510763996
+"662",25,28,1,0,"Cancers","Black","Male","Missouri",1996,"West North Central","Midwest","MO",369.326171357733,387.683282629752,405.026593697111,387.514148666736
+"663",25,28,1,0,"Cardiovascular","Black","Male","Missouri",1996,"West North Central","Midwest","MO",575.66095424706,597.254847435876,619.531013523878,596.723988483521
+"664",25,28,1,0,"Communicable","Black","Male","Missouri",1996,"West North Central","Midwest","MO",122.499362950369,132.929492494729,143.767214789756,132.972666052861
+"665",25,28,1,0,"Injuries","Black","Male","Missouri",1996,"West North Central","Midwest","MO",147.490124000013,155.47888672844,163.848876156803,155.707309237714
+"666",25,28,1,0,"Non-communicable","Black","Male","Missouri",1996,"West North Central","Midwest","MO",140.34990191472,149.005033816213,158.186217846476,149.239201950168
+"667",25,28,1,1,"All other causes","Black","Female","Missouri",1996,"West North Central","Midwest","MO",134.984418041192,141.870303685435,149.424396836349,141.855586586846
+"668",25,28,1,1,"Cancers","Black","Female","Missouri",1996,"West North Central","Midwest","MO",217.256654643379,225.00685293094,233.851122740416,225.201754880294
+"669",25,28,1,1,"Cardiovascular","Black","Female","Missouri",1996,"West North Central","Midwest","MO",410.792008861662,426.525717033598,444.331992833155,426.841442791881
+"670",25,28,1,1,"Communicable","Black","Female","Missouri",1996,"West North Central","Midwest","MO",53.5976389875148,58.2822848825478,63.9376410703816,58.3689941884505
+"671",25,28,1,1,"Injuries","Black","Female","Missouri",1996,"West North Central","Midwest","MO",37.85932036657,41.1711210402952,44.7165118583007,41.21171688162
+"672",25,28,1,1,"Non-communicable","Black","Female","Missouri",1996,"West North Central","Midwest","MO",93.5622236902954,99.3708075226122,105.471501662396,99.4424687885987
+"673",25,29,0,0,"All other causes","White","Male","Missouri",1997,"West North Central","Midwest","MO",123.69571974669,127.47458926547,130.797445400615,127.451300467055
+"674",25,29,0,0,"Cancers","White","Male","Missouri",1997,"West North Central","Midwest","MO",254.987490672499,259.713351555672,264.256687952415,259.691788460846
+"675",25,29,0,0,"Cardiovascular","White","Male","Missouri",1997,"West North Central","Midwest","MO",474.521366934037,482.095573890856,490.139587641856,482.154026974647
+"676",25,29,0,0,"Communicable","White","Male","Missouri",1997,"West North Central","Midwest","MO",61.1785051728608,64.0273764597031,67.085373103673,64.0796667692143
+"677",25,29,0,0,"Injuries","White","Male","Missouri",1997,"West North Central","Midwest","MO",86.3135476759217,88.6524353969652,90.8130079649501,88.6521511418264
+"678",25,29,0,0,"Non-communicable","White","Male","Missouri",1997,"West North Central","Midwest","MO",120.237036807483,123.48964413653,126.905608061385,123.519971137279
+"679",25,29,0,1,"All other causes","White","Female","Missouri",1997,"West North Central","Midwest","MO",95.6623176510899,98.1161925967685,100.509749054228,98.1314435648604
+"680",25,29,0,1,"Cancers","White","Female","Missouri",1997,"West North Central","Midwest","MO",166.814665232661,169.314898441576,172.190366992648,169.350203922502
+"681",25,29,0,1,"Cardiovascular","White","Female","Missouri",1997,"West North Central","Midwest","MO",315.558211733971,320.856153847576,325.945913920944,320.831986942399
+"682",25,29,0,1,"Communicable","White","Female","Missouri",1997,"West North Central","Midwest","MO",41.2248066998933,42.9449797943506,44.5665433842125,42.9485364236623
+"683",25,29,0,1,"Injuries","White","Female","Missouri",1997,"West North Central","Midwest","MO",34.5151647594587,35.5627505158815,36.7154912825917,35.5835889412611
+"684",25,29,0,1,"Non-communicable","White","Female","Missouri",1997,"West North Central","Midwest","MO",76.8017765701789,79.0492636650572,81.2289058595148,79.0456829225949
+"685",25,29,1,0,"All other causes","Black","Male","Missouri",1997,"West North Central","Midwest","MO",182.92734843957,193.346763087407,203.890981251887,193.260175615992
+"686",25,29,1,0,"Cancers","Black","Male","Missouri",1997,"West North Central","Midwest","MO",369.673657138225,386.576253635296,403.985744401967,386.494602582939
+"687",25,29,1,0,"Cardiovascular","Black","Male","Missouri",1997,"West North Central","Midwest","MO",572.468849075678,592.91409344328,615.903857184622,593.301822707783
+"688",25,29,1,0,"Communicable","Black","Male","Missouri",1997,"West North Central","Midwest","MO",111.679821065258,122.702296987437,134.761345945691,123.007610022327
+"689",25,29,1,0,"Injuries","Black","Male","Missouri",1997,"West North Central","Midwest","MO",139.875234239256,148.071710756107,156.015426808697,148.000013916306
+"690",25,29,1,0,"Non-communicable","Black","Male","Missouri",1997,"West North Central","Midwest","MO",144.650866339972,153.71014211843,162.905786085326,153.839375733755
+"691",25,29,1,1,"All other causes","Black","Female","Missouri",1997,"West North Central","Midwest","MO",137.013017418134,143.882056881487,151.763568802792,144.092385022328
+"692",25,29,1,1,"Cancers","Black","Female","Missouri",1997,"West North Central","Midwest","MO",216.528049348745,224.319958811877,233.851528379235,224.551376456322
+"693",25,29,1,1,"Cardiovascular","Black","Female","Missouri",1997,"West North Central","Midwest","MO",406.611454822055,423.035010217721,439.730371964235,422.988851123287
+"694",25,29,1,1,"Communicable","Black","Female","Missouri",1997,"West North Central","Midwest","MO",53.8656148564186,58.3950944662123,64.06416190396,58.4252357018364
+"695",25,29,1,1,"Injuries","Black","Female","Missouri",1997,"West North Central","Midwest","MO",37.8161030013715,40.9403128402888,44.4900441683524,41.0135882106867
+"696",25,29,1,1,"Non-communicable","Black","Female","Missouri",1997,"West North Central","Midwest","MO",96.2627967855813,102.092866015025,108.253478802476,102.23355222821
+"697",25,30,0,0,"All other causes","White","Male","Missouri",1998,"West North Central","Midwest","MO",124.634006807304,127.880860377022,131.284797428825,127.934731035179
+"698",25,30,0,0,"Cancers","White","Male","Missouri",1998,"West North Central","Midwest","MO",255.483966705551,260.36988710833,265.408296987812,260.470991666882
+"699",25,30,0,0,"Cardiovascular","White","Male","Missouri",1998,"West North Central","Midwest","MO",461.980695461486,469.484918145085,477.293898716776,469.456099717668
+"700",25,30,0,0,"Communicable","White","Male","Missouri",1998,"West North Central","Midwest","MO",60.343486764571,63.5822655845192,66.8102357469766,63.5925195934654
+"701",25,30,0,0,"Injuries","White","Male","Missouri",1998,"West North Central","Midwest","MO",85.4915097242154,87.6364905661732,89.7657926666353,87.6230738024286
+"702",25,30,0,0,"Non-communicable","White","Male","Missouri",1998,"West North Central","Midwest","MO",124.783410402775,127.950564071486,131.350083139157,127.981545258882
+"703",25,30,0,1,"All other causes","White","Female","Missouri",1998,"West North Central","Midwest","MO",99.7479962114305,102.301994887093,105.061445500926,102.303712515755
+"704",25,30,0,1,"Cancers","White","Female","Missouri",1998,"West North Central","Midwest","MO",166.516843992615,169.49075005849,172.200989321761,169.414988171825
+"705",25,30,0,1,"Cardiovascular","White","Female","Missouri",1998,"West North Central","Midwest","MO",310.77917830444,316.118982655587,320.743261801807,316.048146306913
+"706",25,30,0,1,"Communicable","White","Female","Missouri",1998,"West North Central","Midwest","MO",43.2716728253537,45.0036287438349,46.8076217507492,45.0298897581889
+"707",25,30,0,1,"Injuries","White","Female","Missouri",1998,"West North Central","Midwest","MO",35.3586430036447,36.5228999028202,37.6630706640115,36.5101518704055
+"708",25,30,0,1,"Non-communicable","White","Female","Missouri",1998,"West North Central","Midwest","MO",81.0943288018363,83.1575699775067,85.4066600508691,83.1993699757684
+"709",25,30,1,0,"All other causes","Black","Male","Missouri",1998,"West North Central","Midwest","MO",181.483240552973,192.196859383711,202.509018067826,191.977039722756
+"710",25,30,1,0,"Cancers","Black","Male","Missouri",1998,"West North Central","Midwest","MO",368.48367089913,384.472448984607,401.872547511677,384.591054492118
+"711",25,30,1,0,"Cardiovascular","Black","Male","Missouri",1998,"West North Central","Midwest","MO",573.463774529149,595.387092975926,617.41881513719,595.365512004412
+"712",25,30,1,0,"Communicable","Black","Male","Missouri",1998,"West North Central","Midwest","MO",106.252036872597,116.541609369486,127.561312828267,116.487992329992
+"713",25,30,1,0,"Injuries","Black","Male","Missouri",1998,"West North Central","Midwest","MO",135.70719680806,143.383954130678,151.642740522921,143.448270377744
+"714",25,30,1,0,"Non-communicable","Black","Male","Missouri",1998,"West North Central","Midwest","MO",149.790891680852,159.322683143209,168.543038869351,159.400078199806
+"715",25,30,1,1,"All other causes","Black","Female","Missouri",1998,"West North Central","Midwest","MO",139.30599596359,147.261592484095,154.823598904058,147.280790979014
+"716",25,30,1,1,"Cancers","Black","Female","Missouri",1998,"West North Central","Midwest","MO",215.435074199357,223.471334291472,232.06480183487,223.595365838848
+"717",25,30,1,1,"Cardiovascular","Black","Female","Missouri",1998,"West North Central","Midwest","MO",402.572811579357,417.685287063714,433.896577293654,417.789300928417
+"718",25,30,1,1,"Communicable","Black","Female","Missouri",1998,"West North Central","Midwest","MO",54.4609653181429,59.5129648800544,64.6855344309236,59.571582231029
+"719",25,30,1,1,"Injuries","Black","Female","Missouri",1998,"West North Central","Midwest","MO",37.0311960558472,40.2049839534879,43.5401591091821,40.2395412822181
+"720",25,30,1,1,"Non-communicable","Black","Female","Missouri",1998,"West North Central","Midwest","MO",100.051666328686,105.74172042448,112.304390054339,105.905318549828
+"721",25,31,0,0,"All other causes","White","Male","Missouri",1999,"West North Central","Midwest","MO",125.949040896814,129.585632448494,133.335632071289,129.557012498678
+"722",25,31,0,0,"Cancers","White","Male","Missouri",1999,"West North Central","Midwest","MO",250.953857489471,255.22605922122,259.728207436391,255.2856269508
+"723",25,31,0,0,"Cardiovascular","White","Male","Missouri",1999,"West North Central","Midwest","MO",454.852600365302,462.568220718324,469.809397755875,462.587746268357
+"724",25,31,0,0,"Communicable","White","Male","Missouri",1999,"West North Central","Midwest","MO",51.6308866945018,54.2202886860781,57.1866926446151,54.267131527442
+"725",25,31,0,0,"Injuries","White","Male","Missouri",1999,"West North Central","Midwest","MO",84.9613114661265,87.2022116073489,89.437982288081,87.2139565308413
+"726",25,31,0,0,"Non-communicable","White","Male","Missouri",1999,"West North Central","Midwest","MO",131.31123922924,135.004995585166,138.778203879823,134.978271551599
+"727",25,31,0,1,"All other causes","White","Female","Missouri",1999,"West North Central","Midwest","MO",102.228702506258,104.888811955203,107.193246837561,104.834113088447
+"728",25,31,0,1,"Cancers","White","Female","Missouri",1999,"West North Central","Midwest","MO",167.423761697793,169.985016125308,172.668528287711,170.007174451157
+"729",25,31,0,1,"Cardiovascular","White","Female","Missouri",1999,"West North Central","Midwest","MO",308.891852092629,313.714864453974,318.322855815807,313.639803115322
+"730",25,31,0,1,"Communicable","White","Female","Missouri",1999,"West North Central","Midwest","MO",36.2860703484381,37.8311577798289,39.3959067856192,37.8498279161204
+"731",25,31,0,1,"Injuries","White","Female","Missouri",1999,"West North Central","Midwest","MO",35.505847908154,36.6347916003406,37.8417594262692,36.6496586413146
+"732",25,31,0,1,"Non-communicable","White","Female","Missouri",1999,"West North Central","Midwest","MO",92.4822055933163,95.031943526697,97.6797009339779,95.0489609723926
+"733",25,31,1,0,"All other causes","Black","Male","Missouri",1999,"West North Central","Midwest","MO",183.219314263386,193.198910211237,203.538299004997,193.17749155602
+"734",25,31,1,0,"Cancers","Black","Male","Missouri",1999,"West North Central","Midwest","MO",356.032504712798,372.608628335957,389.370461177218,372.630334703378
+"735",25,31,1,0,"Cardiovascular","Black","Male","Missouri",1999,"West North Central","Midwest","MO",576.321724399111,598.645007784098,620.656977556874,598.517810963958
+"736",25,31,1,0,"Communicable","Black","Male","Missouri",1999,"West North Central","Midwest","MO",102.256308437894,112.395464434582,122.973355197455,112.405167554448
+"737",25,31,1,0,"Injuries","Black","Male","Missouri",1999,"West North Central","Midwest","MO",132.752676316716,140.559665989381,148.554046494646,140.716924674773
+"738",25,31,1,0,"Non-communicable","Black","Male","Missouri",1999,"West North Central","Midwest","MO",156.029041182681,165.601034605561,175.419172409165,165.61938612323
+"739",25,31,1,1,"All other causes","Black","Female","Missouri",1999,"West North Central","Midwest","MO",142.340450139934,149.33071819284,157.310987300117,149.434204923923
+"740",25,31,1,1,"Cancers","Black","Female","Missouri",1999,"West North Central","Midwest","MO",211.784980276606,220.01027168213,227.942787227155,219.940055950848
+"741",25,31,1,1,"Cardiovascular","Black","Female","Missouri",1999,"West North Central","Midwest","MO",399.819660920589,414.117457334419,431.272276806079,414.561421643836
+"742",25,31,1,1,"Communicable","Black","Female","Missouri",1999,"West North Central","Midwest","MO",52.1683027796555,56.889319631348,61.8664468595819,56.9403643919834
+"743",25,31,1,1,"Injuries","Black","Female","Missouri",1999,"West North Central","Midwest","MO",36.3303371195808,39.3796360742583,42.7767314438348,39.3754180872046
+"744",25,31,1,1,"Non-communicable","Black","Female","Missouri",1999,"West North Central","Midwest","MO",103.794354398838,110.24825328235,116.151638885209,110.110897004008
+"745",25,32,0,0,"All other causes","White","Male","Missouri",2000,"West North Central","Midwest","MO",128.573635877008,132.477933248419,136.587738489924,132.511842639128
+"746",25,32,0,0,"Cancers","White","Male","Missouri",2000,"West North Central","Midwest","MO",248.336229647868,252.834412865398,257.099950259177,252.816569942451
+"747",25,32,0,0,"Cardiovascular","White","Male","Missouri",2000,"West North Central","Midwest","MO",432.735122853873,440.366347822191,447.551340835785,440.224890411663
+"748",25,32,0,0,"Communicable","White","Male","Missouri",2000,"West North Central","Midwest","MO",48.4752609910724,50.9234589705118,53.7955610399672,51.0161609836012
+"749",25,32,0,0,"Injuries","White","Male","Missouri",2000,"West North Central","Midwest","MO",84.6436497984669,86.8140019823898,89.2207525380539,86.8348057530357
+"750",25,32,0,0,"Non-communicable","White","Male","Missouri",2000,"West North Central","Midwest","MO",130.830192197302,134.269864879667,137.947203646172,134.343355857892
+"751",25,32,0,1,"All other causes","White","Female","Missouri",2000,"West North Central","Midwest","MO",104.907423079388,107.590147802567,110.176652259548,107.57662413856
+"752",25,32,0,1,"Cancers","White","Female","Missouri",2000,"West North Central","Midwest","MO",166.564147478875,169.436201291333,172.227407255888,169.434392277866
+"753",25,32,0,1,"Cardiovascular","White","Female","Missouri",2000,"West North Central","Midwest","MO",300.082823254736,304.772542123544,309.974242365267,304.802469238027
+"754",25,32,0,1,"Communicable","White","Female","Missouri",2000,"West North Central","Midwest","MO",35.1745322960882,36.7609600595196,38.3854566121383,36.7457030313698
+"755",25,32,0,1,"Injuries","White","Female","Missouri",2000,"West North Central","Midwest","MO",35.6569779783689,36.6782250452464,37.8467145387599,36.6925863371751
+"756",25,32,0,1,"Non-communicable","White","Female","Missouri",2000,"West North Central","Midwest","MO",95.0904735696209,97.658175492326,100.203181871044,97.6918175211787
+"757",25,32,1,0,"All other causes","Black","Male","Missouri",2000,"West North Central","Midwest","MO",180.658517691717,190.695529722871,200.560320588341,190.763176157164
+"758",25,32,1,0,"Cancers","Black","Male","Missouri",2000,"West North Central","Midwest","MO",352.297966449349,368.102001568057,384.265160882843,368.079935257865
+"759",25,32,1,0,"Cardiovascular","Black","Male","Missouri",2000,"West North Central","Midwest","MO",563.88617940363,584.902737143285,607.046110119112,585.223527338879
+"760",25,32,1,0,"Communicable","Black","Male","Missouri",2000,"West North Central","Midwest","MO",96.6887301103853,105.953661247637,117.299254974017,106.23101241053
+"761",25,32,1,0,"Injuries","Black","Male","Missouri",2000,"West North Central","Midwest","MO",131.213069401908,138.653582562792,147.305869189462,138.861264175849
+"762",25,32,1,0,"Non-communicable","Black","Male","Missouri",2000,"West North Central","Midwest","MO",158.627576120536,167.305479469676,177.473753140269,167.473669640564
+"763",25,32,1,1,"All other causes","Black","Female","Missouri",2000,"West North Central","Midwest","MO",144.902482704318,152.010327368335,160.139836822076,152.127987350319
+"764",25,32,1,1,"Cancers","Black","Female","Missouri",2000,"West North Central","Midwest","MO",206.607137876762,214.396608942828,223.098105695744,214.500173618041
+"765",25,32,1,1,"Cardiovascular","Black","Female","Missouri",2000,"West North Central","Midwest","MO",381.142894495942,396.902458918667,413.013578055637,396.999143020204
+"766",25,32,1,1,"Communicable","Black","Female","Missouri",2000,"West North Central","Midwest","MO",48.6328428237758,53.2879744875053,58.3106029841309,53.3575113803817
+"767",25,32,1,1,"Injuries","Black","Female","Missouri",2000,"West North Central","Midwest","MO",35.5866444253799,38.5380304550492,41.8793015801745,38.526031516884
+"768",25,32,1,1,"Non-communicable","Black","Female","Missouri",2000,"West North Central","Midwest","MO",106.240015744907,112.715114623457,119.116227109253,112.817622446403
+"769",25,33,0,0,"All other causes","White","Male","Missouri",2001,"West North Central","Midwest","MO",131.35863475138,134.818643864645,138.532589881313,134.816369026658
+"770",25,33,0,0,"Cancers","White","Male","Missouri",2001,"West North Central","Midwest","MO",246.226709995773,250.428102178963,254.651980195189,250.407775330034
+"771",25,33,0,0,"Cardiovascular","White","Male","Missouri",2001,"West North Central","Midwest","MO",417.001289027267,423.791705993844,431.298684481937,423.973097256805
+"772",25,33,0,0,"Communicable","White","Male","Missouri",2001,"West North Central","Midwest","MO",48.1408957287796,50.6963862722341,53.1546695891163,50.665896365234
+"773",25,33,0,0,"Injuries","White","Male","Missouri",2001,"West North Central","Midwest","MO",85.6063214841669,87.7852568588827,90.1493111209609,87.8234036958394
+"774",25,33,0,0,"Non-communicable","White","Male","Missouri",2001,"West North Central","Midwest","MO",133.039608270776,136.441939281806,139.996994519706,136.442345035591
+"775",25,33,0,1,"All other causes","White","Female","Missouri",2001,"West North Central","Midwest","MO",107.354006207284,109.942202180908,112.405811173799,109.905845239946
+"776",25,33,0,1,"Cancers","White","Female","Missouri",2001,"West North Central","Midwest","MO",166.65072810787,169.322282531687,171.952282520014,169.321449227217
+"777",25,33,0,1,"Cardiovascular","White","Female","Missouri",2001,"West North Central","Midwest","MO",290.649503667171,295.343410700344,300.157131855608,295.362444743943
+"778",25,33,0,1,"Communicable","White","Female","Missouri",2001,"West North Central","Midwest","MO",35.4850604883879,37.0284484845293,38.5717331158047,37.0210639811148
+"779",25,33,0,1,"Injuries","White","Female","Missouri",2001,"West North Central","Midwest","MO",36.0479110942376,37.1983202240653,38.4262042051546,37.2157625886348
+"780",25,33,0,1,"Non-communicable","White","Female","Missouri",2001,"West North Central","Midwest","MO",97.690003202282,100.38433029248,103.037263220969,100.379838462784
+"781",25,33,1,0,"All other causes","Black","Male","Missouri",2001,"West North Central","Midwest","MO",181.508375466531,190.419490606998,200.984541979319,190.659180185431
+"782",25,33,1,0,"Cancers","Black","Male","Missouri",2001,"West North Central","Midwest","MO",345.183107268092,360.778756081963,376.158880562592,360.516320904019
+"783",25,33,1,0,"Cardiovascular","Black","Male","Missouri",2001,"West North Central","Midwest","MO",539.340308492732,560.485152178532,581.988006124489,560.074071746903
+"784",25,33,1,0,"Communicable","Black","Male","Missouri",2001,"West North Central","Midwest","MO",89.0195047972663,98.0930628823907,108.875481299856,97.9966978647972
+"785",25,33,1,0,"Injuries","Black","Male","Missouri",2001,"West North Central","Midwest","MO",129.814754292883,137.351091530854,145.114872809271,137.245767205284
+"786",25,33,1,0,"Non-communicable","Black","Male","Missouri",2001,"West North Central","Midwest","MO",159.966132635113,170.07126994208,180.253523177404,170.165568086797
+"787",25,33,1,1,"All other causes","Black","Female","Missouri",2001,"West North Central","Midwest","MO",147.077817383178,154.530518435171,161.942691009021,154.623906689285
+"788",25,33,1,1,"Cancers","Black","Female","Missouri",2001,"West North Central","Midwest","MO",204.127247098863,211.762862383034,219.924718868818,211.906937250598
+"789",25,33,1,1,"Cardiovascular","Black","Female","Missouri",2001,"West North Central","Midwest","MO",375.016027315532,390.186135143398,406.206817518681,390.15102317714
+"790",25,33,1,1,"Communicable","Black","Female","Missouri",2001,"West North Central","Midwest","MO",46.5491883610846,51.1920857509074,55.8498009413876,51.2219728069447
+"791",25,33,1,1,"Injuries","Black","Female","Missouri",2001,"West North Central","Midwest","MO",34.7831298789662,37.8979493588081,41.2976840319819,37.936972423103
+"792",25,33,1,1,"Non-communicable","Black","Female","Missouri",2001,"West North Central","Midwest","MO",109.400593843275,116.031402102511,122.797320361635,116.009293159576
+"793",25,34,0,0,"All other causes","White","Male","Missouri",2002,"West North Central","Midwest","MO",131.848322402836,135.410712029934,139.049399985234,135.413850337834
+"794",25,34,0,0,"Cancers","White","Male","Missouri",2002,"West North Central","Midwest","MO",244.058242741733,248.387348924463,252.424537819719,248.358875441874
+"795",25,34,0,0,"Cardiovascular","White","Male","Missouri",2002,"West North Central","Midwest","MO",413.612221741031,420.832815301123,427.753529742242,420.776517588137
+"796",25,34,0,0,"Communicable","White","Male","Missouri",2002,"West North Central","Midwest","MO",50.7827798277343,53.3780263890456,56.2228023791608,53.4551294789958
+"797",25,34,0,0,"Injuries","White","Male","Missouri",2002,"West North Central","Midwest","MO",86.7409220815595,88.9270281517389,91.3365320500066,88.9668693269618
+"798",25,34,0,0,"Non-communicable","White","Male","Missouri",2002,"West North Central","Midwest","MO",135.447299426054,139.141412662449,142.808672435069,139.147547489352
+"799",25,34,0,1,"All other causes","White","Female","Missouri",2002,"West North Central","Midwest","MO",108.728799194995,111.382135164873,114.289201793322,111.427266333103
+"800",25,34,0,1,"Cancers","White","Female","Missouri",2002,"West North Central","Midwest","MO",165.195468053882,167.756441889203,170.438041419454,167.777654238867
+"801",25,34,0,1,"Cardiovascular","White","Female","Missouri",2002,"West North Central","Midwest","MO",286.638690240696,290.936655321596,296.19039433511,291.114370403072
+"802",25,34,0,1,"Communicable","White","Female","Missouri",2002,"West North Central","Midwest","MO",36.5723840440201,38.2170239776114,39.8278234402306,38.20405760281
+"803",25,34,0,1,"Injuries","White","Female","Missouri",2002,"West North Central","Midwest","MO",37.0561570048798,38.3062726228138,39.4789826116352,38.3110016195117
+"804",25,34,0,1,"Non-communicable","White","Female","Missouri",2002,"West North Central","Midwest","MO",99.4839902000445,102.183263330209,104.805059624436,102.180508513027
+"805",25,34,1,0,"All other causes","Black","Male","Missouri",2002,"West North Central","Midwest","MO",181.992775054278,191.864923652314,201.593825688276,191.903576324522
+"806",25,34,1,0,"Cancers","Black","Male","Missouri",2002,"West North Central","Midwest","MO",339.379915361626,353.920234331386,369.903071757656,353.773852372451
+"807",25,34,1,0,"Cardiovascular","Black","Male","Missouri",2002,"West North Central","Midwest","MO",519.86296897462,539.657771733435,560.172117442529,539.750251144721
+"808",25,34,1,0,"Communicable","Black","Male","Missouri",2002,"West North Central","Midwest","MO",88.3944403716088,97.0248949200883,107.171112697383,97.1674006264198
+"809",25,34,1,0,"Injuries","Black","Male","Missouri",2002,"West North Central","Midwest","MO",126.532009811844,133.942559926879,141.824417663305,133.921547744617
+"810",25,34,1,0,"Non-communicable","Black","Male","Missouri",2002,"West North Central","Midwest","MO",159.84772396209,169.594136300367,180.497395747209,169.79225947861
+"811",25,34,1,1,"All other causes","Black","Female","Missouri",2002,"West North Central","Midwest","MO",146.549688798416,154.122581429239,161.720433618766,154.09721214256
+"812",25,34,1,1,"Cancers","Black","Female","Missouri",2002,"West North Central","Midwest","MO",201.867717087399,209.240138741573,217.050160626,209.286248180633
+"813",25,34,1,1,"Cardiovascular","Black","Female","Missouri",2002,"West North Central","Midwest","MO",378.504762787968,393.104880842154,408.486458964005,393.055105078507
+"814",25,34,1,1,"Communicable","Black","Female","Missouri",2002,"West North Central","Midwest","MO",47.8173776113359,52.1669644790108,56.7214065241393,52.1416721164038
+"815",25,34,1,1,"Injuries","Black","Female","Missouri",2002,"West North Central","Midwest","MO",33.8717101229483,37.081124099534,40.073490768118,37.0705122157811
+"816",25,34,1,1,"Non-communicable","Black","Female","Missouri",2002,"West North Central","Midwest","MO",113.178076948648,119.407167320961,126.542405720021,119.503146783681
+"817",25,35,0,0,"All other causes","White","Male","Missouri",2003,"West North Central","Midwest","MO",132.376858172239,135.917633566148,139.827974553712,135.962411454639
+"818",25,35,0,0,"Cancers","White","Male","Missouri",2003,"West North Central","Midwest","MO",241.648369662636,245.954759369217,250.12085369191,245.986901770876
+"819",25,35,0,0,"Cardiovascular","White","Male","Missouri",2003,"West North Central","Midwest","MO",392.468544074026,399.072518255679,406.67209094325,399.23036738079
+"820",25,35,0,0,"Communicable","White","Male","Missouri",2003,"West North Central","Midwest","MO",49.8590879607583,52.4847265996748,55.2901344811713,52.5125936550178
+"821",25,35,0,0,"Injuries","White","Male","Missouri",2003,"West North Central","Midwest","MO",87.7156417325216,89.898338708781,92.1102736615418,89.8836944825188
+"822",25,35,0,0,"Non-communicable","White","Male","Missouri",2003,"West North Central","Midwest","MO",132.018866902314,135.627139152232,139.192314483183,135.599552711403
+"823",25,35,0,1,"All other causes","White","Female","Missouri",2003,"West North Central","Midwest","MO",107.834805296216,110.539048238696,113.121194514379,110.508392541311
+"824",25,35,0,1,"Cancers","White","Female","Missouri",2003,"West North Central","Midwest","MO",163.650400893567,166.201527364501,169.05956508297,166.297186524459
+"825",25,35,0,1,"Cardiovascular","White","Female","Missouri",2003,"West North Central","Midwest","MO",275.385016601632,279.77103600185,284.00563941662,279.737080918782
+"826",25,35,0,1,"Communicable","White","Female","Missouri",2003,"West North Central","Midwest","MO",37.1022385025064,38.6461337426989,40.3028784700036,38.6617485361317
+"827",25,35,0,1,"Injuries","White","Female","Missouri",2003,"West North Central","Midwest","MO",38.1816450626075,39.4123966419598,40.7303333180051,39.4286976061822
+"828",25,35,0,1,"Non-communicable","White","Female","Missouri",2003,"West North Central","Midwest","MO",103.129315860691,105.740905239125,108.428592748781,105.740964112818
+"829",25,35,1,0,"All other causes","Black","Male","Missouri",2003,"West North Central","Midwest","MO",180.761730698439,191.10076833914,202.209457044492,191.364191114354
+"830",25,35,1,0,"Cancers","Black","Male","Missouri",2003,"West North Central","Midwest","MO",334.206961158086,349.819657534008,365.772545909486,349.931514162898
+"831",25,35,1,0,"Cardiovascular","Black","Male","Missouri",2003,"West North Central","Midwest","MO",505.597012235732,525.190344553349,545.454028567098,525.27333945505
+"832",25,35,1,0,"Communicable","Black","Male","Missouri",2003,"West North Central","Midwest","MO",83.748524292303,92.2023822888896,100.90363488659,92.2858215156919
+"833",25,35,1,0,"Injuries","Black","Male","Missouri",2003,"West North Central","Midwest","MO",123.759159900054,131.393048018697,139.126623043197,131.330574900741
+"834",25,35,1,0,"Non-communicable","Black","Male","Missouri",2003,"West North Central","Midwest","MO",157.099223970268,166.729233385001,177.385185390748,166.707120298695
+"835",25,35,1,1,"All other causes","Black","Female","Missouri",2003,"West North Central","Midwest","MO",143.28027914528,150.605687615403,158.851451269375,150.671277287385
+"836",25,35,1,1,"Cancers","Black","Female","Missouri",2003,"West North Central","Midwest","MO",199.608333751428,207.037103316534,215.35264647328,207.068283429055
+"837",25,35,1,1,"Cardiovascular","Black","Female","Missouri",2003,"West North Central","Midwest","MO",378.319854722338,393.978619093506,409.238271981066,393.907881714957
+"838",25,35,1,1,"Communicable","Black","Female","Missouri",2003,"West North Central","Midwest","MO",47.0321945608841,51.479684002439,56.2066793465302,51.5447603274775
+"839",25,35,1,1,"Injuries","Black","Female","Missouri",2003,"West North Central","Midwest","MO",33.3554531410363,36.3882312582095,39.6920309591878,36.4021173634228
+"840",25,35,1,1,"Non-communicable","Black","Female","Missouri",2003,"West North Central","Midwest","MO",116.749014884407,123.461211096445,131.033282276625,123.581959080772
+"841",25,36,0,0,"All other causes","White","Male","Missouri",2004,"West North Central","Midwest","MO",132.158732182941,135.620595576221,139.107530805851,135.564115724483
+"842",25,36,0,0,"Cancers","White","Male","Missouri",2004,"West North Central","Midwest","MO",239.958786559403,244.075925107206,248.441345191852,244.156952915212
+"843",25,36,0,0,"Cardiovascular","White","Male","Missouri",2004,"West North Central","Midwest","MO",369.345739431292,375.715108268693,382.317205571853,375.673965337729
+"844",25,36,0,0,"Communicable","White","Male","Missouri",2004,"West North Central","Midwest","MO",46.6335500910777,49.3215517078087,51.786431054961,49.316208624027
+"845",25,36,0,0,"Injuries","White","Male","Missouri",2004,"West North Central","Midwest","MO",88.5754979048181,90.6708042196473,92.9998044320672,90.747789519826
+"846",25,36,0,0,"Non-communicable","White","Male","Missouri",2004,"West North Central","Midwest","MO",131.109618014368,134.78563686048,138.315410959112,134.77393819634
+"847",25,36,0,1,"All other causes","White","Female","Missouri",2004,"West North Central","Midwest","MO",106.815157861301,109.501647164449,112.217244731872,109.528695169639
+"848",25,36,0,1,"Cancers","White","Female","Missouri",2004,"West North Central","Midwest","MO",162.11157533534,164.831399492201,167.479948058613,164.814607284359
+"849",25,36,0,1,"Cardiovascular","White","Female","Missouri",2004,"West North Central","Midwest","MO",261.636681067251,266.208157645388,270.790031053721,266.241604232637
+"850",25,36,0,1,"Communicable","White","Female","Missouri",2004,"West North Central","Midwest","MO",34.9329682272349,36.4705946916179,37.9394901924016,36.4519846678153
+"851",25,36,0,1,"Injuries","White","Female","Missouri",2004,"West North Central","Midwest","MO",38.8355936403884,40.1751250188121,41.5151722452258,40.1660051879404
+"852",25,36,0,1,"Non-communicable","White","Female","Missouri",2004,"West North Central","Midwest","MO",100.220597909612,102.870040589314,105.551177644998,102.866181297726
+"853",25,36,1,0,"All other causes","Black","Male","Missouri",2004,"West North Central","Midwest","MO",180.549815170599,191.121300901679,201.718861845443,191.068590716018
+"854",25,36,1,0,"Cancers","Black","Male","Missouri",2004,"West North Central","Midwest","MO",330.298855593445,346.125977980302,360.986892232401,345.86919733429
+"855",25,36,1,0,"Cardiovascular","Black","Male","Missouri",2004,"West North Central","Midwest","MO",492.762339559112,511.153145508109,532.370313814835,511.502686077854
+"856",25,36,1,0,"Communicable","Black","Male","Missouri",2004,"West North Central","Midwest","MO",81.2854704636336,89.4491939990557,99.2047062225524,89.6089147793257
+"857",25,36,1,0,"Injuries","Black","Male","Missouri",2004,"West North Central","Midwest","MO",123.514879854337,130.778564283018,138.057788018714,130.760571770946
+"858",25,36,1,0,"Non-communicable","Black","Male","Missouri",2004,"West North Central","Midwest","MO",155.027146795802,164.868915703218,174.955490924711,164.868098960522
+"859",25,36,1,1,"All other causes","Black","Female","Missouri",2004,"West North Central","Midwest","MO",141.544777963001,148.416135765767,156.401421898823,148.502669781556
+"860",25,36,1,1,"Cancers","Black","Female","Missouri",2004,"West North Central","Midwest","MO",195.371009064617,203.250822671127,210.591401850406,203.168213575769
+"861",25,36,1,1,"Cardiovascular","Black","Female","Missouri",2004,"West North Central","Midwest","MO",356.371233495953,372.130062276402,387.254438909691,372.256365809384
+"862",25,36,1,1,"Communicable","Black","Female","Missouri",2004,"West North Central","Midwest","MO",46.2183852414534,50.3942776599304,54.7683063325874,50.4433184692092
+"863",25,36,1,1,"Injuries","Black","Female","Missouri",2004,"West North Central","Midwest","MO",33.3735370774869,36.3783601747606,39.6602844983112,36.3877651881363
+"864",25,36,1,1,"Non-communicable","Black","Female","Missouri",2004,"West North Central","Midwest","MO",119.52170840913,126.426845665684,134.236825641169,126.66229788163
+"865",25,37,0,0,"All other causes","White","Male","Missouri",2005,"West North Central","Midwest","MO",130.624796962925,134.065382254,137.445712039395,134.058167387553
+"866",25,37,0,0,"Cancers","White","Male","Missouri",2005,"West North Central","Midwest","MO",236.666225769982,240.818066720167,244.919717733411,240.786293285054
+"867",25,37,0,0,"Cardiovascular","White","Male","Missouri",2005,"West North Central","Midwest","MO",353.259567866173,359.754872214114,366.237423631267,359.79928653548
+"868",25,37,0,0,"Communicable","White","Male","Missouri",2005,"West North Central","Midwest","MO",49.1981585968129,51.6610476857099,54.2682905904601,51.6689454645581
+"869",25,37,0,0,"Injuries","White","Male","Missouri",2005,"West North Central","Midwest","MO",91.2104041649358,93.3384207808555,95.8383971244917,93.3747596403477
+"870",25,37,0,0,"Non-communicable","White","Male","Missouri",2005,"West North Central","Midwest","MO",135.971619116283,139.406172967621,142.780943488806,139.36013469675
+"871",25,37,0,1,"All other causes","White","Female","Missouri",2005,"West North Central","Midwest","MO",109.271145541209,112.238359106041,115.037901802144,112.247945519727
+"872",25,37,0,1,"Cancers","White","Female","Missouri",2005,"West North Central","Midwest","MO",160.966985845816,163.526478719666,166.17720223842,163.531981439943
+"873",25,37,0,1,"Cardiovascular","White","Female","Missouri",2005,"West North Central","Midwest","MO",249.68180500709,253.845682834208,258.073397587687,253.856212076959
+"874",25,37,0,1,"Communicable","White","Female","Missouri",2005,"West North Central","Midwest","MO",35.1637522417265,36.5814429696976,38.0415660739555,36.5563406150522
+"875",25,37,0,1,"Injuries","White","Female","Missouri",2005,"West North Central","Midwest","MO",39.3418822412425,40.6027255915622,41.9645563467766,40.6117333804067
+"876",25,37,0,1,"Non-communicable","White","Female","Missouri",2005,"West North Central","Midwest","MO",106.053363867191,108.734910591479,111.475912162035,108.772663423763
+"877",25,37,1,0,"All other causes","Black","Male","Missouri",2005,"West North Central","Midwest","MO",176.172484454883,187.200063174522,197.102209267543,186.936483398521
+"878",25,37,1,0,"Cancers","Black","Male","Missouri",2005,"West North Central","Midwest","MO",325.500127512321,339.98336406034,355.440991696576,340.049463761775
+"879",25,37,1,0,"Cardiovascular","Black","Male","Missouri",2005,"West North Central","Midwest","MO",473.478757979255,493.110683769727,513.98520785443,493.112726651739
+"880",25,37,1,0,"Communicable","Black","Male","Missouri",2005,"West North Central","Midwest","MO",76.8857317798191,84.5528434561954,93.8074564350218,84.6417144038921
+"881",25,37,1,0,"Injuries","Black","Male","Missouri",2005,"West North Central","Midwest","MO",126.772740777414,134.21128327022,141.798617658543,134.255462891589
+"882",25,37,1,0,"Non-communicable","Black","Male","Missouri",2005,"West North Central","Midwest","MO",155.462757734236,164.868417278506,175.094638619555,164.878538236618
+"883",25,37,1,1,"All other causes","Black","Female","Missouri",2005,"West North Central","Midwest","MO",142.746205907733,149.502284757629,157.280445957864,149.616096704059
+"884",25,37,1,1,"Cancers","Black","Female","Missouri",2005,"West North Central","Midwest","MO",190.589495821249,198.323714204566,205.324736158391,198.290312605849
+"885",25,37,1,1,"Cardiovascular","Black","Female","Missouri",2005,"West North Central","Midwest","MO",338.29535106491,351.858908707422,366.459291359074,352.093850705842
+"886",25,37,1,1,"Communicable","Black","Female","Missouri",2005,"West North Central","Midwest","MO",45.8778473915137,50.0062828931433,55.0071347498845,50.1053748081269
+"887",25,37,1,1,"Injuries","Black","Female","Missouri",2005,"West North Central","Midwest","MO",33.6107717196788,36.4234246763169,39.6466510521416,36.46764317756
+"888",25,37,1,1,"Non-communicable","Black","Female","Missouri",2005,"West North Central","Midwest","MO",120.096295243392,127.214723543371,134.389312284576,127.34075663423
+"889",25,38,0,0,"All other causes","White","Male","Missouri",2006,"West North Central","Midwest","MO",133.793283959595,137.43820097854,140.889770985358,137.412131298362
+"890",25,38,0,0,"Cancers","White","Male","Missouri",2006,"West North Central","Midwest","MO",231.293424564725,235.100596788514,239.254946594326,235.099031162469
+"891",25,38,0,0,"Cardiovascular","White","Male","Missouri",2006,"West North Central","Midwest","MO",337.066003647935,343.015023109799,349.381881506089,343.077092227593
+"892",25,38,0,0,"Communicable","White","Male","Missouri",2006,"West North Central","Midwest","MO",44.9681499694207,47.30705433059,49.6141387889935,47.2938480412214
+"893",25,38,0,0,"Injuries","White","Male","Missouri",2006,"West North Central","Midwest","MO",92.6745889197634,94.825819124813,97.116339347105,94.8602446471828
+"894",25,38,0,0,"Non-communicable","White","Male","Missouri",2006,"West North Central","Midwest","MO",133.957994571096,137.423202274178,141.194044326004,137.474809846882
+"895",25,38,0,1,"All other causes","White","Female","Missouri",2006,"West North Central","Midwest","MO",113.716106341895,116.303748706648,119.009156039351,116.302953624892
+"896",25,38,0,1,"Cancers","White","Female","Missouri",2006,"West North Central","Midwest","MO",160.084999963141,162.567364139496,165.15531365791,162.612551247074
+"897",25,38,0,1,"Cardiovascular","White","Female","Missouri",2006,"West North Central","Midwest","MO",240.470453122787,244.644271465706,248.564886664068,244.629404101446
+"898",25,38,0,1,"Communicable","White","Female","Missouri",2006,"West North Central","Midwest","MO",33.347896225661,34.7484149246106,36.1570162598933,34.7467671636596
+"899",25,38,0,1,"Injuries","White","Female","Missouri",2006,"West North Central","Midwest","MO",40.2562226583222,41.4903209248615,42.7820899903669,41.5123268863378
+"900",25,38,0,1,"Non-communicable","White","Female","Missouri",2006,"West North Central","Midwest","MO",105.0565552809,107.771042204446,110.357337686013,107.763794862101
+"901",25,38,1,0,"All other causes","Black","Male","Missouri",2006,"West North Central","Midwest","MO",175.080963693047,185.000063367627,196.323252316986,185.13600146311
+"902",25,38,1,0,"Cancers","Black","Male","Missouri",2006,"West North Central","Midwest","MO",318.227442322845,332.703692302477,347.986150433549,332.827669903323
+"903",25,38,1,0,"Cardiovascular","Black","Male","Missouri",2006,"West North Central","Midwest","MO",454.044085758446,471.503561392194,490.181342183483,471.897252150935
+"904",25,38,1,0,"Communicable","Black","Male","Missouri",2006,"West North Central","Midwest","MO",70.6112660154931,78.7102801892076,86.9245253562181,78.7519266877001
+"905",25,38,1,0,"Injuries","Black","Male","Missouri",2006,"West North Central","Midwest","MO",127.486552048346,135.188722733746,142.394417415961,135.158144799602
+"906",25,38,1,0,"Non-communicable","Black","Male","Missouri",2006,"West North Central","Midwest","MO",154.565643080614,164.628966792278,174.864520339943,164.652205485003
+"907",25,38,1,1,"All other causes","Black","Female","Missouri",2006,"West North Central","Midwest","MO",145.560931701215,153.015979213729,160.629405310761,152.991270053769
+"908",25,38,1,1,"Cancers","Black","Female","Missouri",2006,"West North Central","Midwest","MO",189.139263899659,196.413497672717,203.75948266475,196.456073395716
+"909",25,38,1,1,"Cardiovascular","Black","Female","Missouri",2006,"West North Central","Midwest","MO",326.220758331961,339.378643320267,353.347622693666,339.702226805531
+"910",25,38,1,1,"Communicable","Black","Female","Missouri",2006,"West North Central","Midwest","MO",43.3123419746203,47.0686462125878,51.6458929719623,47.2075250530212
+"911",25,38,1,1,"Injuries","Black","Female","Missouri",2006,"West North Central","Midwest","MO",33.999096803776,36.7209256735193,39.8824035772968,36.7877169438597
+"912",25,38,1,1,"Non-communicable","Black","Female","Missouri",2006,"West North Central","Midwest","MO",118.295295607914,125.261367692728,132.235184637939,125.239532743908
+"913",25,39,0,0,"All other causes","White","Male","Missouri",2007,"West North Central","Midwest","MO",135.710166848913,139.30630244499,142.927223600604,139.320380454514
+"914",25,39,0,0,"Cancers","White","Male","Missouri",2007,"West North Central","Midwest","MO",227.982683699738,231.879263337184,235.794269590719,231.904279344637
+"915",25,39,0,0,"Cardiovascular","White","Male","Missouri",2007,"West North Central","Midwest","MO",326.928450245578,332.889716052286,338.886216584613,332.809926980349
+"916",25,39,0,0,"Communicable","White","Male","Missouri",2007,"West North Central","Midwest","MO",45.5193710534816,47.9138714422355,50.4081460275357,47.898864342734
+"917",25,39,0,0,"Injuries","White","Male","Missouri",2007,"West North Central","Midwest","MO",93.3072069078979,95.6124180204241,97.9201510000681,95.5786190135563
+"918",25,39,0,0,"Non-communicable","White","Male","Missouri",2007,"West North Central","Midwest","MO",135.648305179299,138.910199848121,142.302173937802,138.975420298333
+"919",25,39,0,1,"All other causes","White","Female","Missouri",2007,"West North Central","Midwest","MO",114.060859522355,116.642550837794,119.202414044538,116.631739703652
+"920",25,39,0,1,"Cancers","White","Female","Missouri",2007,"West North Central","Midwest","MO",157.304699592153,160.042366918587,162.714004286714,160.052948885671
+"921",25,39,0,1,"Cardiovascular","White","Female","Missouri",2007,"West North Central","Midwest","MO",231.849994800883,235.530450897523,239.564545084624,235.622746486867
+"922",25,39,0,1,"Communicable","White","Female","Missouri",2007,"West North Central","Midwest","MO",32.3278493363235,33.6653434656821,35.1181221092452,33.6727543987591
+"923",25,39,0,1,"Injuries","White","Female","Missouri",2007,"West North Central","Midwest","MO",40.5474147530635,41.8592069640302,43.0815157538157,41.8460366757593
+"924",25,39,0,1,"Non-communicable","White","Female","Missouri",2007,"West North Central","Midwest","MO",107.230526225827,110.011022820163,112.565108235261,110.020195998515
+"925",25,39,1,0,"All other causes","Black","Male","Missouri",2007,"West North Central","Midwest","MO",172.854360252279,182.700487845461,192.860536054703,182.381931303114
+"926",25,39,1,0,"Cancers","Black","Male","Missouri",2007,"West North Central","Midwest","MO",301.147913125888,314.975622089454,331.82858928348,315.486570571466
+"927",25,39,1,0,"Cardiovascular","Black","Male","Missouri",2007,"West North Central","Midwest","MO",439.65044275809,455.848560199916,475.341090890101,456.681765565005
+"928",25,39,1,0,"Communicable","Black","Male","Missouri",2007,"West North Central","Midwest","MO",67.9938742634106,74.9258950078055,83.7934134964451,75.0929021252219
+"929",25,39,1,0,"Injuries","Black","Male","Missouri",2007,"West North Central","Midwest","MO",124.680859500071,131.698907960165,139.271462971211,131.747328585417
+"930",25,39,1,0,"Non-communicable","Black","Male","Missouri",2007,"West North Central","Midwest","MO",151.652586064778,160.886993959002,170.826018529634,160.874757103845
+"931",25,39,1,1,"All other causes","Black","Female","Missouri",2007,"West North Central","Midwest","MO",147.09750854094,154.229703668124,162.856490041463,154.396464064522
+"932",25,39,1,1,"Cancers","Black","Female","Missouri",2007,"West North Central","Midwest","MO",187.024771872461,194.55449185742,202.010987083216,194.577249412879
+"933",25,39,1,1,"Cardiovascular","Black","Female","Missouri",2007,"West North Central","Midwest","MO",314.498303028507,328.454790529011,342.441927798907,328.680817817002
+"934",25,39,1,1,"Communicable","Black","Female","Missouri",2007,"West North Central","Midwest","MO",41.513604288497,45.2313812553981,49.4373268056144,45.2601611464617
+"935",25,39,1,1,"Injuries","Black","Female","Missouri",2007,"West North Central","Midwest","MO",33.9269870055568,36.7553618267068,39.8826092857437,36.8155320854862
+"936",25,39,1,1,"Non-communicable","Black","Female","Missouri",2007,"West North Central","Midwest","MO",115.898502937398,122.905461802102,129.761459216736,122.985088572131
+"937",25,40,0,0,"All other causes","White","Male","Missouri",2008,"West North Central","Midwest","MO",138.164309420098,141.673841065548,145.416025279767,141.672387499194
+"938",25,40,0,0,"Cancers","White","Male","Missouri",2008,"West North Central","Midwest","MO",224.283732300937,228.082239558414,232.542368278774,228.213588468865
+"939",25,40,0,0,"Cardiovascular","White","Male","Missouri",2008,"West North Central","Midwest","MO",323.933241292082,329.498087612197,335.743531619661,329.570804625437
+"940",25,40,0,0,"Communicable","White","Male","Missouri",2008,"West North Central","Midwest","MO",46.7889000038777,49.23794455402,51.751626746545,49.2780965036786
+"941",25,40,0,0,"Injuries","White","Male","Missouri",2008,"West North Central","Midwest","MO",94.4378256442347,96.6803022598422,99.1914990285112,96.7227892654719
+"942",25,40,0,0,"Non-communicable","White","Male","Missouri",2008,"West North Central","Midwest","MO",143.728226365583,147.252280687461,150.995696157984,147.32916650288
+"943",25,40,0,1,"All other causes","White","Female","Missouri",2008,"West North Central","Midwest","MO",117.930984754866,120.676022955681,123.526405381265,120.71594206144
+"944",25,40,0,1,"Cancers","White","Female","Missouri",2008,"West North Central","Midwest","MO",156.35170650944,158.9573834197,161.469950751828,158.968906617814
+"945",25,40,0,1,"Cardiovascular","White","Female","Missouri",2008,"West North Central","Midwest","MO",231.13613039077,235.085821623917,239.34206431633,235.109255667943
+"946",25,40,0,1,"Communicable","White","Female","Missouri",2008,"West North Central","Midwest","MO",33.9290489119259,35.3252771109306,36.7636410975724,35.3300444498093
+"947",25,40,0,1,"Injuries","White","Female","Missouri",2008,"West North Central","Midwest","MO",40.6476809230865,41.8591913772951,43.1877960995986,41.8854026522318
+"948",25,40,0,1,"Non-communicable","White","Female","Missouri",2008,"West North Central","Midwest","MO",115.874625004305,118.834035145424,121.742439365429,118.810294675373
+"949",25,40,1,0,"All other causes","Black","Male","Missouri",2008,"West North Central","Midwest","MO",169.36657998209,179.338793592903,189.495805278738,179.309835116688
+"950",25,40,1,0,"Cancers","Black","Male","Missouri",2008,"West North Central","Midwest","MO",282.60288560346,295.850449865198,310.167885436423,296.091337772399
+"951",25,40,1,0,"Cardiovascular","Black","Male","Missouri",2008,"West North Central","Midwest","MO",420.573994499571,435.765864950318,453.749263340772,435.974929326754
+"952",25,40,1,0,"Communicable","Black","Male","Missouri",2008,"West North Central","Midwest","MO",63.3312157102007,70.409703530882,77.5062776160128,70.4780021460772
+"953",25,40,1,0,"Injuries","Black","Male","Missouri",2008,"West North Central","Midwest","MO",126.383247999073,133.742906613707,141.326537962795,133.843576715465
+"954",25,40,1,0,"Non-communicable","Black","Male","Missouri",2008,"West North Central","Midwest","MO",148.112639658184,156.86479087845,166.64284910131,156.869654141838
+"955",25,40,1,1,"All other causes","Black","Female","Missouri",2008,"West North Central","Midwest","MO",142.916886887886,150.290478387208,158.51233314867,150.338192449117
+"956",25,40,1,1,"Cancers","Black","Female","Missouri",2008,"West North Central","Midwest","MO",184.364722190263,191.64663241864,199.332132986122,191.610998145424
+"957",25,40,1,1,"Cardiovascular","Black","Female","Missouri",2008,"West North Central","Midwest","MO",290.00163147485,301.954941049805,314.467889761129,301.860962262124
+"958",25,40,1,1,"Communicable","Black","Female","Missouri",2008,"West North Central","Midwest","MO",40.3243022520636,43.8695572472103,47.6255593775211,43.9216198250903
+"959",25,40,1,1,"Injuries","Black","Female","Missouri",2008,"West North Central","Midwest","MO",33.7164335072868,36.4958928401206,39.6532274872575,36.5508006428826
+"960",25,40,1,1,"Non-communicable","Black","Female","Missouri",2008,"West North Central","Midwest","MO",116.254645714065,122.668589214767,129.668053470524,122.707628921271
+"961",25,41,0,0,"All other causes","White","Male","Missouri",2009,"West North Central","Midwest","MO",135.396071357999,138.896671721887,142.350933367205,138.914054089203
+"962",25,41,0,0,"Cancers","White","Male","Missouri",2009,"West North Central","Midwest","MO",221.06025977768,224.935510968621,228.857686502054,224.979487286021
+"963",25,41,0,0,"Cardiovascular","White","Male","Missouri",2009,"West North Central","Midwest","MO",311.446329284415,316.611071016435,322.56059792177,316.759881441864
+"964",25,41,0,0,"Communicable","White","Male","Missouri",2009,"West North Central","Midwest","MO",42.4406722303244,44.6069981488552,46.9313971948555,44.5950151216434
+"965",25,41,0,0,"Injuries","White","Male","Missouri",2009,"West North Central","Midwest","MO",94.5253372220988,96.8119162686784,99.1669058828472,96.7932448760474
+"966",25,41,0,0,"Non-communicable","White","Male","Missouri",2009,"West North Central","Midwest","MO",136.510197762204,139.924895051004,143.199560527239,139.910297294234
+"967",25,41,0,1,"All other causes","White","Female","Missouri",2009,"West North Central","Midwest","MO",117.910862460973,120.49373901665,123.100068728563,120.492090899117
+"968",25,41,0,1,"Cancers","White","Female","Missouri",2009,"West North Central","Midwest","MO",153.635079122371,156.273587031883,158.971513612254,156.292072300169
+"969",25,41,0,1,"Cardiovascular","White","Female","Missouri",2009,"West North Central","Midwest","MO",215.390091710151,219.090673957886,222.938091950629,219.132172784109
+"970",25,41,0,1,"Communicable","White","Female","Missouri",2009,"West North Central","Midwest","MO",32.7392218010225,34.1418844350021,35.5527597338629,34.1310626286617
+"971",25,41,0,1,"Injuries","White","Female","Missouri",2009,"West North Central","Midwest","MO",40.7905829895423,42.0732817012258,43.3349915247691,42.0860126508397
+"972",25,41,0,1,"Non-communicable","White","Female","Missouri",2009,"West North Central","Midwest","MO",111.7634160838,114.422831483681,117.166023842276,114.441546887059
+"973",25,41,1,0,"All other causes","Black","Male","Missouri",2009,"West North Central","Midwest","MO",164.296318400177,173.86186422877,183.361437401108,173.970927412274
+"974",25,41,1,0,"Cancers","Black","Male","Missouri",2009,"West North Central","Midwest","MO",272.559100221366,285.30410753435,299.217112532864,285.546021477158
+"975",25,41,1,0,"Cardiovascular","Black","Male","Missouri",2009,"West North Central","Midwest","MO",399.550698673979,414.58959719208,430.515141775967,414.818190063452
+"976",25,41,1,0,"Communicable","Black","Male","Missouri",2009,"West North Central","Midwest","MO",59.9566964240631,66.8576973133447,73.7317375310833,66.9236176859172
+"977",25,41,1,0,"Injuries","Black","Male","Missouri",2009,"West North Central","Midwest","MO",125.140361772013,132.034569329862,139.715624577082,132.181102806127
+"978",25,41,1,0,"Non-communicable","Black","Male","Missouri",2009,"West North Central","Midwest","MO",143.430837130607,152.883539718059,161.378092256677,152.789475520075
+"979",25,41,1,1,"All other causes","Black","Female","Missouri",2009,"West North Central","Midwest","MO",139.928384658249,147.078943974901,155.150347339202,147.115158877154
+"980",25,41,1,1,"Cancers","Black","Female","Missouri",2009,"West North Central","Midwest","MO",182.616662862436,189.862445462658,197.556838001057,189.988139262228
+"981",25,41,1,1,"Cardiovascular","Black","Female","Missouri",2009,"West North Central","Midwest","MO",274.204840344114,286.6118709442,298.739290465117,286.566315603962
+"982",25,41,1,1,"Communicable","Black","Female","Missouri",2009,"West North Central","Midwest","MO",37.3766474068006,41.1778019236299,44.7768890611884,41.1691213338349
+"983",25,41,1,1,"Injuries","Black","Female","Missouri",2009,"West North Central","Midwest","MO",33.3366490239071,36.3187676268135,39.4126322720841,36.3683079721924
+"984",25,41,1,1,"Non-communicable","Black","Female","Missouri",2009,"West North Central","Midwest","MO",116.181610536648,122.345214834455,129.45622542913,122.525701321555
+"985",25,42,0,0,"All other causes","White","Male","Missouri",2010,"West North Central","Midwest","MO",141.494880894285,144.989809100138,148.631337631666,145.045789333169
+"986",25,42,0,0,"Cancers","White","Male","Missouri",2010,"West North Central","Midwest","MO",216.250784860464,220.189857232213,224.200989623335,220.183846552194
+"987",25,42,0,0,"Cardiovascular","White","Male","Missouri",2010,"West North Central","Midwest","MO",301.542116981142,307.011880661225,312.32211862597,306.966991038621
+"988",25,42,0,0,"Communicable","White","Male","Missouri",2010,"West North Central","Midwest","MO",39.6935697045455,41.7872641563766,43.9992946923719,41.8030722164291
+"989",25,42,0,0,"Injuries","White","Male","Missouri",2010,"West North Central","Midwest","MO",94.2852543203013,96.6346182681066,98.9664442981488,96.644462113955
+"990",25,42,0,0,"Non-communicable","White","Male","Missouri",2010,"West North Central","Midwest","MO",138.31362445566,141.652839532979,145.360809976397,141.66049071152
+"991",25,42,0,1,"All other causes","White","Female","Missouri",2010,"West North Central","Midwest","MO",122.044636411555,125.016997251314,127.938769890317,125.029329150721
+"992",25,42,0,1,"Cancers","White","Female","Missouri",2010,"West North Central","Midwest","MO",152.733100090671,155.379265881382,157.899719531746,155.388073824275
+"993",25,42,0,1,"Cardiovascular","White","Female","Missouri",2010,"West North Central","Midwest","MO",209.674389111511,213.2952234301,216.900654709944,213.230223742171
+"994",25,42,0,1,"Communicable","White","Female","Missouri",2010,"West North Central","Midwest","MO",30.5312233455413,32.0065827858585,33.4634950872143,32.0210199039249
+"995",25,42,0,1,"Injuries","White","Female","Missouri",2010,"West North Central","Midwest","MO",41.5000821100814,42.8630927084661,44.1293865090855,42.8585359369077
+"996",25,42,0,1,"Non-communicable","White","Female","Missouri",2010,"West North Central","Midwest","MO",114.034976448238,116.782279283192,119.591250182493,116.756801545231
+"997",25,42,1,0,"All other causes","Black","Male","Missouri",2010,"West North Central","Midwest","MO",162.656066106438,173.193017987364,182.895613934191,173.019342479459
+"998",25,42,1,0,"Cancers","Black","Male","Missouri",2010,"West North Central","Midwest","MO",267.71293557581,280.558660782206,293.790043830985,280.576265623172
+"999",25,42,1,0,"Cardiovascular","Black","Male","Missouri",2010,"West North Central","Midwest","MO",383.820457829568,399.120579561066,414.425598926892,398.9470225822
+"1000",25,42,1,0,"Communicable","Black","Male","Missouri",2010,"West North Central","Midwest","MO",56.8645765205251,62.5843180045242,69.5010106125669,62.8564830007406
+"1001",25,42,1,0,"Injuries","Black","Male","Missouri",2010,"West North Central","Midwest","MO",126.113333610105,133.112472041282,140.116709644035,133.074614658269
+"1002",25,42,1,0,"Non-communicable","Black","Male","Missouri",2010,"West North Central","Midwest","MO",145.238621070913,154.598657023162,163.303310159531,154.49565259387
+"1003",25,42,1,1,"All other causes","Black","Female","Missouri",2010,"West North Central","Midwest","MO",142.965158159261,149.985822496642,157.673237211532,150.048741192853
+"1004",25,42,1,1,"Cancers","Black","Female","Missouri",2010,"West North Central","Midwest","MO",183.769478649779,190.73249495199,198.037766025331,190.715203944464
+"1005",25,42,1,1,"Cardiovascular","Black","Female","Missouri",2010,"West North Central","Midwest","MO",261.413823524373,272.361995904017,284.485899315514,272.344931760016
+"1006",25,42,1,1,"Communicable","Black","Female","Missouri",2010,"West North Central","Midwest","MO",36.0606654475936,39.5360875194653,43.2819622966533,39.5805985112295
+"1007",25,42,1,1,"Injuries","Black","Female","Missouri",2010,"West North Central","Midwest","MO",33.3224535483034,36.4692413486265,39.5997401267165,36.4384883586034
+"1008",25,42,1,1,"Non-communicable","Black","Female","Missouri",2010,"West North Central","Midwest","MO",116.114322195493,122.766833585638,129.849795644457,122.850163501564
+"1009",25,43,0,0,"All other causes","White","Male","Missouri",2011,"West North Central","Midwest","MO",145.832202431346,149.39690085294,153.217523669654,149.417549629119
+"1010",25,43,0,0,"Cancers","White","Male","Missouri",2011,"West North Central","Midwest","MO",212.582874292699,216.408973382699,220.18114276545,216.394778190039
+"1011",25,43,0,0,"Cardiovascular","White","Male","Missouri",2011,"West North Central","Midwest","MO",295.212800352757,300.061802469466,305.043768510501,300.065824876107
+"1012",25,43,0,0,"Communicable","White","Male","Missouri",2011,"West North Central","Midwest","MO",40.467185010997,42.625039015784,44.7731080043865,42.5844745910305
+"1013",25,43,0,0,"Injuries","White","Male","Missouri",2011,"West North Central","Midwest","MO",94.750547708653,96.9843214041599,99.5299733389142,96.9917892113609
+"1014",25,43,0,0,"Non-communicable","White","Male","Missouri",2011,"West North Central","Midwest","MO",136.334275814631,139.761330812055,143.049321063971,139.764293232198
+"1015",25,43,0,1,"All other causes","White","Female","Missouri",2011,"West North Central","Midwest","MO",127.146394885721,130.154559013181,133.045662645148,130.144562087117
+"1016",25,43,0,1,"Cancers","White","Female","Missouri",2011,"West North Central","Midwest","MO",151.732424375179,154.274563056101,156.646069546991,154.277821164909
+"1017",25,43,0,1,"Cardiovascular","White","Female","Missouri",2011,"West North Central","Midwest","MO",206.259967875447,210.144569125481,213.87672928087,210.101011209886
+"1018",25,43,0,1,"Communicable","White","Female","Missouri",2011,"West North Central","Midwest","MO",30.5888754342963,32.0153370692311,33.3441141171048,32.0027013252757
+"1019",25,43,0,1,"Injuries","White","Female","Missouri",2011,"West North Central","Midwest","MO",42.3296855758131,43.6428942926528,45.0057707527793,43.6498317000417
+"1020",25,43,0,1,"Non-communicable","White","Female","Missouri",2011,"West North Central","Midwest","MO",110.730883009501,113.364359816271,116.109193674836,113.332814775898
+"1021",25,43,1,0,"All other causes","Black","Male","Missouri",2011,"West North Central","Midwest","MO",164.896960134106,174.437669358394,185.585242213018,174.621531659783
+"1022",25,43,1,0,"Cancers","Black","Male","Missouri",2011,"West North Central","Midwest","MO",262.152379310583,274.55941909078,288.94674804642,274.899784288263
+"1023",25,43,1,0,"Cardiovascular","Black","Male","Missouri",2011,"West North Central","Midwest","MO",374.558220233914,390.567099039939,406.970685776281,390.618705048331
+"1024",25,43,1,0,"Communicable","Black","Male","Missouri",2011,"West North Central","Midwest","MO",55.3579006680707,60.9313982246929,67.2169356520103,61.0456807208232
+"1025",25,43,1,0,"Injuries","Black","Male","Missouri",2011,"West North Central","Midwest","MO",125.608930298439,132.983613325265,141.162701806708,133.107937279017
+"1026",25,43,1,0,"Non-communicable","Black","Male","Missouri",2011,"West North Central","Midwest","MO",147.292505442674,156.290018482093,165.906297058164,156.4520608299
+"1027",25,43,1,1,"All other causes","Black","Female","Missouri",2011,"West North Central","Midwest","MO",141.622365417665,149.480381008201,157.271170819862,149.539068354489
+"1028",25,43,1,1,"Cancers","Black","Female","Missouri",2011,"West North Central","Midwest","MO",182.574842622042,189.247201031103,197.026529597972,189.483343048218
+"1029",25,43,1,1,"Cardiovascular","Black","Female","Missouri",2011,"West North Central","Midwest","MO",247.070220571988,258.258208263066,268.812128439604,258.213778378875
+"1030",25,43,1,1,"Communicable","Black","Female","Missouri",2011,"West North Central","Midwest","MO",34.0742837548329,37.54518017528,41.2266875429922,37.5995105990327
+"1031",25,43,1,1,"Injuries","Black","Female","Missouri",2011,"West North Central","Midwest","MO",33.4118124922725,36.5805830031292,39.7447908033852,36.6135554184769
+"1032",25,43,1,1,"Non-communicable","Black","Female","Missouri",2011,"West North Central","Midwest","MO",116.537945904309,123.057521447433,130.165472262805,123.239754392188
+"1033",25,44,0,0,"All other causes","White","Male","Missouri",2012,"West North Central","Midwest","MO",146.03131431212,149.71308894057,153.518146277312,149.741010920133
+"1034",25,44,0,0,"Cancers","White","Male","Missouri",2012,"West North Central","Midwest","MO",212.084595229768,215.666450217698,219.709920622169,215.754070023903
+"1035",25,44,0,0,"Cardiovascular","White","Male","Missouri",2012,"West North Central","Midwest","MO",290.724908832625,295.824558870304,301.020614151438,295.907272846807
+"1036",25,44,0,0,"Communicable","White","Male","Missouri",2012,"West North Central","Midwest","MO",39.5594893786435,41.6109337894653,43.6977452778306,41.6168185620707
+"1037",25,44,0,0,"Injuries","White","Male","Missouri",2012,"West North Central","Midwest","MO",93.4801801850705,95.8588097638232,98.3678213663736,95.8777765837728
+"1038",25,44,0,0,"Non-communicable","White","Male","Missouri",2012,"West North Central","Midwest","MO",134.834471150154,138.180227293546,141.648186830381,138.193900830579
+"1039",25,44,0,1,"All other causes","White","Female","Missouri",2012,"West North Central","Midwest","MO",123.326847358461,126.237253658993,129.314273370195,126.251407256899
+"1040",25,44,0,1,"Cancers","White","Female","Missouri",2012,"West North Central","Midwest","MO",150.848149490907,153.473195021783,156.161939524141,153.450080772532
+"1041",25,44,0,1,"Cardiovascular","White","Female","Missouri",2012,"West North Central","Midwest","MO",200.658258104028,204.304870857082,208.222624325558,204.322098224822
+"1042",25,44,0,1,"Communicable","White","Female","Missouri",2012,"West North Central","Midwest","MO",30.845369932341,32.2451158080118,33.6311178275136,32.2364058262696
+"1043",25,44,0,1,"Injuries","White","Female","Missouri",2012,"West North Central","Midwest","MO",42.1193006542263,43.5930647819228,45.0658926850293,43.6093594640046
+"1044",25,44,0,1,"Non-communicable","White","Female","Missouri",2012,"West North Central","Midwest","MO",110.606301702732,113.235970909074,115.96630372926,113.245513755983
+"1045",25,44,1,0,"All other causes","Black","Male","Missouri",2012,"West North Central","Midwest","MO",164.742362967216,174.605217266632,184.793564179583,174.811193946666
+"1046",25,44,1,0,"Cancers","Black","Male","Missouri",2012,"West North Central","Midwest","MO",261.684102405339,275.245852483565,289.653672997797,275.267118226618
+"1047",25,44,1,0,"Cardiovascular","Black","Male","Missouri",2012,"West North Central","Midwest","MO",373.239946864952,389.172392731429,406.889588655636,389.626904757222
+"1048",25,44,1,0,"Communicable","Black","Male","Missouri",2012,"West North Central","Midwest","MO",55.2347651666745,61.2562936238924,68.25243249009,61.2650023304981
+"1049",25,44,1,0,"Injuries","Black","Male","Missouri",2012,"West North Central","Midwest","MO",125.437492932635,132.938499181335,140.294623444394,132.908369995041
+"1050",25,44,1,0,"Non-communicable","Black","Male","Missouri",2012,"West North Central","Midwest","MO",146.249307702019,155.605593476636,165.981248555507,155.801184016721
+"1051",25,44,1,1,"All other causes","Black","Female","Missouri",2012,"West North Central","Midwest","MO",144.004083241307,151.879810098543,159.859435351863,151.909770762586
+"1052",25,44,1,1,"Cancers","Black","Female","Missouri",2012,"West North Central","Midwest","MO",182.417825281047,189.654931686062,197.134601216737,189.703899922829
+"1053",25,44,1,1,"Cardiovascular","Black","Female","Missouri",2012,"West North Central","Midwest","MO",242.43817534784,253.498487534354,265.32837472982,253.581182073657
+"1054",25,44,1,1,"Communicable","Black","Female","Missouri",2012,"West North Central","Midwest","MO",33.1039253331771,36.7458274287472,40.6582378832109,36.8020916865386
+"1055",25,44,1,1,"Injuries","Black","Female","Missouri",2012,"West North Central","Midwest","MO",33.4568665618439,36.8417881526639,40.3450446770368,36.8812543819159
+"1056",25,44,1,1,"Non-communicable","Black","Female","Missouri",2012,"West North Central","Midwest","MO",116.746145092855,123.443931628551,130.783630674693,123.505884120779
+"1057",25,45,0,0,"All other causes","White","Male","Missouri",2013,"West North Central","Midwest","MO",145.758083548217,149.805421379663,153.712236918126,149.812159217735
+"1058",25,45,0,0,"Cancers","White","Male","Missouri",2013,"West North Central","Midwest","MO",209.466177609696,213.613258380785,217.596330232207,213.607619129413
+"1059",25,45,0,0,"Cardiovascular","White","Male","Missouri",2013,"West North Central","Midwest","MO",290.625742512467,296.170764826912,301.913572113142,296.176227654791
+"1060",25,45,0,0,"Communicable","White","Male","Missouri",2013,"West North Central","Midwest","MO",40.1833429439986,42.3536872906284,44.5399062783537,42.3753197796015
+"1061",25,45,0,0,"Injuries","White","Male","Missouri",2013,"West North Central","Midwest","MO",92.8262236652823,95.5240985276831,98.1496341791845,95.4962261076509
+"1062",25,45,0,0,"Non-communicable","White","Male","Missouri",2013,"West North Central","Midwest","MO",136.081385061322,139.84517016498,143.798759697103,139.890853559314
+"1063",25,45,0,1,"All other causes","White","Female","Missouri",2013,"West North Central","Midwest","MO",127.202954930833,130.415982901749,133.571262920205,130.363012375484
+"1064",25,45,0,1,"Cancers","White","Female","Missouri",2013,"West North Central","Midwest","MO",150.138726556571,153.09662468329,155.951410353649,153.07875600516
+"1065",25,45,0,1,"Cardiovascular","White","Female","Missouri",2013,"West North Central","Midwest","MO",197.548163055176,201.362910896801,205.284462848729,201.336224485177
+"1066",25,45,0,1,"Communicable","White","Female","Missouri",2013,"West North Central","Midwest","MO",31.7083492079233,33.2651986803196,34.8848994489555,33.2892453777489
+"1067",25,45,0,1,"Injuries","White","Female","Missouri",2013,"West North Central","Midwest","MO",41.7861952629406,43.5514327179172,45.1087154692643,43.522782940632
+"1068",25,45,0,1,"Non-communicable","White","Female","Missouri",2013,"West North Central","Midwest","MO",112.838876228553,115.760817039643,118.938844372032,115.813566817024
+"1069",25,45,1,0,"All other causes","Black","Male","Missouri",2013,"West North Central","Midwest","MO",162.369103220062,174.037251611745,185.813868457305,174.200134354696
+"1070",25,45,1,0,"Cancers","Black","Male","Missouri",2013,"West North Central","Midwest","MO",259.885500472977,274.516723928324,289.790134768328,274.517837238578
+"1071",25,45,1,0,"Cardiovascular","Black","Male","Missouri",2013,"West North Central","Midwest","MO",371.416113139535,388.842967342728,408.462140401512,388.984979993336
+"1072",25,45,1,0,"Communicable","Black","Male","Missouri",2013,"West North Central","Midwest","MO",55.0434841859954,62.5304577222918,69.9866692894645,62.389531051235
+"1073",25,45,1,0,"Injuries","Black","Male","Missouri",2013,"West North Central","Midwest","MO",124.78645061508,133.124676550613,141.676185126369,133.144000087961
+"1074",25,45,1,0,"Non-communicable","Black","Male","Missouri",2013,"West North Central","Midwest","MO",142.913820439347,154.476220153461,166.304922338838,154.467607092951
+"1075",25,45,1,1,"All other causes","Black","Female","Missouri",2013,"West North Central","Midwest","MO",145.868979662773,154.655860624095,164.39875510583,154.698241253192
+"1076",25,45,1,1,"Cancers","Black","Female","Missouri",2013,"West North Central","Midwest","MO",180.797489075196,189.131623671901,197.876402812006,189.068946645146
+"1077",25,45,1,1,"Cardiovascular","Black","Female","Missouri",2013,"West North Central","Midwest","MO",237.461277218219,250.081052248319,263.048249946676,250.071725901724
+"1078",25,45,1,1,"Communicable","Black","Female","Missouri",2013,"West North Central","Midwest","MO",32.3097563060744,36.3916718856491,40.952148852371,36.3902365579662
+"1079",25,45,1,1,"Injuries","Black","Female","Missouri",2013,"West North Central","Midwest","MO",33.3642869287446,37.0282150691321,40.8181251594628,37.0438469331036
+"1080",25,45,1,1,"Non-communicable","Black","Female","Missouri",2013,"West North Central","Midwest","MO",117.261871716971,125.137616496844,134.236185876949,125.390666319894

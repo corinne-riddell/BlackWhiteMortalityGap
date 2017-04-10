@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",33,1,0,0,"All other causes","White","Male","North Carolina",1969,"South Atlantic","South","NC",152.425285863527,158.126533096906,163.487469215753,158.088405702456
+"2",33,1,0,0,"Cancers","White","Male","North Carolina",1969,"South Atlantic","South","NC",212.343022271328,219.08531103731,225.541546213479,219.105731287363
+"3",33,1,0,0,"Cardiovascular","White","Male","North Carolina",1969,"South Atlantic","South","NC",943.345779571671,962.581030138771,981.083655791149,962.437842543996
+"4",33,1,0,0,"Communicable","White","Male","North Carolina",1969,"South Atlantic","South","NC",71.6972972948806,77.2804217440262,82.7083688785283,77.2396366698059
+"5",33,1,0,0,"Injuries","White","Male","North Carolina",1969,"South Atlantic","South","NC",133.115532425998,137.204666091527,141.490802604196,137.185181471536
+"6",33,1,0,0,"Non-communicable","White","Male","North Carolina",1969,"South Atlantic","South","NC",91.8356624200286,95.6957587458613,99.49438363424,95.6766147209208
+"7",33,1,0,1,"All other causes","White","Female","North Carolina",1969,"South Atlantic","South","NC",100.016758524469,103.839671985313,107.964530070362,103.895887382914
+"8",33,1,0,1,"Cancers","White","Female","North Carolina",1969,"South Atlantic","South","NC",131.141655510677,134.982186062776,138.584909344518,134.972331521523
+"9",33,1,0,1,"Cardiovascular","White","Female","North Carolina",1969,"South Atlantic","South","NC",576.401794516805,588.832816481872,601.865505245906,588.804956398803
+"10",33,1,0,1,"Communicable","White","Female","North Carolina",1969,"South Atlantic","South","NC",42.4641060199199,45.3385070173715,48.4609312907891,45.4085337652456
+"11",33,1,0,1,"Injuries","White","Female","North Carolina",1969,"South Atlantic","South","NC",45.7705037000983,47.7680850477656,50.1571444189247,47.8296332648071
+"12",33,1,0,1,"Non-communicable","White","Female","North Carolina",1969,"South Atlantic","South","NC",42.6333397607827,44.9613767316834,47.4348822599003,44.9746681052417
+"13",33,1,1,0,"All other causes","Black","Male","North Carolina",1969,"South Atlantic","South","NC",259.01853575914,270.711103652962,283.140784563659,270.731369148861
+"14",33,1,1,0,"Cancers","Black","Male","North Carolina",1969,"South Atlantic","South","NC",239.750184335268,252.606968037941,264.36061673503,252.728880946917
+"15",33,1,1,0,"Cardiovascular","Black","Male","North Carolina",1969,"South Atlantic","South","NC",1013.0539674773,1044.47872489304,1080.78000667268,1045.09365758454
+"16",33,1,1,0,"Communicable","Black","Male","North Carolina",1969,"South Atlantic","South","NC",104.323442980928,113.429099829659,123.09613486401,113.492995568924
+"17",33,1,1,0,"Injuries","Black","Male","North Carolina",1969,"South Atlantic","South","NC",236.642520308131,248.043989118868,259.993207638555,248.193812118753
+"18",33,1,1,0,"Non-communicable","Black","Male","North Carolina",1969,"South Atlantic","South","NC",107.918611932356,115.518561758497,124.16726166581,115.793250986674
+"19",33,1,1,1,"All other causes","Black","Female","North Carolina",1969,"South Atlantic","South","NC",178.130274885363,187.759350429641,197.008383807529,187.562659854068
+"20",33,1,1,1,"Cancers","Black","Female","North Carolina",1969,"South Atlantic","South","NC",152.428655128443,158.931307676489,165.921204773006,158.984270785831
+"21",33,1,1,1,"Cardiovascular","Black","Female","North Carolina",1969,"South Atlantic","South","NC",707.035592597448,730.573436927567,758.442290210736,730.860721315875
+"22",33,1,1,1,"Communicable","Black","Female","North Carolina",1969,"South Atlantic","South","NC",56.3076630707835,61.5700507341747,67.3433508341162,61.6434837640548
+"23",33,1,1,1,"Injuries","Black","Female","North Carolina",1969,"South Atlantic","South","NC",60.1359193249569,64.3023813812467,68.9119188921164,64.2385179339838
+"24",33,1,1,1,"Non-communicable","Black","Female","North Carolina",1969,"South Atlantic","South","NC",85.1674187738857,91.0874112370583,97.2596234708284,91.0689483952512
+"25",33,2,0,0,"All other causes","White","Male","North Carolina",1970,"South Atlantic","South","NC",148.956531250079,153.383534530155,158.406229899726,153.398532430005
+"26",33,2,0,0,"Cancers","White","Male","North Carolina",1970,"South Atlantic","South","NC",215.05611251185,220.823234100108,226.468947384827,220.842052486363
+"27",33,2,0,0,"Cardiovascular","White","Male","North Carolina",1970,"South Atlantic","South","NC",915.560594983886,933.539728426567,950.385671796917,933.259017059428
+"28",33,2,0,0,"Communicable","White","Male","North Carolina",1970,"South Atlantic","South","NC",68.3554549777173,72.7844594104442,77.7724377659511,72.8712120213582
+"29",33,2,0,0,"Injuries","White","Male","North Carolina",1970,"South Atlantic","South","NC",132.43972358252,136.217703740187,139.67600866242,136.141818100928
+"30",33,2,0,0,"Non-communicable","White","Male","North Carolina",1970,"South Atlantic","South","NC",94.6244613648388,97.7410515178111,101.171092035071,97.7733851966526
+"31",33,2,0,1,"All other causes","White","Female","North Carolina",1970,"South Atlantic","South","NC",99.2720740184921,102.211363785899,105.650365050508,102.265270243533
+"32",33,2,0,1,"Cancers","White","Female","North Carolina",1970,"South Atlantic","South","NC",132.649450863236,135.735260202033,138.877727084194,135.719267339371
+"33",33,2,0,1,"Cardiovascular","White","Female","North Carolina",1970,"South Atlantic","South","NC",550.468421860879,561.746624200438,572.672379294687,561.697287415696
+"34",33,2,0,1,"Communicable","White","Female","North Carolina",1970,"South Atlantic","South","NC",40.6145414400951,43.1512197226232,45.8873620139221,43.1630594674334
+"35",33,2,0,1,"Injuries","White","Female","North Carolina",1970,"South Atlantic","South","NC",45.5650319308097,47.4076124518686,49.1632784566675,47.4014228253887
+"36",33,2,0,1,"Non-communicable","White","Female","North Carolina",1970,"South Atlantic","South","NC",42.1085397984058,44.1415518204264,46.3497958455469,44.1451426145119
+"37",33,2,1,0,"All other causes","Black","Male","North Carolina",1970,"South Atlantic","South","NC",256.880020817236,268.000916075494,278.193982797304,267.816083630703
+"38",33,2,1,0,"Cancers","Black","Male","North Carolina",1970,"South Atlantic","South","NC",245.631762527909,256.679377662849,267.521796450298,256.565519712738
+"39",33,2,1,0,"Cardiovascular","Black","Male","North Carolina",1970,"South Atlantic","South","NC",997.082108481952,1024.66242171154,1053.61998047739,1025.0590077791
+"40",33,2,1,0,"Communicable","Black","Male","North Carolina",1970,"South Atlantic","South","NC",99.5858139946044,107.43218162691,115.831451696921,107.407555577624
+"41",33,2,1,0,"Injuries","Black","Male","North Carolina",1970,"South Atlantic","South","NC",238.468762666051,248.08742072212,258.36908225081,248.141517762596
+"42",33,2,1,0,"Non-communicable","Black","Male","North Carolina",1970,"South Atlantic","South","NC",107.835772152923,114.632019351405,122.046750942809,114.750703543675
+"43",33,2,1,1,"All other causes","Black","Female","North Carolina",1970,"South Atlantic","South","NC",172.75681511738,180.348940345438,187.840648295923,180.202205518516
+"44",33,2,1,1,"Cancers","Black","Female","North Carolina",1970,"South Atlantic","South","NC",153.289683243588,159.014210232401,165.66431972011,159.127734330756
+"45",33,2,1,1,"Cardiovascular","Black","Female","North Carolina",1970,"South Atlantic","South","NC",691.262144509401,713.700162473332,736.526994428183,713.74935716252
+"46",33,2,1,1,"Communicable","Black","Female","North Carolina",1970,"South Atlantic","South","NC",52.4941611898363,56.6396769923165,61.3914088873186,56.7581812717319
+"47",33,2,1,1,"Injuries","Black","Female","North Carolina",1970,"South Atlantic","South","NC",59.8631058405859,63.4008657949972,67.3963149089709,63.5132584538479
+"48",33,2,1,1,"Non-communicable","Black","Female","North Carolina",1970,"South Atlantic","South","NC",84.9000628403998,90.3398526750566,95.6948405550237,90.3516583689048
+"49",33,3,0,0,"All other causes","White","Male","North Carolina",1971,"South Atlantic","South","NC",142.745169171151,147.262560012266,151.96724553072,147.220943970769
+"50",33,3,0,0,"Cancers","White","Male","North Carolina",1971,"South Atlantic","South","NC",216.838566748889,222.363226153355,227.772929658576,222.37244844318
+"51",33,3,0,0,"Cardiovascular","White","Male","North Carolina",1971,"South Atlantic","South","NC",910.258985937628,927.728434744552,944.655577323893,927.793261832666
+"52",33,3,0,0,"Communicable","White","Male","North Carolina",1971,"South Atlantic","South","NC",66.088336617719,70.4636468311849,75.1796914100987,70.4815925440939
+"53",33,3,0,0,"Injuries","White","Male","North Carolina",1971,"South Atlantic","South","NC",132.625965192364,136.101804856865,139.563936052809,136.088985788848
+"54",33,3,0,0,"Non-communicable","White","Male","North Carolina",1971,"South Atlantic","South","NC",96.7286266344748,99.7751458365299,102.827182828285,99.7130656538876
+"55",33,3,0,1,"All other causes","White","Female","North Carolina",1971,"South Atlantic","South","NC",96.0431265808885,99.1858515322231,101.769998010137,99.0751561028968
+"56",33,3,0,1,"Cancers","White","Female","North Carolina",1971,"South Atlantic","South","NC",133.884092245534,136.634511419941,139.905752798128,136.715721390986
+"57",33,3,0,1,"Cardiovascular","White","Female","North Carolina",1971,"South Atlantic","South","NC",538.813897450863,549.31856113888,560.471503049843,549.471460306442
+"58",33,3,0,1,"Communicable","White","Female","North Carolina",1971,"South Atlantic","South","NC",38.1100417959208,40.3514935936286,42.7963449817456,40.4241419266136
+"59",33,3,0,1,"Injuries","White","Female","North Carolina",1971,"South Atlantic","South","NC",45.9138190381379,47.6121951448293,49.3581871330675,47.629815013643
+"60",33,3,0,1,"Non-communicable","White","Female","North Carolina",1971,"South Atlantic","South","NC",41.2188352830493,43.060198125575,44.8964747820178,43.0504203167454
+"61",33,3,1,0,"All other causes","Black","Male","North Carolina",1971,"South Atlantic","South","NC",241.473762679378,251.58165129621,260.906612308542,251.397337981338
+"62",33,3,1,0,"Cancers","Black","Male","North Carolina",1971,"South Atlantic","South","NC",250.029333513014,260.923488977441,271.62497515241,260.930683573548
+"63",33,3,1,0,"Cardiovascular","Black","Male","North Carolina",1971,"South Atlantic","South","NC",981.940926208127,1009.41679039218,1037.12154831745,1009.41964372017
+"64",33,3,1,0,"Communicable","Black","Male","North Carolina",1971,"South Atlantic","South","NC",91.8247403476779,98.8650201918978,106.819386281465,98.925574795958
+"65",33,3,1,0,"Injuries","Black","Male","North Carolina",1971,"South Atlantic","South","NC",239.993549144437,249.584437563953,259.435592814761,249.521786063933
+"66",33,3,1,0,"Non-communicable","Black","Male","North Carolina",1971,"South Atlantic","South","NC",109.418845556889,116.164433186664,122.320099739672,116.086063545329
+"67",33,3,1,1,"All other causes","Black","Female","North Carolina",1971,"South Atlantic","South","NC",164.510575931517,170.874985650154,178.248809743845,171.12619519456
+"68",33,3,1,1,"Cancers","Black","Female","North Carolina",1971,"South Atlantic","South","NC",154.814180884528,160.101909887076,166.590469247582,160.181426593241
+"69",33,3,1,1,"Cardiovascular","Black","Female","North Carolina",1971,"South Atlantic","South","NC",659.325632538136,680.322540530056,699.93544218757,680.067043347292
+"70",33,3,1,1,"Communicable","Black","Female","North Carolina",1971,"South Atlantic","South","NC",48.6854315874286,52.6102991460913,56.8429265820155,52.6459345680494
+"71",33,3,1,1,"Injuries","Black","Female","North Carolina",1971,"South Atlantic","South","NC",60.0656766128612,63.4906959324302,67.3596192507994,63.5232526830382
+"72",33,3,1,1,"Non-communicable","Black","Female","North Carolina",1971,"South Atlantic","South","NC",85.9428663200194,90.9109707178776,95.7972515304614,90.8988714850294
+"73",33,4,0,0,"All other causes","White","Male","North Carolina",1972,"South Atlantic","South","NC",138.22910886014,142.282995270706,146.700175904787,142.365643636727
+"74",33,4,0,0,"Cancers","White","Male","North Carolina",1972,"South Atlantic","South","NC",221.076514001565,226.331468392218,230.973047426943,226.281701284044
+"75",33,4,0,0,"Cardiovascular","White","Male","North Carolina",1972,"South Atlantic","South","NC",911.825824620566,928.607616612366,943.89352420201,928.543542219369
+"76",33,4,0,0,"Communicable","White","Male","North Carolina",1972,"South Atlantic","South","NC",67.6154917342385,72.1423351233396,76.8424331962662,72.1272314676101
+"77",33,4,0,0,"Injuries","White","Male","North Carolina",1972,"South Atlantic","South","NC",133.202051636801,136.13916918828,139.789723884228,136.226220452706
+"78",33,4,0,0,"Non-communicable","White","Male","North Carolina",1972,"South Atlantic","South","NC",98.3764283952762,101.681032234668,105.208980843659,101.736309935892
+"79",33,4,0,1,"All other causes","White","Female","North Carolina",1972,"South Atlantic","South","NC",93.4189629326614,96.4426126127285,99.5289187760889,96.4559590475855
+"80",33,4,0,1,"Cancers","White","Female","North Carolina",1972,"South Atlantic","South","NC",134.093711660206,137.21223860765,140.249010937777,137.195216095888
+"81",33,4,0,1,"Cardiovascular","White","Female","North Carolina",1972,"South Atlantic","South","NC",543.972993957339,555.217955519041,566.597058564582,555.304408812925
+"82",33,4,0,1,"Communicable","White","Female","North Carolina",1972,"South Atlantic","South","NC",37.4460334495485,39.7110824818512,42.2637973344155,39.7437074706722
+"83",33,4,0,1,"Injuries","White","Female","North Carolina",1972,"South Atlantic","South","NC",46.1534253064133,47.7898547651306,49.5164254768706,47.8012297496357
+"84",33,4,0,1,"Non-communicable","White","Female","North Carolina",1972,"South Atlantic","South","NC",41.4879863407462,43.249765265939,45.0614112661464,43.2762078172443
+"85",33,4,1,0,"All other causes","Black","Male","North Carolina",1972,"South Atlantic","South","NC",230.703387973139,239.882640822363,248.396859470944,239.693716506832
+"86",33,4,1,0,"Cancers","Black","Male","North Carolina",1972,"South Atlantic","South","NC",258.259183779846,268.993316260892,279.228144826674,269.019358266563
+"87",33,4,1,0,"Cardiovascular","Black","Male","North Carolina",1972,"South Atlantic","South","NC",977.41523973145,1005.3588807062,1033.28691826199,1005.06282323767
+"88",33,4,1,0,"Communicable","Black","Male","North Carolina",1972,"South Atlantic","South","NC",92.2959900353964,99.4767273047908,107.154234145909,99.4155774427957
+"89",33,4,1,0,"Injuries","Black","Male","North Carolina",1972,"South Atlantic","South","NC",246.405461938031,255.816418157157,265.829890692346,256.07088265156
+"90",33,4,1,0,"Non-communicable","Black","Male","North Carolina",1972,"South Atlantic","South","NC",113.418240632731,119.166796392938,125.300776438122,119.202028409412
+"91",33,4,1,1,"All other causes","Black","Female","North Carolina",1972,"South Atlantic","South","NC",157.734157701506,163.941132893277,170.608774918322,163.906091374252
+"92",33,4,1,1,"Cancers","Black","Female","North Carolina",1972,"South Atlantic","South","NC",155.640562102381,161.539877887019,167.615381372991,161.588682990919
+"93",33,4,1,1,"Cardiovascular","Black","Female","North Carolina",1972,"South Atlantic","South","NC",662.025490063123,681.746819615364,701.741711243925,681.896970914032
+"94",33,4,1,1,"Communicable","Black","Female","North Carolina",1972,"South Atlantic","South","NC",46.8929668210999,50.7663042362473,54.7382477937147,50.7987956054329
+"95",33,4,1,1,"Injuries","Black","Female","North Carolina",1972,"South Atlantic","South","NC",59.4979903222704,62.9501480461577,66.5453728775836,62.9209507517203
+"96",33,4,1,1,"Non-communicable","Black","Female","North Carolina",1972,"South Atlantic","South","NC",85.7867910166123,90.5358953715364,95.2465547860766,90.5184451886257
+"97",33,5,0,0,"All other causes","White","Male","North Carolina",1973,"South Atlantic","South","NC",135.578704672002,139.981903999045,144.349059460111,139.995559015039
+"98",33,5,0,0,"Cancers","White","Male","North Carolina",1973,"South Atlantic","South","NC",224.506069775879,229.541157786508,234.742009431985,229.595222245534
+"99",33,5,0,0,"Cardiovascular","White","Male","North Carolina",1973,"South Atlantic","South","NC",898.552151879232,915.385028518625,931.878548248404,915.37903888244
+"100",33,5,0,0,"Communicable","White","Male","North Carolina",1973,"South Atlantic","South","NC",66.4234131296967,70.8575566672231,75.5773682757269,70.9478626140456
+"101",33,5,0,0,"Injuries","White","Male","North Carolina",1973,"South Atlantic","South","NC",130.597923068087,133.575556320989,136.957197688233,133.637314372321
+"102",33,5,0,0,"Non-communicable","White","Male","North Carolina",1973,"South Atlantic","South","NC",99.5995376504842,102.688650494959,106.054148135218,102.72763754455
+"103",33,5,0,1,"All other causes","White","Female","North Carolina",1973,"South Atlantic","South","NC",91.4298782083647,94.2545924053536,97.2834098490304,94.2761469989824
+"104",33,5,0,1,"Cancers","White","Female","North Carolina",1973,"South Atlantic","South","NC",134.411028840101,137.342419418859,140.111837005158,137.314975030807
+"105",33,5,0,1,"Cardiovascular","White","Female","North Carolina",1973,"South Atlantic","South","NC",537.071254794568,547.193882937138,557.609548972485,547.245791898095
+"106",33,5,0,1,"Communicable","White","Female","North Carolina",1973,"South Atlantic","South","NC",35.659536699686,37.705237965679,39.8531338193936,37.7174563788086
+"107",33,5,0,1,"Injuries","White","Female","North Carolina",1973,"South Atlantic","South","NC",44.9066982137071,46.4685195035519,48.0938923253732,46.4710796961787
+"108",33,5,0,1,"Non-communicable","White","Female","North Carolina",1973,"South Atlantic","South","NC",41.2178036884365,43.0104347230744,44.7856030904567,43.0268077622441
+"109",33,5,1,0,"All other causes","Black","Male","North Carolina",1973,"South Atlantic","South","NC",223.571203258299,232.822369658213,241.695049150079,232.697408830172
+"110",33,5,1,0,"Cancers","Black","Male","North Carolina",1973,"South Atlantic","South","NC",270.312541037345,281.158381163398,292.338247827223,281.106414674855
+"111",33,5,1,0,"Cardiovascular","Black","Male","North Carolina",1973,"South Atlantic","South","NC",942.535639627265,967.553833830732,995.86437127331,968.422006680678
+"112",33,5,1,0,"Communicable","Black","Male","North Carolina",1973,"South Atlantic","South","NC",87.6937313658792,94.2072050479877,100.99851601725,94.27026745964
+"113",33,5,1,0,"Injuries","Black","Male","North Carolina",1973,"South Atlantic","South","NC",238.459984976716,247.87882254041,258.36005262503,247.867902801571
+"114",33,5,1,0,"Non-communicable","Black","Male","North Carolina",1973,"South Atlantic","South","NC",113.525306401304,119.440700329864,126.071674602157,119.468280646276
+"115",33,5,1,1,"All other causes","Black","Female","North Carolina",1973,"South Atlantic","South","NC",148.771841992311,154.989736564436,161.370621542614,154.933526675756
+"116",33,5,1,1,"Cancers","Black","Female","North Carolina",1973,"South Atlantic","South","NC",157.643421777084,162.85879012298,168.311969845841,162.920774644129
+"117",33,5,1,1,"Cardiovascular","Black","Female","North Carolina",1973,"South Atlantic","South","NC",655.56456473656,674.790398863784,696.007717051638,675.27207608753
+"118",33,5,1,1,"Communicable","Black","Female","North Carolina",1973,"South Atlantic","South","NC",45.2205753653434,48.8952668798614,52.6071637158184,48.8584920500325
+"119",33,5,1,1,"Injuries","Black","Female","North Carolina",1973,"South Atlantic","South","NC",58.5571433262702,61.7441039945566,65.4035123205958,61.8173561115022
+"120",33,5,1,1,"Non-communicable","Black","Female","North Carolina",1973,"South Atlantic","South","NC",84.2013624557901,88.4248875534986,93.0955728605217,88.5354949367875
+"121",33,6,0,0,"All other causes","White","Male","North Carolina",1974,"South Atlantic","South","NC",132.969582418394,137.009576975921,141.186915070568,137.02600857676
+"122",33,6,0,0,"Cancers","White","Male","North Carolina",1974,"South Atlantic","South","NC",228.057848195476,233.359927483877,238.510218804971,233.228344479086
+"123",33,6,0,0,"Cardiovascular","White","Male","North Carolina",1974,"South Atlantic","South","NC",850.831272558763,865.538303344684,880.954254624285,865.838264392422
+"124",33,6,0,0,"Communicable","White","Male","North Carolina",1974,"South Atlantic","South","NC",60.6046366563499,64.8743218202354,69.4292385962811,64.8932640157637
+"125",33,6,0,0,"Injuries","White","Male","North Carolina",1974,"South Atlantic","South","NC",124.085537378982,127.132746837327,130.199092551004,127.135586226002
+"126",33,6,0,0,"Non-communicable","White","Male","North Carolina",1974,"South Atlantic","South","NC",101.035860711888,104.1953794767,107.58139060398,104.241687737018
+"127",33,6,0,1,"All other causes","White","Female","North Carolina",1974,"South Atlantic","South","NC",86.5151395107866,89.446016415828,92.4623123515978,89.4202727261824
+"128",33,6,0,1,"Cancers","White","Female","North Carolina",1974,"South Atlantic","South","NC",135.054323263396,137.612129016615,140.466714663481,137.619254408592
+"129",33,6,0,1,"Cardiovascular","White","Female","North Carolina",1974,"South Atlantic","South","NC",503.224346064427,512.556262256752,522.240008134208,512.471337350711
+"130",33,6,0,1,"Communicable","White","Female","North Carolina",1974,"South Atlantic","South","NC",33.4948051121107,35.3294534350847,37.3504090762718,35.3596069731174
+"131",33,6,0,1,"Injuries","White","Female","North Carolina",1974,"South Atlantic","South","NC",43.0561663711299,44.5790723923877,46.1830533662771,44.5766580276063
+"132",33,6,0,1,"Non-communicable","White","Female","North Carolina",1974,"South Atlantic","South","NC",41.2351692209801,43.057146878323,44.8547455939033,43.077130428716
+"133",33,6,1,0,"All other causes","Black","Male","North Carolina",1974,"South Atlantic","South","NC",216.285226179216,224.87356050386,233.401798312941,224.933437839142
+"134",33,6,1,0,"Cancers","Black","Male","North Carolina",1974,"South Atlantic","South","NC",280.158165126854,289.933872084795,301.168222138946,290.172599894118
+"135",33,6,1,0,"Cardiovascular","Black","Male","North Carolina",1974,"South Atlantic","South","NC",899.828918559603,923.623861938227,948.632496680745,923.739802722899
+"136",33,6,1,0,"Communicable","Black","Male","North Carolina",1974,"South Atlantic","South","NC",83.3290361098723,90.3906206338273,97.3480339424133,90.4645220375645
+"137",33,6,1,0,"Injuries","Black","Male","North Carolina",1974,"South Atlantic","South","NC",227.859995014442,237.345408937051,247.019725807058,237.429223051814
+"138",33,6,1,0,"Non-communicable","Black","Male","North Carolina",1974,"South Atlantic","South","NC",114.702790238094,120.781276209383,127.114402788117,120.796704515298
+"139",33,6,1,1,"All other causes","Black","Female","North Carolina",1974,"South Atlantic","South","NC",139.626412643049,145.797917316636,151.863503583883,145.80466046468
+"140",33,6,1,1,"Cancers","Black","Female","North Carolina",1974,"South Atlantic","South","NC",156.794468765917,162.159770575227,167.555954406891,162.196762066936
+"141",33,6,1,1,"Cardiovascular","Black","Female","North Carolina",1974,"South Atlantic","South","NC",612.694988897962,631.095036090024,650.126561040015,631.260324751376
+"142",33,6,1,1,"Communicable","Black","Female","North Carolina",1974,"South Atlantic","South","NC",42.7094989529979,46.13981481863,49.5665161107019,46.0841311670171
+"143",33,6,1,1,"Injuries","Black","Female","North Carolina",1974,"South Atlantic","South","NC",56.7222033459418,59.7131267587206,63.0849861916354,59.7338898133319
+"144",33,6,1,1,"Non-communicable","Black","Female","North Carolina",1974,"South Atlantic","South","NC",82.5441788918571,86.8263138146983,91.506486097875,86.9080551907677
+"145",33,7,0,0,"All other causes","White","Male","North Carolina",1975,"South Atlantic","South","NC",125.301685393103,129.10336437424,133.006845181138,129.065507872643
+"146",33,7,0,0,"Cancers","White","Male","North Carolina",1975,"South Atlantic","South","NC",230.48116108178,235.624479016177,240.62043879813,235.582061942022
+"147",33,7,0,0,"Cardiovascular","White","Male","North Carolina",1975,"South Atlantic","South","NC",825.087356285609,841.129769161372,856.739891279577,841.270427521804
+"148",33,7,0,0,"Communicable","White","Male","North Carolina",1975,"South Atlantic","South","NC",61.8318730853464,66.0440274944657,70.1322521497013,66.0198117599519
+"149",33,7,0,0,"Injuries","White","Male","North Carolina",1975,"South Atlantic","South","NC",122.041984374882,125.067987709078,128.368778918785,125.124520539633
+"150",33,7,0,0,"Non-communicable","White","Male","North Carolina",1975,"South Atlantic","South","NC",101.719982282148,104.83874228376,108.177813194627,104.871910099436
+"151",33,7,0,1,"All other causes","White","Female","North Carolina",1975,"South Atlantic","South","NC",81.37809976307,83.9584317369439,86.8361566325875,83.9892323956835
+"152",33,7,0,1,"Cancers","White","Female","North Carolina",1975,"South Atlantic","South","NC",135.441900803912,138.338211211636,141.13322336872,138.285075229911
+"153",33,7,0,1,"Cardiovascular","White","Female","North Carolina",1975,"South Atlantic","South","NC",459.942286720913,469.001299919487,477.777396745659,468.954465211262
+"154",33,7,0,1,"Communicable","White","Female","North Carolina",1975,"South Atlantic","South","NC",32.4438355585315,34.1256578766372,36.0895618017012,34.1346317602366
+"155",33,7,0,1,"Injuries","White","Female","North Carolina",1975,"South Atlantic","South","NC",41.6290474817934,43.0575815120902,44.6693060827375,43.0829841105481
+"156",33,7,0,1,"Non-communicable","White","Female","North Carolina",1975,"South Atlantic","South","NC",40.4312029943329,42.1052512569291,43.9085343814356,42.1078804209951
+"157",33,7,1,0,"All other causes","Black","Male","North Carolina",1975,"South Atlantic","South","NC",209.303721258673,217.544794836866,226.631236467004,217.620836181607
+"158",33,7,1,0,"Cancers","Black","Male","North Carolina",1975,"South Atlantic","South","NC",292.124873395369,303.156430740447,313.816682524003,303.080569900737
+"159",33,7,1,0,"Cardiovascular","Black","Male","North Carolina",1975,"South Atlantic","South","NC",863.509287746527,886.767436441652,909.925120232816,886.814068077539
+"160",33,7,1,0,"Communicable","Black","Male","North Carolina",1975,"South Atlantic","South","NC",82.4663890511734,88.975659084274,95.4661026735162,88.9946600126387
+"161",33,7,1,0,"Injuries","Black","Male","North Carolina",1975,"South Atlantic","South","NC",213.840650009296,222.42792918556,230.925523552036,222.330174363494
+"162",33,7,1,0,"Non-communicable","Black","Male","North Carolina",1975,"South Atlantic","South","NC",114.649701349957,120.404865515989,126.84423459514,120.548285684512
+"163",33,7,1,1,"All other causes","Black","Female","North Carolina",1975,"South Atlantic","South","NC",131.554608106116,137.099698236289,142.73692424506,137.050917980121
+"164",33,7,1,1,"Cancers","Black","Female","North Carolina",1975,"South Atlantic","South","NC",159.058812441543,164.093199649079,169.811615197958,164.115566951903
+"165",33,7,1,1,"Cardiovascular","Black","Female","North Carolina",1975,"South Atlantic","South","NC",582.5470228845,600.396725188726,618.936812045818,600.444806375428
+"166",33,7,1,1,"Communicable","Black","Female","North Carolina",1975,"South Atlantic","South","NC",41.4070213512406,44.553053697977,48.0324879573869,44.587824638547
+"167",33,7,1,1,"Injuries","Black","Female","North Carolina",1975,"South Atlantic","South","NC",54.625811500539,57.4548744443445,60.4386705446161,57.5113367225971
+"168",33,7,1,1,"Non-communicable","Black","Female","North Carolina",1975,"South Atlantic","South","NC",81.6567634910424,85.5741992555473,90.4552795309917,85.7047897462945
+"169",33,8,0,0,"All other causes","White","Male","North Carolina",1976,"South Atlantic","South","NC",119.238623185037,123.134456276164,126.851458606794,123.113948665519
+"170",33,8,0,0,"Cancers","White","Male","North Carolina",1976,"South Atlantic","South","NC",232.198775128473,237.689948656662,243.057566073139,237.634519885792
+"171",33,8,0,0,"Cardiovascular","White","Male","North Carolina",1976,"South Atlantic","South","NC",797.289697890565,812.702434305712,828.661729321105,812.608779935086
+"172",33,8,0,0,"Communicable","White","Male","North Carolina",1976,"South Atlantic","South","NC",62.878058026134,66.8864662164609,71.4559919366726,66.9768281392447
+"173",33,8,0,0,"Injuries","White","Male","North Carolina",1976,"South Atlantic","South","NC",117.521542991522,120.441864010824,123.316109772263,120.4633040699
+"174",33,8,0,0,"Non-communicable","White","Male","North Carolina",1976,"South Atlantic","South","NC",101.184854175829,104.550565103169,107.716394804436,104.526577417431
+"175",33,8,0,1,"All other causes","White","Female","North Carolina",1976,"South Atlantic","South","NC",80.8127054711797,83.4541479597386,85.8988283197144,83.3672033901399
+"176",33,8,0,1,"Cancers","White","Female","North Carolina",1976,"South Atlantic","South","NC",137.71719330622,140.523671979163,143.545383744165,140.533837054097
+"177",33,8,0,1,"Cardiovascular","White","Female","North Carolina",1976,"South Atlantic","South","NC",455.166996407503,463.736965188564,473.525752157697,463.950930579039
+"178",33,8,0,1,"Communicable","White","Female","North Carolina",1976,"South Atlantic","South","NC",32.6818259629397,34.5651545832464,36.4788181726662,34.5792882967171
+"179",33,8,0,1,"Injuries","White","Female","North Carolina",1976,"South Atlantic","South","NC",40.6954024344791,42.0929882493448,43.6270800102453,42.0867544361105
+"180",33,8,0,1,"Non-communicable","White","Female","North Carolina",1976,"South Atlantic","South","NC",40.50496281267,42.1986834291696,43.9902951929678,42.2341027501017
+"181",33,8,1,0,"All other causes","Black","Male","North Carolina",1976,"South Atlantic","South","NC",206.183075589273,214.14596532244,221.587075267283,214.039349486824
+"182",33,8,1,0,"Cancers","Black","Male","North Carolina",1976,"South Atlantic","South","NC",301.371160513921,312.433234210483,323.334228184978,312.351297389628
+"183",33,8,1,0,"Cardiovascular","Black","Male","North Carolina",1976,"South Atlantic","South","NC",835.698772905883,859.886278329922,886.148741934244,860.483806596135
+"184",33,8,1,0,"Communicable","Black","Male","North Carolina",1976,"South Atlantic","South","NC",82.8233365846777,89.4819445567246,96.4081606985606,89.5739525631065
+"185",33,8,1,0,"Injuries","Black","Male","North Carolina",1976,"South Atlantic","South","NC",198.678625561172,206.709929828854,215.338121831197,206.774361888455
+"186",33,8,1,0,"Non-communicable","Black","Male","North Carolina",1976,"South Atlantic","South","NC",115.540899987521,121.253339336267,127.750137108243,121.39792538657
+"187",33,8,1,1,"All other causes","Black","Female","North Carolina",1976,"South Atlantic","South","NC",126.507476775775,131.947376935882,137.214704134697,131.948396820146
+"188",33,8,1,1,"Cancers","Black","Female","North Carolina",1976,"South Atlantic","South","NC",159.770250815065,165.122470098828,170.872179364699,165.233994725801
+"189",33,8,1,1,"Cardiovascular","Black","Female","North Carolina",1976,"South Atlantic","South","NC",558.732956406009,576.306342256468,592.332855626031,576.11032854416
+"190",33,8,1,1,"Communicable","Black","Female","North Carolina",1976,"South Atlantic","South","NC",40.2203029891515,43.2717100805353,46.7326732687937,43.3363196177748
+"191",33,8,1,1,"Injuries","Black","Female","North Carolina",1976,"South Atlantic","South","NC",52.0533581914578,54.9332501686524,57.7424856487338,54.8846431533578
+"192",33,8,1,1,"Non-communicable","Black","Female","North Carolina",1976,"South Atlantic","South","NC",80.0740695063625,83.8132238603397,88.1515652938348,83.8509245800394
+"193",33,9,0,0,"All other causes","White","Male","North Carolina",1977,"South Atlantic","South","NC",116.530500036332,120.175769875801,123.816925960871,120.175623223889
+"194",33,9,0,0,"Cancers","White","Male","North Carolina",1977,"South Atlantic","South","NC",236.669372010534,241.763772751604,247.279416070316,241.847441733043
+"195",33,9,0,0,"Cardiovascular","White","Male","North Carolina",1977,"South Atlantic","South","NC",768.684069617995,782.583039831156,796.168763399001,782.428885543664
+"196",33,9,0,0,"Communicable","White","Male","North Carolina",1977,"South Atlantic","South","NC",57.8282337263293,61.7455681646852,65.8141931093619,61.8423747121754
+"197",33,9,0,0,"Injuries","White","Male","North Carolina",1977,"South Atlantic","South","NC",113.514841749423,116.537618781109,119.192069114163,116.49649353843
+"198",33,9,0,0,"Non-communicable","White","Male","North Carolina",1977,"South Atlantic","South","NC",100.528747417297,103.844030133207,107.261924463465,103.850832036872
+"199",33,9,0,1,"All other causes","White","Female","North Carolina",1977,"South Atlantic","South","NC",78.8692078690313,81.4428775962729,83.9247345684236,81.4568966203611
+"200",33,9,0,1,"Cancers","White","Female","North Carolina",1977,"South Atlantic","South","NC",138.958430128549,141.771033983942,144.479244896268,141.803497864502
+"201",33,9,0,1,"Cardiovascular","White","Female","North Carolina",1977,"South Atlantic","South","NC",439.209927497931,447.591933836451,455.896747695561,447.418664839708
+"202",33,9,0,1,"Communicable","White","Female","North Carolina",1977,"South Atlantic","South","NC",32.5954838663042,34.4482892343652,36.3583570725144,34.4792421475908
+"203",33,9,0,1,"Injuries","White","Female","North Carolina",1977,"South Atlantic","South","NC",39.6876808446833,41.0276362536704,42.4104328952072,41.0465931865074
+"204",33,9,0,1,"Non-communicable","White","Female","North Carolina",1977,"South Atlantic","South","NC",40.0724134730605,41.8487514038118,43.4976413886269,41.8169532768106
+"205",33,9,1,0,"All other causes","Black","Male","North Carolina",1977,"South Atlantic","South","NC",208.411437329138,216.647381757647,224.96069883715,216.640818131535
+"206",33,9,1,0,"Cancers","Black","Male","North Carolina",1977,"South Atlantic","South","NC",311.24776014438,321.866634616084,333.37239571895,322.047388078236
+"207",33,9,1,0,"Cardiovascular","Black","Male","North Carolina",1977,"South Atlantic","South","NC",824.320516362315,847.874810809861,871.286429129605,847.492534062944
+"208",33,9,1,0,"Communicable","Black","Male","North Carolina",1977,"South Atlantic","South","NC",82.4586505284762,88.5749149791973,95.4325930109626,88.6409063158474
+"209",33,9,1,0,"Injuries","Black","Male","North Carolina",1977,"South Atlantic","South","NC",189.288475028531,196.8412229081,205.416371861151,197.024870288622
+"210",33,9,1,0,"Non-communicable","Black","Male","North Carolina",1977,"South Atlantic","South","NC",116.84828190343,122.501061703527,128.617061313121,122.632248659811
+"211",33,9,1,1,"All other causes","Black","Female","North Carolina",1977,"South Atlantic","South","NC",124.640987802537,129.630492991045,135.133121949932,129.657453887883
+"212",33,9,1,1,"Cancers","Black","Female","North Carolina",1977,"South Atlantic","South","NC",160.195104240574,165.304679434542,170.768761431413,165.348179054629
+"213",33,9,1,1,"Cardiovascular","Black","Female","North Carolina",1977,"South Atlantic","South","NC",545.2025517134,560.350409619778,578.454200594658,560.596895328316
+"214",33,9,1,1,"Communicable","Black","Female","North Carolina",1977,"South Atlantic","South","NC",39.496203521167,42.4116503032887,46.1112658417455,42.5746921237894
+"215",33,9,1,1,"Injuries","Black","Female","North Carolina",1977,"South Atlantic","South","NC",50.1885997776393,52.9368454686629,55.7364071274623,52.9198423958185
+"216",33,9,1,1,"Non-communicable","Black","Female","North Carolina",1977,"South Atlantic","South","NC",77.5428893579962,81.4120393553081,85.5908912630158,81.4938312975897
+"217",33,10,0,0,"All other causes","White","Male","North Carolina",1978,"South Atlantic","South","NC",114.458134461747,118.394921897277,121.879136511204,118.363553083691
+"218",33,10,0,0,"Cancers","White","Male","North Carolina",1978,"South Atlantic","South","NC",241.582173665398,246.93311511282,252.072551543394,246.892809621008
+"219",33,10,0,0,"Cardiovascular","White","Male","North Carolina",1978,"South Atlantic","South","NC",746.687643959214,760.413496332935,773.752179812421,760.2471797143
+"220",33,10,0,0,"Communicable","White","Male","North Carolina",1978,"South Atlantic","South","NC",56.9003633863316,60.8238062890712,64.9205583432028,60.8847420007814
+"221",33,10,0,0,"Injuries","White","Male","North Carolina",1978,"South Atlantic","South","NC",110.797526724573,113.751578691272,116.607971707737,113.742987941749
+"222",33,10,0,0,"Non-communicable","White","Male","North Carolina",1978,"South Atlantic","South","NC",100.443288976653,103.55661097441,106.824065002185,103.55624119947
+"223",33,10,0,1,"All other causes","White","Female","North Carolina",1978,"South Atlantic","South","NC",79.0362904724602,81.4960755977345,84.2439998219787,81.4939575513523
+"224",33,10,0,1,"Cancers","White","Female","North Carolina",1978,"South Atlantic","South","NC",139.651463230303,142.5577961751,145.28404097056,142.526662865581
+"225",33,10,0,1,"Cardiovascular","White","Female","North Carolina",1978,"South Atlantic","South","NC",427.28397993931,435.576694190216,443.970212333134,435.602260497833
+"226",33,10,0,1,"Communicable","White","Female","North Carolina",1978,"South Atlantic","South","NC",32.4817886041518,34.3526552051466,36.2186600140194,34.3695085751922
+"227",33,10,0,1,"Injuries","White","Female","North Carolina",1978,"South Atlantic","South","NC",38.6773011637542,40.0768785557943,41.412306719948,40.0482573735079
+"228",33,10,0,1,"Non-communicable","White","Female","North Carolina",1978,"South Atlantic","South","NC",39.7216797691034,41.4229195495968,43.1098033466134,41.4265268205261
+"229",33,10,1,0,"All other causes","Black","Male","North Carolina",1978,"South Atlantic","South","NC",208.700265262148,216.37738204372,224.575098086454,216.49860666808
+"230",33,10,1,0,"Cancers","Black","Male","North Carolina",1978,"South Atlantic","South","NC",317.109087735818,327.600496335162,340.033079675481,327.826376743995
+"231",33,10,1,0,"Cardiovascular","Black","Male","North Carolina",1978,"South Atlantic","South","NC",797.431433373074,818.526955910585,840.130809003833,818.428313717761
+"232",33,10,1,0,"Communicable","Black","Male","North Carolina",1978,"South Atlantic","South","NC",79.1994157443368,85.064360229798,91.942141946059,85.2952739962498
+"233",33,10,1,0,"Injuries","Black","Male","North Carolina",1978,"South Atlantic","South","NC",184.13748098131,191.406670282577,199.518374405367,191.524034447979
+"234",33,10,1,0,"Non-communicable","Black","Male","North Carolina",1978,"South Atlantic","South","NC",116.739514544017,122.52699670631,128.954540748348,122.60266071086
+"235",33,10,1,1,"All other causes","Black","Female","North Carolina",1978,"South Atlantic","South","NC",123.706883427846,128.732876263344,133.759672830224,128.779847212462
+"236",33,10,1,1,"Cancers","Black","Female","North Carolina",1978,"South Atlantic","South","NC",160.451166950338,165.77363102136,171.433558248279,165.802184459033
+"237",33,10,1,1,"Cardiovascular","Black","Female","North Carolina",1978,"South Atlantic","South","NC",527.317189478363,543.070379429107,559.980174019112,543.228449894503
+"238",33,10,1,1,"Communicable","Black","Female","North Carolina",1978,"South Atlantic","South","NC",38.1060874975367,41.1681581959955,44.5858478213129,41.2005602258924
+"239",33,10,1,1,"Injuries","Black","Female","North Carolina",1978,"South Atlantic","South","NC",48.1027041588693,50.8883102285125,53.5808117338278,50.8854175440939
+"240",33,10,1,1,"Non-communicable","Black","Female","North Carolina",1978,"South Atlantic","South","NC",76.2576725109061,79.9558841136908,83.5825357357978,79.9219956216833
+"241",33,11,0,0,"All other causes","White","Male","North Carolina",1979,"South Atlantic","South","NC",114.097344532206,117.747958375642,121.427769216707,117.726432338685
+"242",33,11,0,0,"Cancers","White","Male","North Carolina",1979,"South Atlantic","South","NC",245.028555105545,250.080862185392,255.749951990328,250.148898096815
+"243",33,11,0,0,"Cardiovascular","White","Male","North Carolina",1979,"South Atlantic","South","NC",726.140757970861,739.36621372963,752.770871768355,739.612425411291
+"244",33,11,0,0,"Communicable","White","Male","North Carolina",1979,"South Atlantic","South","NC",50.950663095568,54.5191744152326,58.1376284443956,54.5001970714193
+"245",33,11,0,0,"Injuries","White","Male","North Carolina",1979,"South Atlantic","South","NC",108.880575699118,111.460007713086,114.286945043907,111.51442627359
+"246",33,11,0,0,"Non-communicable","White","Male","North Carolina",1979,"South Atlantic","South","NC",99.0918434877104,102.352442662267,105.790804320566,102.396542672239
+"247",33,11,0,1,"All other causes","White","Female","North Carolina",1979,"South Atlantic","South","NC",77.9992381334763,80.3419065658016,82.9178996290792,80.425625877672
+"248",33,11,0,1,"Cancers","White","Female","North Carolina",1979,"South Atlantic","South","NC",139.80529029865,142.744521222109,145.527533622119,142.6965519272
+"249",33,11,0,1,"Cardiovascular","White","Female","North Carolina",1979,"South Atlantic","South","NC",417.411712178355,425.432862490341,433.07179025922,425.492988552027
+"250",33,11,0,1,"Communicable","White","Female","North Carolina",1979,"South Atlantic","South","NC",29.6963804009967,31.2980161633139,33.1250381101719,31.3064765576223
+"251",33,11,0,1,"Injuries","White","Female","North Carolina",1979,"South Atlantic","South","NC",37.6471350756009,39.0190210148152,40.3285273756722,39.0080015729972
+"252",33,11,0,1,"Non-communicable","White","Female","North Carolina",1979,"South Atlantic","South","NC",39.2913941016937,40.9010114323461,42.6312176753596,40.9169195105417
+"253",33,11,1,0,"All other causes","Black","Male","North Carolina",1979,"South Atlantic","South","NC",206.99207622915,215.067242104689,222.658446732357,214.967625757344
+"254",33,11,1,0,"Cancers","Black","Male","North Carolina",1979,"South Atlantic","South","NC",323.844493749617,335.477233311928,347.289720908703,335.494166296464
+"255",33,11,1,0,"Cardiovascular","Black","Male","North Carolina",1979,"South Atlantic","South","NC",759.960822015459,781.798117301733,804.940878590084,782.013904323249
+"256",33,11,1,0,"Communicable","Black","Male","North Carolina",1979,"South Atlantic","South","NC",74.2010487456021,80.2902710348381,87.1742281932927,80.3918731625102
+"257",33,11,1,0,"Injuries","Black","Male","North Carolina",1979,"South Atlantic","South","NC",180.848208445936,188.660089557091,195.997113024743,188.58022309098
+"258",33,11,1,0,"Non-communicable","Black","Male","North Carolina",1979,"South Atlantic","South","NC",116.467558640319,122.390132067821,128.469242316232,122.527288194506
+"259",33,11,1,1,"All other causes","Black","Female","North Carolina",1979,"South Atlantic","South","NC",122.710538675083,127.82928423521,133.219855697496,127.896758020473
+"260",33,11,1,1,"Cancers","Black","Female","North Carolina",1979,"South Atlantic","South","NC",162.082629155037,167.148704762396,172.452877200885,167.129177801318
+"261",33,11,1,1,"Cardiovascular","Black","Female","North Carolina",1979,"South Atlantic","South","NC",500.985761699043,515.953465261533,532.051429547733,516.146890151409
+"262",33,11,1,1,"Communicable","Black","Female","North Carolina",1979,"South Atlantic","South","NC",35.8919897258939,38.9329521867156,42.2277523442445,39.0215140581434
+"263",33,11,1,1,"Injuries","Black","Female","North Carolina",1979,"South Atlantic","South","NC",46.5742439539396,49.2412995825404,51.9126307860787,49.2551080739014
+"264",33,11,1,1,"Non-communicable","Black","Female","North Carolina",1979,"South Atlantic","South","NC",74.6363746451012,78.3959549726295,82.4526859454491,78.3693952657723
+"265",33,12,0,0,"All other causes","White","Male","North Carolina",1980,"South Atlantic","South","NC",114.77680617448,118.082472123552,122.052415862235,118.177940190382
+"266",33,12,0,0,"Cancers","White","Male","North Carolina",1980,"South Atlantic","South","NC",249.002366124685,254.768964669555,259.811278545802,254.651427997735
+"267",33,12,0,0,"Cardiovascular","White","Male","North Carolina",1980,"South Atlantic","South","NC",699.236086308426,711.944057554027,724.553453370786,711.969088182668
+"268",33,12,0,0,"Communicable","White","Male","North Carolina",1980,"South Atlantic","South","NC",52.7501516906363,56.3880842742475,60.3334433321687,56.4099462957277
+"269",33,12,0,0,"Injuries","White","Male","North Carolina",1980,"South Atlantic","South","NC",106.369814080532,109.187973146005,112.134856839123,109.204391757406
+"270",33,12,0,0,"Non-communicable","White","Male","North Carolina",1980,"South Atlantic","South","NC",100.152233572082,103.450931160565,106.636753182367,103.435894519301
+"271",33,12,0,1,"All other causes","White","Female","North Carolina",1980,"South Atlantic","South","NC",78.7642562840707,81.3062722429174,83.666379154092,81.2882081603961
+"272",33,12,0,1,"Cancers","White","Female","North Carolina",1980,"South Atlantic","South","NC",141.202811523751,144.09109354034,146.885768634515,144.086026658729
+"273",33,12,0,1,"Cardiovascular","White","Female","North Carolina",1980,"South Atlantic","South","NC",407.204288797874,414.016654578621,422.002112139262,414.257337275883
+"274",33,12,0,1,"Communicable","White","Female","North Carolina",1980,"South Atlantic","South","NC",29.747625450825,31.4310800528538,33.1803561911976,31.4303127455805
+"275",33,12,0,1,"Injuries","White","Female","North Carolina",1980,"South Atlantic","South","NC",37.0359200150158,38.4488773896243,39.7735217670601,38.4260793630467
+"276",33,12,0,1,"Non-communicable","White","Female","North Carolina",1980,"South Atlantic","South","NC",40.4709688811698,42.1490417306556,43.7675808976932,42.1529835658818
+"277",33,12,1,0,"All other causes","Black","Male","North Carolina",1980,"South Atlantic","South","NC",202.448967402756,210.673009834373,219.4716011027,210.698292044611
+"278",33,12,1,0,"Cancers","Black","Male","North Carolina",1980,"South Atlantic","South","NC",331.389230181975,342.820623367098,355.757939706289,343.057548879673
+"279",33,12,1,0,"Cardiovascular","Black","Male","North Carolina",1980,"South Atlantic","South","NC",768.628000760706,790.324779373438,812.281351935944,790.098713903881
+"280",33,12,1,0,"Communicable","Black","Male","North Carolina",1980,"South Atlantic","South","NC",79.6066573554261,86.4429253094918,93.2504857987543,86.4632000263586
+"281",33,12,1,0,"Injuries","Black","Male","North Carolina",1980,"South Atlantic","South","NC",173.962216198746,181.071455864647,188.401643400855,181.025608856379
+"282",33,12,1,0,"Non-communicable","Black","Male","North Carolina",1980,"South Atlantic","South","NC",116.863805124829,122.96685343806,128.696742202173,122.870654074727
+"283",33,12,1,1,"All other causes","Black","Female","North Carolina",1980,"South Atlantic","South","NC",121.192861478822,126.175986414756,130.994843327259,126.136857393012
+"284",33,12,1,1,"Cancers","Black","Female","North Carolina",1980,"South Atlantic","South","NC",163.637802734665,169.016560812167,174.466255416685,169.076208093711
+"285",33,12,1,1,"Cardiovascular","Black","Female","North Carolina",1980,"South Atlantic","South","NC",495.855533629111,511.566194505176,527.500548767884,511.597437401304
+"286",33,12,1,1,"Communicable","Black","Female","North Carolina",1980,"South Atlantic","South","NC",37.1614628741834,40.407373920279,43.5857218389589,40.4142253892863
+"287",33,12,1,1,"Injuries","Black","Female","North Carolina",1980,"South Atlantic","South","NC",45.0871981943441,47.5796226481519,50.0423881044688,47.5763323352393
+"288",33,12,1,1,"Non-communicable","Black","Female","North Carolina",1980,"South Atlantic","South","NC",74.3539280440901,78.2743422111834,82.2071314933639,78.3450056961419
+"289",33,13,0,0,"All other causes","White","Male","North Carolina",1981,"South Atlantic","South","NC",114.220378949355,117.488843844538,121.185423896152,117.566416330953
+"290",33,13,0,0,"Cancers","White","Male","North Carolina",1981,"South Atlantic","South","NC",251.079354992799,256.051697553296,261.827239078811,256.216779124059
+"291",33,13,0,0,"Cardiovascular","White","Male","North Carolina",1981,"South Atlantic","South","NC",683.067970507015,695.478760281155,708.23301297525,695.448008097641
+"292",33,13,0,0,"Communicable","White","Male","North Carolina",1981,"South Atlantic","South","NC",54.6668953084987,58.2897418907384,61.8970650684469,58.314520816537
+"293",33,13,0,0,"Injuries","White","Male","North Carolina",1981,"South Atlantic","South","NC",103.572292982226,106.499109987995,109.253716490889,106.504699723037
+"294",33,13,0,0,"Non-communicable","White","Male","North Carolina",1981,"South Atlantic","South","NC",100.178116071202,103.371106802133,106.506925494144,103.391657931873
+"295",33,13,0,1,"All other causes","White","Female","North Carolina",1981,"South Atlantic","South","NC",79.9168171780602,82.5789775154475,85.2291264942187,82.5596829057966
+"296",33,13,0,1,"Cancers","White","Female","North Carolina",1981,"South Atlantic","South","NC",141.956180847675,144.638103578524,147.562248194029,144.685543195435
+"297",33,13,0,1,"Cardiovascular","White","Female","North Carolina",1981,"South Atlantic","South","NC",402.476265122976,409.730312827103,417.360417664958,409.802379232572
+"298",33,13,0,1,"Communicable","White","Female","North Carolina",1981,"South Atlantic","South","NC",31.202743461781,32.9246361343851,34.8815467122339,32.965434181651
+"299",33,13,0,1,"Injuries","White","Female","North Carolina",1981,"South Atlantic","South","NC",36.2861106121987,37.5127200566406,38.8362775107474,37.525000433285
+"300",33,13,0,1,"Non-communicable","White","Female","North Carolina",1981,"South Atlantic","South","NC",41.7669268763646,43.4095766886367,45.0799909659688,43.4042840219384
+"301",33,13,1,0,"All other causes","Black","Male","North Carolina",1981,"South Atlantic","South","NC",198.477992955932,205.948528102091,214.704464632774,206.016800849759
+"302",33,13,1,0,"Cancers","Black","Male","North Carolina",1981,"South Atlantic","South","NC",339.208259387958,351.019333149947,363.877233515943,351.029344590376
+"303",33,13,1,0,"Cardiovascular","Black","Male","North Carolina",1981,"South Atlantic","South","NC",761.980164974491,782.900263376969,805.685564018721,783.367010110039
+"304",33,13,1,0,"Communicable","Black","Male","North Carolina",1981,"South Atlantic","South","NC",80.7024427695037,86.8007937385786,93.7261074073307,86.9469258980031
+"305",33,13,1,0,"Injuries","Black","Male","North Carolina",1981,"South Atlantic","South","NC",165.554317042831,172.223517494154,179.980987551915,172.311998795279
+"306",33,13,1,0,"Non-communicable","Black","Male","North Carolina",1981,"South Atlantic","South","NC",115.845379651421,121.440751560625,128.041973362468,121.636398702033
+"307",33,13,1,1,"All other causes","Black","Female","North Carolina",1981,"South Atlantic","South","NC",120.477787025939,125.548409844646,130.472871352345,125.56544525957
+"308",33,13,1,1,"Cancers","Black","Female","North Carolina",1981,"South Atlantic","South","NC",165.982872079064,171.216366920954,176.459558843704,171.154755533971
+"309",33,13,1,1,"Cardiovascular","Black","Female","North Carolina",1981,"South Atlantic","South","NC",493.490629475422,508.158387832891,523.32439934453,508.351662971207
+"310",33,13,1,1,"Communicable","Black","Female","North Carolina",1981,"South Atlantic","South","NC",37.8044063740131,40.9815806472845,44.3320990813415,40.9895058458744
+"311",33,13,1,1,"Injuries","Black","Female","North Carolina",1981,"South Atlantic","South","NC",43.8638389013182,46.4066270405331,49.1071805038558,46.3906445314634
+"312",33,13,1,1,"Non-communicable","Black","Female","North Carolina",1981,"South Atlantic","South","NC",73.3260080937175,77.150845824031,81.1379021509519,77.1548865469222
+"313",33,14,0,0,"All other causes","White","Male","North Carolina",1982,"South Atlantic","South","NC",113.349142451057,116.907891278605,120.610679230326,116.88485108681
+"314",33,14,0,0,"Cancers","White","Male","North Carolina",1982,"South Atlantic","South","NC",250.875637527374,256.112947736183,261.635019817089,256.128272801466
+"315",33,14,0,0,"Cardiovascular","White","Male","North Carolina",1982,"South Atlantic","South","NC",656.150199608209,668.517701541865,680.433121801423,668.594980075112
+"316",33,14,0,0,"Communicable","White","Male","North Carolina",1982,"South Atlantic","South","NC",51.6283985226063,55.237154080146,58.9563078534129,55.2682578562991
+"317",33,14,0,0,"Injuries","White","Male","North Carolina",1982,"South Atlantic","South","NC",100.614950620171,103.205895480216,105.822022812785,103.224474847705
+"318",33,14,0,0,"Non-communicable","White","Male","North Carolina",1982,"South Atlantic","South","NC",99.6296058466873,102.588053050792,105.72585437091,102.615957112946
+"319",33,14,0,1,"All other causes","White","Female","North Carolina",1982,"South Atlantic","South","NC",81.1302789591724,83.6617835689014,86.2283751699472,83.6721153495776
+"320",33,14,0,1,"Cancers","White","Female","North Carolina",1982,"South Atlantic","South","NC",142.98415659697,146.005788425311,148.826747019491,146.000946340414
+"321",33,14,0,1,"Cardiovascular","White","Female","North Carolina",1982,"South Atlantic","South","NC",388.042158184231,395.45206864663,402.51858539005,395.439012596014
+"322",33,14,0,1,"Communicable","White","Female","North Carolina",1982,"South Atlantic","South","NC",28.8336897907854,30.5265210022806,32.3616830362394,30.5433909962699
+"323",33,14,0,1,"Injuries","White","Female","North Carolina",1982,"South Atlantic","South","NC",35.2208603261535,36.5599424717524,37.7451941738803,36.5326153537086
+"324",33,14,0,1,"Non-communicable","White","Female","North Carolina",1982,"South Atlantic","South","NC",43.3728549098288,44.9086693960027,46.766161956452,44.9436632646244
+"325",33,14,1,0,"All other causes","Black","Male","North Carolina",1982,"South Atlantic","South","NC",195.758584958266,203.600982170257,211.656047104785,203.556997598536
+"326",33,14,1,0,"Cancers","Black","Male","North Carolina",1982,"South Atlantic","South","NC",346.737494905175,358.084553516759,370.186172410923,357.959227030626
+"327",33,14,1,0,"Cardiovascular","Black","Male","North Carolina",1982,"South Atlantic","South","NC",732.965180206367,754.270152346443,774.875840646488,754.06134793071
+"328",33,14,1,0,"Communicable","Black","Male","North Carolina",1982,"South Atlantic","South","NC",77.1249108295,83.1196395257055,89.8812921684581,83.2081364417974
+"329",33,14,1,0,"Injuries","Black","Male","North Carolina",1982,"South Atlantic","South","NC",157.384883615055,164.303328808607,171.280262041906,164.270312276666
+"330",33,14,1,0,"Non-communicable","Black","Male","North Carolina",1982,"South Atlantic","South","NC",113.606325810874,120.316310809953,126.184062615779,120.153108520125
+"331",33,14,1,1,"All other causes","Black","Female","North Carolina",1982,"South Atlantic","South","NC",121.22451196777,126.382255605813,131.266724367201,126.337318753001
+"332",33,14,1,1,"Cancers","Black","Female","North Carolina",1982,"South Atlantic","South","NC",168.445614649496,173.548881815542,179.318996500648,173.581816185742
+"333",33,14,1,1,"Cardiovascular","Black","Female","North Carolina",1982,"South Atlantic","South","NC",477.006708732507,491.26389511081,505.853294754542,491.380261906144
+"334",33,14,1,1,"Communicable","Black","Female","North Carolina",1982,"South Atlantic","South","NC",38.9753598764343,42.2928101184635,45.5944491302218,42.2635808113693
+"335",33,14,1,1,"Injuries","Black","Female","North Carolina",1982,"South Atlantic","South","NC",42.9244927709726,45.3216915627229,47.9360738009717,45.3723033591733
+"336",33,14,1,1,"Non-communicable","Black","Female","North Carolina",1982,"South Atlantic","South","NC",72.8886929450335,76.7138041297274,80.5486176912798,76.6880890976266
+"337",33,15,0,0,"All other causes","White","Male","North Carolina",1983,"South Atlantic","South","NC",113.935652315841,117.820400441817,121.263877321516,117.795187773242
+"338",33,15,0,0,"Cancers","White","Male","North Carolina",1983,"South Atlantic","South","NC",253.454587814863,258.331653562512,263.847043314463,258.456502868171
+"339",33,15,0,0,"Cardiovascular","White","Male","North Carolina",1983,"South Atlantic","South","NC",657.306708768692,668.226737248369,679.827551147061,668.18011688992
+"340",33,15,0,0,"Communicable","White","Male","North Carolina",1983,"South Atlantic","South","NC",55.3219808496264,59.040423996931,62.8318545450202,59.0920195035462
+"341",33,15,0,0,"Injuries","White","Male","North Carolina",1983,"South Atlantic","South","NC",98.0140998563845,100.503303197421,103.210807887521,100.516669877142
+"342",33,15,0,0,"Non-communicable","White","Male","North Carolina",1983,"South Atlantic","South","NC",101.127926525929,104.24419093469,107.223740645873,104.21825524834
+"343",33,15,0,1,"All other causes","White","Female","North Carolina",1983,"South Atlantic","South","NC",81.0158172960318,83.5673940861358,86.3396189268182,83.5706504118683
+"344",33,15,0,1,"Cancers","White","Female","North Carolina",1983,"South Atlantic","South","NC",143.906380045496,146.75565762087,149.405317065578,146.725116506548
+"345",33,15,0,1,"Cardiovascular","White","Female","North Carolina",1983,"South Atlantic","South","NC",385.693775999295,393.057353804122,400.154970981403,393.015171571799
+"346",33,15,0,1,"Communicable","White","Female","North Carolina",1983,"South Atlantic","South","NC",31.5034607038953,33.3351422457659,34.9156678805977,33.3149816530871
+"347",33,15,0,1,"Injuries","White","Female","North Carolina",1983,"South Atlantic","South","NC",34.6812257901946,35.9697779809719,37.1594976359156,35.9654945089003
+"348",33,15,0,1,"Non-communicable","White","Female","North Carolina",1983,"South Atlantic","South","NC",44.7198439496217,46.4556216968507,48.1873789092371,46.4704645163113
+"349",33,15,1,0,"All other causes","Black","Male","North Carolina",1983,"South Atlantic","South","NC",195.851130662286,202.849452962335,210.544643408645,202.998984347442
+"350",33,15,1,0,"Cancers","Black","Male","North Carolina",1983,"South Atlantic","South","NC",348.751089759398,360.70965943741,373.197535696475,360.861605478109
+"351",33,15,1,0,"Cardiovascular","Black","Male","North Carolina",1983,"South Atlantic","South","NC",738.703968030749,759.175631995124,781.705333162445,759.294376324279
+"352",33,15,1,0,"Communicable","Black","Male","North Carolina",1983,"South Atlantic","South","NC",78.6689197804602,85.2221740399986,91.9082422637659,85.2079903574414
+"353",33,15,1,0,"Injuries","Black","Male","North Carolina",1983,"South Atlantic","South","NC",152.623922972748,158.878897155631,165.681131331176,158.871609191381
+"354",33,15,1,0,"Non-communicable","Black","Male","North Carolina",1983,"South Atlantic","South","NC",116.240173856356,122.146576095537,128.385155443944,122.17073219498
+"355",33,15,1,1,"All other causes","Black","Female","North Carolina",1983,"South Atlantic","South","NC",120.638112467802,125.816705115446,130.993863053738,125.83777962471
+"356",33,15,1,1,"Cancers","Black","Female","North Carolina",1983,"South Atlantic","South","NC",170.200156388696,175.953980049554,181.246248945248,175.855822998338
+"357",33,15,1,1,"Cardiovascular","Black","Female","North Carolina",1983,"South Atlantic","South","NC",481.826889591475,496.394767231539,510.99395191717,496.36007515827
+"358",33,15,1,1,"Communicable","Black","Female","North Carolina",1983,"South Atlantic","South","NC",41.3493042546022,44.5763558117492,48.0251536426455,44.6320387356947
+"359",33,15,1,1,"Injuries","Black","Female","North Carolina",1983,"South Atlantic","South","NC",42.6047956954594,44.8146325085261,47.2055986693012,44.8348678966726
+"360",33,15,1,1,"Non-communicable","Black","Female","North Carolina",1983,"South Atlantic","South","NC",73.5595117619934,77.3716279407254,81.0747763311003,77.3295494628168
+"361",33,16,0,0,"All other causes","White","Male","North Carolina",1984,"South Atlantic","South","NC",114.449655043079,118.013688697656,121.67605017291,118.022378051646
+"362",33,16,0,0,"Cancers","White","Male","North Carolina",1984,"South Atlantic","South","NC",251.338284032331,256.368670053231,261.794512841966,256.416079547986
+"363",33,16,0,0,"Cardiovascular","White","Male","North Carolina",1984,"South Atlantic","South","NC",643.056105298974,654.378573626677,666.040970199722,654.492736215855
+"364",33,16,0,0,"Communicable","White","Male","North Carolina",1984,"South Atlantic","South","NC",57.167428720857,60.6060640172172,64.3031135397761,60.636390636166
+"365",33,16,0,0,"Injuries","White","Male","North Carolina",1984,"South Atlantic","South","NC",97.4429885808055,99.9892618325443,102.783344024299,100.01270972376
+"366",33,16,0,0,"Non-communicable","White","Male","North Carolina",1984,"South Atlantic","South","NC",102.152311239566,105.178421071188,108.264744900436,105.176285102809
+"367",33,16,0,1,"All other causes","White","Female","North Carolina",1984,"South Atlantic","South","NC",82.4003694075878,85.0070890661031,87.4720896887356,84.9465525540103
+"368",33,16,0,1,"Cancers","White","Female","North Carolina",1984,"South Atlantic","South","NC",146.519528277544,149.273001081293,151.985112833226,149.27272237989
+"369",33,16,0,1,"Cardiovascular","White","Female","North Carolina",1984,"South Atlantic","South","NC",374.756711864619,381.973815061519,388.393098259821,381.936490290718
+"370",33,16,0,1,"Communicable","White","Female","North Carolina",1984,"South Atlantic","South","NC",34.1134902584499,35.5872648713828,37.3749978556595,35.6256547420841
+"371",33,16,0,1,"Injuries","White","Female","North Carolina",1984,"South Atlantic","South","NC",34.4633064147163,35.7731924325776,36.92469257663,35.7499266322197
+"372",33,16,0,1,"Non-communicable","White","Female","North Carolina",1984,"South Atlantic","South","NC",46.2198933543846,48.0440662105214,49.8837122645084,48.0659349951607
+"373",33,16,1,0,"All other causes","Black","Male","North Carolina",1984,"South Atlantic","South","NC",197.304969353463,205.454088277301,213.479350632983,205.412358307961
+"374",33,16,1,0,"Cancers","Black","Male","North Carolina",1984,"South Atlantic","South","NC",358.738982558672,370.897651583067,382.842981576773,370.864170209101
+"375",33,16,1,0,"Cardiovascular","Black","Male","North Carolina",1984,"South Atlantic","South","NC",734.933251059972,757.280033875149,779.329333147398,757.327125928026
+"376",33,16,1,0,"Communicable","Black","Male","North Carolina",1984,"South Atlantic","South","NC",81.1286606416227,87.1241594288514,94.1605393043305,87.2534555304475
+"377",33,16,1,0,"Injuries","Black","Male","North Carolina",1984,"South Atlantic","South","NC",148.910216540406,155.32899505945,161.543733653396,155.281987588064
+"378",33,16,1,0,"Non-communicable","Black","Male","North Carolina",1984,"South Atlantic","South","NC",118.815928583598,124.706216500605,131.108734945986,124.809673754497
+"379",33,16,1,1,"All other causes","Black","Female","North Carolina",1984,"South Atlantic","South","NC",121.974432628048,127.514065399089,132.474305476818,127.407994572611
+"380",33,16,1,1,"Cancers","Black","Female","North Carolina",1984,"South Atlantic","South","NC",172.451567435012,177.66405995325,183.439401664213,177.737264566876
+"381",33,16,1,1,"Cardiovascular","Black","Female","North Carolina",1984,"South Atlantic","South","NC",475.407056505651,488.919052230685,504.085186643081,489.101924000484
+"382",33,16,1,1,"Communicable","Black","Female","North Carolina",1984,"South Atlantic","South","NC",44.2270421521991,47.4508423712232,51.3034877668508,47.5243240250491
+"383",33,16,1,1,"Injuries","Black","Female","North Carolina",1984,"South Atlantic","South","NC",42.094584911261,44.3913659857793,46.7049136577479,44.4102353672654
+"384",33,16,1,1,"Non-communicable","Black","Female","North Carolina",1984,"South Atlantic","South","NC",74.3897804020208,78.3312280902707,82.3227523920273,78.3434338720075
+"385",33,17,0,0,"All other causes","White","Male","North Carolina",1985,"South Atlantic","South","NC",116.869614891823,120.407592607998,124.461504291527,120.49766000487
+"386",33,17,0,0,"Cancers","White","Male","North Carolina",1985,"South Atlantic","South","NC",253.754635103746,258.936747604885,264.557202709091,258.957044098561
+"387",33,17,0,0,"Cardiovascular","White","Male","North Carolina",1985,"South Atlantic","South","NC",625.860464989667,636.649637918871,648.244889950822,636.565581996223
+"388",33,17,0,0,"Communicable","White","Male","North Carolina",1985,"South Atlantic","South","NC",66.3775263294614,70.201811257212,74.2562884316313,70.1982799787119
+"389",33,17,0,0,"Injuries","White","Male","North Carolina",1985,"South Atlantic","South","NC",96.3679056096644,99.0499305507885,101.601144610226,99.0428469001514
+"390",33,17,0,0,"Non-communicable","White","Male","North Carolina",1985,"South Atlantic","South","NC",102.975601846121,105.917641961549,109.225699492877,105.96849299694
+"391",33,17,0,1,"All other causes","White","Female","North Carolina",1985,"South Atlantic","South","NC",84.0520638710488,86.4719755287689,88.8992768592224,86.4640707489956
+"392",33,17,0,1,"Cancers","White","Female","North Carolina",1985,"South Atlantic","South","NC",149.129189319904,151.735917968248,154.516349132765,151.776540256063
+"393",33,17,0,1,"Cardiovascular","White","Female","North Carolina",1985,"South Atlantic","South","NC",373.870748354848,380.077768173995,386.766076346686,380.050262694863
+"394",33,17,0,1,"Communicable","White","Female","North Carolina",1985,"South Atlantic","South","NC",36.3217059298144,38.0936270867106,39.8904237926514,38.0911628111841
+"395",33,17,0,1,"Injuries","White","Female","North Carolina",1985,"South Atlantic","South","NC",34.6237538772882,35.8383054024932,37.0080995904742,35.8440893856057
+"396",33,17,0,1,"Non-communicable","White","Female","North Carolina",1985,"South Atlantic","South","NC",50.8174248617776,52.7478575095795,54.7215634225167,52.7738010574712
+"397",33,17,1,0,"All other causes","Black","Male","North Carolina",1985,"South Atlantic","South","NC",200.536684313675,208.49363613432,216.462093089852,208.44795843871
+"398",33,17,1,0,"Cancers","Black","Male","North Carolina",1985,"South Atlantic","South","NC",367.034829920868,379.140110005532,391.813557170086,379.008021479364
+"399",33,17,1,0,"Cardiovascular","Black","Male","North Carolina",1985,"South Atlantic","South","NC",732.465764163078,753.525432114889,774.726723262926,753.62236527432
+"400",33,17,1,0,"Communicable","Black","Male","North Carolina",1985,"South Atlantic","South","NC",86.5903221540601,93.1825015594071,100.54723140361,93.3372049173444
+"401",33,17,1,0,"Injuries","Black","Male","North Carolina",1985,"South Atlantic","South","NC",149.693725599858,155.897421336953,162.481971032757,155.884669102709
+"402",33,17,1,0,"Non-communicable","Black","Male","North Carolina",1985,"South Atlantic","South","NC",122.891314969108,128.725603209885,135.587477863764,128.782583239597
+"403",33,17,1,1,"All other causes","Black","Female","North Carolina",1985,"South Atlantic","South","NC",123.375607025741,128.711456057466,134.117341646259,128.752329542257
+"404",33,17,1,1,"Cancers","Black","Female","North Carolina",1985,"South Atlantic","South","NC",175.257851349444,180.663477076678,186.652284677192,180.69944584644
+"405",33,17,1,1,"Cardiovascular","Black","Female","North Carolina",1985,"South Atlantic","South","NC",474.975140780746,488.060749165535,501.792495164087,488.304558609946
+"406",33,17,1,1,"Communicable","Black","Female","North Carolina",1985,"South Atlantic","South","NC",48.8521462246823,52.5706656071629,56.6915139590423,52.6267791904421
+"407",33,17,1,1,"Injuries","Black","Female","North Carolina",1985,"South Atlantic","South","NC",41.8370369721034,44.1163793613389,46.3507372385746,44.1323514826131
+"408",33,17,1,1,"Non-communicable","Black","Female","North Carolina",1985,"South Atlantic","South","NC",75.4651036582436,79.3229770558338,83.1275086214296,79.2649088453737
+"409",33,18,0,0,"All other causes","White","Male","North Carolina",1986,"South Atlantic","South","NC",117.465200431651,120.89390422004,124.864945269028,120.959067584294
+"410",33,18,0,0,"Cancers","White","Male","North Carolina",1986,"South Atlantic","South","NC",258.947442980957,264.277022588638,269.382930168429,264.269158388983
+"411",33,18,0,0,"Cardiovascular","White","Male","North Carolina",1986,"South Atlantic","South","NC",606.819664211276,618.586317448488,630.487596314191,618.521866009337
+"412",33,18,0,0,"Communicable","White","Male","North Carolina",1986,"South Atlantic","South","NC",68.1649415698135,72.1179466666774,76.5003255012555,72.2212651874161
+"413",33,18,0,0,"Injuries","White","Male","North Carolina",1986,"South Atlantic","South","NC",96.6235399920959,99.0655430011678,101.486504665043,99.0860960918367
+"414",33,18,0,0,"Non-communicable","White","Male","North Carolina",1986,"South Atlantic","South","NC",106.281714153575,109.448100356531,112.682927157067,109.432419996614
+"415",33,18,0,1,"All other causes","White","Female","North Carolina",1986,"South Atlantic","South","NC",84.4763962923018,86.7504742591657,89.4020875977421,86.7737131110082
+"416",33,18,0,1,"Cancers","White","Female","North Carolina",1986,"South Atlantic","South","NC",150.649749654123,153.518010558454,156.322911547258,153.517704775481
+"417",33,18,0,1,"Cardiovascular","White","Female","North Carolina",1986,"South Atlantic","South","NC",370.970305043772,377.354877135114,384.589758529587,377.477309702495
+"418",33,18,0,1,"Communicable","White","Female","North Carolina",1986,"South Atlantic","South","NC",38.2472792709821,40.1137978874987,42.1191443775444,40.1374692118244
+"419",33,18,0,1,"Injuries","White","Female","North Carolina",1986,"South Atlantic","South","NC",35.037643680532,36.2185502123586,37.5038723027718,36.2446977560935
+"420",33,18,0,1,"Non-communicable","White","Female","North Carolina",1986,"South Atlantic","South","NC",53.1436144478385,55.0513116241945,57.1824990092172,55.0820175117061
+"421",33,18,1,0,"All other causes","Black","Male","North Carolina",1986,"South Atlantic","South","NC",201.40935418746,209.683727271987,217.572188584521,209.668274195617
+"422",33,18,1,0,"Cancers","Black","Male","North Carolina",1986,"South Atlantic","South","NC",375.010316146067,386.903237523538,399.935625417645,387.057500747678
+"423",33,18,1,0,"Cardiovascular","Black","Male","North Carolina",1986,"South Atlantic","South","NC",715.380541128752,735.250555232889,754.932506862818,735.348284800712
+"424",33,18,1,0,"Communicable","Black","Male","North Carolina",1986,"South Atlantic","South","NC",94.3406895693987,101.445350808689,109.272167051239,101.489340367042
+"425",33,18,1,0,"Injuries","Black","Male","North Carolina",1986,"South Atlantic","South","NC",152.470118543568,158.456782187032,164.721686418096,158.52722665541
+"426",33,18,1,0,"Non-communicable","Black","Male","North Carolina",1986,"South Atlantic","South","NC",125.767034993069,131.992367463899,139.08416639109,132.035393844164
+"427",33,18,1,1,"All other causes","Black","Female","North Carolina",1986,"South Atlantic","South","NC",126.124923025518,131.358774445572,136.83605033211,131.37672776822
+"428",33,18,1,1,"Cancers","Black","Female","North Carolina",1986,"South Atlantic","South","NC",178.476948144359,183.903926614947,189.614694332214,183.886923309445
+"429",33,18,1,1,"Cardiovascular","Black","Female","North Carolina",1986,"South Atlantic","South","NC",470.905416095861,484.076242471104,498.05095002295,484.093327209273
+"430",33,18,1,1,"Communicable","Black","Female","North Carolina",1986,"South Atlantic","South","NC",49.2215790403655,52.5226012816737,56.4904526962216,52.6354166856463
+"431",33,18,1,1,"Injuries","Black","Female","North Carolina",1986,"South Atlantic","South","NC",41.4629988276811,43.4888750621228,45.8632880855872,43.5533282180194
+"432",33,18,1,1,"Non-communicable","Black","Female","North Carolina",1986,"South Atlantic","South","NC",77.1430364587008,81.2659399286685,85.3957534734308,81.2440757552114
+"433",33,19,0,0,"All other causes","White","Male","North Carolina",1987,"South Atlantic","South","NC",118.048950460432,121.788469268644,125.382768802253,121.772187189907
+"434",33,19,0,0,"Cancers","White","Male","North Carolina",1987,"South Atlantic","South","NC",264.215033485113,269.406126629948,274.451657151738,269.426174972567
+"435",33,19,0,0,"Cardiovascular","White","Male","North Carolina",1987,"South Atlantic","South","NC",588.892062271897,600.098024097668,610.149071652669,599.936289879138
+"436",33,19,0,0,"Communicable","White","Male","North Carolina",1987,"South Atlantic","South","NC",62.5918385771143,66.5585059977799,70.4177473793758,66.5481481190055
+"437",33,19,0,0,"Injuries","White","Male","North Carolina",1987,"South Atlantic","South","NC",95.6366985538175,97.8774814136099,100.494585278862,97.9312720703107
+"438",33,19,0,0,"Non-communicable","White","Male","North Carolina",1987,"South Atlantic","South","NC",108.096265800871,111.303177224157,114.793136842676,111.330313453506
+"439",33,19,0,1,"All other causes","White","Female","North Carolina",1987,"South Atlantic","South","NC",85.0773530142643,87.7226019928338,90.2870508015256,87.6757889475123
+"440",33,19,0,1,"Cancers","White","Female","North Carolina",1987,"South Atlantic","South","NC",152.978655837861,155.836340679038,158.610107300617,155.810153407432
+"441",33,19,0,1,"Cardiovascular","White","Female","North Carolina",1987,"South Atlantic","South","NC",363.284898068483,369.880722433726,376.444868644568,369.894969596765
+"442",33,19,0,1,"Communicable","White","Female","North Carolina",1987,"South Atlantic","South","NC",36.9926911337269,38.7855190946709,40.5976334962844,38.8139277363999
+"443",33,19,0,1,"Injuries","White","Female","North Carolina",1987,"South Atlantic","South","NC",35.2668858013323,36.4419917243828,37.6714272127871,36.425330246789
+"444",33,19,0,1,"Non-communicable","White","Female","North Carolina",1987,"South Atlantic","South","NC",55.8173587553679,57.83623303925,59.9590937389703,57.8365800624803
+"445",33,19,1,0,"All other causes","Black","Male","North Carolina",1987,"South Atlantic","South","NC",202.464763427244,210.611090180271,218.317873564847,210.421948608797
+"446",33,19,1,0,"Cancers","Black","Male","North Carolina",1987,"South Atlantic","South","NC",381.466839026061,393.289901373286,405.954873036758,393.382740826874
+"447",33,19,1,0,"Cardiovascular","Black","Male","North Carolina",1987,"South Atlantic","South","NC",707.416945719033,728.196064268951,747.745111408787,727.774993379277
+"448",33,19,1,0,"Communicable","Black","Male","North Carolina",1987,"South Atlantic","South","NC",99.6323771839692,107.060528119938,115.115684576677,107.213312085855
+"449",33,19,1,0,"Injuries","Black","Male","North Carolina",1987,"South Atlantic","South","NC",150.790919778406,156.564579192283,162.99017247837,156.708930023522
+"450",33,19,1,0,"Non-communicable","Black","Male","North Carolina",1987,"South Atlantic","South","NC",129.00210492576,135.292339120032,141.452050347154,135.233099675029
+"451",33,19,1,1,"All other causes","Black","Female","North Carolina",1987,"South Atlantic","South","NC",128.11139300824,133.348043836999,138.962639335867,133.402542358294
+"452",33,19,1,1,"Cancers","Black","Female","North Carolina",1987,"South Atlantic","South","NC",180.473807147182,185.844663246461,191.469522674889,185.915953744172
+"453",33,19,1,1,"Cardiovascular","Black","Female","North Carolina",1987,"South Atlantic","South","NC",464.291103563579,478.35890376674,492.721603348289,478.440245175631
+"454",33,19,1,1,"Communicable","Black","Female","North Carolina",1987,"South Atlantic","South","NC",50.743987113061,54.7289606505405,58.3809204674977,54.7101997036647
+"455",33,19,1,1,"Injuries","Black","Female","North Carolina",1987,"South Atlantic","South","NC",41.1343362805435,43.332890745192,45.5142902359032,43.3421457850577
+"456",33,19,1,1,"Non-communicable","Black","Female","North Carolina",1987,"South Atlantic","South","NC",79.639411518915,83.9015170214903,87.9643488478044,83.9217620305379
+"457",33,20,0,0,"All other causes","White","Male","North Carolina",1988,"South Atlantic","South","NC",117.927639825457,121.569395003108,125.20268873548,121.599572033006
+"458",33,20,0,0,"Cancers","White","Male","North Carolina",1988,"South Atlantic","South","NC",270.123700917259,275.08421662464,280.59910080357,275.084393590025
+"459",33,20,0,0,"Cardiovascular","White","Male","North Carolina",1988,"South Atlantic","South","NC",581.178622805565,591.869488834885,602.576273621587,591.897479062465
+"460",33,20,0,0,"Communicable","White","Male","North Carolina",1988,"South Atlantic","South","NC",65.8192069649703,69.5032773585324,73.3059393533186,69.5194732434142
+"461",33,20,0,0,"Injuries","White","Male","North Carolina",1988,"South Atlantic","South","NC",94.1929061378133,96.665405048212,99.0649802328133,96.6561734872131
+"462",33,20,0,0,"Non-communicable","White","Male","North Carolina",1988,"South Atlantic","South","NC",111.421998922334,115.008916874323,118.634355854934,115.04885924183
+"463",33,20,0,1,"All other causes","White","Female","North Carolina",1988,"South Atlantic","South","NC",89.7789834073893,92.154539474863,94.8441317750703,92.1733774449275
+"464",33,20,0,1,"Cancers","White","Female","North Carolina",1988,"South Atlantic","South","NC",155.897831233038,158.751638317141,161.687217167305,158.754723773281
+"465",33,20,0,1,"Cardiovascular","White","Female","North Carolina",1988,"South Atlantic","South","NC",350.486566239976,356.498054033706,362.692701962091,356.392599600661
+"466",33,20,0,1,"Communicable","White","Female","North Carolina",1988,"South Atlantic","South","NC",40.41642352677,42.3630981168056,44.3277070926139,42.3803641209601
+"467",33,20,0,1,"Injuries","White","Female","North Carolina",1988,"South Atlantic","South","NC",35.1901965449579,36.5424192018397,37.766971478935,36.5221847016387
+"468",33,20,0,1,"Non-communicable","White","Female","North Carolina",1988,"South Atlantic","South","NC",59.3016748991181,61.3928721183564,63.4864821670035,61.3802632548472
+"469",33,20,1,0,"All other causes","Black","Male","North Carolina",1988,"South Atlantic","South","NC",204.427355469788,212.912127245161,221.469955280958,212.932313230082
+"470",33,20,1,0,"Cancers","Black","Male","North Carolina",1988,"South Atlantic","South","NC",384.62723780846,396.997319264525,409.738206766771,397.059905680171
+"471",33,20,1,0,"Cardiovascular","Black","Male","North Carolina",1988,"South Atlantic","South","NC",698.605210252555,718.608803775809,739.083585421826,718.981091597659
+"472",33,20,1,0,"Communicable","Black","Male","North Carolina",1988,"South Atlantic","South","NC",100.895190756611,108.595833881715,116.356498220444,108.594570356615
+"473",33,20,1,0,"Injuries","Black","Male","North Carolina",1988,"South Atlantic","South","NC",152.094103506043,158.042128976244,164.614501342391,158.054341630079
+"474",33,20,1,0,"Non-communicable","Black","Male","North Carolina",1988,"South Atlantic","South","NC",133.347053660333,139.87715361818,146.37065056915,139.936262941398
+"475",33,20,1,1,"All other causes","Black","Female","North Carolina",1988,"South Atlantic","South","NC",131.619295814356,136.857688237858,142.251009462952,136.886045427761
+"476",33,20,1,1,"Cancers","Black","Female","North Carolina",1988,"South Atlantic","South","NC",181.033184635514,186.362915020988,191.911141934335,186.320488139217
+"477",33,20,1,1,"Cardiovascular","Black","Female","North Carolina",1988,"South Atlantic","South","NC",463.915763118517,476.711035600821,489.87422288188,476.725218454706
+"478",33,20,1,1,"Communicable","Black","Female","North Carolina",1988,"South Atlantic","South","NC",49.0682508935672,52.7313655027824,56.537763639467,52.7437503667457
+"479",33,20,1,1,"Injuries","Black","Female","North Carolina",1988,"South Atlantic","South","NC",40.8058342518495,42.9505254831656,45.3451371832573,42.9880612209788
+"480",33,20,1,1,"Non-communicable","Black","Female","North Carolina",1988,"South Atlantic","South","NC",84.3202627876996,88.4402169212871,93.2402487897501,88.5307200892797
+"481",33,21,0,0,"All other causes","White","Male","North Carolina",1989,"South Atlantic","South","NC",116.684318896676,120.284293661409,124.306610810629,120.276712499541
+"482",33,21,0,0,"Cancers","White","Male","North Carolina",1989,"South Atlantic","South","NC",272.630849690894,277.646974855204,283.315098553032,277.772497531221
+"483",33,21,0,0,"Cardiovascular","White","Male","North Carolina",1989,"South Atlantic","South","NC",545.386376000134,554.918988738327,565.070869489788,554.945142010663
+"484",33,21,0,0,"Communicable","White","Male","North Carolina",1989,"South Atlantic","South","NC",66.1788235682274,69.5995174419009,73.3109222002342,69.6299513454566
+"485",33,21,0,0,"Injuries","White","Male","North Carolina",1989,"South Atlantic","South","NC",93.2785722313632,95.7162650678455,98.1643521768682,95.724892213808
+"486",33,21,0,0,"Non-communicable","White","Male","North Carolina",1989,"South Atlantic","South","NC",110.677494052958,114.196293184168,117.649841833622,114.174605328188
+"487",33,21,0,1,"All other causes","White","Female","North Carolina",1989,"South Atlantic","South","NC",88.7837351922227,91.4447531805329,94.0879108171225,91.447525893413
+"488",33,21,0,1,"Cancers","White","Female","North Carolina",1989,"South Atlantic","South","NC",156.710442272227,159.380925725853,162.150292711316,159.39863414781
+"489",33,21,0,1,"Cardiovascular","White","Female","North Carolina",1989,"South Atlantic","South","NC",336.255549430571,341.429729466038,347.067246452954,341.439753252333
+"490",33,21,0,1,"Communicable","White","Female","North Carolina",1989,"South Atlantic","South","NC",38.8410782905494,40.6785902794822,42.5879779982702,40.6935010385544
+"491",33,21,0,1,"Injuries","White","Female","North Carolina",1989,"South Atlantic","South","NC",35.0274027005672,36.1810329519173,37.5130978176029,36.2063808083121
+"492",33,21,0,1,"Non-communicable","White","Female","North Carolina",1989,"South Atlantic","South","NC",61.7653158090423,63.9349822833915,66.1875233661092,63.9454363451524
+"493",33,21,1,0,"All other causes","Black","Male","North Carolina",1989,"South Atlantic","South","NC",202.450523677183,210.273188099651,218.246167320429,210.385917960521
+"494",33,21,1,0,"Cancers","Black","Male","North Carolina",1989,"South Atlantic","South","NC",385.946793643159,397.603719641947,411.224837854672,397.990630533114
+"495",33,21,1,0,"Cardiovascular","Black","Male","North Carolina",1989,"South Atlantic","South","NC",673.420175893704,691.867004672788,711.303819822988,692.228667943085
+"496",33,21,1,0,"Communicable","Black","Male","North Carolina",1989,"South Atlantic","South","NC",105.515014682344,112.914437366967,120.042423800882,112.777383441382
+"497",33,21,1,0,"Injuries","Black","Male","North Carolina",1989,"South Atlantic","South","NC",152.745916737935,158.526069998352,165.010231359774,158.635890183546
+"498",33,21,1,0,"Non-communicable","Black","Male","North Carolina",1989,"South Atlantic","South","NC",136.763359828472,143.539115732476,150.11929233324,143.569843946963
+"499",33,21,1,1,"All other causes","Black","Female","North Carolina",1989,"South Atlantic","South","NC",132.447392483291,137.770037455094,143.475574510619,137.8123183024
+"500",33,21,1,1,"Cancers","Black","Female","North Carolina",1989,"South Atlantic","South","NC",181.31417563554,186.964441119019,192.1466907234,186.884756994284
+"501",33,21,1,1,"Cardiovascular","Black","Female","North Carolina",1989,"South Atlantic","South","NC",439.366374461905,452.311670021107,465.177013710017,452.255277851634
+"502",33,21,1,1,"Communicable","Black","Female","North Carolina",1989,"South Atlantic","South","NC",49.9954900716003,53.0851551584692,57.1359137765484,53.2207783633683
+"503",33,21,1,1,"Injuries","Black","Female","North Carolina",1989,"South Atlantic","South","NC",40.1941291783111,42.3329331892197,44.6457855747714,42.3262473624958
+"504",33,21,1,1,"Non-communicable","Black","Female","North Carolina",1989,"South Atlantic","South","NC",86.7378288778359,91.3992501005063,95.9023001368165,91.3580238924781
+"505",33,22,0,0,"All other causes","White","Male","North Carolina",1990,"South Atlantic","South","NC",117.838603694577,121.387501481364,125.073481128155,121.398969016623
+"506",33,22,0,0,"Cancers","White","Male","North Carolina",1990,"South Atlantic","South","NC",272.609197820428,277.93235081525,283.210142693466,277.960864900191
+"507",33,22,0,0,"Cardiovascular","White","Male","North Carolina",1990,"South Atlantic","South","NC",524.040212801123,534.125324978506,544.010027691222,534.014223589541
+"508",33,22,0,0,"Communicable","White","Male","North Carolina",1990,"South Atlantic","South","NC",65.1033631710323,68.6213935021932,72.4265552242604,68.6312129233901
+"509",33,22,0,0,"Injuries","White","Male","North Carolina",1990,"South Atlantic","South","NC",92.1577763723647,94.3141772039869,96.6311369759309,94.316700154712
+"510",33,22,0,0,"Non-communicable","White","Male","North Carolina",1990,"South Atlantic","South","NC",112.025543072355,115.315802025089,118.877181949465,115.388144658347
+"511",33,22,0,1,"All other causes","White","Female","North Carolina",1990,"South Atlantic","South","NC",88.1171598801869,90.7177127816454,93.3544863227292,90.7065099156157
+"512",33,22,0,1,"Cancers","White","Female","North Carolina",1990,"South Atlantic","South","NC",157.410077145398,160.096929739939,162.905699122671,160.090770130763
+"513",33,22,0,1,"Cardiovascular","White","Female","North Carolina",1990,"South Atlantic","South","NC",322.016701162284,327.356511572247,332.589461902201,327.325152272934
+"514",33,22,0,1,"Communicable","White","Female","North Carolina",1990,"South Atlantic","South","NC",38.9034336740633,40.6709279143886,42.630627302511,40.7209908387997
+"515",33,22,0,1,"Injuries","White","Female","North Carolina",1990,"South Atlantic","South","NC",34.1947730214599,35.2897502098035,36.4452224915791,35.3129898212164
+"516",33,22,0,1,"Non-communicable","White","Female","North Carolina",1990,"South Atlantic","South","NC",61.9947515578984,64.0022066457233,66.084189431109,64.0161388097555
+"517",33,22,1,0,"All other causes","Black","Male","North Carolina",1990,"South Atlantic","South","NC",199.859567277818,208.440941154264,216.97606762295,208.449435363511
+"518",33,22,1,0,"Cancers","Black","Male","North Carolina",1990,"South Atlantic","South","NC",385.490556379036,396.949200019127,408.996962410989,396.751108761222
+"519",33,22,1,0,"Cardiovascular","Black","Male","North Carolina",1990,"South Atlantic","South","NC",653.205556212689,670.641929036299,689.325844476122,670.643498350635
+"520",33,22,1,0,"Communicable","Black","Male","North Carolina",1990,"South Atlantic","South","NC",108.946238894378,116.572161630855,124.310150381355,116.601345667433
+"521",33,22,1,0,"Injuries","Black","Male","North Carolina",1990,"South Atlantic","South","NC",149.404677255207,155.331252714193,161.620117684599,155.377856785197
+"522",33,22,1,0,"Non-communicable","Black","Male","North Carolina",1990,"South Atlantic","South","NC",139.380025946059,146.781394307403,153.831233109089,146.680505809718
+"523",33,22,1,1,"All other causes","Black","Female","North Carolina",1990,"South Atlantic","South","NC",129.946335006375,135.236994096528,140.450158592699,135.292783117483
+"524",33,22,1,1,"Cancers","Black","Female","North Carolina",1990,"South Atlantic","South","NC",181.44783335028,186.608579902065,192.204829502006,186.69756765933
+"525",33,22,1,1,"Cardiovascular","Black","Female","North Carolina",1990,"South Atlantic","South","NC",415.272629882194,426.466030883024,438.370709974166,426.636944396786
+"526",33,22,1,1,"Communicable","Black","Female","North Carolina",1990,"South Atlantic","South","NC",51.3009093324517,54.9241701104169,58.5119349709516,54.9222983185359
+"527",33,22,1,1,"Injuries","Black","Female","North Carolina",1990,"South Atlantic","South","NC",38.9006032373331,40.8272213409903,43.0247444330517,40.876810463343
+"528",33,22,1,1,"Non-communicable","Black","Female","North Carolina",1990,"South Atlantic","South","NC",88.3528161751792,92.6329923573049,97.1792564291089,92.6875489362266
+"529",33,23,0,0,"All other causes","White","Male","North Carolina",1991,"South Atlantic","South","NC",120.127465915322,124.157772245329,128.041235070919,124.131636605928
+"530",33,23,0,0,"Cancers","White","Male","North Carolina",1991,"South Atlantic","South","NC",269.152427445292,274.045756126613,278.983514248057,274.008827779849
+"531",33,23,0,0,"Cardiovascular","White","Male","North Carolina",1991,"South Atlantic","South","NC",510.697623867458,520.434952484345,529.407699158669,520.43790850345
+"532",33,23,0,0,"Communicable","White","Male","North Carolina",1991,"South Atlantic","South","NC",65.0004226982731,68.4759386208888,72.0829153299454,68.4868542307151
+"533",33,23,0,0,"Injuries","White","Male","North Carolina",1991,"South Atlantic","South","NC",89.3813732485107,91.55353172087,93.7949488426133,91.5517245828558
+"534",33,23,0,0,"Non-communicable","White","Male","North Carolina",1991,"South Atlantic","South","NC",114.151589380447,117.519600909678,121.088058560866,117.538366980302
+"535",33,23,0,1,"All other causes","White","Female","North Carolina",1991,"South Atlantic","South","NC",89.5733598195372,91.9342885173636,94.4107036854159,91.9527643910769
+"536",33,23,0,1,"Cancers","White","Female","North Carolina",1991,"South Atlantic","South","NC",157.105510746673,160.057160460175,162.718928545928,160.006645815924
+"537",33,23,0,1,"Cardiovascular","White","Female","North Carolina",1991,"South Atlantic","South","NC",318.455649353671,324.363194059336,329.61874917308,324.220181976475
+"538",33,23,0,1,"Communicable","White","Female","North Carolina",1991,"South Atlantic","South","NC",38.1796830669641,39.9017367500874,41.5393356450602,39.8884955490099
+"539",33,23,0,1,"Injuries","White","Female","North Carolina",1991,"South Atlantic","South","NC",33.2767759014915,34.3212802789123,35.517805841271,34.3549915386515
+"540",33,23,0,1,"Non-communicable","White","Female","North Carolina",1991,"South Atlantic","South","NC",65.2633542429027,67.3831242141556,69.6093431182288,67.4016613819477
+"541",33,23,1,0,"All other causes","Black","Male","North Carolina",1991,"South Atlantic","South","NC",196.218337573388,204.684157805086,212.536553285813,204.61641275805
+"542",33,23,1,0,"Cancers","Black","Male","North Carolina",1991,"South Atlantic","South","NC",388.922130242657,401.150705175442,413.957770601849,401.182376850089
+"543",33,23,1,0,"Cardiovascular","Black","Male","North Carolina",1991,"South Atlantic","South","NC",637.909000545377,656.498794974798,675.791225222385,656.370212076281
+"544",33,23,1,0,"Communicable","Black","Male","North Carolina",1991,"South Atlantic","South","NC",118.115159875332,125.328503387334,132.831752613612,125.292937317579
+"545",33,23,1,0,"Injuries","Black","Male","North Carolina",1991,"South Atlantic","South","NC",144.496037174702,150.392114958231,156.6102503206,150.397265748527
+"546",33,23,1,0,"Non-communicable","Black","Male","North Carolina",1991,"South Atlantic","South","NC",142.022966159181,149.145479535146,156.30438873928,149.141922449164
+"547",33,23,1,1,"All other causes","Black","Female","North Carolina",1991,"South Atlantic","South","NC",130.670775353543,135.615224718348,141.065704476979,135.703733713129
+"548",33,23,1,1,"Cancers","Black","Female","North Carolina",1991,"South Atlantic","South","NC",181.531019452852,186.806929321888,192.633358938341,186.862097539318
+"549",33,23,1,1,"Cardiovascular","Black","Female","North Carolina",1991,"South Atlantic","South","NC",414.522342756857,427.531445655833,439.681466077677,427.497942371454
+"550",33,23,1,1,"Communicable","Black","Female","North Carolina",1991,"South Atlantic","South","NC",52.2840755410562,55.5638429350474,59.200021846197,55.6078548372855
+"551",33,23,1,1,"Injuries","Black","Female","North Carolina",1991,"South Atlantic","South","NC",37.9990092433027,39.8331910379281,41.99586637638,39.8549346355897
+"552",33,23,1,1,"Non-communicable","Black","Female","North Carolina",1991,"South Atlantic","South","NC",91.8585270418212,95.7677880036317,100.392793779637,95.8644031685149
+"553",33,24,0,0,"All other causes","White","Male","North Carolina",1992,"South Atlantic","South","NC",121.335031918058,125.010243322341,128.922327521817,125.092011993815
+"554",33,24,0,0,"Cancers","White","Male","North Carolina",1992,"South Atlantic","South","NC",269.537544673706,274.367185302001,279.744853254881,274.46600939099
+"555",33,24,0,0,"Cardiovascular","White","Male","North Carolina",1992,"South Atlantic","South","NC",495.545706366704,504.508141029697,513.012621221052,504.439105623022
+"556",33,24,0,0,"Communicable","White","Male","North Carolina",1992,"South Atlantic","South","NC",66.3567523941104,69.8571365346888,73.3007948701043,69.834132365424
+"557",33,24,0,0,"Injuries","White","Male","North Carolina",1992,"South Atlantic","South","NC",86.4282563507609,88.7043441104941,91.039732350366,88.6900923849273
+"558",33,24,0,0,"Non-communicable","White","Male","North Carolina",1992,"South Atlantic","South","NC",115.715652016994,118.796895220783,122.126781775521,118.817668289962
+"559",33,24,0,1,"All other causes","White","Female","North Carolina",1992,"South Atlantic","South","NC",90.6479834574453,93.1033438599856,95.5742947647973,93.100764811905
+"560",33,24,0,1,"Cancers","White","Female","North Carolina",1992,"South Atlantic","South","NC",158.549235725413,161.270613073417,163.890983084983,161.239077079489
+"561",33,24,0,1,"Cardiovascular","White","Female","North Carolina",1992,"South Atlantic","South","NC",309.273103707455,314.845619036045,320.29698593605,314.87620922335
+"562",33,24,0,1,"Communicable","White","Female","North Carolina",1992,"South Atlantic","South","NC",37.723145830146,39.3251193133892,41.0469522204701,39.3307095384876
+"563",33,24,0,1,"Injuries","White","Female","North Carolina",1992,"South Atlantic","South","NC",32.609213535109,33.8234180981523,34.9132351554153,33.8300369624911
+"564",33,24,0,1,"Non-communicable","White","Female","North Carolina",1992,"South Atlantic","South","NC",64.6407173853181,66.7964766737276,68.8236518252085,66.8040899551153
+"565",33,24,1,0,"All other causes","Black","Male","North Carolina",1992,"South Atlantic","South","NC",195.237276538059,202.860730411987,211.303220519192,203.011977813454
+"566",33,24,1,0,"Cancers","Black","Male","North Carolina",1992,"South Atlantic","South","NC",389.482045797913,402.206370199722,415.180431011211,402.164436499732
+"567",33,24,1,0,"Cardiovascular","Black","Male","North Carolina",1992,"South Atlantic","South","NC",620.736394704885,639.230182346721,657.138458518818,639.111177372652
+"568",33,24,1,0,"Communicable","Black","Male","North Carolina",1992,"South Atlantic","South","NC",121.979452579862,129.571452735361,137.449857915314,129.602571322464
+"569",33,24,1,0,"Injuries","Black","Male","North Carolina",1992,"South Atlantic","South","NC",140.513335555721,146.002968874661,151.478326213126,146.044690693663
+"570",33,24,1,0,"Non-communicable","Black","Male","North Carolina",1992,"South Atlantic","South","NC",143.034757798901,150.159331562421,157.125006058294,150.276309408667
+"571",33,24,1,1,"All other causes","Black","Female","North Carolina",1992,"South Atlantic","South","NC",129.413143527213,134.374922482912,139.760783460493,134.434609096737
+"572",33,24,1,1,"Cancers","Black","Female","North Carolina",1992,"South Atlantic","South","NC",183.50123697406,188.817322471785,194.035616802986,188.812877995873
+"573",33,24,1,1,"Cardiovascular","Black","Female","North Carolina",1992,"South Atlantic","South","NC",413.855729407677,425.230444521904,436.033490532616,425.103387943197
+"574",33,24,1,1,"Communicable","Black","Female","North Carolina",1992,"South Atlantic","South","NC",52.4365067926719,56.0123679438763,59.4080607833386,55.971299496733
+"575",33,24,1,1,"Injuries","Black","Female","North Carolina",1992,"South Atlantic","South","NC",37.2321943051477,39.225350517685,41.384011708938,39.2114303783982
+"576",33,24,1,1,"Non-communicable","Black","Female","North Carolina",1992,"South Atlantic","South","NC",93.1775462834791,97.5434265011711,102.295455081615,97.6919314163201
+"577",33,25,0,0,"All other causes","White","Male","North Carolina",1993,"South Atlantic","South","NC",121.878767346453,125.514614293271,129.290821794491,125.499039953899
+"578",33,25,0,0,"Cancers","White","Male","North Carolina",1993,"South Atlantic","South","NC",270.327723079576,275.550921261175,280.594623846058,275.569660773757
+"579",33,25,0,0,"Cardiovascular","White","Male","North Carolina",1993,"South Atlantic","South","NC",494.820869152335,503.443277612471,512.656688359233,503.4832402892
+"580",33,25,0,0,"Communicable","White","Male","North Carolina",1993,"South Atlantic","South","NC",70.3760410646586,73.8075110532682,77.3413592947969,73.7662454745729
+"581",33,25,0,0,"Injuries","White","Male","North Carolina",1993,"South Atlantic","South","NC",85.1584240472281,87.4833562164033,89.6617182856352,87.4747207956694
+"582",33,25,0,0,"Non-communicable","White","Male","North Carolina",1993,"South Atlantic","South","NC",118.64369723408,121.8317337581,125.166045584104,121.817200611663
+"583",33,25,0,1,"All other causes","White","Female","North Carolina",1993,"South Atlantic","South","NC",93.2003963224931,95.7226011194623,98.2518534166351,95.7249202715275
+"584",33,25,0,1,"Cancers","White","Female","North Carolina",1993,"South Atlantic","South","NC",159.1005515724,162.005641152882,164.597070493273,161.945661372426
+"585",33,25,0,1,"Cardiovascular","White","Female","North Carolina",1993,"South Atlantic","South","NC",305.547610910572,310.964144049625,316.010914048204,310.859293442413
+"586",33,25,0,1,"Communicable","White","Female","North Carolina",1993,"South Atlantic","South","NC",41.2945855999196,42.9669564314247,44.6302293934445,42.9773697121796
+"587",33,25,0,1,"Injuries","White","Female","North Carolina",1993,"South Atlantic","South","NC",32.4295999014077,33.550324388076,34.6668072627725,33.5391581188072
+"588",33,25,0,1,"Non-communicable","White","Female","North Carolina",1993,"South Atlantic","South","NC",68.1286936502462,70.2990891799931,72.5572851364348,70.3206375312155
+"589",33,25,1,0,"All other causes","Black","Male","North Carolina",1993,"South Atlantic","South","NC",196.548215609076,204.168416881444,212.636391854549,204.240131284795
+"590",33,25,1,0,"Cancers","Black","Male","North Carolina",1993,"South Atlantic","South","NC",389.018239006723,401.177262047586,413.453929963379,401.150215374461
+"591",33,25,1,0,"Cardiovascular","Black","Male","North Carolina",1993,"South Atlantic","South","NC",618.661263704104,635.111906475446,653.909630101729,635.224014835586
+"592",33,25,1,0,"Communicable","Black","Male","North Carolina",1993,"South Atlantic","South","NC",133.193249132637,141.155906799007,149.403224507223,141.179213766753
+"593",33,25,1,0,"Injuries","Black","Male","North Carolina",1993,"South Atlantic","South","NC",137.355424620753,142.585681229407,147.850092783969,142.509519067376
+"594",33,25,1,0,"Non-communicable","Black","Male","North Carolina",1993,"South Atlantic","South","NC",146.954397905354,154.754069669649,161.865983935257,154.668338950276
+"595",33,25,1,1,"All other causes","Black","Female","North Carolina",1993,"South Atlantic","South","NC",130.157616728782,134.988416501509,140.093386410636,135.02378112042
+"596",33,25,1,1,"Cancers","Black","Female","North Carolina",1993,"South Atlantic","South","NC",185.535530181979,190.058341888671,195.517923697287,190.209568004881
+"597",33,25,1,1,"Cardiovascular","Black","Female","North Carolina",1993,"South Atlantic","South","NC",398.934866259336,410.934605363106,422.987368384302,410.828894579267
+"598",33,25,1,1,"Communicable","Black","Female","North Carolina",1993,"South Atlantic","South","NC",54.8439138834097,58.3912929334409,62.0343558181142,58.3184454960006
+"599",33,25,1,1,"Injuries","Black","Female","North Carolina",1993,"South Atlantic","South","NC",36.9402029667386,38.78996065666,40.8408229607315,38.8290169665926
+"600",33,25,1,1,"Non-communicable","Black","Female","North Carolina",1993,"South Atlantic","South","NC",95.2201081844223,99.6702309885425,104.086777358961,99.7045879720297
+"601",33,26,0,0,"All other causes","White","Male","North Carolina",1994,"South Atlantic","South","NC",123.003004712206,126.549716448619,130.369922986667,126.599991952876
+"602",33,26,0,0,"Cancers","White","Male","North Carolina",1994,"South Atlantic","South","NC",266.576408131007,271.804788487543,276.831248385622,271.868268543773
+"603",33,26,0,0,"Cardiovascular","White","Male","North Carolina",1994,"South Atlantic","South","NC",484.953147740184,492.846448262836,501.595766038232,493.037662104702
+"604",33,26,0,0,"Communicable","White","Male","North Carolina",1994,"South Atlantic","South","NC",69.0285566668257,72.4030419022867,76.1124960778238,72.4629441863164
+"605",33,26,0,0,"Injuries","White","Male","North Carolina",1994,"South Atlantic","South","NC",84.0751670959186,86.2791119636706,88.4447185879305,86.2384858827306
+"606",33,26,0,0,"Non-communicable","White","Male","North Carolina",1994,"South Atlantic","South","NC",116.334013512341,119.458375298102,122.909604860327,119.542756364167
+"607",33,26,0,1,"All other causes","White","Female","North Carolina",1994,"South Atlantic","South","NC",93.3080468222368,95.8099247752766,98.2597710328621,95.8092611292131
+"608",33,26,0,1,"Cancers","White","Female","North Carolina",1994,"South Atlantic","South","NC",158.701016908174,161.341429779224,163.988038916963,161.349606667073
+"609",33,26,0,1,"Cardiovascular","White","Female","North Carolina",1994,"South Atlantic","South","NC",301.5680321001,306.6795479267,311.787107315552,306.692356738736
+"610",33,26,0,1,"Communicable","White","Female","North Carolina",1994,"South Atlantic","South","NC",39.3913723169915,41.0796630085497,42.7891946264949,41.0882325240916
+"611",33,26,0,1,"Injuries","White","Female","North Carolina",1994,"South Atlantic","South","NC",32.8546777177317,33.9205606477009,35.1368216932762,33.9422447175432
+"612",33,26,0,1,"Non-communicable","White","Female","North Carolina",1994,"South Atlantic","South","NC",69.7529418480306,71.9048785455587,74.0553138056687,71.8851149652113
+"613",33,26,1,0,"All other causes","Black","Male","North Carolina",1994,"South Atlantic","South","NC",193.814469792464,201.338411457015,209.788065023746,201.491652582386
+"614",33,26,1,0,"Cancers","Black","Male","North Carolina",1994,"South Atlantic","South","NC",389.624435104571,401.169351654661,413.950909777962,401.26156491698
+"615",33,26,1,0,"Cardiovascular","Black","Male","North Carolina",1994,"South Atlantic","South","NC",613.971504106111,631.598833934456,650.261178659979,631.687587086811
+"616",33,26,1,0,"Communicable","Black","Male","North Carolina",1994,"South Atlantic","South","NC",141.803744581531,149.716100865369,157.66890424774,149.738971288363
+"617",33,26,1,0,"Injuries","Black","Male","North Carolina",1994,"South Atlantic","South","NC",132.427771707805,137.725996818764,143.001497178621,137.706519848096
+"618",33,26,1,0,"Non-communicable","Black","Male","North Carolina",1994,"South Atlantic","South","NC",148.128467672596,155.262328977079,162.745357776115,155.284925809858
+"619",33,26,1,1,"All other causes","Black","Female","North Carolina",1994,"South Atlantic","South","NC",131.023051213074,136.045097975269,141.265855401301,136.069079813105
+"620",33,26,1,1,"Cancers","Black","Female","North Carolina",1994,"South Atlantic","South","NC",186.813162067005,191.672616008784,197.566693947369,191.861451041869
+"621",33,26,1,1,"Cardiovascular","Black","Female","North Carolina",1994,"South Atlantic","South","NC",397.939228772908,409.327525575328,420.670535717048,409.269820840622
+"622",33,26,1,1,"Communicable","Black","Female","North Carolina",1994,"South Atlantic","South","NC",58.0199454779294,61.5668363144733,64.9873645869064,61.615058102648
+"623",33,26,1,1,"Injuries","Black","Female","North Carolina",1994,"South Atlantic","South","NC",36.7584428909646,38.6650713257884,40.7131788327953,38.6762110628014
+"624",33,26,1,1,"Non-communicable","Black","Female","North Carolina",1994,"South Atlantic","South","NC",96.366800621488,100.632489220918,105.299511737237,100.60841713185
+"625",33,27,0,0,"All other causes","White","Male","North Carolina",1995,"South Atlantic","South","NC",122.280395401642,126.064246839188,129.537731268117,126.023359744637
+"626",33,27,0,0,"Cancers","White","Male","North Carolina",1995,"South Atlantic","South","NC",264.205300155733,268.787856808755,273.353963767642,268.836200118788
+"627",33,27,0,0,"Cardiovascular","White","Male","North Carolina",1995,"South Atlantic","South","NC",474.235722156586,482.74680633105,491.916507150673,482.902948637972
+"628",33,27,0,0,"Communicable","White","Male","North Carolina",1995,"South Atlantic","South","NC",71.7199246321224,75.0794159967033,78.8390278948746,75.1920722908842
+"629",33,27,0,0,"Injuries","White","Male","North Carolina",1995,"South Atlantic","South","NC",83.0707077735576,85.2806829503727,87.4469217745054,85.2824206404301
+"630",33,27,0,0,"Non-communicable","White","Male","North Carolina",1995,"South Atlantic","South","NC",119.288592975606,122.771446866319,126.327341323327,122.711140850594
+"631",33,27,0,1,"All other causes","White","Female","North Carolina",1995,"South Atlantic","South","NC",96.29892765647,98.8533741289237,101.509968733137,98.8768512274154
+"632",33,27,0,1,"Cancers","White","Female","North Carolina",1995,"South Atlantic","South","NC",157.201453783954,159.777692538204,162.458751101975,159.782426901816
+"633",33,27,0,1,"Cardiovascular","White","Female","North Carolina",1995,"South Atlantic","South","NC",297.459174260296,302.254430691923,306.881250146829,302.262708795686
+"634",33,27,0,1,"Communicable","White","Female","North Carolina",1995,"South Atlantic","South","NC",41.2622409977726,42.9588977476537,44.6656925046056,42.9663177269064
+"635",33,27,0,1,"Injuries","White","Female","North Carolina",1995,"South Atlantic","South","NC",32.9985162667185,34.1019078702659,35.2307214366707,34.0987481392999
+"636",33,27,0,1,"Non-communicable","White","Female","North Carolina",1995,"South Atlantic","South","NC",72.5920164636333,74.7869874495614,76.9352828336626,74.7778703425804
+"637",33,27,1,0,"All other causes","Black","Male","North Carolina",1995,"South Atlantic","South","NC",190.979985348416,198.133343310059,205.689982287214,198.151400647158
+"638",33,27,1,0,"Cancers","Black","Male","North Carolina",1995,"South Atlantic","South","NC",385.2747296608,397.019845149729,409.340286633441,397.352922300464
+"639",33,27,1,0,"Cardiovascular","Black","Male","North Carolina",1995,"South Atlantic","South","NC",600.338867645978,617.238457800135,634.682456501968,617.658897254486
+"640",33,27,1,0,"Communicable","Black","Male","North Carolina",1995,"South Atlantic","South","NC",144.97990926311,152.533746783724,161.605860309271,152.647112405154
+"641",33,27,1,0,"Injuries","Black","Male","North Carolina",1995,"South Atlantic","South","NC",127.32763943337,131.823780334387,137.394058020481,131.940758438462
+"642",33,27,1,0,"Non-communicable","Black","Male","North Carolina",1995,"South Atlantic","South","NC",151.288266996927,158.990923044777,166.898450187457,159.10008106774
+"643",33,27,1,1,"All other causes","Black","Female","North Carolina",1995,"South Atlantic","South","NC",132.218856559046,137.128501349814,142.127546586166,137.130498445042
+"644",33,27,1,1,"Cancers","Black","Female","North Carolina",1995,"South Atlantic","South","NC",189.101914698664,194.249232412521,200.198489915466,194.437568807454
+"645",33,27,1,1,"Cardiovascular","Black","Female","North Carolina",1995,"South Atlantic","South","NC",387.923772779463,399.345315312078,410.093428330632,399.292270869573
+"646",33,27,1,1,"Communicable","Black","Female","North Carolina",1995,"South Atlantic","South","NC",57.6007214059631,60.8826936340404,64.5604908267568,60.8944015368473
+"647",33,27,1,1,"Injuries","Black","Female","North Carolina",1995,"South Atlantic","South","NC",35.8309203274778,37.7857329317881,39.5821293172982,37.7758693165418
+"648",33,27,1,1,"Non-communicable","Black","Female","North Carolina",1995,"South Atlantic","South","NC",98.7856262961337,103.087066626042,107.694677657818,103.14809165317
+"649",33,28,0,0,"All other causes","White","Male","North Carolina",1996,"South Atlantic","South","NC",123.453012135235,127.111183758134,131.101207962574,127.126632705635
+"650",33,28,0,0,"Cancers","White","Male","North Carolina",1996,"South Atlantic","South","NC",260.972802089227,265.876332634009,270.839015760822,265.909979526304
+"651",33,28,0,0,"Cardiovascular","White","Male","North Carolina",1996,"South Atlantic","South","NC",458.047841183796,466.793109802851,474.981455471966,466.639741104281
+"652",33,28,0,0,"Communicable","White","Male","North Carolina",1996,"South Atlantic","South","NC",70.2675407069118,73.8077030034459,77.7016406528268,73.8643238072401
+"653",33,28,0,0,"Injuries","White","Male","North Carolina",1996,"South Atlantic","South","NC",83.4504181029499,85.5863730966349,87.6394018001399,85.5592482037149
+"654",33,28,0,0,"Non-communicable","White","Male","North Carolina",1996,"South Atlantic","South","NC",121.640752826653,125.182723855878,128.538161852133,125.196106821541
+"655",33,28,0,1,"All other causes","White","Female","North Carolina",1996,"South Atlantic","South","NC",97.9155203267125,100.509092342396,103.017534118178,100.515347542052
+"656",33,28,0,1,"Cancers","White","Female","North Carolina",1996,"South Atlantic","South","NC",156.904020663941,159.503892845436,162.476497439954,159.551974380996
+"657",33,28,0,1,"Cardiovascular","White","Female","North Carolina",1996,"South Atlantic","South","NC",294.295568258882,298.665978674651,303.635740627917,298.761083484801
+"658",33,28,0,1,"Communicable","White","Female","North Carolina",1996,"South Atlantic","South","NC",41.3088221439416,43.0369563972025,44.6718879575511,43.0369018577108
+"659",33,28,0,1,"Injuries","White","Female","North Carolina",1996,"South Atlantic","South","NC",33.4782867034713,34.571674789181,35.7408643626374,34.5682367369282
+"660",33,28,0,1,"Non-communicable","White","Female","North Carolina",1996,"South Atlantic","South","NC",73.857720876735,76.0150091355596,78.2331144168107,76.0280603769144
+"661",33,28,1,0,"All other causes","Black","Male","North Carolina",1996,"South Atlantic","South","NC",188.011223976774,195.489591523695,203.844737798161,195.522470380211
+"662",33,28,1,0,"Cancers","Black","Male","North Carolina",1996,"South Atlantic","South","NC",380.026209259168,391.32464650477,402.944487077817,391.282836433672
+"663",33,28,1,0,"Cardiovascular","Black","Male","North Carolina",1996,"South Atlantic","South","NC",597.241781987646,614.442165223586,632.488967617382,614.648136427259
+"664",33,28,1,0,"Communicable","Black","Male","North Carolina",1996,"South Atlantic","South","NC",136.783813006894,145.476138839685,154.011362165777,145.490314432346
+"665",33,28,1,0,"Injuries","Black","Male","North Carolina",1996,"South Atlantic","South","NC",119.189712251946,124.200504684449,128.944836445267,124.15910945378
+"666",33,28,1,0,"Non-communicable","Black","Male","North Carolina",1996,"South Atlantic","South","NC",154.317937230784,161.69070497571,168.49386789433,161.581142212445
+"667",33,28,1,1,"All other causes","Black","Female","North Carolina",1996,"South Atlantic","South","NC",133.319840687361,138.62605709928,143.87363322817,138.650018247834
+"668",33,28,1,1,"Cancers","Black","Female","North Carolina",1996,"South Atlantic","South","NC",188.480253024212,193.800350277972,199.208262719951,193.881722752949
+"669",33,28,1,1,"Cardiovascular","Black","Female","North Carolina",1996,"South Atlantic","South","NC",390.915222588217,402.440908297036,413.235069189888,402.554499512113
+"670",33,28,1,1,"Communicable","Black","Female","North Carolina",1996,"South Atlantic","South","NC",56.9641190353038,60.2749039235704,63.8784207730105,60.3083612980829
+"671",33,28,1,1,"Injuries","Black","Female","North Carolina",1996,"South Atlantic","South","NC",35.090090023114,37.0151113073209,38.9322902328073,37.0333324918224
+"672",33,28,1,1,"Non-communicable","Black","Female","North Carolina",1996,"South Atlantic","South","NC",101.080323207465,105.55568747732,110.311040012094,105.604008749214
+"673",33,29,0,0,"All other causes","White","Male","North Carolina",1997,"South Atlantic","South","NC",127.39000001965,131.131402104324,134.711716639342,131.067179988341
+"674",33,29,0,0,"Cancers","White","Male","North Carolina",1997,"South Atlantic","South","NC",257.12249404013,261.746734133807,266.356987409823,261.747376445079
+"675",33,29,0,0,"Cardiovascular","White","Male","North Carolina",1997,"South Atlantic","South","NC",442.903801568157,450.946412028743,458.511253955503,450.907638926614
+"676",33,29,0,0,"Communicable","White","Male","North Carolina",1997,"South Atlantic","South","NC",63.1874180282202,66.2675373713301,69.4045441066921,66.2411359621969
+"677",33,29,0,0,"Injuries","White","Male","North Carolina",1997,"South Atlantic","South","NC",83.3011138402608,85.5780872895846,87.7580785849645,85.5721861768325
+"678",33,29,0,0,"Non-communicable","White","Male","North Carolina",1997,"South Atlantic","South","NC",123.412726377622,126.811149820884,130.354931399568,126.817045083994
+"679",33,29,0,1,"All other causes","White","Female","North Carolina",1997,"South Atlantic","South","NC",101.933608464763,104.391385213757,106.96667196333,104.410079363191
+"680",33,29,0,1,"Cancers","White","Female","North Carolina",1997,"South Atlantic","South","NC",155.755794500206,158.387570470876,161.063817441171,158.405744477393
+"681",33,29,0,1,"Cardiovascular","White","Female","North Carolina",1997,"South Atlantic","South","NC",286.39758754455,291.191089292485,295.91745384458,291.242351717267
+"682",33,29,0,1,"Communicable","White","Female","North Carolina",1997,"South Atlantic","South","NC",40.2521488008367,41.8830028050196,43.457459760348,41.8557644936779
+"683",33,29,0,1,"Injuries","White","Female","North Carolina",1997,"South Atlantic","South","NC",33.3632716787623,34.5131088491115,35.6327200355022,34.5216099914024
+"684",33,29,0,1,"Non-communicable","White","Female","North Carolina",1997,"South Atlantic","South","NC",77.0170069336263,79.1143365009394,81.4135969927943,79.157050666755
+"685",33,29,1,0,"All other causes","Black","Male","North Carolina",1997,"South Atlantic","South","NC",189.086815278115,196.682192557131,204.514362063734,196.759240811478
+"686",33,29,1,0,"Cancers","Black","Male","North Carolina",1997,"South Atlantic","South","NC",370.649645548053,382.575396524619,393.431372597868,382.416809181671
+"687",33,29,1,0,"Cardiovascular","Black","Male","North Carolina",1997,"South Atlantic","South","NC",562.95603261199,578.574275646935,594.929194875958,578.861135045878
+"688",33,29,1,0,"Communicable","Black","Male","North Carolina",1997,"South Atlantic","South","NC",120.411826304485,128.603242984227,136.448283117061,128.577860941341
+"689",33,29,1,0,"Injuries","Black","Male","North Carolina",1997,"South Atlantic","South","NC",114.562733369787,119.262884590717,124.154664614317,119.355452183597
+"690",33,29,1,0,"Non-communicable","Black","Male","North Carolina",1997,"South Atlantic","South","NC",155.961182406908,163.291642167287,171.037172145116,163.392324877554
+"691",33,29,1,1,"All other causes","Black","Female","North Carolina",1997,"South Atlantic","South","NC",136.987889400588,142.128018905287,147.626495197762,142.174481581468
+"692",33,29,1,1,"Cancers","Black","Female","North Carolina",1997,"South Atlantic","South","NC",186.496733720671,191.621237084509,197.408162046922,191.693830644441
+"693",33,29,1,1,"Cardiovascular","Black","Female","North Carolina",1997,"South Atlantic","South","NC",376.295172213269,386.046902935162,396.284016487185,385.959762893163
+"694",33,29,1,1,"Communicable","Black","Female","North Carolina",1997,"South Atlantic","South","NC",57.9839240288921,61.5753239967243,65.3006465722505,61.5869658292766
+"695",33,29,1,1,"Injuries","Black","Female","North Carolina",1997,"South Atlantic","South","NC",34.3794082058216,36.1370883658784,37.9698898479179,36.1426637356389
+"696",33,29,1,1,"Non-communicable","Black","Female","North Carolina",1997,"South Atlantic","South","NC",101.483474527435,106.171262922422,110.984406835984,106.17994728822
+"697",33,30,0,0,"All other causes","White","Male","North Carolina",1998,"South Atlantic","South","NC",131.560874307022,135.088172703035,138.961453400117,135.112523875996
+"698",33,30,0,0,"Cancers","White","Male","North Carolina",1998,"South Atlantic","South","NC",255.596640979135,260.488526233144,265.36682958621,260.515508357378
+"699",33,30,0,0,"Cardiovascular","White","Male","North Carolina",1998,"South Atlantic","South","NC",429.635568950519,437.438160940944,445.422073333254,437.490052984423
+"700",33,30,0,0,"Communicable","White","Male","North Carolina",1998,"South Atlantic","South","NC",62.7195186147099,65.7940715502885,68.7467092083078,65.7930472025553
+"701",33,30,0,0,"Injuries","White","Male","North Carolina",1998,"South Atlantic","South","NC",84.5366452250754,86.6294101516021,88.7056152761512,86.628523178274
+"702",33,30,0,0,"Non-communicable","White","Male","North Carolina",1998,"South Atlantic","South","NC",126.900705751091,130.330733648073,133.733541786298,130.295027939477
+"703",33,30,0,1,"All other causes","White","Female","North Carolina",1998,"South Atlantic","South","NC",106.483931697547,109.270188818708,111.744823087371,109.225457946666
+"704",33,30,0,1,"Cancers","White","Female","North Carolina",1998,"South Atlantic","South","NC",155.337946789782,157.929957646785,160.390618861254,157.986490818291
+"705",33,30,0,1,"Cardiovascular","White","Female","North Carolina",1998,"South Atlantic","South","NC",283.000521053116,287.969482053037,292.706874140977,287.902954503018
+"706",33,30,0,1,"Communicable","White","Female","North Carolina",1998,"South Atlantic","South","NC",41.1309866472594,42.7486176546264,44.570323715301,42.7879416775487
+"707",33,30,0,1,"Injuries","White","Female","North Carolina",1998,"South Atlantic","South","NC",33.8279626604301,34.8494346585246,36.0309195849152,34.8425507727904
+"708",33,30,0,1,"Non-communicable","White","Female","North Carolina",1998,"South Atlantic","South","NC",78.5963170725666,80.8326017228525,83.0180525689681,80.8556241323664
+"709",33,30,1,0,"All other causes","Black","Male","North Carolina",1998,"South Atlantic","South","NC",191.717080466097,199.9533951205,207.426569584273,199.918826122451
+"710",33,30,1,0,"Cancers","Black","Male","North Carolina",1998,"South Atlantic","South","NC",363.973175827073,375.227373233056,387.85376290994,375.272444668706
+"711",33,30,1,0,"Cardiovascular","Black","Male","North Carolina",1998,"South Atlantic","South","NC",550.671931288182,566.827634174178,582.120501120391,566.56742670184
+"712",33,30,1,0,"Communicable","Black","Male","North Carolina",1998,"South Atlantic","South","NC",111.961798580625,119.323025531672,127.155166499824,119.503540857226
+"713",33,30,1,0,"Injuries","Black","Male","North Carolina",1998,"South Atlantic","South","NC",113.016287340407,117.679122999504,122.436220013888,117.673752683028
+"714",33,30,1,0,"Non-communicable","Black","Male","North Carolina",1998,"South Atlantic","South","NC",161.288197652564,168.40659086354,176.660759058655,168.49881368747
+"715",33,30,1,1,"All other causes","Black","Female","North Carolina",1998,"South Atlantic","South","NC",141.561634713901,147.017647939677,152.728397647068,147.079387750538
+"716",33,30,1,1,"Cancers","Black","Female","North Carolina",1998,"South Atlantic","South","NC",184.028789702185,188.934280222197,194.294462585594,188.981305499592
+"717",33,30,1,1,"Cardiovascular","Black","Female","North Carolina",1998,"South Atlantic","South","NC",376.838724309544,387.235176890869,398.030391444747,387.351244720967
+"718",33,30,1,1,"Communicable","Black","Female","North Carolina",1998,"South Atlantic","South","NC",63.0237446019891,66.7045496598471,70.6182635538165,66.7759533331989
+"719",33,30,1,1,"Injuries","Black","Female","North Carolina",1998,"South Atlantic","South","NC",33.6929160557018,35.3582643422142,37.1297466247566,35.3538413314602
+"720",33,30,1,1,"Non-communicable","Black","Female","North Carolina",1998,"South Atlantic","South","NC",108.101260466099,112.735405575906,117.939142430312,112.793308534911
+"721",33,31,0,0,"All other causes","White","Male","North Carolina",1999,"South Atlantic","South","NC",133.309600200897,136.978226069762,140.435471948345,136.954460064283
+"722",33,31,0,0,"Cancers","White","Male","North Carolina",1999,"South Atlantic","South","NC",253.147702463289,257.50209257877,262.147609184994,257.480214548908
+"723",33,31,0,0,"Cardiovascular","White","Male","North Carolina",1999,"South Atlantic","South","NC",419.247481657561,426.65022348992,434.19463746623,426.684747855684
+"724",33,31,0,0,"Communicable","White","Male","North Carolina",1999,"South Atlantic","South","NC",52.12959444165,54.9108903120576,57.8930746777897,54.9377556830238
+"725",33,31,0,0,"Injuries","White","Male","North Carolina",1999,"South Atlantic","South","NC",85.4561116930931,87.5265498631075,89.5271234818592,87.5493198661811
+"726",33,31,0,0,"Non-communicable","White","Male","North Carolina",1999,"South Atlantic","South","NC",133.590002819353,137.149087647026,140.546579525949,137.121212647099
+"727",33,31,0,1,"All other causes","White","Female","North Carolina",1999,"South Atlantic","South","NC",108.22956508924,110.907853471408,113.329297113842,110.918346893827
+"728",33,31,0,1,"Cancers","White","Female","North Carolina",1999,"South Atlantic","South","NC",156.8947969246,159.465592458201,162.182261623824,159.461769087014
+"729",33,31,0,1,"Cardiovascular","White","Female","North Carolina",1999,"South Atlantic","South","NC",283.568574035286,288.204249550276,293.117964372135,288.283639890373
+"730",33,31,0,1,"Communicable","White","Female","North Carolina",1999,"South Atlantic","South","NC",37.5320416500595,39.097609240548,40.500879113047,39.098179062065
+"731",33,31,0,1,"Injuries","White","Female","North Carolina",1999,"South Atlantic","South","NC",34.2760367669611,35.2911029695665,36.4635554629516,35.3026269527648
+"732",33,31,0,1,"Non-communicable","White","Female","North Carolina",1999,"South Atlantic","South","NC",96.1826521697414,98.7567420239347,101.252274646915,98.7415749262156
+"733",33,31,1,0,"All other causes","Black","Male","North Carolina",1999,"South Atlantic","South","NC",194.732198428983,202.061851790617,209.874490827447,202.043589233499
+"734",33,31,1,0,"Cancers","Black","Male","North Carolina",1999,"South Atlantic","South","NC",358.7933414515,370.356530655186,382.090014060638,370.341490240355
+"735",33,31,1,0,"Cardiovascular","Black","Male","North Carolina",1999,"South Atlantic","South","NC",533.195168142658,548.925210943858,565.390290800136,549.080055079426
+"736",33,31,1,0,"Communicable","Black","Male","North Carolina",1999,"South Atlantic","South","NC",105.28441309569,112.104720473256,118.724224108598,112.289806117296
+"737",33,31,1,0,"Injuries","Black","Male","North Carolina",1999,"South Atlantic","South","NC",109.108973523478,113.641348980621,118.593603568053,113.766142429823
+"738",33,31,1,0,"Non-communicable","Black","Male","North Carolina",1999,"South Atlantic","South","NC",172.561973468348,179.92436848008,188.503057279278,179.9659672514
+"739",33,31,1,1,"All other causes","Black","Female","North Carolina",1999,"South Atlantic","South","NC",138.113136968778,143.458688904895,148.892311904611,143.407488413532
+"740",33,31,1,1,"Cancers","Black","Female","North Carolina",1999,"South Atlantic","South","NC",181.882575989093,187.413806761331,192.579447755716,187.374148959054
+"741",33,31,1,1,"Cardiovascular","Black","Female","North Carolina",1999,"South Atlantic","South","NC",373.864109212301,384.435034198551,395.468503353091,384.454093406174
+"742",33,31,1,1,"Communicable","Black","Female","North Carolina",1999,"South Atlantic","South","NC",59.7052193754287,63.1530604900647,66.9422384807918,63.1674244280388
+"743",33,31,1,1,"Injuries","Black","Female","North Carolina",1999,"South Atlantic","South","NC",33.0042458987552,34.6517303847377,36.3638745142024,34.6466495542994
+"744",33,31,1,1,"Non-communicable","Black","Female","North Carolina",1999,"South Atlantic","South","NC",119.922956407688,124.994405865602,130.563656161158,125.009513436298
+"745",33,32,0,0,"All other causes","White","Male","North Carolina",2000,"South Atlantic","South","NC",138.554265992271,142.137895515246,146.319847485227,142.234153309307
+"746",33,32,0,0,"Cancers","White","Male","North Carolina",2000,"South Atlantic","South","NC",249.631507448134,253.965348086531,258.390484160564,253.973548816219
+"747",33,32,0,0,"Cardiovascular","White","Male","North Carolina",2000,"South Atlantic","South","NC",413.434233567295,421.018622024828,428.990735330048,421.115070556807
+"748",33,32,0,0,"Communicable","White","Male","North Carolina",2000,"South Atlantic","South","NC",48.0576772249312,50.796831615323,53.4000099442983,50.7602726841318
+"749",33,32,0,0,"Injuries","White","Male","North Carolina",2000,"South Atlantic","South","NC",87.3526632196069,89.419123452046,91.5377559693635,89.4068162649966
+"750",33,32,0,0,"Non-communicable","White","Male","North Carolina",2000,"South Atlantic","South","NC",139.086065204981,142.49677747629,146.636098583615,142.556078898808
+"751",33,32,0,1,"All other causes","White","Female","North Carolina",2000,"South Atlantic","South","NC",112.114349797375,114.618434224098,117.456850815429,114.63871328596
+"752",33,32,0,1,"Cancers","White","Female","North Carolina",2000,"South Atlantic","South","NC",156.52598847567,159.079306108387,161.676438369706,159.099608650839
+"753",33,32,0,1,"Cardiovascular","White","Female","North Carolina",2000,"South Atlantic","South","NC",283.317536575923,287.982000388429,292.632632318886,287.975673068989
+"754",33,32,0,1,"Communicable","White","Female","North Carolina",2000,"South Atlantic","South","NC",37.638069502051,39.2509448941273,40.8972489197848,39.2542432154026
+"755",33,32,0,1,"Injuries","White","Female","North Carolina",2000,"South Atlantic","South","NC",35.3194237401118,36.4269535588507,37.5849920627304,36.4517823112264
+"756",33,32,0,1,"Non-communicable","White","Female","North Carolina",2000,"South Atlantic","South","NC",103.848688953382,106.46131473058,109.186123337697,106.452454090219
+"757",33,32,1,0,"All other causes","Black","Male","North Carolina",2000,"South Atlantic","South","NC",195.391722491906,203.000697698832,211.105101309893,203.080033377343
+"758",33,32,1,0,"Cancers","Black","Male","North Carolina",2000,"South Atlantic","South","NC",355.286723139071,366.616859700231,378.760030113831,366.502664416361
+"759",33,32,1,0,"Cardiovascular","Black","Male","North Carolina",2000,"South Atlantic","South","NC",526.700981390169,542.17859798473,558.247923933036,542.264990217327
+"760",33,32,1,0,"Communicable","Black","Male","North Carolina",2000,"South Atlantic","South","NC",102.791152610195,109.427652495448,116.100178061261,109.487493768265
+"761",33,32,1,0,"Injuries","Black","Male","North Carolina",2000,"South Atlantic","South","NC",107.751232002618,111.953337272039,116.762206608407,112.084419312757
+"762",33,32,1,0,"Non-communicable","Black","Male","North Carolina",2000,"South Atlantic","South","NC",178.756520313511,187.295755866121,195.405633648683,187.255539932536
+"763",33,32,1,1,"All other causes","Black","Female","North Carolina",2000,"South Atlantic","South","NC",144.161688928109,149.175863517607,154.828804578818,149.207933432616
+"764",33,32,1,1,"Cancers","Black","Female","North Carolina",2000,"South Atlantic","South","NC",178.393276783849,183.365555359258,188.089020120408,183.326734674726
+"765",33,32,1,1,"Cardiovascular","Black","Female","North Carolina",2000,"South Atlantic","South","NC",373.936095117016,384.511188699531,395.350658293289,384.749321867003
+"766",33,32,1,1,"Communicable","Black","Female","North Carolina",2000,"South Atlantic","South","NC",57.9247080130902,61.3730080518606,65.0629165783041,61.4049387800123
+"767",33,32,1,1,"Injuries","Black","Female","North Carolina",2000,"South Atlantic","South","NC",31.6705245398919,33.4116813094187,35.1342650392663,33.4397896635028
+"768",33,32,1,1,"Non-communicable","Black","Female","North Carolina",2000,"South Atlantic","South","NC",125.015690612405,130.563783304171,136.200962592836,130.712358704034
+"769",33,33,0,0,"All other causes","White","Male","North Carolina",2001,"South Atlantic","South","NC",138.465010095492,142.073757207059,146.0641126545,142.091647999719
+"770",33,33,0,0,"Cancers","White","Male","North Carolina",2001,"South Atlantic","South","NC",244.408997173821,248.842952360653,253.404760027236,248.827825817169
+"771",33,33,0,0,"Cardiovascular","White","Male","North Carolina",2001,"South Atlantic","South","NC",391.02916023123,398.282632318352,405.215487705078,398.194693867463
+"772",33,33,0,0,"Communicable","White","Male","North Carolina",2001,"South Atlantic","South","NC",49.1107710809287,51.6383980490585,54.3109095211963,51.6710679205556
+"773",33,33,0,0,"Injuries","White","Male","North Carolina",2001,"South Atlantic","South","NC",88.1493141854953,90.3851144441772,92.5062803808595,90.3611191357739
+"774",33,33,0,0,"Non-communicable","White","Male","North Carolina",2001,"South Atlantic","South","NC",138.584533626852,142.066133610341,145.729400290449,142.096044650408
+"775",33,33,0,1,"All other causes","White","Female","North Carolina",2001,"South Atlantic","South","NC",113.831115917482,116.451955335681,119.23004038517,116.491522949035
+"776",33,33,0,1,"Cancers","White","Female","North Carolina",2001,"South Atlantic","South","NC",156.540125177365,159.214472839422,161.88240679915,159.197006618366
+"777",33,33,0,1,"Cardiovascular","White","Female","North Carolina",2001,"South Atlantic","South","NC",264.633659916452,269.130557113877,273.415391437295,269.113673336933
+"778",33,33,0,1,"Communicable","White","Female","North Carolina",2001,"South Atlantic","South","NC",36.0124490995897,37.5124841400854,39.0960716038343,37.5175001755057
+"779",33,33,0,1,"Injuries","White","Female","North Carolina",2001,"South Atlantic","South","NC",36.2741292435263,37.4211592188933,38.5252487406697,37.4093106950726
+"780",33,33,0,1,"Non-communicable","White","Female","North Carolina",2001,"South Atlantic","South","NC",104.215877832452,107.007254012557,109.599357353054,106.959552173591
+"781",33,33,1,0,"All other causes","Black","Male","North Carolina",2001,"South Atlantic","South","NC",196.107414071222,203.625849303615,211.574397445319,203.64112396722
+"782",33,33,1,0,"Cancers","Black","Male","North Carolina",2001,"South Atlantic","South","NC",345.669927567495,356.681556618028,368.569941272517,356.773508681813
+"783",33,33,1,0,"Cardiovascular","Black","Male","North Carolina",2001,"South Atlantic","South","NC",512.406392384166,527.395520878411,542.799251454379,527.517560739202
+"784",33,33,1,0,"Communicable","Black","Male","North Carolina",2001,"South Atlantic","South","NC",96.114425946222,102.117440184002,108.177493334499,102.184365127156
+"785",33,33,1,0,"Injuries","Black","Male","North Carolina",2001,"South Atlantic","South","NC",102.807172972862,107.158407742807,111.434664312388,107.109426055709
+"786",33,33,1,0,"Non-communicable","Black","Male","North Carolina",2001,"South Atlantic","South","NC",182.634639468071,191.001628812888,199.253655227685,191.063866816319
+"787",33,33,1,1,"All other causes","Black","Female","North Carolina",2001,"South Atlantic","South","NC",148.919320320421,154.223979022786,159.733796110131,154.217728186798
+"788",33,33,1,1,"Cancers","Black","Female","North Carolina",2001,"South Atlantic","South","NC",177.992559220444,182.554808227166,187.525999012186,182.597099373923
+"789",33,33,1,1,"Cardiovascular","Black","Female","North Carolina",2001,"South Atlantic","South","NC",357.993115393495,367.652942201554,378.270096398706,367.862879838475
+"790",33,33,1,1,"Communicable","Black","Female","North Carolina",2001,"South Atlantic","South","NC",55.6596217612046,58.7463712901732,62.2921043669286,58.8002054994022
+"791",33,33,1,1,"Injuries","Black","Female","North Carolina",2001,"South Atlantic","South","NC",30.7494650110641,32.3148631945704,34.0892450235057,32.3575108442948
+"792",33,33,1,1,"Non-communicable","Black","Female","North Carolina",2001,"South Atlantic","South","NC",125.446072811598,130.810225239237,135.995495323535,130.808171588686
+"793",33,34,0,0,"All other causes","White","Male","North Carolina",2002,"South Atlantic","South","NC",140.520240895663,144.135719585323,148.022653788468,144.192342647782
+"794",33,34,0,0,"Cancers","White","Male","North Carolina",2002,"South Atlantic","South","NC",240.523791009673,244.77620097424,249.29396372469,244.790692299235
+"795",33,34,0,0,"Cardiovascular","White","Male","North Carolina",2002,"South Atlantic","South","NC",376.006235175469,382.920950918289,389.891015903027,382.80925835723
+"796",33,34,0,0,"Communicable","White","Male","North Carolina",2002,"South Atlantic","South","NC",49.3050620885848,51.8483231895998,54.6156948979292,51.8459704787815
+"797",33,34,0,0,"Injuries","White","Male","North Carolina",2002,"South Atlantic","South","NC",89.6405006406532,91.835942246917,94.0191301072689,91.8410468843725
+"798",33,34,0,0,"Non-communicable","White","Male","North Carolina",2002,"South Atlantic","South","NC",141.127654533002,144.678960936065,148.318617134856,144.73110762653
+"799",33,34,0,1,"All other causes","White","Female","North Carolina",2002,"South Atlantic","South","NC",119.368123283311,122.001459392163,124.579778738194,122.045964565331
+"800",33,34,0,1,"Cancers","White","Female","North Carolina",2002,"South Atlantic","South","NC",155.718527132295,158.236742417452,160.854879160624,158.236358717879
+"801",33,34,0,1,"Cardiovascular","White","Female","North Carolina",2002,"South Atlantic","South","NC",256.074688484107,260.230554961303,264.370793401745,260.285624609985
+"802",33,34,0,1,"Communicable","White","Female","North Carolina",2002,"South Atlantic","South","NC",37.218245385375,38.6439030883677,40.0803478239396,38.6405849631374
+"803",33,34,0,1,"Injuries","White","Female","North Carolina",2002,"South Atlantic","South","NC",37.7199960210919,38.8547827189302,40.1446734025879,38.876719122027
+"804",33,34,0,1,"Non-communicable","White","Female","North Carolina",2002,"South Atlantic","South","NC",108.603125803701,111.320218806425,113.994882192393,111.318455024172
+"805",33,34,1,0,"All other causes","Black","Male","North Carolina",2002,"South Atlantic","South","NC",191.457091047851,199.774623708313,208.272845968208,199.662477896921
+"806",33,34,1,0,"Cancers","Black","Male","North Carolina",2002,"South Atlantic","South","NC",332.444908755807,343.281021171279,354.573778461588,343.504676203701
+"807",33,34,1,0,"Cardiovascular","Black","Male","North Carolina",2002,"South Atlantic","South","NC",489.078999854012,503.64872701035,516.949464038477,503.508484569054
+"808",33,34,1,0,"Communicable","Black","Male","North Carolina",2002,"South Atlantic","South","NC",95.0979067217059,100.968875014618,107.803870268998,101.078249770825
+"809",33,34,1,0,"Injuries","Black","Male","North Carolina",2002,"South Atlantic","South","NC",101.152241637845,105.324246548852,109.412927155851,105.314789806396
+"810",33,34,1,0,"Non-communicable","Black","Male","North Carolina",2002,"South Atlantic","South","NC",181.199275191342,189.309142079287,197.986130388315,189.309459912179
+"811",33,34,1,1,"All other causes","Black","Female","North Carolina",2002,"South Atlantic","South","NC",146.66391695282,151.811698826236,157.223246888902,151.809435345201
+"812",33,34,1,1,"Cancers","Black","Female","North Carolina",2002,"South Atlantic","South","NC",175.533113109081,180.422012529819,185.272866944159,180.480643426362
+"813",33,34,1,1,"Cardiovascular","Black","Female","North Carolina",2002,"South Atlantic","South","NC",347.311191639851,356.939199891948,367.032016410484,356.973616567692
+"814",33,34,1,1,"Communicable","Black","Female","North Carolina",2002,"South Atlantic","South","NC",55.7811268434521,59.1076783022716,62.4576167539259,59.0649282643702
+"815",33,34,1,1,"Injuries","Black","Female","North Carolina",2002,"South Atlantic","South","NC",30.0982365091348,31.6794512617927,33.4144697633618,31.7009777756269
+"816",33,34,1,1,"Non-communicable","Black","Female","North Carolina",2002,"South Atlantic","South","NC",126.430848479485,131.587498025478,136.752285730536,131.644765327424
+"817",33,35,0,0,"All other causes","White","Male","North Carolina",2003,"South Atlantic","South","NC",144.96599790836,148.806715377567,152.422574615404,148.784928110257
+"818",33,35,0,0,"Cancers","White","Male","North Carolina",2003,"South Atlantic","South","NC",235.682276127722,239.991417649385,244.042342226258,239.890538271341
+"819",33,35,0,0,"Cardiovascular","White","Male","North Carolina",2003,"South Atlantic","South","NC",361.003712305321,367.419584925395,373.86682628483,367.402807567564
+"820",33,35,0,0,"Communicable","White","Male","North Carolina",2003,"South Atlantic","South","NC",49.2836079468845,51.8374734196555,54.4986803517327,51.8287398650062
+"821",33,35,0,0,"Injuries","White","Male","North Carolina",2003,"South Atlantic","South","NC",90.9531222240814,93.1187141254057,95.1986130768107,93.1197287756712
+"822",33,35,0,0,"Non-communicable","White","Male","North Carolina",2003,"South Atlantic","South","NC",141.844275705357,145.163493259263,148.781889687558,145.246991028108
+"823",33,35,0,1,"All other causes","White","Female","North Carolina",2003,"South Atlantic","South","NC",123.026461127851,125.720093625003,128.504787279021,125.712052585279
+"824",33,35,0,1,"Cancers","White","Female","North Carolina",2003,"South Atlantic","South","NC",153.997669526448,156.643214869524,159.072599681126,156.633664743628
+"825",33,35,0,1,"Cardiovascular","White","Female","North Carolina",2003,"South Atlantic","South","NC",248.77644213574,252.59370364754,256.855912826317,252.690018874696
+"826",33,35,0,1,"Communicable","White","Female","North Carolina",2003,"South Atlantic","South","NC",37.7959708137057,39.2710872464692,40.7994757930464,39.2631022352564
+"827",33,35,0,1,"Injuries","White","Female","North Carolina",2003,"South Atlantic","South","NC",38.928688217458,40.2030872357177,41.6501616030058,40.2208901870035
+"828",33,35,0,1,"Non-communicable","White","Female","North Carolina",2003,"South Atlantic","South","NC",110.741949017058,113.404703405463,116.247757925322,113.454429167207
+"829",33,35,1,0,"All other causes","Black","Male","North Carolina",2003,"South Atlantic","South","NC",193.39490316788,201.627522526986,210.045788709118,201.672515177454
+"830",33,35,1,0,"Cancers","Black","Male","North Carolina",2003,"South Atlantic","South","NC",317.219293809464,328.027173237813,339.176735473685,328.063080054243
+"831",33,35,1,0,"Cardiovascular","Black","Male","North Carolina",2003,"South Atlantic","South","NC",471.671146104834,485.364280018671,500.036791837079,485.411375629923
+"832",33,35,1,0,"Communicable","Black","Male","North Carolina",2003,"South Atlantic","South","NC",93.3579347163109,99.4363853200061,106.11452463659,99.4714580766736
+"833",33,35,1,0,"Injuries","Black","Male","North Carolina",2003,"South Atlantic","South","NC",98.7269021305571,102.679070567603,107.064798261772,102.775241538631
+"834",33,35,1,0,"Non-communicable","Black","Male","North Carolina",2003,"South Atlantic","South","NC",177.420568633392,185.645416059259,193.989660242036,185.768794596215
+"835",33,35,1,1,"All other causes","Black","Female","North Carolina",2003,"South Atlantic","South","NC",149.151475522896,154.79940020141,160.718840443806,154.804143289304
+"836",33,35,1,1,"Cancers","Black","Female","North Carolina",2003,"South Atlantic","South","NC",172.758174305917,177.891619373551,182.640222321956,177.803939757483
+"837",33,35,1,1,"Cardiovascular","Black","Female","North Carolina",2003,"South Atlantic","South","NC",338.044816906433,347.735053446375,357.833216996455,347.662396430964
+"838",33,35,1,1,"Communicable","Black","Female","North Carolina",2003,"South Atlantic","South","NC",54.0692361201296,57.4560015735676,60.7217221986314,57.4923495999057
+"839",33,35,1,1,"Injuries","Black","Female","North Carolina",2003,"South Atlantic","South","NC",29.5097089339372,31.2192569618892,32.8141291550051,31.2046220216432
+"840",33,35,1,1,"Non-communicable","Black","Female","North Carolina",2003,"South Atlantic","South","NC",129.841649189313,135.163422651422,140.35205657171,135.179018436925
+"841",33,36,0,0,"All other causes","White","Male","North Carolina",2004,"South Atlantic","South","NC",144.28182115974,147.845244149296,151.613066063084,147.922050180587
+"842",33,36,0,0,"Cancers","White","Male","North Carolina",2004,"South Atlantic","South","NC",232.925385401531,237.392056987974,241.74789065424,237.36833290644
+"843",33,36,0,0,"Cardiovascular","White","Male","North Carolina",2004,"South Atlantic","South","NC",340.146243985356,345.739899964997,351.948175607749,345.782451446981
+"844",33,36,0,0,"Communicable","White","Male","North Carolina",2004,"South Atlantic","South","NC",46.6931571097051,49.0087830365073,51.5277857778844,49.0010743710006
+"845",33,36,0,0,"Injuries","White","Male","North Carolina",2004,"South Atlantic","South","NC",92.3008540062899,94.5399863939979,96.9358802354953,94.5879227945294
+"846",33,36,0,0,"Non-communicable","White","Male","North Carolina",2004,"South Atlantic","South","NC",138.857448154516,142.29548318759,145.803568261223,142.388536012867
+"847",33,36,0,1,"All other causes","White","Female","North Carolina",2004,"South Atlantic","South","NC",123.074863485048,125.864855790236,128.598460501688,125.85712830268
+"848",33,36,0,1,"Cancers","White","Female","North Carolina",2004,"South Atlantic","South","NC",153.136823451597,155.43088525393,157.973563959535,155.501556845771
+"849",33,36,0,1,"Cardiovascular","White","Female","North Carolina",2004,"South Atlantic","South","NC",231.512606047179,235.436531194254,239.483800708805,235.397678820571
+"850",33,36,0,1,"Communicable","White","Female","North Carolina",2004,"South Atlantic","South","NC",34.3770231388671,35.7447775027482,37.1950132563789,35.7516286006311
+"851",33,36,0,1,"Injuries","White","Female","North Carolina",2004,"South Atlantic","South","NC",39.9475263517894,41.097147191322,42.4630557731562,41.1316809225403
+"852",33,36,0,1,"Non-communicable","White","Female","North Carolina",2004,"South Atlantic","South","NC",106.963329005094,109.797141898778,112.423207314142,109.743555592332
+"853",33,36,1,0,"All other causes","Black","Male","North Carolina",2004,"South Atlantic","South","NC",198.188761682819,206.243512224848,215.316014014852,206.287022216969
+"854",33,36,1,0,"Cancers","Black","Male","North Carolina",2004,"South Atlantic","South","NC",310.334939488862,320.500843946422,330.876261188963,320.424033378377
+"855",33,36,1,0,"Cardiovascular","Black","Male","North Carolina",2004,"South Atlantic","South","NC",456.557804276964,469.510743043648,485.067773409284,470.167002395806
+"856",33,36,1,0,"Communicable","Black","Male","North Carolina",2004,"South Atlantic","South","NC",88.7848416583619,95.2347484176056,102.24396479303,95.3043218551592
+"857",33,36,1,0,"Injuries","Black","Male","North Carolina",2004,"South Atlantic","South","NC",97.5146402536473,101.32608452712,105.474458434261,101.360968854856
+"858",33,36,1,0,"Non-communicable","Black","Male","North Carolina",2004,"South Atlantic","South","NC",177.188458515617,185.15144484016,193.440014321044,185.097376503321
+"859",33,36,1,1,"All other causes","Black","Female","North Carolina",2004,"South Atlantic","South","NC",153.713517407507,159.020856171465,164.371330185032,158.991030085797
+"860",33,36,1,1,"Cancers","Black","Female","North Carolina",2004,"South Atlantic","South","NC",172.69746250394,177.357618093279,182.214963687403,177.273800013069
+"861",33,36,1,1,"Cardiovascular","Black","Female","North Carolina",2004,"South Atlantic","South","NC",312.731218463061,322.407020202519,331.614206196977,322.456915187883
+"862",33,36,1,1,"Communicable","Black","Female","North Carolina",2004,"South Atlantic","South","NC",53.2388577532477,56.0658751709295,59.4681789878904,56.1644200751966
+"863",33,36,1,1,"Injuries","Black","Female","North Carolina",2004,"South Atlantic","South","NC",29.2931266476969,30.8210882799713,32.5144374762225,30.8469760653528
+"864",33,36,1,1,"Non-communicable","Black","Female","North Carolina",2004,"South Atlantic","South","NC",131.400772524688,136.719085999016,142.365445379431,136.724791316914
+"865",33,37,0,0,"All other causes","White","Male","North Carolina",2005,"South Atlantic","South","NC",145.772530702237,149.434057085977,153.049414264453,149.44855568268
+"866",33,37,0,0,"Cancers","White","Male","North Carolina",2005,"South Atlantic","South","NC",229.718468401042,233.694664237397,237.936632112152,233.698179205689
+"867",33,37,0,0,"Cardiovascular","White","Male","North Carolina",2005,"South Atlantic","South","NC",330.483748591198,336.17772003824,342.470582194749,336.27044903899
+"868",33,37,0,0,"Communicable","White","Male","North Carolina",2005,"South Atlantic","South","NC",47.531244748582,49.657332301953,52.0723677049661,49.6890015985968
+"869",33,37,0,0,"Injuries","White","Male","North Carolina",2005,"South Atlantic","South","NC",92.7937140542253,95.0060119877941,97.5000130081383,95.0336934184542
+"870",33,37,0,0,"Non-communicable","White","Male","North Carolina",2005,"South Atlantic","South","NC",139.02677401824,142.19821204102,145.732351868253,142.212972054077
+"871",33,37,0,1,"All other causes","White","Female","North Carolina",2005,"South Atlantic","South","NC",128.403083345899,131.074807888218,133.81552595005,131.093712328376
+"872",33,37,0,1,"Cancers","White","Female","North Carolina",2005,"South Atlantic","South","NC",152.095486821217,154.646267305264,157.189901825064,154.618500247747
+"873",33,37,0,1,"Cardiovascular","White","Female","North Carolina",2005,"South Atlantic","South","NC",223.93133883496,227.547875348329,231.13663028998,227.518095246319
+"874",33,37,0,1,"Communicable","White","Female","North Carolina",2005,"South Atlantic","South","NC",35.0585800785373,36.4064654104639,37.8852870629856,36.4152138700692
+"875",33,37,0,1,"Injuries","White","Female","North Carolina",2005,"South Atlantic","South","NC",40.2359681430856,41.4476117211421,42.7818830882123,41.453095096471
+"876",33,37,0,1,"Non-communicable","White","Female","North Carolina",2005,"South Atlantic","South","NC",113.57331214852,116.218201448071,119.203766040993,116.24552242762
+"877",33,37,1,0,"All other causes","Black","Male","North Carolina",2005,"South Atlantic","South","NC",202.353844811454,210.883292759468,219.901182846471,210.944071895884
+"878",33,37,1,0,"Cancers","Black","Male","North Carolina",2005,"South Atlantic","South","NC",305.064579701594,314.175980032892,324.567370401632,314.327261301611
+"879",33,37,1,0,"Cardiovascular","Black","Male","North Carolina",2005,"South Atlantic","South","NC",431.338374527706,444.618451085757,459.278740968842,444.735872583522
+"880",33,37,1,0,"Communicable","Black","Male","North Carolina",2005,"South Atlantic","South","NC",82.8890456477969,88.6076547744249,94.8237345767352,88.567256268368
+"881",33,37,1,0,"Injuries","Black","Male","North Carolina",2005,"South Atlantic","South","NC",97.2804686091348,101.075560478988,105.097507705842,101.100846608077
+"882",33,37,1,0,"Non-communicable","Black","Male","North Carolina",2005,"South Atlantic","South","NC",176.765322063999,185.007488595976,193.858413689236,184.916071513305
+"883",33,37,1,1,"All other causes","Black","Female","North Carolina",2005,"South Atlantic","South","NC",161.186087000013,166.31522491442,172.534580889426,166.513417962988
+"884",33,37,1,1,"Cancers","Black","Female","North Carolina",2005,"South Atlantic","South","NC",170.216060979571,174.887591249974,179.63763835274,174.90903926401
+"885",33,37,1,1,"Cardiovascular","Black","Female","North Carolina",2005,"South Atlantic","South","NC",300.884649877951,310.520031392882,319.428456023282,310.488458526875
+"886",33,37,1,1,"Communicable","Black","Female","North Carolina",2005,"South Atlantic","South","NC",51.9432800107492,54.8934316334417,57.936385862577,54.8783049560651
+"887",33,37,1,1,"Injuries","Black","Female","North Carolina",2005,"South Atlantic","South","NC",28.8712574347121,30.3792912899005,32.0588336020453,30.3934780669721
+"888",33,37,1,1,"Non-communicable","Black","Female","North Carolina",2005,"South Atlantic","South","NC",131.212230574885,136.600826055006,142.059615563374,136.514621766166
+"889",33,38,0,0,"All other causes","White","Male","North Carolina",2006,"South Atlantic","South","NC",147.748117712551,151.243529733913,155.101947017567,151.246658365548
+"890",33,38,0,0,"Cancers","White","Male","North Carolina",2006,"South Atlantic","South","NC",226.54669342425,230.68410687633,234.680227666267,230.673367099417
+"891",33,38,0,0,"Cardiovascular","White","Male","North Carolina",2006,"South Atlantic","South","NC",309.500761522411,314.934317262956,320.26470273924,314.862809145056
+"892",33,38,0,0,"Communicable","White","Male","North Carolina",2006,"South Atlantic","South","NC",42.9890871824432,45.2989838934077,47.3003652887785,45.2401769919739
+"893",33,38,0,0,"Injuries","White","Male","North Carolina",2006,"South Atlantic","South","NC",93.2499310135185,95.4821621078425,97.6493226758597,95.5344609462783
+"894",33,38,0,0,"Non-communicable","White","Male","North Carolina",2006,"South Atlantic","South","NC",135.665192345413,139.102160756323,142.442709961818,139.091940853217
+"895",33,38,0,1,"All other causes","White","Female","North Carolina",2006,"South Atlantic","South","NC",130.931487493927,133.629612661352,136.572662866433,133.70028019422
+"896",33,38,0,1,"Cancers","White","Female","North Carolina",2006,"South Atlantic","South","NC",151.054393478509,153.456965525051,155.858792650066,153.418897896059
+"897",33,38,0,1,"Cardiovascular","White","Female","North Carolina",2006,"South Atlantic","South","NC",206.727042948146,210.128502937297,213.87289078023,210.165195287572
+"898",33,38,0,1,"Communicable","White","Female","North Carolina",2006,"South Atlantic","South","NC",34.1001339767307,35.3860096997329,36.8702476001735,35.4094279207404
+"899",33,38,0,1,"Injuries","White","Female","North Carolina",2006,"South Atlantic","South","NC",40.1280226025877,41.3525279427304,42.6018467322997,41.3469938566081
+"900",33,38,0,1,"Non-communicable","White","Female","North Carolina",2006,"South Atlantic","South","NC",108.804993910472,111.561115663983,114.272330325651,111.578523504982
+"901",33,38,1,0,"All other causes","Black","Male","North Carolina",2006,"South Atlantic","South","NC",201.027060370799,208.833672275919,217.74581164724,208.925111245238
+"902",33,38,1,0,"Cancers","Black","Male","North Carolina",2006,"South Atlantic","South","NC",304.797226033435,313.584065540104,324.046535988453,313.874422822437
+"903",33,38,1,0,"Cardiovascular","Black","Male","North Carolina",2006,"South Atlantic","South","NC",413.742505668946,426.709336533973,440.204657593936,426.786411838534
+"904",33,38,1,0,"Communicable","Black","Male","North Carolina",2006,"South Atlantic","South","NC",75.883991621552,81.0761378224163,86.4485955405544,81.0630103141706
+"905",33,38,1,0,"Injuries","Black","Male","North Carolina",2006,"South Atlantic","South","NC",96.4005950754861,100.166195693192,104.401451714478,100.223038951822
+"906",33,38,1,0,"Non-communicable","Black","Male","North Carolina",2006,"South Atlantic","South","NC",168.272030201223,175.894989669626,184.38009530763,176.050943167547
+"907",33,38,1,1,"All other causes","Black","Female","North Carolina",2006,"South Atlantic","South","NC",160.763216354342,166.348653144568,171.95125280788,166.342627458351
+"908",33,38,1,1,"Cancers","Black","Female","North Carolina",2006,"South Atlantic","South","NC",167.516200611741,172.446099428236,176.997034402583,172.42306314946
+"909",33,38,1,1,"Cardiovascular","Black","Female","North Carolina",2006,"South Atlantic","South","NC",279.355387229796,288.042628487494,296.397418989448,288.044187605444
+"910",33,38,1,1,"Communicable","Black","Female","North Carolina",2006,"South Atlantic","South","NC",49.3994073669408,52.4068878613988,55.5516144396857,52.4401289514706
+"911",33,38,1,1,"Injuries","Black","Female","North Carolina",2006,"South Atlantic","South","NC",27.9608316698173,29.4067996371325,30.9923052349672,29.4363805563688
+"912",33,38,1,1,"Non-communicable","Black","Female","North Carolina",2006,"South Atlantic","South","NC",128.245392240522,133.257209601981,139.117545361143,133.428001351105
+"913",33,39,0,0,"All other causes","White","Male","North Carolina",2007,"South Atlantic","South","NC",149.293066206529,153.085383938008,157.000821080054,153.114322273406
+"914",33,39,0,0,"Cancers","White","Male","North Carolina",2007,"South Atlantic","South","NC",222.830593105223,226.655329941448,230.536708054822,226.698672096693
+"915",33,39,0,0,"Cardiovascular","White","Male","North Carolina",2007,"South Atlantic","South","NC",297.571732826819,302.869715802803,308.085626773184,302.857427336044
+"916",33,39,0,0,"Communicable","White","Male","North Carolina",2007,"South Atlantic","South","NC",42.4476847983491,44.4946800318818,46.6555858299414,44.4911902705665
+"917",33,39,0,0,"Injuries","White","Male","North Carolina",2007,"South Atlantic","South","NC",94.0513036725943,96.2598548734097,98.3802586083425,96.2821647559953
+"918",33,39,0,0,"Non-communicable","White","Male","North Carolina",2007,"South Atlantic","South","NC",135.396155537106,138.643209200871,142.144883280861,138.646074002986
+"919",33,39,0,1,"All other causes","White","Female","North Carolina",2007,"South Atlantic","South","NC",133.157003435256,135.684248196446,138.493509521082,135.731686401601
+"920",33,39,0,1,"Cancers","White","Female","North Carolina",2007,"South Atlantic","South","NC",148.237096610511,150.396212846699,152.948326281192,150.464103054809
+"921",33,39,0,1,"Cardiovascular","White","Female","North Carolina",2007,"South Atlantic","South","NC",200.78946731397,204.235407057386,207.905733929537,204.280419749103
+"922",33,39,0,1,"Communicable","White","Female","North Carolina",2007,"South Atlantic","South","NC",32.6065477817713,33.7697953145752,35.08204043181,33.7880389516544
+"923",33,39,0,1,"Injuries","White","Female","North Carolina",2007,"South Atlantic","South","NC",40.7711026694345,42.0491140477289,43.3516292695837,42.0256712168228
+"924",33,39,0,1,"Non-communicable","White","Female","North Carolina",2007,"South Atlantic","South","NC",109.818645952585,112.699920358743,115.378751358948,112.648311679412
+"925",33,39,1,0,"All other causes","Black","Male","North Carolina",2007,"South Atlantic","South","NC",204.184419824999,212.439670371496,222.319877258424,212.619512112508
+"926",33,39,1,0,"Cancers","Black","Male","North Carolina",2007,"South Atlantic","South","NC",293.818144469984,303.310188047884,312.94047156752,303.286018538094
+"927",33,39,1,0,"Cardiovascular","Black","Male","North Carolina",2007,"South Atlantic","South","NC",394.26899157576,406.178730689712,418.31452816902,406.223385981459
+"928",33,39,1,0,"Communicable","Black","Male","North Carolina",2007,"South Atlantic","South","NC",74.9336803111782,79.7136792975076,85.3433533298029,79.7915427068308
+"929",33,39,1,0,"Injuries","Black","Male","North Carolina",2007,"South Atlantic","South","NC",92.8965629306301,96.809936220013,100.731893940334,96.7926867008601
+"930",33,39,1,0,"Non-communicable","Black","Male","North Carolina",2007,"South Atlantic","South","NC",164.303939843779,171.975180066943,180.782017555729,172.115582598322
+"931",33,39,1,1,"All other causes","Black","Female","North Carolina",2007,"South Atlantic","South","NC",158.05716996756,163.472731546783,169.203524140832,163.463442807508
+"932",33,39,1,1,"Cancers","Black","Female","North Carolina",2007,"South Atlantic","South","NC",165.310294991413,169.708373892571,174.695909290388,169.720968496471
+"933",33,39,1,1,"Cardiovascular","Black","Female","North Carolina",2007,"South Atlantic","South","NC",269.651136298077,277.32365466665,285.482220214582,277.38757147501
+"934",33,39,1,1,"Communicable","Black","Female","North Carolina",2007,"South Atlantic","South","NC",48.052420541473,50.9316180884713,53.9342667158371,50.9469153696165
+"935",33,39,1,1,"Injuries","Black","Female","North Carolina",2007,"South Atlantic","South","NC",27.0111808425168,28.439771113869,29.8989710526086,28.4337357686303
+"936",33,39,1,1,"Non-communicable","Black","Female","North Carolina",2007,"South Atlantic","South","NC",127.601835144934,132.630292243185,138.2172529012,132.696130530125
+"937",33,40,0,0,"All other causes","White","Male","North Carolina",2008,"South Atlantic","South","NC",152.998598050872,156.541137558757,160.138316966432,156.557226733247
+"938",33,40,0,0,"Cancers","White","Male","North Carolina",2008,"South Atlantic","South","NC",217.24904164898,221.158863579192,225.12642246724,221.125159295038
+"939",33,40,0,0,"Cardiovascular","White","Male","North Carolina",2008,"South Atlantic","South","NC",286.898653263565,292.149643116942,297.256330039728,292.11357355627
+"940",33,40,0,0,"Communicable","White","Male","North Carolina",2008,"South Atlantic","South","NC",42.8450879848017,44.7247787791644,46.9078385669003,44.7623754834732
+"941",33,40,0,0,"Injuries","White","Male","North Carolina",2008,"South Atlantic","South","NC",93.4613334831579,95.6645654051044,97.6033184236646,95.616124004159
+"942",33,40,0,0,"Non-communicable","White","Male","North Carolina",2008,"South Atlantic","South","NC",136.727133586511,139.721768796688,143.063644118969,139.767415797365
+"943",33,40,0,1,"All other causes","White","Female","North Carolina",2008,"South Atlantic","South","NC",135.595488025227,138.261805791348,140.989573650995,138.283132100747
+"944",33,40,0,1,"Cancers","White","Female","North Carolina",2008,"South Atlantic","South","NC",145.555305277713,147.927638836882,150.373915971661,147.946905530329
+"945",33,40,0,1,"Cardiovascular","White","Female","North Carolina",2008,"South Atlantic","South","NC",197.30501668491,200.972969307962,204.395353432399,200.936456188866
+"946",33,40,0,1,"Communicable","White","Female","North Carolina",2008,"South Atlantic","South","NC",33.9062758623245,35.1790042071846,36.5852914336738,35.2117562921593
+"947",33,40,0,1,"Injuries","White","Female","North Carolina",2008,"South Atlantic","South","NC",40.6487529218688,41.8187153714028,43.124712829534,41.8237959034271
+"948",33,40,0,1,"Non-communicable","White","Female","North Carolina",2008,"South Atlantic","South","NC",112.396509253183,114.933305283226,117.672897274512,114.967932596219
+"949",33,40,1,0,"All other causes","Black","Male","North Carolina",2008,"South Atlantic","South","NC",196.156045142579,204.000374429807,211.214580778166,203.939100560205
+"950",33,40,1,0,"Cancers","Black","Male","North Carolina",2008,"South Atlantic","South","NC",285.032889143626,294.361839091062,303.811730207487,294.460991495371
+"951",33,40,1,0,"Cardiovascular","Black","Male","North Carolina",2008,"South Atlantic","South","NC",377.95789497661,388.726256291221,399.655253903201,388.771833498535
+"952",33,40,1,0,"Communicable","Black","Male","North Carolina",2008,"South Atlantic","South","NC",72.7680390020941,77.7017738820083,83.0832622364702,77.7822360608386
+"953",33,40,1,0,"Injuries","Black","Male","North Carolina",2008,"South Atlantic","South","NC",87.5895172318355,91.2431056798288,94.7794633892159,91.2371843404895
+"954",33,40,1,0,"Non-communicable","Black","Male","North Carolina",2008,"South Atlantic","South","NC",165.127923550771,172.573578986792,179.676904681033,172.502763342871
+"955",33,40,1,1,"All other causes","Black","Female","North Carolina",2008,"South Atlantic","South","NC",156.199361744293,161.954786226329,167.658462160625,161.923948682046
+"956",33,40,1,1,"Cancers","Black","Female","North Carolina",2008,"South Atlantic","South","NC",159.027748774028,163.463278666926,168.114890868908,163.508610250078
+"957",33,40,1,1,"Cardiovascular","Black","Female","North Carolina",2008,"South Atlantic","South","NC",251.292993512744,259.073456486791,266.798248710303,259.151262283381
+"958",33,40,1,1,"Communicable","Black","Female","North Carolina",2008,"South Atlantic","South","NC",46.726749763548,49.4571476259135,52.3389806113954,49.4518452397338
+"959",33,40,1,1,"Injuries","Black","Female","North Carolina",2008,"South Atlantic","South","NC",26.2084054288226,27.7454970652404,29.1826978409685,27.7457225952252
+"960",33,40,1,1,"Non-communicable","Black","Female","North Carolina",2008,"South Atlantic","South","NC",125.775276361592,131.188182849212,136.05489028383,131.17114735025
+"961",33,41,0,0,"All other causes","White","Male","North Carolina",2009,"South Atlantic","South","NC",155.344720923422,159.216981944833,163.213511206265,159.210563844766
+"962",33,41,0,0,"Cancers","White","Male","North Carolina",2009,"South Atlantic","South","NC",213.464187625874,217.249357258191,221.096669133584,217.251913711542
+"963",33,41,0,0,"Cardiovascular","White","Male","North Carolina",2009,"South Atlantic","South","NC",280.710706547127,285.993931282827,290.961892926238,285.905629818918
+"964",33,41,0,0,"Communicable","White","Male","North Carolina",2009,"South Atlantic","South","NC",41.1687759847014,43.0491851520647,44.9916655808707,43.0341908336835
+"965",33,41,0,0,"Injuries","White","Male","North Carolina",2009,"South Atlantic","South","NC",91.3419156896683,93.2909423595184,95.417376399633,93.2993969323255
+"966",33,41,0,0,"Non-communicable","White","Male","North Carolina",2009,"South Atlantic","South","NC",134.331931557162,137.645454958089,140.728491872734,137.623806528009
+"967",33,41,0,1,"All other causes","White","Female","North Carolina",2009,"South Atlantic","South","NC",135.092084279487,138.010904792424,140.878876343023,138.006330801279
+"968",33,41,0,1,"Cancers","White","Female","North Carolina",2009,"South Atlantic","South","NC",142.037277423523,144.537644665951,146.779145623113,144.51297325807
+"969",33,41,0,1,"Cardiovascular","White","Female","North Carolina",2009,"South Atlantic","South","NC",188.167105082633,191.528700864733,194.984175728389,191.564493992241
+"970",33,41,0,1,"Communicable","White","Female","North Carolina",2009,"South Atlantic","South","NC",32.8652530823652,34.1006557854933,35.4348797633892,34.1172938784904
+"971",33,41,0,1,"Injuries","White","Female","North Carolina",2009,"South Atlantic","South","NC",39.9301931838806,41.1104622646139,42.3246453593133,41.1027963468733
+"972",33,41,0,1,"Non-communicable","White","Female","North Carolina",2009,"South Atlantic","South","NC",108.741569768305,111.335608472541,113.838009004105,111.294003414473
+"973",33,41,1,0,"All other causes","Black","Male","North Carolina",2009,"South Atlantic","South","NC",194.4428478249,202.041490678303,210.490409162188,202.041047938357
+"974",33,41,1,0,"Cancers","Black","Male","North Carolina",2009,"South Atlantic","South","NC",278.768646089612,287.731568646508,296.742897097738,287.586631716154
+"975",33,41,1,0,"Cardiovascular","Black","Male","North Carolina",2009,"South Atlantic","South","NC",355.944176351305,366.841594202107,377.848118575921,366.857745446535
+"976",33,41,1,0,"Communicable","Black","Male","North Carolina",2009,"South Atlantic","South","NC",69.1773079016938,74.0602195171291,79.1751286595504,74.1618923026778
+"977",33,41,1,0,"Injuries","Black","Male","North Carolina",2009,"South Atlantic","South","NC",83.2398223708799,86.6992758410989,90.0071867173243,86.6910359897833
+"978",33,41,1,0,"Non-communicable","Black","Male","North Carolina",2009,"South Atlantic","South","NC",161.388858809912,169.186075485697,176.403962302929,169.088587785721
+"979",33,41,1,1,"All other causes","Black","Female","North Carolina",2009,"South Atlantic","South","NC",160.143421422782,165.694445094411,171.395093706971,165.740407359249
+"980",33,41,1,1,"Cancers","Black","Female","North Carolina",2009,"South Atlantic","South","NC",156.904732301825,161.143140654228,165.557895566111,161.159654586472
+"981",33,41,1,1,"Cardiovascular","Black","Female","North Carolina",2009,"South Atlantic","South","NC",240.758657290144,248.773795828937,256.922846225329,248.763872272723
+"982",33,41,1,1,"Communicable","Black","Female","North Carolina",2009,"South Atlantic","South","NC",44.9941752453633,47.8803378487239,50.8810284191433,47.9024005002721
+"983",33,41,1,1,"Injuries","Black","Female","North Carolina",2009,"South Atlantic","South","NC",25.6387867986028,27.0197948249507,28.4172979914249,27.0197502368851
+"984",33,41,1,1,"Non-communicable","Black","Female","North Carolina",2009,"South Atlantic","South","NC",121.000714876408,126.221539690682,130.986661846556,126.181938583876
+"985",33,42,0,0,"All other causes","White","Male","North Carolina",2010,"South Atlantic","South","NC",162.039374756611,165.570696686344,169.247523073207,165.576395672554
+"986",33,42,0,0,"Cancers","White","Male","North Carolina",2010,"South Atlantic","South","NC",211.044488410993,214.712481260189,218.443707919046,214.698509366875
+"987",33,42,0,0,"Cardiovascular","White","Male","North Carolina",2010,"South Atlantic","South","NC",271.155022141814,276.127918960845,281.007682349364,276.178172077096
+"988",33,42,0,0,"Communicable","White","Male","North Carolina",2010,"South Atlantic","South","NC",41.2781387975752,43.1993307103272,45.112323351573,43.1888264581828
+"989",33,42,0,0,"Injuries","White","Male","North Carolina",2010,"South Atlantic","South","NC",89.4700311465709,91.6754692200479,93.9516634971964,91.6952423124236
+"990",33,42,0,0,"Non-communicable","White","Male","North Carolina",2010,"South Atlantic","South","NC",132.821267935119,136.143557144352,139.251486394141,136.044030903565
+"991",33,42,0,1,"All other causes","White","Female","North Carolina",2010,"South Atlantic","South","NC",141.799673579967,144.794768811952,147.608911969653,144.805297104663
+"992",33,42,0,1,"Cancers","White","Female","North Carolina",2010,"South Atlantic","South","NC",140.324459224128,142.584061474608,144.834388248046,142.579140562737
+"993",33,42,0,1,"Cardiovascular","White","Female","North Carolina",2010,"South Atlantic","South","NC",182.764812867006,185.929926765033,188.765505753506,185.880918204043
+"994",33,42,0,1,"Communicable","White","Female","North Carolina",2010,"South Atlantic","South","NC",31.8609333746973,33.0205398922337,34.289714614015,33.0396628627547
+"995",33,42,0,1,"Injuries","White","Female","North Carolina",2010,"South Atlantic","South","NC",39.9397061460959,41.0750603165432,42.4219201045686,41.0909443364867
+"996",33,42,0,1,"Non-communicable","White","Female","North Carolina",2010,"South Atlantic","South","NC",109.866232884275,112.482053283736,115.171115138895,112.458058399456
+"997",33,42,1,0,"All other causes","Black","Male","North Carolina",2010,"South Atlantic","South","NC",197.160893178572,205.311404789188,213.23927063483,205.329665087966
+"998",33,42,1,0,"Cancers","Black","Male","North Carolina",2010,"South Atlantic","South","NC",276.209044113319,285.287266829228,293.933523472417,285.307202501903
+"999",33,42,1,0,"Cardiovascular","Black","Male","North Carolina",2010,"South Atlantic","South","NC",344.472242355455,355.461254865367,366.686432470154,355.651129133221
+"1000",33,42,1,0,"Communicable","Black","Male","North Carolina",2010,"South Atlantic","South","NC",65.4338553525428,70.0150067869878,74.79489356196,70.1147742802703
+"1001",33,42,1,0,"Injuries","Black","Male","North Carolina",2010,"South Atlantic","South","NC",80.5429710098631,83.6710199789957,87.0832302999953,83.6748652616823
+"1002",33,42,1,0,"Non-communicable","Black","Male","North Carolina",2010,"South Atlantic","South","NC",158.973176825468,166.091767050705,172.804298814614,166.072758005724
+"1003",33,42,1,1,"All other causes","Black","Female","North Carolina",2010,"South Atlantic","South","NC",162.212997034941,167.76891797808,173.522525976405,167.716048584872
+"1004",33,42,1,1,"Cancers","Black","Female","North Carolina",2010,"South Atlantic","South","NC",156.31984853344,160.677029822667,164.89502690104,160.617380578336
+"1005",33,42,1,1,"Cardiovascular","Black","Female","North Carolina",2010,"South Atlantic","South","NC",226.790518920683,233.824510401768,240.892184316306,233.732969398581
+"1006",33,42,1,1,"Communicable","Black","Female","North Carolina",2010,"South Atlantic","South","NC",43.2755151967733,45.9718844512712,48.8558263411638,45.9970015275613
+"1007",33,42,1,1,"Injuries","Black","Female","North Carolina",2010,"South Atlantic","South","NC",24.9308586871827,26.2429133890079,27.8263145586184,26.2638097355639
+"1008",33,42,1,1,"Non-communicable","Black","Female","North Carolina",2010,"South Atlantic","South","NC",120.03913464065,124.928679368655,130.096590726992,124.962385238591
+"1009",33,43,0,0,"All other causes","White","Male","North Carolina",2011,"South Atlantic","South","NC",167.012744015134,170.621877732582,174.257370918356,170.61630039744
+"1010",33,43,0,0,"Cancers","White","Male","North Carolina",2011,"South Atlantic","South","NC",207.621273235877,211.006747285183,214.936323440305,211.012088226171
+"1011",33,43,0,0,"Cardiovascular","White","Male","North Carolina",2011,"South Atlantic","South","NC",260.544997936411,265.19478768861,270.032862399715,265.186903652286
+"1012",33,43,0,0,"Communicable","White","Male","North Carolina",2011,"South Atlantic","South","NC",39.1560895867749,41.0562266010586,43.0396141722994,41.0667151481447
+"1013",33,43,0,0,"Injuries","White","Male","North Carolina",2011,"South Atlantic","South","NC",88.780023624262,90.9618015613223,93.0549229130988,90.9610050652815
+"1014",33,43,0,0,"Non-communicable","White","Male","North Carolina",2011,"South Atlantic","South","NC",130.307897079247,133.408371112491,136.357111359982,133.415762975146
+"1015",33,43,0,1,"All other causes","White","Female","North Carolina",2011,"South Atlantic","South","NC",146.428471138812,149.38418831541,152.438310401081,149.430369449343
+"1016",33,43,0,1,"Cancers","White","Female","North Carolina",2011,"South Atlantic","South","NC",138.521664620747,140.867189451706,143.093647965793,140.861661226785
+"1017",33,43,0,1,"Cardiovascular","White","Female","North Carolina",2011,"South Atlantic","South","NC",176.224024612856,179.429326211495,182.418529480734,179.392124752212
+"1018",33,43,0,1,"Communicable","White","Female","North Carolina",2011,"South Atlantic","South","NC",31.3081336242861,32.6124193903661,33.8319954141003,32.6063255800682
+"1019",33,43,0,1,"Injuries","White","Female","North Carolina",2011,"South Atlantic","South","NC",40.2907312244014,41.5775720944086,42.7890999190552,41.5738253539255
+"1020",33,43,0,1,"Non-communicable","White","Female","North Carolina",2011,"South Atlantic","South","NC",111.786494466896,114.507381785768,117.149242612958,114.548838572616
+"1021",33,43,1,0,"All other causes","Black","Male","North Carolina",2011,"South Atlantic","South","NC",197.114347826914,204.218763756576,211.845473667578,204.275699852431
+"1022",33,43,1,0,"Cancers","Black","Male","North Carolina",2011,"South Atlantic","South","NC",269.242397790716,277.111371790286,285.925108763977,277.201281276932
+"1023",33,43,1,0,"Cardiovascular","Black","Male","North Carolina",2011,"South Atlantic","South","NC",330.157494019342,341.60727751665,353.146457707674,341.601563167768
+"1024",33,43,1,0,"Communicable","Black","Male","North Carolina",2011,"South Atlantic","South","NC",62.7206202533522,67.104652921724,71.7866276753557,67.1047217784168
+"1025",33,43,1,0,"Injuries","Black","Male","North Carolina",2011,"South Atlantic","South","NC",78.8426943031049,82.0855071195275,85.5468121475347,82.1343174943347
+"1026",33,43,1,0,"Non-communicable","Black","Male","North Carolina",2011,"South Atlantic","South","NC",156.139132288458,163.103791341502,169.915416696564,163.038274046124
+"1027",33,43,1,1,"All other causes","Black","Female","North Carolina",2011,"South Atlantic","South","NC",165.452545944935,170.921552171355,176.794102519639,171.061589646691
+"1028",33,43,1,1,"Cancers","Black","Female","North Carolina",2011,"South Atlantic","South","NC",156.573413119628,160.920786080092,165.328845204852,160.921786711231
+"1029",33,43,1,1,"Cardiovascular","Black","Female","North Carolina",2011,"South Atlantic","South","NC",220.303533878673,227.569145161059,234.265507472187,227.556700120328
+"1030",33,43,1,1,"Communicable","Black","Female","North Carolina",2011,"South Atlantic","South","NC",41.7819000588903,44.3161012010105,46.9245334855204,44.3160143413899
+"1031",33,43,1,1,"Injuries","Black","Female","North Carolina",2011,"South Atlantic","South","NC",24.4726701629253,25.848467572267,27.4221633557328,25.8820676532214
+"1032",33,43,1,1,"Non-communicable","Black","Female","North Carolina",2011,"South Atlantic","South","NC",117.805963147223,122.610625454782,127.858176018034,122.648453915603
+"1033",33,44,0,0,"All other causes","White","Male","North Carolina",2012,"South Atlantic","South","NC",164.56793338817,168.147012463686,171.624254269406,168.131608032213
+"1034",33,44,0,0,"Cancers","White","Male","North Carolina",2012,"South Atlantic","South","NC",202.39065525981,205.79186710431,209.273012817009,205.83085362481
+"1035",33,44,0,0,"Cardiovascular","White","Male","North Carolina",2012,"South Atlantic","South","NC",255.463800651241,260.181511841509,264.278956853909,260.060997806156
+"1036",33,44,0,0,"Communicable","White","Male","North Carolina",2012,"South Atlantic","South","NC",40.218572720051,42.0807798594709,43.9828651626753,42.1075994448827
+"1037",33,44,0,0,"Injuries","White","Male","North Carolina",2012,"South Atlantic","South","NC",88.6093584150661,90.7013994344016,92.8597968119855,90.7167855800173
+"1038",33,44,0,0,"Non-communicable","White","Male","North Carolina",2012,"South Atlantic","South","NC",129.323674289498,131.993312782846,135.121664796993,132.063889443546
+"1039",33,44,0,1,"All other causes","White","Female","North Carolina",2012,"South Atlantic","South","NC",149.27904996124,152.387340208063,155.474328470391,152.382485013782
+"1040",33,44,0,1,"Cancers","White","Female","North Carolina",2012,"South Atlantic","South","NC",137.245758944672,139.496688693615,141.974836990361,139.578837602788
+"1041",33,44,0,1,"Cardiovascular","White","Female","North Carolina",2012,"South Atlantic","South","NC",175.955237303497,179.042605712869,182.26550523788,179.04072903419
+"1042",33,44,0,1,"Communicable","White","Female","North Carolina",2012,"South Atlantic","South","NC",33.1320078030663,34.3206828369798,35.6193721599764,34.3364774081827
+"1043",33,44,0,1,"Injuries","White","Female","North Carolina",2012,"South Atlantic","South","NC",40.447234749774,41.6450958379461,43.0096587009574,41.6636312268213
+"1044",33,44,0,1,"Non-communicable","White","Female","North Carolina",2012,"South Atlantic","South","NC",109.721983282016,112.230195963666,114.821370689463,112.236025145935
+"1045",33,44,1,0,"All other causes","Black","Male","North Carolina",2012,"South Atlantic","South","NC",199.03387442422,206.67326534463,215.457540019453,206.606446602418
+"1046",33,44,1,0,"Cancers","Black","Male","North Carolina",2012,"South Atlantic","South","NC",259.099210331889,267.170902232778,275.783831153158,267.209704018882
+"1047",33,44,1,0,"Cardiovascular","Black","Male","North Carolina",2012,"South Atlantic","South","NC",326.411034453125,337.614833363948,348.48801939434,337.448451927133
+"1048",33,44,1,0,"Communicable","Black","Male","North Carolina",2012,"South Atlantic","South","NC",63.1636572723904,67.7999574768137,72.6002529256131,67.8683156922218
+"1049",33,44,1,0,"Injuries","Black","Male","North Carolina",2012,"South Atlantic","South","NC",78.9065507706532,82.3693464773351,86.0353653290601,82.4073020206351
+"1050",33,44,1,0,"Non-communicable","Black","Male","North Carolina",2012,"South Atlantic","South","NC",156.012053202187,163.059672040461,170.677863946294,163.056555900195
+"1051",33,44,1,1,"All other causes","Black","Female","North Carolina",2012,"South Atlantic","South","NC",165.466201207454,170.85274495935,176.708377947785,170.878472795859
+"1052",33,44,1,1,"Cancers","Black","Female","North Carolina",2012,"South Atlantic","South","NC",155.762957615114,160.335333475321,164.920907191872,160.313510934307
+"1053",33,44,1,1,"Cardiovascular","Black","Female","North Carolina",2012,"South Atlantic","South","NC",215.782546144913,222.569060120838,228.868733711877,222.490747496895
+"1054",33,44,1,1,"Communicable","Black","Female","North Carolina",2012,"South Atlantic","South","NC",40.724114532719,43.2453166822517,45.8308448120066,43.2359053220503
+"1055",33,44,1,1,"Injuries","Black","Female","North Carolina",2012,"South Atlantic","South","NC",23.8453272573188,25.4657932628361,27.0761758092585,25.4690825016776
+"1056",33,44,1,1,"Non-communicable","Black","Female","North Carolina",2012,"South Atlantic","South","NC",117.453351852789,122.375671595809,127.159285486969,122.420647750017
+"1057",33,45,0,0,"All other causes","White","Male","North Carolina",2013,"South Atlantic","South","NC",160.163394325933,164.062301502124,167.745612571961,164.021832828255
+"1058",33,45,0,0,"Cancers","White","Male","North Carolina",2013,"South Atlantic","South","NC",200.706432897587,204.415779860658,208.472416082634,204.470650373202
+"1059",33,45,0,0,"Cardiovascular","White","Male","North Carolina",2013,"South Atlantic","South","NC",256.230395368037,260.919790061494,266.118694250934,261.016224685613
+"1060",33,45,0,0,"Communicable","White","Male","North Carolina",2013,"South Atlantic","South","NC",42.229269934552,44.1407464543107,46.0395334079506,44.1247199236762
+"1061",33,45,0,0,"Injuries","White","Male","North Carolina",2013,"South Atlantic","South","NC",86.8770811752981,89.4402467902987,92.0059712907304,89.433089185424
+"1062",33,45,0,0,"Non-communicable","White","Male","North Carolina",2013,"South Atlantic","South","NC",127.443667562477,130.630293820502,133.873911063846,130.621043219782
+"1063",33,45,0,1,"All other causes","White","Female","North Carolina",2013,"South Atlantic","South","NC",146.923459988393,150.164902446359,153.191466222101,150.090706795799
+"1064",33,45,0,1,"Cancers","White","Female","North Carolina",2013,"South Atlantic","South","NC",135.621182243526,138.14510558276,140.827825356171,138.180144375823
+"1065",33,45,0,1,"Cardiovascular","White","Female","North Carolina",2013,"South Atlantic","South","NC",171.287251495101,174.553477779657,177.72174771098,174.539236263027
+"1066",33,45,0,1,"Communicable","White","Female","North Carolina",2013,"South Atlantic","South","NC",33.0213930856043,34.3798643966612,35.8401623748957,34.3676681592769
+"1067",33,45,0,1,"Injuries","White","Female","North Carolina",2013,"South Atlantic","South","NC",40.1462129756239,41.6614334537999,43.1937955811256,41.6715903958117
+"1068",33,45,0,1,"Non-communicable","White","Female","North Carolina",2013,"South Atlantic","South","NC",109.391294991623,112.17792700939,114.922932435197,112.191987950445
+"1069",33,45,1,0,"All other causes","Black","Male","North Carolina",2013,"South Atlantic","South","NC",193.816957102476,202.353073552427,211.185537027158,202.573894000148
+"1070",33,45,1,0,"Cancers","Black","Male","North Carolina",2013,"South Atlantic","South","NC",252.613283728938,262.068685467856,272.167218096985,262.131790829323
+"1071",33,45,1,0,"Cardiovascular","Black","Male","North Carolina",2013,"South Atlantic","South","NC",327.607678792442,338.889207013053,350.399469619377,339.083269765134
+"1072",33,45,1,0,"Communicable","Black","Male","North Carolina",2013,"South Atlantic","South","NC",61.7572522110227,66.8673513978582,72.375827830325,66.8863133471223
+"1073",33,45,1,0,"Injuries","Black","Male","North Carolina",2013,"South Atlantic","South","NC",80.5694098611131,84.5893876990303,88.6514610702366,84.5058230909259
+"1074",33,45,1,0,"Non-communicable","Black","Male","North Carolina",2013,"South Atlantic","South","NC",155.506381906144,163.328114669397,172.049689160373,163.45712943
+"1075",33,45,1,1,"All other causes","Black","Female","North Carolina",2013,"South Atlantic","South","NC",161.878997303228,168.117950065754,174.181385008654,168.104737992524
+"1076",33,45,1,1,"Cancers","Black","Female","North Carolina",2013,"South Atlantic","South","NC",153.241464122422,158.524487862492,163.662443057304,158.48635243235
+"1077",33,45,1,1,"Cardiovascular","Black","Female","North Carolina",2013,"South Atlantic","South","NC",215.078773541235,222.699737385762,230.263594196658,222.565484377355
+"1078",33,45,1,1,"Communicable","Black","Female","North Carolina",2013,"South Atlantic","South","NC",41.3616272970374,44.1537912910991,47.3220521658208,44.2039148501563
+"1079",33,45,1,1,"Injuries","Black","Female","North Carolina",2013,"South Atlantic","South","NC",23.8964678041661,25.6924706102854,27.4615853092201,25.7070116349199
+"1080",33,45,1,1,"Non-communicable","Black","Female","North Carolina",2013,"South Atlantic","South","NC",115.567563265651,121.021896098233,126.751408667512,121.055513379752

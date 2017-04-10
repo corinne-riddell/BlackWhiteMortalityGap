@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",27,1,0,0,"All other causes","White","Male","Nebraska",1969,"West North Central","Midwest","NE",111.056878746024,116.731531398225,122.612109921114,116.715590547014
+"2",27,1,0,0,"Cancers","White","Male","Nebraska",1969,"West North Central","Midwest","NE",217.903882015604,225.567620656787,233.453269359653,225.572146816681
+"3",27,1,0,0,"Cardiovascular","White","Male","Nebraska",1969,"West North Central","Midwest","NE",791.436562738453,811.469654863635,835.769178782255,812.064243690398
+"4",27,1,0,0,"Communicable","White","Male","Nebraska",1969,"West North Central","Midwest","NE",51.5154554836329,56.7874099074513,62.2378680256702,56.7600111318464
+"5",27,1,0,0,"Injuries","White","Male","Nebraska",1969,"West North Central","Midwest","NE",110.669567778403,115.6436857541,121.419714734943,115.805675123081
+"6",27,1,0,0,"Non-communicable","White","Male","Nebraska",1969,"West North Central","Midwest","NE",93.0539778464864,98.2283079599826,103.180275280759,98.2262968038385
+"7",27,1,0,1,"All other causes","White","Female","Nebraska",1969,"West North Central","Midwest","NE",77.2911733563095,81.4434643897792,85.7727356946263,81.5678106566477
+"8",27,1,0,1,"Cancers","White","Female","Nebraska",1969,"West North Central","Midwest","NE",146.882573638969,152.04324105649,157.610617152616,152.11181274329
+"9",27,1,0,1,"Cardiovascular","White","Female","Nebraska",1969,"West North Central","Midwest","NE",492.775866322887,506.023919845004,520.075569130487,506.164538018215
+"10",27,1,0,1,"Communicable","White","Female","Nebraska",1969,"West North Central","Midwest","NE",32.2483692394242,35.7521018366287,39.3676757435842,35.750954146563
+"11",27,1,0,1,"Injuries","White","Female","Nebraska",1969,"West North Central","Midwest","NE",42.948067758545,45.7606046516269,48.8460585599741,45.7859409742338
+"12",27,1,0,1,"Non-communicable","White","Female","Nebraska",1969,"West North Central","Midwest","NE",37.339008928632,40.123909087787,42.923391500772,40.1263199847351
+"13",27,1,1,0,"All other causes","Black","Male","Nebraska",1969,"West North Central","Midwest","NE",193.53391927342,230.25323213173,273.772807154777,231.216505358982
+"14",27,1,1,0,"Cancers","Black","Male","Nebraska",1969,"West North Central","Midwest","NE",283.152940059305,348.600122697949,443.28199504063,353.957151388818
+"15",27,1,1,0,"Cardiovascular","Black","Male","Nebraska",1969,"West North Central","Midwest","NE",706.903503229288,812.902352242599,948.080474020772,816.993577732166
+"16",27,1,1,0,"Communicable","Black","Male","Nebraska",1969,"West North Central","Midwest","NE",88.2336944407247,120.919402735378,173.271256735413,123.601112083332
+"17",27,1,1,0,"Injuries","Black","Male","Nebraska",1969,"West North Central","Midwest","NE",116.642036974539,142.539193569824,175.702568710215,143.610786454662
+"18",27,1,1,0,"Non-communicable","Black","Male","Nebraska",1969,"West North Central","Midwest","NE",129.498359199534,163.835921804949,216.071486394624,166.915618056047
+"19",27,1,1,1,"All other causes","Black","Female","Nebraska",1969,"West North Central","Midwest","NE",160.416375264578,197.835183977941,241.185427708305,198.548203709159
+"20",27,1,1,1,"Cancers","Black","Female","Nebraska",1969,"West North Central","Midwest","NE",189.594869586841,221.581872518899,271.002176494113,223.692353196698
+"21",27,1,1,1,"Cardiovascular","Black","Female","Nebraska",1969,"West North Central","Midwest","NE",606.647039666676,700.925099472935,812.727815713395,703.381262516313
+"22",27,1,1,1,"Communicable","Black","Female","Nebraska",1969,"West North Central","Midwest","NE",52.9997805424147,75.9617340184765,120.494913403857,78.6107679061119
+"23",27,1,1,1,"Injuries","Black","Female","Nebraska",1969,"West North Central","Midwest","NE",40.2820699302026,51.8545743072188,72.1701186211123,52.9184861778828
+"24",27,1,1,1,"Non-communicable","Black","Female","Nebraska",1969,"West North Central","Midwest","NE",85.5003310515683,109.061641093257,140.835698258462,109.891625657296
+"25",27,2,0,0,"All other causes","White","Male","Nebraska",1970,"West North Central","Midwest","NE",112.600992623036,117.395165800431,122.488655577895,117.427751140484
+"26",27,2,0,0,"Cancers","White","Male","Nebraska",1970,"West North Central","Midwest","NE",218.766532456148,225.559755733718,232.298514740177,225.630019064363
+"27",27,2,0,0,"Cardiovascular","White","Male","Nebraska",1970,"West North Central","Midwest","NE",788.226421655139,807.419718668933,827.750421019863,807.625645074032
+"28",27,2,0,0,"Communicable","White","Male","Nebraska",1970,"West North Central","Midwest","NE",50.0409917971319,54.1878824019152,59.1757889502238,54.3227510750165
+"29",27,2,0,0,"Injuries","White","Male","Nebraska",1970,"West North Central","Midwest","NE",109.944258996471,114.629246643271,119.762560789678,114.744380333026
+"30",27,2,0,0,"Non-communicable","White","Male","Nebraska",1970,"West North Central","Midwest","NE",94.2738247599105,99.0952046482914,103.595068015899,99.047016020637
+"31",27,2,0,1,"All other causes","White","Female","Nebraska",1970,"West North Central","Midwest","NE",77.3873270100439,80.9468494176511,84.7095385565171,80.9616566908475
+"32",27,2,0,1,"Cancers","White","Female","Nebraska",1970,"West North Central","Midwest","NE",147.110258987724,151.743737295134,156.670932190058,151.733990973193
+"33",27,2,0,1,"Cardiovascular","White","Female","Nebraska",1970,"West North Central","Midwest","NE",485.349543784535,497.533244372227,510.298227333282,497.667631622525
+"34",27,2,0,1,"Communicable","White","Female","Nebraska",1970,"West North Central","Midwest","NE",30.4048755965918,33.0761482721673,36.1146645274784,33.1235243737646
+"35",27,2,0,1,"Injuries","White","Female","Nebraska",1970,"West North Central","Midwest","NE",42.8647173315459,45.3965232829775,48.2100952703597,45.396308140845
+"36",27,2,0,1,"Non-communicable","White","Female","Nebraska",1970,"West North Central","Midwest","NE",37.1893743083348,39.7880928967226,42.4643803796439,39.8039207120023
+"37",27,2,1,0,"All other causes","Black","Male","Nebraska",1970,"West North Central","Midwest","NE",192.422693259063,226.017317262069,266.046563338597,226.555037632898
+"38",27,2,1,0,"Cancers","Black","Male","Nebraska",1970,"West North Central","Midwest","NE",284.943136097073,347.163296525046,438.404134076259,353.141743638567
+"39",27,2,1,0,"Cardiovascular","Black","Male","Nebraska",1970,"West North Central","Midwest","NE",705.136696402807,802.29334260398,924.674652704127,803.97836066552
+"40",27,2,1,0,"Communicable","Black","Male","Nebraska",1970,"West North Central","Midwest","NE",87.6391153068225,120.887593132322,170.270223474338,122.914928053581
+"41",27,2,1,0,"Injuries","Black","Male","Nebraska",1970,"West North Central","Midwest","NE",116.872132634623,141.589762346666,173.438045775447,141.992110376904
+"42",27,2,1,0,"Non-communicable","Black","Male","Nebraska",1970,"West North Central","Midwest","NE",129.542658125728,162.208995932777,211.220104765646,165.541679349746
+"43",27,2,1,1,"All other causes","Black","Female","Nebraska",1970,"West North Central","Midwest","NE",159.656022957833,195.351989535831,234.187680918192,195.410963408354
+"44",27,2,1,1,"Cancers","Black","Female","Nebraska",1970,"West North Central","Midwest","NE",187.984499877053,220.514219701496,269.268287358703,222.546282403139
+"45",27,2,1,1,"Cardiovascular","Black","Female","Nebraska",1970,"West North Central","Midwest","NE",595.529947349828,678.333675093443,775.588921512375,680.716940974136
+"46",27,2,1,1,"Communicable","Black","Female","Nebraska",1970,"West North Central","Midwest","NE",52.8992655692056,73.9258904074923,115.296878083453,76.6582786643223
+"47",27,2,1,1,"Injuries","Black","Female","Nebraska",1970,"West North Central","Midwest","NE",40.3611499029345,51.4162673793539,70.7829651340215,52.4143208617005
+"48",27,2,1,1,"Non-communicable","Black","Female","Nebraska",1970,"West North Central","Midwest","NE",84.307407679817,108.104456139605,138.031536333529,109.076898181295
+"49",27,3,0,0,"All other causes","White","Male","Nebraska",1971,"West North Central","Midwest","NE",112.041412992455,116.285532320508,121.196213897181,116.338624255083
+"50",27,3,0,0,"Cancers","White","Male","Nebraska",1971,"West North Central","Midwest","NE",222.042262690875,228.042789650128,235.354039479801,228.202431915722
+"51",27,3,0,0,"Cardiovascular","White","Male","Nebraska",1971,"West North Central","Midwest","NE",802.079403106505,821.971597172961,842.542074390261,821.855028165504
+"52",27,3,0,0,"Communicable","White","Male","Nebraska",1971,"West North Central","Midwest","NE",48.400537333939,52.4836269599843,56.6590115577654,52.4701948204851
+"53",27,3,0,0,"Injuries","White","Male","Nebraska",1971,"West North Central","Midwest","NE",108.507994319867,112.741888204795,116.911609692345,112.806487105454
+"54",27,3,0,0,"Non-communicable","White","Male","Nebraska",1971,"West North Central","Midwest","NE",94.8123713451274,99.1548808431767,103.594795405148,99.1932079879427
+"55",27,3,0,1,"All other causes","White","Female","Nebraska",1971,"West North Central","Midwest","NE",77.1252195824342,80.7680749129885,84.468770470764,80.7668748767659
+"56",27,3,0,1,"Cancers","White","Female","Nebraska",1971,"West North Central","Midwest","NE",147.56684519957,151.634232568331,156.010039703007,151.734757217078
+"57",27,3,0,1,"Cardiovascular","White","Female","Nebraska",1971,"West North Central","Midwest","NE",475.692252220657,487.378965063041,500.435615006301,487.507077218232
+"58",27,3,0,1,"Communicable","White","Female","Nebraska",1971,"West North Central","Midwest","NE",29.8539106674552,32.4081416613336,35.0672352321091,32.4058272220092
+"59",27,3,0,1,"Injuries","White","Female","Nebraska",1971,"West North Central","Midwest","NE",42.4089666051771,44.8063508248997,47.4548277157399,44.8716903966934
+"60",27,3,0,1,"Non-communicable","White","Female","Nebraska",1971,"West North Central","Midwest","NE",36.9532285854374,39.3621203358962,41.9298694349967,39.3682627572427
+"61",27,3,1,0,"All other causes","Black","Male","Nebraska",1971,"West North Central","Midwest","NE",190.18924754025,221.62093656677,259.160719654734,222.704621711447
+"62",27,3,1,0,"Cancers","Black","Male","Nebraska",1971,"West North Central","Midwest","NE",287.227946639595,349.668130739137,434.313825051317,352.675777346294
+"63",27,3,1,0,"Cardiovascular","Black","Male","Nebraska",1971,"West North Central","Midwest","NE",689.694488604705,785.840800923243,895.382421501626,786.912321373198
+"64",27,3,1,0,"Communicable","Black","Male","Nebraska",1971,"West North Central","Midwest","NE",87.633448269043,119.990466121775,166.57564907023,121.829332304119
+"65",27,3,1,0,"Injuries","Black","Male","Nebraska",1971,"West North Central","Midwest","NE",117.869966113743,140.115328291298,170.198722641947,140.895787483207
+"66",27,3,1,0,"Non-communicable","Black","Male","Nebraska",1971,"West North Central","Midwest","NE",129.566896939507,160.648899934986,206.993464248034,163.636924425022
+"67",27,3,1,1,"All other causes","Black","Female","Nebraska",1971,"West North Central","Midwest","NE",157.534203879847,191.022712051191,232.090550079261,191.883624960741
+"68",27,3,1,1,"Cancers","Black","Female","Nebraska",1971,"West North Central","Midwest","NE",188.789008341707,219.445516567738,267.825276399993,221.512549575735
+"69",27,3,1,1,"Cardiovascular","Black","Female","Nebraska",1971,"West North Central","Midwest","NE",582.661863744168,662.665554714183,745.775454515715,664.529978773469
+"70",27,3,1,1,"Communicable","Black","Female","Nebraska",1971,"West North Central","Midwest","NE",51.6296441159237,72.0552806334834,109.640476392758,73.9886109214211
+"71",27,3,1,1,"Injuries","Black","Female","Nebraska",1971,"West North Central","Midwest","NE",40.141321235747,51.1392023653895,70.0712064074312,52.0774861833696
+"72",27,3,1,1,"Non-communicable","Black","Female","Nebraska",1971,"West North Central","Midwest","NE",83.8134336395078,106.814067656773,135.644544795805,107.986582334441
+"73",27,4,0,0,"All other causes","White","Male","Nebraska",1972,"West North Central","Midwest","NE",111.748268384646,116.073713916413,120.247732288875,116.088122006345
+"74",27,4,0,0,"Cancers","White","Male","Nebraska",1972,"West North Central","Midwest","NE",223.737733687847,229.813042206418,237.004380396274,229.962430404436
+"75",27,4,0,0,"Cardiovascular","White","Male","Nebraska",1972,"West North Central","Midwest","NE",794.399149595361,812.498411877958,831.105612005109,812.221146511219
+"76",27,4,0,0,"Communicable","White","Male","Nebraska",1972,"West North Central","Midwest","NE",51.299061962442,55.7305902382448,60.2419628807956,55.7854529901084
+"77",27,4,0,0,"Injuries","White","Male","Nebraska",1972,"West North Central","Midwest","NE",106.85757147333,110.87638663714,115.132757581251,110.84851412038
+"78",27,4,0,0,"Non-communicable","White","Male","Nebraska",1972,"West North Central","Midwest","NE",94.8901257927122,98.9416086651265,103.382555275401,99.0274291485626
+"79",27,4,0,1,"All other causes","White","Female","Nebraska",1972,"West North Central","Midwest","NE",76.9562384713232,80.434598550807,83.9292410888617,80.427226416249
+"80",27,4,0,1,"Cancers","White","Female","Nebraska",1972,"West North Central","Midwest","NE",147.94532830196,152.129383955322,156.526237065982,152.163769508483
+"81",27,4,0,1,"Cardiovascular","White","Female","Nebraska",1972,"West North Central","Midwest","NE",475.668449483766,488.018706305392,501.040796692654,488.033157980538
+"82",27,4,0,1,"Communicable","White","Female","Nebraska",1972,"West North Central","Midwest","NE",29.8947329501805,32.4214449887793,35.1434417714467,32.4417045660064
+"83",27,4,0,1,"Injuries","White","Female","Nebraska",1972,"West North Central","Midwest","NE",40.3740060563881,42.8043098961461,45.122926917996,42.7915767789621
+"84",27,4,0,1,"Non-communicable","White","Female","Nebraska",1972,"West North Central","Midwest","NE",37.7009570132092,39.9445296459714,42.3727639332029,39.9747063586352
+"85",27,4,1,0,"All other causes","Black","Male","Nebraska",1972,"West North Central","Midwest","NE",189.435126598897,219.58584774756,256.47084287819,220.503516052611
+"86",27,4,1,0,"Cancers","Black","Male","Nebraska",1972,"West North Central","Midwest","NE",286.381719283243,349.37188616006,431.925826824482,352.361677344016
+"87",27,4,1,0,"Cardiovascular","Black","Male","Nebraska",1972,"West North Central","Midwest","NE",682.829200347643,773.517726036597,878.221496551815,775.234184935739
+"88",27,4,1,0,"Communicable","Black","Male","Nebraska",1972,"West North Central","Midwest","NE",86.912675115766,118.542936549098,157.269017932108,118.932005515046
+"89",27,4,1,0,"Injuries","Black","Male","Nebraska",1972,"West North Central","Midwest","NE",116.474733077453,138.419803688971,165.481448619686,139.117524190602
+"90",27,4,1,0,"Non-communicable","Black","Male","Nebraska",1972,"West North Central","Midwest","NE",128.106721775992,160.131186108014,202.312784051301,162.074838166859
+"91",27,4,1,1,"All other causes","Black","Female","Nebraska",1972,"West North Central","Midwest","NE",155.522432097186,188.382949001632,225.049759751377,188.365714693804
+"92",27,4,1,1,"Cancers","Black","Female","Nebraska",1972,"West North Central","Midwest","NE",188.583924260264,218.020084672857,260.97375153523,219.79749931868
+"93",27,4,1,1,"Cardiovascular","Black","Female","Nebraska",1972,"West North Central","Midwest","NE",576.298741227639,645.217361779818,721.842153436433,646.206346626266
+"94",27,4,1,1,"Communicable","Black","Female","Nebraska",1972,"West North Central","Midwest","NE",50.8671512874818,69.9127877660072,101.482320890795,71.3150649231554
+"95",27,4,1,1,"Injuries","Black","Female","Nebraska",1972,"West North Central","Midwest","NE",40.2016187764959,50.5846786492553,69.7590321759821,51.4448476519319
+"96",27,4,1,1,"Non-communicable","Black","Female","Nebraska",1972,"West North Central","Midwest","NE",84.5413174419723,106.986335027289,136.472503448627,107.999698431243
+"97",27,5,0,0,"All other causes","White","Male","Nebraska",1973,"West North Central","Midwest","NE",112.022021105178,116.195846869171,120.24853491036,116.212828963201
+"98",27,5,0,0,"Cancers","White","Male","Nebraska",1973,"West North Central","Midwest","NE",222.90276379634,228.917932595121,235.41481549682,228.910314180975
+"99",27,5,0,0,"Cardiovascular","White","Male","Nebraska",1973,"West North Central","Midwest","NE",756.264121404854,775.353347066345,795.07944618785,775.268140671727
+"100",27,5,0,0,"Communicable","White","Male","Nebraska",1973,"West North Central","Midwest","NE",49.8585049478569,53.7927841094546,58.2890716218957,53.7896452772585
+"101",27,5,0,0,"Injuries","White","Male","Nebraska",1973,"West North Central","Midwest","NE",104.225258610299,108.334343833317,112.274376762681,108.284753866572
+"102",27,5,0,0,"Non-communicable","White","Male","Nebraska",1973,"West North Central","Midwest","NE",94.711269451177,98.4830450627476,102.434285598178,98.5602547955525
+"103",27,5,0,1,"All other causes","White","Female","Nebraska",1973,"West North Central","Midwest","NE",76.9483817888743,80.0912909523543,83.6548208058698,80.1432607233344
+"104",27,5,0,1,"Cancers","White","Female","Nebraska",1973,"West North Central","Midwest","NE",146.654310801437,150.672314899278,155.403552607379,150.804586119317
+"105",27,5,0,1,"Cardiovascular","White","Female","Nebraska",1973,"West North Central","Midwest","NE",455.566467498346,467.589934562941,479.025492085411,467.511057380252
+"106",27,5,0,1,"Communicable","White","Female","Nebraska",1973,"West North Central","Midwest","NE",30.6132516344777,33.1499216427751,36.0819379630618,33.2199640160577
+"107",27,5,0,1,"Injuries","White","Female","Nebraska",1973,"West North Central","Midwest","NE",38.3306038571026,40.5313910725232,42.6619733987324,40.5391355246277
+"108",27,5,0,1,"Non-communicable","White","Female","Nebraska",1973,"West North Central","Midwest","NE",38.4379021405938,40.5769913907064,42.8058854044411,40.5849278637729
+"109",27,5,1,0,"All other causes","Black","Male","Nebraska",1973,"West North Central","Midwest","NE",186.492811510432,215.158646880326,250.195387745062,215.422045388683
+"110",27,5,1,0,"Cancers","Black","Male","Nebraska",1973,"West North Central","Midwest","NE",288.173613350882,350.919007696035,432.309872392954,353.285554312978
+"111",27,5,1,0,"Cardiovascular","Black","Male","Nebraska",1973,"West North Central","Midwest","NE",686.570051988311,775.100447770951,870.9943079103,775.191858493275
+"112",27,5,1,0,"Communicable","Black","Male","Nebraska",1973,"West North Central","Midwest","NE",84.1391815729142,114.311674817442,149.631114372697,114.953389995231
+"113",27,5,1,0,"Injuries","Black","Male","Nebraska",1973,"West North Central","Midwest","NE",116.668923722964,137.217968265327,161.900782732381,137.500645791216
+"114",27,5,1,0,"Non-communicable","Black","Male","Nebraska",1973,"West North Central","Midwest","NE",127.770991280498,159.098689833199,199.156085202456,160.39208208251
+"115",27,5,1,1,"All other causes","Black","Female","Nebraska",1973,"West North Central","Midwest","NE",151.470288174873,180.938326129188,217.149578603398,181.187700006146
+"116",27,5,1,1,"Cancers","Black","Female","Nebraska",1973,"West North Central","Midwest","NE",188.661279426233,217.156982085701,258.976033432654,218.961064079353
+"117",27,5,1,1,"Cardiovascular","Black","Female","Nebraska",1973,"West North Central","Midwest","NE",552.849467873702,625.356364198056,697.974080666098,626.878475043352
+"118",27,5,1,1,"Communicable","Black","Female","Nebraska",1973,"West North Central","Midwest","NE",48.3490467248611,67.1778425038354,94.5218491548919,68.225322263757
+"119",27,5,1,1,"Injuries","Black","Female","Nebraska",1973,"West North Central","Midwest","NE",40.0243574554509,50.0528184495285,67.0006398074415,50.7087432416579
+"120",27,5,1,1,"Non-communicable","Black","Female","Nebraska",1973,"West North Central","Midwest","NE",86.7262991693226,106.920316198394,134.399085220989,108.142625045011
+"121",27,6,0,0,"All other causes","White","Male","Nebraska",1974,"West North Central","Midwest","NE",111.079314289233,115.061199591364,119.391415840772,115.07753571886
+"122",27,6,0,0,"Cancers","White","Male","Nebraska",1974,"West North Central","Midwest","NE",223.691297027829,230.299090072665,236.715309710919,230.283862548104
+"123",27,6,0,0,"Cardiovascular","White","Male","Nebraska",1974,"West North Central","Midwest","NE",732.195804179507,751.543229495708,770.703202246026,751.733902836912
+"124",27,6,0,0,"Communicable","White","Male","Nebraska",1974,"West North Central","Midwest","NE",50.5752163670706,54.5874512420261,58.9084467688287,54.5726984939161
+"125",27,6,0,0,"Injuries","White","Male","Nebraska",1974,"West North Central","Midwest","NE",101.0217669112,104.744824043106,108.764627350681,104.770399181416
+"126",27,6,0,0,"Non-communicable","White","Male","Nebraska",1974,"West North Central","Midwest","NE",92.7673935074983,96.4181630163088,100.480268579468,96.4587666410107
+"127",27,6,0,1,"All other causes","White","Female","Nebraska",1974,"West North Central","Midwest","NE",76.7345233860688,79.8657579338281,83.4135020794031,79.8737228460557
+"128",27,6,0,1,"Cancers","White","Female","Nebraska",1974,"West North Central","Midwest","NE",146.010877095055,150.001622526445,154.162536943765,150.081824913835
+"129",27,6,0,1,"Cardiovascular","White","Female","Nebraska",1974,"West North Central","Midwest","NE",442.766258783443,453.880092977698,466.046466598104,454.008973670977
+"130",27,6,0,1,"Communicable","White","Female","Nebraska",1974,"West North Central","Midwest","NE",30.8011460792502,33.337711318914,36.0895317249277,33.3259768998843
+"131",27,6,0,1,"Injuries","White","Female","Nebraska",1974,"West North Central","Midwest","NE",36.8274594097047,38.8310580633648,40.9853717033626,38.8420525163505
+"132",27,6,0,1,"Non-communicable","White","Female","Nebraska",1974,"West North Central","Midwest","NE",38.6123061204368,40.8243037994705,43.0955512057738,40.7908480576005
+"133",27,6,1,0,"All other causes","Black","Male","Nebraska",1974,"West North Central","Midwest","NE",182.209592198055,210.729768721928,244.388157419949,211.467506940858
+"134",27,6,1,0,"Cancers","Black","Male","Nebraska",1974,"West North Central","Midwest","NE",292.952332413767,353.028904088447,428.438425344804,353.787162794742
+"135",27,6,1,0,"Cardiovascular","Black","Male","Nebraska",1974,"West North Central","Midwest","NE",690.165766727325,778.325042720393,880.126965877183,780.524757010364
+"136",27,6,1,0,"Communicable","Black","Male","Nebraska",1974,"West North Central","Midwest","NE",82.2376836499483,110.800590033565,144.688051418082,111.769173002917
+"137",27,6,1,0,"Injuries","Black","Male","Nebraska",1974,"West North Central","Midwest","NE",116.997769596607,135.9007401155,160.347807436251,136.359128551972
+"138",27,6,1,0,"Non-communicable","Black","Male","Nebraska",1974,"West North Central","Midwest","NE",125.769208799366,156.761106353589,196.563459883394,158.571138098332
+"139",27,6,1,1,"All other causes","Black","Female","Nebraska",1974,"West North Central","Midwest","NE",148.416496469741,177.387779341336,211.890987003418,178.15351427531
+"140",27,6,1,1,"Cancers","Black","Female","Nebraska",1974,"West North Central","Midwest","NE",189.219267044061,216.037807104855,260.412056314054,217.83572632409
+"141",27,6,1,1,"Cardiovascular","Black","Female","Nebraska",1974,"West North Central","Midwest","NE",543.98808265146,612.225988551462,683.70832398405,612.331251835712
+"142",27,6,1,1,"Communicable","Black","Female","Nebraska",1974,"West North Central","Midwest","NE",47.4164444300183,64.4577436162583,87.9710547657807,65.3149912660181
+"143",27,6,1,1,"Injuries","Black","Female","Nebraska",1974,"West North Central","Midwest","NE",40.2123703285693,49.5297830137244,64.141375833539,50.1100881497138
+"144",27,6,1,1,"Non-communicable","Black","Female","Nebraska",1974,"West North Central","Midwest","NE",87.3077176433597,106.758312888489,134.079766193669,108.266476275095
+"145",27,7,0,0,"All other causes","White","Male","Nebraska",1975,"West North Central","Midwest","NE",111.68284551927,115.79345865513,120.226063587725,115.799787617401
+"146",27,7,0,0,"Cancers","White","Male","Nebraska",1975,"West North Central","Midwest","NE",225.71596192783,232.108195553463,238.473098378693,232.130379233723
+"147",27,7,0,0,"Cardiovascular","White","Male","Nebraska",1975,"West North Central","Midwest","NE",696.817362537077,714.855664566322,733.818483826553,715.132557847565
+"148",27,7,0,0,"Communicable","White","Male","Nebraska",1975,"West North Central","Midwest","NE",53.0444526752087,57.2253608805537,61.717758033241,57.1785912839195
+"149",27,7,0,0,"Injuries","White","Male","Nebraska",1975,"West North Central","Midwest","NE",98.182577553892,101.673674092563,105.870203181709,101.809618457749
+"150",27,7,0,0,"Non-communicable","White","Male","Nebraska",1975,"West North Central","Midwest","NE",89.9414012752127,93.9258591882865,98.0677011579124,93.9327958782057
+"151",27,7,0,1,"All other causes","White","Female","Nebraska",1975,"West North Central","Midwest","NE",75.383489398865,78.4890983130331,81.5324046873752,78.528786876864
+"152",27,7,0,1,"Cancers","White","Female","Nebraska",1975,"West North Central","Midwest","NE",146.298270579179,150.128802251107,154.198164913089,150.170061292042
+"153",27,7,0,1,"Cardiovascular","White","Female","Nebraska",1975,"West North Central","Midwest","NE",406.391712823687,417.074219862697,427.648553945335,417.205370184526
+"154",27,7,0,1,"Communicable","White","Female","Nebraska",1975,"West North Central","Midwest","NE",31.7788194101489,34.0827561016311,36.8904624979017,34.1082058533967
+"155",27,7,0,1,"Injuries","White","Female","Nebraska",1975,"West North Central","Midwest","NE",35.564622511916,37.2974724194274,39.1393173904708,37.3213772570977
+"156",27,7,0,1,"Non-communicable","White","Female","Nebraska",1975,"West North Central","Midwest","NE",38.3671564080637,40.4006966344003,42.7333226722799,40.4417823049957
+"157",27,7,1,0,"All other causes","Black","Male","Nebraska",1975,"West North Central","Midwest","NE",179.13687659096,207.572655437168,238.60351835622,207.387722955392
+"158",27,7,1,0,"Cancers","Black","Male","Nebraska",1975,"West North Central","Midwest","NE",295.3994998913,355.507854198509,423.573328393998,356.436120181869
+"159",27,7,1,0,"Cardiovascular","Black","Male","Nebraska",1975,"West North Central","Midwest","NE",679.453399824251,771.373282186413,872.854907539174,773.902776743509
+"160",27,7,1,0,"Communicable","Black","Male","Nebraska",1975,"West North Central","Midwest","NE",80.6592808692012,107.543355582291,141.088352214985,108.376874176368
+"161",27,7,1,0,"Injuries","Black","Male","Nebraska",1975,"West North Central","Midwest","NE",116.137725986716,134.316177268927,156.145633061503,134.731156455751
+"162",27,7,1,0,"Non-communicable","Black","Male","Nebraska",1975,"West North Central","Midwest","NE",122.90306765858,155.545231331379,191.482661758147,156.150893926031
+"163",27,7,1,1,"All other causes","Black","Female","Nebraska",1975,"West North Central","Midwest","NE",143.683546806914,171.559611928175,203.102916947718,171.95408419607
+"164",27,7,1,1,"Cancers","Black","Female","Nebraska",1975,"West North Central","Midwest","NE",190.234656767906,215.084502556062,259.235428357788,216.919513077725
+"165",27,7,1,1,"Cardiovascular","Black","Female","Nebraska",1975,"West North Central","Midwest","NE",537.198354178356,602.271678445162,669.968409767037,602.982541667716
+"166",27,7,1,1,"Communicable","Black","Female","Nebraska",1975,"West North Central","Midwest","NE",44.7600180519214,62.0653572415508,82.6716736647528,62.8332802048469
+"167",27,7,1,1,"Injuries","Black","Female","Nebraska",1975,"West North Central","Midwest","NE",39.8407468399829,49.0267792412004,63.4451359988069,49.4444349552782
+"168",27,7,1,1,"Non-communicable","Black","Female","Nebraska",1975,"West North Central","Midwest","NE",88.5651149710673,106.989494566943,134.038767951318,108.327273399412
+"169",27,8,0,0,"All other causes","White","Male","Nebraska",1976,"West North Central","Midwest","NE",111.484972894112,115.801510121332,119.798045037118,115.739242086624
+"170",27,8,0,0,"Cancers","White","Male","Nebraska",1976,"West North Central","Midwest","NE",226.833537926985,232.697529166971,239.115031681194,232.817255889259
+"171",27,8,0,0,"Cardiovascular","White","Male","Nebraska",1976,"West North Central","Midwest","NE",672.712806841899,688.849158337594,706.289147911265,689.245138401521
+"172",27,8,0,0,"Communicable","White","Male","Nebraska",1976,"West North Central","Midwest","NE",55.5417165643433,60.2897676791972,65.0999946256515,60.2427389947901
+"173",27,8,0,0,"Injuries","White","Male","Nebraska",1976,"West North Central","Midwest","NE",94.5301037115266,98.1641083370376,101.828344643888,98.1282105342123
+"174",27,8,0,0,"Non-communicable","White","Male","Nebraska",1976,"West North Central","Midwest","NE",89.0573033221725,92.9050895729154,96.6118523765466,92.8817252917714
+"175",27,8,0,1,"All other causes","White","Female","Nebraska",1976,"West North Central","Midwest","NE",76.5466747989751,79.5597184658833,82.7906412142339,79.6202989772455
+"176",27,8,0,1,"Cancers","White","Female","Nebraska",1976,"West North Central","Midwest","NE",146.077847046116,150.154083253375,153.844488071878,150.041324400734
+"177",27,8,0,1,"Cardiovascular","White","Female","Nebraska",1976,"West North Central","Midwest","NE",400.498030437098,410.315559423679,421.309279270353,410.456220867196
+"178",27,8,0,1,"Communicable","White","Female","Nebraska",1976,"West North Central","Midwest","NE",34.7882437211253,37.6041938545569,40.6000018684788,37.6418910850038
+"179",27,8,0,1,"Injuries","White","Female","Nebraska",1976,"West North Central","Midwest","NE",33.990302921749,35.70804386555,37.3110018340599,35.6968267622518
+"180",27,8,0,1,"Non-communicable","White","Female","Nebraska",1976,"West North Central","Midwest","NE",37.5027883194486,39.7015284445047,41.9068994147628,39.7251585889757
+"181",27,8,1,0,"All other causes","Black","Male","Nebraska",1976,"West North Central","Midwest","NE",172.476764593639,201.326804680284,233.566842980545,201.65549649257
+"182",27,8,1,0,"Cancers","Black","Male","Nebraska",1976,"West North Central","Midwest","NE",295.507235321552,354.076658430731,421.68485053671,355.291443593511
+"183",27,8,1,0,"Cardiovascular","Black","Male","Nebraska",1976,"West North Central","Midwest","NE",670.285800072496,752.464655040689,848.303251245044,754.209399697675
+"184",27,8,1,0,"Communicable","Black","Male","Nebraska",1976,"West North Central","Midwest","NE",78.5516996979553,103.224118244622,133.988707075273,103.985881528117
+"185",27,8,1,0,"Injuries","Black","Male","Nebraska",1976,"West North Central","Midwest","NE",113.740506323857,131.119497503755,152.67737228546,131.778443144726
+"186",27,8,1,0,"Non-communicable","Black","Male","Nebraska",1976,"West North Central","Midwest","NE",121.241240983117,154.25345611052,189.513773264898,154.336447741346
+"187",27,8,1,1,"All other causes","Black","Female","Nebraska",1976,"West North Central","Midwest","NE",142.13109673494,167.934612129195,198.369034022376,169.056096333329
+"188",27,8,1,1,"Cancers","Black","Female","Nebraska",1976,"West North Central","Midwest","NE",189.257437942334,213.342323542088,254.661067912844,215.692642556295
+"189",27,8,1,1,"Cardiovascular","Black","Female","Nebraska",1976,"West North Central","Midwest","NE",527.26174824109,588.282980466814,655.520252290574,588.653663174465
+"190",27,8,1,1,"Communicable","Black","Female","Nebraska",1976,"West North Central","Midwest","NE",45.8747394289779,61.433444401708,81.9062847951719,62.2716818430409
+"191",27,8,1,1,"Injuries","Black","Female","Nebraska",1976,"West North Central","Midwest","NE",39.7123727648097,47.9562479612176,61.8628356339553,48.5401068308525
+"192",27,8,1,1,"Non-communicable","Black","Female","Nebraska",1976,"West North Central","Midwest","NE",88.3323335293112,107.384970332545,133.955416888417,108.346722220468
+"193",27,9,0,0,"All other causes","White","Male","Nebraska",1977,"West North Central","Midwest","NE",110.977096212646,115.035213254842,119.316973192519,115.134679869786
+"194",27,9,0,0,"Cancers","White","Male","Nebraska",1977,"West North Central","Midwest","NE",232.080728203248,238.236434493388,244.508136273616,238.16489739755
+"195",27,9,0,0,"Cardiovascular","White","Male","Nebraska",1977,"West North Central","Midwest","NE",655.709930143837,672.767508374103,689.009278233718,672.77091706323
+"196",27,9,0,0,"Communicable","White","Male","Nebraska",1977,"West North Central","Midwest","NE",51.3345246948675,55.3072315997729,60.019188931635,55.4192843080873
+"197",27,9,0,0,"Injuries","White","Male","Nebraska",1977,"West North Central","Midwest","NE",92.1622358617251,95.5347229764654,98.9485251479666,95.5515796218057
+"198",27,9,0,0,"Non-communicable","White","Male","Nebraska",1977,"West North Central","Midwest","NE",88.0227165661462,92.025872049435,95.8303341343271,92.0258683928156
+"199",27,9,0,1,"All other causes","White","Female","Nebraska",1977,"West North Central","Midwest","NE",76.1004469946273,78.9834355250725,82.3778848218387,79.0340210822702
+"200",27,9,0,1,"Cancers","White","Female","Nebraska",1977,"West North Central","Midwest","NE",147.282013958588,151.184022401251,155.227291417539,151.164608313049
+"201",27,9,0,1,"Cardiovascular","White","Female","Nebraska",1977,"West North Central","Midwest","NE",382.456789406869,393.053117346838,402.193363883485,392.763369079141
+"202",27,9,0,1,"Communicable","White","Female","Nebraska",1977,"West North Central","Midwest","NE",28.7019389477065,30.9259395620056,33.3949632444306,30.9200725829932
+"203",27,9,0,1,"Injuries","White","Female","Nebraska",1977,"West North Central","Midwest","NE",32.7443018776428,34.5386882352299,36.1777739721516,34.5092409777635
+"204",27,9,0,1,"Non-communicable","White","Female","Nebraska",1977,"West North Central","Midwest","NE",37.1022561608225,39.1964673683429,41.3626478186453,39.1541853258447
+"205",27,9,1,0,"All other causes","Black","Male","Nebraska",1977,"West North Central","Midwest","NE",169.411263199526,198.727776616454,229.13050959693,198.796236984061
+"206",27,9,1,0,"Cancers","Black","Male","Nebraska",1977,"West North Central","Midwest","NE",297.765078834715,353.205422113342,414.523828330252,354.025733220082
+"207",27,9,1,0,"Cardiovascular","Black","Male","Nebraska",1977,"West North Central","Midwest","NE",670.451237890841,746.492405219846,849.110053584525,750.650561441694
+"208",27,9,1,0,"Communicable","Black","Male","Nebraska",1977,"West North Central","Midwest","NE",76.7495678993129,101.3580114213,132.729228230856,102.265577596772
+"209",27,9,1,0,"Injuries","Black","Male","Nebraska",1977,"West North Central","Midwest","NE",111.793304901669,128.548618130435,149.380866300588,128.977214629645
+"210",27,9,1,0,"Non-communicable","Black","Male","Nebraska",1977,"West North Central","Midwest","NE",119.01075877604,152.145064442599,184.521720540599,152.100783273285
+"211",27,9,1,1,"All other causes","Black","Female","Nebraska",1977,"West North Central","Midwest","NE",139.743936436283,163.843709057558,194.262692927548,164.916902168616
+"212",27,9,1,1,"Cancers","Black","Female","Nebraska",1977,"West North Central","Midwest","NE",189.774678880371,212.384181027782,253.666940099418,214.53034568252
+"213",27,9,1,1,"Cardiovascular","Black","Female","Nebraska",1977,"West North Central","Midwest","NE",517.710888578907,578.295113437633,645.863973456129,579.211042974145
+"214",27,9,1,1,"Communicable","Black","Female","Nebraska",1977,"West North Central","Midwest","NE",45.1453581655353,60.6976623691409,82.4055944153903,61.6561786757599
+"215",27,9,1,1,"Injuries","Black","Female","Nebraska",1977,"West North Central","Midwest","NE",39.5979180825731,47.1544913483737,60.262806593498,47.6953529401985
+"216",27,9,1,1,"Non-communicable","Black","Female","Nebraska",1977,"West North Central","Midwest","NE",88.8388680223604,106.719858653079,132.792817342027,108.00277980658
+"217",27,10,0,0,"All other causes","White","Male","Nebraska",1978,"West North Central","Midwest","NE",109.906400643884,114.092519996822,118.141167048297,114.155245843559
+"218",27,10,0,0,"Cancers","White","Male","Nebraska",1978,"West North Central","Midwest","NE",235.03690667223,241.56749864964,247.464136345858,241.455282213617
+"219",27,10,0,0,"Cardiovascular","White","Male","Nebraska",1978,"West North Central","Midwest","NE",647.594162334981,663.397287989945,680.625679939274,663.446395266758
+"220",27,10,0,0,"Communicable","White","Male","Nebraska",1978,"West North Central","Midwest","NE",48.8890419961887,52.9450520471172,57.2663466207578,53.024389141613
+"221",27,10,0,0,"Injuries","White","Male","Nebraska",1978,"West North Central","Midwest","NE",89.0824623446132,92.5703081828648,96.0571831144403,92.5258426198278
+"222",27,10,0,0,"Non-communicable","White","Male","Nebraska",1978,"West North Central","Midwest","NE",89.1580338191556,92.9375905602938,97.2621317230677,92.9994548251434
+"223",27,10,0,1,"All other causes","White","Female","Nebraska",1978,"West North Central","Midwest","NE",74.4228101144553,77.5084770796563,80.8285552810146,77.5492897985111
+"224",27,10,0,1,"Cancers","White","Female","Nebraska",1978,"West North Central","Midwest","NE",148.151599161558,152.271005223156,156.267514297238,152.229125452242
+"225",27,10,0,1,"Cardiovascular","White","Female","Nebraska",1978,"West North Central","Midwest","NE",374.445206122314,385.090477248432,394.063782469332,384.895538548293
+"226",27,10,0,1,"Communicable","White","Female","Nebraska",1978,"West North Central","Midwest","NE",28.2110300833718,30.5073219527494,32.8612225720169,30.5187306656206
+"227",27,10,0,1,"Injuries","White","Female","Nebraska",1978,"West North Central","Midwest","NE",31.7699689396472,33.5387920514618,35.1452999261262,33.5001251771087
+"228",27,10,0,1,"Non-communicable","White","Female","Nebraska",1978,"West North Central","Midwest","NE",36.3658956347906,38.5856916069733,40.8647665495685,38.5794900852276
+"229",27,10,1,0,"All other causes","Black","Male","Nebraska",1978,"West North Central","Midwest","NE",166.878253559542,197.922329784237,230.034525578583,198.092193500003
+"230",27,10,1,0,"Cancers","Black","Male","Nebraska",1978,"West North Central","Midwest","NE",296.912944805486,353.517315185649,418.82303420386,354.285839172753
+"231",27,10,1,0,"Cardiovascular","Black","Male","Nebraska",1978,"West North Central","Midwest","NE",651.496749581966,732.252610629152,822.497900392365,734.033801707454
+"232",27,10,1,0,"Communicable","Black","Male","Nebraska",1978,"West North Central","Midwest","NE",76.9804456867145,100.83640082461,133.772159104556,102.048253247387
+"233",27,10,1,0,"Injuries","Black","Male","Nebraska",1978,"West North Central","Midwest","NE",109.517310099222,126.004861821993,147.793612295087,126.666012514756
+"234",27,10,1,0,"Non-communicable","Black","Male","Nebraska",1978,"West North Central","Midwest","NE",116.368924409642,151.082846114491,181.893322367557,150.802050387995
+"235",27,10,1,1,"All other causes","Black","Female","Nebraska",1978,"West North Central","Midwest","NE",139.110220437436,162.442514410555,190.216985331411,163.265176223589
+"236",27,10,1,1,"Cancers","Black","Female","Nebraska",1978,"West North Central","Midwest","NE",188.847199035916,211.172582014793,254.287178707062,213.268472899602
+"237",27,10,1,1,"Cardiovascular","Black","Female","Nebraska",1978,"West North Central","Midwest","NE",510.776861753964,568.555558979768,635.599439755032,571.107481501815
+"238",27,10,1,1,"Communicable","Black","Female","Nebraska",1978,"West North Central","Midwest","NE",45.4972483742231,60.8981507528488,83.2437512569551,61.6953254462267
+"239",27,10,1,1,"Injuries","Black","Female","Nebraska",1978,"West North Central","Midwest","NE",39.1830678349157,46.3896879835911,58.4374157275318,46.8662355129766
+"240",27,10,1,1,"Non-communicable","Black","Female","Nebraska",1978,"West North Central","Midwest","NE",90.0001162480267,106.83772779947,131.093358044631,108.083853519575
+"241",27,11,0,0,"All other causes","White","Male","Nebraska",1979,"West North Central","Midwest","NE",108.583158671305,112.681267381832,116.742927316546,112.693291984672
+"242",27,11,0,0,"Cancers","White","Male","Nebraska",1979,"West North Central","Midwest","NE",236.878841062532,243.286625340878,250.016358229298,243.384416574386
+"243",27,11,0,0,"Cardiovascular","White","Male","Nebraska",1979,"West North Central","Midwest","NE",627.364515360958,643.532729484486,659.60068103419,643.601065445466
+"244",27,11,0,0,"Communicable","White","Male","Nebraska",1979,"West North Central","Midwest","NE",45.8053499673855,49.7752893209923,53.7374588282244,49.8120254338764
+"245",27,11,0,0,"Injuries","White","Male","Nebraska",1979,"West North Central","Midwest","NE",87.5691243680878,90.7658982215763,94.1711669000091,90.7744970928079
+"246",27,11,0,0,"Non-communicable","White","Male","Nebraska",1979,"West North Central","Midwest","NE",89.6649516420449,93.5851519113253,97.4141339706374,93.5697882135056
+"247",27,11,0,1,"All other causes","White","Female","Nebraska",1979,"West North Central","Midwest","NE",74.5160874125494,77.5538127324281,80.76845119675,77.5890042000333
+"248",27,11,0,1,"Cancers","White","Female","Nebraska",1979,"West North Central","Midwest","NE",147.933114126883,151.851042356518,155.72867072696,151.850492819108
+"249",27,11,0,1,"Cardiovascular","White","Female","Nebraska",1979,"West North Central","Midwest","NE",368.77539724854,378.486978111115,388.681401225589,378.646773969764
+"250",27,11,0,1,"Communicable","White","Female","Nebraska",1979,"West North Central","Midwest","NE",25.5327827389719,27.7946055905068,30.0998525068755,27.775467752166
+"251",27,11,0,1,"Injuries","White","Female","Nebraska",1979,"West North Central","Midwest","NE",31.101145899174,32.6974767323246,34.4620307073298,32.7326409436043
+"252",27,11,0,1,"Non-communicable","White","Female","Nebraska",1979,"West North Central","Midwest","NE",36.685840702302,38.8424338529325,41.0722257354532,38.8414883154906
+"253",27,11,1,0,"All other causes","Black","Male","Nebraska",1979,"West North Central","Midwest","NE",165.088510347054,196.769975871713,225.525186502542,196.920414907658
+"254",27,11,1,0,"Cancers","Black","Male","Nebraska",1979,"West North Central","Midwest","NE",298.006565009288,354.359558889385,420.017250212607,355.491901828723
+"255",27,11,1,0,"Cardiovascular","Black","Male","Nebraska",1979,"West North Central","Midwest","NE",630.283709563233,708.004224746424,799.265772914842,708.533177566908
+"256",27,11,1,0,"Communicable","Black","Male","Nebraska",1979,"West North Central","Midwest","NE",78.3755718947517,101.873538061332,137.137564553587,103.075714996541
+"257",27,11,1,0,"Injuries","Black","Male","Nebraska",1979,"West North Central","Midwest","NE",108.096448179579,124.177299143959,144.847503823129,124.776959183418
+"258",27,11,1,0,"Non-communicable","Black","Male","Nebraska",1979,"West North Central","Midwest","NE",116.004850878724,151.548328693542,180.989865130177,150.89928182012
+"259",27,11,1,1,"All other causes","Black","Female","Nebraska",1979,"West North Central","Midwest","NE",138.707418553318,159.651883026743,186.032714734094,160.599154282276
+"260",27,11,1,1,"Cancers","Black","Female","Nebraska",1979,"West North Central","Midwest","NE",187.856667216065,209.778738646309,249.096694111078,212.25346990233
+"261",27,11,1,1,"Cardiovascular","Black","Female","Nebraska",1979,"West North Central","Midwest","NE",531.02015383985,583.852092153376,646.887935274924,586.179070897116
+"262",27,11,1,1,"Communicable","Black","Female","Nebraska",1979,"West North Central","Midwest","NE",44.9487080032112,60.23415037092,79.9487176875344,60.972668822515
+"263",27,11,1,1,"Injuries","Black","Female","Nebraska",1979,"West North Central","Midwest","NE",38.9762694216067,45.6730400850147,57.5145394819223,46.2692518558936
+"264",27,11,1,1,"Non-communicable","Black","Female","Nebraska",1979,"West North Central","Midwest","NE",89.9715280929143,106.994072829962,130.986622883108,107.894874756461
+"265",27,12,0,0,"All other causes","White","Male","Nebraska",1980,"West North Central","Midwest","NE",107.865602072103,112.187312794094,116.112656090809,112.119992186994
+"266",27,12,0,0,"Cancers","White","Male","Nebraska",1980,"West North Central","Midwest","NE",237.054945268926,243.502545060708,250.073444013791,243.482247540608
+"267",27,12,0,0,"Cardiovascular","White","Male","Nebraska",1980,"West North Central","Midwest","NE",608.464843103972,623.823661528027,638.399166511335,623.670832309601
+"268",27,12,0,0,"Communicable","White","Male","Nebraska",1980,"West North Central","Midwest","NE",44.3579052031201,48.2960367966373,52.2807594554705,48.3115975997014
+"269",27,12,0,0,"Injuries","White","Male","Nebraska",1980,"West North Central","Midwest","NE",86.0548754433032,89.1248952289469,92.5377144401341,89.1035909154361
+"270",27,12,0,0,"Non-communicable","White","Male","Nebraska",1980,"West North Central","Midwest","NE",90.9441520446298,95.0035569156335,99.0783047837407,94.9744098381168
+"271",27,12,0,1,"All other causes","White","Female","Nebraska",1980,"West North Central","Midwest","NE",74.6079128041456,77.6805622581826,80.9084349753305,77.6969836347501
+"272",27,12,0,1,"Cancers","White","Female","Nebraska",1980,"West North Central","Midwest","NE",148.408013120918,152.441756856908,156.652823235868,152.438415364316
+"273",27,12,0,1,"Cardiovascular","White","Female","Nebraska",1980,"West North Central","Midwest","NE",363.901141429543,373.308922174535,383.651006089156,373.343191334891
+"274",27,12,0,1,"Communicable","White","Female","Nebraska",1980,"West North Central","Midwest","NE",26.8052765922038,29.1115325965458,31.3844104615563,29.1125355120108
+"275",27,12,0,1,"Injuries","White","Female","Nebraska",1980,"West North Central","Midwest","NE",30.5735082681948,32.1933735808187,33.8254622607094,32.2136219309514
+"276",27,12,0,1,"Non-communicable","White","Female","Nebraska",1980,"West North Central","Midwest","NE",37.4581354035513,39.612078968276,41.682496609193,39.5868120042391
+"277",27,12,1,0,"All other causes","Black","Male","Nebraska",1980,"West North Central","Midwest","NE",167.122206042551,196.993239175628,226.408366482225,197.249002596495
+"278",27,12,1,0,"Cancers","Black","Male","Nebraska",1980,"West North Central","Midwest","NE",300.045810284036,355.635387855855,417.867051765335,356.990501237114
+"279",27,12,1,0,"Cardiovascular","Black","Male","Nebraska",1980,"West North Central","Midwest","NE",601.615208148516,683.116241820419,778.31494683283,683.415756607932
+"280",27,12,1,0,"Communicable","Black","Male","Nebraska",1980,"West North Central","Midwest","NE",77.2438978485772,103.477692910636,137.072721084994,104.447038767752
+"281",27,12,1,0,"Injuries","Black","Male","Nebraska",1980,"West North Central","Midwest","NE",106.362912471483,122.16589762687,143.62730300317,122.702352212161
+"282",27,12,1,0,"Non-communicable","Black","Male","Nebraska",1980,"West North Central","Midwest","NE",114.416540565078,151.280819003064,180.575599701126,150.738702619368
+"283",27,12,1,1,"All other causes","Black","Female","Nebraska",1980,"West North Central","Midwest","NE",135.722174847533,155.058544342846,179.983526633166,155.815586484718
+"284",27,12,1,1,"Cancers","Black","Female","Nebraska",1980,"West North Central","Midwest","NE",187.31622061867,208.327840794354,247.296801174131,210.793114990639
+"285",27,12,1,1,"Cardiovascular","Black","Female","Nebraska",1980,"West North Central","Midwest","NE",508.854251683753,568.611408708721,628.868316975267,569.907302902263
+"286",27,12,1,1,"Communicable","Black","Female","Nebraska",1980,"West North Central","Midwest","NE",44.4327023000701,59.8849753845355,79.3583497585477,60.0742854778904
+"287",27,12,1,1,"Injuries","Black","Female","Nebraska",1980,"West North Central","Midwest","NE",38.7444410251586,45.271287446049,56.5966657695307,45.6890304235766
+"288",27,12,1,1,"Non-communicable","Black","Female","Nebraska",1980,"West North Central","Midwest","NE",89.8876206848993,106.904091782311,129.673966209442,107.666173004182
+"289",27,13,0,0,"All other causes","White","Male","Nebraska",1981,"West North Central","Midwest","NE",108.169865212155,111.90435688902,115.802279734801,111.920967809674
+"290",27,13,0,0,"Cancers","White","Male","Nebraska",1981,"West North Central","Midwest","NE",236.947014417976,243.444054655406,249.845773145685,243.465073654153
+"291",27,13,0,0,"Cardiovascular","White","Male","Nebraska",1981,"West North Central","Midwest","NE",606.395351044567,621.026186198451,636.900016459009,621.034967838671
+"292",27,13,0,0,"Communicable","White","Male","Nebraska",1981,"West North Central","Midwest","NE",46.6012436751077,50.5376273018881,54.6475492921645,50.5841066997917
+"293",27,13,0,0,"Injuries","White","Male","Nebraska",1981,"West North Central","Midwest","NE",83.979884055861,86.9139879336544,90.3185230153444,86.9622091846777
+"294",27,13,0,0,"Non-communicable","White","Male","Nebraska",1981,"West North Central","Midwest","NE",91.9598267837499,95.8736583716534,99.7246667941247,95.8403001659951
+"295",27,13,0,1,"All other causes","White","Female","Nebraska",1981,"West North Central","Midwest","NE",74.7578312380615,77.6382136831278,80.7308321794195,77.6761780484776
+"296",27,13,0,1,"Cancers","White","Female","Nebraska",1981,"West North Central","Midwest","NE",148.822883256793,152.565388114911,156.569949000702,152.606983974813
+"297",27,13,0,1,"Cardiovascular","White","Female","Nebraska",1981,"West North Central","Midwest","NE",360.545347500684,370.420563134787,379.39775711751,370.295229599003
+"298",27,13,0,1,"Communicable","White","Female","Nebraska",1981,"West North Central","Midwest","NE",28.137304076844,30.2006408011459,32.7042144215327,30.2625382148227
+"299",27,13,0,1,"Injuries","White","Female","Nebraska",1981,"West North Central","Midwest","NE",29.683615882072,31.2711925330219,32.9399090227518,31.2838904441792
+"300",27,13,0,1,"Non-communicable","White","Female","Nebraska",1981,"West North Central","Midwest","NE",39.0386174712911,41.156641579734,43.4217671087324,41.1550538079616
+"301",27,13,1,0,"All other causes","Black","Male","Nebraska",1981,"West North Central","Midwest","NE",165.934209180646,195.416531368472,224.673898232231,196.093688425184
+"302",27,13,1,0,"Cancers","Black","Male","Nebraska",1981,"West North Central","Midwest","NE",301.621033957608,359.361135036422,417.441695925435,359.594836686615
+"303",27,13,1,0,"Cardiovascular","Black","Male","Nebraska",1981,"West North Central","Midwest","NE",591.449452898721,671.104097936299,753.436959160576,672.295328340097
+"304",27,13,1,0,"Communicable","Black","Male","Nebraska",1981,"West North Central","Midwest","NE",77.8245794672602,104.97362425213,142.24001191864,106.352761338683
+"305",27,13,1,0,"Injuries","Black","Male","Nebraska",1981,"West North Central","Midwest","NE",104.266326358242,120.445922328199,140.857853729113,120.818245274893
+"306",27,13,1,0,"Non-communicable","Black","Male","Nebraska",1981,"West North Central","Midwest","NE",117.102106688983,151.494621982434,182.355054890388,150.796640919548
+"307",27,13,1,1,"All other causes","Black","Female","Nebraska",1981,"West North Central","Midwest","NE",132.298025686472,149.911124438261,174.515334921509,151.061291889175
+"308",27,13,1,1,"Cancers","Black","Female","Nebraska",1981,"West North Central","Midwest","NE",185.689770147814,208.02235036504,246.44879859671,210.219440696648
+"309",27,13,1,1,"Cardiovascular","Black","Female","Nebraska",1981,"West North Central","Midwest","NE",478.964195661078,540.180055982764,601.977566711846,540.711890035872
+"310",27,13,1,1,"Communicable","Black","Female","Nebraska",1981,"West North Central","Midwest","NE",44.6423777913948,58.2335643394922,77.108565856609,58.9068833373675
+"311",27,13,1,1,"Injuries","Black","Female","Nebraska",1981,"West North Central","Midwest","NE",38.4588756726168,44.6819277022728,55.4561012992511,45.2143728017977
+"312",27,13,1,1,"Non-communicable","Black","Female","Nebraska",1981,"West North Central","Midwest","NE",89.4101371731854,107.34315355685,129.158117751436,107.7197067244
+"313",27,14,0,0,"All other causes","White","Male","Nebraska",1982,"West North Central","Midwest","NE",107.870825503956,111.754740968163,115.649531284476,111.71579695853
+"314",27,14,0,0,"Cancers","White","Male","Nebraska",1982,"West North Central","Midwest","NE",237.319643707037,243.521333272797,249.937688798031,243.591882743621
+"315",27,14,0,0,"Cardiovascular","White","Male","Nebraska",1982,"West North Central","Midwest","NE",598.762044233462,615.452738258851,631.76946856009,615.583614037211
+"316",27,14,0,0,"Communicable","White","Male","Nebraska",1982,"West North Central","Midwest","NE",47.6064671002827,51.6015982373173,55.9754573860128,51.6739232027156
+"317",27,14,0,0,"Injuries","White","Male","Nebraska",1982,"West North Central","Midwest","NE",80.1713106567387,83.2019157883717,86.4516989543418,83.1974588281324
+"318",27,14,0,0,"Non-communicable","White","Male","Nebraska",1982,"West North Central","Midwest","NE",94.557091993918,98.4419517929618,103.091821372317,98.5534411253481
+"319",27,14,0,1,"All other causes","White","Female","Nebraska",1982,"West North Central","Midwest","NE",76.9734695809525,79.9042502445548,83.2798064780645,79.9292340982466
+"320",27,14,0,1,"Cancers","White","Female","Nebraska",1982,"West North Central","Midwest","NE",149.227030324083,153.273403906152,157.375842772511,153.225498111269
+"321",27,14,0,1,"Cardiovascular","White","Female","Nebraska",1982,"West North Central","Midwest","NE",353.037849576829,362.214669905555,371.197115267927,362.270515040497
+"322",27,14,0,1,"Communicable","White","Female","Nebraska",1982,"West North Central","Midwest","NE",26.6860026788008,28.9485559236992,31.2697499091648,28.9260629477527
+"323",27,14,0,1,"Injuries","White","Female","Nebraska",1982,"West North Central","Midwest","NE",28.8135405751535,30.3716376515128,31.9074718508352,30.3727885108977
+"324",27,14,0,1,"Non-communicable","White","Female","Nebraska",1982,"West North Central","Midwest","NE",40.8227644105138,42.9449998810536,45.1639918365639,42.9526973918115
+"325",27,14,1,0,"All other causes","Black","Male","Nebraska",1982,"West North Central","Midwest","NE",167.113945291578,195.320049104782,225.243947753676,195.392477143876
+"326",27,14,1,0,"Cancers","Black","Male","Nebraska",1982,"West North Central","Midwest","NE",306.198968646268,363.338654502825,419.715073741172,363.054342703654
+"327",27,14,1,0,"Cardiovascular","Black","Male","Nebraska",1982,"West North Central","Midwest","NE",583.434279014346,661.316061008564,735.416323119934,659.89433969927
+"328",27,14,1,0,"Communicable","Black","Male","Nebraska",1982,"West North Central","Midwest","NE",78.6871269737436,105.702963320051,145.75064625345,107.181618695
+"329",27,14,1,0,"Injuries","Black","Male","Nebraska",1982,"West North Central","Midwest","NE",101.764649276284,118.789807371253,137.919163330876,119.006903693859
+"330",27,14,1,0,"Non-communicable","Black","Male","Nebraska",1982,"West North Central","Midwest","NE",117.246238274008,151.69200916759,180.641032594318,151.100258014222
+"331",27,14,1,1,"All other causes","Black","Female","Nebraska",1982,"West North Central","Midwest","NE",128.226141062206,147.410655115258,170.34909860271,147.847118009417
+"332",27,14,1,1,"Cancers","Black","Female","Nebraska",1982,"West North Central","Midwest","NE",186.670663286462,208.244967509942,243.857479818903,210.105908726434
+"333",27,14,1,1,"Cardiovascular","Black","Female","Nebraska",1982,"West North Central","Midwest","NE",467.460295325311,521.113450147251,579.658456329617,521.834160928035
+"334",27,14,1,1,"Communicable","Black","Female","Nebraska",1982,"West North Central","Midwest","NE",44.3675530760159,58.0080789072258,78.4780127451929,58.9512432113849
+"335",27,14,1,1,"Injuries","Black","Female","Nebraska",1982,"West North Central","Midwest","NE",38.0823523485505,44.1496114620955,55.6062132174753,44.6808308377312
+"336",27,14,1,1,"Non-communicable","Black","Female","Nebraska",1982,"West North Central","Midwest","NE",90.0661998127475,108.005594020982,129.462741728172,108.571906258298
+"337",27,15,0,0,"All other causes","White","Male","Nebraska",1983,"West North Central","Midwest","NE",110.801813734134,114.853550674297,118.733569362536,114.838561141417
+"338",27,15,0,0,"Cancers","White","Male","Nebraska",1983,"West North Central","Midwest","NE",238.392320958116,244.447026024258,250.526055479445,244.421725965617
+"339",27,15,0,0,"Cardiovascular","White","Male","Nebraska",1983,"West North Central","Midwest","NE",593.265607003468,608.035224997956,623.494114805935,608.277226342975
+"340",27,15,0,0,"Communicable","White","Male","Nebraska",1983,"West North Central","Midwest","NE",49.5619059245077,53.5829539404411,57.9444097433304,53.6774176829273
+"341",27,15,0,0,"Injuries","White","Male","Nebraska",1983,"West North Central","Midwest","NE",78.0944510803611,81.1618289439769,84.261766126821,81.1698889881337
+"342",27,15,0,0,"Non-communicable","White","Male","Nebraska",1983,"West North Central","Midwest","NE",96.4600464072063,100.63658954249,105.096946132411,100.660826154618
+"343",27,15,0,1,"All other causes","White","Female","Nebraska",1983,"West North Central","Midwest","NE",78.7848489569234,81.9061606481717,85.1811538563736,81.9425772853695
+"344",27,15,0,1,"Cancers","White","Female","Nebraska",1983,"West North Central","Midwest","NE",149.202291069769,153.649530988757,157.740022103813,153.623058642612
+"345",27,15,0,1,"Cardiovascular","White","Female","Nebraska",1983,"West North Central","Midwest","NE",347.444052394318,356.14165369294,364.926722535536,356.137448032282
+"346",27,15,0,1,"Communicable","White","Female","Nebraska",1983,"West North Central","Midwest","NE",29.0615406290045,31.2725614790478,33.6634619992409,31.3538293188396
+"347",27,15,0,1,"Injuries","White","Female","Nebraska",1983,"West North Central","Midwest","NE",27.8265389297801,29.4761984859953,30.9079969784026,29.4408834550484
+"348",27,15,0,1,"Non-communicable","White","Female","Nebraska",1983,"West North Central","Midwest","NE",42.1215359459318,44.3331217714289,46.5842633204046,44.3202745170446
+"349",27,15,1,0,"All other causes","Black","Male","Nebraska",1983,"West North Central","Midwest","NE",165.791375656317,193.995408859801,224.648517570146,194.549658733579
+"350",27,15,1,0,"Cancers","Black","Male","Nebraska",1983,"West North Central","Midwest","NE",308.699843948818,366.998059678461,423.897376159204,367.054650230051
+"351",27,15,1,0,"Cardiovascular","Black","Male","Nebraska",1983,"West North Central","Midwest","NE",575.528954928845,647.062305636845,721.639215987698,647.128410511709
+"352",27,15,1,0,"Communicable","Black","Male","Nebraska",1983,"West North Central","Midwest","NE",78.3968454611271,106.291304691432,149.744373456026,108.312972143241
+"353",27,15,1,0,"Injuries","Black","Male","Nebraska",1983,"West North Central","Midwest","NE",99.9441770212171,116.287166340651,135.116883296198,116.65450704654
+"354",27,15,1,0,"Non-communicable","Black","Male","Nebraska",1983,"West North Central","Midwest","NE",117.830301752905,153.089088573469,181.73212936392,151.883599142376
+"355",27,15,1,1,"All other causes","Black","Female","Nebraska",1983,"West North Central","Midwest","NE",125.835174310725,145.320066158491,168.848428312555,145.963345404687
+"356",27,15,1,1,"Cancers","Black","Female","Nebraska",1983,"West North Central","Midwest","NE",186.223876589476,207.307553809901,240.878716617577,209.233626365808
+"357",27,15,1,1,"Cardiovascular","Black","Female","Nebraska",1983,"West North Central","Midwest","NE",451.075453052417,500.747012946106,557.843433740476,501.220610975931
+"358",27,15,1,1,"Communicable","Black","Female","Nebraska",1983,"West North Central","Midwest","NE",44.3635852980557,59.0512749212853,80.0752826006956,59.748400330961
+"359",27,15,1,1,"Injuries","Black","Female","Nebraska",1983,"West North Central","Midwest","NE",37.6579350641264,43.4008820416774,54.4998652280884,43.9813641561079
+"360",27,15,1,1,"Non-communicable","Black","Female","Nebraska",1983,"West North Central","Midwest","NE",91.7668824507346,108.943403778271,131.384266417033,109.478627018645
+"361",27,16,0,0,"All other causes","White","Male","Nebraska",1984,"West North Central","Midwest","NE",112.297034905813,116.466617619416,120.976428902315,116.53541233792
+"362",27,16,0,0,"Cancers","White","Male","Nebraska",1984,"West North Central","Midwest","NE",240.674254043832,247.077024824238,253.501472365514,247.115228804065
+"363",27,16,0,0,"Cardiovascular","White","Male","Nebraska",1984,"West North Central","Midwest","NE",572.198114806916,586.264329314004,601.820669159227,586.558122571566
+"364",27,16,0,0,"Communicable","White","Male","Nebraska",1984,"West North Central","Midwest","NE",49.7419798630101,53.7496351950526,57.8791333162756,53.7431006169935
+"365",27,16,0,0,"Injuries","White","Male","Nebraska",1984,"West North Central","Midwest","NE",77.5831926989101,80.4731546036845,83.483311920358,80.4799226379531
+"366",27,16,0,0,"Non-communicable","White","Male","Nebraska",1984,"West North Central","Midwest","NE",96.6823777196295,100.770976180401,104.83115389446,100.71646819724
+"367",27,16,0,1,"All other causes","White","Female","Nebraska",1984,"West North Central","Midwest","NE",80.4157335888591,83.5835243576678,86.9425137893946,83.6501842583257
+"368",27,16,0,1,"Cancers","White","Female","Nebraska",1984,"West North Central","Midwest","NE",150.134607474777,154.303126559688,158.566975613754,154.326283909152
+"369",27,16,0,1,"Cardiovascular","White","Female","Nebraska",1984,"West North Central","Midwest","NE",340.698941915075,348.918085850755,358.032989119021,348.971638199507
+"370",27,16,0,1,"Communicable","White","Female","Nebraska",1984,"West North Central","Midwest","NE",29.3786775161629,31.6020167824926,33.8040584911767,31.627619889917
+"371",27,16,0,1,"Injuries","White","Female","Nebraska",1984,"West North Central","Midwest","NE",27.706784285186,29.1664638994487,30.716621124648,29.1676783411892
+"372",27,16,0,1,"Non-communicable","White","Female","Nebraska",1984,"West North Central","Midwest","NE",43.5554421927219,45.7634173185058,48.0139612168532,45.7700589256367
+"373",27,16,1,0,"All other causes","Black","Male","Nebraska",1984,"West North Central","Midwest","NE",166.559103665743,193.248844966115,222.976586179711,193.698108124118
+"374",27,16,1,0,"Cancers","Black","Male","Nebraska",1984,"West North Central","Midwest","NE",316.738541449643,372.115499057957,433.40750533417,373.37700467189
+"375",27,16,1,0,"Cardiovascular","Black","Male","Nebraska",1984,"West North Central","Midwest","NE",572.145802947716,643.215237032112,716.321807293142,644.676591009327
+"376",27,16,1,0,"Communicable","Black","Male","Nebraska",1984,"West North Central","Midwest","NE",78.9573393756649,107.730791598449,155.213677328123,109.981447454855
+"377",27,16,1,0,"Injuries","Black","Male","Nebraska",1984,"West North Central","Midwest","NE",97.5488573844162,114.19160132034,131.655558006773,114.405864059061
+"378",27,16,1,0,"Non-communicable","Black","Male","Nebraska",1984,"West North Central","Midwest","NE",118.654871623977,153.313391071297,180.938824399341,152.668887625624
+"379",27,16,1,1,"All other causes","Black","Female","Nebraska",1984,"West North Central","Midwest","NE",124.817579156644,145.191021431722,169.680307750672,145.818631426867
+"380",27,16,1,1,"Cancers","Black","Female","Nebraska",1984,"West North Central","Midwest","NE",185.778111557526,207.747107470126,239.251606723612,208.890084500509
+"381",27,16,1,1,"Cardiovascular","Black","Female","Nebraska",1984,"West North Central","Midwest","NE",445.629553180482,498.569103923629,556.373589644591,499.673481572651
+"382",27,16,1,1,"Communicable","Black","Female","Nebraska",1984,"West North Central","Midwest","NE",44.3894520717566,59.2953849818429,81.0938397134916,60.2196592617241
+"383",27,16,1,1,"Injuries","Black","Female","Nebraska",1984,"West North Central","Midwest","NE",36.8910870699619,42.6998644077314,54.2463563566646,43.3759637605001
+"384",27,16,1,1,"Non-communicable","Black","Female","Nebraska",1984,"West North Central","Midwest","NE",91.7947811908296,110.183267537229,131.689164994973,110.579129920287
+"385",27,17,0,0,"All other causes","White","Male","Nebraska",1985,"West North Central","Midwest","NE",113.933441326456,118.029777290948,122.345279152447,118.100956780317
+"386",27,17,0,0,"Cancers","White","Male","Nebraska",1985,"West North Central","Midwest","NE",241.737965599864,248.203246052999,254.311583847247,248.119170563636
+"387",27,17,0,0,"Cardiovascular","White","Male","Nebraska",1985,"West North Central","Midwest","NE",558.496921663602,574.414097927657,589.704321367354,574.311965134413
+"388",27,17,0,0,"Communicable","White","Male","Nebraska",1985,"West North Central","Midwest","NE",54.519131032376,58.8504297834951,63.664519386786,58.9211723643978
+"389",27,17,0,0,"Injuries","White","Male","Nebraska",1985,"West North Central","Midwest","NE",77.2898128153876,80.0768797080993,83.1461512274695,80.1005997891156
+"390",27,17,0,0,"Non-communicable","White","Male","Nebraska",1985,"West North Central","Midwest","NE",99.1488042797187,103.235383181927,107.48048093469,103.226004504091
+"391",27,17,0,1,"All other causes","White","Female","Nebraska",1985,"West North Central","Midwest","NE",83.4883462943161,86.9753562020054,90.4755478734334,86.9631385459802
+"392",27,17,0,1,"Cancers","White","Female","Nebraska",1985,"West North Central","Midwest","NE",151.152392602059,154.984028739976,159.166042852362,155.054670561464
+"393",27,17,0,1,"Cardiovascular","White","Female","Nebraska",1985,"West North Central","Midwest","NE",325.809414608264,334.273593094463,342.315562781061,334.225130419434
+"394",27,17,0,1,"Communicable","White","Female","Nebraska",1985,"West North Central","Midwest","NE",33.3030418844692,35.5262291645958,38.2135546103615,35.6115873140153
+"395",27,17,0,1,"Injuries","White","Female","Nebraska",1985,"West North Central","Midwest","NE",27.4196973787306,28.8940421053139,30.4423300741033,28.9019090702504
+"396",27,17,0,1,"Non-communicable","White","Female","Nebraska",1985,"West North Central","Midwest","NE",46.4348211836185,48.8290210202634,51.5033880054184,48.8438232055317
+"397",27,17,1,0,"All other causes","Black","Male","Nebraska",1985,"West North Central","Midwest","NE",165.335805256598,192.875717469187,225.785555193075,193.760760439187
+"398",27,17,1,0,"Cancers","Black","Male","Nebraska",1985,"West North Central","Midwest","NE",323.95553883319,379.261532447925,445.738439439811,380.517528376418
+"399",27,17,1,0,"Cardiovascular","Black","Male","Nebraska",1985,"West North Central","Midwest","NE",574.768476572434,639.502842113342,720.382968536998,641.639549601262
+"400",27,17,1,0,"Communicable","Black","Male","Nebraska",1985,"West North Central","Midwest","NE",79.3468940111885,107.324769629072,157.439065211923,110.04493576298
+"401",27,17,1,0,"Injuries","Black","Male","Nebraska",1985,"West North Central","Midwest","NE",96.3668566335379,112.2392747161,128.517436620157,112.428742319374
+"402",27,17,1,0,"Non-communicable","Black","Male","Nebraska",1985,"West North Central","Midwest","NE",121.285060052397,154.966078766418,183.693007294667,154.665885438668
+"403",27,17,1,1,"All other causes","Black","Female","Nebraska",1985,"West North Central","Midwest","NE",126.04415095243,145.821653620141,172.381395475914,146.713143011981
+"404",27,17,1,1,"Cancers","Black","Female","Nebraska",1985,"West North Central","Midwest","NE",186.421249604181,207.797745197284,237.535405433261,208.676729283887
+"405",27,17,1,1,"Cardiovascular","Black","Female","Nebraska",1985,"West North Central","Midwest","NE",442.401469081863,492.030787189673,548.095426949718,492.588506077413
+"406",27,17,1,1,"Communicable","Black","Female","Nebraska",1985,"West North Central","Midwest","NE",43.643177612811,58.8725006369887,80.2784706549469,59.9419382854125
+"407",27,17,1,1,"Injuries","Black","Female","Nebraska",1985,"West North Central","Midwest","NE",36.4700937275785,42.1853959632729,53.3502990331756,42.764638317262
+"408",27,17,1,1,"Non-communicable","Black","Female","Nebraska",1985,"West North Central","Midwest","NE",92.2284140179919,111.146717735976,131.048203411919,111.382671276023
+"409",27,18,0,0,"All other causes","White","Male","Nebraska",1986,"West North Central","Midwest","NE",115.634144575019,120.241818859868,125.069440300776,120.271621699839
+"410",27,18,0,0,"Cancers","White","Male","Nebraska",1986,"West North Central","Midwest","NE",243.45296977518,249.597017479509,256.10941681071,249.695936915968
+"411",27,18,0,0,"Cardiovascular","White","Male","Nebraska",1986,"West North Central","Midwest","NE",535.741483738066,549.731939686013,564.922518647978,550.078840537694
+"412",27,18,0,0,"Communicable","White","Male","Nebraska",1986,"West North Central","Midwest","NE",55.3322601467291,59.9686069378408,64.66271313384,59.9614820615868
+"413",27,18,0,0,"Injuries","White","Male","Nebraska",1986,"West North Central","Midwest","NE",77.1921477682645,80.1694714002836,83.3907020982895,80.2010003794306
+"414",27,18,0,0,"Non-communicable","White","Male","Nebraska",1986,"West North Central","Midwest","NE",99.4747247763331,103.620084894488,108.328010459921,103.73490787112
+"415",27,18,0,1,"All other causes","White","Female","Nebraska",1986,"West North Central","Midwest","NE",83.6233293958816,86.8320202655556,90.3669295368334,86.8513348264012
+"416",27,18,0,1,"Cancers","White","Female","Nebraska",1986,"West North Central","Midwest","NE",150.786163007927,154.927065359649,158.989327452809,154.886193211304
+"417",27,18,0,1,"Cardiovascular","White","Female","Nebraska",1986,"West North Central","Midwest","NE",317.570776577134,325.539086877465,334.43984060258,325.661227304273
+"418",27,18,0,1,"Communicable","White","Female","Nebraska",1986,"West North Central","Midwest","NE",30.7055295501806,32.9180580374158,35.5231177159561,32.964505001013
+"419",27,18,0,1,"Injuries","White","Female","Nebraska",1986,"West North Central","Midwest","NE",27.5724794808766,29.0776186093873,30.82291189284,29.106125757106
+"420",27,18,0,1,"Non-communicable","White","Female","Nebraska",1986,"West North Central","Midwest","NE",48.7238876758251,51.2062191459412,53.9499400107807,51.2496032224274
+"421",27,18,1,0,"All other causes","Black","Male","Nebraska",1986,"West North Central","Midwest","NE",167.698251612646,191.686538377986,225.643817903082,193.469949300336
+"422",27,18,1,0,"Cancers","Black","Male","Nebraska",1986,"West North Central","Midwest","NE",333.602560197624,387.823109364128,457.243068327459,389.017176113084
+"423",27,18,1,0,"Cardiovascular","Black","Male","Nebraska",1986,"West North Central","Midwest","NE",567.107408624201,631.471996559712,712.177461303971,632.239207198856
+"424",27,18,1,0,"Communicable","Black","Male","Nebraska",1986,"West North Central","Midwest","NE",79.4005387644888,105.975752073161,151.304509475878,108.387971205561
+"425",27,18,1,0,"Injuries","Black","Male","Nebraska",1986,"West North Central","Midwest","NE",94.4854860410965,110.158409161582,126.91037664092,110.308728834994
+"426",27,18,1,0,"Non-communicable","Black","Male","Nebraska",1986,"West North Central","Midwest","NE",122.593619489234,155.155695812298,185.203733648715,155.069389551666
+"427",27,18,1,1,"All other causes","Black","Female","Nebraska",1986,"West North Central","Midwest","NE",128.654522831806,147.000393063831,173.860162516458,148.559819213957
+"428",27,18,1,1,"Cancers","Black","Female","Nebraska",1986,"West North Central","Midwest","NE",187.161244850051,207.719223948201,237.752261698305,208.427995872104
+"429",27,18,1,1,"Cardiovascular","Black","Female","Nebraska",1986,"West North Central","Midwest","NE",436.121380103977,484.102421344289,535.768515486582,485.158916574193
+"430",27,18,1,1,"Communicable","Black","Female","Nebraska",1986,"West North Central","Midwest","NE",43.0306680476104,58.7371746205859,81.6141948609174,59.8256672415331
+"431",27,18,1,1,"Injuries","Black","Female","Nebraska",1986,"West North Central","Midwest","NE",35.9640353924344,41.7814661332434,51.9518640656697,42.2696134091837
+"432",27,18,1,1,"Non-communicable","Black","Female","Nebraska",1986,"West North Central","Midwest","NE",93.6499825735407,112.201316082467,132.823180345601,112.327272140628
+"433",27,19,0,0,"All other causes","White","Male","Nebraska",1987,"West North Central","Midwest","NE",118.020491326878,122.48417456035,127.424430893348,122.521819131094
+"434",27,19,0,0,"Cancers","White","Male","Nebraska",1987,"West North Central","Midwest","NE",242.106176240998,248.658501820791,255.002018826715,248.639397509195
+"435",27,19,0,0,"Cardiovascular","White","Male","Nebraska",1987,"West North Central","Midwest","NE",526.837241038634,542.100961805886,556.963660001526,542.01117771866
+"436",27,19,0,0,"Communicable","White","Male","Nebraska",1987,"West North Central","Midwest","NE",56.5146128665801,61.1293123635248,65.8776763140603,61.1081754700902
+"437",27,19,0,0,"Injuries","White","Male","Nebraska",1987,"West North Central","Midwest","NE",76.0433107831669,78.8681615633679,81.8639833043651,78.905047127765
+"438",27,19,0,0,"Non-communicable","White","Male","Nebraska",1987,"West North Central","Midwest","NE",102.403955369729,106.562685630174,111.341093997054,106.659024463055
+"439",27,19,0,1,"All other causes","White","Female","Nebraska",1987,"West North Central","Midwest","NE",85.3700413496515,88.6729135985046,91.7811743176676,88.6483314865114
+"440",27,19,0,1,"Cancers","White","Female","Nebraska",1987,"West North Central","Midwest","NE",151.024083138648,154.96894090753,159.011674440032,154.968107917847
+"441",27,19,0,1,"Cardiovascular","White","Female","Nebraska",1987,"West North Central","Midwest","NE",313.397652224606,321.214566819868,330.16951445863,321.372790013529
+"442",27,19,0,1,"Communicable","White","Female","Nebraska",1987,"West North Central","Midwest","NE",31.9324775824052,34.2986942434234,36.8618832718695,34.3272380169145
+"443",27,19,0,1,"Injuries","White","Female","Nebraska",1987,"West North Central","Midwest","NE",27.4162155845035,28.9948574376121,30.5022362994581,29.0099242896949
+"444",27,19,0,1,"Non-communicable","White","Female","Nebraska",1987,"West North Central","Midwest","NE",50.6825464570772,53.2167874612106,55.8627034606532,53.206515014031
+"445",27,19,1,0,"All other causes","Black","Male","Nebraska",1987,"West North Central","Midwest","NE",167.349524690636,193.145091393562,225.284491115308,194.07532011504
+"446",27,19,1,0,"Cancers","Black","Male","Nebraska",1987,"West North Central","Midwest","NE",331.053665957032,384.203680836842,453.632077856003,385.590238506829
+"447",27,19,1,0,"Cardiovascular","Black","Male","Nebraska",1987,"West North Central","Midwest","NE",558.226594157978,624.123922218273,696.169607585023,625.087455560986
+"448",27,19,1,0,"Communicable","Black","Male","Nebraska",1987,"West North Central","Midwest","NE",79.1161137157436,105.891004421969,151.984426688548,108.276083014902
+"449",27,19,1,0,"Injuries","Black","Male","Nebraska",1987,"West North Central","Midwest","NE",91.5289317617672,108.051184805808,124.736660038319,108.298235263788
+"450",27,19,1,0,"Non-communicable","Black","Male","Nebraska",1987,"West North Central","Midwest","NE",123.720168679953,154.263676159985,184.641753723165,154.941356935299
+"451",27,19,1,1,"All other causes","Black","Female","Nebraska",1987,"West North Central","Midwest","NE",128.783851894971,148.797283339934,176.015391284717,150.158642085056
+"452",27,19,1,1,"Cancers","Black","Female","Nebraska",1987,"West North Central","Midwest","NE",186.77569030724,207.405613989974,235.927275607562,208.531464029393
+"453",27,19,1,1,"Cardiovascular","Black","Female","Nebraska",1987,"West North Central","Midwest","NE",429.225804312659,473.801729485361,532.046248311153,475.40715534725
+"454",27,19,1,1,"Communicable","Black","Female","Nebraska",1987,"West North Central","Midwest","NE",42.7557946044129,58.9399879650577,81.8699401269026,59.5018502757108
+"455",27,19,1,1,"Injuries","Black","Female","Nebraska",1987,"West North Central","Midwest","NE",35.6712793835604,41.162169925174,51.3093096883321,41.7927526859783
+"456",27,19,1,1,"Non-communicable","Black","Female","Nebraska",1987,"West North Central","Midwest","NE",94.5950367884221,112.861914152986,133.111979161288,113.278165520658
+"457",27,20,0,0,"All other causes","White","Male","Nebraska",1988,"West North Central","Midwest","NE",119.326267106516,123.90194802398,129.108029093778,123.977910054501
+"458",27,20,0,0,"Cancers","White","Male","Nebraska",1988,"West North Central","Midwest","NE",242.584131459551,249.075471342651,255.542812132675,249.014325751178
+"459",27,20,0,0,"Cardiovascular","White","Male","Nebraska",1988,"West North Central","Midwest","NE",502.636678424488,517.091401228974,531.089949135674,516.942334758401
+"460",27,20,0,0,"Communicable","White","Male","Nebraska",1988,"West North Central","Midwest","NE",62.079563451641,66.8741180679407,72.1509522077012,66.8454803895959
+"461",27,20,0,0,"Injuries","White","Male","Nebraska",1988,"West North Central","Midwest","NE",74.9912145278539,77.7859986324479,80.4896856718246,77.7911112315637
+"462",27,20,0,0,"Non-communicable","White","Male","Nebraska",1988,"West North Central","Midwest","NE",104.707922132647,109.137432148458,113.945209485765,109.205490501553
+"463",27,20,0,1,"All other causes","White","Female","Nebraska",1988,"West North Central","Midwest","NE",84.7881067638868,88.068902815309,91.604140815421,88.0937618389837
+"464",27,20,0,1,"Cancers","White","Female","Nebraska",1988,"West North Central","Midwest","NE",152.772682790644,156.677883194268,160.873976312575,156.715541570912
+"465",27,20,0,1,"Cardiovascular","White","Female","Nebraska",1988,"West North Central","Midwest","NE",305.139031735709,313.148757555964,321.755432180434,313.196770730376
+"466",27,20,0,1,"Communicable","White","Female","Nebraska",1988,"West North Central","Midwest","NE",35.1491684526126,37.6503080279754,40.3574909874183,37.6923536308808
+"467",27,20,0,1,"Injuries","White","Female","Nebraska",1988,"West North Central","Midwest","NE",27.3292135554878,28.8222730771976,30.4699363000981,28.8532325994012
+"468",27,20,0,1,"Non-communicable","White","Female","Nebraska",1988,"West North Central","Midwest","NE",52.6583962531171,55.3157257212593,58.0187782196582,55.2929858312065
+"469",27,20,1,0,"All other causes","Black","Male","Nebraska",1988,"West North Central","Midwest","NE",168.309603746858,194.523519032675,229.239298015546,195.509369924357
+"470",27,20,1,0,"Cancers","Black","Male","Nebraska",1988,"West North Central","Midwest","NE",330.93159424837,378.268501782676,444.933841837007,379.870946374845
+"471",27,20,1,0,"Cardiovascular","Black","Male","Nebraska",1988,"West North Central","Midwest","NE",534.296057453617,608.52784988983,679.793527007457,609.125395747369
+"472",27,20,1,0,"Communicable","Black","Male","Nebraska",1988,"West North Central","Midwest","NE",77.999919921041,103.461467817543,147.058167236581,105.644518415264
+"473",27,20,1,0,"Injuries","Black","Male","Nebraska",1988,"West North Central","Midwest","NE",91.1008881093196,106.181164915535,120.911459386642,106.118483656477
+"474",27,20,1,0,"Non-communicable","Black","Male","Nebraska",1988,"West North Central","Midwest","NE",122.749424643028,155.636759124974,186.725925636685,155.856790517731
+"475",27,20,1,1,"All other causes","Black","Female","Nebraska",1988,"West North Central","Midwest","NE",131.445636690929,152.058540764121,181.805842090909,153.294039491173
+"476",27,20,1,1,"Cancers","Black","Female","Nebraska",1988,"West North Central","Midwest","NE",186.675874615149,207.4838759019,235.459544105341,208.851780682598
+"477",27,20,1,1,"Cardiovascular","Black","Female","Nebraska",1988,"West North Central","Midwest","NE",421.412991554815,472.070163743992,524.727899240138,472.740480227969
+"478",27,20,1,1,"Communicable","Black","Female","Nebraska",1988,"West North Central","Midwest","NE",42.5004174342614,58.5105270366267,79.8731975202873,58.9308825927224
+"479",27,20,1,1,"Injuries","Black","Female","Nebraska",1988,"West North Central","Midwest","NE",35.4382684153619,40.7812687411101,50.2066828376089,41.283846850187
+"480",27,20,1,1,"Non-communicable","Black","Female","Nebraska",1988,"West North Central","Midwest","NE",94.4232461724872,114.312281098771,134.184185082514,114.265481544105
+"481",27,21,0,0,"All other causes","White","Male","Nebraska",1989,"West North Central","Midwest","NE",117.018526104243,121.483383605779,126.625507959351,121.521353363292
+"482",27,21,0,0,"Cancers","White","Male","Nebraska",1989,"West North Central","Midwest","NE",244.220131127624,250.507388783763,256.635635476933,250.367655131066
+"483",27,21,0,0,"Cardiovascular","White","Male","Nebraska",1989,"West North Central","Midwest","NE",489.654680541504,504.093810537493,517.047031721663,503.912614484952
+"484",27,21,0,0,"Communicable","White","Male","Nebraska",1989,"West North Central","Midwest","NE",61.1411967453286,65.7589974490618,70.7953987344788,65.840332722162
+"485",27,21,0,0,"Injuries","White","Male","Nebraska",1989,"West North Central","Midwest","NE",73.538142885502,76.4496821271329,79.5115139417521,76.4911368295675
+"486",27,21,0,0,"Non-communicable","White","Male","Nebraska",1989,"West North Central","Midwest","NE",107.619710648226,112.267589435657,117.121329793292,112.317944716534
+"487",27,21,0,1,"All other causes","White","Female","Nebraska",1989,"West North Central","Midwest","NE",84.6791527836983,87.952745511492,91.2225375197145,87.9621807643111
+"488",27,21,0,1,"Cancers","White","Female","Nebraska",1989,"West North Central","Midwest","NE",154.071090864016,157.973067758154,162.279305410131,158.044424061375
+"489",27,21,0,1,"Cardiovascular","White","Female","Nebraska",1989,"West North Central","Midwest","NE",300.774507786578,308.66024313037,317.11466909561,308.776204555452
+"490",27,21,0,1,"Communicable","White","Female","Nebraska",1989,"West North Central","Midwest","NE",32.4363954205822,34.7319261623053,37.075268092459,34.741304266509
+"491",27,21,0,1,"Injuries","White","Female","Nebraska",1989,"West North Central","Midwest","NE",27.3707695342682,28.8645538508074,30.5804756624433,28.9009718085065
+"492",27,21,0,1,"Non-communicable","White","Female","Nebraska",1989,"West North Central","Midwest","NE",54.3572176589161,56.8330122218719,59.7988106805393,56.877270823623
+"493",27,21,1,0,"All other causes","Black","Male","Nebraska",1989,"West North Central","Midwest","NE",169.282365270786,196.163020663665,230.11176796132,196.806932627456
+"494",27,21,1,0,"Cancers","Black","Male","Nebraska",1989,"West North Central","Midwest","NE",321.830125986797,370.709676399156,432.475174243306,372.153862944687
+"495",27,21,1,0,"Cardiovascular","Black","Male","Nebraska",1989,"West North Central","Midwest","NE",542.289126659153,607.228489800049,678.125203495363,608.102551401855
+"496",27,21,1,0,"Communicable","Black","Male","Nebraska",1989,"West North Central","Midwest","NE",76.9879841774129,100.764913636812,143.588064622777,102.676186984193
+"497",27,21,1,0,"Injuries","Black","Male","Nebraska",1989,"West North Central","Midwest","NE",90.8965470424011,104.532319917347,118.423296487577,104.43178162979
+"498",27,21,1,0,"Non-communicable","Black","Male","Nebraska",1989,"West North Central","Midwest","NE",124.459431209946,156.448487065268,188.88536059616,156.957348648771
+"499",27,21,1,1,"All other causes","Black","Female","Nebraska",1989,"West North Central","Midwest","NE",131.112323731122,152.247495845558,181.749111588947,153.555806177576
+"500",27,21,1,1,"Cancers","Black","Female","Nebraska",1989,"West North Central","Midwest","NE",185.822668628604,208.29755743858,235.762817084101,209.096403839435
+"501",27,21,1,1,"Cardiovascular","Black","Female","Nebraska",1989,"West North Central","Midwest","NE",415.181959247964,460.412244112158,513.132057170264,461.140366088738
+"502",27,21,1,1,"Communicable","Black","Female","Nebraska",1989,"West North Central","Midwest","NE",42.4900571627027,57.469617253686,76.9496284800614,57.7976584576113
+"503",27,21,1,1,"Injuries","Black","Female","Nebraska",1989,"West North Central","Midwest","NE",35.0645844276285,40.3627098216651,49.7322194006385,40.949647005147
+"504",27,21,1,1,"Non-communicable","Black","Female","Nebraska",1989,"West North Central","Midwest","NE",96.0632451695291,115.082949549582,135.908064435106,115.444695898943
+"505",27,22,0,0,"All other causes","White","Male","Nebraska",1990,"West North Central","Midwest","NE",116.737324900284,121.277812073013,125.997382681396,121.333576610647
+"506",27,22,0,0,"Cancers","White","Male","Nebraska",1990,"West North Central","Midwest","NE",243.126209673312,248.987684412244,255.390807614171,249.058248060468
+"507",27,22,0,0,"Cardiovascular","White","Male","Nebraska",1990,"West North Central","Midwest","NE",476.31633419794,489.264041506795,501.722970987304,489.382556328728
+"508",27,22,0,0,"Communicable","White","Male","Nebraska",1990,"West North Central","Midwest","NE",60.5269024075486,64.9108724400261,69.7791186351383,64.966683175407
+"509",27,22,0,0,"Injuries","White","Male","Nebraska",1990,"West North Central","Midwest","NE",72.8371508712882,75.593531777104,78.5133349634647,75.6304460421305
+"510",27,22,0,0,"Non-communicable","White","Male","Nebraska",1990,"West North Central","Midwest","NE",109.371193087033,114.021836559169,119.610716917054,114.085091240358
+"511",27,22,0,1,"All other causes","White","Female","Nebraska",1990,"West North Central","Midwest","NE",82.9761315145203,86.5387951397578,89.714157157945,86.4964247311937
+"512",27,22,0,1,"Cancers","White","Female","Nebraska",1990,"West North Central","Midwest","NE",154.299581786111,158.160234374056,162.459878804107,158.215226239169
+"513",27,22,0,1,"Cardiovascular","White","Female","Nebraska",1990,"West North Central","Midwest","NE",290.694952869041,298.031080057775,306.014311307703,298.085992598132
+"514",27,22,0,1,"Communicable","White","Female","Nebraska",1990,"West North Central","Midwest","NE",33.2180667314769,35.4722258931462,37.9307096919671,35.4731288948633
+"515",27,22,0,1,"Injuries","White","Female","Nebraska",1990,"West North Central","Midwest","NE",27.195845312901,28.8166246607307,30.432360751309,28.8091378005927
+"516",27,22,0,1,"Non-communicable","White","Female","Nebraska",1990,"West North Central","Midwest","NE",55.7050518334709,58.4823671248097,61.2690775974604,58.4655546439855
+"517",27,22,1,0,"All other causes","Black","Male","Nebraska",1990,"West North Central","Midwest","NE",170.261291780126,198.490273640544,232.116870634071,199.104769659529
+"518",27,22,1,0,"Cancers","Black","Male","Nebraska",1990,"West North Central","Midwest","NE",314.801901231538,364.164235398939,421.539296769302,365.171928797841
+"519",27,22,1,0,"Cardiovascular","Black","Male","Nebraska",1990,"West North Central","Midwest","NE",546.95743563913,615.201085629291,688.099644082993,615.549169405646
+"520",27,22,1,0,"Communicable","Black","Male","Nebraska",1990,"West North Central","Midwest","NE",75.6738486228684,99.108019944432,130.956880554931,100.057643409019
+"521",27,22,1,0,"Injuries","Black","Male","Nebraska",1990,"West North Central","Midwest","NE",89.9903956099083,103.168919309009,115.632674763573,103.133853367999
+"522",27,22,1,0,"Non-communicable","Black","Male","Nebraska",1990,"West North Central","Midwest","NE",126.984339494829,157.028106133797,190.50951736433,158.082654062755
+"523",27,22,1,1,"All other causes","Black","Female","Nebraska",1990,"West North Central","Midwest","NE",130.961452252436,152.662240118323,182.703832856083,153.691826725333
+"524",27,22,1,1,"Cancers","Black","Female","Nebraska",1990,"West North Central","Midwest","NE",185.055516028633,208.262681120328,233.963047406305,208.626616312231
+"525",27,22,1,1,"Cardiovascular","Black","Female","Nebraska",1990,"West North Central","Midwest","NE",405.279965778552,452.601627273146,505.671248543819,453.527531220074
+"526",27,22,1,1,"Communicable","Black","Female","Nebraska",1990,"West North Central","Midwest","NE",42.2053603066107,56.7841496269137,76.4906181402612,57.3810428293551
+"527",27,22,1,1,"Injuries","Black","Female","Nebraska",1990,"West North Central","Midwest","NE",34.972904131625,40.0416160415089,48.6123456075567,40.5489738962655
+"528",27,22,1,1,"Non-communicable","Black","Female","Nebraska",1990,"West North Central","Midwest","NE",96.8343375009951,117.023382899077,140.113826930808,117.527417250311
+"529",27,23,0,0,"All other causes","White","Male","Nebraska",1991,"West North Central","Midwest","NE",116.248201677208,120.598073838181,125.374157000365,120.646682900185
+"530",27,23,0,0,"Cancers","White","Male","Nebraska",1991,"West North Central","Midwest","NE",240.426485686789,246.169796863582,252.188247925555,246.195778361518
+"531",27,23,0,0,"Cardiovascular","White","Male","Nebraska",1991,"West North Central","Midwest","NE",464.748229025611,477.417586917951,491.091849493542,477.335103696204
+"532",27,23,0,0,"Communicable","White","Male","Nebraska",1991,"West North Central","Midwest","NE",56.7663538978405,61.3110243743203,65.946494888367,61.282785624258
+"533",27,23,0,0,"Injuries","White","Male","Nebraska",1991,"West North Central","Midwest","NE",71.8964387494808,74.6074540663267,77.4936343178331,74.5957069313103
+"534",27,23,0,0,"Non-communicable","White","Male","Nebraska",1991,"West North Central","Midwest","NE",107.250802352724,112.135163968754,116.576762307533,112.058308730187
+"535",27,23,0,1,"All other causes","White","Female","Nebraska",1991,"West North Central","Midwest","NE",82.9521370850372,86.2767707835054,89.511187086611,86.2746071696193
+"536",27,23,0,1,"Cancers","White","Female","Nebraska",1991,"West North Central","Midwest","NE",153.323453367409,156.961195884729,161.190734067569,157.042572226638
+"537",27,23,0,1,"Cardiovascular","White","Female","Nebraska",1991,"West North Central","Midwest","NE",290.478083296475,297.952636694061,305.72926532353,297.959555705857
+"538",27,23,0,1,"Communicable","White","Female","Nebraska",1991,"West North Central","Midwest","NE",32.3288321520467,34.596344136121,37.0205027088347,34.6063525827785
+"539",27,23,0,1,"Injuries","White","Female","Nebraska",1991,"West North Central","Midwest","NE",27.3981895112146,28.8165538800803,30.5404844354133,28.830834149391
+"540",27,23,0,1,"Non-communicable","White","Female","Nebraska",1991,"West North Central","Midwest","NE",56.3941758871912,59.0793474863607,61.8689266814333,59.1300410255797
+"541",27,23,1,0,"All other causes","Black","Male","Nebraska",1991,"West North Central","Midwest","NE",173.534510284357,201.614576133849,235.121489940407,202.432312597379
+"542",27,23,1,0,"Cancers","Black","Male","Nebraska",1991,"West North Central","Midwest","NE",308.184288465113,361.097241621956,415.509330845912,361.438914952191
+"543",27,23,1,0,"Cardiovascular","Black","Male","Nebraska",1991,"West North Central","Midwest","NE",551.127244582932,617.939667984984,698.106683490869,618.782658101241
+"544",27,23,1,0,"Communicable","Black","Male","Nebraska",1991,"West North Central","Midwest","NE",75.6746735433648,96.6822001464193,125.559891116632,97.534391058491
+"545",27,23,1,0,"Injuries","Black","Male","Nebraska",1991,"West North Central","Midwest","NE",88.2798919158583,102.015871714834,114.83947783894,101.76786075645
+"546",27,23,1,0,"Non-communicable","Black","Male","Nebraska",1991,"West North Central","Midwest","NE",126.348212215595,156.956010892888,193.792655362942,158.603829356056
+"547",27,23,1,1,"All other causes","Black","Female","Nebraska",1991,"West North Central","Midwest","NE",129.920676284328,151.862405564346,180.747195930479,152.952872293472
+"548",27,23,1,1,"Cancers","Black","Female","Nebraska",1991,"West North Central","Midwest","NE",185.614163708063,207.620991829719,232.232759766885,208.073085313736
+"549",27,23,1,1,"Cardiovascular","Black","Female","Nebraska",1991,"West North Central","Midwest","NE",405.678053902365,451.353071938388,500.571174441016,451.665430747217
+"550",27,23,1,1,"Communicable","Black","Female","Nebraska",1991,"West North Central","Midwest","NE",42.3256602221121,56.3203504713622,75.3749858188058,56.8127153411171
+"551",27,23,1,1,"Injuries","Black","Female","Nebraska",1991,"West North Central","Midwest","NE",34.5997229204433,39.6002660953394,48.3080835716426,40.1048008897206
+"552",27,23,1,1,"Non-communicable","Black","Female","Nebraska",1991,"West North Central","Midwest","NE",99.9709855835122,118.836901862111,140.749328877997,119.275506602158
+"553",27,24,0,0,"All other causes","White","Male","Nebraska",1992,"West North Central","Midwest","NE",115.294222356459,120.027313234641,124.578908962022,119.982397180767
+"554",27,24,0,0,"Cancers","White","Male","Nebraska",1992,"West North Central","Midwest","NE",239.620414300793,246.19329291699,252.360375161844,246.124923542931
+"555",27,24,0,0,"Cardiovascular","White","Male","Nebraska",1992,"West North Central","Midwest","NE",462.535806706185,474.869413536061,487.680558913338,474.77627604912
+"556",27,24,0,0,"Communicable","White","Male","Nebraska",1992,"West North Central","Midwest","NE",52.5137307066993,56.5462070567404,61.0897976110023,56.5913448460857
+"557",27,24,0,0,"Injuries","White","Male","Nebraska",1992,"West North Central","Midwest","NE",70.8725375340185,73.5945069722311,76.3490733807249,73.6090889009349
+"558",27,24,0,0,"Non-communicable","White","Male","Nebraska",1992,"West North Central","Midwest","NE",106.562439621136,111.089065676352,115.565678814466,111.02839933875
+"559",27,24,0,1,"All other causes","White","Female","Nebraska",1992,"West North Central","Midwest","NE",84.4336241343851,87.7693667557056,91.0563222300584,87.7250874789381
+"560",27,24,0,1,"Cancers","White","Female","Nebraska",1992,"West North Central","Midwest","NE",151.139297280449,155.344066366141,159.398831086578,155.29394563441
+"561",27,24,0,1,"Cardiovascular","White","Female","Nebraska",1992,"West North Central","Midwest","NE",288.329626254859,295.364045159142,302.864986524107,295.5106742037
+"562",27,24,0,1,"Communicable","White","Female","Nebraska",1992,"West North Central","Midwest","NE",31.5242263423263,33.7174990178675,36.007178863773,33.7180585206497
+"563",27,24,0,1,"Injuries","White","Female","Nebraska",1992,"West North Central","Midwest","NE",27.2171821248459,28.6237506927013,30.255864602544,28.6390889878095
+"564",27,24,0,1,"Non-communicable","White","Female","Nebraska",1992,"West North Central","Midwest","NE",56.6541031152257,59.4799616201769,62.163929116829,59.4472553787209
+"565",27,24,1,0,"All other causes","Black","Male","Nebraska",1992,"West North Central","Midwest","NE",174.278957155297,204.985153705853,239.622708620123,205.504311779291
+"566",27,24,1,0,"Cancers","Black","Male","Nebraska",1992,"West North Central","Midwest","NE",306.323616592261,357.156407649675,409.215016514426,356.970753893636
+"567",27,24,1,0,"Cardiovascular","Black","Male","Nebraska",1992,"West North Central","Midwest","NE",542.605221823334,609.945877851752,696.437406245547,610.59128384638
+"568",27,24,1,0,"Communicable","Black","Male","Nebraska",1992,"West North Central","Midwest","NE",74.0915926369361,93.7525480215027,121.623752886339,94.8709160890654
+"569",27,24,1,0,"Injuries","Black","Male","Nebraska",1992,"West North Central","Midwest","NE",86.4512785734896,100.339250406328,113.436984681624,100.304750151971
+"570",27,24,1,0,"Non-communicable","Black","Male","Nebraska",1992,"West North Central","Midwest","NE",126.862750867751,157.773102858447,194.726099214141,158.968539155589
+"571",27,24,1,1,"All other causes","Black","Female","Nebraska",1992,"West North Central","Midwest","NE",131.804418144994,152.629478497786,182.556115196855,153.381479551209
+"572",27,24,1,1,"Cancers","Black","Female","Nebraska",1992,"West North Central","Midwest","NE",186.48040772001,207.410862587971,232.746609759616,207.634147131333
+"573",27,24,1,1,"Cardiovascular","Black","Female","Nebraska",1992,"West North Central","Midwest","NE",407.962913714033,451.178406131722,503.214056465416,451.845253327133
+"574",27,24,1,1,"Communicable","Black","Female","Nebraska",1992,"West North Central","Midwest","NE",42.4618777462085,56.0331051688513,73.3980695729066,56.499611332284
+"575",27,24,1,1,"Injuries","Black","Female","Nebraska",1992,"West North Central","Midwest","NE",34.2975211640122,39.2721050769861,47.2357839831399,39.6465155974933
+"576",27,24,1,1,"Non-communicable","Black","Female","Nebraska",1992,"West North Central","Midwest","NE",100.104544763285,120.288464628738,143.343560394008,120.851284801759
+"577",27,25,0,0,"All other causes","White","Male","Nebraska",1993,"West North Central","Midwest","NE",117.3297121022,121.729362391203,126.387954444388,121.774356695214
+"578",27,25,0,0,"Cancers","White","Male","Nebraska",1993,"West North Central","Midwest","NE",240.943713657092,246.763349582017,253.303966131465,246.853180637441
+"579",27,25,0,0,"Cardiovascular","White","Male","Nebraska",1993,"West North Central","Midwest","NE",454.799563143055,468.283967048098,480.181097536812,467.896608870989
+"580",27,25,0,0,"Communicable","White","Male","Nebraska",1993,"West North Central","Midwest","NE",52.6440896363195,56.2252542251414,60.3546763010492,56.2756024275579
+"581",27,25,0,0,"Injuries","White","Male","Nebraska",1993,"West North Central","Midwest","NE",71.0085937551015,73.746540015825,76.5960221624125,73.7370668469363
+"582",27,25,0,0,"Non-communicable","White","Male","Nebraska",1993,"West North Central","Midwest","NE",107.100095086064,111.453625203617,116.109945137137,111.449598514003
+"583",27,25,0,1,"All other causes","White","Female","Nebraska",1993,"West North Central","Midwest","NE",87.7282673627603,91.1359965155102,94.7110350992734,91.1443278248029
+"584",27,25,0,1,"Cancers","White","Female","Nebraska",1993,"West North Central","Midwest","NE",149.893609985456,153.902566531821,158.01439111565,153.842931617861
+"585",27,25,0,1,"Cardiovascular","White","Female","Nebraska",1993,"West North Central","Midwest","NE",281.309136301739,288.230606673667,295.913673837916,288.300799787026
+"586",27,25,0,1,"Communicable","White","Female","Nebraska",1993,"West North Central","Midwest","NE",31.7902201341618,33.9627027631067,36.2779289272664,33.9939059837997
+"587",27,25,0,1,"Injuries","White","Female","Nebraska",1993,"West North Central","Midwest","NE",26.8611006248445,28.3755952106774,29.9049762159607,28.3804367076958
+"588",27,25,0,1,"Non-communicable","White","Female","Nebraska",1993,"West North Central","Midwest","NE",58.0482867100015,60.7343521647646,63.6630975765908,60.8154439259183
+"589",27,25,1,0,"All other causes","Black","Male","Nebraska",1993,"West North Central","Midwest","NE",176.140569669444,208.155714178309,244.188595870598,208.698128631763
+"590",27,25,1,0,"Cancers","Black","Male","Nebraska",1993,"West North Central","Midwest","NE",305.91293831554,355.163545207781,408.092664765671,355.547474729025
+"591",27,25,1,0,"Cardiovascular","Black","Male","Nebraska",1993,"West North Central","Midwest","NE",531.958154035492,591.563498403245,665.223699645959,592.452819276278
+"592",27,25,1,0,"Communicable","Black","Male","Nebraska",1993,"West North Central","Midwest","NE",71.6113749188089,91.4209256133032,116.343891649205,91.9869704154097
+"593",27,25,1,0,"Injuries","Black","Male","Nebraska",1993,"West North Central","Midwest","NE",85.2083538053257,99.2933910285843,112.724341817557,99.3083364210616
+"594",27,25,1,0,"Non-communicable","Black","Male","Nebraska",1993,"West North Central","Midwest","NE",127.245956298174,159.452096756712,197.940819726442,160.084591479981
+"595",27,25,1,1,"All other causes","Black","Female","Nebraska",1993,"West North Central","Midwest","NE",132.173963763338,153.389471929985,182.316119030266,154.2103369798
+"596",27,25,1,1,"Cancers","Black","Female","Nebraska",1993,"West North Central","Midwest","NE",185.350391898029,206.003043020368,230.25276294854,206.316450620951
+"597",27,25,1,1,"Cardiovascular","Black","Female","Nebraska",1993,"West North Central","Midwest","NE",405.411677794184,449.205806675586,498.283090437348,450.449277836814
+"598",27,25,1,1,"Communicable","Black","Female","Nebraska",1993,"West North Central","Midwest","NE",41.6399475058652,55.2736837891482,71.8561041563579,55.6314429327964
+"599",27,25,1,1,"Injuries","Black","Female","Nebraska",1993,"West North Central","Midwest","NE",33.6400232455778,38.7877309070761,45.6953424999312,39.1269390127647
+"600",27,25,1,1,"Non-communicable","Black","Female","Nebraska",1993,"West North Central","Midwest","NE",102.439953265062,121.975365357064,144.873071040805,122.333397277058
+"601",27,26,0,0,"All other causes","White","Male","Nebraska",1994,"West North Central","Midwest","NE",119.2971522478,123.946656731183,128.789467438644,123.967356645093
+"602",27,26,0,0,"Cancers","White","Male","Nebraska",1994,"West North Central","Midwest","NE",236.292945301117,242.382246041796,248.502426065811,242.476519429401
+"603",27,26,0,0,"Cardiovascular","White","Male","Nebraska",1994,"West North Central","Midwest","NE",451.778170469333,464.341638850532,476.568939174813,464.369209274781
+"604",27,26,0,0,"Communicable","White","Male","Nebraska",1994,"West North Central","Midwest","NE",50.3332602275946,54.3842029985669,58.8798237680868,54.3992804523236
+"605",27,26,0,0,"Injuries","White","Male","Nebraska",1994,"West North Central","Midwest","NE",70.6434418974217,73.3670583917362,76.2745216524594,73.3837270604401
+"606",27,26,0,0,"Non-communicable","White","Male","Nebraska",1994,"West North Central","Midwest","NE",107.325747269756,111.73200774079,116.277953876781,111.802141243729
+"607",27,26,0,1,"All other causes","White","Female","Nebraska",1994,"West North Central","Midwest","NE",90.9028241864535,94.2258766137506,97.8741112853232,94.2414454441206
+"608",27,26,0,1,"Cancers","White","Female","Nebraska",1994,"West North Central","Midwest","NE",149.445768117346,153.756288435827,157.888810429774,153.705851311325
+"609",27,26,0,1,"Cardiovascular","White","Female","Nebraska",1994,"West North Central","Midwest","NE",276.835756351482,284.372251870155,291.807521688774,284.482100793273
+"610",27,26,0,1,"Communicable","White","Female","Nebraska",1994,"West North Central","Midwest","NE",31.7760386458181,34.1046172613798,36.3933275924417,34.0730095282833
+"611",27,26,0,1,"Injuries","White","Female","Nebraska",1994,"West North Central","Midwest","NE",26.9397517285475,28.398458754985,30.0078347252549,28.4254551095588
+"612",27,26,0,1,"Non-communicable","White","Female","Nebraska",1994,"West North Central","Midwest","NE",59.1400798174643,62.0321200095468,65.061272255511,62.1070113299012
+"613",27,26,1,0,"All other causes","Black","Male","Nebraska",1994,"West North Central","Midwest","NE",177.60731673748,207.019894371188,243.735215578215,208.04767567877
+"614",27,26,1,0,"Cancers","Black","Male","Nebraska",1994,"West North Central","Midwest","NE",301.338217771359,350.842460610554,396.023164127506,351.134791934014
+"615",27,26,1,0,"Cardiovascular","Black","Male","Nebraska",1994,"West North Central","Midwest","NE",516.313055960486,571.920763731206,635.546804498747,574.015362677779
+"616",27,26,1,0,"Communicable","Black","Male","Nebraska",1994,"West North Central","Midwest","NE",69.894283725632,89.1839244160358,111.209581234501,89.0537341454888
+"617",27,26,1,0,"Injuries","Black","Male","Nebraska",1994,"West North Central","Midwest","NE",83.709339294796,98.0351407383741,112.197811820557,98.1543618689589
+"618",27,26,1,0,"Non-communicable","Black","Male","Nebraska",1994,"West North Central","Midwest","NE",128.669716590478,160.625611727131,199.329489822006,161.508841942494
+"619",27,26,1,1,"All other causes","Black","Female","Nebraska",1994,"West North Central","Midwest","NE",132.51926436745,154.490524959421,180.409759301935,154.839326688142
+"620",27,26,1,1,"Cancers","Black","Female","Nebraska",1994,"West North Central","Midwest","NE",183.934086515568,205.074398113661,229.859018112443,205.375618055797
+"621",27,26,1,1,"Cardiovascular","Black","Female","Nebraska",1994,"West North Central","Midwest","NE",394.339208945501,437.298128794403,485.298880412053,437.552520436629
+"622",27,26,1,1,"Communicable","Black","Female","Nebraska",1994,"West North Central","Midwest","NE",41.6828871079231,54.6899269335887,71.7223824386237,55.3887884368106
+"623",27,26,1,1,"Injuries","Black","Female","Nebraska",1994,"West North Central","Midwest","NE",33.4266029462527,38.3728356763991,45.0317472779039,38.6677508185421
+"624",27,26,1,1,"Non-communicable","Black","Female","Nebraska",1994,"West North Central","Midwest","NE",103.943556502118,123.208166081581,146.765425560132,123.783680995175
+"625",27,27,0,0,"All other causes","White","Male","Nebraska",1995,"West North Central","Midwest","NE",121.691681007718,126.28812417912,130.536263304125,126.27725356142
+"626",27,27,0,0,"Cancers","White","Male","Nebraska",1995,"West North Central","Midwest","NE",234.260726285781,240.341430595275,246.674420356014,240.38550765831
+"627",27,27,0,0,"Cardiovascular","White","Male","Nebraska",1995,"West North Central","Midwest","NE",440.857452285013,453.335350457508,465.93759955001,453.085188341451
+"628",27,27,0,0,"Communicable","White","Male","Nebraska",1995,"West North Central","Midwest","NE",49.2757753923501,53.2453567172767,57.0681729425708,53.2116007715746
+"629",27,27,0,0,"Injuries","White","Male","Nebraska",1995,"West North Central","Midwest","NE",69.934862543643,72.6994001348068,75.6888501517352,72.7307648137179
+"630",27,27,0,0,"Non-communicable","White","Male","Nebraska",1995,"West North Central","Midwest","NE",107.809161115628,112.461275958101,117.368937610348,112.460072504837
+"631",27,27,0,1,"All other causes","White","Female","Nebraska",1995,"West North Central","Midwest","NE",92.6293315448608,96.0537381028056,99.5135662373358,96.0870292874572
+"632",27,27,0,1,"Cancers","White","Female","Nebraska",1995,"West North Central","Midwest","NE",150.564044672789,154.574554596176,158.662546857328,154.525583343303
+"633",27,27,0,1,"Cardiovascular","White","Female","Nebraska",1995,"West North Central","Midwest","NE",277.426507831475,284.766791292241,292.579978348763,284.768576420299
+"634",27,27,0,1,"Communicable","White","Female","Nebraska",1995,"West North Central","Midwest","NE",32.285149131541,34.4391891586336,36.7510087067752,34.4538737920778
+"635",27,27,0,1,"Injuries","White","Female","Nebraska",1995,"West North Central","Midwest","NE",27.5728998236292,28.9550466740715,30.557438867846,28.9858625314154
+"636",27,27,0,1,"Non-communicable","White","Female","Nebraska",1995,"West North Central","Midwest","NE",62.3771516812382,65.3737818945804,68.4174279572814,65.3846433920097
+"637",27,27,1,0,"All other causes","Black","Male","Nebraska",1995,"West North Central","Midwest","NE",178.732171679132,208.360369418679,247.347469104027,209.678368279768
+"638",27,27,1,0,"Cancers","Black","Male","Nebraska",1995,"West North Central","Midwest","NE",296.755855321434,346.74258722512,391.25046383724,346.387906125179
+"639",27,27,1,0,"Cardiovascular","Black","Male","Nebraska",1995,"West North Central","Midwest","NE",503.545957304232,562.892912110319,621.754323984979,562.509404077552
+"640",27,27,1,0,"Communicable","Black","Male","Nebraska",1995,"West North Central","Midwest","NE",68.6976548616696,87.5235427936697,110.80920787443,87.8241008193082
+"641",27,27,1,0,"Injuries","Black","Male","Nebraska",1995,"West North Central","Midwest","NE",83.1634750165119,96.6654375970479,110.658465809996,96.9142876878027
+"642",27,27,1,0,"Non-communicable","Black","Male","Nebraska",1995,"West North Central","Midwest","NE",127.60650982955,161.725333626149,198.759004457004,162.337530798067
+"643",27,27,1,1,"All other causes","Black","Female","Nebraska",1995,"West North Central","Midwest","NE",132.306829787748,155.380423124188,182.087999252512,155.958743589685
+"644",27,27,1,1,"Cancers","Black","Female","Nebraska",1995,"West North Central","Midwest","NE",183.279557178824,204.104490554732,227.283544317944,204.70673586865
+"645",27,27,1,1,"Cardiovascular","Black","Female","Nebraska",1995,"West North Central","Midwest","NE",389.738302171953,434.155043120733,481.333560374926,434.249983756536
+"646",27,27,1,1,"Communicable","Black","Female","Nebraska",1995,"West North Central","Midwest","NE",40.4124910051766,54.0709059204839,69.0280083630145,54.3292314741606
+"647",27,27,1,1,"Injuries","Black","Female","Nebraska",1995,"West North Central","Midwest","NE",33.243665976864,38.3954938883955,45.04239576694,38.5043980461667
+"648",27,27,1,1,"Non-communicable","Black","Female","Nebraska",1995,"West North Central","Midwest","NE",106.119308623055,124.321296881645,147.596471773361,125.298001607378
+"649",27,28,0,0,"All other causes","White","Male","Nebraska",1996,"West North Central","Midwest","NE",127.274875222967,131.887683490924,136.406270445328,131.916151746184
+"650",27,28,0,0,"Cancers","White","Male","Nebraska",1996,"West North Central","Midwest","NE",230.512057758397,236.55330458508,242.945802047608,236.520920351369
+"651",27,28,0,0,"Cardiovascular","White","Male","Nebraska",1996,"West North Central","Midwest","NE",423.578681677607,435.780110467878,448.454622906626,435.832776647875
+"652",27,28,0,0,"Communicable","White","Male","Nebraska",1996,"West North Central","Midwest","NE",46.7931563927474,50.2847131465343,54.0447198425041,50.3454803813049
+"653",27,28,0,0,"Injuries","White","Male","Nebraska",1996,"West North Central","Midwest","NE",70.3878254310396,72.9792510427751,75.9819706462018,73.0317369894998
+"654",27,28,0,0,"Non-communicable","White","Male","Nebraska",1996,"West North Central","Midwest","NE",111.455513066647,115.892265860205,120.806780926453,115.936012770432
+"655",27,28,0,1,"All other causes","White","Female","Nebraska",1996,"West North Central","Midwest","NE",97.3870773346805,100.968951830436,104.704368781469,100.923081368763
+"656",27,28,0,1,"Cancers","White","Female","Nebraska",1996,"West North Central","Midwest","NE",150.49497956084,154.472071969262,158.484673351949,154.492319619474
+"657",27,28,0,1,"Cardiovascular","White","Female","Nebraska",1996,"West North Central","Midwest","NE",273.384431855565,280.500436607883,287.756180707267,280.516356149653
+"658",27,28,0,1,"Communicable","White","Female","Nebraska",1996,"West North Central","Midwest","NE",31.1793128588572,33.3542568382601,35.8121625669413,33.4205363347501
+"659",27,28,0,1,"Injuries","White","Female","Nebraska",1996,"West North Central","Midwest","NE",27.8720155816735,29.4464372327206,31.028669514386,29.4590057257365
+"660",27,28,0,1,"Non-communicable","White","Female","Nebraska",1996,"West North Central","Midwest","NE",65.2281657216182,68.2202090991212,71.3383003819641,68.1769840449489
+"661",27,28,1,0,"All other causes","Black","Male","Nebraska",1996,"West North Central","Midwest","NE",179.861067839255,211.514014634556,249.439206149738,212.135684762849
+"662",27,28,1,0,"Cancers","Black","Male","Nebraska",1996,"West North Central","Midwest","NE",295.933820522217,342.989954986807,389.650957876019,343.783489132477
+"663",27,28,1,0,"Cardiovascular","Black","Male","Nebraska",1996,"West North Central","Midwest","NE",491.018588599816,549.144227859648,611.492353333702,549.386322193056
+"664",27,28,1,0,"Communicable","Black","Male","Nebraska",1996,"West North Central","Midwest","NE",66.5129895341654,85.8422375988585,113.647604813832,86.6112833637992
+"665",27,28,1,0,"Injuries","Black","Male","Nebraska",1996,"West North Central","Midwest","NE",82.0044586931396,95.5974305046169,108.524159231441,95.5126539411393
+"666",27,28,1,0,"Non-communicable","Black","Male","Nebraska",1996,"West North Central","Midwest","NE",128.168619863252,161.826483021691,199.405275399611,162.436637091849
+"667",27,28,1,1,"All other causes","Black","Female","Nebraska",1996,"West North Central","Midwest","NE",135.221306140476,158.258541446486,188.60560943783,159.143224973775
+"668",27,28,1,1,"Cancers","Black","Female","Nebraska",1996,"West North Central","Midwest","NE",183.247248179829,203.693090644892,223.939360957436,203.695605530235
+"669",27,28,1,1,"Cardiovascular","Black","Female","Nebraska",1996,"West North Central","Midwest","NE",372.606150433883,417.841859560892,464.517245192263,417.788435664505
+"670",27,28,1,1,"Communicable","Black","Female","Nebraska",1996,"West North Central","Midwest","NE",40.3652088403671,53.5788979041761,67.3969507893451,53.6261610915729
+"671",27,28,1,1,"Injuries","Black","Female","Nebraska",1996,"West North Central","Midwest","NE",32.9681263193095,38.2945169096213,45.035809113795,38.360131568262
+"672",27,28,1,1,"Non-communicable","Black","Female","Nebraska",1996,"West North Central","Midwest","NE",106.783390043299,126.069346390776,150.334743436683,126.834929611135
+"673",27,29,0,0,"All other causes","White","Male","Nebraska",1997,"West North Central","Midwest","NE",129.797561131767,134.774027155342,139.937030714515,134.840939253752
+"674",27,29,0,0,"Cancers","White","Male","Nebraska",1997,"West North Central","Midwest","NE",228.125326104269,234.227115201683,240.420533283793,234.108020312723
+"675",27,29,0,0,"Cardiovascular","White","Male","Nebraska",1997,"West North Central","Midwest","NE",414.95613890373,426.802644775513,438.880935281276,426.679753136956
+"676",27,29,0,0,"Communicable","White","Male","Nebraska",1997,"West North Central","Midwest","NE",46.3114828290022,49.7874852241917,53.7911902605978,49.9307085722679
+"677",27,29,0,0,"Injuries","White","Male","Nebraska",1997,"West North Central","Midwest","NE",70.5371092268261,73.2195153351629,76.0247645941637,73.2075814295301
+"678",27,29,0,0,"Non-communicable","White","Male","Nebraska",1997,"West North Central","Midwest","NE",111.937390266384,116.82972369218,121.846437763234,116.858033489654
+"679",27,29,0,1,"All other causes","White","Female","Nebraska",1997,"West North Central","Midwest","NE",99.214695234152,102.718382244219,106.629391345944,102.766474867333
+"680",27,29,0,1,"Cancers","White","Female","Nebraska",1997,"West North Central","Midwest","NE",148.914917684662,152.570191776187,156.280113942744,152.588452662818
+"681",27,29,0,1,"Cardiovascular","White","Female","Nebraska",1997,"West North Central","Midwest","NE",264.702291083006,271.881185723871,279.355283140795,271.864977131976
+"682",27,29,0,1,"Communicable","White","Female","Nebraska",1997,"West North Central","Midwest","NE",29.5415341790109,31.7357749337546,34.0736223958115,31.7291804998734
+"683",27,29,0,1,"Injuries","White","Female","Nebraska",1997,"West North Central","Midwest","NE",28.1620248712365,29.6596581820886,31.2331453657511,29.6787794713997
+"684",27,29,0,1,"Non-communicable","White","Female","Nebraska",1997,"West North Central","Midwest","NE",67.2238946160659,70.377551157947,73.3126549543739,70.3846586975874
+"685",27,29,1,0,"All other causes","Black","Male","Nebraska",1997,"West North Central","Midwest","NE",185.47370227966,214.196072578483,254.888461326532,215.317175634073
+"686",27,29,1,0,"Cancers","Black","Male","Nebraska",1997,"West North Central","Midwest","NE",300.503237878491,340.111569926055,387.459600288153,341.697573070003
+"687",27,29,1,0,"Cardiovascular","Black","Male","Nebraska",1997,"West North Central","Midwest","NE",463.667627395638,521.043472357639,581.288791830098,521.2305126437
+"688",27,29,1,0,"Communicable","Black","Male","Nebraska",1997,"West North Central","Midwest","NE",66.1376906836517,83.8524269456028,113.594721901669,85.2279417769147
+"689",27,29,1,0,"Injuries","Black","Male","Nebraska",1997,"West North Central","Midwest","NE",80.4118309652062,94.5118414486737,107.654511713563,94.3300488429681
+"690",27,29,1,0,"Non-communicable","Black","Male","Nebraska",1997,"West North Central","Midwest","NE",126.721339745384,162.255858509025,198.493872335895,162.571651304315
+"691",27,29,1,1,"All other causes","Black","Female","Nebraska",1997,"West North Central","Midwest","NE",136.291843447395,160.850776042376,190.460511950027,161.58851509835
+"692",27,29,1,1,"Cancers","Black","Female","Nebraska",1997,"West North Central","Midwest","NE",180.248598535852,203.08283006774,224.461033946757,202.628952144274
+"693",27,29,1,1,"Cardiovascular","Black","Female","Nebraska",1997,"West North Central","Midwest","NE",363.744512421623,404.321363739046,449.635620882538,404.691031837163
+"694",27,29,1,1,"Communicable","Black","Female","Nebraska",1997,"West North Central","Midwest","NE",39.9585545410094,53.5256131228431,68.8873340699019,53.6329894397718
+"695",27,29,1,1,"Injuries","Black","Female","Nebraska",1997,"West North Central","Midwest","NE",32.9061035398059,38.096272670373,45.0758132901105,38.2470316524364
+"696",27,29,1,1,"Non-communicable","Black","Female","Nebraska",1997,"West North Central","Midwest","NE",106.842719840275,126.823832972424,152.532789328926,127.916273478281
+"697",27,30,0,0,"All other causes","White","Male","Nebraska",1998,"West North Central","Midwest","NE",132.149569597763,136.629218646813,141.614181185117,136.73296082285
+"698",27,30,0,0,"Cancers","White","Male","Nebraska",1998,"West North Central","Midwest","NE",226.057865674485,232.225373912759,238.230354970331,232.167384025201
+"699",27,30,0,0,"Cardiovascular","White","Male","Nebraska",1998,"West North Central","Midwest","NE",389.937904325269,400.850740160245,411.918205755023,400.736615913684
+"700",27,30,0,0,"Communicable","White","Male","Nebraska",1998,"West North Central","Midwest","NE",43.6433538048418,47.259677988847,51.0039427517429,47.2268553552477
+"701",27,30,0,0,"Injuries","White","Male","Nebraska",1998,"West North Central","Midwest","NE",70.919463200757,73.5662408328026,76.433534471002,73.6054160227954
+"702",27,30,0,0,"Non-communicable","White","Male","Nebraska",1998,"West North Central","Midwest","NE",114.224879336232,118.893628986553,123.810850321545,118.959255824435
+"703",27,30,0,1,"All other causes","White","Female","Nebraska",1998,"West North Central","Midwest","NE",100.936437261847,104.73361444869,109.06924556801,104.744380841011
+"704",27,30,0,1,"Cancers","White","Female","Nebraska",1998,"West North Central","Midwest","NE",148.892569863116,152.841818748477,156.68656458003,152.789475446229
+"705",27,30,0,1,"Cardiovascular","White","Female","Nebraska",1998,"West North Central","Midwest","NE",261.801081859635,268.424495892167,275.557543936317,268.497737818646
+"706",27,30,0,1,"Communicable","White","Female","Nebraska",1998,"West North Central","Midwest","NE",30.2018669283264,32.2321470074405,34.5298086933595,32.2657039825023
+"707",27,30,0,1,"Injuries","White","Female","Nebraska",1998,"West North Central","Midwest","NE",28.2022389763154,29.6813606054246,31.1007610542475,29.6760080344138
+"708",27,30,0,1,"Non-communicable","White","Female","Nebraska",1998,"West North Central","Midwest","NE",70.5147383325514,73.6961371953403,76.8160807299679,73.7125928874805
+"709",27,30,1,0,"All other causes","Black","Male","Nebraska",1998,"West North Central","Midwest","NE",185.385072813081,215.624143007549,257.513912924449,216.7390059285
+"710",27,30,1,0,"Cancers","Black","Male","Nebraska",1998,"West North Central","Midwest","NE",297.148969205159,338.781626528183,386.345287066105,339.891903302502
+"711",27,30,1,0,"Cardiovascular","Black","Male","Nebraska",1998,"West North Central","Midwest","NE",433.190264102642,491.623431567202,556.503608129661,492.116333320767
+"712",27,30,1,0,"Communicable","Black","Male","Nebraska",1998,"West North Central","Midwest","NE",66.0582255241762,82.9311334489523,108.807056469653,83.9305281465463
+"713",27,30,1,0,"Injuries","Black","Male","Nebraska",1998,"West North Central","Midwest","NE",78.8019511880798,93.0624849434095,106.256960802223,93.0085404235974
+"714",27,30,1,0,"Non-communicable","Black","Male","Nebraska",1998,"West North Central","Midwest","NE",126.887482408391,162.250114506925,198.921909162383,162.435582196407
+"715",27,30,1,1,"All other causes","Black","Female","Nebraska",1998,"West North Central","Midwest","NE",136.931499567865,160.586127511903,190.977142138534,161.507813392975
+"716",27,30,1,1,"Cancers","Black","Female","Nebraska",1998,"West North Central","Midwest","NE",177.689971240876,202.349671620664,223.260080766937,201.567669139713
+"717",27,30,1,1,"Cardiovascular","Black","Female","Nebraska",1998,"West North Central","Midwest","NE",355.12413027824,394.345843432872,437.952585599803,394.080164412627
+"718",27,30,1,1,"Communicable","Black","Female","Nebraska",1998,"West North Central","Midwest","NE",39.394528998628,52.9928249066871,68.2523075464739,53.1563897255399
+"719",27,30,1,1,"Injuries","Black","Female","Nebraska",1998,"West North Central","Midwest","NE",32.6277793619606,37.7316918414133,45.4078580467809,38.040524491778
+"720",27,30,1,1,"Non-communicable","Black","Female","Nebraska",1998,"West North Central","Midwest","NE",108.418925475557,128.473684516936,153.282243025845,129.180602003685
+"721",27,31,0,0,"All other causes","White","Male","Nebraska",1999,"West North Central","Midwest","NE",136.654477454417,141.767751854524,146.862849719257,141.783695321762
+"722",27,31,0,0,"Cancers","White","Male","Nebraska",1999,"West North Central","Midwest","NE",224.650843058819,230.605184737031,236.467946286797,230.617364828457
+"723",27,31,0,0,"Cardiovascular","White","Male","Nebraska",1999,"West North Central","Midwest","NE",366.636268203587,377.080277500156,388.059561022356,376.983080513975
+"724",27,31,0,0,"Communicable","White","Male","Nebraska",1999,"West North Central","Midwest","NE",38.5988735888269,41.9481156260813,45.1394367920764,41.9079431614662
+"725",27,31,0,0,"Injuries","White","Male","Nebraska",1999,"West North Central","Midwest","NE",70.7363743436338,73.429304380306,76.043579744866,73.4460852581597
+"726",27,31,0,0,"Non-communicable","White","Male","Nebraska",1999,"West North Central","Midwest","NE",120.886729541476,125.568718673615,130.827629567813,125.648313063886
+"727",27,31,0,1,"All other causes","White","Female","Nebraska",1999,"West North Central","Midwest","NE",105.56490077899,109.35824030921,113.539280009334,109.384171951506
+"728",27,31,0,1,"Cancers","White","Female","Nebraska",1999,"West North Central","Midwest","NE",150.513539316221,154.604851195601,158.377218990499,154.57676670948
+"729",27,31,0,1,"Cardiovascular","White","Female","Nebraska",1999,"West North Central","Midwest","NE",252.364683707401,259.194450552656,265.702180363708,259.141657683508
+"730",27,31,0,1,"Communicable","White","Female","Nebraska",1999,"West North Central","Midwest","NE",26.3913884368775,28.3112314013454,30.3614616185849,28.3149649199696
+"731",27,31,0,1,"Injuries","White","Female","Nebraska",1999,"West North Central","Midwest","NE",28.2262945395841,29.8294224608705,31.3623717072471,29.8484720337978
+"732",27,31,0,1,"Non-communicable","White","Female","Nebraska",1999,"West North Central","Midwest","NE",79.1280211294688,82.5662479874334,85.9079201820765,82.5404031292132
+"733",27,31,1,0,"All other causes","Black","Male","Nebraska",1999,"West North Central","Midwest","NE",186.101464547844,216.632717939074,259.274560074784,218.153540801002
+"734",27,31,1,0,"Cancers","Black","Male","Nebraska",1999,"West North Central","Midwest","NE",290.251945398763,331.099165449182,376.239346948248,331.90729795186
+"735",27,31,1,0,"Cardiovascular","Black","Male","Nebraska",1999,"West North Central","Midwest","NE",409.288522109048,465.997099359656,521.014929378292,465.338102382578
+"736",27,31,1,0,"Communicable","Black","Male","Nebraska",1999,"West North Central","Midwest","NE",65.0151589725052,81.894726079305,110.069625990124,83.1317107932409
+"737",27,31,1,0,"Injuries","Black","Male","Nebraska",1999,"West North Central","Midwest","NE",77.3913425665582,91.731121064813,104.653775642131,91.3405334619628
+"738",27,31,1,0,"Non-communicable","Black","Male","Nebraska",1999,"West North Central","Midwest","NE",128.486737207306,162.075976057931,200.227077575389,162.619275875423
+"739",27,31,1,1,"All other causes","Black","Female","Nebraska",1999,"West North Central","Midwest","NE",138.177943203141,161.857368661157,189.014598547592,162.47409602381
+"740",27,31,1,1,"Cancers","Black","Female","Nebraska",1999,"West North Central","Midwest","NE",176.830045793115,201.583170907504,221.811821653414,200.953706476339
+"741",27,31,1,1,"Cardiovascular","Black","Female","Nebraska",1999,"West North Central","Midwest","NE",337.900866051261,374.284364708042,416.922360484969,374.54247863879
+"742",27,31,1,1,"Communicable","Black","Female","Nebraska",1999,"West North Central","Midwest","NE",39.2287243190164,52.0254225861239,66.2559976740679,52.323988686832
+"743",27,31,1,1,"Injuries","Black","Female","Nebraska",1999,"West North Central","Midwest","NE",32.3060748298546,37.3895596944254,44.517327262509,37.6784351869653
+"744",27,31,1,1,"Non-communicable","Black","Female","Nebraska",1999,"West North Central","Midwest","NE",109.577331399256,130.153192682873,156.349490853946,130.945432841863
+"745",27,32,0,0,"All other causes","White","Male","Nebraska",2000,"West North Central","Midwest","NE",135.932119622076,140.89344566199,145.919010689277,140.928101592917
+"746",27,32,0,0,"Cancers","White","Male","Nebraska",2000,"West North Central","Midwest","NE",223.181378277617,229.132060640225,235.006768504518,229.159222449284
+"747",27,32,0,0,"Cardiovascular","White","Male","Nebraska",2000,"West North Central","Midwest","NE",356.242016985651,366.064198010228,376.945028446147,366.301031567848
+"748",27,32,0,0,"Communicable","White","Male","Nebraska",2000,"West North Central","Midwest","NE",36.3689337553997,39.4354952956391,42.790955271103,39.4716331340561
+"749",27,32,0,0,"Injuries","White","Male","Nebraska",2000,"West North Central","Midwest","NE",70.1868547887934,73.1129168151291,76.0341223946273,73.1388189703146
+"750",27,32,0,0,"Non-communicable","White","Male","Nebraska",2000,"West North Central","Midwest","NE",121.053672806665,126.10973506479,131.446041592629,126.107088140292
+"751",27,32,0,1,"All other causes","White","Female","Nebraska",2000,"West North Central","Midwest","NE",107.15703563915,111.06118739271,115.167825195849,111.063876531367
+"752",27,32,0,1,"Cancers","White","Female","Nebraska",2000,"West North Central","Midwest","NE",150.872335988222,154.733691037258,158.545171150171,154.741341994627
+"753",27,32,0,1,"Cardiovascular","White","Female","Nebraska",2000,"West North Central","Midwest","NE",238.573508405516,244.669006752594,250.902191255566,244.606560685337
+"754",27,32,0,1,"Communicable","White","Female","Nebraska",2000,"West North Central","Midwest","NE",23.9368952631656,25.7129739254392,27.6313052369649,25.7407768970197
+"755",27,32,0,1,"Injuries","White","Female","Nebraska",2000,"West North Central","Midwest","NE",28.6900476133727,30.2566293940285,31.7994622720226,30.2434080033742
+"756",27,32,0,1,"Non-communicable","White","Female","Nebraska",2000,"West North Central","Midwest","NE",83.3786240474984,86.9188556254738,90.512547974672,86.9271086682838
+"757",27,32,1,0,"All other causes","Black","Male","Nebraska",2000,"West North Central","Midwest","NE",187.132223703247,218.982105835288,262.312187264309,220.204727659996
+"758",27,32,1,0,"Cancers","Black","Male","Nebraska",2000,"West North Central","Midwest","NE",282.339837372343,321.667392141603,366.37140905127,322.680611175336
+"759",27,32,1,0,"Cardiovascular","Black","Male","Nebraska",2000,"West North Central","Midwest","NE",388.67520811734,445.158207855716,495.903718137512,444.945093915011
+"760",27,32,1,0,"Communicable","Black","Male","Nebraska",2000,"West North Central","Midwest","NE",65.00876122826,80.8085467415047,104.798850618339,81.6876263151154
+"761",27,32,1,0,"Injuries","Black","Male","Nebraska",2000,"West North Central","Midwest","NE",75.3708297028352,90.2167592809712,103.03630280729,90.0420443897091
+"762",27,32,1,0,"Non-communicable","Black","Male","Nebraska",2000,"West North Central","Midwest","NE",129.783025792066,163.150477819452,201.682878613638,163.677865965395
+"763",27,32,1,1,"All other causes","Black","Female","Nebraska",2000,"West North Central","Midwest","NE",139.146901359718,162.332630786841,190.036406063789,162.824574331055
+"764",27,32,1,1,"Cancers","Black","Female","Nebraska",2000,"West North Central","Midwest","NE",176.538771354319,200.833921238368,221.351603294372,200.305478362868
+"765",27,32,1,1,"Cardiovascular","Black","Female","Nebraska",2000,"West North Central","Midwest","NE",321.651802677594,357.314663436514,398.36136098969,358.476092855688
+"766",27,32,1,1,"Communicable","Black","Female","Nebraska",2000,"West North Central","Midwest","NE",38.4838793471262,50.7914047700795,66.1068349706015,51.1679232569059
+"767",27,32,1,1,"Injuries","Black","Female","Nebraska",2000,"West North Central","Midwest","NE",32.2159298059623,37.0774382359297,44.0673113746002,37.3489341010934
+"768",27,32,1,1,"Non-communicable","Black","Female","Nebraska",2000,"West North Central","Midwest","NE",111.092841225911,131.938209802562,156.687339217503,132.648006148839
+"769",27,33,0,0,"All other causes","White","Male","Nebraska",2001,"West North Central","Midwest","NE",138.271207941853,143.378200024484,148.740715431007,143.398470091308
+"770",27,33,0,0,"Cancers","White","Male","Nebraska",2001,"West North Central","Midwest","NE",220.8378334805,226.356167202403,232.533757851993,226.49383931448
+"771",27,33,0,0,"Cardiovascular","White","Male","Nebraska",2001,"West North Central","Midwest","NE",344.649614933182,354.084351595723,364.883577747486,354.252826677076
+"772",27,33,0,0,"Communicable","White","Male","Nebraska",2001,"West North Central","Midwest","NE",33.3854539093612,36.2687311964778,39.355962936862,36.2834545819796
+"773",27,33,0,0,"Injuries","White","Male","Nebraska",2001,"West North Central","Midwest","NE",70.2335388505995,72.7949015073129,75.7960651364572,72.8488069163518
+"774",27,33,0,0,"Non-communicable","White","Male","Nebraska",2001,"West North Central","Midwest","NE",124.665247547529,129.494881847991,134.757586601973,129.486794216208
+"775",27,33,0,1,"All other causes","White","Female","Nebraska",2001,"West North Central","Midwest","NE",110.964941661064,115.06023730388,119.14984683258,115.042596909299
+"776",27,33,0,1,"Cancers","White","Female","Nebraska",2001,"West North Central","Midwest","NE",149.982463933546,154.299271334167,158.712218616257,154.286932135604
+"777",27,33,0,1,"Cardiovascular","White","Female","Nebraska",2001,"West North Central","Midwest","NE",233.214654187524,239.936945691596,246.496681807893,239.953682787758
+"778",27,33,0,1,"Communicable","White","Female","Nebraska",2001,"West North Central","Midwest","NE",21.9850025853754,23.7375226929499,25.6253052992396,23.7645634352864
+"779",27,33,0,1,"Injuries","White","Female","Nebraska",2001,"West North Central","Midwest","NE",29.0650281824711,30.5746434627386,32.1373982657425,30.5718792534427
+"780",27,33,0,1,"Non-communicable","White","Female","Nebraska",2001,"West North Central","Midwest","NE",89.7804801777271,93.5604142446605,97.3739706428649,93.5358864085669
+"781",27,33,1,0,"All other causes","Black","Male","Nebraska",2001,"West North Central","Midwest","NE",186.981043838973,219.533992688943,265.738838200693,221.133048645317
+"782",27,33,1,0,"Cancers","Black","Male","Nebraska",2001,"West North Central","Midwest","NE",278.306048846707,315.594443448023,361.19356715643,316.740704105947
+"783",27,33,1,0,"Cardiovascular","Black","Male","Nebraska",2001,"West North Central","Midwest","NE",379.468662001855,434.159651254785,485.532619955005,432.69294615098
+"784",27,33,1,0,"Communicable","Black","Male","Nebraska",2001,"West North Central","Midwest","NE",61.9999456975322,77.7458921983193,100.613622820435,78.7211790395592
+"785",27,33,1,0,"Injuries","Black","Male","Nebraska",2001,"West North Central","Midwest","NE",74.8889540243996,88.6543602493339,101.222281917122,88.7113073012382
+"786",27,33,1,0,"Non-communicable","Black","Male","Nebraska",2001,"West North Central","Midwest","NE",132.589063092944,164.186119140627,204.12178583879,164.953638169395
+"787",27,33,1,1,"All other causes","Black","Female","Nebraska",2001,"West North Central","Midwest","NE",138.676099799475,162.19830475327,191.074331235368,162.986603867748
+"788",27,33,1,1,"Cancers","Black","Female","Nebraska",2001,"West North Central","Midwest","NE",174.733147722274,199.572117594222,220.401329868864,199.296552186695
+"789",27,33,1,1,"Cardiovascular","Black","Female","Nebraska",2001,"West North Central","Midwest","NE",307.631143977738,343.624821977125,384.441647445339,344.113735287242
+"790",27,33,1,1,"Communicable","Black","Female","Nebraska",2001,"West North Central","Midwest","NE",38.3498961154223,49.7755310529144,66.1929130026581,50.3720569021453
+"791",27,33,1,1,"Injuries","Black","Female","Nebraska",2001,"West North Central","Midwest","NE",31.791188821852,36.773143367619,44.3559472357173,37.0925417390998
+"792",27,33,1,1,"Non-communicable","Black","Female","Nebraska",2001,"West North Central","Midwest","NE",113.803373265791,134.14770137999,160.331217304085,134.638421479047
+"793",27,34,0,0,"All other causes","White","Male","Nebraska",2002,"West North Central","Midwest","NE",141.888274548003,147.012683150232,152.417734806971,147.011198575423
+"794",27,34,0,0,"Cancers","White","Male","Nebraska",2002,"West North Central","Midwest","NE",218.300824433037,224.140370187252,229.971891746239,224.175748867914
+"795",27,34,0,0,"Cardiovascular","White","Male","Nebraska",2002,"West North Central","Midwest","NE",338.226982524558,348.507980666129,359.424130609863,348.689668201425
+"796",27,34,0,0,"Communicable","White","Male","Nebraska",2002,"West North Central","Midwest","NE",36.5281253539182,39.4984147287374,42.686384388728,39.5185559172354
+"797",27,34,0,0,"Injuries","White","Male","Nebraska",2002,"West North Central","Midwest","NE",70.5094957928022,73.153747832915,75.867154243741,73.172124273944
+"798",27,34,0,0,"Non-communicable","White","Male","Nebraska",2002,"West North Central","Midwest","NE",126.346921246223,131.481107702713,136.635835140777,131.543053822981
+"799",27,34,0,1,"All other causes","White","Female","Nebraska",2002,"West North Central","Midwest","NE",114.178825725095,118.2992216579,122.399061354396,118.322835491942
+"800",27,34,0,1,"Cancers","White","Female","Nebraska",2002,"West North Central","Midwest","NE",149.40641456665,153.6707568625,157.65870180466,153.628664692272
+"801",27,34,0,1,"Cardiovascular","White","Female","Nebraska",2002,"West North Central","Midwest","NE",229.357884002809,235.823649963057,242.25181633793,235.809794540389
+"802",27,34,0,1,"Communicable","White","Female","Nebraska",2002,"West North Central","Midwest","NE",23.5774763727315,25.4078555208288,27.2929224050272,25.4087596292395
+"803",27,34,0,1,"Injuries","White","Female","Nebraska",2002,"West North Central","Midwest","NE",29.8510946591113,31.3091928411636,32.8315869364984,31.3425638457809
+"804",27,34,0,1,"Non-communicable","White","Female","Nebraska",2002,"West North Central","Midwest","NE",91.9180470394538,95.6578467405291,99.7570123842242,95.7120291280816
+"805",27,34,1,0,"All other causes","Black","Male","Nebraska",2002,"West North Central","Midwest","NE",190.601732973736,220.837077094693,263.677050241752,221.985215431704
+"806",27,34,1,0,"Cancers","Black","Male","Nebraska",2002,"West North Central","Midwest","NE",269.753008134468,308.109208034422,350.657873280777,307.950471112035
+"807",27,34,1,0,"Cardiovascular","Black","Male","Nebraska",2002,"West North Central","Midwest","NE",355.230086346647,410.599829178797,461.946419411813,410.195194931567
+"808",27,34,1,0,"Communicable","Black","Male","Nebraska",2002,"West North Central","Midwest","NE",60.1702233145873,74.6983058659966,98.1995823549931,75.9022960429652
+"809",27,34,1,0,"Injuries","Black","Male","Nebraska",2002,"West North Central","Midwest","NE",74.8144589836251,88.3475191882308,100.861485064126,88.2652443595732
+"810",27,34,1,0,"Non-communicable","Black","Male","Nebraska",2002,"West North Central","Midwest","NE",133.118745579782,165.541381034201,207.438415759921,166.280395538945
+"811",27,34,1,1,"All other causes","Black","Female","Nebraska",2002,"West North Central","Midwest","NE",140.231981285716,163.919147969635,193.910855937908,164.84848598088
+"812",27,34,1,1,"Cancers","Black","Female","Nebraska",2002,"West North Central","Midwest","NE",172.96900989341,199.027688789348,221.372201395965,198.668759767954
+"813",27,34,1,1,"Cardiovascular","Black","Female","Nebraska",2002,"West North Central","Midwest","NE",296.856004943626,332.671962602707,373.262625563169,333.33232903134
+"814",27,34,1,1,"Communicable","Black","Female","Nebraska",2002,"West North Central","Midwest","NE",37.3487689092677,49.0871201688824,65.103292593275,49.6695203186919
+"815",27,34,1,1,"Injuries","Black","Female","Nebraska",2002,"West North Central","Midwest","NE",31.8149549869927,36.6666465345808,44.0443201292675,36.9604428413543
+"816",27,34,1,1,"Non-communicable","Black","Female","Nebraska",2002,"West North Central","Midwest","NE",116.261468183451,136.616051804342,160.577358876123,136.852584401114
+"817",27,35,0,0,"All other causes","White","Male","Nebraska",2003,"West North Central","Midwest","NE",145.350721701672,150.780971356233,155.77387719083,150.723687495945
+"818",27,35,0,0,"Cancers","White","Male","Nebraska",2003,"West North Central","Midwest","NE",215.176410887217,221.096183285938,226.799879927944,221.026250627685
+"819",27,35,0,0,"Cardiovascular","White","Male","Nebraska",2003,"West North Central","Midwest","NE",324.163919807427,333.671344659291,344.108269596967,333.915194167147
+"820",27,35,0,0,"Communicable","White","Male","Nebraska",2003,"West North Central","Midwest","NE",36.6721335717516,39.746626110546,43.230370928618,39.8214247983352
+"821",27,35,0,0,"Injuries","White","Male","Nebraska",2003,"West North Central","Midwest","NE",69.7430633071377,72.3789500185812,75.1762849497721,72.4022905335247
+"822",27,35,0,0,"Non-communicable","White","Male","Nebraska",2003,"West North Central","Midwest","NE",126.431608348006,131.592497635644,137.367694420185,131.718153405792
+"823",27,35,0,1,"All other causes","White","Female","Nebraska",2003,"West North Central","Midwest","NE",116.617369706748,120.598908166816,124.60509205598,120.619921037569
+"824",27,35,0,1,"Cancers","White","Female","Nebraska",2003,"West North Central","Midwest","NE",147.365610189813,151.314967625905,155.529386614012,151.331517925709
+"825",27,35,0,1,"Cardiovascular","White","Female","Nebraska",2003,"West North Central","Midwest","NE",219.625176339909,226.059573685178,232.018671615252,226.049191906544
+"826",27,35,0,1,"Communicable","White","Female","Nebraska",2003,"West North Central","Midwest","NE",24.9658884154811,26.9463597729687,28.937477573566,26.9563221965339
+"827",27,35,0,1,"Injuries","White","Female","Nebraska",2003,"West North Central","Midwest","NE",29.8083957759695,31.3917047556866,33.004789353424,31.3826164174712
+"828",27,35,0,1,"Non-communicable","White","Female","Nebraska",2003,"West North Central","Midwest","NE",91.2523101399101,94.9352392091601,98.8875081590505,94.9349019282991
+"829",27,35,1,0,"All other causes","Black","Male","Nebraska",2003,"West North Central","Midwest","NE",189.830556814188,219.44679957703,264.346711023505,221.44930407851
+"830",27,35,1,0,"Cancers","Black","Male","Nebraska",2003,"West North Central","Midwest","NE",262.570167470605,300.61438068945,341.134661623582,300.569239383933
+"831",27,35,1,0,"Cardiovascular","Black","Male","Nebraska",2003,"West North Central","Midwest","NE",341.365705780465,395.744202401101,445.782233778039,395.250853347398
+"832",27,35,1,0,"Communicable","Black","Male","Nebraska",2003,"West North Central","Midwest","NE",56.7599832628564,72.0169560729427,92.8382969430354,72.6911852612994
+"833",27,35,1,0,"Injuries","Black","Male","Nebraska",2003,"West North Central","Midwest","NE",74.9425716613147,87.8985934245799,100.826587422458,87.8094014967867
+"834",27,35,1,0,"Non-communicable","Black","Male","Nebraska",2003,"West North Central","Midwest","NE",133.557967656829,166.046955982423,207.662650245797,166.955990830636
+"835",27,35,1,1,"All other causes","Black","Female","Nebraska",2003,"West North Central","Midwest","NE",141.239727298116,164.98294493091,195.586856347408,165.833821547637
+"836",27,35,1,1,"Cancers","Black","Female","Nebraska",2003,"West North Central","Midwest","NE",173.118312406949,198.447450492175,220.36571138087,198.345664088909
+"837",27,35,1,1,"Cardiovascular","Black","Female","Nebraska",2003,"West North Central","Midwest","NE",286.752864781315,320.243741306883,356.07839863194,320.448338443558
+"838",27,35,1,1,"Communicable","Black","Female","Nebraska",2003,"West North Central","Midwest","NE",36.6782583441452,47.8830605316465,64.0541876639709,48.7344204112759
+"839",27,35,1,1,"Injuries","Black","Female","Nebraska",2003,"West North Central","Midwest","NE",31.7831430001095,36.5721178192274,43.6671491761017,36.9661939258718
+"840",27,35,1,1,"Non-communicable","Black","Female","Nebraska",2003,"West North Central","Midwest","NE",116.739202671223,136.25207893947,162.121433235662,136.722187451344
+"841",27,36,0,0,"All other causes","White","Male","Nebraska",2004,"West North Central","Midwest","NE",146.316429438745,151.463700845603,156.775474534457,151.55643425945
+"842",27,36,0,0,"Cancers","White","Male","Nebraska",2004,"West North Central","Midwest","NE",212.032520269377,218.041321662593,223.204992651535,217.909634795179
+"843",27,36,0,0,"Cardiovascular","White","Male","Nebraska",2004,"West North Central","Midwest","NE",306.211609581201,315.264976357203,324.946168251449,315.335960767647
+"844",27,36,0,0,"Communicable","White","Male","Nebraska",2004,"West North Central","Midwest","NE",32.3974376725051,35.0800254688067,37.9860852153246,35.1181989964651
+"845",27,36,0,0,"Injuries","White","Male","Nebraska",2004,"West North Central","Midwest","NE",69.184023691798,72.0533862336729,74.8707109197089,72.0213077941839
+"846",27,36,0,0,"Non-communicable","White","Male","Nebraska",2004,"West North Central","Midwest","NE",124.907188461021,129.856610666737,135.216555200359,129.973725177305
+"847",27,36,0,1,"All other causes","White","Female","Nebraska",2004,"West North Central","Midwest","NE",113.612756321499,117.956703724171,121.77692616926,117.859586766564
+"848",27,36,0,1,"Cancers","White","Female","Nebraska",2004,"West North Central","Midwest","NE",145.547696077135,149.3172264684,153.24026137652,149.287765628211
+"849",27,36,0,1,"Cardiovascular","White","Female","Nebraska",2004,"West North Central","Midwest","NE",205.505342972015,211.162179361784,217.21839894632,211.218456309888
+"850",27,36,0,1,"Communicable","White","Female","Nebraska",2004,"West North Central","Midwest","NE",23.2847165840115,24.9780788034971,26.9542936142895,24.9812183223025
+"851",27,36,0,1,"Injuries","White","Female","Nebraska",2004,"West North Central","Midwest","NE",30.1464770579787,31.7805571815842,33.3790027028163,31.783037736366
+"852",27,36,0,1,"Non-communicable","White","Female","Nebraska",2004,"West North Central","Midwest","NE",88.5424716138599,92.1349170004119,95.8560845214022,92.1236743141311
+"853",27,36,1,0,"All other causes","Black","Male","Nebraska",2004,"West North Central","Midwest","NE",190.109478861274,219.911853749643,262.399175415692,221.740396438176
+"854",27,36,1,0,"Cancers","Black","Male","Nebraska",2004,"West North Central","Midwest","NE",252.505306033541,291.14142610679,330.504550676096,291.261363066662
+"855",27,36,1,0,"Cardiovascular","Black","Male","Nebraska",2004,"West North Central","Midwest","NE",332.438611783617,384.991295292643,436.992284265491,384.612416496209
+"856",27,36,1,0,"Communicable","Black","Male","Nebraska",2004,"West North Central","Midwest","NE",54.4709752994384,68.9008449822705,89.8149257954567,69.3693860226185
+"857",27,36,1,0,"Injuries","Black","Male","Nebraska",2004,"West North Central","Midwest","NE",74.846432511792,86.6614813746049,100.425225171831,86.8444296261912
+"858",27,36,1,0,"Non-communicable","Black","Male","Nebraska",2004,"West North Central","Midwest","NE",134.288167153251,166.885663671113,209.805941595551,167.743110073137
+"859",27,36,1,1,"All other causes","Black","Female","Nebraska",2004,"West North Central","Midwest","NE",140.163465428956,162.928147916091,190.218460471555,163.969993156759
+"860",27,36,1,1,"Cancers","Black","Female","Nebraska",2004,"West North Central","Midwest","NE",173.515396462693,197.795157296275,218.703973225375,197.552389074561
+"861",27,36,1,1,"Cardiovascular","Black","Female","Nebraska",2004,"West North Central","Midwest","NE",269.003528430446,304.069775039737,336.368771206631,303.91058932716
+"862",27,36,1,1,"Communicable","Black","Female","Nebraska",2004,"West North Central","Midwest","NE",35.603387487858,47.7605376252583,64.2392747899199,48.1818171119677
+"863",27,36,1,1,"Injuries","Black","Female","Nebraska",2004,"West North Central","Midwest","NE",31.692248897748,36.5875033987002,43.6378353521738,36.9079618148314
+"864",27,36,1,1,"Non-communicable","Black","Female","Nebraska",2004,"West North Central","Midwest","NE",115.430558094244,136.464846379635,160.206520569873,136.871794311497
+"865",27,37,0,0,"All other causes","White","Male","Nebraska",2005,"West North Central","Midwest","NE",147.804891499273,153.071029467067,158.212851129839,153.072312142552
+"866",27,37,0,0,"Cancers","White","Male","Nebraska",2005,"West North Central","Midwest","NE",211.588874875842,216.913514153621,222.606196653909,216.997548964772
+"867",27,37,0,0,"Cardiovascular","White","Male","Nebraska",2005,"West North Central","Midwest","NE",292.319346006161,301.00990387918,311.1298839255,301.355842768794
+"868",27,37,0,0,"Communicable","White","Male","Nebraska",2005,"West North Central","Midwest","NE",32.3211757166219,34.974657522701,37.7301746085415,34.972717074301
+"869",27,37,0,0,"Injuries","White","Male","Nebraska",2005,"West North Central","Midwest","NE",68.2112820958852,70.843482093141,73.474412628799,70.8746053953419
+"870",27,37,0,0,"Non-communicable","White","Male","Nebraska",2005,"West North Central","Midwest","NE",124.805913675536,130.166019393252,135.410035149954,130.198177264355
+"871",27,37,0,1,"All other causes","White","Female","Nebraska",2005,"West North Central","Midwest","NE",117.289722244421,121.525044425585,125.601535931879,121.443562797778
+"872",27,37,0,1,"Cancers","White","Female","Nebraska",2005,"West North Central","Midwest","NE",144.164518707825,147.985743381561,151.864971504033,148.035099567124
+"873",27,37,0,1,"Cardiovascular","White","Female","Nebraska",2005,"West North Central","Midwest","NE",196.593143556798,202.556209184974,208.766817770691,202.672961064638
+"874",27,37,0,1,"Communicable","White","Female","Nebraska",2005,"West North Central","Midwest","NE",23.0225220293459,24.9134061196458,26.7328239178333,24.8940339959837
+"875",27,37,0,1,"Injuries","White","Female","Nebraska",2005,"West North Central","Midwest","NE",30.0780917154841,31.6101888095266,33.2508074035249,31.6172554386946
+"876",27,37,0,1,"Non-communicable","White","Female","Nebraska",2005,"West North Central","Midwest","NE",92.0189023234921,95.4379433011253,99.3680051773018,95.5474500916773
+"877",27,37,1,0,"All other causes","Black","Male","Nebraska",2005,"West North Central","Midwest","NE",190.943802742943,221.724639350318,264.035358100658,223.316281871275
+"878",27,37,1,0,"Cancers","Black","Male","Nebraska",2005,"West North Central","Midwest","NE",245.824356839557,282.025328600275,323.364335929758,282.539775938313
+"879",27,37,1,0,"Cardiovascular","Black","Male","Nebraska",2005,"West North Central","Midwest","NE",328.027608426058,377.718403286474,428.837739166938,378.383852512742
+"880",27,37,1,0,"Communicable","Black","Male","Nebraska",2005,"West North Central","Midwest","NE",53.1545049366105,66.6176323316091,86.1759268503579,67.2067875729676
+"881",27,37,1,0,"Injuries","Black","Male","Nebraska",2005,"West North Central","Midwest","NE",74.268722346062,86.760282622945,99.4334075878761,86.8483436191095
+"882",27,37,1,0,"Non-communicable","Black","Male","Nebraska",2005,"West North Central","Midwest","NE",132.71083858381,167.745973674436,208.997821869461,168.296561023033
+"883",27,37,1,1,"All other causes","Black","Female","Nebraska",2005,"West North Central","Midwest","NE",138.625489778721,161.667993555102,188.891100818515,162.324355019686
+"884",27,37,1,1,"Cancers","Black","Female","Nebraska",2005,"West North Central","Midwest","NE",174.24144216468,197.201086653475,217.714479790143,196.930715830066
+"885",27,37,1,1,"Cardiovascular","Black","Female","Nebraska",2005,"West North Central","Midwest","NE",261.979462602059,294.983069497351,330.169624656193,295.316940649476
+"886",27,37,1,1,"Communicable","Black","Female","Nebraska",2005,"West North Central","Midwest","NE",35.5903559478783,46.6937141493452,61.9201087808907,47.1884141947647
+"887",27,37,1,1,"Injuries","Black","Female","Nebraska",2005,"West North Central","Midwest","NE",31.5478026948613,36.569135168441,43.4134886546707,36.9072935759249
+"888",27,37,1,1,"Non-communicable","Black","Female","Nebraska",2005,"West North Central","Midwest","NE",116.268136898696,137.303014908721,160.128491241865,137.287970778849
+"889",27,38,0,0,"All other causes","White","Male","Nebraska",2006,"West North Central","Midwest","NE",151.097752611144,156.298109340174,161.192521470162,156.282279271326
+"890",27,38,0,0,"Cancers","White","Male","Nebraska",2006,"West North Central","Midwest","NE",211.128547225337,216.315977302568,222.058598670302,216.342814041099
+"891",27,38,0,0,"Cardiovascular","White","Male","Nebraska",2006,"West North Central","Midwest","NE",266.960305815565,275.449980417314,283.576285898973,275.422706223989
+"892",27,38,0,0,"Communicable","White","Male","Nebraska",2006,"West North Central","Midwest","NE",31.8163428857399,34.3639497228823,37.0761331158162,34.3685379141433
+"893",27,38,0,0,"Injuries","White","Male","Nebraska",2006,"West North Central","Midwest","NE",67.5491583996889,70.2574871504495,72.8300056850254,70.2466192508182
+"894",27,38,0,0,"Non-communicable","White","Male","Nebraska",2006,"West North Central","Midwest","NE",125.153172660806,130.143305412542,135.494609012186,130.22338960503
+"895",27,38,0,1,"All other causes","White","Female","Nebraska",2006,"West North Central","Midwest","NE",124.558220199741,128.680957199571,132.88318953605,128.61947700652
+"896",27,38,0,1,"Cancers","White","Female","Nebraska",2006,"West North Central","Midwest","NE",142.946506840598,146.778990625092,150.519290116217,146.744545409516
+"897",27,38,0,1,"Cardiovascular","White","Female","Nebraska",2006,"West North Central","Midwest","NE",188.227867576618,193.956205919021,199.765380093428,193.933559996862
+"898",27,38,0,1,"Communicable","White","Female","Nebraska",2006,"West North Central","Midwest","NE",22.29871033477,23.99861621611,25.8175178008052,23.9970712695537
+"899",27,38,0,1,"Injuries","White","Female","Nebraska",2006,"West North Central","Midwest","NE",29.9304599907239,31.4447444872363,33.019565580165,31.4530940575868
+"900",27,38,0,1,"Non-communicable","White","Female","Nebraska",2006,"West North Central","Midwest","NE",91.9642627939231,96.1011514287207,100.248754158503,96.0997525502344
+"901",27,38,1,0,"All other causes","Black","Male","Nebraska",2006,"West North Central","Midwest","NE",193.711096868941,223.821404902867,265.066596335982,225.906464514056
+"902",27,38,1,0,"Cancers","Black","Male","Nebraska",2006,"West North Central","Midwest","NE",242.400787512668,278.310327109094,316.184815329146,278.769859978921
+"903",27,38,1,0,"Cardiovascular","Black","Male","Nebraska",2006,"West North Central","Midwest","NE",320.441243489575,369.613245499491,415.331129901001,368.916373925667
+"904",27,38,1,0,"Communicable","Black","Male","Nebraska",2006,"West North Central","Midwest","NE",49.6339910753247,63.5970168174171,81.2298878130582,64.0973205904474
+"905",27,38,1,0,"Injuries","Black","Male","Nebraska",2006,"West North Central","Midwest","NE",73.8974164281223,86.1705028016073,98.7547135910298,86.1406624506078
+"906",27,38,1,0,"Non-communicable","Black","Male","Nebraska",2006,"West North Central","Midwest","NE",132.960787016512,168.018113756272,206.973916407851,168.194865857397
+"907",27,38,1,1,"All other causes","Black","Female","Nebraska",2006,"West North Central","Midwest","NE",139.761011527114,162.205648281023,190.524522223087,163.229251146853
+"908",27,38,1,1,"Cancers","Black","Female","Nebraska",2006,"West North Central","Midwest","NE",172.436287448215,196.620724392968,216.511333487031,195.759743277252
+"909",27,38,1,1,"Cardiovascular","Black","Female","Nebraska",2006,"West North Central","Midwest","NE",259.365571325701,290.955629868445,324.511653617588,291.186508994661
+"910",27,38,1,1,"Communicable","Black","Female","Nebraska",2006,"West North Central","Midwest","NE",35.2535483442026,45.7808884851576,60.323258395561,46.2616934577789
+"911",27,38,1,1,"Injuries","Black","Female","Nebraska",2006,"West North Central","Midwest","NE",31.8109161978217,36.5729658565751,43.9502535850837,36.9221792365084
+"912",27,38,1,1,"Non-communicable","Black","Female","Nebraska",2006,"West North Central","Midwest","NE",115.973219539725,136.681819788155,161.087432419349,136.977798281228
+"913",27,39,0,0,"All other causes","White","Male","Nebraska",2007,"West North Central","Midwest","NE",152.849741805039,157.992541499799,163.2524270289,158.002269627978
+"914",27,39,0,0,"Cancers","White","Male","Nebraska",2007,"West North Central","Midwest","NE",206.198133691731,212.113404248794,217.466430261567,212.128216150692
+"915",27,39,0,0,"Cardiovascular","White","Male","Nebraska",2007,"West North Central","Midwest","NE",261.251755120631,269.060097510013,277.263132675747,269.092179981389
+"916",27,39,0,0,"Communicable","White","Male","Nebraska",2007,"West North Central","Midwest","NE",30.3083895575362,33.0936922295881,35.7530936424023,33.056509225548
+"917",27,39,0,0,"Injuries","White","Male","Nebraska",2007,"West North Central","Midwest","NE",67.2124873915379,69.9032780628209,72.4198135107697,69.8927543485614
+"918",27,39,0,0,"Non-communicable","White","Male","Nebraska",2007,"West North Central","Midwest","NE",125.736649689034,130.640733559283,135.690126880332,130.710315903296
+"919",27,39,0,1,"All other causes","White","Female","Nebraska",2007,"West North Central","Midwest","NE",128.61314521544,132.690889301957,137.515860063824,132.740879485835
+"920",27,39,0,1,"Cancers","White","Female","Nebraska",2007,"West North Central","Midwest","NE",142.431240046104,146.414461396451,150.269365198138,146.441588630967
+"921",27,39,0,1,"Cardiovascular","White","Female","Nebraska",2007,"West North Central","Midwest","NE",185.600110638154,190.7666117617,196.561784451604,190.810731819965
+"922",27,39,0,1,"Communicable","White","Female","Nebraska",2007,"West North Central","Midwest","NE",22.2110732162345,23.9310052205885,25.6636236954713,23.9164331709793
+"923",27,39,0,1,"Injuries","White","Female","Nebraska",2007,"West North Central","Midwest","NE",29.6771925669086,31.222715429411,32.7580211882909,31.240618803513
+"924",27,39,0,1,"Non-communicable","White","Female","Nebraska",2007,"West North Central","Midwest","NE",94.9701439257975,99.208061255879,103.190255598815,99.2160699801688
+"925",27,39,1,0,"All other causes","Black","Male","Nebraska",2007,"West North Central","Midwest","NE",194.775490860779,227.907865172752,262.738153415815,228.53436910373
+"926",27,39,1,0,"Cancers","Black","Male","Nebraska",2007,"West North Central","Midwest","NE",241.48212418129,277.290641645157,313.469825414012,277.402283035302
+"927",27,39,1,0,"Cardiovascular","Black","Male","Nebraska",2007,"West North Central","Midwest","NE",315.715507710407,362.259434531577,408.411079959388,362.585357561476
+"928",27,39,1,0,"Communicable","Black","Male","Nebraska",2007,"West North Central","Midwest","NE",48.035149864793,61.31351263897,78.1938159267782,61.8287879538193
+"929",27,39,1,0,"Injuries","Black","Male","Nebraska",2007,"West North Central","Midwest","NE",73.8681981479983,85.6342584985668,98.0351323971533,85.8339525061693
+"930",27,39,1,0,"Non-communicable","Black","Male","Nebraska",2007,"West North Central","Midwest","NE",132.638388118543,167.867425743308,208.321076577348,168.154124626474
+"931",27,39,1,1,"All other causes","Black","Female","Nebraska",2007,"West North Central","Midwest","NE",140.611553706397,165.343415795853,191.830232520421,165.937306474416
+"932",27,39,1,1,"Cancers","Black","Female","Nebraska",2007,"West North Central","Midwest","NE",171.189604866592,195.844931601848,217.992198709286,195.04570623655
+"933",27,39,1,1,"Cardiovascular","Black","Female","Nebraska",2007,"West North Central","Midwest","NE",251.557894250944,283.507834683745,316.165358322587,283.834025588582
+"934",27,39,1,1,"Communicable","Black","Female","Nebraska",2007,"West North Central","Midwest","NE",34.9367174578874,45.3124776152906,60.5894846332234,45.9072207765564
+"935",27,39,1,1,"Injuries","Black","Female","Nebraska",2007,"West North Central","Midwest","NE",31.5045623742698,36.6852215096227,44.1188256741184,37.0715777411191
+"936",27,39,1,1,"Non-communicable","Black","Female","Nebraska",2007,"West North Central","Midwest","NE",116.730247661373,136.70733716736,160.691627442086,137.031818453373
+"937",27,40,0,0,"All other causes","White","Male","Nebraska",2008,"West North Central","Midwest","NE",156.418028451366,161.064728844665,166.263514941449,161.18234856614
+"938",27,40,0,0,"Cancers","White","Male","Nebraska",2008,"West North Central","Midwest","NE",200.926487909303,206.6198402248,211.735746725891,206.570934572493
+"939",27,40,0,0,"Cardiovascular","White","Male","Nebraska",2008,"West North Central","Midwest","NE",256.31862456792,264.419491148275,273.226534209096,264.397898040715
+"940",27,40,0,0,"Communicable","White","Male","Nebraska",2008,"West North Central","Midwest","NE",30.0061333359922,32.5670305818673,35.2607727623643,32.5658520264472
+"941",27,40,0,0,"Injuries","White","Male","Nebraska",2008,"West North Central","Midwest","NE",67.0947379717796,69.791207471522,72.4463251717692,69.7686237811957
+"942",27,40,0,0,"Non-communicable","White","Male","Nebraska",2008,"West North Central","Midwest","NE",127.377312358678,132.604187444427,137.741945951126,132.566645242269
+"943",27,40,0,1,"All other causes","White","Female","Nebraska",2008,"West North Central","Midwest","NE",130.238594048392,135.00845747748,139.52387293913,134.969046825214
+"944",27,40,0,1,"Cancers","White","Female","Nebraska",2008,"West North Central","Midwest","NE",140.71818709346,144.584507930289,148.3460015273,144.519932535349
+"945",27,40,0,1,"Cardiovascular","White","Female","Nebraska",2008,"West North Central","Midwest","NE",177.596567125631,182.919498861412,188.699884355,182.95451203115
+"946",27,40,0,1,"Communicable","White","Female","Nebraska",2008,"West North Central","Midwest","NE",21.9726176026522,23.5795317657713,25.5109541673009,23.5919297704555
+"947",27,40,0,1,"Injuries","White","Female","Nebraska",2008,"West North Central","Midwest","NE",29.7388953512387,31.3007632282562,33.0518055853099,31.333242368673
+"948",27,40,0,1,"Non-communicable","White","Female","Nebraska",2008,"West North Central","Midwest","NE",101.275717903274,105.60398971351,110.038917048434,105.607889074801
+"949",27,40,1,0,"All other causes","Black","Male","Nebraska",2008,"West North Central","Midwest","NE",195.101439344835,229.491260653968,267.303043070138,230.672386077438
+"950",27,40,1,0,"Cancers","Black","Male","Nebraska",2008,"West North Central","Midwest","NE",240.680011533455,276.030684522985,313.866829408028,276.389401417585
+"951",27,40,1,0,"Cardiovascular","Black","Male","Nebraska",2008,"West North Central","Midwest","NE",305.776724411702,350.796536492626,397.809174070636,350.980826343099
+"952",27,40,1,0,"Communicable","Black","Male","Nebraska",2008,"West North Central","Midwest","NE",45.9049985075025,59.3188829955854,75.5405018534362,59.6878679228787
+"953",27,40,1,0,"Injuries","Black","Male","Nebraska",2008,"West North Central","Midwest","NE",73.6263961937745,84.9164321267841,97.4557560189115,85.2367639383092
+"954",27,40,1,0,"Non-communicable","Black","Male","Nebraska",2008,"West North Central","Midwest","NE",132.509462279359,167.494319758338,208.142413788278,167.95874787533
+"955",27,40,1,1,"All other causes","Black","Female","Nebraska",2008,"West North Central","Midwest","NE",142.097675002331,166.684368424555,193.676003145834,167.062667834359
+"956",27,40,1,1,"Cancers","Black","Female","Nebraska",2008,"West North Central","Midwest","NE",169.073232270737,194.124433338551,216.548810748732,193.390732065916
+"957",27,40,1,1,"Cardiovascular","Black","Female","Nebraska",2008,"West North Central","Midwest","NE",235.881691988435,268.17874100944,301.920798771077,268.140570983148
+"958",27,40,1,1,"Communicable","Black","Female","Nebraska",2008,"West North Central","Midwest","NE",34.4963735977044,44.4257024797453,58.7757851955505,44.8821347123968
+"959",27,40,1,1,"Injuries","Black","Female","Nebraska",2008,"West North Central","Midwest","NE",31.6618966345369,36.8528469415148,44.58742173056,37.166553969377
+"960",27,40,1,1,"Non-communicable","Black","Female","Nebraska",2008,"West North Central","Midwest","NE",117.224063417002,137.360889986378,160.318849671471,137.852660722695
+"961",27,41,0,0,"All other causes","White","Male","Nebraska",2009,"West North Central","Midwest","NE",158.513072293517,163.627807176105,168.906211029543,163.739979692584
+"962",27,41,0,0,"Cancers","White","Male","Nebraska",2009,"West North Central","Midwest","NE",197.455687221899,203.056241572857,208.64156213072,203.098269044434
+"963",27,41,0,0,"Cardiovascular","White","Male","Nebraska",2009,"West North Central","Midwest","NE",242.284990151165,249.799413759652,257.572780285392,249.841988938467
+"964",27,41,0,0,"Communicable","White","Male","Nebraska",2009,"West North Central","Midwest","NE",27.3125030380356,29.4964691003498,31.7234839530834,29.4859069822654
+"965",27,41,0,0,"Injuries","White","Male","Nebraska",2009,"West North Central","Midwest","NE",66.5320893259687,69.1320770212961,71.7562595035221,69.1215244628524
+"966",27,41,0,0,"Non-communicable","White","Male","Nebraska",2009,"West North Central","Midwest","NE",125.719766519152,130.756794909727,136.000358345102,130.806656986209
+"967",27,41,0,1,"All other causes","White","Female","Nebraska",2009,"West North Central","Midwest","NE",130.205057483533,134.448970885454,139.233112098885,134.488303994744
+"968",27,41,0,1,"Cancers","White","Female","Nebraska",2009,"West North Central","Midwest","NE",138.080023486792,141.950361679031,145.724286493404,141.92634024212
+"969",27,41,0,1,"Cardiovascular","White","Female","Nebraska",2009,"West North Central","Midwest","NE",169.788108768953,175.006506414896,180.293318272213,175.004451221424
+"970",27,41,0,1,"Communicable","White","Female","Nebraska",2009,"West North Central","Midwest","NE",19.444265645843,20.955450520099,22.5851517296375,20.9816397328775
+"971",27,41,0,1,"Injuries","White","Female","Nebraska",2009,"West North Central","Midwest","NE",29.9804002161672,31.4892410582057,33.1772869267887,31.4893274563565
+"972",27,41,0,1,"Non-communicable","White","Female","Nebraska",2009,"West North Central","Midwest","NE",98.4136675771636,102.422352990206,106.534162192438,102.429666112175
+"973",27,41,1,0,"All other causes","Black","Male","Nebraska",2009,"West North Central","Midwest","NE",198.037001106803,231.938855093451,271.701618236499,233.476880844118
+"974",27,41,1,0,"Cancers","Black","Male","Nebraska",2009,"West North Central","Midwest","NE",240.679630561198,277.116337184142,312.857709691009,276.955951860132
+"975",27,41,1,0,"Cardiovascular","Black","Male","Nebraska",2009,"West North Central","Midwest","NE",300.894895666429,343.347121037401,390.056964443722,343.557004207996
+"976",27,41,1,0,"Communicable","Black","Male","Nebraska",2009,"West North Central","Midwest","NE",44.386187010296,57.2137593347002,73.3806654430517,57.702333152643
+"977",27,41,1,0,"Injuries","Black","Male","Nebraska",2009,"West North Central","Midwest","NE",73.9371459696525,85.2017372233682,98.0098560093613,85.1980293205044
+"978",27,41,1,0,"Non-communicable","Black","Male","Nebraska",2009,"West North Central","Midwest","NE",131.368402727873,168.004191543205,207.650084038159,168.221392301832
+"979",27,41,1,1,"All other causes","Black","Female","Nebraska",2009,"West North Central","Midwest","NE",143.500849548175,167.964858027892,196.383273538065,168.688650107946
+"980",27,41,1,1,"Cancers","Black","Female","Nebraska",2009,"West North Central","Midwest","NE",166.811732309912,193.289403622637,213.703196486776,192.220487762906
+"981",27,41,1,1,"Cardiovascular","Black","Female","Nebraska",2009,"West North Central","Midwest","NE",231.276339770953,262.154222161797,296.433765557551,262.262667277687
+"982",27,41,1,1,"Communicable","Black","Female","Nebraska",2009,"West North Central","Midwest","NE",33.6313873154354,44.0184129626255,59.4071216042693,44.6840456480434
+"983",27,41,1,1,"Injuries","Black","Female","Nebraska",2009,"West North Central","Midwest","NE",31.6256985624507,36.973346232512,45.8556276874122,37.3461074078003
+"984",27,41,1,1,"Non-communicable","Black","Female","Nebraska",2009,"West North Central","Midwest","NE",117.978846403949,138.885214166425,163.573194523862,139.48801498001
+"985",27,42,0,0,"All other causes","White","Male","Nebraska",2010,"West North Central","Midwest","NE",162.297442996936,167.666100477126,173.43516566609,167.770153161592
+"986",27,42,0,0,"Cancers","White","Male","Nebraska",2010,"West North Central","Midwest","NE",196.143213297944,201.147682073353,206.342605569891,201.143839164709
+"987",27,42,0,0,"Cardiovascular","White","Male","Nebraska",2010,"West North Central","Midwest","NE",240.110908952075,247.755971989869,255.562232391293,247.948064731588
+"988",27,42,0,0,"Communicable","White","Male","Nebraska",2010,"West North Central","Midwest","NE",26.5242865597618,28.6011695009249,30.9322809129736,28.6331783841593
+"989",27,42,0,0,"Injuries","White","Male","Nebraska",2010,"West North Central","Midwest","NE",66.6662506278113,69.3774378872521,72.0858102727573,69.3794684408798
+"990",27,42,0,0,"Non-communicable","White","Male","Nebraska",2010,"West North Central","Midwest","NE",127.170386214194,132.169834462631,137.577261672921,132.30941326517
+"991",27,42,0,1,"All other causes","White","Female","Nebraska",2010,"West North Central","Midwest","NE",130.81752410809,135.326939729278,140.157457376194,135.396087494527
+"992",27,42,0,1,"Cancers","White","Female","Nebraska",2010,"West North Central","Midwest","NE",137.485516479706,141.217179679257,145.186818156618,141.219146814906
+"993",27,42,0,1,"Cardiovascular","White","Female","Nebraska",2010,"West North Central","Midwest","NE",167.499797917052,172.285928757761,177.436975969361,172.311253101553
+"994",27,42,0,1,"Communicable","White","Female","Nebraska",2010,"West North Central","Midwest","NE",19.136760803561,20.6087805456642,22.3283477644226,20.6374890221997
+"995",27,42,0,1,"Injuries","White","Female","Nebraska",2010,"West North Central","Midwest","NE",30.0063228832881,31.802453237441,33.4921499727418,31.7819698891547
+"996",27,42,0,1,"Non-communicable","White","Female","Nebraska",2010,"West North Central","Midwest","NE",97.1865561819915,100.94512870252,104.900971736735,100.968117675738
+"997",27,42,1,0,"All other causes","Black","Male","Nebraska",2010,"West North Central","Midwest","NE",200.644735371229,234.991401891474,274.386641084296,236.736170325584
+"998",27,42,1,0,"Cancers","Black","Male","Nebraska",2010,"West North Central","Midwest","NE",239.445581400027,275.602686438202,312.008987230035,275.705575001865
+"999",27,42,1,0,"Cardiovascular","Black","Male","Nebraska",2010,"West North Central","Midwest","NE",295.66505354711,335.796559268361,379.209885135741,335.991747218401
+"1000",27,42,1,0,"Communicable","Black","Male","Nebraska",2010,"West North Central","Midwest","NE",44.1367899763695,56.6013118680939,73.7783121590525,57.4980396010055
+"1001",27,42,1,0,"Injuries","Black","Male","Nebraska",2010,"West North Central","Midwest","NE",74.0284182683977,85.1796550798052,98.1670799464692,85.438372577136
+"1002",27,42,1,0,"Non-communicable","Black","Male","Nebraska",2010,"West North Central","Midwest","NE",132.702315485635,168.494330560053,207.45275087363,168.762005908316
+"1003",27,42,1,1,"All other causes","Black","Female","Nebraska",2010,"West North Central","Midwest","NE",144.821430283782,168.26370197236,197.654122241396,168.574294915686
+"1004",27,42,1,1,"Cancers","Black","Female","Nebraska",2010,"West North Central","Midwest","NE",167.204685738911,192.611289656386,212.708750171188,191.684468412516
+"1005",27,42,1,1,"Cardiovascular","Black","Female","Nebraska",2010,"West North Central","Midwest","NE",228.564132588653,258.09334548107,292.920812575035,258.706583821287
+"1006",27,42,1,1,"Communicable","Black","Female","Nebraska",2010,"West North Central","Midwest","NE",33.500376666122,43.6920375453014,59.0214144820087,44.4432129347526
+"1007",27,42,1,1,"Injuries","Black","Female","Nebraska",2010,"West North Central","Midwest","NE",31.7599284767372,37.2227968600368,47.230907888648,37.7511080359256
+"1008",27,42,1,1,"Non-communicable","Black","Female","Nebraska",2010,"West North Central","Midwest","NE",116.333636513315,137.804749780992,162.585160581797,138.087538888718
+"1009",27,43,0,0,"All other causes","White","Male","Nebraska",2011,"West North Central","Midwest","NE",164.236100089087,169.613088526153,175.770801784219,169.566224531843
+"1010",27,43,0,0,"Cancers","White","Male","Nebraska",2011,"West North Central","Midwest","NE",194.700307750818,199.950662529955,205.390806152612,200.015456635691
+"1011",27,43,0,0,"Cardiovascular","White","Male","Nebraska",2011,"West North Central","Midwest","NE",235.350617920225,242.569677938137,250.80961374689,242.790556610868
+"1012",27,43,0,0,"Communicable","White","Male","Nebraska",2011,"West North Central","Midwest","NE",27.2941569102767,29.417528425671,31.9124627883271,29.4413840554364
+"1013",27,43,0,0,"Injuries","White","Male","Nebraska",2011,"West North Central","Midwest","NE",67.2421055731646,69.9437292778963,72.7351786782212,69.9530059158053
+"1014",27,43,0,0,"Non-communicable","White","Male","Nebraska",2011,"West North Central","Midwest","NE",127.131543981898,131.952652308147,137.112622098671,131.977750855392
+"1015",27,43,0,1,"All other causes","White","Female","Nebraska",2011,"West North Central","Midwest","NE",141.696773913484,146.552682814163,151.490753433906,146.528378328231
+"1016",27,43,0,1,"Cancers","White","Female","Nebraska",2011,"West North Central","Midwest","NE",136.040799447387,139.914293224522,143.636819730042,139.923805368059
+"1017",27,43,0,1,"Cardiovascular","White","Female","Nebraska",2011,"West North Central","Midwest","NE",162.861363209967,167.935303179701,173.239652374287,168.056744606353
+"1018",27,43,0,1,"Communicable","White","Female","Nebraska",2011,"West North Central","Midwest","NE",19.3540296079091,20.9073231183037,22.5975539155664,20.9357697915096
+"1019",27,43,0,1,"Injuries","White","Female","Nebraska",2011,"West North Central","Midwest","NE",30.4583826976764,32.1432546276241,33.7773205702402,32.1360295552484
+"1020",27,43,0,1,"Non-communicable","White","Female","Nebraska",2011,"West North Central","Midwest","NE",95.7768229046275,99.6418948003661,103.711605378514,99.6108322450364
+"1021",27,43,1,0,"All other causes","Black","Male","Nebraska",2011,"West North Central","Midwest","NE",201.596784648306,239.595186891307,282.340727705737,240.433838830629
+"1022",27,43,1,0,"Cancers","Black","Male","Nebraska",2011,"West North Central","Midwest","NE",239.043494667768,275.179442034184,316.92699075965,275.583118203299
+"1023",27,43,1,0,"Cardiovascular","Black","Male","Nebraska",2011,"West North Central","Midwest","NE",286.469137291225,328.777634112561,373.138312267266,328.608514372413
+"1024",27,43,1,0,"Communicable","Black","Male","Nebraska",2011,"West North Central","Midwest","NE",43.6658554348574,56.8495558961922,74.5156150738484,57.2567450536221
+"1025",27,43,1,0,"Injuries","Black","Male","Nebraska",2011,"West North Central","Midwest","NE",73.3932216535441,85.3038406124813,99.3637295956109,85.3622444673669
+"1026",27,43,1,0,"Non-communicable","Black","Male","Nebraska",2011,"West North Central","Midwest","NE",131.60132006479,169.142767668906,209.525368531129,169.787447926175
+"1027",27,43,1,1,"All other causes","Black","Female","Nebraska",2011,"West North Central","Midwest","NE",145.641599995307,169.699374462871,199.872024945227,170.061505964174
+"1028",27,43,1,1,"Cancers","Black","Female","Nebraska",2011,"West North Central","Midwest","NE",165.941162345943,191.897774457708,212.460313481972,190.917648125272
+"1029",27,43,1,1,"Cardiovascular","Black","Female","Nebraska",2011,"West North Central","Midwest","NE",221.847694112836,252.294099792217,287.614905188537,252.983801745912
+"1030",27,43,1,1,"Communicable","Black","Female","Nebraska",2011,"West North Central","Midwest","NE",33.0167315246926,44.1600962260833,59.0242598153253,44.6771660659292
+"1031",27,43,1,1,"Injuries","Black","Female","Nebraska",2011,"West North Central","Midwest","NE",31.9834682361151,37.4087523035525,47.3358686293998,38.0405382030447
+"1032",27,43,1,1,"Non-communicable","Black","Female","Nebraska",2011,"West North Central","Midwest","NE",113.728402285064,135.895225444675,162.741441375495,136.61198153765
+"1033",27,44,0,0,"All other causes","White","Male","Nebraska",2012,"West North Central","Midwest","NE",166.382805987841,172.050470277006,177.443652649967,172.041933967045
+"1034",27,44,0,0,"Cancers","White","Male","Nebraska",2012,"West North Central","Midwest","NE",193.352616526169,198.6032232503,204.402476289629,198.664132454504
+"1035",27,44,0,0,"Cardiovascular","White","Male","Nebraska",2012,"West North Central","Midwest","NE",233.242868266107,240.848770991586,248.285178838842,240.76681232404
+"1036",27,44,0,0,"Communicable","White","Male","Nebraska",2012,"West North Central","Midwest","NE",26.7607605172229,29.1068826606085,31.6898759039704,29.1374521546236
+"1037",27,44,0,0,"Injuries","White","Male","Nebraska",2012,"West North Central","Midwest","NE",68.5238619903168,71.2880623712423,74.4492216596988,71.3595334983895
+"1038",27,44,0,0,"Non-communicable","White","Male","Nebraska",2012,"West North Central","Midwest","NE",125.4499515507,130.327972019118,135.785335389967,130.506370246439
+"1039",27,44,0,1,"All other causes","White","Female","Nebraska",2012,"West North Central","Midwest","NE",143.26607222436,148.22562610461,153.226528655505,148.243699642681
+"1040",27,44,0,1,"Cancers","White","Female","Nebraska",2012,"West North Central","Midwest","NE",135.740854102018,139.867696435033,143.694942216761,139.851046692528
+"1041",27,44,0,1,"Cardiovascular","White","Female","Nebraska",2012,"West North Central","Midwest","NE",160.369862682844,165.425437488693,170.517551395239,165.401853698437
+"1042",27,44,0,1,"Communicable","White","Female","Nebraska",2012,"West North Central","Midwest","NE",18.5394867584666,20.1492381170907,21.9010405080875,20.1482871716345
+"1043",27,44,0,1,"Injuries","White","Female","Nebraska",2012,"West North Central","Midwest","NE",30.525115659153,32.2913937494547,34.2127722106226,32.2911817708754
+"1044",27,44,0,1,"Non-communicable","White","Female","Nebraska",2012,"West North Central","Midwest","NE",93.6622698160882,97.5542439191535,101.547503192523,97.5827428659701
+"1045",27,44,1,0,"All other causes","Black","Male","Nebraska",2012,"West North Central","Midwest","NE",201.52678696214,241.079021631481,285.505848970211,241.734050475912
+"1046",27,44,1,0,"Cancers","Black","Male","Nebraska",2012,"West North Central","Midwest","NE",237.328691337561,275.250172961442,315.20300989309,275.77587262397
+"1047",27,44,1,0,"Cardiovascular","Black","Male","Nebraska",2012,"West North Central","Midwest","NE",282.012825019994,326.040047080545,369.986199104007,325.504527567975
+"1048",27,44,1,0,"Communicable","Black","Male","Nebraska",2012,"West North Central","Midwest","NE",43.3366318620727,57.00386493471,76.8703576765011,57.8371381672147
+"1049",27,44,1,0,"Injuries","Black","Male","Nebraska",2012,"West North Central","Midwest","NE",71.6525160533292,84.9556233859709,99.6947659552138,85.1034000517855
+"1050",27,44,1,0,"Non-communicable","Black","Male","Nebraska",2012,"West North Central","Midwest","NE",132.489276421798,171.027669945643,214.495142828286,171.290182416635
+"1051",27,44,1,1,"All other causes","Black","Female","Nebraska",2012,"West North Central","Midwest","NE",149.44761576602,176.334804622993,208.355822827371,177.018111464886
+"1052",27,44,1,1,"Cancers","Black","Female","Nebraska",2012,"West North Central","Midwest","NE",165.725201338129,190.982181318036,212.95031907353,190.159301715747
+"1053",27,44,1,1,"Cardiovascular","Black","Female","Nebraska",2012,"West North Central","Midwest","NE",219.945063653275,253.365417946581,292.016014743266,254.003554638922
+"1054",27,44,1,1,"Communicable","Black","Female","Nebraska",2012,"West North Central","Midwest","NE",33.2877057855801,44.4015799281599,60.9211707265918,45.1948389882557
+"1055",27,44,1,1,"Injuries","Black","Female","Nebraska",2012,"West North Central","Midwest","NE",32.0173187264808,37.6928353922939,48.5725280456776,38.4447464464109
+"1056",27,44,1,1,"Non-communicable","Black","Female","Nebraska",2012,"West North Central","Midwest","NE",112.532025366556,134.901254859655,161.826661872906,135.098595819614
+"1057",27,45,0,0,"All other causes","White","Male","Nebraska",2013,"West North Central","Midwest","NE",164.723192628777,171.305476662862,177.492148841079,171.32543438785
+"1058",27,45,0,0,"Cancers","White","Male","Nebraska",2013,"West North Central","Midwest","NE",190.869129504783,197.174955370283,203.795827210677,197.238138008248
+"1059",27,45,0,0,"Cardiovascular","White","Male","Nebraska",2013,"West North Central","Midwest","NE",232.716443358756,240.689623250045,248.921921668405,240.600761775163
+"1060",27,45,0,0,"Communicable","White","Male","Nebraska",2013,"West North Central","Midwest","NE",27.3678277884964,29.8702367494001,32.8995198326148,29.9285714364862
+"1061",27,45,0,0,"Injuries","White","Male","Nebraska",2013,"West North Central","Midwest","NE",68.0264471732268,71.2660024198344,74.7506276944386,71.3557355747621
+"1062",27,45,0,0,"Non-communicable","White","Male","Nebraska",2013,"West North Central","Midwest","NE",122.68151277025,128.27648316597,134.272670897525,128.385435588103
+"1063",27,45,0,1,"All other causes","White","Female","Nebraska",2013,"West North Central","Midwest","NE",144.780119086835,149.876175263361,155.192583723169,149.894993116075
+"1064",27,45,0,1,"Cancers","White","Female","Nebraska",2013,"West North Central","Midwest","NE",135.38541802017,139.706936368868,144.279168852013,139.721439777269
+"1065",27,45,0,1,"Cardiovascular","White","Female","Nebraska",2013,"West North Central","Midwest","NE",161.147710951432,166.443650725581,171.942461674615,166.479457497008
+"1066",27,45,0,1,"Communicable","White","Female","Nebraska",2013,"West North Central","Midwest","NE",18.9436265173201,20.6830650350392,22.7423699588611,20.7171538557188
+"1067",27,45,0,1,"Injuries","White","Female","Nebraska",2013,"West North Central","Midwest","NE",30.1389607075353,32.1602517992163,34.2562833088107,32.2060735322257
+"1068",27,45,0,1,"Non-communicable","White","Female","Nebraska",2013,"West North Central","Midwest","NE",94.3390113519746,98.7570640687976,103.35407685216,98.7786549330971
+"1069",27,45,1,0,"All other causes","Black","Male","Nebraska",2013,"West North Central","Midwest","NE",204.656658387416,243.474562459118,292.209058714256,245.059160176867
+"1070",27,45,1,0,"Cancers","Black","Male","Nebraska",2013,"West North Central","Midwest","NE",230.587558140196,273.185765186601,316.722192008748,273.298744141211
+"1071",27,45,1,0,"Cardiovascular","Black","Male","Nebraska",2013,"West North Central","Midwest","NE",280.723152938539,325.818831565236,377.391831713548,326.697288748854
+"1072",27,45,1,0,"Communicable","Black","Male","Nebraska",2013,"West North Central","Midwest","NE",43.1210870790587,57.2050056754912,80.1618047243608,58.6004195572889
+"1073",27,45,1,0,"Injuries","Black","Male","Nebraska",2013,"West North Central","Midwest","NE",70.7266346158439,85.1307148658623,101.530348267339,85.3579801030064
+"1074",27,45,1,0,"Non-communicable","Black","Male","Nebraska",2013,"West North Central","Midwest","NE",130.250607031268,170.272362852371,219.684644397615,171.256389871113
+"1075",27,45,1,1,"All other causes","Black","Female","Nebraska",2013,"West North Central","Midwest","NE",149.19596759326,179.930423058401,212.703699782597,180.36417384447
+"1076",27,45,1,1,"Cancers","Black","Female","Nebraska",2013,"West North Central","Midwest","NE",162.38807889008,190.380400756917,213.711648125077,189.556980160593
+"1077",27,45,1,1,"Cardiovascular","Black","Female","Nebraska",2013,"West North Central","Midwest","NE",217.59619671362,253.355068619794,297.009405004888,253.975850674588
+"1078",27,45,1,1,"Communicable","Black","Female","Nebraska",2013,"West North Central","Midwest","NE",32.9983974237011,44.6953968942789,63.9962202790637,45.7895347855636
+"1079",27,45,1,1,"Injuries","Black","Female","Nebraska",2013,"West North Central","Midwest","NE",32.093889544283,37.8553703151483,50.2295845143885,38.6799789765679
+"1080",27,45,1,1,"Non-communicable","Black","Female","Nebraska",2013,"West North Central","Midwest","NE",109.688783463728,133.759737144668,162.400062156552,134.206950649522

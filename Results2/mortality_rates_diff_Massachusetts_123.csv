@@ -1,0 +1,541 @@
+"","state.n","year.n","sex.n","COD","rate.difference_LCL","rate.difference_med","rate.difference_UCL","rate.difference_mean","Census_Division","Census_Region","stabbrs","sex","state","year"
+"1",21,1,0,"All other causes",41.9009378825129,68.1287147352388,100.858427043421,68.9911018034186,"New England","Northeast","MA","Male","Massachusetts",1969
+"2",21,1,0,"Cancers",31.675901250203,63.3358981664763,95.9308808872736,63.5425069385506,"New England","Northeast","MA","Male","Massachusetts",1969
+"3",21,1,0,"Cardiovascular",-104.585462937775,-35.9012993375073,44.1148252515848,-34.943607606271,"New England","Northeast","MA","Male","Massachusetts",1969
+"4",21,1,0,"Communicable",5.57359094414392,36.9124838927819,78.0601231047393,38.2225936846955,"New England","Northeast","MA","Male","Massachusetts",1969
+"5",21,1,0,"Injuries",79.2480315254067,104.196814319206,133.051681260171,104.744874093281,"New England","Northeast","MA","Male","Massachusetts",1969
+"6",21,1,0,"Non-communicable",22.6752505210957,48.6258601769764,82.3135645033453,49.7587390174042,"New England","Northeast","MA","Male","Massachusetts",1969
+"7",21,1,1,"All other causes",29.293504004112,44.8594639739269,65.0178233666513,45.4372644375266,"New England","Northeast","MA","Female","Massachusetts",1969
+"8",21,1,1,"Cancers",-9.63731811894278,7.27492555289035,25.9339401687084,7.3558443733187,"New England","Northeast","MA","Female","Massachusetts",1969
+"9",21,1,1,"Cardiovascular",-44.6793034504612,4.53841515058468,56.3257154024705,4.86989104873968,"New England","Northeast","MA","Female","Massachusetts",1969
+"10",21,1,1,"Communicable",12.7929627562151,34.1338674135692,60.5839879722035,34.8279022777711,"New England","Northeast","MA","Female","Massachusetts",1969
+"11",21,1,1,"Injuries",-0.335027632995925,12.8721721317672,29.6063432925545,13.3035604726567,"New England","Northeast","MA","Female","Massachusetts",1969
+"12",21,1,1,"Non-communicable",12.3318465367703,28.7503919460758,48.0350028533424,29.3085056437091,"New England","Northeast","MA","Female","Massachusetts",1969
+"13",21,2,0,"All other causes",46.6331835959497,73.1853788110219,101.190949794824,73.3681483015295,"New England","Northeast","MA","Male","Massachusetts",1970
+"14",21,2,0,"Cancers",34.5449010210673,63.9545037799877,94.475733110543,64.4050632452131,"New England","Northeast","MA","Male","Massachusetts",1970
+"15",21,2,0,"Cardiovascular",-109.775973105571,-52.6850821438843,14.5419277734514,-51.8843806702581,"New England","Northeast","MA","Male","Massachusetts",1970
+"16",21,2,0,"Communicable",5.10656736306522,31.4520973508688,65.7295020672567,32.1568011930034,"New England","Northeast","MA","Male","Massachusetts",1970
+"17",21,2,0,"Injuries",80.3909569880779,102.242796167797,127.834774277332,102.757668957497,"New England","Northeast","MA","Male","Massachusetts",1970
+"18",21,2,0,"Non-communicable",20.562858216378,46.0120442681936,75.4792302869307,46.269533499479,"New England","Northeast","MA","Male","Massachusetts",1970
+"19",21,2,1,"All other causes",31.8440323281955,46.484139710039,66.4719147650049,47.1551931208537,"New England","Northeast","MA","Female","Massachusetts",1970
+"20",21,2,1,"Cancers",-8.56954548774418,6.97808329676208,24.8244216591658,7.12188382068708,"New England","Northeast","MA","Female","Massachusetts",1970
+"21",21,2,1,"Cardiovascular",-12.3575598331489,28.1913437810472,74.0821074395834,28.4786311797908,"New England","Northeast","MA","Female","Massachusetts",1970
+"22",21,2,1,"Communicable",15.8844416736478,33.8339111150909,54.5935523181248,34.3317853378671,"New England","Northeast","MA","Female","Massachusetts",1970
+"23",21,2,1,"Injuries",-0.809667894194377,12.1803037895928,26.7109126981978,12.3826478740437,"New England","Northeast","MA","Female","Massachusetts",1970
+"24",21,2,1,"Non-communicable",12.2815905423417,28.2212412074596,45.747616808711,28.3972800785064,"New England","Northeast","MA","Female","Massachusetts",1970
+"25",21,3,0,"All other causes",46.7496772601896,70.5209187869745,95.4199634449922,70.3157679041325,"New England","Northeast","MA","Male","Massachusetts",1971
+"26",21,3,0,"Cancers",34.0564694110852,63.0833395053642,94.1858326170622,63.0145683701287,"New England","Northeast","MA","Male","Massachusetts",1971
+"27",21,3,0,"Cardiovascular",-114.943919068037,-57.9889108879953,4.72902718714102,-57.1475442346866,"New England","Northeast","MA","Male","Massachusetts",1971
+"28",21,3,0,"Communicable",8.1759899719816,33.7770458595769,66.8353621284503,35.1228943825873,"New England","Northeast","MA","Male","Massachusetts",1971
+"29",21,3,0,"Injuries",86.5503143845297,106.668605926212,129.483083686314,107.128632447603,"New England","Northeast","MA","Male","Massachusetts",1971
+"30",21,3,0,"Non-communicable",19.0652125619522,42.1153863411542,68.1170805363851,42.4063408247648,"New England","Northeast","MA","Male","Massachusetts",1971
+"31",21,3,1,"All other causes",35.8577752512197,49.7703544979613,66.9392125874764,50.3037730254413,"New England","Northeast","MA","Female","Massachusetts",1971
+"32",21,3,1,"Cancers",-10.580160515855,4.25754071656337,20.7735305911435,4.36601097283271,"New England","Northeast","MA","Female","Massachusetts",1971
+"33",21,3,1,"Cardiovascular",-5.62179426988903,33.5885501518002,77.5371057781726,34.0199559723739,"New England","Northeast","MA","Female","Massachusetts",1971
+"34",21,3,1,"Communicable",15.6430942025088,31.6366340081979,53.6946695801769,32.4897065016223,"New England","Northeast","MA","Female","Massachusetts",1971
+"35",21,3,1,"Injuries",-0.822872046311432,10.9176105511909,23.5907858676259,11.1359205213192,"New England","Northeast","MA","Female","Massachusetts",1971
+"36",21,3,1,"Non-communicable",13.9629586021871,27.6853404719662,44.2889929654076,28.1991381005887,"New England","Northeast","MA","Female","Massachusetts",1971
+"37",21,4,0,"All other causes",42.0536811531746,64.8017276569927,89.3282942549828,64.7499983801687,"New England","Northeast","MA","Male","Massachusetts",1972
+"38",21,4,0,"Cancers",34.2541229298694,60.780879923756,88.4206676980698,60.9999102683515,"New England","Northeast","MA","Male","Massachusetts",1972
+"39",21,4,0,"Cardiovascular",-122.169730262576,-66.9426124867721,-9.81010768921644,-66.8583640171462,"New England","Northeast","MA","Male","Massachusetts",1972
+"40",21,4,0,"Communicable",-0.571533794662206,24.8983611782482,56.1739484414381,25.2106312873469,"New England","Northeast","MA","Male","Massachusetts",1972
+"41",21,4,0,"Injuries",84.8874099129147,102.892434157779,124.92297125074,103.686932136648,"New England","Northeast","MA","Male","Massachusetts",1972
+"42",21,4,0,"Non-communicable",18.1731739013779,38.6264372075292,64.3012801421199,39.414443442828,"New England","Northeast","MA","Male","Massachusetts",1972
+"43",21,4,1,"All other causes",36.5433483448941,50.3883648623489,66.5931561402447,50.6290701862502,"New England","Northeast","MA","Female","Massachusetts",1972
+"44",21,4,1,"Cancers",-11.4182393703652,2.77980343376886,19.1213979676001,2.811247067231,"New England","Northeast","MA","Female","Massachusetts",1972
+"45",21,4,1,"Cardiovascular",-15.6670075399561,20.2562697385638,61.7482692674176,20.9384645194968,"New England","Northeast","MA","Female","Massachusetts",1972
+"46",21,4,1,"Communicable",11.3866683825034,26.2871999050356,46.8835390592619,27.1301719403668,"New England","Northeast","MA","Female","Massachusetts",1972
+"47",21,4,1,"Injuries",0.643404243890349,11.7227722356812,23.548331896452,11.965997022402,"New England","Northeast","MA","Female","Massachusetts",1972
+"48",21,4,1,"Non-communicable",13.7216248936876,27.0627943092324,42.2634999900138,27.28421325582,"New England","Northeast","MA","Female","Massachusetts",1972
+"49",21,5,0,"All other causes",41.1261264013667,61.7735857799858,84.4455977038636,62.2717756046221,"New England","Northeast","MA","Male","Massachusetts",1973
+"50",21,5,0,"Cancers",35.4434624545572,61.0075476838199,85.7662151294676,60.912250029491,"New England","Northeast","MA","Male","Massachusetts",1973
+"51",21,5,0,"Cardiovascular",-130.901533016211,-76.9595256695827,-25.1804297950452,-77.5588822750319,"New England","Northeast","MA","Male","Massachusetts",1973
+"52",21,5,0,"Communicable",-1.41465334291337,24.0655338992412,52.5774424482108,24.3030553829444,"New England","Northeast","MA","Male","Massachusetts",1973
+"53",21,5,0,"Injuries",73.8789201648456,91.8387580777042,111.617861997858,92.158964246891,"New England","Northeast","MA","Male","Massachusetts",1973
+"54",21,5,0,"Non-communicable",13.983771030363,33.8106221433508,58.355866132323,34.8541390112207,"New England","Northeast","MA","Male","Massachusetts",1973
+"55",21,5,1,"All other causes",38.9338187105524,52.2378046904503,66.8466789962838,52.659684164284,"New England","Northeast","MA","Female","Massachusetts",1973
+"56",21,5,1,"Cancers",-11.3780835294305,1.90686272624178,16.7257489218609,2.03077396950049,"New England","Northeast","MA","Female","Massachusetts",1973
+"57",21,5,1,"Cardiovascular",-36.8484976172151,-1.12881730349136,39.1144628533816,-0.562538265874973,"New England","Northeast","MA","Female","Massachusetts",1973
+"58",21,5,1,"Communicable",9.56780250023825,23.3408807404,41.758105729946,24.259421443913,"New England","Northeast","MA","Female","Massachusetts",1973
+"59",21,5,1,"Injuries",1.09225057219692,10.6768264676937,21.4259090682273,10.9264941349987,"New England","Northeast","MA","Female","Massachusetts",1973
+"60",21,5,1,"Non-communicable",13.5647691915951,26.0160719413498,40.7227761674005,26.3634435166472,"New England","Northeast","MA","Female","Massachusetts",1973
+"61",21,6,0,"All other causes",38.4438584403028,59.3350036180775,82.8960985136592,59.4890757444988,"New England","Northeast","MA","Male","Massachusetts",1974
+"62",21,6,0,"Cancers",29.5105978786288,55.7127705199493,81.836069289118,55.8346351037479,"New England","Northeast","MA","Male","Massachusetts",1974
+"63",21,6,0,"Cardiovascular",-117.531023446578,-66.7254247876839,-11.1081120280427,-66.1151418347362,"New England","Northeast","MA","Male","Massachusetts",1974
+"64",21,6,0,"Communicable",-0.576892654028173,25.4291065705686,52.8021325329829,25.6025798462775,"New England","Northeast","MA","Male","Massachusetts",1974
+"65",21,6,0,"Injuries",65.9047747017175,81.8739737363131,102.090200535094,82.400097164479,"New England","Northeast","MA","Male","Massachusetts",1974
+"66",21,6,0,"Non-communicable",12.14609552522,31.347681049511,55.3443899268887,31.7705076615449,"New England","Northeast","MA","Male","Massachusetts",1974
+"67",21,6,1,"All other causes",37.0198624403343,49.8247812783168,64.5464739614424,50.2796132377455,"New England","Northeast","MA","Female","Massachusetts",1974
+"68",21,6,1,"Cancers",-12.9182642547279,-0.422670127152955,13.0204085928791,-0.436618086214648,"New England","Northeast","MA","Female","Massachusetts",1974
+"69",21,6,1,"Cardiovascular",-33.71627384283,-0.17125349865816,38.3954379958369,0.727143816553587,"New England","Northeast","MA","Female","Massachusetts",1974
+"70",21,6,1,"Communicable",10.1907764601731,23.5165048981673,42.1020759294942,24.2897606534404,"New England","Northeast","MA","Female","Massachusetts",1974
+"71",21,6,1,"Injuries",0.784244953952606,10.015041781382,20.4486377785428,10.3042374857001,"New England","Northeast","MA","Female","Massachusetts",1974
+"72",21,6,1,"Non-communicable",13.1715369702748,24.9738751034591,40.8363833552296,25.4794179556556,"New England","Northeast","MA","Female","Massachusetts",1974
+"73",21,7,0,"All other causes",36.8782974795757,56.4347319548253,77.8888486654468,56.6528092194161,"New England","Northeast","MA","Male","Massachusetts",1975
+"74",21,7,0,"Cancers",25.1246973357627,50.5529204570009,75.7462000178026,50.3266917665007,"New England","Northeast","MA","Male","Massachusetts",1975
+"75",21,7,0,"Cardiovascular",-101.151233453971,-50.0911500774762,4.63326747028619,-49.037864706205,"New England","Northeast","MA","Male","Massachusetts",1975
+"76",21,7,0,"Communicable",2.06407771595058,26.3986580840043,53.7229017048421,26.4993877926822,"New England","Northeast","MA","Male","Massachusetts",1975
+"77",21,7,0,"Injuries",57.8542078825175,74.2619211076085,92.3485488601989,74.4747389267178,"New England","Northeast","MA","Male","Massachusetts",1975
+"78",21,7,0,"Non-communicable",9.11453726980394,28.2651266374575,51.0910727365355,28.4860857426156,"New England","Northeast","MA","Male","Massachusetts",1975
+"79",21,7,1,"All other causes",38.7698832271866,50.5070352681093,64.8313524266789,50.7949323078649,"New England","Northeast","MA","Female","Massachusetts",1975
+"80",21,7,1,"Cancers",-15.4062830217251,-3.64959411980578,8.99423811020309,-3.57247751825091,"New England","Northeast","MA","Female","Massachusetts",1975
+"81",21,7,1,"Cardiovascular",-19.0646664291121,13.9373422523111,47.1690940779885,14.1341934618868,"New England","Northeast","MA","Female","Massachusetts",1975
+"82",21,7,1,"Communicable",10.381331924341,23.1078689222182,38.7718328605426,23.4692879395426,"New England","Northeast","MA","Female","Massachusetts",1975
+"83",21,7,1,"Injuries",1.49167969397413,10.163086596566,19.9205159973487,10.4676472591866,"New England","Northeast","MA","Female","Massachusetts",1975
+"84",21,7,1,"Non-communicable",13.2819649741147,25.5821468241181,40.0063769095564,25.7721956726697,"New England","Northeast","MA","Female","Massachusetts",1975
+"85",21,8,0,"All other causes",36.8670298365055,56.1171435351777,77.5674749529788,56.0261477205151,"New England","Northeast","MA","Male","Massachusetts",1976
+"86",21,8,0,"Cancers",25.4851667801193,48.5697639321831,72.1059022975765,48.704910276387,"New England","Northeast","MA","Male","Massachusetts",1976
+"87",21,8,0,"Cardiovascular",-104.591167591017,-58.5387275296652,-8.82260419229279,-58.5105019405059,"New England","Northeast","MA","Male","Massachusetts",1976
+"88",21,8,0,"Communicable",-7.68934845947827,14.6684928180294,41.1485264608063,15.3917244186872,"New England","Northeast","MA","Male","Massachusetts",1976
+"89",21,8,0,"Injuries",49.852497386003,64.6619268275643,82.7814480255179,65.0890517986714,"New England","Northeast","MA","Male","Massachusetts",1976
+"90",21,8,0,"Non-communicable",7.11153626110947,26.5462394920799,49.2724772256042,27.059322869318,"New England","Northeast","MA","Male","Massachusetts",1976
+"91",21,8,1,"All other causes",37.170179956784,48.5611695424177,62.6096279172107,48.9272448072981,"New England","Northeast","MA","Female","Massachusetts",1976
+"92",21,8,1,"Cancers",-16.8081636989002,-5.08200412540332,7.58902987148642,-4.87024751374166,"New England","Northeast","MA","Female","Massachusetts",1976
+"93",21,8,1,"Cardiovascular",-25.6849096567526,4.68523920529583,39.2029842714201,5.20825125601017,"New England","Northeast","MA","Female","Massachusetts",1976
+"94",21,8,1,"Communicable",-0.604995872398233,13.2218253226271,28.2940751648635,13.3553878845911,"New England","Northeast","MA","Female","Massachusetts",1976
+"95",21,8,1,"Injuries",2.45736324408307,10.6050522108809,20.2483467187641,10.7719829491169,"New England","Northeast","MA","Female","Massachusetts",1976
+"96",21,8,1,"Non-communicable",13.5717346048459,25.1106527882292,38.3815123848782,25.2400724070649,"New England","Northeast","MA","Female","Massachusetts",1976
+"97",21,9,0,"All other causes",35.6006155614585,55.7922397421333,76.712086015548,56.0575719594373,"New England","Northeast","MA","Male","Massachusetts",1977
+"98",21,9,0,"Cancers",23.7496119494497,47.2859115053907,71.6600170196463,47.259842276032,"New England","Northeast","MA","Male","Massachusetts",1977
+"99",21,9,0,"Cardiovascular",-77.1020769567428,-31.9413258143678,17.7549822731183,-32.2707234406093,"New England","Northeast","MA","Male","Massachusetts",1977
+"100",21,9,0,"Communicable",6.77391035264376,27.5481657904877,53.5537589748691,28.2847208270026,"New England","Northeast","MA","Male","Massachusetts",1977
+"101",21,9,0,"Injuries",43.7843546930588,57.8613519046024,73.0420455223979,57.926741065448,"New England","Northeast","MA","Male","Massachusetts",1977
+"102",21,9,0,"Non-communicable",9.67879027919488,26.9426433099288,47.9341744681704,27.2751018562237,"New England","Northeast","MA","Male","Massachusetts",1977
+"103",21,9,1,"All other causes",37.0297701292268,48.3187153729374,60.8409023822937,48.3941923111462,"New England","Northeast","MA","Female","Massachusetts",1977
+"104",21,9,1,"Cancers",-17.0996261643865,-5.78678610401899,6.93480849340962,-5.59507251829658,"New England","Northeast","MA","Female","Massachusetts",1977
+"105",21,9,1,"Cardiovascular",-11.6403293755482,16.9209825366931,49.4930843198403,17.4728331804755,"New England","Northeast","MA","Female","Massachusetts",1977
+"106",21,9,1,"Communicable",9.71440079544191,21.7266433783827,37.2499767452702,22.2434564518593,"New England","Northeast","MA","Female","Massachusetts",1977
+"107",21,9,1,"Injuries",3.00299150438123,10.7468482866752,20.4675318077367,10.9972706523577,"New England","Northeast","MA","Female","Massachusetts",1977
+"108",21,9,1,"Non-communicable",14.7706885931249,25.2176009004543,38.3635496495406,25.5222104201498,"New England","Northeast","MA","Female","Massachusetts",1977
+"109",21,10,0,"All other causes",39.5606661594579,58.7199537706683,78.8134072149304,58.7663257955379,"New England","Northeast","MA","Male","Massachusetts",1978
+"110",21,10,0,"Cancers",20.084126638506,41.3489440283134,65.5970118807418,41.7267888039229,"New England","Northeast","MA","Male","Massachusetts",1978
+"111",21,10,0,"Cardiovascular",-92.0217137241372,-49.9795944566258,-6.60191527955653,-49.4682892473686,"New England","Northeast","MA","Male","Massachusetts",1978
+"112",21,10,0,"Communicable",4.95947587794664,26.191481092189,51.6338099626393,27.1887598425612,"New England","Northeast","MA","Male","Massachusetts",1978
+"113",21,10,0,"Injuries",38.1484977582691,51.2513900359441,65.8354253095258,51.2569191806741,"New England","Northeast","MA","Male","Massachusetts",1978
+"114",21,10,0,"Non-communicable",8.41905141897291,26.066965918517,45.5614801667057,25.9189198212711,"New England","Northeast","MA","Male","Massachusetts",1978
+"115",21,10,1,"All other causes",39.5230436791254,50.8765447785161,63.2834778770105,51.0620601441749,"New England","Northeast","MA","Female","Massachusetts",1978
+"116",21,10,1,"Cancers",-18.364689496121,-6.92398744733066,5.31320441349624,-6.72457839769347,"New England","Northeast","MA","Female","Massachusetts",1978
+"117",21,10,1,"Cardiovascular",-21.0932632215187,7.5922007946368,37.6900604388435,7.5931617398325,"New England","Northeast","MA","Female","Massachusetts",1978
+"118",21,10,1,"Communicable",7.56991798851281,19.5310075669927,34.157285666229,19.9108297859907,"New England","Northeast","MA","Female","Massachusetts",1978
+"119",21,10,1,"Injuries",2.20232211709098,9.25163999940087,18.2821689548078,9.61286494251259,"New England","Northeast","MA","Female","Massachusetts",1978
+"120",21,10,1,"Non-communicable",13.6375249838768,24.5553455478052,37.0620454519771,24.7218628159159,"New England","Northeast","MA","Female","Massachusetts",1978
+"121",21,11,0,"All other causes",35.0323455862279,54.3583569224046,74.7310475783453,54.4569950688602,"New England","Northeast","MA","Male","Massachusetts",1979
+"122",21,11,0,"Cancers",17.9577839851466,40.2579587457336,62.924221695472,40.3956908156135,"New England","Northeast","MA","Male","Massachusetts",1979
+"123",21,11,0,"Cardiovascular",-102.078443172068,-60.6837059238348,-11.9481096231342,-59.5695280237289,"New England","Northeast","MA","Male","Massachusetts",1979
+"124",21,11,0,"Communicable",11.8103029053159,32.287413750392,57.646266171301,32.7055341530838,"New England","Northeast","MA","Male","Massachusetts",1979
+"125",21,11,0,"Injuries",32.6144399611244,45.7906668136795,59.4094898174802,45.8084472985272,"New England","Northeast","MA","Male","Massachusetts",1979
+"126",21,11,0,"Non-communicable",8.01123059750759,25.564659886466,43.6106502856171,25.5064970182587,"New England","Northeast","MA","Male","Massachusetts",1979
+"127",21,11,1,"All other causes",40.6905338385687,51.4837242842803,62.3506448010895,51.5539356586709,"New England","Northeast","MA","Female","Massachusetts",1979
+"128",21,11,1,"Cancers",-17.5229036226079,-6.77429881174157,5.08921011969499,-6.65702335438025,"New England","Northeast","MA","Female","Massachusetts",1979
+"129",21,11,1,"Cardiovascular",-33.9260055779519,-7.18265600947905,23.2590282036343,-6.47960293268255,"New England","Northeast","MA","Female","Massachusetts",1979
+"130",21,11,1,"Communicable",9.16008058041242,20.9820536809294,34.1449371344633,21.0247597928768,"New England","Northeast","MA","Female","Massachusetts",1979
+"131",21,11,1,"Injuries",2.49723060709268,9.46145213096454,17.4696306435918,9.632768706958,"New England","Northeast","MA","Female","Massachusetts",1979
+"132",21,11,1,"Non-communicable",12.2675212897793,23.2658653208794,36.1387609090035,23.4082568177924,"New England","Northeast","MA","Female","Massachusetts",1979
+"133",21,12,0,"All other causes",34.7696611416537,53.2028252807149,73.5911423544791,53.6100599877062,"New England","Northeast","MA","Male","Massachusetts",1980
+"134",21,12,0,"Cancers",17.3363240129155,40.1715458112198,64.8459231220783,40.1854829833382,"New England","Northeast","MA","Male","Massachusetts",1980
+"135",21,12,0,"Cardiovascular",-120.204064898745,-78.1386923931533,-33.155838294441,-77.6782614983504,"New England","Northeast","MA","Male","Massachusetts",1980
+"136",21,12,0,"Communicable",4.01089866479497,23.1821841093926,48.8078349629943,23.7519842392814,"New England","Northeast","MA","Male","Massachusetts",1980
+"137",21,12,0,"Injuries",33.6613947339176,45.4400990546847,59.4874670422135,45.5711963939364,"New England","Northeast","MA","Male","Massachusetts",1980
+"138",21,12,0,"Non-communicable",3.5844256916978,21.2283018255918,38.6440976883131,21.0408651163001,"New England","Northeast","MA","Male","Massachusetts",1980
+"139",21,12,1,"All other causes",38.6593671223405,49.1494474372892,60.2877507110996,49.2794683809386,"New England","Northeast","MA","Female","Massachusetts",1980
+"140",21,12,1,"Cancers",-19.9738488406605,-8.96156215145685,3.34000975919725,-8.85402068697798,"New England","Northeast","MA","Female","Massachusetts",1980
+"141",21,12,1,"Cardiovascular",-47.4124897920113,-21.6465916555022,5.99225949607748,-21.5098614803742,"New England","Northeast","MA","Female","Massachusetts",1980
+"142",21,12,1,"Communicable",1.7787032903258,12.692430865137,24.7947295397036,12.7436317085953,"New England","Northeast","MA","Female","Massachusetts",1980
+"143",21,12,1,"Injuries",3.39977693432892,10.0301312149927,18.6127339385608,10.267356172489,"New England","Northeast","MA","Female","Massachusetts",1980
+"144",21,12,1,"Non-communicable",8.91456618176578,20.0245784681235,32.4945883523985,20.2095104982024,"New England","Northeast","MA","Female","Massachusetts",1980
+"145",21,13,0,"All other causes",40.1828378775466,58.4570374747891,77.42776646651,58.8379839351418,"New England","Northeast","MA","Male","Massachusetts",1981
+"146",21,13,0,"Cancers",15.5024030180481,36.8345724213334,59.4703244506716,37.0365208450412,"New England","Northeast","MA","Male","Massachusetts",1981
+"147",21,13,0,"Cardiovascular",-97.4736050570175,-58.9434111550582,-14.1141775647719,-58.0903322417619,"New England","Northeast","MA","Male","Massachusetts",1981
+"148",21,13,0,"Communicable",8.49993921957685,28.3352355828661,51.6095534402179,28.646056471384,"New England","Northeast","MA","Male","Massachusetts",1981
+"149",21,13,0,"Injuries",29.7046141634481,41.7079631512677,54.8918841758646,41.9725091176633,"New England","Northeast","MA","Male","Massachusetts",1981
+"150",21,13,0,"Non-communicable",2.8051721439824,18.9866542215036,37.1691665893603,19.2687187497854,"New England","Northeast","MA","Male","Massachusetts",1981
+"151",21,13,1,"All other causes",39.7581644186778,50.3329608976905,60.6899916718518,50.1997025913447,"New England","Northeast","MA","Female","Massachusetts",1981
+"152",21,13,1,"Cancers",-19.8901489917295,-9.4510882549782,2.29848731261734,-9.3941401058354,"New England","Northeast","MA","Female","Massachusetts",1981
+"153",21,13,1,"Cardiovascular",-24.0576792638776,0.813957478461901,27.2087171477253,1.11298519622262,"New England","Northeast","MA","Female","Massachusetts",1981
+"154",21,13,1,"Communicable",4.8938819727702,15.9441456135892,28.4202703881289,16.2459653480034,"New England","Northeast","MA","Female","Massachusetts",1981
+"155",21,13,1,"Injuries",4.80291878289121,11.1580872400226,19.0073561718216,11.428048433165,"New England","Northeast","MA","Female","Massachusetts",1981
+"156",21,13,1,"Non-communicable",8.90721801914373,19.3342185277821,31.5571627503927,19.4951205093647,"New England","Northeast","MA","Female","Massachusetts",1981
+"157",21,14,0,"All other causes",41.5906210077541,58.2171179370078,76.7009822602271,58.4492818632473,"New England","Northeast","MA","Male","Massachusetts",1982
+"158",21,14,0,"Cancers",16.2468555802179,37.5399143140979,60.1124490883536,37.8526369401462,"New England","Northeast","MA","Male","Massachusetts",1982
+"159",21,14,0,"Cardiovascular",-111.660000177892,-70.4659023191833,-29.4937080420948,-71.1242535525218,"New England","Northeast","MA","Male","Massachusetts",1982
+"160",21,14,0,"Communicable",10.6360819177637,31.3799958215579,53.5977275028493,31.5243127461505,"New England","Northeast","MA","Male","Massachusetts",1982
+"161",21,14,0,"Injuries",25.365464497841,37.2439440421526,49.8410831108647,37.3728390171844,"New England","Northeast","MA","Male","Massachusetts",1982
+"162",21,14,0,"Non-communicable",3.15319425142615,19.5616121582682,37.5721305145687,19.7621680565928,"New England","Northeast","MA","Male","Massachusetts",1982
+"163",21,14,1,"All other causes",38.5678142032173,48.7750925522292,58.997890427311,48.7053496980711,"New England","Northeast","MA","Female","Massachusetts",1982
+"164",21,14,1,"Cancers",-20.844258808021,-10.6278591502713,1.2640263392559,-10.2280300126388,"New England","Northeast","MA","Female","Massachusetts",1982
+"165",21,14,1,"Cardiovascular",-14.1003822081976,11.6972957174279,38.567121200551,11.7691466602254,"New England","Northeast","MA","Female","Massachusetts",1982
+"166",21,14,1,"Communicable",8.92369746973,20.0321004300122,32.2423095542684,20.1308417631045,"New England","Northeast","MA","Female","Massachusetts",1982
+"167",21,14,1,"Injuries",5.09846450386783,11.0260086452,18.650012439205,11.2303128548386,"New England","Northeast","MA","Female","Massachusetts",1982
+"168",21,14,1,"Non-communicable",8.15397983965233,18.5205166455608,30.4045822800093,18.7595898545124,"New England","Northeast","MA","Female","Massachusetts",1982
+"169",21,15,0,"All other causes",34.4978625438971,51.4446865637111,69.4925446411675,51.7887237015198,"New England","Northeast","MA","Male","Massachusetts",1983
+"170",21,15,0,"Cancers",18.7585174408298,40.2003463416069,63.615072695402,40.5099578478932,"New England","Northeast","MA","Male","Massachusetts",1983
+"171",21,15,0,"Cardiovascular",-105.971802672211,-71.0790126462266,-30.3593280475535,-70.1366501354014,"New England","Northeast","MA","Male","Massachusetts",1983
+"172",21,15,0,"Communicable",6.00280557812483,27.6028676627916,48.6521358386297,27.5993789412422,"New England","Northeast","MA","Male","Massachusetts",1983
+"173",21,15,0,"Injuries",22.808197086477,33.1800791213402,44.6315090297479,33.402850308352,"New England","Northeast","MA","Male","Massachusetts",1983
+"174",21,15,0,"Non-communicable",0.159928773978671,16.5222017673727,34.6596741184645,16.7415410312141,"New England","Northeast","MA","Male","Massachusetts",1983
+"175",21,15,1,"All other causes",37.8312822223238,48.4291334186344,58.5801436874875,48.2189445590776,"New England","Northeast","MA","Female","Massachusetts",1983
+"176",21,15,1,"Cancers",-22.3351421683211,-11.6926624338829,0.566975306835472,-11.5873361222313,"New England","Northeast","MA","Female","Massachusetts",1983
+"177",21,15,1,"Cardiovascular",-20.6210714021364,3.26440534491363,29.4401778608659,3.75913360564665,"New England","Northeast","MA","Female","Massachusetts",1983
+"178",21,15,1,"Communicable",11.5678271142617,22.1090632826833,34.8602072036006,22.4237100322704,"New England","Northeast","MA","Female","Massachusetts",1983
+"179",21,15,1,"Injuries",4.15320169157036,10.0216081498992,16.8804510911964,10.0908135592768,"New England","Northeast","MA","Female","Massachusetts",1983
+"180",21,15,1,"Non-communicable",7.41476706665003,17.2309194252073,29.0675316056804,17.4643096778885,"New England","Northeast","MA","Female","Massachusetts",1983
+"181",21,16,0,"All other causes",35.2658050784275,52.0434189542605,70.3176881117619,52.2581400831432,"New England","Northeast","MA","Male","Massachusetts",1984
+"182",21,16,0,"Cancers",22.2549907562279,43.5727589995486,67.3828966813819,43.776729225469,"New England","Northeast","MA","Male","Massachusetts",1984
+"183",21,16,0,"Cardiovascular",-108.984307520144,-70.470820787341,-31.4791081800078,-70.1622127229124,"New England","Northeast","MA","Male","Massachusetts",1984
+"184",21,16,0,"Communicable",6.64483007444894,25.8217924095011,48.9465071534229,26.6952270815187,"New England","Northeast","MA","Male","Massachusetts",1984
+"185",21,16,0,"Injuries",20.0855743461904,30.7977832884875,43.6702767559162,31.2516060794249,"New England","Northeast","MA","Male","Massachusetts",1984
+"186",21,16,0,"Non-communicable",-2.90404388973864,13.6045596107842,31.2261947012381,13.8536933864332,"New England","Northeast","MA","Male","Massachusetts",1984
+"187",21,16,1,"All other causes",38.9651748155166,48.8869213751421,59.1863567579603,48.8841034079141,"New England","Northeast","MA","Female","Massachusetts",1984
+"188",21,16,1,"Cancers",-21.9222590262111,-10.6792671124706,1.69049270244459,-10.4457050941035,"New England","Northeast","MA","Female","Massachusetts",1984
+"189",21,16,1,"Cardiovascular",-20.6422113453043,4.35374748597897,30.242579039639,4.90566946803533,"New England","Northeast","MA","Female","Massachusetts",1984
+"190",21,16,1,"Communicable",8.24331788458079,18.1354262363573,30.0760621670577,18.5059823613618,"New England","Northeast","MA","Female","Massachusetts",1984
+"191",21,16,1,"Injuries",3.05725698114823,8.79722553393902,15.4306813036299,8.85700025317274,"New England","Northeast","MA","Female","Massachusetts",1984
+"192",21,16,1,"Non-communicable",5.85616129992021,15.8261512829686,26.6221863085876,15.8571416623736,"New England","Northeast","MA","Female","Massachusetts",1984
+"193",21,17,0,"All other causes",40.4774687707974,57.0004184192435,75.5797733500364,57.0824420136722,"New England","Northeast","MA","Male","Massachusetts",1985
+"194",21,17,0,"Cancers",19.537459517908,41.0896270871372,63.11314091654,41.0280571835893,"New England","Northeast","MA","Male","Massachusetts",1985
+"195",21,17,0,"Cardiovascular",-94.5224451185443,-57.4392084938794,-19.1486841933218,-57.4160384384345,"New England","Northeast","MA","Male","Massachusetts",1985
+"196",21,17,0,"Communicable",3.47327446473633,22.8935771549522,43.3570088070682,22.9012957710628,"New England","Northeast","MA","Male","Massachusetts",1985
+"197",21,17,0,"Injuries",20.8271444837802,30.9006592924026,43.0322749861529,31.2158119797823,"New England","Northeast","MA","Male","Massachusetts",1985
+"198",21,17,0,"Non-communicable",-3.08909711322919,12.3131055040777,29.6235620107626,12.4789176612513,"New England","Northeast","MA","Male","Massachusetts",1985
+"199",21,17,1,"All other causes",38.7070856962647,47.6230563574256,57.6915839070726,47.7880763038061,"New England","Northeast","MA","Female","Massachusetts",1985
+"200",21,17,1,"Cancers",-19.2407650045697,-8.16322186301052,5.06619921523408,-7.74371623387648,"New England","Northeast","MA","Female","Massachusetts",1985
+"201",21,17,1,"Cardiovascular",-12.4753723766562,12.8573630448889,40.3517688998849,12.8797318933573,"New England","Northeast","MA","Female","Massachusetts",1985
+"202",21,17,1,"Communicable",5.28383193533448,15.96884400541,28.0306719592795,16.1187883129468,"New England","Northeast","MA","Female","Massachusetts",1985
+"203",21,17,1,"Injuries",2.75173659226858,7.90283354578749,14.4543085380348,8.12574772214967,"New England","Northeast","MA","Female","Massachusetts",1985
+"204",21,17,1,"Non-communicable",4.13420428662628,12.7298638550383,23.8497615853984,13.032925557527,"New England","Northeast","MA","Female","Massachusetts",1985
+"205",21,18,0,"All other causes",39.4822444645512,57.1296346136879,76.514060074758,57.4442734739195,"New England","Northeast","MA","Male","Massachusetts",1986
+"206",21,18,0,"Cancers",19.5630269532041,40.4367215984256,63.5197518941034,40.839549250103,"New England","Northeast","MA","Male","Massachusetts",1986
+"207",21,18,0,"Cardiovascular",-86.3334887484662,-49.5627840217583,-11.451882350178,-49.817900831239,"New England","Northeast","MA","Male","Massachusetts",1986
+"208",21,18,0,"Communicable",0.947817389420948,19.5194075530125,40.620115795915,19.9806714456617,"New England","Northeast","MA","Male","Massachusetts",1986
+"209",21,18,0,"Injuries",21.8954915773435,31.2068240998254,42.5070824394885,31.3834939208184,"New England","Northeast","MA","Male","Massachusetts",1986
+"210",21,18,0,"Non-communicable",-4.5562695562556,11.2851514070222,28.1687434553297,11.4831062339918,"New England","Northeast","MA","Male","Massachusetts",1986
+"211",21,18,1,"All other causes",39.3056480808271,48.667269584337,58.8592186058908,48.7116557957889,"New England","Northeast","MA","Female","Massachusetts",1986
+"212",21,18,1,"Cancers",-17.7120982309823,-7.04800357736708,5.27934558694111,-6.69879513379816,"New England","Northeast","MA","Female","Massachusetts",1986
+"213",21,18,1,"Cardiovascular",-10.7064123367245,15.6329486872083,40.2655121638169,15.7179725957512,"New England","Northeast","MA","Female","Massachusetts",1986
+"214",21,18,1,"Communicable",0.839274934303622,10.5809911453396,21.3920817213525,10.8026787463145,"New England","Northeast","MA","Female","Massachusetts",1986
+"215",21,18,1,"Injuries",2.42065771712632,7.34025429816386,13.6384373775391,7.58120974410868,"New England","Northeast","MA","Female","Massachusetts",1986
+"216",21,18,1,"Non-communicable",0.548527723995047,9.71269122307737,20.2863024454552,10.0028619742105,"New England","Northeast","MA","Female","Massachusetts",1986
+"217",21,19,0,"All other causes",41.0174647599687,56.3294560916808,76.712912110032,57.0544316055289,"New England","Northeast","MA","Male","Massachusetts",1987
+"218",21,19,0,"Cancers",21.1699702082048,42.8148866930337,65.1014876335891,43.0022499243958,"New England","Northeast","MA","Male","Massachusetts",1987
+"219",21,19,0,"Cardiovascular",-66.2955871952166,-30.1415182530018,8.36878549787214,-29.6048499291397,"New England","Northeast","MA","Male","Massachusetts",1987
+"220",21,19,0,"Communicable",12.9807937082319,30.2897046257798,54.5722935344458,31.0394027331973,"New England","Northeast","MA","Male","Massachusetts",1987
+"221",21,19,0,"Injuries",22.5180579451715,31.8873017977734,43.2758195472062,32.2214138766834,"New England","Northeast","MA","Male","Massachusetts",1987
+"222",21,19,0,"Non-communicable",-6.56426825607378,8.13794543613061,26.0312052489221,8.57390773848381,"New England","Northeast","MA","Male","Massachusetts",1987
+"223",21,19,1,"All other causes",35.7350136018719,44.8841173286175,54.6438165774548,45.1299518385233,"New England","Northeast","MA","Female","Massachusetts",1987
+"224",21,19,1,"Cancers",-14.8102920002001,-4.19390679923389,8.16388731295655,-4.20692057757959,"New England","Northeast","MA","Female","Massachusetts",1987
+"225",21,19,1,"Cardiovascular",-9.3377726961751,14.0530311135325,39.1216505706153,14.3250592508162,"New England","Northeast","MA","Female","Massachusetts",1987
+"226",21,19,1,"Communicable",1.73092304849581,11.8690790335276,23.5098806359315,11.9298089178434,"New England","Northeast","MA","Female","Massachusetts",1987
+"227",21,19,1,"Injuries",2.20161925801361,7.25221841431692,12.7533131479785,7.29344847071152,"New England","Northeast","MA","Female","Massachusetts",1987
+"228",21,19,1,"Non-communicable",0.63445309505525,10.2174921650344,20.5918665792712,10.2519724665289,"New England","Northeast","MA","Female","Massachusetts",1987
+"229",21,20,0,"All other causes",37.6339823461583,53.0666001580442,70.2987796697704,53.292173309869,"New England","Northeast","MA","Male","Massachusetts",1988
+"230",21,20,0,"Cancers",26.8302198213052,47.5181880137438,71.275011926475,48.2068051680183,"New England","Northeast","MA","Male","Massachusetts",1988
+"231",21,20,0,"Cardiovascular",-68.810187497288,-33.1620091941129,6.06654283346126,-32.2377286031534,"New England","Northeast","MA","Male","Massachusetts",1988
+"232",21,20,0,"Communicable",14.5981867595449,33.6919444568493,56.5585722721905,34.4550955847967,"New England","Northeast","MA","Male","Massachusetts",1988
+"233",21,20,0,"Injuries",25.5918856021237,35.514876563743,46.5069837526663,35.5839617064533,"New England","Northeast","MA","Male","Massachusetts",1988
+"234",21,20,0,"Non-communicable",-9.74266859721045,5.84600936044762,23.3454021517644,6.34299067527403,"New England","Northeast","MA","Male","Massachusetts",1988
+"235",21,20,1,"All other causes",30.55130171008,39.9775913856345,49.5931304713261,39.9017123686266,"New England","Northeast","MA","Female","Massachusetts",1988
+"236",21,20,1,"Cancers",-12.3994330711943,-1.08535129858039,10.8682531403313,-1.17642552588925,"New England","Northeast","MA","Female","Massachusetts",1988
+"237",21,20,1,"Cardiovascular",-18.0330213319011,5.00061974386091,29.5988368575526,5.19818731509278,"New England","Northeast","MA","Female","Massachusetts",1988
+"238",21,20,1,"Communicable",1.34851383053595,11.235167508095,22.1662607023509,11.6295395015062,"New England","Northeast","MA","Female","Massachusetts",1988
+"239",21,20,1,"Injuries",1.35690099606142,6.47078446891106,11.9507596115768,6.6076679105412,"New England","Northeast","MA","Female","Massachusetts",1988
+"240",21,20,1,"Non-communicable",0.152962772497237,9.49068350931019,19.5316096355518,9.48784194030725,"New England","Northeast","MA","Female","Massachusetts",1988
+"241",21,21,0,"All other causes",38.5304129588299,52.9043691100194,69.9050746525865,53.4360271610837,"New England","Northeast","MA","Male","Massachusetts",1989
+"242",21,21,0,"Cancers",25.789566028298,46.6889666377638,67.6908587238505,46.349220746906,"New England","Northeast","MA","Male","Massachusetts",1989
+"243",21,21,0,"Cardiovascular",-34.2260219403954,-0.944067046651327,35.4654630660118,-0.729612457881669,"New England","Northeast","MA","Male","Massachusetts",1989
+"244",21,21,0,"Communicable",22.9304663000544,42.7000019801284,64.3909398490441,43.05322923662,"New England","Northeast","MA","Male","Massachusetts",1989
+"245",21,21,0,"Injuries",27.277542251165,36.5385785784014,47.3457385141064,36.7487519032732,"New England","Northeast","MA","Male","Massachusetts",1989
+"246",21,21,0,"Non-communicable",-8.28776801778911,6.55686141373013,24.2356644124299,6.89288509239935,"New England","Northeast","MA","Male","Massachusetts",1989
+"247",21,21,1,"All other causes",30.4394328564576,39.8339620695553,49.0290230863109,39.7359578348965,"New England","Northeast","MA","Female","Massachusetts",1989
+"248",21,21,1,"Cancers",-11.6693436679456,-1.39896377446188,11.6061548030416,-1.05809815492905,"New England","Northeast","MA","Female","Massachusetts",1989
+"249",21,21,1,"Cardiovascular",3.60990351349061,25.6192781363014,48.5992815842592,25.6690766722922,"New England","Northeast","MA","Female","Massachusetts",1989
+"250",21,21,1,"Communicable",8.98299547756356,18.7274342394969,31.451801689153,19.0645201672373,"New England","Northeast","MA","Female","Massachusetts",1989
+"251",21,21,1,"Injuries",2.19066741026217,6.99999567263352,12.6210483486207,7.11542794731423,"New England","Northeast","MA","Female","Massachusetts",1989
+"252",21,21,1,"Non-communicable",-0.150327142251917,8.73744431061843,18.6727387229017,9.02982755727945,"New England","Northeast","MA","Female","Massachusetts",1989
+"253",21,22,0,"All other causes",34.9840797708661,49.5889687559644,65.5370969891545,49.6838554839673,"New England","Northeast","MA","Male","Massachusetts",1990
+"254",21,22,0,"Cancers",25.6543646291657,47.0862021461601,69.3056251952154,47.1135542151964,"New England","Northeast","MA","Male","Massachusetts",1990
+"255",21,22,0,"Cardiovascular",-19.1649000515546,12.1747846485617,47.1537352172154,12.707341754065,"New England","Northeast","MA","Male","Massachusetts",1990
+"256",21,22,0,"Communicable",36.2255237059645,56.4240033713163,78.7645323586599,56.570817585948,"New England","Northeast","MA","Male","Massachusetts",1990
+"257",21,22,0,"Injuries",33.3932005751293,42.6614414089807,53.7368605604615,42.7303128272738,"New England","Northeast","MA","Male","Massachusetts",1990
+"258",21,22,0,"Non-communicable",-7.72408567710337,6.55284468366622,24.2018613276014,6.87281722972745,"New England","Northeast","MA","Male","Massachusetts",1990
+"259",21,22,1,"All other causes",31.2868291940848,40.4473227109674,50.5839714548903,40.499020859688,"New England","Northeast","MA","Female","Massachusetts",1990
+"260",21,22,1,"Cancers",-9.79853920720816,1.19826994562064,13.5206460583093,1.29922017565821,"New England","Northeast","MA","Female","Massachusetts",1990
+"261",21,22,1,"Cardiovascular",-1.57553369747674,20.9777447155243,43.9962751113339,21.1405383026526,"New England","Northeast","MA","Female","Massachusetts",1990
+"262",21,22,1,"Communicable",9.64251972531538,19.8939877117226,31.0692948623137,20.0106497094687,"New England","Northeast","MA","Female","Massachusetts",1990
+"263",21,22,1,"Injuries",2.36639703279306,6.74201938758622,12.1526815675125,6.90611983978054,"New England","Northeast","MA","Female","Massachusetts",1990
+"264",21,22,1,"Non-communicable",1.85317296688896,11.2207726564543,20.4702697893632,11.1017289246115,"New England","Northeast","MA","Female","Massachusetts",1990
+"265",21,23,0,"All other causes",36.2292046444321,50.5566102630489,66.3619218859077,50.7460805613544,"New England","Northeast","MA","Male","Massachusetts",1991
+"266",21,23,0,"Cancers",23.6524388811536,45.2338024038748,67.9959196139187,45.4523857867044,"New England","Northeast","MA","Male","Massachusetts",1991
+"267",21,23,0,"Cardiovascular",-23.7123901130142,5.37005416966025,38.5978541888931,5.74862207725191,"New England","Northeast","MA","Male","Massachusetts",1991
+"268",21,23,0,"Communicable",40.8507375553345,60.3061409518274,82.6696174741802,60.6778078820436,"New England","Northeast","MA","Male","Massachusetts",1991
+"269",21,23,0,"Injuries",35.4062369397786,44.3965660394555,54.7444938571933,44.5773936242649,"New England","Northeast","MA","Male","Massachusetts",1991
+"270",21,23,0,"Non-communicable",-8.52672174767397,6.45500936910735,23.0850971652526,6.81368318378585,"New England","Northeast","MA","Male","Massachusetts",1991
+"271",21,23,1,"All other causes",27.9304460743431,36.8755329246972,46.6155314421944,37.0781270215474,"New England","Northeast","MA","Female","Massachusetts",1991
+"272",21,23,1,"Cancers",-9.03617367075046,2.64449592865581,14.804243283422,2.6789869266832,"New England","Northeast","MA","Female","Massachusetts",1991
+"273",21,23,1,"Cardiovascular",5.90299505593332,27.989275694679,49.7924255907537,28.1784370105008,"New England","Northeast","MA","Female","Massachusetts",1991
+"274",21,23,1,"Communicable",11.7539904518031,22.9661731172347,34.4513549322332,22.815056977245,"New England","Northeast","MA","Female","Massachusetts",1991
+"275",21,23,1,"Injuries",2.23908370119725,6.56587153321754,12.198433535551,6.75028765861551,"New England","Northeast","MA","Female","Massachusetts",1991
+"276",21,23,1,"Non-communicable",6.09738507521467,16.0892473194608,26.9104357341557,16.1436974464003,"New England","Northeast","MA","Female","Massachusetts",1991
+"277",21,24,0,"All other causes",32.1728811806877,47.5524672661763,61.807548764421,47.3360154001816,"New England","Northeast","MA","Male","Massachusetts",1992
+"278",21,24,0,"Cancers",24.4822668239494,46.741547605506,69.0739995057651,47.216143972328,"New England","Northeast","MA","Male","Massachusetts",1992
+"279",21,24,0,"Cardiovascular",-30.0722789026098,0.625779176677696,33.1124002278262,0.828904638031272,"New England","Northeast","MA","Male","Massachusetts",1992
+"280",21,24,0,"Communicable",48.3626352757135,67.7628893191316,90.3254000576304,67.8701855236846,"New England","Northeast","MA","Male","Massachusetts",1992
+"281",21,24,0,"Injuries",29.5000765963876,38.6260265013754,48.1492824010409,38.6788881772835,"New England","Northeast","MA","Male","Massachusetts",1992
+"282",21,24,0,"Non-communicable",-7.57845458853598,6.21030150981355,21.4246492401769,6.49761749928423,"New England","Northeast","MA","Male","Massachusetts",1992
+"283",21,24,1,"All other causes",27.8452020192294,37.2114416265362,47.1560833885618,37.3663206236102,"New England","Northeast","MA","Female","Massachusetts",1992
+"284",21,24,1,"Cancers",-7.48336600568044,3.77932014643733,16.9715274791715,4.13658677071808,"New England","Northeast","MA","Female","Massachusetts",1992
+"285",21,24,1,"Cardiovascular",-3.41679372775368,19.7670243539582,41.4508907424005,19.5652766213025,"New England","Northeast","MA","Female","Massachusetts",1992
+"286",21,24,1,"Communicable",12.941673368208,23.4965865611668,35.7051149768598,23.6184308013324,"New England","Northeast","MA","Female","Massachusetts",1992
+"287",21,24,1,"Injuries",2.55193741826086,6.5701082277153,11.7723221246107,6.67298762018376,"New England","Northeast","MA","Female","Massachusetts",1992
+"288",21,24,1,"Non-communicable",6.9976795801248,16.2629690513823,27.4424979274837,16.462241596717,"New England","Northeast","MA","Female","Massachusetts",1992
+"289",21,25,0,"All other causes",31.1827104239221,45.1379653281623,59.1329854178401,45.0213655372329,"New England","Northeast","MA","Male","Massachusetts",1993
+"290",21,25,0,"Cancers",27.1775619002417,48.907059326577,70.2761142910287,48.6701188926054,"New England","Northeast","MA","Male","Massachusetts",1993
+"291",21,25,0,"Cardiovascular",-37.4629148551142,-5.61447780859498,25.0997737797613,-5.72449536927118,"New England","Northeast","MA","Male","Massachusetts",1993
+"292",21,25,0,"Communicable",41.6179304769696,61.1421119332566,81.9188118874796,61.6368168165133,"New England","Northeast","MA","Male","Massachusetts",1993
+"293",21,25,0,"Injuries",27.551281510612,36.7716858539552,46.1489637435442,36.748766194935,"New England","Northeast","MA","Male","Massachusetts",1993
+"294",21,25,0,"Non-communicable",-10.3325002226841,4.44508123476474,20.1427968008653,4.58646879120517,"New England","Northeast","MA","Male","Massachusetts",1993
+"295",21,25,1,"All other causes",23.4266738662746,32.6479666083362,41.6705995403036,32.5987946916725,"New England","Northeast","MA","Female","Massachusetts",1993
+"296",21,25,1,"Cancers",-7.71517174934528,3.39965275948781,15.0438065589591,3.46559289974882,"New England","Northeast","MA","Female","Massachusetts",1993
+"297",21,25,1,"Cardiovascular",-7.61474628277977,11.849006816333,32.8612277805291,11.7271876535103,"New England","Northeast","MA","Female","Massachusetts",1993
+"298",21,25,1,"Communicable",5.73603701770762,15.6716681682749,27.1989223832576,15.9095546885011,"New England","Northeast","MA","Female","Massachusetts",1993
+"299",21,25,1,"Injuries",1.99251763589825,6.09208408453911,11.3323531220388,6.24025355249961,"New England","Northeast","MA","Female","Massachusetts",1993
+"300",21,25,1,"Non-communicable",6.85841445732405,16.3085025139001,28.1008642239108,16.5671195961704,"New England","Northeast","MA","Female","Massachusetts",1993
+"301",21,26,0,"All other causes",31.6602325384124,46.7099946155072,60.7692997402564,46.5793519753326,"New England","Northeast","MA","Male","Massachusetts",1994
+"302",21,26,0,"Cancers",27.509617001375,47.2954897590256,68.6266348165439,47.2982644442962,"New England","Northeast","MA","Male","Massachusetts",1994
+"303",21,26,0,"Cardiovascular",-35.0562581567841,-6.08289818430359,25.9486177359399,-5.73103038404528,"New England","Northeast","MA","Male","Massachusetts",1994
+"304",21,26,0,"Communicable",54.089237731098,73.2062760765747,95.2626068327577,73.4632237812699,"New England","Northeast","MA","Male","Massachusetts",1994
+"305",21,26,0,"Injuries",26.431804508139,34.6953170991077,43.8094228490418,34.8018910763397,"New England","Northeast","MA","Male","Massachusetts",1994
+"306",21,26,0,"Non-communicable",-7.99767709699515,5.98875528677615,20.767894095439,6.16369699657707,"New England","Northeast","MA","Male","Massachusetts",1994
+"307",21,26,1,"All other causes",23.5339130101228,33.639717249314,42.6225535577306,33.5042896915362,"New England","Northeast","MA","Female","Massachusetts",1994
+"308",21,26,1,"Cancers",-3.27689238938047,7.69481349724238,20.3367728031488,7.82088942461589,"New England","Northeast","MA","Female","Massachusetts",1994
+"309",21,26,1,"Cardiovascular",5.34201719929824,25.4344059879569,45.4943492811097,25.2959788338286,"New England","Northeast","MA","Female","Massachusetts",1994
+"310",21,26,1,"Communicable",7.32546850087458,17.0436579088101,26.999134348383,17.1858748782383,"New England","Northeast","MA","Female","Massachusetts",1994
+"311",21,26,1,"Injuries",2.04607601878761,5.95388128342807,10.8251986910796,6.1041235348145,"New England","Northeast","MA","Female","Massachusetts",1994
+"312",21,26,1,"Non-communicable",6.77115608168647,17.105790993672,28.7411348232238,17.0978409937702,"New England","Northeast","MA","Female","Massachusetts",1994
+"313",21,27,0,"All other causes",30.9107736886398,45.7110421262755,61.019344655728,46.0906953999534,"New England","Northeast","MA","Male","Massachusetts",1995
+"314",21,27,0,"Cancers",27.2137353830259,48.2094835090991,69.5067054741916,48.1619418854984,"New England","Northeast","MA","Male","Massachusetts",1995
+"315",21,27,0,"Cardiovascular",-36.7959998026411,-10.3131514412288,17.9644170635919,-9.61888247978272,"New England","Northeast","MA","Male","Massachusetts",1995
+"316",21,27,0,"Communicable",51.460560425113,69.2984930635787,90.108092122691,69.9302563384498,"New England","Northeast","MA","Male","Massachusetts",1995
+"317",21,27,0,"Injuries",23.5821941690311,31.8360404011422,40.4404203290166,32.0321074400762,"New England","Northeast","MA","Male","Massachusetts",1995
+"318",21,27,0,"Non-communicable",0.576782908118983,13.1601323894572,28.3220271532882,13.4326990046099,"New England","Northeast","MA","Male","Massachusetts",1995
+"319",21,27,1,"All other causes",20.5538296893045,30.3007990338796,40.4345787191461,30.439242857371,"New England","Northeast","MA","Female","Massachusetts",1995
+"320",21,27,1,"Cancers",-2.91685184687582,7.79570101062582,19.3989555053484,7.76492662064841,"New England","Northeast","MA","Female","Massachusetts",1995
+"321",21,27,1,"Cardiovascular",-2.88823414685093,15.4397567732726,34.1736622647031,15.36271285105,"New England","Northeast","MA","Female","Massachusetts",1995
+"322",21,27,1,"Communicable",8.30527234705592,17.7081301614688,27.5701539515108,17.70248409289,"New England","Northeast","MA","Female","Massachusetts",1995
+"323",21,27,1,"Injuries",1.37423895373488,5.43305265982366,10.3878845853263,5.51038559960113,"New England","Northeast","MA","Female","Massachusetts",1995
+"324",21,27,1,"Non-communicable",6.3679204943352,16.6546410164298,26.7974800831133,16.6161759048111,"New England","Northeast","MA","Female","Massachusetts",1995
+"325",21,28,0,"All other causes",32.885498089886,46.3197080615938,62.4095370118124,46.8515583880107,"New England","Northeast","MA","Male","Massachusetts",1996
+"326",21,28,0,"Cancers",26.8949151718485,45.9817427551635,66.7435796927039,46.5010194176211,"New England","Northeast","MA","Male","Massachusetts",1996
+"327",21,28,0,"Cardiovascular",-35.9429551487623,-9.78521073179002,18.0298846965338,-9.91862835461159,"New England","Northeast","MA","Male","Massachusetts",1996
+"328",21,28,0,"Communicable",29.3696556951494,45.2961366605979,63.5921629146053,45.8615966226357,"New England","Northeast","MA","Male","Massachusetts",1996
+"329",21,28,0,"Injuries",19.4967485699401,26.6340235047448,34.9733140987937,26.7391538981644,"New England","Northeast","MA","Male","Massachusetts",1996
+"330",21,28,0,"Non-communicable",3.70418003824682,17.5852892331705,34.0541857623589,17.8701637445341,"New England","Northeast","MA","Male","Massachusetts",1996
+"331",21,28,1,"All other causes",19.4065536148581,27.5741887334392,36.8365022396767,27.7372790112368,"New England","Northeast","MA","Female","Massachusetts",1996
+"332",21,28,1,"Cancers",-2.96944298854162,7.02417619250667,19.1773304122911,7.42770172913663,"New England","Northeast","MA","Female","Massachusetts",1996
+"333",21,28,1,"Cardiovascular",2.20594511236105,21.5841166122,40.6490739542514,21.3860401655253,"New England","Northeast","MA","Female","Massachusetts",1996
+"334",21,28,1,"Communicable",7.33159577293763,16.3095943603375,26.972465619575,16.424252287204,"New England","Northeast","MA","Female","Massachusetts",1996
+"335",21,28,1,"Injuries",0.947889790077336,4.64615128629293,9.40142035999633,4.77828013078587,"New England","Northeast","MA","Female","Massachusetts",1996
+"336",21,28,1,"Non-communicable",4.33810608776827,13.5968332016227,23.6794983642548,13.7678304885994,"New England","Northeast","MA","Female","Massachusetts",1996
+"337",21,29,0,"All other causes",28.9291886710416,44.261437565362,61.6467122383893,44.3612962631272,"New England","Northeast","MA","Male","Massachusetts",1997
+"338",21,29,0,"Cancers",32.2200606888556,51.1800065793911,71.606218316698,51.0456107943044,"New England","Northeast","MA","Male","Massachusetts",1997
+"339",21,29,0,"Cardiovascular",-37.1004773604939,-10.1001027184399,16.5520345481917,-10.3404461470815,"New England","Northeast","MA","Male","Massachusetts",1997
+"340",21,29,0,"Communicable",15.2989930325832,30.8225192075452,48.8499759260288,31.3635326721169,"New England","Northeast","MA","Male","Massachusetts",1997
+"341",21,29,0,"Injuries",15.3483172598559,22.2448379430423,29.9363553269943,22.3543786254192,"New England","Northeast","MA","Male","Massachusetts",1997
+"342",21,29,0,"Non-communicable",5.85182251027063,20.1423898360583,35.5677562664004,20.3016869070267,"New England","Northeast","MA","Male","Massachusetts",1997
+"343",21,29,1,"All other causes",15.3710224082497,24.0175336515923,33.7725338198856,24.1799657851956,"New England","Northeast","MA","Female","Massachusetts",1997
+"344",21,29,1,"Cancers",-4.73891193238031,4.83631341352969,16.1094058682685,5.03912382290718,"New England","Northeast","MA","Female","Massachusetts",1997
+"345",21,29,1,"Cardiovascular",5.68118962556354,25.0998039816895,45.1644491348861,25.0374477414692,"New England","Northeast","MA","Female","Massachusetts",1997
+"346",21,29,1,"Communicable",3.30644012866376,11.3663997150361,21.9221342377099,11.7368041681588,"New England","Northeast","MA","Female","Massachusetts",1997
+"347",21,29,1,"Injuries",0.590818217087469,4.25054749696343,8.51169086324207,4.34077207052215,"New England","Northeast","MA","Female","Massachusetts",1997
+"348",21,29,1,"Non-communicable",4.13871685606163,13.3638970661832,23.6304431488149,13.4912701234691,"New England","Northeast","MA","Female","Massachusetts",1997
+"349",21,30,0,"All other causes",20.3004458110834,33.9571792024442,48.4372226054857,34.2566485720864,"New England","Northeast","MA","Male","Massachusetts",1998
+"350",21,30,0,"Cancers",27.2704806664334,46.253806330436,64.693065296806,46.2120466020054,"New England","Northeast","MA","Male","Massachusetts",1998
+"351",21,30,0,"Cardiovascular",-26.298591615711,-2.15905225970289,28.2239239724311,-1.14107038979887,"New England","Northeast","MA","Male","Massachusetts",1998
+"352",21,30,0,"Communicable",4.1570305899854,17.6040492532583,32.7888785791419,17.7589259124071,"New England","Northeast","MA","Male","Massachusetts",1998
+"353",21,30,0,"Injuries",12.6973009946167,19.8523618486689,26.774070709054,19.8422082342435,"New England","Northeast","MA","Male","Massachusetts",1998
+"354",21,30,0,"Non-communicable",6.67963392144809,21.4550813204074,36.6290611458157,21.2801015067478,"New England","Northeast","MA","Male","Massachusetts",1998
+"355",21,30,1,"All other causes",13.4442758486821,21.6072754345108,31.181860927577,21.694117383282,"New England","Northeast","MA","Female","Massachusetts",1998
+"356",21,30,1,"Cancers",-8.73972496493011,1.74426510222233,11.9938685017197,1.68935570547369,"New England","Northeast","MA","Female","Massachusetts",1998
+"357",21,30,1,"Cardiovascular",3.27739517741782,21.668727012671,40.2294682710672,21.9543590249751,"New England","Northeast","MA","Female","Massachusetts",1998
+"358",21,30,1,"Communicable",-3.60338238935403,4.49308868078516,13.9568592809442,4.69188753711965,"New England","Northeast","MA","Female","Massachusetts",1998
+"359",21,30,1,"Injuries",-0.232394480105083,3.65116222420482,8.10228900518546,3.77017115128308,"New England","Northeast","MA","Female","Massachusetts",1998
+"360",21,30,1,"Non-communicable",2.67425946242351,11.7153944877849,21.7215054874605,11.7788789334458,"New England","Northeast","MA","Female","Massachusetts",1998
+"361",21,31,0,"All other causes",13.843104342224,27.1923282128387,42.2562438560389,27.2258477211498,"New England","Northeast","MA","Male","Massachusetts",1999
+"362",21,31,0,"Cancers",21.2693538275223,39.5166618685782,58.3980394396163,39.7197690898487,"New England","Northeast","MA","Male","Massachusetts",1999
+"363",21,31,0,"Cardiovascular",-39.2448915554093,-15.1152444309576,11.4765043587292,-14.7963669113049,"New England","Northeast","MA","Male","Massachusetts",1999
+"364",21,31,0,"Communicable",13.2707629720335,26.5490312143612,42.1571160410665,26.8819749900814,"New England","Northeast","MA","Male","Massachusetts",1999
+"365",21,31,0,"Injuries",12.1003205176444,18.700803546209,25.8325678935459,18.7114403844671,"New England","Northeast","MA","Male","Massachusetts",1999
+"366",21,31,0,"Non-communicable",0.643085709378662,15.2093196229447,30.973078978468,15.3124211909299,"New England","Northeast","MA","Male","Massachusetts",1999
+"367",21,31,1,"All other causes",11.1398719143415,20.0605271000418,29.7873520054156,20.0511055248844,"New England","Northeast","MA","Female","Massachusetts",1999
+"368",21,31,1,"Cancers",-11.0336983632703,-1.24872636492641,9.01280789847031,-1.17138673305587,"New England","Northeast","MA","Female","Massachusetts",1999
+"369",21,31,1,"Cardiovascular",-2.2548165646925,15.9348090634904,33.8501477891348,15.8523606620946,"New England","Northeast","MA","Female","Massachusetts",1999
+"370",21,31,1,"Communicable",2.73078955032984,10.5908586651573,19.0112882860744,10.6876490413587,"New England","Northeast","MA","Female","Massachusetts",1999
+"371",21,31,1,"Injuries",-0.532005622365728,3.26129959064046,7.62917610243383,3.34689528877264,"New England","Northeast","MA","Female","Massachusetts",1999
+"372",21,31,1,"Non-communicable",-2.38563306443772,7.59913033554963,17.635752934629,7.68069389746075,"New England","Northeast","MA","Female","Massachusetts",1999
+"373",21,32,0,"All other causes",7.35928668903698,21.4286522369183,36.3937328900095,21.4354123388397,"New England","Northeast","MA","Male","Massachusetts",2000
+"374",21,32,0,"Cancers",19.0724847177405,36.2391751200911,55.8771437284659,36.6027821115783,"New England","Northeast","MA","Male","Massachusetts",2000
+"375",21,32,0,"Cardiovascular",-43.1387081611858,-18.3637987876372,5.89419859808187,-18.4795999806189,"New England","Northeast","MA","Male","Massachusetts",2000
+"376",21,32,0,"Communicable",11.6001549329968,24.2214498511318,39.5164369574587,24.6352340216662,"New England","Northeast","MA","Male","Massachusetts",2000
+"377",21,32,0,"Injuries",11.5923686520774,18.1528117081669,24.946452825526,18.2419509515514,"New England","Northeast","MA","Male","Massachusetts",2000
+"378",21,32,0,"Non-communicable",-1.90265161308833,12.4723069311985,27.3144035732076,12.7126800614276,"New England","Northeast","MA","Male","Massachusetts",2000
+"379",21,32,1,"All other causes",9.10270021198617,17.4910551237227,27.1065593327289,17.6890825495768,"New England","Northeast","MA","Female","Massachusetts",2000
+"380",21,32,1,"Cancers",-15.9005786736061,-6.17558757544212,3.7200510498383,-6.02744370473975,"New England","Northeast","MA","Female","Massachusetts",2000
+"381",21,32,1,"Cardiovascular",2.41052964943819,17.7802594594637,36.4953549873631,17.9991216083302,"New England","Northeast","MA","Female","Massachusetts",2000
+"382",21,32,1,"Communicable",1.19968426708749,8.37262385515723,16.8380448971841,8.58167328318745,"New England","Northeast","MA","Female","Massachusetts",2000
+"383",21,32,1,"Injuries",-0.806618150536307,2.65635869216261,7.06632864505668,2.77154442313417,"New England","Northeast","MA","Female","Massachusetts",2000
+"384",21,32,1,"Non-communicable",-5.31272567275945,3.87632194986115,13.9397040158928,3.98621175222713,"New England","Northeast","MA","Female","Massachusetts",2000
+"385",21,33,0,"All other causes",9.79601826647264,23.3216589301412,39.5339904661204,23.5492196622677,"New England","Northeast","MA","Male","Massachusetts",2001
+"386",21,33,0,"Cancers",11.34261283496,27.2437028910413,45.5237836345128,27.4948343326307,"New England","Northeast","MA","Male","Massachusetts",2001
+"387",21,33,0,"Cardiovascular",-33.7598838587952,-11.9546195796101,11.1083509301749,-11.4077215088569,"New England","Northeast","MA","Male","Massachusetts",2001
+"388",21,33,0,"Communicable",12.6857360338479,24.7708268382346,37.8180103489394,24.8800037997508,"New England","Northeast","MA","Male","Massachusetts",2001
+"389",21,33,0,"Injuries",11.3972014824776,17.6628825819464,24.9155540688447,17.7544905591439,"New England","Northeast","MA","Male","Massachusetts",2001
+"390",21,33,0,"Non-communicable",-3.56746689836481,9.01141971739335,22.6267977550577,8.90997023480507,"New England","Northeast","MA","Male","Massachusetts",2001
+"391",21,33,1,"All other causes",2.28922107840013,11.053464298357,21.1890177269392,11.3239578480449,"New England","Northeast","MA","Female","Massachusetts",2001
+"392",21,33,1,"Cancers",-16.0475396221951,-7.1997858489286,2.89707093897191,-7.04360972863454,"New England","Northeast","MA","Female","Massachusetts",2001
+"393",21,33,1,"Cardiovascular",-0.950537099431831,14.8105795319476,32.6653973631535,15.0776035486507,"New England","Northeast","MA","Female","Massachusetts",2001
+"394",21,33,1,"Communicable",2.85426772595645,10.5628784912307,18.9043698503251,10.5342151205975,"New England","Northeast","MA","Female","Massachusetts",2001
+"395",21,33,1,"Injuries",-1.57470235398743,1.84726355868955,5.87297255444871,1.94167308683691,"New England","Northeast","MA","Female","Massachusetts",2001
+"396",21,33,1,"Non-communicable",-0.514141432731558,8.94876981574827,20.5274339774339,9.08721099886401,"New England","Northeast","MA","Female","Massachusetts",2001
+"397",21,34,0,"All other causes",8.08043484376062,22.4635814141838,38.4564867571204,22.7277876383547,"New England","Northeast","MA","Male","Massachusetts",2002
+"398",21,34,0,"Cancers",6.98461524014446,23.7281663716595,41.2130091681581,23.8203286042845,"New England","Northeast","MA","Male","Massachusetts",2002
+"399",21,34,0,"Cardiovascular",-35.6729436638952,-15.5797850712047,8.79597772167788,-14.8506815229991,"New England","Northeast","MA","Male","Massachusetts",2002
+"400",21,34,0,"Communicable",7.69331954850031,18.7494016618484,31.8765281786512,19.1799997448782,"New England","Northeast","MA","Male","Massachusetts",2002
+"401",21,34,0,"Injuries",12.4866811167564,19.0688186361389,25.8133127147187,19.1374949044764,"New England","Northeast","MA","Male","Massachusetts",2002
+"402",21,34,0,"Non-communicable",-6.56971038945615,6.06958651725211,21.1852420984906,6.42040008311434,"New England","Northeast","MA","Male","Massachusetts",2002
+"403",21,34,1,"All other causes",-0.298228776319134,8.5270742844737,18.1908433470836,8.65628965669103,"New England","Northeast","MA","Female","Massachusetts",2002
+"404",21,34,1,"Cancers",-17.693212222846,-8.978343433205,0.177526734781374,-9.0022434196161,"New England","Northeast","MA","Female","Massachusetts",2002
+"405",21,34,1,"Cardiovascular",-0.304578401307549,15.8960440220031,32.1107652338638,16.0006475110581,"New England","Northeast","MA","Female","Massachusetts",2002
+"406",21,34,1,"Communicable",-0.324991152403424,7.24058640910718,15.6755673478732,7.42027982092144,"New England","Northeast","MA","Female","Massachusetts",2002
+"407",21,34,1,"Injuries",-1.42020112536174,2.03763741634319,6.1162964496254,2.10264198890707,"New England","Northeast","MA","Female","Massachusetts",2002
+"408",21,34,1,"Non-communicable",-4.3249323352252,4.95932168120309,15.0509796130536,5.05569758397583,"New England","Northeast","MA","Female","Massachusetts",2002
+"409",21,35,0,"All other causes",6.30939048271066,19.3859318292896,35.7569447265948,19.6862206721658,"New England","Northeast","MA","Male","Massachusetts",2003
+"410",21,35,0,"Cancers",7.03955191309378,23.3725611043624,40.421493164897,23.4024210660787,"New England","Northeast","MA","Male","Massachusetts",2003
+"411",21,35,0,"Cardiovascular",-28.0909615657226,-6.94340730592867,15.5355495786005,-6.75497659214488,"New England","Northeast","MA","Male","Massachusetts",2003
+"412",21,35,0,"Communicable",5.40545778594418,16.5547691407833,28.8412738943039,16.6921190629757,"New England","Northeast","MA","Male","Massachusetts",2003
+"413",21,35,0,"Injuries",13.0433442808549,19.378103287237,26.2999122013062,19.4290480184682,"New England","Northeast","MA","Male","Massachusetts",2003
+"414",21,35,0,"Non-communicable",-4.49934506077759,7.11507608723731,20.1186085337612,7.1988447098359,"New England","Northeast","MA","Male","Massachusetts",2003
+"415",21,35,1,"All other causes",-0.271102152963578,8.24980030076564,17.6038393661088,8.44970615916718,"New England","Northeast","MA","Female","Massachusetts",2003
+"416",21,35,1,"Cancers",-16.6411710542196,-8.26561819417982,1.09414405400831,-8.05281690625137,"New England","Northeast","MA","Female","Massachusetts",2003
+"417",21,35,1,"Cardiovascular",-2.36180172479275,13.2950102010229,29.215006499368,13.5998670907674,"New England","Northeast","MA","Female","Massachusetts",2003
+"418",21,35,1,"Communicable",-0.811726055211902,6.10128743595724,14.1884840026344,6.25455376464791,"New England","Northeast","MA","Female","Massachusetts",2003
+"419",21,35,1,"Injuries",-2.04133732250862,1.29514777872018,5.43755927799313,1.40552919699093,"New England","Northeast","MA","Female","Massachusetts",2003
+"420",21,35,1,"Non-communicable",-6.00092276163765,3.18705032246077,12.1630930679832,3.2898215912149,"New England","Northeast","MA","Female","Massachusetts",2003
+"421",21,36,0,"All other causes",6.86746863138315,20.9311590539245,36.9329836408391,21.1020328511968,"New England","Northeast","MA","Male","Massachusetts",2004
+"422",21,36,0,"Cancers",2.05613136815758,18.383742519099,34.781165344333,18.3613748439241,"New England","Northeast","MA","Male","Massachusetts",2004
+"423",21,36,0,"Cardiovascular",-19.4101032239088,0.525088962108725,20.9779817213665,0.631925530891298,"New England","Northeast","MA","Male","Massachusetts",2004
+"424",21,36,0,"Communicable",3.1075140404315,13.6060427798209,25.3361096985896,13.7809319467546,"New England","Northeast","MA","Male","Massachusetts",2004
+"425",21,36,0,"Injuries",12.8811090788235,18.7726476772719,25.4550949502808,18.9180428535464,"New England","Northeast","MA","Male","Massachusetts",2004
+"426",21,36,0,"Non-communicable",-3.40681696622649,8.92853126033957,22.3711453812066,8.91614050946484,"New England","Northeast","MA","Male","Massachusetts",2004
+"427",21,36,1,"All other causes",-1.62372826040891,6.34883182940504,15.2887894426865,6.44316612695007,"New England","Northeast","MA","Female","Massachusetts",2004
+"428",21,36,1,"Cancers",-20.2483998911183,-11.9987636370508,-3.6001455536998,-11.9768038339247,"New England","Northeast","MA","Female","Massachusetts",2004
+"429",21,36,1,"Cardiovascular",-1.84177329920386,13.0018375246627,27.3940907812159,13.1925835719535,"New England","Northeast","MA","Female","Massachusetts",2004
+"430",21,36,1,"Communicable",-3.91421877600115,2.59425191745582,9.26848803200065,2.58429798279275,"New England","Northeast","MA","Female","Massachusetts",2004
+"431",21,36,1,"Injuries",-3.26116663401259,-0.171977897002252,3.80061854901996,-0.0859394834705,"New England","Northeast","MA","Female","Massachusetts",2004
+"432",21,36,1,"Non-communicable",-5.44447610597091,2.88874465797055,11.7868258920046,2.86406061874749,"New England","Northeast","MA","Female","Massachusetts",2004
+"433",21,37,0,"All other causes",2.00473622009771,15.1003175219541,29.9465401944752,15.107162132062,"New England","Northeast","MA","Male","Massachusetts",2005
+"434",21,37,0,"Cancers",-3.78832502485773,11.2910116593656,27.2787506259878,11.3264816274744,"New England","Northeast","MA","Male","Massachusetts",2005
+"435",21,37,0,"Cardiovascular",-19.5752891652631,0.66581767911228,21.2283350484842,0.613157805644795,"New England","Northeast","MA","Male","Massachusetts",2005
+"436",21,37,0,"Communicable",-0.596564244398653,9.57119611806027,21.153065203442,9.77495157100788,"New England","Northeast","MA","Male","Massachusetts",2005
+"437",21,37,0,"Injuries",8.7649618527929,15.113616617279,22.884265778264,15.2842546405104,"New England","Northeast","MA","Male","Massachusetts",2005
+"438",21,37,0,"Non-communicable",-4.62778998653668,7.15679266799675,19.2729748740308,7.25460198231956,"New England","Northeast","MA","Male","Massachusetts",2005
+"439",21,37,1,"All other causes",-2.9601989091208,4.57126559136093,13.6303115889146,4.72136246804283,"New England","Northeast","MA","Female","Massachusetts",2005
+"440",21,37,1,"Cancers",-19.8908972843827,-11.5963779422284,-3.44700467475208,-11.6765294799221,"New England","Northeast","MA","Female","Massachusetts",2005
+"441",21,37,1,"Cardiovascular",0.247355801801175,13.9677314040712,27.8985637083441,14.0333298687555,"New England","Northeast","MA","Female","Massachusetts",2005
+"442",21,37,1,"Communicable",-4.50684160548822,1.376787261712,8.72696615680694,1.49732501312683,"New England","Northeast","MA","Female","Massachusetts",2005
+"443",21,37,1,"Injuries",-5.60388340041354,-2.40318570199394,1.484692993061,-2.38015703482637,"New England","Northeast","MA","Female","Massachusetts",2005
+"444",21,37,1,"Non-communicable",-6.15830300609502,2.67503437923617,12.2132431900236,2.66582385468768,"New England","Northeast","MA","Female","Massachusetts",2005
+"445",21,38,0,"All other causes",-1.04605067309107,11.5229234802256,25.3410096221428,11.6241188141266,"New England","Northeast","MA","Male","Massachusetts",2006
+"446",21,38,0,"Cancers",-11.6887191635761,3.0649198344201,17.9702485284928,3.2906900405216,"New England","Northeast","MA","Male","Massachusetts",2006
+"447",21,38,0,"Cardiovascular",-18.5160421168584,0.151705444526215,19.6783798972937,0.187834089631211,"New England","Northeast","MA","Male","Massachusetts",2006
+"448",21,38,0,"Communicable",-0.683852926491544,8.71245816604936,20.0229096281348,8.9243472111118,"New England","Northeast","MA","Male","Massachusetts",2006
+"449",21,38,0,"Injuries",6.74827931639847,12.6569950918484,19.9953128553273,12.8130294008174,"New England","Northeast","MA","Male","Massachusetts",2006
+"450",21,38,0,"Non-communicable",-3.98162419234998,8.61568472258259,20.7792541402981,8.52283604730102,"New England","Northeast","MA","Male","Massachusetts",2006
+"451",21,38,1,"All other causes",-9.94593916980678,-1.34136335637913,7.15596930593505,-1.3109519771243,"New England","Northeast","MA","Female","Massachusetts",2006
+"452",21,38,1,"Cancers",-19.9134125838465,-12.3118824073822,-4.02286925929402,-12.198608265216,"New England","Northeast","MA","Female","Massachusetts",2006
+"453",21,38,1,"Cardiovascular",-10.836054885637,2.21128478265163,14.5191754627554,2.16089028333073,"New England","Northeast","MA","Female","Massachusetts",2006
+"454",21,38,1,"Communicable",-4.44773172774988,1.29965075617919,8.41854755884922,1.50979124999254,"New England","Northeast","MA","Female","Massachusetts",2006
+"455",21,38,1,"Injuries",-7.52250433083111,-4.42109079180429,-0.836895867626041,-4.38851543726982,"New England","Northeast","MA","Female","Massachusetts",2006
+"456",21,38,1,"Non-communicable",-5.60221090282613,2.70516242288456,12.0968356775219,2.96513292331073,"New England","Northeast","MA","Female","Massachusetts",2006
+"457",21,39,0,"All other causes",-4.9477414129164,7.02963063360099,18.5702597437518,6.85900468012729,"New England","Northeast","MA","Male","Massachusetts",2007
+"458",21,39,0,"Cancers",-11.9895304179667,2.04179943561718,16.6007497787797,2.08279417866427,"New England","Northeast","MA","Male","Massachusetts",2007
+"459",21,39,0,"Cardiovascular",-27.1559491265908,-8.70956442293914,10.7032365909927,-8.46125604149518,"New England","Northeast","MA","Male","Massachusetts",2007
+"460",21,39,0,"Communicable",-4.87866899815698,4.46273255930516,15.4191130651139,4.69414631003246,"New England","Northeast","MA","Male","Massachusetts",2007
+"461",21,39,0,"Injuries",3.73132630190583,9.65892316372388,16.7626277917331,9.79879646438345,"New England","Northeast","MA","Male","Massachusetts",2007
+"462",21,39,0,"Non-communicable",-5.30543025663267,5.33852378584717,16.683991869982,5.50293600515822,"New England","Northeast","MA","Male","Massachusetts",2007
+"463",21,39,1,"All other causes",-11.6699923137938,-3.75404449618399,4.67502753071756,-3.63469992774141,"New England","Northeast","MA","Female","Massachusetts",2007
+"464",21,39,1,"Cancers",-22.0406760985502,-13.7142949959631,-5.27815239520318,-13.5861962682205,"New England","Northeast","MA","Female","Massachusetts",2007
+"465",21,39,1,"Cardiovascular",-14.3165945990694,-1.70971616218111,10.5616036296712,-1.90268645348485,"New England","Northeast","MA","Female","Massachusetts",2007
+"466",21,39,1,"Communicable",-5.37238238477337,0.411880659826426,6.18236556330488,0.475829588670103,"New England","Northeast","MA","Female","Massachusetts",2007
+"467",21,39,1,"Injuries",-8.59931130863118,-5.43960349848299,-1.6477146036838,-5.34713364447478,"New England","Northeast","MA","Female","Massachusetts",2007
+"468",21,39,1,"Non-communicable",-9.74253905263181,-1.22942780430011,7.23682032775639,-1.22834799327713,"New England","Northeast","MA","Female","Massachusetts",2007
+"469",21,40,0,"All other causes",-8.1027547717183,4.0450221482357,16.8626758889552,4.13026116061239,"New England","Northeast","MA","Male","Massachusetts",2008
+"470",21,40,0,"Cancers",-15.7349594174794,-1.79211084438721,11.5515328091754,-1.73894373483037,"New England","Northeast","MA","Male","Massachusetts",2008
+"471",21,40,0,"Cardiovascular",-28.9722835051636,-11.0562760369149,8.15311280080188,-10.7037196986497,"New England","Northeast","MA","Male","Massachusetts",2008
+"472",21,40,0,"Communicable",-5.2211739716775,3.53657926274026,12.7791719092294,3.4640019145074,"New England","Northeast","MA","Male","Massachusetts",2008
+"473",21,40,0,"Injuries",1.47389460195576,7.82630588606546,14.8034173849224,7.92190915974611,"New England","Northeast","MA","Male","Massachusetts",2008
+"474",21,40,0,"Non-communicable",-14.3129058765759,-4.50897803522818,5.98811181469865,-4.50573746380398,"New England","Northeast","MA","Male","Massachusetts",2008
+"475",21,40,1,"All other causes",-16.4116762023229,-8.51397408001266,-1.19149681491171,-8.53754062837421,"New England","Northeast","MA","Female","Massachusetts",2008
+"476",21,40,1,"Cancers",-23.7737948609211,-15.5909965333092,-7.5962705200024,-15.6270757961046,"New England","Northeast","MA","Female","Massachusetts",2008
+"477",21,40,1,"Cardiovascular",-14.2496807654143,-2.811367349938,8.86279087275229,-2.64979915347655,"New England","Northeast","MA","Female","Massachusetts",2008
+"478",21,40,1,"Communicable",-6.24722725152142,-0.818761761876086,5.04450805654891,-0.725431575873415,"New England","Northeast","MA","Female","Massachusetts",2008
+"479",21,40,1,"Injuries",-8.94335912320211,-5.8450888848265,-2.41218899709272,-5.78376881738103,"New England","Northeast","MA","Female","Massachusetts",2008
+"480",21,40,1,"Non-communicable",-14.6516947148338,-7.13458350759053,1.44996058161665,-7.03751340581756,"New England","Northeast","MA","Female","Massachusetts",2008
+"481",21,41,0,"All other causes",-12.3724157906044,-0.718413782387302,12.7320632270308,-0.68232550890628,"New England","Northeast","MA","Male","Massachusetts",2009
+"482",21,41,0,"Cancers",-16.0470966040792,-3.09205403998038,10.75139506016,-3.07928220823135,"New England","Northeast","MA","Male","Massachusetts",2009
+"483",21,41,0,"Cardiovascular",-27.4691099420839,-11.7100175277977,5.82713937412452,-11.3955517589345,"New England","Northeast","MA","Male","Massachusetts",2009
+"484",21,41,0,"Communicable",-0.941221201451743,7.52987947331622,17.4578984939119,7.65788428289329,"New England","Northeast","MA","Male","Massachusetts",2009
+"485",21,41,0,"Injuries",-1.34486651433812,4.96019093210984,12.4759525159662,5.16948547164623,"New England","Northeast","MA","Male","Massachusetts",2009
+"486",21,41,0,"Non-communicable",-14.5656506791381,-4.68242402493893,6.50035713962296,-4.54748034246995,"New England","Northeast","MA","Male","Massachusetts",2009
+"487",21,41,1,"All other causes",-16.7289872782032,-8.53874676107064,-0.612472721757753,-8.59433821082692,"New England","Northeast","MA","Female","Massachusetts",2009
+"488",21,41,1,"Cancers",-25.2020790521689,-16.9107675385821,-9.28625621897097,-17.1039073504461,"New England","Northeast","MA","Female","Massachusetts",2009
+"489",21,41,1,"Cardiovascular",-7.23062026908483,3.89759027277023,15.0454748277864,4.07563506464626,"New England","Northeast","MA","Female","Massachusetts",2009
+"490",21,41,1,"Communicable",-2.26120016734257,3.18265858342514,9.11542446090097,3.29100106373706,"New England","Northeast","MA","Female","Massachusetts",2009
+"491",21,41,1,"Injuries",-9.50471021835321,-6.32956909788208,-2.69921587741466,-6.29272020874329,"New England","Northeast","MA","Female","Massachusetts",2009
+"492",21,41,1,"Non-communicable",-16.6962800023835,-8.86316084116221,-0.937016505442681,-8.86424142551281,"New England","Northeast","MA","Female","Massachusetts",2009
+"493",21,42,0,"All other causes",-20.9765893725377,-8.97147883132463,3.92891711919583,-8.91122861628782,"New England","Northeast","MA","Male","Massachusetts",2010
+"494",21,42,0,"Cancers",-17.6184207494027,-4.80124975923746,8.97585646467669,-4.68953114283966,"New England","Northeast","MA","Male","Massachusetts",2010
+"495",21,42,0,"Cardiovascular",-24.7510503032363,-7.45079919033475,8.78962706068344,-7.60856999532489,"New England","Northeast","MA","Male","Massachusetts",2010
+"496",21,42,0,"Communicable",-4.14487588246027,3.97288970456581,12.9960762388498,4.16344748593247,"New England","Northeast","MA","Male","Massachusetts",2010
+"497",21,42,0,"Injuries",-2.41969138452863,4.49425996146353,11.7227141585227,4.52954230861817,"New England","Northeast","MA","Male","Massachusetts",2010
+"498",21,42,0,"Non-communicable",-15.8474938181556,-6.74727004093827,2.87686198434045,-6.74408028549566,"New England","Northeast","MA","Male","Massachusetts",2010
+"499",21,42,1,"All other causes",-22.3013551528003,-13.6460997965546,-5.04476849972413,-13.6587540738709,"New England","Northeast","MA","Female","Massachusetts",2010
+"500",21,42,1,"Cancers",-23.0214107427017,-15.7285131182809,-7.86482873534834,-15.6364161939806,"New England","Northeast","MA","Female","Massachusetts",2010
+"501",21,42,1,"Cardiovascular",-8.59257204401135,2.33242177075095,13.121449446262,2.29526430302254,"New England","Northeast","MA","Female","Massachusetts",2010
+"502",21,42,1,"Communicable",-2.43367882280959,2.84687172943303,8.65932303782367,2.93537513205352,"New England","Northeast","MA","Female","Massachusetts",2010
+"503",21,42,1,"Injuries",-10.7030393778108,-7.4722714698539,-3.83149065426611,-7.43770132690542,"New England","Northeast","MA","Female","Massachusetts",2010
+"504",21,42,1,"Non-communicable",-18.1727341186837,-10.5978330891984,-2.79010548203789,-10.6266661911592,"New England","Northeast","MA","Female","Massachusetts",2010
+"505",21,43,0,"All other causes",-30.0562052174855,-18.1639230727976,-5.83572662618391,-18.1142195427514,"New England","Northeast","MA","Male","Massachusetts",2011
+"506",21,43,0,"Cancers",-19.8714040355549,-7.43316589790003,5.26862810855286,-7.41677277211459,"New England","Northeast","MA","Male","Massachusetts",2011
+"507",21,43,0,"Cardiovascular",-34.1296564148081,-18.530361304087,-2.01212200676666,-18.3554711112499,"New England","Northeast","MA","Male","Massachusetts",2011
+"508",21,43,0,"Communicable",-6.34059236009746,1.3675908380125,10.4792626251588,1.61417162324848,"New England","Northeast","MA","Male","Massachusetts",2011
+"509",21,43,0,"Injuries",-5.91390706473328,0.892185851377207,8.01242141266183,1.05772794126893,"New England","Northeast","MA","Male","Massachusetts",2011
+"510",21,43,0,"Non-communicable",-19.6442075585192,-10.506517506344,-1.39712500263695,-10.6204932072916,"New England","Northeast","MA","Male","Massachusetts",2011
+"511",21,43,1,"All other causes",-27.1393405986946,-18.8409603702155,-10.1624774412875,-18.8233187115978,"New England","Northeast","MA","Female","Massachusetts",2011
+"512",21,43,1,"Cancers",-19.970171571583,-12.1148253684884,-4.37146056689119,-12.2113417109389,"New England","Northeast","MA","Female","Massachusetts",2011
+"513",21,43,1,"Cardiovascular",-10.0803783038823,0.929727667915884,11.1592594251006,0.877390420236731,"New England","Northeast","MA","Female","Massachusetts",2011
+"514",21,43,1,"Communicable",-2.94902180391924,2.12400572268576,8.03628539342784,2.25526753259611,"New England","Northeast","MA","Female","Massachusetts",2011
+"515",21,43,1,"Injuries",-11.6948897810042,-8.15716357119761,-4.40979481045564,-8.1381109272412,"New England","Northeast","MA","Female","Massachusetts",2011
+"516",21,43,1,"Non-communicable",-17.1525477228649,-10.0203758427445,-1.87885429430083,-9.86513185201238,"New England","Northeast","MA","Female","Massachusetts",2011
+"517",21,44,0,"All other causes",-34.1949731677721,-22.0962827838698,-10.0833935795827,-22.2569684469817,"New England","Northeast","MA","Male","Massachusetts",2012
+"518",21,44,0,"Cancers",-18.0906937205094,-4.88609813943503,8.74013894881686,-4.63062398434616,"New England","Northeast","MA","Male","Massachusetts",2012
+"519",21,44,0,"Cardiovascular",-34.4759901497468,-18.563363265917,-3.71197799417697,-18.841677656638,"New England","Northeast","MA","Male","Massachusetts",2012
+"520",21,44,0,"Communicable",-5.53947920548861,3.30819396302886,12.1489583796667,3.26993831029823,"New England","Northeast","MA","Male","Massachusetts",2012
+"521",21,44,0,"Injuries",-8.50389670752963,-1.89524668116087,5.81400650923599,-1.80073914352624,"New England","Northeast","MA","Male","Massachusetts",2012
+"522",21,44,0,"Non-communicable",-17.0814245454395,-7.43202923600033,3.35829811406117,-7.23641605177464,"New England","Northeast","MA","Male","Massachusetts",2012
+"523",21,44,1,"All other causes",-29.2259010029068,-20.7193089816328,-12.0979059911294,-20.6921562592785,"New England","Northeast","MA","Female","Massachusetts",2012
+"524",21,44,1,"Cancers",-20.574425835723,-12.5655282448302,-3.76102426959449,-12.4545996319804,"New England","Northeast","MA","Female","Massachusetts",2012
+"525",21,44,1,"Cardiovascular",-12.8350169926958,-1.85293101546047,9.45017451590813,-1.77869228871412,"New England","Northeast","MA","Female","Massachusetts",2012
+"526",21,44,1,"Communicable",-5.54607224047894,-0.557453937457346,5.21202502118283,-0.482193548471977,"New England","Northeast","MA","Female","Massachusetts",2012
+"527",21,44,1,"Injuries",-12.2452034183627,-8.56691447566201,-4.48084692749775,-8.5265770203806,"New England","Northeast","MA","Female","Massachusetts",2012
+"528",21,44,1,"Non-communicable",-15.7998804088022,-8.39971729463002,-0.696964831582327,-8.45618286627902,"New England","Northeast","MA","Female","Massachusetts",2012
+"529",21,45,0,"All other causes",-35.6156211687992,-22.3106766276313,-8.47070889600298,-22.2979100760842,"New England","Northeast","MA","Male","Massachusetts",2013
+"530",21,45,0,"Cancers",-19.0933606959939,-3.55941441224458,11.3221582171582,-3.52059975715826,"New England","Northeast","MA","Male","Massachusetts",2013
+"531",21,45,0,"Cardiovascular",-40.6580418981597,-24.1726835008247,-4.39186360270805,-23.5831357648642,"New England","Northeast","MA","Male","Massachusetts",2013
+"532",21,45,0,"Communicable",-3.71664855044845,5.58785391304228,16.2917658135108,5.72201317534064,"New England","Northeast","MA","Male","Massachusetts",2013
+"533",21,45,0,"Injuries",-10.887730269871,-3.35700276847255,4.92059334008295,-3.26616901713301,"New England","Northeast","MA","Male","Massachusetts",2013
+"534",21,45,0,"Non-communicable",-17.4246785370233,-6.23788349406291,6.23519949032273,-6.18728973016814,"New England","Northeast","MA","Male","Massachusetts",2013
+"535",21,45,1,"All other causes",-33.0929391521542,-23.8738865710826,-14.4958916295678,-23.8808737494882,"New England","Northeast","MA","Female","Massachusetts",2013
+"536",21,45,1,"Cancers",-20.6811792359472,-12.0323046771549,-2.73338434201267,-11.8519104914056,"New England","Northeast","MA","Female","Massachusetts",2013
+"537",21,45,1,"Cardiovascular",-16.1195933802895,-5.05774159667499,7.29284261241068,-4.71577512870676,"New England","Northeast","MA","Female","Massachusetts",2013
+"538",21,45,1,"Communicable",-9.38862125623443,-3.87749504393314,2.64425960001497,-3.69458500179785,"New England","Northeast","MA","Female","Massachusetts",2013
+"539",21,45,1,"Injuries",-13.4350492083973,-9.41212492899166,-4.85289399985047,-9.35447846496167,"New England","Northeast","MA","Female","Massachusetts",2013
+"540",21,45,1,"Non-communicable",-14.1735726514759,-5.6951608126345,3.77543655748623,-5.57232873078088,"New England","Northeast","MA","Female","Massachusetts",2013

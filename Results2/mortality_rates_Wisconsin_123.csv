@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",49,1,0,0,"All other causes","White","Male","Wisconsin",1969,"East North Central","Midwest","WI",118.89506462892,122.780443358894,126.980578025456,122.808325695379
+"2",49,1,0,0,"Cancers","White","Male","Wisconsin",1969,"East North Central","Midwest","WI",224.044065433184,229.997932448956,235.4342237966,229.98946896687
+"3",49,1,0,0,"Cardiovascular","White","Male","Wisconsin",1969,"East North Central","Midwest","WI",861.031475968921,876.171330583519,892.391640424839,876.188868813116
+"4",49,1,0,0,"Communicable","White","Male","Wisconsin",1969,"East North Central","Midwest","WI",51.2923441333395,54.8707281528882,58.4040170098689,54.877862109068
+"5",49,1,0,0,"Injuries","White","Male","Wisconsin",1969,"East North Central","Midwest","WI",98.982058326426,102.378560732357,105.89367336255,102.338989385412
+"6",49,1,0,0,"Non-communicable","White","Male","Wisconsin",1969,"East North Central","Midwest","WI",87.2388402062537,90.7605258422549,93.9807018931843,90.7197138649628
+"7",49,1,0,1,"All other causes","White","Female","Wisconsin",1969,"East North Central","Midwest","WI",85.6787718730323,88.88001621432,92.2139329325594,88.8897809189994
+"8",49,1,0,1,"Cancers","White","Female","Wisconsin",1969,"East North Central","Midwest","WI",159.308210882672,163.383789808231,167.601431002374,163.431908229926
+"9",49,1,0,1,"Cardiovascular","White","Female","Wisconsin",1969,"East North Central","Midwest","WI",549.602482011764,560.219585514978,570.834372947916,560.270426347169
+"10",49,1,0,1,"Communicable","White","Female","Wisconsin",1969,"East North Central","Midwest","WI",28.9562061245459,30.9494766771488,33.1551575980245,30.968422843054
+"11",49,1,0,1,"Injuries","White","Female","Wisconsin",1969,"East North Central","Midwest","WI",40.1854558302527,42.1935367720811,43.9810652368614,42.1521367409931
+"12",49,1,0,1,"Non-communicable","White","Female","Wisconsin",1969,"East North Central","Midwest","WI",44.2253461176069,46.3272597026616,48.4564006727736,46.3306233273952
+"13",49,1,1,0,"All other causes","Black","Male","Wisconsin",1969,"East North Central","Midwest","WI",157.843550995068,185.953380027142,217.856132856754,186.501210566689
+"14",49,1,1,0,"Cancers","Black","Male","Wisconsin",1969,"East North Central","Midwest","WI",290.427869564077,329.895477083016,368.122954085306,330.048924518574
+"15",49,1,1,0,"Cardiovascular","Black","Male","Wisconsin",1969,"East North Central","Midwest","WI",619.447606400289,675.283137148187,742.314203717658,676.951864976899
+"16",49,1,1,0,"Communicable","Black","Male","Wisconsin",1969,"East North Central","Midwest","WI",84.9914799628732,123.169635758137,185.03107845418,125.781314781367
+"17",49,1,1,0,"Injuries","Black","Male","Wisconsin",1969,"East North Central","Midwest","WI",124.679967249365,145.314021934838,167.95870908262,145.406414691354
+"18",49,1,1,0,"Non-communicable","Black","Male","Wisconsin",1969,"East North Central","Midwest","WI",92.6820678787661,112.561831114986,136.410487380553,113.154418497576
+"19",49,1,1,1,"All other causes","Black","Female","Wisconsin",1969,"East North Central","Midwest","WI",112.491300765148,132.06967890985,151.387860110455,131.730678933544
+"20",49,1,1,1,"Cancers","Black","Female","Wisconsin",1969,"East North Central","Midwest","WI",168.402231840295,189.173243457522,215.742528342424,189.863778705452
+"21",49,1,1,1,"Cardiovascular","Black","Female","Wisconsin",1969,"East North Central","Midwest","WI",511.443501018922,564.154898920982,626.724718860438,564.904329342076
+"22",49,1,1,1,"Communicable","Black","Female","Wisconsin",1969,"East North Central","Midwest","WI",33.0304913126372,41.5655919291928,54.0915641345464,42.0571642888264
+"23",49,1,1,1,"Injuries","Black","Female","Wisconsin",1969,"East North Central","Midwest","WI",37.8166280244705,46.2248578256477,55.1952724734146,46.2589006320589
+"24",49,1,1,1,"Non-communicable","Black","Female","Wisconsin",1969,"East North Central","Midwest","WI",72.6351277688647,88.587718207644,109.389772558678,89.1158141114783
+"25",49,2,0,0,"All other causes","White","Male","Wisconsin",1970,"East North Central","Midwest","WI",117.086596465696,120.393162531653,123.681034029071,120.394785639912
+"26",49,2,0,0,"Cancers","White","Male","Wisconsin",1970,"East North Central","Midwest","WI",226.21739396944,231.30070728756,236.560340649439,231.255677739125
+"27",49,2,0,0,"Cardiovascular","White","Male","Wisconsin",1970,"East North Central","Midwest","WI",854.602149990733,868.855821589933,883.304802576907,868.908080013673
+"28",49,2,0,0,"Communicable","White","Male","Wisconsin",1970,"East North Central","Midwest","WI",47.0826709649246,50.2109452350404,53.2651035558727,50.1833217222955
+"29",49,2,0,0,"Injuries","White","Male","Wisconsin",1970,"East North Central","Midwest","WI",98.0949815898987,101.127972468435,104.159424016631,101.09483491143
+"30",49,2,0,0,"Non-communicable","White","Male","Wisconsin",1970,"East North Central","Midwest","WI",86.675032798451,89.765678904618,92.751291002394,89.7605932965226
+"31",49,2,0,1,"All other causes","White","Female","Wisconsin",1970,"East North Central","Midwest","WI",84.0213455372986,86.6251444236741,89.4279609118226,86.5984253378684
+"32",49,2,0,1,"Cancers","White","Female","Wisconsin",1970,"East North Central","Midwest","WI",159.828255608416,163.055877125296,166.529644947709,163.060322304723
+"33",49,2,0,1,"Cardiovascular","White","Female","Wisconsin",1970,"East North Central","Midwest","WI",529.031867237933,537.46153740162,546.961001865065,537.594187196069
+"34",49,2,0,1,"Communicable","White","Female","Wisconsin",1970,"East North Central","Midwest","WI",28.1199602338275,29.8425164487547,31.6511872529291,29.8677037430071
+"35",49,2,0,1,"Injuries","White","Female","Wisconsin",1970,"East North Central","Midwest","WI",39.8699576652452,41.4780899971682,43.1939848542241,41.4641684853384
+"36",49,2,0,1,"Non-communicable","White","Female","Wisconsin",1970,"East North Central","Midwest","WI",44.0433799066412,45.7139093528895,47.6201331807573,45.7475849526827
+"37",49,2,1,0,"All other causes","Black","Male","Wisconsin",1970,"East North Central","Midwest","WI",159.335166716654,185.598890069217,216.548402662762,186.071925179975
+"38",49,2,1,0,"Cancers","Black","Male","Wisconsin",1970,"East North Central","Midwest","WI",291.506194800552,329.874518965382,368.399188153724,329.741619971043
+"39",49,2,1,0,"Cardiovascular","Black","Male","Wisconsin",1970,"East North Central","Midwest","WI",621.788022946934,675.315391765339,739.85517317405,676.199325699528
+"40",49,2,1,0,"Communicable","Black","Male","Wisconsin",1970,"East North Central","Midwest","WI",83.1356224463725,117.801914735097,176.969701735846,120.719676654528
+"41",49,2,1,0,"Injuries","Black","Male","Wisconsin",1970,"East North Central","Midwest","WI",124.68019949337,143.00285366605,165.121383787411,143.414221742621
+"42",49,2,1,0,"Non-communicable","Black","Male","Wisconsin",1970,"East North Central","Midwest","WI",92.1446341997844,111.538159606871,135.386787494047,112.202991806503
+"43",49,2,1,1,"All other causes","Black","Female","Wisconsin",1970,"East North Central","Midwest","WI",111.294027718123,130.520712689758,150.005655226367,130.164390591361
+"44",49,2,1,1,"Cancers","Black","Female","Wisconsin",1970,"East North Central","Midwest","WI",169.529412424859,188.932855362911,214.13379968348,189.717379004519
+"45",49,2,1,1,"Cardiovascular","Black","Female","Wisconsin",1970,"East North Central","Midwest","WI",508.149180631867,556.645689536648,609.28529276578,557.574147451318
+"46",49,2,1,1,"Communicable","Black","Female","Wisconsin",1970,"East North Central","Midwest","WI",32.9098192325437,40.7818643565207,52.7205807450369,41.3084554181362
+"47",49,2,1,1,"Injuries","Black","Female","Wisconsin",1970,"East North Central","Midwest","WI",37.8429373029533,46.0062279063795,54.3767839724722,45.9161672935247
+"48",49,2,1,1,"Non-communicable","Black","Female","Wisconsin",1970,"East North Central","Midwest","WI",72.3399991826314,88.0338926919272,106.536273922805,88.4342078750796
+"49",49,3,0,0,"All other causes","White","Male","Wisconsin",1971,"East North Central","Midwest","WI",114.175499784816,117.283453812036,120.603721590207,117.332912129162
+"50",49,3,0,0,"Cancers","White","Male","Wisconsin",1971,"East North Central","Midwest","WI",228.148097060639,232.962817744013,238.111925039694,232.907387011129
+"51",49,3,0,0,"Cardiovascular","White","Male","Wisconsin",1971,"East North Central","Midwest","WI",826.728603169583,840.465290054987,854.275646270816,840.503852320179
+"52",49,3,0,0,"Communicable","White","Male","Wisconsin",1971,"East North Central","Midwest","WI",46.8138210317875,49.8202107376502,52.9261518393628,49.8269510000253
+"53",49,3,0,0,"Injuries","White","Male","Wisconsin",1971,"East North Central","Midwest","WI",96.8298411720171,99.4013082784352,102.090335919617,99.4149099566521
+"54",49,3,0,0,"Non-communicable","White","Male","Wisconsin",1971,"East North Central","Midwest","WI",88.1614353604705,90.9564979414908,93.848572867916,90.9870014001662
+"55",49,3,0,1,"All other causes","White","Female","Wisconsin",1971,"East North Central","Midwest","WI",81.5261000497633,84.1768041053629,86.686554471023,84.1725336590713
+"56",49,3,0,1,"Cancers","White","Female","Wisconsin",1971,"East North Central","Midwest","WI",157.484312829464,160.527889170527,163.791309398084,160.535386713338
+"57",49,3,0,1,"Cardiovascular","White","Female","Wisconsin",1971,"East North Central","Midwest","WI",525.833940915005,534.92504537612,543.930928447644,535.03435398409
+"58",49,3,0,1,"Communicable","White","Female","Wisconsin",1971,"East North Central","Midwest","WI",27.0236858928169,28.6211710760263,30.2651553996488,28.6398570201558
+"59",49,3,0,1,"Injuries","White","Female","Wisconsin",1971,"East North Central","Midwest","WI",38.6067831658131,40.0059042582535,41.5592270815508,40.0461876652457
+"60",49,3,0,1,"Non-communicable","White","Female","Wisconsin",1971,"East North Central","Midwest","WI",43.3423483594271,45.1858581313944,47.0346184404434,45.198651149844
+"61",49,3,1,0,"All other causes","Black","Male","Wisconsin",1971,"East North Central","Midwest","WI",156.645756992911,183.196488430352,213.520242386857,183.324878623353
+"62",49,3,1,0,"Cancers","Black","Male","Wisconsin",1971,"East North Central","Midwest","WI",292.062802568697,330.897554395715,365.924288843465,330.402955497291
+"63",49,3,1,0,"Cardiovascular","Black","Male","Wisconsin",1971,"East North Central","Midwest","WI",623.511882498744,671.793388767661,731.623089170283,673.289143717736
+"64",49,3,1,0,"Communicable","Black","Male","Wisconsin",1971,"East North Central","Midwest","WI",81.513949687908,112.573078287861,161.799364689461,115.104717706054
+"65",49,3,1,0,"Injuries","Black","Male","Wisconsin",1971,"East North Central","Midwest","WI",124.470340495964,141.885897199315,162.149632366243,142.22338830537
+"66",49,3,1,0,"Non-communicable","Black","Male","Wisconsin",1971,"East North Central","Midwest","WI",92.8420870480854,110.320992843672,133.1206720038,111.256604396121
+"67",49,3,1,1,"All other causes","Black","Female","Wisconsin",1971,"East North Central","Midwest","WI",110.754083904087,128.449777410481,146.709981293256,128.424111223287
+"68",49,3,1,1,"Cancers","Black","Female","Wisconsin",1971,"East North Central","Midwest","WI",170.301839952865,189.170103144063,214.280421316186,189.891513027824
+"69",49,3,1,1,"Cardiovascular","Black","Female","Wisconsin",1971,"East North Central","Midwest","WI",508.74942113244,551.689621129221,602.02788712637,552.50159833106
+"70",49,3,1,1,"Communicable","Black","Female","Wisconsin",1971,"East North Central","Midwest","WI",33.1408232151171,40.0028369826056,51.4072483834863,40.5756522517599
+"71",49,3,1,1,"Injuries","Black","Female","Wisconsin",1971,"East North Central","Midwest","WI",37.5227980341886,45.7200869064325,53.7164628371154,45.6103649359705
+"72",49,3,1,1,"Non-communicable","Black","Female","Wisconsin",1971,"East North Central","Midwest","WI",72.4882737386077,87.6036514825313,104.772034026508,87.9991069330686
+"73",49,4,0,0,"All other causes","White","Male","Wisconsin",1972,"East North Central","Midwest","WI",112.508809195675,116.169113906573,119.352103469618,116.073160021694
+"74",49,4,0,0,"Cancers","White","Male","Wisconsin",1972,"East North Central","Midwest","WI",229.85172971419,234.616467199744,239.801662403488,234.649160621114
+"75",49,4,0,0,"Cardiovascular","White","Male","Wisconsin",1972,"East North Central","Midwest","WI",848.236389994718,862.437244448613,876.144570235026,862.561291889773
+"76",49,4,0,0,"Communicable","White","Male","Wisconsin",1972,"East North Central","Midwest","WI",51.360406987554,54.3854073318326,57.7780569280007,54.4343764164921
+"77",49,4,0,0,"Injuries","White","Male","Wisconsin",1972,"East North Central","Midwest","WI",95.7133440570045,98.0792763901656,100.81012728415,98.1163305032712
+"78",49,4,0,0,"Non-communicable","White","Male","Wisconsin",1972,"East North Central","Midwest","WI",89.9169887444785,92.714280626343,95.6487956755367,92.7344841991543
+"79",49,4,0,1,"All other causes","White","Female","Wisconsin",1972,"East North Central","Midwest","WI",80.1290739603658,82.3850735268918,84.9272503065866,82.4133191390188
+"80",49,4,0,1,"Cancers","White","Female","Wisconsin",1972,"East North Central","Midwest","WI",156.756839982921,159.625153666914,163.042871325441,159.686415675181
+"81",49,4,0,1,"Cardiovascular","White","Female","Wisconsin",1972,"East North Central","Midwest","WI",525.517458938007,534.07534557109,542.67442807941,534.05315242901
+"82",49,4,0,1,"Communicable","White","Female","Wisconsin",1972,"East North Central","Midwest","WI",27.0893318645614,28.7256924881242,30.3651277979674,28.7340008042847
+"83",49,4,0,1,"Injuries","White","Female","Wisconsin",1972,"East North Central","Midwest","WI",38.1494949580729,39.6116207714036,41.1514275580046,39.6175824150007
+"84",49,4,0,1,"Non-communicable","White","Female","Wisconsin",1972,"East North Central","Midwest","WI",43.098941424579,44.8867123443338,46.7271443502366,44.8851177323019
+"85",49,4,1,0,"All other causes","Black","Male","Wisconsin",1972,"East North Central","Midwest","WI",156.367943854615,181.920670331672,212.110571068716,182.559404504186
+"86",49,4,1,0,"Cancers","Black","Male","Wisconsin",1972,"East North Central","Midwest","WI",294.205845585693,331.840353912543,365.92492012485,331.576107252727
+"87",49,4,1,0,"Cardiovascular","Black","Male","Wisconsin",1972,"East North Central","Midwest","WI",625.229748731964,668.608628582814,725.460284244706,670.104588589641
+"88",49,4,1,0,"Communicable","Black","Male","Wisconsin",1972,"East North Central","Midwest","WI",78.8379133259416,106.011321475663,154.916038507292,109.111373471812
+"89",49,4,1,0,"Injuries","Black","Male","Wisconsin",1972,"East North Central","Midwest","WI",124.663462159434,140.566993092977,160.007376336617,141.203323900229
+"90",49,4,1,0,"Non-communicable","Black","Male","Wisconsin",1972,"East North Central","Midwest","WI",93.4258083467048,110.312578083155,132.974180238925,111.161708664907
+"91",49,4,1,1,"All other causes","Black","Female","Wisconsin",1972,"East North Central","Midwest","WI",108.794788152315,127.330410658424,144.751445165083,126.745336343616
+"92",49,4,1,1,"Cancers","Black","Female","Wisconsin",1972,"East North Central","Midwest","WI",171.402750073761,189.497675921225,213.535490588245,190.274032280902
+"93",49,4,1,1,"Cardiovascular","Black","Female","Wisconsin",1972,"East North Central","Midwest","WI",502.496268937164,542.231792147683,587.223280678354,543.868641144286
+"94",49,4,1,1,"Communicable","Black","Female","Wisconsin",1972,"East North Central","Midwest","WI",32.6880887508917,39.4221248586705,49.4663528998742,39.8861875551798
+"95",49,4,1,1,"Injuries","Black","Female","Wisconsin",1972,"East North Central","Midwest","WI",37.5555965841944,45.3699815871783,53.3441201034027,45.3020861346867
+"96",49,4,1,1,"Non-communicable","Black","Female","Wisconsin",1972,"East North Central","Midwest","WI",72.5590544110442,87.4426998991828,103.506381652582,87.5848299946219
+"97",49,5,0,0,"All other causes","White","Male","Wisconsin",1973,"East North Central","Midwest","WI",111.559033820792,114.844297710243,117.928842558017,114.834318628835
+"98",49,5,0,0,"Cancers","White","Male","Wisconsin",1973,"East North Central","Midwest","WI",228.750444372141,233.834511768507,238.432382478842,233.678926761497
+"99",49,5,0,0,"Cardiovascular","White","Male","Wisconsin",1973,"East North Central","Midwest","WI",818.324176113086,831.557321864152,844.835081023438,831.416084808168
+"100",49,5,0,0,"Communicable","White","Male","Wisconsin",1973,"East North Central","Midwest","WI",51.4987438607366,54.7874269708682,58.2404825026585,54.826540777835
+"101",49,5,0,0,"Injuries","White","Male","Wisconsin",1973,"East North Central","Midwest","WI",93.3967517242127,95.9755115398185,98.5698385577925,95.9624551732796
+"102",49,5,0,0,"Non-communicable","White","Male","Wisconsin",1973,"East North Central","Midwest","WI",89.896195374855,92.5996574562098,95.7624551924423,92.6637818531613
+"103",49,5,0,1,"All other causes","White","Female","Wisconsin",1973,"East North Central","Midwest","WI",78.9115921585736,81.2715152543338,83.6499936423213,81.2539087242298
+"104",49,5,0,1,"Cancers","White","Female","Wisconsin",1973,"East North Central","Midwest","WI",156.67495574341,159.47885145519,162.586469630584,159.523070498961
+"105",49,5,0,1,"Cardiovascular","White","Female","Wisconsin",1973,"East North Central","Midwest","WI",510.372402564726,518.578985299373,527.878614494228,518.756444765489
+"106",49,5,0,1,"Communicable","White","Female","Wisconsin",1973,"East North Central","Midwest","WI",26.5068646800402,28.0742848355775,29.7221378125875,28.0817110775739
+"107",49,5,0,1,"Injuries","White","Female","Wisconsin",1973,"East North Central","Midwest","WI",37.0592050993164,38.522240357801,39.9333206655,38.5119962668584
+"108",49,5,0,1,"Non-communicable","White","Female","Wisconsin",1973,"East North Central","Midwest","WI",42.6231918464613,44.3152040039918,46.166773023452,44.3433775513399
+"109",49,5,1,0,"All other causes","Black","Male","Wisconsin",1973,"East North Central","Midwest","WI",155.864861381572,180.721211043713,209.443778195352,181.473256017809
+"110",49,5,1,0,"Cancers","Black","Male","Wisconsin",1973,"East North Central","Midwest","WI",298.391032367913,335.264666240227,367.984750782618,334.859495652181
+"111",49,5,1,0,"Cardiovascular","Black","Male","Wisconsin",1973,"East North Central","Midwest","WI",618.485331599726,664.134987674442,714.724799455308,664.51858534671
+"112",49,5,1,0,"Communicable","Black","Male","Wisconsin",1973,"East North Central","Midwest","WI",74.7057258301127,100.62055709132,143.638876726572,103.394539972382
+"113",49,5,1,0,"Injuries","Black","Male","Wisconsin",1973,"East North Central","Midwest","WI",122.853862901572,138.288044968584,156.071665049382,138.517200690886
+"114",49,5,1,0,"Non-communicable","Black","Male","Wisconsin",1973,"East North Central","Midwest","WI",93.706282317371,110.107203597096,132.464893478387,111.172836168314
+"115",49,5,1,1,"All other causes","Black","Female","Wisconsin",1973,"East North Central","Midwest","WI",106.72190150277,125.249157415571,141.055647397724,124.614780991491
+"116",49,5,1,1,"Cancers","Black","Female","Wisconsin",1973,"East North Central","Midwest","WI",171.46278371152,189.996832858992,211.151940661692,190.258427683918
+"117",49,5,1,1,"Cardiovascular","Black","Female","Wisconsin",1973,"East North Central","Midwest","WI",495.842903227639,534.348507004014,579.107194422512,534.806994641146
+"118",49,5,1,1,"Communicable","Black","Female","Wisconsin",1973,"East North Central","Midwest","WI",32.4756321175024,39.2142493393737,48.3902241101779,39.4911886800744
+"119",49,5,1,1,"Injuries","Black","Female","Wisconsin",1973,"East North Central","Midwest","WI",37.6289307363974,45.0047341556425,52.5056384473469,44.8670741423128
+"120",49,5,1,1,"Non-communicable","Black","Female","Wisconsin",1973,"East North Central","Midwest","WI",73.4196504683432,87.8561491612259,102.956490429209,87.7486171197602
+"121",49,6,0,0,"All other causes","White","Male","Wisconsin",1974,"East North Central","Midwest","WI",110.168483427904,113.128984073118,116.284399109804,113.155099910912
+"122",49,6,0,0,"Cancers","White","Male","Wisconsin",1974,"East North Central","Midwest","WI",232.04257549879,237.159073205128,242.25369190815,237.173756436511
+"123",49,6,0,0,"Cardiovascular","White","Male","Wisconsin",1974,"East North Central","Midwest","WI",796.730691429488,810.076527443991,822.456564627074,809.904611399222
+"124",49,6,0,0,"Communicable","White","Male","Wisconsin",1974,"East North Central","Midwest","WI",51.9379207209995,54.7629997787488,57.9532822433296,54.8197588116386
+"125",49,6,0,0,"Injuries","White","Male","Wisconsin",1974,"East North Central","Midwest","WI",89.0343762406294,91.4261841344279,93.8721447460255,91.4449060521271
+"126",49,6,0,0,"Non-communicable","White","Male","Wisconsin",1974,"East North Central","Midwest","WI",88.7043537583107,91.5459791095633,94.4591420073975,91.5714395880916
+"127",49,6,0,1,"All other causes","White","Female","Wisconsin",1974,"East North Central","Midwest","WI",78.2735210543905,80.5124167696336,82.9768628806446,80.5377532746042
+"128",49,6,0,1,"Cancers","White","Female","Wisconsin",1974,"East North Central","Midwest","WI",155.581265308455,158.614544118976,161.747832221464,158.606691188509
+"129",49,6,0,1,"Cardiovascular","White","Female","Wisconsin",1974,"East North Central","Midwest","WI",478.958733161688,486.960004207524,494.79513458339,487.001857532861
+"130",49,6,0,1,"Communicable","White","Female","Wisconsin",1974,"East North Central","Midwest","WI",25.7347109469224,27.2008653681105,28.7947416457519,27.2180997719571
+"131",49,6,0,1,"Injuries","White","Female","Wisconsin",1974,"East North Central","Midwest","WI",35.6054419777104,36.8945903841742,38.4346440736609,36.9174884019714
+"132",49,6,0,1,"Non-communicable","White","Female","Wisconsin",1974,"East North Central","Midwest","WI",40.9192090416763,42.512272622867,44.1388061943371,42.5267746863805
+"133",49,6,1,0,"All other causes","Black","Male","Wisconsin",1974,"East North Central","Midwest","WI",154.8130345559,179.936217406771,206.635676774563,180.268341479564
+"134",49,6,1,0,"Cancers","Black","Male","Wisconsin",1974,"East North Central","Midwest","WI",306.688174775901,340.348258797057,371.879727733268,339.88144778947
+"135",49,6,1,0,"Cardiovascular","Black","Male","Wisconsin",1974,"East North Central","Midwest","WI",614.969371767354,657.788910654173,702.440963635474,658.002222948394
+"136",49,6,1,0,"Communicable","Black","Male","Wisconsin",1974,"East North Central","Midwest","WI",72.6399323936028,95.8538056801654,136.729765473174,98.5875367612927
+"137",49,6,1,0,"Injuries","Black","Male","Wisconsin",1974,"East North Central","Midwest","WI",120.008373815967,135.819324633274,153.375946789679,136.009334665563
+"138",49,6,1,0,"Non-communicable","Black","Male","Wisconsin",1974,"East North Central","Midwest","WI",95.2055623226609,110.657331148105,132.171014964022,111.514254180223
+"139",49,6,1,1,"All other causes","Black","Female","Wisconsin",1974,"East North Central","Midwest","WI",105.558605400367,124.388091468453,139.338182212867,123.741777918762
+"140",49,6,1,1,"Cancers","Black","Female","Wisconsin",1974,"East North Central","Midwest","WI",172.389667117543,189.84795316279,209.787571090502,190.112310933353
+"141",49,6,1,1,"Cardiovascular","Black","Female","Wisconsin",1974,"East North Central","Midwest","WI",485.816640739766,521.859895036246,563.987854746173,522.377100020707
+"142",49,6,1,1,"Communicable","Black","Female","Wisconsin",1974,"East North Central","Midwest","WI",31.9870769227311,38.8805888291424,48.2628874597777,39.0973548167996
+"143",49,6,1,1,"Injuries","Black","Female","Wisconsin",1974,"East North Central","Midwest","WI",37.2113346223243,44.7067959825264,51.9087630312791,44.4648336315344
+"144",49,6,1,1,"Non-communicable","Black","Female","Wisconsin",1974,"East North Central","Midwest","WI",72.8196556886137,88.1645501412258,102.750402243578,88.0932606656133
+"145",49,7,0,0,"All other causes","White","Male","Wisconsin",1975,"East North Central","Midwest","WI",107.98197342211,110.921037644305,114.092763283288,110.975790864909
+"146",49,7,0,0,"Cancers","White","Male","Wisconsin",1975,"East North Central","Midwest","WI",234.891964585646,239.545053818294,244.506182797563,239.600191480522
+"147",49,7,0,0,"Cardiovascular","White","Male","Wisconsin",1975,"East North Central","Midwest","WI",748.407027547134,761.289709107072,774.268795845386,761.231918894575
+"148",49,7,0,0,"Communicable","White","Male","Wisconsin",1975,"East North Central","Midwest","WI",51.5060969857334,54.6991200363505,57.9639691452566,54.6795161437681
+"149",49,7,0,0,"Injuries","White","Male","Wisconsin",1975,"East North Central","Midwest","WI",86.8323127043826,89.0662973940957,91.5274677776523,89.1160635543664
+"150",49,7,0,0,"Non-communicable","White","Male","Wisconsin",1975,"East North Central","Midwest","WI",87.6342637724455,90.394350127211,93.3187876680449,90.4330696245728
+"151",49,7,0,1,"All other causes","White","Female","Wisconsin",1975,"East North Central","Midwest","WI",75.8954392549206,78.1184673643285,80.4504347135338,78.1114789255587
+"152",49,7,0,1,"Cancers","White","Female","Wisconsin",1975,"East North Central","Midwest","WI",154.772585643725,157.974293544572,160.865935929616,157.976103042196
+"153",49,7,0,1,"Cardiovascular","White","Female","Wisconsin",1975,"East North Central","Midwest","WI",455.473140573951,463.074882697623,471.637342885888,463.206567475009
+"154",49,7,0,1,"Communicable","White","Female","Wisconsin",1975,"East North Central","Midwest","WI",26.6231815230005,28.1574371101943,29.7459683769455,28.1767788324276
+"155",49,7,0,1,"Injuries","White","Female","Wisconsin",1975,"East North Central","Midwest","WI",34.4639669197539,35.7992199808415,37.2740908948968,35.8220643763787
+"156",49,7,0,1,"Non-communicable","White","Female","Wisconsin",1975,"East North Central","Midwest","WI",39.761383187597,41.3232288531635,42.9113007750165,41.3259756344721
+"157",49,7,1,0,"All other causes","Black","Male","Wisconsin",1975,"East North Central","Midwest","WI",152.669373051706,177.132692489553,204.776813266869,178.143539635271
+"158",49,7,1,0,"Cancers","Black","Male","Wisconsin",1975,"East North Central","Midwest","WI",311.640659846848,345.471370232919,378.701362876438,345.615395601208
+"159",49,7,1,0,"Cardiovascular","Black","Male","Wisconsin",1975,"East North Central","Midwest","WI",610.288066014584,654.260031783871,696.98026224928,653.904448032128
+"160",49,7,1,0,"Communicable","Black","Male","Wisconsin",1975,"East North Central","Midwest","WI",70.4492743719516,92.5443691996303,132.783430348259,95.4299467481195
+"161",49,7,1,0,"Injuries","Black","Male","Wisconsin",1975,"East North Central","Midwest","WI",118.129166767837,132.635112700209,149.556557762176,132.992479933198
+"162",49,7,1,0,"Non-communicable","Black","Male","Wisconsin",1975,"East North Central","Midwest","WI",95.8463222079193,111.49033731469,132.472708984714,112.16730574
+"163",49,7,1,1,"All other causes","Black","Female","Wisconsin",1975,"East North Central","Midwest","WI",106.487795086511,124.733112983702,139.659090169279,124.196922805484
+"164",49,7,1,1,"Cancers","Black","Female","Wisconsin",1975,"East North Central","Midwest","WI",173.182510102963,190.157612622413,209.927340262027,190.462869710467
+"165",49,7,1,1,"Cardiovascular","Black","Female","Wisconsin",1975,"East North Central","Midwest","WI",481.906652484235,516.002562053992,554.671185016315,516.822986624575
+"166",49,7,1,1,"Communicable","Black","Female","Wisconsin",1975,"East North Central","Midwest","WI",32.0835837342928,38.7670150886975,47.8140658203595,38.9533023055411
+"167",49,7,1,1,"Injuries","Black","Female","Wisconsin",1975,"East North Central","Midwest","WI",37.1202828777617,44.2061128935605,51.5275137595557,44.0271628621119
+"168",49,7,1,1,"Non-communicable","Black","Female","Wisconsin",1975,"East North Central","Midwest","WI",72.9137430389767,88.3482390394642,101.755014371293,88.2524983076647
+"169",49,8,0,0,"All other causes","White","Male","Wisconsin",1976,"East North Central","Midwest","WI",105.901327389549,108.85157920489,111.847226133402,108.833449963453
+"170",49,8,0,0,"Cancers","White","Male","Wisconsin",1976,"East North Central","Midwest","WI",234.856093946557,239.849685185442,244.824934608945,239.831736401923
+"171",49,8,0,0,"Cardiovascular","White","Male","Wisconsin",1976,"East North Central","Midwest","WI",731.117500528981,742.684743456991,754.305482106726,742.70145106613
+"172",49,8,0,0,"Communicable","White","Male","Wisconsin",1976,"East North Central","Midwest","WI",51.1458125137947,54.2435635109856,57.5107817108536,54.2110296781015
+"173",49,8,0,0,"Injuries","White","Male","Wisconsin",1976,"East North Central","Midwest","WI",85.1628201610616,87.35920347427,89.8007104638505,87.4337082058144
+"174",49,8,0,0,"Non-communicable","White","Male","Wisconsin",1976,"East North Central","Midwest","WI",86.7084836143299,89.3979004859985,92.2090362876641,89.3889982352206
+"175",49,8,0,1,"All other causes","White","Female","Wisconsin",1976,"East North Central","Midwest","WI",75.0793767139071,77.2308919857138,79.4001253793491,77.2171034614006
+"176",49,8,0,1,"Cancers","White","Female","Wisconsin",1976,"East North Central","Midwest","WI",156.476785722433,159.499718778176,162.481742765728,159.462755801812
+"177",49,8,0,1,"Cardiovascular","White","Female","Wisconsin",1976,"East North Central","Midwest","WI",446.637689697433,454.149048500191,461.898233658699,454.091402686109
+"178",49,8,0,1,"Communicable","White","Female","Wisconsin",1976,"East North Central","Midwest","WI",28.6642134875738,30.283905608931,32.0213376577649,30.3108357444959
+"179",49,8,0,1,"Injuries","White","Female","Wisconsin",1976,"East North Central","Midwest","WI",33.390693533192,34.7042678873504,36.0723173499949,34.712273149629
+"180",49,8,0,1,"Non-communicable","White","Female","Wisconsin",1976,"East North Central","Midwest","WI",39.1153885973939,40.6913986609258,42.2605242213229,40.6785492995476
+"181",49,8,1,0,"All other causes","Black","Male","Wisconsin",1976,"East North Central","Midwest","WI",151.435456046821,176.161102221453,203.14963168299,176.865736639999
+"182",49,8,1,0,"Cancers","Black","Male","Wisconsin",1976,"East North Central","Midwest","WI",319.516100774179,351.113308429475,383.183418172251,351.363487818893
+"183",49,8,1,0,"Cardiovascular","Black","Male","Wisconsin",1976,"East North Central","Midwest","WI",611.537124175595,655.173299603763,697.653701330573,654.820775463238
+"184",49,8,1,0,"Communicable","Black","Male","Wisconsin",1976,"East North Central","Midwest","WI",69.1728357574473,89.6749735702414,127.647278921554,92.4325110653312
+"185",49,8,1,0,"Injuries","Black","Male","Wisconsin",1976,"East North Central","Midwest","WI",114.623424266886,128.170747714799,143.952397927948,128.473047267087
+"186",49,8,1,0,"Non-communicable","Black","Male","Wisconsin",1976,"East North Central","Midwest","WI",96.4714564671014,111.976125756067,132.440702413882,112.45835246459
+"187",49,8,1,1,"All other causes","Black","Female","Wisconsin",1976,"East North Central","Midwest","WI",108.081546544944,125.169964970888,141.231427106446,125.048916414283
+"188",49,8,1,1,"Cancers","Black","Female","Wisconsin",1976,"East North Central","Midwest","WI",174.486025332337,190.405508931131,207.932228246001,190.774466664276
+"189",49,8,1,1,"Cardiovascular","Black","Female","Wisconsin",1976,"East North Central","Midwest","WI",474.58339620322,508.9006882058,548.589015085805,510.02550542458
+"190",49,8,1,1,"Communicable","Black","Female","Wisconsin",1976,"East North Central","Midwest","WI",32.1770301300803,38.4238957244275,47.0556361320151,38.727849777407
+"191",49,8,1,1,"Injuries","Black","Female","Wisconsin",1976,"East North Central","Midwest","WI",37.0378638037487,43.7947193926527,50.885603500813,43.6433425708012
+"192",49,8,1,1,"Non-communicable","Black","Female","Wisconsin",1976,"East North Central","Midwest","WI",73.1823814887511,88.8262039965651,102.959993478476,88.7127841494784
+"193",49,9,0,0,"All other causes","White","Male","Wisconsin",1977,"East North Central","Midwest","WI",103.801070471494,106.719692621394,109.555389608947,106.722163800297
+"194",49,9,0,0,"Cancers","White","Male","Wisconsin",1977,"East North Central","Midwest","WI",239.736374926943,244.546447156163,249.530284075793,244.548081884995
+"195",49,9,0,0,"Cardiovascular","White","Male","Wisconsin",1977,"East North Central","Midwest","WI",701.683673796443,712.676290417062,725.129432840501,712.831055672942
+"196",49,9,0,0,"Communicable","White","Male","Wisconsin",1977,"East North Central","Midwest","WI",45.9455105902141,48.9016504332244,51.9525175142411,48.9314369645281
+"197",49,9,0,0,"Injuries","White","Male","Wisconsin",1977,"East North Central","Midwest","WI",83.5807025082793,85.8463306771773,88.1719087632425,85.8652063241233
+"198",49,9,0,0,"Non-communicable","White","Male","Wisconsin",1977,"East North Central","Midwest","WI",83.545303201436,86.3333599598002,89.1054595790198,86.3337039707448
+"199",49,9,0,1,"All other causes","White","Female","Wisconsin",1977,"East North Central","Midwest","WI",74.2702489628154,76.2800553931129,78.4761751149406,76.2988539965793
+"200",49,9,0,1,"Cancers","White","Female","Wisconsin",1977,"East North Central","Midwest","WI",156.293862185439,159.321802444885,162.228557047644,159.298004454715
+"201",49,9,0,1,"Cardiovascular","White","Female","Wisconsin",1977,"East North Central","Midwest","WI",426.482638389594,433.684852038811,440.613941779298,433.791151899408
+"202",49,9,0,1,"Communicable","White","Female","Wisconsin",1977,"East North Central","Midwest","WI",26.4366312820341,27.8582174978593,29.3825736025379,27.868521453337
+"203",49,9,0,1,"Injuries","White","Female","Wisconsin",1977,"East North Central","Midwest","WI",32.0762443783015,33.2853613835441,34.5984728878668,33.2835141096671
+"204",49,9,0,1,"Non-communicable","White","Female","Wisconsin",1977,"East North Central","Midwest","WI",38.8948685596791,40.4947120418754,42.034156839765,40.4883428056646
+"205",49,9,1,0,"All other causes","Black","Male","Wisconsin",1977,"East North Central","Midwest","WI",151.960415498661,176.179651544157,202.593144814822,176.441300931418
+"206",49,9,1,0,"Cancers","Black","Male","Wisconsin",1977,"East North Central","Midwest","WI",325.501498951724,356.130039739642,387.801134062446,356.440656162786
+"207",49,9,1,0,"Cardiovascular","Black","Male","Wisconsin",1977,"East North Central","Midwest","WI",608.520783649548,648.874925475159,690.260569610709,649.227101435679
+"208",49,9,1,0,"Communicable","Black","Male","Wisconsin",1977,"East North Central","Midwest","WI",68.6673990004506,87.9703190761149,122.325401139187,90.6559868330935
+"209",49,9,1,0,"Injuries","Black","Male","Wisconsin",1977,"East North Central","Midwest","WI",110.445524083192,124.240575862356,139.056120321773,124.35046175274
+"210",49,9,1,0,"Non-communicable","Black","Male","Wisconsin",1977,"East North Central","Midwest","WI",96.7336012172426,111.958745896232,131.493158733017,112.599690132146
+"211",49,9,1,1,"All other causes","Black","Female","Wisconsin",1977,"East North Central","Midwest","WI",107.647138391218,124.48118767399,139.904377633692,124.23099292711
+"212",49,9,1,1,"Cancers","Black","Female","Wisconsin",1977,"East North Central","Midwest","WI",175.627288875827,190.885335443814,207.061119019789,191.144967922638
+"213",49,9,1,1,"Cardiovascular","Black","Female","Wisconsin",1977,"East North Central","Midwest","WI",467.60371594301,503.2480884981,542.824391980222,503.679063072483
+"214",49,9,1,1,"Communicable","Black","Female","Wisconsin",1977,"East North Central","Midwest","WI",32.1817799127288,37.9682841198495,46.3120954860357,38.3316514266225
+"215",49,9,1,1,"Injuries","Black","Female","Wisconsin",1977,"East North Central","Midwest","WI",36.8329768372267,43.4869080660991,50.1012668931293,43.2780356401606
+"216",49,9,1,1,"Non-communicable","Black","Female","Wisconsin",1977,"East North Central","Midwest","WI",74.0560758955772,89.1851292219583,102.698149266147,88.9019165792307
+"217",49,10,0,0,"All other causes","White","Male","Wisconsin",1978,"East North Central","Midwest","WI",102.222025002766,105.046446235067,107.980495229497,105.083407182063
+"218",49,10,0,0,"Cancers","White","Male","Wisconsin",1978,"East North Central","Midwest","WI",242.554659687019,247.493069869662,252.573999888264,247.589206438053
+"219",49,10,0,0,"Cardiovascular","White","Male","Wisconsin",1978,"East North Central","Midwest","WI",693.71524273436,704.94710902858,717.952979628065,705.044657181211
+"220",49,10,0,0,"Communicable","White","Male","Wisconsin",1978,"East North Central","Midwest","WI",47.9705154123979,51.0237141099219,54.0214031161131,50.9808382379613
+"221",49,10,0,0,"Injuries","White","Male","Wisconsin",1978,"East North Central","Midwest","WI",83.1204229505234,85.4867804396228,87.9003263654448,85.4767707290233
+"222",49,10,0,0,"Non-communicable","White","Male","Wisconsin",1978,"East North Central","Midwest","WI",84.7093777131951,87.3756414470226,90.2484069401539,87.3920073756983
+"223",49,10,0,1,"All other causes","White","Female","Wisconsin",1978,"East North Central","Midwest","WI",72.9282306247494,75.0854364632214,77.2117800707172,75.0625951798428
+"224",49,10,0,1,"Cancers","White","Female","Wisconsin",1978,"East North Central","Midwest","WI",156.024892988838,158.805096630084,161.586430593893,158.822569966272
+"225",49,10,0,1,"Cardiovascular","White","Female","Wisconsin",1978,"East North Central","Midwest","WI",419.582261084821,426.833767832209,434.313767101992,426.89460780221
+"226",49,10,0,1,"Communicable","White","Female","Wisconsin",1978,"East North Central","Midwest","WI",26.2469311392263,27.8284403378782,29.4121866963014,27.8231752335363
+"227",49,10,0,1,"Injuries","White","Female","Wisconsin",1978,"East North Central","Midwest","WI",31.1298566665001,32.295831916554,33.5227619905683,32.3152530729955
+"228",49,10,0,1,"Non-communicable","White","Female","Wisconsin",1978,"East North Central","Midwest","WI",39.4060472611374,40.9227466457091,42.5735433849084,40.9625029764898
+"229",49,10,1,0,"All other causes","Black","Male","Wisconsin",1978,"East North Central","Midwest","WI",152.764678045103,175.99693457855,201.92397194365,175.994392058582
+"230",49,10,1,0,"Cancers","Black","Male","Wisconsin",1978,"East North Central","Midwest","WI",330.990592493063,361.302598278144,390.903919377524,361.488230892454
+"231",49,10,1,0,"Cardiovascular","Black","Male","Wisconsin",1978,"East North Central","Midwest","WI",603.555998230326,643.604644922463,688.482883473446,643.743478925808
+"232",49,10,1,0,"Communicable","Black","Male","Wisconsin",1978,"East North Central","Midwest","WI",67.3590374362006,86.7784343561476,119.144008173137,88.5990735852121
+"233",49,10,1,0,"Injuries","Black","Male","Wisconsin",1978,"East North Central","Midwest","WI",106.74022204249,120.342769106225,134.205765642479,120.338765620969
+"234",49,10,1,0,"Non-communicable","Black","Male","Wisconsin",1978,"East North Central","Midwest","WI",96.4627935860627,112.585563825127,131.881757838142,113.063217893246
+"235",49,10,1,1,"All other causes","Black","Female","Wisconsin",1978,"East North Central","Midwest","WI",108.937785381438,124.60673125973,139.695846631979,124.336183876541
+"236",49,10,1,1,"Cancers","Black","Female","Wisconsin",1978,"East North Central","Midwest","WI",176.925768944084,191.676865642122,207.008624187308,191.604223676859
+"237",49,10,1,1,"Cardiovascular","Black","Female","Wisconsin",1978,"East North Central","Midwest","WI",460.476874810233,497.632050658177,535.798849719977,497.669612974452
+"238",49,10,1,1,"Communicable","Black","Female","Wisconsin",1978,"East North Central","Midwest","WI",31.6452936459298,37.7025359966587,45.6744454496074,37.8840710032467
+"239",49,10,1,1,"Injuries","Black","Female","Wisconsin",1978,"East North Central","Midwest","WI",36.7356400762115,42.9473828571961,49.3744968225807,42.8166518569109
+"240",49,10,1,1,"Non-communicable","Black","Female","Wisconsin",1978,"East North Central","Midwest","WI",74.3780689933073,89.4429178628305,103.723050302423,89.3049295082423
+"241",49,11,0,0,"All other causes","White","Male","Wisconsin",1979,"East North Central","Midwest","WI",101.00159910101,103.839443157421,106.808202129569,103.841576763275
+"242",49,11,0,0,"Cancers","White","Male","Wisconsin",1979,"East North Central","Midwest","WI",244.047136924841,248.883573132824,253.899398609103,248.951079225577
+"243",49,11,0,0,"Cardiovascular","White","Male","Wisconsin",1979,"East North Central","Midwest","WI",666.662168808256,678.248741866517,689.595627493544,678.23795363006
+"244",49,11,0,0,"Communicable","White","Male","Wisconsin",1979,"East North Central","Midwest","WI",42.4002857051319,45.1035099366045,48.0160155734283,45.1353063756644
+"245",49,11,0,0,"Injuries","White","Male","Wisconsin",1979,"East North Central","Midwest","WI",82.3377735352349,84.7194422640048,86.9205504495654,84.6747470119708
+"246",49,11,0,0,"Non-communicable","White","Male","Wisconsin",1979,"East North Central","Midwest","WI",85.1039728424027,87.8065979181544,90.6568574803646,87.8102928843248
+"247",49,11,0,1,"All other causes","White","Female","Wisconsin",1979,"East North Central","Midwest","WI",71.9163568839094,74.0692785986701,76.275752107332,74.0481182192511
+"248",49,11,0,1,"Cancers","White","Female","Wisconsin",1979,"East North Central","Midwest","WI",155.853455431459,158.652865514758,161.484393255861,158.688282800648
+"249",49,11,0,1,"Cardiovascular","White","Female","Wisconsin",1979,"East North Central","Midwest","WI",403.825196567535,410.833274947134,417.66035820245,410.844926338884
+"250",49,11,0,1,"Communicable","White","Female","Wisconsin",1979,"East North Central","Midwest","WI",22.9999582213248,24.4417137998605,25.8402796138546,24.4218533875298
+"251",49,11,0,1,"Injuries","White","Female","Wisconsin",1979,"East North Central","Midwest","WI",29.9925108008641,31.0382817712549,32.2351729946807,31.0696047661913
+"252",49,11,0,1,"Non-communicable","White","Female","Wisconsin",1979,"East North Central","Midwest","WI",39.1633827751754,40.7938851410132,42.2171233393562,40.7533096900721
+"253",49,11,1,0,"All other causes","Black","Male","Wisconsin",1979,"East North Central","Midwest","WI",154.687199433149,175.788048494668,201.027180598288,176.489947019395
+"254",49,11,1,0,"Cancers","Black","Male","Wisconsin",1979,"East North Central","Midwest","WI",337.940145878959,365.905023187282,395.435093928642,365.716738664086
+"255",49,11,1,0,"Cardiovascular","Black","Male","Wisconsin",1979,"East North Central","Midwest","WI",596.07969414391,634.929089857558,679.629188228348,635.983191552239
+"256",49,11,1,0,"Communicable","Black","Male","Wisconsin",1979,"East North Central","Midwest","WI",65.5136148322761,84.4556199132168,112.68257791653,85.6330444682717
+"257",49,11,1,0,"Injuries","Black","Male","Wisconsin",1979,"East North Central","Midwest","WI",104.755419326906,117.80120305989,131.369621808641,117.901688095582
+"258",49,11,1,0,"Non-communicable","Black","Male","Wisconsin",1979,"East North Central","Midwest","WI",97.1906368499903,112.865167519331,131.771381737339,113.282775295155
+"259",49,11,1,1,"All other causes","Black","Female","Wisconsin",1979,"East North Central","Midwest","WI",110.571954632248,125.7996974117,141.426538785019,125.743612522333
+"260",49,11,1,1,"Cancers","Black","Female","Wisconsin",1979,"East North Central","Midwest","WI",178.199800668201,192.646989653124,208.525301523473,192.807952981461
+"261",49,11,1,1,"Cardiovascular","Black","Female","Wisconsin",1979,"East North Central","Midwest","WI",458.239788365883,492.573549060172,530.385553601509,492.411378311602
+"262",49,11,1,1,"Communicable","Black","Female","Wisconsin",1979,"East North Central","Midwest","WI",31.4595332618928,37.4219582485978,45.9585006701167,37.8189513626453
+"263",49,11,1,1,"Injuries","Black","Female","Wisconsin",1979,"East North Central","Midwest","WI",36.5832915664549,42.4093375434739,48.5278298749399,42.4230700169302
+"264",49,11,1,1,"Non-communicable","Black","Female","Wisconsin",1979,"East North Central","Midwest","WI",75.2398172004813,89.5561537663213,103.409439751239,89.5392325093127
+"265",49,12,0,0,"All other causes","White","Male","Wisconsin",1980,"East North Central","Midwest","WI",100.993175869398,103.759318414735,106.972786778835,103.824517224886
+"266",49,12,0,0,"Cancers","White","Male","Wisconsin",1980,"East North Central","Midwest","WI",248.286974093052,253.343558088352,258.65757133777,253.335476621653
+"267",49,12,0,0,"Cardiovascular","White","Male","Wisconsin",1980,"East North Central","Midwest","WI",665.297742903389,676.898561905811,688.65033250086,676.804434678849
+"268",49,12,0,0,"Communicable","White","Male","Wisconsin",1980,"East North Central","Midwest","WI",46.851325570482,49.611653427307,52.4977289880735,49.6379241719882
+"269",49,12,0,0,"Injuries","White","Male","Wisconsin",1980,"East North Central","Midwest","WI",79.0171189098311,81.2299786225436,83.4493689857807,81.2474905096895
+"270",49,12,0,0,"Non-communicable","White","Male","Wisconsin",1980,"East North Central","Midwest","WI",86.2779617664473,89.130866762483,92.0652220684113,89.1486337477348
+"271",49,12,0,1,"All other causes","White","Female","Wisconsin",1980,"East North Central","Midwest","WI",72.2371388820469,74.2993753853745,76.5370614606791,74.3044962220106
+"272",49,12,0,1,"Cancers","White","Female","Wisconsin",1980,"East North Central","Midwest","WI",157.324206612845,160.156436262188,163.149068740107,160.163450338789
+"273",49,12,0,1,"Cardiovascular","White","Female","Wisconsin",1980,"East North Central","Midwest","WI",406.293975469326,412.916891012405,420.187985728786,412.931728237743
+"274",49,12,0,1,"Communicable","White","Female","Wisconsin",1980,"East North Central","Midwest","WI",23.9464921022134,25.3730602801754,26.8253469257264,25.3789755870425
+"275",49,12,0,1,"Injuries","White","Female","Wisconsin",1980,"East North Central","Midwest","WI",29.0158843502321,30.117874716102,31.2969353394635,30.1238479146791
+"276",49,12,0,1,"Non-communicable","White","Female","Wisconsin",1980,"East North Central","Midwest","WI",40.3231282349457,41.9158831852837,43.5392707678394,41.9272167764364
+"277",49,12,1,0,"All other causes","Black","Male","Wisconsin",1980,"East North Central","Midwest","WI",155.445854084091,177.052649309598,201.575629991402,177.227382169329
+"278",49,12,1,0,"Cancers","Black","Male","Wisconsin",1980,"East North Central","Midwest","WI",338.856248694084,368.509276106964,397.213998876635,368.567389073868
+"279",49,12,1,0,"Cardiovascular","Black","Male","Wisconsin",1980,"East North Central","Midwest","WI",594.90937426656,632.360806619835,676.138578096887,633.280586382877
+"280",49,12,1,0,"Communicable","Black","Male","Wisconsin",1980,"East North Central","Midwest","WI",64.8106962979936,82.6631111678654,106.980728517748,83.4183575359629
+"281",49,12,1,0,"Injuries","Black","Male","Wisconsin",1980,"East North Central","Midwest","WI",102.256828415989,114.859876931683,127.538104303432,114.838788289844
+"282",49,12,1,0,"Non-communicable","Black","Male","Wisconsin",1980,"East North Central","Midwest","WI",99.0885742167043,113.697203741664,132.316583861529,114.325297448296
+"283",49,12,1,1,"All other causes","Black","Female","Wisconsin",1980,"East North Central","Midwest","WI",110.848274250707,126.241926028995,142.63538135902,126.090603298728
+"284",49,12,1,1,"Cancers","Black","Female","Wisconsin",1980,"East North Central","Midwest","WI",179.299505884486,193.067036335424,209.28557194605,193.372966592482
+"285",49,12,1,1,"Cardiovascular","Black","Female","Wisconsin",1980,"East North Central","Midwest","WI",454.15612169871,488.402229148824,525.510907223401,488.866253850971
+"286",49,12,1,1,"Communicable","Black","Female","Wisconsin",1980,"East North Central","Midwest","WI",31.2776476458675,37.5210282796294,46.0071861313823,37.7800999054578
+"287",49,12,1,1,"Injuries","Black","Female","Wisconsin",1980,"East North Central","Midwest","WI",35.8863851754457,42.1001161924913,48.086173606313,42.0067617205357
+"288",49,12,1,1,"Non-communicable","Black","Female","Wisconsin",1980,"East North Central","Midwest","WI",75.6589548885884,90.5274389253668,104.193546692027,90.2721692477148
+"289",49,13,0,0,"All other causes","White","Male","Wisconsin",1981,"East North Central","Midwest","WI",100.275412413118,103.159263223734,106.135520008027,103.157958393157
+"290",49,13,0,0,"Cancers","White","Male","Wisconsin",1981,"East North Central","Midwest","WI",249.622898691315,254.547156430255,259.703509588998,254.618065316886
+"291",49,13,0,0,"Cardiovascular","White","Male","Wisconsin",1981,"East North Central","Midwest","WI",638.803559862656,648.643227134091,659.248828461727,648.649218054893
+"292",49,13,0,0,"Communicable","White","Male","Wisconsin",1981,"East North Central","Midwest","WI",46.4047589239716,49.3117190949525,52.3860720640682,49.3144416233076
+"293",49,13,0,0,"Injuries","White","Male","Wisconsin",1981,"East North Central","Midwest","WI",76.6239824466068,78.7237863416131,81.1599177331944,78.7539495212861
+"294",49,13,0,0,"Non-communicable","White","Male","Wisconsin",1981,"East North Central","Midwest","WI",87.9307508070315,90.5428321348772,93.1693639478553,90.5379127478563
+"295",49,13,0,1,"All other causes","White","Female","Wisconsin",1981,"East North Central","Midwest","WI",72.1481252984337,74.2732633795692,76.4685250076352,74.3152167552221
+"296",49,13,0,1,"Cancers","White","Female","Wisconsin",1981,"East North Central","Midwest","WI",159.178465091902,162.181730112545,165.137722832645,162.204145473996
+"297",49,13,0,1,"Cardiovascular","White","Female","Wisconsin",1981,"East North Central","Midwest","WI",389.955937145722,396.377437184868,402.517420524215,396.26450386041
+"298",49,13,0,1,"Communicable","White","Female","Wisconsin",1981,"East North Central","Midwest","WI",25.3217796113505,26.7254342610466,28.2385972937056,26.734402581484
+"299",49,13,0,1,"Injuries","White","Female","Wisconsin",1981,"East North Central","Midwest","WI",27.791052339428,28.9164693114633,30.0064409471364,28.912258107445
+"300",49,13,0,1,"Non-communicable","White","Female","Wisconsin",1981,"East North Central","Midwest","WI",40.9636949678672,42.5522038764495,44.1140915895853,42.57618640432
+"301",49,13,1,0,"All other causes","Black","Male","Wisconsin",1981,"East North Central","Midwest","WI",155.018891699238,176.887265031777,200.26716279784,177.059672052412
+"302",49,13,1,0,"Cancers","Black","Male","Wisconsin",1981,"East North Central","Midwest","WI",344.459329220975,373.418019911276,402.666497725581,373.106777927348
+"303",49,13,1,0,"Cardiovascular","Black","Male","Wisconsin",1981,"East North Central","Midwest","WI",586.401933357895,622.928520168311,663.871057730006,623.203288377401
+"304",49,13,1,0,"Communicable","Black","Male","Wisconsin",1981,"East North Central","Midwest","WI",63.8203669280856,80.341982243706,104.152948823032,81.4328493022191
+"305",49,13,1,0,"Injuries","Black","Male","Wisconsin",1981,"East North Central","Midwest","WI",100.384336698071,112.535476894643,124.843590453695,112.386662099581
+"306",49,13,1,0,"Non-communicable","Black","Male","Wisconsin",1981,"East North Central","Midwest","WI",99.1521172725211,115.099334563949,132.440614598212,115.433434637396
+"307",49,13,1,1,"All other causes","Black","Female","Wisconsin",1981,"East North Central","Midwest","WI",110.011359346823,126.587570299366,142.646577901345,126.569309247511
+"308",49,13,1,1,"Cancers","Black","Female","Wisconsin",1981,"East North Central","Midwest","WI",179.926642050143,193.319975225137,208.595933119495,193.642289889147
+"309",49,13,1,1,"Cardiovascular","Black","Female","Wisconsin",1981,"East North Central","Midwest","WI",449.276194729458,480.044803153707,514.672798271081,480.296091835405
+"310",49,13,1,1,"Communicable","Black","Female","Wisconsin",1981,"East North Central","Midwest","WI",31.2289426228293,37.7094547377474,46.6320227960208,37.9996698253533
+"311",49,13,1,1,"Injuries","Black","Female","Wisconsin",1981,"East North Central","Midwest","WI",35.8815905046948,41.6482427351571,47.5262224624842,41.649039278252
+"312",49,13,1,1,"Non-communicable","Black","Female","Wisconsin",1981,"East North Central","Midwest","WI",76.2512493384181,91.1664473754097,104.319385277634,90.786408975074
+"313",49,14,0,0,"All other causes","White","Male","Wisconsin",1982,"East North Central","Midwest","WI",99.2605244617002,102.150855711468,104.851451286373,102.15930764833
+"314",49,14,0,0,"Cancers","White","Male","Wisconsin",1982,"East North Central","Midwest","WI",248.908365849591,253.968150137882,259.346507383082,254.032564974069
+"315",49,14,0,0,"Cardiovascular","White","Male","Wisconsin",1982,"East North Central","Midwest","WI",623.966787947415,634.348470819423,645.449388733106,634.458895983057
+"316",49,14,0,0,"Communicable","White","Male","Wisconsin",1982,"East North Central","Midwest","WI",45.1213308650948,48.137222377143,50.896504305956,48.1469574506162
+"317",49,14,0,0,"Injuries","White","Male","Wisconsin",1982,"East North Central","Midwest","WI",74.0992784512316,76.4558809389888,78.5283380878383,76.4104208768639
+"318",49,14,0,0,"Non-communicable","White","Male","Wisconsin",1982,"East North Central","Midwest","WI",89.0567915697805,91.8129533427544,94.7713910812436,91.8436012396161
+"319",49,14,0,1,"All other causes","White","Female","Wisconsin",1982,"East North Central","Midwest","WI",71.1530927826851,73.1275353718389,75.2292519106567,73.1798386924075
+"320",49,14,0,1,"Cancers","White","Female","Wisconsin",1982,"East North Central","Midwest","WI",161.160512991908,164.065356751903,167.152381849296,164.054921239981
+"321",49,14,0,1,"Cardiovascular","White","Female","Wisconsin",1982,"East North Central","Midwest","WI",380.367634391133,387.08801427574,393.405316417094,387.179670338509
+"322",49,14,0,1,"Communicable","White","Female","Wisconsin",1982,"East North Central","Midwest","WI",24.2252480356614,25.6144901965585,26.8981960212368,25.6059741923484
+"323",49,14,0,1,"Injuries","White","Female","Wisconsin",1982,"East North Central","Midwest","WI",26.5414711982678,27.6123906635729,28.7499579970927,27.6086609240568
+"324",49,14,0,1,"Non-communicable","White","Female","Wisconsin",1982,"East North Central","Midwest","WI",42.6076919322017,44.2321834575233,45.9359266462692,44.2315413748841
+"325",49,14,1,0,"All other causes","Black","Male","Wisconsin",1982,"East North Central","Midwest","WI",155.699864175691,177.911608115531,200.569283505475,177.79426837207
+"326",49,14,1,0,"Cancers","Black","Male","Wisconsin",1982,"East North Central","Midwest","WI",346.781830190832,376.48764109197,403.369645507156,376.178558908242
+"327",49,14,1,0,"Cardiovascular","Black","Male","Wisconsin",1982,"East North Central","Midwest","WI",579.438009682775,614.682440015503,654.846339597137,615.323182738495
+"328",49,14,1,0,"Communicable","Black","Male","Wisconsin",1982,"East North Central","Midwest","WI",62.8470814803052,78.6396187485222,100.867254470917,79.59615752335
+"329",49,14,1,0,"Injuries","Black","Male","Wisconsin",1982,"East North Central","Midwest","WI",98.4154280743168,110.799614154407,123.092940535301,110.658242709948
+"330",49,14,1,0,"Non-communicable","Black","Male","Wisconsin",1982,"East North Central","Midwest","WI",99.6397908971252,115.856639182588,134.953137563593,116.642493085453
+"331",49,14,1,1,"All other causes","Black","Female","Wisconsin",1982,"East North Central","Midwest","WI",111.088081433077,127.085459776944,143.863278768839,127.023358924082
+"332",49,14,1,1,"Cancers","Black","Female","Wisconsin",1982,"East North Central","Midwest","WI",180.356015418438,193.863872788199,209.847217639611,194.277887313033
+"333",49,14,1,1,"Cardiovascular","Black","Female","Wisconsin",1982,"East North Central","Midwest","WI",444.238899026754,476.16282455246,512.746612637004,476.506017084859
+"334",49,14,1,1,"Communicable","Black","Female","Wisconsin",1982,"East North Central","Midwest","WI",31.3750206997724,38.3104784817603,48.6148717463266,38.6153734624682
+"335",49,14,1,1,"Injuries","Black","Female","Wisconsin",1982,"East North Central","Midwest","WI",35.9719588132337,41.3541111440796,46.9543121224315,41.3501419981242
+"336",49,14,1,1,"Non-communicable","Black","Female","Wisconsin",1982,"East North Central","Midwest","WI",77.1296028165134,91.6340292965875,104.341611944507,91.4153015562865
+"337",49,15,0,0,"All other causes","White","Male","Wisconsin",1983,"East North Central","Midwest","WI",101.299311985636,104.076031010053,106.91606380748,104.089900076306
+"338",49,15,0,0,"Cancers","White","Male","Wisconsin",1983,"East North Central","Midwest","WI",249.793878151214,254.664177949639,259.77625645003,254.622008107061
+"339",49,15,0,0,"Cardiovascular","White","Male","Wisconsin",1983,"East North Central","Midwest","WI",618.676810681165,629.38468378576,640.248388252622,629.300992142496
+"340",49,15,0,0,"Communicable","White","Male","Wisconsin",1983,"East North Central","Midwest","WI",48.2440057097682,51.2612243734843,54.0611529058908,51.1784960898252
+"341",49,15,0,0,"Injuries","White","Male","Wisconsin",1983,"East North Central","Midwest","WI",72.7281418535305,74.8207360343642,77.0043002503062,74.83068276218
+"342",49,15,0,0,"Non-communicable","White","Male","Wisconsin",1983,"East North Central","Midwest","WI",91.2448898416256,94.2169708120897,97.0782909882117,94.1991140505866
+"343",49,15,0,1,"All other causes","White","Female","Wisconsin",1983,"East North Central","Midwest","WI",72.1880529238826,74.224208971282,76.2659645549429,74.222031295127
+"344",49,15,0,1,"Cancers","White","Female","Wisconsin",1983,"East North Central","Midwest","WI",160.637528229335,163.497395904233,166.684267394303,163.506141268662
+"345",49,15,0,1,"Cardiovascular","White","Female","Wisconsin",1983,"East North Central","Midwest","WI",373.080493149075,379.012161788333,385.308179602544,378.948102212059
+"346",49,15,0,1,"Communicable","White","Female","Wisconsin",1983,"East North Central","Midwest","WI",26.8151234240226,28.2430352147428,29.6936801254276,28.216039671203
+"347",49,15,0,1,"Injuries","White","Female","Wisconsin",1983,"East North Central","Midwest","WI",26.0991472231372,27.1747430861182,28.229700484844,27.1770141173112
+"348",49,15,0,1,"Non-communicable","White","Female","Wisconsin",1983,"East North Central","Midwest","WI",44.2363141797291,46.041718050227,47.7316142858308,46.0337389044301
+"349",49,15,1,0,"All other causes","Black","Male","Wisconsin",1983,"East North Central","Midwest","WI",157.003125647089,178.499877501073,201.376627853506,178.200680543997
+"350",49,15,1,0,"Cancers","Black","Male","Wisconsin",1983,"East North Central","Midwest","WI",351.670489336717,379.334359328079,405.391637426661,379.17581208746
+"351",49,15,1,0,"Cardiovascular","Black","Male","Wisconsin",1983,"East North Central","Midwest","WI",566.10134051425,603.86767178831,641.413132015796,604.123575817616
+"352",49,15,1,0,"Communicable","Black","Male","Wisconsin",1983,"East North Central","Midwest","WI",61.5323529429645,76.7161210430163,99.332190153204,77.7686584475425
+"353",49,15,1,0,"Injuries","Black","Male","Wisconsin",1983,"East North Central","Midwest","WI",97.1610754857092,109.152576465807,121.520122791389,109.252048275206
+"354",49,15,1,0,"Non-communicable","Black","Male","Wisconsin",1983,"East North Central","Midwest","WI",101.035223891931,117.51565498193,136.628818722396,118.0197297152
+"355",49,15,1,1,"All other causes","Black","Female","Wisconsin",1983,"East North Central","Midwest","WI",110.384649364001,126.881205873127,143.910491045647,127.059962605336
+"356",49,15,1,1,"Cancers","Black","Female","Wisconsin",1983,"East North Central","Midwest","WI",181.487989059209,195.169917847384,210.473164204677,195.423281630256
+"357",49,15,1,1,"Cardiovascular","Black","Female","Wisconsin",1983,"East North Central","Midwest","WI",437.955530254256,468.173922866225,501.145326623643,468.701114676613
+"358",49,15,1,1,"Communicable","Black","Female","Wisconsin",1983,"East North Central","Midwest","WI",31.8839202508113,39.040092580565,49.4334363937338,39.4164245355941
+"359",49,15,1,1,"Injuries","Black","Female","Wisconsin",1983,"East North Central","Midwest","WI",35.6341818586723,41.0759050918085,46.5285379870507,41.045629477378
+"360",49,15,1,1,"Non-communicable","Black","Female","Wisconsin",1983,"East North Central","Midwest","WI",78.0971827697089,91.9371181714652,106.380811855206,91.7967986565204
+"361",49,16,0,0,"All other causes","White","Male","Wisconsin",1984,"East North Central","Midwest","WI",101.817619436311,104.75356125588,107.706747437588,104.78496233881
+"362",49,16,0,0,"Cancers","White","Male","Wisconsin",1984,"East North Central","Midwest","WI",251.900938847967,256.692569259266,261.514245130643,256.745002120483
+"363",49,16,0,0,"Cardiovascular","White","Male","Wisconsin",1984,"East North Central","Midwest","WI",604.525918847326,614.211977313478,625.440855447465,614.451680979634
+"364",49,16,0,0,"Communicable","White","Male","Wisconsin",1984,"East North Central","Midwest","WI",48.8190754343098,51.6236406437262,54.7585176321022,51.6646524823169
+"365",49,16,0,0,"Injuries","White","Male","Wisconsin",1984,"East North Central","Midwest","WI",71.6724346753003,73.7581276331642,75.9186633320086,73.7995675483926
+"366",49,16,0,0,"Non-communicable","White","Male","Wisconsin",1984,"East North Central","Midwest","WI",93.3850473762065,96.3689993007099,99.2852766735539,96.3523043609762
+"367",49,16,0,1,"All other causes","White","Female","Wisconsin",1984,"East North Central","Midwest","WI",73.2225513385794,75.2193457143169,77.4774159581756,75.2684948106249
+"368",49,16,0,1,"Cancers","White","Female","Wisconsin",1984,"East North Central","Midwest","WI",160.853408962592,163.789275914663,167.048672946137,163.873834964693
+"369",49,16,0,1,"Cardiovascular","White","Female","Wisconsin",1984,"East North Central","Midwest","WI",359.712401650271,365.902582535354,371.634941977151,365.820529131562
+"370",49,16,0,1,"Communicable","White","Female","Wisconsin",1984,"East North Central","Midwest","WI",26.7498774003396,28.1226241530847,29.4468681594497,28.1129009282279
+"371",49,16,0,1,"Injuries","White","Female","Wisconsin",1984,"East North Central","Midwest","WI",25.8540119214819,26.877527332688,27.9266499205473,26.881512452071
+"372",49,16,0,1,"Non-communicable","White","Female","Wisconsin",1984,"East North Central","Midwest","WI",46.589028864332,48.208189032466,50.0047828419905,48.2072448334678
+"373",49,16,1,0,"All other causes","Black","Male","Wisconsin",1984,"East North Central","Midwest","WI",157.468190363763,179.204535575492,202.181421844129,179.347926199356
+"374",49,16,1,0,"Cancers","Black","Male","Wisconsin",1984,"East North Central","Midwest","WI",355.224696535613,382.955460277471,409.091539424101,383.157553150603
+"375",49,16,1,0,"Cardiovascular","Black","Male","Wisconsin",1984,"East North Central","Midwest","WI",559.595407953366,595.854538934232,637.06670690634,596.333030489591
+"376",49,16,1,0,"Communicable","Black","Male","Wisconsin",1984,"East North Central","Midwest","WI",61.1280325364834,76.9208939274611,99.0182006636435,77.9511812732699
+"377",49,16,1,0,"Injuries","Black","Male","Wisconsin",1984,"East North Central","Midwest","WI",98.0169096341811,109.766926850552,122.045767709896,109.934957747495
+"378",49,16,1,0,"Non-communicable","Black","Male","Wisconsin",1984,"East North Central","Midwest","WI",102.216515746335,119.233021657467,138.380672784409,119.549748145103
+"379",49,16,1,1,"All other causes","Black","Female","Wisconsin",1984,"East North Central","Midwest","WI",110.51338065441,127.918438597845,145.041931892069,128.006729387197
+"380",49,16,1,1,"Cancers","Black","Female","Wisconsin",1984,"East North Central","Midwest","WI",181.679949521052,194.653175809843,209.300147903771,194.856784213179
+"381",49,16,1,1,"Cardiovascular","Black","Female","Wisconsin",1984,"East North Central","Midwest","WI",429.68472877405,460.553060643154,493.820810471378,460.256671403655
+"382",49,16,1,1,"Communicable","Black","Female","Wisconsin",1984,"East North Central","Midwest","WI",32.2165400272501,39.6253003876142,49.9618330131634,39.9714625135682
+"383",49,16,1,1,"Injuries","Black","Female","Wisconsin",1984,"East North Central","Midwest","WI",35.5305986801834,40.6728106200721,46.0608899378691,40.7580786016012
+"384",49,16,1,1,"Non-communicable","Black","Female","Wisconsin",1984,"East North Central","Midwest","WI",78.6889432629857,92.388745749447,106.269346282333,92.4572009432128
+"385",49,17,0,0,"All other causes","White","Male","Wisconsin",1985,"East North Central","Midwest","WI",102.649600572329,105.582877549945,108.559898193819,105.590455610226
+"386",49,17,0,0,"Cancers","White","Male","Wisconsin",1985,"East North Central","Midwest","WI",251.048170914674,256.33549227023,261.701698974734,256.239879082209
+"387",49,17,0,0,"Cardiovascular","White","Male","Wisconsin",1985,"East North Central","Midwest","WI",582.438043530079,592.594851015888,603.549251307953,592.579093558943
+"388",49,17,0,0,"Communicable","White","Male","Wisconsin",1985,"East North Central","Midwest","WI",55.3786759264611,58.5079818080063,61.6399407494859,58.4921837532108
+"389",49,17,0,0,"Injuries","White","Male","Wisconsin",1985,"East North Central","Midwest","WI",71.4601185233159,73.4712039183136,75.4724949520709,73.4394691665413
+"390",49,17,0,0,"Non-communicable","White","Male","Wisconsin",1985,"East North Central","Midwest","WI",95.1901827742628,97.9779480499768,101.157138422289,98.0340107697332
+"391",49,17,0,1,"All other causes","White","Female","Wisconsin",1985,"East North Central","Midwest","WI",75.3786883657935,77.4113566093495,79.5558623240308,77.4202269237643
+"392",49,17,0,1,"Cancers","White","Female","Wisconsin",1985,"East North Central","Midwest","WI",161.912675041778,164.836827704278,168.114510470565,164.890108355605
+"393",49,17,0,1,"Cardiovascular","White","Female","Wisconsin",1985,"East North Central","Midwest","WI",356.942078819952,363.371914806303,369.387101277937,363.368222743041
+"394",49,17,0,1,"Communicable","White","Female","Wisconsin",1985,"East North Central","Midwest","WI",30.0354786164833,31.6589372785233,33.2194950718975,31.6572766790857
+"395",49,17,0,1,"Injuries","White","Female","Wisconsin",1985,"East North Central","Midwest","WI",25.4062114369294,26.3246438270659,27.3048077304025,26.3245728396248
+"396",49,17,0,1,"Non-communicable","White","Female","Wisconsin",1985,"East North Central","Midwest","WI",48.1753576911169,50.0801581604585,51.9082709077327,50.0851508741504
+"397",49,17,1,0,"All other causes","Black","Male","Wisconsin",1985,"East North Central","Midwest","WI",158.208309420306,179.455841485273,202.182661454339,179.899888143127
+"398",49,17,1,0,"Cancers","Black","Male","Wisconsin",1985,"East North Central","Midwest","WI",358.694460292626,385.9634936869,412.382623168711,386.175503603823
+"399",49,17,1,0,"Cardiovascular","Black","Male","Wisconsin",1985,"East North Central","Midwest","WI",546.905991092255,585.649770673812,622.846398753755,585.564166891905
+"400",49,17,1,0,"Communicable","Black","Male","Wisconsin",1985,"East North Central","Midwest","WI",62.1590591866062,78.2201937005317,99.3533115453344,79.1574338074238
+"401",49,17,1,0,"Injuries","Black","Male","Wisconsin",1985,"East North Central","Midwest","WI",101.139923205564,112.365018457395,124.723279411119,112.824886499588
+"402",49,17,1,0,"Non-communicable","Black","Male","Wisconsin",1985,"East North Central","Midwest","WI",103.380645846346,120.985698426851,138.449805450913,121.112214134032
+"403",49,17,1,1,"All other causes","Black","Female","Wisconsin",1985,"East North Central","Midwest","WI",111.803860673943,129.394580910372,145.880728741743,129.108872917443
+"404",49,17,1,1,"Cancers","Black","Female","Wisconsin",1985,"East North Central","Midwest","WI",182.367839761377,194.929855379817,209.443140815474,195.122693059439
+"405",49,17,1,1,"Cardiovascular","Black","Female","Wisconsin",1985,"East North Central","Midwest","WI",424.582586311579,453.00005372511,484.746461496814,453.487885443113
+"406",49,17,1,1,"Communicable","Black","Female","Wisconsin",1985,"East North Central","Midwest","WI",32.3555773440808,40.0164749408858,50.4776857705457,40.4031007349638
+"407",49,17,1,1,"Injuries","Black","Female","Wisconsin",1985,"East North Central","Midwest","WI",35.6967528736847,40.6388064148257,45.8352563299844,40.6663137016884
+"408",49,17,1,1,"Non-communicable","Black","Female","Wisconsin",1985,"East North Central","Midwest","WI",80.2427143155395,93.6313504022142,106.315330142654,93.3989818751159
+"409",49,18,0,0,"All other causes","White","Male","Wisconsin",1986,"East North Central","Midwest","WI",104.78732930934,107.874525612816,110.988623620555,107.842398914382
+"410",49,18,0,0,"Cancers","White","Male","Wisconsin",1986,"East North Central","Midwest","WI",250.374413529123,255.360304439428,260.290521383492,255.332430777858
+"411",49,18,0,0,"Cardiovascular","White","Male","Wisconsin",1986,"East North Central","Midwest","WI",568.437800964967,578.479203631798,588.588486820261,578.392346696149
+"412",49,18,0,0,"Communicable","White","Male","Wisconsin",1986,"East North Central","Midwest","WI",58.002238324856,61.1172876130955,64.7673665080025,61.1468157719486
+"413",49,18,0,0,"Injuries","White","Male","Wisconsin",1986,"East North Central","Midwest","WI",71.4393383778301,73.6717745454575,75.7980580381738,73.6585558752893
+"414",49,18,0,0,"Non-communicable","White","Male","Wisconsin",1986,"East North Central","Midwest","WI",96.3979002867061,99.4085459927136,102.320606003432,99.4259353208067
+"415",49,18,0,1,"All other causes","White","Female","Wisconsin",1986,"East North Central","Midwest","WI",76.5179791085502,78.7170298459532,80.8060772113547,78.6932143760506
+"416",49,18,0,1,"Cancers","White","Female","Wisconsin",1986,"East North Central","Midwest","WI",162.404287478573,165.657534036255,168.56513316326,165.649881735797
+"417",49,18,0,1,"Cardiovascular","White","Female","Wisconsin",1986,"East North Central","Midwest","WI",351.171152608538,357.159733150249,362.651025944694,357.056281579073
+"418",49,18,0,1,"Communicable","White","Female","Wisconsin",1986,"East North Central","Midwest","WI",32.3471280289509,34.0453165353059,35.6446368864564,34.0115992885179
+"419",49,18,0,1,"Injuries","White","Female","Wisconsin",1986,"East North Central","Midwest","WI",25.2114066165044,26.2634211364687,27.1970866330427,26.2517592977936
+"420",49,18,0,1,"Non-communicable","White","Female","Wisconsin",1986,"East North Central","Midwest","WI",49.2244480673817,51.2026199380572,52.9179303454624,51.1654126749875
+"421",49,18,1,0,"All other causes","Black","Male","Wisconsin",1986,"East North Central","Midwest","WI",159.412598644936,180.298438812547,201.889109530032,180.690302148293
+"422",49,18,1,0,"Cancers","Black","Male","Wisconsin",1986,"East North Central","Midwest","WI",364.709267915184,389.876528697335,417.039607193182,389.899739313024
+"423",49,18,1,0,"Cardiovascular","Black","Male","Wisconsin",1986,"East North Central","Midwest","WI",536.60064520253,575.643151981025,615.554136085056,575.359973344362
+"424",49,18,1,0,"Communicable","Black","Male","Wisconsin",1986,"East North Central","Midwest","WI",63.5313656546271,81.2219176407701,103.117213174294,81.7044456362653
+"425",49,18,1,0,"Injuries","Black","Male","Wisconsin",1986,"East North Central","Midwest","WI",105.210011108624,116.631657784632,128.888570960822,116.966917049662
+"426",49,18,1,0,"Non-communicable","Black","Male","Wisconsin",1986,"East North Central","Midwest","WI",105.165258210861,122.534415022302,140.689226189377,122.804190221533
+"427",49,18,1,1,"All other causes","Black","Female","Wisconsin",1986,"East North Central","Midwest","WI",112.870971350742,130.205793652523,146.020288612967,130.278903819006
+"428",49,18,1,1,"Cancers","Black","Female","Wisconsin",1986,"East North Central","Midwest","WI",183.778736374261,195.816195013796,209.136064052767,195.905505018985
+"429",49,18,1,1,"Cardiovascular","Black","Female","Wisconsin",1986,"East North Central","Midwest","WI",416.674923268948,445.033788339434,477.3342754393,445.17197918722
+"430",49,18,1,1,"Communicable","Black","Female","Wisconsin",1986,"East North Central","Midwest","WI",32.8630725277334,40.7559469190819,50.7743284413814,40.8632469655961
+"431",49,18,1,1,"Injuries","Black","Female","Wisconsin",1986,"East North Central","Midwest","WI",35.6881456477031,40.3880002261964,45.4184818573063,40.4871866459611
+"432",49,18,1,1,"Non-communicable","Black","Female","Wisconsin",1986,"East North Central","Midwest","WI",80.3954969470126,94.4621842642809,107.151963274478,94.4483720562128
+"433",49,19,0,0,"All other causes","White","Male","Wisconsin",1987,"East North Central","Midwest","WI",106.083594143494,109.12140656975,112.021786401881,109.106512867366
+"434",49,19,0,0,"Cancers","White","Male","Wisconsin",1987,"East North Central","Midwest","WI",251.703015894996,256.993329200992,261.690828267402,256.923133740408
+"435",49,19,0,0,"Cardiovascular","White","Male","Wisconsin",1987,"East North Central","Midwest","WI",544.242350091534,553.693718602923,562.952774724746,553.836887138351
+"436",49,19,0,0,"Communicable","White","Male","Wisconsin",1987,"East North Central","Midwest","WI",57.3207563145735,60.5455355681427,64.0761557432994,60.5198485267743
+"437",49,19,0,0,"Injuries","White","Male","Wisconsin",1987,"East North Central","Midwest","WI",72.2840939914664,74.4067086671839,76.5460005477025,74.4184372715325
+"438",49,19,0,0,"Non-communicable","White","Male","Wisconsin",1987,"East North Central","Midwest","WI",99.5011513344729,102.565690077126,105.635476654573,102.549906141384
+"439",49,19,0,1,"All other causes","White","Female","Wisconsin",1987,"East North Central","Midwest","WI",77.6054426231516,79.887841785355,82.0884899257748,79.8588265884741
+"440",49,19,0,1,"Cancers","White","Female","Wisconsin",1987,"East North Central","Midwest","WI",162.786326929195,165.625859880411,168.457210720598,165.627422039432
+"441",49,19,0,1,"Cardiovascular","White","Female","Wisconsin",1987,"East North Central","Midwest","WI",338.710772872908,344.400124325082,350.638681542545,344.384302062461
+"442",49,19,0,1,"Communicable","White","Female","Wisconsin",1987,"East North Central","Midwest","WI",32.5984336466022,34.3348956665644,35.8093209959157,34.2947080948267
+"443",49,19,0,1,"Injuries","White","Female","Wisconsin",1987,"East North Central","Midwest","WI",25.6003770803835,26.6347707012767,27.6882134541544,26.6326772611689
+"444",49,19,0,1,"Non-communicable","White","Female","Wisconsin",1987,"East North Central","Midwest","WI",52.4252749563376,54.2784757738842,56.1263068096782,54.244590722818
+"445",49,19,1,0,"All other causes","Black","Male","Wisconsin",1987,"East North Central","Midwest","WI",160.518629176708,181.772745831678,204.514520935156,181.644384693173
+"446",49,19,1,0,"Cancers","Black","Male","Wisconsin",1987,"East North Central","Midwest","WI",366.560977761115,389.353090479051,416.124309599676,389.70818232582
+"447",49,19,1,0,"Cardiovascular","Black","Male","Wisconsin",1987,"East North Central","Midwest","WI",531.308641053146,567.502811001512,605.78348211763,568.109957441888
+"448",49,19,1,0,"Communicable","Black","Male","Wisconsin",1987,"East North Central","Midwest","WI",65.2696993770273,83.5268677630513,106.851823682403,84.0678830325256
+"449",49,19,1,0,"Injuries","Black","Male","Wisconsin",1987,"East North Central","Midwest","WI",110.091164340368,121.013308160831,133.493383446997,121.128397490473
+"450",49,19,1,0,"Non-communicable","Black","Male","Wisconsin",1987,"East North Central","Midwest","WI",106.59215138696,124.598915116817,143.258338267423,124.662205204819
+"451",49,19,1,1,"All other causes","Black","Female","Wisconsin",1987,"East North Central","Midwest","WI",113.358517756002,130.514782652779,146.345174749788,130.516308936528
+"452",49,19,1,1,"Cancers","Black","Female","Wisconsin",1987,"East North Central","Midwest","WI",184.464253913542,197.643719036792,211.227516190489,197.582785365321
+"453",49,19,1,1,"Cardiovascular","Black","Female","Wisconsin",1987,"East North Central","Midwest","WI",413.327333101715,439.496941795765,470.221401093677,440.175892014889
+"454",49,19,1,1,"Communicable","Black","Female","Wisconsin",1987,"East North Central","Midwest","WI",33.0125447574686,40.8672198039235,50.9054644844764,41.0911607421617
+"455",49,19,1,1,"Injuries","Black","Female","Wisconsin",1987,"East North Central","Midwest","WI",35.5591849412288,40.3172425027887,45.4594424364543,40.4165052233263
+"456",49,19,1,1,"Non-communicable","Black","Female","Wisconsin",1987,"East North Central","Midwest","WI",81.0586612505889,95.8712292128855,107.699721089284,95.7377334983554
+"457",49,20,0,0,"All other causes","White","Male","Wisconsin",1988,"East North Central","Midwest","WI",106.250595989236,109.174374912322,112.196441065843,109.233685061289
+"458",49,20,0,0,"Cancers","White","Male","Wisconsin",1988,"East North Central","Midwest","WI",256.305451795295,261.266825505046,266.543630655541,261.303908442597
+"459",49,20,0,0,"Cardiovascular","White","Male","Wisconsin",1988,"East North Central","Midwest","WI",535.681310703116,545.015977492096,554.257134434568,545.098761193763
+"460",49,20,0,0,"Communicable","White","Male","Wisconsin",1988,"East North Central","Midwest","WI",62.5200991455655,65.5845386005981,69.1242351304582,65.6417095704083
+"461",49,20,0,0,"Injuries","White","Male","Wisconsin",1988,"East North Central","Midwest","WI",72.1467000903744,74.2666268159241,76.276820634654,74.2220745566172
+"462",49,20,0,0,"Non-communicable","White","Male","Wisconsin",1988,"East North Central","Midwest","WI",101.905863587601,104.955564597731,108.355216053404,105.035937906009
+"463",49,20,0,1,"All other causes","White","Female","Wisconsin",1988,"East North Central","Midwest","WI",79.9943460655465,82.1550421522689,84.5031758421727,82.1509745151982
+"464",49,20,0,1,"Cancers","White","Female","Wisconsin",1988,"East North Central","Midwest","WI",163.385889293271,166.238557269141,169.175807811622,166.254312090855
+"465",49,20,0,1,"Cardiovascular","White","Female","Wisconsin",1988,"East North Central","Midwest","WI",328.985172319435,334.97949204837,340.526357965212,334.983871660681
+"466",49,20,0,1,"Communicable","White","Female","Wisconsin",1988,"East North Central","Midwest","WI",36.0253166301033,37.7173841653095,39.5560035736007,37.7592780512728
+"467",49,20,0,1,"Injuries","White","Female","Wisconsin",1988,"East North Central","Midwest","WI",25.9023499316404,26.8844875438399,27.9560480654757,26.8833223895089
+"468",49,20,0,1,"Non-communicable","White","Female","Wisconsin",1988,"East North Central","Midwest","WI",56.492261944915,58.2961503355592,60.0837699949002,58.2437555835621
+"469",49,20,1,0,"All other causes","Black","Male","Wisconsin",1988,"East North Central","Midwest","WI",159.791569258263,181.877788459444,203.757494372622,182.123150341259
+"470",49,20,1,0,"Cancers","Black","Male","Wisconsin",1988,"East North Central","Midwest","WI",366.128363004899,389.404568467394,415.609675195971,389.726718520903
+"471",49,20,1,0,"Cardiovascular","Black","Male","Wisconsin",1988,"East North Central","Midwest","WI",520.302789290652,555.119751542184,591.274539895056,555.614765773302
+"472",49,20,1,0,"Communicable","Black","Male","Wisconsin",1988,"East North Central","Midwest","WI",65.8110891095071,84.7231218012246,110.886917149078,85.8297232460557
+"473",49,20,1,0,"Injuries","Black","Male","Wisconsin",1988,"East North Central","Midwest","WI",113.966657821511,125.367643161569,138.019069176575,125.474593289883
+"474",49,20,1,0,"Non-communicable","Black","Male","Wisconsin",1988,"East North Central","Midwest","WI",109.53762345552,127.269942047211,146.318993207709,127.407614869352
+"475",49,20,1,1,"All other causes","Black","Female","Wisconsin",1988,"East North Central","Midwest","WI",115.035115199669,131.424320559876,146.497603622211,131.473664228365
+"476",49,20,1,1,"Cancers","Black","Female","Wisconsin",1988,"East North Central","Midwest","WI",185.890309336511,198.215844441068,211.549874216576,198.121029229724
+"477",49,20,1,1,"Cardiovascular","Black","Female","Wisconsin",1988,"East North Central","Midwest","WI",403.606407625623,430.254134706193,457.685544556805,430.240671612316
+"478",49,20,1,1,"Communicable","Black","Female","Wisconsin",1988,"East North Central","Midwest","WI",33.0520892884632,41.2897830594144,50.3159514846996,41.3293864245511
+"479",49,20,1,1,"Injuries","Black","Female","Wisconsin",1988,"East North Central","Midwest","WI",35.3842302593204,40.2135822387283,45.0078949082841,40.233221238371
+"480",49,20,1,1,"Non-communicable","Black","Female","Wisconsin",1988,"East North Central","Midwest","WI",83.6999371109972,97.5283824718598,108.808653143802,97.2362491589525
+"481",49,21,0,0,"All other causes","White","Male","Wisconsin",1989,"East North Central","Midwest","WI",106.114552694232,109.03480271985,111.966152036804,109.028404209139
+"482",49,21,0,0,"Cancers","White","Male","Wisconsin",1989,"East North Central","Midwest","WI",257.077928398182,262.257343503707,267.376234117288,262.281108112019
+"483",49,21,0,0,"Cardiovascular","White","Male","Wisconsin",1989,"East North Central","Midwest","WI",502.621120720509,512.039568058648,521.066971106826,511.982479482059
+"484",49,21,0,0,"Communicable","White","Male","Wisconsin",1989,"East North Central","Midwest","WI",57.6488097012915,60.5413779245348,63.8877848286202,60.6227856164364
+"485",49,21,0,0,"Injuries","White","Male","Wisconsin",1989,"East North Central","Midwest","WI",70.9801902785499,72.9694761462958,75.0727811856582,72.9668747176083
+"486",49,21,0,0,"Non-communicable","White","Male","Wisconsin",1989,"East North Central","Midwest","WI",103.931113682256,107.131039115908,110.623298404633,107.170596033345
+"487",49,21,0,1,"All other causes","White","Female","Wisconsin",1989,"East North Central","Midwest","WI",81.0654604538938,83.2123799365603,85.3941544924934,83.1892198329244
+"488",49,21,0,1,"Cancers","White","Female","Wisconsin",1989,"East North Central","Midwest","WI",164.239046563987,167.042421017112,170.122652395822,167.078152661461
+"489",49,21,0,1,"Cardiovascular","White","Female","Wisconsin",1989,"East North Central","Midwest","WI",316.516272807162,321.849529353337,327.213196226347,321.856352905635
+"490",49,21,0,1,"Communicable","White","Female","Wisconsin",1989,"East North Central","Midwest","WI",36.2434126771173,37.8977622076313,39.5882314373543,37.9159778603547
+"491",49,21,0,1,"Injuries","White","Female","Wisconsin",1989,"East North Central","Midwest","WI",26.0418182885513,26.9743341209241,27.9774431589572,26.9930953414804
+"492",49,21,0,1,"Non-communicable","White","Female","Wisconsin",1989,"East North Central","Midwest","WI",58.7682716207768,60.6738406875678,62.8151346734761,60.6852979726703
+"493",49,21,1,0,"All other causes","Black","Male","Wisconsin",1989,"East North Central","Midwest","WI",160.249087533533,182.675535016483,202.096020484403,182.63514355173
+"494",49,21,1,0,"Cancers","Black","Male","Wisconsin",1989,"East North Central","Midwest","WI",364.958732676609,389.145392980232,415.870041204448,389.315471817955
+"495",49,21,1,0,"Cardiovascular","Black","Male","Wisconsin",1989,"East North Central","Midwest","WI",508.613246321523,541.022084721589,574.747998345662,540.979913472583
+"496",49,21,1,0,"Communicable","Black","Male","Wisconsin",1989,"East North Central","Midwest","WI",66.9401782405041,86.2196361354825,114.432132185299,87.424185467996
+"497",49,21,1,0,"Injuries","Black","Male","Wisconsin",1989,"East North Central","Midwest","WI",119.969801368763,131.188014001697,143.955838227002,131.317251898119
+"498",49,21,1,0,"Non-communicable","Black","Male","Wisconsin",1989,"East North Central","Midwest","WI",112.588824934763,129.933031556604,148.836949013988,130.113260774812
+"499",49,21,1,1,"All other causes","Black","Female","Wisconsin",1989,"East North Central","Midwest","WI",116.862591818455,132.667508416397,147.836745662959,132.588111088788
+"500",49,21,1,1,"Cancers","Black","Female","Wisconsin",1989,"East North Central","Midwest","WI",187.091039583514,199.884157578037,212.803142663528,199.849886812602
+"501",49,21,1,1,"Cardiovascular","Black","Female","Wisconsin",1989,"East North Central","Midwest","WI",392.026813293881,418.008824916911,447.689254758598,418.807255683908
+"502",49,21,1,1,"Communicable","Black","Female","Wisconsin",1989,"East North Central","Midwest","WI",33.6726999235241,41.1906535240887,51.2681649144158,41.5836339799047
+"503",49,21,1,1,"Injuries","Black","Female","Wisconsin",1989,"East North Central","Midwest","WI",35.5292507153116,40.00114518447,44.7338780375709,40.0465187572562
+"504",49,21,1,1,"Non-communicable","Black","Female","Wisconsin",1989,"East North Central","Midwest","WI",84.9676433144557,98.4014539381733,110.106992358332,98.1462493147063
+"505",49,22,0,0,"All other causes","White","Male","Wisconsin",1990,"East North Central","Midwest","WI",107.215855392706,110.175232406203,113.187807307484,110.236473248421
+"506",49,22,0,0,"Cancers","White","Male","Wisconsin",1990,"East North Central","Midwest","WI",261.093584146412,265.974057293894,271.490682117499,266.10657806631
+"507",49,22,0,0,"Cardiovascular","White","Male","Wisconsin",1990,"East North Central","Midwest","WI",484.148383878252,493.056329926967,501.68881728931,492.933846605964
+"508",49,22,0,0,"Communicable","White","Male","Wisconsin",1990,"East North Central","Midwest","WI",57.3323591986151,60.4174960058945,63.492781786339,60.4399106309181
+"509",49,22,0,0,"Injuries","White","Male","Wisconsin",1990,"East North Central","Midwest","WI",69.8250113607011,71.9150672612195,74.0590116009249,71.9310927003627
+"510",49,22,0,0,"Non-communicable","White","Male","Wisconsin",1990,"East North Central","Midwest","WI",103.619820978216,106.860411060156,110.148873074111,106.874525428424
+"511",49,22,0,1,"All other causes","White","Female","Wisconsin",1990,"East North Central","Midwest","WI",80.2111165249555,82.3550732956108,84.6365064857724,82.3596347627358
+"512",49,22,0,1,"Cancers","White","Female","Wisconsin",1990,"East North Central","Midwest","WI",165.390935705412,168.52205374397,171.517021183751,168.534290372826
+"513",49,22,0,1,"Cardiovascular","White","Female","Wisconsin",1990,"East North Central","Midwest","WI",304.851809959445,310.365327701649,315.64303988711,310.32112239078
+"514",49,22,0,1,"Communicable","White","Female","Wisconsin",1990,"East North Central","Midwest","WI",36.8355057906358,38.5316381932093,40.5032252426794,38.5505487620484
+"515",49,22,0,1,"Injuries","White","Female","Wisconsin",1990,"East North Central","Midwest","WI",25.9554346321718,27.003851638501,28.0224198480622,27.0079031198879
+"516",49,22,0,1,"Non-communicable","White","Female","Wisconsin",1990,"East North Central","Midwest","WI",60.2806204632881,62.1441563664733,64.4165068745406,62.1748231491332
+"517",49,22,1,0,"All other causes","Black","Male","Wisconsin",1990,"East North Central","Midwest","WI",163.101171378997,184.04615070392,203.243150039537,183.945294446314
+"518",49,22,1,0,"Cancers","Black","Male","Wisconsin",1990,"East North Central","Midwest","WI",363.870448547779,389.184898692215,416.225223353836,389.760233485307
+"519",49,22,1,0,"Cardiovascular","Black","Male","Wisconsin",1990,"East North Central","Midwest","WI",500.339712480172,532.462011642109,565.261716786552,532.639135389152
+"520",49,22,1,0,"Communicable","Black","Male","Wisconsin",1990,"East North Central","Midwest","WI",68.703820442396,88.1367337340506,116.103162395899,89.1621764471653
+"521",49,22,1,0,"Injuries","Black","Male","Wisconsin",1990,"East North Central","Midwest","WI",125.442750204156,136.671595398506,148.511034301674,136.638585834126
+"522",49,22,1,0,"Non-communicable","Black","Male","Wisconsin",1990,"East North Central","Midwest","WI",114.75518433378,132.347239976804,150.834363153722,132.858940139205
+"523",49,22,1,1,"All other causes","Black","Female","Wisconsin",1990,"East North Central","Midwest","WI",121.19830248331,135.076243805355,148.464766522798,135.126060151997
+"524",49,22,1,1,"Cancers","Black","Female","Wisconsin",1990,"East North Central","Midwest","WI",189.690153017896,201.305916901615,214.857581532104,201.40763261723
+"525",49,22,1,1,"Cardiovascular","Black","Female","Wisconsin",1990,"East North Central","Midwest","WI",372.337425901161,398.797944621274,424.388529934051,398.599530756954
+"526",49,22,1,1,"Communicable","Black","Female","Wisconsin",1990,"East North Central","Midwest","WI",34.0332585477341,41.841732891995,50.9270165265058,41.897940238589
+"527",49,22,1,1,"Injuries","Black","Female","Wisconsin",1990,"East North Central","Midwest","WI",35.4229542248198,39.8883778641459,44.4617913862512,39.9228388720482
+"528",49,22,1,1,"Non-communicable","Black","Female","Wisconsin",1990,"East North Central","Midwest","WI",86.4124379925919,99.3435924064271,110.460548617933,99.0877803898391
+"529",49,23,0,0,"All other causes","White","Male","Wisconsin",1991,"East North Central","Midwest","WI",109.937369193822,113.157708050844,116.582504297029,113.202540207723
+"530",49,23,0,0,"Cancers","White","Male","Wisconsin",1991,"East North Central","Midwest","WI",261.705917515495,266.463230433442,271.905827178201,266.627954077112
+"531",49,23,0,0,"Cardiovascular","White","Male","Wisconsin",1991,"East North Central","Midwest","WI",474.217354174855,482.60366360348,491.457551486129,482.583210245529
+"532",49,23,0,0,"Communicable","White","Male","Wisconsin",1991,"East North Central","Midwest","WI",58.4576047770002,61.659556868417,65.3049697112602,61.7365829579717
+"533",49,23,0,0,"Injuries","White","Male","Wisconsin",1991,"East North Central","Midwest","WI",68.6147305903217,70.5818776412767,72.7187459273681,70.5862614397042
+"534",49,23,0,0,"Non-communicable","White","Male","Wisconsin",1991,"East North Central","Midwest","WI",106.00595897441,108.966587922988,112.321604674017,109.016659549775
+"535",49,23,0,1,"All other causes","White","Female","Wisconsin",1991,"East North Central","Midwest","WI",82.0259434104593,84.218483159036,86.5418920598647,84.2250088534072
+"536",49,23,0,1,"Cancers","White","Female","Wisconsin",1991,"East North Central","Midwest","WI",165.04820843616,168.118565541704,171.245609048878,168.106423776753
+"537",49,23,0,1,"Cardiovascular","White","Female","Wisconsin",1991,"East North Central","Midwest","WI",293.579555008531,298.57737640778,304.040998130729,298.59871417294
+"538",49,23,0,1,"Communicable","White","Female","Wisconsin",1991,"East North Central","Midwest","WI",35.7124740633945,37.3466787403263,39.1221501288725,37.4223833491845
+"539",49,23,0,1,"Injuries","White","Female","Wisconsin",1991,"East North Central","Midwest","WI",25.9674679193297,27.0353034831371,28.045347313839,27.0324959344715
+"540",49,23,0,1,"Non-communicable","White","Female","Wisconsin",1991,"East North Central","Midwest","WI",60.7219221909474,62.7099309085998,64.6333550229965,62.7084336083164
+"541",49,23,1,0,"All other causes","Black","Male","Wisconsin",1991,"East North Central","Midwest","WI",162.131316786373,183.049013943573,202.104953136197,182.835477595671
+"542",49,23,1,0,"Cancers","Black","Male","Wisconsin",1991,"East North Central","Midwest","WI",360.735255136773,386.873631714231,412.568654938777,386.76977138327
+"543",49,23,1,0,"Cardiovascular","Black","Male","Wisconsin",1991,"East North Central","Midwest","WI",503.537325876854,534.528866441017,568.203465325331,534.507672430327
+"544",49,23,1,0,"Communicable","Black","Male","Wisconsin",1991,"East North Central","Midwest","WI",68.5831807021593,89.0770633813785,116.204192892185,89.8767984443839
+"545",49,23,1,0,"Injuries","Black","Male","Wisconsin",1991,"East North Central","Midwest","WI",126.11937385475,137.113694768416,150.691676928384,137.620764734775
+"546",49,23,1,0,"Non-communicable","Black","Male","Wisconsin",1991,"East North Central","Midwest","WI",116.865703405782,136.000391400468,153.687615018555,135.83036472418
+"547",49,23,1,1,"All other causes","Black","Female","Wisconsin",1991,"East North Central","Midwest","WI",122.59971833336,136.270445953834,149.777429510044,136.345237693969
+"548",49,23,1,1,"Cancers","Black","Female","Wisconsin",1991,"East North Central","Midwest","WI",189.95357079025,202.202724101441,216.051657137718,202.174900771519
+"549",49,23,1,1,"Cardiovascular","Black","Female","Wisconsin",1991,"East North Central","Midwest","WI",362.960374186824,387.390524699636,413.227342926106,387.08019207089
+"550",49,23,1,1,"Communicable","Black","Female","Wisconsin",1991,"East North Central","Midwest","WI",34.4581527204341,42.0646020928643,50.8863446512467,42.2393311581423
+"551",49,23,1,1,"Injuries","Black","Female","Wisconsin",1991,"East North Central","Midwest","WI",35.6009929680292,39.9690414965006,44.7656274861892,40.0092275990237
+"552",49,23,1,1,"Non-communicable","Black","Female","Wisconsin",1991,"East North Central","Midwest","WI",88.4791911498951,100.685525783519,111.579733033514,100.460775800975
+"553",49,24,0,0,"All other causes","White","Male","Wisconsin",1992,"East North Central","Midwest","WI",109.553879173935,112.496003699288,115.57752276135,112.480681132544
+"554",49,24,0,0,"Cancers","White","Male","Wisconsin",1992,"East North Central","Midwest","WI",257.104254028726,262.431350194244,267.610502977997,262.462011818835
+"555",49,24,0,0,"Cardiovascular","White","Male","Wisconsin",1992,"East North Central","Midwest","WI",460.144385655984,468.953116215524,476.902181507706,468.723490477491
+"556",49,24,0,0,"Communicable","White","Male","Wisconsin",1992,"East North Central","Midwest","WI",55.9339999502434,58.5913448021227,61.7251663986112,58.6383907608317
+"557",49,24,0,0,"Injuries","White","Male","Wisconsin",1992,"East North Central","Midwest","WI",67.1548171738742,69.1857176133743,71.1178536895976,69.1816885821475
+"558",49,24,0,0,"Non-communicable","White","Male","Wisconsin",1992,"East North Central","Midwest","WI",104.849230159859,107.884121973471,111.026635378768,107.909397849451
+"559",49,24,0,1,"All other causes","White","Female","Wisconsin",1992,"East North Central","Midwest","WI",82.4168078402814,84.6522666441459,86.8942602652155,84.638373270794
+"560",49,24,0,1,"Cancers","White","Female","Wisconsin",1992,"East North Central","Midwest","WI",164.667940825255,167.632057949998,170.749627361124,167.65861633813
+"561",49,24,0,1,"Cardiovascular","White","Female","Wisconsin",1992,"East North Central","Midwest","WI",284.449033002789,290.00376702917,295.072192746129,289.938457201635
+"562",49,24,0,1,"Communicable","White","Female","Wisconsin",1992,"East North Central","Midwest","WI",33.344421460595,35.0173721789696,36.3967660061888,34.9787921549452
+"563",49,24,0,1,"Injuries","White","Female","Wisconsin",1992,"East North Central","Midwest","WI",26.0967510265762,27.1748260083843,28.2273834829176,27.162377826438
+"564",49,24,0,1,"Non-communicable","White","Female","Wisconsin",1992,"East North Central","Midwest","WI",60.240472603921,62.2080425871121,64.3395715269893,62.2111050767513
+"565",49,24,1,0,"All other causes","Black","Male","Wisconsin",1992,"East North Central","Midwest","WI",162.011768223677,183.146857573143,201.334403705685,182.663700311773
+"566",49,24,1,0,"Cancers","Black","Male","Wisconsin",1992,"East North Central","Midwest","WI",360.409437966019,384.771991550483,410.609796270804,384.710644843509
+"567",49,24,1,0,"Cardiovascular","Black","Male","Wisconsin",1992,"East North Central","Midwest","WI",500.107285805731,530.117619615876,564.005591845216,530.176612216979
+"568",49,24,1,0,"Communicable","Black","Male","Wisconsin",1992,"East North Central","Midwest","WI",69.7800036064158,91.0931719432837,116.518222964863,91.5735737345816
+"569",49,24,1,0,"Injuries","Black","Male","Wisconsin",1992,"East North Central","Midwest","WI",124.819202060359,136.336581161185,149.181133906136,136.557657224673
+"570",49,24,1,0,"Non-communicable","Black","Male","Wisconsin",1992,"East North Central","Midwest","WI",120.492611757439,139.346206759846,156.942355742343,139.200808915516
+"571",49,24,1,1,"All other causes","Black","Female","Wisconsin",1992,"East North Central","Midwest","WI",124.879291510418,139.255133877134,151.958419344417,138.89850612703
+"572",49,24,1,1,"Cancers","Black","Female","Wisconsin",1992,"East North Central","Midwest","WI",190.777557087469,202.606605264463,215.913240062444,202.647504181506
+"573",49,24,1,1,"Cardiovascular","Black","Female","Wisconsin",1992,"East North Central","Midwest","WI",353.206005195878,376.446618936717,401.69831163013,376.332002341494
+"574",49,24,1,1,"Communicable","Black","Female","Wisconsin",1992,"East North Central","Midwest","WI",34.6104388606662,42.394580559442,51.3515471632312,42.5815735153445
+"575",49,24,1,1,"Injuries","Black","Female","Wisconsin",1992,"East North Central","Midwest","WI",35.6858076405226,40.0574361693109,44.8037405748211,40.0507689458639
+"576",49,24,1,1,"Non-communicable","Black","Female","Wisconsin",1992,"East North Central","Midwest","WI",90.2783148235989,102.403851835193,113.804259884927,102.355027419387
+"577",49,25,0,0,"All other causes","White","Male","Wisconsin",1993,"East North Central","Midwest","WI",112.795591826903,115.719887752576,118.77788452511,115.731465580142
+"578",49,25,0,0,"Cancers","White","Male","Wisconsin",1993,"East North Central","Midwest","WI",254.890873842263,259.801931775092,264.584738303681,259.799096081441
+"579",49,25,0,0,"Cardiovascular","White","Male","Wisconsin",1993,"East North Central","Midwest","WI",458.066308508039,466.855605494663,475.209896979131,466.832116374933
+"580",49,25,0,0,"Communicable","White","Male","Wisconsin",1993,"East North Central","Midwest","WI",58.3121700460932,61.2903516173564,64.6053557852294,61.3312136860528
+"581",49,25,0,0,"Injuries","White","Male","Wisconsin",1993,"East North Central","Midwest","WI",67.4766997213027,69.4470893856556,71.3859323752812,69.4287966783448
+"582",49,25,0,0,"Non-communicable","White","Male","Wisconsin",1993,"East North Central","Midwest","WI",105.977025570585,109.244739093465,112.34830968738,109.220820088061
+"583",49,25,0,1,"All other causes","White","Female","Wisconsin",1993,"East North Central","Midwest","WI",84.7537203109673,86.9724770817777,89.4037138537917,87.0375134810732
+"584",49,25,0,1,"Cancers","White","Female","Wisconsin",1993,"East North Central","Midwest","WI",164.230679813054,167.044855685253,170.052465057868,167.065782989341
+"585",49,25,0,1,"Cardiovascular","White","Female","Wisconsin",1993,"East North Central","Midwest","WI",288.968726793174,293.816100377067,298.913843574716,293.795435736036
+"586",49,25,0,1,"Communicable","White","Female","Wisconsin",1993,"East North Central","Midwest","WI",34.6977768078478,36.1872984669584,37.8176821447828,36.198030880341
+"587",49,25,0,1,"Injuries","White","Female","Wisconsin",1993,"East North Central","Midwest","WI",26.2225073557658,27.3879871834559,28.4516421990975,27.3502973614797
+"588",49,25,0,1,"Non-communicable","White","Female","Wisconsin",1993,"East North Central","Midwest","WI",63.2157488610339,65.2805867573151,67.4069006050842,65.2981041394469
+"589",49,25,1,0,"All other causes","Black","Male","Wisconsin",1993,"East North Central","Midwest","WI",163.594201097586,184.458898694174,204.376441722265,184.397177984778
+"590",49,25,1,0,"Cancers","Black","Male","Wisconsin",1993,"East North Central","Midwest","WI",359.938651648839,381.87283900459,408.272417264656,382.916512143841
+"591",49,25,1,0,"Cardiovascular","Black","Male","Wisconsin",1993,"East North Central","Midwest","WI",498.748716917755,527.239027979146,558.501184529794,528.169892572595
+"592",49,25,1,0,"Communicable","Black","Male","Wisconsin",1993,"East North Central","Midwest","WI",70.3131594609827,91.6313643626024,117.001771041946,92.2276325546235
+"593",49,25,1,0,"Injuries","Black","Male","Wisconsin",1993,"East North Central","Midwest","WI",125.196423362799,135.886022468331,148.545227149175,136.164573436725
+"594",49,25,1,0,"Non-communicable","Black","Male","Wisconsin",1993,"East North Central","Midwest","WI",125.069778372354,142.891090813025,161.141419067954,142.716196903287
+"595",49,25,1,1,"All other causes","Black","Female","Wisconsin",1993,"East North Central","Midwest","WI",129.596848183403,142.700135992499,155.625681589566,142.832540434491
+"596",49,25,1,1,"Cancers","Black","Female","Wisconsin",1993,"East North Central","Midwest","WI",191.349288325164,203.708954266472,217.30430001776,203.980862399929
+"597",49,25,1,1,"Cardiovascular","Black","Female","Wisconsin",1993,"East North Central","Midwest","WI",347.675116250389,371.242466390731,395.47272048255,371.431178802072
+"598",49,25,1,1,"Communicable","Black","Female","Wisconsin",1993,"East North Central","Midwest","WI",34.7861752033846,42.5925616829203,51.8896996884028,42.8262290162642
+"599",49,25,1,1,"Injuries","Black","Female","Wisconsin",1993,"East North Central","Midwest","WI",35.8201242793946,40.1601446262398,44.8210001734753,40.1896398539087
+"600",49,25,1,1,"Non-communicable","Black","Female","Wisconsin",1993,"East North Central","Midwest","WI",93.3135861958882,104.233519130546,114.632537498199,104.123322497937
+"601",49,26,0,0,"All other causes","White","Male","Wisconsin",1994,"East North Central","Midwest","WI",114.384828708202,117.538689555327,120.340898962729,117.504951294607
+"602",49,26,0,0,"Cancers","White","Male","Wisconsin",1994,"East North Central","Midwest","WI",249.43313243082,253.960319182731,258.700295192351,253.920620435231
+"603",49,26,0,0,"Cardiovascular","White","Male","Wisconsin",1994,"East North Central","Midwest","WI",451.184941453465,458.787084499546,467.635847396787,458.963678355491
+"604",49,26,0,0,"Communicable","White","Male","Wisconsin",1994,"East North Central","Midwest","WI",56.986511024893,59.7201735535553,62.6343610267557,59.7333825733094
+"605",49,26,0,0,"Injuries","White","Male","Wisconsin",1994,"East North Central","Midwest","WI",67.4094015134045,69.5805232383897,71.4956048367758,69.5628154914895
+"606",49,26,0,0,"Non-communicable","White","Male","Wisconsin",1994,"East North Central","Midwest","WI",105.612073865717,109.012639163889,112.047249084891,108.96394989143
+"607",49,26,0,1,"All other causes","White","Female","Wisconsin",1994,"East North Central","Midwest","WI",88.4126504935369,90.8971842091804,93.2609878636122,90.8210015483678
+"608",49,26,0,1,"Cancers","White","Female","Wisconsin",1994,"East North Central","Midwest","WI",163.208880005272,166.085758071719,169.006636638293,166.079955941361
+"609",49,26,0,1,"Cardiovascular","White","Female","Wisconsin",1994,"East North Central","Midwest","WI",281.481336328173,286.486379932296,291.175401043167,286.476079137459
+"610",49,26,0,1,"Communicable","White","Female","Wisconsin",1994,"East North Central","Midwest","WI",33.6161224136976,35.1649987118788,36.7500439511025,35.1990407743888
+"611",49,26,0,1,"Injuries","White","Female","Wisconsin",1994,"East North Central","Midwest","WI",26.6730622389524,27.6888676188574,28.7595554513504,27.690055205711
+"612",49,26,0,1,"Non-communicable","White","Female","Wisconsin",1994,"East North Central","Midwest","WI",64.5835504043276,66.637672711702,68.6510555426751,66.6205441826753
+"613",49,26,1,0,"All other causes","Black","Male","Wisconsin",1994,"East North Central","Midwest","WI",165.688791816103,186.760508349263,205.037192163485,186.222118464921
+"614",49,26,1,0,"Cancers","Black","Male","Wisconsin",1994,"East North Central","Midwest","WI",358.080748834362,381.128412477359,405.88398820172,381.45551342322
+"615",49,26,1,0,"Cardiovascular","Black","Male","Wisconsin",1994,"East North Central","Midwest","WI",492.604050020582,523.713681946634,554.077632008806,523.549528133875
+"616",49,26,1,0,"Communicable","Black","Male","Wisconsin",1994,"East North Central","Midwest","WI",71.8721933928872,92.3588612261316,119.295764574779,92.7710990748475
+"617",49,26,1,0,"Injuries","Black","Male","Wisconsin",1994,"East North Central","Midwest","WI",124.715654012035,135.271990768915,147.678600890026,135.598865369979
+"618",49,26,1,0,"Non-communicable","Black","Male","Wisconsin",1994,"East North Central","Midwest","WI",129.820905335271,147.763413084323,164.807293534994,147.352416854927
+"619",49,26,1,1,"All other causes","Black","Female","Wisconsin",1994,"East North Central","Midwest","WI",135.354483146354,147.891474462187,159.695704178625,147.554303838893
+"620",49,26,1,1,"Cancers","Black","Female","Wisconsin",1994,"East North Central","Midwest","WI",193.109078728806,204.718398343007,218.355970203789,205.090458223539
+"621",49,26,1,1,"Cardiovascular","Black","Female","Wisconsin",1994,"East North Central","Midwest","WI",342.191997663412,365.108974062404,387.878489644809,365.100767827402
+"622",49,26,1,1,"Communicable","Black","Female","Wisconsin",1994,"East North Central","Midwest","WI",35.0370208429191,43.0017027939235,51.6438139748444,43.0567613894898
+"623",49,26,1,1,"Injuries","Black","Female","Wisconsin",1994,"East North Central","Midwest","WI",35.720133183882,40.2190700566409,44.9094369734434,40.2580090292164
+"624",49,26,1,1,"Non-communicable","Black","Female","Wisconsin",1994,"East North Central","Midwest","WI",95.0619157521135,106.676230054648,117.740500980979,106.635913662955
+"625",49,27,0,0,"All other causes","White","Male","Wisconsin",1995,"East North Central","Midwest","WI",116.12872043788,119.467933176583,122.692805841001,119.485656532509
+"626",49,27,0,0,"Cancers","White","Male","Wisconsin",1995,"East North Central","Midwest","WI",247.642294852627,252.531609308095,257.370189175966,252.467736525249
+"627",49,27,0,0,"Cardiovascular","White","Male","Wisconsin",1995,"East North Central","Midwest","WI",441.177350385437,449.821689899347,458.134821624167,449.849402555274
+"628",49,27,0,0,"Communicable","White","Male","Wisconsin",1995,"East North Central","Midwest","WI",55.3505198273745,58.3771663370998,61.5259682627027,58.3898753124314
+"629",49,27,0,0,"Injuries","White","Male","Wisconsin",1995,"East North Central","Midwest","WI",67.7756912789467,69.6534153668005,71.8263510029259,69.688577054414
+"630",49,27,0,0,"Non-communicable","White","Male","Wisconsin",1995,"East North Central","Midwest","WI",105.045907214287,108.170141636321,111.348927697686,108.152065101801
+"631",49,27,0,1,"All other causes","White","Female","Wisconsin",1995,"East North Central","Midwest","WI",91.5714439828065,93.9475873755352,96.4107732506503,93.9237812740645
+"632",49,27,0,1,"Cancers","White","Female","Wisconsin",1995,"East North Central","Midwest","WI",161.951042607577,164.706745540149,167.686897231355,164.783035141928
+"633",49,27,0,1,"Cardiovascular","White","Female","Wisconsin",1995,"East North Central","Midwest","WI",277.49164142938,282.449182933132,287.349953618356,282.373702930329
+"634",49,27,0,1,"Communicable","White","Female","Wisconsin",1995,"East North Central","Midwest","WI",32.6318570557591,34.1343095744269,35.6681902469414,34.1614839637023
+"635",49,27,0,1,"Injuries","White","Female","Wisconsin",1995,"East North Central","Midwest","WI",27.2343875641903,28.2239373871137,29.2117525925372,28.228812438709
+"636",49,27,0,1,"Non-communicable","White","Female","Wisconsin",1995,"East North Central","Midwest","WI",65.3171885623557,67.4005707930897,69.5240213228214,67.3807994402735
+"637",49,27,1,0,"All other causes","Black","Male","Wisconsin",1995,"East North Central","Midwest","WI",167.400921982373,187.241563292138,205.570930477991,187.279037563461
+"638",49,27,1,0,"Cancers","Black","Male","Wisconsin",1995,"East North Central","Midwest","WI",357.567296423559,379.775555899464,404.020204919114,380.403265084352
+"639",49,27,1,0,"Cardiovascular","Black","Male","Wisconsin",1995,"East North Central","Midwest","WI",490.280500287079,519.464347988051,552.456974889104,520.061250247298
+"640",49,27,1,0,"Communicable","Black","Male","Wisconsin",1995,"East North Central","Midwest","WI",71.6146350765992,91.0367987440774,116.826952854768,91.9893069704784
+"641",49,27,1,0,"Injuries","Black","Male","Wisconsin",1995,"East North Central","Midwest","WI",123.204375150378,133.650038156989,146.139293278459,133.911423476448
+"642",49,27,1,0,"Non-communicable","Black","Male","Wisconsin",1995,"East North Central","Midwest","WI",135.423497811225,152.983049683664,171.37976508658,153.130656284808
+"643",49,27,1,1,"All other causes","Black","Female","Wisconsin",1995,"East North Central","Midwest","WI",138.155587201693,150.161264901329,161.367936293618,150.115292916642
+"644",49,27,1,1,"Cancers","Black","Female","Wisconsin",1995,"East North Central","Midwest","WI",192.57520686894,203.647166355459,216.567481693789,203.917113235392
+"645",49,27,1,1,"Cardiovascular","Black","Female","Wisconsin",1995,"East North Central","Midwest","WI",333.480274051612,356.536336183214,379.840802949048,356.561310407653
+"646",49,27,1,1,"Communicable","Black","Female","Wisconsin",1995,"East North Central","Midwest","WI",35.1945353648811,42.9912688464396,51.1755626221941,43.1388652328927
+"647",49,27,1,1,"Injuries","Black","Female","Wisconsin",1995,"East North Central","Midwest","WI",35.8161771986292,40.3621624806932,45.6147715623628,40.3946877154165
+"648",49,27,1,1,"Non-communicable","Black","Female","Wisconsin",1995,"East North Central","Midwest","WI",98.0576435226868,108.810383164394,119.600284263526,108.933816834626
+"649",49,28,0,0,"All other causes","White","Male","Wisconsin",1996,"East North Central","Midwest","WI",117.433328803106,120.515953582968,123.882140824895,120.570564480611
+"650",49,28,0,0,"Cancers","White","Male","Wisconsin",1996,"East North Central","Midwest","WI",243.042264047605,247.513675198617,252.238183120146,247.610197789832
+"651",49,28,0,0,"Cardiovascular","White","Male","Wisconsin",1996,"East North Central","Midwest","WI",436.145722722393,444.471913500537,452.855387954942,444.328227451739
+"652",49,28,0,0,"Communicable","White","Male","Wisconsin",1996,"East North Central","Midwest","WI",51.1777805412065,53.8947829031488,56.8106559780689,53.9197751513274
+"653",49,28,0,0,"Injuries","White","Male","Wisconsin",1996,"East North Central","Midwest","WI",67.9896176590462,69.9255471831096,71.9867561054813,69.9230422233225
+"654",49,28,0,0,"Non-communicable","White","Male","Wisconsin",1996,"East North Central","Midwest","WI",105.312670913342,108.145641222172,111.378074176118,108.185123191938
+"655",49,28,0,1,"All other causes","White","Female","Wisconsin",1996,"East North Central","Midwest","WI",94.5322769488302,97.0614387253947,99.4221652840737,97.0403356164523
+"656",49,28,0,1,"Cancers","White","Female","Wisconsin",1996,"East North Central","Midwest","WI",159.904099206635,162.815318724667,165.857385341884,162.821096837113
+"657",49,28,0,1,"Cardiovascular","White","Female","Wisconsin",1996,"East North Central","Midwest","WI",268.856747646085,273.564736246354,278.55189601174,273.585236659513
+"658",49,28,0,1,"Communicable","White","Female","Wisconsin",1996,"East North Central","Midwest","WI",33.162085513916,34.7035421424807,36.3041754854779,34.6901211234634
+"659",49,28,0,1,"Injuries","White","Female","Wisconsin",1996,"East North Central","Midwest","WI",27.3478836436971,28.3454854027847,29.3606747134842,28.3574048695763
+"660",49,28,0,1,"Non-communicable","White","Female","Wisconsin",1996,"East North Central","Midwest","WI",66.3049548101149,68.3889344766551,70.606436187316,68.3816296080628
+"661",49,28,1,0,"All other causes","Black","Male","Wisconsin",1996,"East North Central","Midwest","WI",170.262866357168,188.018509200444,206.228811120641,188.049230020087
+"662",49,28,1,0,"Cancers","Black","Male","Wisconsin",1996,"East North Central","Midwest","WI",357.555477667481,378.276010666914,402.280718410491,378.571516249867
+"663",49,28,1,0,"Cardiovascular","Black","Male","Wisconsin",1996,"East North Central","Midwest","WI",481.5931248366,510.183975141663,541.627249257943,510.350566529745
+"664",49,28,1,0,"Communicable","Black","Male","Wisconsin",1996,"East North Central","Midwest","WI",69.1657920317123,88.3444131188883,113.333581847504,88.9291197729387
+"665",49,28,1,0,"Injuries","Black","Male","Wisconsin",1996,"East North Central","Midwest","WI",119.137949147977,129.696005244045,141.197089838012,129.862607712873
+"666",49,28,1,0,"Non-communicable","Black","Male","Wisconsin",1996,"East North Central","Midwest","WI",140.74613556407,157.833039612492,176.820804443175,158.187838088042
+"667",49,28,1,1,"All other causes","Black","Female","Wisconsin",1996,"East North Central","Midwest","WI",141.222946241015,153.441144591623,164.63855160188,153.471220304408
+"668",49,28,1,1,"Cancers","Black","Female","Wisconsin",1996,"East North Central","Midwest","WI",191.8297119533,202.766867580143,216.118581298332,203.328289590404
+"669",49,28,1,1,"Cardiovascular","Black","Female","Wisconsin",1996,"East North Central","Midwest","WI",326.371183945577,346.370525357341,366.212432061678,346.681082708309
+"670",49,28,1,1,"Communicable","Black","Female","Wisconsin",1996,"East North Central","Midwest","WI",35.6649426234629,43.1954700328329,51.3671685745574,43.327964332594
+"671",49,28,1,1,"Injuries","Black","Female","Wisconsin",1996,"East North Central","Midwest","WI",36.2493502304372,40.3417196925527,45.2630515647094,40.4214528397757
+"672",49,28,1,1,"Non-communicable","Black","Female","Wisconsin",1996,"East North Central","Midwest","WI",99.9986386963339,110.82591219944,121.90196579719,110.889671608878
+"673",49,29,0,0,"All other causes","White","Male","Wisconsin",1997,"East North Central","Midwest","WI",120.612648261157,123.849322128053,126.875471181456,123.819900410293
+"674",49,29,0,0,"Cancers","White","Male","Wisconsin",1997,"East North Central","Midwest","WI",240.968135012249,245.726387894436,250.457099410725,245.738205775895
+"675",49,29,0,0,"Cardiovascular","White","Male","Wisconsin",1997,"East North Central","Midwest","WI",412.092446198268,419.481861062857,426.804222261707,419.5427528032
+"676",49,29,0,0,"Communicable","White","Male","Wisconsin",1997,"East North Central","Midwest","WI",51.1423119891209,54.0126149926094,56.8360098546239,54.0394242643801
+"677",49,29,0,0,"Injuries","White","Male","Wisconsin",1997,"East North Central","Midwest","WI",68.1380187422568,70.1972166501781,72.2836279180617,70.2636933095534
+"678",49,29,0,0,"Non-communicable","White","Male","Wisconsin",1997,"East North Central","Midwest","WI",105.35975871034,108.697418168543,111.803190571166,108.705446531829
+"679",49,29,0,1,"All other causes","White","Female","Wisconsin",1997,"East North Central","Midwest","WI",96.1788312008948,98.6216092774835,100.893638677156,98.5858092339247
+"680",49,29,0,1,"Cancers","White","Female","Wisconsin",1997,"East North Central","Midwest","WI",159.800055844554,162.770453566117,165.674060554426,162.722358604327
+"681",49,29,0,1,"Cardiovascular","White","Female","Wisconsin",1997,"East North Central","Midwest","WI",263.662046999064,268.03834611395,272.733707137551,268.130289950847
+"682",49,29,0,1,"Communicable","White","Female","Wisconsin",1997,"East North Central","Midwest","WI",32.1487258070355,33.5609129586535,34.9709641410192,33.5699666750448
+"683",49,29,0,1,"Injuries","White","Female","Wisconsin",1997,"East North Central","Midwest","WI",27.2940216628771,28.304249956538,29.3458881133506,28.3051268760827
+"684",49,29,0,1,"Non-communicable","White","Female","Wisconsin",1997,"East North Central","Midwest","WI",68.7767469972708,70.8699691145181,73.1238837442966,70.8689793020441
+"685",49,29,1,0,"All other causes","Black","Male","Wisconsin",1997,"East North Central","Midwest","WI",171.441438471656,188.428917768287,205.67955479872,188.164754225785
+"686",49,29,1,0,"Cancers","Black","Male","Wisconsin",1997,"East North Central","Midwest","WI",352.406539398859,372.820511915649,396.521489346139,373.107224620354
+"687",49,29,1,0,"Cardiovascular","Black","Male","Wisconsin",1997,"East North Central","Midwest","WI",471.872553273171,501.545008691734,530.800731485754,501.306035714706
+"688",49,29,1,0,"Communicable","Black","Male","Wisconsin",1997,"East North Central","Midwest","WI",66.8913513410732,83.8342249390084,108.941835888177,84.6419611565925
+"689",49,29,1,0,"Injuries","Black","Male","Wisconsin",1997,"East North Central","Midwest","WI",116.82566477139,126.547901458873,137.791110557686,126.830158214468
+"690",49,29,1,0,"Non-communicable","Black","Male","Wisconsin",1997,"East North Central","Midwest","WI",145.131751772674,162.21968364276,179.120584805781,162.339007439138
+"691",49,29,1,1,"All other causes","Black","Female","Wisconsin",1997,"East North Central","Midwest","WI",142.804326723724,154.695967097587,166.631086760346,154.611307153066
+"692",49,29,1,1,"Cancers","Black","Female","Wisconsin",1997,"East North Central","Midwest","WI",190.505022207406,202.263067212826,214.178868415437,202.353374672909
+"693",49,29,1,1,"Cardiovascular","Black","Female","Wisconsin",1997,"East North Central","Midwest","WI",319.562069673263,339.65109727807,361.166283414491,339.655520009298
+"694",49,29,1,1,"Communicable","Black","Female","Wisconsin",1997,"East North Central","Midwest","WI",36.150575965631,43.2467794691222,51.9294870503317,43.4935813117328
+"695",49,29,1,1,"Injuries","Black","Female","Wisconsin",1997,"East North Central","Midwest","WI",36.2522112982942,40.3686871771626,44.9488162646807,40.37633203663
+"696",49,29,1,1,"Non-communicable","Black","Female","Wisconsin",1997,"East North Central","Midwest","WI",103.223668594857,113.945872875671,124.672922961777,114.06099565816
+"697",49,30,0,0,"All other causes","White","Male","Wisconsin",1998,"East North Central","Midwest","WI",121.649418729527,124.931334257866,128.073463463333,124.928812136016
+"698",49,30,0,0,"Cancers","White","Male","Wisconsin",1998,"East North Central","Midwest","WI",241.945025330937,246.807016707484,251.700027349268,246.796041192164
+"699",49,30,0,0,"Cardiovascular","White","Male","Wisconsin",1998,"East North Central","Midwest","WI",401.167583548503,408.521134061232,416.445315379492,408.484690974732
+"700",49,30,0,0,"Communicable","White","Male","Wisconsin",1998,"East North Central","Midwest","WI",50.189576003369,52.8968066084621,55.8641507259262,52.8904572871952
+"701",49,30,0,0,"Injuries","White","Male","Wisconsin",1998,"East North Central","Midwest","WI",68.5404681345564,70.4634867128015,72.3803616488968,70.490360340998
+"702",49,30,0,0,"Non-communicable","White","Male","Wisconsin",1998,"East North Central","Midwest","WI",109.339093744029,112.787376426877,116.030714120194,112.727018047417
+"703",49,30,0,1,"All other causes","White","Female","Wisconsin",1998,"East North Central","Midwest","WI",100.708072522472,102.95553227764,105.418664449156,102.997376184208
+"704",49,30,0,1,"Cancers","White","Female","Wisconsin",1998,"East North Central","Midwest","WI",159.778369355565,162.69124179623,165.506803738433,162.685005253537
+"705",49,30,0,1,"Cardiovascular","White","Female","Wisconsin",1998,"East North Central","Midwest","WI",258.999219906193,263.220516398492,268.10256948158,263.238812643953
+"706",49,30,0,1,"Communicable","White","Female","Wisconsin",1998,"East North Central","Midwest","WI",32.8234772378349,34.3759734767416,35.6922106112486,34.33315587131
+"707",49,30,0,1,"Injuries","White","Female","Wisconsin",1998,"East North Central","Midwest","WI",27.7460389989406,28.802303459944,29.8285967945421,28.8081765743294
+"708",49,30,0,1,"Non-communicable","White","Female","Wisconsin",1998,"East North Central","Midwest","WI",71.0042908664854,73.2204071275304,75.4173510679408,73.1875582038716
+"709",49,30,1,0,"All other causes","Black","Male","Wisconsin",1998,"East North Central","Midwest","WI",172.780781524824,188.788453589596,205.289576141592,188.51200576497
+"710",49,30,1,0,"Cancers","Black","Male","Wisconsin",1998,"East North Central","Midwest","WI",349.080177848053,369.25645970416,391.166068787671,369.705077711226
+"711",49,30,1,0,"Cardiovascular","Black","Male","Wisconsin",1998,"East North Central","Midwest","WI",465.674768956506,492.567065906484,522.750745194023,492.750579413064
+"712",49,30,1,0,"Communicable","Black","Male","Wisconsin",1998,"East North Central","Midwest","WI",63.8442094178306,80.3056283506428,102.164855972428,80.7785951831836
+"713",49,30,1,0,"Injuries","Black","Male","Wisconsin",1998,"East North Central","Midwest","WI",114.714502928342,124.082277601478,135.440290778656,124.337202904937
+"714",49,30,1,0,"Non-communicable","Black","Male","Wisconsin",1998,"East North Central","Midwest","WI",149.323594805237,166.720388117359,183.792623089066,166.579692787327
+"715",49,30,1,1,"All other causes","Black","Female","Wisconsin",1998,"East North Central","Midwest","WI",144.92405491348,156.988098701805,168.291287266473,156.826960345172
+"716",49,30,1,1,"Cancers","Black","Female","Wisconsin",1998,"East North Central","Midwest","WI",189.664644863231,200.165441042951,211.443015437318,200.347510579596
+"717",49,30,1,1,"Cardiovascular","Black","Female","Wisconsin",1998,"East North Central","Midwest","WI",315.094811430559,334.636461840915,354.821248149239,334.577056458325
+"718",49,30,1,1,"Communicable","Black","Female","Wisconsin",1998,"East North Central","Midwest","WI",36.855019462627,43.9345049129143,52.4428326348184,44.0000378797779
+"719",49,30,1,1,"Injuries","Black","Female","Wisconsin",1998,"East North Central","Midwest","WI",36.2558797604954,40.4030689086684,44.7601108647435,40.3853919443559
+"720",49,30,1,1,"Non-communicable","Black","Female","Wisconsin",1998,"East North Central","Midwest","WI",107.965310839692,118.559547929228,129.187891420979,118.604700692251
+"721",49,31,0,0,"All other causes","White","Male","Wisconsin",1999,"East North Central","Midwest","WI",123.642938321073,126.556014330066,130.014624280142,126.605945954732
+"722",49,31,0,0,"Cancers","White","Male","Wisconsin",1999,"East North Central","Midwest","WI",239.462736035038,243.984534629731,248.313749419704,243.99613421514
+"723",49,31,0,0,"Cardiovascular","White","Male","Wisconsin",1999,"East North Central","Midwest","WI",398.680211645046,406.337076378029,414.44579141476,406.449176852138
+"724",49,31,0,0,"Communicable","White","Male","Wisconsin",1999,"East North Central","Midwest","WI",42.2925133113179,44.7534367753642,47.2221248821046,44.7443941253087
+"725",49,31,0,0,"Injuries","White","Male","Wisconsin",1999,"East North Central","Midwest","WI",69.4162104207709,71.4525438835703,73.5033162993827,71.4283587709367
+"726",49,31,0,0,"Non-communicable","White","Male","Wisconsin",1999,"East North Central","Midwest","WI",117.193813032642,120.53324258995,123.98420635713,120.621920336074
+"727",49,31,0,1,"All other causes","White","Female","Wisconsin",1999,"East North Central","Midwest","WI",97.6978940505252,100.216992039364,102.567980078931,100.209298414602
+"728",49,31,0,1,"Cancers","White","Female","Wisconsin",1999,"East North Central","Midwest","WI",157.952459840836,160.606054128793,163.5926326254,160.652854407207
+"729",49,31,0,1,"Cardiovascular","White","Female","Wisconsin",1999,"East North Central","Midwest","WI",258.61514487702,263.547996815084,268.048334228531,263.488856495747
+"730",49,31,0,1,"Communicable","White","Female","Wisconsin",1999,"East North Central","Midwest","WI",28.5466038488902,29.930158029896,31.3368352028477,29.9250520812609
+"731",49,31,0,1,"Injuries","White","Female","Wisconsin",1999,"East North Central","Midwest","WI",28.3576504115053,29.4742395366745,30.6210249887006,29.4697792772063
+"732",49,31,0,1,"Non-communicable","White","Female","Wisconsin",1999,"East North Central","Midwest","WI",83.4152506601901,85.9810424124711,88.6908582698112,85.9998482774726
+"733",49,31,1,0,"All other causes","Black","Male","Wisconsin",1999,"East North Central","Midwest","WI",171.435737615191,186.939584303786,203.593578340577,187.039533006003
+"734",49,31,1,0,"Cancers","Black","Male","Wisconsin",1999,"East North Central","Midwest","WI",344.51576786673,362.320366874926,382.970921415284,362.754582427216
+"735",49,31,1,0,"Cardiovascular","Black","Male","Wisconsin",1999,"East North Central","Midwest","WI",451.848062056163,478.45651657683,507.455567614035,478.672463746288
+"736",49,31,1,0,"Communicable","Black","Male","Wisconsin",1999,"East North Central","Midwest","WI",61.7712623575954,77.616940687263,100.034038138262,78.3995334471315
+"737",49,31,1,0,"Injuries","Black","Male","Wisconsin",1999,"East North Central","Midwest","WI",112.522129009983,122.494394309588,134.198942657611,122.616903349513
+"738",49,31,1,0,"Non-communicable","Black","Male","Wisconsin",1999,"East North Central","Midwest","WI",154.784873403587,171.237604772057,190.293708890732,171.619317251214
+"739",49,31,1,1,"All other causes","Black","Female","Wisconsin",1999,"East North Central","Midwest","WI",145.396661005263,157.761201288381,169.085208028025,157.592792432824
+"740",49,31,1,1,"Cancers","Black","Female","Wisconsin",1999,"East North Central","Midwest","WI",188.007349940622,199.173437134161,210.753144224739,199.277029236144
+"741",49,31,1,1,"Cardiovascular","Black","Female","Wisconsin",1999,"East North Central","Midwest","WI",314.818797802982,336.213147735211,357.602112434953,336.165201824151
+"742",49,31,1,1,"Communicable","Black","Female","Wisconsin",1999,"East North Central","Midwest","WI",36.9316656052006,43.6636410119192,52.9437718149591,43.9571578459935
+"743",49,31,1,1,"Injuries","Black","Female","Wisconsin",1999,"East North Central","Midwest","WI",36.1642228360998,40.4128793913175,45.1768349530403,40.4177086407155
+"744",49,31,1,1,"Non-communicable","Black","Female","Wisconsin",1999,"East North Central","Midwest","WI",113.632518141349,123.26800389295,134.629018167304,123.409637593699
+"745",49,32,0,0,"All other causes","White","Male","Wisconsin",2000,"East North Central","Midwest","WI",123.017215203244,126.107633170901,129.18839602472,126.101113414894
+"746",49,32,0,0,"Cancers","White","Male","Wisconsin",2000,"East North Central","Midwest","WI",233.75888905253,238.582825786866,242.93125422624,238.54031080271
+"747",49,32,0,0,"Cardiovascular","White","Male","Wisconsin",2000,"East North Central","Midwest","WI",380.132854287688,387.644311273973,394.506644647116,387.619171402116
+"748",49,32,0,0,"Communicable","White","Male","Wisconsin",2000,"East North Central","Midwest","WI",37.9456389912727,40.145414690287,42.3458010079311,40.1732936914861
+"749",49,32,0,0,"Injuries","White","Male","Wisconsin",2000,"East North Central","Midwest","WI",71.2275928033417,73.2679776237291,75.3897319094814,73.2893264709705
+"750",49,32,0,0,"Non-communicable","White","Male","Wisconsin",2000,"East North Central","Midwest","WI",120.085813561965,123.558414369518,127.118110037729,123.540882864071
+"751",49,32,0,1,"All other causes","White","Female","Wisconsin",2000,"East North Central","Midwest","WI",98.5903354563456,101.04212168742,103.572231230801,101.064771891515
+"752",49,32,0,1,"Cancers","White","Female","Wisconsin",2000,"East North Central","Midwest","WI",156.666692092795,159.4486525477,162.274587100616,159.470761411367
+"753",49,32,0,1,"Cardiovascular","White","Female","Wisconsin",2000,"East North Central","Midwest","WI",252.108533860821,256.844681131675,261.226204830781,256.829912542915
+"754",49,32,0,1,"Communicable","White","Female","Wisconsin",2000,"East North Central","Midwest","WI",26.7076059902113,27.9458752434437,29.2467303929237,27.9559572579387
+"755",49,32,0,1,"Injuries","White","Female","Wisconsin",2000,"East North Central","Midwest","WI",29.3107923112105,30.4743143079978,31.5837362898789,30.4730501894727
+"756",49,32,0,1,"Non-communicable","White","Female","Wisconsin",2000,"East North Central","Midwest","WI",87.2674300418936,89.7857804811326,92.2823273011817,89.7845130005252
+"757",49,32,1,0,"All other causes","Black","Male","Wisconsin",2000,"East North Central","Midwest","WI",173.567715266702,187.897764009395,203.432746712252,188.021821986039
+"758",49,32,1,0,"Cancers","Black","Male","Wisconsin",2000,"East North Central","Midwest","WI",340.215640913031,357.604804535072,378.662744701605,357.899641232564
+"759",49,32,1,0,"Cardiovascular","Black","Male","Wisconsin",2000,"East North Central","Midwest","WI",441.218832832269,466.812288135765,494.831041989527,467.115970474203
+"760",49,32,1,0,"Communicable","Black","Male","Wisconsin",2000,"East North Central","Midwest","WI",60.0236497736332,75.7329228089539,97.2172942176862,76.5618194836232
+"761",49,32,1,0,"Injuries","Black","Male","Wisconsin",2000,"East North Central","Midwest","WI",110.189775270254,120.379894842453,130.853056711124,120.316148488687
+"762",49,32,1,0,"Non-communicable","Black","Male","Wisconsin",2000,"East North Central","Midwest","WI",157.786361020811,173.968218984703,192.828214583421,174.471521128858
+"763",49,32,1,1,"All other causes","Black","Female","Wisconsin",2000,"East North Central","Midwest","WI",147.910834326449,160.060953494538,171.858456189329,160.098898366739
+"764",49,32,1,1,"Cancers","Black","Female","Wisconsin",2000,"East North Central","Midwest","WI",188.133225834792,198.771458169358,209.636507015775,198.789441764265
+"765",49,32,1,1,"Cardiovascular","Black","Female","Wisconsin",2000,"East North Central","Midwest","WI",316.562617017659,336.120965855737,355.546936685048,336.010490836227
+"766",49,32,1,1,"Communicable","Black","Female","Wisconsin",2000,"East North Central","Midwest","WI",37.2653313842034,43.855775558182,52.8906799197183,44.2115322640093
+"767",49,32,1,1,"Injuries","Black","Female","Wisconsin",2000,"East North Central","Midwest","WI",36.1601127288509,40.5937248683472,45.0703769554486,40.5449576901598
+"768",49,32,1,1,"Non-communicable","Black","Female","Wisconsin",2000,"East North Central","Midwest","WI",118.178145918537,127.783255415217,139.217531719585,127.985081953142
+"769",49,33,0,0,"All other causes","White","Male","Wisconsin",2001,"East North Central","Midwest","WI",123.805548445828,126.857502312964,130.446665420773,126.907755707318
+"770",49,33,0,0,"Cancers","White","Male","Wisconsin",2001,"East North Central","Midwest","WI",230.161248101484,234.783522959882,239.35699490343,234.748161256175
+"771",49,33,0,0,"Cardiovascular","White","Male","Wisconsin",2001,"East North Central","Midwest","WI",369.572483425068,375.973042123789,382.665466155854,375.962429358139
+"772",49,33,0,0,"Communicable","White","Male","Wisconsin",2001,"East North Central","Midwest","WI",36.9284812580493,39.1634957056576,41.4381947305624,39.1577532617798
+"773",49,33,0,0,"Injuries","White","Male","Wisconsin",2001,"East North Central","Midwest","WI",72.4728587719312,74.4698798850089,76.4711460712829,74.470063814179
+"774",49,33,0,0,"Non-communicable","White","Male","Wisconsin",2001,"East North Central","Midwest","WI",124.59900560466,128.392713081337,132.272671039535,128.41817770792
+"775",49,33,0,1,"All other causes","White","Female","Wisconsin",2001,"East North Central","Midwest","WI",102.611412195828,104.990191524385,107.717134371552,105.027394625425
+"776",49,33,0,1,"Cancers","White","Female","Wisconsin",2001,"East North Central","Midwest","WI",156.515306225186,159.268720742024,162.051804105068,159.247331437429
+"777",49,33,0,1,"Cardiovascular","White","Female","Wisconsin",2001,"East North Central","Midwest","WI",240.278162861405,244.713009595578,249.099126600933,244.657934440242
+"778",49,33,0,1,"Communicable","White","Female","Wisconsin",2001,"East North Central","Midwest","WI",25.8080727985356,27.1635514626862,28.3995182424334,27.1507215256596
+"779",49,33,0,1,"Injuries","White","Female","Wisconsin",2001,"East North Central","Midwest","WI",29.9596906101472,31.1180288597545,32.2222810647706,31.13116860711
+"780",49,33,0,1,"Non-communicable","White","Female","Wisconsin",2001,"East North Central","Midwest","WI",88.9013062320902,91.3213059509975,93.7769865929704,91.3400594256258
+"781",49,33,1,0,"All other causes","Black","Male","Wisconsin",2001,"East North Central","Midwest","WI",175.749049700189,189.87488752447,204.167824688467,189.948190428457
+"782",49,33,1,0,"Cancers","Black","Male","Wisconsin",2001,"East North Central","Midwest","WI",332.588786441682,351.060325882474,371.171116620734,351.092375696935
+"783",49,33,1,0,"Cardiovascular","Black","Male","Wisconsin",2001,"East North Central","Midwest","WI",429.586023649728,452.822532502849,477.817182780661,452.988988292421
+"784",49,33,1,0,"Communicable","Black","Male","Wisconsin",2001,"East North Central","Midwest","WI",59.7079810369199,73.2727399317657,92.1962269922718,74.0529690880644
+"785",49,33,1,0,"Injuries","Black","Male","Wisconsin",2001,"East North Central","Midwest","WI",109.3010004977,118.863372635024,128.939173418159,118.970223957131
+"786",49,33,1,0,"Non-communicable","Black","Male","Wisconsin",2001,"East North Central","Midwest","WI",159.088142563469,174.581890610004,191.834767029301,174.924310702313
+"787",49,33,1,1,"All other causes","Black","Female","Wisconsin",2001,"East North Central","Midwest","WI",150.751121166436,162.490050182672,174.501246799079,162.405235644498
+"788",49,33,1,1,"Cancers","Black","Female","Wisconsin",2001,"East North Central","Midwest","WI",186.144078985339,197.26043529717,208.490055002764,197.308165248145
+"789",49,33,1,1,"Cardiovascular","Black","Female","Wisconsin",2001,"East North Central","Midwest","WI",306.919037233124,327.30212286283,349.077460976076,327.406556608267
+"790",49,33,1,1,"Communicable","Black","Female","Wisconsin",2001,"East North Central","Midwest","WI",37.3301971287543,43.5592672734722,52.7590449537705,43.9474662615932
+"791",49,33,1,1,"Injuries","Black","Female","Wisconsin",2001,"East North Central","Midwest","WI",36.3330161974374,40.8199241459597,45.1637682653717,40.7834838405661
+"792",49,33,1,1,"Non-communicable","Black","Female","Wisconsin",2001,"East North Central","Midwest","WI",119.954162146884,130.33128828694,141.673803632679,130.419911126116
+"793",49,34,0,0,"All other causes","White","Male","Wisconsin",2002,"East North Central","Midwest","WI",125.530191032422,128.684011332653,132.213089410383,128.741593727907
+"794",49,34,0,0,"Cancers","White","Male","Wisconsin",2002,"East North Central","Midwest","WI",226.545413446726,231.275128512583,235.593599821731,231.190477149106
+"795",49,34,0,0,"Cardiovascular","White","Male","Wisconsin",2002,"East North Central","Midwest","WI",360.909741189021,367.326213381197,374.592639595318,367.446967684688
+"796",49,34,0,0,"Communicable","White","Male","Wisconsin",2002,"East North Central","Midwest","WI",37.1230830778983,39.3072300391689,41.3811384693848,39.2725931047665
+"797",49,34,0,0,"Injuries","White","Male","Wisconsin",2002,"East North Central","Midwest","WI",73.0497067018332,75.1330402034347,77.2503441552878,75.1610301234675
+"798",49,34,0,0,"Non-communicable","White","Male","Wisconsin",2002,"East North Central","Midwest","WI",123.450792518814,127.080658744133,130.617405464883,127.070261688664
+"799",49,34,0,1,"All other causes","White","Female","Wisconsin",2002,"East North Central","Midwest","WI",103.69529461066,106.029860391493,108.385385971582,106.06561837269
+"800",49,34,0,1,"Cancers","White","Female","Wisconsin",2002,"East North Central","Midwest","WI",155.447215037758,158.143031628243,161.020341867198,158.159433768993
+"801",49,34,0,1,"Cardiovascular","White","Female","Wisconsin",2002,"East North Central","Midwest","WI",230.76071831453,234.926685409785,239.116483206956,234.837469952527
+"802",49,34,0,1,"Communicable","White","Female","Wisconsin",2002,"East North Central","Midwest","WI",25.7879793504581,27.0225432195935,28.3346119606771,26.9935591723753
+"803",49,34,0,1,"Injuries","White","Female","Wisconsin",2002,"East North Central","Midwest","WI",31.2110926686896,32.3610977772316,33.5623844537725,32.3642683318694
+"804",49,34,0,1,"Non-communicable","White","Female","Wisconsin",2002,"East North Central","Midwest","WI",89.8724531331241,92.2031585449592,94.7101327835604,92.2089179564577
+"805",49,34,1,0,"All other causes","Black","Male","Wisconsin",2002,"East North Central","Midwest","WI",178.314619309042,191.908290619283,206.251886380726,191.807191753775
+"806",49,34,1,0,"Cancers","Black","Male","Wisconsin",2002,"East North Central","Midwest","WI",326.653592011285,344.461843745031,364.69077216725,344.455721490551
+"807",49,34,1,0,"Cardiovascular","Black","Male","Wisconsin",2002,"East North Central","Midwest","WI",415.100671110167,439.413656633762,464.089736209036,439.581012744324
+"808",49,34,1,0,"Communicable","Black","Male","Wisconsin",2002,"East North Central","Midwest","WI",56.6774797676545,70.5158528224053,88.7207943272566,71.2111973328301
+"809",49,34,1,0,"Injuries","Black","Male","Wisconsin",2002,"East North Central","Midwest","WI",110.768874812426,119.908362313805,129.601009184503,119.85880955645
+"810",49,34,1,0,"Non-communicable","Black","Male","Wisconsin",2002,"East North Central","Midwest","WI",159.562365146196,175.180193166035,192.760055333829,175.354015521936
+"811",49,34,1,1,"All other causes","Black","Female","Wisconsin",2002,"East North Central","Midwest","WI",155.102123402599,166.571015820784,178.247269822988,166.519705367635
+"812",49,34,1,1,"Cancers","Black","Female","Wisconsin",2002,"East North Central","Midwest","WI",185.30145482472,196.750657438615,207.198736839187,196.775213781867
+"813",49,34,1,1,"Cardiovascular","Black","Female","Wisconsin",2002,"East North Central","Midwest","WI",299.36853798882,317.765451465013,337.037315318865,317.960458393612
+"814",49,34,1,1,"Communicable","Black","Female","Wisconsin",2002,"East North Central","Midwest","WI",36.5086030160119,43.0398590245539,51.8000670035412,43.3359412844787
+"815",49,34,1,1,"Injuries","Black","Female","Wisconsin",2002,"East North Central","Midwest","WI",36.3770392367497,41.0790109898541,45.3182139353775,41.0081606700514
+"816",49,34,1,1,"Non-communicable","Black","Female","Wisconsin",2002,"East North Central","Midwest","WI",122.948778585258,133.549175020621,144.687671931294,133.488503269236
+"817",49,35,0,0,"All other causes","White","Male","Wisconsin",2003,"East North Central","Midwest","WI",126.383328783087,129.685968331715,132.918142171767,129.681156970568
+"818",49,35,0,0,"Cancers","White","Male","Wisconsin",2003,"East North Central","Midwest","WI",223.628467824006,227.877303428666,231.807850751219,227.879564279548
+"819",49,35,0,0,"Cardiovascular","White","Male","Wisconsin",2003,"East North Central","Midwest","WI",339.99384775813,346.368017529246,352.828608650645,346.280311146086
+"820",49,35,0,0,"Communicable","White","Male","Wisconsin",2003,"East North Central","Midwest","WI",33.9691288753519,35.9522785275732,38.0339675179411,35.9709359704552
+"821",49,35,0,0,"Injuries","White","Male","Wisconsin",2003,"East North Central","Midwest","WI",74.4977475777686,76.456102895635,78.4937792602902,76.4587205860349
+"822",49,35,0,0,"Non-communicable","White","Male","Wisconsin",2003,"East North Central","Midwest","WI",120.516847498889,124.245994632788,127.38689435985,124.172542683804
+"823",49,35,0,1,"All other causes","White","Female","Wisconsin",2003,"East North Central","Midwest","WI",104.887416253571,107.278627557765,109.722753339453,107.268426387807
+"824",49,35,0,1,"Cancers","White","Female","Wisconsin",2003,"East North Central","Midwest","WI",152.308630191038,155.112598583456,157.915459610365,155.137059672085
+"825",49,35,0,1,"Cardiovascular","White","Female","Wisconsin",2003,"East North Central","Midwest","WI",219.137283066761,222.937955741709,227.109775545576,222.950313723152
+"826",49,35,0,1,"Communicable","White","Female","Wisconsin",2003,"East North Central","Midwest","WI",24.8492191936877,26.0545547704926,27.3014449230496,26.0494363500005
+"827",49,35,0,1,"Injuries","White","Female","Wisconsin",2003,"East North Central","Midwest","WI",31.4702926866579,32.6065193749919,33.8889199315572,32.6430959507758
+"828",49,35,0,1,"Non-communicable","White","Female","Wisconsin",2003,"East North Central","Midwest","WI",89.4367613109685,92.0273773316039,94.502141275853,92.0273614223104
+"829",49,35,1,0,"All other causes","Black","Male","Wisconsin",2003,"East North Central","Midwest","WI",178.815913408088,191.712716260865,206.366308503735,192.002735284002
+"830",49,35,1,0,"Cancers","Black","Male","Wisconsin",2003,"East North Central","Midwest","WI",323.686562221822,340.580361512756,361.461694229799,341.095411368551
+"831",49,35,1,0,"Cardiovascular","Black","Male","Wisconsin",2003,"East North Central","Midwest","WI",398.259137104462,423.038968673231,444.947522065425,422.639919980147
+"832",49,35,1,0,"Communicable","Black","Male","Wisconsin",2003,"East North Central","Midwest","WI",55.9211473500728,68.9279435967034,86.2149675678522,69.5090264662593
+"833",49,35,1,0,"Injuries","Black","Male","Wisconsin",2003,"East North Central","Midwest","WI",109.979316793631,119.53583922688,128.301888088463,119.35403599939
+"834",49,35,1,0,"Non-communicable","Black","Male","Wisconsin",2003,"East North Central","Midwest","WI",159.909712120538,174.152228504824,189.695072031727,174.493474695407
+"835",49,35,1,1,"All other causes","Black","Female","Wisconsin",2003,"East North Central","Midwest","WI",160.515053110312,171.980500895063,185.834293174075,172.170599652083
+"836",49,35,1,1,"Cancers","Black","Female","Wisconsin",2003,"East North Central","Midwest","WI",186.672402057328,197.259405317163,208.081518524888,197.228437537746
+"837",49,35,1,1,"Cardiovascular","Black","Female","Wisconsin",2003,"East North Central","Midwest","WI",289.695899900662,306.948250043488,326.634606743624,307.318079088351
+"838",49,35,1,1,"Communicable","Black","Female","Wisconsin",2003,"East North Central","Midwest","WI",35.2891456085853,42.1142101301996,49.9556281415863,42.3154181565357
+"839",49,35,1,1,"Injuries","Black","Female","Wisconsin",2003,"East North Central","Midwest","WI",36.7452000121638,41.3148256407346,46.2031745019081,41.3199696007995
+"840",49,35,1,1,"Non-communicable","Black","Female","Wisconsin",2003,"East North Central","Midwest","WI",124.887608471333,135.22797383287,146.340755933943,135.20715044692
+"841",49,36,0,0,"All other causes","White","Male","Wisconsin",2004,"East North Central","Midwest","WI",127.138876803387,130.462390617851,133.541226093955,130.451488026051
+"842",49,36,0,0,"Cancers","White","Male","Wisconsin",2004,"East North Central","Midwest","WI",221.776099717817,225.915050219522,230.429382185773,225.966955441692
+"843",49,36,0,0,"Cardiovascular","White","Male","Wisconsin",2004,"East North Central","Midwest","WI",320.672316015465,326.63892071129,333.165034476576,326.558769662977
+"844",49,36,0,0,"Communicable","White","Male","Wisconsin",2004,"East North Central","Midwest","WI",33.5558684023367,35.4345059528871,37.4847533403809,35.466323678711
+"845",49,36,0,0,"Injuries","White","Male","Wisconsin",2004,"East North Central","Midwest","WI",74.495956716206,76.5493021037915,78.7881430054324,76.5705749778662
+"846",49,36,0,0,"Non-communicable","White","Male","Wisconsin",2004,"East North Central","Midwest","WI",119.094358112385,122.666631589838,126.043324559777,122.604827272508
+"847",49,36,0,1,"All other causes","White","Female","Wisconsin",2004,"East North Central","Midwest","WI",104.615306151414,107.19082364152,109.680616597463,107.165294886959
+"848",49,36,0,1,"Cancers","White","Female","Wisconsin",2004,"East North Central","Midwest","WI",151.726713563013,154.374964778526,157.142974411316,154.401636323036
+"849",49,36,0,1,"Cardiovascular","White","Female","Wisconsin",2004,"East North Central","Midwest","WI",207.658972279597,211.710503421431,215.646596114372,211.696463347587
+"850",49,36,0,1,"Communicable","White","Female","Wisconsin",2004,"East North Central","Midwest","WI",23.8107998779375,24.9328591274792,26.1560510148774,24.9412613166505
+"851",49,36,0,1,"Injuries","White","Female","Wisconsin",2004,"East North Central","Midwest","WI",31.9025050497795,33.0527108937331,34.3052058316926,33.0595404131764
+"852",49,36,0,1,"Non-communicable","White","Female","Wisconsin",2004,"East North Central","Midwest","WI",89.4379450802002,91.809906989958,94.3299050391207,91.8209800719046
+"853",49,36,1,0,"All other causes","Black","Male","Wisconsin",2004,"East North Central","Midwest","WI",179.519147242542,192.47247140704,206.732596454857,192.698977549197
+"854",49,36,1,0,"Cancers","Black","Male","Wisconsin",2004,"East North Central","Midwest","WI",319.880993916949,338.339149226023,358.574329237621,338.671463623225
+"855",49,36,1,0,"Cardiovascular","Black","Male","Wisconsin",2004,"East North Central","Midwest","WI",386.50921076101,408.804079727239,433.453834742283,408.929104205018
+"856",49,36,1,0,"Communicable","Black","Male","Wisconsin",2004,"East North Central","Midwest","WI",53.0904594300119,65.9238194876932,84.6762820963168,66.6169897777508
+"857",49,36,1,0,"Injuries","Black","Male","Wisconsin",2004,"East North Central","Midwest","WI",108.565570189171,117.54192733283,126.666253897711,117.500804099728
+"858",49,36,1,0,"Non-communicable","Black","Male","Wisconsin",2004,"East North Central","Midwest","WI",157.546881181599,170.898139631824,186.502501507032,171.39631787881
+"859",49,36,1,1,"All other causes","Black","Female","Wisconsin",2004,"East North Central","Midwest","WI",165.065835689997,176.329405378946,189.101590095605,176.370322080178
+"860",49,36,1,1,"Cancers","Black","Female","Wisconsin",2004,"East North Central","Midwest","WI",185.595949275927,196.369675756021,207.136247561711,196.356988744786
+"861",49,36,1,1,"Cardiovascular","Black","Female","Wisconsin",2004,"East North Central","Midwest","WI",281.854245610823,299.133994361942,316.005318167132,299.357228189966
+"862",49,36,1,1,"Communicable","Black","Female","Wisconsin",2004,"East North Central","Midwest","WI",34.3345077730209,40.5374001132063,47.9884594287895,40.7965139830241
+"863",49,36,1,1,"Injuries","Black","Female","Wisconsin",2004,"East North Central","Midwest","WI",36.9979321119231,41.6501077188258,46.5563496870723,41.7077934446953
+"864",49,36,1,1,"Non-communicable","Black","Female","Wisconsin",2004,"East North Central","Midwest","WI",126.270147290452,136.368133927717,148.172458449271,136.66282937762
+"865",49,37,0,0,"All other causes","White","Male","Wisconsin",2005,"East North Central","Midwest","WI",131.041381678439,134.138308902509,137.590857561563,134.167078959444
+"866",49,37,0,0,"Cancers","White","Male","Wisconsin",2005,"East North Central","Midwest","WI",215.528427024482,219.674766441388,224.156285913617,219.737571417969
+"867",49,37,0,0,"Cardiovascular","White","Male","Wisconsin",2005,"East North Central","Midwest","WI",305.895535883872,312.021037012617,317.980871258937,311.934607812682
+"868",49,37,0,0,"Communicable","White","Male","Wisconsin",2005,"East North Central","Midwest","WI",33.7167229308437,35.7141663404787,37.6864071423724,35.7384882098672
+"869",49,37,0,0,"Injuries","White","Male","Wisconsin",2005,"East North Central","Midwest","WI",76.0103781094335,78.1091008809832,80.20717363156,78.0720632939078
+"870",49,37,0,0,"Non-communicable","White","Male","Wisconsin",2005,"East North Central","Midwest","WI",118.315813996674,121.802355710297,125.370029524483,121.813435612026
+"871",49,37,0,1,"All other causes","White","Female","Wisconsin",2005,"East North Central","Midwest","WI",108.787935742092,111.403524291621,114.122500732539,111.420425059125
+"872",49,37,0,1,"Cancers","White","Female","Wisconsin",2005,"East North Central","Midwest","WI",151.568984995132,154.263329982613,156.809668171573,154.272268801541
+"873",49,37,0,1,"Cardiovascular","White","Female","Wisconsin",2005,"East North Central","Midwest","WI",202.362913184094,206.445692540209,210.294595135179,206.410729488695
+"874",49,37,0,1,"Communicable","White","Female","Wisconsin",2005,"East North Central","Midwest","WI",25.3604506641998,26.5155560608514,27.6440889282614,26.5038538136635
+"875",49,37,0,1,"Injuries","White","Female","Wisconsin",2005,"East North Central","Midwest","WI",32.144419409099,33.3378184220966,34.624524812277,33.3560971996648
+"876",49,37,0,1,"Non-communicable","White","Female","Wisconsin",2005,"East North Central","Midwest","WI",91.435339961297,93.7517188193135,96.2612858003475,93.7678394263393
+"877",49,37,1,0,"All other causes","Black","Male","Wisconsin",2005,"East North Central","Midwest","WI",180.437358430252,193.748777153034,208.890898694212,193.861705975084
+"878",49,37,1,0,"Cancers","Black","Male","Wisconsin",2005,"East North Central","Midwest","WI",315.368124310396,333.72199533079,353.900008311156,334.009099396344
+"879",49,37,1,0,"Cardiovascular","Black","Male","Wisconsin",2005,"East North Central","Midwest","WI",377.313938737294,398.913088376938,420.396644873411,398.886343893737
+"880",49,37,1,0,"Communicable","Black","Male","Wisconsin",2005,"East North Central","Midwest","WI",51.4869360997406,63.7080964672577,80.9181394020192,64.3337381236326
+"881",49,37,1,0,"Injuries","Black","Male","Wisconsin",2005,"East North Central","Midwest","WI",110.156830850004,119.420823738219,129.343590550333,119.412092209635
+"882",49,37,1,0,"Non-communicable","Black","Male","Wisconsin",2005,"East North Central","Midwest","WI",156.898607384789,170.430352297201,185.734159430508,170.740916332417
+"883",49,37,1,1,"All other causes","Black","Female","Wisconsin",2005,"East North Central","Midwest","WI",170.331429028768,181.361535044455,195.345638212096,181.768097794232
+"884",49,37,1,1,"Cancers","Black","Female","Wisconsin",2005,"East North Central","Midwest","WI",185.673006791612,196.360041063178,207.757268727134,196.39659856285
+"885",49,37,1,1,"Cardiovascular","Black","Female","Wisconsin",2005,"East North Central","Midwest","WI",273.679445514238,290.413602447392,309.956374398043,291.003483966595
+"886",49,37,1,1,"Communicable","Black","Female","Wisconsin",2005,"East North Central","Midwest","WI",33.2958899813182,39.5536694937215,47.5407661825035,39.8113147638114
+"887",49,37,1,1,"Injuries","Black","Female","Wisconsin",2005,"East North Central","Midwest","WI",37.4521988300719,41.9062599488163,46.5049573927727,41.9002306773589
+"888",49,37,1,1,"Non-communicable","Black","Female","Wisconsin",2005,"East North Central","Midwest","WI",128.979330148711,138.943431454643,151.518251611445,139.258426576449
+"889",49,38,0,0,"All other causes","White","Male","Wisconsin",2006,"East North Central","Midwest","WI",133.25466114446,136.774310794535,140.127549745436,136.766316248795
+"890",49,38,0,0,"Cancers","White","Male","Wisconsin",2006,"East North Central","Midwest","WI",211.219380503498,215.416442194515,219.386561871442,215.466875241943
+"891",49,38,0,0,"Cardiovascular","White","Male","Wisconsin",2006,"East North Central","Midwest","WI",289.563019949272,295.469243059523,301.677667122293,295.535440060116
+"892",49,38,0,0,"Communicable","White","Male","Wisconsin",2006,"East North Central","Midwest","WI",31.06017994642,32.8505144610734,34.8470365458246,32.8685680704801
+"893",49,38,0,0,"Injuries","White","Male","Wisconsin",2006,"East North Central","Midwest","WI",76.605839191618,78.7977881860213,80.8636656355404,78.7625763322833
+"894",49,38,0,0,"Non-communicable","White","Male","Wisconsin",2006,"East North Central","Midwest","WI",115.240790915026,118.566299754791,121.821872241815,118.530411479513
+"895",49,38,0,1,"All other causes","White","Female","Wisconsin",2006,"East North Central","Midwest","WI",113.384499217974,116.019719013379,118.576546310335,115.999510523993
+"896",49,38,0,1,"Cancers","White","Female","Wisconsin",2006,"East North Central","Midwest","WI",150.593026356751,153.307956451645,156.217818918317,153.336357383386
+"897",49,38,0,1,"Cardiovascular","White","Female","Wisconsin",2006,"East North Central","Midwest","WI",191.553372329603,195.158425437052,198.939928058076,195.181365587372
+"898",49,38,0,1,"Communicable","White","Female","Wisconsin",2006,"East North Central","Midwest","WI",22.9687494914659,23.9935864258132,25.2222921390577,24.0194558586297
+"899",49,38,0,1,"Injuries","White","Female","Wisconsin",2006,"East North Central","Midwest","WI",32.8934631342733,34.0416513676137,35.2903971454916,34.0514406131472
+"900",49,38,0,1,"Non-communicable","White","Female","Wisconsin",2006,"East North Central","Midwest","WI",91.9867651475276,94.3616007931619,96.8237316360065,94.3643548032042
+"901",49,38,1,0,"All other causes","Black","Male","Wisconsin",2006,"East North Central","Midwest","WI",178.922943174959,192.000537077887,207.800732814566,192.477088861807
+"902",49,38,1,0,"Cancers","Black","Male","Wisconsin",2006,"East North Central","Midwest","WI",308.971643668057,327.553852575048,346.147337120923,327.544833486859
+"903",49,38,1,0,"Cardiovascular","Black","Male","Wisconsin",2006,"East North Central","Midwest","WI",365.54951193861,387.766496820429,410.620381984617,387.457027222664
+"904",49,38,1,0,"Communicable","Black","Male","Wisconsin",2006,"East North Central","Midwest","WI",49.1126940006431,61.8726185409508,78.0289177721863,62.249390145745
+"905",49,38,1,0,"Injuries","Black","Male","Wisconsin",2006,"East North Central","Midwest","WI",109.088325575031,118.56606189784,128.004398784663,118.485100772641
+"906",49,38,1,0,"Non-communicable","Black","Male","Wisconsin",2006,"East North Central","Midwest","WI",156.228320981365,169.743401031515,184.56411218778,169.900936136781
+"907",49,38,1,1,"All other causes","Black","Female","Wisconsin",2006,"East North Central","Midwest","WI",171.165356856359,182.413639582509,195.873770185267,182.731549481204
+"908",49,38,1,1,"Cancers","Black","Female","Wisconsin",2006,"East North Central","Midwest","WI",186.747903043093,196.716384749327,207.22858075484,196.816797963648
+"909",49,38,1,1,"Cardiovascular","Black","Female","Wisconsin",2006,"East North Central","Midwest","WI",272.986176155164,286.525330917797,303.157250986944,287.014209077611
+"910",49,38,1,1,"Communicable","Black","Female","Wisconsin",2006,"East North Central","Midwest","WI",32.2371250730823,38.903463108203,46.543581384602,39.0998637328919
+"911",49,38,1,1,"Injuries","Black","Female","Wisconsin",2006,"East North Central","Midwest","WI",37.5711901751455,41.9687490380781,46.4249565151609,42.0068749899001
+"912",49,38,1,1,"Non-communicable","Black","Female","Wisconsin",2006,"East North Central","Midwest","WI",128.743083082561,138.706038399863,150.820555530402,139.138836169323
+"913",49,39,0,0,"All other causes","White","Male","Wisconsin",2007,"East North Central","Midwest","WI",133.383462844085,136.502141642277,140.012785482359,136.546243783001
+"914",49,39,0,0,"Cancers","White","Male","Wisconsin",2007,"East North Central","Midwest","WI",210.125683260766,214.43560896777,218.403214151904,214.367707342091
+"915",49,39,0,0,"Cardiovascular","White","Male","Wisconsin",2007,"East North Central","Midwest","WI",273.720637057825,279.363997231517,284.690771500139,279.410862109123
+"916",49,39,0,0,"Communicable","White","Male","Wisconsin",2007,"East North Central","Midwest","WI",29.7594730088766,31.5047714491612,33.3249809843349,31.5136601764723
+"917",49,39,0,0,"Injuries","White","Male","Wisconsin",2007,"East North Central","Midwest","WI",77.3070475908848,79.1470344524514,81.4175476011665,79.2146143002113
+"918",49,39,0,0,"Non-communicable","White","Male","Wisconsin",2007,"East North Central","Midwest","WI",115.254070087884,118.289717920079,121.823128827457,118.327648394947
+"919",49,39,0,1,"All other causes","White","Female","Wisconsin",2007,"East North Central","Midwest","WI",115.440280220625,118.123735045845,120.987791362727,118.150107210105
+"920",49,39,0,1,"Cancers","White","Female","Wisconsin",2007,"East North Central","Midwest","WI",147.841605179107,150.457020574448,153.110406228937,150.477526568814
+"921",49,39,0,1,"Cardiovascular","White","Female","Wisconsin",2007,"East North Central","Midwest","WI",182.719625916245,186.374549399912,190.036766643385,186.349897003666
+"922",49,39,0,1,"Communicable","White","Female","Wisconsin",2007,"East North Central","Midwest","WI",22.9673202950661,24.0483537148165,25.2039093507959,24.0612466350978
+"923",49,39,0,1,"Injuries","White","Female","Wisconsin",2007,"East North Central","Midwest","WI",33.5399245122722,34.6578018747962,35.9391322028379,34.6748891393041
+"924",49,39,0,1,"Non-communicable","White","Female","Wisconsin",2007,"East North Central","Midwest","WI",89.9947409617096,92.5013620988879,94.8730465814695,92.4969172385415
+"925",49,39,1,0,"All other causes","Black","Male","Wisconsin",2007,"East North Central","Midwest","WI",177.544956450219,190.756456922496,204.712052938348,190.946888372952
+"926",49,39,1,0,"Cancers","Black","Male","Wisconsin",2007,"East North Central","Midwest","WI",302.792088196427,320.340193089988,338.223772933897,320.308822190769
+"927",49,39,1,0,"Cardiovascular","Black","Male","Wisconsin",2007,"East North Central","Midwest","WI",359.837484128375,380.922827670444,402.502700340506,380.877872103147
+"928",49,39,1,0,"Communicable","Black","Male","Wisconsin",2007,"East North Central","Midwest","WI",48.2876115102405,60.4171533164587,74.8678768664222,60.5376474705858
+"929",49,39,1,0,"Injuries","Black","Male","Wisconsin",2007,"East North Central","Midwest","WI",106.569645627933,115.645142489897,125.598521823827,115.628167893698
+"930",49,39,1,0,"Non-communicable","Black","Male","Wisconsin",2007,"East North Central","Midwest","WI",153.362608475282,166.9733064772,182.441333469379,167.159021535035
+"931",49,39,1,1,"All other causes","Black","Female","Wisconsin",2007,"East North Central","Midwest","WI",165.892244706131,178.913383535798,190.801693062518,178.729449591881
+"932",49,39,1,1,"Cancers","Black","Female","Wisconsin",2007,"East North Central","Midwest","WI",186.53732969742,197.285848298995,207.378179057788,197.263988453356
+"933",49,39,1,1,"Cardiovascular","Black","Female","Wisconsin",2007,"East North Central","Midwest","WI",269.973831905584,284.83202946883,301.225106717073,285.045097642389
+"934",49,39,1,1,"Communicable","Black","Female","Wisconsin",2007,"East North Central","Midwest","WI",32.1294376225867,38.7661100079045,46.0870206802007,38.7793778831372
+"935",49,39,1,1,"Injuries","Black","Female","Wisconsin",2007,"East North Central","Midwest","WI",37.2854825456173,41.7106337998855,46.2887624923367,41.718647262357
+"936",49,39,1,1,"Non-communicable","Black","Female","Wisconsin",2007,"East North Central","Midwest","WI",128.142294008874,137.700741531985,149.947159218366,138.229235593477
+"937",49,40,0,0,"All other causes","White","Male","Wisconsin",2008,"East North Central","Midwest","WI",135.368132494968,138.363299184177,141.664967980448,138.377977536074
+"938",49,40,0,0,"Cancers","White","Male","Wisconsin",2008,"East North Central","Midwest","WI",208.201892331705,212.068238777854,216.137942244874,212.097024645386
+"939",49,40,0,0,"Cardiovascular","White","Male","Wisconsin",2008,"East North Central","Midwest","WI",269.532467948374,274.827932226591,280.199251402636,274.768162622815
+"940",49,40,0,0,"Communicable","White","Male","Wisconsin",2008,"East North Central","Midwest","WI",30.9247637291482,32.6761342286565,34.5734219094356,32.7125531860318
+"941",49,40,0,0,"Injuries","White","Male","Wisconsin",2008,"East North Central","Midwest","WI",76.0886382450177,78.2415071552923,80.3083915373295,78.2312335407476
+"942",49,40,0,0,"Non-communicable","White","Male","Wisconsin",2008,"East North Central","Midwest","WI",115.773078023295,118.969210417994,122.11251513541,118.944464424959
+"943",49,40,0,1,"All other causes","White","Female","Wisconsin",2008,"East North Central","Midwest","WI",116.082948096206,118.74421949393,121.714594382014,118.811705089245
+"944",49,40,0,1,"Cancers","White","Female","Wisconsin",2008,"East North Central","Midwest","WI",146.035068855022,148.912166550702,151.600001384185,148.856273033208
+"945",49,40,0,1,"Cardiovascular","White","Female","Wisconsin",2008,"East North Central","Midwest","WI",177.215458709801,180.944862210558,184.447398710963,180.858547703627
+"946",49,40,0,1,"Communicable","White","Female","Wisconsin",2008,"East North Central","Midwest","WI",23.0928308886088,24.2870162266516,25.4887217430086,24.2672824407116
+"947",49,40,0,1,"Injuries","White","Female","Wisconsin",2008,"East North Central","Midwest","WI",33.5039310242496,34.7182323183125,35.9294628373205,34.7285451044277
+"948",49,40,0,1,"Non-communicable","White","Female","Wisconsin",2008,"East North Central","Midwest","WI",89.8416833626001,92.1778306843323,94.5775311132466,92.1709414154932
+"949",49,40,1,0,"All other causes","Black","Male","Wisconsin",2008,"East North Central","Midwest","WI",179.268026203521,192.227606589621,206.423838012509,192.395313791647
+"950",49,40,1,0,"Cancers","Black","Male","Wisconsin",2008,"East North Central","Midwest","WI",298.831778190356,317.265836577887,333.977976597692,317.070570384543
+"951",49,40,1,0,"Cardiovascular","Black","Male","Wisconsin",2008,"East North Central","Midwest","WI",354.548361461283,374.615580978552,397.343065536811,374.713807737528
+"952",49,40,1,0,"Communicable","Black","Male","Wisconsin",2008,"East North Central","Midwest","WI",45.8974002640123,58.8153746334337,72.0916434046836,58.730462126132
+"953",49,40,1,0,"Injuries","Black","Male","Wisconsin",2008,"East North Central","Midwest","WI",101.01106821858,110.472094502335,120.309862736362,110.620248317514
+"954",49,40,1,0,"Non-communicable","Black","Male","Wisconsin",2008,"East North Central","Midwest","WI",150.826519265811,163.495939640392,178.607522208564,163.749471668753
+"955",49,40,1,1,"All other causes","Black","Female","Wisconsin",2008,"East North Central","Midwest","WI",164.24619500092,177.048766171556,189.155306999903,176.811697191425
+"956",49,40,1,1,"Cancers","Black","Female","Wisconsin",2008,"East North Central","Midwest","WI",187.183141831615,197.729534061727,208.008306936093,197.611976758589
+"957",49,40,1,1,"Cardiovascular","Black","Female","Wisconsin",2008,"East North Central","Midwest","WI",264.108715860262,279.442505956779,295.34700742448,279.645471110531
+"958",49,40,1,1,"Communicable","Black","Female","Wisconsin",2008,"East North Central","Midwest","WI",31.3150229253072,37.8437129636007,45.5850305108892,38.0471541705388
+"959",49,40,1,1,"Injuries","Black","Female","Wisconsin",2008,"East North Central","Midwest","WI",37.1621527469935,41.59541959829,46.1792783282162,41.6398638576784
+"960",49,40,1,1,"Non-communicable","Black","Female","Wisconsin",2008,"East North Central","Midwest","WI",123.842751224596,134.410933210623,145.98844373111,134.545284172002
+"961",49,41,0,0,"All other causes","White","Male","Wisconsin",2009,"East North Central","Midwest","WI",136.516091726414,139.932515928042,143.62485920786,139.956513922446
+"962",49,41,0,0,"Cancers","White","Male","Wisconsin",2009,"East North Central","Midwest","WI",205.211682711221,209.007395352872,213.181601043665,209.03749991931
+"963",49,41,0,0,"Cardiovascular","White","Male","Wisconsin",2009,"East North Central","Midwest","WI",258.608324544568,263.767883584378,269.0931974754,263.77585158959
+"964",49,41,0,0,"Communicable","White","Male","Wisconsin",2009,"East North Central","Midwest","WI",29.1784334965287,30.8792096531253,32.6451697689583,30.8683183061003
+"965",49,41,0,0,"Injuries","White","Male","Wisconsin",2009,"East North Central","Midwest","WI",75.3058919795435,77.5047416676025,79.6939931998612,77.483234901468
+"966",49,41,0,0,"Non-communicable","White","Male","Wisconsin",2009,"East North Central","Midwest","WI",113.834529195505,117.108732862494,120.435798047461,117.11093985333
+"967",49,41,0,1,"All other causes","White","Female","Wisconsin",2009,"East North Central","Midwest","WI",116.753796612499,119.404326660736,122.100021653292,119.379730969956
+"968",49,41,0,1,"Cancers","White","Female","Wisconsin",2009,"East North Central","Midwest","WI",143.299910124481,145.954648898664,148.566208989296,145.935368277442
+"969",49,41,0,1,"Cardiovascular","White","Female","Wisconsin",2009,"East North Central","Midwest","WI",168.573679306061,171.869275798182,175.312352422044,171.874588364981
+"970",49,41,0,1,"Communicable","White","Female","Wisconsin",2009,"East North Central","Midwest","WI",21.3996917989534,22.4297366285566,23.468851649274,22.43296325065
+"971",49,41,0,1,"Injuries","White","Female","Wisconsin",2009,"East North Central","Midwest","WI",33.6831395118199,35.0047219396728,36.1885415488156,34.996767047052
+"972",49,41,0,1,"Non-communicable","White","Female","Wisconsin",2009,"East North Central","Midwest","WI",88.3756144363369,90.76394062065,93.1961405050135,90.7457119751377
+"973",49,41,1,0,"All other causes","Black","Male","Wisconsin",2009,"East North Central","Midwest","WI",181.586766716119,193.634440828944,208.187454566168,193.993688971369
+"974",49,41,1,0,"Cancers","Black","Male","Wisconsin",2009,"East North Central","Midwest","WI",294.482475624085,311.931376622336,328.314129559467,311.798376294388
+"975",49,41,1,0,"Cardiovascular","Black","Male","Wisconsin",2009,"East North Central","Midwest","WI",351.803013874276,372.441138736825,393.75301985242,372.567903158194
+"976",49,41,1,0,"Communicable","Black","Male","Wisconsin",2009,"East North Central","Midwest","WI",44.5177426119357,56.8097742625842,69.5890566799917,56.9188914113705
+"977",49,41,1,0,"Injuries","Black","Male","Wisconsin",2009,"East North Central","Midwest","WI",99.2683832747565,109.034565961888,119.249918213771,109.277663561047
+"978",49,41,1,0,"Non-communicable","Black","Male","Wisconsin",2009,"East North Central","Midwest","WI",147.904023304686,160.08109576789,174.514382065039,160.384154045335
+"979",49,41,1,1,"All other causes","Black","Female","Wisconsin",2009,"East North Central","Midwest","WI",165.008401167822,178.062162278504,190.381662393037,178.019563115834
+"980",49,41,1,1,"Cancers","Black","Female","Wisconsin",2009,"East North Central","Midwest","WI",186.661050440022,196.853035962173,207.768534830544,196.927305187354
+"981",49,41,1,1,"Cardiovascular","Black","Female","Wisconsin",2009,"East North Central","Midwest","WI",256.862280298406,272.503397676583,286.670137632373,272.344106517357
+"982",49,41,1,1,"Communicable","Black","Female","Wisconsin",2009,"East North Central","Midwest","WI",30.8096391766173,37.443354096968,44.9418019328266,37.5616692852761
+"983",49,41,1,1,"Injuries","Black","Female","Wisconsin",2009,"East North Central","Midwest","WI",36.8756252325255,41.632359237,46.2543810977888,41.6239301411383
+"984",49,41,1,1,"Non-communicable","Black","Female","Wisconsin",2009,"East North Central","Midwest","WI",123.93979122108,133.727345924456,143.891462357538,133.82463970912
+"985",49,42,0,0,"All other causes","White","Male","Wisconsin",2010,"East North Central","Midwest","WI",140.062659789106,143.244090128709,146.840876691179,143.31194152873
+"986",49,42,0,0,"Cancers","White","Male","Wisconsin",2010,"East North Central","Midwest","WI",204.081921865409,208.026810831052,212.334980532793,208.072306832882
+"987",49,42,0,0,"Cardiovascular","White","Male","Wisconsin",2010,"East North Central","Midwest","WI",254.634368576935,259.862420052171,265.080917611477,259.895633044149
+"988",49,42,0,0,"Communicable","White","Male","Wisconsin",2010,"East North Central","Midwest","WI",27.2248413853554,28.7978511461496,30.4936735563637,28.8316676725312
+"989",49,42,0,0,"Injuries","White","Male","Wisconsin",2010,"East North Central","Midwest","WI",76.397918284031,78.5698567601252,80.7888985480115,78.5659948197713
+"990",49,42,0,0,"Non-communicable","White","Male","Wisconsin",2010,"East North Central","Midwest","WI",114.606327139493,117.811103118223,121.012979352588,117.775959446366
+"991",49,42,0,1,"All other causes","White","Female","Wisconsin",2010,"East North Central","Midwest","WI",120.593504421506,123.154266619515,126.217336669572,123.22473211969
+"992",49,42,0,1,"Cancers","White","Female","Wisconsin",2010,"East North Central","Midwest","WI",143.131678027516,145.705637971963,148.223665852093,145.732228438325
+"993",49,42,0,1,"Cardiovascular","White","Female","Wisconsin",2010,"East North Central","Midwest","WI",169.998780236473,173.115675460499,176.906145569398,173.181747689704
+"994",49,42,0,1,"Communicable","White","Female","Wisconsin",2010,"East North Central","Midwest","WI",20.8007507871671,21.7709168333584,22.8017136406832,21.7722319219835
+"995",49,42,0,1,"Injuries","White","Female","Wisconsin",2010,"East North Central","Midwest","WI",34.8736217527257,36.0729248284978,37.4253048313459,36.1005265045851
+"996",49,42,0,1,"Non-communicable","White","Female","Wisconsin",2010,"East North Central","Midwest","WI",90.1831707850966,92.647055974002,95.0246178296212,92.6701667832557
+"997",49,42,1,0,"All other causes","Black","Male","Wisconsin",2010,"East North Central","Midwest","WI",180.540305781747,193.692788412125,208.739183645387,193.927250202577
+"998",49,42,1,0,"Cancers","Black","Male","Wisconsin",2010,"East North Central","Midwest","WI",291.593393921867,308.335642393915,326.426017699262,308.328922876917
+"999",49,42,1,0,"Cardiovascular","Black","Male","Wisconsin",2010,"East North Central","Midwest","WI",351.541963122669,371.897996623389,392.375230924214,371.936884410798
+"1000",49,42,1,0,"Communicable","Black","Male","Wisconsin",2010,"East North Central","Midwest","WI",43.3696736126914,55.6731529568459,67.9654993846322,55.579056002495
+"1001",49,42,1,0,"Injuries","Black","Male","Wisconsin",2010,"East North Central","Midwest","WI",98.5104820152968,107.708544295258,117.229845032435,107.643580183289
+"1002",49,42,1,0,"Non-communicable","Black","Male","Wisconsin",2010,"East North Central","Midwest","WI",143.58787727161,156.201288282225,170.754190875895,156.26174096198
+"1003",49,42,1,1,"All other causes","Black","Female","Wisconsin",2010,"East North Central","Midwest","WI",172.513199890562,184.976192217795,198.837978556863,185.258605863548
+"1004",49,42,1,1,"Cancers","Black","Female","Wisconsin",2010,"East North Central","Midwest","WI",186.82333782289,197.709691367301,209.081009373633,197.747470313428
+"1005",49,42,1,1,"Cardiovascular","Black","Female","Wisconsin",2010,"East North Central","Midwest","WI",252.057057243808,266.993006267596,282.559641977327,266.931655853745
+"1006",49,42,1,1,"Communicable","Black","Female","Wisconsin",2010,"East North Central","Midwest","WI",30.5946542978366,36.9902586445113,44.9999636978593,37.2258158466118
+"1007",49,42,1,1,"Injuries","Black","Female","Wisconsin",2010,"East North Central","Midwest","WI",36.9035009996695,41.6681519134221,46.2086711392691,41.6212270980163
+"1008",49,42,1,1,"Non-communicable","Black","Female","Wisconsin",2010,"East North Central","Midwest","WI",123.857697853583,134.450801747524,144.86720038616,134.477207440239
+"1009",49,43,0,0,"All other causes","White","Male","Wisconsin",2011,"East North Central","Midwest","WI",142.169216495425,145.607143526573,148.741558384115,145.542785440837
+"1010",49,43,0,0,"Cancers","White","Male","Wisconsin",2011,"East North Central","Midwest","WI",201.816565020997,205.774593135422,210.009360747757,205.779824138883
+"1011",49,43,0,0,"Cardiovascular","White","Male","Wisconsin",2011,"East North Central","Midwest","WI",250.828192507132,255.90946799038,261.167883169569,255.933385601236
+"1012",49,43,0,0,"Communicable","White","Male","Wisconsin",2011,"East North Central","Midwest","WI",27.3662806605268,29.0582134047127,30.6948014097837,29.0675406574881
+"1013",49,43,0,0,"Injuries","White","Male","Wisconsin",2011,"East North Central","Midwest","WI",77.529699152713,79.7520701420065,81.8914685544007,79.7375137072869
+"1014",49,43,0,0,"Non-communicable","White","Male","Wisconsin",2011,"East North Central","Midwest","WI",112.465375104653,115.403966699393,118.596719304295,115.431106301523
+"1015",49,43,0,1,"All other causes","White","Female","Wisconsin",2011,"East North Central","Midwest","WI",124.025118979022,126.633415554903,129.376179877069,126.686927316263
+"1016",49,43,0,1,"Cancers","White","Female","Wisconsin",2011,"East North Central","Midwest","WI",142.808045305593,145.460469789321,147.722704632862,145.389082331608
+"1017",49,43,0,1,"Cardiovascular","White","Female","Wisconsin",2011,"East North Central","Midwest","WI",168.652322805629,171.800335850335,175.151690168042,171.820205670746
+"1018",49,43,0,1,"Communicable","White","Female","Wisconsin",2011,"East North Central","Midwest","WI",21.4515934830613,22.4560955876589,23.5814444746652,22.4654943888787
+"1019",49,43,0,1,"Injuries","White","Female","Wisconsin",2011,"East North Central","Midwest","WI",35.9149044898143,37.1575182836757,38.4838816122247,37.1682856458657
+"1020",49,43,0,1,"Non-communicable","White","Female","Wisconsin",2011,"East North Central","Midwest","WI",90.9132292224757,93.4462195127916,95.8062641427582,93.4193365259959
+"1021",49,43,1,0,"All other causes","Black","Male","Wisconsin",2011,"East North Central","Midwest","WI",181.683189691891,194.125830743646,207.948202382078,194.184777417757
+"1022",49,43,1,0,"Cancers","Black","Male","Wisconsin",2011,"East North Central","Midwest","WI",286.163612686876,304.305905043243,322.684916594209,304.153863944734
+"1023",49,43,1,0,"Cardiovascular","Black","Male","Wisconsin",2011,"East North Central","Midwest","WI",351.437625040766,372.078840680845,393.825446146282,372.460242087046
+"1024",49,43,1,0,"Communicable","Black","Male","Wisconsin",2011,"East North Central","Midwest","WI",42.4912762931537,54.4824665662311,68.3371857013679,54.6126881463824
+"1025",49,43,1,0,"Injuries","Black","Male","Wisconsin",2011,"East North Central","Midwest","WI",97.9605608891394,107.200648258958,117.441064914476,107.383434137875
+"1026",49,43,1,0,"Non-communicable","Black","Male","Wisconsin",2011,"East North Central","Midwest","WI",138.019306159716,150.988878050321,164.603378204617,151.196513722315
+"1027",49,43,1,1,"All other causes","Black","Female","Wisconsin",2011,"East North Central","Midwest","WI",176.490760674917,189.115701208478,203.600755152277,189.444148928567
+"1028",49,43,1,1,"Cancers","Black","Female","Wisconsin",2011,"East North Central","Midwest","WI",186.569163592547,198.228200278311,209.264686656706,198.274637987081
+"1029",49,43,1,1,"Cardiovascular","Black","Female","Wisconsin",2011,"East North Central","Midwest","WI",245.570474075948,260.892432848375,274.792963628329,260.920654298309
+"1030",49,43,1,1,"Communicable","Black","Female","Wisconsin",2011,"East North Central","Midwest","WI",30.6386571398947,36.9250693794845,45.085541670659,37.2030354103744
+"1031",49,43,1,1,"Injuries","Black","Female","Wisconsin",2011,"East North Central","Midwest","WI",37.0336060742825,41.6265205504302,46.3383484544101,41.6316124246063
+"1032",49,43,1,1,"Non-communicable","Black","Female","Wisconsin",2011,"East North Central","Midwest","WI",123.424214473224,133.628132427856,145.339523215542,133.844012778933
+"1033",49,44,0,0,"All other causes","White","Male","Wisconsin",2012,"East North Central","Midwest","WI",144.245925347862,147.843717685612,151.356549577413,147.861061468612
+"1034",49,44,0,0,"Cancers","White","Male","Wisconsin",2012,"East North Central","Midwest","WI",195.077285609405,198.907004131657,202.926013143941,198.947503133142
+"1035",49,44,0,0,"Cardiovascular","White","Male","Wisconsin",2012,"East North Central","Midwest","WI",248.863390500512,253.789330515044,258.958002665295,253.836643942033
+"1036",49,44,0,0,"Communicable","White","Male","Wisconsin",2012,"East North Central","Midwest","WI",28.1709489139872,29.8049087245003,31.3993969608995,29.8038136348509
+"1037",49,44,0,0,"Injuries","White","Male","Wisconsin",2012,"East North Central","Midwest","WI",78.9451118455393,81.3170134443516,83.5291837888638,81.2948873290518
+"1038",49,44,0,0,"Non-communicable","White","Male","Wisconsin",2012,"East North Central","Midwest","WI",110.314566369025,113.224461950159,116.355889321264,113.257607900253
+"1039",49,44,0,1,"All other causes","White","Female","Wisconsin",2012,"East North Central","Midwest","WI",125.241824459489,127.967515666928,130.922877966724,127.954809779468
+"1040",49,44,0,1,"Cancers","White","Female","Wisconsin",2012,"East North Central","Midwest","WI",140.317534513964,143.05554253788,145.63587872889,143.059274702023
+"1041",49,44,0,1,"Cardiovascular","White","Female","Wisconsin",2012,"East North Central","Midwest","WI",164.607344137289,167.716658675703,171.033344670153,167.708317037802
+"1042",49,44,0,1,"Communicable","White","Female","Wisconsin",2012,"East North Central","Midwest","WI",21.1690628513881,22.17547962222,23.2149805335318,22.1773727691436
+"1043",49,44,0,1,"Injuries","White","Female","Wisconsin",2012,"East North Central","Midwest","WI",37.0237621323211,38.3838378041843,39.8012470104528,38.4038552915741
+"1044",49,44,0,1,"Non-communicable","White","Female","Wisconsin",2012,"East North Central","Midwest","WI",88.7070872716974,91.0673759658843,93.5975752401514,91.1050753580928
+"1045",49,44,1,0,"All other causes","Black","Male","Wisconsin",2012,"East North Central","Midwest","WI",180.833016257966,194.742039994068,210.512457925965,194.952367565923
+"1046",49,44,1,0,"Cancers","Black","Male","Wisconsin",2012,"East North Central","Midwest","WI",283.153094634636,302.590260706306,321.193769518635,302.713391378394
+"1047",49,44,1,0,"Cardiovascular","Black","Male","Wisconsin",2012,"East North Central","Midwest","WI",349.249531481967,370.361219817171,392.428047883731,370.341230671465
+"1048",49,44,1,0,"Communicable","Black","Male","Wisconsin",2012,"East North Central","Midwest","WI",42.2155552388769,54.4668720067538,67.2755081053982,54.3585789797481
+"1049",49,44,1,0,"Injuries","Black","Male","Wisconsin",2012,"East North Central","Midwest","WI",98.0548950938835,107.778738913667,118.229837198646,107.897059114251
+"1050",49,44,1,0,"Non-communicable","Black","Male","Wisconsin",2012,"East North Central","Midwest","WI",134.169007839895,148.60331624057,162.416383407214,148.531738682029
+"1051",49,44,1,1,"All other causes","Black","Female","Wisconsin",2012,"East North Central","Midwest","WI",180.634090577164,195.072137274628,210.079157610365,195.270894971649
+"1052",49,44,1,1,"Cancers","Black","Female","Wisconsin",2012,"East North Central","Midwest","WI",186.310113463122,198.827044818157,210.40579252417,198.671701856274
+"1053",49,44,1,1,"Cardiovascular","Black","Female","Wisconsin",2012,"East North Central","Midwest","WI",239.985150250902,254.992716358459,270.37617408274,255.068791714154
+"1054",49,44,1,1,"Communicable","Black","Female","Wisconsin",2012,"East North Central","Midwest","WI",30.6704954736404,37.1568640577222,45.5515357565165,37.5064230793051
+"1055",49,44,1,1,"Injuries","Black","Female","Wisconsin",2012,"East North Central","Midwest","WI",37.1285071179476,41.9594905016756,46.9332972697303,41.9042048862188
+"1056",49,44,1,1,"Non-communicable","Black","Female","Wisconsin",2012,"East North Central","Midwest","WI",123.730260558677,133.863391578189,145.616648227632,134.163981636334
+"1057",49,45,0,0,"All other causes","White","Male","Wisconsin",2013,"East North Central","Midwest","WI",147.63646361646,151.434933166124,155.180757542646,151.433454168741
+"1058",49,45,0,0,"Cancers","White","Male","Wisconsin",2013,"East North Central","Midwest","WI",191.790698577227,196.14345765933,200.327707693784,196.126347329543
+"1059",49,45,0,0,"Cardiovascular","White","Male","Wisconsin",2013,"East North Central","Midwest","WI",249.207521901348,254.549544273944,260.148325297933,254.596209380034
+"1060",49,45,0,0,"Communicable","White","Male","Wisconsin",2013,"East North Central","Midwest","WI",28.1213056146628,29.7819565616308,31.6245902822558,29.8050745475067
+"1061",49,45,0,0,"Injuries","White","Male","Wisconsin",2013,"East North Central","Midwest","WI",81.3149022330717,83.9707262249849,86.756052969907,83.9993722508263
+"1062",49,45,0,0,"Non-communicable","White","Male","Wisconsin",2013,"East North Central","Midwest","WI",110.467789758285,113.806663588248,117.392721619837,113.805494499483
+"1063",49,45,0,1,"All other causes","White","Female","Wisconsin",2013,"East North Central","Midwest","WI",129.370492662067,132.281420613982,135.335860191764,132.281754977705
+"1064",49,45,0,1,"Cancers","White","Female","Wisconsin",2013,"East North Central","Midwest","WI",138.414214463484,141.464671761075,144.703982138882,141.491317309553
+"1065",49,45,0,1,"Cardiovascular","White","Female","Wisconsin",2013,"East North Central","Midwest","WI",161.237851174227,164.983374080708,168.333963478614,164.965317415786
+"1066",49,45,0,1,"Communicable","White","Female","Wisconsin",2013,"East North Central","Midwest","WI",22.500236968034,23.6858225723907,24.969889515831,23.6838683582824
+"1067",49,45,0,1,"Injuries","White","Female","Wisconsin",2013,"East North Central","Midwest","WI",38.0985370893771,39.5990658825903,41.4207478511001,39.6490905945218
+"1068",49,45,0,1,"Non-communicable","White","Female","Wisconsin",2013,"East North Central","Midwest","WI",90.5201345463602,93.3720911514509,96.0000308792073,93.3284777012458
+"1069",49,45,1,0,"All other causes","Black","Male","Wisconsin",2013,"East North Central","Midwest","WI",179.625390359466,194.260888314758,210.327945658976,194.603146218488
+"1070",49,45,1,0,"Cancers","Black","Male","Wisconsin",2013,"East North Central","Midwest","WI",279.705598643891,300.860717873945,321.194869816142,300.880523854094
+"1071",49,45,1,0,"Cardiovascular","Black","Male","Wisconsin",2013,"East North Central","Midwest","WI",347.131014852538,369.011314456798,392.980946147979,369.13344086289
+"1072",49,45,1,0,"Communicable","Black","Male","Wisconsin",2013,"East North Central","Midwest","WI",40.8023136736782,54.7057738866945,69.4753831571264,54.8004776003555
+"1073",49,45,1,0,"Injuries","Black","Male","Wisconsin",2013,"East North Central","Midwest","WI",97.9308779533379,107.640831553545,119.617400989682,107.817957183686
+"1074",49,45,1,0,"Non-communicable","Black","Male","Wisconsin",2013,"East North Central","Midwest","WI",131.636486160514,147.898362763905,164.698771005557,147.877430082713
+"1075",49,45,1,1,"All other causes","Black","Female","Wisconsin",2013,"East North Central","Midwest","WI",180.455066293781,197.1718231015,214.70268360593,197.251870831309
+"1076",49,45,1,1,"Cancers","Black","Female","Wisconsin",2013,"East North Central","Midwest","WI",187.775660523726,200.636415057554,215.187027362245,200.765950954159
+"1077",49,45,1,1,"Cardiovascular","Black","Female","Wisconsin",2013,"East North Central","Midwest","WI",235.990571751924,253.733572509877,272.411062406295,254.012032707437
+"1078",49,45,1,1,"Communicable","Black","Female","Wisconsin",2013,"East North Central","Midwest","WI",30.103914980929,37.0173039498088,45.987400069324,37.3324683476443
+"1079",49,45,1,1,"Injuries","Black","Female","Wisconsin",2013,"East North Central","Midwest","WI",36.8639140536975,42.0333227024045,47.4553396253125,42.013050572578
+"1080",49,45,1,1,"Non-communicable","Black","Female","Wisconsin",2013,"East North Central","Midwest","WI",119.846940025326,132.362938661867,144.769744016854,132.346963430382

@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",36,1,0,0,"All other causes","White","Male","Oklahoma",1969,"West South Central","South","OK",152.504386641427,158.314950379427,164.586246016091,158.264772779998
+"2",36,1,0,0,"Cancers","White","Male","Oklahoma",1969,"West South Central","South","OK",227.234884912858,233.620222350416,239.923644063586,233.652441764166
+"3",36,1,0,0,"Cardiovascular","White","Male","Oklahoma",1969,"West South Central","South","OK",860.537345607027,877.700633092774,896.016613722719,878.152804170108
+"4",36,1,0,0,"Communicable","White","Male","Oklahoma",1969,"West South Central","South","OK",55.0613622060998,59.4506552803454,64.4642174641487,59.5264910570438
+"5",36,1,0,0,"Injuries","White","Male","Oklahoma",1969,"West South Central","South","OK",121.320862602968,125.641546097784,130.489816242272,125.735170570902
+"6",36,1,0,0,"Non-communicable","White","Male","Oklahoma",1969,"West South Central","South","OK",96.583905749074,100.641662172764,105.247166520435,100.736875041471
+"7",36,1,0,1,"All other causes","White","Female","Oklahoma",1969,"West South Central","South","OK",102.3164223404,106.918999900015,111.8055068199,107.013926172063
+"8",36,1,0,1,"Cancers","White","Female","Oklahoma",1969,"West South Central","South","OK",145.967222187253,150.021095031759,154.367067731399,150.056243634641
+"9",36,1,0,1,"Cardiovascular","White","Female","Oklahoma",1969,"West South Central","South","OK",519.014914338442,531.195652441191,543.774955580147,531.367456837558
+"10",36,1,0,1,"Communicable","White","Female","Oklahoma",1969,"West South Central","South","OK",34.4826028010132,37.1510539430002,40.0156449004583,37.1689489980562
+"11",36,1,0,1,"Injuries","White","Female","Oklahoma",1969,"West South Central","South","OK",46.3991818585964,48.9870858546085,51.5794966198165,48.9605321782401
+"12",36,1,0,1,"Non-communicable","White","Female","Oklahoma",1969,"West South Central","South","OK",44.033817956447,46.3241898328736,48.9769846931859,46.3532441595393
+"13",36,1,1,0,"All other causes","Black","Male","Oklahoma",1969,"West South Central","South","OK",209.913577202257,230.341265500158,255.916332990924,230.737044041001
+"14",36,1,1,0,"Cancers","Black","Male","Oklahoma",1969,"West South Central","South","OK",259.325821464642,279.770064768696,301.563950309808,279.801738218334
+"15",36,1,1,0,"Cardiovascular","Black","Male","Oklahoma",1969,"West South Central","South","OK",793.825980735629,846.363923563693,891.588936539877,845.788245063474
+"16",36,1,1,0,"Communicable","Black","Male","Oklahoma",1969,"West South Central","South","OK",61.7872578979627,77.585148921381,97.0254312755444,77.982050349127
+"17",36,1,1,0,"Injuries","Black","Male","Oklahoma",1969,"West South Central","South","OK",194.773899016416,217.654543823999,245.853385876801,218.243496101239
+"18",36,1,1,0,"Non-communicable","Black","Male","Oklahoma",1969,"West South Central","South","OK",104.584992959125,120.165955269318,140.441593628466,120.845911029079
+"19",36,1,1,1,"All other causes","Black","Female","Oklahoma",1969,"West South Central","South","OK",128.875016884218,141.35155076598,155.811696418826,141.616143023401
+"20",36,1,1,1,"Cancers","Black","Female","Oklahoma",1969,"West South Central","South","OK",160.031580577482,171.232858149087,182.734698212031,171.31247964737
+"21",36,1,1,1,"Cardiovascular","Black","Female","Oklahoma",1969,"West South Central","South","OK",562.287708445219,595.244412716717,632.850814426685,596.013187150984
+"22",36,1,1,1,"Communicable","Black","Female","Oklahoma",1969,"West South Central","South","OK",35.381699718236,42.453091766305,52.0534070736159,42.8056186166518
+"23",36,1,1,1,"Injuries","Black","Female","Oklahoma",1969,"West South Central","South","OK",44.8735542282809,50.9784031824864,60.1133417302936,51.3775902536494
+"24",36,1,1,1,"Non-communicable","Black","Female","Oklahoma",1969,"West South Central","South","OK",68.9879800404198,81.7613941187139,95.2388708771795,81.7926553102566
+"25",36,2,0,0,"All other causes","White","Male","Oklahoma",1970,"West South Central","South","OK",151.061262888141,155.963269121644,161.393606767141,156.099203277156
+"26",36,2,0,0,"Cancers","White","Male","Oklahoma",1970,"West South Central","South","OK",230.347597820043,235.997740974071,241.693725796897,236.060203948083
+"27",36,2,0,0,"Cardiovascular","White","Male","Oklahoma",1970,"West South Central","South","OK",859.060922787402,876.310640510377,893.188738245187,876.170277345399
+"28",36,2,0,0,"Communicable","White","Male","Oklahoma",1970,"West South Central","South","OK",55.3046249690125,59.1489226228341,64.094133221437,59.2881084591038
+"29",36,2,0,0,"Injuries","White","Male","Oklahoma",1970,"West South Central","South","OK",121.862719613253,125.976432070322,130.224606245574,125.95793810652
+"30",36,2,0,0,"Non-communicable","White","Male","Oklahoma",1970,"West South Central","South","OK",95.8508610084555,99.5217555486431,103.376771016116,99.5155422243806
+"31",36,2,0,1,"All other causes","White","Female","Oklahoma",1970,"West South Central","South","OK",100.908551035531,104.472489798564,108.65413453756,104.542781986973
+"32",36,2,0,1,"Cancers","White","Female","Oklahoma",1970,"West South Central","South","OK",145.933849825954,149.521594069198,153.096272811178,149.514539831894
+"33",36,2,0,1,"Cardiovascular","White","Female","Oklahoma",1970,"West South Central","South","OK",508.17378871899,519.194532049153,530.529324014927,519.207659761533
+"34",36,2,0,1,"Communicable","White","Female","Oklahoma",1970,"West South Central","South","OK",34.0361799588934,36.3256539020168,38.7155074722777,36.3773322048136
+"35",36,2,0,1,"Injuries","White","Female","Oklahoma",1970,"West South Central","South","OK",46.1919517342029,48.3023240055834,50.6213423213196,48.3219864217106
+"36",36,2,0,1,"Non-communicable","White","Female","Oklahoma",1970,"West South Central","South","OK",43.8121739880028,45.8567284805278,48.1199898945375,45.88600269055
+"37",36,2,1,0,"All other causes","Black","Male","Oklahoma",1970,"West South Central","South","OK",208.952344598422,228.357173983665,252.114058727798,229.022439457154
+"38",36,2,1,0,"Cancers","Black","Male","Oklahoma",1970,"West South Central","South","OK",261.692237393753,280.158036221735,298.96075994275,280.245875466547
+"39",36,2,1,0,"Cardiovascular","Black","Male","Oklahoma",1970,"West South Central","South","OK",794.002667010296,834.638002994211,876.61316919036,835.090064532261
+"40",36,2,1,0,"Communicable","Black","Male","Oklahoma",1970,"West South Central","South","OK",60.6505222743998,75.2099297995253,92.3616275235459,75.5406946062796
+"41",36,2,1,0,"Injuries","Black","Male","Oklahoma",1970,"West South Central","South","OK",191.682199009357,211.282629274771,233.654908715952,211.596414679084
+"42",36,2,1,0,"Non-communicable","Black","Male","Oklahoma",1970,"West South Central","South","OK",104.58375928788,119.72632686631,137.90180516266,120.176071052993
+"43",36,2,1,1,"All other causes","Black","Female","Oklahoma",1970,"West South Central","South","OK",129.031674185911,140.709956984949,153.874534554389,140.750832565331
+"44",36,2,1,1,"Cancers","Black","Female","Oklahoma",1970,"West South Central","South","OK",162.100147741703,172.084476672007,183.765076009404,172.216639466289
+"45",36,2,1,1,"Cardiovascular","Black","Female","Oklahoma",1970,"West South Central","South","OK",565.969959361161,595.22669795454,626.833827438768,595.292951531653
+"46",36,2,1,1,"Communicable","Black","Female","Oklahoma",1970,"West South Central","South","OK",35.4338468998129,42.2598230082487,50.8042823997019,42.4328695869975
+"47",36,2,1,1,"Injuries","Black","Female","Oklahoma",1970,"West South Central","South","OK",44.6954400137408,50.7587951388261,59.8927859868906,51.1116946783909
+"48",36,2,1,1,"Non-communicable","Black","Female","Oklahoma",1970,"West South Central","South","OK",68.9755352626266,80.439901559803,93.9930732136942,80.8140178082113
+"49",36,3,0,0,"All other causes","White","Male","Oklahoma",1971,"West South Central","South","OK",144.691186838788,148.762118436578,153.719657593245,148.978550598978
+"50",36,3,0,0,"Cancers","White","Male","Oklahoma",1971,"West South Central","South","OK",231.202431206482,236.727442935018,242.075891230954,236.801506602366
+"51",36,3,0,0,"Cardiovascular","White","Male","Oklahoma",1971,"West South Central","South","OK",830.357013516471,844.987569546094,860.853366177845,845.333984861741
+"52",36,3,0,0,"Communicable","White","Male","Oklahoma",1971,"West South Central","South","OK",55.2778825525815,58.9359285502091,63.4327912861505,59.0948846965853
+"53",36,3,0,0,"Injuries","White","Male","Oklahoma",1971,"West South Central","South","OK",121.538654874884,125.279051625202,129.026443861132,125.249495323239
+"54",36,3,0,0,"Non-communicable","White","Male","Oklahoma",1971,"West South Central","South","OK",95.3781510393701,98.8443172894498,102.483957298185,98.8189820002338
+"55",36,3,0,1,"All other causes","White","Female","Oklahoma",1971,"West South Central","South","OK",96.7525358414077,100.130601080013,103.626976658037,100.097148327174
+"56",36,3,0,1,"Cancers","White","Female","Oklahoma",1971,"West South Central","South","OK",145.25894129962,148.60147812476,151.948986876593,148.675428985336
+"57",36,3,0,1,"Cardiovascular","White","Female","Oklahoma",1971,"West South Central","South","OK",497.144120110358,507.525341788244,517.785112289638,507.48077007102
+"58",36,3,0,1,"Communicable","White","Female","Oklahoma",1971,"West South Central","South","OK",32.7716072213505,34.9217994082745,37.3145107915158,34.9246666251164
+"59",36,3,0,1,"Injuries","White","Female","Oklahoma",1971,"West South Central","South","OK",45.7412937611071,47.6971792930716,50.0133319226048,47.6990987722744
+"60",36,3,0,1,"Non-communicable","White","Female","Oklahoma",1971,"West South Central","South","OK",42.8512974870407,44.9084327457505,46.9571842520739,44.900837265442
+"61",36,3,1,0,"All other causes","Black","Male","Oklahoma",1971,"West South Central","South","OK",201.960086337978,219.881659045394,239.371196947511,220.330308161961
+"62",36,3,1,0,"Cancers","Black","Male","Oklahoma",1971,"West South Central","South","OK",262.52620320148,281.552887384598,300.379992011834,281.587972285085
+"63",36,3,1,0,"Cardiovascular","Black","Male","Oklahoma",1971,"West South Central","South","OK",785.589370416072,826.549556519549,864.44897922432,826.06098401857
+"64",36,3,1,0,"Communicable","Black","Male","Oklahoma",1971,"West South Central","South","OK",58.6609173688283,73.2987285056519,88.8732015680859,73.6924182463855
+"65",36,3,1,0,"Injuries","Black","Male","Oklahoma",1971,"West South Central","South","OK",189.256723127683,207.541049204916,227.525248009293,207.689949523542
+"66",36,3,1,0,"Non-communicable","Black","Male","Oklahoma",1971,"West South Central","South","OK",105.292024880909,119.118846118758,136.787939497884,119.398462153495
+"67",36,3,1,1,"All other causes","Black","Female","Oklahoma",1971,"West South Central","South","OK",126.762045405432,138.479660134397,151.461145058398,138.570983675634
+"68",36,3,1,1,"Cancers","Black","Female","Oklahoma",1971,"West South Central","South","OK",162.827568928519,172.597160449651,183.47087396528,172.621702530429
+"69",36,3,1,1,"Cardiovascular","Black","Female","Oklahoma",1971,"West South Central","South","OK",565.660731570231,592.745818019935,622.033846988939,593.131786360894
+"70",36,3,1,1,"Communicable","Black","Female","Oklahoma",1971,"West South Central","South","OK",34.8189515192247,41.937128763934,50.3637924893559,42.1082641899535
+"71",36,3,1,1,"Injuries","Black","Female","Oklahoma",1971,"West South Central","South","OK",44.9943424710614,50.531081887957,59.1658754555197,50.9234450030348
+"72",36,3,1,1,"Non-communicable","Black","Female","Oklahoma",1971,"West South Central","South","OK",68.5844861154356,79.5453046386129,92.2907063624433,79.9622932047233
+"73",36,4,0,0,"All other causes","White","Male","Oklahoma",1972,"West South Central","South","OK",141.829743349176,146.262380299786,151.47063809539,146.356029349301
+"74",36,4,0,0,"Cancers","White","Male","Oklahoma",1972,"West South Central","South","OK",235.722623503164,240.905677338993,246.269905164083,240.928145716646
+"75",36,4,0,0,"Cardiovascular","White","Male","Oklahoma",1972,"West South Central","South","OK",823.784898257703,839.358139339264,855.252056025751,839.236252702356
+"76",36,4,0,0,"Communicable","White","Male","Oklahoma",1972,"West South Central","South","OK",57.3208301658824,61.3715639738992,66.0022771890316,61.5196717719659
+"77",36,4,0,0,"Injuries","White","Male","Oklahoma",1972,"West South Central","South","OK",122.123697119541,125.710533884959,129.64897433246,125.744440788875
+"78",36,4,0,0,"Non-communicable","White","Male","Oklahoma",1972,"West South Central","South","OK",95.7655316449677,99.0039857283515,102.75992669689,99.0090753219912
+"79",36,4,0,1,"All other causes","White","Female","Oklahoma",1972,"West South Central","South","OK",96.4691220348594,99.5426225201224,102.979789844636,99.5852980686221
+"80",36,4,0,1,"Cancers","White","Female","Oklahoma",1972,"West South Central","South","OK",145.23533767409,148.333580652837,151.768275032929,148.437555546751
+"81",36,4,0,1,"Cardiovascular","White","Female","Oklahoma",1972,"West South Central","South","OK",499.817969703015,508.410685433097,518.321757397875,508.622038680017
+"82",36,4,0,1,"Communicable","White","Female","Oklahoma",1972,"West South Central","South","OK",32.8045952391072,34.8230683293608,37.0072345331874,34.8494043691276
+"83",36,4,0,1,"Injuries","White","Female","Oklahoma",1972,"West South Central","South","OK",45.9240043679829,47.7754737247562,49.9930920044653,47.812516870623
+"84",36,4,0,1,"Non-communicable","White","Female","Oklahoma",1972,"West South Central","South","OK",42.9144663630466,44.9039280668526,46.9044097275104,44.8979176427913
+"85",36,4,1,0,"All other causes","Black","Male","Oklahoma",1972,"West South Central","South","OK",195.338898909515,211.820693682369,229.264291501006,211.834833992727
+"86",36,4,1,0,"Cancers","Black","Male","Oklahoma",1972,"West South Central","South","OK",265.776994764844,283.513644681589,302.560225624086,283.775123830635
+"87",36,4,1,0,"Cardiovascular","Black","Male","Oklahoma",1972,"West South Central","South","OK",778.497266051345,818.120228338562,855.829247552105,817.57030769019
+"88",36,4,1,0,"Communicable","Black","Male","Oklahoma",1972,"West South Central","South","OK",58.2518257295085,72.3483022665793,85.8608490947093,72.4832211429702
+"89",36,4,1,0,"Injuries","Black","Male","Oklahoma",1972,"West South Central","South","OK",185.357281861061,201.554928509403,220.627848252695,202.041071852597
+"90",36,4,1,0,"Non-communicable","Black","Male","Oklahoma",1972,"West South Central","South","OK",103.974625971916,117.677072112703,134.022996433126,118.076150750974
+"91",36,4,1,1,"All other causes","Black","Female","Oklahoma",1972,"West South Central","South","OK",125.085865984713,136.721930764287,149.562557532645,136.763631780972
+"92",36,4,1,1,"Cancers","Black","Female","Oklahoma",1972,"West South Central","South","OK",163.07602583479,171.951055816108,182.230339003042,172.073233633371
+"93",36,4,1,1,"Cardiovascular","Black","Female","Oklahoma",1972,"West South Central","South","OK",561.207551215806,588.645682521508,617.707679477856,589.398416572631
+"94",36,4,1,1,"Communicable","Black","Female","Oklahoma",1972,"West South Central","South","OK",35.279234810411,41.6303769835631,49.0326992213156,41.7936686194545
+"95",36,4,1,1,"Injuries","Black","Female","Oklahoma",1972,"West South Central","South","OK",44.814880722625,50.4362950117127,58.4804188522856,50.7296857616433
+"96",36,4,1,1,"Non-communicable","Black","Female","Oklahoma",1972,"West South Central","South","OK",69.6820815175734,79.6417787829686,91.6418989973352,79.9073696901107
+"97",36,5,0,0,"All other causes","White","Male","Oklahoma",1973,"West South Central","South","OK",138.283174611805,142.64352635643,147.305880750928,142.660664955831
+"98",36,5,0,0,"Cancers","White","Male","Oklahoma",1973,"West South Central","South","OK",239.369551116938,244.743322836124,249.854123519209,244.655001204014
+"99",36,5,0,0,"Cardiovascular","White","Male","Oklahoma",1973,"West South Central","South","OK",822.991022003794,839.468746733292,855.570573552615,839.248110437157
+"100",36,5,0,0,"Communicable","White","Male","Oklahoma",1973,"West South Central","South","OK",57.8892842071921,62.1733481046131,66.6719169812452,62.1987764972078
+"101",36,5,0,0,"Injuries","White","Male","Oklahoma",1973,"West South Central","South","OK",121.292392621299,124.882163433457,128.593593975169,124.934601127026
+"102",36,5,0,0,"Non-communicable","White","Male","Oklahoma",1973,"West South Central","South","OK",95.4639052755087,98.7021194951686,102.165671919059,98.7582017732668
+"103",36,5,0,1,"All other causes","White","Female","Oklahoma",1973,"West South Central","South","OK",94.7642085065949,97.8902361963134,101.296941637079,97.9452297487159
+"104",36,5,0,1,"Cancers","White","Female","Oklahoma",1973,"West South Central","South","OK",144.722555365008,147.968549569186,151.181680010139,147.956404430134
+"105",36,5,0,1,"Cardiovascular","White","Female","Oklahoma",1973,"West South Central","South","OK",488.72828791661,498.575130918869,508.021714852855,498.466862813272
+"106",36,5,0,1,"Communicable","White","Female","Oklahoma",1973,"West South Central","South","OK",32.422481370203,34.3927553603036,36.3194614965064,34.4073634338294
+"107",36,5,0,1,"Injuries","White","Female","Oklahoma",1973,"West South Central","South","OK",46.0912602784302,47.919451065848,49.8555721922333,47.9614167990033
+"108",36,5,0,1,"Non-communicable","White","Female","Oklahoma",1973,"West South Central","South","OK",43.0308709951787,44.9036347904009,46.8941053740708,44.9285348441465
+"109",36,5,1,0,"All other causes","Black","Male","Oklahoma",1973,"West South Central","South","OK",187.559273492452,202.619126326999,219.227427148587,203.014852078943
+"110",36,5,1,0,"Cancers","Black","Male","Oklahoma",1973,"West South Central","South","OK",272.593888607007,289.555604627741,308.247389006659,289.860825916638
+"111",36,5,1,0,"Cardiovascular","Black","Male","Oklahoma",1973,"West South Central","South","OK",777.623749714866,814.937410107867,853.638923365778,815.295986582285
+"112",36,5,1,0,"Communicable","Black","Male","Oklahoma",1973,"West South Central","South","OK",57.4958107861651,72.3344108833114,85.6292050477557,72.1866161642006
+"113",36,5,1,0,"Injuries","Black","Male","Oklahoma",1973,"West South Central","South","OK",181.854199485173,198.727863473727,216.719209615697,198.884314347485
+"114",36,5,1,0,"Non-communicable","Black","Male","Oklahoma",1973,"West South Central","South","OK",102.598294312515,115.995946570492,131.975357058202,116.405359142784
+"115",36,5,1,1,"All other causes","Black","Female","Oklahoma",1973,"West South Central","South","OK",122.17860538149,134.145426449261,146.122712037994,134.192677742174
+"116",36,5,1,1,"Cancers","Black","Female","Oklahoma",1973,"West South Central","South","OK",163.375613913497,172.190797960844,182.199347399057,172.216187860727
+"117",36,5,1,1,"Cardiovascular","Black","Female","Oklahoma",1973,"West South Central","South","OK",561.375146755968,587.534463575127,615.806911240208,587.950433236106
+"118",36,5,1,1,"Communicable","Black","Female","Oklahoma",1973,"West South Central","South","OK",35.5129336573123,41.3209318911907,48.6154827457797,41.5944551130238
+"119",36,5,1,1,"Injuries","Black","Female","Oklahoma",1973,"West South Central","South","OK",44.6501776011409,50.216474164778,57.9762923157935,50.5033514943986
+"120",36,5,1,1,"Non-communicable","Black","Female","Oklahoma",1973,"West South Central","South","OK",69.9769436795831,78.8724404430597,90.4092777787403,79.4073131245463
+"121",36,6,0,0,"All other causes","White","Male","Oklahoma",1974,"West South Central","South","OK",134.624335405339,138.74022429115,143.915309566856,138.897303758728
+"122",36,6,0,0,"Cancers","White","Male","Oklahoma",1974,"West South Central","South","OK",240.70637831025,246.092134066997,250.979222928224,246.072589782092
+"123",36,6,0,0,"Cardiovascular","White","Male","Oklahoma",1974,"West South Central","South","OK",798.258113644688,813.397515772705,828.772218047688,813.191152401691
+"124",36,6,0,0,"Communicable","White","Male","Oklahoma",1974,"West South Central","South","OK",58.1978768414061,62.6125731946873,67.4365128424322,62.705728092225
+"125",36,6,0,0,"Injuries","White","Male","Oklahoma",1974,"West South Central","South","OK",120.773277038192,124.414411811249,128.246266208957,124.419092889305
+"126",36,6,0,0,"Non-communicable","White","Male","Oklahoma",1974,"West South Central","South","OK",95.7447983494865,99.2803546954872,102.809279784645,99.2640216535736
+"127",36,6,0,1,"All other causes","White","Female","Oklahoma",1974,"West South Central","South","OK",91.6967837069054,95.0319970451988,98.1001661709793,94.9493434894525
+"128",36,6,0,1,"Cancers","White","Female","Oklahoma",1974,"West South Central","South","OK",144.774151207764,147.911665360956,150.984833909572,147.942981503221
+"129",36,6,0,1,"Cardiovascular","White","Female","Oklahoma",1974,"West South Central","South","OK",476.395134350874,486.185305350025,496.867810562258,486.33883705422
+"130",36,6,0,1,"Communicable","White","Female","Oklahoma",1974,"West South Central","South","OK",33.3863638897415,35.3458098885698,37.3855806222658,35.3700786758854
+"131",36,6,0,1,"Injuries","White","Female","Oklahoma",1974,"West South Central","South","OK",45.6141001380486,47.3634201822841,49.3145517509696,47.4057934875622
+"132",36,6,0,1,"Non-communicable","White","Female","Oklahoma",1974,"West South Central","South","OK",42.3243443113312,44.1655103102822,46.0144762500564,44.1930658200216
+"133",36,6,1,0,"All other causes","Black","Male","Oklahoma",1974,"West South Central","South","OK",184.293483369872,199.692207296674,214.89328484113,199.603234148834
+"134",36,6,1,0,"Cancers","Black","Male","Oklahoma",1974,"West South Central","South","OK",277.124139664256,293.172282474852,310.725666898869,293.553020446487
+"135",36,6,1,0,"Cardiovascular","Black","Male","Oklahoma",1974,"West South Central","South","OK",770.524402326851,805.320315990982,843.020250440737,805.053349341455
+"136",36,6,1,0,"Communicable","Black","Male","Oklahoma",1974,"West South Central","South","OK",58.5088254861688,72.8547922853553,85.6456219374481,72.5918934330029
+"137",36,6,1,0,"Injuries","Black","Male","Oklahoma",1974,"West South Central","South","OK",181.805554202254,196.862211093763,215.336780160354,197.510623765446
+"138",36,6,1,0,"Non-communicable","Black","Male","Oklahoma",1974,"West South Central","South","OK",102.148060985528,115.103183990533,131.078269258041,115.535842311506
+"139",36,6,1,1,"All other causes","Black","Female","Oklahoma",1974,"West South Central","South","OK",121.507727722707,132.60636376518,143.946860055922,132.610902463513
+"140",36,6,1,1,"Cancers","Black","Female","Oklahoma",1974,"West South Central","South","OK",163.221409559579,172.55208083425,182.538302318011,172.612750050253
+"141",36,6,1,1,"Cardiovascular","Black","Female","Oklahoma",1974,"West South Central","South","OK",554.705732405712,580.989034185332,608.921685404791,581.047021916139
+"142",36,6,1,1,"Communicable","Black","Female","Oklahoma",1974,"West South Central","South","OK",35.7937884107882,41.4218033852552,48.2667969807939,41.5791725132566
+"143",36,6,1,1,"Injuries","Black","Female","Oklahoma",1974,"West South Central","South","OK",44.4621529929117,49.9710502303241,57.3837354545325,50.2256706973903
+"144",36,6,1,1,"Non-communicable","Black","Female","Oklahoma",1974,"West South Central","South","OK",69.3127951101692,78.5352252108933,89.0835843322357,78.7789751351466
+"145",36,7,0,0,"All other causes","White","Male","Oklahoma",1975,"West South Central","South","OK",129.966606215094,134.406721842239,138.97350687273,134.361143569712
+"146",36,7,0,0,"Cancers","White","Male","Oklahoma",1975,"West South Central","South","OK",243.254772583558,248.559485842162,253.853715796624,248.546786742746
+"147",36,7,0,0,"Cardiovascular","White","Male","Oklahoma",1975,"West South Central","South","OK",773.184974144348,787.876756278324,803.421169645389,788.10361229067
+"148",36,7,0,0,"Communicable","White","Male","Oklahoma",1975,"West South Central","South","OK",62.3356283137311,66.628643100566,71.2592266293856,66.6383225819254
+"149",36,7,0,0,"Injuries","White","Male","Oklahoma",1975,"West South Central","South","OK",119.145681010155,122.754342346365,126.265180635665,122.740111906507
+"150",36,7,0,0,"Non-communicable","White","Male","Oklahoma",1975,"West South Central","South","OK",97.1803318113215,100.633918156703,104.050709551635,100.65923416859
+"151",36,7,0,1,"All other causes","White","Female","Oklahoma",1975,"West South Central","South","OK",89.4382285585392,92.5914488597153,95.5422003158263,92.629409576646
+"152",36,7,0,1,"Cancers","White","Female","Oklahoma",1975,"West South Central","South","OK",145.149192281363,148.249243914447,151.48561804983,148.281079348
+"153",36,7,0,1,"Cardiovascular","White","Female","Oklahoma",1975,"West South Central","South","OK",453.058850386181,461.380652481438,470.457152710345,461.537058570314
+"154",36,7,0,1,"Communicable","White","Female","Oklahoma",1975,"West South Central","South","OK",33.7869836305958,35.8198820148893,37.8414464177911,35.8076184824268
+"155",36,7,0,1,"Injuries","White","Female","Oklahoma",1975,"West South Central","South","OK",44.8383517485151,46.7636167088681,48.6979498785805,46.7348185111635
+"156",36,7,0,1,"Non-communicable","White","Female","Oklahoma",1975,"West South Central","South","OK",41.7425724878241,43.6074854827545,45.5454109688465,43.6443576876498
+"157",36,7,1,0,"All other causes","Black","Male","Oklahoma",1975,"West South Central","South","OK",181.475872539069,195.559386707794,210.369155894649,195.903576486845
+"158",36,7,1,0,"Cancers","Black","Male","Oklahoma",1975,"West South Central","South","OK",282.601723215322,299.427032987417,316.506325343136,299.554595744309
+"159",36,7,1,0,"Cardiovascular","Black","Male","Oklahoma",1975,"West South Central","South","OK",754.216631966297,791.119058425741,827.844512164052,791.567168275047
+"160",36,7,1,0,"Communicable","Black","Male","Oklahoma",1975,"West South Central","South","OK",57.7538210071916,72.2054307884027,84.8742839063311,72.0601222096985
+"161",36,7,1,0,"Injuries","Black","Male","Oklahoma",1975,"West South Central","South","OK",179.682579984842,194.157652409142,213.277742006933,194.914212473465
+"162",36,7,1,0,"Non-communicable","Black","Male","Oklahoma",1975,"West South Central","South","OK",102.186761302568,115.731738427037,131.094086984194,116.01163592409
+"163",36,7,1,1,"All other causes","Black","Female","Oklahoma",1975,"West South Central","South","OK",121.571034914684,132.326261769934,143.54615171487,132.318516550939
+"164",36,7,1,1,"Cancers","Black","Female","Oklahoma",1975,"West South Central","South","OK",163.817263347924,172.90991568015,182.878599219822,173.017981084099
+"165",36,7,1,1,"Cardiovascular","Black","Female","Oklahoma",1975,"West South Central","South","OK",537.160637897018,560.528141494113,589.347374451583,561.528371433489
+"166",36,7,1,1,"Communicable","Black","Female","Oklahoma",1975,"West South Central","South","OK",35.6463622808288,41.645117008297,48.2658246747617,41.7047556179037
+"167",36,7,1,1,"Injuries","Black","Female","Oklahoma",1975,"West South Central","South","OK",44.3555964695818,49.5633064937652,56.5207946956965,49.8655379755944
+"168",36,7,1,1,"Non-communicable","Black","Female","Oklahoma",1975,"West South Central","South","OK",68.2449064646407,77.2366290939224,87.5210826817407,77.4001006339862
+"169",36,8,0,0,"All other causes","White","Male","Oklahoma",1976,"West South Central","South","OK",125.249222929146,129.428978278714,134.083210265362,129.507857407881
+"170",36,8,0,0,"Cancers","White","Male","Oklahoma",1976,"West South Central","South","OK",245.919666106073,251.213042485633,257.00313802759,251.2899017766
+"171",36,8,0,0,"Cardiovascular","White","Male","Oklahoma",1976,"West South Central","South","OK",744.657656921087,759.399760603643,772.593598775648,759.187432002357
+"172",36,8,0,0,"Communicable","White","Male","Oklahoma",1976,"West South Central","South","OK",61.6077414564097,66.4843863325163,70.8340469408278,66.527999750633
+"173",36,8,0,0,"Injuries","White","Male","Oklahoma",1976,"West South Central","South","OK",117.33671958953,120.722823535075,124.127326930189,120.732641763406
+"174",36,8,0,0,"Non-communicable","White","Male","Oklahoma",1976,"West South Central","South","OK",97.0051131310387,100.473963098649,103.993230787959,100.470610473162
+"175",36,8,0,1,"All other causes","White","Female","Oklahoma",1976,"West South Central","South","OK",86.8491117672286,89.8966592005748,93.02487064595,89.8807983606887
+"176",36,8,0,1,"Cancers","White","Female","Oklahoma",1976,"West South Central","South","OK",146.192908986149,149.098372017507,152.157866230886,149.102719691292
+"177",36,8,0,1,"Cardiovascular","White","Female","Oklahoma",1976,"West South Central","South","OK",440.330243048205,449.165154754154,458.441955511095,449.116217460701
+"178",36,8,0,1,"Communicable","White","Female","Oklahoma",1976,"West South Central","South","OK",35.2582369310901,37.413724403927,39.4057797371661,37.3864219837789
+"179",36,8,0,1,"Injuries","White","Female","Oklahoma",1976,"West South Central","South","OK",44.8994547574206,46.5947169328428,48.4905426392996,46.6192252758356
+"180",36,8,0,1,"Non-communicable","White","Female","Oklahoma",1976,"West South Central","South","OK",41.8543260252116,43.70429714848,45.5450936555686,43.7035890858768
+"181",36,8,1,0,"All other causes","Black","Male","Oklahoma",1976,"West South Central","South","OK",174.954279058183,190.318278027393,204.817890595416,190.132629695477
+"182",36,8,1,0,"Cancers","Black","Male","Oklahoma",1976,"West South Central","South","OK",288.89058144155,305.086922794879,323.204043324484,305.411143727054
+"183",36,8,1,0,"Cardiovascular","Black","Male","Oklahoma",1976,"West South Central","South","OK",737.313673187393,769.910880863577,806.76893953,770.548333940542
+"184",36,8,1,0,"Communicable","Black","Male","Oklahoma",1976,"West South Central","South","OK",57.2120499636684,70.4902323154282,82.9338764697345,70.5491254118791
+"185",36,8,1,0,"Injuries","Black","Male","Oklahoma",1976,"West South Central","South","OK",174.896195171234,190.235415479787,208.598350959054,190.424460624706
+"186",36,8,1,0,"Non-communicable","Black","Male","Oklahoma",1976,"West South Central","South","OK",103.437267968269,116.126252395315,131.698039191993,116.372460031558
+"187",36,8,1,1,"All other causes","Black","Female","Oklahoma",1976,"West South Central","South","OK",121.561112517343,132.102185781758,143.677695345595,132.255471466481
+"188",36,8,1,1,"Cancers","Black","Female","Oklahoma",1976,"West South Central","South","OK",164.687666861609,174.166695873695,185.292596991473,174.323431205145
+"189",36,8,1,1,"Cardiovascular","Black","Female","Oklahoma",1976,"West South Central","South","OK",530.000803033217,554.128718485989,581.293119964196,554.402801693933
+"190",36,8,1,1,"Communicable","Black","Female","Oklahoma",1976,"West South Central","South","OK",35.9234303904873,41.8310853231898,48.445741308635,41.871723132799
+"191",36,8,1,1,"Injuries","Black","Female","Oklahoma",1976,"West South Central","South","OK",44.1900143259002,49.0929788517731,55.822655586487,49.516462445698
+"192",36,8,1,1,"Non-communicable","Black","Female","Oklahoma",1976,"West South Central","South","OK",67.7501306716254,76.2800779274723,86.1843548527394,76.3965604259433
+"193",36,9,0,0,"All other causes","White","Male","Oklahoma",1977,"West South Central","South","OK",121.366946542997,125.416464332626,129.343324600689,125.40785496342
+"194",36,9,0,0,"Cancers","White","Male","Oklahoma",1977,"West South Central","South","OK",249.273735695792,255.073475084494,260.190070997281,254.911178798949
+"195",36,9,0,0,"Cardiovascular","White","Male","Oklahoma",1977,"West South Central","South","OK",714.534409610668,729.315723606148,742.391432043797,729.21263212871
+"196",36,9,0,0,"Communicable","White","Male","Oklahoma",1977,"West South Central","South","OK",55.7483909234421,59.6905238329967,63.9787068991846,59.7179201268058
+"197",36,9,0,0,"Injuries","White","Male","Oklahoma",1977,"West South Central","South","OK",118.157576895932,121.502798749441,124.931262014696,121.453908934316
+"198",36,9,0,0,"Non-communicable","White","Male","Oklahoma",1977,"West South Central","South","OK",97.3096667361866,100.621864781301,104.110718124676,100.708958675015
+"199",36,9,0,1,"All other causes","White","Female","Oklahoma",1977,"West South Central","South","OK",85.321295928246,88.4171549074146,91.425986405735,88.4210056820291
+"200",36,9,0,1,"Cancers","White","Female","Oklahoma",1977,"West South Central","South","OK",145.834212051384,148.809227580225,151.878015828998,148.795428350328
+"201",36,9,0,1,"Cardiovascular","White","Female","Oklahoma",1977,"West South Central","South","OK",429.411563476209,437.452707439154,445.923590390209,437.504909677447
+"202",36,9,0,1,"Communicable","White","Female","Oklahoma",1977,"West South Central","South","OK",33.1927954501802,35.1712389915995,37.1588271699543,35.1576310911238
+"203",36,9,0,1,"Injuries","White","Female","Oklahoma",1977,"West South Central","South","OK",44.500534629626,46.3123503152407,48.2082179270651,46.3178810933233
+"204",36,9,0,1,"Non-communicable","White","Female","Oklahoma",1977,"West South Central","South","OK",41.9366827853611,43.7987489804827,45.6252458409228,43.7832028003457
+"205",36,9,1,0,"All other causes","Black","Male","Oklahoma",1977,"West South Central","South","OK",169.273052621893,183.801079306818,198.232156482007,183.825444440915
+"206",36,9,1,0,"Cancers","Black","Male","Oklahoma",1977,"West South Central","South","OK",292.56793092798,309.693204342364,327.502620759557,309.74763435211
+"207",36,9,1,0,"Cardiovascular","Black","Male","Oklahoma",1977,"West South Central","South","OK",723.099547433616,758.275898695623,793.812919170445,758.311511253484
+"208",36,9,1,0,"Communicable","Black","Male","Oklahoma",1977,"West South Central","South","OK",57.8900507547694,69.385104816019,81.9654231154607,69.5647939865531
+"209",36,9,1,0,"Injuries","Black","Male","Oklahoma",1977,"West South Central","South","OK",170.056412281019,185.682444435119,201.717132732834,185.745754493192
+"210",36,9,1,0,"Non-communicable","Black","Male","Oklahoma",1977,"West South Central","South","OK",104.189082002474,116.93435285582,130.980751161461,116.978943775448
+"211",36,9,1,1,"All other causes","Black","Female","Oklahoma",1977,"West South Central","South","OK",121.129266250012,132.18953782923,143.142076619288,132.265899258042
+"212",36,9,1,1,"Cancers","Black","Female","Oklahoma",1977,"West South Central","South","OK",165.61883184818,174.727713826347,184.738062072771,174.7127059425
+"213",36,9,1,1,"Cardiovascular","Black","Female","Oklahoma",1977,"West South Central","South","OK",518.975204067908,542.211704395767,568.080519623294,542.629469142748
+"214",36,9,1,1,"Communicable","Black","Female","Oklahoma",1977,"West South Central","South","OK",35.6640103328619,41.4303736095412,47.7127804408701,41.4902218678358
+"215",36,9,1,1,"Injuries","Black","Female","Oklahoma",1977,"West South Central","South","OK",43.866226244208,48.8663611651068,55.2734150152419,49.2233924364559
+"216",36,9,1,1,"Non-communicable","Black","Female","Oklahoma",1977,"West South Central","South","OK",67.6297020938363,75.9976558381395,85.3898067728203,76.159838190027
+"217",36,10,0,0,"All other causes","White","Male","Oklahoma",1978,"West South Central","South","OK",119.437401847539,123.31306820987,127.595873225343,123.410062448785
+"218",36,10,0,0,"Cancers","White","Male","Oklahoma",1978,"West South Central","South","OK",251.693547923286,256.92393625954,262.546800010907,256.99730136014
+"219",36,10,0,0,"Cardiovascular","White","Male","Oklahoma",1978,"West South Central","South","OK",703.158857264281,716.493033639308,730.937351683535,716.588402267182
+"220",36,10,0,0,"Communicable","White","Male","Oklahoma",1978,"West South Central","South","OK",57.2751794347958,61.2801481520221,65.2937234430845,61.2051325193265
+"221",36,10,0,0,"Injuries","White","Male","Oklahoma",1978,"West South Central","South","OK",119.085334441801,122.519758811179,126.009556181226,122.519959550696
+"222",36,10,0,0,"Non-communicable","White","Male","Oklahoma",1978,"West South Central","South","OK",98.4337717239227,101.673511207606,105.080470486258,101.746285547616
+"223",36,10,0,1,"All other causes","White","Female","Oklahoma",1978,"West South Central","South","OK",84.9642400790973,87.908058217775,90.9745642535249,87.9641132826997
+"224",36,10,0,1,"Cancers","White","Female","Oklahoma",1978,"West South Central","South","OK",146.529489316658,149.549127374361,152.822104994427,149.530157764798
+"225",36,10,0,1,"Cardiovascular","White","Female","Oklahoma",1978,"West South Central","South","OK",426.072303244061,434.674721533672,443.060457017633,434.475543592137
+"226",36,10,0,1,"Communicable","White","Female","Oklahoma",1978,"West South Central","South","OK",34.3441121260191,36.2751116958052,38.3531071547543,36.2815755678747
+"227",36,10,0,1,"Injuries","White","Female","Oklahoma",1978,"West South Central","South","OK",44.0767583045949,46.0453773248585,47.9465628668052,46.0163182749758
+"228",36,10,0,1,"Non-communicable","White","Female","Oklahoma",1978,"West South Central","South","OK",42.6819458629303,44.6157038970067,46.5540743590633,44.6132666911939
+"229",36,10,1,0,"All other causes","Black","Male","Oklahoma",1978,"West South Central","South","OK",166.1079337552,180.875302605941,195.725802343737,180.800985768105
+"230",36,10,1,0,"Cancers","Black","Male","Oklahoma",1978,"West South Central","South","OK",298.09278579329,315.298010086955,333.42150988652,315.308912943324
+"231",36,10,1,0,"Cardiovascular","Black","Male","Oklahoma",1978,"West South Central","South","OK",716.431247978952,752.098030554849,787.422501810223,752.290301945528
+"232",36,10,1,0,"Communicable","Black","Male","Oklahoma",1978,"West South Central","South","OK",57.7488459373946,69.1783498720371,81.5857696120098,69.1815008719498
+"233",36,10,1,0,"Injuries","Black","Male","Oklahoma",1978,"West South Central","South","OK",170.045703893927,184.900790565866,201.852318881197,185.389242588678
+"234",36,10,1,0,"Non-communicable","Black","Male","Oklahoma",1978,"West South Central","South","OK",102.780147176141,115.160172304872,128.631960602998,115.222501530478
+"235",36,10,1,1,"All other causes","Black","Female","Oklahoma",1978,"West South Central","South","OK",121.86383283163,131.722213669854,143.018011426714,131.895099243634
+"236",36,10,1,1,"Cancers","Black","Female","Oklahoma",1978,"West South Central","South","OK",166.415158910426,176.216431103356,186.288628239376,176.048647462066
+"237",36,10,1,1,"Cardiovascular","Black","Female","Oklahoma",1978,"West South Central","South","OK",519.329679122347,544.333935689703,568.4634576705,544.372505792119
+"238",36,10,1,1,"Communicable","Black","Female","Oklahoma",1978,"West South Central","South","OK",35.1877587288278,41.2069225346745,46.7965973142606,41.212181996946
+"239",36,10,1,1,"Injuries","Black","Female","Oklahoma",1978,"West South Central","South","OK",43.5018761733457,48.6307518973057,54.9313145676915,48.9370170562669
+"240",36,10,1,1,"Non-communicable","Black","Female","Oklahoma",1978,"West South Central","South","OK",68.5339302050342,76.5305605198941,85.4549386010378,76.527663303426
+"241",36,11,0,0,"All other causes","White","Male","Oklahoma",1979,"West South Central","South","OK",117.468776484665,121.093295687183,124.88789136996,121.08552530351
+"242",36,11,0,0,"Cancers","White","Male","Oklahoma",1979,"West South Central","South","OK",254.734040138647,259.78975762207,265.583543053608,259.824620885192
+"243",36,11,0,0,"Cardiovascular","White","Male","Oklahoma",1979,"West South Central","South","OK",697.194821641974,710.974375104855,723.958422046523,710.92521820402
+"244",36,11,0,0,"Communicable","White","Male","Oklahoma",1979,"West South Central","South","OK",51.0592240355139,54.6905974103765,58.6868516067821,54.7635330282998
+"245",36,11,0,0,"Injuries","White","Male","Oklahoma",1979,"West South Central","South","OK",119.511463216398,122.743497194195,126.271583088133,122.769770663959
+"246",36,11,0,0,"Non-communicable","White","Male","Oklahoma",1979,"West South Central","South","OK",99.2060068672426,102.779259027106,106.126606153644,102.749821079038
+"247",36,11,0,1,"All other causes","White","Female","Oklahoma",1979,"West South Central","South","OK",83.3142594153095,86.2937218641826,89.2755164089571,86.2418279118667
+"248",36,11,0,1,"Cancers","White","Female","Oklahoma",1979,"West South Central","South","OK",146.58798378199,149.653554617917,152.926568849798,149.637442187518
+"249",36,11,0,1,"Cardiovascular","White","Female","Oklahoma",1979,"West South Central","South","OK",422.398854263858,430.189678348044,438.428543054051,430.362890403325
+"250",36,11,0,1,"Communicable","White","Female","Oklahoma",1979,"West South Central","South","OK",31.3328738388853,33.1322841920151,34.9540251920787,33.1521066722416
+"251",36,11,0,1,"Injuries","White","Female","Oklahoma",1979,"West South Central","South","OK",43.4202519890762,45.203882376632,46.9933562991399,45.1815274016318
+"252",36,11,0,1,"Non-communicable","White","Female","Oklahoma",1979,"West South Central","South","OK",44.3200710801015,46.0377103727486,48.0692958121583,46.0648771263968
+"253",36,11,1,0,"All other causes","Black","Male","Oklahoma",1979,"West South Central","South","OK",163.942542044249,179.00233315549,195.052022226178,178.916035690021
+"254",36,11,1,0,"Cancers","Black","Male","Oklahoma",1979,"West South Central","South","OK",301.388990983104,317.489784914346,336.495984437633,317.876219597581
+"255",36,11,1,0,"Cardiovascular","Black","Male","Oklahoma",1979,"West South Central","South","OK",715.053628800934,749.019794415999,787.543186421239,748.574722871153
+"256",36,11,1,0,"Communicable","Black","Male","Oklahoma",1979,"West South Central","South","OK",56.6971057537094,68.5934204084361,81.0025528821027,68.7567527785683
+"257",36,11,1,0,"Injuries","Black","Male","Oklahoma",1979,"West South Central","South","OK",170.536875600888,186.065077431088,202.378323022448,186.215416534024
+"258",36,11,1,0,"Non-communicable","Black","Male","Oklahoma",1979,"West South Central","South","OK",101.90159207749,113.340490685641,126.422325328858,113.553807353704
+"259",36,11,1,1,"All other causes","Black","Female","Oklahoma",1979,"West South Central","South","OK",122.023747616663,131.240585950339,142.051556689256,131.545315421402
+"260",36,11,1,1,"Cancers","Black","Female","Oklahoma",1979,"West South Central","South","OK",168.603002228206,177.751738624879,188.025641627648,177.950541903944
+"261",36,11,1,1,"Cardiovascular","Black","Female","Oklahoma",1979,"West South Central","South","OK",514.588015053013,538.50537070096,564.336528344853,538.812716946049
+"262",36,11,1,1,"Communicable","Black","Female","Oklahoma",1979,"West South Central","South","OK",35.2312557181302,41.0094066039662,46.7959132896763,40.9997557225006
+"263",36,11,1,1,"Injuries","Black","Female","Oklahoma",1979,"West South Central","South","OK",43.4924666256618,48.1902778701082,54.4087696350467,48.5884254641382
+"264",36,11,1,1,"Non-communicable","Black","Female","Oklahoma",1979,"West South Central","South","OK",69.2386395574735,76.9224702699037,85.2194510070911,77.0742346027693
+"265",36,12,0,0,"All other causes","White","Male","Oklahoma",1980,"West South Central","South","OK",115.265599430414,119.177740675665,123.280717932596,119.19687998519
+"266",36,12,0,0,"Cancers","White","Male","Oklahoma",1980,"West South Central","South","OK",255.528350175341,260.805826569327,266.456711234159,260.91607860084
+"267",36,12,0,0,"Cardiovascular","White","Male","Oklahoma",1980,"West South Central","South","OK",685.91123417519,697.204163514773,709.993302913839,697.33016700666
+"268",36,12,0,0,"Communicable","White","Male","Oklahoma",1980,"West South Central","South","OK",48.5524258557498,52.3617668515384,55.7442555783398,52.3031953470598
+"269",36,12,0,0,"Injuries","White","Male","Oklahoma",1980,"West South Central","South","OK",119.762738718805,123.289204179474,126.709175737709,123.284666344682
+"270",36,12,0,0,"Non-communicable","White","Male","Oklahoma",1980,"West South Central","South","OK",100.546649052798,104.027768463502,107.503229715331,104.044441790839
+"271",36,12,0,1,"All other causes","White","Female","Oklahoma",1980,"West South Central","South","OK",83.2753754404538,86.1637466577229,89.1011226079139,86.1876462567203
+"272",36,12,0,1,"Cancers","White","Female","Oklahoma",1980,"West South Central","South","OK",147.358456676866,150.653908702365,153.993732435339,150.659544693983
+"273",36,12,0,1,"Cardiovascular","White","Female","Oklahoma",1980,"West South Central","South","OK",411.606008046115,419.617222888133,427.558954255622,419.532887776885
+"274",36,12,0,1,"Communicable","White","Female","Oklahoma",1980,"West South Central","South","OK",31.8426499766152,33.7814139147113,35.7037282889839,33.7757962685193
+"275",36,12,0,1,"Injuries","White","Female","Oklahoma",1980,"West South Central","South","OK",43.3940601417741,45.2344542211601,47.0401139516496,45.2214269471083
+"276",36,12,0,1,"Non-communicable","White","Female","Oklahoma",1980,"West South Central","South","OK",45.2487693960794,47.0201165491983,49.173876349091,47.0576037933324
+"277",36,12,1,0,"All other causes","Black","Male","Oklahoma",1980,"West South Central","South","OK",163.565357700216,178.147118283948,192.738694738832,178.122496013144
+"278",36,12,1,0,"Cancers","Black","Male","Oklahoma",1980,"West South Central","South","OK",303.157647854158,320.330601654923,337.850273425565,320.280720267078
+"279",36,12,1,0,"Cardiovascular","Black","Male","Oklahoma",1980,"West South Central","South","OK",705.313686665731,741.57885107642,781.333244130703,741.910335534563
+"280",36,12,1,0,"Communicable","Black","Male","Oklahoma",1980,"West South Central","South","OK",56.8732850483486,69.0035973229543,81.8188338114976,69.0053675598726
+"281",36,12,1,0,"Injuries","Black","Male","Oklahoma",1980,"West South Central","South","OK",166.696848136854,181.410039968216,196.940941711692,181.50310610877
+"282",36,12,1,0,"Non-communicable","Black","Male","Oklahoma",1980,"West South Central","South","OK",101.119706853047,113.105133087709,124.952821004285,113.087743496569
+"283",36,12,1,1,"All other causes","Black","Female","Oklahoma",1980,"West South Central","South","OK",121.824579692511,131.126810330262,141.346005260916,131.178842021841
+"284",36,12,1,1,"Cancers","Black","Female","Oklahoma",1980,"West South Central","South","OK",169.842822015196,179.980470512777,189.721487132201,179.783289092521
+"285",36,12,1,1,"Cardiovascular","Black","Female","Oklahoma",1980,"West South Central","South","OK",505.405183465101,528.678825658759,552.899513477393,529.015514005155
+"286",36,12,1,1,"Communicable","Black","Female","Oklahoma",1980,"West South Central","South","OK",35.2340214353593,40.9252165147815,46.5304846883655,40.9847922929826
+"287",36,12,1,1,"Injuries","Black","Female","Oklahoma",1980,"West South Central","South","OK",43.344941991442,47.9115121194425,54.3930581219162,48.2516651798719
+"288",36,12,1,1,"Non-communicable","Black","Female","Oklahoma",1980,"West South Central","South","OK",69.8349650396517,77.1612877111229,84.9600371425251,77.3121892066531
+"289",36,13,0,0,"All other causes","White","Male","Oklahoma",1981,"West South Central","South","OK",115.176256328384,119.117399415253,123.339562858902,119.211815979953
+"290",36,13,0,0,"Cancers","White","Male","Oklahoma",1981,"West South Central","South","OK",258.290960898309,263.497994779738,268.930703639085,263.540912017285
+"291",36,13,0,0,"Cardiovascular","White","Male","Oklahoma",1981,"West South Central","South","OK",665.734413484813,678.878362593203,692.18303834405,678.885098894954
+"292",36,13,0,0,"Communicable","White","Male","Oklahoma",1981,"West South Central","South","OK",52.9413970718029,56.7468937547543,60.7046710265164,56.8913947763391
+"293",36,13,0,0,"Injuries","White","Male","Oklahoma",1981,"West South Central","South","OK",119.716329567892,123.283930567361,126.906624870903,123.26920802561
+"294",36,13,0,0,"Non-communicable","White","Male","Oklahoma",1981,"West South Central","South","OK",101.818602655423,105.31217792949,109.068613254665,105.35800876493
+"295",36,13,0,1,"All other causes","White","Female","Oklahoma",1981,"West South Central","South","OK",84.1499903793496,86.9711007747099,89.8904277227569,86.971940359999
+"296",36,13,0,1,"Cancers","White","Female","Oklahoma",1981,"West South Central","South","OK",149.301603083196,152.380691544062,155.459718443914,152.425065315774
+"297",36,13,0,1,"Cardiovascular","White","Female","Oklahoma",1981,"West South Central","South","OK",400.697816389823,408.491136572294,416.699426226603,408.517411725429
+"298",36,13,0,1,"Communicable","White","Female","Oklahoma",1981,"West South Central","South","OK",32.7247149574667,34.6794169482994,36.6043863502968,34.673162931381
+"299",36,13,0,1,"Injuries","White","Female","Oklahoma",1981,"West South Central","South","OK",42.805264616711,44.5308829390513,46.1723550288525,44.5199966135526
+"300",36,13,0,1,"Non-communicable","White","Female","Oklahoma",1981,"West South Central","South","OK",46.9944237368218,48.888737844134,51.0192829474293,48.9183063998089
+"301",36,13,1,0,"All other causes","Black","Male","Oklahoma",1981,"West South Central","South","OK",163.069653435039,175.756168079653,189.208280762332,176.030011420791
+"302",36,13,1,0,"Cancers","Black","Male","Oklahoma",1981,"West South Central","South","OK",307.391459711315,324.221313701692,342.578650558798,324.379543231573
+"303",36,13,1,0,"Cardiovascular","Black","Male","Oklahoma",1981,"West South Central","South","OK",695.820253669889,729.163052574932,761.721194491274,729.592534749015
+"304",36,13,1,0,"Communicable","Black","Male","Oklahoma",1981,"West South Central","South","OK",58.3446518273887,69.6835194165693,82.9261617242278,70.1010937004396
+"305",36,13,1,0,"Injuries","Black","Male","Oklahoma",1981,"West South Central","South","OK",159.939585229303,173.968442794757,188.821176729187,174.21323729373
+"306",36,13,1,0,"Non-communicable","Black","Male","Oklahoma",1981,"West South Central","South","OK",100.802812589842,113.111094940857,125.818514988974,113.071014063367
+"307",36,13,1,1,"All other causes","Black","Female","Oklahoma",1981,"West South Central","South","OK",120.688333882908,129.547928464181,139.675849576583,129.785372033327
+"308",36,13,1,1,"Cancers","Black","Female","Oklahoma",1981,"West South Central","South","OK",172.617301421259,181.974726425709,191.984910529499,181.95437985705
+"309",36,13,1,1,"Cardiovascular","Black","Female","Oklahoma",1981,"West South Central","South","OK",492.222093889117,516.1591634201,539.631079562257,516.075225838031
+"310",36,13,1,1,"Communicable","Black","Female","Oklahoma",1981,"West South Central","South","OK",35.2255657006878,41.2353447165406,46.7574983117411,41.2106295490797
+"311",36,13,1,1,"Injuries","Black","Female","Oklahoma",1981,"West South Central","South","OK",43.2177779758398,47.6586681652816,53.7237644009652,47.9053990782804
+"312",36,13,1,1,"Non-communicable","Black","Female","Oklahoma",1981,"West South Central","South","OK",70.4146304542969,77.8908998166731,85.9864541133788,77.9464322541251
+"313",36,14,0,0,"All other causes","White","Male","Oklahoma",1982,"West South Central","South","OK",115.172700973813,118.750466015168,122.805556262278,118.764652124518
+"314",36,14,0,0,"Cancers","White","Male","Oklahoma",1982,"West South Central","South","OK",261.82903253002,266.966538628768,272.937331877249,267.026342445995
+"315",36,14,0,0,"Cardiovascular","White","Male","Oklahoma",1982,"West South Central","South","OK",652.378998231717,664.715325100571,676.527137631755,664.59041602536
+"316",36,14,0,0,"Communicable","White","Male","Oklahoma",1982,"West South Central","South","OK",51.653078343451,55.3352565931707,59.3523818589728,55.3777224282855
+"317",36,14,0,0,"Injuries","White","Male","Oklahoma",1982,"West South Central","South","OK",117.813822402655,120.962751147184,124.509442150377,121.003961285222
+"318",36,14,0,0,"Non-communicable","White","Male","Oklahoma",1982,"West South Central","South","OK",103.901197666914,107.485539937991,111.305327375467,107.529517533378
+"319",36,14,0,1,"All other causes","White","Female","Oklahoma",1982,"West South Central","South","OK",84.4485895203068,87.3156617773402,89.9749498190525,87.2818464901755
+"320",36,14,0,1,"Cancers","White","Female","Oklahoma",1982,"West South Central","South","OK",150.694051598565,153.94897124284,156.966089592211,153.94408344567
+"321",36,14,0,1,"Cardiovascular","White","Female","Oklahoma",1982,"West South Central","South","OK",395.951637754262,403.489983869958,411.291985317791,403.481643283278
+"322",36,14,0,1,"Communicable","White","Female","Oklahoma",1982,"West South Central","South","OK",31.8948314680849,33.6445980714365,35.4945313780372,33.6266862323505
+"323",36,14,0,1,"Injuries","White","Female","Oklahoma",1982,"West South Central","South","OK",42.1585670003002,43.8349122623217,45.7375407898378,43.8725424325263
+"324",36,14,0,1,"Non-communicable","White","Female","Oklahoma",1982,"West South Central","South","OK",49.235791759559,51.2025290844571,53.3019888287942,51.2175082043926
+"325",36,14,1,0,"All other causes","Black","Male","Oklahoma",1982,"West South Central","South","OK",160.870633543115,174.482671379802,187.80080915573,174.658294881725
+"326",36,14,1,0,"Cancers","Black","Male","Oklahoma",1982,"West South Central","South","OK",309.248526535227,326.255632277296,343.313521008117,326.142605533294
+"327",36,14,1,0,"Cardiovascular","Black","Male","Oklahoma",1982,"West South Central","South","OK",682.261675377109,714.680350122116,752.40892500382,714.774233979715
+"328",36,14,1,0,"Communicable","Black","Male","Oklahoma",1982,"West South Central","South","OK",57.9349894798468,69.6238911429374,82.6838383114932,69.9129968427244
+"329",36,14,1,0,"Injuries","Black","Male","Oklahoma",1982,"West South Central","South","OK",151.802871509645,166.812786585632,181.663081508632,167.018605029302
+"330",36,14,1,0,"Non-communicable","Black","Male","Oklahoma",1982,"West South Central","South","OK",100.790043802988,112.747841874809,125.604484311291,112.657432874474
+"331",36,14,1,1,"All other causes","Black","Female","Oklahoma",1982,"West South Central","South","OK",120.528751547769,129.122185358393,139.547326304261,129.357221767809
+"332",36,14,1,1,"Cancers","Black","Female","Oklahoma",1982,"West South Central","South","OK",174.844131463352,184.42481850557,194.322113051333,184.341200088795
+"333",36,14,1,1,"Cardiovascular","Black","Female","Oklahoma",1982,"West South Central","South","OK",488.584414582525,511.537694280167,537.558749895653,511.991081970355
+"334",36,14,1,1,"Communicable","Black","Female","Oklahoma",1982,"West South Central","South","OK",35.6659676150201,41.2591407706422,46.9770969299251,41.2499033625206
+"335",36,14,1,1,"Injuries","Black","Female","Oklahoma",1982,"West South Central","South","OK",42.985099369452,47.3987842412647,53.0028883988528,47.5280148655119
+"336",36,14,1,1,"Non-communicable","Black","Female","Oklahoma",1982,"West South Central","South","OK",70.3100877064783,78.0561986243601,85.8846599159254,78.0565085223928
+"337",36,15,0,0,"All other causes","White","Male","Oklahoma",1983,"West South Central","South","OK",114.180589257638,117.877890078018,122.080657682456,117.94091248664
+"338",36,15,0,0,"Cancers","White","Male","Oklahoma",1983,"West South Central","South","OK",262.607637719761,267.854838238854,273.578230128709,267.830632832299
+"339",36,15,0,0,"Cardiovascular","White","Male","Oklahoma",1983,"West South Central","South","OK",636.043759676202,648.899070700474,661.985101501725,648.786044740868
+"340",36,15,0,0,"Communicable","White","Male","Oklahoma",1983,"West South Central","South","OK",53.5582737051306,57.2226111568385,61.5769671245956,57.3390293243713
+"341",36,15,0,0,"Injuries","White","Male","Oklahoma",1983,"West South Central","South","OK",111.776001521629,114.97125533593,118.066886934693,114.927522270508
+"342",36,15,0,0,"Non-communicable","White","Male","Oklahoma",1983,"West South Central","South","OK",106.885458972796,110.3155818741,114.078939432082,110.361638357351
+"343",36,15,0,1,"All other causes","White","Female","Oklahoma",1983,"West South Central","South","OK",83.2142225347157,85.9921196374161,88.9764488733789,86.0375819268252
+"344",36,15,0,1,"Cancers","White","Female","Oklahoma",1983,"West South Central","South","OK",153.229638024032,156.561859701364,159.63010314683,156.525193704806
+"345",36,15,0,1,"Cardiovascular","White","Female","Oklahoma",1983,"West South Central","South","OK",396.305554078902,403.50575896253,410.712719815572,403.527797772183
+"346",36,15,0,1,"Communicable","White","Female","Oklahoma",1983,"West South Central","South","OK",33.6236325528622,35.2992582717658,37.2413578549862,35.3595033725203
+"347",36,15,0,1,"Injuries","White","Female","Oklahoma",1983,"West South Central","South","OK",40.5522848487002,42.0609191243125,43.7197373272351,42.0829434130053
+"348",36,15,0,1,"Non-communicable","White","Female","Oklahoma",1983,"West South Central","South","OK",50.707705436354,52.8576195681029,55.0363585189551,52.8518666327059
+"349",36,15,1,0,"All other causes","Black","Male","Oklahoma",1983,"West South Central","South","OK",158.957560304453,172.232100305948,185.478723112029,172.283967817076
+"350",36,15,1,0,"Cancers","Black","Male","Oklahoma",1983,"West South Central","South","OK",312.75628132635,330.290795487412,350.124592917705,330.562419393291
+"351",36,15,1,0,"Cardiovascular","Black","Male","Oklahoma",1983,"West South Central","South","OK",670.647741977741,702.654998355341,737.489923672297,702.731152939161
+"352",36,15,1,0,"Communicable","Black","Male","Oklahoma",1983,"West South Central","South","OK",57.3172411756422,70.0122115109373,82.5584896735843,70.1424635191064
+"353",36,15,1,0,"Injuries","Black","Male","Oklahoma",1983,"West South Central","South","OK",145.80791683881,159.122819527567,173.794893891584,159.481946440376
+"354",36,15,1,0,"Non-communicable","Black","Male","Oklahoma",1983,"West South Central","South","OK",100.877382282227,113.340568289673,126.280570954728,113.241625933019
+"355",36,15,1,1,"All other causes","Black","Female","Oklahoma",1983,"West South Central","South","OK",120.761698864511,128.965883765256,139.399991391179,129.134388169375
+"356",36,15,1,1,"Cancers","Black","Female","Oklahoma",1983,"West South Central","South","OK",176.941513038747,186.970954834252,197.483425531839,187.151053400076
+"357",36,15,1,1,"Cardiovascular","Black","Female","Oklahoma",1983,"West South Central","South","OK",485.057582848132,508.281882010105,532.267318062623,508.097282986344
+"358",36,15,1,1,"Communicable","Black","Female","Oklahoma",1983,"West South Central","South","OK",35.8518550961677,41.5578293943789,47.4281052148889,41.4710492984709
+"359",36,15,1,1,"Injuries","Black","Female","Oklahoma",1983,"West South Central","South","OK",42.5717973139972,47.098009243038,52.7952716395403,47.2095714887154
+"360",36,15,1,1,"Non-communicable","Black","Female","Oklahoma",1983,"West South Central","South","OK",70.7846330537212,78.8778141236344,86.9309255673461,78.8480666335785
+"361",36,16,0,0,"All other causes","White","Male","Oklahoma",1984,"West South Central","South","OK",113.685540975439,117.451862170666,121.563457797466,117.543830044743
+"362",36,16,0,0,"Cancers","White","Male","Oklahoma",1984,"West South Central","South","OK",263.394928671404,268.9836515084,274.531179887995,269.052390653821
+"363",36,16,0,0,"Cardiovascular","White","Male","Oklahoma",1984,"West South Central","South","OK",618.799217422008,630.902079542826,643.763921668126,631.125728024353
+"364",36,16,0,0,"Communicable","White","Male","Oklahoma",1984,"West South Central","South","OK",57.4157095905077,61.4163289860943,65.6263565510346,61.4260832632119
+"365",36,16,0,0,"Injuries","White","Male","Oklahoma",1984,"West South Central","South","OK",107.845135329329,110.829044815202,113.903408469696,110.843379416178
+"366",36,16,0,0,"Non-communicable","White","Male","Oklahoma",1984,"West South Central","South","OK",108.529362429877,112.314257935239,116.099703654482,112.300016442624
+"367",36,16,0,1,"All other causes","White","Female","Oklahoma",1984,"West South Central","South","OK",83.2713448118263,86.0391141651394,88.9756727833341,86.0511685028137
+"368",36,16,0,1,"Cancers","White","Female","Oklahoma",1984,"West South Central","South","OK",155.558221738486,158.771542628561,161.918960297316,158.743398193999
+"369",36,16,0,1,"Cardiovascular","White","Female","Oklahoma",1984,"West South Central","South","OK",389.923495362856,397.790870160109,405.404004771348,397.693074689689
+"370",36,16,0,1,"Communicable","White","Female","Oklahoma",1984,"West South Central","South","OK",34.8450049000215,36.7814993424623,38.6938325081717,36.7749274929594
+"371",36,16,0,1,"Injuries","White","Female","Oklahoma",1984,"West South Central","South","OK",39.3902499981942,40.870177222799,42.4599533983545,40.8944171901091
+"372",36,16,0,1,"Non-communicable","White","Female","Oklahoma",1984,"West South Central","South","OK",52.2758871443651,54.3114994940589,56.5790479420612,54.3400473945382
+"373",36,16,1,0,"All other causes","Black","Male","Oklahoma",1984,"West South Central","South","OK",159.016582406308,171.843230065579,185.201276112238,171.790504998912
+"374",36,16,1,0,"Cancers","Black","Male","Oklahoma",1984,"West South Central","South","OK",313.529522935905,332.141884097693,350.092000841906,331.986395064839
+"375",36,16,1,0,"Cardiovascular","Black","Male","Oklahoma",1984,"West South Central","South","OK",659.669614420173,691.60055126694,729.115372762917,691.616829689148
+"376",36,16,1,0,"Communicable","Black","Male","Oklahoma",1984,"West South Central","South","OK",57.8831378412234,70.8196585350352,82.8738898085306,70.7911657710305
+"377",36,16,1,0,"Injuries","Black","Male","Oklahoma",1984,"West South Central","South","OK",140.653063494783,154.109779509209,168.368001163298,154.313344214975
+"378",36,16,1,0,"Non-communicable","Black","Male","Oklahoma",1984,"West South Central","South","OK",102.639890332816,115.801176009073,128.950335556901,115.763697135343
+"379",36,16,1,1,"All other causes","Black","Female","Oklahoma",1984,"West South Central","South","OK",121.220558772267,129.180798761371,139.183438254168,129.541079811353
+"380",36,16,1,1,"Cancers","Black","Female","Oklahoma",1984,"West South Central","South","OK",181.228703117651,189.975706777707,201.752704484249,190.207299736101
+"381",36,16,1,1,"Cardiovascular","Black","Female","Oklahoma",1984,"West South Central","South","OK",477.459228941782,497.868236070321,520.943721910521,498.126836167017
+"382",36,16,1,1,"Communicable","Black","Female","Oklahoma",1984,"West South Central","South","OK",36.5644489880299,42.0170735466119,47.5139795574091,42.0285959844223
+"383",36,16,1,1,"Injuries","Black","Female","Oklahoma",1984,"West South Central","South","OK",42.5136090157226,46.8171655683235,52.0648134824294,46.8707263187584
+"384",36,16,1,1,"Non-communicable","Black","Female","Oklahoma",1984,"West South Central","South","OK",72.2840130358341,80.2643045750624,88.8505397126938,80.3010962974424
+"385",36,17,0,0,"All other causes","White","Male","Oklahoma",1985,"West South Central","South","OK",112.755849371184,116.471965270989,120.090700736032,116.419934377077
+"386",36,17,0,0,"Cancers","White","Male","Oklahoma",1985,"West South Central","South","OK",264.148792636657,269.620649498247,275.291197756164,269.648686435828
+"387",36,17,0,0,"Cardiovascular","White","Male","Oklahoma",1985,"West South Central","South","OK",617.013643010879,629.478073648383,640.520427217028,629.308310663741
+"388",36,17,0,0,"Communicable","White","Male","Oklahoma",1985,"West South Central","South","OK",60.8612118153191,65.1926351723315,69.7346489894014,65.2197789368709
+"389",36,17,0,0,"Injuries","White","Male","Oklahoma",1985,"West South Central","South","OK",104.55160119421,107.443337242929,110.566812722234,107.448546929957
+"390",36,17,0,0,"Non-communicable","White","Male","Oklahoma",1985,"West South Central","South","OK",109.610542892046,113.38078192824,117.11125251117,113.317188289498
+"391",36,17,0,1,"All other causes","White","Female","Oklahoma",1985,"West South Central","South","OK",84.0479746201114,86.5123572224267,89.4226994494557,86.5638234141614
+"392",36,17,0,1,"Cancers","White","Female","Oklahoma",1985,"West South Central","South","OK",157.308123895122,160.542994200837,163.813443038041,160.513371342303
+"393",36,17,0,1,"Cardiovascular","White","Female","Oklahoma",1985,"West South Central","South","OK",388.371907514785,395.701370944331,402.804399321946,395.617977334146
+"394",36,17,0,1,"Communicable","White","Female","Oklahoma",1985,"West South Central","South","OK",37.3961540762088,39.3284601162524,41.3709986273334,39.3461106172866
+"395",36,17,0,1,"Injuries","White","Female","Oklahoma",1985,"West South Central","South","OK",38.3328485973837,39.7913817982296,41.4597672386166,39.8308758951589
+"396",36,17,0,1,"Non-communicable","White","Female","Oklahoma",1985,"West South Central","South","OK",52.7649002261096,54.8667818693716,57.1846891218384,54.8687359836802
+"397",36,17,1,0,"All other causes","Black","Male","Oklahoma",1985,"West South Central","South","OK",158.071141765289,170.121265370634,183.753326479068,170.415661095487
+"398",36,17,1,0,"Cancers","Black","Male","Oklahoma",1985,"West South Central","South","OK",315.507061127412,334.408048499168,354.652143008668,334.72109110624
+"399",36,17,1,0,"Cardiovascular","Black","Male","Oklahoma",1985,"West South Central","South","OK",658.183460023754,689.465661560262,724.746677344712,690.444325271687
+"400",36,17,1,0,"Communicable","Black","Male","Oklahoma",1985,"West South Central","South","OK",59.6728838938058,73.0398369247206,84.7187323261597,72.5847269017734
+"401",36,17,1,0,"Injuries","Black","Male","Oklahoma",1985,"West South Central","South","OK",133.969587621357,147.524501772295,161.015233660511,147.333290481219
+"402",36,17,1,0,"Non-communicable","Black","Male","Oklahoma",1985,"West South Central","South","OK",106.04713148701,119.210955431022,131.460685543065,118.915386838947
+"403",36,17,1,1,"All other causes","Black","Female","Oklahoma",1985,"West South Central","South","OK",121.736950069437,129.856063894261,139.992752355736,130.205777553565
+"404",36,17,1,1,"Cancers","Black","Female","Oklahoma",1985,"West South Central","South","OK",182.663165978775,192.851305528376,203.803204769225,192.882672107507
+"405",36,17,1,1,"Cardiovascular","Black","Female","Oklahoma",1985,"West South Central","South","OK",465.636483582547,487.942610351164,510.91412750748,487.846996042925
+"406",36,17,1,1,"Communicable","Black","Female","Oklahoma",1985,"West South Central","South","OK",37.4898196229934,42.7493431352161,48.9062310377611,42.8687622419745
+"407",36,17,1,1,"Injuries","Black","Female","Oklahoma",1985,"West South Central","South","OK",42.3027784640973,46.5238209694893,51.7848846590703,46.5513005775343
+"408",36,17,1,1,"Non-communicable","Black","Female","Oklahoma",1985,"West South Central","South","OK",73.4330984465669,81.2365309818027,89.6958805322927,81.3209942632354
+"409",36,18,0,0,"All other causes","White","Male","Oklahoma",1986,"West South Central","South","OK",111.854017599699,115.762828650109,120.093598958343,115.86975870407
+"410",36,18,0,0,"Cancers","White","Male","Oklahoma",1986,"West South Central","South","OK",266.517388632051,272.242658623655,277.863241571273,272.171753853742
+"411",36,18,0,0,"Cardiovascular","White","Male","Oklahoma",1986,"West South Central","South","OK",605.013790606852,617.614689239311,629.561838687387,617.76981009867
+"412",36,18,0,0,"Communicable","White","Male","Oklahoma",1986,"West South Central","South","OK",66.0635040238732,70.0677618360596,74.5395229153454,70.0721087818584
+"413",36,18,0,0,"Injuries","White","Male","Oklahoma",1986,"West South Central","South","OK",101.478444478544,104.413009294717,107.382043979875,104.422349186513
+"414",36,18,0,0,"Non-communicable","White","Male","Oklahoma",1986,"West South Central","South","OK",109.471428838852,113.10536415417,116.979542093973,113.156820644443
+"415",36,18,0,1,"All other causes","White","Female","Oklahoma",1986,"West South Central","South","OK",85.5463675225606,88.4383551750868,91.0880977970461,88.360245108185
+"416",36,18,0,1,"Cancers","White","Female","Oklahoma",1986,"West South Central","South","OK",159.579077038408,162.649808386139,165.612643037237,162.620780065063
+"417",36,18,0,1,"Cardiovascular","White","Female","Oklahoma",1986,"West South Central","South","OK",377.698655851957,384.842923197505,392.493936434484,384.967671429048
+"418",36,18,0,1,"Communicable","White","Female","Oklahoma",1986,"West South Central","South","OK",38.3575016307761,40.3092505997861,42.5142227151489,40.3727471095202
+"419",36,18,0,1,"Injuries","White","Female","Oklahoma",1986,"West South Central","South","OK",37.4789713792871,38.999919983772,40.5858157058362,38.9989128544572
+"420",36,18,0,1,"Non-communicable","White","Female","Oklahoma",1986,"West South Central","South","OK",54.5812881774159,56.6779557404009,58.9389233976044,56.6989145053159
+"421",36,18,1,0,"All other causes","Black","Male","Oklahoma",1986,"West South Central","South","OK",154.475980904182,167.165575682357,180.060513109896,167.272745222271
+"422",36,18,1,0,"Cancers","Black","Male","Oklahoma",1986,"West South Central","South","OK",320.56717971723,339.87196405645,358.857520301861,339.84604175043
+"423",36,18,1,0,"Cardiovascular","Black","Male","Oklahoma",1986,"West South Central","South","OK",659.386419067996,689.380946478143,725.119144985873,689.961370864879
+"424",36,18,1,0,"Communicable","Black","Male","Oklahoma",1986,"West South Central","South","OK",62.9441417567627,75.5609924613005,88.0375910400854,75.6289699005298
+"425",36,18,1,0,"Injuries","Black","Male","Oklahoma",1986,"West South Central","South","OK",128.74280144935,140.96341806246,154.291934872612,141.309954844824
+"426",36,18,1,0,"Non-communicable","Black","Male","Oklahoma",1986,"West South Central","South","OK",108.736275957212,121.180779314729,133.76677720177,121.105624168136
+"427",36,18,1,1,"All other causes","Black","Female","Oklahoma",1986,"West South Central","South","OK",121.576302318076,129.572984779941,139.836435002766,130.026078270701
+"428",36,18,1,1,"Cancers","Black","Female","Oklahoma",1986,"West South Central","South","OK",183.5711832648,193.952872325311,205.320546925108,194.045436478133
+"429",36,18,1,1,"Cardiovascular","Black","Female","Oklahoma",1986,"West South Central","South","OK",454.461386698897,476.081373228265,496.96087071906,475.732242665677
+"430",36,18,1,1,"Communicable","Black","Female","Oklahoma",1986,"West South Central","South","OK",38.6231433655363,43.7237766827794,49.8400502017961,43.8507874682246
+"431",36,18,1,1,"Injuries","Black","Female","Oklahoma",1986,"West South Central","South","OK",42.2572420119473,46.2644820021275,51.7761094605845,46.3904320119362
+"432",36,18,1,1,"Non-communicable","Black","Female","Oklahoma",1986,"West South Central","South","OK",74.9579616489273,83.3600875121184,91.7109208704156,83.3698313848594
+"433",36,19,0,0,"All other causes","White","Male","Oklahoma",1987,"West South Central","South","OK",110.581372658579,114.624748660327,118.764003271197,114.612020874814
+"434",36,19,0,0,"Cancers","White","Male","Oklahoma",1987,"West South Central","South","OK",269.228395358551,275.086215084743,280.869713191643,275.118897163085
+"435",36,19,0,0,"Cardiovascular","White","Male","Oklahoma",1987,"West South Central","South","OK",585.071094247463,596.425920967588,607.920062357677,596.410165557705
+"436",36,19,0,0,"Communicable","White","Male","Oklahoma",1987,"West South Central","South","OK",65.1832213024872,69.4089263189123,73.5202313286821,69.4223133839003
+"437",36,19,0,0,"Injuries","White","Male","Oklahoma",1987,"West South Central","South","OK",97.7381754007413,100.872203203291,103.757422836411,100.873824143099
+"438",36,19,0,0,"Non-communicable","White","Male","Oklahoma",1987,"West South Central","South","OK",109.802962429502,113.405670210584,117.107197606716,113.442951135979
+"439",36,19,0,1,"All other causes","White","Female","Oklahoma",1987,"West South Central","South","OK",84.5637675725153,87.4071240004754,90.2426979109532,87.4006111111655
+"440",36,19,0,1,"Cancers","White","Female","Oklahoma",1987,"West South Central","South","OK",160.571900260391,163.846835700585,167.12131599098,163.821202313814
+"441",36,19,0,1,"Cardiovascular","White","Female","Oklahoma",1987,"West South Central","South","OK",365.373554470706,372.892691036252,379.431691999003,372.720670940441
+"442",36,19,0,1,"Communicable","White","Female","Oklahoma",1987,"West South Central","South","OK",40.4046934857229,42.5207001599995,44.6635154883397,42.5335142548247
+"443",36,19,0,1,"Injuries","White","Female","Oklahoma",1987,"West South Central","South","OK",37.0731406783488,38.4922352516299,40.0591738785238,38.5424823080888
+"444",36,19,0,1,"Non-communicable","White","Female","Oklahoma",1987,"West South Central","South","OK",56.3399504109462,58.6139611725069,61.0449016221643,58.6525363425185
+"445",36,19,1,0,"All other causes","Black","Male","Oklahoma",1987,"West South Central","South","OK",150.015800328809,163.078696931632,175.673924565976,163.121961015273
+"446",36,19,1,0,"Cancers","Black","Male","Oklahoma",1987,"West South Central","South","OK",327.058435137502,346.451492653898,366.528843227724,346.557549858476
+"447",36,19,1,0,"Cardiovascular","Black","Male","Oklahoma",1987,"West South Central","South","OK",651.55191616407,682.585272983665,718.345700502932,683.480162908438
+"448",36,19,1,0,"Communicable","Black","Male","Oklahoma",1987,"West South Central","South","OK",66.2174770771417,78.7966280990319,91.838364523312,78.826812408753
+"449",36,19,1,0,"Injuries","Black","Male","Oklahoma",1987,"West South Central","South","OK",123.567070584877,135.523850512549,148.759796689466,135.952651299251
+"450",36,19,1,0,"Non-communicable","Black","Male","Oklahoma",1987,"West South Central","South","OK",111.015342638665,123.154842710145,135.706042155018,123.362238741059
+"451",36,19,1,1,"All other causes","Black","Female","Oklahoma",1987,"West South Central","South","OK",120.147024427683,128.551815790441,138.218153278723,128.698512219031
+"452",36,19,1,1,"Cancers","Black","Female","Oklahoma",1987,"West South Central","South","OK",184.406938056497,194.676212806455,204.905943692551,194.722600683633
+"453",36,19,1,1,"Cardiovascular","Black","Female","Oklahoma",1987,"West South Central","South","OK",449.694783194231,469.776523872837,491.416888357124,469.905798942527
+"454",36,19,1,1,"Communicable","Black","Female","Oklahoma",1987,"West South Central","South","OK",40.2550717959262,45.4139914678655,51.4986482038632,45.4429391325491
+"455",36,19,1,1,"Injuries","Black","Female","Oklahoma",1987,"West South Central","South","OK",42.0349313127704,46.0994165302882,51.5213511476405,46.2279794580719
+"456",36,19,1,1,"Non-communicable","Black","Female","Oklahoma",1987,"West South Central","South","OK",75.8409571130081,83.9001597426155,92.6466250486299,84.018849724523
+"457",36,20,0,0,"All other causes","White","Male","Oklahoma",1988,"West South Central","South","OK",110.785362905868,114.26933663406,118.176859534418,114.296238835652
+"458",36,20,0,0,"Cancers","White","Male","Oklahoma",1988,"West South Central","South","OK",272.150075871915,277.20560055141,282.776187000502,277.236284846684
+"459",36,20,0,0,"Cardiovascular","White","Male","Oklahoma",1988,"West South Central","South","OK",572.906505236784,585.189041291118,595.923697940031,584.918065659758
+"460",36,20,0,0,"Communicable","White","Male","Oklahoma",1988,"West South Central","South","OK",71.3166591910559,75.5495310107158,80.0168271990625,75.5437250354069
+"461",36,20,0,0,"Injuries","White","Male","Oklahoma",1988,"West South Central","South","OK",97.2042926341579,99.8015031233812,102.886438836849,99.8429141485183
+"462",36,20,0,0,"Non-communicable","White","Male","Oklahoma",1988,"West South Central","South","OK",112.474700222262,115.820441713409,119.38629979643,115.861638875132
+"463",36,20,0,1,"All other causes","White","Female","Oklahoma",1988,"West South Central","South","OK",83.8286793430401,86.6189865212534,89.3931460521301,86.620986624815
+"464",36,20,0,1,"Cancers","White","Female","Oklahoma",1988,"West South Central","South","OK",162.132523021243,165.185886989938,168.528834469342,165.254847148355
+"465",36,20,0,1,"Cardiovascular","White","Female","Oklahoma",1988,"West South Central","South","OK",370.772850081051,377.490371654022,384.689800541895,377.531195970097
+"466",36,20,0,1,"Communicable","White","Female","Oklahoma",1988,"West South Central","South","OK",41.2927996742408,43.5087834483769,45.6579742579859,43.4902374008856
+"467",36,20,0,1,"Injuries","White","Female","Oklahoma",1988,"West South Central","South","OK",36.5823778950193,38.0514934373037,39.6839840755669,38.0809077790647
+"468",36,20,0,1,"Non-communicable","White","Female","Oklahoma",1988,"West South Central","South","OK",59.788060828777,62.0264306067628,64.4662664119476,62.0698514936349
+"469",36,20,1,0,"All other causes","Black","Male","Oklahoma",1988,"West South Central","South","OK",147.412679101057,160.985833337497,174.161376107394,160.848033317743
+"470",36,20,1,0,"Cancers","Black","Male","Oklahoma",1988,"West South Central","South","OK",330.703362234149,350.158328611363,370.534040823448,350.465550650339
+"471",36,20,1,0,"Cardiovascular","Black","Male","Oklahoma",1988,"West South Central","South","OK",649.817160338107,682.679711580429,717.85487222865,682.866995954604
+"472",36,20,1,0,"Communicable","Black","Male","Oklahoma",1988,"West South Central","South","OK",67.1402628942591,79.4640184134945,93.1869344978497,79.6808028352116
+"473",36,20,1,0,"Injuries","Black","Male","Oklahoma",1988,"West South Central","South","OK",119.49840689642,132.238729720379,143.859039606252,132.06953293464
+"474",36,20,1,0,"Non-communicable","Black","Male","Oklahoma",1988,"West South Central","South","OK",113.249431726709,126.630396415878,139.007145917399,126.438935948163
+"475",36,20,1,1,"All other causes","Black","Female","Oklahoma",1988,"West South Central","South","OK",118.666749320793,127.742996634367,137.294887939876,127.74585199908
+"476",36,20,1,1,"Cancers","Black","Female","Oklahoma",1988,"West South Central","South","OK",185.909581442878,195.888486519912,206.782333121119,196.002287253222
+"477",36,20,1,1,"Cardiovascular","Black","Female","Oklahoma",1988,"West South Central","South","OK",445.244858591357,467.008507995282,490.930314680175,467.305848883209
+"478",36,20,1,1,"Communicable","Black","Female","Oklahoma",1988,"West South Central","South","OK",41.6530119985731,46.5075922470518,52.5245774300932,46.5313740587002
+"479",36,20,1,1,"Injuries","Black","Female","Oklahoma",1988,"West South Central","South","OK",41.6863956486732,45.9176017504584,51.1958360237943,46.0287128574779
+"480",36,20,1,1,"Non-communicable","Black","Female","Oklahoma",1988,"West South Central","South","OK",77.9230295812832,85.4660525838879,94.3441341503957,85.7070928968151
+"481",36,21,0,0,"All other causes","White","Male","Oklahoma",1989,"West South Central","South","OK",108.797913516,112.965513294423,116.869006282614,112.927475717209
+"482",36,21,0,0,"Cancers","White","Male","Oklahoma",1989,"West South Central","South","OK",273.583321833925,279.283055438275,284.571149472606,279.230851796692
+"483",36,21,0,0,"Cardiovascular","White","Male","Oklahoma",1989,"West South Central","South","OK",561.006230941577,571.427193726668,582.207434078934,571.517942593311
+"484",36,21,0,0,"Communicable","White","Male","Oklahoma",1989,"West South Central","South","OK",71.3443996822829,75.7451407176837,79.9115159163008,75.7381444080471
+"485",36,21,0,0,"Injuries","White","Male","Oklahoma",1989,"West South Central","South","OK",95.6036457146856,98.3629485984984,101.075176176938,98.3665752507289
+"486",36,21,0,0,"Non-communicable","White","Male","Oklahoma",1989,"West South Central","South","OK",111.573960807208,115.451707220433,119.17274032138,115.488809313845
+"487",36,21,0,1,"All other causes","White","Female","Oklahoma",1989,"West South Central","South","OK",83.7637021311543,86.4239580715151,89.3584060938305,86.4139613398911
+"488",36,21,0,1,"Cancers","White","Female","Oklahoma",1989,"West South Central","South","OK",164.850691936159,168.145839806876,171.541266098958,168.115723914966
+"489",36,21,0,1,"Cardiovascular","White","Female","Oklahoma",1989,"West South Central","South","OK",360.443472964572,366.768035061709,374.029538756675,366.934664998645
+"490",36,21,0,1,"Communicable","White","Female","Oklahoma",1989,"West South Central","South","OK",43.0502850950459,45.1572283392335,47.5361376685139,45.1964198704324
+"491",36,21,0,1,"Injuries","White","Female","Oklahoma",1989,"West South Central","South","OK",36.0118717554885,37.5766380911585,39.191799360642,37.5838501092503
+"492",36,21,0,1,"Non-communicable","White","Female","Oklahoma",1989,"West South Central","South","OK",61.7129533630163,63.9816924940621,66.5028434044007,64.0282593314197
+"493",36,21,1,0,"All other causes","Black","Male","Oklahoma",1989,"West South Central","South","OK",148.353216994943,161.086310055553,173.378819498419,160.975916622773
+"494",36,21,1,0,"Cancers","Black","Male","Oklahoma",1989,"West South Central","South","OK",334.031222602469,353.266377435439,374.038658293894,353.533639634327
+"495",36,21,1,0,"Cardiovascular","Black","Male","Oklahoma",1989,"West South Central","South","OK",643.466196435563,677.249869431357,710.422127085129,677.476310392157
+"496",36,21,1,0,"Communicable","Black","Male","Oklahoma",1989,"West South Central","South","OK",69.7176757697703,81.9318592133572,95.7734577391812,82.3205881841355
+"497",36,21,1,0,"Injuries","Black","Male","Oklahoma",1989,"West South Central","South","OK",118.220489598861,130.846793585782,142.260625997541,130.875711014566
+"498",36,21,1,0,"Non-communicable","Black","Male","Oklahoma",1989,"West South Central","South","OK",114.01879554604,126.575494827705,138.96177224237,126.480337099128
+"499",36,21,1,1,"All other causes","Black","Female","Oklahoma",1989,"West South Central","South","OK",119.110696677532,128.056735537798,138.077905889245,128.27511778785
+"500",36,21,1,1,"Cancers","Black","Female","Oklahoma",1989,"West South Central","South","OK",186.200104172418,195.880758448716,207.572059425433,196.057829427648
+"501",36,21,1,1,"Cardiovascular","Black","Female","Oklahoma",1989,"West South Central","South","OK",446.874187968202,467.774042195245,488.690922609759,467.846682166711
+"502",36,21,1,1,"Communicable","Black","Female","Oklahoma",1989,"West South Central","South","OK",42.6945084863214,48.1564510862148,54.996496324738,48.4501367396409
+"503",36,21,1,1,"Injuries","Black","Female","Oklahoma",1989,"West South Central","South","OK",41.4086163940646,45.7206920587969,51.1105955987767,45.8331046726499
+"504",36,21,1,1,"Non-communicable","Black","Female","Oklahoma",1989,"West South Central","South","OK",80.3540026640212,87.9341379873467,96.528324655618,88.092804993672
+"505",36,22,0,0,"All other causes","White","Male","Oklahoma",1990,"West South Central","South","OK",110.013252710901,113.705036677093,117.800649302282,113.765429039957
+"506",36,22,0,0,"Cancers","White","Male","Oklahoma",1990,"West South Central","South","OK",274.276137104289,279.552548489701,285.114918818703,279.630595929838
+"507",36,22,0,0,"Cardiovascular","White","Male","Oklahoma",1990,"West South Central","South","OK",552.954657753163,563.643068443409,574.397104373019,563.688072253702
+"508",36,22,0,0,"Communicable","White","Male","Oklahoma",1990,"West South Central","South","OK",73.6143521535485,77.9083270442746,82.5727693780961,77.9478586910112
+"509",36,22,0,0,"Injuries","White","Male","Oklahoma",1990,"West South Central","South","OK",94.3522639066646,97.1753829259475,99.9040733434454,97.1694266586048
+"510",36,22,0,0,"Non-communicable","White","Male","Oklahoma",1990,"West South Central","South","OK",112.405450181364,116.293772349711,120.024655557078,116.283166771274
+"511",36,22,0,1,"All other causes","White","Female","Oklahoma",1990,"West South Central","South","OK",85.4186121402688,88.1397010441384,90.7434723474758,88.182122206996
+"512",36,22,0,1,"Cancers","White","Female","Oklahoma",1990,"West South Central","South","OK",165.252701265971,168.797947273151,172.21767554905,168.711961776405
+"513",36,22,0,1,"Cardiovascular","White","Female","Oklahoma",1990,"West South Central","South","OK",355.87840407624,362.732904283797,370.166497066235,362.798099065618
+"514",36,22,0,1,"Communicable","White","Female","Oklahoma",1990,"West South Central","South","OK",44.1885448594872,46.2422384977766,48.5459889613868,46.2914608714048
+"515",36,22,0,1,"Injuries","White","Female","Oklahoma",1990,"West South Central","South","OK",36.1554476030936,37.6974132542679,39.3314385759912,37.7006483389014
+"516",36,22,0,1,"Non-communicable","White","Female","Oklahoma",1990,"West South Central","South","OK",64.416991482688,66.950149841339,69.563852871306,66.9545879496449
+"517",36,22,1,0,"All other causes","Black","Male","Oklahoma",1990,"West South Central","South","OK",149.47529567707,161.866329861523,175.836562968243,162.339712087707
+"518",36,22,1,0,"Cancers","Black","Male","Oklahoma",1990,"West South Central","South","OK",336.33572717882,355.600741791235,374.968927992585,355.731121461329
+"519",36,22,1,0,"Cardiovascular","Black","Male","Oklahoma",1990,"West South Central","South","OK",631.17375852895,661.285380023766,694.001783246614,661.688935154621
+"520",36,22,1,0,"Communicable","Black","Male","Oklahoma",1990,"West South Central","South","OK",71.9348215558866,83.3769795114306,96.4222161546936,83.5063524788644
+"521",36,22,1,0,"Injuries","Black","Male","Oklahoma",1990,"West South Central","South","OK",117.467893559146,129.284922752073,141.508126428417,129.466257995897
+"522",36,22,1,0,"Non-communicable","Black","Male","Oklahoma",1990,"West South Central","South","OK",115.433257256747,128.03984170693,140.965257477655,128.066213542922
+"523",36,22,1,1,"All other causes","Black","Female","Oklahoma",1990,"West South Central","South","OK",119.027023879748,127.335345957404,136.360882442187,127.458538557567
+"524",36,22,1,1,"Cancers","Black","Female","Oklahoma",1990,"West South Central","South","OK",186.208339553412,197.04923663616,208.524900965044,197.200427677716
+"525",36,22,1,1,"Cardiovascular","Black","Female","Oklahoma",1990,"West South Central","South","OK",437.034766880712,458.823977908875,479.498813589068,458.49479007885
+"526",36,22,1,1,"Communicable","Black","Female","Oklahoma",1990,"West South Central","South","OK",43.2705537406397,48.9221112648056,55.536092191214,49.0764039780751
+"527",36,22,1,1,"Injuries","Black","Female","Oklahoma",1990,"West South Central","South","OK",41.0451968758348,45.5038521531418,51.1145833715165,45.6438876548853
+"528",36,22,1,1,"Non-communicable","Black","Female","Oklahoma",1990,"West South Central","South","OK",82.4268834694721,90.1494133049382,98.5105652253683,90.2306195964493
+"529",36,23,0,0,"All other causes","White","Male","Oklahoma",1991,"West South Central","South","OK",108.380699863542,112.142871833546,115.940816026872,112.166618083314
+"530",36,23,0,0,"Cancers","White","Male","Oklahoma",1991,"West South Central","South","OK",274.914862246935,280.851924100537,286.633045186682,280.834155610847
+"531",36,23,0,0,"Cardiovascular","White","Male","Oklahoma",1991,"West South Central","South","OK",535.059344904089,545.086294071922,555.697001534912,545.124403863798
+"532",36,23,0,0,"Communicable","White","Male","Oklahoma",1991,"West South Central","South","OK",72.973269084976,77.0575925477614,81.6834620609547,77.0886784379644
+"533",36,23,0,0,"Injuries","White","Male","Oklahoma",1991,"West South Central","South","OK",94.4440169890557,97.2952930068417,99.8508386876888,97.2793093893324
+"534",36,23,0,0,"Non-communicable","White","Male","Oklahoma",1991,"West South Central","South","OK",112.811320512335,116.821344567452,120.936715597749,116.813030988732
+"535",36,23,0,1,"All other causes","White","Female","Oklahoma",1991,"West South Central","South","OK",85.7277813846698,88.5585808098977,91.3097112126862,88.5611059770047
+"536",36,23,0,1,"Cancers","White","Female","Oklahoma",1991,"West South Central","South","OK",165.201000995279,168.594359777529,172.049691095733,168.601318483006
+"537",36,23,0,1,"Cardiovascular","White","Female","Oklahoma",1991,"West South Central","South","OK",344.496747899314,350.942549810539,357.790596637419,350.89469575818
+"538",36,23,0,1,"Communicable","White","Female","Oklahoma",1991,"West South Central","South","OK",41.7738823527484,43.9752608935607,46.0058193308397,43.9350898871212
+"539",36,23,0,1,"Injuries","White","Female","Oklahoma",1991,"West South Central","South","OK",36.297251700844,37.9076903255613,39.5502318692214,37.9023940221661
+"540",36,23,0,1,"Non-communicable","White","Female","Oklahoma",1991,"West South Central","South","OK",66.5367819393653,68.9968056660181,71.5787047042994,69.021149255992
+"541",36,23,1,0,"All other causes","Black","Male","Oklahoma",1991,"West South Central","South","OK",149.989208292283,162.991815055488,176.911845537361,163.181597010263
+"542",36,23,1,0,"Cancers","Black","Male","Oklahoma",1991,"West South Central","South","OK",340.166467943813,359.457698282987,378.321844205724,359.448589136971
+"543",36,23,1,0,"Cardiovascular","Black","Male","Oklahoma",1991,"West South Central","South","OK",618.956175218227,649.144148116981,681.44721322078,649.858208436489
+"544",36,23,1,0,"Communicable","Black","Male","Oklahoma",1991,"West South Central","South","OK",74.2910991429203,85.3418567064319,100.082383997201,85.8324068206424
+"545",36,23,1,0,"Injuries","Black","Male","Oklahoma",1991,"West South Central","South","OK",115.185222341692,126.100235599248,137.564891147362,126.03801898835
+"546",36,23,1,0,"Non-communicable","Black","Male","Oklahoma",1991,"West South Central","South","OK",117.451270769978,130.419490852958,142.758945749599,130.469569891244
+"547",36,23,1,1,"All other causes","Black","Female","Oklahoma",1991,"West South Central","South","OK",118.71368505082,127.011462867452,136.032817993599,127.151402769458
+"548",36,23,1,1,"Cancers","Black","Female","Oklahoma",1991,"West South Central","South","OK",188.389912448849,198.533728247364,210.058306798656,198.933388548355
+"549",36,23,1,1,"Cardiovascular","Black","Female","Oklahoma",1991,"West South Central","South","OK",437.405795018255,458.367021283512,480.563864906981,458.37834052821
+"550",36,23,1,1,"Communicable","Black","Female","Oklahoma",1991,"West South Central","South","OK",43.7535301488314,49.4471897970829,55.7421534603244,49.5032007866992
+"551",36,23,1,1,"Injuries","Black","Female","Oklahoma",1991,"West South Central","South","OK",40.8187588010861,45.4128456994496,50.8827293373264,45.5784788651298
+"552",36,23,1,1,"Non-communicable","Black","Female","Oklahoma",1991,"West South Central","South","OK",83.5096902158864,91.9365968653834,100.701383956107,91.9622004973126
+"553",36,24,0,0,"All other causes","White","Male","Oklahoma",1992,"West South Central","South","OK",110.330660890785,114.276714713332,117.911518418565,114.184593832069
+"554",36,24,0,0,"Cancers","White","Male","Oklahoma",1992,"West South Central","South","OK",275.297148434269,280.608581010805,286.032041827155,280.6687945796
+"555",36,24,0,0,"Cardiovascular","White","Male","Oklahoma",1992,"West South Central","South","OK",526.924154976029,538.047494056255,548.108740455569,537.854207421879
+"556",36,24,0,0,"Communicable","White","Male","Oklahoma",1992,"West South Central","South","OK",73.2946959576845,77.8189902250892,81.9032220257688,77.7001809787059
+"557",36,24,0,0,"Injuries","White","Male","Oklahoma",1992,"West South Central","South","OK",94.2499584275164,97.1534450683052,99.7942530696151,97.1140061041984
+"558",36,24,0,0,"Non-communicable","White","Male","Oklahoma",1992,"West South Central","South","OK",115.270657123428,119.018594298876,122.855557724234,118.988285792904
+"559",36,24,0,1,"All other causes","White","Female","Oklahoma",1992,"West South Central","South","OK",86.378136228924,89.3006091465519,91.8670947410532,89.2312711666416
+"560",36,24,0,1,"Cancers","White","Female","Oklahoma",1992,"West South Central","South","OK",164.94517419638,168.234854507393,171.720243993116,168.298818244231
+"561",36,24,0,1,"Cardiovascular","White","Female","Oklahoma",1992,"West South Central","South","OK",338.554128105673,345.226328195573,351.367019284361,345.218935403215
+"562",36,24,0,1,"Communicable","White","Female","Oklahoma",1992,"West South Central","South","OK",43.5865290799255,45.6881926118901,47.8787785588482,45.7157875175691
+"563",36,24,0,1,"Injuries","White","Female","Oklahoma",1992,"West South Central","South","OK",36.7658047061666,38.2128239405951,39.8540932151875,38.2217973710329
+"564",36,24,0,1,"Non-communicable","White","Female","Oklahoma",1992,"West South Central","South","OK",67.4367572309618,69.7951632725955,72.1966820387699,69.7783355430606
+"565",36,24,1,0,"All other causes","Black","Male","Oklahoma",1992,"West South Central","South","OK",151.130821960687,163.562255928402,177.619052382908,163.982742411771
+"566",36,24,1,0,"Cancers","Black","Male","Oklahoma",1992,"West South Central","South","OK",343.336182449548,360.639682926193,381.559599289981,361.130265402433
+"567",36,24,1,0,"Cardiovascular","Black","Male","Oklahoma",1992,"West South Central","South","OK",611.652964634893,641.603086142162,671.195463257595,641.731435725221
+"568",36,24,1,0,"Communicable","Black","Male","Oklahoma",1992,"West South Central","South","OK",75.1944671251178,85.7734120118287,99.0412713364464,86.0208003350252
+"569",36,24,1,0,"Injuries","Black","Male","Oklahoma",1992,"West South Central","South","OK",112.225131282795,123.302232448278,134.734419582853,123.303365103381
+"570",36,24,1,0,"Non-communicable","Black","Male","Oklahoma",1992,"West South Central","South","OK",118.739079454153,131.630640592898,145.756354682349,131.518049727422
+"571",36,24,1,1,"All other causes","Black","Female","Oklahoma",1992,"West South Central","South","OK",118.034933119809,127.146610028604,135.475030410735,127.046424132251
+"572",36,24,1,1,"Cancers","Black","Female","Oklahoma",1992,"West South Central","South","OK",190.115212873478,200.92577661818,211.814520003859,200.953141799966
+"573",36,24,1,1,"Cardiovascular","Black","Female","Oklahoma",1992,"West South Central","South","OK",432.985942290542,452.817663405696,474.615252090301,453.022475400782
+"574",36,24,1,1,"Communicable","Black","Female","Oklahoma",1992,"West South Central","South","OK",44.5475782094972,50.1098235264456,56.7194192862016,50.2147232778403
+"575",36,24,1,1,"Injuries","Black","Female","Oklahoma",1992,"West South Central","South","OK",40.8122203170653,45.3802407323686,51.0857986252224,45.4466620663873
+"576",36,24,1,1,"Non-communicable","Black","Female","Oklahoma",1992,"West South Central","South","OK",86.018007185221,94.7513486012967,103.340655136064,94.9328961424407
+"577",36,25,0,0,"All other causes","White","Male","Oklahoma",1993,"West South Central","South","OK",113.542487245106,117.698626626164,121.757500261737,117.688567057277
+"578",36,25,0,0,"Cancers","White","Male","Oklahoma",1993,"West South Central","South","OK",274.629097802234,280.363306561432,285.871864719537,280.353947061692
+"579",36,25,0,0,"Cardiovascular","White","Male","Oklahoma",1993,"West South Central","South","OK",533.498000178221,544.069844601377,554.677741824844,544.186460287803
+"580",36,25,0,0,"Communicable","White","Male","Oklahoma",1993,"West South Central","South","OK",78.1746204077682,82.4422110953518,87.2310846679283,82.5050021055366
+"581",36,25,0,0,"Injuries","White","Male","Oklahoma",1993,"West South Central","South","OK",96.1464442115295,98.9174830517397,101.804902504379,98.9613968982012
+"582",36,25,0,0,"Non-communicable","White","Male","Oklahoma",1993,"West South Central","South","OK",118.823910499492,122.58631343481,126.495293939065,122.631741924859
+"583",36,25,0,1,"All other causes","White","Female","Oklahoma",1993,"West South Central","South","OK",90.9373239186449,93.7672928675803,96.8282404133781,93.7647774717822
+"584",36,25,0,1,"Cancers","White","Female","Oklahoma",1993,"West South Central","South","OK",166.12416935703,169.700940076957,172.900773894811,169.652348378498
+"585",36,25,0,1,"Cardiovascular","White","Female","Oklahoma",1993,"West South Central","South","OK",344.509735877317,351.080561130544,358.019797706691,351.024008299425
+"586",36,25,0,1,"Communicable","White","Female","Oklahoma",1993,"West South Central","South","OK",44.9438123484431,47.1657945098344,49.2773977111898,47.1205047741127
+"587",36,25,0,1,"Injuries","White","Female","Oklahoma",1993,"West South Central","South","OK",37.5533391634497,39.0276179252889,40.6744434760641,39.04924730196
+"588",36,25,0,1,"Non-communicable","White","Female","Oklahoma",1993,"West South Central","South","OK",69.5239624890531,71.938928768852,74.4061513230648,71.9390173282021
+"589",36,25,1,0,"All other causes","Black","Male","Oklahoma",1993,"West South Central","South","OK",150.260612372255,163.524924117723,176.230539339683,163.461123941891
+"590",36,25,1,0,"Cancers","Black","Male","Oklahoma",1993,"West South Central","South","OK",342.471349506387,360.439252346912,379.626189702596,360.616594965352
+"591",36,25,1,0,"Cardiovascular","Black","Male","Oklahoma",1993,"West South Central","South","OK",603.756154148529,633.031165200099,662.228184826916,633.402620826891
+"592",36,25,1,0,"Communicable","Black","Male","Oklahoma",1993,"West South Central","South","OK",75.7710630494025,86.9500177527794,99.993259974185,87.1285705079601
+"593",36,25,1,0,"Injuries","Black","Male","Oklahoma",1993,"West South Central","South","OK",114.288319200948,124.76167842116,135.539721626194,124.755729931512
+"594",36,25,1,0,"Non-communicable","Black","Male","Oklahoma",1993,"West South Central","South","OK",120.279541518726,132.976282569291,147.052745521895,133.15307356685
+"595",36,25,1,1,"All other causes","Black","Female","Oklahoma",1993,"West South Central","South","OK",118.159095281515,127.469995513177,136.289601260099,127.404462188903
+"596",36,25,1,1,"Cancers","Black","Female","Oklahoma",1993,"West South Central","South","OK",190.927302764246,201.724897240161,213.417778415365,201.648641826955
+"597",36,25,1,1,"Cardiovascular","Black","Female","Oklahoma",1993,"West South Central","South","OK",429.63175915355,450.430339637449,470.874640792789,450.320748853042
+"598",36,25,1,1,"Communicable","Black","Female","Oklahoma",1993,"West South Central","South","OK",44.2148163061265,50.0686193112748,56.8191893941876,50.1751523191517
+"599",36,25,1,1,"Injuries","Black","Female","Oklahoma",1993,"West South Central","South","OK",40.9013539907297,45.3338839837329,50.4171526578749,45.3769950684938
+"600",36,25,1,1,"Non-communicable","Black","Female","Oklahoma",1993,"West South Central","South","OK",90.4562251547537,99.0686233177998,107.008137425771,98.9774909934619
+"601",36,26,0,0,"All other causes","White","Male","Oklahoma",1994,"West South Central","South","OK",116.55102217151,120.270563103368,124.096966656513,120.316192222141
+"602",36,26,0,0,"Cancers","White","Male","Oklahoma",1994,"West South Central","South","OK",271.962751726672,277.030190511364,282.732998276153,277.059833438008
+"603",36,26,0,0,"Cardiovascular","White","Male","Oklahoma",1994,"West South Central","South","OK",525.287297789506,535.716979035028,545.891185394023,535.597783663124
+"604",36,26,0,0,"Communicable","White","Male","Oklahoma",1994,"West South Central","South","OK",74.9847927559945,79.1086317969613,83.679677043723,79.1668322713634
+"605",36,26,0,0,"Injuries","White","Male","Oklahoma",1994,"West South Central","South","OK",97.6510123360522,100.578675378324,103.637520904636,100.575778092055
+"606",36,26,0,0,"Non-communicable","White","Male","Oklahoma",1994,"West South Central","South","OK",120.0216095494,123.590886494659,127.469355569382,123.640340733179
+"607",36,26,0,1,"All other causes","White","Female","Oklahoma",1994,"West South Central","South","OK",92.3185815697012,95.0817562186639,97.8603461539913,95.063950832538
+"608",36,26,0,1,"Cancers","White","Female","Oklahoma",1994,"West South Central","South","OK",168.122720915936,171.495725766149,174.788497249531,171.416517106766
+"609",36,26,0,1,"Cardiovascular","White","Female","Oklahoma",1994,"West South Central","South","OK",335.590360647933,342.265090920623,348.907241225486,342.29267302388
+"610",36,26,0,1,"Communicable","White","Female","Oklahoma",1994,"West South Central","South","OK",46.2280781891002,48.4625760479891,50.7764889872484,48.4757430905317
+"611",36,26,0,1,"Injuries","White","Female","Oklahoma",1994,"West South Central","South","OK",37.4789384718336,39.0873898806495,40.7496979398507,39.1029911548574
+"612",36,26,0,1,"Non-communicable","White","Female","Oklahoma",1994,"West South Central","South","OK",72.1622334678898,74.7903661669915,77.3596326918791,74.7728519406334
+"613",36,26,1,0,"All other causes","Black","Male","Oklahoma",1994,"West South Central","South","OK",148.163471901703,161.365462860197,175.130107112123,161.561430539506
+"614",36,26,1,0,"Cancers","Black","Male","Oklahoma",1994,"West South Central","South","OK",341.650632005871,360.664367310826,381.235962612075,360.789741872745
+"615",36,26,1,0,"Cardiovascular","Black","Male","Oklahoma",1994,"West South Central","South","OK",597.33206737871,628.156433007676,658.807045881276,627.774037391426
+"616",36,26,1,0,"Communicable","Black","Male","Oklahoma",1994,"West South Central","South","OK",75.5125932147051,85.8412418357012,99.2480772131286,86.2358417938739
+"617",36,26,1,0,"Injuries","Black","Male","Oklahoma",1994,"West South Central","South","OK",113.456616102594,123.833859115956,134.600179144814,123.924174960361
+"618",36,26,1,0,"Non-communicable","Black","Male","Oklahoma",1994,"West South Central","South","OK",123.263926510883,136.051538387644,150.610432833927,136.359544228389
+"619",36,26,1,1,"All other causes","Black","Female","Oklahoma",1994,"West South Central","South","OK",119.038641073038,128.624647482,137.529941394952,128.678524398687
+"620",36,26,1,1,"Cancers","Black","Female","Oklahoma",1994,"West South Central","South","OK",190.616581035961,201.011992879777,212.224315474229,201.260236020257
+"621",36,26,1,1,"Cardiovascular","Black","Female","Oklahoma",1994,"West South Central","South","OK",425.359377414778,445.423936061991,464.642061175269,445.379212806042
+"622",36,26,1,1,"Communicable","Black","Female","Oklahoma",1994,"West South Central","South","OK",44.4611728937487,50.4028037445777,56.9516554107198,50.4470712768861
+"623",36,26,1,1,"Injuries","Black","Female","Oklahoma",1994,"West South Central","South","OK",40.7283600764341,45.2400683928171,50.4095813142421,45.2801105093439
+"624",36,26,1,1,"Non-communicable","Black","Female","Oklahoma",1994,"West South Central","South","OK",93.1004647071351,102.053105234875,110.730933738848,102.038169783959
+"625",36,27,0,0,"All other causes","White","Male","Oklahoma",1995,"West South Central","South","OK",118.891104878559,122.952802198232,127.159214798402,122.967428022051
+"626",36,27,0,0,"Cancers","White","Male","Oklahoma",1995,"West South Central","South","OK",269.55689597366,274.5312659507,279.744550993081,274.574794267494
+"627",36,27,0,0,"Cardiovascular","White","Male","Oklahoma",1995,"West South Central","South","OK",524.921263234244,535.07334114677,545.407084246425,534.998207495692
+"628",36,27,0,0,"Communicable","White","Male","Oklahoma",1995,"West South Central","South","OK",76.0088679531175,80.0672658664006,84.5217512169877,80.0204113930369
+"629",36,27,0,0,"Injuries","White","Male","Oklahoma",1995,"West South Central","South","OK",98.5914300813097,101.486651018327,104.388767252886,101.445391040731
+"630",36,27,0,0,"Non-communicable","White","Male","Oklahoma",1995,"West South Central","South","OK",121.578486862599,125.140266301153,128.826402965002,125.164310432087
+"631",36,27,0,1,"All other causes","White","Female","Oklahoma",1995,"West South Central","South","OK",93.3658402715546,96.1209599216826,99.0701464426995,96.1649696055562
+"632",36,27,0,1,"Cancers","White","Female","Oklahoma",1995,"West South Central","South","OK",168.818806504311,171.921645850352,175.469534327104,171.955037429045
+"633",36,27,0,1,"Cardiovascular","White","Female","Oklahoma",1995,"West South Central","South","OK",339.933697838511,346.204341685253,352.282141808599,346.18405470863
+"634",36,27,0,1,"Communicable","White","Female","Oklahoma",1995,"West South Central","South","OK",45.4518385668333,47.569488714727,49.8213717211436,47.5950492644481
+"635",36,27,0,1,"Injuries","White","Female","Oklahoma",1995,"West South Central","South","OK",38.7341918035039,40.4408451991624,42.2695285391508,40.4849891743587
+"636",36,27,0,1,"Non-communicable","White","Female","Oklahoma",1995,"West South Central","South","OK",73.678814435109,76.4864694980133,79.0753948485274,76.4458948093187
+"637",36,27,1,0,"All other causes","Black","Male","Oklahoma",1995,"West South Central","South","OK",148.404749082119,160.814710341725,173.076816861486,160.599583522368
+"638",36,27,1,0,"Cancers","Black","Male","Oklahoma",1995,"West South Central","South","OK",340.096901383321,358.162763235041,376.890444345987,358.408378214317
+"639",36,27,1,0,"Cardiovascular","Black","Male","Oklahoma",1995,"West South Central","South","OK",596.255121276825,625.131004213293,654.663413554363,625.284613974129
+"640",36,27,1,0,"Communicable","Black","Male","Oklahoma",1995,"West South Central","South","OK",74.0432370380267,84.5369858148637,97.5709631744527,84.8365543707491
+"641",36,27,1,0,"Injuries","Black","Male","Oklahoma",1995,"West South Central","South","OK",111.279390204198,121.235063055686,132.29662734536,121.273037009312
+"642",36,27,1,0,"Non-communicable","Black","Male","Oklahoma",1995,"West South Central","South","OK",124.43101477773,137.940754067473,151.928090383372,137.99482816711
+"643",36,27,1,1,"All other causes","Black","Female","Oklahoma",1995,"West South Central","South","OK",120.884904652828,129.928634749273,138.901323880797,129.89405147744
+"644",36,27,1,1,"Cancers","Black","Female","Oklahoma",1995,"West South Central","South","OK",189.79581427129,200.310538283364,212.063952033162,200.411573563521
+"645",36,27,1,1,"Cardiovascular","Black","Female","Oklahoma",1995,"West South Central","South","OK",426.909384702101,446.538367526917,467.550422523533,446.61883544017
+"646",36,27,1,1,"Communicable","Black","Female","Oklahoma",1995,"West South Central","South","OK",44.3303114979492,50.1698717529021,57.4085072968447,50.2155908075298
+"647",36,27,1,1,"Injuries","Black","Female","Oklahoma",1995,"West South Central","South","OK",40.4871509577613,45.0143818795178,50.0929204533522,45.1041166573887
+"648",36,27,1,1,"Non-communicable","Black","Female","Oklahoma",1995,"West South Central","South","OK",96.968613768468,105.841552713916,115.379039896515,105.859177718189
+"649",36,28,0,0,"All other causes","White","Male","Oklahoma",1996,"West South Central","South","OK",121.578662417779,125.858187408759,130.056046533536,125.831444227754
+"650",36,28,0,0,"Cancers","White","Male","Oklahoma",1996,"West South Central","South","OK",266.729714072401,271.845381170087,277.441381187461,271.871246806413
+"651",36,28,0,0,"Cardiovascular","White","Male","Oklahoma",1996,"West South Central","South","OK",512.549177995191,523.410194318082,533.128826741164,523.165445731672
+"652",36,28,0,0,"Communicable","White","Male","Oklahoma",1996,"West South Central","South","OK",70.0779603413408,74.4304023072574,78.4783286432635,74.3618579363401
+"653",36,28,0,0,"Injuries","White","Male","Oklahoma",1996,"West South Central","South","OK",98.1265139545553,100.955825364568,103.659182855238,100.961270378239
+"654",36,28,0,0,"Non-communicable","White","Male","Oklahoma",1996,"West South Central","South","OK",122.901430901023,126.934692816626,130.81707757585,126.915158735263
+"655",36,28,0,1,"All other causes","White","Female","Oklahoma",1996,"West South Central","South","OK",96.9913274339779,99.7593675274413,102.54622631407,99.7386878887125
+"656",36,28,0,1,"Cancers","White","Female","Oklahoma",1996,"West South Central","South","OK",167.779098696575,170.959551118367,174.157456086879,170.979919423923
+"657",36,28,0,1,"Cardiovascular","White","Female","Oklahoma",1996,"West South Central","South","OK",342.061286192925,348.155677901562,354.466377209492,348.250641245636
+"658",36,28,0,1,"Communicable","White","Female","Oklahoma",1996,"West South Central","South","OK",45.5908309802161,47.5600762224794,49.8048525307544,47.5715420933093
+"659",36,28,0,1,"Injuries","White","Female","Oklahoma",1996,"West South Central","South","OK",39.4017732435569,40.8658906927347,42.4635980210653,40.8732499137471
+"660",36,28,0,1,"Non-communicable","White","Female","Oklahoma",1996,"West South Central","South","OK",77.1487909734815,79.8693995362468,82.4505967363414,79.8622573536592
+"661",36,28,1,0,"All other causes","Black","Male","Oklahoma",1996,"West South Central","South","OK",147.541919206275,159.828974893741,172.865742937502,160.014440049603
+"662",36,28,1,0,"Cancers","Black","Male","Oklahoma",1996,"West South Central","South","OK",339.337386322808,357.284300544091,377.552632097987,357.742786003611
+"663",36,28,1,0,"Cardiovascular","Black","Male","Oklahoma",1996,"West South Central","South","OK",589.034622038315,617.673684353693,650.183443596733,618.457044445607
+"664",36,28,1,0,"Communicable","Black","Male","Oklahoma",1996,"West South Central","South","OK",73.215908614822,84.0641029960483,97.2809028383931,84.3288470959693
+"665",36,28,1,0,"Injuries","Black","Male","Oklahoma",1996,"West South Central","South","OK",108.725941811657,118.568630020615,129.104311257659,118.686084185049
+"666",36,28,1,0,"Non-communicable","Black","Male","Oklahoma",1996,"West South Central","South","OK",128.469349678215,141.115126241838,154.467591326219,140.917889388328
+"667",36,28,1,1,"All other causes","Black","Female","Oklahoma",1996,"West South Central","South","OK",123.304356853222,132.612950288073,141.761404165665,132.571037870353
+"668",36,28,1,1,"Cancers","Black","Female","Oklahoma",1996,"West South Central","South","OK",190.643177982443,200.142569291656,211.538281281795,200.432601738582
+"669",36,28,1,1,"Cardiovascular","Black","Female","Oklahoma",1996,"West South Central","South","OK",430.446922796394,450.780296285035,470.914876709977,450.521036110309
+"670",36,28,1,1,"Communicable","Black","Female","Oklahoma",1996,"West South Central","South","OK",43.988632095116,49.7533455787844,56.2926856897662,49.9298975706717
+"671",36,28,1,1,"Injuries","Black","Female","Oklahoma",1996,"West South Central","South","OK",40.2032201176593,44.8883686230623,49.6266959798509,44.9116914040232
+"672",36,28,1,1,"Non-communicable","Black","Female","Oklahoma",1996,"West South Central","South","OK",100.124963558324,109.497068983965,119.115323091964,109.550652422017
+"673",36,29,0,0,"All other causes","White","Male","Oklahoma",1997,"West South Central","South","OK",124.655728919973,129.095384202322,133.415877868043,129.052210137267
+"674",36,29,0,0,"Cancers","White","Male","Oklahoma",1997,"West South Central","South","OK",264.068451182275,269.322643449473,274.414037007338,269.285436563801
+"675",36,29,0,0,"Cardiovascular","White","Male","Oklahoma",1997,"West South Central","South","OK",504.499403682899,513.99112540191,524.370395054051,514.015003934482
+"676",36,29,0,0,"Communicable","White","Male","Oklahoma",1997,"West South Central","South","OK",66.7147088929788,70.7468225381141,74.6952395429415,70.7926012270973
+"677",36,29,0,0,"Injuries","White","Male","Oklahoma",1997,"West South Central","South","OK",97.873581000525,100.797003376408,103.734948666927,100.8079040725
+"678",36,29,0,0,"Non-communicable","White","Male","Oklahoma",1997,"West South Central","South","OK",128.703814778375,132.332319717484,136.199969071886,132.39064036405
+"679",36,29,0,1,"All other causes","White","Female","Oklahoma",1997,"West South Central","South","OK",104.296471423853,107.395447423569,110.354068512504,107.378713307765
+"680",36,29,0,1,"Cancers","White","Female","Oklahoma",1997,"West South Central","South","OK",166.765592992138,169.951784520683,173.310656996322,169.987791565961
+"681",36,29,0,1,"Cardiovascular","White","Female","Oklahoma",1997,"West South Central","South","OK",336.321616384782,342.740992578897,349.143542277585,342.750931847936
+"682",36,29,0,1,"Communicable","White","Female","Oklahoma",1997,"West South Central","South","OK",43.7626251354076,45.7989971162876,47.8477107673308,45.8171951599161
+"683",36,29,0,1,"Injuries","White","Female","Oklahoma",1997,"West South Central","South","OK",39.7565918928609,41.3174930201289,42.9686758570113,41.3161039937262
+"684",36,29,0,1,"Non-communicable","White","Female","Oklahoma",1997,"West South Central","South","OK",82.5291987476558,85.3173589913624,88.1549678711098,85.3043315191148
+"685",36,29,1,0,"All other causes","Black","Male","Oklahoma",1997,"West South Central","South","OK",147.183726754521,159.909933129363,172.711752523208,160.019251116096
+"686",36,29,1,0,"Cancers","Black","Male","Oklahoma",1997,"West South Central","South","OK",341.197287484646,359.412863366182,378.194446590487,359.574227216677
+"687",36,29,1,0,"Cardiovascular","Black","Male","Oklahoma",1997,"West South Central","South","OK",587.790889728667,616.560953363638,648.34055701543,617.431619996133
+"688",36,29,1,0,"Communicable","Black","Male","Oklahoma",1997,"West South Central","South","OK",71.0657074756133,82.3309077362132,94.1975056722523,82.3962394321694
+"689",36,29,1,0,"Injuries","Black","Male","Oklahoma",1997,"West South Central","South","OK",106.0217901919,115.26539924123,125.177112609913,115.344106184219
+"690",36,29,1,0,"Non-communicable","Black","Male","Oklahoma",1997,"West South Central","South","OK",133.70791735752,146.408511070076,160.08505653206,146.444940317645
+"691",36,29,1,1,"All other causes","Black","Female","Oklahoma",1997,"West South Central","South","OK",126.213826273258,136.035336910019,145.073821457119,135.997565300702
+"692",36,29,1,1,"Cancers","Black","Female","Oklahoma",1997,"West South Central","South","OK",190.749828345351,201.033596356462,212.159223897197,200.965224062725
+"693",36,29,1,1,"Cardiovascular","Black","Female","Oklahoma",1997,"West South Central","South","OK",427.228071509063,447.686828311847,467.212659611675,447.61123978313
+"694",36,29,1,1,"Communicable","Black","Female","Oklahoma",1997,"West South Central","South","OK",43.5143194848575,49.6308934924928,56.2011698062028,49.6318122831675
+"695",36,29,1,1,"Injuries","Black","Female","Oklahoma",1997,"West South Central","South","OK",40.1115589520793,44.6874598253091,49.4780293928668,44.696796249087
+"696",36,29,1,1,"Non-communicable","Black","Female","Oklahoma",1997,"West South Central","South","OK",105.332043448446,113.98375979832,122.744349886172,113.995973458353
+"697",36,30,0,0,"All other causes","White","Male","Oklahoma",1998,"West South Central","South","OK",128.385009330081,132.67304814806,137.188567018558,132.721661685784
+"698",36,30,0,0,"Cancers","White","Male","Oklahoma",1998,"West South Central","South","OK",262.394120006579,267.704188887758,272.928991243698,267.711254736288
+"699",36,30,0,0,"Cardiovascular","White","Male","Oklahoma",1998,"West South Central","South","OK",492.39969888571,502.747175625878,512.171365836735,502.428269032845
+"700",36,30,0,0,"Communicable","White","Male","Oklahoma",1998,"West South Central","South","OK",63.490376495554,67.1369522972735,71.2399259515144,67.2667346178018
+"701",36,30,0,0,"Injuries","White","Male","Oklahoma",1998,"West South Central","South","OK",96.8275384003534,99.4708558058726,102.407437765861,99.5204595660291
+"702",36,30,0,0,"Non-communicable","White","Male","Oklahoma",1998,"West South Central","South","OK",132.689064574732,136.374604584175,140.6839296362,136.50963792728
+"703",36,30,0,1,"All other causes","White","Female","Oklahoma",1998,"West South Central","South","OK",107.980483167336,111.123418132657,114.264245098685,111.165698354331
+"704",36,30,0,1,"Cancers","White","Female","Oklahoma",1998,"West South Central","South","OK",165.322815657486,168.326308977661,171.736018254752,168.341588781918
+"705",36,30,0,1,"Cardiovascular","White","Female","Oklahoma",1998,"West South Central","South","OK",336.497659605144,342.594474459049,348.307178073029,342.475351626313
+"706",36,30,0,1,"Communicable","White","Female","Oklahoma",1998,"West South Central","South","OK",43.0178214164462,45.0951513432042,47.2355197231993,45.1279953048068
+"707",36,30,0,1,"Injuries","White","Female","Oklahoma",1998,"West South Central","South","OK",39.8477917641625,41.4639864521723,43.2433722206322,41.4880400026738
+"708",36,30,0,1,"Non-communicable","White","Female","Oklahoma",1998,"West South Central","South","OK",85.7963043301906,88.8435476670164,92.1254237694138,88.8778225356537
+"709",36,30,1,0,"All other causes","Black","Male","Oklahoma",1998,"West South Central","South","OK",149.568066497381,162.124677703317,175.493711431647,162.538437070183
+"710",36,30,1,0,"Cancers","Black","Male","Oklahoma",1998,"West South Central","South","OK",339.431833397316,358.140931717641,377.875155190949,358.379204403167
+"711",36,30,1,0,"Cardiovascular","Black","Male","Oklahoma",1998,"West South Central","South","OK",575.312427060107,603.484287897484,634.993233281383,603.781225582932
+"712",36,30,1,0,"Communicable","Black","Male","Oklahoma",1998,"West South Central","South","OK",69.4110959074006,80.9424492630692,93.090883278972,81.0652698587918
+"713",36,30,1,0,"Injuries","Black","Male","Oklahoma",1998,"West South Central","South","OK",102.330717434601,111.748804782272,122.727531843739,111.920192542574
+"714",36,30,1,0,"Non-communicable","Black","Male","Oklahoma",1998,"West South Central","South","OK",137.955946904194,151.776798985034,165.339533492845,151.804375285317
+"715",36,30,1,1,"All other causes","Black","Female","Oklahoma",1998,"West South Central","South","OK",128.372187293719,137.495997904893,146.753131113506,137.4083971907
+"716",36,30,1,1,"Cancers","Black","Female","Oklahoma",1998,"West South Central","South","OK",190.989828115297,200.547289903152,211.773051651025,200.722860035235
+"717",36,30,1,1,"Cardiovascular","Black","Female","Oklahoma",1998,"West South Central","South","OK",427.970839396217,446.322863901963,467.729236226878,446.347238802758
+"718",36,30,1,1,"Communicable","Black","Female","Oklahoma",1998,"West South Central","South","OK",42.5668471412321,49.0973033513604,56.0630325632609,49.130650620604
+"719",36,30,1,1,"Injuries","Black","Female","Oklahoma",1998,"West South Central","South","OK",39.8686318591376,44.5092581292197,48.952447410569,44.5041874286968
+"720",36,30,1,1,"Non-communicable","Black","Female","Oklahoma",1998,"West South Central","South","OK",110.33220447913,119.479609297836,128.763177388672,119.60576756015
+"721",36,31,0,0,"All other causes","White","Male","Oklahoma",1999,"West South Central","South","OK",131.351696974279,135.625815601798,140.259388866888,135.682359944033
+"722",36,31,0,0,"Cancers","White","Male","Oklahoma",1999,"West South Central","South","OK",261.185802289985,266.286803004946,271.626620830274,266.277621832141
+"723",36,31,0,0,"Cardiovascular","White","Male","Oklahoma",1999,"West South Central","South","OK",483.536419342534,493.219679381099,502.676914475866,493.160448193585
+"724",36,31,0,0,"Communicable","White","Male","Oklahoma",1999,"West South Central","South","OK",56.2673798876291,59.5694712794682,63.1043078762228,59.557805096002
+"725",36,31,0,0,"Injuries","White","Male","Oklahoma",1999,"West South Central","South","OK",96.1012190016038,99.1247252655451,101.991532486973,99.0625091395367
+"726",36,31,0,0,"Non-communicable","White","Male","Oklahoma",1999,"West South Central","South","OK",134.954794648599,139.292477913483,143.405316919308,139.225092169368
+"727",36,31,0,1,"All other causes","White","Female","Oklahoma",1999,"West South Central","South","OK",109.587295937194,112.843615053006,115.949729352319,112.846430633686
+"728",36,31,0,1,"Cancers","White","Female","Oklahoma",1999,"West South Central","South","OK",165.527486196496,168.693109494537,171.95537401415,168.70773406519
+"729",36,31,0,1,"Cardiovascular","White","Female","Oklahoma",1999,"West South Central","South","OK",342.003205672756,347.828131782948,353.709793720061,347.859181706019
+"730",36,31,0,1,"Communicable","White","Female","Oklahoma",1999,"West South Central","South","OK",39.7134426287923,41.6169378618302,43.6785630116601,41.6531666840213
+"731",36,31,0,1,"Injuries","White","Female","Oklahoma",1999,"West South Central","South","OK",39.4703940009652,41.1590267528728,42.7639582160876,41.1601076273096
+"732",36,31,0,1,"Non-communicable","White","Female","Oklahoma",1999,"West South Central","South","OK",95.0713183251675,98.2497402592779,101.532454600277,98.2793190391342
+"733",36,31,1,0,"All other causes","Black","Male","Oklahoma",1999,"West South Central","South","OK",150.636567465244,162.499176225066,175.020214020359,162.524450085283
+"734",36,31,1,0,"Cancers","Black","Male","Oklahoma",1999,"West South Central","South","OK",337.383787033181,357.502036923332,377.240033233196,357.631677743467
+"735",36,31,1,0,"Cardiovascular","Black","Male","Oklahoma",1999,"West South Central","South","OK",566.491767421404,594.752450686768,626.892866672368,595.336926337316
+"736",36,31,1,0,"Communicable","Black","Male","Oklahoma",1999,"West South Central","South","OK",66.9929654839804,78.3517914818315,90.9209609280949,78.739382038562
+"737",36,31,1,0,"Injuries","Black","Male","Oklahoma",1999,"West South Central","South","OK",99.9059326681403,109.687980748665,119.896068098425,109.933952250894
+"738",36,31,1,0,"Non-communicable","Black","Male","Oklahoma",1999,"West South Central","South","OK",146.42044599687,159.861889897855,175.253840858068,160.018038211091
+"739",36,31,1,1,"All other causes","Black","Female","Oklahoma",1999,"West South Central","South","OK",130.536244446086,139.773853570364,149.425646248085,139.871212698592
+"740",36,31,1,1,"Cancers","Black","Female","Oklahoma",1999,"West South Central","South","OK",191.356530227708,200.908376125189,212.630653917724,201.1422569982
+"741",36,31,1,1,"Cardiovascular","Black","Female","Oklahoma",1999,"West South Central","South","OK",429.711184091422,448.874585500514,470.337828540377,449.17189180581
+"742",36,31,1,1,"Communicable","Black","Female","Oklahoma",1999,"West South Central","South","OK",41.7128016331901,47.9180318868617,54.8009051759395,48.1451212251908
+"743",36,31,1,1,"Injuries","Black","Female","Oklahoma",1999,"West South Central","South","OK",39.6356957160947,44.390485901401,48.9097866709141,44.3850222790288
+"744",36,31,1,1,"Non-communicable","Black","Female","Oklahoma",1999,"West South Central","South","OK",115.980887949296,125.747849743004,135.91239954476,125.652805030209
+"745",36,32,0,0,"All other causes","White","Male","Oklahoma",2000,"West South Central","South","OK",131.530917934488,135.709468272456,140.456735126867,135.83114948198
+"746",36,32,0,0,"Cancers","White","Male","Oklahoma",2000,"West South Central","South","OK",258.318177919642,263.346044316619,268.398981731818,263.302858800037
+"747",36,32,0,0,"Cardiovascular","White","Male","Oklahoma",2000,"West South Central","South","OK",473.110082247834,482.883949195314,492.873224896804,482.79330543022
+"748",36,32,0,0,"Communicable","White","Male","Oklahoma",2000,"West South Central","South","OK",50.4550833230422,53.5560674116361,56.8373452450342,53.5910447941074
+"749",36,32,0,0,"Injuries","White","Male","Oklahoma",2000,"West South Central","South","OK",97.039389318113,99.7742751709501,102.74699000379,99.7978415187825
+"750",36,32,0,0,"Non-communicable","White","Male","Oklahoma",2000,"West South Central","South","OK",142.638140304185,146.674282868758,151.238597759404,146.720734788219
+"751",36,32,0,1,"All other causes","White","Female","Oklahoma",2000,"West South Central","South","OK",112.743093584259,115.865876855877,118.938225020548,115.881916718716
+"752",36,32,0,1,"Cancers","White","Female","Oklahoma",2000,"West South Central","South","OK",166.20187073338,169.190410178261,172.394509250133,169.235674409518
+"753",36,32,0,1,"Cardiovascular","White","Female","Oklahoma",2000,"West South Central","South","OK",343.660126651561,350.279186941497,356.430651997942,350.221469009384
+"754",36,32,0,1,"Communicable","White","Female","Oklahoma",2000,"West South Central","South","OK",37.1583135979257,39.1173318755592,40.8771173272008,39.1026783844604
+"755",36,32,0,1,"Injuries","White","Female","Oklahoma",2000,"West South Central","South","OK",39.4930158777342,41.0573140929058,42.712131138584,41.0746887908461
+"756",36,32,0,1,"Non-communicable","White","Female","Oklahoma",2000,"West South Central","South","OK",102.231581326189,105.328590834421,108.684159583041,105.368274288727
+"757",36,32,1,0,"All other causes","Black","Male","Oklahoma",2000,"West South Central","South","OK",146.989698390058,160.021311382083,171.791110580528,159.96775814378
+"758",36,32,1,0,"Cancers","Black","Male","Oklahoma",2000,"West South Central","South","OK",333.861643134679,353.362769951743,373.545161676532,353.66436571555
+"759",36,32,1,0,"Cardiovascular","Black","Male","Oklahoma",2000,"West South Central","South","OK",557.952253686781,589.064608095937,617.777819470184,588.978445157347
+"760",36,32,1,0,"Communicable","Black","Male","Oklahoma",2000,"West South Central","South","OK",64.9696106946296,75.3542334268408,87.4185209193074,75.6289306369123
+"761",36,32,1,0,"Injuries","Black","Male","Oklahoma",2000,"West South Central","South","OK",98.4954543371112,107.904363771443,118.008130991859,107.923861577939
+"762",36,32,1,0,"Non-communicable","Black","Male","Oklahoma",2000,"West South Central","South","OK",153.061490441546,167.28996057303,182.682114088309,167.477161629494
+"763",36,32,1,1,"All other causes","Black","Female","Oklahoma",2000,"West South Central","South","OK",132.774784011427,142.074359382879,151.461030049187,142.067668438884
+"764",36,32,1,1,"Cancers","Black","Female","Oklahoma",2000,"West South Central","South","OK",189.984593719158,199.968979260686,211.807248284562,200.047929206722
+"765",36,32,1,1,"Cardiovascular","Black","Female","Oklahoma",2000,"West South Central","South","OK",419.687698756793,438.829214726591,457.975673255389,439.079852087101
+"766",36,32,1,1,"Communicable","Black","Female","Oklahoma",2000,"West South Central","South","OK",41.2398552542525,46.5560778418532,53.136988540055,46.8137147306915
+"767",36,32,1,1,"Injuries","Black","Female","Oklahoma",2000,"West South Central","South","OK",39.3645943348531,44.363633518689,48.6280166501176,44.2466096558797
+"768",36,32,1,1,"Non-communicable","Black","Female","Oklahoma",2000,"West South Central","South","OK",123.085026310279,133.335578290534,144.353823309139,133.374395712545
+"769",36,33,0,0,"All other causes","White","Male","Oklahoma",2001,"West South Central","South","OK",130.594059263696,134.848594849753,139.378784787768,134.859572284934
+"770",36,33,0,0,"Cancers","White","Male","Oklahoma",2001,"West South Central","South","OK",256.113726226552,261.104749556767,266.219597672583,261.146735909961
+"771",36,33,0,0,"Cardiovascular","White","Male","Oklahoma",2001,"West South Central","South","OK",467.631035261413,476.504060993194,485.798759667082,476.447011108573
+"772",36,33,0,0,"Communicable","White","Male","Oklahoma",2001,"West South Central","South","OK",50.7861574981763,53.8435693900203,56.7990611300889,53.8615121951163
+"773",36,33,0,0,"Injuries","White","Male","Oklahoma",2001,"West South Central","South","OK",97.9773326304897,100.624387103556,103.580393084846,100.659065082801
+"774",36,33,0,0,"Non-communicable","White","Male","Oklahoma",2001,"West South Central","South","OK",145.368208509996,149.493534411825,153.896445938771,149.563802649618
+"775",36,33,0,1,"All other causes","White","Female","Oklahoma",2001,"West South Central","South","OK",112.847217609428,116.27006394347,119.604868290671,116.250732704231
+"776",36,33,0,1,"Cancers","White","Female","Oklahoma",2001,"West South Central","South","OK",165.698666008844,168.950916045409,172.150574514715,168.919957561202
+"777",36,33,0,1,"Cardiovascular","White","Female","Oklahoma",2001,"West South Central","South","OK",333.79370456023,339.611374061827,345.726867673686,339.67807561056
+"778",36,33,0,1,"Communicable","White","Female","Oklahoma",2001,"West South Central","South","OK",37.232590143713,39.0009782407829,40.6584306306245,38.9864972028918
+"779",36,33,0,1,"Injuries","White","Female","Oklahoma",2001,"West South Central","South","OK",40.0931801197316,41.7120735821388,43.4219411500167,41.7282451457407
+"780",36,33,0,1,"Non-communicable","White","Female","Oklahoma",2001,"West South Central","South","OK",107.324629421759,110.662540098731,114.04608424799,110.674169443409
+"781",36,33,1,0,"All other causes","Black","Male","Oklahoma",2001,"West South Central","South","OK",146.811593529787,159.53479233199,171.980914089338,159.375150610964
+"782",36,33,1,0,"Cancers","Black","Male","Oklahoma",2001,"West South Central","South","OK",326.25974781629,345.596772642972,364.748994056956,345.380117719384
+"783",36,33,1,0,"Cardiovascular","Black","Male","Oklahoma",2001,"West South Central","South","OK",539.761113624034,569.5900524932,602.194488557078,570.067600464748
+"784",36,33,1,0,"Communicable","Black","Male","Oklahoma",2001,"West South Central","South","OK",62.873748178908,73.4125400837113,85.5518043355166,73.4596649843286
+"785",36,33,1,0,"Injuries","Black","Male","Oklahoma",2001,"West South Central","South","OK",98.4900263590492,107.53005908153,117.918663894457,107.718025578227
+"786",36,33,1,0,"Non-communicable","Black","Male","Oklahoma",2001,"West South Central","South","OK",157.327020210649,172.406071266523,189.28448008791,172.668280372684
+"787",36,33,1,1,"All other causes","Black","Female","Oklahoma",2001,"West South Central","South","OK",138.196466025852,147.355448941526,156.70024695631,147.417966767595
+"788",36,33,1,1,"Cancers","Black","Female","Oklahoma",2001,"West South Central","South","OK",189.247797085578,199.297302760868,210.305115988561,199.493146978517
+"789",36,33,1,1,"Cardiovascular","Black","Female","Oklahoma",2001,"West South Central","South","OK",420.880269621685,439.361090572351,460.27124064442,439.644825131115
+"790",36,33,1,1,"Communicable","Black","Female","Oklahoma",2001,"West South Central","South","OK",40.6244103112096,45.6672291476807,52.0598576157117,45.81006092633
+"791",36,33,1,1,"Injuries","Black","Female","Oklahoma",2001,"West South Central","South","OK",39.2546464718475,44.2111797926024,48.6773667382461,44.2082761106879
+"792",36,33,1,1,"Non-communicable","Black","Female","Oklahoma",2001,"West South Central","South","OK",129.590015371547,140.099916341979,151.567110187193,140.339537551797
+"793",36,34,0,0,"All other causes","White","Male","Oklahoma",2002,"West South Central","South","OK",132.34901906242,136.54497079355,140.715119327421,136.572633349085
+"794",36,34,0,0,"Cancers","White","Male","Oklahoma",2002,"West South Central","South","OK",252.784387377602,257.76063935905,262.560574452448,257.734876395414
+"795",36,34,0,0,"Cardiovascular","White","Male","Oklahoma",2002,"West South Central","South","OK",457.800387345413,466.904987867573,476.102241666271,466.896800401958
+"796",36,34,0,0,"Communicable","White","Male","Oklahoma",2002,"West South Central","South","OK",51.0600915900306,54.108845634622,57.2661527992568,54.1242444182595
+"797",36,34,0,0,"Injuries","White","Male","Oklahoma",2002,"West South Central","South","OK",97.7124211731837,100.560323306267,103.303566679183,100.511755067403
+"798",36,34,0,0,"Non-communicable","White","Male","Oklahoma",2002,"West South Central","South","OK",147.426733105981,151.707648353276,155.7334480429,151.652202495577
+"799",36,34,0,1,"All other causes","White","Female","Oklahoma",2002,"West South Central","South","OK",115.509450032077,118.670953947695,121.994007953573,118.715398694074
+"800",36,34,0,1,"Cancers","White","Female","Oklahoma",2002,"West South Central","South","OK",164.428800765414,167.832987793381,170.97874686723,167.771532634602
+"801",36,34,0,1,"Cardiovascular","White","Female","Oklahoma",2002,"West South Central","South","OK",334.851183652268,340.641364384801,347.072132909962,340.641451557934
+"802",36,34,0,1,"Communicable","White","Female","Oklahoma",2002,"West South Central","South","OK",37.8955863679814,39.7573488476347,41.5115510521149,39.752694523953
+"803",36,34,0,1,"Injuries","White","Female","Oklahoma",2002,"West South Central","South","OK",40.50780539226,42.1662717333903,43.8686061375846,42.1649502922096
+"804",36,34,0,1,"Non-communicable","White","Female","Oklahoma",2002,"West South Central","South","OK",111.592854868798,115.260296075577,118.831118779655,115.252211071932
+"805",36,34,1,0,"All other causes","Black","Male","Oklahoma",2002,"West South Central","South","OK",149.532382238564,162.730904902394,175.774334861849,162.630084291786
+"806",36,34,1,0,"Cancers","Black","Male","Oklahoma",2002,"West South Central","South","OK",323.641861311217,340.619815439032,358.993407677277,340.950500837843
+"807",36,34,1,0,"Cardiovascular","Black","Male","Oklahoma",2002,"West South Central","South","OK",534.731148488015,563.569309115675,593.180515968955,563.858917420525
+"808",36,34,1,0,"Communicable","Black","Male","Oklahoma",2002,"West South Central","South","OK",61.6226741769635,72.5931822267301,83.9072836444932,72.6939124703236
+"809",36,34,1,0,"Injuries","Black","Male","Oklahoma",2002,"West South Central","South","OK",97.959945122771,107.895003703272,118.178651376042,108.015166267377
+"810",36,34,1,0,"Non-communicable","Black","Male","Oklahoma",2002,"West South Central","South","OK",166.07085964645,181.116061213166,199.190305053074,181.467584922657
+"811",36,34,1,1,"All other causes","Black","Female","Oklahoma",2002,"West South Central","South","OK",141.668424104181,151.02103403863,160.382354004934,150.87353478962
+"812",36,34,1,1,"Cancers","Black","Female","Oklahoma",2002,"West South Central","South","OK",188.499656417259,198.819691836703,209.421303022216,198.949615827513
+"813",36,34,1,1,"Cardiovascular","Black","Female","Oklahoma",2002,"West South Central","South","OK",412.762672209797,432.43539291501,453.256830296916,432.789336027
+"814",36,34,1,1,"Communicable","Black","Female","Oklahoma",2002,"West South Central","South","OK",39.521345236648,44.6389988188962,50.819163106752,44.803611636689
+"815",36,34,1,1,"Injuries","Black","Female","Oklahoma",2002,"West South Central","South","OK",39.1765268197267,44.2795198546227,48.7984748866543,44.205126917436
+"816",36,34,1,1,"Non-communicable","Black","Female","Oklahoma",2002,"West South Central","South","OK",134.189088507711,144.410963419283,155.759044302912,144.367968839641
+"817",36,35,0,0,"All other causes","White","Male","Oklahoma",2003,"West South Central","South","OK",133.206998378573,137.388525850691,141.828858306218,137.420056221444
+"818",36,35,0,0,"Cancers","White","Male","Oklahoma",2003,"West South Central","South","OK",248.09514727671,252.880662229899,258.076868787605,252.899455495162
+"819",36,35,0,0,"Cardiovascular","White","Male","Oklahoma",2003,"West South Central","South","OK",446.764575638576,456.017683470149,465.678519795217,456.038171384384
+"820",36,35,0,0,"Communicable","White","Male","Oklahoma",2003,"West South Central","South","OK",50.9736181028096,54.0673871419599,57.4446207853811,54.0965298998795
+"821",36,35,0,0,"Injuries","White","Male","Oklahoma",2003,"West South Central","South","OK",100.351463797725,103.299140027512,106.252325086429,103.318695854132
+"822",36,35,0,0,"Non-communicable","White","Male","Oklahoma",2003,"West South Central","South","OK",148.627873531935,153.309753818687,158.189624813351,153.382882408559
+"823",36,35,0,1,"All other causes","White","Female","Oklahoma",2003,"West South Central","South","OK",119.019828597084,122.338281838223,125.928110135686,122.372058651584
+"824",36,35,0,1,"Cancers","White","Female","Oklahoma",2003,"West South Central","South","OK",162.857103795069,166.076202869742,169.345728817098,166.070139992676
+"825",36,35,0,1,"Cardiovascular","White","Female","Oklahoma",2003,"West South Central","South","OK",327.841542015075,333.885107164749,340.183065273727,334.050074397408
+"826",36,35,0,1,"Communicable","White","Female","Oklahoma",2003,"West South Central","South","OK",37.7177040188214,39.4489345215563,41.2544933680207,39.4829180766343
+"827",36,35,0,1,"Injuries","White","Female","Oklahoma",2003,"West South Central","South","OK",41.7595935346421,43.4011433892808,45.1436715374386,43.4034296235154
+"828",36,35,0,1,"Non-communicable","White","Female","Oklahoma",2003,"West South Central","South","OK",116.601211740812,120.164162315642,123.821529900552,120.185533502837
+"829",36,35,1,0,"All other causes","Black","Male","Oklahoma",2003,"West South Central","South","OK",151.526222911099,164.621261053965,176.746473532261,164.595907359898
+"830",36,35,1,0,"Cancers","Black","Male","Oklahoma",2003,"West South Central","South","OK",315.536410163776,332.259518353602,350.812905066422,332.280999295867
+"831",36,35,1,0,"Cardiovascular","Black","Male","Oklahoma",2003,"West South Central","South","OK",524.768785533567,552.310694524169,581.678918966669,552.7011006066
+"832",36,35,1,0,"Communicable","Black","Male","Oklahoma",2003,"West South Central","South","OK",60.5524591885986,71.0815466020874,83.5183292687189,71.3388884411359
+"833",36,35,1,0,"Injuries","Black","Male","Oklahoma",2003,"West South Central","South","OK",99.9094706885154,110.545060505381,121.413516689119,110.681136561118
+"834",36,35,1,0,"Non-communicable","Black","Male","Oklahoma",2003,"West South Central","South","OK",178.216597448763,194.438224402542,212.805503090317,194.544512821076
+"835",36,35,1,1,"All other causes","Black","Female","Oklahoma",2003,"West South Central","South","OK",143.412677285572,152.818449679676,162.807476402334,152.895153926046
+"836",36,35,1,1,"Cancers","Black","Female","Oklahoma",2003,"West South Central","South","OK",187.675919925336,197.521099810299,207.889757917711,197.395318189768
+"837",36,35,1,1,"Cardiovascular","Black","Female","Oklahoma",2003,"West South Central","South","OK",408.536615520822,426.820093891765,445.411018895444,426.676938690678
+"838",36,35,1,1,"Communicable","Black","Female","Oklahoma",2003,"West South Central","South","OK",38.3551327113867,43.8375612083459,49.6446349656054,43.8654330566835
+"839",36,35,1,1,"Injuries","Black","Female","Oklahoma",2003,"West South Central","South","OK",39.1233393882531,44.1992362556829,49.0799753038546,44.2068571118167
+"840",36,35,1,1,"Non-communicable","Black","Female","Oklahoma",2003,"West South Central","South","OK",136.819237299076,147.80540168513,159.474273329504,147.881531333878
+"841",36,36,0,0,"All other causes","White","Male","Oklahoma",2004,"West South Central","South","OK",135.202229689406,139.069906131094,143.592227538702,139.147661510869
+"842",36,36,0,0,"Cancers","White","Male","Oklahoma",2004,"West South Central","South","OK",243.142576221891,247.968653515052,253.198241933448,248.057783625068
+"843",36,36,0,0,"Cardiovascular","White","Male","Oklahoma",2004,"West South Central","South","OK",420.878784084711,430.013264904917,438.615736568387,429.958719143359
+"844",36,36,0,0,"Communicable","White","Male","Oklahoma",2004,"West South Central","South","OK",48.9488224775218,51.9422914260244,55.0238623886136,51.9320338228535
+"845",36,36,0,0,"Injuries","White","Male","Oklahoma",2004,"West South Central","South","OK",102.883290921406,105.910098960538,109.140126968961,105.917882347915
+"846",36,36,0,0,"Non-communicable","White","Male","Oklahoma",2004,"West South Central","South","OK",151.27354107891,155.535564512897,160.344959136749,155.700300127023
+"847",36,36,0,1,"All other causes","White","Female","Oklahoma",2004,"West South Central","South","OK",121.372604599603,124.818097953237,128.014412634891,124.756171110607
+"848",36,36,0,1,"Cancers","White","Female","Oklahoma",2004,"West South Central","South","OK",160.768465763741,164.14385870938,167.246236582587,164.074063792005
+"849",36,36,0,1,"Cardiovascular","White","Female","Oklahoma",2004,"West South Central","South","OK",303.576140251452,309.599708900964,315.540479512561,309.632525715944
+"850",36,36,0,1,"Communicable","White","Female","Oklahoma",2004,"West South Central","South","OK",36.1962008721796,37.8767441721807,39.7061048197484,37.8934165113438
+"851",36,36,0,1,"Injuries","White","Female","Oklahoma",2004,"West South Central","South","OK",43.4917676913592,45.1976461646645,46.9414191695027,45.2386275924359
+"852",36,36,0,1,"Non-communicable","White","Female","Oklahoma",2004,"West South Central","South","OK",117.788982431636,121.495690765441,125.099903460646,121.481440276073
+"853",36,36,1,0,"All other causes","Black","Male","Oklahoma",2004,"West South Central","South","OK",155.451921827033,167.362132574171,180.377534922521,167.586490125636
+"854",36,36,1,0,"Cancers","Black","Male","Oklahoma",2004,"West South Central","South","OK",309.322173618268,327.000968850372,346.041138699646,326.947770052187
+"855",36,36,1,0,"Cardiovascular","Black","Male","Oklahoma",2004,"West South Central","South","OK",509.646477641981,537.864194013986,567.580730939483,537.938134955824
+"856",36,36,1,0,"Communicable","Black","Male","Oklahoma",2004,"West South Central","South","OK",59.0257856554817,70.1889505180364,82.5101982878818,70.3592405311359
+"857",36,36,1,0,"Injuries","Black","Male","Oklahoma",2004,"West South Central","South","OK",102.834517569757,111.42598751756,122.023182032642,111.686942159118
+"858",36,36,1,0,"Non-communicable","Black","Male","Oklahoma",2004,"West South Central","South","OK",187.234044403753,204.702404252392,224.774673971688,205.093081767037
+"859",36,36,1,1,"All other causes","Black","Female","Oklahoma",2004,"West South Central","South","OK",145.482566529051,155.231936259538,165.25668227311,155.339949699828
+"860",36,36,1,1,"Cancers","Black","Female","Oklahoma",2004,"West South Central","South","OK",185.694014006122,195.413957726364,205.324089994689,195.423661701248
+"861",36,36,1,1,"Cardiovascular","Black","Female","Oklahoma",2004,"West South Central","South","OK",396.374299421572,416.011346909139,436.296156302608,416.478076883743
+"862",36,36,1,1,"Communicable","Black","Female","Oklahoma",2004,"West South Central","South","OK",38.2955912599632,43.7166823504566,49.4945776252462,43.7613129936221
+"863",36,36,1,1,"Injuries","Black","Female","Oklahoma",2004,"West South Central","South","OK",39.0892386372566,44.2509483626768,49.3603554286265,44.2684385150265
+"864",36,36,1,1,"Non-communicable","Black","Female","Oklahoma",2004,"West South Central","South","OK",138.049245626618,149.22732524104,161.296622432721,149.464762549651
+"865",36,37,0,0,"All other causes","White","Male","Oklahoma",2005,"West South Central","South","OK",143.207140721963,147.586125906543,152.397735814491,147.645759517986
+"866",36,37,0,0,"Cancers","White","Male","Oklahoma",2005,"West South Central","South","OK",239.519925587589,244.59871640071,249.826368264762,244.577419337416
+"867",36,37,0,0,"Cardiovascular","White","Male","Oklahoma",2005,"West South Central","South","OK",402.686936096446,410.41872915028,418.74473047062,410.484830328575
+"868",36,37,0,0,"Communicable","White","Male","Oklahoma",2005,"West South Central","South","OK",51.3509688237958,54.4638175215313,57.7556553239378,54.5172960005498
+"869",36,37,0,0,"Injuries","White","Male","Oklahoma",2005,"West South Central","South","OK",104.806394160182,107.545230534849,110.696884567064,107.561426348014
+"870",36,37,0,0,"Non-communicable","White","Male","Oklahoma",2005,"West South Central","South","OK",157.602754537316,161.857057434146,166.418825843488,161.890502000585
+"871",36,37,0,1,"All other causes","White","Female","Oklahoma",2005,"West South Central","South","OK",130.981970255582,134.782301346173,138.591385444558,134.799651355691
+"872",36,37,0,1,"Cancers","White","Female","Oklahoma",2005,"West South Central","South","OK",160.735555845238,163.749575278575,166.772885908782,163.779890525348
+"873",36,37,0,1,"Cardiovascular","White","Female","Oklahoma",2005,"West South Central","South","OK",295.978255332223,301.300180441807,307.025668249336,301.378260764278
+"874",36,37,0,1,"Communicable","White","Female","Oklahoma",2005,"West South Central","South","OK",37.1994776928968,38.9851343334162,40.9120725676366,39.0164121315756
+"875",36,37,0,1,"Injuries","White","Female","Oklahoma",2005,"West South Central","South","OK",45.0512382886256,46.7678468164057,48.5106473916331,46.7342038456404
+"876",36,37,0,1,"Non-communicable","White","Female","Oklahoma",2005,"West South Central","South","OK",123.98225582102,127.474932346402,131.392390203809,127.550333438687
+"877",36,37,1,0,"All other causes","Black","Male","Oklahoma",2005,"West South Central","South","OK",157.729256987546,171.868428500642,184.248238943674,171.563821444458
+"878",36,37,1,0,"Cancers","Black","Male","Oklahoma",2005,"West South Central","South","OK",302.342748378131,320.046488732784,338.911014359653,319.827422606033
+"879",36,37,1,0,"Cardiovascular","Black","Male","Oklahoma",2005,"West South Central","South","OK",499.375820462234,525.427980581204,554.923924065333,525.396721992091
+"880",36,37,1,0,"Communicable","Black","Male","Oklahoma",2005,"West South Central","South","OK",58.0820393868874,69.0480112336494,80.7781281428116,69.1131658745496
+"881",36,37,1,0,"Injuries","Black","Male","Oklahoma",2005,"West South Central","South","OK",103.126764295685,112.322352090447,123.144057144217,112.631662663695
+"882",36,37,1,0,"Non-communicable","Black","Male","Oklahoma",2005,"West South Central","South","OK",190.969350026918,206.550197772238,228.462448502801,207.259151887129
+"883",36,37,1,1,"All other causes","Black","Female","Oklahoma",2005,"West South Central","South","OK",151.280464709767,160.098895609773,170.42494772097,160.155370655159
+"884",36,37,1,1,"Cancers","Black","Female","Oklahoma",2005,"West South Central","South","OK",184.469398761209,193.944277517558,203.357070527677,194.012155769305
+"885",36,37,1,1,"Cardiovascular","Black","Female","Oklahoma",2005,"West South Central","South","OK",386.010872332838,404.18588763896,423.768029390084,404.247907318499
+"886",36,37,1,1,"Communicable","Black","Female","Oklahoma",2005,"West South Central","South","OK",37.2251277010569,42.6866000507533,48.4215807045879,42.7402291939984
+"887",36,37,1,1,"Injuries","Black","Female","Oklahoma",2005,"West South Central","South","OK",39.2408526611173,44.2893072055848,49.1478185658743,44.3235099518188
+"888",36,37,1,1,"Non-communicable","Black","Female","Oklahoma",2005,"West South Central","South","OK",138.994401681472,150.023897204267,160.973864356038,150.171475243334
+"889",36,38,0,0,"All other causes","White","Male","Oklahoma",2006,"West South Central","South","OK",144.844778350584,149.301999371713,153.823232279254,149.308831295725
+"890",36,38,0,0,"Cancers","White","Male","Oklahoma",2006,"West South Central","South","OK",236.84293739441,242.111184338593,247.018173357744,241.983444104273
+"891",36,38,0,0,"Cardiovascular","White","Male","Oklahoma",2006,"West South Central","South","OK",383.519418236928,390.472279098382,398.711478496421,390.655322562191
+"892",36,38,0,0,"Communicable","White","Male","Oklahoma",2006,"West South Central","South","OK",50.8263130758445,53.8642498000576,56.9948562373147,53.9018849032536
+"893",36,38,0,0,"Injuries","White","Male","Oklahoma",2006,"West South Central","South","OK",106.073235909268,108.843561780619,112.029915440422,108.889847272586
+"894",36,38,0,0,"Non-communicable","White","Male","Oklahoma",2006,"West South Central","South","OK",155.144877310606,159.507681279125,164.160911650907,159.467992829745
+"895",36,38,0,1,"All other causes","White","Female","Oklahoma",2006,"West South Central","South","OK",136.306411425172,140.037260568962,143.732910810185,140.034716777004
+"896",36,38,0,1,"Cancers","White","Female","Oklahoma",2006,"West South Central","South","OK",160.568333949709,163.597981085226,166.74127814278,163.648722519168
+"897",36,38,0,1,"Cardiovascular","White","Female","Oklahoma",2006,"West South Central","South","OK",277.559257140296,282.714499313276,289.258404928918,282.9306404921
+"898",36,38,0,1,"Communicable","White","Female","Oklahoma",2006,"West South Central","South","OK",36.6689252403932,38.3703826462797,40.23509546392,38.3879352793677
+"899",36,38,0,1,"Injuries","White","Female","Oklahoma",2006,"West South Central","South","OK",46.2724854716815,48.1119450496597,49.8779102666037,48.1192527735227
+"900",36,38,0,1,"Non-communicable","White","Female","Oklahoma",2006,"West South Central","South","OK",121.451871411724,125.224698390395,128.406576505798,125.14132241888
+"901",36,38,1,0,"All other causes","Black","Male","Oklahoma",2006,"West South Central","South","OK",162.054280104208,174.63109290879,187.464273703144,174.732855590273
+"902",36,38,1,0,"Cancers","Black","Male","Oklahoma",2006,"West South Central","South","OK",293.670876941643,311.910398159511,329.934102142119,312.056130000631
+"903",36,38,1,0,"Cardiovascular","Black","Male","Oklahoma",2006,"West South Central","South","OK",483.009707756882,508.324960073862,536.378346791945,508.593112159126
+"904",36,38,1,0,"Communicable","Black","Male","Oklahoma",2006,"West South Central","South","OK",58.3446261341793,68.6102871697278,81.2503402549294,68.985041362766
+"905",36,38,1,0,"Injuries","Black","Male","Oklahoma",2006,"West South Central","South","OK",103.623050925835,113.504858291188,123.756189377238,113.6910750177
+"906",36,38,1,0,"Non-communicable","Black","Male","Oklahoma",2006,"West South Central","South","OK",188.355059195647,205.140479888565,224.93372525023,205.410892767442
+"907",36,38,1,1,"All other causes","Black","Female","Oklahoma",2006,"West South Central","South","OK",155.253821319557,164.736862223342,175.190756526743,164.896888408774
+"908",36,38,1,1,"Cancers","Black","Female","Oklahoma",2006,"West South Central","South","OK",183.692162162028,192.990205442111,202.299931676305,192.8678680009
+"909",36,38,1,1,"Cardiovascular","Black","Female","Oklahoma",2006,"West South Central","South","OK",367.423019671675,384.358122692225,403.168940417099,384.411120146824
+"910",36,38,1,1,"Communicable","Black","Female","Oklahoma",2006,"West South Central","South","OK",35.9952788435376,41.5286799789342,47.3115501741535,41.5554534149797
+"911",36,38,1,1,"Injuries","Black","Female","Oklahoma",2006,"West South Central","South","OK",39.181556970212,44.3340625888953,49.3204279218341,44.3239991648268
+"912",36,38,1,1,"Non-communicable","Black","Female","Oklahoma",2006,"West South Central","South","OK",138.483956304581,148.84653601555,160.738839210165,148.921107531929
+"913",36,39,0,0,"All other causes","White","Male","Oklahoma",2007,"West South Central","South","OK",148.347688543435,153.495005830723,158.063776797607,153.372278144755
+"914",36,39,0,0,"Cancers","White","Male","Oklahoma",2007,"West South Central","South","OK",237.635950220767,242.403622925427,247.568896493843,242.397564030869
+"915",36,39,0,0,"Cardiovascular","White","Male","Oklahoma",2007,"West South Central","South","OK",366.530811177657,373.893293960063,381.498461658426,373.868652095487
+"916",36,39,0,0,"Communicable","White","Male","Oklahoma",2007,"West South Central","South","OK",48.7221518287418,51.6984982035931,54.4438908879362,51.6631620362894
+"917",36,39,0,0,"Injuries","White","Male","Oklahoma",2007,"West South Central","South","OK",107.838924185139,110.607339612134,113.636253867436,110.608481809321
+"918",36,39,0,0,"Non-communicable","White","Male","Oklahoma",2007,"West South Central","South","OK",157.504149180189,161.948203951442,166.670845763135,161.964923053827
+"919",36,39,0,1,"All other causes","White","Female","Oklahoma",2007,"West South Central","South","OK",136.570669139486,140.395512580297,144.129500725605,140.418528650733
+"920",36,39,0,1,"Cancers","White","Female","Oklahoma",2007,"West South Central","South","OK",159.530176248837,162.701387490535,165.789387963286,162.679118309284
+"921",36,39,0,1,"Cardiovascular","White","Female","Oklahoma",2007,"West South Central","South","OK",270.712116623955,275.897951476528,281.344955838981,276.002346914427
+"922",36,39,0,1,"Communicable","White","Female","Oklahoma",2007,"West South Central","South","OK",36.225983891444,37.9821058186305,39.7243778765828,37.974724091475
+"923",36,39,0,1,"Injuries","White","Female","Oklahoma",2007,"West South Central","South","OK",47.9109752602298,49.6755207603242,51.4701846236666,49.6834051761771
+"924",36,39,0,1,"Non-communicable","White","Female","Oklahoma",2007,"West South Central","South","OK",126.052105682626,129.861508068993,133.633879027995,129.848319120344
+"925",36,39,1,0,"All other causes","Black","Male","Oklahoma",2007,"West South Central","South","OK",166.102660823504,178.250069784105,191.734972331167,178.178200497915
+"926",36,39,1,0,"Cancers","Black","Male","Oklahoma",2007,"West South Central","South","OK",289.188679297486,307.436623183768,324.836204756194,307.31197380754
+"927",36,39,1,0,"Cardiovascular","Black","Male","Oklahoma",2007,"West South Central","South","OK",465.286450087543,489.343015032842,514.993789855083,489.584798462481
+"928",36,39,1,0,"Communicable","Black","Male","Oklahoma",2007,"West South Central","South","OK",56.9689635471747,67.2649621500586,79.7898000576512,67.5354227277428
+"929",36,39,1,0,"Injuries","Black","Male","Oklahoma",2007,"West South Central","South","OK",105.997229130309,114.826833501571,124.716915861445,114.974639362687
+"930",36,39,1,0,"Non-communicable","Black","Male","Oklahoma",2007,"West South Central","South","OK",182.861967059675,198.99840476482,217.531734619395,199.388408413744
+"931",36,39,1,1,"All other causes","Black","Female","Oklahoma",2007,"West South Central","South","OK",156.425126037677,166.066087107739,176.858159124555,166.190518361927
+"932",36,39,1,1,"Cancers","Black","Female","Oklahoma",2007,"West South Central","South","OK",180.901476639112,190.587565917483,200.228944877749,190.59509199098
+"933",36,39,1,1,"Cardiovascular","Black","Female","Oklahoma",2007,"West South Central","South","OK",354.396337249023,371.526378725627,388.96589800993,371.610661660233
+"934",36,39,1,1,"Communicable","Black","Female","Oklahoma",2007,"West South Central","South","OK",34.4333470496217,40.3578773182928,45.8009067937674,40.3115625306525
+"935",36,39,1,1,"Injuries","Black","Female","Oklahoma",2007,"West South Central","South","OK",39.579405554043,44.3169300303421,49.4444996632226,44.3294358173593
+"936",36,39,1,1,"Non-communicable","Black","Female","Oklahoma",2007,"West South Central","South","OK",137.208467671603,147.432103910163,158.652864284854,147.613633213115
+"937",36,40,0,0,"All other causes","White","Male","Oklahoma",2008,"West South Central","South","OK",147.641752914751,152.098520354305,156.487969531093,152.111397919295
+"938",36,40,0,0,"Cancers","White","Male","Oklahoma",2008,"West South Central","South","OK",234.818099794516,239.253363211464,244.095656733364,239.281834466448
+"939",36,40,0,0,"Cardiovascular","White","Male","Oklahoma",2008,"West South Central","South","OK",356.10308003687,363.316394169735,371.046141714015,363.343706085435
+"940",36,40,0,0,"Communicable","White","Male","Oklahoma",2008,"West South Central","South","OK",48.7663102247698,51.593003082438,54.3882509513548,51.6019525804127
+"941",36,40,0,0,"Injuries","White","Male","Oklahoma",2008,"West South Central","South","OK",109.446214110914,112.267951192505,115.753047775215,112.383299877701
+"942",36,40,0,0,"Non-communicable","White","Male","Oklahoma",2008,"West South Central","South","OK",161.688606856957,166.135344129381,170.810567118041,166.137780480223
+"943",36,40,0,1,"All other causes","White","Female","Oklahoma",2008,"West South Central","South","OK",138.825380689246,142.606458227256,146.286211073271,142.612988177925
+"944",36,40,0,1,"Cancers","White","Female","Oklahoma",2008,"West South Central","South","OK",157.54012769766,160.428214239095,163.609776704872,160.459668746076
+"945",36,40,0,1,"Cardiovascular","White","Female","Oklahoma",2008,"West South Central","South","OK",265.315630768001,270.777042915954,275.861220084852,270.724004557014
+"946",36,40,0,1,"Communicable","White","Female","Oklahoma",2008,"West South Central","South","OK",37.1124171284742,38.8809083643607,40.6172622083575,38.8684740162372
+"947",36,40,0,1,"Injuries","White","Female","Oklahoma",2008,"West South Central","South","OK",48.7891582860597,50.6740061066071,52.5749518841314,50.6733586697163
+"948",36,40,0,1,"Non-communicable","White","Female","Oklahoma",2008,"West South Central","South","OK",129.657442168804,133.4157969845,137.207207348915,133.357348915695
+"949",36,40,1,0,"All other causes","Black","Male","Oklahoma",2008,"West South Central","South","OK",167.615567831423,180.223534196458,193.893913531435,180.320564945209
+"950",36,40,1,0,"Cancers","Black","Male","Oklahoma",2008,"West South Central","South","OK",283.288452003819,300.936083585948,318.253661359978,301.020270248009
+"951",36,40,1,0,"Cardiovascular","Black","Male","Oklahoma",2008,"West South Central","South","OK",450.119303777461,472.124309130281,496.461669730093,472.213310420172
+"952",36,40,1,0,"Communicable","Black","Male","Oklahoma",2008,"West South Central","South","OK",54.232617029676,65.4529479593719,76.7319084425014,65.5520943498911
+"953",36,40,1,0,"Injuries","Black","Male","Oklahoma",2008,"West South Central","South","OK",106.886291005613,116.804289334777,127.255415566547,116.767308131748
+"954",36,40,1,0,"Non-communicable","Black","Male","Oklahoma",2008,"West South Central","South","OK",178.6805865682,194.742784138259,213.615098906668,195.068523121794
+"955",36,40,1,1,"All other causes","Black","Female","Oklahoma",2008,"West South Central","South","OK",155.384702366858,165.224737059874,175.510252193163,165.316177335091
+"956",36,40,1,1,"Cancers","Black","Female","Oklahoma",2008,"West South Central","South","OK",180.136135812337,189.470240545096,199.298412047174,189.433494563528
+"957",36,40,1,1,"Cardiovascular","Black","Female","Oklahoma",2008,"West South Central","South","OK",339.506164209714,356.909903729969,375.434622909657,356.675782723875
+"958",36,40,1,1,"Communicable","Black","Female","Oklahoma",2008,"West South Central","South","OK",33.8287953045765,39.7181387880925,45.264153499249,39.6163787795876
+"959",36,40,1,1,"Injuries","Black","Female","Oklahoma",2008,"West South Central","South","OK",39.1446877281842,44.1587314313828,49.4953177080953,44.2463079925222
+"960",36,40,1,1,"Non-communicable","Black","Female","Oklahoma",2008,"West South Central","South","OK",136.434477527381,146.560105623068,158.058159331704,146.854890301331
+"961",36,41,0,0,"All other causes","White","Male","Oklahoma",2009,"West South Central","South","OK",144.450731949431,148.610994503668,152.784548349791,148.675677834508
+"962",36,41,0,0,"Cancers","White","Male","Oklahoma",2009,"West South Central","South","OK",231.012592250087,235.730461294719,240.090014729571,235.644751731179
+"963",36,41,0,0,"Cardiovascular","White","Male","Oklahoma",2009,"West South Central","South","OK",344.46340767737,351.305968980088,358.233019108359,351.28828163829
+"964",36,41,0,0,"Communicable","White","Male","Oklahoma",2009,"West South Central","South","OK",47.0417334011375,49.7669532604301,52.5059858383223,49.7985556728501
+"965",36,41,0,0,"Injuries","White","Male","Oklahoma",2009,"West South Central","South","OK",110.974713561871,114.009028713253,117.231818502573,114.066510232601
+"966",36,41,0,0,"Non-communicable","White","Male","Oklahoma",2009,"West South Central","South","OK",156.884017869569,160.787389151793,165.358838182195,160.912177852617
+"967",36,41,0,1,"All other causes","White","Female","Oklahoma",2009,"West South Central","South","OK",133.184183416525,136.716040655548,140.023210261424,136.702371234412
+"968",36,41,0,1,"Cancers","White","Female","Oklahoma",2009,"West South Central","South","OK",156.08902823358,159.100862451358,161.99340441363,159.102869723857
+"969",36,41,0,1,"Cardiovascular","White","Female","Oklahoma",2009,"West South Central","South","OK",249.473698717277,254.687817357361,259.710998337991,254.672510950177
+"970",36,41,0,1,"Communicable","White","Female","Oklahoma",2009,"West South Central","South","OK",34.3814622228582,35.9181638667753,37.5720229945596,35.9216008492638
+"971",36,41,0,1,"Injuries","White","Female","Oklahoma",2009,"West South Central","South","OK",50.1404975182259,52.0378859991835,54.0497589028887,52.0427355292335
+"972",36,41,0,1,"Non-communicable","White","Female","Oklahoma",2009,"West South Central","South","OK",128.25075304785,131.869823612344,135.599476581723,131.910776794552
+"973",36,41,1,0,"All other causes","Black","Male","Oklahoma",2009,"West South Central","South","OK",167.164964905516,180.530998904562,194.29748790347,180.577480913873
+"974",36,41,1,0,"Cancers","Black","Male","Oklahoma",2009,"West South Central","South","OK",281.402330956125,297.415247108913,315.388680399819,297.661261395626
+"975",36,41,1,0,"Cardiovascular","Black","Male","Oklahoma",2009,"West South Central","South","OK",432.321706092449,453.339760578451,477.906942752284,453.899399090081
+"976",36,41,1,0,"Communicable","Black","Male","Oklahoma",2009,"West South Central","South","OK",52.7434751817671,64.337043579924,76.1777741554484,64.3495848507234
+"977",36,41,1,0,"Injuries","Black","Male","Oklahoma",2009,"West South Central","South","OK",108.18462071631,118.566026414602,128.537652179422,118.521724426105
+"978",36,41,1,0,"Non-communicable","Black","Male","Oklahoma",2009,"West South Central","South","OK",172.920711375121,188.496120127344,206.082011662796,188.878443981105
+"979",36,41,1,1,"All other causes","Black","Female","Oklahoma",2009,"West South Central","South","OK",158.155888246101,167.481783771614,178.103775380653,167.744255218164
+"980",36,41,1,1,"Cancers","Black","Female","Oklahoma",2009,"West South Central","South","OK",179.380166460792,189.409048514958,199.438354338563,189.407238560265
+"981",36,41,1,1,"Cardiovascular","Black","Female","Oklahoma",2009,"West South Central","South","OK",326.610815884237,344.639355478458,362.269080276803,344.72854904753
+"982",36,41,1,1,"Communicable","Black","Female","Oklahoma",2009,"West South Central","South","OK",33.3340014195657,39.2281382079105,45.3223293871132,39.1926759314075
+"983",36,41,1,1,"Injuries","Black","Female","Oklahoma",2009,"West South Central","South","OK",39.146785712051,44.0808076316124,49.5505609721198,44.1665456858872
+"984",36,41,1,1,"Non-communicable","Black","Female","Oklahoma",2009,"West South Central","South","OK",135.523486121554,145.47687728939,157.421824930989,145.69371595729
+"985",36,42,0,0,"All other causes","White","Male","Oklahoma",2010,"West South Central","South","OK",149.1149762335,153.471995378699,157.959364137992,153.509976770699
+"986",36,42,0,0,"Cancers","White","Male","Oklahoma",2010,"West South Central","South","OK",229.386867066289,233.426207316936,237.833339801799,233.434386156382
+"987",36,42,0,0,"Cardiovascular","White","Male","Oklahoma",2010,"West South Central","South","OK",338.660005829771,345.61928333821,352.998395130488,345.718252849941
+"988",36,42,0,0,"Communicable","White","Male","Oklahoma",2010,"West South Central","South","OK",44.6046159704104,47.278113022464,49.9816005765246,47.2845328168009
+"989",36,42,0,0,"Injuries","White","Male","Oklahoma",2010,"West South Central","South","OK",111.161785928853,114.375055193718,117.493501776678,114.336643802202
+"990",36,42,0,0,"Non-communicable","White","Male","Oklahoma",2010,"West South Central","South","OK",155.659774022601,159.940855605868,164.450368381815,159.929734616601
+"991",36,42,0,1,"All other causes","White","Female","Oklahoma",2010,"West South Central","South","OK",138.165070813173,141.610636530399,145.393622103926,141.614721318693
+"992",36,42,0,1,"Cancers","White","Female","Oklahoma",2010,"West South Central","South","OK",155.417834922429,158.44356003028,161.282583525084,158.376904659216
+"993",36,42,0,1,"Cardiovascular","White","Female","Oklahoma",2010,"West South Central","South","OK",246.546346655985,251.071034310835,256.225054370581,251.184051013758
+"994",36,42,0,1,"Communicable","White","Female","Oklahoma",2010,"West South Central","South","OK",32.9201421889654,34.4904843580107,36.0762437583874,34.5240695766008
+"995",36,42,0,1,"Injuries","White","Female","Oklahoma",2010,"West South Central","South","OK",51.6084302301978,53.6058637243305,55.5533369456837,53.6304165533204
+"996",36,42,0,1,"Non-communicable","White","Female","Oklahoma",2010,"West South Central","South","OK",129.53886757433,133.464228621167,137.629002707972,133.500125794439
+"997",36,42,1,0,"All other causes","Black","Male","Oklahoma",2010,"West South Central","South","OK",168.752969790215,182.024147273956,196.501657644472,182.207763439515
+"998",36,42,1,0,"Cancers","Black","Male","Oklahoma",2010,"West South Central","South","OK",276.722512314881,295.472621354453,313.109246827565,295.615308939691
+"999",36,42,1,0,"Cardiovascular","Black","Male","Oklahoma",2010,"West South Central","South","OK",415.646560489749,438.939352761074,462.256036485117,439.140426279981
+"1000",36,42,1,0,"Communicable","Black","Male","Oklahoma",2010,"West South Central","South","OK",50.7105367828644,61.9689429912208,74.5496593656705,62.3492977056676
+"1001",36,42,1,0,"Injuries","Black","Male","Oklahoma",2010,"West South Central","South","OK",108.572661443451,118.306447393949,129.066879392721,118.504493189819
+"1002",36,42,1,0,"Non-communicable","Black","Male","Oklahoma",2010,"West South Central","South","OK",174.902055339795,191.141047643872,208.83213352563,191.167914904709
+"1003",36,42,1,1,"All other causes","Black","Female","Oklahoma",2010,"West South Central","South","OK",158.896075503788,169.156953088767,181.646680820506,169.361099594166
+"1004",36,42,1,1,"Cancers","Black","Female","Oklahoma",2010,"West South Central","South","OK",178.886685834935,188.851667919444,199.415863740522,189.008517691575
+"1005",36,42,1,1,"Cardiovascular","Black","Female","Oklahoma",2010,"West South Central","South","OK",324.015318154322,341.84623508109,358.667840805834,341.725492561569
+"1006",36,42,1,1,"Communicable","Black","Female","Oklahoma",2010,"West South Central","South","OK",32.7239752558893,38.4771276060526,44.5329222296529,38.5187037619518
+"1007",36,42,1,1,"Injuries","Black","Female","Oklahoma",2010,"West South Central","South","OK",38.9032461189385,44.077621996742,49.6828053122695,44.1118873644164
+"1008",36,42,1,1,"Non-communicable","Black","Female","Oklahoma",2010,"West South Central","South","OK",132.430060693558,142.321728232348,152.644306024147,142.370492865487
+"1009",36,43,0,0,"All other causes","White","Male","Oklahoma",2011,"West South Central","South","OK",151.15148018383,155.776658109283,160.099966704067,155.709316623766
+"1010",36,43,0,0,"Cancers","White","Male","Oklahoma",2011,"West South Central","South","OK",227.270351246772,231.593750005403,235.852207232448,231.592223672539
+"1011",36,43,0,0,"Cardiovascular","White","Male","Oklahoma",2011,"West South Central","South","OK",338.279996018717,345.06068767614,352.286175951526,345.151333601089
+"1012",36,43,0,0,"Communicable","White","Male","Oklahoma",2011,"West South Central","South","OK",42.1932010116711,44.6156118507441,47.1455834422544,44.6255749987586
+"1013",36,43,0,0,"Injuries","White","Male","Oklahoma",2011,"West South Central","South","OK",111.44184606098,114.677156245485,117.920072096782,114.670351928346
+"1014",36,43,0,0,"Non-communicable","White","Male","Oklahoma",2011,"West South Central","South","OK",154.984434412781,159.330887454821,163.723194389824,159.29390184292
+"1015",36,43,0,1,"All other causes","White","Female","Oklahoma",2011,"West South Central","South","OK",142.288279602625,145.973687619422,149.920192393431,146.056302094339
+"1016",36,43,0,1,"Cancers","White","Female","Oklahoma",2011,"West South Central","South","OK",155.90895176575,158.838795067406,161.959931586386,158.885882370751
+"1017",36,43,0,1,"Cardiovascular","White","Female","Oklahoma",2011,"West South Central","South","OK",237.709621057964,242.540033843122,247.38877666316,242.553054951937
+"1018",36,43,0,1,"Communicable","White","Female","Oklahoma",2011,"West South Central","South","OK",33.0543279159193,34.664838394224,36.2241511922987,34.6705711114789
+"1019",36,43,0,1,"Injuries","White","Female","Oklahoma",2011,"West South Central","South","OK",53.5072311874246,55.3715479858334,57.6144295055225,55.3857007830706
+"1020",36,43,0,1,"Non-communicable","White","Female","Oklahoma",2011,"West South Central","South","OK",129.889278234022,133.388386456165,137.633957016774,133.471563034376
+"1021",36,43,1,0,"All other causes","Black","Male","Oklahoma",2011,"West South Central","South","OK",171.097526411135,183.959083348189,199.576639257126,184.292205066533
+"1022",36,43,1,0,"Cancers","Black","Male","Oklahoma",2011,"West South Central","South","OK",276.365780676479,294.846905676168,312.442007329252,294.41462590108
+"1023",36,43,1,0,"Cardiovascular","Black","Male","Oklahoma",2011,"West South Central","South","OK",397.189222898568,421.808395352648,445.854945110995,422.031500528245
+"1024",36,43,1,0,"Communicable","Black","Male","Oklahoma",2011,"West South Central","South","OK",48.4639212242633,60.0710590595321,73.214765125358,60.2419776694636
+"1025",36,43,1,0,"Injuries","Black","Male","Oklahoma",2011,"West South Central","South","OK",108.054540305969,119.158668913585,130.346620111789,119.120173315059
+"1026",36,43,1,0,"Non-communicable","Black","Male","Oklahoma",2011,"West South Central","South","OK",178.958762468951,194.946164910965,212.944253164452,195.105473490134
+"1027",36,43,1,1,"All other causes","Black","Female","Oklahoma",2011,"West South Central","South","OK",157.620523533243,168.754275113463,180.279541312493,168.654912703439
+"1028",36,43,1,1,"Cancers","Black","Female","Oklahoma",2011,"West South Central","South","OK",177.17393383978,187.801528256046,198.38039529087,187.838778739025
+"1029",36,43,1,1,"Cardiovascular","Black","Female","Oklahoma",2011,"West South Central","South","OK",315.966901953067,333.631048119569,351.485653929699,333.510629178766
+"1030",36,43,1,1,"Communicable","Black","Female","Oklahoma",2011,"West South Central","South","OK",32.3481731452613,38.2741415178808,44.4627552325138,38.2890761409834
+"1031",36,43,1,1,"Injuries","Black","Female","Oklahoma",2011,"West South Central","South","OK",38.8192347346976,44.0429483855519,49.6058587130946,44.1153581308913
+"1032",36,43,1,1,"Non-communicable","Black","Female","Oklahoma",2011,"West South Central","South","OK",130.605400426466,141.449413083048,152.72158636579,141.464069671097
+"1033",36,44,0,0,"All other causes","White","Male","Oklahoma",2012,"West South Central","South","OK",153.990811961448,158.304716769575,163.118269212193,158.369143051833
+"1034",36,44,0,0,"Cancers","White","Male","Oklahoma",2012,"West South Central","South","OK",224.131079684866,228.75918714074,233.391090948237,228.792470590019
+"1035",36,44,0,0,"Cardiovascular","White","Male","Oklahoma",2012,"West South Central","South","OK",327.393658687467,333.98730113399,341.068111118812,334.004192181216
+"1036",36,44,0,0,"Communicable","White","Male","Oklahoma",2012,"West South Central","South","OK",38.0938964762073,40.4922345205282,42.8307629075995,40.5038380393024
+"1037",36,44,0,0,"Injuries","White","Male","Oklahoma",2012,"West South Central","South","OK",111.644949412397,115.185514050438,118.61144198099,115.137156995083
+"1038",36,44,0,0,"Non-communicable","White","Male","Oklahoma",2012,"West South Central","South","OK",152.525965526643,156.4456891023,160.667085649637,156.558488084272
+"1039",36,44,0,1,"All other causes","White","Female","Oklahoma",2012,"West South Central","South","OK",141.344511476387,145.105874084352,149.41598223763,145.194579023777
+"1040",36,44,0,1,"Cancers","White","Female","Oklahoma",2012,"West South Central","South","OK",155.649101557016,158.817389029892,161.921301419047,158.787624465821
+"1041",36,44,0,1,"Cardiovascular","White","Female","Oklahoma",2012,"West South Central","South","OK",232.988992959463,237.957506471962,242.830167563059,237.948874523368
+"1042",36,44,0,1,"Communicable","White","Female","Oklahoma",2012,"West South Central","South","OK",31.6357574817408,33.1742485444976,34.6894191142998,33.1530176032167
+"1043",36,44,0,1,"Injuries","White","Female","Oklahoma",2012,"West South Central","South","OK",54.7389569226416,56.9743870339912,59.2951626272028,57.0166760730397
+"1044",36,44,0,1,"Non-communicable","White","Female","Oklahoma",2012,"West South Central","South","OK",128.344887708916,132.310993327297,136.309121860852,132.283894684651
+"1045",36,44,1,0,"All other causes","Black","Male","Oklahoma",2012,"West South Central","South","OK",172.958965788015,188.306261055381,204.664231086033,188.418664824856
+"1046",36,44,1,0,"Cancers","Black","Male","Oklahoma",2012,"West South Central","South","OK",273.350030456351,292.729735111961,310.764554774099,292.507472366224
+"1047",36,44,1,0,"Cardiovascular","Black","Male","Oklahoma",2012,"West South Central","South","OK",393.680573715787,416.784599377885,441.718410879524,417.028179313159
+"1048",36,44,1,0,"Communicable","Black","Male","Oklahoma",2012,"West South Central","South","OK",46.0499041726842,58.6768268068065,72.6594945874474,58.7606217550205
+"1049",36,44,1,0,"Injuries","Black","Male","Oklahoma",2012,"West South Central","South","OK",107.72819829451,118.697032727031,131.054393967446,118.82139798952
+"1050",36,44,1,0,"Non-communicable","Black","Male","Oklahoma",2012,"West South Central","South","OK",177.575165634516,194.817692177558,213.275257815619,195.137079265585
+"1051",36,44,1,1,"All other causes","Black","Female","Oklahoma",2012,"West South Central","South","OK",157.862064200927,169.431353205969,181.600261014458,169.418678175525
+"1052",36,44,1,1,"Cancers","Black","Female","Oklahoma",2012,"West South Central","South","OK",175.578427841743,186.401931871931,198.127981605205,186.633918224413
+"1053",36,44,1,1,"Cardiovascular","Black","Female","Oklahoma",2012,"West South Central","South","OK",305.943305062044,324.010891387768,340.887205664411,323.803897901121
+"1054",36,44,1,1,"Communicable","Black","Female","Oklahoma",2012,"West South Central","South","OK",31.8441563160715,38.226780023945,44.6761248815962,38.0823357647105
+"1055",36,44,1,1,"Injuries","Black","Female","Oklahoma",2012,"West South Central","South","OK",39.0348130654743,44.194326918598,49.9068604500926,44.221026781738
+"1056",36,44,1,1,"Non-communicable","Black","Female","Oklahoma",2012,"West South Central","South","OK",128.531538617638,139.931941821238,149.873267818947,139.640185068357
+"1057",36,45,0,0,"All other causes","White","Male","Oklahoma",2013,"West South Central","South","OK",157.11903515663,162.327084488918,167.833922939712,162.319241342275
+"1058",36,45,0,0,"Cancers","White","Male","Oklahoma",2013,"West South Central","South","OK",222.297086086755,227.5294025866,232.681559041865,227.511050455519
+"1059",36,45,0,0,"Cardiovascular","White","Male","Oklahoma",2013,"West South Central","South","OK",328.009778555785,335.410880836995,343.326431823819,335.56819802443
+"1060",36,45,0,0,"Communicable","White","Male","Oklahoma",2013,"West South Central","South","OK",38.0656000951513,40.8600693287629,43.5370378026596,40.8580288280774
+"1061",36,45,0,0,"Injuries","White","Male","Oklahoma",2013,"West South Central","South","OK",111.954525311796,115.582914895535,119.548387234272,115.720801194089
+"1062",36,45,0,0,"Non-communicable","White","Male","Oklahoma",2013,"West South Central","South","OK",153.586278428707,158.14972302138,163.342320610983,158.249099506965
+"1063",36,45,0,1,"All other causes","White","Female","Oklahoma",2013,"West South Central","South","OK",145.24637297744,149.708238330324,153.999305253225,149.715915121178
+"1064",36,45,0,1,"Cancers","White","Female","Oklahoma",2013,"West South Central","South","OK",154.602988337923,157.914009961452,161.521671454831,157.90944945413
+"1065",36,45,0,1,"Cardiovascular","White","Female","Oklahoma",2013,"West South Central","South","OK",232.291092550242,237.633786303385,242.717371629329,237.604216348594
+"1066",36,45,0,1,"Communicable","White","Female","Oklahoma",2013,"West South Central","South","OK",32.5235477437251,34.1610381153039,36.005292151843,34.1806183120628
+"1067",36,45,0,1,"Injuries","White","Female","Oklahoma",2013,"West South Central","South","OK",54.8515637183991,57.4319105669906,60.1222314981154,57.4366584140913
+"1068",36,45,0,1,"Non-communicable","White","Female","Oklahoma",2013,"West South Central","South","OK",128.925493293725,132.898748102464,137.000430625496,132.897718620892
+"1069",36,45,1,0,"All other causes","Black","Male","Oklahoma",2013,"West South Central","South","OK",176.538684767417,192.955947311307,212.322752649773,193.268150470226
+"1070",36,45,1,0,"Cancers","Black","Male","Oklahoma",2013,"West South Central","South","OK",271.184812657678,292.341111205803,312.994213808726,292.433822344874
+"1071",36,45,1,0,"Cardiovascular","Black","Male","Oklahoma",2013,"West South Central","South","OK",389.261755811095,415.794105783886,442.136894116508,415.604968144056
+"1072",36,45,1,0,"Communicable","Black","Male","Oklahoma",2013,"West South Central","South","OK",45.2213800341518,57.6712535803047,72.5697644415113,58.251363864661
+"1073",36,45,1,0,"Injuries","Black","Male","Oklahoma",2013,"West South Central","South","OK",108.1858622918,120.006428924413,133.174839969826,120.193466652043
+"1074",36,45,1,0,"Non-communicable","Black","Male","Oklahoma",2013,"West South Central","South","OK",174.430738843567,193.011057032941,214.625656306025,193.359348555319
+"1075",36,45,1,1,"All other causes","Black","Female","Oklahoma",2013,"West South Central","South","OK",156.444915881356,168.696243912604,183.502182833032,169.160454430945
+"1076",36,45,1,1,"Cancers","Black","Female","Oklahoma",2013,"West South Central","South","OK",173.057235498269,185.088782967324,197.357910930865,185.214999641164
+"1077",36,45,1,1,"Cardiovascular","Black","Female","Oklahoma",2013,"West South Central","South","OK",302.620809866507,322.731414643564,342.056251147579,322.870438570536
+"1078",36,45,1,1,"Communicable","Black","Female","Oklahoma",2013,"West South Central","South","OK",31.0430756573659,37.9728901086886,44.6035762294505,37.8605093175196
+"1079",36,45,1,1,"Injuries","Black","Female","Oklahoma",2013,"West South Central","South","OK",38.6778438243359,44.1278686322251,50.1439469945205,44.1734013383835
+"1080",36,45,1,1,"Non-communicable","Black","Female","Oklahoma",2013,"West South Central","South","OK",126.189185890186,138.529738736331,150.420826091419,138.600433586507

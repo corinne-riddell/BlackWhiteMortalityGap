@@ -1,0 +1,1081 @@
+"","state.n","year.n","race.n","sex.n","COD","race","sex","state","year","Census_Division","Census_Region","stabbrs","rate.per.100k_lcl","rate.per.100k_med","rate.per.100k_ucl","rate.per.100k_mean"
+"1",30,1,0,0,"All other causes","White","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",113.358083371564,117.345912061572,120.970306909224,117.284086024476
+"2",30,1,0,0,"Cancers","White","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",265.997087813028,271.254514178523,277.408436804789,271.356861899819
+"3",30,1,0,0,"Cardiovascular","White","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",921.599827968809,935.469958529361,950.645538895531,935.633784784432
+"4",30,1,0,0,"Communicable","White","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",56.6119746709761,59.8527815260609,63.2724873085005,59.928422520845
+"5",30,1,0,0,"Injuries","White","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",75.6889773585072,78.6013273444666,81.449019850682,78.6355924312421
+"6",30,1,0,0,"Non-communicable","White","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",97.3495953498795,100.779872860415,104.137192500083,100.809848324262
+"7",30,1,0,1,"All other causes","White","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",80.1487714865501,82.3580894789022,84.7878262850947,82.3652987136107
+"8",30,1,0,1,"Cancers","White","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",175.482632485517,178.97770547611,182.729311502727,179.060057029228
+"9",30,1,0,1,"Cardiovascular","White","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",626.067758730346,635.817547146887,646.187698532562,635.968972110157
+"10",30,1,0,1,"Communicable","White","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",33.9857124883269,36.1092947559151,38.3466134305801,36.1628178201398
+"11",30,1,0,1,"Injuries","White","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",35.0275415728974,36.7357257689042,38.5769996641173,36.7207540479689
+"12",30,1,0,1,"Non-communicable","White","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",52.159274838401,54.1930950276577,56.2384591818485,54.2083426164606
+"13",30,1,1,0,"All other causes","Black","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",206.857902865124,220.787158228914,235.655995642124,221.045865457651
+"14",30,1,1,0,"Cancers","Black","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",318.649864841872,336.582493981891,358.061120642935,336.752574998231
+"15",30,1,1,0,"Cardiovascular","Black","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",920.800312650044,964.95074826574,1006.85774408013,965.043064435547
+"16",30,1,1,0,"Communicable","Black","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",95.368080154304,106.960292147711,122.233553215751,107.394506043183
+"17",30,1,1,0,"Injuries","Black","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",165.611629640043,175.962977047921,187.407138836826,176.240630905706
+"18",30,1,1,0,"Non-communicable","Black","Male","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",128.849113628257,140.627154325935,151.391774721383,140.575554395046
+"19",30,1,1,1,"All other causes","Black","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",132.357301522493,140.097103613118,148.778567392873,140.326319973276
+"20",30,1,1,1,"Cancers","Black","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",185.725699156542,195.726333964237,206.458115273299,195.910078228277
+"21",30,1,1,1,"Cardiovascular","Black","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",686.973104630822,722.170017696154,756.456601464503,721.940801934055
+"22",30,1,1,1,"Communicable","Black","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",42.8199421316721,49.750088890343,58.2829264894087,49.9678343786312
+"23",30,1,1,1,"Injuries","Black","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",42.5459943057234,47.2593205471129,52.3403126680579,47.3703415341932
+"24",30,1,1,1,"Non-communicable","Black","Female","New Jersey",1969,"Mid-Atlantic","Northeast","NJ",89.6293925893102,96.4662792668895,104.345408422963,96.5441172534617
+"25",30,2,0,0,"All other causes","White","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",112.581612091727,115.94094099196,119.345908223881,115.946850869745
+"26",30,2,0,0,"Cancers","White","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",271.283531425611,276.000638074517,281.268963554449,276.132107471633
+"27",30,2,0,0,"Cardiovascular","White","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",910.369122593949,925.020877180284,938.581195075531,925.071692728701
+"28",30,2,0,0,"Communicable","White","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",52.5015332161159,55.6094419112521,58.7503764088897,55.6350586247324
+"29",30,2,0,0,"Injuries","White","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",76.1121284264255,78.653805098165,81.3244334055514,78.6892397379503
+"30",30,2,0,0,"Non-communicable","White","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",97.6667954373424,100.498049747282,103.488924445377,100.505591640645
+"31",30,2,0,1,"All other causes","White","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",80.1224986868153,82.2125900984812,84.4328682658449,82.2288158616868
+"32",30,2,0,1,"Cancers","White","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",175.401727720173,178.491504350331,181.636763541224,178.530964829595
+"33",30,2,0,1,"Cardiovascular","White","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",609.97645415276,618.800127787926,627.848628424853,618.955696198606
+"34",30,2,0,1,"Communicable","White","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",30.5452592956286,32.2504100778163,34.1509539516431,32.2684799963073
+"35",30,2,0,1,"Injuries","White","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",33.8496371605348,35.2288015159977,36.6056857552662,35.2379219825026
+"36",30,2,0,1,"Non-communicable","White","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",51.450672809413,53.2315815805746,54.9332894325847,53.2038533292732
+"37",30,2,1,0,"All other causes","Black","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",205.528591340715,217.021047892053,230.934120415325,217.187312459811
+"38",30,2,1,0,"Cancers","Black","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",320.335834649865,337.639814982382,356.237643644406,337.753189254341
+"39",30,2,1,0,"Cardiovascular","Black","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",897.597836154091,932.711014434673,971.521588865406,933.158040958108
+"40",30,2,1,0,"Communicable","Black","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",97.0094000808071,108.015254868038,120.620082238647,108.270907235301
+"41",30,2,1,0,"Injuries","Black","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",167.372702883254,176.841365184195,187.054265160823,176.883778677899
+"42",30,2,1,0,"Non-communicable","Black","Male","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",130.538909885959,140.385984653979,150.841373417456,140.422561397413
+"43",30,2,1,1,"All other causes","Black","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",131.544332659448,139.023638973958,146.612957641301,138.856331937547
+"44",30,2,1,1,"Cancers","Black","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",185.372564866812,194.972621638868,205.199850416817,195.212955057862
+"45",30,2,1,1,"Cardiovascular","Black","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",681.2626250965,710.910479357988,739.443156278532,711.461231092817
+"46",30,2,1,1,"Communicable","Black","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",42.3075672670415,48.2080783209436,55.1883111510417,48.4796688044779
+"47",30,2,1,1,"Injuries","Black","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",42.245699427211,46.7608152742007,51.7624587683688,46.81483847923
+"48",30,2,1,1,"Non-communicable","Black","Female","New Jersey",1970,"Mid-Atlantic","Northeast","NJ",90.3354396506031,96.99466805918,104.129124576535,97.0210047902229
+"49",30,3,0,0,"All other causes","White","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",109.938998750061,113.232017453691,116.537453318427,113.206692679692
+"50",30,3,0,0,"Cancers","White","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",272.404954369426,277.18950888416,282.286746019293,277.270731394233
+"51",30,3,0,0,"Cardiovascular","White","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",905.379661471871,919.23375708478,932.664500090047,919.078947998885
+"52",30,3,0,0,"Communicable","White","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",50.9552927289579,53.9011971687388,56.9196826433734,53.9184477786281
+"53",30,3,0,0,"Injuries","White","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",76.4553866176156,78.8782821148868,81.463374477088,78.9150405907748
+"54",30,3,0,0,"Non-communicable","White","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",98.5714144415618,101.113028197332,103.985313190209,101.147898761613
+"55",30,3,0,1,"All other causes","White","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",78.058263371697,80.1912876456388,82.2189021679581,80.1609223832618
+"56",30,3,0,1,"Cancers","White","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",175.45777176811,178.335380014356,181.223624875347,178.356604062786
+"57",30,3,0,1,"Cardiovascular","White","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",602.942114407497,610.75188802778,619.877191433696,610.791630571332
+"58",30,3,0,1,"Communicable","White","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",29.816436061896,31.5384355074478,33.3772082541282,31.5670004506229
+"59",30,3,0,1,"Injuries","White","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",32.8665109453268,34.1525134232236,35.4478751001847,34.1545016662261
+"60",30,3,0,1,"Non-communicable","White","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",50.9257835033882,52.419216561157,54.0411540078349,52.4310922846833
+"61",30,3,1,0,"All other causes","Black","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",201.891413510467,213.010499201175,224.524101012575,213.070607753332
+"62",30,3,1,0,"Cancers","Black","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",324.06623660646,339.764757835994,356.584562535616,339.831131300759
+"63",30,3,1,0,"Cardiovascular","Black","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",874.184875676361,911.188906542237,946.756665239158,911.120043798829
+"64",30,3,1,0,"Communicable","Black","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",95.133977782158,105.168752761181,116.846298181806,105.391211890176
+"65",30,3,1,0,"Injuries","Black","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",167.275257032419,175.685763474672,185.802289035711,175.960517498209
+"66",30,3,1,0,"Non-communicable","Black","Male","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",132.419230911639,141.211513702816,150.674455882821,141.313941043527
+"67",30,3,1,1,"All other causes","Black","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",128.023754332074,134.998898934208,142.099593764389,134.88854413598
+"68",30,3,1,1,"Cancers","Black","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",187.57627397785,195.471311137519,204.510677895304,195.713142780128
+"69",30,3,1,1,"Cardiovascular","Black","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",678.482865574168,707.199187656727,736.366729342291,707.766980101409
+"70",30,3,1,1,"Communicable","Black","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",42.0131508854171,47.3347445134545,53.6612947456395,47.5586636713134
+"71",30,3,1,1,"Injuries","Black","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",42.1577208336013,46.3232246631229,50.7753084185858,46.3657803392898
+"72",30,3,1,1,"Non-communicable","Black","Female","New Jersey",1971,"Mid-Atlantic","Northeast","NJ",90.3468909736261,96.5684403054929,102.60970800383,96.4415961927951
+"73",30,4,0,0,"All other causes","White","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",107.970521964604,111.332567463609,114.525903367239,111.328197044309
+"74",30,4,0,0,"Cancers","White","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",275.453900094304,280.650983994094,285.677045318032,280.613027766208
+"75",30,4,0,0,"Cardiovascular","White","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",898.130915244119,910.915981186495,924.617731106197,910.849110943234
+"76",30,4,0,0,"Communicable","White","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",53.6267450456664,56.5827039885261,59.7988181514071,56.5877263013713
+"77",30,4,0,0,"Injuries","White","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",75.2949236610421,77.691917485778,80.0775865306858,77.6826233448427
+"78",30,4,0,0,"Non-communicable","White","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",98.7253540314909,101.36185245504,103.935039562299,101.359159193557
+"79",30,4,0,1,"All other causes","White","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",77.110982878231,79.1052804100601,81.1660167159459,79.12122375959
+"80",30,4,0,1,"Cancers","White","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",176.16612521777,179.144555326211,182.186840269953,179.094832403665
+"81",30,4,0,1,"Cardiovascular","White","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",585.683815762123,593.313547334946,601.434978612655,593.345978347629
+"82",30,4,0,1,"Communicable","White","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",30.2596877324593,32.0364165250067,33.6586861839385,32.0324086464825
+"83",30,4,0,1,"Injuries","White","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",32.3413952106705,33.5356178385763,34.8022738874871,33.5426553526759
+"84",30,4,0,1,"Non-communicable","White","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",50.3735124696625,51.8718031983635,53.5650809411372,51.8862113607155
+"85",30,4,1,0,"All other causes","Black","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",197.302295736051,208.046048063964,220.130192779125,208.261645711525
+"86",30,4,1,0,"Cancers","Black","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",326.221556428227,341.202416971119,356.266826180052,341.380665823527
+"87",30,4,1,0,"Cardiovascular","Black","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",876.003192306871,909.692458636152,946.916939965076,909.874951218471
+"88",30,4,1,0,"Communicable","Black","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",94.5582995041932,105.026978027038,117.386623212393,105.109202469618
+"89",30,4,1,0,"Injuries","Black","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",162.729271498645,171.303867466008,180.119592601894,171.455322061795
+"90",30,4,1,0,"Non-communicable","Black","Male","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",134.685179625913,142.860097087337,151.91147419936,142.895212586558
+"91",30,4,1,1,"All other causes","Black","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",125.690006146253,132.5304474459,138.747309859674,132.552073347633
+"92",30,4,1,1,"Cancers","Black","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",188.438574944781,196.277507723718,205.383288013244,196.529954272801
+"93",30,4,1,1,"Cardiovascular","Black","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",663.761068345292,691.022494057441,716.311725602852,690.545552019093
+"94",30,4,1,1,"Communicable","Black","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",40.6062379133426,46.1122780913815,52.0303994601808,46.1070866353931
+"95",30,4,1,1,"Injuries","Black","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",41.7944290541901,45.6108890870969,49.9176728110528,45.6355062851008
+"96",30,4,1,1,"Non-communicable","Black","Female","New Jersey",1972,"Mid-Atlantic","Northeast","NJ",89.5931962475671,95.3378004236322,101.47421540263,95.3976832780397
+"97",30,5,0,0,"All other causes","White","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",106.580475823459,109.823776760066,113.229788140078,109.862760007964
+"98",30,5,0,0,"Cancers","White","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",278.230760185824,283.592472590675,288.636312522964,283.50111598515
+"99",30,5,0,0,"Cardiovascular","White","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",872.068242347298,883.252124994384,896.41102649333,883.573467304507
+"100",30,5,0,0,"Communicable","White","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",50.1873833467961,53.2455766858339,56.0259330154961,53.1652257929377
+"101",30,5,0,0,"Injuries","White","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",73.3672311115022,75.7793253690667,78.1966737291413,75.7554824115773
+"102",30,5,0,0,"Non-communicable","White","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",99.5143874252608,102.121645951182,104.748365978196,102.143727840241
+"103",30,5,0,1,"All other causes","White","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",75.3681070624405,77.3732533459143,79.448221374219,77.3628962565008
+"104",30,5,0,1,"Cancers","White","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",176.041637953376,179.198976548301,182.173362373327,179.166341481392
+"105",30,5,0,1,"Cardiovascular","White","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",560.07897495714,568.197501308042,576.51776932177,568.234810775034
+"106",30,5,0,1,"Communicable","White","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",31.6519640906318,33.2806639418827,34.995395941484,33.2589963074987
+"107",30,5,0,1,"Injuries","White","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",31.2316221931343,32.4249049555918,33.6467572412377,32.4335898354187
+"108",30,5,0,1,"Non-communicable","White","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",49.7849115751154,51.3249049983531,52.9699396039019,51.3267230859286
+"109",30,5,1,0,"All other causes","Black","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",194.439157977147,204.678358396816,216.213115582594,204.573988481643
+"110",30,5,1,0,"Cancers","Black","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",332.479034204842,347.979441967631,363.559641111257,347.957119075013
+"111",30,5,1,0,"Cardiovascular","Black","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",847.0290262283,877.664842670269,911.270358260203,877.925013540145
+"112",30,5,1,0,"Communicable","Black","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",87.7874923165897,97.9282892406263,108.903227918606,97.8872263604802
+"113",30,5,1,0,"Injuries","Black","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",153.894807196837,161.303045963123,169.111639847208,161.393533800814
+"114",30,5,1,0,"Non-communicable","Black","Male","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",134.226983447962,142.670839414499,152.355410148839,142.776256222792
+"115",30,5,1,1,"All other causes","Black","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",123.94971324717,129.88013546939,135.954986143208,129.853742905094
+"116",30,5,1,1,"Cancers","Black","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",188.755668821145,196.827521637821,205.500122364706,196.838993090058
+"117",30,5,1,1,"Cardiovascular","Black","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",646.475998736208,671.191228844897,698.846214641706,671.404302354947
+"118",30,5,1,1,"Communicable","Black","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",39.6640615402886,44.8086904617674,51.000948237383,44.8969951326691
+"119",30,5,1,1,"Injuries","Black","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",41.2021774561363,44.9544521916081,48.8769358325657,44.9545682853528
+"120",30,5,1,1,"Non-communicable","Black","Female","New Jersey",1973,"Mid-Atlantic","Northeast","NJ",88.9508408771465,93.9737967199213,99.5082142174369,94.0891405951089
+"121",30,6,0,0,"All other causes","White","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",105.228910756404,108.305653061033,111.987243018268,108.366109599084
+"122",30,6,0,0,"Cancers","White","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",278.20748885074,283.595160446778,288.417233073585,283.478235666377
+"123",30,6,0,0,"Cardiovascular","White","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",832.200622299515,843.97787504767,855.805743392835,844.085670414016
+"124",30,6,0,0,"Communicable","White","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",50.0717996023739,53.0409066377375,56.1814877416457,53.1033293760669
+"125",30,6,0,0,"Injuries","White","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",70.1466953294904,72.3467964071444,74.6016151344325,72.3810581594238
+"126",30,6,0,0,"Non-communicable","White","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",98.3409221694126,100.914044857729,103.826472958263,100.954192109344
+"127",30,6,0,1,"All other causes","White","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",75.2684178966883,77.1859056697566,79.230558983701,77.1867654123515
+"128",30,6,0,1,"Cancers","White","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",176.046953109205,178.793111271313,181.643232172079,178.831177885445
+"129",30,6,0,1,"Cardiovascular","White","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",527.215269876747,535.045468021682,542.679412279572,535.015769492353
+"130",30,6,0,1,"Communicable","White","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",28.8851987381522,30.4226953471955,31.9152927454292,30.4207402911638
+"131",30,6,0,1,"Injuries","White","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",29.8195699314564,30.8648625382978,31.9962554119473,30.8790146740578
+"132",30,6,0,1,"Non-communicable","White","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",48.8044193676097,50.4449716154682,51.9789480983721,50.4248152574249
+"133",30,6,1,0,"All other causes","Black","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",191.493203529885,201.143243829708,211.31018915701,201.278821187808
+"134",30,6,1,0,"Cancers","Black","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",338.511083908208,353.536778292273,369.529280919349,353.594628691582
+"135",30,6,1,0,"Cardiovascular","Black","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",827.751736651793,858.274281146834,892.97258714608,858.545369733924
+"136",30,6,1,0,"Communicable","Black","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",78.6928764228736,87.2828692410915,97.6173691092225,87.5714781863922
+"137",30,6,1,0,"Injuries","Black","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",145.47279346652,152.6854492424,161.331731619357,152.810386640971
+"138",30,6,1,0,"Non-communicable","Black","Male","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",133.627977422712,141.30997595127,150.177200220681,141.388445204728
+"139",30,6,1,1,"All other causes","Black","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",122.595142042808,128.42413471184,134.869880132159,128.537023343391
+"140",30,6,1,1,"Cancers","Black","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",187.376880554303,195.030043543548,202.466510141036,195.092198796366
+"141",30,6,1,1,"Cardiovascular","Black","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",609.674114199259,635.223184373682,660.640170624217,634.807954193432
+"142",30,6,1,1,"Communicable","Black","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",36.9477308370124,41.996359690092,47.5522915074455,42.0960973067305
+"143",30,6,1,1,"Injuries","Black","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",39.9607923084275,43.5046655785595,47.0654125727522,43.4736728218644
+"144",30,6,1,1,"Non-communicable","Black","Female","New Jersey",1974,"Mid-Atlantic","Northeast","NJ",86.7612549813033,92.1289700368812,97.7082423916719,92.1337028774819
+"145",30,7,0,0,"All other causes","White","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",102.903065431857,105.976051551196,108.915262345642,105.943744852193
+"146",30,7,0,0,"Cancers","White","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",279.465174975357,284.114132593826,289.727705112153,284.249518852285
+"147",30,7,0,0,"Cardiovascular","White","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",789.582943463258,801.249721525871,813.157772060564,801.334123200394
+"148",30,7,0,0,"Communicable","White","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",46.4222301488147,49.0922680114719,51.9478313371528,49.1101877972397
+"149",30,7,0,0,"Injuries","White","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",67.263184475931,69.4296750964445,71.5480281755983,69.4012923987143
+"150",30,7,0,0,"Non-communicable","White","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",97.3728597688814,99.8370491973094,102.575114888352,99.8878730055168
+"151",30,7,0,1,"All other causes","White","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",72.5491496967263,74.4969100825759,76.3191625058684,74.4901117461135
+"152",30,7,0,1,"Cancers","White","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",176.646542612113,179.751716524178,182.857925228666,179.758495629414
+"153",30,7,0,1,"Cardiovascular","White","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",497.650571572717,504.832147536895,512.150231665591,504.854591989268
+"154",30,7,0,1,"Communicable","White","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",28.1313644914038,29.634240275394,31.1752269870841,29.6648088930119
+"155",30,7,0,1,"Injuries","White","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",28.3875587278587,29.5214998644341,30.6944131710907,29.5359225822667
+"156",30,7,0,1,"Non-communicable","White","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",48.798741581025,50.3525455920342,51.9576113250087,50.3609547435424
+"157",30,7,1,0,"All other causes","Black","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",186.510901370072,196.519991174002,207.444275232261,196.722816789764
+"158",30,7,1,0,"Cancers","Black","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",340.140168704324,354.846812795417,370.550870966653,355.000474654642
+"159",30,7,1,0,"Cardiovascular","Black","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",790.238442383143,821.980219489725,853.234543500856,821.872521710651
+"160",30,7,1,0,"Communicable","Black","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",74.8512249439473,83.1936186281524,93.6985635377204,83.6766830210798
+"161",30,7,1,0,"Injuries","Black","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",138.253224666545,145.221489680204,153.268195700912,145.253707607251
+"162",30,7,1,0,"Non-communicable","Black","Male","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",132.267032384485,139.7551407399,147.805825666798,139.764482262506
+"163",30,7,1,1,"All other causes","Black","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",119.910520453074,125.859649641284,131.614886443198,125.844437388474
+"164",30,7,1,1,"Cancers","Black","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",186.969910453655,194.898746159653,203.028532426332,194.974188335808
+"165",30,7,1,1,"Cardiovascular","Black","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",571.794340531103,596.09952557732,621.0959701033,596.265884336088
+"166",30,7,1,1,"Communicable","Black","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",36.6431131878327,41.1109333807908,46.0452866970685,41.1263179510611
+"167",30,7,1,1,"Injuries","Black","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",38.8021450077198,42.3258599515048,45.8645715728262,42.2746724979186
+"168",30,7,1,1,"Non-communicable","Black","Female","New Jersey",1975,"Mid-Atlantic","Northeast","NJ",84.6397964979986,89.763758894181,95.1124658803861,89.782235260062
+"169",30,8,0,0,"All other causes","White","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",100.251602483894,103.480415145796,106.47534374998,103.498063813143
+"170",30,8,0,0,"Cancers","White","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",277.60612985897,282.928546830952,288.431857783597,282.973727640285
+"171",30,8,0,0,"Cardiovascular","White","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",767.169312358049,777.828493549078,789.244137354141,778.104756046086
+"172",30,8,0,0,"Communicable","White","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",49.5424310973286,52.4515739561061,55.2915980451283,52.4370229017259
+"173",30,8,0,0,"Injuries","White","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",64.3631894291253,66.4665046726057,68.5052320804476,66.4523688867022
+"174",30,8,0,0,"Non-communicable","White","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",96.1883494537818,98.6986999143138,101.201733694747,98.6947733525838
+"175",30,8,0,1,"All other causes","White","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",71.9292624035557,73.8665702861303,75.6235352205182,73.8190632257278
+"176",30,8,0,1,"Cancers","White","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",178.032534229691,180.77160907281,183.874432268817,180.885212837754
+"177",30,8,0,1,"Cardiovascular","White","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",488.843552458509,495.94981808727,503.46082344295,495.97434185478
+"178",30,8,0,1,"Communicable","White","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",28.9895733938803,30.5142664729281,32.1032336448014,30.5209177582501
+"179",30,8,0,1,"Injuries","White","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",27.371652185175,28.4059111362202,29.5327756677336,28.4100797473778
+"180",30,8,0,1,"Non-communicable","White","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",48.482724811956,49.8802286711361,51.4063641876048,49.8906431381643
+"181",30,8,1,0,"All other causes","Black","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",186.706436713899,197.048562668086,206.937197704754,197.012481493445
+"182",30,8,1,0,"Cancers","Black","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",346.248850730141,361.87569664886,376.268181607045,361.589234264012
+"183",30,8,1,0,"Cardiovascular","Black","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",764.940063499516,793.598106451311,822.832387398689,793.696679931001
+"184",30,8,1,0,"Communicable","Black","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",76.6017468325881,85.0842742699945,95.6785466144863,85.3124682747087
+"185",30,8,1,0,"Injuries","Black","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",128.301436117065,135.293379371464,141.949418937998,135.318633319706
+"186",30,8,1,0,"Non-communicable","Black","Male","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",131.235823813071,139.153954581667,147.660895697801,139.276346165118
+"187",30,8,1,1,"All other causes","Black","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",118.833774704043,124.515431836498,129.792149413736,124.492599100275
+"188",30,8,1,1,"Cancers","Black","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",188.668129624347,196.610368104988,204.351401093005,196.556633728549
+"189",30,8,1,1,"Cardiovascular","Black","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",555.942075941281,577.989936576845,603.288122503286,578.377238763057
+"190",30,8,1,1,"Communicable","Black","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",37.2453397113645,41.9741141617633,46.862155081228,42.0461963341179
+"191",30,8,1,1,"Injuries","Black","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",37.4253334719497,40.4729398580647,43.5591656910143,40.4585969474721
+"192",30,8,1,1,"Non-communicable","Black","Female","New Jersey",1976,"Mid-Atlantic","Northeast","NJ",83.0271542813622,88.5354450851487,93.6365292184678,88.4988304243791
+"193",30,9,0,0,"All other causes","White","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",99.1960593190859,102.37896952902,105.429933270916,102.359472064791
+"194",30,9,0,0,"Cancers","White","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",280.969615474445,286.196437577322,291.08485587244,286.093031842324
+"195",30,9,0,0,"Cardiovascular","White","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",752.719958808447,763.487985096931,775.509940696557,763.5222719797
+"196",30,9,0,0,"Communicable","White","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",45.9626491876497,48.7144562439581,51.7062300086487,48.7157527354046
+"197",30,9,0,0,"Injuries","White","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",64.997541837608,67.017980204151,69.1067076438117,67.0219501242045
+"198",30,9,0,0,"Non-communicable","White","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",97.0025945250581,99.6124774944338,102.178113489345,99.6052172574298
+"199",30,9,0,1,"All other causes","White","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",71.0689516974138,72.8807836172439,74.7804707628665,72.8802027090048
+"200",30,9,0,1,"Cancers","White","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",178.679714729157,181.34420778222,184.357151663324,181.369513388543
+"201",30,9,0,1,"Cardiovascular","White","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",473.902478538067,480.136078741111,486.883808892684,480.203075144203
+"202",30,9,0,1,"Communicable","White","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",26.7084294663773,28.1381697358558,29.6368193082319,28.1554997819374
+"203",30,9,0,1,"Injuries","White","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",26.8376840080534,27.9417956672599,29.0248832636907,27.9580064161142
+"204",30,9,0,1,"Non-communicable","White","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",48.1739183554536,49.5615022179233,51.0359842386317,49.5856526809617
+"205",30,9,1,0,"All other causes","Black","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",186.978755960933,196.808740436644,206.598998096841,196.840596407773
+"206",30,9,1,0,"Cancers","Black","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",353.524114157333,367.949896820134,382.910248552779,368.028899535236
+"207",30,9,1,0,"Cardiovascular","Black","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",736.585885986776,765.076753061138,795.012914214626,765.699429911703
+"208",30,9,1,0,"Communicable","Black","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",76.8404008368869,85.667432169343,96.3998449367777,86.053839421067
+"209",30,9,1,0,"Injuries","Black","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",122.602765526872,129.355851011267,136.415359779944,129.339714792861
+"210",30,9,1,0,"Non-communicable","Black","Male","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",130.20542965271,137.715156969284,146.271597679433,137.703925533977
+"211",30,9,1,1,"All other causes","Black","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",118.142203476564,123.272494952387,129.17537327466,123.400656017355
+"212",30,9,1,1,"Cancers","Black","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",190.741360316456,198.311682166506,206.584110780789,198.342864918365
+"213",30,9,1,1,"Cardiovascular","Black","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",542.419120197559,563.215481242374,585.22166634704,563.044658857701
+"214",30,9,1,1,"Communicable","Black","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",36.8429928611524,41.6038808751708,46.4631576830446,41.5851037558189
+"215",30,9,1,1,"Injuries","Black","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",35.8973299641984,38.909460633028,41.8359296303015,38.8733172384808
+"216",30,9,1,1,"Non-communicable","Black","Female","New Jersey",1977,"Mid-Atlantic","Northeast","NJ",81.5741335922908,86.385551210108,91.6731988202632,86.4008977347368
+"217",30,10,0,0,"All other causes","White","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",96.9525710651604,99.8416448033733,102.702754376284,99.8580698695289
+"218",30,10,0,0,"Cancers","White","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",285.956069696855,290.580911898224,295.957087672416,290.735788251317
+"219",30,10,0,0,"Cardiovascular","White","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",731.493340710331,742.281393695922,753.091020643758,742.305585153133
+"220",30,10,0,0,"Communicable","White","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",47.2186914683627,50.0085010392636,53.1151757912712,50.0303700434537
+"221",30,10,0,0,"Injuries","White","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",64.9753221824885,66.9399336324533,68.9979203577959,66.9467206194337
+"222",30,10,0,0,"Non-communicable","White","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",98.4292731783864,101.072026052341,103.832457391631,101.076025869095
+"223",30,10,0,1,"All other causes","White","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",70.2107220024167,72.1213810027991,73.8644378403625,72.0832254208384
+"224",30,10,0,1,"Cancers","White","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",178.546424277202,181.465331660291,184.253926649671,181.476453037543
+"225",30,10,0,1,"Cardiovascular","White","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",463.340469698397,470.332740858923,477.21955476062,470.400299243542
+"226",30,10,0,1,"Communicable","White","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",26.1287022159557,27.5422534753513,29.0554999842293,27.5624322220633
+"227",30,10,0,1,"Injuries","White","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",26.3180434284995,27.3457974154025,28.3895307698942,27.3537503623996
+"228",30,10,0,1,"Non-communicable","White","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",48.8811689876333,50.3488836080822,51.7324973033358,50.3275010544317
+"229",30,10,1,0,"All other causes","Black","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",182.059040457938,191.942267315946,201.634824797179,191.942359474909
+"230",30,10,1,0,"Cancers","Black","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",357.27567863724,370.905450733693,386.168880193921,371.302509878742
+"231",30,10,1,0,"Cardiovascular","Black","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",731.649338946741,759.327198375922,787.164653899398,759.105014485046
+"232",30,10,1,0,"Communicable","Black","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",71.6995566355518,80.6978109755144,90.4079433702962,80.8575079171654
+"233",30,10,1,0,"Injuries","Black","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",120.040943937279,126.633068104189,133.343788176051,126.598300227053
+"234",30,10,1,0,"Non-communicable","Black","Male","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",128.605076203505,136.202199790479,144.713984592154,136.271294004993
+"235",30,10,1,1,"All other causes","Black","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",116.867302504202,122.912530412284,128.598565842324,122.946632239616
+"236",30,10,1,1,"Cancers","Black","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",191.422510888598,198.554118925578,205.914113474566,198.45887557847
+"237",30,10,1,1,"Cardiovascular","Black","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",511.357955447937,531.847081741288,552.394940197738,532.037936307102
+"238",30,10,1,1,"Communicable","Black","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",35.5634107001981,39.9787823265374,44.9586293176566,40.0848311800177
+"239",30,10,1,1,"Injuries","Black","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",34.8434453497361,37.6518026809424,40.6534705686295,37.6602132218863
+"240",30,10,1,1,"Non-communicable","Black","Female","New Jersey",1978,"Mid-Atlantic","Northeast","NJ",80.5730116823457,85.6622703511541,91.0384361778185,85.6726612034493
+"241",30,11,0,0,"All other causes","White","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",97.9233585079898,100.987344975487,103.917930556592,100.956428846333
+"242",30,11,0,0,"Cancers","White","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",284.134976125458,289.129147459315,293.834989022198,289.141736678627
+"243",30,11,0,0,"Cardiovascular","White","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",698.558702126611,709.599970181589,719.872650439708,709.399372223167
+"244",30,11,0,0,"Communicable","White","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",44.0013437589297,46.5256792416986,49.3126197185109,46.561562224159
+"245",30,11,0,0,"Injuries","White","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",66.80087413589,68.7251886003083,70.8910537509091,68.7546488233208
+"246",30,11,0,0,"Non-communicable","White","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",99.9436189385352,102.663571816375,105.39043412988,102.716057032083
+"247",30,11,0,1,"All other causes","White","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",71.1538408456178,73.0067930300204,74.9778324869747,73.0213413730311
+"248",30,11,0,1,"Cancers","White","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",178.049300250896,181.114581530836,184.401776339098,181.115510309602
+"249",30,11,0,1,"Cardiovascular","White","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",454.031625550531,460.465960837679,466.791338802469,460.476352096966
+"250",30,11,0,1,"Communicable","White","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",24.9265655101788,26.2507251585814,27.6961386893663,26.2546453604576
+"251",30,11,0,1,"Injuries","White","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",26.272845862309,27.2497489874806,28.2762999118116,27.2692434507117
+"252",30,11,0,1,"Non-communicable","White","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",48.4837200526956,49.8906778393634,51.5446077138197,49.9221549192796
+"253",30,11,1,0,"All other causes","Black","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",182.509354122521,191.952647520529,201.067569828599,191.89656254027
+"254",30,11,1,0,"Cancers","Black","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",361.362226256059,376.182664908967,392.688616237178,376.282932896863
+"255",30,11,1,0,"Cardiovascular","Black","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",724.002936448854,751.343764088203,779.771326113338,751.88980451677
+"256",30,11,1,0,"Communicable","Black","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",67.33758984771,75.2178396020641,84.2257205972978,75.3677991519037
+"257",30,11,1,0,"Injuries","Black","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",119.38154998198,125.532642586759,132.082286070985,125.622220572067
+"258",30,11,1,0,"Non-communicable","Black","Male","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",128.926321560481,137.007467657978,144.630247153619,137.015031377767
+"259",30,11,1,1,"All other causes","Black","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",117.47927573208,123.299119268396,129.094585675974,123.285952238304
+"260",30,11,1,1,"Cancers","Black","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",194.317687411211,201.847526149636,208.746122192552,201.786624897433
+"261",30,11,1,1,"Cardiovascular","Black","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",520.282907507237,540.102191452679,560.522798915405,540.380721415818
+"262",30,11,1,1,"Communicable","Black","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",34.7556236734806,38.9630209829583,43.8369197644741,39.0652718940017
+"263",30,11,1,1,"Injuries","Black","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",34.1183274635014,36.8744174794258,40.0149533234674,36.8945849243546
+"264",30,11,1,1,"Non-communicable","Black","Female","New Jersey",1979,"Mid-Atlantic","Northeast","NJ",80.512337585681,85.2809136563663,90.6990140964067,85.3899171378302
+"265",30,12,0,0,"All other causes","White","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",99.8785365419214,102.997581206198,105.867405233847,102.944628111023
+"266",30,12,0,0,"Cancers","White","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",281.87695079462,286.728422282625,292.069523126514,286.794926613342
+"267",30,12,0,0,"Cardiovascular","White","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",711.584931089817,721.892411713697,732.197901672597,721.974208668918
+"268",30,12,0,0,"Communicable","White","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",44.7016588307908,47.3782106993999,50.0281841804956,47.4061348741575
+"269",30,12,0,0,"Injuries","White","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",66.6163095412186,68.6368625414679,70.8102304077261,68.6677992175285
+"270",30,12,0,0,"Non-communicable","White","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",102.931917686757,105.555119044439,108.320461337538,105.560877939939
+"271",30,12,0,1,"All other causes","White","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",72.3389238743346,74.2667242050715,76.1538267284106,74.2951114877262
+"272",30,12,0,1,"Cancers","White","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",179.630993210204,182.633693873359,185.730364954007,182.621689161473
+"273",30,12,0,1,"Cardiovascular","White","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",464.557006831209,471.138772301784,477.507367702247,471.041952601127
+"274",30,12,0,1,"Communicable","White","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",28.5645071969553,30.0120989454779,31.5381521214985,30.0271133704322
+"275",30,12,0,1,"Injuries","White","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",25.6001068807273,26.6097998049926,27.6234195316901,26.6053868739866
+"276",30,12,0,1,"Non-communicable","White","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",51.4509460494694,53.0227168862127,54.6242737031857,53.0023970553834
+"277",30,12,1,0,"All other causes","Black","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",182.94483813926,192.098422013168,202.58051948331,192.296560892491
+"278",30,12,1,0,"Cancers","Black","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",372.376450218514,386.96771293713,404.33735848969,387.225180678457
+"279",30,12,1,0,"Cardiovascular","Black","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",713.808439699233,741.669352945982,771.48004597024,742.108084526118
+"280",30,12,1,0,"Communicable","Black","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",69.38666644218,77.6061992801476,86.3652637462159,77.7829452881867
+"281",30,12,1,0,"Injuries","Black","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",118.117179546112,124.039093943284,130.749799242688,124.180799800038
+"282",30,12,1,0,"Non-communicable","Black","Male","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",131.480978929221,140.004493641076,148.036089576001,139.945648951115
+"283",30,12,1,1,"All other causes","Black","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",116.026213687803,122.01795338608,127.647466666863,121.962755507282
+"284",30,12,1,1,"Cancers","Black","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",196.538095244404,203.748700494061,211.731355905321,203.828676109821
+"285",30,12,1,1,"Cardiovascular","Black","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",524.825689380495,545.246243139572,567.596518219294,545.877254117473
+"286",30,12,1,1,"Communicable","Black","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",36.7017790754836,40.9798972879312,46.1063899623101,41.042264992586
+"287",30,12,1,1,"Injuries","Black","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",33.388943440288,36.1957902924604,39.0079030617491,36.2454157013318
+"288",30,12,1,1,"Non-communicable","Black","Female","New Jersey",1980,"Mid-Atlantic","Northeast","NJ",81.2430062482475,86.2573042880526,91.4490742147318,86.277765078647
+"289",30,13,0,0,"All other causes","White","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",97.7678815242762,100.784990432361,103.99668641348,100.839827374635
+"290",30,13,0,0,"Cancers","White","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",280.525913197962,285.12916079771,290.270708706085,285.20945120685
+"291",30,13,0,0,"Cardiovascular","White","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",680.009532618535,690.449913005802,700.298308949836,690.200027477632
+"292",30,13,0,0,"Communicable","White","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",46.0946031217445,48.7040138482222,51.4598258728709,48.7401093780438
+"293",30,13,0,0,"Injuries","White","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",64.8712823231874,66.8781147024784,68.9412701106109,66.9129226968648
+"294",30,13,0,0,"Non-communicable","White","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",100.649769898135,103.561726361189,106.590753142787,103.548862652555
+"295",30,13,0,1,"All other causes","White","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",72.6496923858474,74.4867812336712,76.3827308180806,74.4901751746076
+"296",30,13,0,1,"Cancers","White","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",181.404807907646,184.218596738654,187.044537088407,184.197229180456
+"297",30,13,0,1,"Cardiovascular","White","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",437.253306068261,443.74101828524,449.800648191057,443.7472160753
+"298",30,13,0,1,"Communicable","White","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",28.1714631176138,29.6519136616034,31.2446720650263,29.6637390609838
+"299",30,13,0,1,"Injuries","White","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",25.1270617758688,26.1151759715464,27.1439254635395,26.1117740511768
+"300",30,13,0,1,"Non-communicable","White","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",53.0962247532452,54.6826278006796,56.2097240189961,54.6849680426131
+"301",30,13,1,0,"All other causes","Black","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",178.85486959734,188.362255621998,199.136913823008,188.523240077662
+"302",30,13,1,0,"Cancers","Black","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",375.95012187722,391.541595078587,407.836381267195,391.695078211018
+"303",30,13,1,0,"Cardiovascular","Black","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",697.21554367371,724.693838196149,751.722009791148,724.917234760361
+"304",30,13,1,0,"Communicable","Black","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",72.2734658143182,80.312758076243,89.1832040972543,80.4965406353317
+"305",30,13,1,0,"Injuries","Black","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",115.890858064895,122.299508933351,128.498963197282,122.26637629114
+"306",30,13,1,0,"Non-communicable","Black","Male","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",134.369182044021,142.497736881667,150.54398885339,142.465585844268
+"307",30,13,1,1,"All other causes","Black","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",117.384402404873,123.198111728641,128.689182739591,123.150249608872
+"308",30,13,1,1,"Cancers","Black","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",198.009835227953,205.265686610536,212.821422517238,205.214314202686
+"309",30,13,1,1,"Cardiovascular","Black","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",498.013339685206,517.861419737358,539.147516985261,518.011619200494
+"310",30,13,1,1,"Communicable","Black","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",36.6709339052779,40.8373717448176,45.6477729002031,40.8775360348868
+"311",30,13,1,1,"Injuries","Black","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",33.0934246668762,35.7450158218456,38.7172318606279,35.8222534548326
+"312",30,13,1,1,"Non-communicable","Black","Female","New Jersey",1981,"Mid-Atlantic","Northeast","NJ",82.2100509656567,87.0020411555745,92.0085993595362,87.0404828820758
+"313",30,14,0,0,"All other causes","White","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",100.411510859034,103.649209490058,106.680530624569,103.620865904454
+"314",30,14,0,0,"Cancers","White","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",279.826445785384,285.096721133078,290.166969008145,285.007543924622
+"315",30,14,0,0,"Cardiovascular","White","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",665.231790576827,675.312665891721,685.058281414959,675.231967223859
+"316",30,14,0,0,"Communicable","White","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",46.2943739065155,48.8523212543892,51.5451249315506,48.873234873397
+"317",30,14,0,0,"Injuries","White","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",62.8086656499883,64.7569709965379,66.7731002324488,64.7585832014548
+"318",30,14,0,0,"Non-communicable","White","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",101.36968329365,104.248429896724,107.004630952795,104.243351163699
+"319",30,14,0,1,"All other causes","White","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",73.6348304056266,75.6215752741641,77.4534056813864,75.6097281334197
+"320",30,14,0,1,"Cancers","White","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",182.377932410597,185.182180500516,188.138174434354,185.166754834958
+"321",30,14,0,1,"Cardiovascular","White","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",428.251207091652,434.198954825029,440.298173705618,434.233905902788
+"322",30,14,0,1,"Communicable","White","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",27.1875329148774,28.4826988937618,30.1219305156196,28.5179025597164
+"323",30,14,0,1,"Injuries","White","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",24.3029728514792,25.2303718118586,26.151947264641,25.2413767844699
+"324",30,14,0,1,"Non-communicable","White","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",52.3910362289141,54.0361207810038,55.5417387168863,54.0240620651571
+"325",30,14,1,0,"All other causes","Black","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",184.692036566398,193.887419163147,203.456810111714,194.048875691297
+"326",30,14,1,0,"Cancers","Black","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",380.974842779616,398.073982983931,413.682991051819,397.997780204416
+"327",30,14,1,0,"Cardiovascular","Black","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",679.810499806046,704.798306371063,729.489155807687,704.967314000296
+"328",30,14,1,0,"Communicable","Black","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",75.8538597332914,84.3198810063343,93.5233492387634,84.4916603759356
+"329",30,14,1,0,"Injuries","Black","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",109.6066817808,115.473548835062,121.756757027794,115.545837223946
+"330",30,14,1,0,"Non-communicable","Black","Male","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",135.140221837424,143.443553653398,151.955376558181,143.377973645373
+"331",30,14,1,1,"All other causes","Black","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",120.020217207233,126.081173588247,131.990843436768,126.019114950345
+"332",30,14,1,1,"Cancers","Black","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",199.955542562427,207.417340037243,215.648415985015,207.486073449815
+"333",30,14,1,1,"Cardiovascular","Black","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",480.933985143207,498.841385996653,517.620323607223,498.772117681227
+"334",30,14,1,1,"Communicable","Black","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",37.5456659999553,41.6737779577814,46.1345350241603,41.7702224999522
+"335",30,14,1,1,"Injuries","Black","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",32.483606691859,34.9170182951134,37.7798605858281,35.0017276141754
+"336",30,14,1,1,"Non-communicable","Black","Female","New Jersey",1982,"Mid-Atlantic","Northeast","NJ",85.8047291769507,90.5188142586582,96.4938558323275,90.6968367148224
+"337",30,15,0,0,"All other causes","White","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",104.965877191843,108.286704228025,111.444454953511,108.294188400043
+"338",30,15,0,0,"Cancers","White","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",284.803930017495,289.7701369999,294.615189681689,289.762934235825
+"339",30,15,0,0,"Cardiovascular","White","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",658.709382223771,668.671047404342,678.792549248551,668.672188777024
+"340",30,15,0,0,"Communicable","White","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",49.3127719234381,52.202730834303,54.9869435268085,52.1924188347583
+"341",30,15,0,0,"Injuries","White","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",59.9304287535948,61.8798924426615,63.7533652299315,61.8630208455025
+"342",30,15,0,0,"Non-communicable","White","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",103.776259203127,106.547758228517,109.255978766334,106.551863121755
+"343",30,15,0,1,"All other causes","White","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",76.6918256758062,78.6983222406873,80.63792620159,78.6843704222267
+"344",30,15,0,1,"Cancers","White","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",183.166890578193,185.963759967838,189.093068802941,186.028177026782
+"345",30,15,0,1,"Cardiovascular","White","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",422.033388625058,428.132606790116,433.981936635734,428.02505525637
+"346",30,15,0,1,"Communicable","White","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",30.3606569945573,31.9367945465026,33.3715180855386,31.9172737008433
+"347",30,15,0,1,"Injuries","White","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",23.3853680438404,24.272256449565,25.2061743771092,24.266135930027
+"348",30,15,0,1,"Non-communicable","White","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",54.715865175449,56.2649940226743,57.8718802199866,56.2728606360547
+"349",30,15,1,0,"All other causes","Black","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",192.211920185727,201.915207441059,212.405148998542,201.985267140518
+"350",30,15,1,0,"Cancers","Black","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",386.452240328168,402.210328645642,417.75172451105,402.178427449532
+"351",30,15,1,0,"Cardiovascular","Black","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",661.441410035045,688.001153043623,712.059216867414,687.626804462195
+"352",30,15,1,0,"Communicable","Black","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",82.298366414335,90.5621561938742,99.1682708036431,90.5360866312827
+"353",30,15,1,0,"Injuries","Black","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",105.482108755299,111.294745059553,117.026967201037,111.271911364604
+"354",30,15,1,0,"Non-communicable","Black","Male","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",139.59370916921,147.753943905767,156.719349038344,147.800760546752
+"355",30,15,1,1,"All other causes","Black","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",123.672903931091,129.30965261441,135.335675710103,129.346609161315
+"356",30,15,1,1,"Cancers","Black","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",203.134186793109,210.731210342346,218.924623085432,210.632416520402
+"357",30,15,1,1,"Cardiovascular","Black","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",474.335352763516,492.268580985986,509.538378876414,492.12463089014
+"358",30,15,1,1,"Communicable","Black","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",41.3713348104911,45.7521918164983,50.6920052188266,45.8151354507192
+"359",30,15,1,1,"Injuries","Black","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",31.9375510774667,34.4080762706711,36.9973359121053,34.4434693442198
+"360",30,15,1,1,"Non-communicable","Black","Female","New Jersey",1983,"Mid-Atlantic","Northeast","NJ",88.4522882503502,93.4719072522093,98.846435866214,93.5629768207256
+"361",30,16,0,0,"All other causes","White","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",109.673469785481,112.975755371642,116.07213313275,112.947147562723
+"362",30,16,0,0,"Cancers","White","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",286.223696815915,291.138067175218,296.086747139059,291.074163578824
+"363",30,16,0,0,"Cardiovascular","White","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",636.775912749793,646.320092302762,655.932887152073,646.326828796575
+"364",30,16,0,0,"Communicable","White","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",55.2760261187621,58.563965931379,61.5217168766487,58.5151883588585
+"365",30,16,0,0,"Injuries","White","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",58.4766004027202,60.2694676297416,62.0934435680555,60.237698487599
+"366",30,16,0,0,"Non-communicable","White","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",104.831600218017,107.567274232287,110.449429386461,107.560482234185
+"367",30,16,0,1,"All other causes","White","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",78.9514591782336,80.9238628535133,82.8602623968875,80.8948598090519
+"368",30,16,0,1,"Cancers","White","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",182.958406418476,186.188158077698,189.146083884286,186.151285699423
+"369",30,16,0,1,"Cardiovascular","White","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",408.993561305426,414.976245364139,420.642602049782,415.011726740318
+"370",30,16,0,1,"Communicable","White","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",33.9811358294141,35.5156637640628,37.2027680207368,35.565521393787
+"371",30,16,0,1,"Injuries","White","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",22.8752841405065,23.7784803641152,24.6894515072264,23.7701588317065
+"372",30,16,0,1,"Non-communicable","White","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",56.1936561811991,57.6972287186814,59.4041985898082,57.7410861793269
+"373",30,16,1,0,"All other causes","Black","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",201.61270064685,212.25736364478,223.379352966445,212.325156365823
+"374",30,16,1,0,"Cancers","Black","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",390.803341337127,406.074555554432,423.063557546517,406.347398799308
+"375",30,16,1,0,"Cardiovascular","Black","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",638.14711927595,661.702578840159,685.002576767435,661.709768817979
+"376",30,16,1,0,"Communicable","Black","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",98.9238195222809,108.25965406889,118.189886174682,108.446167325986
+"377",30,16,1,0,"Injuries","Black","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",102.754378532252,108.854189329614,114.894985500882,108.867497211809
+"378",30,16,1,0,"Non-communicable","Black","Male","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",141.90041468928,150.009048666626,158.483096552603,150.061796188928
+"379",30,16,1,1,"All other causes","Black","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",127.413206073324,132.930892100701,138.884518915371,132.962391249112
+"380",30,16,1,1,"Cancers","Black","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",203.438397246539,210.644923296879,219.028713357597,210.790486336826
+"381",30,16,1,1,"Cardiovascular","Black","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",464.455810124798,482.600853647653,500.367190102302,482.601023400167
+"382",30,16,1,1,"Communicable","Black","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",47.6620569964069,52.3870346648935,57.5913793064462,52.4450533609437
+"383",30,16,1,1,"Injuries","Black","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",31.4222172926718,34.0182319922569,36.8080640926378,34.0764902370845
+"384",30,16,1,1,"Non-communicable","Black","Female","New Jersey",1984,"Mid-Atlantic","Northeast","NJ",90.6418682360322,95.6767178820435,101.393765233823,95.7867528765015
+"385",30,17,0,0,"All other causes","White","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",112.780946042442,115.99320376994,119.424256802144,116.014880510884
+"386",30,17,0,0,"Cancers","White","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",286.977864398951,291.863080302772,296.860104639888,291.803780261167
+"387",30,17,0,0,"Cardiovascular","White","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",627.857552019138,636.975529276453,646.666231732408,637.012126474205
+"388",30,17,0,0,"Communicable","White","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",63.5140828924222,66.7021071310623,70.0422389330982,66.7302843491147
+"389",30,17,0,0,"Injuries","White","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",58.329467762893,60.1098880530474,61.9054544618669,60.0866503360375
+"390",30,17,0,0,"Non-communicable","White","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",106.078752513052,108.928965043025,111.685474757909,108.935318903138
+"391",30,17,0,1,"All other causes","White","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",80.1536672845612,82.0819222932506,84.0900231629355,82.0953519412893
+"392",30,17,0,1,"Cancers","White","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",183.878943697413,186.820338657768,189.884355645268,186.880342515605
+"393",30,17,0,1,"Cardiovascular","White","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",397.438830796122,402.862723875864,408.309620232096,402.921838851736
+"394",30,17,0,1,"Communicable","White","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",35.4572899125372,37.0822404761366,38.7678478856795,37.1117733989826
+"395",30,17,0,1,"Injuries","White","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",22.273217353184,23.1122998442908,24.0175252976514,23.122817012874
+"396",30,17,0,1,"Non-communicable","White","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",57.8278873487146,59.3774523532202,60.9803759535481,59.3869073011737
+"397",30,17,1,0,"All other causes","Black","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",220.023868778418,230.73387694033,242.11422623339,230.675322367098
+"398",30,17,1,0,"Cancers","Black","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",384.381047825234,398.55629625849,412.995905944318,398.528748256395
+"399",30,17,1,0,"Cardiovascular","Black","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",637.274360296805,663.325585019405,688.534786800552,663.203657785368
+"400",30,17,1,0,"Communicable","Black","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",117.847875358594,128.194304986199,139.874760645779,128.213834688433
+"401",30,17,1,0,"Injuries","Black","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",100.631820359563,106.127905758502,111.67918142871,106.158357064992
+"402",30,17,1,0,"Non-communicable","Black","Male","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",144.871565828736,153.265925430513,162.463397327979,153.28710162999
+"403",30,17,1,1,"All other causes","Black","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",131.754821469709,137.192205589431,143.219273443134,137.318596710282
+"404",30,17,1,1,"Cancers","Black","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",202.139745089233,209.683085842426,217.412572616497,209.780104022229
+"405",30,17,1,1,"Cardiovascular","Black","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",458.945986261556,476.559546829013,497.033470703395,476.910793880961
+"406",30,17,1,1,"Communicable","Black","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",52.3234556219372,57.6065081028711,63.1044586398186,57.6539402845491
+"407",30,17,1,1,"Injuries","Black","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",31.747929781478,34.0468415884288,36.700338969715,34.0853770871256
+"408",30,17,1,1,"Non-communicable","Black","Female","New Jersey",1985,"Mid-Atlantic","Northeast","NJ",92.4063192682352,97.6425444177954,103.116069138307,97.675468290591
+"409",30,18,0,0,"All other causes","White","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",117.064881096536,120.489201043747,123.946606077525,120.470859912757
+"410",30,18,0,0,"Cancers","White","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",285.571617326896,290.459210295032,295.272647190262,290.462411829329
+"411",30,18,0,0,"Cardiovascular","White","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",600.400354415447,609.239450474652,618.292065552459,609.30955071819
+"412",30,18,0,0,"Communicable","White","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",64.8537724781305,68.184741658801,71.0327235139823,68.0663761592976
+"413",30,18,0,0,"Injuries","White","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",58.1646838070121,59.9800296674355,61.8397930377402,59.9895137817167
+"414",30,18,0,0,"Non-communicable","White","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",106.535299242364,109.389708058252,112.141433903437,109.389966578893
+"415",30,18,0,1,"All other causes","White","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",82.0846135940101,83.9800125171702,86.0243858119899,83.9725109449574
+"416",30,18,0,1,"Cancers","White","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",184.809150381659,187.758951841635,190.729233644136,187.764179944057
+"417",30,18,0,1,"Cardiovascular","White","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",396.899804742262,402.512372921915,407.978258681452,402.548572340941
+"418",30,18,0,1,"Communicable","White","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",39.7317081856686,41.4073273717129,43.2497319355573,41.4449397150965
+"419",30,18,0,1,"Injuries","White","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",21.9118091398046,22.7381399252033,23.6007227829115,22.7432077325646
+"420",30,18,0,1,"Non-communicable","White","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",59.2749043136654,60.9657261772689,62.6696839306285,60.9817605348888
+"421",30,18,1,0,"All other causes","Black","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",234.812295779101,246.212075161994,258.357954899572,246.400603613793
+"422",30,18,1,0,"Cancers","Black","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",374.04231869004,389.469379725308,405.817319660841,389.711732109672
+"423",30,18,1,0,"Cardiovascular","Black","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",622.230115712184,647.486437652688,671.917080499593,647.043123092719
+"424",30,18,1,0,"Communicable","Black","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",132.911749551201,144.402602749383,156.518263383338,144.47648985024
+"425",30,18,1,0,"Injuries","Black","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",98.8753840652305,104.217591809861,109.552643871106,104.222347565954
+"426",30,18,1,0,"Non-communicable","Black","Male","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",146.459901651061,154.973209864198,163.227449528412,154.973923037754
+"427",30,18,1,1,"All other causes","Black","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",135.051001736972,140.748922242013,147.221659453248,140.89656808931
+"428",30,18,1,1,"Cancers","Black","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",200.732185485332,207.665292432537,214.315141670659,207.620020627691
+"429",30,18,1,1,"Cardiovascular","Black","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",445.665971730765,461.903999482992,480.395044161075,461.952077830085
+"430",30,18,1,1,"Communicable","Black","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",58.788558798289,63.7798651334525,69.3119067308405,63.8301940796211
+"431",30,18,1,1,"Injuries","Black","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",31.4733667003979,33.7504232223106,36.4107936408657,33.7817417556515
+"432",30,18,1,1,"Non-communicable","Black","Female","New Jersey",1986,"Mid-Atlantic","Northeast","NJ",93.3528289149165,98.9211204516353,104.386616208123,98.8928131710232
+"433",30,19,0,0,"All other causes","White","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",116.532399934678,119.759580000056,123.208423366456,119.804942663181
+"434",30,19,0,0,"Cancers","White","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",285.909078321276,291.027388271605,296.122303239242,291.009679560903
+"435",30,19,0,0,"Cardiovascular","White","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",586.571065048169,595.353215399751,604.053862607879,595.265270666504
+"436",30,19,0,0,"Communicable","White","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",69.7901336489487,72.7601608751502,76.0988067422642,72.8732264702349
+"437",30,19,0,0,"Injuries","White","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",58.1031917739086,59.9525904758812,61.9031108179082,59.9793561520477
+"438",30,19,0,0,"Non-communicable","White","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",106.776800276247,109.715254145337,112.633343608544,109.722061837972
+"439",30,19,0,1,"All other causes","White","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",83.6524878378228,85.4743827008373,87.5165607601163,85.5001352298595
+"440",30,19,0,1,"Cancers","White","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",184.300047711979,187.100970238448,189.962470508371,187.157043911275
+"441",30,19,0,1,"Cardiovascular","White","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",380.514096388458,385.572015566021,391.099552538038,385.654567689204
+"442",30,19,0,1,"Communicable","White","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",41.2301036115886,42.9227540974525,44.685929091112,42.9398428406809
+"443",30,19,0,1,"Injuries","White","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",22.1165438542399,22.9530499468702,23.8921065114555,22.9626246359007
+"444",30,19,0,1,"Non-communicable","White","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",61.2422565199348,62.9735266924214,64.7568777122129,62.9725077427355
+"445",30,19,1,0,"All other causes","Black","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",227.197143576607,238.496066680308,250.492256756252,238.530061137232
+"446",30,19,1,0,"Cancers","Black","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",371.92695769596,386.745975094556,402.08586386016,386.41205044408
+"447",30,19,1,0,"Cardiovascular","Black","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",601.894190990726,625.051495944306,650.012399807909,625.642372644911
+"448",30,19,1,0,"Communicable","Black","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",178.826363876303,191.722075866427,204.010679636742,191.612351732083
+"449",30,19,1,0,"Injuries","Black","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",97.4453608226411,102.644784554151,107.959739552218,102.692454566633
+"450",30,19,1,0,"Non-communicable","Black","Male","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",146.969064471641,155.743741141736,164.289904072854,155.467756732853
+"451",30,19,1,1,"All other causes","Black","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",138.675773665364,144.473438771603,151.271565158492,144.595648180987
+"452",30,19,1,1,"Cancers","Black","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",199.241002118695,206.303679102373,213.90712303,206.306708489099
+"453",30,19,1,1,"Cardiovascular","Black","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",433.853400690421,450.399431494638,468.494564931677,450.682364287357
+"454",30,19,1,1,"Communicable","Black","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",69.0273114932757,74.7601230447205,81.0718452197377,74.8639535067342
+"455",30,19,1,1,"Injuries","Black","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",31.2683551731022,33.6121416851344,36.0931446914897,33.6351289614457
+"456",30,19,1,1,"Non-communicable","Black","Female","New Jersey",1987,"Mid-Atlantic","Northeast","NJ",94.695959366073,99.7657650582351,105.342853958659,99.8025006975975
+"457",30,20,0,0,"All other causes","White","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",117.77742021742,121.034512760072,124.706555230408,121.060734893723
+"458",30,20,0,0,"Cancers","White","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",283.324989776366,288.046901900007,292.964360658732,288.10434904149
+"459",30,20,0,0,"Cardiovascular","White","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",576.237122054392,585.652685920452,594.712815942529,585.503634734045
+"460",30,20,0,0,"Communicable","White","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",77.3573414259141,80.5761027170246,84.0427405468315,80.5722425566075
+"461",30,20,0,0,"Injuries","White","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",55.9964632321752,57.8969218285043,59.9189982150236,57.9018745180878
+"462",30,20,0,0,"Non-communicable","White","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",107.264500821296,109.907134221565,112.643722717482,109.900764862773
+"463",30,20,0,1,"All other causes","White","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",84.1481611417301,86.1734173164961,88.3164503708595,86.1823553500631
+"464",30,20,0,1,"Cancers","White","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",186.800380062007,189.689352907831,192.449236017259,189.646280370152
+"465",30,20,0,1,"Cardiovascular","White","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",376.714449546644,381.85626775136,387.317996591359,381.931126220483
+"466",30,20,0,1,"Communicable","White","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",45.7050242558939,47.4662831417663,49.3985859647194,47.5196195546774
+"467",30,20,0,1,"Injuries","White","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",21.8384328124325,22.7392174241953,23.6724081878433,22.7351535889553
+"468",30,20,0,1,"Non-communicable","White","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",62.8322487969073,64.4699451013631,66.2317310257673,64.4809476019948
+"469",30,20,1,0,"All other causes","Black","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",223.091259466579,234.46647330991,246.255680170703,234.589163215955
+"470",30,20,1,0,"Cancers","Black","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",375.593059617583,389.59420898464,405.091382484752,389.715410233017
+"471",30,20,1,0,"Cardiovascular","Black","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",586.076613878367,606.976158611307,629.18988788837,607.375852983559
+"472",30,20,1,0,"Communicable","Black","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",193.646697337102,206.601900762665,220.240417410186,206.761483984203
+"473",30,20,1,0,"Injuries","Black","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",96.404603314494,101.870267219438,107.326507564459,101.86444303605
+"474",30,20,1,0,"Non-communicable","Black","Male","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",145.391944204223,154.549931813435,162.336801306987,154.361498156814
+"475",30,20,1,1,"All other causes","Black","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",140.182039024651,145.93386077402,152.669621027873,146.116139763316
+"476",30,20,1,1,"Cancers","Black","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",198.903798424353,206.241744762293,213.963449772139,206.364908808488
+"477",30,20,1,1,"Cardiovascular","Black","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",412.003799090913,427.89764772747,443.920577340262,427.955614406587
+"478",30,20,1,1,"Communicable","Black","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",81.0742413357747,87.5851787253597,94.0339347805094,87.5809586964098
+"479",30,20,1,1,"Injuries","Black","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",31.1979887107222,33.4568548400231,35.8495429606176,33.4750095314376
+"480",30,20,1,1,"Non-communicable","Black","Female","New Jersey",1988,"Mid-Atlantic","Northeast","NJ",96.0510643872798,100.965495290933,106.496750700407,101.07446957024
+"481",30,21,0,0,"All other causes","White","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",114.814939658385,118.334552858288,121.758355590385,118.379297751455
+"482",30,21,0,0,"Cancers","White","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",285.828313768575,290.458135401675,295.380109789796,290.532749321892
+"483",30,21,0,0,"Cardiovascular","White","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",523.844190280182,532.044723236192,540.479739918217,532.11670579124
+"484",30,21,0,0,"Communicable","White","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",76.5801940530932,79.8554161951261,83.2751487349401,79.8678345280002
+"485",30,21,0,0,"Injuries","White","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",53.0895953721402,54.7986747578228,56.6335487100763,54.8140511228258
+"486",30,21,0,0,"Non-communicable","White","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",109.570397692481,112.427215046126,115.252530367315,112.40160412386
+"487",30,21,0,1,"All other causes","White","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",87.076293527964,89.0496686299098,91.2237505789835,89.0959077738867
+"488",30,21,0,1,"Cancers","White","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",190.07400330477,192.907282039123,195.643516552998,192.865841113302
+"489",30,21,0,1,"Cardiovascular","White","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",340.117756838781,345.393177798023,350.382917315849,345.35752741818
+"490",30,21,0,1,"Communicable","White","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",45.1785894510647,47.0186897601628,48.8010612370948,47.0209422685433
+"491",30,21,0,1,"Injuries","White","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",21.3827122994013,22.2870506389295,23.0414246222663,22.2735533604098
+"492",30,21,0,1,"Non-communicable","White","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",67.4631683638399,69.402588875613,71.3159347515049,69.4046796228654
+"493",30,21,1,0,"All other causes","Black","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",214.684176945137,224.876513287581,235.930713643549,224.916122180171
+"494",30,21,1,0,"Cancers","Black","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",384.12848922293,399.465520567505,414.49172436826,399.389278304849
+"495",30,21,1,0,"Cardiovascular","Black","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",552.707817218978,573.531693958512,596.774337609287,573.711632884318
+"496",30,21,1,0,"Communicable","Black","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",216.282332370337,229.59442306456,243.825468577796,229.511581268926
+"497",30,21,1,0,"Injuries","Black","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",92.624684709955,97.8453977052399,103.220395039726,97.8533205160831
+"498",30,21,1,0,"Non-communicable","Black","Male","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",146.919061077864,155.70906388244,164.529762227817,155.765352930415
+"499",30,21,1,1,"All other causes","Black","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",140.112900161738,146.16628853013,153.020196297828,146.255288577952
+"500",30,21,1,1,"Cancers","Black","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",202.128371299757,208.981380962162,215.701592965293,208.987453521121
+"501",30,21,1,1,"Cardiovascular","Black","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",387.352872897701,403.185894606475,418.620531517243,403.135379492453
+"502",30,21,1,1,"Communicable","Black","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",91.1106136171819,98.0800725908219,105.02864443034,98.0822953814099
+"503",30,21,1,1,"Injuries","Black","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",30.8264115520433,32.9930270958867,35.2171138884702,33.0027168410015
+"504",30,21,1,1,"Non-communicable","Black","Female","New Jersey",1989,"Mid-Atlantic","Northeast","NJ",99.1145962121811,104.704431022606,110.544779263077,104.697631035634
+"505",30,22,0,0,"All other causes","White","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",114.863408895407,118.246322606277,121.881767036788,118.243782515027
+"506",30,22,0,0,"Cancers","White","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",285.08191444815,290.213158487293,295.319871687361,290.233430198692
+"507",30,22,0,0,"Cardiovascular","White","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",494.988081371509,503.187229891312,511.405251963682,503.188987791146
+"508",30,22,0,0,"Communicable","White","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",79.9874508691998,83.330908901397,86.8180480669463,83.3427688694371
+"509",30,22,0,0,"Injuries","White","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",52.26741210938,53.9880846517828,55.8002776057976,53.9932774160519
+"510",30,22,0,0,"Non-communicable","White","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",108.555087342622,111.399899092349,114.182547205654,111.417999489957
+"511",30,22,0,1,"All other causes","White","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",85.0350166578793,87.0101237934678,89.0258795704536,87.0395649432689
+"512",30,22,0,1,"Cancers","White","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",188.985952471197,191.877250137007,194.608219467123,191.857791665526
+"513",30,22,0,1,"Cardiovascular","White","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",324.724313148601,329.549208066628,334.266416666672,329.480045401532
+"514",30,22,0,1,"Communicable","White","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",46.620661283186,48.5833027276344,50.5162683066926,48.5763523035014
+"515",30,22,0,1,"Injuries","White","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",20.7365565320766,21.5936413155532,22.4510418991372,21.5761696435438
+"516",30,22,0,1,"Non-communicable","White","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",65.8434624813663,67.6753527747855,69.4541603057612,67.6420423437603
+"517",30,22,1,0,"All other causes","Black","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",205.295777494488,214.855875132336,226.705887147766,215.187340573918
+"518",30,22,1,0,"Cancers","Black","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",384.032132764915,398.438684819189,414.234775488808,398.67223960355
+"519",30,22,1,0,"Cardiovascular","Black","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",525.519440929749,545.612160653944,566.105752036109,545.961103929025
+"520",30,22,1,0,"Communicable","Black","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",217.23458466408,231.760859382464,245.275123545608,231.714216246553
+"521",30,22,1,0,"Injuries","Black","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",91.9578829813953,96.7506638858367,102.107960085876,96.7373987096764
+"522",30,22,1,0,"Non-communicable","Black","Male","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",147.145593803581,155.361723360009,164.052285511035,155.405216860601
+"523",30,22,1,1,"All other causes","Black","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",137.567786362294,143.881587982791,150.184834960973,143.806454949696
+"524",30,22,1,1,"Cancers","Black","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",204.755441532618,211.843293335869,219.000829449354,211.938264047534
+"525",30,22,1,1,"Cardiovascular","Black","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",385.951097773681,399.84392445748,413.977101422204,399.781733723164
+"526",30,22,1,1,"Communicable","Black","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",96.828654011516,103.703166988671,110.821789703046,103.743305728546
+"527",30,22,1,1,"Injuries","Black","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",30.2977453247461,32.3315341552077,34.7589364530746,32.3984766157518
+"528",30,22,1,1,"Non-communicable","Black","Female","New Jersey",1990,"Mid-Atlantic","Northeast","NJ",100.243805160842,105.709633569427,111.51245606061,105.762016970602
+"529",30,23,0,0,"All other causes","White","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",113.506878792303,116.762875509731,120.013954110112,116.765407975502
+"530",30,23,0,0,"Cancers","White","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",281.391315301497,286.315716573183,291.027985752369,286.312618413022
+"531",30,23,0,0,"Cardiovascular","White","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",485.399656470109,492.953182463909,500.01736552204,492.92755716034
+"532",30,23,0,0,"Communicable","White","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",79.709197949749,82.8779982526333,86.3561894643858,82.9057260848228
+"533",30,23,0,0,"Injuries","White","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",51.6957811323141,53.5349507016601,55.2651139172998,53.5280023030824
+"534",30,23,0,0,"Non-communicable","White","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",108.533428219773,111.379922599288,114.172335148583,111.411875166522
+"535",30,23,0,1,"All other causes","White","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",83.9542602420448,85.9740654337826,87.9690612321969,85.9689398161299
+"536",30,23,0,1,"Cancers","White","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",189.061123942713,191.849400736317,194.892318357869,191.923934937739
+"537",30,23,0,1,"Cardiovascular","White","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",310.490587406047,315.36768924505,320.311684457512,315.383139265982
+"538",30,23,0,1,"Communicable","White","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",44.9450348989863,46.683894313604,48.5304107801348,46.680187098168
+"539",30,23,0,1,"Injuries","White","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",20.2810207878297,21.143294154921,21.9652483805446,21.134281753269
+"540",30,23,0,1,"Non-communicable","White","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",64.6164432949783,66.3905243794339,68.0411163904962,66.3829409757776
+"541",30,23,1,0,"All other causes","Black","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",204.341232322087,214.861522369856,227.520383430498,214.926743812275
+"542",30,23,1,0,"Cancers","Black","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",381.899568533621,395.999265833012,411.228301995961,396.177536207016
+"543",30,23,1,0,"Cardiovascular","Black","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",526.236106662369,546.131603355505,565.975951527689,546.118672754526
+"544",30,23,1,0,"Communicable","Black","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",230.033327993937,243.617760915023,258.75222763803,243.85240557928
+"545",30,23,1,0,"Injuries","Black","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",89.4272360773732,94.1872234921951,99.0282913591154,94.1796184332134
+"546",30,23,1,0,"Non-communicable","Black","Male","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",149.124944057682,157.083304492642,165.331519434484,157.124080270052
+"547",30,23,1,1,"All other causes","Black","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",134.072948352038,139.745559998735,145.720907235942,139.772924909039
+"548",30,23,1,1,"Cancers","Black","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",209.406759196857,216.750138805177,224.43319588895,216.861133825286
+"549",30,23,1,1,"Cardiovascular","Black","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",376.834576243184,391.990658038324,406.490082330419,392.038693913975
+"550",30,23,1,1,"Communicable","Black","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",102.765443662812,110.352979360844,117.584754738881,110.203737605177
+"551",30,23,1,1,"Injuries","Black","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",29.3100141104719,31.6204899909883,33.7977861718459,31.6045823061206
+"552",30,23,1,1,"Non-communicable","Black","Female","New Jersey",1991,"Mid-Atlantic","Northeast","NJ",100.159503137858,105.56575303297,111.593164891747,105.605566016721
+"553",30,24,0,0,"All other causes","White","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",113.523225388674,116.523230726916,120.119711962776,116.577788812603
+"554",30,24,0,0,"Cancers","White","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",276.159291572363,280.973290080856,285.689552747929,280.969216490893
+"555",30,24,0,0,"Cardiovascular","White","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",477.713685276535,485.294018247027,494.07920757402,485.556908288369
+"556",30,24,0,0,"Communicable","White","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",81.4032235654409,84.5903127746879,88.3285127333159,84.6471118148455
+"557",30,24,0,0,"Injuries","White","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",51.2913962863404,53.0437330895842,54.7325744116772,53.0408035884303
+"558",30,24,0,0,"Non-communicable","White","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",107.949680531855,110.464172115041,113.419863742735,110.524509261855
+"559",30,24,0,1,"All other causes","White","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",82.8893833685776,84.9500054755058,87.0869842854354,84.9857854295741
+"560",30,24,0,1,"Cancers","White","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",186.90194271576,189.764747112403,192.718206691015,189.748206713781
+"561",30,24,0,1,"Cardiovascular","White","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",308.340968271573,313.11960804213,317.828734676856,313.121234526502
+"562",30,24,0,1,"Communicable","White","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",42.8458267953206,44.4369404959534,46.2448989706965,44.4758531605425
+"563",30,24,0,1,"Injuries","White","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",19.9346257454859,20.7368877118711,21.5722550184685,20.7494508941137
+"564",30,24,0,1,"Non-communicable","White","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",66.1781096636176,67.9297461421209,69.787814578931,67.9418793627308
+"565",30,24,1,0,"All other causes","Black","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",202.78126873866,212.764133661171,223.767656512356,213.07993573076
+"566",30,24,1,0,"Cancers","Black","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",373.473800586344,388.615661499445,403.8337717003,388.56891579445
+"567",30,24,1,0,"Cardiovascular","Black","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",515.747022065353,534.091660345747,555.26279416505,534.291160213907
+"568",30,24,1,0,"Communicable","Black","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",232.364007684264,246.139307324813,260.296962209191,245.925766463152
+"569",30,24,1,0,"Injuries","Black","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",89.3423640399054,93.851569149809,98.7360251849519,93.9033571263751
+"570",30,24,1,0,"Non-communicable","Black","Male","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",151.56977964661,159.953242460846,168.882829418603,160.1012653531
+"571",30,24,1,1,"All other causes","Black","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",132.320900844938,138.712480994104,144.59887729059,138.63344668833
+"572",30,24,1,1,"Cancers","Black","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",209.109467751938,216.430368134546,223.893501606728,216.403066555571
+"573",30,24,1,1,"Cardiovascular","Black","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",361.17841618674,375.943539692591,389.388387709223,375.555069951881
+"574",30,24,1,1,"Communicable","Black","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",103.193585956815,109.823029753656,117.022591161855,109.959685199029
+"575",30,24,1,1,"Injuries","Black","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",28.5280570061641,30.7221973751555,32.975866731841,30.7428904887676
+"576",30,24,1,1,"Non-communicable","Black","Female","New Jersey",1992,"Mid-Atlantic","Northeast","NJ",100.710373610741,106.236891837581,111.655550646104,106.247125155666
+"577",30,25,0,0,"All other causes","White","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",110.986398911762,113.974647257274,117.440908320521,114.010095268215
+"578",30,25,0,0,"Cancers","White","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",276.276302250619,281.139155710987,285.906269181809,281.199772696703
+"579",30,25,0,0,"Cardiovascular","White","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",465.193877787406,472.706282977024,481.093258542121,472.734625374472
+"580",30,25,0,0,"Communicable","White","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",82.1270270794562,85.4897339530524,88.9831957792185,85.5171856458913
+"581",30,25,0,0,"Injuries","White","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",52.0220802564201,53.6233589825847,55.4159755662508,53.6590980506552
+"582",30,25,0,0,"Non-communicable","White","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",107.341476145254,109.944601357595,112.886693043658,109.968252650458
+"583",30,25,0,1,"All other causes","White","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",83.1809684493687,85.2075377546648,87.1840937328961,85.2266449881704
+"584",30,25,0,1,"Cancers","White","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",186.953947986666,189.548832618445,192.330284169912,189.577141512728
+"585",30,25,0,1,"Cardiovascular","White","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",304.080008167606,308.558216105323,312.822084083691,308.604533977555
+"586",30,25,0,1,"Communicable","White","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",46.7524557842094,48.4811091138856,50.2183715986333,48.4654733620605
+"587",30,25,0,1,"Injuries","White","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",20.0254379271419,20.7775812830287,21.6231017752627,20.7956560908332
+"588",30,25,0,1,"Non-communicable","White","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",69.3107387591514,71.080699665912,72.9507172506501,71.1197699180879
+"589",30,25,1,0,"All other causes","Black","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",199.800456829808,210.61972802167,221.521602445062,210.524867622465
+"590",30,25,1,0,"Cancers","Black","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",374.545432391267,388.921680848374,403.955147728106,389.076837408449
+"591",30,25,1,0,"Cardiovascular","Black","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",510.623588840349,530.246982394167,551.408927534337,530.030642648063
+"592",30,25,1,0,"Communicable","Black","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",257.5940097429,273.193549913459,287.948310139016,273.151133579694
+"593",30,25,1,0,"Injuries","Black","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",91.9139177182713,96.6245733188712,101.725540854746,96.6303740524367
+"594",30,25,1,0,"Non-communicable","Black","Male","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",153.117413766852,161.271101398646,169.838620172151,161.308325055517
+"595",30,25,1,1,"All other causes","Black","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",130.651313533682,136.434817275054,142.708784751034,136.465608187519
+"596",30,25,1,1,"Cancers","Black","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",211.280353471019,217.938221834062,225.008398916708,217.959516736917
+"597",30,25,1,1,"Cardiovascular","Black","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",356.88146282713,370.281603779714,384.964430971172,370.291802152714
+"598",30,25,1,1,"Communicable","Black","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",117.744556867356,124.979880948799,133.299417822668,125.127747722414
+"599",30,25,1,1,"Injuries","Black","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",28.3007991644413,30.3479901219682,32.5397442440101,30.3464633964228
+"600",30,25,1,1,"Non-communicable","Black","Female","New Jersey",1993,"Mid-Atlantic","Northeast","NJ",101.863107509207,107.204454283692,113.249418548388,107.369697180019
+"601",30,26,0,0,"All other causes","White","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",108.58579997941,111.576254599498,114.842420605445,111.631434434897
+"602",30,26,0,0,"Cancers","White","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",274.144922762374,278.592172307001,283.252854786388,278.552828735527
+"603",30,26,0,0,"Cardiovascular","White","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",454.609458998727,462.041855569152,469.462679182237,462.012214311382
+"604",30,26,0,0,"Communicable","White","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",80.5109636550457,83.4633225677792,86.7485381713456,83.5297852674693
+"605",30,26,0,0,"Injuries","White","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",53.6264587092846,55.2353704283777,57.1186721375422,55.2592857999683
+"606",30,26,0,0,"Non-communicable","White","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",106.989928237059,109.519456523187,112.173245788786,109.523975488708
+"607",30,26,0,1,"All other causes","White","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",82.1462014018386,84.1396063091679,86.1632685376694,84.1218606316679
+"608",30,26,0,1,"Cancers","White","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",185.749909711353,188.457080796457,191.330173254482,188.466087976749
+"609",30,26,0,1,"Cardiovascular","White","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",295.333029274868,299.555726504701,303.829051291346,299.532408866772
+"610",30,26,0,1,"Communicable","White","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",43.3742411776459,45.0592590385835,46.7349285237153,45.0629844413672
+"611",30,26,0,1,"Injuries","White","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",20.1292766220764,20.9303963778445,21.7567231955788,20.927671468863
+"612",30,26,0,1,"Non-communicable","White","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",70.681365233862,72.34969332475,74.2669800454417,72.3827509604966
+"613",30,26,1,0,"All other causes","Black","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",189.576398894978,199.612485181388,210.294398796352,199.802289965957
+"614",30,26,1,0,"Cancers","Black","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",368.756370221222,382.421788526018,396.525843057957,382.436454747688
+"615",30,26,1,0,"Cardiovascular","Black","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",492.79512155798,512.802280988364,529.955514367338,512.465711654878
+"616",30,26,1,0,"Communicable","Black","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",259.88418279532,273.763013787679,287.650713173377,273.848170511896
+"617",30,26,1,0,"Injuries","Black","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",93.1606731386629,98.2663078713029,103.544034434393,98.2937907366861
+"618",30,26,1,0,"Non-communicable","Black","Male","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",153.621099269688,162.151651865044,170.550885356006,162.028183189812
+"619",30,26,1,1,"All other causes","Black","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",127.709798388047,133.751121324867,139.167737273218,133.704396226266
+"620",30,26,1,1,"Cancers","Black","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",209.412678141122,216.251780775902,223.404533956058,216.332023327411
+"621",30,26,1,1,"Cardiovascular","Black","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",356.365692946992,370.567336132919,383.105384109625,370.31822774984
+"622",30,26,1,1,"Communicable","Black","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",120.229268481282,127.912875235185,135.419442060451,127.869377293378
+"623",30,26,1,1,"Injuries","Black","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",27.84062170391,29.8226670224095,31.9912585724186,29.8065166932214
+"624",30,26,1,1,"Non-communicable","Black","Female","New Jersey",1994,"Mid-Atlantic","Northeast","NJ",104.725799492992,109.955652919936,115.37033316716,109.986408624848
+"625",30,27,0,0,"All other causes","White","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",109.161489646407,112.053099952748,115.085850045737,112.076557530503
+"626",30,27,0,0,"Cancers","White","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",267.878831241635,272.722550110895,277.385142725475,272.682099073942
+"627",30,27,0,0,"Cardiovascular","White","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",445.282416381596,452.114776789378,459.208370331803,452.164324295632
+"628",30,27,0,0,"Communicable","White","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",80.9278197848578,83.9093615255764,87.2541642587806,83.9612395654924
+"629",30,27,0,0,"Injuries","White","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",53.4097723096637,55.0463375960759,56.880098653746,55.0795087866367
+"630",30,27,0,0,"Non-communicable","White","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",108.015862433058,110.689651395495,113.337643358411,110.671725506178
+"631",30,27,0,1,"All other causes","White","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",82.4975235897234,84.4650078483185,86.2957571656536,84.4512622959477
+"632",30,27,0,1,"Cancers","White","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",184.333922637525,187.293967207871,190.277089721643,187.289015680259
+"633",30,27,0,1,"Cardiovascular","White","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",299.319637405114,303.662704378992,307.631445562546,303.535316459107
+"634",30,27,0,1,"Communicable","White","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",46.0675587621589,47.8146955306285,49.6073889935127,47.828271850203
+"635",30,27,0,1,"Injuries","White","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",20.3339447173175,21.0810134946323,21.8402872461734,21.0841394300418
+"636",30,27,0,1,"Non-communicable","White","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",72.1056572126169,73.9187779593245,75.8861018952762,73.925323192452
+"637",30,27,1,0,"All other causes","Black","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",181.154330260421,190.521391468756,201.017379379752,190.552061227182
+"638",30,27,1,0,"Cancers","Black","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",366.057958018123,380.913293686377,394.683773652748,380.859153570572
+"639",30,27,1,0,"Cardiovascular","Black","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",485.545041650753,505.086767441611,523.059576809432,504.931853869606
+"640",30,27,1,0,"Communicable","Black","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",248.981164721523,263.920669458905,278.714107682659,263.856296199483
+"641",30,27,1,0,"Injuries","Black","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",93.4790154028449,98.6450366534684,103.798303431169,98.6132476235716
+"642",30,27,1,0,"Non-communicable","Black","Male","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",154.282964079512,162.705768682725,171.558822569952,162.697807563602
+"643",30,27,1,1,"All other causes","Black","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",126.56420836446,132.365511068433,138.352349220029,132.423842961668
+"644",30,27,1,1,"Cancers","Black","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",209.5939936169,215.807979801889,222.986911285,215.864126704669
+"645",30,27,1,1,"Cardiovascular","Black","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",358.446259634374,372.06439799685,385.426513227641,372.088426806989
+"646",30,27,1,1,"Communicable","Black","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",122.388288332714,130.076652188812,137.939185266817,130.088534433527
+"647",30,27,1,1,"Injuries","Black","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",27.3575918148502,29.3167785795062,31.4794619993759,29.3382447356283
+"648",30,27,1,1,"Non-communicable","Black","Female","New Jersey",1995,"Mid-Atlantic","Northeast","NJ",108.07150477568,113.686022879824,119.125565172457,113.655364374614
+"649",30,28,0,0,"All other causes","White","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",109.360517732337,112.432495160645,115.478570967834,112.37224195449
+"650",30,28,0,0,"Cancers","White","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",264.014333381271,268.394999897768,272.759932361094,268.382079787428
+"651",30,28,0,0,"Cardiovascular","White","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",441.218729891268,447.91846191241,455.082614014031,447.868536604825
+"652",30,28,0,0,"Communicable","White","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",68.3989162166501,71.0191075316661,73.9110707621187,71.0491581521124
+"653",30,28,0,0,"Injuries","White","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",53.0774816124199,54.6262511837256,56.5732343192428,54.697630230551
+"654",30,28,0,0,"Non-communicable","White","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",108.025782339094,110.666666760211,113.495083900759,110.691266282699
+"655",30,28,0,1,"All other causes","White","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",83.7124849093023,85.6234650522182,87.5682312036438,85.6410436734778
+"656",30,28,0,1,"Cancers","White","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",182.998540416107,185.654987661,188.242334391021,185.582573144093
+"657",30,28,0,1,"Cardiovascular","White","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",291.774003757008,296.093087270496,300.394545447923,296.095500712408
+"658",30,28,0,1,"Communicable","White","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",43.4448843587107,44.9604692894231,46.7564101830887,44.9893047145195
+"659",30,28,0,1,"Injuries","White","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",20.5384429117101,21.3568577809419,22.1530692319138,21.3651696208658
+"660",30,28,0,1,"Non-communicable","White","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",72.7769445306811,74.8562167403707,76.811818748858,74.8410157730287
+"661",30,28,1,0,"All other causes","Black","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",175.942411250194,185.575574215812,195.721825023745,185.764653285826
+"662",30,28,1,0,"Cancers","Black","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",355.325896938816,368.834891094138,383.768125422288,369.028722650333
+"663",30,28,1,0,"Cardiovascular","Black","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",469.644266546468,488.0439836445,506.285524599402,488.049574873552
+"664",30,28,1,0,"Communicable","Black","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",222.067276571046,234.860864842499,248.199704796656,234.918195686787
+"665",30,28,1,0,"Injuries","Black","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",89.7243616881014,94.0807553532933,99.1171824206724,94.2383401182931
+"666",30,28,1,0,"Non-communicable","Black","Male","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",153.460868817784,161.712199288178,170.724535213037,161.755181266411
+"667",30,28,1,1,"All other causes","Black","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",125.028693897782,130.780018800775,136.509640316433,130.739381129808
+"668",30,28,1,1,"Cancers","Black","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",205.056559597197,211.921755341607,218.826286888833,211.866835148643
+"669",30,28,1,1,"Cardiovascular","Black","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",348.799706550949,361.121912187867,373.514551340749,361.308687009061
+"670",30,28,1,1,"Communicable","Black","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",107.705865967802,114.825283105867,122.539647694711,114.954849682377
+"671",30,28,1,1,"Injuries","Black","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",27.0312702049168,28.8185736846766,30.9218487635498,28.8388448441142
+"672",30,28,1,1,"Non-communicable","Black","Female","New Jersey",1996,"Mid-Atlantic","Northeast","NJ",110.038073411215,115.628637393069,121.549538985766,115.633964563745
+"673",30,29,0,0,"All other causes","White","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",110.678425468126,113.813341521854,116.915371568404,113.780057627634
+"674",30,29,0,0,"Cancers","White","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",256.993176337591,261.15484162718,265.355473170294,261.245166973337
+"675",30,29,0,0,"Cardiovascular","White","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",425.690366759124,432.138431811292,439.193265901771,432.224475603819
+"676",30,29,0,0,"Communicable","White","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",61.9892603732108,64.7836496946019,67.3517863119433,64.7630568741412
+"677",30,29,0,0,"Injuries","White","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",52.9134976149285,54.6789868158395,56.4865775742399,54.6748023741733
+"678",30,29,0,0,"Non-communicable","White","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",108.900617502972,111.60400490378,114.459332692276,111.686135439611
+"679",30,29,0,1,"All other causes","White","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",85.0402583454798,86.9834143158129,88.9910622424467,86.997901981299
+"680",30,29,0,1,"Cancers","White","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",181.992428221005,184.596676060198,187.340696784357,184.68037965954
+"681",30,29,0,1,"Cardiovascular","White","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",284.06273467739,288.348240983963,292.978376076552,288.426736398984
+"682",30,29,0,1,"Communicable","White","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",42.6379987958339,44.1910254314003,45.7817975672272,44.1824311773178
+"683",30,29,0,1,"Injuries","White","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",20.2967862549507,21.0777615309894,21.8870112925782,21.0993077484575
+"684",30,29,0,1,"Non-communicable","White","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",73.4312622126523,75.3948698090799,77.2108022933464,75.3901488021528
+"685",30,29,1,0,"All other causes","Black","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",170.590831476915,179.403016393957,189.029182709998,179.552369614786
+"686",30,29,1,0,"Cancers","Black","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",338.325393895125,352.905101885727,365.402107091656,352.634846440314
+"687",30,29,1,0,"Cardiovascular","Black","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",452.983834008979,471.131779624643,489.56732938272,471.172878717228
+"688",30,29,1,0,"Communicable","Black","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",164.504715937574,175.739480498193,188.317771132659,175.823606430942
+"689",30,29,1,0,"Injuries","Black","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",86.2651241453384,90.589403532311,95.5985410055478,90.6765447122343
+"690",30,29,1,0,"Non-communicable","Black","Male","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",150.915930855249,159.753579610055,167.756413021969,159.584647195987
+"691",30,29,1,1,"All other causes","Black","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",126.207222656389,131.584240513378,137.17149393228,131.645679660043
+"692",30,29,1,1,"Cancers","Black","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",201.470127111539,208.080672416067,214.577914592543,208.016009925023
+"693",30,29,1,1,"Cardiovascular","Black","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",336.947513454208,349.539668395395,363.743986315708,349.577712054391
+"694",30,29,1,1,"Communicable","Black","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",90.1642716404965,96.6942854167465,103.214513610946,96.7827177205686
+"695",30,29,1,1,"Injuries","Black","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",26.1502969730359,28.0897191273057,30.142036553849,28.11022675529
+"696",30,29,1,1,"Non-communicable","Black","Female","New Jersey",1997,"Mid-Atlantic","Northeast","NJ",108.905684175719,114.650750794036,120.32232054264,114.61437853741
+"697",30,30,0,0,"All other causes","White","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",111.73270277785,114.838844169314,117.961673214542,114.825050634168
+"698",30,30,0,0,"Cancers","White","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",252.149820855165,256.186873164449,260.474980610545,256.265036408373
+"699",30,30,0,0,"Cardiovascular","White","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",409.222848388522,415.696902088086,422.499561501097,415.755215252581
+"700",30,30,0,0,"Communicable","White","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",59.8862794171313,62.3437868959339,64.937557635103,62.3585473005689
+"701",30,30,0,0,"Injuries","White","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",51.8064416516235,53.4668330759346,55.2568222905342,53.4967779134275
+"702",30,30,0,0,"Non-communicable","White","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",109.95787992664,112.87524308769,115.731386329293,112.865546962072
+"703",30,30,0,1,"All other causes","White","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",87.1709614129803,89.1499676331418,91.1950857870508,89.1590086589081
+"704",30,30,0,1,"Cancers","White","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",179.026932957871,181.676092479311,184.32317056686,181.648104121164
+"705",30,30,0,1,"Cardiovascular","White","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",278.458381958202,282.450035214338,286.437379251994,282.488471409164
+"706",30,30,0,1,"Communicable","White","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",41.5108385873141,43.0527821198367,44.6187054372781,43.0355712687469
+"707",30,30,0,1,"Injuries","White","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",20.1164355411946,20.9135224473185,21.7086871150272,20.9066194461269
+"708",30,30,0,1,"Non-communicable","White","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",74.6205955907376,76.4266546365484,78.172052574696,76.3979562469466
+"709",30,30,1,0,"All other causes","Black","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",168.033458018114,177.070923928022,186.238192134065,177.109569250113
+"710",30,30,1,0,"Cancers","Black","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",334.924118379306,348.396065717833,361.907747054251,348.281151945226
+"711",30,30,1,0,"Cardiovascular","Black","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",443.219740873917,460.047588309843,476.914764601979,460.241253767194
+"712",30,30,1,0,"Communicable","Black","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",140.129742697702,150.097608292194,160.267835588044,150.414204097576
+"713",30,30,1,0,"Injuries","Black","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",81.4805324992772,86.0447950607238,90.0815670657338,85.9520686154854
+"714",30,30,1,0,"Non-communicable","Black","Male","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",150.193595694596,159.244667634594,168.11566917029,159.086793717159
+"715",30,30,1,1,"All other causes","Black","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",126.653509751892,131.973686751672,137.482925022673,132.013622427441
+"716",30,30,1,1,"Cancers","Black","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",196.320558494273,203.30821343488,209.950520916757,203.261601513692
+"717",30,30,1,1,"Cardiovascular","Black","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",333.381832066051,346.067967722322,358.002910290674,345.98310231746
+"718",30,30,1,1,"Communicable","Black","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",83.1927432641548,89.3515077882875,95.8403949157342,89.3364336132975
+"719",30,30,1,1,"Injuries","Black","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",25.5719571313693,27.4843457808359,29.4350097179367,27.5046711878878
+"720",30,30,1,1,"Non-communicable","Black","Female","New Jersey",1998,"Mid-Atlantic","Northeast","NJ",107.85596297819,114.010856569598,119.628379548698,113.987765454674
+"721",30,31,0,0,"All other causes","White","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",115.184689386828,118.382543802115,121.384514592873,118.364922457978
+"722",30,31,0,0,"Cancers","White","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",248.427477546031,252.522890475923,256.699108678502,252.570228351063
+"723",30,31,0,0,"Cardiovascular","White","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",403.970700516356,410.512706137258,416.930191006276,410.498107823578
+"724",30,31,0,0,"Communicable","White","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",59.4893220987321,62.0953518676476,64.7857202177789,62.07456322234
+"725",30,31,0,0,"Injuries","White","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",52.2010957164051,53.9380296102778,55.6993281880951,53.9299306409829
+"726",30,31,0,0,"Non-communicable","White","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",115.264593713983,118.029888061052,120.820424894932,118.024712026898
+"727",30,31,0,1,"All other causes","White","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",90.2010683166887,92.1210517334659,94.0466677364991,92.084438462155
+"728",30,31,0,1,"Cancers","White","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",177.509227185524,180.18097997487,182.885410756744,180.161141408812
+"729",30,31,0,1,"Cardiovascular","White","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",273.491000413999,277.557388230972,281.850603542086,277.522079487321
+"730",30,31,0,1,"Communicable","White","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",42.8012064457582,44.3332666828172,46.0004051928065,44.3383724298801
+"731",30,31,0,1,"Injuries","White","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",20.0975408763334,20.8811534085222,21.7253361098942,20.8900517944449
+"732",30,31,0,1,"Non-communicable","White","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",80.4622072801805,82.3471795240995,84.3649363427691,82.3444143745618
+"733",30,31,1,0,"All other causes","Black","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",167.80577911655,176.490682119439,186.526508063124,176.636702771867
+"734",30,31,1,0,"Cancers","Black","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",329.179288030595,341.75167904239,355.545431907871,342.090658288695
+"735",30,31,1,0,"Cardiovascular","Black","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",440.465225495525,456.93481549244,475.022709595126,457.057647799124
+"736",30,31,1,0,"Communicable","Black","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",140.845949373946,151.579609493359,162.19676243256,151.478333832837
+"737",30,31,1,0,"Injuries","Black","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",79.8324458349648,84.037934695431,88.3475306524976,83.9536401247304
+"738",30,31,1,0,"Non-communicable","Black","Male","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",158.236837429399,166.80885284842,176.500264507676,166.99853776166
+"739",30,31,1,1,"All other causes","Black","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",127.695500028061,132.850467704991,138.244409605341,132.867921251965
+"740",30,31,1,1,"Cancers","Black","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",193.298332801138,200.07860610029,206.667467135248,200.092976247239
+"741",30,31,1,1,"Cardiovascular","Black","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",330.078300466899,342.528099885019,354.215491003738,342.438753501576
+"742",30,31,1,1,"Communicable","Black","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",83.9900362148419,89.86792002228,95.9941257061267,89.8653984426666
+"743",30,31,1,1,"Injuries","Black","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",24.6216919500164,26.6776467417644,28.7184845720643,26.698350139355
+"744",30,31,1,1,"Non-communicable","Black","Female","New Jersey",1999,"Mid-Atlantic","Northeast","NJ",114.402591772005,119.981896167069,126.274820984841,120.038232773146
+"745",30,32,0,0,"All other causes","White","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",118.074311016546,121.215528645612,124.507140422999,121.248159116136
+"746",30,32,0,0,"Cancers","White","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",242.684589526052,246.591924548438,250.517059760618,246.57703400099
+"747",30,32,0,0,"Cardiovascular","White","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",400.651892523394,406.909400615563,413.062091193375,406.81293748809
+"748",30,32,0,0,"Communicable","White","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",58.2447351453133,60.5023663832058,62.8422542789774,60.498839963705
+"749",30,32,0,0,"Injuries","White","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",54.8695381183626,56.6185730936433,58.2882313846992,56.619283868665
+"750",30,32,0,0,"Non-communicable","White","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",116.049012639467,119.052677192207,121.883486909004,119.048735773598
+"751",30,32,0,1,"All other causes","White","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",91.5670143215231,93.5162396367166,95.5007298068862,93.5174651443957
+"752",30,32,0,1,"Cancers","White","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",176.428043689457,179.129546049152,181.811279367442,179.099797675419
+"753",30,32,0,1,"Cardiovascular","White","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",270.667773008392,274.582758121302,278.547875307709,274.602962651332
+"754",30,32,0,1,"Communicable","White","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",40.9953413803326,42.6059923767213,44.3150737886769,42.60529529894
+"755",30,32,0,1,"Injuries","White","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",20.0383331808701,20.8002710153586,21.5812146579007,20.8024026813305
+"756",30,32,0,1,"Non-communicable","White","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",83.2611553193121,85.2739381269068,87.4234575186167,85.2839070950565
+"757",30,32,1,0,"All other causes","Black","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",164.389386203723,173.510822922377,182.148290312743,173.528112204066
+"758",30,32,1,0,"Cancers","Black","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",323.99161849622,336.977416526442,350.333176245663,337.277139250698
+"759",30,32,1,0,"Cardiovascular","Black","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",440.173385655886,457.448868292443,474.629088777642,457.458038376588
+"760",30,32,1,0,"Communicable","Black","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",137.99998112429,147.51198643418,157.847763926709,147.600406601977
+"761",30,32,1,0,"Injuries","Black","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",81.0380799138469,85.3364948756565,89.6787359012252,85.2903346053666
+"762",30,32,1,0,"Non-communicable","Black","Male","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",162.168619066532,171.190821233481,181.305556422707,171.290956452124
+"763",30,32,1,1,"All other causes","Black","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",128.209290396899,133.984678003254,139.383000460135,133.921108314648
+"764",30,32,1,1,"Cancers","Black","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",190.591163304759,197.316634057443,203.96838800134,197.281298449415
+"765",30,32,1,1,"Cardiovascular","Black","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",334.935808471346,346.963055507721,358.905170261456,346.916223651315
+"766",30,32,1,1,"Communicable","Black","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",80.8533133089852,86.7696693442832,92.7805669416334,86.6704474114674
+"767",30,32,1,1,"Injuries","Black","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",24.3686305398653,26.3731129108675,28.3097034634508,26.384418376907
+"768",30,32,1,1,"Non-communicable","Black","Female","New Jersey",2000,"Mid-Atlantic","Northeast","NJ",119.09159880264,124.790551380666,131.035537829468,124.804958030877
+"769",30,33,0,0,"All other causes","White","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",118.196097438755,121.21514148013,124.531891653837,121.287820652339
+"770",30,33,0,0,"Cancers","White","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",239.528840364826,243.533250904485,247.566982230051,243.498076239587
+"771",30,33,0,0,"Cardiovascular","White","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",371.102298858176,377.596122246237,384.096282631921,377.592429042266
+"772",30,33,0,0,"Communicable","White","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",56.2630255114211,58.7273796841691,61.2936349143542,58.7567483910598
+"773",30,33,0,0,"Injuries","White","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",61.6692330381121,63.7737026455712,65.7324314794714,63.7578797862068
+"774",30,33,0,0,"Non-communicable","White","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",115.164905737335,118.039211041966,120.670043982144,118.020141563345
+"775",30,33,0,1,"All other causes","White","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",94.6501093939199,96.7684116709937,98.7449610653957,96.7565074987287
+"776",30,33,0,1,"Cancers","White","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",174.682592438275,177.31403317932,180.05148107549,177.328552989483
+"777",30,33,0,1,"Cardiovascular","White","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",260.082229147212,263.912350579655,267.694292517303,263.905525233521
+"778",30,33,0,1,"Communicable","White","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",39.3465977874745,40.8397450370068,42.3326125727577,40.827631794206
+"779",30,33,0,1,"Injuries","White","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",20.3380941095611,21.1732060411644,22.012590088119,21.1690706048305
+"780",30,33,0,1,"Non-communicable","White","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",84.8227086669804,86.7517884701856,88.791660764442,86.7365760232601
+"781",30,33,1,0,"All other causes","Black","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",162.314436720947,170.704086918557,179.51383727298,170.709651903244
+"782",30,33,1,0,"Cancers","Black","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",315.009395639334,327.3506194513,340.931506097703,327.485904600398
+"783",30,33,1,0,"Cardiovascular","Black","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",436.692907634924,453.2907638124,470.284333087657,453.392613682163
+"784",30,33,1,0,"Communicable","Black","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",130.519267984005,139.95671066682,150.831011627824,140.052068188888
+"785",30,33,1,0,"Injuries","Black","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",83.0910660545636,87.5753225586164,92.2297169938552,87.5812741545701
+"786",30,33,1,0,"Non-communicable","Black","Male","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",162.036043552932,170.679513168288,180.426819174012,170.849334101579
+"787",30,33,1,1,"All other causes","Black","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",130.99195519585,136.400929312379,142.085145478576,136.575171045813
+"788",30,33,1,1,"Cancers","Black","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",188.431357115361,194.789849914309,201.178001280238,194.782948295876
+"789",30,33,1,1,"Cardiovascular","Black","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",325.829624291494,337.934583570271,350.016486077465,337.787265909779
+"790",30,33,1,1,"Communicable","Black","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",86.6304221581061,92.4245870498137,99.3007527341636,92.6250381586016
+"791",30,33,1,1,"Injuries","Black","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",24.4178056860966,26.3570628123881,28.241756051937,26.368392640429
+"792",30,33,1,1,"Non-communicable","Black","Female","New Jersey",2001,"Mid-Atlantic","Northeast","NJ",121.334972797001,127.579957242189,133.900489820604,127.558228446223
+"793",30,34,0,0,"All other causes","White","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",118.46712410121,121.376782992283,124.77321681194,121.443224341702
+"794",30,34,0,0,"Cancers","White","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",233.304221582865,237.260826238452,241.174074844721,237.317931984581
+"795",30,34,0,0,"Cardiovascular","White","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",361.421102297045,367.60413678499,373.626155341991,367.621121497198
+"796",30,34,0,0,"Communicable","White","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",57.1808184152466,59.5055345019661,62.0960398075939,59.5438758758815
+"797",30,34,0,0,"Injuries","White","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",57.8846323488619,59.7114578766225,61.7214381324106,59.738047157063
+"798",30,34,0,0,"Non-communicable","White","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",114.390790853273,117.154858014651,120.066059357972,117.209078826518
+"799",30,34,0,1,"All other causes","White","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",95.3224458965228,97.2647455931939,99.248350903129,97.2561519175806
+"800",30,34,0,1,"Cancers","White","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",171.510395304559,174.123104531865,176.893204710991,174.166431954785
+"801",30,34,0,1,"Cardiovascular","White","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",252.774208687553,256.519123438601,260.255085382678,256.48497197378
+"802",30,34,0,1,"Communicable","White","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",41.412740077929,42.9243881418739,44.3846751178031,42.9403968064672
+"803",30,34,0,1,"Injuries","White","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",20.0691804036562,20.8815758157481,21.7389584544136,20.8785755633453
+"804",30,34,0,1,"Non-communicable","White","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",87.7483854998711,89.676058375845,91.7947450891333,89.6972366595374
+"805",30,34,1,0,"All other causes","Black","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",157.503033369809,165.845114584605,174.887271957325,165.833064652726
+"806",30,34,1,0,"Cancers","Black","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",301.136426193349,313.309112168068,325.094938758289,313.422137783895
+"807",30,34,1,0,"Cardiovascular","Black","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",425.898134632666,441.531364172837,457.378895629182,441.148495340602
+"808",30,34,1,0,"Communicable","Black","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",122.488800185551,132.598865313407,141.902621899464,132.586585171617
+"809",30,34,1,0,"Injuries","Black","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",83.4987074749573,87.8578332727856,92.2126591895288,87.8391197022748
+"810",30,34,1,0,"Non-communicable","Black","Male","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",160.380738517434,169.536463384744,177.77721325202,169.479012703384
+"811",30,34,1,1,"All other causes","Black","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",128.442838785343,133.986873750429,139.420232069653,133.950386040577
+"812",30,34,1,1,"Cancers","Black","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",186.63522279724,192.910837118847,199.278118770629,192.860625029421
+"813",30,34,1,1,"Cardiovascular","Black","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",323.110857640124,335.167727860938,347.30540418051,335.080767611976
+"814",30,34,1,1,"Communicable","Black","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",85.3744420109613,91.1613612958825,98.087335864434,91.2608136824725
+"815",30,34,1,1,"Injuries","Black","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",24.2492536389478,26.1055748091633,28.1552302568568,26.1145319731011
+"816",30,34,1,1,"Non-communicable","Black","Female","New Jersey",2002,"Mid-Atlantic","Northeast","NJ",120.118717684417,126.257475582278,132.724192054935,126.237372345137
+"817",30,35,0,0,"All other causes","White","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",120.809118770502,123.928801132253,127.119283045291,123.890401012166
+"818",30,35,0,0,"Cancers","White","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",229.777855504878,233.726634295156,237.680493089107,233.74012662068
+"819",30,35,0,0,"Cardiovascular","White","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",349.844268821957,355.905582839336,361.858856953868,355.906521127028
+"820",30,35,0,0,"Communicable","White","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",53.1166872666842,55.397586290277,57.7074094016172,55.389214993507
+"821",30,35,0,0,"Injuries","White","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",55.5309417981466,57.2627537300212,59.1043771088575,57.2929053478741
+"822",30,35,0,0,"Non-communicable","White","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",115.067685781331,117.915746242516,120.828372844773,117.937769258525
+"823",30,35,0,1,"All other causes","White","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",97.0774279878091,99.0065435485133,101.1487216594,99.0418054662689
+"824",30,35,0,1,"Cancers","White","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",169.408156378103,171.992987529506,174.630424579475,171.996980330733
+"825",30,35,0,1,"Cardiovascular","White","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",242.875364257071,246.547889896582,250.49737559654,246.611511717211
+"826",30,35,0,1,"Communicable","White","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",38.7934082505381,40.2509336640819,41.7463557513356,40.2668695493404
+"827",30,35,0,1,"Injuries","White","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",19.8269544102316,20.5884698945407,21.4397695460248,20.6004246097785
+"828",30,35,0,1,"Non-communicable","White","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",88.4305373743721,90.5950254945576,92.5756830025866,90.5134450520762
+"829",30,35,1,0,"All other causes","Black","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",159.087251813226,167.805483750488,177.161604375537,167.878997244093
+"830",30,35,1,0,"Cancers","Black","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",294.137150599606,305.75579327644,317.813957877935,305.741155571572
+"831",30,35,1,0,"Cardiovascular","Black","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",412.777911204691,427.646135528838,443.104994667215,427.696551234246
+"832",30,35,1,0,"Communicable","Black","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",124.327950595563,133.183534689837,142.914329814141,133.175640834815
+"833",30,35,1,0,"Injuries","Black","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",85.694320294836,89.8034421527288,94.4044696015955,89.8757194591412
+"834",30,35,1,0,"Non-communicable","Black","Male","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",160.354781592206,169.180597172938,177.726542133881,169.194669763933
+"835",30,35,1,1,"All other causes","Black","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",130.040744882665,135.468293828263,141.080244145567,135.483539463655
+"836",30,35,1,1,"Cancers","Black","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",183.456277573047,189.539279066605,196.316972329531,189.700315144447
+"837",30,35,1,1,"Cardiovascular","Black","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",306.298984184139,316.999558894604,329.551230709667,317.314786622561
+"838",30,35,1,1,"Communicable","Black","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",80.6889378994132,86.4097257667117,93.027604895005,86.4713504996237
+"839",30,35,1,1,"Injuries","Black","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",23.8110678738109,25.6833806254759,27.730564806913,25.7235822954567
+"840",30,35,1,1,"Non-communicable","Black","Female","New Jersey",2003,"Mid-Atlantic","Northeast","NJ",117.381225714851,123.392756817139,129.727950697326,123.490149794348
+"841",30,36,0,0,"All other causes","White","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",122.66774953547,125.756182700441,128.730038813198,125.740733026508
+"842",30,36,0,0,"Cancers","White","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",221.169726961244,225.136498262535,229.109406559093,225.182769851946
+"843",30,36,0,0,"Cardiovascular","White","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",328.36183154174,333.671156331247,339.378748138423,333.775391076947
+"844",30,36,0,0,"Communicable","White","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",51.8278903315674,54.053550291227,56.333521706742,54.090781366458
+"845",30,36,0,0,"Injuries","White","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",53.9425677513244,55.8854835493135,57.6822763032453,55.8390121693285
+"846",30,36,0,0,"Non-communicable","White","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",115.939781792784,118.783352843381,121.613609146185,118.74181412523
+"847",30,36,0,1,"All other causes","White","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",96.7065037502319,98.7490176152042,100.790510588822,98.750916280207
+"848",30,36,0,1,"Cancers","White","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",165.405468353384,167.718519130406,170.313539175168,167.730813197599
+"849",30,36,0,1,"Cardiovascular","White","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",228.585822995789,232.267426496044,235.791724259304,232.24635860422
+"850",30,36,0,1,"Communicable","White","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",37.7206889828104,39.1086191140012,40.5907344318423,39.1172486434808
+"851",30,36,0,1,"Injuries","White","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",20.1351135744235,20.8622154771083,21.6745602944654,20.8722267705907
+"852",30,36,0,1,"Non-communicable","White","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",88.8609452050422,91.0256891274023,93.1652889702963,91.0407548892528
+"853",30,36,1,0,"All other causes","Black","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",155.001050594992,163.182496624312,172.341921772366,163.323526759979
+"854",30,36,1,0,"Cancers","Black","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",277.770031243402,289.182028453508,301.43859860727,289.275024817549
+"855",30,36,1,0,"Cardiovascular","Black","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",396.432347872779,411.405456506278,426.497043833564,411.37306367545
+"856",30,36,1,0,"Communicable","Black","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",116.646847137627,125.336797336744,135.134181928409,125.505391060357
+"857",30,36,1,0,"Injuries","Black","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",85.182524090894,89.5874273083694,94.1567367195245,89.5707712740214
+"858",30,36,1,0,"Non-communicable","Black","Male","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",158.847995195051,167.355084379696,176.735933064936,167.683927584344
+"859",30,36,1,1,"All other causes","Black","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",130.053641884246,135.540202707631,140.972114202307,135.526778697316
+"860",30,36,1,1,"Cancers","Black","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",179.067848893886,184.850705714557,190.785536569295,184.819570185822
+"861",30,36,1,1,"Cardiovascular","Black","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",290.327676638419,301.839371952329,313.080739725596,301.711580459956
+"862",30,36,1,1,"Communicable","Black","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",74.5230403612823,80.0784178308949,85.5277684348253,80.09226256906
+"863",30,36,1,1,"Injuries","Black","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",23.4380117713345,25.1151395193916,27.2436402904816,25.1654440822218
+"864",30,36,1,1,"Non-communicable","Black","Female","New Jersey",2004,"Mid-Atlantic","Northeast","NJ",116.998722052744,123.143685909302,129.327838076109,123.096101149389
+"865",30,37,0,0,"All other causes","White","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",125.741239501499,128.659094476361,131.833049941388,128.731084380588
+"866",30,37,0,0,"Cancers","White","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",219.059363713236,222.96180777606,226.728278057562,222.968354695716
+"867",30,37,0,0,"Cardiovascular","White","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",319.299648220906,324.61518091776,330.126086423738,324.660899371528
+"868",30,37,0,0,"Communicable","White","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",50.8096018044366,52.975436482736,55.2727663535527,52.9855246141448
+"869",30,37,0,0,"Injuries","White","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",54.2144913399531,55.9707122000334,57.6698070913634,55.9716228241848
+"870",30,37,0,0,"Non-communicable","White","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",115.3294119393,118.14376140805,120.816914225411,118.100750370839
+"871",30,37,0,1,"All other causes","White","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",99.6059256826145,101.61073354709,103.645825353334,101.62766996722
+"872",30,37,0,1,"Cancers","White","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",161.875576161765,164.409997593937,167.081039737402,164.420093939002
+"873",30,37,0,1,"Cardiovascular","White","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",221.328833162909,224.710450983181,228.093414359514,224.70526362105
+"874",30,37,0,1,"Communicable","White","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",37.3904849244217,38.7682620981508,40.2630886888816,38.7922148375192
+"875",30,37,0,1,"Injuries","White","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",20.3729556568127,21.1367888741838,21.9454800363237,21.147748917833
+"876",30,37,0,1,"Non-communicable","White","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",87.8527493414091,89.8572826275357,92.0013096799797,89.8715648362012
+"877",30,37,1,0,"All other causes","Black","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",152.67540029715,160.991733450393,169.753038761528,160.956625225846
+"878",30,37,1,0,"Cancers","Black","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",264.535215259914,275.111568002851,285.716335325427,275.311586416729
+"879",30,37,1,0,"Cardiovascular","Black","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",379.907306757941,394.729612162278,408.96415854303,394.739542833356
+"880",30,37,1,0,"Communicable","Black","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",116.056890460989,125.664817008303,134.968401770401,125.563396792392
+"881",30,37,1,0,"Injuries","Black","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",86.2211883612048,90.7443365545881,95.931972506257,90.812841080339
+"882",30,37,1,0,"Non-communicable","Black","Male","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",160.927641029327,169.23626799281,178.480981020428,169.337132803241
+"883",30,37,1,1,"All other causes","Black","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",131.460074060916,137.400753381664,142.619492061672,137.270715071766
+"884",30,37,1,1,"Cancers","Black","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",176.171829350295,181.707334047885,187.766169563838,181.763022805281
+"885",30,37,1,1,"Cardiovascular","Black","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",286.138073428241,296.98711429382,308.729287596941,296.884124195371
+"886",30,37,1,1,"Communicable","Black","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",73.5690628931249,78.800963319987,84.6842300813045,78.8394958653837
+"887",30,37,1,1,"Injuries","Black","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",23.1013644445575,24.8685581650006,26.8532345805675,24.9096981162964
+"888",30,37,1,1,"Non-communicable","Black","Female","New Jersey",2005,"Mid-Atlantic","Northeast","NJ",115.890604924226,121.894060198877,128.720037022977,122.001477008638
+"889",30,38,0,0,"All other causes","White","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",129.266079623712,132.216092398129,135.170292950998,132.216232313337
+"890",30,38,0,0,"Cancers","White","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",214.890168354858,218.458873007198,222.363408161677,218.558664725498
+"891",30,38,0,0,"Cardiovascular","White","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",300.838591253351,306.199093198675,311.645105117778,306.194958627278
+"892",30,38,0,0,"Communicable","White","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",47.9927425785712,50.2143674972792,52.4900376826601,50.2130074865844
+"893",30,38,0,0,"Injuries","White","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",55.5399061064457,57.2022495762163,59.0590814138106,57.2074386861653
+"894",30,38,0,0,"Non-communicable","White","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",110.296465820819,112.816534827729,115.376516566473,112.850144886905
+"895",30,38,0,1,"All other causes","White","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",102.723562722426,104.866403645673,106.920085575615,104.834036104702
+"896",30,38,0,1,"Cancers","White","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",160.162465524501,162.555418512222,165.192653043107,162.597348895973
+"897",30,38,0,1,"Cardiovascular","White","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",206.004670452935,209.286030988358,212.710037441108,209.307233929391
+"898",30,38,0,1,"Communicable","White","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",34.1300285040702,35.4899506093094,36.8689774947468,35.4907582464642
+"899",30,38,0,1,"Injuries","White","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",20.3722940185751,21.1776224370895,22.0292353676918,21.2011974712282
+"900",30,38,0,1,"Non-communicable","White","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",83.4184383415069,85.4451907994934,87.4529469405344,85.4413503260884
+"901",30,38,1,0,"All other causes","Black","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",155.556956890835,163.652613531456,172.721441154295,163.923821081752
+"902",30,38,1,0,"Cancers","Black","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",254.66848769082,265.892801568062,276.769107669802,265.896550938117
+"903",30,38,1,0,"Cardiovascular","Black","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",366.239308110768,380.518086669288,396.09552396651,380.613301758757
+"904",30,38,1,0,"Communicable","Black","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",97.8134089975144,105.548280781672,113.536029644682,105.707182268296
+"905",30,38,1,0,"Injuries","Black","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",85.4881551658774,89.7627719491001,94.276647886496,89.7610592146154
+"906",30,38,1,0,"Non-communicable","Black","Male","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",155.483760739684,163.407207454947,172.534194320132,163.484025737628
+"907",30,38,1,1,"All other causes","Black","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",132.694408596829,138.256114025305,143.707695736685,138.260855677629
+"908",30,38,1,1,"Cancers","Black","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",172.889497330634,178.678763536501,184.862132171531,178.768786648454
+"909",30,38,1,1,"Cardiovascular","Black","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",258.959447657799,269.059734785531,279.516903942475,269.143965180184
+"910",30,38,1,1,"Communicable","Black","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",69.1958520763365,74.1923114305381,79.8863842020661,74.1861841001896
+"911",30,38,1,1,"Injuries","Black","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",22.7856221917507,24.4016483152037,26.2220267060938,24.4435823420512
+"912",30,38,1,1,"Non-communicable","Black","Female","New Jersey",2006,"Mid-Atlantic","Northeast","NJ",113.254895712904,119.116283920616,125.281180606202,119.104025238931
+"913",30,39,0,0,"All other causes","White","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",131.893574205066,135.205020826855,138.676378264566,135.252357393341
+"914",30,39,0,0,"Cancers","White","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",211.573387334478,215.794346944244,219.531819593874,215.756504255669
+"915",30,39,0,0,"Cardiovascular","White","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",290.214981900288,294.947450997833,300.752000883122,295.140203248684
+"916",30,39,0,0,"Communicable","White","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",44.7682441246167,46.7382183504342,48.610571678703,46.7271332173118
+"917",30,39,0,0,"Injuries","White","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",54.1423250347231,55.8402254229891,57.7063734044348,55.8597557516348
+"918",30,39,0,0,"Non-communicable","White","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",110.290833996636,112.963097409721,115.681555316928,112.981282768582
+"919",30,39,0,1,"All other causes","White","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",105.869921150024,108.124029917444,110.363154479823,108.10932106003
+"920",30,39,0,1,"Cancers","White","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",157.896157041499,160.464122713784,162.964896400189,160.45640289678
+"921",30,39,0,1,"Cardiovascular","White","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",196.167541303885,199.392354719958,202.717300816277,199.415237267251
+"922",30,39,0,1,"Communicable","White","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",32.4155358510083,33.7592956754457,35.1616604105629,33.7535163119965
+"923",30,39,0,1,"Injuries","White","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",20.1457323993381,20.949381833409,21.7900714037595,20.9712396246186
+"924",30,39,0,1,"Non-communicable","White","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",84.4184586942131,86.3637073285282,88.5347424598723,86.3716839857502
+"925",30,39,1,0,"All other causes","Black","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",158.957666274714,168.085360268873,177.463342447869,168.030809596864
+"926",30,39,1,0,"Cancers","Black","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",252.827765600368,263.338097594373,274.018745595591,263.196064297267
+"927",30,39,1,0,"Cardiovascular","Black","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",353.584363100402,367.514933421498,381.488482361237,367.606630440478
+"928",30,39,1,0,"Communicable","Black","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",94.1835703121441,102.765531546979,110.666278603684,102.663134387189
+"929",30,39,1,0,"Injuries","Black","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",80.1504265676855,84.190214538104,88.7963093726549,84.2804704683875
+"930",30,39,1,0,"Non-communicable","Black","Male","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",146.824646758401,154.617919784242,162.913990730205,154.781235586592
+"931",30,39,1,1,"All other causes","Black","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",131.118442031308,136.613130680903,142.542630655668,136.656655072871
+"932",30,39,1,1,"Cancers","Black","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",167.516048255715,173.390793640434,178.863402224342,173.291796038429
+"933",30,39,1,1,"Cardiovascular","Black","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",247.771516889774,256.421518498781,266.216374228148,256.537512970538
+"934",30,39,1,1,"Communicable","Black","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",64.3072559615048,69.1446365063567,74.3956257405215,69.2363721247132
+"935",30,39,1,1,"Injuries","Black","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",22.0580372125097,23.6907201370024,25.3522291620107,23.6952976070037
+"936",30,39,1,1,"Non-communicable","Black","Female","New Jersey",2007,"Mid-Atlantic","Northeast","NJ",109.206238449206,115.218138979095,120.528443807525,115.176910729318
+"937",30,40,0,0,"All other causes","White","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",132.065006364696,135.149338378641,138.440818048926,135.185607497302
+"938",30,40,0,0,"Cancers","White","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",204.057516472114,207.732865125157,211.157865684039,207.754236318376
+"939",30,40,0,0,"Cardiovascular","White","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",283.093583580389,288.139751553285,293.104613808025,288.192644955797
+"940",30,40,0,0,"Communicable","White","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",43.4006030082256,45.3776223733625,47.4059625227612,45.3642519872141
+"941",30,40,0,0,"Injuries","White","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",53.0658083435258,54.8320166762866,56.3853835878684,54.7982946782899
+"942",30,40,0,0,"Non-communicable","White","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",111.807521025356,114.408497618413,117.136943831769,114.454744760069
+"943",30,40,0,1,"All other causes","White","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",105.798136146056,108.030869286432,110.021364356325,108.021517125895
+"944",30,40,0,1,"Cancers","White","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",155.280698270363,157.649993565119,160.173198431916,157.6668293735
+"945",30,40,0,1,"Cardiovascular","White","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",190.931233910713,194.603968744577,197.828938888947,194.601490874419
+"946",30,40,0,1,"Communicable","White","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",33.1973736184925,34.5635804996007,35.9644573272905,34.542192482192
+"947",30,40,0,1,"Injuries","White","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",19.9094585401585,20.721786088997,21.491700809142,20.7178840666563
+"948",30,40,0,1,"Non-communicable","White","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",84.1811019408211,86.104996668248,88.0866622972028,86.1131282787742
+"949",30,40,1,0,"All other causes","Black","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",161.274067544428,170.182929921023,179.251169881377,170.165890690973
+"950",30,40,1,0,"Cancers","Black","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",252.637846779577,263.05918607231,273.035766828536,262.994234943745
+"951",30,40,1,0,"Cardiovascular","Black","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",338.254165884152,352.60147359085,366.512426648645,352.584018769364
+"952",30,40,1,0,"Communicable","Black","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",94.0220884252356,101.325246597204,109.003448997969,101.396411325343
+"953",30,40,1,0,"Injuries","Black","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",75.3696593119764,79.407065189821,83.7788018523908,79.4642063183827
+"954",30,40,1,0,"Non-communicable","Black","Male","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",144.111956747422,151.948066916081,160.835123241251,152.096959581364
+"955",30,40,1,1,"All other causes","Black","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",131.707622838979,136.749417628693,143.085687346569,136.950625395655
+"956",30,40,1,1,"Cancers","Black","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",163.613767497604,169.02864984852,174.523998722078,169.083539892523
+"957",30,40,1,1,"Cardiovascular","Black","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",237.572543830546,246.631414992399,256.838877783349,246.818949313307
+"958",30,40,1,1,"Communicable","Black","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",60.9860256087322,65.2787812785322,70.3230553472966,65.294055499994
+"959",30,40,1,1,"Injuries","Black","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",21.3462140189805,22.9531129045151,24.7172890028088,22.9678225704049
+"960",30,40,1,1,"Non-communicable","Black","Female","New Jersey",2008,"Mid-Atlantic","Northeast","NJ",105.089774271465,109.898181407536,115.434131848019,110.083065573733
+"961",30,41,0,0,"All other causes","White","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",135.877051701692,139.311412681394,142.846838704068,139.36283011265
+"962",30,41,0,0,"Cancers","White","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",198.703395742377,202.200206534593,205.882941321653,202.240126964113
+"963",30,41,0,0,"Cardiovascular","White","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",272.3452049362,277.360724467186,282.504958707309,277.363002567607
+"964",30,41,0,0,"Communicable","White","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",42.0503183694594,43.9422475043909,45.8973335780126,43.9451425730866
+"965",30,41,0,0,"Injuries","White","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",50.1008143105968,51.962131618172,53.6177501399943,51.9527296496962
+"966",30,41,0,0,"Non-communicable","White","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",107.73295684332,110.305252828983,112.956348256588,110.339731799545
+"967",30,41,0,1,"All other causes","White","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",106.182666440487,108.514185498978,110.808064293102,108.510455664034
+"968",30,41,0,1,"Cancers","White","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",151.108433474619,153.624793709617,156.06847569832,153.620153930716
+"969",30,41,0,1,"Cardiovascular","White","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",183.925978501104,187.054628772044,190.052571520439,187.043642994502
+"970",30,41,0,1,"Communicable","White","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",30.0860684785282,31.2977891037379,32.6709062080353,31.3384908034265
+"971",30,41,0,1,"Injuries","White","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",19.8864429395977,20.7310359027599,21.5047130540925,20.7287898269063
+"972",30,41,0,1,"Non-communicable","White","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",81.4504765958554,83.3475077991819,85.2999015759363,83.3536597260903
+"973",30,41,1,0,"All other causes","Black","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",163.248025974956,172.292022014615,181.457985565922,172.309632376116
+"974",30,41,1,0,"Cancers","Black","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",246.868695938197,257.064112668503,268.038091472772,257.205227254837
+"975",30,41,1,0,"Cardiovascular","Black","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",323.587974263151,336.405119509395,349.175334662728,336.51913283408
+"976",30,41,1,0,"Communicable","Black","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",84.4145827639138,91.5479155640283,98.9532085012022,91.467196641358
+"977",30,41,1,0,"Injuries","Black","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",71.7487382109631,75.8855622406645,80.3048171736376,75.9418724539248
+"978",30,41,1,0,"Non-communicable","Black","Male","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",138.640610882681,145.830468478827,153.207352738565,145.803327382935
+"979",30,41,1,1,"All other causes","Black","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",130.570645879394,136.50408108496,141.840335485135,136.479009173388
+"980",30,41,1,1,"Cancers","Black","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",160.158372679436,165.450986468569,170.719349116379,165.391156963987
+"981",30,41,1,1,"Cardiovascular","Black","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",221.951686309152,230.613967785099,239.590708569646,230.634973002942
+"982",30,41,1,1,"Communicable","Black","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",56.4491106123501,61.0250168122634,65.5783577448849,60.9772482471578
+"983",30,41,1,1,"Injuries","Black","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",20.5785516957836,22.266400651811,24.1183139882789,22.3045833861393
+"984",30,41,1,1,"Non-communicable","Black","Female","New Jersey",2009,"Mid-Atlantic","Northeast","NJ",100.85902169073,105.937703767822,110.868494032447,105.957598601645
+"985",30,42,0,0,"All other causes","White","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",135.129208602095,138.181469834604,141.512682083377,138.158098439841
+"986",30,42,0,0,"Cancers","White","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",199.139411295274,202.630255479876,206.233325200926,202.622869313659
+"987",30,42,0,0,"Cardiovascular","White","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",273.139864809735,277.474165110783,282.512217188239,277.574375004098
+"988",30,42,0,0,"Communicable","White","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",39.0083350414228,40.8640236608546,42.7290741002512,40.8808023291579
+"989",30,42,0,0,"Injuries","White","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",54.7503794087525,56.5506091422995,58.4545720581439,56.570218323105
+"990",30,42,0,0,"Non-communicable","White","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",104.87921291636,107.378437252499,109.832191877729,107.339578046966
+"991",30,42,0,1,"All other causes","White","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",109.175329401081,111.374524012471,113.622254427436,111.388988726862
+"992",30,42,0,1,"Cancers","White","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",148.383051011474,150.713662194634,152.916098425123,150.680982466905
+"993",30,42,0,1,"Cardiovascular","White","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",181.72208368236,184.849241850088,188.166482412381,184.840893586404
+"994",30,42,0,1,"Communicable","White","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",27.4121512887159,28.6556794597472,29.8553675737259,28.6471275963723
+"995",30,42,0,1,"Injuries","White","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",21.3880348446204,22.1149187590659,22.963882216286,22.1284639350193
+"996",30,42,0,1,"Non-communicable","White","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",80.4866558122079,82.3101594555994,84.1236529054911,82.2857754840581
+"997",30,42,1,0,"All other causes","Black","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",154.234420209467,162.347320499237,171.611024056011,162.586838867415
+"998",30,42,1,0,"Cancers","Black","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",239.627027597773,249.828829255704,260.048741608292,249.771985673414
+"999",30,42,1,0,"Cardiovascular","Black","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",321.803385119993,334.265576869693,347.109461481487,334.446748262383
+"1000",30,42,1,0,"Communicable","Black","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",82.4296814459327,89.9094670304157,97.9314436093041,89.9932547822242
+"1001",30,42,1,0,"Injuries","Black","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",74.5797188176484,78.6898618013252,83.0373873056205,78.756881245455
+"1002",30,42,1,0,"Non-communicable","Black","Male","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",132.46297904011,140.554842990726,148.821112036218,140.520111121841
+"1003",30,42,1,1,"All other causes","Black","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",130.580545561447,136.22481382351,141.9684840049,136.336981273861
+"1004",30,42,1,1,"Cancers","Black","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",159.048023644308,164.199470833633,169.527431621596,164.149899022551
+"1005",30,42,1,1,"Cardiovascular","Black","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",222.937331991959,231.323309402547,240.864697779703,231.436924065959
+"1006",30,42,1,1,"Communicable","Black","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",54.9128926887332,59.2407450644682,64.307170394167,59.3366328834927
+"1007",30,42,1,1,"Injuries","Black","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",20.6140007637613,22.2818505731222,24.0960526525021,22.2700083779328
+"1008",30,42,1,1,"Non-communicable","Black","Female","New Jersey",2010,"Mid-Atlantic","Northeast","NJ",98.9152406124408,103.617858896276,108.931561071583,103.695723752717
+"1009",30,43,0,0,"All other causes","White","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",138.957444234777,142.200584230665,145.69553639578,142.268179905877
+"1010",30,43,0,0,"Cancers","White","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",195.371162479312,199.042948830096,202.750787380936,199.05889131434
+"1011",30,43,0,0,"Cardiovascular","White","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",267.591849472524,272.114160961564,276.737444163054,272.133729523492
+"1012",30,43,0,0,"Communicable","White","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",40.6444175638752,42.3994764454203,44.2299740572294,42.3817337901027
+"1013",30,43,0,0,"Injuries","White","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",58.8188315384603,60.7008124990715,62.5738370577351,60.7012419402531
+"1014",30,43,0,0,"Non-communicable","White","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",103.512371758131,105.984939247541,108.472751294282,105.996571277258
+"1015",30,43,0,1,"All other causes","White","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",114.015747528322,116.33261951164,118.545184489997,116.354569983125
+"1016",30,43,0,1,"Cancers","White","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",145.779770257023,148.132830285739,150.516340263404,148.116349634788
+"1017",30,43,0,1,"Cardiovascular","White","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",178.439073507147,181.310980925658,184.341858807299,181.320035616008
+"1018",30,43,0,1,"Communicable","White","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",27.9879896678498,29.2085943553967,30.4711187695682,29.2285334951021
+"1019",30,43,0,1,"Injuries","White","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",22.3841004158736,23.2806204400879,24.1577514098053,23.279508420977
+"1020",30,43,0,1,"Non-communicable","White","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",80.2207983344209,82.1908248327539,84.1334991657839,82.1921423284159
+"1021",30,43,1,0,"All other causes","Black","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",151.906815167847,160.459609962619,169.201867360665,160.491951620389
+"1022",30,43,1,0,"Cancers","Black","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",226.885500965316,236.288690906637,246.094268189341,236.350304406778
+"1023",30,43,1,0,"Cardiovascular","Black","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",314.550702573841,326.089403392626,338.032800383398,326.151329190472
+"1024",30,43,1,0,"Communicable","Black","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",78.401000282204,85.1367569337737,91.9774490183692,85.2481714398512
+"1025",30,43,1,0,"Injuries","Black","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",76.7310799337268,80.8522914415068,85.3535007779787,80.9049961440444
+"1026",30,43,1,0,"Non-communicable","Black","Male","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",129.789173115653,136.595931615114,144.320688362695,136.718643023123
+"1027",30,43,1,1,"All other causes","Black","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",133.838846323363,139.26028099407,145.064144452504,139.353619765806
+"1028",30,43,1,1,"Cancers","Black","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",157.140781406696,162.368226902298,167.65007290983,162.341565896039
+"1029",30,43,1,1,"Cardiovascular","Black","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",218.399834635982,226.652423362557,235.626718426523,226.808205952332
+"1030",30,43,1,1,"Communicable","Black","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",52.0819076995106,55.907833545889,60.5381544406633,55.9929267158181
+"1031",30,43,1,1,"Injuries","Black","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",20.690697024142,22.4599616785481,24.4628586986873,22.4597398254884
+"1032",30,43,1,1,"Non-communicable","Black","Female","New Jersey",2011,"Mid-Atlantic","Northeast","NJ",97.9614528552921,103.149217683261,108.340692749678,103.21328844157
+"1033",30,44,0,0,"All other causes","White","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",139.611536054123,142.908037989386,145.972835117062,142.922098589549
+"1034",30,44,0,0,"Cancers","White","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",192.56405165394,195.933545475531,199.753060347214,196.009227723994
+"1035",30,44,0,0,"Cardiovascular","White","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",265.223639231722,269.643064648818,273.859269713837,269.675389638127
+"1036",30,44,0,0,"Communicable","White","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",38.7838796290816,40.5451743865084,42.2559625833063,40.5417801866923
+"1037",30,44,0,0,"Injuries","White","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",62.7616553739632,64.6771868046402,66.6971098734168,64.7028086915916
+"1038",30,44,0,0,"Non-communicable","White","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",100.500259454084,102.965635561129,105.375221847307,102.973621967923
+"1039",30,44,0,1,"All other causes","White","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",118.163493989693,120.460560974485,122.99298683867,120.506181480311
+"1040",30,44,0,1,"Cancers","White","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",142.525917922943,145.053338350416,147.433003568531,145.033870880297
+"1041",30,44,0,1,"Cardiovascular","White","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",174.788804789551,177.689587610861,180.755050830594,177.757700142206
+"1042",30,44,0,1,"Communicable","White","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",27.186361702907,28.3125238348431,29.5685713871475,28.3386440906305
+"1043",30,44,0,1,"Injuries","White","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",23.5785895157726,24.555011358446,25.535612022282,24.5675498224212
+"1044",30,44,0,1,"Non-communicable","White","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",78.3808416477169,80.2121636844315,82.0597208276942,80.2173321118697
+"1045",30,44,1,0,"All other causes","Black","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",151.322092846439,159.528692861074,168.403679572881,159.659975643558
+"1046",30,44,1,0,"Cancers","Black","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",217.692026226859,226.917280253386,236.440355320028,227.00955252416
+"1047",30,44,1,0,"Cardiovascular","Black","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",313.205193820085,326.225797422323,338.05771764251,326.061263703601
+"1048",30,44,1,0,"Communicable","Black","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",69.7277665843894,75.8259502875637,82.8355131018245,75.9934709940463
+"1049",30,44,1,0,"Injuries","Black","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",76.8563764407219,81.1708417203336,86.0484603837427,81.2954915871778
+"1050",30,44,1,0,"Non-communicable","Black","Male","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",126.857084874606,134.307756603131,141.198259441043,134.280962150748
+"1051",30,44,1,1,"All other causes","Black","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",133.401032229628,139.070930229975,145.303689839768,139.114739506973
+"1052",30,44,1,1,"Cancers","Black","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",152.814240187618,158.352717099523,163.46246311999,158.332942408151
+"1053",30,44,1,1,"Cardiovascular","Black","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",215.163150745405,223.4902812928,233.005079914742,223.687867485111
+"1054",30,44,1,1,"Communicable","Black","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",49.7411054050286,53.4887951886292,57.6462534954976,53.5790109716774
+"1055",30,44,1,1,"Injuries","Black","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",20.8670497013699,22.7689260238575,24.8163050732843,22.7813133491747
+"1056",30,44,1,1,"Non-communicable","Black","Female","New Jersey",2012,"Mid-Atlantic","Northeast","NJ",92.8140145125504,97.4224027941028,102.589063652075,97.4946658515116
+"1057",30,45,0,0,"All other causes","White","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",139.399486630321,142.997977270413,146.728104155781,143.025373950525
+"1058",30,45,0,0,"Cancers","White","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",189.332500443045,193.193002911984,196.939223287504,193.210552630939
+"1059",30,45,0,0,"Cardiovascular","White","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",264.369240602279,269.238697477401,273.754002866049,269.211064390755
+"1060",30,45,0,0,"Communicable","White","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",41.1781266689565,43.2179156683915,45.3059644921581,43.2361154977021
+"1061",30,45,0,0,"Injuries","White","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",64.0319885250462,66.4113247805301,68.6292549532123,66.3746275246138
+"1062",30,45,0,0,"Non-communicable","White","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",98.495221743016,101.242115454829,104.284928033325,101.256495140797
+"1063",30,45,0,1,"All other causes","White","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",119.674898937738,121.988821546879,124.762392085521,122.029150178727
+"1064",30,45,0,1,"Cancers","White","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",140.598631168522,143.225620275787,145.655375652727,143.178365080843
+"1065",30,45,0,1,"Cardiovascular","White","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",171.67587639177,174.678347263543,177.786787644015,174.72322270918
+"1066",30,45,0,1,"Communicable","White","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",28.3959427537771,29.71061323065,31.0470761810808,29.7179981576437
+"1067",30,45,0,1,"Injuries","White","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",24.3009992771065,25.4406860221534,26.6725157587162,25.4573615173925
+"1068",30,45,0,1,"Non-communicable","White","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",78.1906431439184,80.2195284937266,82.5513767457258,80.2692611228721
+"1069",30,45,1,0,"All other causes","Black","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",157.381785649547,167.71843787474,177.602671453769,167.737073570006
+"1070",30,45,1,0,"Cancers","Black","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",207.530873395381,219.036321481772,230.939793251821,219.128247029836
+"1071",30,45,1,0,"Cardiovascular","Black","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",312.498444547102,326.332831978808,340.563962583903,326.356992337829
+"1072",30,45,1,0,"Communicable","Black","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",66.1079313167426,73.4982248086036,80.3693636652414,73.4428461217759
+"1073",30,45,1,0,"Injuries","Black","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",77.6700825806663,82.3900546455213,87.6609613077662,82.4612543872946
+"1074",30,45,1,0,"Non-communicable","Black","Male","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",124.303198767757,132.165305088488,141.113189361434,132.36389160541
+"1075",30,45,1,1,"All other causes","Black","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",135.414136460295,142.226016935803,149.567486308089,142.198182637499
+"1076",30,45,1,1,"Cancers","Black","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",151.198088880507,157.649773311057,164.018407680772,157.660131828766
+"1077",30,45,1,1,"Cardiovascular","Black","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",205.518196078107,214.409588527222,224.438815155352,214.696584997236
+"1078",30,45,1,1,"Communicable","Black","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",50.3594107962714,54.9834058037929,59.4595040775903,54.9809718528607
+"1079",30,45,1,1,"Injuries","Black","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",20.8772825450083,22.8946652372753,25.1511340330575,22.915105869143
+"1080",30,45,1,1,"Non-communicable","Black","Female","New Jersey",2013,"Mid-Atlantic","Northeast","NJ",87.046367396753,92.2122221514296,98.1019652004585,92.277339124542
