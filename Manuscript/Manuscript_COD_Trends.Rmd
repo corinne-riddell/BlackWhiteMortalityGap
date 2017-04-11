@@ -1,9 +1,10 @@
 ---
-title: 'Historical trends in the contribution of six major causes of death to the black-white life expectancy gap by US state'
+title: Historical trends in the contribution of six major causes of death to the black-white
+  life expectancy gap by US state
 bibliography: bibliography.bib
 output:
-  html_document: default
   word_document: default
+  html_document: default
 always_allow_html: yes
 ---
 
@@ -264,7 +265,7 @@ The situation was reversed for females, with black females experiencing relative
 
 **Cancer**
 
-For both races and both sexes, mortality from cancer peaked in the mid 1990s and decreased thereafter (**eFigures 3 and 4**). Among males, this inverted U-shape pattern was accentuated among blacks, which resulted in an inverted-U shape pattern in the difference in mortality between black and white males and in cancer's contribution to the life expectancy gap (**Figure 5**). Notable exceptions to this general pattern include Washington DC and Wisconsin, states that had higher initial contributions and underwent increasing cancer contributions over time, and New York and Massechusetts, exhibiting sharper decreases in cancer contributions.
+For both races and both sexes, mortality from cancer peaked in the mid 1990s and decreased thereafter (**eFigures 3 and 4**). Among males, the peak mortality rate was much higher among blacks, which resulted in an inverted-U shape pattern in the difference in mortality between black and white males and in cancer's contribution to the life expectancy gap (**Figure 5**). Notable exceptions to this general pattern include Washington DC and Wisconsin, states that had higher initial contributions and underwent increasing cancer contributions over time, and New York and Massechusetts, exhibiting sharper decreases in cancer contributions.
 
 For females, while cancer-related mortality continues to be higher among blacks in many states, the inverted-U pattern in mortality is similar between blacks and whites resulting in a flat general pattern in the contribution of cancer to the life expectancy over time (**Figure 6**). [You could potentially stop here to save space and just include the comment about there being little inequality in cancer mortality ]. Washington DC deviates by exhibiting increasing cancer contributions to the gap, while New York, Connecticut, exhibit no inequality in cancer mortality, while Massachusetts exhibits lower cancer rates among blacks (**eFigure 4**).
 
@@ -431,6 +432,11 @@ ggplotly(`All other causes.Female.plot`[[3]])
 
 Lit review
 
+BW disparities (period-based studies)
+- "higher death rates due to heart disease, cancer, homicide (men), diabetes (women), and perinatal conditions" - kochanek et al 2013, harper et al 2007; see also Orsi 2010
+- harper 2012; 
+- Macinko and Elo (2009): decline in disparity among working-aged people since late 1980s.
+
 Life Expectancy generally
 The spotlight on racial disparities in the US has intensified. Several recent papers examining US mortality by region, cause of death, or within population subgroups have received considerable attention while ignoring important black-white disparities.2, 3, 4 These disparities remain profound, and no previous paper has examined cause-specific contributions by state over an extended time period. Our analysis provides an important contribution to the literature by highlighting a high degree of heterogeneity in state-specific performance over time in eliminating these inequalities.
 from above:
@@ -439,6 +445,9 @@ from above:
 3. Dwyer-Lindgren L, Bertozzi-Villa A, Stubbs RW, Morozoff C, Kutz MJ, Huynh C, Barber RM, et al. US County-Level Trends in Mortality Rates for Major Causes of Death, 1980-2014. JAMA. 2016. 316(22):2385-2401. 
 
 4. Case A, Deaton A. Rising morbidity and mortality in midlife among white non-Hispanic Americans in the 21st century. Proc Natl Acad Sci. 2015. 112(49):15078-83. 
+
+CVD
+Why did NY and Mass do so well at decreasing the disparity? Why did Wisconsin and Michigan do poorly?
 
 Cancer
 
@@ -465,6 +474,8 @@ see: https://www.washingtonpost.com/news/to-your-health/wp/2015/11/12/smoking-am
 -by geography: highest in the midwest (20.7%), then south (17%), NE (15.3%), then west (13%), within heterogeneity within state (
 Dwyer-Lindgren  L, Mokdad  AH, Srebotnjak  T, Flaxman  AD, Hansen  GM, Murray  CJ.  Cigarette smoking prevalence in US counties: 1996-2012.  Popul Health Metr. 2014;12(1):5.)
 
+-Delancey et al (2008) identified more rapid decreases in smoking related cancers among black males since 1990 as contributing to the decrease in the overall gap.
+
 
 Obesity and...
 -high obesity in the south - ref 9
@@ -481,13 +492,40 @@ Paulozzi LJ, Ryan GW. Opioid analgesics and rates of fatal drug poisoning in the
 
 Centers for Disease Control and Prevention. Vital signs: overdoses of prescription opioid pain relievers—United States, 1999–2008. MMWR Morb Mortal Wkly Rep. 2011;60(43):1487–1492.: Another study showed that prescription opioid sales ranged from 3.7 (Illinois) to 12.6 (Florida) kilograms per 10,000 population, and opioid-related mortality rates ranged from 5.5 (Nebraska) to 27 (New Mexico) per 100,000 population.2
 
+Policy reflections
+-CVD still contributes the most to the currently LE gap. Firebaugh et al (2014) say that policy needs to focus on treatment once CVD is realized, not prevention ("The incidence component is negligible, indicating that blacks and whites are equally likely to succumb to heart disease. Heart disease nevertheless account for one quarter of the gap in 2015 because black victims tends to be younger than white victims. Iterventions should focus on identifying heart disease and equalizing treatment. Same goes for Cancers, non-comm diseases. Contrast with HIV/AIDS, prevention is key (since diff is in "incidence", not age at death with comm disease)"
+  - can we see this in our age-cod breakdown?/are these conclusions supported there - something about treatment vs. prevention?
+
+-should the focus be prevention of specific condictions/diseases, treatment of those conditions/diseases, or more distal --- SES differences - edu, employment, income (Hummer Du Bois review argues we need to focus on SES distal exposures, while Firebaugh 2014 differentiates whhen to focus on treatmnet of condition vs. prevention of the condition)
+
+-medicaid coverage varies among states. MS and NY have longer black LE than general trend and also have expanded medicare coverage (Bharmal 2012 citing the henry kaiser family foundation). CA NJ in middle for LE and coverage, AL TX lower for both -- so there is this observed ecological association
+
 Strengths
 
 
 Limitations
 -does not account for migration. Washington DC - have a lot of migration of high SES white folks coming in, and perhaps also relatively high SES black folks moving out
 -see the migration literature sent by Sam
--does not account for hispanic ethinicity - demographic shifts in FL for example of black and white hispanics which will pull LE and disparities
+-does not account for hispanic ethinicity - demographic shifts in FL, CA, TX for example of black and white hispanics which will pull LE and disparities
+-high level of mexican immigration since 1965
+
+Problems specific to DC
+-migration's affect on LE over the course of the time period
+
+-migration - has been on the decline since the 1980s (Molloy 2011, 2017). migration happens more in people with bachelor's degrees in their early twenties (and declines thereafter) but is at a bit of a higher rate throughout lifetime than those without degree (Kaplan 2017)
+-roughly 1.5% of the popn moves between census regions per year, and 1.3% move within states in a census region.
+
+helpful: https://www.nytimes.com/2014/08/16/upshot/mapping-migration-in-the-united-states-since-1900.html
+-"western expansion", movement of souther blacks to northern states, and migration out of rust belt.
+-DC - influx in immigrants since 1980s, huge migration from other US states (NY, MD then Virginia), but also huge outflux to MD and Virginia. Should almost consider these three places as one.
+-lots of migraiton into MD
+-NY - 24% are immigrants
+-Texas has influx of immigrants to 17%
+-lots of migration into virginia, as well as immigration
+-Florida is the state most known for in-migration, both from states (Northeast particularly NY) and from outside the US
+-Alabama gets migrants from other southern states
+-Connecticut - influx in those immigrating from outside US since 1990s
+
 
 ###Appendix
 
