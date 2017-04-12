@@ -259,27 +259,23 @@ refine.patterns <- function(plot) {
 
 **Cardiovascular disease**
 
-Cardiovascular disease (CVD) is the most common cause of death for both men and women of both races. Mortality from CVD decreased markedly since 1969 for both sexes and races (**eFigures 1 and 2**). However, white males underwent relatively larger mortality decreases than black males, resulting in a modest increase to the contribution of CVD to the life expectancy gap for most states (**Figure 3**). In particular, Pennsylvania, Michigan, Wisconsin, and Washington DC experienced relatively larger increases to their CVD contributions to the gap for males, while some states such as Illinois and Kentucky exhibited relatively larger early contributions in the 1970s. 
-
-The situation was reversed for females, with black females experiencing relatively larger mortality decreases over time compared to white females. Thus, the contribution of CVD to the life expectancy gap decreased by more than a year in several states (**Figure 4**). Of note, some western states experienced a period of early increasing contributions that was not captured by the general pattern. Furthermore, Wisconsin, Michigan, and Washington DC both exhibit increasing contributions over time, as mortality gains among white females outpaced those among black females. 
+Cardiovascular disease (CVD) is the most common cause of death for both men and women of both races. Mortality from CVD decreased markedly since 1969 for both sexes and races (**eFigures 1 and 2**). However, white males underwent relatively larger mortality decreases than black males, resulting in a modest increase to the contribution of CVD to the life expectancy gap for most states (**Figure 3**). For females, black women experienced relatively larger mortality decreases over time compared to white females, resulting in a decrease to the CVD contribution to the life expectancy gap that was greater than one year in several states (**Figure 4**). For both genders, Michigan, Wisconsin, California, and DC exhibit recent contributions that are relatively larger than the general pattern, while Massachusettes and New York exhibit persistently lower levels of CVD contributions.
 
 **Cancer**
 
-For both races and both sexes, mortality from cancer peaked in the mid 1990s and decreased thereafter (**eFigures 3 and 4**). Among males, the peak mortality rate was much higher among blacks, which resulted in an inverted-U shape pattern in the difference in mortality between black and white males and in cancer's contribution to the life expectancy gap (**Figure 5**). Notable exceptions to this general pattern include Washington DC and Wisconsin, states that had higher initial contributions and underwent increasing cancer contributions over time, and New York and Massechusetts, exhibiting sharper decreases in cancer contributions.
-
-For females, while cancer-related mortality continues to be higher among blacks in many states, the inverted-U pattern in mortality is similar between blacks and whites resulting in a flat general pattern in the contribution of cancer to the life expectancy over time (**Figure 6**). [You could potentially stop here to save space and just include the comment about there being little inequality in cancer mortality ]. Washington DC deviates by exhibiting increasing cancer contributions to the gap, while New York, Connecticut, exhibit no inequality in cancer mortality, while Massachusetts exhibits lower cancer rates among blacks (**eFigure 4**).
+For both races and both sexes, mortality from cancer peaked in the mid 1990s and decreased thereafter (**eFigures 3 and 4**). Among males, the peak mortality rate was much higher among blacks, which resulted in an inverted-U shape pattern in the difference in mortality between black and white males and in cancer's contribution to the life expectancy gap (**Figure 5**). For females, while cancer-related mortality continues to be higher among blacks in many states, the inverted-U pattern in mortality is similar between blacks and whites resulting in a flat general pattern in the contribution of cancer to the life expectancy over time (**Figure 6**). For both genders, DC and Wisconsin exhibit the largest cancer contributions (and also exhibit high initial values among males, but not females), while New York and Massachusettes underwent large decreases in the amount that cancer contributed to the life expectancy gap.
 
 **Non-communicable disease**
 
-Mortality from non-communicable disease has been increasing over time for black and white males in most states, with DC as a notable exception (**Figure X**). Recently, there has been a slight decrease in mortality rates, especially among black males. These trends are similar among females, except that black females exhibited a sharper decline in mortality in recent years, eliminating the mortality difference in several states. As such, the contribution of non-communicable disease to the mortality gap was general flat among men with a recent decrease, and exhibited a gradual decrease over time among women. 
+Mortality from non-communicable disease has been increasing over time for black and white males in most states, with DC as a notable exception (**eFigure X**). Recently, there has been a slight decrease in mortality rates, especially among black males. These trends are similar among females, except that black females exhibited a sharper decline in mortality in recent years, eliminating the mortality difference in several states (**eFigure Y**). As such, the contribution of non-communicable disease to the mortality gap was generally flat among men with a recent decrease, and exhibited a gradual decrease over time among women (**Figures 7 and 8**). As with previous causes, New York and Massachusettes exhibit decreasing contributions, and Nevada has also made substantial progress. Furthermore, while DC's mortality rates decreased, they still have the highest contribution of non-communicable disease to the gap. 
 
 **Injury**
 
-Injury is one of the least common causes of death. Over time, injury-related mortality has decreased precipitously among blacks, although an [insurgence][better word?] of crime in the 1990s resulted in heightened mortality from injuries among black males at that time (**Figure X**). For whites, most states exhibit an initial period of gradual decreases in injury mortality, followed by a period of gradual increases, especially among white females (**Figure X**). Thus, injury mortality rates among blacks are the same as, or lower than those among whites in many states, especially among females. Thus, the contribution of injuries to the mortality gap has generally decreased over time, and has become negative in those states with lower injury-related mortality among blacks than whites (**Figures X and X**). Among males, Wisconsin and Washington DC diverged the most from the general pattern, as both states experienced steep increases in the contribution of injuries during the 1990s that was not captured by the general trend. Washington DC also exhibited this pattern among females.
+Injury is one of the least common causes of death. Over time, injury-related mortality has decreased precipitously among blacks, although an [insurgence][better word?] of crime resulted in heightened mortality from injuries among black males during the 1990s (**Figure X**). For whites, most states exhibit an initial period of gradual decreases in injury mortality, followed by a period of gradual increases, especially among white females (**Figure X**). Thus, injury mortality rates among blacks are the same as, or lower than those among whites in many states, with white females demonstrating sharper increases. Thus, the contribution of injuries to the mortality gap has generally decreased over time, and has become negative in those states with lower injury-related mortality among blacks than whites (**Figures 9 and 10**). Among males, DC, Illinois, Michigan and Missouri exhibit the largest recent injury-related contributions. Among females, many southern states exhibit negative contributions (indicating lower injury-related mortality among black women), while DC, Illinois, and Michigan having higher contributions than the general trend.
 
 **Communicable disease**
 
-Communicable disease is the least most common cause of death, although the 1990s exhibited an enormous increase in mortality related to communiable disease at the height of the HIV/AIDS epidemic before anti-retroviral therapy was available. This spike was greater among males, especially blacks, and within states with larger urban centers. Thus, the contribution of communicable disease to the life expectancy gap exhibits a peak in the mid 1990s, with states diverging from this general pattern according to the intensity of their local epidemics. 
+Communicable disease is the least most common cause of death, although the 1990s exhibited an enormous increase in mortality related to communiable disease at the height of the HIV/AIDS epidemic before anti-retroviral therapy was available. This spike was greater among males, especially blacks, and within states with larger urban centers. Thus, the contribution of communicable disease to the life expectancy gap exhibits a peak in the mid 1990s, with states diverging from this general pattern according to the intensity of their local epidemics (**Figures 11 and 12**). DC still exhibits higher communicable disease-related contributions among men, while New Jersey and Florida additionally show higher contributions among females.
 
 **All other causes**
 
@@ -430,6 +426,26 @@ ggplotly(`All other causes.Female.plot`[[3]])
 
 ###Discussion 
 
+**Summary of findings**
+
+- In this paper, we examined state-level trends in six major CODs' contributions to the black-white LE gap.
+- While we found that many state-level trends followed the same pattern of COD-specific contributions, several states were divergent. Furthermore, different patterns emerged for males compared to females.
+- 
+
+
+
+
+*Literature review*
+
+
+*Strengths and weaknesses*
+
+
+*Conclusions*
+
+
+- DC exhibits the highest contributions for many causes, but they have the greatest gap and a widening gap - so more room for each cause to contribute. Goes to say that all causes are contributing to the gap (it isn't being driven by one cause in particular)
+
 Lit review
 
 BW disparities (period-based studies)
@@ -528,5 +544,16 @@ helpful: https://www.nytimes.com/2014/08/16/upshot/mapping-migration-in-the-unit
 
 
 ###Appendix
+**S1 Table: Cause of death groupings**
+
+| Broad cause of death     | Included causes of death                                                     |
+|--------------------------|------------------------------------------------------------------------------|
+| Cancers                   | Lip; Tongue; Salivary gland; Floor of mouth; Gum and other mouth; Nasopharnyx; Tonsil; Oropharynx; Hypopharynx; Other oral cavity and pharynx; Esophagus; Stomach; Small intestine; Colon excluding rectum; Rectum and rectosigmoid junction; Anus, anal canal and anorectum; Liver; Intrahepatic bile duct; Gallbladder; Other biliary; Pancreas; Retroperitoneum; Peritoneum, Omentum and mesentery; Other digestive organs; Nose, nasal cavity and middle ear; Larynx; Lung and bronchus; Pleura; Trachea, Mediastinum and other respiratory organs; Bones and joints; Soft tissue including heart; Melanoma of the skin; Non-melanoma skin; Breast; Cervix uteri; Corpus uteri; Uterus, NOS; Ovary; Vagina; Vulva; Other female genital organs; Prostate; Testis; Penis; Other male genital organs; Urinary bladder; Kidney and renal pelvis; Ureter; Other urinary organs; Eye and orbit; Brain and other nervous system; Thyroid; Other endocrine including thymus; Hodkin lymphoma; Myeloma; Acute lymphocytic leukemia; Chronic lymphocytic leukemia; Other lymphocytic leukemia; Acute myeloid leukemia; Acute monocytic leukemia; Chronic myeloid leukemia; Other myeliod/monocytic leukemia; Other acute leukemia; Aleukemic, Subleukemic and NOS; Miscellaneous malignant cancer. |
+| Cardiovascular disease   | Diseases of heart; Hypertension without heart disease; Cerebrovascular diseases; Atherosclerosis; Aortic aneurysm and dissection; Other diseases of arteries, arterioles, capillaries. | 
+| Communicable disease     | Tuberculosis; Syphilis; HIV (1987+), Septicemia; Other infectious and parasitic diseases; Pneumonia and influenza |
+| Non-communicable disease | Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Syndrome and Nephrosis.  |
+| Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
+| All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
+
 
 ###Bibliography
