@@ -41,6 +41,9 @@ BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
 
 cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
 cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
+
+cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiovascular", "Cancers", "All other causes",
+                                                                        "Communicable", "Non-communicable",  "Injuries"))
 ```
 
 ###Abstract
@@ -222,6 +225,63 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
   return(list(plot1 = a, plot2 = b, plot3 = c))
 }
 ```
+
+**Men**
+
+```{r stacked_trends_male, echo=F, fig.height=9, fig.width=11}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male"), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (1969-2013)"))
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (2009-2013)"))
+```
+
+**Women**
+
+```{r stacked_trends_female, echo=F, fig.height=9, fig.width=11}
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female"), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (1969-2013)"))
+
+ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (2009-2013)"))
+```
+
 
 ```{r create-the-resid-plots, echo = F, message = F}
 for(COD_i in levels(cod_decomp_results$COD)) {
