@@ -549,19 +549,14 @@ BW disparities (period-based studies)
 
 *Strengths and weaknesses*
 
-We used data over 45 years, across two race/ethnicities, and for all age groups. By examining a wide time window, trends were examined that provided context for the contributions estimated in the most recent year. This allowed us to recognize when the estimated contributions for a particular cause were relatively low *because they started low* vs. low *because they trended that way*. Furthermore, our analysis was centred on decomposing life expectancy at birth, a measure that integrates mortality rates across all ages. This is especially important in the light of recent studies that have recieved criticism for narrowly focusing on a specific age which may present a distorted reality [Case & Deaton, Minton IJE 2016, ]. Alongside the decomposition results and age-standardized mortality rates, the scope of our analysis allows readers to examine differences in state-level inequality from many angles. [Methodologically, using the Bayesian autoregressive model, allowed us to estimate mortality rates in strata that were sparsely populated...*something about methods?*]
+We used data over 45 years, across two race/ethnicities, and for all age groups. By examining a wide time window, trends were examined that provided context for the contributions estimated in the most recent year. This allowed us to recognize when the estimated contributions for a particular cause were relatively low *because they started low* vs. low *because they had decreased over time*. Furthermore, our analysis was centred on decomposing life expectancy at birth, a measure that integrates mortality rates across all ages. This is especially important in light of recent studies that have recieved criticism for narrowly focusing on a specific age group, which may present a distorted reality [Case & Deaton, Minton IJE 2016, ]. Alongside the decomposition results and age-standardized mortality rates, the scope of our analysis allows readers to examine differences in state-level inequality from many angles. [Methodologically, using the Bayesian autoregressive model, allowed us to estimate mortality rates in strata that were sparsely populated...*something about methods?*]
 
-Our analysis has two main limitations. Firstly, we did not account for hispanic ethinicity, implying that both black and white populations in our study include some portion of hispanics that is known to differ over time and by state. We decided against excluding hispanics from this study because the indicator for ethnicity has been noted to have varying accuracy across states and during the earlier years of data. Thus, states with demographic shifts due to immigration from Mexico such as Florida, California, and Texas, will have estimates of life expectancy and the contribution that are affected. However, we are somewhat reassured by a previous sensitivity analysis, where we found that accounting for hispanic ethinicity did not have a substantial effect on the results [ref Harper 2012]. Secondly, our analysis did not account for the migration of individuals between states. Thus, states with black or white populations that have shifted over time will be affected. This limits the interpretation of results especially for Washington DC, as it has undergone substantial demographic shifts since X. 
+Our analysis has two main limitations. Firstly, we did not account for hispanic ethinicity, implying that both black and white populations in our study include some portion of hispanics that is known to differ over time and by state. We decided against excluding or adjusting for hispanic ethnicity in this study because the indicator for ethnicity has been noted to have varying accuracy across states and during the earlier time period [ref]. Thus, states with demographic shifts due to immigration from Mexico such as Florida, California, and Texas, will have estimates of life expectancy that are likely higher than they would have been had hispanics been excluded [ref]. In a previous sensitivity analysis, we found that accounting for hispanic ethinicity did not have a substantial effect on the results [ref Harper 2012], providing some evidence that not accounting for hispanic ethnicity should not substantially affect our findings. 
 
-
-Problems specific to DC
--migration's effect on LE over the course of the time period
-
--migration - has been on the decline since the 1980s (Molloy 2011, 2017). migration happens more in people with bachelor's degrees in their early twenties (and declines thereafter) but is at a bit of a higher rate throughout lifetime than those without degree (Kaplan 2017)
--roughly 1.5% of the popn moves between census regions per year, and 1.3% move within states in a census region.
+Secondly, our analysis does not account for immigration, or migration between states. Individuals who immigrate to the US have been shown to have life expectancies at birth that are 5.8 and 4.8 years longer for men and women, respectively in 2008-2010 [ref Preston 2014]. As we are examine the difference in life expectancy between blacks and whites, this gap will be affected by the amount of immigration to the extent that new immigrants identify as black or white. Migration between states can also affect life expectancy. Migration is particularly important for the District of Columbia, because of it's small geographical bounds (it is easier to be considered migration when regions are smaller - how to say this?), and substantial in-migration from New York, in- and out-migration to contiguous Maryland and Virginia. Middle and upper-class black residents have been shown to move to the suburbs in Maryland and Virginia, while affluent whites are imigrating to DC. These changes would both serve to increase the racial gap in DC.
 
 helpful: https://www.nytimes.com/2014/08/16/upshot/mapping-migration-in-the-united-states-since-1900.html
--"western expansion", movement of souther blacks to northern states, and migration out of rust belt.
+-movement of southern blacks to northern states, and migration out of rust belt.
 -DC - influx in immigrants since 1980s, huge migration from other US states (NY, MD then Virginia), but also huge outflux to MD and Virginia. Should almost consider these three places as one.
 -lots of migraiton into MD
 -NY - 24% are immigrants
@@ -570,6 +565,22 @@ helpful: https://www.nytimes.com/2014/08/16/upshot/mapping-migration-in-the-unit
 -Florida is the state most known for in-migration, both from states (Northeast particularly NY) and from outside the US
 -Alabama gets migrants from other southern states
 -Connecticut - influx in those immigrating from outside US since 1990s
+
+
+Individuals who migrate are more likely to have completed a bachelor's degree than those who do not, suggesting that migration may contribute to heightened life expectancy. 
+
+Thus, states with black or white populations that have shifted over time will be affected. This limits the interpretation of results especially for Washington DC, as it has undergone substantial demographic shifts since X. 
+-foreign borns tend to have higher LE, so increase in immigration can lead to gains in LE in either blacks or whites, or both, depending on the country of origin - better because of migrant selectivity (select on traits related to good health) and better health (less likely to smoke or be obese or binge drink [ref], and return migration when they become sick)
+
+
+
+
+Problems specific to DC
+-migration's effect on LE over the course of the time period
+
+-migration - has been on the decline since the 1980s (Molloy 2011, 2017). migration happens more in people with bachelor's degrees in their early twenties (and declines thereafter) but is at a bit of a higher rate throughout lifetime than those without degree (Kaplan 2017)
+-roughly 1.5% of the popn moves between census regions per year, and 1.3% move within states in a census region.
+
 
 
 *Conclusions*
