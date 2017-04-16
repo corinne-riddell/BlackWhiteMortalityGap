@@ -88,11 +88,15 @@ age_decomp_results$age <- factor(age_decomp_results$age_minbin, levels = c(0, 1,
 ```{r add_Census_Variables, echo = F}
 BlackWhite_results <- add_Census_Region(BlackWhite_results, state)
 BlackWhite_results <- add_Census_Division(BlackWhite_results, state)
+BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
+
 BlackWhite_results$stabbrs <- state.abb[match(BlackWhite_results$state, state.name)]
 BlackWhite_results$stabbrs[BlackWhite_results$state == "Washington DC"] <- "DC"
 
 cod_decomp_results <- merge(BlackWhite_results %>% select(stratum.id, Census_Region, Census_Division, stabbrs), 
                             cod_decomp_results, by = "stratum.id", all.y = T)
+cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
+
 ```
 
 ```{r prep_decomp_for_plotting, echo = F}
