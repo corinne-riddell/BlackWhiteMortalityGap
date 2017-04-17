@@ -55,6 +55,7 @@ age_decomp_results$new.finish2 = age_decomp_results$finish2 + age_decomp_results
 age_decomp_results$LE_black_mean[age_decomp_results$age != "<1 year"] <- NA
 age_decomp_results$LE_white_mean[age_decomp_results$age != "<1 year"] <- NA
 
+BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
 
 
 
@@ -79,12 +80,26 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                              choices = levels(cod_decomp_results$COD)),
                                 radioButtons(inputId = "contribution_type", label = NA, 
                                              inline = T, choices = c("Years", "Proportion (%)"), selected = "Years")
+                                
                               
                                 
                    ),
                    
                    mainPanel(
                      tabsetPanel(
+                       tabPanel("Overview",
+                                htmlOutput("app_description"),
+                                img(src = "CClicense.png")
+                                ),
+                       
+                       tabPanel("State summary: Life expectancy Gap",
+                                radioButtons(inputId = "sex_LEgap", label = "Gender:", 
+                                             inline = T, choices = c("Male", "Female"), selected = "Male"),
+                                sliderInput("years_LEgap", label = "Years:",
+                                            min = 1969, max = 2013, value = c(1969, 2013)),
+                                plotlyOutput("state_LEsummary", height = 800)
+                                ),
+                       
                        tabPanel("State summary: COD",
                                 textOutput("description_cod_summary"),
                                 plotlyOutput("state_cod_summary", height = 800)),
@@ -128,7 +143,71 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
 )
 
 server <- function(input, output) {
- 
+
+  ##########################################
+  ##            overview tab              ##
+  ########################################## 
+  
+  output$app_description <- renderUI({
+    HTML(paste("The purpose of this app is to allow in-depth exploration 
+                of the difference in life expectancy in the US between blacks and whites.",
+               "This app is licensed under a creative commons Attribution-NonCommercial 4.0 International License.",
+               sep = "<br/> <br/>"))
+  })
+
+  ##########################################
+  ##             LE summary tab           ##
+  ########################################## 
+  
+  output$state_LEsummary <- renderPlotly({
+    LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == input$sex_LEgap & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
+                                  aes(y = LE_wbgap_mean, x = year)) +
+      geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = input$years_LEgap[1])) +
+      geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl), fill = "grey", alpha = 0.5) +
+      geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+      facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+      theme_classic(base_size = 10) +
+      theme(axis.text.x = element_blank(),
+            strip.background=element_blank(),
+            axis.line=element_blank(),
+            axis.ticks=element_blank()) +
+      ylab("Life expectancy gap (years)") +
+      xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
+
+    interactive.plot <- ggplotly(LE_trend_plot_males)
+    
+    for(i in 1:160){
+      if (interactive.plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+        interactive.plot$x$data[[i]]$hoverinfo <- "none"
+      }
+      
+      interactive.plot$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.plot$x$data[[i]]$text)
+      interactive.plot$x$data[[i]]$text <- gsub("LE_wbgap_mean", "Mean life expectancy", interactive.plot$x$data[[i]]$text)
+      interactive.plot$x$data[[i]]$text <- gsub("LE_wbgap_ucl", "Upper credible limit", interactive.plot$x$data[[i]]$text)
+      interactive.plot$x$data[[i]]$text <- gsub("LE_wbgap_lcl", "Lower credible limit", interactive.plot$x$data[[i]]$text)
+    }
+    
+    interactive.plot
+    
+    # interactive.plot <- ggplotly(LE_trend_plot_males)
+    # 
+    # refine.patterns <- function(plot) {
+    #   for(i in 1:320){
+    #     if(plot$x$data[[i]]$line$color == "rgba(190,190,190,1)"){
+    #       plot$x$data[[i]]$line$width <- 0.7559055
+    #       plot$x$data[[i]]$hoverinfo <- "none"
+    #     }
+    #     if(plot$x$data[[i]]$line$color == "rgba(0, 0, 0, 1)"){
+    #       plot$x$data[[i]]$hoverinfo <- "none"
+    #     }
+    #   }
+    #   return(plot)
+    # }
+    # 
+    # interactive.plot$x$data
+    
+  })
+  
   ##########################################
   ##                 COD tab              ##
   ########################################## 

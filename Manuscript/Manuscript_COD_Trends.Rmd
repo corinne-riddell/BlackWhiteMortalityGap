@@ -37,9 +37,9 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 
 ```{r load_data, echo=F}
 BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
-
+BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
 cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
-
+cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
 cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiovascular", "Cancers", "All other causes",
                                                                         "Communicable", "Non-communicable",  "Injuries"))
 ```
