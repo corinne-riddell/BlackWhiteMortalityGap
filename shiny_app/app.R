@@ -80,7 +80,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 htmlOutput("description_cod_trends"),
                                 radioButtons(inputId = "sex_CODtrends", label = "Gender:", 
                                              inline = T, choices = c("Male", "Female"), selected = "Male"),
-                                selectInput(inputId = "COD", choices = levels(cod_decomp_results$COD), label = "COD: "),
+                                selectInput(inputId = "COD", choices = levels(cod_decomp_results$COD), label = "COD: ", width = '150px'),
                                 radioButtons(inputId = "plot_choice", label = "Choose the plot style", 
                                              inline = T, choices = c("Arrange as map", "Arrange as grid")),
                                 radioButtons(inputId = "contribution_type", label = "Display contribution in:", 
@@ -143,7 +143,7 @@ server <- function(input, output) {
   ########################################## 
   
   output$state_LEsummary <- renderPlotly({
-    LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == input$sex_LEgap & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
+    LE_trend_plot <- ggplot(data = subset(BlackWhite_results, sex == input$sex_LEgap & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
                                   aes(y = LE_wbgap_mean, x = year)) +
       geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = input$years_LEgap[1])) +
       geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl), fill = "grey", alpha = 0.5) +
@@ -157,7 +157,7 @@ server <- function(input, output) {
       ylab("Life expectancy gap (years)") +
       xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
 
-    interactive.plot <- ggplotly(LE_trend_plot_males)
+    interactive.plot <- ggplotly(LE_trend_plot)
     
     for(i in 1:160){
       if (interactive.plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {

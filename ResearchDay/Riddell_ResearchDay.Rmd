@@ -19,12 +19,21 @@ library(splines)
 library(broom)
 library(tidyverse)
 
+library(png)
+library(jpeg)
+library(grid)
+library(gridExtra)
+library(knitr)
+
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 ```
 
 ```{r load_data, echo=F}
 BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
+BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
+
 cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
 ```
 
 ##Life expectancy 
@@ -59,12 +68,30 @@ LE_trend_plot_females <- ggplot(data = subset(BlackWhite_results, sex == "Female
 
 ##Life expectancy gap in men, 1969-2013
 
-```{r plot_LE_trends_males, echo=F, fig.height=9, fig.width=11, out.height="80%"}
-LE_trend_plot_males +
+```{r plot_LE_trends_males, echo=F, fig.height=9, fig.width=11, out.height="90%", out.width = "90%"}
+LE_trend_plot_males <- LE_trend_plot_males + 
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5)
+
+refine.patterns <- function(plot) {
+  for(i in 1:240){
+  if(plot$x$data[[i]]$line$color == "rgba(190,190,190,1)"){
+    plot$x$data[[i]]$line$width <- 0.7559055
+    plot$x$data[[i]]$hoverinfo <- "none"
+  }
+    if(plot$x$data[[i]]$line$color == "rgba(0, 0, 0, 1)"){
+    plot$x$data[[i]]$hoverinfo <- "none"
+  }
+  }
+  return(plot)
+}
+
+LE_trend_plot_males2 <- refine.patterns(ggplotly(LE_trend_plot_males))
+
+LE_trend_plot_males2
+
 
 ```
 
@@ -100,10 +127,6 @@ ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = ye
 ##Acknowledgements
 
 ```{r, echo=F}
-library(png)
-library(jpeg)
-library(grid)
-library(gridExtra)
 img1 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/k_morrison.png")), interpolate = FALSE)
 img2 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/s_harper2.png")), interpolate = FALSE)
 img3 <-  rasterGrob(as.raster(readJPEG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/j_kaufman.jpg")), interpolate = FALSE)
@@ -116,15 +139,15 @@ grid.arrange(img1,
 ----
 
 ```{r, echo=F, out.width="15%", dpi=72, fig.cap="Kathryn Morrison, PhD"}
-knitr::include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/k_morrison.png")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/k_morrison.png")
 ```
 
 ```{r, echo=F, out.width="15%", dpi=72, fig.cap="Sam Harper, PhD"}
-knitr::include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/s_harper.jpeg")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/s_harper.jpeg")
 ```
 
 ```{r, echo=F, out.width="15%", dpi=72, fig.cap="Jay Kaufman, PhD"}
-knitr::include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/j_kaufman.jpg")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/j_kaufman.jpg")
 ```
 
 
