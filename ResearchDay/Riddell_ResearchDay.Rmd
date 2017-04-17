@@ -1,0 +1,168 @@
+---
+title: An interactive exploration of how changes in cause of death have narrowed the
+  black-white life expectancy gap in the United States
+author: "Corinne Riddell"
+date: "April 16, 2017"
+output: ioslides_presentation
+---
+
+
+```{r initialize, echo=FALSE, warning=F, message=F}
+library(plotly)
+library(viridis)
+library(scales)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(DT)
+library(splines)
+library(broom)
+library(tidyverse)
+
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+```{r load_data, echo=F}
+BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+```
+
+##Life expectancy 
+
+```{r life-expectancy-trends, echo=F}
+LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == "Male"), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 10) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)")
+
+LE_trend_plot_females <- ggplot(data = subset(BlackWhite_results, sex == "Female"), aes(y = LE_wbgap_mean, x = year)) + 
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 10) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)")
+```  
+
+##Life expectancy gap in men, 1969-2013
+
+```{r plot_LE_trends_males, echo=F, fig.height=9, fig.width=11, out.height="80%"}
+LE_trend_plot_males +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5)
+
+```
+
+##Life expectancy gap in women, 1969-2013
+
+```{r plot_LE_trends_females, echo=F, fig.height=9, fig.width=11}
+LE_trend_plot_females +
+  geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5)
+
+```
+
+---
+
+```{r plot_both, echo=F}
+#Informative: male and females at the same time
+ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, group = sex, fill = Census_Division), alpha = 0.5) +
+  geom_line(aes(group = sex, col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 10) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)"))
+```
+
+##Acknowledgements
+
+```{r, echo=F}
+library(png)
+library(jpeg)
+library(grid)
+library(gridExtra)
+img1 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/k_morrison.png")), interpolate = FALSE)
+img2 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/s_harper2.png")), interpolate = FALSE)
+img3 <-  rasterGrob(as.raster(readJPEG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/j_kaufman.jpg")), interpolate = FALSE)
+grid.arrange(img1,
+             img2,
+             img3,
+             ncol = 3)
+```
+
+----
+
+```{r, echo=F, out.width="15%", dpi=72, fig.cap="Kathryn Morrison, PhD"}
+knitr::include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/k_morrison.png")
+```
+
+```{r, echo=F, out.width="15%", dpi=72, fig.cap="Sam Harper, PhD"}
+knitr::include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/s_harper.jpeg")
+```
+
+```{r, echo=F, out.width="15%", dpi=72, fig.cap="Jay Kaufman, PhD"}
+knitr::include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/j_kaufman.jpg")
+```
+
+
+
+
+
+Brainstorming
+=================
+
+when do we use viz the most in academics?
+-For figures in tables - that is, to show your main findings?
+
+When else should we use vis?
+-EDA (at the very beginning) - visualize relationships in the data, and you'll be more likely to catch coding errors you didn't even know you made
+- you'll catch errors in the data itself (measurement problems), or funny things about how the data was coded
+-Assumption checking (analysis stage)
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
