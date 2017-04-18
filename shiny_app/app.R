@@ -72,7 +72,10 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 
                                 conditionalPanel(condition = "input.tab == 'LE.summary' || input.tab == 'COD.summary'",
                                                  sliderInput("years_LEgap", label = "Years:",
-                                                             min = 1969, max = 2013, value = c(1969, 2013))),
+                                                             min = 1969, max = 2013, value = c(1969, 2013)),
+                                                 radioButtons(inputId = "plot_choice", 
+                                                              label = "Plot style:", 
+                                                              inline = T, choices = c("Map", "Grid"))),
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.snapshot' || input.tab == 'Age.snapshot' ",
                                                  selectInput(inputId = "year", label = "Year:", 
@@ -82,10 +85,6 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                  selectInput(inputId = "COD", 
                                                              choices = levels(cod_decomp_results$COD), 
                                                              label = "COD: ", width = '150px'),
-                                                 radioButtons(inputId = "plot_choice", 
-                                                              label = "Plot style:", 
-                                                              inline = T, choices = c("Map", "Grid")
-                                                              ),
                                                  radioButtons(inputId = "contribution_type", 
                                                               label = "Contribution format:", 
                                                               choices = c("Years", "Proportion (%)")
@@ -145,33 +144,6 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
 server <- function(input, output) {
 
   ##########################################
-  ##          More information            ##
-  ########################################## 
-  
-  output$app_description <- renderUI({
-    HTML(paste0("<b>The data</b><br/>Data for this app is publicly available and accessed using the NCI's SEER*stat software. 
-                We extracted mortality counts within strata of state, sex, year, race, age group, and cause of death.
-                There data were smoothed over time using an autoreggresive Bayesian model and suppressed counts (between 
-                1 and 10) were imputed using truncated Poisson regression.<br/><br/>
-                
-                <b>Who we are</b><br/> 
-                We're a group of epidemiologists from McGill University in Montreal, Canada. 
-                These efforts were led by <b>Corinne Riddell</b>. She collected the data, coded and 
-                performed demographic analyses (life tables, cause of death decompositions), and 
-                created this shiny app. <b>Kathryn Morrison</b> is our resident Bayesian,
-                and she coded up the Bayesian model to calculate smoothed mortality rates and their credible intervals. This work was
-                massively inspired by previous work of our mentors and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They provided mentorship, 
-                guidance, and boat-loads of background reading.<br/><br/> 
-                
-                <b>Big hugs!</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, 
-                our friends at Plotly, whose interactive plots are top-notch, and, JAGS maintainer Martyn 
-                Plummer for making JAGS easy to use in R!
-                "
-
-))
-  })
-
-  ##########################################
   ##  State summary: Life expectancy gap  ##
   ########################################## 
   
@@ -190,36 +162,61 @@ server <- function(input, output) {
                 The grey band represents the 95% credible interval for the estimated mean trend line.<br/>"))
   })
   
-  output$state_LEsummary <- renderPlotly({
-    LE_trend_plot <- ggplot(data = subset(BlackWhite_results, sex == input$sex & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
-                                  aes(y = LE_wbgap_mean, x = year)) +
-      geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = input$years_LEgap[1])) +
-      geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl), fill = "grey") +
-      geom_line(aes(col = Census_Division)) + 
-      facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
-      theme_classic(base_size = 10) +
-      theme(axis.text.x = element_blank(),
-            strip.background=element_blank(),
-            axis.line=element_blank(),
-            axis.ticks=element_blank()) +
-      ylab("Life expectancy gap (years)") +
-      xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
-
-    interactive.plot <- ggplotly(LE_trend_plot)
+  grid.contribution.LE <- reactive({
+    ggplotly(ggplot(subset(BlackWhite_results, sex == input$sex & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
+                    aes(x = year, y = LE_wbgap_mean)) + 
+               geom_line(aes(col = state)) + 
+               facet_wrap(~ Census_Division) +
+               ylab("Life expectancy gap (years)") +
+               xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
+               geom_text(data = subset(BlackWhite_results, 
+                                       year == input$years_LEgap[2]-2 & sex == input$sex), 
+                         aes(label = stabbrs), check_overlap = T, size = 2.5) +
+               theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
+               geom_hline(yintercept = 0)
+             )
+  })
+  
+  map.contribution.LE <- reactive({
+    interactive.p <- ggplotly(ggplot(data = subset(BlackWhite_results, sex == input$sex & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
+                          aes(y = LE_wbgap_mean, x = year)) +
+    geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = input$years_LEgap[1])) +
+    geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl), fill = "grey") +
+    geom_line(aes(col = Census_Division)) + 
+    facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+    theme_classic(base_size = 10) +
+    theme(axis.text.x = element_blank(),
+          strip.background=element_blank(),
+          axis.line=element_blank(),
+          axis.ticks=element_blank()) +
+    ylab("Life expectancy gap (years)") +
+    xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")))
     
-    for(i in 1:length(interactive.plot$x$data)){
-      if (interactive.plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
-        interactive.plot$x$data[[i]]$hoverinfo <- "none"
+    for(i in 1:length(interactive.p$x$data)){
+      if (interactive.p$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+        interactive.p$x$data[[i]]$hoverinfo <- "none"
       }
       
-      interactive.plot$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.plot$x$data[[i]]$text)
-      interactive.plot$x$data[[i]]$text <- gsub("LE_wbgap_mean", "Mean life expectancy gap", interactive.plot$x$data[[i]]$text)
-      interactive.plot$x$data[[i]]$text <- gsub("LE_wbgap_ucl", "Upper credible limit", interactive.plot$x$data[[i]]$text)
-      interactive.plot$x$data[[i]]$text <- gsub("LE_wbgap_lcl", "Lower credible limit", interactive.plot$x$data[[i]]$text)
+      interactive.p$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.p$x$data[[i]]$text)
+      interactive.p$x$data[[i]]$text <- gsub("LE_wbgap_mean", "Mean life expectancy gap", interactive.p$x$data[[i]]$text)
+      interactive.p$x$data[[i]]$text <- gsub("LE_wbgap_ucl", "Upper credible limit", interactive.p$x$data[[i]]$text)
+      interactive.p$x$data[[i]]$text <- gsub("LE_wbgap_lcl", "Lower credible limit", interactive.p$x$data[[i]]$text)
     }
     
-    interactive.plot
-    
+    return(interactive.p)
+  })
+  
+
+  
+  plot.chosen.LE <- reactive({
+    plot.LE <- switch(input$plot_choice,
+                   "Map" = map.contribution.LE(), 
+                   "Grid" = grid.contribution.LE())
+    return(plot.LE)
+  })
+  
+  output$state_LEsummary <- renderPlotly({
+    plot.chosen.LE()
   })
   
   ##########################################
@@ -557,6 +554,34 @@ output$age_cod1 <- renderPlot({
 
 output$age_cod2 <- renderPlotly({
   ggplotly(age_cod_plot)
+})
+
+
+##########################################
+##          More information            ##
+########################################## 
+
+output$app_description <- renderUI({
+  HTML(paste0("<b>The data</b><br/>Data for this app is publicly available and accessed using the NCI's SEER*stat software. 
+              We extracted mortality counts within strata of state, sex, year, race, age group, and cause of death.
+              There data were smoothed over time using an autoreggresive Bayesian model and suppressed counts (between 
+              1 and 10) were imputed using truncated Poisson regression.<br/><br/>
+              
+              <b>Who we are</b><br/> 
+              We're a group of epidemiologists from McGill University in Montreal, Canada. 
+              These efforts were led by <b>Corinne Riddell</b>. She collected the data, coded and 
+              performed demographic analyses (life tables, cause of death decompositions), and 
+              created this shiny app. <b>Kathryn Morrison</b> is our resident Bayesian,
+              and she coded up the Bayesian model to calculate smoothed mortality rates and their credible intervals. This work was
+              massively inspired by previous work of our mentors and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They provided mentorship, 
+              guidance, and boat-loads of background reading.<br/><br/> 
+              
+              <b>Big hugs!</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, 
+              our friends at Plotly, whose interactive plots are top-notch, and, JAGS maintainer Martyn 
+              Plummer for making JAGS easy to use in R!
+              "
+              
+  ))
 })
 
 }
