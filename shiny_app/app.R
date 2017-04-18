@@ -6,6 +6,21 @@ library(shinythemes)
 library(dplyr)
 
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/shiny_app/Rsource/SwitchButton.R")
+
+mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_combined.csv")
+mortality.rates.diff <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_combined.csv")
+
+mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) %>% rename(Race = race)
+mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) 
+
+levels(mortality.rates$stabbrs) <- c(levels(mortality.rates$stabbrs), "DC")
+levels(mortality.rates.diff$stabbrs) <- c(levels(mortality.rates.diff$stabbrs), "DC")
+mortality.rates$stabbrs[mortality.rates$state == "Washington DC"] <- "DC"
+mortality.rates.diff$stabbrs[mortality.rates.diff$state == "Washington DC"] <- "DC"
+
+mortality.rates <- reorder.as.map(mortality.rates, "state", "stabbrs")
+mortality.rates.diff <- reorder.as.map(mortality.rates.diff, "state", "stabbrs")
 
 age_cod_results_female <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
 age_cod_results_male <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
@@ -59,7 +74,7 @@ BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
 
 
 
-ui1 <- fluidPage(theme = shinytheme("cosmo"),
+ui1 <- fluidPage(theme = "button.css", #shinytheme("cosmo"),
                  pageWithSidebar(
                  
                  #shinythemes::themeSelector(), 
@@ -70,7 +85,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                  radioButtons(inputId = "sex", label = "Gender:", 
                                                               inline = T, choices = c("Male", "Female"), selected = "Male")),
                                 
-                                conditionalPanel(condition = "input.tab == 'LE.summary' || input.tab == 'COD.summary'",
+                                conditionalPanel(condition = "input.tab == 'LE.summary' || input.tab == 'COD.summary' || input.tab == 'Mortality.trends'",
                                                  sliderInput("years_LEgap", label = "Years:",
                                                              min = 1969, max = 2013, value = c(1969, 2013)),
                                                  radioButtons(inputId = "plot_choice", 
@@ -81,16 +96,24 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                  selectInput(inputId = "year", label = "Year:", 
                                                   choices = unique(BlackWhite_results$year), width = 100)),
                                 
-                                conditionalPanel(condition = "input.tab == 'COD.summary'",
+                                conditionalPanel(condition = "input.tab == 'Mortality.trends' || input.tab == 'COD.summary'",
                                                  selectInput(inputId = "COD", 
                                                              choices = levels(cod_decomp_results$COD), 
-                                                             label = "COD: ", width = '150px'),
+                                                             label = "Cause of death: ", width = '150px')),
+                                
+                                conditionalPanel(condition = "input.tab == 'COD.summary'",
+                                                 # switchButton(inputId = "pop_model",
+                                                 #              label = "Show population curve?",
+                                                 #              value = FALSE, col = "GB", type = "OO"),
+                                                 radioButtons(inputId = "pop_model",
+                                                              label = "Population curve:",
+                                                              choices = c("Hide", "State-specific", "Aggregated"), inline = F,
+                                                              selected = "Hide"),
                                                  radioButtons(inputId = "contribution_type", 
                                                               label = "Contribution format:", 
                                                               choices = c("Years", "Proportion (%)")
-                                                              )
-                                                 )
-                     ),
+                                                              ))
+                                ),
                    
                    mainPanel(
                     
@@ -105,6 +128,11 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 htmlOutput("description_cod_trends"),
                                 plotlyOutput("contribution_plot", height = 700, width = 1100)
                                 ),
+                       
+                       tabPanel(title = "Trends in mortality", value = "Mortality.trends",
+                                htmlOutput("description_mortality_trends"),
+                                plotlyOutput("mortality_plot", height = 700, width = 1100)
+                       ),
                        
                        tabPanel(title = "Cross-sectional COD contribution", value = "COD.snapshot",
                                 htmlOutput("description_cod_summary"),
@@ -151,6 +179,16 @@ server <- function(input, output) {
     sex <- switch(input$sex,
                   "Male" = "male",
                   "Female" = "female")
+  })
+  
+  lowercase.COD <- reactive({
+    COD <- switch(input$COD,
+                  "Cardiovascular" = "cardiovascular disease",
+                  "Communicable" = "communicable disease",
+                  "Cancers" = "cancer",
+                  "Injuries" = "injuries",
+                  "Non-communicable" = "non-communicable disease",
+                  "All other causes" = "all other causes")
   })
   
   output$description_LE_summary <- renderUI({ 
@@ -262,37 +300,54 @@ server <- function(input, output) {
   })
   
   grid.contribution <- reactive({
-    ggplotly(ggplot(contrib.data.react(), aes(x = year, y = y1)) + 
-               geom_line(aes(col = state)) + 
-               facet_wrap(~ Census_Division) +
-               ylab(paste0("Contribution to LE Gap", xaxis.title())) +
-               xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
-               geom_text(data = subset(contrib.data.react(), 
-                                       year == 2013 & sex == input$sex & COD == input$COD), 
-                         aes(label = stabbrs), check_overlap = T, size = 2.5) +
-               theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
-               geom_hline(yintercept = 0))
+    plot <- ggplot(contrib.data.react(), aes(x = year, y = y1)) + 
+      geom_line(aes(col = state)) + 
+      facet_wrap(~ Census_Division) +
+      ylab(paste0("Contribution to LE Gap", xaxis.title())) +
+      xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
+      geom_text(data = subset(contrib.data.react(), 
+                              year == 2013 & sex == input$sex & COD == input$COD), 
+                aes(label = stabbrs), check_overlap = T, size = 2.5) +
+      theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
+      geom_hline(yintercept = 0)
+    
+    if(input$pop_model == "Aggregated"){
+      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 3)
+    }else if(input$pop_model == "State-specific"){
+      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE), col = "black", lty = 3)      
+    }
+    
+    return(ggplotly(plot))
   })
   
   
   map.contribution <- reactive({
-    interactive.plot2 <- ggplotly(ggplot(contrib.data.react(), aes(x = year, y = y1)) +
-                                    geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl), fill = "grey", alpha = 0.5) +
-                                    geom_line(aes(col = Census_Division)) + 
-                                    geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
-                                    facet_wrap(~stabbrs.map.order, ncol = 11, drop = F) +
-                                    theme_classic(base_size = 10) +
-                                    theme(axis.text.x = element_blank(),
-                                          strip.background=element_blank(),
-                                          axis.line=element_blank(),
-                                          axis.ticks=element_blank()) +
-                                    ylab("Contribution to the LE gap") +
-                                    xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
-    )
+    plot <- ggplot(contrib.data.react(), aes(x = year, y = y1)) +
+      geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl), fill = "grey", alpha = 0.5) +
+      geom_line(aes(col = Census_Division)) + 
+      geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+      facet_wrap(~stabbrs.map.order, ncol = 11, drop = F) +
+      theme_classic(base_size = 10) +
+      theme(axis.text.x = element_blank(),
+            strip.background=element_blank(),
+            axis.line=element_blank(),
+            axis.ticks=element_blank()) +
+      ylab("Contribution to the LE gap") +
+      xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
+    
+    if(input$pop_model == "Aggregated"){
+      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
+    }else if(input$pop_model == "State-specific"){
+      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE), col = "black", lty = 3)        
+    }    
+           
+    interactive.plot2 <- ggplotly(plot)
     
     for(i in 1:length(interactive.plot2$x$data)){
       if (interactive.plot2$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
         interactive.plot2$x$data[[i]]$hoverinfo <- "none"
+        interactive.plot2$x$data[[i]]$line$width <- 1
+
       }
       
       interactive.plot2$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.plot2$x$data[[i]]$text)
@@ -316,7 +371,42 @@ server <- function(input, output) {
     plot.chosen()
   })
   
-  #output$temp2 <- renderDataTable(contrib.data.react())
+
+  ##########################################
+  ##     Mortality rates                  ##
+  ########################################## 
+  
+  mortality_plot1 <- reactive({
+    plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
+           aes(x = year, y = rate.per.100k_mean)) + 
+      geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race), fill = "grey", col = NA, alpha = 0.5) +
+      geom_line(aes(col = Race)) +
+      facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
+      xlab(" ") + 
+      ylab("Age-standardized mortality rate (per 100,000)") + 
+      geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
+      ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
+      theme_classic(base_size = 10) +
+      theme(axis.text.x = element_blank(),
+            strip.background=element_blank(),
+            axis.line=element_blank(),
+            axis.ticks=element_blank()))
+    
+    for(i in 1:length(plot$x$data)){
+      if (plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+        plot$x$data[[i]]$hoverinfo <- "none"
+      }
+      
+      plot$x$data[[i]]$text <- gsub("rate.per.100k_mean", "Mean mortality rate", plot$x$data[[i]]$text)
+      plot$x$data[[i]]$text <- gsub("rate.per.100k_lcl", "Lower credible limit", plot$x$data[[i]]$text)
+      plot$x$data[[i]]$text <- gsub("rate.per.100k_ucl", "Upper credible limit", plot$x$data[[i]]$text)
+    }
+    
+    return(plot)
+  })
+  
+  output$mortality_plot <- renderPlotly({mortality_plot1()})
+  
   
   ##########################################
   ##     State snapshot: COD              ##
@@ -578,7 +668,9 @@ output$app_description <- renderUI({
               
               <b>Big hugs!</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, 
               our friends at Plotly, whose interactive plots are top-notch, and, JAGS maintainer Martyn 
-              Plummer for making JAGS easy to use in R!
+              Plummer for making JAGS easy to use in R!<br/><br/>
+ 
+              <b>License</b><br/> This software created by Corinne Riddell is licensed under a Creative Commons Attribution-Noncommercial 4.0 International License.
               "
               
   ))
