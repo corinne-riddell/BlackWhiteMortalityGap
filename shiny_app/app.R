@@ -100,6 +100,11 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                  selectInput(inputId = "COD", 
                                                              choices = levels(cod_decomp_results$COD), 
                                                              label = "Cause of death: ", width = '150px')),
+ 
+                                conditionalPanel(condition = "input.tab == 'Mortality.trends'",
+                                                 radioButtons(inputId = "gap", 
+                                                              choices = c("Both races", "Excess risk"), 
+                                                              label = "Trends for: ", width = '150px')),
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.summary'",
                                                  # switchButton(inputId = "pop_model",
@@ -377,20 +382,38 @@ server <- function(input, output) {
   ########################################## 
   
   mortality_plot1 <- reactive({
-    plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
-           aes(x = year, y = rate.per.100k_mean)) + 
-      geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race), fill = "grey", col = NA, alpha = 0.5) +
-      geom_line(aes(col = Race)) +
-      facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
-      xlab(" ") + 
-      ylab("Age-standardized mortality rate (per 100,000)") + 
-      geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
-      ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
-      theme_classic(base_size = 10) +
-      theme(axis.text.x = element_blank(),
-            strip.background=element_blank(),
-            axis.line=element_blank(),
-            axis.ticks=element_blank()))
+    
+    if(input$plot_choice == "Map"){
+      plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
+                              aes(x = year, y = rate.per.100k_mean)) + 
+                         geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race), fill = "grey", col = NA, alpha = 0.5) +
+                         geom_line(aes(col = Race)) +
+                         facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
+                         xlab(" ") + 
+                         ylab("Age-standardized mortality rate (per 100,000)") + 
+                         geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
+                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
+                         theme_classic(base_size = 10) +
+                         theme(axis.text.x = element_blank(),
+                               strip.background=element_blank(),
+                               axis.line=element_blank(),
+                               axis.ticks=element_blank()))
+    }else{ #grid
+      plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
+                              aes(x = year, y = rate.per.100k_mean)) + 
+                         #geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = interaction(Race, state), fill = state), col = NA, alpha = 0.5) +
+                         geom_line(aes(col = state, lty = Race)) +
+                         facet_grid(Census_Region ~ Race) +
+                         xlab(" ") + 
+                         ylab("Age-standardized mortality rate (per 100,000)") + 
+                         geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
+                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
+                         theme_classic(base_size = 10) +
+                         theme(axis.text.x = element_blank(),
+                               strip.background=element_blank(),
+                               axis.line=element_blank(),
+                               axis.ticks=element_blank()))
+    }
     
     for(i in 1:length(plot$x$data)){
       if (plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
@@ -405,7 +428,61 @@ server <- function(input, output) {
     return(plot)
   })
   
-  output$mortality_plot <- renderPlotly({mortality_plot1()})
+  mortality_plot2 <- reactive({
+    if(input$plot_choice == "Map"){
+      plot <- ggplotly(ggplot(subset(mortality.rates.diff, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
+                              aes(x = year, y = rate.difference_mean)) + 
+                         geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), fill = "grey", col = NA, alpha = 0.5) +
+                         geom_line(aes(col = Census_Division)) +
+                         facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
+                         xlab(" ") + 
+                         ylab("Excess mortality among blacks (per 100,000)") + 
+                         geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
+                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
+                         theme_classic(base_size = 10) +
+                         theme(axis.text.x = element_blank(),
+                               strip.background=element_blank(),
+                               axis.line=element_blank(),
+                               axis.ticks=element_blank()))
+    }else { #grid
+      plot <- ggplotly(ggplot(subset(mortality.rates.diff, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
+                              aes(x = year, y = rate.difference_mean)) + 
+                         #geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL, group = state), fill = "grey", col = NA, alpha = 0.5) +
+                         geom_line(aes(col = state)) +
+                         facet_wrap( ~ Census_Division) +
+                         xlab(" ") + 
+                         ylab("Excess mortality among blacks (per 100,000)") + 
+                         geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
+                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
+                         theme_classic(base_size = 10) +
+                         theme(axis.text.x = element_blank(),
+                               strip.background=element_blank(),
+                               axis.line=element_blank(),
+                               axis.ticks=element_blank()))     
+    }
+    
+    for(i in 1:length(plot$x$data)){
+      if (plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+        plot$x$data[[i]]$hoverinfo <- "none"
+      }
+      
+      plot$x$data[[i]]$text <- gsub("rate.difference_mean", "Mean excess mortality", plot$x$data[[i]]$text)
+      plot$x$data[[i]]$text <- gsub("rate.difference_LCL", "Lower credible limit", plot$x$data[[i]]$text)
+      plot$x$data[[i]]$text <- gsub("rate.difference_UCL", "Upper credible limit", plot$x$data[[i]]$text)
+    }
+    
+    return(plot)
+  })
+  
+  
+  plot.chosen.mortality <- reactive({
+    plot.mort <- switch(input$gap,
+                      "Both races" = mortality_plot1(), 
+                      "Excess risk" = mortality_plot2())
+    return(plot.mort)
+  })
+  
+  output$mortality_plot <- renderPlotly({plot.chosen.mortality()})
   
   
   ##########################################
