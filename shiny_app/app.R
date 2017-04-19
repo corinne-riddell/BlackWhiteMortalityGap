@@ -103,7 +103,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
  
                                 conditionalPanel(condition = "input.tab == 'Mortality.trends'",
                                                  radioButtons(inputId = "gap", 
-                                                              choices = c("Both races", "Excess risk"), 
+                                                              choices = c("Both races", "Excess risk in blacks"), 
                                                               label = "Trends for: ", width = '150px')),
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.summary'",
@@ -216,7 +216,10 @@ server <- function(input, output) {
                                        year == input$years_LEgap[2]-2 & sex == input$sex), 
                          aes(label = stabbrs), check_overlap = T, size = 2.5) +
                theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
-               geom_hline(yintercept = 0)
+               geom_hline(yintercept = 0) +
+               ggtitle(paste0("State-level trends in the black-white life expectancy gap in ", 
+                              lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
+                              input$years_LEgap[2]))
              )
   })
   
@@ -233,7 +236,11 @@ server <- function(input, output) {
           axis.line=element_blank(),
           axis.ticks=element_blank()) +
     ylab("Life expectancy gap (years)") +
-    xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")))
+    xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
+      ggtitle(paste0("State-level trends in the black-white life expectancy gap in ", 
+                     lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
+                     input$years_LEgap[2]))
+    )
     
     for(i in 1:length(interactive.p$x$data)){
       if (interactive.p$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
@@ -270,7 +277,7 @@ server <- function(input, output) {
     HTML(paste0("<b>How many years does each major cause of death contribute to the life expectancy gap in ", lowercase.sex(), 
                "s ?</b><br/><br/>
                Select the cause of death you're interested in to see how many years of the total gap
-               is due the selected cause, and how this changed over time. You can also view the proportional
+               is due to the selected cause, and how this changed over time. You can also view the proportional
                contribution by selecting 'Proportion (%)'"))
   })
   
@@ -314,7 +321,10 @@ server <- function(input, output) {
                               year == 2013 & sex == input$sex & COD == input$COD), 
                 aes(label = stabbrs), check_overlap = T, size = 2.5) +
       theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
-      geom_hline(yintercept = 0)
+      geom_hline(yintercept = 0) +
+      ggtitle(paste0("Contributions of ", lowercase.COD(), " to the black-white life expectancy gap in ", 
+                     lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
+                     input$years_LEgap[2]))
     
     if(input$pop_model == "Aggregated"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
@@ -338,7 +348,10 @@ server <- function(input, output) {
             axis.line=element_blank(),
             axis.ticks=element_blank()) +
       ylab("Contribution to the LE gap") +
-      xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
+      xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))  +
+      ggtitle(paste0("Contributions of ", lowercase.COD(), " to the black-white life expectancy gap in ", 
+                     lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
+                     input$years_LEgap[2]))
     
     if(input$pop_model == "Aggregated"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
@@ -381,6 +394,12 @@ server <- function(input, output) {
   ##     Mortality rates                  ##
   ########################################## 
   
+  output$description_mortality_trends <- renderUI({ 
+    HTML(paste0("<b>How do the trends in age-standardized mortality differ between blacks and white", lowercase.sex(), "s for ", lowercase.COD(), "?</b>
+                <br/><br/>This plot depicts the cause-specific mortality rates for each race. 
+                You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'."))
+ })
+ 
   mortality_plot1 <- reactive({
     
     if(input$plot_choice == "Map"){
@@ -478,7 +497,7 @@ server <- function(input, output) {
   plot.chosen.mortality <- reactive({
     plot.mort <- switch(input$gap,
                       "Both races" = mortality_plot1(), 
-                      "Excess risk" = mortality_plot2())
+                      "Excess risk in blacks" = mortality_plot2())
     return(plot.mort)
   })
   
