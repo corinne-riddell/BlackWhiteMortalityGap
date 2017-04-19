@@ -31,7 +31,7 @@ age_decomp_results <- read.csv(".././Results2/age_decomp_results.csv")
 cod_decomp_results <- read.csv(".././Results2/cod_decomp_results.csv")
 cod_change_results <- read.csv(".././Results2/cod_change_results.csv")
 BlackWhite_results <- read.csv(".././Results2/BlackWhite_results.csv")
-dat.aggregated <- read.csv('/Users/kathryn/Dropbox/projects/blackwhitegap/Data/dat_aggregated.csv') 
+dat.aggregated <- read.csv(".././Data/dat_aggregated.csv") 
 
 age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
 cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
@@ -211,7 +211,7 @@ server <- function(input, output) {
                geom_line(aes(col = state)) + 
                facet_wrap(~ Census_Division) +
                ylab("Life expectancy gap (years)") +
-               xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
+               xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
                geom_text(data = subset(BlackWhite_results, 
                                        year == input$years_LEgap[2]-2 & sex == input$sex), 
                          aes(label = stabbrs), check_overlap = T, size = 2.5) +
@@ -233,7 +233,7 @@ server <- function(input, output) {
           axis.line=element_blank(),
           axis.ticks=element_blank()) +
     ylab("Life expectancy gap (years)") +
-    xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")))
+    xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")))
     
     for(i in 1:length(interactive.p$x$data)){
       if (interactive.p$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
@@ -309,7 +309,7 @@ server <- function(input, output) {
       geom_line(aes(col = state)) + 
       facet_wrap(~ Census_Division) +
       ylab(paste0("Contribution to LE Gap", xaxis.title())) +
-      xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
+      xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
       geom_text(data = subset(contrib.data.react(), 
                               year == 2013 & sex == input$sex & COD == input$COD), 
                 aes(label = stabbrs), check_overlap = T, size = 2.5) +
@@ -317,9 +317,9 @@ server <- function(input, output) {
       geom_hline(yintercept = 0)
     
     if(input$pop_model == "Aggregated"){
-      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 3)
+      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
     }else if(input$pop_model == "State-specific"){
-      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE), col = "black", lty = 3)      
+      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE, group = state, col = state),  lty = 3)      
     }
     
     return(ggplotly(plot))
@@ -338,7 +338,7 @@ server <- function(input, output) {
             axis.line=element_blank(),
             axis.ticks=element_blank()) +
       ylab("Contribution to the LE gap") +
-      xlab(paste("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
+      xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
     
     if(input$pop_model == "Aggregated"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
@@ -389,7 +389,7 @@ server <- function(input, output) {
                          geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race), fill = "grey", col = NA, alpha = 0.5) +
                          geom_line(aes(col = Race)) +
                          facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
-                         xlab(" ") + 
+                         xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
                          ylab("Age-standardized mortality rate (per 100,000)") + 
                          geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
                          ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
@@ -397,14 +397,14 @@ server <- function(input, output) {
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
                                axis.line=element_blank(),
-                               axis.ticks=element_blank()))
+                               axis.ticks=element_blank())) %>% layout(legend = list(x = 0.5, y = 0.95))
     }else{ #grid
       plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
                               aes(x = year, y = rate.per.100k_mean)) + 
                          #geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = interaction(Race, state), fill = state), col = NA, alpha = 0.5) +
                          geom_line(aes(col = state, lty = Race)) +
                          facet_grid(Census_Region ~ Race) +
-                         xlab(" ") + 
+                         xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) + 
                          ylab("Age-standardized mortality rate (per 100,000)") + 
                          geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
                          ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
@@ -412,7 +412,7 @@ server <- function(input, output) {
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
                                axis.line=element_blank(),
-                               axis.ticks=element_blank()))
+                               axis.ticks=element_blank())) 
     }
     
     for(i in 1:length(plot$x$data)){
