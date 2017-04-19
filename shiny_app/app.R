@@ -6,7 +6,7 @@ library(shinythemes)
 library(dplyr)
 
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/shiny_app/Rsource/SwitchButton.R")
+#source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/shiny_app/Rsource/SwitchButton.R")
 
 mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_combined.csv")
 mortality.rates.diff <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_combined.csv")
@@ -74,7 +74,7 @@ BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
 
 
 
-ui1 <- fluidPage(theme = "button.css", #shinytheme("cosmo"),
+ui1 <- fluidPage(theme = shinytheme("cosmo"),
                  pageWithSidebar(
                  
                  #shinythemes::themeSelector(), 
@@ -658,15 +658,16 @@ output$app_description <- renderUI({
               1 and 10) were imputed using truncated Poisson regression.<br/><br/>
               
               <b>Who we are</b><br/> 
-              We're a group of epidemiologists from McGill University in Montreal, Canada. 
+              We are a group of epidemiologists from McGill University in Montreal, Canada. 
               These efforts were led by <b>Corinne Riddell</b>. She collected the data, coded and 
               performed demographic analyses (life tables, cause of death decompositions), and 
               created this shiny app. <b>Kathryn Morrison</b> is our resident Bayesian,
-              and she coded up the Bayesian model to calculate smoothed mortality rates and their credible intervals. This work was
-              massively inspired by previous work of our mentors and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They provided mentorship, 
+              and she coded up the Bayesian model to calculate smoothed mortality rates and their 
+              credible intervals. This work was massively inspired by previous work of our mentors
+              and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They provided mentorship, 
               guidance, and boat-loads of background reading.<br/><br/> 
               
-              <b>Big hugs!</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, 
+              <b>Many thanks</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, 
               our friends at Plotly, whose interactive plots are top-notch, and, JAGS maintainer Martyn 
               Plummer for making JAGS easy to use in R!<br/><br/>
  
