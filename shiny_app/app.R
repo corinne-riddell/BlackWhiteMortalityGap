@@ -1,9 +1,10 @@
-library(shiny)
-library(plotly)
+library(shiny) #0.14.1
+library(plotly) #4.5.6
 library(viridis)
 library(scales)
 library(shinythemes)
 library(dplyr)
+#using version 2.2.1 of ggplot2.
 
 source(".././Code/life_expectancy_functions.R")
 #source("./shiny_app/Rsource/SwitchButton.R")
@@ -83,14 +84,14 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                    sidebarPanel(width = 2,
                                 conditionalPanel(condition = "input.tab != 'more' & input.tab != 'state.dashboard' ",
                                                  radioButtons(inputId = "sex", label = "Gender:", 
-                                                              inline = T, choices = c("Male", "Female"), selected = "Male")),
+                                                              choices = c("Male", "Female"), selected = "Male")),
                                 
                                 conditionalPanel(condition = "input.tab == 'LE.summary' || input.tab == 'COD.summary' || input.tab == 'Mortality.trends'",
                                                  sliderInput("years_LEgap", label = "Years:",
                                                              min = 1969, max = 2013, value = c(1969, 2013)),
                                                  radioButtons(inputId = "plot_choice", 
                                                               label = "Plot style:", 
-                                                              inline = T, choices = c("Map", "Grid"))),
+                                                              choices = c("Map", "Grid"))),
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.snapshot' || input.tab == 'Age.snapshot' ",
                                                  selectInput(inputId = "year", label = "Year:", 
@@ -112,7 +113,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                  #              value = FALSE, col = "GB", type = "OO"),
                                                  radioButtons(inputId = "pop_model",
                                                               label = "Population curve:",
-                                                              choices = c("Hide", "State-specific", "Aggregated"), inline = F,
+                                                              choices = c("Hide", "State-specific", "Aggregated"),
                                                               selected = "Hide"),
                                                  radioButtons(inputId = "contribution_type", 
                                                               label = "Contribution format:", 
@@ -201,8 +202,8 @@ server <- function(input, output) {
                 "s changed over time?</b>",
                 "<br/><br/>", 
                 "This graph depicts state-level trends in the life expectancy gap between ", 
-                input$years_LEgap[1], " and ", input$years_LEgap[2], " for ", lowercase.sex(), "s. 
-                The grey band represents the 95% credible interval for the estimated mean trend line.<br/>"))
+                input$years_LEgap[1], " and ", input$years_LEgap[2], " for ", lowercase.sex(), "s.",
+                " The grey band represents the 95% credible interval for the estimated mean trend line.<br/>"))
   })
   
   grid.contribution.LE <- reactive({
@@ -266,7 +267,7 @@ server <- function(input, output) {
   })
   
   output$state_LEsummary <- renderPlotly({
-    plot.chosen.LE()
+    plot.chosen.LE() %>% layout(margin = list(l = 50)) #add space between plotly yaxis and the UI sidebar
   })
   
   ##########################################
@@ -386,7 +387,7 @@ server <- function(input, output) {
   
   
   output$contribution_plot <- renderPlotly({
-    plot.chosen()
+    plot.chosen() %>% layout(margin = list(l = 50))
   })
   
 
@@ -501,7 +502,9 @@ server <- function(input, output) {
     return(plot.mort)
   })
   
-  output$mortality_plot <- renderPlotly({plot.chosen.mortality()})
+  output$mortality_plot <- renderPlotly({
+    plot.chosen.mortality() %>% layout(margin = list(l = 75))
+    })
   
   
   ##########################################
@@ -514,7 +517,8 @@ server <- function(input, output) {
                       "<br/><br/>", "This graph depicts the difference in life expectancy between white ", lowercase.sex(), 
                              "s (vertical black line) and black ", lowercase.sex(), "s (dashed black line). 
                              Causes to the left of the dashed line narrow the gap in ", input$year, " 
-                             whereas causesto the right exacerbate it. Use these buttons to change the gender or year being examined.<br/>"))
+                             whereas causesto the right exacerbate it. Use these buttons to change the gender or year being examined.<br/><br/>
+                             <h3>Contribution of major CODs to the life expectancy gap (years)</h3>"))
   })
   
   temp.df <- reactive({
@@ -536,13 +540,13 @@ server <- function(input, output) {
                              xmax = new.finish, fill = COD), color = "white") +
                scale_y_continuous(breaks = 1:length(levels(factor(temp.df()$state.reorder2))), 
                                   labels = levels(factor(temp.df()$state.reorder2))) +
-               theme_minimal() + 
+               theme_minimal() + xlab(" ") +
                geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5)) +
                geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5), lty = 3) 
     )
     
     interactive.plot %>% 
-      layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed"))
+      layout(xaxis = list(title = " ", side = "top"), yaxis = list(title = NA, autorange = "reversed"))
     
     
   })
@@ -564,7 +568,8 @@ server <- function(input, output) {
                                                       between blacks and whites in ", input$year, "?</b><br/><br/> This graph depicts the difference in 
                                                       life expectancy between white ", lowercase.sex(), "s (vertical red line) and black ", 
                                                       lowercase.sex(), "s (dashed red line). Ages to the left of the dashed line narrow 
-                                                      the gap in ", input$year, " whereas ages to the right exacerbate it."))
+                                                      the gap in ", input$year, " whereas ages to the right exacerbate it.<br/><br/>
+                                                      <h3>Contribution of age to the life expectancy gap (years)</h3>"))
   })
 
   output$state_age_summary <- renderPlotly({
@@ -585,7 +590,7 @@ server <- function(input, output) {
                scale_fill_viridis(discrete = T, direction = -1)
              
     )  %>% 
-      layout(xaxis = list(title = "Life expectancy gap (years)"), yaxis = list(title = NA, autorange = "reversed"))
+      layout(xaxis = list(title = " ", side = "top", xpad = 20), yaxis = list(title = NA, autorange = "reversed"))
   })
   
   
