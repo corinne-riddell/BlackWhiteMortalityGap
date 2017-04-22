@@ -87,7 +87,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                               choices = c("Male", "Female"), selected = "Male")),
                                 
                                 conditionalPanel(condition = "input.tab == 'LE.summary' || input.tab == 'COD.summary' || input.tab == 'Mortality.trends' || input.tab == 'state.dashboard'",
-                                                 sliderInput("years_LEgap", label = "Years:",
+                                                 sliderInput(inputId = "years_LEgap", label = "Years:", sep = "",
                                                              min = 1969, max = 2013, value = c(1969, 2013)),
                                                  radioButtons(inputId = "plot_choice", 
                                                               label = "Plot style:", 
@@ -95,7 +95,9 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.snapshot' || input.tab == 'Age.snapshot' ",
                                                  selectInput(inputId = "year", label = "Year:", 
-                                                  choices = unique(BlackWhite_results$year), width = 100)),
+                                                  choices = unique(BlackWhite_results$year), width = 100#, sep = "" 
+                                                  )
+                                                 ),
                                 
                                 conditionalPanel(condition = "input.tab == 'Mortality.trends' || input.tab == 'COD.summary'",
                                                  selectInput(inputId = "COD", 
@@ -133,7 +135,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("state_LEsummary", height = 700, width = 1100)
                                 ),
                        
-                       tabPanel(title = "Trends in COD contribution", value = "COD.summary",
+                       tabPanel(title = "Trends in cause contribution", value = "COD.summary",
                                 htmlOutput("description_cod_trends"),
                                 plotlyOutput("contribution_plot", height = 700, width = 1100)
                                 ),
@@ -143,7 +145,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("mortality_plot", height = 700, width = 1100)
                                 ),
                        
-                       tabPanel(title = "Cross-sectional COD contribution", value = "COD.snapshot",
+                       tabPanel(title = "Cross-sectional cause contribution", value = "COD.snapshot",
                                 htmlOutput("description_cod_summary"),
                                 plotlyOutput("state_cod_summary", height = 800)),
                                 #dataTableOutput("data.temp")),
@@ -153,7 +155,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("state_age_summary", height = 800),
                                 dataTableOutput("data.temp2")),
                        
-                       tabPanel(title = "State dashboard", value = "state.dashboard",
+                       tabPanel(title = "Explore a state", value = "state.dashboard",
                                 htmlOutput("description_state_snapshot"),
                                 plotlyOutput("population_trend", height = 300, width = 500),
                                 htmlOutput("title_LE_trends"),
@@ -211,7 +213,7 @@ server <- function(input, output) {
   })
   
   grid.contribution.LE <- reactive({
-    ggplotly(ggplot(subset(BlackWhite_results, sex == input$sex & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
+    grid.p <- ggplotly(ggplot(subset(BlackWhite_results, sex == input$sex & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
                     aes(x = year, y = LE_wbgap_mean)) + 
                geom_line(aes(col = state)) + 
                facet_wrap(~ Census_Division) +
@@ -226,6 +228,14 @@ server <- function(input, output) {
                               lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
                               input$years_LEgap[2]))
              )
+    
+    for(i in 1:length(grid.p$x$data)){
+    #  if (grid.p$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+    #    grid.p$x$data[[i]]$hoverinfo <- "none"
+    #  }
+      grid.p$x$data[[i]]$text <- gsub("LE_wbgap_mean", "Mean life expectancy gap", grid.p$x$data[[i]]$text)
+    }
+    return(grid.p)
   })
   
   map.contribution.LE <- reactive({
@@ -421,7 +431,7 @@ server <- function(input, output) {
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
                                axis.line=element_blank(),
-                               axis.ticks=element_blank())) %>% layout(legend = list(x = 0.5, y = 0.95))
+                               axis.ticks=element_blank()))# %>% layout(legend = list(x = 0.5, y = 0.95))
     }else{ #grid
       plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
                               aes(x = year, y = rate.per.100k_mean)) + 
@@ -601,7 +611,7 @@ server <- function(input, output) {
 ##########################################
 
 output$description_state_snapshot <- renderUI({
-  HTML(paste0("<b>", input$state,"</b><br/>This dashboard brings together key metrics for ", input$state, ".<br/><br/>",
+  HTML(paste0("<b>", input$state,"</b><br/>This report brings together key metrics for ", input$state, ".<br/><br/>",
               "<h2>Population Growth</h2>"))
 })
 
@@ -784,27 +794,26 @@ output$age_cod2 <- renderPlot({
 ########################################## 
 
 output$app_description <- renderUI({
-  HTML(paste0("<b>The data</b><br/>Data for this app is publicly available and accessed using the NCI's SEER*stat software. 
-              We extracted mortality counts within strata of state, sex, year, race, age group, and cause of death.
-              There data were smoothed over time using an autoreggresive Bayesian model and suppressed counts (between 
-              1 and 10) were imputed using truncated Poisson regression.<br/><br/>
+  HTML(paste0("<b>The data</b><br/>We accessed the raw data using the National Cancer Institute's SEER*stat software.", 
+              " We extracted mortality counts within strata of state, sex, year, race, age group, and cause of death.",
+              "These data were smoothed over time using an autoreggresive Bayesian model and suppressed counts (between 
+              1 and 10) were imputed using truncated Poisson regression.<br/><br/>",
+              "<b>Who we are</b><br/>", 
+              "We are a group of epidemiologists from McGill University in Montreal, Canada. ", 
+              "These efforts were led by <b>Corinne Riddell</b>. She collected the data, coded and ", 
+              "performed demographic analyses (life tables, cause of death decompositions), and ",
+              "created this shiny app. <b>Kathryn Morrison</b> is our resident Bayesian, ",
+              "and she coded up the Bayesian model to calculate smoothed mortality rates and their ",
+              "credible intervals. This work was massively inspired by previous work of our mentors ",
+              "and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They provided mentorship, ",
+              "guidance, and boat-loads of background reading.<br/><br/> ",
               
-              <b>Who we are</b><br/> 
-              We are a group of epidemiologists from McGill University in Montreal, Canada. 
-              These efforts were led by <b>Corinne Riddell</b>. She collected the data, coded and 
-              performed demographic analyses (life tables, cause of death decompositions), and 
-              created this shiny app. <b>Kathryn Morrison</b> is our resident Bayesian,
-              and she coded up the Bayesian model to calculate smoothed mortality rates and their 
-              credible intervals. This work was massively inspired by previous work of our mentors
-              and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They provided mentorship, 
-              guidance, and boat-loads of background reading.<br/><br/> 
-              
-              <b>Many thanks</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, 
-              our friends at Plotly, whose interactive plots are top-notch, and, JAGS maintainer Martyn 
-              Plummer for making JAGS easy to use in R!<br/><br/>
+              "<b>Many thanks</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, ",
+              "our friends at Plotly, whose interactive plots are top-notch, and, JAGS maintainer Martyn ",
+              "Plummer for making JAGS easy to use in R!<br/><br/>",
  
-              <b>License</b><br/> This software created by Corinne Riddell is licensed under a Creative Commons Attribution-Noncommercial 4.0 International License.
-              "
+              "<b>License</b><br/> This software created by Corinne Riddell is licensed under a Creative Commons Attribution-Noncommercial 4.0 International License."
+              
               
   ))
 })
