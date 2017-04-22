@@ -793,7 +793,7 @@ output$age_cod1 <- renderPlot({
     ylab("Contribution to the life expectancy gap (years)") +
     xlab("") + ggtitle(paste0("Males, ", input$years_LEgap[1])) + 
     scale_y_continuous(limits = bounds.Male())  + 
-    theme(legend.position = c(0.8, 0.8), legend.title = NA)
+    theme(legend.position = c(0.8, 0.8), legend.title = element_blank())
 
   plot2 <- ggplot(data = subset(age_cod_results, sex == "Male" & year == input$years_LEgap[2] & 
                                           state == input$state), 
