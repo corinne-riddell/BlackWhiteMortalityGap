@@ -4,6 +4,9 @@ library(viridis)
 library(scales)
 library(shinythemes)
 library(dplyr)
+library(grid)
+library(gridExtra)
+library(png)
 #using version 2.2.1 of ggplot2.
 
 source(".././Code/life_expectancy_functions.R")
@@ -82,7 +85,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                  headerPanel("Explore the black-white life expectancy gap in the United States"),
                  
                    sidebarPanel(width = 2,
-                                conditionalPanel(condition = "input.tab != 'more' & input.tab != 'state.dashboard' ",
+                                conditionalPanel(condition = "input.tab != 'more' & input.tab != 'state.dashboard'",
                                                  radioButtons(inputId = "sex", label = "Gender:", 
                                                               choices = c("Male", "Female"), selected = "Male")),
                                 
@@ -162,9 +165,8 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("life_expectancy"),
                                 htmlOutput("Explain_LE_males"),
                                 htmlOutput("Explain_LE_females"),
-                                plotOutput("age_cod1"),
-                                plotOutput("age_cod2"), 
-                                textOutput("test")
+                                #img(src = "COD.legend.png"),
+                                plotOutput("age_cod1", height = 700, width = 1100)
                                 # textOutput("Explain_Age_Gap"),
                                 # plotlyOutput("cod_bayes"),
                                 #textOutput("Explain_COD_Gap"))
@@ -412,7 +414,8 @@ server <- function(input, output) {
   output$description_mortality_trends <- renderUI({ 
     HTML(paste0("<b>How do the trends in age-standardized mortality differ between blacks and white", lowercase.sex(), "s for ", lowercase.COD(), "?</b>
                 <br/><br/>This plot depicts the cause-specific mortality rates for each race. 
-                You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'."))
+                You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'.<br/><br/>",
+                "<h2>Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD(),"</h2>"))
  })
  
   mortality_plot1 <- reactive({
@@ -426,7 +429,6 @@ server <- function(input, output) {
                          xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
                          ylab("Age-standardized mortality rate (per 100,000)") + 
                          geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
-                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
                          theme_classic(base_size = 10) +
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
@@ -441,7 +443,7 @@ server <- function(input, output) {
                          xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) + 
                          ylab("Age-standardized mortality rate (per 100,000)") + 
                          geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
-                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
+                         #ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
                          theme_classic(base_size = 10) +
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
@@ -751,14 +753,30 @@ output$Explain_LE_females <- renderUI({
   
 })
 
-bounds <- reactive({
+bounds.Male <- reactive({
   
-  year1 <- data.frame(subset(age_cod_results, sex == input$sex & year == input$years_LEgap[1] & state == input$state))
+  year1 <- data.frame(subset(age_cod_results, sex == "Male" & year == input$years_LEgap[1] & state == input$state))
   year1 <- year1 %>% group_by(age) %>% summarise(s = sum(age_COD_cont_yrs_mean))
   year1.min <- min(year1$s)
   year1.max <- max(year1$s)
 
-  year2 <- data.frame(subset(age_cod_results, sex == input$sex & year == input$years_LEgap[2] & state == input$state))
+  year2 <- data.frame(subset(age_cod_results, sex == "Male" & year == input$years_LEgap[2] & state == input$state))
+  year2 <- year2 %>% group_by(age) %>% summarise(s = sum(age_COD_cont_yrs_mean))
+  year2.min <- min(year2$s)
+  year2.max <- max(year2$s)
+  
+  return(c(  min(year1.min, year2.min), c(  max(year1.max, year2.max) )))
+  
+})
+
+bounds.Female <- reactive({
+  
+  year1 <- data.frame(subset(age_cod_results, sex == "Female" & year == input$years_LEgap[1] & state == input$state))
+  year1 <- year1 %>% group_by(age) %>% summarise(s = sum(age_COD_cont_yrs_mean))
+  year1.min <- min(year1$s)
+  year1.max <- max(year1$s)
+  
+  year2 <- data.frame(subset(age_cod_results, sex == "Female" & year == input$years_LEgap[2] & state == input$state))
   year2 <- year2 %>% group_by(age) %>% summarise(s = sum(age_COD_cont_yrs_mean))
   year2.min <- min(year2$s)
   year2.max <- max(year2$s)
@@ -768,25 +786,44 @@ bounds <- reactive({
 })
 
 output$age_cod1 <- renderPlot({
-  age_cod_plot <- ggplot(data = subset(age_cod_results, sex == input$sex & year == input$years_LEgap[1] & 
+  plot1 <- ggplot(data = subset(age_cod_results, sex == "Male" & year == input$years_LEgap[1] & 
                                          state == input$state), 
                          aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
     geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
     ylab("Contribution to the life expectancy gap (years)") +
-    xlab("") + ggtitle(input$years_LEgap[1]) + 
-    scale_y_continuous(limits = bounds())
-  age_cod_plot
-})
+    xlab("") + ggtitle(paste0("Males, ", input$years_LEgap[1])) + 
+    scale_y_continuous(limits = bounds.Male())  + 
+    theme(legend.position = c(0.8, 0.8), legend.title = NA)
 
-output$age_cod2 <- renderPlot({
-  age_cod_plot2 <- ggplot(data = subset(age_cod_results, sex == input$sex & year == input$years_LEgap[2] & 
+  plot2 <- ggplot(data = subset(age_cod_results, sex == "Male" & year == input$years_LEgap[2] & 
+                                          state == input$state), 
+                          aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
+    geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
+    ylab("Contribution to the life expectancy gap (years)") +
+    xlab("") + ggtitle(paste0("Males, ", input$years_LEgap[2])) + 
+    scale_y_continuous(limits = bounds.Male()) + 
+    theme(legend.position = "none")
+  
+  plot3 <- ggplot(data = subset(age_cod_results, sex == "Female" & year == input$years_LEgap[1] & 
                                          state == input$state), 
                          aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
     geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
     ylab("Contribution to the life expectancy gap (years)") +
-    xlab("") + ggtitle(input$years_LEgap[2]) + 
-    scale_y_continuous(limits = bounds())
-  age_cod_plot2
+    xlab("") + ggtitle(paste0("Females, ", input$years_LEgap[1])) + 
+    scale_y_continuous(limits = bounds.Female()) + 
+    theme(legend.position = "none")
+  
+  plot4 <- ggplot(data = subset(age_cod_results, sex == "Female" & year == input$years_LEgap[2] & 
+                                          state == input$state), 
+                          aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
+    geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
+    ylab("Contribution to the life expectancy gap (years)") +
+    xlab("") + ggtitle(paste0("Females, ", input$years_LEgap[2])) + 
+    scale_y_continuous(limits = bounds.Female()) + 
+    theme(legend.position = "none")
+  
+  #legend <-  rasterGrob(as.raster(readPNG("COD.legend.png")), interpolate = FALSE)
+  grid.arrange(plot1, plot3, plot2, plot4, ncol = 2, nrow = 2)
 })
 
 ##########################################
