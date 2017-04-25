@@ -130,12 +130,12 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 
                                 conditionalPanel(condition = "input.tab == 'state.dashboard'",
                                                  selectInput(inputId = "state", label = "State:", 
-                                                             choices = levels(BlackWhite_results$state)))#,
-                                # absolutePanel(bottom = 0, left = 0, draggable = T,
-                                #   conditionalPanel(condition = "input.tab == 'state.dashboard'",
-                                #                    img(src = "COD.legend.png"))
-                                #   
-                                # )
+                                                             choices = levels(BlackWhite_results$state))),
+                                absolutePanel(bottom = 0, left = 0, draggable = T,
+                                  conditionalPanel(condition = "input.tab == 'state.dashboard'",
+                                                   img(src = "COD.legend.png"))
+
+                                )
                                 ),
                  
                    
@@ -807,10 +807,11 @@ output$age_cod1 <- renderPlot({
     ylab("Contribution to the life expectancy gap (years)") +
     xlab("") + ggtitle(paste0("Males, ", input$years_LEgap[1])) + 
     scale_y_continuous(limits = bounds())  + 
-    theme(legend.position = c(0.8, 0.8), 
-          legend.text=element_text(size=16),
-          legend.title = element_blank(),
-          axis.text = element_text(size=16), axis.title = element_text(size=16)) +
+    theme(#legend.position = c(0.8, 0.8), 
+          #legend.text=element_text(size=12),
+          #legend.title = element_blank(),
+      legend.position = "none",    
+      axis.text = element_text(size=16), axis.title = element_text(size=16)) +
     geom_hline(yintercept = 0, lwd = 1.5)
 
   plot2 <- ggplot(data = subset(age_cod_results, sex == "Male" & year == input$years_LEgap[2] & 
