@@ -12,8 +12,8 @@ library(png)
 source(".././Code/life_expectancy_functions.R")
 #source("./shiny_app/Rsource/SwitchButton.R")
 
-mortality.rates <- read.csv(".././Results/mortality_rates_combined.csv")
-mortality.rates.diff <- read.csv(".././Results/mortality_rates_diff_combined.csv")
+mortality.rates <- read.csv(".././Results2/mortality_rates_combined.csv")
+mortality.rates.diff <- read.csv(".././Results2/mortality_rates_diff_combined.csv")
 
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) %>% rename(Race = race)
 mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) 
