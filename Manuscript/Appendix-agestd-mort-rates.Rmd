@@ -1,11 +1,11 @@
 ---
-title: "Appendix: Trends in age-adjusted mortality rates for blacks and whites by cause and sex, 1969-2013, United States"
+title: "Supplementary Appendix: Trends in age-standardized mortality rates for blacks and whites by cause and sex, 1969-2013, United States"
 output: html_document
 ---
 
-Corinne A Riddell, PhD
+This is the supplementary appendix for the paper, "Historical trends in the contribution of six major causes of death to the black-white life expectancy gap by US state."
 
-Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Canada.
+Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Sam Harper, PhD; Jay S Kaufman, PhD
 
 Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
 
@@ -46,44 +46,57 @@ plot.mortality.trends <- function(dataset, dataset2, COD1, sex1) {
   #lim.y2 <- c(min(subset.data2$rate.difference_LCL), max(subset.data2$rate.difference_UCL))
     
   a <- ggplot(subset.data, aes(x = year, y = rate.per.100k_mean)) + 
-              geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, fill = Race), col = NA, alpha = 0.5) +
+              geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race), fill = "grey", col = NA, alpha = 0.5) +
               geom_line(aes(col = Race)) +
               facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
-              xlab(" ") + 
+              xlab("Year (1969-2013)") + 
               ylab("Age-standardized mortality rate (per 100,000)") + 
               geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
-              ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", sex1, " for ", COD1)) +
               theme_classic(base_size = 10) +
               theme(axis.text.x = element_blank(),
                     strip.background=element_blank(),
                     axis.line=element_blank(),
                     axis.ticks=element_blank()) 
-             
-
-  
+   
   b <- ggplot(subset.data2, aes(x = year, y = rate.difference_mean)) +
-           # geom_hline(aes(yintercept = -300), lwd = 0.5, col = "grey") +
-           # geom_hline(aes(yintercept = -200), lwd = 0.5, col = "grey") +
-           # geom_hline(aes(yintercept = -100), lwd = 0.5, col = "grey") +
-           # geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey") +
-           # geom_hline(aes(yintercept = 200), lwd = 0.5, col = "grey") +
-           # geom_hline(aes(yintercept = 100), lwd = 0.5, col = "grey") +
               geom_line() +
               geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), col = NA, alpha = 0.5) +
               facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
-              xlab(" ") + 
+              xlab("Year (1969-2013)") + 
               ylab("Excess mortality among blacks (per 100,000)") +
               geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
-              ggtitle(paste0("Excess mortality among blacks (per 100,000) in ", sex1, " for ", COD1)) +
+              #ggtitle(paste0("Excess mortality among blacks (per 100,000) in ", sex1, " for ", COD1)) +
               theme_classic(base_size = 10) +
               theme(panel.grid.minor = element_blank(),
                     axis.text.x = element_blank(),
                     strip.background=element_blank(),
                     axis.line=element_blank(),
                     axis.ticks=element_blank()) 
-               
   
-    return(list(plot1 = a, plot2 = b))
+  c <- ggplotly(a)
+  d <- ggplotly(b)
+  
+  for(i in 1:length(c$x$data)){
+    if (c$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+      c$x$data[[i]]$hoverinfo <- "none"
+    }
+    
+    c$x$data[[i]]$text <- gsub("rate.per.100k_mean", "Mean mortality rate", c$x$data[[i]]$text)
+    c$x$data[[i]]$text <- gsub("rate.per.100k_lcl", "Lower credible limit", c$x$data[[i]]$text)
+    c$x$data[[i]]$text <- gsub("rate.per.100k_ucl", "Upper credible limit", c$x$data[[i]]$text)
+  }
+  
+  for(i in 1:length(d$x$data)){
+    if (d$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+      d$x$data[[i]]$hoverinfo <- "none"
+    }
+    
+    d$x$data[[i]]$text <- gsub("rate.difference_mean", "Mean excess mortality", d$x$data[[i]]$text)
+    d$x$data[[i]]$text <- gsub("rate.difference_LCL", "Lower credible limit", d$x$data[[i]]$text)
+    d$x$data[[i]]$text <- gsub("rate.difference_UCL", "Upper credible limit", d$x$data[[i]]$text)
+  }           
+  
+    return(list(plot1 = a, plot2 = b, plot3 = c, plot4 = d))
 }
 ```
 
@@ -96,68 +109,88 @@ for(COD_i in levels(mortality.rates$COD)) {
 }
 ```
 
-**eFigure 1**
+**eFigure 1: Age-standardized trends in CVD-related mortality in black and white men, United States, 1969-2013**
 
 ```{r print-em, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cardiovascular.Male.mort.plot[[1]]) %>% 
-  layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-
-ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% 
-  layout(xaxis = list(title = "Year (1969-2013)"))
-
-#manipulating hover info:
-#p <- ggplotly(Cardiovascular.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-#p$x$data[[1]]$hoverinfo = "none" #if want no hover info for a particular trace
-#p$x$data[[1]]$text #otherwise, modified what is stored here to display how you want it to look. 
+Cardiovascular.Male.mort.plot[[3]] %>% layout(margin = list(b = 100))
+Cardiovascular.Male.mort.plot[[4]]
 ```
 
-**eFigure 2**
+**eFigure 2: Age-standardized trends in CVD-related mortality in black and white women, United States, 1969-2013**
 
 ```{r print-em-2, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cardiovascular.Female.mort.plot[[1]]) %>% 
-  layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-
-ggplotly(Cardiovascular.Female.mort.plot[[2]]) %>% 
-  layout(xaxis = list(title = "Year (1969-2013)"))
+Cardiovascular.Female.mort.plot[[3]] %>% layout(margin = list(b = 100))
+Cardiovascular.Female.mort.plot[[4]]
 ```
 
-**eFigure 3**
+**eFigure 3: Age-standardized trends in cancer-related mortality in black and white men, United States, 1969-2013**
 
 ```{r print-em-3, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cancers.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Cancers.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+Cancers.Male.mort.plot[[3]] %>% layout(margin = list(b = 100))
+Cancers.Male.mort.plot[[4]]
 ```
 
-**eFigure 4**
+**eFigure 4: Age-standardized trends in cancer-related mortality in black and white women, United States, 1969-2013**
 
 ```{r print-em-4, fig.width = 9, fig.height = 9, echo = F}
-ggplotly(Cancers.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Cancers.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+Cancers.Female.mort.plot[[3]] %>% layout(margin = list(b = 100))
+Cancers.Female.mort.plot[[4]]
 ```
+
+**eFigure 5: Age-standardized trends in mortality related to non-communicable disease in black and white men, United States, 1969-2013**
+
+```{r, fig.width = 9, fig.height = 9, echo = F}
+`Non-communicable.Male.mort.plot`[[3]] %>% layout(margin = list(b = 100))
+`Non-communicable.Male.mort.plot`[[4]]
+```
+
+**eFigure 6: Age-standardized trends in mortality related to non-communicable disease in black and white women, United States, 1969-2013**
+
+```{r, fig.width = 9, fig.height = 9, echo = F}
+`Non-communicable.Female.mort.plot`[[3]] %>% layout(margin = list(b = 100))
+`Non-communicable.Male.mort.plot`[[4]]
+```
+
+**eFigure 7: Age-standardized trends in injury-related mortality in black and white men, United States, 1969-2013**
+
+```{r, fig.width = 9, fig.height = 9, echo = F}
+Injuries.Male.mort.plot[[3]] %>% layout(margin = list(b = 100))
+Injuries.Male.mort.plot[[4]]
+```
+
+**eFigure 8: Age-standardized trends in injury-related mortality in black and white women, United States, 1969-2013**
+
+```{r, fig.width = 9, fig.height = 9, echo = F}
+Injuries.Female.mort.plot[[3]] %>% layout(margin = list(b = 100)) 
+Injuries.Female.mort.plot[[4]]
+```
+
+**eFigure 9: Age-standardized trends in mortality related to communicable disease in black and white men, United States, 1969-2013**
 
 ```{r print-3, fig.width = 9, fig.height=9, echo = F}
-ggplotly(Communicable.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Communicable.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-
-ggplotly(Communicable.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Communicable.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-
-ggplotly(`Non-communicable.Male.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(`Non-communicable.Male.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-
-ggplotly(`Non-communicable.Female.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(`Non-communicable.Male.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-
-ggplotly(Injuries.Male.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Injuries.Male.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-
-ggplotly(Injuries.Female.mort.plot[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(Injuries.Female.mort.plot[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-
-ggplotly(`All other causes.Male.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(`All other causes.Male.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
-
-ggplotly(`All other causes.Female.mort.plot`[[1]]) %>% layout(xaxis = list(title = "Year (1969-2013)"), showlegend = F) 
-ggplotly(`All other causes.Female.mort.plot`[[2]]) %>% layout(xaxis = list(title = "Year (1969-2013)"))
+Communicable.Male.mort.plot[[3]] %>% layout(margin = list(b = 100))
+Communicable.Male.mort.plot[[4]]
 ```
+
+**eFigure 10: Age-standardized trends in mortality related to communicable disease in black and white women, United States, 1969-2013**
+
+```{r print-4, fig.width = 9, fig.height=9, echo = F}
+Communicable.Female.mort.plot[[3]] %>% layout(margin = list(b = 100))
+Communicable.Female.mort.plot[[4]]
+```
+
+**eFigure 11: Age-standardized trends in mortality from all other causes in black and white men, United States, 1969-2013**
+
+```{r, fig.width = 9, fig.height = 9, echo = F}
+`All other causes.Male.mort.plot`[[3]] %>% layout(margin = list(b = 100))
+`All other causes.Male.mort.plot`[[4]]
+```
+
+**eFigure 12: Age-standardized trends in mortality from all other causes in black and white women, United States, 1969-2013**
+
+```{r, fig.width = 9, fig.height = 9, echo = F}
+`All other causes.Female.mort.plot`[[3]] %>% layout(margin = list(b = 100)) 
+`All other causes.Female.mort.plot`[[4]]
+```
+
 
