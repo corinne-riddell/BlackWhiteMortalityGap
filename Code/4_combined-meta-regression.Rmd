@@ -22,33 +22,14 @@ source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_e
 cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
 cod_decomp_results$COD_cont_yrs_width <- cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl
 cod_decomp_results$COD_cont_yrs_SE <- (cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl)/3.92
-```
 
-```{r FE_meta_regression_of_cod_contribution, echo = F}
-#Fixed effects meta analysis (fixed effects for state)
+age_cod_results_female <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
+age_cod_results_male <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
+age_cod_results <- rbind(age_cod_results_female, age_cod_results_male)
+rm(age_cod_results_female, age_cod_results_male)
 
-#run 12 stratified models. bs() created the b-spline basis
-models <- cod_decomp_results %>% 
-  group_by(COD, sex) %>%
-  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state,
-              weights = 1/(COD_cont_yrs_SE)^2, 
-              data = .)) 
-
-#calculated predicted values for all models
-dfPred <- broom::augment(models, fit)
-dfPred$year <- 1969:2013
-
-#merge the predictions with original dataset
-cod_decomp_results <- merge(cod_decomp_results, 
-                            dfPred %>% select(COD, sex, year, state, .fitted, .resid), 
-                            by = c("COD", "sex", "state", "year")) %>%
-                      rename(fitted.FE = .fitted, resid.FE = .resid)
-  
-
-#calculated the sum of the residuals for each state-sex-cod strata (summed over years)
-cod_decomp_results <- cod_decomp_results %>% 
-  group_by(state, sex, COD) %>%
-  mutate(sum.residual = sum(abs(resid.FE)))
+age_cod_results$age_COD_cont_yrs_SE <- (age_cod_results$age_COD_cont_yrs_ucl - age_cod_results$age_COD_cont_yrs_lcl)/3.92
+age_cod_results_infants_AOC <- subset(age_cod_results, age_minbin == 0 & COD == "All other causes")
 ```
 
 ```{r RE_meta_regression_of_cod_contribution, echo = F}
@@ -91,7 +72,69 @@ cod_decomp_results <- merge(cod_decomp_results,
 cod_decomp_results <- cod_decomp_results %>% rename(fitted.RE = .fitted, fixed.from.RE = .fixed, resid.RE = .resid)
 ```
 
+```{r FE_meta_regression_of_cod_contribution, echo = F}
+#Fixed effects meta analysis (fixed effects for state)
+
+#run 12 stratified models. bs() created the b-spline basis
+models <- cod_decomp_results %>% 
+  group_by(COD, sex) %>%
+  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state,
+              weights = 1/(COD_cont_yrs_SE)^2, 
+              data = .)) 
+
+#calculated predicted values for all models
+dfPred <- broom::augment(models, fit)
+dfPred$year <- 1969:2013
+
+#merge the predictions with original dataset
+cod_decomp_results <- merge(cod_decomp_results, 
+                            dfPred %>% select(COD, sex, year, state, .fitted, .resid), 
+                            by = c("COD", "sex", "state", "year")) %>%
+                      rename(fitted.FE = .fitted, resid.FE = .resid)
+  
+
+#calculate the sum of the residuals for each state-sex-cod strata (summed over years)
+cod_decomp_results <- cod_decomp_results %>% 
+  group_by(state, sex, COD) %>%
+  mutate(sum.residual = sum(abs(resid.FE)))
+```
+
+```{r RE_meta_regression_agecod_infants_only, echo = F}
+RE.models.infants <- age_cod_results_infants_AOC %>% 
+  group_by(sex) %>%
+  do(fit = lmer(age_COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + (1|state),
+              weights = 1/(age_COD_cont_yrs_SE)^2, 
+              data = .)) 
+
+#creates a dataframe for males and females of the fitted estimates. Includes state variable, but we need to add on the year variable
+RE.pred.infants <- broom::augment(RE.models.infants, fit)
+RE.pred.infants$year <- 1969:2013
+
+RE.models.infants$RE.estimates <- purrr::map(RE.models.infants$fit, ~ ranef(.x))
+
+sex.infants <- c(rep("Female", 40), rep("Male", 40))
+COD.infants <- rep("All other causes", 80)
+RE.estimates.infants <- c(RE.models.infants$RE.estimates[[1]]$state$`(Intercept)`, RE.models.infants$RE.estimates[[2]]$state$`(Intercept)`)
+state.infants <- rep(levels(age_cod_results$state), 2)
+REs.infants <- data.frame(sex.infants, COD.infants, RE.estimates.infants, state.infants)
+REs.infants <- REs.infants %>% rename(sex = sex.infants, COD = COD.infants, RE.estimates = RE.estimates.infants, state = state.infants)
+
+#merge in the RE estimates to the original dataset
+age_cod_results_infants_AOC <- merge(age_cod_results_infants_AOC,
+                            REs.infants, by = c("sex", "state"), #state-specific REs; don't need time for merge (because time fixed)
+                            all.x = T)
+
+#merge other aspects, like the FE, with original dataset
+age_cod_results_infants_AOC <- merge(age_cod_results_infants_AOC, 
+                             RE.pred.infants %>% select(sex, state, year, .fitted, .resid, .fixed), 
+                             by = c("sex", "state", "year"))
+
+age_cod_results_infants_AOC <- age_cod_results_infants_AOC %>% rename(fitted.RE = .fitted, fixed.from.RE = .fixed, resid.RE = .resid)
+```
+
 ```{r save_data}
 write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+
+write.csv(age_cod_results_infants_AOC, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_infants_AOC.csv")
 ```
 
