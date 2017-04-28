@@ -42,6 +42,12 @@ cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhite
 cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
 cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiovascular", "Cancers", "All other causes",
                                                                         "Communicable", "Non-communicable",  "Injuries"))
+
+age_cod_results_infants_AOC <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_infants_AOC.csv")
+age_cod_results_infants_AOC$stabbrs <- state.abb[match(age_cod_results_infants_AOC$state, state.name)]
+age_cod_results_infants_AOC$stabbrs[age_cod_results_infants_AOC$state == "Washington DC"] <- "DC"
+age_cod_results_infants_AOC <- reorder.as.map(age_cod_results_infants_AOC, "state", "stabbrs")
+
 ```
 
 ###Abstract
@@ -211,7 +217,7 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
     #scale_fill_manual(values = c("#b2e2e2")) +
     facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
     #geom_line(aes(y = fitted.RE), col = "#d7191c", lty = 3) +
-    ggtitle(paste0("Estimated smoothed contribution of ", COD1, " disease to the black-white life expectancy gap (blue 95% credible interval) vs. the meta-estimated general pattern (red line) in ", sex1, " 1969-2013")) +
+#    ggtitle(paste0("Estimated smoothed contribution of ", COD1, " disease to the black-white life expectancy gap (blue 95% credible interval) vs. the meta-estimated general pattern (red line) in ", sex1, " 1969-2013")) +
     theme_classic(base_size = 10) + 
     theme(axis.text.x = element_blank(),
           strip.background=element_blank(),
@@ -377,7 +383,22 @@ Communicable disease is the least most common cause of death, although the 1990s
 
 **All other causes**
 
+```{r, echo = F}
+male.endpoints.aoc <- cod_decomp_results %>% filter(year %in% c(1969, 2013), sex =="Male", COD == "All other causes", state == "Alabama") %>% transmute(round(fitted.RE - RE.estimates, 2) )
+
+female.endpoints.aoc <- cod_decomp_results %>% filter(year %in% c(1969, 2013), sex =="Female", COD == "All other causes", state == "Alabama") %>% transmute(round(fitted.RE - RE.estimates, 2) )
+
+male.infants.endpoints.aoc <- age_cod_results_infants_AOC %>% filter(year %in% c(1969, 2013), sex =="Male", state == "Alabama") %>% transmute(round(fitted.RE - RE.estimates, 2) )
+
+female.infants.endpoints.aoc <- age_cod_results_infants_AOC %>% filter(year %in% c(1969, 2013), sex =="Female", state == "Alabama") %>% transmute(round(fitted.RE - RE.estimates, 2) )
+```
+
+
 Mortality from all other causes generally decreased earlier in the time period, especially among blacks (**eFigures 11 and 12**). White men and women have shown increasing mortality rates from all other causes since the 1980s, along with black women, while black men have continued to experience decreasing rates within several states. As such, the contribution of all other causes to the life expectancy gap has generally decreased over time, and reached equality in New York, Massachusetts, and Rhode Island for both genders (**Figures 13 and 14**). The most disparate states include Pennsylvania and DC, with much larger contributions estimated for all other causes in the earlier years within Pennsylvania and in the later years within DC. 
+
+*CR note: I just added the following paragraph. Open to how/whether we want to talk about this. Thought we need to say something about how "all other causes partiallly reflects infant mortality. Also these additional figures (Fig 15 and 16) would be moved to the appendix.*
+
+To investigate how much of the gap in all other causes occurred during the first year of life, we conducted a sensitivity analysis to calculate the contribution of deaths due to all other causes that occurred *during the first year of life* to the life expectancy gap (**Figures 15 and 16**). We investigated this because the majority of infant deaths are classified as being due to all other causes, conflating the all other causes category with inquities in infant mortality. We found that 43% of the contribution of all other causes to the gap was rooted in differences during the first year of life. In 2013, 53% of these deaths occurred during the first year of life. Thus, the trend in the all other causes contribution partially reflects a decreasing disparity in infant mortality.
 
 ****
 
@@ -564,6 +585,49 @@ Cancers.Female.plot[[3]] +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5)
 ```
+
+**Figure 15: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in males younger than one**
+
+```{r age-cod-trend-infant-males, fig.width = 9, fig.height = 9, echo = F}
+ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Male"), aes(y = age_COD_cont_yrs_mean, x = year)) +
+  geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+  geom_ribbon(aes(ymin = age_COD_cont_yrs_lcl, ymax = age_COD_cont_yrs_ucl), fill = "#abd9e9", alpha = 0.65) +
+  geom_line(col = "#08519c") +  
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (years)") +
+  xlab("Year (1969-2013)") +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
+```
+
+**Figure 16: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the overall pattern in females younger than one**
+
+```{r age-cod-trend-infant-females, fig.width = 9, fig.height = 9, echo = F}
+ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Female"), aes(y = age_COD_cont_yrs_mean, x = year)) +
+  geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+  geom_ribbon(aes(ymin = age_COD_cont_yrs_lcl, ymax = age_COD_cont_yrs_ucl), fill = "#abd9e9", alpha = 0.65) +
+  geom_line(col = "#08519c") +  
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (years)") +
+  xlab("Year (1969-2013)") +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
+```
+
 
 ###Discussion 
 
