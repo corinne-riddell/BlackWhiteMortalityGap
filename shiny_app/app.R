@@ -1,5 +1,7 @@
-library(shiny) #0.14.1
-library(plotly) #4.5.6
+library(shiny, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions") #0.14.1
+library(ggplot2, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions")
+library(plotly, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions") #4.5.6
+library(crosstalk, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions")
 library(viridis)
 library(scales)
 library(shinythemes)
@@ -132,8 +134,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                  selectInput(inputId = "state", label = "State:", 
                                                              choices = levels(BlackWhite_results$state))),
                                 absolutePanel(bottom = 0, left = 0, draggable = T,
-                                  conditionalPanel(condition = "input.tab == 'state.dashboard'",
-                                                   img(src = "COD.legend.png"))
+                                  conditionalPanel(condition = "input.tab == 'state.dashboard'")
 
                                 )
                                 ),
@@ -175,10 +176,8 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                 plotlyOutput("life_expectancy"),
                                 htmlOutput("Explain_LE_males"),
                                 htmlOutput("Explain_LE_females"),
-                                plotOutput("age_cod1", height = 700, width = 1100)
+                                plotlyOutput("age_cod", height = 700, width = 1100)
                                 # textOutput("Explain_Age_Gap"),
-                                # plotlyOutput("cod_bayes"),
-                                #textOutput("Explain_COD_Gap"))
                                 ),
                        
                        tabPanel(title = "More information", value = "more",
@@ -783,72 +782,23 @@ output$Explain_LE_females <- renderUI({
   
 })
 
-bounds <- reactive({
+output$age_cod <- renderPlotly({
+  sub1 <- subset(age_cod_results, year %in% c(input$years_LEgap[1], input$years_LEgap[2]) & state == input$state)
+  ly1 <- ggplotly(
+    ggplot(data = sub1,
+           aes(x=age, y = age_COD_cont_yrs_mean, fill = COD)) +
+      geom_bar(stat = "identity") + coord_flip() + theme_minimal()  + geom_vline(aes(xintercept = 0)) +
+      theme(legend.title = element_blank()) + ylab("Contribution to the life expectancy gap (years)") +
+      xlab("") +
+      facet_wrap(year ~ sex) 
+  ) 
   
-  year1 <- data.frame(subset(age_cod_results, year == input$years_LEgap[1] & state == input$state))
-  year1 <- year1 %>% group_by(sex, age) %>% summarise(s = sum(age_COD_cont_yrs_mean))
-  year1.min <- min(year1$s)
-  year1.max <- max(year1$s)
-
-  year2 <- data.frame(subset(age_cod_results, year == input$years_LEgap[2] & state == input$state))
-  year2 <- year2 %>% group_by(sex, age) %>% summarise(s = sum(age_COD_cont_yrs_mean))
-  year2.min <- min(year2$s)
-  year2.max <- max(year2$s)
+  for(i in 1:length(ly1$x$data)){
+    ly1$x$data[[i]]$text <- gsub("age_COD_cont_yrs_mean", "Contribution to gap (yrs)", ly1$x$data[[i]]$text)
+  }
   
-  return(c(  min(year1.min, year2.min), c(  max(year1.max, year2.max) )))
+  ly1 %>% layout(margin = list(b = 100))
   
-})
-
-output$age_cod1 <- renderPlot({
-  plot1 <- ggplot(data = subset(age_cod_results, sex == "Male" & year == input$years_LEgap[1] & 
-                                         state == input$state), 
-                         aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
-    geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
-    ylab("Contribution to the life expectancy gap (years)") +
-    xlab("") + ggtitle(paste0("Males, ", input$years_LEgap[1])) + 
-    scale_y_continuous(limits = bounds())  + 
-    theme(#legend.position = c(0.8, 0.8), 
-          #legend.text=element_text(size=12),
-          #legend.title = element_blank(),
-      legend.position = "none",    
-      axis.text = element_text(size=16), axis.title = element_text(size=16)) +
-    geom_hline(yintercept = 0, lwd = 1.5)
-
-  plot2 <- ggplot(data = subset(age_cod_results, sex == "Male" & year == input$years_LEgap[2] & 
-                                          state == input$state), 
-                          aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
-    geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
-    ylab("Contribution to the life expectancy gap (years)") +
-    xlab("") + ggtitle(paste0("Males, ", input$years_LEgap[2])) + 
-    scale_y_continuous(limits = bounds()) + 
-    theme(legend.position = "none",
-          axis.text = element_text(size=16), axis.title = element_text(size=16)) +
-    geom_hline(yintercept = 0, lwd = 1.5)
-  
-  plot3 <- ggplot(data = subset(age_cod_results, sex == "Female" & year == input$years_LEgap[1] & 
-                                         state == input$state), 
-                         aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
-    geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
-    ylab("Contribution to the life expectancy gap (years)") +
-    xlab("") + ggtitle(paste0("Females, ", input$years_LEgap[1])) + 
-    scale_y_continuous(limits = bounds()) + 
-    theme(legend.position = "none",
-          axis.text = element_text(size=16), axis.title = element_text(size=16)) +
-    geom_hline(yintercept = 0, lwd = 1.5)
-  
-  plot4 <- ggplot(data = subset(age_cod_results, sex == "Female" & year == input$years_LEgap[2] & 
-                                          state == input$state), 
-                          aes(x=age, y=age_COD_cont_yrs_mean, fill=COD)) + 
-    geom_bar(stat = "identity", col = "white") + coord_flip() + theme_minimal() +
-    ylab("Contribution to the life expectancy gap (years)") +
-    xlab("") + ggtitle(paste0("Females, ", input$years_LEgap[2])) + 
-    scale_y_continuous(limits = bounds()) + 
-    theme(legend.position = "none",
-          axis.text = element_text(size=16), axis.title = element_text(size=16)) +
-    geom_hline(yintercept = 0, lwd = 1.5)
-  
-  #legend <-  rasterGrob(as.raster(readPNG("COD.legend.png")), interpolate = FALSE)
-  grid.arrange(plot3, plot1, plot4, plot2, ncol = 2, nrow = 2)
 })
 
 ##########################################
