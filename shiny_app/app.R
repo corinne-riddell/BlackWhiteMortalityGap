@@ -573,7 +573,7 @@ server <- function(input, output) {
   })
 
   ##########################################
-  ##          State snapshot: Age         ##
+  ##   Cross-sectional age contribution   ##
   ########################################## 
   
   temp.df2 <- reactive({
@@ -619,7 +619,7 @@ server <- function(input, output) {
   
   
 ##########################################
-##            State Snapshot            ##
+##            Explore a state           ##
 ##########################################
 
 output$description_state_snapshot <- renderUI({
@@ -640,7 +640,7 @@ output$population_trend <- renderPlotly({
       geom_line(aes(col = sex, lty = race)) +
       scale_y_continuous(name = "", label = comma) + 
       scale_x_continuous("") + 
-      theme_minimal()) 
+      theme_minimal() + theme(legend.title = element_blank())) 
   
   for(i in 1:length(p$x$data)){
     p$x$data[[i]]$text <- gsub("pop_across_age", "Population Size", p$x$data[[i]]$text)
@@ -672,7 +672,8 @@ output$life_expectancy <- renderPlotly({
                    geom_text(data = subset(BlackWhite_results, year == 2013 & state == input$state),
                              aes(y = LE_black_mean - 1),
                              label = "Black", check_overlap = T, size = 2.5) +
-                   theme_minimal() #+ ggtitle(paste0("Trends in life expectancy in ", input$state))
+                   theme_minimal() +
+                   theme(legend.title = element_blank())#+ ggtitle(paste0("Trends in life expectancy in ", input$state))
   ) %>% 
     layout(yaxis = list(title = "Life expectancy"))
   
