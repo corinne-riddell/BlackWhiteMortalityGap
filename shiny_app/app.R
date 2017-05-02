@@ -553,18 +553,30 @@ server <- function(input, output) {
     interactive.plot <- ggplotly(ggplot(temp.df(), 
                     aes(x = new.start, y = state.reorder2.n)) + 
                geom_segment(aes(x = LE_black_mean, xend = LE_white_mean, 
-                                y = state.reorder2.n, yend = state.reorder2.n)) + 
+                                y = state.reorder2.n + 0.46, yend = state.reorder2.n + 0.46)) + 
                
                geom_rect(aes(xmin = new.start, 
-                             ymin = state.reorder2.n - 0.45, 
-                             ymax = state.reorder2.n + 0.45, 
-                             xmax = new.finish, fill = COD), color = "white") +
+                             ymin = state.reorder2.n - 0.44, 
+                             ymax = state.reorder2.n + 0.44, 
+                             xmax = new.finish, fill = COD)) +
                scale_y_continuous(breaks = 1:length(levels(factor(temp.df()$state.reorder2))), 
                                   labels = levels(factor(temp.df()$state.reorder2))) +
-               theme_minimal() + xlab(" ") +
-               geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5)) +
-               geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5), lty = 3) 
+               theme_minimal() + xlab(" ") + theme(legend.title = element_blank()) +
+               geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46)) +
+               geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), lty = 3) 
     )
+    
+    for(i in 1:length(interactive.plot$x$data)){
+      if (interactive.plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+        interactive.plot$x$data[[i]]$line$width <- 1
+        if(interactive.plot$x$data[[i]]$line$dash == "dot"){
+          interactive.plot$x$data[[i]]$text <- "Black Life Expectancy"  
+        }
+        if(interactive.plot$x$data[[i]]$line$dash == "solid"){
+          interactive.plot$x$data[[i]]$text <- "White Life Expectancy"  
+        }
+      }
+    }
     
     interactive.plot %>% 
       layout(xaxis = list(title = " ", side = "top"), yaxis = list(title = NA, autorange = "reversed"))
@@ -592,29 +604,36 @@ server <- function(input, output) {
   })
 
   output$state_age_summary <- renderPlotly({
-    ggplotly(ggplot(temp.df2(), 
+    ly <- ggplotly(ggplot(temp.df2(), 
                     aes(x = new.start, y = state.reorder2.n)) + 
                geom_segment(aes(x = LE_black_mean, xend = LE_white_mean, 
-                                y = state.reorder2.n, yend = state.reorder2.n), col = "red") + 
+                                y = state.reorder2.n + 0.46, yend = state.reorder2.n + 0.46), col = "red") + 
                
                geom_rect(aes(xmin = new.start, 
-                             ymin = state.reorder2.n - 0.45, 
-                             ymax = state.reorder2.n + 0.45, 
-                             xmax = new.finish, fill = age), color = "white") +
+                             ymin = state.reorder2.n - 0.44, 
+                             ymax = state.reorder2.n + 0.44, 
+                             xmax = new.finish, fill = age)) +
                scale_y_continuous(breaks = 1:length(levels(factor(temp.df()$state.reorder2))), 
                                   labels = levels(factor(temp.df()$state.reorder2))) +
-               theme_minimal() + 
-               geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5), col = "red") +
-               geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.5, yend = state.reorder2.n + 0.5), col = "red", lty = 3) +
+               theme_minimal() + theme(legend.title = element_blank()) +
+               geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), col = "red") +
+               geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), col = "red", lty = 3) +
                scale_fill_viridis(discrete = T, direction = -1) 
-               # geom_text(aes(x = LE_white_mean + 2, y = state.reorder2.n),
-               #           label = "White", check_overlap = T, size = 2.5, col = "red") +
-               # geom_text(aes(x = LE_black_mean - 2, y = state.reorder2.n),
-               #           label = "Black", check_overlap = T, size = 2.5, col = "red")
-               
-             
-    )  %>% 
-      layout(xaxis = list(title = " ", side = "top", xpad = 20), yaxis = list(title = NA, autorange = "reversed"))
+    )  
+    
+    for(i in 1:length(ly$x$data)){
+      if (ly$x$data[[i]]$line$color == "rgba(255,0,0,1)") {
+        ly$x$data[[i]]$line$width <- 1
+        if(ly$x$data[[i]]$line$dash == "dot"){
+          ly$x$data[[i]]$text <- "Black Life Expectancy"  
+        }
+        if(ly$x$data[[i]]$line$dash == "solid"){
+          ly$x$data[[i]]$text <- "White Life Expectancy"  
+        }
+        }
+    }
+    
+    ly %>% layout(xaxis = list(title = " ", side = "top", xpad = 20), yaxis = list(title = NA, autorange = "reversed"))
   })
   
   
