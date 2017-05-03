@@ -98,7 +98,7 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                 conditionalPanel(condition = "input.tab == 'LE.summary' || input.tab == 'COD.summary' || input.tab == 'Mortality.trends'",
                                                  radioButtons(inputId = "plot_choice", 
                                                               label = "Plot style:", 
-                                                              choices = c("Map", "Grid"), 
+                                                              choices = c("Grid", "Map"), 
                                                               selected = "Grid")),
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.snapshot' || input.tab == 'Age.snapshot' ",
@@ -118,17 +118,10 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                                               label = "Trends for: ", width = '150px')),
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.summary'",
-                                                 # switchButton(inputId = "pop_model",
-                                                 #              label = "Show population curve?",
-                                                 #              value = FALSE, col = "GB", type = "OO"),
                                                  radioButtons(inputId = "pop_model",
                                                               label = "Population curve:",
-                                                              choices = c("Hide", "National", "State-specific"),
-                                                              selected = "Hide"),
-                                                 radioButtons(inputId = "contribution_type", 
-                                                              label = "Contribution format:", 
-                                                              choices = c("Years", "Proportion (%)")
-                                                              )),
+                                                              choices = c("Hide", "National"),
+                                                              selected = "Hide")),
                                 
                                 conditionalPanel(condition = "input.tab == 'state.dashboard'",
                                                  selectInput(inputId = "state", label = "State:", 
@@ -146,17 +139,17 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
 
                        tabPanel(title = "Trends in life expectancy gap", value = "LE.summary",
                                 htmlOutput("description_LE_summary"),
-                                plotlyOutput("state_LEsummary", height = 700, width = 1100)
+                                plotlyOutput("state_LEsummary", height = 700) #, width = 700
                                 ),
                        
                        tabPanel(title = "Trends in cause contribution", value = "COD.summary",
                                 htmlOutput("description_cod_trends"),
-                                plotlyOutput("contribution_plot", height = 700, width = 1100)
+                                plotlyOutput("contribution_plot", height = 700) #, width = 1100
                                 ),
                        
                        tabPanel(title = "Trends in mortality", value = "Mortality.trends",
                                 htmlOutput("description_mortality_trends"),
-                                plotlyOutput("mortality_plot", height = 700, width = 1100)
+                                plotlyOutput("mortality_plot", height = 700) #, width = 1100
                                 ),
                        
                        tabPanel(title = "Cross-sectional cause contribution", value = "COD.snapshot",
@@ -215,12 +208,14 @@ server <- function(input, output) {
   })
   
   output$description_LE_summary <- renderUI({ 
-    HTML(paste0("<b>How has the difference in life expectancy between black and white ", lowercase.sex(),
+    HTML(paste0("<br/><b>How has the difference in life expectancy between black and white ", lowercase.sex(),
                 "s changed over time?</b>",
                 "<br/><br/>", 
                 "This graph depicts state-level trends in the life expectancy gap between ", 
                 input$years_LEgap[1], " and ", input$years_LEgap[2], " for ", lowercase.sex(), "s.",
-                " The grey band represents the 95% credible interval for the estimated mean trend line.<br/><br/>",
+                ifelse(input$plot_choice == "Grid",
+                " Use your mouse to hover over the trend lines to view the estimate of the life expectancy gap for each year and state. Switch to the Map 'Plot style', to display statistical precision. <br/><br/>",
+                " Here, states with less precise estimates (often due to small black populations) have wider ribbons, where these ribbons display the 95% credible brand for the trend line.<br/><br/>"),
                 "<h2>State-level trends in the black-white life expectancy gap in ", 
                 lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
                 input$years_LEgap[2], "</h2>"))
@@ -245,39 +240,47 @@ server <- function(input, output) {
              )
     
     for(i in 1:length(grid.p$x$data)){
-    #  if (grid.p$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
-    #    grid.p$x$data[[i]]$hoverinfo <- "none"
-    #  }
       grid.p$x$data[[i]]$text <- gsub("LE_wbgap_mean", "Mean life expectancy gap", grid.p$x$data[[i]]$text)
     }
     return(grid.p)
   })
   
   map.contribution.LE <- reactive({
-    interactive.p <- ggplotly(ggplot(data = subset(BlackWhite_results, sex == input$sex & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
+    gg.p <- ggplot(data = subset(BlackWhite_results, sex == input$sex & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]),
                           aes(y = LE_wbgap_mean, x = year)) +
     geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = input$years_LEgap[1])) +
-    geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl), fill = "grey") +
-    geom_line(aes(col = Census_Division)) + 
+    geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+    #geom_line(aes(col = Census_Division)) + 
     facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
     theme_classic(base_size = 10) +
     theme(axis.text.x = element_blank(),
           strip.background=element_blank(),
           axis.line=element_blank(),
           axis.ticks=element_blank(),
+          legend.position = "none",
           panel.background = element_rect(fill = "transparent", colour = NA), 
           plot.background = element_rect(fill = "transparent", colour = NA),
           legend.background = element_rect(fill = "transparent", colour = NA)) +
     ylab("Life expectancy gap (years)") +
     xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) #+
-      # ggtitle(paste0("State-level trends in the black-white life expectancy gap in ", 
-      #                lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
-      #                input$years_LEgap[2]))
-    )
+    
+    
+    if(input$sex == "Male"){
+      interactive.p <- ggplotly(gg.p +     
+        geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5))
+    } else {
+      interactive.p <- ggplotly(gg.p +     
+        geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5))
+    }
     
     for(i in 1:length(interactive.p$x$data)){
-      if (interactive.p$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+      if (interactive.p$x$data[[i]]$line$color %in% c("rgba(0,0,0,1)", "rgba(190,190,190,0.5)")) {
         interactive.p$x$data[[i]]$hoverinfo <- "none"
+        interactive.p$x$data[[i]]$line$width <- 1
       }
       
       interactive.p$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.p$x$data[[i]]$text)
@@ -299,7 +302,7 @@ server <- function(input, output) {
   })
   
   output$state_LEsummary <- renderPlotly({
-    plot.chosen.LE() %>% layout(margin = list(l = 100)) #add space between plotly yaxis and the UI sidebar
+    plot.chosen.LE() %>% layout(margin = list(l = 75, b = 100)) #add space between plotly yaxis and the UI sidebar
   })
   
   ##########################################
@@ -307,11 +310,12 @@ server <- function(input, output) {
   ##########################################
   
   output$description_cod_trends <- renderUI({
-    HTML(paste0("<b>How many years does each major cause of death contribute to the life expectancy gap in ", lowercase.sex(), 
+    HTML(paste0("<br/><b>How many years does each major cause of death contribute to the life expectancy gap in ", lowercase.sex(), 
                "s ?</b><br/><br/>
                Select the cause of death you're interested in to see how many years of the total gap
-               is due to the selected cause, and how this changed over time. You can also view the proportional
-               contribution by selecting 'Proportion (%)'.</br></br>",
+               is due to the selected cause, and how this changed over time.", ifelse(input$plot_choice == "Grid",
+               " Use your mouse to hover over the trend lines to view the estimate of the contribution for each year and state. Switch to the Map 'Plot style', to display statistical precision.",
+               " Here, states with less precise estimates (often due to small black populations) have wider ribbons, where these ribbons display the 95% credible brand for the trend line.<br/><br/>"),
                "<h2>Contributions of ", lowercase.COD(), " to the black-white life expectancy gap in ", 
                lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
                input$years_LEgap[2], "</h2>"))
@@ -320,38 +324,20 @@ server <- function(input, output) {
   contrib.data.react <- reactive({
     temp <- data.frame(subset(cod_decomp_results, sex == input$sex & COD == input$COD & 
                                 year >= input$years_LEgap[1] & year <= input$years_LEgap[2]))
-    temp["y1"] <-  switch(input$contribution_type,
-                          "Years" = temp[["COD_cont_yrs_mean"]],
-                          "Proportion (%)" = temp[["COD_cont_prop_mean"]]
-    )
-    temp["y1_lcl"] <- switch(input$contribution_type,
-                             "Years" = temp[["COD_cont_yrs_lcl"]],
-                             "Proportion (%)" = temp[["COD_cont_prop_lcl"]]
-    )
-    temp["y1_ucl"] <- switch(input$contribution_type,
-                             "Years" = temp[["COD_cont_yrs_ucl"]],
-                             "Proportion (%)" = temp[["COD_cont_prop_ucl"]]
-    )
-    temp["y1_for_area"] <- switch(input$contribution_type,
-                                  "Years" = ifelse(temp[["COD_cont_yrs_mean"]] > 0, temp[["COD_cont_yrs_lcl"]],
-                                                   temp[["COD_cont_yrs_ucl"]]),
-                                  "Proportion (%)" = ifelse(temp[["COD_cont_yrs_mean"]] > 0, temp[["COD_cont_prop_lcl"]],
-                                                            temp[["COD_cont_prop_ucl"]])
-    )
+    temp["y1"] <-  temp[["COD_cont_yrs_mean"]]
+    temp["y1_lcl"] <- temp[["COD_cont_yrs_lcl"]]
+    temp["y1_ucl"] <- temp[["COD_cont_yrs_ucl"]]
+    temp["y1_for_area"] <- ifelse(temp[["COD_cont_yrs_mean"]] > 0, 
+                                  temp[["COD_cont_yrs_lcl"]],
+                                  temp[["COD_cont_yrs_ucl"]])
     temp
-  })
-  
-  xaxis.title <- reactive({ 
-    switch(input$contribution_type,
-           "Years" = "(years)",
-           "Proportion (%)" = "(%)")
   })
   
   grid.contribution <- reactive({
     plot <- ggplot(contrib.data.react(), aes(x = year, y = y1)) + 
       geom_line(aes(col = state)) + 
       facet_wrap(~ Census_Division) +
-      ylab(paste0("Contribution to LE Gap", xaxis.title())) +
+      ylab(paste0("Contribution to life expectancy gap (years)")) +
       xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
       geom_text(data = subset(contrib.data.react(), 
                               year == 2013 & sex == input$sex & COD == input$COD), 
@@ -360,23 +346,40 @@ server <- function(input, output) {
       theme(axis.text.x = element_text(angle = 40),
             panel.background = element_rect(fill = "transparent", colour = NA), 
             plot.background = element_rect(fill = "transparent", colour = NA),
-            legend.background = element_rect(fill = "transparent", colour = NA)) +
+            legend.background = element_rect(fill = "transparent", colour = NA)
+            ) +
       geom_hline(yintercept = 0) 
 
     if(input$pop_model == "National"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
-    }else if(input$pop_model == "State-specific"){
-      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE, group = state, col = state),  lty = 3)      
     }
     
-    return(ggplotly(plot))
+    ggp <- ggplotly(plot)
+    
+    for(i in 1:length(ggp$x$data)){
+      if(ggp$x$data[[i]]$mode != "text" ){
+        if (ggp$x$data[[i]]$line$color == "rgba(0,0,0,1)" & ggp$x$data[[i]]$line$dash == "dashed") {
+            ggp$x$data[[i]]$hoverinfo <- "none"
+            ggp$x$data[[i]]$line$width <- 1
+            
+        }
+      }
+      if(ggp$x$data[[i]]$mode == "text" ){
+        ggp$x$data[[i]]$hoverinfo <- "none"
+      }
+      
+       ggp$x$data[[i]]$text <- gsub("y1", "Contribution to gap", ggp$x$data[[i]]$text)
+       ggp$x$data[[i]]$text <- gsub("fitted.RE - RE.estimates", "National estimate", ggp$x$data[[i]]$text)
+       ggp$x$data[[i]]$text <- gsub("fitted.RE", "State estimate", ggp$x$data[[i]]$text)
+    }
+    
+    return(ggp)
   })
   
   
   map.contribution <- reactive({
     plot <- ggplot(contrib.data.react(), aes(x = year, y = y1)) +
-      geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl), fill = "grey", alpha = 0.5) +
-      geom_line(aes(col = Census_Division)) + 
+      geom_ribbon(aes(ymin = y1_lcl, ymax = y1_ucl, fill = Census_Division)) +
       geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
       facet_wrap(~stabbrs.map.order, ncol = 11, drop = F) +
       theme_classic(base_size = 10) +
@@ -386,44 +389,43 @@ server <- function(input, output) {
             axis.ticks=element_blank(),
             panel.background = element_rect(fill = "transparent", colour = NA), 
             plot.background = element_rect(fill = "transparent", colour = NA),
-            legend.background = element_rect(fill = "transparent", colour = NA)) +
-      ylab("Contribution to the LE gap") +
+            legend.background = element_rect(fill = "transparent", colour = NA),
+            legend.position = "none") +
+      ylab("Contribution to the life expectancy gap (years)") +
       xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
     
     if(input$pop_model == "National"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
-    }else if(input$pop_model == "State-specific"){
-      plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE), col = "black", lty = 3)        
-    }    
-           
-    interactive.plot2 <- ggplotly(plot)
+    }
     
-    for(i in 1:length(interactive.plot2$x$data)){
-      if (interactive.plot2$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
-        interactive.plot2$x$data[[i]]$hoverinfo <- "none"
-        interactive.plot2$x$data[[i]]$line$width <- 1
-
+    ggp <- ggplotly(plot)
+     
+    for(i in 1:length(ggp$x$data)){
+      if (ggp$x$data[[i]]$line$color == "rgba(0,0,0,1)" & ggp$x$data[[i]]$line$dash != "dashed") {
+        ggp$x$data[[i]]$hoverinfo <- "none"
+        ggp$x$data[[i]]$line$width <- 1
+        
       }
       
-      interactive.plot2$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.plot2$x$data[[i]]$text)
-      interactive.plot2$x$data[[i]]$text <- gsub("y1_ucl", "Upper credible limit", interactive.plot2$x$data[[i]]$text)
-      interactive.plot2$x$data[[i]]$text <- gsub("y1_lcl", "Lower credible limit", interactive.plot2$x$data[[i]]$text)
-      interactive.plot2$x$data[[i]]$text <- gsub("y1", "Contribution to gap", interactive.plot2$x$data[[i]]$text)
+      ggp$x$data[[i]]$text <- gsub("y1", "Contribution to gap", ggp$x$data[[i]]$text)
+      ggp$x$data[[i]]$text <- gsub("fitted.RE - RE.estimates", "National estimate", ggp$x$data[[i]]$text)
+      ggp$x$data[[i]]$text <- gsub("fitted.RE", "State estimate", ggp$x$data[[i]]$text)
     }
-  
-    interactive.plot2
+    
+    
+    return(ggp)
+
   })
   
   plot.chosen <- reactive({
     plot <- switch(input$plot_choice,
                    "Map" = map.contribution(), 
                    "Grid" = grid.contribution())
-    plot
   })
   
   
   output$contribution_plot <- renderPlotly({
-    plot.chosen() %>% layout(margin = list(l = 100))
+    plot.chosen() %>% layout(margin = list(l = 75, b = 100))
   })
   
 
@@ -443,8 +445,7 @@ server <- function(input, output) {
     if(input$plot_choice == "Map"){
       plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
                               aes(x = year, y = rate.per.100k_mean)) + 
-                         geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race), fill = "grey", col = NA, alpha = 0.5) +
-                         geom_line(aes(col = Race)) +
+                         geom_ribbon(aes(ymin = rate.per.100k_lcl, ymax = rate.per.100k_ucl, group = Race, fill = Race), col = NA) +
                          facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
                          xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) +
                          ylab("Age-standardized mortality rate (per 100,000)") + 
@@ -494,13 +495,11 @@ server <- function(input, output) {
     if(input$plot_choice == "Map"){
       plot <- ggplotly(ggplot(subset(mortality.rates.diff, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
                               aes(x = year, y = rate.difference_mean)) + 
-                         geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL), fill = "grey", col = NA, alpha = 0.5) +
-                         geom_line(aes(col = Census_Division)) +
+                         geom_ribbon(aes(ymin = rate.difference_LCL, ymax = rate.difference_UCL, fill = Census_Division), col = NA) +
                          facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
                          xlab(" ") + 
                          ylab("Excess mortality among blacks (per 100,000)") + 
                          geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
-                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
                          theme_classic(base_size = 10) +
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
@@ -518,7 +517,6 @@ server <- function(input, output) {
                          xlab(" ") + 
                          ylab("Excess mortality among blacks (per 100,000)") + 
                          geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +  
-                         ggtitle(paste0("Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD())) +
                          theme_classic(base_size = 10) +
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
@@ -532,6 +530,7 @@ server <- function(input, output) {
     for(i in 1:length(plot$x$data)){
       if (plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
         plot$x$data[[i]]$hoverinfo <- "none"
+        plot$x$data[[i]]$line$width <- 1
       }
       
       plot$x$data[[i]]$text <- gsub("rate.difference_mean", "Mean excess mortality", plot$x$data[[i]]$text)
@@ -566,7 +565,7 @@ server <- function(input, output) {
                              "s (vertical black line) and black ", lowercase.sex(), "s (dashed black line). 
                              Causes to the left of the dashed line narrow the gap in ", input$year, " 
                              whereas causesto the right exacerbate it. Use these buttons to change the gender or year being examined.<br/><br/>
-                             <h3>Contribution of major CODs to the life expectancy gap (years)</h3>"))
+                             <h3>Contribution of major causes of death to the life expectancy gap (years)</h3>"))
   })
   
   temp.df <- reactive({
