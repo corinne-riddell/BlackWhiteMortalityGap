@@ -1,0 +1,130 @@
+---
+title: "Changes in cause of death and the black-white life expectancy gap"
+author: "Corinne Riddell, PhD"
+date: "April 24, 2017"
+output: ioslides_presentation
+---
+
+<head>
+<style>
+.greentext {
+        color: green;
+}
+.redtext {
+        color: red;
+}
+</style>
+</head>
+
+```{r initialize, echo=FALSE, warning=F, message=F}
+library(plotly)
+library(viridis)
+library(scales)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(DT)
+library(splines)
+library(broom)
+library(tidyverse)
+
+library(png)
+library(jpeg)
+library(grid)
+library(gridExtra)
+library(knitr)
+
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+## Thank you
+
+```{r, echo=F}
+img1 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/k_morrison.png")), interpolate = FALSE)
+img2 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/s_harper2.png")), interpolate = FALSE)
+img3 <-  rasterGrob(as.raster(readJPEG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/j_kaufman.jpg")), interpolate = FALSE)
+grid.arrange(img3,
+             img1,
+             img2,
+             ncol = 3)
+```
+
+----
+
+```{r, echo = F, out.width = 500}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/Harper_HA_title.png")
+```
+
+```{r, echo=F, out.width = 750}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/Harper_HA_fig1.png")
+```
+
+----
+
+```{r, echo = F, out.width = 250}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/Harper_HA_quote.png")
+```
+
+And also...
+
+>- be broadly accessible,
+>- be interactive,
+>- be reproducible,
+>- and allow pictures to speak for themselves.
+
+## The data
+
+```{r, echo = F, out.width = 400}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/alabama.data.ex.png")
+```
+
+- <b class = "greentext">40</b> "states": 39 states + DC
+- <b class = "greentext">45</b> years: 1969--2013 
+- <b class = "greentext">19</b> age groups: <1, 1-4, 5-9, ..., 85+
+- <b class = "greentext">2</b> sexes
+- <b class = "greentext">2</b> races (Black, White)
+- <b class = "greentext">6</b> major causes of deaths: CVD, cancer, non-communicable, communicable, injuries, all other causes
+- = <b class = "greentext">820,800 rows of data</b>
+
+## The data
+
+```{r, echo = F, out.width = 400}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/alabama.data.ex.png")
+```
+
+- When the number of deaths is between 1 and 9 it is <b class = "redtext">coarsened</b>. 
+
+
+## The analysis
+
+**Estimate smoothed mortality rates and impute coarsened data.**
+
++ Bayesian autoregressive model to borrow information *over time* within strata
++ $log(\lambda_t) \sim N(\ log(\lambda_{t-1}),\ \tau)$
++ impute coarsened 1--9 values using a truncated Poisson
++ `rjags`
+
+## The analysis
+
+**Create 1,000 posterior samples**
+
++ Each sample contains estimated *smoothed* and *imputed* death counts
++ For each sample:
+    1. Create a life table for every strata
+    2. Calculate the <b style = "greentext">difference</b> in life expectancy between blacks and whites
+    3. Decompose the difference by age and cause of death
+    4. Calculate age-standardized mortality rates
++ Calculate the mean, 5^th^ and 95^th^ percentiles for all estimates.
+    
+## The analysis
+
+**Synthesize state-specific findings**
+
++ Random-effects meta regression to estimate overall trend in contributions for each cause.
++ Use `ggplot2`, `plotly`, and `Shiny` to make results accessible as a web app.
+
+----
+# To the results!
+
+
+
