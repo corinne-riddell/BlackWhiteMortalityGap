@@ -1,7 +1,7 @@
-library(shiny, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions") #0.14.1
-library(ggplot2, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions")
-library(plotly, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions") #4.5.6
-library(crosstalk, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions")
+library(shiny)
+library(ggplot2)
+library(plotly)
+library(crosstalk)
 library(viridis)
 library(scales)
 library(shinythemes)
@@ -103,7 +103,7 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                 
                                 conditionalPanel(condition = "input.tab == 'COD.snapshot' || input.tab == 'Age.snapshot' ",
                                                  selectInput(inputId = "year", label = "Year:", 
-                                                  choices = unique(BlackWhite_results$year), width = 100#, sep = "" 
+                                                  choices = unique(BlackWhite_results$year), width = 100, selected = 2013 
                                                   )
                                                  ),
                                 
@@ -214,7 +214,7 @@ server <- function(input, output) {
                 "This graph depicts state-level trends in the life expectancy gap between ", 
                 input$years_LEgap[1], " and ", input$years_LEgap[2], " for ", lowercase.sex(), "s.",
                 ifelse(input$plot_choice == "Grid",
-                " Use your mouse to hover over the trend lines to view the estimate of the life expectancy gap for each year and state. Switch to the Map 'Plot style', to display statistical precision. <br/><br/>",
+                " Use your mouse to hover over the trend lines to view the estimate of the life expectancy gap for each year and state. Switch to the Map 'Plot style' to display statistical precision. <br/><br/>",
                 " Here, states with less precise estimates (often due to small black populations) have wider ribbons, where these ribbons display the 95% credible brand for the trend line.<br/><br/>"),
                 "<h2>State-level trends in the black-white life expectancy gap in ", 
                 lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
@@ -434,10 +434,12 @@ server <- function(input, output) {
   ########################################## 
   
   output$description_mortality_trends <- renderUI({ 
-    HTML(paste0("<b>How do the trends in age-standardized mortality differ between blacks and white", lowercase.sex(), "s for ", lowercase.COD(), "?</b>
-                <br/><br/>This plot depicts the cause-specific mortality rates for each race. 
-                You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'.<br/><br/>",
-                "<h2>Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD(),"</h2>"))
+    HTML(paste0("<b>How do the trends in age-standardized mortality differ between blacks and white", lowercase.sex(), "s for ", lowercase.COD(), "?</b><br/><br>",
+                ifelse(input$gap == "Both races", "This plot depicts the cause-specific mortality rates for each race. You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'. ",
+                "This plot depicts the excess risk among blacks compared to whites. If blacks are dying at a higher rate, this excess is larger than 0, and when blacks are dying of a lower rate it is smaller than 0. "),
+                ifelse(input$plot_choice == "Map", "Here, states with less precise estimates (often due to small black populations) have wider ribbons, where these ribbons display the 95% credible brand for the trend line.",
+                       "Switch to the Map 'Plot style', to display statistical precision."),
+                       "<h2>Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD(),"</h2>"))
  })
  
   mortality_plot1 <- reactive({
@@ -481,6 +483,7 @@ server <- function(input, output) {
     for(i in 1:length(plot$x$data)){
       if (plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
         plot$x$data[[i]]$hoverinfo <- "none"
+        plot$x$data[[i]]$width <- 1
       }
       
       plot$x$data[[i]]$text <- gsub("rate.per.100k_mean", "Mean mortality rate", plot$x$data[[i]]$text)
@@ -507,7 +510,7 @@ server <- function(input, output) {
                                axis.ticks=element_blank(),
                                panel.background = element_rect(fill = "transparent", colour = NA), 
                                plot.background = element_rect(fill = "transparent", colour = NA),
-                               legend.background = element_rect(fill = "transparent", colour = NA)))
+                               legend.position = "none"))
     }else { #grid
       plot <- ggplotly(ggplot(subset(mortality.rates.diff, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
                               aes(x = year, y = rate.difference_mean)) + 
