@@ -80,7 +80,7 @@ BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
 
 
 
-ui1 <- fluidPage(theme = shinytheme("cosmo"),
+ui1 <- fluidPage(theme = "cosmo-customized.css",
                  pageWithSidebar(
                  
                  #shinythemes::themeSelector(), 
@@ -123,7 +123,7 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                                                  #              value = FALSE, col = "GB", type = "OO"),
                                                  radioButtons(inputId = "pop_model",
                                                               label = "Population curve:",
-                                                              choices = c("Hide", "State-specific", "Aggregated"),
+                                                              choices = c("Hide", "National", "State-specific"),
                                                               selected = "Hide"),
                                                  radioButtons(inputId = "contribution_type", 
                                                               label = "Contribution format:", 
@@ -187,8 +187,9 @@ ui1 <- fluidPage(theme = shinytheme("cosmo"),
                        
                      )
                    )
+
                  )
-                   
+  
 )
 
 server <- function(input, output) {
@@ -235,7 +236,11 @@ server <- function(input, output) {
                geom_text(data = subset(BlackWhite_results, 
                                        year == input$years_LEgap[2]-2 & sex == input$sex), 
                          aes(label = stabbrs), check_overlap = T, size = 2.5) +
-               theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
+               theme_minimal() +  
+                 theme(axis.text.x = element_text(angle = 40),
+                       panel.background = element_rect(fill = "transparent", colour = NA), 
+                       plot.background = element_rect(fill = "transparent", colour = NA)
+                       ) +
                geom_hline(yintercept = 0)
              )
     
@@ -259,7 +264,10 @@ server <- function(input, output) {
     theme(axis.text.x = element_blank(),
           strip.background=element_blank(),
           axis.line=element_blank(),
-          axis.ticks=element_blank()) +
+          axis.ticks=element_blank(),
+          panel.background = element_rect(fill = "transparent", colour = NA), 
+          plot.background = element_rect(fill = "transparent", colour = NA),
+          legend.background = element_rect(fill = "transparent", colour = NA)) +
     ylab("Life expectancy gap (years)") +
     xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")")) #+
       # ggtitle(paste0("State-level trends in the black-white life expectancy gap in ", 
@@ -348,10 +356,14 @@ server <- function(input, output) {
       geom_text(data = subset(contrib.data.react(), 
                               year == 2013 & sex == input$sex & COD == input$COD), 
                 aes(label = stabbrs), check_overlap = T, size = 2.5) +
-      theme_minimal() +  theme(axis.text.x = element_text(angle = 40)) +
+      theme_minimal() +  
+      theme(axis.text.x = element_text(angle = 40),
+            panel.background = element_rect(fill = "transparent", colour = NA), 
+            plot.background = element_rect(fill = "transparent", colour = NA),
+            legend.background = element_rect(fill = "transparent", colour = NA)) +
       geom_hline(yintercept = 0) 
 
-    if(input$pop_model == "Aggregated"){
+    if(input$pop_model == "National"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
     }else if(input$pop_model == "State-specific"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE, group = state, col = state),  lty = 3)      
@@ -371,11 +383,14 @@ server <- function(input, output) {
       theme(axis.text.x = element_blank(),
             strip.background=element_blank(),
             axis.line=element_blank(),
-            axis.ticks=element_blank()) +
+            axis.ticks=element_blank(),
+            panel.background = element_rect(fill = "transparent", colour = NA), 
+            plot.background = element_rect(fill = "transparent", colour = NA),
+            legend.background = element_rect(fill = "transparent", colour = NA)) +
       ylab("Contribution to the LE gap") +
       xlab(paste0("Year (", input$years_LEgap[1], "-", input$years_LEgap[2], ")"))
     
-    if(input$pop_model == "Aggregated"){
+    if(input$pop_model == "National"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE - RE.estimates), col = "black", lty = 2)
     }else if(input$pop_model == "State-specific"){
       plot <- plot + geom_line(data = contrib.data.react(), aes(x = year, y = fitted.RE), col = "black", lty = 3)        
@@ -413,7 +428,7 @@ server <- function(input, output) {
   
 
   ##########################################
-  ##     Mortality rates                  ##
+  ##     Trends in mortality              ##
   ########################################## 
   
   output$description_mortality_trends <- renderUI({ 
@@ -438,7 +453,10 @@ server <- function(input, output) {
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
                                axis.line=element_blank(),
-                               axis.ticks=element_blank()))# %>% layout(legend = list(x = 0.5, y = 0.95))
+                               axis.ticks=element_blank(),
+                               panel.background = element_rect(fill = "transparent", colour = NA), 
+                               plot.background = element_rect(fill = "transparent", colour = NA),
+                               legend.background = element_rect(fill = "transparent", colour = NA)))# %>% layout(legend = list(x = 0.5, y = 0.95))
     }else{ #grid
       plot <- ggplotly(ggplot(subset(mortality.rates, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
                               aes(x = year, y = rate.per.100k_mean)) + 
@@ -453,7 +471,10 @@ server <- function(input, output) {
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
                                axis.line=element_blank(),
-                               axis.ticks=element_blank())) 
+                               axis.ticks=element_blank(),
+                               panel.background = element_rect(fill = "transparent", colour = NA), 
+                               plot.background = element_rect(fill = "transparent", colour = NA),
+                               legend.background = element_rect(fill = "transparent", colour = NA))) 
     }
     
     for(i in 1:length(plot$x$data)){
@@ -484,7 +505,10 @@ server <- function(input, output) {
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
                                axis.line=element_blank(),
-                               axis.ticks=element_blank()))
+                               axis.ticks=element_blank(),
+                               panel.background = element_rect(fill = "transparent", colour = NA), 
+                               plot.background = element_rect(fill = "transparent", colour = NA),
+                               legend.background = element_rect(fill = "transparent", colour = NA)))
     }else { #grid
       plot <- ggplotly(ggplot(subset(mortality.rates.diff, sex == input$sex & COD == input$COD & year >= input$years_LEgap[1] & year <= input$years_LEgap[2]), 
                               aes(x = year, y = rate.difference_mean)) + 
@@ -499,7 +523,10 @@ server <- function(input, output) {
                          theme(axis.text.x = element_blank(),
                                strip.background=element_blank(),
                                axis.line=element_blank(),
-                               axis.ticks=element_blank()))     
+                               axis.ticks=element_blank(),
+                               panel.background = element_rect(fill = "transparent", colour = NA), 
+                               plot.background = element_rect(fill = "transparent", colour = NA),
+                               legend.background = element_rect(fill = "transparent", colour = NA)))     
     }
     
     for(i in 1:length(plot$x$data)){
@@ -561,7 +588,11 @@ server <- function(input, output) {
                              xmax = new.finish, fill = COD)) +
                scale_y_continuous(breaks = 1:length(levels(factor(temp.df()$state.reorder2))), 
                                   labels = levels(factor(temp.df()$state.reorder2))) +
-               theme_minimal() + xlab(" ") + theme(legend.title = element_blank()) +
+               theme_minimal() + xlab(" ") + 
+                 theme(legend.title = element_blank(),
+                       panel.background = element_rect(fill = "transparent", colour = NA), 
+                       plot.background = element_rect(fill = "transparent", colour = NA),
+                       legend.background = element_rect(fill = "transparent", colour = NA)) +
                geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46)) +
                geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), lty = 3) 
     )
@@ -615,7 +646,11 @@ server <- function(input, output) {
                              xmax = new.finish, fill = age)) +
                scale_y_continuous(breaks = 1:length(levels(factor(temp.df()$state.reorder2))), 
                                   labels = levels(factor(temp.df()$state.reorder2))) +
-               theme_minimal() + theme(legend.title = element_blank()) +
+               theme_minimal() + 
+                 theme(legend.title = element_blank(),
+                       panel.background = element_rect(fill = "transparent", colour = NA), 
+                       plot.background = element_rect(fill = "transparent", colour = NA),
+                       legend.background = element_rect(fill = "transparent", colour = NA)) +
                geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), col = "red") +
                geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), col = "red", lty = 3) +
                scale_fill_viridis(discrete = T, direction = -1) 
@@ -659,7 +694,11 @@ output$population_trend <- renderPlotly({
       geom_line(aes(col = sex, lty = race)) +
       scale_y_continuous(name = "", label = comma) + 
       scale_x_continuous("") + 
-      theme_minimal() + theme(legend.title = element_blank())) 
+      theme_minimal() + 
+      theme(legend.title = element_blank(),
+            panel.background = element_rect(fill = "transparent", colour = NA), 
+            plot.background = element_rect(fill = "transparent", colour = NA),
+            legend.background = element_rect(fill = "transparent", colour = NA))) 
   
   for(i in 1:length(p$x$data)){
     p$x$data[[i]]$text <- gsub("pop_across_age", "Population Size", p$x$data[[i]]$text)
@@ -692,7 +731,10 @@ output$life_expectancy <- renderPlotly({
                              aes(y = LE_black_mean - 1),
                              label = "Black", check_overlap = T, size = 2.5) +
                    theme_minimal() +
-                   theme(legend.title = element_blank())#+ ggtitle(paste0("Trends in life expectancy in ", input$state))
+                   theme(legend.title = element_blank(),
+                         panel.background = element_rect(fill = "transparent", colour = NA), 
+                         plot.background = element_rect(fill = "transparent", colour = NA),
+                         legend.background = element_rect(fill = "transparent", colour = NA))#+ ggtitle(paste0("Trends in life expectancy in ", input$state))
   ) %>% 
     layout(yaxis = list(title = "Life expectancy"))
   
@@ -705,7 +747,12 @@ output$life_expectancy <- renderPlotly({
                    facet_grid(. ~ sex) + #scale_x_continuous(name = "Year") + 
                    expand_limits(y = 0) +
                    geom_hline(yintercept = 0, lwd = 0.5) + 
-                   theme_minimal() + theme(legend.title=element_blank(), strip.text.x = element_blank())) %>% 
+                   theme_minimal() + 
+                   theme(legend.title=element_blank(), 
+                         strip.text.x = element_blank(),
+                         panel.background = element_rect(fill = "transparent", colour = NA), 
+                         plot.background = element_rect(fill = "transparent", colour = NA),
+                         legend.background = element_rect(fill = "transparent", colour = NA))) %>% 
     layout(yaxis = list(title = "Difference"), xaxis = list(title = " "))
   
   for(i in 1:length(p1$x$data)){
@@ -808,7 +855,11 @@ output$age_cod <- renderPlotly({
     ggplot(data = sub1,
            aes(x=age, y = age_COD_cont_yrs_mean, fill = COD)) +
       geom_bar(stat = "identity") + coord_flip() + theme_minimal()  + geom_vline(aes(xintercept = 0)) +
-      theme(legend.title = element_blank()) + ylab("Contribution to the life expectancy gap (years)") +
+      theme(legend.title = element_blank(),
+            panel.background = element_rect(fill = "transparent", colour = NA), 
+            plot.background = element_rect(fill = "transparent", colour = NA),
+            legend.background = element_rect(fill = "transparent", colour = NA)) +
+      ylab("Contribution to the life expectancy gap (years)") +
       xlab("") +
       facet_wrap(year ~ sex) 
   ) 
