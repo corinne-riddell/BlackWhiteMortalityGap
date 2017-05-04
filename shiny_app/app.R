@@ -2,11 +2,13 @@
 #note to Corinne: The old versions of the commented packages are stores in ~/.../library/old_versions
 #these "old" versions were the ones I originally developed the app using but have since updated to the new versions
 #and all the new versions are at the main .libPaths() pathway.
+#if you have trouble viewing any of the plots print sessionInfo() -- it could be that packages loaded via namespace
+#are not updated (try updating DBI, jsonlite, and R6 to their latest versions.)
 
-library(shiny) #, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #0.14.1
-library(ggplot2)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #2.2.1
-library(plotly)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #4.5.6
-library(crosstalk)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions")
+library(shiny) #, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD version: 0.14.1, NEW: 1.0.3
+library(ggplot2)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD: 2.2.1, NEW: ggplot2_2.2.1.9000 (install dev version using devtools::install_github)
+library(plotly)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD: 4.5.6, NEW: 4.6.0
+library(crosstalk)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #1.0.0
 library(viridis)
 library(scales)
 library(shinythemes)
