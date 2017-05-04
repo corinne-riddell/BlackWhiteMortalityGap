@@ -1,7 +1,12 @@
-library(shiny, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions") #0.14.1
-library(ggplot2, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions")
-library(plotly, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions") #4.5.6
-library(crosstalk, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/new_versions")
+
+#note to Corinne: The old versions of the commented packages are stores in ~/.../library/old_versions
+#these "old" versions were the ones I originally developed the app using but have since updated to the new versions
+#and all the new versions are at the main .libPaths() pathway.
+
+library(shiny) #, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #0.14.1
+library(ggplot2)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #2.2.1
+library(plotly)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #4.5.6
+library(crosstalk)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions")
 library(viridis)
 library(scales)
 library(shinythemes)
@@ -9,7 +14,7 @@ library(dplyr)
 library(grid)
 library(gridExtra)
 library(png)
-#using version 2.2.1 of ggplot2.
+
 
 source(".././Code/life_expectancy_functions.R")
 #source("./shiny_app/Rsource/SwitchButton.R")
