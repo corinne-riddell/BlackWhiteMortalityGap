@@ -18,11 +18,11 @@ library(gridExtra)
 library(png)
 
 
-source(".././Code/life_expectancy_functions.R")
+source("./www/Code/life_expectancy_functions.R")
 #source("./shiny_app/Rsource/SwitchButton.R")
 
-mortality.rates <- read.csv(".././Results2/mortality_rates_combined.csv")
-mortality.rates.diff <- read.csv(".././Results2/mortality_rates_diff_combined.csv")
+mortality.rates <- read.csv("./www/Results2/mortality_rates_combined.csv")
+mortality.rates.diff <- read.csv("./www/Results2/mortality_rates_diff_combined.csv")
 
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) %>% rename(Race = race)
 mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) 
@@ -35,16 +35,16 @@ mortality.rates.diff$stabbrs[mortality.rates.diff$state == "Washington DC"] <- "
 mortality.rates <- reorder.as.map(mortality.rates, "state", "stabbrs")
 mortality.rates.diff <- reorder.as.map(mortality.rates.diff, "state", "stabbrs")
 
-age_cod_results_female <- read.csv(".././Results2/age_cod_results_female.csv")
-age_cod_results_male <- read.csv(".././Results2/age_cod_results_male.csv")
+age_cod_results_female <- read.csv("./www/Results2/age_cod_results_female.csv")
+age_cod_results_male <- read.csv("./www/Results2/age_cod_results_male.csv")
 age_cod_results <- rbind(age_cod_results_female, age_cod_results_male)
 rm(age_cod_results_female, age_cod_results_male)
 
-age_decomp_results <- read.csv(".././Results2/age_decomp_results.csv")
-cod_decomp_results <- read.csv(".././Results2/cod_decomp_results.csv")
-cod_change_results <- read.csv(".././Results2/cod_change_results.csv")
-BlackWhite_results <- read.csv(".././Results2/BlackWhite_results.csv")
-dat.aggregated <- read.csv(".././Data/dat_aggregated.csv") 
+age_decomp_results <- read.csv("./www/Results2/age_decomp_results.csv")
+cod_decomp_results <- read.csv("./www/Results2/cod_decomp_results.csv")
+cod_change_results <- read.csv("./www/Results2/cod_change_results.csv")
+BlackWhite_results <- read.csv("./www/Results2/BlackWhite_results.csv")
+dat.aggregated <- read.csv("./www/Data/dat_aggregated.csv") 
 
 age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
 cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
