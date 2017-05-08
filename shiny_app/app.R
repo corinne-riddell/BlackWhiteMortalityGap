@@ -16,7 +16,7 @@ library(dplyr)
 library(grid)
 library(gridExtra)
 library(png)
-
+library(forcats)
 
 source("./www/Code/life_expectancy_functions.R")
 #source("./shiny_app/Rsource/SwitchButton.R")
@@ -40,7 +40,18 @@ age_cod_results_male <- read.csv("./www/Results2/age_cod_results_male.csv")
 age_cod_results <- rbind(age_cod_results_female, age_cod_results_male)
 rm(age_cod_results_female, age_cod_results_male)
 
+age_cod_results$age <- forcats::fct_relevel(f = age_cod_results$age, "<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                            "15-19 years", "20-24 years", "25-29 years", "30-34 years", "35-39 years", 
+                                            "40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years", 
+                                            "65-69 years", "70-74 years", "75-79 years", "80-84 years", "85+ years")
+
 age_decomp_results <- read.csv("./www/Results2/age_decomp_results.csv")
+
+age_decomp_results$age <- forcats::fct_relevel(f = age_decomp_results$age, "<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                            "15-19 years", "20-24 years", "25-29 years", "30-34 years", "35-39 years", 
+                                            "40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years", 
+                                            "65-69 years", "70-74 years", "75-79 years", "80-84 years", "85+ years")
+
 cod_decomp_results <- read.csv("./www/Results2/cod_decomp_results.csv")
 cod_change_results <- read.csv("./www/Results2/cod_change_results.csv")
 BlackWhite_results <- read.csv("./www/Results2/BlackWhite_results.csv")
@@ -48,8 +59,8 @@ dat.aggregated <- read.csv("./www/Data/dat_aggregated.csv")
 
 age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
 cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
-age_decomp_results$age <- factor(age_decomp_results$age, levels = levels(age_decomp_results$age)[c(1, 2, 11, 3:10, 12:19)])
-age_cod_results$age <- factor(age_cod_results$age, levels = levels(age_cod_results$age)[c(1, 2, 11, 3:10, 12:19)])                                    
+#age_decomp_results$age <- factor(age_decomp_results$age, levels = levels(age_decomp_results$age)[c(1, 2, 11, 3:10, 12:19)])
+#age_cod_results$age <- factor(age_cod_results$age, levels = levels(age_cod_results$age)[c(1, 2, 11, 3:10, 12:19)])                                    
 
 cod_change_results$Cause.of.death <- factor(cod_change_results$Cause.of.death, levels(cod_change_results$Cause.of.death)[c(3, 2, 4, 6, 5, 1)])
 
@@ -144,50 +155,51 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                     
                      tabsetPanel(id = "tab",
 
-                       tabPanel(title = "Trends in life expectancy gap", value = "LE.summary",
-                                htmlOutput("description_LE_summary"),
-                                plotlyOutput("state_LEsummary", height = 700) #, width = 700
-                                ),
-                       
-                       tabPanel(title = "Trends in cause contribution", value = "COD.summary",
-                                htmlOutput("description_cod_trends"),
-                                plotlyOutput("contribution_plot", height = 700) #, width = 1100
-                                ),
-                       
-                       tabPanel(title = "Trends in mortality", value = "Mortality.trends",
-                                htmlOutput("description_mortality_trends"),
-                                plotlyOutput("mortality_plot", height = 700) #, width = 1100
-                                ),
-                       
-                       tabPanel(title = "Cross-sectional cause contribution", value = "COD.snapshot",
-                                htmlOutput("description_cod_summary"),
-                                plotlyOutput("state_cod_summary", height = 800)),
-                                #dataTableOutput("data.temp")),
-                       
-                       tabPanel(title = "Cross-sectional age contribution", value = "Age.snapshot",                                
-                                htmlOutput("description_age_summary"),
-                                plotlyOutput("state_age_summary", height = 800),
-                                dataTableOutput("data.temp2")),
-                       
-                       tabPanel(title = "Explore a state", value = "state.dashboard",
-                                htmlOutput("description_state_snapshot"),
-                                plotlyOutput("population_trend", height = 300, width = 500),
-                                htmlOutput("title_LE_trends"),
-                                plotlyOutput("life_expectancy"),
-                                htmlOutput("Explain_LE_males"),
-                                htmlOutput("Explain_LE_females"),
-                                plotlyOutput("age_cod", height = 700, width = 1100)
-                                # textOutput("Explain_Age_Gap"),
-                                ),
-                       
-                       tabPanel(title = "More information", value = "more",
-                                htmlOutput("app_description"),
-                                img(src = "CClicense.png")
-                                )
-                       
+                                 
+                                 tabPanel(title = "Explore a state", value = "state.dashboard",
+                                          htmlOutput("description_state_snapshot"),
+                                          plotlyOutput("population_trend", height = 300, width = 500),
+                                          htmlOutput("title_LE_trends"),
+                                          plotlyOutput("life_expectancy"),
+                                          htmlOutput("Explain_LE_females"),
+                                          htmlOutput("Explain_LE_males"),
+                                          plotlyOutput("age_cod", height = 700, width = 1100),
+                                          htmlOutput("Alabama")
+                                 ),
+                                 
+                                 tabPanel(title = "Trends in life expectancy gap", value = "LE.summary",
+                                          htmlOutput("description_LE_summary"),
+                                          plotlyOutput("state_LEsummary", height = 700) #, width = 700
+                                 ),
+                                 
+                                 tabPanel(title = "Trends in cause contribution", value = "COD.summary",
+                                          htmlOutput("description_cod_trends"),
+                                          plotlyOutput("contribution_plot", height = 700) #, width = 1100
+                                 ),
+                                 
+                                 tabPanel(title = "Trends in mortality", value = "Mortality.trends",
+                                          htmlOutput("description_mortality_trends"),
+                                          plotlyOutput("mortality_plot", height = 700) #, width = 1100
+                                 ),
+                                 
+                                 tabPanel(title = "Cross-sectional cause contribution", value = "COD.snapshot",
+                                          htmlOutput("description_cod_summary"),
+                                          plotlyOutput("state_cod_summary", height = 800)),
+                                 #dataTableOutput("data.temp")),
+                                 
+                                 tabPanel(title = "Cross-sectional age contribution", value = "Age.snapshot",                                
+                                          htmlOutput("description_age_summary"),
+                                          plotlyOutput("state_age_summary", height = 800),
+                                          dataTableOutput("data.temp2")),
+                                 
+                                 tabPanel(title = "More information", value = "more",
+                                          htmlOutput("app_description"),
+                                          img(src = "CClicense.png")
+                                 )
+                                 
                      )
                    )
-
+                 
                  )
   
 )
@@ -221,7 +233,7 @@ server <- function(input, output) {
                 "This graph depicts state-level trends in the life expectancy gap between ", 
                 input$years_LEgap[1], " and ", input$years_LEgap[2], " for ", lowercase.sex(), "s.",
                 ifelse(input$plot_choice == "Grid",
-                " Use your mouse to hover over the trend lines to view the estimate of the life expectancy gap for each year and state. Switch to the Map 'Plot style', to display statistical precision. <br/><br/>",
+                " Use your mouse to hover over the trend lines to view the estimate of the life expectancy gap for each year and state. Switch to the Map 'Plot style' to display separate panels for every state organized like a map, and bands around these lines showing statistical precision. <br/><br/>",
                 " Here, states with less precise estimates (often due to small black populations) have wider ribbons, where these ribbons display the 95% credible brand for the trend line.<br/><br/>"),
                 "<h2>State-level trends in the black-white life expectancy gap in ", 
                 lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
@@ -312,6 +324,11 @@ server <- function(input, output) {
     plot.chosen.LE() %>% layout(margin = list(l = 75, b = 100)) #add space between plotly yaxis and the UI sidebar
   })
   
+  output$excluded <- renderUI({
+    HTML(paste0("11 states were excluded from the analysis because they had too small black populations which would have led to very imprecise estimates",
+                " that would be difficult to interpret. These states include: Maine, Vermont, New Hampshire, Alaska, Hawaii, Idaho, Montana, North Dakota,",
+                " South Dakota, Wyoming, and Utah."))
+  })
   ##########################################
   ##            State summary: COD        ##
   ##########################################
@@ -320,8 +337,12 @@ server <- function(input, output) {
     HTML(paste0("<br/><b>How many years does each major cause of death contribute to the life expectancy gap in ", lowercase.sex(), 
                "s ?</b><br/><br/>
                Select the cause of death you're interested in to see how many years of the total gap
-               is due to the selected cause, and how this changed over time.", ifelse(input$plot_choice == "Grid",
-               " Use your mouse to hover over the trend lines to view the estimate of the contribution for each year and state. Switch to the Map 'Plot style', to display statistical precision.",
+               is contributed by the selected cause, and how this contributed changed over time.", 
+               ifelse(input$pop_model == "Hide", 
+                      " To add the national trend to the plot, click the button for 'National' population curve.",
+                      ""),
+               ifelse(input$plot_choice == "Grid",
+               " Use your mouse to hover over the trend lines to view the estimate of the contribution for each year and state. Switch to the Map 'Plot style' to display separate panels for every state organized like a map, and bands around these lines showing statistical precision.",
                " Here, states with less precise estimates (often due to small black populations) have wider ribbons, where these ribbons display the 95% credible brand for the trend line.<br/><br/>"),
                "<h2>Contributions of ", lowercase.COD(), " to the black-white life expectancy gap in ", 
                lowercase.sex(), "s, United States, ", input$years_LEgap[1], "-",
@@ -441,9 +462,9 @@ server <- function(input, output) {
   ########################################## 
   
   output$description_mortality_trends <- renderUI({ 
-    HTML(paste0("<b>How do the trends in age-standardized mortality differ between blacks and white", lowercase.sex(), "s for ", lowercase.COD(), "?</b>
-                <br/><br/>This plot depicts the cause-specific mortality rates for each race. 
-                You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'.<br/><br/>",
+    HTML(paste0("<b>How do the trends in age-standardized mortality differ between blacks and white ", lowercase.sex(), "s for ", lowercase.COD(), "?</b><br/><br/>",
+                ifelse(input$gap == "Both races","This plot depicts the cause-specific mortality rates for each race. You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'.<br/><br/>",
+                       "This plot depicts the excess number of deaths among blacks for the selected cause of death. You can alternatively view the rates of mortality for both blacks and whites using the selection button 'Both races'<br/><br/>"),
                 "<h2>Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD(),"</h2>"))
  })
  
@@ -488,6 +509,7 @@ server <- function(input, output) {
     for(i in 1:length(plot$x$data)){
       if (plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
         plot$x$data[[i]]$hoverinfo <- "none"
+        plot$x$data[[i]]$line$width <- 1
       }
       
       plot$x$data[[i]]$text <- gsub("rate.per.100k_mean", "Mean mortality rate", plot$x$data[[i]]$text)
@@ -562,7 +584,7 @@ server <- function(input, output) {
   
   
   ##########################################
-  ##     State snapshot: COD              ##
+  ##  Cross-sectional cause contribution  ##
   ########################################## 
   
   output$description_cod_summary <- renderUI({ 
@@ -683,7 +705,11 @@ server <- function(input, output) {
 ##########################################
 
 output$description_state_snapshot <- renderUI({
-  HTML(paste0("<b>", input$state,"</b><br/>This report brings together key metrics for ", input$state, ".<br/><br/>",
+  HTML(paste0("<br/><h2>Understanding life expectancy differences between blacks and whites in ", input$state,"</h2><br/>This report brings together key metrics for ", input$state,
+              " between ", input$years_LEgap[1], " and ", input$years_LEgap[2],
+              ". In terms of population growth, many states have relatively fewer black people, or smaller populations overall.",
+              " Hover over the trend lines in this graph to see the population estimates by race and gender, and remember that",
+              " states with fewer people offer less precise estimates of health inequalities.<br/><br/>",
               "<h2>Population Growth</h2>"))
 })
 
@@ -715,7 +741,12 @@ output$population_trend <- renderPlotly({
 })
 
 output$title_LE_trends <- renderUI({
-  HTML(paste0("</br></br><h2>Trends in life expectancy in ", input$state,"</h2>"))
+  HTML(paste0("</br></br>The following graph depicts life expectancy for blacks and whites, and illustrates the black-white life expectancy ",
+              "difference (also known as the life expectancy 'gap'). In many states, life expectancy for blacks and whites increased throughout",
+              " history, and the gap decreased, although the size of the current gap and the pattern of change varies by state.",
+              " The colored bands around each trend line denote the 95% credible region for the estimates, such that states with smaller black populations ",
+              "offer less precise estimates that should be interpreted more cautiously.",
+              "<h2>Trends in life expectancy in ", input$state,"</h2>"))
 })
 
 output$life_expectancy <- renderPlotly({
@@ -726,10 +757,7 @@ output$life_expectancy <- renderPlotly({
                    geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = sex), alpha = 0.3) +
                    geom_line(aes(y = LE_black_mean), lty = 2, col = "black") + 
                    geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = sex), alpha = 0.3) +
-                   #scale_color_manual(values = c("#67a9cf", "#ef8a62", "black")) +
                    facet_grid(. ~ sex, labeller = as_labeller(facet_names)) +
-                   #scale_x_continuous(name = "Year") + 
-                   #scale_y_continuous(name = "Life expectancy at birth (years)") + 
                    geom_text(data = subset(BlackWhite_results, year == 2013 & state == input$state),
                              aes(y = LE_white_mean - 1),
                              label = "White", check_overlap = T, size = 2.5) +
@@ -740,7 +768,7 @@ output$life_expectancy <- renderPlotly({
                    theme(legend.title = element_blank(),
                          panel.background = element_rect(fill = "transparent", colour = NA), 
                          plot.background = element_rect(fill = "transparent", colour = NA),
-                         legend.background = element_rect(fill = "transparent", colour = NA))#+ ggtitle(paste0("Trends in life expectancy in ", input$state))
+                         legend.background = element_rect(fill = "transparent", colour = NA))
   ) %>% 
     layout(yaxis = list(title = "Life expectancy"))
   
@@ -750,7 +778,7 @@ output$life_expectancy <- renderPlotly({
                                  year <= input$years_LEgap[2]), aes(x = year, y = LE_wbgap_mean)) + 
                    geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = sex)) +
                    geom_line(col = "black", lty = 3) +
-                   facet_grid(. ~ sex) + #scale_x_continuous(name = "Year") + 
+                   facet_grid(. ~ sex) +
                    expand_limits(y = 0) +
                    geom_hline(yintercept = 0, lwd = 0.5) + 
                    theme_minimal() + 
@@ -787,7 +815,7 @@ white.y1 <- reactive({
 
 white.y2 <- reactive({
   round(BlackWhite_results %>% 
-          filter(state == input$state, year == input$years_LEgap[1], sex == "Male") %>% 
+          filter(state == input$state, year == input$years_LEgap[2], sex == "Male") %>% 
           select(LE_white_mean), 1)
 })
 
@@ -803,17 +831,7 @@ black.y2 <- reactive({
           select(LE_black_mean), 1)
 }) 
 
-output$Explain_LE_males <- renderUI({
-  HTML(paste0("In ", input$state, " between ", input$years_LEgap[1],
-         " and ", input$years_LEgap[2],", life expectancy at birth changed from ",  white.y1(), 
-         " years to ", white.y2(), " years (for a change of ", round(white.y2()-white.y1(),1), 
-         " years) for white males. For black males, the change was from ", black.y1()," years to ", black.y2(), 
-         " years (", round(black.y2()-black.y1(),1),
-         " years change). The black-white difference in male life expectancy changed by ",
-         round((white.y2() - black.y2()) - (white.y1() - black.y1()), 1), " years: from ",
-         round(white.y1() - black.y1(), 1), " years to ", round(white.y2() - black.y2(), 1) , " years.<br/><br/>")) 
-  
-})
+
 
 fwhite.y1 <- reactive({
   round(BlackWhite_results %>% 
@@ -839,19 +857,52 @@ fblack.y2 <- reactive({
           select(LE_black_mean), 1)
 }) 
 
+direction.female <- reactive({
+  sign <- "decreased"
+  if((fwhite.y1() - fblack.y1()) < (fwhite.y2() - fblack.y2())){ 
+    sign <- "increased"
+  }
+  return(sign)
+})
 
+direction.male <- reactive({
+  sign <- "decreased"
+  if((white.y1() - black.y1()) < (white.y2() - black.y2())){ 
+    sign <- "increased"
+  }
+  return(sign)
+})
 
 output$Explain_LE_females <- renderUI({
-  HTML(paste0("For white females, life expectancy at birth changed from ",  fwhite.y1(), 
+  HTML(paste0("In ", input$state, " between ", input$years_LEgap[1],
+              " and ", input$years_LEgap[2],", life expectancy at birth changed from ", fwhite.y1(), 
          " years to ", fwhite.y2(), " years (for a change of ", round(fwhite.y2()-fwhite.y1(),1), 
-         " years). For black females, the change was from ", fblack.y1()," years to ", fblack.y2(), 
+         " years) for white females. For black females, the change was from ", fblack.y1()," years to ", fblack.y2(), 
          " years (", round(fblack.y2()-fblack.y1(),1),
-         " years change). The black-white difference in female life expectancy changed by ",
-         round((fwhite.y2() - fblack.y2()) - (fwhite.y1() - fblack.y1()), 1), " years: from ",
-         round(fwhite.y1() - fblack.y1(), 1), " years to ", round(fwhite.y2() - fblack.y2(), 1) , " years.<br/><br/>",
-         "<h2>Age and cause of death contribution for ", input$state," in ", input$years_LEgap[1], " vs. ",
-         input$years_LEgap[2], "</h2>"
+         " years change). The black-white difference in female life expectancy ", direction.female()," by ",
+         round((fwhite.y1() - fblack.y1()) - (fwhite.y2() - fblack.y2()), 1), " years: from ",
+         round(fwhite.y1() - fblack.y1(), 1), " years to ", round(fwhite.y2() - fblack.y2(), 1) , " years.<br/><br/>"
          ) )
+  
+})
+
+output$Explain_LE_males <- renderUI({
+  HTML(paste0("For white males, life expectancy at birth changed from ",  white.y1(), 
+              " years to ", white.y2(), " years (for a change of ", round(white.y2()-white.y1(),1), 
+              " years) for white males. For black males, the change was from ", black.y1()," years to ", black.y2(), 
+              " years (", round(black.y2()-black.y1(),1),
+              " years change). The black-white difference in male life expectancy ", direction.male()," by ",
+              round((white.y1() - black.y1()) - (white.y2() - black.y2()), 1), " years: from ",
+              round(white.y1() - black.y1(), 1), " years to ", round(white.y2() - black.y2(), 1) , " years.<br/><br/>",
+              "<h2>Age and cause-of-death contribution to the black-white life expectancy gap for ", input$state," in ", input$years_LEgap[1], " vs. ",
+              input$years_LEgap[2], "</h2>",
+              "The following plots contrast how black-white differences in mortality across the life span contribute to the overall difference ",
+              "in life expectancy that was portrayed in the previous plot. For each age band, the total length of the bar indicates how may years ",
+              "of the total life expectancy gap can be attributed to differences in mortality between blacks in whites at the specified ages.",
+              " Each age bar is further partitioned (by color) according to the cause of death, such that ",
+              " the cause associated with the greatest inequality in deaths defines the largest portion of the total bar.",
+              " Use these plots to understand how the black-white difference in life expectancy has changed over time, by comparing the length of",
+              " the bars at a given age group across years, and how these bars are partitioned by cause of death.")) 
   
 })
 
@@ -878,6 +929,25 @@ output$age_cod <- renderPlotly({
   
 })
 
+output$Alabama <- renderUI({
+  if(input$state != "Alabama"){
+    HTML(paste0("If you would like an example of how to interpret these plots, please select Alabama using the selection panel (scroll up!), and an interpretation will appear."))
+  }else{
+  HTML(paste0("<b>Sample interpretation for Alabama:</b> From the previous plot, the life expectancy gap was 7.8 years in Alabama females in 1969.",
+              " This plot shows that nearly 1.5 years of this gap can be attributed to higher mortality among blacks during the first year of life.",
+              " Blacks also had higher mortality rates during adulthood, and exhibit the most excess mortality related to cardiovascular disease.",
+              " Among males, infant mortality also contributes greatly to the life expectancy gap in 1969, while excess injury-related deaths",
+              " among black men is a large contributor to the gap, especially for young and middle-aged adult men.<br/><br/> ",
+              "By contrast, the life expectancy gap is much smaller in 2013 for both men and women. Of the gap of 1.9 years in females, ",
+              "about 0.5 years is attributable to differences in infant mortality. Black males continued to experience a higher risk of death ",
+              "from cardiovascular disease throughout their lives (except in the oldest age group), but cancer also plays a role.",
+              " White women are dying of a higher rate of injury related deaths (as depicted in the graph by negative contributions",
+              " of injuries to the gap among females in 1969), which contributed to narrowing the life expectancy gap. While",
+              " all other major causes of death contribute to increasing the gap. Among males, cardiovascular disease and cancer play the biggest",
+              " roles in the gap in 2013, although higher injury rates among black men persist in adolescence and early adulthood."))
+  }
+})
+
 ##########################################
 ##          More information            ##
 ########################################## 
@@ -898,8 +968,8 @@ output$app_description <- renderUI({
               "guidance, and boat-loads of background reading.<br/><br/> ",
               
               "<b>Many thanks</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, ",
-              "our friends at Plotly, whose interactive plots are top-notch, and, JAGS maintainer Martyn ",
-              "Plummer for making JAGS easy to use in R!<br/><br/>",
+              "our friends at Plotly, whose interactive plots are top-notch, and, Martyn ",
+              "Plummer, the R package maintainer for JAGS who also manages the JAGS forum on sourceforge. <br/><br/>",
  
               "<b>License</b><br/> This software created by Corinne Riddell is licensed under a Creative Commons Attribution-Noncommercial 4.0 International License."
               
