@@ -1,6 +1,6 @@
 entire.analysis <- function(state_i, chosen.seed) {
   
-  #load_libraries
+  #load libraries
   library(Rcpp)
   library(dplyr)
   library(purrr)
@@ -19,17 +19,17 @@ entire.analysis <- function(state_i, chosen.seed) {
   library(gridExtra)
   library(parallel)
   
-  #load_user_written_functions
+  #load user written functions
   source("~/repos/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
   source('~/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
   
-  #load_tidied_data
+  #load tidied data
   dat.clean = read.csv('~/dat_clean.csv') 
   
   #load US standard population
   std.pop <- read.csv("~/repos/BlackWhiteMortalityGap/Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
   
-  #fit_models
+  #fit models
   #run time: 32 mins
   #fit the bayesian models and put the 1000 posterior samples into a data frame
   for(sex_i in c("Male", "Female")){
