@@ -16,9 +16,9 @@ Sam Harper, PhD
 
 Jay S Kaufman, PhD
 
-Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Canada.
+All authors: Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada.
 
-Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>. Phone: +1-438-863-0402
 
 ```{r initialize, echo=FALSE, warning=F, message=F}
 library(plotly)
@@ -88,6 +88,7 @@ Although mortality from cardiovascular disease has decreased dramatically for bo
 
 Life expectancy for both blacks and whites has improved substantially in the US since 1969. For men, much of this improvement was due to narrowing differences in injury-related mortality, but these contributions were rivaled by an increasing gap in CVD-related mortality, and highlight the cause-specific interventions necessary to decrease the black-white gap further. In women, a crossover in injury-related mortality led to a narrower gap that was realized partially by increasing mortality among whites. This work emphasizes the importance of understanding how the direction of changes in specific causes of death by race results in changes to the life expectancy gap. 
 
+###Significance statement: Add 120 word max statement.
 
 ###Introduction
 
@@ -229,99 +230,6 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
 }
 ```
 
-**Men**
-
-```{r stacked_trends_male, echo=F, fig.height=9, fig.width=11}
-plot1 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Male"), aes(x = year, y = COD_cont_yrs_mean)) + 
-  geom_area(aes(fill = COD_rev), stat = "identity") +
-  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
-  geom_line(data = subset(BlackWhite_results, sex == "Male"), aes(x = year, y = LE_wbgap_mean)) +
-  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
-  theme_classic(base_size = 10) + 
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  ylab("Contribution to the life expectancy gap (%)") +
-  xlab("Year (1969-2013)"))
-
-for(i in 1:400){
-  if(plot1$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
-    plot1$x$data[[i]]$line$width <- 1
-  }
-}
-
-plot1
-
-plot2 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
-  geom_area(aes(fill = COD_rev), stat = "identity") +
-  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
-  geom_line(data = subset(BlackWhite_results, sex == "Male" & year > 2009), aes(x = year, y = LE_wbgap_mean)) +
-  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
-  theme_classic(base_size = 10) + 
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  ylab("Contribution to the life expectancy gap (%)") +
-  xlab("Year (2009-2013)"))
-
-for(i in 1:400){
-  if(plot2$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
-    plot2$x$data[[i]]$line$width <- 1
-  }
-}
-
-plot2
-```
-
-**Women**
-
-```{r stacked_trends_female, echo=F, fig.height=9, fig.width=11}
-plot3 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Female"), aes(x = year, y = COD_cont_yrs_mean)) + 
-                      geom_area(aes(fill = COD_rev), stat = "identity") +
-  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
-  geom_line(data = subset(BlackWhite_results, sex == "Female"), aes(x = year, y = LE_wbgap_mean)) +
-  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
-  theme_classic(base_size = 10) + 
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  ylab("Contribution to the life expectancy gap (%)") +
-  xlab("Year (1969-2013)"))
-
-for(i in 1:400){
-  if(plot3$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
-    plot3$x$data[[i]]$line$width <- 1
-  }
-}
-
-plot3
-
-plot4 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
-                      geom_area(aes(fill = COD_rev), stat = "identity") +
-  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
-  geom_line(data = subset(BlackWhite_results, sex == "Female" & year > 2009), aes(x = year, y = LE_wbgap_mean)) +
-  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
-  theme_classic(base_size = 10) + 
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  ylab("Contribution to the life expectancy gap (%)") +
-  xlab("Year (2009-2013)"))
-
-for(i in 1:400){
-  if(plot4$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
-    plot4$x$data[[i]]$line$width <- 1
-  }
-}
-
-plot4
-```
-
-
 ```{r create-the-resid-plots, echo = F, message = F}
 for(COD_i in levels(cod_decomp_results$COD)) {
   for(sex_i in levels(cod_decomp_results$sex)) {
@@ -395,7 +303,33 @@ Mortality from all other causes generally decreased earlier in the time period, 
 
 Because the majority of infant deaths are classified as being due to all other causes in our analysis, we also tried to separate any impact of all other causes from those of infant mortality more generally. We conducted a sensitivity analysis to calculate the contribution of deaths due to all other causes that occurred during the first year of life to the life expectancy gap (Figures 15 and 16). We found that 43% of the contribution of all other causes to the gap was due to differences in infant mortality in 1969. In 2013, this proportion reached 53%. Thus, the trend in the all other causes contribution partially reflects a decreasing contribution from in infant mortality.
 
-****
+###Discussion 
+
+**Summary of findings**
+
+We examined state-level trends in six major cause of death contributions to the black-white life expectancy gaps over a 45 year period. While we found that many states conformed to the national patterns of cause-of-death specific contributions, several states diverged in ways that either resulted in the near or total elimination of the life expectancy gap, or alternatively its exacerbation. In contrast to some recent work focused on county-level inequalities ,^14,15^ states have some substantial advantages as analysis units. They have large populations to generate stable estimates, tend to be more demographically stable over time, and they are policy-making entities, and so have divergent social agendas that are reflected in varying patterns of mortality by race.   
+
+Overall, the racial gap in life expectancy is now smaller in many states in the South and Southeast that are associated historically with greater degrees of inequality and slower social progress, compared to the mid-West which had been the receiving point of “the Great Migration” for improved economic opportunities in the mid-20^th^ Century.^16^  Mortality trends for women in “rust-belt” states such as Michigan, Wisconsin and Illinois appear especially discouraging, compared to remarkable progress in Florida, North Carolina, Georgia and Mississippi.  On the one hand, it appears to run counter to the narrative of worse overall health progress in the former Confederacy.^15^ On the other hand, greater racial equality can be achieved by falling black rates or rising white rates, and so the closing gap cannot be celebrated without a careful examination of the two individual trends.^17^ 
+
+Consistent with what has been reported at the national level,^18^ we found that CVD makes the largest contribution to the life expectancy gap, even though both races and genders experienced decreased CVD mortality rates over time. Injuries (especially homicide) continue to play a role in contributing to the current gap for men in several states, especially in the Midwest and DC, while contributing to a decreased gap among women in the South. This decreased gap among women likely reflects the higher rate of mortality from drug overdoses among whites compared to blacks during the ongoing opioid epidemic.^19^
+
+Illinois, Michigan and Wisconsin also show relatively high contributions from cancer. On the other hand, New York and Massachusetts have virtually eliminated the black-white life expectancy gap for both men and women. However, both states began with only a minimal contribution of CVD and cancer to the mortality gap. The difference in early contributions is especially stark for the contribution of CVD among women in 1969, where many states, especially those in the South, had CVD contribution of more than two years. Thus, the reason for New York’s and Massachusetts’s low CVD contribution does not appear to be the effect of recent changes, but highlights a long-standing pattern of greater equality and points to the importance of viewing the most recent estimates in light of historical patterns.
+
+The most important implications for a state-level analysis are using the patterns to make connections between changes to social policy and health outcome changes over time.  States pursue varying approaches to an array of relevant programs and laws including tobacco control,^20^ Medicare coverage,^21^ hand-gun violence,^22^  and nutrition.^23^ These presumably affect health and longevity, and can have especially important impacts on racial differences when the policies are targeted to disadvantaged groups or outcomes that differentially effect blacks.^24^ The analyses reported here are entirely descriptive, but should be used for subsequent work that seeks to identify the causal processes that link social and health policies to successful trajectories in some states, and worsening disparities in others.  Variation in policies over time can be used in quasi-experimental designs to uncover evidence for the role of specific policy innovations, which is an advantage of using states as the units of analysis as opposed to larger regions or smaller counties, neither of which generate policy variations.^25^    
+
+*Strengths and weaknesses*
+
+We used data over 45 years, across two racial groups, and for all ages. By examining a wide time window, trends were examined that provided context for the contributions estimated in the most recent year. This allowed us to recognize when the estimated contributions for a particular cause of death were relatively low because they started low at the beginning of the follow-up, versus being low because they had decreased over time. Furthermore, our analysis was centered on decomposing life expectancy at birth, a measure that integrates mortality rates across all ages. This is especially important in light of recent studies that have received criticism for narrowly focusing on a specific age group.^26, 27^ The Arriaga decomposition method accounts for the fact that deaths occurring in one age or cause stratum are reflected in the absence of that death in another stratum. Alongside the decomposition results and age-standardized mortality rates, the scope of our analysis allows readers to examine differences in state-level inequality from many angles.
+
+Our analysis has two main limitations. Firstly, we did not account for Hispanic ethnicity, implying that both black and white populations in our study include some portion of Hispanics that is known to differ over time and by state. This may be especially consequential for blacks in states like Florida or New York that received many black Hispanic immigrants from Cuba, Puerto Rico and the Dominican Republic, potentially changing the composition of the state’s black population to some extent during the study period.^28^  But it also has implications for the white population, especially in states with demographic shifts due to immigration from Mexico such as Florida, California, and Texas, will have estimates of life expectancy that are likely higher than they would have been had Hispanics been excluded.^29^ We were unable to adjust for Hispanic ethnicity in this study because the indicator for ethnicity on the death certificate has been noted to have varying accuracy across states and during the earlier time period.^8^ In a previous sensitivity analysis, we found that accounting for Hispanic ethnicity did not have a substantial effect on the results,^4^ providing some evidence that not accounting for Hispanic ethnicity should not substantially affect our findings overall. As the US population becomes increasingly Hispanic over time, however, this distinction grows more salient.^30^ 
+
+Secondly, our analysis does not account for immigration by the foreign-born, or migration of native-born individuals between states. Individuals who immigrate to the US have been shown to have life expectancies at birth that are 5.8 and 4.8 years longer for men and women, respectively in 2008-2010.^31^ As we are examining the difference in life expectancy between blacks and whites, this gap will be affected by the amount of immigration to the extent that new immigrants identify as black or white. Migration between states can also affect the estimated life expectancy of a state if it is associated with underlying risks of death. Migration is particularly important for the District of Columbia, because of it's small geographical bounds, and substantial in-migration from New York, in- and out-migration to Maryland and Virginia. Middle and upper-class black residents have been shown to move to the suburbs in Maryland and Virginia, while affluent whites are migrating to DC. Such changes would both serve to increase the racial gap in DC.^32^
+
+Thirdly, by using broad causes of death we are unable to investigate trends in more specific causes. For example, injury mortality includes homicide, suicide, and drug overdoses, which are known to vary by sex, race, and over time. Drug overdose as a more specific cause of death has played an increasingly important role in shaping disparities in many states, but this is not separately identifiable in our analyses.^33,34^ 
+
+**Conclusions** 
+
+Racial differences have been a fixture of American life for centuries, but their continued evolution is a topic of great relevance for public policy and social justice. The careful surveillance of these patterns is therefore a crucial public health activity, and this paper presents a unique perspective on state-level variation over nearly half a century. This analysis provides a foundation for future work to investigate time-varying and time-fixed state-level characteristics that may be responsible for differences among state in risk factors leading to each cause of death. Differences in smoking policy, Medicare coverage, access to care, segregation, and racism, for example, could all affect risk factors for ill health and vary in magnitude by state. 
 
 **Figure 1: State-level trends in the difference in life expectancy between blacks and whites in men, United States, 1969-2013**
 
@@ -625,36 +559,6 @@ ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Female"), aes(y = age_C
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
 ```
 
-
-###Discussion 
-
-**Summary of findings**
-
-We examined state-level trends in six major cause of death contributions to the black-white life expectancy gaps over a 45 year period. While we found that many states conformed to the national patterns of cause-of-death specific contributions, several states diverged in ways that either resulted in the near or total elimination of the life expectancy gap, or alternatively its exacerbation. In contrast to some recent work focused on county-level inequalities ,^14,15^ states have some substantial advantages as analysis units. They have large populations to generate stable estimates, tend to be more demographically stable over time, and they are policy-making entities, and so have divergent social agendas that are reflected in varying patterns of mortality by race.   
-
-Overall, the racial gap in life expectancy is now smaller in many states in the South and Southeast that are associated historically with greater degrees of inequality and slower social progress, compared to the mid-West which had been the receiving point of “the Great Migration” for improved economic opportunities in the mid-20^th^ Century.^16^  Mortality trends for women in “rust-belt” states such as Michigan, Wisconsin and Illinois appear especially discouraging, compared to remarkable progress in Florida, North Carolina, Georgia and Mississippi.  On the one hand, it appears to run counter to the narrative of worse overall health progress in the former Confederacy.^15^ On the other hand, greater racial equality can be achieved by falling black rates or rising white rates, and so the closing gap cannot be celebrated without a careful examination of the two individual trends.^17^ 
-
-Consistent with what has been reported at the national level,^18^ we found that CVD makes the largest contribution to the life expectancy gap, even though both races and genders experienced decreased CVD mortality rates over time. Injuries (especially homicide) continue to play a role in contributing to the current gap for men in several states, especially in the Midwest and DC, while contributing to a decreased gap among women in the South. This decreased gap among women likely reflects the higher rate of mortality from drug overdoses among whites compared to blacks during the ongoing opioid epidemic.^19^
-
-Illinois, Michigan and Wisconsin also show relatively high contributions from cancer. On the other hand, New York and Massachusetts have virtually eliminated the black-white life expectancy gap for both men and women. However, both states began with only a minimal contribution of CVD and cancer to the mortality gap. The difference in early contributions is especially stark for the contribution of CVD among women in 1969, where many states, especially those in the South, had CVD contribution of more than two years. Thus, the reason for New York’s and Massachusetts’s low CVD contribution does not appear to be the effect of recent changes, but highlights a long-standing pattern of greater equality and points to the importance of viewing the most recent estimates in light of historical patterns.
-
-The most important implications for a state-level analysis are using the patterns to make connections between changes to social policy and health outcome changes over time.  States pursue varying approaches to an array of relevant programs and laws including tobacco control,^20^ Medicare coverage,^21^ hand-gun violence,^22^  and nutrition.^23^ These presumably affect health and longevity, and can have especially important impacts on racial differences when the policies are targeted to disadvantaged groups or outcomes that differentially effect blacks.^24^ The analyses reported here are entirely descriptive, but should be used for subsequent work that seeks to identify the causal processes that link social and health policies to successful trajectories in some states, and worsening disparities in others.  Variation in policies over time can be used in quasi-experimental designs to uncover evidence for the role of specific policy innovations, which is an advantage of using states as the units of analysis as opposed to larger regions or smaller counties, neither of which generate policy variations.^25^    
-
-*Strengths and weaknesses*
-
-We used data over 45 years, across two racial groups, and for all ages. By examining a wide time window, trends were examined that provided context for the contributions estimated in the most recent year. This allowed us to recognize when the estimated contributions for a particular cause of death were relatively low because they started low at the beginning of the follow-up, versus being low because they had decreased over time. Furthermore, our analysis was centered on decomposing life expectancy at birth, a measure that integrates mortality rates across all ages. This is especially important in light of recent studies that have received criticism for narrowly focusing on a specific age group.^26, 27^ The Arriaga decomposition method accounts for the fact that deaths occurring in one age or cause stratum are reflected in the absence of that death in another stratum. Alongside the decomposition results and age-standardized mortality rates, the scope of our analysis allows readers to examine differences in state-level inequality from many angles.
-
-Our analysis has two main limitations. Firstly, we did not account for Hispanic ethnicity, implying that both black and white populations in our study include some portion of Hispanics that is known to differ over time and by state. This may be especially consequential for blacks in states like Florida or New York that received many black Hispanic immigrants from Cuba, Puerto Rico and the Dominican Republic, potentially changing the composition of the state’s black population to some extent during the study period.^28^  But it also has implications for the white population, especially in states with demographic shifts due to immigration from Mexico such as Florida, California, and Texas, will have estimates of life expectancy that are likely higher than they would have been had Hispanics been excluded.^29^ We were unable to adjust for Hispanic ethnicity in this study because the indicator for ethnicity on the death certificate has been noted to have varying accuracy across states and during the earlier time period.^8^ In a previous sensitivity analysis, we found that accounting for Hispanic ethnicity did not have a substantial effect on the results,^4^ providing some evidence that not accounting for Hispanic ethnicity should not substantially affect our findings overall. As the US population becomes increasingly Hispanic over time, however, this distinction grows more salient.^30^ 
-
-Secondly, our analysis does not account for immigration by the foreign-born, or migration of native-born individuals between states. Individuals who immigrate to the US have been shown to have life expectancies at birth that are 5.8 and 4.8 years longer for men and women, respectively in 2008-2010.^31^ As we are examining the difference in life expectancy between blacks and whites, this gap will be affected by the amount of immigration to the extent that new immigrants identify as black or white. Migration between states can also affect the estimated life expectancy of a state if it is associated with underlying risks of death. Migration is particularly important for the District of Columbia, because of it's small geographical bounds, and substantial in-migration from New York, in- and out-migration to Maryland and Virginia. Middle and upper-class black residents have been shown to move to the suburbs in Maryland and Virginia, while affluent whites are migrating to DC. Such changes would both serve to increase the racial gap in DC.^32^
-
-Thirdly, by using broad causes of death we are unable to investigate trends in more specific causes. For example, injury mortality includes homicide, suicide, and drug overdoses, which are known to vary by sex, race, and over time. Drug overdose as a more specific cause of death has played an increasingly important role in shaping disparities in many states, but this is not separately identifiable in our analyses.^33,34^ 
-
-**Conclusions** 
-
-Racial differences have been a fixture of American life for centuries, but their continued evolution is a topic of great relevance for public policy and social justice. The careful surveillance of these patterns is therefore a crucial public health activity, and this paper presents a unique perspective on state-level variation over nearly half a century. This analysis provides a foundation for future work to investigate time-varying and time-fixed state-level characteristics that may be responsible for differences among state in risk factors leading to each cause of death. Differences in smoking policy, Medicare coverage, access to care, segregation, and racism, for example, could all affect risk factors for ill health and vary in magnitude by state. 
-
-
 ###Appendix
 **S1 Table: Cause of death groupings**
 
@@ -667,6 +571,100 @@ Racial differences have been a fixture of American life for centuries, but their
 | Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
 
+
+**Stacked charts - not to be included in the submission**
+
+**Men**
+
+```{r stacked_trends_male, echo=F, fig.height=9, fig.width=11}
+plot1 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Male"), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Male"), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (1969-2013)"))
+
+for(i in 1:400){
+  if(plot1$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot1$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot1
+
+plot2 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Male" & year > 2009), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (2009-2013)"))
+
+for(i in 1:400){
+  if(plot2$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot2$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot2
+```
+
+**Women**
+
+```{r stacked_trends_female, echo=F, fig.height=9, fig.width=11}
+plot3 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Female"), aes(x = year, y = COD_cont_yrs_mean)) + 
+                      geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Female"), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (1969-2013)"))
+
+for(i in 1:400){
+  if(plot3$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot3$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot3
+
+plot4 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
+                      geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Female" & year > 2009), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 10) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (2009-2013)"))
+
+for(i in 1:400){
+  if(plot4$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot4$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot4
+```
 
 ###Bibliography
 
