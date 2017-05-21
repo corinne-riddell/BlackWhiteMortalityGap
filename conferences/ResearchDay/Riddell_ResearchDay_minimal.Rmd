@@ -1,5 +1,5 @@
 ---
-title: "Long-term trends in the contribution of major causes of death to the black-white life expectancy gap by US state"
+title: "Trends in the contribution of major causes of death to the black-white life expectancy gap"
 author: "Corinne Riddell, Post-doctoral Researcher, McGill University, Canada"
 date: "May 23, 2017"
 output: ioslides_presentation
@@ -51,7 +51,7 @@ grid.arrange(img3,
              img2,
              ncol = 3)
 ```
-Jay Kaufman, Supervisor        Kathryn Morrison, Post-doc       Sam Harper, Professor
+Jay Kaufman, Kathryn Morrison, and Sam Harper
 
 ----
 
@@ -68,12 +68,6 @@ include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortali
 ```{r, echo = F, out.width = 250}
 include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/Harper_HA_quote.png")
 ```
-
-And also...
-
->- be broadly accessible,
->- be interactive,
->- be reproducible.
 
 ## The data
 
@@ -100,14 +94,14 @@ include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortali
 
 ## The analysis
 
-+ Estimate smoothed mortality rates and impute coarsened data using a Bayesian time series model 
-+ 1,000 posterior samples containing estimated *smoothed* and *imputed* death counts
-+ For each sample:
++ Estimated smoothed mortality rates using a Bayesian time series model with Poisson likelihood
++ Used a truncated Poisson likelihood when number of deaths were between 1 and 9
++ 1,000 posterior samples. For each:
     1. Create a life table for every strata
     2. Calculate the <b style = "greentext">difference</b> in life expectancy between blacks and whites
     3. Decompose the difference by age and cause of death
     4. Calculate age-standardized mortality rates
-+ Calculate the mean, 5^th^ and 95^th^ percentiles for all estimates.
++ Calculate the mean, 5^th^ and 95^th^ percentiles for all estimates
 + Compute national trend using random-effects meta regression
 
 ## Male black-white life expectancy gap
@@ -215,7 +209,7 @@ gg.p3
 #A tale of two states
 
 ##Tennessee
-```{r, echo = F}
+```{r, echo = F, out.height = 600, out.width = 800}
 age_cod_results_female <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
 
 age_cod_results_male <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
@@ -252,7 +246,7 @@ ly1 %>% layout(margin = list(b = 100))
 ```
 
 ##New York
-```{r, echo = F}
+```{r, echo = F, out.height = 600, out.width = 800}
 
 sub1 <- subset(age_cod_results, year %in% c(1969, 2013) & state == "New York")
 ly1 <- ggplotly(
@@ -275,7 +269,7 @@ for(i in 1:length(ly1$x$data)){
 ly1 %>% layout(margin = list(b = 100))
 ```
 
-##Similarities & differences
+##Similarities & differences  
 
 - Substantial contribution of infant mortality to the gap in 1969
 - Most deaths from all other causes are during infancy
@@ -284,7 +278,12 @@ ly1 %>% layout(margin = list(b = 100))
 - Ditto for cancer
 - Injury plays important role in Tennessee in 2013 with opposing effect directions in men and women
 
-##Blah
+##Learn more
+- Working paper submitted to bioRxiv - will be public soon!
+- Shiny app hosted online with our results here:  https://corinne-riddell.shinyapps.io/shiny_app/
 
--
+**Get in touch**
+
+- corinne.riddell@mail.mcgill.ca
+- @datavisitor on Twitter
 
