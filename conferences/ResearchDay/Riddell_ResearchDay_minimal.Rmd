@@ -1,7 +1,7 @@
 ---
-title: "Changes in cause of death and the black-white life expectancy gap"
-author: "Corinne Riddell, PhD"
-date: "April 24, 2017"
+title: "Long-term trends in the contribution of major causes of death to the black-white life expectancy gap by US state"
+author: "Corinne Riddell, Post-doctoral Researcher, McGill University, Canada"
+date: "May 23, 2017"
 output: ioslides_presentation
 ---
 
@@ -35,61 +35,64 @@ library(gridExtra)
 library(knitr)
 
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
+BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
+
 ```
 
 ## Thank you
 
 ```{r, echo=F}
-img1 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/k_morrison.png")), interpolate = FALSE)
-img2 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/s_harper2.png")), interpolate = FALSE)
-img3 <-  rasterGrob(as.raster(readJPEG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/j_kaufman.jpg")), interpolate = FALSE)
+img1 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/k_morrison.png")), interpolate = FALSE)
+img2 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/s_harper2.png")), interpolate = FALSE)
+img3 <-  rasterGrob(as.raster(readJPEG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/j_kaufman.jpg")), interpolate = FALSE)
 grid.arrange(img3,
              img1,
              img2,
              ncol = 3)
 ```
+Jay Kaufman, Supervisor        Kathryn Morrison, Post-doc       Sam Harper, Professor
 
 ----
 
 ```{r, echo = F, out.width = 500}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/Harper_HA_title.png")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/Harper_HA_title.png")
 ```
 
 ```{r, echo=F, out.width = 750}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/Harper_HA_fig1.png")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/Harper_HA_fig1.png")
 ```
 
 ----
 
 ```{r, echo = F, out.width = 250}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/Harper_HA_quote.png")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/Harper_HA_quote.png")
 ```
 
 And also...
 
 >- be broadly accessible,
 >- be interactive,
->- be reproducible,
->- and allow pictures to speak for themselves.
+>- be reproducible.
 
 ## The data
 
 ```{r, echo = F, out.width = 400}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/alabama.data.ex.png")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/alabama.data.ex.png")
 ```
 
 - <b class = "greentext">40</b> "states": 39 states + DC
 - <b class = "greentext">45</b> years: 1969--2013 
 - <b class = "greentext">19</b> age groups: <1, 1-4, 5-9, ..., 85+
-- <b class = "greentext">2</b> sexes
-- <b class = "greentext">2</b> races (Black, White)
-- <b class = "greentext">6</b> major causes of deaths: CVD, cancer, non-communicable, communicable, injuries, all other causes
+- <b class = "greentext">2</b> genders
+- <b class = "greentext">2</b> races (black, white)
+- <b class = "greentext">6</b> major causes of deaths: cardiovascular disease, cancer, non-communicable, communicable, injuries, all other causes
 - = <b class = "greentext">820,800 rows of data</b>
 
 ## The data
 
 ```{r, echo = F, out.width = 400}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/ResearchDay/images/alabama.data.ex.png")
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/alabama.data.ex.png")
 ```
 
 - When the number of deaths is between 1 and 9 it is <b class = "redtext">coarsened</b>. 
@@ -97,34 +100,191 @@ include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortali
 
 ## The analysis
 
-**Estimate smoothed mortality rates and impute coarsened data.**
-
-+ Bayesian autoregressive model to borrow information *over time* within strata
-+ $log(\lambda_t) \sim N(\ log(\lambda_{t-1}),\ \tau)$
-+ impute coarsened 1--9 values using a truncated Poisson
-+ `rjags`
-
-## The analysis
-
-**Create 1,000 posterior samples**
-
-+ Each sample contains estimated *smoothed* and *imputed* death counts
++ Estimate smoothed mortality rates and impute coarsened data using a Bayesian time series model 
++ 1,000 posterior samples containing estimated *smoothed* and *imputed* death counts
 + For each sample:
     1. Create a life table for every strata
     2. Calculate the <b style = "greentext">difference</b> in life expectancy between blacks and whites
     3. Decompose the difference by age and cause of death
     4. Calculate age-standardized mortality rates
 + Calculate the mean, 5^th^ and 95^th^ percentiles for all estimates.
-    
-## The analysis
++ Compute national trend using random-effects meta regression
 
-**Synthesize state-specific findings**
+## Male black-white life expectancy gap
 
-+ Random-effects meta regression to estimate overall trend in contributions for each cause.
-+ Use `ggplot2`, `plotly`, and `Shiny` to make results accessible as a web app.
+```{r, echo = F}
+    gg.p <- ggplot(data = subset(BlackWhite_results, sex == "Male"),
+                          aes(y = LE_wbgap_mean, x = year)) +
+    geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+    geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+    #geom_line(aes(col = Census_Division)) + 
+    facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+    theme_classic(base_size = 10) +
+    theme(axis.text.x = element_blank(),
+          strip.background=element_blank(),
+          axis.line=element_blank(),
+          axis.ticks=element_blank(),
+          legend.position = "none",
+          panel.background = element_rect(fill = "transparent", colour = NA), 
+          plot.background = element_rect(fill = "transparent", colour = NA),
+          legend.background = element_rect(fill = "transparent", colour = NA)) +
+    ylab("Life expectancy gap (years)") +
+    xlab(paste0("Year (1969-2013)")) 
 
-----
-# To the results!
+      interactive.p <- ggplotly(gg.p +     
+        geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5))
+      
+      for(i in 1:length(interactive.p$x$data)){
+        if (interactive.p$x$data[[i]]$line$color %in% c("rgba(0,0,0,1)", "rgba(190,190,190,0.5)")) {
+          interactive.p$x$data[[i]]$hoverinfo <- "none"
+          interactive.p$x$data[[i]]$line$width <- 1
+        }
+        
+        interactive.p$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.p$x$data[[i]]$text)
+        interactive.p$x$data[[i]]$text <- gsub("LE_wbgap_mean", "Mean life expectancy gap", interactive.p$x$data[[i]]$text)
+        interactive.p$x$data[[i]]$text <- gsub("LE_wbgap_ucl", "Upper credible limit", interactive.p$x$data[[i]]$text)
+        interactive.p$x$data[[i]]$text <- gsub("LE_wbgap_lcl", "Lower credible limit", interactive.p$x$data[[i]]$text)
+      }
+      
+       interactive.p
+```
 
+## Female black-white life expectancy gap
 
+```{r, echo = F}
+    gg.p2 <- ggplot(data = subset(BlackWhite_results, sex == "Female"),
+                          aes(y = LE_wbgap_mean, x = year)) +
+    geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+    geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+    #geom_line(aes(col = Census_Division)) + 
+    facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+    theme_classic(base_size = 10) +
+    theme(axis.text.x = element_blank(),
+          strip.background=element_blank(),
+          axis.line=element_blank(),
+          axis.ticks=element_blank(),
+          legend.position = "none",
+          panel.background = element_rect(fill = "transparent", colour = NA), 
+          plot.background = element_rect(fill = "transparent", colour = NA),
+          legend.background = element_rect(fill = "transparent", colour = NA)) +
+    ylab("Life expectancy gap (years)") +
+    xlab(paste0("Year (1969-2013)")) 
+
+      interactive.p2 <- ggplotly(gg.p2 +     
+        geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+        geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5))
+      
+      for(i in 1:length(interactive.p2$x$data)){
+        if (interactive.p2$x$data[[i]]$line$color %in% c("rgba(0,0,0,1)", "rgba(190,190,190,0.5)")) {
+          interactive.p2$x$data[[i]]$hoverinfo <- "none"
+          interactive.p2$x$data[[i]]$line$width <- 1
+        }
+        
+        interactive.p2$x$data[[i]]$text <- gsub("Census_Division", "Census Division", interactive.p$x$data[[i]]$text)
+        interactive.p2$x$data[[i]]$text <- gsub("LE_wbgap_mean", "Mean life expectancy gap", interactive.p$x$data[[i]]$text)
+        interactive.p2$x$data[[i]]$text <- gsub("LE_wbgap_ucl", "Upper credible limit", interactive.p$x$data[[i]]$text)
+        interactive.p2$x$data[[i]]$text <- gsub("LE_wbgap_lcl", "Lower credible limit", interactive.p$x$data[[i]]$text)
+      }
+      
+       interactive.p2
+```
+
+##National patterns in cause contributions to the gap
+
+```{r, echo = F}
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
+
+cod_decomp_national <- cod_decomp_results %>% 
+  filter(state == "Alabama") %>%
+  mutate(national.trend = fitted.RE - RE.estimates) %>%
+  select(-state)
+
+gg.p3 <- ggplotly(ggplot(cod_decomp_national, aes(y = national.trend, x = year)) + 
+  geom_line(aes(col = sex)) + 
+  facet_wrap(~COD) + theme_minimal() +
+  xlab("Year") + ylab("National trend in cause of death contribution")) %>%
+  layout(margin(b = 50, l = 50)) 
+
+gg.p3
+```
+
+#A tale of two states
+
+##Tennessee
+```{r, echo = F}
+age_cod_results_female <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
+
+age_cod_results_male <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
+
+age_cod_results <- rbind(age_cod_results_female, age_cod_results_male)
+rm(age_cod_results_female, age_cod_results_male)
+
+age_cod_results$age <- forcats::fct_relevel(f = age_cod_results$age, "<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                            "15-19 years", "20-24 years", "25-29 years", "30-34 years", "35-39 years", 
+                                            "40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years", 
+                                            "65-69 years", "70-74 years", "75-79 years", "80-84 years", "85+ years")
+
+age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
+
+sub1 <- subset(age_cod_results, year %in% c(1969, 2013) & state == "Tennessee")
+ly1 <- ggplotly(
+  ggplot(data = sub1,
+         aes(x=age, y = age_COD_cont_yrs_mean, fill = COD)) +
+    geom_bar(stat = "identity") + coord_flip() + theme_minimal()  + geom_vline(aes(xintercept = 0)) +
+    theme(legend.title = element_blank(),
+          panel.background = element_rect(fill = "transparent", colour = NA), 
+          plot.background = element_rect(fill = "transparent", colour = NA),
+          legend.background = element_rect(fill = "transparent", colour = NA)) +
+    ylab("Contribution to the life expectancy gap (years)") +
+    xlab("") +
+    facet_wrap(year ~ sex) 
+) 
+
+for(i in 1:length(ly1$x$data)){
+  ly1$x$data[[i]]$text <- gsub("age_COD_cont_yrs_mean", "Contribution to gap (yrs)", ly1$x$data[[i]]$text)
+}
+
+ly1 %>% layout(margin = list(b = 100))
+```
+
+##New York
+```{r, echo = F}
+
+sub1 <- subset(age_cod_results, year %in% c(1969, 2013) & state == "New York")
+ly1 <- ggplotly(
+  ggplot(data = sub1,
+         aes(x=age, y = age_COD_cont_yrs_mean, fill = COD)) +
+    geom_bar(stat = "identity") + coord_flip() + theme_minimal()  + geom_vline(aes(xintercept = 0)) +
+    theme(legend.title = element_blank(),
+          panel.background = element_rect(fill = "transparent", colour = NA), 
+          plot.background = element_rect(fill = "transparent", colour = NA),
+          legend.background = element_rect(fill = "transparent", colour = NA)) +
+    ylab("Contribution to the life expectancy gap (years)") +
+    xlab("") +
+    facet_wrap(year ~ sex) 
+) 
+
+for(i in 1:length(ly1$x$data)){
+  ly1$x$data[[i]]$text <- gsub("age_COD_cont_yrs_mean", "Contribution to gap (yrs)", ly1$x$data[[i]]$text)
+}
+
+ly1 %>% layout(margin = list(b = 100))
+```
+
+##Similarities & differences
+
+- Substantial contribution of infant mortality to the gap in 1969
+- Most deaths from all other causes are during infancy
+- Similar pattern of injury contributions by gender in 1969, but larger contribution in Tennessee
+- Similar pattern of CVD contributions in 1969 and 2013, but Tennessee started worse off
+- Ditto for cancer
+- Injury plays important role in Tennessee in 2013 with opposing effect directions in men and women
+
+##Blah
+
+-
 
