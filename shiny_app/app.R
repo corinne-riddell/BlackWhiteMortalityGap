@@ -32,8 +32,8 @@ levels(mortality.rates.diff$stabbrs) <- c(levels(mortality.rates.diff$stabbrs), 
 mortality.rates$stabbrs[mortality.rates$state == "Washington DC"] <- "DC"
 mortality.rates.diff$stabbrs[mortality.rates.diff$state == "Washington DC"] <- "DC"
 
-mortality.rates <- reorder.as.map(mortality.rates, "state", "stabbrs")
-mortality.rates.diff <- reorder.as.map(mortality.rates.diff, "state", "stabbrs")
+mortality.rates <- reorder.as.map2(mortality.rates, "state", "stabbrs")
+mortality.rates.diff <- reorder.as.map2(mortality.rates.diff, "state", "stabbrs")
 
 age_cod_results_female <- read.csv("./www/Results2/age_cod_results_female.csv")
 age_cod_results_male <- read.csv("./www/Results2/age_cod_results_male.csv")
@@ -81,7 +81,7 @@ cod_decomp_results$new.finish2 = cod_decomp_results$finish2 +cod_decomp_results$
 cod_decomp_results$LE_black_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
 cod_decomp_results$LE_white_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
 
-cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
+cod_decomp_results <- reorder.as.map2(cod_decomp_results, "state", "stabbrs")
 
 age_decomp_results <- merge(age_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
                             by = "stratum.id")
@@ -94,7 +94,7 @@ age_decomp_results$new.finish2 = age_decomp_results$finish2 + age_decomp_results
 age_decomp_results$LE_black_mean[age_decomp_results$age != "<1 year"] <- NA
 age_decomp_results$LE_white_mean[age_decomp_results$age != "<1 year"] <- NA
 
-BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
+BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
 
 
 
@@ -169,17 +169,18 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                  
                                  tabPanel(title = "Trends in life expectancy gap", value = "LE.summary",
                                           htmlOutput("description_LE_summary"),
-                                          plotlyOutput("state_LEsummary", height = 700) #, width = 700
+                                          plotlyOutput("state_LEsummary", height = 700, width = 900),
+                                          uiOutput("excluded")
                                  ),
                                  
                                  tabPanel(title = "Trends in cause contribution", value = "COD.summary",
                                           htmlOutput("description_cod_trends"),
-                                          plotlyOutput("contribution_plot", height = 700) #, width = 1100
+                                          plotlyOutput("contribution_plot", height = 700, width = 900)
                                  ),
                                  
                                  tabPanel(title = "Trends in mortality", value = "Mortality.trends",
                                           htmlOutput("description_mortality_trends"),
-                                          plotlyOutput("mortality_plot", height = 700) #, width = 1100
+                                          plotlyOutput("mortality_plot", height = 700, width = 900)
                                  ),
                                  
                                  tabPanel(title = "Cross-sectional cause contribution", value = "COD.snapshot",

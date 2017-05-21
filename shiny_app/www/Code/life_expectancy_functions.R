@@ -587,3 +587,32 @@ reorder.as.map <- function(dataset, state.var, state.abbrev.var) {
   
   return(dataset)
 }
+
+
+
+reorder.as.map2 <- function(dataset, state.var, state.abbrev.var) {
+  # Create unique blank strip labels for empty facets
+  bl = sapply(1:24, function(n) paste(rep(" ",n),collapse=""))
+  
+  dataset["state.map.order"] <- factor(dataset[[state.var]], 
+                                       levels = c(#bl[1:10], "Maine",
+                                         #bl[11:19], "Vermont", "New Hampshire",
+                                         "Washington", bl[1], bl[2], bl[3], "Minnesota", "Illinois", "Wisconsin", "Michigan", "New York", "Massachusetts", "Rhode Island",
+                                         "Oregon", "Nevada", bl[4], bl[5], "Iowa", "Indiana", "Ohio", "Pennsylvania", "New Jersey", "Connecticut", bl[6],
+                                         "California", bl[7], "Colorado", "Nebraska", "Missouri", "Kentucky", "West Virginia", "Virginia", "Maryland", "Delaware", bl[8],
+                                         bl[9], "Arizona", "New Mexico", "Kansas", "Arkansas", "Tennessee", "North Carolina", "South Carolina", "Washington DC", bl[10:11],
+                                         bl[12:14], "Oklahoma", "Louisiana", "Mississippi", "Alabama", "Georgia", bl[15:17],
+                                         bl[18:20], "Texas", bl[21:24], "Florida")) 
+  
+  dataset["stabbrs.map.order"] <- factor(dataset[[state.abbrev.var]], 
+                                         levels = c(#bl[1:10], "ME",
+                                           #bl[11:19], "VT", "NH",
+                                           "WA", bl[1], bl[2], bl[3], "MN", "IL", "WI", "MI", "NY", "MA", "RI",
+                                           "OR", "NV", bl[4], bl[5], "IA", "IN", "OH", "PA", "NJ", "CT", bl[6],
+                                           "CA", bl[7], "CO", "NE", "MO", "KY", "WV", "VA", "MD", "DE", bl[8],
+                                           bl[9], "AZ", "NM", "KS", "AR", "TN", "NC", "SC", "DC", bl[10:11],
+                                           bl[12:14], "OK", "LA", "MS", "AL", "GA", bl[15:17],
+                                           bl[18:20], "TX", bl[21:24], "FL")) 
+  
+  return(dataset)
+}
