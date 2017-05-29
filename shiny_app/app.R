@@ -57,6 +57,14 @@ cod_change_results <- read.csv("./www/Results2/cod_change_results.csv")
 BlackWhite_results <- read.csv("./www/Results2/BlackWhite_results.csv")
 dat.aggregated <- read.csv("./www/Data/dat_aggregated.csv") 
 
+excluded <- c("Alaska", "Hawaii", "Idaho", "Maine", "Montana", "New Hampshire", "North Dakota",
+              "South Dakota", "Utah", "Vermont", "Wyoming")
+
+dat.agg2.white <- dat.aggregated %>% filter(age == "<1 year" & race == "White" & !(state %in% excluded)) %>% select(state, year, sex, pop_across_age) %>% rename(pop_white = pop_across_age)
+dat.agg2.black <- dat.aggregated %>% filter(age == "<1 year" & race == "Black" & !(state %in% excluded)) %>% select(state, year, sex, pop_across_age) %>% rename(pop_black = pop_across_age)
+dat.agg2 <- merge(dat.agg2.black, dat.agg2.white, by = c("state", "year", "sex"))
+rm(dat.agg2.black, dat.agg2.white)
+
 age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
 cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
 #age_decomp_results$age <- factor(age_decomp_results$age, levels = levels(age_decomp_results$age)[c(1, 2, 11, 3:10, 12:19)])
@@ -72,6 +80,7 @@ cod_marginal_results <- cod_decomp_results %>%
 
 cod_decomp_results <- merge(cod_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
       by = "stratum.id")
+cod_decomp_results <- merge(cod_decomp_results, dat.agg2, by = c("state", "year", "sex"))
 
 cod_decomp_results$new.start = cod_decomp_results$start + cod_decomp_results$LE_black_mean
 cod_decomp_results$new.start2 = cod_decomp_results$start2 + cod_decomp_results$LE_black_mean
@@ -85,6 +94,8 @@ cod_decomp_results <- reorder.as.map2(cod_decomp_results, "state", "stabbrs")
 
 age_decomp_results <- merge(age_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
                             by = "stratum.id")
+
+age_decomp_results <- merge(age_decomp_results, dat.agg2, by = c("state", "year", "sex"))
 
 age_decomp_results$new.start = age_decomp_results$start + age_decomp_results$LE_black_mean
 age_decomp_results$new.start2 = age_decomp_results$start2 + age_decomp_results$LE_black_mean
@@ -125,6 +136,9 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                                   )
                                                  ),
                                 
+                                conditionalPanel(condition = "input.tab == 'COD.snapshot' || input.tab == 'Age.snapshot'",
+                                                 uiOutput("select_min_pop")),
+
                                 conditionalPanel(condition = "input.tab == 'Mortality.trends' || input.tab == 'COD.summary'",
                                                  selectInput(inputId = "COD", 
                                                              choices = levels(cod_decomp_results$COD), 
@@ -144,9 +158,9 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                 conditionalPanel(condition = "input.tab == 'state.dashboard'",
                                                  selectInput(inputId = "state", label = "State:", 
                                                              choices = levels(BlackWhite_results$state))),
+                          
                                 absolutePanel(bottom = 0, left = 0, draggable = T,
                                   conditionalPanel(condition = "input.tab == 'state.dashboard'")
-
                                 )
                                 ),
                  
@@ -164,6 +178,7 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                           htmlOutput("Explain_LE_females"),
                                           htmlOutput("Explain_LE_males"),
                                           plotlyOutput("age_cod", height = 700, width = 1100),
+                                          uiOutput("Warning_age1"),
                                           htmlOutput("Alabama")
                                  ),
                                  
@@ -191,11 +206,12 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                  tabPanel(title = "Cross-sectional age contribution", value = "Age.snapshot",                                
                                           htmlOutput("description_age_summary"),
                                           plotlyOutput("state_age_summary", height = 800),
+                                          uiOutput("Warning_age2"),
                                           dataTableOutput("data.temp2")),
                                  
                                  tabPanel(title = "More information", value = "more",
-                                          htmlOutput("app_description"),
-                                          img(src = "CClicense.png")
+                                          htmlOutput("app_description")
+                                          #img(src = "CClicense.png")
                                  )
                                  
                      )
@@ -207,6 +223,14 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
 
 server <- function(input, output) {
 
+  output$select_min_pop <- renderUI({
+    sliderInput(inputId = "min_pop", 
+              label = "Black population min:", 
+              min = min(dat.agg2$pop_black[dat.agg2$year == input$year & dat.agg2$sex == input$sex]), 
+              max = max(dat.agg2$pop_black[dat.agg2$year == input$year & dat.agg2$sex == input$sex]), 
+              value = min(dat.agg2$pop_black[dat.agg2$year == input$year & dat.agg2$sex == input$sex]))
+  })
+  
   ##########################################
   ##  State summary: Life expectancy gap  ##
   ########################################## 
@@ -463,9 +487,12 @@ server <- function(input, output) {
   ########################################## 
   
   output$description_mortality_trends <- renderUI({ 
-    HTML(paste0("<b>How do the trends in age-standardized mortality differ between blacks and white ", lowercase.sex(), "s for ", lowercase.COD(), "?</b><br/><br/>",
-                ifelse(input$gap == "Both races","This plot depicts the cause-specific mortality rates for each race. You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'.<br/><br/>",
+    HTML(paste0("</br></br><b>How do the trends in age-standardized mortality differ between blacks and white ", lowercase.sex(), "s for ", lowercase.COD(), "?</b><br/><br/>",
+                ifelse(input$gap == "Both races","This plot depicts the cause-specific mortality rates for each race. You can alternatively view the excess risk of mortality among blacks using the selection button 'Excess risk in blacks'. ",
                        "This plot depicts the excess number of deaths among blacks for the selected cause of death. You can alternatively view the rates of mortality for both blacks and whites using the selection button 'Both races'<br/><br/>"),
+                ifelse(input$plot_choice == "Grid",
+                       " Use your mouse to hover over the trend lines to view the estimate of the life expectancy gap for each year and state. Switch to the Map 'Plot style' to display separate panels for every state organized like a map, and bands around these lines showing statistical precision. <br/><br/>",
+                       " Here, states with less precise estimates (often due to small black populations) have wider ribbons, where these ribbons display the 95% credible brand for the trend line.<br/><br/>"),
                 "<h2>Age-adjusted mortality (per 100,000) in ", lowercase.sex(), "s for ", lowercase.COD(),"</h2>"))
  })
  
@@ -594,12 +621,15 @@ server <- function(input, output) {
                       "<br/><br/>", "This graph depicts the difference in life expectancy between white ", lowercase.sex(), 
                              "s (vertical black line) and black ", lowercase.sex(), "s (dashed black line). 
                              Causes to the left of the dashed line narrow the gap in ", input$year, " 
-                             whereas causesto the right exacerbate it. Use these buttons to change the gender or year being examined.<br/><br/>
+                             whereas causes to the right exacerbate it. Use these buttons to change the gender or year being examined. To only show ",
+                      "states with the most precise information, use the slider to exclude states with the smallest ",
+                      "black populations (and the least precise estimates).<br/><br/>
                              <h3>Contribution of major causes of death to the life expectancy gap (years)</h3>"))
   })
   
   temp.df <- reactive({
-    temp <- data.frame(subset(cod_decomp_results, sex == input$sex & year == input$year))
+    temp <- data.frame(subset(cod_decomp_results, sex == input$sex & 
+                                year == input$year & pop_black >= input$min_pop))
     temp["state.reorder2"] <- reorder(temp$state, temp$LE_black_mean, max, na.rm = T)
     temp["state.reorder2.n"] <- as.numeric(temp[["state.reorder2"]])
     temp
@@ -649,7 +679,7 @@ server <- function(input, output) {
   ########################################## 
   
   temp.df2 <- reactive({
-    temp <- data.frame(subset(age_decomp_results, sex == input$sex & year == input$year))
+    temp <- data.frame(subset(age_decomp_results, sex == input$sex & year == input$year & pop_black >= input$min_pop)) 
     temp["state.reorder2"] <- reorder(temp$state, temp$LE_black_mean, max, na.rm = T)
     temp["state.reorder2.n"] <- as.numeric(temp[["state.reorder2"]])
     temp
@@ -659,7 +689,9 @@ server <- function(input, output) {
                                                       between blacks and whites in ", input$year, "?</b><br/><br/> This graph depicts the difference in 
                                                       life expectancy between white ", lowercase.sex(), "s (vertical red line) and black ", 
                                                       lowercase.sex(), "s (dashed red line). Ages to the left of the dashed line narrow 
-                                                      the gap in ", input$year, " whereas ages to the right exacerbate it.<br/><br/>
+                                                      the gap in ", input$year, " whereas ages to the right exacerbate it. To only show ",
+                                                      "states with the most precise information, use the slider to exclude states with the smallest ",
+                                                      "black populations (and the least precise estimates).<br/><br/>
                                                       <h3>Contribution of age to the life expectancy gap (years)</h3>"))
   })
 
@@ -700,6 +732,13 @@ server <- function(input, output) {
     ly %>% layout(xaxis = list(title = " ", side = "top", xpad = 20), yaxis = list(title = NA, autorange = "reversed"))
   })
   
+  output$Warning_age2 <- renderUI({
+    HTML(paste0("<b>Interpretation warning:</b> For several states and years, the oldest age group(s) is/are estimated to contribute to narrowing the black-white gap.",
+                " However, there is known age misclassification for older generations, especially among blacks, that is thought to lead to this apparent 'cross-over'. See",
+                " <a href='https://www.ncbi.nlm.nih.gov/books/NBK109843/#ch2.r35'>here</a> for more information."
+                
+    ))
+  })
   
 ##########################################
 ##            Explore a state           ##
@@ -930,6 +969,14 @@ output$age_cod <- renderPlotly({
   
 })
 
+output$Warning_age1 <- renderUI({
+  HTML(paste0("<b>Interpretation warning:</b> For several states and years, the oldest age group(s) is/are estimated to contribute to narrowing the black-white gap.",
+              " However, there is known age misclassification for older generations, especially among blacks, that is thought to lead to this apparent 'cross-over'. See",
+              " <a href='https://www.ncbi.nlm.nih.gov/books/NBK109843/#ch2.r35'>here</a> for more information.<br/><br/>"
+              
+  ))
+})
+
 output$Alabama <- renderUI({
   if(input$state != "Alabama"){
     HTML(paste0("If you would like an example of how to interpret these plots, please select Alabama using the selection panel (scroll up!), and an interpretation will appear."))
@@ -956,24 +1003,23 @@ output$Alabama <- renderUI({
 output$app_description <- renderUI({
   HTML(paste0("<b>The data</b><br/>We accessed the raw data using the National Cancer Institute's SEER*stat software.", 
               " We extracted mortality counts within strata of state, sex, year, race, age group, and cause of death.",
-              "These data were smoothed over time using an autoreggresive Bayesian model and suppressed counts (between 
-              1 and 10) were imputed using truncated Poisson regression.<br/><br/>",
+              "These data were smoothed over time using a Bayesian time-series model and suppressed counts (between 
+              1 and 10) were imputed using a truncated Poisson likelihood.<br/><br/>",
               "<b>Who we are</b><br/>", 
               "We are a group of epidemiologists from McGill University in Montreal, Canada. ", 
               "These efforts were led by <b>Corinne Riddell</b>. She collected the data, coded and ", 
-              "performed demographic analyses (life tables, cause of death decompositions), and ",
-              "created this shiny app. <b>Kathryn Morrison</b> is our resident Bayesian, ",
+              "performed demographic analyses (life tables, cause of death decompositions), ",
+              "created this shiny app, and drafted the pre-publication. <b>Kathryn Morrison</b> is our resident Bayesian, ",
               "and she coded up the Bayesian model to calculate smoothed mortality rates and their ",
-              "credible intervals. This work was massively inspired by previous work of our mentors ",
-              "and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They provided mentorship, ",
-              "guidance, and boat-loads of background reading.<br/><br/> ",
-              
+              "credible intervals. This work was inspired by previous work of our mentors ",
+              "and co-authors, <b>Sam Harper</b> and <b>Jay Kaufman</b>. They contributed to the manuscript draft, and ",
+              "interpreted these findings as part of the broader literature base.<br/><br/> ",
+              "<b>Preprint</b><br/>",
+              "Please see the preprint of our paper for more information about the data and analysis,",
+              " found <a href='http://biorxiv.org/content/early/2017/05/25/140152'>here.</a><br/><br/>",
               "<b>Many thanks</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, ",
               "our friends at Plotly, whose interactive plots are top-notch, and, Martyn ",
-              "Plummer, the R package maintainer for JAGS who also manages the JAGS forum on sourceforge. <br/><br/>",
- 
-              "<b>License</b><br/> This software created by Corinne Riddell is licensed under a Creative Commons Attribution-Noncommercial 4.0 International License."
-              
+              "Plummer, the R package maintainer for JAGS who also manages the JAGS forum on sourceforge. <br/><br/>"
               
   ))
 })
