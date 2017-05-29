@@ -51,6 +51,7 @@ grid.arrange(img3,
              img2,
              ncol = 3)
 ```
+
 Jay Kaufman, Kathryn Morrison, and Sam Harper
 
 ----
@@ -83,15 +84,6 @@ include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortali
 - <b class = "greentext">6</b> major causes of deaths: cardiovascular disease, cancer, non-communicable, communicable, injuries, all other causes
 - = <b class = "greentext">820,800 rows of data</b>
 
-## The data
-
-```{r, echo = F, out.width = 400}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/alabama.data.ex.png")
-```
-
-- When the number of deaths is between 1 and 9 it is <b class = "redtext">coarsened</b>. 
-
-
 ## The analysis
 
 + Estimated smoothed mortality rates using a Bayesian time series model with Poisson likelihood
@@ -103,6 +95,29 @@ include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortali
     4. Calculate age-standardized mortality rates
 + Calculate the mean, 5^th^ and 95^th^ percentiles for all estimates
 + Compute national trend using random-effects meta regression
+
+## The output
+
++ Working paper being screened at bioRxiv
++ R Shiny App: https://corinne-riddell.shinyapps.io/shiny_app/
+
+## The app
+
+```{r, echo = F, out.width = 800}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/app_ex1.gif")
+```
+
+## The app
+
+```{r, echo = F, out.width = 800}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/app_ex2.gif")
+```
+
+## The app
+
+```{r, echo = F, out.width = 800}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/app_ex3.gif")
+```
 
 ## Male black-white life expectancy gap
 
@@ -206,6 +221,23 @@ gg.p3 <- ggplotly(ggplot(cod_decomp_national, aes(y = national.trend, x = year))
 gg.p3
 ```
 
+#Three examples
+
+##CVD in men
+```{r, echo = F, out.width = 675}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/CVD_men.png")
+```
+
+##Cancer in women
+```{r, echo = F, out.width = 675}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/Cancer_women.png")
+```
+
+##Injury in women
+```{r, echo = F, out.width = 675}
+include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/ResearchDay/images/Injury_women.png")
+```
+
 #A tale of two states
 
 ##Tennessee
@@ -278,12 +310,7 @@ ly1 %>% layout(margin = list(b = 100))
 - Ditto for cancer
 - Injury plays important role in Tennessee in 2013 with opposing effect directions in men and women
 
-##Learn more
-- Working paper submitted to bioRxiv - will be public soon!
-- Shiny app hosted online with our results here:  https://corinne-riddell.shinyapps.io/shiny_app/
-
-**Get in touch**
-
+##Get in touch
 - corinne.riddell@mail.mcgill.ca
 - @datavisitor on Twitter
 
