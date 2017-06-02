@@ -1,0 +1,215 @@
+---
+title: "3_Explore_Missingness"
+author: "Corinne Riddell"
+date: "1/19/2017"
+output: github_document
+---
+
+```{r load_data}
+library(tidyverse)
+library(forcats)
+dat.clean<- read.csv("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.csv", header = T)
+```
+
+###Initial graphs on missing data
+Notes on Figure 1 (below):
+
+- Figure 1 is sorted by size of the black population in the state in 2013. This is so you can see how missingness is a function of population size. We expect that states with less black people will have more missing data and more counts of exactly zero. Thus, states with the biggest populations (of blacks and whites) will "hold constant" the effect of population size on the amount of missing data.
+
+- The first panels you see in Figure 1 (below) are for the states with the smallest black populations. For whites, the amount of missing data increases in age until about 40 years old, and then decreases. For blacks, the amount of missing data is very low across age. This seemed strange to me at first, but then I remembered that the data is not missing if the count is equal to 0, which will be the case for many strata in these states with the lowest black population.
+
+- As you read left to right (as the black population size increases by state), the trends in missing data across age look more similar by race, although blacks appear to have more missing data in individuals < 30 years old for the states with the most black people.
+
+**Figure 1: Proportion missing by State (panel) and Age group (x-axis), ordered by increasing size of black population in 2013**
+```{r bystate, fig.width = 12, fig.height = 37, echo=F}
+bystate <- 
+  dat.clean %>%
+  group_by(state, race, age) %>%
+  summarise(prop.death.missing = mean(is.na(deaths)),
+            age_minbin = first(age_minbin))
+
+#recode a new count variable that "counts the missing data" so that these rows are used when calculating the % of data == 0.
+dat.clean$death.na1 <- dat.clean$deaths
+dat.clean$death.na1[is.na(dat.clean$deaths) == T] <- 1
+
+bystate2 <- 
+  dat.clean %>%
+  group_by(state, race, age) %>%
+  summarise(prop.death.zero = mean(death.na1 == 0))
+
+bystate <- merge(bystate, bystate2, by=c("state", "race", "age"))
+rm(bystate2)
+
+
+
+#calculate the size of the black population in 2013 by State
+bystate.bpop.2013 <- 
+  dat.clean %>%
+  filter(COD == "Cancers" & year == 2013 & race == "Black") %>% #to stop repeats of the population size
+  group_by(state) %>%
+  summarize(pop_by_race_2013 = sum(as.numeric(population)))
+
+#calculate the size of the black population in 1969 by State
+bystate.bpop.1969 <- 
+  dat.clean %>%
+  filter(COD == "Cancers" & year == 1969 & race == "Black") %>% #to stop repeats of the population size
+  group_by(state) %>%
+  summarize(pop_by_race_1969 = sum(as.numeric(population)))
+
+bystate <- merge(bystate, bystate.bpop.2013, by = "state", all.x = T)
+bystate <- merge(bystate, bystate.bpop.1969, by = "state", all.x = T)
+bystate$state_reorder <- reorder(bystate$state, bystate$pop_by_race_2013)
+
+ggplot(bystate, aes(x = fct_reorder(age, age_minbin), y = prop.death.missing)) + 
+  geom_point(aes(col=race)) + 
+  facet_wrap(~ state_reorder, ncol = 4) +
+  theme_bw(base_size = 11) +
+  theme(legend.position="top") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Missing (%)") +
+  xlab("Age group")
+```
+
+**Examine the growth of the black population between 1969 and 2013**
+
+```{r}
+ggplot(subset(bystate, age == "<1 year"), aes(pop_by_race_1969, pop_by_race_2013)) + 
+  geom_point() + 
+  geom_abline(intercept = 0, slope = 1) + 
+  xlab("Black population in 1969") + 
+  ylab("Black population in 2013")
+
+unique(bystate$state[bystate$age == "<1 year" & bystate$pop_by_race_1969 < 10000])
+```
+
+
+Notes on Figure 2 (below):
+
+- Figure 2 examines the proportion of counts equal to zero. The purpose of this examination is to visually confirm that there are higher proportions of zero counts in the states with the least amount of blacks. This is very clear when viewing the figure.
+
+- Question - any explantion for why the portion of zeroes stays relatively higher in blacks vs. whites in the states with the most blacks (within the younger age groups)?
+
+**Figure 2: Proportion zero by State (panel) and Age group (x-axis), ordered by increasing size of black population in 2013**
+
+```{r zero_by_state, fig.width = 12, fig.height = 37, echo=F}
+ggplot(bystate, aes(x = fct_reorder(age, age_minbin), y = prop.death.zero)) + 
+  geom_point(aes(col = race)) + facet_wrap(~ state_reorder, ncol = 4) +
+  theme_bw(base_size = 11) +
+  theme(legend.position = "top") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion zero death count (%)") +
+  xlab("Age group") 
+```
+
+###Other plots (less interesting/informative)
+
+**How is missingness related to age, race, and sex?**
+
+```{r missing_data, fig.width = 10, fig.height = 5, echo=F}
+table1.whitemale <- round(prop.table(table(is.na(dat.clean$deaths[dat.clean$race.sex == "White Male"]), 
+                                           dat.clean$age[dat.clean$race.sex == "White Male"]),2)*100,2)
+
+table1.blackmale <- round(prop.table(table(is.na(dat.clean$deaths[dat.clean$race.sex == "Black Male"]), 
+                                           dat.clean$age[dat.clean$race.sex == "Black Male"]),2)*100,2)
+
+table1.whitefemale <- round(prop.table(table(is.na(dat.clean$deaths[dat.clean$race.sex == "White Female"]), 
+                                           dat.clean$age[dat.clean$race.sex == "White Female"]),2)*100,2)
+
+table1.blackfemale <- round(prop.table(table(is.na(dat.clean$deaths[dat.clean$race.sex == "Black Female"]), 
+                                           dat.clean$age[dat.clean$race.sex == "Black Female"]),2)*100,2)
+
+miss1 <- data.frame("white.male" = table1.whitemale[2, ], 
+                    "black.male"= table1.blackmale[2, ],
+                    "white.female" = table1.whitefemale[2, ], 
+                    "black.female"= table1.blackfemale[2, ],
+                    "age" = names(table1.whitemale[2, ]))
+
+miss1$age <- factor(miss1$age, levels(miss1$age)[c(1, 2, 11, 3:10, 12:20)])
+
+miss1 <- gather(miss1, race.sex, missingness, c(white.male, black.male, white.female, black.female))
+
+ggplot(miss1, aes(x = age, y = missingness)) + geom_point() + geom_point(aes(col=race.sex)) +
+  theme_bw(base_size = 16) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Missing (%)") +
+  xlab("Age group")
+```
+
+**Let's look at the proportion with 0's**
+
+```{r zero_data, fig.width = 10, fig.height = 5, echo=F}
+table2.whitemale <- round(prop.table(table(dat.clean$deaths[dat.clean$race.sex == "White Male"]==0, 
+                                       dat.clean$age[dat.clean$race.sex == "White Male"]),2)*100,2)
+
+table2.blackmale <- round(prop.table(table(dat.clean$deaths[dat.clean$race.sex == "Black Male"]==0, 
+                                       dat.clean$age[dat.clean$race.sex == "Black Male"]),2)*100,2)
+
+table2.whitefemale <- round(prop.table(table(dat.clean$deaths[dat.clean$race.sex == "White Female"]==0, 
+                                       dat.clean$age[dat.clean$race.sex == "White Female"]),2)*100,2)
+
+table2.blackfemale <- round(prop.table(table(dat.clean$deaths[dat.clean$race.sex == "Black Female"]==0, 
+                                       dat.clean$age[dat.clean$race.sex == "Black Female"]),2)*100,2)
+
+miss2 <- data.frame("whitemale" = table2.whitemale[2, ], 
+                    "blackmale"= table2.blackmale[2, ],
+                    "whitefemale" = table2.whitefemale[2, ], 
+                    "blackfemale"= table2.blackfemale[2, ],
+                    "age" = names(table2.blackmale[2, ]))
+
+miss2$age <- factor(miss2$age, levels(miss2$age)[c(1, 2, 11, 3:10, 12:20)])
+
+miss2 <- gather(miss2, racesex, zeroes, c(whitemale, blackmale, whitefemale, blackfemale))
+
+ggplot(miss2, aes(x = age, y = zeroes)) + geom_point() + geom_point(aes(col=racesex)) +
+  theme_bw(base_size = 16) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Zero (%)") +
+  xlab("Age group")
+```
+
+**Missing or zero (which is equivalent to < 10)**
+
+```{r miss_or_zero_data, fig.width = 10, fig.height = 5, echo=F}
+dat.clean$miss_or_zero <- F
+dat.clean$miss_or_zero[dat.clean$deaths == 0 | is.na(dat.clean$deaths) == T] <- T
+
+table3.whitemale <- round(prop.table(table(dat.clean$miss_or_zero[dat.clean$race.sex == "White Male"]==T, 
+                                      dat.clean$age[dat.clean$race.sex == "White Male"]),2)*100,2)
+
+table3.blackmale <- round(prop.table(table(dat.clean$miss_or_zero[dat.clean$race.sex == "Black Male"]==T, 
+                                       dat.clean$age[dat.clean$race.sex == "Black Male"]),2)*100,2)
+
+table3.whitefemale <- round(prop.table(table(dat.clean$miss_or_zero[dat.clean$race.sex == "White Female"]==T, 
+                                       dat.clean$age[dat.clean$race.sex == "White Female"]),2)*100,2)
+
+table3.blackfemale <- round(prop.table(table(dat.clean$miss_or_zero[dat.clean$race.sex == "Black Female"]==T, 
+                                       dat.clean$age[dat.clean$race.sex == "Black Female"]),2)*100,2)
+
+miss3 <- data.frame("whitemale" = table3.whitemale[2, ], 
+                    "blackmale"= table3.blackmale[2, ],
+                    "whitefemale" = table3.whitefemale[2, ], 
+                    "blackfemale"= table3.blackfemale[2, ],
+                    "age" = names(table3.blackmale[2, ]))
+
+miss3$age <- factor(miss3$age, levels(miss3$age)[c(1, 2, 11, 3:10, 12:20)])
+
+miss3 <- gather(miss3, racesex, miss_or_zero, c(whitemale, blackmale, whitefemale, blackfemale))
+
+ggplot(miss3, aes(x = age, y = miss_or_zero)) + geom_point() + geom_point(aes(col=racesex)) +
+  theme_bw(base_size = 16) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion Missing or Zero (%)") +
+  xlab("Age group")
+```
+
+```{r explore_data2, fig.width = 10, fig.height = 5, echo=F, eval=F}
+summary(dat.clean$deaths)
+
+ggplot(subset(dat.clean, deaths>0), aes(x = deaths)) + 
+  geom_histogram(binwidth=100)
+
+ggplot(subset(dat.clean, state=="Louisiana"), aes(x = population, y = deaths)) + 
+  geom_point(aes(col=race.sex), alpha=0.2) +
+  facet_wrap( ~ COD) + theme_bw()
+
+```
