@@ -1,0 +1,109 @@
+---
+title: "Examining differences in life expectancy across sensitivity analyses"
+author: "Corinne Riddell"
+date: "July 22, 2016"
+output: html_document
+---
+
+```{r load_libs, echo=F, warning=F, message=F}
+library(plyr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(scales)
+```
+
+```{r load_workspace}
+load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
+```
+
+```{r}
+dat3$grouping <- interaction(dat3$State2, dat3$Race2, dat3$Sex2)
+
+#life expectancy over time under two sensitivities for imputing the NA death counts
+ggplot(subset(dat3, State2 == "Alabama"), aes(y = LE_birth1, x = Year)) + 
+  geom_line(aes(col = grouping, lty = "Imputed 1")) +
+  geom_line(aes(y = LE_birth9, col = grouping, lty = "Imputed 9")) +
+ # geom_line(aes(y = LE_birthb9, col = grouping, lty = "Imputed w=1, b=9")) +  
+  ylab("Life Expectancy at Birth") + scale_x_continuous(breaks = seq(1969, 2013, by = 4)) +
+  scale_y_continuous(breaks = seq(55, 90, by = 2)) +
+  facet_wrap(~ Sex2)
+
+#graph of population size over time 
+#important because gives us an idea of how stable/precise the life expectancy calculation are 
+ggplot(subset(dat3, State2 == "Alabama"), aes(y = Pop_across_age, x = Year)) + geom_line(aes(col = grouping)) +
+  ylab("Population Size") + scale_y_continuous(label = scales::comma)
+
+
+ggplot(subset(dat3, State2 == "Massachusetts"), aes(y = LE_birth1, x = Year)) + 
+  geom_line(aes(col = grouping, lty = "Imputed 1")) +
+  geom_line(aes(y = LE_birth9, col = grouping, lty = "Imputed 9")) +
+  geom_line(aes(y = LE_birthb9, col = grouping, lty = "Imputed w=1, b=9")) +  
+  ylab("Life Expectancy at Birth") + scale_x_continuous(breaks = seq(1969, 2013, by = 4)) +
+  scale_y_continuous(breaks = seq(55, 90, by = 2)) +
+  facet_wrap(~ Sex2)
+
+ggplot(subset(dat3, State2 == "Massachusetts"), aes(y = Pop_across_age, x = Year)) + geom_line(aes(col = grouping)) +
+  ylab("Population Size") + scale_y_continuous(label = scales::comma)
+
+ggplot(subset(dat3, State2 == "New York"), aes(y = LE_birth1, x = Year)) + 
+  geom_line(aes(col = grouping, lty = "Imputed 1")) +
+  geom_line(aes(y = LE_birth9, col = grouping, lty = "Imputed 9")) +
+  geom_line(aes(y = LE_birthb9, col = grouping, lty = "Imputed w=1, b=9")) +  
+  ylab("Life Expectancy at Birth") + scale_x_continuous(breaks = seq(1969, 2013, by = 4)) +
+  scale_y_continuous(breaks = seq(55, 90, by = 2)) +
+  facet_wrap(~ Sex2)
+
+ggplot(subset(dat3, State2 == "New York"), aes(y = Pop_across_age, x = Year)) + geom_line(aes(col = grouping)) +
+  ylab("Population Size") + scale_y_continuous(label = scales::comma)
+
+ggplot(subset(dat3, State2 == "Mississippi"), aes(y = LE_birth1, x = Year)) + 
+  geom_line(aes(col = grouping, lty = "Imputed 1")) +
+  geom_line(aes(y = LE_birth9, col = grouping, lty = "Imputed 9")) +
+  geom_line(aes(y = LE_birthb9, col = grouping, lty = "Imputed w=1, b=9")) +  
+  ylab("Life Expectancy at Birth") + scale_x_continuous(breaks = seq(1969, 2013, by = 4)) +
+  scale_y_continuous(breaks = seq(55, 90, by = 2)) +
+  facet_wrap(~ Sex2)
+
+ggplot(subset(dat3, State2 == "Mississippi"), aes(y = Pop_across_age, x = Year)) + geom_line(aes(col = grouping)) +
+  ylab("Population Size") + scale_y_continuous(label = scales::comma)
+```
+
+```{r}
+dat4_Black <- dat3[dat3$Race2 == "Black", ]
+dat4_Black <- dat4_Black %>% 
+  select(State2, Year, Sex2, Pop_across_age, Pop_has_NA, LE_birth1, LE_birth5, LE_birth9) %>%
+  rename(Pop_black = Pop_across_age, Pop_NA_black = Pop_has_NA, LE1_black = LE_birth1, LE5_black = LE_birth5, LE9_black = LE_birth9)
+
+dat4_White <- dat3[dat3$Race2 == "White", ]
+dat4_White <- dat4_White %>% 
+  select(State2, Year, Sex2, Pop_across_age, Pop_has_NA, LE_birth1, LE_birth5, LE_birth9) %>%
+    rename(Pop_white = Pop_across_age, Pop_NA_white = Pop_has_NA, LE1_white = LE_birth1, LE5_white = LE_birth5, LE9_white = LE_birth9)
+
+
+dat4 <- merge(dat4_Black, dat4_White, by = c("State2", "Year", "Sex2"))
+dim(dat4)
+View(dat4)
+
+dat4 <- dat4 %>% mutate(gap_w1b1 = LE1_white - LE1_black, 
+                gap_w5b5 = LE5_white - LE5_black,
+                gap_w9b9 = LE9_white - LE9_black,
+                gap_w1b9 = LE1_white - LE9_black,
+                gap_w9b1 = LE9_white - LE1_black)
+
+summary(dat4$Pop_white)
+summary(dat4$Pop_black)
+
+#Life expectancy gap, under the different sensitivity analyses
+ggplot(subset(dat4, State2 == "Alabama"), aes(x = Year, y = gap_w1b1)) + 
+  geom_line(aes(y = gap_w1b9, col = "Imputed w=1, b=9")) +   
+  geom_line(aes(col = "Imputed 1")) + 
+  geom_line(aes(y = gap_w5b5, col = "Imputed 5")) +
+  geom_line(aes(y = gap_w9b9, col = "Imputed 9")) +
+  geom_line(aes(y = gap_w9b1, col = "Imputed w=9, b=1")) +
+  facet_wrap( ~ Sex2) +
+  ylab("Life Expectancy Gap") + 
+  scale_x_continuous(breaks = seq(1969, 2013, by = 4)) +
+  scale_y_continuous(breaks = seq(-1, 11, by = 1))
+```
+
