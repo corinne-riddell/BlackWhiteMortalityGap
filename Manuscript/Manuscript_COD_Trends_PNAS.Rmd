@@ -348,6 +348,8 @@ LE_trend_plot_males +
 
 ```
 
+**Figure 1 Legend:** The bands illustrate the 95% credible interval around the mean trend line. States with more imprecise estimates (often due to small black populations) have wider credible intervals. The estimated life expectancy gap in California in 1972 is much higher than in surrounding years. This anomaly is also illustrated in Figure 3, and is a product of an unexpectedly low CVD-related mortality rate among white males in California in 1972, likely denoting a coding error. Thus the data for this state and year should be interpreted with caution.
+
 **Figure 2: State-level trends in the black-white life expectancy gap in women, United States, 1969-2013**
 
 ```{r plot_LE_trends_females, echo=F, fig.height=10, fig.width=13}
@@ -371,6 +373,8 @@ Cardiovascular.Male.plot[[3]] +
            geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5)
 
 ```
+
+**Figure 3:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of CVD to the black-white life expectancy gap over time. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states. The early spike in California's trend line illustrates the unexpectedly high estimate of the CVD contribution to the black-white life expectancy gap among California males in 1972. This anomalous estimate reflects the unexpectedly low CVD-related mortality rate among white males in California in 1972, and likely denotes a coding error. Thus the data for this state and year should be interpreted with caution.
 
 **Figure 4: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
@@ -741,9 +745,3 @@ Program: SEER*Stat software: release: version 8.3.2 [Internet]. Bethesda (MD): N
 33. Arriaga EE (1985) Measuring and explaining the change in life expectancies. *Demography* 21(1):83-96.
 
 34. National Cancer Institute. Surveillance, Epidemiology, and End Results Program: Standard Populations - 19 Age Groups [Internet]. [cited 2017 April 25]. Available from: https://seer.cancer.gov/stdpopulations/stdpop.19ages.html. 
-
-**Figure Legends**
-
-**Figure 1:** The bands illustrate the 95% credible interval around the mean trend line. States with more imprecise estimates (often due to small black populations) have wider credible intervals. The estimated life expectancy gap in California in 1972 is much higher than in surrounding years. This anomaly is also illustrated in Figure 3, and is a product of an unexpectedly low CVD-related mortality rate among white males in California in 1972, likely denoting a coding error. Thus the data for this state and year should be interpreted with caution.
-
-**Figure 3:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of CVD to the black-white life expectancy gap over time. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states. The early spike in California's trend line illustrates the unexpectedly high estimate of the CVD contribution to the black-white life expectancy gap among California males in 1972. This anomolous estimate reflects the unexpectedly low CVD-related mortality rate among white males in California in 1972, and likely denotes a coding error. Thus the data for this state and year should be interpreted with caution.
