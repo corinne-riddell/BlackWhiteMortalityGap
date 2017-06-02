@@ -174,7 +174,7 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                           htmlOutput("description_state_snapshot"),
                                           plotlyOutput("population_trend", height = 300, width = 500),
                                           htmlOutput("title_LE_trends"),
-                                          plotlyOutput("life_expectancy"),
+                                          plotlyOutput("life_expectancy", height = 400, width = 770),
                                           htmlOutput("Explain_LE_females"),
                                           htmlOutput("Explain_LE_males"),
                                           plotlyOutput("age_cod", height = 700, width = 1100),
@@ -793,10 +793,10 @@ output$life_expectancy <- renderPlotly({
   
   p1 <- ggplotly(ggplot(subset(BlackWhite_results, state == input$state & year >= input$years_LEgap[1] &
                                  year <= input$years_LEgap[2]), aes(x = year, y = LE_white_mean)) +
-                   geom_line(col = "black") + 
-                   geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = sex), alpha = 0.3) +
-                   geom_line(aes(y = LE_black_mean), lty = 2, col = "black") + 
-                   geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = sex), alpha = 0.3) +
+                   geom_ribbon(aes(ymin = LE_white_lcl, ymax = LE_white_ucl, fill = sex), alpha = 0.5) +
+                   geom_ribbon(aes(ymin = LE_black_lcl, ymax = LE_black_ucl, fill = sex), alpha = 0.5) +
+                   geom_line(lty = 2) + 
+                   geom_line(aes(y = LE_black_mean), lty = 1) + 
                    facet_grid(. ~ sex, labeller = as_labeller(facet_names)) +
                    geom_text(data = subset(BlackWhite_results, year == 2013 & state == input$state),
                              aes(y = LE_white_mean - 1),
@@ -805,10 +805,8 @@ output$life_expectancy <- renderPlotly({
                              aes(y = LE_black_mean - 1),
                              label = "Black", check_overlap = T, size = 2.5) +
                    theme_minimal() +
-                   theme(legend.title = element_blank(),
-                         panel.background = element_rect(fill = "transparent", colour = NA), 
-                         plot.background = element_rect(fill = "transparent", colour = NA),
-                         legend.background = element_rect(fill = "transparent", colour = NA))
+                   theme(panel.background = element_rect(fill = "transparent", colour = NA), 
+                         plot.background = element_rect(fill = "transparent", colour = NA))
   ) %>% 
     layout(yaxis = list(title = "Life expectancy"))
   
@@ -816,17 +814,16 @@ output$life_expectancy <- renderPlotly({
   
   p2 <- ggplotly(ggplot(subset(BlackWhite_results, state == input$state & year >= input$years_LEgap[1] &
                                  year <= input$years_LEgap[2]), aes(x = year, y = LE_wbgap_mean)) + 
-                   geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = sex)) +
-                   geom_line(col = "black", lty = 3) +
+                   geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = sex), alpha = 0.5) +
+                   geom_line(lty = 3) +
                    facet_grid(. ~ sex) +
                    expand_limits(y = 0) +
                    geom_hline(yintercept = 0, lwd = 0.5) + 
                    theme_minimal() + 
-                   theme(legend.title=element_blank(), 
-                         strip.text.x = element_blank(),
+                   theme(strip.text.x = element_blank(),
                          panel.background = element_rect(fill = "transparent", colour = NA), 
-                         plot.background = element_rect(fill = "transparent", colour = NA),
-                         legend.background = element_rect(fill = "transparent", colour = NA))) %>% 
+                         plot.background = element_rect(fill = "transparent", colour = NA)
+                         )) %>% 
     layout(yaxis = list(title = "Difference"), xaxis = list(title = " "))
   
   for(i in 1:length(p1$x$data)){
@@ -844,7 +841,7 @@ output$life_expectancy <- renderPlotly({
     p2$x$data[[i]]$text <- gsub("LE_wbgap_ucl", "Upper credible limit", p2$x$data[[i]]$text)
   }
   
-  subplot(p1, p2, shareX = T, nrows = 2, titleY = T) %>% layout(margin = list(t=50, b=50, l = 50))
+  subplot(p1, p2, shareX = T, nrows = 2, titleY = T) %>% layout(margin = list(t=50, b=50, l = 50), showlegend = F)
 })
 
 white.y1 <- reactive({
