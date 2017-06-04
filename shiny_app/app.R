@@ -178,7 +178,6 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                           htmlOutput("Explain_LE_females"),
                                           htmlOutput("Explain_LE_males"),
                                           plotlyOutput("age_cod", height = 700, width = 1100),
-                                          uiOutput("Warning_age1"),
                                           htmlOutput("Alabama")
                                  ),
                                  
@@ -206,7 +205,6 @@ ui1 <- fluidPage(theme = "cosmo-customized.css",
                                  tabPanel(title = "Cross-sectional age contribution", value = "Age.snapshot",                                
                                           htmlOutput("description_age_summary"),
                                           plotlyOutput("state_age_summary", height = 800),
-                                          uiOutput("Warning_age2"),
                                           dataTableOutput("data.temp2")),
                                  
                                  tabPanel(title = "More information", value = "more",
@@ -731,14 +729,7 @@ server <- function(input, output) {
     
     ly %>% layout(xaxis = list(title = " ", side = "top", xpad = 20), yaxis = list(title = NA, autorange = "reversed"))
   })
-  
-  output$Warning_age2 <- renderUI({
-    HTML(paste0("<b>Interpretation warning:</b> For several states and years, the oldest age group(s) is/are estimated to contribute to narrowing the black-white gap.",
-                " However, there is known age misclassification for older generations, especially among blacks, that is thought to lead to this apparent 'cross-over'. See",
-                " <a href='https://www.ncbi.nlm.nih.gov/books/NBK109843/#ch2.r35'>here</a> for more information."
-                
-    ))
-  })
+
   
 ##########################################
 ##            Explore a state           ##
@@ -964,14 +955,6 @@ output$age_cod <- renderPlotly({
   
   ly1 %>% layout(margin = list(b = 100))
   
-})
-
-output$Warning_age1 <- renderUI({
-  HTML(paste0("<b>Interpretation warning:</b> For several states and years, the oldest age group(s) is/are estimated to contribute to narrowing the black-white gap.",
-              " However, there is known age misclassification for older generations, especially among blacks, that is thought to lead to this apparent 'cross-over'. See",
-              " <a href='https://www.ncbi.nlm.nih.gov/books/NBK109843/#ch2.r35'>here</a> for more information.<br/><br/>"
-              
-  ))
 })
 
 output$Alabama <- renderUI({
