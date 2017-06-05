@@ -109,7 +109,21 @@ BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
 
 
 
-ui1 <- fluidPage(theme = "cosmo-customized.css",
+ui1 <- fluidPage(    
+                  tags$head(HTML(
+                    "<script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                  
+                  ga('create', 'UA-100510105-1', 'auto');
+                  ga('send', 'pageview');
+                  </script>"
+                )),
+                
+theme = "cosmo-customized.css",
+
                  pageWithSidebar(
                  
                  #shinythemes::themeSelector(), 
@@ -999,7 +1013,9 @@ output$app_description <- renderUI({
               " found <a href='http://biorxiv.org/content/early/2017/05/25/140152'>here.</a><br/><br/>",
               "<b>Many thanks</b><br/> ...to the folks at RStudio for the creation and maintenance of ggplot2 and shiny, ",
               "our friends at Plotly, whose interactive plots are top-notch, and, Martyn ",
-              "Plummer, the R package maintainer for JAGS who also manages the JAGS forum on sourceforge. <br/><br/>"
+              "Plummer, the R package maintainer for JAGS who also manages the JAGS forum on sourceforge. <br/><br/>",
+              "<b>Contact Us</b><br/>",
+              "Please contact corinne [dot] riddell [at] mail.mcgill.ca for more information or connect on twitter @datavisitor."
               
   ))
 })
