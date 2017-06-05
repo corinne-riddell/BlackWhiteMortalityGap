@@ -1,5 +1,5 @@
 
-load('~/SH_HA_data.Rdata')
+load('~/SH_HA_data.Rdata') #this Rdata file was created in the "Prep SH HA data for our analysis.R" file
 source("~/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_src.R")
 
 nrows <- 3*2*length(levels(dtotal$state))

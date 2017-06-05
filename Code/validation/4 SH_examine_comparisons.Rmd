@@ -1,7 +1,10 @@
 ---
 title: "Compare findings"
-output: github_document
+output: html_document
 ---
+
+In this file we compare the LE estimates for Sam's Health Affairs paper to estimates we get from running our model on his data. 
+Thus the goal of this exercise is to answer the questions "are the models doing the same thing?"
 
 ```{r load_libraries}
 library(dplyr)
@@ -10,8 +13,11 @@ library(ggplot2)
 ```
 
 ```{r read_data}
-le.table <- read.csv("~/BlackWhiteMortalityGap/Code/3_validation/le_table.csv", header = T)
-SH.dat <- read.csv("~/SH_HA_supp_app_data.csv", header = T)
+le.table <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/validation/le_table.csv", header = T) 
+#le_table was created in the SH_comparison.R file
+
+SH.dat <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/SH_HA_supp_app_data.csv",
+                   header = T) #supplementary appendix data -- so Sam's original estimates
 ```
 
 ```{r tidy_data}
@@ -36,7 +42,7 @@ compare.le <- compare.le %>% mutate(le.gap.width.original = le.gap.ucl.original 
                                                                      "New Hampshire","Utah", "New Mexico")
                                     )
 
-write.csv(compare.le, "~/BlackWhiteMortalityGap/Code/3_validation/compare_LE.csv")
+write.csv(compare.le, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/validation/compare_LE.csv")
 ```
 
 **Figure 1: Comparison of life expectancy between the original model and our model**
