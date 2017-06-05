@@ -7,94 +7,57 @@ output: github_document
 library(dplyr)
 library(stringr)
 library(ggplot2)
-library(plotly)
 ```
 
 ```{r read_data}
-BlackWhite_results <- read.csv("~/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
-subset <- filter(BlackWhite_results, year %in% c(1990, 2009))
-subset <- subset %>% select(state, year, sex, Census_Division, Census_Region, stabbrs, starts_with("LE"))
-
-SH.dat <- read.csv("~/Documents/repos/BlackWhiteMortalityGap/Data/SH_HA_supp_app_data.csv", header = T)
+le.table <- read.csv("~/BlackWhiteMortalityGap/Code/3_validation/le_table.csv", header = T)
+SH.dat <- read.csv("~/SH_HA_supp_app_data.csv", header = T)
 ```
 
 ```{r tidy_data}
 SH.dat <- SH.dat %>% rename(state = State, 
-                            le.black.SH = le.black,
-                            le.white.SH = le.white,
-                            le.gap.SH = le.gap, 
-                            le.gap.ci.SH = le.gap.ci) %>%
-  filter(year %in% c(1990, 2009))
+                            le.black.original = le.black,
+                            le.white.original = le.white,
+                            le.gap.original = le.gap, 
+                            le.gap.ci.original = le.gap.ci)
 
-compare.le <- merge(subset, SH.dat, by = c("state", "sex", "year"))
+compare.le <- merge(le.table, SH.dat, by = c("state", "sex", "year"))
 
-test <- strsplit(stringr::str_sub(compare.le$le.gap.ci.SH, 2, -2), ",")
+test <- strsplit(stringr::str_sub(compare.le$le.gap.ci.original, 2, -2), ",")
 test2 <- matrix(unlist(test), ncol=2, byrow=TRUE)
 
-compare.le$le.gap.lcl.SH <- as.numeric(test2[ , 1])
-compare.le$le.gap.ucl.SH <- as.numeric(test2[ , 2])
+compare.le$le.gap.lcl.original <- as.numeric(test2[ , 1])
+compare.le$le.gap.ucl.original <- as.numeric(test2[ , 2])
 rm(test, test2)
 
-compare.le <- compare.le %>% mutate(le.gap.width.SH = le.gap.ucl.SH - le.gap.lcl.SH,
-                                    le.gap.width = LE_wbgap_ucl - LE_wbgap_lcl,
+compare.le <- compare.le %>% mutate(le.gap.width.original = le.gap.ucl.original - le.gap.lcl.original,
+                                    le.gap.width = le.gap.ucl - le.gap.lcl,
                                     small.black.state = state %in% c("Hawaii", "Alaska", "Maine", 
                                                                      "New Hampshire","Utah", "New Mexico")
                                     )
+
+write.csv(compare.le, "~/BlackWhiteMortalityGap/Code/3_validation/compare_LE.csv")
 ```
 
-**Figure 1: Comparison of life expectancy between the original model and our model for whites**
+**Figure 1: Comparison of life expectancy between the original model and our model**
 
 ```{r}
-ggplotly(ggplot(compare.le, 
-       aes(x = le.white.SH, y = LE_white_mean)) +
-  geom_point(aes(col = state)) +
-  facet_grid(year ~ sex ) +
+ggplot(subset(compare.le, state!= "Wyoming" & year != "difference"), 
+       aes(x = le.white.original, y = le.white)) +
+  geom_point(aes(x = le.black.original, y = le.black, col = "blacks")) + 
+  geom_point(aes(col = "whites")) +
+  facet_grid(year~sex ) +
   geom_abline(intercept = 0, slope = 1) + 
-  ylab("Life expectancy mean (years)") +
-  xlab("Life expectancy estimate from Health Affairs paper (years)"))
+  ylab("Life expectancy (years)") +
+  xlab("Original life expectancy (years)") +
+  geom_text(data = subset(compare.le, small.black.state == T & year != "difference"),
+            aes(x = le.black.original, y = le.black, label = state), size = 2.5)
 ```
 
-**Figure 2: Comparison of life expectancy between the original model and our model for blacks**
-
-```{r}
-ggplotly(ggplot(compare.le, 
-       aes(x = le.black.SH, y = LE_black_mean)) +
-  geom_point(aes(col = state)) +
-  facet_grid(year ~ sex ) +
-  geom_abline(intercept = 0, slope = 1) + 
-  ylab("Life expectancy mean (years)") +
-  xlab("Life expectancy estimate from Health Affairs paper (years)"))
-```
-
-**Figure 3: Comparison of life expectancy gap between the original model and our model**
-
-```{r}
-ggplotly(ggplot(compare.le, 
-       aes(x = le.gap.SH, y = LE_wbgap_mean)) +
-  geom_point(aes(col = state)) +
-  facet_grid(year ~ sex ) +
-  geom_abline(intercept = 0, slope = 1) + 
-  ylab("Life expectancy gap (years)") +
-  xlab("Life expectancy gap from Health Affairs paper (years)")) 
-```
-
-**Figure 4: Comparison of CI width for LE gap between the original model and our model**
-
-```{r}
-ggplotly(ggplot(compare.le, 
-       aes(x = le.gap.width.SH, y = le.gap.width)) +
-  geom_point(aes(col = state)) +
-  facet_grid(year ~ sex) +
-  geom_abline(intercept = 0, slope = 1) + 
-  ylab("Width of CI for LE gap") +
-  xlab("Original width of CI for LE gap") )
-```
-
-**OLD**
 **Figure 2: Comparison of life expectancy change over time (1990 vs. 2009) between the original model and our model**
 
 ```{r}
-ggplot(compare.le, 
+ggplot(subset(compare.le, state!= "Wyoming" & year == "difference"), 
        aes(x = le.white.original, y = le.white)) +
   geom_point(aes(x = le.black.original, y = le.black, col = "blacks")) + 
   geom_point(aes(col = "whites")) +
@@ -105,6 +68,20 @@ ggplot(compare.le,
   geom_text(data = subset(compare.le, small.black.state == T & year == "difference"),
             aes(x = le.black.original, y = le.black, label = state), size = 2.5)
 
+```
+
+**Figure 3: Comparison of life expectancy gap between the original model and our model**
+
+```{r}
+ggplot(subset(compare.le, state!= "Wyoming" & year != "difference"), 
+       aes(x = le.gap.original, y = le.gap)) +
+  geom_point() +
+  facet_grid(year~sex ) +
+  geom_abline(intercept = 0, slope = 1) + 
+  ylab("Life expectancy gap (years)") +
+  xlab("Original life expectancy gap (years)") +
+  geom_text(data = subset(compare.le, small.black.state == T & year != "difference"),
+            aes(x = le.gap.original, y = le.gap, label = state), size = 2.5)
 ```
 
 **Figure 4: Comparison of change over time (1990 vs. 2009) in the life expectancy gap between the original model and our model**
@@ -119,6 +96,20 @@ ggplot(subset(compare.le, state!= "Wyoming" & year == "difference"),
   xlab("Original change in life expectancy gap (years)") +
   geom_text(data = subset(compare.le, small.black.state == T & year == "difference"),
             aes(x = le.gap.original, y = le.gap, label = state), size = 2.5)
+```
+
+**Figure 5: Comparison of CI width for LE gap between the original model and our model**
+
+```{r}
+ggplot(subset(compare.le, state!= "Wyoming" & year != "difference"), 
+       aes(x = le.gap.width.original, y = le.gap.width)) +
+  geom_point() +
+  facet_grid(year~sex ) +
+  geom_abline(intercept = 0, slope = 1) + 
+  ylab("Width of CI for LE gap") +
+  xlab("Original width of CI for LE gap") +
+  geom_text(data = subset(compare.le, small.black.state == T & year != "difference"),
+            aes(x = le.gap.width.original, y = le.gap.width, label = state), size = 2.5)
 ```
 
 **Figure 6: Comparison of the change over time (1990 vs. 2009) in the CI width for LE gap between the original model and our model**
