@@ -1,3 +1,11 @@
+#In this file, we call the function to run the analysis on each state.
+
+#Originally, I ran the analysis in three separate tmux (terminal multiplex) windows, hence the three files for running the models.
+#This is a less sophisticated way of running the models in parallel, because when I tried to parallelize it within RStudio
+#it would take over the server and use all the cores, even when I told it to only use three.
+
+#NOTE: see the "NOTE" in 2_entire_analysis.R that specifies two lines of code within that file that you will need to change
+#to prevent errors!
 
 for(i in c(1:13)){
   
@@ -9,7 +17,7 @@ for(i in c(1:13)){
                        "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
                        "West Virginia", "Wisconsin") 
   
-  source("~/repos/BlackWhiteMortalityGap/Code/entire_analysis.R")
+  source("./Code/entire_analysis.R")
   system.time(entire.analysis(state_i = included.states[i], chosen.seed = 123))
   rm(list = ls(all = TRUE))
 }

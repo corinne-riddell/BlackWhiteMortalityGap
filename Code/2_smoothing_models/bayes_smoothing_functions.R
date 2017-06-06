@@ -1,7 +1,7 @@
 
 # User-defined subsets 
-subset_data = function(ds, state, sex, race) {
-  ds_sub = ds[ds$state==state & ds$sex==sex & ds$race==race, ]
+subset_data = function(ds, sex, race) {
+  ds_sub = ds[ds$sex==sex & ds$race==race, ]
   return(ds_sub)
 }
 
@@ -94,7 +94,7 @@ run_smoothing_model = function(data, chosen.seed) {
 }
 
 # Takes the jagsify_data output, the run_smoothing_model output, and the desired year as parameters
-# Outputs the original data, subset by sex, race, state, and year (not age or COD), with smoothed rates and smoothed/imputed deaths 
+# Outputs the original data, subset by sex, race, and year (not age or COD), with smoothed rates and smoothed/imputed deaths 
 clean_smoothing_results = function(data, jags_model) {
   ds_sub = data$sub
   cods = unique(ds_sub$COD)
@@ -129,8 +129,8 @@ clean_smoothing_results = function(data, jags_model) {
   return(merge(data$sub, smoothed.rates.1000, by = c("year.n", "age.n", "COD")))
 }
  
-run_analysis <- function(dataset, state1, sex1, race1, chosen.seed) {
-  ds_sub = subset_data(ds = dataset, state = state1, sex = sex1, race = race1)
+run_analysis <- function(dataset, sex1, race1, chosen.seed) {
+  ds_sub = subset_data(ds = dataset, sex = sex1, race = race1)
   data.jags = jagsify_data(ds_sub)
   jags.model = run_smoothing_model(data.jags, chosen.seed)  
   return(clean_smoothing_results(data = data.jags, jags_model = jags.model))

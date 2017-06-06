@@ -1,3 +1,9 @@
+#This function runs the bayesian time series model on a specified state. 
+#It then performed the demographic calculations for each of 1000 posterior samples and compiles the results as the mean and CI.
+#NOTE: If you run this code (using the "2*_run-models.R file ) change the path directories on lines #161 and #508 or comment 
+#out these lines. These lines save large Rdata files that are not in the repo. They contain intermediate results that aren't necessary
+#for the anaysis, which you may or may not want to save.
+
 entire.analysis <- function(state_i, chosen.seed) {
   
   #load libraries
@@ -20,22 +26,22 @@ entire.analysis <- function(state_i, chosen.seed) {
   library(parallel)
   
   #load user written functions
-  source("~/repos/BlackWhiteMortalityGap/Code/2_smoothing_models/bayes_smoothing_functions.R")
-  source('~/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R') 
+  source("./Code/2_smoothing_models/bayes_smoothing_functions.R")
+  source('./Code/life_expectancy_functions.R') 
   
-  #load tidied data
-  dat.clean = read.csv('~/dat_clean.csv') 
+  #load state-specific tidied data
+  dat.clean = read.csv(paste0('./Data/dat_clean_', state_i, ".csv")) 
   
   #load US standard population
-  std.pop <- read.csv("~/repos/BlackWhiteMortalityGap/Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
+  std.pop <- read.csv("./Data/US_Standard_Population_for_model.csv") %>% select(US_Standard_2000, age.weight, age_minbin)
   
   #fit models
-  #run time: 32 mins
+  #run time: 32 mins for one state
   #fit the bayesian models and put the 1000 posterior samples into a data frame
   for(sex_i in c("Male", "Female")){
     print(sex_i)
-    assign(paste0("r.White.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "White", chosen.seed))
-    assign(paste0("r.Black.", sex_i), run_analysis(dataset = dat.clean, state1 = state_i, sex1 = sex_i, race1 = "Black", chosen.seed))
+    assign(paste0("r.White.", sex_i), run_analysis(dataset = dat.clean, sex1 = sex_i, race1 = "White", chosen.seed))
+    assign(paste0("r.Black.", sex_i), run_analysis(dataset = dat.clean, sex1 = sex_i, race1 = "Black", chosen.seed))
   }
   
   r.White.Male$race <- "White"
@@ -134,7 +140,7 @@ entire.analysis <- function(state_i, chosen.seed) {
     rm(data_sub)
   }
   
-  #calculation the contour decomposition
+  #calculation the contour decomposition - this is not year implemented so it is commented out here.
   years <- c(1969, 1983, 1993, 2013)
   # counter <- 1
   # for(sex_i in c("Male", "Female")){
@@ -155,6 +161,8 @@ entire.analysis <- function(state_i, chosen.seed) {
   # }
   
   save(r.All, file = paste0("~/BWresults_2017/r_All_", state_i, "_", chosen.seed, ".Rdata")) 
+  #these Rdata files are not in the github repo because they're huge. You also don't need them to run downstream calculations.
+  
   levels.state.year.sex <- levels(droplevels(r.All$state.year.sex))
   rm(r.All)
   
@@ -499,12 +507,12 @@ entire.analysis <- function(state_i, chosen.seed) {
   
   #save_results
   save(mortality.rates, mortality.rates.wide, le.calculations, cod.marginal.male, cod.marginal.female, 
-       file = paste0("~/BWresults_2017/results_", state_i, "_", chosen.seed, ".Rdata")) 
-  write.csv(x = BlackWhite, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/BlackWhite_", state_i, "_", chosen.seed,".csv"))
-  write.csv(x = age.decomp.estimates, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/age_decomp_", state_i, "_", chosen.seed,".csv"))
-  write.csv(x = cod.marginal.estimates, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/cod_marginal_", state_i, "_", chosen.seed,".csv"))
-  write.csv(x = age.cod.estimates, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/age_cod_", state_i, "_", chosen.seed, ".csv"))
-  write.csv(x = mortality.rates.summary, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/mortality_rates_", state_i, "_", chosen.seed, ".csv"))
-  write.csv(x = mortality.rates.difference, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_", state_i, "_", chosen.seed, ".csv"))
-  write.csv(x = cod.marginal.summary, file = paste0("~/repos/BlackWhiteMortalityGap/Results2/cod_change_", state_i, "_", chosen.seed, ".csv"))
+       file = paste0("~/BWresults_2017/results_", state_i, "_", chosen.seed, ".Rdata")) #these Rdata files are not in the repo but the following .csv files are.
+  write.csv(x = BlackWhite, file = paste0("./Results2/BlackWhite_", state_i, "_", chosen.seed,".csv"))
+  write.csv(x = age.decomp.estimates, file = paste0("./Results2/age_decomp_", state_i, "_", chosen.seed,".csv"))
+  write.csv(x = cod.marginal.estimates, file = paste0("./Results2/cod_marginal_", state_i, "_", chosen.seed,".csv"))
+  write.csv(x = age.cod.estimates, file = paste0("./Results2/age_cod_", state_i, "_", chosen.seed, ".csv"))
+  write.csv(x = mortality.rates.summary, file = paste0("./Results2/mortality_rates_", state_i, "_", chosen.seed, ".csv"))
+  write.csv(x = mortality.rates.difference, file = paste0("./Results2/mortality_rates_diff_", state_i, "_", chosen.seed, ".csv"))
+  write.csv(x = cod.marginal.summary, file = paste0("./Results2/cod_change_", state_i, "_", chosen.seed, ".csv"))
 }

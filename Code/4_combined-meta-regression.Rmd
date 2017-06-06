@@ -7,33 +7,36 @@ output: html_document
 
 In this file, we perform the meta-regression. This regression brings together the mean estimates and their 95% CIs from the state-specific models to create a smoothed line of the general pattern (across the US) of the contribution of each cause of death to the black-white life expectancy gap, separately for males and females.
 
-In the paper, we perform a random-effects meta regression, that includes random intercepts for each state and plot the general pattern (when the RE estimate is equal to 0). In this file we also include code for the fixed effect estimation, for interested readers. This model directly estimates vertical shifts to the mean curve for each state, which may be of interest to some readers.
+In the working paper, we perform a random-effects meta regression, that includes random intercepts for each state and plot the general pattern (when the RE estimate is equal to 0). In this file we also include code for the fixed effect estimation, for interested readers. This model directly estimates vertical shifts to the mean curve for each state, which may be of interest.
 
 ```{r initialize, warning=F, message=F}
-library(lme4)
+library(lme4) #for random effects models
 library(splines)
 library(broom)
 library(tidyverse)
 
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("./Code/life_expectancy_functions.R")
 ```
 
 ```{r load-data}
-cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+cod_decomp_results <- read.csv("./Results2/cod_decomp_results.csv")
 cod_decomp_results$COD_cont_yrs_width <- cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl
 cod_decomp_results$COD_cont_yrs_SE <- (cod_decomp_results$COD_cont_yrs_ucl - cod_decomp_results$COD_cont_yrs_lcl)/3.92
 
-age_cod_results_female <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
-age_cod_results_male <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
+age_cod_results_female <- read.csv("./Results2/age_cod_results_female.csv")
+age_cod_results_male <- read.csv("./Results2/age_cod_results_male.csv")
 age_cod_results <- rbind(age_cod_results_female, age_cod_results_male)
 rm(age_cod_results_female, age_cod_results_male)
 
 age_cod_results$age_COD_cont_yrs_SE <- (age_cod_results$age_COD_cont_yrs_ucl - age_cod_results$age_COD_cont_yrs_lcl)/3.92
+
+#the following is for our sensitivity analysis when we look only at infants and consider only the cause that 
+#captures "all other causes" (since this is the most common cause for this age group).
 age_cod_results_infants_AOC <- subset(age_cod_results, age_minbin == 0 & COD == "All other causes")
 ```
 
 ```{r RE_meta_regression_of_cod_contribution, echo = F}
-#Random effects meta analysis (fixed effects for state)
+#Random effects meta analysis (random intercepts for state)
 
 #run 12 stratified models. bs() created the b-spline basis
 RE.models <- cod_decomp_results %>% 
@@ -99,6 +102,7 @@ cod_decomp_results <- cod_decomp_results %>%
   mutate(sum.residual = sum(abs(resid.FE)))
 ```
 
+
 ```{r RE_meta_regression_agecod_infants_only, echo = F}
 RE.models.infants <- age_cod_results_infants_AOC %>% 
   group_by(sex) %>%
@@ -133,8 +137,8 @@ age_cod_results_infants_AOC <- age_cod_results_infants_AOC %>% rename(fitted.RE 
 ```
 
 ```{r save_data}
-write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+write.csv(cod_decomp_results, "./Results2/cod_decomp_results.csv")
 
-write.csv(age_cod_results_infants_AOC, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_infants_AOC.csv")
+write.csv(age_cod_results_infants_AOC, "./Results2/age_cod_results_infants_AOC.csv")
 ```
 
