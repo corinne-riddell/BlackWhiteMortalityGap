@@ -3,7 +3,7 @@
 
 This repository contains the data and code used to conduct an in-depth investigation of trends in the black-white life expectancy gap by US state. All the code needed to conduct the analysis described in our [working paper](http://biorxiv.org/content/early/2017/05/25/140152) can be found in this repository. A full set of our results are publicly available online in an interactive [web application](https://corinne-riddell.shinyapps.io/black-white-life-expectancy/). 
 
-###Significance
+### Significance
 
 Racial differences have been a fixture of American life for centuries, but their continued evolution is a topic of great relevance for public policy and social justice. States have fared differently in eliminating the black-white life expectancy gap. Using vital statistics and census data, we describe how six major causes of death contributed to the life expectancy gap between blacks and whites from 1969 to 2013. We find that states diverged in their cause-of-death specific contributions to the life expectancy gap in ways that either resulted in the near or total elimination of the gap, or alternatively its exacerbation. This analysis provides a foundation for future work to investigate state characteristics that may result in inequalities in mortality by race.
 
