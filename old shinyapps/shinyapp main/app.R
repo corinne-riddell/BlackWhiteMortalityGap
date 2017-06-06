@@ -4,7 +4,7 @@ library(viridis)
 library(scales)
 library(shinythemes)
 library(dplyr)
-load(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
+load(file = "/Volumes/Untitled/Dropbox/blackwhitegap/Data/main_datasets.Rdata")
 source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
 
 ui1 <- fluidPage(theme = shinytheme("cosmo"),
