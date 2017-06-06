@@ -76,15 +76,15 @@ library(dplyr)
 library(purrr)
 library(stringr)
 library(DT)
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("./Code/life_expectancy_functions.R")
 ```
 
 ```{r read_data, echo=F}
-age_cod_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results.csv")
-age_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
-cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
-cod_change_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_change_results.csv")
-BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
+age_cod_results <- read.csv("./Results/age_cod_results.csv")
+age_decomp_results <- read.csv("./Results/age_decomp_results.csv")
+cod_decomp_results <- read.csv("./Results/cod_decomp_results.csv")
+cod_change_results <- read.csv("./Results/cod_change_results.csv")
+BlackWhite_results <- read.csv("./Results/BlackWhite_results.csv")
 
 age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
 cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
@@ -604,11 +604,11 @@ To create.
 
 **S1 Fig: Difference in life expectancy between black in white males, United States, 1969-2013**
 
-![Difference in life expectancy between black and white males, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Men.bmp)
+![Difference in life expectancy between black and white males, United States, 1969-2013.](./Manuscript/export.graph.Men.bmp)
 
 **S2 Fig: Difference in life expectancy between black in white females, United States, 1969-2013**
 
-![Difference in life expectancy between black and white females, United States, 1969-2013.](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript/export.graph.Women.bmp)
+![Difference in life expectancy between black and white females, United States, 1969-2013.](./Manuscript/export.graph.Women.bmp)
 
 **S3-S14 Fig: Trends in age-standardized mortality by state, race, and sex, 1969-2013 (currently included in other file)**
 

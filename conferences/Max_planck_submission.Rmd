@@ -23,14 +23,14 @@ library(stringr)
 library(reshape2)
 library(grid)
 library(gridExtra)
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("./Code/life_expectancy_functions.R")
 ```
 
 ```{r read_data, echo=F}
-age_cod_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_cod_results.csv")
-age_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/age_decomp_results.csv")
-cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/cod_decomp_results.csv")
-BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/BlackWhite_results.csv")
+age_cod_results <- read.csv("./Results/age_cod_results.csv")
+age_decomp_results <- read.csv("./Results/age_decomp_results.csv")
+cod_decomp_results <- read.csv("./Results/cod_decomp_results.csv")
+BlackWhite_results <- read.csv("./Results/BlackWhite_results.csv")
 
 COD.levels <- c("Cardiovascular", "Cancers", "Communicable", 
                 "Non-communicable", "Injuries", "All other causes")

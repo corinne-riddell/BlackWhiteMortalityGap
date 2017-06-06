@@ -34,8 +34,8 @@ library(grid)
 library(gridExtra)
 library(knitr)
 
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
-BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
+source("./Code/life_expectancy_functions.R")
+BlackWhite_results <- read.csv("./Results2/BlackWhite_results.csv")
 BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
 
 ```
@@ -43,9 +43,9 @@ BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
 ## Thank you
 
 ```{r, echo=F}
-img1 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/k_morrison.png")), interpolate = FALSE)
-img2 <-  rasterGrob(as.raster(readPNG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/s_harper2.png")), interpolate = FALSE)
-img3 <-  rasterGrob(as.raster(readJPEG("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/j_kaufman.jpg")), interpolate = FALSE)
+img1 <-  rasterGrob(as.raster(readPNG("./conferences/images/k_morrison.png")), interpolate = FALSE)
+img2 <-  rasterGrob(as.raster(readPNG("./conferences/images/s_harper2.png")), interpolate = FALSE)
+img3 <-  rasterGrob(as.raster(readJPEG("./conferences/images/j_kaufman.jpg")), interpolate = FALSE)
 grid.arrange(img3,
              img1,
              img2,
@@ -57,23 +57,23 @@ Jay Kaufman, Kathryn Morrison, and Sam Harper
 ----
 
 ```{r, echo = F, out.width = 500}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/Harper_HA_title.png")
+include_graphics(path = "./conferences/images/Harper_HA_title.png")
 ```
 
 ```{r, echo=F, out.width = 750}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/Harper_HA_fig1.png")
+include_graphics(path = "./conferences/images/Harper_HA_fig1.png")
 ```
 
 ----
 
 ```{r, echo = F, out.width = 250}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/Harper_HA_quote.png")
+include_graphics(path = "./conferences/images/Harper_HA_quote.png")
 ```
 
 ## The data
 
 ```{r, echo = F, out.width = 400}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/alabama.data.ex.png")
+include_graphics(path = "./conferences/images/alabama.data.ex.png")
 ```
 
 - <b class = "greentext">40</b> "states": 39 states + DC
@@ -104,19 +104,19 @@ include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortali
 ## The app
 
 ```{r, echo = F, out.width = 800}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/app_ex1.gif")
+include_graphics(path = "./conferences/images/app_ex1.gif")
 ```
 
 ## The app
 
 ```{r, echo = F, out.width = 800}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/app_ex2.gif")
+include_graphics(path = "./conferences/images/app_ex2.gif")
 ```
 
 ## The app
 
 ```{r, echo = F, out.width = 800}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/app_ex3.gif")
+include_graphics(path = "./conferences/images/app_ex3.gif")
 ```
 
 ## Male black-white life expectancy gap
@@ -225,26 +225,26 @@ gg.p3
 
 ##CVD in men
 ```{r, echo = F, out.width = 675}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/CVD_men.png")
+include_graphics(path = "./conferences/images/CVD_men.png")
 ```
 
 ##Cancer in women
 ```{r, echo = F, out.width = 675}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/Cancer_women.png")
+include_graphics(path = "./conferences/images/Cancer_women.png")
 ```
 
 ##Injury in women
 ```{r, echo = F, out.width = 675}
-include_graphics(path = "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/conferences/images/Injury_women.png")
+include_graphics(path = "./conferences/images/Injury_women.png")
 ```
 
 #A tale of two states
 
 ##Tennessee
 ```{r, echo = F, out.height = 600, out.width = 800}
-age_cod_results_female <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
+age_cod_results_female <- read.csv("./Results2/age_cod_results_female.csv")
 
-age_cod_results_male <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
+age_cod_results_male <- read.csv("./Results2/age_cod_results_male.csv")
 
 age_cod_results <- rbind(age_cod_results_female, age_cod_results_male)
 rm(age_cod_results_female, age_cod_results_male)

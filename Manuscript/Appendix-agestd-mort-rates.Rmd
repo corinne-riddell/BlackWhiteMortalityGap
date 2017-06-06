@@ -19,10 +19,10 @@ library(grid)
 library(gridExtra)
 library(plotly)
 library(forcats)
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("./Code/life_expectancy_functions.R")
 
-mortality.rates <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_combined.csv")
-mortality.rates.diff <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results/mortality_rates_diff_combined.csv")
+mortality.rates <- read.csv("./Results/mortality_rates_combined.csv")
+mortality.rates.diff <- read.csv("./Results/mortality_rates_diff_combined.csv")
 
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) %>% rename(Race = race)
 mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) 

@@ -32,18 +32,18 @@ library(splines)
 library(broom)
 library(tidyverse)
 
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("./Code/life_expectancy_functions.R")
 ```
 
 ```{r load_data, echo=F}
-BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
+BlackWhite_results <- read.csv("./Results2/BlackWhite_results.csv")
 BlackWhite_results <- reorder.as.map(BlackWhite_results, "state", "stabbrs")
-cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
+cod_decomp_results <- read.csv("./Results2/cod_decomp_results.csv")
 cod_decomp_results <- reorder.as.map(cod_decomp_results, "state", "stabbrs")
 cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiovascular", "Cancers", "All other causes",
                                                                         "Communicable", "Non-communicable",  "Injuries"))
 
-age_cod_results_infants_AOC <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_infants_AOC.csv")
+age_cod_results_infants_AOC <- read.csv("./Results2/age_cod_results_infants_AOC.csv")
 age_cod_results_infants_AOC$stabbrs <- state.abb[match(age_cod_results_infants_AOC$state, state.name)]
 age_cod_results_infants_AOC$stabbrs[age_cod_results_infants_AOC$state == "Washington DC"] <- "DC"
 age_cod_results_infants_AOC <- reorder.as.map(age_cod_results_infants_AOC, "state", "stabbrs")

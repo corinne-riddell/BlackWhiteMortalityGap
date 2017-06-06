@@ -5,6 +5,7 @@ date: "February 7, 2017"
 output: html_document
 ---
 
+This is old code. It's left here in case I want to make any of these figures again but will not run as-is since it doesn't contain a call to the data in this file.
 
 **Figure 5a: Trends in life expectancy for white males between 1969 and 2013 by US state**
 ```{r jitter, echo=F}

@@ -1,9 +1,4 @@
-
-#note to Corinne: The old versions of the commented packages are stores in ~/.../library/old_versions
-#these "old" versions were the ones I originally developed the app using but have since updated to the new versions
-#and all the new versions are at the main .libPaths() pathway.
-#if you have trouble viewing any of the plots print sessionInfo() -- it could be that packages loaded via namespace
-#are not updated (try updating DBI, jsonlite, and R6 to their latest versions.)
+#To run the app, you'll need the developer's version of ggplot2 that you can download on github.
 
 library(shiny) #, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD version: 0.14.1, NEW: 1.0.3
 library(ggplot2)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD: 2.2.1, NEW: ggplot2_2.2.1.9000 (install dev version using devtools::install_github)
