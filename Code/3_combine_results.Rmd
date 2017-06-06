@@ -5,12 +5,12 @@ output: html_document
 ---
 
 **Combine results across the sets**
-The analysis was run in 8 sets. In this file we combine the results and tidy the data for graph and presentation.
+The analysis was run in 3 sets of states. In this file we combine the results and tidy the data for graphing and presentation.
 
 ```{r initialize}
 library(stringr)
 library(dplyr)
-source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+source("./Code/life_expectancy_functions.R")
 ```
 
 ```{r}
@@ -21,35 +21,31 @@ included.states <- c("Alabama", "Arizona", "Arkansas", "California", "Colorado",
 "North Carolina", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island",
 "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
 "West Virginia", "Wisconsin") 
-
-completed.states <- included.states
 ```
 
 ```{r combine_results_seed123}
-age_cod_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_", completed.states[1], "_123.csv"))
-age_decomp_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_decomp_", completed.states[1], "_123.csv"))
-BlackWhite_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_", completed.states[1], "_123.csv"))
-cod_decomp_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_marginal_", completed.states[1], "_123.csv"))
-cod_change_results <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_change_", completed.states[1], "_123.csv"))
+age_cod_results <- read.csv(paste0("./Results2/age_cod_", included.states[1], "_123.csv"))
+age_decomp_results <- read.csv(paste0("./Results2/age_decomp_", included.states[1], "_123.csv"))
+BlackWhite_results <- read.csv(paste0("./Results2/BlackWhite_", included.states[1], "_123.csv"))
+cod_decomp_results <- read.csv(paste0("./Results2/cod_marginal_", included.states[1], "_123.csv"))
+cod_change_results <- read.csv(paste0("./Results2/cod_change_", included.states[1], "_123.csv"))
 
-mortality.rates <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_", completed.states[1], "_123.csv"))
-mortality.rates.diff <- read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_", completed.states[1], "_123.csv"))
+mortality.rates <- read.csv(paste0("./Results2/mortality_rates_", included.states[1], "_123.csv"))
+mortality.rates.diff <- read.csv(paste0("./Results2/mortality_rates_diff_", included.states[1], "_123.csv"))
 
-for(state_i in 2:length(completed.states)){
+for(state_i in 2:length(included.states)){
   
-    age_cod_results <- rbind(age_cod_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_", completed.states[state_i], "_123.csv")))
+    age_cod_results <- rbind(age_cod_results, read.csv(paste0("./Results2/age_cod_", included.states[state_i], "_123.csv")))
   
-    age_decomp_results <- rbind(age_decomp_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_decomp_", completed.states[state_i], "_123.csv")))
+    age_decomp_results <- rbind(age_decomp_results, read.csv(paste0("./Results2/age_decomp_", included.states[state_i], "_123.csv")))
 
-    BlackWhite_results <- rbind(BlackWhite_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_", completed.states[state_i], "_123.csv")))
+    BlackWhite_results <- rbind(BlackWhite_results, read.csv(paste0("./Results2/BlackWhite_", included.states[state_i], "_123.csv")))
   
-    cod_decomp_results <- rbind(cod_decomp_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_marginal_", completed.states[state_i], "_123.csv")))    
-
-    cod_change_results <- rbind(cod_change_results, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_change_", completed.states[state_i], "_123.csv")))    
-    
-  mortality.rates <- rbind(mortality.rates, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_", completed.states[state_i], "_123.csv")))
+    cod_decomp_results <- rbind(cod_decomp_results, read.csv(paste0("./Results2/cod_marginal_", included.states[state_i], "_123.csv")))    
+    cod_change_results <- rbind(cod_change_results, read.csv(paste0("./Results2/cod_change_", included.states[state_i], "_123.csv")))    
+    mortality.rates <- rbind(mortality.rates, read.csv(paste0("./Results2/mortality_rates_", included.states[state_i], "_123.csv")))
   
-    mortality.rates.diff <- rbind(mortality.rates.diff, read.csv(paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_", completed.states[state_i], "_123.csv")))
+    mortality.rates.diff <- rbind(mortality.rates.diff, read.csv(paste0("./Results2/mortality_rates_diff_", included.states[state_i], "_123.csv")))
 }
 
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division)))
@@ -70,19 +66,21 @@ age_cod_results$COD <- factor(age_cod_results$COD, levels = 1:6,
                                labels = c("All other causes", "Cancers", "Cardiovascular", "Communicable",
                                           "Injuries", "Non-communicable"))
 
-age_cod_results$age <- factor(age_cod_results$age_minbin, levels = c(0, 1, seq(5, 85, by = 5)),
-                                                                     labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
-                                                                                "15-19 years", "20-24 years", "25-29 years", "30-34 years",
-                                                                                "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
-                                                                                "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
-                                                                                "75-79 years", "80-84 years","85+ years"), ordered = T)
+age_cod_results$age <- factor(age_cod_results$age_minbin, 
+                              levels = c(0, 1, seq(5, 85, by = 5)),
+                              labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                         "15-19 years", "20-24 years", "25-29 years", "30-34 years",
+                                         "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
+                                         "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
+                                         "75-79 years", "80-84 years","85+ years"), ordered = T)
 
-age_decomp_results$age <- factor(age_decomp_results$age_minbin, levels = c(0, 1, seq(5, 85, by = 5)),
-                                                                     labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
-                                                                                "15-19 years", "20-24 years", "25-29 years", "30-34 years",
-                                                                                "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
-                                                                                "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
-                                                                                "75-79 years", "80-84 years","85+ years"), ordered = T)
+age_decomp_results$age <- factor(age_decomp_results$age_minbin, 
+                                 levels = c(0, 1, seq(5, 85, by = 5)),
+                                 labels = c("<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                            "15-19 years", "20-24 years", "25-29 years", "30-34 years",
+                                            "35-39 years", "40-44 years", "45-49 years", "50-54 years", 
+                                            "55-59 years", "60-64 years", "65-69 years", "70-74 years", 
+                                            "75-79 years", "80-84 years","85+ years"), ordered = T)
 ```
 
 ```{r add_Census_Variables, echo = F}
@@ -118,28 +116,6 @@ age_cod_results <- make_pretty_decomp_plot(decomp.table = age_cod_results, strat
                                            partition.bar.var = "COD", sign.var = "widened_gap",
                                            decomp.var = "age_COD_cont_yrs_mean", decomp.var.prop = "age_COD_prop_mean",
                                            type.of.data = "practice")
-
-#trying to get this to work 
-age_cod_results_test <- make_pretty_decomp_plot(decomp.table = subset(age_cod_results, stratum.id == "Alabama.1969.Female"), 
-                                                strat.var.1 = "stratum.id",
-                                           strat.var.2 = "state", strat.var.3 = "age_minbin",
-                                           partition.bar.var = "COD", sign.var = "widened_gap",
-                                           decomp.var = "age_COD_cont_yrs_mean", decomp.var.prop = "age_COD_cont_prop_mean",
-                                           type.of.data = "results")
-
-ggplot(data = age_cod_results_test, aes(y = age, x = start)) + geom_bar(fill = COD)
-
-age_cod_results_test$age.n <- as.numeric(age_cod_results_test$age) #need to fix the 5 year old when convert to nummeric
-    ggplotly(ggplot(age_cod_results_test,
-                    aes(y = age.n, x = start)) + 
-               geom_rect(aes(xmin = start, xmax = finish, ymin = age.n - 0.45, ymax = age.n + 0.45, fill = COD), col = "white") +
-               #xlab(paste0("Contribution to life expectancy gap ", xaxis.title())) +
-               #ylab("Age group\n") +
-               theme_minimal() +
-               geom_vline(xintercept = 0)  
-               #facet_wrap(~ year) +
-               #ggtitle(paste0(input$selected_sex, "s in ", input$state)) 
-             ) 
 ```
 
 ```{r split-age-cod-data-for-save}
@@ -148,14 +124,13 @@ age_cod_results_male <- age_cod_results %>% filter(sex == "Male")
 ```
 
 ```{r save_combined_datasets, echo = F}
-write.csv(age_cod_results_female, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
-write.csv(age_cod_results_male, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
-write.csv(age_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_decomp_results.csv")
-write.csv(cod_decomp_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results.csv")
-write.csv(BlackWhite_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
-write.csv(cod_change_results, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_change_results.csv")
-
-write.csv(mortality.rates, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_combined.csv")
-write.csv(mortality.rates.diff, "/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/mortality_rates_diff_combined.csv")
+write.csv(age_cod_results_female, "./Results2/age_cod_results_female.csv")
+write.csv(age_cod_results_male, "./Results2/age_cod_results_male.csv")
+write.csv(age_decomp_results, "./Results2/age_decomp_results.csv")
+write.csv(cod_decomp_results, "./Results2/cod_decomp_results.csv")
+write.csv(BlackWhite_results, "./Results2/BlackWhite_results.csv")
+write.csv(cod_change_results, "./Results2/cod_change_results.csv")
+write.csv(mortality.rates, "./Results2/mortality_rates_combined.csv")
+write.csv(mortality.rates.diff, "./Results2/mortality_rates_diff_combined.csv")
 ```
 

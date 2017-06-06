@@ -13,7 +13,7 @@ library(tidyverse)
 The original dataset was collected by Sam using software from the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (known as the SEER*Stat Software) to access the National Vital Statistics System that is maintained by the National Center for Health Statistics.
 
 ```{r read_raw_data}
-dat <- read.table("/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/deaths-cause-6913.txt", header = F,sep="\t")
+dat <- read.table("./Data/deaths-cause-6913.txt", header = F, sep="\t")
 names(dat) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
 names(dat) <- c("state.n", "age.n", "sex.n", "race.n", "COD.n", "year.0", "crude.rate", "deaths", "population") 
 # names and order of variables in the dataset are noted in the .dic dictionary file found in the same dir as the dataset.
@@ -201,9 +201,7 @@ dat.aggregated <- dat.aggregated %>% arrange(state, year.n, race, sex, age_minbi
 ```
 
 ```{r write_data_to_csvs}
-#save.image(file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/Sep6_BWgap.Rdata")
-write_csv(dat.clean, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_clean.csv", col_names = T)
-write_csv(dat.aggregated, path = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/dat_aggregated.csv", col_names = T)
+write_csv(dat.aggregated, path = "./dat_aggregated.csv", col_names = T)
 
 excluded.states <- c("Alaska", "Hawaii", "Idaho", "Maine", "Montana", 
                      "New Hampshire", "North Dakota", "South Dakota", "Utah", "Vermont", "Wyoming")
@@ -213,18 +211,11 @@ included.states <- setdiff(unique(levels(dat.clean$state)), excluded.states)
 for(i in 1:length(included.states)) { 
   name = paste0('dat_clean_', included.states[i], '.csv')
   ds_temp = dat.clean[dat.clean$state == included.states[i], ]
-  write.csv(ds_temp, file = paste0("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/", name))
+  write.csv(ds_temp, file = paste0("./Data/", name))
 }
 rm(ds_temp)
 ```
 
-```{r save_specified_files}
-# save(dat.clean, dat2, BlackWhite, BlackWhiteSmooth, paired.ids, list.age.decomp.tables, list.cod.decomp.tables,
-#      list.age.decomp.tables5, list.cod.decomp.tables5, list.age.decomp.tables9, list.cod.decomp.tables9,
-#      list.age.decomp.tables.smoothed, list.cod.decomp.tables.smoothed, list.cod.marginal.tables.smoothed,
-#      non.zero.stratums, non.zero.stratums.smoothed, cod.contributions,
-#      file = "/Users/corinneriddell/Dropbox/BlackWhiteGap/Data/main_datasets.Rdata")
-```
 
 
 

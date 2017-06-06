@@ -9,7 +9,7 @@ for(i in c(28:40)){
                        "South Carolina",  "Tennessee", "Texas", "Virginia", "Washington", "Washington DC",
                        "West Virginia", "Wisconsin") 
   
-  source("~/repos/BlackWhiteMortalityGap/Code/entire_analysis.R")
+  source("./Code/entire_analysis.R")
   system.time(entire.analysis(state_i = included.states[i], chosen.seed = 123))
   rm(list = ls(all = TRUE))
 }

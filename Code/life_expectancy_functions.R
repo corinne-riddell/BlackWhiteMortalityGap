@@ -1,6 +1,5 @@
 #dataset needs to be in order of age
-#none of the population.counts can equal 0. If there are rows with population counts of 0 then first need 
-#to run the collapse age brackets function.
+#none of the population.counts can equal 0.
 
 #change names to something like col.name.death.counts or death.counts.in.data
 
@@ -43,9 +42,6 @@ life.table <- function(data, sortable.age, num.ages.in.group, death.counts, popu
     return(data[, c("sortable.age", "num.ages.in.group", "death.counts", "population.counts",
                     "R_x", "a_x", "q_x", "p_x", "l_x", "d_x", "L_x", "cumsum", "l.cumsum", "T_x", "e_x")])
   }
-  
-  
-  
 } 
 
 #takes the life table output from the first function -- need two life tables to perform the comparison
