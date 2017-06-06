@@ -25,4 +25,4 @@ The code for the web application is contained in the app.R file found in the shi
 
 The preprint is made available under a [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) International license.
 
-The code has its own DOI that can be used to link to, and cite this work: (image here).
+The code has its own DOI that can be used to link to, and cite this work: [![DOI](https://zenodo.org/badge/68300074.svg)](https://zenodo.org/badge/latestdoi/68300074).
