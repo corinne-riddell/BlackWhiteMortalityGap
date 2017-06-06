@@ -14,9 +14,9 @@ The original dataset was collected by Sam using software from the National Cance
 
 ```{r read_raw_data}
 dat <- read.table("./Data/deaths-cause-6913.txt", header = F, sep="\t")
-names(dat) <- c("State", "Age", "Sex", "Race", "COD", "Year", "Crude_Rate", "Count", "Population")
+#see ./Data/deaths-cause-6913.dic for the data dictionary.
+
 names(dat) <- c("state.n", "age.n", "sex.n", "race.n", "COD.n", "year.0", "crude.rate", "deaths", "population") 
-# names and order of variables in the dataset are noted in the .dic dictionary file found in the same dir as the dataset.
 ```
 
 ```{r recode_variables}
@@ -60,7 +60,6 @@ head(dat)
 
 dat$stabbrs <- state.abb[match(dat$state, state.name)]
 unique(dat$state[is.na(dat$stabbrs)==T]) #Washington DC not defined
-
 dat$stabbrs[dat$state == "Washington DC"] <- "DC"
 
 dat$stabbrs <- factor(dat$stabbrs)
