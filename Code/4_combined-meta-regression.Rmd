@@ -41,7 +41,7 @@ age_cod_results_infants_AOC <- subset(age_cod_results, age_minbin == 0 & COD == 
 #run 12 stratified models. bs() created the b-spline basis
 RE.models <- cod_decomp_results %>% 
   group_by(COD, sex) %>%
-  do(fit = lmer(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + (1|state),
+  do(fit = lmer(COD_cont_yrs_mean ~ bs(year, degree = 3, knots = c(1980, 1991, 2002)) + (1|state),
               weights = 1/(COD_cont_yrs_SE)^2, 
               data = .)) 
 
@@ -81,7 +81,7 @@ cod_decomp_results <- cod_decomp_results %>% rename(fitted.RE = .fitted, fixed.f
 #run 12 stratified models. bs() created the b-spline basis
 models <- cod_decomp_results %>% 
   group_by(COD, sex) %>%
-  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + state,
+  do(fit = lm(COD_cont_yrs_mean ~ bs(year, degree = 3, knots = c(1980, 1991, 2002)) + state,
               weights = 1/(COD_cont_yrs_SE)^2, 
               data = .)) 
 
@@ -106,7 +106,7 @@ cod_decomp_results <- cod_decomp_results %>%
 ```{r RE_meta_regression_agecod_infants_only, echo = F}
 RE.models.infants <- age_cod_results_infants_AOC %>% 
   group_by(sex) %>%
-  do(fit = lmer(age_COD_cont_yrs_mean ~ bs(year, degree = 1, df = 5) + (1|state),
+  do(fit = lmer(age_COD_cont_yrs_mean ~ bs(year, degree = 3, df = 7) + (1|state),
               weights = 1/(age_COD_cont_yrs_SE)^2, 
               data = .)) 
 
@@ -118,7 +118,8 @@ RE.models.infants$RE.estimates <- purrr::map(RE.models.infants$fit, ~ ranef(.x))
 
 sex.infants <- c(rep("Female", 40), rep("Male", 40))
 COD.infants <- rep("All other causes", 80)
-RE.estimates.infants <- c(RE.models.infants$RE.estimates[[1]]$state$`(Intercept)`, RE.models.infants$RE.estimates[[2]]$state$`(Intercept)`)
+RE.estimates.infants <- c(RE.models.infants$RE.estimates[[1]]$state$`(Intercept)`, 
+                          RE.models.infants$RE.estimates[[2]]$state$`(Intercept)`)
 state.infants <- rep(levels(age_cod_results$state), 2)
 REs.infants <- data.frame(sex.infants, COD.infants, RE.estimates.infants, state.infants)
 REs.infants <- REs.infants %>% rename(sex = sex.infants, COD = COD.infants, RE.estimates = RE.estimates.infants, state = state.infants)
@@ -137,8 +138,8 @@ age_cod_results_infants_AOC <- age_cod_results_infants_AOC %>% rename(fitted.RE 
 ```
 
 ```{r save_data}
-write.csv(cod_decomp_results, "./Results2/cod_decomp_results.csv")
+write.csv(cod_decomp_results, "./Results2/cod_decomp_results_cubic.csv")
 
-write.csv(age_cod_results_infants_AOC, "./Results2/age_cod_results_infants_AOC.csv")
+write.csv(age_cod_results_infants_AOC, "./Results2/age_cod_results_infants_AOC_cubic.csv")
 ```
 

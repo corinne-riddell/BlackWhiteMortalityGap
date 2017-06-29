@@ -31,18 +31,18 @@ library(splines)
 library(broom)
 library(tidyverse)
 
-source("./Code/life_expectancy_functions.R")
+source("../Code/life_expectancy_functions.R")
 ```
 
 ```{r load_data, echo=F}
-BlackWhite_results <- read.csv("./Results2/BlackWhite_results.csv")
+BlackWhite_results <- read.csv("../Results2/BlackWhite_results.csv")
 BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
-cod_decomp_results <- read.csv("./Results2/cod_decomp_results.csv")
+cod_decomp_results <- read.csv("../Results2/cod_decomp_results_cubic.csv")
 cod_decomp_results <- reorder.as.map2(cod_decomp_results, "state", "stabbrs")
 cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiovascular", "Cancers", "All other causes",
                                                                         "Communicable", "Non-communicable",  "Injuries"))
 
-age_cod_results_infants_AOC <- read.csv("./Results2/age_cod_results_infants_AOC.csv")
+age_cod_results_infants_AOC <- read.csv("../Results2/age_cod_results_infants_AOC_cubic.csv")
 age_cod_results_infants_AOC$stabbrs <- state.abb[match(age_cod_results_infants_AOC$state, state.name)]
 age_cod_results_infants_AOC$stabbrs[age_cod_results_infants_AOC$state == "Washington DC"] <- "DC"
 age_cod_results_infants_AOC <- reorder.as.map2(age_cod_results_infants_AOC, "state", "stabbrs")
@@ -193,8 +193,8 @@ ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = ye
   xlab("Year (1969-2013)"))
 ```
 
-```{r plotting_resid_fx, echo = F}
-plot.resid.trends <- function(dataset, COD1, sex1) {
+```{r plotting_contributions_fx, echo = F}
+plot.contribution.trends <- function(dataset, COD1, sex1) {
   subset.data <- subset(dataset, COD == COD1 & sex == sex1)
   subset.data$order <- reorder(subset.data$state, subset.data$sum.residual, first)
   
@@ -253,7 +253,7 @@ plot.resid.trends <- function(dataset, COD1, sex1) {
 ```{r create-the-resid-plots, echo = F, message = F}
 for(COD_i in levels(cod_decomp_results$COD)) {
   for(sex_i in levels(cod_decomp_results$sex)) {
-    assign(paste0(COD_i, ".", sex_i, ".plot"), plot.resid.trends(dataset = cod_decomp_results, 
+    assign(paste0(COD_i, ".", sex_i, ".plot"), plot.contribution.trends(dataset = cod_decomp_results, 
                                                                          COD1 = COD_i, sex1 = sex_i))
   }
 }
