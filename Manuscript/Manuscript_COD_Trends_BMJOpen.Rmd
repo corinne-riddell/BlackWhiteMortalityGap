@@ -49,7 +49,7 @@ age_cod_results_infants_AOC <- reorder.as.map2(age_cod_results_infants_AOC, "sta
 
 ```
 
-###Abstract
+###Abstract (check if 300 words or fewer)
 
 ```{r summarize_results_for_abstract, echo = F}
 cvd.male.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Male" & COD == "Cardiovascular" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
@@ -74,31 +74,38 @@ inj.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" 
 inj.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% select(fixed.from.RE) %>% round(1)
 ```
 
-Objectives: Our objective is to describe the pattern of contributions of six major causes of deaths to the sex-specific black-white life expectancy gap across states over the last half-century, and identify divergent states.
+Objective: To describe the pattern of contributions of six major causes of deaths to the gender-specific black-white life expectancy gap across states over the last half-century, and identify divergent states.
 
-Design: A repeated cross-sectional study of all deaths
+Design: A retrospective, repeated cross-sectional study of all deaths.
 
-Setting: 39 US States and the District of Columbia 
+Setting: 39 US States and the District of Columbia. 
 
 Participants: Using vital statistics and census data, we extracted the number of deaths and population sizes for the years 1969 to 2013, by state, gender, race, 19 age groups, and six major causes of death.
 
-Primary and Secondary outcome measures: We estimated the contribution (in years) that each of six major causes of death to the gap in life expectancy between black and white individuals.
+Primary outcome measure: We estimated trends in the gender-specific contribution of six major causes of death to the gap in life expectancy between black and whites and their 95% credible bands.
 
 Results: Although mortality from cardiovascular disease has decreased dramatically, its contribution to the life expectancy gap increased over time for men (from `r cvd.male.1969` to `r cvd.male.2013` years), but decreased for women (from `r cvd.female.1969` to `r formatC(as.numeric(cvd.female.2013), digits = 1)` years). The contribution of non-communicable diseases to the gap was stable over time for men (approximately `r ncd.male.average` years) but decreased for women (from `r ncd.female.1969` to `r ncd.female.2013` years), while cancers exhibited an inverted-U trend for men (peaking at `r can.male.max` years in 1988) and a stable contribution for women (approximately `r can.female.average` years). Both genders exhibited a decreased contribution from injuries (men: `r inj.male.1969` to `r inj.male.2013` years), that became negative for women (women: `r inj.female.1969` to `r inj.female.2013` years). Several states diverged from these general trends.
 
 Conclusions: Life expectancy for both races has improved substantially in the US. For men, much of this improvement was due to narrowing differences in injury-related mortality, but these contributions were rivalled by an increasing gap in CVD-related mortality. In women, a crossover in injury-related mortality led to a narrower gap, realized partially by increasing mortality among whites.
 
- 
-
-
-
- 
-
 ----
 
-###Significance
+###Strengths and limitations of this study
 
-Racial differences have been a fixture of American life for centuries, but their continued evolution is a topic of great relevance for public policy and social justice. States have fared differently in eliminating the black-white life expectancy gap. Using vital statistics and census data, we describe how six major causes of death contributed to the life expectancy gap between blacks and whites from 1969 to 2013. We find that states diverged in their cause-of-death specific contributions to the life expectancy gap in ways that either resulted in the near or total elimination of the gap, or alternatively its exacerbation. This analysis provides a foundation for future work to investigate state characteristics that may result in inequalities in mortality by race.
+- This study provides the foundation for future work in which the estimated trends for each state can be used to study the effects of state-level policy.
+
+OR
+
+- The estimated trends for each state are relatively stable compared to estimates from smaller units of analysis such as counties, and can be used to study the effects of state-level policy in subsequent work.
+
+- Examination of historical trends places the most recent differences in context, to disentangle whether the smallest state- and cause-specific contributions were historically small or underwent greater shifts over time compared to other states.
+
+- Due to data supression when death counts were small, we did not consider more specific causes of death such as homocide and drug overdose.
+
+- Migration between states and immigration to the US both affect state-level life expectancy and the black-white difference but were unmeasured.
+
+- We examined the concept of race (black or white), not ethnicity (i.e., Hispanic), since ethnicity was unmeasured in the data for the earliest years and both poorly and differentially measured by state for many years thereafter.
+
 
 ----
 
@@ -338,16 +345,6 @@ We also calculated state-level time trends in age-standardized cause-specific mo
 **Description of the trend in each cause of death's contribution to the gap and identification of divergent states**
 
 To describe the national trend in each causes' contribution to the life expectancy gap over time, we used random effects meta regression to model each state's mean contribution estimated from the previous step as a function of a state random effect and a linear spline for year (estimated using four internal knots). The model was inversely-weighted by the standard error of the mean estimate in each state-year. To identify states divergent from the national trend, we compared the state-specific trends estimated in the previous step to the national pattern estimated by setting the random effect to zero. 
-
-**Data Sharing**
-
-A replication data set including the raw data and statistical code to reproduce the manuscript is publicly available on github: https://github.com/corinne-riddell/BlackWhiteMortalityGap/.
-
-###Acknowledgements
-
-We extend our thanks to Dr. Richard Maclehose, who developed the initial version of the code to perform the Bayesian analysis as part of the research article “Trends in the Black-White Life Expectancy Gap Among Us States, 1990–2009”, by Harper S, MacLehose RF, and Kaufman JS. 
-
-Corinne Riddell is a post-doctoral researcher at McGill University, whose salary was supported by Dr. Kaufman's Canada Research Chair in Health Disparities. Kathryn Morrison is a post-doctoral researcher at McGill University. Sam Harper was supported by a Chercheur Boursier Junior 2 from the Fonds de la Recherche en Santé du Québec. Jay Kaufman was supported by a Canada Research Chair in Health Disparities. 
 
 **Figure 1: State-level trends in the black-white life expectancy gap in men, United States, 1969-2013**
 
@@ -757,4 +754,32 @@ Program: SEER*Stat software: release: version 8.3.2 [Internet]. Bethesda (MD): N
 33. Arriaga EE (1985) Measuring and explaining the change in life expectancies. *Demography* 21(1):83-96.
 
 34. National Cancer Institute. Surveillance, Epidemiology, and End Results Program: Standard Populations - 19 Age Groups [Internet]. [cited 2017 April 25]. Available from: https://seer.cancer.gov/stdpopulations/stdpop.19ages.html. 
+
+###Footnotes
+
+**Contributors**
+
+CAR: Extracted the data, performed data analysis, drafted the manuscript.
+
+KTM: Performed data analysis, reviewed the paper for intellectual content.
+
+SH: Initial conception for the study, interpreted the results, reviewed the paper for intellectual content.
+
+JK: Initial conception for the study, interpreted the results, drafted the manuscript, reviewed the paper for intellectual content.
+
+We extend our thanks to Dr. Richard Maclehose, who developed the initial version of the code to perform the Bayesian analysis as part of the research article “Trends in the Black-White Life Expectancy Gap Among Us States, 1990–2009”, by Harper S, MacLehose RF, and Kaufman JS.
+
+**Funding**
+
+This work was supported by Dr. Kaufman's Canada Research Chair in Health Disparities. Corinne Riddell is a post-doctoral researcher at McGill University, whose salary was supported by Dr. Kaufman's Canada Research Chair in Health Disparities. Kathryn Morrison is a post-doctoral researcher at McGill University. Sam Harper was supported by a Chercheur Boursier Junior 2 from the Fonds de la Recherche en Santé du Québec. Jay Kaufman was supported by a Canada Research Chair in Health Disparities. 
+
+**Competing Interests**
+
+All authors have completed the ICMJE uniform disclosure form at www.icmje.org/coi_disclosure.pdf and declare: no support from any organisation for the submitted work; no financial relationships with any organisations that might have an interest in the submitted work in the previous three years; no other relationships or activities that could appear to have influenced the submitted work.”
+ 
+**Data Sharing Statement**
+
+A replication data set including the raw data and statistical code to reproduce the analysis and manuscript is publicly available on Github: https://github.com/corinne-riddell/BlackWhiteMortalityGap/ (DOI: 10.5281/zenodo.803472).
+
+
 
