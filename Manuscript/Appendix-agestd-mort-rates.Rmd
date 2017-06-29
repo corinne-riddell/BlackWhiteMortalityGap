@@ -111,84 +111,84 @@ for(COD_i in levels(mortality.rates$COD)) {
 }
 ```
 
-**Figure S1: Age-standardized trends in CVD-related mortality in black and white men, United States, 1969-2013**
+**Figure S3: Age-standardized trends in CVD-related mortality in black and white men, United States, 1969-2013**
 
 ```{r print-em, fig.width = 9, fig.height = 7, echo = F}
 Cardiovascular.Male.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #Cardiovascular.Male.mort.plot[[4]]
 ```
 
-**Figure S2: Age-standardized trends in CVD-related mortality in black and white women, United States, 1969-2013**
+**Figure S4: Age-standardized trends in CVD-related mortality in black and white women, United States, 1969-2013**
 
 ```{r print-em-2, fig.width = 9, fig.height = 7, echo = F}
 Cardiovascular.Female.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #Cardiovascular.Female.mort.plot[[4]]
 ```
 
-**Figure S3: Age-standardized trends in cancer-related mortality in black and white men, United States, 1969-2013**
+**Figure S5: Age-standardized trends in cancer-related mortality in black and white men, United States, 1969-2013**
 
 ```{r print-em-3, fig.width = 9, fig.height = 7, echo = F}
 Cancers.Male.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #Cancers.Male.mort.plot[[4]]
 ```
 
-**Figure S4: Age-standardized trends in cancer-related mortality in black and white women, United States, 1969-2013**
+**Figure S6: Age-standardized trends in cancer-related mortality in black and white women, United States, 1969-2013**
 
 ```{r print-em-4, fig.width = 9, fig.height = 7, echo = F}
 Cancers.Female.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #Cancers.Female.mort.plot[[4]]
 ```
 
-**Figure S5: Age-standardized trends in mortality related to non-communicable disease in black and white men, United States, 1969-2013**
+**Figure S7: Age-standardized trends in mortality related to non-communicable disease in black and white men, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `Non-communicable.Male.mort.plot`[[3]] %>% layout(margin = list(b = 100, l = 70))
 #`Non-communicable.Male.mort.plot`[[4]]
 ```
 
-**Figure S6: Age-standardized trends in mortality related to non-communicable disease in black and white women, United States, 1969-2013**
+**Figure S8: Age-standardized trends in mortality related to non-communicable disease in black and white women, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `Non-communicable.Female.mort.plot`[[3]] %>% layout(margin = list(b = 100, l = 70))
 #`Non-communicable.Male.mort.plot`[[4]]
 ```
 
-**Figure S7: Age-standardized trends in injury-related mortality in black and white men, United States, 1969-2013**
+**Figure S9: Age-standardized trends in injury-related mortality in black and white men, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 Injuries.Male.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #Injuries.Male.mort.plot[[4]]
 ```
 
-**Figure S8: Age-standardized trends in injury-related mortality in black and white women, United States, 1969-2013**
+**Figure S10: Age-standardized trends in injury-related mortality in black and white women, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 Injuries.Female.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70)) 
 #Injuries.Female.mort.plot[[4]]
 ```
 
-**Figure S9: Age-standardized trends in mortality related to communicable disease in black and white men, United States, 1969-2013**
+**Figure S11: Age-standardized trends in mortality related to communicable disease in black and white men, United States, 1969-2013**
 
 ```{r print-3, fig.width = 9, fig.height = 7, echo = F}
 Communicable.Male.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #Communicable.Male.mort.plot[[4]]
 ```
 
-**Figure S10: Age-standardized trends in mortality related to communicable disease in black and white women, United States, 1969-2013**
+**Figure S12: Age-standardized trends in mortality related to communicable disease in black and white women, United States, 1969-2013**
 
 ```{r print-4, fig.width = 9, fig.height = 7, echo = F}
 Communicable.Female.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #Communicable.Female.mort.plot[[4]]
 ```
 
-**Figure S11: Age-standardized trends in mortality from all other causes in black and white men, United States, 1969-2013**
+**Figure S13: Age-standardized trends in mortality from all other causes in black and white men, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `All other causes.Male.mort.plot`[[3]] %>% layout(margin = list(b = 100, l = 70))
 #`All other causes.Male.mort.plot`[[4]]
 ```
 
-**Figure S12: Age-standardized trends in mortality from all other causes in black and white women, United States, 1969-2013**
+**Figure S14: Age-standardized trends in mortality from all other causes in black and white women, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `All other causes.Female.mort.plot`[[3]] %>% layout(margin = list(b = 100, l = 70)) 
