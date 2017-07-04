@@ -68,19 +68,19 @@ inj.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" 
 inj.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
 ```
 
-Objective: To describe the pattern of contributions of six major causes of deaths to the gender-specific black-white life expectancy gap across US states over the last half-century, and identify divergent states.
+**Objective:** To describe the pattern of contributions of six major causes of deaths to the gender-specific black-white life expectancy gap across US states over the last half-century, and identify divergent states.
 
-Design: A retrospective, repeated cross-sectional study of all deaths.
+**Design:** A retrospective, repeated cross-sectional study of all deaths.
 
-Setting: 39 US States and the District of Columbia. 
+**Setting:** 39 US States and the District of Columbia. 
 
-Participants: Using vital statistics and census data, we extracted the number of deaths and population sizes for the years 1969 to 2013, by state, gender, race, 19 age groups, and six major causes of death.
+**Participants:** Using vital statistics and census data, we extracted the number of deaths and population sizes for the years 1969 to 2013, by state, gender, race, 19 age groups, and six major causes of death.
 
-Primary outcome measure: We estimated trends in the gender-specific contribution of six major causes of death to the gap in life expectancy between black and whites and their 95% credible bands.
+**Primary outcome measure:** We estimated trends in the gender-specific contribution of six major causes of death to the gap in life expectancy between black and whites and their 95% credible bands.
 
-Results: Although mortality from cardiovascular disease has decreased dramatically, its contribution to the life expectancy gap increased over time for men (from `r sprintf("%.1f", cvd.male.1969)` to `r cvd.male.2013` years), but decreased for women (from `r cvd.female.1969` to `r sprintf("%.1f", cvd.female.2013)` years). The contribution of non-communicable diseases to the gap was stable over time for men (approximately `r ncd.male.average` years) but decreased for women (from `r ncd.female.1969` to `r ncd.female.2013` years), while cancers exhibited an inverted-U trend for men (peaking at `r can.male.max` years in the early 1990s) and a stable contribution for women (approximately `r can.female.average` years). Both genders exhibited a decreased contribution from injuries (men: `r inj.male.1969` to `r inj.male.2013` years), that became negative for women (women: `r inj.female.1969` to `r inj.female.2013` years). Several states diverged from these general trends.
+**Results:** Although mortality from cardiovascular disease has decreased dramatically, its contribution to the life expectancy gap increased over time for men (from `r sprintf("%.1f", cvd.male.1969)` to `r cvd.male.2013` years), but decreased for women (from `r cvd.female.1969` to `r sprintf("%.1f", cvd.female.2013)` years). The contribution of non-communicable diseases to the gap was stable over time for men (approximately `r ncd.male.average` years) but decreased for women (from `r ncd.female.1969` to `r ncd.female.2013` years), while cancers exhibited an inverted-U trend for men (peaking at `r can.male.max` years in the early 1990s) and a stable contribution for women (approximately `r can.female.average` years). Both genders exhibited a decreased contribution from injuries (men: `r inj.male.1969` to `r inj.male.2013` years), that became negative for women (women: `r inj.female.1969` to `r inj.female.2013` years). Several states diverged from these general trends.
 
-Conclusions: Life expectancy for blacks and whites has improved substantially in the US. For men, much of this improvement was due to narrowing differences in injury-related mortality, but these contributions were rivalled by an increasing gap in CVD-related mortality. In women, a crossover in injury-related mortality led to a narrower gap, realized partially by increasing mortality among whites.
+**Conclusions:** Life expectancy for blacks and whites has improved substantially in the US. For men, much of this improvement was due to narrowing differences in injury-related mortality, but these contributions were rivalled by an increasing gap in CVD-related mortality. In women, a crossover in injury-related mortality led to a narrower gap, realized partially by increasing mortality among whites.
 
 ----
 
@@ -93,7 +93,8 @@ Conclusions: Life expectancy for blacks and whites has improved substantially in
 - The outcome of life expectancy integrates mortality rates across the entire age distribution making it sensitive to changes in mortality at any age. 
 
 Need to remove one of these:
-- Due to data supression when death counts were small, we did not consider more specific causes of death such as homocide and drug overdose.
+
+- Due to data suppression when death counts were small, we did not consider more specific causes of death such as homicide and drug overdose.
 
 - Migration between states and immigration to the US both affect state-level life expectancy and the black-white difference but were unmeasured.
 
@@ -375,7 +376,8 @@ Cancers.Female.plot[[3]] +
            geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
            geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
            geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5)
+           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+           scale_y_continuous(breaks = seq(-0.5, 1.5, by = 0.5), labels = seq(-0.5, 1.5, by = 0.5))
 
 ```
 
@@ -384,11 +386,13 @@ Cancers.Female.plot[[3]] +
 ```{r print-plot-6, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
 `Non-communicable.Female.plot`[[3]] +
+           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
            geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
            geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
            geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
            geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5)
+           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+           scale_y_continuous(breaks = seq(-1, 1.5, by = 0.5), labels = seq(-1, 1.5, by = 0.5))
 
 ```
 
@@ -471,10 +475,12 @@ Cancers.Female.plot[[3]] +
 #ggplotly(`All other causes.Female.plot`[[3]])
 
 `All other causes.Female.plot`[[3]] +
-  geom_hline(aes(yintercept = -2), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5)
+  geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) 
 ```
 
 ###Bibliography
