@@ -1,9 +1,9 @@
 ---
-title: "Supplementary Appendix: Trends in age-standardized mortality rates for blacks and whites by cause and sex, 1969-2013, United States"
+title: "Supplementary Appendix: Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013"
 output: html_document
 ---
 
-This is the supplementary appendix for the paper, "Historical trends in the contribution of six major causes of death to the black-white life expectancy gap by US state."
+This is the supplementary appendix for the paper, "Trendfs in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
 
 Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Sam Harper, PhD; Jay S Kaufman, PhD
 
@@ -19,10 +19,13 @@ library(grid)
 library(gridExtra)
 library(plotly)
 library(forcats)
-source("./Code/life_expectancy_functions.R")
+source("../Code/life_expectancy_functions.R")
 
-mortality.rates <- read.csv("./Results/mortality_rates_combined.csv")
-mortality.rates.diff <- read.csv("./Results/mortality_rates_diff_combined.csv")
+BlackWhite_results <- read.csv("../Results2/BlackWhite_results.csv")
+BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
+
+mortality.rates <- read.csv("../Results2/mortality_rates_combined.csv")
+mortality.rates.diff <- read.csv("../Results2/mortality_rates_diff_combined.csv")
 
 mortality.rates <- mortality.rates %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) %>% rename(Race = race)
 mortality.rates.diff <- mortality.rates.diff %>% mutate(state.reorder = reorder(state, as.numeric(Census_Division))) 
@@ -35,6 +38,11 @@ mortality.rates.diff$stabbrs[mortality.rates.diff$state == "Washington DC"] <- "
 
 mortality.rates <- reorder.as.map2(mortality.rates, "state", "stabbrs")
 mortality.rates.diff <- reorder.as.map2(mortality.rates.diff, "state", "stabbrs")
+
+age_cod_results_infants_AOC <- read.csv("../Results2/age_cod_results_infants_AOC_cubic.csv")
+age_cod_results_infants_AOC$stabbrs <- state.abb[match(age_cod_results_infants_AOC$state, state.name)]
+age_cod_results_infants_AOC$stabbrs[age_cod_results_infants_AOC$state == "Washington DC"] <- "DC"
+age_cod_results_infants_AOC <- reorder.as.map2(age_cod_results_infants_AOC, "state", "stabbrs")
 ```
 
 ```{r plotting_fx, echo = F}
@@ -109,6 +117,87 @@ for(COD_i in levels(mortality.rates$COD)) {
                                                                          COD1 = COD_i, sex1 = sex_i))
   }
 }
+```
+
+**Table S1: Cause of death groupings**
+
+| Broad cause of death     | Included causes of death                                                     |
+|--------------------------|------------------------------------------------------------------------------|
+| Cancers                   | Lip; Tongue; Salivary gland; Floor of mouth; Gum and other mouth; Nasopharnyx; Tonsil; Oropharynx; Hypopharynx; Other oral cavity and pharynx; Esophagus; Stomach; Small intestine; Colon excluding rectum; Rectum and rectosigmoid junction; Anus, anal canal and anorectum; Liver; Intrahepatic bile duct; Gallbladder; Other biliary; Pancreas; Retroperitoneum; Peritoneum, Omentum and mesentery; Other digestive organs; Nose, nasal cavity and middle ear; Larynx; Lung and bronchus; Pleura; Trachea, Mediastinum and other respiratory organs; Bones and joints; Soft tissue including heart; Melanoma of the skin; Non-melanoma skin; Breast; Cervix uteri; Corpus uteri; Uterus, NOS; Ovary; Vagina; Vulva; Other female genital organs; Prostate; Testis; Penis; Other male genital organs; Urinary bladder; Kidney and renal pelvis; Ureter; Other urinary organs; Eye and orbit; Brain and other nervous system; Thyroid; Other endocrine including thymus; Hodkin lymphoma; Myeloma; Acute lymphocytic leukemia; Chronic lymphocytic leukemia; Other lymphocytic leukemia; Acute myeloid leukemia; Acute monocytic leukemia; Chronic myeloid leukemia; Other myeliod/monocytic leukemia; Other acute leukemia; Aleukemic, Subleukemic and NOS; Miscellaneous malignant cancer. |
+| Cardiovascular disease   | Diseases of heart; Hypertension without heart disease; Cerebrovascular diseases; Atherosclerosis; Aortic aneurysm and dissection; Other diseases of arteries, arterioles, capillaries. | 
+| Communicable disease     | Tuberculosis; Syphilis; HIV (1987+), Septicemia; Other infectious and parasitic diseases; Pneumonia and influenza |
+| Non-communicable disease | Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Syndrome and Nephrosis.  |
+| Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
+| All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
+
+**Figure S1: State-level trends in the black-white life expectancy gap in men, United States, 1969-2013**
+
+```{r life-expectancy-trends, echo=F}
+LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == "Male"), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  labs(fill = "Census Division") +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)")
+
+LE_trend_plot_females <- ggplot(data = subset(BlackWhite_results, sex == "Female"), aes(y = LE_wbgap_mean, x = year)) + 
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+  labs(fill = "Census Division") +
+  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)")
+```  
+
+```{r plot_LE_trends_males, echo=F, fig.height=10, fig.width=13}
+LE_trend_plot_males +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5)
+
+```
+
+**Figure S1 Legend:** The bands illustrate the 95% credible interval around the mean trend line. States with more imprecise estimates (often due to small black populations) have wider credible intervals. The estimated life expectancy gap in California in 1972 is much higher than in surrounding years. This anomaly is also illustrated in Figure 3, and is a product of an unexpectedly low CVD-related mortality rate among white males in California in 1972, likely denoting a coding error. Thus the data for this state and year should be interpreted with caution.
+
+**Figure S2: State-level trends in the black-white life expectancy gap in women, United States, 1969-2013**
+
+```{r plot_LE_trends_females, echo=F, fig.height=10, fig.width=13}
+LE_trend_plot_females +
+  geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5)
+
+```
+
+```{r plot_both, eval=F, echo=F}
+#Informative: male and females at the same time
+ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, group = sex, fill = Census_Division), alpha = 0.5) +
+  geom_line(aes(group = sex, col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)"))
 ```
 
 **Figure S3: Age-standardized trends in CVD-related mortality in black and white men, United States, 1969-2013**
@@ -195,4 +284,47 @@ Communicable.Female.mort.plot[[3]] %>% layout(margin = list(b = 100, l = 70))
 #`All other causes.Female.mort.plot`[[4]]
 ```
 
+
+
+**Figure S15: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in males younger than one, 1969-2013**
+
+```{r age-cod-trend-infant-males, fig.width = 12, fig.height = 10, echo = F}
+ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Male"), aes(y = age_COD_cont_yrs_mean, x = year)) +
+  geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+  geom_ribbon(aes(ymin = age_COD_cont_yrs_lcl, ymax = age_COD_cont_yrs_ucl), fill = "#abd9e9", alpha = 0.65) +
+  geom_line(col = "#08519c") +  
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (years)") +
+  xlab("Year (1969-2013)") +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
+```
+
+**Figure S16: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in females younger than one, 1969-2013**
+
+```{r age-cod-trend-infant-females, fig.width = 12, fig.height = 10, echo = F}
+ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Female"), aes(y = age_COD_cont_yrs_mean, x = year)) +
+  geom_line(aes(y = fitted.RE - RE.estimates), col = "#d7191c") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+  geom_ribbon(aes(ymin = age_COD_cont_yrs_lcl, ymax = age_COD_cont_yrs_ucl), fill = "#abd9e9", alpha = 0.65) +
+  geom_line(col = "#08519c") +  
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (years)") +
+  xlab("Year (1969-2013)") +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
+```
 

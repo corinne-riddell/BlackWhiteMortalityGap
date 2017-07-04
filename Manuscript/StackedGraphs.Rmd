@@ -1,0 +1,134 @@
+---
+title: "Alternative Visualizations for: Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013"
+author: "Corinne Riddell"
+date: "July 4, 2017"
+output: html_document
+---
+
+These stacked bar charts illustrate an alternative visualization of the figures in "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
+
+Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Sam Harper, PhD; Jay S Kaufman, PhD
+
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
+
+
+```{r stacked_trends_male, echo=F, fig.height=9, fig.width=11, warning=F, message=F}
+library(dplyr)
+library(purrr)
+library(ggplot2)
+library(stringr)
+library(reshape2)
+library(grid)
+library(gridExtra)
+library(plotly)
+library(forcats)
+source("../Code/life_expectancy_functions.R")
+
+cod_decomp_results <- read.csv("../Results2/cod_decomp_results_cubic.csv")
+cod_decomp_results <- reorder.as.map2(cod_decomp_results, "state", "stabbrs")
+cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiovascular", "Cancers", "All other causes",
+                                                                        "Communicable", "Non-communicable",  "Injuries"))
+
+BlackWhite_results <- read.csv("../Results2/BlackWhite_results.csv")
+BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
+```
+
+**Figure 1: Stacked contributions of major causes of death to the life expectancy gap among men by US state, 1969-2013**
+
+```{r, echo=F, fig.height=9, fig.width=11}
+plot1 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Male"), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Male"), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 14) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (1969-2013)"))
+
+for(i in 1:400){
+  if(plot1$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot1$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot1 %>% layout(margin = list(b = 100))
+```
+
+**Figure 2: Stacked contributions of major causes of death to the life expectancy gap among men by US state, 2009-2013**
+
+```{r, echo=F, fig.height=9, fig.width=11}
+plot2 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Male" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
+  geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Male" & year > 2009), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 14) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (2009-2013)"))
+
+for(i in 1:400){
+  if(plot2$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot2$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot2 %>% layout(margin = list(b = 100))
+```
+
+**Figure 3: Stacked contributions of major causes of death to the life expectancy gap among women by US state, 1969-2013**
+
+```{r stacked_trends_female, echo=F, fig.height=9, fig.width=11}
+plot3 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Female"), aes(x = year, y = COD_cont_yrs_mean)) + 
+                      geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Female"), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 14) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (1969-2013)"))
+
+for(i in 1:400){
+  if(plot3$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot3$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot3 %>% layout(margin = list(b = 100))
+```
+
+**Figure 4: Stacked contributions of major causes of death to the life expectancy gap among women by US state, 2009-2013**
+
+```{r, echo=F, fig.height=9, fig.width=11}
+plot4 <- ggplotly(ggplot(subset(cod_decomp_results, sex == "Female" & year > 2009), aes(x = year, y = COD_cont_yrs_mean)) + 
+                      geom_area(aes(fill = COD_rev), stat = "identity") +
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 2009)) + geom_hline(aes(yintercept = -0.4)) + #the axes
+  geom_line(data = subset(BlackWhite_results, sex == "Female" & year > 2009), aes(x = year, y = LE_wbgap_mean)) +
+  facet_wrap( ~ stabbrs.map.order, ncol = 11, drop = F) + 
+  theme_classic(base_size = 14) + 
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Contribution to the life expectancy gap (%)") +
+  xlab("Year (2009-2013)"))
+
+for(i in 1:400){
+  if(plot4$x$data[[i]]$line$color == "rgba(0,0,0,1)"){
+    plot4$x$data[[i]]$line$width <- 1
+  }
+}
+
+plot4 %>% layout(margin = list(b = 100))
+```
