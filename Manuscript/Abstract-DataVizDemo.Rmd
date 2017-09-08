@@ -1,0 +1,200 @@
+---
+title: Interactive decompositions of the life expectancy gap
+output:
+  html_document: default
+  word_document: default
+always_allow_html: yes
+---
+
+Corinne A Riddell, PhD
+
+Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 27, Montreal, QC H3A 1A2, Canada.
+
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 27, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>.
+
+
+```{r, echo=F, message=F, warning=F}
+library(shiny) #, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD version: 0.14.1, NEW: 1.0.3
+library(ggplot2)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD: 2.2.1, NEW: ggplot2_2.2.1.9000 (install dev version using devtools::install_github)
+library(plotly)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD: 4.5.6, NEW: 4.6.0
+library(crosstalk)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #1.0.0
+library(viridis)
+library(scales)
+library(shinythemes)
+library(dplyr)
+library(grid)
+library(gridExtra)
+library(png)
+library(forcats)
+
+source("../Code/life_expectancy_functions.R")
+```
+
+```{r, echo=F, message=F, warning=F}
+age_decomp_results <- read.csv("../Results2/age_decomp_results.csv")
+
+age_decomp_results$age <- forcats::fct_relevel(f = age_decomp_results$age, "<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                            "15-19 years", "20-24 years", "25-29 years", "30-34 years", "35-39 years", 
+                                            "40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years", 
+                                            "65-69 years", "70-74 years", "75-79 years", "80-84 years", "85+ years")
+
+cod_decomp_results <- read.csv("../Results2/cod_decomp_results.csv")
+cod_change_results <- read.csv("../Results2/cod_change_results.csv")
+BlackWhite_results <- read.csv("../Results2/BlackWhite_results.csv")
+dat.aggregated <- read.csv("../Data/dat_aggregated.csv") 
+
+excluded <- c("Alaska", "Hawaii", "Idaho", "Maine", "Montana", "New Hampshire", "North Dakota",
+              "South Dakota", "Utah", "Vermont", "Wyoming")
+
+dat.agg2.white <- dat.aggregated %>% filter(age == "<1 year" & race == "White" & !(state %in% excluded)) %>% select(state, year, sex, pop_across_age) %>% rename(pop_white = pop_across_age)
+dat.agg2.black <- dat.aggregated %>% filter(age == "<1 year" & race == "Black" & !(state %in% excluded)) %>% select(state, year, sex, pop_across_age) %>% rename(pop_black = pop_across_age)
+dat.agg2 <- merge(dat.agg2.black, dat.agg2.white, by = c("state", "year", "sex"))
+rm(dat.agg2.black, dat.agg2.white)
+
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
+
+cod_marginal_results <- cod_decomp_results %>% 
+  group_by(stratum.id) %>% 
+  summarise(state = first(state), sex= first(sex), year = first(year), total_Cx = sum(COD_cont_yrs_mean))
+
+cod_decomp_results <- merge(cod_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
+      by = "stratum.id")
+cod_decomp_results <- merge(cod_decomp_results, dat.agg2, by = c("state", "year", "sex"))
+
+cod_decomp_results$new.start = cod_decomp_results$start + cod_decomp_results$LE_black_mean
+cod_decomp_results$new.start2 = cod_decomp_results$start2 + cod_decomp_results$LE_black_mean
+cod_decomp_results$new.finish = cod_decomp_results$finish + cod_decomp_results$LE_black_mean
+cod_decomp_results$new.finish2 = cod_decomp_results$finish2 +cod_decomp_results$ LE_black_mean
+
+cod_decomp_results$LE_black_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
+cod_decomp_results$LE_white_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
+
+cod_decomp_results <- reorder.as.map2(cod_decomp_results, "state", "stabbrs")
+
+age_decomp_results <- merge(age_decomp_results, BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
+                            by = "stratum.id")
+
+age_decomp_results <- merge(age_decomp_results, dat.agg2, by = c("state", "year", "sex"))
+
+age_decomp_results$new.start = age_decomp_results$start + age_decomp_results$LE_black_mean
+age_decomp_results$new.start2 = age_decomp_results$start2 + age_decomp_results$LE_black_mean
+age_decomp_results$new.finish = age_decomp_results$finish + age_decomp_results$LE_black_mean
+age_decomp_results$new.finish2 = age_decomp_results$finish2 + age_decomp_results$ LE_black_mean
+
+age_decomp_results$LE_black_mean[age_decomp_results$age != "<1 year"] <- NA
+age_decomp_results$LE_white_mean[age_decomp_results$age != "<1 year"] <- NA
+
+BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
+```
+
+###Abstract
+ 
+ **Motivation**
+ 
+Methods to decompose the difference in life expectancy between populations are well-developed. In particular, the life expectancy gap can be partitioned by age groups or cause of death. This allows researchers to highlight where there is an excess of deaths according to age or cause in a disadvantaged population vs. a comparison population. Most often, results from such studies are displayed in lengthy tables which are difficult for the reader to process and interpret. Sometimes, the results are displayed using static graphics in paper journals. The motivation for the visualizations presented in this article was to use web technology to allow the interactive display of data in order to enhance what can be learned from each display. Specifically, the objectives were to: 
+
+1. utilize hover text to display more information than is reasonably shown on static displays, 
+2. layer graphical objects that enrich the visualization as the user toggles the layers on and off, and
+3. use transparency of graphical features as a proxy for statistical precision.
+ 
+ **Data**
+
+These graphics were developed as part of a larger project that studies trends in the difference in life expectancy between black and white Americans. Mortality and population data was abstracted using the US National Cancer Institute's software, SEER-Stat, stratified by state, year, sex, race (black or white), age group, and according to six cause of death groupings. As described elsewhere, we imputed supressed death counts and smoothed sparse data using a Bayesian time series design. For this paper, we utilize only the 2013 data for females.
+
+**Data visualizations**
+
+Figure 1 depicts the difference in life expectancy between white females (vertical red line) and black females (dashed red line). Ages to the left of the dashed line narrow the gap whereas ages to the right exacerbate it. The primary benefit of the interactive display is the ability to toggle the contribution of each age group to the gap. For example, turning off the contribution for infants (<1 year old) allows the use to immediately visualize that, relative to other age groups, infant mortality still contributed substantially to the black-white gap in life expectancy. Toggling the subsequent age groups reveal relatively small contributions during childhood and adolescence. The secondary benefit of the interactive display is the hover text that lists the estimate of the contribution numerically. These are the same numbers that would usually be shown only in a table format, but hover text allows for both the graphical and exact numeric display of information to be contained in one interactive illustration.
+
+**Figure 1: Contribution of age to the life expectancy gap between black and white females in 2013 by US state**
+
+```{r figure_age, fig.width=7, fig.height=9, echo=F, message=F, warning=F}
+data.subset <- data.frame(subset(age_decomp_results, sex == "Female" & year == 2013 & pop_black >= 1)) 
+data.subset["state.reorder2"] <- reorder(data.subset$state, data.subset$LE_black_mean, max, na.rm = T)
+data.subset["state.reorder2.n"] <- as.numeric(data.subset[["state.reorder2"]])
+
+ly <- ggplotly(ggplot(data.subset, 
+                      aes(x = new.start, y = state.reorder2.n)) + 
+                 geom_segment(aes(x = LE_black_mean, xend = LE_white_mean, 
+                                  y = state.reorder2.n + 0.46, yend = state.reorder2.n + 0.46), col = "red") + 
+                 geom_rect(aes(xmin = new.start, 
+                               ymin = state.reorder2.n - 0.44, 
+                               ymax = state.reorder2.n + 0.44, 
+                               xmax = new.finish, fill = age)) +
+                 scale_y_continuous(breaks = 1:length(levels(factor(data.subset$state.reorder2))), 
+                                    labels = levels(factor(data.subset$state.reorder2))) +
+                 theme_minimal() + 
+                 theme(legend.title = element_blank(),
+                       panel.background = element_rect(fill = "transparent", colour = NA), 
+                       plot.background = element_rect(fill = "transparent", colour = NA),
+                       legend.background = element_rect(fill = "transparent", colour = NA)) +
+                 geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), col = "red") +
+                 geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), col = "red", lty = 3) +
+                 scale_fill_viridis(discrete = T, direction = -1) 
+)  
+    
+    for(i in 1:length(ly$x$data)){
+      if (ly$x$data[[i]]$line$color == "rgba(255,0,0,1)") {
+        ly$x$data[[i]]$line$width <- 2
+        if(ly$x$data[[i]]$line$dash == "dot"){
+          ly$x$data[[i]]$text <- "Black Life Expectancy"  
+        }
+        if(ly$x$data[[i]]$line$dash == "solid"){
+          ly$x$data[[i]]$text <- "White Life Expectancy"  
+        }
+        }
+    }
+    
+    ly %>% layout(xaxis = list(title = " ", side = "top", xpad = 20), yaxis = list(title = NA, autorange = "reversed"))
+```
+
+Figure 2 partitions the black-white life expectancy gap according to six major cause of death groupings. This figure shares the advantages of the previous one in terms of interactivity. With the exception of Nevada and Rhode Island, injuries is the only cause of death that contributes to narrowing the life expectancy gap (to the left of the dashed line). This figure communicates that finding very clearly, and makes it easy to identify states for which the contribution of injury to narrowing the gap is most prominent. In particular, the southern states consistently show the largest contribution of injury towards narrowing the gap, which is likely due to increased overdose mortality among white women linked to the ongoing opoiod epidemic.
+
+**Figure 2: Contribution of cause of death to the life expectancy gap between black and white females in 2013 by US state** 
+
+```{r figure_cod, fig.width=7, fig.height=9, echo=F, message=F, warning=F}
+temp <- data.frame(subset(cod_decomp_results, sex == "Female" & 
+                            year == 2013 & pop_black >= 1))
+temp["state.reorder2"] <- reorder(temp$state, temp$LE_black_mean, max, na.rm = T)
+temp["state.reorder2.n"] <- as.numeric(temp[["state.reorder2"]])
+
+interactive.plot <- ggplotly(ggplot(temp, 
+                                    aes(x = new.start, y = state.reorder2.n)) + 
+                               geom_segment(aes(x = LE_black_mean, xend = LE_white_mean, 
+                                                y = state.reorder2.n + 0.46, yend = state.reorder2.n + 0.46)) + 
+                               
+                               geom_rect(aes(xmin = new.start, 
+                                             ymin = state.reorder2.n - 0.44, 
+                                             ymax = state.reorder2.n + 0.44, 
+                                             xmax = new.finish, fill = COD)) +
+                               scale_y_continuous(breaks = 1:length(levels(factor(temp$state.reorder2))), 
+                                                  labels = levels(factor(temp$state.reorder2))) +
+                               theme_minimal() + xlab(" ") + 
+                               theme(legend.title = element_blank(),
+                                     panel.background = element_rect(fill = "transparent", colour = NA), 
+                                     plot.background = element_rect(fill = "transparent", colour = NA),
+                                     legend.background = element_rect(fill = "transparent", colour = NA)) +
+                               geom_segment(aes(x = LE_white_mean, xend = LE_white_mean, y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46)) +
+                               geom_segment(aes(x = LE_black_mean, xend = LE_black_mean, 
+                                                y = state.reorder2.n - 0.46, yend = state.reorder2.n + 0.46), lty = 3)
+)
+
+
+for(i in 1:length(interactive.plot$x$data)){
+  if (interactive.plot$x$data[[i]]$line$color == "rgba(0,0,0,1)") {
+    interactive.plot$x$data[[i]]$line$width <- 2
+    if(interactive.plot$x$data[[i]]$line$dash == "dot"){
+      interactive.plot$x$data[[i]]$text <- "Black Life Expectancy"  
+    }
+    if(interactive.plot$x$data[[i]]$line$dash == "solid"){
+      interactive.plot$x$data[[i]]$text <- "White Life Expectancy"  
+    }
+  }
+}
+
+interactive.plot %>% 
+  layout(xaxis = list(title = " ", side = "top"), yaxis = list(title = NA, autorange = "reversed"))
+
+```
+ 
+ **Applications and future extensions**
+
