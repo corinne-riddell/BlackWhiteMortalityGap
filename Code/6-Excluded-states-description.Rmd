@@ -1,0 +1,54 @@
+---
+title: "Excluded states description"
+author: "Corinne Riddell"
+date: "2/21/2018"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(ggrepel)
+```
+
+```{r}
+dat.aggregated <- readr::read_csv("./Data/dat_aggregated.csv", col_names = T)
+
+dat2 <- dat.aggregated %>% 
+  group_by(state, year) %>% 
+  filter(age == "<1 year") %>% 
+  select(state, year, race, sex, race.sex, pop_across_age)
+
+dat3 <- dat2 %>% 
+  group_by(state, year, race) %>% 
+  summarise(pop.total.across.race = sum(pop_across_age))
+
+dat3 <- dat2 %>% 
+  group_by(state, year, race) %>% 
+  summarise(pop.total.across.race = sum(pop_across_age),
+            prop.race = round((pop.total.across.race/pop.total)*100, 1) )
+
+dat4 <- dat3 %>% filter(state %in% c("Alaska", "Hawaii", "Idaho", "Maine", "Montana", "New Hampshire", "North Dakota", "South Dakota", "Utah", "Vermont", "Wyoming"))
+
+```
+
+```{r}
+
+ggplot(dat3 %>% filter(race == "Black"), aes(year, prop.race)) + 
+  geom_line(aes(col = state, group = state)) + 
+  ylab("% of population that is black") + 
+  geom_text_repel(data = dat4 %>% filter(race == "Black", year == 2013), aes(group = state, label = state), size = 3) + 
+  ggtitle("Proportion of blacks in the population")
+
+ggplot(dat3 %>% filter(race == "Black"), aes(year, pop.total.across.race)) + 
+  geom_line(aes(col = state, group = state)) + 
+  ylab("% of population that is black") + 
+  geom_text_repel(data = dat4 %>% filter(race == "Black", year == 2013), aes(group = state, label = state), size = 3) + 
+  ggtitle("Absolute size of black population") + guides(col = F) + 
+  scale_y_log10(breaks = c(10000, 100000, 500000, 1000000, 3000000), 
+                      labels = c("10k", "100k", "500k", "1m", "3m")) +
+  # scale_y_continuous(breaks = c(10000, 100000, 500000, 1000000, 3000000), 
+  #                    labels = c("10k", "100k", "500k", "1m", "3m")) +
+  theme(panel.grid.minor = element_blank())
+
+```
+
