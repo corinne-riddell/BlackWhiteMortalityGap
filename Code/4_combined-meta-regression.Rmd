@@ -72,7 +72,13 @@ cod_decomp_results <- merge(cod_decomp_results,
                              RE.pred %>% select(COD, sex, state, year, .fitted, .resid, .fixed), 
                              by = c("COD", "sex", "state", "year"))
 
-cod_decomp_results <- cod_decomp_results %>% rename(fitted.RE = .fitted, fixed.from.RE = .fixed, resid.RE = .resid)
+cod_decomp_results <- cod_decomp_results %>% rename(fitted.RE = .fitted, 
+                                                    fixed.from.RE = .fixed, 
+                                                    resid.RE = .resid)
+
+cod_decomp_results <- cod_decomp_results %>% 
+  mutate(national.from.RE = fitted.RE - RE.estimates, #the national trend
+         residual.RE = COD_cont_yrs_mean - national.from.RE) #the difference between the observed state trends and the national trend
 ```
 
 ```{r FE_meta_regression_of_cod_contribution, echo = F}
