@@ -1,0 +1,48 @@
+---
+title: "Supplementary Appendix 2: Trend in the difference between each state's contribution trend and the overall trend, by causes of death and gender, 1969-2013"
+output: word_document
+---
+
+This is the second supplementary appendix for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
+
+Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Jay S Kaufman, PhD; Sam Harper, PhD
+
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
+
+```{r load_libraries, echo=FALSE, warning=F, message=F}
+library(dplyr)
+library(ggplot2)
+
+cod_decomp_results <- read.csv("../Results2/cod_decomp_results_cubic.csv")
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
+```
+
+The purpose of these plots are to summarize the information presented in Figures 3A-7B of the main paper and allow the reader to easily make comparisons between men and women and across causes of death. Each trend line shows the difference between each state's estimate of the cause's contribution to the black-white life expectancy gap and the overall average. That is, the difference between the state-level blue line and red smoothed line in Figures 3A and 7B. Thus, values close to zero are closest to the overall average, values below zero imply that the state-cause contribution was lower than the overall average for that cause and values above zero imply that the state-cause contribution was higher than the overall average.
+
+```{r, fig.width = 10, fig.height = 5, echo=F, warning=F, message=F, comment=NA, null_prefix=TRUE}
+results <- cod_decomp_results %>% 
+  filter(state != "Washington DC") %>%
+  group_by(state) %>% 
+  do(plots = ggplot(data = .) +
+       aes(x = year, y = residual.RE) + 
+       geom_line(aes(col = COD)) +
+       facet_wrap( ~ sex) + 
+       geom_hline(yintercept = 0, lty = 2) +
+       scale_y_continuous(limits = c(-2, 2)) +
+       ylab("Difference between state-specific and overall contribution trends (years)") +
+       xlab("Year") + 
+       ggtitle(first(.$state))
+  )
+
+results$plots
+```
+
+```{r, fig.width = 10, fig.height = 5, echo=F}
+ggplot(cod_decomp_results %>% filter(state == "Washington DC"), 
+       aes(x = year, y = residual.RE)) + geom_line(aes(col = COD)) +
+  facet_grid(state~sex) + geom_hline(yintercept = 0, lty = 2) +
+  ylab("Difference between state-specific and overall contribution trend (years)") +
+  xlab("Year") + ggtitle("Washington DC")
+```
+
+

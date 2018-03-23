@@ -5,7 +5,7 @@ output: html_document
 
 This is the supplementary appendix for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
 
-Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Sam Harper, PhD; Jay S Kaufman, PhD
+Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Jay S Kaufman, PhD; Sam Harper, PhD; 
 
 Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
 
@@ -331,22 +331,3 @@ ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Female"), aes(y = age_C
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
 ```
 
-**Figure X: Trend in the difference between each state's trend and the national trend, by causes of death and gender, 1969-2013**
-
-```{r, fig.width = 10, fig.height = 90, echo=F}
-ggplot(cod_decomp_results %>% filter(state != "Washington DC"), 
-       aes(x = year, y = residual.RE)) + geom_line(aes(col = COD)) +
-  facet_grid(state~sex) + geom_hline(yintercept = 0, lty = 2) +
-  ylab("Difference between state and national trend (years)") +
-  xlab("Year")
-```
-
-```{r, fig.width = 10, fig.height = 3, echo=F}
-ggplot(cod_decomp_results %>% filter(state == "Washington DC"), 
-       aes(x = year, y = residual.RE)) + geom_line(aes(col = COD)) +
-  facet_grid(state~sex) + geom_hline(yintercept = 0, lty = 2) +
-  ylab("Difference between state and national trend (years)") +
-  xlab("Year")
-```
-
-The purpose of these plots are to summarize the information presented in Figures 3A-7B of the main paper and allow the reader to easily make comparisons between men and women and across causes of death. Each trend line shows the difference between each state's estimate and the national average for each cause of death. Thus, values close to zero are closest to the national average, values below zero imply that the state's contribution was lower than the national average and values above zero imply that the state's contribution was higher than the national average.
