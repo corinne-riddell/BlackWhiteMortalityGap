@@ -64,6 +64,8 @@ injuries2 <- injuries %>%
                                       "Black or African American" = "Black")))
 
 fig3 <- ggplot(injuries, aes(x = Year, y = Age.Adjusted.Rate)) + geom_line(aes(col = Race, lty = Hispanic.Origin)) + facet_grid(State~Gender)
+
+ggplot(injuries, aes(x = Year, y = Age.Adjusted.Rate)) + geom_point(aes(col = Race, shape = Hispanic.Origin)) + facet_grid(State~Gender)
 ```
 
 ```{r}
