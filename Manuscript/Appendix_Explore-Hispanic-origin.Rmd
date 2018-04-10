@@ -1,0 +1,109 @@
+---
+title: "Supplementary Appendix 3: Trends in black and white mortality rates before and after excluding Hispanics, 1999-2013"
+output: github_document
+---
+
+This is the third supplementary appendix for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
+
+Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Jay S Kaufman, PhD; Sam Harper, PhD
+
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
+
+In our main analyses, we included Hispanics as part of the black and white racial groups. To investigate the impact of including Hispanics on mortality, we inspected mortality trends for five key states with large Hispanic immigrant populations (California, New York, Florida, Texas, and Illinois). We extracted this mortality data using (CDC WONDER's)[https://wonder.cdc.gov/] compressed mortality file. Hispanic ethnicity is only available beginning in 1999, so we consider the time period from 1999 to 2013. We extract age-adjusted mortality rates related to the circulatory system ("CVD", ICD-10 codes I00-I99), neoplasms ("cancers", ICD-10 codes C00-D48) and external causes ("injuries", ICD-10 codes V01-Y89) by year, state, race, and gender, for (a) non-Hispanics and (b) regardless of Hispanic ethinicity. 
+
+**Trends in cancer mortality for all whites and blacks vs. non-Hispanic whites and blacks, 1999-2013**
+```{r load-cancer-data, echo=F, fig.width = 8, fig.height=9.5}
+library(tidyverse)
+nh.cancer <- read.table("../Data/hispanic/NH Black and White Neoplasms.txt", header = T, nrows = 360, sep="\t")
+
+nh.cancer <- nh.cancer %>%
+  select(Year, Gender, Race, State, Deaths, Population, Crude.Rate, Age.Adjusted.Rate) %>%
+  mutate(Hispanic.Origin = "Non-hispanic")
+
+all.cancer <- read.table("../Data/hispanic/All Black and White Neoplasms.txt", header = T, nrows = 360, sep="\t")
+
+all.cancer <- all.cancer %>% 
+  select(Year, Gender, Race, State, Deaths, Population, Crude.Rate, Age.Adjusted.Rate) %>%
+  mutate(Hispanic.Origin = "All")
+
+cancer <- dplyr::bind_rows(nh.cancer, all.cancer) %>%
+  mutate(Race = plyr::revalue(Race, c("White" = "White",
+                                      "Black or African American" = "Black"))) %>%
+  filter(Year < 2014)
+
+fig1 <- ggplot(cancer, aes(x = Year, y = Age.Adjusted.Rate)) + 
+  geom_line(aes(col = Race, lty = Hispanic.Origin)) + facet_grid(State ~ Gender) +
+  ylab("Age-adjusted mortality rate (per 100,000)") + 
+  guides(lty = guide_legend(title = "Hispanic Origin")) +
+  theme(legend.position = "top")
+
+fig1
+```
+
+**Trends in CVD mortality for all whites and blacks vs. non-Hispanic whites and blacks, 1999-2013**
+```{r load-circulatory-data, echo=F, fig.width = 8, fig.height=9.5}
+nh.circulatory <- read.table("../Data/hispanic/NH Black and White Circulatory.txt", header = T, nrows = 360, sep="\t")
+
+nh.circulatory <- nh.circulatory %>% 
+  select(Year, Gender, Race, State, Deaths, Population, Crude.Rate, Age.Adjusted.Rate) %>%
+  mutate(Hispanic.Origin = "Non-hispanic")
+
+all.circulatory <- read.table("../Data/hispanic/All Black and White Circulatory.txt", header = T, nrows = 360, sep="\t")
+
+all.circulatory <- all.circulatory %>% 
+  select(Year, Gender, Race, State, Deaths, Population, Crude.Rate, Age.Adjusted.Rate) %>%
+  mutate(Hispanic.Origin = "All")
+
+circulatory <- dplyr::bind_rows(nh.circulatory, all.circulatory)
+
+circulatory2 <- circulatory %>% 
+  mutate(Race = plyr::revalue(Race, c("White" = "White",
+                                      "Black or African American" = "Black"))) %>%
+  filter(Year < 2014)
+
+fig2 <- ggplot(circulatory, aes(x = Year, y = Age.Adjusted.Rate)) + 
+  geom_line(aes(col = Race, lty = Hispanic.Origin)) + facet_grid(State ~ Gender) +
+  ylab("Age-adjusted mortality rate (per 100,000)") + 
+  guides(lty = guide_legend(title = "Hispanic Origin")) +
+  theme(legend.position = "top")
+
+fig2
+```
+
+**Trends in injury mortality for all whites and blacks vs. non-Hispanic whites and blacks, 1999-2013**
+```{r load-injuries-data, echo=F, fig.width = 8, fig.height=9.5}
+nh.injuries <- read.table("../Data/hispanic/NH Black and White Injuries.txt", header = T, nrows = 360, sep="\t")
+
+nh.injuries <- nh.injuries %>% 
+  select(Year, Gender, Race, State, Deaths, Population, Crude.Rate, Age.Adjusted.Rate) %>%
+  mutate(Hispanic.Origin = "Non-hispanic")
+
+all.injuries <- read.table("../Data/hispanic/All Black and White Injuries.txt", header = T, nrows = 360, sep="\t")
+
+all.injuries <- all.injuries %>% 
+  select(Year, Gender, Race, State, Deaths, Population, Crude.Rate, Age.Adjusted.Rate) %>%
+  mutate(Hispanic.Origin = "All")
+
+injuries <- dplyr::bind_rows(nh.injuries, all.injuries)
+
+injuries2 <- injuries %>% 
+  mutate(Race = plyr::revalue(Race, c("White" = "White",
+                                      "Black or African American" = "Black"))) %>%
+  filter(Year < 2014)
+
+fig3 <- ggplot(injuries, aes(x = Year, y = Age.Adjusted.Rate)) + 
+  geom_line(aes(col = Race, lty = Hispanic.Origin)) + 
+  facet_grid(State ~ Gender) +
+  ylab("Age-adjusted mortality rate (per 100,000)") + 
+  guides(lty = guide_legend(title = "Hispanic Origin")) +
+  theme(legend.position = "top")
+
+fig3
+```
+
+```{r, echo=F}
+ggsave(filename = "../Plots/Cancer.jpeg", plot = fig1, device = "jpeg", height = 9.5, width = 8, units = "in")
+ggsave(filename = "../Plots/Cardiovacular.jpeg", plot = fig2, device = "jpeg", height = 9.5, width = 8, units = "in")
+ggsave(filename = "../Plots/Injuries.jpeg", plot = fig3, device = "jpeg", height = 9.5, width = 8, units = "in")
+```
+
