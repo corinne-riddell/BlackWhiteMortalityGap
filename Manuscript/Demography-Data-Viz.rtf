@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww16940\viewh13860\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 [X][X][X][X]\
+\
+Motivation\
+\
+Life expectancy is an informative summary measure for the health of a population. For example, the life expectancy of the United States was 78.8 years in 2015, which means that if a newborn grew up facing the age-specific mortality rates of the US population in 2015, they would be expected to life to 78.8 years. It follows that differences in life expectancies between groups of people are also informative, because they imply differences in the mortality experience of each group. In demography, comparisons between sexes [cite], countries [cite], and time periods [cite] may be the most common comparisons. Comparison between socially-defined groups are also of interest, in particular in countries with historically oppressed groups. In the US, the life expectancy of whites is 79.0, whereas that of blacks is 75.5, for a difference of 3.5 years. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 [ref for LE estimates in 2015 {\field{\*\fldinst{HYPERLINK "https://www.cdc.gov/nchs/data/hus/hus16.pdf#015"}}{\fldrslt https://www.cdc.gov/nchs/data/hus/hus16.pdf#015}}]\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Understanding the mechanisms underlying the difference in life expectancy between black and white Americans has been a focus of our group\'92s work [cite]. Mathematically, this difference in life expectancy must follow from differences in age-specific mortality rates between blacks and whites. Furthermore, these age-specific differences can be further broken down by cause of death. Nationally, the causes that contribute most to the difference include X, Y, and Z [cite]. We were motivated to illustrate whether these results persisted across individual states, and if not, to effectively visualize the differences across states.\
+\
+Results from decomposition studies are often communicated in tables, or sometimes in static figures. Such approaches are admissible if only two or three groups are being compared, but becomes increasingly unwieldily as the number of comparisons increases. Our previous paper summarizes findings across 35 US states and the District of Columbia (DC), necessitating better techniques to communicate these findings. \
+\
+Interactive, as opposed to static, data visualization is a subdomain of data visualization that facilitates interaction. The strength of interaction lie in the ability to modify or enhance the display interactively, such that the user can enrich the display of data, process the updated information, and perform this iteratively to increased the amount of information that the visualization can provide. For example, the Institute of Health Metrics and Evaluation hosts an array of interactive data visualizations on their \'93Viz Hub\'94 [{\field{\*\fldinst{HYPERLINK "https://vizhub.healthdata.org/le/"}}{\fldrslt https://vizhub.healthdata.org/le/}}]. Users can hover over individual countries in the global choropleth map of country life expectancy found at the previous link to display a tooltip that includes the life expectancy estimate and use the scale at the bottom of the map to select a range of countries to display according to their life expectancy data. Such graphics showcase how web technology can be utilized to enhance data visualization and the amount of information that can be gleamed from a graphic. IHME\'92s graphics on life expectancy decomposition (that you can select using the dropdown menu in the upper-left hand corner) exemplifies one example of interactive data visualization of the life expectancy decomposition. Modifying and building upon their example, we were modified to build interactive data visualizations to visualize state differences in the decomposition of the black-white life expectancy gap according to age and cause of death. Our visualization goals were to:\
+\
+1. utilize labels to display decomposition estimates when the user hovers using the mouse (hover text)\
+2. layer graphical objects that enrich the visualization as the user toggles the layers on and off, and\
+3. use transparency of graphical features as a proxy for statistical precision.\
+4. resort by selected causes\
+\
+\
+\
+Journalists have led the fold of including interactive displays of data, perhaps because antiquated journals do not permit non-static graphics. However, online journals like F1000 are encouraging interactive graphics as part of submissions, and signal a changing tide in the academic arena towards online publications and web-based technology.\
+\
+\
+\
+References:\
+-cleveland WC, McGill ME (1988). Dynamic Graphics for Statistics. CRC Press, Inc.\
+-symanzik, 2012\
+-\'93brushing, identifying, deletion, zooming, panning, and different types of linking\'94 (Becker and Cleveland, 1987)\
+\
+\
+Interactive data visualization\
+- interactive data visualization allows the user to interact with the data\
+- hover, zoom, selection, layering\
+- as journals become increasingly online, there is a push to evolve our creation of figures to take advantage of electronically hosting visualization\
+\
+Data\
+- Abstracted the data using SEER*Stat\
+- Briefly introduce the methods to create the data we are using in this paper\
+- Purpose was to quantify the differences between blacks and whites in US by US state\
+\
+Methods\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Decompositions of life expectancy differences by age and cause of death have been well described. These methods take an life expectancy difference (or gap), in years, and partition the gap according to age and cause. For example, of the X year life expectancy gap between group1 and group2 in countryX, Y years is due to differences in \'85[take literature example]. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Results\
+\
+\
+Potential for future extension and practical applications}
