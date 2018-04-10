@@ -13,7 +13,7 @@ Department of Epidemiology, Biostatistics & Occupational Health, McGill Universi
 Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 27, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>.
 
 
-```{r, echo=F, message=F, warning=F}
+```{r load-libraries, echo=F, message=F, warning=F}
 library(shiny) #, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD version: 0.14.1, NEW: 1.0.3
 library(ggplot2)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD: 2.2.1, NEW: ggplot2_2.2.1.9000 (install dev version using devtools::install_github)
 library(plotly)#, lib.loc = "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/old_versions") #OLD: 4.5.6, NEW: 4.6.0
@@ -30,7 +30,7 @@ library(forcats)
 source("../Code/life_expectancy_functions.R")
 ```
 
-```{r, echo=F, message=F, warning=F}
+```{r load-data, echo=F, message=F, warning=F}
 age_decomp_results <- read.csv("../Results2/age_decomp_results.csv")
 
 age_decomp_results$age <- forcats::fct_relevel(f = age_decomp_results$age, "<1 year", "1-4 years", "5-9 years", "10-14 years", 
