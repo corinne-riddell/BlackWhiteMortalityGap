@@ -224,13 +224,14 @@ Cardiovascular disease (CVD) is the most common cause of death for both men and 
 **Figure 1A: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot, fig.width = 12, fig.height = 10, echo = F}
-Cardiovascular.Male.plot[[3]] +
-           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5)
+cvd.men <- Cardiovascular.Male.plot[[3]] +
+  geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  ggtitle("A) Contribution of CVD to the gap in men")
 
 ```
 
@@ -240,13 +241,14 @@ Cardiovascular.Male.plot[[3]] +
 
 ```{r print-plot-2, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Cardiovascular.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-Cardiovascular.Female.plot[[3]]  +
-           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5)
+cvd.women <- Cardiovascular.Female.plot[[3]]  +
+  geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  ggtitle("B) Contribution of CVD to the gap in women")
 
 ```
 
@@ -258,11 +260,12 @@ For all groups, mortality from cancer peaked in the mid 1990s and decreased ther
 
 ```{r print-plot-3, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Cancers.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-Cancers.Male.plot[[3]] +
-           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) 
+can.men <- Cancers.Male.plot[[3]] +
+  geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  ggtitle("A) Contribution of cancer to the gap in men")
 
 ```
 
@@ -270,11 +273,12 @@ Cancers.Male.plot[[3]] +
 
 ```{r print-plot-4, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Cancers.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
-Cancers.Female.plot[[3]] +
-           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
+can.women <- Cancers.Female.plot[[3]] +
+  geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  ggtitle("B) Contribution of cancer to the gap in women")
 
 ```
 
@@ -286,13 +290,14 @@ Mortality from non-communicable disease increased over time for men in most stat
 
 ```{r print-plot-5, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(`Non-communicable.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-`Non-communicable.Male.plot`[[3]] +
-           geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           scale_y_continuous(breaks = seq(-0.5, 1.5, by = 0.5), labels = seq(-0.5, 1.5, by = 0.5))
+ncd.men <- `Non-communicable.Male.plot`[[3]] +
+  geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  scale_y_continuous(breaks = seq(-0.5, 1.5, by = 0.5), labels = seq(-0.5, 1.5, by = 0.5)) +
+  ggtitle("A) Contribution of non-communicable disease to the gap in men")
 
 ```
 
@@ -300,14 +305,15 @@ Mortality from non-communicable disease increased over time for men in most stat
 
 ```{r print-plot-6, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
-`Non-communicable.Female.plot`[[3]] +
-           geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           scale_y_continuous(breaks = seq(-1, 1.5, by = 0.5), labels = seq(-1, 1.5, by = 0.5))
+ncd.women <- `Non-communicable.Female.plot`[[3]] +
+  geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  scale_y_continuous(breaks = seq(-1, 1.5, by = 0.5), labels = seq(-1, 1.5, by = 0.5)) + 
+  ggtitle("B) Contribution of non-communicable disease to the gap in women")
 
 ```
 
@@ -322,13 +328,14 @@ Trends in mortalilty from injuries differ for blacks and whites. Over time, inju
 #ggplotly(Injuries.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
 #ggplotly(Injuries.Male.plot[[3]])
 
-`Injuries.Male.plot`[[3]] +
-           geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) + 
-           geom_hline(aes(yintercept = 6), lwd = 0.5, col = "grey", alpha = 0.5) 
+inj.men <-`Injuries.Male.plot`[[3]] +
+  geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  geom_hline(aes(yintercept = 6), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  ggtitle("A) Contribution of injury to the gap in men")
   
 ```
 
@@ -338,12 +345,13 @@ Trends in mortalilty from injuries differ for blacks and whites. Over time, inju
 #ggplotly(Injuries.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
 #ggplotly(Injuries.Female.plot[[3]]) 
 
-`Injuries.Female.plot`[[3]] +
-           geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
-           geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5)
+inj.women <- `Injuries.Female.plot`[[3]] +
+  geom_hline(aes(yintercept = -0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  ggtitle("B) Contribution of injury to the gap in women")
 ```
 
 
@@ -375,11 +383,12 @@ Of the major causes that we considered, mortality from communicable disease was 
 #ggplotly(Communicable.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
 #ggplotly(Communicable.Male.plot[[3]]) 
 
-`Communicable.Male.plot`[[3]] +
+com.men <- `Communicable.Male.plot`[[3]] +
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) + 
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) 
+  geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
+  ggtitle("A) Contribution of communicable disease to the gap in men")
 ```
 
 **Figure 5B: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
@@ -388,12 +397,13 @@ Of the major causes that we considered, mortality from communicable disease was 
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
 #ggplotly(Communicable.Female.plot[[3]])
 
-`Communicable.Female.plot`[[3]] +
+com.women <- `Communicable.Female.plot`[[3]] +
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 0.5), lwd = 0.5, col = "grey", alpha = 0.5) + 
   geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
+  geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
+  ggtitle("B) Contribution of communicable disease to the gap in women")
 ```
 **All other causes**
 
@@ -425,13 +435,14 @@ Because the majority of infant deaths are classified as being due to all other c
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
 #ggplotly(`All other causes.Male.plot`[[3]])
 
-`All other causes.Male.plot`[[3]] +
+aoc.men <- `All other causes.Male.plot`[[3]] +
   geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) + 
   geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) 
+  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) +
+  ggtitle("A) Contribution of all other causes to the gap in men")
 ```
 
 **Figure 6B: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
@@ -440,13 +451,29 @@ Because the majority of infant deaths are classified as being due to all other c
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
 #ggplotly(`All other causes.Female.plot`[[3]])
 
-`All other causes.Female.plot`[[3]] +
+aoc.women <- `All other causes.Female.plot`[[3]] +
   geom_hline(aes(yintercept = -1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) + 
   geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) 
+  geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) +
+  ggtitle("B) Contribution of all other causes to the gap in women")
+```
+
+```{r save-figs}
+ggsave(filename = "../Plots/figure2a.jpeg", plot = cvd.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure2b.jpeg", plot = cvd.women, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure3a.jpeg", plot = can.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure3b.jpeg", plot = can.women, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure4a.jpeg", plot = ncd.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure4b.jpeg", plot = ncd.women, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure5a.jpeg", plot = inj.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure5b.jpeg", plot = inj.women, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure6a.jpeg", plot = com.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure6b.jpeg", plot = com.women, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure7a.jpeg", plot = aoc.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure7b.jpeg", plot = aoc.women, device = "jpeg", width = 12, height = 10, units = "in")
 ```
 
 ###Discussion 
