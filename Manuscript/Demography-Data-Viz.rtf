@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww16940\viewh19800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 [X][X][X][X] \{X\}\{X\}\{X\}\{\}\
+\
+Motivation\
+\
+Life expectancy is an informative summary measure for the health of a population. For example, the life expectancy of the United States was 78.8 years in 2015, which means that if a newborn grew up facing the age-specific mortality rates of the US population in 2015, they would be expected to life to 78.8 years. It follows that differences in life expectancies between groups of people are also informative, because they imply differences in the mortality experience of each group. In demography, comparisons between majority genders [cite], countries [cite], and time periods [cite] are common comparisons. Comparison between socially-defined groups are also of interest, in particular in countries with historically oppressed groups. In the US, the life expectancy of whites is 79.0, whereas that of blacks is 75.5, for a difference of 3.5 years. \
+\
+[ref for LE estimates in 2015 {\field{\*\fldinst{HYPERLINK "https://www.cdc.gov/nchs/data/hus/hus16.pdf#015"}}{\fldrslt https://www.cdc.gov/nchs/data/hus/hus16.pdf#015}}]\
+\
+Understanding the mechanisms underlying the difference in life expectancy between black and white Americans has been a focus of our group\'92s work [cite]. Mathematically, this difference in life expectancy must follow from differences in age-specific mortality rates between blacks and whites. Furthermore, these age-specific differences can be themselves broken down by cause of death. Nationally, the causes that contribute most to the difference include X, Y, and Z [cite]. We were motivated to illustrate whether these results persisted across individual states, and if not, to effectively visualize the differences across states.\
+\
+Results from decomposition studies are often communicated in tables, or sometimes in static figures. Such approaches are admissible if only two or three groups are being compared, but becomes increasingly unwieldily as the number of comparisons increases. Our previous paper summarizes findings across 35 US states and the District of Columbia (DC), necessitating better techniques to communicate these findings. \
+\
+Interactive, as opposed to static, data visualization is a subdomain of data visualization that facilitates interaction. The strength of interaction lie in the ability to modify or enhance the display interactively, such that the user can enrich the display of data, process the updated information, and perform this iteratively to increased the amount of information that the visualization can provide. For example, the Institute of Health Metrics and Evaluation hosts an array of interactive data visualizations on their \'93Viz Hub\'94 [{\field{\*\fldinst{HYPERLINK "https://vizhub.healthdata.org/le/"}}{\fldrslt https://vizhub.healthdata.org/le/}}]. Users can hover over individual countries in the global choropleth map of country life expectancy found at the previous link to display a tooltip that includes the life expectancy estimate and use the scale at the bottom of the map to select a range of countries to display according to their life expectancy data. Such graphics showcase how web technology can be utilized to enhance data visualization and the amount of information that can be gleaned from a graphic. IHME\'92s graphics on life expectancy decomposition (that you can select using the dropdown menu in the upper-left hand corner) exemplifies one example of interactive data visualization of the life expectancy decomposition. Modifying and building upon their example, we built interactive data visualizations to visualize state differences in the decomposition of the black-white life expectancy gap according to age and cause of death. Our visualization objectives were to:\
+\
+1. utilize labels to display decomposition estimates when the user hovers using the mouse (hover text)\
+2. layer graphical objects that enrich the visualization as the user toggles the layers on and off, and\
+3. use transparency of graphical features as a proxy for statistical precision.\
+4. resort by selected causes\
+\
+Data and Methodology\
+\
+The data used in this paper was abstracted for an earlier publication using the National Cancer Institute's Surveillance, Epidemiology, and End Results Program (SEER)\'92s software, called SEER*Stat. Using the software, mortality counts and population denominators were abstracted for 39 states and the District of Columbia according to state, year (1969 to 2013), gender, race (black and white), age group (<1 years old, 1-4 years old, and 5-year age bands, 85+), and cause of death (six major groupings: Cardiovascular disease, cancer, non-communicable disease, communicable disease, injuries, and all other causes). Stratum with death counts between 1 and 9 inclusive were withheld by the data provider. *Add sentence about inclusion of Hispanics*\
+\
+Approximately XX% of death counts were withheld by the data provider. Furthermore, some states had relatively small populations sizes, especially for blacks. Thus, we sought a statistical method that could both smooth mortality (over time) and impute missing death counts as an initial step before calculating life expectancy, the black-white life expectancy gap and the decomposition of the gap by age and cause of death. To do this we used a Bayesian time series model, where the prior distribution for mortality was centered on the previous year\'92s value. A Poisson likelihood was specified for the non-missing death counts, while a truncated Poisson (i.e., summed over 1 to 9) was specified for the withheld counts. Further modelling details are provided in the original publication, and all the analysis code is found within the project\'92s GitHub repository ({\field{\*\fldinst{HYPERLINK "https://github.com/corinne-riddell/BlackWhiteMortalityGap"}}{\fldrslt https://github.com/corinne-riddell/BlackWhiteMortalityGap}}). \
+\
+*pull updated language about bayesian time series model from laptop ucbtalk folder*\
+\
+The Bayesian model was computed across XXXX samples after removing the burn-in samples and performing thinning. For each sample, the smoothed death counts were used to calculate life expectancy at birth based on a period life table, separately for blacks and whites within each state-gender-year strata. The black-white difference between life expectancy was calculated and decomposed by age and cause of death using Arriaga\'92s method [cite]. For the purposes of this paper, we only show results for women in 2013, but include the results for men in 2013 in an appendix. Figures shown in this paper can be made for any year using an online web application (link). \
+\
+Data Visualizations\
+\
+\
+to do\
+1. add numeric info upon hover, ideally containing the CI as well (i think this is in the app too)\
+2. allow order to be chosen by the user: overall gap, contribution of each cause to the gap, black LE, white LE\
+3. incorporate precision of the estimator (alpha transparency or slider - slider is already found in the shiny app based on pop size)\
+\
+\
+\
+\
+\
+Strengths over a table\
+- sorting and resorting \
+- quickly can process a large amount of information through interaction with the visualizations via sorting\
+  - what maybe be deemed most important by the creator (say size of gap overall) may be less important to each individual reader, who each has special interests - for example, a cancer research will want to know about that specific piece\
+- incorporate a precision slider let\'92s you communicate all the research, but indicates that some results are less stable \
+\
+Future extension and practical applications\
+-decompositions between genders, countries, time periods could all be assessed this way when there are multiple clusters of analysis\
+-extend to look at ageXCOD together (include another figure for one state) \'97 method to extend to this level across multiple states might be interesting\
+\
+\
+Journalists have led the fold of including interactive displays of data, perhaps because antiquated journals do not permit non-static graphics. However, online journals like F1000 are encouraging interactive graphics as part of submissions, and signal a changing tide in the academic arena towards online publications and web-based technology.\
+\
+\
+\
+References:\
+-cleveland WC, McGill ME (1988). Dynamic Graphics for Statistics. CRC Press, Inc.\
+-symanzik, 2012\
+-\'93brushing, identifying, deletion, zooming, panning, and different types of linking\'94 (Becker and Cleveland, 1987)\
+\
+\
+Interactive data visualization\
+- interactive data visualization allows the user to interact with the data\
+- hover, zoom, selection, layering\
+- as journals become increasingly online, there is a push to evolve our creation of figures to take advantage of electronically hosting visualization\
+\
+\
+\
+Results\
+\
+\
+Potential for future extension and practical applications}

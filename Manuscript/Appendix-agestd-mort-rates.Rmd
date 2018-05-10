@@ -50,6 +50,9 @@ age_cod_results_infants_AOC <- read.csv("../Results2/age_cod_results_infants_AOC
 age_cod_results_infants_AOC$stabbrs <- state.abb[match(age_cod_results_infants_AOC$state, state.name)]
 age_cod_results_infants_AOC$stabbrs[age_cod_results_infants_AOC$state == "Washington DC"] <- "DC"
 age_cod_results_infants_AOC <- reorder.as.map2(age_cod_results_infants_AOC, "state", "stabbrs")
+
+cod_decomp_results <- read.csv("../Results2/cod_decomp_results_cubic.csv")
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
 ```
 
 ```{r plotting_fx, echo = F}
@@ -170,11 +173,12 @@ LE_trend_plot_females <- ggplot(data = subset(BlackWhite_results, sex == "Female
 ```  
 
 ```{r plot_LE_trends_males, echo=F, fig.height=10, fig.width=13}
-LE_trend_plot_males +
+le.gap.men <- LE_trend_plot_males +
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5)
+  geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  ggtitle("A) Black-white life expectancy gap in men")
 
 ```
 
@@ -183,12 +187,16 @@ LE_trend_plot_males +
 **Figure S2: State-level trends in the black-white life expectancy gap in women, United States, 1969-2013**
 
 ```{r plot_LE_trends_females, echo=F, fig.height=10, fig.width=13}
-LE_trend_plot_females +
+le.gap.women <- LE_trend_plot_females +
   geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5)
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+  ggtitle("B) Black-white life expectancy gap in women")
 
+
+ggsave(filename = "../Plots/figure1a.jpeg", plot = le.gap.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure1b.jpeg", plot = le.gap.women, device = "jpeg", width = 12, height = 10, units = "in")
 ```
 
 ```{r plot_both, eval=F, echo=F}

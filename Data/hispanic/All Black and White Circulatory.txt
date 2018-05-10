@@ -1,0 +1,412 @@
+"Notes"	"Year"	"Year Code"	"Gender"	"Gender Code"	"Race"	"Race Code"	"State"	"State Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"1999"	"1999"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	4013	1274187	314.9	441.6
+	"1999"	"1999"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3378	1255363	269.1	400.7
+	"1999"	"1999"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	3066	1020831	300.3	400.6
+	"1999"	"1999"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4838	1835692	263.6	343.6
+	"1999"	"1999"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3862	1273788	303.2	425.7
+	"1999"	"1999"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	44296	13203242	335.5	300.3
+	"1999"	"1999"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	30598	6629027	461.6	257.7
+	"1999"	"1999"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	20185	5045484	400.1	292.0
+	"1999"	"1999"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	34138	7318698	466.4	314.4
+	"1999"	"1999"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	26488	8716280	303.9	297.3
+	"1999"	"1999"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3507	1228282	285.5	557.1
+	"1999"	"1999"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2830	1163720	243.2	507.8
+	"1999"	"1999"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2907	902429	322.1	574.9
+	"1999"	"1999"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3782	1575076	240.1	460.1
+	"1999"	"1999"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3348	1187505	281.9	574.6
+	"1999"	"1999"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	38492	13289192	289.6	408.2
+	"1999"	"1999"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	29222	6349696	460.2	370.1
+	"1999"	"1999"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	17249	4906281	351.6	438.8
+	"1999"	"1999"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	26858	6917065	388.3	437.4
+	"1999"	"1999"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	23272	8642333	269.3	412.5
+	"2000"	"2000"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3791	1282820	295.5	406.6
+	"2000"	"2000"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3215	1280913	251.0	368.5
+	"2000"	"2000"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	3019	1026401	294.1	387.5
+	"2000"	"2000"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4789	1849457	258.9	331.7
+	"2000"	"2000"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3901	1287939	302.9	425.4
+	"2000"	"2000"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	42202	13341153	316.3	280.5
+	"2000"	"2000"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	30146	6705029	449.6	250.2
+	"2000"	"2000"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	19542	5056749	386.5	280.6
+	"2000"	"2000"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	33096	7336494	451.1	299.9
+	"2000"	"2000"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	26362	8815254	299.0	292.7
+	"2000"	"2000"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3437	1234115	278.5	543.0
+	"2000"	"2000"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2804	1187565	236.1	474.1
+	"2000"	"2000"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2787	907401	307.1	547.6
+	"2000"	"2000"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3761	1585127	237.3	454.6
+	"2000"	"2000"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3249	1201820	270.3	548.3
+	"2000"	"2000"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	37230	13407838	277.7	388.7
+	"2000"	"2000"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	28975	6427061	450.8	361.8
+	"2000"	"2000"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	16243	4924771	329.8	410.6
+	"2000"	"2000"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	26432	6927047	381.6	427.5
+	"2000"	"2000"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	23441	8760224	267.6	409.1
+	"2001"	"2001"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3791	1296780	292.3	398.4
+	"2001"	"2001"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3597	1324608	271.6	400.2
+	"2001"	"2001"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	3090	1029945	300.0	392.7
+	"2001"	"2001"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4860	1860551	261.2	327.5
+	"2001"	"2001"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3947	1319089	299.2	423.7
+	"2001"	"2001"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	42256	13505365	312.9	276.6
+	"2001"	"2001"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	29880	6833739	437.2	245.1
+	"2001"	"2001"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	19187	5069579	378.5	273.6
+	"2001"	"2001"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	32630	7338431	444.6	293.0
+	"2001"	"2001"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	26199	8985946	291.6	287.7
+	"2001"	"2001"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3448	1251049	275.6	530.9
+	"2001"	"2001"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2945	1228606	239.7	486.3
+	"2001"	"2001"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2713	910304	298.0	515.4
+	"2001"	"2001"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3730	1597107	233.5	435.2
+	"2001"	"2001"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3431	1232556	278.4	564.9
+	"2001"	"2001"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	36892	13592819	271.4	377.5
+	"2001"	"2001"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	28700	6559116	437.6	351.6
+	"2001"	"2001"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	15423	4945920	311.8	383.3
+	"2001"	"2001"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	25765	6942969	371.1	411.2
+	"2001"	"2001"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	23458	8936085	262.5	397.1
+	"2002"	"2002"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3883	1306520	297.2	400.7
+	"2002"	"2002"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3405	1363767	249.7	367.3
+	"2002"	"2002"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	3036	1030826	294.5	381.3
+	"2002"	"2002"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4931	1865067	264.4	325.6
+	"2002"	"2002"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3902	1344674	290.2	415.2
+	"2002"	"2002"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	41644	13611768	305.9	270.2
+	"2002"	"2002"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	29036	6948991	417.8	237.2
+	"2002"	"2002"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	18640	5074378	367.3	264.9
+	"2002"	"2002"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	32278	7330648	440.3	287.7
+	"2002"	"2002"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	26108	9118467	286.3	284.1
+	"2002"	"2002"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3544	1260806	281.1	528.3
+	"2002"	"2002"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2979	1263764	235.7	468.4
+	"2002"	"2002"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2711	911417	297.4	508.3
+	"2002"	"2002"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3804	1602183	237.4	441.0
+	"2002"	"2002"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3530	1257563	280.7	565.3
+	"2002"	"2002"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	37202	13697250	271.6	371.1
+	"2002"	"2002"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	28428	6674585	425.9	341.5
+	"2002"	"2002"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	15832	4953956	319.6	390.3
+	"2002"	"2002"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	25834	6945612	371.9	405.6
+	"2002"	"2002"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	23697	9073792	261.2	392.9
+	"2003"	"2003"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3898	1316660	296.1	392.5
+	"2003"	"2003"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3302	1400657	235.7	344.4
+	"2003"	"2003"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	3006	1031418	291.4	370.8
+	"2003"	"2003"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4820	1866404	258.3	311.9
+	"2003"	"2003"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3864	1369379	282.2	403.1
+	"2003"	"2003"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	41489	13724880	302.3	264.9
+	"2003"	"2003"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	28186	7053660	399.6	227.2
+	"2003"	"2003"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	18117	5077409	356.8	255.7
+	"2003"	"2003"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	31530	7318315	430.8	279.0
+	"2003"	"2003"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	24901	9250249	269.2	266.9
+	"2003"	"2003"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3532	1268907	278.3	505.1
+	"2003"	"2003"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2905	1299486	223.5	438.5
+	"2003"	"2003"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2867	910922	314.7	527.2
+	"2003"	"2003"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3786	1604603	235.9	421.4
+	"2003"	"2003"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3424	1277360	268.1	532.9
+	"2003"	"2003"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	37515	13786662	272.1	365.4
+	"2003"	"2003"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	27885	6784942	411.0	329.2
+	"2003"	"2003"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	15051	4959900	303.5	363.6
+	"2003"	"2003"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	24941	6945157	359.1	386.2
+	"2003"	"2003"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	22997	9190691	250.2	369.8
+	"2004"	"2004"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3719	1324558	280.8	370.0
+	"2004"	"2004"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3156	1445760	218.3	315.2
+	"2004"	"2004"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2922	1031428	283.3	354.5
+	"2004"	"2004"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4952	1863418	265.7	315.3
+	"2004"	"2004"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3575	1394787	256.3	366.9
+	"2004"	"2004"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	39278	13797310	284.7	249.5
+	"2004"	"2004"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	27538	7196797	382.6	219.1
+	"2004"	"2004"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	17152	5078001	337.8	240.7
+	"2004"	"2004"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	29771	7293173	408.2	262.2
+	"2004"	"2004"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	23845	9382770	254.1	252.3
+	"2004"	"2004"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3361	1278594	262.9	469.3
+	"2004"	"2004"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2958	1340686	220.6	426.0
+	"2004"	"2004"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2673	913045	292.8	490.1
+	"2004"	"2004"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3629	1600828	226.7	395.4
+	"2004"	"2004"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3274	1302552	251.4	495.3
+	"2004"	"2004"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	35546	13866357	256.3	340.7
+	"2004"	"2004"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	27344	6935095	394.3	315.1
+	"2004"	"2004"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	14299	4969832	287.7	341.1
+	"2004"	"2004"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	23441	6929618	338.3	358.7
+	"2004"	"2004"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	22352	9323084	239.7	348.0
+	"2005"	"2005"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3616	1328963	272.1	349.6
+	"2005"	"2005"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3245	1495414	217.0	311.8
+	"2005"	"2005"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2849	1031313	276.2	339.4
+	"2005"	"2005"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4746	1857880	255.5	295.4
+	"2005"	"2005"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3440	1422960	241.7	344.0
+	"2005"	"2005"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	38430	13832450	277.8	239.1
+	"2005"	"2005"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	26679	7344055	363.3	208.4
+	"2005"	"2005"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	16755	5076409	330.1	233.0
+	"2005"	"2005"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	29424	7248164	406.0	257.3
+	"2005"	"2005"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	23708	9519891	249.0	244.7
+	"2005"	"2005"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3474	1286444	270.0	461.4
+	"2005"	"2005"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2989	1386372	215.6	412.0
+	"2005"	"2005"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2749	913540	300.9	489.5
+	"2005"	"2005"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3672	1599801	229.5	387.1
+	"2005"	"2005"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3253	1330938	244.4	475.3
+	"2005"	"2005"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	35089	13913945	252.2	327.5
+	"2005"	"2005"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	26974	7084592	380.7	304.1
+	"2005"	"2005"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	14382	4969968	289.4	337.0
+	"2005"	"2005"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	23291	6898559	337.6	351.6
+	"2005"	"2005"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	22293	9460866	235.6	337.0
+	"2006"	"2006"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3630	1333724	272.2	344.8
+	"2006"	"2006"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3149	1540166	204.5	290.7
+	"2006"	"2006"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2575	1032676	249.4	301.1
+	"2006"	"2006"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4565	1855455	246.0	278.3
+	"2006"	"2006"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3309	1504564	219.9	313.1
+	"2006"	"2006"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	37078	13846008	267.8	228.0
+	"2006"	"2006"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	25212	7444486	338.7	194.5
+	"2006"	"2006"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	16070	5079323	316.4	222.7
+	"2006"	"2006"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	27904	7209320	387.1	242.6
+	"2006"	"2006"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	22834	9705520	235.3	229.6
+	"2006"	"2006"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3403	1293213	263.1	450.5
+	"2006"	"2006"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2917	1429084	204.1	379.9
+	"2006"	"2006"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2642	915160	288.7	460.8
+	"2006"	"2006"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3623	1598437	226.7	375.2
+	"2006"	"2006"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3223	1399438	230.3	444.7
+	"2006"	"2006"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	35064	13927575	251.8	320.3
+	"2006"	"2006"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	25916	7189757	360.5	286.4
+	"2006"	"2006"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13663	4975113	274.6	315.1
+	"2006"	"2006"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	22960	6868066	334.3	341.1
+	"2006"	"2006"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	21525	9641442	223.3	312.9
+	"2007"	"2007"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3487	1338248	260.6	323.2
+	"2007"	"2007"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3049	1570043	194.2	269.5
+	"2007"	"2007"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2544	1034950	245.8	289.3
+	"2007"	"2007"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4579	1855300	246.8	272.6
+	"2007"	"2007"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3330	1533671	217.1	310.2
+	"2007"	"2007"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	35520	13874822	256.0	214.5
+	"2007"	"2007"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	24002	7500333	320.0	182.3
+	"2007"	"2007"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	15229	5091715	299.1	208.7
+	"2007"	"2007"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	26928	7191923	374.4	231.9
+	"2007"	"2007"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	22840	9881326	231.1	224.6
+	"2007"	"2007"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3385	1301121	260.2	426.8
+	"2007"	"2007"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2872	1458981	196.8	352.6
+	"2007"	"2007"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2591	916207	282.8	436.7
+	"2007"	"2007"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3689	1601502	230.3	374.2
+	"2007"	"2007"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3157	1428447	221.0	424.1
+	"2007"	"2007"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	33261	13957514	238.3	295.7
+	"2007"	"2007"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	24908	7250652	343.5	269.9
+	"2007"	"2007"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13199	4986628	264.7	298.5
+	"2007"	"2007"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	22660	6859701	330.3	331.4
+	"2007"	"2007"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	22092	9812975	225.1	310.5
+	"2008"	"2008"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3362	1348565	249.3	306.7
+	"2008"	"2008"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	2920	1599833	182.5	248.3
+	"2008"	"2008"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2649	1037454	255.3	296.0
+	"2008"	"2008"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4573	1863557	245.4	267.3
+	"2008"	"2008"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3282	1565986	209.6	299.0
+	"2008"	"2008"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	34385	13954544	246.4	203.8
+	"2008"	"2008"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	23746	7546154	314.7	176.5
+	"2008"	"2008"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	15241	5103088	298.7	207.6
+	"2008"	"2008"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	26783	7190126	372.5	228.6
+	"2008"	"2008"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	22334	10053324	222.2	215.0
+	"2008"	"2008"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3248	1313789	247.2	402.2
+	"2008"	"2008"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2922	1486562	196.6	348.1
+	"2008"	"2008"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2540	917777	276.8	423.2
+	"2008"	"2008"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3655	1610310	227.0	360.3
+	"2008"	"2008"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3015	1461166	206.3	392.1
+	"2008"	"2008"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	32937	14035802	234.7	285.2
+	"2008"	"2008"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	24646	7286783	338.2	261.1
+	"2008"	"2008"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13276	4999575	265.5	294.2
+	"2008"	"2008"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	22519	6867660	327.9	323.7
+	"2008"	"2008"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	22187	9984575	222.2	300.4
+	"2009"	"2009"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3238	1363153	237.5	283.4
+	"2009"	"2009"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	2968	1624390	182.7	241.2
+	"2009"	"2009"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2424	1040782	232.9	264.7
+	"2009"	"2009"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4398	1877321	234.3	250.0
+	"2009"	"2009"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3211	1603937	200.2	277.9
+	"2009"	"2009"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	32934	14035595	234.6	191.2
+	"2009"	"2009"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	22708	7581370	299.5	165.9
+	"2009"	"2009"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	14167	5114689	277.0	192.0
+	"2009"	"2009"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	25693	7193960	357.1	217.4
+	"2009"	"2009"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	21518	10229491	210.4	202.7
+	"2009"	"2009"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3187	1328571	239.9	373.3
+	"2009"	"2009"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2924	1509098	193.8	326.0
+	"2009"	"2009"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2526	920044	274.6	405.2
+	"2009"	"2009"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3589	1621430	221.3	340.2
+	"2009"	"2009"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3265	1497356	218.1	400.3
+	"2009"	"2009"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	32457	14111915	230.0	273.7
+	"2009"	"2009"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	24677	7312821	337.4	255.4
+	"2009"	"2009"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	12755	5009049	254.6	277.3
+	"2009"	"2009"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	21756	6878278	316.3	308.0
+	"2009"	"2009"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	21979	10157399	216.4	286.9
+	"2010"	"2010"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3176	1376482	230.7	269.2
+	"2010"	"2010"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	2938	1644914	178.6	232.7
+	"2010"	"2010"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2518	1043388	241.3	269.4
+	"2010"	"2010"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4138	1890362	218.9	230.0
+	"2010"	"2010"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3237	1631174	198.4	273.7
+	"2010"	"2010"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	32807	14105562	232.6	187.0
+	"2010"	"2010"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	22889	7630888	300.0	164.2
+	"2010"	"2010"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	13877	5121488	271.0	185.7
+	"2010"	"2010"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	24776	7193156	344.4	207.8
+	"2010"	"2010"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	21651	10349638	209.2	200.0
+	"2010"	"2010"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3141	1342297	234.0	362.0
+	"2010"	"2010"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2942	1527806	192.6	321.3
+	"2010"	"2010"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2503	922454	271.3	393.4
+	"2010"	"2010"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3602	1632834	220.6	338.6
+	"2010"	"2010"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3142	1524837	206.1	372.2
+	"2010"	"2010"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	32219	14175153	227.3	266.8
+	"2010"	"2010"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	24985	7358237	339.6	254.2
+	"2010"	"2010"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13065	5015227	260.5	280.1
+	"2010"	"2010"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	21069	6885161	306.0	294.6
+	"2010"	"2010"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	22192	10275353	216.0	284.2
+	"2011"	"2011"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3200	1387646	230.6	263.8
+	"2011"	"2011"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	2900	1691643	171.4	210.1
+	"2011"	"2011"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2488	1043267	238.5	258.1
+	"2011"	"2011"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4166	1910292	218.1	223.3
+	"2011"	"2011"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3331	1670207	199.4	266.5
+	"2011"	"2011"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	33257	14234455	233.6	184.9
+	"2011"	"2011"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	22495	7718779	291.4	156.6
+	"2011"	"2011"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	14029	5122168	273.9	186.1
+	"2011"	"2011"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	24603	7206439	341.4	205.1
+	"2011"	"2011"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	21032	10526906	199.8	187.8
+	"2011"	"2011"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3285	1352508	242.9	358.0
+	"2011"	"2011"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	2863	1575615	181.7	285.2
+	"2011"	"2011"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2533	924174	274.1	391.0
+	"2011"	"2011"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3400	1655217	205.4	299.9
+	"2011"	"2011"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3312	1563617	211.8	368.4
+	"2011"	"2011"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	32885	14293651	230.1	264.4
+	"2011"	"2011"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	24648	7444634	331.1	242.2
+	"2011"	"2011"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13056	5020157	260.1	273.5
+	"2011"	"2011"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	20948	6912651	303.0	287.1
+	"2011"	"2011"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	21921	10453763	209.7	266.9
+	"2012"	"2012"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3220	1394784	230.9	255.6
+	"2012"	"2012"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3130	1728341	181.1	216.5
+	"2012"	"2012"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2456	1042603	235.6	249.0
+	"2012"	"2012"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4195	1920951	218.4	216.7
+	"2012"	"2012"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3259	1707856	190.8	252.7
+	"2012"	"2012"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	32833	14327672	229.2	178.8
+	"2012"	"2012"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	23135	7798844	296.6	156.5
+	"2012"	"2012"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	13596	5116642	265.7	178.2
+	"2012"	"2012"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	23525	7205461	326.5	193.4
+	"2012"	"2012"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	21398	10671009	200.5	185.2
+	"2012"	"2012"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3250	1362472	238.5	346.8
+	"2012"	"2012"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	3035	1607022	188.9	287.1
+	"2012"	"2012"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2602	924985	281.3	390.4
+	"2012"	"2012"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3538	1670047	211.9	308.1
+	"2012"	"2012"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3362	1600359	210.1	359.8
+	"2012"	"2012"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	33029	14387823	229.6	258.3
+	"2012"	"2012"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	24941	7522121	331.6	236.1
+	"2012"	"2012"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	12939	5016520	257.9	265.2
+	"2012"	"2012"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	20897	6923622	301.8	280.4
+	"2012"	"2012"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	22873	10600157	215.8	269.3
+	"2013"	"2013"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3183	1401796	227.1	247.3
+	"2013"	"2013"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3102	1757102	176.5	206.2
+	"2013"	"2013"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2561	1042088	245.8	254.7
+	"2013"	"2013"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4335	1932425	224.3	218.6
+	"2013"	"2013"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3362	1743939	192.8	249.6
+	"2013"	"2013"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	32898	14416615	228.2	176.0
+	"2013"	"2013"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	23272	7879972	295.3	153.1
+	"2013"	"2013"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	13520	5108497	264.7	175.8
+	"2013"	"2013"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	23449	7200357	325.7	192.4
+	"2013"	"2013"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	21760	10803180	201.4	183.9
+	"2013"	"2013"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3371	1369274	246.2	346.7
+	"2013"	"2013"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	3135	1634694	191.8	285.2
+	"2013"	"2013"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2605	925486	281.5	385.2
+	"2013"	"2013"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3546	1685178	210.4	293.7
+	"2013"	"2013"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3466	1636586	211.8	354.6
+	"2013"	"2013"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	33693	14468917	232.9	256.8
+	"2013"	"2013"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	25707	7602498	338.1	235.7
+	"2013"	"2013"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13145	5013240	262.2	264.2
+	"2013"	"2013"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	21167	6926846	305.6	280.0
+	"2013"	"2013"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	23509	10734561	219.0	267.7
+	"2014"	"2014"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3156	1410053	223.8	236.5
+	"2014"	"2014"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3255	1792285	181.6	207.3
+	"2014"	"2014"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2516	1040237	241.9	244.6
+	"2014"	"2014"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4233	1940437	218.1	208.0
+	"2014"	"2014"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3539	1784932	198.3	253.3
+	"2014"	"2014"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	31442	14502917	216.8	165.3
+	"2014"	"2014"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	24555	7990618	307.3	157.3
+	"2014"	"2014"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	13727	5093945	269.5	177.7
+	"2014"	"2014"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	22744	7185397	316.5	185.6
+	"2014"	"2014"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	22354	10961200	203.9	183.7
+	"2014"	"2014"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3415	1381572	247.2	337.6
+	"2014"	"2014"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	3336	1667399	200.1	289.5
+	"2014"	"2014"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2699	924982	291.8	385.7
+	"2014"	"2014"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3834	1695636	226.1	310.1
+	"2014"	"2014"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3690	1676570	220.1	361.7
+	"2014"	"2014"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	32863	14557451	225.7	244.0
+	"2014"	"2014"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	26970	7707630	349.9	238.5
+	"2014"	"2014"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13306	5000369	266.1	262.7
+	"2014"	"2014"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	20635	6918664	298.3	268.6
+	"2014"	"2014"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	24609	10893949	225.9	271.0
+	"2015"	"2015"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3295	1418322	232.3	238.3
+	"2015"	"2015"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3434	1827363	187.9	208.4
+	"2015"	"2015"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2712	1037462	261.4	254.7
+	"2015"	"2015"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4307	1947355	221.2	205.7
+	"2015"	"2015"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3741	1828785	204.6	256.5
+	"2015"	"2015"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	33530	14569723	230.1	173.1
+	"2015"	"2015"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	25432	8124532	313.0	158.3
+	"2015"	"2015"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	14113	5070849	278.3	181.6
+	"2015"	"2015"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	23269	7163200	324.8	188.8
+	"2015"	"2015"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	23358	11118191	210.1	186.4
+	"2015"	"2015"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3548	1392128	254.9	338.5
+	"2015"	"2015"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	3442	1701217	202.3	286.0
+	"2015"	"2015"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2665	923958	288.4	379.8
+	"2015"	"2015"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3813	1706255	223.5	296.2
+	"2015"	"2015"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	3926	1719316	228.3	365.8
+	"2015"	"2015"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	34823	14627619	238.1	251.8
+	"2015"	"2015"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	28211	7834395	360.1	241.9
+	"2015"	"2015"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13688	4981627	274.8	266.4
+	"2015"	"2015"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	21412	6903191	310.2	275.3
+	"2015"	"2015"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	25572	11055820	231.3	272.7
+	"2016"	"2016"	"Female"	"F"	"Black or African American"	"2054-5"	"California"	"06"	3437	1426985	240.9	241.8
+	"2016"	"2016"	"Female"	"F"	"Black or African American"	"2054-5"	"Florida"	"12"	3632	1863070	194.9	212.1
+	"2016"	"2016"	"Female"	"F"	"Black or African American"	"2054-5"	"Illinois"	"17"	2734	1032364	264.8	255.7
+	"2016"	"2016"	"Female"	"F"	"Black or African American"	"2054-5"	"New York"	"36"	4284	1951638	219.5	200.0
+	"2016"	"2016"	"Female"	"F"	"Black or African American"	"2054-5"	"Texas"	"48"	3790	1872006	202.5	250.9
+	"2016"	"2016"	"Female"	"F"	"White"	"2106-3"	"California"	"06"	33316	14613728	228.0	169.8
+	"2016"	"2016"	"Female"	"F"	"White"	"2106-3"	"Florida"	"12"	25949	8264777	314.0	158.2
+	"2016"	"2016"	"Female"	"F"	"White"	"2106-3"	"Illinois"	"17"	13570	5045781	268.9	173.9
+	"2016"	"2016"	"Female"	"F"	"White"	"2106-3"	"New York"	"36"	22893	7129870	321.1	185.7
+	"2016"	"2016"	"Female"	"F"	"White"	"2106-3"	"Texas"	"48"	23298	11254892	207.0	181.3
+	"2016"	"2016"	"Male"	"M"	"Black or African American"	"2054-5"	"California"	"06"	3693	1402279	263.4	343.6
+	"2016"	"2016"	"Male"	"M"	"Black or African American"	"2054-5"	"Florida"	"12"	3632	1734669	209.4	289.9
+	"2016"	"2016"	"Male"	"M"	"Black or African American"	"2054-5"	"Illinois"	"17"	2732	921472	296.5	376.7
+	"2016"	"2016"	"Male"	"M"	"Black or African American"	"2054-5"	"New York"	"36"	3982	1715678	232.1	302.4
+	"2016"	"2016"	"Male"	"M"	"Black or African American"	"2054-5"	"Texas"	"48"	4024	1762079	228.4	363.2
+	"2016"	"2016"	"Male"	"M"	"White"	"2106-3"	"California"	"06"	35263	14670872	240.4	249.3
+	"2016"	"2016"	"Male"	"M"	"White"	"2106-3"	"Florida"	"12"	28288	7963838	355.2	235.2
+	"2016"	"2016"	"Male"	"M"	"White"	"2106-3"	"Illinois"	"17"	13372	4960782	269.6	256.7
+	"2016"	"2016"	"Male"	"M"	"White"	"2106-3"	"New York"	"36"	21393	6878098	311.0	271.0
+	"2016"	"2016"	"Male"	"M"	"White"	"2106-3"	"Texas"	"48"	26052	11192557	232.8	268.3
+"---"
+"Dataset: Compressed Mortality, 1999-2016"
+"Query Parameters:"
+"Title: All Black and White Circulatory"
+"2013 Urbanization: All"
+"Age Group: All"
+"Gender: Female, Male"
+"Hispanic Origin: All"
+"ICD-10 Codes: I00-I99 (Diseases of the circulatory system)"
+"Race: Black or African American, White"
+"States: California (06), Florida (12), Illinois (17), New York (36), Texas (48)"
+"Year: All, 1999 to 2016"
+"Group By: Year, Gender, Race, State"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/cmf.html for more information."
+"---"
+"Query Date: Apr 9, 2018 2:59:05 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Compressed Mortality File"
+"1999-2016 on CDC WONDER Online Database, released December 2017. Data are from the Compressed Mortality File 1999-2016 Series 20"
+"No. 2V, 2017, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/cmf-icd10.html on Apr 9, 2018 2:59:05 PM"
+"---"
+Caveats:
+"1. About sub-national population figures for regions, divisions, states and counties: population figures for 1999 are from the"
+"1990-1999 series of bridged-race intercensal estimates of the July 1 resident population; population figures for 2000 and 2010"
+"are bridged-race April 1 census counts; population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race"
+"intercensal estimates of the July 1 resident population; and population figures for 2011-2016 are bridged-race postcensal"
+"estimates of the July 1 resident population, from the Vintage 2016 series released by NCHS on June 26, 2017."
+"2. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/cmf.html#Age Group."
+"3. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/cmf.html#2000 Standard Population."
+"4. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/cmf.html#Age-Adjusted Rates."
+"5. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"6. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/cmf.html#Racial Differences."
+"7. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/cmf.html#2014-Revision."
+"8. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/cmf.html#California-Reporting-Anomalies."
