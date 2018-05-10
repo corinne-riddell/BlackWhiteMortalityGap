@@ -45,52 +45,19 @@ age_cod_results_infants_AOC <- read.csv("../Results2/age_cod_results_infants_AOC
 
 ###Abstract
 
-```{r summarize_results_for_abstract, echo = F}
-cvd.male.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Male" & COD == "Cardiovascular" & state == "Alabama") %>%
-  ungroup() %>% select(fixed.from.RE) %>% round(1)
-cvd.male.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Male" & COD == "Cardiovascular" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-cvd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-cvd.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-
-ncd.male.average <- cod_decomp_results %>% filter(sex == "Male" & COD == "Non-communicable" & state == "Alabama") %>% 
-  select(fixed.from.RE) %>% summarize(mean = round(mean(fixed.from.RE), 1))
-ncd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Non-communicable" & state == "Alabama") %>% ungroup() %>%  select(fixed.from.RE) %>% round(1)
-ncd.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Non-communicable" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-
-can.male.max <- cod_decomp_results %>% filter(sex == "Male" & COD == "Cancers" & state == "Alabama") %>% 
-  select(fixed.from.RE, year) %>% summarize(max = round(max(fixed.from.RE), 1))
-can.female.average <- cod_decomp_results %>% filter(sex == "Female" & COD == "Cancers" & state == "Alabama") %>% 
-  select(fixed.from.RE) %>% summarize(mean = round(mean(fixed.from.RE), 1))
-
-inj.male.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Male" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-inj.male.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Male" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-inj.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-inj.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
-```
-
-**Objective:** To describe the pattern of contributions of six major causes of deaths to the black-white life expectancy gap across US states over the last half-century, and identify divergent states.
-
-**Design:** A retrospective, repeated cross-sectional study of all deaths.
-
-**Setting:** 39 US States and the District of Columbia. 
-
-**Participants:** Using vital statistics and census data, we extracted the number of deaths and population sizes for the years 1969 to 2013, by state, gender, race, 19 age groups, and six major cause-of-death groups.
-
-**Primary outcome measure:** We estimated trends in the gender-specific contribution of six major causes of death to the gap in life expectancy between black and whites and their 95% credible bands.
-
-**Results:** Although mortality from cardiovascular disease has decreased dramatically, its contribution to the black-white life expectancy gap increased over time for men (from `r sprintf("%.1f", cvd.male.1969)` to `r cvd.male.2013` years), but decreased for women (from `r cvd.female.1969` to `r sprintf("%.1f", cvd.female.2013)` years). The contribution of non-communicable diseases to the gap was stable over time for men (approximately `r ncd.male.average` years) and decreased for women (from `r ncd.female.1969` to `r ncd.female.2013` years), while cancers exhibited an inverted-U trend for men (peaking at `r can.male.max` years in the early 1990s) and a stable contribution for women (approximately `r can.female.average` years). Both genders exhibited a decreased contribution from injuries (men: `r inj.male.1969` to `r inj.male.2013` years), that became negative for women (women: `r inj.female.1969` to `r inj.female.2013` years). Several states diverged from these general trends.
-
-**Conclusions:** The black-white life expectancy gap has decreased substantially in the US since 1969. For men, much of this improvement was due to narrowing differences in injury-related mortality, but these contributions were rivalled by an increasing gap in CVD-related mortality. In women, a crossover in injury-related mortality led to a narrower gap, due partially to increasing mortality among whites.
+Life expectancy has increased in the United States over many decades. The difference in life expectancy between black and white Americans has also decreased, but some states have made much more progress towards racial equality than others. This paper describes the pattern of contributions of six major causes of death to the black-white life expectancy gap within US states and the District of Columbia between 1969 and 2013, and identifies states diverging from the overall pattern. Across multiple causes, the District of Columbia, Illinois, Wisconsin, and Michigan had the highest contributions to black-white inequality, while New York, Massachusetts, and Rhode Island had the lowest contributions and have either achieved or are the closest to achieving black-white equality in life expectancy. 
 
 ----
 
 ###Introduction
 
-Life expectancy is a barometer for overall population health. In 2014, life expectancy at birth in the United States was 78.8 years, but hidden within this summary are important subgroups differences. Whites lived 3.4 years longer than blacks.^1^ While both black and white Americans have experienced increases in life expectancy since the beginning of the 20^th^ century, the difference between their life expectancies has varied over time.^2^ 
+Life expectancy is a barometer for overall population health. In 2014, life expectancy at birth in the United States (US) was 78.8 years, but hidden within this summary are important subgroup differences. Whites lived 3.4 years longer than blacks (Cunningham et al., 2017). While both black and white Americans have experienced increases in life expectancy since the beginning of the twentieth century, the difference between their life expectancies has varied over time (Fuchs, 2016). 
 
-During the 1980s the life expectancy gap widened, but then narrowed in the 1990s due largely to relative mortality improvements among blacks in deaths from homicide, HIV/AIDS, unintentional injuries, and, among women, from differential improvements in heart disease.^3^ The gap continued to narrow during the 2000s, but US states differed markedly in the magnitude of improvement. For example, the life expectancy gap in New York decreased from 8.0 to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 to 5.6 years.^4^ However, the extent to which different causes of death may have contributed to state-level changes in the black-white gap are unknown.
+During the 1980s the life expectancy gap widened, but then narrowed in the 1990s due largely to relative mortality improvements among blacks in deaths from homicide, HIV/AIDS, unintentional injuries, and, among women, from differential improvements in heart disease (Harper et al., 2007). The overall black-white gap continued to narrow during the 2000s, but US states differed markedly in the magnitude of improvement. For example, Harper et al. estimated that the black-white life expectancy gap in New York decreased from 8.0 to 2.4 years between 1990 and 2009, but in California the decrease was much more modest -- from 6.7 to 5.6 years (Harper et al., 2014). While the previous publication estimated changes to the black-white life expectancy gap for each US state, it did not shed light on why some states progressed more than others.
 
-The overarching objective of this study is to describe the contribution of selected causes of death to the black-white life expectancy gap over forty-five years, and identify divergent states and gender differences. To do so, we estimated state-level trends in the contribution of six major causes of death to the black-white life expectancy gap for men and women. This facilitates the identification of common reasons for the decreasing life expectancy gap and the identification of anomalous states. This study may therefore facilitate the identification of policies or social conditions in highly successful states, and suggest broad targets for interventions to further reduce the gap in less successful states. 
+Race-specific mortality trajectories within a state are likely affected by both national and state-specific factors, some of which could be affected by state-level policymaking. Taking cardiovascular disease (CVD) as an example, several state policies have direct or indirect effects on CVD risk factors. For example, excise taxes on tobacco were introduced between 1921 and 1969 across all states, and the magnitude of increases have varied across states, leading to large present-day differences (e.g., \$0.17 in Missouri vs. \$4.35 in New York) (Centers for Disease Control and Preventaion, 2018). Policies targeting obesity through promotion of physical activity and nutrition also vary by state, (Trust for America's Health and the Robert Wood Johnson Foundation, 2018) as do restrictions on vehicle emissions, with twelve states following the stricter standards imposed in California (California Air Resources Board, 2018). Thus, policies and other state-level characteristics may be implicated in deaths from specific causes. However, a first step in understanding the potential impact of state policies is to examine the extent to which different causes of death have contributed to state-level changes in the black-white life expectancy gap.
+
+The overarching objective of this study is to describe the contribution of selected causes of death to the black-white life expectancy gap over forty-five years, and identify divergent states. To do so, we estimated state-level trends in the contribution of six major causes of death to the black-white life expectancy gap for men and women. This facilitates the identification of causes of death whose mortality trends for blacks and whites have changed in ways that contributed to narrowing or widening the black-white life expectancy gap, and the identification of states for which cause-specific contributions are particularly high or low compared to the overall average. The study may therefore facilitate the identification of policies or social conditions states with narrow black-white gaps, and suggest broad targets for interventions to further reduce the black-white gap in less states that have seen less progress in reducing racial inequality.
 
 ###Methods
 
@@ -217,6 +184,28 @@ refine.patterns <- function(plot) {
 **Figures 1 - 6** display trends in the contribution of each broad cause of death to the life expectancy gap for men (panel A) and women (panel B), in years, for each state. The blue line depicts the mean of the smoothed contribution estimated for each state, such that states can have very different trend lines. These lines are overlaid with the meta-estimated national trend, shown with a red line. We supplement these main results with smoothed estimates of the age-standardized mortality rates for each cause of death (**Figures S3-S14**). 
 
 **Cardiovascular disease**
+```{r summarize_results, echo = F}
+cvd.male.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Male" & COD == "Cardiovascular" & state == "Alabama") %>%
+  ungroup() %>% select(fixed.from.RE) %>% round(1)
+cvd.male.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Male" & COD == "Cardiovascular" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+cvd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+cvd.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Cardiovascular" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+
+ncd.male.average <- cod_decomp_results %>% filter(sex == "Male" & COD == "Non-communicable" & state == "Alabama") %>% 
+  select(fixed.from.RE) %>% summarize(mean = round(mean(fixed.from.RE), 1))
+ncd.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Non-communicable" & state == "Alabama") %>% ungroup() %>%  select(fixed.from.RE) %>% round(1)
+ncd.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Non-communicable" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+
+can.male.max <- cod_decomp_results %>% filter(sex == "Male" & COD == "Cancers" & state == "Alabama") %>% 
+  select(fixed.from.RE, year) %>% summarize(max = round(max(fixed.from.RE), 1))
+can.female.average <- cod_decomp_results %>% filter(sex == "Female" & COD == "Cancers" & state == "Alabama") %>% 
+  select(fixed.from.RE) %>% summarize(mean = round(mean(fixed.from.RE), 1))
+
+inj.male.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Male" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+inj.male.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Male" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+inj.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+inj.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
+```
 
 Cardiovascular disease (CVD) is the most common cause of death for both men and women of both races. Mortality from CVD decreased markedly since 1969 for all groups (**Figures S3 and S4**), but white men underwent relatively larger mortality decreases than black men. As a result, the contribution of CVD to the black-white life expectancy gap among men increased modestly for most states from `r sprintf("%.1f", cvd.male.1969)` to `r cvd.male.2013` years (**Figure 1A**). Black women experienced relatively larger CVD mortality decreases over time compared to white women, resulting in a decrease of CVD to the contribution to the life expectancy gap from `r cvd.female.1969` to `r sprintf("%.1f", cvd.female.2013)` years nationally (**Figure 1B**). For both genders, Michigan, Wisconsin, California, and DC demonstrated higher-than-average increases in the contribution of CVD over time, whereas Massachusetts and New York showed persistently lower CVD contributions.
 
