@@ -41,6 +41,9 @@ cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiov
                                                                         "Communicable", "Non-communicable",  "Injuries"))
 
 age_cod_results_infants_AOC <- read.csv("../Results2/age_cod_results_infants_AOC_cubic.csv")
+
+BlackWhite_results <- read.csv("../Results2/BlackWhite_results.csv")
+BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
 ```
 
 ###Abstract
@@ -179,9 +182,88 @@ refine.patterns <- function(plot) {
 #refine.patterns(Cardiovascular.Male.plot[[3]])
 ```
 
-**Figure S1 and S2** display trends in the life expectancy gap for men and women, respectively. For men and women, the life expectancy gap has decreased since 1969, although several states exhibited a period of increasing inequality that peaked in the early 1990s, especially among men. 
+**Figs 1A and 1B** display trends in the life expectancy gap for men and women, respectively. These tile maps are organized to approximate the shape of the US and the spatial relations among states. For men and women, the life expectancy gap has decreased since 1969, although several states exhibited a period of increasing inequality that peaked in the early 1990s, especially among men. 
 
-**Figures 1 - 6** display trends in the contribution of each broad cause of death to the life expectancy gap for men (panel A) and women (panel B), in years, for each state. The blue line depicts the mean of the smoothed contribution estimated for each state, such that states can have very different trend lines. These lines are overlaid with the meta-estimated national trend, shown with a red line. We supplement these main results with smoothed estimates of the age-standardized mortality rates for each cause of death (**Figures S3-S14**). 
+**Figure 1A: State-level trends in the black-white life expectancy gap in men, United States, 1969-2013**
+
+```{r life-expectancy-trends, echo=F}
+LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == "Male"), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  labs(fill = "Census Division") +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)")
+
+LE_trend_plot_females <- ggplot(data = subset(BlackWhite_results, sex == "Female"), aes(y = LE_wbgap_mean, x = year)) + 
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
+  labs(fill = "Census Division") +
+  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)")
+```  
+
+```{r plot_LE_trends_males, echo=F, fig.height=10, fig.width=12}
+le.gap.men <- LE_trend_plot_males +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5) + 
+  ggtitle("A) Black-white life expectancy gap in men")
+
+le.gap.men
+```
+
+**Figure 1A Caption:** The bands illustrate the 95% credible interval around the mean trend line for men. States with more imprecise estimates (often due to small black populations) have wider credible intervals. The estimated life expectancy gap in California in men in 1972 is much higher than in surrounding years. This anomaly is also illustrated in Fig. 3, and is a product of an unexpectedly low CVD-related mortality rate among white males in California in 1972, likely denoting a coding error. Thus the data for this state and year should be interpreted with caution.
+
+**Figure 1B: State-level trends in the black-white life expectancy gap in women, United States, 1969-2013**
+
+```{r plot_LE_trends_females, echo=F, fig.height=10, fig.width=12}
+le.gap.women <- LE_trend_plot_females +
+  geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
+  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
+  ggtitle("B) Black-white life expectancy gap in women")
+
+le.gap.women
+```
+
+**Figure 1B Caption:** The bands illustrate the 95% credible interval around the mean trend line for women. States with more imprecise estimates (often due to small black populations) have wider credible intervals. 
+
+```{r plot_both, eval=F, echo=F}
+#Informative: male and females at the same time
+#Not used
+ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
+  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
+  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, group = sex, fill = Census_Division), alpha = 0.5) +
+  geom_line(aes(group = sex, col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
+  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
+  theme_classic(base_size = 14) +
+  theme(axis.text.x = element_blank(),
+        strip.background=element_blank(),
+        axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  ylab("Life expectancy gap (years)") +
+  xlab("Year (1969-2013)"))
+```
+
+**Figures 2-7** display trends in the contribution of each broad cause of death to the life expectancy gap for men (panel A) and women (panel B), in years, for each state. The blue line depicts the mean of the smoothed contribution estimated for each state, such that states can have very different trend lines. These lines are overlaid with the meta-estimated national trend, shown with a red line. 
+
+For causes of death that have undergone mortality reductions over the time period (like CVD), narrowing contributions of causes to the black-white life expectancy gap will result from faster declines in cause-specific mortality among blacks vs. whites. However, narrowing gaps can also occur even if mortality increased for both groups, or if it increased for whites but decreased for blacks. Thus, we supplement these main results with smoothed estimates of the age-standardized mortality rates for each cause of death for blacks and whites (**Supplementary Appendix Figures S1-S12**). To aid direct comparisons of each cause’s contribution to each other and between men and women in a given state, plots overlaying all causes onto a single graph for each state side-by-side for men and women can be found in **Supplementary Appendix 2**.
 
 **Cardiovascular disease**
 ```{r summarize_results, echo = F}
@@ -207,10 +289,10 @@ inj.female.1969 <- cod_decomp_results %>% filter(year == 1969 & sex == "Female" 
 inj.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" & COD == "Injuries" & state == "Alabama") %>% ungroup() %>% select(fixed.from.RE) %>% round(1)
 ```
 
-Cardiovascular disease (CVD) is the most common cause of death for both men and women of both races. Mortality from CVD decreased markedly since 1969 for all groups (**Figures S3 and S4**), but white men underwent relatively larger mortality decreases than black men. As a result, the contribution of CVD to the black-white life expectancy gap among men increased modestly for most states from `r sprintf("%.1f", cvd.male.1969)` to `r cvd.male.2013` years (**Figure 1A**). Black women experienced relatively larger CVD mortality decreases over time compared to white women, resulting in a decrease of CVD to the contribution to the life expectancy gap from `r cvd.female.1969` to `r sprintf("%.1f", cvd.female.2013)` years nationally (**Figure 1B**). For both genders, Michigan, Wisconsin, California, and DC demonstrated higher-than-average increases in the contribution of CVD over time, whereas Massachusetts and New York showed persistently lower CVD contributions.
+Cardiovascular disease (CVD) is the most common cause of death for black and white men and women. Mortality from CVD decreased markedly since 1969 for all groups (**Supplementary Appendix 1 Figs. S1 and S2**), but white men underwent relatively larger mortality decreases than black men. As a result, the contribution of CVD to the black-white life expectancy gap among men increased modestly for most states from `r sprintf("%.1f", cvd.male.1969)` to `r cvd.male.2013` years (**Fig. 2A**). Black women experienced relatively larger CVD mortality decreases over time compared to white women, resulting in a decrease of CVD to the contribution to the life expectancy gap from `r cvd.female.1969` to `r sprintf("%.1f", cvd.female.2013)` years nationally (**Figure 2B**). For both genders, Michigan, Wisconsin, California, and DC demonstrated higher-than-average increases in the contribution of CVD over time, whereas Massachusetts and New York showed persistently lower CVD contributions.
 
 
-**Figure 1A: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
+**Figure 2A: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot, fig.width = 12, fig.height = 10, echo = F}
 cvd.men <- Cardiovascular.Male.plot[[3]] +
@@ -222,11 +304,12 @@ cvd.men <- Cardiovascular.Male.plot[[3]] +
   geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) + 
   ggtitle("A) Contribution of CVD to the gap in men")
 
+cvd.men
 ```
 
-**Figure 1 Legend:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of CVD to the black-white life expectancy gap over time. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states. The early spike in California's trend line illustrates the unexpectedly high estimate of the CVD contribution to the black-white life expectancy gap among California males in 1972. This anomolous estimate reflects the unexpectedly low CVD-related mortality rate among white males in California in 1972, and likely denotes a coding error. Thus the data for this state and year should be interpreted with caution.
+**Figure 2A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of CVD to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states. The early spike in California's trend line illustrates the unexpectedly high estimate of the CVD contribution to the black-white life expectancy gap among California males in 1972. This anomolous estimate reflects the unexpectedly low CVD-related mortality rate among white males in California in 1972, and likely denotes a coding error. Thus the data for this state and year should be interpreted with caution.
 
-**Figure 1B: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
+**Figure 2B: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
 ```{r print-plot-2, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Cardiovascular.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -239,13 +322,16 @@ cvd.women <- Cardiovascular.Female.plot[[3]]  +
   geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) + 
   ggtitle("B) Contribution of CVD to the gap in women")
 
+cvd.women
 ```
+
+**Figure 2B Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of CVD to the black-white life expectancy gap over time for women. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
 
 **Cancer**
 
-For all groups, mortality from cancer peaked in the mid 1990s and decreased thereafter (**Figures S5 and S6**). Among men, this led to an inverted-U shape pattern in cancer's contribution to the life expectancy gap (**Figure 2A**), with a peak contribution of `r can.male.max` in the early 1990s. For women, although cancer-related mortality continues to be higher among blacks in many states, the mortality trends were similar between blacks and whites, resulting in a generally stable national pattern in the contribution of cancer to the life expectancy over time of approximately `r can.female.average` years (**Figure 2B**). For both genders, DC and Wisconsin exhibit the largest cancer contributions (and also exhibit high initial values among men), while New York and Massachusetts experienced large decreases in the contribution of cancer to the life expectancy gap.
+For all groups, mortality from cancer peaked in the mid 1990s and decreased thereafter (**Supplementary Appendix 1 Figs. S3 and S4**). Among men, this led to an inverted-U shape pattern in cancer's contribution to the life expectancy gap (**Figure 3A**), with a peak contribution of `r can.male.max` in the early 1990s. For women, although cancer-related mortality continues to be higher among blacks in many states, the mortality trends were similar between blacks and whites, resulting in a generally stable national pattern in the contribution of cancer to the life expectancy gap over time of approximately `r can.female.average` years (**Figure 3B**). For both genders, DC and Wisconsin exhibit the largest cancer contributions (and also exhibit high initial values among men), while New York and Massachusetts experienced large decreases in the contribution of cancer to the life expectancy gap.
 
-**Figure 2A: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
+**Figure 3A: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-3, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Cancers.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -256,9 +342,12 @@ can.men <- Cancers.Male.plot[[3]] +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) + 
   ggtitle("A) Contribution of cancer to the gap in men")
 
+can.men
 ```
 
-**Figure 2B: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
+**Figure 3A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of cancer to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+**Figure 3B: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
 ```{r print-plot-4, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Cancers.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -269,13 +358,16 @@ can.women <- Cancers.Female.plot[[3]] +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) + 
   ggtitle("B) Contribution of cancer to the gap in women")
 
+can.women
 ```
+
+**Figure 3B Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of cancer to the black-white life expectancy gap over time for women. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
 
 **Non-communicable disease**
 
-Mortality from non-communicable disease increased over time for men in most states, with DC as a notable exception (**Figure S7**). Recently, there was a slight decrease in mortality rates, especially among black men. These trends are similar among women, except that black women exhibited a sharper decline in mortality in recent years, eliminating the mortality difference in several states (**Figure S8**). As such, the contribution of non-communicable disease to the life expectancy gap was generally flat among men (approximately `r ncd.male.average` years), and exhibited a gradual decrease over time among women from `r ncd.female.1969` to `r ncd.female.2013` years (**Figures 3A and 3B**). As with other causes, New York and Massachusetts exhibited decreasing contributions, and Nevada also made substantial progress. Furthermore, while DC's mortality rates decreased, they presently have the highest contribution of non-communicable disease to the gap. 
+Mortality from non-communicable disease increased over time for men in most states, with DC as a notable exception (**Supplementary Appendix 1 Figs. S5**). Recently, there was a slight decrease in mortality rates, especially among black men. These trends are similar among women, except that black women exhibited a sharper decline in mortality in recent years, eliminating the mortality difference in several states (**Supplementary Appendix 1 Figs. S6**). As such, the contribution of non-communicable disease to the life expectancy gap was generally flat among men (approximately `r ncd.male.average` years), and exhibited a gradual decrease over time among women from `r ncd.female.1969` to `r ncd.female.2013` years (**Figures 4A and 4B**). As with other causes, New York and Massachusetts exhibited decreasing contributions, and Nevada also made substantial progress. Furthermore, while DC's mortality rates decreased, they presently have the highest contribution of non-communicable disease to the gap. 
 
-**Figure 3A: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
+**Figure 4A: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-5, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(`Non-communicable.Male.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -288,9 +380,12 @@ ncd.men <- `Non-communicable.Male.plot`[[3]] +
   scale_y_continuous(breaks = seq(-0.5, 1.5, by = 0.5), labels = seq(-0.5, 1.5, by = 0.5)) +
   ggtitle("A) Contribution of non-communicable disease to the gap in men")
 
+ncd.men
 ```
 
-**Figure 3B: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
+**Figure 4A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of non-communicable disease to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+**Figure 4B: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
 ```{r print-plot-6, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(`Non-communicable.Female.plot`[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -304,14 +399,17 @@ ncd.women <- `Non-communicable.Female.plot`[[3]] +
   scale_y_continuous(breaks = seq(-1, 1.5, by = 0.5), labels = seq(-1, 1.5, by = 0.5)) + 
   ggtitle("B) Contribution of non-communicable disease to the gap in women")
 
+ncd.women
 ```
+
+**Figure 4B Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of non-communicable disease to the black-white life expectancy gap over time for women. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
 
 **Injury**
 
-Trends in mortalilty from injuries differ for blacks and whites. Over time, injury-related mortality has decreased precipitously among blacks, although an epidemic of homicide resulted in heightened mortality from injuries among black men during the 1980s and early 1990s (**Figure S9**).^3^ For whites, most states exhibit an initial period of gradual decreases in injury mortality, followed by a period of gradual increases, especially among white women (**Figure S10**). Thus, injury mortality rates among blacks are equivalent to, or lower than those among whites in many states, with white women demonstrating sharper recent increases. The contribution of injuries to the mortality gap has therefore decreased substantially over time from `r inj.male.1969` to `r inj.male.2013` years among men. Among women, the contribution went from `r inj.female.1969` in 1969 to `r inj.female.2013` in 2013, becoming negative in those states that now have lower injury-related mortality among blacks than whites (**Figures 4A and 4B**). Among men, DC, Illinois, Michigan and Missouri exhibit the largest recent injury-related contributions. Among women, many southern states exhibit negative contributions (indicating lower injury-related mortality among black women), while DC, Illinois, and Michigan having higher contributions than the general trend.
+Trends in mortalilty from injuries differ for blacks and whites. Over time, injury-related mortality has decreased precipitously among blacks, although an epidemic of homicide resulted in heightened mortality from injuries among black men during the 1980s and early 1990s (**Supplementary Appendix 1 Figs. S7**) (Harper et al., 2007). For whites, most states exhibit an initial period of gradual decreases in injury mortality, followed by a period of gradual increases, especially among white women (**Supplementary Appendix 1 Figs. S8**). Thus, in the most recent data, injury mortality rates among blacks are equivalent to, or lower than those among whites in many states, with white women demonstrating sharper recent increases. The contribution of injuries to the mortality gap has therefore decreased substantially over time from `r inj.male.1969` to `r inj.male.2013` years among men. Among women, the contribution went from `r inj.female.1969` in 1969 to `r inj.female.2013` in 2013, becoming negative in those states that now have lower injury-related mortality among blacks than whites (**Figures 5A and 5B**). Among men, DC, Illinois, Michigan and Missouri exhibit the largest recent injury-related contributions. Among women, many southern states exhibit negative contributions (indicating lower injury-related mortality among black women), while DC, Illinois, and Michigan having higher contributions than the general trend.
 
 
-**Figure 4A: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
+**Figure 5A: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-7, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Injuries.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -326,9 +424,12 @@ inj.men <-`Injuries.Male.plot`[[3]] +
   geom_hline(aes(yintercept = 6), lwd = 0.5, col = "grey", alpha = 0.5) + 
   ggtitle("A) Contribution of injury to the gap in men")
   
+inj.men
 ```
 
-**Figure 4B: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
+**Figure 5A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of injury to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+**Figure 5B: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
 ```{r print-plot-8, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Injuries.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -341,8 +442,11 @@ inj.women <- `Injuries.Female.plot`[[3]] +
   geom_hline(aes(yintercept = 1), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
   ggtitle("B) Contribution of injury to the gap in women")
+
+inj.women
 ```
 
+**Figure 5B Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of injury to the black-white life expectancy gap over time for women. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
 
 **Communicable disease**
 
@@ -364,9 +468,9 @@ com.female.mid.max <- cod_decomp_results %>% filter(year > 1980, sex == "Female"
 
 ```
 
-Of the major causes that we considered, mortality from communicable disease was the lowest, although the 1990s exhibited an enormous increase in mortality at the height of the HIV/AIDS epidemic before antiretroviral therapy was available (**Figures S11 and S12**). This spike was greater among men, especially blacks, and among states with larger urban centers. The contribution of communicable disease to the life expectancy gap therefore exhibited a peak in the early 1990s on `r com.male.mid.max` years in men and `r com.female.mid.max` years in women, with states diverging from this general pattern according to the intensity of their local epidemics (**Figures 5A and 5B**). DC still exhibits higher communicable disease-related contributions among men, while New Jersey and Florida additionally show higher contributions among women.
+Of the major causes that we considered, mortality from communicable disease was the lowest, although the 1990s exhibited an enormous increase in mortality at the height of the HIV/AIDS epidemic before antiretroviral therapy was available (**Supplementary Appendix 1 Figs. S9 and S10**). This spike was greater among men, especially blacks, and among states with larger urban centers. The contribution of communicable disease to the life expectancy gap therefore exhibited a peak in the early 1990s on `r com.male.mid.max` years in men and `r com.female.mid.max` years in women, with states diverging from this general pattern according to the intensity of their local epidemics (**Figures 6A and 6B**). DC still exhibits higher communicable disease-related contributions among men, while New Jersey and Florida additionally show higher contributions among women.
 
-**Figure 5A: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
+**Figure 6A: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-9, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Communicable.Male.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -378,9 +482,13 @@ com.men <- `Communicable.Male.plot`[[3]] +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
   ggtitle("A) Contribution of communicable disease to the gap in men")
+
+com.men
 ```
 
-**Figure 5B: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
+**Figure 6A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of communicable disease to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+**Figure 6B: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
 ```{r print-plot-10, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -393,7 +501,12 @@ com.women <- `Communicable.Female.plot`[[3]] +
   geom_hline(aes(yintercept = 1.5), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5) +
   ggtitle("B) Contribution of communicable disease to the gap in women")
+
+com.women
 ```
+
+**Figure 6B Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of communicable disease to the black-white life expectancy gap over time for women. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
 **All other causes**
 
 ```{r, echo = F}
@@ -414,11 +527,11 @@ proportions.males <- aoc.male.endpoints.infant/aoc.male.endpoints
 proportions.females <- aoc.female.endpoints.infant/aoc.female.endpoints
 ```
 
-Mortality from all other causes generally decreased earlier in the time period, especially among blacks (**Figures S13 and S14**). White men and women have shown increasing mortality rates from all other causes since the 1980s, along with black women, whereas black men have continued to experience decreasing rates within several states. As such, the contribution of all other causes to the life expectancy gap has generally decreased over time (from `r sprintf("%.1f", aoc.male.endpoints[1, 1])` to `r aoc.male.endpoints[2, 1]` years among males and `r aoc.female.endpoints[1, 1]` to `r aoc.female.endpoints[2, 1]` years among females), and is virtually zero in New York, Massachusetts, and Rhode Island for both genders (**Figures 6A and 6B**). The most disparate states are Pennsylvania and DC, with much larger contributions estimated for all other causes in the earlier years within Pennsylvania and in the later years within DC. 
+Mortality from all other causes generally decreased earlier in the time period, especially among blacks (**Supplementary Appendix 1 Figs. S11 and S12**). White men and women have shown increasing mortality rates from all other causes since the 1980s, along with black women, whereas black men have continued to experience decreasing rates within several states. As such, the contribution of all other causes to the life expectancy gap has generally decreased over time (from `r sprintf("%.1f", aoc.male.endpoints[1, 1])` to `r aoc.male.endpoints[2, 1]` years among males and `r aoc.female.endpoints[1, 1]` to `r aoc.female.endpoints[2, 1]` years among females), and is virtually zero in New York, Massachusetts, and Rhode Island for both genders (**Figures 7A and 7B**). The most disparate states are Pennsylvania and DC, with much larger contributions estimated for all other causes in the earlier years within Pennsylvania and in the later years within DC. 
 
-Because the majority of infant deaths are classified as being due to all other causes in our analysis, we also tried to separate any impact of all other causes from those of infant mortality more generally. We conducted a sensitivity analysis to calculate the contribution of deaths due to all other causes that occurred during the first year of life to the life expectancy gap (**Figures S15 and S16**). We found that `r proportions.males[1,1]*100`% of the contribution of all other causes to the gap was due to differences in infant mortality in 1969 in males and `r round(proportions.females[1,1]*100, 0)`% in females. In 2013, this proportion reached `r proportions.males[2,1]*100`% in males and `r proportions.females[2,1]*100`% in females. Thus, the trend in the all other causes contribution partially reflects a decreasing contribution from infant mortality.
+Because the majority of infant deaths are classified as being due to all other causes in our analysis, we also tried to separate any impact of all other causes from those of infant mortality more generally. We conducted a sensitivity analysis to calculate the contribution of deaths due to all other causes that occurred during the first year of life to the life expectancy gap (**Supplementary Appendix 1 Figs. S13 and S14**). We found that `r proportions.males[1,1]*100`% of the contribution of all other causes to the gap was due to differences in infant mortality in 1969 in males and `r round(proportions.females[1,1]*100, 0)`% in females. In 2013, this proportion reached `r proportions.males[2,1]*100`% in males and `r proportions.females[2,1]*100`% in females. Thus, the trend in the all other causes contribution partially reflects a increasing contribution from infant mortality.
 
-**Figure 6A: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
+**Figure 7A: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-11, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -432,9 +545,13 @@ aoc.men <- `All other causes.Male.plot`[[3]] +
   geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) +
   ggtitle("A) Contribution of all other causes to the gap in men")
+
+aoc.men
 ```
 
-**Figure 6B: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
+**Figure 7A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of all other causes to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+**Figure 7B: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
 ```{r print-plot-12, fig.width = 12, fig.height = 10, echo = F}
 #ggplotly(Communicable.Female.plot[[1]]) %>% layout(xaxis = list(title = "Year"))
@@ -448,9 +565,15 @@ aoc.women <- `All other causes.Female.plot`[[3]] +
   geom_hline(aes(yintercept = 3), lwd = 0.5, col = "grey", alpha = 0.5) +
   geom_hline(aes(yintercept = 4), lwd = 0.5, col = "grey", alpha = 0.5) +
   ggtitle("B) Contribution of all other causes to the gap in women")
+
+aoc.women
 ```
 
-```{r save-figs}
+**Figure 7B Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of all other causes to the black-white life expectancy gap over time for women. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+```{r save-figs, echo=F, eval=F}
+ggsave(filename = "../Plots/figure1a.jpeg", plot = le.gap.men, device = "jpeg", width = 12, height = 10, units = "in")
+ggsave(filename = "../Plots/figure1b.jpeg", plot = le.gap.women, device = "jpeg", width = 12, height = 10, units = "in")
 ggsave(filename = "../Plots/figure2a.jpeg", plot = cvd.men, device = "jpeg", width = 12, height = 10, units = "in")
 ggsave(filename = "../Plots/figure2b.jpeg", plot = cvd.women, device = "jpeg", width = 12, height = 10, units = "in")
 ggsave(filename = "../Plots/figure3a.jpeg", plot = can.men, device = "jpeg", width = 12, height = 10, units = "in")
