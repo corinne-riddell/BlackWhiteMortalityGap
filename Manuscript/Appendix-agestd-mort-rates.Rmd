@@ -28,9 +28,6 @@ library(plotly)
 library(forcats)
 source("../Code/life_expectancy_functions.R")
 
-BlackWhite_results <- read.csv("../Results2/BlackWhite_results.csv")
-BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
-
 mortality.rates <- read.csv("../Results2/mortality_rates_combined.csv")
 mortality.rates.diff <- read.csv("../Results2/mortality_rates_diff_combined.csv")
 
@@ -139,81 +136,6 @@ for(COD_i in levels(mortality.rates$COD)) {
 | Non-communicable disease | Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Syndrome and Nephrosis.  |
 | Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
-
-**Figure S1: State-level trends in the black-white life expectancy gap in men, United States, 1969-2013**
-
-```{r life-expectancy-trends, echo=F}
-LE_trend_plot_males <- ggplot(data = subset(BlackWhite_results, sex == "Male"), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
-  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
-  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
-  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
-  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
-  theme_classic(base_size = 14) +
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  labs(fill = "Census Division") +
-  ylab("Life expectancy gap (years)") +
-  xlab("Year (1969-2013)")
-
-LE_trend_plot_females <- ggplot(data = subset(BlackWhite_results, sex == "Female"), aes(y = LE_wbgap_mean, x = year)) + 
-  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +             
-  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, fill = Census_Division)) +
-  labs(fill = "Census Division") +
-  #geom_line(aes(col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
-  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
-  theme_classic(base_size = 14) +
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  ylab("Life expectancy gap (years)") +
-  xlab("Year (1969-2013)")
-```  
-
-```{r plot_LE_trends_males, echo=F, fig.height=10, fig.width=13}
-le.gap.men <- LE_trend_plot_males +
-  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 15), lwd = 0.5, col = "grey", alpha = 0.5) + 
-  ggtitle("A) Black-white life expectancy gap in men")
-
-```
-
-**Figure S1 Legend:** The bands illustrate the 95% credible interval around the mean trend line. States with more imprecise estimates (often due to small black populations) have wider credible intervals. The estimated life expectancy gap in California in 1972 is much higher than in surrounding years. This anomaly is also illustrated in Figure 3, and is a product of an unexpectedly low CVD-related mortality rate among white males in California in 1972, likely denoting a coding error. Thus the data for this state and year should be interpreted with caution.
-
-**Figure S2: State-level trends in the black-white life expectancy gap in women, United States, 1969-2013**
-
-```{r plot_LE_trends_females, echo=F, fig.height=10, fig.width=13}
-le.gap.women <- LE_trend_plot_females +
-  geom_hline(aes(yintercept = -5), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 0), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 5), lwd = 0.5, col = "grey", alpha = 0.5) +
-  geom_hline(aes(yintercept = 10), lwd = 0.5, col = "grey", alpha = 0.5) +
-  ggtitle("B) Black-white life expectancy gap in women")
-
-
-ggsave(filename = "../Plots/figure1a.jpeg", plot = le.gap.men, device = "jpeg", width = 12, height = 10, units = "in")
-ggsave(filename = "../Plots/figure1b.jpeg", plot = le.gap.women, device = "jpeg", width = 12, height = 10, units = "in")
-```
-
-```{r plot_both, eval=F, echo=F}
-#Informative: male and females at the same time
-ggplotly(ggplot(data = subset(BlackWhite_results), aes(y = LE_wbgap_mean, x = year)) + #, sex == "Male"
-  geom_hline(aes(yintercept = 0)) + geom_vline(aes(xintercept = 1969)) +
-  geom_ribbon(aes(ymin = LE_wbgap_lcl, ymax = LE_wbgap_ucl, group = sex, fill = Census_Division), alpha = 0.5) +
-  geom_line(aes(group = sex, col = Census_Division)) + #add this for the online version, and then adjust legend and hover display
-  facet_wrap(~ stabbrs.map.order, ncol = 11, drop = F) +
-  theme_classic(base_size = 14) +
-  theme(axis.text.x = element_blank(),
-        strip.background=element_blank(),
-        axis.line=element_blank(),
-        axis.ticks=element_blank()) +
-  ylab("Life expectancy gap (years)") +
-  xlab("Year (1969-2013)"))
-```
 
 **Figure S3: Age-standardized trends in CVD-related mortality in black and white men, United States, 1969-2013**
 
