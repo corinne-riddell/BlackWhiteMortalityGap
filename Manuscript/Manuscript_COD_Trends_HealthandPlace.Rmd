@@ -1,9 +1,8 @@
 ---
 title: Trends in the contribution of major causes of death to the black-white life expectancy gap by US state
-output:
-  word_document: default
-  html_document: default
-always_allow_html: yes
+output: 
+  word_document:
+      reference_docx: reference.docx
 ---
 
 Corinne A Riddell, PhD
@@ -17,6 +16,8 @@ Sam Harper, PhD
 All authors: Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 27, Montreal, QC H3A 1A2, Canada.
 
 Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 27, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>. Phone: +1-438-863-0402
+
+##### PAGE BREAK
 
 ```{r initialize, echo=FALSE, warning=F, message=F}
 library(plotly)
@@ -49,7 +50,7 @@ BlackWhite_results <- reorder.as.map2(BlackWhite_results, "state", "stabbrs")
 
 Life expectancy has increased in the United States over many decades. The difference in life expectancy between black and white Americans has also decreased, but some states have made much more progress towards racial equality than others. This paper describes the pattern of contributions of six major causes of death to the black-white life expectancy gap within US states and the District of Columbia between 1969 and 2013, and identifies states diverging from the overall pattern. Across multiple causes, the District of Columbia, Illinois, Wisconsin, and Michigan had the highest contributions to black-white inequality, while New York, Massachusetts, and Rhode Island had the lowest contributions and have either achieved or are the closest to achieving black-white equality in life expectancy. 
 
-----
+##### PAGE BREAK
 
 ###Introduction
 
@@ -183,6 +184,8 @@ refine.patterns <- function(plot) {
 
 **Figs 1A and 1B** display trends in the life expectancy gap for men and women, respectively. These tile maps are organized to approximate the shape of the US and the spatial relations among states. For men and women, the life expectancy gap has decreased since 1969, although several states exhibited a period of increasing inequality that peaked in the early 1990s, especially among men. 
 
+##### PAGE BREAK
+
 **Figure 1A: State-level trends in the black-white life expectancy gap in men, United States, 1969-2013**
 
 ```{r life-expectancy-trends, echo=F}
@@ -227,6 +230,8 @@ le.gap.men
 ```
 
 **Figure 1A Caption:** The bands illustrate the 95% credible interval around the mean trend line for men. States with more imprecise estimates (often due to small black populations) have wider credible intervals. The estimated life expectancy gap in California in men in 1972 is much higher than in surrounding years. This anomaly is also illustrated in Fig. 3, and is a product of an unexpectedly low CVD-related mortality rate among white males in California in 1972, likely denoting a coding error. Thus the data for this state and year should be interpreted with caution.
+
+##### PAGE BREAK
 
 **Figure 1B: State-level trends in the black-white life expectancy gap in women, United States, 1969-2013**
 
@@ -290,6 +295,7 @@ inj.female.2013 <- cod_decomp_results %>% filter(year == 2013 & sex == "Female" 
 
 Cardiovascular disease (CVD) is the most common cause of death for black and white men and women. Mortality from CVD decreased markedly since 1969 for all groups (**Supplementary Appendix 1 Figs. S1 and S2**), but white men underwent relatively larger mortality decreases than black men. As a result, the contribution of CVD to the black-white life expectancy gap among men increased modestly for most states from `r sprintf("%.1f", cvd.male.1969)` to `r cvd.male.2013` years (**Fig. 2A**). Black women experienced relatively larger CVD mortality decreases over time compared to white women, resulting in a decrease of CVD to the contribution to the life expectancy gap from `r cvd.female.1969` to `r sprintf("%.1f", cvd.female.2013)` years nationally (**Figure 2B**). For both genders, Michigan, Wisconsin, California, and DC demonstrated higher-than-average increases in the contribution of CVD over time, whereas Massachusetts and New York showed persistently lower CVD contributions.
 
+##### PAGE BREAK
 
 **Figure 2A: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
@@ -307,6 +313,8 @@ cvd.men
 ```
 
 **Figure 2A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of CVD to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states. The early spike in California's trend line illustrates the unexpectedly high estimate of the CVD contribution to the black-white life expectancy gap among California males in 1972. This anomolous estimate reflects the unexpectedly low CVD-related mortality rate among white males in California in 1972, and likely denotes a coding error. Thus the data for this state and year should be interpreted with caution.
+
+##### PAGE BREAK
 
 **Figure 2B: Smoothed state-level trends in the contribution of CVD to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
@@ -330,6 +338,8 @@ cvd.women
 
 For all groups, mortality from cancer peaked in the mid 1990s and decreased thereafter (**Supplementary Appendix 1 Figs. S3 and S4**). Among men, this led to an inverted-U shape pattern in cancer's contribution to the life expectancy gap (**Figure 3A**), with a peak contribution of `r can.male.max` in the early 1990s. For women, although cancer-related mortality continues to be higher among blacks in many states, the mortality trends were similar between blacks and whites, resulting in a generally stable national pattern in the contribution of cancer to the life expectancy gap over time of approximately `r can.female.average` years (**Figure 3B**). For both genders, DC and Wisconsin exhibit the largest cancer contributions (and also exhibit high initial values among men), while New York and Massachusetts experienced large decreases in the contribution of cancer to the life expectancy gap.
 
+##### PAGE BREAK
+
 **Figure 3A: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-3, fig.width = 12, fig.height = 10, echo = F}
@@ -345,6 +355,8 @@ can.men
 ```
 
 **Figure 3A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of cancer to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+##### PAGE BREAK
 
 **Figure 3B: Smoothed state-level trends in the contribution of cancer disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
@@ -366,6 +378,8 @@ can.women
 
 Mortality from non-communicable disease increased over time for men in most states, with DC as a notable exception (**Supplementary Appendix 1 Figs. S5**). Recently, there was a slight decrease in mortality rates, especially among black men. These trends are similar among women, except that black women exhibited a sharper decline in mortality in recent years, eliminating the mortality difference in several states (**Supplementary Appendix 1 Figs. S6**). As such, the contribution of non-communicable disease to the life expectancy gap was generally flat among men (approximately `r ncd.male.average` years), and exhibited a gradual decrease over time among women from `r ncd.female.1969` to `r ncd.female.2013` years (**Figures 4A and 4B**). As with other causes, New York and Massachusetts exhibited decreasing contributions, and Nevada also made substantial progress. Furthermore, while DC's mortality rates decreased, they presently have the highest contribution of non-communicable disease to the gap. 
 
+##### PAGE BREAK
+
 **Figure 4A: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-5, fig.width = 12, fig.height = 10, echo = F}
@@ -383,6 +397,8 @@ ncd.men
 ```
 
 **Figure 4A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of non-communicable disease to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+##### PAGE BREAK
 
 **Figure 4B: Smoothed state-level trends in the contribution of non-communicable disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
@@ -407,6 +423,7 @@ ncd.women
 
 Trends in mortalilty from injuries differ for blacks and whites. Over time, injury-related mortality has decreased precipitously among blacks, although an epidemic of homicide resulted in heightened mortality from injuries among black men during the 1980s and early 1990s (**Supplementary Appendix 1 Figs. S7**) (Harper et al., 2007). For whites, most states exhibit an initial period of gradual decreases in injury mortality, followed by a period of gradual increases, especially among white women (**Supplementary Appendix 1 Figs. S8**). Thus, in the most recent data, injury mortality rates among blacks are equivalent to, or lower than those among whites in many states, with white women demonstrating sharper recent increases. The contribution of injuries to the mortality gap has therefore decreased substantially over time from `r inj.male.1969` to `r inj.male.2013` years among men. Among women, the contribution went from `r inj.female.1969` in 1969 to `r inj.female.2013` in 2013, becoming negative in those states that now have lower injury-related mortality among blacks than whites (**Figures 5A and 5B**). Among men, DC, Illinois, Michigan and Missouri exhibit the largest recent injury-related contributions. Among women, many southern states exhibit negative contributions (indicating lower injury-related mortality among black women), while DC, Illinois, and Michigan having higher contributions than the general trend.
 
+##### PAGE BREAK
 
 **Figure 5A: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
@@ -427,6 +444,8 @@ inj.men
 ```
 
 **Figure 5A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of injury to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+##### PAGE BREAK
 
 **Figure 5B: Smoothed state-level trends in the contribution of injuries to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
@@ -469,6 +488,8 @@ com.female.mid.max <- cod_decomp_results %>% filter(year > 1980, sex == "Female"
 
 Of the major causes that we considered, mortality from communicable disease was the lowest, although the 1990s exhibited an enormous increase in mortality at the height of the HIV/AIDS epidemic before antiretroviral therapy was available (**Supplementary Appendix 1 Figs. S9 and S10**). This spike was greater among men, especially blacks, and among states with larger urban centers. The contribution of communicable disease to the life expectancy gap therefore exhibited a peak in the early 1990s on `r com.male.mid.max` years in men and `r com.female.mid.max` years in women, with states diverging from this general pattern according to the intensity of their local epidemics (**Figures 6A and 6B**). DC still exhibits higher communicable disease-related contributions among men, while New Jersey and Florida additionally show higher contributions among women.
 
+##### PAGE BREAK
+
 **Figure 6A: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-9, fig.width = 12, fig.height = 10, echo = F}
@@ -486,6 +507,8 @@ com.men
 ```
 
 **Figure 6A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of communicable disease to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+##### PAGE BREAK
 
 **Figure 6B: Smoothed state-level trends in the contribution of communicable disease to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
@@ -530,6 +553,8 @@ Mortality from all other causes generally decreased earlier in the time period, 
 
 Because the majority of infant deaths are classified as being due to all other causes in our analysis, we also tried to separate any impact of all other causes from those of infant mortality more generally. We conducted a sensitivity analysis to calculate the contribution of deaths due to all other causes that occurred during the first year of life to the life expectancy gap (**Supplementary Appendix 1 Figs. S13 and S14**). We found that `r proportions.males[1,1]*100`% of the contribution of all other causes to the gap was due to differences in infant mortality in 1969 in males and `r round(proportions.females[1,1]*100, 0)`% in females. In 2013, this proportion reached `r proportions.males[2,1]*100`% in males and `r proportions.females[2,1]*100`% in females. Thus, the trend in the all other causes contribution partially reflects a increasing contribution from infant mortality.
 
+##### PAGE BREAK
+
 **Figure 7A: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in men, United States, 1969-2013**
 
 ```{r print-plot-11, fig.width = 12, fig.height = 10, echo = F}
@@ -549,6 +574,8 @@ aoc.men
 ```
 
 **Figure 7A Caption:** The blue line and light blue band illustrate the mean and 95% credible interval for each state's estimated trend in the contribution of all other causes to the black-white life expectancy gap over time for men. The red line is the same across the panels and illustrates the national pattern in the contribution, to add in the identification of similar and divergent states.
+
+##### PAGE BREAK
 
 **Figure 7B: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in women, United States, 1969-2013**
 
@@ -611,6 +638,34 @@ Our analysis has three main limitations. Firstly, we did not account for Hispani
 
 **Implications for policy and future work**
 Given the scope of this estimation exercise, we did not attempt to make causal inferences between the changes in mortality and black-white inequality to changes that occurred in policy, migration, health care access, or the multitude of other characteristics that vary on the state level. Making connections between changes in state policy and changes in health outcomes is an important next step in this research. States have pursued varying approaches to an array of relevant programs and laws including tobacco control, (Cotti et al., 2016) Medicare coverage, (Grogan and Park, 2017) hand-gun violence, (Humphreys et al., 2017) and nutrition, (Taber et al., 2011) to name a few examples. These presumably affect health and longevity, and can have especially important impacts on racial differences when the policies are targeted to disadvantaged groups or outcomes that differentially affect blacks (Adimora et al., 2014). The analyses reported here are entirely descriptive, but could be used for subsequent work that seeks to identify the causal processes that link social and health policies to successful trajectories in some states, and worsening disparities in others. Variation in policies over time can be used in quasi-experimental designs to uncover evidence for the role of specific policy innovations (Strumpf et al., 2017).
+
+**Contributors**
+
+CAR: Extracted the data, performed data analysis, drafted the manuscript.
+
+KTM: Performed data analysis, reviewed the paper for intellectual content.
+
+SH: Initial conception for the study, interpreted the results, reviewed the paper for intellectual content.
+
+JK: Initial conception for the study, interpreted the results, drafted the manuscript, reviewed the paper for intellectual content.
+
+We extend our thanks to Dr. Richard Maclehose, who developed the initial version of the code to perform the Bayesian analysis as part of the research article “Trends in the Black-White Life Expectancy Gap Among Us States, 1990–2009”, by Harper S, MacLehose RF, and Kaufman JS.
+
+**Funding**
+
+This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors. 
+
+Corinne Riddell is a post-doctoral researcher at McGill University, whose salary was supported by Dr. Kaufman's Canada Research Chair in Health Disparities. Kathryn Morrison is a post-doctoral researcher at McGill University. Sam Harper was supported by a Chercheur Boursier Junior 2 from the Fonds de la Recherche en Santé du Québec. Jay Kaufman was supported by a Canada Research Chair in Health Disparities. 
+
+**Competing Interests**
+
+All authors have completed the ICMJE uniform disclosure form at www.icmje.org/coi_disclosure.pdf and declare: no support from any organisation for the submitted work; no financial relationships with any organisations that might have an interest in the submitted work in the previous three years; no other relationships or activities that could appear to have influenced the submitted work.”
+ 
+**Data Sharing Statement**
+
+A replication data set including the raw data and statistical code to reproduce the analysis and manuscript is publicly available on GitHub: https://github.com/corinne-riddell/BlackWhiteMortalityGap/ (DOI: 10.5281/zenodo.803472).
+
+##### PAGE BREAK
 
 ###Bibliography
 
@@ -700,30 +755,5 @@ Program: SEER*Stat software: release: version 8.3.2 [Internet]. Bethesda (MD): N
 
 36. Strumpf EC, Harper S, Kaufman JS (2017) Fixed effects and difference in differences. In: Methods in Social Epidemiology. 2nd ed, eds Oakes M, Kaufman JS (Jossey-Bass, San Francisco).  
 
-###Footnotes
 
-**Contributors**
 
-CAR: Extracted the data, performed data analysis, drafted the manuscript.
-
-KTM: Performed data analysis, reviewed the paper for intellectual content.
-
-SH: Initial conception for the study, interpreted the results, reviewed the paper for intellectual content.
-
-JK: Initial conception for the study, interpreted the results, drafted the manuscript, reviewed the paper for intellectual content.
-
-We extend our thanks to Dr. Richard Maclehose, who developed the initial version of the code to perform the Bayesian analysis as part of the research article “Trends in the Black-White Life Expectancy Gap Among Us States, 1990–2009”, by Harper S, MacLehose RF, and Kaufman JS.
-
-**Funding**
-
-This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors. 
-
-Corinne Riddell is a post-doctoral researcher at McGill University, whose salary was supported by Dr. Kaufman's Canada Research Chair in Health Disparities. Kathryn Morrison is a post-doctoral researcher at McGill University. Sam Harper was supported by a Chercheur Boursier Junior 2 from the Fonds de la Recherche en Santé du Québec. Jay Kaufman was supported by a Canada Research Chair in Health Disparities. 
-
-**Competing Interests**
-
-All authors have completed the ICMJE uniform disclosure form at www.icmje.org/coi_disclosure.pdf and declare: no support from any organisation for the submitted work; no financial relationships with any organisations that might have an interest in the submitted work in the previous three years; no other relationships or activities that could appear to have influenced the submitted work.”
- 
-**Data Sharing Statement**
-
-A replication data set including the raw data and statistical code to reproduce the analysis and manuscript is publicly available on GitHub: https://github.com/corinne-riddell/BlackWhiteMortalityGap/ (DOI: 10.5281/zenodo.803472).
