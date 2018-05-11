@@ -1,9 +1,11 @@
 ---
 title: "Supplementary Appendix 2: Trend in the difference between each state's contribution trend and the overall trend, by causes of death and gender, 1969-2013"
-output: word_document
+output: 
+  word_document:
+      reference_docx: reference.docx
 ---
 
-This is the second supplementary appendix for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
+This is the second supplementary appendix #2 for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
 
 Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Jay S Kaufman, PhD; Sam Harper, PhD
 

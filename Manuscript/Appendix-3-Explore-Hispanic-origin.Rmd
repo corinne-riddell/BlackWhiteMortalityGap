@@ -1,18 +1,22 @@
 ---
 title: "Supplementary Appendix 3: Trends in black and white mortality rates before and after excluding Hispanics, 1999-2013"
-output: github_document
+output: 
+  word_document:
+      reference_docx: reference.docx
 ---
 
-This is the third supplementary appendix for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
+This is the third supplementary appendix #3 for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state. A retrospective study of all deaths between 1969 and 2013."
 
 Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Jay S Kaufman, PhD; Sam Harper, PhD
 
 Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
 
+#####
 In our main analyses, we included Hispanics as part of the black and white racial groups. To investigate the impact of including Hispanics on mortality, we inspected mortality trends for five key states with large Hispanic immigrant populations (California, New York, Florida, Texas, and Illinois). We extracted this mortality data using (CDC WONDER's)[https://wonder.cdc.gov/] compressed mortality file. Hispanic ethnicity is only available beginning in 1999, so we consider the time period from 1999 to 2013. We extract age-adjusted mortality rates related to the circulatory system ("CVD", ICD-10 codes I00-I99), neoplasms ("cancers", ICD-10 codes C00-D48) and external causes ("injuries", ICD-10 codes V01-Y89) by year, state, race, and gender, for (a) non-Hispanics and (b) regardless of Hispanic ethinicity. 
 
+#####
 **Trends in cancer mortality for all whites and blacks vs. non-Hispanic whites and blacks, 1999-2013**
-```{r load-cancer-data, echo=F, fig.width = 8, fig.height=9.5}
+```{r load-cancer-data, echo=F, fig.width = 8, fig.height=9.5, warning=F, message=F}
 library(tidyverse)
 nh.cancer <- read.table("../Data/hispanic/NH Black and White Neoplasms.txt", header = T, nrows = 360, sep="\t")
 

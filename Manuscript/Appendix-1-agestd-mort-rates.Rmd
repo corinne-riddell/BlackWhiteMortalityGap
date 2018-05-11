@@ -1,22 +1,20 @@
 ---
 title: 'Supplementary Appendix: Trends in the contribution of major causes of death
   to the black-white life expectancy gap by US state'
-output:
-  word_document: default
-  html_document: default
+output: 
+  word_document:
+      reference_docx: reference.docx
 ---
 
-This is the supplementary appendix for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state".
+This is supplementary appendix #1 for the paper, "Trends in the contribution of major causes of death to the black-white life expectancy gap by US state".
 
-For an interactive version of all our results, please visit XXXX.
+Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Jay S Kaufman, PhD; Sam Harper, PhD
 
+Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, 1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
 
+For an interactive version of all our results, please visit https://corinne-riddell.shinyapps.io/black-white-life-expectancy/.
 
 ```{r load_libraries, echo=FALSE, warning=F, message=F}
-#Corinne A Riddell, PhD; Kathryn T Morrison, PhD; Sam Harper, PhD; Jay S Kaufman, PhD
-
-#Address correspondence to: Corinne Riddell, PhD, Department of Epidemiology, Biostatistics & Occupational Health, McGill University, #1020 Pine Avenue West, Room 36B, Montreal, QC H3A 1A2, Canada. Email: <corinne.riddell@mail.mcgill.ca>
-
 library(dplyr)
 library(purrr)
 library(ggplot2)
@@ -126,6 +124,7 @@ for(COD_i in levels(mortality.rates$COD)) {
 }
 ```
 
+#####
 **Table S1: Cause of death groupings**
 
 | Broad cause of death     | Included causes of death                                                     |
@@ -137,7 +136,9 @@ for(COD_i in levels(mortality.rates$COD)) {
 | Injuries                 | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention. |
 | All other causes         | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death. |
 
-**Figure S3: Age-standardized trends in CVD-related mortality in black and white men, United States, 1969-2013**
+#####PAGE BREAK
+
+**Figure S1: Age-standardized trends in CVD-related mortality in black and white men, United States, 1969-2013**
 
 ```{r print-em, fig.width = 9, fig.height = 7, echo = F}
 Cardiovascular.Male.mort.plot[[1]]
@@ -145,7 +146,9 @@ Cardiovascular.Male.mort.plot[[1]]
 #Cardiovascular.Male.mort.plot[[4]]
 ```
 
-**Figure S4: Age-standardized trends in CVD-related mortality in black and white women, United States, 1969-2013**
+#####PAGE BREAK
+
+**Figure S2: Age-standardized trends in CVD-related mortality in black and white women, United States, 1969-2013**
 
 ```{r print-em-2, fig.width = 9, fig.height = 7, echo = F}
 Cardiovascular.Female.mort.plot[[1]]
@@ -153,7 +156,8 @@ Cardiovascular.Female.mort.plot[[1]]
 #Cardiovascular.Female.mort.plot[[4]]
 ```
 
-**Figure S5: Age-standardized trends in cancer-related mortality in black and white men, United States, 1969-2013**
+#####PAGE BREAK 
+**Figure S3: Age-standardized trends in cancer-related mortality in black and white men, United States, 1969-2013**
 
 ```{r print-em-3, fig.width = 9, fig.height = 7, echo = F}
 Cancers.Male.mort.plot[[1]]
@@ -161,7 +165,8 @@ Cancers.Male.mort.plot[[1]]
 #Cancers.Male.mort.plot[[4]]
 ```
 
-**Figure S6: Age-standardized trends in cancer-related mortality in black and white women, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S4: Age-standardized trends in cancer-related mortality in black and white women, United States, 1969-2013**
 
 ```{r print-em-4, fig.width = 9, fig.height = 7, echo = F}
 Cancers.Female.mort.plot[[1]]
@@ -169,7 +174,8 @@ Cancers.Female.mort.plot[[1]]
 #Cancers.Female.mort.plot[[4]]
 ```
 
-**Figure S7: Age-standardized trends in mortality related to non-communicable disease in black and white men, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S5: Age-standardized trends in mortality related to non-communicable disease in black and white men, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `Non-communicable.Male.mort.plot`[[1]]
@@ -177,7 +183,8 @@ Cancers.Female.mort.plot[[1]]
 #`Non-communicable.Male.mort.plot`[[4]]
 ```
 
-**Figure S8: Age-standardized trends in mortality related to non-communicable disease in black and white women, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S6: Age-standardized trends in mortality related to non-communicable disease in black and white women, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `Non-communicable.Female.mort.plot`[[1]]
@@ -185,7 +192,8 @@ Cancers.Female.mort.plot[[1]]
 #`Non-communicable.Male.mort.plot`[[4]]
 ```
 
-**Figure S9: Age-standardized trends in injury-related mortality in black and white men, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S7: Age-standardized trends in injury-related mortality in black and white men, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 Injuries.Male.mort.plot[[1]]
@@ -193,7 +201,8 @@ Injuries.Male.mort.plot[[1]]
 #Injuries.Male.mort.plot[[4]]
 ```
 
-**Figure S10: Age-standardized trends in injury-related mortality in black and white women, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S8: Age-standardized trends in injury-related mortality in black and white women, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 Injuries.Female.mort.plot[[1]]
@@ -201,7 +210,8 @@ Injuries.Female.mort.plot[[1]]
 #Injuries.Female.mort.plot[[4]]
 ```
 
-**Figure S11: Age-standardized trends in mortality related to communicable disease in black and white men, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S9: Age-standardized trends in mortality related to communicable disease in black and white men, United States, 1969-2013**
 
 ```{r print-3, fig.width = 9, fig.height = 7, echo = F}
 Communicable.Male.mort.plot[[1]]
@@ -209,7 +219,8 @@ Communicable.Male.mort.plot[[1]]
 #Communicable.Male.mort.plot[[4]]
 ```
 
-**Figure S12: Age-standardized trends in mortality related to communicable disease in black and white women, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S10: Age-standardized trends in mortality related to communicable disease in black and white women, United States, 1969-2013**
 
 ```{r print-4, fig.width = 9, fig.height = 7, echo = F}
 Communicable.Female.mort.plot[[1]]
@@ -217,7 +228,8 @@ Communicable.Female.mort.plot[[1]]
 #Communicable.Female.mort.plot[[4]]
 ```
 
-**Figure S13: Age-standardized trends in mortality from all other causes in black and white men, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S11: Age-standardized trends in mortality from all other causes in black and white men, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `All other causes.Male.mort.plot`[[1]] 
@@ -225,7 +237,8 @@ Communicable.Female.mort.plot[[1]]
 #`All other causes.Male.mort.plot`[[4]]
 ```
 
-**Figure S14: Age-standardized trends in mortality from all other causes in black and white women, United States, 1969-2013**
+#####PAGE BREAK
+**Figure S12: Age-standardized trends in mortality from all other causes in black and white women, United States, 1969-2013**
 
 ```{r, fig.width = 9, fig.height = 7, echo = F}
 `All other causes.Female.mort.plot`[[1]]
@@ -233,9 +246,8 @@ Communicable.Female.mort.plot[[1]]
 #`All other causes.Female.mort.plot`[[4]]
 ```
 
-
-
-**Figure S15: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in males younger than one, 1969-2013**
+#####PAGE BREAK
+**Figure S13: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in males infants (<1 year old), 1969-2013**
 
 ```{r age-cod-trend-infant-males, fig.width = 12, fig.height = 10, echo = F}
 ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Male"), aes(y = age_COD_cont_yrs_mean, x = year)) +
@@ -256,7 +268,8 @@ ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Male"), aes(y = age_COD
   geom_hline(aes(yintercept = 2), lwd = 0.5, col = "grey", alpha = 0.5)
 ```
 
-**Figure S16: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in females younger than one, 1969-2013**
+#####PAGE BREAK
+**Figure S14: Smoothed state-level trends in the contribution of all other causes to the life expectancy gap vs. the national pattern in female infants (<1 year old), 1969-2013**
 
 ```{r age-cod-trend-infant-females, fig.width = 12, fig.height = 10, echo = F}
 ggplot(dat = subset(age_cod_results_infants_AOC, sex == "Female"), aes(y = age_COD_cont_yrs_mean, x = year)) +
