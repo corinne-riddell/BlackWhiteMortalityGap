@@ -1,6 +1,5 @@
 ---
 title: Trends in the contribution of major causes of death to the black-white life expectancy gap by US state
-bibliography: bibliography.bib
 output:
   word_document: default
   html_document: default
@@ -606,80 +605,100 @@ Communicable disease continues to contribute to the gap in most states, but espe
 
 **Strengths and weaknesses**
 
-We used data over 45 years, across two racial groups, and for all ages. By examining a wide time window, trends were examined that provided context for the contributions estimated in the most recent year. This allowed us to recognize when the estimated contributions for a particular cause of death were relatively low because they started low at the beginning of the follow-up, versus being low because they had decreased over time. Furthermore, our analysis was centered on decomposing life expectancy at birth, a measure that integrates mortality rates across all ages. This is especially important in light of recent studies that have received criticism for narrowly focusing on a specific age group.24,25 The Arriaga decomposition method accounts for the fact that deaths occurring in one cause stratum are reflected in the absence of that death in another stratum. In contrast to some recent work focused on county-level inequalities,26,27 states have some substantial advantages as analysis units. They have large populations to generate stable estimates, and tend to be more demographically stable over time. 
+We used data over forty-five years, across two racial groups, and for all ages. By examining a wide time window, trends were examined that provided context for the contributions estimated in the most recent year. This allowed us to recognize when the estimated contributions for a particular cause of death were relatively low because they started low at the beginning of the follow-up, versus being low because they had decreased over time. Furthermore, our analysis was centered on decomposing life expectancy at birth, a measure that integrates mortality rates across all ages. This is especially important in light of recent studies that have received criticism for narrowly focusing on a specific age group (Case and Deaton, 2015; Minton et al., 2016). The Arriaga decomposition method accounts for the fact that deaths occurring in one cause stratum are reflected in the absence of deaths in another stratum. In contrast to some recent work focused on county-level inequalities,(Dwyer-Lindgren et al., 2016; Arora et al., 2016) states have some substantial advantages as analysis units. They have large populations to generate stable estimates, and tend to be more demographically stable over time. 
 
-Our analysis has three main limitations. Firstly, we did not account for Hispanic ethnicity, since ethnicity was not measured until 1978, and even then it was poorly measured on the death certificate in many states for many years. In order to investigate the potential impact of Hispanic ethnicity, we inspected mortality rates in five states with large Hispanic populations (California, New York, Florida, Texas, and Illinois). Excluding Hispanics tended to shift the mortality rates up for both blacks and whites (Supplementary Appendix 3), since Hispanics overall tend to have lower mortality rates than non-Hispanics.28 New York was the exception: excluding Hispanics shifted mortality upwards for blacks but not for whites. This is difficult to interpret without further study, but may reflect heterogeneity in health among Hispanic subpopulations that have distinct migration patterns across US states.29,30,31 The other exception we noted was with injuries: injury mortality rates for all whites vs. non-Hispanic whites diverged since 1999, and may reflect the lower overdose mortality among Hispanics.20 Our previous sensitivity analysis including Hispanics did not yield a substantial difference in the results for the overall life expectancy gap.4 Secondly, our analysis does not account for immigration by the foreign-born, or migration of native-born individuals between states. US immigrants have been shown to have life expectancies at birth that were approximately 5 years longer in 2010.32 Thus, the black-white gap in a state may decrease as more immigrants identify as black. Migration between states can also affect the estimated life expectancy of a state if it is associated with underlying risks of death. Migration is particularly important for the District of Columbia, because of its small geographical bounds. Affluent black residents have moved to the suburbs in Maryland and Virginia, while affluent whites are migrating to DC. Both changes would serve to increase the racial gap in DC.33 Thirdly, by using broad causes of death we are unable to investigate trends in more specific causes. For example, injury mortality includes homicide, suicide, and drug overdoses, which are known to vary by sex, race, and over time.34 Drug overdose as a more specific cause of death has played an increasingly important role in shaping disparities in many states, but this is not separately identifiable in our analyses.35,36
+Our analysis has three main limitations. Firstly, we did not account for Hispanic ethnicity, since ethnicity was not measured until 1978, and even then it was poorly measured on the death certificate in many states for many years. In order to investigate the potential impact of Hispanic ethnicity, we inspected mortality rates in five states with large Hispanic populations (California, New York, Florida, Texas, and Illinois). Excluding Hispanics tended to shift the mortality rates up for both blacks and whites (Supplementary Appendix 3), since Hispanics overall tend to have lower mortality rates than non-Hispanics (Ruiz et al., 2013). New York was the exception: excluding Hispanics shifted mortality upwards for blacks but not for whites. This is difficult to interpret without further study, but may reflect heterogeneity in health among Hispanic subpopulations that have distinct migration patterns across US states (Borrell, 2005; Borrell and Lancet, 2012; Pew Research Center, 2018). The other exception we noted was with injuries: injury mortality rates for all whites vs. non-Hispanic whites diverged since 1999, and may reflect the lower overdose mortality among Hispanics (Rudd et al., 2016). Our previous sensitivity analysis including Hispanics did not yield a substantial difference in the results for the overall life expectancy gap (Haper et al., 2014). Secondly, our analysis does not account for immigration by the foreign-born, or migration of native-born individuals between states. US immigrants have been shown to have life expectancies at birth that were approximately five years longer in 2010 (Preston and Elo, 2014). Thus, the black-white gap in a state may have decreased as more immigrants identified as black. Migration between states can also affect the estimated life expectancy of a state if it is associated with underlying risks of death. Migration is particularly important for the District of Columbia, because of its small geographical bounds. Affluent black residents have moved to the suburbs in Maryland and Virginia, while affluent whites are migrating to DC. Both changes would serve to increase the racial gap in DC (U.S. Census Burearu, 2017b). Thirdly, by using broad causes of death we are unable to investigate trends in more specific causes. For example, injury mortality includes homicide, suicide, and drug overdoses, which are known to vary by sex, race, and over time (Bastian et al., 2017). Drug overdose as a more specific cause of death has played an increasingly important role in shaping disparities in many states, but this is not separately identifiable in our analyses (Kuehn, 2014; Jones et al., 2010).
 
-**Implications for Policy & Future Work**
-Given the scope of this estimation exercise, we did not attempt to make causal inferences between the changes in mortality and black-white inequality to changes that occurred in policy, migration, health care access, or the multitude of other characteristics that vary on the state level. Making connections between changes in state policy and changes in health outcome is an important next step in this research. States have pursued varying approaches to an array of relevant programs and laws including tobacco control,37 Medicare coverage,38 hand-gun violence,39 and nutrition40, to name a few examples. These presumably affect health and longevity, and can have especially important impacts on racial differences when the policies are targeted to disadvantaged groups or outcomes that differentially affect blacks.41 The analyses reported here are entirely descriptive, but could be used for subsequent work that seeks to identify the causal processes that link social and health policies to successful trajectories in some states, and worsening disparities in others. Variation in policies over time can be used in quasi-experimental designs to uncover evidence for the role of specific policy innovations.42
+**Implications for policy and future work**
+Given the scope of this estimation exercise, we did not attempt to make causal inferences between the changes in mortality and black-white inequality to changes that occurred in policy, migration, health care access, or the multitude of other characteristics that vary on the state level. Making connections between changes in state policy and changes in health outcomes is an important next step in this research. States have pursued varying approaches to an array of relevant programs and laws including tobacco control, (Cotti et al., 2016) Medicare coverage, (Grogan and Park, 2017) hand-gun violence, (Humphreys et al., 2017) and nutrition, (Taber et al., 2011) to name a few examples. These presumably affect health and longevity, and can have especially important impacts on racial differences when the policies are targeted to disadvantaged groups or outcomes that differentially affect blacks (Adimora et al., 2014). The analyses reported here are entirely descriptive, but could be used for subsequent work that seeks to identify the causal processes that link social and health policies to successful trajectories in some states, and worsening disparities in others. Variation in policies over time can be used in quasi-experimental designs to uncover evidence for the role of specific policy innovations (Strumpf et al., 2017).
 
 ###Bibliography
 
-1. Cunningham TJ, Croft JB, Liu Y, Lu H, Eke PI, Giles WH (2017) Vital Signs: Racial Disparities in Age-Specific Mortality Among Blacks or African Americans - United States, 1999-2015. *MMWR Morb Mortal Wkly Rep* 66(17):444-456.
+1. Cunningham TJ, Croft JB, Liu Y, Lu H, Eke PI, Giles WH (2017) Vital signs: Racial disparities in age-specific mortality among Blacks or African Americans - United States, 1999-2015. *MMWR Morb. Mortal. Wkly Rep.* 66(17):444-456.
 
-2. Fuchs, VR (2016) Black Gains in Life Expectancy. *JAMA*. 316(18): 1869–70. 
+2. Fuchs, VR (2016) Black gains in life expectancy. *JAMA*. 316(18): 1869–70. 
 
 3. Harper S, Lynch J, Burris S, Smith GD (2007) Trends in the black-white life expectancy gap in the United States, 1983-2003. *JAMA* 297(11):1224-32.
 
-4. Harper S, MacLehose RF, Kaufman JS (2014) Trends in the Black-White Life Expectancy Gap Among Us States, 1990–2009. *Health Aff* 33(8): 1375–82.
+4. Harper S, MacLehose RF, Kaufman JS (2014) Trends in the black-white life expectancy gap among US states, 1990–2009. *Health Aff.* 33(8): 1375–82.
 
-5. National Cancer Institute. Surveillance, Epidemiology, and End Results
+5.	Centers for Disease Control and Prevention. Office on Smoking and Health, National Center for Chronic Disease Prevention and Health Promotion: Excise tax rates on cigarettes [Internet]. [cited 2018 March 22]. Available from: https://www.cdc.gov/statesystem/excisetax.html.
+
+6.	Trust for America’s Health and Robert Wood Johnson Foundation. State policies to prevent obesity [Internet]. [cited 2018 March 22]. Available from: https://stateofobesity.org/state-policy/  
+
+7.	California Air Resources Board. CARB finds vehicle standards are achievable and cost effective [Internet].[cited 2018 March 22]. Available from: https://www.arb.ca.gov/newsrel/newsrelease.php?id=908
+
+8. National Cancer Institute. Surveillance, Epidemiology, and End Results
 Program: SEER*Stat software: release: version 8.3.2 [Internet]. Bethesda (MD): NCI; 2017 Apr 14 [cited 2016 August 20]. Available from: http://www.seer.cancer.gov/seerstat.
 
-6. U.S. Census Bureau: United States Census 2010 Interactive Population Map [Internet]. [cited 2017 May 16]. Available from: https://www.census.gov/2010census/popmap/.
+9. U.S. Census Bureau, 2017a. United States Census 2010 Interactive Population Map [Internet]. [cited 2017 May 16]. Available from: https://www.census.gov/2010census/popmap/.
 
-7. Centers for Disease Control and Prevention. National Center for Health Statistics: National Vital Statistics System [Internet]. [cited 2017 May 16]. Available from: https://www.cdc.gov/nchs/nvss/index.htm.
+10. Centers for Disease Control and Prevention. National Center for Health Statistics: National Vital Statistics System [Internet]. [cited 2017 May 16]. Available from: https://www.cdc.gov/nchs/nvss/index.htm.
 
-8. Arias E, Schauman WS, Eschbach K, Sorlie PD, Backlund E (2008) The validity of race and Hispanic origin reporting on death certificates in the United States. National Center for Health Statistics. Vital Health Stat 2(148). Available from: https://www.cdc.gov/nchs/data/series/sr_02/sr02_148.pdf
+11.	National Cancer Institute. Surveillance, Epidemiology, and End Results Program: Population Estimates used in the NCI’s SEER*Stat Software [Internet]. [cited 2018 March 22]. Available from: https://seer.cancer.gov/popdata/methods.html.
 
-9. National Cancer Institute. Surveillance, Epidemiology, and End Results Program: US mortality data [Internet]. Bethesda (MD): NCI; [cited 2017 May 16]. Available from: http://www.seer.cancer.gov/mortality/
+12.	Ingram D.D., Parker J.D., Schenker N., Weed J.A., Hamilton B., Arias E., Madans J.H. United States Census 2000 population with bridged race categories. Natl. Cent. Health Stat. Vital Health Stat 2(135). 2003.
 
-10. Preston SH, Heuveline P, and Guillot M (2001) Demography: Measuring and Modeling Population Processes. (Blackwell Publishing, Malden)
+13.	Harper S., Rushani D., and Kaufman J.S., 2012. Trends in the black-white life expectancy gap, 2003-2008. JAMA 307(21):2257–9.
 
-11. Selvin, S (2004) Statistical Analysis of Epidemiologic Data. 3rd ed. (Oxford University Press, Oxford)
+14. Arias E, Schauman WS, Eschbach K, Sorlie PD, Backlund E (2008) The validity of race and Hispanic origin reporting on death certificates in the United States. Natl. Cent. Health Stat. Vital. Health Stat. 2(148). Available from: https://www.cdc.gov/nchs/data/series/sr_02/sr02_148.pdf
 
-12. Arriaga EE (1985) Measuring and explaining the change in life expectancies. *Demography* 21(1):83-96.
+15. National Cancer Institute. Surveillance, Epidemiology, and End Results Program: US mortality data [Internet]. Bethesda (MD): NCI; [cited 2017 May 16]. Available from: http://www.seer.cancer.gov/mortality/
 
-13. National Cancer Institute. Surveillance, Epidemiology, and End Results Program: Standard Populations - 19 Age Groups [Internet]. [cited 2017 April 25]. Available from: https://seer.cancer.gov/stdpopulations/stdpop.19ages.html. 
+16. Preston SH, Heuveline P, and Guillot M (2001) Demography: Measuring and modeling population processes. (Blackwell Publishing, Malden)
 
-14. Lemann, N (1991) The Promised Land: The Great Black Migration and How It Changed America. New York: Alfred A. Knopf, ISBN 0-394-56004-3.
+17. Selvin, S (2004) Statistical Analysis of Epidemiologic Data. 3rd ed. (Oxford University Press, Oxford)
+
+18. Arriaga EE (1985) Measuring and explaining the change in life expectancies. *Demography* 21(1):83-96.
+
+19. National Cancer Institute, 2917b. Surveillance, Epidemiology, and End Results Program: Standard populations - 19 age groups [Internet]. [cited 2017 April 25]. Available from: https://seer.cancer.gov/stdpopulations/stdpop.19ages.html. 
+
+20. Rudd RA, Seth P, David F, Scholl L (2016) Increases in drug and opioid-involved overdose deaths — United States, 2010–2015. *MMWR Morb. Mortal. Wkly Rep.* 65:1445–1452.
+
+21.	Norman P., Boyle P., Rees P., 2005. Selective migration, health and deprivation: a longitudinal analysis. Social Sci. Med. 60(12):2755-71.
+
+22.	Black D.A., Sanders S.G., Taylor E.J., Taylor L.J., 2015. The impact of the Great Migration on mortality of African Americans: evidence from the deep south. Am. Econ. Rev. 105(2):477-503.
+
+14. Lemann, N (1991) The promised land: The great black migration and how it changed America. New York: Alfred A. Knopf, ISBN 0-394-56004-3.
 
 15. Dwyer-Lindgren L, Bertozzi-Villa A, Stubbs RW, Morozoff C, Kutz MJ, Huynh C, Barber RM, et al (2016) US County-Level Trends in Mortality Rates for Major Causes of Death, 1980-2014. *JAMA* 316(22):2385–2401.
 
-16. Case A, Deaton A (2017) Mortality and Morbidity in the 21st Century. In: Eberly J and Stock J, Editors. Brookings Papers on Economic Activity, March 23-24 2017.
+19. Case A, Deaton A (2015) Rising morbidity and mortality in midlife among white non-Hispanic Americans in the 21st century. *Proc Natl Acad Sci * 112(49):15078-83. 
 
-17. Harper S, Rushani D, and Kaufman JS (2012) Trends in the Black-White Life Expectancy Gap, 2003-2008. *JAMA* 307(21):2257–9.
+20. Minton J, Green M, McCartney G, Shaw R, Vanderbloemen L, Pickett K (2016) Two cheers for a small giant? Why we need better ways of seeing data: A commentary on:‘Rising morbidity and mortality in midlife among White non-Hispanic Americans in the 21st century’. *Int. J. Epidemiol.* 2016 Sep 17:dyw095.
 
-18. Rudd RA, Seth P, David F, Scholl L (2016) Increases in Drug and Opioid-Involved Overdose Deaths — United States, 2010–2015. *MMWR Morb Mortal Wkly Rep* 65:1445–1452.
-
-19. Case A, Deaton A (2015) Rising Morbidity and Mortality in Midlife among White Non-Hispanic Americans in the 21st Century. *Proc Natl Acad Sci * 112(49):15078-83. 
-
-20. Minton J, Green M, McCartney G, Shaw R, Vanderbloemen L, Pickett K (2016) Two cheers for a small giant? Why we need better ways of seeing data: A commentary on:‘Rising morbidity and mortality in midlife among White non-Hispanic Americans in the 21st century’. *Int J Epidemiol* 2016 Sep 17:dyw095.
-
-21. Arora A, Spatz E, Herrin J, Riley C, Roy B, Kell K, Coberley C, Rula E, Krumholz HM (2016) Population Well-Being Measures Help Explain Geographic Disparities In Life Expectancy At The County Level. *Health Aff* 35(11):2075-82.
+21. Arora A, Spatz E, Herrin J, Riley C, Roy B, Kell K, Coberley C, Rula E, Krumholz HM (2016) Population well-being measures help explain geographic disparities in life expectancy at the county level. *Health Aff.* 35(11):2075-82.
 
 22. Ruiz JM, Steffen P, Smith TB (2013) Hispanic mortality paradox: a systematic review and meta-analysis of the longitudinal literature. *Am J Public Health* 103(3):e52-60.
 
-23. Preston SH, Elo IT (2014) Anatomy of a municipal triumph: New York City's upsurge in life expectancy. *Population and development review* 40(1):1-29.
+23.	Borrell L.N., 2005. Racial identity among Hispanics: implications for health and well-being. Am. J. Public Health. 95(3):379-381.
 
-24. U.S. Census Bureau. Census Reporter Profile Page: American Community Survey 1-year estimates [Internet]. [Cited 16 May 2017]. Available from: https://censusreporter.org/profiles/16000US1150000-washington-dc/.
+24.	Borrell L.N., Lancet E.A., 2012. Race/ethnicity and all-cause mortality in US adults: revisiting the Hispanic paradox. Am. J. of Public Health. 102(5):836-43.
 
-25. Kuehn BM (2014) CDC: major disparities in opioid prescribing among states: some states crack down on excess prescribing. *JAMA* 312(7):684-6.
+25.	U.S. Hispanic country of origin for nation, top 30 metropolitan areas [Internet]. [Cited April 11, 2018]. Available from: http://www.pewhispanic.org/2011/05/26/ii-metropolitan-area-diversity/
 
-26. Jones CM, Mack KA, Paulozzi LJ (2010) Pharmaceutical overdose deaths, United States, 2010. *JAMA* 309(7):657-9.
+26. Preston SH, Elo IT (2014) Anatomy of a municipal triumph: New York City's upsurge in life expectancy. *Population and development review* 40(1):1-29.
 
-27. Cotti C, Nesson E, Tefft N (2016) The Effects of Tobacco Control Policies on Tobacco Products, Tar, and Nicotine Purchases among Adults: Evidence from Household Panel Data. *American Economic Journal: Economic Policy* 8(4):103-23.
+27. U.S. Census Bureau. Census Reporter Profile Page: American Community Survey 1-year estimates [Internet]. [Cited 16 May 2017]. Available from: https://censusreporter.org/profiles/16000US1150000-washington-dc/.
 
-28. Grogan CM, Park SE (2017) The Racial Divide in State Medicaid Expansions. *J Health Polit Policy Law* 42(3):539-72.
+28.	Bastian B., Lu L., Miniño A., et al. Injury mortality, United States: 1999–2015. National Center for Health Statistics. National Vital Statistics System. 2017.
 
-29. Humphreys DK, Gasparrini A, Wiebe DJ (2017) Evaluating the Impact of Florida’s “Stand Your Ground” Self-defense Law on Homicide and Suicide by Firearm: An Interrupted Time Series Study. *JAMA Intern Med* 177(1):44-50.
+29. Kuehn BM (2014) CDC: major disparities in opioid prescribing among states: some states crack down on excess prescribing. *JAMA* 312(7):684-6.
 
-30. Taber DR, Stevens J, Evenson KR, Ward DS, Poole C, Maciejewski ML, Murray DM, Brownson RC (2011) State policies targeting junk food in schools: racial/ethnic differences in the effect of policy change on soda consumption. *Am J Public Health* 101(9):1769-75.
+30. Jones CM, Mack KA, Paulozzi LJ (2010) Pharmaceutical overdose deaths, United States, 2010. *JAMA* 309(7):657-9.
 
-31. Adimora AA, Ramirez C, Schoenbach VJ, Cohen MS (2014) Policies and politics that promote HIV infection in the Southern United States. *AIDS*
+31. Cotti C, Nesson E, Tefft N (2016) The effects of tobacco control policies on tobacco products, tar, and nicotine purchases among adults: Evidence from household panel data. *Am. Econ. J.: Econ. Policy* 8(4):103-23.
+
+32. Grogan CM, Park SE (2017) The racial divide in state medicaid expansions. *J Health Polit Policy Law* 42(3):539-72.
+
+33. Humphreys DK, Gasparrini A, Wiebe DJ (2017) Evaluating the impact of Florida’s “stand your ground” self-defense law on homicide and suicide by firearm: An interrupted time aeries atudy. *JAMA Intern. Med.* 177(1):44-50.
+
+34. Taber DR, Stevens J, Evenson KR, Ward DS, Poole C, Maciejewski ML, Murray DM, Brownson RC (2011) State policies targeting junk food in schools: racial/ethnic differences in the effect of policy change on soda consumption. *Am. J. Public Health* 101(9):1769-75.
+
+35. Adimora AA, Ramirez C, Schoenbach VJ, Cohen MS (2014) Policies and politics that promote HIV infection in the southern United States. *AIDS*
 28(10):1393.
 
-32. Strumpf EC, Harper S, Kaufman JS (2017) Fixed Effects and Difference in Differences. In: Methods in Social Epidemiology. 2nd Ed, eds Oakes M, Kaufman JS(Jossey-Bass, San Francisco).  
+36. Strumpf EC, Harper S, Kaufman JS (2017) Fixed effects and difference in differences. In: Methods in Social Epidemiology. 2nd ed, eds Oakes M, Kaufman JS (Jossey-Bass, San Francisco).  
 
 ###Footnotes
 
@@ -707,4 +726,4 @@ All authors have completed the ICMJE uniform disclosure form at www.icmje.org/co
  
 **Data Sharing Statement**
 
-A replication data set including the raw data and statistical code to reproduce the analysis and manuscript is publicly available on Github: https://github.com/corinne-riddell/BlackWhiteMortalityGap/ (DOI: 10.5281/zenodo.803472).
+A replication data set including the raw data and statistical code to reproduce the analysis and manuscript is publicly available on GitHub: https://github.com/corinne-riddell/BlackWhiteMortalityGap/ (DOI: 10.5281/zenodo.803472).
