@@ -1,6 +1,7 @@
 ---
 title: "Supplementary Appendix"
 output:
+  pdf_document:
   github_document: 
   word_document:
       reference_docx: reference.docx
@@ -10,7 +11,7 @@ output:
 
 By: Jay S Kaufman, Corinne A Riddell, Sam Harper
 
-##### page break
+\newpage
 
 Table of Contents
 
@@ -46,7 +47,7 @@ Figure S14: The contribution of major causes of death and age at death to the bl
 
 Figure S15: Total population sizes in 4 states by race and year  
 
-##### page break
+\newpage
 
 **Table S1: Description of specific causes comprising the six major cause categories**
 
@@ -59,7 +60,7 @@ Figure S15: Total population sizes in 4 states by race and year
 |Injuries               | Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention                         |
 |All other causes               | Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death.                         |
 
-##### page break
+\newpage
 
 **Figure S1: Age-specific trends in mortality due to all other causes in black and white women, all age groups, 1969-2013**
 
@@ -70,7 +71,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "other_female.jpeg")
 
 **Table S1** lists the specific causes of death that contribute to the “all other causes” major categorization. The majority of these deaths are among infants, as shown by the large magnitude of mortality rates for deaths among those < 1 year in **Figure S1**. Thus, the first row of this figure provides a rough approximation to the overall rate of infant mortality. Among the other age groups, the exact cause is most often “Symptoms, signs, and ill-defined conditions”. Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S2: Age-specific trends in CVD mortality in black and white women, 20 years and older, 1969-2013**
 
@@ -81,7 +82,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "cvd_female.jpeg"))
 Not shown: <1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.  
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S3: Age-specific trends in cancer mortality in black and white women, 20 years and older, 1969-2013**
 
@@ -92,7 +93,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "cancer_female.jpeg"
 Not shown: <1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.  
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S4: Age-specific trends in mortality due to non-communicable disease in black and white women, 20 years and older, 1969-2013**
 
@@ -103,7 +104,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "nc_female.jpeg"))
 Not shown: <1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.  
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S5: Age-specific trends in communicable disease mortality in black and white women, all age groups, 1969-2013**
 
@@ -113,7 +114,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "comm_female.jpeg"))
 
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S6: Age-specific trends in injury mortality in black and white women, all age groups, 1969-2013**
 
@@ -123,7 +124,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "inj_female.jpeg"))
 
 While injury rates are relatively low in women compared to men, the injury category is comprised of many distinct sources of injury including motor vehicle accidents, homicide, suicide, and poisonings, each of having their own distinct trends that are unfortunately masked in aggregation. Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S7: Age-specific trends in mortality due to all other causes in black and white men, all age groups, 1969-2013**
 
@@ -133,7 +134,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "other_male.jpeg"))
 
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S8: Age-specific trends in CVD mortality in black and white men, 20 years and older, 1969-2013**
 
@@ -144,7 +145,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "cvd_male.jpeg"))
 Not shown: <1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.  
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S9: Age-specific trends in cancer mortality in black and white men, 20 years and older, 1969-2013**
 
@@ -155,7 +156,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "cancer_male.jpeg"))
 Not shown: <1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.  
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S10: Age-specific trends in mortality due to non-communicable disease in black and white men, 20 years and older, 1969-2013**
 
@@ -166,7 +167,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "nc_male.jpeg"))
 Not shown: <1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.  
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).  
 
-##### page break
+\newpage
 
 **Figure S11: Age-specific trends in communicable disease mortality in black and white men, all age groups, 1969-2013**
 
@@ -176,7 +177,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "comm_male.jpeg"))
 
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).   
 
-##### page break
+\newpage
 
 **Figure S12: Age-specific trends in injury mortality in black and white men, all age groups, 1969-2013**
 
@@ -186,7 +187,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "inj_male.jpeg"))
 
 Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).   
 
-##### page break
+\newpage
 
 **Figure S13: The contribution of major causes of death and age at death to the black-white life expectancy gap in women, 2013**
 
@@ -194,7 +195,7 @@ Each plot shows three lines per race, which are often overlapping (except for 1-
 knitr::include_graphics(here("Manuscript2", "supp_figures", "age-cod-females.jpeg"))
 ```
 
-##### page break
+\newpage
 
 **Figure S14: The contribution of major causes of death and age at death to the black-white life expectancy gap in men, 2013**
 
@@ -202,7 +203,7 @@ knitr::include_graphics(here("Manuscript2", "supp_figures", "age-cod-females.jpe
 knitr::include_graphics(here("Manuscript2", "supp_figures", "age-cod-males.jpeg"))
 ```
 
-##### page break
+\newpage
 
 **Figure S15: Total population sizes in 4 states by race and year**  
 
