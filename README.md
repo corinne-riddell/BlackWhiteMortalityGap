@@ -1,7 +1,7 @@
 # Long-term trends in the contribution of major causes of death to the black-white life expectancy gap by US state
 ### Corinne A Riddell, Kathryn T Morrison, Sam Harper, Jay S Kaufman
 
-This repository contains the data and code used to conduct an in-depth investigation of trends in the black-white life expectancy gap by US state. All the code needed to conduct the analysis described in our [working paper](http://biorxiv.org/content/early/2017/05/25/140152) can be found in this repository. A full set of our results are publicly available online in an interactive [web application](https://corinne-riddell.shinyapps.io/black-white-life-expectancy/). 
+This repository contains the data and code used to conduct an in-depth investigation of trends in the black-white life expectancy gap by US state. This code supports two published manuscripts ([link 1](https://www.sciencedirect.com/science/article/abs/pii/S1353829217307153); [link 2 tba]()), the first of which which arose from a [working paper](http://biorxiv.org/content/early/2017/05/25/140152). A full set of our results are publicly available online in an interactive [web application](https://corinne-riddell.shinyapps.io/black-white-life-expectancy/). 
 
 ### Significance
 
@@ -16,6 +16,10 @@ If you are unfamiliar with github, but familiar with R and RStudio, you may wish
 ### How to reproduce the working paper
 
 To reproduce the working paper, use RStudio to "Knit" the manuscript file Manuscript_COD_Trends_PNAS.Rmd found in the Manuscript folder. This file uses data outputs (referenced in lines 37-50) that will also need to be downloaded. Alternatively, you can reproduce these data outputs yourself by following the steps in the "How to replicate these analyses" section.
+
+### How to replicate the second manuscript (to be published in *Public Health Reports*)
+
+The second manuscript depends on running all the code to create the first analysis. Thus, if you want to replicate from step #1, then you need to follow the previous instructions on "How to reproduce the working paper". Then, navigate to the directory called "Manuscript2" and open the file ageCOD_manuscript.Rmd. This file imports many of the results from the working paper and uses them to make the manuscript figures and the supplementary figures. The supplementary file is created in "Supplementary-appendix.Rmd", and you can look at the corresponding Word document that contains all the figures in the supplement to this paper.
 
 ### Code for the web application
 
