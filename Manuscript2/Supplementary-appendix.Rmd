@@ -1,6 +1,7 @@
 ---
 title: "Supplementary Appendix"
 output:
+  github_document: 
   word_document:
       reference_docx: reference.docx
 ---

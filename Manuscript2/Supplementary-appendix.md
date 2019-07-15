@@ -1,0 +1,206 @@
+Supplementary Appendix
+================
+
+Supplementary Appendix to: Black and white life expectancy differences in four US states: 1969-2013
+===================================================================================================
+
+By: Jay S Kaufman, Corinne A Riddell, Sam Harper
+
+##### page break
+
+Table of Contents
+
+Table S1: Description of specific causes comprising the six major cause categories
+
+Figure S1: Age-specific trends in mortality due to all other causes in black and white women, all age groups, 1969-2013
+
+Figure S2: Age-specific trends in CVD mortality in black and white women, 20 years and older, 1969-2013
+
+Figure S3: Age-specific trends in cancer mortality in black and white women, 20 years and older, 1969-2013
+
+Figure S4: Age-specific trends in mortality due to non-communicable disease in black and white women, 20 years and older, 1969-2013
+
+Figure S5: Age-specific trends in communicable disease mortality in black and white women, all age groups, 1969-2013
+
+Figure S6: Age-specific trends in injury mortality in black and white women, all age groups, 1969-2013
+
+Figure S7: Age-specific trends in mortality due to all other causes in black and white men, all age groups, 1969-2013
+
+Figure S8: Age-specific trends in CVD-related mortality in black and white men, 20 years and older, 1969-2013
+
+Figure S9: Age-specific trends in cancer mortality in black and white men, 20 years and older, 1969-2013
+
+Figure S10: Age-specific trends in mortality due to non-communicable disease in black and white men, 20 years and older, 1969-2013
+
+Figure S11: Age-specific trends in communicable disease mortality in black and white men, all age groups, 1969-2013
+
+Figure S12: Age-specific trends in injury mortality in black and white men, all age groups, 1969-2013
+
+Figure S13: The contribution of major causes of death and age at death to the black-white life expectancy gap in women, 2013
+
+Figure S14: The contribution of major causes of death and age at death to the black-white life expectancy gap in men, 2013
+
+Figure S15: Total population sizes in 4 states by race and year
+
+##### page break
+
+**Table S1: Description of specific causes comprising the six major cause categories**
+
+<table style="width:100%;">
+<colgroup>
+<col width="28%" />
+<col width="71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Broad cause of death</th>
+<th>Included causes of death</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cancers</td>
+<td>Lip; Tongue; Salivary gland; Floor of mouth; Gum and other mouth; Nasopharnyx; Tonsil; Oropharynx; Hypopharynx; Other oral cavity and pharynx; Esophagus; Stomach; Small intestine; Colon excluding rectum; Rectum and rectosigmoid junction; Anus, anal canal and anorectum; Liver; Intrahepatic bile duct; Gallbladder; Other biliary; Pancreas; Retroperitoneum; Peritoneum, Omentum and mesentery; Other digestive organs; Nose, nasal cavity and middle ear; Larynx; Lung and bronchus; Pleura; Trachea, Mediastinum and other respiratory organs; Bones and joints; Soft tissue including heart; Melanoma of the skin; Non-melanoma skin; Breast; Cervix uteri; Corpus uteri; Uterus, NOS; Ovary; Vagina; Vulva; Other female genital organs; Prostate; Testis; Penis; Other male genital organs; Urinary bladder; Kidney and renal pelvis; Ureter; Other urinary organs; Eye and orbit; Brain and other nervous system; Thyroid; Other endocrine including thymus; Hodkin lymphoma; Myeloma; Acute lymphocytic leukemia; Chronic lymphocytic leukemia; Other lymphocytic leukemia; Acute myeloid leukemia; Acute monocytic leukemia; Chronic myeloid leukemia; Other myeliod/monocytic leukemia; Other acute leukemia; Aleukemic, Subleukemic and NOS; Miscellaneous malignant cancer.</td>
+</tr>
+<tr class="even">
+<td>Cardiovascular disease</td>
+<td>Diseases of heart; Hypertension without heart disease; Cerebrovascular diseases; Atherosclerosis; Aortic aneurysm and dissection; Other diseases of arteries, arterioles, capillaries.</td>
+</tr>
+<tr class="odd">
+<td>Communicable disease</td>
+<td>Tuberculosis; Syphilis; HIV (1987+), Septicemia; Other infectious and parasitic diseases; Pneumonia and influenza</td>
+</tr>
+<tr class="even">
+<td>Non-communicable disease</td>
+<td>Diabetes Mellitus; Alzheimers (ICD9 and 10 only); Chronic obstructive pulmonary disease and allied conditions; Stomach and duodenal ulcers; Chronic liver disease and cirrhosis; Nephritis, Nephrotic Syndrome and Nephrosis.</td>
+</tr>
+<tr class="odd">
+<td>Injuries</td>
+<td>Accidents and Adverse Effects; Suicide and Self-inflicted Injury; Homicide and Legal Intervention</td>
+</tr>
+<tr class="even">
+<td>All other causes</td>
+<td>Complications of pregnancy, childbirth, puerperium; Congenital anomalies; Certain conditions originating in perinatal period; Symptoms, signs, and ill-defined conditions; Other cause of death.</td>
+</tr>
+</tbody>
+</table>
+
+##### page break
+
+**Figure S1: Age-specific trends in mortality due to all other causes in black and white women, all age groups, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/other_female.jpeg)
+
+**Table S1** lists the specific causes of death that contribute to the “all other causes” major categorization. The majority of these deaths are among infants, as shown by the large magnitude of mortality rates for deaths among those &lt; 1 year in **Figure S1**. Thus, the first row of this figure provides a rough approximation to the overall rate of infant mortality. Among the other age groups, the exact cause is most often “Symptoms, signs, and ill-defined conditions”. Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S2: Age-specific trends in CVD mortality in black and white women, 20 years and older, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/cvd_female.jpeg)
+
+Not shown: &lt;1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S3: Age-specific trends in cancer mortality in black and white women, 20 years and older, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/cancer_female.jpeg)
+
+Not shown: &lt;1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S4: Age-specific trends in mortality due to non-communicable disease in black and white women, 20 years and older, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/nc_female.jpeg)
+
+Not shown: &lt;1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S5: Age-specific trends in communicable disease mortality in black and white women, all age groups, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/comm_female.jpeg)
+
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S6: Age-specific trends in injury mortality in black and white women, all age groups, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/inj_female.jpeg)
+
+While injury rates are relatively low in women compared to men, the injury category is comprised of many distinct sources of injury including motor vehicle accidents, homicide, suicide, and poisonings, each of having their own distinct trends that are unfortunately masked in aggregation. Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S7: Age-specific trends in mortality due to all other causes in black and white men, all age groups, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/other_male.jpeg)
+
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S8: Age-specific trends in CVD mortality in black and white men, 20 years and older, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/cvd_male.jpeg)
+
+Not shown: &lt;1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S9: Age-specific trends in cancer mortality in black and white men, 20 years and older, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/cancer_male.jpeg)
+
+Not shown: &lt;1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S10: Age-specific trends in mortality due to non-communicable disease in black and white men, 20 years and older, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/nc_male.jpeg)
+
+Not shown: &lt;1 year olds, and 1-19 year olds, because there were very few deaths in those age bands.
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S11: Age-specific trends in communicable disease mortality in black and white men, all age groups, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/comm_male.jpeg)
+
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S12: Age-specific trends in injury mortality in black and white men, all age groups, 1969-2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/inj_male.jpeg)
+
+Each plot shows three lines per race, which are often overlapping (except for 1-19 year olds). The line type indicates the imputation strategy for the suppressed death counts, where we set all suppressed counts to 1 (solid line, lower bound), 5 (dotted line, midpoint) or 9 (dashed line, upper bound).
+
+##### page break
+
+**Figure S13: The contribution of major causes of death and age at death to the black-white life expectancy gap in women, 2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/age-cod-females.jpeg)
+
+##### page break
+
+**Figure S14: The contribution of major causes of death and age at death to the black-white life expectancy gap in men, 2013**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/age-cod-males.jpeg)
+
+##### page break
+
+**Figure S15: Total population sizes in 4 states by race and year**
+
+![](/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Manuscript2/supp_figures/population_plot.jpg)
