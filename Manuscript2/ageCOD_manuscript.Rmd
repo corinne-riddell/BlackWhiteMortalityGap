@@ -1,0 +1,1038 @@
+---
+title: Black and White Life Expectancy Differences in 4 US States, 1969-2013
+output:
+  word_document: default
+  html_document: default
+always_allow_html: yes
+---
+
+Below is the code for the paper entitled "Black and White Life Expectancy Differences in 4 US States, 1969-2013".
+The analysis for this paper builds on the analysis from our previous paper that is described in this repository.
+To conduct these analysis, we import and manipulate tables of results from the previous paper and web application.
+
+Load the libraries and a set of functions created by C Riddell:
+
+```{r initialize, warning=F, message=F}
+library(viridis)
+library(scales)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(DT)
+library(splines)
+library(broom)
+library(tidyverse)
+library(forcats)
+library(magrittr)
+library(gridExtra)
+library(here)
+library(ggthemes)
+
+source("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Code/life_expectancy_functions.R")
+```
+
+Load the results' tables from the previous paper and tidy these data for analysis/visualization:
+
+```{r load_modelled_data}
+included_states <- c("Georgia", "California", "New York", "Illinois")
+BlackWhite_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/BlackWhite_results.csv")
+dat.aggregated <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/dat_aggregated.csv") 
+
+cod_decomp_results <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/cod_decomp_results_cubic.csv")
+cod_decomp_results <- reorder.as.map2(cod_decomp_results, "state", "stabbrs")
+cod_decomp_results$COD_rev <- factor(cod_decomp_results$COD, levels = c("Cardiovascular", "Cancers", "All other causes",
+                                                                        "Communicable", "Non-communicable",  "Injuries"))
+
+age_cod_results_female <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_female.csv")
+age_cod_results_male <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Results2/age_cod_results_male.csv")
+age_cod_results <- rbind(age_cod_results_female, age_cod_results_male)
+rm(age_cod_results_female, age_cod_results_male)
+age_cod_results$COD <- factor(age_cod_results$COD, levels(age_cod_results$COD)[c(3, 2, 4, 6, 5, 1)])
+
+age_cod_results %<>% mutate(age = fct_relevel(age,
+                                              "<1 year", "1-4 years", "5-9 years", "10-14 years", 
+                                              "15-19 years", "20-24 years", "25-29 years", "30-34 years", "35-39 years", 
+                                              "40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years", 
+                                              "65-69 years", "70-74 years", "75-79 years", "80-84 years", "85+ years"))
+```
+
+Load mortality tables for the states of interest:
+
+```{r load_raw_data }
+#these data are used for the mortality rates shown in the appendix
+
+dat.California <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/dat_clean_California.csv") 
+dat.Georgia <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/dat_clean_Georgia.csv") 
+dat.NewYork<- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/dat_clean_New York.csv") 
+dat.Illinois <- read.csv("/Users/corinneriddell/Documents/repos/BlackWhiteMortalityGap/Data/dat_clean_Illinois.csv") 
+
+dat.four <- rbind(dat.California, dat.Georgia, dat.Illinois, dat.NewYork)
+rm(dat.California, dat.Georgia, dat.Illinois, dat.NewYork)
+```
+
+Take a look at population counts for these states, and the proportion of missing data:
+
+```{r, eval=F}
+#NOTE:
+summary(dat.four$population)
+#minimum population size is 1399 - lots of data for these states
+
+prop.table(table(is.na(dat.four$deaths)))
+#still have 19% suppressed data though.
+```
+
+Previously, the age groups were coded using 5-year age bands. We collapse this to wider bands as follows:
+
+```{r mutate_age_collapse}
+dat.four <- dat.four %>% 
+  mutate(age_collapse = fct_collapse(age, "1-19 years" = c("1-4 years", "5-9 years", "10-14 years", "15-19 years"),
+                                     "20-39 years" = c("20-24 years", "25-29 years", "30-34 years", "35-39 years"),
+                                     "40-64 years" = c("40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years"),
+                                     "65-84 years" = c("65-69 years", "70-74 years", "75-79 years", "80-84 years")))
+
+#table(dat.four$age_collapse, dat.four$age) #check coding
+
+dat.collapse.age <- dat.four %>% group_by(state.year.race.sex, age_collapse, COD) %>%
+  arrange(state.year.race.sex, age_collapse, COD) %>%
+  summarise(state = first(state),
+            year = first(year),
+            race = first(race),
+            sex = first(sex),
+    tot_deaths1_age_collapse = sum(deaths_md1),
+            tot_deaths5_age_collapse = sum(deaths_md5),
+            tot_deaths9_age_collapse = sum(deaths_md9),
+            population_age_collapse = sum(population)) %>%
+  mutate(crude_rate_age_collapse1 = (tot_deaths1_age_collapse/population_age_collapse)*100000,
+         crude_rate_age_collapse5 = (tot_deaths5_age_collapse/population_age_collapse)*100000,
+         crude_rate_age_collapse9 = (tot_deaths9_age_collapse/population_age_collapse)*100000)
+          
+```
+
+The following code prepares the data for plotting. 
+
+```{r prep_COD_data}
+excluded <- c("Alaska", "Hawaii", "Idaho", "Maine", "Montana", "New Hampshire", "North Dakota",
+              "South Dakota", "Utah", "Vermont", "Wyoming")
+
+dat.agg2.white <- dat.aggregated %>% 
+  filter(age == "<1 year" & race == "White" & !(state %in% excluded)) %>% 
+  select(state, year, sex, pop_across_age) %>% 
+  rename(pop_white = pop_across_age)
+
+dat.agg2.black <- dat.aggregated %>% 
+  filter(age == "<1 year" & race == "Black" & !(state %in% excluded)) %>% 
+  select(state, year, sex, pop_across_age) %>% 
+  rename(pop_black = pop_across_age)
+
+dat.agg2 <- merge(dat.agg2.black, dat.agg2.white, by = c("state", "year", "sex"))
+rm(dat.agg2.black, dat.agg2.white)
+
+cod_decomp_results <- merge(cod_decomp_results,
+                            BlackWhite_results %>% select(stratum.id, LE_white_mean, LE_black_mean, LE_wbgap_mean), 
+                            by = "stratum.id")
+
+cod_decomp_results <- merge(cod_decomp_results, dat.agg2, by = c("state", "year", "sex"))
+
+cod_decomp_results$new.start = cod_decomp_results$start + cod_decomp_results$LE_black_mean
+cod_decomp_results$new.start2 = cod_decomp_results$start2 + cod_decomp_results$LE_black_mean
+cod_decomp_results$new.finish = cod_decomp_results$finish + cod_decomp_results$LE_black_mean
+cod_decomp_results$new.finish2 = cod_decomp_results$finish2 +cod_decomp_results$ LE_black_mean
+
+cod_decomp_results$LE_black_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
+cod_decomp_results$LE_white_mean[cod_decomp_results$COD != "Cardiovascular"] <- NA
+
+cod_decomp_results <- reorder.as.map2(cod_decomp_results, "state", "stabbrs")
+cod_decomp_results$COD <- factor(cod_decomp_results$COD, levels(cod_decomp_results$COD)[c(3, 2, 4, 6, 5, 1)])
+```
+
+Here is the code to create the first figure:
+
+**Figure 1: Black-white life expectancy gap in four US states, by gender 1969-2013**
+
+```{r, fig.height = 3, fig.width = 6}
+BlackWhite_results$sex2 <- factor(BlackWhite_results$sex, levels = c("Female", "Male"), labels = c("Women", "Men"))
+
+data <- BlackWhite_results %>% filter(state %in% included_states)
+data$blah <- 1
+data$blah[data$state %in% c("Georgia", "New York")] <- 2
+                                                                
+labels <- data.frame(sex2 = c("Women", "Men"),
+                     labs = c("Females", "Males"),
+                     year = c(1976, 1976), LE_wbgap_mean = c(11.25, 11.25))
+
+le.fig <- ggplot(data, aes(x = year, y = LE_wbgap_mean)) + 
+  #geom_vline(xintercept=seq(1970,2010,5), colour="#f0f0f0") +
+  geom_line(aes(col = state), lwd = 1.5) + #, lty = as.factor(blah)
+  #scale_color_manual(values = c("#969696", "#969696", "#252525", "#252525")) +
+  #theme_minimal() + 
+  facet_wrap(~ sex2) + 
+  xlab("Year") + 
+  ylab("Black-white life expectancy gap, y") +
+  scale_x_continuous(breaks = c(1969, 1980, 1990, 2000, 2013), 
+                     labels = c(1969, 1980, 1990, 2000, 2013)) +
+  scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10, 12), 
+                     labels = c(0, 2, 4, 6, 8, 10, 12), 
+                     limits = c(0, 12)) + 
+  #geom_hline(aes(yintercept = 0), lty =2) +
+  coord_cartesian(ylim = c(0, 12), 
+                    expand = FALSE) +
+  scale_color_colorblind() +
+  theme_bw() +
+  theme(panel.grid.minor.x = element_blank(), 
+        panel.grid.major.x = element_blank(),
+        strip.background = element_blank(), #element_rect(fill="white"), 
+        strip.text.x = element_blank(), #element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        legend.background = element_rect(colour = 'grey', fill = 'white', linetype='solid'),
+        panel.spacing = unit(2, "lines")) +
+  guides(col = guide_legend(title = element_blank())) +
+  geom_text(data = labels, aes(x = year, y = LE_wbgap_mean, label = labs), check_overlap = T, hjust = "left")
+
+le.fig
+```
+
+Some code to prepare to create Figure 2: 
+
+```{r, fig-2-prep}
+age_cod_results <- age_cod_results %>% 
+  mutate(age_collapse = fct_collapse(age, "1-19 years" = c("1-4 years", "5-9 years", "10-14 years", "15-19 years"),
+                                     "20-39 years" = c("20-24 years", "25-29 years", "30-34 years", "35-39 years"),
+                                     "40-64 years" = c("40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years"),
+                                     "65-84 years" = c("65-69 years", "70-74 years", "75-79 years", "80-84 years")))
+
+age_cod_results <- age_cod_results %>% group_by(state, year, sex, COD, age_collapse) %>%
+  mutate(age_COD_cont_yrs_mean_collapse = sum(age_COD_cont_yrs_mean))
+```
+
+**Figure 2: Contribution of age and cause categories to the black-white life expectancy gap in women, 1969-2013**
+
+```{r, fig-2-code, fig.height = 11, fig.width = 9, echo=2}
+labels_women <- data.frame(state = c(rep("California", 6), rep("Georgia", 6), rep("Illinois", 6), rep("New York", 6)),
+                           age_collapse2 = rep(c("<1 year", "1-19 years", "20-39 years", "40-64 years", "65-84 years", "\u2265 85 years"), 4),
+                           year = rep(1970, 24), age_COD_cont_yrs_mean_collapse = rep(2.25, 24))
+
+
+age_cod_results <- age_cod_results %>% mutate(age_collapse2 = case_when(age_collapse == "85+ years" ~  "\u2265 85 years",
+                                                                        age_collapse == "<1 year" ~ "<1 year",
+                                                                        age_collapse == "1-19 years" ~ "1-19 years",
+                                                                        age_collapse == "20-39 years" ~ "20-39 years",
+                                                                        age_collapse == "40-64 years" ~ "40-64 years",
+                                                                        age_collapse == "65-84 years" ~ "65-84 years"))
+
+table(age_cod_results$age_collapse2)
+
+age_cod_results$age_collapse2 <- forcats::fct_relevel(age_cod_results$age_collapse2,
+                                                      "<1 year", "1-19 years", "20-39 years", "40-64 years", "65-84 years", "\u2265 85 years")
+
+to_plot <- age_cod_results %>% ungroup() %>%
+         filter(state %in% included_states, sex == "Female") %>% 
+  arrange(state, year) %>% 
+  group_by(state, year, sex, COD, age_collapse)
+                 
+women.fig <- ggplot(to_plot, 
+       aes(x = year, y = age_COD_cont_yrs_mean_collapse)) + 
+  facet_grid(age_collapse2 ~ state) + 
+  geom_vline(xintercept = seq(1970,2010,5), colour="#f0f0f0") +
+  geom_hline(yintercept = 0) +
+  geom_line(aes(group = COD, col = COD), alpha = 0.90) + 
+  geom_text(data = labels_women, aes(x = year, y = age_COD_cont_yrs_mean_collapse, label = age_collapse2), hjust = "left", check_overlap = T) +
+  ylab("Contribution to the black-white gap in life expectancy, y") + 
+  xlab("Year") +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        strip.background.x = element_rect(fill="white"), 
+        strip.background.y = element_blank(), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_blank(), #element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank(),
+        legend.background = element_rect(colour = 'grey', fill = 'white', linetype='solid'),
+        panel.spacing = unit(1, "lines")) + 
+  scale_color_colorblind() +
+  guides(col = guide_legend(title = element_blank())) +
+  scale_x_continuous(breaks = c(1969, 1980, 1990, 2000, 2013), 
+                     labels = c(1969, 1980, 1990, 2000, 2013)) 
+
+women.fig
+```
+
+**Figure 3: Contribution of age and cause categories to the black-white life expectancy gap in men, 1969-2013**
+
+```{r, fig.height = 11, fig.width = 9}
+male.fig <- ggplot(age_cod_results %>% 
+         filter(state %in% included_states, sex == "Male") %>% 
+         arrange(state, year), 
+       aes(x = year, y = age_COD_cont_yrs_mean_collapse)) + 
+  facet_grid(age_collapse2 ~ state) + 
+  geom_vline(xintercept = seq(1970,2010,5), colour="#f0f0f0") +
+  geom_hline(yintercept = 0) +
+  geom_line(aes(group = COD, col = COD), alpha = 0.90) + 
+  geom_text(data = labels_women, aes(x = year, y = age_COD_cont_yrs_mean_collapse, label = age_collapse2), hjust = "left", check_overlap = T) +
+  ylab("Contribution to the black-white gap in life expectancy, y") + 
+  xlab("Year") +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        legend.background = element_rect(colour = 'grey', fill = 'white', linetype='solid'),
+        strip.background.x = element_rect(fill="white"), 
+        strip.background.y = element_blank(),
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_blank(),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank(),
+        panel.spacing = unit(1, "lines")) + 
+  scale_color_colorblind() +
+  scale_y_continuous(limits = c(-1, 3)) +
+  guides(col = guide_legend(title = element_blank())) +
+  scale_x_continuous(breaks = c(1969, 1980, 1990, 2000, 2013), 
+                     labels = c(1969, 1980, 1990, 2000, 2013)) 
+
+male.fig
+```
+
+Save the first three figures. 
+
+```{r save-figures, echo=2}
+ggsave(filename = here("Manuscript2", "Images", "figure1.jpeg"), 
+       plot = le.fig, device = "jpeg", width = 6, height = 3, units = "in", dpi = 1200)
+ggsave(filename = here("Manuscript2", "Images", "figure2.jpeg"),
+       plot = women.fig, device = "jpeg", width = 8, height = 9, units = "in", dpi = 1200)
+ggsave(filename = here("Manuscript2", "Images", "figure3.jpeg"), 
+       plot = male.fig, device = "jpeg", width = 8, height = 9, units = "in", dpi = 1200)
+```
+
+Code to create Figure 4:
+
+**Figure 4: ...**
+
+*left panel*
+
+```{r}
+
+dat.2013 <- BlackWhite_results %>% filter(year == 2013 & state %in% c(included_states))
+
+LE.2013 <- ggplot(dat.2013, aes(x = LE_white_mean, y = state)) + 
+  facet_wrap(~sex, nrow = 2) +
+  geom_segment(aes(xend = LE_black_mean, yend = state)) +
+  geom_point(aes(col = "white")) +
+  geom_point(aes(x = LE_black_mean, col = "black")) +
+  scale_color_manual(values = c('#a6cee3','#1f78b4'), labels = c("Black", "White")) + 
+  geom_text(aes(label = round(LE_white_mean, 1)), nudge_y = 0.25, size = 4) + 
+  geom_text(aes(label = round(LE_black_mean, 1), x = LE_black_mean), nudge_y = -0.25, size = 4) +
+  theme_minimal(base_size = 15) + xlab("") + ylab("") +
+  theme(legend.position = c(0.9, 0.15), panel.grid.minor = element_blank(),
+        legend.title = element_blank(),
+        legend.background = element_rect(colour = 'grey', fill = 'white', linetype='solid')) +
+  ggtitle("(A) Gap in life expectancy, y") +
+  scale_x_continuous(breaks =  seq(71, 83, 2), labels =  seq(71, 83, 2)) + 
+  scale_y_discrete(limits = c("New York", "Illinois", "Georgia","California"))
+```
+
+*right panel*
+
+```{r, fig.height = 9, fig.width = 8.5}
+cod.2013 <- cod_decomp_results %>% filter(year == 2013 & state %in% c(included_states)) %>%
+  select(-X.1, -X.2, -X.3, -X.4, -Census_Region, -Census_Division, -X)
+
+cod.graph <- ggplot(data = cod.2013,
+       aes(x=state, y = COD_cont_yrs_mean, fill = COD)) +
+  geom_bar(stat = "identity", col = "white", width = 0.5) + 
+  coord_flip() +
+  theme_minimal(base_size = 15)  + #guides(fill=FALSE) + 
+  geom_hline(yintercept = 0, col = "black") +
+  theme(legend.title = element_blank(), #legend.position = "bottom",
+        panel.background = element_rect(fill = "transparent", colour = NA), 
+        plot.background = element_rect(fill = "transparent", colour = NA),
+        #legend.background = element_rect(fill = "transparent", colour = NA), 
+        panel.grid.minor = element_blank(),
+        legend.background = element_rect(colour = 'grey', fill = 'white', linetype='solid')) +
+  ylab("") +
+  xlab("") +
+  scale_y_continuous(breaks = c(-0.5, 0:7), labels = c(-0.5, 0:7)) +
+  scale_fill_colorblind() +
+  facet_wrap(~sex, nrow = 2) +
+  ggtitle("(B) Cause-of-death contributions to the gap in life expectancy, y") + 
+  scale_x_discrete(limits = c("New York", "Illinois", "Georgia","California"))
+
+figure4 <- grid.arrange(LE.2013, cod.graph, ncol=1)
+
+ggsave(filename = here("Manuscript2", "Images", "figure4.jpeg"), 
+                       plot = figure4, device = "jpeg", width = 8.5, height = 9, units = "in", dpi = 1200)
+
+```
+
+**Men**
+```{r, fig.height = 5, fig.width = 9, echo=2}
+sub.males <- subset(age_cod_results, year==2013 & 
+                      state %in% c("California", "Georgia", "Illinois", "New York") &
+                      sex == "Male")
+
+age.cod.males <- ggplot(data = sub.males,
+       aes(x=age, y = age_COD_cont_yrs_mean, fill = COD)) +
+  geom_bar(stat = "identity") + 
+  coord_flip() +
+  scale_fill_colorblind() +
+  theme_minimal()  + 
+  geom_hline(yintercept = 0, lwd = 1, col = "black") +
+  theme(legend.title = element_blank(), legend.position = "bottom",
+        panel.background = element_rect(fill = "transparent", colour = NA), 
+        plot.background = element_rect(fill = "transparent", colour = NA),
+        legend.background = element_rect(fill = "transparent", colour = NA)) +
+  ylab("Contribution to the life expectancy gap (years)") +
+  xlab("") +
+  facet_wrap(year ~ state) 
+      
+age.cod.males
+```
+
+**Women**
+```{r, fig.height = 5, fig.width = 9, echo=2}
+sub.females <- subset(age_cod_results, year==2013 & 
+                      state %in% c("California", "Georgia", "Illinois", "New York") &
+                      sex == "Female")
+
+age.cod.females <-    ggplot(data = sub.females,
+                             aes(x=age, y = age_COD_cont_yrs_mean, fill = COD)) +
+  geom_bar(stat = "identity") + 
+  coord_flip() +
+  scale_fill_colorblind() +
+  theme_minimal()  + 
+  geom_hline(yintercept = 0, lwd = 1, col = "black") +
+  theme(legend.title = element_blank(), legend.position = "bottom",
+        panel.background = element_rect(fill = "transparent", colour = NA), 
+        plot.background = element_rect(fill = "transparent", colour = NA),
+        legend.background = element_rect(fill = "transparent", colour = NA)) +
+  ylab("Contribution to the life expectancy gap (years)") +
+  xlab("") +
+  facet_wrap(year ~ state) 
+
+age.cod.females
+
+ggsave(filename = here("Manuscript2", "supp_figures", "age-cod-males.jpeg"),
+       plot = age.cod.males, device = "jpeg", width = 11, height = 8, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "age-cod-females.jpeg"),
+       plot = age.cod.females, device = "jpeg", width = 11, height = 8, units = "in")
+      
+```
+
+```{r, echo=F, eval =F}
+#Could print this very small above the legend of the previous plots:
+sub <- BlackWhite_results %>% 
+  filter(year == 2013, state %in% c("California", "Georgia", "Illinois", "New York")) %>% 
+  select(state.map.order, sex, year, LE_white_mean, LE_black_mean, LE_wbgap_mean)
+  
+ggplot(sub %>% filter(sex == "Males"), aes(y = as.numeric(state.map.order), x = LE_white_mean)) + geom_point()
+```
+
+
+**Figure 5: second option: men**
+```{r}
+
+    temp <- data.frame(subset(cod_decomp_results, sex == "Male" & 
+                                year == 2013 & state %in% c("California", "Georgia", "Illinois", "New York")))
+    temp["state.reorder2"] <- reorder(temp$state, temp$LE_black_mean, max, na.rm = T)
+    temp["state.reorder2.n"] <- as.numeric(temp[["state.reorder2"]])
+    
+ggplot(temp, aes(x = new.start, y = state.reorder2.n)) + 
+  geom_rect(aes(xmin = new.start, 
+                ymin = state.reorder2.n - 0.44, 
+                ymax = state.reorder2.n + 0.44, 
+                xmax = new.finish, fill = COD)) +
+    geom_segment(aes(x = LE_black_mean, 
+                   xend = LE_white_mean, 
+                   y = state.reorder2.n, 
+                   yend = state.reorder2.n), lwd = 1) + 
+  scale_y_continuous(breaks = 1:length(levels(factor(temp$state.reorder2))), 
+                     labels = levels(factor(temp$state.reorder2))) +
+  theme_minimal() + xlab(" ") + 
+  theme(legend.title = element_blank(),
+        panel.background = element_rect(fill = "transparent", colour = NA), 
+        plot.background = element_rect(fill = "transparent", colour = NA),
+        legend.background = element_rect(fill = "transparent", colour = NA)) +
+  geom_segment(aes(x = LE_white_mean, 
+                   xend = LE_white_mean, 
+                   y = state.reorder2.n - 0.46, 
+                   yend = state.reorder2.n + 0.46), lwd = 1) +
+  geom_segment(aes(x = LE_black_mean, 
+                   xend = LE_black_mean, 
+                   y = state.reorder2.n - 0.46, 
+                   yend = state.reorder2.n + 0.46), lty = 3, lwd = 1) +
+  ylab("") + xlab("Life expectancy (years)")
+
+```
+
+**Figure 5: second option: women**
+```{r}
+
+temp <- data.frame(subset(cod_decomp_results, sex == "Female" & 
+                            year == 2013 & state %in% c("California", "Georgia", "Illinois", "New York")))
+temp["state.reorder2"] <- reorder(temp$state, temp$LE_black_mean, max, na.rm = T)
+temp["state.reorder2.n"] <- as.numeric(temp[["state.reorder2"]])
+
+ggplot(temp, aes(x = new.start, y = state.reorder2.n)) + 
+  geom_rect(aes(xmin = new.start, 
+                ymin = state.reorder2.n - 0.44, 
+                ymax = state.reorder2.n + 0.44, 
+                xmax = new.finish, fill = COD)) +
+  geom_segment(aes(x = LE_black_mean, 
+                   xend = LE_white_mean, 
+                   y = state.reorder2.n, 
+                   yend = state.reorder2.n), lwd = 1) + 
+  scale_y_continuous(breaks = 1:length(levels(factor(temp$state.reorder2))), 
+                     labels = levels(factor(temp$state.reorder2))) +
+  theme_minimal() + xlab(" ") + 
+  theme(legend.title = element_blank(),
+        panel.background = element_rect(fill = "transparent", colour = NA), 
+        plot.background = element_rect(fill = "transparent", colour = NA),
+        legend.background = element_rect(fill = "transparent", colour = NA)) +
+  geom_segment(aes(x = LE_white_mean, 
+                   xend = LE_white_mean, 
+                   y = state.reorder2.n - 0.46, 
+                   yend = state.reorder2.n + 0.46), lwd = 1) +
+  geom_segment(aes(x = LE_black_mean, 
+                   xend = LE_black_mean, 
+                   y = state.reorder2.n - 0.46, 
+                   yend = state.reorder2.n + 0.46), lty = 3, lwd = 1) +
+  ylab("") + xlab("Life expectancy (years)")
+
+```
+
+# Appendix 1: Trends in age-specific mortality rate by sex, race, and cause of death
+
+**Figure S15: Population sizes**
+
+```{r, echo = F}
+population.dat <- dat.aggregated %>% filter(age == "<1 year") %>%
+  group_by(state, year, race) %>%
+  summarise(population2 = sum(pop_across_age))
+# 
+# ggplot(dat.aggregated %>% filter(age == "<1 year" & state %in% included_states & race == "Black")) +
+#   geom_line(aes(x = year, y = pop_across_age, col = state, linetype = race)) + 
+#   facet_grid(~sex, scale="free_y") + 
+#   #scale_y_continuous(breaks = seq(0, 15000000, by = 2000000)) +
+#   ylab("Population") + xlab("Year") + theme_minimal() +
+#   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+white.pop <- ggplot(population.dat %>% filter(state %in% included_states & race == "White")) +
+  geom_vline(xintercept=seq(1970,2010,5), colour="#f0f0f0") +
+  geom_line(aes(x = year, y = population2, col = state), size=2) + 
+  scale_color_colorblind() +
+  #scale_y_continuous(breaks = seq(0, 15000000, by = 2000000)) +
+  ylab("Population") + xlab("Year") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_y_continuous(limits = c(0, 30000000), breaks = seq(0, 30000000, length.out = 4), 
+                     labels = c("0", "10,000,000", "20,000,000","30,000,000")) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), labels = c("", 1970, rep("", 9), 
+                                                             1980, rep("", 9),
+                                                             1990, rep("", 9),
+                                                             2000, rep("", 9),
+                                                             2010, rep("", 3))) +
+  ggtitle("a) Whites") +
+  theme_bw() +
+  theme(axis.text.x = element_text(hjust = 1),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()))
+
+black.pop  <-  ggplot(population.dat %>% filter(state %in% included_states & race == "Black")) +
+  geom_vline(xintercept=seq(1970,2010,5), colour="#f0f0f0") +
+  geom_line(aes(x = year, y = population2, col = state), size = 2) + 
+  #scale_y_continuous(breaks = seq(0, 15000000, by = 2000000)) +
+  scale_color_colorblind() +
+  ylab("Population") + xlab("Year") +
+  scale_y_continuous(limits = c(0, 4000000), breaks = seq(0, 4000000, length.out = 5), 
+                     labels = c("0", "1,000,000", "2,000,000","3,000,000","4,000,000")) +
+    scale_x_continuous(breaks = seq(1969, 2013, 1), labels = c("", 1970, rep("", 9), 
+                                                             1980, rep("", 9),
+                                                             1990, rep("", 9),
+                                                             2000, rep("", 9),
+                                                             2010, rep("", 3))) +
+  ggtitle("b) Blacks") +
+  theme_bw() + 
+  theme(axis.text.x = element_text(hjust = 1),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()))
+
+white.pop
+
+black.pop
+
+library(patchwork)
+
+population_plot <- white.pop + black.pop + plot_layout(ncol = 2)
+
+ggsave(filename = here("Manuscript2", "supp_figures", "population_plot.jpg"), 
+       plot = population_plot, device = "jpeg", width = 8, height = 3, units = "in")
+```
+
+**Figure S1: Age-specific trends in CVD-related mortality in black and white men, 20 years and older, 1969-2013**
+
+```{r, fig.height = 7.3, fig.width = 9, echo=2}
+cvd_males <- ggplot(data = subset(dat.collapse.age, sex == "Male" & COD == "Cardiovascular" & 
+       age_collapse %in% c("20-39 years","40-64 years", "65-84 years",   "85+ years")), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  ggtitle("CVD in males") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S2: Age-specific trends in CVD-related mortality in black and white women, 20 years and older, 1969-2013**
+
+```{r, fig.height = 7.3, fig.width = 9, echo=2}
+cvd_females <- ggplot(data = subset(dat.collapse.age, sex == "Female" & COD == "Cardiovascular" & 
+       age_collapse %in% c("20-39 years","40-64 years", "65-84 years",   "85+ years")), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  xlab("Year") +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+Not shown: <1 year olds, and 1-19 year olds, because very few deaths in those age bands. Note that there appears to be a measurement error in the data for Illinois in 1972 and 1973 for both males and females showing a much higher rate of death.
+
+**Figure S3: Age-specific trends in cancer-related mortality in black and white men, 20 years and older, 1969-2013**
+
+```{r, fig.height = 7.3, fig.width = 9, echo=2}
+cancer_males <- ggplot(data = subset(dat.collapse.age, sex == "Male" & COD == "Cancers" &
+                     age_collapse %in% c("20-39 years","40-64 years", "65-84 years",   "85+ years")
+                     ), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S4: Age-specific trends in cancer-related mortality in black and white women, 20 years and older, 1969-2013**
+
+```{r, fig.height = 7.3, fig.width = 9, echo=2}
+cancer_females <- ggplot(data = subset(dat.collapse.age, sex == "Female" & COD == "Cancers" & 
+       age_collapse %in% c("20-39 years","40-64 years", "65-84 years",   "85+ years")
+       ), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S5: Age-specific trends in mortality due to non communicable disease in black and white men, 20 years and older, 1969-2013**
+
+```{r, fig.height = 7.3, fig.width = 9, echo=2}
+nc_males <- ggplot(data = subset(dat.collapse.age, sex == "Male" & COD == "Non-communicable" &
+                     age_collapse %in% c("20-39 years","40-64 years", "65-84 years",   "85+ years")
+                     ), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S6: Age-specific trends in mortality due to non communicable disease in black and white women, 20 years and older, 1969-2013**
+
+```{r, fig.height = 7.3, fig.width = 9, echo=2}
+nc_female <- ggplot(data = subset(dat.collapse.age, sex == "Female" & COD == "Non-communicable" & 
+       age_collapse %in% c("20-39 years","40-64 years", "65-84 years",   "85+ years")
+       ), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S7: Age-specific trends in injury-related mortality in black and white men, all age groups, 1969-2013**
+
+```{r, fig.height = 11, fig.width = 9, echo=2}
+injury_males <- ggplot(data = subset(dat.collapse.age, sex == "Male" & COD == "Injuries"), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S8: Age-specific trends in injury-related mortality in black and white women, all age groups, 1969-2013**
+
+```{r, fig.height = 11, fig.width = 9, echo=2}
+inj_females <- ggplot(data = subset(dat.collapse.age, sex == "Female" & COD == "Injuries" #& 
+       #age_collapse %in% c("20-39 years","40-64 years", "65-84 years",   "85+ years")
+       ), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S9: Age-specific trends in communicable-related mortality in black and white men, all age groups, 1969-2013**
+
+```{r, fig.height = 11, fig.width = 9, echo=2}
+comm_males <- ggplot(data = subset(dat.collapse.age, sex == "Male" & COD == "Communicable"), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +  
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S10: Age-specific trends in communicable-related mortality in black and white women, all age groups, 1969-2013**
+
+```{r, fig.height = 11, fig.width = 9, echo=2}
+comm_female <- ggplot(data = subset(dat.collapse.age, sex == "Female" & COD == "Communicable"), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S11: Age-specific trends in mortality due to all other causes in black and white men, all age groups, 1969-2013**
+
+```{r, fig.height = 11, fig.width = 9, echo=2}
+other_male <- ggplot(data = subset(dat.collapse.age, sex == "Male" & COD == "All other causes"), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+**Figure S12: Age-specific trends in mortality  due to all other causes in black and white women, all age groups, 1969-2013**
+
+```{r, fig.height = 11, fig.width = 9, echo=2}
+other_female <- ggplot(data = subset(dat.collapse.age, sex == "Female" & COD == "All other causes"), 
+       aes(x = year, y = crude_rate_age_collapse1)) + 
+  geom_line(aes(col = race, lty = "impute 1")) + 
+  geom_line(aes(y = crude_rate_age_collapse5, col = race, lty = "impute 5")) + 
+  geom_line(aes(y = crude_rate_age_collapse9, col = race, lty = "impute 9")) + 
+  facet_grid(age_collapse ~ state, scales = "free_y") +
+  ylab("Mortality Rate (per 100,000)") + 
+  xlab("Year") +
+  scale_color_manual(values = c('#a6cee3','#1f78b4')) +
+  scale_x_continuous(breaks = seq(1969, 2013, 1), 
+                     labels =  c("", 1970, rep("", 9), 
+                                 "'80", rep("", 9),
+                                 "'90", rep("", 9),
+                                 "'00", rep("", 9),
+                                 2010, rep("", 3))) +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(hjust = 1),
+        strip.background = element_rect(fill="white"), 
+        strip.text.x = element_text(size = 12),
+        strip.text.y = element_text(size = 12),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank()) + 
+  guides(col = guide_legend(title = element_blank()), linetype = guide_legend(title = element_blank()))
+```
+
+Save the supplementary figures files:
+
+```{r save-supp-figures}
+
+# women
+ggsave(filename = here("Manuscript2", "supp_figures", "other_female.jpeg"), 
+       plot = other_female, device = "jpeg", width = 7, height = 8, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "cvd_female.jpeg"), 
+       plot = cvd_females, device = "jpeg", width = 7, height = 6, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "cancer_female.jpeg"), 
+       plot = cancer_females, device = "jpeg", width = 7, height = 6, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "nc_female.jpeg"), 
+       plot = nc_males, device = "jpeg", width = 7, height = 6, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "comm_female.jpeg"), 
+       plot = comm_female, device = "jpeg", width = 7, height = 8, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "inj_female.jpeg"), 
+       plot = inj_females, device = "jpeg", width = 7, height = 8, units = "in")
+
+# men
+ggsave(filename = here("Manuscript2", "supp_figures", "other_male.jpeg"),
+       plot = other_male, device = "jpeg", width = 7, height = 8, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "cvd_male.jpeg"), 
+       plot = cvd_males, device = "jpeg", width = 7, height = 6, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "cancer_male.jpeg"), 
+       plot = cancer_males, device = "jpeg", width = 7, height = 6, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "nc_male.jpeg"), 
+       plot = nc_males, device = "jpeg", width = 7, height = 6, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "comm_male.jpeg"), 
+       plot = comm_males, device = "jpeg", width = 7, height = 8, units = "in")
+ggsave(filename = here("Manuscript2", "supp_figures", "inj_male.jpeg"), 
+       plot = injury_males, device = "jpeg", width = 7, height = 8, units = "in")
+```
+
+
+```{r, fig.width = 10, fig.height = 5, eval = F, echo = F}
+ca.1969 <- age_cod_results %>% filter(state == "California" & year == 1969 & sex == "Male") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Males 1969", 
+        margin = list(l = 100, b=100))
+
+ca.2013 <- age_cod_results %>% filter(state == "California" & year == 2013 & sex == "Male") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Males 2013", 
+        margin = list(l = 100, b=100))
+
+subplot(ca.1969, ca.2013) %>% layout(title = "California Males, 1969 vs. 2013")
+```
+
+```{r, fig.width = 10, fig.height = 5, eval = F, echo = F}
+ca.1969 <- age_cod_results %>% filter(state == "California" & year == 1969 & sex == "Female") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Females 1969", 
+        margin = list(l = 100, b=100))
+
+ca.2013 <- age_cod_results %>% filter(state == "California" & year == 2013 & sex == "Female") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Females 2013", 
+        margin = list(l = 100, b=100))
+
+subplot(ca.1969, ca.2013) %>% layout(title = "California Females, 1969 vs. 2013")
+```
+
+```{r, fig.width = 10, fig.height = 5, eval = F, echo = F}
+ny.1969 <- age_cod_results %>% filter(state == "New York" & year == 1969 & sex == "Male") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Males 1969", 
+        margin = list(l = 100, b=100))
+
+ny.2013 <- age_cod_results %>% filter(state == "New York" & year == 2013 & sex == "Male") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Males 2013", 
+        margin = list(l = 100, b=100))
+
+subplot(ny.1969, ny.2013) %>% layout(title = "New York Males, 1969 vs. 2013")
+```
+
+```{r, fig.width = 10, fig.height = 5, eval = F, echo = F}
+ny.1969 <- age_cod_results %>% filter(state == "New York" & year == 1969 & sex == "Female") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Males 1969", 
+        margin = list(l = 100, b=100))
+
+ny.2013 <- age_cod_results %>% filter(state == "New York" & year == 2013 & sex == "Female") %>%
+ plot_ly(x = ~COD, y = ~age_collapse, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Females 2013", 
+        margin = list(l = 100, b=100))
+
+subplot(ny.1969, ny.2013) %>% layout(title = "New York Females, 1969 vs. 2013")
+```
+
+```{r, fig.width = 10, fig.height = 5, eval = F, echo = F}
+ny.1969 <- age_cod_results %>% filter(state == "New York" & year == 1969 & sex == "Female") %>%
+ plot_ly(x = ~COD, y = ~age, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Males 1969", 
+        margin = list(l = 100, b=100))
+
+ny.2013 <- age_cod_results %>% filter(state == "New York" & year == 2013 & sex == "Female") %>%
+ plot_ly(x = ~COD, y = ~age, z = ~age_COD_cont_yrs_mean, type = "heatmap") %>% 
+  layout(xaxis = list(title = ""), yaxis = list(title = ""), title = "California Females 2013", 
+        margin = list(l = 100, b=100))
+
+subplot(ny.1969, ny.2013) %>% layout(title = "New York Females, 1969 vs. 2013")
+```
+
+
+
+
+
