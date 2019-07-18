@@ -202,6 +202,10 @@ age_cod_results <- age_cod_results %>%
 
 age_cod_results <- age_cod_results %>% group_by(state, year, sex, COD, age_collapse) %>%
   mutate(age_COD_cont_yrs_mean_collapse = sum(age_COD_cont_yrs_mean))
+
+men_cod_contributions <- age_cod_results %>% ungroup() %>% filter(sex == "Male", state %in% c("California", "New York", "Illinois", "Georgia"))
+
+women_cod_contributions <- age_cod_results %>% ungroup() %>% filter(sex == "Female", state %in% c("California", "New York", "Illinois", "Georgia"))
 ```
 
 **Figure 2: Contribution of age and cause categories to the black-white life expectancy gap in women, 1969-2013**
